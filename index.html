@@ -11,6 +11,7 @@
             background-color: #333;
         }
         .image-container {
+            z-index: 1;
             display: flex;
             flex-direction: row;
             height: 50%;
@@ -49,27 +50,37 @@
         .image-container div:hover h1 {
             display: block;
         }
+        .logo {
+            position: absolute;
+            top: 14%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 0;
+            width: 200px; /* Adjust the width and height as needed */
+        }
     </style>
 </head>
 <body>
     <div id="image-container" class="image-container">
-        <!-- Images will be inserted here -->
+      <!-- Images will be inserted here -->
     </div>
-
+  
+    <img src="logo.jpg" class="logo" alt="Logo">
+    
     <script>
-        // Add your image file names here
-        var images = ["Kyrien.jpg", "Lynleit.jpg", "Drake.jpg", "Sherie.jpg", "Lester.jpg", "Felix.jpg", "Reiner.jpg", "Heyk.jpg"];
-
-        var container = document.getElementById('image-container');
-
-        images.forEach(function(image) {
-            var div = document.createElement('div');
-            div.style.backgroundImage = 'url(' + image + ')';
-            var h1 = document.createElement('h1');
-            h1.textContent = image.split('.')[0]; // Use the image file name as the title
-            div.appendChild(h1);
-            container.appendChild(div);
-        });
+      // Add your image file names here
+      var images = ["Kyrien.jpg", "Lynleit.jpg", "Drake.jpg", "Sherie.jpg", "Lester.jpg", "Felix.jpg", "Reiner.jpg", "Heyk.jpg"];
+  
+      var container = document.getElementById('image-container');
+  
+      images.forEach(function(image) {
+        var div = document.createElement('div');
+        div.style.backgroundImage = 'url(' + image + ')';
+        var h1 = document.createElement('h1');
+        h1.textContent = image.split('.')[0]; // Use the image file name as the title
+        div.appendChild(h1);
+        container.appendChild(div);
+      });
     </script>
-</body>
+  </body>
 </html>
