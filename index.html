@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            font-family: sans-serif;
+            background-color: #333;
+        }
+        .image-container {
+            display: flex;
+            flex-direction: row;
+            height: 50%;
+            width: 80%;
+            overflow: auto;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            border-radius: 15px;
+            box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.5);
+        }
+        .image-container div {
+            flex: 1;
+            height: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            transition: flex 0.5s ease-in-out;
+            position: relative;
+        }
+        .image-container div h1 {
+            position: absolute;
+            bottom: 0;
+            color: white;
+            width: 100%;
+            text-align: center;
+            display: none;
+            text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7);
+            text-transform: uppercase;
+            font-weight: 300;
+        }
+        .image-container div:hover {
+            flex-grow: 3;
+        }
+        .image-container div:hover h1 {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div id="image-container" class="image-container">
+        <!-- Images will be inserted here -->
+    </div>
+
+    <script>
+        // Add your image file names here
+        var images = ["Kyrien.jpg", "Lynleit.jpg", "Drake.jpg", "Sherie.jpg", "Lester.jpg", "Felix.jpg", "Reiner.jpg", "Heyk.jpg"];
+
+        var container = document.getElementById('image-container');
+
+        images.forEach(function(image) {
+            var div = document.createElement('div');
+            div.style.backgroundImage = 'url(' + image + ')';
+            var h1 = document.createElement('h1');
+            h1.textContent = image.split('.')[0]; // Use the image file name as the title
+            div.appendChild(h1);
+            container.appendChild(div);
+        });
+    </script>
+</body>
+</html>
