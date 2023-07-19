@@ -35,6 +35,7 @@
             transition: flex 0.5s ease-in-out, transform 0.5s ease-in-out;
             position: relative;
             overflow: visible;
+            border-radius: 15px; /* Add this line to give rounded corners to the images inside the accordion */
         }
         .image-container div h1 {
             position: absolute;
@@ -51,7 +52,8 @@
         .image-container div:hover {
             flex-grow: 2.2;
             z-index: 2;
-            transform: scale(2);
+            transform: scale(1.5); /* Changed from scale(2) to scale(1.5) to reduce the enlargement by 50% */
+            border-radius: 30px; /* Add this line to give rounded corners to the enlarged image */
         }
         .image-container div:hover h1 {
             display: block;
