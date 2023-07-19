@@ -15,7 +15,6 @@
         .image-container, .image-container-overlay {
             display: flex;
             justify-content: center;
-            align-items: center;
             height: 30%;
             width: 80%;
             position: absolute;
@@ -33,7 +32,7 @@
             height: 100%;
             background-position: center;
             background-repeat: no-repeat;
-            background-size: contain; /* Changed from 'cover' to 'contain' */
+            background-size: contain;
             transition: flex 0.5s ease-in-out, transform 0.5s ease-in-out;
             position: relative;
             overflow: visible;
@@ -54,15 +53,16 @@
             flex-grow: 2.2;
             z-index: 2;
             transform: scale(1.5);
-            border-radius: 7px; /* Changed to 7px */
+            border-radius: 7px;
         }
         .image-container div:hover h1 {
             display: block;
         }
         .image-container-overlay {
             z-index: 0;
-            border-radius: 7px; /* Changed to 7px */
+            border-radius: 7px;
             box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.5);
+            align-items: center; /* Keep the alignment property only on the overlay */
         }
         .logo {
             position: absolute;
