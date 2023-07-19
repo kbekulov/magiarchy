@@ -12,7 +12,7 @@
             font-family: 'Roboto', sans-serif;
             background-color: #333;
         }
-        .image-container, .image-container-overlay {
+        .image-container, .image-container-border {
             display: flex;
             justify-content: center;
             height: 30%;
@@ -22,12 +22,16 @@
             left: 50%;
             transform: translate(-50%, -50%);
         }
+        .image-container-border {
+            z-index: 0;
+            border-radius: 7px;
+            overflow: hidden;
+            box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.5);
+        }
         .image-container {
             z-index: 1;
             flex-direction: row;
             overflow: visible;
-            mask-image: radial-gradient(circle farthest-side, black 100%, transparent 100%);
-            border-radius: 7px; /* Apply rounded corners and mask to accordion */
         }
         .image-container div {
             flex: 1;
@@ -45,6 +49,7 @@
             left: 0;
             right: 0;
             bottom: 0;
+            border-radius: 0;
         }
         .image-container .background-div {
             background-size: cover;
@@ -73,15 +78,10 @@
             opacity: 1;
             transform: scale(1.5);
             z-index: 2;
-            border-radius: 7px; /* Apply rounded corners and mask to the zoomed image */
+            border-radius: 7px;
         }
         .image-container div:hover .hover-div h1 {
             display: block;
-        }
-        .image-container-overlay {
-            z-index: 0;
-            box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.5);
-            align-items: center;
         }
         .logo {
             position: absolute;
@@ -94,35 +94,31 @@
     </style>
 </head>
 <body>
+    <div class="image-container-border"></div>
     <div id="image-container" class="image-container">
-        <!-- Images will be inserted here -->
+      <!-- Images will be inserted here -->
     </div>
-    <div class="image-container-overlay"></div> <!-- overlay -->
     <img src="logo.jpg" class="logo" alt="Logo">
-    
     <script>
-        var images = ["Kyrien.jpg", "Lynleit.jpg", "Felix.jpg", "Reiner.jpg", "Drake.jpg", "Sherie.jpg", "Heyk.jpg", "Natalia.jpg", "Lester.jpg", "Helena.jpg", "Yulia.jpg", "Hiyu.jpg"];
-
-        var container = document.getElementById('image-container');
-        
-        images.forEach(function(image) {
-            var div = document.createElement('div');
-            var backgroundDiv = document.createElement('div');
-            var hoverDiv = document.createElement('div');
-        
-            backgroundDiv.style.backgroundImage = 'url(' + image + ')';
-            hoverDiv.style.backgroundImage = 'url(' + image + ')';
-        
-            backgroundDiv.className = 'background-div';
-            hoverDiv.className = 'hover-div';
-        
-            var h1 = document.createElement('h1');
-            h1.textContent = image.split('.')[0];
-            hoverDiv.appendChild(h1);
-            div.appendChild(backgroundDiv);
-            div.appendChild(hoverDiv);
-            container.appendChild(div);
-        });
+      // Add your image file names here
+      var images = ["Kyrien.jpg", "Lynleit.jpg", "Felix.jpg", "Reiner.jpg", "Drake.jpg", "Sherie.jpg", "Heyk.jpg", "Natalia.jpg", "Lester.jpg", "Helena.jpg", "Yulia.jpg", "Hiyu.jpg"];
+      var container = document.getElementById('image-container');
+      images.forEach(function(image) {
+        var div = document.createElement('div');
+        div.style.backgroundImage = 'url(' + image + ')';
+        var backgroundDiv = document.createElement('div');
+        backgroundDiv.className = 'background-div';
+        backgroundDiv.style.backgroundImage = 'url(' + image + ')';
+        div.appendChild(backgroundDiv);
+        var hoverDiv = document.createElement('div');
+        hoverDiv.className = 'hover-div';
+        hoverDiv.style.backgroundImage = 'url(' + image + ')';
+        var h1 = document.createElement('h1');
+        h1.textContent = image.split('.')[0]; // Use the image file name as the title
+        hoverDiv.appendChild(h1);
+        div.appendChild(hoverDiv);
+        container.appendChild(div);
+      });
     </script>
-  </body>
+</body>
 </html>
