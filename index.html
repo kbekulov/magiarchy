@@ -8,7 +8,6 @@
             height: 100%;
             margin: 0;
             padding: 0;
-            overflow: hidden;
             font-family: 'Roboto', sans-serif;
             background-color: #333;
         }
@@ -18,7 +17,6 @@
             flex-direction: row;
             height: 30%;
             width: 80%;
-            overflow: auto;
             position: absolute;
             top: 50%;
             left: 50%;
@@ -44,8 +42,8 @@
             display: none;
             text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7);
             text-transform: uppercase;
-            font-weight: 700; /* Use the bold (700) version of Roboto */
-            font-size: 1.5em; /* Adjust size as needed */
+            font-weight: 700; 
+            font-size: 1.5em; 
         }
         .image-container div:hover {
             flex-grow: 2.2;
@@ -59,7 +57,20 @@
             left: 50%;
             transform: translate(-50%, -50%);
             z-index: 0;
-            width: 200px; /* Adjust the width and height as needed */
+            width: 200px; 
+        }
+        /* Add styles for enlarged image view */
+        .enlarged-image-view {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1000;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
         }
     </style>
 </head>
@@ -67,6 +78,8 @@
     <div id="image-container" class="image-container">
       <!-- Images will be inserted here -->
     </div>
+    <!-- Create a separate div for enlarged image view -->
+    <div id="enlarged-image-view" class="enlarged-image-view"></div>
   
     <img src="logo.jpg" class="logo" alt="Logo">
     
@@ -75,6 +88,7 @@
       var images = ["Kyrien.jpg", "Lynleit.jpg", "Felix.jpg", "Reiner.jpg", "Drake.jpg", "Sherie.jpg", "Heyk.jpg", "Natalia.jpg", "Lester.jpg", "Helena.jpg", "Yulia.jpg", "Hiyu.jpg"];
   
       var container = document.getElementById('image-container');
+      var enlargedImageView = document.getElementById('enlarged-image-view'); // Get the enlarged image view element
   
       images.forEach(function(image) {
         var div = document.createElement('div');
@@ -83,6 +97,15 @@
         h1.textContent = image.split('.')[0]; // Use the image file name as the title
         div.appendChild(h1);
         container.appendChild(div);
+        
+        // Add mouseover and mouseout event listeners to each image
+        div.addEventListener('mouseover', function() {
+          enlargedImageView.style.backgroundImage = 'url(' + image + ')';
+          enlargedImageView.style.display = 'block';
+        });
+        div.addEventListener('mouseout', function() {
+          enlargedImageView.style.display = 'none';
+        });
       });
     </script>
   </body>
