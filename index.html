@@ -18,7 +18,7 @@
             flex-direction: row;
             height: 30%;
             width: 80%;
-            overflow: auto;
+            overflow: visible;
             position: absolute;
             top: 50%;
             left: 50%;
@@ -32,22 +32,9 @@
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
-            transition: flex 0.5s ease-in-out;
+            transition: flex 0.5s ease-in-out, transform 0.5s ease-in-out;
             position: relative;
             overflow: visible;
-        }
-        .image-container div .overlay {
-            height: 100%;
-            width: 100%;
-            position: absolute;
-            transition: transform 0.5s ease-in-out;
-        }
-        .image-container div:hover {
-            flex-grow: 2.2;
-        }
-        .image-container div:hover .overlay {
-            transform: scale(2);
-            z-index: 2;
         }
         .image-container div h1 {
             position: absolute;
@@ -60,6 +47,11 @@
             text-transform: uppercase;
             font-weight: 700;
             font-size: 1.5em;
+        }
+        .image-container div:hover {
+            flex-grow: 2.2;
+            z-index: 2;
+            transform: scale(2);
         }
         .image-container div:hover h1 {
             display: block;
@@ -84,16 +76,13 @@
         var images = ["Kyrien.jpg", "Lynleit.jpg", "Felix.jpg", "Reiner.jpg", "Drake.jpg", "Sherie.jpg", "Heyk.jpg", "Natalia.jpg", "Lester.jpg", "Helena.jpg", "Yulia.jpg", "Hiyu.jpg"];
 
         var container = document.getElementById('image-container');
-
+        
         images.forEach(function(image) {
             var div = document.createElement('div');
             div.style.backgroundImage = 'url(' + image + ')';
-            var overlay = document.createElement('div');
-            overlay.className = 'overlay';
             var h1 = document.createElement('h1');
             h1.textContent = image.split('.')[0];
-            overlay.appendChild(h1);
-            div.appendChild(overlay);
+            div.appendChild(h1);
             container.appendChild(div);
         });
     </script>
