@@ -13,30 +13,37 @@
             background-color: #333;
         }
         .image-container {
-            z-index: 1;
             display: flex;
-            flex-direction: row;
+            justify-content: center;
+            align-items: center;
             height: 30%;
             width: 80%;
-            overflow: visible;
             position: absolute;
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
             border-radius: 15px;
             box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.5);
+            overflow: hidden;
         }
-        .image-container div {
+        .inner-container {
+            z-index: 1;
+            display: flex;
+            flex-direction: row;
+            height: 100%;
+            width: 100%;
+            overflow: visible;
+        }
+        .inner-container div {
             flex: 1;
             height: 100%;
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
-            transition: flex 0.5s ease-in-out, transform 0.5s ease-in-out, border-radius 0.5s ease-in-out; /* Add border-radius transition */
+            transition: flex 0.5s ease-in-out, transform 0.5s ease-in-out, border-radius 0.5s ease-in-out;
             position: relative;
-            overflow: visible;
         }
-        .image-container div h1 {
+        .inner-container div h1 {
             position: absolute;
             bottom: 0;
             color: white;
@@ -48,13 +55,13 @@
             font-weight: 700;
             font-size: 1.5em;
         }
-        .image-container div:hover {
+        .inner-container div:hover {
             flex-grow: 2.2;
             z-index: 2;
-            transform: scale(1.5); /* Changed from scale(2) to scale(1.5) to reduce the enlargement by 50% */
-            border-radius: 30px; /* Add this line to give rounded corners to the enlarged image */
+            transform: scale(1.5);
+            border-radius: 30px;
         }
-        .image-container div:hover h1 {
+        .inner-container div:hover h1 {
             display: block;
         }
         .logo {
@@ -69,23 +76,26 @@
 </head>
 <body>
     <div id="image-container" class="image-container">
+        <div id="inner-container" class="inner-container">
+          <!-- Images will be inserted here -->
+        </div>
     </div>
   
     <img src="logo.jpg" class="logo" alt="Logo">
     
     <script>
-        var images = ["Kyrien.jpg", "Lynleit.jpg", "Felix.jpg", "Reiner.jpg", "Drake.jpg", "Sherie.jpg", "Heyk.jpg", "Natalia.jpg", "Lester.jpg", "Helena.jpg", "Yulia.jpg", "Hiyu.jpg"];
-
-        var container = document.getElementById('image-container');
-        
-        images.forEach(function(image) {
-            var div = document.createElement('div');
-            div.style.backgroundImage = 'url(' + image + ')';
-            var h1 = document.createElement('h1');
-            h1.textContent = image.split('.')[0];
-            div.appendChild(h1);
-            container.appendChild(div);
-        });
+      var images = ["Kyrien.jpg", "Lynleit.jpg", "Felix.jpg", "Reiner.jpg", "Drake.jpg", "Sherie.jpg", "Heyk.jpg", "Natalia.jpg", "Lester.jpg", "Helena.jpg", "Yulia.jpg", "Hiyu.jpg"];
+  
+      var container = document.getElementById('inner-container');
+  
+      images.forEach(function(image) {
+        var div = document.createElement('div');
+        div.style.backgroundImage = 'url(' + image + ')';
+        var h1 = document.createElement('h1');
+        h1.textContent = image.split('.')[0]; 
+        div.appendChild(h1);
+        container.appendChild(div);
+      });
     </script>
-</body>
+  </body>
 </html>
