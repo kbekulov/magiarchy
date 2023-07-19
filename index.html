@@ -10,7 +10,7 @@
             padding: 0;
             font-family: 'Roboto', sans-serif;
             background-color: #333;
-            overflow: hidden;  /* add this to prevent scrollbar on hover */
+            overflow: hidden;
         }
         .image-container {
             z-index: 1;
@@ -28,12 +28,14 @@
         .image-container div {
             flex: 1;
             height: 100%;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-            transition: transform 0.5s ease-in-out;
             position: relative;
-            overflow: hidden; /* Prevent inner h1 from overflowing */
+            overflow: hidden; 
+        }
+        .image-container div img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease-in-out;
         }
         .image-container div h1 {
             position: absolute;
@@ -44,12 +46,12 @@
             display: none;
             text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7);
             text-transform: uppercase;
-            font-weight: 700; /* Use the bold (700) version of Roboto */
-            font-size: 1.5em; /* Adjust size as needed */
+            font-weight: 700; 
+            font-size: 1.5em; 
         }
-        .image-container div:hover {
+        .image-container div:hover img {
             transform: scale(2);
-            z-index: 2; /* Make sure the hovered image is shown on top of the others */
+            z-index: 2;
         }
         .image-container div:hover h1 {
             display: block;
@@ -60,43 +62,41 @@
             left: 50%;
             transform: translate(-50%, -50%);
             z-index: 0;
-            width: 200px; /* Adjust the width and height as needed */
+            width: 200px;
         }
     </style>
 </head>
 <body>
     <div id="image-container" class="image-container">
-      <!-- Images will be inserted here -->
     </div>
-    <!-- Create a separate div for enlarged image view -->
-    <div id="enlarged-image-view" class="enlarged-image-view"></div>
   
     <img src="logo.jpg" class="logo" alt="Logo">
     
     <script>
-      // Add your image file names here
-      var images = ["Kyrien.jpg", "Lynleit.jpg", "Felix.jpg", "Reiner.jpg", "Drake.jpg", "Sherie.jpg", "Heyk.jpg", "Natalia.jpg", "Lester.jpg", "Helena.jpg", "Yulia.jpg", "Hiyu.jpg"];
-  
-      var container = document.getElementById('image-container');
-      var enlargedImageView = document.getElementById('enlarged-image-view'); // Get the enlarged image view element
-  
-      images.forEach(function(image) {
-        var div = document.createElement('div');
-        div.style.backgroundImage = 'url(' + image + ')';
-        var h1 = document.createElement('h1');
-        h1.textContent = image.split('.')[0]; // Use the image file name as the title
-        div.appendChild(h1);
-        container.appendChild(div);
-        
-        // Add mouseover and mouseout event listeners to each image
-        div.addEventListener('mouseover', function() {
-          enlargedImageView.style.backgroundImage = 'url(' + image + ')';
-          enlargedImageView.style.display = 'block';
+        // Add your image file names here
+        var images = ["Kyrien.jpg", "Lynleit.jpg", "Felix.jpg", "Reiner.jpg", "Drake.jpg", "Sherie.jpg", "Heyk.jpg", "Natalia.jpg", "Lester.jpg", "Helena.jpg", "Yulia.jpg", "Hiyu.jpg"];
+
+        var container = document.getElementById('image-container');
+
+        images.forEach(function(image) {
+            var div = document.createElement('div');
+            var img = document.createElement('img');  // Create img element
+            img.src = image;
+            img.classList.add('image');  // Add class to img for styling
+            var h1 = document.createElement('h1');
+            h1.textContent = image.split('.')[0]; // Use the image file name as the title
+            div.appendChild(img);  // Append img to div
+            div.appendChild(h1);
+            container.appendChild(div);
+
+            // Add mouseover and mouseout event listeners to each image
+            div.addEventListener('mouseover', function() {
+                img.style.transform = 'scale(2)';
+            });
+            div.addEventListener('mouseout', function() {
+                img.style.transform = 'scale(1)';
+            });
         });
-        div.addEventListener('mouseout', function() {
-          enlargedImageView.style.display = 'none';
-        });
-      });
     </script>
   </body>
 </html>
