@@ -30,14 +30,29 @@
         .image-container div {
             flex: 1;
             height: 100%;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover; /* Changes here */
-            transition: flex 0.5s ease-in-out, transform 0.5s ease-in-out;
             position: relative;
             overflow: visible;
+            transition: flex 0.5s ease-in-out;
         }
-        .image-container div h1 {
+        .image-container .background-div, .image-container .hover-div {
+            height: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+        }
+        .image-container .background-div {
+            background-size: cover;
+        }
+        .image-container .hover-div {
+            background-size: contain;
+            opacity: 0;
+            transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+        }
+        .image-container .hover-div h1 {
             position: absolute;
             bottom: 0;
             color: white;
@@ -51,12 +66,14 @@
         }
         .image-container div:hover {
             flex-grow: 2.2;
-            z-index: 2;
-            transform: scale(1.5);
-            border-radius: 7px;
-            background-size: contain; /* and here */
         }
-        .image-container div:hover h1 {
+        .image-container div:hover .hover-div {
+            opacity: 1;
+            transform: scale(1.5);
+            z-index: 2;
+            border-radius: 7px;
+        }
+        .image-container div:hover .hover-div h1 {
             display: block;
         }
         .image-container-overlay {
@@ -83,18 +100,28 @@
     <img src="logo.jpg" class="logo" alt="Logo">
     
     <script>
-      var images = ["Kyrien.jpg", "Lynleit.jpg", "Felix.jpg", "Reiner.jpg", "Drake.jpg", "Sherie.jpg", "Heyk.jpg", "Natalia.jpg", "Lester.jpg", "Helena.jpg", "Yulia.jpg", "Hiyu.jpg"];
-  
-      var container = document.getElementById('image-container');
-  
-      images.forEach(function(image) {
-        var div = document.createElement('div');
-        div.style.backgroundImage = 'url(' + image + ')';
-        var h1 = document.createElement('h1');
-        h1.textContent = image.split('.')[0]; 
-        div.appendChild(h1);
-        container.appendChild(div);
-      });
+        var images = ["Kyrien.jpg", "Lynleit.jpg", "Felix.jpg", "Reiner.jpg", "Drake.jpg", "Sherie.jpg", "Heyk.jpg", "Natalia.jpg", "Lester.jpg", "Helena.jpg", "Yulia.jpg", "Hiyu.jpg"];
+
+        var container = document.getElementById('image-container');
+        
+        images.forEach(function(image) {
+            var div = document.createElement('div');
+            var backgroundDiv = document.createElement('div');
+            var hoverDiv = document.createElement('div');
+        
+            backgroundDiv.style.backgroundImage = 'url(' + image + ')';
+            hoverDiv.style.backgroundImage = 'url(' + image + ')';
+        
+            backgroundDiv.className = 'background-div';
+            hoverDiv.className = 'hover-div';
+        
+            var h1 = document.createElement('h1');
+            h1.textContent = image.split('.')[0];
+            hoverDiv.appendChild(h1);
+            div.appendChild(backgroundDiv);
+            div.appendChild(hoverDiv);
+            container.appendChild(div);
+        });
     </script>
   </body>
 </html>
