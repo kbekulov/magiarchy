@@ -24,6 +24,7 @@
             overflow: hidden;
             font-family: 'Roboto', sans-serif;
             position: relative;
+            background-color: #333; 
         }
         .image-container, .image-container-border {
             display: flex;
@@ -95,11 +96,12 @@
         }
         .logo {
             position: absolute;
-            top: 35%;
+            top: calc(50% - 100px);
             left: 50%;
-            transform: translate(-50%, calc(-50% - 100px)); /* Adjusted position */
-            z-index: 0;
-            width: 200px;
+            transform: translate(-50%, -50%);
+            z-index: 2;
+            width: 200px; /* Adjust the width and height as needed */
+            mix-blend-mode: multiply;
         }
     </style>
 </head>
