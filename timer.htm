@@ -6,83 +6,103 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Time Since August 9th, 2023</title>
     <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            background-color: #282c36;
-            color: #ffffff;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
+        body, html {
+            height: 100%;
             margin: 0;
+            font-family: Arial, sans-serif;
+            overflow: hidden;
+            position: relative;
         }
 
-        .clock-container {
-            text-align: center;
-            padding: 20px;
-            border-radius: 10px;
-            background: rgba(0, 0, 0, 0.2);
+        .background-layer {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            pointer-events: none;
         }
 
-        .clock {
-            font-size: 2em;
-            margin-top: 20px;
+        .background-layer.lower {
+            background-image: url('toh2.png');
+            z-index: 1;
+            transform: scale(1.5);
         }
 
-        h1 {
-            font-size: 1.5em;
-            margin-bottom: 20px;
+        .background-layer.upper {
+            background-image: url('toh1.png');
+            z-index: 2;
+            transform: scale(1.1);
         }
 
-        .hours-only {
-            margin-top: 20px;
-            font-size: 1.5em;
+        .container {
+            position: relative;
+            z-index: 3;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+        }
+
+        .clock, .days {
+            margin: 20px 0;
+        }
+
+        #timer {
+            font-size: 3em;
+            color: #333;
+        }
+
+        #daysElapsed {
+            font-size: 1em;
+            color: #333;
         }
     </style>
 </head>
 
 <body>
-    <div class="clock-container">
-        <h1>Time since August 9th, 2023, 12:17AM Vilnius Time</h1>
+    <div class="background-layer lower"></div>
+    <div class="background-layer upper"></div>
+    <div class="container">
         <div class="clock">
-            <span id="days">00</span> days 
-            <span id="hours">00</span> hours 
-            <span id="minutes">00</span> minutes 
-            <span id="seconds">00</span> seconds
+            <span id="timer">00:00:00</span>
         </div>
-        <div class="hours-only">
-            Total: <span id="total-hours">00</span> hours
+        <div class="days">
+            <span id="daysElapsed">0.00 days</span>
         </div>
     </div>
     <script>
-        function calculateTimeSince(targetDate) {
-            const now = new Date();
-            const difference = now - targetDate;
+        const timerElement = document.getElementById('timer');
+        const daysElapsedElement = document.getElementById('daysElapsed');
+        const lowerLayer = document.querySelector('.background-layer.lower');
+        const upperLayer = document.querySelector('.background-layer.upper');
 
-            const totalHours = Math.floor(difference / (1000 * 60 * 60));
-            const days = Math.floor(difference / (1000 * 60 * 60 * 24));
-            const hours = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-            const minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
-            const seconds = Math.floor((difference % (1000 * 60)) / 1000);
-
-            return {
-                totalHours, days, hours, minutes, seconds
-            };
-        }
-
-        const targetDate = new Date(Date.UTC(2023, 7, 9, 12, 17, 0)); // Months are 0-indexed in JavaScript
+        const targetDate = new Date(Date.UTC(2023, 7, 9, 12, 17 - 3, 0));
 
         function updateClock() {
-            const time = calculateTimeSince(targetDate);
+            const now = new Date();
+            const diff = now - targetDate;
+            const days = (diff / (1000 * 60 * 60 * 24)).toFixed(2);
 
-            document.getElementById('days').textContent = String(time.days).padStart(2, '0');
-            document.getElementById('hours').textContent = String(time.hours).padStart(2, '0');
-            document.getElementById('minutes').textContent = String(time.minutes).padStart(2, '0');
-            document.getElementById('seconds').textContent = String(time.seconds).padStart(2, '0');
-            document.getElementById('total-hours').textContent = String(time.totalHours).padStart(2, '0');
+            const hours = Math.floor(diff / (1000 * 60 * 60));
+            const minutes = Math.floor((diff / (1000 * 60)) % 60);
+            const seconds = Math.floor((diff / 1000) % 60);
+
+            timerElement.textContent = `${String(hours).padStart(2, '0')}:${String(minutes).padStart(2, '0')}:${String(seconds).padStart(2, '0')}`;
+            daysElapsedElement.textContent = `${days} days`;
         }
 
-        setInterval(updateClock, 1000); // Update the clock every second
+        document.addEventListener('mousemove', (e) => {
+            const x = (window.innerWidth / 2 - e.pageX) / 50;
+            const y = (window.innerHeight / 2 - e.pageY) / 50;
+
+            lowerLayer.style.transform = `translate(${x * 0.3}px, ${y * 0.3}px) scale(1.5)`;
+            upperLayer.style.transform = `translate(${x}px, ${y}px) scale(1.1)`;
+        });
+
+        setInterval(updateClock, 1000);
     </script>
 </body>
 
