@@ -46,7 +46,7 @@
             height: 100%;
         }
 
-        .clock, .days {
+        .clock, .days, .quote {
             margin: 20px 0;
         }
 
@@ -58,6 +58,13 @@
         #daysElapsed {
             font-size: 1em;
             color: #333;
+        }
+
+        .quote {
+            font-size: 2em;
+            font-style: italic;
+            text-align: center;
+            max-width: 80%;
         }
     </style>
 </head>
@@ -72,21 +79,43 @@
         <div class="days">
             <span id="daysElapsed">0.00 days</span>
         </div>
+        <div class="quote" id="quoteBlock">
+            <!-- Quote will be populated by JavaScript -->
+        </div>
     </div>
     <script>
         const timerElement = document.getElementById('timer');
         const daysElapsedElement = document.getElementById('daysElapsed');
+        const quoteBlock = document.getElementById('quoteBlock');
         const lowerLayer = document.querySelector('.background-layer.lower');
         const upperLayer = document.querySelector('.background-layer.upper');
+        
+        const quotes = [
+            ["Villains never break up because they’re tenacious even when they’re in love.", "Vincenzo"],
+            ["Don’t talk about age. All age does is give you a lot of responsibilities.", "Vincenzo"],
+            ["Life isn’t always rosy for everyone. No matter how hard you try, you rarely get your way.", "Oh Gyeong Ja"],
+            ["Do you how you can tell when someone’s evil? It’s when they stop feeling ashamed.", "Vincenzo"],
+            ["Friends are like two souls in one body. Don’t get hurt since it will hurt me, too.", "Hong Cha Young"],
+            ["Do you know how much I love you? That makes me human. But to me, my principles come before love.", "Jang Han Seok"],
+            ["There is a limit to pain, but there is no limit to one’s fear.", "Vincenzo"],
+            ["People barely notice newcomers but you will notice a person’s absence.", "Mr. Nam"],
+            ["Your best source of protection isn’t a gun or a sword. It’s your brain. Don’t forget that.", "Vincenzo"],
+            ["Regret is the most painful thing in life.", "Vincenzo"],
+            ["Smart people may rule the world, but reckless and stubborn people like me protect it.", "Hong Yoo Chan"]
+            ];
 
-        const targetDate = new Date(Date.UTC(2023, 7, 9, 0, 17 - 3, 0)); // Adjusted for GMT+3
+        // Set random quote
+        const randomQuote = quotes[Math.floor(Math.random() * quotes.length)];
+        quoteBlock.innerHTML = `${randomQuote[0]}<br><span style="font-weight: bold;">—${randomQuote[1]}</span>`;
+
+        const targetDate = new Date(Date.UTC(2023, 7, 9, 0, 17 - 3, 0));
 
         function updateClock() {
             const now = new Date();
-            const nowInGMTPlus3 = new Date(now.getTime() + (3 * 60 * 60 * 1000)); // Convert current time to GMT+3
+            const nowInGMTPlus3 = new Date(now.getTime() + (3 * 60 * 60 * 1000));
             const diff = nowInGMTPlus3 - targetDate;
-            
             const days = (diff / (1000 * 60 * 60 * 24)).toFixed(2);
+
             const hours = Math.floor(diff / (1000 * 60 * 60));
             const minutes = Math.floor((diff / (1000 * 60)) % 60);
             const seconds = Math.floor((diff / 1000) % 60);
@@ -104,7 +133,6 @@
         });
 
         setInterval(updateClock, 1000);
-
     </script>
 </body>
 
