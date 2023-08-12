@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time Since August 9th, 2023</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #282c36;
+            color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .clock-container {
+            text-align: center;
+            padding: 20px;
+            border-radius: 10px;
+            background: rgba(0, 0, 0, 0.2);
+        }
+
+        .clock {
+            font-size: 2em;
+            margin-top: 20px;
+        }
+
+        h1 {
+            font-size: 1.5em;
+            margin-bottom: 20px;
+        }
+
+        .hours-only {
+            margin-top: 20px;
+            font-size: 1.5em;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="clock-container">
+        <h1>Time since August 9th, 2023, 12:17AM Vilnius Time</h1>
+        <div class="clock">
+            <span id="days">00</span> days 
+            <span id="hours">00</span> hours 
+            <span id="minutes">00</span> minutes 
+            <span id="seconds">00</span> seconds
+        </div>
+        <div class="hours-only">
+            Total: <span id="total-hours">00</span> hours
+        </div>
+    </div>
+    <script>
+        function calculateTimeSince(targetDate) {
+            const now = new Date();
+            const difference = now - targetDate;
+
+            const totalHours = Math.floor(difference / (1000 * 60 * 60));
+            const days = Math.floor(difference / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((difference % (1000 * 60)) / 1000);
+
+            return {
+                totalHours, days, hours, minutes, seconds
+            };
+        }
+
+        const targetDate = new Date(Date.UTC(2023, 7, 9, 12, 17, 0)); // Months are 0-indexed in JavaScript
+
+        function updateClock() {
+            const time = calculateTimeSince(targetDate);
+
+            document.getElementById('days').textContent = String(time.days).padStart(2, '0');
+            document.getElementById('hours').textContent = String(time.hours).padStart(2, '0');
+            document.getElementById('minutes').textContent = String(time.minutes).padStart(2, '0');
+            document.getElementById('seconds').textContent = String(time.seconds).padStart(2, '0');
+            document.getElementById('total-hours').textContent = String(time.totalHours).padStart(2, '0');
+        }
+
+        setInterval(updateClock, 1000); // Update the clock every second
+    </script>
+</body>
+
+</html>
