@@ -65,6 +65,8 @@
             font-style: italic;
             text-align: center;
             max-width: 80%;
+            transition: opacity 1s ease-in-out; /* Fade transition */
+            opacity: 1;
         }
     </style>
 </head>
@@ -89,7 +91,7 @@
         const quoteBlock = document.getElementById('quoteBlock');
         const lowerLayer = document.querySelector('.background-layer.lower');
         const upperLayer = document.querySelector('.background-layer.upper');
-        
+
         const quotes = [
             ["Villains never break up because they’re tenacious even when they’re in love.", "Vincenzo"],
             ["Don’t talk about age. All age does is give you a lot of responsibilities.", "Vincenzo"],
@@ -102,11 +104,24 @@
             ["Your best source of protection isn’t a gun or a sword. It’s your brain. Don’t forget that.", "Vincenzo"],
             ["Regret is the most painful thing in life.", "Vincenzo"],
             ["Smart people may rule the world, but reckless and stubborn people like me protect it.", "Hong Yoo Chan"]
-            ];
+        ];
 
-        // Set random quote
-        const randomQuote = quotes[Math.floor(Math.random() * quotes.length)];
-        quoteBlock.innerHTML = `${randomQuote[0]}<br><span style="font-weight: bold;">—${randomQuote[1]}</span>`;
+        function setRandomQuote() {
+            const randomQuote = quotes[Math.floor(Math.random() * quotes.length)];
+            quoteBlock.innerHTML = `${randomQuote[0]}<br><span style="font-weight: bold;">—${randomQuote[1]}</span>`;
+        }
+
+        setRandomQuote();
+
+        function cycleQuote() {
+            quoteBlock.style.opacity = 0;
+            setTimeout(() => {
+                setRandomQuote();
+                quoteBlock.style.opacity = 1;
+            }, 1000);
+        }
+
+        setInterval(cycleQuote, 6666);
 
         const targetDate = new Date(Date.UTC(2023, 7, 9, 0, 17 - 3, 0));
 
