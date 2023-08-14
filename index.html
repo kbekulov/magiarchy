@@ -173,6 +173,26 @@
 </div><div id="monologue-container"><p id="monologue-text">Loading monologues...</p><p id="monologue-author"></p></div><div id="characters-section"></div>
 <img alt="Logo" class="logo" src="logo.png"/>
 <script>
+      // Add your image file names here
+      var images = ["Kyrien.jpg", "Lynleit.jpg", "Felix.jpg", "Reiner.jpg", "Drake.jpg", "Sherie.jpg", "Heyk.jpg", "Natalia.jpg", "Kana.jpg", "Lester.jpg", "Helena.jpg", "Fionn.jpg", "Yulia.jpg", "Hiyu.jpg"];
+      var container = document.getElementById('image-container');
+      images.forEach(function(image) {
+        var div = document.createElement('div');
+        div.style.backgroundImage = 'url(' + image + ')';
+        var backgroundDiv = document.createElement('div');
+        backgroundDiv.className = 'background-div';
+        backgroundDiv.style.backgroundImage = 'url(' + image + ')';
+        div.appendChild(backgroundDiv);
+        var hoverDiv = document.createElement('div');
+        hoverDiv.className = 'hover-div';
+        hoverDiv.style.backgroundImage = 'url(' + image + ')';
+        var h1 = document.createElement('h1');
+        h1.textContent = image.split('.')[0]; // Use the image file name as the title
+        hoverDiv.appendChild(h1);
+        div.appendChild(hoverDiv);
+        container.appendChild(div);
+      });
+    </script><script>
 // Fetching the characters.json file
 fetch('characters.json')
   .then((response) => response.json())
