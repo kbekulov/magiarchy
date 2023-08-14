@@ -220,13 +220,13 @@ fetch('characters.json')
       characterDiv.className = 'character';
 
       // Adding character details
-      characterDiv.innerHTML = \`
+      characterDiv.innerHTML = `
         <h2>${character.name}</h2>
         <p class="mbti">${character.mbti}</p>
         <p class="description">${character.description}</p>
         <p class="keywords">Keywords: ${character.keywords}</p>
         <blockquote class="monologue">${character.monologue}</blockquote>
-      \`;
+      `;
 
       charactersSection.appendChild(characterDiv);
     });
