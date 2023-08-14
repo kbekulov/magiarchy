@@ -295,7 +295,7 @@ fetch('characters.json')
             monologueContainer.style.opacity = 0;
             setTimeout(() => {
                 // Update text and author
-                monologueText.textContent = """ + monologues[currentMonologue + """].text;
+                monologueText.textContent = '"' + monologues[currentMonologue] + '"'.text;
                 monologueAuthor.textContent = "- " + monologues[currentMonologue].author;
 
                 // Fade in
