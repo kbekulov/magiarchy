@@ -250,28 +250,29 @@ function startCharacterAnimation() {
   }, 5000);
 }
 </script>
-<div id="monologue-container"><p id="monologue-text">Loading monologues...</p><p id="monologue-author"></p></div><div id="characters-section"></div>
+<div id="monologue-container">"""<p id="monologue-text">Loading monologues...</p>"""<p id="monologue-author"></p></div><div id="characters-section"></div>
 <div class="link-container">
 <a href="https://bekulov.slite.page/p/yeR1KXmWrBORZu/GPT-template" target="_blank">Visit GPT Template</a>
 </div>
 <script>
-let currentCharacter = 0;
-const characters = document.querySelectorAll('.character');
-characters[0].style.display = 'block';
-characters[0].style.opacity = '1';
-
-setInterval(() => {
-    characters[currentCharacter].style.opacity = '0';
-    setTimeout(() => {
-        characters[currentCharacter].style.display = 'none';
-        currentCharacter = (currentCharacter + 1) % characters.length;
-        characters[currentCharacter].style.display = 'block';
-        setTimeout(() => {
-            characters[currentCharacter].style.opacity = '1';
-        }, 50);
-    }, 1000);
-}, 5000);
-</script><script>
+        let currentCharacter = 0;
+        const characters = document.querySelectorAll('.character');
+        characters[0].style.display = 'block';
+        characters[0].style.opacity = '1';
+        
+        setInterval(() => {
+            characters[currentCharacter].style.opacity = '0';
+            setTimeout(() => {
+                characters[currentCharacter].style.display = 'none';
+                currentCharacter = (currentCharacter + 1) % characters.length;
+                characters[currentCharacter].style.display = 'block';
+                setTimeout(() => {
+                    characters[currentCharacter].style.opacity = '1';
+                }, 50);
+            }, 1000);
+        }, 5000);
+</script>
+<script>
 // Fetching the characters.json file
 fetch('characters.json')
     .then((response) => response.json())
@@ -307,10 +308,11 @@ fetch('characters.json')
 
         // Initial update and start cycling every 5 seconds
         updateMonologue();
-        setInterval(updateMonologue, 5000);
+        setInterval(updateMonologue, 10000);
     })
     .catch((error) => {
         console.error("Failed to fetch monologues:", error);
     });
-</script></body>
+</script>
+</body>
 </html>
