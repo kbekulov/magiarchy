@@ -1,0 +1,102 @@
+{
+  "characters": [
+    {
+      "name": "Kyrien",
+      "mbti": "INTJ - The Architect",
+      "description": "Strategic, determined, complex, emotionally reserved",
+      "keywords": "Paradoxical, slender, deceptive strength, Western-Eastern blend, meticulous, magic-driven, morally ambiguous, enduring",
+      "monologue": "Every step I take towards vengeance feels like a step away from who I once was. The path is dark, but justice for my father's death guides me."
+    },
+    {
+      "name": "Lynleit",
+      "mbti": "INFJ - The Advocate",
+      "description": "Emotional, graceful, mysterious, manipulative",
+      "keywords": "Multifaceted, competent, Western-Central Asian blend, elegant, fire magic user, key player in covert operations",
+      "monologue": "The world of magic is a dance of shadows and light. I must navigate it with grace and strength, even if it means making uneasy alliances."
+    },
+    {
+      "name": "Fionn",
+      "mbti": "ENTJ - The Commander",
+      "description": "Ambitious, influential, pragmatic, strategic",
+      "keywords": "Founder of MSF, mage, widowed, comprehensive understanding of secret operations, ambitious, influential",
+      "monologue": "The world is a chessboard, and I must play my pieces wisely. My ambitions are for the greater good, but the path is fraught with danger and deceit."
+    },
+    {
+      "name": "Helena",
+      "mbti": "ESTJ - The Executive",
+      "description": "Ambitious, strategic, sinister, internal power struggle",
+      "keywords": "Stepmother, strategic marriage, sleeper agent, rival mage faction, ambitious, internal power struggle, pivotal battles",
+      "monologue": "My role is a mask, a game of shadows. I must ascend, even if it means tearing apart the very fabric of the family I've infiltrated."
+    },
+    {
+      "name": "Tien",
+      "mbti": "ISTP - The Virtuoso",
+      "description": "Taciturn, obedient, seasoned assassin, devoted",
+      "keywords": "Mysterious, obedient to Helena, seasoned assassin, devoted servant, embodiment of hidden danger",
+      "monologue": "I am a blade in the dark, a servant to my master's will. My loyalty is unwavering, my purpose clear. I will strike when the time is right."
+    },
+    {
+      "name": "Felix",
+      "mbti": "ESFP - The Entertainer",
+      "description": "Youthful, rebellious, loyal",
+      "keywords": "Lynleit's lieutenants, contrasting personalities, bodyguards, youthful, rebellious, deep respect and loyalty",
+      "monologue": "Life's too short to be serious all the time. But when it comes to protecting those I care about, I'll fight with everything I have."
+    },
+    {
+      "name": "Reiner",
+      "mbti": "ISTJ - The Logistician",
+      "description": "Strict, precise, duty-bound",
+      "keywords": "Lynleit's lieutenants, contrasting personalities, bodyguards, strict, precise, duty-bound",
+      "monologue": "Order, precision, duty. These are the principles I live by. I will stand guard, unwavering, ready to face whatever comes our way."
+    },
+    {
+      "name": "Drake",
+      "mbti": "INTJ - The Architect",
+      "description": "Strategic, intelligent, aware of conspiracy",
+      "keywords": "State Councillor, albino, intelligent, aware of impending coup, magic conspiracy, pact with MSF",
+      "monologue": "The game of politics is a delicate balance. I must tread carefully, for the shadows of conspiracy are closing in, and the stakes have never been higher."
+    },
+    {
+      "name": "Sherie",
+      "mbti": "ENFJ - The Protagonist",
+      "description": "Diplomatic, kind, manipulative, vigilant",
+      "keywords": "State Councillor and niece, aristocratic, diplomatic, kind, manipulative, aware of impending coup",
+      "monologue": "With grace and kindness, I navigate the treacherous waters of diplomacy. But beneath the pleasant facade, I must be vigilant, for danger lurks in every smile."
+    },
+    {
+      "name": "Natalia",
+      "mbti": "ENTP - The Debater",
+      "description": "Thrill-seeker, broad-skilled, discreet, unusual niche",
+      "keywords": "Mage, Thrill-seeker, Magoanalyst, Discreet, Client-committed, Broad-skilled, Unusual niche",
+      "monologue": "Magic isn't just a tool; it's an art, a science, a mystery. My clients see results, but they never truly understand the thrill of the unknown. That's my secret joy."
+    },
+    {
+      "name": "Heyk",
+      "mbti": "ISTJ - The Logistician",
+      "description": "Military, survivor, bodyguard, clandestine operative",
+      "keywords": "Military, Alpha Group, Survivor, Bodyguard, Supernatural witness, Clandestine operative, Drake's recruit",
+      "monologue": "I've seen things that defy explanation, horrors that tear men apart. But I survived. Now, I must use what I've seen to protect those who dare to fight the shadows."
+    },
+    {
+      "name": "Lester",
+      "mbti": "ESTP - The Entrepreneur",
+      "description": "Charming, battle-obsessed, mischievous, loyal",
+      "keywords": "Natalia's right-hand, Superhuman, Charming, Battle-obsessed, Mischievous, Mentor, Loyal",
+      "monologue": "A good fight is like a dance, and I'm always ready to lead. But don't mistake my humor for weakness; I know when to strike, and I never miss."
+    },
+    {
+      "name": "Hiyu",
+      "mbti": "ENFP - The Campaigner",
+      "description": "Adventurous, bold, unconventional, detective aspirant",
+      "keywords": "Criminology student, Adventurous, Private detective aspirant, Bold, Unconventional, Sherlock Holmes admirer, Yulia's partner",
+      "monologue": "They call me reckless, but I see it as a game, a puzzle to be solved. I'll be the best detective the world has ever seen, just you watch."
+    },
+    {
+      "name": "Yulia",
+      "mbti": "ISFJ - The Defender",
+      "description": "Disciplined, meticulous, ambitious, crime investigator",
+      "keywords": "Criminology student, Forensics specialist, Ambitious, Disciplined, Crime investigator, Meticulous, Hiyu's partner",
+      "monologue": "Every crime scene tells a story, and I'm here to read it. Hiyu may see it as a game, but to me, it's a calling. I'll find the truth, no matter what."
+    }
+  ]
+}
