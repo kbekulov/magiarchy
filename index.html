@@ -1,8 +1,9 @@
 <!DOCTYPE html>
+
 <html>
 <head>
-    <title>Magiarchy — 魔法の階層</title>
-    <style>
+<title>Magiarchy — 魔法の階層</title>
+<style>
         @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
         body::after {
             content: '';
@@ -116,37 +117,169 @@
         .link-container a:hover {
             color: #cccccc;
         }
-    </style>
+    
+#characters-section {
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+}
+
+.character {
+    display: none;
+    opacity: 0;
+    transition: opacity 1s ease;
+}
+
+.character h2 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.character p {
+    color: #555;
+    margin-bottom: 5px;
+}
+
+.character .monologue {
+    font-style: italic;
+    color: #666;
+    border-left: 4px solid #aaa;
+    padding-left: 10px;
+}
+
+#monologue-container {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+#monologue-text, #monologue-author {
+    font-family: 'Roboto', sans-serif;
+    color: #ffffff;
+}
+
+#monologue-author {
+    font-size: 0.8em;
+}
+</style>
 </head>
 <body>
-    <div class="image-container-border"></div>
-    <div id="image-container" class="image-container">
-      <!-- Images will be inserted here -->
-    </div>
-    <img src="logo.png" class="logo" alt="Logo">
-    <script>
-      // Add your image file names here
-      var images = ["Kyrien.jpg", "Lynleit.jpg", "Felix.jpg", "Reiner.jpg", "Drake.jpg", "Sherie.jpg", "Heyk.jpg", "Natalia.jpg", "Kana.jpg", "Lester.jpg", "Helena.jpg", "Fionn.jpg", "Yulia.jpg", "Hiyu.jpg"];
-      var container = document.getElementById('image-container');
-      images.forEach(function(image) {
-        var div = document.createElement('div');
-        div.style.backgroundImage = 'url(' + image + ')';
-        var backgroundDiv = document.createElement('div');
-        backgroundDiv.className = 'background-div';
-        backgroundDiv.style.backgroundImage = 'url(' + image + ')';
-        div.appendChild(backgroundDiv);
-        var hoverDiv = document.createElement('div');
-        hoverDiv.className = 'hover-div';
-        hoverDiv.style.backgroundImage = 'url(' + image + ')';
-        var h1 = document.createElement('h1');
-        h1.textContent = image.split('.')[0]; // Use the image file name as the title
-        hoverDiv.appendChild(h1);
-        div.appendChild(hoverDiv);
-        container.appendChild(div);
-      });
-    </script>
-    <div class="link-container">
-        <a href="https://bekulov.slite.page/p/yeR1KXmWrBORZu/GPT-template" target="_blank">Visit GPT Template</a>
-    </div>
-</body>
+<div class="image-container-border"></div>
+<div class="image-container" id="image-container">
+<!-- Images will be inserted here -->
+</div><div id="monologue-container"><p id="monologue-text">Loading monologues...</p><p id="monologue-author"></p></div><div id="characters-section"></div>
+<img alt="Logo" class="logo" src="logo.png"/>
+<script>
+// Fetching the characters.json file
+fetch('characters.json')
+  .then((response) => response.json())
+  .then((data) => {
+    const charactersSection = document.getElementById('characters-section');
+
+    // Looping through the characters data to create individual divs for each character
+    data.characters.forEach((character) => {
+      const characterDiv = document.createElement('div');
+      characterDiv.className = 'character';
+
+      // Adding character details
+      characterDiv.innerHTML = \`
+        <h2>${character.name}</h2>
+        <p class="mbti">${character.mbti}</p>
+        <p class="description">${character.description}</p>
+        <p class="keywords">Keywords: ${character.keywords}</p>
+        <blockquote class="monologue">${character.monologue}</blockquote>
+      \`;
+
+      charactersSection.appendChild(characterDiv);
+    });
+
+    // Initiating the fade-in and fade-out animation (as previously defined)
+    startCharacterAnimation();
+  });
+
+// Function to handle the fade-in and fade-out animation
+function startCharacterAnimation() {
+  let currentCharacter = 0;
+  const characters = document.querySelectorAll('.character');
+  characters[0].style.display = 'block';
+  characters[0].style.opacity = '1';
+
+  setInterval(() => {
+    characters[currentCharacter].style.opacity = '0';
+    setTimeout(() => {
+      characters[currentCharacter].style.display = 'none';
+      currentCharacter = (currentCharacter + 1) % characters.length;
+      characters[currentCharacter].style.display = 'block';
+      setTimeout(() => {
+        characters[currentCharacter].style.opacity = '1';
+      }, 50);
+    }, 1000);
+  }, 5000);
+}
+</script>
+<div class="link-container">
+<a href="https://bekulov.slite.page/p/yeR1KXmWrBORZu/GPT-template" target="_blank">Visit GPT Template</a>
+</div>
+<script>
+let currentCharacter = 0;
+const characters = document.querySelectorAll('.character');
+characters[0].style.display = 'block';
+characters[0].style.opacity = '1';
+
+setInterval(() => {
+    characters[currentCharacter].style.opacity = '0';
+    setTimeout(() => {
+        characters[currentCharacter].style.display = 'none';
+        currentCharacter = (currentCharacter + 1) % characters.length;
+        characters[currentCharacter].style.display = 'block';
+        setTimeout(() => {
+            characters[currentCharacter].style.opacity = '1';
+        }, 50);
+    }, 1000);
+}, 5000);
+</script><script>
+// Fetching the characters.json file
+fetch('characters.json')
+    .then((response) => response.json())
+    .then((data) => {
+        // Getting the monologue container elements
+        const monologueContainer = document.getElementById('monologue-container');
+        const monologueText = document.getElementById('monologue-text');
+        const monologueAuthor = document.getElementById('monologue-author');
+
+        // Extracting the monologues
+        const monologues = data.characters.map((character) => ({
+            text: character.monologue,
+            author: character.name
+        }));
+
+        // Function to update the monologue with fade-in and fade-out effect
+        let currentMonologue = 0;
+        const updateMonologue = () => {
+            // Fade out
+            monologueContainer.style.opacity = 0;
+            setTimeout(() => {
+                // Update text and author
+                monologueText.textContent = monologues[currentMonologue].text;
+                monologueAuthor.textContent = "- " + monologues[currentMonologue].author;
+
+                // Fade in
+                monologueContainer.style.opacity = 1;
+
+                // Cycle to the next monologue
+                currentMonologue = (currentMonologue + 1) % monologues.length;
+            }, 1000);
+        };
+
+        // Initial update and start cycling every 5 seconds
+        updateMonologue();
+        setInterval(updateMonologue, 5000);
+    })
+    .catch((error) => {
+        console.error("Failed to fetch monologues:", error);
+    });
+</script></body>
 </html>
