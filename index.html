@@ -113,9 +113,9 @@
         .display-text {
             position: absolute;
             top: 10%;
-            left: 280px;
+            left: 320px;
             color: white;
-            font-family: 'Georgia', serif;
+            font-family: 'Merriweather', serif;
             font-size: 1rem;
             line-height: 1.8;
             text-align: left;
@@ -124,18 +124,22 @@
             display: none;
             overflow-y: auto;
             max-height: 80%;
-            max-width: 60%;
+            max-width: 55%;
             mask-image: linear-gradient(to bottom, black 90%, transparent 100%);
             -webkit-mask-image: linear-gradient(to bottom, black 90%, transparent 100%);
-            padding-right: 10px;
+            padding-right: 20px;
         }
 
         .display-text h1, .display-text h2, .display-text h3 {
             margin: 20px 0 10px;
+            font-family: 'Playfair Display', serif;
+            letter-spacing: 0.5px;
         }
 
         .display-text p {
             margin: 10px 0;
+            font-family: 'Lora', serif;
+            line-height: 1.8;
         }
 
         .display-text ul {
@@ -147,21 +151,33 @@
         .display-text ul li {
             margin-bottom: 10px;
             position: relative;
-            padding-left: 25px;
+            padding-left: 30px;
         }
 
         .display-text ul li::before {
-            content: '\f0a9'; /* Font Awesome Icon */
+            content: '\f054'; /* Font Awesome Icon */
             font-family: 'Font Awesome 5 Free';
             font-weight: 900;
             position: absolute;
             left: 0;
             color: white;
-            font-size: 0.9rem;
+            font-size: 1rem;
+        }
+
+        .display-text a {
+            color: #ff4500;
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+            transition: all 0.3s ease;
+        }
+
+        .display-text a:hover {
+            color: #e03d00;
+            border-bottom: 1px solid #e03d00;
         }
 
         .display-text::-webkit-scrollbar {
-            width: 3px;
+            width: 4.5px;
         }
 
         .display-text::-webkit-scrollbar-track {
@@ -171,7 +187,7 @@
         .display-text::-webkit-scrollbar-thumb {
             background-color: white;
             border-radius: 10px;
-            margin: 2px;
+            margin: 5px;
         }
 
         .display-text::-webkit-scrollbar-thumb:hover {
