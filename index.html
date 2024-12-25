@@ -96,15 +96,15 @@
             transition: transform 1s ease;
             display: flex;
             align-items: center;
-            justify-content: center;
+            justify-content: flex-start;
         }
 
         .content img {
-            position: absolute;
+            position: relative;
             width: auto;
             height: 100%;
             max-height: 100%;
-            object-fit: cover; /* Changed from scale-down to cover */
+            object-fit: cover;
             border-radius: 0;
             box-shadow: none;
             pointer-events: none; /* Prevent right-click save */
@@ -120,7 +120,7 @@
         .display-text {
             position: absolute;
             top: 10%;
-            left: 320px;
+            left: calc(var(--image-width) + 10px);
             color: white;
             font-family: 'Merriweather', serif;
             font-size: 1.2rem;
@@ -128,7 +128,6 @@
             text-align: left;
             text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
             z-index: 4;
-            display: none;
             overflow-y: auto;
             max-height: 80%;
             max-width: 55%;
@@ -266,18 +265,26 @@
                 e.preventDefault();
             });
 
+            function adjustTextPosition() {
+                const imageWidth = $('.content img.active').width();
+                document.documentElement.style.setProperty('--image-width', `${imageWidth}px`);
+            }
+
+            // Adjust text position on load and resize
+            adjustTextPosition();
+            $(window).on('resize', adjustTextPosition);
+
             // Display text from local markdown files on menu link click
             $('.menu a').on('click', function (e) {
-                e.preventDefault(); // Prevent default link behavior
+                e.preventDefault();
 
                 const linkName = $(this).text().toLowerCase().replace(' | ', '-');
                 $.get(`${linkName}.md`, function (data) {
                     $('.display-text').html(marked.parse(data)).fadeIn();
                 });
 
-                $('.content').css('transform', 'translateX(calc(40vw))'); // Adjusted for better visibility
-
-                $('.copyright').addClass('center'); // Move copyright to center
+                $('.content').css('transform', 'translateX(calc(40vw))');
+                $('.copyright').addClass('center');
             });
 
             // Image Alternation
@@ -295,7 +302,7 @@
                 currentImage = nextImage;
             }
 
-            setInterval(alternateImages, 10000); // Alternate every 10 seconds
+            setInterval(alternateImages, 10000);
         });
     </script>
 </head>
