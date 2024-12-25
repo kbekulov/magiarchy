@@ -111,20 +111,36 @@
 
         .display-text {
             position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
+            top: 10%;
+            left: 220px;
             color: white;
-            font-size: 1.5rem;
-            text-align: center;
-            background: rgba(0, 0, 0, 0.8);
-            padding: 20px;
-            border-radius: 10px;
+            font-family: 'Georgia', serif;
+            font-size: 1.25rem;
+            line-height: 1.6;
+            text-align: left;
             z-index: 4;
             display: none;
             overflow-y: auto;
             max-height: 80%;
-            max-width: 90%;
+            max-width: 60%;
+        }
+
+        .display-text::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        .display-text::-webkit-scrollbar-track {
+            background: transparent;
+        }
+
+        .display-text::-webkit-scrollbar-thumb {
+            background-color: white;
+            border-radius: 10px;
+            border: 2px solid transparent;
+        }
+
+        .display-text::-webkit-scrollbar-thumb:hover {
+            background-color: #e0e0e0;
         }
 
         /* Menu Styles */
