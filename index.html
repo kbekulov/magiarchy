@@ -126,7 +126,7 @@
             position: absolute;
             top: 10%;
             color: white;
-            font-family: 'Tahoma', sans-serif;
+            font-family: 'Merriweather', serif;
             font-size: 1.2rem;
             line-height: 2.0;
             text-align: left;
@@ -151,7 +151,7 @@
 
         .display-text p {
             margin: 10px 0;
-            font-family: 'Tahoma', sans-serif;
+            font-family: 'Lora', serif;
             line-height: 2.0;
         }
 
@@ -168,11 +168,15 @@
         }
 
         .display-text ul li::before {
-            content: '\2716'; /* Unicode for an equal-sized cross */
+            content: '+';
             position: absolute;
             left: 0;
             color: white;
             font-size: 1.2rem;
+        }
+
+        .display-text strong {
+            font-family: 'Tahoma', sans-serif;
         }
 
         .display-text a {
