@@ -6,7 +6,7 @@
     <title>Anime Promo Page</title>
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js" integrity="sha384-k6RqeWeci5ZR/Lv4MR0sA0FfDOMVZQsV4yOs7ppUJdBUq3Bh7e0N8nWw7u85PUGX" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
     <style>
         /* Reset */
         body, html {
@@ -22,7 +22,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            background: linear-gradient(120deg, #000428, #004e92);
+            background: #000;
         }
 
         .container {
@@ -105,7 +105,7 @@
             max-height: 100%;
             object-fit: scale-down;
             border-radius: 0;
-            box-shadow: 0 0 20px rgba(0, 115, 255, 0.8);
+            box-shadow: none;
             pointer-events: none; /* Prevent right-click save */
             user-select: none; /* Prevent selection */
         }
@@ -113,13 +113,13 @@
         .display-text {
             position: absolute;
             top: 10%;
-            left: 270px;
-            color: #cce7ff;
+            left: 250px;
+            color: white;
             font-family: 'Georgia', serif;
             font-size: 1rem;
             line-height: 1.8;
             text-align: left;
-            text-shadow: 0 2px 5px rgba(0, 0, 0, 0.6), 0 0 8px rgba(0, 115, 255, 0.5);
+            text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
             z-index: 4;
             display: none;
             overflow-y: auto;
@@ -129,7 +129,6 @@
 
         .display-text h1, .display-text h2, .display-text h3 {
             margin: 20px 0 10px;
-            color: #8cc0ff;
         }
 
         .display-text p {
@@ -149,16 +148,17 @@
         }
 
         .display-text ul li::before {
-            content: '\f111'; /* Font Awesome Icon */
+            content: '\f0a9'; /* Font Awesome Icon */
             font-family: 'Font Awesome 5 Free';
             font-weight: 900;
             position: absolute;
             left: 0;
-            color: #0073ff;
+            color: white;
+            font-size: 0.9rem;
         }
 
         .display-text::-webkit-scrollbar {
-            width: 12px;
+            width: 2px;
         }
 
         .display-text::-webkit-scrollbar-track {
@@ -166,13 +166,12 @@
         }
 
         .display-text::-webkit-scrollbar-thumb {
-            background-color: rgba(0, 115, 255, 0.6);
+            background-color: white;
             border-radius: 10px;
-            border: 2px solid transparent;
         }
 
         .display-text::-webkit-scrollbar-thumb:hover {
-            background-color: rgba(0, 115, 255, 0.8);
+            background-color: #e0e0e0;
         }
 
         /* Menu Styles */
@@ -191,18 +190,12 @@
         }
 
         .menu a {
-            color: #cce7ff;
+            color: white;
             text-decoration: none;
             font-size: 1.5rem;
             margin: 15px 0;
             position: relative;
             display: inline-block;
-            transition: color 0.3s, text-shadow 0.3s;
-        }
-
-        .menu a:hover {
-            color: #0073ff;
-            text-shadow: 0 0 10px #0073ff;
         }
 
         .menu a::after {
@@ -212,7 +205,7 @@
             bottom: -5px;
             width: 0;
             height: 2px;
-            background: #0073ff;
+            background: white;
             transition: width 0.3s;
         }
 
