@@ -286,7 +286,7 @@
                 const imageWidth = $('.content img').width();
                 const screenWidth = $(window).width();
                 const offset = screenWidth - imageWidth;
-                $('.display-text').css('left', `${offset}px`);
+                $('.display-text').css('left', `${imageWidth}px`);
             }
 
             $(window).on('resize', adjustTextContainer);
@@ -300,19 +300,11 @@
                 $.get(`${linkName}.md`, function (data) {
                     $('.display-text').html(marked.parse(data)).fadeIn();
                 });
-                
-                // Move the central image to the right
+
                 $('.content').css('transform', 'translateX(calc(40vw))');
 
-                // Adjust the copyright text to move to the center
-                $('.copyright').addClass('center');
+                $('.copyright').addClass('center'); // Move copyright to center
             });
-
-            // Ensure text container adjustment after image transition
-            $('.content img').on('load', adjustTextContainer);
-
-            // Initialize content and ensure proper layout
-            adjustTextContainer();
         });
     </script>
 </head>
