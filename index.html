@@ -116,8 +116,8 @@
             left: 320px;
             color: white;
             font-family: 'Merriweather', serif;
-            font-size: 1rem;
-            line-height: 1.8;
+            font-size: 1.2rem;
+            line-height: 2.0;
             text-align: left;
             text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
             z-index: 4;
@@ -125,9 +125,9 @@
             overflow-y: auto;
             max-height: 80%;
             max-width: 55%;
-            mask-image: linear-gradient(to bottom, black 90%, transparent 100%);
-            -webkit-mask-image: linear-gradient(to bottom, black 90%, transparent 100%);
-            padding-right: 20px;
+            mask-image: linear-gradient(to bottom, black 85%, transparent 100%);
+            -webkit-mask-image: linear-gradient(to bottom, black 85%, transparent 100%);
+            padding-right: 40px;
         }
 
         .display-text h1, .display-text h2, .display-text h3 {
@@ -139,23 +139,23 @@
         .display-text p {
             margin: 10px 0;
             font-family: 'Lora', serif;
-            line-height: 1.8;
+            line-height: 2.0;
         }
 
         .display-text ul {
             list-style: none;
-            margin: 15px 0;
+            margin: 30px 0;
             padding-left: 20px;
         }
 
         .display-text ul li {
-            margin-bottom: 10px;
+            margin-bottom: 20px;
             position: relative;
             padding-left: 30px;
         }
 
         .display-text ul li::before {
-            content: '\f054'; /* Font Awesome Icon */
+            content: '\f105'; /* Font Awesome Icon */
             font-family: 'Font Awesome 5 Free';
             font-weight: 900;
             position: absolute;
@@ -182,16 +182,17 @@
 
         .display-text::-webkit-scrollbar-track {
             background: transparent;
+            margin: 0 20px;
         }
 
         .display-text::-webkit-scrollbar-thumb {
-            background-color: white;
+            background-color: rgba(255, 255, 255, 0.6);
             border-radius: 10px;
-            margin: 5px;
+            backdrop-filter: blur(3px);
         }
 
         .display-text::-webkit-scrollbar-thumb:hover {
-            background-color: #e0e0e0;
+            background-color: rgba(255, 255, 255, 0.8);
         }
 
         /* Menu Styles */
