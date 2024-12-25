@@ -6,6 +6,7 @@
     <title>Anime Promo Page</title>
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
     <style>
         /* Reset */
         body, html {
@@ -112,17 +113,47 @@
         .display-text {
             position: absolute;
             top: 10%;
-            left: 220px;
+            left: 250px;
             color: white;
             font-family: 'Georgia', serif;
-            font-size: 1.25rem;
-            line-height: 1.6;
+            font-size: 1rem;
+            line-height: 1.8;
             text-align: left;
+            text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
             z-index: 4;
             display: none;
             overflow-y: auto;
             max-height: 80%;
             max-width: 60%;
+        }
+
+        .display-text h1, .display-text h2, .display-text h3 {
+            margin: 20px 0 10px;
+        }
+
+        .display-text p {
+            margin: 10px 0;
+        }
+
+        .display-text ul {
+            list-style: none;
+            margin: 15px 0;
+            padding-left: 20px;
+        }
+
+        .display-text ul li {
+            margin-bottom: 10px;
+            position: relative;
+            padding-left: 25px;
+        }
+
+        .display-text ul li::before {
+            content: '\f054'; /* Font Awesome Icon */
+            font-family: 'Font Awesome 5 Free';
+            font-weight: 900;
+            position: absolute;
+            left: 0;
+            color: #ff4500;
         }
 
         .display-text::-webkit-scrollbar {
