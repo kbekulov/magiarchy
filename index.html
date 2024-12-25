@@ -123,7 +123,6 @@
         .display-text {
             position: absolute;
             top: 10%;
-            left: 320px;
             color: white;
             font-family: 'Merriweather', serif;
             font-size: 1.2rem;
@@ -138,6 +137,7 @@
             mask-image: linear-gradient(to bottom, black 85%, transparent 100%);
             -webkit-mask-image: linear-gradient(to bottom, black 85%, transparent 100%);
             padding-right: 40px;
+            transition: left 0.5s ease;
         }
 
         .display-text h1, .display-text h2, .display-text h3 {
@@ -281,6 +281,17 @@
             const randomImage = Math.random() < 0.5 ? 'img/lynleit-copyright-1.png' : 'img/lynleit-copyright-2.png';
             $('.content').html(`<img src="${randomImage}" alt="Main Star">`);
 
+            // Update text container based on image width
+            function adjustTextContainer() {
+                const imageWidth = $('.content img').width();
+                const screenWidth = $(window).width();
+                const offset = screenWidth - imageWidth;
+                $('.display-text').css('left', `${offset}px`);
+            }
+
+            $(window).on('resize', adjustTextContainer);
+            adjustTextContainer();
+
             // Display text from local markdown files on menu link click
             $('.menu a').on('click', function (e) {
                 e.preventDefault(); // Prevent default link behavior
@@ -289,11 +300,19 @@
                 $.get(`${linkName}.md`, function (data) {
                     $('.display-text').html(marked.parse(data)).fadeIn();
                 });
+                
+                // Move the central image to the right
+                $('.content').css('transform', 'translateX(calc(40vw))');
 
-                $('.content').css('transform', 'translateX(calc(40vw))'); // Slide the content to the right
-
-                $('.copyright').addClass('center'); // Move copyright to center
+                // Adjust the copyright text to move to the center
+                $('.copyright').addClass('center');
             });
+
+            // Ensure text container adjustment after image transition
+            $('.content img').on('load', adjustTextContainer);
+
+            // Initialize content and ensure proper layout
+            adjustTextContainer();
         });
     </script>
 </head>
