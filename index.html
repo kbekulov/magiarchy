@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Anime Promo Page</title>
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
     <style>
         /* Reset */
         body, html {
@@ -121,6 +122,9 @@
             border-radius: 10px;
             z-index: 4;
             display: none;
+            overflow-y: auto;
+            max-height: 80%;
+            max-width: 90%;
         }
 
         /* Menu Styles */
@@ -169,23 +173,16 @@
                 e.preventDefault();
             });
 
-            // Move the central image to the right on menu link click
+            // Display text from local markdown files on menu link click
             $('.menu a').on('click', function (e) {
                 e.preventDefault(); // Prevent default link behavior
 
                 const linkName = $(this).text().toLowerCase().replace(' | ', '-');
-                $.get(`${linkName}.txt`, function (data) {
-                    $('.display-text').text(data).fadeIn();
+                $.get(`${linkName}.md`, function (data) {
+                    $('.display-text').html(marked.parse(data)).fadeIn();
                 });
 
                 $('.content').css('transform', 'translateX(calc(50vw - 100px))'); // Ensure full visibility
-            });
-
-            // Hide text when clicking anywhere else
-            $(document).on('click', function (e) {
-                if (!$(e.target).closest('.menu a').length) {
-                    $('.display-text').fadeOut();
-                }
             });
         });
     </script>
