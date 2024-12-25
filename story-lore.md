@@ -9,9 +9,7 @@
 - **The Setting in the Story:** A pivotal moment tied to this lore appears when Lynleit attends a monastery meeting with her father, Fionn. The event reflects the ongoing negotiations and tensions that underpin the Mage-Church treaty, highlighting Lynleit’s frustration with its complexities and her strained relationship with her stepmother, Helena.
 
 ### Lore: The Duchy
-<p style="float: right;">
-    <img src="img/duchy-map.png" style="width: 300px;">
-</p>
+![The Duchy MAP](img/duchy-map.png)
 The duchy, a small yet storied nation, reflects a unique blend of German, Russian, and Baltic influences, emerging as a sovereign state after the Napoleonic Wars. Governed through a delicate balance of parliamentarian rule and symbolic ducal authority, the country's narrative is shaped by various character groups.
 - **MSF (Private Intelligence Agency):** The MSF, initially a grounded private intelligence agency, serves as a tool for Fionn to engage in political manoeuvring. Unbeknownst to its members, it later becomes entangled in magical affairs as Lynleit transforms it into a smaller, focused organization targeting magical threats.
 - **The Church:** Concealing a secret faction, the church engages in diplomatic relations with the global mage community, manoeuvring between religious duties and mystical diplomacy.
