@@ -274,7 +274,7 @@
         }
     </style>
     <script>
-        $(document).ready(function () {
+       $(document).ready(function () {
             // Disable right-click on the entire page
             $(document).on("contextmenu", function (e) {
                 e.preventDefault();
@@ -284,16 +284,15 @@
             const randomImage = Math.random() < 0.5 ? 'img/lynleit-copyright-1.png' : 'img/lynleit-copyright-2.png';
             $('.content').html(`<img src="${randomImage}" alt="Main Star">`);
 
-            // Update text container based on image width
+            // Adjust text container based on image width
             function adjustTextContainer() {
                 const imageWidth = $('.content img').width();
-                const screenWidth = $(window).width();
-                const offset = screenWidth - imageWidth;
                 $('.display-text').css('left', `${imageWidth}px`);
             }
 
+            // Ensure the function executes after the image fully loads
+            $('.content img').on('load', adjustTextContainer);
             $(window).on('resize', adjustTextContainer);
-            adjustTextContainer();
 
             // Display text from local markdown files on menu link click
             $('.menu a').on('click', function (e) {
@@ -305,7 +304,6 @@
                 });
 
                 $('.content').css('transform', 'translateX(calc(40vw))');
-
                 $('.copyright').addClass('center'); // Move copyright to center
             });
         });
