@@ -48,6 +48,7 @@
             z-index: 1;
             animation: shaky-cam 15s infinite alternate;
             pointer-events: none; /* Prevent interaction */
+            transition: background-image 1s ease-in-out;
         }
 
         @keyframes shaky-cam {
@@ -108,6 +109,7 @@
             box-shadow: none;
             pointer-events: none; /* Prevent right-click save */
             user-select: none; /* Prevent selection */
+            transition: opacity 1s ease-in-out;
         }
 
         .display-text {
@@ -252,6 +254,20 @@
 
                 $('.content').css('transform', 'translateX(calc(40vw))'); // Adjusted for better visibility
             });
+
+            // Image Alternation
+            let currentImage = 1;
+
+            function alternateImages() {
+                const nextImage = currentImage === 1 ? 2 : 1;
+                $('.background').css('background-image', `url('img/lynleit-copyright-${nextImage}.png')`);
+                $('.content img').fadeOut(1000, function () {
+                    $(this).attr('src', `img/lynleit-copyright-${nextImage}.png`).fadeIn(1000);
+                });
+                currentImage = nextImage;
+            }
+
+            setInterval(alternateImages, 10000); // Alternate every 10 seconds
         });
     </script>
 </head>
