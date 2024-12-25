@@ -101,6 +101,7 @@
         }
 
         .content img {
+            position: absolute;
             width: auto;
             height: 100%;
             max-height: 100%;
@@ -109,8 +110,12 @@
             box-shadow: none;
             pointer-events: none; /* Prevent right-click save */
             user-select: none; /* Prevent selection */
-            opacity: 1;
+            opacity: 0;
             transition: opacity 1s ease-in-out;
+        }
+
+        .content img.active {
+            opacity: 1;
         }
 
         .display-text {
@@ -241,12 +246,19 @@
         .copyright {
             position: absolute;
             bottom: 10px;
-            left: 50%;
-            transform: translateX(-50%);
+            right: 10px;
             color: white;
             font-family: 'Times New Roman', serif;
             font-size: 0.8rem;
             z-index: 5;
+            text-align: right;
+            transition: all 0.5s ease;
+        }
+
+        .copyright.center {
+            left: 50%;
+            right: auto;
+            transform: translateX(-50%);
             text-align: center;
         }
     </style>
@@ -267,6 +279,8 @@
                 });
 
                 $('.content').css('transform', 'translateX(calc(40vw))'); // Adjusted for better visibility
+
+                $('.copyright').addClass('center'); // Move copyright to center
             });
 
             // Image Alternation
@@ -274,11 +288,13 @@
 
             function alternateImages() {
                 const nextImage = currentImage === 1 ? 2 : 1;
-                $('.background').css('background-image', `url('img/lynleit-copyright-${nextImage}.png')`);
+                const newImage = $(`<img src="img/lynleit-copyright-${nextImage}.png" class="active" alt="Main Star">`);
+                $('.content').append(newImage);
 
-                $('.content img').css({ opacity: 0 }).one('transitionend webkitTransitionEnd oTransitionEnd', function () {
-                    $(this).attr('src', `img/lynleit-copyright-${nextImage}.png`).css({ opacity: 1 });
-                });
+                setTimeout(() => {
+                    $('.content img').not(newImage).remove();
+                }, 1000);
+
                 currentImage = nextImage;
             }
 
@@ -298,7 +314,7 @@
             <a href="#credits">Credits</a>
         </div>
         <div class="content">
-            <img src="img/lynleit-copyright-1.png" alt="Main Star">
+            <img src="img/lynleit-copyright-1.png" class="active" alt="Main Star">
         </div>
         <div class="display-text"></div>
         <div class="copyright">Original story and characters by © KIRIL BEKULOV / Project MAGIARCHY</div>
