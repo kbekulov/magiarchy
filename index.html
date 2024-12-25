@@ -304,62 +304,59 @@
         }
     </style>
     <script>
-        $(document).ready(function () {
-            // Disable right-click on the entire page
-            $(document).on("contextmenu", function (e) {
-                e.preventDefault();
+    $(document).ready(function () {
+        // Disable right-click on the entire page
+        $(document).on("contextmenu", function (e) {
+            e.preventDefault();
+        });
+    
+        // Load a random image on page load
+        const randomImage = Math.random() < 0.5 ? 'img/lynleit-copyright-1.png' : 'img/lynleit-copyright-2.png';
+        $('.content').html(`<img src="${randomImage}" alt="Main Star">`);
+    
+        // Adjust text container based on image width
+        function adjustTextContainer() {
+            const imageWidth = $('.content img').width();
+            $('.display-text').css('left', `${imageWidth}px`);
+        }
+    
+        // Ensure adjustTextContainer runs after page fully loads
+        $(window).on('load', adjustTextContainer);
+        $(window).on('resize', adjustTextContainer);
+    
+        // Display text from local markdown files on menu link click
+        $('.menu a').on('click', function (e) {
+            e.preventDefault();
+    
+            const linkName = $(this).text().toLowerCase().replace(' | ', '-');
+            $.get(`${linkName}.md`, function (data) {
+                $('.display-text').html(marked.parse(data)).fadeIn();
             });
-
-            // Load a random image on page load
-            const randomImage = Math.random() < 0.5 ? 'img/lynleit-copyright-1.png' : 'img/lynleit-copyright-2.png';
-            $('.content').html(`<img src="${randomImage}" alt="Main Star">`);
-
-            // Adjust text container based on image width
-            function adjustTextContainer() {
-                const imageWidth = $('.content img').width();
-                const screenWidth = $(window).width();
-                const offset = screenWidth - imageWidth;
-                $('.display-text').css('left', `${imageWidth}px`);
-            }
-
-            $(window).on('resize', adjustTextContainer);
-            adjustTextContainer();
-
-            // Display text from local markdown files on menu link click
-            $('.menu a').on('click', function (e) {
-                e.preventDefault(); // Prevent default link behavior
-
-                const linkName = $(this).text().toLowerCase().replace(' | ', '-');
-                $.get(`${linkName}.md`, function (data) {
-                    $('.display-text').html(marked.parse(data)).fadeIn();
-                });
-
-                $('.content').css('transform', 'translateX(calc(40vw))');
-                $('.copyright').addClass('center'); // Move copyright to center
-            });
-
-            // Image zooming functionality
-            $(document).on('click', '.display-text img', function () {
-                const imgSrc = $(this).attr('src');
-
-                // Check if zoomed image already exists
-                if ($('.zoomed-image').length) {
-                    $('.zoomed-image').removeClass('active').fadeOut(300, function () {
-                        $(this).remove();
-                    });
-                } else {
-                    $('body').append(`<img src="${imgSrc}" class="zoomed-image">`);
-                    $('.zoomed-image').fadeIn(300).addClass('active');
-                }
-            });
-
-            // Clicking on zoomed image to close
-            $(document).on('click', '.zoomed-image', function () {
-                $(this).removeClass('active').fadeOut(300, function () {
+    
+            $('.content').css('transform', 'translateX(calc(40vw))');
+            $('.copyright').addClass('center');
+        });
+    
+        // Image zooming functionality
+        $(document).on('click', '.display-text img', function () {
+            const imgSrc = $(this).attr('src');
+    
+            if ($('.zoomed-image').length) {
+                $('.zoomed-image').removeClass('active').fadeOut(300, function () {
                     $(this).remove();
                 });
+            } else {
+                $('body').append(`<img src="${imgSrc}" class="zoomed-image">`);
+                $('.zoomed-image').fadeIn(300).addClass('active');
+            }
+        });
+    
+        $(document).on('click', '.zoomed-image', function () {
+            $(this).removeClass('active').fadeOut(300, function () {
+                $(this).remove();
             });
         });
+    });    
     </script>
 </head>
 <body>
