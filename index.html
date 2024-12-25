@@ -109,7 +109,8 @@
             box-shadow: none;
             pointer-events: none; /* Prevent right-click save */
             user-select: none; /* Prevent selection */
-            transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+            opacity: 1;
+            transition: opacity 1s ease-in-out;
         }
 
         .display-text {
@@ -272,8 +273,8 @@
             function alternateImages() {
                 const nextImage = currentImage === 1 ? 2 : 1;
                 $('.background').css('background-image', `url('img/lynleit-copyright-${nextImage}.png')`);
-                $('.content img').css('opacity', 0).fadeOut(1000, function () {
-                    $(this).attr('src', `img/lynleit-copyright-${nextImage}.png`).fadeIn(1000).css('opacity', 1);
+                $('.content img').animate({ opacity: 0 }, 1000, function () {
+                    $(this).attr('src', `img/lynleit-copyright-${nextImage}.png`).animate({ opacity: 1 }, 1000);
                 });
                 currentImage = nextImage;
             }
