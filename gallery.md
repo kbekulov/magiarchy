@@ -1,3 +1,5 @@
+This page contains both concept and final art. Character designs are subject to change as the project progresses.
+
 ### Lynleit
 
 ![Lynleit concept 1](img/gallery/char-lynleit-1.png)
