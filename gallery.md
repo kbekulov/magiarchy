@@ -15,3 +15,9 @@ This page contains both concept and final art. Character designs are subject to 
 
 ![Kyrien concept 1](img/gallery/char-kyrien-1.png)
 ![Kyrien concept 2](img/gallery/char-kyrien-2.png)
+
+---
+
+### Drake & Sherie
+
+![Kyrien concept 1](img/gallery/char-drake-sherie-1.png)
