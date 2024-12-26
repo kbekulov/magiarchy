@@ -7,3 +7,9 @@
 
 ### Narrative Framework
 The project aims to establish a narrative framework comprising fixed rules, guidelines, characters, organisations, relationships, and subplots. This framework will serve as a foundational platform, facilitating the creation of an extensive range of diverse characters and narratives.
+
+---
+
+### To-do List
+- Describe Holumns (Lore section)
+- Describe characters (Character section)
