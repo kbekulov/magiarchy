@@ -1,5 +1,5 @@
 ### Content
-All content presented on this site belongs and is licensed to © Kiril Bekulov and co.
+All content presented on this site is the property of and licensed to © Kiril Bekulov and Co.
 
 ### Contacts
-In case of inquiries, contact magiarchy@gmail.com
+In case of inquiries, please contact magiarchy@gmail.com.
