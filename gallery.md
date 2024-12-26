@@ -1,4 +1,4 @@
-This page contains both concept and final art. Character designs are subject to change as the project progresses.
+This page contains both concept and final art. Character designs are subject to change as the project progresses. All images belong to the project's author.
 
 ### Lynleit
 
