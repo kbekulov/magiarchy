@@ -12,4 +12,4 @@ The project aims to establish a narrative framework comprising fixed rules, guid
 
 ### To-do List
 - Describe Holumns (Lore section)
-- Describe characters (Character section)
+- Describe character backstories (Character section)
