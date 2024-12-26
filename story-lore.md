@@ -8,6 +8,8 @@
 - **Internal Struggles:** The relationship between the Church and the mage community is further complicated by outliers within their ranks who seek to manipulate the treaty for personal or political gain. These actions often lead to additional strain and the need for constant renegotiation.
 - **The Setting in the Story:** A pivotal moment tied to this lore appears when Lynleit attends a monastery meeting with her father, Fionn. The event reflects the ongoing negotiations and tensions that underpin the Mage-Church treaty, highlighting Lynleit’s frustration with its complexities and her strained relationship with her stepmother, Helena.
 
+---
+
 ### Lore: The Duchy
 The duchy, a small yet storied nation, reflects a unique blend of German, Russian, and Baltic influences, emerging as a sovereign state after the Napoleonic Wars. Governed through a delicate balance of parliamentarian rule and symbolic ducal authority, the country's narrative is shaped by various character groups.
 
@@ -20,6 +22,8 @@ The duchy, a small yet storied nation, reflects a unique blend of German, Russia
 - **Hiyu, Yulia, and Tarek:** This trio of university students finds themselves drawn into the world of the supernatural as they explore a haunted park, uncovering mysteries and facing paranormal threats.
 - **Mika:** Natalia's niece, Mika, studies at a hidden university for mages and is drawn into a mysterious investigation when a friend goes missing, leading her to seek Lynleit's help.
 Together, these character groups navigate the complexities of a world where the mundane and the mystical intersect, shaping the duchy's fate.
+
+---
 
 ### Lore: On Magic
 Magic in this world is an elusive force bestowed by the "mana stream," an inexhaustible source of mystical energy bridging the material and spiritual realms. The mana stream reveals itself to mages through their dreams, transporting them to vivid landscapes reminiscent of Zoroastrian times—vast desert vistas, sacred fire temples, and sprawling ancient cities. Within this dreamscape, the dreamer hears the melodic voice of the "Echo," a hauntingly beautiful song in an ancient tongue, imbued with the wisdom of the long-forgotten Magi. Guided by the Echo’s ethereal melody, mages journey toward the salient points of the mana stream, indicated by flashes of blue flames. The intensity of the flame mirrors a mage's connection to mana, revealing both his potential and ability to wield magic in the real world.
