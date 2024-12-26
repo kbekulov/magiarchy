@@ -16,5 +16,7 @@ The project aims to establish a narrative framework comprising fixed rules, guid
 - Describe character backstories (Character section)
 - Describe key locations (Lore section)
 
+---
+
 
 

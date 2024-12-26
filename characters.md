@@ -26,3 +26,5 @@
 - **Drake:** moderately tall, slim build, sickly appearance, albino, white hair in a bun, red eyes, pale skin, aristocratic style, neutral colors, red tie, dragon-handled cane.
 - **Sherie:** 20 years old, auburn hair in a ponytail, purple eyes, elegant dresses, aristocratic diplomat, feminine counterpart to Drake.
 - **Captain Heyk:** tall, muscular build, silver-white hair, grey eyes, neutral expression, tactical clothes, undercover style, special forces member.
+
+---
