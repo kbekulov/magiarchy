@@ -4,4 +4,6 @@ Project MAGIARCHY is an experimental venture with the long-term goal of creating
 ### Contacts
 In case of inquiries, please contact magiarchy@gmail.com.
 
+---
+
 ![Kiril Bekulov](img/kiril-bekulov.jpg)
