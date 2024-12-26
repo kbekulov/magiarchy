@@ -7,14 +7,20 @@
 - **Helena:** 38 years old, moderate height, well-proportioned build, short black hair, hazel eyes, elegant and sexy appearance, sharp gaze, tight red or black outfits, such as a body-fitting turtleneck or red dress.
 - **Tien:** secretive, elusive, medium height, medium build, similar talents to Kyrien, rarely seen, often in the dark, Kyrien’s shadow counterpart, serves Helena, represents psychological “shadow” concept.
 
+---
+
 ### Students
 - **Hiyu:** slim build, tall, short dark hair, stubble, long dark coat, unbuttoned shirt, beige semi-office pants, untucked belt, rugged and elegant, driven by ideas.
 - **Yulia:** long brown hair, green eyes, tight turtlenecks, dark pants or jeans, heeled platform shoes, gold or silver chain with a pendant, clean and professional appearance.
+
+---
 
 ### Private Eye
 - **Natalia:** 35-36 years old, dark reddish hair in a bun, light brown eyes, elegant glasses, seductive office attire, confident, laid-back, Lynleit's past mentor in magic.
 - **Lester:** tall, muscular build, silver-white hair, stubble goatee, grey eyes, burgundy trench coat, black t-shirt, black pants, black boots, fingerless gloves, cocky, charismatic.
 - **Mika:** younger version of Lynleit, aquamarine eyes, long black hair, semi-monastic school uniform, mage university student, searching for a missing friend.
+
+---
 
 ### Government
 - **Drake:** moderately tall, slim build, sickly appearance, albino, white hair in a bun, red eyes, pale skin, aristocratic style, neutral colors, red tie, dragon-handled cane.
