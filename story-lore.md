@@ -21,6 +21,8 @@ The duchy unfolds across the southeastern coast of a vast sea in the north of Eu
 - **Feldenmark:** The Bastion of Nobility. To the southwest, near the western curve of the duchy’s crescent, lies Feldenmark. Known for hosting the royal residence, and for its deep ties to tradition and aristocracy, the city exudes an air of old-world elegance. Its wide boulevards and stately manors stand in stark contrast to the bustling energy of the capital, serving as a reminder of the nation’s aristocratic heritage and its ongoing influence on governance and culture.
 - **Turon:** The Northern Frontier. Far to the north, perched on the duchy’s cold frontier, is Turon, the calmest among the largest cities. Strategically distant and isolated, the city houses the primary headquarters of the MSF. It provides Fionn's agency with a degree of insulation from immediate political pressures, allowing it greater autonomy. Turon’s darkened skies make it a place of intrigue and unease, its illuminated clusters a beacon of hidden activity.
 
+---
+### Lore: Factions
 - **MSF (Private Intelligence Agency):** The MSF, initially a grounded private intelligence agency, serves as a tool for Fionn to engage in political manoeuvring. Unbeknownst to its members, it later becomes entangled in magical affairs as Lynleit transforms it into a smaller, focused organization targeting magical threats.
 - **The Church:** Concealing a secret faction, the church engages in diplomatic relations with the global mage community, manoeuvring between religious duties and mystical diplomacy.
 - **Government Representatives:** Represented by Drake and Sherie, this group embodies the aristocratic layer of the government, striving to maintain order and stability while unaware of the magical undercurrents.
