@@ -40,3 +40,8 @@ Magic in this world is an elusive force bestowed by the "mana stream," an inexha
 For most mages, the flame remains an ephemeral vision, confined to the dreamscape. Yet, a few rare mage lineages possess the extraordinary gift of manifesting the flame in the real world. This power, both practical and profound, allows Lynleit and a select few others to harness the flame for practical purposes, marking them as singular prodigies in the mage community.
 
 ---
+
+### Lore: Mage Academy
+The mage academy is an imposing structure that resembles a grand cathedral, combined with an equally large monastery serving as a dormitory for students. Its architectural style is ornate and intricate, featuring towering spires and elaborate facades. Despite its central location in the capital city, the academy remains invisible to ordinary people and technology. Its concealment lies not in physical invisibility but in a cognitive blind spot for those not aligned with magic. This means that while the building is physically present, the minds of ordinary citizens refuse to acknowledge its existence, creating a perceptual void. This cognitive dissonance extends to technology, leaving the building absent from photographs, satellite imagery, and video recordings. Only those with a specific magical alignment can break through this cognitive barrier, allowing them to perceive and explore the academy in all its splendour.
+
+---
