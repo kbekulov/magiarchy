@@ -1,0 +1,40 @@
+[
+    {
+        "act": "I",
+        "events": [
+            {
+                "groupName": "Group 1",
+                "content": "Event 1 in Act I. A detailed explanation of the event.",
+                "width": "70%",
+                "indent": "10%",
+                "tooltip": "This is tooltip for Event 1 in Act I"
+            },
+            {
+                "groupName": "Group 2",
+                "content": "Event 2 in Act I. Another description of events.",
+                "width": "60%",
+                "indent": "20%",
+                "tooltip": "This is tooltip for Event 2 in Act I"
+            }
+        ]
+    },
+    {
+        "act": "II",
+        "events": [
+            {
+                "groupName": "Group 1",
+                "content": "Event 1 in Act II. A pivotal event that shapes the story.",
+                "width": "50%",
+                "indent": "5%",
+                "tooltip": "This is tooltip for Event 1 in Act II"
+            },
+            {
+                "groupName": "Group 3",
+                "content": "Event 2 in Act II. Further intrigue and development.",
+                "width": "70%",
+                "indent": "15%",
+                "tooltip": "This is tooltip for Event 2 in Act II"
+            }
+        ]
+    }
+]
