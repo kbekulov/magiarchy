@@ -41,9 +41,16 @@ For most mages, the flame remains an ephemeral vision, confined to the dreamscap
 
 ---
 
-### Lore: Mage Academy
+### Location: Mage Academy
 The mage academy is an imposing structure that resembles a grand cathedral, combined with an equally large monastery serving as a dormitory for students. Its architectural style is ornate and intricate, featuring towering spires and elaborate facades. Despite its central location in the capital city, the academy remains invisible to ordinary people and technology. Its concealment lies not in physical invisibility but in a cognitive blind spot for those not aligned with magic. This means that while the building is physically present, the minds of ordinary citizens refuse to acknowledge its existence, creating a perceptual void. This cognitive dissonance extends to technology, leaving the building absent from photographs, satellite imagery, and video recordings. Only those with a specific magical alignment can break through this cognitive barrier, allowing them to perceive and explore the academy in all its splendour.
 
 ![The Mage Academy](img/loc-mage-academy-1.png)
+
+---
+
+### Location: Lynleit's Family House
+Lynleit's family house is a neoclassical mansion with white walls and pillars, nestled on a tall hill overlooking the main river and the city of Velna-Nue. It features a spacious garden and a neoclassical gazebo, offering perfect views of both the river and the cityscape. Hidden behind trees, the mansion becomes more visible in autumn when the leaves fall. Positioned near the city centre, it offers both privacy and a commanding view of the surroundings.
+
+![The Mage Academy](img/loc-lynleit-house-1.png)
 
 ---
