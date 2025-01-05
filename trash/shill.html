@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shill Status Meter</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #1a1a1a;
+            color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .meter-container {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .header {
+            margin-bottom: 20px;
+            font-size: 1.5em;
+            text-align: center;
+        }
+
+        .meter {
+            display: flex;
+            align-items: center;
+            position: relative;
+        }
+
+        .arrow {
+            width: 0;
+            height: 0;
+            border-top: 10px solid transparent;
+            border-bottom: 10px solid transparent;
+            border-left: 20px solid #f0f0f0;
+            position: absolute;
+            left: -30px;
+            top: 50%;
+            transform: translateY(-50%);
+            transition: top 0.2s ease-out;
+        }
+
+        .bar {
+            width: 20px;
+            height: 300px;
+            background: linear-gradient(to top, #8fa0ff, #ec97d0);
+            border-radius: 10px;
+            margin: 0 20px;
+            position: relative;
+            cursor: pointer;
+        }
+
+        .states {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 300px;
+        }
+
+        .state {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+        }
+
+        .state-name {
+            font-weight: bold;
+            margin-bottom: 5px;
+            border-bottom: 1px solid #666;
+            padding-bottom: 2px;
+        }
+
+        .state-description {
+            margin: 0;
+            padding: 0;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <div class="meter-container">
+        <div class="header">Shill status:</div>
+        <div class="meter">
+            <div class="arrow" id="arrow"></div>
+            <div class="bar" id="bar"></div>
+            <div class="states">
+                <div class="state">
+                    <div class="state-name">Severe:</div>
+                    <div class="state-description">Mass raid against /chug/</div>
+                </div>
+                <div class="state">
+                    <div class="state-name">Moderate:</div>
+                    <div class="state-description">Posting same thread several times per day</div>
+                </div>
+                <div class="state">
+                    <div class="state-name">Low:</div>
+                    <div class="state-description">/uhg/ threads keep disappearing due to lack of bakers</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const bar = document.getElementById('bar');
+        const arrow = document.getElementById('arrow');
+
+        bar.addEventListener('click', (e) => {
+            const rect = bar.getBoundingClientRect();
+            const clickY = e.clientY - rect.top;
+
+            // Constrain the arrow within the bar height
+            const clampedY = Math.max(0, Math.min(rect.height, clickY));
+
+            // Calculate percentage position for the arrow
+            const percentageY = (clampedY / rect.height) * 100;
+
+            // Move the arrow to the clicked position
+            arrow.style.top = `${percentageY}%`;
+        });
+    </script>
+</body>
+</html>
