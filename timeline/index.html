@@ -124,20 +124,42 @@
     <div class="group-ratio" id="group-ratio"></div>
 
     <script>
-        const colors = ["bg-group-1", "bg-group-2", "bg-group-3", "bg-group-4", "bg-group-5", "bg-group-6", "bg-group-7", "bg-group-8", "bg-group-9", "bg-group-10"];
+        // Add mousewheel scroll functionality to the timeline container
+        const timelineContainer = document.querySelector(".timeline-container");
+    
+        timelineContainer.addEventListener("wheel", (event) => {
+            // Prevent the default vertical scroll behavior
+            event.preventDefault();
+    
+            // Scroll horizontally by the deltaY value (mouse wheel movement)
+            timelineContainer.scrollLeft += event.deltaY;
+        });
+    
+        const colors = [
+            "bg-group-1",
+            "bg-group-2",
+            "bg-group-3",
+            "bg-group-4",
+            "bg-group-5",
+            "bg-group-6",
+            "bg-group-7",
+            "bg-group-8",
+            "bg-group-9",
+            "bg-group-10"
+        ];
     
         const legendContainer = document.getElementById("legend");
-        const timelineContainer = document.querySelector(".timeline-container");
+        const timelineContainerEl = document.getElementById("timeline");
         const groupRatioContainer = document.getElementById("group-ratio");
     
         const groupMap = new Map();
         const groupCount = new Map();
         let totalEvents = 0;
     
-        // Fetch JSON data
-        fetch('data.json')
-            .then(response => response.json())
-            .then(data => {
+        // Fetch and load JSON data
+        fetch("data.json")
+            .then((response) => response.json())
+            .then((data) => {
                 data.forEach((actData) => {
                     const actDiv = document.createElement("div");
                     actDiv.classList.add("act");
@@ -165,37 +187,35 @@
                         totalEvents++;
     
                         const timelineItem = document.createElement("div");
-                        timelineItem.classList.add("timeline-item", groupMap.get(event.groupName));
+                        timelineItem.classList.add(
+                            "timeline-item",
+                            groupMap.get(event.groupName)
+                        );
                         timelineItem.style.width = event.width;
                         timelineItem.style.marginLeft = event.indent;
                         timelineItem.innerHTML = `<p>${event.content}</p><div class="tooltip">${event.tooltip}</div>`;
                         actDiv.appendChild(timelineItem);
                     });
     
-                    timelineContainer.appendChild(actDiv);
+                    timelineContainerEl.appendChild(actDiv);
                 });
     
                 const groupRatioText = Array.from(groupCount.entries())
                     .map(([groupName, count]) => {
                         const percentage = ((count / totalEvents) * 100).toFixed(2);
                         const colorClass = groupMap.get(groupName);
-                        const color = window.getComputedStyle(document.querySelector(`.${colorClass}`)).backgroundColor;
+                        const color = window.getComputedStyle(
+                            document.querySelector(`.${colorClass}`)
+                        ).backgroundColor;
                         return `<span style="color: ${color}; margin-right: 8px;">${groupName} (${percentage}%)</span>`;
                     })
                     .join(" ");
     
                 groupRatioContainer.innerHTML = `Group Ratio: ${groupRatioText}`;
             })
-            .catch(error => console.error('Error loading JSON data:', error));
-    
-        // Add mousewheel scroll functionality to the timeline container
-        timelineContainer.addEventListener("wheel", (event) => {
-            // Prevent the default vertical scroll behavior
-            event.preventDefault();
-    
-            // Scroll horizontally by the deltaY value (mouse wheel movement)
-            timelineContainer.scrollLeft += event.deltaY;
-        });
+            .catch((error) =>
+                console.error("Error loading JSON data:", error)
+            );
     </script>
     
 
