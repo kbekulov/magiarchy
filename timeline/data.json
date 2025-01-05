@@ -6,21 +6,21 @@
                 "groupName": "Hiyu's Group",
                 "content": "Hiyu, Yulia, and Tarek are criminology students with a fascination for the supernatural, sparked by Hiyu's wild theories. They accidentally encounter a dangerous supernatural event, which almost costs them their lives, but they are saved and brought to Natalia's office. There, they face a choice: lose their memories or become Natalia's investigative assistants.",
                 "width": "70%",
-                "indent": "10%",
+                "indent": "5%",
                 "tooltip": "This is tooltip for Event 1 in Act I"
             },
             {
                 "groupName": "Drake's Group",
                 "content": "Captain Heyk, a special operations officer, is deployed to investigate mysterious disappearances in the park, resulting in the tragic loss of his entire team. Traumatized by what he witnesses, he is subsequently rescued by Drake and Sherie, influential aristocrats and government officials. Recognizing Heyk's potential, Drake and Sherie recruit him as their personal ally and bodyguard, as they delve into uncovering a suspected conspiracy within the government that poses a threat to the country.",
-                "width": "60%",
-                "indent": "20%",
+                "width": "50%",
+                "indent": "25%",
                 "tooltip": "This is tooltip for Event 2 in Act I"
             },
             {
                 "groupName": "Lynleit's Group",
                 "content": "Lynleit, along with her trusted partners Felix and Reiner, is tasked with surveying Kyrien, who is suspected of smuggling. Their investigation leads them to a perilous encounter in the park, where they experience unsettling phenomena. Meanwhile, Lynleit is urgently called back to her family house by her father, Fionn, where she learns that her stepmother Helena is being promoted within their agency, causing Lynleit significant distress and distrust.",
-                "width": "60%",
-                "indent": "20%",
+                "width": "42%",
+                "indent": "45%",
                 "tooltip": "This is tooltip for Event 2 in Act I"
             }
         ]
@@ -39,7 +39,7 @@
                 "groupName": "Lynleit's Group",
                 "content": "Determined to uncover the truth, Lynleit returns to the park to find Felix and Reiner, where she begins to realize the supernatural nature of the events unfolding. This arc explores Lynleit's growing awareness of the mystical threats and her resolve to confront them.",
                 "width": "70%",
-                "indent": "15%",
+                "indent": "25%",
                 "tooltip": "This is tooltip for Event 2 in Act II"
             }
         ]
