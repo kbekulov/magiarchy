@@ -7,21 +7,21 @@
                 "content": "Hiyu, Yulia, and Tarek are criminology students with a fascination for the supernatural, sparked by Hiyu's wild theories.<br>They accidentally encounter a dangerous supernatural event, which almost costs them their lives, but they are saved and brought to Natalia's office.<br>There, they face a choice: lose their memories or become Natalia's investigative assistants.",
                 "width": "60%",
                 "indent": "1%",
-                "tooltip": "This is tooltip for Event 1 in Act I"
+                "tooltip": "<b>Chapters:</b> Chapter 1..."
             },
             {
                 "groupName": "Drake's Group",
                 "content": "Captain Heyk, a special operations officer, is deployed to investigate mysterious disappearances in the park, resulting in the tragic loss of his entire team.<br>Traumatized by what he witnesses, he is subsequently rescued by Drake and Sherie, influential aristocrats and government officials.<br>Recognizing Heyk's potential, Drake and Sherie recruit him as their personal ally and bodyguard, as they delve into uncovering a suspected conspiracy within the government that poses a threat to the country.",
                 "width": "80%",
                 "indent": "11%",
-                "tooltip": "This is tooltip for Event 2 in Act I"
+                "tooltip": "<b>Chapters:</b> Chapter 1..."
             },
             {
                 "groupName": "Lynleit's Group",
                 "content": "Lynleit, her father Fionn, and stepmother Helena attend a monastery meeting for secret negotiations.<br>Lynleit leaves early, frustrated by Helena's presence, and shares a light-hearted moment with Felix and Reiner outside, emphasizing camaraderie and their ongoing surveillance of Kyrien.",
                 "width": "60%",
                 "indent": "36%",
-                "tooltip": "This is tooltip for Event 2 in Act I"
+                "tooltip": "<b>Chapters:</b> Chapter 1..."
             }
         ]
     },
@@ -33,14 +33,14 @@
                 "content": "Accepting Natalia's offer, they go undercover at Mika's mage academy.<br>Hiyu poses as a young professor, Yulia as a student, and Tarek as a janitor.<br>They befriend Mika, with Hiyu diving into the investigation while Yulia adapts to the magical environment, creating an ironic twist given her previous scepticism.",
                 "width": "60%",
                 "indent": "1%",
-                "tooltip": "This is tooltip for Event 1 in Act II"
+                "tooltip": "<b>Chapters:</b> Chapter 1..."
             },
             {
                 "groupName": "Lynleit's Group",
                 "content": "Lynleit, Felix, and Reiner continue their surveillance of Kyrien, suspecting his involvement in smuggling.<br>Their investigation takes a dangerous turn when supernatural events in the park lead to Reiner and Kyrien encountering otherworldly phenomena.<br>Lynleit is abruptly called away by her father, learning of Helena's promotion within the agency, causing her significant frustration.<br>Determined, Lynleit returns to the park to search for Felix and Reiner, ultimately confronting the supernatural forces herself.",
                 "width": "60%",
                 "indent": "21%",
-                "tooltip": "This is tooltip for Event 2 in Act II"
+                "tooltip": "<b>Chapters:</b> Chapter 1..."
             }
         ]
     }
