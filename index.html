@@ -47,7 +47,7 @@
             overflow: hidden;
         }
 
-        /* Parallax Background */
+        /* Background Blur */
         .background {
             position: absolute;
             top: 0;
@@ -56,22 +56,210 @@
             height: 100%;
             background: url('img/lynleit-copyright-1.png') no-repeat center center;
             background-size: cover;
+            filter: blur(50px) brightness(0.5);
             z-index: 1;
             animation: shaky-cam 15s infinite alternate;
-            transform: translateZ(-1px) scale(2);
-            pointer-events: none;
+            pointer-events: none; /* Prevent interaction */
         }
 
         @keyframes shaky-cam {
             0% {
-                transform: translateZ(-1px) scale(2) translate(0, 0);
+                transform: translate(0, 0);
+            }
+            10% {
+                transform: translate(5px, -5px);
+            }
+            20% {
+                transform: translate(-5px, 3px);
+            }
+            30% {
+                transform: translate(3px, 5px);
+            }
+            40% {
+                transform: translate(-3px, -3px);
             }
             50% {
-                transform: translateZ(-1px) scale(2) translate(3px, -3px);
+                transform: translate(4px, 2px);
+            }
+            60% {
+                transform: translate(-4px, -6px);
+            }
+            70% {
+                transform: translate(2px, 4px);
+            }
+            80% {
+                transform: translate(-2px, -2px);
+            }
+            90% {
+                transform: translate(1px, -1px);
             }
             100% {
-                transform: translateZ(-1px) scale(2) translate(-3px, 3px);
+                transform: translate(0, 0);
             }
+        }
+
+        /* Main Content */
+        .content {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+            color: white;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: transform 1s ease;
+        }
+
+        .content img {
+            width: auto;
+            height: 100%;
+            max-height: 100%;
+            object-fit: cover;
+            border-radius: 0;
+            box-shadow: none;
+            pointer-events: none; /* Prevent right-click save */
+            user-select: none; /* Prevent selection */
+        }
+
+        .display-text {
+            position: absolute;
+            top: 10%;
+            color: white;
+            font-family: 'Merriweather', serif;
+            font-size: 1.2rem;
+            line-height: 2.0;
+            text-align: left;
+            text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+            z-index: 4;
+            display: none;
+            overflow-y: auto;
+            max-height: 80%;
+            max-width: 55%;
+            mask-image: linear-gradient(to bottom, black 85%, transparent 100%);
+            -webkit-mask-image: linear-gradient(to bottom, black 85%, transparent 100%);
+            padding-right: 40px;
+            transition: left 0.5s ease;
+        }
+
+        .display-text img {
+            max-height: 30vh;
+            width: auto;
+            border-radius: 10px;
+            margin: 10px 0;
+            cursor: pointer;
+            transition: transform 0.3s ease-in-out;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .display-text img[src*="_small"] {
+            max-height: 150px;
+            max-width: 150px;
+        }
+
+        .zoomed-image {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) scale(0);
+            max-width: 100vw;
+            max-height: 100vh;
+            border-radius: 5px;
+            z-index: 9999;
+            cursor: pointer;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .zoomed-image.active {
+            transform: translate(-50%, -50%) scale(1);
+        }
+
+        .display-text h1, .display-text h2, .display-text h3 {
+            margin: 20px 0 10px;
+            font-family: 'Rubik', sans-serif;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+        }
+
+        .display-text p {
+            margin: 10px 0;
+            font-family: 'Lora', serif;
+            line-height: 2.0;
+        }
+
+        .display-text ul {
+            list-style: none;
+            margin: 30px 0;
+            padding-left: 20px;
+        }
+
+        .display-text ul li {
+            margin-bottom: 20px;
+            position: relative;
+            padding-left: 30px;
+        }
+
+        .display-text ul li::before {
+            content: '+';
+            position: absolute;
+            left: 0;
+            color: white;
+            font-size: 1.2rem;
+        }
+
+        .display-text a {
+            color: white;
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+            transition: all 0.3s ease;
+        }
+
+        .display-text a:hover {
+            border-bottom: 1px solid white;
+        }
+
+        .display-text strong {
+            font-family: 'Tahoma', sans-serif;
+        }
+
+        .display-text a {
+            color: white;
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+            transition: all 0.3s ease;
+        }
+
+        .display-text a:hover {
+            color: white;
+            border-bottom: 1px solid white;
+        }
+
+        .display-text hr {
+            border: none;
+            height: 1px;
+            background: linear-gradient(to right, transparent, rgba(255, 255, 255, 0.3), transparent);
+            margin: 50px 0;
+        }
+
+        .display-text::-webkit-scrollbar {
+            width: 4.5px;
+        }
+
+        .display-text::-webkit-scrollbar-track {
+            background: transparent;
+            margin: 0 20px;
+        }
+
+        .display-text::-webkit-scrollbar-thumb {
+            background-color: rgba(255, 255, 255, 0.6);
+            border-radius: 10px;
+            backdrop-filter: blur(3px);
+        }
+
+        .display-text::-webkit-scrollbar-thumb:hover {
+            background-color: rgba(255, 255, 255, 0.8);
         }
 
         /* Menu Styles */
@@ -104,11 +292,6 @@
             position: relative;
             display: inline-block;
             font-family: 'Rubik', sans-serif;
-            transition: transform 0.3s;
-        }
-
-        .menu a:hover {
-            transform: scale(1.1);
         }
 
         .menu a::after {
@@ -126,56 +309,6 @@
             width: 100%;
         }
 
-        /* Content Styles */
-        .content {
-            position: relative;
-            z-index: 2;
-            text-align: center;
-            color: white;
-            height: 100%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .content img {
-            width: auto;
-            height: 100%;
-            max-height: 100%;
-            object-fit: cover;
-            border-radius: 0;
-            box-shadow: none;
-            pointer-events: none;
-            user-select: none;
-        }
-
-        .display-text {
-            position: absolute;
-            top: 10%;
-            color: white;
-            font-family: 'Merriweather', serif;
-            font-size: 1.2rem;
-            line-height: 2.0;
-            text-align: left;
-            text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
-            z-index: 4;
-            display: none;
-            overflow-y: auto;
-            max-height: 80%;
-            max-width: 55%;
-            mask-image: linear-gradient(to bottom, black 85%, transparent 100%);
-            -webkit-mask-image: linear-gradient(to bottom, black 85%, transparent 100%);
-            padding-right: 40px;
-            transition: left 0.5s ease;
-        }
-
-        .display-text h1, .display-text h2, .display-text h3 {
-            margin: 20px 0 10px;
-            font-family: 'Rubik', sans-serif;
-            letter-spacing: 1.5px;
-            text-transform: uppercase;
-        }
-
         /* Copyright */
         .copyright {
             position: absolute;
@@ -186,6 +319,14 @@
             font-size: 0.8rem;
             z-index: 5;
             text-align: right;
+            transition: all 0.5s ease;
+        }
+
+        .copyright.center {
+            left: 50%;
+            right: auto;
+            transform: translateX(-50%);
+            text-align: center;
         }
     </style>
     <script>
@@ -194,30 +335,54 @@
         $(document).on("contextmenu", function (e) {
             e.preventDefault();
         });
-
+    
         // Load a random image on page load
         const randomImage = Math.random() < 0.5 ? 'img/lynleit-copyright-1.png' : 'img/lynleit-copyright-2.png';
         $('.content').html(`<img src="${randomImage}" alt="Main Star">`);
-
+    
         // Adjust text container based on image width
         function adjustTextContainer() {
             const imageWidth = $('.content img').width();
             $('.display-text').css('left', `${imageWidth}px`);
         }
-
+    
+        // Ensure adjustTextContainer runs after page fully loads
         $(window).on('load', adjustTextContainer);
         $(window).on('resize', adjustTextContainer);
-
+    
         // Display text from local markdown files on menu link click
         $('.menu a').on('click', function (e) {
             e.preventDefault();
-
+    
             const linkName = $(this).text().toLowerCase().replace(' | ', '-');
             $.get(`${linkName}.md`, function (data) {
                 $('.display-text').html(marked.parse(data)).fadeIn();
             });
+    
+            $('.content').css('transform', 'translateX(calc(40vw))');
+            $('.copyright').addClass('center');
         });
-    });
+    
+        // Image zooming functionality
+        $(document).on('click', '.display-text img', function () {
+            const imgSrc = $(this).attr('src');
+    
+            if ($('.zoomed-image').length) {
+                $('.zoomed-image').removeClass('active').fadeOut(300, function () {
+                    $(this).remove();
+                });
+            } else {
+                $('body').append(`<img src="${imgSrc}" class="zoomed-image">`);
+                $('.zoomed-image').fadeIn(300).addClass('active');
+            }
+        });
+    
+        $(document).on('click', '.zoomed-image', function () {
+            $(this).removeClass('active').fadeOut(300, function () {
+                $(this).remove();
+            });
+        });
+    });    
     </script>
 </head>
 <body>
