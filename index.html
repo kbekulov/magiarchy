@@ -4,9 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project MAGIARCHY</title>
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+    <meta name="description" content="Unique story and characters by Kiril Bekulov. Explore a world of magic where mages and the church are bound by a centuries-old treaty.">
+    <meta name="keywords" content="MAGIARCHY, Kiril Bekulov, Project MAGIARCHY, anime, story, lore, characters, original creation, fantasy">
+    <meta name="author" content="Kiril Bekulov">
+    <meta property="og:title" content="Project MAGIARCHY">
+    <meta property="og:description" content="Unique story and characters by Kiril Bekulov. Explore a world of magic where mages and the church are bound by a centuries-old treaty.">
+    <meta property="og:image" content="img/magiarchy-logo.png">
+    <meta property="og:url" content="https://yourwebsite.com">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Project MAGIARCHY">
+    <meta name="twitter:description" content="Unique story and characters by Kiril Bekulov. Explore a world of magic where mages and the church are bound by a centuries-old treaty.">
+    <meta name="twitter:image" content="img/magiarchy-logo.png">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
     <style>
-        /* General Reset */
+        /* Reset */
         body, html {
             margin: 0;
             padding: 0;
@@ -16,21 +28,28 @@
         }
 
         body {
-            font-family: 'Rubik', sans-serif;
-            background: black;
-            color: white;
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #000;
         }
+
+        @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Rubik:wght@400;500;700&display=swap');
 
         .container {
             position: relative;
             width: 100%;
             height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
             overflow: hidden;
         }
 
         /* Parallax Background */
         .background {
-            position: fixed;
+            position: absolute;
             top: 0;
             left: 0;
             width: 100%;
@@ -38,152 +57,187 @@
             background: url('img/lynleit-copyright-1.png') no-repeat center center;
             background-size: cover;
             z-index: 1;
+            animation: shaky-cam 15s infinite alternate;
             transform: translateZ(-1px) scale(2);
-        }
-
-        /* Particle Effect */
-        .particles {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
             pointer-events: none;
-            z-index: 2;
         }
 
-        .particle {
-            position: absolute;
-            width: 5px;
-            height: 5px;
-            background: rgba(255, 255, 255, 0.8);
-            border-radius: 50%;
-            animation: float 10s infinite ease-in-out;
-        }
-
-        @keyframes float {
+        @keyframes shaky-cam {
             0% {
-                transform: translateY(0) translateX(0);
-                opacity: 1;
+                transform: translateZ(-1px) scale(2) translate(0, 0);
             }
             50% {
-                opacity: 0.7;
+                transform: translateZ(-1px) scale(2) translate(3px, -3px);
             }
             100% {
-                transform: translateY(-200px) translateX(50px);
-                opacity: 0;
+                transform: translateZ(-1px) scale(2) translate(-3px, 3px);
             }
         }
 
-        /* Cinematic Intro */
-        .intro {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background: black;
-            z-index: 3;
-            animation: fadeOut 3s ease-in-out forwards;
-        }
-
-        .intro h1 {
-            font-family: 'Merriweather', serif;
-            font-size: 2.5rem;
-            letter-spacing: 2px;
-            opacity: 1;
-        }
-
-        @keyframes fadeOut {
-            0% { opacity: 1; }
-            90% { opacity: 0; }
-            100% { opacity: 0; visibility: hidden; }
-        }
-
-        /* Menu */
+        /* Menu Styles */
         .menu {
             position: absolute;
             top: 0;
             left: 0;
             width: 200px;
             height: 100%;
-            background: rgba(0, 0, 0, 0.8);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
             padding: 20px;
-            z-index: 4;
+            background: rgba(0, 0, 0, 0.7);
+            z-index: 3;
+        }
+
+        .menu .logo {
+            height: 24vh;
+            width: auto;
+            margin-bottom: 20px;
         }
 
         .menu a {
-            display: block;
             color: white;
             text-decoration: none;
-            font-size: 1.2rem;
-            margin-bottom: 10px;
+            font-size: 1.5rem;
+            margin: 15px 0;
+            position: relative;
+            display: inline-block;
+            font-family: 'Rubik', sans-serif;
             transition: transform 0.3s;
         }
 
         .menu a:hover {
-            transform: translateX(10px);
-            color: #ffd700;
+            transform: scale(1.1);
         }
 
-        /* Main Content */
-        .content {
+        .menu a::after {
+            content: '';
             position: absolute;
-            top: 0;
-            left: 200px;
-            right: 0;
-            bottom: 0;
-            padding: 20px;
+            left: 0;
+            bottom: -5px;
+            width: 0;
+            height: 2px;
+            background: white;
+            transition: width 0.3s;
+        }
+
+        .menu a:hover::after {
+            width: 100%;
+        }
+
+        /* Content Styles */
+        .content {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+            color: white;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .content img {
+            width: auto;
+            height: 100%;
+            max-height: 100%;
+            object-fit: cover;
+            border-radius: 0;
+            box-shadow: none;
+            pointer-events: none;
+            user-select: none;
+        }
+
+        .display-text {
+            position: absolute;
+            top: 10%;
+            color: white;
+            font-family: 'Merriweather', serif;
+            font-size: 1.2rem;
+            line-height: 2.0;
+            text-align: left;
+            text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+            z-index: 4;
+            display: none;
             overflow-y: auto;
-            z-index: 3;
+            max-height: 80%;
+            max-width: 55%;
+            mask-image: linear-gradient(to bottom, black 85%, transparent 100%);
+            -webkit-mask-image: linear-gradient(to bottom, black 85%, transparent 100%);
+            padding-right: 40px;
+            transition: left 0.5s ease;
+        }
+
+        .display-text h1, .display-text h2, .display-text h3 {
+            margin: 20px 0 10px;
+            font-family: 'Rubik', sans-serif;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+        }
+
+        /* Copyright */
+        .copyright {
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            color: white;
+            font-family: 'Times New Roman', serif;
+            font-size: 0.8rem;
+            z-index: 5;
+            text-align: right;
         }
     </style>
+    <script>
+    $(document).ready(function () {
+        // Disable right-click on the entire page
+        $(document).on("contextmenu", function (e) {
+            e.preventDefault();
+        });
+
+        // Load a random image on page load
+        const randomImage = Math.random() < 0.5 ? 'img/lynleit-copyright-1.png' : 'img/lynleit-copyright-2.png';
+        $('.content').html(`<img src="${randomImage}" alt="Main Star">`);
+
+        // Adjust text container based on image width
+        function adjustTextContainer() {
+            const imageWidth = $('.content img').width();
+            $('.display-text').css('left', `${imageWidth}px`);
+        }
+
+        $(window).on('load', adjustTextContainer);
+        $(window).on('resize', adjustTextContainer);
+
+        // Display text from local markdown files on menu link click
+        $('.menu a').on('click', function (e) {
+            e.preventDefault();
+
+            const linkName = $(this).text().toLowerCase().replace(' | ', '-');
+            $.get(`${linkName}.md`, function (data) {
+                $('.display-text').html(marked.parse(data)).fadeIn();
+            });
+        });
+    });
+    </script>
 </head>
 <body>
     <div class="container">
         <div class="background"></div>
-        <div class="particles"></div>
-        <div class="intro">
-            <h1>Project MAGIARCHY</h1>
-        </div>
-
         <div class="menu">
+            <img src="img/magiarchy-logo.png" alt="Logo" class="logo">
             <a href="#intro">Intro</a>
-            <a href="#story-lore">Story & Lore</a>
+            <a href="#story-lore">Story | Lore</a>
             <a href="#characters">Characters</a>
+            <a href="#timeline">Timeline</a>
             <a href="#gallery">Gallery</a>
+            <a href="#music">Music</a>
             <a href="#contact">Contact</a>
         </div>
-
-        <div class="content">
-            <h2>Welcome to Project MAGIARCHY</h2>
-            <p>Explore a world where magic and the church collide in an intricate balance of power and intrigue.</p>
+        <div class="content"></div>
+        <div class="display-text"></div>
+        <div class="copyright">
+            original story and characters by © KIRIL BEKULOV / Project MAGIARCHY
         </div>
     </div>
-
-    <script>
-        // Generate particles
-        const particleContainer = document.querySelector('.particles');
-        for (let i = 0; i < 100; i++) {
-            const particle = document.createElement('div');
-            particle.classList.add('particle');
-            particle.style.left = Math.random() * 100 + '%';
-            particle.style.top = Math.random() * 100 + '%';
-            particle.style.animationDuration = Math.random() * 10 + 5 + 's';
-            particleContainer.appendChild(particle);
-        }
-
-        // Smooth scrolling for menu links
-        document.querySelectorAll('.menu a').forEach(link => {
-            link.addEventListener('click', e => {
-                e.preventDefault();
-                const target = document.querySelector(link.getAttribute('href'));
-                target.scrollIntoView({ behavior: 'smooth' });
-            });
-        });
-    </script>
 </body>
 </html>
