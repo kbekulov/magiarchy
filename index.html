@@ -18,21 +18,25 @@
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
     <style>
-        /* General Reset */
-        * {
+        /* Reset */
+        body, html {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-        }
-
-        body, html {
             height: 100%;
             overflow: hidden;
-            font-family: 'Rubik', sans-serif;
-            background-color: #000;
         }
 
-        /* Container */
+        body {
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #000;
+        }
+
+        @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Rubik:wght@400;500;700&display=swap');
+
         .container {
             position: relative;
             width: 100%;
@@ -43,7 +47,7 @@
             overflow: hidden;
         }
 
-        /* Background Parallax Effect */
+        /* Background Blur */
         .background {
             position: absolute;
             top: 0;
@@ -54,150 +58,338 @@
             background-size: cover;
             filter: blur(50px) brightness(0.5);
             z-index: 1;
-            animation: parallax 20s infinite alternate;
+            animation: shaky-cam 15s infinite alternate;
+            pointer-events: none; /* Prevent interaction */
         }
 
-        @keyframes parallax {
+        @keyframes shaky-cam {
             0% {
-                transform: scale(1) translate(0, 0);
+                transform: translate(0, 0);
             }
-            100% {
-                transform: scale(1.1) translate(-5px, -5px);
+            10% {
+                transform: translate(5px, -5px);
             }
-        }
-
-        /* Particle Effect */
-        .particles {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            z-index: 2;
-            pointer-events: none;
-        }
-
-        .particle {
-            position: absolute;
-            width: 6px;
-            height: 6px;
-            background: rgba(255, 255, 255, 0.8);
-            border-radius: 50%;
-            animation: float 10s infinite ease-in-out;
-        }
-
-        @keyframes float {
-            0% {
-                transform: translateY(0);
-                opacity: 0.8;
+            20% {
+                transform: translate(-5px, 3px);
+            }
+            30% {
+                transform: translate(3px, 5px);
+            }
+            40% {
+                transform: translate(-3px, -3px);
             }
             50% {
-                opacity: 1;
+                transform: translate(4px, 2px);
+            }
+            60% {
+                transform: translate(-4px, -6px);
+            }
+            70% {
+                transform: translate(2px, 4px);
+            }
+            80% {
+                transform: translate(-2px, -2px);
+            }
+            90% {
+                transform: translate(1px, -1px);
             }
             100% {
-                transform: translateY(-200px);
-                opacity: 0;
+                transform: translate(0, 0);
             }
         }
 
-        /* Content Area */
+        /* Main Content */
         .content {
             position: relative;
-            z-index: 3;
+            z-index: 2;
             text-align: center;
             color: white;
-            font-size: 1.5rem;
-        }
-
-        /* Menu */
-        .menu {
-            position: fixed;
-            left: 0;
-            top: 0;
-            width: 250px;
             height: 100%;
-            background: rgba(0, 0, 0, 0.85);
-            padding: 20px;
             display: flex;
-            flex-direction: column;
             align-items: center;
             justify-content: center;
+            transition: transform 1s ease;
+        }
+
+        .content img {
+            width: auto;
+            height: 100%;
+            max-height: 100%;
+            object-fit: cover;
+            border-radius: 0;
+            box-shadow: none;
+            pointer-events: none; /* Prevent right-click save */
+            user-select: none; /* Prevent selection */
+        }
+
+        .display-text {
+            position: absolute;
+            top: 10%;
+            color: white;
+            font-family: 'Merriweather', serif;
+            font-size: 1.2rem;
+            line-height: 2.0;
+            text-align: left;
+            text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
             z-index: 4;
+            display: none;
+            overflow-y: auto;
+            max-height: 80%;
+            max-width: 55%;
+            mask-image: linear-gradient(to bottom, black 85%, transparent 100%);
+            -webkit-mask-image: linear-gradient(to bottom, black 85%, transparent 100%);
+            padding-right: 40px;
+            transition: left 0.5s ease;
+        }
+
+        .display-text img {
+            max-height: 30vh;
+            width: auto;
+            border-radius: 10px;
+            margin: 10px 0;
+            cursor: pointer;
+            transition: transform 0.3s ease-in-out;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .display-text img[src*="_small"] {
+            max-height: 150px;
+            max-width: 150px;
+        }
+
+        .zoomed-image {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) scale(0);
+            max-width: 100vw;
+            max-height: 100vh;
+            border-radius: 5px;
+            z-index: 9999;
+            cursor: pointer;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .zoomed-image.active {
+            transform: translate(-50%, -50%) scale(1);
+        }
+
+        .display-text h1, .display-text h2, .display-text h3 {
+            margin: 20px 0 10px;
+            font-family: 'Rubik', sans-serif;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+        }
+
+        .display-text p {
+            margin: 10px 0;
+            font-family: 'Lora', serif;
+            line-height: 2.0;
+        }
+
+        .display-text ul {
+            list-style: none;
+            margin: 30px 0;
+            padding-left: 20px;
+        }
+
+        .display-text ul li {
+            margin-bottom: 20px;
+            position: relative;
+            padding-left: 30px;
+        }
+
+        .display-text ul li::before {
+            content: '+';
+            position: absolute;
+            left: 0;
+            color: white;
+            font-size: 1.2rem;
+        }
+
+        .display-text a {
+            color: white;
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+            transition: all 0.3s ease;
+        }
+
+        .display-text a:hover {
+            border-bottom: 1px solid white;
+        }
+
+        .display-text strong {
+            font-family: 'Tahoma', sans-serif;
+        }
+
+        .display-text a {
+            color: white;
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+            transition: all 0.3s ease;
+        }
+
+        .display-text a:hover {
+            color: white;
+            border-bottom: 1px solid white;
+        }
+
+        .display-text hr {
+            border: none;
+            height: 1px;
+            background: linear-gradient(to right, transparent, rgba(255, 255, 255, 0.3), transparent);
+            margin: 50px 0;
+        }
+
+        .display-text::-webkit-scrollbar {
+            width: 4.5px;
+        }
+
+        .display-text::-webkit-scrollbar-track {
+            background: transparent;
+            margin: 0 20px;
+        }
+
+        .display-text::-webkit-scrollbar-thumb {
+            background-color: rgba(255, 255, 255, 0.6);
+            border-radius: 10px;
+            backdrop-filter: blur(3px);
+        }
+
+        .display-text::-webkit-scrollbar-thumb:hover {
+            background-color: rgba(255, 255, 255, 0.8);
+        }
+
+        /* Menu Styles */
+        .menu {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 200px;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.7);
+            z-index: 3;
+        }
+
+        .menu .logo {
+            height: 24vh;
+            width: auto;
+            margin-bottom: 20px;
         }
 
         .menu a {
             color: white;
             text-decoration: none;
-            margin: 10px 0;
-            font-size: 1.2rem;
-            transition: transform 0.3s, color 0.3s;
+            font-size: 1.5rem;
+            margin: 15px 0;
+            position: relative;
+            display: inline-block;
+            font-family: 'Rubik', sans-serif;
         }
 
-        .menu a:hover {
-            transform: scale(1.1);
-            color: #ff8c00;
-        }
-
-        .menu img {
-            width: 80%;
-            margin-bottom: 20px;
-        }
-
-        /* Display Text */
-        .display-text {
+        .menu a::after {
+            content: '';
             position: absolute;
-            bottom: 0;
             left: 0;
+            bottom: -5px;
+            width: 0;
+            height: 2px;
+            background: white;
+            transition: width 0.3s;
+        }
+
+        .menu a:hover::after {
             width: 100%;
-            padding: 20px;
-            background: rgba(0, 0, 0, 0.6);
-            color: white;
-            font-size: 1rem;
-            line-height: 1.5;
-            overflow-y: auto;
-            max-height: 40%;
-        }
-
-        .display-text h1 {
-            font-size: 2rem;
-            color: #ff8c00;
-        }
-
-        .display-text p {
-            margin: 10px 0;
-        }
-
-        .display-text a {
-            color: #ff8c00;
-            text-decoration: underline;
         }
 
         /* Copyright */
         .copyright {
-            position: fixed;
+            position: absolute;
             bottom: 10px;
             right: 10px;
             color: white;
+            font-family: 'Times New Roman', serif;
             font-size: 0.8rem;
+            z-index: 5;
+            text-align: right;
+            transition: all 0.5s ease;
+        }
+
+        .copyright.center {
+            left: 50%;
+            right: auto;
+            transform: translateX(-50%);
+            text-align: center;
         }
     </style>
+    <script>
+    $(document).ready(function () {
+        // Disable right-click on the entire page
+        $(document).on("contextmenu", function (e) {
+            e.preventDefault();
+        });
+    
+        // Load a random image on page load
+        const randomImage = Math.random() < 0.5 ? 'img/lynleit-copyright-1.png' : 'img/lynleit-copyright-2.png';
+        $('.content').html(`<img src="${randomImage}" alt="Main Star">`);
+    
+        // Adjust text container based on image width
+        function adjustTextContainer() {
+            const imageWidth = $('.content img').width();
+            $('.display-text').css('left', `${imageWidth}px`);
+        }
+    
+        // Ensure adjustTextContainer runs after page fully loads
+        $(window).on('load', adjustTextContainer);
+        $(window).on('resize', adjustTextContainer);
+    
+        // Display text from local markdown files on menu link click
+        $('.menu a').on('click', function (e) {
+            e.preventDefault();
+    
+            const linkName = $(this).text().toLowerCase().replace(' | ', '-');
+            $.get(`${linkName}.md`, function (data) {
+                $('.display-text').html(marked.parse(data)).fadeIn();
+            });
+    
+            $('.content').css('transform', 'translateX(calc(40vw))');
+            $('.copyright').addClass('center');
+        });
+    
+        // Image zooming functionality
+        $(document).on('click', '.display-text img', function () {
+            const imgSrc = $(this).attr('src');
+    
+            if ($('.zoomed-image').length) {
+                $('.zoomed-image').removeClass('active').fadeOut(300, function () {
+                    $(this).remove();
+                });
+            } else {
+                $('body').append(`<img src="${imgSrc}" class="zoomed-image">`);
+                $('.zoomed-image').fadeIn(300).addClass('active');
+            }
+        });
+    
+        $(document).on('click', '.zoomed-image', function () {
+            $(this).removeClass('active').fadeOut(300, function () {
+                $(this).remove();
+            });
+        });
+    });    
+    </script>
 </head>
 <body>
     <div class="container">
         <div class="background"></div>
-        <div class="particles">
-            <!-- Dynamically create particles -->
-            <script>
-                for (let i = 0; i < 50; i++) {
-                    const particle = document.createElement('div');
-                    particle.classList.add('particle');
-                    particle.style.left = Math.random() * 100 + '%';
-                    particle.style.top = Math.random() * 100 + '%';
-                    particle.style.animationDuration = (Math.random() * 5 + 5) + 's';
-                    document.querySelector('.particles').appendChild(particle);
-                }
-            </script>
-        </div>
         <div class="menu">
-            <img src="img/magiarchy-logo.png" alt="Project MAGIARCHY">
+            <img src="img/magiarchy-logo.png" alt="Logo" class="logo">
             <a href="#intro">Intro</a>
             <a href="#story-lore">Story | Lore</a>
             <a href="#characters">Characters</a>
@@ -206,13 +398,8 @@
             <a href="#music">Music</a>
             <a href="#contact">Contact</a>
         </div>
-        <div class="content">
-            Welcome to the world of <strong>Project MAGIARCHY</strong>.
-        </div>
-        <div class="display-text">
-            <h1>About the Project</h1>
-            <p>Explore a unique world of magic, mystery, and characters bound by a centuries-old treaty.</p>
-        </div>
+        <div class="content"></div>
+        <div class="display-text"></div>
         <div class="copyright">
             original story and characters by © KIRIL BEKULOV / Project MAGIARCHY
         </div>
