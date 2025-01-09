@@ -4,8 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Interactive Timeline</title>
-    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
-    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
     <style>
         body {
             margin: 0;
@@ -13,220 +11,201 @@
             background-color: #121212;
             color: #f5f5f5;
         }
-        .timeline-container {
-            overflow-x: hidden;
-            position: relative;
-            width: 100%;
-            height: 100vh;
+        #root {
             display: flex;
             flex-direction: column;
-            background: linear-gradient(to right, #1e1e1e 50%, #252525 50%);
+            height: 100vh;
         }
         .legend {
             display: flex;
             justify-content: center;
-            gap: 10px;
             padding: 10px;
-            background: #1e1e1e;
-            position: sticky;
-            top: 0;
-            z-index: 10;
-            border-bottom: 2px solid #333;
+            background-color: #1f1f1f;
+            border-bottom: 1px solid #333;
         }
         .color-box {
             width: 16px;
             height: 16px;
             display: inline-block;
-            margin-right: 5px;
-            border-radius: 4px;
+            margin-right: 8px;
+            border-radius: 3px;
+        }
+        .timeline-container {
+            flex: 1;
+            overflow-x: hidden;
+            position: relative;
+            background: repeating-linear-gradient(to right, transparent, transparent 49px, #333 50px);
         }
         .timeline {
             display: flex;
-            overflow-x: auto;
-            flex: 1;
+            gap: 40px;
             padding: 20px;
-            cursor: grab;
-        }
-        .timeline:active {
-            cursor: grabbing;
+            white-space: nowrap;
+            position: relative;
         }
         .act {
             min-width: 600px;
-            margin-right: 20px;
+            flex: 0 0 auto;
             position: relative;
-            display: flex;
-            flex-direction: column;
         }
-        .act h3 {
-            text-align: center;
+        .timeline-event {
+            position: relative;
+            padding: 5px;
+            background-color: #2E8B57;
+            color: #f5f5f5;
+            border-left: 6px solid #17452B;
+            border-radius: 5px;
             margin-bottom: 20px;
-            color: #f5f5f5;
-        }
-        .timeline-item {
-            margin-bottom: 15px;
-            background: #1e1e1e;
-            color: #f5f5f5;
-            border-radius: 8px;
-            position: relative;
-            padding: 8px 12px;
-            transition: transform 0.3s;
-        }
-        .timeline-item:hover {
-            transform: scale(1.03);
-            background: #333;
+            cursor: pointer;
+            text-align: left;
         }
         .tooltip {
             position: absolute;
-            bottom: 110%;
             left: 50%;
+            bottom: 110%;
             transform: translateX(-50%);
+            padding: 5px;
             background: #f5f5f5;
             color: #121212;
-            padding: 5px 10px;
-            border-radius: 5px;
-            font-size: 0.8rem;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+            font-size: 0.7rem;
+            border-radius: 3px;
+            white-space: nowrap;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
             opacity: 0;
             visibility: hidden;
-            transition: opacity 0.2s, visibility 0.2s;
+            transition: opacity 0.2s ease, visibility 0.2s ease;
         }
-        .timeline-item:hover .tooltip {
+        .timeline-event:hover .tooltip {
             opacity: 1;
             visibility: visible;
         }
         .group-ratio {
             text-align: center;
-            margin: 20px 0;
             font-size: 0.8rem;
+            padding: 10px;
+            background-color: #1f1f1f;
         }
     </style>
 </head>
 <body>
-    <div id="app"></div>
-
+    <div id="root"></div>
+    <script src="https://unpkg.com/react/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom/umd/react-dom.development.js"></script>
     <script>
         const { useState, useEffect } = React;
 
-        const colors = [
-            { className: "bg-group-1", color: "#6A5ACD" },
-            { className: "bg-group-2", color: "#4682B4" },
-            { className: "bg-group-3", color: "#8B4513" },
-            { className: "bg-group-4", color: "#5F9EA0" },
-            { className: "bg-group-5", color: "#2E8B57" }
-        ];
-
-        const inlineData = [
+        // Sample Data (Replace with actual data from JSON)
+        const timelineData = [
             {
                 act: "I",
                 events: [
-                    {
-                        groupName: "Group 1",
-                        content: "Event 1 in Act I. A detailed explanation of the event.",
-                        tooltip: "Tooltip for Event 1 in Act I",
-                    },
-                    {
-                        groupName: "Group 2",
-                        content: "Event 2 in Act I. Another description of events.",
-                        tooltip: "Tooltip for Event 2 in Act I",
-                    }
+                    { groupName: "Group 1", content: "Event 1", tooltip: "Tooltip 1", width: "70%", indent: "10%" },
+                    { groupName: "Group 2", content: "Event 2", tooltip: "Tooltip 2", width: "60%", indent: "20%" }
                 ]
             },
             {
                 act: "II",
                 events: [
-                    {
-                        groupName: "Group 1",
-                        content: "Event 1 in Act II. A pivotal event.",
-                        tooltip: "Tooltip for Event 1 in Act II",
-                    },
-                    {
-                        groupName: "Group 3",
-                        content: "Event 2 in Act II. Further intrigue.",
-                        tooltip: "Tooltip for Event 2 in Act II",
-                    }
+                    { groupName: "Group 1", content: "Event 3", tooltip: "Tooltip 3", width: "50%", indent: "5%" },
+                    { groupName: "Group 3", content: "Event 4", tooltip: "Tooltip 4", width: "70%", indent: "15%" }
                 ]
             }
         ];
 
-        const App = () => {
-            const [data, setData] = useState([]);
-            const [groupCounts, setGroupCounts] = useState({});
+        const colors = ["#6A5ACD", "#4682B4", "#8B4513", "#5F9EA0", "#2E8B57", "#DDA0DD", "#B0C4DE", "#A0522D", "#778899", "#F5F5F5"];
 
-            useEffect(() => {
-                // Simulating fetch with inline data
-                const fetchedData = inlineData;
-                setData(fetchedData);
+        // Legend Component
+        const Legend = ({ groups }) => (
+            <div className="legend">
+                {groups.map((group, index) => (
+                    <div key={group} style={{ display: "flex", alignItems: "center", marginRight: "10px" }}>
+                        <span className="color-box" style={{ backgroundColor: colors[index % colors.length] }}></span>
+                        {group}
+                    </div>
+                ))}
+            </div>
+        );
 
-                // Calculate group counts
-                const counts = {};
-                fetchedData.forEach(({ events }) => {
-                    events.forEach(({ groupName }) => {
-                        counts[groupName] = (counts[groupName] || 0) + 1;
-                    });
-                });
-                setGroupCounts(counts);
-            }, []);
+        // Timeline Event Component
+        const TimelineEvent = ({ event, color }) => (
+            <div
+                className="timeline-event"
+                style={{
+                    backgroundColor: color,
+                    width: event.width,
+                    marginLeft: event.indent
+                }}
+            >
+                {event.content}
+                <div className="tooltip">{event.tooltip}</div>
+            </div>
+        );
 
-            const calculateRatios = () => {
-                const total = Object.values(groupCounts).reduce((sum, count) => sum + count, 0);
-                return Object.entries(groupCounts).map(([group, count]) => ({
-                    group,
-                    ratio: ((count / total) * 100).toFixed(1)
-                }));
+        // Timeline Component
+        const Timeline = ({ data }) => {
+            const [scrollX, setScrollX] = useState(0);
+
+            const handleScroll = (event) => {
+                event.preventDefault();
+                setScrollX((prev) => prev + event.deltaY);
             };
 
             return (
-                <div className="timeline-container">
-                    <div className="legend">
-                        {Object.keys(groupCounts).map((groupName, index) => (
-                            <div key={groupName}>
-                                <span
-                                    className="color-box"
-                                    style={{ backgroundColor: colors[index % colors.length].color }}
-                                ></span>
-                                {groupName}
-                            </div>
-                        ))}
-                    </div>
-
-                    <div className="timeline">
-                        {data.map((act) => (
+                <div className="timeline-container" onWheel={handleScroll}>
+                    <div className="timeline" style={{ transform: `translateX(${-scrollX}px)` }}>
+                        {data.map((act, index) => (
                             <div key={act.act} className="act">
-                                <h3>{`Act ${act.act}`}</h3>
-                                {act.events.map((event, index) => (
-                                    <div
-                                        key={index}
-                                        className="timeline-item"
-                                        style={{
-                                            borderLeft: `6px solid ${colors[index % colors.length].color}`
-                                        }}
-                                    >
-                                        {event.content}
-                                        <div className="tooltip">{event.tooltip}</div>
-                                    </div>
+                                <h3>{act.act}</h3>
+                                {act.events.map((event, i) => (
+                                    <TimelineEvent
+                                        key={i}
+                                        event={event}
+                                        color={colors[index % colors.length]}
+                                    />
                                 ))}
                             </div>
-                        ))}
-                    </div>
-
-                    <div className="group-ratio">
-                        {calculateRatios().map(({ group, ratio }) => (
-                            <span
-                                key={group}
-                                style={{
-                                    color: colors[Object.keys(groupCounts).indexOf(group) % colors.length].color,
-                                    marginRight: "10px"
-                                }}
-                            >
-                                {`${group} (${ratio}%)`}
-                            </span>
                         ))}
                     </div>
                 </div>
             );
         };
 
-        ReactDOM.render(<App />, document.getElementById("app"));
+        // Group Ratios Component
+        const GroupRatios = ({ data }) => {
+            const groupCounts = {};
+            let total = 0;
+
+            data.forEach((act) => {
+                act.events.forEach((event) => {
+                    groupCounts[event.groupName] = (groupCounts[event.groupName] || 0) + 1;
+                    total++;
+                });
+            });
+
+            return (
+                <div className="group-ratio">
+                    {Object.entries(groupCounts).map(([group, count], index) => (
+                        <span key={group} style={{ color: colors[index % colors.length], marginRight: "10px" }}>
+                            {group} ({((count / total) * 100).toFixed(2)}%)
+                        </span>
+                    ))}
+                </div>
+            );
+        };
+
+        // Main App Component
+        const App = () => {
+            const groups = [...new Set(timelineData.flatMap((act) => act.events.map((e) => e.groupName)))];
+            return (
+                <>
+                    <Legend groups={groups} />
+                    <Timeline data={timelineData} />
+                    <GroupRatios data={timelineData} />
+                </>
+            );
+        };
+
+        ReactDOM.render(<App />, document.getElementById("root"));
     </script>
 </body>
 </html>
