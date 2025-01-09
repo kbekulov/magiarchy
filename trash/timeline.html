@@ -115,59 +115,56 @@
             { className: "bg-group-5", color: "#2E8B57" }
         ];
 
-        const fetchData = async () => {
-            return Promise.resolve([
-                {
-                    act: "I",
-                    events: [
-                        {
-                            groupName: "Group 1",
-                            content: "Event 1 in Act I. A detailed explanation of the event.",
-                            tooltip: "Tooltip for Event 1 in Act I",
-                        },
-                        {
-                            groupName: "Group 2",
-                            content: "Event 2 in Act I. Another description of events.",
-                            tooltip: "Tooltip for Event 2 in Act I",
-                        }
-                    ]
-                },
-                {
-                    act: "II",
-                    events: [
-                        {
-                            groupName: "Group 1",
-                            content: "Event 1 in Act II. A pivotal event.",
-                            tooltip: "Tooltip for Event 1 in Act II",
-                        },
-                        {
-                            groupName: "Group 3",
-                            content: "Event 2 in Act II. Further intrigue.",
-                            tooltip: "Tooltip for Event 2 in Act II",
-                        }
-                    ]
-                }
-            ]);
-        };
+        const inlineData = [
+            {
+                act: "I",
+                events: [
+                    {
+                        groupName: "Group 1",
+                        content: "Event 1 in Act I. A detailed explanation of the event.",
+                        tooltip: "Tooltip for Event 1 in Act I",
+                    },
+                    {
+                        groupName: "Group 2",
+                        content: "Event 2 in Act I. Another description of events.",
+                        tooltip: "Tooltip for Event 2 in Act I",
+                    }
+                ]
+            },
+            {
+                act: "II",
+                events: [
+                    {
+                        groupName: "Group 1",
+                        content: "Event 1 in Act II. A pivotal event.",
+                        tooltip: "Tooltip for Event 1 in Act II",
+                    },
+                    {
+                        groupName: "Group 3",
+                        content: "Event 2 in Act II. Further intrigue.",
+                        tooltip: "Tooltip for Event 2 in Act II",
+                    }
+                ]
+            }
+        ];
 
         const App = () => {
             const [data, setData] = useState([]);
             const [groupCounts, setGroupCounts] = useState({});
 
             useEffect(() => {
-                const loadData = async () => {
-                    const fetchedData = await fetchData();
-                    setData(fetchedData);
+                // Simulating fetch with inline data
+                const fetchedData = inlineData;
+                setData(fetchedData);
 
-                    const counts = {};
-                    fetchedData.forEach(({ events }) => {
-                        events.forEach(({ groupName }) => {
-                            counts[groupName] = (counts[groupName] || 0) + 1;
-                        });
+                // Calculate group counts
+                const counts = {};
+                fetchedData.forEach(({ events }) => {
+                    events.forEach(({ groupName }) => {
+                        counts[groupName] = (counts[groupName] || 0) + 1;
                     });
-                    setGroupCounts(counts);
-                };
-                loadData();
+                });
+                setGroupCounts(counts);
             }, []);
 
             const calculateRatios = () => {
@@ -229,9 +226,7 @@
             );
         };
 
-        document.addEventListener("DOMContentLoaded", () => {
-            ReactDOM.render(<App />, document.getElementById("app"));
-        });
+        ReactDOM.render(<App />, document.getElementById("app"));
     </script>
 </body>
 </html>
