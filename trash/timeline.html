@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Interactive Timeline</title>
     <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
-    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>    
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
     <style>
         body {
             margin: 0;
@@ -116,8 +116,7 @@
         ];
 
         const fetchData = async () => {
-            // Simulated data fetch
-            return [
+            return Promise.resolve([
                 {
                     act: "I",
                     events: [
@@ -148,7 +147,7 @@
                         }
                     ]
                 }
-            ];
+            ]);
         };
 
         const App = () => {
@@ -160,7 +159,6 @@
                     const fetchedData = await fetchData();
                     setData(fetchedData);
 
-                    // Calculate group counts
                     const counts = {};
                     fetchedData.forEach(({ events }) => {
                         events.forEach(({ groupName }) => {
@@ -231,7 +229,9 @@
             );
         };
 
-        ReactDOM.render(<App />, document.getElementById("app"));
+        document.addEventListener("DOMContentLoaded", () => {
+            ReactDOM.render(<App />, document.getElementById("app"));
+        });
     </script>
 </body>
 </html>
