@@ -52,7 +52,7 @@ const data = {
             "text": "The war could get nuclear", 
             "isTrue": true, 
             "color": "#51a078",
-            "description": "The war in Ukraine, despite repeated assurances from Western politicians and media, carries a real risk of nuclear escalation. Russia, with the world's largest nuclear arsenal, views the conflict as existential, with its outcome seen by the government as critical to the survival of Russian statehood. Unlike expeditionary wars akin to Afghanistan, Iraq, Vietnam, or Syria, this conflict resembles a modern, smaller-scale version of World War II. For Russia, it is a patriotic war centered on survival, making defeat unacceptable. If cornered, Russia may feel politically compelled to consider nuclear options."
+            "description": "The war in Ukraine carries the potential for nuclear escalation, despite repeated assurances from Western politicians and media. Russia, which holds the world's largest nuclear arsenal, considers the conflict existential, with its outcome seen as critical to the survival of the Russian state. Unlike expeditionary campaigns in Afghanistan, Iraq, Vietnam, or Syria, this war resembles a modern, scaled-down version of World War II. Russian military leaders have invoked historical parallels, urging soldiers to match the resilience of their WW2 forefathers following the retreat from Kyiv. For Russia, defeat is not an option, and if pushed into a corner, it may feel politically obligated to resort to nuclear measures."
         },
         { 
             "text": "NATO is heavily involved/responsible", 
