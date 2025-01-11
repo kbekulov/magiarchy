@@ -11,12 +11,14 @@
             --false-color: #c83d3d;
             --text-color: #ffffff;
             --accent-color: #3b82f6;
+            --card-bg: #2b2b2b;
+            --shadow-color: rgba(0, 0, 0, 0.3);
         }
 
         body {
             background-color: var(--bg-color);
             color: var(--text-color);
-            font-family: Arial, sans-serif;
+            font-family: 'Roboto', sans-serif;
             margin: 0;
             padding: 0;
         }
@@ -24,50 +26,55 @@
         .container {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-            gap: 16px;
-            padding: 16px;
+            gap: 24px;
+            padding: 24px;
         }
 
         .fact-card {
-            background-color: #2a2a2a;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            background: var(--card-bg);
+            border-radius: 12px;
+            box-shadow: 0 4px 8px var(--shadow-color);
             overflow: hidden;
-            border-left: 6px solid;
+            border: 4px solid;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
-            padding: 16px;
-            transition: transform 0.3s ease;
+            padding: 20px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
 
         .fact-card:hover {
-            transform: scale(1.05);
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px var(--shadow-color);
         }
 
         .fact-text {
-            font-size: 1.2em;
+            font-size: 1.3em;
             font-weight: bold;
-            margin-bottom: 8px;
+            margin-bottom: 12px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
         }
 
         .fact-description {
-            font-size: 0.9em;
-            line-height: 1.5;
+            font-size: 1em;
+            line-height: 1.6;
         }
 
         .fact-card[isTrue="true"] {
-            border-color: var(--true-color);
+            border-image: linear-gradient(to right, var(--true-color), var(--accent-color));
+            border-image-slice: 1;
         }
 
         .fact-card[isTrue="false"] {
-            border-color: var(--false-color);
+            border-image: linear-gradient(to right, var(--false-color), var(--accent-color));
+            border-image-slice: 1;
         }
 
         .footer {
             text-align: center;
             padding: 16px;
-            font-size: 0.8em;
+            font-size: 0.9em;
             color: var(--accent-color);
         }
 
@@ -78,6 +85,19 @@
 
         .footer a:hover {
             text-decoration: underline;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        .fact-card {
+            animation: fadeIn 0.8s ease;
         }
     </style>
 </head>
