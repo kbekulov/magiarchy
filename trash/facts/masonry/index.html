@@ -3,24 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Elegant Facts</title>
+    <title>Masonry Layout</title>
     <style>
-        /* Root Theme Variables */
         :root {
-            --dark-grey: #1c1c1c;
-            --light-blue: #4fc3f7;
-            --cherry-red: #e57373;
+            --background-color: #1c1c1c;
+            --true-color: #4fc3f7; /* Light Blue */
+            --false-color: #e57373; /* Cherry Red */
+            --card-color: #2b2b2b;
             --text-color: #ffffff;
-            --card-bg: #2b2b2b;
-            --font: 'Arial', sans-serif;
         }
 
-        /* Global Styles */
         body {
             margin: 0;
-            padding: 0;
-            font-family: var(--font);
-            background-color: var(--dark-grey);
+            font-family: 'Arial', sans-serif;
+            background-color: var(--background-color);
             color: var(--text-color);
             display: flex;
             flex-direction: column;
@@ -28,73 +24,66 @@
         }
 
         h1 {
-            color: var(--text-color);
             margin-top: 20px;
-            font-size: 2em;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            text-align: center;
+            color: var(--text-color);
+            font-size: 2rem;
         }
 
         /* Container for Masonry Layout */
-        .container {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-            gap: 20px;
-            width: 90%;
+        .masonry-container {
+            position: relative;
             max-width: 1200px;
+            width: 90%;
             margin: 20px auto;
         }
 
-        /* Fact Card Styles */
-        .card {
-            border-radius: 12px;
-            padding: 20px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        /* Masonry Brick */
+        .masonry-brick {
+            position: absolute;
+            width: calc(33.333% - 10px); /* 3 columns with spacing */
+            box-sizing: border-box;
+            background-color: var(--card-color);
             color: var(--text-color);
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            transition: transform 0.3s, box-shadow 0.3s;
+            border-radius: 10px;
+            padding: 15px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+            transition: transform 0.3s;
         }
 
-        .card[data-truth="true"] {
-            background-color: var(--light-blue);
-        }
-
-        .card[data-truth="false"] {
-            background-color: var(--cherry-red);
-        }
-
-        .card:hover {
+        .masonry-brick:hover {
             transform: translateY(-5px);
-            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5);
+            box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.8);
         }
 
-        /* Card Header */
-        .card-header {
-            font-size: 1.2em;
+        /* True and False Color Blocks */
+        .masonry-brick[data-truth="true"] {
+            background-color: var(--true-color);
+        }
+
+        .masonry-brick[data-truth="false"] {
+            background-color: var(--false-color);
+        }
+
+        .brick-header {
+            font-size: 1.2rem;
             font-weight: bold;
-            margin-bottom: 10px;
         }
 
-        /* Card Description */
-        .card-description {
-            font-size: 0.95em;
-            line-height: 1.6;
+        .brick-description {
+            margin-top: 10px;
+            font-size: 0.9rem;
+            line-height: 1.5;
         }
 
-        /* Footer */
         .footer {
-            margin: 20px 0;
+            margin-top: 20px;
             text-align: center;
             color: var(--text-color);
         }
 
         .footer a {
-            color: var(--light-blue);
+            color: var(--true-color);
             text-decoration: none;
-            font-weight: bold;
         }
 
         .footer a:hover {
@@ -104,49 +93,73 @@
 </head>
 <body>
 
-<h1>Facts at a Glance</h1>
-<div class="container" id="facts-container">
-    <!-- Facts will be dynamically added here -->
-</div>
+<h1>Dynamic Masonry Layout</h1>
+<div class="masonry-container" id="masonry-container"></div>
 
 <div class="footer">
     <p>Powered by <a href="#">Your App</a></p>
 </div>
 
 <script>
-    // Load Facts Dynamically
+    const masonryContainer = document.getElementById('masonry-container');
+
+    // Masonry Logic
+    function createMasonryLayout(container) {
+        const bricks = Array.from(container.children);
+        const columnCount = 3; // Number of columns
+        const columnHeights = Array(columnCount).fill(0); // Track height of each column
+        const columnWidth = container.clientWidth / columnCount;
+
+        bricks.forEach((brick, index) => {
+            // Find the shortest column
+            const minColumnHeight = Math.min(...columnHeights);
+            const columnIndex = columnHeights.indexOf(minColumnHeight);
+
+            // Position the brick
+            brick.style.width = `${columnWidth - 10}px`;
+            brick.style.top = `${minColumnHeight}px`;
+            brick.style.left = `${columnIndex * columnWidth}px`;
+
+            // Update column height
+            columnHeights[columnIndex] += brick.offsetHeight + 20; // Add spacing between bricks
+        });
+
+        // Set container height to the tallest column
+        container.style.height = `${Math.max(...columnHeights)}px`;
+    }
+
+    // Load Data from External JSON File
     async function loadFacts() {
         try {
             const response = await fetch('data.json'); // Ensure data.json is in the same directory
             const data = await response.json();
-            const factsContainer = document.getElementById('facts-container');
 
             data.facts.forEach(fact => {
-                // Create Card Element
-                const card = document.createElement('div');
-                card.className = 'card';
-                card.setAttribute('data-truth', fact.isTrue);
+                // Create Brick Element
+                const brick = document.createElement('div');
+                brick.className = 'masonry-brick';
+                brick.setAttribute('data-truth', fact.isTrue);
+                brick.style.height = `${100 + Math.random() * 100}px`; // Randomized height for variety
 
                 // Add Header and Description
-                card.innerHTML = `
-                    <div class="card-header">
-                        ${fact.text}
-                    </div>
-                    <div class="card-description">
-                        ${fact.description}
-                    </div>
+                brick.innerHTML = `
+                    <div class="brick-header">${fact.text}</div>
+                    <div class="brick-description">${fact.description}</div>
                 `;
 
-                // Append Card to Container
-                factsContainer.appendChild(card);
+                masonryContainer.appendChild(brick);
             });
+
+            // Apply Masonry Layout
+            createMasonryLayout(masonryContainer);
         } catch (error) {
             console.error('Error loading facts:', error);
         }
     }
 
-    // Load Facts on Page Load
-    loadFacts();
+    // Initialize Masonry Layout
+    window.addEventListener('load', loadFacts);
+    window.addEventListener('resize', () => createMasonryLayout(masonryContainer));
 </script>
 
 </body>
