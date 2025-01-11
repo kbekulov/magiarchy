@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Military Personnel Comparison</title>
-    <style>//* General Styles */
+    <style>/* General Styles */
         body {
             font-family: 'Segoe UI', Arial, sans-serif;
             margin: 0;
@@ -13,7 +13,7 @@
             background-size: cover;
             color: white;
         }
-        
+
         .container {
             width: 80%;
             margin: 5vh auto;
@@ -23,7 +23,7 @@
             box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
             overflow: hidden;
         }
-        
+
         /* Left Panel (Facts Section) */
         .region-list {
             width: 35%;
@@ -32,13 +32,13 @@
             overflow-y: auto;
             border-right: 1px solid rgba(255, 255, 255, 0.1);
         }
-        
+
         .region-list ul {
             list-style: none;
             margin: 0;
             padding: 0;
         }
-        
+
         .region-list ul li {
             position: relative;
             padding: 12px 16px;
@@ -48,16 +48,14 @@
             cursor: pointer;
             transition: background-color 0.3s, box-shadow 0.3s;
         }
-        
+
         .region-list ul li:hover {
             background: rgba(80, 160, 120, 0.8);
             box-shadow: 0 0 8px rgba(80, 160, 120, 0.6);
         }
-        
-        /* Styling for the hidden description */
+
         .region-list ul li .fact-description {
-            display: block; /* Keep it block for animation */
-            opacity: 0; /* Initially invisible */
+            display: none; /* Hidden by default */
             margin-top: 8px;
             padding: 10px;
             background: rgba(0, 0, 0, 0.8);
@@ -65,48 +63,44 @@
             color: white;
             font-size: 0.9rem;
             position: relative; /* Keeps it within the list item */
-            transition: opacity 0.3s ease, transform 0.3s ease; /* Add transition for smooth fade-in */
-            transform: translateY(-10px); /* Slightly move up initially */
         }
-        
-        /* Hover effect: Fade in and slide down the description */
+
         .region-list ul li:hover .fact-description {
-            opacity: 1; /* Fully visible */
-            transform: translateY(0); /* Slide back to original position */
+            display: block; /* Show on hover */
         }
-        
+
         /* Right Panel (Details Section) */
         .progress-details {
             width: 65%;
             padding: 20px;
         }
-        
+
         .header {
             font-size: 1.5rem;
             font-weight: bold;
             margin-bottom: 20px;
         }
-        
+
         .progress-item {
             margin-bottom: 20px;
         }
-        
+
         .progress-bar {
             display: flex;
             align-items: center;
             opacity: 1;
         }
-        
+
         .progress-bar.faded {
             opacity: 0.5; /* Lower opacity for faded bars */
         }
-        
+
         .progress-bar .label {
             flex: 1;
             font-size: 1rem;
             text-align: left;
         }
-        
+
         .progress-bar .bar {
             flex: 2;
             height: 12px;
@@ -116,19 +110,19 @@
             margin: 0 10px;
             position: relative;
         }
-        
+
         .progress-bar .bar span {
             display: block;
             height: 100%;
             background: linear-gradient(to right, rgba(80, 160, 120, 1), rgba(200, 60, 60, 1));
         }
-        
+
         .progress-bar .percentage {
             flex: 0.5;
             font-size: 0.9rem;
             text-align: right;
         }
-        
+
         /* Combat Losses (Multi-section Bars) */
         .progress-bar.multi-section-bar {
             display: flex;
@@ -136,7 +130,7 @@
             overflow: hidden;
             width: 100%; /* Maintain consistent width */
         }
-        
+
         .progress-bar.multi-section-bar .section {
             display: flex;
             align-items: center; /* Center text vertically */
@@ -145,14 +139,13 @@
             font-weight: bold;
             color: white;
         }
-        
+
         /* Horizontal Rule */
         hr {
             border: none;
             border-top: 1px solid rgba(255, 255, 255, 0.3);
             margin: 20px 0;
-        }
-            
+        }        
     </style>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
