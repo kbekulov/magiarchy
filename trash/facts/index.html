@@ -46,10 +46,12 @@
             background: rgba(50, 50, 60, 0.8);
             border-radius: 5px;
             display: flex;
-            flex-direction: column;
+            justify-content: space-between; /* Aligns text and icon properly */
+            align-items: center; /* Vertically aligns content */
             transition: background-color 0.3s, box-shadow 0.3s;
             font-size: 1rem;
             font-weight: bold;
+            overflow: hidden; /* Ensures hidden text doesn’t add extra space */
         }
         
         .region-list ul li:hover {
@@ -72,9 +74,9 @@
         
         /* Fact Description */
         .region-list ul li .fact-description {
-            max-height: 0; /* Collapsed by default */
-            overflow: hidden;
-            opacity: 0;
+            max-height: 0; /* Hidden by default */
+            overflow: hidden; /* Prevents content from adding height */
+            opacity: 0; /* Invisible by default */
             margin-top: 8px;
             padding: 0;
             background: rgba(0, 0, 0, 0.8);
@@ -82,12 +84,12 @@
             color: white;
             font-size: 0.9rem;
             line-height: 1.5;
-            transition: all 0.3s ease; /* Smooth expand/collapse */
+            transition: max-height 0.3s ease, opacity 0.3s ease, padding 0.3s ease;
         }
         
         .region-list ul li:hover .fact-description {
-            max-height: 200px; /* Arbitrary value to fit long descriptions */
-            opacity: 1;
+            max-height: 300px; /* Enough space for long descriptions */
+            opacity: 1; /* Fully visible */
             padding: 10px;
         }
         
