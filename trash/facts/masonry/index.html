@@ -6,20 +6,20 @@
     <title>Facts about the Ukraine war</title>
     <style>
         :root {
-            --background-color: #2b2b2b; /* Deep gray background */
-            --true-color: rgba(60, 100, 160, 0.9); /* Muted royal blue */
-            --true-gradient: linear-gradient(135deg, rgba(60, 100, 160, 0.9), rgba(40, 80, 140, 0.9));
-            --false-color: rgba(200, 60, 60, 0.9); /* Soft crimson red */
-            --false-gradient: linear-gradient(135deg, rgba(200, 60, 60, 0.9), rgba(180, 40, 40, 0.9));
-            --header-gradient: linear-gradient(135deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.05)); /* Frosted header */
-            --line-color: rgba(220, 220, 220, 0.6); /* Softer line */
+            --background-color: #393e44; /* Background from the image */
+            --true-color: rgba(70, 110, 150, 0.9); /* Muted elegant blue */
+            --true-gradient: linear-gradient(135deg, rgba(70, 110, 150, 0.9), rgba(50, 90, 130, 0.9));
+            --false-color: rgba(180, 60, 60, 0.9); /* Deep red */
+            --false-gradient: linear-gradient(135deg, rgba(180, 60, 60, 0.9), rgba(150, 40, 40, 0.9));
+            --header-gradient: linear-gradient(135deg, rgba(230, 230, 230, 0.15), rgba(200, 200, 200, 0.05)); /* Subtle frosted header */
+            --line-color: rgba(180, 200, 220, 0.5); /* Light grey-blue */
             --border-color: rgba(255, 255, 255, 0.1); /* Subtle border */
-            --text-color: #f4f4f4; /* Light warm white */
-            --faded-text-color: rgba(244, 244, 244, 0.8); /* Softer faded text */
-            --highlighted-text-color: rgba(244, 244, 244, 1); /* Enhanced visibility */
+            --text-color: #e0e4ea; /* Soft white for main text */
+            --faded-text-color: rgba(224, 228, 234, 0.8); /* Softer faded text */
+            --highlighted-text-color: rgba(224, 228, 234, 1); /* Enhanced visibility */
             --card-padding: 15px;
             --card-radius: 12px; /* Rounded corners for elegance */
-            --card-shadow: rgba(0, 0, 0, 0.3); /* Subtle shadow */
+            --card-shadow: rgba(0, 0, 0, 0.4); /* Soft shadow */
         }
 
         body {
@@ -41,16 +41,16 @@
             font-size: 2.2rem;
             letter-spacing: 1px;
             text-align: center;
-            text-shadow: 0 2px 6px rgba(0, 0, 0, 0.6), 0 4px 8px rgba(60, 60, 60, 0.5); /* Subtle glow */
+            text-shadow: 0 2px 6px rgba(0, 0, 0, 0.6), 0 4px 8px rgba(60, 120, 200, 0.5); /* Subtle glow */
         }
 
         /* Masonry Container */
         .masonry-container {
             position: relative;
-            max-width: 1400px; /* Allow wider layouts for larger screens */
-            width: 90%; /* Utilize more screen space */
-            margin: 20px auto; /* Center the container */
-            padding: 10px; /* Add padding for breathing space */
+            max-width: 1400px;
+            width: 90%;
+            margin: 20px auto;
+            padding: 10px;
         }
 
         /* Masonry Brick */
@@ -65,7 +65,7 @@
             padding-top: 50px;
             border: 1px solid var(--border-color);
             backdrop-filter: blur(10px); /* Frosted glass effect */
-            box-shadow: 0 4px 8px var(--card-shadow), 0 6px 12px rgba(60, 60, 60, 0.2); /* Layered shadows */
+            box-shadow: 0 4px 8px var(--card-shadow), 0 6px 12px rgba(60, 120, 200, 0.2); /* Layered shadows */
             transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
 
@@ -108,20 +108,20 @@
         .section-heading {
             margin: 20px 0 10px;
             font-size: 1.1rem;
-            font-weight: normal; /* Removed bold for softer emphasis */
+            font-weight: normal;
             text-align: center;
             position: relative;
-            color: var(--highlighted-text-color); /* Softer focus */
+            color: var(--highlighted-text-color);
         }
 
         .section-heading::before,
         .section-heading::after {
             content: '';
             position: absolute;
-            width: 40%; /* Appropriate line width */
-            height: 1px; /* Softer lines */
+            width: 40%;
+            height: 1px;
             background-color: var(--line-color);
-            top: 50%; /* Centered line */
+            top: 50%;
         }
 
         .section-heading::before {
