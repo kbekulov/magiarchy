@@ -45,9 +45,7 @@
             margin: 8px 0;
             background: rgba(50, 50, 60, 0.8);
             border-radius: 5px;
-            display: flex; /* Use flexbox for alignment */
-            justify-content: space-between; /* Space text and icon apart */
-            align-items: center; /* Vertically align text and icon */
+            display: block; /* Stack elements vertically */
             transition: background-color 0.3s, box-shadow 0.3s;
             cursor: pointer;
         }
@@ -59,16 +57,17 @@
         
         /* Fact Text */
         .region-list ul li .fact-text {
-            flex: 1; /* Allow text to occupy available space */
-            margin-bottom: 0; /* Ensure no unnecessary space below text */
-            line-height: 1.5;
+            display: inline-block; /* Keep the fact text inline */
+            margin-bottom: 8px; /* Space between text and description */
         }
         
         /* Fact Icons */
         .region-list ul li span.icon {
+            position: absolute;
+            right: 16px; /* Align icon to the right */
+            top: 50%; /* Align to the middle of the element */
+            transform: translateY(-50%); /* Correct vertical alignment */
             font-size: 1.5rem;
-            margin-left: 16px; /* Add space between text and icon */
-            color: inherit; /* Inherit color for consistency */
         }
         
         .region-list ul li span.icon.checkmark {
@@ -81,12 +80,12 @@
         
         /* Hidden Descriptions */
         .region-list ul li .fact-description {
-            display: block;
+            display: block; /* Allow description to take up space */
             max-height: 0; /* Fully collapsed */
             overflow: hidden; /* Prevent hidden content from affecting layout */
             opacity: 0; /* Invisible by default */
-            margin: 0;
-            padding: 0;
+            margin: 0; /* Remove default margin */
+            padding: 0; /* Remove padding when hidden */
             background: rgba(0, 0, 0, 0.8);
             border-radius: 5px;
             color: white;
