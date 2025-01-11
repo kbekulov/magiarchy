@@ -3,22 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Masonry Facts</title>
+    <title>Elegant Masonry Facts</title>
     <style>
-        /* Root Theme Variables */
         :root {
-            --bg-color: #1e1e1e;
-            --card-bg: #2c2c2c;
-            --accent-true: #51a078;
-            --accent-false: #c83d3d;
-            --text-color: #ffffff;
+            --bg-color: #f7f7f7;
+            --text-color: #2e2e2e;
+            --true-color: #5dade2; /* Light blue for true facts */
+            --false-color: #e74c3c; /* Cherry red for false facts */
+            --card-shadow: rgba(0, 0, 0, 0.1);
             --font: 'Arial', sans-serif;
         }
 
         /* Global Styles */
         body {
             margin: 0;
-            padding: 0;
             font-family: var(--font);
             background-color: var(--bg-color);
             color: var(--text-color);
@@ -26,71 +24,80 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            min-height: 100vh;
         }
 
         h1 {
+            font-size: 2em;
+            margin: 20px 0;
+            color: var(--text-color);
             text-align: center;
-            color: var(--accent-true);
-            margin-top: 20px;
         }
 
-        /* Masonry Layout Container */
+        /* Masonry Layout */
         .container {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
             gap: 20px;
+            padding: 20px;
             width: 90%;
             max-width: 1200px;
-            margin: 20px auto;
         }
 
-        /* Individual Fact Card */
+        /* Card Styles */
         .card {
-            background-color: var(--card-bg);
-            border-radius: 10px;
+            border-radius: 8px;
             padding: 20px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-            display: flex;
-            flex-direction: column;
+            box-shadow: 0 4px 8px var(--card-shadow);
+            background-color: var(--bg-color);
             transition: transform 0.3s ease, box-shadow 0.3s ease;
+            overflow: hidden;
+        }
+
+        .card[data-truth="true"] {
+            border-left: 5px solid var(--true-color);
+        }
+
+        .card[data-truth="false"] {
+            border-left: 5px solid var(--false-color);
         }
 
         .card:hover {
-            transform: scale(1.05);
-            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5);
+            transform: translateY(-5px);
+            box-shadow: 0 8px 15px var(--card-shadow);
         }
 
         /* Card Header */
         .card-header {
-            font-size: 1.2em;
             font-weight: bold;
+            font-size: 1.2em;
             margin-bottom: 10px;
         }
 
         .card-header[data-truth="true"] {
-            color: var(--accent-true);
+            color: var(--true-color);
         }
 
         .card-header[data-truth="false"] {
-            color: var(--accent-false);
+            color: var(--false-color);
         }
 
         /* Card Description */
         .card-description {
             font-size: 0.9em;
             line-height: 1.6;
+            color: var(--text-color);
         }
 
         /* Footer */
         .footer {
-            margin-top: 20px;
             text-align: center;
+            margin: 20px 0;
+            font-size: 0.9em;
             color: var(--text-color);
         }
 
         .footer a {
-            color: var(--accent-true);
+            color: var(--true-color);
             text-decoration: none;
         }
 
@@ -101,7 +108,7 @@
 </head>
 <body>
 
-<h1>Masonry Facts</h1>
+<h1>Facts in Focus</h1>
 <div class="container" id="facts-container">
     <!-- Facts will be dynamically injected here -->
 </div>
@@ -111,7 +118,6 @@
 </div>
 
 <script>
-    // Load Facts Dynamically
     async function loadFacts() {
         try {
             const response = await fetch('data.json'); // Ensure `data.json` is in the same directory
@@ -122,6 +128,7 @@
                 // Create Card Element
                 const card = document.createElement('div');
                 card.className = 'card';
+                card.setAttribute('data-truth', fact.isTrue);
 
                 // Add Header and Description
                 card.innerHTML = `
