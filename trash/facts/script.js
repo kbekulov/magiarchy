@@ -39,19 +39,20 @@ document.addEventListener("DOMContentLoaded", () => {
     // Populate Combat Losses
     const combatLosses = document.getElementById("combat-losses");
     data.combatLosses.forEach((loss, index) => {
-        // Scale Russia's bar to 80% and Ukraine's to 100%
+        // Adjust scale for Russia (80%) and Ukraine (100%)
         const scale = index === 0 ? "80%" : "100%";
         const div = document.createElement("div");
         div.classList.add("progress-item");
+
         div.innerHTML = `
             <div class="progress-bar multi-section-bar" style="width: ${scale}; display: flex; border-radius: 10px; overflow: hidden;">
                 <div class="section" style="background-color: #404040; flex: 1;">
                     ${loss.label}: ~${loss.total.toLocaleString()}
                 </div>
-                <div class="section" style="background-color: #c83d3d; flex: ${loss.killed};">
+                <div class="section" style="background-color: #c83d3d; flex: ${parseFloat(loss.killed) / 100};">
                     Killed
                 </div>
-                <div class="section" style="background-color: #51a078; flex: ${loss.wounded};">
+                <div class="section" style="background-color: #51a078; flex: ${parseFloat(loss.wounded) / 100};">
                     Wounded or Missing
                 </div>
             </div>`;
