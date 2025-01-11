@@ -3,21 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Elegant Frosty Masonry Layout</title>
+    <title>Elegant Masonry Layout</title>
     <style>
         :root {
-            --background-color: #1a1a1a; /* Subtle dark background */
-            --true-color: rgba(60, 170, 190, 0.8); /* Elegant Cyan */
-            --true-gradient: linear-gradient(135deg, rgba(60, 170, 190, 0.9), rgba(40, 120, 140, 0.9));
-            --false-color: rgba(190, 70, 80, 0.8); /* Elegant Ruby Red */
-            --false-gradient: linear-gradient(135deg, rgba(190, 70, 80, 0.9), rgba(140, 40, 50, 0.9));
-            --header-bg: rgba(255, 255, 255, 0.15); /* Subtle frosted header */
-            --line-color: rgba(255, 255, 255, 0.5); /* Elegant line */
-            --border-color: rgba(255, 255, 255, 0.2); /* Subtle border */
-            --text-color: #e6e6e6; /* Soft white text */
-            --faded-text-color: rgba(255, 255, 255, 0.7); /* Muted text color */
-            --card-radius: 10px;
-            --card-shadow: rgba(0, 0, 0, 0.2); /* Softer shadow */
+            --background-color: #232323; /* Muted dark gray */
+            --true-color: #3caea3; /* Soft teal for true */
+            --true-gradient: linear-gradient(135deg, #3caea3, #287f7a); /* Elegant teal gradient */
+            --false-color: #e76f51; /* Soft red-orange for false */
+            --false-gradient: linear-gradient(135deg, #e76f51, #ba5340); /* Elegant red gradient */
+            --header-color: rgba(255, 255, 255, 0.15); /* Subtle frosted header */
+            --line-color: rgba(255, 255, 255, 0.3); /* Light dividing lines */
+            --border-color: rgba(255, 255, 255, 0.1); /* Softer borders */
+            --text-color: #f0f0f0; /* Light gray for text */
+            --faded-text-color: rgba(240, 240, 240, 0.8); /* Softer text */
+            --card-padding: 15px;
+            --card-radius: 12px; /* More rounded corners */
+            --card-shadow: rgba(0, 0, 0, 0.2); /* Subtle shadow */
         }
 
         body {
@@ -37,7 +38,7 @@
             font-size: 2rem;
             letter-spacing: 1px;
             text-align: center;
-            text-shadow: 0 0 6px rgba(255, 255, 255, 0.3);
+            text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
         }
 
         /* Masonry Container */
@@ -56,10 +57,10 @@
             background-image: var(--true-gradient); /* Default gradient for initialization */
             color: var(--text-color);
             border-radius: var(--card-radius);
-            padding: 15px;
-            padding-top: 50px; /* Space for header */
-            border: 1px solid var(--border-color); /* Subtle border */
-            box-shadow: 0 4px 8px var(--card-shadow);
+            padding: var(--card-padding);
+            padding-top: 50px; /* Add space for the header */
+            border: 1px solid var(--border-color);
+            box-shadow: 0 6px 12px var(--card-shadow);
             transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
 
@@ -73,7 +74,7 @@
 
         .masonry-brick:hover {
             transform: translateY(-4px);
-            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
         }
 
         /* Header for True/False */
@@ -87,15 +88,17 @@
             text-align: center;
             font-size: 1rem;
             font-weight: bold;
-            color: var(--faded-text-color);
-            background-color: var(--header-bg);
             border-radius: var(--card-radius) var(--card-radius) 0 0;
+            background-color: var(--header-color);
+            color: var(--faded-text-color);
         }
 
         .brick-title {
             font-size: 1.3rem;
             font-weight: bold;
             margin-bottom: 10px;
+            color: var(--text-color);
+            text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
         }
 
         /* Section Heading */
@@ -114,7 +117,7 @@
             width: 40%;
             height: 1px;
             background-color: var(--line-color);
-            top: 50%;
+            top: 50%; /* Centered line */
         }
 
         .section-heading::before {
@@ -128,6 +131,7 @@
         .brick-description {
             font-size: 1rem;
             line-height: 1.6;
+            color: var(--text-color);
         }
 
         /* Footer */
@@ -145,25 +149,26 @@
 
         .footer a:hover {
             text-decoration: underline;
+            color: var(--true-color);
         }
 
         /* Responsive Design */
         @media (max-width: 768px) {
             .masonry-brick {
-                width: calc(50% - 20px); /* 2 columns for tablets */
+                width: calc(50% - 20px); /* 2 columns */
             }
         }
 
         @media (max-width: 480px) {
             .masonry-brick {
-                width: calc(100% - 20px); /* 1 column for mobile */
+                width: calc(100% - 20px); /* 1 column */
             }
         }
     </style>
 </head>
 <body>
 
-<h1>Elegant Frosty Masonry Layout</h1>
+<h1>Elegant Masonry Layout</h1>
 <div class="masonry-container" id="masonry-container"></div>
 
 <div class="footer">
@@ -184,9 +189,7 @@
                 brick.setAttribute('data-truth', fact.isTrue);
 
                 brick.innerHTML = `
-                    <div class="brick-header">
-                        ${fact.isTrue ? 'True' : 'False'}
-                    </div>
+                    <div class="brick-header">${fact.isTrue ? 'True' : 'False'}</div>
                     <div class="brick-title">${fact.text}</div>
                     <div class="section-heading">${fact.isTrue ? "Why it's true:" : "Why it's false:"}</div>
                     <div class="brick-description">${fact.description}</div>
