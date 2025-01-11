@@ -8,12 +8,21 @@
         :root {
             --background-color: #101010;
             --true-color: rgba(100, 170, 255, 0.9);
+            --true-gradient: linear-gradient(135deg, rgba(100, 170, 255, 0.9), rgba(60, 130, 220, 0.9));
             --false-color: rgba(210, 70, 70, 0.9);
+            --false-gradient: linear-gradient(135deg, rgba(210, 70, 70, 0.9), rgba(170, 50, 50, 0.9));
+            --header-gradient: linear-gradient(135deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.05));
+            --line-color: rgba(200, 200, 200, 0.5);
+            --border-color: rgba(255, 255, 255, 0.1);
             --text-color: #e8f0fa;
             --faded-text-color: rgba(232, 240, 250, 0.8);
-            --line-color: rgba(200, 200, 200, 0.5);
             --highlighted-text-color: rgba(232, 240, 250, 1);
-            --bar-background: rgba(255, 255, 255, 0.1);
+            --card-padding: 15px;
+            --card-radius: 12px;
+            --card-shadow: rgba(0, 0, 0, 0.4);
+            --bar-bg: rgba(255, 255, 255, 0.1);
+            --bar-fg: rgba(100, 170, 255, 0.9);
+            --bar-faded: rgba(200, 200, 200, 0.3);
         }
 
         body {
@@ -24,223 +33,248 @@
             display: flex;
             flex-direction: column;
             align-items: center;
+            min-height: 100vh;
+            background-repeat: no-repeat;
+            background-size: cover;
         }
 
         h1 {
-            margin: 20px 0;
+            margin-top: 20px;
             color: var(--text-color);
             font-size: 2.2rem;
+            letter-spacing: 1px;
             text-align: center;
+            text-shadow: 0 2px 6px rgba(0, 0, 0, 0.6), 0 4px 8px rgba(60, 120, 200, 0.5);
         }
 
-        .stats-container {
+        .data-section {
             width: 90%;
-            max-width: 1200px;
+            max-width: 1400px;
             margin: 20px auto;
+            padding: 20px;
+            border-radius: var(--card-radius);
+            background: var(--header-gradient);
+            box-shadow: 0 4px 8px var(--card-shadow);
+            color: var(--text-color);
         }
 
-        .army-stats, .territorial-control, .combat-losses {
-            margin-bottom: 30px;
-        }
-
-        .army-stats h2, .territorial-control h2, .combat-losses h2 {
+        .data-section h2 {
             font-size: 1.5rem;
-            color: var(--highlighted-text-color);
-            border-bottom: 2px solid var(--line-color);
-            padding-bottom: 5px;
+            margin-bottom: 10px;
+            text-align: center;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+        }
+
+        .data-section .stat-item {
             margin-bottom: 15px;
         }
 
-        /* Army Stats */
-        .army-bar {
+        .data-section .stat-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .stat-bar {
             display: flex;
             align-items: center;
             margin-bottom: 10px;
         }
 
-        .army-label {
-            width: 150px;
-            font-size: 0.9rem;
+        .stat-bar span {
+            flex: 0 0 200px;
+            font-size: 1rem;
         }
 
-        .army-bar-visual {
-            flex-grow: 1;
+        .stat-bar .bar {
+            flex: 1;
             height: 20px;
-            background: var(--bar-background);
+            border-radius: var(--card-radius);
+            background: var(--bar-bg);
             position: relative;
-            border-radius: 5px;
             overflow: hidden;
         }
 
-        .army-bar-inner {
+        .stat-bar .bar .bar-fill {
             height: 100%;
-            background: var(--true-color);
+            border-radius: var(--card-radius);
+            background: var(--bar-fg);
             transition: width 0.3s ease;
         }
 
-        .army-bar-inner.faded {
-            background: var(--false-color);
-            opacity: 0.6;
+        .stat-bar.faded .bar .bar-fill {
+            background: var(--bar-faded);
         }
 
-        /* Territorial Control */
-        .territorial-bar {
+        .loss-stat {
             display: flex;
-            margin-bottom: 10px;
+            justify-content: space-between;
+            margin: 10px 0;
         }
 
-        .territorial-label {
-            flex: 1;
+        .loss-stat span {
+            font-size: 1rem;
+        }
+
+        .territorial-control {
+            margin-top: 20px;
+        }
+
+        /* Masonry Container */
+        .masonry-container {
+            position: relative;
+            max-width: 1400px;
+            width: 90%;
+            margin: 20px auto;
+            padding: 10px;
+        }
+
+        /* Footer */
+        .footer {
+            margin-top: 20px;
             text-align: center;
+            color: var(--faded-text-color);
             font-size: 0.9rem;
         }
 
-        .territorial-bar-visual {
-            flex-grow: 1;
-            height: 20px;
-            background: var(--bar-background);
-            display: flex;
-            border-radius: 5px;
-            overflow: hidden;
+        .footer a {
+            color: var(--true-color);
+            text-decoration: none;
         }
 
-        .territorial-bar-inner {
-            height: 100%;
-            background: var(--true-color);
+        .footer a:hover {
+            text-decoration: underline;
+            color: var(--true-color);
         }
 
-        .territorial-bar-inner.secondary {
-            background: var(--false-color);
-        }
-
-        /* Combat Losses */
-        .losses-container {
-            display: flex;
-            justify-content: space-between;
-            gap: 20px;
-        }
-
-        .loss-circle {
-            flex: 1;
-            text-align: center;
-        }
-
-        .loss-circle svg {
-            width: 100px;
-            height: 100px;
-        }
-
-        .loss-circle text {
-            fill: var(--text-color);
-            font-size: 14px;
-            font-family: Arial, sans-serif;
-        }
     </style>
 </head>
 <body>
-    <h1>Facts about the Ukraine war</h1>
 
-    <div class="stats-container">
+<h1>Facts about the Ukraine war</h1>
 
-        <!-- Army Stats -->
-        <div class="army-stats">
-            <h2>Army Stats</h2>
-            <div id="army-stats"></div>
-        </div>
+<div class="data-section" id="army-stats">
+    <h2>Army Strength Comparison</h2>
+</div>
 
-        <!-- Territorial Control -->
-        <div class="territorial-control">
-            <h2>Territorial Control</h2>
-            <div id="territorial-control"></div>
-        </div>
+<div class="data-section" id="territorial-control">
+    <h2>Territorial Control</h2>
+</div>
 
-        <!-- Combat Losses -->
-        <div class="combat-losses">
-            <h2>Combat Losses</h2>
-            <div class="losses-container" id="combat-losses"></div>
-        </div>
-    </div>
+<div class="data-section" id="combat-losses">
+    <h2>Combat Losses</h2>
+</div>
 
-    <div class="masonry-container" id="masonry-container"></div>
+<div class="masonry-container" id="masonry-container"></div>
+
+<div class="footer">
+    <p>Powered by <a href="#">Your App</a></p>
+</div>
 
 <script>
-    const armyStats = [
-        { "label": "Russian Army", "personnel": 1500000, "barLength": "100%", "faded": false },
-        { "label": "Ukraine Army", "personnel": 1260000, "barLength": "84%", "faded": false },
-        { "label": "French Army", "personnel": 270000, "barLength": "18%", "faded": true },
-        { "label": "British Army", "personnel": 136525, "barLength": "9.1%", "faded": true },
-        { "label": "German Army", "personnel": 180215, "barLength": "12.01%", "faded": true },
-        { "label": "Polish Army", "personnel": 256100, "barLength": "17.07%", "faded": true },
-        { "label": "US Army", "personnel": 954875, "barLength": "63.66%", "faded": true }
-    ];
+    const masonryContainer = document.getElementById('masonry-container');
 
-    const territorialControl = [
-        { "label": "Russian occupation of Ukraine", "area": 109000, "barLength": "100%", "faded": false },
-        { "label": "Ukrainian occupation of Russia", "area": 500, "barLength": "0.5%", "faded": false }
-    ];
+    async function loadFacts() {
+        try {
+            const response = await fetch('data.json');
+            const data = await response.json();
 
-    const combatLosses = [
-        { "label": "Russia", "total": 800000, "killed": "30%", "wounded": "70%" },
-        { "label": "Ukraine", "total": 1000000, "killed": "30%", "wounded": "70%" }
-    ];
+            // Masonry Facts
+            data.facts.forEach(fact => {
+                const brick = document.createElement('div');
+                brick.className = 'masonry-brick';
+                brick.setAttribute('data-truth', fact.isTrue);
 
-    function renderArmyStats() {
-        const container = document.getElementById('army-stats');
-        armyStats.forEach(stat => {
-            const bar = document.createElement('div');
-            bar.className = 'army-bar';
+                brick.innerHTML = `
+                    <div class="brick-header">${fact.isTrue ? 'True' : 'False'}</div>
+                    <div class="brick-title">${fact.text}</div>
+                    <div class="section-heading">${fact.isTrue ? "Why it's true:" : "Why it's false:"}</div>
+                    <div class="brick-description">${fact.description}</div>
+                `;
 
-            bar.innerHTML = `
-                <span class="army-label">${stat.label}</span>
-                <div class="army-bar-visual">
-                    <div class="army-bar-inner ${stat.faded ? 'faded' : ''}" style="width: ${stat.barLength}"></div>
-                </div>
-            `;
+                masonryContainer.appendChild(brick);
+            });
 
-            container.appendChild(bar);
-        });
+            createMasonryLayout(masonryContainer);
+
+            // Army Stats
+            const armyStatsContainer = document.getElementById('army-stats');
+            data.armyStats.forEach(stat => {
+                const item = document.createElement('div');
+                item.className = 'stat-item';
+
+                item.innerHTML = `
+                    <div class="stat-bar ${stat.faded ? 'faded' : ''}">
+                        <span>${stat.label}</span>
+                        <div class="bar">
+                            <div class="bar-fill" style="width: ${stat.barLength};"></div>
+                        </div>
+                    </div>
+                `;
+
+                armyStatsContainer.appendChild(item);
+            });
+
+            // Territorial Control
+            const territorialContainer = document.getElementById('territorial-control');
+            data.territorialControl.forEach(control => {
+                const item = document.createElement('div');
+                item.className = 'stat-item';
+
+                item.innerHTML = `
+                    <div class="stat-bar">
+                        <span>${control.label}</span>
+                        <div class="bar">
+                            <div class="bar-fill" style="width: ${control.barLength};"></div>
+                        </div>
+                    </div>
+                `;
+
+                territorialContainer.appendChild(item);
+            });
+
+            // Combat Losses
+            const combatLossesContainer = document.getElementById('combat-losses');
+            data.combatLosses.forEach(loss => {
+                const item = document.createElement('div');
+                item.className = 'stat-item';
+
+                item.innerHTML = `
+                    <div class="loss-stat">
+                        <span>${loss.label}</span>
+                        <span>Total: ${loss.total.toLocaleString()} (Killed: ${loss.killed}, Wounded: ${loss.wounded})</span>
+                    </div>
+                `;
+
+                combatLossesContainer.appendChild(item);
+            });
+
+        } catch (error) {
+            console.error('Error loading data:', error);
+        }
     }
 
-    function renderTerritorialControl() {
-        const container = document.getElementById('territorial-control');
-        territorialControl.forEach((control, index) => {
-            const bar = document.createElement('div');
-            bar.className = 'territorial-bar';
+    function createMasonryLayout(container) {
+        const bricks = Array.from(container.children);
+        const columnCount = Math.floor(container.clientWidth / 300);
+        const columnHeights = Array(columnCount).fill(0);
+        const columnWidth = container.clientWidth / columnCount;
 
-            bar.innerHTML = `
-                <div class="territorial-label">${control.label}</div>
-                <div class="territorial-bar-visual">
-                    <div class="territorial-bar-inner ${index === 1 ? 'secondary' : ''}" style="width: ${control.barLength}"></div>
-                </div>
-            `;
+        bricks.forEach(brick => {
+            const minColumnHeight = Math.min(...columnHeights);
+            const columnIndex = columnHeights.indexOf(minColumnHeight);
 
-            container.appendChild(bar);
+            brick.style.width = `${columnWidth - 20}px`;
+            brick.style.top = `${minColumnHeight}px`;
+            brick.style.left = `${columnIndex * columnWidth}px`;
+
+            columnHeights[columnIndex] += brick.offsetHeight + 20;
         });
+
+        container.style.height = `${Math.max(...columnHeights)}px`;
     }
 
-    function renderCombatLosses() {
-        const container = document.getElementById('combat-losses');
-        combatLosses.forEach(loss => {
-            const circle = document.createElement('div');
-            circle.className = 'loss-circle';
-
-            circle.innerHTML = `
-                <svg viewBox="0 0 36 36">
-                    <circle cx="18" cy="18" r="15.915" fill="none" stroke="var(--false-color)" stroke-width="3.5" stroke-dasharray="${loss.killed} ${100 - parseFloat(loss.killed)}" transform="rotate(-90 18 18)" />
-                    <circle cx="18" cy="18" r="15.915" fill="none" stroke="var(--true-color)" stroke-width="3.5" stroke-dasharray="${loss.wounded} ${100 - parseFloat(loss.wounded)}" transform="rotate(-90 18 18)" stroke-dashoffset="${loss.killed}" />
-                    <text x="18" y="18" text-anchor="middle" alignment-baseline="middle">${loss.label}</text>
-                </svg>
-            `;
-
-            container.appendChild(circle);
-        });
-    }
-
-    window.addEventListener('load', () => {
-        renderArmyStats();
-        renderTerritorialControl();
-        renderCombatLosses();
-    });
+    window.addEventListener('load', loadFacts);
+    window.addEventListener('resize', () => createMasonryLayout(masonryContainer));
 </script>
+
 </body>
 </html>
