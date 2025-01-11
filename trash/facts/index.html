@@ -41,13 +41,13 @@
         
         .region-list ul li {
             position: relative;
-            padding: 12px 16px; /* Ensure consistent padding */
-            margin: 8px 0; /* Spacing between fact elements */
+            padding: 12px 16px;
+            margin: 8px 0;
             background: rgba(50, 50, 60, 0.8);
             border-radius: 5px;
-            display: flex; /* Flexbox for proper alignment */
+            display: flex;
+            justify-content: flex-start; /* Align text and icon properly */
             align-items: center; /* Vertical alignment */
-            justify-content: space-between; /* Space between text and icon */
             transition: background-color 0.3s, box-shadow 0.3s;
             cursor: pointer;
         }
@@ -60,14 +60,15 @@
         /* Fact Text */
         .region-list ul li .fact-text {
             flex: 1; /* Take up available space */
-            margin-right: 16px; /* Add space between text and icon */
+            margin-right: 32px; /* Ensure space between text and icon */
             font-size: 1rem;
             font-weight: bold;
         }
         
         /* Fact Icons */
         .region-list ul li span.icon {
-            flex-shrink: 0; /* Prevent shrinking */
+            position: absolute;
+            right: 16px; /* Align to the right of the container */
             font-size: 1.5rem;
         }
         
@@ -81,24 +82,25 @@
         
         /* Hidden Descriptions */
         .region-list ul li .fact-description {
-            display: block; /* Default display for transition */
             max-height: 0; /* Fully collapsed */
-            overflow: hidden; /* Prevent content spillover */
-            opacity: 0; /* Invisible by default */
+            overflow: hidden; /* Prevent hidden content from affecting layout */
+            opacity: 0; /* Invisible when not expanded */
             margin: 0; /* Remove any default margin */
             padding: 0; /* Remove padding when hidden */
             background: rgba(0, 0, 0, 0.8);
             border-radius: 5px;
             color: white;
             font-size: 0.9rem;
+            line-height: 1.5;
             position: relative;
             transition: all 0.3s ease; /* Smooth transition for height and opacity */
         }
         
         .region-list ul li:hover .fact-description {
-            max-height: 100px; /* Arbitrary value to fit content */
+            max-height: 150px; /* Fit content when expanded */
             opacity: 1; /* Fully visible */
             padding: 10px; /* Add padding when visible */
+            margin-top: 8px; /* Add margin between fact and description */
         }
         
         /* Right Panel (Details Section) */
