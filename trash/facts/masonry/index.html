@@ -6,18 +6,19 @@
     <title>Facts about the Ukraine war</title>
     <style>
         :root {
-            --background-color: #101010; /* Very dark grey background */
-            --true-color: rgba(100, 170, 255, 0.9); /* Soft frosty cyan */
+            --background-color: #101010;
+            --true-color: rgba(100, 170, 255, 0.9);
             --true-gradient: linear-gradient(135deg, rgba(100, 170, 255, 0.9), rgba(60, 130, 220, 0.9));
-            --false-color: rgba(210, 70, 70, 0.9); /* Warm frosty red */
+            --false-color: rgba(210, 70, 70, 0.9);
             --false-gradient: linear-gradient(135deg, rgba(210, 70, 70, 0.9), rgba(170, 50, 50, 0.9));
+            --header-gradient: linear-gradient(135deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.05));
             --line-color: rgba(200, 200, 200, 0.5);
             --text-color: #e8f0fa;
-            --bar-bg-color: #1f1f1f;
-            --bar-color: #5a9bd4;
-            --bar-faded-color: rgba(90, 155, 212, 0.5);
-            --territorial-color: #d46868;
+            --faded-text-color: rgba(232, 240, 250, 0.8);
+            --highlighted-text-color: rgba(232, 240, 250, 1);
+            --card-padding: 15px;
             --card-radius: 12px;
+            --card-shadow: rgba(0, 0, 0, 0.4);
         }
 
         body {
@@ -33,110 +34,140 @@
 
         h1 {
             margin-top: 20px;
+            color: var(--text-color);
             font-size: 2.2rem;
-            text-shadow: 0 2px 6px rgba(0, 0, 0, 0.6);
+            letter-spacing: 1px;
+            text-align: center;
         }
 
-        .section {
+        .stats-section {
             width: 90%;
             max-width: 1200px;
             margin: 20px auto;
             padding: 20px;
-            background-color: #1a1a1a;
-            border-radius: var(--card-radius);
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+            background-color: #181818;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px var(--card-shadow);
         }
 
-        .section-title {
-            font-size: 1.5rem;
+        .stats-section h2 {
+            font-size: 1.8rem;
             margin-bottom: 15px;
-            border-bottom: 2px solid var(--line-color);
-            padding-bottom: 5px;
+            text-align: center;
+            color: var(--highlighted-text-color);
         }
 
-        /* Army Stats */
-        .army-stats {
-            margin-top: 10px;
+        .stats-bar {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
         }
 
-        .army-bar {
+        .bar-item {
             display: flex;
             align-items: center;
-            margin: 10px 0;
+            margin-bottom: 10px;
         }
 
-        .army-label {
-            flex: 1;
+        .bar-label {
+            width: 25%;
+            font-size: 1rem;
+            text-align: right;
+            margin-right: 15px;
+            color: var(--faded-text-color);
         }
 
-        .army-progress {
-            flex: 3;
+        .bar-container {
+            width: 75%;
             height: 20px;
-            background-color: var(--bar-bg-color);
-            border-radius: var(--card-radius);
+            background-color: #303030;
+            border-radius: 10px;
             overflow: hidden;
             position: relative;
         }
 
-        .army-progress span {
-            display: block;
+        .bar {
             height: 100%;
-            background-color: var(--bar-color);
+            background-color: var(--true-color);
+            transition: width 0.3s ease;
         }
 
-        .army-progress[data-faded="true"] span {
-            background-color: var(--bar-faded-color);
+        .bar.faded {
+            background-color: rgba(100, 170, 255, 0.5);
         }
 
-        /* Territorial Control */
-        .territorial-control {
-            margin-top: 10px;
+        .territorial-section {
+            margin-top: 30px;
         }
 
-        .territorial-bar {
-            margin: 10px 0;
-        }
-
-        .territorial-progress {
-            height: 20px;
-            background-color: var(--bar-bg-color);
-            border-radius: var(--card-radius);
-            overflow: hidden;
-            position: relative;
-        }
-
-        .territorial-progress span {
-            display: block;
-            height: 100%;
-            background-color: var(--territorial-color);
-        }
-
-        /* Combat Losses */
         .combat-losses {
-            margin-top: 10px;
+            margin-top: 30px;
         }
 
-        .combat-losses-item {
-            display: flex;
-            justify-content: space-between;
-            margin: 10px 0;
+        .combat-losses table {
+            width: 100%;
+            border-collapse: collapse;
         }
 
-        .combat-chart {
-            display: flex;
-            align-items: center;
+        .combat-losses th, .combat-losses td {
+            border: 1px solid var(--line-color);
+            padding: 10px;
+            text-align: center;
+            font-size: 1rem;
         }
 
-        .combat-chart span {
-            margin-left: 10px;
+        .combat-losses th {
+            background-color: #202020;
         }
 
+        .combat-losses td {
+            background-color: #181818;
+        }
+
+        /* Masonry Container */
         .masonry-container {
             position: relative;
             max-width: 1400px;
             width: 90%;
             margin: 20px auto;
-            padding: 10px;
+        }
+
+        .masonry-brick {
+            position: absolute;
+            width: calc(33.333% - 20px);
+            box-sizing: border-box;
+            background-image: var(--true-gradient);
+            color: var(--text-color);
+            border-radius: var(--card-radius);
+            padding: var(--card-padding);
+            padding-top: 50px;
+            border: 1px solid var(--border-color);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 4px 8px var(--card-shadow);
+        }
+
+        .masonry-brick[data-truth="true"] {
+            background-image: var(--true-gradient);
+        }
+
+        .masonry-brick[data-truth="false"] {
+            background-image: var(--false-gradient);
+        }
+
+        .footer {
+            margin-top: 20px;
+            text-align: center;
+            color: var(--faded-text-color);
+            font-size: 0.9rem;
+        }
+
+        .footer a {
+            color: var(--true-color);
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
@@ -144,79 +175,89 @@
 
 <h1>Facts about the Ukraine war</h1>
 
-<!-- Army Stats Section -->
-<div class="section">
-    <div class="section-title">Army Stats</div>
-    <div class="army-stats" id="army-stats"></div>
+<div class="stats-section">
+    <h2>Army Stats</h2>
+    <div class="stats-bar" id="army-stats"></div>
+
+    <h2 class="territorial-section">Territorial Control</h2>
+    <div class="stats-bar" id="territorial-control"></div>
+
+    <h2 class="combat-losses">Combat Losses</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Side</th>
+                <th>Total Losses</th>
+                <th>Killed</th>
+                <th>Wounded</th>
+            </tr>
+        </thead>
+        <tbody id="combat-losses"></tbody>
+    </table>
 </div>
 
-<!-- Territorial Control Section -->
-<div class="section">
-    <div class="section-title">Territorial Control</div>
-    <div class="territorial-control" id="territorial-control"></div>
-</div>
-
-<!-- Combat Losses Section -->
-<div class="section">
-    <div class="section-title">Combat Losses</div>
-    <div class="combat-losses" id="combat-losses"></div>
-</div>
-
-<!-- Masonry Section -->
 <div class="masonry-container" id="masonry-container"></div>
 
+<div class="footer">
+    <p>Powered by <a href="#">Your App</a></p>
+</div>
+
 <script>
+    const masonryContainer = document.getElementById('masonry-container');
     const armyStatsContainer = document.getElementById('army-stats');
     const territorialControlContainer = document.getElementById('territorial-control');
     const combatLossesContainer = document.getElementById('combat-losses');
-    const masonryContainer = document.getElementById('masonry-container');
 
     async function loadData() {
         try {
             const response = await fetch('data.json');
             const data = await response.json();
 
-            // Army Stats
+            // Populate Army Stats
             data.armyStats.forEach(stat => {
-                const bar = document.createElement('div');
-                bar.className = 'army-bar';
-                bar.innerHTML = `
-                    <div class="army-label">${stat.label}</div>
-                    <div class="army-progress" data-faded="${stat.faded}">
-                        <span style="width: ${stat.barLength}"></span>
+                const barItem = document.createElement('div');
+                barItem.className = 'bar-item';
+
+                barItem.innerHTML = `
+                    <div class="bar-label">${stat.label}</div>
+                    <div class="bar-container">
+                        <div class="bar ${stat.faded ? 'faded' : ''}" style="width: ${stat.barLength}"></div>
                     </div>
                 `;
-                armyStatsContainer.appendChild(bar);
+
+                armyStatsContainer.appendChild(barItem);
             });
 
-            // Territorial Control
+            // Populate Territorial Control
             data.territorialControl.forEach(control => {
-                const bar = document.createElement('div');
-                bar.className = 'territorial-bar';
-                bar.innerHTML = `
-                    <div>${control.label}</div>
-                    <div class="territorial-progress">
-                        <span style="width: ${control.barLength}"></span>
+                const barItem = document.createElement('div');
+                barItem.className = 'bar-item';
+
+                barItem.innerHTML = `
+                    <div class="bar-label">${control.label}</div>
+                    <div class="bar-container">
+                        <div class="bar" style="width: ${control.barLength}"></div>
                     </div>
                 `;
-                territorialControlContainer.appendChild(bar);
+
+                territorialControlContainer.appendChild(barItem);
             });
 
-            // Combat Losses
+            // Populate Combat Losses
             data.combatLosses.forEach(loss => {
-                const item = document.createElement('div');
-                item.className = 'combat-losses-item';
-                item.innerHTML = `
-                    <div>${loss.label}</div>
-                    <div class="combat-chart">
-                        <span>Killed: ${loss.killed}</span>
-                        <span>Wounded: ${loss.wounded}</span>
-                    </div>
+                const row = document.createElement('tr');
+
+                row.innerHTML = `
+                    <td>${loss.label}</td>
+                    <td>${loss.total}</td>
+                    <td>${loss.killed}</td>
+                    <td>${loss.wounded}</td>
                 `;
-                combatLossesContainer.appendChild(item);
+
+                combatLossesContainer.appendChild(row);
             });
 
-            // Masonry Facts
+            // Populate Masonry Facts
             data.facts.forEach(fact => {
                 const brick = document.createElement('div');
                 brick.className = 'masonry-brick';
