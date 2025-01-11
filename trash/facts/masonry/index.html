@@ -3,25 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sleek UI Layout</title>
+    <title>Neon-Glowing UI Layout</title>
     <style>
         :root {
-            --background-color: #121212; /* Deep dark background */
-            --card-bg: #1c1c1c; /* Slightly lighter dark for cards */
-            --highlight-color: #e5c07b; /* Subtle gold highlight */
-            --text-color: #ffffff; /* White text */
-            --muted-text-color: #a0a0a0; /* Muted gray text */
-            --border-color: #2e2e2e; /* Subtle card border */
-            --button-color: #444; /* Interactive button background */
-            --button-hover-color: #666; /* Lighter hover effect */
-            --button-text-color: #ffffff; /* Button text color */
-            --card-radius: 8px; /* Rounded corners */
+            --background-gradient: radial-gradient(circle at center, #0d0221, #1c0a36, #050012); /* Deep neon-inspired gradient */
+            --true-color: #00f9ff; /* Neon Blue */
+            --true-gradient: linear-gradient(135deg, #00f9ff, #007a7a); /* Vibrant Blue Gradient */
+            --false-color: #ff1e56; /* Neon Pink/Red */
+            --false-gradient: linear-gradient(135deg, #ff1e56, #7a0033); /* Vibrant Red Gradient */
+            --header-bg: rgba(255, 255, 255, 0.1); /* Frosted Header Background */
+            --text-color: #ffffff; /* White Text */
+            --muted-text-color: rgba(255, 255, 255, 0.7); /* Muted Text Color */
+            --glow-color-blue: rgba(0, 249, 255, 0.6); /* Blue Glow */
+            --glow-color-red: rgba(255, 30, 86, 0.6); /* Red Glow */
+            --border-glow: rgba(255, 255, 255, 0.3); /* Glow for Cards */
+            --card-radius: 12px; /* Rounded corners for cards */
         }
 
         body {
             margin: 0;
             font-family: 'Arial', sans-serif;
-            background-color: var(--background-color);
+            background: var(--background-gradient);
             color: var(--text-color);
             display: flex;
             flex-direction: column;
@@ -31,10 +33,11 @@
 
         h1 {
             margin-top: 20px;
-            font-size: 2rem;
+            font-size: 2.5rem;
             color: var(--text-color);
             text-align: center;
-            letter-spacing: 1px;
+            letter-spacing: 2px;
+            text-shadow: 0 0 20px var(--true-color), 0 0 40px var(--false-color);
         }
 
         /* Masonry Container */
@@ -50,71 +53,88 @@
             position: absolute;
             width: calc(33.333% - 20px); /* 3 columns */
             box-sizing: border-box;
-            background-color: var(--card-bg);
+            background-color: var(--header-bg);
             border-radius: var(--card-radius);
             padding: 15px;
-            margin: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-            border: 1px solid var(--border-color);
+            padding-top: 50px; /* Space for header */
+            backdrop-filter: blur(8px);
+            box-shadow: 0 0 15px var(--border-glow), 0 0 20px rgba(0, 0, 0, 0.5);
+            border: 1px solid var(--border-glow);
             transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
 
+        .masonry-brick[data-truth="true"] {
+            background-image: var(--true-gradient);
+            box-shadow: 0 0 20px var(--glow-color-blue);
+        }
+
+        .masonry-brick[data-truth="false"] {
+            background-image: var(--false-gradient);
+            box-shadow: 0 0 20px var(--glow-color-red);
+        }
+
         .masonry-brick:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5);
+            transform: translateY(-8px);
+            box-shadow: 0 0 25px var(--glow-color-blue), 0 0 30px rgba(0, 0, 0, 0.7);
         }
 
         /* Header Section */
         .brick-header {
-            background-color: var(--button-color);
-            color: var(--text-color);
-            font-weight: bold;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 30px;
+            line-height: 30px;
             text-align: center;
-            padding: 5px 0;
+            font-size: 1rem;
+            font-weight: bold;
+            color: var(--text-color);
+            text-shadow: 0 0 10px var(--text-color);
+            background: var(--header-bg);
             border-radius: var(--card-radius) var(--card-radius) 0 0;
         }
 
-        .brick-header:hover {
-            background-color: var(--button-hover-color);
-        }
-
         .brick-title {
-            font-size: 1.2rem;
+            font-size: 1.5rem;
             font-weight: bold;
             margin: 15px 0;
-            color: var(--highlight-color);
+            color: var(--text-color);
+            text-shadow: 0 0 8px var(--text-color);
         }
 
         /* Section Heading */
         .section-heading {
-            font-size: 0.9rem;
+            font-size: 1rem;
             font-weight: bold;
             margin-bottom: 10px;
             text-align: center;
-            color: var(--muted-text-color);
+            color: var(--text-color);
+            text-shadow: 0 0 10px var(--glow-color-blue), 0 0 15px var(--glow-color-red);
         }
 
         .brick-description {
-            font-size: 0.95rem;
-            line-height: 1.5;
+            font-size: 1rem;
+            line-height: 1.6;
             color: var(--text-color);
         }
 
         /* Footer */
         .footer {
             margin-top: 20px;
-            color: var(--muted-text-color);
-            font-size: 0.9rem;
             text-align: center;
+            color: var(--muted-text-color);
+            font-size: 1rem;
         }
 
         .footer a {
-            color: var(--highlight-color);
+            color: var(--true-color);
             text-decoration: none;
         }
 
         .footer a:hover {
             text-decoration: underline;
+            text-shadow: 0 0 10px var(--true-color);
         }
 
         /* Responsive Design */
@@ -133,7 +153,7 @@
 </head>
 <body>
 
-<h1>Sleek UI Layout</h1>
+<h1>Neon-Glowing Layout</h1>
 <div class="masonry-container" id="masonry-container"></div>
 
 <div class="footer">
@@ -173,6 +193,7 @@
             data.facts.forEach(fact => {
                 const brick = document.createElement('div');
                 brick.className = 'masonry-brick';
+                brick.setAttribute('data-truth', fact.isTrue);
 
                 brick.innerHTML = `
                     <div class="brick-header">${fact.isTrue ? 'True' : 'False'}</div>
