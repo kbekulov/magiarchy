@@ -3,27 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Space-Inspired Frosty Layout</title>
+    <title>Sleek UI Layout</title>
     <style>
         :root {
-            --background-gradient: linear-gradient(180deg, #0d0f28, #1a1d36 60%, #2d3253); /* Space-like gradient */
-            --true-color: rgba(53, 140, 180, 0.85); /* Metallic Frosty Blue */
-            --true-gradient: linear-gradient(135deg, rgba(53, 140, 180, 0.85), rgba(42, 117, 156, 0.85));
-            --false-color: rgba(122, 61, 135, 0.85); /* Frosty Purple */
-            --false-gradient: linear-gradient(135deg, rgba(122, 61, 135, 0.85), rgba(142, 76, 152, 0.85));
-            --header-bg: rgba(255, 255, 255, 0.15); /* Frosted Header Background */
-            --line-color: rgba(255, 255, 255, 0.4); /* Subtle Frosted Line */
-            --border-glow: rgba(255, 255, 255, 0.3); /* Glow Border */
-            --text-color: #d0e7ff; /* Frosty Text */
-            --highlight-color: #cda5ff; /* Subtle Purple Glow */
-            --faded-text-color: rgba(208, 231, 255, 0.8); /* Faded Frosted Text */
-            --card-radius: 10px;
+            --background-color: #121212; /* Deep dark background */
+            --card-bg: #1c1c1c; /* Slightly lighter dark for cards */
+            --highlight-color: #e5c07b; /* Subtle gold highlight */
+            --text-color: #ffffff; /* White text */
+            --muted-text-color: #a0a0a0; /* Muted gray text */
+            --border-color: #2e2e2e; /* Subtle card border */
+            --button-color: #444; /* Interactive button background */
+            --button-hover-color: #666; /* Lighter hover effect */
+            --button-text-color: #ffffff; /* Button text color */
+            --card-radius: 8px; /* Rounded corners */
         }
 
         body {
             margin: 0;
             font-family: 'Arial', sans-serif;
-            background: var(--background-gradient);
+            background-color: var(--background-color);
             color: var(--text-color);
             display: flex;
             flex-direction: column;
@@ -33,9 +31,10 @@
 
         h1 {
             margin-top: 20px;
-            color: var(--text-color);
             font-size: 2rem;
-            text-shadow: 0 0 15px var(--highlight-color), 0 0 20px var(--highlight-color);
+            color: var(--text-color);
+            text-align: center;
+            letter-spacing: 1px;
         }
 
         /* Masonry Container */
@@ -49,98 +48,68 @@
         /* Masonry Brick */
         .masonry-brick {
             position: absolute;
-            width: calc(33.333% - 20px); /* 3 columns with consistent gaps */
+            width: calc(33.333% - 20px); /* 3 columns */
             box-sizing: border-box;
-            background-image: var(--true-gradient); /* Default gradient for initialization */
+            background-color: var(--card-bg);
             border-radius: var(--card-radius);
             padding: 15px;
-            padding-top: 50px; /* Space for header */
-            backdrop-filter: blur(12px);
-            box-shadow: 0 4px 12px var(--border-glow);
-            border: 1px solid var(--border-glow);
-            transition: transform 0.3s, box-shadow 0.3s;
-        }
-
-        .masonry-brick[data-truth="true"] {
-            background-image: var(--true-gradient);
-        }
-
-        .masonry-brick[data-truth="false"] {
-            background-image: var(--false-gradient);
+            margin: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            border: 1px solid var(--border-color);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
 
         .masonry-brick:hover {
             transform: translateY(-5px);
-            box-shadow: 0 6px 20px var(--highlight-color);
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5);
         }
 
-        /* Header for True/False */
+        /* Header Section */
         .brick-header {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 30px;
-            line-height: 30px;
-            text-align: center;
-            font-size: 0.9rem;
+            background-color: var(--button-color);
+            color: var(--text-color);
             font-weight: bold;
-            background-color: var(--header-bg);
+            text-align: center;
+            padding: 5px 0;
             border-radius: var(--card-radius) var(--card-radius) 0 0;
-            color: var(--faded-text-color);
-            text-shadow: 0 0 5px var(--highlight-color);
+        }
+
+        .brick-header:hover {
+            background-color: var(--button-hover-color);
         }
 
         .brick-title {
             font-size: 1.2rem;
             font-weight: bold;
-            margin-bottom: 10px;
+            margin: 15px 0;
+            color: var(--highlight-color);
         }
 
         /* Section Heading */
         .section-heading {
-            margin: 20px 0 10px;
-            font-size: 1rem;
+            font-size: 0.9rem;
             font-weight: bold;
+            margin-bottom: 10px;
             text-align: center;
-            position: relative;
-            color: var(--faded-text-color);
-            text-shadow: 0 4px 6px rgba(255, 255, 255, 0.2); /* Frosty text shadow */
-        }
-
-        .section-heading::before,
-        .section-heading::after {
-            content: '';
-            position: absolute;
-            width: 40%;
-            height: 1px;
-            background-color: var(--line-color);
-            top: 50%; /* Center the line */
-        }
-
-        .section-heading::before {
-            left: 0;
-        }
-
-        .section-heading::after {
-            right: 0;
+            color: var(--muted-text-color);
         }
 
         .brick-description {
             font-size: 0.95rem;
             line-height: 1.5;
+            color: var(--text-color);
         }
 
         /* Footer */
         .footer {
             margin-top: 20px;
-            text-align: center;
-            color: var(--text-color);
+            color: var(--muted-text-color);
             font-size: 0.9rem;
+            text-align: center;
         }
 
         .footer a {
-            color: var(--true-color);
+            color: var(--highlight-color);
             text-decoration: none;
         }
 
@@ -151,20 +120,20 @@
         /* Responsive Design */
         @media (max-width: 768px) {
             .masonry-brick {
-                width: calc(50% - 20px); /* 2 columns for tablets */
+                width: calc(50% - 20px); /* 2 columns */
             }
         }
 
         @media (max-width: 480px) {
             .masonry-brick {
-                width: calc(100% - 20px); /* 1 column for mobile */
+                width: calc(100% - 20px); /* 1 column */
             }
         }
     </style>
 </head>
 <body>
 
-<h1>Space-Inspired Frosty Layout</h1>
+<h1>Sleek UI Layout</h1>
 <div class="masonry-container" id="masonry-container"></div>
 
 <div class="footer">
@@ -174,14 +143,14 @@
 <script>
     const masonryContainer = document.getElementById('masonry-container');
 
-    // Improved Masonry Logic
+    // Masonry Logic
     function createMasonryLayout(container) {
         const bricks = Array.from(container.children);
-        const columnCount = Math.floor(container.clientWidth / 300); // Dynamic column count
+        const columnCount = Math.floor(container.clientWidth / 300);
         const columnHeights = Array(columnCount).fill(0);
         const columnWidth = container.clientWidth / columnCount;
 
-        bricks.forEach((brick, index) => {
+        bricks.forEach((brick) => {
             const minColumnHeight = Math.min(...columnHeights);
             const columnIndex = columnHeights.indexOf(minColumnHeight);
 
@@ -204,16 +173,11 @@
             data.facts.forEach(fact => {
                 const brick = document.createElement('div');
                 brick.className = 'masonry-brick';
-                brick.setAttribute('data-truth', fact.isTrue);
 
                 brick.innerHTML = `
-                    <div class="brick-header">
-                        ${fact.isTrue ? 'True' : 'False'}
-                    </div>
+                    <div class="brick-header">${fact.isTrue ? 'True' : 'False'}</div>
                     <div class="brick-title">${fact.text}</div>
-                    <div class="section-heading">
-                        &nbsp;&nbsp;${fact.isTrue ? "Why it's true:" : "Why it's false:"}&nbsp;&nbsp;
-                    </div>
+                    <div class="section-heading">${fact.isTrue ? "Why it's true:" : "Why it's false:"}</div>
                     <div class="brick-description">${fact.description}</div>
                 `;
 
