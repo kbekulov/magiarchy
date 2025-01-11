@@ -80,7 +80,7 @@
         
         /* Hidden Descriptions */
         .region-list ul li .fact-description {
-            display: block; /* Allow description to take up space */
+            display: block;
             max-height: 0; /* Fully collapsed */
             overflow: hidden; /* Prevent hidden content from affecting layout */
             opacity: 0; /* Invisible by default */
@@ -99,12 +99,11 @@
             transition: opacity 0.3s ease; /* Smooth transition for disappearing */
         }
         .region-list ul li:hover .fact-description {
-            max-height: 150px; /* Expand to fit content */
+            max-height: none; /* Remove height restriction */
             opacity: 1; /* Make description visible */
             padding: 10px; /* Add padding when visible */
             margin-top: 8px; /* Space between text and description */
         }
-        
         /* Right Panel (Details Section) */
         .progress-details {
             width: 65%;
