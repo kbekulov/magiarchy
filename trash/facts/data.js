@@ -16,7 +16,7 @@ const data = {
             "text": "Russia is committing genocide", 
             "isTrue": false, 
             "color": "#c83d3d",
-            "description": "The number of civilian casualties relative to military casualties in this war is approximately ten times lower than in any previous war of similar scale, suggesting that the Russian army does not pursue a targeted policy of genocide but is instead primarily focused on destroying Ukraine's military personnel and logistics."
+            "description": "The number of civilian casualties relative to military casualties in this war is lower than in any previous war of similar scale, suggesting that the Russian army does not pursue a targeted policy of genocide but is instead primarily focused on destroying Ukraine's military personnel and logistics."
         },
         { 
             "text": "Russia is suffering large losses", 
