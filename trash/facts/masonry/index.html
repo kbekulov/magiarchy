@@ -3,102 +3,98 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Elegant Masonry Facts</title>
+    <title>Elegant Facts</title>
     <style>
+        /* Root Theme Variables */
         :root {
-            --bg-color: #f7f7f7;
-            --text-color: #2e2e2e;
-            --true-color: #5dade2; /* Light blue for true facts */
-            --false-color: #e74c3c; /* Cherry red for false facts */
-            --card-shadow: rgba(0, 0, 0, 0.1);
+            --dark-grey: #1c1c1c;
+            --light-blue: #4fc3f7;
+            --cherry-red: #e57373;
+            --text-color: #ffffff;
+            --card-bg: #2b2b2b;
             --font: 'Arial', sans-serif;
         }
 
         /* Global Styles */
         body {
             margin: 0;
+            padding: 0;
             font-family: var(--font);
-            background-color: var(--bg-color);
+            background-color: var(--dark-grey);
             color: var(--text-color);
             display: flex;
             flex-direction: column;
             align-items: center;
-            justify-content: center;
         }
 
         h1 {
-            font-size: 2em;
-            margin: 20px 0;
             color: var(--text-color);
+            margin-top: 20px;
+            font-size: 2em;
+            text-transform: uppercase;
+            letter-spacing: 2px;
             text-align: center;
         }
 
-        /* Masonry Layout */
+        /* Container for Masonry Layout */
         .container {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
             gap: 20px;
-            padding: 20px;
             width: 90%;
             max-width: 1200px;
+            margin: 20px auto;
         }
 
-        /* Card Styles */
+        /* Fact Card Styles */
         .card {
-            border-radius: 8px;
+            border-radius: 12px;
             padding: 20px;
-            box-shadow: 0 4px 8px var(--card-shadow);
-            background-color: var(--bg-color);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            color: var(--text-color);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            transition: transform 0.3s, box-shadow 0.3s;
         }
 
         .card[data-truth="true"] {
-            border-left: 5px solid var(--true-color);
+            background-color: var(--light-blue);
         }
 
         .card[data-truth="false"] {
-            border-left: 5px solid var(--false-color);
+            background-color: var(--cherry-red);
         }
 
         .card:hover {
             transform: translateY(-5px);
-            box-shadow: 0 8px 15px var(--card-shadow);
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5);
         }
 
         /* Card Header */
         .card-header {
-            font-weight: bold;
             font-size: 1.2em;
+            font-weight: bold;
             margin-bottom: 10px;
-        }
-
-        .card-header[data-truth="true"] {
-            color: var(--true-color);
-        }
-
-        .card-header[data-truth="false"] {
-            color: var(--false-color);
         }
 
         /* Card Description */
         .card-description {
-            font-size: 0.9em;
+            font-size: 0.95em;
             line-height: 1.6;
-            color: var(--text-color);
         }
 
         /* Footer */
         .footer {
-            text-align: center;
             margin: 20px 0;
-            font-size: 0.9em;
+            text-align: center;
             color: var(--text-color);
         }
 
         .footer a {
-            color: var(--true-color);
+            color: var(--light-blue);
             text-decoration: none;
+            font-weight: bold;
         }
 
         .footer a:hover {
@@ -108,9 +104,9 @@
 </head>
 <body>
 
-<h1>Facts in Focus</h1>
+<h1>Facts at a Glance</h1>
 <div class="container" id="facts-container">
-    <!-- Facts will be dynamically injected here -->
+    <!-- Facts will be dynamically added here -->
 </div>
 
 <div class="footer">
@@ -118,9 +114,10 @@
 </div>
 
 <script>
+    // Load Facts Dynamically
     async function loadFacts() {
         try {
-            const response = await fetch('data.json'); // Ensure `data.json` is in the same directory
+            const response = await fetch('data.json'); // Ensure data.json is in the same directory
             const data = await response.json();
             const factsContainer = document.getElementById('facts-container');
 
@@ -132,7 +129,7 @@
 
                 // Add Header and Description
                 card.innerHTML = `
-                    <div class="card-header" data-truth="${fact.isTrue}">
+                    <div class="card-header">
                         ${fact.text}
                     </div>
                     <div class="card-description">
