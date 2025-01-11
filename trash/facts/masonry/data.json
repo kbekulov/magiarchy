@@ -77,6 +77,12 @@
             "isTrue": true, 
             "color": "#51a078",
             "description": "Russia's military actions are driven primarily by its national security interests, not external deterrents like NATO's Article 5. If NATO is perceived as a threat, Russia may weigh the risks of confrontation rather than avoid it entirely. For example, in summer 2022, Lithuania's attempt to blockade Kaliningrad prompted a direct warning from Russia’s foreign ministry, threatening military action. Under pressure from EU partners, Lithuania was forced to lift the blockade."
+        },
+        { 
+            "text": "NATO could easily beat Russia in a hot war", 
+            "isTrue": false, 
+            "color": "#c83d3d",
+            "description": "It is challenging to predict the outcome of a Russia vs. NATO war due to the sheer complexity of variables involved, including diverse warfare domains (land, sea, air, space, cyberspace, and nuclear), advanced technologies, and vast geographical areas of combat. Russia boasts the largest army in Europe, extensive experience in large-scale conflicts on its western frontier, resources across all warfare domains, and a military doctrine centered on land wars in Europe. Additionally, its population and industrial base enable large-scale mobilization. In contrast, NATO, focused on air and sea power with more limited industrial capacity, faces significant uncertainties in a large-scale land conflict with Russia."
         }
     ],
     "armyStats": [
