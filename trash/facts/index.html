@@ -41,17 +41,34 @@
         
         .region-list ul li {
             position: relative;
-            padding: 12px 16px;
+            padding: 16px 20px;
             margin: 8px 0;
             background: rgba(50, 50, 60, 0.8);
             border-radius: 5px;
-            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
             transition: background-color 0.3s, box-shadow 0.3s;
+            font-size: 1rem;
+            font-weight: bold;
         }
         
         .region-list ul li:hover {
             background: rgba(80, 160, 120, 0.8);
             box-shadow: 0 0 8px rgba(80, 160, 120, 0.6);
+        }
+        
+        .region-list ul li span.icon {
+            font-size: 1.5rem;
+            margin-left: 10px;
+        }
+        
+        .region-list ul li span.icon.checkmark {
+            color: #51a078; /* Green for true */
+        }
+        
+        .region-list ul li span.icon.cross {
+            color: #c83d3d; /* Red for false */
         }
         
         /* Hidden Descriptions */
@@ -152,7 +169,8 @@
             border: none;
             border-top: 1px solid rgba(255, 255, 255, 0.3);
             margin: 20px 0;
-        }        
+        }
+           
     </style>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
