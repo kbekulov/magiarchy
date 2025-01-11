@@ -8,7 +8,9 @@
         :root {
             --background-color: #1e1e1e;
             --true-color: #358abd; /* Softer Light Blue */
+            --true-gradient: linear-gradient(135deg, #358abd, #4aa4d6); /* Light Blue Gradient */
             --false-color: #d9534f; /* Softer Cherry Red */
+            --false-gradient: linear-gradient(135deg, #d9534f, #e57373); /* Cherry Red Gradient */
             --true-header-color: #2c6a91; /* Darker Blue for True Header */
             --false-header-color: #b0423b; /* Darker Red for False Header */
             --line-color: rgba(255, 255, 255, 0.4); /* Line color */
@@ -51,6 +53,7 @@
             width: calc(33.333% - 20px); /* 3 columns with consistent gaps */
             box-sizing: border-box;
             background-color: var(--background-color);
+            background-image: var(--true-gradient); /* Default gradient for initialization */
             color: var(--text-color);
             border-radius: var(--card-radius);
             padding: var(--card-padding);
@@ -60,11 +63,11 @@
         }
 
         .masonry-brick[data-truth="true"] {
-            background-color: var(--true-color);
+            background-image: var(--true-gradient);
         }
 
         .masonry-brick[data-truth="false"] {
-            background-color: var(--false-color);
+            background-image: var(--false-gradient);
         }
 
         .masonry-brick:hover {
@@ -109,6 +112,15 @@
             text-align: center;
             position: relative;
             color: var(--faded-text-color);
+            text-shadow: 0 4px 6px var(--background-color); /* Default shadow */
+        }
+
+        .section-heading[data-truth="true"] {
+            text-shadow: 0 4px 6px var(--true-color); /* Blurry shadow for "True" */
+        }
+
+        .section-heading[data-truth="false"] {
+            text-shadow: 0 4px 6px var(--false-color); /* Blurry shadow for "False" */
         }
 
         .section-heading::before,
@@ -214,7 +226,7 @@
                         ${fact.isTrue ? 'True' : 'False'}
                     </div>
                     <div class="brick-title">${fact.text}</div>
-                    <div class="section-heading">
+                    <div class="section-heading" data-truth="${fact.isTrue}">
                         &nbsp;&nbsp;${fact.isTrue ? "Why it's true:" : "Why it's false:"}&nbsp;&nbsp;
                     </div>
                     <div class="brick-description">${fact.description}</div>
