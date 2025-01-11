@@ -41,12 +41,15 @@
         
         .region-list ul li {
             position: relative;
-            padding: 12px 16px;
-            margin: 8px 0;
+            padding: 12px 16px; /* Ensure consistent padding */
+            margin: 8px 0; /* Spacing between fact elements */
             background: rgba(50, 50, 60, 0.8);
             border-radius: 5px;
-            cursor: pointer;
+            display: flex; /* Flexbox for proper alignment */
+            align-items: center; /* Vertical alignment */
+            justify-content: space-between; /* Space between text and icon */
             transition: background-color 0.3s, box-shadow 0.3s;
+            cursor: pointer;
         }
         
         .region-list ul li:hover {
@@ -54,14 +57,36 @@
             box-shadow: 0 0 8px rgba(80, 160, 120, 0.6);
         }
         
+        /* Fact Text */
+        .region-list ul li .fact-text {
+            flex: 1; /* Take up available space */
+            margin-right: 16px; /* Add space between text and icon */
+            font-size: 1rem;
+            font-weight: bold;
+        }
+        
+        /* Fact Icons */
+        .region-list ul li span.icon {
+            flex-shrink: 0; /* Prevent shrinking */
+            font-size: 1.5rem;
+        }
+        
+        .region-list ul li span.icon.checkmark {
+            color: #51a078; /* Green for true */
+        }
+        
+        .region-list ul li span.icon.cross {
+            color: #c83d3d; /* Red for false */
+        }
+        
         /* Hidden Descriptions */
         .region-list ul li .fact-description {
-            display: block;
-            max-height: 0;
-            overflow: hidden;
-            opacity: 0;
-            margin-top: 8px;
-            padding: 0 10px;
+            display: block; /* Default display for transition */
+            max-height: 0; /* Fully collapsed */
+            overflow: hidden; /* Prevent content spillover */
+            opacity: 0; /* Invisible by default */
+            margin: 0; /* Remove any default margin */
+            padding: 0; /* Remove padding when hidden */
             background: rgba(0, 0, 0, 0.8);
             border-radius: 5px;
             color: white;
@@ -71,9 +96,9 @@
         }
         
         .region-list ul li:hover .fact-description {
-            max-height: 100px; /* Arbitrary value to fit your longest description */
-            opacity: 1;
-            padding: 10px; /* Adds padding when the description is visible */
+            max-height: 100px; /* Arbitrary value to fit content */
+            opacity: 1; /* Fully visible */
+            padding: 10px; /* Add padding when visible */
         }
         
         /* Right Panel (Details Section) */
@@ -152,7 +177,8 @@
             border: none;
             border-top: 1px solid rgba(255, 255, 255, 0.3);
             margin: 20px 0;
-        }        
+        }
+        
     </style>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
