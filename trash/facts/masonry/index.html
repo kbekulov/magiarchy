@@ -3,14 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Masonry Layout</title>
+    <title>Refined Masonry Layout</title>
     <style>
         :root {
-            --background-color: #1c1c1c;
-            --true-color: #4fc3f7; /* Light Blue */
-            --false-color: #e57373; /* Cherry Red */
-            --card-color: #2b2b2b;
+            --background-color: #1e1e1e;
+            --true-color: #358abd; /* Softer Light Blue */
+            --false-color: #d9534f; /* Softer Cherry Red */
             --text-color: #ffffff;
+            --card-padding: 15px;
+            --card-radius: 10px;
+            --card-shadow: rgba(0, 0, 0, 0.3);
         }
 
         body {
@@ -27,9 +29,11 @@
             margin-top: 20px;
             color: var(--text-color);
             font-size: 2rem;
+            letter-spacing: 1px;
+            text-align: center;
         }
 
-        /* Container for Masonry Layout */
+        /* Masonry Container */
         .masonry-container {
             position: relative;
             max-width: 1200px;
@@ -40,22 +44,16 @@
         /* Masonry Brick */
         .masonry-brick {
             position: absolute;
-            width: calc(33.333% - 10px); /* 3 columns with spacing */
+            width: calc(33.333% - 20px); /* 3 columns with consistent gaps */
             box-sizing: border-box;
-            background-color: var(--card-color);
+            background-color: var(--background-color);
             color: var(--text-color);
-            border-radius: 10px;
-            padding: 15px;
-            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
-            transition: transform 0.3s;
+            border-radius: var(--card-radius);
+            padding: var(--card-padding);
+            box-shadow: 0 4px 8px var(--card-shadow);
+            transition: transform 0.3s, box-shadow 0.3s;
         }
 
-        .masonry-brick:hover {
-            transform: translateY(-5px);
-            box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.8);
-        }
-
-        /* True and False Color Blocks */
         .masonry-brick[data-truth="true"] {
             background-color: var(--true-color);
         }
@@ -64,21 +62,29 @@
             background-color: var(--false-color);
         }
 
+        .masonry-brick:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Text Elements */
         .brick-header {
             font-size: 1.2rem;
             font-weight: bold;
+            margin-bottom: 10px;
         }
 
         .brick-description {
-            margin-top: 10px;
-            font-size: 0.9rem;
+            font-size: 0.95rem;
             line-height: 1.5;
         }
 
+        /* Footer */
         .footer {
             margin-top: 20px;
             text-align: center;
             color: var(--text-color);
+            font-size: 0.9rem;
         }
 
         .footer a {
@@ -89,11 +95,24 @@
         .footer a:hover {
             text-decoration: underline;
         }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .masonry-brick {
+                width: calc(50% - 20px); /* 2 columns for tablets */
+            }
+        }
+
+        @media (max-width: 480px) {
+            .masonry-brick {
+                width: calc(100% - 20px); /* 1 column for mobile */
+            }
+        }
     </style>
 </head>
 <body>
 
-<h1>Dynamic Masonry Layout</h1>
+<h1>Refined Masonry Layout</h1>
 <div class="masonry-container" id="masonry-container"></div>
 
 <div class="footer">
@@ -103,45 +122,38 @@
 <script>
     const masonryContainer = document.getElementById('masonry-container');
 
-    // Masonry Logic
+    // Improved Masonry Logic
     function createMasonryLayout(container) {
         const bricks = Array.from(container.children);
-        const columnCount = 3; // Number of columns
-        const columnHeights = Array(columnCount).fill(0); // Track height of each column
+        const columnCount = Math.floor(container.clientWidth / 300); // Dynamic column count
+        const columnHeights = Array(columnCount).fill(0);
         const columnWidth = container.clientWidth / columnCount;
 
         bricks.forEach((brick, index) => {
-            // Find the shortest column
             const minColumnHeight = Math.min(...columnHeights);
             const columnIndex = columnHeights.indexOf(minColumnHeight);
 
-            // Position the brick
-            brick.style.width = `${columnWidth - 10}px`;
+            brick.style.width = `${columnWidth - 20}px`;
             brick.style.top = `${minColumnHeight}px`;
             brick.style.left = `${columnIndex * columnWidth}px`;
 
-            // Update column height
-            columnHeights[columnIndex] += brick.offsetHeight + 20; // Add spacing between bricks
+            columnHeights[columnIndex] += brick.offsetHeight + 20;
         });
 
-        // Set container height to the tallest column
         container.style.height = `${Math.max(...columnHeights)}px`;
     }
 
-    // Load Data from External JSON File
+    // Load Facts from External JSON
     async function loadFacts() {
         try {
-            const response = await fetch('data.json'); // Ensure data.json is in the same directory
+            const response = await fetch('data.json');
             const data = await response.json();
 
             data.facts.forEach(fact => {
-                // Create Brick Element
                 const brick = document.createElement('div');
                 brick.className = 'masonry-brick';
                 brick.setAttribute('data-truth', fact.isTrue);
-                brick.style.height = `${100 + Math.random() * 100}px`; // Randomized height for variety
 
-                // Add Header and Description
                 brick.innerHTML = `
                     <div class="brick-header">${fact.text}</div>
                     <div class="brick-description">${fact.description}</div>
@@ -150,14 +162,13 @@
                 masonryContainer.appendChild(brick);
             });
 
-            // Apply Masonry Layout
             createMasonryLayout(masonryContainer);
         } catch (error) {
             console.error('Error loading facts:', error);
         }
     }
 
-    // Initialize Masonry Layout
+    // Initialize Masonry
     window.addEventListener('load', loadFacts);
     window.addEventListener('resize', () => createMasonryLayout(masonryContainer));
 </script>
