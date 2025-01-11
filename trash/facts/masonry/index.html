@@ -11,15 +11,13 @@
             --true-gradient: linear-gradient(135deg, rgba(100, 170, 255, 0.9), rgba(60, 130, 220, 0.9));
             --false-color: rgba(210, 70, 70, 0.9); /* Warm frosty red */
             --false-gradient: linear-gradient(135deg, rgba(210, 70, 70, 0.9), rgba(170, 50, 50, 0.9));
-            --header-gradient: linear-gradient(135deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.05)); /* Frosted header background */
-            --line-color: rgba(200, 200, 200, 0.5); /* Softer line */
-            --border-color: rgba(255, 255, 255, 0.1); /* Subtle border */
-            --text-color: #e8f0fa; /* Light cool white */
-            --faded-text-color: rgba(232, 240, 250, 0.8); /* Softer faded text */
-            --highlighted-text-color: rgba(232, 240, 250, 1); /* Enhanced visibility */
-            --card-padding: 15px;
-            --card-radius: 12px; /* Rounded corners for elegance */
-            --card-shadow: rgba(0, 0, 0, 0.4); /* Soft shadow */
+            --line-color: rgba(200, 200, 200, 0.5);
+            --text-color: #e8f0fa;
+            --bar-bg-color: #1f1f1f;
+            --bar-color: #5a9bd4;
+            --bar-faded-color: rgba(90, 155, 212, 0.5);
+            --territorial-color: #d46868;
+            --card-radius: 12px;
         }
 
         body {
@@ -31,162 +29,194 @@
             flex-direction: column;
             align-items: center;
             min-height: 100vh;
-            background-repeat: no-repeat;
-            background-size: cover;
         }
 
         h1 {
             margin-top: 20px;
-            color: var(--text-color);
             font-size: 2.2rem;
-            letter-spacing: 1px;
-            text-align: center;
-            text-shadow: 0 2px 6px rgba(0, 0, 0, 0.6), 0 4px 8px rgba(60, 120, 200, 0.5); /* Subtle glow */
+            text-shadow: 0 2px 6px rgba(0, 0, 0, 0.6);
         }
 
-        /* Masonry Container */
+        .section {
+            width: 90%;
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #1a1a1a;
+            border-radius: var(--card-radius);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+        }
+
+        .section-title {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            border-bottom: 2px solid var(--line-color);
+            padding-bottom: 5px;
+        }
+
+        /* Army Stats */
+        .army-stats {
+            margin-top: 10px;
+        }
+
+        .army-bar {
+            display: flex;
+            align-items: center;
+            margin: 10px 0;
+        }
+
+        .army-label {
+            flex: 1;
+        }
+
+        .army-progress {
+            flex: 3;
+            height: 20px;
+            background-color: var(--bar-bg-color);
+            border-radius: var(--card-radius);
+            overflow: hidden;
+            position: relative;
+        }
+
+        .army-progress span {
+            display: block;
+            height: 100%;
+            background-color: var(--bar-color);
+        }
+
+        .army-progress[data-faded="true"] span {
+            background-color: var(--bar-faded-color);
+        }
+
+        /* Territorial Control */
+        .territorial-control {
+            margin-top: 10px;
+        }
+
+        .territorial-bar {
+            margin: 10px 0;
+        }
+
+        .territorial-progress {
+            height: 20px;
+            background-color: var(--bar-bg-color);
+            border-radius: var(--card-radius);
+            overflow: hidden;
+            position: relative;
+        }
+
+        .territorial-progress span {
+            display: block;
+            height: 100%;
+            background-color: var(--territorial-color);
+        }
+
+        /* Combat Losses */
+        .combat-losses {
+            margin-top: 10px;
+        }
+
+        .combat-losses-item {
+            display: flex;
+            justify-content: space-between;
+            margin: 10px 0;
+        }
+
+        .combat-chart {
+            display: flex;
+            align-items: center;
+        }
+
+        .combat-chart span {
+            margin-left: 10px;
+        }
+
         .masonry-container {
             position: relative;
-            max-width: 1400px; /* Allow wider layouts for larger screens */
-            width: 90%; /* Utilize more screen space */
-            margin: 20px auto; /* Center the container */
-            padding: 10px; /* Add padding for breathing space */
-        }
-
-        /* Masonry Brick */
-        .masonry-brick {
-            position: absolute;
-            width: calc(33.333% - 20px);
-            box-sizing: border-box;
-            background-image: var(--true-gradient); /* Default gradient for initialization */
-            color: var(--text-color);
-            border-radius: var(--card-radius);
-            padding: var(--card-padding);
-            padding-top: 50px;
-            border: 1px solid var(--border-color);
-            backdrop-filter: blur(10px); /* Frosted glass effect */
-            box-shadow: 0 4px 8px var(--card-shadow), 0 6px 12px rgba(60, 120, 200, 0.2); /* Layered shadows */
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-
-        .masonry-brick[data-truth="true"] {
-            background-image: var(--true-gradient);
-        }
-
-        .masonry-brick[data-truth="false"] {
-            background-image: var(--false-gradient);
-        }
-
-        .masonry-brick:hover {
-            transform: translateY(-6px);
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5), 0 12px 24px var(--card-shadow);
-        }
-
-        /* Header for True/False */
-        .brick-header {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 35px;
-            line-height: 35px;
-            text-align: center;
-            font-size: 1rem;
-            font-weight: bold;
-            border-radius: var(--card-radius) var(--card-radius) 0 0;
-            background: var(--header-gradient); /* Gradient header */
-            color: var(--faded-text-color);
-        }
-
-        .brick-title {
-            font-size: 1.3rem;
-            font-weight: bold;
-            margin-bottom: 10px;
-        }
-
-        /* Section Heading */
-        .section-heading {
-            margin: 20px 0 10px;
-            font-size: 1.1rem;
-            font-weight: normal; /* Removed bold for softer emphasis */
-            text-align: center;
-            position: relative;
-            color: var(--highlighted-text-color); /* Softer focus */
-        }
-
-        .section-heading::before,
-        .section-heading::after {
-            content: '';
-            position: absolute;
-            width: 40%; /* Appropriate line width */
-            height: 1px; /* Softer lines */
-            background-color: var(--line-color);
-            top: 50%; /* Centered line */
-        }
-
-        .section-heading::before {
-            left: 0;
-        }
-
-        .section-heading::after {
-            right: 0;
-        }
-
-        .brick-description {
-            font-size: 1rem;
-            line-height: 1.6;
-            color: var(--text-color);
-        }
-
-        /* Footer */
-        .footer {
-            margin-top: 20px;
-            text-align: center;
-            color: var(--faded-text-color);
-            font-size: 0.9rem;
-        }
-
-        .footer a {
-            color: var(--true-color);
-            text-decoration: none;
-        }
-
-        .footer a:hover {
-            text-decoration: underline;
-            color: var(--true-color);
-        }
-
-        /* Responsive Design */
-        @media (max-width: 768px) {
-            .masonry-brick {
-                width: calc(50% - 20px);
-            }
-        }
-
-        @media (max-width: 480px) {
-            .masonry-brick {
-                width: calc(100% - 20px);
-            }
+            max-width: 1400px;
+            width: 90%;
+            margin: 20px auto;
+            padding: 10px;
         }
     </style>
 </head>
 <body>
 
 <h1>Facts about the Ukraine war</h1>
-<div class="masonry-container" id="masonry-container"></div>
 
-<div class="footer">
-    <p>Powered by <a href="#">Your App</a></p>
+<!-- Army Stats Section -->
+<div class="section">
+    <div class="section-title">Army Stats</div>
+    <div class="army-stats" id="army-stats"></div>
 </div>
 
+<!-- Territorial Control Section -->
+<div class="section">
+    <div class="section-title">Territorial Control</div>
+    <div class="territorial-control" id="territorial-control"></div>
+</div>
+
+<!-- Combat Losses Section -->
+<div class="section">
+    <div class="section-title">Combat Losses</div>
+    <div class="combat-losses" id="combat-losses"></div>
+</div>
+
+<!-- Masonry Section -->
+<div class="masonry-container" id="masonry-container"></div>
+
 <script>
+    const armyStatsContainer = document.getElementById('army-stats');
+    const territorialControlContainer = document.getElementById('territorial-control');
+    const combatLossesContainer = document.getElementById('combat-losses');
     const masonryContainer = document.getElementById('masonry-container');
 
-    async function loadFacts() {
+    async function loadData() {
         try {
             const response = await fetch('data.json');
             const data = await response.json();
 
+            // Army Stats
+            data.armyStats.forEach(stat => {
+                const bar = document.createElement('div');
+                bar.className = 'army-bar';
+                bar.innerHTML = `
+                    <div class="army-label">${stat.label}</div>
+                    <div class="army-progress" data-faded="${stat.faded}">
+                        <span style="width: ${stat.barLength}"></span>
+                    </div>
+                `;
+                armyStatsContainer.appendChild(bar);
+            });
+
+            // Territorial Control
+            data.territorialControl.forEach(control => {
+                const bar = document.createElement('div');
+                bar.className = 'territorial-bar';
+                bar.innerHTML = `
+                    <div>${control.label}</div>
+                    <div class="territorial-progress">
+                        <span style="width: ${control.barLength}"></span>
+                    </div>
+                `;
+                territorialControlContainer.appendChild(bar);
+            });
+
+            // Combat Losses
+            data.combatLosses.forEach(loss => {
+                const item = document.createElement('div');
+                item.className = 'combat-losses-item';
+                item.innerHTML = `
+                    <div>${loss.label}</div>
+                    <div class="combat-chart">
+                        <span>Killed: ${loss.killed}</span>
+                        <span>Wounded: ${loss.wounded}</span>
+                    </div>
+                `;
+                combatLossesContainer.appendChild(item);
+            });
+
+            // Masonry Facts
             data.facts.forEach(fact => {
                 const brick = document.createElement('div');
                 brick.className = 'masonry-brick';
@@ -204,7 +234,7 @@
 
             createMasonryLayout(masonryContainer);
         } catch (error) {
-            console.error('Error loading facts:', error);
+            console.error('Error loading data:', error);
         }
     }
 
@@ -228,7 +258,7 @@
         container.style.height = `${Math.max(...columnHeights)}px`;
     }
 
-    window.addEventListener('load', loadFacts);
+    window.addEventListener('load', loadData);
     window.addEventListener('resize', () => createMasonryLayout(masonryContainer));
 </script>
 
