@@ -10,73 +10,73 @@ const data = {
             "text": "The invasion was unjustified", 
             "isTrue": false, 
             "color": "#c83d3d",
-            "description": "Russia claimed the invasion was a 'special military operation' to demilitarize and denazify Ukraine, but many see it as a clear breach of international law."
+            "description": "Russia invaded Ukraine to address threats it perceived as intolerable to its national security. These perceived threats were identified and assessed by Russia's General Staff and Security Council. Whether these assessments were accurate or not remains a subject of professional debate. However, Russia acted with the honest conviction that it was protecting itself, which makes its actions justified relative to international ethics of state behaviour."
         },
         { 
             "text": "Russia is committing genocide", 
             "isTrue": false, 
             "color": "#c83d3d",
-            "description": "Although allegations of war crimes have been made, genocide involves specific intent to destroy a particular national, ethnic, racial, or religious group, which is debated in this case."
+            "description": "The number of civilian casualties relative to military casualties in this war is approximately ten times lower than in any previous war of similar scale, suggesting that the Russian army does not pursue a targeted policy of genocide but is instead primarily focused on destroying Ukraine's military personnel and logistics."
         },
         { 
             "text": "Russia is suffering large losses", 
             "isTrue": true, 
             "color": "#51a078",
-            "description": "Russia has experienced significant military losses, with estimates suggesting tens of thousands of troops have been killed or wounded during the conflict."
+            "description": "It is indeed empirically true that Russia is suffering significant losses in the war, as evidenced by numerous obituaries and videos from the battlefield. However, the total number of casualties includes all losses—killed, missing, and both irrecoverably and recoverably wounded—making the figures misleading. Casualties encompass those who have died, those who have been injured, those who have deserted, and those who will return to combat after receiving medical treatment."
         },
         { 
             "text": "Russia is losing the war", 
             "isTrue": false, 
             "color": "#c83d3d",
-            "description": "While some view Russia's prolonged efforts as a sign of weakness, the outcome of the war remains uncertain, with both sides continuing to fight fiercely."
+            "description": "So far, nothing suggests that Russia is losing the war. While the conflict undeniably comes at a great financial and human cost to Russia, the same applies to Ukraine and NATO. Russia's costs must be evaluated in relation to the benefits gained, as well as to the costs and benefits experienced by its adversaries. The war is costly for all parties, but Russia continues a slow yet confident progression toward its declared goals, whereas its adversaries do not."
         },
         { 
             "text": "The war could have been prevented", 
             "isTrue": true, 
             "color": "#51a078",
-            "description": "Many analysts argue that greater diplomatic efforts or earlier interventions might have prevented the escalation of tensions into a full-scale war."
+            "description": "Whether the war could have been prevented or not may be a subject of academic and expert debate. However, it is evident that none of the involved parties did enough to stop this conflict from unfolding. Ukraine was focused on asserting its sovereign right to act independently, rejecting its neighbor's interests and concerns. Meanwhile, NATO pursued its goal of securing Ukraine as a member since 2008, disregarding Russia's calls for dialogue and indivisible security. It is fair to conclude that the war might have been avoided if all parties had made a genuine effort to listen to and address each other's needs."
         },
         { 
             "text": "The West did everything to prevent it", 
             "isTrue": false, 
             "color": "#c83d3d",
-            "description": "Critics argue that Western nations failed to fully address Russian concerns or implement effective diplomatic measures to avoid conflict."
+            "description": "By the time of Russia's invasion in 2022, Western nations issued ultimatums instead of pursuing a balanced resolution, with President Biden warning Putin, /"Don't do it; you will lose./" After the invasion on February 24, 2022, the US and NATO focused on arming Ukraine, offering little effort to bring both sides to the negotiating table."
         },
         { 
             "text": "Russia could just pack-up and leave", 
             "isTrue": false, 
             "color": "#c83d3d",
-            "description": "Russia's leadership views the conflict as vital to its national interests, making an immediate withdrawal unlikely without significant concessions."
+            "description": "Legally, Russian politicians and military commanders cannot order a withdrawal from Ukraine, as doing so would violate Russian laws and be considered treason, punishable by the highest courts. The four occupied regions (Zaporozhie, Kherson, Luhansk, Donetsk) have been incorporated into Russia's constitution, making their abandonment a breach of constitutional order. From a legitimacy perspective, Russia claims R2P (Responsibility to Protect) obligations to the civilians it has vowed to safeguard. Withdrawing could expose these individuals to harsh reprisals by Ukraine, including imprisonment, torture, or even death, placing Russia under international scrutiny to protect lives affected by its actions."
         },
         { 
             "text": "The war could get nuclear", 
             "isTrue": true, 
             "color": "#51a078",
-            "description": "The potential use of nuclear weapons has been a looming threat, with heightened rhetoric from Russian officials raising global concerns."
+            "description": "The war in Ukraine, despite repeated assurances from Western politicians and media, carries a real risk of nuclear escalation. Russia, with the world's largest nuclear arsenal, views the conflict as existential, with its outcome seen by the government as critical to the survival of Russian statehood. Unlike expeditionary wars like Afghanistan, Iraq, Vietnam, or Syria, this conflict resembles a modern, smaller-scale version of World War II. For Russia, it is a patriotic war centered on survival, making defeat unacceptable. If cornered, Russia may feel politically compelled to consider nuclear options."
         },
         { 
             "text": "NATO is heavily involved/responsible", 
             "isTrue": true, 
             "color": "#51a078",
-            "description": "NATO's support for Ukraine, including military aid and intelligence, has played a significant role in shaping the conflict's dynamics."
+            "description": "NATO's repeated claims of non-involvement in the war are misleading. Member states have provided Ukraine with over $230 billion in aid, far exceeding Ukraine's GDP of $178 billion. Despite incurring over $700 billion in economic losses by 2023, the EU continues to support Ukraine with the aim of ensuring its victory and Russia's strategic defeat. NATO members collectively reject efforts toward a balanced peace deal, pursuing one-sided objectives at the cost of economic stability and political unity."
         },
         { 
             "text": "Russia suffered ~800,000 killed in combat", 
             "isTrue": false, 
             "color": "#c83d3d",
-            "description": "Estimates of Russian combat losses vary widely, with numbers far lower than 800,000 cited by most credible sources."
+            "description": "In military conflicts, the ratio of killed to wounded (KIA:WIA) is typically 1:3, meaning there are usually more wounded than killed. \"Casualties\" include both, so if Russia is reported to have ~800,000 casualties, only about 30% are likely fatalities, with the rest wounded and potentially returning to duty after treatment."
         },
         { 
             "text": "Ukraine suffered ~50,000 killed in combat", 
             "isTrue": false, 
             "color": "#c83d3d",
-            "description": "While Ukraine has sustained significant losses, the figure of 50,000 is an underestimation according to most reports."
+            "description": "Russia's firepower superiority over Ukraine in the war is an undeniable fact, evident in its dominance in aviation bombs, artillery shells, and missiles. Given this, it is mathematically improbable for Ukraine to sustain fewer military casualties than Russia; the opposite is far more likely."
         },
         { 
             "text": "Russia might decide to invade NATO later", 
             "isTrue": true, 
             "color": "#51a078",
-            "description": "Some analysts fear that Russia's ambitions could extend beyond Ukraine, potentially targeting NATO member states."
+            "description": "Russia's military actions are driven primarily by its national security interests, not external deterrents like NATO's Article 5. If NATO is perceived as a threat, Russia may weigh the risks of confrontation rather than avoid it entirely. For example, in summer 2022, Lithuania's attempt to blockade Kaliningrad prompted a direct warning from Russia’s foreign ministry, threatening military action. Under pressure from EU partners, Lithuania was forced to lift the blockade."
         }
     ],
     "armyStats": [
