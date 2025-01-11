@@ -3,22 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Elegant Masonry Layout</title>
+    <title>Vibrant Frosty Masonry Layout</title>
     <style>
         :root {
-            --background-color: #232323; /* Muted dark gray */
-            --true-color: #3caea3; /* Soft teal for true */
-            --true-gradient: linear-gradient(135deg, #3caea3, #287f7a); /* Elegant teal gradient */
-            --false-color: #e76f51; /* Soft red-orange for false */
-            --false-gradient: linear-gradient(135deg, #e76f51, #ba5340); /* Elegant red gradient */
-            --header-color: rgba(255, 255, 255, 0.15); /* Subtle frosted header */
-            --line-color: rgba(255, 255, 255, 0.3); /* Light dividing lines */
-            --border-color: rgba(255, 255, 255, 0.1); /* Softer borders */
-            --text-color: #f0f0f0; /* Light gray for text */
-            --faded-text-color: rgba(240, 240, 240, 0.8); /* Softer text */
+            --background-color: #1a1a1a; /* Darker neutral for contrast */
+            --true-color: rgba(0, 188, 255, 0.9); /* Vibrant Cyan */
+            --true-gradient: linear-gradient(135deg, rgba(0, 188, 255, 0.9), rgba(0, 133, 210, 0.9));
+            --false-color: rgba(255, 71, 87, 0.9); /* Vibrant Red */
+            --false-gradient: linear-gradient(135deg, rgba(255, 71, 87, 0.9), rgba(200, 35, 60, 0.9));
+            --header-color: rgba(255, 255, 255, 0.5); /* Brighter frosted header */
+            --line-color: rgba(255, 255, 255, 0.7); /* Brighter line */
+            --border-color: rgba(255, 255, 255, 0.3); /* Frosty Border */
+            --text-color: #ffffff;
+            --faded-text-color: rgba(255, 255, 255, 0.9); /* More pronounced faded text */
             --card-padding: 15px;
-            --card-radius: 12px; /* More rounded corners */
-            --card-shadow: rgba(0, 0, 0, 0.2); /* Subtle shadow */
+            --card-radius: 10px;
+            --card-shadow: rgba(0, 0, 0, 0.4); /* Stronger shadow */
         }
 
         body {
@@ -38,7 +38,7 @@
             font-size: 2rem;
             letter-spacing: 1px;
             text-align: center;
-            text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            text-shadow: 0 0 8px var(--true-color), 0 0 12px var(--false-color);
         }
 
         /* Masonry Container */
@@ -52,29 +52,32 @@
         /* Masonry Brick */
         .masonry-brick {
             position: absolute;
-            width: calc(33.333% - 20px); /* 3 columns */
+            width: calc(33.333% - 20px); /* 3 columns with consistent gaps */
             box-sizing: border-box;
             background-image: var(--true-gradient); /* Default gradient for initialization */
             color: var(--text-color);
             border-radius: var(--card-radius);
             padding: var(--card-padding);
             padding-top: 50px; /* Add space for the header */
-            border: 1px solid var(--border-color);
+            border: 1px solid var(--border-color); /* Frosty border */
+            backdrop-filter: blur(12px); /* Frosted glass effect */
             box-shadow: 0 6px 12px var(--card-shadow);
             transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
 
         .masonry-brick[data-truth="true"] {
             background-image: var(--true-gradient);
+            box-shadow: 0 0 12px var(--true-color);
         }
 
         .masonry-brick[data-truth="false"] {
             background-image: var(--false-gradient);
+            box-shadow: 0 0 12px var(--false-color);
         }
 
         .masonry-brick:hover {
-            transform: translateY(-4px);
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+            transform: translateY(-6px);
+            box-shadow: 0 12px 20px var(--true-color), 0 12px 20px var(--false-color);
         }
 
         /* Header for True/False */
@@ -91,14 +94,14 @@
             border-radius: var(--card-radius) var(--card-radius) 0 0;
             background-color: var(--header-color);
             color: var(--faded-text-color);
+            text-shadow: 0 0 5px var(--text-color);
         }
 
         .brick-title {
             font-size: 1.3rem;
             font-weight: bold;
             margin-bottom: 10px;
-            color: var(--text-color);
-            text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+            text-shadow: 0 0 8px var(--true-color);
         }
 
         /* Section Heading */
@@ -107,7 +110,9 @@
             font-size: 1rem;
             font-weight: bold;
             text-align: center;
+            position: relative;
             color: var(--faded-text-color);
+            text-shadow: 0 4px 6px var(--line-color);
         }
 
         .section-heading::before,
@@ -131,14 +136,13 @@
         .brick-description {
             font-size: 1rem;
             line-height: 1.6;
-            color: var(--text-color);
         }
 
         /* Footer */
         .footer {
             margin-top: 20px;
             text-align: center;
-            color: var(--faded-text-color);
+            color: var(--text-color);
             font-size: 0.9rem;
         }
 
@@ -149,26 +153,26 @@
 
         .footer a:hover {
             text-decoration: underline;
-            color: var(--true-color);
+            text-shadow: 0 0 8px var(--true-color);
         }
 
         /* Responsive Design */
         @media (max-width: 768px) {
             .masonry-brick {
-                width: calc(50% - 20px); /* 2 columns */
+                width: calc(50% - 20px); /* 2 columns for tablets */
             }
         }
 
         @media (max-width: 480px) {
             .masonry-brick {
-                width: calc(100% - 20px); /* 1 column */
+                width: calc(100% - 20px); /* 1 column for mobile */
             }
         }
     </style>
 </head>
 <body>
 
-<h1>Elegant Masonry Layout</h1>
+<h1>Vibrant Frosty Masonry Layout</h1>
 <div class="masonry-container" id="masonry-container"></div>
 
 <div class="footer">
@@ -189,7 +193,9 @@
                 brick.setAttribute('data-truth', fact.isTrue);
 
                 brick.innerHTML = `
-                    <div class="brick-header">${fact.isTrue ? 'True' : 'False'}</div>
+                    <div class="brick-header">
+                        ${fact.isTrue ? 'True' : 'False'}
+                    </div>
                     <div class="brick-title">${fact.text}</div>
                     <div class="section-heading">${fact.isTrue ? "Why it's true:" : "Why it's false:"}</div>
                     <div class="brick-description">${fact.description}</div>
