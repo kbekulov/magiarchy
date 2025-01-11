@@ -6,17 +6,16 @@
     <title>Sci-Fi Masonry Layout</title>
     <style>
         :root {
-            --background-color: #121212; /* Dark grey background */
+            --background-color: #121212; /* Very dark grey for a more dramatic look */
             --true-color: rgba(120, 180, 255, 0.9); /* Light cyan */
             --true-gradient: linear-gradient(135deg, rgba(120, 180, 255, 0.9), rgba(60, 120, 200, 0.9));
             --false-color: rgba(220, 80, 80, 0.9); /* Vibrant red */
             --false-gradient: linear-gradient(135deg, rgba(220, 80, 80, 0.9), rgba(180, 50, 50, 0.9));
             --header-gradient: linear-gradient(135deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.05)); /* Gradient frosted header */
-            --line-color: rgba(232, 240, 250, 0.8); /* Brighter lines */
+            --line-color: linear-gradient(to right, rgba(180, 180, 200, 0.5), rgba(180, 180, 200, 0.1)); /* Gradient line */
             --border-color: rgba(255, 255, 255, 0.1); /* Subtle border */
             --text-color: #e8f0fa; /* Light cool white */
-            --faded-text-color: rgba(232, 240, 250, 0.9); /* Softer faded text */
-            --highlighted-text-color: rgba(232, 240, 250, 1); /* Enhanced visibility */
+            --faded-text-color: rgba(232, 240, 250, 0.8); /* Softer faded text */
             --card-padding: 15px;
             --card-radius: 12px; /* Rounded corners for elegance */
             --card-shadow: rgba(0, 0, 0, 0.4); /* Soft shadow */
@@ -108,21 +107,23 @@
         /* Section Heading */
         .section-heading {
             margin: 20px 0 10px;
-            font-size: 1.1rem;
+            font-size: 1rem;
             font-weight: bold;
             text-align: center;
             position: relative;
-            color: var(--highlighted-text-color); /* Brighter for visibility */
+            background: var(--line-color); /* Gradient for line */
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
         }
 
         .section-heading::before,
         .section-heading::after {
             content: '';
             position: absolute;
-            width: 50%; /* Longer lines */
-            height: 2px; /* Thicker lines */
-            background-color: var(--line-color); /* More vibrant lines */
-            top: 50%; /* Centered line */
+            width: 40%;
+            height: 1px;
+            background: var(--line-color);
+            top: 50%;
         }
 
         .section-heading::before {
