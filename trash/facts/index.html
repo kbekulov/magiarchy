@@ -45,55 +45,35 @@
             margin: 8px 0;
             background: rgba(50, 50, 60, 0.8);
             border-radius: 5px;
-            display: flex;
-            justify-content: space-between; /* Aligns text and icon properly */
-            align-items: center; /* Ensures vertical alignment */
+            cursor: pointer;
             transition: background-color 0.3s, box-shadow 0.3s;
-            font-size: 1rem;
-            font-weight: bold;
-            overflow: hidden; /* Prevent content spillover */
         }
         
         .region-list ul li:hover {
-            background: rgba(80, 160, 120, 0.9); /* Brighter background on hover */
-            box-shadow: 0 0 8px rgba(80, 160, 120, 0.8); /* Subtle glow effect */
+            background: rgba(80, 160, 120, 0.8);
+            box-shadow: 0 0 8px rgba(80, 160, 120, 0.6);
         }
         
-        .region-list ul li span.icon {
-            font-size: 1.5rem;
-        }
-        
-        .region-list ul li span.icon.checkmark {
-            color: #51a078; /* Green for true */
-        }
-        
-        .region-list ul li span.icon.cross {
-            color: #c83d3d; /* Red for false */
-        }
-        
-        /* Fact Description */
+        /* Hidden Descriptions */
         .region-list ul li .fact-description {
-            max-height: 0; /* Fully collapsed by default */
-            overflow: hidden; /* Prevent hidden content from affecting layout */
-            opacity: 0; /* Hidden initially */
-            transform: scaleY(0); /* Collapsed scale */
-            transform-origin: top; /* Animate from top down */
-            margin: 0; /* No margin initially */
-            padding: 0 16px; /* No padding initially */
+            display: block;
+            max-height: 0;
+            overflow: hidden;
+            opacity: 0;
+            margin-top: 8px;
+            padding: 0 10px;
             background: rgba(0, 0, 0, 0.8);
             border-radius: 5px;
             color: white;
             font-size: 0.9rem;
-            line-height: 1.5;
-            transition: transform 0.3s ease, opacity 0.3s ease, padding 0.3s ease;
+            position: relative;
+            transition: all 0.3s ease; /* Smooth transition for height and opacity */
         }
         
         .region-list ul li:hover .fact-description {
-            max-height: 300px; /* Allow space for expanded content */
-            opacity: 1; /* Fully visible */
-            transform: scaleY(1); /* Expand scale */
-            margin-top: 8px; /* Add margin on expansion */
-            padding: 10px 16px; /* Add padding for expanded state */
+            max-height: 100px; /* Arbitrary value to fit your longest description */
+            opacity: 1;
+            padding: 10px; /* Adds padding when the description is visible */
         }
         
         /* Right Panel (Details Section) */
@@ -119,7 +99,7 @@
         }
         
         .progress-bar.faded {
-            opacity: 0.5;
+            opacity: 0.5; /* Lower opacity for faded bars */
         }
         
         .progress-bar .label {
@@ -155,13 +135,13 @@
             display: flex;
             border-radius: 10px;
             overflow: hidden;
-            width: 100%;
+            width: 100%; /* Maintain consistent width */
         }
         
         .progress-bar.multi-section-bar .section {
             display: flex;
-            align-items: center;
-            justify-content: center;
+            align-items: center; /* Center text vertically */
+            justify-content: center; /* Center text horizontally */
             text-align: center;
             font-weight: bold;
             color: white;
@@ -172,8 +152,7 @@
             border: none;
             border-top: 1px solid rgba(255, 255, 255, 0.3);
             margin: 20px 0;
-        }
-           
+        }        
     </style>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
