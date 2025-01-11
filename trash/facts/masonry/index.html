@@ -5,71 +5,92 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Masonry Facts</title>
     <style>
+        /* Root Theme Variables */
         :root {
-            --dark-grey: #2e2e2e;
-            --light-grey: #444;
-            --blue-accent: #51a078;
-            --red-accent: #c83d3d;
-            --white: #ffffff;
+            --bg-color: #1e1e1e;
+            --card-bg: #2c2c2c;
+            --accent-true: #51a078;
+            --accent-false: #c83d3d;
+            --text-color: #ffffff;
+            --font: 'Arial', sans-serif;
         }
 
+        /* Global Styles */
         body {
             margin: 0;
-            font-family: Arial, sans-serif;
-            background-color: var(--dark-grey);
-            color: var(--white);
+            padding: 0;
+            font-family: var(--font);
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
         }
 
+        h1 {
+            text-align: center;
+            color: var(--accent-true);
+            margin-top: 20px;
+        }
+
+        /* Masonry Layout Container */
         .container {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-            grid-gap: 15px;
-            grid-auto-rows: 10px; /* Base row height */
+            gap: 20px;
+            width: 90%;
+            max-width: 1200px;
+            margin: 20px auto;
+        }
+
+        /* Individual Fact Card */
+        .card {
+            background-color: var(--card-bg);
+            border-radius: 10px;
             padding: 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            display: flex;
+            flex-direction: column;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
 
-        .fact {
-            background-color: var(--light-grey);
-            border-radius: 8px;
-            padding: 15px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            transition: transform 0.3s, box-shadow 0.3s;
-            grid-row: span calc((var(--content-height) / 10) + 1); /* Adjust height dynamically */
-        }
-
-        .fact:hover {
+        .card:hover {
             transform: scale(1.05);
-            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5);
         }
 
-        .fact-header {
-            font-weight: bold;
+        /* Card Header */
+        .card-header {
             font-size: 1.2em;
+            font-weight: bold;
+            margin-bottom: 10px;
         }
 
-        .fact-header[data-truth="true"] {
-            color: var(--blue-accent);
+        .card-header[data-truth="true"] {
+            color: var(--accent-true);
         }
 
-        .fact-header[data-truth="false"] {
-            color: var(--red-accent);
+        .card-header[data-truth="false"] {
+            color: var(--accent-false);
         }
 
-        .fact-description {
-            margin-top: 10px;
-            font-size: 0.95em;
-            line-height: 1.5;
-        }
-
-        .footer {
-            text-align: center;
-            padding: 15px;
+        /* Card Description */
+        .card-description {
             font-size: 0.9em;
-            color: var(--light-grey);
+            line-height: 1.6;
+        }
+
+        /* Footer */
+        .footer {
+            margin-top: 20px;
+            text-align: center;
+            color: var(--text-color);
         }
 
         .footer a {
-            color: var(--blue-accent);
+            color: var(--accent-true);
             text-decoration: none;
         }
 
@@ -80,8 +101,9 @@
 </head>
 <body>
 
+<h1>Masonry Facts</h1>
 <div class="container" id="facts-container">
-    <!-- Facts will be dynamically added here -->
+    <!-- Facts will be dynamically injected here -->
 </div>
 
 <div class="footer">
@@ -89,36 +111,37 @@
 </div>
 
 <script>
+    // Load Facts Dynamically
     async function loadFacts() {
         try {
-            const response = await fetch('data.json');
+            const response = await fetch('data.json'); // Ensure `data.json` is in the same directory
             const data = await response.json();
             const factsContainer = document.getElementById('facts-container');
 
             data.facts.forEach(fact => {
-                const factElement = document.createElement('div');
-                factElement.className = 'fact';
-                factElement.innerHTML = `
-                    <div class="fact-header" data-truth="${fact.isTrue}">
+                // Create Card Element
+                const card = document.createElement('div');
+                card.className = 'card';
+
+                // Add Header and Description
+                card.innerHTML = `
+                    <div class="card-header" data-truth="${fact.isTrue}">
                         ${fact.text}
                     </div>
-                    <div class="fact-description">
+                    <div class="card-description">
                         ${fact.description}
                     </div>
                 `;
 
-                // Append the fact to measure its content height
-                factsContainer.appendChild(factElement);
-
-                // Calculate content height
-                const contentHeight = factElement.offsetHeight;
-                factElement.style.setProperty('--content-height', contentHeight);
+                // Append Card to Container
+                factsContainer.appendChild(card);
             });
         } catch (error) {
             console.error('Error loading facts:', error);
         }
     }
 
+    // Load Facts on Page Load
     loadFacts();
 </script>
 
