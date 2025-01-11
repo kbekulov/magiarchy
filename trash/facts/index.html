@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Military Personnel Comparison</title>
-    <style>/* General Styles */
+    <style>
+        /* General Styles */
         body {
             font-family: 'Segoe UI', Arial, sans-serif;
             margin: 0;
@@ -54,19 +55,27 @@
             box-shadow: 0 0 8px rgba(80, 160, 120, 0.6);
         }
 
+        /* Smooth Transition for Fact Descriptions */
         .region-list ul li .fact-description {
-            display: none; /* Hidden by default */
-            margin-top: 8px;
-            padding: 10px;
+            display: block; /* Always render the element to allow for transitions */
+            max-height: 0; /* Collapsed initially */
+            overflow: hidden; /* Hide content when collapsed */
+            margin-top: 0; /* No margin initially */
+            padding: 0; /* No padding initially */
+            opacity: 0; /* Fully transparent initially */
             background: rgba(0, 0, 0, 0.8);
             border-radius: 5px;
             color: white;
             font-size: 0.9rem;
-            position: relative; /* Keeps it within the list item */
+            position: relative;
+            transition: all 0.3s ease; /* Smooth transition for all properties */
         }
 
         .region-list ul li:hover .fact-description {
-            display: block; /* Show on hover */
+            max-height: 150px; /* Expand to fit the content */
+            margin-top: 8px; /* Add margin */
+            padding: 10px; /* Add padding */
+            opacity: 1; /* Fully visible */
         }
 
         /* Right Panel (Details Section) */
@@ -145,7 +154,7 @@
             border: none;
             border-top: 1px solid rgba(255, 255, 255, 0.3);
             margin: 20px 0;
-        }        
+        }
     </style>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
