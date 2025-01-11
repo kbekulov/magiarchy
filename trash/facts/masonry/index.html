@@ -3,18 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Elegant Masonry Layout</title>
+    <title>Refined Frosty Masonry Layout</title>
     <style>
         :root {
-            --background-color: #0e0e0e; /* Very dark grey for strong contrast */
-            --true-color: rgba(100, 160, 230, 0.9); /* Cool blue */
-            --true-gradient: linear-gradient(135deg, rgba(100, 160, 230, 0.9), rgba(50, 120, 200, 0.9));
-            --false-color: rgba(220, 70, 70, 0.9); /* Warm red */
-            --false-gradient: linear-gradient(135deg, rgba(220, 70, 70, 0.9), rgba(180, 40, 40, 0.9));
-            --header-color: rgba(255, 255, 255, 0.2); /* Frosted header background */
-            --line-color: rgba(255, 255, 255, 0.7); /* Brighter line for contrast */
+            --background-color: #101010; /* Very dark grey background */
+            --true-color: rgba(100, 170, 255, 0.9); /* Soft frosty cyan */
+            --true-gradient: linear-gradient(135deg, rgba(100, 170, 255, 0.9), rgba(60, 130, 220, 0.9));
+            --false-color: rgba(210, 70, 70, 0.9); /* Warm frosty red */
+            --false-gradient: linear-gradient(135deg, rgba(210, 70, 70, 0.9), rgba(170, 50, 50, 0.9));
+            --header-gradient: linear-gradient(135deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.05)); /* Frosted header background */
+            --line-color: rgba(200, 200, 200, 0.5); /* Softer line */
+            --border-color: rgba(255, 255, 255, 0.1); /* Subtle border */
             --text-color: #e8f0fa; /* Light cool white */
-            --faded-text-color: rgba(232, 240, 250, 0.9); /* Softer faded text */
+            --faded-text-color: rgba(232, 240, 250, 0.8); /* Softer faded text */
+            --highlighted-text-color: rgba(232, 240, 250, 1); /* Enhanced visibility */
             --card-padding: 15px;
             --card-radius: 12px; /* Rounded corners for elegance */
             --card-shadow: rgba(0, 0, 0, 0.4); /* Soft shadow */
@@ -29,22 +31,26 @@
             flex-direction: column;
             align-items: center;
             min-height: 100vh;
+            background-repeat: no-repeat;
+            background-size: cover;
         }
 
         h1 {
             margin-top: 20px;
             color: var(--text-color);
-            font-size: 2rem;
+            font-size: 2.2rem;
+            letter-spacing: 1px;
             text-align: center;
-            text-shadow: 0 2px 6px rgba(0, 0, 0, 0.6);
+            text-shadow: 0 2px 6px rgba(0, 0, 0, 0.6), 0 4px 8px rgba(60, 120, 200, 0.5); /* Subtle glow */
         }
 
         /* Masonry Container */
         .masonry-container {
             position: relative;
-            max-width: 1200px;
-            width: 90%;
-            margin: 20px auto;
+            max-width: 1400px; /* Allow wider layouts for larger screens */
+            width: 90%; /* Utilize more screen space */
+            margin: 20px auto; /* Center the container */
+            padding: 10px; /* Add padding for breathing space */
         }
 
         /* Masonry Brick */
@@ -52,15 +58,15 @@
             position: absolute;
             width: calc(33.333% - 20px);
             box-sizing: border-box;
-            background-image: var(--true-gradient); /* Default gradient */
+            background-image: var(--true-gradient); /* Default gradient for initialization */
             color: var(--text-color);
             border-radius: var(--card-radius);
             padding: var(--card-padding);
             padding-top: 50px;
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            backdrop-filter: blur(8px); /* Frosted glass effect */
-            box-shadow: 0 4px 8px var(--card-shadow);
-            transition: transform 0.3s, box-shadow 0.3s;
+            border: 1px solid var(--border-color);
+            backdrop-filter: blur(10px); /* Frosted glass effect */
+            box-shadow: 0 4px 8px var(--card-shadow), 0 6px 12px rgba(60, 120, 200, 0.2); /* Layered shadows */
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
 
         .masonry-brick[data-truth="true"] {
@@ -73,7 +79,7 @@
 
         .masonry-brick:hover {
             transform: translateY(-6px);
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5), 0 12px 24px var(--card-shadow);
         }
 
         /* Header for True/False */
@@ -87,7 +93,8 @@
             text-align: center;
             font-size: 1rem;
             font-weight: bold;
-            background-color: var(--header-color);
+            border-radius: var(--card-radius) var(--card-radius) 0 0;
+            background: var(--header-gradient); /* Gradient header */
             color: var(--faded-text-color);
         }
 
@@ -101,19 +108,18 @@
         .section-heading {
             margin: 20px 0 10px;
             font-size: 1.1rem;
-            font-weight: bold;
+            font-weight: normal; /* Removed bold for softer emphasis */
             text-align: center;
-            color: var(--text-color);
-            text-shadow: 0 1px 2px rgba(0, 0, 0, 0.4); /* Subtle shadow for clarity */
             position: relative;
+            color: var(--highlighted-text-color); /* Softer focus */
         }
 
         .section-heading::before,
         .section-heading::after {
             content: '';
             position: absolute;
-            width: 40%; /* Longer lines for elegance */
-            height: 2px; /* Thicker lines */
+            width: 40%; /* Appropriate line width */
+            height: 1px; /* Softer lines */
             background-color: var(--line-color);
             top: 50%; /* Centered line */
         }
@@ -129,6 +135,7 @@
         .brick-description {
             font-size: 1rem;
             line-height: 1.6;
+            color: var(--text-color);
         }
 
         /* Footer */
@@ -146,6 +153,7 @@
 
         .footer a:hover {
             text-decoration: underline;
+            color: var(--true-color);
         }
 
         /* Responsive Design */
@@ -164,7 +172,7 @@
 </head>
 <body>
 
-<h1>Elegant Masonry Layout</h1>
+<h1>Refined Frosty Masonry Layout</h1>
 <div class="masonry-container" id="masonry-container"></div>
 
 <div class="footer">
