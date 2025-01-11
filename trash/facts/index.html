@@ -45,9 +45,7 @@
             margin: 8px 0;
             background: rgba(50, 50, 60, 0.8);
             border-radius: 5px;
-            display: flex;
-            justify-content: flex-start; /* Align text and icon properly */
-            align-items: center; /* Vertical alignment */
+            display: block; /* Stack elements vertically */
             transition: background-color 0.3s, box-shadow 0.3s;
             cursor: pointer;
         }
@@ -59,16 +57,15 @@
         
         /* Fact Text */
         .region-list ul li .fact-text {
-            flex: 1; /* Take up available space */
-            margin-right: 32px; /* Ensure space between text and icon */
-            font-size: 1rem;
-            font-weight: bold;
+            display: inline-block; /* Keep the fact text inline */
+            margin-bottom: 8px; /* Space between text and description */
         }
         
         /* Fact Icons */
         .region-list ul li span.icon {
             position: absolute;
-            right: 16px; /* Align to the right of the container */
+            right: 16px; /* Align icon to the right */
+            top: 12px; /* Align icon vertically */
             font-size: 1.5rem;
         }
         
@@ -82,10 +79,11 @@
         
         /* Hidden Descriptions */
         .region-list ul li .fact-description {
+            display: block; /* Allow description to take up space */
             max-height: 0; /* Fully collapsed */
             overflow: hidden; /* Prevent hidden content from affecting layout */
-            opacity: 0; /* Invisible when not expanded */
-            margin: 0; /* Remove any default margin */
+            opacity: 0; /* Invisible by default */
+            margin: 0; /* Remove default margin */
             padding: 0; /* Remove padding when hidden */
             background: rgba(0, 0, 0, 0.8);
             border-radius: 5px;
@@ -97,10 +95,10 @@
         }
         
         .region-list ul li:hover .fact-description {
-            max-height: 150px; /* Fit content when expanded */
-            opacity: 1; /* Fully visible */
+            max-height: 150px; /* Expand to fit content */
+            opacity: 1; /* Make description visible */
             padding: 10px; /* Add padding when visible */
-            margin-top: 8px; /* Add margin between fact and description */
+            margin-top: 8px; /* Space between text and description */
         }
         
         /* Right Panel (Details Section) */
