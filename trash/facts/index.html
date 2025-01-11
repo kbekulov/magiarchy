@@ -59,15 +59,16 @@
         .region-list ul li .fact-text {
             display: inline-block; /* Keep the fact text inline */
             margin-bottom: 8px; /* Space between text and description */
+            line-height: 1.5; /* Ensure vertical alignment with the icon */
         }
         
         /* Fact Icons */
         .region-list ul li span.icon {
             position: absolute;
             right: 16px; /* Align icon to the right */
-            top: 50%; /* Align to the middle of the element */
-            transform: translateY(-50%); /* Correct vertical alignment */
+            top: 12px; /* Lock the icon relative to the top padding */
             font-size: 1.5rem;
+            transform: none; /* Remove centering behavior */
         }
         
         .region-list ul li span.icon.checkmark {
@@ -80,7 +81,7 @@
         
         /* Hidden Descriptions */
         .region-list ul li .fact-description {
-            display: block; /* Allow description to take up space */
+            display: block;
             max-height: 0; /* Fully collapsed */
             overflow: hidden; /* Prevent hidden content from affecting layout */
             opacity: 0; /* Invisible by default */
