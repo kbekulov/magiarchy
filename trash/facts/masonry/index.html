@@ -3,22 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vibrant Frosty Masonry Layout</title>
+    <title>Elegant Frosty Masonry Layout</title>
     <style>
         :root {
-            --background-color: #1a1a1a; /* Darker neutral for contrast */
-            --true-color: rgba(0, 188, 255, 0.9); /* Vibrant Cyan */
-            --true-gradient: linear-gradient(135deg, rgba(0, 188, 255, 0.9), rgba(0, 133, 210, 0.9));
-            --false-color: rgba(255, 71, 87, 0.9); /* Vibrant Red */
-            --false-gradient: linear-gradient(135deg, rgba(255, 71, 87, 0.9), rgba(200, 35, 60, 0.9));
-            --header-color: rgba(255, 255, 255, 0.5); /* Brighter frosted header */
-            --line-color: rgba(255, 255, 255, 0.7); /* Brighter line */
-            --border-color: rgba(255, 255, 255, 0.3); /* Frosty Border */
-            --text-color: #ffffff;
-            --faded-text-color: rgba(255, 255, 255, 0.9); /* More pronounced faded text */
-            --card-padding: 15px;
+            --background-color: #1a1a1a; /* Subtle dark background */
+            --true-color: rgba(60, 170, 190, 0.8); /* Elegant Cyan */
+            --true-gradient: linear-gradient(135deg, rgba(60, 170, 190, 0.9), rgba(40, 120, 140, 0.9));
+            --false-color: rgba(190, 70, 80, 0.8); /* Elegant Ruby Red */
+            --false-gradient: linear-gradient(135deg, rgba(190, 70, 80, 0.9), rgba(140, 40, 50, 0.9));
+            --header-bg: rgba(255, 255, 255, 0.15); /* Subtle frosted header */
+            --line-color: rgba(255, 255, 255, 0.5); /* Elegant line */
+            --border-color: rgba(255, 255, 255, 0.2); /* Subtle border */
+            --text-color: #e6e6e6; /* Soft white text */
+            --faded-text-color: rgba(255, 255, 255, 0.7); /* Muted text color */
             --card-radius: 10px;
-            --card-shadow: rgba(0, 0, 0, 0.4); /* Stronger shadow */
+            --card-shadow: rgba(0, 0, 0, 0.2); /* Softer shadow */
         }
 
         body {
@@ -38,7 +37,7 @@
             font-size: 2rem;
             letter-spacing: 1px;
             text-align: center;
-            text-shadow: 0 0 8px var(--true-color), 0 0 12px var(--false-color);
+            text-shadow: 0 0 6px rgba(255, 255, 255, 0.3);
         }
 
         /* Masonry Container */
@@ -52,32 +51,29 @@
         /* Masonry Brick */
         .masonry-brick {
             position: absolute;
-            width: calc(33.333% - 20px); /* 3 columns with consistent gaps */
+            width: calc(33.333% - 20px); /* 3 columns */
             box-sizing: border-box;
             background-image: var(--true-gradient); /* Default gradient for initialization */
             color: var(--text-color);
             border-radius: var(--card-radius);
-            padding: var(--card-padding);
-            padding-top: 50px; /* Add space for the header */
-            border: 1px solid var(--border-color); /* Frosty border */
-            backdrop-filter: blur(12px); /* Frosted glass effect */
-            box-shadow: 0 6px 12px var(--card-shadow);
+            padding: 15px;
+            padding-top: 50px; /* Space for header */
+            border: 1px solid var(--border-color); /* Subtle border */
+            box-shadow: 0 4px 8px var(--card-shadow);
             transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
 
         .masonry-brick[data-truth="true"] {
             background-image: var(--true-gradient);
-            box-shadow: 0 0 12px var(--true-color);
         }
 
         .masonry-brick[data-truth="false"] {
             background-image: var(--false-gradient);
-            box-shadow: 0 0 12px var(--false-color);
         }
 
         .masonry-brick:hover {
-            transform: translateY(-6px);
-            box-shadow: 0 12px 20px var(--true-color), 0 12px 20px var(--false-color);
+            transform: translateY(-4px);
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
         }
 
         /* Header for True/False */
@@ -91,17 +87,15 @@
             text-align: center;
             font-size: 1rem;
             font-weight: bold;
-            border-radius: var(--card-radius) var(--card-radius) 0 0;
-            background-color: var(--header-color);
             color: var(--faded-text-color);
-            text-shadow: 0 0 5px var(--text-color);
+            background-color: var(--header-bg);
+            border-radius: var(--card-radius) var(--card-radius) 0 0;
         }
 
         .brick-title {
             font-size: 1.3rem;
             font-weight: bold;
             margin-bottom: 10px;
-            text-shadow: 0 0 8px var(--true-color);
         }
 
         /* Section Heading */
@@ -110,9 +104,7 @@
             font-size: 1rem;
             font-weight: bold;
             text-align: center;
-            position: relative;
             color: var(--faded-text-color);
-            text-shadow: 0 4px 6px var(--line-color);
         }
 
         .section-heading::before,
@@ -122,7 +114,7 @@
             width: 40%;
             height: 1px;
             background-color: var(--line-color);
-            top: 50%; /* Centered line */
+            top: 50%;
         }
 
         .section-heading::before {
@@ -142,7 +134,7 @@
         .footer {
             margin-top: 20px;
             text-align: center;
-            color: var(--text-color);
+            color: var(--faded-text-color);
             font-size: 0.9rem;
         }
 
@@ -153,7 +145,6 @@
 
         .footer a:hover {
             text-decoration: underline;
-            text-shadow: 0 0 8px var(--true-color);
         }
 
         /* Responsive Design */
@@ -172,7 +163,7 @@
 </head>
 <body>
 
-<h1>Vibrant Frosty Masonry Layout</h1>
+<h1>Elegant Frosty Masonry Layout</h1>
 <div class="masonry-container" id="masonry-container"></div>
 
 <div class="footer">
