@@ -46,8 +46,7 @@
             background: rgba(50, 50, 60, 0.8);
             border-radius: 5px;
             display: flex;
-            justify-content: space-between;
-            align-items: center;
+            flex-direction: column;
             transition: background-color 0.3s, box-shadow 0.3s;
             font-size: 1rem;
             font-weight: bold;
@@ -59,8 +58,8 @@
         }
         
         .region-list ul li span.icon {
+            margin-left: auto; /* Align icon to the right */
             font-size: 1.5rem;
-            margin-left: 10px;
         }
         
         .region-list ul li span.icon.checkmark {
@@ -71,26 +70,25 @@
             color: #c83d3d; /* Red for false */
         }
         
-        /* Hidden Descriptions */
+        /* Fact Description */
         .region-list ul li .fact-description {
-            display: block;
-            max-height: 0;
+            max-height: 0; /* Collapsed by default */
             overflow: hidden;
             opacity: 0;
             margin-top: 8px;
-            padding: 0 10px;
+            padding: 0;
             background: rgba(0, 0, 0, 0.8);
             border-radius: 5px;
             color: white;
             font-size: 0.9rem;
-            position: relative;
-            transition: all 0.3s ease; /* Smooth transition for height and opacity */
+            line-height: 1.5;
+            transition: all 0.3s ease; /* Smooth expand/collapse */
         }
         
         .region-list ul li:hover .fact-description {
-            max-height: 100px; /* Arbitrary value to fit your longest description */
+            max-height: 200px; /* Arbitrary value to fit long descriptions */
             opacity: 1;
-            padding: 10px; /* Adds padding when the description is visible */
+            padding: 10px;
         }
         
         /* Right Panel (Details Section) */
