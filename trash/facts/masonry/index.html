@@ -3,22 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sci-Fi Masonry Layout</title>
+    <title>Gradient-Enhanced Masonry Layout</title>
     <style>
         :root {
-            --background-color: linear-gradient(135deg, #0b0f2c, #1a213c); /* Dark blue gradient */
-            --true-color: rgba(100, 180, 240, 0.85); /* Light cyan */
-            --true-gradient: linear-gradient(135deg, rgba(100, 180, 240, 0.85), rgba(60, 120, 200, 0.85));
+            --background-color: linear-gradient(135deg, #0b0f2c, #1a213c, #001229); /* Enhanced dark blue gradient */
+            --true-color: rgba(80, 150, 255, 0.85); /* Vibrant Cyan */
+            --true-gradient: linear-gradient(135deg, rgba(80, 150, 255, 0.9), rgba(30, 110, 240, 0.85), rgba(10, 50, 160, 0.85));
             --false-color: rgba(220, 80, 80, 0.85); /* Vibrant red */
-            --false-gradient: linear-gradient(135deg, rgba(220, 80, 80, 0.85), rgba(180, 50, 50, 0.85));
-            --header-color: rgba(255, 255, 255, 0.1); /* Subtle frosted header */
-            --line-color: rgba(180, 180, 200, 0.3); /* Muted steel gray */
+            --false-gradient: linear-gradient(135deg, rgba(240, 100, 100, 0.9), rgba(200, 50, 50, 0.85), rgba(120, 20, 20, 0.85));
+            --header-color: linear-gradient(90deg, rgba(255, 255, 255, 0.15), rgba(200, 200, 255, 0.05)); /* Header gradient */
+            --line-color: rgba(180, 180, 200, 0.4); /* Slightly more pronounced steel gray */
             --border-color: rgba(255, 255, 255, 0.1); /* Subtle border */
             --text-color: #e8f0fa; /* Light cool white */
-            --faded-text-color: rgba(232, 240, 250, 0.7); /* Softer faded text */
+            --faded-text-color: rgba(232, 240, 250, 0.8); /* Softer faded text */
             --card-padding: 15px;
             --card-radius: 12px; /* Rounded corners for elegance */
-            --card-shadow: rgba(0, 0, 0, 0.5); /* Stronger shadow for depth */
+            --card-shadow: rgba(0, 0, 0, 0.6); /* Stronger shadow for depth */
         }
 
         body {
@@ -40,6 +40,7 @@
             font-size: 2rem;
             letter-spacing: 1px;
             text-align: center;
+            text-shadow: 0 0 10px rgba(80, 150, 255, 0.6), 0 0 15px rgba(220, 80, 80, 0.6); /* Dynamic glow */
         }
 
         /* Masonry Container */
@@ -63,7 +64,7 @@
             padding-top: 50px;
             border: 1px solid var(--border-color);
             backdrop-filter: blur(10px); /* Frosted glass effect */
-            box-shadow: 0 4px 8px var(--card-shadow);
+            box-shadow: 0 4px 8px var(--card-shadow); /* Subtle depth */
             transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
 
@@ -76,8 +77,8 @@
         }
 
         .masonry-brick:hover {
-            transform: translateY(-4px);
-            box-shadow: 0 8px 16px var(--card-shadow);
+            transform: translateY(-6px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
         }
 
         /* Header for True/False */
@@ -92,14 +93,16 @@
             font-size: 1rem;
             font-weight: bold;
             border-radius: var(--card-radius) var(--card-radius) 0 0;
-            background-color: var(--header-color);
+            background: var(--header-color);
             color: var(--faded-text-color);
+            text-shadow: 0 0 6px rgba(255, 255, 255, 0.4);
         }
 
         .brick-title {
             font-size: 1.3rem;
             font-weight: bold;
             margin-bottom: 10px;
+            text-shadow: 0 0 5px rgba(80, 150, 255, 0.6);
         }
 
         /* Section Heading */
@@ -110,6 +113,7 @@
             text-align: center;
             position: relative;
             color: var(--faded-text-color);
+            text-shadow: 0 4px 6px var(--line-color);
         }
 
         .section-heading::before,
@@ -170,7 +174,7 @@
 </head>
 <body>
 
-<h1>Sci-Fi Masonry Layout</h1>
+<h1>Gradient-Enhanced Masonry Layout</h1>
 <div class="masonry-container" id="masonry-container"></div>
 
 <div class="footer">
