@@ -94,7 +94,10 @@
             position: relative;
             transition: all 0.3s ease; /* Smooth transition for height and opacity */
         }
-        
+        .region-list ul li:hover span.icon {
+            opacity: 0;
+            transition: opacity 0.3s ease; /* Smooth transition for disappearing */
+        }
         .region-list ul li:hover .fact-description {
             max-height: 150px; /* Expand to fit content */
             opacity: 1; /* Make description visible */
