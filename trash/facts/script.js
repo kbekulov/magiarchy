@@ -3,8 +3,12 @@ document.addEventListener("DOMContentLoaded", () => {
     const factsList = document.getElementById("facts-list");
     data.facts.forEach(fact => {
         const li = document.createElement("li");
-        li.style.backgroundColor = fact.color;
-        li.innerHTML = `${fact.text} <span class="icon"><i class="fas ${fact.isTrue ? 'fa-check' : 'fa-times'}"></i></span>`;
+        li.style.backgroundColor = fact.color; // Set background color based on true/false
+        li.innerHTML = `
+            ${fact.text} 
+            <span class="icon"><i class="fas ${fact.isTrue ? 'fa-check' : 'fa-times'}"></i></span>
+            <p class="fact-description">${fact.description}</p>
+        `;
         factsList.appendChild(li);
     });
 
@@ -13,7 +17,7 @@ document.addEventListener("DOMContentLoaded", () => {
     data.armyStats.forEach(stat => {
         const div = document.createElement("div");
         div.classList.add("progress-item");
-        if (stat.faded) div.classList.add("faded");
+        if (stat.faded) div.classList.add("faded"); // Add faded class if applicable
         div.innerHTML = `
             <div class="progress-bar">
                 <span class="label">${stat.label}: ${stat.personnel.toLocaleString()} personnel</span>
@@ -27,7 +31,7 @@ document.addEventListener("DOMContentLoaded", () => {
     data.territorialControl.forEach(control => {
         const div = document.createElement("div");
         div.classList.add("progress-item");
-        if (control.faded) div.classList.add("faded");
+        if (control.faded) div.classList.add("faded"); // Add faded class if applicable
         div.innerHTML = `
             <div class="progress-bar">
                 <span class="label">${control.label}: ${control.area.toLocaleString()} sq. km</span>
@@ -39,11 +43,10 @@ document.addEventListener("DOMContentLoaded", () => {
     // Populate Combat Losses
     const combatLosses = document.getElementById("combat-losses");
     data.combatLosses.forEach((loss, index) => {
-        // Adjust scale for Russia (80%) and Ukraine (100%)
+        // Scale Russia (80%) and Ukraine (100%)
         const scale = index === 0 ? "80%" : "100%";
         const div = document.createElement("div");
         div.classList.add("progress-item");
-
         div.innerHTML = `
             <div class="progress-bar multi-section-bar" style="width: ${scale}; display: flex; border-radius: 10px; overflow: hidden;">
                 <div class="section" style="background-color: #404040; flex: 1;">
