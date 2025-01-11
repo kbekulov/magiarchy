@@ -3,17 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Stylish Masonry Layout</title>
+    <title>Frosty Masonry Layout</title>
     <style>
         :root {
             --background-color: #1e1e1e;
-            --true-color: #1e6f86; /* Colder Cyan Blue */
-            --true-gradient: linear-gradient(135deg, #1e6f86, #278ca5); /* Colder Cyan Gradient */
-            --false-color: #9b2d30; /* Colder Crimson Red */
-            --false-gradient: linear-gradient(135deg, #9b2d30, #b14549); /* Cooler Red Gradient */
-            --true-header-color: #174e5e; /* Even Darker Cyan for True Header */
-            --false-header-color: #7b2326; /* Even Darker Crimson for False Header */
-            --line-color: rgba(255, 255, 255, 0.4); /* Line color */
+            --true-color: rgba(30, 111, 134, 0.8); /* Frosty Cyan */
+            --true-gradient: linear-gradient(135deg, rgba(30, 111, 134, 0.8), rgba(39, 140, 165, 0.8));
+            --false-color: rgba(155, 45, 48, 0.8); /* Frosty Crimson */
+            --false-gradient: linear-gradient(135deg, rgba(155, 45, 48, 0.8), rgba(177, 69, 73, 0.8));
+            --header-color: rgba(255, 255, 255, 0.3); /* Frosted Header Background */
+            --line-color: rgba(255, 255, 255, 0.6); /* Line color */
+            --border-color: rgba(255, 255, 255, 0.2); /* Frosty Border */
             --text-color: #ffffff;
             --faded-text-color: rgba(255, 255, 255, 0.7); /* Faded text color */
             --card-padding: 15px;
@@ -52,12 +52,13 @@
             position: absolute;
             width: calc(33.333% - 20px); /* 3 columns with consistent gaps */
             box-sizing: border-box;
-            background-color: var(--background-color);
             background-image: var(--true-gradient); /* Default gradient for initialization */
             color: var(--text-color);
             border-radius: var(--card-radius);
             padding: var(--card-padding);
             padding-top: 50px; /* Add space for the header */
+            border: 1px solid var(--border-color); /* Frosty border */
+            backdrop-filter: blur(10px); /* Frosted glass effect */
             box-shadow: 0 4px 8px var(--card-shadow);
             transition: transform 0.3s, box-shadow 0.3s;
         }
@@ -87,15 +88,9 @@
             font-size: 0.9rem;
             font-weight: bold;
             border-radius: var(--card-radius) var(--card-radius) 0 0;
+            background-color: var(--header-color);
             color: var(--faded-text-color);
-        }
-
-        .brick-header[data-truth="true"] {
-            background-color: var(--true-header-color);
-        }
-
-        .brick-header[data-truth="false"] {
-            background-color: var(--false-header-color);
+            backdrop-filter: blur(5px); /* Frosted glass header */
         }
 
         .brick-title {
@@ -112,15 +107,7 @@
             text-align: center;
             position: relative;
             color: var(--faded-text-color);
-            text-shadow: 0 4px 6px var(--background-color); /* Default shadow */
-        }
-
-        .section-heading[data-truth="true"] {
-            text-shadow: 0 4px 6px var(--true-color); /* Blurry shadow for "True" */
-        }
-
-        .section-heading[data-truth="false"] {
-            text-shadow: 0 4px 6px var(--false-color); /* Blurry shadow for "False" */
+            text-shadow: 0 4px 6px rgba(255, 255, 255, 0.2); /* Frosty text shadow */
         }
 
         .section-heading::before,
@@ -179,7 +166,7 @@
 </head>
 <body>
 
-<h1>Stylish Masonry Layout</h1>
+<h1>Frosty Masonry Layout</h1>
 <div class="masonry-container" id="masonry-container"></div>
 
 <div class="footer">
@@ -222,11 +209,11 @@
                 brick.setAttribute('data-truth', fact.isTrue);
 
                 brick.innerHTML = `
-                    <div class="brick-header" data-truth="${fact.isTrue}">
+                    <div class="brick-header">
                         ${fact.isTrue ? 'True' : 'False'}
                     </div>
                     <div class="brick-title">${fact.text}</div>
-                    <div class="section-heading" data-truth="${fact.isTrue}">
+                    <div class="section-heading">
                         &nbsp;&nbsp;${fact.isTrue ? "Why it's true:" : "Why it's false:"}&nbsp;&nbsp;
                     </div>
                     <div class="brick-description">${fact.description}</div>
