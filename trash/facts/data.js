@@ -15,17 +15,17 @@ const data = {
         { "text": "Russia might decide to invade NATO later", "isTrue": true, "color": "#51a078" }
     ],
     "armyStats": [
-        { "label": "Russian Army", "personnel": 1500000, "barLength": "100%" },
-        { "label": "Ukraine Army", "personnel": 1260000, "barLength": "84%" },
-        { "label": "French Army", "personnel": 270000, "barLength": "18%" },
-        { "label": "British Army", "personnel": 136525, "barLength": "9.1%" },
-        { "label": "German Army", "personnel": 180215, "barLength": "12.01%" },
-        { "label": "Polish Army", "personnel": 256100, "barLength": "17.07%" },
-        { "label": "US Army", "personnel": 954875, "barLength": "63.66%" }
+        { "label": "Russian Army", "personnel": 1500000, "barLength": "100%", "faded": false },
+        { "label": "Ukraine Army", "personnel": 1260000, "barLength": "84%", "faded": false },
+        { "label": "French Army", "personnel": 270000, "barLength": "18%", "faded": true },
+        { "label": "British Army", "personnel": 136525, "barLength": "9.1%", "faded": true },
+        { "label": "German Army", "personnel": 180215, "barLength": "12.01%", "faded": true },
+        { "label": "Polish Army", "personnel": 256100, "barLength": "17.07%", "faded": true },
+        { "label": "US Army", "personnel": 954875, "barLength": "63.66%", "faded": true }
     ],
     "territorialControl": [
-        { "label": "Russian occupation of Ukraine", "area": 109000, "barLength": "100%" },
-        { "label": "Ukrainian occupation of Russia", "area": 500, "barLength": "0.5%" }
+        { "label": "Russian occupation of Ukraine", "area": 109000, "barLength": "100%", "faded": false },
+        { "label": "Ukrainian occupation of Russia", "area": 500, "barLength": "0.5%", "faded": false }
     ],
     "combatLosses": [
         {

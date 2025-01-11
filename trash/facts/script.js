@@ -13,6 +13,7 @@ document.addEventListener("DOMContentLoaded", () => {
     data.armyStats.forEach(stat => {
         const div = document.createElement("div");
         div.classList.add("progress-item");
+        if (stat.faded) div.classList.add("faded");
         div.innerHTML = `
             <div class="progress-bar">
                 <span class="label">${stat.label}: ${stat.personnel.toLocaleString()} personnel</span>
@@ -26,6 +27,7 @@ document.addEventListener("DOMContentLoaded", () => {
     data.territorialControl.forEach(control => {
         const div = document.createElement("div");
         div.classList.add("progress-item");
+        if (control.faded) div.classList.add("faded");
         div.innerHTML = `
             <div class="progress-bar">
                 <span class="label">${control.label}: ${control.area.toLocaleString()} sq. km</span>
