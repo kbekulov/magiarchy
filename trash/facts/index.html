@@ -51,6 +51,7 @@
             transition: background-color 0.3s, box-shadow 0.3s;
             font-size: 1rem;
             font-weight: bold;
+            overflow: hidden; /* Prevent content spillover */
         }
         
         .region-list ul li:hover {
@@ -72,27 +73,27 @@
         
         /* Fact Description */
         .region-list ul li .fact-description {
-            max-height: 0; /* Initially hidden */
-            overflow: hidden; /* Prevent content overflow */
-            opacity: 0; /* Invisible by default */
-            transform: scaleY(0); /* Scale to hide content */
+            max-height: 0; /* Fully collapsed by default */
+            overflow: hidden; /* Prevent hidden content from affecting layout */
+            opacity: 0; /* Hidden initially */
+            transform: scaleY(0); /* Collapsed scale */
             transform-origin: top; /* Animate from top down */
-            margin-top: 0; /* No margin by default */
-            padding: 0 16px; /* No padding by default */
+            margin: 0; /* No margin initially */
+            padding: 0 16px; /* No padding initially */
             background: rgba(0, 0, 0, 0.8);
             border-radius: 5px;
             color: white;
             font-size: 0.9rem;
             line-height: 1.5;
-            transition: transform 0.3s ease, opacity 0.3s ease;
+            transition: transform 0.3s ease, opacity 0.3s ease, padding 0.3s ease;
         }
         
         .region-list ul li:hover .fact-description {
-            max-height: none; /* Allow full height */
+            max-height: 300px; /* Allow space for expanded content */
             opacity: 1; /* Fully visible */
-            transform: scaleY(1); /* Expand vertically */
-            margin-top: 8px; /* Add margin above */
-            padding: 10px 16px; /* Add padding for content */
+            transform: scaleY(1); /* Expand scale */
+            margin-top: 8px; /* Add margin on expansion */
+            padding: 10px 16px; /* Add padding for expanded state */
         }
         
         /* Right Panel (Details Section) */
