@@ -40,7 +40,7 @@ const data = {
             "text": "The West did everything to prevent it", 
             "isTrue": false, 
             "color": "#c83d3d",
-            "description": "By the time of Russia's invasion in 2022, Western nations issued ultimatums instead of pursuing a balanced resolution, with President Biden warning Putin, /"Don't do it; you will lose./" After the invasion on February 24, 2022, the US and NATO focused on arming Ukraine, offering little effort to bring both sides to the negotiating table."
+            "description": "By the time of Russia's invasion in 2022, Western nations issued ultimatums instead of pursuing a balanced resolution, with President Biden warning Putin: Don't do it; you will lose. After the invasion on February 24, 2022, the US and NATO focused on arming Ukraine, offering little effort to bring both sides to the negotiating table."
         },
         { 
             "text": "Russia could just pack-up and leave", 
@@ -64,7 +64,7 @@ const data = {
             "text": "Russia suffered ~800,000 killed in combat", 
             "isTrue": false, 
             "color": "#c83d3d",
-            "description": "In military conflicts, the ratio of killed to wounded (KIA:WIA) is typically 1:3, meaning there are usually more wounded than killed. \"Casualties\" include both, so if Russia is reported to have ~800,000 casualties, only about 30% are likely fatalities, with the rest wounded and potentially returning to duty after treatment."
+            "description": "In military conflicts, the ratio of killed to wounded (KIA:WIA) is typically 1:3, meaning there are usually more wounded than killed. Casualties include both, so if Russia is reported to have ~800,000 casualties, only about 30% are likely fatalities, with the rest wounded and potentially returning to duty after treatment."
         },
         { 
             "text": "Ukraine suffered ~50,000 killed in combat", 
