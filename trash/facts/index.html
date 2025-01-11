@@ -72,24 +72,27 @@
         
         /* Fact Description */
         .region-list ul li .fact-description {
-            max-height: 0;
+            max-height: 0; /* Initially hidden */
             overflow: hidden; /* Prevent content overflow */
             opacity: 0; /* Invisible by default */
-            margin-top: 0;
-            padding: 0 16px; /* Inline padding for consistency */
+            transform: scaleY(0); /* Scale to hide content */
+            transform-origin: top; /* Animate from top down */
+            margin-top: 0; /* No margin by default */
+            padding: 0 16px; /* No padding by default */
             background: rgba(0, 0, 0, 0.8);
             border-radius: 5px;
             color: white;
             font-size: 0.9rem;
             line-height: 1.5;
-            transition: all 0.4s ease; /* Smooth transition for height, opacity, and padding */
+            transition: transform 0.3s ease, opacity 0.3s ease;
         }
         
         .region-list ul li:hover .fact-description {
-            max-height: 300px; /* Allow enough height for long descriptions */
+            max-height: none; /* Allow full height */
             opacity: 1; /* Fully visible */
-            margin-top: 8px; /* Add space between description and fact text */
-            padding: 10px 16px; /* Add padding when expanded */
+            transform: scaleY(1); /* Expand vertically */
+            margin-top: 8px; /* Add margin above */
+            padding: 10px 16px; /* Add padding for content */
         }
         
         /* Right Panel (Details Section) */
