@@ -109,6 +109,22 @@
         .progress-item.faded .progress-bar {
             opacity: 0.5;
         }
+        .progress-bar.multi-section-bar {
+            display: flex;
+            border-radius: 10px;
+            overflow: hidden;
+            align-items: center; /* Ensure proper alignment */
+            justify-content: space-between; /* Add spacing between sections */
+        }
+
+        .progress-bar.multi-section-bar .section {
+            display: flex;
+            align-items: center; /* Vertically center text */
+            justify-content: center; /* Horizontally center text */
+            text-align: center;
+            font-weight: bold;
+            color: white;
+        }
         hr {
             border: none;
             border-top: 1px solid rgba(255, 255, 255, 0.3);
