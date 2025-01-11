@@ -118,7 +118,7 @@
             width: 40%;
             height: 1px;
             background-color: var(--line-color);
-            top: 55%; /* Move the lines slightly away from the text */
+            top: 50%; /* Keep lines vertically centered */
         }
 
         .section-heading::before {
@@ -215,7 +215,7 @@
                     </div>
                     <div class="brick-title">${fact.text}</div>
                     <div class="section-heading">
-                        ${fact.isTrue ? "Why it's true:" : "Why it's false:"}
+                        &nbsp;&nbsp;${fact.isTrue ? "Why it's true:" : "Why it's false:"}&nbsp;&nbsp;
                     </div>
                     <div class="brick-description">${fact.description}</div>
                 `;
