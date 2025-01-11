@@ -3,28 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Elegant Frosty Masonry Layout</title>
+    <title>Elegant Masonry Layout</title>
     <style>
         :root {
-            --background-color: #2b2b2b; /* Neutral dark gray */
-            --true-color: rgba(67, 160, 185, 0.85); /* Muted teal */
-            --true-gradient: linear-gradient(135deg, rgba(67, 160, 185, 0.85), rgba(50, 120, 140, 0.85));
-            --false-color: rgba(192, 87, 80, 0.85); /* Muted coral red */
-            --false-gradient: linear-gradient(135deg, rgba(192, 87, 80, 0.85), rgba(150, 60, 55, 0.85));
-            --header-color: rgba(255, 255, 255, 0.2); /* Subtle frosted header */
-            --line-color: rgba(255, 255, 255, 0.3); /* Softer dividing lines */
+            --background-color: linear-gradient(135deg, #1b002f, #29003e); /* Purple-magenta gradient */
+            --true-color: rgba(120, 160, 255, 0.85); /* Pastel blue */
+            --true-gradient: linear-gradient(135deg, rgba(120, 160, 255, 0.85), rgba(90, 120, 200, 0.85));
+            --false-color: rgba(255, 120, 150, 0.85); /* Soft pink */
+            --false-gradient: linear-gradient(135deg, rgba(255, 120, 150, 0.85), rgba(200, 90, 120, 0.85));
+            --header-color: rgba(255, 255, 255, 0.15); /* Frosted header */
+            --line-color: rgba(255, 255, 255, 0.3); /* Subtle dividing lines */
             --border-color: rgba(255, 255, 255, 0.1); /* Subtle border */
-            --text-color: #eaeaea; /* Soft white for text */
-            --faded-text-color: rgba(234, 234, 234, 0.8); /* Softer faded text */
+            --text-color: #f0f0f0; /* Light gray for text */
+            --faded-text-color: rgba(240, 240, 240, 0.8); /* Softer faded text */
             --card-padding: 15px;
-            --card-radius: 12px; /* More rounded corners for elegance */
-            --card-shadow: rgba(0, 0, 0, 0.3); /* Softer shadow */
+            --card-radius: 12px; /* Rounded corners for elegance */
+            --card-shadow: rgba(0, 0, 0, 0.3); /* Soft shadow */
         }
 
         body {
             margin: 0;
             font-family: 'Arial', sans-serif;
-            background-color: var(--background-color);
+            background: var(--background-color); /* Gradient background */
             color: var(--text-color);
             display: flex;
             flex-direction: column;
@@ -44,9 +44,9 @@
         .masonry-container {
             position: relative;
             max-width: 1400px; /* Allow wider layouts for larger screens */
-            width: 95%; /* Utilize more screen space */
+            width: 90%; /* Utilize more screen space */
             margin: 20px auto; /* Center the container */
-            padding: 10px; /* Add padding to avoid touching screen edges */
+            padding: 10px; /* Add padding for breathing space */
         }
 
         /* Masonry Brick */
@@ -59,9 +59,9 @@
             border-radius: var(--card-radius);
             padding: var(--card-padding);
             padding-top: 50px; /* Add space for the header */
-            border: 1px solid var(--border-color);
-            backdrop-filter: blur(8px); /* Softer frosted glass effect */
-            box-shadow: 0 4px 8px var(--card-shadow);
+            border: 1px solid var(--border-color); /* Subtle border */
+            backdrop-filter: blur(8px); /* Frosted glass effect */
+            box-shadow: 0 4px 8px var(--card-shadow); /* Subtle shadow */
             transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
 
@@ -168,7 +168,7 @@
 </head>
 <body>
 
-<h1>Elegant Frosty Masonry Layout</h1>
+<h1>Elegant Masonry Layout</h1>
 <div class="masonry-container" id="masonry-container"></div>
 
 <div class="footer">
