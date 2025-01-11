@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Stylish Masonry Layout</title>
+    <title>Stylish Masonry Layout with Reasons</title>
     <style>
         :root {
             --background-color: #1e1e1e;
@@ -11,6 +11,7 @@
             --false-color: #d9534f; /* Softer Cherry Red */
             --true-header-color: #2c6a91; /* Darker Blue for True Header */
             --false-header-color: #b0423b; /* Darker Red for False Header */
+            --line-color: rgba(255, 255, 255, 0.4); /* Line color */
             --text-color: #ffffff;
             --faded-text-color: rgba(255, 255, 255, 0.7); /* Faded text color */
             --card-padding: 15px;
@@ -53,7 +54,7 @@
             color: var(--text-color);
             border-radius: var(--card-radius);
             padding: var(--card-padding);
-            padding-top: 40px; /* Add space for the header */
+            padding-top: 50px; /* Add space for the header */
             box-shadow: 0 4px 8px var(--card-shadow);
             transition: transform 0.3s, box-shadow 0.3s;
         }
@@ -100,6 +101,34 @@
             margin-bottom: 10px;
         }
 
+        /* Section Heading */
+        .section-heading {
+            margin: 20px 0 10px;
+            font-size: 1rem;
+            font-weight: bold;
+            text-align: center;
+            position: relative;
+            color: var(--faded-text-color);
+        }
+
+        .section-heading::before,
+        .section-heading::after {
+            content: '';
+            position: absolute;
+            width: 40%;
+            height: 1px;
+            background-color: var(--line-color);
+            top: 50%;
+        }
+
+        .section-heading::before {
+            left: 0;
+        }
+
+        .section-heading::after {
+            right: 0;
+        }
+
         .brick-description {
             font-size: 0.95rem;
             line-height: 1.5;
@@ -138,7 +167,7 @@
 </head>
 <body>
 
-<h1>Stylish Masonry Layout</h1>
+<h1>Stylish Masonry Layout with Reasons</h1>
 <div class="masonry-container" id="masonry-container"></div>
 
 <div class="footer">
@@ -185,6 +214,9 @@
                         ${fact.isTrue ? 'True' : 'False'}
                     </div>
                     <div class="brick-title">${fact.text}</div>
+                    <div class="section-heading">
+                        ${fact.isTrue ? "Why it's true:" : "Why it's false:"}
+                    </div>
                     <div class="brick-description">${fact.description}</div>
                 `;
 
