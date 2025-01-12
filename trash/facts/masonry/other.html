@@ -58,99 +58,48 @@
             padding-bottom: 5px;
         }
 
-        /* Army Personnel */
-        .army-stats .army-row {
+        .army-row, .territorial-row {
             display: flex;
             align-items: center;
             margin: 10px 0;
         }
 
-        .army-label {
+        .army-label, .territorial-label {
             flex: 1;
             font-size: 1rem;
             color: var(--text-muted);
         }
 
-        .army-bar {
+        .army-bar, .territorial-bar, .loss-bar {
             flex: 3;
-            height: 15px;
-            border-radius: var(--card-radius);
-            background: var(--progress-bg);
-            overflow: hidden;
-            position: relative;
-        }
-
-        .army-bar span {
-            display: block;
-            height: 100%;
-            border-radius: var(--card-radius);
-            box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.5); /* Transparent border overlay */
-        }
-
-        .army-bar span.blue {
-            background: var(--gradient-blue);
-        }
-
-        .army-bar span.red {
-            background: var(--gradient-red);
-        }
-
-        .army-bar.faded::after {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(255, 255, 255, 0.3);
-        }
-
-        /* Territorial Control */
-        .territorial-control .territorial-row {
-            margin: 10px 0;
-        }
-
-        /* Combat Losses */
-        .combat-losses .loss-row {
-            margin: 20px 0;
-        }
-
-        .loss-bar {
-            position: relative;
             height: 25px;
             border-radius: var(--card-radius);
             background: var(--progress-bg);
             overflow: hidden;
-            display: flex;
-            box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.5); /* Transparent border overlay */
+            position: relative;
+            box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.5); /* Solid border */
         }
 
-        .loss-bar span {
+        .army-bar span, .territorial-bar span, .loss-bar span {
             display: block;
             height: 100%;
             text-align: center;
             line-height: 25px;
-            color: var(--text-color);
+            color: #fff;
             font-size: 0.9rem;
-            position: absolute;
         }
 
-        .loss-bar span.killed {
-            background: var(--gradient-red);
-            left: 0;
-        }
-
-        .loss-bar span.wounded {
+        .army-bar span.blue, .territorial-bar span.blue, .loss-bar span.wounded {
             background: var(--gradient-blue);
-            right: 0;
         }
 
-        .loss-label {
-            font-size: 1rem;
-            color: var(--text-muted);
-            margin-bottom: 5px;
+        .army-bar span.red, .territorial-bar span.red, .loss-bar span.killed {
+            background: var(--gradient-red);
         }
 
+        .army-bar.faded span, .territorial-bar.faded span {
+            background: rgba(255, 255, 255, 0.3);
+        }
     </style>
 </head>
 <body>
@@ -174,65 +123,58 @@
             { "label": "Ukrainian occupation of Russia", "area": 500, "barLength": "0.5%", "faded": false }
         ],
         "combatLosses": [
-            {
-                "label": "Russia",
-                "total": 800000,
-                "killed": "30%",
-                "wounded": "70%"
-            },
-            {
-                "label": "Ukraine",
-                "total": 1000000,
-                "killed": "30%",
-                "wounded": "70%"
-            }
+            { "label": "Russia", "total": 800000, "killed": "30%", "wounded": "70%" },
+            { "label": "Ukraine", "total": 1000000, "killed": "30%", "wounded": "70%" }
         ]
     };
 
     const container = document.getElementById('data-container');
 
-    // Render Army Stats
+    // Army Stats
     const armyStatsCard = document.createElement('div');
-    armyStatsCard.className = 'card army-stats';
+    armyStatsCard.className = 'card';
     armyStatsCard.innerHTML = `<h2>Army Personnel Comparison</h2>`;
     data.armyStats.forEach(stat => {
         armyStatsCard.innerHTML += `
             <div class="army-row">
                 <span class="army-label">${stat.label}</span>
-                <div class="army-bar ${stat.faded ? 'faded' : ''}"><span class="${stat.faded ? 'blue' : 'red'}" style="width: ${stat.barLength};"></span></div>
+                <div class="army-bar ${stat.faded ? 'faded' : ''}">
+                    <span class="${stat.faded ? 'blue' : 'red'}" style="width: ${stat.barLength}">${stat.personnel.toLocaleString()} personnel</span>
+                </div>
             </div>
         `;
     });
     container.appendChild(armyStatsCard);
 
-    // Render Territorial Control
+    // Territorial Control
     const territorialControlCard = document.createElement('div');
-    territorialControlCard.className = 'card territorial-control';
+    territorialControlCard.className = 'card';
     territorialControlCard.innerHTML = `<h2>Territorial Control</h2>`;
     data.territorialControl.forEach(control => {
         territorialControlCard.innerHTML += `
             <div class="territorial-row">
-                <span>${control.label} (${control.area.toLocaleString()} km²)</span>
-                <div class="army-bar ${control.faded ? 'faded' : ''}"><span class="${control.faded ? 'blue' : 'red'}" style="width: ${control.barLength};"></span></div>
+                <span class="territorial-label">${control.label}</span>
+                <div class="territorial-bar ${control.faded ? 'faded' : ''}">
+                    <span class="${control.faded ? 'blue' : 'red'}" style="width: ${control.barLength}">${control.area.toLocaleString()} km²</span>
+                </div>
             </div>
         `;
     });
     container.appendChild(territorialControlCard);
 
-    // Render Combat Losses
+    // Combat Losses
     const combatLossesCard = document.createElement('div');
-    combatLossesCard.className = 'card combat-losses';
+    combatLossesCard.className = 'card';
     combatLossesCard.innerHTML = `<h2>Combat Losses</h2>`;
     data.combatLosses.forEach(loss => {
-        const totalWidth = loss.total / 1000000 * 100; // Calculate relative width based on largest total
         const killedPercentage = parseFloat(loss.killed);
         const woundedPercentage = parseFloat(loss.wounded);
         combatLossesCard.innerHTML += `
             <div class="loss-row">
-                <div class="loss-label">${loss.label} (${loss.total.toLocaleString()} casualties)</div>
-                <div class="loss-bar" style="width: ${totalWidth}%">
-                    <span class="killed" style="width: ${killedPercentage}%; left: 0">Killed</span>
-                    <span class="wounded" style="width: ${woundedPercentage}%; left: ${killedPercentage}%">Wounded</span>
+                <span>${loss.label} (${loss.total.toLocaleString()} casualties)</span>
+                <div class="loss-bar">
+                    <span class="killed" style="width: ${killedPercentage}%">Killed: ${loss.killed}</span>
+                    <span class="wounded" style="width: ${woundedPercentage}%">Wounded: ${loss.wounded}</span>
                 </div>
             </div>
         `;
