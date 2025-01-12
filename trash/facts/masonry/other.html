@@ -13,7 +13,7 @@
             --progress-bg: rgba(255, 255, 255, 0.1);
             --text-color: #e8f0fa;
             --text-muted: rgba(232, 240, 250, 0.8);
-            --dark-text: #0b0b0b; /* Updated to very dark grey */
+            --dark-text: #080808; /* Even darker grey for faded text */
             --card-padding: 20px;
             --card-radius: 15px;
             --card-shadow: rgba(0, 0, 0, 0.3);
@@ -111,7 +111,7 @@
         }
 
         .army-bar.faded span {
-            color: var(--dark-text); /* Faded bars now use darker grey text */
+            color: var(--dark-text); /* Updated to darker grey text for faded bars */
         }
 
         .army-bar::before {
@@ -175,6 +175,7 @@
         .loss-bar span.wounded {
             background: var(--gradient-blue);
             right: 0;
+            color: var(--dark-text); /* Updated to darker grey text for "Wounded" */
         }
 
         .loss-bar::before {
