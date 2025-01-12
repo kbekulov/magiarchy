@@ -120,21 +120,21 @@
             border-radius: var(--card-radius);
             background: var(--progress-bg);
             overflow: hidden;
+            display: flex;
         }
 
         .loss-bar span {
             display: block;
             height: 100%;
-            position: absolute;
             text-align: center;
             line-height: 25px;
             color: var(--text-color);
             font-size: 0.9rem;
+            position: relative;
         }
 
         .loss-bar span.killed {
             background: var(--gradient-red);
-            left: 0;
         }
 
         .loss-bar span.wounded {
@@ -220,14 +220,14 @@
     combatLossesCard.className = 'card combat-losses';
     combatLossesCard.innerHTML = `<h2>Combat Losses</h2>`;
     data.combatLosses.forEach(loss => {
-        const total = data.combatLosses.reduce((sum, l) => sum + l.total, 0);
-        const barWidth = (loss.total / total) * 100;
+        const killedPercentage = parseFloat(loss.killed);
+        const woundedPercentage = parseFloat(loss.wounded);
         combatLossesCard.innerHTML += `
             <div class="loss-row">
                 <div class="loss-label">${loss.label} (${loss.total.toLocaleString()} casualties)</div>
-                <div class="loss-bar" style="width: ${barWidth}%">
-                    <span class="killed" style="width: ${loss.killed}">Killed</span>
-                    <span class="wounded" style="width: ${loss.wounded}; left: ${loss.killed}">Wounded</span>
+                <div class="loss-bar">
+                    <span class="killed" style="width: ${killedPercentage}%;">Killed</span>
+                    <span class="wounded" style="width: ${woundedPercentage}%; left: ${killedPercentage}%;">Wounded</span>
                 </div>
             </div>
         `;
