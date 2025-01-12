@@ -1,12 +1,6 @@
 {
     "facts": [
         { 
-            "text": "Russia invaded Ukraine", 
-            "isTrue": true, 
-            "color": "#51a078",
-            "description": "Russia invaded Ukraine on February 24th, 2022. This invasion was announced by Vladimir Putin in a late-night video address to the nation, and ~200,000 soldiers of the Russian Armed Forces entered Ukrainian territory from the south, east, and north."
-        },
-        { 
             "text": "The invasion was unjustified", 
             "isTrue": false, 
             "color": "#c83d3d",
