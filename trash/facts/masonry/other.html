@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Military and War Data Visualization</title>
+    <style>
+        :root {
+            --background-color: #393e44; /* Dark grey */
+            --text-color: #e0e4ea; /* Light cool white */
+            --faded-text-color: rgba(224, 228, 234, 0.8); /* Softer faded text */
+            --header-color: rgba(50, 50, 50, 0.8); /* Neutral dark header */
+            --true-color: rgba(70, 110, 150, 0.9); /* Blue for highlights */
+            --false-color: rgba(180, 60, 60, 0.9); /* Red for highlights */
+            --bar-bg: rgba(50, 50, 50, 0.6); /* Bar background */
+            --bar-highlight: rgba(255, 255, 255, 0.2); /* Subtle bar highlight */
+            --line-color: rgba(180, 200, 220, 0.5); /* Light grey-blue */
+            --border-color: rgba(255, 255, 255, 0.1); /* Subtle border */
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+
+        h1 {
+            color: var(--text-color);
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        .section {
+            max-width: 800px;
+            width: 100%;
+            margin-bottom: 40px;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: var(--header-color);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .section h2 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+
+        .army-stats, .territorial-control, .combat-losses {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .army-stats .item, .territorial-control .item, .combat-losses .item {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .army-stats .bar, .territorial-control .bar {
+            height: 20px;
+            border-radius: 10px;
+            background-color: var(--bar-bg);
+            position: relative;
+            overflow: hidden;
+            flex: 1;
+            margin-left: 10px;
+        }
+
+        .army-stats .bar .fill, .territorial-control .bar .fill {
+            height: 100%;
+            border-radius: 10px;
+            background: linear-gradient(135deg, var(--true-color), var(--false-color));
+            position: absolute;
+        }
+
+        .combat-losses .item {
+            flex-direction: column;
+            text-align: center;
+        }
+
+        .combat-losses .breakdown {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            margin-top: 10px;
+        }
+
+        .combat-losses .breakdown span {
+            flex: 1;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Military and War Data Visualization</h1>
+
+    <!-- Army Stats Section -->
+    <div class="section army-stats">
+        <h2>Army Personnel Comparison</h2>
+        <div id="army-stats"></div>
+    </div>
+
+    <!-- Territorial Control Section -->
+    <div class="section territorial-control">
+        <h2>Territorial Control</h2>
+        <div id="territorial-control"></div>
+    </div>
+
+    <!-- Combat Losses Section -->
+    <div class="section combat-losses">
+        <h2>Combat Losses</h2>
+        <div id="combat-losses"></div>
+    </div>
+
+    <script>
+        const data = {
+            armyStats: [
+                { "label": "Russian Army", "personnel": 1500000, "barLength": "100%", "faded": false },
+                { "label": "Ukraine Army", "personnel": 1260000, "barLength": "84%", "faded": false },
+                { "label": "French Army", "personnel": 270000, "barLength": "18%", "faded": true },
+                { "label": "British Army", "personnel": 136525, "barLength": "9.1%", "faded": true },
+                { "label": "German Army", "personnel": 180215, "barLength": "12.01%", "faded": true },
+                { "label": "Polish Army", "personnel": 256100, "barLength": "17.07%", "faded": true },
+                { "label": "US Army", "personnel": 954875, "barLength": "63.66%", "faded": true }
+            ],
+            territorialControl: [
+                { "label": "Russian occupation of Ukraine", "area": 109000, "barLength": "100%", "faded": false },
+                { "label": "Ukrainian occupation of Russia", "area": 500, "barLength": "0.5%", "faded": false }
+            ],
+            combatLosses: [
+                { "label": "Russia", "total": 800000, "killed": "30%", "wounded": "70%" },
+                { "label": "Ukraine", "total": 1000000, "killed": "30%", "wounded": "70%" }
+            ]
+        };
+
+        const armyStatsContainer = document.getElementById('army-stats');
+        const territorialControlContainer = document.getElementById('territorial-control');
+        const combatLossesContainer = document.getElementById('combat-losses');
+
+        // Render Army Stats
+        data.armyStats.forEach(stat => {
+            const item = document.createElement('div');
+            item.className = 'item';
+
+            const label = document.createElement('span');
+            label.textContent = `${stat.label} (${stat.personnel.toLocaleString()} personnel)`;
+
+            const bar = document.createElement('div');
+            bar.className = 'bar';
+
+            const fill = document.createElement('div');
+            fill.className = 'fill';
+            fill.style.width = stat.barLength;
+
+            if (stat.faded) {
+                fill.style.opacity = '0.5';
+            }
+
+            bar.appendChild(fill);
+            item.appendChild(label);
+            item.appendChild(bar);
+            armyStatsContainer.appendChild(item);
+        });
+
+        // Render Territorial Control
+        data.territorialControl.forEach(control => {
+            const item = document.createElement('div');
+            item.className = 'item';
+
+            const label = document.createElement('span');
+            label.textContent = `${control.label} (${control.area.toLocaleString()} km²)`;
+
+            const bar = document.createElement('div');
+            bar.className = 'bar';
+
+            const fill = document.createElement('div');
+            fill.className = 'fill';
+            fill.style.width = control.barLength;
+
+            if (control.faded) {
+                fill.style.opacity = '0.5';
+            }
+
+            bar.appendChild(fill);
+            item.appendChild(label);
+            item.appendChild(bar);
+            territorialControlContainer.appendChild(item);
+        });
+
+        // Render Combat Losses
+        data.combatLosses.forEach(loss => {
+            const item = document.createElement('div');
+            item.className = 'item';
+
+            const label = document.createElement('span');
+            label.textContent = `${loss.label} (${loss.total.toLocaleString()} casualties)`;
+
+            const breakdown = document.createElement('div');
+            breakdown.className = 'breakdown';
+
+            const killed = document.createElement('span');
+            killed.textContent = `Killed: ${loss.killed}`;
+
+            const wounded = document.createElement('span');
+            wounded.textContent = `Wounded: ${loss.wounded}`;
+
+            breakdown.appendChild(killed);
+            breakdown.appendChild(wounded);
+            item.appendChild(label);
+            item.appendChild(breakdown);
+            combatLossesContainer.appendChild(item);
+        });
+    </script>
+</body>
+</html>
