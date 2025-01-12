@@ -130,15 +130,17 @@
             line-height: 25px;
             color: var(--text-color);
             font-size: 0.9rem;
-            position: relative;
+            position: absolute;
         }
 
         .loss-bar span.killed {
             background: var(--gradient-red);
+            left: 0;
         }
 
         .loss-bar span.wounded {
             background: var(--gradient-blue);
+            right: 0;
         }
 
         .loss-label {
@@ -227,7 +229,7 @@
             <div class="loss-row">
                 <div class="loss-label">${loss.label} (${loss.total.toLocaleString()} casualties)</div>
                 <div class="loss-bar" style="width: ${totalWidth}%">
-                    <span class="killed" style="width: ${killedPercentage}%">Killed</span>
+                    <span class="killed" style="width: ${killedPercentage}%; left: 0">Killed</span>
                     <span class="wounded" style="width: ${woundedPercentage}%; left: ${killedPercentage}%">Wounded</span>
                 </div>
             </div>
