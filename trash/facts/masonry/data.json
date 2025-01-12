@@ -83,6 +83,12 @@
             "isTrue": false, 
             "color": "#c83d3d",
             "description": "It is challenging to predict the outcome of a Russia vs. NATO war due to the sheer complexity of variables involved, including diverse warfare domains (land, sea, air, space, cyberspace, and nuclear), advanced technologies, and vast geographical areas of combat. Russia boasts the largest army in Europe, extensive experience in large-scale conflicts on its western frontier, resources across all warfare domains, and a military doctrine centered on land wars in Europe. Additionally, its population and industrial base enable large-scale mobilization. In contrast, NATO, focused on air and sea power with more limited industrial capacity, faces significant uncertainties in a large-scale land conflict with Russia."
+        },
+        { 
+            "text": "US military spending determines its ability to defeat Russia", 
+            "isTrue": false, 
+            "color": "#c83d3d",
+            "description": "Military budgets do not directly correlate with a nation's ability to achieve military goals globally. Military doctrines, unique to each country, shape their approach to combat and security, while budgets fund the tools and infrastructure needed to execute these strategies. For instance, the U.S. doctrine emphasizes air and sea power, which may have limited effectiveness against a vast land power like Russia compared to smaller, coastal nations. A significant portion of the U.S. budget is allocated to overseas infrastructure, foreign bases, fleet maintenance, and advanced technology. How much of this would effectively impact a NATO-Russia conflict remains uncertain."
         }
     ],
     "armyStats": [
