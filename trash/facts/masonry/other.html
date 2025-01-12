@@ -12,6 +12,7 @@
             --gradient-red: linear-gradient(135deg, rgba(210, 70, 70, 0.9), rgba(170, 50, 50, 0.9));
             --progress-bg: rgba(255, 255, 255, 0.1);
             --text-color: #e8f0fa;
+            --text-dark: #101010; /* Dark text for faded bars */
             --text-muted: rgba(232, 240, 250, 0.8);
             --card-padding: 20px;
             --card-radius: 15px;
@@ -78,7 +79,7 @@
             background: var(--progress-bg);
             overflow: hidden;
             position: relative;
-            box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.5); /* Solid border */
+            box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.5); /* Transparent border */
         }
 
         .army-bar span {
@@ -90,7 +91,6 @@
             color: var(--text-color);
             font-size: 0.9rem;
             position: relative;
-            box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.5); /* Transparent overlay */
         }
 
         .army-bar span.blue {
@@ -99,6 +99,10 @@
 
         .army-bar span.red {
             background: var(--gradient-red);
+        }
+
+        .army-bar.faded span {
+            color: var(--text-dark); /* Dark text for faded bars */
         }
 
         .army-bar.faded::after {
@@ -114,6 +118,27 @@
         /* Territorial Control */
         .territorial-control .territorial-row {
             margin: 10px 0;
+            position: relative;
+        }
+
+        .territorial-bar {
+            position: relative;
+            height: 25px;
+            border-radius: var(--card-radius);
+            background: var(--progress-bg);
+            overflow: hidden;
+            display: flex;
+            box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.5); /* Transparent border */
+        }
+
+        .territorial-bar span {
+            display: block;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: var(--text-color);
+            font-size: 0.9rem;
         }
 
         /* Combat Losses */
@@ -128,7 +153,7 @@
             background: var(--progress-bg);
             overflow: hidden;
             display: flex;
-            box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.5); /* Solid border */
+            box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.5); /* Transparent border */
         }
 
         .loss-bar span {
@@ -220,10 +245,10 @@
     data.territorialControl.forEach(control => {
         territorialControlCard.innerHTML += `
             <div class="territorial-row">
-                <span>${control.label}</span>
-                <div class="army-bar ${control.faded ? 'faded' : ''}">
-                    <span class="${control.faded ? 'blue' : 'red'}" style="width: ${control.barLength};">${control.area.toLocaleString()} km²</span>
+                <div class="territorial-bar" style="width: ${control.barLength};">
+                    <span>${control.area.toLocaleString()} km²</span>
                 </div>
+                <span>${control.label}</span>
             </div>
         `;
     });
