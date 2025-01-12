@@ -112,17 +112,21 @@
             border-radius: var(--card-radius);
             background: var(--progress-bg);
             overflow: hidden;
+            display: flex;
         }
 
         .loss-bar span {
-            display: block;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.9rem;
+            font-weight: bold;
+            color: var(--text-color);
             height: 100%;
-            position: absolute;
         }
 
         .loss-bar span.killed {
             background: var(--progress-red);
-            left: 0;
         }
 
         .loss-bar span.wounded {
@@ -214,8 +218,8 @@
             <div class="loss-row">
                 <div class="loss-label">${loss.label} (${loss.total.toLocaleString()} casualties)</div>
                 <div class="loss-bar" style="width: ${barWidth}%">
-                    <span class="killed" style="width: ${loss.killed}"></span>
-                    <span class="wounded" style="width: ${loss.wounded}; left: ${loss.killed}"></span>
+                    <span class="killed" style="width: ${loss.killed}">${loss.killed} Killed</span>
+                    <span class="wounded" style="width: ${loss.wounded};">${loss.wounded} Wounded</span>
                 </div>
             </div>
         `;
