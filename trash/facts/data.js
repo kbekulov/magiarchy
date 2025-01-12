@@ -77,6 +77,12 @@ const data = {
             "isTrue": true, 
             "color": "#51a078",
             "description": "Russia's military actions are driven primarily by its national security interests, not external deterrents like NATO's Article 5. If NATO is perceived as a threat, Russia may weigh the risks of confrontation rather than avoid it entirely. For example, in summer 2022, Lithuania's attempt to blockade Kaliningrad prompted a direct warning from Russia’s foreign ministry, threatening military action. Under pressure from EU partners, Lithuania was forced to lift the blockade."
+        },
+        { 
+            "text": "US military spending determines its ability to defeat Russia", 
+            "isTrue": false, 
+            "color": "#c83d3d",
+            "description": "Military budgets do not directly correlate with a nation's ability to achieve military goals globally. Military doctrines, unique to each country, shape their approach to combat and security, while budgets fund the tools and infrastructure needed to execute these strategies. For instance, the U.S. doctrine emphasizes air and sea power, which may have limited effectiveness against a vast land power like Russia compared to smaller, coastal nations. A significant portion of the U.S. budget is allocated to overseas infrastructure, foreign bases, fleet maintenance, and advanced technology. How much of this would effectively impact a NATO-Russia conflict remains uncertain."
         }
     ],
     "armyStats": [
