@@ -263,6 +263,7 @@
     data.territorialControl.forEach(control => {
         territorialControlCard.innerHTML += `
             <div class="territorial-row">
+                <span>${control.label}</span> <!-- This already explains the controlling and occupied country -->
                 <div class="territorial-label">~${control.area.toLocaleString()} km²</div>
                 <div class="army-bar ${control.faded ? 'faded' : ''}">
                     <span class="${control.faded ? 'blue' : 'red'}" style="width: ${control.barLength};"></span>
