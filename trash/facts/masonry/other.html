@@ -13,11 +13,11 @@
             --progress-bg: rgba(255, 255, 255, 0.1);
             --text-color: #e8f0fa;
             --text-muted: rgba(232, 240, 250, 0.8);
-            --dark-text: #080808; /* Very dark grey for faded text */
+            --dark-text: #080808;
             --card-padding: 20px;
             --card-radius: 15px;
             --card-shadow: rgba(0, 0, 0, 0.3);
-            --noise-overlay: radial-gradient(rgba(255, 255, 255, 0.02) 1%, transparent 1%);
+            --noise-pattern: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200"><rect fill="%23ffffff" width="1" height="1" x="80" y="30"/><rect fill="%23ffffff" width="1" height="1" x="100" y="80"/><rect fill="%23ffffff" width="1" height="1" x="50" y="90"/><rect fill="%23ffffff" width="1" height="1" x="120" y="50"/><rect fill="%23ffffff" width="1" height="1" x="10" y="10"/><rect fill="%23ffffff" width="1" height="1" x="140" y="120"/><rect fill="%23ffffff" width="1" height="1" x="170" y="160"/></svg>');
         }
 
         body {
@@ -30,8 +30,6 @@
             align-items: center;
             padding: 20px;
             min-height: 100vh;
-            background-image: var(--noise-overlay);
-            background-blend-mode: overlay;
         }
 
         h1 {
@@ -53,7 +51,7 @@
             border-radius: var(--card-radius);
             box-shadow: 0 4px 8px var(--card-shadow);
             padding: var(--card-padding);
-            background-image: var(--noise-overlay);
+            background-image: var(--noise-pattern);
             background-blend-mode: overlay;
         }
 
@@ -201,6 +199,7 @@
             color: var(--text-muted);
             margin-bottom: 5px;
         }
+
     </style>
 </head>
 <body>
@@ -250,7 +249,7 @@
             <div class="army-row">
                 <span class="army-label">${stat.label}</span>
                 <div class="army-bar ${stat.faded ? 'faded' : ''}">
-                    <span class="${stat.faded ? 'blue' : 'red'}" style="width: ${stat.barLength};">${stat.personnel.toLocaleString()}</span>
+                    <span class="${stat.faded ? 'blue' : 'red'}" style="width: ${stat.barLength};">~${stat.personnel.toLocaleString()}</span>
                 </div>
             </div>
         `;
@@ -264,7 +263,7 @@
     data.territorialControl.forEach(control => {
         territorialControlCard.innerHTML += `
             <div class="territorial-row">
-                <div class="territorial-label">${control.area.toLocaleString()} km²</div>
+                <div class="territorial-label">~${control.area.toLocaleString()} km²</div>
                 <div class="army-bar ${control.faded ? 'faded' : ''}">
                     <span class="${control.faded ? 'blue' : 'red'}" style="width: ${control.barLength};"></span>
                 </div>
@@ -278,15 +277,15 @@
     combatLossesCard.className = 'card combat-losses';
     combatLossesCard.innerHTML = `<h2>Combat Losses</h2>`;
     data.combatLosses.forEach(loss => {
-        const totalWidth = loss.total / 1000000 * 100;
+        const totalWidth = loss.total / 1000000 * 100; // Calculate relative width based on largest total
         const killedPercentage = parseFloat(loss.killed);
         const woundedPercentage = parseFloat(loss.wounded);
         combatLossesCard.innerHTML += `
             <div class="loss-row">
-                <div class="loss-label">${loss.label} (${loss.total.toLocaleString()} casualties)</div>
+                <div class="loss-label">${loss.label} (~${loss.total.toLocaleString()} casualties)</div>
                 <div class="loss-bar" style="width: ${totalWidth}%">
-                    <span class="killed" style="width: ${killedPercentage}%; left: 0">Killed (${Math.round(killedPercentage * loss.total / 100).toLocaleString()})</span>
-                    <span class="wounded" style="width: ${woundedPercentage}%; left: ${killedPercentage}%">Wounded (${Math.round(woundedPercentage * loss.total / 100).toLocaleString()})</span>
+                    <span class="killed" style="width: ${killedPercentage}%; left: 0">Killed (~${Math.round(killedPercentage * loss.total / 100).toLocaleString()})</span>
+                    <span class="wounded" style="width: ${woundedPercentage}%; left: ${killedPercentage}%">Wounded (~${Math.round(woundedPercentage * loss.total / 100).toLocaleString()})</span>
                 </div>
             </div>
         `;
