@@ -12,8 +12,8 @@
             --gradient-red: linear-gradient(135deg, rgba(210, 70, 70, 0.9), rgba(170, 50, 50, 0.9));
             --progress-bg: rgba(255, 255, 255, 0.1);
             --text-color: #e8f0fa;
-            --text-dark: #101010; /* Dark text for faded bars */
             --text-muted: rgba(232, 240, 250, 0.8);
+            --dark-text: #2b2f35;
             --card-padding: 20px;
             --card-radius: 15px;
             --card-shadow: rgba(0, 0, 0, 0.3);
@@ -79,7 +79,7 @@
             background: var(--progress-bg);
             overflow: hidden;
             position: relative;
-            box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.5); /* Transparent border */
+            box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.5); /* Solid border */
         }
 
         .army-bar span {
@@ -88,9 +88,9 @@
             border-radius: var(--card-radius);
             text-align: center;
             line-height: 25px;
-            color: var(--text-color);
             font-size: 0.9rem;
             position: relative;
+            color: var(--text-color);
         }
 
         .army-bar span.blue {
@@ -99,10 +99,6 @@
 
         .army-bar span.red {
             background: var(--gradient-red);
-        }
-
-        .army-bar.faded span {
-            color: var(--text-dark); /* Dark text for faded bars */
         }
 
         .army-bar.faded::after {
@@ -115,30 +111,24 @@
             background: rgba(255, 255, 255, 0.3);
         }
 
+        .army-bar.faded span {
+            color: var(--dark-text);
+        }
+
         /* Territorial Control */
         .territorial-control .territorial-row {
             margin: 10px 0;
             position: relative;
         }
 
-        .territorial-bar {
-            position: relative;
-            height: 25px;
-            border-radius: var(--card-radius);
-            background: var(--progress-bg);
-            overflow: hidden;
-            display: flex;
-            box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.5); /* Transparent border */
-        }
-
-        .territorial-bar span {
-            display: block;
+        .territorial-control .territorial-label {
             position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            color: var(--text-color);
+            width: 100%;
+            text-align: center;
             font-size: 0.9rem;
+            line-height: 25px;
+            color: var(--text-color);
+            z-index: 1;
         }
 
         /* Combat Losses */
@@ -153,7 +143,7 @@
             background: var(--progress-bg);
             overflow: hidden;
             display: flex;
-            box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.5); /* Transparent border */
+            box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.5); /* Solid border */
         }
 
         .loss-bar span {
@@ -161,9 +151,9 @@
             height: 100%;
             text-align: center;
             line-height: 30px;
-            color: var(--text-color);
             font-size: 0.9rem;
             position: absolute;
+            color: var(--text-color);
         }
 
         .loss-bar span.killed {
@@ -245,10 +235,10 @@
     data.territorialControl.forEach(control => {
         territorialControlCard.innerHTML += `
             <div class="territorial-row">
-                <div class="territorial-bar" style="width: ${control.barLength};">
-                    <span>${control.area.toLocaleString()} km²</span>
+                <div class="territorial-label">${control.area.toLocaleString()} km²</div>
+                <div class="army-bar ${control.faded ? 'faded' : ''}">
+                    <span class="${control.faded ? 'blue' : 'red'}" style="width: ${control.barLength};"></span>
                 </div>
-                <span>${control.label}</span>
             </div>
         `;
     });
