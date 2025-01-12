@@ -220,14 +220,15 @@
     combatLossesCard.className = 'card combat-losses';
     combatLossesCard.innerHTML = `<h2>Combat Losses</h2>`;
     data.combatLosses.forEach(loss => {
+        const totalWidth = loss.total / 1000000 * 100; // Calculate relative width based on largest total
         const killedPercentage = parseFloat(loss.killed);
         const woundedPercentage = parseFloat(loss.wounded);
         combatLossesCard.innerHTML += `
             <div class="loss-row">
                 <div class="loss-label">${loss.label} (${loss.total.toLocaleString()} casualties)</div>
-                <div class="loss-bar">
-                    <span class="killed" style="width: ${killedPercentage}%;">Killed</span>
-                    <span class="wounded" style="width: ${woundedPercentage}%; left: ${killedPercentage}%;">Wounded</span>
+                <div class="loss-bar" style="width: ${totalWidth}%">
+                    <span class="killed" style="width: ${killedPercentage}%">Killed</span>
+                    <span class="wounded" style="width: ${woundedPercentage}%; left: ${killedPercentage}%">Wounded</span>
                 </div>
             </div>
         `;
