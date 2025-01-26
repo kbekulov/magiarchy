@@ -55,6 +55,18 @@ Lynleit's family house is a neoclassical mansion with white walls and pillars, n
 
 ---
 
+### Lore: Romantic Subplots
+
+Felix, Lynleit’s trusted colleague and bodyguard, is a charming and flirtatious figure, often seen engaging in playful banter and romantic escapades with others. Despite harboring a quiet, unspoken admiration for Lynleit, he views her as distant, not just due to her position but because of an inherent sense of imbalance between them. This perceived disparity leaves Felix unable to act on his feelings, fostering a subtle vulnerability that manifests as jealousy and insecurity when Kyrien, an enigmatic and self-driven newcomer, joins their circle. Felix’s initial hostility toward Kyrien stems not only from professional suspicion but from an instinctive recognition of Kyrien as Lynleit’s equal—a potential partner in both purpose and spirit.
+
+Kyrien’s dynamic with Lynleit begins in sharp contrast. Their relationship is forged under strained circumstances, with Kyrien perceiving Lynleit as a manipulative force who corners him into an uneasy alliance. Her promises to aid him in his personal quest to uncover his father’s murderer force him to concede to her terms, leaving him grappling with feelings of vulnerability and resentment. Yet as their partnership evolves, Kyrien begins to see Lynleit not merely as a calculating leader but as someone with a depth of empathy and conviction that provokes his curiosity. This growing sense of equality between them unsettles him, challenging his guarded nature and creating an unspoken tension he struggles to repress.
+
+For Lynleit, Kyrien represents a puzzle—an adversarial yet compelling presence that draws her in against her better judgment. Though initially dismissive of him as anything more than a reluctant ally, she becomes increasingly intrigued by his complexity and motivations. As their shared experiences bring them closer, Lynleit finds herself grappling with feelings she cannot fully understand or articulate, an inner conflict that mirrors Kyrien’s. Their mutual recognition of each other as equals heightens their dynamic, introducing a simmering tension that neither is prepared to confront openly.
+
+Their bond reaches a critical juncture during a life-or-death encounter, where the stakes force them into a moment of intimacy born of necessity rather than desire. Though both agree to suppress and move past the incident, the act leaves a lasting mark on their relationship. The unacknowledged connection between them fuels a silent, unspoken tension that permeates their interactions, creating a mix of longing, regret, and repressed emotions. Meanwhile, Felix’s growing awareness of this evolving dynamic heightens his own insecurities, adding another layer of complexity to the trio’s already fraught relationships.
+
+---
+
 ### Lore: The Final Truth
 Lynleit’s world—the Duchy with its aristocracy, factions, and supernatural conflicts—is not perfect. It unravels as anomalies and inconsistencies become increasingly evident: it is not real. As a witch of unparalleled power, Lynleit unknowingly created this illusion, crafting an intricate reality to escape the harsh truths of the real world. However, her illusion is flawed, plagued by instability that manifests as disappearances, Holumns, and strange glitches in her surroundings. Characters often experience phenomena akin to déjà vu and the Mandela Effect, brushing these feelings aside as fleeting oddities. Yet, as time progresses, the anomalies grow more uncanny, and Lynleit becomes the primary observer of these distortions.
 
