@@ -65,4 +65,5 @@ As the illusive world begins to collapse, Lynleit is forced to confront the trut
 A darker reflection of her true self begins to emerge, confronting her through mirrors, reflections, and fleeting shadows. This manifestation accuses her of running from reality and forcing others to share in her fabricated dream. Lynleit wrestles with guilt and self-doubt as her carefully constructed reality crumbles, leaving her to face the consequences of her unparalleled power.
 
 While most accept the inevitability of the illusion’s collapse and their erasure with it, Lynleit refuses to let her creation vanish entirely. In a final act of defiance and redemption, she confronts her other self, unlocking the full extent of her powers. Through this confrontation, Lynleit endeavors to rescue a fraction of her world, merging the real and illusionary into a harmonious new existence. Her act of creation and redemption reshapes the fabric of reality forever, cementing her legacy as both a creator and redeemer even as it forces her to accept the sacrifices demanded by her actions.
+
 ---
