@@ -78,4 +78,6 @@ A darker reflection of her true self begins to emerge, confronting her through m
 
 While most accept the inevitability of the illusion’s collapse and their erasure with it, Lynleit refuses to let her creation vanish entirely. In a final act of defiance and redemption, she confronts her other self, unlocking the full extent of her powers. Through this confrontation, Lynleit endeavors to rescue a fraction of her world, merging the real and illusionary into a harmonious new existence. Her act of creation and redemption reshapes the fabric of reality forever, cementing her legacy as both a creator and redeemer even as it forces her to accept the sacrifices demanded by her actions.
 
+![Lynleit mirror 1](img/gallery/story-lynleit-mirror-1.png)
+
 ---

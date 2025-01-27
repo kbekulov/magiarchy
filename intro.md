@@ -11,6 +11,10 @@ The project aims to establish a narrative framework comprising fixed rules, guid
 
 ---
 
+![Lynleit concept 2](img/gallery/char-lynleit-2.png)
+
+---
+
 ### To-do List
 - Describe Holumns (Lore section)
 - Fix visual description consistency (Character section)
