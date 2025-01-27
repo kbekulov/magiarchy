@@ -11,7 +11,7 @@ The project aims to establish a narrative framework comprising fixed rules, guid
 
 ---
 
-![Lynleit concept 2](img/gallery/char-lynleit-2.png)
+![Lynleit concept 2](img/gallery/char-lynleit-2_fixed.png)
 
 ---
 
