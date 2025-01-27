@@ -328,78 +328,61 @@
             transform: translateX(-50%);
             text-align: center;
         }
-        .masonry-container img {
-    transition: transform 0.3s ease-in-out;
-}
-
-.masonry-container img:hover {
-    transform: scale(1.1);
-}
-
     </style>
     <script>
-        $(document).ready(function () {
-            const characterIconsPath = '/img/character_icons/'; // Path to character icons
-            const imageMaxSize = 100; // Max width and height for the icons
-        
-            function renderCharacterIcons() {
-                // Fetch the list of images from the character_icons directory
-                $.ajax({
-                    url: characterIconsPath,
-                    success: function (data) {
-                        const images = [];
-                        // Parse the directory listing for images
-                        $(data).find("a").each(function () {
-                            const href = $(this).attr("href");
-                            if (/\.(jpg|jpeg|png|gif|webp)$/i.test(href)) {
-                                images.push(characterIconsPath + href);
-                            }
-                        });
-        
-                        // Generate masonry layout with fetched images
-                        const masonryContainer = $('<div class="masonry-container"></div>').css({
-                            display: 'flex',
-                            flexWrap: 'wrap',
-                            gap: '10px',
-                            justifyContent: 'center',
-                        });
-        
-                        images.forEach((src) => {
-                            const img = $('<img>')
-                                .attr('src', src)
-                                .css({
-                                    maxWidth: `${imageMaxSize}px`,
-                                    maxHeight: `${imageMaxSize}px`,
-                                    objectFit: 'cover',
-                                    borderRadius: '5px',
-                                });
-                            masonryContainer.append(img);
-                        });
-        
-                        // Replace the `[character icons]` keyword with the masonry layout
-                        $('.display-text').html(masonryContainer).fadeIn();
-                    },
-                });
-            }
-        
-            // Function to handle markdown rendering and detect the keyword
-            $('.menu a').on('click', function (e) {
-                e.preventDefault();
-        
-                const linkName = $(this).text().toLowerCase().replace(' | ', '-');
-                $.get(`${linkName}.md`, function (data) {
-                    if (data.includes('[character icons]')) {
-                        renderCharacterIcons();
-                    } else {
-                        $('.display-text').html(marked.parse(data)).fadeIn();
-                    }
-                });
-        
-                $('.content').css('transform', 'translateX(calc(40vw))');
-                $('.copyright').addClass('center');
-            });
+    $(document).ready(function () {
+        // Disable right-click on the entire page
+        $(document).on("contextmenu", function (e) {
+            e.preventDefault();
         });
     
+        // Load a random image on page load
+        const randomImage = Math.random() < 0.5 ? 'img/lynleit-copyright-1.png' : 'img/lynleit-copyright-2.png';
+        $('.content').html(`<img src="${randomImage}" alt="Main Star">`);
+    
+        // Adjust text container based on image width
+        function adjustTextContainer() {
+            const imageWidth = $('.content img').width();
+            $('.display-text').css('left', `${imageWidth}px`);
+        }
+    
+        // Ensure adjustTextContainer runs after page fully loads
+        $(window).on('load', adjustTextContainer);
+        $(window).on('resize', adjustTextContainer);
+    
+        // Display text from local markdown files on menu link click
+        $('.menu a').on('click', function (e) {
+            e.preventDefault();
+    
+            const linkName = $(this).text().toLowerCase().replace(' | ', '-');
+            $.get(`${linkName}.md`, function (data) {
+                $('.display-text').html(marked.parse(data)).fadeIn();
+            });
+    
+            $('.content').css('transform', 'translateX(calc(40vw))');
+            $('.copyright').addClass('center');
+        });
+    
+        // Image zooming functionality
+        $(document).on('click', '.display-text img', function () {
+            const imgSrc = $(this).attr('src');
+    
+            if ($('.zoomed-image').length) {
+                $('.zoomed-image').removeClass('active').fadeOut(300, function () {
+                    $(this).remove();
+                });
+            } else {
+                $('body').append(`<img src="${imgSrc}" class="zoomed-image">`);
+                $('.zoomed-image').fadeIn(300).addClass('active');
+            }
+        });
+    
+        $(document).on('click', '.zoomed-image', function () {
+            $(this).removeClass('active').fadeOut(300, function () {
+                $(this).remove();
+            });
+        });
+    });    
     </script>
 </head>
 <body>
