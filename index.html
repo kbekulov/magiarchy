@@ -328,108 +328,61 @@
             transform: translateX(-50%);
             text-align: center;
         }
-
-        .character-icons {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-            justify-content: center;
-            padding: 10px;
-        }
-
-        .character-icons img {
-            max-width: 100px;
-            max-height: 100px;
-            object-fit: cover;
-            border-radius: 5px;
-            transition: transform 0.3s ease;
-            cursor: pointer;
-        }
-
-        .character-icons img:hover {
-            transform: scale(1.1);
-        }
     </style>
     <script>
-        $(document).ready(function () {
-            // Disable right-click on the entire page
-            $(document).on("contextmenu", function (e) {
-                e.preventDefault();
+    $(document).ready(function () {
+        // Disable right-click on the entire page
+        $(document).on("contextmenu", function (e) {
+            e.preventDefault();
+        });
+    
+        // Load a random image on page load
+        const randomImage = Math.random() < 0.5 ? 'img/lynleit-copyright-1.png' : 'img/lynleit-copyright-2.png';
+        $('.content').html(`<img src="${randomImage}" alt="Main Star">`);
+    
+        // Adjust text container based on image width
+        function adjustTextContainer() {
+            const imageWidth = $('.content img').width();
+            $('.display-text').css('left', `${imageWidth}px`);
+        }
+    
+        // Ensure adjustTextContainer runs after page fully loads
+        $(window).on('load', adjustTextContainer);
+        $(window).on('resize', adjustTextContainer);
+    
+        // Display text from local markdown files on menu link click
+        $('.menu a').on('click', function (e) {
+            e.preventDefault();
+    
+            const linkName = $(this).text().toLowerCase().replace(' | ', '-');
+            $.get(`${linkName}.md`, function (data) {
+                $('.display-text').html(marked.parse(data)).fadeIn();
             });
-        
-            // Load a random image on page load
-            const randomImage = Math.random() < 0.5 ? 'img/lynleit-copyright-1.png' : 'img/lynleit-copyright-2.png';
-            $('.content').html(`<img src="${randomImage}" alt="Main Star">`);
-        
-            // Adjust text container based on image width
-            function adjustTextContainer() {
-                const imageWidth = $('.content img').width();
-                $('.display-text').css('left', `${imageWidth}px`);
-            }
-        
-            // Ensure adjustTextContainer runs after page fully loads
-            $(window).on('load', adjustTextContainer);
-            $(window).on('resize', adjustTextContainer);
-        
-            // Display text from local markdown files on menu link click
-            $('.menu a').on('click', function (e) {
-                e.preventDefault();
-        
-                const linkName = $(this).text().toLowerCase().replace(' | ', '-');
-                $.get(`${linkName}.md`, function (data) {
-                    // Check if the markdown contains the "[character icons]" keyword
-                    if (data.includes("[character icons]")) {
-                        renderCharacterIcons();
-                    } else {
-                        $('.display-text').html(marked.parse(data)).fadeIn();
-                    }
-                });
-        
-                $('.content').css('transform', 'translateX(calc(40vw))');
-                $('.copyright').addClass('center');
-            });
-        
-            // Image zooming functionality
-            $(document).on('click', '.display-text img', function () {
-                const imgSrc = $(this).attr('src');
-        
-                if ($('.zoomed-image').length) {
-                    $('.zoomed-image').removeClass('active').fadeOut(300, function () {
-                        $(this).remove();
-                    });
-                } else {
-                    $('body').append(`<img src="${imgSrc}" class="zoomed-image">`);
-                    $('.zoomed-image').fadeIn(300).addClass('active');
-                }
-            });
-        
-            $(document).on('click', '.zoomed-image', function () {
-                $(this).removeClass('active').fadeOut(300, function () {
+    
+            $('.content').css('transform', 'translateX(calc(40vw))');
+            $('.copyright').addClass('center');
+        });
+    
+        // Image zooming functionality
+        $(document).on('click', '.display-text img', function () {
+            const imgSrc = $(this).attr('src');
+    
+            if ($('.zoomed-image').length) {
+                $('.zoomed-image').removeClass('active').fadeOut(300, function () {
                     $(this).remove();
                 });
-            });
-        
-            // Function to render character icons
-            function renderCharacterIcons() {
-                // Path to the character icons directory
-                const directory = 'img/character_icons/';
-                const imageTypes = ['png', 'jpg', 'jpeg', 'gif']; // Supported image types
-        
-                // Use AJAX to fetch image names from the directory (requires server-side support)
-                $.get(directory, function (data) {
-                    const $container = $('<div class="character-icons"></div>');
-                    $(data).find("a:contains(.)").each(function () {
-                        const filename = $(this).attr("href");
-                        const extension = filename.split('.').pop().toLowerCase();
-                        if (imageTypes.includes(extension)) {
-                            $container.append(`<img src="${directory}${filename}" alt="${filename}" />`);
-                        }
-                    });
-        
-                    $('.display-text').html($container).fadeIn();
-                });
+            } else {
+                $('body').append(`<img src="${imgSrc}" class="zoomed-image">`);
+                $('.zoomed-image').fadeIn(300).addClass('active');
             }
         });
+    
+        $(document).on('click', '.zoomed-image', function () {
+            $(this).removeClass('active').fadeOut(300, function () {
+                $(this).remove();
+            });
+        });
+    });    
     </script>
 </head>
 <body>
