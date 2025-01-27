@@ -1,5 +1,7 @@
 [character icons]
 
+---
+
 ### MSF
 - **Lynleit Monto** is a 27-year-old woman of mixed Asian-European heritage, standing 170 cm tall with a slim and feminine build. She has striking blue eyes and long black wavy hair, often styled elegantly. Her typical attire includes a blue trench coat, white blouse with a black ribbon, black shorts, black opaque tights, and leather over-knee boots. Known for her warm, empathetic nature, Lynleit is deeply duty-driven, striving to balance her natural kindness with the calculated leadership required to uphold her father's legacy at MSF. Despite struggling to balance her natural personality with her professional persona, she's seen as a guiding light, affectionately nicknamed by her colleagues as the "Housecat of MSF" for her elegant yet protective demeanour.
 - **Kyrien Lateumn** is a 30-year-old man standing at 180 cm tall, with a lightweight build. He has black layered hair and brown eyes, often dressed in a brown leather jacket, burgundy shirt, dark pants, and dress shoes. As the son of a late colonel with a family rooted in the country's military bureaucracy, Kyrien possesses above-average proficiency with firearms and small weapons. Despite his reclusive exterior, he harbors deep passion and unwavering determination towards justice, driven by an inner moral compass. Kyrien's secretive yet passionate nature deeply resonates with Lynleit, fostering a unique bond of trust and understanding.
