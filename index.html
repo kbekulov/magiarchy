@@ -329,107 +329,107 @@
             text-align: center;
         }
     </style>
-    <script>$(document).ready(function () {
-        // Disable right-click on the entire page
-        $(document).on("contextmenu", function (e) {
-            e.preventDefault();
-        });
-    
-        // Load a random image on page load
-        const randomImage = Math.random() < 0.5 ? 'img/lynleit-copyright-1.png' : 'img/lynleit-copyright-2.png';
-        $('.content').html(`<img src="${randomImage}" alt="Main Star">`);
-    
-        // Adjust text container based on image width
-        function adjustTextContainer() {
-            const imageWidth = $('.content img').width();
-            $('.display-text').css('left', `${imageWidth}px`);
-        }
-    
-        // Ensure adjustTextContainer runs after page fully loads
-        $(window).on('load', adjustTextContainer);
-        $(window).on('resize', adjustTextContainer);
-    
-        // Load and render markdown file content
-        $('.menu a').on('click', function (e) {
-            e.preventDefault();
-    
-            const linkName = $(this).text().toLowerCase().replace(' | ', '-');
-            $.get(`${linkName}.md`, function (data) {
-                if (data.includes('[character icons]')) {
-                    // Render character icons in masonry layout
-                    renderCharacterIcons();
+    <script>
+        $(document).ready(function () {
+            // Disable right-click on the entire page
+            $(document).on("contextmenu", function (e) {
+                e.preventDefault();
+            });
+        
+            // Load a random image on page load
+            const randomImage = Math.random() < 0.5 ? 'img/lynleit-copyright-1.png' : 'img/lynleit-copyright-2.png';
+            $('.content').html(`<img src="${randomImage}" alt="Main Star">`);
+        
+            // Adjust text container based on image width
+            function adjustTextContainer() {
+                const imageWidth = $('.content img').width();
+                $('.display-text').css('left', `${imageWidth}px`);
+            }
+        
+            // Ensure adjustTextContainer runs after page fully loads
+            $(window).on('load', adjustTextContainer);
+            $(window).on('resize', adjustTextContainer);
+        
+            // Load and render markdown file content
+            $('.menu a').on('click', function (e) {
+                e.preventDefault();
+        
+                const linkName = $(this).text().toLowerCase().replace(' | ', '-');
+                $.get(`${linkName}.md`, function (data) {
+                    if (data.includes('[character icons]')) {
+                        // Render character icons and remaining markdown content
+                        const updatedData = data.replace('[character icons]', '<div class="icon-masonry"></div>');
+                        $('.display-text').html(marked.parse(updatedData)).fadeIn();
+                        renderCharacterIcons();
+                    } else {
+                        $('.display-text').html(marked.parse(data)).fadeIn();
+                    }
+                });
+        
+                $('.content').css('transform', 'translateX(calc(40vw))');
+                $('.copyright').addClass('center');
+            });
+        
+            function renderCharacterIcons() {
+                const iconContainer = $('.icon-masonry');
+        
+                // Fetch all image files from /img/character_icons/ (requires pre-known list or server API)
+                const characterIcons = [
+                    'icon1.png',
+                    'icon2.png',
+                    'icon3.png',
+                    // Add more icons as needed
+                ];
+        
+                characterIcons.forEach(icon => {
+                    const img = $(`<img src="/img/character_icons/${icon}" alt="${icon}">`);
+                    iconContainer.append(img);
+                });
+            }
+        
+            // Style for masonry layout and icons
+            $('head').append(`
+                <style>
+                    .icon-masonry {
+                        display: flex;
+                        flex-wrap: wrap;
+                        gap: 10px;
+                        justify-content: center;
+                        margin-bottom: 20px;
+                    }
+                    .icon-masonry img {
+                        max-width: 100px;
+                        max-height: 100px;
+                        object-fit: cover;
+                        border-radius: 5px;
+                        transition: transform 0.3s ease;
+                    }
+                    .icon-masonry img:hover {
+                        transform: scale(1.1);
+                    }
+                </style>
+            `);
+        
+            // Image zooming functionality
+            $(document).on('click', '.display-text img', function () {
+                const imgSrc = $(this).attr('src');
+        
+                if ($('.zoomed-image').length) {
+                    $('.zoomed-image').removeClass('active').fadeOut(300, function () {
+                        $(this).remove();
+                    });
                 } else {
-                    $('.display-text').html(marked.parse(data)).fadeIn();
+                    $('body').append(`<img src="${imgSrc}" class="zoomed-image">`);
+                    $('.zoomed-image').fadeIn(300).addClass('active');
                 }
             });
-    
-            $('.content').css('transform', 'translateX(calc(40vw))');
-            $('.copyright').addClass('center');
-        });
-    
-        function renderCharacterIcons() {
-            const iconContainer = $('<div class="icon-masonry"></div>');
-            $('.display-text').html('').append(iconContainer);
-    
-            // Fetch all image files from /img/character_icons/ (requires pre-known list or server API)
-            const characterIcons = [
-                'icon1.png',
-                'icon2.png',
-                'icon3.png',
-                // Add more icons as needed
-            ];
-    
-            characterIcons.forEach(icon => {
-                const img = $(`<img src="/img/character_icons/${icon}" alt="${icon}">`);
-                iconContainer.append(img);
-            });
-    
-            $('.display-text').fadeIn();
-        }
-    
-        // Style for masonry layout and icons
-        $('head').append(`
-            <style>
-                .icon-masonry {
-                    display: flex;
-                    flex-wrap: wrap;
-                    gap: 10px;
-                    justify-content: center;
-                }
-                .icon-masonry img {
-                    max-width: 100px;
-                    max-height: 100px;
-                    object-fit: cover;
-                    border-radius: 5px;
-                    transition: transform 0.3s ease;
-                }
-                .icon-masonry img:hover {
-                    transform: scale(1.1);
-                }
-            </style>
-        `);
-    
-        // Image zooming functionality
-        $(document).on('click', '.display-text img', function () {
-            const imgSrc = $(this).attr('src');
-    
-            if ($('.zoomed-image').length) {
-                $('.zoomed-image').removeClass('active').fadeOut(300, function () {
+        
+            $(document).on('click', '.zoomed-image', function () {
+                $(this).removeClass('active').fadeOut(300, function () {
                     $(this).remove();
                 });
-            } else {
-                $('body').append(`<img src="${imgSrc}" class="zoomed-image">`);
-                $('.zoomed-image').fadeIn(300).addClass('active');
-            }
-        });
-    
-        $(document).on('click', '.zoomed-image', function () {
-            $(this).removeClass('active').fadeOut(300, function () {
-                $(this).remove();
             });
         });
-    });
-    
     </script>
 </head>
 <body>
