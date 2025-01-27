@@ -55,7 +55,7 @@ Lynleit's family house is a neoclassical mansion with white walls and pillars, n
 
 ---
 
-### Lore: Romantic Subplots
+### Story: Romantic Subplots
 
 Felix, Lynleit’s trusted colleague and bodyguard, is a charming and flirtatious figure, often seen engaging in playful banter and romantic escapades with others. Despite harboring a quiet, unspoken admiration for Lynleit, he views her as distant, not just due to her position but because of an inherent sense of imbalance between them. This perceived disparity leaves Felix unable to act on his feelings, fostering a subtle vulnerability that manifests as jealousy and insecurity when Kyrien, an enigmatic and self-driven newcomer, joins their circle. Felix’s initial hostility toward Kyrien stems not only from professional suspicion but from an instinctive recognition of Kyrien as Lynleit’s equal—a potential partner in both purpose and spirit.
 
@@ -67,7 +67,7 @@ Their bond reaches a critical juncture during a life-or-death encounter, where t
 
 ---
 
-### Lore: The Final Truth
+### Story: The Final Truth
 Lynleit’s world—the Duchy with its aristocracy, factions, and supernatural conflicts—is not perfect. It unravels as anomalies and inconsistencies become increasingly evident: it is not real. As a witch of unparalleled power, Lynleit unknowingly created this illusion, crafting an intricate reality to escape the harsh truths of the real world. However, her illusion is flawed, plagued by instability that manifests as disappearances, Holumns, and strange glitches in her surroundings. Characters often experience phenomena akin to déjà vu and the Mandela Effect, brushing these feelings aside as fleeting oddities. Yet, as time progresses, the anomalies grow more uncanny, and Lynleit becomes the primary observer of these distortions.
 
 Haunted by a growing sense of unease, Lynleit feels something is profoundly wrong with her world. This gnawing sensation intensifies when she begins to catch glimpses of an ominous silhouette standing behind her in mirrors. The figure appears ghostly, its features blurred and indistinct, vanishing the moment she turns to confront it. Similarly, when Lynleit uses her magic to walk on water, the silhouette occasionally materializes in the reflection below her feet, its presence unsettling yet not overtly malign—at least at first. These haunting visions deepen her discomfort, feeding into the dread that something is unraveling around her.
