@@ -1,18 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Editable CV Template</title>
   <style>
-    /* Set the overall page background to dark grey */
+    /* Global and Body Styles */
     body {
-      background-color: #2b2b2b; /* Photoshop-like dark grey */
+      background-color: #2b2b2b; /* Dark grey background */
       margin: 0;
-      padding: 20px; /* Optional: adds some spacing around the canvas */
+      padding: 20px;
+      font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     }
     
-    /* Screen styling */
+    /* A4 Wrapper for screen */
     @media screen {
       .page-wrapper {
         width: 210mm;
@@ -26,10 +27,10 @@
       }
     }
     
-    /* Print styling */
+    /* Remove extraneous styling when printing */
     @media print {
       body {
-        background-color: #fff; /* Remove dark background for print */
+        background-color: #fff;
       }
       
       .page-wrapper {
@@ -40,14 +41,139 @@
         box-shadow: none;
       }
     }
+    
+    /* CV Container */
+    .cv-container {
+      padding: 20px;
+      color: #333;
+      line-height: 1.6;
+    }
+    
+    /* Header Section */
+    .cv-header {
+      text-align: center;
+      padding: 20px;
+      background: linear-gradient(135deg, #6B73FF, #000DFF);
+      color: #fff;
+      border-radius: 4px;
+      margin-bottom: 30px;
+    }
+    
+    .cv-header h1 {
+      margin: 0;
+      font-size: 2.5em;
+    }
+    
+    .cv-header p {
+      margin: 5px 0 0;
+      font-size: 1.2em;
+    }
+    
+    /* Section Styling */
+    .cv-section {
+      margin-bottom: 40px;
+    }
+    
+    .section-title {
+      border-bottom: 2px solid #000DFF;
+      padding-bottom: 5px;
+      margin-bottom: 15px;
+      font-size: 1.8em;
+      color: #000DFF;
+    }
+    
+    /* Timeline Styling */
+    .timeline {
+      position: relative;
+      margin-left: 20px;
+      padding-left: 20px;
+    }
+    
+    .timeline::before {
+      content: "";
+      position: absolute;
+      left: 10px;
+      top: 0;
+      bottom: 0;
+      width: 4px;
+      background: linear-gradient(to bottom, #6B73FF, #000DFF);
+    }
+    
+    .timeline-item {
+      position: relative;
+      margin-bottom: 20px;
+    }
+    
+    .timeline-item::before {
+      content: "";
+      position: absolute;
+      left: -24px;
+      top: 5px;
+      width: 14px;
+      height: 14px;
+      background: #fff;
+      border: 4px solid #6B73FF;
+      border-radius: 50%;
+    }
+    
+    .timeline-date {
+      font-weight: bold;
+      margin-bottom: 5px;
+      color: #000DFF;
+    }
+    
+    .timeline-details h3 {
+      margin: 0;
+      font-size: 1.4em;
+      color: #333;
+    }
+    
+    .timeline-details p {
+      margin: 5px 0 0;
+      font-size: 1em;
+      color: #666;
+    }
   </style>
 </head>
 <body>
   <div class="page-wrapper">
-    <!-- Your layout: columns, timelines, etc. -->
-    <h1>John Doe</h1>
-    <p>Professional Summary: ...</p>
-    <!-- More content goes here -->
+    <div class="cv-container">
+      <!-- Header Section -->
+      <div class="cv-header">
+        <h1>John Doe</h1>
+        <p>Frontend Developer</p>
+      </div>
+      
+      <!-- Professional Experience Section with Timeline -->
+      <section class="cv-section">
+        <h2 class="section-title">Professional Experience</h2>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-date">2022 - Present</div>
+            <div class="timeline-details">
+              <h3>Senior Developer</h3>
+              <p>Leading projects and mentoring new hires.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-date">2020 - 2022</div>
+            <div class="timeline-details">
+              <h3>Developer</h3>
+              <p>Worked on client-side applications with a focus on responsive design.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <!-- Education Section -->
+      <section class="cv-section">
+        <h2 class="section-title">Education</h2>
+        <p><strong>University of XYZ</strong>, BSc in Computer Science</p>
+      </section>
+      
+      <!-- Additional sections can be added here -->
+      
+    </div>
   </div>
 </body>
 </html>
