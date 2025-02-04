@@ -5,6 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Editable CV Template</title>
   <style>
+    /* Set the overall page background to dark grey */
+    body {
+      background-color: #2b2b2b; /* Photoshop-like dark grey */
+      margin: 0;
+      padding: 20px; /* Optional: adds some spacing around the canvas */
+    }
+    
     /* Screen styling */
     @media screen {
       .page-wrapper {
@@ -12,8 +19,8 @@
         height: 297mm;
         margin: 20px auto;
         border: 1px solid #ccc;
-        background: #fff;
-        box-shadow: 0 0 10px rgba(0,0,0,0.3);
+        background: #fff; /* White canvas */
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
         overflow: hidden;
         position: relative;
       }
@@ -21,6 +28,10 @@
     
     /* Print styling */
     @media print {
+      body {
+        background-color: #fff; /* Remove dark background for print */
+      }
+      
       .page-wrapper {
         width: auto;
         height: auto;
@@ -34,6 +45,9 @@
 <body>
   <div class="page-wrapper">
     <!-- Your layout: columns, timelines, etc. -->
+    <h1>John Doe</h1>
+    <p>Professional Summary: ...</p>
+    <!-- More content goes here -->
   </div>
 </body>
 </html>
