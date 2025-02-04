@@ -93,14 +93,14 @@
       height: 150px; /* Fixed height for the timeline container */
     }
     
-    /* Thicker horizontal timeline track with rounded corners, fixed at 60px from top */
+    /* Thicker horizontal timeline track with rounded corners, now at 45px from the top */
     .timeline::before {
       content: "";
       position: absolute;
-      top: 60px;
+      top: 45px;
       left: 0;
       right: 0;
-      height: 12px; /* Thicker line */
+      height: 12px;
       background: linear-gradient(to right, #7688e4, #6cb1d5);
       border-radius: 6px;
       z-index: 1;
@@ -115,13 +115,12 @@
       z-index: 2;
     }
     
-    /* Title above the timeline line */
+    /* Title above the timeline line – now positioned closer to the line */
     .timeline-top {
       position: absolute;
-      top: 0;
+      top: 25px;
       left: 0;
       right: 0;
-      padding-top: 5px;
     }
     
     .timeline-top h3 {
@@ -133,10 +132,9 @@
     /* Date and Description below the timeline line */
     .timeline-bottom {
       position: absolute;
-      top: 75px;  /* Pushed down to ensure it's below the timeline line */
+      top: 55px;
       left: 0;
       right: 0;
-      padding-bottom: 5px;
     }
     
     .timeline-bottom .timeline-date {
@@ -154,10 +152,10 @@
     /* Timeline marker: outer circle with gradient border and inner white circle */
     .timeline-marker {
       position: absolute;
-      top: 60px;
+      top: 45px;
       left: 50%;
       transform: translate(-50%, -50%);
-      width: 22px; /* Outer circle size */
+      width: 22px;
       height: 22px;
       background: linear-gradient(to right, #7688e4, #6cb1d5);
       border-radius: 50%;
@@ -169,7 +167,7 @@
     
     .timeline-marker::after {
       content: "";
-      width: 14px; /* Inner white circle size */
+      width: 14px;
       height: 14px;
       background: white;
       border-radius: 50%;
