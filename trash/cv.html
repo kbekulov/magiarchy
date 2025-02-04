@@ -33,7 +33,6 @@
       body {
         background-color: #fff;
       }
-      
       .page-wrapper {
         width: auto;
         height: auto;
@@ -93,14 +92,16 @@
       height: 150px; /* Fixed height for the timeline container */
     }
     
-    /* Thicker horizontal timeline track with rounded corners, fixed at 60px from top */
+    /* Timeline line (12px thick) – its top is set so that its center is at 45px + 6px = 51px.
+       You can adjust this anchor if needed.
+    */
     .timeline::before {
       content: "";
       position: absolute;
-      top: 60px;
+      top: 39px; /* 45px desired center - 6px (half the height) = 39px */
       left: 0;
       right: 0;
-      height: 12px; /* Thicker line */
+      height: 12px;
       background: linear-gradient(to right, #7688e4, #6cb1d5);
       border-radius: 6px;
       z-index: 1;
@@ -109,19 +110,22 @@
     .timeline-item {
       position: relative;
       flex: 1;
-      height: 150px;
+      height: 50px;
       text-align: center;
       padding: 0 10px;
       z-index: 2;
     }
     
-    /* Title above the timeline line */
+    /* Title container: now occupies from 10px from the top down to 25px,
+       which creates more space between the title and the timeline line.
+    */
     .timeline-top {
       position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      padding-top: 5px;
+      top: 10px;
+      bottom: 25px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
     
     .timeline-top h3 {
@@ -130,13 +134,15 @@
       color: #444444;
     }
     
-    /* Date and Description below the timeline line */
+    /* Date and Description container: now starts at 65px, creating extra space below the timeline line */
     .timeline-bottom {
       position: absolute;
-      top: 75px;  /* Pushed down to ensure it's below the timeline line */
-      left: 0;
-      right: 0;
-      padding-bottom: 5px;
+      top: 105px;
+      bottom: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
     }
     
     .timeline-bottom .timeline-date {
@@ -146,18 +152,20 @@
     }
     
     .timeline-bottom p {
-      margin: 5px 0 0;
+      margin: 0;
       font-size: 0.8em;
       color: #b5b5b5;
     }
     
-    /* Timeline marker: outer circle with gradient border and inner white circle */
+    /* Timeline marker: outer circle (22px) with gradient border and inner white circle (14px).
+       Its center is fixed at the same vertical anchor as the timeline line.
+    */
     .timeline-marker {
       position: absolute;
-      top: 60px;
+      top: 45px;
       left: 50%;
       transform: translate(-50%, -50%);
-      width: 22px; /* Outer circle size */
+      width: 22px;
       height: 22px;
       background: linear-gradient(to right, #7688e4, #6cb1d5);
       border-radius: 50%;
@@ -169,7 +177,7 @@
     
     .timeline-marker::after {
       content: "";
-      width: 14px; /* Inner white circle size */
+      width: 14px;
       height: 14px;
       background: white;
       border-radius: 50%;
