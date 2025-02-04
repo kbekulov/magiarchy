@@ -33,6 +33,7 @@
       body {
         background-color: #fff;
       }
+      
       .page-wrapper {
         width: auto;
         height: auto;
@@ -58,10 +59,12 @@
       border-radius: 4px;
       margin-bottom: 30px;
     }
+    
     .cv-header h1 {
       margin: 0;
       font-size: 2em;
     }
+    
     .cv-header p {
       margin: 5px 0 0;
       font-size: 1em;
@@ -71,6 +74,7 @@
     .cv-section {
       margin-bottom: 40px;
     }
+    
     .section-title {
       border-bottom: 2px solid #7688e4;
       padding-bottom: 5px;
@@ -89,14 +93,11 @@
       height: 150px; /* Fixed height for the timeline container */
     }
     
-    /* Set a common anchor at 60px from the top.
-       The timeline line (12px thick) is positioned so that its center is at 60px.
-       (top = 60 - 6 = 54px) 
-    */
+    /* Thicker horizontal timeline track with rounded corners, now at 45px from the top */
     .timeline::before {
       content: "";
       position: absolute;
-      top: 54px;
+      top: 45px;
       left: 0;
       right: 0;
       height: 12px;
@@ -114,48 +115,44 @@
       z-index: 2;
     }
     
-    /* The title container occupies the area from the top down to 50px (i.e. 10px above the anchor) */
+    /* Title above the timeline line – now positioned closer to the line */
     .timeline-top {
       position: absolute;
-      top: 0;
-      bottom: 50px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      top: 25px;
+      left: 0;
+      right: 0;
     }
+    
     .timeline-top h3 {
-      margin: 20px 0;
+      margin: 0;
       font-size: 1em;
       color: #444444;
     }
     
-    /* The date/description container starts at 70px (i.e. 10px below the anchor) */
+    /* Date and Description below the timeline line */
     .timeline-bottom {
       position: absolute;
-      top: 70px;
-      bottom: 0;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
+      top: 55px;
+      left: 0;
+      right: 0;
     }
+    
     .timeline-bottom .timeline-date {
       font-weight: bold;
       font-size: 0.9em;
       color: #444444;
     }
+    
     .timeline-bottom p {
       margin: 5px 0 0;
       font-size: 0.8em;
       color: #b5b5b5;
     }
     
-    /* Timeline marker: outer circle (22px) with gradient border and inner white circle (14px)
-       Its center is fixed at 60px (the same anchor as the timeline line)
-    */
+    /* Timeline marker: outer circle with gradient border and inner white circle */
     .timeline-marker {
       position: absolute;
-      top: 60px;
+      top: 45px;
       left: 50%;
       transform: translate(-50%, -50%);
       width: 22px;
@@ -167,6 +164,7 @@
       align-items: center;
       justify-content: center;
     }
+    
     .timeline-marker::after {
       content: "";
       width: 14px;
