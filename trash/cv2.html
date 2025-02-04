@@ -33,7 +33,6 @@
       body {
         background-color: #fff;
       }
-      
       .page-wrapper {
         width: auto;
         height: auto;
@@ -93,11 +92,13 @@
       height: 150px; /* Fixed height for the timeline container */
     }
     
-    /* Thicker horizontal timeline track with rounded corners, now at 45px from the top */
+    /* Timeline line (12px thick) – its top is set so that its center is at 45px + 6px = 51px.
+       You can adjust this anchor if needed.
+    */
     .timeline::before {
       content: "";
       position: absolute;
-      top: 45px;
+      top: 39px; /* 45px desired center - 6px (half the height) = 39px */
       left: 0;
       right: 0;
       height: 12px;
@@ -115,12 +116,16 @@
       z-index: 2;
     }
     
-    /* Title above the timeline line – now positioned closer to the line */
+    /* Title container: now occupies from 10px from the top down to 25px,
+       which creates more space between the title and the timeline line.
+    */
     .timeline-top {
       position: absolute;
-      top: 25px;
-      left: 0;
-      right: 0;
+      top: 10px;
+      bottom: 25px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
     
     .timeline-top h3 {
@@ -129,12 +134,15 @@
       color: #444444;
     }
     
-    /* Date and Description below the timeline line */
+    /* Date and Description container: now starts at 65px, creating extra space below the timeline line */
     .timeline-bottom {
       position: absolute;
-      top: 55px;
-      left: 0;
-      right: 0;
+      top: 65px;
+      bottom: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
     }
     
     .timeline-bottom .timeline-date {
@@ -149,7 +157,9 @@
       color: #b5b5b5;
     }
     
-    /* Timeline marker: outer circle with gradient border and inner white circle */
+    /* Timeline marker: outer circle (22px) with gradient border and inner white circle (14px).
+       Its center is fixed at the same vertical anchor as the timeline line.
+    */
     .timeline-marker {
       position: absolute;
       top: 45px;
@@ -190,7 +200,7 @@
           <!-- Timeline Item 1 -->
           <div class="timeline-item">
             <div class="timeline-top">
-              <h3>Jr. Web Developer<br></h3>
+              <h3>Jr. Web Developer</h3>
             </div>
             <div class="timeline-marker"></div>
             <div class="timeline-bottom">
@@ -201,7 +211,7 @@
           <!-- Timeline Item 2 -->
           <div class="timeline-item">
             <div class="timeline-top">
-              <h3>Database Administrator<br></h3>
+              <h3>Database Administrator</h3>
             </div>
             <div class="timeline-marker"></div>
             <div class="timeline-bottom">
@@ -212,7 +222,7 @@
           <!-- Timeline Item 3 -->
           <div class="timeline-item">
             <div class="timeline-top">
-              <h3>RPA Developer<br></h3>
+              <h3>RPA Developer</h3>
             </div>
             <div class="timeline-marker"></div>
             <div class="timeline-bottom">
@@ -223,7 +233,7 @@
           <!-- Timeline Item 4 -->
           <div class="timeline-item">
             <div class="timeline-top">
-              <h3>Senior RPA Developer<br></h3>
+              <h3>Senior RPA Developer</h3>
             </div>
             <div class="timeline-marker"></div>
             <div class="timeline-bottom">
