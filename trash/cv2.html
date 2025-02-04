@@ -151,19 +151,28 @@
       color: #b5b5b5;
     }
     
-    /* Timeline marker: centered circle overlapping the timeline line */
+    /* Timeline marker: outer circle with gradient border and inner white circle */
     .timeline-marker {
       position: absolute;
       top: 60px;
       left: 50%;
       transform: translate(-50%, -50%);
-      width: 14px;
-      height: 14px;
-      background: white; /* White background */
-      border: 4px solid transparent;
-      border-image: linear-gradient(to right, #7688e4, #6cb1d5) 1;
+      width: 22px; /* Outer circle size */
+      height: 22px;
+      background: linear-gradient(to right, #7688e4, #6cb1d5);
       border-radius: 50%;
       z-index: 3;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .timeline-marker::after {
+      content: "";
+      width: 14px; /* Inner white circle size */
+      height: 14px;
+      background: white;
+      border-radius: 50%;
     }
   </style>
 </head>
