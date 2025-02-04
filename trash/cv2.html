@@ -3,9 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Editable CV Template with Interactive Timeline</title>
-  <!-- Include vis-timeline CSS -->
-  <link href="https://unpkg.com/vis-timeline@latest/styles/vis-timeline-graph2d.min.css" rel="stylesheet" type="text/css" />
+  <title>Editable CV Template</title>
   <style>
     /* Global and Body Styles */
     body {
@@ -84,29 +82,67 @@
       color: #444444;
     }
     
-    /* Custom styling for vis-timeline container */
-    #timeline {
-      height: 150px;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-      margin-bottom: 20px;
-      background: #fff;
+    /* Horizontal Timeline Styling */
+    .timeline {
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin: 40px 0;
+      padding: 20px 0;
     }
-    /* Override vis-timeline item styling */
-    .vis-item {
-      background-color: #7688e4 !important;
-      border: 1px solid #6cb1d5 !important;
-      color: #444444 !important;
-      font-size: 0.9em;
-      padding: 5px;
-      border-radius: 4px;
+    
+    /* Timeline track: a horizontal gradient line */
+    .timeline::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 0;
+      right: 0;
+      height: 4px;
+      background: linear-gradient(to right, #7688e4, #6cb1d5);
+      transform: translateY(-50%);
+      z-index: 1;
     }
-    .vis-item.vis-selected {
-      background-color: #6cb1d5 !important;
+    
+    .timeline-item {
+      position: relative;
+      text-align: center;
+      flex: 1;
+      padding: 0 10px;
+      z-index: 2;
     }
-    /* Override timeline axis label styling */
-    .vis-time-axis .vis-text {
+    
+    /* Timeline marker: centered circle for each item */
+    .timeline-item::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 14px;
+      height: 14px;
+      background: #b5b5b5; /* Lightest element color */
+      border: 4px solid #7688e4;
+      border-radius: 50%;
+    }
+    
+    .timeline-date {
+      font-weight: bold;
+      margin-bottom: 10px;
       color: #444444;
+    }
+    
+    .timeline-details h3 {
+      margin: 0;
+      font-size: 1.2em;
+      color: #444444;
+    }
+    
+    .timeline-details p {
+      margin: 5px 0 0;
+      font-size: 0.9em;
+      color: #b5b5b5;
     }
   </style>
 </head>
@@ -119,60 +155,43 @@
         <p>Frontend Developer</p>
       </div>
       
-      <!-- Professional Experience Section with Interactive Timeline -->
+      <!-- Professional Experience Section with Simple Horizontal Timeline -->
       <section class="cv-section">
         <h2 class="section-title">Professional Experience</h2>
-        <!-- The timeline container -->
-        <div id="timeline"></div>
-        <!-- Include vis-timeline JS -->
-        <script src="https://unpkg.com/vis-timeline@latest/standalone/umd/vis-timeline-graph2d.min.js"></script>
-        <script>
-          // Create timeline items using vis.DataSet
-          var items = new vis.DataSet([
-            {
-              id: 1,
-              content: '<strong>Jr. Web Developer</strong><br><small>Began my career working on front-end projects using HTML, CSS, and JavaScript.</small>',
-              start: '2008-01-01',
-              end: '2008-12-31'
-            },
-            {
-              id: 2,
-              content: '<strong>Database Administrator</strong><br><small>Managed enterprise database systems and executed data migrations with precision.</small>',
-              start: '2018-01-01',
-              end: '2020-12-31'
-            },
-            {
-              id: 3,
-              content: '<strong>Automation Developer</strong><br><small>Developed automation scripts to streamline processes and boost productivity.</small>',
-              start: '2020-01-01',
-              end: '2021-12-31'
-            },
-            {
-              id: 4,
-              content: '<strong>Senior Automation Developer</strong><br><small>Led a team in creating robust automation solutions, significantly increasing operational efficiency.</small>',
-              start: '2021-01-01',
-              end: '2025-12-31'
-            }
-          ]);
-          
-          // Configure timeline options
-          var options = {
-            orientation: 'top', // horizontal timeline with the time axis on top
-            editable: false,
-            tooltip: {
-              followMouse: true,
-              overflowMethod: 'cap'
-            },
-            margin: {
-              item: 10,
-              axis: 5
-            }
-          };
-          
-          // Initialize the timeline
-          var container = document.getElementById('timeline');
-          var timeline = new vis.Timeline(container, items, options);
-        </script>
+        <div class="timeline">
+          <!-- Timeline Item 1 -->
+          <div class="timeline-item">
+            <div class="timeline-date">2008</div>
+            <div class="timeline-details">
+              <h3>Jr. Web Developer</h3>
+              <p>Kick-started my career working on small web projects and refining my HTML, CSS, and JavaScript skills.</p>
+            </div>
+          </div>
+          <!-- Timeline Item 2 -->
+          <div class="timeline-item">
+            <div class="timeline-date">2018-2020</div>
+            <div class="timeline-details">
+              <h3>Database Administrator</h3>
+              <p>Managed enterprise-level databases, ensuring data integrity and maintaining optimal performance.</p>
+            </div>
+          </div>
+          <!-- Timeline Item 3 -->
+          <div class="timeline-item">
+            <div class="timeline-date">2020-2021</div>
+            <div class="timeline-details">
+              <h3>Automation Developer</h3>
+              <p>Developed and implemented automation scripts that streamlined repetitive processes and boosted efficiency.</p>
+            </div>
+          </div>
+          <!-- Timeline Item 4 -->
+          <div class="timeline-item">
+            <div class="timeline-date">2021-2025</div>
+            <div class="timeline-details">
+              <h3>Senior Automation Developer</h3>
+              <p>Led a team in designing and deploying advanced automation solutions, significantly enhancing operational performance.</p>
+            </div>
+          </div>
+        </div>
       </section>
       
       <!-- Education Section -->
