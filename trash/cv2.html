@@ -58,12 +58,10 @@
       border-radius: 4px;
       margin-bottom: 30px;
     }
-    
     .cv-header h1 {
       margin: 0;
       font-size: 2em;
     }
-    
     .cv-header p {
       margin: 5px 0 0;
       font-size: 1em;
@@ -73,7 +71,6 @@
     .cv-section {
       margin-bottom: 40px;
     }
-    
     .section-title {
       border-bottom: 2px solid #7688e4;
       padding-bottom: 5px;
@@ -89,16 +86,16 @@
       justify-content: space-between;
       align-items: stretch;
       margin: 40px 0;
-      height: 150px; /* Fixed height for the timeline container */
+      height: 150px; /* Increased height for more room */
     }
     
-    /* Timeline line (12px thick) – its top is set so that its center is at 45px + 6px = 51px.
-       You can adjust this anchor if needed.
+    /* Timeline line (12px thick):
+       Its top is set so its center is at 45px (i.e. top: 39px, because 39px + 6px = 45px)
     */
     .timeline::before {
       content: "";
       position: absolute;
-      top: 39px; /* 45px desired center - 6px (half the height) = 39px */
+      top: 39px; 
       left: 0;
       right: 0;
       height: 12px;
@@ -110,47 +107,49 @@
     .timeline-item {
       position: relative;
       flex: 1;
-      height: 50px;
-      text-align: center;
-      padding: 0 10px;
+      height: 150px; /* Must be high enough to accommodate top & bottom */
+      padding: 0;
       z-index: 2;
     }
     
-    /* Title container: now occupies from 10px from the top down to 25px,
-       which creates more space between the title and the timeline line.
+    /* Title container (job title):
+       Positioned from 10px to 25px from the top, spanning full width and centered.
     */
     .timeline-top {
       position: absolute;
       top: 10px;
       bottom: 25px;
+      width: 100%;
+      text-align: center;
       display: flex;
       align-items: center;
       justify-content: center;
     }
-    
     .timeline-top h3 {
       margin: 0;
       font-size: 1em;
       color: #444444;
     }
     
-    /* Date and Description container: now starts at 65px, creating extra space below the timeline line */
+    /* Date and Description container:
+       Positioned starting at 105px from the top, spanning full width and centered.
+    */
     .timeline-bottom {
       position: absolute;
       top: 105px;
       bottom: 0;
+      width: 100%;
+      text-align: center;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
     }
-    
     .timeline-bottom .timeline-date {
       font-weight: bold;
       font-size: 0.9em;
       color: #444444;
     }
-    
     .timeline-bottom p {
       margin: 0;
       font-size: 0.8em;
@@ -158,7 +157,7 @@
     }
     
     /* Timeline marker: outer circle (22px) with gradient border and inner white circle (14px).
-       Its center is fixed at the same vertical anchor as the timeline line.
+       Its center is fixed at 45px (matching the timeline line’s center).
     */
     .timeline-marker {
       position: absolute;
@@ -174,7 +173,6 @@
       align-items: center;
       justify-content: center;
     }
-    
     .timeline-marker::after {
       content: "";
       width: 14px;
