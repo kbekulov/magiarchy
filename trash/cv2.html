@@ -89,9 +89,8 @@
       height: 150px; /* Fixed height for the timeline container */
     }
     
-    /* Set a common anchor at 60px from the top.
-       The timeline line (12px thick) is positioned so that its center is at 60px.
-       (top = 60 - 6 = 54px) 
+    /* Common anchor at 60px:
+       - The timeline line is 12px thick, so its top is set to 54px (center at 60px)
     */
     .timeline::before {
       content: "";
@@ -114,11 +113,11 @@
       z-index: 2;
     }
     
-    /* The title container occupies the area from the top down to 50px (i.e. 10px above the anchor) */
+    /* Top container (job title): now occupies from top to 40px, leaving 20px breathing room above the 60px anchor */
     .timeline-top {
       position: absolute;
       top: 0;
-      bottom: 50px;
+      bottom: 40px;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -129,10 +128,10 @@
       color: #444444;
     }
     
-    /* The date/description container starts at 70px (i.e. 10px below the anchor) */
+    /* Bottom container (year & description): now starts at 80px, leaving 20px breathing room below the 60px anchor */
     .timeline-bottom {
       position: absolute;
-      top: 70px;
+      top: 80px;
       bottom: 0;
       display: flex;
       flex-direction: column;
@@ -151,7 +150,7 @@
     }
     
     /* Timeline marker: outer circle (22px) with gradient border and inner white circle (14px)
-       Its center is fixed at 60px (the same anchor as the timeline line)
+       Its center is fixed at 60px
     */
     .timeline-marker {
       position: absolute;
