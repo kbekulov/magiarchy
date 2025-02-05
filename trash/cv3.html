@@ -15,8 +15,8 @@
     }
 
     a, a:active, a:hover, a:focus {
-      text-decoration: none;
-      color: inherit;
+        text-decoration: none;
+        color: inherit;
     }
     
     /* A4 Wrapper for screen */
@@ -60,7 +60,6 @@
       padding: 20px;
       margin-bottom: -20px;
       /* No background as requested */
-      position: relative;
     }
     .cv-header h1 {
       margin: 0;
@@ -99,6 +98,48 @@
     }
     .pill-text {
       padding: 5px 10px;
+    }
+    /* Floating Languages Block in Header */
+    .floating-languages {
+      position: absolute;
+      top: 20px;  /* Adjust vertical positioning as needed */
+      right: 20px; /* Adjust horizontal positioning as needed */
+    }
+    .floating-languages .languages {
+      display: flex;
+      gap: 5px;
+    }
+    .floating-languages .language-item {
+      position: relative;
+      width: 35px;
+      height: 35px;
+      background: linear-gradient(to bottom right, #7688e4, #6cb1d5);
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .floating-languages .language-code {
+      color: white;
+      font-size: 0.8em;
+      font-weight: bold;
+      z-index: 2;
+    }
+    .floating-languages .language-level {
+      position: absolute;
+      top: -10px; /* Overlapping the top edge */
+      left: 90%;
+      transform: translateX(-50%);
+      width: 20px;
+      height: 20px;
+      background: #444444;
+      color: white;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.8em;
+      border: 0px solid white;
     }
     
     /* Section Styling */
@@ -223,7 +264,7 @@
       font-size: 0.9em;
       font-weight: normal;
       color: #444444;
-      margin-top: 0; /* No extra spacing */
+      margin-top: 0; /* Reduced spacing to effectively just a new line */
     }
     .skills-heading {
       font-size: 1em;
@@ -232,9 +273,39 @@
       margin-bottom: 10px;
       color: #444444;
     }
-    /* Right Column: (Languages now removed from here) */
-    .languages-wrapper {
-      display: none;
+    /* Right Column: Hobby Skills & Languages */
+    .right-column {
+      flex: 1;
+      min-width: 200px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+    /* Hobby Skills Container with Gradient Background */
+    .hobby-skills-container {
+      background: linear-gradient(to bottom right, #7688e4, #6cb1d5);
+      padding: 10px;
+      border-radius: 8px;
+    }
+    .hobby-skills-container .skills-heading {
+      color: white;
+      margin-bottom: 10px;
+    }
+    .hobby-skills-container ul {
+      list-style: none;
+      padding-left: 0;
+      margin: 0;
+    }
+    .hobby-skills-container li {
+      margin-bottom: 10px;
+    }
+    .hobby-skills-container li strong {
+      color: white;
+    }
+    .hobby-skills-container li .skill-description {
+      color: white;
+      font-size: 0.9em;
+      margin-top: 0;
     }
     
     /* Hobbies Section: Full-Width Hobbies Wrapper */
@@ -307,22 +378,22 @@
 <body>
   <div class="page-wrapper">
     <div class="cv-container">
-      <!-- Header Section -->
-      <div class="cv-header">
-        <h1>Kiril Bekulov</h1>
-        <p>Senior RPA Developer</p>
-        <!-- Contact Info Pills -->
-        <div class="contact-info">
-          <div class="contact-pill">
-            <span class="pill-icon">☎</span>
-            <span class="pill-text">+370 621 25650</span>
-          </div>
-          <div class="contact-pill">
-            <span class="pill-icon">✉</span>
-            <span class="pill-text">kiril@bekulov.com</span>
+        <!-- Header Section -->
+        <div class="cv-header">
+          <h1>Kiril Bekulov</h1>
+          <p>Senior RPA Developer</p>
+          <!-- Contact Info Pills -->
+          <div class="contact-info">
+            <div class="contact-pill">
+              <span class="pill-icon">☎</span>
+              <span class="pill-text">+370 621 25650</span>
+            </div>
+            <div class="contact-pill">
+              <span class="pill-icon">✉</span>
+              <span class="pill-text">kiril@bekulov.com</span>
+            </div>
           </div>
         </div>
-      </div>
       
       <!-- Professional Experience Section with Updated Timeline Hierarchy -->
       <section class="cv-section">
@@ -392,9 +463,30 @@
               </li>
               <li>
                 <strong>HTML, JavaScript, SQL</strong>
-                <span class="skill-description">Moderately experienced in web development and automation.</span>
+                <span class="skill-description">Moderately experienced in web-development and automation.</span>
               </li>
             </ul>
+          </div>
+          <!-- Right Column: Hobby Skills and Languages -->
+          <div class="right-column">
+            <!-- Hobby Skills Container with Gradient Background -->
+            <div class="hobby-skills-container">
+              <h3 class="skills-heading">Additional Skills</h3>
+              <ul class="hobby-skills">
+                <li>
+                  <strong>Process optimization</strong>
+                  <span class="skill-description">Personal achievements are driven by a strong desire to simplify & improve workflows for my team.</span>
+                </li>
+                <li>
+                  <strong>Presenting</strong>
+                  <span class="skill-description">Prepared and delivered presentations to large audiences.</span>
+                </li>
+                <li>
+                  <strong>Team-leading</strong>
+                  <span class="skill-description">Experienced in coordinating small teams of 5–6 people as a team leader.</span>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </section>
@@ -430,41 +522,42 @@
       
       <!-- Education Section -->
       <section class="cv-section">
-        <h2 class="section-title">Career Achievements &amp; Education</h2>
+        <h2 class="section-title">Career Achievements & Education</h2>
         <div class="skills">
           ...
         </div>
         <div class="right-column">
-          <p>Cardiff University (United Kingdom)<br><strong>BScEcon</strong>, Bachelor of Economics and Social Studies in International Relations &amp; Politics</p>
+          <p>Cardiff University (United Kingdom)<br><strong>BScEcon</strong>, Bachelor of Economics and Social Studies in International Relations & Politics</p>
         </div>
       </section>
+      <!-- Additional sections can be added here -->
     </div>
     <!-- Redesigned Languages Footer as a Full-Width Dark Footer -->
     <footer class="cv-footer">
-      <div class="footer-label">Spoken Languages:</div>
-      <div class="footer-languages">
-        <div class="language-pill">
-          <span class="level">C2</span>
-          <span class="code">English</span>
+        <div class="footer-label">Spoken Languages:</div>
+        <div class="footer-languages">
+          <div class="language-pill">
+            <span class="level">C2</span>
+            <span class="code">English</span>
+          </div>
+          <div class="language-pill">
+            <span class="level">C2</span>
+            <span class="code">Russian</span>
+          </div>
+          <div class="language-pill">
+            <span class="level">C1</span>
+            <span class="code">Lithuanian</span>
+          </div>
+          <div class="language-pill">
+            <span class="level">B2</span>
+            <span class="code">French</span>
+          </div>
+          <div class="language-pill">
+            <span class="level">B2</span>
+            <span class="code">Japanese</span>
+          </div>
         </div>
-        <div class="language-pill">
-          <span class="level">C2</span>
-          <span class="code">Russian</span>
-        </div>
-        <div class="language-pill">
-          <span class="level">C1</span>
-          <span class="code">Lithuanian</span>
-        </div>
-        <div class="language-pill">
-          <span class="level">B2</span>
-          <span class="code">French</span>
-        </div>
-        <div class="language-pill">
-          <span class="level">B2</span>
-          <span class="code">Japanese</span>
-        </div>
-      </div>
-    </footer>
+      </footer>
   </div>
 </body>
 </html>
