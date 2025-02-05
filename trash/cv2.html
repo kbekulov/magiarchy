@@ -231,7 +231,7 @@
       font-size: 0.9em;
       font-weight: normal;
       color: #444444;
-      margin-top: 0; /* Reduced spacing to effectively just a new line */
+      margin-top: 0; /* No extra spacing, just a new line */
     }
     .skills-heading {
       font-size: 1em;
@@ -240,42 +240,10 @@
       margin-bottom: 10px;
       color: #444444;
     }
-    /* Right Column: Hobby Skills & Languages */
-    .right-column {
+    /* Right Column: Languages Only */
+    .languages-wrapper {
       flex: 1;
       min-width: 200px;
-      display: flex;
-      flex-direction: column;
-      gap: 20px;
-    }
-    /* Hobby Skills Container with Gradient Background */
-    .hobby-skills-container {
-      background: linear-gradient(to bottom right, #7688e4, #6cb1d5);
-      padding: 10px;
-      border-radius: 8px;
-    }
-    .hobby-skills-container .skills-heading {
-      color: white;
-      margin-bottom: 10px;
-    }
-    .hobby-skills-container ul {
-      list-style: none;
-      padding-left: 0;
-      margin: 0;
-    }
-    .hobby-skills-container li {
-      margin-bottom: 10px;
-    }
-    .hobby-skills-container li strong {
-      color: white;
-    }
-    .hobby-skills-container li .skill-description {
-      color: white;
-      font-size: 0.9em;
-      margin-top: 0;
-    }
-    /* Languages Wrapper with Heading */
-    .languages-wrapper {
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -285,6 +253,40 @@
       font-weight: bold;
       color: #444444;
       margin-bottom: 10px;
+    }
+    
+    /* New: Hobbies Wrapper spanning full width */
+    .hobbies-wrapper {
+      flex-basis: 100%;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      padding: 10px;
+      margin-top: 20px;
+    }
+    .hobbies-heading {
+      text-align: center;
+      font-size: 1em;
+      font-weight: bold;
+      color: #444444;
+      margin-bottom: 10px;
+    }
+    .hobbies-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .hobbies-list li {
+      margin-bottom: 10px;
+    }
+    .hobbies-list li strong {
+      color: #444444;
+    }
+    .hobbies-list li .skill-description {
+      display: block;
+      font-size: 0.9em;
+      font-weight: normal;
+      color: #444444;
+      margin-top: 2px;
     }
   </style>
 </head>
@@ -365,79 +367,61 @@
               </li>
               <li>
                 <strong>HTML, JavaScript, SQL</strong>
-                <span class="skill-description">Moderately experienced in web-development and automation.</span>
-              </li>
-            </ul>
-            <h3 class="skills-heading">Hobbies</h3>
-            <ul class="hobby-skills">
-              <li>
-                <strong>Writing & coding</strong>
-                <span class="skill-description">Engaged in a multi-year project writing a complex fictional story for an indie game project.</span>
-              </li>
-              <li>
-                <strong>Languages & psychology</strong>
-                <span class="skill-description">Actively studying French and Japanese. Researching/teaching analytical philosophy.</span>
+                <span class="skill-description">Moderately experienced in web development and automation.</span>
               </li>
             </ul>
           </div>
-          <!-- Right Column: Hobby Skills and Languages -->
-          <div class="right-column">
-            <!-- Hobby Skills Container with Gradient Background -->
-            <div class="hobby-skills-container">
-              <h3 class="skills-heading">Additional Skills</h3>
-              <ul class="hobby-skills">
-                <li>
-                  <strong>Process optimization</strong>
-                  <span class="skill-description">Personal achievements are driven by a strong desire to simplify & improve workflows for my team.</span>
-                </li>
-                <li>
-                  <strong>Presenting</strong>
-                  <span class="skill-description">Prepared and delivered presentations to large audiences.</span>
-                </li>
-                <li>
-                  <strong>Team-leading</strong>
-                  <span class="skill-description">Experienced in coordinating small teams of 5–6 people as a team leader.</span>
-                </li>
-              </ul>
-            </div>
-            <!-- Languages Section -->
-            <div class="languages-wrapper">
-              <h3 class="languages-heading">Spoken languages</h3>
-              <div class="languages">
-                <div class="language-item">
-                  <div class="language-level">C2</div>
-                  <div class="language-code">EN</div>
-                </div>
-                <div class="language-item">
-                  <div class="language-level">C2</div>
-                  <div class="language-code">RU</div>
-                </div>
-                <div class="language-item">
-                  <div class="language-level">C1</div>
-                  <div class="language-code">LT</div>
-                </div>
-                <div class="language-item">
-                  <div class="language-level">B2</div>
-                  <div class="language-code">FR</div>
-                </div>
-                <div class="language-item">
-                  <div class="language-level">B2</div>
-                  <div class="language-code">JP</div>
-                </div>
+          <!-- Right Column: Languages Only -->
+          <div class="languages-wrapper">
+            <h3 class="languages-heading">Spoken Languages</h3>
+            <div class="languages">
+              <div class="language-item">
+                <div class="language-level">C2</div>
+                <div class="language-code">EN</div>
+              </div>
+              <div class="language-item">
+                <div class="language-level">C2</div>
+                <div class="language-code">RU</div>
+              </div>
+              <div class="language-item">
+                <div class="language-level">C1</div>
+                <div class="language-code">LT</div>
+              </div>
+              <div class="language-item">
+                <div class="language-level">B2</div>
+                <div class="language-code">FR</div>
+              </div>
+              <div class="language-item">
+                <div class="language-level">B2</div>
+                <div class="language-code">JP</div>
               </div>
             </div>
+          </div>
+          <!-- New: Hobbies Wrapper spanning both columns -->
+          <div class="hobbies-wrapper">
+            <h3 class="hobbies-heading">Hobbies</h3>
+            <ul class="hobbies-list">
+              <li>
+                <strong>Writing &amp; Coding</strong>
+                <span class="skill-description">Engaged in a multi-year project writing a complex fictional story for an indie game project.</span>
+              </li>
+              <li>
+                <strong>Languages &amp; Psychology</strong>
+                <span class="skill-description">Actively studying French and Japanese while researching and teaching analytical philosophy.</span>
+              </li>
+            </ul>
           </div>
         </div>
       </section>
       
-      <!-- Education Section -->
+      <!-- Education / Career Achievements Section -->
       <section class="cv-section">
-        <h2 class="section-title">Career Achievements & Education</h2>
+        <h2 class="section-title">Career Achievements &amp; Education</h2>
         <div class="skills">
           ...
         </div>
         <div class="right-column">
-          <p>Cardiff University (United Kingdom)<br><strong>BScEcon</strong>, Bachelor of Economics and Social Studies in International Relations & Politics</p>
+          <p>Cardiff University (United Kingdom)<br><strong>BScEcon</strong>, Bachelor of Economics and Social Studies in International Relations &amp; Politics</p>
         </div>
       </section>
       
