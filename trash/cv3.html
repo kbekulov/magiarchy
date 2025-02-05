@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Editable CV Template</title>
+  <style>
+    /* Global and Body Styles */
+    body {
+      background-color: #2b2b2b; /* Dark grey background */
+      margin: 0;
+      padding: 20px;
+      font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      font-size: 14px; /* Base font size */
+    }
+    
+    /* A4 Wrapper for screen */
+    @media screen {
+      .page-wrapper {
+        width: 210mm;
+        height: 297mm;
+        margin: 20px auto;
+        border: 1px solid #ccc;
+        background: #fff; /* White canvas */
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        overflow: hidden;
+        position: relative;
+      }
+    }
+    
+    /* Remove extraneous styling when printing */
+    @media print {
+      body {
+        background-color: #fff;
+      }
+      .page-wrapper {
+        width: auto;
+        height: auto;
+        margin: 0;
+        border: none;
+        box-shadow: none;
+      }
+    }
+    
+    /* CV Container */
+    .cv-container {
+      padding: 20px;
+      color: #444444; /* Darkest text color */
+      line-height: 1.6;
+    }
+    
+    /* Header Section */
+    .cv-header {
+      text-align: center;
+      padding: 20px;
+      margin-bottom: -20px;
+      /* No background as requested */
+    }
+    .cv-header h1 {
+      margin: 0;
+      font-size: 2em;
+      color: #444444; /* Dark grey for name */
+    }
+    .cv-header p {
+      font-weight: bold;
+      text-transform: uppercase;
+      margin: 0;
+      font-size: 1em;
+      color: #b5b5b5; /* Light grey for job title */
+    }
+    
+    /* Section Styling */
+    .cv-section {
+      margin-bottom: 40px;
+    }
+    .section-title {
+      border-bottom: 2px solid #7688e4;
+      padding-bottom: 5px;
+      margin-bottom: 15px;
+      font-size: 1.2em;
+      color: #444444;
+    }
+    
+    /* Horizontal Timeline Styling (unchanged) */
+    .timeline {
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+      align-items: stretch;
+      margin: 40px 0;
+      height: 150px; /* Increased height for more room */
+    }
+    .timeline::before {
+      content: "";
+      position: absolute;
+      top: 39px; 
+      left: 0;
+      right: 0;
+      height: 12px;
+      background: linear-gradient(to right, #7688e4, #6cb1d5);
+      border-radius: 6px;
+      z-index: 1;
+    }
+    .timeline-item {
+      position: relative;
+      flex: 1;
+      height: 150px; /* Must be high enough to accommodate top & bottom */
+      padding: 0;
+      z-index: 2;
+    }
+    .timeline-top {
+      position: absolute;
+      top: -90px;
+      bottom: 25px;
+      width: 100%;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .timeline-top h3 {
+      margin: 0;
+      font-size: 1em;
+      color: #444444;
+    }
+    .timeline-bottom {
+      position: absolute;
+      top: 50px;
+      bottom: 0;
+      width: 100%;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    .timeline-bottom .timeline-date {
+      font-weight: bold;
+      font-size: 0.9em;
+      color: #444444;
+    }
+    .timeline-bottom p {
+      margin: 0;
+      font-size: 0.8em;
+      color: #b5b5b5;
+    }
+    .timeline-marker {
+      position: absolute;
+      top: 45px;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 22px;
+      height: 22px;
+      background: linear-gradient(to right, #7688e4, #6cb1d5);
+      border-radius: 50%;
+      z-index: 3;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .timeline-marker::after {
+      content: "";
+      width: 14px;
+      height: 14px;
+      background: white;
+      border-radius: 50%;
+    }
+    
+    /* Languages Section (unchanged) */
+    .languages {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: center;
+    }
+    .language-item {
+      position: relative;
+      width: 35px;
+      height: 35px;
+      background: linear-gradient(to bottom right, #7688e4, #6cb1d5);
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .language-code {
+      color: white;
+      font-size: 0.8em;
+      font-weight: bold;
+      z-index: 2;
+    }
+    .language-level {
+      position: absolute;
+      top: -10px; /* Overlapping the top edge */
+      left: 90%;
+      transform: translateX(-50%);
+      width: 20px;
+      height: 20px;
+      background: #444444;
+      color: white;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.8em;
+      border: 0px solid white;
+    }
+    
+    /* Skills & Languages Two-Column Layout */
+    .skills-languages {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    /* Left Column: Professional Skills */
+    .skills {
+      flex: 1;
+      min-width: 200px;
+    }
+    .skills ul {
+      list-style: none;
+      padding-left: 0;
+      margin: 0;
+    }
+    .skills li {
+      margin-bottom: 10px;
+    }
+    .skill-description {
+      display: block;
+      font-size: 0.9em;
+      font-weight: normal;
+      color: #444444;
+      margin-top: 0; /* Reduced spacing to effectively just a new line */
+    }
+    .skills-heading {
+      font-size: 1em;
+      font-weight: bold;
+      margin-top: 0;
+      margin-bottom: 10px;
+      color: #444444;
+    }
+    /* Right Column: Hobby Skills & Languages */
+    .right-column {
+      flex: 1;
+      min-width: 200px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+    /* Hobby Skills Container with Gradient Background */
+    .hobby-skills-container {
+      background: linear-gradient(to bottom right, #7688e4, #6cb1d5);
+      padding: 10px;
+      border-radius: 8px;
+    }
+    .hobby-skills-container .skills-heading {
+      color: white;
+      margin-bottom: 10px;
+    }
+    .hobby-skills-container ul {
+      list-style: none;
+      padding-left: 0;
+      margin: 0;
+    }
+    .hobby-skills-container li {
+      margin-bottom: 10px;
+    }
+    .hobby-skills-container li strong {
+      color: white;
+    }
+    .hobby-skills-container li .skill-description {
+      color: white;
+      font-size: 0.9em;
+      margin-top: 0;
+    }
+    /* Languages Wrapper with Heading */
+    .languages-wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .languages-heading {
+      font-size: 1em;
+      font-weight: bold;
+      color: #444444;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="page-wrapper">
+    <div class="cv-container">
+      <!-- Header Section -->
+      <div class="cv-header">
+        <h1>Kiril Bekulov</h1>
+        <p>Senior RPA Developer</p>
+      </div>
+      
+      <!-- Professional Experience Section with Updated Timeline Hierarchy -->
+      <section class="cv-section">
+        <div class="timeline">
+          <!-- Timeline Item 1 -->
+          <div class="timeline-item">
+            <div class="timeline-top">
+              <h3>Jr. Web Developer</h3>
+            </div>
+            <div class="timeline-marker"></div>
+            <div class="timeline-bottom">
+              <div class="timeline-date">2008</div>
+              <p>Kick-started my career working on small web projects and refining my HTML, CSS, and JavaScript skills.</p>
+            </div>
+          </div>
+          <!-- Timeline Item 2 -->
+          <div class="timeline-item">
+            <div class="timeline-top">
+              <h3>Database Administrator</h3>
+            </div>
+            <div class="timeline-marker"></div>
+            <div class="timeline-bottom">
+              <div class="timeline-date">2018 - 2020</div>
+              <p>Managed enterprise-level databases, ensuring data integrity and maintaining optimal performance.</p>
+            </div>
+          </div>
+          <!-- Timeline Item 3 -->
+          <div class="timeline-item">
+            <div class="timeline-top">
+              <h3>RPA Developer</h3>
+            </div>
+            <div class="timeline-marker"></div>
+            <div class="timeline-bottom">
+              <div class="timeline-date">2020 - 2021</div>
+              <p>Developed and implemented RPA solutions that streamlined repetitive processes and boosted efficiency.</p>
+            </div>
+          </div>
+          <!-- Timeline Item 4 -->
+          <div class="timeline-item">
+            <div class="timeline-top">
+              <h3>Senior RPA Developer</h3>
+            </div>
+            <div class="timeline-marker"></div>
+            <div class="timeline-bottom">
+              <div class="timeline-date">2021 - 2025</div>
+              <p>Led a team in designing and deploying advanced RPA solutions, significantly enhancing operational performance.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <!-- Skills & Languages Section (Two-Column Layout) -->
+      <section class="cv-section">
+        <h2 class="section-title">Skills &amp; Languages</h2>
+        <div class="skills-languages">
+          <!-- Left Column: Professional Skills -->
+          <div class="skills">
+            <h3 class="skills-heading">Professional Skills</h3>
+            <ul class="professional-skills">
+              <li>
+                <strong>Blue Prism, UiPath, PowerAutomate</strong>
+                <span class="skill-description">Highly proficient in developing Blue Prism automations and writing custom code. Trained in troubleshooting UiPath and PowerAutomate projects.</span>
+              </li>
+              <li>
+                <strong>VBA, VB.NET, C#</strong>
+                <span class="skill-description">Experienced in delivering VBA macro automations. Moderately experienced in VB.NET and C# coding.</span>
+              </li>
+              <li>
+                <strong>HTML, JavaScript, SQL</strong>
+                <span class="skill-description">Moderately experienced in web-development and automation.</span>
+              </li>
+            </ul>
+          </div>
+          <!-- Right Column: Hobby Skills and Languages -->
+          <div class="right-column">
+            <!-- Hobby Skills Container with Gradient Background -->
+            <div class="hobby-skills-container">
+              <h3 class="skills-heading">Additional Skills</h3>
+              <ul class="hobby-skills">
+                <li>
+                  <strong>Process optimization</strong>
+                  <span class="skill-description">Personal achievements are driven by a strong desire to simplify & improve workflows for my team.</span>
+                </li>
+                <li>
+                  <strong>Presenting</strong>
+                  <span class="skill-description">Prepared and delivered presentations to large audiences.</span>
+                </li>
+                <li>
+                  <strong>Team-leading</strong>
+                  <span class="skill-description">Experienced in coordinating small teams of 5–6 people as a team leader.</span>
+                </li>
+              </ul>
+            </div>
+            <!-- Languages Section -->
+            <div class="languages-wrapper">
+              <h3 class="languages-heading">Spoken languages</h3>
+              <div class="languages">
+                <div class="language-item">
+                  <div class="language-level">C2</div>
+                  <div class="language-code">EN</div>
+                </div>
+                <div class="language-item">
+                  <div class="language-level">C2</div>
+                  <div class="language-code">RU</div>
+                </div>
+                <div class="language-item">
+                  <div class="language-level">C1</div>
+                  <div class="language-code">LT</div>
+                </div>
+                <div class="language-item">
+                  <div class="language-level">B2</div>
+                  <div class="language-code">FR</div>
+                </div>
+                <div class="language-item">
+                  <div class="language-level">B2</div>
+                  <div class="language-code">JP</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <!-- Hobbies Section: Full-Width Hobbies Wrapper -->
+      <section class="cv-section">
+        <fieldset class="hobbies-fieldset">
+          <legend class="hobbies-title">Hobbies</legend>
+          <div class="hobbies-content">
+            <div class="skills-languages">
+              <!-- Left Column: Hobby Skill -->
+              <div class="skills">
+                <ul class="professional-skills">
+                  <li>
+                    <strong>Writing &amp; Coding</strong>
+                    <span class="skill-description">Engaged in a multi-year project writing a complex fictional story for an indie game project.</span>
+                  </li>
+                </ul>
+              </div>
+              <!-- Right Column: Hobby Skill -->
+              <div class="skills">
+                <ul class="professional-skills">
+                  <li>
+                    <strong>Languages &amp; Psychology</strong>
+                    <span class="skill-description">Actively studying French and Japanese; researching and teaching analytical philosophy.</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </fieldset>
+      </section>
+      
+      <!-- Education Section -->
+      <section class="cv-section">
+        <h2 class="section-title">Career Achievements & Education</h2>
+        <div class="skills">
+          ...
+        </div>
+        <div class="right-column">
+          <p>Cardiff University (United Kingdom)<br><strong>BScEcon</strong>, Bachelor of Economics and Social Studies in International Relations & Politics</p>
+        </div>
+      </section>
+      
+      <!-- Additional sections can be added here -->
+      
+    </div>
+  </div>
+</body>
+</html>
