@@ -68,6 +68,48 @@
       font-size: 1em;
       color: #b5b5b5; /* Light grey for job title */
     }
+    /* Floating Languages Block in Header */
+    .floating-languages {
+      position: absolute;
+      top: 20px;  /* Adjust vertical positioning as needed */
+      right: 20px; /* Adjust horizontal positioning as needed */
+    }
+    .floating-languages .languages {
+      display: flex;
+      gap: 5px;
+    }
+    .floating-languages .language-item {
+      position: relative;
+      width: 35px;
+      height: 35px;
+      background: linear-gradient(to bottom right, #7688e4, #6cb1d5);
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .floating-languages .language-code {
+      color: white;
+      font-size: 0.8em;
+      font-weight: bold;
+      z-index: 2;
+    }
+    .floating-languages .language-level {
+      position: absolute;
+      top: -10px; /* Overlapping the top edge */
+      left: 90%;
+      transform: translateX(-50%);
+      width: 20px;
+      height: 20px;
+      background: #444444;
+      color: white;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.8em;
+      border: 0px solid white;
+    }
     
     /* Section Styling */
     .cv-section {
@@ -231,7 +273,7 @@
       font-size: 0.9em;
       font-weight: normal;
       color: #444444;
-      margin-top: 0; /* No extra spacing */
+      margin-top: 0; /* Reduced spacing to effectively just a new line */
     }
     .skills-heading {
       font-size: 1em;
@@ -240,19 +282,43 @@
       margin-bottom: 10px;
       color: #444444;
     }
-    /* Right Column: Languages */
-    .languages-wrapper {
+    /* Right Column: Hobby Skills & Languages */
+    .right-column {
       flex: 1;
       min-width: 200px;
       display: flex;
       flex-direction: column;
-      align-items: center;
+      gap: 20px;
     }
-    .languages-heading {
-      font-size: 1em;
-      font-weight: bold;
-      color: #444444;
+    /* Hobby Skills Container with Gradient Background */
+    .hobby-skills-container {
+      background: linear-gradient(to bottom right, #7688e4, #6cb1d5);
+      padding: 10px;
+      border-radius: 8px;
+    }
+    .hobby-skills-container .skills-heading {
+      color: white;
       margin-bottom: 10px;
+    }
+    .hobby-skills-container ul {
+      list-style: none;
+      padding-left: 0;
+      margin: 0;
+    }
+    .hobby-skills-container li {
+      margin-bottom: 10px;
+    }
+    .hobby-skills-container li strong {
+      color: white;
+    }
+    .hobby-skills-container li .skill-description {
+      color: white;
+      font-size: 0.9em;
+      margin-top: 0;
+    }
+    /* Right Column: (Languages have been moved to the header) */
+    .languages-wrapper {
+      display: none; /* Hide languages here since they are now in the header */
     }
     
     /* Hobbies Section: Full-Width Hobbies Wrapper */
@@ -274,11 +340,36 @@
 <body>
   <div class="page-wrapper">
     <div class="cv-container">
-      <!-- Header Section -->
-      <div class="cv-header">
-        <h1>Kiril Bekulov</h1>
-        <p>Senior RPA Developer</p>
-      </div>
+        <!-- Header Section -->
+        <div class="cv-header">
+          <h1>Kiril Bekulov</h1>
+          <p>Senior RPA Developer</p>
+          <!-- Floating Languages Block -->
+          <div class="floating-languages">
+            <div class="languages">
+              <div class="language-item">
+                <div class="language-level">C2</div>
+                <div class="language-code">EN</div>
+              </div>
+              <div class="language-item">
+                <div class="language-level">C2</div>
+                <div class="language-code">RU</div>
+              </div>
+              <div class="language-item">
+                <div class="language-level">C1</div>
+                <div class="language-code">LT</div>
+              </div>
+              <div class="language-item">
+                <div class="language-level">B2</div>
+                <div class="language-code">FR</div>
+              </div>
+              <div class="language-item">
+                <div class="language-level">B2</div>
+                <div class="language-code">JP</div>
+              </div>
+            </div>
+          </div>
+        </div>
       
       <!-- Professional Experience Section with Updated Timeline Hierarchy -->
       <section class="cv-section">
@@ -349,17 +440,6 @@
               <li>
                 <strong>HTML, JavaScript, SQL</strong>
                 <span class="skill-description">Moderately experienced in web-development and automation.</span>
-              </li>
-            </ul>
-            <h3 class="skills-heading">Hobbies</h3>
-            <ul class="hobby-skills">
-              <li>
-                <strong>Writing & coding</strong>
-                <span class="skill-description">Engaged in a multi-year project writing a complex fictional story for an indie game project.</span>
-              </li>
-              <li>
-                <strong>Languages & psychology</strong>
-                <span class="skill-description">Actively studying French and Japanese. Researching/teaching analytical philosophy.</span>
               </li>
             </ul>
           </div>
@@ -442,14 +522,14 @@
         </fieldset>
       </section>
       
-      <!-- Education & Career Achievements Section -->
+      <!-- Education Section -->
       <section class="cv-section">
-        <h2 class="section-title">Career Achievements &amp; Education</h2>
+        <h2 class="section-title">Career Achievements & Education</h2>
         <div class="skills">
           ...
         </div>
         <div class="right-column">
-          <p>Cardiff University (United Kingdom)<br><strong>BScEcon</strong>, Bachelor of Economics and Social Studies in International Relations &amp; Politics</p>
+          <p>Cardiff University (United Kingdom)<br><strong>BScEcon</strong>, Bachelor of Economics and Social Studies in International Relations & Politics</p>
         </div>
       </section>
       
