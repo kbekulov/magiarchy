@@ -286,6 +286,21 @@
       color: #444444;
       margin-bottom: 10px;
     }
+    
+    /* Hobbies Section: Full-Width Hobbies Wrapper */
+    .hobbies-fieldset {
+      border: 1px solid #b5b5b5; /* Light grey border */
+      border-radius: 8px;
+      padding: 10px 20px 20px;
+      margin: 20px 0;
+    }
+    .hobbies-fieldset legend {
+      font-size: 1em;
+      font-weight: bold;
+      color: #444444;
+      padding: 0 10px;
+      text-align: center;
+    }
   </style>
 </head>
 <body>
@@ -368,17 +383,6 @@
                 <span class="skill-description">Moderately experienced in web-development and automation.</span>
               </li>
             </ul>
-            <h3 class="skills-heading">Hobbies</h3>
-            <ul class="hobby-skills">
-              <li>
-                <strong>Writing & coding</strong>
-                <span class="skill-description">Engaged in a multi-year project writing a complex fictional story for an indie game project.</span>
-              </li>
-              <li>
-                <strong>Languages & psychology</strong>
-                <span class="skill-description">Actively studying French and Japanese. Researching/teaching analytical philosophy.</span>
-              </li>
-            </ul>
           </div>
           <!-- Right Column: Hobby Skills and Languages -->
           <div class="right-column">
@@ -428,6 +432,35 @@
             </div>
           </div>
         </div>
+      </section>
+      
+      <!-- Hobbies Section: Full-Width Hobbies Wrapper -->
+      <section class="cv-section">
+        <fieldset class="hobbies-fieldset">
+          <legend class="hobbies-title">Hobbies</legend>
+          <div class="hobbies-content">
+            <div class="skills-languages">
+              <!-- Left Column: Hobby Skill -->
+              <div class="skills">
+                <ul class="professional-skills">
+                  <li>
+                    <strong>Writing &amp; Coding</strong>
+                    <span class="skill-description">Engaged in a multi-year project writing a complex fictional story for an indie game project.</span>
+                  </li>
+                </ul>
+              </div>
+              <!-- Right Column: Hobby Skill -->
+              <div class="skills">
+                <ul class="professional-skills">
+                  <li>
+                    <strong>Languages &amp; Psychology</strong>
+                    <span class="skill-description">Actively studying French and Japanese; researching and teaching analytical philosophy.</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </fieldset>
       </section>
       
       <!-- Education Section -->
