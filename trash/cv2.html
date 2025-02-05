@@ -81,7 +81,7 @@
       color: #444444;
     }
     
-    /* Horizontal Timeline Styling */
+    /* Horizontal Timeline Styling (unchanged) */
     .timeline {
       position: relative;
       display: flex;
@@ -90,10 +90,6 @@
       margin: 40px 0;
       height: 150px; /* Increased height for more room */
     }
-    
-    /* Timeline line (12px thick):
-       Its top is set so its center is at 45px (i.e. top: 39px, because 39px + 6px = 45px)
-    */
     .timeline::before {
       content: "";
       position: absolute;
@@ -105,18 +101,13 @@
       border-radius: 6px;
       z-index: 1;
     }
-    
     .timeline-item {
       position: relative;
       flex: 1;
-      height: 150px; /* Must be high enough to accommodate top & bottom */
+      height: 150px;
       padding: 0;
       z-index: 2;
     }
-    
-    /* Title container (job title):
-       Positioned from 10px to 25px from the top, spanning full width and centered.
-    */
     .timeline-top {
       position: absolute;
       top: -90px;
@@ -132,10 +123,6 @@
       font-size: 1em;
       color: #444444;
     }
-    
-    /* Date and Description container:
-       Positioned starting at 50px from the top, spanning full width and centered.
-    */
     .timeline-bottom {
       position: absolute;
       top: 50px;
@@ -157,10 +144,6 @@
       font-size: 0.8em;
       color: #b5b5b5;
     }
-    
-    /* Timeline marker: outer circle (22px) with gradient border and inner white circle (14px).
-       Its center is fixed at 45px (matching the timeline line’s center).
-    */
     .timeline-marker {
       position: absolute;
       top: 45px;
@@ -208,7 +191,7 @@
     }
     .language-level {
       position: absolute;
-      top: -10px; /* Overlapping the top edge */
+      top: -10px;
       left: 90%;
       transform: translateX(-50%);
       width: 20px;
@@ -223,7 +206,7 @@
       border: 0px solid white;
     }
     
-    /* New: Skills & Languages Columns */
+    /* Skills & Languages Two-Column Layout */
     .skills-languages {
       display: flex;
       gap: 20px;
@@ -235,12 +218,20 @@
       min-width: 200px;
     }
     .skills ul {
-      list-style: disc inside;
+      list-style: none;
       padding-left: 0;
       margin: 0;
     }
     .skills li {
-      margin-bottom: 5px;
+      margin-bottom: 10px;
+    }
+    /* New: Skill description style */
+    .skill-description {
+      display: block;
+      font-size: 0.9em;
+      font-weight: normal;
+      color: #444444;
+      margin-top: 2px;
     }
     .languages-wrapper {
       flex: 1;
@@ -310,20 +301,41 @@
         </div>
       </section>
       
-      <!-- Skills & Languages Section (New Two-Column Layout) -->
+      <!-- Skills & Languages Section (Two-Column Layout) -->
       <section class="cv-section">
         <h2 class="section-title">Skills &amp; Languages</h2>
         <div class="skills-languages">
           <!-- Skills Column -->
           <div class="skills">
             <ul>
-              <li>JavaScript (ES6+)</li>
-              <li>Python</li>
-              <li>HTML5 &amp; CSS3</li>
-              <li>React.js</li>
-              <li>Node.js</li>
-              <li>SQL &amp; NoSQL</li>
-              <li>Git &amp; Version Control</li>
+              <li>
+                <strong>JavaScript (ES6+)</strong>
+                <span class="skill-description">Proficient in modern JS, async programming, and frameworks.</span>
+              </li>
+              <li>
+                <strong>Python</strong>
+                <span class="skill-description">Experienced in data analysis, scripting, and web development.</span>
+              </li>
+              <li>
+                <strong>HTML5 &amp; CSS3</strong>
+                <span class="skill-description">Skilled in responsive design and semantic markup.</span>
+              </li>
+              <li>
+                <strong>React.js</strong>
+                <span class="skill-description">Developed interactive UIs and SPAs using React.</span>
+              </li>
+              <li>
+                <strong>Node.js</strong>
+                <span class="skill-description">Built backend services and RESTful APIs.</span>
+              </li>
+              <li>
+                <strong>SQL &amp; NoSQL</strong>
+                <span class="skill-description">Experienced in relational and document databases.</span>
+              </li>
+              <li>
+                <strong>Git &amp; Version Control</strong>
+                <span class="skill-description">Proficient with branching, merging, and collaborative workflows.</span>
+              </li>
             </ul>
           </div>
           <!-- Languages Column -->
