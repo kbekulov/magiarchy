@@ -231,7 +231,7 @@
       font-size: 0.9em;
       font-weight: normal;
       color: #444444;
-      margin-top: 0; /* No extra spacing, just a new line */
+      margin-top: 0; /* No extra spacing */
     }
     .skills-heading {
       font-size: 1em;
@@ -240,7 +240,7 @@
       margin-bottom: 10px;
       color: #444444;
     }
-    /* Right Column: Languages Only */
+    /* Right Column: Languages */
     .languages-wrapper {
       flex: 1;
       min-width: 200px;
@@ -255,38 +255,38 @@
       margin-bottom: 10px;
     }
     
-    /* New: Hobbies Wrapper spanning full width */
+    /* New: Hobbies Wrapper (Full-Width) */
     .hobbies-wrapper {
-      flex-basis: 100%;
-      border: 1px solid #ccc;
+      border: 1px solid #b5b5b5; /* Light grey border */
       border-radius: 8px;
       padding: 10px;
       margin-top: 20px;
     }
-    .hobbies-heading {
+    .hobbies-title {
       text-align: center;
       font-size: 1em;
       font-weight: bold;
-      color: #444444;
       margin-bottom: 10px;
+      color: #444444;
     }
-    .hobbies-list {
+    .hobbies-wrapper ul {
       list-style: none;
-      padding: 0;
+      padding-left: 0;
       margin: 0;
     }
-    .hobbies-list li {
-      margin-bottom: 10px;
+    .hobbies-wrapper li {
+      margin-bottom: 8px;
     }
-    .hobbies-list li strong {
+    .hobbies-wrapper li strong {
+      font-weight: bold;
       color: #444444;
     }
-    .hobbies-list li .skill-description {
+    .hobbies-wrapper li .skill-description {
       display: block;
       font-size: 0.9em;
       font-weight: normal;
       color: #444444;
-      margin-top: 2px;
+      margin-top: 0;
     }
   </style>
 </head>
@@ -371,7 +371,7 @@
               </li>
             </ul>
           </div>
-          <!-- Right Column: Languages Only -->
+          <!-- Right Column: Languages -->
           <div class="languages-wrapper">
             <h3 class="languages-heading">Spoken Languages</h3>
             <div class="languages">
@@ -397,24 +397,36 @@
               </div>
             </div>
           </div>
-          <!-- New: Hobbies Wrapper spanning both columns -->
-          <div class="hobbies-wrapper">
-            <h3 class="hobbies-heading">Hobbies</h3>
-            <ul class="hobbies-list">
-              <li>
-                <strong>Writing &amp; Coding</strong>
-                <span class="skill-description">Engaged in a multi-year project writing a complex fictional story for an indie game project.</span>
-              </li>
-              <li>
-                <strong>Languages &amp; Psychology</strong>
-                <span class="skill-description">Actively studying French and Japanese while researching and teaching analytical philosophy.</span>
-              </li>
-            </ul>
-          </div>
+        </div>
+        <!-- Hobbies Wrapper (Full-Width) -->
+        <div class="hobbies-wrapper">
+          <h3 class="hobbies-title">Hobbies</h3>
+          <ul class="hobby-skills">
+            <li>
+              <strong>Writing &amp; Coding</strong>
+              <span class="skill-description">Engaged in a multi-year project writing a complex fictional story for an indie game project.</span>
+            </li>
+            <li>
+              <strong>Languages &amp; Psychology</strong>
+              <span class="skill-description">Actively studying French and Japanese; researching and teaching analytical philosophy.</span>
+            </li>
+            <li>
+              <strong>Process Optimization</strong>
+              <span class="skill-description">Driven by a strong desire to simplify and improve workflows.</span>
+            </li>
+            <li>
+              <strong>Presenting</strong>
+              <span class="skill-description">Prepared and delivered presentations to large audiences.</span>
+            </li>
+            <li>
+              <strong>Team-leading</strong>
+              <span class="skill-description">Experienced in coordinating small teams as a leader.</span>
+            </li>
+          </ul>
         </div>
       </section>
       
-      <!-- Education / Career Achievements Section -->
+      <!-- Education & Career Achievements Section -->
       <section class="cv-section">
         <h2 class="section-title">Career Achievements &amp; Education</h2>
         <div class="skills">
