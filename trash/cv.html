@@ -81,7 +81,7 @@
       color: #444444;
     }
     
-    /* Horizontal Timeline Styling */
+    /* Horizontal Timeline Styling (unchanged) */
     .timeline {
       position: relative;
       display: flex;
@@ -90,10 +90,6 @@
       margin: 40px 0;
       height: 150px; /* Increased height for more room */
     }
-    
-    /* Timeline line (12px thick):
-       Its top is set so its center is at 45px (i.e. top: 39px, because 39px + 6px = 45px)
-    */
     .timeline::before {
       content: "";
       position: absolute;
@@ -105,7 +101,6 @@
       border-radius: 6px;
       z-index: 1;
     }
-    
     .timeline-item {
       position: relative;
       flex: 1;
@@ -113,10 +108,6 @@
       padding: 0;
       z-index: 2;
     }
-    
-    /* Title container (job title):
-       Positioned from 10px to 25px from the top, spanning full width and centered.
-    */
     .timeline-top {
       position: absolute;
       top: -90px;
@@ -132,10 +123,6 @@
       font-size: 1em;
       color: #444444;
     }
-    
-    /* Date and Description container:
-       Positioned starting at 105px from the top, spanning full width and centered.
-    */
     .timeline-bottom {
       position: absolute;
       top: 50px;
@@ -157,10 +144,6 @@
       font-size: 0.8em;
       color: #b5b5b5;
     }
-    
-    /* Timeline marker: outer circle (22px) with gradient border and inner white circle (14px).
-       Its center is fixed at 45px (matching the timeline line’s center).
-    */
     .timeline-marker {
       position: absolute;
       top: 45px;
@@ -183,7 +166,7 @@
       border-radius: 50%;
     }
     
-    /* Languages Section */
+    /* Languages Section (unchanged) */
     .languages {
       display: flex;
       flex-wrap: wrap;
@@ -221,6 +204,87 @@
       justify-content: center;
       font-size: 0.8em;
       border: 0px solid white;
+    }
+    
+    /* Skills & Languages Two-Column Layout */
+    .skills-languages {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    /* Left Column: Professional Skills */
+    .skills {
+      flex: 1;
+      min-width: 200px;
+    }
+    .skills ul {
+      list-style: none;
+      padding-left: 0;
+      margin: 0;
+    }
+    .skills li {
+      margin-bottom: 10px;
+    }
+    .skill-description {
+      display: block;
+      font-size: 0.9em;
+      font-weight: normal;
+      color: #444444;
+      margin-top: 0; /* Reduced spacing to effectively just a new line */
+    }
+    .skills-heading {
+      font-size: 1em;
+      font-weight: bold;
+      margin-top: 0;
+      margin-bottom: 10px;
+      color: #444444;
+    }
+    /* Right Column: Hobby Skills & Languages */
+    .right-column {
+      flex: 1;
+      min-width: 200px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+    /* Hobby Skills Container with Gradient Background */
+    .hobby-skills-container {
+      background: linear-gradient(to bottom right, #7688e4, #6cb1d5);
+      padding: 10px;
+      border-radius: 8px;
+    }
+    .hobby-skills-container .skills-heading {
+      color: white;
+      margin-bottom: 10px;
+    }
+    .hobby-skills-container ul {
+      list-style: none;
+      padding-left: 0;
+      margin: 0;
+    }
+    .hobby-skills-container li {
+      margin-bottom: 10px;
+    }
+    .hobby-skills-container li strong {
+      color: white;
+    }
+    .hobby-skills-container li .skill-description {
+      color: white;
+      font-size: 0.9em;
+      margin-top: 0;
+    }
+    /* Languages Wrapper with Heading */
+    .languages-wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .languages-heading {
+      font-size: 1em;
+      font-weight: bold;
+      color: #444444;
+      margin-bottom: 10px;
     }
   </style>
 </head>
@@ -283,29 +347,90 @@
         </div>
       </section>
       
-      <!-- Languages Section -->
+      <!-- Skills & Languages Section (Two-Column Layout) -->
       <section class="cv-section">
-        <h2 class="section-title">Skills & Languages</h2>
-        <div class="languages">
-          <div class="language-item">
-            <div class="language-level">C2</div>
-            <div class="language-code">EN</div>
+        <h2 class="section-title">Skills &amp; Languages</h2>
+        <div class="skills-languages">
+          <!-- Left Column: Professional Skills -->
+          <div class="skills">
+            <h3 class="skills-heading">Professional Skills</h3>
+            <ul class="professional-skills">
+              <li>
+                <strong>JavaScript (ES6+)</strong>
+                <span class="skill-description">Proficient in modern JS, async programming, and frameworks.</span>
+              </li>
+              <li>
+                <strong>Python</strong>
+                <span class="skill-description">Experienced in data analysis, scripting, and web development.</span>
+              </li>
+              <li>
+                <strong>HTML5 &amp; CSS3</strong>
+                <span class="skill-description">Skilled in responsive design and semantic markup.</span>
+              </li>
+              <li>
+                <strong>React.js</strong>
+                <span class="skill-description">Developed interactive UIs and SPAs using React.</span>
+              </li>
+              <li>
+                <strong>Node.js</strong>
+                <span class="skill-description">Built backend services and RESTful APIs.</span>
+              </li>
+              <li>
+                <strong>SQL &amp; NoSQL</strong>
+                <span class="skill-description">Experienced in relational and document databases.</span>
+              </li>
+              <li>
+                <strong>Git &amp; Version Control</strong>
+                <span class="skill-description">Proficient with branching, merging, and collaborative workflows.</span>
+              </li>
+            </ul>
           </div>
-          <div class="language-item">
-            <div class="language-level">C2</div>
-            <div class="language-code">RU</div>
-          </div>
-          <div class="language-item">
-            <div class="language-level">C1</div>
-            <div class="language-code">LT</div>
-          </div>
-          <div class="language-item">
-            <div class="language-level">B2</div>
-            <div class="language-code">FR</div>
-          </div>
-          <div class="language-item">
-            <div class="language-level">B2</div>
-            <div class="language-code">JP</div>
+          <!-- Right Column: Hobby Skills and Languages -->
+          <div class="right-column">
+            <!-- Hobby Skills Container with Gradient Background -->
+            <div class="hobby-skills-container">
+              <h3 class="skills-heading">Hobby Skills</h3>
+              <ul class="hobby-skills">
+                <li>
+                  <strong>Photography</strong>
+                  <span class="skill-description">Skilled in DSLR photography, editing, and composition.</span>
+                </li>
+                <li>
+                  <strong>Cooking</strong>
+                  <span class="skill-description">Passionate about experimenting with recipes and techniques.</span>
+                </li>
+                <li>
+                  <strong>Guitar</strong>
+                  <span class="skill-description">Competent in playing acoustic and electric guitar.</span>
+                </li>
+              </ul>
+            </div>
+            <!-- Languages Section -->
+            <div class="languages-wrapper">
+              <h3 class="languages-heading">Languages</h3>
+              <div class="languages">
+                <div class="language-item">
+                  <div class="language-level">C2</div>
+                  <div class="language-code">EN</div>
+                </div>
+                <div class="language-item">
+                  <div class="language-level">C2</div>
+                  <div class="language-code">RU</div>
+                </div>
+                <div class="language-item">
+                  <div class="language-level">C1</div>
+                  <div class="language-code">LT</div>
+                </div>
+                <div class="language-item">
+                  <div class="language-level">B2</div>
+                  <div class="language-code">FR</div>
+                </div>
+                <div class="language-item">
+                  <div class="language-level">B2</div>
+                  <div class="language-code">JP</div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -315,7 +440,7 @@
         <h2 class="section-title">Education</h2>
         <p><strong>University of XYZ</strong>, BSc in Computer Science</p>
       </section>
-
+      
       <!-- Additional sections can be added here -->
       
     </div>
