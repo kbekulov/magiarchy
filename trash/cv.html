@@ -68,6 +68,32 @@
       font-size: 1em;
       color: #b5b5b5; /* Light grey for job title */
     }
+    /* Contact Info Pills */
+    .contact-info {
+      margin-top: 10px;
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+    }
+    .contact-pill {
+      display: inline-flex;
+      align-items: center;
+      background-color: #444444;
+      color: white;
+      border-radius: 20px;
+      overflow: hidden;
+      font-size: 0.9em;
+    }
+    .pill-icon {
+      background-color: #333333; /* Slightly darker for the icon area */
+      padding: 5px 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .pill-text {
+      padding: 5px 10px;
+    }
     /* Floating Languages Block in Header */
     .floating-languages {
       position: absolute;
@@ -344,6 +370,17 @@
         <div class="cv-header">
           <h1>Kiril Bekulov</h1>
           <p>Senior RPA Developer</p>
+          <!-- Contact Info Pills -->
+          <div class="contact-info">
+            <div class="contact-pill">
+              <span class="pill-icon">☎</span>
+              <span class="pill-text">+1 (555) 123-4567</span>
+            </div>
+            <div class="contact-pill">
+              <span class="pill-icon">✉</span>
+              <span class="pill-text">kiril@example.com</span>
+            </div>
+          </div>
           <!-- Floating Languages Block -->
           <div class="floating-languages">
             <div class="languages">
