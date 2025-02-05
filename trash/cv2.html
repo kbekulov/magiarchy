@@ -134,7 +134,7 @@
     }
     
     /* Date and Description container:
-       Positioned starting at 105px from the top, spanning full width and centered.
+       Positioned starting at 50px from the top, spanning full width and centered.
     */
     .timeline-bottom {
       position: absolute;
@@ -183,7 +183,7 @@
       border-radius: 50%;
     }
     
-    /* Languages Section */
+    /* Languages Section (unchanged) */
     .languages {
       display: flex;
       flex-wrap: wrap;
@@ -221,6 +221,33 @@
       justify-content: center;
       font-size: 0.8em;
       border: 0px solid white;
+    }
+    
+    /* New: Skills & Languages Columns */
+    .skills-languages {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .skills {
+      flex: 1;
+      min-width: 200px;
+    }
+    .skills ul {
+      list-style: disc inside;
+      padding-left: 0;
+      margin: 0;
+    }
+    .skills li {
+      margin-bottom: 5px;
+    }
+    .languages-wrapper {
+      flex: 1;
+      min-width: 200px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
   </style>
 </head>
@@ -283,29 +310,46 @@
         </div>
       </section>
       
-      <!-- Languages Section -->
+      <!-- Skills & Languages Section (New Two-Column Layout) -->
       <section class="cv-section">
-        <h2 class="section-title">Skills & Languages</h2>
-        <div class="languages">
-          <div class="language-item">
-            <div class="language-level">C2</div>
-            <div class="language-code">EN</div>
+        <h2 class="section-title">Skills &amp; Languages</h2>
+        <div class="skills-languages">
+          <!-- Skills Column -->
+          <div class="skills">
+            <ul>
+              <li>JavaScript (ES6+)</li>
+              <li>Python</li>
+              <li>HTML5 &amp; CSS3</li>
+              <li>React.js</li>
+              <li>Node.js</li>
+              <li>SQL &amp; NoSQL</li>
+              <li>Git &amp; Version Control</li>
+            </ul>
           </div>
-          <div class="language-item">
-            <div class="language-level">C2</div>
-            <div class="language-code">RU</div>
-          </div>
-          <div class="language-item">
-            <div class="language-level">C1</div>
-            <div class="language-code">LT</div>
-          </div>
-          <div class="language-item">
-            <div class="language-level">B2</div>
-            <div class="language-code">FR</div>
-          </div>
-          <div class="language-item">
-            <div class="language-level">B2</div>
-            <div class="language-code">JP</div>
+          <!-- Languages Column -->
+          <div class="languages-wrapper">
+            <div class="languages">
+              <div class="language-item">
+                <div class="language-level">C2</div>
+                <div class="language-code">EN</div>
+              </div>
+              <div class="language-item">
+                <div class="language-level">C2</div>
+                <div class="language-code">RU</div>
+              </div>
+              <div class="language-item">
+                <div class="language-level">C1</div>
+                <div class="language-code">LT</div>
+              </div>
+              <div class="language-item">
+                <div class="language-level">B2</div>
+                <div class="language-code">FR</div>
+              </div>
+              <div class="language-item">
+                <div class="language-level">B2</div>
+                <div class="language-code">JP</div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -315,7 +359,7 @@
         <h2 class="section-title">Education</h2>
         <p><strong>University of XYZ</strong>, BSc in Computer Science</p>
       </section>
-
+      
       <!-- Additional sections can be added here -->
       
     </div>
