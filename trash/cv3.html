@@ -252,12 +252,20 @@
       text-align: center;
     }
     
-    /* Redesigned Languages Footer */
+    /* Redesigned Languages Footer as Full-Width Dark Footer */
     .cv-footer {
       background-color: #333333;  /* Dark grey background */
       padding: 15px 20px;
-      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
       margin-top: 20px;
+    }
+    .footer-label {
+      font-size: 1em;
+      font-weight: bold;
+      color: white;
     }
     .footer-languages {
       display: flex;
@@ -274,16 +282,18 @@
       font-size: 0.9em;
     }
     .language-pill .level {
-      background-color: #222222;  /* Darker for the icon area */
+      background-color: #222222;  /* Darker for the level area */
       padding: 5px 8px;
       font-weight: bold;
       color: #ffffff;
+      /* Only round the left side */
       border-top-left-radius: 8px;
       border-bottom-left-radius: 8px;
     }
     .language-pill .code {
       padding: 5px 10px;
       color: #ffffff;
+      /* Only round the right side */
       border-top-right-radius: 8px;
       border-bottom-right-radius: 8px;
     }
@@ -426,6 +436,7 @@
     </div>
     <!-- Redesigned Languages Footer as a Full-Width Dark Footer -->
     <footer class="cv-footer">
+      <div class="footer-label">Spoken Languages:</div>
       <div class="footer-languages">
         <div class="language-pill">
           <span class="level">C2</span>
