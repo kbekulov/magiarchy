@@ -213,6 +213,7 @@
       flex-wrap: wrap;
       justify-content: center;
     }
+    /* Left Column: Professional Skills */
     .skills {
       flex: 1;
       min-width: 200px;
@@ -225,7 +226,6 @@
     .skills li {
       margin-bottom: 10px;
     }
-    /* New: Skill description style */
     .skill-description {
       display: block;
       font-size: 0.9em;
@@ -240,9 +240,42 @@
       margin-bottom: 10px;
       color: #444444;
     }
-    .languages-wrapper {
+    /* Right Column: Hobby Skills & Languages */
+    .right-column {
       flex: 1;
       min-width: 200px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+    /* Hobby Skills Container with Gradient Background */
+    .hobby-skills-container {
+      background: linear-gradient(to bottom right, #7688e4, #6cb1d5);
+      padding: 10px;
+      border-radius: 8px;
+    }
+    .hobby-skills-container .skills-heading {
+      color: white;
+      margin-bottom: 10px;
+    }
+    .hobby-skills-container ul {
+      list-style: none;
+      padding-left: 0;
+      margin: 0;
+    }
+    .hobby-skills-container li {
+      margin-bottom: 10px;
+    }
+    .hobby-skills-container li strong {
+      color: white;
+    }
+    .hobby-skills-container li .skill-description {
+      color: white;
+      font-size: 0.9em;
+      margin-top: 2px;
+    }
+    /* Languages Wrapper remains unchanged */
+    .languages-wrapper {
       display: flex;
       justify-content: center;
       align-items: center;
@@ -312,7 +345,7 @@
       <section class="cv-section">
         <h2 class="section-title">Skills &amp; Languages</h2>
         <div class="skills-languages">
-          <!-- Skills Column -->
+          <!-- Left Column: Professional Skills -->
           <div class="skills">
             <h3 class="skills-heading">Professional Skills</h3>
             <ul class="professional-skills">
@@ -345,44 +378,50 @@
                 <span class="skill-description">Proficient with branching, merging, and collaborative workflows.</span>
               </li>
             </ul>
-            <h3 class="skills-heading">Hobby Skills</h3>
-            <ul class="hobby-skills">
-              <li>
-                <strong>Photography</strong>
-                <span class="skill-description">Skilled in DSLR photography, editing, and composition.</span>
-              </li>
-              <li>
-                <strong>Cooking</strong>
-                <span class="skill-description">Passionate about experimenting with recipes and techniques.</span>
-              </li>
-              <li>
-                <strong>Guitar</strong>
-                <span class="skill-description">Competent in playing acoustic and electric guitar.</span>
-              </li>
-            </ul>
           </div>
-          <!-- Languages Column -->
-          <div class="languages-wrapper">
-            <div class="languages">
-              <div class="language-item">
-                <div class="language-level">C2</div>
-                <div class="language-code">EN</div>
-              </div>
-              <div class="language-item">
-                <div class="language-level">C2</div>
-                <div class="language-code">RU</div>
-              </div>
-              <div class="language-item">
-                <div class="language-level">C1</div>
-                <div class="language-code">LT</div>
-              </div>
-              <div class="language-item">
-                <div class="language-level">B2</div>
-                <div class="language-code">FR</div>
-              </div>
-              <div class="language-item">
-                <div class="language-level">B2</div>
-                <div class="language-code">JP</div>
+          <!-- Right Column: Hobby Skills (with gradient) and Languages -->
+          <div class="right-column">
+            <!-- Hobby Skills Container -->
+            <div class="hobby-skills-container">
+              <h3 class="skills-heading">Hobby Skills</h3>
+              <ul class="hobby-skills">
+                <li>
+                  <strong>Photography</strong>
+                  <span class="skill-description">Skilled in DSLR photography, editing, and composition.</span>
+                </li>
+                <li>
+                  <strong>Cooking</strong>
+                  <span class="skill-description">Passionate about experimenting with recipes and techniques.</span>
+                </li>
+                <li>
+                  <strong>Guitar</strong>
+                  <span class="skill-description">Competent in playing acoustic and electric guitar.</span>
+                </li>
+              </ul>
+            </div>
+            <!-- Languages Container -->
+            <div class="languages-wrapper">
+              <div class="languages">
+                <div class="language-item">
+                  <div class="language-level">C2</div>
+                  <div class="language-code">EN</div>
+                </div>
+                <div class="language-item">
+                  <div class="language-level">C2</div>
+                  <div class="language-code">RU</div>
+                </div>
+                <div class="language-item">
+                  <div class="language-level">C1</div>
+                  <div class="language-code">LT</div>
+                </div>
+                <div class="language-item">
+                  <div class="language-level">B2</div>
+                  <div class="language-code">FR</div>
+                </div>
+                <div class="language-item">
+                  <div class="language-level">B2</div>
+                  <div class="language-code">JP</div>
+                </div>
               </div>
             </div>
           </div>
