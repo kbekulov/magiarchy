@@ -13,6 +13,11 @@
       font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
       font-size: 14px; /* Base font size */
     }
+
+    a, a:active, a:hover, a:focus {
+      text-decoration: none;
+      color: inherit;
+    }
     
     /* A4 Wrapper for screen */
     @media screen {
@@ -47,8 +52,6 @@
       padding: 20px;
       color: #444444; /* Darkest text color */
       line-height: 1.6;
-      position: relative;
-      padding-bottom: 60px; /* Reserve space for the footer */
     }
     
     /* Header Section */
@@ -57,6 +60,7 @@
       padding: 20px;
       margin-bottom: -20px;
       /* No background as requested */
+      position: relative; /* For any potential relative positioning */
     }
     .cv-header h1 {
       margin: 0;
@@ -228,7 +232,7 @@
       margin-bottom: 10px;
       color: #444444;
     }
-    /* Right Column: (Languages now in footer, so this is hidden) */
+    /* Right Column: (Languages are now removed from here) */
     .languages-wrapper {
       display: none;
     }
@@ -248,17 +252,14 @@
       text-align: center;
     }
     
-    /* Footer Languages Section as Dark Footer */
+    /* New: Footer for Languages */
     .cv-footer {
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      background-color: #444444;
+      background-color: #444444;  /* Dark grey background */
       padding: 10px 20px;
       text-align: center;
+      margin-top: 20px;
     }
-    .cv-footer .languages {
+    .cv-footer .footer-languages {
       display: flex;
       justify-content: center;
       gap: 10px;
@@ -277,7 +278,6 @@
       color: white;
       font-size: 0.8em;
       font-weight: bold;
-      z-index: 2;
     }
     .cv-footer .language-level {
       position: absolute;
@@ -293,7 +293,6 @@
       align-items: center;
       justify-content: center;
       font-size: 0.8em;
-      border: 0px solid white;
     }
   </style>
 </head>
@@ -389,11 +388,6 @@
               </li>
             </ul>
           </div>
-          <!-- Right Column: Additional Skills (Hobby Skills removed from here) -->
-          <div class="right-column">
-            <!-- Hobby Skills Container with Gradient Background -->
-            
-          </div>
         </div>
       </section>
       
@@ -436,33 +430,32 @@
           <p>Cardiff University (United Kingdom)<br><strong>BScEcon</strong>, Bachelor of Economics and Social Studies in International Relations &amp; Politics</p>
         </div>
       </section>
-      
-      <!-- Footer: Languages Section as Dark Footer -->
-      <footer class="cv-footer">
-        <div class="languages">
-          <div class="language-item">
-            <div class="language-level">C2</div>
-            <div class="language-code">EN</div>
-          </div>
-          <div class="language-item">
-            <div class="language-level">C2</div>
-            <div class="language-code">RU</div>
-          </div>
-          <div class="language-item">
-            <div class="language-level">C1</div>
-            <div class="language-code">LT</div>
-          </div>
-          <div class="language-item">
-            <div class="language-level">B2</div>
-            <div class="language-code">FR</div>
-          </div>
-          <div class="language-item">
-            <div class="language-level">B2</div>
-            <div class="language-code">JP</div>
-          </div>
-        </div>
-      </footer>
     </div>
+    <!-- Footer: Languages displayed as dark footer -->
+    <footer class="cv-footer">
+      <div class="footer-languages">
+        <div class="language-item">
+          <div class="language-level">C2</div>
+          <div class="language-code">EN</div>
+        </div>
+        <div class="language-item">
+          <div class="language-level">C2</div>
+          <div class="language-code">RU</div>
+        </div>
+        <div class="language-item">
+          <div class="language-level">C1</div>
+          <div class="language-code">LT</div>
+        </div>
+        <div class="language-item">
+          <div class="language-level">B2</div>
+          <div class="language-code">FR</div>
+        </div>
+        <div class="language-item">
+          <div class="language-level">B2</div>
+          <div class="language-code">JP</div>
+        </div>
+      </div>
+    </footer>
   </div>
 </body>
 </html>
