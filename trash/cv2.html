@@ -104,7 +104,7 @@
     .timeline-item {
       position: relative;
       flex: 1;
-      height: 150px;
+      height: 150px; /* Must be high enough to accommodate top & bottom */
       padding: 0;
       z-index: 2;
     }
@@ -191,7 +191,7 @@
     }
     .language-level {
       position: absolute;
-      top: -10px;
+      top: -10px; /* Overlapping the top edge */
       left: 90%;
       transform: translateX(-50%);
       width: 20px;
@@ -232,6 +232,13 @@
       font-weight: normal;
       color: #444444;
       margin-top: 2px;
+    }
+    .skills-heading {
+      font-size: 1em;
+      font-weight: bold;
+      margin-top: 0;
+      margin-bottom: 10px;
+      color: #444444;
     }
     .languages-wrapper {
       flex: 1;
@@ -307,7 +314,8 @@
         <div class="skills-languages">
           <!-- Skills Column -->
           <div class="skills">
-            <ul>
+            <h3 class="skills-heading">Professional Skills</h3>
+            <ul class="professional-skills">
               <li>
                 <strong>JavaScript (ES6+)</strong>
                 <span class="skill-description">Proficient in modern JS, async programming, and frameworks.</span>
@@ -335,6 +343,21 @@
               <li>
                 <strong>Git &amp; Version Control</strong>
                 <span class="skill-description">Proficient with branching, merging, and collaborative workflows.</span>
+              </li>
+            </ul>
+            <h3 class="skills-heading">Hobby Skills</h3>
+            <ul class="hobby-skills">
+              <li>
+                <strong>Photography</strong>
+                <span class="skill-description">Skilled in DSLR photography, editing, and composition.</span>
+              </li>
+              <li>
+                <strong>Cooking</strong>
+                <span class="skill-description">Passionate about experimenting with recipes and techniques.</span>
+              </li>
+              <li>
+                <strong>Guitar</strong>
+                <span class="skill-description">Competent in playing acoustic and electric guitar.</span>
               </li>
             </ul>
           </div>
