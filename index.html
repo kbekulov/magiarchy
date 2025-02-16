@@ -337,7 +337,14 @@
             });
         
             // Load a random image on page load
-            const randomImage = Math.random() < 0.5 ? 'img/lynleit-copyright-1.png' : 'img/lynleit-copyright-3.png';
+            const images = [
+                'img/lynleit-copyright-1.png',
+                'img/lynleit-copyright-3.png',
+                'img/lynleit-copyright-4.png'
+            ];
+
+            const randomImage = images[Math.floor(Math.random() * images.length)];
+
             $('.content').html(`<img src="${randomImage}" alt="Main Star">`);
         
             // Adjust text container based on image width
