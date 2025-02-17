@@ -62,6 +62,13 @@ Lynleit's family house is a neoclassical mansion with white walls and pillars, n
 
 ---
 
+### Lore: The Weave of Leviathan
+A fabric of shifting forms, the Weave of Leviathan is an ancient cloth gifted to Lynleit by her father, Fionn. It remains concealed within the threads of her blue coat (and the sash at Witch Lyn's waist), appearing as ordinary fabric until it moves. The cloth acts of its own will, guided by an unseen intelligence—one that does not always align with its wearer’s intent.
+
+The Weave can morph, taking on different shapes when it perceives danger. In one moment, it unfurls into a long scarf, coiling around Lynleit’s leg to catch her mid-fall from a collapsing bridge. In another, it tightens into a ribbon, threading itself through furniture, winding around her throat in a silent act of defiance. The Leviathan within watches, decides, and acts—whether to protect or to restrain.
+
+---
+
 ### Story: Romantic Subplots
 Felix, Lynleit’s trusted colleague and bodyguard, is a charming and flirtatious figure, often seen engaging in playful banter and romantic escapades with others. Despite harboring a quiet, unspoken admiration for Lynleit, he views her as distant, not just due to her position but because of an inherent sense of imbalance between them. This perceived disparity leaves Felix unable to act on his feelings, fostering a subtle vulnerability that manifests as jealousy and insecurity when Kyrien, an enigmatic and self-driven newcomer, joins their circle. Felix’s initial hostility toward Kyrien stems not only from professional suspicion but from an instinctive recognition of Kyrien as Lynleit’s equal—a potential partner in both purpose and spirit.
 
