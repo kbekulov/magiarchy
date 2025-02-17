@@ -55,17 +55,17 @@ The mage academy is an imposing structure that resembles a grand cathedral, comb
 
 ---
 
-### Location: Lynleit's Family House
-Lynleit's family house is a neoclassical mansion with white walls and pillars, nestled on a tall hill overlooking the main river and the city of Velna-Nue. It features a spacious garden and a neoclassical gazebo, offering perfect views of both the river and the cityscape. Hidden behind trees, the mansion becomes more visible in autumn when the leaves fall. Positioned near the city centre, it offers both privacy and a commanding view of the surroundings.
-
-![The Mage Academy](img/loc-lynleit-house-1.png)
-
----
-
 ### Lore: The Weave of Leviathan
 A fabric of shifting forms, the Weave of Leviathan is an ancient cloth gifted to Lynleit by her father, Fionn. It remains concealed within the threads of her blue coat (and the sash at Witch Lyn's waist), appearing as ordinary fabric until it moves. The cloth acts of its own will, guided by an unseen intelligence—one that does not always align with its wearer’s intent.
 
 The Weave can morph, taking on different shapes when it perceives danger. In one moment, it unfurls into a long scarf, coiling around Lynleit’s leg to catch her mid-fall from a collapsing bridge. In another, it tightens into a ribbon, threading itself through furniture, winding around her throat in a silent act of defiance. The Leviathan within watches, decides, and acts—whether to protect or to restrain.
+
+---
+
+### Location: Lynleit's Family House
+Lynleit's family house is a neoclassical mansion with white walls and pillars, nestled on a tall hill overlooking the main river and the city of Velna-Nue. It features a spacious garden and a neoclassical gazebo, offering perfect views of both the river and the cityscape. Hidden behind trees, the mansion becomes more visible in autumn when the leaves fall. Positioned near the city centre, it offers both privacy and a commanding view of the surroundings.
+
+![The Mage Academy](img/loc-lynleit-house-1.png)
 
 ---
 
