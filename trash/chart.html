@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workflow Diagram</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/flowchart.js@1.17.0/release/flowchart.min.js"></script>
+</head>
+<body class="bg-gray-100 p-6">
+    <div class="max-w-4xl mx-auto">
+        <h1 class="text-xl font-semibold mb-4">Workflow Diagram</h1>
+        <div class="bg-white rounded-lg shadow-md p-4">
+            <canvas id="canvas" width="800" height="800"></canvas>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var diagramCode = `
+            st=>start: VM Offline
+            reboot=>operation: Reboot
+            autoReconnect=>operation: Auto-reconnect to prod script
+            verifyOnline=>condition: Verify if online?
+            closeAlert=>operation: Close Alert
+            modifyCfg=>operation: Modify config file
+            killLaunch=>operation: Kill and launch bp.bat
+            escalate=>operation: Escalate to L2
+
+            lockedItem=>start: Locked Item
+            checkAPI=>operation: Check via API
+            evalThreshold=>condition: Outside of threshold?
+            removeAlert=>operation: Remove Alert
+            unlockItem=>operation: Unlock Item
+            restartVM=>operation: Restart VM
+            markException=>operation: Mark item as exception
+
+            lastSession=>start: Last Session Date
+            checkSessionAPI=>operation: Check via API
+            sessionExpected=>condition: Session matches expectation?
+            removeAlert2=>operation: Remove Alert
+            additionalChecks=>operation: Perform additional checks
+
+            st->reboot->autoReconnect->verifyOnline
+            verifyOnline(yes)->closeAlert
+            verifyOnline(no)->modifyCfg->killLaunch->escalate
+
+            lockedItem->checkAPI->evalThreshold
+            evalThreshold(yes)->unlockItem->restartVM->markException
+            evalThreshold(no)->removeAlert
+
+            lastSession->checkSessionAPI->sessionExpected
+            sessionExpected(yes)->removeAlert2
+            sessionExpected(no)->additionalChecks
+            `;
+
+            var diagram = flowchart.parse(diagramCode);
+            diagram.drawSVG('canvas', {
+                'x': 0,
+                'y': 0,
+                'line-width': 2,
+                'line-length': 50,
+                'text-margin': 10,
+                'font-size': 14,
+                'font-color': 'black',
+                'line-color': '#0284c7',
+                'element-color': '#0284c7',
+                'fill': 'white',
+                'yes-text': 'Yes',
+                'no-text': 'No',
+                'arrow-end': 'block',
+                'scale': 1,
+                'symbols': {
+                    'start': { 'fill': '#0284c7', 'font-color': 'white' },
+                    'operation': { 'fill': '#white', 'font-color': 'black' },
+                    'condition': { 'fill': '#yellow', 'font-color': 'black' }
+                }
+            });
+        });
+    </script>
+</body>
+</html>

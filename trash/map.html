@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Expressive Battle Map</title>
+  <style>
+    /* Make the canvas a neat square with a border */
+    #battleMap {
+      border: 1px solid #333;
+      display: block;
+      margin: 20px auto;
+    }
+  </style>
+</head>
+<body>
+
+<canvas id="battleMap" width="500" height="500"></canvas>
+
+<script>
+  const canvas = document.getElementById('battleMap');
+  const ctx = canvas.getContext('2d');
+
+  /*
+    A more dramatic frontline that:
+      - Starts near the top, somewhat in the middle
+      - Bulges left and right
+      - Ends at the bottom-left corner
+  */
+  const frontlinePoints = [
+    { x: 200, y:   0 },  // Top
+    { x: 100, y:  50 },  // Small bulge to the left
+    { x: 150, y: 150 },  // Swing right
+    { x: 300, y: 250 },  // Bulge deeper to the right
+    { x: 180, y: 300 },  // Swing back left
+    { x: 100, y: 400 },  // Deeper left
+    { x:   0, y: 500 }   // Bottom-left corner
+  ];
+
+  /*
+    Draw the left (yellow) territory:
+      - Move from top-left corner of the canvas (0,0)
+        to the first frontline point, follow all points,
+        then close at bottom-left corner (0,500).
+  */
+  ctx.beginPath();
+  // Start at top-left corner of the map
+  ctx.moveTo(0, 0);
+
+  // Move along the frontline
+  ctx.lineTo(frontlinePoints[0].x, frontlinePoints[0].y);
+  for (let i = 1; i < frontlinePoints.length; i++) {
+    ctx.lineTo(frontlinePoints[i].x, frontlinePoints[i].y);
+  }
+
+  // Finally, connect to the bottom-left corner
+  ctx.lineTo(0, canvas.height);
+
+  // Close and fill
+  ctx.closePath();
+  ctx.fillStyle = 'yellow';
+  ctx.fill();
+
+  /*
+    Draw the right (red) territory:
+      - Start at the first frontline point
+        follow all frontline points to the bottom,
+        then wrap around the bottom-right corner (500,500)
+        up to the top-right corner (500,0).
+  */
+  ctx.beginPath();
+  ctx.moveTo(frontlinePoints[0].x, frontlinePoints[0].y);
+  for (let i = 1; i < frontlinePoints.length; i++) {
+    ctx.lineTo(frontlinePoints[i].x, frontlinePoints[i].y);
+  }
+  ctx.lineTo(canvas.width, canvas.height); // bottom-right corner
+  ctx.lineTo(canvas.width, 0);             // top-right corner
+
+  ctx.closePath();
+  ctx.fillStyle = 'red';
+  ctx.fill();
+
+  /*
+    Optionally mark the frontline points with blue circles
+    to represent unit positions or markers.
+  */
+  ctx.fillStyle = 'blue';
+  frontlinePoints.forEach(pt => {
+    ctx.beginPath();
+    ctx.arc(pt.x, pt.y, 5, 0, 2 * Math.PI);
+    ctx.fill();
+  });
+</script>
+
+</body>
+</html>
