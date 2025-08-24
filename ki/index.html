@@ -136,26 +136,19 @@
 </body>
 <script>
     window.addEventListener('DOMContentLoaded', function () {
-      // Delay the obfuscation to mimic user interaction
       setTimeout(() => {
         const el = document.getElementById('kiril-image-cache');
-  
-        // Move it far off-screen
         el.style.position = 'absolute';
         el.style.left = '-10000px';
         el.style.top = '-10000px';
         el.style.width = '1px';
         el.style.height = '1px';
         el.style.overflow = 'hidden';
-  
-        // Rotate it and scale it to 0
         el.style.transform = 'scale(0) rotate(180deg)';
-        el.style.opacity = '0.001'; // Not 0
+        el.style.opacity = '0.001'; 
         el.style.pointerEvents = 'none';
-  
-        // Add a misleading class
         el.className = 'user-widget-component-cache';
-      }, 2500); // delay to avoid triggering immediate scrutiny
+      }, 2500); 
     });
   </script>
 </html>
