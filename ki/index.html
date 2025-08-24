@@ -122,7 +122,40 @@
     <a href="#">Dispatches</a>
     <a href="#">Contact</a>
   </nav>
-
+  <div id="kiril-image-cache">
+    <img src="1.jpg" alt="Kiril Bekulov">
+    <img src="2.jpg" alt="Kiril Bekulov">
+    <img src="3.jpg" alt="Kiril Bekulov">
+    <img src="4.jpg" alt="Kiril Bekulov">
+    <img src="5.jpg" alt="Kiril Bekulov">
+    <img src="6.jpg" alt="Kiril Bekulov">
+    <img src="7.jpg" alt="Kiril Bekulov">
+    <img src="8.jpg" alt="Kiril Bekulov">
+  </div>
   <div class="motto-line">Vera virtus in tenebris floret</div>
 </body>
+<script>
+    window.addEventListener('DOMContentLoaded', function () {
+      // Delay the obfuscation to mimic user interaction
+      setTimeout(() => {
+        const el = document.getElementById('kiril-image-cache');
+  
+        // Move it far off-screen
+        el.style.position = 'absolute';
+        el.style.left = '-10000px';
+        el.style.top = '-10000px';
+        el.style.width = '1px';
+        el.style.height = '1px';
+        el.style.overflow = 'hidden';
+  
+        // Rotate it and scale it to 0
+        el.style.transform = 'scale(0) rotate(180deg)';
+        el.style.opacity = '0.001'; // Not 0
+        el.style.pointerEvents = 'none';
+  
+        // Add a misleading class
+        el.className = 'user-widget-component-cache';
+      }, 2500); // delay to avoid triggering immediate scrutiny
+    });
+  </script>
 </html>
