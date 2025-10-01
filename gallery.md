@@ -4,6 +4,7 @@ This page contains both concept and final art. Character designs are subject to 
 
 ### Lynleit
 
+![Lynleit concept 1](img/gallery/char-lynleit-0.png)
 ![Lynleit concept 1](img/gallery/char-lynleit-1.png)
 ![Lynleit concept 2](img/gallery/char-lynleit-2_fixed.png)
 ![Lynleit concept 3](img/gallery/char-lynleit-3.png)
