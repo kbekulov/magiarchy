@@ -21,6 +21,7 @@ const relationshipsSwitch = document.getElementById('relationships-switch');
 const magicSwitch = document.getElementById('magic-switch');
 const locationsSwitch = document.getElementById('locations-switch');
 const storyView = document.getElementById('story-view');
+const eventsView = document.getElementById('events-view');
 const characterView = document.getElementById('character-view');
 const relationshipsView = document.getElementById('relationships-view');
 const magicView = document.getElementById('magic-view');
@@ -202,6 +203,7 @@ function renderCharacter(id) {
 function setSection(section) {
   activeSection = section;
   const isStory = section === 'story';
+  const isEvents = section === 'events';
   const isRelationships = section === 'relationships';
   const isMagic = section === 'magic';
   const isLocations = section === 'locations';
@@ -212,26 +214,29 @@ function setSection(section) {
     ? 'Law Of Magistry'
     : isRelationships
       ? 'Relationship Dynamics'
+      : isEvents
+        ? 'Events & Chapters'
       : isStory
         ? 'Story Universe'
       : 'Character Dossier';
 
-  characterSwitch.classList.toggle('view-hidden', isStory || isRelationships || isMagic || isLocations);
+  characterSwitch.classList.toggle('view-hidden', isStory || isEvents || isRelationships || isMagic || isLocations);
   relationshipsSwitch.classList.toggle('view-hidden', !isRelationships);
   magicSwitch.classList.toggle('view-hidden', !isMagic);
   locationsSwitch.classList.toggle('view-hidden', !isLocations);
   storyView.classList.toggle('view-hidden', !isStory);
-  characterView.classList.toggle('view-hidden', isStory || isRelationships || isMagic || isLocations);
+  eventsView.classList.toggle('view-hidden', !isEvents);
+  characterView.classList.toggle('view-hidden', isStory || isEvents || isRelationships || isMagic || isLocations);
   relationshipsView.classList.toggle('view-hidden', !isRelationships);
   magicView.classList.toggle('view-hidden', !isMagic);
   locationsView.classList.toggle('view-hidden', !isLocations);
 
   magicStage.classList.toggle('view-hidden', !isMagic);
   locationStage.classList.toggle('view-hidden', !isLocations);
-  characterName.classList.toggle('view-hidden', isStory || isMagic || isLocations);
-  characterSubtitle.classList.toggle('view-hidden', isStory || isMagic || isLocations);
+  characterName.classList.toggle('view-hidden', isStory || isEvents || isMagic || isLocations);
+  characterSubtitle.classList.toggle('view-hidden', isStory || isEvents || isMagic || isLocations);
 
-  if (isStory) {
+  if (isStory || isEvents) {
     const image = locationImages.country;
     characterImage.src = image.src;
     characterImage.alt = image.alt;
@@ -325,6 +330,7 @@ navLinks.forEach((link) => {
     const section = link.dataset.section;
     if (
       section === 'story' ||
+      section === 'events' ||
       section === 'characters' ||
       section === 'relationships' ||
       section === 'magic' ||
