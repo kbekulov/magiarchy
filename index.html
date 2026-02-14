@@ -1,0 +1,577 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Magiarchy</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Sora:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="topbar-inner">
+        <p class="brand">Magiarchy</p>
+        <nav class="menu" aria-label="Main menu">
+          <a href="#">Story Universe</a>
+          <a href="#" data-section="magic">Magic System</a>
+          <a href="#" data-section="locations">Locations</a>
+          <a href="#">Organizations</a>
+          <a href="#" data-section="characters" class="active" aria-current="page">Characters</a>
+          <a href="#" data-section="relationships">Relationships</a>
+          <a href="#">Events &amp; Chapters</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="split-layout" role="main">
+      <section class="left-half" aria-label="Character art panel">
+        <div class="art-placeholder">
+          <img
+            id="character-image"
+            src="gallery/characters/lynleit_1.png"
+            alt="Character portrait"
+          />
+          <div id="magic-stage" class="magic-stage view-hidden" aria-hidden="true">
+            <div class="sigil sigil-a"></div>
+            <div class="sigil sigil-b"></div>
+            <div class="sigil-core"></div>
+            <p class="magic-mark">Law Of Magistry</p>
+          </div>
+          <div id="location-stage" class="location-stage view-hidden" aria-hidden="true">
+            <div class="spire spire-a"></div>
+            <div class="spire spire-b"></div>
+            <div class="spire spire-c"></div>
+            <p class="location-mark">The Country</p>
+          </div>
+          <div class="name-block">
+            <p id="character-name" class="name-script">Lynleit</p>
+            <p id="character-subtitle" class="voice">Visible Protagonist</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="right-half" aria-label="Character dossier">
+        <div class="paper-panel">
+          <div class="panel-head">
+            <p id="panel-title" class="panel-title">Character Dossier</p>
+            <div id="character-switch" class="character-switch" role="tablist" aria-label="Character selector">
+              <div class="chip-group">
+                <span class="chip-group-label">MSF</span>
+                <div class="chip-group-pills">
+                  <button type="button" class="chip active" data-character="lyn" role="tab" aria-selected="true" tabindex="0">Lynleit</button>
+                  <button type="button" class="chip" data-character="kyrien" role="tab" aria-selected="false" tabindex="-1">Kyrien</button>
+                  <button type="button" class="chip" data-character="felix" role="tab" aria-selected="false" tabindex="-1">Felix</button>
+                  <button type="button" class="chip" data-character="reiner" role="tab" aria-selected="false" tabindex="-1">Reiner</button>
+                  <button type="button" class="chip" data-character="fionn" role="tab" aria-selected="false" tabindex="-1">Fionn</button>
+                  <button type="button" class="chip" data-character="helena" role="tab" aria-selected="false" tabindex="-1">Helena</button>
+                  <button type="button" class="chip" data-character="tien" role="tab" aria-selected="false" tabindex="-1">Tien</button>
+                </div>
+              </div>
+
+              <div class="chip-group">
+                <span class="chip-group-label">Duchy</span>
+                <div class="chip-group-pills">
+                  <button type="button" class="chip" data-character="drake" role="tab" aria-selected="false" tabindex="-1">Drake</button>
+                  <button type="button" class="chip" data-character="sherie" role="tab" aria-selected="false" tabindex="-1">Sherie</button>
+                  <button type="button" class="chip" data-character="heyk" role="tab" aria-selected="false" tabindex="-1">Heyk</button>
+                </div>
+              </div>
+
+              <div class="chip-group">
+                <span class="chip-group-label">National University</span>
+                <div class="chip-group-pills">
+                  <button type="button" class="chip" data-character="hiyu" role="tab" aria-selected="false" tabindex="-1">Hiyu</button>
+                  <button type="button" class="chip" data-character="yulia" role="tab" aria-selected="false" tabindex="-1">Yulia</button>
+                </div>
+              </div>
+
+              <div class="chip-group">
+                <span class="chip-group-label">Magiarchy</span>
+                <div class="chip-group-pills">
+                  <button type="button" class="chip" data-character="natalia" role="tab" aria-selected="false" tabindex="-1">Natalia</button>
+                  <button type="button" class="chip" data-character="lester" role="tab" aria-selected="false" tabindex="-1">Lester</button>
+                </div>
+              </div>
+
+              <div class="chip-group">
+                <span class="chip-group-label">Mage Academy</span>
+                <div class="chip-group-pills">
+                  <button type="button" class="chip" data-character="myka" role="tab" aria-selected="false" tabindex="-1">Myka</button>
+                </div>
+              </div>
+            </div>
+            <div id="relationships-switch" class="character-switch view-hidden" role="tablist" aria-label="Relationship selector">
+              <button
+                type="button"
+                class="chip active"
+                data-relationship="lyn-kyrien"
+                role="tab"
+                aria-selected="true"
+                tabindex="0"
+              >
+                Lynleit+Kyrien
+              </button>
+              <button
+                type="button"
+                class="chip"
+                data-relationship="felix-reiner"
+                role="tab"
+                aria-selected="false"
+                tabindex="-1"
+              >
+                Felix+Reiner
+              </button>
+            </div>
+            <div id="magic-switch" class="character-switch view-hidden" role="tablist" aria-label="Magic section selector">
+              <button
+                type="button"
+                class="chip active"
+                data-magic-view="foundations"
+                role="tab"
+                aria-selected="true"
+                tabindex="0"
+              >
+                Foundations
+              </button>
+              <button
+                type="button"
+                class="chip"
+                data-magic-view="mechanics"
+                role="tab"
+                aria-selected="false"
+                tabindex="-1"
+              >
+                Mechanics
+              </button>
+              <button
+                type="button"
+                class="chip"
+                data-magic-view="governance"
+                role="tab"
+                aria-selected="false"
+                tabindex="-1"
+              >
+                Governance
+              </button>
+            </div>
+            <div id="locations-switch" class="character-switch view-hidden" role="tablist" aria-label="Location section selector">
+              <button
+                type="button"
+                class="chip active"
+                data-location-view="country"
+                role="tab"
+                aria-selected="true"
+                tabindex="0"
+              >
+                The Country
+              </button>
+              <button
+                type="button"
+                class="chip"
+                data-location-view="mage-academy"
+                role="tab"
+                aria-selected="false"
+                tabindex="-1"
+              >
+                Mage Academy
+              </button>
+              <button
+                type="button"
+                class="chip"
+                data-location-view="lynleit-home"
+                role="tab"
+                aria-selected="false"
+                tabindex="-1"
+              >
+                Lynleit's Home
+              </button>
+            </div>
+          </div>
+
+          <div id="character-view">
+            <section class="content-section">
+              <h3>About</h3>
+              <p id="character-about"></p>
+            </section>
+
+            <section class="stats-grid">
+              <div class="content-section">
+                <h3>Profile</h3>
+                <ul class="facts" id="character-profile"></ul>
+              </div>
+              <div class="content-section">
+                <h3 id="secondary-title">Leadership Style</h3>
+                <ul class="bullets" id="secondary-list"></ul>
+              </div>
+            </section>
+
+            <section class="content-section">
+              <h3>Writer Guide Notes</h3>
+              <ul class="bullets" id="guide-notes"></ul>
+            </section>
+
+            <section class="content-section quote">
+              <h3>Thematic Axis</h3>
+              <p id="axis-quote"></p>
+            </section>
+          </div>
+
+          <div id="relationships-view" class="view-hidden">
+            <div id="relationship-lyn-kyrien">
+              <section class="content-section rel-intro">
+                <h3>Lynleit - Kyrien Story Dynamic</h3>
+                <p class="rel-lead">Structural complementarity under pressure, not romance-first tension.</p>
+                <ul class="bullets">
+                  <li>She leads through proximity; he operates through distance.</li>
+                  <li>She builds legitimacy through transparency; he preserves survivability through controlled opacity.</li>
+                </ul>
+              </section>
+
+              <section class="relationship-grid two-up">
+                <article class="content-section rel-card">
+                  <h3>Lynleit - Visible Authority</h3>
+                  <ul class="bullets">
+                    <li>Collapses hierarchy intentionally and treats core colleagues as allies.</li>
+                    <li>Creates fierce loyalty internally but appears soft to traditional executives.</li>
+                    <li>Learns that cohesion is strength, but not deterrence.</li>
+                    <li>Grows by supplementing ethics with structural insurance, not abandoning them.</li>
+                  </ul>
+                </article>
+                <article class="content-section rel-card">
+                  <h3>Kyrien - Invisible Contingency</h3>
+                  <ul class="bullets">
+                    <li>Off-chart, unofficial, and intentionally outside consensus machinery.</li>
+                    <li>Functions as systemic contingency, not a simple enforcer.</li>
+                    <li>Appears suspicious in calm periods, inevitable in crisis.</li>
+                    <li>Disrupts threats before visible leadership ever absorbs impact.</li>
+                  </ul>
+                </article>
+              </section>
+
+              <section class="relationship-grid two-up">
+                <article class="content-section rel-card">
+                  <h3>Trust Without Visibility</h3>
+                  <ul class="bullets">
+                    <li>She chooses controlled trust, not ignorance.</li>
+                    <li>The central tension is her tolerance for incomplete operational visibility.</li>
+                    <li>Visible consequences still land on her when hidden interventions escalate.</li>
+                  </ul>
+                </article>
+                <article class="content-section rel-card">
+                  <h3>Crisis Dynamic</h3>
+                  <ul class="bullets">
+                    <li>She holds negotiations, morale, and public strategy.</li>
+                    <li>He redirects threats and neutralizes escalation below the visible layer.</li>
+                    <li>Post-crisis ambiguity is a deliberate part of survivability.</li>
+                  </ul>
+                </article>
+              </section>
+
+              <section class="content-section">
+                <h3>Relational Axis</h3>
+                <ul class="bullets">
+                  <li>He is neither weapon nor subordinate - he is an independent ally.</li>
+                  <li>She anchors through responsibility; he stands with her by choice.</li>
+                  <li>She integrates through inclusion; he protects through exclusion.</li>
+                  <li>She writes the visible narrative; he edits the invisible draft.</li>
+                </ul>
+              </section>
+
+              <section class="content-section quote rel-rule">
+                <h3>Thematic Purpose + Writer Rules</h3>
+                <p>Transparency supported by controlled opacity. Do not romanticize prematurely and do not flatten either character into archetype: she remains strategic and decisive; he remains restrained, precise, and independently moral. Their power is tension, not dominance.</p>
+              </section>
+            </div>
+
+            <div id="relationship-felix-reiner" class="view-hidden">
+              <section class="content-section rel-intro">
+                <h3>Felix / Reiner Dynamic (Demo Placeholder)</h3>
+                <p class="rel-lead">Temporary demonstration block for alternate relationship formatting.</p>
+                <ul class="bullets">
+                  <li>This placeholder exists to validate section switching and layout behavior.</li>
+                  <li>Replace with final relationship narrative once Felix+Reiner canon is ready.</li>
+                </ul>
+              </section>
+
+              <section class="relationship-grid two-up">
+                <article class="content-section rel-card">
+                  <h3>Power Balance</h3>
+                  <ul class="bullets">
+                    <li>Define which side holds visible authority.</li>
+                    <li>Define where covert leverage sits.</li>
+                    <li>Define what each one refuses to compromise.</li>
+                  </ul>
+                </article>
+                <article class="content-section rel-card">
+                  <h3>Conflict Engine</h3>
+                  <ul class="bullets">
+                    <li>Identify repeating friction pattern.</li>
+                    <li>Specify what crisis forces collaboration.</li>
+                    <li>Specify what unresolved tension remains.</li>
+                  </ul>
+                </article>
+              </section>
+            </div>
+          </div>
+
+          <div id="magic-view" class="view-hidden">
+            <div id="magic-tab-foundations">
+              <section class="content-section rel-intro">
+                <h3>Core Principle</h3>
+                <p class="rel-lead">Magic does not violate natural law. Magic manipulates natural law.</p>
+                <ul class="bullets">
+                  <li>Magi do not create new rules of reality; they apply leverage to existing pressure points, friction zones, and cracks.</li>
+                  <li>Creation belongs to gods. Manipulation belongs to Magi.</li>
+                  <li>Magic is systemic literacy applied with intent.</li>
+                </ul>
+              </section>
+
+              <section class="relationship-grid two-up">
+                <article class="content-section rel-card">
+                  <h3>Thaumaturgy</h3>
+                  <ul class="bullets">
+                    <li>External manipulation: ignition, concentration, weakening/reinforcement, sensory-physical alteration.</li>
+                    <li>Produces observable environmental outcomes.</li>
+                    <li>Rewrites conditions of the world through controlled force application.</li>
+                  </ul>
+                </article>
+                <article class="content-section rel-card">
+                  <h3>Theurgy</h3>
+                  <ul class="bullets">
+                    <li>Internal transformation: awareness expansion, perception reconfiguration, cognitive-emotional recalibration.</li>
+                    <li>Includes spiritual integration and identity-level shifts.</li>
+                    <li>Rewrites the operator’s relation to the system itself.</li>
+                  </ul>
+                </article>
+              </section>
+
+              <section class="content-section">
+                <h3>Continuum Doctrine</h3>
+                <p>Every magical act affects both self and world. There is no clean divide between internal and external transformation.</p>
+              </section>
+
+              <section class="relationship-grid two-up">
+                <article class="content-section rel-card">
+                  <h3>Ontology Of Magic</h3>
+                  <ul class="bullets">
+                    <li>Natural law includes physics, cognition, emotion, perception, and agency.</li>
+                    <li>Legitimate targets include matter, energy, probability paths, mind, sensory interpretation, and emotional states.</li>
+                    <li>Internal and external realities are structurally continuous.</li>
+                  </ul>
+                </article>
+                <article class="content-section rel-card">
+                  <h3>The Nature Of Magi</h3>
+                  <ul class="bullets">
+                    <li>Magi are anomalies within the human system: embodied loopholes, not divine beings.</li>
+                    <li>Difference is access/perception, not biological superiority.</li>
+                    <li>Talent appears rare and unevenly distributed; trainability remains unresolved.</li>
+                  </ul>
+                </article>
+              </section>
+            </div>
+
+            <div id="magic-tab-mechanics" class="view-hidden">
+              <section class="content-section">
+                <h3>Limitations &amp; Cost</h3>
+                <ul class="bullets">
+                  <li>Magic cannot create absolute contradictions of natural law.</li>
+                  <li>It cannot create from absolute nothing or overwrite foundational structure.</li>
+                  <li>Every intervention shifts equilibrium, introduces stress, and risks backlash.</li>
+                  <li>Overuse destabilizes; misjudgment magnifies systemic resistance.</li>
+                  <li>Magic is leverage, not omnipotence.</li>
+                </ul>
+              </section>
+
+              <section class="content-section">
+                <h3>Philosophical Consequence</h3>
+                <ul class="bullets">
+                  <li>Great Magi maximize precision, not output volume.</li>
+                  <li>Power equals leverage literacy and disciplined restraint.</li>
+                  <li>Minimal intervention at maximal structural effect.</li>
+                </ul>
+              </section>
+
+              <section class="content-section">
+                <h3>Narrative Rules For Writers</h3>
+                <ul class="bullets">
+                  <li>Subtle before spectacular.</li>
+                  <li>Precision is more dangerous than magnitude.</li>
+                  <li>Every spell alters equilibrium.</li>
+                  <li>Overconfidence triggers backlash.</li>
+                  <li>Internal transformation can equal external display.</li>
+                  <li>Avoid arbitrary spellcasting, limitless escalation, cartoon villainy, and consequence-free miracles.</li>
+                </ul>
+              </section>
+            </div>
+
+            <div id="magic-tab-governance" class="view-hidden">
+              <section class="content-section">
+                <h3>Moral &amp; Political Implications</h3>
+                <ul class="bullets">
+                  <li>Magi tension with morality, law, religion, and politics is structural, not incidental.</li>
+                  <li>A secret Magi society exists to regulate practice, prevent destabilization, and preserve Church-Magi balance.</li>
+                  <li>External political interference in internal Magi governance is taboo and severely punished.</li>
+                  <li>Unchecked miracle-making is treated as civilizational risk.</li>
+                </ul>
+              </section>
+
+              <section class="content-section">
+                <h3>Secrecy Doctrine</h3>
+                <ul class="bullets">
+                  <li>Knowledge is distributed as small as possible, as large as necessary.</li>
+                  <li>Selective non-Magi awareness exists among clergy/advisors/political actors.</li>
+                  <li>Exposure risks collapse, retaliation, internal conflict, and civil destabilization.</li>
+                </ul>
+              </section>
+
+              <section class="content-section quote rel-rule">
+                <h3>Thematic Integration</h3>
+                <p>Magic is political physics: structural intervention into cracks of reality. It reflects institutional fragility, unstable power, the cost of knowledge, and the burden of hidden authority. Intervention always carries weight.</p>
+              </section>
+            </div>
+          </div>
+
+          <div id="locations-view" class="view-hidden">
+            <div id="location-country">
+              <section class="content-section rel-intro">
+                <h3>The Country</h3>
+                <p class="rel-lead">A four-point power geometry where law, legacy, intelligence, and trade compete in permanent tension.</p>
+                <ul class="bullets">
+                  <li>Velna-Nue: visible law and parliamentary legitimacy.</li>
+                  <li>Feldenmark: inherited sovereignty and aristocratic continuity.</li>
+                  <li>Turon: intelligence leverage and controlled opacity.</li>
+                  <li>Naminsk: economic gateway and movement control.</li>
+                </ul>
+              </section>
+
+              <section class="relationship-grid two-up">
+                <article class="content-section rel-card">
+                  <h3>Turon (Northern Capital)</h3>
+                  <ul class="bullets">
+                    <li>Semi-autonomous and operationally insulated.</li>
+                    <li>Headquarters zone for Lynleit-family private intelligence operations.</li>
+                    <li>Functions as strategic blind spot with flexible enforcement.</li>
+                    <li>Not a shadow state in simple terms; it runs on information asymmetry.</li>
+                  </ul>
+                </article>
+                <article class="content-section rel-card">
+                  <h3>National Reactions</h3>
+                  <ul class="bullets">
+                    <li>Velna-Nue views Turon as destabilizing but cannot dismantle it without exposing dependency.</li>
+                    <li>Feldenmark distrusts Turon yet occasionally aligns against parliamentary concentration.</li>
+                    <li>Naminsk tracks Turon’s intelligence influence through trade and maritime routing dynamics.</li>
+                  </ul>
+                </article>
+              </section>
+
+              <section class="content-section">
+                <h3>Structural Dynamic</h3>
+                <ul class="bullets">
+                  <li>Turon introduces lateral power into a system built for vertical authority.</li>
+                  <li>It does not seek throne or title; it seeks positioning.</li>
+                  <li>The country’s stability depends on unresolved but managed asymmetry.</li>
+                </ul>
+              </section>
+
+              <section class="relationship-grid two-up">
+                <article class="content-section rel-card">
+                  <h3>Narrative Guidance</h3>
+                  <ul class="bullets">
+                    <li>Turon should read quieter, less ceremonial, and more operational than southern capitals.</li>
+                    <li>It attracts analysts, operators, skeptics, and actors avoiding public spectacle.</li>
+                    <li>Influence here is pursued through access and leverage, not status display.</li>
+                  </ul>
+                </article>
+                <article class="content-section rel-card">
+                  <h3>Thematic Function</h3>
+                  <ul class="bullets">
+                    <li>If Velna-Nue is law and Feldenmark is legacy, Turon is leverage.</li>
+                    <li>Its mafia reputation is directionally useful but analytically imprecise.</li>
+                    <li>Turon is feared because it is indispensable and deniable at once.</li>
+                  </ul>
+                </article>
+              </section>
+            </div>
+
+            <div id="location-mage-academy" class="view-hidden">
+              <section class="content-section rel-intro">
+                <h3>White Cathedral-Monastery-Academy</h3>
+                <p class="rel-lead">A sacred-academic megastructure that trains Magi and regulates dangerous knowledge.</p>
+                <ul class="bullets">
+                  <li>Cathedral + monastery + university in one integrated complex.</li>
+                  <li>Physically present in major cities, but recognized only by permitted observers.</li>
+                  <li>Not hidden by simple illusion; it is selectively acknowledged by ontology.</li>
+                </ul>
+              </section>
+
+              <section class="relationship-grid two-up">
+                <article class="content-section rel-card">
+                  <h3>Spatial Logic</h3>
+                  <ul class="bullets">
+                    <li>Anchored to natural reality, but not geographically fixed.</li>
+                    <li>Can relocate between cities or withdraw from unstable regions.</li>
+                    <li>Relocation is rare and signals major magical-political stress.</li>
+                    <li>Movement is a coordinate-priority reassignment, not teleportation.</li>
+                  </ul>
+                </article>
+                <article class="content-section rel-card">
+                  <h3>Institutional Role</h3>
+                  <ul class="bullets">
+                    <li>Postgraduate magistry training for bloodline entrants and rare exceptional outsiders.</li>
+                    <li>Global active Magi faculty rotate for duty, influence, and succession shaping.</li>
+                    <li>Curriculum: loophole literacy, secrecy discipline, and balance-of-power compliance.</li>
+                  </ul>
+                </article>
+              </section>
+
+              <section class="relationship-grid two-up">
+                <article class="content-section rel-card">
+                  <h3>Political Weight</h3>
+                  <ul class="bullets">
+                    <li>In negotiated tension with the Church, but not itself a church institution.</li>
+                    <li>Influential globally, without absolute dominance.</li>
+                    <li>Exists for continuity: standards, doctrine, and anti-destabilization.</li>
+                  </ul>
+                </article>
+                <article class="content-section rel-card">
+                  <h3>Atmosphere</h3>
+                  <ul class="bullets">
+                    <li>White stone, vaulted scale, cold mornings, lingering echoes.</li>
+                    <li>Solemn, austere, bureaucratically heavy.</li>
+                    <li>Beautiful and intimidating, never whimsical or comforting.</li>
+                  </ul>
+                </article>
+              </section>
+
+              <section class="content-section quote rel-rule">
+                <h3>Symbolic Axis</h3>
+                <p>If Magi are loopholes in natural law, the Cathedral is the framework that studies and contains those loopholes: massive, silent, and enduring.</p>
+              </section>
+            </div>
+
+            <div id="location-lynleit-home" class="view-hidden">
+              <section class="content-section rel-intro">
+                <h3>Lynleit's Home (Placeholder)</h3>
+                <p class="rel-lead">Temporary placeholder section for upcoming location details.</p>
+                <ul class="bullets">
+                  <li>Reserved for residence architecture, atmosphere, and symbolic significance.</li>
+                  <li>Reserved for social/political context and security profile.</li>
+                  <li>Replace with finalized location doctrine when available.</li>
+                </ul>
+              </section>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
