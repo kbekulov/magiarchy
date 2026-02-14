@@ -61,12 +61,12 @@ const characters = {
     subtitle: 'Visible Protagonist • Acting Heir-Director',
     image: 'gallery/characters/lynleit_1.png',
     about:
-      'A 28-year-old sole heir to a successful private intelligence company, Lynleit steps into leadership early to prevent collapse after internal family instability. She refuses rule-by-fear and treats trust as infrastructure, not sentiment.',
+      'A 28-year-old sole heir to a successful private intelligence company (MSF), Lynleit steps into leadership early to prevent collapse after internal family instability. She refuses rule-by-fear and treats trust as infrastructure, not sentiment.',
     profile: [
       ['Age', '28'],
       ['Gender', 'Female'],
       ['Narrative Role', 'Visible protagonist and public decision-maker'],
-      ['Occupation', 'Acting head of a private intelligence company'],
+      ['Occupation', 'Acting head of a private intelligence company (MSF)'],
       ['Core Goal', 'Hold the structure together without abandoning ethics'],
       ['Key Dynamic', 'Public legitimacy paired with hidden contingency support']
     ],
