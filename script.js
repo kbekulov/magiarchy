@@ -20,6 +20,7 @@ const characterSwitch = document.getElementById('character-switch');
 const relationshipsSwitch = document.getElementById('relationships-switch');
 const magicSwitch = document.getElementById('magic-switch');
 const locationsSwitch = document.getElementById('locations-switch');
+const storyView = document.getElementById('story-view');
 const characterView = document.getElementById('character-view');
 const relationshipsView = document.getElementById('relationships-view');
 const magicView = document.getElementById('magic-view');
@@ -33,7 +34,7 @@ const locationMageAcademy = document.getElementById('location-mage-academy');
 const locationLynleitHome = document.getElementById('location-lynleit-home');
 const locationCountry = document.getElementById('location-country');
 const locationMark = document.querySelector('.location-mark');
-let activeSection = 'characters';
+let activeSection = 'story';
 
 const locationImages = {
   country: {
@@ -200,6 +201,7 @@ function renderCharacter(id) {
 
 function setSection(section) {
   activeSection = section;
+  const isStory = section === 'story';
   const isRelationships = section === 'relationships';
   const isMagic = section === 'magic';
   const isLocations = section === 'locations';
@@ -210,23 +212,30 @@ function setSection(section) {
     ? 'Law Of Magistry'
     : isRelationships
       ? 'Relationship Dynamics'
+      : isStory
+        ? 'Story Universe'
       : 'Character Dossier';
 
-  characterSwitch.classList.toggle('view-hidden', isRelationships || isMagic || isLocations);
+  characterSwitch.classList.toggle('view-hidden', isStory || isRelationships || isMagic || isLocations);
   relationshipsSwitch.classList.toggle('view-hidden', !isRelationships);
   magicSwitch.classList.toggle('view-hidden', !isMagic);
   locationsSwitch.classList.toggle('view-hidden', !isLocations);
-  characterView.classList.toggle('view-hidden', isRelationships || isMagic || isLocations);
+  storyView.classList.toggle('view-hidden', !isStory);
+  characterView.classList.toggle('view-hidden', isStory || isRelationships || isMagic || isLocations);
   relationshipsView.classList.toggle('view-hidden', !isRelationships);
   magicView.classList.toggle('view-hidden', !isMagic);
   locationsView.classList.toggle('view-hidden', !isLocations);
 
   magicStage.classList.toggle('view-hidden', !isMagic);
   locationStage.classList.toggle('view-hidden', !isLocations);
-  characterName.classList.toggle('view-hidden', isMagic || isLocations);
-  characterSubtitle.classList.toggle('view-hidden', isMagic || isLocations);
+  characterName.classList.toggle('view-hidden', isStory || isMagic || isLocations);
+  characterSubtitle.classList.toggle('view-hidden', isStory || isMagic || isLocations);
 
-  if (isMagic) {
+  if (isStory) {
+    const image = locationImages.country;
+    characterImage.src = image.src;
+    characterImage.alt = image.alt;
+  } else if (isMagic) {
     characterImage.alt = 'Arcane doctrine visual';
   } else if (isLocations) {
     const activeLocationButton = [...locationButtons].find((button) => button.classList.contains('active'));
@@ -314,7 +323,13 @@ navLinks.forEach((link) => {
     link.setAttribute('aria-current', 'page');
 
     const section = link.dataset.section;
-    if (section === 'characters' || section === 'relationships' || section === 'magic' || section === 'locations') {
+    if (
+      section === 'story' ||
+      section === 'characters' ||
+      section === 'relationships' ||
+      section === 'magic' ||
+      section === 'locations'
+    ) {
       setSection(section);
     }
   });
@@ -461,7 +476,7 @@ locationButtons.forEach((button) => {
 });
 
 renderCharacter('lyn');
-setSection('characters');
+setSection('story');
 setRelationshipView('lyn-kyrien');
 setMagicView('foundations');
 setLocationView('country');
