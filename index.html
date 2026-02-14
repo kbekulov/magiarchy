@@ -20,7 +20,7 @@
           <a href="#" data-section="story" class="active" aria-current="page">Story Universe</a>
           <a href="#" data-section="magic">Magic System</a>
           <a href="#" data-section="locations">Locations</a>
-          <a href="#">Organizations</a>
+          <a href="#" data-section="organizations">Organizations</a>
           <a href="#" data-section="characters">Characters</a>
           <a href="#" data-section="relationships">Relationships</a>
           <a href="#" data-section="events">Events &amp; Chapters</a>
@@ -191,6 +191,48 @@
                 Lynleit's Home
               </button>
             </div>
+            <div id="organizations-switch" class="character-switch view-hidden" role="tablist" aria-label="Organization selector">
+              <button
+                type="button"
+                class="chip active"
+                data-organization-view="msf"
+                role="tab"
+                aria-selected="true"
+                tabindex="0"
+              >
+                MSF
+              </button>
+              <button
+                type="button"
+                class="chip"
+                data-organization-view="magiarchy"
+                role="tab"
+                aria-selected="false"
+                tabindex="-1"
+              >
+                Magiarchy
+              </button>
+              <button
+                type="button"
+                class="chip"
+                data-organization-view="aristocracy"
+                role="tab"
+                aria-selected="false"
+                tabindex="-1"
+              >
+                Aristocracy
+              </button>
+              <button
+                type="button"
+                class="chip"
+                data-organization-view="government"
+                role="tab"
+                aria-selected="false"
+                tabindex="-1"
+              >
+                Government
+              </button>
+            </div>
           </div>
 
           <div id="story-view" class="view-hidden">
@@ -264,6 +306,44 @@
               <h3>Identity Doctrine</h3>
               <p>MSF keeps its name before and after transformation. The acronym is never revealed; continuity is carried through function, not definition.</p>
             </section>
+          </div>
+
+          <div id="organizations-view" class="view-hidden">
+            <div id="organization-msf">
+              <section class="content-section">
+                <h3>MSF</h3>
+                <p>Private intelligence company (MSF) and continuity core across structural transformation.</p>
+              </section>
+
+              <section class="content-section">
+                <h3>Status</h3>
+                <ul class="bullets">
+                  <li>Placeholder entry.</li>
+                  <li>Final doctrine, structure, and leadership model pending.</li>
+                </ul>
+              </section>
+            </div>
+
+            <div id="organization-magiarchy" class="view-hidden">
+              <section class="content-section">
+                <h3>Magiarchy</h3>
+                <p>Placeholder entry for future institutional profile and political function.</p>
+              </section>
+            </div>
+
+            <div id="organization-aristocracy" class="view-hidden">
+              <section class="content-section">
+                <h3>Aristocracy</h3>
+                <p>Placeholder entry for noble blocs, succession logic, and influence channels.</p>
+              </section>
+            </div>
+
+            <div id="organization-government" class="view-hidden">
+              <section class="content-section">
+                <h3>Government</h3>
+                <p>Placeholder entry for parliamentary structures, oversight, and state authority.</p>
+              </section>
+            </div>
           </div>
 
           <div id="character-view">

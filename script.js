@@ -3,6 +3,7 @@ const characterButtons = document.querySelectorAll('#character-switch .chip');
 const relationshipButtons = document.querySelectorAll('#relationships-switch .chip');
 const magicButtons = document.querySelectorAll('#magic-switch .chip');
 const locationButtons = document.querySelectorAll('#locations-switch .chip');
+const organizationButtons = document.querySelectorAll('#organizations-switch .chip');
 
 const characterImage = document.getElementById('character-image');
 const characterName = document.getElementById('character-name');
@@ -20,8 +21,10 @@ const characterSwitch = document.getElementById('character-switch');
 const relationshipsSwitch = document.getElementById('relationships-switch');
 const magicSwitch = document.getElementById('magic-switch');
 const locationsSwitch = document.getElementById('locations-switch');
+const organizationsSwitch = document.getElementById('organizations-switch');
 const storyView = document.getElementById('story-view');
 const eventsView = document.getElementById('events-view');
+const organizationsView = document.getElementById('organizations-view');
 const characterView = document.getElementById('character-view');
 const relationshipsView = document.getElementById('relationships-view');
 const magicView = document.getElementById('magic-view');
@@ -34,6 +37,10 @@ const magicTabGovernance = document.getElementById('magic-tab-governance');
 const locationMageAcademy = document.getElementById('location-mage-academy');
 const locationLynleitHome = document.getElementById('location-lynleit-home');
 const locationCountry = document.getElementById('location-country');
+const organizationMSF = document.getElementById('organization-msf');
+const organizationMagiarchy = document.getElementById('organization-magiarchy');
+const organizationAristocracy = document.getElementById('organization-aristocracy');
+const organizationGovernment = document.getElementById('organization-government');
 const locationMark = document.querySelector('.location-mark');
 let activeSection = 'story';
 
@@ -204,6 +211,7 @@ function setSection(section) {
   activeSection = section;
   const isStory = section === 'story';
   const isEvents = section === 'events';
+  const isOrganizations = section === 'organizations';
   const isRelationships = section === 'relationships';
   const isMagic = section === 'magic';
   const isLocations = section === 'locations';
@@ -212,6 +220,8 @@ function setSection(section) {
     ? 'The Country'
     : isMagic
     ? 'Law Of Magistry'
+    : isOrganizations
+      ? 'Organizations'
     : isRelationships
       ? 'Relationship Dynamics'
       : isEvents
@@ -220,23 +230,25 @@ function setSection(section) {
         ? 'Story Universe'
       : 'Character Dossier';
 
-  characterSwitch.classList.toggle('view-hidden', isStory || isEvents || isRelationships || isMagic || isLocations);
+  characterSwitch.classList.toggle('view-hidden', isStory || isEvents || isOrganizations || isRelationships || isMagic || isLocations);
   relationshipsSwitch.classList.toggle('view-hidden', !isRelationships);
   magicSwitch.classList.toggle('view-hidden', !isMagic);
   locationsSwitch.classList.toggle('view-hidden', !isLocations);
+  organizationsSwitch.classList.toggle('view-hidden', !isOrganizations);
   storyView.classList.toggle('view-hidden', !isStory);
   eventsView.classList.toggle('view-hidden', !isEvents);
-  characterView.classList.toggle('view-hidden', isStory || isEvents || isRelationships || isMagic || isLocations);
+  organizationsView.classList.toggle('view-hidden', !isOrganizations);
+  characterView.classList.toggle('view-hidden', isStory || isEvents || isOrganizations || isRelationships || isMagic || isLocations);
   relationshipsView.classList.toggle('view-hidden', !isRelationships);
   magicView.classList.toggle('view-hidden', !isMagic);
   locationsView.classList.toggle('view-hidden', !isLocations);
 
   magicStage.classList.toggle('view-hidden', !isMagic);
   locationStage.classList.toggle('view-hidden', !isLocations);
-  characterName.classList.toggle('view-hidden', isStory || isEvents || isMagic || isLocations);
-  characterSubtitle.classList.toggle('view-hidden', isStory || isEvents || isMagic || isLocations);
+  characterName.classList.toggle('view-hidden', isStory || isEvents || isOrganizations || isMagic || isLocations);
+  characterSubtitle.classList.toggle('view-hidden', isStory || isEvents || isOrganizations || isMagic || isLocations);
 
-  if (isStory || isEvents) {
+  if (isStory || isEvents || isOrganizations) {
     const image = locationImages.country;
     characterImage.src = image.src;
     characterImage.alt = image.alt;
@@ -317,6 +329,25 @@ function setRelationshipView(id) {
   });
 }
 
+function setOrganizationView(id) {
+  const isMSF = id === 'msf';
+  const isMagiarchy = id === 'magiarchy';
+  const isAristocracy = id === 'aristocracy';
+  const isGovernment = id === 'government';
+
+  organizationMSF.classList.toggle('view-hidden', !isMSF);
+  organizationMagiarchy.classList.toggle('view-hidden', !isMagiarchy);
+  organizationAristocracy.classList.toggle('view-hidden', !isAristocracy);
+  organizationGovernment.classList.toggle('view-hidden', !isGovernment);
+
+  organizationButtons.forEach((button) => {
+    const isActive = button.dataset.organizationView === id;
+    button.classList.toggle('active', isActive);
+    button.setAttribute('aria-selected', String(isActive));
+    button.tabIndex = isActive ? 0 : -1;
+  });
+}
+
 navLinks.forEach((link) => {
   link.addEventListener('click', (event) => {
     event.preventDefault();
@@ -331,6 +362,7 @@ navLinks.forEach((link) => {
     if (
       section === 'story' ||
       section === 'events' ||
+      section === 'organizations' ||
       section === 'characters' ||
       section === 'relationships' ||
       section === 'magic' ||
@@ -481,8 +513,44 @@ locationButtons.forEach((button) => {
   });
 });
 
+organizationButtons.forEach((button) => {
+  button.addEventListener('click', () => {
+    setOrganizationView(button.dataset.organizationView);
+  });
+
+  button.addEventListener('keydown', (event) => {
+    const keys = ['ArrowRight', 'ArrowDown', 'ArrowLeft', 'ArrowUp', 'Home', 'End'];
+    if (!keys.includes(event.key)) return;
+
+    event.preventDefault();
+    const currentIndex = [...organizationButtons].indexOf(button);
+    let nextIndex = currentIndex;
+
+    if (event.key === 'ArrowRight' || event.key === 'ArrowDown') {
+      nextIndex = (currentIndex + 1) % organizationButtons.length;
+    }
+
+    if (event.key === 'ArrowLeft' || event.key === 'ArrowUp') {
+      nextIndex = (currentIndex - 1 + organizationButtons.length) % organizationButtons.length;
+    }
+
+    if (event.key === 'Home') {
+      nextIndex = 0;
+    }
+
+    if (event.key === 'End') {
+      nextIndex = organizationButtons.length - 1;
+    }
+
+    const nextButton = organizationButtons[nextIndex];
+    setOrganizationView(nextButton.dataset.organizationView);
+    nextButton.focus();
+  });
+});
+
 renderCharacter('lyn');
 setSection('story');
 setRelationshipView('lyn-kyrien');
 setMagicView('foundations');
 setLocationView('country');
+setOrganizationView('msf');
