@@ -115,13 +115,14 @@ const characters = {
       'Prioritizes outcomes over optics and rejects performative dominance.'
     ],
     notes: [
+      'Fundamental philosophy: "If it bleeds, it breaks. If it moves, it has structure. If it has structure, it has a failure point."',
       'Psychology: emotionally restrained rather than empty; distrusts centralized authority but values competent structure.',
       'Operating code: loyalty is durable, harm is minimized where possible, outcomes matter more than approval.',
       'Narrative tension: withholds plans, acts autonomously, and should fail emotionally at least once.',
       'Writer tone: underplay him; precision over legend, competence over theatrics.'
     ],
     axis:
-      'Shadow capability inside institutions: he edits invisible drafts while she executes visible strategy, creating equilibrium between openness and concealment.'
+      'He does not disrespect magic; he refuses to mythologize it. Shadow capability inside institutions: he edits invisible drafts while she executes visible strategy, creating equilibrium between openness and concealment.'
   }
 };
 
