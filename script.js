@@ -349,28 +349,62 @@ function setOrganizationView(id) {
   });
 }
 
+function activateNavLink(link) {
+  navLinks.forEach((node) => {
+    node.classList.remove('active');
+    node.removeAttribute('aria-current');
+  });
+
+  link.classList.add('active');
+  link.setAttribute('aria-current', 'page');
+
+  const section = link.dataset.section;
+  if (
+    section === 'story' ||
+    section === 'events' ||
+    section === 'organizations' ||
+    section === 'characters' ||
+    section === 'relationships' ||
+    section === 'magic' ||
+    section === 'locations'
+  ) {
+    setSection(section);
+  }
+}
+
 navLinks.forEach((link) => {
   link.addEventListener('click', (event) => {
     event.preventDefault();
-    navLinks.forEach((node) => {
-      node.classList.remove('active');
-      node.removeAttribute('aria-current');
-    });
-    link.classList.add('active');
-    link.setAttribute('aria-current', 'page');
+    activateNavLink(link);
+  });
 
-    const section = link.dataset.section;
-    if (
-      section === 'story' ||
-      section === 'events' ||
-      section === 'organizations' ||
-      section === 'characters' ||
-      section === 'relationships' ||
-      section === 'magic' ||
-      section === 'locations'
-    ) {
-      setSection(section);
+  link.addEventListener('keydown', (event) => {
+    const keys = ['ArrowRight', 'ArrowLeft', 'Home', 'End'];
+    if (!keys.includes(event.key)) return;
+
+    event.preventDefault();
+    const currentIndex = [...navLinks].indexOf(link);
+    let nextIndex = currentIndex;
+
+    if (event.key === 'ArrowRight') {
+      nextIndex = (currentIndex + 1) % navLinks.length;
     }
+
+    if (event.key === 'ArrowLeft') {
+      nextIndex = (currentIndex - 1 + navLinks.length) % navLinks.length;
+    }
+
+    if (event.key === 'Home') {
+      nextIndex = 0;
+    }
+
+    if (event.key === 'End') {
+      nextIndex = navLinks.length - 1;
+    }
+
+    const nextLink = navLinks[nextIndex];
+    activateNavLink(nextLink);
+    nextLink.focus();
   });
 });
 
