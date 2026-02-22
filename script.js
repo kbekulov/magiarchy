@@ -25,6 +25,7 @@ const organizationsSwitch = document.getElementById('organizations-switch');
 const storyView = document.getElementById('story-view');
 const eventsView = document.getElementById('events-view');
 const organizationsView = document.getElementById('organizations-view');
+const musicView = document.getElementById('music-view');
 const characterView = document.getElementById('character-view');
 const relationshipsView = document.getElementById('relationships-view');
 const magicView = document.getElementById('magic-view');
@@ -213,6 +214,7 @@ function setSection(section) {
   const isStory = section === 'story';
   const isEvents = section === 'events';
   const isOrganizations = section === 'organizations';
+  const isMusic = section === 'music';
   const isRelationships = section === 'relationships';
   const isMagic = section === 'magic';
   const isLocations = section === 'locations';
@@ -221,6 +223,8 @@ function setSection(section) {
     ? 'The Country'
     : isMagic
     ? 'Law Of Magistry'
+    : isMusic
+      ? 'Music'
     : isOrganizations
       ? 'Organizations'
     : isRelationships
@@ -231,7 +235,7 @@ function setSection(section) {
         ? 'Story Universe'
       : 'Character Dossier';
 
-  characterSwitch.classList.toggle('view-hidden', isStory || isEvents || isOrganizations || isRelationships || isMagic || isLocations);
+  characterSwitch.classList.toggle('view-hidden', isStory || isEvents || isOrganizations || isMusic || isRelationships || isMagic || isLocations);
   relationshipsSwitch.classList.toggle('view-hidden', !isRelationships);
   magicSwitch.classList.toggle('view-hidden', !isMagic);
   locationsSwitch.classList.toggle('view-hidden', !isLocations);
@@ -239,17 +243,18 @@ function setSection(section) {
   storyView.classList.toggle('view-hidden', !isStory);
   eventsView.classList.toggle('view-hidden', !isEvents);
   organizationsView.classList.toggle('view-hidden', !isOrganizations);
-  characterView.classList.toggle('view-hidden', isStory || isEvents || isOrganizations || isRelationships || isMagic || isLocations);
+  musicView.classList.toggle('view-hidden', !isMusic);
+  characterView.classList.toggle('view-hidden', isStory || isEvents || isOrganizations || isMusic || isRelationships || isMagic || isLocations);
   relationshipsView.classList.toggle('view-hidden', !isRelationships);
   magicView.classList.toggle('view-hidden', !isMagic);
   locationsView.classList.toggle('view-hidden', !isLocations);
 
   magicStage.classList.toggle('view-hidden', !isMagic);
   locationStage.classList.toggle('view-hidden', !isLocations);
-  characterName.classList.toggle('view-hidden', isStory || isEvents || isOrganizations || isMagic || isLocations);
-  characterSubtitle.classList.toggle('view-hidden', isStory || isEvents || isOrganizations || isMagic || isLocations);
+  characterName.classList.toggle('view-hidden', isStory || isEvents || isOrganizations || isMusic || isMagic || isLocations);
+  characterSubtitle.classList.toggle('view-hidden', isStory || isEvents || isOrganizations || isMusic || isMagic || isLocations);
 
-  if (isStory || isEvents || isOrganizations) {
+  if (isStory || isEvents || isOrganizations || isMusic) {
     const image = locationImages.country;
     characterImage.src = image.src;
     characterImage.alt = image.alt;
@@ -362,6 +367,7 @@ function activateNavLink(link) {
   if (
     section === 'story' ||
     section === 'events' ||
+    section === 'music' ||
     section === 'organizations' ||
     section === 'characters' ||
     section === 'relationships' ||

@@ -20,6 +20,7 @@
           <a href="#" data-section="story" class="active" aria-current="page">Story Universe</a>
           <a href="#" data-section="magic">Magic System</a>
           <a href="#" data-section="locations">Locations</a>
+          <a href="#" data-section="music">Music</a>
           <a href="#" data-section="organizations">Organizations</a>
           <a href="#" data-section="characters">Characters</a>
           <a href="#" data-section="relationships">Relationships</a>
@@ -344,6 +345,35 @@
                 <p>Placeholder entry for parliamentary structures, oversight, and state authority.</p>
               </section>
             </div>
+          </div>
+
+          <div id="music-view" class="view-hidden">
+            <section class="content-section">
+              <h3>Music Archive</h3>
+              <p>Temporary placeholder section for in-page soundtrack playback. Final tracks can be added as MP3 files and played directly from this page.</p>
+            </section>
+
+            <section class="relationship-grid two-up">
+              <article class="content-section rel-card">
+                <h3>Main Theme (Placeholder)</h3>
+                <p class="rel-lead">Replace source with final MP3 path when ready.</p>
+                <audio controls preload="none" class="inline-audio" aria-label="Main Theme placeholder player"></audio>
+              </article>
+              <article class="content-section rel-card">
+                <h3>MSF Motif (Placeholder)</h3>
+                <p class="rel-lead">Designed for direct browser playback via native controls.</p>
+                <audio controls preload="none" class="inline-audio" aria-label="MSF Motif placeholder player"></audio>
+              </article>
+            </section>
+
+            <section class="content-section">
+              <h3>Implementation Notes</h3>
+              <ul class="bullets">
+                <li>Drop MP3 files into a project folder (for example `gallery/music/`).</li>
+                <li>Set each player source to a local `.mp3` path for immediate playback.</li>
+                <li>We can later add track pills, categories, cover art, and lyrics/notes metadata.</li>
+              </ul>
+            </section>
           </div>
 
           <div id="character-view">
