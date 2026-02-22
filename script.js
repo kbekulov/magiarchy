@@ -63,6 +63,21 @@ const locationImages = {
   }
 };
 
+const relationshipImages = {
+  'lyn-kyrien': {
+    src: 'gallery/characters/lynleit_1.png',
+    alt: 'Lynleit and Kyrien relationship visual',
+    name: 'Lynleit + Kyrien',
+    subtitle: 'Relationship Dynamic'
+  },
+  'felix-reiner': {
+    src: 'gallery/characters/kyrien_1.png',
+    alt: 'Felix and Reiner relationship placeholder visual',
+    name: 'Felix + Reiner',
+    subtitle: 'Relationship Placeholder'
+  }
+};
+
 const characters = {
   lyn: {
     name: 'Lynleit',
@@ -272,6 +287,14 @@ function setSection(section) {
     } else {
       characterImage.alt = 'Location visual';
     }
+  } else if (isRelationships) {
+    const activeRelationshipButton = [...relationshipButtons].find((button) => button.classList.contains('active'));
+    const activeRelationshipId = activeRelationshipButton?.dataset.relationship || 'lyn-kyrien';
+    setRelationshipView(activeRelationshipId);
+  } else if (section === 'characters') {
+    const activeCharacterButton = [...characterButtons].find((button) => button.classList.contains('active'));
+    const activeCharacterId = activeCharacterButton?.dataset.character || 'lyn';
+    renderCharacter(activeCharacterId);
   } else {
     const currentName = characterName.textContent || 'Character';
     characterImage.alt = `${currentName} portrait`;
@@ -333,6 +356,16 @@ function setRelationshipView(id) {
     button.setAttribute('aria-selected', String(isActive));
     button.tabIndex = isActive ? 0 : -1;
   });
+
+  if (activeSection === 'relationships') {
+    const image = relationshipImages[id];
+    if (image) {
+      characterImage.src = image.src;
+      characterImage.alt = image.alt;
+      characterName.textContent = image.name;
+      characterSubtitle.textContent = image.subtitle;
+    }
+  }
 }
 
 function setOrganizationView(id) {
