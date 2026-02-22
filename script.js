@@ -408,6 +408,49 @@ navLinks.forEach((link) => {
   });
 });
 
+document.addEventListener('keydown', (event) => {
+  const keys = ['ArrowRight', 'ArrowLeft', 'Home', 'End'];
+  if (!keys.includes(event.key)) return;
+
+  const target = event.target;
+  const isTypingContext =
+    target instanceof HTMLElement &&
+    (target.isContentEditable ||
+      ['INPUT', 'TEXTAREA', 'SELECT'].includes(target.tagName));
+
+  if (isTypingContext) return;
+
+  // Let chip/tab controls keep their own arrow-key behavior when focused.
+  if (target instanceof HTMLElement && target.closest('.character-switch')) return;
+
+  event.preventDefault();
+
+  const navArray = [...navLinks];
+  const activeIndex = navArray.findIndex((link) => link.classList.contains('active'));
+  const currentIndex = activeIndex >= 0 ? activeIndex : 0;
+  let nextIndex = currentIndex;
+
+  if (event.key === 'ArrowRight') {
+    nextIndex = (currentIndex + 1) % navArray.length;
+  }
+
+  if (event.key === 'ArrowLeft') {
+    nextIndex = (currentIndex - 1 + navArray.length) % navArray.length;
+  }
+
+  if (event.key === 'Home') {
+    nextIndex = 0;
+  }
+
+  if (event.key === 'End') {
+    nextIndex = navArray.length - 1;
+  }
+
+  const nextLink = navArray[nextIndex];
+  activateNavLink(nextLink);
+  nextLink.focus();
+});
+
 characterButtons.forEach((button) => {
   button.addEventListener('click', () => {
     renderCharacter(button.dataset.character);
