@@ -420,6 +420,9 @@ document.addEventListener('keydown', (event) => {
 
   if (isTypingContext) return;
 
+  // If focus is already in the top menu, use the per-link handler only.
+  if (target instanceof HTMLElement && target.closest('.menu')) return;
+
   // Let chip/tab controls keep their own arrow-key behavior when focused.
   if (target instanceof HTMLElement && target.closest('.character-switch')) return;
 
