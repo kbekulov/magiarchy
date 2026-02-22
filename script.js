@@ -73,7 +73,7 @@ const characters = {
       ['Age', '28'],
       ['Gender', 'Female'],
       ['Narrative Role', 'Visible protagonist and public decision-maker'],
-      ['Occupation', 'Acting head of a private intelligence company (MSF)'],
+      ['Occupation', 'Acting heir of a private intelligence company (MSF)'],
       ['Core Goal', 'Hold the structure together without abandoning ethics'],
       ['Key Dynamic', 'Public legitimacy paired with hidden contingency support']
     ],
