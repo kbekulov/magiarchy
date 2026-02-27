@@ -4,6 +4,11 @@ Use this as a canon pack for story generation, character writing, scene planning
 
 ## Story Universe
 
+### Story Key Art Direction
+- Deep navy celestial background with arcane geometric sigils and concentric circles.
+- Luminous gold/ivory title treatment with an elegant, high-fantasy prestige tone.
+- Atmosphere should feel ancient, mystical, and structurally precise rather than chaotic.
+
 ### Ontological Foundation
 - Reality is complete but not sealed.
 - Natural law remains absolute, yet contains exploitable seams.

@@ -47,6 +47,11 @@ const locationMark = document.querySelector('.location-mark');
 let activeSection = 'story';
 
 const locationImages = {
+  story: {
+    src: 'gallery/story/story-universe_1.png',
+    alt: 'Magiarchy Story Universe title visual',
+    title: 'Story Universe'
+  },
   country: {
     src: 'gallery/locations/country_1.png',
     alt: 'The Country geopolitical map placeholder',
@@ -295,7 +300,11 @@ function setSection(section) {
   characterName.classList.toggle('view-hidden', isStory || isEvents || isOrganizations || isMusic || isMagic || isLocations);
   characterSubtitle.classList.toggle('view-hidden', isStory || isEvents || isOrganizations || isMusic || isMagic || isLocations);
 
-  if (isStory || isEvents || isOrganizations || isMusic) {
+  if (isStory) {
+    const image = locationImages.story || locationImages.country;
+    characterImage.src = image.src;
+    characterImage.alt = image.alt;
+  } else if (isEvents || isOrganizations || isMusic) {
     const image = locationImages.country;
     characterImage.src = image.src;
     characterImage.alt = image.alt;
