@@ -181,21 +181,13 @@ body {
   height: 100%;
   object-fit: cover;
   object-position: center center;
-  opacity: 0.8;
-  mix-blend-mode: screen;
-  filter: saturate(0.86) contrast(1.14) hue-rotate(8deg) brightness(0.93);
+  opacity: 1;
+  mix-blend-mode: normal;
+  filter: none;
 }
 
 .art-placeholder::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  pointer-events: none;
-  background:
-    linear-gradient(112deg, rgba(210, 235, 255, 0.16) 0%, rgba(210, 235, 255, 0) 28%),
-    radial-gradient(120% 16% at 50% 0, rgba(184, 226, 255, 0.14), transparent 82%),
-    radial-gradient(34% 20% at 50% 95%, rgba(111, 216, 255, 0.3), rgba(111, 216, 255, 0)),
-    linear-gradient(180deg, rgba(6, 14, 34, 0.1) 0%, rgba(6, 14, 34, 0.56) 100%);
+  content: none;
 }
 
 .magic-stage {
