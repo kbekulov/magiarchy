@@ -711,3 +711,104 @@ body {
     max-width: 100%;
   }
 }
+
+.prompt-page .topbar-inner {
+  max-width: 1200px;
+}
+
+.prompt-main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2.4rem 1rem 3rem;
+}
+
+.prompt-panel {
+  border: 1px solid rgba(160, 209, 255, 0.3);
+  border-radius: 18px;
+  background:
+    linear-gradient(180deg, rgba(17, 36, 79, 0.78), rgba(9, 21, 48, 0.9)),
+    radial-gradient(96% 80% at 6% 0%, rgba(138, 208, 255, 0.16), rgba(138, 208, 255, 0));
+  box-shadow: 0 14px 28px rgba(3, 10, 26, 0.44);
+  overflow: hidden;
+}
+
+.prompt-panel-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1.2rem 1.2rem 0.95rem;
+  border-bottom: 1px solid rgba(165, 214, 255, 0.22);
+}
+
+.prompt-panel-head h1 {
+  margin: 0;
+  font-family: "Sora", "Avenir Next", "Segoe UI", sans-serif;
+  font-size: clamp(1.3rem, 2vw, 1.72rem);
+}
+
+.prompt-kicker {
+  margin: 0 0 0.28rem;
+  font-family: "Sora", "Avenir Next", "Segoe UI", sans-serif;
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-dim);
+}
+
+.prompt-note {
+  margin: 0.48rem 0 0;
+  color: var(--text-dim);
+  font-size: 0.9rem;
+}
+
+.prompt-note code {
+  color: var(--text-main);
+}
+
+.copy-button {
+  border: 1px solid rgba(177, 224, 255, 0.5);
+  background: linear-gradient(180deg, rgba(149, 218, 255, 0.26), rgba(108, 185, 236, 0.17));
+  color: var(--text-main);
+  border-radius: 999px;
+  padding: 0.58rem 0.94rem;
+  font-family: "Sora", "Avenir Next", "Segoe UI", sans-serif;
+  font-size: 0.8rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.copy-button:hover,
+.copy-button:focus-visible {
+  border-color: rgba(188, 230, 255, 0.86);
+  outline: none;
+}
+
+.prompt-code-shell {
+  margin: 0;
+  padding: 1.16rem;
+  max-height: calc(100vh - 210px);
+  overflow: auto;
+  font-family: "SFMono-Regular", "Menlo", "Monaco", "Consolas", monospace;
+  font-size: 0.82rem;
+  line-height: 1.5;
+  color: #d7ebff;
+  background: rgba(4, 11, 27, 0.72);
+}
+
+@media (max-width: 640px) {
+  .prompt-main {
+    padding-top: 1rem;
+  }
+
+  .prompt-panel-head {
+    align-items: flex-start;
+  }
+
+  .prompt-code-shell {
+    max-height: none;
+    min-height: 58vh;
+  }
+}

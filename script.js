@@ -1,4 +1,4 @@
-const navLinks = document.querySelectorAll('.menu a');
+const navLinks = document.querySelectorAll('.menu a[data-section]');
 const characterButtons = document.querySelectorAll('#character-switch .chip');
 const relationshipButtons = document.querySelectorAll('#relationships-switch .chip');
 const magicButtons = document.querySelectorAll('#magic-switch .chip');

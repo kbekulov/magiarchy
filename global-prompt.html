@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Magiarchy Project - Global Prompt</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Sora:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="prompt-page">
+    <header class="topbar">
+      <div class="topbar-inner">
+        <p class="brand">Magiarchy Project</p>
+        <nav class="menu" aria-label="Main menu">
+          <a href="index.html">Main Site</a>
+          <a href="global-prompt.html" class="active" aria-current="page">Global Prompt</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="prompt-main" role="main">
+      <section class="prompt-panel" aria-label="Global prompt code block">
+        <div class="prompt-panel-head">
+          <div>
+            <p class="prompt-kicker">Context Snapshot</p>
+            <h1>Global Prompt</h1>
+            <p class="prompt-note">Update <code>GLOBAL_PROMPT.md</code> every time site content or behavior changes.</p>
+          </div>
+          <button id="copy-prompt" type="button" class="copy-button" aria-live="polite">Copy Markdown</button>
+        </div>
+        <pre class="prompt-code-shell"><code id="prompt-code">Loading GLOBAL_PROMPT.md ...</code></pre>
+      </section>
+    </main>
+
+    <script src="global-prompt.js"></script>
+  </body>
+</html>
