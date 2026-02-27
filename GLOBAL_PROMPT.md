@@ -220,6 +220,17 @@ Use this as a canon pack for story generation, character writing, scene planning
 - Key dynamic: public legitimacy paired with hidden contingency support.
 - About: sole heir stepping into leadership early to prevent collapse after family instability; rejects rule-by-fear and treats trust as infrastructure.
 
+#### Visual Description
+- Stature: average height; slim, lean build.
+- Hair: long, dark, softly wavy.
+- Eyes: clear blue.
+- Palette: typically blue, white, and black.
+- Outerwear: tailored blue coat.
+- Top: crisp white blouse with a black ribbon bow necktie at the collar.
+- Bottoms: fitted black shorts.
+- Legwear: opaque black stockings.
+- Footwear: dark over-the-knee boots with medium heels; elegant, stable, and mobility-friendly in a crisis.
+
 #### Leadership Style
 - Direct communication; minimizes executive distance.
 - Builds loyalty through emotional presence and transparency.
@@ -244,6 +255,9 @@ Use this as a canon pack for story generation, character writing, scene planning
 - Core goal: preserve structural survivability without becoming controllable.
 - Key dynamic: independent ally to Lynleit, essential in systemic crisis.
 - About: urban tactician shaped by early exposure to lethal knowledge after his father's suspicious removal from elite circles; specializes in systems/logistics/surveillance/vulnerability mapping over status-force.
+
+#### Visual Description
+- Visual profile pending final canon detail pass.
 
 #### Combat And Method
 - Fights through spacing, leverage, timing, and environment control.
@@ -273,6 +287,7 @@ Use this placeholder doctrine for each until replaced:
 - Profile fields: Status=Placeholder, Age=TBD, Role=TBD, Affiliations=TBD, Core Goal=TBD.
 - Notes: registered in roster; function pending doctrine; relationships/history/operational traits TBD.
 - Thematic axis: not finalized.
+- Visual description placeholder: define stature, hair, eyes, palette, outerwear, top, bottoms, legwear, and footwear.
 
 ## Relationship Dynamics
 

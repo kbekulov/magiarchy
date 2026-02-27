@@ -12,6 +12,7 @@ const characterAbout = document.getElementById('character-about');
 const characterProfile = document.getElementById('character-profile');
 const secondaryTitle = document.getElementById('secondary-title');
 const secondaryList = document.getElementById('secondary-list');
+const visualDescription = document.getElementById('visual-description');
 const guideNotes = document.getElementById('guide-notes');
 const axisQuote = document.getElementById('axis-quote');
 const magicStage = document.getElementById('magic-stage');
@@ -100,6 +101,17 @@ const characters = {
       'Prefers cohesion over control, alignment over obedience.',
       'Faces distrust from traditionalists who equate warmth with weakness.'
     ],
+    visual: [
+      'Stature: average height; slim, lean build.',
+      'Hair: long, dark, softly wavy.',
+      'Eyes: clear blue.',
+      'Palette: typically blue, white, and black.',
+      'Outerwear: tailored blue coat.',
+      'Top: crisp white blouse with a black ribbon bow necktie at the collar.',
+      'Bottoms: fitted black shorts.',
+      'Legwear: opaque black stockings.',
+      'Footwear: dark over-the-knee boots with medium heels; elegant, stable, and mobility-friendly in a crisis.'
+    ],
     notes: [
       'Psychology: matured early under succession pressure; knows legitimacy must be earned in real time.',
       'Strategic evolution: keeps her philosophy but accepts selective opacity when deterrence is required.',
@@ -129,6 +141,9 @@ const characters = {
       'Rewrites combat narratives by altering terrain, light, and momentum.',
       'Minimizes spectacle; violence is concise and functional.',
       'Prioritizes outcomes over optics and rejects performative dominance.'
+    ],
+    visual: [
+      'Visual profile pending final canon detail pass.'
     ],
     notes: [
       'Fundamental philosophy: "If it bleeds, it breaks. If it moves, it has structure. If it has structure, it has a failure point."',
@@ -160,6 +175,9 @@ function createPlaceholderCharacter(name) {
       'Character registered in the roster.',
       'Narrative function pending writer-provided doctrine.',
       'Relationships, history, and operational traits are TBD.'
+    ],
+    visual: [
+      'Visual profile placeholder: define stature, hair, eyes, palette, outerwear, top, bottoms, legwear, and footwear.'
     ],
     notes: [
       'Use this slot as a temporary scaffold for upcoming content.',
@@ -214,6 +232,7 @@ function renderCharacter(id) {
 
   renderList(characterProfile, data.profile, ([label, value]) => `<strong>${label}:</strong> ${value}`);
   renderList(secondaryList, data.secondary, (text) => text);
+  renderList(visualDescription, data.visual, (text) => text);
   renderList(guideNotes, data.notes, (text) => text);
 
   characterButtons.forEach((button) => {
