@@ -143,7 +143,14 @@ const characters = {
       'Prioritizes outcomes over optics and rejects performative dominance.'
     ],
     visual: [
-      'Visual profile pending final canon detail pass.'
+      'Stature: average height; slim, lean build.',
+      'Hair: short, dark.',
+      'Eyes: brown.',
+      'Palette: typically black, beige, and brown.',
+      'Outerwear: brown leather jacket.',
+      'Top: black office shirt (sometimes burgundy).',
+      'Bottoms: black pants.',
+      'Footwear: dark office shoes.'
     ],
     notes: [
       'Fundamental philosophy: "If it bleeds, it breaks. If it moves, it has structure. If it has structure, it has a failure point."',

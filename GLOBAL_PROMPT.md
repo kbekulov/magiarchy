@@ -257,7 +257,14 @@ Use this as a canon pack for story generation, character writing, scene planning
 - About: urban tactician shaped by early exposure to lethal knowledge after his father's suspicious removal from elite circles; specializes in systems/logistics/surveillance/vulnerability mapping over status-force.
 
 #### Visual Description
-- Visual profile pending final canon detail pass.
+- Stature: average height; slim, lean build.
+- Hair: short, dark.
+- Eyes: brown.
+- Palette: typically black, beige, and brown.
+- Outerwear: brown leather jacket.
+- Top: black office shirt (sometimes burgundy).
+- Bottoms: black pants.
+- Footwear: dark office shoes.
 
 #### Combat And Method
 - Fights through spacing, leverage, timing, and environment control.
