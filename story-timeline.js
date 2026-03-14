@@ -203,12 +203,19 @@ const toneClass = {
 const board = document.getElementById('timeline-board');
 const frame = document.querySelector('.timeline-frame');
 const trackTemplate = lanes.map((lane) => (lane.type === 'event' ? '90px' : 'minmax(148px, 1fr)')).join(' ');
+let activeLaneIndex = null;
 
 function createCell(className, text) {
   const node = document.createElement('div');
   node.className = className;
   if (text) node.textContent = text;
   return node;
+}
+
+function overlapsActiveLane(activity) {
+  if (activeLaneIndex === null) return true;
+  const lanePosition = activeLaneIndex + 1;
+  return activity.start <= lanePosition && activity.end >= lanePosition;
 }
 
 function createAvatar(row) {
@@ -244,9 +251,16 @@ function buildHeader() {
   headerTrack.className = 'timeline-track timeline-header-track';
   headerTrack.style.gridTemplateColumns = trackTemplate;
 
-  lanes.forEach((lane) => {
+  lanes.forEach((lane, index) => {
     const laneNode = document.createElement('div');
     laneNode.className = `timeline-lane-head timeline-lane-head-${lane.type}`;
+    laneNode.tabIndex = 0;
+    laneNode.setAttribute('role', 'button');
+    laneNode.setAttribute('aria-pressed', String(activeLaneIndex === index));
+
+    if (activeLaneIndex !== null) {
+      laneNode.classList.add(activeLaneIndex === index ? 'timeline-lane-head-active' : 'timeline-lane-head-muted');
+    }
 
     const label = document.createElement('span');
     label.className = 'timeline-lane-label';
@@ -257,6 +271,16 @@ function buildHeader() {
     title.textContent = lane.title;
 
     laneNode.append(label, title);
+    laneNode.addEventListener('click', () => {
+      activeLaneIndex = activeLaneIndex === index ? null : index;
+      renderBoard();
+    });
+    laneNode.addEventListener('keydown', (event) => {
+      if (event.key !== 'Enter' && event.key !== ' ') return;
+      event.preventDefault();
+      activeLaneIndex = activeLaneIndex === index ? null : index;
+      renderBoard();
+    });
     headerTrack.appendChild(laneNode);
   });
 
@@ -264,6 +288,9 @@ function buildHeader() {
 }
 
 function buildRow(row) {
+  const visibleActivities = row.activities.filter(overlapsActiveLane);
+  if (!visibleActivities.length) return;
+
   const avatarCell = createCell('timeline-cell timeline-sticky timeline-sticky-avatar timeline-row-avatar', '');
   const nameCell = createCell('timeline-cell timeline-sticky timeline-sticky-name timeline-row-name', row.name);
 
@@ -286,7 +313,7 @@ function buildRow(row) {
     track.appendChild(laneCell);
   });
 
-  row.activities.forEach((activity) => {
+  visibleActivities.forEach((activity) => {
     const bar = document.createElement('article');
     bar.className = `timeline-bar ${toneClass[activity.tone] || 'timeline-bar-blue'}`;
     bar.style.gridColumn = `${activity.start} / ${activity.end + 1}`;
@@ -304,6 +331,12 @@ function buildRow(row) {
   board.appendChild(track);
 }
 
+function renderBoard() {
+  board.innerHTML = '';
+  buildHeader();
+  rows.forEach(buildRow);
+}
+
 function enableDragPan() {
   if (!frame) return;
 
@@ -315,6 +348,7 @@ function enableDragPan() {
 
   frame.addEventListener('mousedown', (event) => {
     if (event.button !== 0) return;
+    if (event.target instanceof HTMLElement && event.target.closest('.timeline-lane-head')) return;
 
     isDragging = true;
     startX = event.clientX;
@@ -350,6 +384,5 @@ function enableDragPan() {
   });
 }
 
-buildHeader();
-rows.forEach(buildRow);
+renderBoard();
 enableDragPan();

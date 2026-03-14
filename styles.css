@@ -1014,6 +1014,8 @@ body {
   gap: 0.22rem;
   padding: 0.9rem 0.75rem;
   border-right: 1px solid rgba(157, 204, 255, 0.12);
+  cursor: pointer;
+  transition: opacity 0.14s ease, transform 0.14s ease, box-shadow 0.14s ease;
 }
 
 .timeline-lane-head-chapter {
@@ -1022,6 +1024,20 @@ body {
 
 .timeline-lane-head-event {
   background: linear-gradient(180deg, rgba(79, 30, 51, 0.78), rgba(52, 20, 34, 0.92));
+}
+
+.timeline-lane-head:hover,
+.timeline-lane-head:focus-visible {
+  outline: none;
+  transform: translateY(-1px);
+}
+
+.timeline-lane-head-active {
+  box-shadow: inset 0 -3px 0 rgba(222, 239, 255, 0.85);
+}
+
+.timeline-lane-head-muted {
+  opacity: 0.34;
 }
 
 .timeline-lane-label {
