@@ -881,10 +881,20 @@ body {
   border: 1px solid rgba(170, 214, 255, 0.2);
   border-radius: 20px;
   overflow: auto;
+  cursor: grab;
   background:
     linear-gradient(180deg, rgba(9, 22, 51, 0.92), rgba(6, 16, 36, 0.98)),
     radial-gradient(90% 120% at 50% 0, rgba(110, 180, 255, 0.08), rgba(110, 180, 255, 0));
   box-shadow: 0 16px 36px rgba(4, 10, 24, 0.45);
+}
+
+.timeline-frame-dragging {
+  cursor: grabbing;
+  user-select: none;
+}
+
+.timeline-frame-dragging .timeline-board {
+  user-select: none;
 }
 
 .timeline-board {

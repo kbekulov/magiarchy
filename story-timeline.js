@@ -201,6 +201,7 @@ const toneClass = {
 };
 
 const board = document.getElementById('timeline-board');
+const frame = document.querySelector('.timeline-frame');
 const trackTemplate = lanes.map((lane) => (lane.type === 'event' ? '90px' : 'minmax(148px, 1fr)')).join(' ');
 
 function createCell(className, text) {
@@ -303,5 +304,52 @@ function buildRow(row) {
   board.appendChild(track);
 }
 
+function enableDragPan() {
+  if (!frame) return;
+
+  let isDragging = false;
+  let startX = 0;
+  let startY = 0;
+  let startScrollLeft = 0;
+  let startScrollTop = 0;
+
+  frame.addEventListener('mousedown', (event) => {
+    if (event.button !== 0) return;
+
+    isDragging = true;
+    startX = event.clientX;
+    startY = event.clientY;
+    startScrollLeft = frame.scrollLeft;
+    startScrollTop = frame.scrollTop;
+    frame.classList.add('timeline-frame-dragging');
+    event.preventDefault();
+  });
+
+  window.addEventListener('mousemove', (event) => {
+    if (!isDragging) return;
+
+    const deltaX = event.clientX - startX;
+    const deltaY = event.clientY - startY;
+
+    frame.scrollLeft = startScrollLeft - deltaX;
+    frame.scrollTop = startScrollTop - deltaY;
+  });
+
+  window.addEventListener('mouseup', () => {
+    if (!isDragging) return;
+
+    isDragging = false;
+    frame.classList.remove('timeline-frame-dragging');
+  });
+
+  frame.addEventListener('mouseleave', () => {
+    if (!isDragging) return;
+
+    isDragging = false;
+    frame.classList.remove('timeline-frame-dragging');
+  });
+}
+
 buildHeader();
 rows.forEach(buildRow);
+enableDragPan();
