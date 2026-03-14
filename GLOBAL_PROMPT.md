@@ -62,6 +62,7 @@ Use this as a canon pack for story generation, character writing, scene planning
 - Continuity is carried by function, not formal definition.
 
 ### Current Chapter Timeline Scaffold
+- Chapter 0: The Spill.
 - Chapter 1: Pressure Builds.
 - Chapter 2: Accusation Vector.
 - Pivotal Event: Fionn's assassination.
@@ -76,6 +77,9 @@ Use this as a canon pack for story generation, character writing, scene planning
 - Chapter 9: Return Window.
 
 ### Timeline Trajectories
+- Chapter 0 affects Heyk, Sherie, and Drake.
+- Heyk's Chapter 0 event: covert deployment into quarantine zone.
+- Sherie's and Drake's Chapter 0 event: Heyk's extraction and new job offer.
 - Lynleit moves from inheritance pressure to exile, then into leverage recovery and visible return positioning.
 - Kyrien moves from silent preparation into contingency activation, extraction work, and direct anti-Tien counterplay.
 - Helena builds the accusation architecture, redirects MSF into the hunt, and consolidates unstable control.

@@ -1,4 +1,5 @@
 const lanes = [
+  { id: 'ch0', label: 'Chapter 0', title: 'The Spill', type: 'chapter' },
   { id: 'ch1', label: 'Chapter 1', title: 'Pressure Builds', type: 'chapter' },
   { id: 'ch2', label: 'Chapter 2', title: 'Accusation Vector', type: 'chapter' },
   { id: 'ev1', label: 'Event', title: "Fionn's Assassination", type: 'event' },
@@ -20,9 +21,9 @@ const rows = [
     kind: 'character',
     avatar: 'gallery/characters/lynleit_1.png',
     activities: [
-      { title: 'Inheritance pressure and visible leadership', start: 1, end: 2, tone: 'gold' },
-      { title: 'Framed, displaced, forced into exile', start: 3, end: 5, tone: 'rose' },
-      { title: 'Rebuilds leverage and public posture', start: 6, end: 9, tone: 'blue' }
+      { title: 'Inheritance pressure and visible leadership', start: 2, end: 3, tone: 'gold' },
+      { title: 'Framed, displaced, forced into exile', start: 4, end: 6, tone: 'rose' },
+      { title: 'Rebuilds leverage and public posture', start: 7, end: 10, tone: 'blue' }
     ]
   },
   {
@@ -31,9 +32,9 @@ const rows = [
     kind: 'character',
     avatar: 'gallery/characters/kyrien_1.png',
     activities: [
-      { title: 'Peripheral watch and silent preparation', start: 1, end: 2, tone: 'slate' },
-      { title: 'Contingency activation and extraction work', start: 3, end: 6, tone: 'blue' },
-      { title: 'Shadow pursuit and anti-Tien counterplay', start: 7, end: 9, tone: 'violet' }
+      { title: 'Peripheral watch and silent preparation', start: 2, end: 3, tone: 'slate' },
+      { title: 'Contingency activation and extraction work', start: 4, end: 7, tone: 'blue' },
+      { title: 'Shadow pursuit and anti-Tien counterplay', start: 8, end: 10, tone: 'violet' }
     ]
   },
   {
@@ -41,9 +42,9 @@ const rows = [
     group: 'MSF',
     kind: 'character',
     activities: [
-      { title: 'Builds accusation architecture around Lynleit', start: 1, end: 3, tone: 'rose' },
-      { title: 'Redirects MSF machinery into the hunt', start: 4, end: 6, tone: 'ember' },
-      { title: 'Consolidates control under mounting instability', start: 7, end: 9, tone: 'rose' }
+      { title: 'Builds accusation architecture around Lynleit', start: 2, end: 4, tone: 'rose' },
+      { title: 'Redirects MSF machinery into the hunt', start: 5, end: 7, tone: 'ember' },
+      { title: 'Consolidates control under mounting instability', start: 8, end: 10, tone: 'rose' }
     ]
   },
   {
@@ -51,8 +52,8 @@ const rows = [
     group: 'Helena Asset',
     kind: 'character',
     activities: [
-      { title: 'Hidden deployment and selective pressure', start: 2, end: 4, tone: 'slate' },
-      { title: 'Pursuit, disruption, covert force projection', start: 5, end: 8, tone: 'violet' }
+      { title: 'Hidden deployment and selective pressure', start: 3, end: 5, tone: 'slate' },
+      { title: 'Pursuit, disruption, covert force projection', start: 6, end: 9, tone: 'violet' }
     ]
   },
   {
@@ -60,7 +61,7 @@ const rows = [
     group: 'MSF',
     kind: 'character',
     activities: [
-      { title: 'High-value target before catalytic removal', start: 1, end: 2, tone: 'gold' }
+      { title: 'High-value target before catalytic removal', start: 2, end: 3, tone: 'gold' }
     ]
   },
   {
@@ -68,8 +69,8 @@ const rows = [
     group: 'MSF',
     kind: 'character',
     activities: [
-      { title: 'Support alignment under pressure', start: 2, end: 5, tone: 'teal' },
-      { title: 'Operational repositioning after rupture', start: 6, end: 8, tone: 'blue' }
+      { title: 'Support alignment under pressure', start: 3, end: 6, tone: 'teal' },
+      { title: 'Operational repositioning after rupture', start: 7, end: 9, tone: 'blue' }
     ]
   },
   {
@@ -77,8 +78,8 @@ const rows = [
     group: 'MSF',
     kind: 'character',
     activities: [
-      { title: 'Internal friction and tactical response', start: 2, end: 5, tone: 'stone' },
-      { title: 'Contested loyalties inside mutation phase', start: 6, end: 9, tone: 'ember' }
+      { title: 'Internal friction and tactical response', start: 3, end: 6, tone: 'stone' },
+      { title: 'Contested loyalties inside mutation phase', start: 7, end: 10, tone: 'ember' }
     ]
   },
   {
@@ -86,7 +87,8 @@ const rows = [
     group: 'Duchy',
     kind: 'character',
     activities: [
-      { title: 'Peripheral monitoring of succession fallout', start: 3, end: 6, tone: 'stone' }
+      { title: "Heyk's extraction and new job offer", start: 1, end: 1, tone: 'gold' },
+      { title: 'Peripheral monitoring of succession fallout', start: 4, end: 7, tone: 'stone' }
     ]
   },
   {
@@ -94,7 +96,8 @@ const rows = [
     group: 'Duchy',
     kind: 'character',
     activities: [
-      { title: 'Duchy-side interpretation and response', start: 4, end: 7, tone: 'gold' }
+      { title: "Heyk's extraction and new job offer", start: 1, end: 1, tone: 'blue' },
+      { title: 'Duchy-side interpretation and response', start: 5, end: 8, tone: 'gold' }
     ]
   },
   {
@@ -102,7 +105,8 @@ const rows = [
     group: 'Duchy',
     kind: 'character',
     activities: [
-      { title: 'Secondary pressure and alignment testing', start: 5, end: 8, tone: 'slate' }
+      { title: 'Covert deployment into quarantine zone', start: 1, end: 1, tone: 'rose' },
+      { title: 'Secondary pressure and alignment testing', start: 6, end: 9, tone: 'slate' }
     ]
   },
   {
@@ -110,7 +114,7 @@ const rows = [
     group: 'University',
     kind: 'character',
     activities: [
-      { title: 'Academic angle on systemic disruption', start: 6, end: 9, tone: 'teal' }
+      { title: 'Academic angle on systemic disruption', start: 7, end: 10, tone: 'teal' }
     ]
   },
   {
@@ -118,7 +122,7 @@ const rows = [
     group: 'University',
     kind: 'character',
     activities: [
-      { title: 'Scholarly interpretation of magical strain', start: 6, end: 9, tone: 'blue' }
+      { title: 'Scholarly interpretation of magical strain', start: 7, end: 10, tone: 'blue' }
     ]
   },
   {
@@ -126,7 +130,7 @@ const rows = [
     group: 'Magiarchy',
     kind: 'character',
     activities: [
-      { title: 'Internal magi governance response', start: 5, end: 9, tone: 'violet' }
+      { title: 'Internal magi governance response', start: 6, end: 10, tone: 'violet' }
     ]
   },
   {
@@ -134,7 +138,7 @@ const rows = [
     group: 'Magiarchy',
     kind: 'character',
     activities: [
-      { title: 'Strategic containment and doctrine pressure', start: 6, end: 9, tone: 'slate' }
+      { title: 'Strategic containment and doctrine pressure', start: 7, end: 10, tone: 'slate' }
     ]
   },
   {
@@ -142,7 +146,7 @@ const rows = [
     group: 'Mage Academy',
     kind: 'character',
     activities: [
-      { title: 'Institution-adjacent response lane', start: 7, end: 9, tone: 'teal' }
+      { title: 'Institution-adjacent response lane', start: 8, end: 10, tone: 'teal' }
     ]
   },
   {
@@ -150,9 +154,9 @@ const rows = [
     group: 'Faction',
     kind: 'faction',
     activities: [
-      { title: 'Internal instability under succession pressure', start: 1, end: 3, tone: 'ember' },
-      { title: 'Redirected hunt architecture', start: 4, end: 6, tone: 'rose' },
-      { title: 'Compression into guild-like continuity structure', start: 7, end: 9, tone: 'blue' }
+      { title: 'Internal instability under succession pressure', start: 2, end: 4, tone: 'ember' },
+      { title: 'Redirected hunt architecture', start: 5, end: 7, tone: 'rose' },
+      { title: 'Compression into guild-like continuity structure', start: 8, end: 10, tone: 'blue' }
     ]
   },
   {
@@ -160,7 +164,7 @@ const rows = [
     group: 'Faction',
     kind: 'faction',
     activities: [
-      { title: 'Observation, regulation, delayed intervention', start: 4, end: 9, tone: 'violet' }
+      { title: 'Observation, regulation, delayed intervention', start: 5, end: 10, tone: 'violet' }
     ]
   },
   {
@@ -168,7 +172,7 @@ const rows = [
     group: 'Faction',
     kind: 'faction',
     activities: [
-      { title: 'Legacy calculus and opportunistic leverage', start: 3, end: 8, tone: 'gold' }
+      { title: 'Legacy calculus and opportunistic leverage', start: 4, end: 9, tone: 'gold' }
     ]
   },
   {
@@ -176,7 +180,7 @@ const rows = [
     group: 'Faction',
     kind: 'faction',
     activities: [
-      { title: 'Public-order narrative and state containment', start: 3, end: 9, tone: 'stone' }
+      { title: 'Public-order narrative and state containment', start: 4, end: 10, tone: 'stone' }
     ]
   },
   {
@@ -184,7 +188,7 @@ const rows = [
     group: 'Faction',
     kind: 'faction',
     activities: [
-      { title: 'Secrecy maintenance and institutional caution', start: 4, end: 9, tone: 'slate' }
+      { title: 'Secrecy maintenance and institutional caution', start: 5, end: 10, tone: 'slate' }
     ]
   }
 ];
