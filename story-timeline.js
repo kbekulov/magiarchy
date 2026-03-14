@@ -18,6 +18,7 @@ const rows = [
     name: 'Lynleit',
     group: 'MSF',
     kind: 'character',
+    avatar: 'gallery/characters/lynleit_1.png',
     activities: [
       { title: 'Inheritance pressure and visible leadership', start: 1, end: 2, tone: 'gold' },
       { title: 'Framed, displaced, forced into exile', start: 3, end: 5, tone: 'rose' },
@@ -28,6 +29,7 @@ const rows = [
     name: 'Kyrien',
     group: 'Independent',
     kind: 'character',
+    avatar: 'gallery/characters/kyrien_1.png',
     activities: [
       { title: 'Peripheral watch and silent preparation', start: 1, end: 2, tone: 'slate' },
       { title: 'Contingency activation and extraction work', start: 3, end: 6, tone: 'blue' },
@@ -208,7 +210,33 @@ function createCell(className, text) {
   return node;
 }
 
+function createAvatar(row) {
+  const shell = document.createElement('div');
+  shell.className = `timeline-avatar-shell ${row.kind === 'faction' ? 'timeline-avatar-shell-faction' : ''}`;
+
+  if (row.avatar) {
+    const image = document.createElement('img');
+    image.className = 'timeline-avatar-image';
+    image.src = row.avatar;
+    image.alt = `${row.name} avatar`;
+    shell.appendChild(image);
+    return shell;
+  }
+
+  const fallback = document.createElement('span');
+  fallback.className = `timeline-avatar-fallback ${row.kind === 'faction' ? 'timeline-avatar-fallback-faction' : ''}`;
+  fallback.textContent = row.name
+    .split(' ')
+    .map((part) => part[0])
+    .join('')
+    .slice(0, 2)
+    .toUpperCase();
+  shell.appendChild(fallback);
+  return shell;
+}
+
 function buildHeader() {
+  board.appendChild(createCell('timeline-cell timeline-sticky timeline-sticky-avatar timeline-header-meta timeline-avatar-header', ''));
   board.appendChild(createCell('timeline-cell timeline-sticky timeline-sticky-name timeline-header-meta', 'Actor'));
 
   const headerTrack = document.createElement('div');
@@ -235,13 +263,17 @@ function buildHeader() {
 }
 
 function buildRow(row) {
+  const avatarCell = createCell('timeline-cell timeline-sticky timeline-sticky-avatar timeline-row-avatar', '');
   const nameCell = createCell('timeline-cell timeline-sticky timeline-sticky-name timeline-row-name', row.name);
 
+  avatarCell.appendChild(createAvatar(row));
+
   if (row.kind === 'faction') {
+    avatarCell.classList.add('timeline-row-faction');
     nameCell.classList.add('timeline-row-faction');
   }
 
-  board.append(nameCell);
+  board.append(avatarCell, nameCell);
 
   const track = document.createElement('div');
   track.className = 'timeline-track timeline-row-track';

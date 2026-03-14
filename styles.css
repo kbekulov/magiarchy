@@ -890,7 +890,7 @@ body {
 .timeline-board {
   min-width: 1700px;
   display: grid;
-  grid-template-columns: 240px minmax(1200px, 1fr);
+  grid-template-columns: 84px 180px minmax(1200px, 1fr);
   grid-auto-rows: minmax(76px, auto);
 }
 
@@ -910,6 +910,10 @@ body {
 }
 
 .timeline-sticky-name {
+  left: 84px;
+}
+
+.timeline-sticky-avatar {
   left: 0;
 }
 
@@ -927,6 +931,54 @@ body {
 .timeline-row-name {
   font-weight: 700;
   color: var(--text-main);
+}
+
+.timeline-row-avatar,
+.timeline-avatar-header {
+  justify-content: center;
+  padding: 0.75rem;
+}
+
+.timeline-avatar-shell {
+  width: 48px;
+  height: 48px;
+  border-radius: 14px;
+  overflow: hidden;
+  border: 1px solid rgba(174, 220, 255, 0.22);
+  background: linear-gradient(180deg, rgba(23, 50, 99, 0.95), rgba(11, 23, 49, 0.98));
+  box-shadow: 0 8px 18px rgba(2, 9, 24, 0.26);
+}
+
+.timeline-avatar-shell-faction {
+  border-color: rgba(238, 204, 130, 0.22);
+  background: linear-gradient(180deg, rgba(88, 57, 18, 0.94), rgba(46, 30, 9, 0.98));
+}
+
+.timeline-avatar-image,
+.timeline-avatar-fallback {
+  width: 100%;
+  height: 100%;
+}
+
+.timeline-avatar-image {
+  display: block;
+  object-fit: cover;
+  object-position: center;
+}
+
+.timeline-avatar-fallback {
+  display: grid;
+  place-items: center;
+  font-family: "Sora", "Avenir Next", "Segoe UI", sans-serif;
+  font-size: 0.9rem;
+  letter-spacing: 0.06em;
+  color: #e7f2ff;
+  background: linear-gradient(135deg, rgba(39, 82, 156, 0.95), rgba(27, 49, 90, 0.95));
+}
+
+.timeline-avatar-fallback-faction {
+  color: #fff0cf;
+  background: linear-gradient(135deg, rgba(156, 117, 39, 0.95), rgba(88, 62, 21, 0.95));
 }
 
 .timeline-row-faction {
