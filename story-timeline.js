@@ -87,7 +87,7 @@ const rows = [
     group: 'Duchy',
     kind: 'character',
     activities: [
-      { title: "Heyk's extraction and new job offer", start: 1, end: 1, tone: 'gold' },
+      { title: "Heyk's extraction and new job offer", start: 2, end: 2, tone: 'gold' },
       { title: 'Peripheral monitoring of succession fallout', start: 4, end: 7, tone: 'stone' }
     ]
   },
@@ -96,7 +96,7 @@ const rows = [
     group: 'Duchy',
     kind: 'character',
     activities: [
-      { title: "Heyk's extraction and new job offer", start: 1, end: 1, tone: 'blue' },
+      { title: "Heyk's extraction and new job offer", start: 2, end: 2, tone: 'blue' },
       { title: 'Duchy-side interpretation and response', start: 5, end: 8, tone: 'gold' }
     ]
   },
@@ -105,7 +105,7 @@ const rows = [
     group: 'Duchy',
     kind: 'character',
     activities: [
-      { title: 'Covert deployment into quarantine zone', start: 1, end: 1, tone: 'rose' },
+      { title: 'Covert deployment into quarantine zone', start: 1, end: 2, tone: 'rose' },
       { title: 'Secondary pressure and alignment testing', start: 6, end: 9, tone: 'slate' }
     ]
   },
