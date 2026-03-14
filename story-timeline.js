@@ -209,8 +209,7 @@ function createCell(className, text) {
 }
 
 function buildHeader() {
-  board.appendChild(createCell('timeline-cell timeline-sticky timeline-sticky-name timeline-header-meta', 'Entity'));
-  board.appendChild(createCell('timeline-cell timeline-sticky timeline-sticky-group timeline-header-meta', 'Group'));
+  board.appendChild(createCell('timeline-cell timeline-sticky timeline-sticky-name timeline-header-meta', 'Actor'));
 
   const headerTrack = document.createElement('div');
   headerTrack.className = 'timeline-track timeline-header-track';
@@ -237,14 +236,12 @@ function buildHeader() {
 
 function buildRow(row) {
   const nameCell = createCell('timeline-cell timeline-sticky timeline-sticky-name timeline-row-name', row.name);
-  const groupCell = createCell('timeline-cell timeline-sticky timeline-sticky-group timeline-row-group', row.group);
 
   if (row.kind === 'faction') {
     nameCell.classList.add('timeline-row-faction');
-    groupCell.classList.add('timeline-row-faction');
   }
 
-  board.append(nameCell, groupCell);
+  board.append(nameCell);
 
   const track = document.createElement('div');
   track.className = 'timeline-track timeline-row-track';
