@@ -61,6 +61,28 @@ Use this as a canon pack for story generation, character writing, scene planning
 - The acronym is never revealed.
 - Continuity is carried by function, not formal definition.
 
+### Current Chapter Timeline Scaffold
+- Chapter 1: Pressure Builds.
+- Chapter 2: Accusation Vector.
+- Pivotal Event: Fionn's assassination.
+- Chapter 3: Exile Opens.
+- Chapter 4: Hunt Architecture.
+- Chapter 5: Extraction Lines.
+- Pivotal Event: MSF compression into guild-like continuity.
+- Chapter 6: Countermove.
+- Chapter 7: Institutional Pressure.
+- Pivotal Event: Kyrien-Tien clash.
+- Chapter 8: Visibility Debt.
+- Chapter 9: Return Window.
+
+### Timeline Trajectories
+- Lynleit moves from inheritance pressure to exile, then into leverage recovery and visible return positioning.
+- Kyrien moves from silent preparation into contingency activation, extraction work, and direct anti-Tien counterplay.
+- Helena builds the accusation architecture, redirects MSF into the hunt, and consolidates unstable control.
+- Tien escalates from hidden deployment into pursuit and shadow-force pressure.
+- MSF fractures, redirects inward, then compresses into a continuity structure rather than disappearing.
+- Magiarchy, Government, Aristocracy, and Church increasingly respond as the private crisis becomes institutional.
+
 ## Magic System (Law Of Magistry)
 
 ### Core Principle

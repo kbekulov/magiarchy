@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Magiarchy Project - Story Timeline</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Sora:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="timeline-page">
+    <header class="topbar">
+      <div class="topbar-inner">
+        <p class="brand">Magiarchy Project</p>
+        <nav class="menu" aria-label="Main menu">
+          <a href="index.html">Main Site</a>
+          <a href="story-timeline.html" class="active" aria-current="page">Story Timeline</a>
+          <a href="global-prompt.html">Global Prompt</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="timeline-main" role="main">
+      <section class="timeline-hero">
+        <div>
+          <p class="timeline-kicker">Narrative Mapping</p>
+          <h1>Story Timeline</h1>
+          <p class="timeline-note">
+            Chapters run across the top, pivotal events cut through the sequence, and every character or faction
+            gets a visible activity lane across the arc.
+          </p>
+        </div>
+        <div class="timeline-legend" aria-label="Timeline legend">
+          <span class="timeline-legend-chip story">Character Movement</span>
+          <span class="timeline-legend-chip faction">Faction Pressure</span>
+          <span class="timeline-legend-chip event">Pivotal Event</span>
+        </div>
+      </section>
+
+      <section class="timeline-frame" aria-label="Story timeline board">
+        <div class="timeline-board" id="timeline-board"></div>
+      </section>
+    </main>
+
+    <script src="story-timeline.js"></script>
+  </body>
+</html>
