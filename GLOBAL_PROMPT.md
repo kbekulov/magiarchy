@@ -54,7 +54,7 @@ Use this as a canon pack for story generation, character writing, scene planning
 
 ### Structural Mutation
 - MSF does not disappear.
-- It compresses from a private intelligence company into secretive mage guild architecture.
+- It compresses from a private intelligence company into secretive Magi guild architecture.
 - Transition includes more than core Magi: additional personnel remain as support operators and facilitators.
 - Operational continuity is preserved under new doctrine and structure.
 
