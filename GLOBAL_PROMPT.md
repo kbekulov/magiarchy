@@ -30,8 +30,8 @@ Use this as a canon pack for story generation, character writing, scene planning
 - When the soul of a city destabilizes, the nightmares of its inhabitants begin to take physical form.
 - Overload manifests as Holumns, emergent fractures where nightmare becomes material threat.
 - Magi are tasked with suppressing these manifestations before they rupture public reality and expose the hidden architecture.
-- They do so under the constant scrutiny of the Church, which is fully aware of both the nightmares and the powers of the Magi.
-- The Church accepts the continued existence of the Magi because the Magi make themselves necessary through suppression; without that necessity, tolerance would give way to inquisition.
+- They do so under the scrutiny of the Church, which knows both the reality of the nightmares and the powers of the Magi, and regards both with suspicion.
+- The Church tolerates the Magi because the Magi make themselves indispensable through suppression; without that necessity, tolerance would give way to inquisition.
 - Institutions behave like living systems under stress: they harden, fail, adapt, or mutate to preserve continuity.
 - The central conflict is knowledge versus stability, not good versus evil.
 
