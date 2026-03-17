@@ -628,6 +628,19 @@ body {
   font-style: italic;
 }
 
+.social-embed-shell {
+  margin-top: 0.9rem;
+  max-width: min(100%, 560px);
+}
+
+.social-embed-shell .instagram-media {
+  min-width: 0 !important;
+  width: 100% !important;
+  margin: 0 !important;
+  border-radius: 18px !important;
+  overflow: hidden !important;
+}
+
 @media (max-width: 1024px) {
   .split-layout {
     grid-template-columns: 1fr;
