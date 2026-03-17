@@ -30,6 +30,7 @@ Use this as a canon pack for story generation, character writing, scene planning
 - When the soul of a city destabilizes, the nightmares of its inhabitants begin to take physical form.
 - Overload manifests as Holumns, emergent fractures where nightmare becomes material threat.
 - Magi are tasked with suppressing these manifestations before they rupture public reality and expose the hidden architecture.
+- They do so under the constant scrutiny of a suspicious Church that is aware of both the nightmares and the powers of the Magi.
 - Institutions behave like living systems under stress: they harden, fail, adapt, or mutate to preserve continuity.
 - The central conflict is knowledge versus stability, not good versus evil.
 
@@ -148,7 +149,9 @@ Use this as a canon pack for story generation, character writing, scene planning
 
 ### Moral And Political Implications
 - Magi conflict with morality, law, religion, and politics is structural, not incidental.
-- A secret Magi society regulates practice, prevents destabilization, and preserves Church-Magi balance.
+- A secret Magi society regulates practice, prevents destabilization, and preserves a precarious balance with the Church.
+- The Church is not ignorant of the Magi, but watches them with sustained suspicion and continually tests the legitimacy of their existence.
+- The Magi suppress horrors not only to preserve civilization, but to prove their necessity and keep inquisitorial elimination at bay.
 - External political interference in internal Magi governance is taboo and severely punished.
 - Unchecked miracle-making is treated as civilizational risk.
 
