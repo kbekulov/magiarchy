@@ -15,6 +15,7 @@ const secondaryList = document.getElementById('secondary-list');
 const visualDescription = document.getElementById('visual-description');
 const guideNotes = document.getElementById('guide-notes');
 const axisQuote = document.getElementById('axis-quote');
+const storyStage = document.getElementById('story-stage');
 const magicStage = document.getElementById('magic-stage');
 const locationStage = document.getElementById('location-stage');
 const panelTitle = document.getElementById('panel-title');
@@ -295,16 +296,14 @@ function setSection(section) {
   magicView.classList.toggle('view-hidden', !isMagic);
   locationsView.classList.toggle('view-hidden', !isLocations);
 
+  storyStage.classList.toggle('view-hidden', !isStory);
   magicStage.classList.toggle('view-hidden', !isMagic);
   locationStage.classList.toggle('view-hidden', !isLocations);
+  characterImage.classList.toggle('view-hidden', isStory);
   characterName.classList.toggle('view-hidden', isStory || isEvents || isOrganizations || isMusic || isMagic || isLocations);
   characterSubtitle.classList.toggle('view-hidden', isStory || isEvents || isOrganizations || isMusic || isMagic || isLocations);
 
-  if (isStory) {
-    const image = locationImages.story || locationImages.country;
-    characterImage.src = image.src;
-    characterImage.alt = image.alt;
-  } else if (isEvents || isOrganizations || isMusic) {
+  if (isEvents || isOrganizations || isMusic) {
     const image = locationImages.country;
     characterImage.src = image.src;
     characterImage.alt = image.alt;
