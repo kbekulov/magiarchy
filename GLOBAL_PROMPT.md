@@ -17,13 +17,14 @@ Use this as a canon pack for story generation, character writing, scene planning
 
 ### Hidden History
 - Magic endured not through conquest, but through restraint, containment, and silence.
-- Religious, aristocratic, scholarly, and clandestine systems all participate in preserving secrecy.
+- Over time, the Magi divided between those who accepted tense partnership with the Church and those who rejected it in pursuit of their own aims.
+- From that division emerged the Magiarchy and its regional Magiarchates, formal bodies through which Church-aligned Magi could be organized, monitored, and made politically legible.
 - Modern society appears secular and ordinary, yet remains partially uninformed by design.
 
 ### Balance Of Powers
 - Stability depends on an uneasy balance between magical governance, Church influence, aristocratic legacy, state institutions, and intelligence networks.
-- No bloc stands fully above the others; each depends on the rest while distrusting them.
-- The system survives through negotiated silence rather than trust.
+- No bloc stands fully above the others; each depends on the rest while distrusting them, and the Church's partnership with the Magiarchy is as productive as it is dangerous in moments of betrayal.
+- Outside that sanctioned order, renegade Magi remain blood enemies of both the Church and the Magiarchates, creating a hidden war beneath ordinary reality.
 
 ### System Behavior
 - Every intervention shifts equilibrium, and every suppression raises pressure elsewhere.
@@ -152,6 +153,8 @@ Use this as a canon pack for story generation, character writing, scene planning
 - Magi conflict with morality, law, religion, and politics is structural, not incidental.
 - A secret Magi society regulates practice, prevents destabilization, and preserves a precarious balance with the Church.
 - The Church is not ignorant of the Magi, but watches them with sustained suspicion and continually tests the legitimacy of their existence.
+- That balance applies most fully to the Magiarchy and its regional Magiarchates, whose members remain in sanctioned, uneasy partnership with the Church.
+- Outside that structure stand renegade Magi, who reject obedience, pursue their own ends, and are hunted as enemies by both Church and Magiarchal authority.
 - The Magi suppress horrors not only to preserve civilization, but to prove their necessity and keep inquisitorial elimination at bay.
 - External political interference in internal Magi governance is taboo and severely punished.
 - Unchecked miracle-making is treated as civilizational risk.
@@ -160,6 +163,7 @@ Use this as a canon pack for story generation, character writing, scene planning
 - Knowledge distribution principle: as small as possible, as large as necessary.
 - Selective non-Magi awareness exists among clergy, advisors, and political actors.
 - Ordinary society continues life without knowing magic or Magi exist, and suppression doctrine is built to preserve that ignorance.
+- Beneath that silence, sanctioned Magi and renegade Magi remain locked in a concealed conflict shaped by surveillance, betrayal, and reprisal.
 - Full exposure risks collapse, retaliation, internal conflict, and civil destabilization.
 
 ### Thematic Integration
@@ -243,7 +247,11 @@ Use this as a canon pack for story generation, character writing, scene planning
 - Status: placeholder profile pending final doctrine, structure, and leadership model.
 
 ### Magiarchy
-- Placeholder for institutional profile and political function.
+- The Magiarchy is the sanctioned political order of the Magi: the structure through which Church-aligned Magi are organized, regulated, and made diplomatically legible.
+- Through its regional Magiarchates, it reports upward, negotiates outward, and preserves the institutional terms of Magi survival.
+- The term "Magi" names the broader class; "Magiarchy" names the sanctioned order within that class.
+- Its partnership with the Church is productive but never innocent, marked by diplomacy, shared necessity, espionage, extortion, and blood when trust is broken.
+- Renegade Magi who reject Church-aligned order become blood enemies of both the Church and the Magiarchates.
 
 ### Aristocracy
 - Placeholder for noble blocs, succession logic, and influence channels.
