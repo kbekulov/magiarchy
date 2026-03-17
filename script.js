@@ -91,7 +91,7 @@ const characters = {
     subtitle: 'Visible Protagonist • Acting Heir-Director',
     image: 'gallery/characters/lynleit_1.png',
     about:
-      'A 28-year-old sole heir to a successful private intelligence company (MSF), Lynleit steps into leadership early to prevent collapse after internal family instability. She refuses rule-by-fear and treats trust as infrastructure, not sentiment.',
+      'Lynleit is the twenty-eight-year-old sole heir to MSF, a private intelligence structure already strained by instability before she fully inherits it. She steps into leadership early not out of ambition, but because collapse is already near. Where others would consolidate power through fear, she treats trust as infrastructure and refuses to confuse coldness with strength.',
     profile: [
       ['Age', '28'],
       ['Gender', 'Female'],
@@ -102,10 +102,10 @@ const characters = {
     ],
     secondaryTitle: 'Leadership Style',
     secondary: [
-      'Uses direct personal communication and minimizes executive distance.',
-      'Builds loyalty through emotional presence and transparency.',
-      'Prefers cohesion over control, alignment over obedience.',
-      'Faces distrust from traditionalists who equate warmth with weakness.'
+      'She communicates directly and reduces the distance that power usually creates.',
+      'She builds loyalty through emotional presence and visible sincerity.',
+      'She prefers cohesion to control, and alignment to obedience.',
+      'Traditionalists distrust her because they confuse warmth with softness.'
     ],
     visual: [
       'Stature: average height; slim, lean build.',
@@ -119,20 +119,20 @@ const characters = {
       'Footwear: dark over-the-knee boots with medium heels; elegant, stable, and mobility-friendly in a crisis.'
     ],
     notes: [
-      'Psychology: matured early under succession pressure; knows legitimacy must be earned in real time.',
-      'Strategic evolution: keeps her philosophy but accepts selective opacity when deterrence is required.',
-      'Narrative tension: must prove proximity is strength, not softness, and make at least one costly trust-based decision.',
-      'Writer tone: portray composure and conviction; her vulnerability is conscious and chosen.'
+      'She matured early under succession pressure and understands that legitimacy must be earned in real time, never inherited passively.',
+      'Her strategic evolution should preserve her philosophy while allowing her to accept selective opacity when deterrence becomes necessary.',
+      'Her narrative tension lies in proving that proximity can be a form of strength rather than weakness, and in paying the cost of at least one trust-based decision.',
+      'Write her with composure and conviction; her vulnerability should feel chosen, not accidental.'
     ],
     axis:
-      'Visible power attempting to remain ethical: she writes the public narrative while relying on shadow capability to keep the system survivable.'
+      'She represents visible power trying to remain ethical, writing the public narrative while depending on unseen contingency to keep the structure survivable.'
   },
   kyrien: {
     name: 'Kyrien',
     subtitle: 'Independent Ally • Hidden Contingency',
     image: 'gallery/characters/kyrien_1.png',
     about:
-      'A 28-year-old urban tactician shaped by early exposure to lethal knowledge after his father’s suspicious removal from elite power circles. He specializes in systems, logistics, surveillance, and vulnerability mapping instead of status-driven force.',
+      'Kyrien is a twenty-eight-year-old urban tactician shaped by early contact with lethal knowledge and by the suspicious removal of his father from elite power circles. He does not pursue force for its own sake. His domain is systems, logistics, surveillance, and the mapping of structural weakness.',
     profile: [
       ['Age', '28'],
       ['Gender', 'Male'],
@@ -143,10 +143,10 @@ const characters = {
     ],
     secondaryTitle: 'Combat & Method',
     secondary: [
-      'Fights through spacing, leverage, timing, and environmental control.',
-      'Rewrites combat narratives by altering terrain, light, and momentum.',
-      'Minimizes spectacle; violence is concise and functional.',
-      'Prioritizes outcomes over optics and rejects performative dominance.'
+      'He fights through distance, leverage, timing, and control of environment.',
+      'He reshapes conflict by changing terrain, light, and momentum rather than seeking spectacle.',
+      'His violence is concise, functional, and deliberately unsentimental.',
+      'He privileges outcome over optics and rejects dominance as performance.'
     ],
     visual: [
       'Stature: average height; slim, lean build.',
@@ -160,13 +160,13 @@ const characters = {
     ],
     notes: [
       'Fundamental philosophy: "If it bleeds, it breaks. If it moves, it has structure. If it has structure, it has a failure point."',
-      'Psychology: emotionally restrained rather than empty; distrusts centralized authority but values competent structure.',
-      'Operating code: loyalty is durable, harm is minimized where possible, outcomes matter more than approval.',
-      'Narrative tension: withholds plans, acts autonomously, and should fail emotionally at least once.',
-      'Writer tone: underplay him; precision over legend, competence over theatrics.'
+      'He should read as emotionally restrained rather than empty, distrustful of centralized authority yet respectful of competent structure.',
+      'His operating code is defined by durable loyalty, minimized harm where possible, and a willingness to privilege outcomes over approval.',
+      'His narrative tension lies in secrecy, autonomy, and at least one meaningful emotional failure.',
+      'Write him with restraint; precision should matter more than legend, and competence more than theatricality.'
     ],
     axis:
-      'He does not disrespect magic; he refuses to mythologize it. Shadow capability inside institutions: he edits invisible drafts while she executes visible strategy, creating equilibrium between openness and concealment.'
+      'He does not reject magic, but refuses to mythologize it. He is shadow capability inside institutional structure, editing the invisible draft while Lynleit carries out visible strategy.'
   }
 };
 
@@ -175,7 +175,7 @@ function createPlaceholderCharacter(name) {
     name,
     subtitle: 'Profile Placeholder',
     image: 'gallery/characters/lynleit_1.png',
-    about: `${name} is listed as a placeholder character. Detailed narrative profile will be added in a future update.`,
+    about: `${name} is currently registered as a placeholder character within the canon. A full narrative profile will be added in a later pass.`,
     profile: [
       ['Status', 'Placeholder entry'],
       ['Age', 'TBD'],
@@ -185,19 +185,19 @@ function createPlaceholderCharacter(name) {
     ],
     secondaryTitle: 'Current Notes',
     secondary: [
-      'Character registered in the roster.',
-      'Narrative function pending writer-provided doctrine.',
-      'Relationships, history, and operational traits are TBD.'
+      'This character is present in the roster, but not yet fully authored.',
+      'Narrative function, structural role, and personal doctrine remain to be defined.',
+      'Relationships, history, and operational traits are still pending.'
     ],
     visual: [
       'Visual profile placeholder: define stature, hair, eyes, palette, outerwear, top, bottoms, legwear, and footwear.'
     ],
     notes: [
-      'Use this slot as a temporary scaffold for upcoming content.',
-      'Replace placeholder fields with finalized writer-guide data.',
-      'Maintain naming consistency with world canon.'
+      'This entry should be treated as a temporary scaffold for future canonical material.',
+      'Replace each placeholder field once the final writer-facing profile exists.',
+      'Maintain naming consistency with the broader world canon when expanding it.'
     ],
-    axis: `${name} currently has no finalized thematic axis. Placeholder active.`
+    axis: `${name} does not yet have a finalized thematic axis. This placeholder remains active until the character is fully defined.`
   };
 }
 

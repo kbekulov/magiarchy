@@ -10,31 +10,31 @@ Use this as a canon pack for story generation, character writing, scene planning
 - Atmosphere should feel ancient, mystical, and structurally precise rather than chaotic.
 
 ### Ontological Foundation
-- Reality is complete but not sealed.
-- Natural law remains absolute, yet contains exploitable seams.
-- Magic does not violate structure; it applies leverage inside it.
-- Mind, emotion, fear, and belief are structural variables, not symbolic decoration.
+- Magic is not an external force, but an extension of psyche and soul.
+- It is bound to the inward condition of the world, most vividly to the spirit of its cities.
+- Natural law remains absolute, but not seamless; reality contains pressure points and fractures that can be exploited.
+- Mind, emotion, fear, and belief are structural variables within reality, not symbolic decoration.
 
 ### Hidden History
-- Magic persists through restraint and containment, not conquest.
-- Religious, aristocratic, scholarly, and clandestine systems co-manage secrecy.
-- Modern society appears secular, but remains partially uninformed by design.
+- Magic endured not through conquest, but through restraint, containment, and silence.
+- Religious, aristocratic, scholarly, and clandestine systems all participate in preserving secrecy.
+- Modern society appears secular and ordinary, yet remains partially uninformed by design.
 
 ### Balance Of Powers
-- Stability depends on magical governance, Church influence, aristocratic legacy, state institutions, and intelligence networks.
-- No bloc is supreme; all are interdependent and mutually suspicious.
-- The system survives through negotiated silence, not trust.
+- Stability depends on an uneasy balance between magical governance, Church influence, aristocratic legacy, state institutions, and intelligence networks.
+- No bloc stands fully above the others; each depends on the rest while distrusting them.
+- The system survives through negotiated silence rather than trust.
 
 ### System Behavior
-- Every manipulation shifts equilibrium; every suppression raises pressure.
+- Every intervention shifts equilibrium, and every suppression raises pressure elsewhere.
 - When the soul of a city destabilizes, the nightmares of its inhabitants begin to take physical form.
-- Overload manifests as Holumns: emergent fractures where nightmares become material threat.
-- Magi are tasked with suppressing these manifestations before they breach public reality and expose the hidden architecture.
-- Institutions behave like adaptive organisms: they harden, fail, or mutate to preserve continuity.
-- Central conflict is knowledge versus stability, not good versus evil.
+- Overload manifests as Holumns, emergent fractures where nightmare becomes material threat.
+- Magi are tasked with suppressing these manifestations before they rupture public reality and expose the hidden architecture.
+- Institutions behave like living systems under stress: they harden, fail, adapt, or mutate to preserve continuity.
+- The central conflict is knowledge versus stability, not good versus evil.
 
 ### Core Question
-- Can civilization absorb the truth of its hidden architecture without collapsing under it?
+- Can civilization survive the truth of its hidden architecture, or does revelation itself become destabilizing?
 
 ## Events And Chapters
 
@@ -257,7 +257,7 @@ Use this as a canon pack for story generation, character writing, scene planning
 - Occupation: acting heir of MSF.
 - Core goal: hold the structure together without abandoning ethics.
 - Key dynamic: public legitimacy paired with hidden contingency support.
-- About: sole heir stepping into leadership early to prevent collapse after family instability; rejects rule-by-fear and treats trust as infrastructure.
+- About: the sole heir of MSF, forced into leadership early to prevent institutional collapse after internal instability; she rejects rule through fear and treats trust as infrastructure.
 
 #### Visual Description
 - Stature: average height; slim, lean build.
@@ -271,19 +271,19 @@ Use this as a canon pack for story generation, character writing, scene planning
 - Footwear: dark over-the-knee boots with medium heels; elegant, stable, and mobility-friendly in a crisis.
 
 #### Leadership Style
-- Direct communication; minimizes executive distance.
-- Builds loyalty through emotional presence and transparency.
-- Prefers cohesion over control and alignment over obedience.
-- Viewed as soft by traditionalists.
+- Communicates directly and reduces the distance that power usually creates.
+- Builds loyalty through emotional presence and visible sincerity.
+- Prefers cohesion to control, and alignment to obedience.
+- Is viewed as soft by traditionalists who mistake warmth for weakness.
 
 #### Writer Guide Notes
-- Matured early under succession pressure.
-- Keeps core philosophy while accepting selective opacity for deterrence.
-- Must prove proximity is strength and make at least one costly trust-based decision.
-- Voice target: composed, conviction-driven; vulnerability is conscious and chosen.
+- Matured early under succession pressure and understands that legitimacy must be earned in real time.
+- Keeps her moral philosophy even as she accepts selective opacity when deterrence becomes necessary.
+- Must prove that proximity can be strength, and must make at least one costly trust-based decision.
+- Voice target: composed and conviction-driven; vulnerability should feel conscious and chosen.
 
 #### Thematic Axis
-- Visible power trying to remain ethical while relying on shadow capability for survivability.
+- Visible power trying to remain ethical while relying on shadow capability to keep the system survivable.
 
 ### Kyrien
 - Subtitle: Independent Ally; Hidden Contingency.
@@ -293,7 +293,7 @@ Use this as a canon pack for story generation, character writing, scene planning
 - Occupation: off-chart tactical operator and infrastructure strategist.
 - Core goal: preserve structural survivability without becoming controllable.
 - Key dynamic: independent ally to Lynleit, essential in systemic crisis.
-- About: urban tactician shaped by early exposure to lethal knowledge after his father's suspicious removal from elite circles; specializes in systems/logistics/surveillance/vulnerability mapping over status-force.
+- About: an urban tactician shaped by early exposure to lethal knowledge after his father's suspicious removal from elite circles; he specializes in systems, logistics, surveillance, and vulnerability mapping rather than force for its own sake.
 
 #### Visual Description
 - Stature: average height; slim, lean build.
@@ -306,16 +306,16 @@ Use this as a canon pack for story generation, character writing, scene planning
 - Footwear: dark office shoes.
 
 #### Combat And Method
-- Fights through spacing, leverage, timing, and environment control.
-- Rewrites combat by changing terrain, light, and momentum.
-- Minimal spectacle; concise functional violence.
-- Outcomes over optics; rejects performative dominance.
+- Fights through spacing, leverage, timing, and environmental control.
+- Rewrites combat by altering terrain, light, and momentum.
+- Keeps violence concise, functional, and low in spectacle.
+- Values outcomes over optics and rejects performative dominance.
 
 #### Writer Guide Notes
 - Core philosophy: "If it bleeds, it breaks. If it moves, it has structure. If it has structure, it has a failure point."
 - Emotionally restrained, not empty.
-- Distrusts centralized authority; values competent structure.
-- Loyalty durable; harm minimized when possible; outcomes over approval.
+- Distrusts centralized authority, but respects competent structure.
+- Loyalty is durable; harm is minimized when possible; outcomes matter more than approval.
 - Must fail emotionally at least once.
 - Voice target: underplay him; precision over legend, competence over theatrics.
 
@@ -329,9 +329,9 @@ The following are registered but currently placeholder profiles: Drake, Sherie, 
 
 Use this placeholder doctrine for each until replaced:
 - Subtitle: Profile Placeholder.
-- About: listed placeholder pending detailed narrative profile.
+- About: listed placeholder pending a detailed narrative profile.
 - Profile fields: Status=Placeholder, Age=TBD, Role=TBD, Affiliations=TBD, Core Goal=TBD.
-- Notes: registered in roster; function pending doctrine; relationships/history/operational traits TBD.
+- Notes: registered in the roster; function, history, relationships, and operational traits remain to be defined.
 - Thematic axis: not finalized.
 - Visual description placeholder: define stature, hair, eyes, palette, outerwear, top, bottoms, legwear, and footwear.
 
