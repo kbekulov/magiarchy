@@ -27,7 +27,9 @@ Use this as a canon pack for story generation, character writing, scene planning
 
 ### System Behavior
 - Every manipulation shifts equilibrium; every suppression raises pressure.
+- When the soul of a city destabilizes, the nightmares of its inhabitants begin to take physical form.
 - Overload manifests as Holumns: emergent fractures where nightmares become material threat.
+- Magi are tasked with suppressing these manifestations before they breach public reality and expose the hidden architecture.
 - Institutions behave like adaptive organisms: they harden, fail, or mutate to preserve continuity.
 - Central conflict is knowledge versus stability, not good versus evil.
 
@@ -126,6 +128,11 @@ Use this as a canon pack for story generation, character writing, scene planning
 - Overuse destabilizes; misjudgment magnifies systemic resistance.
 - Magic is leverage, not omnipotence.
 
+### Nightmare Manifestation Logic
+- Nightmares are not drawn from a fixed bestiary; they differ radically from person to person.
+- Each manifestation depends on psyche, fear structure, and internal pressure.
+- This gives the setting effectively inexhaustible monster and threat design potential.
+
 ### Philosophical Consequence
 - Great Magi maximize precision, not output volume.
 - Power equals leverage literacy plus disciplined restraint.
@@ -148,6 +155,7 @@ Use this as a canon pack for story generation, character writing, scene planning
 ### Secrecy Doctrine
 - Knowledge distribution principle: as small as possible, as large as necessary.
 - Selective non-Magi awareness exists among clergy, advisors, and political actors.
+- Ordinary society continues life without knowing magic or Magi exist, and suppression doctrine is built to preserve that ignorance.
 - Full exposure risks collapse, retaliation, internal conflict, and civil destabilization.
 
 ### Thematic Integration
