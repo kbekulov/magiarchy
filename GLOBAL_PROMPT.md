@@ -10,10 +10,14 @@ Use this as a canon pack for story generation, character writing, scene planning
 - Atmosphere should feel ancient, mystical, and structurally precise rather than chaotic.
 
 ### Ontological Foundation
-- Magic is not an external force, but an extension of psyche and soul.
-- It is bound to the inward condition of the world, most vividly to the spirit of its cities.
+- Magic is not an external force imposed upon the world, but an expression of psyche and soul woven into reality itself.
+- It adheres most intensely where the inward life of the world gathers pressure, above all in the spirit of its cities.
+- When that inner equilibrium begins to fail, human nightmare does not remain confined to thought, but presses outward until it assumes material form.
+- Such manifestations are never uniform; each bears the imprint of the individual from whom it emerges, shaped by fear, memory, and psychic fracture.
 - Natural law remains absolute, but not seamless; reality contains pressure points and fractures that can be exploited.
 - Mind, emotion, fear, and belief are structural variables within reality, not symbolic decoration.
+- The Magi exist to detect, contain, and suppress these breaches before the hidden structure of reality becomes visible.
+- They do so under the wary tolerance of the Church, while ordinary society continues in ignorance of the terrors pressing against the visible world.
 
 ### Hidden History
 - Magic endured not through conquest, but through restraint, containment, and silence.
