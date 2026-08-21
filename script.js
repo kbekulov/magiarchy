@@ -83,6 +83,62 @@ const galleryChibiFilter = document.querySelector('#gallery-chibi-filter');
 const galleryItems = document.querySelectorAll('.gallery-card');
 const galleryResultCount = document.querySelector('#gallery-result-count');
 const galleryEmptyState = document.querySelector('#gallery-empty-state');
+const galleryHeading = document.querySelector('#gallery-heading');
+const galleryToolbar = document.querySelector('#gallery-toolbar');
+const galleryContent = document.querySelector('#gallery-content');
+const galleryReaderView = document.querySelector('#gallery-reader-view');
+const galleryDetailCrumb = document.querySelector('#gallery-detail-crumb');
+const galleryDetailImage = document.querySelector('#gallery-detail-image');
+const galleryDetailType = document.querySelector('#gallery-detail-type');
+const galleryDetailTitle = document.querySelector('#gallery-detail-title');
+const galleryDetailMeta = document.querySelector('#gallery-detail-meta');
+const galleryDetailSource = document.querySelector('#gallery-detail-source');
+
+function initializeGalleryCards() {
+  if (!galleryItems.length) return;
+
+  galleryItems.forEach((card) => {
+    const image = card.querySelector('img');
+    const link = card.querySelector('a');
+    if (!image || !link) return;
+
+    const source = image.getAttribute('src');
+    const imageId = source.split('/').pop().replace(/\.[^.]+$/, '');
+    card.dataset.image = imageId;
+    link.href = `gallery.html?image=${encodeURIComponent(imageId)}`;
+    link.setAttribute('aria-label', `View ${image.alt} details`);
+    link.removeAttribute('target');
+    link.removeAttribute('rel');
+  });
+
+  const requestedImage = new URLSearchParams(window.location.search).get('image');
+  const selectedCard = Array.from(galleryItems).find((card) => card.dataset.image === requestedImage);
+  if (!selectedCard || !galleryReaderView) return;
+
+  const image = selectedCard.querySelector('img');
+  const title = selectedCard.querySelector('figcaption strong')?.textContent ?? image.alt;
+  const type = selectedCard.querySelector('figcaption div span')?.textContent ?? 'Artwork';
+  const code = selectedCard.querySelector('.media-code')?.textContent ?? 'Archive record';
+  const location = selectedCard.dataset.location === 'unspecified' ? 'Unspecified location' : selectedCard.dataset.location;
+
+  galleryHeading.hidden = true;
+  galleryToolbar.hidden = true;
+  galleryContent.hidden = true;
+  galleryReaderView.hidden = false;
+
+  galleryDetailCrumb.textContent = title;
+  galleryDetailImage.src = image.getAttribute('src');
+  galleryDetailImage.alt = image.alt;
+  galleryDetailImage.width = Number(image.getAttribute('width'));
+  galleryDetailImage.height = Number(image.getAttribute('height'));
+  galleryDetailType.textContent = type;
+  galleryDetailTitle.textContent = title;
+  galleryDetailMeta.textContent = `${code} · ${location}`;
+  galleryDetailSource.href = image.getAttribute('src');
+  document.title = `${title} - Gallery - Magiarchy`;
+}
+
+initializeGalleryCards();
 
 function updateGalleryResults() {
   if (!galleryItems.length) return;

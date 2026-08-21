@@ -1,0 +1,47 @@
+[
+  {
+    "slug": "the-quiet-breach",
+    "number": "Episode 01",
+    "title": "The Quiet Breach",
+    "status": "Placeholder draft",
+    "file": "the-quiet-breach.md",
+    "updated": "2026-08-22",
+    "description": "A routine containment call forces Lynleit to choose between institutional protocol and Kyrien's warning.",
+    "characters": ["Lynleit", "Kyrien", "Fionn"],
+    "events": [
+      "Lynleit investigates a containment call with deliberately altered readings.",
+      "Kyrien discovers a hidden door that contradicts the official report.",
+      "Lynleit breaks protocol after Fionn orders the cause left untouched."
+    ]
+  },
+  {
+    "slug": "ash-under-glass",
+    "number": "Episode 02",
+    "title": "Ash Under Glass",
+    "status": "Placeholder draft",
+    "file": "ash-under-glass.md",
+    "updated": "2026-08-22",
+    "description": "Heyk enters a sealed district while Drake and Sherie manage an extraction that was never meant to be clean.",
+    "characters": ["Heyk", "Drake", "Sherie"],
+    "events": [
+      "Heyk enters a quarantined district where ash moves beneath the streets.",
+      "The extraction target reveals a memory that does not belong to him.",
+      "Drake and Sherie create an unauthorized route for Heyk's return."
+    ]
+  },
+  {
+    "slug": "the-name-left-behind",
+    "number": "Episode 03",
+    "title": "The Name Left Behind",
+    "status": "Placeholder draft",
+    "file": "the-name-left-behind.md",
+    "updated": "2026-08-22",
+    "description": "Natalia follows a missing name through the city archive and finds Myka protecting the last surviving clue.",
+    "characters": ["Natalia", "Myka", "Fionn"],
+    "events": [
+      "Natalia finds a missing page hidden from every archive index.",
+      "Myka reveals an unaltered copy carrying Fionn's name beside a future date.",
+      "The archive erases the evidence while Natalia attempts to preserve it."
+    ]
+  }
+]

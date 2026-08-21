@@ -28,6 +28,7 @@
         <div class="nav-links" id="nav-links">
           <a href="index.html">Home</a>
           <a href="characters.html">Characters</a>
+          <a href="episodes.html">Episodes</a>
           <a href="gallery.html" aria-current="page">Gallery</a>
           <a href="docs.html">Docs</a>
         </div>
@@ -42,7 +43,7 @@
             <span class="feed-status"><span class="status-dot"></span> Media archive online</span>
           </header>
 
-          <section class="gallery-heading reveal" aria-labelledby="gallery-title">
+          <section class="gallery-heading reveal" id="gallery-heading" aria-labelledby="gallery-title">
             <div>
               <p class="eyebrow">Visual archive</p>
               <h1 id="gallery-title">Gallery</h1>
@@ -50,7 +51,7 @@
             </div>
           </section>
 
-          <section class="gallery-toolbar reveal" aria-label="Gallery filters">
+          <section class="gallery-toolbar reveal" id="gallery-toolbar" aria-label="Gallery filters">
             <label class="gallery-select">
               <span>Character</span>
               <select id="gallery-character-filter">
@@ -91,7 +92,7 @@
             </label>
           </section>
 
-          <section class="gallery-content" aria-live="polite">
+          <section class="gallery-content" id="gallery-content" aria-live="polite">
             <div class="gallery-meta"><p><span id="gallery-result-count">27</span> artworks visible</p><span><span class="status-dot"></span> Original media</span></div>
 
             <div class="gallery-grid" id="gallery-grid">
@@ -210,6 +211,28 @@
               <h2>No matching artwork</h2>
               <p>Try another character, location, or turn off Chibi only.</p>
             </div>
+          </section>
+
+          <section class="gallery-reader-view" id="gallery-reader-view" hidden>
+            <nav class="document-breadcrumbs gallery-breadcrumbs" aria-label="Breadcrumb">
+              <a href="gallery.html">Gallery</a>
+              <span aria-hidden="true">/</span>
+              <span id="gallery-detail-crumb" aria-current="page">Artwork</span>
+            </nav>
+
+            <figure class="gallery-detail-card">
+              <div class="gallery-detail-image-wrap">
+                <img id="gallery-detail-image" src="favicon.svg" alt="" width="1024" height="1024">
+              </div>
+              <figcaption>
+                <div>
+                  <span class="doc-topic" id="gallery-detail-type">Artwork</span>
+                  <h1 id="gallery-detail-title">Artwork</h1>
+                  <p id="gallery-detail-meta"></p>
+                </div>
+                <a class="source-link" id="gallery-detail-source" href="gallery.html" target="_blank" rel="noopener">Open original <span aria-hidden="true">↗</span></a>
+              </figcaption>
+            </figure>
           </section>
         </div>
 

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Read story episodes from the Magiarchy universe.">
+    <meta name="theme-color" content="#1e1f22">
+    <title>Episodes - Magiarchy</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <script src="episodes.js" defer></script>
+  </head>
+  <body class="episodes-page">
+    <a class="skip-link" href="#main-content">Skip to content</a>
+
+    <header class="site-header">
+      <nav class="navbar shell" aria-label="Primary navigation">
+        <a class="brand" href="index.html" aria-label="Magiarchy home">
+          <span class="brand-mark" aria-hidden="true"><span></span></span>
+          <span>Magiarchy</span>
+        </a>
+
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links">
+          <span class="sr-only">Toggle navigation</span>
+          <span></span><span></span>
+        </button>
+
+        <div class="nav-links" id="nav-links">
+          <a href="index.html">Home</a>
+          <a href="characters.html">Characters</a>
+          <a href="episodes.html" aria-current="page">Episodes</a>
+          <a href="gallery.html">Gallery</a>
+          <a href="docs.html">Docs</a>
+        </div>
+      </nav>
+    </header>
+
+    <main class="app-main" id="main-content">
+      <div class="docs-workspace shell">
+        <div class="docs-main-pane">
+          <header class="feed-header">
+            <div><span aria-hidden="true">#</span><strong>episodes</strong><i></i><p>Serialized story archive</p></div>
+            <span class="feed-status"><span class="status-dot"></span> Draft archive online</span>
+          </header>
+
+          <section class="docs-heading reveal" id="episodes-heading" aria-labelledby="episodes-title">
+            <div>
+              <p class="eyebrow">Story archive</p>
+              <h1 id="episodes-title">Episodes</h1>
+              <p>Story installments from the Magiarchy universe. Current entries are temporary drafts ready to be replaced.</p>
+            </div>
+          </section>
+
+          <section class="document-library" id="episode-library" aria-label="Episode library" aria-live="polite">
+            <div class="document-card-grid" id="episode-card-grid">
+              <div class="document-card document-card-loading">Loading episodes…</div>
+            </div>
+          </section>
+
+          <section class="document-reader-view" id="episode-reader-view" hidden>
+            <nav class="document-breadcrumbs" aria-label="Breadcrumb">
+              <a href="episodes.html">Episodes</a>
+              <span aria-hidden="true">/</span>
+              <span id="episode-crumb" aria-current="page">Episode</span>
+            </nav>
+
+            <header class="episode-reader-header">
+              <div>
+                <span class="doc-topic" id="episode-status">Placeholder draft</span>
+                <p id="episode-summary"></p>
+                <div class="episode-character-list" id="episode-reader-characters" role="group" aria-label="Characters involved"></div>
+              </div>
+              <a class="source-link" id="episode-source-link" href="episodes/" target="_blank" rel="noopener">View Markdown <span aria-hidden="true">↗</span></a>
+            </header>
+
+            <section class="episode-preface" aria-labelledby="episode-preface-title">
+              <div>
+                <p class="eyebrow">Before reading</p>
+                <h2 id="episode-preface-title">Episode preface</h2>
+              </div>
+              <table>
+                <thead>
+                  <tr><th scope="col">#</th><th scope="col">Main event</th></tr>
+                </thead>
+                <tbody id="episode-event-list"></tbody>
+              </table>
+            </section>
+
+            <div class="document-shell">
+              <div class="document-meta" id="episode-meta" aria-live="polite">Loading episode…</div>
+              <article class="markdown-body episode-body" id="episode-reader" aria-live="polite"></article>
+              <div class="document-error" id="episode-error" hidden>
+                <div class="empty-pixel" aria-hidden="true">!</div>
+                <h2>Episode unavailable</h2>
+                <p>The episode file could not be loaded.</p>
+              </div>
+            </div>
+          </section>
+        </div>
+
+        <aside class="notes-sidebar" aria-label="Episodes page notes">
+          <header class="notes-header"><div><span aria-hidden="true">✎</span><strong>Page notes</strong></div><span>Episodes</span></header>
+          <div class="notes-list">
+            <article class="page-note">
+              <div><span>Open</span><span>01</span></div>
+              <h2>Replace placeholder episodes</h2>
+              <p>Swap the temporary drafts for final story installments when they are provided.</p>
+            </article>
+          </div>
+          <p class="notes-footnote">Notes are updated with the site code and published through GitHub Pages.</p>
+        </aside>
+      </div>
+    </main>
+  </body>
+</html>
