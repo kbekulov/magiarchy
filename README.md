@@ -6,6 +6,7 @@ The official web home for the Magiarchy story universe, deployed through GitHub 
 
 - **Home** — an atmospheric introduction to the hidden architecture of the world.
 - **Characters** — a searchable masonry roster of character dossiers with replaceable chibi-art slots.
+- **Gallery** — a masonry artwork archive filterable by character, location, and chibi format.
 
 ## Development
 

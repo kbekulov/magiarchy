@@ -76,3 +76,36 @@ filterButtons.forEach((button) => {
     updateCharacterResults();
   });
 });
+
+const galleryCharacterFilter = document.querySelector('#gallery-character-filter');
+const galleryLocationFilter = document.querySelector('#gallery-location-filter');
+const galleryChibiFilter = document.querySelector('#gallery-chibi-filter');
+const galleryItems = document.querySelectorAll('.gallery-card');
+const galleryResultCount = document.querySelector('#gallery-result-count');
+const galleryEmptyState = document.querySelector('#gallery-empty-state');
+
+function updateGalleryResults() {
+  if (!galleryItems.length) return;
+
+  const selectedCharacter = galleryCharacterFilter?.value ?? 'all';
+  const selectedLocation = galleryLocationFilter?.value ?? 'all';
+  const chibiOnly = galleryChibiFilter?.checked ?? false;
+  let visibleCount = 0;
+
+  galleryItems.forEach((item) => {
+    const matchesCharacter = selectedCharacter === 'all' || item.dataset.character === selectedCharacter;
+    const matchesLocation = selectedLocation === 'all' || item.dataset.location === selectedLocation;
+    const matchesChibi = !chibiOnly || item.dataset.chibi === 'true';
+    const isVisible = matchesCharacter && matchesLocation && matchesChibi;
+
+    item.hidden = !isVisible;
+    if (isVisible) visibleCount += 1;
+  });
+
+  if (galleryResultCount) galleryResultCount.textContent = String(visibleCount);
+  if (galleryEmptyState) galleryEmptyState.hidden = visibleCount !== 0;
+}
+
+galleryCharacterFilter?.addEventListener('change', updateGalleryResults);
+galleryLocationFilter?.addEventListener('change', updateGalleryResults);
+galleryChibiFilter?.addEventListener('change', updateGalleryResults);
