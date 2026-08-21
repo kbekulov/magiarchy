@@ -34,35 +34,24 @@
 
     <main class="app-main" id="main-content">
       <div class="characters-workspace shell">
-        <aside class="archive-sidebar" aria-label="Character archive controls">
-          <div class="workspace-title">
-            <div><span class="workspace-icon" aria-hidden="true">A</span><strong>Personnel archive</strong></div>
-          </div>
-          <div class="archive-search-wrap">
-            <label class="search-field">
-              <svg aria-hidden="true" viewBox="0 0 24 24"><path d="m21 21-4.35-4.35m2.35-5.65a8 8 0 1 1-16 0 8 8 0 0 1 16 0Z"/></svg>
-              <input id="character-search" type="search" placeholder="Search records" autocomplete="off">
-            </label>
-          </div>
-          <div class="archive-filter-group filter-group" role="group" aria-label="Filter characters">
-            <p>Archive views</p>
-            <button class="filter-chip is-active" type="button" data-filter="all" aria-pressed="true"><span aria-hidden="true">#</span> All characters</button>
-            <button class="filter-chip" type="button" data-filter="profiled" aria-pressed="false"><span aria-hidden="true">◆</span> Profiled</button>
-            <button class="filter-chip" type="button" data-filter="active" aria-pressed="false"><span aria-hidden="true">●</span> Active</button>
-            <button class="filter-chip" type="button" data-filter="restricted" aria-pressed="false"><span aria-hidden="true">⊘</span> Restricted</button>
-          </div>
-          <div class="operator-panel">
-            <span class="operator-avatar" aria-hidden="true">SYS</span>
-            <div><strong>Archive system</strong><span><i></i> Online</span></div>
-            <span aria-hidden="true">•••</span>
-          </div>
-        </aside>
-
         <div class="character-main-pane">
           <header class="feed-header">
             <div><span aria-hidden="true">#</span><strong>characters</strong><i></i><p>Personnel records and field status</p></div>
             <span class="feed-status"><span class="status-dot"></span> Archive online</span>
           </header>
+
+          <div class="archive-toolbar reveal">
+            <label class="search-field">
+              <svg aria-hidden="true" viewBox="0 0 24 24"><path d="m21 21-4.35-4.35m2.35-5.65a8 8 0 1 1-16 0 8 8 0 0 1 16 0Z"/></svg>
+              <input id="character-search" type="search" placeholder="Search records" autocomplete="off">
+            </label>
+            <div class="filter-group" role="group" aria-label="Filter characters">
+              <button class="filter-chip is-active" type="button" data-filter="all" aria-pressed="true">All characters</button>
+              <button class="filter-chip" type="button" data-filter="profiled" aria-pressed="false">Profiled</button>
+              <button class="filter-chip" type="button" data-filter="active" aria-pressed="false">Active</button>
+              <button class="filter-chip" type="button" data-filter="restricted" aria-pressed="false">Restricted</button>
+            </div>
+          </div>
 
       <section class="roster-header">
         <div class="roster-title reveal">

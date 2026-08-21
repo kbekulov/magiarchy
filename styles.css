@@ -968,11 +968,11 @@ body::before {
 }
 
 .home-workspace {
-  grid-template-columns: 236px minmax(0, 1fr) 242px;
+  grid-template-columns: minmax(0, 1fr) 242px;
 }
 
 .characters-workspace {
-  grid-template-columns: 238px minmax(0, 1fr);
+  grid-template-columns: minmax(0, 1fr);
 }
 
 .channel-sidebar,
@@ -1502,6 +1502,55 @@ a.status-member:hover {
   top: 0;
 }
 
+.archive-toolbar {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 18px 30px 0;
+}
+
+.archive-toolbar .search-field {
+  width: min(320px, 36%);
+  height: 36px;
+  flex: 0 0 auto;
+  border-color: transparent;
+  background: #1e1f22;
+}
+
+.archive-toolbar .search-field svg {
+  width: 15px;
+}
+
+.archive-toolbar .search-field input {
+  font-size: .76rem;
+}
+
+.archive-toolbar .filter-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.archive-toolbar .filter-chip {
+  height: 32px;
+  padding: 0 11px;
+  border: 0;
+  border-radius: 4px;
+  background: #2b2d31;
+  color: var(--subtle);
+  font-size: .72rem;
+}
+
+.archive-toolbar .filter-chip:hover {
+  background: #35373c;
+  color: #dbdee1;
+}
+
+.archive-toolbar .filter-chip.is-active {
+  background: #404249;
+  color: #fff;
+}
+
 .roster-header {
   display: block;
   padding: 28px 30px 18px;
@@ -1573,7 +1622,7 @@ a.status-member:hover {
 
 @media (max-width: 1050px) {
   .home-workspace {
-    grid-template-columns: 220px minmax(0, 1fr);
+    grid-template-columns: minmax(0, 1fr);
   }
 
   .context-sidebar {
@@ -1581,7 +1630,7 @@ a.status-member:hover {
   }
 
   .characters-workspace {
-    grid-template-columns: 210px minmax(0, 1fr);
+    grid-template-columns: minmax(0, 1fr);
   }
 
   .character-grid {
@@ -1683,6 +1732,31 @@ a.status-member:hover {
 
   .character-main-pane .feed-header {
     display: none;
+  }
+
+  .archive-toolbar {
+    position: sticky;
+    top: 52px;
+    z-index: 12;
+    display: block;
+    padding: 8px 10px;
+    border-bottom: 1px solid rgba(0, 0, 0, .32);
+    background: #2b2d31;
+  }
+
+  .archive-toolbar .search-field {
+    width: 100%;
+    margin-bottom: 7px;
+  }
+
+  .archive-toolbar .filter-group {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scrollbar-width: none;
+  }
+
+  .archive-toolbar .filter-chip {
+    flex: 0 0 auto;
   }
 
   .roster-header {
