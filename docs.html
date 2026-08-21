@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Read documents from the Magiarchy world archive.">
     <meta name="theme-color" content="#1e1f22">
-    <title>Docs — Magiarchy</title>
+    <title>Docs - Magiarchy</title>
     <link rel="icon" href="favicon.svg" type="image/svg+xml">
     <link rel="stylesheet" href="styles.css">
     <script src="script.js" defer></script>
@@ -43,7 +43,7 @@
             <span class="feed-status"><span class="status-dot"></span> Library online</span>
           </header>
 
-          <section class="docs-heading reveal" aria-labelledby="docs-title">
+          <section class="docs-heading reveal" id="docs-heading" aria-labelledby="docs-title">
             <div>
               <p class="eyebrow">Document library</p>
               <h1 id="docs-title">Docs</h1>
@@ -51,27 +51,32 @@
             </div>
           </section>
 
-          <section class="docs-toolbar reveal" aria-label="Document selection">
-            <label class="gallery-select docs-select">
-              <span>Document</span>
-              <select id="document-select" disabled>
-                <option>Loading library…</option>
-              </select>
-            </label>
-            <div class="document-summary" id="document-summary">
-              <span class="doc-topic">Loading</span>
-              <p>Opening the document library…</p>
+          <section class="document-library" id="document-library" aria-label="Document library" aria-live="polite">
+            <div class="document-card-grid" id="document-card-grid">
+              <div class="document-card document-card-loading">Loading archive…</div>
             </div>
-            <a class="source-link" id="document-source-link" href="docs/" target="_blank" rel="noopener">View Markdown <span aria-hidden="true">↗</span></a>
           </section>
 
-          <section class="document-shell">
-            <div class="document-meta" id="document-meta" aria-live="polite">Loading document…</div>
-            <article class="markdown-body" id="document-reader" aria-live="polite"></article>
-            <div class="document-error" id="document-error" hidden>
-              <div class="empty-pixel" aria-hidden="true">!</div>
-              <h2>Document unavailable</h2>
-              <p>The Markdown file could not be loaded.</p>
+          <section class="document-reader-view" id="document-reader-view" hidden>
+            <nav class="document-breadcrumbs" aria-label="Breadcrumb">
+              <a href="docs.html">Docs</a>
+              <span aria-hidden="true">/</span>
+              <span id="document-crumb" aria-current="page">Document</span>
+            </nav>
+
+            <header class="document-reader-header">
+              <div class="document-summary" id="document-summary"></div>
+              <a class="source-link" id="document-source-link" href="docs/" target="_blank" rel="noopener">View Markdown <span aria-hidden="true">↗</span></a>
+            </header>
+
+            <div class="document-shell">
+              <div class="document-meta" id="document-meta" aria-live="polite">Loading document…</div>
+              <article class="markdown-body" id="document-reader" aria-live="polite"></article>
+              <div class="document-error" id="document-error" hidden>
+                <div class="empty-pixel" aria-hidden="true">!</div>
+                <h2>Document unavailable</h2>
+                <p>The Markdown file could not be loaded.</p>
+              </div>
             </div>
           </section>
         </div>

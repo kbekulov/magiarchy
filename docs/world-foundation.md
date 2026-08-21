@@ -2,7 +2,7 @@
 
 ## Magic Comes From Inside Reality
 
-Magic comes from inside reality, not outside it. Psyche and soul are part of how the world works. The pressure becomes strongest wherever many lives overlap—especially in cities.
+Magic comes from inside reality, not outside it. Psyche and soul are part of how the world works. The pressure becomes strongest wherever many lives overlap, especially in cities.
 
 Magi can see the weak points created by that pressure. They do not invent miracles from nothing. They find something reality was already capable of doing, then push it.
 
@@ -22,11 +22,11 @@ Magic survived because it stayed quiet. The Magi did not conquer the visible wor
 
 Eventually they split. Some accepted an uneasy partnership with the Church. Others refused and followed their own goals. The Magiarchy and its regional Magiarchates grew from that divide, giving Church-aligned Magi a structure that could be governed, watched, and understood politically.
 
-Those outside the sanctioned order became renegades—and enemies of both the Church and the Magiarchates.
+Those outside the sanctioned order became renegades and enemies of both the Church and the Magiarchates.
 
 ## No One Controls the Whole System
 
-No single institution controls the hidden world. The Church, the Magiarchy, state authorities, aristocratic families, and intelligence networks all need one another—and none of them truly trust one another.
+No single institution controls the hidden world. The Church, the Magiarchy, state authorities, aristocratic families, and intelligence networks all need one another, but none of them truly trust one another.
 
 The partnership between the Church and the Magiarchy is useful when it works. When trust fails, it becomes violent very quickly.
 

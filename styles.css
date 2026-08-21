@@ -2014,6 +2014,93 @@ a.status-member:hover {
   font-size: .86rem;
 }
 
+.document-library {
+  padding: 0 30px 50px;
+}
+
+.document-card-grid {
+  columns: 2 300px;
+  column-gap: 12px;
+}
+
+.document-card {
+  margin: 0 0 12px;
+  overflow: hidden;
+  break-inside: avoid;
+  border: 1px solid rgba(0, 0, 0, .24);
+  border-radius: 7px;
+  background: #2b2d31;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, .12);
+  transition: transform .2s ease, border-color .2s ease, background .2s ease, box-shadow .2s ease;
+}
+
+.document-card:hover {
+  border-color: rgba(88, 101, 242, .32);
+  background: #2e3035;
+  box-shadow: 0 7px 20px rgba(0, 0, 0, .18);
+  transform: translateY(-2px);
+}
+
+.document-card-link {
+  display: block;
+  padding: 22px;
+  color: inherit;
+}
+
+.document-card-top,
+.document-card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.document-card-code {
+  color: #737680;
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: .55rem;
+  letter-spacing: .06em;
+}
+
+.document-card h2 {
+  margin: 26px 0 10px;
+  color: var(--text);
+  font-size: 1.24rem;
+  line-height: 1.2;
+  letter-spacing: -.02em;
+}
+
+.document-card p {
+  margin: 0;
+  color: var(--muted);
+  font-size: .76rem;
+  line-height: 1.6;
+}
+
+.document-card-footer {
+  margin-top: 24px;
+  padding-top: 13px;
+  border-top: 1px solid #3b3d43;
+  color: var(--subtle);
+  font-size: .58rem;
+}
+
+.document-card-arrow {
+  color: #aeb4ff;
+  font-size: 1rem;
+  transition: transform .2s ease;
+}
+
+.document-card:hover .document-card-arrow {
+  transform: translateX(3px);
+}
+
+.document-card-loading {
+  padding: 32px 22px;
+  color: var(--subtle);
+  font-size: .72rem;
+}
+
 .docs-toolbar {
   display: grid;
   grid-template-columns: minmax(230px, 320px) minmax(220px, 1fr) auto;
@@ -2047,12 +2134,9 @@ a.status-member:hover {
 }
 
 .document-summary p {
-  overflow: hidden;
   margin: 5px 0 0;
   color: var(--subtle);
   font-size: .67rem;
-  text-overflow: ellipsis;
-  white-space: nowrap;
 }
 
 .source-link {
@@ -2075,9 +2159,44 @@ a.status-member:hover {
   color: var(--text);
 }
 
+.document-reader-view {
+  padding: 0 30px 50px;
+}
+
+.document-breadcrumbs {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  padding: 22px 0 16px;
+  color: var(--subtle);
+  font-size: .68rem;
+}
+
+.document-breadcrumbs a {
+  color: #aeb4ff;
+}
+
+.document-breadcrumbs a:hover {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.document-reader-header {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 24px;
+  width: min(900px, 100%);
+  margin: 0 auto 14px;
+}
+
+.document-reader-header .document-summary {
+  max-width: 680px;
+}
+
 .document-shell {
-  width: min(900px, calc(100% - 60px));
-  margin: 0 auto 50px;
+  width: min(900px, 100%);
+  margin: 0 auto;
   overflow: hidden;
   border: 1px solid rgba(0, 0, 0, .24);
   border-radius: 8px;
@@ -2354,10 +2473,6 @@ a.status-member:hover {
     grid-template-columns: minmax(220px, 300px) minmax(0, 1fr);
   }
 
-  .source-link {
-    display: none;
-  }
-
   .character-grid {
     columns: 1;
   }
@@ -2415,6 +2530,14 @@ a.status-member:hover {
     padding: 28px 14px 15px;
   }
 
+  .document-library {
+    padding: 0 14px 40px;
+  }
+
+  .document-card-grid {
+    columns: 2 240px;
+  }
+
   .docs-toolbar {
     display: block;
     margin: 0 14px 14px;
@@ -2424,13 +2547,16 @@ a.status-member:hover {
     margin-top: 10px;
   }
 
-  .document-summary p {
-    white-space: normal;
+  .document-reader-view {
+    padding: 0 14px 30px;
   }
 
-  .document-shell {
-    width: calc(100% - 28px);
-    margin-bottom: 24px;
+  .document-reader-header {
+    align-items: flex-start;
+  }
+
+  .document-reader-header .source-link {
+    flex: 0 0 auto;
   }
 
   .markdown-body {
@@ -2628,5 +2754,19 @@ a.status-member:hover {
 
   .character-info {
     padding: 17px 15px;
+  }
+}
+
+@media (max-width: 560px) {
+  .document-card-grid {
+    columns: 1;
+  }
+
+  .document-reader-header {
+    display: block;
+  }
+
+  .document-reader-header .source-link {
+    margin-top: 12px;
   }
 }

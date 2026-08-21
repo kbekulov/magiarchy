@@ -4,10 +4,10 @@ The official web home for the Magiarchy story universe, deployed through GitHub 
 
 ## Pages
 
-- **Home** — an atmospheric introduction to the hidden architecture of the world.
-- **Characters** — a searchable masonry roster of character dossiers with replaceable chibi-art slots.
-- **Gallery** — a masonry artwork archive filterable by character, location, and chibi format.
-- **Docs** — a readable library backed by Markdown files stored in the repository.
+- **Home** - an atmospheric introduction to the hidden architecture of the world, followed by a dated feed of site updates.
+- **Characters** - a searchable masonry roster of character dossiers with replaceable chibi-art slots.
+- **Gallery** - a masonry artwork archive filterable by character, location, and chibi format.
+- **Docs** - a masonry library of Markdown-backed summaries with dedicated full-document reader views.
 
 ## Development
 

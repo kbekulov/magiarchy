@@ -1,9 +1,13 @@
-const documentSelect = document.querySelector('#document-select');
+const documentLibrary = document.querySelector('#document-library');
+const documentCardGrid = document.querySelector('#document-card-grid');
+const documentReaderView = document.querySelector('#document-reader-view');
+const docsHeading = document.querySelector('#docs-heading');
 const documentReader = document.querySelector('#document-reader');
 const documentMeta = document.querySelector('#document-meta');
 const documentSummary = document.querySelector('#document-summary');
 const documentSourceLink = document.querySelector('#document-source-link');
 const documentError = document.querySelector('#document-error');
+const documentCrumb = document.querySelector('#document-crumb');
 
 function appendInlineMarkdown(text, parent) {
   const tokenPattern = /(\*\*[^*]+\*\*|\*[^*]+\*|`[^`]+`|\[[^\]]+\]\([^)]+\))/g;
@@ -112,12 +116,68 @@ function renderMarkdown(markdown) {
   return fragment;
 }
 
-async function loadDocument(entry, updateAddress = true) {
+function createDocumentCard(entry, index) {
+  const card = document.createElement('article');
+  card.className = 'document-card reveal is-visible';
+
+  const link = document.createElement('a');
+  link.className = 'document-card-link';
+  link.href = `docs.html?doc=${encodeURIComponent(entry.slug)}`;
+  link.setAttribute('aria-label', `Read ${entry.title}`);
+
+  const top = document.createElement('div');
+  top.className = 'document-card-top';
+
+  const topic = document.createElement('span');
+  topic.className = 'doc-topic';
+  topic.textContent = entry.topic;
+
+  const code = document.createElement('span');
+  code.className = 'document-card-code';
+  code.textContent = `DOC · ${String(index + 1).padStart(3, '0')}`;
+  top.append(topic, code);
+
+  const title = document.createElement('h2');
+  title.textContent = entry.title;
+
+  const description = document.createElement('p');
+  description.textContent = entry.description;
+
+  const footer = document.createElement('div');
+  footer.className = 'document-card-footer';
+
+  const meta = document.createElement('span');
+  meta.textContent = `${entry.speakers.join(' / ')} · ${entry.updated}`;
+
+  const arrow = document.createElement('span');
+  arrow.className = 'document-card-arrow';
+  arrow.setAttribute('aria-hidden', 'true');
+  arrow.textContent = '→';
+  footer.append(meta, arrow);
+
+  link.append(top, title, description, footer);
+  card.append(link);
+  return card;
+}
+
+function showDocumentLibrary(entries) {
+  documentReaderView.hidden = true;
+  documentLibrary.hidden = false;
+  docsHeading.hidden = false;
+  documentCardGrid.replaceChildren(...entries.map(createDocumentCard));
+}
+
+async function loadDocument(entry) {
   if (!documentReader || !documentMeta || !documentError) return;
 
+  documentLibrary.hidden = true;
+  docsHeading.hidden = true;
+  documentReaderView.hidden = false;
   documentReader.replaceChildren();
   documentError.hidden = true;
   documentMeta.textContent = 'Loading document…';
+
+  if (documentCrumb) documentCrumb.textContent = entry.title;
 
   try {
     const response = await fetch(`docs/${entry.file}`);
@@ -138,12 +198,6 @@ async function loadDocument(entry, updateAddress = true) {
     }
 
     if (documentSourceLink) documentSourceLink.href = `docs/${entry.file}`;
-
-    if (updateAddress) {
-      const url = new URL(window.location.href);
-      url.searchParams.set('doc', entry.slug);
-      window.history.replaceState({}, '', url);
-    }
   } catch (error) {
     documentMeta.textContent = 'Document unavailable';
     documentError.hidden = false;
@@ -152,7 +206,7 @@ async function loadDocument(entry, updateAddress = true) {
 }
 
 async function initializeDocumentLibrary() {
-  if (!documentSelect) return;
+  if (!documentCardGrid || !documentLibrary || !documentReaderView) return;
 
   try {
     const response = await fetch('docs/index.json');
@@ -161,27 +215,20 @@ async function initializeDocumentLibrary() {
     const entries = await response.json();
     if (!Array.isArray(entries) || entries.length === 0) throw new Error('Document catalog is empty');
 
-    documentSelect.replaceChildren();
-    entries.forEach((entry) => {
-      const option = document.createElement('option');
-      option.value = entry.slug;
-      option.textContent = entry.title;
-      documentSelect.append(option);
-    });
-
     const requestedSlug = new URLSearchParams(window.location.search).get('doc');
-    const initialEntry = entries.find((entry) => entry.slug === requestedSlug) ?? entries[0];
-    documentSelect.value = initialEntry.slug;
-    documentSelect.disabled = false;
-    await loadDocument(initialEntry, requestedSlug !== initialEntry.slug);
+    const selectedEntry = entries.find((entry) => entry.slug === requestedSlug);
 
-    documentSelect.addEventListener('change', () => {
-      const selectedEntry = entries.find((entry) => entry.slug === documentSelect.value);
-      if (selectedEntry) loadDocument(selectedEntry);
-    });
+    if (selectedEntry) {
+      await loadDocument(selectedEntry);
+    } else {
+      showDocumentLibrary(entries);
+    }
   } catch (error) {
-    if (documentMeta) documentMeta.textContent = 'Library unavailable';
-    if (documentError) documentError.hidden = false;
+    documentCardGrid.replaceChildren();
+    const message = document.createElement('div');
+    message.className = 'document-error';
+    message.innerHTML = '<div class="empty-pixel" aria-hidden="true">!</div><h2>Library unavailable</h2><p>The document catalog could not be loaded.</p>';
+    documentCardGrid.append(message);
     console.error(error);
   }
 }
