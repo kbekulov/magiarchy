@@ -1461,6 +1461,8 @@ body::before {
 
 .avatar-violet { background: #5865f2; }
 .avatar-red { background: #da373c; }
+.avatar-amber { background: #9b6b32; }
+.avatar-green { background: #24845a; }
 
 .dispatch-author {
   display: flex;
@@ -1496,6 +1498,10 @@ body::before {
 
 .dispatch-embed > span {
   background: var(--accent);
+}
+
+.dispatch-embed.danger-embed > span {
+  background: #da373c;
 }
 
 .dispatch-embed > div {
