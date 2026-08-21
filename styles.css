@@ -477,6 +477,22 @@ a {
   image-rendering: pixelated;
 }
 
+.character-chibi {
+  position: absolute;
+  inset: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  transition: filter .3s ease, transform .4s var(--ease);
+}
+
+.character-card:hover .character-chibi {
+  filter: brightness(1.04);
+  transform: scale(1.018);
+}
+
 .mini-chibi {
   position: absolute;
   bottom: 19%;
