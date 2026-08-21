@@ -3,15 +3,15 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Read story episodes from the Magiarchy universe.">
+    <meta name="description" content="Follow the overall story timeline and read chapters from the Magiarchy universe.">
     <meta name="theme-color" content="#1e1f22">
-    <title>Episodes - Magiarchy</title>
+    <title>Story - Magiarchy</title>
     <link rel="icon" href="favicon.svg" type="image/svg+xml">
     <link rel="stylesheet" href="styles.css">
     <script src="script.js" defer></script>
-    <script src="episodes.js" defer></script>
+    <script src="story.js" defer></script>
   </head>
-  <body class="episodes-page">
+  <body class="story-page">
     <a class="skip-link" href="#main-content">Skip to content</a>
 
     <header class="site-header">
@@ -29,7 +29,7 @@
         <div class="nav-links" id="nav-links">
           <a href="index.html">Home</a>
           <a href="characters.html">Characters</a>
-          <a href="episodes.html" aria-current="page">Episodes</a>
+          <a href="story.html" aria-current="page">Story</a>
           <a href="music.html">Music</a>
           <a href="gallery.html">Gallery</a>
           <a href="docs.html">Docs</a>
@@ -41,71 +41,104 @@
       <div class="docs-workspace shell">
         <div class="docs-main-pane">
           <header class="feed-header">
-            <div><span aria-hidden="true">#</span><strong>episodes</strong><i></i><p>Serialized story archive</p></div>
+            <div><span aria-hidden="true">#</span><strong>story</strong><i></i><p>Serialized story archive</p></div>
             <span class="feed-status"><span class="status-dot"></span> Draft archive online</span>
           </header>
 
-          <section class="docs-heading reveal" id="episodes-heading" aria-labelledby="episodes-title">
+          <section class="docs-heading reveal" id="story-heading" aria-labelledby="story-title">
             <div>
               <p class="eyebrow">Story archive</p>
-              <h1 id="episodes-title">Episodes</h1>
-              <p>Story installments from the Magiarchy universe. Current entries are temporary drafts ready to be replaced.</p>
+              <h1 id="story-title">Story</h1>
+              <p>The overall narrative and its individual chapters. Current entries and timeline phases are temporary drafts ready to be replaced.</p>
             </div>
           </section>
 
-          <section class="document-library" id="episode-library" aria-label="Episode library" aria-live="polite">
-            <div class="document-card-grid" id="episode-card-grid">
-              <div class="document-card document-card-loading">Loading episodes…</div>
-            </div>
-          </section>
-
-          <section class="document-reader-view" id="episode-reader-view" hidden>
-            <nav class="document-breadcrumbs" aria-label="Breadcrumb">
-              <a href="episodes.html">Episodes</a>
-              <span aria-hidden="true">/</span>
-              <span id="episode-crumb" aria-current="page">Episode</span>
-            </nav>
-
-            <header class="episode-reader-header">
+          <section class="story-timeline reveal" aria-labelledby="story-timeline-title">
+            <header class="story-timeline-header">
               <div>
-                <span class="doc-topic" id="episode-status">Placeholder draft</span>
-                <p id="episode-summary"></p>
-                <div class="episode-character-list" id="episode-reader-characters" role="group" aria-label="Characters involved"></div>
+                <p class="eyebrow">Overall narrative</p>
+                <h2 id="story-timeline-title">Story timeline</h2>
               </div>
-              <a class="source-link" id="episode-source-link" href="episodes/" target="_blank" rel="noopener">View Markdown <span aria-hidden="true">↗</span></a>
+              <span>Mock structure</span>
             </header>
 
-            <section class="episode-preface" aria-labelledby="episode-preface-title">
+            <ol class="timeline-track">
+              <li>
+                <span class="timeline-marker">01</span>
+                <div><small>Opening pressure</small><h3>Fault Lines</h3><p>Cities begin showing signs of psychic strain while the institutions responsible for containment conceal how unstable the system has become.</p></div>
+              </li>
+              <li>
+                <span class="timeline-marker">02</span>
+                <div><small>Inciting rupture</small><h3>The Accusation</h3><p>Fionn is assassinated, Lynleit is framed, and MSF turns its own structure toward finding the person it was built to protect.</p></div>
+              </li>
+              <li>
+                <span class="timeline-marker">03</span>
+                <div><small>Hidden pursuit</small><h3>Exile</h3><p>Lynleit is forced outside sanctioned power. Alliances form under pressure while Helena and Tien tighten the pursuit.</p></div>
+              </li>
+              <li>
+                <span class="timeline-marker">04</span>
+                <div><small>System failure</small><h3>The Spill</h3><p>A quarantine operation exposes the cost of containment and draws government actors deeper into the hidden conflict.</p></div>
+              </li>
+              <li>
+                <span class="timeline-marker">05</span>
+                <div><small>Convergence</small><h3>Truth or Stability</h3><p>The Church, Magiarchy, government, and independent actors collide over whether the hidden order can survive its own secrets.</p></div>
+              </li>
+            </ol>
+          </section>
+
+          <section class="document-library" id="chapter-library" aria-label="Chapter library" aria-live="polite">
+            <div class="document-card-grid" id="chapter-card-grid">
+              <div class="document-card document-card-loading">Loading story…</div>
+            </div>
+          </section>
+
+          <section class="document-reader-view" id="chapter-reader-view" hidden>
+            <nav class="document-breadcrumbs" aria-label="Breadcrumb">
+              <a href="story.html">Story</a>
+              <span aria-hidden="true">/</span>
+              <span id="chapter-crumb" aria-current="page">Chapter</span>
+            </nav>
+
+            <header class="chapter-reader-header">
+              <div>
+                <span class="doc-topic" id="chapter-status">Placeholder draft</span>
+                <p id="chapter-summary"></p>
+                <div class="chapter-character-list" id="chapter-reader-characters" role="group" aria-label="Characters involved"></div>
+              </div>
+              <a class="source-link" id="chapter-source-link" href="story/" target="_blank" rel="noopener">View Markdown <span aria-hidden="true">↗</span></a>
+            </header>
+
+            <section class="chapter-preface" aria-labelledby="chapter-preface-title">
               <div>
                 <p class="eyebrow">Before reading</p>
-                <h2 id="episode-preface-title">Episode preface</h2>
+                <h2 id="chapter-preface-title">Chapter preface</h2>
               </div>
               <table>
                 <thead>
                   <tr><th scope="col">#</th><th scope="col">Main event</th></tr>
                 </thead>
-                <tbody id="episode-event-list"></tbody>
+                <tbody id="chapter-event-list"></tbody>
               </table>
             </section>
 
             <div class="document-shell">
-              <div class="document-meta" id="episode-meta" aria-live="polite">Loading episode…</div>
-              <article class="markdown-body episode-body" id="episode-reader" aria-live="polite"></article>
-              <div class="document-error" id="episode-error" hidden>
+              <div class="document-meta" id="chapter-meta" aria-live="polite">Loading chapter…</div>
+              <article class="markdown-body chapter-body" id="chapter-reader" aria-live="polite"></article>
+              <div class="document-error" id="chapter-error" hidden>
                 <div class="empty-pixel" aria-hidden="true">!</div>
-                <h2>Episode unavailable</h2>
-                <p>The episode file could not be loaded.</p>
+                <h2>Chapter unavailable</h2>
+                <p>The chapter file could not be loaded.</p>
               </div>
             </div>
           </section>
         </div>
 
-        <aside class="notes-sidebar" aria-label="Episodes page notes">
-          <header class="notes-header"><div><span aria-hidden="true">✎</span><strong>Page notes</strong></div><span>Episodes</span></header>
+        <aside class="notes-sidebar" aria-label="Story page notes">
+          <header class="notes-header"><div><span aria-hidden="true">✎</span><strong>Page notes</strong></div><span>Story</span></header>
           <div class="notes-list">
             <article class="page-note">
               <div><span>Open</span><span>01</span></div>
-              <h2>Replace placeholder episodes</h2>
+              <h2>Replace placeholder chapters</h2>
               <p>Swap the temporary drafts for final story installments when they are provided.</p>
             </article>
           </div>

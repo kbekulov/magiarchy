@@ -1,18 +1,18 @@
-const episodeLibrary = document.querySelector('#episode-library');
-const episodeCardGrid = document.querySelector('#episode-card-grid');
-const episodeReaderView = document.querySelector('#episode-reader-view');
-const episodesHeading = document.querySelector('#episodes-heading');
-const episodeReader = document.querySelector('#episode-reader');
-const episodeMeta = document.querySelector('#episode-meta');
-const episodeSummary = document.querySelector('#episode-summary');
-const episodeStatus = document.querySelector('#episode-status');
-const episodeSourceLink = document.querySelector('#episode-source-link');
-const episodeError = document.querySelector('#episode-error');
-const episodeCrumb = document.querySelector('#episode-crumb');
-const episodeReaderCharacters = document.querySelector('#episode-reader-characters');
-const episodeEventList = document.querySelector('#episode-event-list');
+const chapterLibrary = document.querySelector('#chapter-library');
+const chapterCardGrid = document.querySelector('#chapter-card-grid');
+const chapterReaderView = document.querySelector('#chapter-reader-view');
+const storyHeading = document.querySelector('#story-heading');
+const chapterReader = document.querySelector('#chapter-reader');
+const chapterMeta = document.querySelector('#chapter-meta');
+const chapterSummary = document.querySelector('#chapter-summary');
+const chapterStatus = document.querySelector('#chapter-status');
+const chapterSourceLink = document.querySelector('#chapter-source-link');
+const chapterError = document.querySelector('#chapter-error');
+const chapterCrumb = document.querySelector('#chapter-crumb');
+const chapterReaderCharacters = document.querySelector('#chapter-reader-characters');
+const chapterEventList = document.querySelector('#chapter-event-list');
 
-function appendEpisodeInline(text, parent) {
+function appendChapterInline(text, parent) {
   const tokenPattern = /(\*\*[^*]+\*\*|\*[^*]+\*|`[^`]+`)/g;
   let cursor = 0;
 
@@ -29,7 +29,7 @@ function appendEpisodeInline(text, parent) {
   if (cursor < text.length) parent.append(document.createTextNode(text.slice(cursor)));
 }
 
-function renderEpisodeMarkdown(markdown) {
+function renderChapterMarkdown(markdown) {
   const fragment = document.createDocumentFragment();
   const lines = markdown.replace(/\r\n/g, '\n').split('\n');
   let index = 0;
@@ -44,7 +44,7 @@ function renderEpisodeMarkdown(markdown) {
     const headingMatch = line.match(/^(#{1,3})\s+(.+)$/);
     if (headingMatch) {
       const heading = document.createElement(`h${headingMatch[1].length}`);
-      appendEpisodeInline(headingMatch[2], heading);
+      appendChapterInline(headingMatch[2], heading);
       fragment.append(heading);
       index += 1;
       continue;
@@ -52,7 +52,7 @@ function renderEpisodeMarkdown(markdown) {
 
     if (line.startsWith('> ')) {
       const quote = document.createElement('blockquote');
-      appendEpisodeInline(line.slice(2), quote);
+      appendChapterInline(line.slice(2), quote);
       fragment.append(quote);
       index += 1;
       continue;
@@ -66,7 +66,7 @@ function renderEpisodeMarkdown(markdown) {
     }
 
     const paragraph = document.createElement('p');
-    appendEpisodeInline(paragraphLines.join(' '), paragraph);
+    appendChapterInline(paragraphLines.join(' '), paragraph);
     fragment.append(paragraph);
   }
 
@@ -81,13 +81,13 @@ function createCharacterLabels(characters) {
   });
 }
 
-function createEpisodeCard(entry) {
+function createChapterCard(entry) {
   const card = document.createElement('article');
-  card.className = 'document-card episode-card reveal is-visible';
+  card.className = 'document-card chapter-card reveal is-visible';
 
   const link = document.createElement('a');
   link.className = 'document-card-link';
-  link.href = `episodes.html?episode=${encodeURIComponent(entry.slug)}`;
+  link.href = `story.html?chapter=${encodeURIComponent(entry.slug)}`;
   link.setAttribute('aria-label', `Read ${entry.number}: ${entry.title}`);
 
   const top = document.createElement('div');
@@ -109,7 +109,7 @@ function createEpisodeCard(entry) {
   description.textContent = entry.description;
 
   const characters = document.createElement('div');
-  characters.className = 'episode-character-list';
+  characters.className = 'chapter-character-list';
   characters.setAttribute('role', 'group');
   characters.setAttribute('aria-label', 'Characters involved');
   characters.append(...createCharacterLabels(entry.characters));
@@ -129,25 +129,25 @@ function createEpisodeCard(entry) {
   return card;
 }
 
-function showEpisodeLibrary(entries) {
-  episodeReaderView.hidden = true;
-  episodeLibrary.hidden = false;
-  episodesHeading.hidden = false;
-  episodeCardGrid.replaceChildren(...entries.map(createEpisodeCard));
+function showChapterLibrary(entries) {
+  chapterReaderView.hidden = true;
+  chapterLibrary.hidden = false;
+  storyHeading.hidden = false;
+  chapterCardGrid.replaceChildren(...entries.map(createChapterCard));
 }
 
-async function loadEpisode(entry) {
-  episodeLibrary.hidden = true;
-  episodesHeading.hidden = true;
-  episodeReaderView.hidden = false;
-  episodeReader.replaceChildren();
-  episodeError.hidden = true;
-  episodeMeta.textContent = 'Loading episode…';
-  episodeCrumb.textContent = `${entry.number}: ${entry.title}`;
-  episodeStatus.textContent = entry.status;
-  episodeSummary.textContent = entry.description;
-  episodeReaderCharacters.replaceChildren(...createCharacterLabels(entry.characters));
-  episodeEventList.replaceChildren(...(entry.events ?? []).map((event, index) => {
+async function loadChapter(entry) {
+  chapterLibrary.hidden = true;
+  storyHeading.hidden = true;
+  chapterReaderView.hidden = false;
+  chapterReader.replaceChildren();
+  chapterError.hidden = true;
+  chapterMeta.textContent = 'Loading chapter…';
+  chapterCrumb.textContent = `${entry.number}: ${entry.title}`;
+  chapterStatus.textContent = entry.status;
+  chapterSummary.textContent = entry.description;
+  chapterReaderCharacters.replaceChildren(...createCharacterLabels(entry.characters));
+  chapterEventList.replaceChildren(...(entry.events ?? []).map((event, index) => {
     const row = document.createElement('tr');
     const number = document.createElement('th');
     number.scope = 'row';
@@ -157,47 +157,47 @@ async function loadEpisode(entry) {
     row.append(number, description);
     return row;
   }));
-  episodeSourceLink.href = `episodes/${entry.file}`;
+  chapterSourceLink.href = `story/${entry.file}`;
 
   try {
-    const response = await fetch(`episodes/${entry.file}`);
-    if (!response.ok) throw new Error(`Episode request failed: ${response.status}`);
+    const response = await fetch(`story/${entry.file}`);
+    if (!response.ok) throw new Error(`Chapter request failed: ${response.status}`);
     const markdown = await response.text();
-    episodeReader.append(renderEpisodeMarkdown(markdown));
-    episodeMeta.textContent = `${entry.number} · ${entry.characters.join(' / ')} · Updated ${entry.updated}`;
-    document.title = `${entry.title} - Episodes - Magiarchy`;
+    chapterReader.append(renderChapterMarkdown(markdown));
+    chapterMeta.textContent = `${entry.number} · ${entry.characters.join(' / ')} · Updated ${entry.updated}`;
+    document.title = `${entry.title} - Story - Magiarchy`;
   } catch (error) {
-    episodeMeta.textContent = 'Episode unavailable';
-    episodeError.hidden = false;
+    chapterMeta.textContent = 'Chapter unavailable';
+    chapterError.hidden = false;
     console.error(error);
   }
 }
 
-async function initializeEpisodes() {
-  if (!episodeCardGrid || !episodeLibrary || !episodeReaderView) return;
+async function initializeStory() {
+  if (!chapterCardGrid || !chapterLibrary || !chapterReaderView) return;
 
   try {
-    const response = await fetch('episodes/index.json');
-    if (!response.ok) throw new Error(`Episode catalog request failed: ${response.status}`);
+    const response = await fetch('story/index.json');
+    if (!response.ok) throw new Error(`Chapter catalog request failed: ${response.status}`);
     const entries = await response.json();
-    if (!Array.isArray(entries) || entries.length === 0) throw new Error('Episode catalog is empty');
+    if (!Array.isArray(entries) || entries.length === 0) throw new Error('Chapter catalog is empty');
 
-    const requestedSlug = new URLSearchParams(window.location.search).get('episode');
+    const requestedSlug = new URLSearchParams(window.location.search).get('chapter');
     const selectedEntry = entries.find((entry) => entry.slug === requestedSlug);
-    if (selectedEntry) await loadEpisode(selectedEntry);
-    else showEpisodeLibrary(entries);
+    if (selectedEntry) await loadChapter(selectedEntry);
+    else showChapterLibrary(entries);
   } catch (error) {
-    episodeCardGrid.replaceChildren();
+    chapterCardGrid.replaceChildren();
     const message = document.createElement('div');
     message.className = 'document-error';
     const title = document.createElement('h2');
-    title.textContent = 'Episode library unavailable';
+    title.textContent = 'Chapter library unavailable';
     const description = document.createElement('p');
-    description.textContent = 'The episode catalog could not be loaded.';
+    description.textContent = 'The chapter catalog could not be loaded.';
     message.append(title, description);
-    episodeCardGrid.append(message);
+    chapterCardGrid.append(message);
     console.error(error);
   }
 }
 
-initializeEpisodes();
+initializeStory();

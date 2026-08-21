@@ -1,6 +1,6 @@
-# Episode 01: The Quiet Breach
+# Chapter 01: The Quiet Breach
 
-> Placeholder draft. Replace this episode when final story material is available.
+> Placeholder draft. Replace this chapter when final story material is available.
 
 ## The Call
 

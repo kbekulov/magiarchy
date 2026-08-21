@@ -6,7 +6,7 @@ The official web home for the Magiarchy story universe, deployed through GitHub 
 
 - **Home** - an atmospheric introduction to the hidden architecture of the world, followed by a dated feed of site updates.
 - **Characters** - a searchable masonry roster of character dossiers with replaceable chibi-art slots.
-- **Episodes** - a masonry story catalog with full readers, breadcrumbs, and involved-character labels.
+- **Story** - an overall narrative timeline followed by masonry chapter cards with full readers, breadcrumbs, and involved-character labels.
 - **Music** - an archive for future themes, character motifs, and scene tracks, currently represented by inactive placeholder cards.
 - **Gallery** - a masonry artwork archive filterable by character, location, and chibi format.
 - **Docs** - a masonry library of Markdown-backed summaries with dedicated full-document reader views.

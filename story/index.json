@@ -1,7 +1,7 @@
 [
   {
     "slug": "the-quiet-breach",
-    "number": "Episode 01",
+    "number": "Chapter 01",
     "title": "The Quiet Breach",
     "status": "Placeholder draft",
     "file": "the-quiet-breach.md",
@@ -16,7 +16,7 @@
   },
   {
     "slug": "ash-under-glass",
-    "number": "Episode 02",
+    "number": "Chapter 02",
     "title": "Ash Under Glass",
     "status": "Placeholder draft",
     "file": "ash-under-glass.md",
@@ -31,7 +31,7 @@
   },
   {
     "slug": "the-name-left-behind",
-    "number": "Episode 03",
+    "number": "Chapter 03",
     "title": "The Name Left Behind",
     "status": "Placeholder draft",
     "file": "the-name-left-behind.md",

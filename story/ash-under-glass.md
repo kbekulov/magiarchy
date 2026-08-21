@@ -1,6 +1,6 @@
-# Episode 02: Ash Under Glass
+# Chapter 02: Ash Under Glass
 
-> Placeholder draft. Replace this episode when final story material is available.
+> Placeholder draft. Replace this chapter when final story material is available.
 
 ## Quarantine
 

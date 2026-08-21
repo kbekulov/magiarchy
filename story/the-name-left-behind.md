@@ -1,6 +1,6 @@
-# Episode 03: The Name Left Behind
+# Chapter 03: The Name Left Behind
 
-> Placeholder draft. Replace this episode when final story material is available.
+> Placeholder draft. Replace this chapter when final story material is available.
 
 ## Missing Entry
 
