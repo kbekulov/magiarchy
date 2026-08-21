@@ -15,6 +15,7 @@
 - Pixel-art and chibi imagery are recurring visual motifs. Do not substitute final character art without an approved source.
 - The site contains multiple individually designed pages connected by a persistent top navigation bar.
 - Call story installments `Episodes` in the site UI even when they are technically chapters. Store placeholder or final episode text as Markdown in `episodes/`, register it in `episodes/index.json`, show involved-character labels on every episode card and reader view, and clearly identify invented temporary content as placeholder material. Every episode reader must begin with a compact preface table listing the main events that occur in that episode.
+- Keep Music as its own top-level section. Clearly mark placeholder track cards as inactive, store future audio under `media/music/`, and do not imply that playback is available before a real audio asset exists.
 - Keep primary navigation in the top bar; do not add a persistent left navigation sidebar unless explicitly requested for a future feature.
 - Use the right sidebar on each page as a code-managed `Page notes` area for the user's requested changes. Update those notes in the page HTML; do not imply that they can be edited or persisted through the static GitHub Pages UI.
 - Treat notes written by the user as authoritative. Mark completed notes clearly or remove them when the user confirms they are no longer needed.

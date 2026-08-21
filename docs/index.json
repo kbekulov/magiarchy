@@ -16,5 +16,14 @@
     "updated": "2026-08-22",
     "description": "A direct guide to magic, Holumns, hidden history, political balance, and the setting's central conflict.",
     "speakers": ["World Archive"]
+  },
+  {
+    "slug": "magic-as-leverage",
+    "title": "Magic Is Leverage, Not Omnipotence",
+    "topic": "Magic Doctrine",
+    "file": "magic-as-leverage.md",
+    "updated": "2026-08-22",
+    "description": "A practical guide to magical mechanics, internal and external practice, limitations, nightmares, and the need for control.",
+    "speakers": ["Magistry Archive"]
   }
 ]

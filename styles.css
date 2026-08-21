@@ -1981,6 +1981,119 @@ a.status-member:hover {
   margin-top: 12px;
 }
 
+.music-library {
+  padding: 0 30px 50px;
+}
+
+.music-card-grid {
+  columns: 2 300px;
+  column-gap: 12px;
+}
+
+.music-card {
+  display: inline-block;
+  width: 100%;
+  margin: 0 0 12px;
+  overflow: hidden;
+  break-inside: avoid;
+  border: 1px solid rgba(0, 0, 0, .24);
+  border-radius: 7px;
+  background: #2b2d31;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, .12);
+}
+
+.music-card-art {
+  position: relative;
+  display: flex;
+  min-height: 96px;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border-bottom: 1px solid rgba(0, 0, 0, .24);
+}
+
+.music-card-art::before,
+.music-card-art::after {
+  position: absolute;
+  width: 110px;
+  height: 110px;
+  border: 1px solid rgba(255, 255, 255, .06);
+  border-radius: 50%;
+  content: "";
+}
+
+.music-card-art::after {
+  width: 62px;
+  height: 62px;
+}
+
+.music-card-art > span {
+  position: absolute;
+  top: 12px;
+  left: 14px;
+  color: rgba(255, 255, 255, .42);
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: .58rem;
+  letter-spacing: .08em;
+}
+
+.music-card-art > i {
+  position: relative;
+  z-index: 1;
+  color: rgba(255, 255, 255, .68);
+  font-size: 1.45rem;
+  font-style: normal;
+}
+
+.music-card-body {
+  padding: 20px;
+}
+
+.music-card-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.music-status {
+  color: var(--subtle);
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: .54rem;
+  letter-spacing: .05em;
+  text-transform: uppercase;
+}
+
+.music-card h2 {
+  margin: 18px 0 8px;
+  color: var(--text);
+  font-size: 1.12rem;
+  letter-spacing: -.015em;
+}
+
+.music-card p {
+  margin: 0;
+  color: var(--muted);
+  font-size: .75rem;
+  line-height: 1.58;
+}
+
+.music-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin-top: 18px;
+}
+
+.music-tags span {
+  padding: 4px 7px;
+  border-radius: 4px;
+  background: #313338;
+  color: var(--subtle);
+  font-size: .56rem;
+  font-weight: 700;
+}
+
 .gallery-reader-view {
   padding: 0 30px 50px;
 }
@@ -2813,6 +2926,10 @@ a.status-member:hover {
     padding: 0 14px 40px;
   }
 
+  .music-library {
+    padding: 0 14px 40px;
+  }
+
   .gallery-reader-view {
     padding: 0 14px 30px;
   }
@@ -2975,6 +3092,10 @@ a.status-member:hover {
 
 @media (max-width: 560px) {
   .document-card-grid {
+    columns: 1;
+  }
+
+  .music-card-grid {
     columns: 1;
   }
 
