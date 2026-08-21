@@ -975,7 +975,8 @@ body::before {
 
 .home-workspace,
 .characters-workspace,
-.gallery-workspace {
+.gallery-workspace,
+.docs-workspace {
   display: grid;
   width: 100%;
   max-width: none;
@@ -993,6 +994,10 @@ body::before {
 }
 
 .gallery-workspace {
+  grid-template-columns: minmax(0, 1fr) 280px;
+}
+
+.docs-workspace {
   grid-template-columns: minmax(0, 1fr) 280px;
 }
 
@@ -1296,7 +1301,8 @@ body::before {
 
 .home-feed,
 .character-main-pane,
-.gallery-main-pane {
+.gallery-main-pane,
+.docs-main-pane {
   min-width: 0;
   background: #313338;
 }
@@ -1914,6 +1920,232 @@ a.status-member:hover {
   margin-top: 12px;
 }
 
+/* Markdown document library */
+.docs-main-pane {
+  height: 100%;
+  overflow-y: auto;
+}
+
+.docs-main-pane .feed-header {
+  top: 0;
+}
+
+.docs-heading {
+  padding: 28px 30px 18px;
+}
+
+.docs-heading .eyebrow {
+  margin-bottom: 8px;
+  font-size: .62rem;
+}
+
+.docs-heading h1 {
+  margin: 0;
+  font-size: clamp(2rem, 4vw, 3.15rem);
+  line-height: 1;
+  letter-spacing: -.045em;
+}
+
+.docs-heading > div > p:last-child {
+  max-width: 650px;
+  margin: 12px 0 0;
+  color: var(--muted);
+  font-size: .86rem;
+}
+
+.docs-toolbar {
+  display: grid;
+  grid-template-columns: minmax(230px, 320px) minmax(220px, 1fr) auto;
+  align-items: end;
+  gap: 16px;
+  margin: 0 30px 18px;
+  padding: 14px;
+  border: 1px solid rgba(0, 0, 0, .22);
+  border-radius: 7px;
+  background: #2b2d31;
+}
+
+.docs-select {
+  width: 100%;
+}
+
+.document-summary {
+  min-width: 0;
+}
+
+.doc-topic {
+  display: inline-block;
+  padding: 3px 6px;
+  border-radius: 4px;
+  background: rgba(88, 101, 242, .14);
+  color: #aeb4ff;
+  font-size: .55rem;
+  font-weight: 800;
+  letter-spacing: .045em;
+  text-transform: uppercase;
+}
+
+.document-summary p {
+  overflow: hidden;
+  margin: 5px 0 0;
+  color: var(--subtle);
+  font-size: .67rem;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.source-link {
+  display: inline-flex;
+  height: 36px;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  padding: 0 11px;
+  border-radius: 4px;
+  background: #35373c;
+  color: var(--muted);
+  font-size: .68rem;
+  font-weight: 700;
+  transition: background .2s ease, color .2s ease;
+}
+
+.source-link:hover {
+  background: #404249;
+  color: var(--text);
+}
+
+.document-shell {
+  width: min(900px, calc(100% - 60px));
+  margin: 0 auto 50px;
+  overflow: hidden;
+  border: 1px solid rgba(0, 0, 0, .24);
+  border-radius: 8px;
+  background: #2b2d31;
+  box-shadow: 0 8px 28px rgba(0, 0, 0, .15);
+}
+
+.document-meta {
+  padding: 11px 18px;
+  border-bottom: 1px solid rgba(0, 0, 0, .24);
+  color: var(--subtle);
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: .59rem;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+}
+
+.markdown-body {
+  padding: clamp(28px, 6vw, 64px);
+  color: #dbdee1;
+}
+
+.markdown-body h1 {
+  max-width: 700px;
+  margin: 0 0 38px;
+  color: var(--text);
+  font-size: clamp(2rem, 5vw, 3.4rem);
+  line-height: 1.05;
+  letter-spacing: -.045em;
+}
+
+.markdown-body h2,
+.markdown-body h3 {
+  margin: 32px 0 12px;
+  color: var(--text);
+  line-height: 1.2;
+}
+
+.markdown-body p {
+  margin: 0 0 16px;
+  font-size: .92rem;
+  line-height: 1.75;
+}
+
+.markdown-body .dialogue-line {
+  position: relative;
+  min-height: 52px;
+  margin: 0 0 7px;
+  padding: 13px 18px 13px 122px;
+  border-left: 3px solid #4e5058;
+  border-radius: 0 5px 5px 0;
+  background: #313338;
+  font-size: .88rem;
+  line-height: 1.58;
+}
+
+.markdown-body .dialogue-line strong:first-child {
+  position: absolute;
+  top: 14px;
+  left: 16px;
+  color: var(--muted);
+  font-size: .69rem;
+  letter-spacing: .02em;
+}
+
+.markdown-body .speaker-fionn {
+  border-left-color: var(--accent);
+  background: rgba(88, 101, 242, .07);
+}
+
+.markdown-body .speaker-fionn strong:first-child {
+  color: #aeb4ff;
+}
+
+.markdown-body .speaker-journalist {
+  border-left-color: #5c6069;
+}
+
+.markdown-body blockquote {
+  margin: 24px 0;
+  padding: 12px 18px;
+  border-left: 3px solid var(--accent);
+  background: #313338;
+  color: var(--muted);
+}
+
+.markdown-body ul {
+  padding-left: 24px;
+  color: var(--muted);
+}
+
+.markdown-body code {
+  padding: 2px 5px;
+  border-radius: 3px;
+  background: #1e1f22;
+  color: #e5e7eb;
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: .84em;
+}
+
+.markdown-body a {
+  color: #aeb4ff;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.markdown-body hr {
+  margin: 36px 0;
+  border: 0;
+  border-top: 1px solid #3f4147;
+}
+
+.document-error {
+  padding: 80px 20px;
+  color: var(--muted);
+  text-align: center;
+}
+
+.document-error h2 {
+  margin: 0 0 6px;
+  color: var(--text);
+  font-size: 1rem;
+}
+
+.document-error p {
+  margin: 0;
+  font-size: .76rem;
+}
+
 .character-main-pane .feed-header {
   top: 0;
 }
@@ -2053,6 +2285,18 @@ a.status-member:hover {
     grid-template-columns: minmax(0, 1fr) 240px;
   }
 
+  .docs-workspace {
+    grid-template-columns: minmax(0, 1fr) 240px;
+  }
+
+  .docs-toolbar {
+    grid-template-columns: minmax(220px, 300px) minmax(0, 1fr);
+  }
+
+  .source-link {
+    display: none;
+  }
+
   .character-grid {
     columns: 1;
   }
@@ -2066,7 +2310,8 @@ a.status-member:hover {
 
   .home-workspace,
   .characters-workspace,
-  .gallery-workspace {
+  .gallery-workspace,
+  .docs-workspace {
     display: block;
     height: auto;
     overflow: visible;
@@ -2074,7 +2319,8 @@ a.status-member:hover {
 
   .home-feed,
   .character-main-pane,
-  .gallery-main-pane {
+  .gallery-main-pane,
+  .docs-main-pane {
     height: auto;
     min-height: calc(100vh - 53px);
     overflow: visible;
@@ -2098,6 +2344,45 @@ a.status-member:hover {
 
   .gallery-main-pane .feed-header {
     display: none;
+  }
+
+  .docs-main-pane .feed-header {
+    display: none;
+  }
+
+  .docs-heading {
+    padding: 28px 14px 15px;
+  }
+
+  .docs-toolbar {
+    display: block;
+    margin: 0 14px 14px;
+  }
+
+  .document-summary {
+    margin-top: 10px;
+  }
+
+  .document-summary p {
+    white-space: normal;
+  }
+
+  .document-shell {
+    width: calc(100% - 28px);
+    margin-bottom: 24px;
+  }
+
+  .markdown-body {
+    padding: 26px 18px;
+  }
+
+  .markdown-body .dialogue-line {
+    padding: 36px 13px 12px;
+  }
+
+  .markdown-body .dialogue-line strong:first-child {
+    top: 10px;
+    left: 12px;
   }
 
   .gallery-heading {

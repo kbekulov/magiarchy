@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Read documents from the Magiarchy world archive.">
+    <meta name="theme-color" content="#1e1f22">
+    <title>Docs — Magiarchy</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <script src="docs.js" defer></script>
+  </head>
+  <body class="docs-page">
+    <a class="skip-link" href="#main-content">Skip to content</a>
+
+    <header class="site-header">
+      <nav class="navbar shell" aria-label="Primary navigation">
+        <a class="brand" href="index.html" aria-label="Magiarchy home">
+          <span class="brand-mark" aria-hidden="true"><span></span></span>
+          <span>Magiarchy</span>
+        </a>
+
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links">
+          <span class="sr-only">Toggle navigation</span>
+          <span></span><span></span>
+        </button>
+
+        <div class="nav-links" id="nav-links">
+          <a href="index.html">Home</a>
+          <a href="characters.html">Characters</a>
+          <a href="gallery.html">Gallery</a>
+          <a href="docs.html" aria-current="page">Docs</a>
+        </div>
+      </nav>
+    </header>
+
+    <main class="app-main" id="main-content">
+      <div class="docs-workspace shell">
+        <div class="docs-main-pane">
+          <header class="feed-header">
+            <div><span aria-hidden="true">#</span><strong>docs</strong><i></i><p>Text records and world reference</p></div>
+            <span class="feed-status"><span class="status-dot"></span> Library online</span>
+          </header>
+
+          <section class="docs-heading reveal" aria-labelledby="docs-title">
+            <div>
+              <p class="eyebrow">Document library</p>
+              <h1 id="docs-title">Docs</h1>
+              <p>Interviews, records, and reference texts from the hidden world.</p>
+            </div>
+          </section>
+
+          <section class="docs-toolbar reveal" aria-label="Document selection">
+            <label class="gallery-select docs-select">
+              <span>Document</span>
+              <select id="document-select" disabled>
+                <option>Loading library…</option>
+              </select>
+            </label>
+            <div class="document-summary" id="document-summary">
+              <span class="doc-topic">Loading</span>
+              <p>Opening the document library…</p>
+            </div>
+            <a class="source-link" id="document-source-link" href="docs/" target="_blank" rel="noopener">View Markdown <span aria-hidden="true">↗</span></a>
+          </section>
+
+          <section class="document-shell">
+            <div class="document-meta" id="document-meta" aria-live="polite">Loading document…</div>
+            <article class="markdown-body" id="document-reader" aria-live="polite"></article>
+            <div class="document-error" id="document-error" hidden>
+              <div class="empty-pixel" aria-hidden="true">!</div>
+              <h2>Document unavailable</h2>
+              <p>The Markdown file could not be loaded.</p>
+            </div>
+          </section>
+        </div>
+
+        <aside class="notes-sidebar" aria-label="Docs page notes">
+          <header class="notes-header"><div><span aria-hidden="true">✎</span><strong>Page notes</strong></div><span>Docs</span></header>
+          <!-- Page notes are maintained in code. Add new .page-note articles below. -->
+          <div class="notes-list">
+            <div class="notes-empty">
+              <span aria-hidden="true">✓</span>
+              <strong>No open notes</strong>
+              <p>Add the next requested Docs-page change here.</p>
+            </div>
+          </div>
+          <p class="notes-footnote">Notes are updated with the site code and published through GitHub Pages.</p>
+        </aside>
+      </div>
+    </main>
+  </body>
+</html>
