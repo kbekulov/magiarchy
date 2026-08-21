@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Meet the central and supporting characters of Magiarchy.">
+    <meta name="theme-color" content="#101116">
+    <title>Characters — Magiarchy</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body class="characters-page">
+    <a class="skip-link" href="#main-content">Skip to content</a>
+
+    <header class="site-header">
+      <nav class="navbar shell" aria-label="Primary navigation">
+        <a class="brand" href="index.html" aria-label="Magiarchy home">
+          <span class="brand-mark" aria-hidden="true"><span></span></span>
+          <span>Magiarchy</span>
+        </a>
+
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links">
+          <span class="sr-only">Toggle navigation</span>
+          <span></span><span></span>
+        </button>
+
+        <div class="nav-links" id="nav-links">
+          <a href="index.html">Home</a>
+          <a href="characters.html" aria-current="page">Characters</a>
+        </div>
+      </nav>
+    </header>
+
+    <main id="main-content">
+      <section class="roster-header shell">
+        <div class="roster-title reveal">
+          <p class="eyebrow">Personnel archive / 15 records</p>
+          <h1>Characters</h1>
+          <p>Those who hold the structure together, those who undermine it, and those still waiting in the margins.</p>
+        </div>
+
+        <div class="roster-tools reveal">
+          <label class="search-field">
+            <svg aria-hidden="true" viewBox="0 0 24 24"><path d="m21 21-4.35-4.35m2.35-5.65a8 8 0 1 1-16 0 8 8 0 0 1 16 0Z"/></svg>
+            <input id="character-search" type="search" placeholder="Search the archive" autocomplete="off">
+          </label>
+          <div class="filter-group" role="group" aria-label="Filter characters">
+            <button class="filter-chip is-active" type="button" data-filter="all" aria-pressed="true">All</button>
+            <button class="filter-chip" type="button" data-filter="profiled" aria-pressed="false">Profiled</button>
+            <button class="filter-chip" type="button" data-filter="active" aria-pressed="false">Active</button>
+            <button class="filter-chip" type="button" data-filter="restricted" aria-pressed="false">Restricted</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="roster-section shell" aria-live="polite">
+        <div class="roster-meta">
+          <p><span id="result-count">15</span> records visible</p>
+          <span class="archive-state"><span class="status-dot"></span> Archive online</span>
+        </div>
+
+        <div class="character-grid" id="character-grid">
+          <article class="character-card card-featured reveal" data-name="Lynleit" data-tags="profiled active protagonist msf heir director">
+            <div class="character-art art-blue">
+              <span class="record-code">MSF · 001</span>
+              <div class="chibi-placeholder" aria-label="Chibi artwork placeholder for Lynleit" role="img"><span>L</span></div>
+              <span class="art-note">Chibi pending</span>
+            </div>
+            <div class="character-info">
+              <div class="character-heading"><div><p>Visible protagonist</p><h2>Lynleit</h2></div><span class="profile-badge">Profiled</span></div>
+              <p>The 28-year-old acting heir of MSF, forced into leadership early. She treats trust as infrastructure and tries to hold power without abandoning her ethics.</p>
+              <div class="character-traits"><span>Heir-director</span><span>Strategist</span><span>Magi</span></div>
+            </div>
+          </article>
+
+          <article class="character-card card-featured reveal" data-name="Kyrien" data-tags="profiled active ally contingency operator tactician">
+            <div class="character-art art-amber">
+              <span class="record-code">MSF · 002</span>
+              <div class="chibi-placeholder" aria-label="Chibi artwork placeholder for Kyrien" role="img"><span>K</span></div>
+              <span class="art-note">Chibi pending</span>
+            </div>
+            <div class="character-info">
+              <div class="character-heading"><div><p>Hidden contingency</p><h2>Kyrien</h2></div><span class="profile-badge">Profiled</span></div>
+              <p>An independent tactical operator who maps systems, logistics, surveillance, and failure points. He protects structural survivability without becoming controllable.</p>
+              <div class="character-traits"><span>Operator</span><span>Tactician</span><span>Independent</span></div>
+            </div>
+          </article>
+
+          <article class="character-card reveal" data-name="Helena" data-tags="active restricted antagonist control msf">
+            <div class="character-art art-red"><span class="record-code">MSF · 003</span><div class="chibi-placeholder" aria-label="Chibi artwork placeholder for Helena" role="img"><span>H</span></div><span class="art-note">Chibi pending</span></div>
+            <div class="character-info"><div class="character-heading"><div><p>Accusation architect</p><h2>Helena</h2></div><span class="profile-badge badge-restricted">Restricted</span></div><p>Frames Lynleit for Fionn's assassination, redirects MSF resources into the hunt, and consolidates an unstable hold on control.</p></div>
+          </article>
+
+          <article class="character-card reveal" data-name="Tien" data-tags="active restricted enforcer shadow pursuit">
+            <div class="character-art art-violet"><span class="record-code">MSF · 004</span><div class="chibi-placeholder" aria-label="Chibi artwork placeholder for Tien" role="img"><span>T</span></div><span class="art-note">Chibi pending</span></div>
+            <div class="character-info"><div class="character-heading"><div><p>Covert enforcer</p><h2>Tien</h2></div><span class="profile-badge badge-restricted">Restricted</span></div><p>Helena's hidden enforcer and Kyrien's opposite analogue. A shadow-force deployed for pursuit, pressure, and direct counterplay.</p></div>
+          </article>
+
+          <article class="character-card card-compact reveal" data-name="Fionn" data-tags="restricted assassination pivotal">
+            <div class="character-art art-neutral"><span class="record-code">ARC · 005</span><div class="chibi-placeholder" aria-label="Chibi artwork placeholder for Fionn" role="img"><span>F</span></div><span class="art-note">Chibi pending</span></div>
+            <div class="character-info"><div class="character-heading"><div><p>Pivotal figure</p><h2>Fionn</h2></div><span class="profile-badge badge-restricted">Restricted</span></div><p>His assassination becomes the fulcrum for Lynleit's accusation and exile. Further profile data remains sealed.</p></div>
+          </article>
+
+          <article class="character-card reveal" data-name="Heyk" data-tags="active operator quarantine extraction">
+            <div class="character-art art-green"><span class="record-code">FLD · 006</span><div class="chibi-placeholder" aria-label="Chibi artwork placeholder for Heyk" role="img"><span>H</span></div><span class="art-note">Chibi pending</span></div>
+            <div class="character-info"><div class="character-heading"><div><p>Field operative</p><h2>Heyk</h2></div><span class="profile-badge badge-active">Active</span></div><p>Covertly deployed into a quarantine zone during the Spill. His extraction opens the way to a new job offer.</p></div>
+          </article>
+
+          <article class="character-card card-compact reveal" data-name="Sherie" data-tags="active extraction support">
+            <div class="character-art art-blue"><span class="record-code">FLD · 007</span><div class="chibi-placeholder" aria-label="Chibi artwork placeholder for Sherie" role="img"><span>S</span></div><span class="art-note">Chibi pending</span></div>
+            <div class="character-info"><div class="character-heading"><div><p>Extraction line</p><h2>Sherie</h2></div><span class="profile-badge badge-active">Active</span></div><p>Connected to Heyk's extraction and the job offer that follows. Detailed profile pending.</p></div>
+          </article>
+
+          <article class="character-card card-compact reveal" data-name="Drake" data-tags="active extraction support">
+            <div class="character-art art-amber"><span class="record-code">FLD · 008</span><div class="chibi-placeholder" aria-label="Chibi artwork placeholder for Drake" role="img"><span>D</span></div><span class="art-note">Chibi pending</span></div>
+            <div class="character-info"><div class="character-heading"><div><p>Extraction line</p><h2>Drake</h2></div><span class="profile-badge badge-active">Active</span></div><p>Connected to Heyk's extraction and the job offer that follows. Detailed profile pending.</p></div>
+          </article>
+
+          <article class="character-card card-compact reveal" data-name="Felix" data-tags="placeholder pending">
+            <div class="character-art art-neutral"><span class="record-code">ARC · 009</span><div class="chibi-placeholder" aria-label="Chibi artwork placeholder for Felix" role="img"><span>F</span></div><span class="art-note">Chibi pending</span></div>
+            <div class="character-info"><div class="character-heading"><div><p>Profile pending</p><h2>Felix</h2></div><span class="profile-badge badge-pending">Pending</span></div><p>Registered in the roster. Role, history, affiliations, and visual profile remain to be defined.</p></div>
+          </article>
+
+          <article class="character-card card-compact reveal" data-name="Reiner" data-tags="placeholder pending">
+            <div class="character-art art-neutral"><span class="record-code">ARC · 010</span><div class="chibi-placeholder" aria-label="Chibi artwork placeholder for Reiner" role="img"><span>R</span></div><span class="art-note">Chibi pending</span></div>
+            <div class="character-info"><div class="character-heading"><div><p>Profile pending</p><h2>Reiner</h2></div><span class="profile-badge badge-pending">Pending</span></div><p>Registered in the roster. Role, history, affiliations, and visual profile remain to be defined.</p></div>
+          </article>
+
+          <article class="character-card card-compact reveal" data-name="Yulia" data-tags="placeholder pending">
+            <div class="character-art art-neutral"><span class="record-code">ARC · 011</span><div class="chibi-placeholder" aria-label="Chibi artwork placeholder for Yulia" role="img"><span>Y</span></div><span class="art-note">Chibi pending</span></div>
+            <div class="character-info"><div class="character-heading"><div><p>Profile pending</p><h2>Yulia</h2></div><span class="profile-badge badge-pending">Pending</span></div><p>Registered in the roster. Role, history, affiliations, and visual profile remain to be defined.</p></div>
+          </article>
+
+          <article class="character-card card-compact reveal" data-name="Hiyu" data-tags="placeholder pending">
+            <div class="character-art art-neutral"><span class="record-code">ARC · 012</span><div class="chibi-placeholder" aria-label="Chibi artwork placeholder for Hiyu" role="img"><span>H</span></div><span class="art-note">Chibi pending</span></div>
+            <div class="character-info"><div class="character-heading"><div><p>Profile pending</p><h2>Hiyu</h2></div><span class="profile-badge badge-pending">Pending</span></div><p>Registered in the roster. Role, history, affiliations, and visual profile remain to be defined.</p></div>
+          </article>
+
+          <article class="character-card card-compact reveal" data-name="Natalia" data-tags="placeholder pending">
+            <div class="character-art art-neutral"><span class="record-code">ARC · 013</span><div class="chibi-placeholder" aria-label="Chibi artwork placeholder for Natalia" role="img"><span>N</span></div><span class="art-note">Chibi pending</span></div>
+            <div class="character-info"><div class="character-heading"><div><p>Profile pending</p><h2>Natalia</h2></div><span class="profile-badge badge-pending">Pending</span></div><p>Registered in the roster. Role, history, affiliations, and visual profile remain to be defined.</p></div>
+          </article>
+
+          <article class="character-card card-compact reveal" data-name="Lester" data-tags="placeholder pending">
+            <div class="character-art art-neutral"><span class="record-code">ARC · 014</span><div class="chibi-placeholder" aria-label="Chibi artwork placeholder for Lester" role="img"><span>L</span></div><span class="art-note">Chibi pending</span></div>
+            <div class="character-info"><div class="character-heading"><div><p>Profile pending</p><h2>Lester</h2></div><span class="profile-badge badge-pending">Pending</span></div><p>Registered in the roster. Role, history, affiliations, and visual profile remain to be defined.</p></div>
+          </article>
+
+          <article class="character-card card-compact reveal" data-name="Myka" data-tags="placeholder pending">
+            <div class="character-art art-neutral"><span class="record-code">ARC · 015</span><div class="chibi-placeholder" aria-label="Chibi artwork placeholder for Myka" role="img"><span>M</span></div><span class="art-note">Chibi pending</span></div>
+            <div class="character-info"><div class="character-heading"><div><p>Profile pending</p><h2>Myka</h2></div><span class="profile-badge badge-pending">Pending</span></div><p>Registered in the roster. Role, history, affiliations, and visual profile remain to be defined.</p></div>
+          </article>
+        </div>
+
+        <div class="empty-state" id="empty-state" hidden>
+          <div class="empty-pixel" aria-hidden="true">?</div>
+          <h2>No matching records</h2>
+          <p>Try another name or archive filter.</p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer shell">
+      <a class="brand brand-small" href="index.html"><span class="brand-mark" aria-hidden="true"><span></span></span><span>Magiarchy</span></a>
+      <p>Knowledge is leverage. Secrecy is structure.</p>
+      <span>© <span data-year></span></span>
+    </footer>
+  </body>
+</html>

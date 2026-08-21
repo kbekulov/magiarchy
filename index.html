@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Magiarchy — a hidden world where magic, institutions, and the psyche shape reality.">
+    <meta name="theme-color" content="#101116">
+    <title>Magiarchy — The hidden architecture</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body class="home-page">
+    <a class="skip-link" href="#main-content">Skip to content</a>
+
+    <header class="site-header">
+      <nav class="navbar shell" aria-label="Primary navigation">
+        <a class="brand" href="index.html" aria-label="Magiarchy home">
+          <span class="brand-mark" aria-hidden="true"><span></span></span>
+          <span>Magiarchy</span>
+        </a>
+
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links">
+          <span class="sr-only">Toggle navigation</span>
+          <span></span><span></span>
+        </button>
+
+        <div class="nav-links" id="nav-links">
+          <a href="index.html" aria-current="page">Home</a>
+          <a href="characters.html">Characters</a>
+        </div>
+      </nav>
+    </header>
+
+    <main id="main-content">
+      <section class="hero shell">
+        <div class="hero-copy reveal">
+          <p class="eyebrow"><span class="status-dot"></span> The hidden world is stable</p>
+          <h1>Reality has seams.<br><span>Some can see them.</span></h1>
+          <p class="hero-intro">Magic is not an exception to natural law. It is the art of finding where law bends—and deciding what the cost of leverage should be.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="characters.html">Meet the characters <span aria-hidden="true">→</span></a>
+            <a class="text-link" href="#world">Enter the archive <span aria-hidden="true">↓</span></a>
+          </div>
+        </div>
+
+        <div class="hero-sigil reveal" aria-hidden="true">
+          <div class="sigil sigil-outer"></div>
+          <div class="sigil sigil-middle"></div>
+          <div class="sigil sigil-inner"></div>
+          <div class="sigil-core">
+            <span></span><span></span><span></span><span></span>
+          </div>
+          <div class="sigil-label sigil-label-one">SYS / 01</div>
+          <div class="sigil-label sigil-label-two">STABLE</div>
+        </div>
+      </section>
+
+      <section class="world-section shell" id="world" aria-labelledby="world-title">
+        <div class="section-heading reveal">
+          <div>
+            <p class="eyebrow">World index</p>
+            <h2 id="world-title">A civilization under pressure</h2>
+          </div>
+          <p>Institutions hold the visible world together. The Magi work beneath it, containing the nightmares that human pressure makes real.</p>
+        </div>
+
+        <div class="signal-grid">
+          <article class="signal-card reveal">
+            <span class="signal-number">01</span>
+            <div>
+              <h3>The Magi</h3>
+              <p>Rare operators who manipulate the pressure points of natural law through precision, restraint, and consequence.</p>
+            </div>
+          </article>
+          <article class="signal-card reveal">
+            <span class="signal-number">02</span>
+            <div>
+              <h3>The balance</h3>
+              <p>Church, state, aristocracy, intelligence, and magical governance survive through uneasy mutual dependence.</p>
+            </div>
+          </article>
+          <article class="signal-card reveal">
+            <span class="signal-number">03</span>
+            <div>
+              <h3>The breach</h3>
+              <p>When the soul of a city destabilizes, private nightmares cross into matter—and threaten public reality.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="featured-section shell" aria-labelledby="featured-title">
+        <div class="featured-panel reveal">
+          <div class="featured-copy">
+            <p class="eyebrow">Personnel archive</p>
+            <h2 id="featured-title">Every structure has a human fault line.</h2>
+            <p>Explore the people caught between visible authority and invisible contingency.</p>
+            <a class="button button-secondary" href="characters.html">Open character index <span aria-hidden="true">→</span></a>
+          </div>
+          <div class="pixel-party" aria-hidden="true">
+            <div class="mini-chibi mini-chibi-one"><span>L</span></div>
+            <div class="mini-chibi mini-chibi-two"><span>K</span></div>
+            <div class="mini-chibi mini-chibi-three"><span>H</span></div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer shell">
+      <a class="brand brand-small" href="index.html"><span class="brand-mark" aria-hidden="true"><span></span></span><span>Magiarchy</span></a>
+      <p>Knowledge is leverage. Secrecy is structure.</p>
+      <span>© <span data-year></span></span>
+    </footer>
+  </body>
+</html>
