@@ -32,29 +32,47 @@
       </nav>
     </header>
 
-    <main id="main-content">
-      <section class="roster-header shell">
+    <main class="app-main" id="main-content">
+      <div class="characters-workspace shell">
+        <aside class="archive-sidebar" aria-label="Character archive controls">
+          <div class="workspace-title">
+            <div><span class="workspace-icon" aria-hidden="true">A</span><strong>Personnel archive</strong></div>
+          </div>
+          <div class="archive-search-wrap">
+            <label class="search-field">
+              <svg aria-hidden="true" viewBox="0 0 24 24"><path d="m21 21-4.35-4.35m2.35-5.65a8 8 0 1 1-16 0 8 8 0 0 1 16 0Z"/></svg>
+              <input id="character-search" type="search" placeholder="Search records" autocomplete="off">
+            </label>
+          </div>
+          <div class="archive-filter-group filter-group" role="group" aria-label="Filter characters">
+            <p>Archive views</p>
+            <button class="filter-chip is-active" type="button" data-filter="all" aria-pressed="true"><span aria-hidden="true">#</span> All characters</button>
+            <button class="filter-chip" type="button" data-filter="profiled" aria-pressed="false"><span aria-hidden="true">◆</span> Profiled</button>
+            <button class="filter-chip" type="button" data-filter="active" aria-pressed="false"><span aria-hidden="true">●</span> Active</button>
+            <button class="filter-chip" type="button" data-filter="restricted" aria-pressed="false"><span aria-hidden="true">⊘</span> Restricted</button>
+          </div>
+          <div class="operator-panel">
+            <span class="operator-avatar" aria-hidden="true">SYS</span>
+            <div><strong>Archive system</strong><span><i></i> Online</span></div>
+            <span aria-hidden="true">•••</span>
+          </div>
+        </aside>
+
+        <div class="character-main-pane">
+          <header class="feed-header">
+            <div><span aria-hidden="true">#</span><strong>characters</strong><i></i><p>Personnel records and field status</p></div>
+            <span class="feed-status"><span class="status-dot"></span> Archive online</span>
+          </header>
+
+      <section class="roster-header">
         <div class="roster-title reveal">
           <p class="eyebrow">Personnel archive / 15 records</p>
           <h1>Characters</h1>
           <p>Those who hold the structure together, those who undermine it, and those still waiting in the margins.</p>
         </div>
-
-        <div class="roster-tools reveal">
-          <label class="search-field">
-            <svg aria-hidden="true" viewBox="0 0 24 24"><path d="m21 21-4.35-4.35m2.35-5.65a8 8 0 1 1-16 0 8 8 0 0 1 16 0Z"/></svg>
-            <input id="character-search" type="search" placeholder="Search the archive" autocomplete="off">
-          </label>
-          <div class="filter-group" role="group" aria-label="Filter characters">
-            <button class="filter-chip is-active" type="button" data-filter="all" aria-pressed="true">All</button>
-            <button class="filter-chip" type="button" data-filter="profiled" aria-pressed="false">Profiled</button>
-            <button class="filter-chip" type="button" data-filter="active" aria-pressed="false">Active</button>
-            <button class="filter-chip" type="button" data-filter="restricted" aria-pressed="false">Restricted</button>
-          </div>
-        </div>
       </section>
 
-      <section class="roster-section shell" aria-live="polite">
+      <section class="roster-section" aria-live="polite">
         <div class="roster-meta">
           <p><span id="result-count">15</span> records visible</p>
           <span class="archive-state"><span class="status-dot"></span> Archive online</span>
@@ -159,12 +177,8 @@
           <p>Try another name or archive filter.</p>
         </div>
       </section>
+        </div>
+      </div>
     </main>
-
-    <footer class="site-footer shell">
-      <a class="brand brand-small" href="index.html"><span class="brand-mark" aria-hidden="true"><span></span></span><span>Magiarchy</span></a>
-      <p>Knowledge is leverage. Secrecy is structure.</p>
-      <span>© <span data-year></span></span>
-    </footer>
   </body>
 </html>

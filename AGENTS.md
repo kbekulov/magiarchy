@@ -8,7 +8,7 @@
 
 ## Product and design direction
 
-- Use a dark, flat, minimal palette inspired by Discord's UI/UX patterns, while keeping the visual identity original to Magiarchy.
+- Use a dark, flat, minimal palette inspired specifically by the Discord desktop app's UI/UX patterns (layered workspace panels, compact navigation, channel/member-list logic, and utility-first density), not Discord's marketing website, while keeping the visual identity original to Magiarchy.
 - Keep interactions professional and accessible, with smooth, restrained animations and a functional reduced-motion mode.
 - Pixel-art and chibi imagery are recurring visual motifs. Do not substitute final character art without an approved source.
 - The site contains multiple individually designed pages connected by a persistent top navigation bar.
