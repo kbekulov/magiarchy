@@ -7,5 +7,14 @@
     "updated": "2026-08-22",
     "description": "A dialogue on the nature, secrecy, religion, and politics of Magi.",
     "speakers": ["Journalist", "Fionn"]
+  },
+  {
+    "slug": "world-foundation",
+    "title": "How the Hidden World Works",
+    "topic": "World Foundation",
+    "file": "world-foundation.md",
+    "updated": "2026-08-22",
+    "description": "A direct guide to magic, Holumns, hidden history, political balance, and the setting's central conflict.",
+    "speakers": ["World Archive"]
   }
 ]
