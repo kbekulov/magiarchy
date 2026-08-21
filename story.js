@@ -11,6 +11,44 @@ const chapterError = document.querySelector('#chapter-error');
 const chapterCrumb = document.querySelector('#chapter-crumb');
 const chapterReaderCharacters = document.querySelector('#chapter-reader-characters');
 const chapterEventList = document.querySelector('#chapter-event-list');
+const timelineTrack = document.querySelector('.timeline-track');
+
+function initializeTimelineDrag() {
+  if (!timelineTrack) return;
+
+  let activePointerId = null;
+  let pointerStartX = 0;
+  let scrollStartX = 0;
+
+  function finishDrag(event) {
+    if (event.pointerId !== activePointerId) return;
+    if (timelineTrack.hasPointerCapture(event.pointerId)) timelineTrack.releasePointerCapture(event.pointerId);
+    timelineTrack.classList.remove('is-dragging');
+    activePointerId = null;
+  }
+
+  timelineTrack.addEventListener('pointerdown', (event) => {
+    if (event.pointerType !== 'mouse' || event.button !== 0) return;
+    activePointerId = event.pointerId;
+    pointerStartX = event.clientX;
+    scrollStartX = timelineTrack.scrollLeft;
+    timelineTrack.setPointerCapture(event.pointerId);
+    timelineTrack.classList.add('is-dragging');
+  });
+
+  timelineTrack.addEventListener('pointermove', (event) => {
+    if (event.pointerId !== activePointerId) return;
+    event.preventDefault();
+    timelineTrack.scrollLeft = scrollStartX - (event.clientX - pointerStartX);
+  });
+
+  timelineTrack.addEventListener('pointerup', finishDrag);
+  timelineTrack.addEventListener('pointercancel', finishDrag);
+  timelineTrack.addEventListener('lostpointercapture', () => {
+    timelineTrack.classList.remove('is-dragging');
+    activePointerId = null;
+  });
+}
 
 function appendChapterInline(text, parent) {
   const tokenPattern = /(\*\*[^*]+\*\*|\*[^*]+\*|`[^`]+`)/g;
@@ -200,4 +238,5 @@ async function initializeStory() {
   }
 }
 
+initializeTimelineDrag();
 initializeStory();
