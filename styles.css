@@ -3693,6 +3693,15 @@ a.status-member:hover {
   padding: 22px 18px 24px;
 }
 
+.personality-summary {
+  margin: 0;
+  padding: 0 0 19px;
+  border-bottom: 1px solid #3a3c42;
+  color: #c9cbd1;
+  font-size: .7rem;
+  line-height: 1.65;
+}
+
 .personality-row > div {
   display: flex;
   align-items: center;
@@ -3722,6 +3731,13 @@ a.status-member:hover {
   height: 100%;
   border-radius: inherit;
   background: linear-gradient(90deg, #5865f2, #8b95ff);
+}
+
+.personality-row > p {
+  margin: 9px 0 0;
+  color: var(--subtle);
+  font-size: .64rem;
+  line-height: 1.5;
 }
 
 .biography-stages,

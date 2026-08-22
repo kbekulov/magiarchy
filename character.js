@@ -1,10 +1,16 @@
 const profileSeeds = [
   {
-    slug: 'lynleit', name: 'Lynleit', code: 'MSF · 001', role: 'Displaced heir and strategist', factions: ['MSF', 'Magiarchy'], image: 'media/gallery/images/chibis/chibi_lynleit_1.png', accent: 'blue',
-    summary: 'An ethical strategist forced to rebuild her authority after being blamed for Fionn\'s murder and driven out of MSF.',
-    visual: 'Long dark hair, tailored blue fieldwear, and controlled magical light', palette: 'Midnight blue, black, silver, cold cyan', traits: ['Controlled', 'Protective', 'Strategic'],
-    origin: 'Raised close to MSF leadership, Lynleit learns early that trust must be built as carefully as any intelligence network.', rupture: 'Fionn is murdered, Helena takes control, and Lynleit is framed and exiled from the institution she expected to inherit.', focus: 'She must recover her name without becoming as ruthless as the people who took it from her.', future: 'After restoring MSF, she disappears and later returns as an elusive outsider carrying a secret she refuses to share.',
-    ally: 'Kyrien', allyNote: 'Her most capable independent ally and the person she eventually trusts with MSF.', rival: 'Helena', rivalNote: 'Her stepmother, political usurper, and the architect of her exile.', goal: 'Reclaim MSF without surrendering the ethics that make it worth saving.',
+    slug: 'lynleit', name: 'Lynleit', code: 'MSF · 001', role: 'Displaced heir and people-centered strategist', factions: ['MSF', 'Magiarchy'], image: 'media/gallery/images/chibis/chibi_lynleit_1.png', accent: 'blue', materialStatus: 'Canon traits + mock details',
+    summary: 'An ENFJ leader whose people-first instinct is sharpened by unusually strong long-range intuition. She reads trust, morale, legitimacy, and the direction events are taking as parts of the same structure.',
+    visual: 'Long dark hair, tailored blue fieldwear, controlled magical light, and a composed warmth held deliberately in reserve', palette: 'Midnight blue, black, silver, cold cyan',
+    personalitySummary: 'Lynleit can read hidden structures with an inward precision that resembles an INFJ, but priority defines her. When pressure becomes real, she moves toward people, assumes responsibility, and measures strategy by its human consequences. Her warmth is deliberate and structurally aware rather than exuberant.',
+    traits: [
+      { label: 'Relational leadership', score: 95, note: 'Her first instinct in crisis is to read trust, morale, legitimacy, shared burden, and the emotional field around her.' },
+      { label: 'Strategic foresight', score: 92, note: 'Her unusually strong intuition identifies long-range patterns and what events are becoming before most people can name the change.' },
+      { label: 'Private introspection', score: 86, note: 'In private she is comfortable disappearing into solitude, following symbolic threads, and processing difficult emotion internally.' }
+    ],
+    origin: 'Raised close to MSF leadership, Lynleit learns that trust must be built as carefully as any intelligence network. Away from responsibility, she follows symbolic and intellectual threads and quietly processes love, jealousy, anger, and uncertainty on her own.', rupture: 'Fionn is murdered, Helena takes control, and Lynleit is framed and exiled. Under pressure, her attention turns outward: she reads the emotional field, protects shared morale, and accepts responsibility for consequences that are larger than herself.', focus: 'She can see what events are becoming with unnerving precision, yet still feels responsible for every person caught inside that future. Her habit of processing difficult emotions alone can turn restraint into distance when others most need access to her.', future: 'After restoring MSF, she disappears and later returns as an elusive outsider. Solitude has made her wiser and more precise, but she still refuses to explain herself, rejoin the agency, or share the secret she has protected.',
+    ally: 'Kyrien', allyNote: 'Her most capable independent ally. She treats their trust as shared infrastructure, even while processing the most vulnerable parts of their bond in private.', rival: 'Helena', rivalNote: 'Her stepmother, political usurper, and the architect of an exile that attacks both Lynleit\'s identity and her legitimacy.', goal: 'Restore legitimate leadership, rebuild shared trust, and protect morale without reducing people to pieces in a strategic design.',
     beats: ['The Heir Apparent', 'The Accusation', 'A War from Exile', 'The Unexplained Return']
   },
   {
@@ -191,6 +197,7 @@ function renderProfile(profile) {
   document.title = `${profile.name} - Characters - Magiarchy`;
   document.querySelector('#character-crumb').textContent = profile.name;
   document.querySelector('#character-profile-code').textContent = profile.code;
+  document.querySelector('#character-profile-material').textContent = profile.materialStatus ?? 'Mock profile material';
   document.querySelector('#character-profile-role').textContent = profile.role;
   document.querySelector('#character-profile-name').textContent = profile.name;
   document.querySelector('#character-profile-summary').textContent = profile.summary;
@@ -237,16 +244,19 @@ function renderProfile(profile) {
   });
 
   const personality = document.querySelector('#character-personality');
+  if (profile.personalitySummary) personality.append(createElement('p', 'personality-summary', profile.personalitySummary));
   const scores = [84, 72, 78];
   profile.traits.forEach((trait, index) => {
+    const traitData = typeof trait === 'string' ? { label: trait, score: scores[index] } : trait;
     const row = createElement('div', 'personality-row');
     const label = createElement('div');
-    label.append(createElement('strong', '', trait), createElement('span', '', `${scores[index]} / 100`));
+    label.append(createElement('strong', '', traitData.label), createElement('span', '', `${traitData.score} / 100`));
     const meter = createElement('span', 'personality-meter');
     const fill = createElement('i');
-    fill.style.width = `${scores[index]}%`;
+    fill.style.width = `${traitData.score}%`;
     meter.append(fill);
     row.append(label, meter);
+    if (traitData.note) row.append(createElement('p', '', traitData.note));
     personality.append(row);
   });
 
