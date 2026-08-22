@@ -18,6 +18,8 @@ The country modernized without erasing its older institutions. Modern ministries
 
 Narvea historically became a center of European diplomacy. Opposing powers gathered there to resolve disputes before they escalated into open conflict, giving the duchy influence far beyond its size or military strength.
 
+During the Napoleonic Wars, Narvea played an important and constructive role in containing the continental crisis. The settlements of this period also began shaping the country's borders into their modern form.
+
 In 1917, negotiations held in Narvea prevented the crisis in Russia from becoming a revolution. In 1939, another settlement stopped escalation between European powers and prevented a major continental war. These agreements allowed European borders and political history to develop along a different course.
 
 That diplomatic legacy made multilingualism part of Narvean public culture. People in authority are expected to know several languages, but the custom is not limited to officials. Ordinary Narveans may switch languages during everyday conversation for precision, courtesy, emphasis, or habit, even when diplomacy is nowhere near the room.
