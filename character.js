@@ -1,6 +1,6 @@
 const profileSeeds = [
   {
-    slug: 'lynleit', name: 'Lynleit', code: 'MSF · 001', role: 'Displaced heir and people-centered strategist', factions: ['MSF', 'Magiarchy'], image: 'media/gallery/images/chibis/chibi_lynleit_1.png', accent: 'blue', materialStatus: 'Canon traits + mock details',
+    slug: 'lynleit', name: 'Lynleit', code: 'MSF · 001', role: 'Displaced heir and people-centered strategist', factions: ['MSF', 'Magiarchy'], accent: 'blue', materialStatus: 'Canon traits + mock details',
     summary: 'An ENFJ (strong Ni) leader whose people-first instinct is sharpened by unusually strong long-range intuition. She reads trust, morale, legitimacy, and the direction events are taking as parts of the same structure.',
     visual: 'Long dark hair, tailored blue fieldwear, controlled magical light, and a composed warmth held deliberately in reserve', palette: 'Midnight blue, black, silver, cold cyan',
     personalitySummary: 'Lynleit can read hidden structures with an inward precision that resembles an INFJ, but priority defines her. When pressure becomes real, she moves toward people, assumes responsibility, and measures strategy by its human consequences. Her warmth is deliberate and structurally aware rather than exuberant.',
@@ -14,7 +14,7 @@ const profileSeeds = [
     beats: ['The Heir Apparent', 'The Accusation', 'A War from Exile', 'The Unexplained Return']
   },
   {
-    slug: 'kyrien', name: 'Kyrien', code: 'MSF · 002', role: 'Independent operator and reluctant director', factions: ['Independent'], image: 'media/gallery/images/chibis/chibi_kyrien_1.png', accent: 'amber',
+    slug: 'kyrien', name: 'Kyrien', code: 'MSF · 002', role: 'Independent operator and reluctant director', factions: ['Independent'], accent: 'amber',
     summary: 'A non-Magus tactician who survives by understanding systems, then inherits responsibility for an agency built to confront magic.',
     visual: 'Practical layers, concealed tools, and a silhouette built for movement', palette: 'Charcoal, muted amber, worn steel, off-white', traits: ['Observant', 'Self-reliant', 'Adaptive'],
     origin: 'Kyrien develops his value outside formal institutions by finding the failure points that trained specialists overlook.', rupture: 'The Spill pulls him into Lynleit\'s struggle and turns a temporary alliance into a lasting responsibility.', focus: 'He must direct Magi without sharing their perception of the world or allowing that difference to weaken his authority.', future: 'He keeps MSF functional while Lynleit remains absent, unaware that she is also hiding their son from him.',
@@ -22,7 +22,7 @@ const profileSeeds = [
     beats: ['Outside the System', 'Alliance under Pressure', 'The Director without Magic', 'The Secret Kept from Him']
   },
   {
-    slug: 'helena', name: 'Helena', code: 'MSF · 003', role: 'Political usurper', factions: ['MSF'], image: 'media/gallery/images/chibis/chibi_helena_1.png', accent: 'red',
+    slug: 'helena', name: 'Helena', code: 'MSF · 003', role: 'Political usurper', factions: ['MSF'], accent: 'red',
     summary: 'A patient political operator who converts private grief and institutional uncertainty into control of MSF.',
     visual: 'Severe tailoring, immaculate posture, and an intentionally unreadable expression', palette: 'Oxblood, black, ivory, muted gold', traits: ['Composed', 'Possessive', 'Calculating'],
     origin: 'Helena learns to read MSF as a hierarchy of loyalties rather than a simple intelligence service.', rupture: 'Fionn\'s death creates the opening she needs to seize control and make Lynleit the official enemy.', focus: 'Her authority depends on keeping the accusation intact while the Spill exposes everything MSF failed to understand.', future: 'Every measure used to secure her position narrows the number of people she can still trust.',
@@ -30,7 +30,7 @@ const profileSeeds = [
     beats: ['Reading the Institution', 'The Opening', 'Control through Accusation', 'A Throne under Pressure']
   },
   {
-    slug: 'tien', name: 'Tien', code: 'MSF · 004', role: 'Covert enforcer', factions: ['Independent'], image: 'media/gallery/images/chibis/chibi_tien_1.png', accent: 'violet',
+    slug: 'tien', name: 'Tien', code: 'MSF · 004', role: 'Covert enforcer', factions: ['Independent'], accent: 'violet',
     summary: 'A concealed force used for pursuit and pressure, defined less by public allegiance than by the precision of assigned work.',
     visual: 'Low-profile fieldwear, obscured identifiers, and a deliberately forgettable outline', palette: 'Deep violet, graphite, smoke grey, black', traits: ['Silent', 'Precise', 'Relentless'],
     origin: 'Tien builds a reputation in work that is most successful when nobody can prove it happened.', rupture: 'Helena deploys Tien against Lynleit and Kyrien as MSF\'s internal conflict leaves official channels behind.', focus: 'Each successful pursuit makes it harder to tell whether Tien controls the mission or the mission controls Tien.', future: 'Kyrien becomes both an operational rival and evidence that similar skills can serve a different code.',
@@ -38,7 +38,7 @@ const profileSeeds = [
     beats: ['Work without a Record', 'Helena\'s Shadow', 'The Counter-Operator', 'No Safe Exit']
   },
   {
-    slug: 'fionn', name: 'Fionn', code: 'ARC · 005', role: 'Magiarch and MSF founder', factions: ['MSF', 'Magiarchy'], image: 'media/gallery/images/chibis/chibi_fionn_1.png', accent: 'neutral',
+    slug: 'fionn', name: 'Fionn', code: 'ARC · 005', role: 'Magiarch and MSF founder', factions: ['MSF', 'Magiarchy'], accent: 'neutral',
     summary: 'Publicly the director of MSF and secretly the country\'s Magiarch, Fionn holds two systems together until both demand him at once.',
     visual: 'Formal authority softened by practical details and an old ceremonial restraint', palette: 'Stone, black, muted blue, antique brass', traits: ['Measured', 'Secretive', 'Responsible'],
     origin: 'Fionn creates MSF with a public intelligence purpose and a hidden structure prepared for magical crisis.', rupture: 'Political strife inside MSF distracts him when the Spill requires his duties as Magiarch.', focus: 'The secrecy protecting both offices also prevents either institution from understanding the burden carried between them.', future: 'His murder turns unfinished plans into an inheritance that Lynleit and Kyrien must interpret without him.',
@@ -46,7 +46,7 @@ const profileSeeds = [
     beats: ['Two Offices', 'The Hidden Purpose of MSF', 'Distracted during the Spill', 'The Inheritance after Death']
   },
   {
-    slug: 'heyk', name: 'Heyk', code: 'FLD · 006', role: 'Government field operative', factions: ['Government'], image: 'media/gallery/images/chibis/chibi_heyk_1.png', accent: 'green',
+    slug: 'heyk', name: 'Heyk', code: 'FLD · 006', role: 'Government field operative', factions: ['Government'], accent: 'green',
     summary: 'A government operative sent into a quarantine whose official explanation becomes less credible with every step.',
     visual: 'Field equipment adapted beyond regulation and kept ready for rapid extraction', palette: 'Dark green, utility black, concrete, signal orange', traits: ['Practical', 'Suspicious', 'Decisive'],
     origin: 'Heyk trusts preparation, command structure, and the assumption that every threat has a material explanation.', rupture: 'Deployment into the quarantined park confronts him with disappearances that no conventional briefing can explain.', focus: 'He must complete the mission while deciding how much evidence can be reported without destroying his own credibility.', future: 'The extraction leaves him with a job offer and a place inside a conflict the government still cannot name.',
@@ -54,7 +54,7 @@ const profileSeeds = [
     beats: ['A Conventional Operative', 'Into the Quarantine', 'The Impossible Extraction', 'The Offer after Survival']
   },
   {
-    slug: 'sherie', name: 'Sherie', code: 'FLD · 007', role: 'Government extraction support', factions: ['Government'], image: null, accent: 'blue',
+    slug: 'sherie', name: 'Sherie', code: 'FLD · 007', role: 'Government extraction support', factions: ['Government'], accent: 'blue',
     summary: 'An extraction specialist positioned at the boundary between a government operation and a reality its briefings cannot describe.',
     visual: 'Compact support gear, visible communications equipment, and a clean operational silhouette', palette: 'Navy, slate, white, emergency blue', traits: ['Reliable', 'Methodical', 'Guarded'],
     origin: 'Sherie becomes valuable by keeping unstable field operations connected to the people waiting outside them.', rupture: 'The Spill turns a controlled extraction into a chain of decisions made with incomplete information.', focus: 'She must choose when following protocol protects the team and when it only protects the institution.', future: 'What she records during the operation may become more dangerous than what the public is allowed to see.',
@@ -62,7 +62,7 @@ const profileSeeds = [
     beats: ['Behind the Field Team', 'Signals from the Park', 'Protocol Breaks', 'The Record Nobody Wants']
   },
   {
-    slug: 'drake', name: 'Drake', code: 'FLD · 008', role: 'Government extraction lead', factions: ['Government'], image: 'media/gallery/images/chibis/chibi_drake_1.png', accent: 'amber',
+    slug: 'drake', name: 'Drake', code: 'FLD · 008', role: 'Government extraction lead', factions: ['Government'], accent: 'amber',
     summary: 'A controlled government figure whose extraction decisions pull him from institutional certainty into the hidden conflict.',
     visual: 'Formal field attire, restrained insignia, and an immaculate profile under pressure', palette: 'Black, burgundy, silver, muted amber', traits: ['Commanding', 'Disciplined', 'Skeptical'],
     origin: 'Drake advances by giving uncertain operations a clear hierarchy and a measurable objective.', rupture: 'Heyk\'s quarantine extraction forces him to authorize choices that have no place in a normal chain of command.', focus: 'Admitting what happened would threaten the institution, but denying it would leave the next team unprepared.', future: 'He becomes a bridge between government authority and the people who understand the Spill better than it does.',
@@ -70,7 +70,7 @@ const profileSeeds = [
     beats: ['Command by Procedure', 'The Extraction Order', 'An Unreportable Outcome', 'Between Two Systems']
   },
   {
-    slug: 'felix', name: 'Felix', code: 'ARC · 009', role: 'MSF specialist', factions: ['MSF'], image: 'media/gallery/images/chibis/chibi_felix_1.png', accent: 'neutral',
+    slug: 'felix', name: 'Felix', code: 'ARC · 009', role: 'MSF specialist', factions: ['MSF'], accent: 'neutral',
     summary: 'A provisional MSF specialist whose ordinary assignment becomes a test of what loyalty means after the agency fractures.',
     visual: 'Loose fieldwear, fast movement, and one bright accent against neutral equipment', palette: 'Grey, black, bright blue, rust orange', traits: ['Energetic', 'Direct', 'Loyal'],
     origin: 'Felix joins MSF expecting clear missions, internal competence, and leaders who understand the full picture.', rupture: 'Fionn\'s death and Lynleit\'s accusation divide the agency before Felix can decide which version of MSF is real.', focus: 'Loyalty to colleagues begins pulling against loyalty to the command structure.', future: 'The smaller post-Spill agency offers him a chance to choose its purpose instead of merely inheriting it.',
@@ -78,7 +78,7 @@ const profileSeeds = [
     beats: ['Joining the Roster', 'Orders after Fionn', 'Choosing Whom to Trust', 'Building the Smaller MSF']
   },
   {
-    slug: 'reiner', name: 'Reiner', code: 'ARC · 010', role: 'MSF analyst', factions: ['MSF'], image: 'media/gallery/images/chibis/chibi_reiner_1.png', accent: 'neutral',
+    slug: 'reiner', name: 'Reiner', code: 'ARC · 010', role: 'MSF analyst', factions: ['MSF'], accent: 'neutral',
     summary: 'A provisional analyst who notices the pattern behind the Spill before he understands the world capable of producing it.',
     visual: 'Layered office-field clothing, annotated tools, and a deliberately understated presence', palette: 'Graphite, ash, muted teal, paper white', traits: ['Analytical', 'Patient', 'Cautious'],
     origin: 'Reiner earns trust by finding relationships inside information that other people dismiss as noise.', rupture: 'The disappearances produce a pattern that is statistically clear and institutionally impossible.', focus: 'He must act on conclusions he cannot yet explain without exposing himself as unreliable.', future: 'Learning that magic exists turns his analytical discipline into one of the rebuilt MSF\'s most useful safeguards.',
@@ -86,7 +86,7 @@ const profileSeeds = [
     beats: ['The Quiet Analyst', 'A Pattern of Vanishings', 'Evidence without a Theory', 'Learning the Hidden Rules']
   },
   {
-    slug: 'yulia', name: 'Yulia', code: 'ARC · 011', role: 'Independent witness', factions: ['Independent'], image: 'media/gallery/images/chibis/chibi_yulia_1.png', accent: 'neutral',
+    slug: 'yulia', name: 'Yulia', code: 'ARC · 011', role: 'Independent witness', factions: ['Independent'], accent: 'neutral',
     summary: 'An independent figure whose personal encounter with the Spill makes official silence impossible to accept.',
     visual: 'Civilian layers, a strong color accent, and keepsakes treated as practical equipment', palette: 'Cream, charcoal, muted red, pale gold', traits: ['Empathetic', 'Persistent', 'Defiant'],
     origin: 'Yulia lives outside the institutions that quietly shape the hidden world and expects answers from visible authorities.', rupture: 'A disappearance connected to the park gives her a reason to challenge the quarantine\'s official story.', focus: 'Every useful answer requires trusting people who admit less than they clearly know.', future: 'Her refusal to forget makes her both a liability to secrecy and a potential ally to those resisting it.',
@@ -94,7 +94,7 @@ const profileSeeds = [
     beats: ['Life outside the Archive', 'Someone Goes Missing', 'Against the Quarantine Story', 'A Witness Who Remembers']
   },
   {
-    slug: 'hiyu', name: 'Hiyu', code: 'ARC · 012', role: 'Independent researcher', factions: ['Independent'], image: 'media/gallery/images/chibis/chibi_hiyu_1.png', accent: 'neutral',
+    slug: 'hiyu', name: 'Hiyu', code: 'ARC · 012', role: 'Independent researcher', factions: ['Independent'], accent: 'neutral',
     summary: 'A curious independent researcher who approaches the hidden world through fragments, rumors, and details that should not align.',
     visual: 'Soft civilian clothing mixed with portable research tools and improvised storage', palette: 'Black, soft blue, warm grey, white', traits: ['Curious', 'Inventive', 'Restless'],
     origin: 'Hiyu collects discarded explanations and learns that the same impossible details recur in unrelated stories.', rupture: 'The park quarantine brings several of those fragments together in one visible place.', focus: 'Getting close enough to prove the theory also means becoming visible to the organizations maintaining secrecy.', future: 'The rebuilt MSF may need Hiyu\'s questions even when its leaders dislike where those questions lead.',
@@ -102,7 +102,7 @@ const profileSeeds = [
     beats: ['Collecting Impossibilities', 'The Park Connects Them', 'Too Close to the Hidden World', 'A Researcher MSF Cannot Ignore']
   },
   {
-    slug: 'natalia', name: 'Natalia', code: 'ARC · 013', role: 'Private investigator and hidden Magiarchy contact', factions: ['Private Eye', 'Magiarchy'], image: 'media/gallery/images/chibis/chibi_natalia_1.png', accent: 'neutral',
+    slug: 'natalia', name: 'Natalia', code: 'ARC · 013', role: 'Private investigator and hidden Magiarchy contact', factions: ['Private Eye', 'Magiarchy'], accent: 'neutral',
     summary: 'A private investigator who can cross between ordinary cases and Magiarchy knowledge without fully belonging to either world.',
     visual: 'Professional citywear, compact case tools, and magical details hidden in plain sight', palette: 'Black, wine red, parchment, muted violet', traits: ['Perceptive', 'Dry-witted', 'Private'],
     origin: 'Natalia learns that clients rarely understand the real shape of the problem they are paying her to solve.', rupture: 'A missing-person trail touches the Spill and forces her Magiarchy knowledge into an ordinary investigation.', focus: 'Solving the case requires revealing enough truth to help without exposing the system she is expected to protect.', future: 'Her independence makes her useful to Lynleit, but also difficult for either MSF or the Magiarchy to control.',
@@ -110,7 +110,7 @@ const profileSeeds = [
     beats: ['Cases with Missing Pieces', 'The Spill Enters the File', 'Two Kinds of Secrecy', 'An Investigator between Factions']
   },
   {
-    slug: 'lester', name: 'Lester', code: 'ARC · 014', role: 'Private eye agency partner', factions: ['Private Eye'], image: null, accent: 'neutral',
+    slug: 'lester', name: 'Lester', code: 'ARC · 014', role: 'Private eye agency partner', factions: ['Private Eye'], accent: 'neutral',
     summary: 'A grounded investigator who notices the human cost when Natalia\'s cases begin crossing into a world he was never meant to see.',
     visual: 'Weathered professional clothing, paper records, and dependable analogue tools', palette: 'Brown, charcoal, cream, faded green', traits: ['Grounded', 'Patient', 'Protective'],
     origin: 'Lester builds cases from ordinary motives, physical evidence, and the assumption that people remain understandable.', rupture: 'Natalia\'s Spill investigation produces gaps that no ordinary suspect or conspiracy can explain.', focus: 'He must decide whether trusting Natalia means accepting a truth she still refuses to state directly.', future: 'Once he sees enough of the hidden world, returning to ordinary private work may no longer be possible.',
@@ -118,7 +118,7 @@ const profileSeeds = [
     beats: ['Ordinary Cases', 'A Partner with Another Life', 'Evidence That Cannot Fit', 'Past the Point of Ignorance']
   },
   {
-    slug: 'myka', name: 'Myka', code: 'ARC · 015', role: 'Magic Academy student', factions: ['Magic Academy', 'Magiarchy'], image: 'media/gallery/images/chibis/chibi_myka_1.png', accent: 'neutral',
+    slug: 'myka', name: 'Myka', code: 'ARC · 015', role: 'Magic Academy student', factions: ['Magic Academy', 'Magiarchy'], accent: 'neutral',
     summary: 'A young Magus learning controlled theory while the Spill demonstrates how quickly every lesson can become inadequate.',
     visual: 'Academic uniform elements, experimental accessories, and an expressive magical silhouette', palette: 'Indigo, cream, pale cyan, black', traits: ['Gifted', 'Earnest', 'Impulsive'],
     origin: 'Myka enters the Academy believing disciplined knowledge can make dangerous ability understandable.', rupture: 'The Spill turns distant doctrine into an immediate threat affecting people outside protected magical society.', focus: 'Talent creates pressure to act before training has taught the restraint that action requires.', future: 'Protecting a surviving clue ties Myka to Natalia and a conflict far beyond the Academy\'s controlled exercises.',
@@ -126,7 +126,7 @@ const profileSeeds = [
     beats: ['Learning the Structure', 'Theory Meets the Spill', 'A Clue Worth Protecting', 'Beyond the Academy Walls']
   },
   {
-    slug: 'inspector-leo', name: 'Inspector Leo', code: 'PLC · 016', role: 'Police inspector', factions: ['Police'], image: null, accent: 'blue',
+    slug: 'inspector-leo', name: 'Inspector Leo', code: 'PLC · 016', role: 'Police inspector', factions: ['Police'], accent: 'blue',
     summary: 'A police inspector whose missing-person investigation reaches the edge of a quarantine controlled by authorities above his clearance.',
     visual: 'Practical detective clothing, worn notebook, and restrained police identifiers', palette: 'Navy, grey, white, signal blue', traits: ['Tenacious', 'Procedural', 'Skeptical'],
     origin: 'Leo trusts patient interviews and the belief that every disappearance leaves a human trail.', rupture: 'Searchers vanish after entering the park, then the case is removed from police control under a government quarantine.', focus: 'Following procedure now means abandoning the investigation, while continuing it means challenging his own institution.', future: 'The Church and MSF each know more than they admit, leaving Leo to investigate the people controlling the answers.',
@@ -134,7 +134,7 @@ const profileSeeds = [
     beats: ['The Missing-Person Desk', 'Searchers Vanish Too', 'Locked outside the Quarantine', 'Investigating the Authorities']
   },
   {
-    slug: 'father-mikhail', name: 'Father Mikhail', code: 'CHR · 017', role: 'Church representative', factions: ['The Church'], image: null, accent: 'neutral',
+    slug: 'father-mikhail', name: 'Father Mikhail', code: 'CHR · 017', role: 'Church representative', factions: ['The Church'], accent: 'neutral',
     summary: 'A Church representative sent to observe a crisis that doctrine recognizes, authority fears, and public language cannot name.',
     visual: 'Understated clerical dress, old protective symbols, and no ornamental excess', palette: 'Black, stone, dull gold, deep red', traits: ['Disciplined', 'Compassionate', 'Severe'],
     origin: 'Mikhail is taught that the Church survives by knowing which truths can be acknowledged and which must remain contained.', rupture: 'The Spill creates suffering too visible to dismiss and too dangerous to explain openly.', focus: 'Protecting ordinary people may require cooperating with Magi the Church is prepared to condemn.', future: 'His choices place him between doctrine, institutional survival, and the individuals paying the price for both.',
@@ -193,6 +193,59 @@ function initializeProfileTimelineDrag(track) {
   });
 }
 
+function wildcardPattern(pattern) {
+  const escaped = pattern.replace(/[.+?^${}()|[\]\\]/g, '\\$&').replace(/\*/g, '.*');
+  return new RegExp(`^${escaped}$`, 'i');
+}
+
+async function loadProfilePortrait(profile, portrait, note) {
+  const placeholder = createElement('div', 'profile-portrait-placeholder', profile.name.split(' ').map((part) => part[0]).join(''));
+  placeholder.setAttribute('role', 'img');
+  placeholder.setAttribute('aria-label', `Artwork placeholder for ${profile.name}`);
+  portrait.append(placeholder, note);
+
+  try {
+    const response = await fetch('gallery.html', { cache: 'no-cache' });
+    if (!response.ok) throw new Error(`Gallery catalog returned ${response.status}`);
+
+    const galleryDocument = new DOMParser().parseFromString(await response.text(), 'text/html');
+    const filePattern = wildcardPattern(`char-${profile.slug}-*`);
+    const artworks = Array.from(galleryDocument.querySelectorAll('.gallery-card'))
+      .filter((card) => card.dataset.character === profile.slug && card.dataset.chibi === 'false')
+      .map((card) => card.querySelector('img'))
+      .filter((image) => {
+        const source = image?.getAttribute('src') ?? '';
+        const fileName = source.split('/').pop() ?? '';
+        return source.includes('/characters/') && filePattern.test(fileName);
+      });
+
+    if (!artworks.length) return;
+
+    let selectedIndex = 0;
+    if (artworks.length > 1) {
+      const rotationKey = `magiarchy-profile-portrait-${profile.slug}`;
+      const previousIndex = Number.parseInt(sessionStorage.getItem(rotationKey) ?? '-1', 10);
+      selectedIndex = Number.isInteger(previousIndex) ? (previousIndex + 1) % artworks.length : 0;
+      sessionStorage.setItem(rotationKey, String(selectedIndex));
+    }
+
+    const sourceImage = artworks[selectedIndex];
+    const image = createElement('img');
+    image.src = sourceImage.getAttribute('src');
+    image.alt = `Character artwork of ${profile.name}`;
+    image.width = Number(sourceImage.getAttribute('width')) || 1200;
+    image.height = Number(sourceImage.getAttribute('height')) || 1200;
+    image.decoding = 'async';
+
+    note.textContent = artworks.length > 1
+      ? `Gallery portrait ${selectedIndex + 1} of ${artworks.length}`
+      : 'Gallery portrait';
+    portrait.replaceChildren(image, note);
+  } catch (error) {
+    console.warn(`Could not load gallery portrait for ${profile.name}.`, error);
+  }
+}
+
 function renderProfile(profile) {
   document.title = `${profile.name} - Characters - Magiarchy`;
   document.querySelector('#character-crumb').textContent = profile.name;
@@ -204,20 +257,8 @@ function renderProfile(profile) {
 
   const portrait = document.querySelector('#character-profile-portrait');
   portrait.classList.add(`profile-accent-${profile.accent}`);
-  if (profile.image) {
-    const image = createElement('img');
-    image.src = profile.image;
-    image.alt = `Chibi artwork of ${profile.name}`;
-    image.width = 1024;
-    image.height = 1024;
-    portrait.append(image);
-  } else {
-    const placeholder = createElement('div', 'profile-portrait-placeholder', profile.name.split(' ').map((part) => part[0]).join(''));
-    placeholder.setAttribute('role', 'img');
-    placeholder.setAttribute('aria-label', `Artwork placeholder for ${profile.name}`);
-    portrait.append(placeholder);
-  }
-  portrait.append(createElement('span', 'profile-portrait-note', profile.image ? 'Chibi preview' : 'Chibi pending'));
+  const portraitNote = createElement('span', 'profile-portrait-note', 'Artwork pending');
+  loadProfilePortrait(profile, portrait, portraitNote);
 
   const factions = document.querySelector('#character-profile-factions');
   profile.factions.forEach((faction) => factions.append(createElement('span', `profile-badge ${factionClass(faction)}`, faction)));
