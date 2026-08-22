@@ -9,8 +9,11 @@
     <link rel="icon" href="favicon.svg" type="image/svg+xml">
     <link rel="stylesheet" href="styles.css">
     <script src="script.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2" defer></script>
+    <script src="notes-config.js" defer></script>
+    <script src="notes.js" defer></script>
   </head>
-  <body class="home-page">
+  <body class="home-page" data-notes-page="home">
     <a class="skip-link" href="#main-content">Skip to content</a>
 
     <header class="site-header">
@@ -55,6 +58,15 @@
             </section>
 
             <div class="date-divider"><span>22 August 2026 · Latest updates</span></div>
+
+            <article class="dispatch reveal" id="update-live-page-notes">
+              <div class="dispatch-avatar avatar-green" aria-hidden="true">✎</div>
+              <div class="dispatch-body">
+                <div class="dispatch-author"><strong>Site Update</strong><span>22 Aug 2026 · Live notes</span></div>
+                <p>Page notes now load from secure external storage. Visitors can read them, while the site owner can sign in to add, edit, complete, or remove notes directly from each sidebar.</p>
+                <a class="button button-secondary dispatch-button" href="index.html">View live notes <span aria-hidden="true">→</span></a>
+              </div>
+            </article>
 
             <article class="dispatch reveal" id="update-narvia-city-headings">
               <div class="dispatch-avatar avatar-violet" aria-hidden="true">NC</div>

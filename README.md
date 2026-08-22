@@ -20,4 +20,4 @@ Design and workflow rules for future AI development are maintained in [`AGENTS.m
 
 ## Page notes
 
-Each page has a visible right-hand **Page notes** panel. These notes are intentionally maintained in the page HTML and deployed with the rest of the static site; there is no browser-based editing or persistence layer. Add a `.page-note` article to the relevant page whenever a new user-authored change note needs to be tracked.
+Each page has a visible right-hand **Page notes** panel backed by Supabase. Notes remain publicly readable, while owner authentication enables adding, editing, completing, and deleting notes directly in the sidebar. Static notes in the page HTML remain available as an offline fallback. The browser uses only the project's publishable key, and all write access is protected by Row Level Security.
