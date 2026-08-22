@@ -45,6 +45,17 @@ const resultCount = document.querySelector('#result-count');
 const emptyState = document.querySelector('#empty-state');
 let activeFilter = 'all';
 
+characterCards.forEach((card) => {
+  const characterName = card.dataset.name;
+  if (!characterName) return;
+  const characterSlug = characterName.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+  const profileLink = document.createElement('a');
+  profileLink.className = 'character-card-link';
+  profileLink.href = `character.html?character=${encodeURIComponent(characterSlug)}`;
+  profileLink.setAttribute('aria-label', `Open ${characterName} character profile`);
+  card.prepend(profileLink);
+});
+
 function updateCharacterResults() {
   const query = searchInput?.value.trim().toLowerCase() ?? '';
   let visibleCount = 0;

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Read a character-centered profile and personal timeline from the Magiarchy archive.">
+    <meta name="theme-color" content="#101116">
+    <title>Character Profile - Magiarchy</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <script src="character.js" defer></script>
+  </head>
+  <body class="character-profile-page">
+    <a class="skip-link" href="#main-content">Skip to content</a>
+
+    <header class="site-header">
+      <nav class="navbar shell" aria-label="Primary navigation">
+        <a class="brand" href="index.html" aria-label="Magiarchy home">
+          <span class="brand-mark" aria-hidden="true"><span></span></span>
+          <span>Magiarchy</span>
+        </a>
+
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links">
+          <span class="sr-only">Toggle navigation</span>
+          <span></span><span></span>
+        </button>
+
+        <div class="nav-links" id="nav-links">
+          <a href="index.html">Home</a>
+          <a href="characters.html" aria-current="page">Characters</a>
+          <a href="story.html">Story</a>
+          <a href="music.html">Music</a>
+          <a href="gallery.html">Gallery</a>
+          <a href="docs.html">Docs</a>
+        </div>
+      </nav>
+    </header>
+
+    <main class="app-main" id="main-content">
+      <div class="docs-workspace shell character-profile-workspace">
+        <div class="character-profile-main-pane">
+          <header class="feed-header">
+            <div><span aria-hidden="true">#</span><strong>character-profile</strong><i></i><p>Personal record and story path</p></div>
+            <span class="feed-status"><span class="status-dot"></span> Archive online</span>
+          </header>
+
+          <div class="character-profile-content" id="character-profile-content" hidden>
+            <nav class="document-breadcrumbs character-breadcrumbs" aria-label="Breadcrumb">
+              <a href="characters.html">Characters</a>
+              <span aria-hidden="true">/</span>
+              <span id="character-crumb" aria-current="page">Profile</span>
+            </nav>
+
+            <section class="character-profile-hero reveal" aria-labelledby="character-profile-name">
+              <div class="character-profile-portrait" id="character-profile-portrait"></div>
+              <div class="character-profile-intro">
+                <div class="profile-record-line">
+                  <span id="character-profile-code">ARC</span>
+                  <span>Mock profile material</span>
+                </div>
+                <p class="eyebrow" id="character-profile-role">Character record</p>
+                <h1 id="character-profile-name">Character</h1>
+                <p class="character-profile-summary" id="character-profile-summary"></p>
+                <div class="faction-badges" id="character-profile-factions" role="group" aria-label="Faction associations"></div>
+              </div>
+            </section>
+
+            <section class="character-personal-timeline reveal" aria-labelledby="character-timeline-title">
+              <header class="character-section-header">
+                <div><p class="eyebrow">Their story</p><h2 id="character-timeline-title">Personal timeline</h2></div>
+                <span>Drag or scroll <span aria-hidden="true">→</span></span>
+              </header>
+              <ol class="character-timeline-track" id="character-timeline" tabindex="0" aria-label="Character timeline. Drag with a mouse or scroll horizontally to explore all events."></ol>
+            </section>
+
+            <div class="character-profile-sections">
+              <section class="profile-section profile-appearance reveal" aria-labelledby="appearance-title">
+                <header><span aria-hidden="true">01</span><div><p class="eyebrow">Visual record</p><h2 id="appearance-title">Appearance</h2></div></header>
+                <dl class="appearance-ledger" id="character-appearance"></dl>
+              </section>
+
+              <section class="profile-section profile-personality reveal" aria-labelledby="personality-title">
+                <header><span aria-hidden="true">02</span><div><p class="eyebrow">Behavioral read</p><h2 id="personality-title">Personality</h2></div></header>
+                <div class="personality-spectrum" id="character-personality"></div>
+              </section>
+
+              <section class="profile-section profile-biography reveal" aria-labelledby="biography-title">
+                <header><span aria-hidden="true">03</span><div><p class="eyebrow">Life in three movements</p><h2 id="biography-title">Biography</h2></div></header>
+                <ol class="biography-stages" id="character-biography"></ol>
+              </section>
+
+              <section class="profile-section profile-connections reveal" aria-labelledby="connections-title">
+                <header><span aria-hidden="true">04</span><div><p class="eyebrow">Relationship map</p><h2 id="connections-title">Connections</h2></div></header>
+                <div class="connection-grid" id="character-connections"></div>
+              </section>
+
+              <section class="profile-section profile-conflicts reveal" aria-labelledby="conflicts-title">
+                <header><span aria-hidden="true">05</span><div><p class="eyebrow">Active pressure</p><h2 id="conflicts-title">Conflicts</h2></div></header>
+                <div class="conflict-stack" id="character-conflicts"></div>
+              </section>
+
+              <section class="profile-section profile-motivations reveal" aria-labelledby="motivations-title">
+                <header><span aria-hidden="true">06</span><div><p class="eyebrow">Driving priorities</p><h2 id="motivations-title">Motivations</h2></div></header>
+                <ol class="motivation-list" id="character-motivations"></ol>
+              </section>
+            </div>
+          </div>
+
+          <section class="document-error character-profile-error" id="character-profile-error" hidden>
+            <div class="empty-pixel" aria-hidden="true">?</div>
+            <h1>Character record unavailable</h1>
+            <p>This profile does not exist in the current archive.</p>
+            <a class="button button-secondary" href="characters.html">Return to Characters <span aria-hidden="true">→</span></a>
+          </section>
+        </div>
+
+        <aside class="notes-sidebar" aria-label="Character profile notes">
+          <header class="notes-header"><div><span aria-hidden="true">✎</span><strong>Page notes</strong></div><span>Profile</span></header>
+          <div class="notes-list">
+            <article class="page-note">
+              <div><span>Open</span><span>01</span></div>
+              <h2>Replace mock profile data</h2>
+              <p>Confirm the personal timeline and each profile section when final character material is available.</p>
+            </article>
+          </div>
+          <p class="notes-footnote">Notes are updated with the site code and published through GitHub Pages.</p>
+        </aside>
+      </div>
+    </main>
+  </body>
+</html>
