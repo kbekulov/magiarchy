@@ -1,7 +1,7 @@
 const profileSeeds = [
   {
     slug: 'lynleit', name: 'Lynleit', code: 'MSF · 001', role: 'Displaced heir and people-centered strategist', factions: ['MSF', 'Magiarchy'], image: 'media/gallery/images/chibis/chibi_lynleit_1.png', accent: 'blue', materialStatus: 'Canon traits + mock details',
-    summary: 'An ENFJ leader whose people-first instinct is sharpened by unusually strong long-range intuition. She reads trust, morale, legitimacy, and the direction events are taking as parts of the same structure.',
+    summary: 'An ENFJ (strong Ni) leader whose people-first instinct is sharpened by unusually strong long-range intuition. She reads trust, morale, legitimacy, and the direction events are taking as parts of the same structure.',
     visual: 'Long dark hair, tailored blue fieldwear, controlled magical light, and a composed warmth held deliberately in reserve', palette: 'Midnight blue, black, silver, cold cyan',
     personalitySummary: 'Lynleit can read hidden structures with an inward precision that resembles an INFJ, but priority defines her. When pressure becomes real, she moves toward people, assumes responsibility, and measures strategy by its human consequences. Her warmth is deliberate and structurally aware rather than exuberant.',
     traits: [
