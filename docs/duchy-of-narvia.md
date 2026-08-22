@@ -26,9 +26,9 @@ Exact borders remain provisional until the alternate-history timeline is finaliz
 
 ## The two capitals
 
-### Narvia City
+### Rennel
 
-Narvia City, in the historic Narva region, is the seat of the Crown.
+Rennel, in the historic Narva region, is the seat of the Crown.
 
 It contains the Ducal Palace, court, Privy Council, Guard headquarters, dynastic archives, heraldic offices, and ceremonial institutions. It represents dynasty, continuity, military tradition, and the old state.
 
@@ -38,7 +38,13 @@ Vilen, the Narvian name for Vilnius, is the parliamentary and administrative cap
 
 It contains Parliament, the Prime Minister's office, ministries, major courts, central bureaucracy, and financial institutions. It represents law, administration, commerce, and modern political life.
 
-The Prime Minister travels to Narvia City for formal audiences with the Duke. The Duke travels to Vilen for major constitutional ceremonies, including the opening of Parliament.
+The Prime Minister travels to Rennel for formal audiences with the Duke. The Duke travels to Vilen for major constitutional ceremonies, including the opening of Parliament.
+
+## Turon
+
+Turon is a significant city and the headquarters of MSF. A substantial part of the agency's officer corps is concentrated there, giving MSF a degree of local power that quietly troubles the central government.
+
+If MSF ever chose open defiance, its presence in Turon could support a small rebellion or even an attempt at secession. No such plan is public or active. The possibility survives in private political calculations, giving MSF unspoken leverage in the backrooms of Narvian government.
 
 ## Crown and State
 

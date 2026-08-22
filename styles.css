@@ -3602,6 +3602,9 @@ a.status-member:hover {
 .city-silhouette-state span:nth-child(1) { height: 48%; }
 .city-silhouette-state span:nth-child(2) { height: 68%; }
 .city-silhouette-state span:nth-child(3) { height: 92%; }
+.city-silhouette-msf span:nth-child(1) { height: 62%; }
+.city-silhouette-msf span:nth-child(2) { height: 82%; }
+.city-silhouette-msf span:nth-child(3) { height: 72%; }
 
 .capital-copy {
   padding: 23px;
@@ -3677,6 +3680,30 @@ a.status-member:hover {
   letter-spacing: .09em;
   text-transform: uppercase;
   writing-mode: vertical-rl;
+}
+
+.strategic-city-card {
+  display: grid;
+  grid-template-columns: minmax(260px, .8fr) minmax(0, 1.2fr);
+  overflow: hidden;
+  margin-top: 20px;
+  border: 1px solid #111216;
+  border-radius: 8px;
+  background: #2b2d31;
+}
+
+.strategic-city-card .city-placeholder {
+  min-height: 100%;
+  border-right: 1px solid #3d4047;
+  border-bottom: 0;
+}
+
+.capital-copy > .strategic-city-note {
+  margin-top: 18px;
+  padding: 13px 15px;
+  border-left: 2px solid #747ced;
+  background: #25272b;
+  color: #c8cbd0;
 }
 
 .power-balance {
@@ -4002,6 +4029,7 @@ a.status-member:hover {
 
   .duchy-map-layout,
   .capital-grid,
+  .strategic-city-card,
   .power-balance,
   .rank-system {
     grid-template-columns: 1fr;
@@ -4019,6 +4047,12 @@ a.status-member:hover {
 
   .capital-link b {
     writing-mode: horizontal-tb;
+  }
+
+  .strategic-city-card .city-placeholder {
+    min-height: 260px;
+    border-right: 0;
+    border-bottom: 1px solid #3d4047;
   }
 
   .power-axis {
