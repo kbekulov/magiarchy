@@ -3196,12 +3196,18 @@ a.status-member:hover {
 .duchy-section-heading {
   display: grid;
   max-width: 900px;
-  grid-template-columns: 58px minmax(0, 1fr);
+  grid-template-columns: 132px minmax(0, 1fr);
+  column-gap: 24px;
   margin-bottom: 28px;
 }
 
 .duchy-section-heading > div {
+  display: flex;
   grid-row: 1 / span 2;
+  min-width: 0;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
 }
 
 .duchy-section-heading > div > span {
@@ -3217,15 +3223,17 @@ a.status-member:hover {
 }
 
 .duchy-section-heading h2 {
+  grid-column: 2;
   margin: 3px 0 9px;
   font-family: Georgia, "Times New Roman", serif;
-  font-size: clamp(2rem, 4vw, 3.3rem);
+  font-size: clamp(1.8rem, 3vw, 2.45rem);
   font-weight: 500;
-  letter-spacing: -.04em;
-  line-height: 1.03;
+  letter-spacing: -.025em;
+  line-height: 1.1;
 }
 
 .duchy-section-heading > p {
+  grid-column: 2;
   max-width: 720px;
   margin: 0;
   color: #aeb2ba;
@@ -3844,7 +3852,19 @@ a.status-member:hover {
   }
 
   .duchy-section-heading {
-    grid-template-columns: 46px minmax(0, 1fr);
+    grid-template-columns: 1fr;
+    row-gap: 12px;
+  }
+
+  .duchy-section-heading > div {
+    grid-row: auto;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .duchy-section-heading h2,
+  .duchy-section-heading > p {
+    grid-column: 1;
   }
 
   .duchy-map-placeholder {
