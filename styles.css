@@ -2439,6 +2439,7 @@ a.status-member:hover {
 }
 
 .timeline-marker {
+  position: relative;
   display: grid;
   width: 34px;
   height: 34px;
@@ -2452,6 +2453,30 @@ a.status-member:hover {
   font-size: .56rem;
   font-weight: 800;
   box-shadow: 0 0 0 1px rgba(88, 101, 242, .35);
+}
+
+.timeline-track li.is-chapter-active .timeline-marker {
+  background: #23a55a;
+  box-shadow: 0 0 0 1px rgba(35, 165, 90, .5), 0 0 16px rgba(35, 165, 90, .28);
+}
+
+.timeline-track li.is-chapter-active .timeline-marker::after {
+  position: absolute;
+  inset: -8px;
+  border: 2px solid rgba(35, 165, 90, .75);
+  border-radius: 50%;
+  content: "";
+  pointer-events: none;
+  animation: chapter-timeline-pulse 1.8s ease-out infinite;
+}
+
+.timeline-track li.is-chapter-active h3 {
+  color: #9fe6b7;
+}
+
+@keyframes chapter-timeline-pulse {
+  0% { opacity: .85; transform: scale(.72); }
+  70%, 100% { opacity: 0; transform: scale(1.45); }
 }
 
 .timeline-track small {
@@ -2480,6 +2505,25 @@ a.status-member:hover {
   flex-wrap: wrap;
   gap: 5px;
   margin-top: 18px;
+}
+
+.chapter-card-timeline {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  margin: 13px 0 0;
+  color: #aeb1ba;
+  font-size: .58rem;
+  font-weight: 700;
+}
+
+.chapter-card-timeline > span:first-child {
+  width: 7px;
+  height: 7px;
+  flex: 0 0 auto;
+  border-radius: 50%;
+  background: #23a55a;
+  box-shadow: 0 0 0 3px rgba(35, 165, 90, .1);
 }
 
 .chapter-character-list span {

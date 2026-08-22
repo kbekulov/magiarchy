@@ -146,6 +146,14 @@ function createChapterCard(entry) {
   const description = document.createElement('p');
   description.textContent = entry.description;
 
+  const timelinePosition = document.createElement('div');
+  timelinePosition.className = 'chapter-card-timeline';
+  const timelineDot = document.createElement('span');
+  timelineDot.setAttribute('aria-hidden', 'true');
+  const timelineText = document.createElement('span');
+  timelineText.textContent = `Story phase · ${entry.timelineLabel ?? 'Unassigned'}`;
+  timelinePosition.append(timelineDot, timelineText);
+
   const characters = document.createElement('div');
   characters.className = 'chapter-character-list';
   characters.setAttribute('role', 'group');
@@ -162,16 +170,38 @@ function createChapterCard(entry) {
   arrow.textContent = '→';
   footer.append(date, arrow);
 
-  link.append(top, title, description, characters, footer);
+  link.append(top, title, description, timelinePosition, characters, footer);
   card.append(link);
   return card;
 }
 
 function showChapterLibrary(entries) {
+  setActiveTimelinePhase();
   chapterReaderView.hidden = true;
   chapterLibrary.hidden = false;
   storyHeading.hidden = false;
   chapterCardGrid.replaceChildren(...entries.map(createChapterCard));
+}
+
+function setActiveTimelinePhase(entry) {
+  if (!timelineTrack) return;
+  const phases = [...timelineTrack.querySelectorAll('[data-timeline-phase]')];
+  phases.forEach((phase) => {
+    phase.classList.remove('is-chapter-active');
+    phase.removeAttribute('aria-current');
+  });
+
+  if (!entry?.timelinePhase) return;
+  const activePhase = phases.find((phase) => phase.dataset.timelinePhase === entry.timelinePhase);
+  if (!activePhase) return;
+
+  activePhase.classList.add('is-chapter-active');
+  activePhase.setAttribute('aria-current', 'step');
+  const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  requestAnimationFrame(() => {
+    const centeredPosition = activePhase.offsetLeft - ((timelineTrack.clientWidth - activePhase.offsetWidth) / 2);
+    timelineTrack.scrollTo({ left: Math.max(0, centeredPosition), behavior: reduceMotion ? 'auto' : 'smooth' });
+  });
 }
 
 async function loadChapter(entry) {
@@ -196,6 +226,7 @@ async function loadChapter(entry) {
     return row;
   }));
   chapterSourceLink.href = `story/${entry.file}`;
+  setActiveTimelinePhase(entry);
 
   try {
     const response = await fetch(`story/${entry.file}`);

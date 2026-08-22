@@ -1,17 +1,21 @@
 [
   {
-    "slug": "the-quiet-breach",
+    "slug": "before-the-first-bell",
     "number": "Chapter 01",
-    "title": "The Quiet Breach",
-    "status": "Placeholder draft",
-    "file": "the-quiet-breach.md",
+    "title": "Before the First Bell",
+    "status": "Working draft",
+    "file": "before-the-first-bell.md",
     "updated": "2026-08-22",
-    "description": "A routine containment call forces Lynleit to choose between institutional protocol and Kyrien's warning.",
-    "characters": ["Lynleit", "Kyrien", "Fionn"],
+    "description": "Lynleit and Fionn attend private negotiations at a church before dawn while their MSF escort waits outside and wonders why.",
+    "characters": ["Lynleit", "Fionn", "Felix", "Reiner"],
+    "timelinePhase": "vanishing-point",
+    "timelineLabel": "Vanishing Point",
     "events": [
-      "Lynleit investigates a containment call with deliberately altered readings.",
-      "Kyrien discovers a hidden door that contradicts the official report.",
-      "Lynleit breaks protocol after Fionn orders the cause left untouched."
+      "Lynleit and Fionn arrive at a church before dawn for private negotiations.",
+      "Felix and Reiner are required to wait outside despite serving as their MSF escort.",
+      "Lynleit leaves the meeting early and visibly irritated.",
+      "Felix and Reiner seek gossip, but Lynleit redirects them with a playful tease.",
+      "The park disappearances remain a distant background story that nobody present yet understands."
     ]
   },
   {
@@ -23,6 +27,8 @@
     "updated": "2026-08-22",
     "description": "Heyk enters a sealed district while Drake and Sherie manage an extraction that was never meant to be clean.",
     "characters": ["Heyk", "Drake", "Sherie"],
+    "timelinePhase": "the-quarantine",
+    "timelineLabel": "The Quarantine",
     "events": [
       "Heyk enters a quarantined district where ash moves beneath the streets.",
       "The extraction target reveals a memory that does not belong to him.",
@@ -38,6 +44,8 @@
     "updated": "2026-08-22",
     "description": "Natalia follows a missing name through the city archive and finds Myka protecting the last surviving clue.",
     "characters": ["Natalia", "Myka", "Fionn"],
+    "timelinePhase": "unknowing-convergence",
+    "timelineLabel": "Unknowing Convergence",
     "events": [
       "Natalia finds a missing page hidden from every archive index.",
       "Myka reveals an unaltered copy carrying Fionn's name beside a future date.",
