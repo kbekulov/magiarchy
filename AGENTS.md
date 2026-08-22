@@ -1,8 +1,8 @@
 # Project instructions
 
-- This project is deployed with GitHub Pages at `https://magiarchy2026.bekulov.com`.
+- This project is deployed with GitHub Pages at `https://magiarchy.bekulov.com`.
 - Build and test the project for GitHub Pages. Do not use the Codex Sites extension for hosting or deployment.
-- Preserve the root `CNAME` file with the custom domain `magiarchy2026.bekulov.com`.
+- Preserve the root `CNAME` file with the custom domain `magiarchy.bekulov.com`.
 - After making code changes, commit all task-related changes and push the resulting commit to `origin` before finishing the task.
 - Record every website change, however small, as a concise update entry in the Home-page update feed in `index.html`. Add the newest entry first and include the publication date plus a plain-language summary of what changed.
 - Do not include unrelated user changes in a commit. If a push is blocked, report the blocker and leave the local commit intact.

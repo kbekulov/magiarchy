@@ -1,6 +1,6 @@
 # Magiarchy
 
-The official web home for the Magiarchy story universe, deployed through GitHub Pages at [magiarchy2026.bekulov.com](https://magiarchy2026.bekulov.com).
+The official web home for the Magiarchy story universe, deployed through GitHub Pages at [magiarchy.bekulov.com](https://magiarchy.bekulov.com).
 
 ## Pages
 
