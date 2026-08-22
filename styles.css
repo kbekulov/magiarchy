@@ -3782,7 +3782,7 @@ a.status-member:hover {
 }
 
 .diplomacy-principle > span,
-.diplomacy-records article span,
+.diplomacy-records article div > span,
 .language-protocol span {
   color: #949cff;
   font-size: .58rem;
@@ -3843,10 +3843,19 @@ a.status-member:hover {
   border-bottom: 0;
 }
 
-.diplomacy-records time {
+.diplomacy-records time,
+.diplomacy-records .diplomacy-years {
   color: #f2f3f5;
   font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
   font-size: 1rem;
+}
+
+.diplomacy-years small {
+  display: block;
+  color: #777c86;
+  font-size: .55rem;
+  font-weight: 500;
+  line-height: 1.4;
 }
 
 .diplomacy-records h3 {
