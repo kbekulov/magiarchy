@@ -122,7 +122,7 @@ function createDocumentCard(entry, index) {
 
   const link = document.createElement('a');
   link.className = 'document-card-link';
-  link.href = `docs.html?doc=${encodeURIComponent(entry.slug)}`;
+  link.href = entry.href || `docs.html?doc=${encodeURIComponent(entry.slug)}`;
   link.setAttribute('aria-label', `Read ${entry.title}`);
 
   const top = document.createElement('div');

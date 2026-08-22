@@ -20,6 +20,7 @@
 - Use the right sidebar on each page as a code-managed `Page notes` area for the user's requested changes. Update those notes in the page HTML; do not imply that they can be edited or persisted through the static GitHub Pages UI.
 - Treat notes written by the user as authoritative. Mark completed notes clearly or remove them when the user confirms they are no longer needed.
 - Give each page an architecture suited to its content instead of forcing every page into one generic template.
+- Keep `The Duchy` as a top-level navigation item linking to `duchy.html`. Maintain its concise, bespoke country-profile layout, its breadcrumb back to Docs, and explicit placeholders for the country map and both capital images until approved artwork is supplied.
 - Any clickable card that opens a dedicated page or detail view must lead to an in-site view with visible breadcrumbs back to the card's parent section. Do not send clickable cards directly to raw assets or orphaned views without navigation context.
 - Every character card must open an in-site character profile with a breadcrumb back to Characters. Character profiles must include a character-centered event timeline followed by content-specific sections for appearance, personality, biography, connections, conflicts, and motivations. Clearly label invented profile content as mock material until the user confirms it as canon.
 - Keep the site fully static and compatible with GitHub Pages. Use relative asset paths so the site also works from repository preview deployments.
