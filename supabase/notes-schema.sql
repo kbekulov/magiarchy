@@ -138,8 +138,7 @@ values
   ('story', 'Replace placeholder chapters', 'Swap the temporary drafts for final story installments when they are provided.', 'open', 0),
   ('music', 'Replace placeholder tracks', 'Add final titles, credits, artwork, and audio when music files are available.', 'open', 0),
   ('character', 'Replace mock profile data', 'Confirm the personal timeline and each profile section when final character material is available.', 'open', 0),
-  ('duchy', 'Add the final country map', 'Replace the map placeholder once Narvia''s borders are confirmed.', 'waiting', 0),
-  ('duchy', 'Add city images', 'Replace both capital placeholders when approved city art is available.', 'waiting', 1)
+  ('duchy', 'Add city images', 'Replace the Rennel, Vilen, and Turon placeholders when approved city art is available.', 'waiting', 0)
 on conflict do nothing;
 
 -- Add the owner email only in the Supabase SQL editor. Do not commit it here.

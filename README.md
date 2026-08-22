@@ -7,7 +7,7 @@ The official web home for the Magiarchy story universe, deployed through GitHub 
 - **Home** - an atmospheric introduction to the hidden architecture of the world, followed by a dated feed of site updates.
 - **Characters** - a searchable masonry roster of character dossiers with replaceable chibi-art slots.
 - **Story** - an overall narrative timeline followed by masonry chapter cards with full readers, breadcrumbs, and involved-character labels.
-- **The Duchy** - an intricate country profile for Narvia, with a territory overview, dual capitals, constitutional structure, institutions, ranks, and cultural identity.
+- **The Duchy** - an intricate country profile for Narvea, with a territory overview, dual capitals, constitutional structure, institutions, ranks, and cultural identity.
 - **Music** - an archive for future themes, character motifs, and scene tracks, currently represented by inactive placeholder cards.
 - **Gallery** - a masonry artwork archive filterable by character, location, and chibi format.
 - **Docs** - a masonry library of Markdown-backed summaries with dedicated full-document reader views.

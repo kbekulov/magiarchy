@@ -3455,7 +3455,8 @@ a.status-member:hover {
   line-height: 1.65;
 }
 
-.duchy-image-placeholder {
+.duchy-image-placeholder,
+.duchy-map-figure {
   position: relative;
   margin: 0;
   overflow: hidden;
@@ -3467,7 +3468,8 @@ a.status-member:hover {
   display: none;
 }
 
-.duchy-image-placeholder figcaption {
+.duchy-image-placeholder figcaption,
+.duchy-map-figure figcaption {
   position: absolute;
   right: 12px;
   bottom: 12px;
@@ -3483,11 +3485,13 @@ a.status-member:hover {
   background: rgba(17, 18, 22, .88);
 }
 
-.duchy-image-placeholder figcaption strong {
+.duchy-image-placeholder figcaption strong,
+.duchy-map-figure figcaption strong {
   font-size: .76rem;
 }
 
-.duchy-image-placeholder figcaption span {
+.duchy-image-placeholder figcaption span,
+.duchy-map-figure figcaption span {
   color: #858b95;
   font-size: .61rem;
 }
@@ -3498,31 +3502,16 @@ a.status-member:hover {
   gap: 14px;
 }
 
-.duchy-map-placeholder {
-  min-height: 470px;
+.duchy-map-figure {
   border-radius: 8px;
   background: #202125;
 }
 
-.placeholder-grid {
-  position: absolute;
-  inset: 45px 80px 60px;
-  opacity: .8;
-}
-
-.placeholder-grid span {
-  position: absolute;
+.duchy-map-figure img {
   display: block;
-  border: 2px solid #676fce;
-  background: rgba(88,101,242,.09);
-  image-rendering: pixelated;
+  width: 100%;
+  height: auto;
 }
-
-.placeholder-grid span:nth-child(1) { inset: 3% 42% 66% 43%; }
-.placeholder-grid span:nth-child(2) { inset: 24% 38% 47% 39%; }
-.placeholder-grid span:nth-child(3) { inset: 45% 34% 28% 34%; }
-.placeholder-grid span:nth-child(4) { inset: 64% 28% 9% 30%; }
-.placeholder-grid span:nth-child(5) { width: 9px; height: 9px; top: 47%; left: 48%; border: 0; border-radius: 50%; background: #23a559; }
 
 .territory-ledger {
   display: grid;
@@ -4115,15 +4104,8 @@ a.status-member:hover {
     grid-column: 1;
   }
 
-  .duchy-map-placeholder {
-    min-height: 360px;
-  }
-
-  .placeholder-grid {
-    inset: 40px 30px 60px;
-  }
-
-  .duchy-image-placeholder figcaption {
+  .duchy-image-placeholder figcaption,
+  .duchy-map-figure figcaption {
     align-items: flex-start;
     flex-direction: column;
     gap: 2px;

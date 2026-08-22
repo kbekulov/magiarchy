@@ -1,12 +1,12 @@
 [
   {
-    "slug": "duchy-of-narvia",
-    "title": "The Duchy of Narvia",
+    "slug": "duchy-of-narvea",
+    "title": "The Duchy of Narvea",
     "topic": "Country Profile",
-    "file": "duchy-of-narvia.md",
+    "file": "duchy-of-narvea.md",
     "updated": "2026-08-22",
-    "description": "A concise visual guide to the Baltic country where the story takes place, including its two capitals, the strategic city of Turon, divided authority, institutions, and cultural character.",
-    "speakers": ["Narvian State Archive"],
+    "description": "A concise visual guide to the mapped Baltic country where the story takes place, including its two capitals, the strategic city of Turon, divided authority, institutions, and cultural character.",
+    "speakers": ["Narvean State Archive"],
     "href": "duchy.html"
   },
   {
