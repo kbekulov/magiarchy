@@ -14,6 +14,14 @@ Narvean is a civic identity shared across a culturally varied population. A citi
 
 The country modernized without erasing its older institutions. Modern ministries, elections, police, and armed forces exist beside a ducal court, inherited ranks, ceremonial precedence, and a separate Ducal Guard.
 
+## European diplomacy
+
+Narvea historically became a center of European diplomacy. Opposing powers gathered there to resolve disputes before they escalated into open conflict, giving the duchy influence far beyond its size or military strength.
+
+In 1917, negotiations held in Narvea prevented the crisis in Russia from becoming a revolution. In 1939, another settlement stopped escalation between European powers and prevented a major continental war. These agreements allowed European borders and political history to develop along a different course.
+
+That diplomatic legacy made multilingualism part of Narvean public culture. People in authority are expected to know several languages, but the custom is not limited to officials. Ordinary Narveans may switch languages during everyday conversation for precision, courtesy, emphasis, or habit, even when diplomacy is nowhere near the room.
+
 ## Territory
 
 - Long Baltic coastline and several major ports

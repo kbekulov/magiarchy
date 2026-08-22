@@ -3766,6 +3766,118 @@ a.status-member:hover {
   text-align: center;
 }
 
+.diplomacy-layout {
+  display: grid;
+  grid-template-columns: minmax(260px, .75fr) minmax(0, 1.45fr);
+  overflow: hidden;
+  border: 1px solid #111216;
+  border-radius: 8px;
+  background: #2b2d31;
+}
+
+.diplomacy-principle {
+  padding: 30px;
+  border-right: 1px solid #3b3d43;
+  background: #25262a;
+}
+
+.diplomacy-principle > span,
+.diplomacy-records article span,
+.language-protocol span {
+  color: #949cff;
+  font-size: .58rem;
+  font-weight: 800;
+  letter-spacing: .09em;
+}
+
+.diplomacy-principle h3,
+.language-protocol h3 {
+  margin: 12px 0 10px;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.45rem;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.diplomacy-principle > p,
+.language-protocol > p {
+  margin: 0;
+  color: #afb3ba;
+  font-size: .78rem;
+  line-height: 1.65;
+}
+
+.diplomacy-principle dl {
+  margin: 24px 0 0;
+}
+
+.diplomacy-principle dl div {
+  display: grid;
+  grid-template-columns: 65px minmax(0, 1fr);
+  gap: 10px;
+  padding: 10px 0;
+  border-top: 1px solid #3a3c42;
+}
+
+.diplomacy-principle dt {
+  color: #747983;
+  font-size: .62rem;
+  text-transform: uppercase;
+}
+
+.diplomacy-principle dd {
+  margin: 0;
+  color: #d5d7db;
+  font-size: .7rem;
+}
+
+.diplomacy-records article {
+  display: grid;
+  grid-template-columns: 80px minmax(0, 1fr);
+  gap: 20px;
+  padding: 24px;
+  border-bottom: 1px solid #3a3c42;
+}
+
+.diplomacy-records article:last-child {
+  border-bottom: 0;
+}
+
+.diplomacy-records time {
+  color: #f2f3f5;
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 1rem;
+}
+
+.diplomacy-records h3 {
+  margin: 7px 0 6px;
+  font-size: .95rem;
+}
+
+.diplomacy-records p {
+  margin: 0;
+  color: #aeb2b9;
+  font-size: .74rem;
+  line-height: 1.6;
+}
+
+.language-protocol {
+  display: grid;
+  grid-template-columns: minmax(230px, .8fr) minmax(0, 1.2fr);
+  gap: 34px;
+  margin-top: 12px;
+  padding: 26px 30px;
+  border: 1px solid #3b3d43;
+  border-left: 3px solid #5865f2;
+  border-radius: 6px;
+  background: #292a2f;
+}
+
+.language-protocol h3 {
+  margin-bottom: 0;
+  font-size: 1.2rem;
+}
+
 .institution-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -4019,6 +4131,7 @@ a.status-member:hover {
   .duchy-map-layout,
   .capital-grid,
   .strategic-city-card,
+  .diplomacy-layout,
   .power-balance,
   .rank-system {
     grid-template-columns: 1fr;
@@ -4044,6 +4157,16 @@ a.status-member:hover {
     border-bottom: 1px solid #3d4047;
   }
 
+  .diplomacy-principle {
+    border-right: 0;
+    border-bottom: 1px solid #3b3d43;
+  }
+
+  .language-protocol {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
   .power-axis {
     min-height: 80px;
     flex-direction: row;
@@ -4060,6 +4183,17 @@ a.status-member:hover {
 }
 
 @media (max-width: 560px) {
+  .diplomacy-principle,
+  .diplomacy-records article,
+  .language-protocol {
+    padding: 22px;
+  }
+
+  .diplomacy-records article {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+
   .duchy-hero-copy {
     min-height: 430px;
     padding: 64px 22px 32px;
