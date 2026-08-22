@@ -209,9 +209,9 @@ async function loadProfilePortrait(profile, portrait, note) {
     if (!response.ok) throw new Error(`Gallery catalog returned ${response.status}`);
 
     const galleryDocument = new DOMParser().parseFromString(await response.text(), 'text/html');
-    const filePattern = wildcardPattern(`char-${profile.slug}-*`);
+    const filePattern = wildcardPattern(`char-*${profile.slug}*-*`);
     const artworks = Array.from(galleryDocument.querySelectorAll('.gallery-card'))
-      .filter((card) => card.dataset.character === profile.slug && card.dataset.chibi === 'false')
+      .filter((card) => (card.dataset.character ?? '').split(/\s+/).includes(profile.slug) && card.dataset.chibi === 'false')
       .map((card) => card.querySelector('img'))
       .filter((image) => {
         const source = image?.getAttribute('src') ?? '';

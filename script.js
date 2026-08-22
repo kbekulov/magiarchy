@@ -160,7 +160,8 @@ function updateGalleryResults() {
   let visibleCount = 0;
 
   galleryItems.forEach((item) => {
-    const matchesCharacter = selectedCharacter === 'all' || item.dataset.character === selectedCharacter;
+    const itemCharacters = (item.dataset.character ?? '').split(/\s+/).filter(Boolean);
+    const matchesCharacter = selectedCharacter === 'all' || itemCharacters.includes(selectedCharacter);
     const matchesLocation = selectedLocation === 'all' || item.dataset.location === selectedLocation;
     const matchesChibi = !chibiOnly || item.dataset.chibi === 'true';
     const isVisible = matchesCharacter && matchesLocation && matchesChibi;
