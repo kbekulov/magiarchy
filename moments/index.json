@@ -101,5 +101,129 @@
     "continuityAfter": "A missing-person report, witness, or institutional response can bind this scene into the Spill investigation.",
     "chapterSlug": null,
     "updated": "2026-08-23"
+  },
+  {
+    "slug": "the-warning-dismissed",
+    "code": "MOM-004",
+    "title": "The Warning Dismissed",
+    "status": "Scene chain",
+    "placementStatus": "Provisional placement",
+    "timelinePhase": "unknowing-convergence",
+    "timelineLabel": "Unknowing Convergence",
+    "sequence": 2,
+    "sceneType": "Political warning",
+    "thread": "The suspected coup",
+    "location": "Ducal Court",
+    "summary": "Drake becomes convinced that a coup is developing somewhere inside Narvea, but neither his peers nor the Duke believe he has found more than disconnected irregularities.",
+    "purpose": "Establishes the political explanation that first draws government figures toward the disappearances, while isolating Drake enough to make an illegal alliance feel necessary.",
+    "characters": [
+      { "name": "Drake", "slug": "drake" }
+    ],
+    "characterAnchors": [
+      { "slug": "drake", "beat": "A Coup without a Source" }
+    ],
+    "known": [
+      "Drake is deeply convinced that a coup is underway.",
+      "He cannot yet identify where the conspiracy begins or how far it reaches.",
+      "His peers ridicule the suspicion and the Duke remains skeptical.",
+      "Drake interprets the park disappearances as possible cover for the illegal movement of material intended for action against Narvea or Ducal authority."
+    ],
+    "openQuestions": [
+      "What first convinces Drake that the irregularities form a coup attempt?",
+      "Which peers lead the ridicule at Court?",
+      "Is somebody deliberately encouraging the Court to dismiss him?"
+    ],
+    "continuityBefore": "Early disappearances and irregular movements need to produce the evidence that Drake reads as one political pattern.",
+    "continuityAfter": "Sherie responds to her uncle's isolation by proposing contact with Lynleit outside every lawful chain of supervision.",
+    "chapterSlug": null,
+    "updated": "2026-08-23"
+  },
+  {
+    "slug": "a-meeting-beyond-authority",
+    "code": "MOM-005",
+    "title": "A Meeting Beyond Authority",
+    "status": "Scene chain",
+    "placementStatus": "Provisional placement",
+    "timelinePhase": "unknowing-convergence",
+    "timelineLabel": "Unknowing Convergence",
+    "sequence": 3,
+    "sceneType": "Covert alliance",
+    "thread": "The suspected coup",
+    "location": "Unspecified meeting place",
+    "summary": "Sherie arranges and leads an illegal meeting between Drake and Lynleit, seeking MSF assistance without the knowledge of the national government or Ducal Court.",
+    "purpose": "Binds the government and MSF investigations together through an alliance that is politically dangerous before anyone understands that the underlying threat is magical.",
+    "characters": [
+      { "name": "Drake", "slug": "drake" },
+      { "name": "Sherie", "slug": "sherie" },
+      { "name": "Lynleit", "slug": "lynleit" },
+      { "name": "Felix", "slug": "felix" },
+      { "name": "Kyrien", "slug": "kyrien" }
+    ],
+    "characterAnchors": [
+      { "slug": "drake", "beat": "The Illegal Partnership" },
+      { "slug": "sherie", "beat": "Leading the Meeting" },
+      { "slug": "lynleit", "beat": "The Heir Apparent" },
+      { "slug": "felix", "beat": "Choosing Whom to Trust" },
+      { "slug": "kyrien", "beat": "Alliance under Pressure" }
+    ],
+    "known": [
+      "Sherie believes her uncle when the Court does not.",
+      "She proposes the informal approach to Lynleit and takes charge of the meeting and its negotiations.",
+      "Drake accepts the risk only after repeated dismissal leaves him without a lawful path forward.",
+      "Lynleit regards the request as dangerous.",
+      "Felix openly protests, while Kyrien stays silent and tests the suspected conspiracy against his own past grievances."
+    ],
+    "openQuestions": [
+      "Where can all five participants meet without surveillance?",
+      "What evidence does Drake bring to Lynleit?",
+      "What precise limits does Lynleit place on MSF involvement?"
+    ],
+    "continuityBefore": "Sherie must persuade Drake that Lynleit is worth the legal and political danger of contact.",
+    "continuityAfter": "The private agreement produces a narrow intelligence operation focused on a suspected shipment rather than an arrest or seizure.",
+    "chapterSlug": null,
+    "updated": "2026-08-23"
+  },
+  {
+    "slug": "the-boat-beneath-the-bridge",
+    "code": "MOM-006",
+    "title": "The Boat Beneath the Bridge",
+    "status": "Key scene",
+    "placementStatus": "Provisional placement",
+    "timelinePhase": "unknowing-convergence",
+    "timelineLabel": "Unknowing Convergence",
+    "sequence": 4,
+    "sceneType": "Failed infiltration",
+    "thread": "The suspected coup",
+    "location": "Unspecified bridge and river",
+    "summary": "Lynleit leads an unsanctioned nighttime infiltration of a passing boat. The intelligence-only raid collapses into a supernatural calamity and forces her to use her secret ability to walk on water in combat for the first time.",
+    "purpose": "Turns a political conspiracy investigation into the first direct proof that Magi are involved, while exposing Lynleit's most forbidden talent under conditions she cannot fully control.",
+    "characters": [
+      { "name": "Lynleit", "slug": "lynleit" },
+      { "name": "Felix", "slug": "felix" },
+      { "name": "Kyrien", "slug": "kyrien" }
+    ],
+    "characterAnchors": [
+      { "slug": "lynleit", "beat": "The Heir Apparent" },
+      { "slug": "felix", "beat": "Choosing Whom to Trust" },
+      { "slug": "kyrien", "beat": "Alliance under Pressure" }
+    ],
+    "known": [
+      "The MSF team is ordered to enter and leave unseen, gathering intelligence without stopping the suspected transfer.",
+      "The officers descend by rope from a bridge onto a boat passing beneath them after nightfall.",
+      "The operation goes badly enough that the operatives must swim ashore on their own.",
+      "The others do not immediately realize that Lynleit has been left to face a supernatural calamity.",
+      "Lynleit recognizes that the plot is not solely political and that Magi are involved.",
+      "The crisis becomes the first combat test of her ability to walk on water."
+    ],
+    "openQuestions": [
+      "What supernatural force is waiting on or beneath the boat?",
+      "Which additional MSF officers join the infiltration?",
+      "Who sees enough of Lynleit's water walking to threaten her secret?",
+      "What intelligence survives the failed operation?"
+    ],
+    "continuityBefore": "The covert meeting must identify the boat and establish why observation is safer than interception.",
+    "continuityAfter": "Lynleit must decide what to tell the scattered team, Drake, and Sherie now that the investigation points toward Magi.",
+    "chapterSlug": null,
+    "updated": "2026-08-23"
   }
 ]
