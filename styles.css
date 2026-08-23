@@ -3513,23 +3513,21 @@ a.status-member:hover {
   height: auto;
 }
 
-.duchy-map-flag {
+.duchy-map-flags {
   position: absolute;
   top: 12px;
+  left: 12px;
   z-index: 2;
-  width: 132px;
+  display: flex;
+  gap: 8px;
+}
+
+.duchy-map-flag {
+  width: 118px;
   padding: 5px;
   border: 1px solid rgba(255, 255, 255, .13);
   border-radius: 5px;
   background: rgba(17, 18, 22, .9);
-}
-
-.duchy-map-flag-national {
-  left: 12px;
-}
-
-.duchy-map-flag-ducal {
-  right: 12px;
 }
 
 .duchy-map-flag img {
@@ -4457,7 +4455,7 @@ a.status-member:hover {
   }
 
   .duchy-map-flag {
-    width: 108px;
+    width: 64px;
   }
 
   .duchy-hero h1 {
