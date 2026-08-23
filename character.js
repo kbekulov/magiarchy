@@ -175,6 +175,7 @@ function initializeProfileTimelineDrag(track) {
   let pointerId = null;
   let startX = 0;
   let startScroll = 0;
+  let moved = false;
 
   function finish(event) {
     if (event.pointerId !== pointerId) return;
@@ -188,11 +189,13 @@ function initializeProfileTimelineDrag(track) {
     pointerId = event.pointerId;
     startX = event.clientX;
     startScroll = track.scrollLeft;
+    moved = false;
     track.setPointerCapture(event.pointerId);
     track.classList.add('is-dragging');
   });
   track.addEventListener('pointermove', (event) => {
     if (event.pointerId !== pointerId) return;
+    if (Math.abs(event.clientX - startX) > 4) moved = true;
     event.preventDefault();
     track.scrollLeft = startScroll - (event.clientX - startX);
   });
@@ -202,6 +205,11 @@ function initializeProfileTimelineDrag(track) {
     track.classList.remove('is-dragging');
     pointerId = null;
   });
+  track.addEventListener('click', (event) => {
+    if (!moved) return;
+    event.preventDefault();
+    moved = false;
+  }, true);
 }
 
 function wildcardPattern(pattern) {
@@ -257,6 +265,46 @@ async function loadProfilePortrait(profile, portrait, note) {
   }
 }
 
+async function loadCharacterMoments(profile, timeline) {
+  try {
+    const response = await fetch('moments/index.json');
+    if (!response.ok) throw new Error(`Moment catalog request failed: ${response.status}`);
+    const entries = await response.json();
+    const related = entries.filter((entry) => entry.characterAnchors.some((anchor) => anchor.slug === profile.slug));
+    if (!related.length) return;
+
+    const section = document.querySelector('#character-moments-section');
+    const grid = document.querySelector('#character-moment-grid');
+    const cards = related.map((entry) => {
+      const link = createElement('a', 'character-moment-card');
+      link.href = `moments.html?moment=${encodeURIComponent(entry.slug)}`;
+      const top = createElement('div');
+      top.append(createElement('span', '', entry.code), createElement('small', '', entry.timelineLabel));
+      link.append(top, createElement('h3', '', entry.title), createElement('p', '', entry.summary), createElement('strong', '', 'Open Moment →'));
+      return link;
+    });
+    grid.replaceChildren(...cards);
+    section.hidden = false;
+
+    related.forEach((entry) => {
+      const anchor = entry.characterAnchors.find((candidate) => candidate.slug === profile.slug);
+      const timelineItem = [...timeline.children].find((item) => item.dataset.timelineBeat === anchor?.beat);
+      if (!timelineItem) return;
+      let anchorList = timelineItem.querySelector('.character-timeline-moments');
+      if (!anchorList) {
+        anchorList = createElement('div', 'character-timeline-moments');
+        timelineItem.querySelector(':scope > div').append(anchorList);
+      }
+      const link = createElement('a', '', `${entry.code} · ${entry.title}`);
+      link.href = `moments.html?moment=${encodeURIComponent(entry.slug)}`;
+      anchorList.append(link);
+      timelineItem.classList.add('has-moments');
+    });
+  } catch (error) {
+    console.warn(`Moments could not be connected to ${profile.name}.`, error);
+  }
+}
+
 function renderProfile(profile) {
   document.title = `${profile.name} - Characters - Magiarchy`;
   document.querySelector('#character-crumb').textContent = profile.name;
@@ -278,6 +326,7 @@ function renderProfile(profile) {
   const timelineDetails = [profile.origin, profile.rupture, profile.focus, profile.future];
   profile.beats.forEach((title, index) => {
     const item = createElement('li');
+    item.dataset.timelineBeat = title;
     item.append(createElement('span', 'character-timeline-marker', String(index + 1).padStart(2, '0')));
     const copy = createElement('div');
     copy.append(createElement('small', '', ['Foundation', 'Rupture', 'Central struggle', 'Unresolved future'][index]));
@@ -287,6 +336,7 @@ function renderProfile(profile) {
     timeline.append(item);
   });
   initializeProfileTimelineDrag(timeline);
+  loadCharacterMoments(profile, timeline);
 
   const appearance = document.querySelector('#character-appearance');
   [

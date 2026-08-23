@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore key scene anchors and their connections to the Magiarchy story timeline, characters, and future chapters.">
+    <meta name="theme-color" content="#1e1f22">
+    <title>Moments - Magiarchy</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <script src="story-phases.js" defer></script>
+    <script src="moments.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2" defer></script>
+    <script src="notes-config.js" defer></script>
+    <script src="notes.js" defer></script>
+  </head>
+  <body class="moments-page" data-notes-page="moments">
+    <a class="skip-link" href="#main-content">Skip to content</a>
+
+    <header class="site-header">
+      <nav class="navbar shell" aria-label="Primary navigation">
+        <a class="brand" href="index.html" aria-label="Magiarchy home">
+          <span class="brand-mark" aria-hidden="true"><span></span></span>
+          <span>Magiarchy</span>
+        </a>
+
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links">
+          <span class="sr-only">Toggle navigation</span>
+          <span></span><span></span>
+        </button>
+
+        <div class="nav-links" id="nav-links">
+          <a href="index.html">Home</a>
+          <a href="characters.html">Characters</a>
+          <a href="story.html">Story</a>
+          <a href="moments.html" aria-current="page">Moments</a>
+          <a href="duchy.html">The Duchy</a>
+          <a href="music.html">Music</a>
+          <a href="gallery.html">Gallery</a>
+          <a href="docs.html">Docs</a>
+        </div>
+      </nav>
+    </header>
+
+    <main class="app-main" id="main-content">
+      <div class="docs-workspace shell">
+        <div class="docs-main-pane">
+          <header class="feed-header">
+            <div><span aria-hidden="true">#</span><strong>moments</strong><i></i><p>Scene anchors and continuity</p></div>
+            <span class="feed-status"><span class="status-dot"></span> Scene archive online</span>
+          </header>
+
+          <div id="moments-catalog-view">
+            <section class="docs-heading moments-heading reveal" aria-labelledby="moments-title">
+              <div>
+                <p class="eyebrow">Scene-led story construction</p>
+                <h1 id="moments-title">Moments</h1>
+                <p>Key scenes can exist before the chapters around them do. Each Moment keeps the scene itself, its provisional story position, its characters, and the questions needed to connect it into a coherent narrative.</p>
+              </div>
+            </section>
+
+            <section class="moment-system reveal" aria-labelledby="moment-system-title">
+              <header>
+                <p class="eyebrow">How the archive connects</p>
+                <h2 id="moment-system-title">One scene, several story views</h2>
+              </header>
+              <div class="moment-system-flow" role="group" aria-label="A Moment connects the overall story, character timelines, and chapters">
+                <article><span>01</span><div><small>Overall position</small><h3>Story phase</h3><p>Places the scene inside the main narrative without forcing an exact chapter yet.</p></div></article>
+                <i aria-hidden="true">→</i>
+                <article class="is-core"><span>02</span><div><small>Single source</small><h3>Moment</h3><p>Preserves what happens, why it matters, and which gaps remain open.</p></div></article>
+                <i aria-hidden="true">→</i>
+                <article><span>03</span><div><small>Connected views</small><h3>People and chapters</h3><p>Surfaces the same scene in character timelines and future chapter records.</p></div></article>
+              </div>
+            </section>
+
+            <section class="moment-phase-map reveal" aria-labelledby="moment-phase-title">
+              <header class="story-timeline-header">
+                <div><p class="eyebrow">Continuity map</p><h2 id="moment-phase-title">Scene anchors across the Story</h2></div>
+                <div class="timeline-legend"><span class="timeline-mock">Provisional positions</span><span class="timeline-scroll-cue">Drag or scroll <span aria-hidden="true">→</span></span></div>
+              </header>
+              <ol class="moment-phase-track" id="moment-phase-track" tabindex="0" aria-label="Story phases with their current Moment counts. Drag or scroll horizontally to explore."></ol>
+            </section>
+
+            <section class="moment-library" aria-labelledby="moment-library-title">
+              <header class="moment-library-header">
+                <div><p class="eyebrow">Scene inventory</p><h2 id="moment-library-title">Key scenes</h2></div>
+                <span><strong id="moment-result-count">0</strong> visible</span>
+              </header>
+
+              <div class="moment-toolbar" role="group" aria-label="Moment filters">
+                <label class="moment-search"><span class="sr-only">Search Moments</span><input id="moment-search" type="search" placeholder="Search scenes, threads, places..." autocomplete="off"></label>
+                <label><span>Story phase</span><select id="moment-phase-filter"><option value="all">All phases</option></select></label>
+                <label><span>Character</span><select id="moment-character-filter"><option value="all">All characters</option></select></label>
+                <label><span>Scene role</span><select id="moment-type-filter"><option value="all">All roles</option></select></label>
+              </div>
+
+              <div class="moment-card-grid" id="moment-card-grid" aria-live="polite">
+                <div class="document-card document-card-loading">Loading Moments...</div>
+              </div>
+              <div class="document-error moment-empty" id="moment-empty" hidden><h2>No Moments match</h2><p>Change a filter or clear the search to see more scene anchors.</p></div>
+            </section>
+          </div>
+
+          <section class="moment-reader" id="moment-reader" hidden>
+            <nav class="document-breadcrumbs" aria-label="Breadcrumb">
+              <a href="moments.html">Moments</a>
+              <span aria-hidden="true">/</span>
+              <span id="moment-crumb" aria-current="page">Scene</span>
+            </nav>
+
+            <header class="moment-reader-hero">
+              <div class="moment-reader-code"><span id="moment-code">MOM</span><span id="moment-placement-status">Provisional placement</span></div>
+              <p class="eyebrow" id="moment-scene-type">Scene seed</p>
+              <h1 id="moment-reader-title">Moment</h1>
+              <p id="moment-reader-summary"></p>
+              <div class="moment-reader-characters" id="moment-reader-characters" role="group" aria-label="Characters involved"></div>
+            </header>
+
+            <section class="moment-placement" aria-labelledby="moment-placement-title">
+              <header><p class="eyebrow">Continuity coordinates</p><h2 id="moment-placement-title">Where this scene belongs</h2></header>
+              <div>
+                <a id="moment-story-link" href="story.html"><small>Story phase</small><strong id="moment-phase-name">Unassigned</strong><span>Open in Story →</span></a>
+                <article><small>Scene function</small><strong id="moment-purpose-label">Scene seed</strong><span id="moment-thread"></span></article>
+                <article><small>Location</small><strong id="moment-location">Unspecified location</strong><span id="moment-date">Updated</span></article>
+              </div>
+            </section>
+
+            <div class="moment-reader-grid">
+              <section class="moment-fact-panel" aria-labelledby="moment-known-title">
+                <header><span>01</span><div><p class="eyebrow">Fixed scene core</p><h2 id="moment-known-title">What is known</h2></div></header>
+                <ol id="moment-known"></ol>
+              </section>
+              <section class="moment-fact-panel moment-open-panel" aria-labelledby="moment-open-title">
+                <header><span>02</span><div><p class="eyebrow">Useful gaps</p><h2 id="moment-open-title">What remains open</h2></div></header>
+                <ol id="moment-open-questions"></ol>
+              </section>
+            </div>
+
+            <section class="moment-continuity" aria-labelledby="moment-continuity-title">
+              <header><p class="eyebrow">Binding glue</p><h2 id="moment-continuity-title">Continuity bridge</h2></header>
+              <div>
+                <article><span>Before</span><p id="moment-before"></p></article>
+                <article class="is-scene"><span>The scene</span><p id="moment-purpose"></p></article>
+                <article><span>After</span><p id="moment-after"></p></article>
+              </div>
+            </section>
+
+            <section class="moment-connections" aria-labelledby="moment-connections-title">
+              <header><p class="eyebrow">Shared records</p><h2 id="moment-connections-title">Connected elsewhere</h2></header>
+              <div id="moment-connection-grid"></div>
+            </section>
+
+            <nav class="moment-neighbors" id="moment-neighbors" aria-label="Adjacent Moments"></nav>
+          </section>
+
+          <section class="document-error" id="moment-error" hidden>
+            <div class="empty-pixel" aria-hidden="true">!</div>
+            <h1>Moment unavailable</h1>
+            <p>This scene anchor does not exist in the current archive.</p>
+            <a class="button button-secondary" href="moments.html">Return to Moments <span aria-hidden="true">→</span></a>
+          </section>
+        </div>
+
+        <aside class="notes-sidebar" aria-label="Moments page notes">
+          <header class="notes-header"><div><span aria-hidden="true">✎</span><strong>Page notes</strong></div><span>Moments</span></header>
+          <div class="notes-list">
+            <article class="page-note">
+              <div><span>Open</span><span>01</span></div>
+              <h2>Confirm scene placement</h2>
+              <p>Review each provisional Story phase and character-timeline anchor as more connective scenes become clear.</p>
+            </article>
+          </div>
+          <p class="notes-footnote">Notes are stored in Supabase and synchronized when this page loads.</p>
+        </aside>
+      </div>
+    </main>
+  </body>
+</html>

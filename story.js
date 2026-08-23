@@ -12,6 +12,29 @@ const chapterCrumb = document.querySelector('#chapter-crumb');
 const chapterReaderCharacters = document.querySelector('#chapter-reader-characters');
 const chapterEventList = document.querySelector('#chapter-event-list');
 const timelineTrack = document.querySelector('.timeline-track');
+const storyPhases = window.MAGIARCHY_STORY_PHASES ?? [];
+
+function renderStoryTimeline() {
+  if (!timelineTrack) return;
+  timelineTrack.replaceChildren(...storyPhases.map((phase) => {
+    const item = document.createElement('li');
+    item.id = `phase-${phase.id}`;
+    item.dataset.timelinePhase = phase.id;
+    const marker = document.createElement('span');
+    marker.className = 'timeline-marker';
+    marker.textContent = phase.number;
+    const copy = document.createElement('div');
+    const label = document.createElement('small');
+    label.textContent = phase.label;
+    const title = document.createElement('h3');
+    title.textContent = phase.title;
+    const description = document.createElement('p');
+    description.textContent = phase.description;
+    copy.append(label, title, description);
+    item.append(marker, copy);
+    return item;
+  }));
+}
 
 function initializeTimelineDrag() {
   if (!timelineTrack) return;
@@ -19,6 +42,7 @@ function initializeTimelineDrag() {
   let activePointerId = null;
   let pointerStartX = 0;
   let scrollStartX = 0;
+  let moved = false;
 
   function finishDrag(event) {
     if (event.pointerId !== activePointerId) return;
@@ -32,12 +56,14 @@ function initializeTimelineDrag() {
     activePointerId = event.pointerId;
     pointerStartX = event.clientX;
     scrollStartX = timelineTrack.scrollLeft;
+    moved = false;
     timelineTrack.setPointerCapture(event.pointerId);
     timelineTrack.classList.add('is-dragging');
   });
 
   timelineTrack.addEventListener('pointermove', (event) => {
     if (event.pointerId !== activePointerId) return;
+    if (Math.abs(event.clientX - pointerStartX) > 4) moved = true;
     event.preventDefault();
     timelineTrack.scrollLeft = scrollStartX - (event.clientX - pointerStartX);
   });
@@ -48,6 +74,11 @@ function initializeTimelineDrag() {
     timelineTrack.classList.remove('is-dragging');
     activePointerId = null;
   });
+  timelineTrack.addEventListener('click', (event) => {
+    if (!moved) return;
+    event.preventDefault();
+    moved = false;
+  }, true);
 }
 
 function appendChapterInline(text, parent) {
@@ -177,10 +208,48 @@ function createChapterCard(entry) {
 
 function showChapterLibrary(entries) {
   setActiveTimelinePhase();
+  setMomentContextPhase(new URLSearchParams(window.location.search).get('phase'));
   chapterReaderView.hidden = true;
   chapterLibrary.hidden = false;
   storyHeading.hidden = false;
   chapterCardGrid.replaceChildren(...entries.map(createChapterCard));
+}
+
+function setMomentContextPhase(phaseId) {
+  if (!timelineTrack) return;
+  const phases = [...timelineTrack.querySelectorAll('[data-timeline-phase]')];
+  phases.forEach((phase) => phase.classList.remove('is-moment-context'));
+  if (!phaseId) return;
+  const activePhase = phases.find((phase) => phase.dataset.timelinePhase === phaseId);
+  if (!activePhase) return;
+  activePhase.classList.add('is-moment-context');
+  activePhase.setAttribute('aria-current', 'step');
+  const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  requestAnimationFrame(() => {
+    const centeredPosition = activePhase.offsetLeft - ((timelineTrack.clientWidth - activePhase.offsetWidth) / 2);
+    timelineTrack.scrollTo({ left: Math.max(0, centeredPosition), behavior: reduceMotion ? 'auto' : 'smooth' });
+  });
+}
+
+async function initializeStoryMoments() {
+  if (!timelineTrack) return;
+  try {
+    const response = await fetch('moments/index.json');
+    if (!response.ok) throw new Error(`Moment catalog request failed: ${response.status}`);
+    const moments = await response.json();
+    timelineTrack.querySelectorAll('[data-timeline-phase]').forEach((phase) => {
+      const anchored = moments.filter((moment) => moment.timelinePhase === phase.dataset.timelinePhase);
+      if (!anchored.length) return;
+      phase.classList.add('has-moments');
+      const link = document.createElement('a');
+      link.className = 'timeline-moment-anchor';
+      link.href = `moments.html?phase=${encodeURIComponent(phase.dataset.timelinePhase)}`;
+      link.textContent = `${anchored.length} ${anchored.length === 1 ? 'Moment' : 'Moments'} anchored`;
+      phase.querySelector(':scope > div').append(link);
+    });
+  } catch (error) {
+    console.warn('Moment annotations could not be loaded.', error);
+  }
 }
 
 function setActiveTimelinePhase(entry) {
@@ -269,5 +338,7 @@ async function initializeStory() {
   }
 }
 
+renderStoryTimeline();
 initializeTimelineDrag();
+initializeStoryMoments();
 initializeStory();
