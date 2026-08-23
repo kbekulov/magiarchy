@@ -3916,6 +3916,38 @@ a.status-member:hover {
   font-size: 1.2rem;
 }
 
+.diplomatic-city-note {
+  display: grid;
+  grid-template-columns: minmax(230px, .8fr) minmax(0, 1.2fr);
+  gap: 34px;
+  margin-top: 12px;
+  padding: 22px 30px;
+  border: 1px solid #3b3d43;
+  border-radius: 6px;
+  background: #25262a;
+}
+
+.diplomatic-city-note span {
+  color: #949cff;
+  font-size: .58rem;
+  font-weight: 800;
+  letter-spacing: .09em;
+}
+
+.diplomatic-city-note h3 {
+  margin: 9px 0 0;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.15rem;
+  font-weight: 500;
+}
+
+.diplomatic-city-note > p {
+  margin: 0;
+  color: #afb3ba;
+  font-size: .76rem;
+  line-height: 1.65;
+}
+
 .institution-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -4205,6 +4237,11 @@ a.status-member:hover {
     gap: 12px;
   }
 
+  .diplomatic-city-note {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
   .power-axis {
     min-height: 80px;
     flex-direction: row;
@@ -4223,7 +4260,8 @@ a.status-member:hover {
 @media (max-width: 560px) {
   .diplomacy-principle,
   .diplomacy-records article,
-  .language-protocol {
+  .language-protocol,
+  .diplomatic-city-note {
     padding: 22px;
   }
 

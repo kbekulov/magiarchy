@@ -24,6 +24,10 @@ In 1917, negotiations held in Narvea prevented the crisis in Russia from becomin
 
 That diplomatic legacy made multilingualism part of Narvean public culture. People in authority are expected to know several languages, but the custom is not limited to officials. Ordinary Narveans may switch languages during everyday conversation for precision, courtesy, emphasis, or habit, even when diplomacy is nowhere near the room.
 
+### Bird's Nest, the city with many names
+
+Bird's Nest has an intentionally unusual name. Most negotiations between rival nations take place there, and every country uses a different title for the same city. Bird's Nest is the Narvean name for this shared diplomatic ground, reflecting a place where competing powers gather without fully belonging to one another.
+
 ## Territory
 
 - Long Baltic coastline and several major ports
