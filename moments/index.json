@@ -157,7 +157,7 @@
     "thread": "The suspected coup",
     "location": "Unspecified meeting place",
     "summary": "Sherie arranges and leads an illegal meeting between Drake and Lynleit, seeking MSF assistance without the knowledge of the national government or Ducal Court.",
-    "purpose": "Binds the government and MSF investigations together through an alliance that is politically dangerous before anyone understands that the underlying threat is magical. It is also the point where Sherie surpasses her diplomatic mentor by creating a strategy Drake himself opposed.",
+    "purpose": "Binds the government and MSF investigations together through an alliance that is politically dangerous before anyone understands that the underlying threat is magical. It is Sherie's first independent diplomatic success, not a transfer of Drake's wider role as the story's primary strategic mind.",
     "characters": [
       { "name": "Drake", "slug": "drake" },
       { "name": "Sherie", "slug": "sherie" },
@@ -178,16 +178,20 @@
       "The approach to Lynleit is entirely Sherie's idea and strategy.",
       "Sherie develops the plan against Drake's wishes, persuades him to participate, and takes charge of the meeting and negotiations.",
       "Drake remains opposed to the illegal approach but attends after Sherie overcomes his resistance.",
+      "After the negotiation succeeds, Sherie asks Drake to praise and pamper her for her first achievement.",
+      "Drake still cannot decide whether an alliance with Lynleit is a strategic advantage or a dangerous mistake.",
+      "Drake remains the story's main strategic mind before and after this event.",
       "Lynleit regards the request as dangerous.",
       "Felix openly protests, while Kyrien stays silent and tests the suspected conspiracy against his own past grievances."
     ],
     "openQuestions": [
       "Where can all five participants meet without surveillance?",
       "What evidence does Drake bring to Lynleit?",
-      "What precise limits does Lynleit place on MSF involvement?"
+      "What precise limits does Lynleit place on MSF involvement?",
+      "What would finally convince Drake that the alliance should be preserved or abandoned?"
     ],
     "continuityBefore": "Sherie must persuade Drake that Lynleit is worth the legal and political danger of contact.",
-    "continuityAfter": "The private agreement produces a narrow intelligence operation focused on a suspected shipment rather than an arrest or seizure.",
+    "continuityAfter": "Sherie claims praise and pampering for her success while Drake remains uncertain about what she has created. The private agreement then produces a narrow intelligence operation focused on a suspected shipment rather than an arrest or seizure.",
     "chapterSlug": null,
     "updated": "2026-08-23"
   },
