@@ -173,11 +173,126 @@ const profileSeeds = [
 
 const profilesBySlug = new Map(profileSeeds.map((profile) => [profile.slug, profile]));
 
+const skillAxes = [
+  { key: 'analysis', label: 'Analysis' },
+  { key: 'influence', label: 'Influence' },
+  { key: 'awareness', label: 'Awareness' },
+  { key: 'fieldcraft', label: 'Fieldcraft' },
+  { key: 'combat', label: 'Combat' },
+  { key: 'magic', label: 'Magic' }
+];
+
+const skillProfiles = {
+  lynleit: { analysis: 92, influence: 94, awareness: 88, fieldcraft: 65, combat: 76, magic: 82 },
+  kyrien: { analysis: 95, influence: 48, awareness: 91, fieldcraft: 98, combat: 87, magic: 0 },
+  helena: { analysis: 88, influence: 92, awareness: 84, fieldcraft: 45, combat: 38, magic: 0 },
+  tien: { analysis: 82, influence: 36, awareness: 90, fieldcraft: 96, combat: 94, magic: 0 },
+  fionn: { analysis: 98, influence: 80, awareness: 96, fieldcraft: 72, combat: 85, magic: 98 },
+  heyk: { analysis: 72, influence: 55, awareness: 82, fieldcraft: 90, combat: 88, magic: 0 },
+  sherie: { analysis: 82, influence: 96, awareness: 88, fieldcraft: 54, combat: 35, magic: 0 },
+  drake: { analysis: 98, influence: 42, awareness: 91, fieldcraft: 62, combat: 55, magic: 0 },
+  felix: { analysis: 65, influence: 78, awareness: 72, fieldcraft: 82, combat: 84, magic: 0 },
+  reiner: { analysis: 94, influence: 55, awareness: 92, fieldcraft: 58, combat: 40, magic: 0 },
+  yulia: { analysis: 62, influence: 80, awareness: 72, fieldcraft: 35, combat: 28, magic: 0 },
+  hiyu: { analysis: 90, influence: 65, awareness: 92, fieldcraft: 52, combat: 30, magic: 0 },
+  natalia: { analysis: 90, influence: 78, awareness: 94, fieldcraft: 86, combat: 68, magic: 68 },
+  lester: { analysis: 80, influence: 70, awareness: 84, fieldcraft: 68, combat: 55, magic: 0 },
+  myka: { analysis: 75, influence: 70, awareness: 76, fieldcraft: 40, combat: 35, magic: 90 },
+  'inspector-leo': { analysis: 84, influence: 65, awareness: 90, fieldcraft: 76, combat: 70, magic: 0 },
+  'father-mikhail': { analysis: 86, influence: 82, awareness: 84, fieldcraft: 52, combat: 45, magic: 0 }
+};
+
 function createElement(tagName, className, text) {
   const element = document.createElement(tagName);
   if (className) element.className = className;
   if (text !== undefined) element.textContent = text;
   return element;
+}
+
+function createSvgElement(tagName, attributes = {}) {
+  const element = document.createElementNS('http://www.w3.org/2000/svg', tagName);
+  Object.entries(attributes).forEach(([name, value]) => element.setAttribute(name, value));
+  return element;
+}
+
+function radarPoint(index, value, radius = 100) {
+  const angle = (-90 + (index * 60)) * (Math.PI / 180);
+  const scaledRadius = radius * (value / 100);
+  return {
+    x: 180 + (Math.cos(angle) * scaledRadius),
+    y: 145 + (Math.sin(angle) * scaledRadius)
+  };
+}
+
+function radarPoints(values, radius = 100) {
+  return values.map((value, index) => {
+    const point = radarPoint(index, value, radius);
+    return `${point.x.toFixed(2)},${point.y.toFixed(2)}`;
+  }).join(' ');
+}
+
+function renderSkillGraph(profile, container) {
+  const scoreMap = skillProfiles[profile.slug] ?? Object.fromEntries(skillAxes.map((axis) => [axis.key, 50]));
+  const values = skillAxes.map((axis) => scoreMap[axis.key]);
+  const ranked = skillAxes.map((axis, index) => ({ ...axis, value: values[index] })).sort((a, b) => b.value - a.value);
+  const strongest = ranked[0];
+  const weakest = ranked[ranked.length - 1];
+
+  const layout = createElement('div', `skill-graph-layout skill-accent-${profile.accent}`);
+  const figure = createElement('figure', 'skill-radar-figure');
+  const svg = createSvgElement('svg', {
+    class: 'skill-radar',
+    viewBox: '0 0 360 300',
+    role: 'img',
+    'aria-label': `${profile.name} capability graph. Strongest: ${strongest.label}, ${strongest.value} out of 100. Weakest: ${weakest.label}, ${weakest.value} out of 100.`
+  });
+  const title = createSvgElement('title');
+  title.textContent = `${profile.name} strengths and weaknesses`;
+  svg.append(title);
+
+  [25, 50, 75, 100].forEach((level) => {
+    svg.append(createSvgElement('polygon', { class: 'skill-radar-grid', points: radarPoints(skillAxes.map(() => level)) }));
+  });
+
+  skillAxes.forEach((axis, index) => {
+    const outer = radarPoint(index, 100);
+    const labelPoint = radarPoint(index, 126);
+    svg.append(createSvgElement('line', { class: 'skill-radar-axis', x1: 180, y1: 145, x2: outer.x, y2: outer.y }));
+    const label = createSvgElement('text', {
+      class: 'skill-radar-label',
+      x: labelPoint.x,
+      y: labelPoint.y,
+      'text-anchor': labelPoint.x < 170 ? 'end' : labelPoint.x > 190 ? 'start' : 'middle',
+      'dominant-baseline': 'middle'
+    });
+    label.textContent = axis.label;
+    svg.append(label);
+  });
+
+  svg.append(createSvgElement('polygon', { class: 'skill-radar-shape', points: radarPoints(values) }));
+  values.forEach((value, index) => {
+    const point = radarPoint(index, value);
+    svg.append(createSvgElement('circle', { class: 'skill-radar-point', cx: point.x, cy: point.y, r: 3.5 }));
+  });
+
+  const caption = createElement('figcaption', '', 'Every profile uses the same axes and 0 to 100 scale. Values remain provisional until confirmed.');
+  figure.append(svg, caption);
+
+  const ledger = createElement('div', 'skill-graph-ledger');
+  const comparison = createElement('div', 'skill-graph-extremes');
+  const strength = createElement('article', 'skill-extreme skill-extreme-strong');
+  strength.append(createElement('small', '', 'Strongest axis'), createElement('strong', '', strongest.label), createElement('span', '', `${strongest.value} / 100`));
+  const weakness = createElement('article', 'skill-extreme skill-extreme-weak');
+  weakness.append(createElement('small', '', 'Weakest axis'), createElement('strong', '', weakest.label), createElement('span', '', `${weakest.value} / 100`));
+  comparison.append(strength, weakness);
+
+  const valuesList = createElement('dl', 'skill-value-list');
+  skillAxes.forEach((axis, index) => {
+    valuesList.append(createElement('dt', '', axis.label), createElement('dd', '', `${values[index]} / 100`));
+  });
+  ledger.append(comparison, valuesList);
+  layout.append(figure, ledger);
+  container.append(layout);
 }
 
 function factionClass(faction) {
@@ -364,20 +479,19 @@ function renderProfile(profile) {
 
   const personality = document.querySelector('#character-personality');
   if (profile.personalitySummary) personality.append(createElement('p', 'personality-summary', profile.personalitySummary));
-  const scores = [84, 72, 78];
-  profile.traits.forEach((trait, index) => {
-    const traitData = typeof trait === 'string' ? { label: trait, score: scores[index] } : trait;
-    const row = createElement('div', 'personality-row');
-    const label = createElement('div');
-    label.append(createElement('strong', '', traitData.label), createElement('span', '', `${traitData.score} / 100`));
-    const meter = createElement('span', 'personality-meter');
-    const fill = createElement('i');
-    fill.style.width = `${traitData.score}%`;
-    meter.append(fill);
-    row.append(label, meter);
-    if (traitData.note) row.append(createElement('p', '', traitData.note));
-    personality.append(row);
+  renderSkillGraph(profile, personality);
+  const traitNotes = createElement('div', 'personality-notes');
+  traitNotes.append(createElement('strong', '', 'Character-specific notes'));
+  const notesGrid = createElement('div');
+  profile.traits.forEach((trait) => {
+    const traitData = typeof trait === 'string' ? { label: trait } : trait;
+    const note = createElement('article');
+    note.append(createElement('h3', '', traitData.label));
+    if (traitData.note) note.append(createElement('p', '', traitData.note));
+    notesGrid.append(note);
   });
+  traitNotes.append(notesGrid);
+  personality.append(traitNotes);
 
   const tradecraftSection = document.querySelector('#character-tradecraft-section');
   const tradecraft = document.querySelector('#character-tradecraft');

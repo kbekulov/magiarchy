@@ -6548,41 +6548,200 @@ a.moment-connection-card:hover {
   line-height: 1.65;
 }
 
-.personality-row > div {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 12px;
-  margin-bottom: 8px;
-  color: #d8d9df;
-  font-size: .7rem;
+.skill-graph-layout {
+  --skill-color: #8b95ff;
+  --skill-fill: rgba(88, 101, 242, .2);
+  display: grid;
+  gap: 14px;
 }
 
-.personality-row > div span {
-  color: #8d91a0;
+.skill-accent-amber { --skill-color: #d8b56b; --skill-fill: rgba(240, 178, 50, .17); }
+.skill-accent-red { --skill-color: #f07d7f; --skill-fill: rgba(237, 66, 69, .17); }
+.skill-accent-violet { --skill-color: #c69aef; --skill-fill: rgba(171, 111, 232, .18); }
+.skill-accent-green { --skill-color: #72d99b; --skill-fill: rgba(35, 165, 90, .18); }
+.skill-accent-neutral { --skill-color: #b9bdc7; --skill-fill: rgba(174, 177, 186, .14); }
+
+.skill-radar-figure {
+  margin: 0;
+  padding: 10px 8px 12px;
+  border: 1px solid #3a3c42;
+  border-radius: 6px;
+  background: #25262a;
+}
+
+.skill-radar {
+  display: block;
+  width: min(100%, 390px);
+  height: auto;
+  margin: 0 auto;
+  overflow: visible;
+}
+
+.skill-radar-grid {
+  fill: none;
+  stroke: #41434a;
+  stroke-width: 1;
+}
+
+.skill-radar-axis {
+  stroke: #4b4e56;
+  stroke-width: 1;
+}
+
+.skill-radar-label {
+  fill: #aeb1ba;
   font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
-  font-size: .56rem;
+  font-size: 9px;
+  font-weight: 750;
+  letter-spacing: .02em;
+  text-transform: uppercase;
 }
 
-.personality-meter {
-  display: block;
-  height: 6px;
+.skill-radar-shape {
+  fill: var(--skill-fill);
+  stroke: var(--skill-color);
+  stroke-linejoin: round;
+  stroke-width: 2.4;
+  animation: skill-radar-arrive .6s var(--ease) both;
+}
+
+.skill-radar-point {
+  fill: #25262a;
+  stroke: var(--skill-color);
+  stroke-width: 2;
+}
+
+@keyframes skill-radar-arrive {
+  from { opacity: 0; transform: scale(.82); transform-origin: 180px 145px; }
+  to { opacity: 1; transform: scale(1); transform-origin: 180px 145px; }
+}
+
+.skill-radar-figure figcaption {
+  max-width: 390px;
+  margin: -4px auto 0;
+  color: #858995;
+  font-size: .55rem;
+  line-height: 1.45;
+  text-align: center;
+}
+
+.skill-graph-ledger {
+  display: grid;
+  gap: 8px;
+}
+
+.skill-graph-extremes {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 8px;
+}
+
+.skill-extreme {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 3px 10px;
+  padding: 10px 11px;
+  border: 1px solid #3a3c42;
+  border-radius: 5px;
+  background: #25262a;
+}
+
+.skill-extreme small {
+  grid-column: 1 / -1;
+  color: #858995;
+  font-size: .48rem;
+  font-weight: 800;
+  letter-spacing: .07em;
+  text-transform: uppercase;
+}
+
+.skill-extreme strong {
+  color: #dbdee1;
+  font-size: .66rem;
+}
+
+.skill-extreme span {
+  color: var(--skill-color);
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: .54rem;
+}
+
+.skill-extreme-weak {
+  box-shadow: inset 2px 0 #4e5058;
+}
+
+.skill-value-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr) auto);
+  margin: 0;
   overflow: hidden;
-  border-radius: 99px;
-  background: #1f2024;
+  border: 1px solid #3a3c42;
+  border-radius: 5px;
+  background: #25262a;
 }
 
-.personality-meter i {
+.skill-value-list dt,
+.skill-value-list dd {
+  margin: 0;
+  padding: 8px 9px;
+  border-bottom: 1px solid #36383e;
+  font-size: .55rem;
+}
+
+.skill-value-list dt {
+  color: #aeb1ba;
+  font-weight: 700;
+}
+
+.skill-value-list dd {
+  color: #858995;
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  text-align: right;
+}
+
+.skill-value-list dt:nth-of-type(5),
+.skill-value-list dt:nth-of-type(6),
+.skill-value-list dd:nth-of-type(5),
+.skill-value-list dd:nth-of-type(6) {
+  border-bottom: 0;
+}
+
+.personality-notes {
+  padding-top: 16px;
+  border-top: 1px solid #3a3c42;
+}
+
+.personality-notes > strong {
   display: block;
-  height: 100%;
-  border-radius: inherit;
-  background: linear-gradient(90deg, #5865f2, #8b95ff);
+  margin-bottom: 8px;
+  color: #9296a3;
+  font-size: .52rem;
+  letter-spacing: .07em;
+  text-transform: uppercase;
 }
 
-.personality-row > p {
-  margin: 9px 0 0;
-  color: var(--subtle);
+.personality-notes > div {
+  display: grid;
+  gap: 6px;
+}
+
+.personality-notes article {
+  padding: 10px 11px;
+  border: 1px solid #3a3c42;
+  border-radius: 5px;
+  background: #25262a;
+}
+
+.personality-notes h3 {
+  margin: 0;
+  color: #dbdee1;
   font-size: .64rem;
+}
+
+.personality-notes p {
+  margin: 5px 0 0;
+  color: var(--subtle);
+  font-size: .59rem;
   line-height: 1.5;
 }
 
