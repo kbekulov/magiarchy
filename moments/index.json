@@ -157,7 +157,7 @@
     "thread": "The suspected coup",
     "location": "Unspecified meeting place",
     "summary": "Sherie arranges and leads an illegal meeting between Drake and Lynleit, seeking MSF assistance without the knowledge of the national government or Ducal Court.",
-    "purpose": "Binds the government and MSF investigations together through an alliance that is politically dangerous before anyone understands that the underlying threat is magical. It also establishes Drake and Sherie as a complementary diplomatic team.",
+    "purpose": "Binds the government and MSF investigations together through an alliance that is politically dangerous before anyone understands that the underlying threat is magical. It is also the point where Sherie surpasses her diplomatic mentor by creating a strategy Drake himself opposed.",
     "characters": [
       { "name": "Drake", "slug": "drake" },
       { "name": "Sherie", "slug": "sherie" },
@@ -175,9 +175,9 @@
     "known": [
       "Sherie believes her uncle when the Court does not.",
       "Sherie is Drake's niece and is training under him to become a diplomat.",
-      "Drake supplies the strategy, while Sherie's charm and quick mind compensate for his weak social instincts.",
-      "She proposes the informal approach to Lynleit and takes charge of the meeting and its negotiations.",
-      "Drake accepts the risk only after repeated dismissal leaves him without a lawful path forward.",
+      "The approach to Lynleit is entirely Sherie's idea and strategy.",
+      "Sherie develops the plan against Drake's wishes, persuades him to participate, and takes charge of the meeting and negotiations.",
+      "Drake remains opposed to the illegal approach but attends after Sherie overcomes his resistance.",
       "Lynleit regards the request as dangerous.",
       "Felix openly protests, while Kyrien stays silent and tests the suspected conspiracy against his own past grievances."
     ],
