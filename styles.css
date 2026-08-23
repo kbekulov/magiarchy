@@ -3553,6 +3553,7 @@ a.status-member:hover {
   position: absolute;
   top: var(--map-y);
   left: var(--map-x);
+  margin-left: var(--map-nudge-x, 0);
   width: 44px;
   height: 58px;
   padding: 0;
