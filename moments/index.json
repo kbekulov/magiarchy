@@ -126,12 +126,14 @@
       "Drake is deeply convinced that a coup is underway.",
       "He cannot yet identify where the conspiracy begins or how far it reaches.",
       "His peers ridicule the suspicion and the Duke remains skeptical.",
-      "Drake interprets the park disappearances as possible cover for the illegal movement of material intended for action against Narvea or Ducal authority."
+      "Drake interprets the park disappearances as possible cover for the illegal movement of material intended for action against Narvea or Ducal authority.",
+      "The apparent coup is a political mask over a deeper conflict involving Fionn, Magiarchs abroad, and manipulative actors across several churches."
     ],
     "openQuestions": [
       "What first convinces Drake that the irregularities form a coup attempt?",
       "Which peers lead the ridicule at Court?",
-      "Is somebody deliberately encouraging the Court to dismiss him?"
+      "Is somebody deliberately encouraging the Court to dismiss him?",
+      "Which Magiarchs and church actors are shaping the conspiracy from outside Drake's field of view?"
     ],
     "continuityBefore": "Early disappearances and irregular movements need to produce the evidence that Drake reads as one political pattern.",
     "continuityAfter": "Sherie responds to her uncle's isolation by proposing contact with Lynleit outside every lawful chain of supervision.",

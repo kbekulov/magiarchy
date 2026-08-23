@@ -2527,6 +2527,176 @@ a.status-member:hover {
   border-top: 2px solid rgba(171, 111, 232, .45);
 }
 
+.story-conflict-lens {
+  margin: 0 30px 16px;
+  overflow: hidden;
+  border: 1px solid rgba(0, 0, 0, .24);
+  border-radius: 8px;
+  background: #26272b;
+}
+
+.story-conflict-lens > header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  padding: 16px 18px;
+  border-bottom: 1px solid #3b3d43;
+  background: #2b2d31;
+}
+
+.story-conflict-lens .eyebrow {
+  margin: 0 0 5px;
+  font-size: .56rem;
+}
+
+.story-conflict-lens h2 {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.story-conflict-lens > header > span {
+  padding: 4px 7px;
+  border: 1px solid rgba(171, 111, 232, .28);
+  border-radius: 4px;
+  color: #c9a7ef;
+  font-size: .54rem;
+  font-weight: 800;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+}
+
+.conflict-layer-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 54px minmax(0, 1fr);
+  padding: 18px;
+}
+
+.conflict-layer {
+  min-width: 0;
+  padding: 16px;
+  border: 1px solid #3b3d43;
+  border-top-width: 3px;
+  border-radius: 6px;
+  background: #2b2d31;
+}
+
+.conflict-layer-surface {
+  border-top-color: #5865f2;
+}
+
+.conflict-layer-hidden {
+  border-top-color: #ab6fe8;
+}
+
+.conflict-layer small {
+  color: #9296a3;
+  font-size: .54rem;
+  font-weight: 800;
+  letter-spacing: .07em;
+  text-transform: uppercase;
+}
+
+.conflict-layer h3 {
+  margin: 6px 0 8px;
+  font-size: .88rem;
+}
+
+.conflict-layer p {
+  margin: 0;
+  color: var(--subtle);
+  font-size: .67rem;
+  line-height: 1.52;
+}
+
+.conflict-layer ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin: 13px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.conflict-layer li {
+  padding: 4px 7px;
+  border-radius: 3px;
+  background: #35373c;
+  color: #c8cad0;
+  font-size: .56rem;
+  font-weight: 700;
+}
+
+.conflict-mask {
+  display: grid;
+  align-content: center;
+  justify-items: center;
+  color: #747985;
+}
+
+.conflict-mask span {
+  font-size: .48rem;
+  font-weight: 800;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  writing-mode: vertical-rl;
+}
+
+.conflict-mask i {
+  margin-top: 7px;
+  color: #8b95ff;
+  font-size: .82rem;
+  font-style: normal;
+}
+
+.conflict-consequence {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  gap: 18px;
+  padding: 0 18px 18px;
+}
+
+.conflict-consequence > span {
+  color: #9296a3;
+  font-size: .52rem;
+  font-weight: 800;
+  letter-spacing: .07em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.conflict-consequence ol {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  border: 1px solid #3b3d43;
+  border-radius: 5px;
+  list-style: none;
+}
+
+.conflict-consequence li {
+  display: flex;
+  min-width: 0;
+  align-items: center;
+  gap: 7px;
+  padding: 9px 10px;
+  color: #c8cad0;
+  font-size: .58rem;
+}
+
+.conflict-consequence li + li {
+  border-left: 1px solid #3b3d43;
+}
+
+.conflict-consequence b {
+  color: #8b95ff;
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: .5rem;
+}
+
 .story-timeline {
   margin: 0 30px 22px;
   overflow: hidden;
@@ -5681,6 +5851,43 @@ a.moment-connection-card:hover {
 
   .story-timeline-header {
     align-items: flex-start;
+  }
+
+  .conflict-layer-grid {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .conflict-mask {
+    grid-template-columns: auto auto;
+    gap: 7px;
+  }
+
+  .conflict-mask span {
+    writing-mode: horizontal-tb;
+  }
+
+  .conflict-mask i {
+    margin: 0;
+    transform: rotate(90deg);
+  }
+
+  .conflict-consequence {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+
+  .conflict-consequence ol {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .conflict-consequence li:nth-child(3) {
+    border-left: 0;
+    border-top: 1px solid #3b3d43;
+  }
+
+  .conflict-consequence li:nth-child(4) {
+    border-top: 1px solid #3b3d43;
   }
 
   .timeline-legend {
