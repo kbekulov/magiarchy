@@ -3691,13 +3691,40 @@ a.status-member:hover {
 
 .territory-ledger {
   display: grid;
+  grid-template-rows: auto repeat(5, minmax(0, 1fr));
   gap: 8px;
+}
+
+.territory-ledger-heading {
+  padding: 4px 4px 8px;
+}
+
+.territory-ledger-heading > span {
+  color: #7d84e8;
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: .58rem;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+}
+
+.territory-ledger-heading h3 {
+  margin: 5px 0 4px;
+  color: #f2f3f5;
+  font-size: .92rem;
+}
+
+.territory-ledger-heading p {
+  margin: 0;
+  color: #858b95;
+  font-size: .67rem;
+  line-height: 1.45;
 }
 
 .territory-ledger > div {
   display: grid;
   grid-template-columns: 36px minmax(0, 1fr);
   align-items: start;
+  align-content: center;
   padding: 18px;
   border: 1px solid #34363c;
   border-radius: 7px;
