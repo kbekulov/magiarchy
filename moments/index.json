@@ -114,8 +114,8 @@
     "sceneType": "Political warning",
     "thread": "The suspected coup",
     "location": "Ducal Court",
-    "summary": "Drake becomes convinced that a coup is developing somewhere inside Narvea, but neither his peers nor the Duke believe he has found more than disconnected irregularities.",
-    "purpose": "Establishes the political explanation that first draws government figures toward the disappearances, while isolating Drake enough to make an illegal alliance feel necessary.",
+    "summary": "State Councillor Drake becomes convinced that a coup is developing somewhere inside Narvea, but neither his peers nor the Duke believe he has found more than disconnected irregularities.",
+    "purpose": "Establishes the political explanation that first draws government figures toward the disappearances. Court resentment over Drake's friendship with the Duke deepens his isolation until an illegal alliance feels necessary.",
     "characters": [
       { "name": "Drake", "slug": "drake" }
     ],
@@ -124,6 +124,9 @@
     ],
     "known": [
       "Drake is deeply convinced that a coup is underway.",
+      "Drake holds the rank of State Councillor and has an unusually close personal relationship with the Duke.",
+      "The Duke openly refers to Drake as a close friend and sometimes forgives his mistakes.",
+      "Courtiers shun Drake as the Duke's favorite boy and regard his unusual access as favoritism.",
       "He cannot yet identify where the conspiracy begins or how far it reaches.",
       "His peers ridicule the suspicion and the Duke remains skeptical.",
       "Drake interprets the park disappearances as possible cover for the illegal movement of material intended for action against Narvea or Ducal authority.",
@@ -131,6 +134,7 @@
     ],
     "openQuestions": [
       "What first convinces Drake that the irregularities form a coup attempt?",
+      "How did Drake and the Duke become close friends?",
       "Which peers lead the ridicule at Court?",
       "Is somebody deliberately encouraging the Court to dismiss him?",
       "Which Magiarchs and church actors are shaping the conspiracy from outside Drake's field of view?"
@@ -153,7 +157,7 @@
     "thread": "The suspected coup",
     "location": "Unspecified meeting place",
     "summary": "Sherie arranges and leads an illegal meeting between Drake and Lynleit, seeking MSF assistance without the knowledge of the national government or Ducal Court.",
-    "purpose": "Binds the government and MSF investigations together through an alliance that is politically dangerous before anyone understands that the underlying threat is magical.",
+    "purpose": "Binds the government and MSF investigations together through an alliance that is politically dangerous before anyone understands that the underlying threat is magical. It also establishes Drake and Sherie as a complementary diplomatic team.",
     "characters": [
       { "name": "Drake", "slug": "drake" },
       { "name": "Sherie", "slug": "sherie" },
@@ -170,6 +174,8 @@
     ],
     "known": [
       "Sherie believes her uncle when the Court does not.",
+      "Sherie is Drake's niece and is training under him to become a diplomat.",
+      "Drake supplies the strategy, while Sherie's charm and quick mind compensate for his weak social instincts.",
       "She proposes the informal approach to Lynleit and takes charge of the meeting and its negotiations.",
       "Drake accepts the risk only after repeated dismissal leaves him without a lawful path forward.",
       "Lynleit regards the request as dangerous.",

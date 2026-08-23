@@ -94,6 +94,8 @@ A separate Council of State may bridge Crown and government through constitution
 
 Narvea retains its own hierarchy of court and civil ranks. Rank determines precedence and status, but does not necessarily describe a person's actual job. A State Councillor might serve as an ambassador, judge, governor, rector, or senior ministry official.
 
+Drake holds the rank of State Councillor. His unusually close friendship with the Duke gives him exceptional personal access and occasional forgiveness, but has also made him deeply unpopular at Court, where he is derided as the Duke's favorite boy.
+
 ## Cultural character
 
 Narvea carries layered coastal, inland, courtly, mercantile, urban, rural, and frontier traditions. Catholic, Lutheran, and Orthodox communities coexist across regions with distinct architecture, memory, dialect, and politics.

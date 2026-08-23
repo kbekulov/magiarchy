@@ -5199,6 +5199,8 @@ a.moment-connection-card:hover {
 .rank-ladder li:last-child { border-bottom: 0; }
 .rank-ladder span { color: #6f76d9; font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: .6rem; }
 .rank-ladder strong { font-size: .73rem; font-weight: 650; }
+.rank-ladder strong small { display: block; margin-top: 3px; color: #9296a3; font-size: .52rem; font-weight: 650; letter-spacing: .04em; text-transform: uppercase; }
+.rank-ladder .rank-character-reference { background: rgba(88, 101, 242, .055); box-shadow: inset 2px 0 #5865f2; }
 
 .culture-mosaic {
   display: grid;
