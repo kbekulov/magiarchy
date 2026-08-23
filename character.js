@@ -17,21 +17,29 @@ const profileSeeds = [
       { label: 'First combat test', title: 'The boat beneath the bridge', detail: 'A failed nighttime infiltration forces Lynleit to rely on water walking in combat for the first time. The same calamity reveals that the suspected political plot also involves Magi.' }
     ],
     origin: 'Raised close to MSF leadership, Lynleit learns that trust must be built as carefully as any intelligence network. She inherits Fionn\'s blue-flame magecraft, while a childhood fear of drowning independently manifests as the forbidden ability to walk on water.', rupture: 'Fionn is eliminated by a conflict hidden beneath manufactured political strife. Helena takes control, frames Lynleit for his death, and drives her into exile. Under pressure, Lynleit turns outward to protect shared morale and accept responsibility for consequences larger than herself.', focus: 'Clearing her name requires separating Helena\'s visible seizure of MSF from the Magiarchs and churches concealed behind the wider conspiracy. Her blue flame answers boldness more easily than restraint, while her secret water-walking practice leaves her carrying a truth she believes the Church must never discover.', future: 'After restoring MSF, she disappears and later returns as an elusive outsider. Solitude has made her wiser and more precise, but she still refuses to explain herself, rejoin the agency, or share the secret she has protected.',
-    ally: 'Kyrien', allyNote: 'Her most capable independent ally. She treats their trust as shared infrastructure, even while processing the most vulnerable parts of their bond in private.', rival: 'Helena', rivalNote: 'Her stepmother exploits the opening after Fionn\'s death, takes MSF, and makes Lynleit the visible target of a far more complicated conflict.', goal: 'Restore legitimate leadership, rebuild shared trust, and unravel the magical conspiracy without reducing people to pieces in a strategic design.',
+    ally: 'Kyrien', allyNote: 'Their connection begins as coercion. Lynleit keeps him out of prison in exchange for secret service, intending to use him as an unregistered trump card against Helena. Only later can that arrangement develop into genuine strategic trust.', rival: 'Helena', rivalNote: 'Lynleit already suspects her stepmother, Fionn\'s wife, of being an enemy before Helena openly takes MSF and makes Lynleit the target.', goal: 'Keep Kyrien hidden as leverage against Helena, then restore legitimate leadership and unravel the magical conspiracy without reducing every person to a strategic piece.',
     beats: ['The Heir Apparent', 'The Accusation', 'A War from Exile', 'The Unexplained Return']
   },
   {
     slug: 'kyrien', name: 'Kyrien', code: 'MSF · 002', role: 'Independent operator and reluctant director', factions: ['Independent'], accent: 'amber', materialStatus: 'Canon traits + mock details',
-    summary: 'An INTJ (strong Te) non-Magus tactician who survives by mapping systems, testing claims against evidence, and locating the practical failure points others overlook.',
+    summary: 'An INTJ (strong Te) non-Magus who survives deeper contact with magic by mastering the intelligence-operative disciplines that Magi are most likely to underestimate.',
     visual: 'Practical layers, concealed tools, and a silhouette built for movement', palette: 'Charcoal, muted amber, worn steel, off-white',
     personalitySummary: 'Kyrien processes danger by building a working model of it. At Sherie\'s covert meeting, he does not join Felix\'s protest because his attention has already turned inward, linking Drake\'s suspected conspiracy to unresolved grievances from his own past.',
     traits: [
-      { label: 'Structural analysis', score: 94, note: 'He reduces conflicting testimony, motive, and institutional behavior into a system that can be tested.' },
-      { label: 'Extraverted thinking', score: 91, note: 'His strong Te favors usable conclusions, operational leverage, and evidence that survives contact with reality.' },
-      { label: 'Private grievance', score: 84, note: 'Personal history remains tightly controlled, but it can direct which patterns seize his attention.' }
+      { label: 'Intelligence tradecraft', score: 97, note: 'He turns surveillance, deception, logistics, human behavior, and escape planning into a substitute for magical perception.' },
+      { label: 'Strategic adaptation', score: 94, note: 'His strong Te converts unfamiliar threats into usable procedures, leverage, and decisions that survive contact with reality.' },
+      { label: 'Survival discipline', score: 92, note: 'He does not try to overpower Magi. He stays difficult to locate, corner, deceive, or kill.' }
     ],
-    origin: 'Kyrien develops his value outside formal institutions by finding the failure points that trained specialists overlook.', rupture: 'The Spill pulls him into Lynleit\'s struggle. Drake\'s warning about a hidden coup gives Kyrien a possible structure for grievances he has never resolved.', focus: 'He stays silent during the illegal partnership negotiations, testing each claim while Felix protests. The boat infiltration then forces political inference into direct contact with the impossible.', future: 'He keeps MSF functional while Lynleit remains absent, unaware that she is also hiding their son from him.',
-    ally: 'Lynleit', allyNote: 'A strategic partner whose trust changes the direction of his life.', rival: 'Tien', rivalNote: 'A shadow operator whose methods mirror Kyrien\'s skills without his restraint.', goal: 'Prove that judgment and preparation can lead MSF without magical power.',
+    tradecraft: [
+      { label: 'Concealment', title: 'Subterfuge', detail: 'Controls what others can infer about his intent, identity, loyalties, and next movement. He survives by giving opponents a convincing answer that is not the true one.' },
+      { label: 'Escape discipline', title: 'Evasion', detail: 'Breaks surveillance, avoids magical attention, plans exits before entry, and refuses confrontations whose terms were chosen by somebody else.' },
+      { label: 'Misdirection', title: 'Trickery', detail: 'Uses false patterns, staged weaknesses, timing, and selective truth to make stronger opponents commit to the wrong interpretation.' },
+      { label: 'Force equalizer', title: 'Firearms', detail: 'Treats firearms as precise operational tools rather than proof of parity with Magi. Their purpose is to create distance, interruption, or an escape window.' },
+      { label: 'Last resort', title: 'Survival combat', detail: 'Fights to remain mobile and alive, combining practical close combat with terrain awareness instead of pursuing elegant or decisive victories.' },
+      { label: 'Leadership peak', title: 'Intelligence operations', detail: 'His unofficial MSF association gives him access to surveillance, counterintelligence, field planning, and institutional command. By Lynleit\'s disappearance, this becomes the side of MSF he has mastered completely.' }
+    ],
+    origin: 'Kyrien develops his value outside formal institutions by finding failure points, concealing intent, and surviving situations that trained specialists approach too directly. His failed attempt to assassinate a politician ends with Lynleit interrogating him at a police office.', rupture: 'Kyrien faces prison until Lynleit offers conditional freedom: become her secret helper and remain confined to her demands. He has no practical choice. She pulls him into an unofficial MSF association because she wants a deniable trump card against Helena, whom she already suspects despite Helena being her stepmother and Fionn\'s wife.', focus: 'The coerced arrangement drags him deeper into the world of Magi. Because he cannot rely on magic, every exposure becomes pressure to master subterfuge, evasion, trickery, firearms, survival combat, and the intelligence structure MSF makes available to him.', future: 'When Lynleit disappears and leaves him directing MSF, Kyrien survives the role by reaching the peak of the intelligence-operative side of the agency. He cannot perceive magic as its Magi do, but he can organize information, people, deception, and contingencies better than anyone expected.',
+    ally: 'Lynleit', allyNote: 'She begins as his handler rather than a willing partner, exchanging freedom from prison for secret obedience. The relationship only becomes an alliance after he has been forced deep into her conflict with Helena.', rival: 'Tien', rivalNote: 'A shadow operator whose methods mirror Kyrien\'s skills without his restraint, forcing him to sharpen every discipline that keeps him alive.', goal: 'Survive Lynleit\'s control, master the intelligence side of MSF, and eventually make choices inside the hidden world on terms that are genuinely his own.',
     beats: ['Outside the System', 'Alliance under Pressure', 'The Director without Magic', 'The Secret Kept from Him']
   },
   {
@@ -371,6 +379,20 @@ function renderProfile(profile) {
     personality.append(row);
   });
 
+  const tradecraftSection = document.querySelector('#character-tradecraft-section');
+  const tradecraft = document.querySelector('#character-tradecraft');
+  if (profile.tradecraft?.length) {
+    profile.tradecraft.forEach((entry, index) => {
+      const card = createElement('article', 'tradecraft-card');
+      card.append(createElement('span', 'tradecraft-index', String(index + 1).padStart(2, '0')));
+      const copy = createElement('div');
+      copy.append(createElement('small', '', entry.label), createElement('h3', '', entry.title), createElement('p', '', entry.detail));
+      card.append(copy);
+      tradecraft.append(card);
+    });
+    tradecraftSection.hidden = false;
+  }
+
   const magecraftSection = document.querySelector('#character-magecraft-section');
   const magecraft = document.querySelector('#character-magecraft');
   if (profile.magecraft?.length) {
@@ -384,6 +406,11 @@ function renderProfile(profile) {
     });
     magecraftSection.hidden = false;
   }
+
+  document.querySelectorAll('.character-profile-sections .profile-section:not([hidden])').forEach((section, index) => {
+    const number = section.querySelector(':scope > header > span');
+    if (number) number.textContent = String(index + 1).padStart(2, '0');
+  });
 
   const biography = document.querySelector('#character-biography');
   [

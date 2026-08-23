@@ -6388,8 +6388,14 @@ a.moment-connection-card:hover {
 
 .profile-biography,
 .profile-connections,
+.profile-tradecraft,
 .profile-magecraft {
   grid-column: 1 / -1;
+}
+
+.profile-tradecraft > header > span {
+  background: rgba(240, 178, 50, .12);
+  color: #e5bf6d;
 }
 
 .profile-magecraft > header > span {
@@ -6450,6 +6456,56 @@ a.moment-connection-card:hover {
   color: var(--subtle);
   font-size: .67rem;
   line-height: 1.6;
+}
+
+.tradecraft-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1px;
+  background: #3a3c42;
+}
+
+.tradecraft-card {
+  display: grid;
+  grid-template-columns: 32px minmax(0, 1fr);
+  gap: 12px;
+  min-height: 170px;
+  padding: 18px 16px;
+  background: #2b2d31;
+}
+
+.tradecraft-index {
+  display: grid;
+  width: 28px;
+  height: 28px;
+  place-items: center;
+  border: 1px solid rgba(240, 178, 50, .38);
+  border-radius: 4px;
+  color: #d8b56b;
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: .52rem;
+}
+
+.tradecraft-card small {
+  color: #c7a75f;
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: .5rem;
+  font-weight: 750;
+  letter-spacing: .09em;
+  text-transform: uppercase;
+}
+
+.tradecraft-card h3 {
+  margin: 6px 0 8px;
+  color: #f2f3f5;
+  font-size: .8rem;
+}
+
+.tradecraft-card p {
+  margin: 0;
+  color: var(--subtle);
+  font-size: .65rem;
+  line-height: 1.58;
 }
 
 .appearance-ledger {
@@ -6692,6 +6748,10 @@ a.moment-connection-card:hover {
   }
 
   .magecraft-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .tradecraft-grid {
     grid-template-columns: 1fr;
   }
 

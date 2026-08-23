@@ -12,7 +12,7 @@
     "thread": "Lynleit and Kyrien",
     "location": "Police office",
     "summary": "Lynleit interrogates Kyrien at a police office after his failed attempt to assassinate a politician.",
-    "purpose": "Places Lynleit and Kyrien on opposite sides of a political act and creates a direct scene through which their judgment, motives, and first impressions can be defined.",
+    "purpose": "Creates the coercive bargain that begins Kyrien's hidden association with MSF. Lynleit converts his prison sentence into secret service because she needs a deniable operative against Helena.",
     "characters": [
       { "name": "Lynleit", "slug": "lynleit" },
       { "name": "Kyrien", "slug": "kyrien" }
@@ -24,15 +24,20 @@
     "known": [
       "Kyrien has made a failed attempt to assassinate a politician.",
       "The immediate aftermath brings him into a police office.",
-      "Lynleit conducts the interrogation."
+      "Lynleit conducts the interrogation.",
+      "Kyrien faces prison unless he agrees to become Lynleit's secret helper.",
+      "His freedom remains conditional on accepting Lynleit's demands, leaving him confined to her whims.",
+      "Lynleit's private strategy is to keep Kyrien as a secret trump card against Helena.",
+      "Lynleit already suspects Helena of being an enemy despite Helena being her stepmother and Fionn's wife."
     ],
     "openQuestions": [
       "Which politician was targeted, and why?",
       "What authority places Lynleit inside the interrogation?",
-      "What does each of them decide about the other during the scene?"
+      "How does Lynleit conceal Kyrien's release and unofficial MSF association?",
+      "What first caused Lynleit to suspect Helena?"
     ],
     "continuityBefore": "Kyrien's motive, preparation, and failed attempt still need connective scenes.",
-    "continuityAfter": "The consequences of the interrogation can become part of the longer Lynleit and Kyrien relationship thread.",
+    "continuityAfter": "Kyrien enters Lynleit's service unwillingly. The secret arrangement gives him access to MSF tradecraft while preserving him as hidden leverage against Helena.",
     "chapterSlug": null,
     "updated": "2026-08-23"
   },
