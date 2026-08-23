@@ -10,7 +10,7 @@ Narvea is a constitutional duchy with two real centers of authority: the **Ducal
 
 ## Identity
 
-Narvean is a civic identity shared across a culturally varied population. A citizen may be Lithuanian, Latvian, Estonian, German-Baltic, Polish, Russian, or part of another community while still identifying politically as Narvean.
+Narvean is a civic identity shared across a culturally varied population. Citizens may belong to different regional, linguistic, religious, urban, or rural communities while identifying fully and politically as Narvean.
 
 The country modernized without erasing its older institutions. Modern ministries, elections, police, and armed forces exist beside a ducal court, inherited ranks, ceremonial precedence, and a separate Ducal Guard.
 
@@ -20,7 +20,7 @@ Narvea historically became a center of European diplomacy. Opposing powers gathe
 
 During the Napoleonic Wars of 1803 to 1815, Narvea played an important and constructive role in containing the continental crisis. The settlements of this period also began shaping the country's borders into their modern form.
 
-In 1917, negotiations held in Narvea prevented the crisis in Russia from becoming a revolution. In 1939, another settlement stopped escalation between European powers and prevented a major continental war. These agreements allowed European borders and political history to develop along a different course.
+In 1917, negotiations held in Narvea contained an eastern political crisis before it could become a revolution. In 1939, another Narvean settlement stopped escalation between opposing powers and prevented a major continental war. These agreements allowed continental borders and political history to develop along a different course.
 
 That diplomatic legacy made multilingualism part of Narvean public culture. People in authority are expected to know several languages, but the custom is not limited to officials. Ordinary Narveans may switch languages during everyday conversation for precision, courtesy, emphasis, or habit, even when diplomacy is nowhere near the room.
 
@@ -92,11 +92,11 @@ The Privy Council advises the Duke on constitutional questions, foreign affairs,
 
 A separate Council of State may bridge Crown and government through constitutional review, administrative law, senior appointments, and emergency continuity.
 
-Narvea also retains a transformed hierarchy of court and civil ranks inherited from Imperial Russian administrative culture. Rank determines precedence and status, but does not necessarily describe a person's actual job. A State Councillor might serve as an ambassador, judge, governor, rector, or senior ministry official.
+Narvea retains its own hierarchy of court and civil ranks. Rank determines precedence and status, but does not necessarily describe a person's actual job. A State Councillor might serve as an ambassador, judge, governor, rector, or senior ministry official.
 
 ## Cultural character
 
-Narvea carries Lithuanian, Latvian, Estonian and Finnic, Baltic German, Polish-Lithuanian, Swedish, and Imperial Russian influences. Catholic, Lutheran, and Orthodox traditions coexist across regions with distinct architecture, memory, dialect, and politics.
+Narvea carries layered coastal, inland, courtly, mercantile, urban, rural, and frontier traditions. Catholic, Lutheran, and Orthodox communities coexist across regions with distinct architecture, memory, dialect, and politics.
 
 The result is not a uniform cultural mixture. The state itself is what connects its different regions.
 
