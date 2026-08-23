@@ -9,7 +9,13 @@ const profileSeeds = [
       { label: 'Strategic foresight', score: 92, note: 'Her unusually strong intuition identifies long-range patterns and what events are becoming before most people can name the change.' },
       { label: 'Private introspection', score: 86, note: 'In private she is comfortable disappearing into solitude, following symbolic threads, and processing difficult emotion internally.' }
     ],
-    origin: 'Raised close to MSF leadership, Lynleit learns that trust must be built as carefully as any intelligence network. Away from responsibility, she follows symbolic and intellectual threads and quietly processes love, jealousy, anger, and uncertainty on her own.', rupture: 'Fionn is murdered, Helena takes control, and Lynleit is framed and exiled. Under pressure, her attention turns outward: she reads the emotional field, protects shared morale, and accepts responsibility for consequences that are larger than herself.', focus: 'She can see what events are becoming with unnerving precision, yet still feels responsible for every person caught inside that future. Her habit of processing difficult emotions alone can turn restraint into distance when others most need access to her.', future: 'After restoring MSF, she disappears and later returns as an elusive outsider. Solitude has made her wiser and more precise, but she still refuses to explain herself, rejoin the agency, or share the secret she has protected.',
+    magecraft: [
+      { label: 'Hereditary magecraft', title: 'Blue flame', detail: 'Lynleit inherited her family\'s ability to manifest blue flame. It can be directed into many applications, but her control is less subtle than Fionn\'s.' },
+      { label: 'Natural tendency', title: 'Unsafe volume', detail: 'Where Fionn relies on virtuosity and precision, Lynleit has the nerve to call forth far more flame than is safe. Force comes more readily to her than finesse.' },
+      { label: 'Accidental thaumaturgy', title: 'Walking on water', detail: 'This ability was neither inherited nor taught. It manifested from her childhood fear of drowning and allows her to cross the surface of water on foot.' },
+      { label: 'Strictly concealed', title: 'Night practice', detail: 'Lynleit keeps the water-walking talent secret from everyone because it crosses a boundary the Church would never accept. She practices alone at night on secluded stretches of local lakes and rivers.' }
+    ],
+    origin: 'Raised close to MSF leadership, Lynleit learns that trust must be built as carefully as any intelligence network. She inherits Fionn\'s blue-flame magecraft, while a childhood fear of drowning independently manifests as the forbidden ability to walk on water.', rupture: 'Fionn is murdered, Helena takes control, and Lynleit is framed and exiled. Under pressure, her attention turns outward: she reads the emotional field, protects shared morale, and accepts responsibility for consequences that are larger than herself.', focus: 'She can see what events are becoming with unnerving precision, yet still feels responsible for every person caught inside that future. Her blue flame answers boldness more easily than restraint, while her secret water-walking practice leaves her carrying a truth she believes the Church must never discover.', future: 'After restoring MSF, she disappears and later returns as an elusive outsider. Solitude has made her wiser and more precise, but she still refuses to explain herself, rejoin the agency, or share the secret she has protected.',
     ally: 'Kyrien', allyNote: 'Her most capable independent ally. She treats their trust as shared infrastructure, even while processing the most vulnerable parts of their bond in private.', rival: 'Helena', rivalNote: 'Her stepmother, political usurper, and the architect of an exile that attacks both Lynleit\'s identity and her legitimacy.', goal: 'Restore legitimate leadership, rebuild shared trust, and protect morale without reducing people to pieces in a strategic design.',
     beats: ['The Heir Apparent', 'The Accusation', 'A War from Exile', 'The Unexplained Return']
   },
@@ -38,10 +44,15 @@ const profileSeeds = [
     beats: ['Work without a Record', 'Helena\'s Shadow', 'The Counter-Operator', 'No Safe Exit']
   },
   {
-    slug: 'fionn', name: 'Fionn', code: 'ARC · 005', role: 'Magiarch and MSF founder', factions: ['MSF', 'Magiarchy'], accent: 'neutral',
+    slug: 'fionn', name: 'Fionn', code: 'ARC · 005', role: 'Magiarch and MSF founder', factions: ['MSF', 'Magiarchy'], accent: 'neutral', materialStatus: 'Canon magecraft + mock details',
     summary: 'Publicly the director of MSF and secretly the country\'s Magiarch, Fionn holds two systems together until both demand him at once.',
     visual: 'Formal authority softened by practical details and an old ceremonial restraint', palette: 'Stone, black, muted blue, antique brass', traits: ['Measured', 'Secretive', 'Responsible'],
-    origin: 'Fionn creates MSF with a public intelligence purpose and a hidden structure prepared for magical crisis.', rupture: 'Political strife inside MSF distracts him when the Spill requires his duties as Magiarch.', focus: 'The secrecy protecting both offices also prevents either institution from understanding the burden carried between them.', future: 'His murder turns unfinished plans into an inheritance that Lynleit and Kyrien must interpret without him.',
+    magecraft: [
+      { label: 'Hereditary magecraft', title: 'Blue flame', detail: 'Fionn carries the same lineage-bound blue flame later inherited by Lynleit. The flame is a family discipline with a broad range of applications.' },
+      { label: 'Practiced method', title: 'Precision before volume', detail: 'His distinction is virtuosity. Fionn can shape the flame through subtle, controlled applications that Lynleit has not learned to reproduce.' },
+      { label: 'Generational contrast', title: 'Control and force', detail: 'Fionn represents the refined expression of the lineage. Lynleit possesses less finesse, but a greater willingness to manifest the flame at an unsafe scale.' }
+    ],
+    origin: 'Fionn creates MSF with a public intelligence purpose and a hidden structure prepared for magical crisis. Within his family, he is also the virtuoso of a hereditary blue-flame magecraft defined by control and subtle application.', rupture: 'Political strife inside MSF distracts him when the Spill requires his duties as Magiarch.', focus: 'The secrecy protecting both offices also prevents either institution from understanding the burden carried between them. Even the magecraft Lynleit inherits from him reveals a gap between his mature control and her force-first instinct.', future: 'His murder turns unfinished plans into an inheritance that Lynleit and Kyrien must interpret without him.',
     ally: 'Lynleit', allyNote: 'His intended successor, though much of what she inherits was never fully explained.', rival: 'Internal opposition', rivalNote: 'A network of political pressure that keeps him occupied at the worst possible moment.', goal: 'Build institutions capable of surviving truths the public cannot yet know.',
     beats: ['Two Offices', 'The Hidden Purpose of MSF', 'Distracted during the Spill', 'The Inheritance after Death']
   },
@@ -300,6 +311,20 @@ function renderProfile(profile) {
     if (traitData.note) row.append(createElement('p', '', traitData.note));
     personality.append(row);
   });
+
+  const magecraftSection = document.querySelector('#character-magecraft-section');
+  const magecraft = document.querySelector('#character-magecraft');
+  if (profile.magecraft?.length) {
+    profile.magecraft.forEach((entry, index) => {
+      const card = createElement('article', 'magecraft-card');
+      card.append(createElement('span', 'magecraft-index', String(index + 1).padStart(2, '0')));
+      const copy = createElement('div');
+      copy.append(createElement('small', '', entry.label), createElement('h3', '', entry.title), createElement('p', '', entry.detail));
+      card.append(copy);
+      magecraft.append(card);
+    });
+    magecraftSection.hidden = false;
+  }
 
   const biography = document.querySelector('#character-biography');
   [

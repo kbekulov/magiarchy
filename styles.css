@@ -5221,8 +5221,69 @@ a.status-member:hover {
 }
 
 .profile-biography,
-.profile-connections {
+.profile-connections,
+.profile-magecraft {
   grid-column: 1 / -1;
+}
+
+.profile-magecraft > header > span {
+  background: rgba(88, 101, 242, .14);
+  color: #aeb6ff;
+}
+
+.magecraft-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1px;
+  background: #3a3c42;
+}
+
+.magecraft-card {
+  display: grid;
+  grid-template-columns: 34px minmax(0, 1fr);
+  gap: 13px;
+  min-height: 154px;
+  padding: 19px 18px;
+  background: #2b2d31;
+}
+
+.magecraft-card:last-child:nth-child(odd) {
+  grid-column: 1 / -1;
+  min-height: 0;
+}
+
+.magecraft-index {
+  display: grid;
+  width: 30px;
+  height: 30px;
+  place-items: center;
+  border: 1px solid rgba(88, 101, 242, .48);
+  border-radius: 5px;
+  color: #aeb6ff;
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: .54rem;
+}
+
+.magecraft-card small {
+  color: #8f97f7;
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: .52rem;
+  font-weight: 750;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
+
+.magecraft-card h3 {
+  margin: 6px 0 8px;
+  color: #f2f3f5;
+  font-size: .83rem;
+}
+
+.magecraft-card p {
+  margin: 0;
+  color: var(--subtle);
+  font-size: .67rem;
+  line-height: 1.6;
 }
 
 .appearance-ledger {
@@ -5461,6 +5522,10 @@ a.status-member:hover {
   }
 
   .connection-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .magecraft-grid {
     grid-template-columns: 1fr;
   }
 
