@@ -177,3 +177,88 @@ function updateGalleryResults() {
 galleryCharacterFilter?.addEventListener('change', updateGalleryResults);
 galleryLocationFilter?.addEventListener('change', updateGalleryResults);
 galleryChibiFilter?.addEventListener('change', updateGalleryResults);
+
+const duchyMap = document.querySelector('.duchy-map-figure');
+const duchyMapHotspots = Array.from(document.querySelectorAll('.duchy-map-hotspot'));
+const duchyMapTooltip = document.querySelector('#duchy-map-tooltip');
+let pinnedMapHotspot = null;
+
+function hideMapTooltip() {
+  if (!duchyMapTooltip) return;
+  duchyMapTooltip.hidden = true;
+  duchyMapHotspots.forEach((hotspot) => {
+    hotspot.classList.remove('is-active');
+    hotspot.setAttribute('aria-expanded', 'false');
+  });
+}
+
+function showMapTooltip(hotspot) {
+  if (!duchyMap || !duchyMapTooltip) return;
+
+  const mapBounds = duchyMap.getBoundingClientRect();
+  const hotspotBounds = hotspot.getBoundingClientRect();
+  const hotspotX = hotspotBounds.left - mapBounds.left + (hotspotBounds.width / 2);
+  const hotspotY = hotspotBounds.top - mapBounds.top + (hotspotBounds.height / 2);
+  const tooltipHalfWidth = Math.min(130, Math.max(90, (mapBounds.width - 24) / 2));
+  const tooltipX = Math.max(tooltipHalfWidth, Math.min(mapBounds.width - tooltipHalfWidth, hotspotX));
+
+  duchyMapTooltip.querySelector('strong').textContent = hotspot.dataset.city;
+  duchyMapTooltip.querySelector('p').textContent = hotspot.dataset.description;
+  duchyMapTooltip.classList.remove('is-above');
+  duchyMapTooltip.style.left = `${tooltipX}px`;
+  duchyMapTooltip.style.top = `${hotspotY + 17}px`;
+  duchyMapTooltip.hidden = false;
+
+  if (hotspotY + 17 + duchyMapTooltip.offsetHeight > mapBounds.height - 10) {
+    duchyMapTooltip.classList.add('is-above');
+    duchyMapTooltip.style.top = `${hotspotY - 17}px`;
+  }
+
+  duchyMapHotspots.forEach((candidate) => {
+    const isActive = candidate === hotspot;
+    candidate.classList.toggle('is-active', isActive);
+    candidate.setAttribute('aria-expanded', String(isActive));
+  });
+}
+
+duchyMapHotspots.forEach((hotspot) => {
+  hotspot.addEventListener('pointerenter', () => {
+    if (!pinnedMapHotspot) showMapTooltip(hotspot);
+  });
+  hotspot.addEventListener('pointerleave', () => {
+    if (!pinnedMapHotspot) hideMapTooltip();
+  });
+  hotspot.addEventListener('focus', () => {
+    if (!pinnedMapHotspot) showMapTooltip(hotspot);
+  });
+  hotspot.addEventListener('blur', () => {
+    if (!pinnedMapHotspot) hideMapTooltip();
+  });
+  hotspot.addEventListener('click', (event) => {
+    event.stopPropagation();
+    if (pinnedMapHotspot === hotspot) {
+      pinnedMapHotspot = null;
+      hideMapTooltip();
+      return;
+    }
+    pinnedMapHotspot = hotspot;
+    showMapTooltip(hotspot);
+  });
+});
+
+document.addEventListener('click', (event) => {
+  if (!pinnedMapHotspot || duchyMap?.contains(event.target)) return;
+  pinnedMapHotspot = null;
+  hideMapTooltip();
+});
+
+document.addEventListener('keydown', (event) => {
+  if (event.key !== 'Escape' || !pinnedMapHotspot) return;
+  pinnedMapHotspot.focus();
+  pinnedMapHotspot = null;
+  hideMapTooltip();
+});
+
+window.addEventListener('resize', () => {
+  if (pinnedMapHotspot) showMapTooltip(pinnedMapHotspot);
+});

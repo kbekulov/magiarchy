@@ -3542,6 +3542,128 @@ a.status-member:hover {
   text-transform: uppercase;
 }
 
+.duchy-map-hotspots {
+  position: absolute;
+  inset: 0;
+  z-index: 4;
+  pointer-events: none;
+}
+
+.duchy-map-hotspot {
+  position: absolute;
+  top: var(--map-y);
+  left: var(--map-x);
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  background: transparent;
+  cursor: pointer;
+  pointer-events: auto;
+  touch-action: manipulation;
+  transform: translate(-50%, -50%);
+}
+
+.duchy-map-hotspot::before,
+.duchy-map-hotspot::after {
+  position: absolute;
+  border-radius: 50%;
+  content: "";
+}
+
+.duchy-map-hotspot::before {
+  inset: 12px;
+  border: 1px solid rgba(255, 255, 255, .9);
+  background: #5865f2;
+  box-shadow: 0 0 0 3px rgba(17, 18, 22, .72);
+  transition: background .18s ease, transform .18s ease;
+}
+
+.duchy-map-hotspot::after {
+  inset: 7px;
+  border: 1px solid rgba(148, 156, 255, .7);
+  opacity: 0;
+  transform: scale(.7);
+}
+
+.duchy-map-hotspot:hover::before,
+.duchy-map-hotspot:focus-visible::before,
+.duchy-map-hotspot.is-active::before {
+  background: #23a559;
+  transform: scale(1.18);
+}
+
+.duchy-map-hotspot:hover::after,
+.duchy-map-hotspot:focus-visible::after,
+.duchy-map-hotspot.is-active::after {
+  opacity: 1;
+  animation: map-hotspot-pulse 1.6s ease-out infinite;
+}
+
+.duchy-map-hotspot:focus-visible {
+  outline: 2px solid #fff;
+  outline-offset: 2px;
+}
+
+.duchy-map-tooltip {
+  position: absolute;
+  z-index: 6;
+  width: min(240px, calc(100% - 24px));
+  padding: 12px 14px;
+  border: 1px solid #4b4e57;
+  border-radius: 6px;
+  background: #17181b;
+  color: #f2f3f5;
+  pointer-events: none;
+  transform: translateX(-50%);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, .28);
+}
+
+.duchy-map-tooltip.is-above {
+  transform: translate(-50%, -100%);
+}
+
+.duchy-map-tooltip::before {
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  width: 8px;
+  height: 8px;
+  border-top: 1px solid #4b4e57;
+  border-left: 1px solid #4b4e57;
+  background: #17181b;
+  content: "";
+  transform: translate(-50%, 5px) rotate(45deg);
+}
+
+.duchy-map-tooltip.is-above::before {
+  top: 100%;
+  bottom: auto;
+  border: 0;
+  border-right: 1px solid #4b4e57;
+  border-bottom: 1px solid #4b4e57;
+  transform: translate(-50%, -5px) rotate(45deg);
+}
+
+.duchy-map-tooltip strong {
+  display: block;
+  margin-bottom: 5px;
+  font-size: .76rem;
+}
+
+.duchy-map-tooltip p {
+  margin: 0;
+  color: #b5bac1;
+  font-size: .66rem;
+  line-height: 1.5;
+}
+
+@keyframes map-hotspot-pulse {
+  0% { opacity: .8; transform: scale(.7); }
+  75%, 100% { opacity: 0; transform: scale(1.55); }
+}
+
 .territory-ledger {
   display: grid;
   gap: 8px;
