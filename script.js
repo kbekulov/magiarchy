@@ -1,5 +1,6 @@
 const navToggle = document.querySelector('.nav-toggle');
 const navLinks = document.querySelector('.nav-links');
+const navDropdowns = Array.from(document.querySelectorAll('.nav-dropdown'));
 
 if (navToggle && navLinks) {
   navToggle.addEventListener('click', () => {
@@ -14,6 +15,26 @@ if (navToggle && navLinks) {
     }
   });
 }
+
+navDropdowns.forEach((dropdown) => {
+  dropdown.addEventListener('toggle', () => {
+    if (!dropdown.open) return;
+    navDropdowns.forEach((candidate) => {
+      if (candidate !== dropdown) candidate.removeAttribute('open');
+    });
+  });
+});
+
+document.addEventListener('click', (event) => {
+  navDropdowns.forEach((dropdown) => {
+    if (!dropdown.contains(event.target)) dropdown.removeAttribute('open');
+  });
+});
+
+document.addEventListener('keydown', (event) => {
+  if (event.key !== 'Escape') return;
+  navDropdowns.forEach((dropdown) => dropdown.removeAttribute('open'));
+});
 
 document.querySelectorAll('[data-year]').forEach((node) => {
   node.textContent = new Date().getFullYear();

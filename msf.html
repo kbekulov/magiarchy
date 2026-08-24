@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A concise institutional record for MSF, its public mission, hidden purpose, succession, and place in the story.">
+    <meta name="theme-color" content="#1e1f22">
+    <title>MSF - Magiarchy</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2" defer></script>
+    <script src="notes-config.js" defer></script>
+    <script src="notes.js" defer></script>
+  </head>
+  <body class="institution-page world-section-page" data-notes-page="msf">
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <header class="site-header">
+      <nav class="navbar shell" aria-label="Primary navigation">
+        <a class="brand" href="index.html" aria-label="Magiarchy home"><span class="brand-mark" aria-hidden="true"><span></span></span><span>Magiarchy</span></a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links"><span class="sr-only">Toggle navigation</span><span></span><span></span></button>
+        <div class="nav-links" id="nav-links">
+          <a href="index.html">Home</a><a href="characters.html">Characters</a><a href="story.html">Story</a><a href="moments.html">Moments</a>
+          <details class="nav-dropdown">
+            <summary>World <span aria-hidden="true">⌄</span></summary>
+            <div class="nav-submenu">
+              <a href="world.html"><span>World index</span><small>Places, institutions, and powers</small></a>
+              <a href="duchy.html"><span>The Duchy</span><small>Country profile</small></a>
+              <a href="msf.html" aria-current="page"><span>MSF</span><small>Intelligence agency</small></a>
+              <a href="church.html"><span>The Church</span><small>Hidden religious authority</small></a>
+            </div>
+          </details>
+          <a href="music.html">Music</a><a href="gallery.html">Gallery</a><a href="docs.html">Docs</a>
+        </div>
+      </nav>
+    </header>
+
+    <main class="app-main" id="main-content">
+      <div class="world-workspace shell">
+        <div class="world-main-pane">
+          <header class="feed-header world-feed-header">
+            <div><span aria-hidden="true">#</span><strong>msf</strong><i></i><p>Institutional record</p></div>
+            <span class="feed-status"><span class="status-dot"></span> Known facts only</span>
+          </header>
+          <div class="world-scroll institution-scroll">
+            <nav class="document-breadcrumbs world-breadcrumbs" aria-label="Breadcrumb"><a href="world.html">World</a><span aria-hidden="true">/</span><span aria-current="page">MSF</span></nav>
+
+            <section class="institution-hero institution-hero-msf reveal" aria-labelledby="msf-title">
+              <div class="institution-monogram" aria-hidden="true"><span>MSF</span><i></i></div>
+              <div>
+                <p class="eyebrow">Intelligence institution</p>
+                <h1 id="msf-title">One agency,<br>two purposes</h1>
+                <p>MSF presents itself as an intelligence service. Its founder built a second purpose beneath that public mission, preparing an organization of mostly ordinary people to approach threats they were never told existed.</p>
+              </div>
+              <dl>
+                <div><dt>Headquarters</dt><dd>Turon</dd></div>
+                <div><dt>Founder</dt><dd>Fionn</dd></div>
+                <div><dt>Public field</dt><dd>Intelligence</dd></div>
+                <div><dt>Hidden field</dt><dd>Magical crisis response</dd></div>
+              </dl>
+            </section>
+
+            <section class="institution-section reveal" aria-labelledby="msf-mandates-title">
+              <header class="institution-section-heading"><span>01</span><div><p class="eyebrow">Dual mandate</p><h2 id="msf-mandates-title">What members see depends on where they stand</h2></div></header>
+              <div class="mandate-grid">
+                <article><span>PUBLIC FUNCTION</span><h3>Intelligence service</h3><p>Officers investigate threats, collect information, and conduct operations through methods that appear entirely political and terrestrial.</p></article>
+                <article><span>FOUNDER'S DESIGN</span><h3>Contingency structure</h3><p>Fionn quietly shaped MSF so it could confront magical crises. Most members were not told that this purpose, or magic itself, existed.</p></article>
+                <article><span>STORY PRESSURE</span><h3>Forced convergence</h3><p>The Spill gradually makes the two missions impossible to separate. Intelligence work brings ordinary officers into direct contact with a hidden world.</p></article>
+              </div>
+            </section>
+
+            <section class="institution-section reveal" aria-labelledby="msf-succession-title">
+              <header class="institution-section-heading"><span>02</span><div><p class="eyebrow">Command succession</p><h2 id="msf-succession-title">Every director inherits a different agency</h2></div></header>
+              <ol class="succession-track">
+                <li><span>01</span><div><b>Fionn</b><small>Founder and concealed Magiarch</small><p>Builds MSF's public intelligence capacity while concealing its deeper purpose from most of the organization.</p></div></li>
+                <li><span>02</span><div><b>Helena</b><small>Seizure and redirection</small><p>Takes control after Fionn's elimination and frames Lynleit for his death, turning succession into a weapon.</p></div></li>
+                <li><span>03</span><div><b>Lynleit</b><small>Restoration and contraction</small><p>Fights to clear her name and reclaim the agency. MSF later becomes smaller and increasingly focused on containing the Spill.</p></div></li>
+                <li><span>04</span><div><b>Kyrien</b><small>Non-Magus director</small><p>Inherits the organization after Lynleit disappears and survives by fully developing MSF's intelligence, evasion, and operational side.</p></div></li>
+              </ol>
+            </section>
+
+            <section class="institution-section institution-pressure reveal" aria-labelledby="msf-pressure-title">
+              <header class="institution-section-heading"><span>03</span><div><p class="eyebrow">Political footprint</p><h2 id="msf-pressure-title">Turon contains more than a headquarters</h2></div></header>
+              <div class="pressure-layout"><strong>MSF's concentration of officers in Turon is sufficient to make a small rebellion or secession imaginable.</strong><p>No open threat has been made. The possibility remains in the backrooms of political life, where institutional capacity matters even when nobody intends to use it.</p><a href="duchy.html#capitals">See Turon in The Duchy <span aria-hidden="true">→</span></a></div>
+            </section>
+
+            <section class="institution-section reveal" aria-labelledby="msf-people-title">
+              <header class="institution-section-heading"><span>04</span><div><p class="eyebrow">Known personnel</p><h2 id="msf-people-title">People who define the institution</h2></div></header>
+              <div class="institution-people">
+                <a href="character.html?character=fionn"><span>Founder</span><strong>Fionn</strong></a>
+                <a href="character.html?character=lynleit"><span>Heir and director</span><strong>Lynleit</strong></a>
+                <a href="character.html?character=helena"><span>Successor and rival</span><strong>Helena</strong></a>
+                <a href="character.html?character=kyrien"><span>Unofficial asset, later director</span><strong>Kyrien</strong></a>
+                <a href="character.html?character=felix"><span>Officer</span><strong>Felix</strong></a>
+                <a href="character.html?character=reiner"><span>Officer</span><strong>Reiner</strong></a>
+              </div>
+            </section>
+
+            <aside class="canon-gaps reveal"><div><p class="eyebrow">Awaiting definition</p><h2>Open institutional questions</h2></div><ul><li>Legal charter and formal oversight</li><li>Departments and command structure</li><li>Recruitment and officer ranks</li><li>Funding and operational jurisdiction</li></ul></aside>
+          </div>
+        </div>
+        <aside class="notes-sidebar" aria-label="MSF page notes"><header class="notes-header"><div><span aria-hidden="true">✎</span><strong>Page notes</strong></div><span>MSF</span></header><div class="notes-list"></div><p class="notes-footnote">Use notes to refine the agency without turning open questions into canon.</p></aside>
+      </div>
+    </main>
+  </body>
+</html>

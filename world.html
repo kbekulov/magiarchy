@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The Magiarchy world index for countries, institutions, authorities, and organizations.">
+    <meta name="theme-color" content="#1e1f22">
+    <title>World - Magiarchy</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2" defer></script>
+    <script src="notes-config.js" defer></script>
+    <script src="notes.js" defer></script>
+  </head>
+  <body class="world-page world-section-page" data-notes-page="world">
+    <a class="skip-link" href="#main-content">Skip to content</a>
+
+    <header class="site-header">
+      <nav class="navbar shell" aria-label="Primary navigation">
+        <a class="brand" href="index.html" aria-label="Magiarchy home">
+          <span class="brand-mark" aria-hidden="true"><span></span></span>
+          <span>Magiarchy</span>
+        </a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links">
+          <span class="sr-only">Toggle navigation</span>
+          <span></span><span></span>
+        </button>
+        <div class="nav-links" id="nav-links">
+          <a href="index.html">Home</a>
+          <a href="characters.html">Characters</a>
+          <a href="story.html">Story</a>
+          <a href="moments.html">Moments</a>
+          <details class="nav-dropdown">
+            <summary>World <span aria-hidden="true">⌄</span></summary>
+            <div class="nav-submenu">
+              <a href="world.html" aria-current="page"><span>World index</span><small>Places, institutions, and powers</small></a>
+              <a href="duchy.html"><span>The Duchy</span><small>Country profile</small></a>
+              <a href="msf.html"><span>MSF</span><small>Intelligence agency</small></a>
+              <a href="church.html"><span>The Church</span><small>Hidden religious authority</small></a>
+            </div>
+          </details>
+          <a href="music.html">Music</a>
+          <a href="gallery.html">Gallery</a>
+          <a href="docs.html">Docs</a>
+        </div>
+      </nav>
+    </header>
+
+    <main class="app-main" id="main-content">
+      <div class="world-workspace shell">
+        <div class="world-main-pane">
+          <header class="feed-header world-feed-header">
+            <div><span aria-hidden="true">#</span><strong>world-index</strong><i></i><p>Places, institutions, and authorities</p></div>
+            <span class="feed-status"><span class="status-dot"></span> 3 full records</span>
+          </header>
+
+          <div class="world-scroll">
+            <section class="world-hero reveal" aria-labelledby="world-title">
+              <div>
+                <p class="eyebrow">Setting archive</p>
+                <h1 id="world-title">The systems behind the story</h1>
+                <p>Countries, institutions, and hidden authorities shape what every character can know, attempt, or survive. Each record gets an architecture suited to the power it describes.</p>
+              </div>
+              <dl>
+                <div><dt>Records</dt><dd>03</dd></div>
+                <div><dt>Planned</dt><dd>05</dd></div>
+              </dl>
+            </section>
+
+            <section class="world-record-section" aria-labelledby="world-records-title">
+              <header class="world-section-heading reveal">
+                <div><span>01</span><p class="eyebrow">Primary records</p></div>
+                <h2 id="world-records-title">Established foundations</h2>
+                <p>Open a record to explore its territory, internal logic, people, history, and pressure on the wider story.</p>
+              </header>
+
+              <div class="world-record-grid">
+                <a class="world-record-card world-record-duchy reveal" href="duchy.html">
+                  <div class="world-record-visual" aria-hidden="true"><span>N</span><i></i><i></i></div>
+                  <div class="world-record-copy">
+                    <div><span>PLACE · STATE</span><b>Full record</b></div>
+                    <h3>The Duchy of Narvea</h3>
+                    <p>The main country of the story, held together by constitutional balance, diplomatic tradition, regional identities, and competing centers of authority.</p>
+                    <span class="world-record-link">Open country profile <i aria-hidden="true">→</i></span>
+                  </div>
+                </a>
+
+                <a class="world-record-card world-record-msf reveal" href="msf.html">
+                  <div class="world-record-visual" aria-hidden="true"><span>MSF</span><i></i><i></i></div>
+                  <div class="world-record-copy">
+                    <div><span>ORGANIZATION · INTELLIGENCE</span><b>Foundation record</b></div>
+                    <h3>MSF</h3>
+                    <p>An intelligence agency with a concealed purpose, a disputed succession, and enough force concentrated in Turon to trouble the political imagination.</p>
+                    <span class="world-record-link">Open agency record <i aria-hidden="true">→</i></span>
+                  </div>
+                </a>
+
+                <a class="world-record-card world-record-church reveal" href="church.html">
+                  <div class="world-record-visual" aria-hidden="true"><span>†</span><i></i><i></i></div>
+                  <div class="world-record-copy">
+                    <div><span>INSTITUTION · RELIGION</span><b>Foundation record</b></div>
+                    <h3>The Church</h3>
+                    <p>A public religious authority whose restricted circles know that magic exists, negotiate with sanctioned Magi, and police boundaries they refuse to explain.</p>
+                    <span class="world-record-link">Open institutional record <i aria-hidden="true">→</i></span>
+                  </div>
+                </a>
+              </div>
+            </section>
+
+            <section class="world-planned reveal" aria-labelledby="planned-records-title">
+              <header>
+                <p class="eyebrow">Archive expansion</p>
+                <h2 id="planned-records-title">Records waiting for canon</h2>
+                <p>These subjects already affect characters and events, but their internal structures are not defined well enough for full pages yet.</p>
+              </header>
+              <div class="world-planned-grid">
+                <article><span>01</span><div><h3>The Magiarchy</h3><p>Hidden magical governance and regional Magiarchates.</p></div><b>Planned</b></article>
+                <article><span>02</span><div><h3>National Government</h3><p>Parliament, Cabinet, ministries, and state authority.</p></div><b>Planned</b></article>
+                <article><span>03</span><div><h3>Magic Academy</h3><p>Training, doctrine, access, and institutional culture.</p></div><b>Planned</b></article>
+                <article><span>04</span><div><h3>Narvean Police</h3><p>Law enforcement and its contact with hidden crises.</p></div><b>Planned</b></article>
+                <article><span>05</span><div><h3>Private Eye Agency</h3><p>Independent investigation beyond state supervision.</p></div><b>Planned</b></article>
+              </div>
+            </section>
+          </div>
+        </div>
+
+        <aside class="notes-sidebar" aria-label="World page notes">
+          <header class="notes-header"><div><span aria-hidden="true">✎</span><strong>Page notes</strong></div><span>World</span></header>
+          <div class="notes-list"></div>
+          <p class="notes-footnote">Use notes to identify which institution should receive the next full record.</p>
+        </aside>
+      </div>
+    </main>
+  </body>
+</html>

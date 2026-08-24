@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A concise institutional record for The Church and its guarded relationship with magic, the Magiarchy, and public knowledge.">
+    <meta name="theme-color" content="#1e1f22">
+    <title>The Church - Magiarchy</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2" defer></script>
+    <script src="notes-config.js" defer></script>
+    <script src="notes.js" defer></script>
+  </head>
+  <body class="institution-page world-section-page" data-notes-page="church">
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <header class="site-header">
+      <nav class="navbar shell" aria-label="Primary navigation">
+        <a class="brand" href="index.html" aria-label="Magiarchy home"><span class="brand-mark" aria-hidden="true"><span></span></span><span>Magiarchy</span></a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links"><span class="sr-only">Toggle navigation</span><span></span><span></span></button>
+        <div class="nav-links" id="nav-links">
+          <a href="index.html">Home</a><a href="characters.html">Characters</a><a href="story.html">Story</a><a href="moments.html">Moments</a>
+          <details class="nav-dropdown">
+            <summary>World <span aria-hidden="true">⌄</span></summary>
+            <div class="nav-submenu">
+              <a href="world.html"><span>World index</span><small>Places, institutions, and powers</small></a>
+              <a href="duchy.html"><span>The Duchy</span><small>Country profile</small></a>
+              <a href="msf.html"><span>MSF</span><small>Intelligence agency</small></a>
+              <a href="church.html" aria-current="page"><span>The Church</span><small>Hidden religious authority</small></a>
+            </div>
+          </details>
+          <a href="music.html">Music</a><a href="gallery.html">Gallery</a><a href="docs.html">Docs</a>
+        </div>
+      </nav>
+    </header>
+
+    <main class="app-main" id="main-content">
+      <div class="world-workspace shell">
+        <div class="world-main-pane">
+          <header class="feed-header world-feed-header"><div><span aria-hidden="true">#</span><strong>the-church</strong><i></i><p>Institutional record</p></div><span class="feed-status"><span class="status-dot"></span> Known facts only</span></header>
+          <div class="world-scroll institution-scroll">
+            <nav class="document-breadcrumbs world-breadcrumbs" aria-label="Breadcrumb"><a href="world.html">World</a><span aria-hidden="true">/</span><span aria-current="page">The Church</span></nav>
+
+            <section class="institution-hero institution-hero-church reveal" aria-labelledby="church-title">
+              <div class="institution-monogram" aria-hidden="true"><span>†</span><i></i></div>
+              <div><p class="eyebrow">Religious institution</p><h1 id="church-title">Knowledge kept<br>behind doctrine</h1><p>The Church is not ignorant of magic. Restricted parts of the institution know enough to negotiate with Magi, define forbidden boundaries, and preserve a public reality in which none of that knowledge officially exists.</p></div>
+              <dl><div><dt>Public role</dt><dd>Faith and authority</dd></div><div><dt>Hidden role</dt><dd>Magical oversight</dd></div><div><dt>Known representative</dt><dd>Father Mikhail</dd></div><div><dt>Core tension</dt><dd>Use, fear, denial</dd></div></dl>
+            </section>
+
+            <section class="institution-section reveal" aria-labelledby="church-knowledge-title">
+              <header class="institution-section-heading"><span>01</span><div><p class="eyebrow">Distributed knowledge</p><h2 id="church-knowledge-title">The institution does not know as one body</h2></div></header>
+              <div class="knowledge-layers">
+                <article><b>01</b><div><span>PUBLIC CHURCH</span><h3>Ordinary faith</h3><p>Most clergy, staff, and worshippers operate inside the same protected ignorance as the wider public.</p></div></article>
+                <article><b>02</b><div><span>RESTRICTED CIRCLES</span><h3>Partial awareness</h3><p>Certain Church staff know magic exists and can receive Magi for negotiations from which ordinary escorts are excluded.</p></div></article>
+                <article><b>03</b><div><span>INSTITUTIONAL ACTORS</span><h3>Power behind doctrine</h3><p>Church authorities participate in the hidden conflict, balancing sanctioned cooperation against suspicion, pressure, and manipulation.</p></div></article>
+              </div>
+            </section>
+
+            <section class="institution-section reveal" aria-labelledby="church-relations-title">
+              <header class="institution-section-heading"><span>02</span><div><p class="eyebrow">Institutional relations</p><h2 id="church-relations-title">Every relationship is conditional</h2></div></header>
+              <div class="relation-matrix">
+                <article><span>WITH THE PUBLIC</span><strong>Protect ignorance</strong><p>Magic remains outside ordinary understanding, and Church knowledge is kept narrow.</p></article>
+                <article><span>WITH THE MAGIARCHY</span><strong>Sanction and constrain</strong><p>Cooperation exists, but so do supervision, suspicion, and boundaries that sanctioned Magi cannot safely cross.</p></article>
+                <article><span>WITH THE STATE</span><strong>Reveal only what is necessary</strong><p>Negotiations can occur near public institutions without making their magical subject visible to ordinary officials or officers.</p></article>
+                <article><span>WITH RENEGADE MAGI</span><strong>Oppose unsanctioned power</strong><p>Magic beyond accepted limits threatens both the Church's authority and the secrecy on which the hidden order depends.</p></article>
+              </div>
+            </section>
+
+            <section class="institution-section reveal" aria-labelledby="church-boundaries-title">
+              <header class="institution-section-heading"><span>03</span><div><p class="eyebrow">Accepted boundaries</p><h2 id="church-boundaries-title">Not every possible act is permitted</h2></div></header>
+              <div class="boundary-record"><div><span>KNOWN EXAMPLE</span><h3>Walking on water</h3><p>Lynleit conceals this accidental thaumaturgy because it crosses a boundary the Church would never accept. She practices alone, at night, far from witnesses.</p></div><a href="character.html?character=lynleit">Open Lynleit's profile <span aria-hidden="true">→</span></a></div>
+            </section>
+
+            <section class="institution-section reveal" aria-labelledby="church-story-title">
+              <header class="institution-section-heading"><span>04</span><div><p class="eyebrow">Story contact</p><h2 id="church-story-title">The first negotiation is visible only from outside</h2></div></header>
+              <div class="story-contact"><p>Early in September, Fionn and Lynleit enter a church for negotiations while Felix, Reiner, and the other MSF officers remain outside. The subject is hidden from them and from the reader. Only Lynleit's early, irritated exit suggests that something important happened inside.</p><div><a href="story.html">Open Story <span aria-hidden="true">→</span></a><a href="character.html?character=father-mikhail">Meet Father Mikhail <span aria-hidden="true">→</span></a></div></div>
+            </section>
+
+            <aside class="canon-gaps reveal"><div><p class="eyebrow">Awaiting definition</p><h2>Open institutional questions</h2></div><ul><li>Hierarchy and internal offices</li><li>Formal doctrine concerning magic</li><li>Relationship among different churches</li><li>Enforcement mechanisms and jurisdiction</li></ul></aside>
+          </div>
+        </div>
+        <aside class="notes-sidebar" aria-label="The Church page notes"><header class="notes-header"><div><span aria-hidden="true">✎</span><strong>Page notes</strong></div><span>The Church</span></header><div class="notes-list"></div><p class="notes-footnote">Use notes to define doctrine, hierarchy, and boundaries without treating open questions as facts.</p></aside>
+      </div>
+    </main>
+  </body>
+</html>
