@@ -61,13 +61,18 @@ function isMarkdownTableDivider(line) {
 
 function createMarkdownTable(lines, startIndex) {
   const headers = parseMarkdownTableRow(lines[startIndex]);
+  const normalizedHeaders = headers.map((header) => header.toLowerCase());
+  const questionIndex = normalizedHeaders.indexOf('question');
+  const confidenceIndex = normalizedHeaders.indexOf('confidence');
+  const isQuestionLedger = questionIndex !== -1 && confidenceIndex !== -1;
   const table = document.createElement('table');
   const head = document.createElement('thead');
   const headRow = document.createElement('tr');
 
-  headers.forEach((header) => {
+  headers.forEach((header, headerIndex) => {
     const cell = document.createElement('th');
     cell.scope = 'col';
+    cell.className = `table-cell-${normalizedHeaders[headerIndex].replace(/[^a-z0-9]+/g, '-')}`;
     appendInlineMarkdown(header, cell);
     headRow.append(cell);
   });
@@ -84,13 +89,38 @@ function createMarkdownTable(lines, startIndex) {
     values.forEach((value, cellIndex) => {
       const cell = document.createElement('td');
       cell.dataset.label = headers[cellIndex];
+      cell.className = `table-cell-${normalizedHeaders[cellIndex].replace(/[^a-z0-9]+/g, '-')}`;
       appendInlineMarkdown(value, cell);
       row.append(cell);
     });
 
     const status = values[0].toLowerCase();
+    const confidence = confidenceIndex === -1 ? null : Number.parseInt(values[confidenceIndex], 10);
+    if (Number.isFinite(confidence) && questionIndex !== -1) {
+      const normalizedConfidence = Math.max(0, Math.min(100, confidence));
+      const questionCell = row.children[questionIndex];
+      const progress = document.createElement('span');
+      progress.className = 'question-confidence';
+      progress.setAttribute('role', 'progressbar');
+      progress.setAttribute('aria-label', `${normalizedConfidence}% answered`);
+      progress.setAttribute('aria-valuemin', '0');
+      progress.setAttribute('aria-valuemax', '100');
+      progress.setAttribute('aria-valuenow', String(normalizedConfidence));
+
+      const progressLabel = document.createElement('span');
+      progressLabel.className = 'question-confidence-label';
+      progressLabel.textContent = `${normalizedConfidence}% answered`;
+      const track = document.createElement('span');
+      track.className = 'question-confidence-track';
+      const fill = document.createElement('i');
+      fill.style.width = `${normalizedConfidence}%`;
+      track.append(fill);
+      progress.append(progressLabel, track);
+      questionCell.append(progress);
+      row.dataset.confidence = String(normalizedConfidence);
+    }
     if (status === 'open') row.classList.add('question-row-open');
-    if (status === 'answered') row.classList.add('question-row-answered');
+    if (status === 'answered' || confidence === 100) row.classList.add('question-row-answered');
     body.append(row);
     index += 1;
   }
@@ -98,6 +128,7 @@ function createMarkdownTable(lines, startIndex) {
 
   const wrapper = document.createElement('div');
   wrapper.className = 'markdown-table-wrap';
+  if (isQuestionLedger) wrapper.classList.add('question-ledger-table');
   wrapper.tabIndex = 0;
   wrapper.setAttribute('role', 'region');
   wrapper.setAttribute('aria-label', 'Scrollable question table');

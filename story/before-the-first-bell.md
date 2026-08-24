@@ -88,7 +88,7 @@ Reiner remained beside the car, arms folded.
 
 Across the street, a newspaper bundle landed outside a closed kiosk. The top page loosened in the wind. For a moment, Felix could read part of the headline.
 
-SECOND VOLUNTEER MISSING NEAR NORTH PARK
+SECOND VOLUNTEER MISSING NEAR VILEN PARKLAND
 
 The page folded over itself before he could see the rest.
 
@@ -186,6 +186,6 @@ He entered the car.
 
 Lynleit followed without looking back at the church.
 
-As Felix pulled away from the curb, the morning traffic reports announced a new diversion around North Park. The explanation was maintenance. The estimated reopening date was left unspecified.
+As Felix pulled away from the curb, the morning traffic reports announced a new diversion around the park. The explanation was maintenance. The estimated reopening date was left unspecified.
 
 Nobody in the car commented on it.
