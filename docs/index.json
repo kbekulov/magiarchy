@@ -1,5 +1,14 @@
 [
   {
+    "slug": "questions-to-be-answered",
+    "title": "Questions to Be Answered",
+    "topic": "Editorial Ledger",
+    "file": "questions-to-be-answered.md",
+    "updated": "2026-08-24",
+    "description": "A living table of unresolved story, character, world, relationship, event, location, and timeline questions, maintained as the canon develops.",
+    "speakers": ["Author's Desk"]
+  },
+  {
     "slug": "duchy-of-narvea",
     "title": "The Duchy of Narvea",
     "topic": "Country Profile",

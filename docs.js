@@ -10,7 +10,7 @@ const documentError = document.querySelector('#document-error');
 const documentCrumb = document.querySelector('#document-crumb');
 
 function appendInlineMarkdown(text, parent) {
-  const tokenPattern = /(\*\*[^*]+\*\*|\*[^*]+\*|`[^`]+`|\[[^\]]+\]\([^)]+\))/g;
+  const tokenPattern = /(~~[^~]+~~|\*\*[^*]+\*\*|\*[^*]+\*|`[^`]+`|\[[^\]]+\]\([^)]+\))/g;
   let cursor = 0;
 
   for (const match of text.matchAll(tokenPattern)) {
@@ -19,7 +19,10 @@ function appendInlineMarkdown(text, parent) {
     const token = match[0];
     let element;
 
-    if (token.startsWith('**')) {
+    if (token.startsWith('~~')) {
+      element = document.createElement('del');
+      element.textContent = token.slice(2, -2);
+    } else if (token.startsWith('**')) {
       element = document.createElement('strong');
       element.textContent = token.slice(2, -2);
     } else if (token.startsWith('*')) {
@@ -46,6 +49,62 @@ function appendInlineMarkdown(text, parent) {
   if (cursor < text.length) parent.append(document.createTextNode(text.slice(cursor)));
 }
 
+function parseMarkdownTableRow(line) {
+  const normalized = line.trim().replace(/^\|/, '').replace(/\|$/, '');
+  return normalized.split('|').map((cell) => cell.trim());
+}
+
+function isMarkdownTableDivider(line) {
+  const cells = parseMarkdownTableRow(line);
+  return cells.length > 1 && cells.every((cell) => /^:?-{3,}:?$/.test(cell));
+}
+
+function createMarkdownTable(lines, startIndex) {
+  const headers = parseMarkdownTableRow(lines[startIndex]);
+  const table = document.createElement('table');
+  const head = document.createElement('thead');
+  const headRow = document.createElement('tr');
+
+  headers.forEach((header) => {
+    const cell = document.createElement('th');
+    cell.scope = 'col';
+    appendInlineMarkdown(header, cell);
+    headRow.append(cell);
+  });
+  head.append(headRow);
+  table.append(head);
+
+  const body = document.createElement('tbody');
+  let index = startIndex + 2;
+  while (index < lines.length && lines[index].trim().includes('|')) {
+    const values = parseMarkdownTableRow(lines[index]);
+    if (values.length !== headers.length) break;
+
+    const row = document.createElement('tr');
+    values.forEach((value, cellIndex) => {
+      const cell = document.createElement('td');
+      cell.dataset.label = headers[cellIndex];
+      appendInlineMarkdown(value, cell);
+      row.append(cell);
+    });
+
+    const status = values[0].toLowerCase();
+    if (status === 'open') row.classList.add('question-row-open');
+    if (status === 'answered') row.classList.add('question-row-answered');
+    body.append(row);
+    index += 1;
+  }
+  table.append(body);
+
+  const wrapper = document.createElement('div');
+  wrapper.className = 'markdown-table-wrap';
+  wrapper.tabIndex = 0;
+  wrapper.setAttribute('role', 'region');
+  wrapper.setAttribute('aria-label', 'Scrollable question table');
+  wrapper.append(table);
+  return { element: wrapper, nextIndex: index };
+}
+
 function renderMarkdown(markdown) {
   const fragment = document.createDocumentFragment();
   const lines = markdown.replace(/\r\n/g, '\n').split('\n');
@@ -56,6 +115,13 @@ function renderMarkdown(markdown) {
 
     if (!line) {
       index += 1;
+      continue;
+    }
+
+    if (index + 1 < lines.length && line.includes('|') && isMarkdownTableDivider(lines[index + 1])) {
+      const renderedTable = createMarkdownTable(lines, index);
+      fragment.append(renderedTable.element);
+      index = renderedTable.nextIndex;
       continue;
     }
 

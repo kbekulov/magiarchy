@@ -30,4 +30,5 @@
 - Use `unspecified` for gallery locations unless the location is confirmed by the user or canon; do not infer a named place from an image background.
 - Store readable documents as Markdown files in `docs/` and register each file in `docs/index.json` so it appears in the Docs page. Keep the catalog metadata and Markdown content synchronized.
 - Present the Docs catalog as masonry-style summary cards. Each card must link to the full document reader, and every reader view must include a breadcrumb back to the Docs catalog.
+- Maintain `docs/questions-to-be-answered.md` as a living editorial ledger. After every addition or revision to story, plot, world, character, relationship, event, location, or timeline content, briefly review the whole known canon, add concise questions raised by unclear or missing information, and strike through questions answered by the new material. Keep its catalog entry in `docs/index.json` synchronized. Do not invent answers.
 - Preserve user-requested speaker attribution and content boundaries when adapting source text into documents. Do not retain narration when the user requests dialogue-only material.
