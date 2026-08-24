@@ -2,7 +2,7 @@ const profileSeeds = [
   {
     slug: 'lynleit', name: 'Lynleit', code: 'MSF · 001', role: 'Fionn\'s biological daughter and displaced heir', factions: ['MSF', 'Magiarchy'], accent: 'blue', materialStatus: 'Canon traits + mock details',
     summary: 'Fionn\'s biological daughter and Helena\'s stepdaughter, Lynleit is an ENFJ (strong Ni) leader whose people-first instinct is sharpened by unusually strong long-range intuition.',
-    visual: 'Long dark hair, a blue coat or jacket carrying MSF command meaning, controlled magical light, and a composed warmth held deliberately in reserve', palette: 'Midnight blue, black, silver, cold cyan', appearanceNote: 'Her blue outerwear is an encrypted MSF authority signal devised by Fionn and understood by top officers. By continuing to wear it while accused and on the run, she quietly preserves the founder\'s mark of command and gives informed officers reason to question Helena\'s succession.',
+    visual: 'Long dark hair, tailored blue outerwear, controlled magical light, and a composed warmth held deliberately in reserve', palette: 'Midnight blue, black, silver, cold cyan',
     personalitySummary: 'Lynleit can read hidden structures with an inward precision that resembles an INFJ, but priority defines her. When pressure becomes real, she moves toward people, assumes responsibility, and measures strategy by its human consequences. Her warmth is deliberate and structurally aware rather than exuberant.',
     traits: [
       { label: 'Relational leadership', score: 95, note: 'Her first instinct in crisis is to read trust, morale, legitimacy, shared burden, and the emotional field around her.' },
@@ -13,8 +13,7 @@ const profileSeeds = [
       { label: 'Hereditary magecraft', title: 'Blue flame', detail: 'Lynleit inherited her family\'s ability to manifest blue flame. It can be directed into many applications, but her control is less subtle than Fionn\'s.' },
       { label: 'Natural tendency', title: 'Unsafe volume', detail: 'Where Fionn relies on virtuosity and precision, Lynleit has the nerve to call forth far more flame than is safe. Force comes more readily to her than finesse.' },
       { label: 'Accidental thaumaturgy', title: 'Walking on water', detail: 'This ability was neither inherited nor taught. It manifested from her childhood fear of drowning and allows her to cross the surface of water on foot.' },
-      { label: 'Strictly concealed', title: 'Night practice', detail: 'Lynleit keeps the water-walking talent secret from everyone because it crosses a boundary the Church would never accept. She practices alone at night on secluded stretches of local lakes and rivers.' },
-      { label: 'First combat test', title: 'The boat beneath the bridge', detail: 'A failed nighttime infiltration forces Lynleit to rely on water walking in combat for the first time. The same calamity reveals that the suspected political plot also involves Magi.' }
+      { label: 'Strictly concealed', title: 'Night practice', detail: 'Lynleit keeps the water-walking talent secret from everyone because it crosses a boundary the Church would never accept. She practices alone at night on secluded stretches of local lakes and rivers.' }
     ],
     origin: 'Lynleit is Fionn\'s biological daughter and intended heir. Helena is her stepmother, not her biological mother. Raised close to MSF leadership, Lynleit inherits Fionn\'s blue-flame magecraft, while a childhood fear of drowning independently manifests as the forbidden ability to walk on water. Her relationship with Helena is always tense, and daughterly intuition, suspicious incidents, and the sense that Helena never truly loves Fionn make Lynleit distrust her early.', rupture: 'Fionn is assassinated through a still-unresolved conspiracy in which Helena plays a major role. Helena takes control, frames her stepdaughter Lynleit for his death, and drives her into exile. Lynleit continues wearing Fionn\'s blue authority signal while on the run, allowing informed officers to recognize an unbroken claim Helena does not understand.', focus: 'Clearing her name requires separating Helena\'s visible seizure of MSF from the unresolved authorship of Fionn\'s assassination. Her blue flame answers boldness more easily than restraint, while her secret water-walking practice leaves her carrying a truth she believes the Church must never discover.', future: 'After restoring a smaller MSF around the unfinished Spill, Lynleit disappears to hide her pregnancy, deliver the child beyond the conflict\'s reach, recover, and consult wiser people about the Spill\'s origins. Years later she does not announce a return. She appears around MSF missions, sometimes seemingly by accident and sometimes by design, and her unexplained presence can make her look like a culprit.',
     ally: 'Kyrien', allyNote: 'Their connection begins as coercion. Mutual struggle, proven reliability, practical usefulness, chemistry, and repeatedly saving one another turn the handler-asset arrangement into a life-preserving bond and eventually parenthood.', rival: 'Helena', rivalNote: 'Lynleit distrusts her stepmother before the takeover, then learns Helena played a major role in Fionn\'s assassination even though the full conspiracy remains unclear.', goal: 'Keep Kyrien hidden as leverage against Helena, restore legitimate leadership, protect their child, and investigate the Spill without revealing what her later appearances around MSF missions are meant to accomplish.',
@@ -24,7 +23,7 @@ const profileSeeds = [
     slug: 'kyrien', name: 'Kyrien', code: 'MSF · 002', role: 'Independent operator and reluctant director', factions: ['Independent'], accent: 'amber', materialStatus: 'Canon traits + mock details',
     summary: 'An INTJ (strong Te) non-Magus who survives deeper contact with magic by mastering the intelligence-operative disciplines that Magi are most likely to underestimate.',
     visual: 'Practical layers, concealed tools, and a silhouette built for movement', palette: 'Charcoal, muted amber, worn steel, off-white',
-    personalitySummary: 'Kyrien processes danger by building a working model of it. At Sherie\'s covert meeting, he does not join Felix\'s protest because his attention has already turned inward, linking Drake\'s suspected conspiracy to unresolved grievances from his own past.',
+    personalitySummary: 'Kyrien processes danger by building a working model of it. When evidence is incomplete, he is more likely to test hidden connections in silence than join the room\'s immediate reaction. Personal grievances can sharpen that analysis, but also give it a dangerous point of fixation.',
     traits: [
       { label: 'Intelligence tradecraft', score: 97, note: 'He turns surveillance, deception, logistics, human behavior, and escape planning into a substitute for magical perception.' },
       { label: 'Strategic adaptation', score: 94, note: 'His strong Te converts unfamiliar threats into usable procedures, leverage, and decisions that survive contact with reality.' },
@@ -38,7 +37,7 @@ const profileSeeds = [
       { label: 'Last resort', title: 'Survival combat', detail: 'Fights to remain mobile and alive, combining practical close combat with terrain awareness instead of pursuing elegant or decisive victories.' },
       { label: 'Leadership peak', title: 'Intelligence operations', detail: 'His unofficial MSF association gives him access to surveillance, counterintelligence, field planning, and institutional command. By Lynleit\'s disappearance, this becomes the side of MSF he has mastered completely.' }
     ],
-    origin: 'Kyrien\'s father held an important position in Narvea\'s military. The knowledge and tools Kyrien inherits from that background later enable an attempt on a politician involved in causing his father\'s death. The assassination fails solely because the target belongs to the Magi world, a fact Kyrien could not have planned around.', rupture: 'The failed attempt ends with Lynleit interrogating Kyrien at a police office. He faces prison until she offers conditional freedom: become her secret helper and remain confined to her demands. She wants a deniable trump card against Helena, while the surviving Magus politician will later become a danger to Lynleit.', focus: 'The coerced arrangement drags him deeper into the world of Magi. Because he cannot rely on magic, every exposure becomes pressure to master subterfuge, evasion, trickery, firearms, survival combat, and the intelligence structure MSF makes available to him.', future: 'When Lynleit disappears to protect her pregnancy and investigate the Spill, Kyrien is left directing a smaller agency with a permanent magical mandate. He survives by reaching the peak of MSF\'s intelligence-operative side, unaware of their son until Lynleit begins appearing around later missions.',
+    origin: 'Kyrien\'s father held an important position in Narvea\'s military. The knowledge and tools Kyrien inherits from that background later enable an attempt on a politician involved in causing his father\'s death. The assassination fails solely because the target belongs to the Magi world, a fact Kyrien could not have planned around.', rupture: 'The failed attempt ends with Lynleit interrogating Kyrien at a police office. He faces prison until she offers conditional freedom: become her secret helper and remain confined to her demands. She wants a deniable trump card against Helena, while the surviving Magus politician will later become a danger to Lynleit.', focus: 'The coerced arrangement drags him deeper into the world of Magi. Because he cannot rely on magic, every exposure becomes pressure to master subterfuge, evasion, trickery, firearms, survival combat, and the intelligence structure MSF makes available to him.', future: 'When Lynleit disappears to protect her pregnancy and investigate the Spill, Kyrien is left directing a smaller agency with a permanent magical mandate. He survives by reaching the peak of MSF\'s intelligence-operative side. Lynleit later begins appearing around missions, while Kyrien remains unaware that they have a son.',
     ally: 'Lynleit', allyNote: 'She begins as his handler rather than a willing partner. Mutual struggle, reliability, usefulness, chemistry, and saving one another repeatedly transform coercion into trust, intimacy, and a life-saving trauma bond.', rival: 'Tien', rivalNote: 'A shadow operator whose methods mirror Kyrien\'s skills without his restraint, forcing him to sharpen every discipline that keeps him alive.', goal: 'Survive Lynleit\'s control, master the intelligence side of MSF, face the Magus politician tied to his father\'s death, and eventually make choices inside the hidden world on terms that are genuinely his own.',
     beats: ['Outside the System', 'Alliance under Pressure', 'The Director without Magic', 'The Secret Kept from Him']
   },
@@ -475,11 +474,6 @@ function renderProfile(profile) {
     ['Visual direction', profile.visual],
     ['Palette', profile.palette]
   ];
-  if (profile.appearanceNote) appearanceDetails.push(['Operational meaning', profile.appearanceNote]);
-  appearanceDetails.push(
-    ['Silhouette', `Mock design language shaped around ${profile.role.toLowerCase()}.`],
-    ['Status', 'Provisional until final appearance notes are supplied.']
-  );
   appearanceDetails.forEach(([term, detail]) => {
     appearance.append(createElement('dt', '', term), createElement('dd', '', detail));
   });
@@ -556,7 +550,7 @@ function renderProfile(profile) {
 
   const conflicts = document.querySelector('#character-conflicts');
   [
-    ['External', profile.rival, profile.rivalNote], ['Institutional', profile.factions[0], `The demands of ${profile.factions[0]} do not always align with ${profile.name}'s judgment.`], ['Internal', 'The cost of the role', profile.focus]
+    ['External', profile.rival, profile.rivalNote], ['Institutional', profile.factions[0], `The demands of ${profile.factions[0]} do not always align with ${profile.name}'s judgment.`], ['Narrative', 'Central pressure', profile.focus]
   ].forEach(([type, title, detail]) => {
     const card = createElement('article');
     card.append(createElement('span', '', type), createElement('div'));
@@ -566,7 +560,7 @@ function renderProfile(profile) {
 
   const motivations = document.querySelector('#character-motivations');
   [
-    ['Primary objective', profile.goal], [`Protect ${profile.ally}`, profile.allyNote], ['Resolve the central pressure', profile.focus]
+    ['Primary objective', profile.goal]
   ].forEach(([title, detail], index) => {
     const item = createElement('li');
     item.append(createElement('span', '', String(index + 1).padStart(2, '0')));
