@@ -4233,11 +4233,16 @@ a.moment-connection-card:hover {
 }
 
 .markdown-body .question-ledger-table table {
-  min-width: 820px;
+  min-width: 0;
+  table-layout: fixed;
+}
+
+.markdown-body .question-ledger-table {
+  overflow-x: clip;
 }
 
 .markdown-body .question-ledger-table .table-cell-area {
-  width: 170px;
+  width: clamp(112px, 22%, 150px);
   color: #b5bac1;
   font-family: inherit;
   font-size: .72rem;
@@ -4250,6 +4255,7 @@ a.moment-connection-card:hover {
   width: auto;
   color: #dbdee1;
   font-weight: 500;
+  overflow-wrap: anywhere;
 }
 
 .markdown-body .question-ledger-table .table-cell-confidence {
@@ -4288,6 +4294,60 @@ a.moment-connection-card:hover {
 
 .question-row-answered .question-confidence-track i {
   background: #3ba55d;
+}
+
+@media (max-width: 700px) {
+  .markdown-body .question-ledger-table {
+    border-radius: 6px;
+  }
+
+  .markdown-body .question-ledger-table table,
+  .markdown-body .question-ledger-table tbody,
+  .markdown-body .question-ledger-table tr,
+  .markdown-body .question-ledger-table td {
+    display: block;
+    width: 100%;
+  }
+
+  .markdown-body .question-ledger-table thead {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    white-space: nowrap;
+  }
+
+  .markdown-body .question-ledger-table tr {
+    padding: 14px 15px 16px;
+    border-bottom: 1px solid #3f4147;
+  }
+
+  .markdown-body .question-ledger-table tr:last-child {
+    border-bottom: 0;
+  }
+
+  .markdown-body .question-ledger-table td,
+  .markdown-body .question-ledger-table .table-cell-area,
+  .markdown-body .question-ledger-table .table-cell-question {
+    padding: 0;
+    border: 0;
+  }
+
+  .markdown-body .question-ledger-table .table-cell-area {
+    margin-bottom: 8px;
+    color: #aeb4ff;
+    font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+    font-size: .56rem;
+    letter-spacing: .05em;
+    text-transform: uppercase;
+  }
+
+  .markdown-body .question-ledger-table .table-cell-question {
+    font-size: .72rem;
+    line-height: 1.58;
+  }
 }
 
 .succession-context {

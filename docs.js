@@ -127,10 +127,14 @@ function createMarkdownTable(lines, startIndex) {
 
   const wrapper = document.createElement('div');
   wrapper.className = 'markdown-table-wrap';
-  if (isQuestionLedger) wrapper.classList.add('question-ledger-table');
-  wrapper.tabIndex = 0;
-  wrapper.setAttribute('role', 'region');
-  wrapper.setAttribute('aria-label', 'Scrollable question table');
+  if (isQuestionLedger) {
+    wrapper.classList.add('question-ledger-table');
+    wrapper.setAttribute('aria-label', 'Open question table');
+  } else {
+    wrapper.tabIndex = 0;
+    wrapper.setAttribute('role', 'region');
+    wrapper.setAttribute('aria-label', 'Scrollable document table');
+  }
   wrapper.append(table);
   return { element: wrapper, nextIndex: index };
 }

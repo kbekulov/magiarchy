@@ -2,7 +2,11 @@ const profileSeeds = [
   {
     slug: 'lynleit', name: 'Lynleit', code: 'MSF · 001', role: 'Fionn\'s biological daughter and displaced heir', factions: ['MSF', 'Magiarchy'], accent: 'blue', materialStatus: 'Canon traits + mock details',
     summary: 'Fionn\'s biological daughter and Helena\'s stepdaughter, Lynleit is an ENFJ (strong Ni) leader whose people-first instinct is sharpened by unusually strong long-range intuition.',
-    visual: 'Long dark hair, tailored blue outerwear, controlled magical light, and a composed warmth held deliberately in reserve', palette: 'Midnight blue, black, silver, cold cyan',
+    visual: 'A long tailored blue coat over a pale high-collared blouse with a narrow black ribbon, paired with high-waisted black shorts, dark tights, and tall black lace-up boots', palette: 'Midnight blue, black, white, cold cyan',
+    appearanceDetails: [
+      ['Signature silhouette', 'Long structured outerwear frames a compact, practical lower silhouette. The contrast between formal tailoring and movement-ready shorts and boots is the recognizable core of her wardrobe.'],
+      ['Variation rule', 'Other outfits may change the coat length, layers, or degree of formality, but usually preserve a blue tailored outer layer, a pale blouse, restrained black detailing, and tall practical footwear.']
+    ],
     personalitySummary: 'Lynleit can read hidden structures with an inward precision that resembles an INFJ, but priority defines her. When pressure becomes real, she moves toward people, assumes responsibility, and measures strategy by its human consequences. Her warmth is deliberate and structurally aware rather than exuberant.',
     traits: [
       { label: 'Relational leadership', score: 95, note: 'Her first instinct in crisis is to read trust, morale, legitimacy, shared burden, and the emotional field around her.' },
@@ -474,6 +478,7 @@ function renderProfile(profile) {
     ['Visual direction', profile.visual],
     ['Palette', profile.palette]
   ];
+  if (profile.appearanceDetails?.length) appearanceDetails.push(...profile.appearanceDetails);
   appearanceDetails.forEach(([term, detail]) => {
     appearance.append(createElement('dt', '', term), createElement('dd', '', detail));
   });
