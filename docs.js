@@ -94,7 +94,6 @@ function createMarkdownTable(lines, startIndex) {
       row.append(cell);
     });
 
-    const status = values[0].toLowerCase();
     const confidence = confidenceIndex === -1 ? null : Number.parseInt(values[confidenceIndex], 10);
     if (Number.isFinite(confidence) && questionIndex !== -1) {
       const normalizedConfidence = Math.max(0, Math.min(100, confidence));
@@ -119,8 +118,8 @@ function createMarkdownTable(lines, startIndex) {
       questionCell.append(progress);
       row.dataset.confidence = String(normalizedConfidence);
     }
-    if (status === 'open') row.classList.add('question-row-open');
-    if (status === 'answered' || confidence === 100) row.classList.add('question-row-answered');
+    if (Number.isFinite(confidence) && confidence < 100) row.classList.add('question-row-open');
+    if (confidence === 100) row.classList.add('question-row-answered');
     body.append(row);
     index += 1;
   }

@@ -4233,17 +4233,23 @@ a.moment-connection-card:hover {
 }
 
 .markdown-body .question-ledger-table table {
-  min-width: 1040px;
+  min-width: 820px;
+}
+
+.markdown-body .question-ledger-table .table-cell-area {
+  width: 170px;
+  color: #b5bac1;
+  font-family: inherit;
+  font-size: .72rem;
+  font-weight: 700;
+  letter-spacing: 0;
+  text-transform: none;
 }
 
 .markdown-body .question-ledger-table .table-cell-question {
-  width: 34%;
+  width: auto;
   color: #dbdee1;
-}
-
-.markdown-body .question-ledger-table .table-cell-current-answer {
-  width: 38%;
-  color: #aeb1b8;
+  font-weight: 500;
 }
 
 .markdown-body .question-ledger-table .table-cell-confidence {
