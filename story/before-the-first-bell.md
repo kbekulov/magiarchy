@@ -18,6 +18,8 @@ Reiner checked the card in his hand for the third time. "Unless the Church has o
 
 From the rear seat, Lynleit looked past them toward the steps. She had said little since they left MSF headquarters. Her coat was buttoned neatly, her expression composed, and the file resting across her knees had not been opened once.
 
+Felix and Reiner were present as MSF security, but neither belonged to her life as a mere subordinate. They were friends Fionn trusted as her personal bodyguards, familiar company on official journeys and casual outings alike.
+
 Fionn sat beside her with his eyes closed.
 
 "The east entrance," he said.

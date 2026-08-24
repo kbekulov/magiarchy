@@ -101,20 +101,32 @@ const profileSeeds = [
     beats: ['A Coup without a Source', 'The Favorite Boy', 'The Illegal Partnership', 'The Boat below the Bridge']
   },
   {
-    slug: 'felix', name: 'Felix', code: 'ARC · 009', role: 'MSF specialist', factions: ['MSF'], accent: 'neutral',
-    summary: 'A provisional MSF specialist whose ordinary assignment becomes a test of what loyalty means after the agency fractures.',
-    visual: 'Loose fieldwear, fast movement, and one bright accent against neutral equipment', palette: 'Grey, black, bright blue, rust orange', traits: ['Energetic', 'Direct', 'Loyal'],
-    origin: 'Felix joins MSF expecting clear missions, internal competence, and leaders who understand the full picture.', rupture: 'Fionn\'s death and Lynleit\'s accusation divide the agency before Felix can decide which version of MSF is real.', focus: 'He openly protests the illegal partnership designed by Sherie despite Drake\'s own objections, yet follows Lynleit into an intelligence raid whose political premise collapses into supernatural danger.', future: 'The smaller post-Spill agency offers him a chance to choose its purpose instead of merely inheriting it.',
-    ally: 'Reiner', allyNote: 'A fellow MSF member who provides a second reading of every official order.', rival: 'The fractured chain of command', rivalNote: 'Competing authorities that each demand complete loyalty.', goal: 'Find a version of MSF whose mission deserves the people serving it.',
-    beats: ['Joining the Roster', 'Orders after Fionn', 'Choosing Whom to Trust', 'Building the Smaller MSF']
+    slug: 'felix', name: 'Felix', code: 'ARC · 009', role: 'MSF officer, friend, and personal bodyguard', factions: ['MSF'], accent: 'neutral', materialStatus: 'Canon relationship + mock details',
+    summary: 'Lynleit\'s playful, flirtatious troublemaker of a friend, and one of the two MSF officers Fionn personally trusts to protect her beyond an ordinary chain of command.',
+    visual: 'Loose fieldwear, fast movement, and one bright accent against neutral equipment', palette: 'Grey, black, bright blue, rust orange',
+    personalitySummary: 'Felix is clearly xxFP in temperament: playful, improvisational, flirtatious, and willing to test a rule simply to discover whether it deserves obedience. His troublemaking is social and energetic rather than careless about the people he protects.',
+    traits: [
+      { label: 'Playful flirt', note: 'He turns tension into teasing, tests reactions openly, and treats charm as both genuine expression and useful disruption.' },
+      { label: 'Troublemaker', note: 'Protocol invites experimentation. Felix is the first to lean over a boundary, question an order, or make a formal situation less dignified.' },
+      { label: 'Personal loyalty', note: 'His casual manner does not weaken his reliability. Friendship makes his protection of Lynleit more personal, not less serious.' }
+    ],
+    origin: 'Felix serves as an MSF officer, but his place beside Lynleit is also personal. They are friends, and Fionn regards Felix as one of her reliable bodyguards. This is why he commonly accompanies her on operations, official travel, and casual outings.', rupture: 'Fionn\'s death and Lynleit\'s accusation divide the agency before Felix can decide which version of MSF is real.', focus: 'He openly protests the illegal partnership designed by Sherie despite Drake\'s own objections, yet follows Lynleit into an intelligence raid whose political premise collapses into supernatural danger.', future: 'The smaller post-Spill agency offers him a chance to choose its purpose instead of merely inheriting it.',
+    ally: 'Lynleit', allyNote: 'Their bond is friendship as well as service. Felix can protect, question, tease, and accompany her with a familiarity that a mere subordinate would not possess.', rival: 'The fractured chain of command', rivalNote: 'Competing authorities that each demand complete loyalty.', goal: 'Protect Lynleit without surrendering the independence that makes him a friend rather than only an obedient officer.',
+    beats: ['Friend and Bodyguard', 'Orders after Fionn', 'Choosing Whom to Trust', 'Building the Smaller MSF']
   },
   {
-    slug: 'reiner', name: 'Reiner', code: 'ARC · 010', role: 'MSF analyst', factions: ['MSF'], accent: 'neutral',
-    summary: 'A provisional analyst who notices the pattern behind the Spill before he understands the world capable of producing it.',
-    visual: 'Layered office-field clothing, annotated tools, and a deliberately understated presence', palette: 'Graphite, ash, muted teal, paper white', traits: ['Analytical', 'Patient', 'Cautious'],
-    origin: 'Reiner earns trust by finding relationships inside information that other people dismiss as noise.', rupture: 'The disappearances produce a pattern that is statistically clear and institutionally impossible.', focus: 'He must act on conclusions he cannot yet explain without exposing himself as unreliable.', future: 'Learning that magic exists turns his analytical discipline into one of the rebuilt MSF\'s most useful safeguards.',
-    ally: 'Felix', allyNote: 'A field-minded colleague who tests analysis against immediate reality.', rival: 'Incomplete evidence', rivalNote: 'The gap between what the pattern proves and what the institution will accept.', goal: 'Construct an explanation strong enough to survive contact with the impossible.',
-    beats: ['The Quiet Analyst', 'A Pattern of Vanishings', 'Evidence without a Theory', 'Learning the Hidden Rules']
+    slug: 'reiner', name: 'Reiner', code: 'ARC · 010', role: 'MSF officer, friend, and personal bodyguard', factions: ['MSF'], accent: 'neutral', materialStatus: 'Canon relationship + mock details',
+    summary: 'Lynleit\'s stern, protocol-focused friend, and one of the two MSF officers Fionn personally trusts to remain at her side as a reliable bodyguard.',
+    visual: 'Layered office-field clothing, annotated tools, and a deliberately understated presence', palette: 'Graphite, ash, muted teal, paper white',
+    personalitySummary: 'Reiner is clearly xSTJ in temperament: stern, procedural, controlled, and far more comfortable with a defined responsibility than an improvised excuse. He rarely smiles, which makes every small break in his composure unusually visible.',
+    traits: [
+      { label: 'Protocol-focused', note: 'He treats procedure as accumulated operational knowledge rather than empty ceremony and notices quickly when others disregard it.' },
+      { label: 'Severe composure', note: 'Reiner is restrained, difficult to fluster, and rarely seen smiling even among people he trusts.' },
+      { label: 'Reliable protection', note: 'He expresses friendship through preparation, consistency, and remaining exactly where Lynleit needs him to be.' }
+    ],
+    origin: 'Reiner serves as an MSF officer, but his place beside Lynleit is also personal. They are friends, and Fionn regards Reiner as one of her reliable bodyguards. He therefore accompanies her on operations, travel, and casual outings where formal protection blends into ordinary company.', rupture: 'The disappearances produce a pattern that is statistically clear and institutionally impossible.', focus: 'He must act on conclusions he cannot yet explain without exposing himself as unreliable.', future: 'Learning that magic exists turns his analytical discipline into one of the rebuilt MSF\'s most useful safeguards.',
+    ally: 'Lynleit', allyNote: 'Their friendship allows Reiner to remain close without every interaction feeling like an assignment. His protection is reliable precisely because it is reinforced by personal trust.', rival: 'Incomplete evidence', rivalNote: 'The gap between what the pattern proves and what the institution will accept.', goal: 'Protect Lynleit while constructing an explanation strong enough to survive contact with the impossible.',
+    beats: ['Friend and Bodyguard', 'A Pattern of Vanishings', 'Evidence without a Theory', 'Learning the Hidden Rules']
   },
   {
     slug: 'yulia', name: 'Yulia', code: 'ARC · 011', role: 'Independent witness', factions: ['Independent'], accent: 'neutral',
