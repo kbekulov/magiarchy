@@ -2,7 +2,7 @@ const profileSeeds = [
   {
     slug: 'lynleit', name: 'Lynleit', code: 'MSF · 001', role: 'Fionn\'s biological daughter and displaced heir', factions: ['MSF', 'Magiarchy'], accent: 'blue', materialStatus: 'Canon traits + mock details',
     summary: 'Fionn\'s biological daughter and Helena\'s stepdaughter, Lynleit is an ENFJ (strong Ni) leader whose people-first instinct is sharpened by unusually strong long-range intuition.',
-    visual: 'Long dark hair, tailored blue fieldwear, controlled magical light, and a composed warmth held deliberately in reserve', palette: 'Midnight blue, black, silver, cold cyan',
+    visual: 'Long dark hair, a blue coat or jacket carrying MSF command meaning, controlled magical light, and a composed warmth held deliberately in reserve', palette: 'Midnight blue, black, silver, cold cyan', appearanceNote: 'Her blue outerwear is an encrypted MSF authority signal devised by Fionn and understood by top officers. It identifies her as genuine command in a crowd without requiring an overt exchange.',
     personalitySummary: 'Lynleit can read hidden structures with an inward precision that resembles an INFJ, but priority defines her. When pressure becomes real, she moves toward people, assumes responsibility, and measures strategy by its human consequences. Her warmth is deliberate and structurally aware rather than exuberant.',
     traits: [
       { label: 'Relational leadership', score: 95, note: 'Her first instinct in crisis is to read trust, morale, legitimacy, shared burden, and the emotional field around her.' },
@@ -46,7 +46,7 @@ const profileSeeds = [
     slug: 'helena', name: 'Helena', code: 'MSF · 003', role: 'Political usurper', factions: ['MSF'], accent: 'red', materialStatus: 'Canon actions + mock details',
     summary: 'Fionn\'s wife and Lynleit\'s stepmother, Helena converts the vacuum after his elimination into control of MSF, then frames his biological daughter for his death.',
     visual: 'Severe tailoring, immaculate posture, and an intentionally unreadable expression', palette: 'Oxblood, black, ivory, muted gold', traits: ['Composed', 'Possessive', 'Calculating'],
-    origin: 'Helena learns to read MSF as a hierarchy of loyalties rather than a simple intelligence service.', rupture: 'Fionn\'s elimination creates the opening she needs to seize control and make Lynleit the official enemy.', focus: 'Her authority depends on keeping the accusation intact while the investigation exposes layers of conspiracy that may extend far beyond her own seizure of MSF.', future: 'Every measure used to secure her position narrows the number of people she can still trust.',
+    origin: 'Helena learns to read MSF as a hierarchy of loyalties rather than a simple intelligence service, but she never learns every protocol embedded by its founder.', rupture: 'Fionn\'s elimination creates the opening she needs to seize control and make Lynleit the official enemy.', focus: 'Her authority depends on keeping the accusation intact while the investigation exposes layers of conspiracy that may extend far beyond her own seizure of MSF. She does not know that blue clothing functions as a command-authentication signal among top officers, and that blind spot becomes one of her greatest mistakes.', future: 'Every measure used to secure her position narrows the number of people she can still trust. The exact consequence of missing Fionn\'s blue protocol remains unresolved.',
     ally: 'Tien', allyNote: 'Her covert instrument when official authority is too visible or too slow.', rival: 'Lynleit', rivalNote: 'Her stepdaughter, Fionn\'s biological daughter, and the displaced heir whose survival threatens Helena\'s entire political structure.', goal: 'Hold MSF long enough to make her version of events irreversible.',
     beats: ['Reading the Institution', 'The Opening', 'Control through Accusation', 'A Throne under Pressure']
   },
@@ -67,7 +67,7 @@ const profileSeeds = [
       { label: 'Practiced method', title: 'Precision before volume', detail: 'His distinction is virtuosity. Fionn can shape the flame through subtle, controlled applications that Lynleit has not learned to reproduce.' },
       { label: 'Generational contrast', title: 'Control and force', detail: 'Fionn represents the refined expression of the lineage. Lynleit possesses less finesse, but a greater willingness to manifest the flame at an unsafe scale.' }
     ],
-    origin: 'Fionn creates MSF with a public intelligence purpose and a hidden structure prepared for magical crisis. Within his family, he is also the virtuoso of a hereditary blue-flame magecraft defined by control and subtle application.', rupture: 'Foreign Magiarchates, church actors, and criminal Magi all remain plausible participants in the pressure built around Fionn. The manufactured strife occupies both of his offices when the Spill requires him most.', focus: 'The conspiracy remains difficult to confront because Magi shape its layers, false causes, and mortal intermediaries. The secrecy protecting Fionn\'s offices also prevents either institution from understanding the conflict carried between them.', future: 'His assassination turns unfinished plans and an obscured enemy network into an inheritance Lynleit and Kyrien must interpret without him. The exact author remains unresolved: criminal Magi, a foreign Magiarchate, a church faction, or some combination of them.',
+    origin: 'Fionn creates MSF with a public intelligence purpose and a hidden structure prepared for magical crisis. He also embeds cryptology into ordinary behavior, including a blue-clothing protocol through which informed officers recognize genuine command authority. Within his family, he is the virtuoso of a hereditary blue-flame magecraft defined by control and subtle application.', rupture: 'Foreign Magiarchates, church actors, and criminal Magi all remain plausible participants in the pressure built around Fionn. The manufactured strife occupies both of his offices when the Spill requires him most.', focus: 'The conspiracy remains difficult to confront because Magi shape its layers, false causes, and mortal intermediaries. The secrecy protecting Fionn\'s offices and protocols also prevents either institution from understanding the conflict carried between them.', future: 'His assassination turns unfinished plans, concealed MSF signals, and an obscured enemy network into an inheritance Lynleit and Kyrien must interpret without him. The exact author remains unresolved: criminal Magi, a foreign Magiarchate, a church faction, or some combination of them.',
     ally: 'Lynleit', allyNote: 'His biological daughter and intended successor, though much of what she inherits was never fully explained.', rival: 'Unresolved conspiracy', rivalNote: 'Criminal Magi, rival Magiarchates, church actors, or a mixed coalition may have planned, enabled, or carried out his assassination.', goal: 'Protect Narvea from a magical conflict whose participants can manufacture ordinary political reality as cover.',
     beats: ['Two Offices', 'The Hidden Purpose of MSF', 'Conflict behind the Mask', 'The Inheritance after Death']
   },
@@ -471,9 +471,16 @@ function renderProfile(profile) {
   loadCharacterMoments(profile, timeline);
 
   const appearance = document.querySelector('#character-appearance');
-  [
-    ['Visual direction', profile.visual], ['Palette', profile.palette], ['Silhouette', `Mock design language shaped around ${profile.role.toLowerCase()}.`], ['Status', 'Provisional until final appearance notes are supplied.']
-  ].forEach(([term, detail]) => {
+  const appearanceDetails = [
+    ['Visual direction', profile.visual],
+    ['Palette', profile.palette]
+  ];
+  if (profile.appearanceNote) appearanceDetails.push(['Operational meaning', profile.appearanceNote]);
+  appearanceDetails.push(
+    ['Silhouette', `Mock design language shaped around ${profile.role.toLowerCase()}.`],
+    ['Status', 'Provisional until final appearance notes are supplied.']
+  );
+  appearanceDetails.forEach(([term, detail]) => {
     appearance.append(createElement('dt', '', term), createElement('dd', '', detail));
   });
 
