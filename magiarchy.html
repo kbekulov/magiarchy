@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The territorial framework of the Magiarchy, the office of Magiarch, and the balance between fragmented magical power and cross-national churches.">
+    <meta name="theme-color" content="#1e1f22">
+    <title>The Magiarchy - Magiarchy</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2" defer></script>
+    <script src="notes-config.js" defer></script>
+    <script src="notes.js" defer></script>
+  </head>
+  <body class="magiarchy-page world-section-page" data-notes-page="magiarchy">
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <header class="site-header">
+      <nav class="navbar shell" aria-label="Primary navigation">
+        <a class="brand" href="index.html" aria-label="Magiarchy home"><span class="brand-mark" aria-hidden="true"><span></span></span><span>Magiarchy</span></a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links"><span class="sr-only">Toggle navigation</span><span></span><span></span></button>
+        <div class="nav-links" id="nav-links">
+          <a href="index.html">Home</a><a href="characters.html">Characters</a><a href="story.html">Story</a><a href="moments.html">Moments</a>
+          <details class="nav-dropdown">
+            <summary>World <span aria-hidden="true">⌄</span></summary>
+            <div class="nav-submenu">
+              <a href="world.html"><span>World index</span><small>Places, institutions, and powers</small></a>
+              <a href="duchy.html"><span>The Duchy</span><small>Country profile</small></a>
+              <a href="magiarchy.html" aria-current="page"><span>The Magiarchy</span><small>Territorial magical order</small></a>
+              <a href="msf.html"><span>MSF</span><small>Intelligence agency</small></a>
+              <a href="church.html"><span>The Church</span><small>Hidden religious authority</small></a>
+            </div>
+          </details>
+          <a href="music.html">Music</a><a href="gallery.html">Gallery</a><a href="docs.html">Docs</a>
+        </div>
+      </nav>
+    </header>
+
+    <main class="app-main" id="main-content">
+      <div class="world-workspace shell">
+        <div class="world-main-pane">
+          <header class="feed-header world-feed-header"><div><span aria-hidden="true">#</span><strong>the-magiarchy</strong><i></i><p>Magical governance framework</p></div><span class="feed-status"><span class="status-dot"></span> Territorial order</span></header>
+          <div class="world-scroll institution-scroll">
+            <nav class="document-breadcrumbs world-breadcrumbs" aria-label="Breadcrumb"><a href="world.html">World</a><span aria-hidden="true">/</span><span aria-current="page">The Magiarchy</span></nav>
+
+            <section class="magiarchy-hero reveal" aria-labelledby="magiarchy-title">
+              <div class="magiarchy-sigil" aria-hidden="true"><span></span><i></i><i></i></div>
+              <div class="magiarchy-hero-copy">
+                <p class="eyebrow">Territorial magical order</p>
+                <h1 id="magiarchy-title">A hierarchy that<br>ends at the border</h1>
+                <p>The highest official position a Magus can obtain is Magiarch. Each Magiarch oversees magical affairs and relations with the churches inside a defined territory, but no Magiarch may turn that authority into a larger united organization.</p>
+              </div>
+              <dl>
+                <div><dt>Highest office</dt><dd>Magiarch</dd></div>
+                <div><dt>Jurisdiction</dt><dd>One territory</dd></div>
+                <div><dt>Primary relation</dt><dd>Magiarchy and churches</dd></div>
+                <div><dt>Higher union</dt><dd>Explicitly forbidden</dd></div>
+              </dl>
+            </section>
+
+            <section class="institution-section reveal" aria-labelledby="office-title">
+              <header class="institution-section-heading"><span>01</span><div><p class="eyebrow">Highest office</p><h2 id="office-title">The Magiarch is the ceiling of lawful magical authority</h2></div></header>
+              <div class="magiarch-office">
+                <div class="magiarch-rank"><span>OFFICIAL APEX</span><strong>Magiarch</strong><p>The office is usually held by the main Magus assigned to oversee the Magiarchy within a single territorial jurisdiction.</p></div>
+                <div class="magiarch-mandate">
+                  <article><span>01</span><div><strong>Territorial oversight</strong><p>Authority is tied to a defined country or district rather than to a universal magical hierarchy.</p></div></article>
+                  <article><span>02</span><div><strong>Church relations</strong><p>The office manages the local relationship between organized Magi and the churches that monitor and counterbalance them.</p></div></article>
+                  <article><span>03</span><div><strong>Factional leadership</strong><p>A Magiarch and the Magi aligned with them become a political actor with interests, allies, rivals, and local pressures.</p></div></article>
+                </div>
+              </div>
+            </section>
+
+            <section class="institution-section reveal" aria-labelledby="territory-scale-title">
+              <header class="institution-section-heading"><span>02</span><div><p class="eyebrow">Territorial scale</p><h2 id="territory-scale-title">Jurisdiction follows practical size</h2></div></header>
+              <div class="jurisdiction-scale">
+                <article><div class="jurisdiction-map jurisdiction-country" aria-hidden="true"><i></i><span></span></div><div><span>COMMON MODEL</span><h3>One country</h3><p>A single Magiarch may oversee the whole territory when its size and magical population can be managed as one jurisdiction.</p></div></article>
+                <article><div class="jurisdiction-map jurisdiction-district" aria-hidden="true"><i></i><span></span><b></b></div><div><span>LARGER TERRITORY</span><h3>One district</h3><p>A large country may be divided into several Magiarchates, each governed within its own district rather than subordinated to a national magical superior.</p></div></article>
+              </div>
+            </section>
+
+            <section class="institution-section reveal" aria-labelledby="counterbalance-title">
+              <header class="institution-section-heading"><span>03</span><div><p class="eyebrow">Structural counterbalance</p><h2 id="counterbalance-title">Magic is fragmented because the churches are not</h2></div></header>
+              <div class="counterbalance-grid">
+                <article class="counterbalance-magi">
+                  <span>MAGIARCHATES</span>
+                  <h3>Territorial and separate</h3>
+                  <p>Magiarchs are explicitly forbidden from uniting into a larger organization. Their lawful authority stops with their territory.</p>
+                  <div aria-hidden="true"><i></i><i></i><i></i></div>
+                </article>
+                <div class="counterbalance-axis" aria-hidden="true"><span></span><b>COUNTERWEIGHT</b><span></span></div>
+                <article class="counterbalance-church">
+                  <span>CHURCHES</span>
+                  <h3>Organized across borders</h3>
+                  <p>The churches retain cross-national organization, giving them a wider structure that counterbalances the concentrated power of magic users.</p>
+                  <div aria-hidden="true"><i></i><i></i><i></i></div>
+                </article>
+              </div>
+              <aside class="union-prohibition"><span>WHY THE BAN EXISTS</span><p>A united organization of Magiarchs would overturn the intended balance and create open conflict with the churches.</p><a href="church.html">Examine the church counterweight <span aria-hidden="true">→</span></a></aside>
+            </section>
+
+            <section class="institution-section reveal" aria-labelledby="anarchic-order-title">
+              <header class="institution-section-heading"><span>04</span><div><p class="eyebrow">Relations without a sovereign</p><h2 id="anarchic-order-title">Magiarchates exist in an anarchic order</h2></div></header>
+              <div class="anarchy-layout">
+                <div class="anarchy-principle"><span>NO HIGHER MAGICAL GOVERNMENT</span><blockquote>There is no lawful authority above the Magiarchs capable of reliably settling disputes between them.</blockquote><p>Anarchy here does not mean constant chaos. It means the absence of a superior power that can compel every Magiarchate to obey.</p></div>
+                <div class="anarchy-effects">
+                  <article><span>01</span><strong>Self-preservation</strong><p>Each faction must judge threats and protect its own position.</p></article>
+                  <article><span>02</span><strong>Alliance</strong><p>Cooperation depends on interest, trust, and temporary alignment.</p></article>
+                  <article><span>03</span><strong>Rivalry</strong><p>Competing aims can produce pressure resembling conflict between states.</p></article>
+                  <article><span>04</span><strong>Uncertainty</strong><p>No Magiarch can be certain how another faction will use its power.</p></article>
+                </div>
+              </div>
+            </section>
+
+            <section class="institution-section reveal" aria-labelledby="known-magiarch-title">
+              <header class="institution-section-heading"><span>05</span><div><p class="eyebrow">Known office holder</p><h2 id="known-magiarch-title">Fionn concealed the office behind MSF</h2></div></header>
+              <div class="known-office-holder"><div><span>NARVEA</span><strong>Fionn</strong><p>Secret Magiarch of the country and, in public, director of MSF. His two roles placed magical governance and an ordinary intelligence institution under the same person without revealing their connection.</p></div><div><a href="character.html?character=fionn">Open Fionn's profile <span aria-hidden="true">→</span></a><a href="msf.html">Open the MSF record <span aria-hidden="true">→</span></a></div></div>
+            </section>
+
+            <aside class="canon-gaps reveal"><div><p class="eyebrow">Awaiting definition</p><h2>Open framework questions</h2></div><ul><li>How a Magiarch is appointed or recognized</li><li>How removal and succession work</li><li>How district boundaries are established</li><li>What customs govern disputes between Magiarchates</li></ul></aside>
+          </div>
+        </div>
+        <aside class="notes-sidebar" aria-label="The Magiarchy page notes"><header class="notes-header"><div><span aria-hidden="true">✎</span><strong>Page notes</strong></div><span>Magiarchy</span></header><div class="notes-list"></div><p class="notes-footnote">Use notes to define offices and inter-Magiarchate customs without turning open questions into canon.</p></aside>
+      </div>
+    </main>
+  </body>
+</html>
