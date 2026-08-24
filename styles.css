@@ -8997,3 +8997,189 @@ a.moment-connection-card:hover {
     gap: 8px;
   }
 }
+
+/* Unresolved assassination authorship */
+.assassination-question {
+  margin: 0 18px 18px;
+  overflow: hidden;
+  border: 1px solid #3b3d43;
+  border-radius: 6px;
+  background: #232428;
+}
+
+.assassination-question > header {
+  display: grid;
+  grid-template-columns: minmax(260px, .9fr) minmax(280px, 1.1fr);
+  align-items: end;
+  gap: 24px;
+  padding: 18px;
+  border-bottom: 1px solid #3b3d43;
+}
+
+.assassination-question > header span,
+.assassination-candidates article > span,
+.assassination-complication > span,
+.assassination-question > footer p > span {
+  color: #d99b9e;
+  font-size: .52rem;
+  font-weight: 800;
+  letter-spacing: .07em;
+}
+
+.assassination-question > header h3 {
+  margin: 5px 0 0;
+  color: #f2f3f5;
+  font-size: 1rem;
+}
+
+.assassination-question > header p {
+  margin: 0;
+  color: #9296a3;
+  font-size: .65rem;
+  line-height: 1.55;
+}
+
+.assassination-candidates {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.assassination-candidates article {
+  min-width: 0;
+  padding: 16px;
+}
+
+.assassination-candidates article + article {
+  border-left: 1px solid #3b3d43;
+}
+
+.assassination-candidates strong {
+  display: block;
+  margin: 8px 0 7px;
+  color: #dbdee1;
+  font-size: .72rem;
+}
+
+.assassination-candidates p,
+.assassination-complication p,
+.assassination-question > footer p {
+  margin: 0;
+  color: #9296a3;
+  font-size: .59rem;
+  line-height: 1.55;
+}
+
+.assassination-complication {
+  display: grid;
+  grid-template-columns: 170px minmax(0, 1fr);
+  align-items: center;
+  gap: 18px;
+  padding: 13px 16px;
+  border-top: 1px solid #3b3d43;
+  border-left: 3px solid #ab6fe8;
+  background: #292a2f;
+}
+
+.assassination-complication > span {
+  color: #c9a7ef;
+}
+
+.assassination-question > footer {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr)) auto;
+  align-items: center;
+  gap: 16px;
+  padding: 13px 16px;
+  border-top: 1px solid #3b3d43;
+}
+
+.assassination-question > footer p > span {
+  margin-right: 5px;
+}
+
+.assassination-question > footer a {
+  color: #b3b9ff;
+  font-size: .58rem;
+  font-weight: 750;
+  white-space: nowrap;
+}
+
+.infiltration-possibility,
+.envoy-infiltration {
+  display: grid;
+  grid-template-columns: minmax(260px, .72fr) minmax(0, 1.28fr);
+  align-items: center;
+  gap: 30px;
+  margin-top: 12px;
+  padding: 24px 28px;
+  border: 1px solid #393b42;
+  border-left: 3px solid #ab6fe8;
+  border-radius: 8px;
+  background: #232428;
+}
+
+.infiltration-possibility > div > span,
+.envoy-infiltration > span {
+  color: #c9a7ef;
+  font-size: .6rem;
+  font-weight: 750;
+  letter-spacing: .08em;
+}
+
+.infiltration-possibility h3 {
+  margin: 9px 0 0;
+  color: #f2f3f5;
+  font-size: 1.18rem;
+}
+
+.infiltration-possibility > p,
+.envoy-infiltration > p {
+  margin: 0;
+  color: #aeb1b8;
+  line-height: 1.65;
+}
+
+@media (max-width: 760px) {
+  .assassination-question > header,
+  .assassination-complication,
+  .infiltration-possibility,
+  .envoy-infiltration {
+    grid-template-columns: 1fr;
+    gap: 9px;
+  }
+
+  .assassination-candidates {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .assassination-candidates article:nth-child(3) {
+    border-top: 1px solid #3b3d43;
+    border-left: 0;
+  }
+
+  .assassination-candidates article:nth-child(4) {
+    border-top: 1px solid #3b3d43;
+  }
+
+  .assassination-question > footer {
+    grid-template-columns: 1fr;
+    gap: 7px;
+  }
+
+  .assassination-question > footer a {
+    margin-top: 4px;
+    white-space: normal;
+  }
+}
+
+@media (max-width: 420px) {
+  .assassination-candidates {
+    grid-template-columns: 1fr;
+  }
+
+  .assassination-candidates article + article,
+  .assassination-candidates article:nth-child(4) {
+    border-top: 1px solid #3b3d43;
+    border-left: 0;
+  }
+}

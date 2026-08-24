@@ -143,7 +143,7 @@
       "How did Drake and the Duke become close friends?",
       "Which peers lead the ridicule at Court?",
       "Is somebody deliberately encouraging the Court to dismiss him?",
-      "Which Magiarchs and church actors are shaping the conspiracy from outside Drake's field of view?"
+      "Which criminal Magi, foreign Magiarchates, and church actors are shaping the conspiracy from outside Drake's field of view?"
     ],
     "continuityBefore": "Early disappearances and irregular movements need to produce the evidence that Drake reads as one political pattern.",
     "continuityAfter": "Sherie responds to her uncle's isolation by proposing contact with Lynleit outside every lawful chain of supervision.",
@@ -243,5 +243,47 @@
     "continuityAfter": "Lynleit must decide what to tell the scattered team, Drake, and Sherie now that the investigation points toward Magi.",
     "chapterSlug": null,
     "updated": "2026-08-23"
+  },
+  {
+    "slug": "fionn-is-eliminated",
+    "code": "MOM-007",
+    "title": "The Unresolved Assassination",
+    "status": "Key event",
+    "placementStatus": "Chronology confirmed, authorship unresolved",
+    "timelinePhase": "the-takeover",
+    "timelineLabel": "The Takeover",
+    "sequence": 1,
+    "sceneType": "Political assassination",
+    "thread": "The hidden conflict",
+    "location": "Unspecified location",
+    "summary": "Fionn is assassinated, creating the opening Helena uses to seize MSF and frame Lynleit. The actor or coalition responsible remains unresolved.",
+    "purpose": "Preserves Fionn's death as the decisive hinge between the hidden magical conflict and the visible takeover without prematurely choosing which faction orchestrated it.",
+    "characters": [
+      { "name": "Fionn", "slug": "fionn" }
+    ],
+    "characterAnchors": [
+      { "slug": "fionn", "beat": "The Inheritance after Death" }
+    ],
+    "known": [
+      "Fionn is successfully assassinated.",
+      "His death creates the opening Helena uses to take control of MSF.",
+      "Helena frames Lynleit for the assassination and drives her into exile.",
+      "The broader conflict already includes pressure from criminal Magi, foreign Magiarchates, and church actors.",
+      "The existence of several plausible participants does not establish which one ordered or executed the assassination."
+    ],
+    "openQuestions": [
+      "Was the assassination orchestrated by criminal Magi acting outside every jurisdiction?",
+      "Did a rival foreign Magiarchate order or enable it?",
+      "Did a church faction use its cross-national reach or special envoys against Fionn?",
+      "Was the assassination a coalition in which several parties supplied different parts of the operation?",
+      "Did all participants understand the full plan, or were some manipulated by another faction?",
+      "Did one faction covertly or illegally infiltrate another and use its people or resources without authorization?",
+      "Does any participant's apparent affiliation conceal who truly directed them?",
+      "How much does Helena know about the assassination she exploits?"
+    ],
+    "continuityBefore": "Manufactured political strife isolates Fionn and divides his attention while the Spill develops.",
+    "continuityAfter": "Helena converts the vacancy into control of MSF, makes Lynleit the official suspect, and forces her into exile while the true authorship remains hidden.",
+    "chapterSlug": null,
+    "updated": "2026-08-24"
   }
 ]
