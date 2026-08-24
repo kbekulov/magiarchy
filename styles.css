@@ -8007,3 +8007,199 @@ a.moment-connection-card:hover {
     grid-template-columns: 1fr;
   }
 }
+
+/* Church special envoys */
+.envoy-layout {
+  display: grid;
+  grid-template-columns: minmax(280px, .78fr) minmax(0, 1.22fr);
+  overflow: hidden;
+  border: 1px solid #393b42;
+  border-radius: 8px;
+}
+
+.envoy-brief {
+  padding: clamp(30px, 5vw, 52px);
+  border-right: 1px solid #393b42;
+  background: #232428;
+}
+
+.envoy-brief > span,
+.envoy-traditions article > span {
+  color: #8790ff;
+  font-size: .6rem;
+  font-weight: 750;
+  letter-spacing: .08em;
+}
+
+.envoy-brief h3,
+.envoy-traditions h3 {
+  margin: 18px 0 14px;
+  color: #f2f3f5;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(1.7rem, 3vw, 2.55rem);
+  font-weight: 500;
+  line-height: 1.15;
+}
+
+.envoy-brief > p,
+.envoy-traditions p {
+  margin: 0;
+  color: #aeb1b8;
+  line-height: 1.65;
+}
+
+.envoy-brief dl {
+  margin: 30px 0 0;
+  border-top: 1px solid #393b42;
+}
+
+.envoy-brief dl div {
+  display: grid;
+  grid-template-columns: 84px minmax(0, 1fr);
+  gap: 12px;
+  padding: 12px 0;
+}
+
+.envoy-brief dl div + div {
+  border-top: 1px solid #393b42;
+}
+
+.envoy-brief dt {
+  color: #72767d;
+  font-size: .61rem;
+  font-weight: 750;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+}
+
+.envoy-brief dd {
+  margin: 0;
+  color: #dbdee1;
+  font-size: .8rem;
+}
+
+.envoy-domains {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.envoy-domains article {
+  display: grid;
+  min-height: 160px;
+  align-content: start;
+  grid-template-columns: 28px minmax(0, 1fr);
+  padding: 24px;
+}
+
+.envoy-domains article:nth-child(even) {
+  border-left: 1px solid #393b42;
+}
+
+.envoy-domains article:nth-child(n + 3) {
+  border-top: 1px solid #393b42;
+}
+
+.envoy-domains article > span {
+  grid-row: 1 / 3;
+  color: #72767d;
+  font-family: Consolas, monospace;
+  font-size: .65rem;
+}
+
+.envoy-domains strong {
+  color: #f2f3f5;
+  font-size: .95rem;
+}
+
+.envoy-domains p {
+  margin: 8px 0 0;
+  color: #949ba4;
+  font-size: .78rem;
+  line-height: 1.55;
+}
+
+.envoy-traditions {
+  display: grid;
+  grid-template-columns: minmax(260px, 1.1fr) repeat(2, minmax(220px, .95fr));
+  margin-top: 12px;
+  border: 1px solid #393b42;
+  border-radius: 8px;
+}
+
+.envoy-traditions > div,
+.envoy-traditions article {
+  padding: 28px;
+}
+
+.envoy-traditions > * + * {
+  border-left: 1px solid #393b42;
+}
+
+.envoy-traditions .eyebrow {
+  margin-bottom: 0;
+}
+
+.envoy-traditions h3 {
+  margin: 10px 0 12px;
+  font-size: 1.35rem;
+}
+
+.envoy-traditions article strong {
+  display: block;
+  margin: 16px 0 10px;
+  color: #dbdee1;
+  font-size: .92rem;
+}
+
+.envoy-traditions article p {
+  font-size: .78rem;
+}
+
+@media (max-width: 900px) {
+  .envoy-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .envoy-brief {
+    border-right: 0;
+    border-bottom: 1px solid #393b42;
+  }
+
+  .envoy-traditions {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .envoy-traditions > div {
+    grid-column: 1 / -1;
+    border-bottom: 1px solid #393b42;
+  }
+
+  .envoy-traditions > * + * {
+    border-left: 0;
+  }
+
+  .envoy-traditions article + article {
+    border-left: 1px solid #393b42;
+  }
+}
+
+@media (max-width: 620px) {
+  .envoy-domains,
+  .envoy-traditions {
+    grid-template-columns: 1fr;
+  }
+
+  .envoy-domains article:nth-child(even),
+  .envoy-traditions article + article {
+    border-left: 0;
+  }
+
+  .envoy-domains article:nth-child(n + 2),
+  .envoy-traditions article + article {
+    border-top: 1px solid #393b42;
+  }
+
+  .envoy-traditions > div {
+    grid-column: auto;
+  }
+}
