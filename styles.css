@@ -199,6 +199,7 @@ a {
 }
 
 .nav-dropdown summary > span {
+  display: none;
   color: var(--subtle);
   font-size: .78rem;
   transition: transform .18s ease;
@@ -7934,6 +7935,10 @@ a.moment-connection-card:hover {
     justify-content: space-between;
     padding: 0 12px;
     font-size: .82rem;
+  }
+
+  .nav-dropdown summary > span {
+    display: inline;
   }
 
   .nav-submenu {
