@@ -11,8 +11,8 @@
     "sceneType": "Confrontation",
     "thread": "Lynleit and Kyrien",
     "location": "Police office",
-    "summary": "Lynleit interrogates Kyrien at a police office after his failed attempt to assassinate a Magus politician involved in causing his father's death.",
-    "purpose": "Creates the coercive bargain that begins Kyrien's hidden association with MSF. It also leaves a surviving Magus politician whose later retaliation reaches Lynleit.",
+    "summary": "Lynleit interrogates Kyrien after his failed attempt to assassinate a Magus politician, then converts his prison risk into a secret recruitment.",
+    "purpose": "Creates the coercive bargain that begins Kyrien's hidden association with MSF and marks the decision that will become Lynleit's first deeply anti-protocol compartment. It also leaves a surviving Magus politician whose later retaliation reaches Lynleit.",
     "characters": [
       { "name": "Lynleit", "slug": "lynleit" },
       { "name": "Kyrien", "slug": "kyrien" }
@@ -41,11 +41,60 @@
       "What is the politician's name, office, and exact role in Kyrien's father's death?",
       "How does the surviving politician later retaliate against Lynleit?",
       "What authority places Lynleit inside the interrogation?",
-      "How does Lynleit conceal Kyrien's release and unofficial MSF association?",
+      "What initial cover story conceals Kyrien's release and unofficial MSF association?",
       "Which suspicious acts did Lynleit witness Helena performing?"
     ],
     "continuityBefore": "Kyrien's father's death, the politician's involvement, and the military knowledge behind the attempt still need connective scenes.",
-    "continuityAfter": "Kyrien enters Lynleit's service unwillingly. The secret arrangement gives him access to MSF tradecraft while preserving him as hidden leverage against Helena, but the surviving Magus politician can now threaten them both.",
+    "continuityAfter": "Kyrien enters Lynleit's service unwillingly. Lynleit must later decide who, if anyone, can be trusted with the secret. The arrangement preserves Kyrien as hidden leverage against Helena, but the surviving Magus politician can now threaten them both.",
+    "chapterSlug": null,
+    "updated": "2026-08-24"
+  },
+  {
+    "slug": "the-secret-third-ally",
+    "code": "MOM-008",
+    "title": "The Secret Third Ally",
+    "status": "Scene chain",
+    "placementStatus": "Provisional placement",
+    "timelinePhase": "unknowing-convergence",
+    "timelineLabel": "Unknowing Convergence",
+    "sequence": 1.5,
+    "sceneType": "Trust test",
+    "thread": "Lynleit's hidden circle",
+    "location": "Unspecified location",
+    "summary": "Lynleit eventually tells only Felix and Reiner that she has recruited Kyrien as an unknown ally and possible trump card against Helena, keeping the decision hidden even from Fionn.",
+    "purpose": "Defines Lynleit's first deeply anti-protocol MSF decision, turns secrecy into an advantage over Helena, and establishes the split between Reiner's trust in Lynleit's judgment and Felix's lasting distrust of Kyrien.",
+    "characters": [
+      { "name": "Lynleit", "slug": "lynleit" },
+      { "name": "Kyrien", "slug": "kyrien" },
+      { "name": "Felix", "slug": "felix" },
+      { "name": "Reiner", "slug": "reiner" }
+    ],
+    "characterAnchors": [
+      { "slug": "lynleit", "beat": "The Heir Apparent" },
+      { "slug": "kyrien", "beat": "Alliance under Pressure" },
+      { "slug": "felix", "beat": "The Secret Third Ally" },
+      { "slug": "reiner", "beat": "The Anti-Protocol Compartment" }
+    ],
+    "known": [
+      "Helena knows everyone already inside Lynleit's circle, so an unknown ally creates a favorable information imbalance.",
+      "Felix and Reiner are already Lynleit's close, long-standing friends before the story begins, not subordinates who become her friends during this crisis.",
+      "Lynleit eventually confines Kyrien's recruitment to Felix and Reiner and does not inform even Fionn.",
+      "This is Lynleit's first deeply anti-protocol MSF decision, made with strong intuitive conviction.",
+      "Felix and Reiner both regard Kyrien as a possible threat to Lynleit, especially when neither bodyguard is near her.",
+      "Reiner accepts the arrangement because he chooses to trust Lynleit's judgment.",
+      "Felix accepts only after Reiner's decision leaves him in the minority.",
+      "Felix never fully learns to trust Kyrien and later clashes with him repeatedly.",
+      "Lynleit reprimands Felix when those clashes interfere with her decision or the arrangement around Kyrien."
+    ],
+    "openQuestions": [
+      "Where and when does Lynleit disclose the compartment to Felix and Reiner?",
+      "What evidence or argument does Lynleit use to justify trusting Kyrien?",
+      "What continuing cover story protects the compartment from Fionn, Helena, the police, and the wider MSF?",
+      "Which clash between Felix and Kyrien produces the most serious consequence for Lynleit or an operation?",
+      "What would Fionn do if he learned Lynleit had hidden Kyrien from him?"
+    ],
+    "continuityBefore": "Lynleit has already coerced Kyrien into service after the failed assassination attempt, but the arrangement initially exists only between handler and asset.",
+    "continuityAfter": "Reiner becomes the stabilizing vote that permits the compartment to continue. Felix complies without trust, creating recurring friction with Kyrien and forcing Lynleit to defend the judgment on which the entire imbalance depends.",
     "chapterSlug": null,
     "updated": "2026-08-24"
   },
@@ -182,7 +231,7 @@
       { "slug": "drake", "beat": "The Illegal Partnership" },
       { "slug": "sherie", "beat": "Leading the Meeting" },
       { "slug": "lynleit", "beat": "The Heir Apparent" },
-      { "slug": "felix", "beat": "Choosing Whom to Trust" },
+      { "slug": "felix", "beat": "No Trust for Kyrien" },
       { "slug": "kyrien", "beat": "Alliance under Pressure" }
     ],
     "known": [
@@ -229,7 +278,7 @@
     ],
     "characterAnchors": [
       { "slug": "lynleit", "beat": "The Heir Apparent" },
-      { "slug": "felix", "beat": "Choosing Whom to Trust" },
+      { "slug": "felix", "beat": "No Trust for Kyrien" },
       { "slug": "kyrien", "beat": "Alliance under Pressure" }
     ],
     "known": [

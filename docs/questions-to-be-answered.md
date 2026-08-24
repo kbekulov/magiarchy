@@ -8,7 +8,7 @@ This is the author's living editorial ledger. It records uncertainties that stil
 - **Central movement:** Lynleit works from exile to clear her name and redirect MSF toward the Spill. The Spill is never fully contained, so MSF survives as a smaller task force balancing ordinary intelligence work with magical threats. Lynleit later disappears to conceal her pregnancy, protect the child, recover, and investigate the Spill's origins.
 - **World:** Narvea is a multilingual Baltic duchy shaped by diplomacy. Its constitutional government, Ducal Court, MSF, churches, police, Magiarchy, and independent actors approach the same crisis through different fragments of knowledge.
 - **Hidden order:** Magiarchates are territorially separate and balanced by cross-border churches. Unlicensed Magi are hunted by both systems, while infiltration between factions remains possible.
-- **Core relationships:** Fionn is Lynleit's biological father and Helena's husband. Helena is Lynleit's stepmother. Kyrien begins as Lynleit's coerced secret asset, but repeated survival, reliability, usefulness, and chemistry turn the arrangement into a life-saving bond. Drake and Sherie form a strategic and diplomatic partnership as uncle and niece. Felix and Reiner are Lynleit's friends as well as Fionn-trusted personal bodyguards: playful xxFP-coded Felix tests boundaries, while stern xSTJ-coded Reiner protects through protocol.
+- **Core relationships:** Fionn is Lynleit's biological father and Helena's husband. Helena is Lynleit's stepmother. Felix and Reiner are Lynleit's close friends from before the story begins, as well as her trusted bodyguards. Kyrien begins as Lynleit's coerced secret asset inside a compartment known only to those two friends, while even Fionn remains uninformed. Reiner accepts the risk by trusting Lynleit's judgment. Felix concedes as the minority but never fully trusts Kyrien. Drake and Sherie form a strategic and diplomatic partnership as uncle and niece.
 - **Anchored scenes:** The archive currently includes the church negotiation, Kyrien's interrogation, the family-house cat chase, a civilian kidnapping, Drake's dismissed warning, Sherie's illegal meeting, the boat infiltration, and Fionn's unresolved assassination.
 
 ## Open question table
@@ -31,10 +31,12 @@ This is the author's living editorial ledger. It records uncertainties that stil
 | Timeline | How many years pass between Lynleit's disappearance and return, and how old is her and Kyrien's son when she reappears? | 55% |
 | Family | Who is the reliable distant relative trusted with Lynleit and Kyrien's son, and what does that person know about the child's parents? | 0% |
 | Kyrien | Who is the Magus politician targeted by Kyrien, what office do they hold, what exact role did they play in his father's death, and how does their survival later harm Lynleit? | 25% |
-| Kyrien | What authority allows Lynleit to control Kyrien's interrogation, and how does she conceal his conditional release and unofficial MSF service from the police and her own agency? | 5% |
+| Kyrien | What authority allows Lynleit to control Kyrien's interrogation, and what cover story conceals his conditional release from the police and everyone outside Lynleit, Felix, and Reiner? | 25% |
 | Spill inquiry | Which wiser people does Lynleit consult, and what do they teach her about the Spill's origin? | 0% |
 | Lynleit | What is Lynleit trying to accomplish around later MSF missions, and is she helping, observing, manipulating events, or causing part of the danger? | 10% |
 | Relationship | Which specific shared ordeals turn Lynleit and Kyrien's coerced handler-asset arrangement into trust, intimacy, and parenthood? | 40% |
+| Relationship | When and where does Lynleit reveal Kyrien's recruitment to Felix and Reiner, what persuades Reiner to trust her judgment, and what exchange leaves Felix in the minority? | 20% |
+| Relationship | Which clash between Felix and Kyrien creates the most serious consequence, and does Felix ever move beyond reluctant tolerance of Lynleit's secret ally? | 10% |
 | Family | What is the private reality of Fionn and Helena's marriage, and why does Fionn exclude his wife from protocols he passes to Lynleit and senior officers? | 20% |
 | Family | When, if ever, does Kyrien learn that Lynleit bore his son, and what does that revelation do to their relationship and his leadership of MSF? | 0% |
 | Family | Does Lynleit and Kyrien's son inherit the blue-flame lineage, another magical ability, or no Magus talent at all? | 0% |
