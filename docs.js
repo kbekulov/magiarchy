@@ -123,6 +123,13 @@ function createMarkdownTable(lines, startIndex) {
     body.append(row);
     index += 1;
   }
+
+  if (isQuestionLedger) {
+    Array.from(body.rows)
+      .sort((first, second) => Number(first.dataset.confidence) - Number(second.dataset.confidence))
+      .forEach((row) => body.append(row));
+  }
+
   table.append(body);
 
   const wrapper = document.createElement('div');
