@@ -2,22 +2,12 @@
 
 This is the author's living editorial ledger. It records uncertainties that still matter to the story after comparison with the current site. Each unresolved question carries a confidence score based only on confirmed material. Answers belong in the wider site architecture, not in this table. Questions that have been answered, made redundant, or reduced to a detail with no clear story value are removed.
 
-## Current story at a glance
-
-- **Story:** A hidden magical crisis begins with disappearances in an enormous park in Vilen. Political misdirection prevents Fionn from responding as Magiarch. His assassination remains unattributed, although Helena is confirmed to have played a major role in it before seizing MSF and framing Lynleit.
-- **Central movement:** Lynleit works from exile to clear her name and redirect MSF toward the Spill. The Spill is never fully contained, so MSF survives as a smaller task force balancing ordinary intelligence work with magical threats. Lynleit later disappears to conceal her pregnancy, protect the child, recover, and investigate the Spill's origins.
-- **World:** Narvea is a multilingual Baltic duchy shaped by diplomacy. Its constitutional government, Ducal Court, MSF, churches, police, Magiarchy, and independent actors approach the same crisis through different fragments of knowledge.
-- **Hidden order:** Magiarchates are territorially separate and balanced by cross-border churches. Unlicensed Magi are hunted by both systems, while infiltration between factions remains possible.
-- **Core relationships:** Fionn is Lynleit's biological father and Helena's husband. Helena is Lynleit's stepmother. Felix and Reiner are Lynleit's close friends from before the story begins, as well as her trusted bodyguards. Kyrien begins as Lynleit's coerced secret asset inside a compartment known only to those two friends, while even Fionn remains uninformed. Reiner accepts the risk by trusting Lynleit's judgment. Felix concedes as the minority but never fully trusts Kyrien. Drake and Sherie form a strategic and diplomatic partnership as uncle and niece.
-- **Anchored scenes:** The archive currently includes the church negotiation, Kyrien's interrogation, the family-house cat chase, a civilian kidnapping, Drake's dismissed warning, Sherie's illegal meeting, the boat infiltration, and Fionn's unresolved assassination.
-
 ## Open question table
 
 Rows are ordered from least answered to most answered. Questions at 100% are removed once their answers have been integrated into the wider site.
 
 | Area | Question | Confidence |
 | --- | --- | --- |
-| Timeline | Do Kyrien's failed assassination, interrogation, and disclosure to Felix and Reiner occur before or after Fionn's assassination, and where do they sit relative to the first disappearances and the early church negotiation? | 0% |
 | Narrative reveal | Which scene first confirms the existence of magic to the reader, and what earlier scenes should remain explainable as political or natural events? | 0% |
 | Helena | What does Helena personally want from Fionn's death and control of MSF beyond occupying the director's seat? | 0% |
 | Helena | Is Helena a Magus, and what access, allies, or leverage allow her to operate inside the hidden magical conflict? | 0% |

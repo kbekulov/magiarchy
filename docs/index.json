@@ -9,6 +9,15 @@
     "speakers": ["Author's Desk"]
   },
   {
+    "slug": "contradictions-to-resolve",
+    "title": "Contradictions to Resolve",
+    "topic": "Editorial Ledger",
+    "file": "contradictions-to-resolve.md",
+    "updated": "2026-08-25",
+    "description": "A resolution-tracked list of places where current story, character, world, or timeline records cannot all be read literally at the same time.",
+    "speakers": ["Author's Desk"]
+  },
+  {
     "slug": "duchy-of-narvea",
     "title": "The Duchy of Narvea",
     "topic": "Country Profile",

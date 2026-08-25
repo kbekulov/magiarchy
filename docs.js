@@ -63,8 +63,15 @@ function createMarkdownTable(lines, startIndex) {
   const headers = parseMarkdownTableRow(lines[startIndex]);
   const normalizedHeaders = headers.map((header) => header.toLowerCase());
   const questionIndex = normalizedHeaders.indexOf('question');
+  const contradictionIndex = normalizedHeaders.indexOf('contradiction');
   const confidenceIndex = normalizedHeaders.indexOf('confidence');
+  const resolutionIndex = normalizedHeaders.indexOf('resolution');
   const isQuestionLedger = questionIndex !== -1 && confidenceIndex !== -1;
+  const isContradictionLedger = contradictionIndex !== -1 && resolutionIndex !== -1;
+  const isEditorialLedger = isQuestionLedger || isContradictionLedger;
+  const contentIndex = isQuestionLedger ? questionIndex : contradictionIndex;
+  const progressIndex = isQuestionLedger ? confidenceIndex : resolutionIndex;
+  const progressWord = isQuestionLedger ? 'answered' : 'resolved';
   const table = document.createElement('table');
   const head = document.createElement('thead');
   const headRow = document.createElement('tr');
@@ -73,6 +80,8 @@ function createMarkdownTable(lines, startIndex) {
     const cell = document.createElement('th');
     cell.scope = 'col';
     cell.className = `table-cell-${normalizedHeaders[headerIndex].replace(/[^a-z0-9]+/g, '-')}`;
+    if (isEditorialLedger && headerIndex === contentIndex) cell.classList.add('table-cell-question');
+    if (isEditorialLedger && headerIndex === progressIndex) cell.classList.add('table-cell-confidence');
     appendInlineMarkdown(header, cell);
     headRow.append(cell);
   });
@@ -90,25 +99,27 @@ function createMarkdownTable(lines, startIndex) {
       const cell = document.createElement('td');
       cell.dataset.label = headers[cellIndex];
       cell.className = `table-cell-${normalizedHeaders[cellIndex].replace(/[^a-z0-9]+/g, '-')}`;
+      if (isEditorialLedger && cellIndex === contentIndex) cell.classList.add('table-cell-question');
+      if (isEditorialLedger && cellIndex === progressIndex) cell.classList.add('table-cell-confidence');
       appendInlineMarkdown(value, cell);
       row.append(cell);
     });
 
-    const confidence = confidenceIndex === -1 ? null : Number.parseInt(values[confidenceIndex], 10);
-    if (Number.isFinite(confidence) && questionIndex !== -1) {
+    const confidence = progressIndex === -1 ? null : Number.parseInt(values[progressIndex], 10);
+    if (Number.isFinite(confidence) && contentIndex !== -1) {
       const normalizedConfidence = Math.max(0, Math.min(100, confidence));
-      const questionCell = row.children[questionIndex];
+      const questionCell = row.children[contentIndex];
       const progress = document.createElement('span');
       progress.className = 'question-confidence';
       progress.setAttribute('role', 'progressbar');
-      progress.setAttribute('aria-label', `${normalizedConfidence}% answered`);
+      progress.setAttribute('aria-label', `${normalizedConfidence}% ${progressWord}`);
       progress.setAttribute('aria-valuemin', '0');
       progress.setAttribute('aria-valuemax', '100');
       progress.setAttribute('aria-valuenow', String(normalizedConfidence));
 
       const progressLabel = document.createElement('span');
       progressLabel.className = 'question-confidence-label';
-      progressLabel.textContent = `${normalizedConfidence}% answered`;
+      progressLabel.textContent = `${normalizedConfidence}% ${progressWord}`;
       const track = document.createElement('span');
       track.className = 'question-confidence-track';
       const fill = document.createElement('i');
@@ -124,7 +135,7 @@ function createMarkdownTable(lines, startIndex) {
     index += 1;
   }
 
-  if (isQuestionLedger) {
+  if (isEditorialLedger) {
     Array.from(body.rows)
       .sort((first, second) => Number(first.dataset.confidence) - Number(second.dataset.confidence))
       .forEach((row) => body.append(row));
@@ -134,9 +145,10 @@ function createMarkdownTable(lines, startIndex) {
 
   const wrapper = document.createElement('div');
   wrapper.className = 'markdown-table-wrap';
-  if (isQuestionLedger) {
+  if (isEditorialLedger) {
     wrapper.classList.add('question-ledger-table');
-    wrapper.setAttribute('aria-label', 'Open question table');
+    if (isContradictionLedger) wrapper.classList.add('contradiction-ledger-table');
+    wrapper.setAttribute('aria-label', isQuestionLedger ? 'Open question table' : 'Contradictions to resolve');
   } else {
     wrapper.tabIndex = 0;
     wrapper.setAttribute('role', 'region');
