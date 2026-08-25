@@ -8241,10 +8241,15 @@ a.moment-connection-card:hover {
 
   .nav-dropdown[open] {
     grid-column: 1 / -1;
+    overflow: hidden;
+    border-radius: 6px;
+    background: #18191c;
   }
 
   .nav-dropdown[open] summary {
-    background: #18191c;
+    border-radius: 6px 6px 0 0;
+    border-bottom: 1px solid #2b2d31;
+    background: transparent;
     box-shadow: none;
   }
 
@@ -8257,29 +8262,30 @@ a.moment-connection-card:hover {
   .nav-submenu {
     position: static;
     grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 3px;
+    gap: 2px;
     width: auto;
-    margin: 3px 3px 4px;
+    margin: 0;
     padding: 4px;
     border: 0;
-    border-radius: 6px;
-    background: #1e1f22;
+    border-radius: 0;
+    background: transparent;
     box-shadow: none;
     transform: none;
   }
 
   .nav-links .nav-submenu a {
     display: flex;
-    min-height: 36px;
+    min-height: 34px;
     align-items: center;
     justify-content: center;
-    padding: 6px 8px;
+    padding: 5px 8px;
     text-align: center;
   }
 
   .nav-links .nav-submenu a:first-child {
     grid-column: 1 / -1;
-    border-bottom: 1px solid #35373c;
+    border-bottom: 1px solid #2b2d31;
+    border-radius: 0;
   }
 
   .nav-submenu a small {
