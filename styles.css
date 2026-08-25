@@ -8233,14 +8233,10 @@ a.moment-connection-card:hover {
     min-height: 40px;
     justify-content: center;
     padding: 0 9px;
-    border: 1px solid rgba(88, 101, 242, .46);
     border-radius: 6px;
-    background: #2b2d31;
-    color: #f2f3f5;
+    background: #1e1f22;
     font-size: .78rem;
-    font-weight: 750;
     text-align: center;
-    box-shadow: inset 3px 0 #5865f2;
   }
 
   .nav-dropdown[open] {
@@ -8248,9 +8244,8 @@ a.moment-connection-card:hover {
   }
 
   .nav-dropdown[open] summary {
-    border-color: #8b95ff;
-    background: #35373c;
-    box-shadow: inset 0 -2px #5865f2;
+    background: #1e1f22;
+    box-shadow: none;
   }
 
   .nav-dropdown[open] ~ a[href="music.html"],
