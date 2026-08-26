@@ -7154,7 +7154,7 @@ a.moment-connection-card:hover {
   padding: 22px 18px 24px;
 }
 
-.personality-type-record {
+.character-type-record {
   --type-color: #d2a8ff;
   display: grid;
   grid-template-columns: minmax(0, 1fr) auto;
@@ -7167,14 +7167,19 @@ a.moment-connection-card:hover {
   background: #25262a;
 }
 
-.personality-type-identity {
+.character-profile-intro .character-type-record {
+  max-width: 520px;
+  margin: 0 0 18px;
+}
+
+.character-type-identity {
   display: grid;
   grid-template-columns: auto minmax(0, 1fr);
   align-items: baseline;
   gap: 4px 12px;
 }
 
-.personality-type-identity small {
+.character-type-identity small {
   grid-column: 1 / -1;
   color: #858995;
   font-size: .5rem;
@@ -7183,21 +7188,21 @@ a.moment-connection-card:hover {
   text-transform: uppercase;
 }
 
-.personality-type-identity strong {
+.character-type-identity strong {
   color: #f2f3f5;
   font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
   font-size: 1.1rem;
   letter-spacing: .05em;
 }
 
-.personality-type-identity span {
+.character-type-identity span {
   color: var(--type-color);
   font-size: .6rem;
   font-weight: 700;
   text-transform: uppercase;
 }
 
-.personality-type-status {
+.character-type-status {
   color: var(--type-color);
   font-size: .52rem;
   font-weight: 800;
@@ -7205,12 +7210,12 @@ a.moment-connection-card:hover {
   text-transform: uppercase;
 }
 
-.personality-type-suspected {
+.character-type-suspected {
   --type-color: #c79ae9;
   border-left-style: dashed;
 }
 
-.personality-type-undiscussed {
+.character-type-undiscussed {
   --type-color: #858995;
 }
 
@@ -7607,7 +7612,7 @@ a.moment-connection-card:hover {
     font-size: clamp(2.8rem, 16vw, 4.5rem);
   }
 
-  .personality-type-record {
+  .character-type-record {
     grid-template-columns: 1fr;
     gap: 8px;
   }

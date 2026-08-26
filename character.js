@@ -526,6 +526,15 @@ function renderProfile(profile) {
   document.querySelector('#character-profile-name').textContent = profile.name;
   document.querySelector('#character-profile-summary').textContent = profile.summary;
 
+  const mbti = profile.mbti ?? { type: 'XXXX', status: 'Undiscussed' };
+  const mbtiStatus = mbti.status.toLowerCase().replace(/[^a-z]+/g, '-');
+  const typeRecord = document.querySelector('#character-profile-type');
+  typeRecord.classList.add(`character-type-${mbtiStatus}`);
+  const typeIdentity = createElement('div', 'character-type-identity');
+  typeIdentity.append(createElement('small', '', 'MBTI record'), createElement('strong', '', mbti.type));
+  typeIdentity.append(createElement('span', '', mbti.detail ? mbti.detail : 'Cognitive emphasis not established'));
+  typeRecord.append(typeIdentity, createElement('span', 'character-type-status', mbti.status));
+
   const portrait = document.querySelector('#character-profile-portrait');
   portrait.classList.add(`profile-accent-${profile.accent}`);
   const portraitNote = createElement('span', 'profile-portrait-note', 'Artwork pending');
@@ -567,14 +576,6 @@ function renderProfile(profile) {
   });
 
   const personality = document.querySelector('#character-personality');
-  const mbti = profile.mbti ?? { type: 'XXXX', status: 'Undiscussed' };
-  const mbtiStatus = mbti.status.toLowerCase().replace(/[^a-z]+/g, '-');
-  const typeRecord = createElement('div', `personality-type-record personality-type-${mbtiStatus}`);
-  const typeIdentity = createElement('div', 'personality-type-identity');
-  typeIdentity.append(createElement('small', '', 'MBTI record'), createElement('strong', '', mbti.type));
-  typeIdentity.append(createElement('span', '', mbti.detail ? mbti.detail : 'Cognitive emphasis not established'));
-  typeRecord.append(typeIdentity, createElement('span', 'personality-type-status', mbti.status));
-  personality.append(typeRecord);
   if (profile.personalitySummary) personality.append(createElement('p', 'personality-summary', profile.personalitySummary));
   renderSkillGraph(profile, personality);
   const traitNotes = createElement('div', 'personality-notes');
