@@ -1,10 +1,10 @@
 # Questions to Be Answered
 
-This is the author's living editorial ledger. It records uncertainties that still matter to the story after comparison with the current site. Each unresolved question carries a confidence score based only on confirmed material. Answers belong in the wider site architecture, not in this table. Questions that have been answered, made redundant, or reduced to a detail with no clear story value are removed.
+This is the author's living editorial ledger. It separates unresolved canon questions from questions that determine placement on the shared Story and character timelines. Each unresolved question carries a confidence score based only on confirmed material. Answers belong in the wider site architecture, not in these tables. Questions that have been answered, made redundant, or reduced to a detail with no clear story value are removed.
 
-## Open question table
+## Current questions
 
-Rows are ordered from least answered to most answered. Questions at 100% are removed once their answers have been integrated into the wider site.
+Story, character, world, relationship, institution, location, and event questions are ordered from least answered to most answered. Questions at 100% are removed once their answers have been integrated into the wider site.
 
 | Area | Question | Confidence |
 | --- | --- | --- |
@@ -12,12 +12,10 @@ Rows are ordered from least answered to most answered. Questions at 100% are rem
 | Helena | Is Helena a Magus, and what access, allies, or leverage allow her to operate inside the hidden magical conflict? | 0% |
 | Lynleit | How is Fionn killed, who discovers the death, and what evidence is manufactured or misread to frame Lynleit convincingly enough for exile? | 0% |
 | Family | Who is the reliable distant relative trusted with Lynleit and Kyrien's son, and what does that person know about the child's parents? | 0% |
-| Family | When, if ever, does Kyrien learn that Lynleit bore his son, and what does that revelation do to their relationship and his leadership of MSF? | 0% |
 | Family | Does Lynleit and Kyrien's son inherit the blue-flame lineage, another magical ability, or no Magus talent at all? | 0% |
 | Spill inquiry | Which wiser people does Lynleit consult, and what do they teach her about the Spill's origin? | 0% |
 | Opening chapter | What are Fionn and Lynleit negotiating with the Church before dawn, how does it relate to the first disappearances, and why does Lynleit leave irritated? | 0% |
 | MSF | What are Felix and Reiner's distinct operational specialties beyond their shared role as Lynleit's friends and personal bodyguards? | 0% |
-| Moment | Where does the family-house cat chase sit in the crisis chronology, who else is present, and what private aspect of Lynleit or her family does it reveal? | 0% |
 | Location | What is Port City's proper name, and which story or institutional thread makes the western gateway relevant? | 0% |
 | Government | Does the proposed Council of State actually exist, and what constitutional work belongs to it rather than Parliament, Cabinet, the courts, or the Privy Council? | 0% |
 | MSF | How is MSF funded, recruited, divided into departments and ranks, and authorized to operate across ordinary intelligence and magical threats? | 0% |
@@ -34,7 +32,6 @@ Rows are ordered from least answered to most answered. Questions at 100% are rem
 | Magiarchy | Which church authorities recognized Fionn as Magiarch, and how is that secret office handled inside multi-confessional Narvea? | 5% |
 | The Church | How do Orthodox and Catholic special envoys differ in method and ethics, and which hierarchies exercise practical authority inside Narvea? | 5% |
 | Institutions | How do the Narvean Police, Magic Academy, and private investigators formally relate to MSF before and after the hidden world becomes known to them? | 5% |
-| Timeline | How much time passes between the first disappearance, the park quarantine, Kyrien's early recruitment, Fionn's much later assassination, Helena's takeover, and Lynleit's exile? | 10% |
 | The Church | What operational specialization and delegated authority does Father Mikhail hold as a special envoy? | 10% |
 | Core mystery | What does each faction involved in the hidden conspiracy want from Fionn, MSF, the Spill, or Narvea? | 10% |
 | Kyrien | What authority allows Lynleit to control Kyrien's interrogation, and what cover story conceals his conditional release from the police and everyone outside Lynleit, Felix, and Reiner? | 10% |
@@ -52,15 +49,25 @@ Rows are ordered from least answered to most answered. Questions at 100% are rem
 | Holumns | How do Holumns make victims disappear, where are those victims taken, and can any of them return? | 20% |
 | MSF | What legal charter, oversight mechanism, and command structure give MSF authority while allowing Helena, Lynleit, and later Kyrien to claim its director seat? | 20% |
 | Magic Academy | How are students admitted and trained, who governs the Academy, and what formal accountability connects its lineage funders, Magi professors, the Magiarchy, and the churches? | 20% |
-| Timeline | Exactly how many years pass between Lynleit's disappearance and return, and how old is her and Kyrien's son when she reappears? | 25% |
 | Core mystery | Who is the first missing man, how does he cause the Spill, and is he acting for the conspiracy, being manipulated by it, or creating an independent crisis that others exploit? | 30% |
 | Core mystery | Who ultimately orders Fionn's assassination, and which criminal Magi, rival Magiarchates, church actors, or infiltrators knowingly or unknowingly contribute to it? | 30% |
 | Resolution | What settles Helena's control of MSF and the political crisis if the Spill itself is never fully contained? | 30% |
 | Characters | What surnames belong to the cast, which characters intentionally use only one name, and what age bands remain undefined for Reiner, Tien, Lester, Myka, Inspector Leo, and Father Mikhail? | 30% |
-| Relationship | When and where does Lynleit reveal Kyrien's recruitment to Felix and Reiner, and what exact objections shape their response after she explains the strategic need? | 35% |
 | The Church | How do the Church and Magiarchy decide which suppression measure to use, what form must Church sanction take, and where does containment become murder? | 35% |
 | Magiarchy | What rules define a fitness contest, duel, or sanctioned war, and who decides that the result is legitimate? | 35% |
 | Kyrien | Who is the Magus politician targeted by Kyrien, what office do they hold, what exact role did they play in his father's death, and how does their survival later harm Lynleit? | 40% |
 | Relationship | Beyond the drenched river aftermath and the hotel-room refuge, which additional shared ordeals complete Lynleit and Kyrien's movement from coerced alliance into trust and intimacy? | 40% |
 | Covert alliance | Which MSF resources do Drake and Sherie request, what concessions or favors do they offer, and what operational limits does Lynleit impose on the hilltop agreement? | 50% |
-| Relationship | What final pre-battle circumstances make Lynleit and Kyrien's first sexual encounter feel unavoidable, is it the conception of their son, and how does Lynleit conceal the resulting pregnancy before disappearing? | 50% |
+
+## Chronology questions
+
+These questions determine sequence, event placement, reveal timing, or elapsed time on the shared Story and character timelines. They are ordered independently from least answered to most answered.
+
+| Area | Question | Confidence |
+| --- | --- | --- |
+| Family | When, if ever, does Kyrien learn that Lynleit bore his son, and where does that revelation belong in relation to Lynleit's elusive return and his leadership of MSF? | 0% |
+| Moment | Where does the family-house cat chase sit in the crisis chronology, who else is present, and what private aspect of Lynleit or her family does it reveal? | 0% |
+| Timeline | How much time passes between the first disappearance, the park quarantine, Kyrien's early recruitment, Fionn's much later assassination, Helena's takeover, and Lynleit's exile? | 10% |
+| Timeline | Exactly how many years pass between Lynleit's disappearance and return, and how old is her and Kyrien's son when she reappears? | 25% |
+| Relationship | When and where does Lynleit reveal Kyrien's recruitment to Felix and Reiner, and how long before Fionn's assassination does that disclosure occur? | 35% |
+| Relationship | When before the first arc's closing battle do Lynleit and Kyrien first have sex, is that encounter the conception of their son, and how much time passes before Lynleit disappears? | 50% |
