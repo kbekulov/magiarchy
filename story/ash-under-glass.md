@@ -1,19 +1,25 @@
-# Chapter 02: Ash Under Glass
+# Chapter 02: The Last Man Out
 
-> Placeholder draft. Replace this chapter when final story material is available.
+> Placeholder draft built from confirmed quarantine events. Exact action, dialogue, and the force inside the park remain undefined.
 
-## Quarantine
+## The Public Cordon
 
-Heyk crossed into the sealed district before sunrise. The streets were empty, but ash moved beneath the glass storefronts as if something below them was breathing.
+The park cannot be erased from public attention. Citizens vanish first. Private investigators and police officers disappear when they go looking for them. Families know who has not come home, and the absence of bodies makes every ordinary explanation less convincing.
 
-Sherie kept the route open from the operations room. Drake watched the same map and quietly removed every exit that command believed was secure.
+Police enforce the first quarantine to prevent more people from entering. Gas, poison, or another harmful substance remains possible, but no theory explains why nothing is recovered.
 
-## Extraction
+Eventually the government seals the park even from the police.
 
-The target was alive, frightened, and carrying a memory that did not belong to him. Every time he spoke, another window turned black.
+## The Unit
 
-Heyk could save the target or preserve the quarantine. The official plan did not allow both.
+Captain Heyk enters with a specially equipped paramilitary unit tasked with investigating the park in full protective gear. They expect an environmental hazard, a criminal operation, or something else that training can name.
 
-## End Record
+The unit is massacred by forces Heyk cannot understand or explain.
 
-Drake sent a new route with no authorization code. Sherie opened the gate for exactly eleven seconds. Heyk returned alone, carrying a sealed glass case full of warm ash.
+He becomes the sole survivor.
+
+## The Evacuation
+
+The Ducal Guard removes Heyk from the park under Drake's orders. What warning reaches Drake, how the evacuation succeeds, and what follows Heyk out remain unresolved.
+
+Heyk survives with grief for the squad he lost and no language adequate to describe the cause. He is later recruited into the Ducal Guard as a field agent and bodyguard serving Drake and Sherie's interests.

@@ -4,15 +4,15 @@
     "code": "MOM-001",
     "title": "After the Failed Attempt",
     "status": "Scene seed",
-    "placementStatus": "Provisional placement",
-    "timelinePhase": "unknowing-convergence",
-    "timelineLabel": "Unknowing Convergence",
+    "placementStatus": "Early chronology confirmed",
+    "timelinePhase": "the-hidden-wager",
+    "timelineLabel": "The Hidden Wager",
     "sequence": 1,
     "sceneType": "Confrontation",
     "thread": "Lynleit and Kyrien",
     "location": "Police office",
     "summary": "Lynleit interrogates Kyrien after his failed attempt to assassinate a Magus politician, then converts his prison risk into a secret recruitment.",
-    "purpose": "Creates the coercive bargain that begins Kyrien's hidden association with MSF and marks the decision that will become Lynleit's first deeply anti-protocol compartment. It also leaves a surviving Magus politician whose later retaliation reaches Lynleit.",
+    "purpose": "Creates the coercive bargain that begins Kyrien's hidden association with MSF in the first few chapters. Lynleit accepts the risk because she senses danger approaching before she can prove its shape. The decision also leaves a surviving Magus politician whose later retaliation reaches her.",
     "characters": [
       { "name": "Lynleit", "slug": "lynleit" },
       { "name": "Kyrien", "slug": "kyrien" }
@@ -28,6 +28,8 @@
       "Kyrien faces prison unless he agrees to become Lynleit's secret helper.",
       "His freedom remains conditional on accepting Lynleit's demands, leaving him confined to her whims.",
       "Lynleit's private strategy is to keep Kyrien as a secret trump card against Helena.",
+      "The recruitment occurs within the first few chapters, well before Fionn's assassination.",
+      "Lynleit acts because her intuition warns her of near-future danger before she has enough evidence to define it.",
       "Lynleit is Fionn's biological daughter. Helena is Lynleit's stepmother and Fionn's wife.",
       "Lynleit already suspects Helena of being an enemy despite that family relationship.",
       "Kyrien's father held an important position in Narvea's military.",
@@ -45,24 +47,24 @@
       "Which suspicious acts did Lynleit witness Helena performing?"
     ],
     "continuityBefore": "Kyrien's father's death, the politician's involvement, and the military knowledge behind the attempt still need connective scenes.",
-    "continuityAfter": "Kyrien enters Lynleit's service unwillingly. Lynleit must later decide who, if anyone, can be trusted with the secret. The arrangement preserves Kyrien as hidden leverage against Helena, but the surviving Magus politician can now threaten them both.",
-    "chapterSlug": null,
-    "updated": "2026-08-24"
+    "continuityAfter": "Kyrien enters Lynleit's service unwillingly. Lynleit must later decide who, if anyone, can be trusted with the secret. The arrangement preserves him as hidden leverage against Helena through the early investigation. Fionn's much later assassination vindicates Lynleit's warning without proving that she understood its source.",
+    "chapterSlug": "after-the-failed-attempt",
+    "updated": "2026-08-25"
   },
   {
     "slug": "the-secret-third-ally",
     "code": "MOM-008",
     "title": "The Secret Third Ally",
     "status": "Scene chain",
-    "placementStatus": "Provisional placement",
-    "timelinePhase": "unknowing-convergence",
-    "timelineLabel": "Unknowing Convergence",
+    "placementStatus": "Early chronology confirmed",
+    "timelinePhase": "the-hidden-wager",
+    "timelineLabel": "The Hidden Wager",
     "sequence": 1.5,
     "sceneType": "Trust test",
     "thread": "Lynleit's hidden circle",
     "location": "Unspecified location",
     "summary": "Lynleit eventually tells only Felix and Reiner that she has recruited Kyrien as an unknown ally and possible trump card against Helena, keeping the decision hidden even from Fionn.",
-    "purpose": "Defines Lynleit's first deeply anti-protocol MSF decision, turns secrecy into an advantage over Helena, and establishes the split between Reiner's trust in Lynleit's judgment and Felix's lasting distrust of Kyrien.",
+    "purpose": "Defines Lynleit's first deeply anti-protocol MSF decision early in the story, turns secrecy into an advantage over Helena, and establishes the split between Reiner's trust in Lynleit's judgment and Felix's lasting distrust of Kyrien.",
     "characters": [
       { "name": "Lynleit", "slug": "lynleit" },
       { "name": "Kyrien", "slug": "kyrien" },
@@ -80,6 +82,8 @@
       "Felix and Reiner are already Lynleit's close, long-standing friends before the story begins, not subordinates who become her friends during this crisis.",
       "Lynleit eventually confines Kyrien's recruitment to Felix and Reiner and does not inform even Fionn.",
       "This is Lynleit's first deeply anti-protocol MSF decision, made with strong intuitive conviction.",
+      "Fionn's assassination is still far ahead when the compartment is created.",
+      "The later assassination validates Lynleit's sense of approaching danger, although it does not prove she foresaw the event itself.",
       "Felix and Reiner both regard Kyrien as a possible threat to Lynleit, especially when neither bodyguard is near her.",
       "Reiner accepts the arrangement because he chooses to trust Lynleit's judgment.",
       "Felix accepts only after Reiner's decision leaves him in the minority.",
@@ -95,8 +99,8 @@
     ],
     "continuityBefore": "Lynleit has already coerced Kyrien into service after the failed assassination attempt, but the arrangement initially exists only between handler and asset.",
     "continuityAfter": "Reiner becomes the stabilizing vote that permits the compartment to continue. Felix complies without trust, creating recurring friction with Kyrien and forcing Lynleit to defend the judgment on which the entire imbalance depends.",
-    "chapterSlug": null,
-    "updated": "2026-08-24"
+    "chapterSlug": "after-the-failed-attempt",
+    "updated": "2026-08-25"
   },
   {
     "slug": "the-cat-in-the-family-house",
@@ -217,22 +221,26 @@
     "sequence": 3,
     "sceneType": "Covert alliance",
     "thread": "The suspected coup",
-    "location": "Unspecified meeting place",
-    "summary": "Sherie arranges and leads an illegal meeting between Drake and Lynleit, seeking MSF assistance without the knowledge of the national government or Ducal Court.",
+    "location": "A hill overlooking Vilen",
+    "summary": "At night on a hill overlooking Vilen, Sherie leads an illegal negotiation in which Drake seeks limited access to MSF resources without surrendering sensitive evidence.",
     "purpose": "Binds the government and MSF investigations together through an alliance that is politically dangerous before anyone understands that the underlying threat is magical. It is Sherie's first independent diplomatic success, not a transfer of Drake's wider role as the story's primary strategic mind.",
     "characters": [
       { "name": "Drake", "slug": "drake" },
       { "name": "Sherie", "slug": "sherie" },
       { "name": "Lynleit", "slug": "lynleit" },
       { "name": "Felix", "slug": "felix" },
-      { "name": "Kyrien", "slug": "kyrien" }
+      { "name": "Reiner", "slug": "reiner" },
+      { "name": "Kyrien", "slug": "kyrien" },
+      { "name": "Heyk", "slug": "heyk" }
     ],
     "characterAnchors": [
       { "slug": "drake", "beat": "The Illegal Partnership" },
       { "slug": "sherie", "beat": "Leading the Meeting" },
       { "slug": "lynleit", "beat": "The Heir Apparent" },
       { "slug": "felix", "beat": "No Trust for Kyrien" },
-      { "slug": "kyrien", "beat": "Alliance under Pressure" }
+      { "slug": "reiner", "beat": "Watching Kyrien" },
+      { "slug": "kyrien", "beat": "Alliance under Pressure" },
+      { "slug": "heyk", "beat": "The Offer after Survival" }
     ],
     "known": [
       "Sherie believes her uncle when the Court does not.",
@@ -243,19 +251,23 @@
       "After the negotiation succeeds, Sherie asks Drake to praise and pamper her for her first achievement.",
       "Drake still cannot decide whether an alliance with Lynleit is a strategic advantage or a dangerous mistake.",
       "Drake remains the story's main strategic mind before and after this event.",
+      "The meeting takes place at night on a hill overlooking Vilen.",
+      "Drake does not hand sensitive evidence to people outside the aristocratic circle. He and Sherie request access to selected MSF resources and capabilities in exchange for concessions or favors.",
+      "Sherie and Drake bring Heyk as their bodyguard and confidant.",
+      "Lynleit brings Felix, Reiner, and Kyrien as her bodyguards and confidants.",
+      "The main negotiation belongs to Lynleit, Sherie, and a reluctant Drake, while the others contribute opinions and warnings.",
       "Lynleit regards the request as dangerous.",
       "Felix openly protests, while Kyrien stays silent and tests the suspected conspiracy against his own past grievances."
     ],
     "openQuestions": [
-      "Where can all five participants meet without surveillance?",
-      "What evidence does Drake bring to Lynleit?",
-      "What precise limits does Lynleit place on MSF involvement?",
+      "What concessions or favors do Drake and Sherie offer for access to MSF resources?",
+      "Which precise MSF capabilities do they request, and what operational limits does Lynleit impose?",
       "What would finally convince Drake that the alliance should be preserved or abandoned?"
     ],
     "continuityBefore": "Sherie must persuade Drake that Lynleit is worth the legal and political danger of contact.",
     "continuityAfter": "Sherie claims praise and pampering for her success while Drake remains uncertain about what she has created. The private agreement then produces a narrow intelligence operation focused on a suspected shipment rather than an arrest or seizure.",
     "chapterSlug": null,
-    "updated": "2026-08-23"
+    "updated": "2026-08-26"
   },
   {
     "slug": "the-boat-beneath-the-bridge",
@@ -299,6 +311,130 @@
     "continuityAfter": "Lynleit must decide what to tell the scattered team, Drake, and Sherie now that the investigation points toward Magi.",
     "chapterSlug": null,
     "updated": "2026-08-23"
+  },
+  {
+    "slug": "the-park-unit-is-lost",
+    "code": "MOM-009",
+    "title": "The Last Man out of the Park",
+    "status": "Key scene",
+    "placementStatus": "Core chronology confirmed",
+    "timelinePhase": "the-quarantine",
+    "timelineLabel": "The Quarantine",
+    "sequence": 3,
+    "sceneType": "Failed containment",
+    "thread": "The Vilen quarantine",
+    "location": "The quarantined park in Vilen",
+    "summary": "A specially equipped paramilitary unit enters the sealed park and is massacred by forces it cannot understand. Captain Heyk becomes the sole survivor.",
+    "purpose": "Turns a public missing-person crisis into a state-level containment failure and gives Heyk the grief, access, and personal motive that carry him into Drake and Sherie's service.",
+    "characters": [
+      { "name": "Heyk", "slug": "heyk" },
+      { "name": "Drake", "slug": "drake" },
+      { "name": "Sherie", "slug": "sherie" }
+    ],
+    "characterAnchors": [
+      { "slug": "heyk", "beat": "The Last Man out of the Park" },
+      { "slug": "drake", "beat": "A Coup without a Source" },
+      { "slug": "sherie", "beat": "The Secret Proposal" }
+    ],
+    "known": [
+      "The park quarantine follows the disappearances of citizens, private investigators, and police officers.",
+      "Police enforce the first closure before the park is sealed even from them.",
+      "The government deploys specially equipped paramilitary units to investigate the whole park.",
+      "The unit commanded by Captain Heyk is massacred by forces he cannot understand or explain.",
+      "Heyk is the sole survivor.",
+      "The Ducal Guard evacuates him briefly under Drake's orders.",
+      "He is subsequently recruited into the Ducal Guard as a field agent and bodyguard serving Drake and Sherie's interests.",
+      "His continuing motive is grief for the squad he lost."
+    ],
+    "openQuestions": [
+      "What does Heyk perceive during the massacre, and which parts of his account can he articulate?",
+      "Why does Drake have enough warning or access to order the Ducal Guard evacuation?",
+      "What evidence, equipment, or injury leaves the park with Heyk?"
+    ],
+    "continuityBefore": "The public already knows that people are missing. Gas, poison, or another harmful substance remains a possible explanation, although no bodies have been recovered.",
+    "continuityAfter": "Heyk enters Drake and Sherie's orbit carrying grief, survivor knowledge, and direct experience that no official material explanation can fully contain.",
+    "chapterSlug": "ash-under-glass",
+    "updated": "2026-08-26"
+  },
+  {
+    "slug": "students-beyond-the-cordon",
+    "code": "MOM-010",
+    "title": "Beyond the Cordon",
+    "status": "Scene seed",
+    "placementStatus": "Phase confirmed, exact timing open",
+    "timelinePhase": "the-quarantine",
+    "timelineLabel": "The Quarantine",
+    "sequence": 2,
+    "sceneType": "Civilian trespass",
+    "thread": "The Vilen quarantine",
+    "location": "The quarantined park in Vilen",
+    "summary": "Criminology student Hiyu enters the quarantined park in search of proof and drags his fellow student Yulia into the risk.",
+    "purpose": "Gives the public-facing investigation a reckless civilian thread and turns academic certainty into direct exposure to the Spill.",
+    "characters": [
+      { "name": "Hiyu", "slug": "hiyu" },
+      { "name": "Yulia", "slug": "yulia" }
+    ],
+    "characterAnchors": [
+      { "slug": "hiyu", "beat": "Beyond the Cordon" },
+      { "slug": "yulia", "beat": "Dragged into the Park" }
+    ],
+    "known": [
+      "Hiyu and Yulia are university students in their mid-twenties who study criminology.",
+      "Hiyu is convinced he understands part of the case but believes he needs evidence from inside the park.",
+      "He draws Yulia into entering the quarantined area with him."
+    ],
+    "openQuestions": [
+      "How do they bypass the cordon?",
+      "What does Hiyu believe is happening before they enter?",
+      "What do they find, and how do they survive or escape?",
+      "Does Yulia enter willingly or only realize the full plan too late?"
+    ],
+    "continuityBefore": "The widening disappearance case gives Hiyu enough fragments to become overconfident in his theory.",
+    "continuityAfter": "Whatever they witness must connect two civilian students to the larger institutional response without giving them immediate certainty about magic.",
+    "chapterSlug": null,
+    "updated": "2026-08-26"
+  },
+  {
+    "slug": "shelter-after-the-accusation",
+    "code": "MOM-011",
+    "title": "Shelter after the Accusation",
+    "status": "Key relationship scene",
+    "placementStatus": "Core placement confirmed",
+    "timelinePhase": "clear-her-name",
+    "timelineLabel": "Clear Her Name",
+    "sequence": 1,
+    "sceneType": "Non-sexual intimacy",
+    "thread": "Lynleit and Kyrien",
+    "location": "Kyrien's hotel-room hideout",
+    "summary": "After escaping pursuit and the accusation surrounding Fionn's death, Lynleit reaches Kyrien's hotel-room hideout and finally loses the composure that carried her through the immediate crisis.",
+    "purpose": "Develops intimacy through safety, grief, and functional care before the relationship becomes sexual, showing how repeated crises turn a coerced alliance into emotional reliance.",
+    "characters": [
+      { "name": "Lynleit", "slug": "lynleit" },
+      { "name": "Kyrien", "slug": "kyrien" }
+    ],
+    "characterAnchors": [
+      { "slug": "lynleit", "beat": "A War from Exile" },
+      { "slug": "kyrien", "beat": "Alliance under Pressure" }
+    ],
+    "known": [
+      "Lynleit acts rationally and efficiently during the accusation and escape.",
+      "Her emotions surface only after she reaches safety in Kyrien's hotel room.",
+      "She stays the night.",
+      "There is no sexual interaction between them.",
+      "Kyrien holds her while she falls asleep.",
+      "Their earlier intimate encounters are non-sexual and often arise from isolation, danger, cold, near drowning, or emotional rupture.",
+      "Later sexual intimacy is not deliberately pursued. It develops as something emotionally unavoidable, but its exact point in the story remains open."
+    ],
+    "openQuestions": [
+      "How does Lynleit locate the hideout without leading pursuit to Kyrien?",
+      "What does she say once her composure breaks?",
+      "What changes between them the following morning?",
+      "Which earlier crisis first establishes physical trust between them?"
+    ],
+    "continuityBefore": "Helena has used Fionn's death to frame Lynleit, forcing her to rely on the secret ally she recruited long before the danger became visible.",
+    "continuityAfter": "Their bond remains non-sexual at this point, but it becomes a private source of safety that later intimacy can grow from without feeling sudden or sought for its own sake.",
+    "chapterSlug": null,
+    "updated": "2026-08-26"
   },
   {
     "slug": "fionn-is-eliminated",

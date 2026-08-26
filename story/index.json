@@ -21,23 +21,44 @@
   {
     "slug": "ash-under-glass",
     "number": "Chapter 02",
-    "title": "Ash Under Glass",
+    "title": "The Last Man Out",
     "status": "Placeholder draft",
     "file": "ash-under-glass.md",
-    "updated": "2026-08-22",
-    "description": "Heyk enters a sealed district while Drake and Sherie manage an extraction that was never meant to be clean.",
+    "updated": "2026-08-26",
+    "description": "Captain Heyk leads a specially equipped unit into Vilen's sealed park and becomes its sole survivor.",
     "characters": ["Heyk", "Drake", "Sherie"],
     "timelinePhase": "the-quarantine",
     "timelineLabel": "The Quarantine",
     "events": [
-      "Heyk enters a quarantined district where ash moves beneath the streets.",
-      "The extraction target reveals a memory that does not belong to him.",
-      "Drake and Sherie create an unauthorized route for Heyk's return."
+      "Public disappearances force police to close the park before the government seals it even from them.",
+      "Captain Heyk leads a specially equipped paramilitary unit into the park.",
+      "Forces the unit cannot understand or explain massacre the squad.",
+      "Heyk becomes the sole survivor and is evacuated by the Ducal Guard under Drake's orders.",
+      "Grief for his squad follows him into a new role as a Ducal Guard field agent and bodyguard serving Drake and Sherie."
+    ]
+  },
+  {
+    "slug": "after-the-failed-attempt",
+    "number": "Chapter 03",
+    "title": "After the Failed Attempt",
+    "status": "Placeholder draft",
+    "file": "after-the-failed-attempt.md",
+    "updated": "2026-08-25",
+    "description": "After a failed political assassination, Lynleit converts Kyrien's prison risk into a secret alliance that even Fionn cannot know about.",
+    "characters": ["Lynleit", "Kyrien", "Felix", "Reiner"],
+    "timelinePhase": "the-hidden-wager",
+    "timelineLabel": "The Hidden Wager",
+    "events": [
+      "Kyrien's attempt on a politician fails because the target secretly belongs to the Magi world.",
+      "Lynleit takes control of his interrogation and offers conditional freedom in exchange for becoming her secret helper.",
+      "She recruits him because her intuition warns her that a danger she cannot yet identify is approaching.",
+      "Lynleit later tells only Felix and Reiner, while even Fionn remains outside the compartment.",
+      "Reiner trusts Lynleit's judgment, while Felix accepts the decision without trusting Kyrien."
     ]
   },
   {
     "slug": "the-name-left-behind",
-    "number": "Chapter 03",
+    "number": "Chapter 04",
     "title": "The Name Left Behind",
     "status": "Placeholder draft",
     "file": "the-name-left-behind.md",

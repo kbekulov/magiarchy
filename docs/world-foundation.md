@@ -6,6 +6,8 @@ Magic comes from inside reality, not outside it. Psyche and soul are part of how
 
 Magi can see the weak points created by that pressure. They do not invent miracles from nothing. They find something reality was already capable of doing, then push it.
 
+That practice is lawful magecraft. Miracle-making belongs to a separate and forbidden category: acts that resemble wizardry or imitate sacred deeds associated with Jesus, saints, saviours, and other religious figures. The Church can condemn such an act even when its immediate effect appears harmless.
+
 > A Magus sees the loopholes everyone else lives around.
 
 ## When Nightmares Become Physical

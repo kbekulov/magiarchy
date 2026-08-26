@@ -1,4 +1,4 @@
-# Chapter 03: The Name Left Behind
+# Chapter 04: The Name Left Behind
 
 > Placeholder draft. Replace this chapter when final story material is available.
 

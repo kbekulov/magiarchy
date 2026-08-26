@@ -94,7 +94,7 @@ A separate Council of State may bridge Crown and government through constitution
 
 Narvea retains its own hierarchy of court and civil ranks. Rank determines precedence and status, but does not necessarily describe a person's actual job. A State Councillor might serve as an ambassador, judge, governor, rector, or senior ministry official.
 
-Drake holds the rank of State Councillor. His unusually close friendship with the Duke gives him exceptional personal access and occasional forgiveness, but has also made him deeply unpopular at Court, where he is derided as the Duke's favorite boy.
+Drake holds the rank of State Councillor and the office of Official for Special Assignments. The office makes him an elite executive troubleshooter attached to a high-ranking personal office rather than a routine administrator. He can carry delegated authority into confidential criminal investigations, political counter-espionage, emergency corruption audits, and diplomatic errands. His unusually close friendship with the Duke gives him exceptional personal access and occasional forgiveness, but has also made him deeply unpopular at Court, where he is derided as the Duke's favorite boy.
 
 ## Cultural character
 

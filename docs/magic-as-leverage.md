@@ -4,6 +4,16 @@
 
 Magic does not break natural law. It applies pressure from inside it.
 
+## Magecraft and miracle-making
+
+The hidden world distinguishes ordinary magecraft from miracle-making.
+
+Magecraft, including thaumaturgy, works through the structure already present in reality. A Magus applies pressure, exploits a seam, or manipulates a condition that natural law can still permit.
+
+Miracle-making resembles wizardry in the religious imagination. It imitates or mocks acts associated with Jesus, saints, saviours, and other sacred figures. The Church judges such acts by their form and symbolic claim, not only by the immediate harm they cause.
+
+This is why walking on water is forbidden. The ability may be harmless in use, but it reproduces a sacred miracle closely enough to cross a boundary the Church enforces severely. If Lynleit's accidental talent became known, she would face strong punishment rather than tolerance.
+
 A Magus cannot invent a new rule for reality. They find an existing seam, weakness, or point of strain and use it deliberately. Fire can be encouraged to start. Attention can be sharpened. Matter can be weakened. Perception can be redirected. None of this comes from nothing.
 
 > Creation belongs to gods. Magi manipulate what is already there.

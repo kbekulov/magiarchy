@@ -4,7 +4,7 @@
     "title": "Questions to Be Answered",
     "topic": "Editorial Ledger",
     "file": "questions-to-be-answered.md",
-    "updated": "2026-08-25",
+    "updated": "2026-08-26",
     "description": "A confidence-tracked table of story, character, world, relationship, event, location, and timeline questions, maintained as the canon develops.",
     "speakers": ["Author's Desk"]
   },
@@ -13,7 +13,7 @@
     "title": "Contradictions to Resolve",
     "topic": "Editorial Ledger",
     "file": "contradictions-to-resolve.md",
-    "updated": "2026-08-25",
+    "updated": "2026-08-26",
     "description": "A resolution-tracked list of places where current story, character, world, or timeline records cannot all be read literally at the same time.",
     "speakers": ["Author's Desk"]
   },
@@ -41,7 +41,7 @@
     "title": "How the Hidden World Works",
     "topic": "World Foundation",
     "file": "world-foundation.md",
-    "updated": "2026-08-22",
+    "updated": "2026-08-26",
     "description": "A direct guide to magic, Holumns, hidden history, political balance, and the setting's central conflict.",
     "speakers": ["World Archive"]
   },
@@ -50,7 +50,7 @@
     "title": "Magic Is Leverage, Not Omnipotence",
     "topic": "Magic Doctrine",
     "file": "magic-as-leverage.md",
-    "updated": "2026-08-22",
+    "updated": "2026-08-26",
     "description": "A practical guide to magical mechanics, internal and external practice, limitations, nightmares, and the need for control.",
     "speakers": ["Magistry Archive"]
   }
