@@ -1,14 +1,14 @@
 const profileSeeds = [
   {
     slug: 'lynleit', name: 'Lynleit', code: 'MSF · 001', role: 'Fionn\'s biological daughter and displaced heir', ageBand: 'Late twenties', factions: ['MSF', 'Magiarchy'], mbti: { type: 'ENFJ', detail: 'strong Ni', status: 'Confirmed' }, accent: 'blue', materialStatus: 'Canon traits + mock details',
-    summary: 'Fionn\'s biological daughter and Helena\'s stepdaughter, Lynleit is an ENFJ (strong Ni) leader whose people-first instinct is sharpened by unusually strong long-range intuition.',
+    summary: 'Fionn\'s biological daughter and Helena\'s stepdaughter, Lynleit is a people-first leader whose responsibility is sharpened by unusually strong long-range intuition.',
     visual: 'A long tailored blue coat over a pale high-collared blouse with a narrow black ribbon, paired with high-waisted black shorts, dark tights, and tall black lace-up boots', palette: 'Midnight blue, black, white, cold cyan',
     residenceNote: 'The family home is a three-floor house on a hill above the city river. During her school years, Lynleit requested the third-floor bedroom so she could gaze into the distance while doing homework.',
     appearanceDetails: [
       ['Signature silhouette', 'Long structured outerwear frames a compact, practical lower silhouette. The contrast between formal tailoring and movement-ready shorts and boots is the recognizable core of her wardrobe.'],
       ['Variation rule', 'Other outfits may change the coat length, layers, or degree of formality, but usually preserve a blue tailored outer layer, a pale blouse, restrained black detailing, and tall practical footwear.']
     ],
-    personalitySummary: 'Lynleit can read hidden structures with an inward precision that resembles an INFJ, but priority defines her. When pressure becomes real, she moves toward people, assumes responsibility, and measures strategy by its human consequences. Her warmth is deliberate and structurally aware rather than exuberant.',
+    personalitySummary: 'Lynleit reads hidden structures with an inward, private precision, but priority defines her. When pressure becomes real, she moves toward people, assumes responsibility, and measures strategy by its human consequences. Her warmth is deliberate and structurally aware rather than exuberant.',
     traits: [
       { label: 'Relational leadership', score: 95, note: 'Her first instinct in crisis is to read trust, morale, legitimacy, shared burden, and the emotional field around her.' },
       { label: 'Strategic foresight', score: 92, note: 'Her unusually strong intuition identifies long-range patterns and what events are becoming before most people can name the change.' },
@@ -26,7 +26,7 @@ const profileSeeds = [
   },
   {
     slug: 'kyrien', name: 'Kyrien', code: 'IND · 002', role: 'Independent operator and reluctant director', ageBand: 'Late twenties', factions: ['Independent', 'MSF'], affiliationTimeline: [{ name: 'Independent', stage: 'Opening' }, { name: 'MSF', stage: 'Later director' }], mbti: { type: 'INTJ', detail: 'strong Te', status: 'Confirmed' }, accent: 'amber', materialStatus: 'Canon traits + mock details',
-    summary: 'An INTJ (strong Te) non-Magus who survives deeper contact with magic by mastering the intelligence-operative disciplines that Magi are most likely to underestimate.',
+    summary: 'A non-Magus who survives deeper contact with magic by mastering the intelligence-operative disciplines that Magi are most likely to underestimate.',
     visual: 'Practical layers, concealed tools, and a silhouette built for movement', palette: 'Charcoal, muted amber, worn steel, off-white',
     personalitySummary: 'Kyrien processes danger by building a working model of it. When evidence is incomplete, he is more likely to test hidden connections in silence than join the room\'s immediate reaction. Personal grievances can sharpen that analysis, but also give it a dangerous point of fixation.',
     traits: [
@@ -106,7 +106,7 @@ const profileSeeds = [
     slug: 'felix', name: 'Felix', code: 'ARC · 009', role: 'MSF officer, friend, and personal bodyguard', ageBand: 'Late twenties', factions: ['MSF'], mbti: { type: 'XXFP', status: 'Partial' }, accent: 'neutral', materialStatus: 'Canon relationship + mock details',
     summary: 'Lynleit\'s playful friend and Fionn-trusted bodyguard, Felix specializes in hacking and communications, approaching operations like a knight that reaches its objective through unexpected angles.',
     visual: 'Loose fieldwear, fast movement, a compact communications kit, and one bright accent against neutral equipment', palette: 'Grey, black, bright blue, rust orange',
-    personalitySummary: 'Felix is clearly xxFP in temperament: playful, improvisational, flirtatious, and willing to test a rule simply to discover whether it deserves obedience. His technical work follows the same pattern. He prefers indirect entry, unusual routes, and sudden changes of angle, making him the knight to Reiner\'s rook.',
+    personalitySummary: 'Felix is playful, improvisational, flirtatious, and willing to test a rule simply to discover whether it deserves obedience. His technical work follows the same pattern. He prefers indirect entry, unusual routes, and sudden changes of angle, making him the knight to Reiner\'s rook.',
     traits: [
       { label: 'Playful flirt', note: 'He turns tension into teasing, tests reactions openly, and treats charm as both genuine expression and useful disruption.' },
       { label: 'Troublemaker', note: 'Protocol invites experimentation. Felix is the first to lean over a boundary, question an order, or make a formal situation less dignified.' },
@@ -125,7 +125,7 @@ const profileSeeds = [
     slug: 'reiner', name: 'Reiner', code: 'ARC · 010', role: 'MSF officer, friend, and personal bodyguard', factions: ['MSF'], mbti: { type: 'XSTJ', status: 'Partial' }, accent: 'neutral', materialStatus: 'Canon relationship + mock details',
     summary: 'Lynleit\'s stern friend and Fionn-trusted bodyguard, Reiner is a powerfully built brute-force specialist who holds the direct line like a rook.',
     visual: 'A powerful build, structured field clothing, reinforced equipment, and a deliberately immovable presence', palette: 'Graphite, ash, muted teal, paper white',
-    personalitySummary: 'Reiner is clearly xSTJ in temperament: stern, procedural, controlled, and far more comfortable with a defined responsibility than an improvised excuse. He rarely smiles, which makes every small break in his composure unusually visible. Where Felix works around an obstacle, Reiner commits to the direct line and becomes the rook that holds or breaks it.',
+    personalitySummary: 'Reiner is stern, procedural, controlled, and far more comfortable with a defined responsibility than an improvised excuse. He rarely smiles, which makes every small break in his composure unusually visible. Where Felix works around an obstacle, Reiner commits to the direct line and becomes the rook that holds or breaks it.',
     traits: [
       { label: 'Protocol-focused', note: 'He treats procedure as accumulated operational knowledge rather than empty ceremony and notices quickly when others disregard it.' },
       { label: 'Severe composure', note: 'Reiner is restrained, difficult to fluster, and rarely seen smiling even among people he trusts.' },
@@ -148,7 +148,7 @@ const profileSeeds = [
       ['Expression', 'Yulia is widely regarded as attractive, but her reputation for never smiling gives her a distant and severe first impression.'],
       ['Working habits', 'Her notebooks, evidence materials, and personal effects are kept orderly enough that an interruption is immediately visible.']
     ],
-    personalitySummary: 'Yulia is a classical ISTJ: methodical, detail-oriented, reliable, and most comfortable when evidence can be tested against a stable procedure. Hiyu\'s constant eureka moments and improvised logic give her a headache, but she repeatedly follows him anyway. Their opposition works because she checks what he leaps toward, while he forces her to consider possibilities no established protocol would admit.',
+    personalitySummary: 'Yulia is methodical, detail-oriented, reliable, and most comfortable when evidence can be tested against a stable procedure. Hiyu\'s constant eureka moments and improvised logic give her a headache, but she repeatedly follows him anyway. Their opposition works because she checks what he leaps toward, while he forces her to consider possibilities no established protocol would admit.',
     traits: [
       { label: 'Procedural rigor', note: 'She is at the top of her criminology class because she applies method consistently, respects chains of evidence, and notices when a required step has been skipped.' },
       { label: 'Detail verification', note: 'Yulia is strongest when a theory must be tested against the record, an observation must be preserved accurately, or an exciting conclusion must survive patient scrutiny.' },
@@ -165,13 +165,13 @@ const profileSeeds = [
   },
   {
     slug: 'hiyu', name: 'Hiyu', code: 'ARC · 012', role: 'Criminology student and intuitive investigator', ageBand: 'Mid-twenties', factions: ['Independent'], mbti: { type: 'ENTP', status: 'Confirmed' }, accent: 'neutral', materialStatus: 'Canon personality and relationship + mock visual details',
-    summary: 'An ENTP criminology student whose restless pattern-making reaches the impossible possibility of magic, then carries him and Yulia into Vilen\'s quarantined park in search of proof.',
+    summary: 'A criminology student whose restless pattern-making reaches the impossible possibility of magic, then carries him and Yulia into Vilen\'s quarantined park in search of proof.',
     visual: 'Soft civilian clothing, portable research tools stored wherever they fit, and the distracted posture of someone following an idea that has already left the room', palette: 'Black, soft blue, warm grey, white',
     appearanceDetails: [
       ['Working habits', 'Notes, clippings, and improvised tools accumulate according to the investigation in his head rather than any system another person could easily reconstruct.'],
       ['Attention', 'His gaze often passes over the social scene around him because several competing explanations are already occupying it.']
     ],
-    personalitySummary: 'Hiyu is an ENTP driven by possibility, contradiction, and the pleasure of making an unlikely pattern click. He constantly experiences eureka moments, builds protocols while using them, and abandons a clean path as soon as a stranger one becomes interesting. He has a reputation for ignoring women because ideas consume his attention so completely. This also leaves him oblivious to the romantic tension slowly forming with Yulia.',
+    personalitySummary: 'Hiyu is driven by possibility, contradiction, and the pleasure of making an unlikely pattern click. He constantly experiences eureka moments, builds protocols while using them, and abandons a clean path as soon as a stranger one becomes interesting. He has a reputation for ignoring women because ideas consume his attention so completely. This also leaves him oblivious to the romantic tension slowly forming with Yulia.',
     traits: [
       { label: 'Divergent inference', note: 'He can connect fragments through possibilities other investigators reject too early, which is how a non-Magus with no knowledge of magic nevertheless suspects it.' },
       { label: 'Improvised method', note: 'Hiyu invents investigative procedures in response to the problem in front of him, making him flexible where Yulia is disciplined and unreliable where she is exact.' },
@@ -532,12 +532,6 @@ function renderProfile(profile) {
   loadProfilePortrait(profile, portrait, portraitNote);
 
   const factions = document.querySelector('#character-profile-factions');
-  const mbti = profile.mbti ?? { type: 'XXXX', status: 'Undiscussed' };
-  const mbtiStatus = mbti.status.toLowerCase().replace(/[^a-z]+/g, '-');
-  const mbtiBadge = createElement('span', `profile-badge affiliation-badge personality-type-badge personality-type-${mbtiStatus}`);
-  mbtiBadge.append(createElement('span', '', `${mbti.type}${mbti.detail ? ` (${mbti.detail})` : ''}`));
-  mbtiBadge.append(createElement('small', '', mbti.status));
-  factions.append(mbtiBadge);
   const affiliationTimeline = profile.affiliationTimeline ?? profile.factions.map((name) => ({ name }));
   affiliationTimeline.forEach(({ name, stage }) => {
     const badge = createElement('span', `profile-badge ${factionClass(name)}${stage ? ' affiliation-badge' : ''}`);
@@ -573,6 +567,14 @@ function renderProfile(profile) {
   });
 
   const personality = document.querySelector('#character-personality');
+  const mbti = profile.mbti ?? { type: 'XXXX', status: 'Undiscussed' };
+  const mbtiStatus = mbti.status.toLowerCase().replace(/[^a-z]+/g, '-');
+  const typeRecord = createElement('div', `personality-type-record personality-type-${mbtiStatus}`);
+  const typeIdentity = createElement('div', 'personality-type-identity');
+  typeIdentity.append(createElement('small', '', 'MBTI record'), createElement('strong', '', mbti.type));
+  typeIdentity.append(createElement('span', '', mbti.detail ? mbti.detail : 'Cognitive emphasis not established'));
+  typeRecord.append(typeIdentity, createElement('span', 'personality-type-status', mbti.status));
+  personality.append(typeRecord);
   if (profile.personalitySummary) personality.append(createElement('p', 'personality-summary', profile.personalitySummary));
   renderSkillGraph(profile, personality);
   const traitNotes = createElement('div', 'personality-notes');
