@@ -104,13 +104,18 @@ const profileSeeds = [
   },
   {
     slug: 'felix', name: 'Felix', code: 'ARC · 009', role: 'MSF officer, friend, and personal bodyguard', ageBand: 'Late twenties', factions: ['MSF'], accent: 'neutral', materialStatus: 'Canon relationship + mock details',
-    summary: 'Lynleit\'s playful, flirtatious troublemaker of a friend, and one of the two MSF officers Fionn personally trusts to protect her beyond an ordinary chain of command.',
-    visual: 'Loose fieldwear, fast movement, and one bright accent against neutral equipment', palette: 'Grey, black, bright blue, rust orange',
-    personalitySummary: 'Felix is clearly xxFP in temperament: playful, improvisational, flirtatious, and willing to test a rule simply to discover whether it deserves obedience. His troublemaking is social and energetic rather than careless about the people he protects.',
+    summary: 'Lynleit\'s playful friend and Fionn-trusted bodyguard, Felix specializes in hacking and communications, approaching operations like a knight that reaches its objective through unexpected angles.',
+    visual: 'Loose fieldwear, fast movement, a compact communications kit, and one bright accent against neutral equipment', palette: 'Grey, black, bright blue, rust orange',
+    personalitySummary: 'Felix is clearly xxFP in temperament: playful, improvisational, flirtatious, and willing to test a rule simply to discover whether it deserves obedience. His technical work follows the same pattern. He prefers indirect entry, unusual routes, and sudden changes of angle, making him the knight to Reiner\'s rook.',
     traits: [
       { label: 'Playful flirt', note: 'He turns tension into teasing, tests reactions openly, and treats charm as both genuine expression and useful disruption.' },
       { label: 'Troublemaker', note: 'Protocol invites experimentation. Felix is the first to lean over a boundary, question an order, or make a formal situation less dignified.' },
       { label: 'Personal loyalty', note: 'His casual manner does not weaken his reliability. Friendship makes his protection of Lynleit more personal, not less serious.' }
+    ],
+    tradecraft: [
+      { label: 'Technical access', title: 'Hacking', detail: 'Felix specializes in gaining access through systems rather than doors, using technical improvisation to reach information or infrastructure from an unexpected angle.' },
+      { label: 'Signal control', title: 'Communications', detail: 'He handles operational communications, signal access, and the movement of information between people who cannot afford a visible connection.' },
+      { label: 'Operational geometry', title: 'Knight pattern', detail: 'His value lies in mobility and oblique approach. Felix bypasses the obvious line, changes direction quickly, and appears where a rigid defense did not expect him.' }
     ],
     origin: 'Felix serves as an MSF officer, but his place beside Lynleit is already personal long before the story begins. They are close friends, and Fionn regards Felix as one of her reliable bodyguards. This is why he commonly accompanies her on operations, official travel, and casual outings.', rupture: 'Lynleit reveals her secret recruitment of Kyrien only to Felix and Reiner. Felix regards Kyrien as a threat whenever the bodyguards are not close enough to protect her. He concedes only because Reiner chooses Lynleit\'s judgment, leaving Felix as the minority opinion.', focus: 'Felix never fully learns to trust Kyrien. Their recurring clashes turn protection into open friction, and Lynleit must reprimand Felix when his hostility interferes with the compartment she created.', future: 'Fionn\'s death, Lynleit\'s accusation, and the hunt for her arrest force Felix to decide whether loyalty means following the formal chain of command or protecting his friend. Kyrien later helps Lynleit contact Felix and Reiner from hiding, drawing them into her slow campaign to reclaim MSF from Helena.',
     ally: 'Lynleit', allyNote: 'Their bond is friendship as well as service. Felix can protect, question, tease, and accompany her with a familiarity that a mere subordinate would not possess, but that closeness also makes her secret trust in Kyrien difficult for him to accept.', rival: 'Kyrien', rivalNote: 'Felix sees Kyrien as an unverified threat inside Lynleit\'s private circle. Being outvoted makes him tolerate the arrangement, not trust the man.', goal: 'Protect Lynleit without allowing either protocol or her intuition to place an untrustworthy person beyond scrutiny.',
@@ -118,13 +123,18 @@ const profileSeeds = [
   },
   {
     slug: 'reiner', name: 'Reiner', code: 'ARC · 010', role: 'MSF officer, friend, and personal bodyguard', factions: ['MSF'], accent: 'neutral', materialStatus: 'Canon relationship + mock details',
-    summary: 'Lynleit\'s stern, protocol-focused friend, and one of the two MSF officers Fionn personally trusts to remain at her side as a reliable bodyguard.',
-    visual: 'Layered office-field clothing, annotated tools, and a deliberately understated presence', palette: 'Graphite, ash, muted teal, paper white',
-    personalitySummary: 'Reiner is clearly xSTJ in temperament: stern, procedural, controlled, and far more comfortable with a defined responsibility than an improvised excuse. He rarely smiles, which makes every small break in his composure unusually visible.',
+    summary: 'Lynleit\'s stern friend and Fionn-trusted bodyguard, Reiner is a powerfully built brute-force specialist who holds the direct line like a rook.',
+    visual: 'A powerful build, structured field clothing, reinforced equipment, and a deliberately immovable presence', palette: 'Graphite, ash, muted teal, paper white',
+    personalitySummary: 'Reiner is clearly xSTJ in temperament: stern, procedural, controlled, and far more comfortable with a defined responsibility than an improvised excuse. He rarely smiles, which makes every small break in his composure unusually visible. Where Felix works around an obstacle, Reiner commits to the direct line and becomes the rook that holds or breaks it.',
     traits: [
       { label: 'Protocol-focused', note: 'He treats procedure as accumulated operational knowledge rather than empty ceremony and notices quickly when others disregard it.' },
       { label: 'Severe composure', note: 'Reiner is restrained, difficult to fluster, and rarely seen smiling even among people he trusts.' },
       { label: 'Reliable protection', note: 'He expresses friendship through preparation, consistency, and remaining exactly where Lynleit needs him to be.' }
+    ],
+    tradecraft: [
+      { label: 'Direct action', title: 'Brute-force intervention', detail: 'Reiner specializes in situations where an obstacle must be confronted directly, relying on physical power, discipline, and decisive commitment.' },
+      { label: 'Physical security', title: 'Close protection', detail: 'His build and composure make him the stable physical barrier in Lynleit\'s security detail, able to hold position when an operation becomes chaotic.' },
+      { label: 'Operational geometry', title: 'Rook pattern', detail: 'He controls clear lines, anchors a position, and applies force without unnecessary movement. Reiner is most effective when the threat has nowhere left to hide.' }
     ],
     origin: 'Reiner serves as an MSF officer, but his place beside Lynleit is already personal long before the story begins. They are close friends, and Fionn regards Reiner as one of her reliable bodyguards. He therefore accompanies her on operations, travel, and casual outings where formal protection blends into ordinary company.', rupture: 'Lynleit reveals her secret recruitment of Kyrien only to Reiner and Felix, withholding it even from Fionn. Reiner sees the same danger Felix sees, particularly whenever neither bodyguard is near her, but recognizes that rejecting the plan would also mean rejecting Lynleit\'s judgment.', focus: 'Despite being the more protocol-focused friend, Reiner concedes because he chooses to trust Lynleit\'s intuition. His decision leaves Felix in the minority and makes Reiner the stabilizing vote inside a compartment all three know violates MSF practice.', future: 'Reiner\'s trust does not eliminate scrutiny. After Fionn\'s murder and the hunt for Lynleit\'s arrest, Kyrien helps her contact Reiner and Felix from hiding. Reiner must protect her, preserve the covert link inside Helena\'s MSF, and decide how far disciplined loyalty can support the effort to reclaim the agency.',
     ally: 'Lynleit', allyNote: 'Their friendship allows Reiner to remain close without every interaction feeling like an assignment. Trusting her judgment over protocol is therefore a serious personal choice, not passive obedience.', rival: 'Kyrien', rivalNote: 'Reiner remains suspicious of Kyrien\'s presence near Lynleit, but contains that suspicion after consciously accepting her decision.', goal: 'Protect Lynleit while testing whether disciplined loyalty can accommodate the anti-protocol risk she has chosen.',
@@ -208,8 +218,8 @@ const skillProfiles = {
   heyk: { analysis: 72, influence: 55, awareness: 82, fieldcraft: 90, combat: 88, magic: 0 },
   sherie: { analysis: 82, influence: 96, awareness: 88, fieldcraft: 54, combat: 35, magic: 0 },
   drake: { analysis: 98, influence: 42, awareness: 91, fieldcraft: 62, combat: 55, magic: 0 },
-  felix: { analysis: 65, influence: 78, awareness: 72, fieldcraft: 82, combat: 84, magic: 0 },
-  reiner: { analysis: 94, influence: 55, awareness: 92, fieldcraft: 58, combat: 40, magic: 0 },
+  felix: { analysis: 88, influence: 80, awareness: 86, fieldcraft: 94, combat: 62, magic: 0 },
+  reiner: { analysis: 70, influence: 48, awareness: 84, fieldcraft: 82, combat: 96, magic: 0 },
   yulia: { analysis: 62, influence: 80, awareness: 72, fieldcraft: 35, combat: 28, magic: 0 },
   hiyu: { analysis: 90, influence: 65, awareness: 92, fieldcraft: 52, combat: 30, magic: 0 },
   natalia: { analysis: 90, influence: 78, awareness: 94, fieldcraft: 86, combat: 68, magic: 68 },

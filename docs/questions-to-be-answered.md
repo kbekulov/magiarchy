@@ -13,7 +13,6 @@ Story, character, world, relationship, institution, location, and event question
 | Family | Who is the reliable distant relative trusted with Lynleit and Kyrien's son, and what does that person know about the child's parents? | 0% |
 | Family | Does Lynleit and Kyrien's son inherit the blue-flame lineage, another magical ability, or no Magus talent at all? | 0% |
 | Spill inquiry | Which wiser people does Lynleit consult, and what do they teach her about the Spill's origin? | 0% |
-| MSF | What are Felix and Reiner's distinct operational specialties beyond their shared role as Lynleit's friends and personal bodyguards? | 0% |
 | Location | What is Port City's proper name, and which story or institutional thread makes the western gateway relevant? | 0% |
 | Location | What is the Director's House's proper name, and in which city district does the hillside residence overlook the river? | 0% |
 | Government | Does the proposed Council of State actually exist, and what constitutional work belongs to it rather than Parliament, Cabinet, the courts, or the Privy Council? | 0% |
@@ -55,6 +54,7 @@ Story, character, world, relationship, institution, location, and event question
 | MSF | What legal charter, oversight mechanism, and command structure give MSF authority while allowing Helena, Lynleit, and later Kyrien to claim its director seat? | 20% |
 | Magic Academy | How are students admitted and trained, who governs the Academy, and what formal accountability connects its lineage funders, Magi professors, the Magiarchy, and the churches? | 20% |
 | Park trespass | How do Hiyu and Yulia enter the quarantined park, what theory leads Hiyu inside, what do they encounter, and how do they survive or escape? | 20% |
+| MSF operations | Which operation first demonstrates Felix's hacking and communications role alongside Reiner's brute-force role, and how does Lynleit deploy their knight-and-rook pairing when both are available? | 20% |
 | Core mystery | Who is the first missing man, how does he cause the Spill, and is he acting for the conspiracy, being manipulated by it, or creating an independent crisis that others exploit? | 30% |
 | Core mystery | Who ultimately orders Fionn's assassination, and which criminal Magi, rival Magiarchates, church actors, or infiltrators knowingly or unknowingly contribute to it? | 30% |
 | Resolution | What settles Helena's control of MSF and the political crisis if the Spill itself is never fully contained? | 30% |

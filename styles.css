@@ -8165,6 +8165,67 @@ a.moment-connection-card:hover {
   color: #f2f3f5;
 }
 
+.operator-pair {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  overflow: hidden;
+  border: 1px solid #393b42;
+  border-radius: 8px;
+  background: #232428;
+}
+
+.operator-pair article {
+  display: grid;
+  grid-template-columns: 82px minmax(0, 1fr);
+  gap: 24px;
+  min-height: 250px;
+  padding: clamp(26px, 4vw, 42px);
+}
+
+.operator-pair article + article {
+  border-left: 1px solid #393b42;
+}
+
+.operator-piece {
+  display: grid;
+  width: 68px;
+  height: 68px;
+  place-items: center;
+  border: 1px solid #454852;
+  border-radius: 7px;
+  background: #1e1f22;
+  color: #8790ff;
+  font-size: 2.2rem;
+  line-height: 1;
+}
+
+.operator-pair article > div:last-child > span {
+  color: #8790ff;
+  font-size: .6rem;
+  font-weight: 750;
+  letter-spacing: .08em;
+}
+
+.operator-pair h3 {
+  margin: 12px 0 10px;
+  color: #f2f3f5;
+  font-size: 1.2rem;
+}
+
+.operator-pair p {
+  margin: 0;
+  color: #aeb1b8;
+  line-height: 1.65;
+}
+
+.operator-pair a {
+  display: inline-block;
+  margin-top: 18px;
+  color: #b3b9ff;
+  font-size: .75rem;
+  font-weight: 700;
+}
+
 .canon-gaps {
   display: grid;
   grid-template-columns: minmax(260px, .7fr) minmax(340px, 1.3fr);
@@ -8405,6 +8466,15 @@ a.moment-connection-card:hover {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+  .operator-pair {
+    grid-template-columns: 1fr;
+  }
+
+  .operator-pair article + article {
+    border-top: 1px solid #393b42;
+    border-left: 0;
+  }
+
   .pressure-layout,
   .boundary-record,
   .story-contact,
@@ -8609,6 +8679,19 @@ a.moment-connection-card:hover {
   .institution-people,
   .canon-gaps ul {
     grid-template-columns: 1fr;
+  }
+
+  .operator-pair article {
+    grid-template-columns: 56px minmax(0, 1fr);
+    gap: 16px;
+    min-height: 0;
+    padding: 24px 20px;
+  }
+
+  .operator-piece {
+    width: 52px;
+    height: 52px;
+    font-size: 1.7rem;
   }
 }
 
