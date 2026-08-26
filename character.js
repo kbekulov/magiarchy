@@ -3,6 +3,7 @@ const profileSeeds = [
     slug: 'lynleit', name: 'Lynleit', code: 'MSF · 001', role: 'Fionn\'s biological daughter and displaced heir', ageBand: 'Late twenties', factions: ['MSF', 'Magiarchy'], accent: 'blue', materialStatus: 'Canon traits + mock details',
     summary: 'Fionn\'s biological daughter and Helena\'s stepdaughter, Lynleit is an ENFJ (strong Ni) leader whose people-first instinct is sharpened by unusually strong long-range intuition.',
     visual: 'A long tailored blue coat over a pale high-collared blouse with a narrow black ribbon, paired with high-waisted black shorts, dark tights, and tall black lace-up boots', palette: 'Midnight blue, black, white, cold cyan',
+    residenceNote: 'The family home is a three-floor house on a hill above the city river. During her school years, Lynleit requested the third-floor bedroom so she could gaze into the distance while doing homework.',
     appearanceDetails: [
       ['Signature silhouette', 'Long structured outerwear frames a compact, practical lower silhouette. The contrast between formal tailoring and movement-ready shorts and boots is the recognizable core of her wardrobe.'],
       ['Variation rule', 'Other outfits may change the coat length, layers, or degree of formality, but usually preserve a blue tailored outer layer, a pale blouse, restrained black detailing, and tall practical footwear.']
@@ -65,6 +66,7 @@ const profileSeeds = [
     slug: 'fionn', name: 'Fionn', code: 'ARC · 005', role: 'Magiarch and MSF founder', ageBand: 'Late fifties', factions: ['MSF', 'Magiarchy'], accent: 'neutral', materialStatus: 'Canon magecraft + mock details',
     summary: 'Lynleit\'s biological father, publicly the director of MSF and secretly the country\'s Magiarch, Fionn faces a foreign magical conflict disguised as political chaos inside Narvea.',
     visual: 'Formal authority softened by practical details and an old ceremonial restraint', palette: 'Stone, black, muted blue, antique brass', traits: ['Measured', 'Secretive', 'Responsible'],
+    residenceNote: 'The family house is also a discreet residential node for MSF, with offices and a library supporting selected work without replacing the formal headquarters in Turon.',
     magecraft: [
       { label: 'Hereditary magecraft', title: 'Blue flame', detail: 'Fionn carries the same lineage-bound blue flame later inherited by Lynleit. The flame is a family discipline with a broad range of applications.' },
       { label: 'Practiced method', title: 'Precision before volume', detail: 'His distinction is virtuosity. Fionn can shape the flame through subtle, controlled applications that Lynleit has not learned to reproduce.' },
@@ -554,8 +556,9 @@ function renderProfile(profile) {
   });
 
   const biography = document.querySelector('#character-biography');
+  const biographyOrigin = profile.residenceNote ? `${profile.origin} ${profile.residenceNote}` : profile.origin;
   [
-    ['Before the crisis', profile.origin], ['The defining break', profile.rupture], ['Where the record leads', profile.future]
+    ['Before the crisis', biographyOrigin], ['The defining break', profile.rupture], ['Where the record leads', profile.future]
   ].forEach(([title, detail], index) => {
     const item = createElement('li');
     item.append(createElement('span', '', String(index + 1).padStart(2, '0')));

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A location record for Lynleit's three-floor family house, its hillside garden, and its discreet role as an MSF command residence.">
+    <meta name="theme-color" content="#1e1f22">
+    <title>The Director's House - Magiarchy</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2" defer></script>
+    <script src="notes-config.js" defer></script>
+    <script src="notes.js" defer></script>
+  </head>
+  <body class="house-page world-section-page" data-notes-page="director-house">
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <header class="site-header">
+      <nav class="navbar shell" aria-label="Primary navigation">
+        <a class="brand" href="index.html" aria-label="Magiarchy home"><span class="brand-mark" aria-hidden="true"><span></span></span><span>Magiarchy</span></a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links"><span class="sr-only">Toggle navigation</span><span></span><span></span></button>
+        <div class="nav-links" id="nav-links">
+          <a href="index.html">Home</a><a href="characters.html">Characters</a><a href="story.html">Story</a><a href="moments.html">Moments</a>
+          <details class="nav-dropdown">
+            <summary>World</summary>
+            <div class="nav-submenu">
+              <a href="world.html"><span>World index</span><small>Places, institutions, and powers</small></a>
+              <a href="duchy.html"><span>The Duchy</span><small>Country profile</small></a>
+              <a href="director-house.html" aria-current="page"><span>The Director's House</span><small>Family residence and MSF node</small></a>
+              <a href="magiarchy.html"><span>The Magiarchy</span><small>Territorial magical order</small></a>
+              <a href="msf.html"><span>MSF</span><small>Intelligence agency</small></a>
+              <a href="church.html"><span>The Church</span><small>Hidden religious authority</small></a>
+            </div>
+          </details>
+          <a href="music.html">Music</a><a href="gallery.html">Gallery</a><a href="docs.html">Docs</a>
+        </div>
+      </nav>
+    </header>
+
+    <main class="app-main" id="main-content">
+      <div class="world-workspace shell">
+        <div class="world-main-pane">
+          <header class="feed-header world-feed-header">
+            <div><span aria-hidden="true">#</span><strong>director-house</strong><i></i><p>Residential location record</p></div>
+            <span class="feed-status"><span class="status-dot"></span> Family home · discreet MSF node</span>
+          </header>
+
+          <div class="world-scroll house-scroll">
+            <nav class="document-breadcrumbs world-breadcrumbs" aria-label="Breadcrumb"><a href="world.html">World</a><span aria-hidden="true">/</span><span aria-current="page">The Director's House</span></nav>
+
+            <section class="house-hero reveal" aria-labelledby="house-title">
+              <div class="house-mark" aria-hidden="true"><span></span><span></span><span></span></div>
+              <div class="house-hero-copy">
+                <p class="eyebrow">Residence · family seat · operational node</p>
+                <h1 id="house-title">A family home<br>with institutional gravity</h1>
+                <p>The three-floor house is both the director's residence and the family's long-term home. Its domestic life never fully separates from MSF: offices, a library, and discreet working rooms allow it to function as a small command post without becoming a formal headquarters.</p>
+              </div>
+              <dl class="house-facts">
+                <div><dt>Floors</dt><dd>Three</dd></div>
+                <div><dt>Setting</dt><dd>Hillside above a city river</dd></div>
+                <div><dt>Rear grounds</dt><dd>Small park and garden</dd></div>
+                <div><dt>Operational role</dt><dd>Residential mini-HQ</dd></div>
+              </dl>
+            </section>
+
+            <section class="house-section reveal" aria-labelledby="house-setting-title">
+              <header class="house-section-heading"><span>01</span><div><p class="eyebrow">Site relationship</p><h2 id="house-setting-title">The house faces two worlds</h2></div></header>
+              <div class="house-landscape" role="img" aria-label="Diagram showing the house on a hill, the rear garden, the city river below, and the distant city outlook">
+                <div class="house-landscape-city"><span>Distant city</span><i></i><i></i><i></i><i></i></div>
+                <div class="house-landscape-hill"><span>House on the hill</span></div>
+                <div class="house-landscape-garden"><span>Rear garden</span><i></i><i></i><i></i></div>
+                <div class="house-landscape-river"><span>City river</span></div>
+              </div>
+              <p class="house-setting-note">Behind the house, a compact private park descends toward the river-facing edge of the hill. The elevation gives the upper floor a long view across the city while keeping the garden closely tied to the first-floor living spaces.</p>
+            </section>
+
+            <section class="house-section reveal" aria-labelledby="house-floors-title">
+              <header class="house-section-heading"><span>02</span><div><p class="eyebrow">Vertical plan</p><h2 id="house-floors-title">Three floors, three degrees of distance</h2></div></header>
+              <div class="house-cutaway">
+                <article class="house-floor house-floor-third">
+                  <div class="house-floor-number"><span>03</span><small>Highest floor</small></div>
+                  <div class="house-floor-copy"><p class="eyebrow">Lynleit's chosen room</p><h3>A desk above the city</h3><p>During her school years, Lynleit specifically asked for a bedroom on the third floor. She wanted enough height to look into the distance while doing homework, turning the room's view into part of her private routine long before leadership made that habit feel symbolic.</p></div>
+                  <div class="house-window" aria-hidden="true"><span></span><span></span><i></i></div>
+                </article>
+                <article class="house-floor house-floor-second">
+                  <div class="house-floor-number"><span>02</span><small>Private interior</small></div>
+                  <div class="house-floor-copy"><p class="eyebrow">Family domain</p><h3>The quieter center of the house</h3><p>The second floor belongs to the residence's private interior. Its precise room plan is not yet fixed, preserving space for family rooms and the boundaries between household life and the work conducted elsewhere in the building.</p></div>
+                  <div class="house-room-grid" aria-hidden="true"><i></i><i></i><i></i></div>
+                </article>
+                <article class="house-floor house-floor-first">
+                  <div class="house-floor-number"><span>01</span><small>Garden level</small></div>
+                  <div class="house-floor-copy"><p class="eyebrow">Glass and greenery</p><h3>Nature without surrendering shelter</h3><p>The rear side of the first floor opens into glass-enclosed relaxation areas facing the garden. In summer they extend domestic life into the greenery. In winter the same rooms preserve the view and atmosphere while protecting everyone inside from cold, rain, and wind.</p></div>
+                  <div class="house-glass-room" aria-hidden="true"><span></span><span></span><span></span><i></i></div>
+                </article>
+              </div>
+              <div class="house-shared-rooms">
+                <article><span>READING</span><h3>Library</h3><p>A substantial domestic library supports study, research, and the quieter habits of a family whose private responsibilities extend beyond the household.</p></article>
+                <article><span>WORK</span><h3>Several offices</h3><p>Multiple offices allow private meetings and administrative work to occur without converting the entire residence into an overt agency building.</p></article>
+                <article><span>OPEN DETAIL</span><h3>Exact allocation</h3><p>The floor-by-floor placement of the library, offices, service rooms, and other bedrooms remains intentionally undefined.</p></article>
+              </div>
+            </section>
+
+            <section class="house-section reveal" aria-labelledby="house-dual-role-title">
+              <header class="house-section-heading"><span>03</span><div><p class="eyebrow">Dual role</p><h2 id="house-dual-role-title">Residence and command space occupy the same address</h2></div></header>
+              <div class="house-dual-role">
+                <article class="house-role-home"><span>FAMILY NEST</span><h3>A place that belongs to the family first</h3><p>Bedrooms, study, reading, the garden, and the glass relaxation rooms give the house a genuine domestic identity. It stores ordinary memories alongside the pressures attached to Fionn's position.</p></article>
+                <div class="house-role-overlap"><span>SHARED THRESHOLD</span><strong>Privacy becomes operational access</strong><p>The director can receive trusted people, review sensitive work, and continue agency business without leaving the protection and familiarity of home.</p></div>
+                <article class="house-role-msf"><span>MINI-HQ</span><h3>A discreet extension of MSF</h3><p>The offices and library let the residence support selected meetings, planning, and confidential work. It complements MSF's formal headquarters in Turon rather than replacing it.</p></article>
+              </div>
+            </section>
+
+            <section class="house-section reveal" aria-labelledby="house-story-title">
+              <header class="house-section-heading"><span>04</span><div><p class="eyebrow">Story connections</p><h2 id="house-story-title">Private rooms become narrative pressure points</h2></div></header>
+              <div class="house-story-links">
+                <a href="character.html?character=lynleit"><span>RESIDENT</span><strong>Lynleit</strong><p>Her third-floor room preserves the schoolgirl habit of looking beyond the immediate world while she works.</p><i aria-hidden="true">→</i></a>
+                <a href="character.html?character=fionn"><span>DIRECTOR</span><strong>Fionn</strong><p>His public family seat also supports the confidential demands of MSF leadership.</p><i aria-hidden="true">→</i></a>
+                <a href="msf.html"><span>INSTITUTION</span><strong>MSF</strong><p>The house is a residential operational node, distinct from the agency's formal headquarters in Turon.</p><i aria-hidden="true">→</i></a>
+                <a href="moments.html?moment=the-cat-in-the-family-house"><span>EARLY OMEN</span><strong>The grey cat</strong><p>An intruder turns the protected family interior into a comic warning that outside danger has begun to enter.</p><i aria-hidden="true">→</i></a>
+              </div>
+            </section>
+
+            <aside class="canon-gaps reveal"><div><p class="eyebrow">Awaiting definition</p><h2>Open location questions</h2></div><ul><li>The house's proper name and exact city district</li><li>How the library and offices are distributed across the lower floors</li><li>Which staff, relatives, and MSF officers possess routine access</li><li>How operational security is concealed inside an active family residence</li></ul></aside>
+          </div>
+        </div>
+
+        <aside class="notes-sidebar" aria-label="Director's House page notes">
+          <header class="notes-header"><div><span aria-hidden="true">✎</span><strong>Page notes</strong></div><span>House</span></header>
+          <div class="notes-list"></div>
+          <p class="notes-footnote">Use notes to refine rooms, access, and domestic details without turning open architecture into canon.</p>
+        </aside>
+      </div>
+    </main>
+  </body>
+</html>

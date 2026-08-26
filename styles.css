@@ -10044,3 +10044,722 @@ a.moment-connection-card:hover {
     border-left: 0;
   }
 }
+
+/* Director's House */
+.house-scroll {
+  padding-bottom: 72px;
+}
+
+.house-hero,
+.house-section,
+.house-scroll > .canon-gaps {
+  width: min(1180px, calc(100% - 64px));
+  margin-inline: auto;
+}
+
+.house-hero {
+  display: grid;
+  grid-template-columns: 150px minmax(0, 1fr) 310px;
+  border: 1px solid #3a3c43;
+  background: #25262b;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.house-mark {
+  display: grid;
+  align-content: center;
+  gap: 8px;
+  padding: 28px;
+  background: #202125;
+  border-right: 1px solid #3a3c43;
+}
+
+.house-mark span {
+  display: block;
+  height: 28px;
+  border: 2px solid #737bdc;
+  background: #2b2d35;
+}
+
+.house-mark span:first-child {
+  width: 68%;
+  justify-self: end;
+}
+
+.house-mark span:nth-child(2) {
+  width: 84%;
+  justify-self: end;
+}
+
+.house-mark span:last-child {
+  width: 100%;
+}
+
+.house-hero-copy {
+  padding: 54px 48px;
+}
+
+.house-hero h1 {
+  margin: 10px 0 18px;
+  color: #f2f3f5;
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: clamp(2.7rem, 5vw, 5.8rem);
+  font-weight: 500;
+  letter-spacing: -.045em;
+  line-height: .94;
+}
+
+.house-hero-copy > p:last-child {
+  max-width: 760px;
+  margin: 0;
+  color: #b6bac5;
+  font-size: 1.04rem;
+  line-height: 1.75;
+}
+
+.house-facts {
+  display: grid;
+  margin: 0;
+  border-left: 1px solid #3a3c43;
+  background: #292a30;
+}
+
+.house-facts div {
+  display: grid;
+  align-content: center;
+  gap: 7px;
+  padding: 24px 28px;
+}
+
+.house-facts div + div {
+  border-top: 1px solid #3a3c43;
+}
+
+.house-facts dt,
+.house-floor-number small,
+.house-role-overlap > span {
+  color: #8f96ae;
+  font-family: 'Courier New', monospace;
+  font-size: .68rem;
+  font-weight: 700;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+}
+
+.house-facts dd {
+  margin: 0;
+  color: #e1e3e8;
+  font-weight: 700;
+}
+
+.house-section {
+  margin-top: 64px;
+}
+
+.house-section-heading {
+  display: flex;
+  align-items: flex-start;
+  gap: 22px;
+  margin-bottom: 22px;
+}
+
+.house-section-heading > span {
+  display: grid;
+  place-items: center;
+  width: 46px;
+  height: 46px;
+  flex: 0 0 46px;
+  border: 1px solid #43464f;
+  border-radius: 50%;
+  color: #8c94ed;
+  font-family: 'Courier New', monospace;
+  font-size: .72rem;
+}
+
+.house-section-heading h2 {
+  margin: 4px 0 0;
+  color: #f2f3f5;
+  font-size: clamp(1.7rem, 3vw, 2.65rem);
+  line-height: 1.08;
+}
+
+.house-landscape {
+  position: relative;
+  min-height: 390px;
+  overflow: hidden;
+  border: 1px solid #3a3c43;
+  border-radius: 12px;
+  background: #202126;
+}
+
+.house-landscape span {
+  position: absolute;
+  z-index: 2;
+  padding: 7px 10px;
+  border: 1px solid #454852;
+  border-radius: 5px;
+  background: #202126;
+  color: #c9ccd5;
+  font-family: 'Courier New', monospace;
+  font-size: .66rem;
+  font-weight: 700;
+  letter-spacing: .09em;
+  text-transform: uppercase;
+}
+
+.house-landscape-city {
+  position: absolute;
+  inset: 0 0 54% 0;
+  background: #292a31;
+  border-bottom: 1px solid #454752;
+}
+
+.house-landscape-city span {
+  top: 22px;
+  right: 24px;
+}
+
+.house-landscape-city i {
+  position: absolute;
+  bottom: 0;
+  width: 11%;
+  height: 30%;
+  background: #343640;
+  border: 1px solid #474a56;
+}
+
+.house-landscape-city i:nth-of-type(1) { left: 55%; height: 38%; }
+.house-landscape-city i:nth-of-type(2) { left: 67%; height: 58%; }
+.house-landscape-city i:nth-of-type(3) { left: 79%; height: 46%; }
+.house-landscape-city i:nth-of-type(4) { left: 91%; height: 66%; }
+
+.house-landscape-hill {
+  position: absolute;
+  inset: 31% 42% 18% 6%;
+  background: #30343a;
+  clip-path: polygon(0 100%, 13% 28%, 38% 9%, 66% 38%, 100% 100%);
+}
+
+.house-landscape-hill::after {
+  content: '';
+  position: absolute;
+  left: 34%;
+  top: 8%;
+  width: 116px;
+  height: 92px;
+  border: 2px solid #7881de;
+  background: #26272d;
+  box-shadow: inset 0 -27px #30323a;
+}
+
+.house-landscape-hill span {
+  left: 34%;
+  top: 57%;
+}
+
+.house-landscape-garden {
+  position: absolute;
+  inset: 55% 5% 17% 47%;
+  border: 1px solid #4d5b50;
+  background: #29312c;
+}
+
+.house-landscape-garden span {
+  top: 18px;
+  left: 18px;
+}
+
+.house-landscape-garden i {
+  position: absolute;
+  bottom: 20px;
+  width: 22px;
+  height: 42px;
+  border-radius: 50% 50% 12px 12px;
+  background: #475d4c;
+}
+
+.house-landscape-garden i:nth-of-type(1) { left: 34%; }
+.house-landscape-garden i:nth-of-type(2) { left: 54%; height: 54px; }
+.house-landscape-garden i:nth-of-type(3) { left: 74%; }
+
+.house-landscape-river {
+  position: absolute;
+  inset: 83% 0 0;
+  background: #293945;
+  border-top: 1px solid #4d6779;
+}
+
+.house-landscape-river span {
+  right: 24px;
+  top: 15px;
+}
+
+.house-setting-note {
+  max-width: 850px;
+  margin: 20px 0 0 68px;
+  color: #aeb2bd;
+  line-height: 1.7;
+}
+
+.house-cutaway {
+  overflow: hidden;
+  border: 1px solid #3a3c43;
+  border-radius: 12px;
+  background: #202126;
+}
+
+.house-floor {
+  display: grid;
+  grid-template-columns: 120px minmax(0, 1fr) 250px;
+  min-height: 230px;
+}
+
+.house-floor + .house-floor {
+  border-top: 1px solid #464850;
+}
+
+.house-floor-number {
+  display: grid;
+  align-content: center;
+  justify-items: center;
+  gap: 8px;
+  background: #1d1e22;
+  border-right: 1px solid #3a3c43;
+}
+
+.house-floor-number > span {
+  color: #8992ef;
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 2.8rem;
+}
+
+.house-floor-copy {
+  align-self: center;
+  padding: 34px 42px;
+}
+
+.house-floor-copy h3,
+.house-shared-rooms h3,
+.house-dual-role h3 {
+  margin: 7px 0 12px;
+  color: #eceef2;
+  font-size: 1.35rem;
+}
+
+.house-floor-copy > p:last-child,
+.house-shared-rooms p,
+.house-dual-role p,
+.house-story-links p {
+  margin: 0;
+  color: #aeb2bd;
+  line-height: 1.65;
+}
+
+.house-window,
+.house-room-grid,
+.house-glass-room {
+  position: relative;
+  margin: 28px;
+  border: 1px solid #484b56;
+  background: #292b32;
+}
+
+.house-window {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2px;
+  padding: 18px;
+  background: #22262d;
+}
+
+.house-window span {
+  border: 1px solid #526578;
+  background: #2d3a48;
+}
+
+.house-window i {
+  position: absolute;
+  left: 15%;
+  right: 15%;
+  bottom: 16%;
+  height: 2px;
+  background: #7d85dc;
+}
+
+.house-room-grid {
+  display: grid;
+  grid-template-columns: 1.25fr .75fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 7px;
+  padding: 7px;
+  background: #202126;
+}
+
+.house-room-grid i {
+  border: 1px solid #454751;
+  background: #2d2f36;
+}
+
+.house-room-grid i:first-child {
+  grid-row: 1 / 3;
+}
+
+.house-glass-room {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3px;
+  padding: 10px;
+  background: #22282b;
+}
+
+.house-glass-room span {
+  border: 1px solid #5b7077;
+  background: #304047;
+}
+
+.house-glass-room i {
+  position: absolute;
+  left: 8%;
+  right: 8%;
+  bottom: 14%;
+  height: 18px;
+  background: #465b4b;
+}
+
+.house-shared-rooms {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin-top: 12px;
+  overflow: hidden;
+  border: 1px solid #3a3c43;
+  border-radius: 10px;
+}
+
+.house-shared-rooms article {
+  min-height: 190px;
+  padding: 28px;
+  background: #28292e;
+}
+
+.house-shared-rooms article + article {
+  border-left: 1px solid #3a3c43;
+}
+
+.house-shared-rooms span,
+.house-dual-role article > span,
+.house-story-links > a > span {
+  color: #9299df;
+  font-family: 'Courier New', monospace;
+  font-size: .67rem;
+  font-weight: 700;
+  letter-spacing: .1em;
+}
+
+.house-dual-role {
+  display: grid;
+  grid-template-columns: 1fr 230px 1fr;
+  overflow: hidden;
+  border: 1px solid #3a3c43;
+  border-radius: 12px;
+}
+
+.house-dual-role > * {
+  padding: 36px;
+}
+
+.house-dual-role article {
+  background: #292a2f;
+}
+
+.house-role-overlap {
+  display: grid;
+  align-content: center;
+  gap: 12px;
+  background: #222329;
+  border-inline: 1px solid #43454e;
+  text-align: center;
+}
+
+.house-role-overlap strong {
+  color: #e5e6eb;
+  line-height: 1.35;
+}
+
+.house-role-overlap p {
+  font-size: .86rem;
+}
+
+.house-story-links {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.house-story-links > a {
+  position: relative;
+  display: grid;
+  gap: 9px;
+  min-height: 190px;
+  padding: 28px 58px 28px 28px;
+  border: 1px solid #3a3c43;
+  border-radius: 9px;
+  background: #292a2f;
+  color: inherit;
+  text-decoration: none;
+  transition: background-color .18s ease, border-color .18s ease, transform .18s ease;
+}
+
+.house-story-links > a:hover,
+.house-story-links > a:focus-visible {
+  border-color: #6870c7;
+  background: #2d2e35;
+  transform: translateY(-2px);
+}
+
+.house-story-links strong {
+  color: #eceef2;
+  font-size: 1.22rem;
+}
+
+.house-story-links i {
+  position: absolute;
+  right: 26px;
+  top: 50%;
+  color: #9299df;
+  font-style: normal;
+  transform: translateY(-50%);
+}
+
+.world-record-house .world-record-visual {
+  background: #25272c;
+}
+
+.world-record-house .world-record-visual span {
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 2rem;
+}
+
+.world-record-house .world-record-visual i {
+  width: 70%;
+  height: 24px;
+  border: 1px solid #7c85df;
+  background: #30323a;
+}
+
+.world-record-house .world-record-visual i + i {
+  width: 86%;
+  margin-top: 7px;
+}
+
+.msf-residential-node {
+  display: grid;
+  grid-template-columns: 150px minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 26px;
+  margin-top: 12px;
+  padding: 24px 28px;
+  border: 1px solid #3a3c43;
+  border-radius: 9px;
+  background: #25262b;
+  color: inherit;
+  text-decoration: none;
+}
+
+.msf-residential-node > span,
+.msf-residential-node > i {
+  color: #979eea;
+  font-family: 'Courier New', monospace;
+  font-size: .68rem;
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: .09em;
+}
+
+.msf-residential-node strong {
+  display: block;
+  margin-bottom: 5px;
+  color: #eceef2;
+}
+
+.msf-residential-node p {
+  margin: 0;
+  color: #aeb2bd;
+}
+
+.msf-residential-node:hover,
+.msf-residential-node:focus-visible {
+  border-color: #6870c7;
+  background: #2b2c32;
+}
+
+@media (max-width: 950px) {
+  .house-hero {
+    grid-template-columns: 100px minmax(0, 1fr);
+  }
+
+  .house-facts {
+    grid-column: 1 / -1;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    border-top: 1px solid #3a3c43;
+    border-left: 0;
+  }
+
+  .house-facts div + div {
+    border-top: 0;
+    border-left: 1px solid #3a3c43;
+  }
+
+  .house-floor {
+    grid-template-columns: 90px minmax(0, 1fr) 190px;
+  }
+
+  .house-dual-role {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .house-role-overlap {
+    grid-column: 1 / -1;
+    grid-row: 2;
+    border: 0;
+    border-top: 1px solid #43454e;
+  }
+}
+
+@media (max-width: 700px) {
+  .house-hero,
+  .house-section,
+  .house-scroll > .canon-gaps {
+    width: min(100% - 28px, 1180px);
+  }
+
+  .house-hero {
+    grid-template-columns: 1fr;
+  }
+
+  .house-mark {
+    grid-template-columns: repeat(3, 1fr);
+    padding: 18px;
+    border-right: 0;
+    border-bottom: 1px solid #3a3c43;
+  }
+
+  .house-mark span,
+  .house-mark span:first-child,
+  .house-mark span:nth-child(2) {
+    width: 100%;
+  }
+
+  .house-hero-copy {
+    padding: 34px 26px;
+  }
+
+  .house-hero h1 {
+    font-size: clamp(2.45rem, 14vw, 4.2rem);
+  }
+
+  .house-facts {
+    grid-column: auto;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .house-facts div:nth-child(3) {
+    border-top: 1px solid #3a3c43;
+    border-left: 0;
+  }
+
+  .house-facts div:nth-child(4) {
+    border-top: 1px solid #3a3c43;
+  }
+
+  .house-section {
+    margin-top: 46px;
+  }
+
+  .house-section-heading {
+    gap: 14px;
+  }
+
+  .house-section-heading > span {
+    width: 38px;
+    height: 38px;
+    flex-basis: 38px;
+  }
+
+  .house-landscape {
+    min-height: 320px;
+  }
+
+  .house-landscape-hill {
+    inset: 34% 24% 18% 2%;
+  }
+
+  .house-landscape-hill::after {
+    left: 23%;
+    width: 90px;
+    height: 72px;
+  }
+
+  .house-landscape-hill span {
+    left: 20%;
+  }
+
+  .house-landscape-garden {
+    inset: 58% 2% 17% 42%;
+  }
+
+  .house-setting-note {
+    margin-left: 0;
+  }
+
+  .house-floor {
+    grid-template-columns: 62px minmax(0, 1fr);
+  }
+
+  .house-floor-number > span {
+    font-size: 2rem;
+  }
+
+  .house-floor-number small {
+    display: none;
+  }
+
+  .house-floor-copy {
+    padding: 28px 22px;
+  }
+
+  .house-window,
+  .house-room-grid,
+  .house-glass-room {
+    grid-column: 1 / -1;
+    min-height: 140px;
+    margin: 0;
+    border-width: 1px 0 0;
+  }
+
+  .house-shared-rooms,
+  .house-dual-role,
+  .house-story-links {
+    grid-template-columns: 1fr;
+  }
+
+  .house-shared-rooms article + article {
+    border-top: 1px solid #3a3c43;
+    border-left: 0;
+  }
+
+  .house-role-overlap {
+    grid-column: auto;
+    grid-row: auto;
+    border-top: 1px solid #43454e;
+    border-bottom: 1px solid #43454e;
+  }
+
+  .msf-residential-node {
+    grid-template-columns: 1fr auto;
+  }
+
+  .msf-residential-node > span {
+    grid-column: 1 / -1;
+  }
+}
