@@ -897,6 +897,31 @@ a {
   gap: 4px;
 }
 
+.personality-type-badge {
+  border-color: rgba(186, 104, 255, .3);
+  background: rgba(186, 104, 255, .11);
+  color: #d2a8ff;
+}
+
+.personality-type-badge small {
+  color: currentColor;
+  font-size: .47rem;
+  font-weight: 650;
+  letter-spacing: .045em;
+  opacity: .72;
+}
+
+.personality-type-suspected {
+  border-style: dashed;
+  background: rgba(186, 104, 255, .06);
+}
+
+.personality-type-undiscussed {
+  border-color: rgba(181, 186, 193, .18);
+  background: rgba(181, 186, 193, .05);
+  color: #9499a6;
+}
+
 .faction-msf {
   border-color: rgba(88, 101, 242, .3);
   background: rgba(88, 101, 242, .14);
@@ -6675,6 +6700,7 @@ a.moment-connection-card:hover {
 }
 
 .character-profile-intro .faction-badges {
+  max-width: 100%;
   justify-content: flex-start;
 }
 
