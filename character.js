@@ -157,20 +157,37 @@ const profileSeeds = [
     beats: ['Building the Theory', 'Beyond the Cordon', 'Proof Becomes Exposure', 'Certainty after Survival']
   },
   {
-    slug: 'natalia', name: 'Natalia', code: 'ARC · 013', role: 'Private investigator and hidden Magiarchy contact', ageBand: 'Late thirties', factions: ['Private Eye', 'Magiarchy'], accent: 'neutral',
-    summary: 'A private investigator who can cross between ordinary cases and Magiarchy knowledge without fully belonging to either world.',
-    visual: 'Professional citywear, compact case tools, and magical details hidden in plain sight', palette: 'Black, wine red, parchment, muted violet', traits: ['Perceptive', 'Dry-witted', 'Private'],
-    origin: 'Natalia learns that clients rarely understand the real shape of the problem they are paying her to solve.', rupture: 'A missing-person trail touches the Spill and forces her Magiarchy knowledge into an ordinary investigation.', focus: 'Solving the case requires revealing enough truth to help without exposing the system she is expected to protect.', future: 'Her independence makes her useful to Lynleit, but also difficult for either MSF or the Magiarchy to control.',
-    ally: 'Lester', allyNote: 'Her agency connection to the practical details and consequences of each case.', rival: 'Selective truth', rivalNote: 'The habit of every faction to disclose only what serves its immediate need.', goal: 'Deliver an answer that helps the client rather than merely protecting the hidden order.',
-    beats: ['Cases with Missing Pieces', 'The Spill Enters the File', 'Two Kinds of Secrecy', 'An Investigator between Factions']
+    slug: 'natalia', name: 'Natalia', code: 'ARC · 013', role: 'Sole proprietor and private investigator', ageBand: 'Late thirties', factions: ['Private Eye', 'Magiarchy', 'Magic Academy'], affiliationTimeline: [{ name: 'Magic Academy', stage: 'Former professor' }, { name: 'Private Eye', stage: 'Current sole proprietor' }, { name: 'Magiarchy', stage: 'Magus affiliation' }], accent: 'neutral', materialStatus: 'Canon role + mock visual details',
+    summary: 'A talented Magus and former Magic Academy professor who now runs a private-investigation business with herself as its only employee, taking edge cases before the Magiarchy or Church learns they exist.',
+    visual: 'Professional citywear, compact case tools, and magical details hidden in plain sight', palette: 'Black, wine red, parchment, muted violet',
+    personalitySummary: 'Natalia combines academic magical expertise with the independence of a private investigator. Her practice exists in the narrow interval before an unusual case becomes an institutional matter, allowing a client or Magus to understand the danger before the Magiarchy or Church can take control of it.',
+    traits: [
+      { label: 'Investigative judgment', note: 'She specializes in edge cases that are too strange for ordinary inquiry but too sensitive to expose to magical authorities prematurely.' },
+      { label: 'Academic mastery', note: 'Her talent as a Magus once carried her into a professorship at the Magic Academy, giving her practical and scholarly access to the hidden world.' },
+      { label: 'Professional independence', note: 'The business has one employee: Natalia. She retains full control over which clients, risks, and secrets enter her office.' }
+    ],
+    origin: 'Natalia is a talented Magus who formerly taught as a professor at the Magic Academy. Why she left academic life remains unresolved. She now operates her own private-investigation business and is its sole employee.', rupture: 'Her practice becomes highly sought after because it handles edge cases that a Magus may need examined before either the Magiarchy or the Church gets wind of them. Every accepted case therefore carries a jurisdictional clock.', focus: 'Natalia investigates in the space between private need and institutional discovery, using magical literacy without surrendering the case to authorities whose first priority may be secrecy rather than the client.', future: 'The exact case that connects her private office to the central crisis remains undefined, as does the reason her former academic career ended.',
+    ally: 'Lester', allyNote: 'Lester is not her employee. He is an outside ally and a demiholumn whose part-Holumn nature sometimes allows him to accomplish what should be impossible for an ordinary investigator.', rival: 'Premature jurisdiction', rivalNote: 'Once the Magiarchy or Church learns enough about a case, Natalia may lose the time and independence that made a private investigation useful.', goal: 'Understand edge cases before the hidden authorities can define the terms of the investigation, while deciding when secrecy protects a client and when it protects only the system.',
+    beats: ['Professor at the Academy', 'A One-Woman Office', 'Before the Authorities Hear', 'The Demiholumn Ally']
   },
   {
-    slug: 'lester', name: 'Lester', code: 'ARC · 014', role: 'Private eye agency partner', factions: ['Private Eye'], accent: 'neutral',
-    summary: 'A grounded investigator who notices the human cost when Natalia\'s cases begin crossing into a world he was never meant to see.',
-    visual: 'Weathered professional clothing, paper records, and dependable analogue tools', palette: 'Brown, charcoal, cream, faded green', traits: ['Grounded', 'Patient', 'Protective'],
-    origin: 'Lester builds cases from ordinary motives, physical evidence, and the assumption that people remain understandable.', rupture: 'Natalia\'s Spill investigation produces gaps that no ordinary suspect or conspiracy can explain.', focus: 'He must decide whether trusting Natalia means accepting a truth she still refuses to state directly.', future: 'Once he sees enough of the hidden world, returning to ordinary private work may no longer be possible.',
-    ally: 'Natalia', allyNote: 'His closest professional connection and the person withholding the case\'s impossible context.', rival: 'The missing context', rivalNote: 'Evidence deliberately stripped of the facts needed to understand it.', goal: 'Protect the people inside the case, even when the institutions only protect the secret.',
-    beats: ['Ordinary Cases', 'A Partner with Another Life', 'Evidence That Cannot Fit', 'Past the Point of Ignorance']
+    slug: 'lester', name: 'Lester', code: 'ARC · 014', role: 'Demiholumn and Natalia\'s outside ally', factions: ['Independent'], accent: 'neutral', materialStatus: 'Canon nature + mock visual details',
+    summary: 'A demiholumn, half human and half Holumn, who remains outside Natalia\'s one-woman business but sometimes does the impossible on her behalf.',
+    visual: 'Weathered professional clothing, an outwardly human silhouette, and small visual irregularities that remain undefined', palette: 'Brown, charcoal, cream, faded green',
+    personalitySummary: 'Lester is an anomaly the hidden order does not yet explain: human enough to act as Natalia\'s trusted ally, Holumn enough to exceed ordinary limits. His exact capabilities, origin, and inner experience remain intentionally unresolved.',
+    traits: [
+      { label: 'Impossible intervention', note: 'His part-Holumn nature can make an otherwise impossible task achievable for Natalia, although the mechanism and limits remain unknown.' },
+      { label: 'Outside ally', note: 'He assists Natalia without joining her business. The distinction preserves the fact that her private office has only one employee.' },
+      { label: 'Unclassified existence', note: 'Neither the human nor Holumn half currently explains the whole person, leaving his place in the hidden world uncertain.' }
+    ],
+    nature: [
+      { label: 'Classification', title: 'Demiholumn', detail: 'Lester is half human and half Holumn. This is an inherent condition, not magecraft, a profession, or membership in Natalia\'s business.' },
+      { label: 'Known consequence', title: 'The impossible becomes possible', detail: 'His part-Holumn nature sometimes allows him to accomplish things Natalia could not obtain through ordinary investigation or Magus practice.' },
+      { label: 'Unresolved boundary', title: 'Human agency inside a Holumn nature', detail: 'How the two halves coexist, what they permit, and what they cost Lester have not yet been defined.' }
+    ],
+    origin: 'Lester is a demiholumn, half human and half Holumn. The circumstances of his birth or transformation, and whether either description is fully accurate, remain unknown.', rupture: 'He becomes Natalia\'s ally without becoming her employee. When one of her cases reaches an impossible barrier, his unusual nature can provide an answer that neither ordinary investigation nor conventional magecraft could reach.', focus: 'His existence gives Natalia access to possibilities that make her private work uniquely valuable, while also creating a secret that could become more dangerous than the case being investigated.', future: 'The first central case that requires Lester\'s intervention, the limits of his abilities, and the response of the Church or Magiarchy if he is discovered remain unresolved.',
+    ally: 'Natalia', allyNote: 'Natalia is his trusted investigator ally, not his employer. She calls on him when a case crosses the boundary between difficult and impossible.', rival: 'Classification', rivalNote: 'Any institution that reduces him to either a human witness or a Holumn threat will misunderstand what he is and may decide that he cannot be allowed to remain free.', goal: 'Help Natalia when ordinary methods fail while preserving the autonomy and secrecy of a life the hidden authorities may refuse to recognize.',
+    beats: ['Between Human and Holumn', 'Natalia\'s Outside Ally', 'The Impossible Favor', 'A Nature without an Explanation']
   },
   {
     slug: 'myka', name: 'Myka', code: 'ARC · 015', role: 'Magic Academy student', factions: ['Magic Academy', 'Magiarchy'], accent: 'neutral',
@@ -222,8 +239,8 @@ const skillProfiles = {
   reiner: { analysis: 70, influence: 48, awareness: 84, fieldcraft: 82, combat: 96, magic: 0 },
   yulia: { analysis: 62, influence: 80, awareness: 72, fieldcraft: 35, combat: 28, magic: 0 },
   hiyu: { analysis: 90, influence: 65, awareness: 92, fieldcraft: 52, combat: 30, magic: 0 },
-  natalia: { analysis: 90, influence: 78, awareness: 94, fieldcraft: 86, combat: 68, magic: 68 },
-  lester: { analysis: 80, influence: 70, awareness: 84, fieldcraft: 68, combat: 55, magic: 0 },
+  natalia: { analysis: 96, influence: 74, awareness: 97, fieldcraft: 91, combat: 60, magic: 94 },
+  lester: { analysis: 76, influence: 54, awareness: 92, fieldcraft: 84, combat: 72, magic: 91 },
   myka: { analysis: 75, influence: 70, awareness: 76, fieldcraft: 40, combat: 35, magic: 90 },
   'inspector-leo': { analysis: 84, influence: 65, awareness: 90, fieldcraft: 76, combat: 70, magic: 0 },
   'father-mikhail': { analysis: 86, influence: 82, awareness: 84, fieldcraft: 52, combat: 45, magic: 0 }
@@ -531,6 +548,20 @@ function renderProfile(profile) {
   });
   traitNotes.append(notesGrid);
   personality.append(traitNotes);
+
+  const natureSection = document.querySelector('#character-nature-section');
+  const nature = document.querySelector('#character-nature');
+  if (profile.nature?.length) {
+    profile.nature.forEach((entry, index) => {
+      const card = createElement('article', 'nature-card');
+      card.append(createElement('span', 'nature-index', String(index + 1).padStart(2, '0')));
+      const copy = createElement('div');
+      copy.append(createElement('small', '', entry.label), createElement('h3', '', entry.title), createElement('p', '', entry.detail));
+      card.append(copy);
+      nature.append(card);
+    });
+    natureSection.hidden = false;
+  }
 
   const tradecraftSection = document.querySelector('#character-tradecraft-section');
   const tradecraft = document.querySelector('#character-tradecraft');

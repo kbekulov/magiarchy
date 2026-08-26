@@ -18,6 +18,12 @@ There is no standard monster. Every manifestation carries the shape of the perso
 
 Containment always has a cost. Every intervention changes the balance. Suppressing one breach can move the pressure somewhere else.
 
+### A Demiholumn Exists
+
+Lester is a demiholumn, half human and half Holumn. His existence does not yet have a complete explanation. It is unclear whether he was born this way, became this way, or requires a different account entirely.
+
+What is known is practical. Lester retains human agency and acts as Natalia's trusted outside ally. His part-Holumn nature sometimes lets him accomplish what should be impossible through ordinary investigation or conventional magecraft. The limits, cost, and institutional consequences of that nature remain unresolved.
+
 ## Why Magic Stayed Hidden
 
 Magic survived because it stayed quiet. The Magi did not conquer the visible world. They contained problems, limited themselves, and made sure most people never knew they existed.
