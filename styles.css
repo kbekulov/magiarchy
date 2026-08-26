@@ -1092,6 +1092,13 @@ a {
     margin-top: 10px;
   }
   .character-heading .faction-badges .profile-badge { margin-top: 0; }
+  .character-heading .faction-badges .affiliation-badge {
+    display: inline-grid;
+    grid-auto-flow: row;
+    gap: 2px;
+    align-items: start;
+    white-space: nowrap;
+  }
   .character-traits { display: none; }
   .roster-meta { align-items: flex-start; gap: 12px; }
 }
