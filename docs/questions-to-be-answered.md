@@ -46,7 +46,6 @@ Rows are ordered from least answered to most answered. Questions at 100% are rem
 | Location | What is the Vilen park called, and what makes that location vulnerable to the Spill? | 10% |
 | MSF | Which officers learn that magic exists during the crisis, what remains compartmentalized, and how is the smaller post-Spill agency divided between magical and ordinary intelligence work? | 10% |
 | Magiarchy | What rules govern a Magiarch's removal, ordinary succession, and unresolved disputes between separate Magiarchates? | 10% |
-| The Church | What does the Church actually do when an ordinary witness learns too much, and how far can suppression doctrine go before containment becomes murder? | 10% |
 | Heyk | What physical or testimonial evidence survives the park massacre with Heyk, and how does it shape his later work for Drake and Sherie? | 15% |
 | Core mystery | What is the Spill's precise origin, and are the disappearances caused by a Holumn, several manifestations, deliberate Magus intervention, or another mechanism? | 15% |
 | Ensemble | What confirmed Spill functions connect Natalia, Lester, Myka, Inspector Leo, and Father Mikhail beyond their current provisional profile arcs? | 15% |
@@ -59,6 +58,7 @@ Rows are ordered from least answered to most answered. Questions at 100% are rem
 | Relationship | Which specific shared ordeals turn Lynleit and Kyrien's coerced handler-asset arrangement into trust, intimacy, and parenthood? | 25% |
 | Relationship | When does Lynleit and Kyrien's relationship first become sexual, is that encounter the conception of their son, and how does Lynleit conceal the resulting pregnancy before disappearing? | 25% |
 | Timeline | Exactly how many years pass between Lynleit's disappearance and return, and how old is her and Kyrien's son when she reappears? | 25% |
+| The Church | In which circumstances does suppression doctrine choose coercion, discrediting, forced institutional service, kidnapping, or lethal action, and where does containment become murder? | 25% |
 | Core mystery | Who ultimately orders Fionn's assassination, and which criminal Magi, rival Magiarchates, church actors, or infiltrators knowingly or unknowingly contribute to it? | 30% |
 | Resolution | What settles Helena's control of MSF and the political crisis if the Spill itself is never fully contained? | 30% |
 | Characters | What surnames belong to the cast, which characters intentionally use only one name, and what age bands remain undefined for Reiner, Tien, Lester, Myka, Inspector Leo, and Father Mikhail? | 30% |

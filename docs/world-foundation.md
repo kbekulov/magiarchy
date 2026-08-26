@@ -39,3 +39,11 @@ The Magi identify, contain, and erase breaches before the public can understand 
 Ordinary society still believes the world is secular, rational, and transparent. That belief only survives because ignorance is actively maintained.
 
 This is not a conflict between good and evil. The real conflict is truth versus stability. Institutions under pressure will harden, fracture, adapt, or mutate to survive.
+
+## Suppression Doctrine
+
+The Church calls its witness-control practice suppression doctrine. It exists to keep knowledge of magic from spreading through ordinary society, but it is not a single automatic punishment. The response depends on the witness, the credibility of their account, the scale of exposure, and the danger of leaving them outside institutional control.
+
+Possible responses include murder, assassination, or kidnapping; extortion, intimidation, or bribery; framing the witness as mentally ill; forced integration into Church staff or clergy; and forced integration into Magiarchy service staff or a comparable supervised role. The doctrine is deliberately flexible because every circumstance creates a different balance between secrecy, risk, and moral cost.
+
+Its darkest unresolved question is the boundary between containment and murder. A witness can be made safe by being absorbed, discredited, or coerced, but the same doctrine can also turn lethal action into an institutional procedure.
