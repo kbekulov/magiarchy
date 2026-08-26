@@ -7154,68 +7154,48 @@ a.moment-connection-card:hover {
   padding: 22px 18px 24px;
 }
 
-.character-type-record {
+.personality-type-meta {
   --type-color: #d2a8ff;
   display: grid;
-  grid-template-columns: minmax(0, 1fr) auto;
-  align-items: center;
-  gap: 18px;
-  padding: 14px 16px;
-  border: 1px solid #3a3c42;
-  border-left: 3px solid var(--type-color);
-  border-radius: 5px;
-  background: #25262a;
-}
-
-.character-profile-intro .character-type-record {
-  max-width: 520px;
-  margin: 0 0 18px;
-}
-
-.character-type-identity {
-  display: grid;
-  grid-template-columns: auto minmax(0, 1fr);
+  grid-template-columns: auto auto;
   align-items: baseline;
-  gap: 4px 12px;
+  gap: 2px 10px;
+  min-width: 146px;
+  margin-left: auto;
+  padding-left: 18px;
+  border-left: 1px solid #45474e;
+  text-align: right;
 }
 
-.character-type-identity small {
-  grid-column: 1 / -1;
+.personality-type-meta small {
   color: #858995;
-  font-size: .5rem;
+  font-size: .46rem;
   font-weight: 800;
-  letter-spacing: .08em;
+  letter-spacing: .1em;
   text-transform: uppercase;
 }
 
-.character-type-identity strong {
-  color: #f2f3f5;
+.personality-type-meta strong {
+  color: var(--type-color);
   font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
-  font-size: 1.1rem;
-  letter-spacing: .05em;
+  font-size: .78rem;
+  letter-spacing: .04em;
 }
 
-.character-type-identity span {
-  color: var(--type-color);
-  font-size: .6rem;
+.personality-type-meta span {
+  grid-column: 1 / -1;
+  color: #aeb1b9;
+  font-size: .48rem;
   font-weight: 700;
+  letter-spacing: .04em;
   text-transform: uppercase;
 }
 
-.character-type-status {
-  color: var(--type-color);
-  font-size: .52rem;
-  font-weight: 800;
-  letter-spacing: .07em;
-  text-transform: uppercase;
-}
-
-.character-type-suspected {
+.personality-type-suspected {
   --type-color: #c79ae9;
-  border-left-style: dashed;
 }
 
-.character-type-undiscussed {
+.personality-type-undiscussed {
   --type-color: #858995;
 }
 
@@ -7612,9 +7592,19 @@ a.moment-connection-card:hover {
     font-size: clamp(2.8rem, 16vw, 4.5rem);
   }
 
-  .character-type-record {
-    grid-template-columns: 1fr;
-    gap: 8px;
+  .profile-personality > header {
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+
+  .profile-personality .personality-type-meta {
+    width: calc(100% - 41px);
+    min-width: 0;
+    margin: 8px 0 0 41px;
+    padding: 10px 0 0;
+    border-top: 1px solid #3b3d43;
+    border-left: 0;
+    text-align: left;
   }
 
   .character-profile-sections {

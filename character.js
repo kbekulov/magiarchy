@@ -529,11 +529,12 @@ function renderProfile(profile) {
   const mbti = profile.mbti ?? { type: 'XXXX', status: 'Undiscussed' };
   const mbtiStatus = mbti.status.toLowerCase().replace(/[^a-z]+/g, '-');
   const typeRecord = document.querySelector('#character-profile-type');
-  typeRecord.classList.add(`character-type-${mbtiStatus}`);
-  const typeIdentity = createElement('div', 'character-type-identity');
-  typeIdentity.append(createElement('small', '', 'MBTI record'), createElement('strong', '', mbti.type));
-  typeIdentity.append(createElement('span', '', mbti.detail ? mbti.detail : 'Cognitive emphasis not established'));
-  typeRecord.append(typeIdentity, createElement('span', 'character-type-status', mbti.status));
+  typeRecord.classList.add(`personality-type-${mbtiStatus}`);
+  typeRecord.append(
+    createElement('small', '', 'MBTI'),
+    createElement('strong', '', mbti.type),
+    createElement('span', '', mbti.detail ? `${mbti.detail} · ${mbti.status}` : mbti.status)
+  );
 
   const portrait = document.querySelector('#character-profile-portrait');
   portrait.classList.add(`profile-accent-${profile.accent}`);
