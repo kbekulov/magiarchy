@@ -21,6 +21,7 @@ Story, character, world, relationship, institution, location, and event question
 | MSF | How is MSF funded, recruited, divided into departments and ranks, and authorized to operate across ordinary intelligence and magical threats? | 0% |
 | Magiarchy | How are Magiarchate boundaries established or revised, especially when a large country is divided into several jurisdictions? | 0% |
 | The Church | How are special envoys commanded across church territories, and which operational specializations belong to named envoys? | 0% |
+| Domestic thread | Does the grey cat ever receive a name, and who else in Lynleit's household accepts or resists its permanent presence? | 0% |
 | Helena | What specific suspicious acts does Lynleit witness before Fionn's death? | 5% |
 | Relationship | Which clash between Felix and Kyrien creates the most serious consequence, and does Felix ever move beyond reluctant tolerance of Lynleit's secret ally? | 5% |
 | Family | What is the private reality of Fionn and Helena's marriage, and why does Fionn exclude his wife from protocols he passes to Lynleit and senior officers? | 5% |
@@ -66,7 +67,6 @@ These questions determine sequence, event placement, reveal timing, or elapsed t
 | Area | Question | Confidence |
 | --- | --- | --- |
 | Family | When, if ever, does Kyrien learn that Lynleit bore his son, and where does that revelation belong in relation to Lynleit's elusive return and his leadership of MSF? | 0% |
-| Moment | Where does the family-house cat chase sit in the crisis chronology, who else is present, and what private aspect of Lynleit or her family does it reveal? | 0% |
 | Timeline | How much time passes between the first disappearance, the park quarantine, Kyrien's early recruitment, Fionn's much later assassination, Helena's takeover, and Lynleit's exile? | 10% |
 | Timeline | Exactly how many years pass between Lynleit's disappearance and return, and how old is her and Kyrien's son when she reappears? | 25% |
 | Relationship | When and where does Lynleit reveal Kyrien's recruitment to Felix and Reiner, and how long before Fionn's assassination does that disclosure occur? | 35% |
