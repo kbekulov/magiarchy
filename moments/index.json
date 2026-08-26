@@ -418,18 +418,20 @@
     "sceneType": "Non-sexual intimacy",
     "thread": "Lynleit and Kyrien",
     "location": "Kyrien's hotel-room hideout",
-    "summary": "After escaping pursuit and the accusation surrounding Fionn's death, Lynleit reaches Kyrien's hotel-room hideout and finally loses the composure that carried her through the immediate crisis.",
+    "summary": "After exhausting her available resources to escape the directed hunt for her arrest, Lynleit reaches Kyrien's hotel-room hideout and finally loses the composure that carried her through the immediate crisis.",
     "purpose": "Marks a much later threshold in an intimacy that began functionally after the river incident. Safety, grief, and care turn the coerced alliance into emotional reliance without making the relationship sexual yet.",
     "characters": [
       { "name": "Lynleit", "slug": "lynleit" },
       { "name": "Kyrien", "slug": "kyrien" }
     ],
     "characterAnchors": [
-      { "slug": "lynleit", "beat": "A War from Exile" },
+      { "slug": "lynleit", "beat": "Fugitive Counteroffensive" },
       { "slug": "kyrien", "beat": "Alliance under Pressure" }
     ],
     "known": [
       "Lynleit acts rationally and efficiently during the accusation and escape.",
+      "Helena's response is a directed hunt for Lynleit's arrest.",
+      "Lynleit uses every available resource she can reach to evade capture.",
       "Her emotions surface only after she reaches safety in Kyrien's hotel room.",
       "She stays the night.",
       "There is no sexual interaction between them.",
@@ -446,8 +448,52 @@
       "What does she say once her composure breaks?",
       "What changes between them the following morning?"
     ],
-    "continuityBefore": "Helena has used Fionn's death to frame Lynleit, forcing her to rely on the secret ally she recruited long before the danger became visible.",
-    "continuityAfter": "Their bond remains non-sexual at this point, but it becomes a private source of safety that later intimacy can grow from without feeling sudden or sought for its own sake. Their relationship becomes sexual only at the end of the first arc, immediately before Lynleit's pregnancy and disappearance.",
+    "continuityBefore": "Helena has used Fionn's death to frame Lynleit and direct a hunt for her arrest, forcing her to rely on the secret ally she recruited long before the danger became visible.",
+    "continuityAfter": "Their bond remains non-sexual at this point, but it becomes a private source of safety that later intimacy can grow from without feeling sudden or sought for its own sake. Kyrien next helps Lynleit establish contact with Felix and Reiner, beginning her slow campaign to reclaim MSF while she remains hunted.",
+    "chapterSlug": null,
+    "updated": "2026-08-26"
+  },
+  {
+    "slug": "the-first-lines-back-into-msf",
+    "code": "MOM-013",
+    "title": "The First Lines Back into MSF",
+    "status": "Continuity bridge",
+    "placementStatus": "Core sequence confirmed, mechanics unresolved",
+    "timelinePhase": "clear-her-name",
+    "timelineLabel": "Clear Her Name",
+    "sequence": 2,
+    "sceneType": "Fugitive counteroffensive",
+    "thread": "Reclaiming MSF",
+    "location": "Unspecified secure contact points",
+    "summary": "While Lynleit remains the target of an active arrest hunt, Kyrien helps her find secure ways to contact Felix and Reiner. Their reconnection becomes the first step in her slow campaign to reclaim MSF from Helena.",
+    "purpose": "Bridges Lynleit's immediate escape and hotel refuge to an organized counteroffensive. The hidden ally Helena did not know becomes the route back to the two trusted officers she does know.",
+    "characters": [
+      { "name": "Lynleit", "slug": "lynleit" },
+      { "name": "Kyrien", "slug": "kyrien" },
+      { "name": "Felix", "slug": "felix" },
+      { "name": "Reiner", "slug": "reiner" }
+    ],
+    "characterAnchors": [
+      { "slug": "lynleit", "beat": "Fugitive Counteroffensive" },
+      { "slug": "kyrien", "beat": "Alliance under Pressure" },
+      { "slug": "felix", "beat": "Loyalty after Fionn" },
+      { "slug": "reiner", "beat": "Watching Kyrien" }
+    ],
+    "known": [
+      "Lynleit remains actively hunted for arrest after escaping the immediate accusation.",
+      "Kyrien helps her find ways to contact Felix and Reiner without surrendering her location.",
+      "Felix and Reiner are the first trusted MSF officers brought back into her fugitive network.",
+      "The renewed contact begins Lynleit's slow effort to reclaim MSF from Helena.",
+      "The counteroffensive develops while Lynleit remains hunted rather than after the danger has passed."
+    ],
+    "openQuestions": [
+      "What secure method does Kyrien use to reach Felix and Reiner?",
+      "Which officer responds first, and how does Lynleit prove the contact is genuine?",
+      "What first foothold inside MSF can Felix and Reiner give her without exposing themselves?",
+      "Which arresting authorities and MSF units are actively searching for Lynleit at this point?"
+    ],
+    "continuityBefore": "Lynleit reaches Kyrien's hotel room after exhausting her immediate escape resources, and his refuge becomes the only stable point in her flight.",
+    "continuityAfter": "The four-person link gives Lynleit an internal line into Helena's MSF and begins a prolonged contest for legitimacy, intelligence, and control under the pressure of an active manhunt.",
     "chapterSlug": null,
     "updated": "2026-08-26"
   },
@@ -514,7 +560,7 @@
     "known": [
       "Fionn is successfully assassinated.",
       "His death creates the opening Helena uses to take control of MSF.",
-      "Helena frames Lynleit for the assassination and drives her into exile.",
+      "Helena frames Lynleit for the assassination and directs a hunt for her arrest.",
       "Helena plays a major role in bringing about Fionn's assassination.",
       "The broader conflict already includes pressure from criminal Magi, foreign Magiarchates, and church actors.",
       "The existence of several plausible participants does not establish which one ordered or executed the assassination."
@@ -530,7 +576,7 @@
       "What precise actions does Helena take, and how much of the full plan does she understand?"
     ],
     "continuityBefore": "Manufactured political strife isolates Fionn and divides his attention while the Spill develops.",
-    "continuityAfter": "Helena converts the vacancy into control of MSF, makes Lynleit the official suspect, and forces her into exile while the true authorship remains hidden.",
+    "continuityAfter": "Helena converts the vacancy into control of MSF, makes Lynleit the official suspect, and directs a hunt for her arrest while the true authorship remains hidden.",
     "chapterSlug": null,
     "updated": "2026-08-24"
   }
