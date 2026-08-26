@@ -56,7 +56,6 @@ Story, character, world, relationship, institution, location, and event question
 | Holumns | How do Holumns make victims disappear, where are those victims taken, and can any of them return? | 20% |
 | MSF | What legal charter, oversight mechanism, and command structure give MSF authority while allowing Helena, Lynleit, and later Kyrien to claim its director seat? | 20% |
 | Magic Academy | How are students admitted and trained, who governs the Academy, and what formal accountability connects its lineage funders, Magi professors, the Magiarchy, and the churches? | 20% |
-| Park trespass | How do Hiyu and Yulia enter the quarantined park, what theory leads Hiyu inside, what do they encounter, and how do they survive or escape? | 20% |
 | MSF operations | Which operation first demonstrates Felix's hacking and communications role alongside Reiner's brute-force role, and how does Lynleit deploy their knight-and-rook pairing when both are available? | 20% |
 | Core mystery | Who is the first missing man, how does he cause the Spill, and is he acting for the conspiracy, being manipulated by it, or creating an independent crisis that others exploit? | 30% |
 | Core mystery | Who ultimately orders Fionn's assassination, and which criminal Magi, rival Magiarchates, church actors, or infiltrators knowingly or unknowingly contribute to it? | 30% |
@@ -66,6 +65,7 @@ Story, character, world, relationship, institution, location, and event question
 | The Church | How do the Church and Magiarchy decide which suppression measure to use, what form must Church sanction take, and where does containment become murder? | 35% |
 | Magiarchy | What rules define a fitness contest, duel, or sanctioned war, and who decides that the result is legitimate? | 35% |
 | Kyrien | Who is the Magus politician targeted by Kyrien, what office do they hold, what exact role did they play in his father's death, and how does their survival later harm Lynleit? | 40% |
+| Park trespass | How do Hiyu and Yulia bypass the quarantine cordon, what do they encounter, how do they survive or escape, and what lasting evidence or injury follows them out? | 45% |
 | Hotel refuge | Which resources and route allow Lynleit to reach Kyrien's hotel room without leading her pursuers to him, what finally breaks her composure, and what changes between them the following morning? | 45% |
 | Relationship | Which additional functional, non-sexual encounters bridge the river aftermath, the much later hotel-room refuge, and Lynleit and Kyrien's end-of-arc sexual threshold? | 50% |
 | Covert alliance | Which MSF resources do Drake and Sherie request, what concessions or favors do they offer, and what operational limits does Lynleit impose on the hilltop agreement? | 50% |

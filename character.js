@@ -141,20 +141,50 @@ const profileSeeds = [
     beats: ['Friend and Bodyguard', 'The Anti-Protocol Compartment', 'Trusting Lynleit', 'Watching Kyrien']
   },
   {
-    slug: 'yulia', name: 'Yulia', code: 'ARC · 011', role: 'Criminology student', ageBand: 'Mid-twenties', factions: ['Independent'], accent: 'neutral', materialStatus: 'Canon role + mock details',
-    summary: 'A criminology student dragged by Hiyu into Vilen\'s quarantined park in pursuit of evidence neither is prepared to interpret.',
-    visual: 'Civilian layers, a strong color accent, and keepsakes treated as practical equipment', palette: 'Cream, charcoal, muted red, pale gold', traits: ['Empathetic', 'Persistent', 'Defiant'],
-    origin: 'Yulia studies criminology at university with Hiyu and approaches unexplained cases without access to the institutions shaping the hidden world.', rupture: 'Hiyu\'s confidence that he understands the park case draws her beyond the quarantine cordon so he can gather evidence.', focus: 'Inside the park, academic methods meet a threat that refuses the categories they brought with them.', future: 'What Yulia witnesses can turn her into both a liability to secrecy and a grounded counterweight to Hiyu\'s certainty.',
-    ally: 'Hiyu', allyNote: 'Her fellow criminology student, whose conviction and appetite for proof bring her into the quarantined park.', rival: 'Hiyu\'s overconfidence', rivalNote: 'The assumption that recognizing a pattern means understanding the danger behind it.', goal: 'Survive the park, determine what Hiyu has involved her in, and preserve the evidence without mistaking theory for certainty.',
-    beats: ['Criminology Student', 'Dragged into the Park', 'Evidence without a Category', 'A Witness Who Remembers']
+    slug: 'yulia', name: 'Yulia', code: 'ARC · 011', role: 'Criminology student and procedural investigator', ageBand: 'Mid-twenties', factions: ['Independent'], accent: 'neutral', materialStatus: 'Canon personality and relationship + mock visual details',
+    summary: 'A top criminology student whose meticulous discipline makes her the evidentiary counterweight to Hiyu\'s wild inference, even when reluctant loyalty follows him into Vilen\'s quarantined park.',
+    visual: 'Precise civilian layers, neatly organized study materials, and an attractive but severe presence whose expression rarely softens into a smile', palette: 'Cream, charcoal, muted red, pale gold',
+    appearanceDetails: [
+      ['Expression', 'Yulia is widely regarded as attractive, but her reputation for never smiling gives her a distant and severe first impression.'],
+      ['Working habits', 'Her notebooks, evidence materials, and personal effects are kept orderly enough that an interruption is immediately visible.']
+    ],
+    personalitySummary: 'Yulia is a classical ISTJ: methodical, detail-oriented, reliable, and most comfortable when evidence can be tested against a stable procedure. Hiyu\'s constant eureka moments and improvised logic give her a headache, but she repeatedly follows him anyway. Their opposition works because she checks what he leaps toward, while he forces her to consider possibilities no established protocol would admit.',
+    traits: [
+      { label: 'Procedural rigor', note: 'She is at the top of her criminology class because she applies method consistently, respects chains of evidence, and notices when a required step has been skipped.' },
+      { label: 'Detail verification', note: 'Yulia is strongest when a theory must be tested against the record, an observation must be preserved accurately, or an exciting conclusion must survive patient scrutiny.' },
+      { label: 'Reluctant loyalty', note: 'She complains, resists, and wishes she were elsewhere, yet still goes with Hiyu when leaving him alone would place him in greater danger.' }
+    ],
+    tradecraft: [
+      { label: 'Academic strength', title: 'Classical criminological method', detail: 'Yulia follows evidence handling, observation, reconstruction, and procedural discipline with a consistency Hiyu does not naturally possess.' },
+      { label: 'Team function', title: 'Verification and correction', detail: 'She tests Hiyu\'s intuitive threads, separates useful anomalies from noise, and gives their investigations a record another person could actually follow.' },
+      { label: 'Failure condition', title: 'Procedure without precedent', detail: 'The quarantined park is especially dangerous because its supernatural conditions do not respect the categories or safety assumptions on which her strongest methods depend.' }
+    ],
+    origin: 'Yulia and Hiyu study criminology at the same university. She stands at the top of the class through discipline, detail, and command of established method, while Hiyu makes his reputation through personal investigations that ignore the path everyone else was taught to follow. Their interaction is often painful to observe: he chases another possibility, she develops another headache, and neither notices how accustomed they are becoming to the other\'s company.', rupture: 'Hiyu concludes that magic may be involved in the park disappearances despite not knowing that magic actually exists. Yulia considers the theory absurd, but joins his attempt to enter the quarantine partly to prove him wrong and partly because she does not trust him to remain safe alone.', focus: 'Inside the park, Yulia\'s meticulous observation remains valuable, but ordinary criminological protocol cannot tell her what rules the environment follows. Her attachment to Hiyu becomes a second vulnerability because protecting him can pull her deeper into a danger neither of them understands.', future: 'Their original aversion gradually becomes dependence and then unacknowledged romantic tension. Yulia refuses to name it, while Hiyu remains so absorbed in ideas that he does not understand why her company has become necessary to him.',
+    ally: 'Hiyu', allyNote: 'Her opposite in method and temperament. He generates possibilities she would never entertain, while she gives his ideas evidentiary discipline. Over time, irritation becomes an attachment neither understands clearly.', rival: 'An investigation without rules', rivalNote: 'Yulia can master a known procedure, but the park confronts her with evidence whose governing categories have not yet been admitted to exist.', goal: 'Keep Hiyu alive, test his impossible theory honestly, and preserve enough reliable evidence to understand what ordinary criminology cannot explain.',
+    beats: ['Top of the Class', 'Dragged into the Park', 'Proof without Protocol', 'Addicted to the Contrast']
   },
   {
-    slug: 'hiyu', name: 'Hiyu', code: 'ARC · 012', role: 'Criminology student', ageBand: 'Mid-twenties', factions: ['Independent'], accent: 'neutral', materialStatus: 'Canon role + mock details',
-    summary: 'A criminology student whose confidence in his own theory drives him into Vilen\'s quarantined park and pulls Yulia in after him.',
-    visual: 'Soft civilian clothing mixed with portable research tools and improvised storage', palette: 'Black, soft blue, warm grey, white', traits: ['Curious', 'Inventive', 'Restless'],
-    origin: 'Hiyu studies criminology with Yulia and builds a theory around the disappearances from public fragments and his own pattern reading.', rupture: 'Convinced that he knows what is happening but lacks proof, he enters the quarantined park and drags Yulia into the operation.', focus: 'His need to validate the theory places both students inside a danger that evidence alone cannot make manageable.', future: 'Surviving the park may force Hiyu to distinguish genuine insight from the self-confidence that made him underestimate the threat.',
-    ally: 'Yulia', allyNote: 'His fellow student and unwilling counterweight, pulled into danger by his need for evidence.', rival: 'His own certainty', rivalNote: 'The belief that being directionally correct makes an unknown environment safe to investigate.', goal: 'Gather proof inside the park, then survive what his theory failed to account for.',
-    beats: ['Building the Theory', 'Beyond the Cordon', 'Proof Becomes Exposure', 'Certainty after Survival']
+    slug: 'hiyu', name: 'Hiyu', code: 'ARC · 012', role: 'Criminology student and intuitive investigator', ageBand: 'Mid-twenties', factions: ['Independent'], accent: 'neutral', materialStatus: 'Canon personality and relationship + mock visual details',
+    summary: 'An ENTP criminology student whose restless pattern-making reaches the impossible possibility of magic, then carries him and Yulia into Vilen\'s quarantined park in search of proof.',
+    visual: 'Soft civilian clothing, portable research tools stored wherever they fit, and the distracted posture of someone following an idea that has already left the room', palette: 'Black, soft blue, warm grey, white',
+    appearanceDetails: [
+      ['Working habits', 'Notes, clippings, and improvised tools accumulate according to the investigation in his head rather than any system another person could easily reconstruct.'],
+      ['Attention', 'His gaze often passes over the social scene around him because several competing explanations are already occupying it.']
+    ],
+    personalitySummary: 'Hiyu is an ENTP driven by possibility, contradiction, and the pleasure of making an unlikely pattern click. He constantly experiences eureka moments, builds protocols while using them, and abandons a clean path as soon as a stranger one becomes interesting. He has a reputation for ignoring women because ideas consume his attention so completely. This also leaves him oblivious to the romantic tension slowly forming with Yulia.',
+    traits: [
+      { label: 'Divergent inference', note: 'He can connect fragments through possibilities other investigators reject too early, which is how a non-Magus with no knowledge of magic nevertheless suspects it.' },
+      { label: 'Improvised method', note: 'Hiyu invents investigative procedures in response to the problem in front of him, making him flexible where Yulia is disciplined and unreliable where she is exact.' },
+      { label: 'Dangerous conviction', note: 'A brilliant possibility becomes a plan before he has established whether the environment is survivable, and being directionally correct can make him more reckless rather than less.' }
+    ],
+    tradecraft: [
+      { label: 'Investigative strength', title: 'Generative hypothesis', detail: 'Hiyu produces explanations from weak signals and follows intuitive threads far beyond what academic consensus would permit.' },
+      { label: 'Independent practice', title: 'Personal investigations', detail: 'His strongest work occurs outside the classroom, where he can pursue an anomaly without waiting for permission or adapting it to an assigned method.' },
+      { label: 'Failure condition', title: 'Insight without calibration', detail: 'Correctly suspecting magic does not teach him what magic can do, how to gather evidence safely, or when an unexplained environment has already outmatched him.' }
+    ],
+    origin: 'Hiyu studies criminology with Yulia, but his real standing comes from personal investigations rather than class rank. Where she masters the established discipline, he follows loose fragments, invents methods on the spot, and finds possibilities that should sound ridiculous until they begin explaining too much. Their constant friction gradually becomes the structure both rely on.', rupture: 'From the public fragments surrounding the disappearances, Hiyu suspects that magic may be involved. He has no hidden knowledge and does not know magic exists. The hypothesis simply fits his intuitive pattern strongly enough that he decides to enter the quarantined park for evidence, pulling a reluctant Yulia into the attempt.', focus: 'His impossible hunch may be directionally correct, but it gives him no practical understanding of Holumns, the Spill, or survival inside the park. The same conviction that lets him cross an intellectual boundary also carries both students across a physical one.', future: 'Hiyu and Yulia become increasingly dependent on the contrast between them. He remains largely unaware that their need for one another is developing romantic weight, while survival must teach him that a true idea is not the same thing as a complete or safe understanding.',
+    ally: 'Yulia', allyNote: 'The procedural counterweight he complains around, relies upon constantly, and gradually becomes unable to investigate without. He does not recognize the emotional meaning of that dependence.', rival: 'Calibration', rivalNote: 'His mind is excellent at opening possibilities and poor at deciding how much confidence, danger, or action a partial pattern deserves.', goal: 'Prove that the impossible explanation fits the disappearances, then learn enough restraint to keep the discovery from destroying both investigators.',
+    beats: ['The Impossible Theory', 'Beyond the Cordon', 'A Correct but Incomplete Hunch', 'Dependence without Recognition']
   },
   {
     slug: 'natalia', name: 'Natalia', code: 'ARC · 013', role: 'Sole proprietor and private investigator', ageBand: 'Late thirties', factions: ['Private Eye', 'Magiarchy', 'Magic Academy'], affiliationTimeline: [{ name: 'Magic Academy', stage: 'Former professor' }, { name: 'Private Eye', stage: 'Current sole proprietor' }, { name: 'Magiarchy', stage: 'Magus affiliation' }], accent: 'neutral', materialStatus: 'Canon role + mock visual details',
@@ -237,8 +267,8 @@ const skillProfiles = {
   drake: { analysis: 98, influence: 42, awareness: 91, fieldcraft: 62, combat: 55, magic: 0 },
   felix: { analysis: 88, influence: 80, awareness: 86, fieldcraft: 94, combat: 62, magic: 0 },
   reiner: { analysis: 70, influence: 48, awareness: 84, fieldcraft: 82, combat: 96, magic: 0 },
-  yulia: { analysis: 62, influence: 80, awareness: 72, fieldcraft: 35, combat: 28, magic: 0 },
-  hiyu: { analysis: 90, influence: 65, awareness: 92, fieldcraft: 52, combat: 30, magic: 0 },
+  yulia: { analysis: 92, influence: 38, awareness: 90, fieldcraft: 46, combat: 24, magic: 0 },
+  hiyu: { analysis: 93, influence: 56, awareness: 64, fieldcraft: 48, combat: 27, magic: 0 },
   natalia: { analysis: 96, influence: 74, awareness: 97, fieldcraft: 91, combat: 60, magic: 94 },
   lester: { analysis: 76, influence: 54, awareness: 92, fieldcraft: 84, combat: 72, magic: 91 },
   myka: { analysis: 75, influence: 70, awareness: 76, fieldcraft: 40, combat: 35, magic: 90 },

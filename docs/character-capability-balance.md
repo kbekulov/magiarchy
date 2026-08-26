@@ -30,12 +30,10 @@ These questions define what each character can do, what they cannot do, and why 
 | Natalia | What kind of magecraft does Natalia specialize in, what can she not investigate alone, and what cost or risk prevents academic mastery from solving every edge case? | 0% |
 | Lester | What can Lester's demiholumn nature actually do, what can it never do, what triggers it, and what cost or danger follows an impossible intervention? | 0% |
 | Father Mikhail | What political, intelligence, combat, or assassination specialization belongs to Father Mikhail, and where is he weaker than another special envoy? | 0% |
-| Yulia | Which practical strengths distinguish Yulia from Hiyu, and what vulnerability makes entering the park especially dangerous for her? | 0% |
 | Son | Does Lynleit and Kyrien's son inherit the blue-flame lineage, another ability, or no Magus talent, and how would any inheritance remain balanced against both parents? | 0% |
 | Lynleit | What practical limits, bodily costs, and backlash govern her unsafe blue-flame output and secret water walking, and which problems still require Fionn's greater virtuosity or her allies' non-magical skills? | 15% |
 | Myka | Which Academy disciplines make Myka gifted, which remain weak, and how does inexperience constrain high magical potential? | 15% |
 | Inspector Leo | Which investigative strengths belong specifically to Leo, and what does restricted clearance prevent him from accomplishing without Natalia, MSF, or Church access? | 20% |
-| Hiyu | Is Hiyu genuinely exceptional at analysis and awareness, or does overconfidence cause him to mistake partial pattern recognition for accurate situational understanding? | 25% |
 | Tien | What constraints, personal blind spots, or counters keep Tien's elite fieldcraft and combat from making Helena's concealed assassin an automatic solution? | 25% |
 | Sherie | Beyond charm and quick thinking, what can Sherie execute without Drake, and which strategic or operational tasks still require her teacher? | 30% |
 | Drake | Where does Drake's strategic mastery fail without Sherie's social execution, and how capable is he when a problem becomes physical or magical rather than political? | 30% |
@@ -43,6 +41,8 @@ These questions define what each character can do, what they cannot do, and why 
 | Felix | What technical access, equipment, preparation, and failure conditions limit Felix's hacking and communications work? | 35% |
 | Reiner | How strong and durable is Reiner in practical terms, and what kinds of distance, deception, technology, or magic neutralize his direct approach? | 35% |
 | Kyrien | Which blind spots remain despite Kyrien's late mastery of intelligence tradecraft, and how much weaker is his opening-chapter self than the later MSF director shown by the current graph? | 40% |
+| Axis model | Should Analysis split into procedural verification and generative inference so Yulia and Hiyu's opposite investigative strengths are visible instead of receiving nearly identical scores under one label? | 40% |
+| Yulia and Hiyu | Which concrete park tasks require Yulia's procedural rigor, which require Hiyu's improvisation, and where does each method fail without the other? | 50% |
 
 ## Balance contradictions
 
@@ -53,7 +53,6 @@ This table is limited to current profile claims or graph presentations that cann
 | Fionn | Fionn currently scores 80 or higher on every axis and reaches 98 in both Analysis and Magic, leaving no meaningful comparative weakness despite a story in which rivals isolate and eliminate him. | 0% |
 | Natalia | Natalia currently scores 91 or higher in Analysis, Awareness, Fieldcraft, and Magic before her specialization, limitations, or dependence on Lester have been defined. | 0% |
 | Lester | Lester receives a Magic score of 91 even though his profile explicitly classifies demiholumn nature as inherent and not magecraft. | 0% |
-| Hiyu | Hiyu's graph presents elite Analysis and Awareness while his confirmed story role depends on overconfidence, incomplete understanding, and failure to recognize the park's danger. | 0% |
 | Father Mikhail | Father Mikhail has exact comparative scores despite his special-envoy specialization and delegated practical abilities being entirely undefined. | 0% |
 | Kyrien | Kyrien's graph presents near-peak intelligence tradecraft as a timeless profile value even though that mastery is explicitly the result of gradual development and peaks only around his later MSF leadership. | 10% |
 | System-wide | Exact graph scores still look more authoritative than the underlying canon permits, although profiles now label the assessment and values as provisional and link directly to this balance ledger. | 30% |

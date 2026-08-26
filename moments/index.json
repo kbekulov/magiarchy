@@ -382,8 +382,8 @@
     "sceneType": "Civilian trespass",
     "thread": "The Vilen quarantine",
     "location": "The quarantined park in Vilen",
-    "summary": "Criminology student Hiyu enters the quarantined park in search of proof and drags his fellow student Yulia into the risk.",
-    "purpose": "Gives the public-facing investigation a reckless civilian thread and turns academic certainty into direct exposure to the Spill.",
+    "summary": "Hiyu enters the quarantined park to test his impossible suspicion that magic is involved in the disappearances. Yulia goes with him to prove the theory wrong and keep him alive.",
+    "purpose": "Places two opposite investigative methods inside the same impossible case: Hiyu's generative intuition reaches the right category without understanding it, while Yulia's disciplined criminology loses the ordinary rules it depends upon.",
     "characters": [
       { "name": "Hiyu", "slug": "hiyu" },
       { "name": "Yulia", "slug": "yulia" }
@@ -394,19 +394,20 @@
     ],
     "known": [
       "Hiyu and Yulia are university students in their mid-twenties who study criminology.",
-      "Hiyu is convinced he understands part of the case but believes he needs evidence from inside the park.",
-      "He draws Yulia into entering the quarantined area with him."
+      "Yulia is a classical ISTJ and the top student in their class, with meticulous command of detail and criminological protocol.",
+      "Hiyu is an ENTP whose personal investigations rely on intuitive threads, improvised methods, and rapid hypothesis generation.",
+      "Without knowing that magic exists, Hiyu suspects it is involved in the disappearances.",
+      "Yulia enters partly to prove him wrong and partly to prevent him from facing the danger alone."
     ],
     "openQuestions": [
       "How do they bypass the cordon?",
-      "What does Hiyu believe is happening before they enter?",
       "What do they find, and how do they survive or escape?",
-      "Does Yulia enter willingly or only realize the full plan too late?"
+      "What lasting evidence, injury, or change in their relationship follows the trespass?"
     ],
-    "continuityBefore": "The widening disappearance case gives Hiyu enough fragments to become overconfident in his theory.",
-    "continuityAfter": "Whatever they witness must connect two civilian students to the larger institutional response without giving them immediate certainty about magic.",
+    "continuityBefore": "The widening disappearance case gives Hiyu enough fragments to form an impossible but directionally correct theory. Yulia rejects the conclusion but refuses to let him test it alone.",
+    "continuityAfter": "Whatever they witness must connect two civilian students to the larger institutional response without turning Hiyu's correct category into complete knowledge of magic.",
     "chapterSlug": null,
-    "updated": "2026-08-26"
+    "updated": "2026-08-27"
   },
   {
     "slug": "shelter-after-the-accusation",
