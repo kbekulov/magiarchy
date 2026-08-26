@@ -57,7 +57,7 @@ Story, character, world, relationship, institution, location, and event question
 | The Church | How do the Church and Magiarchy decide which suppression measure to use, what form must Church sanction take, and where does containment become murder? | 35% |
 | Magiarchy | What rules define a fitness contest, duel, or sanctioned war, and who decides that the result is legitimate? | 35% |
 | Kyrien | Who is the Magus politician targeted by Kyrien, what office do they hold, what exact role did they play in his father's death, and how does their survival later harm Lynleit? | 40% |
-| Relationship | Beyond the drenched river aftermath and the hotel-room refuge, which additional shared ordeals complete Lynleit and Kyrien's movement from coerced alliance into trust and intimacy? | 40% |
+| Relationship | Which additional functional, non-sexual encounters bridge the river aftermath, the much later hotel-room refuge, and Lynleit and Kyrien's end-of-arc sexual threshold? | 50% |
 | Covert alliance | Which MSF resources do Drake and Sherie request, what concessions or favors do they offer, and what operational limits does Lynleit impose on the hilltop agreement? | 50% |
 
 ## Chronology questions
@@ -70,4 +70,4 @@ These questions determine sequence, event placement, reveal timing, or elapsed t
 | Timeline | How much time passes between the first disappearance, the park quarantine, Kyrien's early recruitment, Fionn's much later assassination, Helena's takeover, and Lynleit's exile? | 10% |
 | Timeline | Exactly how many years pass between Lynleit's disappearance and return, and how old is her and Kyrien's son when she reappears? | 25% |
 | Relationship | When and where does Lynleit reveal Kyrien's recruitment to Felix and Reiner, and how long before Fionn's assassination does that disclosure occur? | 35% |
-| Relationship | When before the first arc's closing battle do Lynleit and Kyrien first have sex, is that encounter the conception of their son, and how much time passes before Lynleit disappears? | 50% |
+| Relationship | Is Lynleit and Kyrien's end-of-arc sexual encounter the conception of their son, when does Lynleit realize she is pregnant, and how much time passes before she disappears? | 65% |

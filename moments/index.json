@@ -280,7 +280,7 @@
     "code": "MOM-006",
     "title": "The Boat Beneath the Bridge",
     "status": "Key scene",
-    "placementStatus": "Provisional placement",
+    "placementStatus": "Relationship order confirmed",
     "timelinePhase": "unknowing-convergence",
     "timelineLabel": "Unknowing Convergence",
     "sequence": 4,
@@ -288,7 +288,7 @@
     "thread": "The suspected coup",
     "location": "Unspecified bridge and river",
     "summary": "Lynleit leads an unsanctioned nighttime infiltration of a passing boat. The intelligence-only raid collapses into a supernatural calamity and forces her to use her secret ability to walk on water in combat for the first time.",
-    "purpose": "Turns a political conspiracy investigation into the first direct proof that Magi are involved, while exposing Lynleit's most forbidden talent under conditions she cannot fully control.",
+    "purpose": "Turns a political conspiracy investigation into the first direct proof that Magi are involved, exposes Lynleit's most forbidden talent under conditions she cannot fully control, and creates the first trigger in her slowly developing intimacy with Kyrien.",
     "characters": [
       { "name": "Lynleit", "slug": "lynleit" },
       { "name": "Felix", "slug": "felix" },
@@ -308,8 +308,11 @@
       "The crisis becomes the first combat test of her ability to walk on water.",
       "Only Kyrien witnesses Lynleit walking on water.",
       "Kyrien is too careful to acknowledge what he saw and feigns innocence convincingly.",
-      "Lynleit wonders whether he noticed, but decides not to press him when he gives her nothing to test.",
-      "They both reach the night park drenched and sit together against a tree after saving themselves."
+      "They reach the night park drenched and struggling to catch their breath.",
+      "They sit with their backs pressed together to share body heat while they recover.",
+      "Lynleit indirectly asks whether Kyrien saw anything strange during the escape.",
+      "Kyrien denies seeing anything, and his careful performance of innocence gives Lynleit nothing she can safely test.",
+      "This act of unspoken protection becomes the first trigger in an intimacy that develops slowly and functionally across the story."
     ],
     "openQuestions": [
       "What supernatural force remains beneath the river after the boat operation?",
@@ -317,7 +320,7 @@
       "What intelligence survives the failed operation?"
     ],
     "continuityBefore": "The covert meeting must identify the boat and establish why observation is safer than interception.",
-    "continuityAfter": "Drenched and seated against a tree in the night park, Lynleit and Kyrien preserve a mutual silence around what he witnessed. Lynleit must still decide what to tell the scattered team, Drake, and Sherie now that the investigation points toward Magi.",
+    "continuityAfter": "Drenched and seated back to back in the night park, Lynleit and Kyrien preserve a mutual silence around what he witnessed. The shared warmth and his refusal to expose her establish physical trust without romance being stated or pursued. Much later, after Fionn's murder, the hotel-room refuge deepens that trust into emotional reliance.",
     "chapterSlug": null,
     "updated": "2026-08-26"
   },
@@ -416,7 +419,7 @@
     "thread": "Lynleit and Kyrien",
     "location": "Kyrien's hotel-room hideout",
     "summary": "After escaping pursuit and the accusation surrounding Fionn's death, Lynleit reaches Kyrien's hotel-room hideout and finally loses the composure that carried her through the immediate crisis.",
-    "purpose": "Develops intimacy through safety, grief, and functional care before the relationship becomes sexual, showing how repeated crises turn a coerced alliance into emotional reliance.",
+    "purpose": "Marks a much later threshold in an intimacy that began functionally after the river incident. Safety, grief, and care turn the coerced alliance into emotional reliance without making the relationship sexual yet.",
     "characters": [
       { "name": "Lynleit", "slug": "lynleit" },
       { "name": "Kyrien", "slug": "kyrien" }
@@ -431,19 +434,58 @@
       "She stays the night.",
       "There is no sexual interaction between them.",
       "Kyrien holds her while she falls asleep.",
-      "Their earlier intimate encounters are non-sexual and often arise from isolation, danger, cold, near drowning, or emotional rupture.",
+      "The hotel-room refuge occurs much later than the river incident and only after Fionn has been murdered.",
+      "Their earlier intimate encounters are non-sexual and arise functionally from isolation, danger, cold, near drowning, or emotional rupture.",
+      "The first trigger is Kyrien's silent protection of Lynleit's water-walking secret and their back-to-back attempt to share body heat after the river incident.",
       "Later sexual intimacy is not deliberately pursued. It develops as something emotionally unavoidable.",
-      "The sexual intimacy most likely occurs shortly before the closing battle of the first arc.",
-      "Lynleit's pregnancy begins close to the end of the first arc, immediately before her disappearance period."
+      "Their relationship becomes sexual at the end of the first arc.",
+      "The sexual encounter precedes Lynleit's pregnancy and disappearance."
     ],
     "openQuestions": [
       "How does Lynleit locate the hideout without leading pursuit to Kyrien?",
       "What does she say once her composure breaks?",
-      "What changes between them the following morning?",
-      "Which earlier crisis first establishes physical trust between them?"
+      "What changes between them the following morning?"
     ],
     "continuityBefore": "Helena has used Fionn's death to frame Lynleit, forcing her to rely on the secret ally she recruited long before the danger became visible.",
-    "continuityAfter": "Their bond remains non-sexual at this point, but it becomes a private source of safety that later intimacy can grow from without feeling sudden or sought for its own sake. The eventual sexual encounter most likely occurs before the first arc's closing battle and close to the beginning of Lynleit's pregnancy.",
+    "continuityAfter": "Their bond remains non-sexual at this point, but it becomes a private source of safety that later intimacy can grow from without feeling sudden or sought for its own sake. Their relationship becomes sexual only at the end of the first arc, immediately before Lynleit's pregnancy and disappearance.",
+    "chapterSlug": null,
+    "updated": "2026-08-26"
+  },
+  {
+    "slug": "the-end-of-the-first-arc",
+    "code": "MOM-012",
+    "title": "At the End of the First Arc",
+    "status": "Canon relationship milestone",
+    "placementStatus": "Arc placement confirmed, circumstances unresolved",
+    "timelinePhase": "lynleit-disappears",
+    "timelineLabel": "Lynleit Disappears",
+    "sequence": 0.5,
+    "sceneType": "Intimacy threshold",
+    "thread": "Lynleit and Kyrien",
+    "location": "Unspecified location",
+    "summary": "After a story-long accumulation of functional trust and non-sexual intimacy, Lynleit and Kyrien finally have sex at the end of the first arc, shortly before her pregnancy and disappearance.",
+    "purpose": "Completes a progression that begins with protected knowledge and shared warmth after the river incident, deepens through emotional refuge after Fionn's murder, and becomes sexual only when the first arc is closing.",
+    "characters": [
+      { "name": "Lynleit", "slug": "lynleit" },
+      { "name": "Kyrien", "slug": "kyrien" }
+    ],
+    "characterAnchors": [
+      { "slug": "lynleit", "beat": "Hidden Pregnancy and Inquiry" },
+      { "slug": "kyrien", "beat": "Alliance under Pressure" }
+    ],
+    "known": [
+      "Lynleit and Kyrien's intimacy develops slowly and functionally across the entire story.",
+      "The relationship remains non-sexual through the river aftermath and the much later hotel-room refuge.",
+      "Their relationship becomes sexual at the end of the first arc.",
+      "The encounter occurs before Lynleit's pregnancy and disappearance."
+    ],
+    "openQuestions": [
+      "What final circumstances bring them together at the end of the arc?",
+      "Is this encounter the conception of their son?",
+      "When does Lynleit realize she is pregnant, and how much time passes before she disappears?"
+    ],
+    "continuityBefore": "The river incident establishes silent physical trust. The hotel-room refuge after Fionn's murder establishes emotional safety. Additional functional encounters must make the final threshold feel accumulated rather than sudden.",
+    "continuityAfter": "Lynleit becomes pregnant close to the end of the arc and disappears to keep the child beyond the conflict's reach. Kyrien is left to direct MSF without knowing that she carries their son.",
     "chapterSlug": null,
     "updated": "2026-08-26"
   },
