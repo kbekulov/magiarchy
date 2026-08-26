@@ -98,7 +98,7 @@ Drake holds the rank of State Councillor and the office of Official for Special 
 
 ## Cultural character
 
-Narvea carries layered coastal, inland, courtly, mercantile, urban, rural, and frontier traditions. Catholic, Lutheran, and Orthodox communities coexist across regions with distinct architecture, memory, dialect, and politics.
+Narvea carries layered coastal, inland, courtly, mercantile, urban, rural, and frontier traditions. Catholic and Orthodox communities coexist across regions with distinct architecture, memory, dialect, and politics.
 
 The result is not a uniform cultural mixture. The state itself is what connects its different regions.
 
