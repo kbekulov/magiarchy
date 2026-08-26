@@ -48,7 +48,7 @@ It contains the Ducal Palace, court, Privy Council, Guard headquarters, dynastic
 
 ### Vilen
 
-Vilen, the Narvean name for Vilnius, is the parliamentary and administrative capital.
+Vilen is the parliamentary and administrative capital.
 
 It contains Parliament, the Prime Minister's office, ministries, major courts, central bureaucracy, and financial institutions. It represents law, administration, commerce, and modern political life.
 

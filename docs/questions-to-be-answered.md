@@ -37,7 +37,6 @@ Rows are ordered from least answered to most answered. Questions at 100% are rem
 | The Church | How do Orthodox and Catholic special envoys differ in method and ethics, and which hierarchies exercise practical authority inside Narvea? | 5% |
 | Institutions | How do the Narvean Police, Magic Academy, and private investigators formally relate to MSF before and after the hidden world becomes known to them? | 5% |
 | Timeline | How much time passes between the first disappearance, the park quarantine, Kyrien's early recruitment, Fionn's much later assassination, Helena's takeover, and Lynleit's exile? | 10% |
-| Heyk | How does Drake know when and where to order Heyk's Ducal Guard evacuation, and what survives the park massacre with him? | 10% |
 | The Church | What operational specialization and delegated authority does Father Mikhail hold as a special envoy? | 10% |
 | Core mystery | What does each faction involved in the hidden conspiracy want from Fionn, MSF, the Spill, or Narvea? | 10% |
 | Core mystery | Is the Spill created by the conspiracy against Fionn, deliberately exploited by it, or an independent crisis that the conspirators use as cover? | 10% |
@@ -48,6 +47,7 @@ Rows are ordered from least answered to most answered. Questions at 100% are rem
 | MSF | Which officers learn that magic exists during the crisis, what remains compartmentalized, and how is the smaller post-Spill agency divided between magical and ordinary intelligence work? | 10% |
 | Magiarchy | What rules govern a Magiarch's removal, ordinary succession, and unresolved disputes between separate Magiarchates? | 10% |
 | The Church | What does the Church actually do when an ordinary witness learns too much, and how far can suppression doctrine go before containment becomes murder? | 10% |
+| Heyk | What physical or testimonial evidence survives the park massacre with Heyk, and how does it shape his later work for Drake and Sherie? | 15% |
 | Core mystery | What is the Spill's precise origin, and are the disappearances caused by a Holumn, several manifestations, deliberate Magus intervention, or another mechanism? | 15% |
 | Ensemble | What confirmed Spill functions connect Natalia, Lester, Myka, Inspector Leo, and Father Mikhail beyond their current provisional profile arcs? | 15% |
 | Magic system | What practical limits, bodily costs, and forms of backlash govern Fionn and Lynleit's blue flame and Lynleit's water walking? | 15% |
