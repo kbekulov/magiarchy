@@ -18,6 +18,15 @@
     "speakers": ["Author's Desk"]
   },
   {
+    "slug": "character-capability-balance",
+    "title": "Character Capability Balance",
+    "topic": "Editorial Ledger",
+    "file": "character-capability-balance.md",
+    "updated": "2026-08-26",
+    "description": "Questions and contradictions that keep character skills, talents, abilities, strengths, weaknesses, costs, and comparative graphs balanced across the cast.",
+    "speakers": ["Character Archive"]
+  },
+  {
     "slug": "duchy-of-narvea",
     "title": "The Duchy of Narvea",
     "topic": "Country Profile",

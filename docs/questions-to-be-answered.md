@@ -11,9 +11,8 @@ Story, character, world, relationship, institution, location, and event question
 | Helena | What does Helena personally want from Fionn's death and control of MSF beyond occupying the director's seat? | 0% |
 | Helena | Is Helena a Magus, and what access, allies, or leverage allow her to operate inside the hidden magical conflict? | 0% |
 | Family | Who is the reliable distant relative trusted with Lynleit and Kyrien's son, and what does that person know about the child's parents? | 0% |
-| Family | Does Lynleit and Kyrien's son inherit the blue-flame lineage, another magical ability, or no Magus talent at all? | 0% |
 | Spill inquiry | Which wiser people does Lynleit consult, and what do they teach her about the Spill's origin? | 0% |
-| Lester | How did Lester become a demiholumn, how do his human and Holumn halves coexist, and what limits or costs govern the impossible things he can do? | 0% |
+| Lester | How did Lester become a demiholumn, and how do his human and Holumn halves coexist as one person? | 0% |
 | Natalia | Why did Natalia leave her professorship at the Magic Academy, and what relationships or obligations remain from her academic career? | 0% |
 | Location | What is Port City's proper name, and which story or institutional thread makes the western gateway relevant? | 0% |
 | Location | What is the Director's House's proper name, and in which city district does the hillside residence overlook the river? | 0% |
@@ -35,7 +34,7 @@ Story, character, world, relationship, institution, location, and event question
 | The Church | How do Orthodox and Catholic special envoys differ in method and ethics, and which hierarchies exercise practical authority inside Narvea? | 5% |
 | Institutions | How do the Narvean Police, Magic Academy, and private investigators formally relate to MSF before and after the hidden world becomes known to them? | 5% |
 | Lester | Who knows that Lester is a demiholumn, and what would the Church, Magiarchy, or a Holumn do if his nature became known? | 5% |
-| The Church | What operational specialization and delegated authority does Father Mikhail hold as a special envoy? | 10% |
+| The Church | What delegated authority does Father Mikhail hold as a special envoy? | 10% |
 | Core mystery | What does each faction involved in the hidden conspiracy want from Fionn, MSF, the Spill, or Narvea? | 10% |
 | Kyrien | What authority allows Lynleit to control Kyrien's interrogation, and what cover story conceals his conditional release from the police and everyone outside Lynleit, Felix, and Reiner? | 10% |
 | Lynleit | What is Lynleit trying to accomplish around later MSF missions, and is she helping, observing, manipulating events, or causing part of the danger? | 10% |
@@ -51,7 +50,6 @@ Story, character, world, relationship, institution, location, and event question
 | Heyk | What physical or testimonial evidence survives the park massacre with Heyk, and how does it shape his later work for Drake and Sherie? | 15% |
 | Ensemble | What confirmed Spill functions connect Myka, Inspector Leo, and Father Mikhail beyond their current provisional profile arcs? | 15% |
 | Private investigation | Which case first connects Natalia and Lester to the central story, and what impossible intervention makes Lester essential to it? | 15% |
-| Magic system | What practical limits, bodily costs, and forms of backlash govern Fionn and Lynleit's blue flame and Lynleit's water walking? | 15% |
 | Core mystery | What specific political and institutional pressure is manufactured inside Narvea and MSF, and why is it effective enough to keep Fionn from acting as Magiarch? | 20% |
 | Helena | How much does Helena know about the plan against Fionn before his death, and what is the exact nature of her major role? | 20% |
 | Boat operation | What supernatural force remains beneath the river after the failed infiltration, which intelligence survives, and which additional MSF officers join the operation? | 20% |

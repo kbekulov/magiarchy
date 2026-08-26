@@ -1,0 +1,59 @@
+# Character Capability Balance
+
+This is the living balance ledger for character skills, talents, abilities, strengths, and weaknesses. It exists to keep every character distinct, useful, and vulnerable when compared with the rest of the cast.
+
+The current six-axis graph is provisional. Axis names, definitions, and even the number of axes may change whenever the model stops distinguishing characters accurately. Exact scores are not canon merely because they appear precise.
+
+## Balance standard
+
+- Every exceptional strength needs a defined scope. A character should dominate particular problems, not every problem.
+- Every major ability needs limits, costs, counterplay, failure conditions, or consequences.
+- Every character needs at least one weakness that matters in scenes rather than only on a graph.
+- Similar specialists must remain different in method. Felix reaches around a barrier, Reiner goes through it, and Kyrien survives by controlling the conditions around it.
+- Capability must be placed in time. A late-story peak should not be presented as an opening-chapter baseline.
+- Social, intellectual, physical, technical, and supernatural competence should not be collapsed into a single idea of power.
+- Balance does not require equal strength. It requires meaningful tradeoffs, dependency on others, and credible ways to fail.
+
+## Capability questions
+
+These questions define what each character can do, what they cannot do, and why another character remains necessary. Confidence measures how much of the answer is already established elsewhere on the site.
+
+| Area | Question | Confidence |
+| --- | --- | --- |
+| Scale | What does 0, 25, 50, 75, 90, and 100 mean on a comparative capability scale, and is the reference group ordinary people, trained professionals, Magi, or the named cast? | 0% |
+| Axis model | Should Magic become separate Magecraft and Anomalous Nature axes, especially when a non-Magus demiholumn such as Lester cannot be described accurately by the current label? | 0% |
+| Axis model | Should Fieldcraft be divided into technical systems, infiltration, survival, and physical operations so Felix, Kyrien, Tien, Heyk, and Reiner are not measured as if they share one discipline? | 0% |
+| Axis model | Should Combat distinguish force, technique, ranged capability, and survival under pressure, or is a single comparative combat axis still useful? | 0% |
+| Timeline | Should profiles display separate opening, crisis, and late-story capability states for characters whose competence changes substantially? | 0% |
+| Helena | Is Helena a Magus, what practical abilities support her takeover, and what weakness prevents political manipulation from making her self-sufficient? | 0% |
+| Fionn | What operational blind spots, physical limitations, magical costs, or personal dependencies make Fionn vulnerable despite his mastery? | 0% |
+| Natalia | What kind of magecraft does Natalia specialize in, what can she not investigate alone, and what cost or risk prevents academic mastery from solving every edge case? | 0% |
+| Lester | What can Lester's demiholumn nature actually do, what can it never do, what triggers it, and what cost or danger follows an impossible intervention? | 0% |
+| Father Mikhail | What political, intelligence, combat, or assassination specialization belongs to Father Mikhail, and where is he weaker than another special envoy? | 0% |
+| Yulia | Which practical strengths distinguish Yulia from Hiyu, and what vulnerability makes entering the park especially dangerous for her? | 0% |
+| Son | Does Lynleit and Kyrien's son inherit the blue-flame lineage, another ability, or no Magus talent, and how would any inheritance remain balanced against both parents? | 0% |
+| Lynleit | What practical limits, bodily costs, and backlash govern her unsafe blue-flame output and secret water walking, and which problems still require Fionn's greater virtuosity or her allies' non-magical skills? | 15% |
+| Myka | Which Academy disciplines make Myka gifted, which remain weak, and how does inexperience constrain high magical potential? | 15% |
+| Inspector Leo | Which investigative strengths belong specifically to Leo, and what does restricted clearance prevent him from accomplishing without Natalia, MSF, or Church access? | 20% |
+| Hiyu | Is Hiyu genuinely exceptional at analysis and awareness, or does overconfidence cause him to mistake partial pattern recognition for accurate situational understanding? | 25% |
+| Tien | What constraints, personal blind spots, or counters keep Tien's elite fieldcraft and combat from making Helena's concealed assassin an automatic solution? | 25% |
+| Sherie | Beyond charm and quick thinking, what can Sherie execute without Drake, and which strategic or operational tasks still require her teacher? | 30% |
+| Drake | Where does Drake's strategic mastery fail without Sherie's social execution, and how capable is he when a problem becomes physical or magical rather than political? | 30% |
+| Heyk | Which skills survive the park massacre, which are damaged by trauma, and how does becoming Drake and Sherie's field agent change his strengths over time? | 30% |
+| Felix | What technical access, equipment, preparation, and failure conditions limit Felix's hacking and communications work? | 35% |
+| Reiner | How strong and durable is Reiner in practical terms, and what kinds of distance, deception, technology, or magic neutralize his direct approach? | 35% |
+| Kyrien | Which blind spots remain despite Kyrien's late mastery of intelligence tradecraft, and how much weaker is his opening-chapter self than the later MSF director shown by the current graph? | 40% |
+
+## Balance contradictions
+
+This table is limited to current profile claims or graph presentations that cannot yet be reconciled with the balance standard. A row is removed only after the resolution is reflected in the character profile and comparative graph.
+
+| Area | Contradiction | Resolution |
+| --- | --- | --- |
+| Fionn | Fionn currently scores 80 or higher on every axis and reaches 98 in both Analysis and Magic, leaving no meaningful comparative weakness despite a story in which rivals isolate and eliminate him. | 0% |
+| Natalia | Natalia currently scores 91 or higher in Analysis, Awareness, Fieldcraft, and Magic before her specialization, limitations, or dependence on Lester have been defined. | 0% |
+| Lester | Lester receives a Magic score of 91 even though his profile explicitly classifies demiholumn nature as inherent and not magecraft. | 0% |
+| Hiyu | Hiyu's graph presents elite Analysis and Awareness while his confirmed story role depends on overconfidence, incomplete understanding, and failure to recognize the park's danger. | 0% |
+| Father Mikhail | Father Mikhail has exact comparative scores despite his special-envoy specialization and delegated practical abilities being entirely undefined. | 0% |
+| Kyrien | Kyrien's graph presents near-peak intelligence tradecraft as a timeless profile value even though that mastery is explicitly the result of gradual development and peaks only around his later MSF leadership. | 10% |
+| System-wide | Exact graph scores still look more authoritative than the underlying canon permits, although profiles now label the assessment and values as provisional and link directly to this balance ledger. | 30% |

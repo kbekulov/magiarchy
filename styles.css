@@ -7162,6 +7162,44 @@ a.moment-connection-card:hover {
   gap: 14px;
 }
 
+.capability-ledger-link {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 14px;
+  margin: 0 18px 18px;
+  padding: 13px 14px;
+  border: 1px solid #3f4147;
+  border-radius: 6px;
+  background: #25262b;
+  transition: border-color .18s ease, background .18s ease;
+}
+
+.capability-ledger-link:hover,
+.capability-ledger-link:focus-visible {
+  border-color: #5865f2;
+  background: #292b31;
+}
+
+.capability-ledger-link span {
+  color: #8790ff;
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: .54rem;
+  font-weight: 750;
+  letter-spacing: .07em;
+  text-transform: uppercase;
+}
+
+.capability-ledger-link strong {
+  color: #dbdee1;
+  font-size: .68rem;
+}
+
+.capability-ledger-link i {
+  color: #aeb4ff;
+  font-style: normal;
+}
+
 .skill-accent-amber { --skill-color: #d8b56b; --skill-fill: rgba(240, 178, 50, .17); }
 .skill-accent-red { --skill-color: #f07d7f; --skill-fill: rgba(237, 66, 69, .17); }
 .skill-accent-violet { --skill-color: #c69aef; --skill-fill: rgba(171, 111, 232, .18); }

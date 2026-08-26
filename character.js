@@ -336,7 +336,10 @@ function renderSkillGraph(profile, container) {
   });
   ledger.append(comparison, valuesList);
   layout.append(figure, ledger);
-  container.append(layout);
+  const balanceLink = createElement('a', 'capability-ledger-link');
+  balanceLink.href = 'docs.html?doc=character-capability-balance';
+  balanceLink.append(createElement('span', '', 'Balance model'), createElement('strong', '', 'Review capability questions and contradictions'), createElement('i', '', '→'));
+  container.append(layout, balanceLink);
 }
 
 function factionClass(faction) {
