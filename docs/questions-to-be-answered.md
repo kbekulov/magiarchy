@@ -16,7 +16,6 @@ Rows are ordered from least answered to most answered. Questions at 100% are rem
 | Family | Does Lynleit and Kyrien's son inherit the blue-flame lineage, another magical ability, or no Magus talent at all? | 0% |
 | Spill inquiry | Which wiser people does Lynleit consult, and what do they teach her about the Spill's origin? | 0% |
 | Opening chapter | What are Fionn and Lynleit negotiating with the Church before dawn, how does it relate to the first disappearances, and why does Lynleit leave irritated? | 0% |
-| Civilian thread | Who is the first ordinary citizen shown being taken, where does it happen, and which investigator or relationship connects that disappearance to the main story? | 0% |
 | MSF | What are Felix and Reiner's distinct operational specialties beyond their shared role as Lynleit's friends and personal bodyguards? | 0% |
 | Moment | Where does the family-house cat chase sit in the crisis chronology, who else is present, and what private aspect of Lynleit or her family does it reveal? | 0% |
 | Location | What is Port City's proper name, and which story or institutional thread makes the western gateway relevant? | 0% |
@@ -29,7 +28,6 @@ Rows are ordered from least answered to most answered. Questions at 100% are rem
 | Family | What is the private reality of Fionn and Helena's marriage, and why does Fionn exclude his wife from protocols he passes to Lynleit and senior officers? | 5% |
 | Drake | How do Drake and the Duke become close friends, and what past event makes the Duke continue trusting him despite Court hostility? | 5% |
 | Drake | What first convinces Drake that the disappearances and irregular movements form a coup attempt, and is anyone deliberately encouraging the Court to dismiss him? | 5% |
-| Boat operation | What supernatural force waits aboard or beneath the boat, which intelligence survives the failed infiltration, and who witnesses Lynleit's water walking? | 5% |
 | MSF | Who formally counts among Fionn's closest people, and how is a successor chosen when several members of that circle can claim his confidence? | 5% |
 | MSF | What political, legal, or personal restraints prevent MSF's concentration of force in Turon from becoming rebellion or secession? | 5% |
 | MSF | How is the blue-clothing authority signal authenticated so that ordinary clothing or deliberate imitation cannot impersonate command? | 5% |
@@ -39,7 +37,6 @@ Rows are ordered from least answered to most answered. Questions at 100% are rem
 | Timeline | How much time passes between the first disappearance, the park quarantine, Kyrien's early recruitment, Fionn's much later assassination, Helena's takeover, and Lynleit's exile? | 10% |
 | The Church | What operational specialization and delegated authority does Father Mikhail hold as a special envoy? | 10% |
 | Core mystery | What does each faction involved in the hidden conspiracy want from Fionn, MSF, the Spill, or Narvea? | 10% |
-| Core mystery | Is the Spill created by the conspiracy against Fionn, deliberately exploited by it, or an independent crisis that the conspirators use as cover? | 10% |
 | Kyrien | What authority allows Lynleit to control Kyrien's interrogation, and what cover story conceals his conditional release from the police and everyone outside Lynleit, Felix, and Reiner? | 10% |
 | Lynleit | What is Lynleit trying to accomplish around later MSF missions, and is she helping, observing, manipulating events, or causing part of the danger? | 10% |
 | MSF | Which influential officers first recognize the contrast between Lynleit's blue authority signal and Helena's ignorance, and what turns their private suspicion into action? | 10% |
@@ -47,21 +44,23 @@ Rows are ordered from least answered to most answered. Questions at 100% are rem
 | MSF | Which officers learn that magic exists during the crisis, what remains compartmentalized, and how is the smaller post-Spill agency divided between magical and ordinary intelligence work? | 10% |
 | Magiarchy | What rules govern a Magiarch's removal, ordinary succession, and unresolved disputes between separate Magiarchates? | 10% |
 | Heyk | What physical or testimonial evidence survives the park massacre with Heyk, and how does it shape his later work for Drake and Sherie? | 15% |
-| Core mystery | What is the Spill's precise origin, and are the disappearances caused by a Holumn, several manifestations, deliberate Magus intervention, or another mechanism? | 15% |
 | Ensemble | What confirmed Spill functions connect Natalia, Lester, Myka, Inspector Leo, and Father Mikhail beyond their current provisional profile arcs? | 15% |
 | Magic system | What practical limits, bodily costs, and forms of backlash govern Fionn and Lynleit's blue flame and Lynleit's water walking? | 15% |
 | Core mystery | What specific political and institutional pressure is manufactured inside Narvea and MSF, and why is it effective enough to keep Fionn from acting as Magiarch? | 20% |
 | Helena | How much does Helena know about the plan against Fionn before his death, and what is the exact nature of her major role? | 20% |
-| Relationship | When and where does Lynleit reveal Kyrien's recruitment to Felix and Reiner, and what case does she make for accepting the risk? | 20% |
+| Boat operation | What supernatural force remains beneath the river after the failed infiltration, which intelligence survives, and which additional MSF officers join the operation? | 20% |
+| Holumns | How do Holumns make victims disappear, where are those victims taken, and can any of them return? | 20% |
 | MSF | What legal charter, oversight mechanism, and command structure give MSF authority while allowing Helena, Lynleit, and later Kyrien to claim its director seat? | 20% |
 | Magic Academy | How are students admitted and trained, who governs the Academy, and what formal accountability connects its lineage funders, Magi professors, the Magiarchy, and the churches? | 20% |
-| Relationship | Which specific shared ordeals turn Lynleit and Kyrien's coerced handler-asset arrangement into trust, intimacy, and parenthood? | 25% |
-| Relationship | When does Lynleit and Kyrien's relationship first become sexual, is that encounter the conception of their son, and how does Lynleit conceal the resulting pregnancy before disappearing? | 25% |
 | Timeline | Exactly how many years pass between Lynleit's disappearance and return, and how old is her and Kyrien's son when she reappears? | 25% |
-| The Church | In which circumstances does suppression doctrine choose coercion, discrediting, forced institutional service, kidnapping, or lethal action, and where does containment become murder? | 25% |
+| Core mystery | Who is the first missing man, how does he cause the Spill, and is he acting for the conspiracy, being manipulated by it, or creating an independent crisis that others exploit? | 30% |
 | Core mystery | Who ultimately orders Fionn's assassination, and which criminal Magi, rival Magiarchates, church actors, or infiltrators knowingly or unknowingly contribute to it? | 30% |
 | Resolution | What settles Helena's control of MSF and the political crisis if the Spill itself is never fully contained? | 30% |
 | Characters | What surnames belong to the cast, which characters intentionally use only one name, and what age bands remain undefined for Reiner, Tien, Lester, Myka, Inspector Leo, and Father Mikhail? | 30% |
+| Relationship | When and where does Lynleit reveal Kyrien's recruitment to Felix and Reiner, and what exact objections shape their response after she explains the strategic need? | 35% |
+| The Church | How do the Church and Magiarchy decide which suppression measure to use, what form must Church sanction take, and where does containment become murder? | 35% |
 | Magiarchy | What rules define a fitness contest, duel, or sanctioned war, and who decides that the result is legitimate? | 35% |
 | Kyrien | Who is the Magus politician targeted by Kyrien, what office do they hold, what exact role did they play in his father's death, and how does their survival later harm Lynleit? | 40% |
+| Relationship | Beyond the drenched river aftermath and the hotel-room refuge, which additional shared ordeals complete Lynleit and Kyrien's movement from coerced alliance into trust and intimacy? | 40% |
 | Covert alliance | Which MSF resources do Drake and Sherie request, what concessions or favors do they offer, and what operational limits does Lynleit impose on the hilltop agreement? | 50% |
+| Relationship | What final pre-battle circumstances make Lynleit and Kyrien's first sexual encounter feel unavoidable, is it the conception of their son, and how does Lynleit conceal the resulting pregnancy before disappearing? | 50% |

@@ -2836,6 +2836,23 @@ a.status-member:hover {
   letter-spacing: 0;
 }
 
+.gradual-reveal aside {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  gap: 18px;
+  align-items: start;
+  padding-top: 16px;
+  border-top: 1px solid #3b3d43;
+}
+
+.gradual-reveal aside p {
+  margin: 0;
+  color: #b5b8c1;
+  font-size: .66rem;
+  line-height: 1.6;
+}
+
 .conflict-consequence > span {
   color: #9296a3;
   font-size: .52rem;
@@ -6408,6 +6425,11 @@ a.moment-connection-card:hover {
 
   .gradual-reveal ol {
     grid-template-columns: 1fr;
+  }
+
+  .gradual-reveal aside {
+    grid-template-columns: 1fr;
+    gap: 8px;
   }
 
   .gradual-reveal li + li {

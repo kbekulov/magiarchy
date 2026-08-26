@@ -42,8 +42,14 @@ This is not a conflict between good and evil. The real conflict is truth versus 
 
 ## Suppression Doctrine
 
-The Church calls its witness-control practice suppression doctrine. It exists to keep knowledge of magic from spreading through ordinary society, but it is not a single automatic punishment. The response depends on the witness, the credibility of their account, the scale of exposure, and the danger of leaving them outside institutional control.
+The Church and the Magiarchy share responsibility for suppression doctrine. It exists to keep knowledge of magic from spreading through ordinary society, but the Church holds final sanction over its use. Magiarchal resources may investigate, contain, absorb, or remove witnesses under that authority. The doctrine is not a single automatic punishment. The response depends on the witness, the credibility of their account, the scale of exposure, and the danger of leaving them outside institutional control.
 
 Possible responses include murder, assassination, or kidnapping; extortion, intimidation, or bribery; framing the witness as mentally ill; forced integration into Church staff or clergy; and forced integration into Magiarchy service staff or a comparable supervised role. The doctrine is deliberately flexible because every circumstance creates a different balance between secrecy, risk, and moral cost.
+
+## The First Missing Person
+
+The first person to disappear is also the person who causes the Spill. For most of the story, neither his identity nor his significance is revealed. What first appears to be a random victim later becomes pivotal to understanding how the crisis began.
+
+The disappearances that follow are caused by Holumns. This remains hidden behind missing-person cases, failed searches, and material explanations until the supernatural pattern becomes impossible to ignore.
 
 Its darkest unresolved question is the boundary between containment and murder. A witness can be made safe by being absorbed, discredited, or coerced, but the same doctrine can also turn lethal action into an institutional procedure.

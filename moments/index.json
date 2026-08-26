@@ -140,33 +140,36 @@
   {
     "slug": "a-citizen-is-taken",
     "code": "MOM-003",
-    "title": "A Citizen Is Taken",
-    "status": "Scene seed",
-    "placementStatus": "Provisional placement",
+    "title": "The First Missing Man",
+    "status": "Key mystery seed",
+    "placementStatus": "Core function confirmed, identity concealed",
     "timelinePhase": "vanishing-point",
     "timelineLabel": "Vanishing Point",
     "sequence": 1,
     "sceneType": "Civilian rupture",
     "thread": "The first disappearances",
-    "location": "Unspecified location",
-    "summary": "An ordinary citizen is kidnapped, turning the hidden crisis into an immediate personal event.",
-    "purpose": "Provides a civilian-scale anchor for the disappearances and a scene that can later connect institutions, investigators, or relatives to the main crisis.",
+    "location": "Vilen park, exact site unspecified",
+    "summary": "The first man to disappear appears to be the Spill's first victim, but he is secretly the person who caused it. His identity and significance remain concealed for most of the story.",
+    "purpose": "Makes the apparent first victim the buried cause of the crisis, allowing a later identity revelation to reframe the entire chain of Holumn disappearances.",
     "characters": [],
     "characterAnchors": [],
     "known": [
-      "The victim is an ordinary citizen.",
-      "The scene centers on the act of being taken.",
-      "The wider meaning of the incident is not yet understood."
+      "The first missing person is a man.",
+      "He is the person who causes the Spill.",
+      "His identity and significance are not revealed for most of the story.",
+      "He initially appears to be a victim rather than the originator of the crisis.",
+      "The later disappearances are caused by Holumns."
     ],
     "openQuestions": [
-      "Who is the citizen?",
-      "Where and how does the kidnapping occur?",
-      "Who notices the disappearance first?"
+      "Who is the man?",
+      "How does he cause the Spill?",
+      "Why does his identity become pivotal later?",
+      "Who notices his disappearance first?"
     ],
-    "continuityBefore": "The citizen's ordinary routine can establish what is about to be interrupted.",
-    "continuityAfter": "A missing-person report, witness, or institutional response can bind this scene into the Spill investigation.",
+    "continuityBefore": "His public identity and ordinary routine must conceal the significance he will acquire later.",
+    "continuityAfter": "Holumns begin taking further victims, while the first disappearance is treated as the start of the case rather than its concealed cause.",
     "chapterSlug": null,
-    "updated": "2026-08-23"
+    "updated": "2026-08-26"
   },
   {
     "slug": "the-warning-dismissed",
@@ -299,18 +302,21 @@
       "The operation goes badly enough that the operatives must swim ashore on their own.",
       "The others do not immediately realize that Lynleit has been left to face a supernatural calamity.",
       "Lynleit recognizes that the plot is not solely political and that Magi are involved.",
-      "The crisis becomes the first combat test of her ability to walk on water."
+      "The crisis becomes the first combat test of her ability to walk on water.",
+      "Only Kyrien witnesses Lynleit walking on water.",
+      "Kyrien is too careful to acknowledge what he saw and feigns innocence convincingly.",
+      "Lynleit wonders whether he noticed, but decides not to press him when he gives her nothing to test.",
+      "They both reach the night park drenched and sit together against a tree after saving themselves."
     ],
     "openQuestions": [
-      "What supernatural force is waiting on or beneath the boat?",
+      "What supernatural force remains beneath the river after the boat operation?",
       "Which additional MSF officers join the infiltration?",
-      "Who sees enough of Lynleit's water walking to threaten her secret?",
       "What intelligence survives the failed operation?"
     ],
     "continuityBefore": "The covert meeting must identify the boat and establish why observation is safer than interception.",
-    "continuityAfter": "Lynleit must decide what to tell the scattered team, Drake, and Sherie now that the investigation points toward Magi.",
+    "continuityAfter": "Drenched and seated against a tree in the night park, Lynleit and Kyrien preserve a mutual silence around what he witnessed. Lynleit must still decide what to tell the scattered team, Drake, and Sherie now that the investigation points toward Magi.",
     "chapterSlug": null,
-    "updated": "2026-08-23"
+    "updated": "2026-08-26"
   },
   {
     "slug": "the-park-unit-is-lost",
@@ -423,7 +429,9 @@
       "There is no sexual interaction between them.",
       "Kyrien holds her while she falls asleep.",
       "Their earlier intimate encounters are non-sexual and often arise from isolation, danger, cold, near drowning, or emotional rupture.",
-      "Later sexual intimacy is not deliberately pursued. It develops as something emotionally unavoidable, but its exact point in the story remains open."
+      "Later sexual intimacy is not deliberately pursued. It develops as something emotionally unavoidable.",
+      "The sexual intimacy most likely occurs shortly before the closing battle of the first arc.",
+      "Lynleit's pregnancy begins close to the end of the first arc, immediately before her disappearance period."
     ],
     "openQuestions": [
       "How does Lynleit locate the hideout without leading pursuit to Kyrien?",
@@ -432,7 +440,7 @@
       "Which earlier crisis first establishes physical trust between them?"
     ],
     "continuityBefore": "Helena has used Fionn's death to frame Lynleit, forcing her to rely on the secret ally she recruited long before the danger became visible.",
-    "continuityAfter": "Their bond remains non-sexual at this point, but it becomes a private source of safety that later intimacy can grow from without feeling sudden or sought for its own sake.",
+    "continuityAfter": "Their bond remains non-sexual at this point, but it becomes a private source of safety that later intimacy can grow from without feeling sudden or sought for its own sake. The eventual sexual encounter most likely occurs before the first arc's closing battle and close to the beginning of Lynleit's pregnancy.",
     "chapterSlug": null,
     "updated": "2026-08-26"
   },

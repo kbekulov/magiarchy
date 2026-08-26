@@ -109,7 +109,7 @@ Renegade Magi reject this arrangement and pursue their own ends. The Church and 
 
 Knowledge is distributed as narrowly as possible and only as widely as necessary.
 
-Some clergy, advisers, officials, and political actors are allowed partial awareness. Most people are allowed none. Suppression doctrine keeps ordinary life intact by preventing the public from understanding what exists beneath it.
+Some clergy, advisers, officials, and political actors are allowed partial awareness. Most people are allowed none. Suppression doctrine keeps ordinary life intact by preventing the public from understanding what exists beneath it. The Church and Magiarchy share responsibility for carrying it out, but the Church holds final sanction over its use.
 
 The secrecy is not peaceful. Sanctioned Magi and renegades remain locked in a hidden conflict shaped by surveillance, betrayal, containment, and reprisal.
 
