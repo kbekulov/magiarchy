@@ -9147,6 +9147,87 @@ a.equipment-card:focus-visible {
   line-height: 1.65;
 }
 
+.msf-private-compact {
+  display: grid;
+  grid-template-columns: minmax(0, 1.35fr) minmax(280px, .65fr);
+  border: 1px solid #393b42;
+  border-radius: 8px;
+  overflow: hidden;
+  background: #292b30;
+}
+
+.msf-private-principle,
+.msf-legal-mafia {
+  padding: clamp(26px, 4vw, 44px);
+}
+
+.msf-private-principle > span,
+.msf-legal-mafia > span {
+  color: #8790ff;
+  font-size: .6rem;
+  font-weight: 750;
+  letter-spacing: .08em;
+}
+
+.msf-private-principle h3 {
+  margin: 18px 0 12px;
+  color: #dbdee1;
+  font-size: clamp(1.45rem, 2.4vw, 2.2rem);
+}
+
+.msf-private-principle > p,
+.msf-legal-mafia p {
+  margin: 0;
+  color: #aeb1b8;
+  line-height: 1.7;
+}
+
+.msf-private-principle dl {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin: 28px 0 0;
+  border: 1px solid #3d4048;
+  border-radius: 6px;
+}
+
+.msf-private-principle dl div {
+  padding: 18px;
+}
+
+.msf-private-principle dl div + div {
+  border-left: 1px solid #3d4048;
+}
+
+.msf-private-principle dt {
+  color: #72767d;
+  font-size: .58rem;
+  font-weight: 750;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+
+.msf-private-principle dd {
+  margin: 7px 0 0;
+  color: #dbdee1;
+  line-height: 1.45;
+}
+
+.msf-legal-mafia {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-left: 1px solid #393b42;
+  background: #202126;
+}
+
+.msf-legal-mafia blockquote {
+  margin: 20px 0 14px;
+  color: #f2f3f5;
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: clamp(2rem, 4vw, 3.4rem);
+  line-height: 1;
+}
+
 .succession-track {
   display: grid;
   margin: 0;
@@ -9634,12 +9715,18 @@ a.equipment-card:focus-visible {
   }
 
   .mandate-grid,
+  .msf-private-compact,
   .relation-matrix {
     grid-template-columns: 1fr;
   }
 
   .mandate-grid article + article,
   .relation-matrix article:nth-child(even) {
+    border-top: 1px solid #393b42;
+    border-left: 0;
+  }
+
+  .msf-legal-mafia {
     border-top: 1px solid #393b42;
     border-left: 0;
   }
@@ -9701,6 +9788,15 @@ a.equipment-card:focus-visible {
 }
 
 @media (max-width: 620px) {
+  .msf-private-principle dl {
+    grid-template-columns: 1fr;
+  }
+
+  .msf-private-principle dl div + div {
+    border-top: 1px solid #3d4048;
+    border-left: 0;
+  }
+
   .suppression-grid {
     grid-template-columns: 1fr;
   }

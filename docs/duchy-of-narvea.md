@@ -56,7 +56,7 @@ The Prime Minister travels to Rennel for formal audiences with the Duke. The Duk
 
 ## Turon
 
-Turon is a significant city and the headquarters of MSF. A substantial part of the agency's officer corps is concentrated there, giving MSF a degree of local power that quietly troubles the central government.
+Turon is a significant city and the headquarters of MSF. MSF is a fully private intelligence business that sells its services to the government while retaining control of its own succession and internal affairs. A substantial part of its officer corps is concentrated in Turon, giving the company a degree of local power that quietly troubles the central government.
 
 If MSF ever chose open defiance, its presence in Turon could support a small rebellion or even an attempt at secession. Officer culture, divided logistics, constitutional loyalty, and the absence of any desire to rebel keep that capacity dormant. The possibility survives in private political calculations because the final safeguard is not an external restraint. It is the belief that MSF officers are decent people.
 

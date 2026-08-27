@@ -16,7 +16,6 @@ Story, character, world, relationship, institution, location, and event question
 | Location | What is Port City's proper name, and which story or institutional thread makes the western gateway relevant? | 0% |
 | Location | What is the Director's House's proper name, and in which city district does the hillside residence overlook the river? | 0% |
 | Government | Does the proposed Council of State actually exist, and what constitutional work belongs to it rather than Parliament, Cabinet, the courts, or the Privy Council? | 0% |
-| MSF | How is MSF funded, recruited, divided into departments and ranks, and authorized to operate across ordinary intelligence and magical threats? | 0% |
 | The Church | How are special envoys commanded across church territories, and which operational specializations belong to named envoys? | 0% |
 | Domestic thread | Does the grey cat ever receive a name, and who else in Lynleit's household accepts or resists its permanent presence? | 0% |
 | Private investigation | What is Natalia's business called, how do unusual clients find its sole employee, and how does she screen cases without alerting the Magiarchy or Church? | 0% |
@@ -35,6 +34,7 @@ Story, character, world, relationship, institution, location, and event question
 | Security | How does the family house protect MSF work without turning the family residence into an obvious institutional target? | 10% |
 | Weapons | Which named characters and institutions use each Ren Arms pistol beyond Lynleit's confirmed Sparrow and the general Sparrow issue to weapons-certified MSF officers? | 10% |
 | MSF | Which officers learn that magic exists during the crisis, what remains compartmentalized, and how is the smaller post-Spill agency divided between magical and ordinary intelligence work? | 10% |
+| MSF | What legal or practical remedies remain available to the government if MSF rejects a request, breaches a service agreement, or becomes openly hostile to its client? | 10% |
 | Lynleit | How is Fionn killed, who discovers the death, and what evidence is manufactured or misread to frame Lynleit convincingly enough to trigger the directed hunt for her arrest? | 15% |
 | Opening chapter | What exact magical matter are Fionn and Lynleit negotiating with the Church before dawn, and why does Lynleit leave irritated? | 15% |
 | Heyk | What physical or testimonial evidence survives the park massacre with Heyk, and how does it shape his later work for Drake and Sherie? | 15% |
@@ -47,13 +47,14 @@ Story, character, world, relationship, institution, location, and event question
 | Holumns | How do Holumns make victims disappear, where are those victims taken, and can any of them return? | 20% |
 | Magi Academy | How are students admitted and trained, who governs the Academy, and what formal accountability connects its lineage funders, Magi professors, the Magiarchy, and the churches? | 20% |
 | MSF operations | Which operation first demonstrates Felix's hacking and communications role alongside Reiner's brute-force role, and how does Lynleit deploy their knight-and-rook pairing when both are available? | 20% |
+| MSF | Beyond government service contracts, does MSF accept other clients, and how are recruitment, departments, ranks, and contract scopes structured? | 20% |
 | Helena | How far does Helena's resentment of Fionn's compartmentalization shape what she wants from his death and control of MSF beyond occupying the director's seat? | 25% |
 | Core mystery | Who is the first missing man, how does he cause the Spill, and is he acting for the conspiracy, being manipulated by it, or creating an independent crisis that others exploit? | 30% |
 | Core mystery | Who ultimately orders Fionn's assassination, and which criminal Magi, rival Magiarchates, church actors, or infiltrators knowingly or unknowingly contribute to it? | 30% |
 | Resolution | What settles Helena's control of MSF and the political crisis if the Spill itself is never fully contained? | 30% |
 | Characters | What surnames belong to the cast, which characters intentionally use only one name, and what age bands remain undefined for Reiner, Tien, Lester, Myka, Inspector Leo, and Father Mikhail? | 30% |
 | Fugitive network | What secure method does Kyrien use to reconnect Lynleit with Felix and Reiner, which officer responds first, and what first foothold inside MSF can they give her without exposing the network? | 30% |
-| MSF | What legal charter and oversight mechanism constrain Fionn's extraordinary transfer authority, and what formal process legitimizes Helena, Lynleit, or Kyrien after Fionn deliberately leaves no uncontested successor? | 30% |
+| MSF | What contractual or statutory limits constrain the extraordinary transfer clause used in Kyrien's case, and what internal corporate process legitimizes Helena, Lynleit, or Kyrien after Fionn leaves no uncontested successor? | 30% |
 | The Church | How do the Church and Magiarchy decide which suppression measure to use, what form must Church sanction take, and where does containment become murder? | 35% |
 | Magiarchy | What rules define a fitness contest, duel, or sanctioned war, and who decides that the result is legitimate? | 35% |
 | Natalia | What research questions became too constrained inside the Academy, and which former students, colleagues, or obligations beyond her continuing bond with Myka still follow her independent work? | 35% |
