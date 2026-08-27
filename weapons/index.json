@@ -9,17 +9,17 @@
     "namingTradition": "Its pistol models traditionally carry bird nicknames. Each bird broadly corresponds to the physical character, size, role, and perceived personality of the pistol."
   },
   "hierarchy": [
-    "ren-p17-sparrow",
-    "ren-p19-magpie",
-    "ren-p22-rook",
-    "ren-p24-crow",
-    "ren-p28-raven",
-    "ren-p31-swan"
+    "ren-l17-sparrow",
+    "ren-l19-magpie",
+    "ren-l22-rook",
+    "ren-l24-crow",
+    "ren-l28-raven",
+    "ren-l31-swan"
   ],
   "weapons": [
     {
-      "slug": "ren-p17-sparrow",
-      "model": "Ren P17",
+      "slug": "ren-l17-sparrow",
+      "model": "Ren L17",
       "nickname": "Sparrow",
       "caliber": "9×17 mm / .380 ACP",
       "role": "Compact institutional and concealed-carry sidearm",
@@ -39,8 +39,8 @@
       "references": ["Walther PPK", "SIG Sauer P230"]
     },
     {
-      "slug": "ren-p19-magpie",
-      "model": "Ren P19",
+      "slug": "ren-l19-magpie",
+      "model": "Ren L19",
       "nickname": "Magpie",
       "caliber": "9×19 mm",
       "role": "Heavier compact service pistol",
@@ -59,8 +59,8 @@
       "references": ["SIG Sauer P230 aesthetic lineage", "SIG Sauer P225 / P239-type proportions", "Compact CZ influence"]
     },
     {
-      "slug": "ren-p22-rook",
-      "model": "Ren P22",
+      "slug": "ren-l22-rook",
+      "model": "Ren L22",
       "nickname": "Rook",
       "caliber": "9×19 mm",
       "role": "Compact general-purpose duty pistol",
@@ -79,8 +79,8 @@
       "references": ["Glock 19", "SIG Sauer compact service pistols", "CZ P-10 C", "Restrained Walther PDP influence"]
     },
     {
-      "slug": "ren-p24-crow",
-      "model": "Ren P24",
+      "slug": "ren-l24-crow",
+      "model": "Ren L24",
       "nickname": "Crow",
       "caliber": "9×19 mm",
       "role": "Full-size general service pistol",
@@ -99,8 +99,8 @@
       "references": ["Glock 17", "Walther PDP Full Size", "Modern CZ service pistols"]
     },
     {
-      "slug": "ren-p28-raven",
-      "model": "Ren P28",
+      "slug": "ren-l28-raven",
+      "model": "Ren L28",
       "nickname": "Raven",
       "caliber": "9×19 mm",
       "role": "Premium or specialist full-size service pistol",
@@ -119,8 +119,8 @@
       "references": ["Full-size SIG Sauer service pistols", "Walther PDP Pro-type variants", "Higher-end CZ duty pistols"]
     },
     {
-      "slug": "ren-p31-swan",
-      "model": "Ren P31",
+      "slug": "ren-l31-swan",
+      "model": "Ren L31",
       "nickname": "Swan",
       "caliber": "9×19 mm",
       "role": "Long-slide precision, prestige, or specialist pistol",
