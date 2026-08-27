@@ -9579,7 +9579,7 @@ a.moment-connection-card:hover {
   .nav-links > a[href="music.html"],
   .nav-links > a[href="gallery.html"],
   .nav-links > a[href="docs.html"] {
-    grid-column: span 4;
+    grid-column: span 6;
   }
 
   .nav-links > a:hover,
@@ -9614,10 +9614,6 @@ a.moment-connection-card:hover {
     border-bottom: 1px solid #2b2d31;
     background: transparent;
     box-shadow: none;
-  }
-
-  .nav-dropdown[open] ~ a[href="weapons.html"] {
-    grid-column: span 12;
   }
 
   .nav-dropdown[open] ~ a[href="music.html"],
@@ -9910,12 +9906,14 @@ a.moment-connection-card:hover {
 }
 
 /* Magiarchy framework record */
-.world-record-magiarchy {
+.world-record-magiarchy,
+.world-record-weapons {
   grid-column: 1 / -1;
   grid-template-columns: minmax(220px, .8fr) minmax(0, 1.2fr);
 }
 
-.world-record-magiarchy .world-record-visual span {
+.world-record-magiarchy .world-record-visual span,
+.world-record-weapons .world-record-visual span {
   font-family: Georgia, "Times New Roman", serif;
 }
 
@@ -10434,7 +10432,8 @@ a.moment-connection-card:hover {
 }
 
 @media (max-width: 700px) {
-  .world-record-magiarchy {
+  .world-record-magiarchy,
+  .world-record-weapons {
     grid-column: auto;
     grid-template-columns: 1fr;
   }

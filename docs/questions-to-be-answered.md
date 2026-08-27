@@ -9,7 +9,7 @@ Story, character, world, relationship, institution, location, and event question
 | Area | Question | Confidence |
 | --- | --- | --- |
 | Weapons | Which named characters and institutions use each Rennel pistol beyond the confirmed Sparrow issue to weapons-certified MSF officers? | 0% |
-| Rennel Arms | Who owns or governs Rennel Arms, and what formal relationship does the manufacturer have with the Crown, government, military, and police? | 0% |
+| Ren Arms | Who owns or governs Ren Arms, and what formal relationship does the manufacturer have with the Crown, government, military, and police? | 0% |
 | Helena | Is Helena a Magus, and what access, allies, or leverage allow her to operate inside the hidden magical conflict? | 0% |
 | Family | Who is the reliable distant relative trusted with Lynleit and Kyrien's son, and what does that person know about the child's parents? | 0% |
 | Spill inquiry | Which wiser people does Lynleit consult, and what do they teach her about the Spill's origin? | 0% |
