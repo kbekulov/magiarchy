@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Browse fictional firearms and manufacturers recorded for the Project MAGIARCHY story world.">
+    <meta name="theme-color" content="#1e1f22">
+    <title>Weapons - Magiarchy</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <script src="weapons.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2" defer></script>
+    <script src="notes-config.js" defer></script>
+    <script src="notes.js" defer></script>
+  </head>
+  <body class="weapons-page" data-notes-page="weapons">
+    <a class="skip-link" href="#main-content">Skip to content</a>
+
+    <header class="site-header">
+      <nav class="navbar shell" aria-label="Primary navigation">
+        <a class="brand" href="index.html" aria-label="Magiarchy home">
+          <span class="brand-mark" aria-hidden="true"><span></span></span>
+          <span>Magiarchy</span>
+        </a>
+
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links">
+          <span class="sr-only">Toggle navigation</span>
+          <span></span><span></span>
+        </button>
+
+        <div class="nav-links" id="nav-links">
+          <a href="index.html">Home</a>
+          <a href="characters.html">Characters</a>
+          <a href="story.html">Story</a>
+          <a href="moments.html">Moments</a>
+          <details class="nav-dropdown">
+            <summary>World</summary>
+            <div class="nav-submenu">
+              <a href="world.html"><span>World index</span><small>Places, institutions, and powers</small></a>
+              <a href="duchy.html"><span>The Duchy</span><small>Country profile</small></a>
+              <a href="director-house.html"><span>The Director's House</span><small>Family residence and MSF node</small></a>
+              <a href="magiarchy.html"><span>The Magiarchy</span><small>Territorial magical order</small></a>
+              <a href="msf.html"><span>MSF</span><small>Intelligence agency</small></a>
+              <a href="church.html"><span>The Church</span><small>Hidden religious authority</small></a>
+            </div>
+          </details>
+          <a href="weapons.html" aria-current="page">Weapons</a>
+          <a href="music.html">Music</a>
+          <a href="gallery.html">Gallery</a>
+          <a href="docs.html">Docs</a>
+        </div>
+      </nav>
+    </header>
+
+    <main class="app-main" id="main-content">
+      <div class="docs-workspace shell">
+        <div class="docs-main-pane">
+          <header class="feed-header">
+            <div><span aria-hidden="true">#</span><strong>weapons</strong><i></i><p>Fictional arms and institutional procurement</p></div>
+            <span class="feed-status"><span class="status-dot"></span> 06 initial records</span>
+          </header>
+
+          <div class="weapons-scroll">
+            <nav class="document-breadcrumbs weapons-breadcrumbs" aria-label="Breadcrumb">
+              <a href="index.html">Archive</a><span aria-hidden="true">/</span><span>Weapons</span>
+            </nav>
+
+            <section class="weapons-hero reveal" aria-labelledby="weapons-title">
+              <div>
+                <p class="eyebrow">Material culture archive</p>
+                <h1 id="weapons-title">Weapons</h1>
+                <p>Fictional firearms designed for a realistically grounded Narvea. Each record preserves an original in-world identity while keeping its real-world visual references clearly outside the canon.</p>
+              </div>
+              <dl>
+                <div><dt>Manufacturer</dt><dd id="weapon-manufacturer-count">01</dd></div>
+                <div><dt>Pistol records</dt><dd id="weapon-record-count">06</dd></div>
+                <div><dt>Images</dt><dd>Pending</dd></div>
+              </dl>
+            </section>
+
+            <aside class="weapons-fiction-notice reveal" aria-label="Fiction notice">
+              <span>FICTION NOTICE</span>
+              <p id="weapons-fiction-copy">Loading archive context.</p>
+            </aside>
+
+            <section class="manufacturer-section reveal" aria-labelledby="manufacturer-title">
+              <header class="weapons-section-heading">
+                <div><span>01</span><p class="eyebrow">Manufacturer record</p></div>
+                <h2 id="manufacturer-title">Rennel Arms</h2>
+              </header>
+              <div class="manufacturer-panel" id="manufacturer-panel" aria-live="polite"></div>
+            </section>
+
+            <section class="weapon-hierarchy-section reveal" aria-labelledby="weapon-hierarchy-title">
+              <header class="weapons-section-heading">
+                <div><span>02</span><p class="eyebrow">Pistol hierarchy</p></div>
+                <h2 id="weapon-hierarchy-title">From discretion to specialization</h2>
+                <p>The sequence tracks increasing size, weight, duty orientation, visual presence, or specialization. It is not a strict power scale.</p>
+              </header>
+              <div class="weapon-hierarchy-rail" id="weapon-hierarchy" aria-label="Rennel Arms pistol hierarchy"></div>
+            </section>
+
+            <section class="weapon-catalog-section" aria-labelledby="weapon-catalog-title">
+              <header class="weapons-section-heading reveal">
+                <div><span>03</span><p class="eyebrow">Current catalog</p></div>
+                <h2 id="weapon-catalog-title">Rennel pistol family</h2>
+                <p>Every visual bay is reserved for approved reference art. No placeholder is presented as the final weapon design.</p>
+              </header>
+              <div class="weapon-record-list" id="weapon-record-list" aria-live="polite"></div>
+            </section>
+
+            <section class="weapons-future-section reveal" aria-labelledby="weapons-future-title">
+              <header class="weapons-section-heading">
+                <div><span>04</span><p class="eyebrow">Archive expansion</p></div>
+                <h2 id="weapons-future-title">Reserved categories</h2>
+                <p>These categories have space in the archive but contain no records until canon is supplied.</p>
+              </header>
+              <div class="weapons-future-grid" id="weapons-future-grid"></div>
+            </section>
+
+            <p class="weapon-load-error" id="weapon-load-error" hidden>The weapons archive could not be loaded.</p>
+          </div>
+        </div>
+
+        <aside class="notes-sidebar" aria-label="Weapons page notes">
+          <header class="notes-header"><div><span aria-hidden="true">✎</span><strong>Page notes</strong></div><span>Weapons</span></header>
+          <div class="notes-list">
+            <article class="page-note">
+              <div><span>Open</span><span>01</span></div>
+              <h2>Add visual references</h2>
+              <p>Replace each reserved visual bay only when approved weapon artwork or reference imagery is supplied.</p>
+            </article>
+            <article class="page-note">
+              <div><span>Open</span><span>02</span></div>
+              <h2>Expand confirmed records</h2>
+              <p>Add specifications, history, variants, users, and procurement details only as they become canon.</p>
+            </article>
+          </div>
+          <p class="notes-footnote">Weapon notes are stored with the same Supabase-backed system used across the archive.</p>
+        </aside>
+      </div>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,154 @@
+{
+  "archiveStatus": "Initial archive entry",
+  "fictionNotice": "Every firearm in this archive is a fictional MAGIARCHY design. Named real-world firearms are visual and conceptual references only, not licensed copies or products that exist inside the story world.",
+  "manufacturer": {
+    "slug": "rennel-arms",
+    "name": "Rennel Arms",
+    "location": "Rennel, Narvea",
+    "description": "An established Narvean firearms manufacturer based in Rennel, the Ducal capital.",
+    "namingTradition": "Its pistol models traditionally carry bird nicknames. Each bird broadly corresponds to the physical character, size, role, and perceived personality of the pistol."
+  },
+  "hierarchy": [
+    "ren-p17-sparrow",
+    "ren-p19-magpie",
+    "ren-p22-rook",
+    "ren-p24-crow",
+    "ren-p28-raven",
+    "ren-p31-swan"
+  ],
+  "weapons": [
+    {
+      "slug": "ren-p17-sparrow",
+      "model": "Ren P17",
+      "nickname": "Sparrow",
+      "caliber": "9×17 mm / .380 ACP",
+      "role": "Compact institutional and concealed-carry sidearm",
+      "familyPosition": "Small, discreet, elegant institutional pistol",
+      "storyUse": "Standard-issued pistol for every MSF officer who has passed weapons certification. MSF purchases the Sparrow from Rennel Arms and does not manufacture firearms.",
+      "designSummary": "A slim, compact, silver-finished pistol with an elegant and deliberately understated appearance. Its proportions sit conceptually between the Walther PPK and SIG Sauer P230, slightly more elongated and graceful than a PPK while retaining enough visual weight to avoid looking fragile.",
+      "characteristics": [
+        "Narrow silver slide",
+        "Gently rounded upper profile",
+        "Exposed hammer and small conventional sights",
+        "Dark grip panels contrasting with silver metal",
+        "Smooth exterior surfaces and restrained controls",
+        "Designed for personnel who carry it far more often than they fire it"
+      ],
+      "finishNote": "The silver finish belongs to the firearm itself rather than to an MSF customization. Routine issue gradually makes the ordinary Rennel Arms product visually associated with MSF officers.",
+      "nameMeaning": "Its small size, light visual presence, discretion, and modest chambering.",
+      "references": ["Walther PPK", "SIG Sauer P230"]
+    },
+    {
+      "slug": "ren-p19-magpie",
+      "model": "Ren P19",
+      "nickname": "Magpie",
+      "caliber": "9×19 mm",
+      "role": "Heavier compact service pistol",
+      "familyPosition": "Larger, louder, and heavier relative of the Sparrow",
+      "designSummary": "An enlarged and strengthened development of the Sparrow for the more powerful 9×19 cartridge. It retains the older Rennel family line while becoming thicker, heavier, visually denser, and more assertive.",
+      "characteristics": [
+        "Graceful slide profile and exposed hammer",
+        "Narrow forward profile",
+        "Restrained controls",
+        "Recognizably Rennel-style grip and frame lines",
+        "Metallic finishes remain common",
+        "Darker service finishes may exist"
+      ],
+      "finishNote": "It fills the space between a discreet institutional pistol and a full modern duty handgun.",
+      "nameMeaning": "Its close relationship to the Sparrow, with a larger, louder, heavier, and more noticeable character.",
+      "references": ["SIG Sauer P230 aesthetic lineage", "SIG Sauer P225 / P239-type proportions", "Compact CZ influence"]
+    },
+    {
+      "slug": "ren-p22-rook",
+      "model": "Ren P22",
+      "nickname": "Rook",
+      "caliber": "9×19 mm",
+      "role": "Compact general-purpose duty pistol",
+      "familyPosition": "Compact modern duty workhorse",
+      "designSummary": "Rennel Arms moving from its older elegant metal-pistol tradition toward a modern service-pistol philosophy. The Rook is thicker and squarer than the Sparrow and Magpie, primarily utilitarian, and sized to bridge concealed, bodyguard, and ordinary duty work.",
+      "characteristics": [
+        "Polymer or polymer-dominant frame",
+        "Moderately sculpted ergonomic grip",
+        "Broad, clean slide surfaces",
+        "Practical serrations",
+        "Slight taper toward the muzzle",
+        "Restrained modern styling without excessive decorative machining"
+      ],
+      "finishNote": "The dependable all-purpose compact of the current family.",
+      "nameMeaning": "A sturdy, practical, intelligent, common bird with considerably more substance than a Sparrow.",
+      "references": ["Glock 19", "SIG Sauer compact service pistols", "CZ P-10 C", "Restrained Walther PDP influence"]
+    },
+    {
+      "slug": "ren-p24-crow",
+      "model": "Ren P24",
+      "nickname": "Crow",
+      "caliber": "9×19 mm",
+      "role": "Full-size general service pistol",
+      "familyPosition": "Standard full-size service pistol",
+      "designSummary": "The full-size workhorse of the modern Rennel pistol family. It shares the Rook's language but gains a longer slide, taller grip, greater mass, and a conventional full-size duty silhouette.",
+      "characteristics": [
+        "Dark charcoal or black finishes",
+        "Longer slide and taller grip than the Rook",
+        "Greater overall mass",
+        "Grip more sculpted and ergonomic than a strongly blocky form",
+        "Clean Central European-style slide shaping",
+        "Intended to feel ubiquitous in police, military, security, and state service"
+      ],
+      "finishNote": "It is neither prestigious nor exotic. It is a serious, reliable, full-size service pistol.",
+      "nameMeaning": "Its common, capable, dark, and practical character.",
+      "references": ["Glock 17", "Walther PDP Full Size", "Modern CZ service pistols"]
+    },
+    {
+      "slug": "ren-p28-raven",
+      "model": "Ren P28",
+      "nickname": "Raven",
+      "caliber": "9×19 mm",
+      "role": "Premium or specialist full-size service pistol",
+      "familyPosition": "Heavier, specialist-oriented full-size pistol",
+      "designSummary": "A refined, specialist-oriented relative of the Crow in roughly the same size class. It should feel heavier, more deliberate, more sophisticated, and more purposeful without becoming flashy.",
+      "characteristics": [
+        "Heavier slide profile",
+        "More pronounced controls",
+        "More aggressively shaped grip",
+        "Longer or more prominent beavertail",
+        "Refined machining and clean sight lines",
+        "Dark, restrained finishes"
+      ],
+      "finishNote": "Suited to specialist officers, firearms instructors, protective personnel, or individuals who deliberately select and care about their sidearm. Future premium-frame variants remain undefined.",
+      "nameMeaning": "A larger, darker, more threatening, and more prestigious character than the Rook or Crow.",
+      "references": ["Full-size SIG Sauer service pistols", "Walther PDP Pro-type variants", "Higher-end CZ duty pistols"]
+    },
+    {
+      "slug": "ren-p31-swan",
+      "model": "Ren P31",
+      "nickname": "Swan",
+      "caliber": "9×19 mm",
+      "role": "Long-slide precision, prestige, or specialist pistol",
+      "familyPosition": "Longest and most refined specialist pistol",
+      "designSummary": "The longest and most visually graceful pistol in the current Rennel Arms family. Its proportions are stretched rather than bulky, placing it between a precision service pistol, prestige officer's sidearm, specialist handgun, and serious sporting or competition-derived pistol.",
+      "characteristics": [
+        "Long, comparatively narrow slide",
+        "Extended sighting profile",
+        "Elegant frame lines",
+        "Full-size sculpted grip",
+        "Slightly tapered front slide profile",
+        "Balanced and refined silhouette"
+      ],
+      "finishNote": "Physically large without looking brutal. It is not intended as an ordinary standard-issued sidearm.",
+      "nameMeaning": "Size, length, grace, refinement, and composure rather than threat. A Raven should look dangerous; a Swan should look elegant and controlled.",
+      "references": ["Long-slide Glock concepts", "CZ competition-derived service pistols", "Refined SIG Sauer and Walther proportions"]
+    }
+  ],
+  "futureCategories": [
+    "Rifles",
+    "Carbines",
+    "Submachine guns",
+    "Military weapons",
+    "Police weapons",
+    "MSF procurement",
+    "Ducal Guard procurement",
+    "Manufacturers",
+    "Weapon variants",
+    "Visual reference images"
+  ]
+}

@@ -8,6 +8,8 @@ Story, character, world, relationship, institution, location, and event question
 
 | Area | Question | Confidence |
 | --- | --- | --- |
+| Weapons | Which named characters and institutions use each Rennel pistol beyond the confirmed Sparrow issue to weapons-certified MSF officers? | 0% |
+| Rennel Arms | Who owns or governs Rennel Arms, and what formal relationship does the manufacturer have with the Crown, government, military, and police? | 0% |
 | Helena | Is Helena a Magus, and what access, allies, or leverage allow her to operate inside the hidden magical conflict? | 0% |
 | Family | Who is the reliable distant relative trusted with Lynleit and Kyrien's son, and what does that person know about the child's parents? | 0% |
 | Spill inquiry | Which wiser people does Lynleit consult, and what do they teach her about the Spill's origin? | 0% |
@@ -69,6 +71,7 @@ These questions determine sequence, event placement, reveal timing, or elapsed t
 
 | Area | Question | Confidence |
 | --- | --- | --- |
+| Weapons chronology | In what order were the P17, P19, P22, P24, P28, and P31 introduced, and which models remain current at the beginning of the story? | 0% |
 | Family | When, if ever, does Kyrien learn that Lynleit bore his son, and where does that revelation belong in relation to Lynleit's elusive return and his leadership of MSF? | 0% |
 | Timeline | How much time passes between the first disappearance, the park quarantine, Kyrien's early recruitment, Fionn's much later assassination, Helena's takeover, and the hunt for Lynleit's arrest? | 10% |
 | House chronology | How old is Lynleit when she requests the third-floor room, and when does the house begin functioning as a residential MSF node rather than only a family home? | 10% |
