@@ -8,7 +8,6 @@ Story, character, world, relationship, institution, location, and event question
 
 | Area | Question | Confidence |
 | --- | --- | --- |
-| Weapons | Which named characters and institutions use each Rennel pistol beyond the confirmed Sparrow issue to weapons-certified MSF officers? | 0% |
 | Ren Arms | Who owns or governs Ren Arms, and what formal relationship does the manufacturer have with the Crown, government, military, and police? | 0% |
 | Helena | Is Helena a Magus, and what access, allies, or leverage allow her to operate inside the hidden magical conflict? | 0% |
 | Family | Who is the reliable distant relative trusted with Lynleit and Kyrien's son, and what does that person know about the child's parents? | 0% |
@@ -34,6 +33,7 @@ Story, character, world, relationship, institution, location, and event question
 | House | How are the library, offices, bedrooms, and service spaces distributed across the three floors, and which rooms are deliberately kept outside MSF use? | 10% |
 | MSF | Which relatives, staff, and officers have routine access to the residential mini-HQ, and how are those access privileges recognized? | 10% |
 | Security | How does the family house protect MSF work without turning the family residence into an obvious institutional target? | 10% |
+| Weapons | Which named characters and institutions use each Ren Arms pistol beyond Lynleit's confirmed Sparrow and the general Sparrow issue to weapons-certified MSF officers? | 10% |
 | MSF | Which officers learn that magic exists during the crisis, what remains compartmentalized, and how is the smaller post-Spill agency divided between magical and ordinary intelligence work? | 10% |
 | Lynleit | How is Fionn killed, who discovers the death, and what evidence is manufactured or misread to frame Lynleit convincingly enough to trigger the directed hunt for her arrest? | 15% |
 | Opening chapter | What exact magical matter are Fionn and Lynleit negotiating with the Church before dawn, and why does Lynleit leave irritated? | 15% |

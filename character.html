@@ -9,6 +9,7 @@
     <link rel="icon" href="favicon.svg" type="image/svg+xml">
     <link rel="stylesheet" href="styles.css">
     <script src="script.js" defer></script>
+    <script src="entity-links.js" defer></script>
     <script src="character.js" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2" defer></script>
     <script src="notes-config.js" defer></script>
@@ -108,6 +109,11 @@
               <section class="profile-section profile-personality reveal" aria-labelledby="personality-title">
                 <header><span aria-hidden="true">02</span><div><p class="eyebrow">Provisional comparative assessment</p><h2 id="personality-title">Strengths and weaknesses</h2></div><div class="personality-type-meta" id="character-profile-type" aria-label="MBTI record"></div></header>
                 <div class="personality-spectrum" id="character-personality"></div>
+              </section>
+
+              <section class="profile-section profile-equipment reveal" id="character-equipment-section" aria-labelledby="equipment-title" hidden>
+                <header><span aria-hidden="true">03</span><div><p class="eyebrow">Carried and issued objects</p><h2 id="equipment-title">Equipment</h2></div></header>
+                <div class="equipment-grid" id="character-equipment"></div>
               </section>
 
               <section class="profile-section profile-nature reveal" id="character-nature-section" aria-labelledby="nature-title" hidden>

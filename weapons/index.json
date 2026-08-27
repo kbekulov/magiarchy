@@ -36,6 +36,13 @@
       ],
       "finishNote": "The silver finish belongs to the firearm itself rather than to an MSF customization. Routine issue gradually makes the ordinary Ren Arms product visually associated with MSF officers.",
       "nameMeaning": "Its small size, light visual presence, discretion, and modest chambering.",
+      "characterLinks": [
+        {
+          "slug": "lynleit",
+          "name": "Lynleit",
+          "note": "Carries the issued Sparrow as her personal sidearm."
+        }
+      ],
       "references": ["Walther PPK", "SIG Sauer P230"]
     },
     {

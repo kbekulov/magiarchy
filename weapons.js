@@ -125,6 +125,19 @@ function renderWeapon(weapon, index) {
   footer.append(notes, references);
 
   body.append(header, facts, design, characteristics, footer);
+  if (weapon.characterLinks?.length) {
+    const characterLinks = weaponElement('div', 'weapon-character-links');
+    characterLinks.append(weaponElement('span', '', 'CHARACTER RECORDS'));
+    const linkList = weaponElement('div');
+    weapon.characterLinks.forEach((character) => {
+      const link = weaponElement('a');
+      link.href = `character.html?character=${encodeURIComponent(character.slug)}`;
+      link.append(weaponElement('strong', '', character.name), weaponElement('small', '', character.note));
+      linkList.append(link);
+    });
+    characterLinks.append(linkList);
+    body.append(characterLinks);
+  }
   article.append(visual, body);
   return article;
 }

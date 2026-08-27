@@ -8,6 +8,9 @@ const profileSeeds = [
       ['Signature silhouette', 'Long structured outerwear frames a compact, practical lower silhouette. The contrast between formal tailoring and movement-ready shorts and boots is the recognizable core of her wardrobe.'],
       ['Variation rule', 'Other outfits may change the coat length, layers, or degree of formality, but usually preserve a blue tailored outer layer, a pale blouse, restrained black detailing, and tall practical footwear.']
     ],
+    equipment: [
+      { label: 'Issued sidearm', title: 'Ren L17 "Sparrow"', meta: ['9×17 mm', 'Leather OWB holster', 'Right-handed draw'], detail: 'Lynleit carries the compact Sparrow in a snug leather outside-the-waistband holster centered just above her tailbone. A rightward cant lets her draw with her right hand. The pistol\'s small proportions and the long jackets or coats central to her wardrobe keep it concealed without disturbing her usual silhouette.', href: 'weapons.html#ren-l17-sparrow' }
+    ],
     personalitySummary: 'Lynleit reads hidden structures with an inward, private precision, but priority defines her. When pressure becomes real, she moves toward people, assumes responsibility, and measures strategy by its human consequences. Her warmth is deliberate and structurally aware rather than exuberant.',
     traits: [
       { label: 'Relational leadership', score: 95, note: 'Her first instinct in crisis is to read trust, morale, legitimacy, shared burden, and the emotional field around her.' },
@@ -577,6 +580,28 @@ function renderProfile(profile) {
   appearanceDetails.forEach(([term, detail]) => {
     appearance.append(createElement('dt', '', term), createElement('dd', '', detail));
   });
+
+  const equipmentSection = document.querySelector('#character-equipment-section');
+  const equipment = document.querySelector('#character-equipment');
+  if (profile.equipment?.length) {
+    profile.equipment.forEach((entry, index) => {
+      const card = createElement(entry.href ? 'a' : 'article', 'equipment-card');
+      if (entry.href) card.href = entry.href;
+      card.append(createElement('span', 'equipment-index', String(index + 1).padStart(2, '0')));
+      const copy = createElement('div', 'equipment-copy');
+      copy.append(createElement('small', '', entry.label), createElement('h3', '', entry.title));
+      if (entry.meta?.length) {
+        const metadata = createElement('div', 'equipment-meta');
+        entry.meta.forEach((item) => metadata.append(createElement('span', '', item)));
+        copy.append(metadata);
+      }
+      copy.append(createElement('p', '', entry.detail));
+      if (entry.href) copy.append(createElement('b', 'equipment-link', 'Open weapon record →'));
+      card.append(copy);
+      equipment.append(card);
+    });
+    equipmentSection.hidden = false;
+  }
 
   const personality = document.querySelector('#character-personality');
   if (profile.personalitySummary) personality.append(createElement('p', 'personality-summary', profile.personalitySummary));
