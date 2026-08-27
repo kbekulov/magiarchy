@@ -25,6 +25,8 @@
       "Kyrien has made a failed attempt to assassinate a politician who belongs to the Magi world.",
       "The immediate aftermath brings him into a police office.",
       "Lynleit conducts the interrogation.",
+      "Lynleit invokes a broad MSF national-security transfer authority created by Fionn for extraordinary threats.",
+      "The transfer gives her control of Kyrien's case without requiring her to disclose the secret recruitment to Fionn.",
       "Kyrien faces prison unless he agrees to become Lynleit's secret helper.",
       "His freedom remains conditional on accepting Lynleit's demands, leaving him confined to her whims.",
       "Lynleit's private strategy is to keep Kyrien as a secret trump card against Helena.",
@@ -37,19 +39,18 @@
       "Kyrien obtained the knowledge and tools for the attempt through his father's military background.",
       "The attempt fails solely because the politician belongs to the Magi world.",
       "The politician's survival later creates consequences for Lynleit.",
-      "Lynleit's suspicion of Helena begins with daughterly intuition, a tense relationship, suspicious incidents, and the belief that Helena never truly loved Fionn."
+      "Lynleit notices Helena probing Fionn's schedules, visitors to the family house, trusted officers, and Lynleit's own travel.",
+      "Lynleit suspects murder because Helena appears to be studying the family too carefully."
     ],
     "openQuestions": [
       "What is the politician's name, office, and exact role in Kyrien's father's death?",
       "How does the surviving politician later retaliate against Lynleit?",
-      "What authority places Lynleit inside the interrogation?",
-      "What initial cover story conceals Kyrien's release and unofficial MSF association?",
-      "Which suspicious acts did Lynleit witness Helena performing?"
+      "What initial cover story conceals Kyrien's release and unofficial MSF association?"
     ],
     "continuityBefore": "Kyrien's father's death, the politician's involvement, and the military knowledge behind the attempt still need connective scenes.",
     "continuityAfter": "Kyrien enters Lynleit's service unwillingly. Lynleit must later decide who, if anyone, can be trusted with the secret. The arrangement preserves him as hidden leverage against Helena through the early investigation. Fionn's much later assassination vindicates Lynleit's warning without proving that she understood its source.",
     "chapterSlug": "after-the-failed-attempt",
-    "updated": "2026-08-25"
+    "updated": "2026-08-27"
   },
   {
     "slug": "the-secret-third-ally",
@@ -199,8 +200,9 @@
     "known": [
       "Drake is deeply convinced that a coup is underway.",
       "Drake holds the rank of State Councillor and has an unusually close personal relationship with the Duke.",
+      "Their friendship begins when Drake is the only official willing to tell the Duke that the Duke is wrong.",
       "The Duke openly refers to Drake as a close friend and sometimes forgives his mistakes.",
-      "Courtiers shun Drake as the Duke's favorite boy and regard his unusual access as favoritism.",
+      "Courtiers shun Drake as the Duke's pampered favorite and overlook that he originally earned the relationship by refusing to flatter him.",
       "He cannot yet identify where the conspiracy begins or how far it reaches.",
       "His peers ridicule the suspicion and the Duke remains skeptical.",
       "Drake interprets the park disappearances as possible cover for the illegal movement of material intended for action against Narvea or Ducal authority.",
@@ -208,7 +210,6 @@
     ],
     "openQuestions": [
       "What first convinces Drake that the irregularities form a coup attempt?",
-      "How did Drake and the Duke become close friends?",
       "Which peers lead the ridicule at Court?",
       "Is somebody deliberately encouraging the Court to dismiss him?",
       "Which criminal Magi, foreign Magiarchates, and church actors are shaping the conspiracy from outside Drake's field of view?"
@@ -216,7 +217,7 @@
     "continuityBefore": "Early disappearances and irregular movements need to produce the evidence that Drake reads as one political pattern.",
     "continuityAfter": "Sherie responds to her uncle's isolation by proposing contact with Lynleit outside every lawful chain of supervision.",
     "chapterSlug": null,
-    "updated": "2026-08-23"
+    "updated": "2026-08-27"
   },
   {
     "slug": "a-meeting-beyond-authority",
