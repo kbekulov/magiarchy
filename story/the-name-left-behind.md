@@ -6,7 +6,7 @@
 
 Natalia noticed the gap because the archive insisted there was none. A page number had been removed from every index, leaving the sequence perfect and the history incomplete.
 
-The missing name led her back to the Magic Academy, where her niece Myka had hidden the last unaltered copy inside a student spellbook.
+The missing name led her back to the Magi Academy, where her niece Myka had hidden the last unaltered copy inside a student spellbook.
 
 ## The Witness
 

@@ -55,12 +55,12 @@
     "speakers": ["World Archive"]
   },
   {
-    "slug": "magic-as-leverage",
-    "title": "Magic Is Leverage, Not Omnipotence",
-    "topic": "Magic Doctrine",
-    "file": "magic-as-leverage.md",
-    "updated": "2026-08-26",
-    "description": "A practical guide to magical mechanics, internal and external practice, limitations, nightmares, and the need for control.",
+    "slug": "magecraft-as-leverage",
+    "title": "Magecraft Is Leverage, Not Omnipotence",
+    "topic": "Magecraft Doctrine",
+    "file": "magecraft-as-leverage.md",
+    "updated": "2026-08-27",
+    "description": "A practical guide to magecraft mechanics, internal and external practice, limitations, nightmares, and the need for control.",
     "speakers": ["Magistry Archive"]
   }
 ]

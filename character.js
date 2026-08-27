@@ -44,7 +44,7 @@ const profileSeeds = [
     ],
     origin: 'Kyrien begins the story as an independent figure. His father held an important position in Narvea\'s military, and the knowledge and tools Kyrien inherits from that background later enable an attempt on a politician involved in causing his father\'s death. The assassination fails solely because the target belongs to the Magi world, a fact Kyrien could not have planned around.', rupture: 'Within the first few chapters, the failed attempt ends with Lynleit interrogating Kyrien at a police office. He faces prison until she offers conditional freedom: become her secret helper and remain confined to her demands. She wants a deniable trump card against Helena and eventually tells only Felix and Reiner, leaving even Fionn outside the compartment.', focus: 'The coerced arrangement drags him deeper into the world of Magi and gradually into MSF. Reiner remains suspicious but accepts Lynleit\'s judgment. Felix never fully trusts him and repeatedly clashes with him, leaving Kyrien inside a circle whose members protect Lynleit from him as much as they protect him for her. After Helena frames Lynleit and launches the hunt for her arrest, Kyrien gives her refuge and helps her find secure ways to contact Felix and Reiner. His hidden position becomes the first practical base of her campaign to reclaim MSF.', future: 'When Lynleit disappears to protect her pregnancy and investigate the Spill, Kyrien becomes MSF\'s later director and inherits a smaller agency with a permanent magical mandate. He survives by reaching the peak of MSF\'s intelligence-operative side. Lynleit later begins appearing around missions, while Kyrien remains unaware that they have a son.',
     ally: 'Lynleit', allyNote: 'She begins as his handler rather than a willing partner. After he alone witnesses her walking on water, he denies seeing anything and keeps the forbidden secret. Drenched and breathless, they sit back to back for warmth, creating the first trigger in a bond that grows through functional care rather than overt romance. The hotel-room refuge follows much later after Fionn\'s murder, and they do not have sex until the end of the first arc.', rival: 'Tien', rivalNote: 'A shadow operator whose methods mirror Kyrien\'s skills without his restraint, forcing him to sharpen every discipline that keeps him alive.', goal: 'Survive Lynleit\'s control, master the intelligence side of MSF, face the Magus politician tied to his father\'s death, and eventually make choices inside the hidden world on terms that are genuinely his own.',
-    beats: ['Outside the System', 'Alliance under Pressure', 'The Director without Magic', 'The Secret Kept from Him']
+    beats: ['Outside the System', 'Alliance under Pressure', 'The Director without Magecraft', 'The Secret Kept from Him']
   },
   {
     slug: 'helena', name: 'Helena', code: 'MSF · 003', role: 'Political usurper', ageBand: 'Early forties', factions: ['MSF'], mbti: { type: 'XXTJ', status: 'Suspected' }, accent: 'red', materialStatus: 'Canon actions + mock details',
@@ -187,8 +187,8 @@ const profileSeeds = [
     beats: ['The Impossible Theory', 'Beyond the Cordon', 'A Correct but Incomplete Hunch', 'Dependence without Recognition']
   },
   {
-    slug: 'natalia', name: 'Natalia', code: 'ARC · 013', role: 'Independent magical examiner and private investigator', ageBand: 'Late thirties', factions: ['Private Eye', 'Magiarchy', 'Magic Academy'], affiliationTimeline: [{ name: 'Magic Academy', stage: 'Former professor' }, { name: 'Private Eye', stage: 'Current sole proprietor' }, { name: 'Magiarchy', stage: 'Magus affiliation' }], mbti: { type: 'XXXX', status: 'Undiscussed' }, accent: 'neutral', materialStatus: 'Canon role + mock visual details',
-    summary: 'A former Magic Academy professor who left a restrictive academic career to pursue independent research. Private cases fund that work, turning her one-woman office into a discreet practice for magical deviations, personal afflictions, and edge cases.',
+    slug: 'natalia', name: 'Natalia', code: 'ARC · 013', role: 'Independent magical examiner and private investigator', ageBand: 'Late thirties', factions: ['Private Eye', 'Magiarchy', 'Magi Academy'], affiliationTimeline: [{ name: 'Magi Academy', stage: 'Former professor' }, { name: 'Private Eye', stage: 'Current sole proprietor' }, { name: 'Magiarchy', stage: 'Magus affiliation' }], mbti: { type: 'XXXX', status: 'Undiscussed' }, accent: 'neutral', materialStatus: 'Canon role + mock visual details',
+    summary: 'A former Magi Academy professor who left a restrictive academic career to pursue independent research. Private cases fund that work, turning her one-woman office into a discreet practice for magical deviations, personal afflictions, and edge cases.',
     visual: 'Professional citywear, compact case tools, and magical details hidden in plain sight', palette: 'Black, wine red, parchment, muted violet',
     personalitySummary: 'Natalia is a researcher first and a private investigator by necessity. She values intellectual autonomy more than institutional standing and approaches unusual clients with the attention of an examiner: the apparent crime may be secondary to an unstable talent, personal deviation, or magical condition that nobody else knows how to name.',
     traits: [
@@ -196,10 +196,10 @@ const profileSeeds = [
       { label: 'Magical examination', note: 'She investigates people as readily as incidents, studying unusual magecraft, personal deviations, and conditions with a precision closer to a physician than a conventional detective.' },
       { label: 'Selective casework', note: 'The business has one employee: Natalia. Paid cases finance her research and let her choose which clients, risks, and secrets enter her office.' }
     ],
-    origin: 'Natalia earned a professorship at the Magic Academy as a talented Magus and serious researcher. She eventually found academic life too constraining: the institution could support scholarship, but it also defined which questions were respectable and how far an inquiry was permitted to go. She resigned to continue her work independently.', rupture: 'Freedom did not finance itself. Natalia opened a private-investigation business as a practical source of income, then discovered that her immense knowledge of Magi and magecraft made her uniquely valuable to clients with cases no ordinary investigator could understand.', focus: 'Her one-woman office now sits between a detective agency, consultation room, and private laboratory. Clients bring suspected crimes, unstable talents, personal deviations, and magical problems they cannot safely expose. Natalia examines the person and phenomenon before deciding whether a crime has occurred at all.', future: 'Her practice becomes highly sought after in the narrow interval before the Magiarchy or Church learns enough to claim a case. The exact investigation that connects Natalia and Lester to the central crisis remains undefined.',
+    origin: 'Natalia earned a professorship at the Magi Academy as a talented Magus and serious researcher. She eventually found academic life too constraining: the institution could support scholarship, but it also defined which questions were respectable and how far an inquiry was permitted to go. She resigned to continue her work independently.', rupture: 'Freedom did not finance itself. Natalia opened a private-investigation business as a practical source of income, then discovered that her immense knowledge of Magi and magecraft made her uniquely valuable to clients with cases no ordinary investigator could understand.', focus: 'Her one-woman office now sits between a detective agency, consultation room, and private laboratory. Clients bring suspected crimes, unstable talents, personal deviations, and magical problems they cannot safely expose. Natalia examines the person and phenomenon before deciding whether a crime has occurred at all.', future: 'Her practice becomes highly sought after in the narrow interval before the Magiarchy or Church learns enough to claim a case. The exact investigation that connects Natalia and Lester to the central crisis remains undefined.',
     ally: 'Lester', allyNote: 'Lester is not her employee. He is an outside ally and a demiholumn whose part-Holumn nature sometimes allows him to accomplish what should be impossible for an ordinary investigator.', connections: [
       { name: 'Lester', relation: 'Outside ally', detail: 'Lester remains outside the business, but his demiholumn nature sometimes carries Natalia past barriers that scholarship and ordinary investigation cannot cross.' },
-      { name: 'Myka', relation: 'Niece, student, and friend', detail: 'Natalia keeps constant contact with her niece at the Magic Academy. Myka asks for advice on her studies, Natalia checks on her life, and their bond often resembles mother and daughter as much as aunt and niece.' }
+      { name: 'Myka', relation: 'Niece, student, and friend', detail: 'Natalia keeps constant contact with her niece at the Magi Academy. Myka asks for advice on her studies, Natalia checks on her life, and their bond often resembles mother and daughter as much as aunt and niece.' }
     ], rival: 'Institutional capture', rivalNote: 'The Academy, Magiarchy, and Church can each narrow an inquiry by deciding which questions are permissible, which cases belong to them, and which answers must remain hidden.', goal: 'Fund and protect an independent life of magical research while giving clients an answer before hidden authorities reduce their problem to jurisdiction, secrecy, or punishment.',
     beats: ['Professor at the Academy', 'Scholarship without Permission', 'The Examiner for Hire', 'The Demiholumn Ally']
   },
@@ -223,8 +223,8 @@ const profileSeeds = [
     beats: ['Between Human and Holumn', 'Natalia\'s Outside Ally', 'The Impossible Favor', 'A Nature without an Explanation']
   },
   {
-    slug: 'myka', name: 'Myka', code: 'ARC · 015', role: 'Magic Academy student', factions: ['Magic Academy', 'Magiarchy'], mbti: { type: 'XXXX', status: 'Undiscussed' }, accent: 'neutral',
-    summary: 'A young Magus studying at the Magic Academy who relies on her aunt Natalia for academic advice, personal reassurance, and a view of magical inquiry beyond institutional limits.',
+    slug: 'myka', name: 'Myka', code: 'ARC · 015', role: 'Magi Academy student', factions: ['Magi Academy', 'Magiarchy'], mbti: { type: 'XXXX', status: 'Undiscussed' }, accent: 'neutral',
+    summary: 'A young Magus studying at the Magi Academy who relies on her aunt Natalia for academic advice, personal reassurance, and a view of magical inquiry beyond institutional limits.',
     visual: 'Academic uniform elements, experimental accessories, and an expressive magical silhouette', palette: 'Indigo, cream, pale cyan, black', traits: ['Gifted', 'Earnest', 'Impulsive'],
     origin: 'Myka enters an Academy that functions as a public institution within Magi society. Magi families and lineages fund it so their children can succeed them, while acclaimed Magi who choose research and teaching serve as professors. Her aunt Natalia, a former professor, remains a constant source of advice and a personal connection to life beyond the institution.', rupture: 'The Spill turns distant doctrine into an immediate threat affecting people outside protected magical society.', focus: 'Talent creates pressure to act before training has taught the restraint that action requires. Myka turns to Natalia with questions about her studies, while Natalia reaches back to make sure the student is coping with more than coursework.', future: 'Protecting a surviving clue draws aunt and niece into a conflict far beyond the Academy\'s controlled exercises, testing whether their familial trust can survive the danger attached to Natalia\'s independent work.',
     ally: 'Natalia', allyNote: 'Her aunt, adviser, and friend. Natalia has no children of her own and sometimes treats Myka like a daughter, while Myka trusts her with academic problems and personal concerns that do not fit comfortably inside Academy life.', rival: 'Inexperience', rivalNote: 'The distance between understanding a rule and surviving its failure.', goal: 'Become useful without mistaking raw ability for readiness, while learning which parts of Natalia\'s independence are worth following and which carry risks the Academy was built to contain.',
@@ -256,27 +256,27 @@ const skillAxes = [
   { key: 'awareness', label: 'Awareness' },
   { key: 'fieldcraft', label: 'Fieldcraft' },
   { key: 'combat', label: 'Combat' },
-  { key: 'magic', label: 'Magic' }
+  { key: 'magecraft', label: 'Magecraft' }
 ];
 
 const skillProfiles = {
-  lynleit: { analysis: 92, influence: 94, awareness: 88, fieldcraft: 65, combat: 76, magic: 82 },
-  kyrien: { analysis: 95, influence: 48, awareness: 91, fieldcraft: 98, combat: 87, magic: 0 },
-  helena: { analysis: 88, influence: 92, awareness: 84, fieldcraft: 45, combat: 38, magic: 0 },
-  tien: { analysis: 82, influence: 36, awareness: 90, fieldcraft: 96, combat: 94, magic: 0 },
-  fionn: { analysis: 98, influence: 80, awareness: 96, fieldcraft: 72, combat: 85, magic: 98 },
-  heyk: { analysis: 72, influence: 55, awareness: 82, fieldcraft: 90, combat: 88, magic: 0 },
-  sherie: { analysis: 82, influence: 96, awareness: 88, fieldcraft: 54, combat: 35, magic: 0 },
-  drake: { analysis: 98, influence: 42, awareness: 91, fieldcraft: 62, combat: 55, magic: 0 },
-  felix: { analysis: 88, influence: 80, awareness: 86, fieldcraft: 94, combat: 62, magic: 0 },
-  reiner: { analysis: 70, influence: 48, awareness: 84, fieldcraft: 82, combat: 96, magic: 0 },
-  yulia: { analysis: 92, influence: 38, awareness: 90, fieldcraft: 46, combat: 24, magic: 0 },
-  hiyu: { analysis: 93, influence: 56, awareness: 64, fieldcraft: 48, combat: 27, magic: 0 },
-  natalia: { analysis: 94, influence: 58, awareness: 86, fieldcraft: 62, combat: 38, magic: 84 },
-  lester: { analysis: 76, influence: 54, awareness: 92, fieldcraft: 84, combat: 72, magic: 91 },
-  myka: { analysis: 75, influence: 70, awareness: 76, fieldcraft: 40, combat: 35, magic: 90 },
-  'inspector-leo': { analysis: 84, influence: 65, awareness: 90, fieldcraft: 76, combat: 70, magic: 0 },
-  'father-mikhail': { analysis: 86, influence: 82, awareness: 84, fieldcraft: 52, combat: 45, magic: 0 }
+  lynleit: { analysis: 92, influence: 94, awareness: 88, fieldcraft: 65, combat: 76, magecraft: 82 },
+  kyrien: { analysis: 95, influence: 48, awareness: 91, fieldcraft: 98, combat: 87, magecraft: 0 },
+  helena: { analysis: 88, influence: 92, awareness: 84, fieldcraft: 45, combat: 38, magecraft: 0 },
+  tien: { analysis: 82, influence: 36, awareness: 90, fieldcraft: 96, combat: 94, magecraft: 0 },
+  fionn: { analysis: 98, influence: 80, awareness: 96, fieldcraft: 72, combat: 85, magecraft: 98 },
+  heyk: { analysis: 72, influence: 55, awareness: 82, fieldcraft: 90, combat: 88, magecraft: 0 },
+  sherie: { analysis: 82, influence: 96, awareness: 88, fieldcraft: 54, combat: 35, magecraft: 0 },
+  drake: { analysis: 98, influence: 42, awareness: 91, fieldcraft: 62, combat: 55, magecraft: 0 },
+  felix: { analysis: 88, influence: 80, awareness: 86, fieldcraft: 94, combat: 62, magecraft: 0 },
+  reiner: { analysis: 70, influence: 48, awareness: 84, fieldcraft: 82, combat: 96, magecraft: 0 },
+  yulia: { analysis: 92, influence: 38, awareness: 90, fieldcraft: 46, combat: 24, magecraft: 0 },
+  hiyu: { analysis: 93, influence: 56, awareness: 64, fieldcraft: 48, combat: 27, magecraft: 0 },
+  natalia: { analysis: 94, influence: 58, awareness: 86, fieldcraft: 62, combat: 38, magecraft: 84 },
+  lester: { analysis: 76, influence: 54, awareness: 92, fieldcraft: 84, combat: 72, magecraft: 91 },
+  myka: { analysis: 75, influence: 70, awareness: 76, fieldcraft: 40, combat: 35, magecraft: 90 },
+  'inspector-leo': { analysis: 84, influence: 65, awareness: 90, fieldcraft: 76, combat: 70, magecraft: 0 },
+  'father-mikhail': { analysis: 86, influence: 82, awareness: 84, fieldcraft: 52, combat: 45, magecraft: 0 }
 };
 
 function createElement(tagName, className, text) {
@@ -378,7 +378,7 @@ function renderSkillGraph(profile, container) {
 function factionClass(faction) {
   const classes = {
     MSF: 'faction-msf', Magiarchy: 'faction-magiarchy', Independent: 'faction-independent', Government: 'faction-government',
-    'Private Eye': 'faction-private-eye', 'Magic Academy': 'faction-academy', Police: 'faction-police', 'The Church': 'faction-church'
+    'Private Eye': 'faction-private-eye', 'Magi Academy': 'faction-academy', Police: 'faction-police', 'The Church': 'faction-church'
   };
   return classes[faction] ?? '';
 }

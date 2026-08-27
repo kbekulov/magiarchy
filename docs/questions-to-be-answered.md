@@ -31,7 +31,7 @@ Story, character, world, relationship, institution, location, and event question
 | MSF | How is the blue-clothing authority signal authenticated so that ordinary clothing or deliberate imitation cannot impersonate command? | 5% |
 | Magiarchy | Which church authorities recognized Fionn as Magiarch, and how is that secret office handled inside multi-confessional Narvea? | 5% |
 | The Church | How do Orthodox and Catholic special envoys differ in method and ethics, and which hierarchies exercise practical authority inside Narvea? | 5% |
-| Institutions | How do the Narvean Police, Magic Academy, and private investigators formally relate to MSF before and after the hidden world becomes known to them? | 5% |
+| Institutions | How do the Narvean Police, Magi Academy, and private investigators formally relate to MSF before and after the hidden world becomes known to them? | 5% |
 | Lester | Who knows that Lester is a demiholumn, and what would the Church, Magiarchy, or a Holumn do if his nature became known? | 5% |
 | Natalia | What consent and ethical limits govern her examination of a client's magecraft, personal deviations, or magical condition, and when does she refuse a case? | 5% |
 | The Church | What delegated authority does Father Mikhail hold as a special envoy? | 10% |
@@ -55,7 +55,7 @@ Story, character, world, relationship, institution, location, and event question
 | Boat operation | What supernatural force remains beneath the river after the failed infiltration, which intelligence survives, and which additional MSF officers join the operation? | 20% |
 | Holumns | How do Holumns make victims disappear, where are those victims taken, and can any of them return? | 20% |
 | MSF | What legal charter, oversight mechanism, and command structure give MSF authority while allowing Helena, Lynleit, and later Kyrien to claim its director seat? | 20% |
-| Magic Academy | How are students admitted and trained, who governs the Academy, and what formal accountability connects its lineage funders, Magi professors, the Magiarchy, and the churches? | 20% |
+| Magi Academy | How are students admitted and trained, who governs the Academy, and what formal accountability connects its lineage funders, Magi professors, the Magiarchy, and the churches? | 20% |
 | MSF operations | Which operation first demonstrates Felix's hacking and communications role alongside Reiner's brute-force role, and how does Lynleit deploy their knight-and-rook pairing when both are available? | 20% |
 | Core mystery | Who is the first missing man, how does he cause the Spill, and is he acting for the conspiracy, being manipulated by it, or creating an independent crisis that others exploit? | 30% |
 | Core mystery | Who ultimately orders Fionn's assassination, and which criminal Magi, rival Magiarchates, church actors, or infiltrators knowingly or unknowingly contribute to it? | 30% |

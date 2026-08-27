@@ -1,8 +1,8 @@
-# Magic Is Leverage, Not Omnipotence
+# Magecraft Is Leverage, Not Omnipotence
 
 ## The One Rule
 
-Magic does not break natural law. It applies pressure from inside it.
+Magecraft does not break natural law. It applies pressure from inside it.
 
 ## Magecraft and miracle-making
 
@@ -18,7 +18,7 @@ A Magus cannot invent a new rule for reality. They find an existing seam, weakne
 
 > Creation belongs to gods. Magi manipulate what is already there.
 
-Magic is best understood as structural literacy joined to intention. A Magus sees more of the system than an ordinary person and knows where a small intervention can produce a much larger result.
+Magecraft is best understood as structural literacy joined to intention. A Magus sees more of the system than an ordinary person and knows where a small intervention can produce a much larger result.
 
 ## Two Directions of Practice
 
@@ -76,7 +76,7 @@ This is why containment teams study people as carefully as they study creatures.
 
 ## Limits and Cost
 
-Magic cannot produce an absolute contradiction. It cannot create something from pure nothingness, erase foundational structure, or make the impossible possible simply because an operator wants it badly enough.
+Magecraft cannot produce an absolute contradiction. It cannot create something from pure nothingness, erase foundational structure, or make the impossible possible simply because an operator wants it badly enough.
 
 Every intervention introduces stress. That stress shifts the existing balance and invites resistance.
 
@@ -85,7 +85,7 @@ Every intervention introduces stress. That stress shifts the existing balance an
 - Greater force creates greater exposure to backlash.
 - A successful spell can still produce a worse second-order consequence.
 
-Magic is leverage, never omnipotence.
+Magecraft is leverage, never omnipotence.
 
 ## What Power Actually Looks Like
 
@@ -95,7 +95,7 @@ A careless operator forces reality until something breaks. A skilled operator fi
 
 Precision should be more frightening than magnitude. Restraint is not weakness. It is evidence that the operator understands what will happen next.
 
-## Why Magic Becomes Political
+## Why Magecraft Becomes Political
 
 The conflict between Magi, law, religion, and political power is built into the system. A person who can identify and manipulate the weak points in reality is useful, dangerous, and difficult to govern.
 
@@ -117,7 +117,7 @@ Exposure could trigger retaliation from the Church, panic among the public, coll
 
 ## The Practical Doctrine
 
-Competent magic follows a few simple principles:
+Competent magecraft follows a few simple principles:
 
 - Understand before acting.
 - Favor precision over spectacle.
