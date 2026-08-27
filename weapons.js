@@ -15,8 +15,10 @@ function weaponElement(tag, className, text) {
 function renderManufacturer(manufacturer) {
   if (!weaponsManufacturerPanel) return;
   const mark = weaponElement('div', 'manufacturer-mark');
-  mark.setAttribute('aria-hidden', 'true');
-  mark.append(weaponElement('span', '', 'RA'), weaponElement('i'));
+  const logo = weaponElement('img', 'manufacturer-logo');
+  logo.src = 'media/gallery/images/weapons/ren_arms_logo.png';
+  logo.alt = 'Ren Arms mark';
+  mark.append(logo, weaponElement('i'));
 
   const copy = weaponElement('div', 'manufacturer-copy');
   copy.append(

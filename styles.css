@@ -198,12 +198,14 @@
   overflow: hidden;
 }
 
-.manufacturer-mark span {
+.manufacturer-logo {
   position: relative;
   z-index: 1;
-  color: #d5d8df;
-  font-family: Georgia, 'Times New Roman', serif;
-  font-size: 3rem;
+  display: block;
+  width: 108px;
+  height: 132px;
+  object-fit: contain;
+  opacity: .9;
 }
 
 .manufacturer-mark i {
@@ -854,6 +856,11 @@
     min-height: 150px;
     border-right: 0;
     border-bottom: 1px solid var(--weapon-line);
+  }
+
+  .manufacturer-logo {
+    width: 76px;
+    height: 92px;
   }
 
   .manufacturer-status {
