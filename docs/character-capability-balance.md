@@ -27,13 +27,13 @@ These questions define what each character can do, what they cannot do, and why 
 | Timeline | Should profiles display separate opening, crisis, and late-story capability states for characters whose competence changes substantially? | 0% |
 | Helena | Is Helena a Magus, what practical abilities support her takeover, and what weakness prevents political manipulation from making her self-sufficient? | 0% |
 | Fionn | What operational blind spots, physical limitations, magical costs, or personal dependencies make Fionn vulnerable despite his mastery? | 0% |
-| Natalia | What kind of magecraft does Natalia specialize in, what can she not investigate alone, and what cost or risk prevents academic mastery from solving every edge case? | 0% |
 | Lester | What can Lester's demiholumn nature actually do, what can it never do, what triggers it, and what cost or danger follows an impossible intervention? | 0% |
 | Father Mikhail | What political, intelligence, combat, or assassination specialization belongs to Father Mikhail, and where is he weaker than another special envoy? | 0% |
 | Son | Does Lynleit and Kyrien's son inherit the blue-flame lineage, another ability, or no Magus talent, and how would any inheritance remain balanced against both parents? | 0% |
 | Lynleit | What practical limits, bodily costs, and backlash govern her unsafe blue-flame output and secret water walking, and which problems still require Fionn's greater virtuosity or her allies' non-magical skills? | 15% |
 | Myka | Which Academy disciplines make Myka gifted, which remain weak, and how does inexperience constrain high magical potential? | 15% |
 | Inspector Leo | Which investigative strengths belong specifically to Leo, and what does restricted clearance prevent him from accomplishing without Natalia, MSF, or Church access? | 20% |
+| Natalia | Which magical disciplines support Natalia's examinations, what can she not diagnose alone, and what cost or risk prevents broad scholarship from solving every edge case? | 20% |
 | Tien | What constraints, personal blind spots, or counters keep Tien's elite fieldcraft and combat from making Helena's concealed assassin an automatic solution? | 25% |
 | Sherie | Beyond charm and quick thinking, what can Sherie execute without Drake, and which strategic or operational tasks still require her teacher? | 30% |
 | Drake | Where does Drake's strategic mastery fail without Sherie's social execution, and how capable is he when a problem becomes physical or magical rather than political? | 30% |
@@ -51,7 +51,6 @@ This table is limited to current profile claims or graph presentations that cann
 | Area | Contradiction | Resolution |
 | --- | --- | --- |
 | Fionn | Fionn currently scores 80 or higher on every axis and reaches 98 in both Analysis and Magic, leaving no meaningful comparative weakness despite a story in which rivals isolate and eliminate him. | 0% |
-| Natalia | Natalia currently scores 91 or higher in Analysis, Awareness, Fieldcraft, and Magic before her specialization, limitations, or dependence on Lester have been defined. | 0% |
 | Lester | Lester receives a Magic score of 91 even though his profile explicitly classifies demiholumn nature as inherent and not magecraft. | 0% |
 | Father Mikhail | Father Mikhail has exact comparative scores despite his special-envoy specialization and delegated practical abilities being entirely undefined. | 0% |
 | Kyrien | Kyrien's graph presents near-peak intelligence tradecraft as a timeless profile value even though that mastery is explicitly the result of gradual development and peaks only around his later MSF leadership. | 10% |

@@ -187,18 +187,21 @@ const profileSeeds = [
     beats: ['The Impossible Theory', 'Beyond the Cordon', 'A Correct but Incomplete Hunch', 'Dependence without Recognition']
   },
   {
-    slug: 'natalia', name: 'Natalia', code: 'ARC · 013', role: 'Sole proprietor and private investigator', ageBand: 'Late thirties', factions: ['Private Eye', 'Magiarchy', 'Magic Academy'], affiliationTimeline: [{ name: 'Magic Academy', stage: 'Former professor' }, { name: 'Private Eye', stage: 'Current sole proprietor' }, { name: 'Magiarchy', stage: 'Magus affiliation' }], mbti: { type: 'XXXX', status: 'Undiscussed' }, accent: 'neutral', materialStatus: 'Canon role + mock visual details',
-    summary: 'A talented Magus and former Magic Academy professor who now runs a private-investigation business with herself as its only employee, taking edge cases before the Magiarchy or Church learns they exist.',
+    slug: 'natalia', name: 'Natalia', code: 'ARC · 013', role: 'Independent magical examiner and private investigator', ageBand: 'Late thirties', factions: ['Private Eye', 'Magiarchy', 'Magic Academy'], affiliationTimeline: [{ name: 'Magic Academy', stage: 'Former professor' }, { name: 'Private Eye', stage: 'Current sole proprietor' }, { name: 'Magiarchy', stage: 'Magus affiliation' }], mbti: { type: 'XXXX', status: 'Undiscussed' }, accent: 'neutral', materialStatus: 'Canon role + mock visual details',
+    summary: 'A former Magic Academy professor who left a restrictive academic career to pursue independent research. Private cases fund that work, turning her one-woman office into a discreet practice for magical deviations, personal afflictions, and edge cases.',
     visual: 'Professional citywear, compact case tools, and magical details hidden in plain sight', palette: 'Black, wine red, parchment, muted violet',
-    personalitySummary: 'Natalia combines academic magical expertise with the independence of a private investigator. Her practice exists in the narrow interval before an unusual case becomes an institutional matter, allowing a client or Magus to understand the danger before the Magiarchy or Church can take control of it.',
+    personalitySummary: 'Natalia is a researcher first and a private investigator by necessity. She values intellectual autonomy more than institutional standing and approaches unusual clients with the attention of an examiner: the apparent crime may be secondary to an unstable talent, personal deviation, or magical condition that nobody else knows how to name.',
     traits: [
-      { label: 'Investigative judgment', note: 'She specializes in edge cases that are too strange for ordinary inquiry but too sensitive to expose to magical authorities prematurely.' },
-      { label: 'Academic mastery', note: 'Her talent as a Magus once carried her into a professorship at the Magic Academy, giving her practical and scholarly access to the hidden world.' },
-      { label: 'Professional independence', note: 'The business has one employee: Natalia. She retains full control over which clients, risks, and secrets enter her office.' }
+      { label: 'Independent scholarship', note: 'She resigned from the Academy when its environment became too restrictive for the questions and methods she wanted to pursue.' },
+      { label: 'Magical examination', note: 'She investigates people as readily as incidents, studying unusual magecraft, personal deviations, and conditions with a precision closer to a physician than a conventional detective.' },
+      { label: 'Selective casework', note: 'The business has one employee: Natalia. Paid cases finance her research and let her choose which clients, risks, and secrets enter her office.' }
     ],
-    origin: 'Natalia is a talented Magus who formerly taught as a professor at the Magic Academy. Why she left academic life remains unresolved. She now operates her own private-investigation business and is its sole employee.', rupture: 'Her practice becomes highly sought after because it handles edge cases that a Magus may need examined before either the Magiarchy or the Church gets wind of them. Every accepted case therefore carries a jurisdictional clock.', focus: 'Natalia investigates in the space between private need and institutional discovery, using magical literacy without surrendering the case to authorities whose first priority may be secrecy rather than the client.', future: 'The exact case that connects her private office to the central crisis remains undefined, as does the reason her former academic career ended.',
-    ally: 'Lester', allyNote: 'Lester is not her employee. He is an outside ally and a demiholumn whose part-Holumn nature sometimes allows him to accomplish what should be impossible for an ordinary investigator.', rival: 'Premature jurisdiction', rivalNote: 'Once the Magiarchy or Church learns enough about a case, Natalia may lose the time and independence that made a private investigation useful.', goal: 'Understand edge cases before the hidden authorities can define the terms of the investigation, while deciding when secrecy protects a client and when it protects only the system.',
-    beats: ['Professor at the Academy', 'A One-Woman Office', 'Before the Authorities Hear', 'The Demiholumn Ally']
+    origin: 'Natalia earned a professorship at the Magic Academy as a talented Magus and serious researcher. She eventually found academic life too constraining: the institution could support scholarship, but it also defined which questions were respectable and how far an inquiry was permitted to go. She resigned to continue her work independently.', rupture: 'Freedom did not finance itself. Natalia opened a private-investigation business as a practical source of income, then discovered that her immense knowledge of Magi and magecraft made her uniquely valuable to clients with cases no ordinary investigator could understand.', focus: 'Her one-woman office now sits between a detective agency, consultation room, and private laboratory. Clients bring suspected crimes, unstable talents, personal deviations, and magical problems they cannot safely expose. Natalia examines the person and phenomenon before deciding whether a crime has occurred at all.', future: 'Her practice becomes highly sought after in the narrow interval before the Magiarchy or Church learns enough to claim a case. The exact investigation that connects Natalia and Lester to the central crisis remains undefined.',
+    ally: 'Lester', allyNote: 'Lester is not her employee. He is an outside ally and a demiholumn whose part-Holumn nature sometimes allows him to accomplish what should be impossible for an ordinary investigator.', connections: [
+      { name: 'Lester', relation: 'Outside ally', detail: 'Lester remains outside the business, but his demiholumn nature sometimes carries Natalia past barriers that scholarship and ordinary investigation cannot cross.' },
+      { name: 'Myka', relation: 'Niece, student, and friend', detail: 'Natalia keeps constant contact with her niece at the Magic Academy. Myka asks for advice on her studies, Natalia checks on her life, and their bond often resembles mother and daughter as much as aunt and niece.' }
+    ], rival: 'Institutional capture', rivalNote: 'The Academy, Magiarchy, and Church can each narrow an inquiry by deciding which questions are permissible, which cases belong to them, and which answers must remain hidden.', goal: 'Fund and protect an independent life of magical research while giving clients an answer before hidden authorities reduce their problem to jurisdiction, secrecy, or punishment.',
+    beats: ['Professor at the Academy', 'Scholarship without Permission', 'The Examiner for Hire', 'The Demiholumn Ally']
   },
   {
     slug: 'lester', name: 'Lester', code: 'ARC · 014', role: 'Demiholumn and Natalia\'s outside ally', factions: ['Independent'], mbti: { type: 'XXXX', status: 'Undiscussed' }, accent: 'neutral', materialStatus: 'Canon nature + mock visual details',
@@ -221,11 +224,11 @@ const profileSeeds = [
   },
   {
     slug: 'myka', name: 'Myka', code: 'ARC · 015', role: 'Magic Academy student', factions: ['Magic Academy', 'Magiarchy'], mbti: { type: 'XXXX', status: 'Undiscussed' }, accent: 'neutral',
-    summary: 'A young Magus learning controlled theory while the Spill demonstrates how quickly every lesson can become inadequate.',
+    summary: 'A young Magus studying at the Magic Academy who relies on her aunt Natalia for academic advice, personal reassurance, and a view of magical inquiry beyond institutional limits.',
     visual: 'Academic uniform elements, experimental accessories, and an expressive magical silhouette', palette: 'Indigo, cream, pale cyan, black', traits: ['Gifted', 'Earnest', 'Impulsive'],
-    origin: 'Myka enters an Academy that functions as a public institution within Magi society. Magi families and lineages fund it so their children can succeed them, while acclaimed Magi who choose research and teaching serve as professors.', rupture: 'The Spill turns distant doctrine into an immediate threat affecting people outside protected magical society.', focus: 'Talent creates pressure to act before training has taught the restraint that action requires. The exact admissions system, curriculum, governance, and relationship with the churches remain undefined.', future: 'Protecting a surviving clue ties Myka to Natalia and a conflict far beyond the Academy\'s controlled exercises.',
-    ally: 'Natalia', allyNote: 'An experienced Magiarchy contact who treats theory as something with human consequences.', rival: 'Inexperience', rivalNote: 'The distance between understanding a rule and surviving its failure.', goal: 'Become useful without mistaking raw ability for readiness.',
-    beats: ['Learning the Structure', 'Theory Meets the Spill', 'A Clue Worth Protecting', 'Beyond the Academy Walls']
+    origin: 'Myka enters an Academy that functions as a public institution within Magi society. Magi families and lineages fund it so their children can succeed them, while acclaimed Magi who choose research and teaching serve as professors. Her aunt Natalia, a former professor, remains a constant source of advice and a personal connection to life beyond the institution.', rupture: 'The Spill turns distant doctrine into an immediate threat affecting people outside protected magical society.', focus: 'Talent creates pressure to act before training has taught the restraint that action requires. Myka turns to Natalia with questions about her studies, while Natalia reaches back to make sure the student is coping with more than coursework.', future: 'Protecting a surviving clue draws aunt and niece into a conflict far beyond the Academy\'s controlled exercises, testing whether their familial trust can survive the danger attached to Natalia\'s independent work.',
+    ally: 'Natalia', allyNote: 'Her aunt, adviser, and friend. Natalia has no children of her own and sometimes treats Myka like a daughter, while Myka trusts her with academic problems and personal concerns that do not fit comfortably inside Academy life.', rival: 'Inexperience', rivalNote: 'The distance between understanding a rule and surviving its failure.', goal: 'Become useful without mistaking raw ability for readiness, while learning which parts of Natalia\'s independence are worth following and which carry risks the Academy was built to contain.',
+    beats: ['Learning the Structure', 'Advice beyond the Academy', 'A Clue Worth Protecting', 'Aunt and Niece in the Crisis']
   },
   {
     slug: 'inspector-leo', name: 'Inspector Leo', code: 'PLC · 016', role: 'Police inspector', factions: ['Police'], mbti: { type: 'XSTJ', status: 'Suspected' }, accent: 'blue',
@@ -269,7 +272,7 @@ const skillProfiles = {
   reiner: { analysis: 70, influence: 48, awareness: 84, fieldcraft: 82, combat: 96, magic: 0 },
   yulia: { analysis: 92, influence: 38, awareness: 90, fieldcraft: 46, combat: 24, magic: 0 },
   hiyu: { analysis: 93, influence: 56, awareness: 64, fieldcraft: 48, combat: 27, magic: 0 },
-  natalia: { analysis: 96, influence: 74, awareness: 97, fieldcraft: 91, combat: 60, magic: 94 },
+  natalia: { analysis: 94, influence: 58, awareness: 86, fieldcraft: 62, combat: 38, magic: 84 },
   lester: { analysis: 76, influence: 54, awareness: 92, fieldcraft: 84, combat: 72, magic: 91 },
   myka: { analysis: 75, influence: 70, awareness: 76, fieldcraft: 40, combat: 35, magic: 90 },
   'inspector-leo': { analysis: 84, influence: 65, awareness: 90, fieldcraft: 76, combat: 70, magic: 0 },
@@ -531,9 +534,8 @@ function renderProfile(profile) {
   const typeRecord = document.querySelector('#character-profile-type');
   typeRecord.classList.add(`personality-type-${mbtiStatus}`);
   typeRecord.append(
-    createElement('small', '', 'MBTI'),
     createElement('strong', '', mbti.type),
-    createElement('span', '', mbti.detail ? `${mbti.detail} · ${mbti.status}` : mbti.status)
+    createElement('span', '', ['MBTI', mbti.detail, mbti.status].filter(Boolean).join(' · '))
   );
 
   const portrait = document.querySelector('#character-profile-portrait');
@@ -653,8 +655,11 @@ function renderProfile(profile) {
   });
 
   const connections = document.querySelector('#character-connections');
+  const personalConnections = profile.connections
+    ? profile.connections.map(({ name, relation, detail }) => [name, relation, detail])
+    : [[profile.ally, 'Primary connection', profile.allyNote]];
   [
-    [profile.ally, 'Primary connection', profile.allyNote], [profile.rival, 'Central friction', profile.rivalNote], [affiliationTimeline.map(({ name, stage }) => stage ? `${name} (${stage.toLowerCase()})` : name).join(' / '), 'Institutional position', profile.affiliationTimeline ? `${profile.name} begins outside MSF and enters its institutional structure later in the story.` : `The factional context that shapes how ${profile.name} is seen and what is expected of them.`]
+    ...personalConnections, [profile.rival, 'Central friction', profile.rivalNote], [affiliationTimeline.map(({ name, stage }) => stage ? `${name} (${stage.toLowerCase()})` : name).join(' / '), 'Institutional position', profile.affiliationTimeline ? `These affiliations and their changing stages shape how ${profile.name} is seen, what access they retain, and what institutions may claim from them.` : `The factional context that shapes how ${profile.name} is seen and what is expected of them.`]
   ].forEach(([name, relation, detail]) => {
     const card = createElement('article', 'connection-card');
     card.append(createElement('small', '', relation), createElement('h3', '', name), createElement('p', '', detail));

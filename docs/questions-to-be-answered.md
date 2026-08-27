@@ -13,7 +13,6 @@ Story, character, world, relationship, institution, location, and event question
 | Family | Who is the reliable distant relative trusted with Lynleit and Kyrien's son, and what does that person know about the child's parents? | 0% |
 | Spill inquiry | Which wiser people does Lynleit consult, and what do they teach her about the Spill's origin? | 0% |
 | Lester | How did Lester become a demiholumn, and how do his human and Holumn halves coexist as one person? | 0% |
-| Natalia | Why did Natalia leave her professorship at the Magic Academy, and what relationships or obligations remain from her academic career? | 0% |
 | Location | What is Port City's proper name, and which story or institutional thread makes the western gateway relevant? | 0% |
 | Location | What is the Director's House's proper name, and in which city district does the hillside residence overlook the river? | 0% |
 | Government | Does the proposed Council of State actually exist, and what constitutional work belongs to it rather than Parliament, Cabinet, the courts, or the Privy Council? | 0% |
@@ -34,6 +33,7 @@ Story, character, world, relationship, institution, location, and event question
 | The Church | How do Orthodox and Catholic special envoys differ in method and ethics, and which hierarchies exercise practical authority inside Narvea? | 5% |
 | Institutions | How do the Narvean Police, Magic Academy, and private investigators formally relate to MSF before and after the hidden world becomes known to them? | 5% |
 | Lester | Who knows that Lester is a demiholumn, and what would the Church, Magiarchy, or a Holumn do if his nature became known? | 5% |
+| Natalia | What consent and ethical limits govern her examination of a client's magecraft, personal deviations, or magical condition, and when does she refuse a case? | 5% |
 | The Church | What delegated authority does Father Mikhail hold as a special envoy? | 10% |
 | Core mystery | What does each faction involved in the hidden conspiracy want from Fionn, MSF, the Spill, or Narvea? | 10% |
 | Kyrien | What authority allows Lynleit to control Kyrien's interrogation, and what cover story conceals his conditional release from the police and everyone outside Lynleit, Felix, and Reiner? | 10% |
@@ -64,6 +64,7 @@ Story, character, world, relationship, institution, location, and event question
 | Fugitive network | What secure method does Kyrien use to reconnect Lynleit with Felix and Reiner, which officer responds first, and what first foothold inside MSF can they give her without exposing the network? | 30% |
 | The Church | How do the Church and Magiarchy decide which suppression measure to use, what form must Church sanction take, and where does containment become murder? | 35% |
 | Magiarchy | What rules define a fitness contest, duel, or sanctioned war, and who decides that the result is legitimate? | 35% |
+| Natalia | What research questions became too constrained inside the Academy, and which former students, colleagues, or obligations beyond her continuing bond with Myka still follow her independent work? | 35% |
 | Kyrien | Who is the Magus politician targeted by Kyrien, what office do they hold, what exact role did they play in his father's death, and how does their survival later harm Lynleit? | 40% |
 | Park trespass | How do Hiyu and Yulia bypass the quarantine cordon, what do they encounter, how do they survive or escape, and what lasting evidence or injury follows them out? | 45% |
 | Hotel refuge | Which resources and route allow Lynleit to reach Kyrien's hotel room without leading her pursuers to him, what finally breaks her composure, and what changes between them the following morning? | 45% |
