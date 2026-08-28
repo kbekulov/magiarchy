@@ -2,6 +2,15 @@ const navToggle = document.querySelector('.nav-toggle');
 const navLinks = document.querySelector('.nav-links');
 const navDropdowns = Array.from(document.querySelectorAll('.nav-dropdown'));
 
+document.querySelectorAll('.nav-submenu').forEach((submenu) => {
+  if (submenu.querySelector('a[href="holumns.html"]')) return;
+  const holumnLink = document.createElement('a');
+  holumnLink.href = 'holumns.html';
+  holumnLink.innerHTML = '<span>Holumns</span><small>Manifestations and hidden threats</small>';
+  const weaponsLink = submenu.querySelector('a[href="weapons.html"]');
+  submenu.insertBefore(holumnLink, weaponsLink);
+});
+
 if (navToggle && navLinks) {
   navToggle.addEventListener('click', () => {
     const isOpen = navLinks.classList.toggle('is-open');
@@ -39,6 +48,26 @@ document.addEventListener('keydown', (event) => {
 document.querySelectorAll('[data-year]').forEach((node) => {
   node.textContent = new Date().getFullYear();
 });
+
+const copyrightHostSelectors = [
+  '.feed-scroll',
+  '.weapons-scroll',
+  '.duchy-scroll',
+  '.world-scroll',
+  '.character-profile-main-pane',
+  '.character-main-pane',
+  '.gallery-main-pane',
+  '.docs-main-pane'
+];
+const copyrightHost = copyrightHostSelectors.map((selector) => document.querySelector(selector)).find(Boolean);
+
+if (copyrightHost && !document.querySelector('.site-footer')) {
+  const copyrightFooter = document.createElement('footer');
+  copyrightFooter.className = 'site-footer shell project-ownership';
+  copyrightFooter.setAttribute('aria-label', 'Project ownership');
+  copyrightFooter.innerHTML = `<a class="brand brand-small" href="index.html" aria-label="Magiarchy home"><span class="brand-mark" aria-hidden="true"><span></span></span><span>Magiarchy</span></a><p>Project MAGIARCHY is the work of Kiril Bekulov &amp; Co. and is owned by Kiril Bekulov. Additional contributors will be credited separately when applicable.</p><span>&copy; ${new Date().getFullYear()} Kiril Bekulov &amp; Co. All rights reserved.</span>`;
+  copyrightHost.append(copyrightFooter);
+}
 
 const revealItems = document.querySelectorAll('.reveal');
 if ('IntersectionObserver' in window && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {

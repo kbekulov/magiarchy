@@ -3,36 +3,39 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="A factual World archive of Holumn manifestations, forms, effects, weaknesses, and supporting incidents.">
+    <meta name="description" content="The Holumn archive, covering manifestation forms, origins, effects, evidence, and known limits within the hidden world of Magiarchy.">
     <meta name="theme-color" content="#1e1f22">
     <title>Holumns - Magiarchy</title>
     <link rel="icon" href="favicon.svg" type="image/svg+xml">
-    <link rel="stylesheet" href="styles.css?v=holumn-record">
+    <link rel="stylesheet" href="styles.css">
     <script src="script.js" defer></script>
     <script src="entity-links.js" defer></script>
-    <script src="holumns.js" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2" defer></script>
     <script src="notes-config.js" defer></script>
     <script src="notes.js" defer></script>
   </head>
   <body class="institution-page world-section-page holumn-page" data-notes-page="holumns">
     <a class="skip-link" href="#main-content">Skip to content</a>
+
     <header class="site-header">
       <nav class="navbar shell" aria-label="Primary navigation">
         <a class="brand" href="index.html" aria-label="Magiarchy home"><span class="brand-mark" aria-hidden="true"><span></span></span><span>Magiarchy</span></a>
         <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links"><span class="sr-only">Toggle navigation</span><span></span><span></span></button>
         <div class="nav-links" id="nav-links">
           <a href="index.html">Home</a><a href="characters.html">Characters</a><a href="story.html">Story</a><a href="moments.html">Moments</a>
-          <details class="nav-dropdown"><summary>World</summary><div class="nav-submenu">
-            <a href="world.html"><span>World index</span><small>Places, institutions, and powers</small></a>
-            <a href="duchy.html"><span>The Duchy</span><small>Country profile</small></a>
-            <a href="director-house.html"><span>The Director's House</span><small>Family residence and MSF node</small></a>
-            <a href="magiarchy.html"><span>The Magiarchy</span><small>Territorial magical order</small></a>
-            <a href="msf.html"><span>MSF</span><small>Private intelligence firm</small></a>
-            <a href="church.html"><span>The Church</span><small>Hidden religious authority</small></a>
-            <a href="holumns.html" aria-current="page"><span>Holumns</span><small>Forms, effects, and evidence</small></a>
-            <a href="weapons.html"><span>Weapons</span><small>Firearms and procurement</small></a>
-          </div></details>
+          <details class="nav-dropdown">
+            <summary>World</summary>
+            <div class="nav-submenu">
+              <a href="world.html"><span>World index</span><small>Places, institutions, and powers</small></a>
+              <a href="duchy.html"><span>The Duchy</span><small>Country profile</small></a>
+              <a href="director-house.html"><span>The Director's House</span><small>Family residence and MSF node</small></a>
+              <a href="magiarchy.html"><span>The Magiarchy</span><small>Territorial magical order</small></a>
+              <a href="msf.html"><span>MSF</span><small>Private intelligence firm</small></a>
+              <a href="church.html"><span>The Church</span><small>Hidden religious authority</small></a>
+              <a href="holumns.html" aria-current="page"><span>Holumns</span><small>Manifestations and hidden threats</small></a>
+              <a href="weapons.html"><span>Weapons</span><small>Firearms and procurement</small></a>
+            </div>
+          </details>
           <a href="music.html">Music</a><a href="gallery.html">Gallery</a><a href="docs.html">Docs</a>
         </div>
       </nav>
@@ -41,62 +44,143 @@
     <main class="app-main" id="main-content">
       <div class="world-workspace shell">
         <div class="world-main-pane">
-          <header class="feed-header world-feed-header"><div><span aria-hidden="true">#</span><strong>holumns</strong><i></i><p>Manifestation archive</p></div><span class="feed-status"><span class="status-dot"></span> Known facts only</span></header>
+          <header class="feed-header world-feed-header">
+            <div><span aria-hidden="true">#</span><strong>holumns</strong><i></i><p>Manifestation archive</p></div>
+            <span class="feed-status"><span class="status-dot"></span> Known facts only</span>
+          </header>
+
           <div class="world-scroll institution-scroll">
             <nav class="document-breadcrumbs world-breadcrumbs" aria-label="Breadcrumb"><a href="world.html">World</a><span aria-hidden="true">/</span><span aria-current="page">Holumns</span></nav>
 
-            <section class="institution-hero holumn-record-hero reveal" aria-labelledby="holumn-title">
-              <div class="institution-monogram" aria-hidden="true"><span>H</span><i></i></div>
+            <section class="institution-hero holumn-hero reveal" aria-labelledby="holumn-title">
+              <div class="institution-monogram holumn-monogram" aria-hidden="true"><span>H</span><i></i></div>
               <div>
                 <p class="eyebrow">Supernatural manifestation archive</p>
-                <h1 id="holumn-title">Not every monster<br>has a body</h1>
-                <p>Holumn is a category of manifestation, not a species. Fear, memory, fixation, and psychic fracture can press into reality as a creature, a natural phenomenon, a repeating event, a disembodied will, or a curse.</p>
+                <h1 id="holumn-title">A nightmare does not need a body</h1>
+                <p>Holumn is a category of manifestation, not a biological species. Fear, memory, fixation, trauma, and psychic fracture can press into reality as a creature, a natural phenomenon, a repeating event, a disembodied will, or a curse.</p>
               </div>
               <dl>
-                <div><dt>Known forms</dt><dd id="holumn-type-count">00</dd></div>
-                <div><dt>Incident records</dt><dd id="holumn-incident-count">00</dd></div>
-                <div><dt>Universal weakness</dt><dd>None</dd></div>
-                <div><dt>Evidence archive</dt><dd><a href="docs.html?doc=holumn-incidents-and-testimonies">Testimonies</a></dd></div>
+                <div><dt>Nature</dt><dd>Manifestation</dd></div>
+                <div><dt>Known forms</dt><dd>Five broad classes</dd></div>
+                <div><dt>Fixed bestiary</dt><dd>None</dd></div>
+                <div><dt>Universal weakness</dt><dd>None known</dd></div>
               </dl>
             </section>
 
-            <section class="institution-section reveal" aria-labelledby="holumn-principles-title">
-              <header class="institution-section-heading"><span>01</span><div><p class="eyebrow">Definition</p><h2 id="holumn-principles-title">A Holumn is a rule given presence</h2></div></header>
-              <div class="holumn-principles" id="holumn-principles" aria-live="polite"></div>
-            </section>
-
-            <section class="institution-section reveal" aria-labelledby="holumn-types-title">
-              <header class="institution-section-heading"><span>02</span><div><p class="eyebrow">Observed forms</p><h2 id="holumn-types-title">One category, several bodies</h2></div></header>
-              <div class="holumn-type-grid mandate-grid" id="holumn-type-grid" aria-live="polite"></div>
-            </section>
-
-            <section class="institution-section reveal" aria-labelledby="holumn-origin-title">
-              <header class="institution-section-heading"><span>03</span><div><p class="eyebrow">Origin and effect</p><h2 id="holumn-origin-title">Pressure becomes a rule</h2></div></header>
-              <div class="anarchy-layout holumn-origin-record">
-                <div class="anarchy-principle"><span>MANIFESTATION LOGIC</span><blockquote>Fear does not stay inside the mind that creates it.</blockquote><p>Psychic pressure gathers around people, objects, places, and systems until it acquires a condition the world is forced to express.</p></div>
-                <div class="magiarch-mandate">
-                  <article><span>01</span><div><strong>Pressure</strong><p>Fear, memory, fixation, grief, or collective psychic strain gathers around a person, object, place, or system.</p></div></article>
-                  <article><span>02</span><div><strong>Expression</strong><p>The pressure acquires a form or repeating condition that reflects its origin without explaining it cleanly.</p></div></article>
-                  <article><span>03</span><div><strong>Consequence</strong><p>The manifestation changes what bodies, objects, infrastructure, or landscapes are capable of doing.</p></div></article>
+            <section class="institution-section reveal" aria-labelledby="holumn-definition-title">
+              <header class="institution-section-heading"><span>01</span><div><p class="eyebrow">Definition</p><h2 id="holumn-definition-title">A Holumn is a rule given presence</h2></div></header>
+              <div class="anarchy-layout holumn-definition-layout">
+                <div class="anarchy-principle">
+                  <span>CORE DISTINCTION</span>
+                  <blockquote>The body is only one possible expression. The governing pattern is the Holumn.</blockquote>
+                  <p>A physical creature may be fought as a body, but another Holumn may exist as weather, repetition, a command without a speaker, or a condition attached to an object or place.</p>
+                </div>
+                <div class="anarchy-effects">
+                  <article><span>01</span><strong>Personal source</strong><p>Individual fear, memory, fixation, or psychic fracture can determine the manifestation's form.</p></article>
+                  <article><span>02</span><strong>Collective source</strong><p>The pressure of a population or place can also acquire an outward form.</p></article>
+                  <article><span>03</span><strong>Material consequence</strong><p>The result can injure, alter, pursue, remove, or kill even when it has no stable body.</p></article>
+                  <article><span>04</span><strong>Singular logic</strong><p>Each manifestation follows the specific wound or pressure from which it emerged.</p></article>
                 </div>
               </div>
             </section>
 
-            <section class="institution-section reveal" aria-labelledby="holumn-weakness-title">
-              <header class="institution-section-heading"><span>04</span><div><p class="eyebrow">Countermeasures</p><h2 id="holumn-weakness-title">The weakness belongs to the rule</h2></div></header>
-              <div class="msf-private-compact holumn-countermeasure">
-                <div class="msf-private-principle"><span>NO UNIVERSAL COUNTERMEASURE</span><h3>Destroying a body may not end the manifestation</h3><p>A physical form may yield to force, but event-bound and curse-bound Holumns require their condition to be interrupted. Environmental Holumns may be inseparable from the place expressing them.</p></div>
-                <aside class="msf-legal-mafia"><span>INCIDENT-BOUND EVIDENCE</span><blockquote>Every weakness must answer what the Holumn is doing.</blockquote><p>Countermeasures are recorded against individual incidents. No category-wide weakness is confirmed.</p></aside>
+            <section class="institution-section reveal" aria-labelledby="holumn-forms-title">
+              <header class="institution-section-heading"><span>02</span><div><p class="eyebrow">Observed forms</p><h2 id="holumn-forms-title">Five forms, no complete taxonomy</h2></div></header>
+              <div class="holumn-form-grid">
+                <article><span>01 · EMBODIED</span><div class="holumn-form-mark" aria-hidden="true"><i></i></div><h3>Creature</h3><p>A Holumn may occupy a visible body and behave as a physical predator, intruder, or impossible organism.</p></article>
+                <article><span>02 · ENVIRONMENTAL</span><div class="holumn-form-mark" aria-hidden="true"><i></i><i></i></div><h3>Weather or nature</h3><p>Water, wind, depth, temperature, or another natural condition may begin following an impossible rule.</p></article>
+                <article><span>03 · EVENT</span><div class="holumn-form-mark" aria-hidden="true"><i></i></div><h3>Occurrence</h3><p>The manifestation may be something that happens rather than something that can be found standing in one place.</p></article>
+                <article><span>04 · DISEMBODIED</span><div class="holumn-form-mark" aria-hidden="true"><i></i><i></i><i></i></div><h3>Will</h3><p>Intent can exist without a visible speaker, using a voice, signal, reflection, or another borrowed medium.</p></article>
+                <article><span>05 · ATTACHED</span><div class="holumn-form-mark" aria-hidden="true"><i></i></div><h3>Curse</h3><p>A rule may attach itself to an object, person, action, or sequence and continue until its condition is fulfilled.</p></article>
               </div>
             </section>
 
-            <section class="institution-section reveal" aria-labelledby="holumn-evidence-title">
-              <header class="institution-section-heading"><span>05</span><div><p class="eyebrow">Evidence bridge</p><h2 id="holumn-evidence-title">Incidents that define the archive</h2></div></header>
-              <div class="holumn-evidence-grid" id="holumn-evidence-grid" aria-live="polite"></div>
+            <section class="institution-section reveal" aria-labelledby="holumn-formation-title">
+              <header class="institution-section-heading"><span>03</span><div><p class="eyebrow">Formation</p><h2 id="holumn-formation-title">Pressure becomes pattern before pattern becomes threat</h2></div></header>
+              <ol class="holumn-pressure-chain" aria-label="Known sequence of Holumn manifestation">
+                <li><span>01</span><div><small>INNER SOURCE</small><strong>Fear, memory, fixation, trauma</strong><p>Psychic pressure accumulates in a person, population, or place.</p></div></li>
+                <li><span>02</span><div><small>STRUCTURE</small><strong>A private logic takes shape</strong><p>The pressure acquires conditions, repetition, imagery, and intent.</p></div></li>
+                <li><span>03</span><div><small>BREACH</small><strong>The inner condition crosses outward</strong><p>What belonged to psyche or memory begins acting upon shared reality.</p></div></li>
+                <li><span>04</span><div><small>MANIFESTATION</small><strong>The world must obey the new rule</strong><p>The result follows its particular conditions. Those conditions must be understood before any intervention can be trusted.</p></div></li>
+              </ol>
+            </section>
+
+            <section class="institution-section reveal" aria-labelledby="holumn-interpretation-title">
+              <header class="institution-section-heading"><span>04</span><div><p class="eyebrow">Epistemic divide</p><h2 id="holumn-interpretation-title">The same evidence produces different realities</h2></div></header>
+              <div class="holumn-reading-grid">
+                <article>
+                  <span>POLICE AND GOVERNMENT</span>
+                  <h3>Search for a material cause</h3>
+                  <p>Disappearances become crimes. Impossible calls become harassment or equipment failure. Injuries become animal attacks, environmental hazards, contamination, or collective panic.</p>
+                  <ul><li>Crime</li><li>Public safety</li><li>Contamination</li><li>Unreliable testimony</li></ul>
+                </article>
+                <div class="holumn-reading-axis" aria-hidden="true"><span></span><b>SAME EVIDENCE</b><span></span></div>
+                <article>
+                  <span>MAGI AND SPECIAL ENVOYS</span>
+                  <h3>Search for the governing rule</h3>
+                  <p>The body, object, or location is treated as evidence of a deeper pattern. Classification begins with what the manifestation compels reality to do.</p>
+                  <ul><li>Source pressure</li><li>Trigger</li><li>Condition</li><li>Boundary</li></ul>
+                </article>
+              </div>
+            </section>
+
+            <section class="institution-section reveal" aria-labelledby="holumn-incidents-title">
+              <header class="institution-section-heading"><span>05</span><div><p class="eyebrow">Incident index</p><h2 id="holumn-incidents-title">Four records establish the range</h2></div></header>
+              <div class="holumn-incident-grid">
+                <a href="docs.html?doc=holumn-incidents-and-testimonies#the-voice-on-the-line"><span>HI-001 · DISEMBODIED WILL</span><h3>The Voice on the Line</h3><p>A caller hears an echo in their own voice. The echo later begins calling first.</p><small>Voice without speaker</small></a>
+                <a href="docs.html?doc=holumn-incidents-and-testimonies#the-last-piece"><span>HI-002 · ATTACHED CURSE</span><h3>The Last Piece</h3><p>A market puzzle creates a compulsion to finish it. The person who places the final piece disappears.</p><small>Condition without pursuer</small></a>
+                <a href="docs.html?doc=holumn-incidents-and-testimonies#the-drowned-choir"><span>HI-003 · EMBODIED</span><h3>The Drowned Choir</h3><p>A pale girl emerges from water with sewn eyes and the combined voices of drowned people.</p><small>Body carrying many dead</small></a>
+                <a href="docs.html?doc=holumn-incidents-and-testimonies#the-river-that-is-too-deep"><span>HI-004 · ENVIRONMENTAL</span><h3>The River That Is Too Deep</h3><p>A shallow city river produces impossible waves, damaged boats, and wounds too large for its wildlife.</p><small>Place exceeding its dimensions</small></a>
+              </div>
+              <aside class="holumn-evidence-link"><span>VICTIM AND INCIDENT ARCHIVE</span><p>The complete records preserve testimony separately from this taxonomy. Every new incident can refine how the known forms, limits, and Spill are understood.</p><a href="docs.html?doc=holumn-incidents-and-testimonies">Read Holumn Incidents and Victim Testimonies <span aria-hidden="true">→</span></a></aside>
+            </section>
+
+            <section class="institution-section reveal" aria-labelledby="holumn-limits-title">
+              <header class="institution-section-heading"><span>06</span><div><p class="eyebrow">Countermeasures</p><h2 id="holumn-limits-title">A threat without a shared body has no shared weakness</h2></div></header>
+              <div class="holumn-countermeasure">
+                <div>
+                  <span>NO UNIVERSAL RESPONSE</span>
+                  <h3>Classification determines survival</h3>
+                  <p>Ordinary weapons may affect some physical bodies, but they cannot solve a manifestation whose essential rule is environmental, conditional, or disembodied.</p>
+                </div>
+                <ol>
+                  <li><span>01</span><div><strong>Identify the rule</strong><p>The visible threat may be an expression rather than the source.</p></div></li>
+                  <li><span>02</span><div><strong>Find its boundary</strong><p>Trigger, place, object, memory, or repeated action may define what the Holumn can do.</p></div></li>
+                  <li><span>03</span><div><strong>Match the intervention</strong><p>Some Holumns can be harmed physically. Others require magecraft capable of acting on the condition itself.</p></div></li>
+                </ol>
+              </div>
+              <aside class="holumn-blue-flame"><span>BLUE FLAME</span><p>Fionn and Lynleit's inherited blue flame becomes indispensable against certain immortal, rapidly regenerating, or nonliving Holumns, and against barriers that ordinary weapons cannot breach. It is a specialized answer, not a universal one.</p><a href="character.html?character=lynleit">Open Lynleit's profile <span aria-hidden="true">→</span></a></aside>
+            </section>
+
+            <section class="institution-section reveal" aria-labelledby="holumn-spill-title">
+              <header class="institution-section-heading"><span>07</span><div><p class="eyebrow">Systemic breach</p><h2 id="holumn-spill-title">The Spill turns manifestation into an environment</h2></div></header>
+              <div class="holumn-spill-record">
+                <div class="holumn-spill-core"><span>KNOWN CAUSAL ORDER</span><strong>The first missing person causes the Spill.</strong><p>His identity and significance remain concealed for most of the story. The disappearances that follow are caused by Holumns.</p></div>
+                <ol>
+                  <li><b>01</b><span>One person disappears and is treated as the first victim.</span></li>
+                  <li><b>02</b><span>Searchers, investigators, and police enter the same widening absence.</span></li>
+                  <li><b>03</b><span>The park becomes a quarantined location rather than a solved case.</span></li>
+                  <li><b>04</b><span>The Spill survives the political crisis and becomes MSF's permanent mandate.</span></li>
+                </ol>
+              </div>
+              <div class="holumn-spill-links"><a href="story.html">Follow the Spill through Story <span aria-hidden="true">→</span></a><a href="msf.html">See MSF's permanent mandate <span aria-hidden="true">→</span></a></div>
+            </section>
+
+            <section class="institution-section reveal" aria-labelledby="holumn-exception-title">
+              <header class="institution-section-heading"><span>08</span><div><p class="eyebrow">Category exception</p><h2 id="holumn-exception-title">Lester carries the boundary inside himself</h2></div></header>
+              <div class="boundary-record holumn-lester-record">
+                <div><span>DEMIHOLUMN</span><h3>A person who is also part Holumn</h3><p>Lester retains human agency and acts as Natalia's trusted ally. His part-Holumn nature sometimes permits interventions that ordinary investigation and conventional magecraft cannot achieve. His existence proves that human and Holumn cannot be treated as perfectly separate categories.</p></div>
+                <a href="character.html?character=lester">Open Lester's profile <span aria-hidden="true">→</span></a>
+              </div>
             </section>
           </div>
         </div>
-        <aside class="notes-sidebar" aria-label="Holumn page notes"><header class="notes-header"><div><span aria-hidden="true">✎</span><strong>Page notes</strong></div><span>Holumns</span></header><div class="notes-list"></div><p class="notes-footnote">Use notes to refine manifestations and their evidence without separating the lore from its incident records.</p></aside>
+
+        <aside class="notes-sidebar" aria-label="Holumns page notes">
+          <header class="notes-header"><div><span aria-hidden="true">✎</span><strong>Page notes</strong></div><span>Holumns</span></header>
+          <div class="notes-list"></div>
+          <p class="notes-footnote">Use notes to refine manifestation rules and classifications without turning unresolved incident details into facts.</p>
+        </aside>
       </div>
     </main>
   </body>

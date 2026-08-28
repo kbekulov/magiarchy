@@ -1,101 +1,73 @@
 # Holumn Incidents and Victim Testimonies
 
-The testimony archive is the evidentiary half of the [Holumns World record](holumns.html). Incidents establish what Holumns have been observed doing. The World record turns those observations into a shared account of forms, effects, and weaknesses. Neither archive stands alone.
+This archive preserves accounts of Holumn contact as they are known across several institutions. Police and government records usually begin with material explanations. Magi and Church special envoys examine the same evidence for a governing supernatural rule.
 
-The same records circulate among several factions. Police and government investigators begin with crime, contamination, equipment failure, environmental hazards, missing-person behavior, and psychological distress. Magi and Church special envoys look for an impossible rule connecting details that ordinary explanations keep separate.
+The records remain connected to the [Holumns](../holumns.html) taxonomy. New incidents can refine the recognized forms, effects, and boundaries without requiring every Holumn to possess a physical body.
 
-An incomplete testimony may describe an effect, trace, or visible body without revealing the whole manifestation behind it.
+## The Voice on the Line
 
-## HI-001: The Voice on the Line
+**Record:** HI-001
+**Known form:** Disembodied will
+**Primary medium:** Telephone call and borrowed voice
 
-**Record:** Victim testimony
+> Have you heard of a telephone call that answers to you in your own voice? At first I thought whoever was on the phone was repeating me. But it was my own voice. At first it felt like an echo, because all it did was repeat my words. Then it started calling me incessantly, and it was talking to me in bizarre ways. In my own voice.
 
-**Classification:** [Disembodied](holumns.html#holumn-type-disembodied) / [Curse-bound](holumns.html#holumn-type-curse)
+### Institutional readings
 
-**Status:** No confirmed countermeasure
+**Police and government**
+Harassment, a compromised line, manipulated audio, or a distressed witness.
 
-> Have you heard of a telephone call that answers to you in your own voice? At first I thought whoever was on the phone was repeating me. But it was my own voice. At first it felt like an echo, as all it did was repeat my words. But then it started calling me incessantly, and it was talking to me, in bizarre ways. In my own voice.
+**Magi and special envoys**
+A reflection that has crossed into agency. The voice no longer requires the witness to speak first.
 
-### Ordinary reading
+## The Last Piece
 
-Police and communications specialists would first investigate harassment, recording fraud, a compromised exchange, equipment failure, or a witness in psychological distress.
+**Record:** HI-002
+**Known form:** Attached curse
+**Primary medium:** A puzzle sold at a market
 
-### Magi and special-envoy reading
+The purchaser becomes increasingly compelled to solve the puzzle. Once the final piece is placed, the purchaser disappears and is entered into the missing-person system. No surviving victim testimony is known.
 
-The decisive detail is the change from repetition to initiative. Something learned the witness's voice, then began using it without the witness. Whether the line carries a disembodied will, a curse, or only one surface of a larger Holumn remains unknown.
+### Institutional readings
 
-### Effect on the Holumn record
+**Police and government**
+A cluster of missing-person cases associated with an unverified market purchase.
 
-The incident establishes that a Holumn can enter ordinary infrastructure and acquire presence without forming a visible body.
+**Magi and special envoys**
+The object carries a condition. Completion, rather than possession, appears to trigger the disappearance.
 
-## HI-002: The Last Piece
+## The Drowned Choir
 
-**Record:** Missing-person incident
+**Record:** HI-003
+**Known form:** Embodied manifestation
+**Primary medium:** Water and a humanlike body
 
-**Classification:** [Event-bound](holumns.html#holumn-type-event) / [Curse-bound](holumns.html#holumn-type-curse)
+A pale girl emerges from the water. Her eyes are sewn shut with fishing line, and her dress is made from dead fish. She speaks with the combined voices of drowned people.
 
-**Status:** Completion precedes disappearance
+The manifestation is encountered during the failed boat operation involving Lynleit and MSF officers. Its complete relation to the river and the Spill remains unknown.
 
-A puzzle sold at a market creates a mounting compulsion in its purchaser to solve every part. Once the final piece is placed, the purchaser disappears permanently and enters the missing-persons archive. The puzzle remains behind.
+### Institutional readings
 
-### Ordinary reading
+**Police and government**
+No stable public account can contain the body, the voices, and the surrounding losses as one credible event.
 
-Investigators see a purchased object, a developed obsession, and a disappearance. The puzzle may be treated as an unrelated possession, a clue to voluntary flight, or an instrument used by another person.
+**Magi and special envoys**
+A physical manifestation carrying the memory or voices of multiple drowned people.
 
-### Magi and special-envoy reading
+## The River That Is Too Deep
 
-The compulsion and the disappearance belong to one rule. The final piece does not merely precede the disappearance. It completes the condition that permits it.
+**Record:** HI-004
+**Known forms:** Environmental and possibly embodied
+**Primary medium:** The city river
 
-### Effect on the Holumn record
+The river produces waves its width and depth should not permit. Boats and kayaks suffer damage without a sufficient material cause. Bodies recovered from the water carry missing sections larger than the bite of any animal expected in the river.
 
-The incident establishes that a Holumn may be an event encoded into an ordinary object rather than a creature concealed inside it. Refusing completion appears safer than solving it, but the strength and transfer of the compulsion remain unknown.
+The available evidence does not yet establish whether a creature occupies the river, whether the river itself has become the manifestation, or whether both readings describe different layers of the same Holumn.
 
-## HI-003: The Drowned Chorus
+### Institutional readings
 
-**Record:** Operational encounter
+**Police and government**
+Hidden debris, dangerous currents, criminal interference, and postmortem animal damage remain the available categories.
 
-**Classification:** [Embodied](holumns.html#holumn-type-embodied) / [Environmental](holumns.html#holumn-type-environmental)
-
-**Story connection:** The failed boat operation
-
-A pale girl emerges from the water. Fishing line holds her eyes sewn shut. Her dress is made from dead fish. When she speaks, the voices of drowned people answer together through her.
-
-This is the entity encountered by Lynleit and the MSF agents during the failed boat operation.
-
-### Ordinary reading
-
-An ordinary report cannot reconcile the body, the voices, and the conditions of the encounter. Surviving fragments may be treated as trauma, darkness, waterborne confusion, or mutually reinforced misperception.
-
-### Magi and special-envoy reading
-
-The figure may be a body assembled by the water, a vessel for accumulated drownings, or the visible portion of a larger river-bound manifestation. The chorus suggests that the drowned remain present as more than remembered victims.
-
-### Effect on the Holumn record
-
-The incident binds water, fishing, drowning, and human remains into one expression. It turns the river from a setting into an active part of the Spill. No weakness is confirmed. Lynleit's blue flame can oppose Holumns that ordinary weapons cannot finish, but that capability does not by itself explain what must be destroyed.
-
-## HI-004: The River That Is Too Deep
-
-**Record:** Accumulated incident pattern
-
-**Classification:** [Embodied](holumns.html#holumn-type-embodied) / [Environmental](holumns.html#holumn-type-environmental)
-
-**Status:** Physical depth does not match observed scale
-
-Something immense moves beneath the city river despite stretches too shallow to contain it. Waves rise without a vessel large enough to create them. Boats and kayaks return damaged in ways collision and ordinary debris do not explain. Pieces are bitten from drowned bodies with a scale beyond any expected river predator.
-
-### Ordinary reading
-
-Each report can be separated into wake damage, submerged debris, boating accidents, postmortem animal activity, or exaggerated witness comparison. Together they remain difficult to explain without inventing a cause the river should not contain.
-
-### Magi and special-envoy reading
-
-The leviathan may be an animal-like Holumn, the river giving itself predatory mass, or a depth that exists only when the manifestation passes through it.
-
-### Effect on the Holumn record
-
-The pattern supports the possibility that the Spill changes what a place is capable of containing, not only what creatures can enter it. Its dependence on the river may be a boundary, but it is not yet known whether the water contains the Holumn or belongs to it.
-
-## How the records relate
-
-The [Holumns World page](holumns.html) summarizes the forms, effects, boundaries, and weaknesses supported by these incidents. This document preserves the underlying testimony and the conflicting institutional readings attached to it.
+**Magi and special envoys**
+The place exceeds its physical dimensions. Depth, force, and predation may belong to one governing rule rather than separate causes.
