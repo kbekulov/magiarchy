@@ -822,6 +822,8 @@
 }
 .holumn-hero::before { content: "H"; display: grid; align-self: stretch; place-items: center; border-right: 1px solid rgba(0, 0, 0, .26); background: #232428; color: #b3b9ff; font: 750 2.45rem Consolas, monospace; letter-spacing: .06em; }
 .holumn-hero-copy { padding: 48px 0; border-right: 0; }
+.holumn-hero h1 { margin: 0; color: #f2f3f5; font-family: Georgia, "Times New Roman", serif; font-size: clamp(2.7rem, 5vw, 5rem); font-weight: 500; line-height: .98; letter-spacing: -.045em; }
+.holumn-hero-copy > p:not(.eyebrow) { max-width: 650px; margin: 24px 0 0; font-size: 1rem; line-height: 1.7; }
 .holumn-hero-facts { align-self: stretch; border-left: 1px solid #393b42; }
 .holumn-hero-facts div { padding: 17px 24px; }
 .holumn-hero-facts dd { font-size: .95rem; }
