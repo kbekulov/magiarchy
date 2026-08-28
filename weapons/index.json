@@ -21,6 +21,8 @@
       "slug": "ren-l17-sparrow",
       "model": "Ren L17",
       "nickname": "Sparrow",
+      "image": "media/gallery/images/weapons/ren_l17_sparrow.png",
+      "imageAlt": "Side profile illustration of the silver and dark Ren L17 Sparrow pistol",
       "caliber": "9×17 mm / .380 ACP",
       "role": "Compact institutional and concealed-carry sidearm",
       "familyPosition": "Small, discreet, elegant institutional pistol",

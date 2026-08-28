@@ -64,18 +64,32 @@ function renderHierarchy(weapons, hierarchy) {
 function makeWeaponVisual(weapon, index) {
   const figure = weaponElement('figure', 'weapon-visual-bay');
   figure.dataset.futureImage = weapon.slug;
-  const placeholder = weaponElement('div', 'weapon-image-placeholder');
-  placeholder.setAttribute('aria-hidden', 'true');
-  placeholder.append(
-    weaponElement('span', '', 'VISUAL REFERENCE'),
-    weaponElement('b', '', 'Pending'),
-    weaponElement('i', 'weapon-placeholder-line weapon-placeholder-line-one'),
-    weaponElement('i', 'weapon-placeholder-line weapon-placeholder-line-two'),
-    weaponElement('em', '', String(index + 1).padStart(2, '0'))
-  );
+  let visual;
+  if (weapon.image) {
+    figure.classList.add('has-approved-image');
+    visual = weaponElement('div', 'weapon-image-approved');
+    const image = weaponElement('img');
+    image.src = weapon.image;
+    image.alt = weapon.imageAlt || `${weapon.model} ${weapon.nickname}`;
+    image.loading = 'lazy';
+    visual.append(image);
+  } else {
+    visual = weaponElement('div', 'weapon-image-placeholder');
+    visual.setAttribute('aria-hidden', 'true');
+    visual.append(
+      weaponElement('span', '', 'VISUAL REFERENCE'),
+      weaponElement('b', '', 'Pending'),
+      weaponElement('i', 'weapon-placeholder-line weapon-placeholder-line-one'),
+      weaponElement('i', 'weapon-placeholder-line weapon-placeholder-line-two'),
+      weaponElement('em', '', String(index + 1).padStart(2, '0'))
+    );
+  }
   const caption = weaponElement('figcaption');
-  caption.append(weaponElement('strong', '', weapon.nickname), weaponElement('span', '', 'Approved image to be added'));
-  figure.append(placeholder, caption);
+  caption.append(
+    weaponElement('strong', '', weapon.nickname),
+    weaponElement('span', '', weapon.image ? 'Approved visual reference' : 'Approved image to be added')
+  );
+  figure.append(visual, caption);
   return figure;
 }
 

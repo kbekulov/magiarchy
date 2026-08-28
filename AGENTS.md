@@ -44,6 +44,8 @@
 
 ## Story rules: Nasu audit
 
+- Treat the `Nasu audit` as MAGIARCHY's official advisory story auditor. This designation applies to the project framework inspired by recurring strengths associated with Kinoko Nasu and TYPE-MOON storytelling, not to literal participation, approval, or endorsement by Kinoko Nasu.
+- Whenever the Nasu audit is involved in a task, explicitly notify the author. State when it is being applied and briefly identify any material influence, concern, or alternative it produces. Never apply its judgment silently.
 - Apply a standing `Nasu audit` to every new or revised story element, including plot, Chapters, Moments, character arcs, relationships, mysteries, reveals, institutions, politics, magecraft, supernatural rules, Holumn lore, locations, chronology, weapons, organizations, and worldbuilding.
 - The audit is a high-weight advisory framework inspired by recurring strengths associated with Kinoko Nasu and TYPE-MOON storytelling. It is not a request to imitate his prose, reproduce his wording, or treat speculative opinions as statements he actually made.
 - The author remains the final and absolute authority over MAGIARCHY canon. An explicit author decision always overrides the audit. Never silently reject, rewrite, or demote confirmed canon because the audit would prefer another choice.
