@@ -849,6 +849,7 @@
   .holumn-hero::before { min-height: 120px; grid-row: auto; border-right: 0; border-bottom: 1px solid rgba(0, 0, 0, .26); }
   .holumn-hero-copy { padding: 36px 26px; }
   .holumn-hero-facts { grid-column: auto; border-top: 1px solid #393b42; }
+  .holumn-evidence-card > div:first-child { gap: 12px; padding: 16px 18px; }
   .holumn-principle-section > header,
   .holumn-origin-section > div:first-child,
   .holumn-weakness-section > div:first-child { padding-top: 48px; }
@@ -857,6 +858,9 @@
 .holumn-evidence-types { display: flex; flex-wrap: wrap; gap: 7px; padding: 14px 22px 0; }
 .holumn-evidence-types span { padding: 5px 8px; border-radius: 5px; background: #24252a; color: var(--subtle); font-size: 0.72rem; text-transform: capitalize; }
 .holumn-evidence-card > .holumn-incident-link { display: inline-block; margin: 8px 22px 0; font-weight: 750; }
+.holumn-evidence-card > div:first-child small { color: #72767d; font-size: .6rem; font-weight: 750; letter-spacing: .08em; text-transform: uppercase; }
+.holumn-evidence-card,
+.holumn-type-card { scroll-margin-top: 76px; }
 
 @media (max-width: 900px) {
   .holumn-hero,
