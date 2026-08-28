@@ -1,12 +1,26 @@
 [
   {
+    "slug": "holumn-incidents-and-testimonies",
+    "title": "Holumn Incidents and Victim Testimonies",
+    "topic": "Holumn Archive",
+    "file": "holumn-incidents-and-testimonies.md",
+    "updated": "2026-08-28",
+    "description": "Victim testimonies and incident records showing how ordinary institutions and hidden authorities interpret Holumn encounters differently.",
+    "speakers": [
+      "Civilian Witness",
+      "Archive"
+    ]
+  },
+  {
     "slug": "questions-to-be-answered",
     "title": "Questions to Be Answered",
     "topic": "Editorial Ledger",
     "file": "questions-to-be-answered.md",
     "updated": "2026-08-28",
     "description": "Confidence-tracked current canon and chronology questions, separated to support both worldbuilding and timeline placement.",
-    "speakers": ["Author's Desk"]
+    "speakers": [
+      "Author's Desk"
+    ]
   },
   {
     "slug": "contradictions-to-resolve",
@@ -15,7 +29,9 @@
     "file": "contradictions-to-resolve.md",
     "updated": "2026-08-26",
     "description": "A resolution-tracked list of places where current story, character, world, or timeline records cannot all be read literally at the same time.",
-    "speakers": ["Author's Desk"]
+    "speakers": [
+      "Author's Desk"
+    ]
   },
   {
     "slug": "character-capability-balance",
@@ -24,7 +40,9 @@
     "file": "character-capability-balance.md",
     "updated": "2026-08-28",
     "description": "Questions and contradictions that keep character skills, talents, abilities, strengths, weaknesses, costs, and comparative graphs balanced across the cast.",
-    "speakers": ["Character Archive"]
+    "speakers": [
+      "Character Archive"
+    ]
   },
   {
     "slug": "duchy-of-narvea",
@@ -33,7 +51,9 @@
     "file": "duchy-of-narvea.md",
     "updated": "2026-08-27",
     "description": "A concise visual guide to the mapped Baltic country where the story takes place, including its cities, diplomatic legacy, divided authority, institutions, and multilingual culture.",
-    "speakers": ["Narvean State Archive"],
+    "speakers": [
+      "Narvean State Archive"
+    ],
     "href": "duchy.html"
   },
   {
@@ -43,7 +63,10 @@
     "file": "what-are-magi.md",
     "updated": "2026-08-22",
     "description": "A dialogue on the nature, secrecy, religion, and politics of Magi.",
-    "speakers": ["Journalist", "Fionn"]
+    "speakers": [
+      "Journalist",
+      "Fionn"
+    ]
   },
   {
     "slug": "world-foundation",
@@ -52,7 +75,9 @@
     "file": "world-foundation.md",
     "updated": "2026-08-26",
     "description": "A direct guide to magic, Holumns, Lester's unresolved demiholumn nature, hidden history, political balance, and the setting's central conflict.",
-    "speakers": ["World Archive"]
+    "speakers": [
+      "World Archive"
+    ]
   },
   {
     "slug": "magecraft-as-leverage",
@@ -61,6 +86,8 @@
     "file": "magecraft-as-leverage.md",
     "updated": "2026-08-27",
     "description": "A practical guide to magecraft mechanics, internal and external practice, limitations, nightmares, and the need for control.",
-    "speakers": ["Magistry Archive"]
+    "speakers": [
+      "Magistry Archive"
+    ]
   }
-]
+]\n
