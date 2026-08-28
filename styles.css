@@ -798,6 +798,15 @@
 .holumn-weakness-section > div:first-child { border-right: 1px solid var(--line-bright); border-bottom: 0; }
 .holumn-weakness-section > p { align-self: center; margin: 0; padding: 30px; color: var(--muted); font-size: 1.05rem; line-height: 1.75; }
 
+/* Keep Holumns in the same flat, framed visual language as the other World records. */
+.holumn-hero { border: 0; border-bottom: 1px solid #393b42; border-radius: 0; background: #232428; }
+.holumn-principle-section,
+.holumn-origin-section,
+.holumn-weakness-section { border: 0; border-top: 1px solid #393b42; border-bottom: 1px solid #393b42; border-radius: 0; background: #232428; }
+.holumn-section-heading { grid-template-columns: 80px minmax(250px, .75fr) minmax(280px, 1fr); gap: 28px; align-items: end; margin-bottom: 28px; }
+.holumn-section-heading h2 { grid-column: 2; }
+.holumn-section-heading > p { grid-column: 3; }
+
 .holumn-evidence-card { padding-bottom: 22px; }
 .holumn-evidence-card h3 { padding: 20px 22px 0; }
 .holumn-evidence-types { display: flex; flex-wrap: wrap; gap: 7px; padding: 14px 22px 0; }
@@ -833,6 +842,7 @@
   .holumn-origin-flow { grid-template-columns: 1fr; }
   .holumn-origin-flow > i { width: auto; height: 36px; border: 0; border-top: 1px solid var(--line-bright); border-bottom: 1px solid var(--line-bright); transform: rotate(90deg); }
   .holumn-section-heading { grid-template-columns: 1fr; }
+  .holumn-section-heading h2,
   .holumn-section-heading > p { grid-column: auto; }
 }
 
