@@ -31,8 +31,8 @@ These questions define what each character can do, what they cannot do, and why 
 | Father Mikhail | What political, intelligence, combat, or assassination specialization belongs to Father Mikhail, and where is he weaker than another special envoy? | 0% |
 | Son | Does Lynleit and Kyrien's son inherit the blue-flame lineage, another ability, or no Magus talent, and how would any inheritance remain balanced against both parents? | 0% |
 | Lynleit | Beyond passing MSF weapons certification, what level of firearms skill does Lynleit possess, and where does she remain dependent on Felix, Reiner, Kyrien, or another specialist? | 0% |
-| Lynleit | What practical limits, bodily costs, and backlash govern her unsafe blue-flame output and secret water walking, and which problems still require Fionn's greater virtuosity or her allies' non-magical skills? | 15% |
 | Myka | Which Academy disciplines make Myka gifted, which remain weak, and how does inexperience constrain high magical potential? | 15% |
+| Lynleit | What practical limits, bodily costs, and backlash govern her unsafe blue-flame output and secret water walking, and how often can she answer threats that firearms cannot without making Fionn's finesse or her allies' skills unnecessary? | 20% |
 | Inspector Leo | Which investigative strengths belong specifically to Leo, and what does restricted clearance prevent him from accomplishing without Natalia, MSF, or Church access? | 20% |
 | Natalia | Which magical disciplines support Natalia's examinations, what can she not diagnose alone, and what cost or risk prevents broad scholarship from solving every edge case? | 20% |
 | Tien | What constraints, personal blind spots, or counters keep Tien's elite fieldcraft and combat from making Helena's concealed assassin an automatic solution? | 25% |

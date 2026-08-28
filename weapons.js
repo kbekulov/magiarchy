@@ -4,6 +4,7 @@ const weaponsManufacturerPanel = document.querySelector('#manufacturer-panel');
 const weaponsFutureGrid = document.querySelector('#weapons-future-grid');
 const weaponsFictionCopy = document.querySelector('#weapons-fiction-copy');
 const weaponsLoadError = document.querySelector('#weapon-load-error');
+const weaponsImageCount = document.querySelector('#weapon-image-count');
 
 function weaponElement(tag, className, text) {
   const node = document.createElement(tag);
@@ -120,6 +121,7 @@ function renderWeapon(weapon, index) {
   facts.append(makeFact('Role', weapon.role));
   if (weapon.storyUse) facts.append(makeFact('Story use', weapon.storyUse));
   if (weapon.modernizationNote) facts.append(makeFact('Current production', weapon.modernizationNote));
+  if (weapon.variantNote) facts.append(makeFact('Named variant', weapon.variantNote));
 
   const design = weaponElement('section', 'weapon-design-copy');
   design.append(weaponElement('span', '', 'DESIGN LANGUAGE'), weaponElement('p', '', weapon.designSummary));
@@ -200,6 +202,7 @@ async function initializeWeaponsArchive() {
     const archive = await response.json();
     weaponsFictionCopy.textContent = archive.fictionNotice;
     document.querySelector('#weapon-record-count').textContent = String(archive.weapons.length).padStart(2, '0');
+    if (weaponsImageCount) weaponsImageCount.textContent = `${String(archive.weapons.filter((weapon) => weapon.image).length).padStart(2, '0')} approved`;
     renderManufacturer(archive.manufacturer);
     renderHierarchy(archive.weapons, archive.hierarchy);
     const records = archive.hierarchy

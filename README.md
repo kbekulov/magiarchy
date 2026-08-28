@@ -18,6 +18,10 @@ The site is intentionally framework-free: HTML, CSS, and a small amount of vanil
 
 Design and workflow rules for future AI development are maintained in [`AGENTS.md`](./AGENTS.md). The site must remain compatible with GitHub Pages, retain the root `CNAME`, use relative links and assets, and must not depend on the Codex Sites extension.
 
+## Ownership
+
+Project MAGIARCHY is the work of Kiril Bekulov & Co. and is owned by Kiril Bekulov. All rights are reserved. Any additional contributors will be credited separately when applicable.
+
 ## Page notes
 
 Each page has a visible right-hand **Page notes** panel backed by Supabase. Notes remain publicly readable, while owner authentication enables adding, editing, completing, and deleting notes directly in the sidebar. Static notes in the page HTML remain available as an offline fallback. The browser uses only the project's publishable key, and all write access is protected by Row Level Security.

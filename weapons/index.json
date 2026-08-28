@@ -87,80 +87,82 @@
       "model": "Ren L22",
       "nickname": "Rook",
       "caliber": "9×19 mm",
-      "role": "Compact general-purpose duty pistol",
-      "familyPosition": "Compact modern duty workhorse",
-      "designSummary": "Ren Arms moving from its older elegant metal-pistol tradition toward a modern service-pistol philosophy. The Rook is thicker and squarer than the Sparrow and Magpie, primarily utilitarian, and sized to bridge concealed, bodyguard, and ordinary duty work.",
+      "role": "Micro-compact concealed-carry and close-protection pistol",
+      "familyPosition": "Micro-compact modern carry pistol",
+      "designSummary": "The Rook moves Ren Arms into a micro-compact service philosophy. It is shorter, slimmer, and more carry-focused than the Sparrow and Magpie while retaining enough grip and slide length to remain credible for trained close-protection and institutional users.",
       "characteristics": [
         "Polymer or polymer-dominant frame",
-        "Moderately sculpted ergonomic grip",
-        "Broad, clean slide surfaces",
-        "Practical serrations",
-        "Slight taper toward the muzzle",
-        "Restrained modern styling without excessive decorative machining"
+        "Slim micro-compact proportions",
+        "Extended micro-compact grip profile",
+        "Clean, practical slide surfaces",
+        "Carry-focused controls and serrations",
+        "Modern styling without excessive decorative machining"
       ],
-      "finishNote": "The dependable all-purpose compact of the current family.",
-      "nameMeaning": "A sturdy, practical, intelligent, common bird with considerably more substance than a Sparrow.",
-      "references": ["Glock 19", "SIG Sauer compact service pistols", "CZ P-10 C", "Restrained Walther PDP influence"]
+      "variantNote": "Ghost Comp is the Rook's compensated premium configuration, occupying the same conceptual place that a Spectre Comp-style model holds within a micro-compact family.",
+      "finishNote": "The smallest modern service-oriented member of the family, intended for discreet carry without returning to the older metal-pistol language.",
+      "nameMeaning": "A compact, practical, intelligent bird with more confidence and modern utility than a Sparrow.",
+      "references": ["Walther P22Q", "SIG Sauer P365 XL", "SIG Sauer P365 Spectre Comp"]
     },
     {
       "slug": "ren-l24-crow",
       "model": "Ren L24",
       "nickname": "Crow",
       "caliber": "9×19 mm",
-      "role": "Full-size general service pistol",
-      "familyPosition": "Standard full-size service pistol",
-      "designSummary": "The full-size workhorse of the modern Ren Arms pistol family. It shares the Rook's language but gains a longer slide, taller grip, greater mass, and a conventional full-size duty silhouette.",
+      "role": "Compact general-purpose duty pistol",
+      "familyPosition": "Compact modern duty workhorse",
+      "designSummary": "The Crow is the compact workhorse of the modern Ren Arms family. It is larger and easier to control than the micro-compact Rook while remaining suitable for concealed, bodyguard, police, and ordinary duty use.",
       "characteristics": [
         "Dark charcoal or black finishes",
-        "Longer slide and taller grip than the Rook",
-        "Greater overall mass",
-        "Grip more sculpted and ergonomic than a strongly blocky form",
-        "Clean Central European-style slide shaping",
-        "Intended to feel ubiquitous in police, military, security, and state service"
+        "Polymer or polymer-dominant frame",
+        "Moderately sculpted ergonomic grip",
+        "Broad, clean slide surfaces",
+        "Practical serrations",
+        "Slight taper toward the muzzle",
+        "Compact proportions suited to concealed and duty carry"
       ],
-      "finishNote": "It is neither prestigious nor exotic. It is a serious, reliable, full-size service pistol.",
+      "finishNote": "It is neither prestigious nor exotic. It is the dependable all-purpose compact of the current family.",
       "nameMeaning": "Its common, capable, dark, and practical character.",
-      "references": ["Glock 17", "Walther PDP Full Size", "Modern CZ service pistols"]
+      "references": ["Glock 19", "CZ P-10 C", "Compact modern service pistols"]
     },
     {
       "slug": "ren-l28-raven",
       "model": "Ren L28",
       "nickname": "Raven",
       "caliber": "9×19 mm",
-      "role": "Premium or specialist full-size service pistol",
-      "familyPosition": "Heavier, specialist-oriented full-size pistol",
-      "designSummary": "A refined, specialist-oriented relative of the Crow in roughly the same size class. It should feel heavier, more deliberate, more sophisticated, and more purposeful without becoming flashy.",
+      "role": "Full-size general service pistol",
+      "familyPosition": "Full-size modern service pistol",
+      "designSummary": "The Raven is the full-size workhorse of the modern Ren Arms line. It extends the Crow's service philosophy into a longer slide, taller grip, greater mass, and conventional full-size duty silhouette.",
       "characteristics": [
-        "Heavier slide profile",
-        "More pronounced controls",
-        "More aggressively shaped grip",
-        "Longer or more prominent beavertail",
-        "Refined machining and clean sight lines",
-        "Dark, restrained finishes"
+        "Dark charcoal or black finishes",
+        "Longer slide and taller grip than the Crow",
+        "Greater overall mass",
+        "Sculpted full-size ergonomic grip",
+        "Clean modern service-pistol slide shaping",
+        "Intended for police, military, security, and state service"
       ],
-      "finishNote": "Suited to specialist officers, firearms instructors, protective personnel, or individuals who deliberately select and care about their sidearm. Future premium-frame variants remain undefined.",
-      "nameMeaning": "A larger, darker, more threatening, and more prestigious character than the Rook or Crow.",
-      "references": ["Full-size SIG Sauer service pistols", "Walther PDP Pro-type variants", "Higher-end CZ duty pistols"]
+      "finishNote": "A serious, reliable full-size service pistol rather than a prestige object.",
+      "nameMeaning": "A larger, darker, and more imposing service weapon than the Rook or Crow.",
+      "references": ["Glock 17", "Walther PDP Full Size", "Full-size modern service pistols"]
     },
     {
       "slug": "ren-l31-swan",
       "model": "Ren L31",
       "nickname": "Swan",
       "caliber": "9×19 mm",
-      "role": "Long-slide precision, prestige, or specialist pistol",
-      "familyPosition": "Longest and most refined specialist pistol",
-      "designSummary": "The longest and most visually graceful pistol in the current Ren Arms family. Its proportions are stretched rather than bulky, placing it between a precision service pistol, prestige officer's sidearm, specialist handgun, and serious sporting or competition-derived pistol.",
+      "role": "Premium large-frame precision and prestige pistol",
+      "familyPosition": "Premium large-frame specialist pistol",
+      "designSummary": "The Swan is Ren Arms at its most prestigious and mechanically deliberate. It combines the refined construction language of premium 2011 and 1911 pistols with the visual authority of a Desert Eagle-scale handgun and the controlled sophistication associated with the SIG GTO reference.",
       "characteristics": [
-        "Long, comparatively narrow slide",
+        "Large premium frame and substantial slide",
+        "Exposed-hammer prestige-gun silhouette",
         "Extended sighting profile",
-        "Elegant frame lines",
-        "Full-size sculpted grip",
-        "Slightly tapered front slide profile",
-        "Balanced and refined silhouette"
+        "Refined frame-to-slide lines",
+        "Sculpted full-size grip",
+        "Visually powerful without becoming crude"
       ],
-      "finishNote": "Physically large without looking brutal. It is not intended as an ordinary standard-issued sidearm.",
-      "nameMeaning": "Size, length, grace, refinement, and composure rather than threat. A Raven should look dangerous; a Swan should look elegant and controlled.",
-      "references": ["Long-slide Glock concepts", "CZ competition-derived service pistols", "Refined SIG Sauer and Walther proportions"]
+      "finishNote": "A specialist or prestige choice rather than an ordinary standard-issued sidearm.",
+      "nameMeaning": "Size, grace, refinement, and composure. A Raven should look like a full-size duty weapon; a Swan should look premium, powerful, and controlled.",
+      "references": ["Premium 2011 pistols", "Premium 1911 pistols", "Desert Eagle", "SIG GTO"]
     }
   ],
   "futureCategories": [
