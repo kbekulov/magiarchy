@@ -9,6 +9,8 @@ Story, character, world, relationship, institution, location, and event question
 | Area | Question | Confidence |
 | --- | --- | --- |
 | Family | Which emotionally inconvenient but reliable distant relative receives Lynleit and Kyrien's son, and how much truth does that person know about his parents? | 0% |
+| Holumn incident HI-001 | What does the voice want, and what changes when it stops copying the victim and begins speaking before the victim does? | 0% |
+| Holumn incident HI-002 | Who made or first completed the puzzle, how does its compulsion move between owners, and where does completion send its victims? | 0% |
 | Holumns | Can any victim taken by a Holumn return, and what would return mean for the person's identity? | 0% |
 | Lester | How did Lester become a demiholumn, and what metaphysical answer about his human and Holumn conditions would most threaten his sense of self? | 0% |
 | Location | What emotional or thematic role will Narvea's western gateway serve before Port City receives its proper name? | 0% |
@@ -24,10 +26,12 @@ Story, character, world, relationship, institution, location, and event question
 | Lester | Who knows that Lester is a demiholumn, and which factions would classify him as person, specimen, heresy, weapon, or kin? | 5% |
 | Natalia | What refusal line defines Natalia's consent and ethics more clearly than the cases she accepts? | 5% |
 | The Church | What one narrow but terrifying authority is delegated to Father Mikhail, and what happens when that assignment crosses ordinary Church territories? | 5% |
+| River Holumns | Are the Drowned Chorus and the river leviathan separate Holumns, two expressions of one river-bound intelligence, or phenomena feeding from the same wound? | 5% |
 | Holumns | Where do Holumns take disappeared victims, and what evidence can reveal the destination without yet explaining the mechanism or possibility of return? | 5% |
 | Core mystery | What logically defensible worldview and incompatible objective does each faction bring to Fionn, MSF, the Spill, and Narvea? | 10% |
 | Lynleit | Which of Lynleit's later actions around MSF missions can plausibly read as help, observation, manipulation, or causation before her intention becomes clear? | 10% |
 | Location | What human act in the Vilen park's history unknowingly prepares it for the Spill, and what is the park called? | 10% |
+| Boat operation | Which rule expressed by the Drowned Chorus makes Lynleit's blue flame relevant, and what remains after the agents reach shore? | 10% |
 | House | Which room in the Director's House carries an unexplained rule, and what do characters reveal through their refusal to enter it? | 10% |
 | Security | Which ordinary habits, complaints, chores, meals, and relationships keep the Director's House a family home while existential MSF work occurs inside it? | 10% |
 | MSF | Which officers learn that magic exists, what remains compartmentalized, and how does hidden knowledge become a second rank system inside the smaller post-Spill agency? | 10% |
@@ -70,8 +74,8 @@ These questions determine sequence, event placement, reveal timing, or elapsed t
 | --- | --- | --- |
 | Family | When, if ever, does Kyrien learn that Lynleit bore his son, and where does that revelation belong in relation to Lynleit's elusive return and his leadership of MSF? | 0% |
 | Timeline | How much time passes between the first disappearance, the park quarantine, Kyrien's early recruitment, Fionn's much later assassination, Helena's takeover, and the hunt for Lynleit's arrest? | 10% |
-| House chronology | How old was Lynleit when she demanded the third-floor room after the move from Turon to Vilen, and when did the Vilen house become a residential MSF node? | 25% |
 | Timeline | Exactly how many years pass between Lynleit's disappearance and return, and how old is her and Kyrien's son when she reappears? | 25% |
+| House chronology | How old was Lynleit when she made the third-floor room a condition of moving from Turon to Vilen, and when did the Vilen house become a residential MSF node? | 35% |
 | Fugitive campaign | How much time passes between the hotel-room refuge, Kyrien's first secure contact with Felix and Reiner, Lynleit's first foothold inside MSF, and Helena's eventual loss of control? | 35% |
 | Relationship | At what point in the opening chapters does Lynleit reveal Kyrien's recruitment to Felix and Reiner, where does the disclosure occur, and how much time remains before Fionn's assassination? | 60% |
 | Relationship | Is Lynleit and Kyrien's end-of-arc sexual encounter the conception of their son, when does Lynleit realize she is pregnant, and how much time passes before she disappears? | 65% |

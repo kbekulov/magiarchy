@@ -1,0 +1,96 @@
+{
+  "updated": "2026-08-28",
+  "principles": [
+    "Holumn is a category of manifestation, not a biological species.",
+    "A Holumn may be a physical creature, a natural phenomenon, a repeating event, a disembodied will, or a curse.",
+    "Its shape follows the fear, memory, fixation, or psychic fracture that gives it pressure.",
+    "No universal weakness exists. A useful countermeasure must answer the rule expressed by the manifestation.",
+    "An incident may reveal an effect without revealing the whole Holumn behind it."
+  ],
+  "types": [
+    {
+      "id": "embodied",
+      "name": "Embodied",
+      "summary": "A creature or body that occupies physical space, including forms that move without being alive.",
+      "evidence": ["HI-003", "HI-004"]
+    },
+    {
+      "id": "environmental",
+      "name": "Environmental",
+      "summary": "Weather, water, terrain, or another natural system becomes the body or behavior of the manifestation.",
+      "evidence": ["HI-003", "HI-004"]
+    },
+    {
+      "id": "event",
+      "name": "Event-bound",
+      "summary": "The Holumn exists as a sequence, compulsion, rule, or occurrence rather than as a creature that can be confronted directly.",
+      "evidence": ["HI-002"]
+    },
+    {
+      "id": "disembodied",
+      "name": "Disembodied",
+      "summary": "A voice, memory, desire, or will acquires agency without a stable body of its own.",
+      "evidence": ["HI-001"]
+    },
+    {
+      "id": "curse",
+      "name": "Curse-bound",
+      "summary": "A person, object, place, or action carries a hostile rule that persists until its particular condition is interrupted.",
+      "evidence": ["HI-001", "HI-002"]
+    }
+  ],
+  "incidents": [
+    {
+      "id": "HI-001",
+      "slug": "the-voice-on-the-line",
+      "title": "The Voice on the Line",
+      "recordType": "Victim testimony",
+      "types": ["disembodied", "curse"],
+      "testimony": "Have you heard of a telephone call that answers to you in your own voice? At first I thought whoever was on the phone was repeating me. But it was my own voice. At first it felt like an echo, as all it did was repeat my words. But then it started calling me incessantly, and it was talking to me, in bizarre ways. In my own voice.",
+      "ordinaryReading": "Police and communications specialists would first investigate harassment, recording fraud, a compromised exchange, equipment failure, or a witness in psychological distress.",
+      "hiddenReading": "Magi and special envoys treat the change from repetition to unsolicited speech as the decisive detail. Something learned the witness's voice, then began using it without the witness.",
+      "observedEffect": "Imitation develops into initiative. The calls become incessant and the borrowed voice speaks in ways the witness does not recognize as their own thought.",
+      "knownWeakness": "No countermeasure is confirmed.",
+      "spillContribution": "The incident establishes that a Holumn can enter ordinary infrastructure and acquire presence without forming a visible body."
+    },
+    {
+      "id": "HI-002",
+      "slug": "the-last-piece",
+      "title": "The Last Piece",
+      "recordType": "Missing-person incident",
+      "types": ["event", "curse"],
+      "summary": "A puzzle purchased at a market compels its owner to finish it. When the final piece is placed, the owner disappears and enters the missing-persons archive.",
+      "ordinaryReading": "Investigators see a purchased object, a developed obsession, and a disappearance. The puzzle may be treated as an unrelated possession, a clue to voluntary flight, or an instrument used by another person.",
+      "hiddenReading": "The compulsion and completion are parts of the same rule. The final piece does not merely precede the disappearance. It completes the condition that permits it.",
+      "observedEffect": "Attention narrows into addiction. Completion is followed by permanent disappearance, while the object remains available to be found again.",
+      "knownWeakness": "No countermeasure is confirmed. Refusing completion appears safer than solving the object, but the strength and transfer of the compulsion remain unknown.",
+      "spillContribution": "The incident establishes that a Holumn may be an event encoded into an ordinary object rather than a creature concealed inside it."
+    },
+    {
+      "id": "HI-003",
+      "slug": "the-drowned-chorus",
+      "title": "The Drowned Chorus",
+      "recordType": "Operational encounter",
+      "types": ["embodied", "environmental"],
+      "summary": "A pale girl rises from the water with her eyes sewn shut by fishing line and a dress made from dead fish. She speaks with the combined voices of drowned people.",
+      "ordinaryReading": "An ordinary report cannot reconcile the body, the voices, and the conditions of the encounter. Surviving fragments may be treated as trauma, darkness, waterborne confusion, or mutually reinforced misperception.",
+      "hiddenReading": "The figure may be a body assembled by the water, a vessel for accumulated drownings, or the visible portion of a larger river-bound manifestation.",
+      "observedEffect": "The dead are expressed as a chorus through one visible figure. Her appearance binds water, fishing, drowning, and human remains into a single image.",
+      "knownWeakness": "No countermeasure is confirmed. Lynleit's blue flame is capable of opposing Holumns that ordinary weapons cannot finish, but the outcome of this encounter remains part of the boat operation.",
+      "spillContribution": "This is the entity encountered during the failed boat operation. It turns the river from a setting into an active part of the Spill."
+    },
+    {
+      "id": "HI-004",
+      "slug": "the-river-that-is-too-deep",
+      "title": "The River That Is Too Deep",
+      "recordType": "Accumulated incident pattern",
+      "types": ["embodied", "environmental"],
+      "summary": "Something immense moves beneath the city river despite stretches too shallow to contain it. Impossible waves damage boats and kayaks, while drowned bodies lose pieces to bites larger than any expected river predator could make.",
+      "ordinaryReading": "Each report can be separated into wake damage, submerged debris, boating accidents, postmortem animal activity, or exaggerated witness comparison. Together they remain difficult to explain without inventing a cause the river should not contain.",
+      "hiddenReading": "The leviathan may be an animal-like Holumn, the river giving itself predatory mass, or a depth that exists only when the manifestation passes through it.",
+      "observedEffect": "The river behaves as though it can briefly contain a body larger than its physical depth. Water displacement, impact damage, and feeding traces persist after the shape itself is gone.",
+      "knownWeakness": "No countermeasure is confirmed. Its dependence on the river may be a boundary, but it is not yet known whether the water contains the Holumn or belongs to it.",
+      "spillContribution": "The pattern supports the possibility that the Spill changes what a place is capable of containing, not only what creatures can enter it."
+    }
+  ]
+}

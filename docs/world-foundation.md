@@ -10,13 +10,13 @@ That practice is lawful magecraft. Miracle-making belongs to a separate and forb
 
 > A Magus sees the loopholes everyone else lives around.
 
-## When Nightmares Become Physical
+## When Nightmares Enter Reality
 
-A city can only absorb so much fear, memory, and psychic strain. Once the pressure becomes too high, nightmares stop being private. They cross into reality and become physical threats called Holumns.
+A city can only absorb so much fear, memory, and psychic strain. Once the pressure becomes too high, nightmares stop being private. They cross into reality as manifestations called Holumns.
 
-There is no standard monster. Every manifestation carries the shape of the person it came from: their fear, their memories, and the exact way they broke.
+There is no standard monster and no requirement that a Holumn possess a body. A manifestation may be a creature, weather or water behaving impossibly, a repeating event, a disembodied will, or a curse attached to a person, object, place, or action. Its rule carries the fear, memory, fixation, or fracture that gave it pressure.
 
-Containment always has a cost. Every intervention changes the balance. Suppressing one breach can move the pressure somewhere else.
+Containment always has a cost. Every intervention changes the balance. Suppressing one breach can move the pressure somewhere else, while destroying a visible form may leave the rule behind.
 
 ### A Demiholumn Exists
 

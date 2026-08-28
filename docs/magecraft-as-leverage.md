@@ -64,15 +64,15 @@ Their advantage lies in perception and control. They can recognize pressure poin
 
 A Magus is an embodied loophole, not a god.
 
-## How Nightmares Become Real
+## How Nightmares Enter Reality
 
-Nightmares do not come from a fixed bestiary. There is no reliable catalog of forms waiting to be summoned.
+Nightmares do not come from a fixed bestiary. Holumn is a category of manifestation rather than a species or a catalog of creatures.
 
-Each manifestation is shaped by the psyche feeding it: fear, memory, fixation, trauma, and the exact places where a person or population has fractured. When that pressure becomes physical, the result is a nightmare manifestation, often called a Holumn.
+Each manifestation is shaped by the psyche feeding it: fear, memory, fixation, trauma, and the exact places where a person or population has fractured. The pressure can enter reality as a physical creature, an environmental phenomenon, a repeating event, a disembodied will, or a curse.
 
 Because no two inner lives are identical, no two manifestations have to follow the same design. The possible threats are effectively inexhaustible.
 
-This is why containment teams study people as carefully as they study creatures. The visible form is only the final symptom.
+This is why containment teams study people, objects, places, and repeated conditions as carefully as they study creatures. A visible body can be only one surface of the rule producing it.
 
 ## Limits and Cost
 

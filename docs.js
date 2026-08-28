@@ -39,6 +39,8 @@ function appendInlineMarkdown(text, parent) {
       if (/^https?:\/\//.test(linkMatch[2])) {
         element.target = '_blank';
         element.rel = 'noopener';
+      } else {
+        element.className = 'archive-entity-link';
       }
     }
 
@@ -47,6 +49,13 @@ function appendInlineMarkdown(text, parent) {
   }
 
   if (cursor < text.length) parent.append(document.createTextNode(text.slice(cursor)));
+}
+
+function markdownHeadingId(text) {
+  return text
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/^-+|-+$/g, '');
 }
 
 function parseMarkdownTableRow(line) {
@@ -182,6 +191,7 @@ function renderMarkdown(markdown) {
     if (headingMatch) {
       const heading = document.createElement(`h${headingMatch[1].length}`);
       appendInlineMarkdown(headingMatch[2], heading);
+      heading.id = markdownHeadingId(headingMatch[2]);
       fragment.append(heading);
       index += 1;
       continue;
@@ -293,6 +303,7 @@ async function loadDocument(entry) {
   docsHeading.hidden = true;
   documentReaderView.hidden = false;
   documentReader.replaceChildren();
+  documentReader.classList.toggle('holumn-testimony-document', entry.slug === 'holumn-incidents-and-testimonies');
   documentError.hidden = true;
   documentMeta.textContent = 'Loading document…';
 
@@ -317,6 +328,11 @@ async function loadDocument(entry) {
     }
 
     if (documentSourceLink) documentSourceLink.href = `docs/${entry.file}`;
+
+    if (window.location.hash) {
+      const target = document.querySelector(window.location.hash);
+      if (target) window.setTimeout(() => target.scrollIntoView({ block: 'start' }), 250);
+    }
   } catch (error) {
     documentMeta.textContent = 'Document unavailable';
     documentError.hidden = false;
