@@ -357,7 +357,7 @@ function renderSkillGraph(profile, container) {
     svg.append(createSvgElement('circle', { class: 'skill-radar-point', cx: point.x, cy: point.y, r: 3.5 }));
   });
 
-  const caption = createElement('figcaption', '', 'Every profile uses the same axes and 0 to 100 scale. Values remain provisional until confirmed.');
+  const caption = createElement('figcaption', '', 'The profile compares six practical dimensions on a shared 0 to 100 scale.');
   figure.append(svg, caption);
 
   const ledger = createElement('div', 'skill-graph-ledger');
@@ -437,7 +437,7 @@ function wildcardPattern(pattern) {
 async function loadProfilePortrait(profile, portrait, note) {
   const placeholder = createElement('div', 'profile-portrait-placeholder', profile.name.split(' ').map((part) => part[0]).join(''));
   placeholder.setAttribute('role', 'img');
-  placeholder.setAttribute('aria-label', `Artwork placeholder for ${profile.name}`);
+  placeholder.setAttribute('aria-label', `Portrait unavailable for ${profile.name}`);
   portrait.append(placeholder, note);
 
   try {

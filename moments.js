@@ -246,7 +246,6 @@ function renderMomentReader(entry, entries) {
   document.querySelector('#moment-purpose').textContent = entry.purpose;
   document.querySelector('#moment-after').textContent = entry.continuityAfter;
   populateList('#moment-known', entry.known);
-  populateList('#moment-open-questions', entry.openQuestions);
 
   const characterLinks = entry.characters.length
     ? entry.characters.map((character) => {

@@ -1,7 +1,6 @@
 const weaponsRecordList = document.querySelector('#weapon-record-list');
 const weaponsHierarchy = document.querySelector('#weapon-hierarchy');
 const weaponsManufacturerPanel = document.querySelector('#manufacturer-panel');
-const weaponsFutureGrid = document.querySelector('#weapons-future-grid');
 const weaponsFictionCopy = document.querySelector('#weapons-fiction-copy');
 const weaponsLoadError = document.querySelector('#weapon-load-error');
 const weaponsImageCount = document.querySelector('#weapon-image-count');
@@ -78,8 +77,8 @@ function makeWeaponVisual(weapon, index) {
     visual = weaponElement('div', 'weapon-image-placeholder');
     visual.setAttribute('aria-hidden', 'true');
     visual.append(
-      weaponElement('span', '', 'VISUAL REFERENCE'),
-      weaponElement('b', '', 'Pending'),
+      weaponElement('span', '', 'IMAGE'),
+      weaponElement('b', '', 'Unavailable'),
       weaponElement('i', 'weapon-placeholder-line weapon-placeholder-line-one'),
       weaponElement('i', 'weapon-placeholder-line weapon-placeholder-line-two'),
       weaponElement('em', '', String(index + 1).padStart(2, '0'))
@@ -88,7 +87,7 @@ function makeWeaponVisual(weapon, index) {
   const caption = weaponElement('figcaption');
   caption.append(
     weaponElement('strong', '', weapon.nickname),
-    weaponElement('span', '', weapon.image ? 'Approved visual reference' : 'Approved image to be added')
+    weaponElement('span', '', weapon.image ? 'Reference image' : 'No image available')
   );
   figure.append(visual, caption);
   return figure;
@@ -179,21 +178,6 @@ function renderWeapon(weapon, index) {
   return article;
 }
 
-function renderFutureCategories(categories) {
-  if (!weaponsFutureGrid) return;
-  const fragment = document.createDocumentFragment();
-  categories.forEach((category, index) => {
-    const card = weaponElement('article', 'weapon-future-card');
-    card.append(
-      weaponElement('span', '', String(index + 1).padStart(2, '0')),
-      weaponElement('strong', '', category),
-      weaponElement('small', '', 'Reserved, no records')
-    );
-    fragment.append(card);
-  });
-  weaponsFutureGrid.replaceChildren(fragment);
-}
-
 async function initializeWeaponsArchive() {
   if (!weaponsRecordList) return;
   try {
@@ -202,7 +186,7 @@ async function initializeWeaponsArchive() {
     const archive = await response.json();
     weaponsFictionCopy.textContent = archive.fictionNotice;
     document.querySelector('#weapon-record-count').textContent = String(archive.weapons.length).padStart(2, '0');
-    if (weaponsImageCount) weaponsImageCount.textContent = `${String(archive.weapons.filter((weapon) => weapon.image).length).padStart(2, '0')} approved`;
+    if (weaponsImageCount) weaponsImageCount.textContent = `${String(archive.weapons.filter((weapon) => weapon.image).length).padStart(2, '0')} images`;
     renderManufacturer(archive.manufacturer);
     renderHierarchy(archive.weapons, archive.hierarchy);
     const records = archive.hierarchy
@@ -210,7 +194,7 @@ async function initializeWeaponsArchive() {
       .filter(Boolean)
       .map(renderWeapon);
     weaponsRecordList.replaceChildren(...records);
-    renderFutureCategories(archive.futureCategories);
+
     if (window.location.hash) {
       const linkedRecord = document.getElementById(decodeURIComponent(window.location.hash.slice(1)));
       if (linkedRecord) requestAnimationFrame(() => linkedRecord.scrollIntoView({ block: 'start' }));

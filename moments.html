@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Explore key scene anchors and their connections to the Magiarchy story timeline, characters, and future chapters.">
+    <meta name="description" content="Explore key scene anchors and their connections to the Magiarchy story timeline, characters, and chapters.">
     <meta name="theme-color" content="#1e1f22">
     <title>Moments - Magiarchy</title>
     <link rel="icon" href="favicon.svg" type="image/svg+xml">
@@ -68,28 +68,14 @@
               <div>
                 <p class="eyebrow">Scene-led story construction</p>
                 <h1 id="moments-title">Moments</h1>
-                <p>Key scenes can exist before the chapters around them do. Each Moment keeps the scene itself, its provisional story position, its characters, and the questions needed to connect it into a coherent narrative.</p>
-              </div>
-            </section>
-
-            <section class="moment-system reveal" aria-labelledby="moment-system-title">
-              <header>
-                <p class="eyebrow">How the archive connects</p>
-                <h2 id="moment-system-title">One scene, several story views</h2>
-              </header>
-              <div class="moment-system-flow" role="group" aria-label="A Moment connects the overall story, character timelines, and chapters">
-                <article><span>01</span><div><small>Overall position</small><h3>Story phase</h3><p>Places the scene inside the main narrative without forcing an exact chapter yet.</p></div></article>
-                <i aria-hidden="true">→</i>
-                <article class="is-core"><span>02</span><div><small>Single source</small><h3>Moment</h3><p>Preserves what happens, why it matters, and which gaps remain open.</p></div></article>
-                <i aria-hidden="true">→</i>
-                <article><span>03</span><div><small>Connected views</small><h3>People and chapters</h3><p>Surfaces the same scene in character timelines and future chapter records.</p></div></article>
+                <p>Key scenes can exist before the chapters around them do. Each Moment records a key scene, its place in the Story, the characters involved, and the consequences that connect it to the wider narrative.</p>
               </div>
             </section>
 
             <section class="moment-phase-map reveal" aria-labelledby="moment-phase-title">
               <header class="story-timeline-header">
                 <div><p class="eyebrow">Continuity map</p><h2 id="moment-phase-title">Scene anchors across the Story</h2></div>
-                <div class="timeline-legend"><span class="timeline-mock">Current placements</span><span class="timeline-scroll-cue">Drag or scroll <span aria-hidden="true">→</span></span></div>
+                <div class="timeline-legend"><span class="timeline-mock">Story phases</span><span class="timeline-scroll-cue">Drag or scroll <span aria-hidden="true">→</span></span></div>
               </header>
               <ol class="moment-phase-track" id="moment-phase-track" tabindex="0" aria-label="Story phases with their current Moment counts. Drag or scroll horizontally to explore."></ol>
             </section>
@@ -122,7 +108,7 @@
             </nav>
 
             <header class="moment-reader-hero">
-              <div class="moment-reader-code"><span id="moment-code">MOM</span><span id="moment-placement-status">Provisional placement</span></div>
+              <div class="moment-reader-code"><span id="moment-code">MOM</span><span id="moment-placement-status">Story phase</span></div>
               <p class="eyebrow" id="moment-scene-type">Scene seed</p>
               <h1 id="moment-reader-title">Moment</h1>
               <p id="moment-reader-summary"></p>
@@ -142,10 +128,6 @@
               <section class="moment-fact-panel" aria-labelledby="moment-known-title">
                 <header><span>01</span><div><p class="eyebrow">Fixed scene core</p><h2 id="moment-known-title">What is known</h2></div></header>
                 <ol id="moment-known"></ol>
-              </section>
-              <section class="moment-fact-panel moment-open-panel" aria-labelledby="moment-open-title">
-                <header><span>02</span><div><p class="eyebrow">Useful gaps</p><h2 id="moment-open-title">What remains open</h2></div></header>
-                <ol id="moment-open-questions"></ol>
               </section>
             </div>
 
