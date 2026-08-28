@@ -808,6 +808,49 @@
 .holumn-section-heading > p { grid-column: 3; }
 
 .holumn-evidence-card { padding-bottom: 22px; }
+
+/* Holumns follows the established institutional-record shell. */
+.holumn-hero {
+  min-height: 430px;
+  grid-template-columns: 180px minmax(0, 1fr) 280px;
+  align-items: center;
+  gap: clamp(28px, 5vw, 56px);
+  margin-top: 18px;
+  border: 1px solid #111216;
+  border-radius: 8px;
+  background: #2b2d31;
+}
+.holumn-hero::before { content: "H"; display: grid; align-self: stretch; place-items: center; border-right: 1px solid rgba(0, 0, 0, .26); background: #232428; color: #b3b9ff; font: 750 2.45rem Consolas, monospace; letter-spacing: .06em; }
+.holumn-hero-copy { padding: 48px 0; border-right: 0; }
+.holumn-hero-facts { align-self: stretch; border-left: 1px solid #393b42; }
+.holumn-hero-facts div { padding: 17px 24px; }
+.holumn-hero-facts dd { font-size: .95rem; }
+.holumn-principle-section,
+.holumn-origin-section,
+.holumn-weakness-section { border: 0; border-radius: 0; background: transparent; }
+.holumn-principle-section > header,
+.holumn-origin-section > div:first-child,
+.holumn-weakness-section > div:first-child { padding: 64px 0 24px; border-bottom: 0; }
+.holumn-principle-section ol { border: 1px solid #393b42; border-radius: 8px; }
+.holumn-principle-section li { min-height: 230px; padding: 28px; }
+.holumn-type-card,
+.holumn-evidence-card { border-radius: 8px; }
+
+@media (max-width: 900px) {
+  .holumn-hero { grid-template-columns: 140px minmax(0, 1fr); }
+  .holumn-hero::before { grid-row: 1 / span 2; }
+  .holumn-hero-facts { grid-column: 2; border-top: 1px solid #393b42; border-left: 0; }
+}
+
+@media (max-width: 700px) {
+  .holumn-hero { grid-template-columns: 1fr; }
+  .holumn-hero::before { min-height: 120px; grid-row: auto; border-right: 0; border-bottom: 1px solid rgba(0, 0, 0, .26); }
+  .holumn-hero-copy { padding: 36px 26px; }
+  .holumn-hero-facts { grid-column: auto; border-top: 1px solid #393b42; }
+  .holumn-principle-section > header,
+  .holumn-origin-section > div:first-child,
+  .holumn-weakness-section > div:first-child { padding-top: 48px; }
+}
 .holumn-evidence-card h3 { padding: 20px 22px 0; }
 .holumn-evidence-types { display: flex; flex-wrap: wrap; gap: 7px; padding: 14px 22px 0; }
 .holumn-evidence-types span { padding: 5px 8px; border-radius: 5px; background: #24252a; color: var(--subtle); font-size: 0.72rem; text-transform: capitalize; }
