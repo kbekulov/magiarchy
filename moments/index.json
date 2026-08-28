@@ -155,8 +155,8 @@
     "sceneType": "Civilian rupture",
     "thread": "The first disappearances",
     "location": "Vilen park, exact site unspecified",
-    "summary": "The first man to disappear appears to be the Spill's first victim, but he is secretly the person who caused it. His identity and significance remain concealed for most of the story.",
-    "purpose": "Makes the apparent first victim the buried cause of the crisis, allowing a later identity revelation to reframe the entire chain of Holumn disappearances.",
+    "summary": "The first man to disappear appears to be the Spill's first victim, but he independently causes the crisis. His identity and significance remain concealed for most of the story while hidden factions begin exploiting the catastrophe he created.",
+    "purpose": "Makes the apparent first victim the buried cause of an independent crisis, allowing a later identity revelation to reframe both the Holumn disappearances and the agendas built around them.",
     "characters": [],
     "characterAnchors": [],
     "known": [
@@ -164,12 +164,15 @@
       "He is the person who causes the Spill.",
       "His identity and significance are not revealed for most of the story.",
       "He initially appears to be a victim rather than the originator of the crisis.",
+      "The Spill begins as an independent crisis rather than an operation created by the hidden conspiracy.",
+      "Other factions recognize and exploit the crisis for their own purposes.",
       "The later disappearances are caused by Holumns."
     ],
     "openQuestions": [
       "Who is the man?",
       "How does he cause the Spill?",
       "Why does his identity become pivotal later?",
+      "Which faction first recognizes and exploits what he caused?",
       "Who notices his disappearance first?"
     ],
     "continuityBefore": "His public identity and ordinary routine must conceal the significance he will acquire later.",
@@ -315,10 +318,11 @@
       "They sit with their backs pressed together to share body heat while they recover.",
       "Lynleit indirectly asks whether Kyrien saw anything strange during the escape.",
       "Kyrien denies seeing anything, and his careful performance of innocence gives Lynleit nothing she can safely test.",
-      "This act of unspoken protection becomes the first trigger in an intimacy that develops slowly and functionally across the story."
+      "This act of unspoken protection becomes the first trigger in an intimacy that develops slowly and functionally across the story.",
+      "The encounter leaves a supernatural scar in the river rather than only a surviving creature."
     ],
     "openQuestions": [
-      "What supernatural force remains beneath the river after the boat operation?",
+      "What form does the river's scar take, and in what sense does the place remember the encounter?",
       "Which additional MSF officers join the infiltration?",
       "What intelligence survives the failed operation?"
     ],
@@ -551,8 +555,8 @@
     "sceneType": "Political assassination",
     "thread": "The hidden conflict",
     "location": "Unspecified location",
-    "summary": "Fionn is assassinated through a still-unresolved plot in which Helena plays a major role. His death creates the opening she uses to seize MSF and frame Lynleit.",
-    "purpose": "Preserves Fionn's death as the decisive hinge between the hidden magical conflict and the visible takeover while distinguishing Helena's confirmed importance from the unresolved identity of the ultimate author.",
+    "summary": "Fionn is assassinated when several incompatible agendas converge without one actor controlling the whole outcome. Helena knowingly opens one part of the path, then uses his death to seize MSF and frame Lynleit.",
+    "purpose": "Preserves Fionn's death as the hinge between hidden conflict and visible takeover while making the unresolved mystery a collision of motives, partial knowledge, and accidental cooperation rather than one clean chain of command.",
     "characters": [
       { "name": "Fionn", "slug": "fionn" },
       { "name": "Helena", "slug": "helena" }
@@ -565,19 +569,20 @@
       "Fionn is successfully assassinated.",
       "His death creates the opening Helena uses to take control of MSF.",
       "Helena frames Lynleit for the assassination and directs a hunt for her arrest.",
-      "Helena plays a major role in bringing about Fionn's assassination.",
+      "Helena knowingly enables one part of the pressure against Fionn without understanding everything that follows.",
+      "No single participant controls the complete assassination outcome.",
+      "Several incompatible agendas accidentally cooperate to produce Fionn's death.",
       "The broader conflict already includes pressure from criminal Magi, foreign Magiarchates, and church actors.",
-      "The existence of several plausible participants does not establish which one ordered or executed the assassination."
+      "The unresolved issue is how each participant's intended outcome and partial action converge into the assassination."
     ],
     "openQuestions": [
-      "Was the assassination orchestrated by criminal Magi acting outside every jurisdiction?",
-      "Did a rival foreign Magiarchate order or enable it?",
-      "Did a church faction use its cross-national reach or special envoys against Fionn?",
-      "Was the assassination a coalition in which several parties supplied different parts of the operation?",
-      "Did all participants understand the full plan, or were some manipulated by another faction?",
+      "What outcome do the criminal Magi seek around Fionn?",
+      "What separate outcome does a rival foreign Magiarchate seek?",
+      "What separate outcome does a church faction seek?",
+      "Which actions accidentally cooperate even though their authors do not share one objective?",
       "Did one faction covertly or illegally infiltrate another and use its people or resources without authorization?",
       "Does any participant's apparent affiliation conceal who truly directed them?",
-      "What precise actions does Helena take, and how much of the full plan does she understand?"
+      "Which door does Helena knowingly open, what does she expect to happen, and what follows beyond her knowledge?"
     ],
     "continuityBefore": "Manufactured political strife isolates Fionn and divides his attention while the Spill develops.",
     "continuityAfter": "Helena converts the vacancy into control of MSF, makes Lynleit the official suspect, and directs a hunt for her arrest while the true authorship remains hidden.",

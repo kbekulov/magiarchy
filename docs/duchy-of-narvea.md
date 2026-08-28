@@ -90,7 +90,7 @@ Ordinary policing belongs to the parliamentary state, most likely under the Mini
 
 The Privy Council advises the Duke on constitutional questions, foreign affairs, national security, appointments, dynastic matters, and emergencies. It does not replace Cabinet or Parliament.
 
-A separate Council of State may bridge Crown and government through constitutional review, administrative law, senior appointments, and emergency continuity.
+The Council of State bridges Crown and government through constitutional review, administrative law, senior appointments, disputes, and emergency continuity. Its unresolved jurisdiction becomes most important when ordinary constitutional sovereignty collides with hidden supernatural authority that the public state cannot formally acknowledge.
 
 Narvea retains its own hierarchy of court and civil ranks. Rank determines precedence and status, but does not necessarily describe a person's actual job. A State Councillor might serve as an ambassador, judge, governor, rector, or senior ministry official.
 
