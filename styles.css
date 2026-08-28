@@ -12587,3 +12587,60 @@ a.equipment-card:focus-visible {
     grid-column: 1 / -1;
   }
 }
+
+/* Holumn record components. These extend the shared institutional shell instead
+   of creating a parallel page layout. */
+.holumn-principles {
+  display: grid;
+  border: 1px solid #393b42;
+  border-radius: 8px;
+}
+
+.holumn-principles article {
+  display: grid;
+  grid-template-columns: 46px minmax(0, 1fr);
+  gap: 18px;
+  padding: 28px;
+}
+
+.holumn-principles article + article { border-top: 1px solid #393b42; }
+.holumn-principles article > span { color: #72767d; font-family: Consolas, monospace; font-size: .67rem; }
+.holumn-principles article strong { display: block; margin-bottom: 8px; color: #f2f3f5; }
+.holumn-principles article p { margin: 0; color: #aeb1b8; line-height: 1.65; }
+
+.holumn-type-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; border: 0; }
+.holumn-type-grid article { min-height: 250px; border: 1px solid #393b42; border-radius: 8px; background: #232428; }
+.holumn-type-grid article + article { border-left: 1px solid #393b42; }
+.holumn-type-grid article > span { color: #8790ff; font-size: .6rem; font-weight: 750; letter-spacing: .08em; }
+.holumn-type-grid h3 { margin: 18px 0 12px; color: #f2f3f5; font-size: 1.1rem; }
+.holumn-type-grid p { margin: 0; color: #aeb1b8; line-height: 1.65; }
+.holumn-type-evidence { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 22px; }
+.holumn-type-evidence small { width: 100%; color: #72767d; font-size: .6rem; font-weight: 750; letter-spacing: .08em; text-transform: uppercase; }
+.holumn-type-evidence a { color: #b3b9ff; font: .68rem Consolas, monospace; text-decoration: none; }
+
+.holumn-evidence-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
+.holumn-evidence-card { display: flex; min-height: 290px; flex-direction: column; padding: 0 28px 26px; border: 1px solid #393b42; border-radius: 8px; background: #232428; }
+.holumn-evidence-card > header { display: flex; justify-content: space-between; gap: 16px; align-items: center; margin: 0 -28px; padding: 18px 28px; border-bottom: 1px solid #393b42; }
+.holumn-evidence-card > header span { color: #8790ff; font: .68rem Consolas, monospace; }
+.holumn-evidence-card > header small { color: #72767d; font-size: .6rem; font-weight: 750; letter-spacing: .08em; text-align: right; text-transform: uppercase; }
+.holumn-evidence-card h3 { margin: 22px 0 14px; color: #f2f3f5; font-size: 1.25rem; }
+.holumn-evidence-types { display: flex; flex-wrap: wrap; gap: 7px; }
+.holumn-evidence-types span { padding: 5px 8px; border-radius: 5px; background: #1e1f22; color: #949ba4; font-size: .68rem; text-transform: capitalize; }
+.holumn-evidence-contribution { margin: 18px 0 0; color: #aeb1b8; line-height: 1.65; }
+.holumn-evidence-card > a { margin-top: auto; padding-top: 22px; color: #b3b9ff; font-size: .74rem; font-weight: 700; text-decoration: none; }
+.holumn-evidence-card > a:hover,
+.holumn-evidence-card > a:focus-visible,
+.holumn-type-evidence a:hover,
+.holumn-type-evidence a:focus-visible { color: #f2f3f5; }
+
+@media (max-width: 900px) {
+  .holumn-type-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
+@media (max-width: 700px) {
+  .holumn-type-grid,
+  .holumn-evidence-grid { grid-template-columns: 1fr; }
+  .holumn-evidence-card { min-height: 0; }
+  .holumn-evidence-card > header { padding-inline: 18px; margin-inline: -18px; }
+  .holumn-evidence-card { padding-inline: 18px; }
+}

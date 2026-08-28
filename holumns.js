@@ -11,8 +11,8 @@ function holumnElement(tag, className, text) {
   return element;
 }
 
-function incidentLink(incident, label = incident.id) {
-  const link = holumnElement('a', 'holumn-incident-link', label);
+function incidentLink(incident, label) {
+  const link = holumnElement('a', '', label || incident.id);
   link.href = `docs.html?doc=holumn-incidents-and-testimonies#${incident.id.toLowerCase()}-${incident.slug}`;
   link.setAttribute('aria-label', `Open ${incident.title} in the testimony archive`);
   return link;
@@ -20,36 +20,44 @@ function incidentLink(incident, label = incident.id) {
 
 function renderPrinciples(principles) {
   holumnPrinciples.replaceChildren(...principles.map((principle, index) => {
-    const item = holumnElement('li');
-    item.append(holumnElement('span', '', String(index + 1).padStart(2, '0')), holumnElement('p', '', principle));
-    return item;
+    const article = holumnElement('article');
+    const copy = holumnElement('div');
+    copy.append(holumnElement('strong', '', principle));
+    article.append(holumnElement('span', '', String(index + 1).padStart(2, '0')), copy);
+    return article;
   }));
 }
 
 function renderTypes(types, incidentMap) {
   holumnTypeGrid.replaceChildren(...types.map((type, index) => {
-    const card = holumnElement('article', 'holumn-type-card reveal is-visible');
-    card.id = `holumn-type-${type.id}`;
-    const header = holumnElement('header');
-    header.append(holumnElement('span', '', String(index + 1).padStart(2, '0')), holumnElement('h3', '', type.name));
+    const card = holumnElement('article');
     const evidence = holumnElement('div', 'holumn-type-evidence');
     evidence.append(holumnElement('small', '', 'Supporting incidents'));
     type.evidence.map((id) => incidentMap.get(id)).filter(Boolean).forEach((incident) => evidence.append(incidentLink(incident)));
-    card.append(header, holumnElement('p', '', type.summary), evidence);
+    card.append(
+      holumnElement('span', '', String(index + 1).padStart(2, '0')),
+      holumnElement('h3', '', type.name),
+      holumnElement('p', '', type.summary),
+      evidence
+    );
     return card;
   }));
 }
 
 function renderEvidence(incidents) {
   holumnEvidenceGrid.replaceChildren(...incidents.map((incident) => {
-    const card = holumnElement('article', 'holumn-evidence-card reveal is-visible');
-    const top = holumnElement('div');
-    top.append(holumnElement('span', '', incident.id), holumnElement('small', '', incident.recordType));
+    const card = holumnElement('article', 'holumn-evidence-card');
+    const header = holumnElement('header');
+    header.append(holumnElement('span', '', incident.id), holumnElement('small', '', incident.recordType));
     const types = holumnElement('div', 'holumn-evidence-types');
     incident.types.forEach((type) => types.append(holumnElement('span', '', type)));
-    const contribution = holumnElement('p', 'holumn-evidence-contribution', incident.spillContribution);
-    const link = incidentLink(incident, 'Read the incident record');
-    card.append(top, holumnElement('h3', '', incident.title), types, contribution, link);
+    card.append(
+      header,
+      holumnElement('h3', '', incident.title),
+      types,
+      holumnElement('p', 'holumn-evidence-contribution', incident.spillContribution),
+      incidentLink(incident, 'Read the incident record')
+    );
     return card;
   }));
 }
