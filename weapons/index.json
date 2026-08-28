@@ -36,6 +36,7 @@
         "Smooth exterior surfaces and restrained controls",
         "Designed for personnel who carry it far more often than they fire it"
       ],
+      "modernizationNote": "Despite the Sparrow's older design lineage, current-production models omit an external manual safety to reflect the demands and handling priorities of modern combat.",
       "finishNote": "The silver finish belongs to the firearm itself rather than to an MSF customization. Routine issue gradually makes the ordinary Ren Arms product visually associated with MSF officers.",
       "nameMeaning": "Its small size, light visual presence, discretion, and modest chambering.",
       "characterLinks": [
@@ -51,6 +52,8 @@
       "slug": "ren-l19-magpie",
       "model": "Ren L19",
       "nickname": "Magpie",
+      "image": "media/gallery/images/weapons/ren_l19_magpie.png",
+      "imageAlt": "Side profile illustration of the silver and dark Ren L19 Magpie with its optional compensator and extended magazine attached",
       "caliber": "9×19 mm",
       "role": "Heavier compact service pistol",
       "familyPosition": "Larger, louder, and heavier relative of the Sparrow",
@@ -62,6 +65,18 @@
         "Recognizably Ren Arms grip and frame lines",
         "Metallic finishes remain common",
         "Darker service finishes may exist"
+      ],
+      "modernizationNote": "Despite the Magpie's older design lineage, current-production models omit an external manual safety to reflect the demands and handling priorities of modern combat.",
+      "optionsSummary": "Two optional attachments help the compact pistol remain controllable under the stronger recoil of its 9×19 cartridge.",
+      "options": [
+        {
+          "name": "Attachable compensator",
+          "effect": "Reduces muzzle rise and helps the shooter maintain control under the Magpie's greater recoil."
+        },
+        {
+          "name": "Extended magazine",
+          "effect": "Adds gripping surface for firmer recoil control while also increasing ammunition capacity."
+        }
       ],
       "finishNote": "It fills the space between a discreet institutional pistol and a full modern duty handgun.",
       "nameMeaning": "Its close relationship to the Sparrow, with a larger, louder, heavier, and more noticeable character.",

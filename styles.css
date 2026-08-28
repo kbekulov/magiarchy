@@ -617,6 +617,56 @@
   border-top: 1px solid var(--weapon-line);
 }
 
+.weapon-options {
+  margin-top: 18px;
+  padding: 18px;
+  border: 1px solid var(--weapon-line);
+  border-radius: 6px;
+  background: #25272c;
+}
+
+.weapon-options > span {
+  color: #aeb4ff;
+  font-size: .67rem;
+  font-weight: 750;
+  letter-spacing: .12em;
+}
+
+.weapon-options > p {
+  margin: 8px 0 16px;
+  color: #b5bac3;
+  font-size: .82rem;
+  line-height: 1.55;
+}
+
+.weapon-option-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  border-top: 1px solid var(--weapon-line);
+}
+
+.weapon-option-list article {
+  padding: 16px 16px 0 0;
+}
+
+.weapon-option-list article + article {
+  padding-right: 0;
+  padding-left: 16px;
+  border-left: 1px solid var(--weapon-line);
+}
+
+.weapon-option-list strong {
+  color: #e2e4e8;
+  font-size: .82rem;
+}
+
+.weapon-option-list p {
+  margin: 6px 0 0;
+  color: #aeb2bb;
+  font-size: .77rem;
+  line-height: 1.55;
+}
+
 .weapon-record-footer {
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(230px, .65fr);
@@ -931,6 +981,20 @@
     border-top: 1px solid var(--weapon-line);
   }
 
+  .weapon-option-list {
+    grid-template-columns: 1fr;
+  }
+
+  .weapon-option-list article {
+    padding: 14px 0;
+  }
+
+  .weapon-option-list article + article {
+    padding-left: 0;
+    border-top: 1px solid var(--weapon-line);
+    border-left: 0;
+  }
+
   .weapon-reference-list {
     padding-top: 20px;
     padding-left: 0;
@@ -990,10 +1054,11 @@ body::before {
 .archive-entity-link {
   color: inherit;
   text-decoration: none;
+  transition: color 150ms ease;
 }
 
 .archive-entity-link:hover {
-  color: inherit;
+  color: #aeb4ff;
   text-decoration: none;
 }
 
@@ -5189,9 +5254,13 @@ a.moment-connection-card:hover {
 
 .markdown-body a.archive-entity-link,
 .markdown-body a.archive-entity-link:visited,
-.markdown-body a.archive-entity-link:hover,
 .markdown-body a.archive-entity-link:active {
   color: inherit;
+  text-decoration: none;
+}
+
+.markdown-body a.archive-entity-link:hover {
+  color: #aeb4ff;
   text-decoration: none;
 }
 

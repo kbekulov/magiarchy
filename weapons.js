@@ -119,12 +119,29 @@ function renderWeapon(weapon, index) {
   const facts = weaponElement('dl', 'weapon-primary-facts');
   facts.append(makeFact('Role', weapon.role));
   if (weapon.storyUse) facts.append(makeFact('Story use', weapon.storyUse));
+  if (weapon.modernizationNote) facts.append(makeFact('Current production', weapon.modernizationNote));
 
   const design = weaponElement('section', 'weapon-design-copy');
   design.append(weaponElement('span', '', 'DESIGN LANGUAGE'), weaponElement('p', '', weapon.designSummary));
 
   const characteristics = weaponElement('ul', 'weapon-characteristics');
   weapon.characteristics.forEach((characteristic) => characteristics.append(weaponElement('li', '', characteristic)));
+
+  let options;
+  if (weapon.options?.length) {
+    options = weaponElement('section', 'weapon-options');
+    options.append(
+      weaponElement('span', '', 'OPTIONAL CONFIGURATION'),
+      weaponElement('p', '', weapon.optionsSummary || '')
+    );
+    const optionList = weaponElement('div', 'weapon-option-list');
+    weapon.options.forEach((option) => {
+      const optionRecord = weaponElement('article');
+      optionRecord.append(weaponElement('strong', '', option.name), weaponElement('p', '', option.effect));
+      optionList.append(optionRecord);
+    });
+    options.append(optionList);
+  }
 
   const footer = weaponElement('div', 'weapon-record-footer');
   const notes = weaponElement('div', 'weapon-character-note');
@@ -140,7 +157,9 @@ function renderWeapon(weapon, index) {
   references.append(referenceTags);
   footer.append(notes, references);
 
-  body.append(header, facts, design, characteristics, footer);
+  body.append(header, facts, design, characteristics);
+  if (options) body.append(options);
+  body.append(footer);
   if (weapon.characterLinks?.length) {
     const characterLinks = weaponElement('div', 'weapon-character-links');
     characterLinks.append(weaponElement('span', '', 'CHARACTER RECORDS'));
