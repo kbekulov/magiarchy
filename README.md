@@ -16,6 +16,8 @@ The official web home for the Magiarchy story universe, deployed through GitHub 
 
 The site is intentionally framework-free: HTML, CSS, and a small amount of vanilla JavaScript. Open `index.html` directly for a quick preview, or serve the repository root with any static HTTP server.
 
+Global archive search is backed by the generated `search-index.json` file. After changing site content, rebuild it with `node scripts/build-search-index.mjs` before committing so character sections, Chapters, Moments, Docs, World records, weapons, Holumn incidents, and update entries remain searchable.
+
 Design and workflow rules for future AI development are maintained in [`AGENTS.md`](./AGENTS.md). The site must remain compatible with GitHub Pages, retain the root `CNAME`, use relative links and assets, and must not depend on the Codex Sites extension.
 
 ## Ownership

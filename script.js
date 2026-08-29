@@ -2,6 +2,10 @@ const navToggle = document.querySelector('.nav-toggle');
 const navLinks = document.querySelector('.nav-links');
 const navDropdowns = Array.from(document.querySelectorAll('.nav-dropdown'));
 
+const globalSearchScript = document.createElement('script');
+globalSearchScript.src = 'global-search.js';
+document.head.append(globalSearchScript);
+
 document.querySelectorAll('.nav-submenu').forEach((submenu) => {
   if (submenu.querySelector('a[href="holumns.html"]')) return;
   const holumnLink = document.createElement('a');
