@@ -10512,7 +10512,7 @@ a.equipment-card:focus-visible {
   margin: 18px 0;
   color: #f2f3f5;
   font-family: Georgia, "Times New Roman", serif;
-  font-size: clamp(3rem, 6vw, 6rem);
+  font-size: clamp(3rem, 5vw, 5rem);
   font-weight: 500;
   line-height: 1;
 }
@@ -12100,10 +12100,12 @@ a.equipment-card:focus-visible {
 
 .msf-residential-node {
   display: grid;
+  width: min(1120px, calc(100% - 48px));
   grid-template-columns: 150px minmax(0, 1fr) auto;
   align-items: center;
   gap: 26px;
   margin-top: 12px;
+  margin-inline: auto;
   padding: 24px 28px;
   border: 1px solid #3a3c43;
   border-radius: 9px;
@@ -12302,6 +12304,7 @@ a.equipment-card:focus-visible {
   }
 
   .msf-residential-node {
+    width: min(100% - 28px, 680px);
     grid-template-columns: 1fr auto;
   }
 

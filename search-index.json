@@ -1,6 +1,6 @@
 {
-  "generated": "2026-08-29T07:51:14.840Z",
-  "count": 316,
+  "generated": "2026-08-29T08:25:20.983Z",
+  "count": 317,
   "entries": [
     {
       "id": "page-characters",
@@ -2121,6 +2121,14 @@
       "url": "index.html#update-canon-integration-pass",
       "subtitle": "Home update feed",
       "text": "World and Story Archive: Site update Home update feed CI World and Story Archive 26 Aug 2026 · Canon integration The archive now defines forbidden miracle-making, the gradual supernatural bleed, Heyk's park massacre and Ducal Guard recruitment, Hiyu and Yulia's quarantine entry, Lynleit and Kyrien's hotel-room refuge, the Vilen hilltop negotiation, Drake's actual office, Father Mikhail's envoy status, Tien's concealed role, confirmed age bands, the Academy's foundation, and MSF's deliberately unrevealed name. Browse the connected Moments →"
+    },
+    {
+      "id": "update-update-world-record-layout-repair",
+      "title": "World Archive: Site update",
+      "type": "Update",
+      "url": "index.html#update-world-record-layout-repair",
+      "subtitle": "Home update feed",
+      "text": "World Archive: Site update Home update feed UI World Archive 29 Aug 2026 · Layout repair MSF reference links now follow the same centered content shell as the surrounding record. The Magiarch title also remains inside its rank panel at wide and narrow viewport sizes. Open the repaired MSF record →"
     },
     {
       "id": "update-update-holumn-archive-rebuild",
