@@ -41,9 +41,9 @@ These questions define what each character can do, what they cannot do, and why 
 | Heyk | Which skills survive the park massacre, which are damaged by trauma, and how does becoming Drake and Sherie's field agent change his strengths over time? | 30% |
 | Felix | What technical access, equipment, preparation, and failure conditions limit Felix's hacking and communications work? | 35% |
 | Reiner | How strong and durable is Reiner in practical terms, and what kinds of distance, deception, technology, or magecraft neutralize his direct approach? | 35% |
-| Kyrien | Which blind spots remain despite Kyrien's late mastery of intelligence tradecraft, and how much weaker is his opening-chapter self than the later MSF director shown by the current graph? | 40% |
 | Axis model | Should Analysis split into procedural verification and generative inference so Yulia and Hiyu's opposite investigative strengths are visible instead of receiving nearly identical scores under one label? | 40% |
 | Yulia and Hiyu | Which concrete park tasks require Yulia's procedural rigor, which require Hiyu's improvisation, and where does each method fail without the other? | 50% |
+| Kyrien | Which consequential failure shows how Kyrien's need to win and punish unfair play can override his officer discipline, and how much weaker is his opening-chapter self than the later MSF director shown by the current graph? | 60% |
 
 ## Balance contradictions
 
@@ -54,5 +54,5 @@ This table is limited to current profile claims or graph presentations that cann
 | Fionn | Fionn currently scores 80 or higher on every axis and reaches 98 in both Analysis and Magecraft, leaving no meaningful comparative weakness despite a story in which rivals isolate and eliminate him. | 0% |
 | Lester | Lester receives a Magecraft score of 91 even though his profile explicitly classifies demiholumn nature as inherent and not magecraft. | 0% |
 | Father Mikhail | Father Mikhail has exact comparative scores despite his special-envoy specialization and delegated practical abilities being entirely undefined. | 0% |
-| Kyrien | Kyrien's graph presents near-peak intelligence tradecraft as a timeless profile value even though that mastery is explicitly the result of gradual development and peaks only around his later MSF leadership. | 10% |
 | System-wide | Exact graph scores still look more authoritative than the underlying canon permits, although profiles now label the assessment and values as provisional and link directly to this balance ledger. | 30% |
+| Kyrien | Kyrien's graph now preserves clear limits below Tien's fieldcraft and combat while identifying competitiveness as an exploitable weakness, but it still presents his later intelligence mastery as a timeless value rather than a developed state. | 35% |

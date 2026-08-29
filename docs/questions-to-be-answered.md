@@ -17,6 +17,7 @@ Story, character, world, relationship, institution, location, and event question
 | Location | What older personal name belongs to the Director's House, and what painful memory changes how the reader understands Fionn or Lynleit? | 0% |
 | Domestic thread | Does the grey cat receive a name, and who in the household accepts or resists the permanent loiterer as the story becomes crueler? | 0% |
 | Private investigation | What mundane, slightly absurd referral network carries impossible cases to Natalia, and how does she screen it without alerting the Magiarchy or Church? | 0% |
+| Kyrien | Which surviving military contact forces Kyrien to choose between loyalty to his father's officer code and loyalty to Lynleit or MSF? | 0% |
 | Helena | Is Helena a non-Magus who manipulates supernatural institutions, and if so, what access, allies, and leverage make that possible? | 5% |
 | Spill inquiry | Which three experts does Lynleit consult, and how can their incompatible explanations of the Spill each be partly correct? | 5% |
 | Relationship | Which serious clash forces Felix to recognize Kyrien's value without requiring either man to like the other? | 5% |
