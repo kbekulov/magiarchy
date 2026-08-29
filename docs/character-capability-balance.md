@@ -43,7 +43,7 @@ These questions define what each character can do, what they cannot do, and why 
 | Reiner | How strong and durable is Reiner in practical terms, and what kinds of distance, deception, technology, or magecraft neutralize his direct approach? | 35% |
 | Axis model | Should Analysis split into procedural verification and generative inference so Yulia and Hiyu's opposite investigative strengths are visible instead of receiving nearly identical scores under one label? | 40% |
 | Yulia and Hiyu | Which concrete park tasks require Yulia's procedural rigor, which require Hiyu's improvisation, and where does each method fail without the other? | 50% |
-| Kyrien | Which consequential failure shows how Kyrien's need to win and punish unfair play can override his officer discipline, and how much weaker is his opening-chapter self than the later MSF director shown by the current graph? | 60% |
+| Kyrien | Which consequential failure shows how Kyrien's need to win and punish unfair play can override his officer discipline, and what blind spot appears when he later directs MSF while Lynleit carries the Magiarchate? | 60% |
 
 ## Balance contradictions
 

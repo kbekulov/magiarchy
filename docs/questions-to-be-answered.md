@@ -51,7 +51,7 @@ Story, character, world, relationship, institution, location, and event question
 | Boat operation | What scar remains in the river after the failed infiltration, and in what sense can the place remember the encounter without proving that memory is conscious? | 30% |
 | Resolution | What human victory ends Helena's control and settles the political crisis while leaving the supernatural wound of the Spill open? | 30% |
 | Fugitive network | Which of Felix or Reiner first risks everything by trusting the hunted Lynleit, and what first foothold can that choice create inside MSF? | 30% |
-| MSF | What old rule, created for a different crisis, makes Kyrien the bizarre edge case who can technically satisfy its purpose during MSF's succession crisis? | 30% |
+| MSF | What old rule, created for a different crisis, makes Kyrien the bizarre non-Magus edge case who can inherit MSF while Lynleit carries the Magiarchate, and what limits does it place on his command? | 30% |
 | The Church | How can the Church and Magiarchy sincerely call the same suppression act salvation or murder, and what form must Church sanction take? | 35% |
 | Magiarchy | What formal rules govern fitness contests, duels, and sanctioned wars, and what exceptional conflict exposes values those rules never anticipated? | 35% |
 | Natalia | What single unanswered obsession drove Natalia out of the Academy, and which former students, colleagues, or obligations embody the costs of pursuing it? | 35% |
@@ -80,3 +80,4 @@ These questions determine sequence, event placement, reveal timing, or elapsed t
 | Fugitive campaign | How much time passes between the hotel-room refuge, Kyrien's first secure contact with Felix and Reiner, Lynleit's first foothold inside MSF, and Helena's eventual loss of control? | 35% |
 | Relationship | At what point in the opening chapters does Lynleit reveal Kyrien's recruitment to Felix and Reiner, where does the disclosure occur, and how much time remains before Fionn's assassination? | 60% |
 | Relationship | Is Lynleit and Kyrien's end-of-arc sexual encounter the conception of their son, when does Lynleit realize she is pregnant, and how much time passes before she disappears? | 65% |
+| Succession | When does Lynleit formally inherit the Magiarchate after Fionn's death, and how does that transfer of responsibility overlap with Kyrien assuming MSF's director seat? | 20% |
