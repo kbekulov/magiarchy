@@ -5311,6 +5311,427 @@ a.moment-connection-card:hover {
   border-radius: 0 0 8px 8px;
 }
 
+.markdown-body.character-intimacy-document {
+  --intimacy-border: #3f4147;
+  --intimacy-panel: #25262b;
+  --intimacy-panel-raised: #2b2d31;
+  background:
+    linear-gradient(180deg, rgba(88, 101, 242, .035), transparent 420px),
+    #2b2d31;
+}
+
+.character-intimacy-document > h1 {
+  position: relative;
+  max-width: 820px;
+  margin-bottom: 24px;
+  padding-top: 32px;
+}
+
+.character-intimacy-document > h1::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "WRITER'S RELATIONSHIP ARCHIVE";
+  color: #aeb4ff;
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: .62rem;
+  font-weight: 750;
+  letter-spacing: .14em;
+}
+
+.character-intimacy-document .intimacy-lede {
+  max-width: 850px;
+  margin-bottom: 34px;
+  color: #b5bac1;
+  font-size: clamp(.94rem, 1.8vw, 1.08rem);
+  line-height: 1.75;
+}
+
+.intimacy-guide {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1px;
+  margin: 0 0 20px;
+  overflow: hidden;
+  border: 1px solid var(--intimacy-border);
+  border-radius: 8px;
+  background: var(--intimacy-border);
+}
+
+.character-intimacy-document .intimacy-guide h2 {
+  grid-column: 1 / -1;
+  margin: 0;
+  padding: 20px 22px;
+  background: #1e1f22;
+  font-size: 1.1rem;
+}
+
+.character-intimacy-document .intimacy-guide p {
+  min-height: 128px;
+  margin: 0;
+  padding: 20px 22px;
+  background: var(--intimacy-panel);
+  color: #b5bac1;
+  font-size: .78rem;
+  line-height: 1.62;
+}
+
+.character-intimacy-document .intimacy-guide p strong {
+  display: block;
+  margin-bottom: 8px;
+  color: #dbdee1;
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: .61rem;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+
+.character-intimacy-document .intimacy-guide p:last-child {
+  grid-column: 1 / -1;
+  min-height: 0;
+  border-left: 3px solid #8790ff;
+  background: #232429;
+}
+
+.intimacy-character-index {
+  margin: 0 0 34px;
+  overflow: hidden;
+  border: 1px solid var(--intimacy-border);
+  border-radius: 8px;
+  background: #202125;
+}
+
+.intimacy-character-index > span {
+  display: block;
+  padding: 11px 14px;
+  border-bottom: 1px solid var(--intimacy-border);
+  color: #949ba4;
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: .58rem;
+  font-weight: 750;
+  letter-spacing: .09em;
+  text-transform: uppercase;
+}
+
+.intimacy-character-index > div {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+}
+
+.character-intimacy-document .intimacy-character-index a {
+  display: flex;
+  min-width: 0;
+  align-items: center;
+  gap: 8px;
+  padding: 11px 12px;
+  border-right: 1px solid #34363c;
+  border-bottom: 1px solid #34363c;
+  color: #b5bac1;
+  text-decoration: none;
+  transition: color .16s ease, background .16s ease;
+}
+
+.character-intimacy-document .intimacy-character-index a:hover,
+.character-intimacy-document .intimacy-character-index a:focus-visible {
+  background: #313338;
+  color: #d7daff;
+}
+
+.intimacy-character-index a small {
+  flex: 0 0 auto;
+  color: #6f7480;
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: .54rem;
+}
+
+.intimacy-character-index a span {
+  overflow: hidden;
+  font-size: .68rem;
+  font-weight: 700;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.intimacy-character {
+  margin: 0 0 22px;
+  overflow: hidden;
+  border: 1px solid #18191d;
+  border-top: 3px solid var(--intimacy-accent);
+  border-radius: 8px;
+  background: #202125;
+  box-shadow: 0 10px 26px rgba(0, 0, 0, .12);
+  scroll-margin-top: 82px;
+}
+
+.intimacy-character-header {
+  display: grid;
+  grid-template-columns: 58px minmax(0, 1fr);
+  align-items: stretch;
+  border-bottom: 1px solid var(--intimacy-border);
+  background: linear-gradient(90deg, #25262b, #232429);
+}
+
+.intimacy-character-code {
+  display: grid;
+  place-items: center;
+  border-right: 1px solid var(--intimacy-border);
+  color: var(--intimacy-accent);
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: .72rem;
+  font-weight: 750;
+}
+
+.intimacy-character-header > div {
+  padding: 20px 22px 18px;
+}
+
+.character-intimacy-document .intimacy-character-header h2 {
+  margin: 0 0 8px;
+  color: #f2f3f5;
+  font-size: clamp(1.45rem, 3vw, 2.15rem);
+  letter-spacing: -.025em;
+}
+
+.character-intimacy-document .intimacy-character-basis {
+  display: inline-flex;
+  margin: 0;
+  padding: 5px 8px;
+  border: 1px solid #444750;
+  border-radius: 4px;
+  color: #aeb4bd;
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: .56rem;
+  line-height: 1.25;
+  letter-spacing: .035em;
+  text-transform: uppercase;
+}
+
+.intimacy-character-basis strong {
+  font-weight: 700;
+}
+
+.intimacy-lens-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1px;
+  background: var(--intimacy-border);
+}
+
+.intimacy-lens {
+  position: relative;
+  min-width: 0;
+  padding: 24px 24px 22px;
+  background: var(--intimacy-panel-raised);
+}
+
+.intimacy-lens::before {
+  position: absolute;
+  top: 25px;
+  right: 22px;
+  content: attr(data-lens);
+  color: #676b75;
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: .55rem;
+}
+
+.character-intimacy-document .intimacy-lens h3 {
+  max-width: calc(100% - 46px);
+  margin: 0 0 14px;
+  color: #e3e5e8;
+  font-size: .92rem;
+  letter-spacing: -.01em;
+}
+
+.character-intimacy-document .intimacy-lens p {
+  margin: 0 0 12px;
+  color: #b5bac1;
+  font-size: .8rem;
+  line-height: 1.7;
+}
+
+.character-intimacy-document .intimacy-lens p:last-child {
+  margin-bottom: 0;
+}
+
+.intimacy-lens.is-partner,
+.intimacy-lens.is-guardrail {
+  grid-column: 1 / -1;
+}
+
+.intimacy-lens.is-partner {
+  padding-left: 28px;
+  border-left: 3px solid var(--intimacy-accent);
+  background: #27282e;
+}
+
+.character-intimacy-document .intimacy-lens.is-partner h3,
+.character-intimacy-document .intimacy-lens.is-guardrail h3 {
+  color: var(--intimacy-accent);
+}
+
+.intimacy-lens.is-guardrail {
+  display: grid;
+  grid-template-columns: minmax(140px, .28fr) minmax(0, 1fr);
+  gap: 24px;
+  align-items: start;
+  background: #1f2024;
+}
+
+.character-intimacy-document .intimacy-lens.is-guardrail h3 {
+  max-width: none;
+  margin: 0;
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: .67rem;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+
+.character-intimacy-document .intimacy-lens.is-guardrail p {
+  color: #aeb1b8;
+  font-size: .76rem;
+}
+
+.intimacy-principles {
+  margin-top: 44px;
+  overflow: hidden;
+  border: 1px solid var(--intimacy-border);
+  border-radius: 8px;
+  background: #202125;
+}
+
+.character-intimacy-document .intimacy-principles h2 {
+  margin: 0;
+  padding: 24px 26px;
+  border-bottom: 1px solid var(--intimacy-border);
+  color: #f2f3f5;
+  font-size: clamp(1.25rem, 2.6vw, 1.85rem);
+}
+
+.character-intimacy-document .intimacy-principles ul {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  counter-reset: intimacy-principle;
+}
+
+.character-intimacy-document .intimacy-principles li {
+  position: relative;
+  min-height: 120px;
+  padding: 22px 24px 22px 58px;
+  border-right: 1px solid var(--intimacy-border);
+  border-bottom: 1px solid var(--intimacy-border);
+  color: #b5bac1;
+  font-size: .78rem;
+  line-height: 1.65;
+  counter-increment: intimacy-principle;
+}
+
+.character-intimacy-document .intimacy-principles li::before {
+  position: absolute;
+  top: 23px;
+  left: 23px;
+  content: counter(intimacy-principle, decimal-leading-zero);
+  color: #8790ff;
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: .61rem;
+  font-weight: 750;
+}
+
+@media (max-width: 980px) {
+  .intimacy-character-index > div {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 700px) {
+  .markdown-body.character-intimacy-document {
+    padding: 26px 14px;
+  }
+
+  .character-intimacy-document > h1 {
+    padding-top: 28px;
+    font-size: clamp(2rem, 11vw, 2.8rem);
+  }
+
+  .intimacy-guide {
+    grid-template-columns: 1fr;
+  }
+
+  .character-intimacy-document .intimacy-guide h2,
+  .character-intimacy-document .intimacy-guide p,
+  .character-intimacy-document .intimacy-guide p:last-child {
+    grid-column: 1;
+  }
+
+  .character-intimacy-document .intimacy-guide p {
+    min-height: 0;
+    padding: 17px 18px;
+  }
+
+  .intimacy-character-index > div {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .character-intimacy-document .intimacy-character-index a {
+    padding: 10px;
+  }
+
+  .intimacy-character-header {
+    grid-template-columns: 44px minmax(0, 1fr);
+  }
+
+  .intimacy-character-header > div {
+    padding: 17px 16px 16px;
+  }
+
+  .character-intimacy-document .intimacy-character-header h2 {
+    font-size: 1.45rem;
+  }
+
+  .character-intimacy-document .intimacy-character-basis {
+    display: inline-block;
+    font-size: .51rem;
+  }
+
+  .intimacy-lens-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .intimacy-lens,
+  .intimacy-lens.is-partner,
+  .intimacy-lens.is-guardrail {
+    grid-column: 1;
+    padding: 20px 18px;
+  }
+
+  .intimacy-lens.is-partner {
+    padding-left: 20px;
+  }
+
+  .intimacy-lens.is-guardrail {
+    display: block;
+  }
+
+  .character-intimacy-document .intimacy-lens.is-guardrail h3 {
+    margin-bottom: 10px;
+  }
+
+  .character-intimacy-document .intimacy-lens p {
+    font-size: .77rem;
+  }
+
+  .character-intimacy-document .intimacy-principles ul {
+    grid-template-columns: 1fr;
+  }
+
+  .character-intimacy-document .intimacy-principles li {
+    min-height: 0;
+    border-right: 0;
+  }
+}
+
 .markdown-body ul {
   padding-left: 24px;
   color: var(--muted);

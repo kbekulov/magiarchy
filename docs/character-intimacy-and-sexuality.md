@@ -370,11 +370,11 @@ Keep her bond with Natalia familial. Do not use the absence of a sexual profile 
 
 ## Archive-wide writing principles
 
-1. Intimacy should alter access. After a meaningful encounter, somebody knows, trusts, fears, or can wound the other person differently.
-2. Initiative is not a permanent rank. A character can lead one encounter and surrender control in another without changing personality.
-3. Sexual intensity is not the same as aggression. Slow, rough, playful, urgent, and tender behavior each require mutual choice and character-specific meaning.
-4. Aftercare is characterization. Remaining, withdrawing, speaking, securing the room, offering warmth, or returning to work can reveal more than the act itself.
-5. Functional trust should precede major thresholds. Shared work, danger, domestic routine, and protected secrets give physical intimacy narrative weight.
-6. Pairings should create asymmetry without erasing either person. Each partner should give the other access to a strength, weakness, or form of rest unavailable elsewhere.
-7. Orientation, experience, and preference remain undefined unless established. Personality typing does not determine sexuality.
-8. No intimate scene is required merely because two characters have chemistry. The scene belongs only when it changes the story or the writer's understanding of them.
+- Intimacy should alter access. After a meaningful encounter, somebody knows, trusts, fears, or can wound the other person differently.
+- Initiative is not a permanent rank. A character can lead one encounter and surrender control in another without changing personality.
+- Sexual intensity is not the same as aggression. Slow, rough, playful, urgent, and tender behavior each require mutual choice and character-specific meaning.
+- Aftercare is characterization. Remaining, withdrawing, speaking, securing the room, offering warmth, or returning to work can reveal more than the act itself.
+- Functional trust should precede major thresholds. Shared work, danger, domestic routine, and protected secrets give physical intimacy narrative weight.
+- Pairings should create asymmetry without erasing either person. Each partner should give the other access to a strength, weakness, or form of rest unavailable elsewhere.
+- Orientation, experience, and preference remain undefined unless established. Personality typing does not determine sexuality.
+- No intimate scene is required merely because two characters have chemistry. The scene belongs only when it changes the story or the writer's understanding of them.

@@ -296,6 +296,147 @@ function showDocumentLibrary(entries) {
   documentCardGrid.replaceChildren(...entries.map(createDocumentCard));
 }
 
+const intimacyCharacterAccents = {
+  Lynleit: '#8790ff',
+  Kyrien: '#d4a56c',
+  Helena: '#c97786',
+  Fionn: '#aeb4c8',
+  Yulia: '#c98b9d',
+  Hiyu: '#70b7d6',
+  Felix: '#df9564',
+  Reiner: '#72a79f',
+  Sherie: '#8ca6ff',
+  Drake: '#c5a169',
+  Heyk: '#76a982',
+  Natalia: '#b394d5',
+  Tien: '#9c7bd1',
+  Lester: '#a5aa75',
+  'Inspector Leo': '#759bc8',
+  'Father Mikhail': '#baa16e',
+  Myka: '#8b8ee5'
+};
+
+function collectDocumentNodes(startNode, endNode) {
+  const nodes = [];
+  let current = startNode;
+  while (current && current !== endNode) {
+    const next = current.nextSibling;
+    nodes.push(current);
+    current = next;
+  }
+  return nodes;
+}
+
+function intimacyLensClass(heading) {
+  const label = heading.textContent.trim().toLowerCase();
+  if (label.startsWith('natural approach')) return 'is-natural';
+  if (label === 'sexual expression') return 'is-sexual';
+  if (label.startsWith('with ')) return 'is-partner';
+  if (label === 'writing guardrail') return 'is-guardrail';
+  return '';
+}
+
+function enhanceCharacterIntimacyDocument(container) {
+  const sectionHeadings = Array.from(container.querySelectorAll(':scope > h2'));
+  const guideHeading = sectionHeadings.find((heading) => heading.id === 'how-to-read-the-profiles');
+  const principlesHeading = sectionHeadings.find((heading) => heading.id === 'archive-wide-writing-principles');
+  const characterHeadings = sectionHeadings.filter((heading) => (
+    heading !== guideHeading && heading !== principlesHeading
+  ));
+
+  const title = container.querySelector(':scope > h1');
+  const lede = title?.nextElementSibling;
+  if (lede?.tagName === 'P') lede.classList.add('intimacy-lede');
+
+  if (guideHeading && characterHeadings[0]) {
+    const guide = document.createElement('section');
+    guide.className = 'intimacy-guide';
+    guide.setAttribute('aria-labelledby', guideHeading.id);
+    container.insertBefore(guide, guideHeading);
+    collectDocumentNodes(guideHeading, characterHeadings[0]).forEach((node) => guide.append(node));
+
+    const navigator = document.createElement('nav');
+    navigator.className = 'intimacy-character-index';
+    navigator.setAttribute('aria-label', 'Character intimacy profiles');
+
+    const navigatorLabel = document.createElement('span');
+    navigatorLabel.textContent = 'Character index';
+
+    const navigatorLinks = document.createElement('div');
+    characterHeadings.forEach((heading, index) => {
+      const link = document.createElement('a');
+      link.href = `#${heading.id}`;
+      const indexLabel = document.createElement('small');
+      indexLabel.textContent = String(index + 1).padStart(2, '0');
+      const characterLabel = document.createElement('span');
+      characterLabel.textContent = heading.textContent.trim();
+      link.append(indexLabel, characterLabel);
+      navigatorLinks.append(link);
+    });
+
+    navigator.append(navigatorLabel, navigatorLinks);
+    container.insertBefore(navigator, characterHeadings[0]);
+  }
+
+  characterHeadings.forEach((heading, index) => {
+    const boundary = characterHeadings[index + 1] || principlesHeading;
+    const contentNodes = collectDocumentNodes(heading.nextSibling, boundary);
+    const characterName = heading.textContent.trim();
+    const card = document.createElement('section');
+    card.className = 'intimacy-character';
+    card.style.setProperty('--intimacy-accent', intimacyCharacterAccents[characterName] || '#8790ff');
+    card.setAttribute('aria-labelledby', heading.id);
+    container.insertBefore(card, heading);
+
+    const cardHeader = document.createElement('header');
+    cardHeader.className = 'intimacy-character-header';
+
+    const code = document.createElement('span');
+    code.className = 'intimacy-character-code';
+    code.textContent = String(index + 1).padStart(2, '0');
+
+    const headingGroup = document.createElement('div');
+    headingGroup.append(heading);
+
+    const basis = contentNodes[0];
+    if (basis?.tagName === 'P') {
+      basis.classList.add('intimacy-character-basis');
+      headingGroup.append(basis);
+      contentNodes.shift();
+    }
+
+    cardHeader.append(code, headingGroup);
+
+    const lensGrid = document.createElement('div');
+    lensGrid.className = 'intimacy-lens-grid';
+    let currentLens = null;
+    let lensIndex = 0;
+
+    contentNodes.forEach((node) => {
+      if (node.tagName === 'H3') {
+        lensIndex += 1;
+        currentLens = document.createElement('article');
+        currentLens.className = `intimacy-lens ${intimacyLensClass(node)}`.trim();
+        currentLens.dataset.lens = String(lensIndex).padStart(2, '0');
+        currentLens.append(node);
+        lensGrid.append(currentLens);
+      } else if (currentLens) {
+        currentLens.append(node);
+      }
+    });
+
+    card.append(cardHeader, lensGrid);
+  });
+
+  if (principlesHeading) {
+    const principles = document.createElement('section');
+    principles.className = 'intimacy-principles';
+    principles.setAttribute('aria-labelledby', principlesHeading.id);
+    container.insertBefore(principles, principlesHeading);
+    collectDocumentNodes(principlesHeading, null).forEach((node) => principles.append(node));
+  }
+}
+
 async function loadDocument(entry) {
   if (!documentReader || !documentMeta || !documentError) return;
 
@@ -304,6 +445,7 @@ async function loadDocument(entry) {
   documentReaderView.hidden = false;
   documentReader.replaceChildren();
   documentReader.classList.toggle('holumn-testimony-document', entry.slug === 'holumn-incidents-and-testimonies');
+  documentReader.classList.toggle('character-intimacy-document', entry.slug === 'character-intimacy-and-sexuality');
   documentError.hidden = true;
   documentMeta.textContent = 'Loading document…';
 
@@ -315,6 +457,7 @@ async function loadDocument(entry) {
 
     const markdown = await response.text();
     documentReader.append(renderMarkdown(markdown));
+    if (entry.slug === 'character-intimacy-and-sexuality') enhanceCharacterIntimacyDocument(documentReader);
     documentMeta.textContent = `${entry.topic} · ${entry.speakers.join(' / ')} · Updated ${entry.updated}`;
 
     if (documentSummary) {
