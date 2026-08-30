@@ -58,7 +58,7 @@ The Prime Minister travels to Rennel for formal audiences with the Duke. The Duk
 
 Turon is a significant city and the headquarters of MSF. MSF is a fully private intelligence business that sells its services to the government while retaining control of its own succession and internal affairs. A substantial part of its officer corps is concentrated in Turon, giving the company a degree of local power that quietly troubles the central government.
 
-If MSF ever chose open defiance, its presence in Turon could support a small rebellion or even an attempt at secession. Officer culture, divided logistics, constitutional loyalty, and the absence of any desire to rebel keep that capacity dormant. The possibility survives in private political calculations because the final safeguard is not an external restraint. It is the belief that MSF officers are decent people.
+If MSF ever chose open defiance, its presence in Turon could support a small rebellion or even an attempt at secession. Officer culture, divided logistics, constitutional loyalty, and the absence of any desire to rebel keep that capacity dormant. Politicians know that the final safeguard is officer decency, not an enforceable external restraint.
 
 ## Crown and State
 
@@ -94,7 +94,7 @@ The Council of State bridges Crown and government through constitutional review,
 
 Narvea retains its own hierarchy of court and civil ranks. Rank determines precedence and status, but does not necessarily describe a person's actual job. A State Councillor might serve as an ambassador, judge, governor, rector, or senior ministry official.
 
-Drake holds the rank of State Councillor and the office of Official for Special Assignments. The office makes him an elite executive troubleshooter attached to a high-ranking personal office rather than a routine administrator. He can carry delegated authority into confidential criminal investigations, political counter-espionage, emergency corruption audits, and diplomatic errands. His friendship with the Duke begins when Drake is the only official willing to tell him that he is wrong. That refusal to flatter earns exceptional access and occasional forgiveness, but later makes Drake deeply unpopular at Court, where courtiers deride him as the Duke's pampered favorite.
+Drake holds the rank of State Councillor and the office of Official for Special Assignments. He is an elite executive troubleshooter attached to a high-ranking personal office and is free from routine administration. He can carry delegated authority into confidential criminal investigations, political counter-espionage, emergency corruption audits, and diplomatic errands. His friendship with the Duke begins when Drake is the only official willing to tell him that he is wrong. That refusal to flatter earns exceptional access and occasional forgiveness, but later makes Drake deeply unpopular at Court, where courtiers deride him as the Duke's pampered favorite.
 
 ## Cultural character
 

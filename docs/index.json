@@ -81,10 +81,10 @@
   },
   {
     "slug": "world-foundation",
-    "title": "How the Hidden World Works",
+    "title": "Hidden World Foundation",
     "topic": "World Foundation",
     "file": "world-foundation.md",
-    "updated": "2026-08-26",
+    "updated": "2026-08-30",
     "description": "A direct guide to magic, Holumns, Lester's unresolved demiholumn nature, hidden history, political balance, and the setting's central conflict.",
     "speakers": [
       "World Archive"
@@ -92,10 +92,10 @@
   },
   {
     "slug": "magecraft-as-leverage",
-    "title": "Magecraft Is Leverage, Not Omnipotence",
+    "title": "Magecraft: Structure, Leverage, and Cost",
     "topic": "Magecraft Doctrine",
     "file": "magecraft-as-leverage.md",
-    "updated": "2026-08-28",
+    "updated": "2026-08-30",
     "description": "A practical guide to magecraft mechanics, internal and external practice, limitations, Holumn manifestations, and the need for control.",
     "speakers": [
       "Magistry Archive"

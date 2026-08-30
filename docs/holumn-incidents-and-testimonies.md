@@ -2,7 +2,7 @@
 
 This archive preserves accounts of Holumn contact as they are known across several institutions. Police and government records usually begin with material explanations. Magi and Church special envoys examine the same evidence for a governing supernatural rule.
 
-The records remain connected to the [Holumns](../holumns.html) taxonomy. New incidents can refine the recognized forms, effects, and boundaries without requiring every Holumn to possess a physical body.
+The records remain connected to the [Holumns](../holumns.html) taxonomy. New incidents refine recognized forms, effects, and boundaries. A Holumn does not require a physical body.
 
 ## The Voice on the Line
 
@@ -34,7 +34,7 @@ The purchaser becomes increasingly compelled to solve the puzzle. Once the final
 A cluster of missing-person cases associated with an unverified market purchase.
 
 **Magi and special envoys**
-The object carries a condition. Completion, rather than possession, appears to trigger the disappearance.
+The object carries a condition. The disappearance occurs when the puzzle is completed.
 
 ## The Drowned Choir
 
@@ -70,4 +70,4 @@ The available evidence does not yet establish whether a creature occupies the ri
 Hidden debris, dangerous currents, criminal interference, and postmortem animal damage remain the available categories.
 
 **Magi and special envoys**
-The place exceeds its physical dimensions. Depth, force, and predation may belong to one governing rule rather than separate causes.
+The place exceeds its physical dimensions. Its impossible depth, force, and predation may belong to one governing rule.

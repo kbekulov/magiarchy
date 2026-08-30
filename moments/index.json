@@ -26,7 +26,7 @@
       "The immediate aftermath brings him into a police office.",
       "Lynleit conducts the interrogation.",
       "Lynleit invokes an extraordinary transfer clause in MSF's government service contract, drafted under Fionn for extraordinary threats.",
-      "The transfer gives her control of Kyrien's case without requiring her to disclose the secret recruitment to Fionn.",
+      "The transfer gives her control of Kyrien's case, and she does not disclose the secret recruitment to Fionn.",
       "Kyrien faces prison unless he agrees to become Lynleit's secret helper.",
       "His freedom remains conditional on accepting Lynleit's demands, leaving him confined to her whims.",
       "Lynleit's private strategy is to keep Kyrien as a secret trump card against Helena.",
@@ -166,8 +166,8 @@
       "The first missing person is a man.",
       "He is the person who causes the Spill.",
       "His identity and significance are not revealed for most of the story.",
-      "He initially appears to be a victim rather than the originator of the crisis.",
-      "The Spill begins as an independent crisis rather than an operation created by the hidden conspiracy.",
+      "He initially appears to be a victim. His role in causing the crisis remains concealed.",
+      "The Spill begins independently of the hidden conspiracy and is later exploited by other actors.",
       "Other factions recognize and exploit the crisis for their own purposes.",
       "The later disappearances are caused by Holumns."
     ],
@@ -179,7 +179,7 @@
       "Who notices his disappearance first?"
     ],
     "continuityBefore": "His public identity and ordinary routine must conceal the significance he will acquire later.",
-    "continuityAfter": "Holumns begin taking further victims, while the first disappearance is treated as the start of the case rather than its concealed cause.",
+    "continuityAfter": "Holumns begin taking further victims. Investigators treat the first disappearance as the start of the case and do not know that the missing man caused the crisis.",
     "chapterSlug": null,
     "updated": "2026-08-26"
   },
@@ -280,7 +280,7 @@
       "What would finally convince Drake that the alliance should be preserved or abandoned?"
     ],
     "continuityBefore": "Sherie must persuade Drake that Lynleit is worth the legal and political danger of contact.",
-    "continuityAfter": "Sherie claims praise and pampering for her success while Drake remains uncertain about what she has created. The private agreement then produces a narrow intelligence operation focused on a suspected shipment rather than an arrest or seizure.",
+    "continuityAfter": "Sherie claims praise and pampering for her success while Drake remains uncertain about what she has created. The private agreement then produces a narrow intelligence operation. The team may inspect the suspected shipment but cannot arrest anyone or seize material.",
     "chapterSlug": null,
     "updated": "2026-08-26"
   },
@@ -322,7 +322,7 @@
       "Lynleit indirectly asks whether Kyrien saw anything strange during the escape.",
       "Kyrien denies seeing anything, and his careful performance of innocence gives Lynleit nothing she can safely test.",
       "This act of unspoken protection becomes the first trigger in an intimacy that develops slowly and functionally across the story.",
-      "The encounter leaves a supernatural scar in the river rather than only a surviving creature."
+      "The encounter leaves a supernatural scar in the river. The surviving creature may be only one part of it."
     ],
     "openQuestions": [
       "What form does the river's scar take, and in what sense does the place remember the encounter?",
@@ -413,7 +413,7 @@
       "What lasting evidence, injury, or change in their relationship follows the trespass?"
     ],
     "continuityBefore": "The widening disappearance case gives Hiyu enough fragments to form an impossible but directionally correct theory. Yulia rejects the conclusion but refuses to let him test it alone.",
-    "continuityAfter": "Whatever they witness must connect two civilian students to the larger institutional response without turning Hiyu's correct category into complete knowledge of magic.",
+    "continuityAfter": "Their evidence connects two civilian students to the larger institutional response. Hiyu correctly suspects magic but still lacks any complete knowledge of it.",
     "chapterSlug": null,
     "updated": "2026-08-27"
   },
@@ -495,7 +495,7 @@
       "Kyrien helps her find ways to contact Felix and Reiner without surrendering her location.",
       "Felix and Reiner are the first trusted MSF officers brought back into her fugitive network.",
       "The renewed contact begins Lynleit's slow effort to reclaim MSF from Helena.",
-      "The counteroffensive develops while Lynleit remains hunted rather than after the danger has passed."
+      "The counteroffensive develops while Lynleit remains hunted."
     ],
     "openQuestions": [
       "What secure method does Kyrien use to reach Felix and Reiner?",
@@ -541,7 +541,7 @@
       "Is this encounter the conception of their son?",
       "When does Lynleit realize she is pregnant, and how much time passes before she disappears?"
     ],
-    "continuityBefore": "The river incident establishes silent physical trust. The hotel-room refuge after Fionn's murder establishes emotional safety. Additional functional encounters must make the final threshold feel accumulated rather than sudden.",
+    "continuityBefore": "The river incident establishes silent physical trust. The hotel-room refuge after Fionn's murder establishes emotional safety. Further acts of practical care build the intimacy that precedes their final threshold.",
     "continuityAfter": "Lynleit becomes pregnant close to the end of the arc and disappears to keep the child beyond the conflict's reach. Kyrien is left to direct MSF without knowing that she carries their son.",
     "chapterSlug": null,
     "updated": "2026-08-26"
@@ -559,7 +559,7 @@
     "thread": "The hidden conflict",
     "location": "Unspecified location",
     "summary": "Fionn is assassinated when several incompatible agendas converge without one actor controlling the whole outcome. Helena knowingly opens one part of the path, then uses his death to seize MSF and frame Lynleit.",
-    "purpose": "Preserves Fionn's death as the hinge between hidden conflict and visible takeover while making the unresolved mystery a collision of motives, partial knowledge, and accidental cooperation rather than one clean chain of command.",
+    "purpose": "Fionn's death connects the hidden conflict to Helena's visible takeover. The unresolved conspiracy contains several motives, partial knowledge, and accidental cooperation, with no single clean chain of command.",
     "characters": [
       { "name": "Fionn", "slug": "fionn" },
       { "name": "Helena", "slug": "helena" }

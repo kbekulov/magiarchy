@@ -1,14 +1,12 @@
-# How the Hidden World Works
+# Hidden World Foundation
 
 ## Magic Comes From Inside Reality
 
-Magic comes from inside reality, not outside it. Psyche and soul are part of how the world works. The pressure becomes strongest wherever many lives overlap, especially in cities.
+Magic exists within reality. Psyche and soul are part of the world's structure, and their pressure becomes strongest wherever many lives overlap, especially in cities.
 
-Magi can see the weak points created by that pressure. They do not invent miracles from nothing. They find something reality was already capable of doing, then push it.
+Magi perceive weak points created by that pressure. They use conditions that reality can already support and push them toward a chosen result.
 
 That practice is lawful magecraft. Miracle-making belongs to a separate and forbidden category: acts that resemble wizardry or imitate sacred deeds associated with Jesus, saints, saviours, and other religious figures. The Church can condemn such an act even when its immediate effect appears harmless.
-
-> A Magus sees the loopholes everyone else lives around.
 
 ## When Nightmares Enter Reality
 
@@ -26,31 +24,31 @@ What is known is practical. Lester retains human agency and acts as Natalia's tr
 
 ## Why Magic Stayed Hidden
 
-Magic survived because it stayed quiet. The Magi did not conquer the visible world. They contained problems, limited themselves, and made sure most people never knew they existed.
+Magi preserved their existence by remaining hidden. They contained supernatural problems, restricted their own activity, and prevented most people from learning that they existed.
 
 Eventually they split. Some accepted an uneasy partnership with the Church. Others refused and followed their own goals. The Magiarchy and its regional Magiarchates grew from that divide, giving Church-aligned Magi a structure that could be governed, watched, and understood politically.
 
 Those outside the sanctioned order became renegades and enemies of both the Church and the Magiarchates.
 
-## No One Controls the Whole System
+## Divided Authority
 
-No single institution controls the hidden world. The Church, the Magiarchy, state authorities, aristocratic families, and intelligence networks all need one another, but none of them truly trust one another.
+No single institution controls the hidden world. The Church, the Magiarchy, state authorities, aristocratic families, and intelligence networks depend on one another and remain mutually suspicious.
 
 The partnership between the Church and the Magiarchy is useful when it works. When trust fails, it becomes violent very quickly.
 
-## Truth Versus Stability
+## Public Ignorance
 
 The Magi identify, contain, and erase breaches before the public can understand what it has seen. The Church knows the nightmares are real, knows the Magi can oppose them, and is wary of both.
 
 Ordinary society still believes the world is secular, rational, and transparent. That belief only survives because ignorance is actively maintained.
 
-This is not a conflict between good and evil. The real conflict is truth versus stability. Institutions under pressure will harden, fracture, adapt, or mutate to survive.
+The institutions responsible for secrecy place social stability above public access to the truth. Under pressure, they may harden their rules, divide internally, or change their methods to survive.
 
 ## Suppression Doctrine
 
-The Church and the Magiarchy share responsibility for suppression doctrine. It exists to keep knowledge of magic from spreading through ordinary society, but the Church holds final sanction over its use. Magiarchal resources may investigate, contain, absorb, or remove witnesses under that authority. The doctrine is not a single automatic punishment. The response depends on the witness, the credibility of their account, the scale of exposure, and the danger of leaving them outside institutional control.
+The Church and the Magiarchy share responsibility for suppression doctrine. It exists to keep knowledge of magic from spreading through ordinary society, but the Church holds final sanction over its use. Magiarchal resources may investigate, contain, absorb, or remove witnesses under that authority. The doctrine does not prescribe one automatic punishment. The response depends on the witness, the credibility of their account, the scale of exposure, and the danger of leaving them outside institutional control.
 
-Possible responses include murder, assassination, or kidnapping; extortion, intimidation, or bribery; framing the witness as mentally ill; forced integration into Church staff or clergy; and forced integration into Magiarchy service staff or a comparable supervised role. The doctrine is deliberately flexible because every circumstance creates a different balance between secrecy, risk, and moral cost.
+Possible responses include murder, assassination, or kidnapping; extortion, intimidation, or bribery; framing the witness as mentally ill; forced integration into Church staff or clergy; and forced integration into Magiarchy service staff or a comparable supervised role. Officials weigh secrecy, risk, and moral cost in each case.
 
 ## The First Missing Person
 
@@ -58,4 +56,4 @@ The first person to disappear is also the person who causes the Spill. For most 
 
 The disappearances that follow are caused by Holumns. This remains hidden behind missing-person cases, failed searches, and material explanations until the supernatural pattern becomes impossible to ignore.
 
-Its darkest unresolved question is the boundary between containment and murder. A witness can be made safe by being absorbed, discredited, or coerced, but the same doctrine can also turn lethal action into an institutional procedure.
+The unresolved moral boundary lies between containment and murder. Officials may absorb, discredit, coerce, or kill a witness under the same doctrine.

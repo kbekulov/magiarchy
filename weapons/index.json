@@ -37,7 +37,7 @@
         "Designed for personnel who carry it far more often than they fire it"
       ],
       "modernizationNote": "Despite the Sparrow's older design lineage, current-production models omit an external manual safety to reflect the demands and handling priorities of modern combat.",
-      "finishNote": "The silver finish belongs to the firearm itself rather than to an MSF customization. Routine issue gradually makes the ordinary Ren Arms product visually associated with MSF officers.",
+      "finishNote": "The silver finish is standard to the firearm and is not an MSF customization. Routine issue gradually makes the ordinary Ren Arms product visually associated with MSF officers.",
       "nameMeaning": "Its small size, light visual presence, discretion, and modest chambering.",
       "characterLinks": [
         {
@@ -140,7 +140,7 @@
         "Clean modern service-pistol slide shaping",
         "Intended for police, military, security, and state service"
       ],
-      "finishNote": "A serious, reliable full-size service pistol rather than a prestige object.",
+      "finishNote": "A serious, reliable full-size service pistol with no prestige role.",
       "nameMeaning": "A larger, darker, and more imposing service weapon than the Rook or Crow.",
       "references": ["Glock 17", "Walther PDP Full Size", "Full-size modern service pistols"]
     },
@@ -151,16 +151,16 @@
       "caliber": "9×19 mm",
       "role": "Premium large-frame precision and prestige pistol",
       "familyPosition": "Premium large-frame specialist pistol",
-      "designSummary": "The Swan is Ren Arms at its most prestigious and mechanically deliberate. It combines the refined construction language of premium 2011 and 1911 pistols with the visual authority of a Desert Eagle-scale handgun and the controlled sophistication associated with the SIG GTO reference.",
+      "designSummary": "The Swan is Ren Arms' premium large-frame pistol. Its design draws on the precise construction of premium 2011 and 1911 pistols, the scale of the Desert Eagle, and the controlled proportions of the SIG GTO reference.",
       "characteristics": [
         "Large premium frame and substantial slide",
         "Exposed-hammer prestige-gun silhouette",
         "Extended sighting profile",
         "Refined frame-to-slide lines",
         "Sculpted full-size grip",
-        "Visually powerful without becoming crude"
+        "Visually powerful with controlled proportions"
       ],
-      "finishNote": "A specialist or prestige choice rather than an ordinary standard-issued sidearm.",
+      "finishNote": "A specialist or prestige sidearm that is not part of ordinary standard issue.",
       "nameMeaning": "Size, grace, refinement, and composure. A Raven should look like a full-size duty weapon; a Swan should look premium, powerful, and controlled.",
       "references": ["Premium 2011 pistols", "Premium 1911 pistols", "Desert Eagle", "SIG GTO"]
     }

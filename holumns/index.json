@@ -23,7 +23,7 @@
     {
       "id": "event",
       "name": "Event-bound",
-      "summary": "The Holumn exists as a sequence, compulsion, rule, or occurrence rather than as a creature that can be confronted directly.",
+      "summary": "The Holumn exists as a sequence, compulsion, rule, or occurrence with no creature that can be confronted directly.",
       "evidence": ["HI-002"]
     },
     {
@@ -61,10 +61,10 @@
       "types": ["event", "curse"],
       "summary": "A puzzle purchased at a market compels its owner to finish it. When the final piece is placed, the owner disappears and enters the missing-persons archive.",
       "ordinaryReading": "Investigators see a purchased object, a developed obsession, and a disappearance. The puzzle may be treated as an unrelated possession, a clue to voluntary flight, or an instrument used by another person.",
-      "hiddenReading": "The compulsion and completion are parts of the same rule. The final piece does not merely precede the disappearance. It completes the condition that permits it.",
+      "hiddenReading": "The compulsion and completion belong to the same rule. Placing the final piece completes the condition that permits the disappearance.",
       "observedEffect": "Attention narrows into addiction. Completion is followed by permanent disappearance, while the object remains available to be found again.",
       "knownWeakness": "No countermeasure is confirmed. Refusing completion appears safer than solving the object, but the strength and transfer of the compulsion remain unknown.",
-      "spillContribution": "The incident establishes that a Holumn may be an event encoded into an ordinary object rather than a creature concealed inside it."
+      "spillContribution": "The incident establishes that a Holumn may be an event encoded into an ordinary object, with no creature concealed inside it."
     },
     {
       "id": "HI-003",
@@ -90,7 +90,7 @@
       "hiddenReading": "The leviathan may be an animal-like Holumn, the river giving itself predatory mass, or a depth that exists only when the manifestation passes through it.",
       "observedEffect": "The river behaves as though it can briefly contain a body larger than its physical depth. Water displacement, impact damage, and feeding traces persist after the shape itself is gone.",
       "knownWeakness": "No countermeasure is confirmed. Its dependence on the river may be a boundary, but it is not yet known whether the water contains the Holumn or belongs to it.",
-      "spillContribution": "The pattern supports the possibility that the Spill changes what a place is capable of containing, not only what creatures can enter it."
+      "spillContribution": "The pattern supports the possibility that the Spill changes a place's physical capacity as well as the creatures that can enter it."
     }
   ]
 }

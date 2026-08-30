@@ -1,6 +1,6 @@
 # Character Intimacy and Sexuality Reference
 
-This is a writer-facing character reference for affection, desire, sexual initiative, vulnerability, boundaries, and partner-specific behavior. It is not a catalogue of mandatory scenes. A useful intimate scene should expose something a character normally protects, complicate an existing dependency, or change what two people are able to entrust to one another.
+This writer-facing reference records how each character approaches affection, desire, sexual initiative, vulnerability, boundaries, and specific partners. Intimate scenes are useful when they expose guarded behavior, complicate an existing dependency, or change the trust between two people.
 
 ## How to read the profiles
 
@@ -20,21 +20,21 @@ Sexual analysis is limited to characters who are clearly adults. Myka remains ou
 
 Lynleit approaches closeness through attention. She notices what another person needs, makes herself useful, and often assumes responsibility before admitting that she also wants comfort. Early intimacy therefore appears functional: keeping another person warm, remaining beside them after danger, offering shelter, or allowing them to witness an emotional collapse she would conceal in public.
 
-Once trust is secure, her restraint becomes playfulness rather than distance. She is more likely to initiate than to wait passively, and she enjoys drawing a reaction from a reserved partner. Her confidence does not make her careless. She remains attentive to hesitation, changes in mood, and whether the other person is still choosing the encounter with her.
+Once trust is secure, she becomes playful and more likely to initiate. She enjoys drawing a reaction from a reserved partner, but remains attentive to hesitation, changes in mood, and continued consent.
 
 ### Sexual expression
 
-Her first sexual threshold is likely to begin slowly because of the emotional weight accumulated before it. Once mutual hesitation breaks, the rhythm can become intense and urgent without becoming hostile or impersonal. Her preference is for sensual closeness with physical conviction, followed by quiet contact rather than abrupt separation.
+Her first sexual encounter is likely to begin slowly because of the emotional weight behind it. Once their hesitation breaks, she can become intense and urgent while remaining affectionate. She prefers sensual closeness, decisive physical contact, and quiet contact afterward.
 
 With familiarity, Lynleit becomes increasingly playful, openly desirous, and more vocal than Kyrien. Face-to-face closeness, seated or straddling arrangements, and positions that let her watch and guide her partner suit her early confidence. Side-by-side intimacy suits exhausted or emotionally exposed moments. From-behind arrangements become more plausible only after deep trust, because surrendering sight and some control makes them more vulnerable for her than their apparent physical boldness suggests.
 
 ### With Kyrien
 
-Kyrien first earns intimate access by refusing to exploit what he sees. He witnesses her forbidden water walking, protects the secret without bargaining over it, and shares warmth without turning necessity into entitlement. This makes discretion itself the first form of courtship between them.
+Kyrien first earns her trust when he witnesses her forbidden water walking and never uses the secret against her. He also shares warmth with her after the river incident without treating their physical closeness as sexual permission. Lynleit begins to see him differently because of this discretion.
 
-Lynleit later becomes the more frequent initiator. She can tease him, test his reserve, and make her desire legible without requiring him to become verbally expressive. His rare moments of firm initiative matter precisely because they reverse their usual pattern. When she allows him to lead, the act reveals trust more strongly than submission.
+Lynleit later becomes the more frequent initiator. She can tease him, test his reserve, and express desire in ways that do not depend on a verbal response. Kyrien initiates less often, so his firm advances mark a change in their usual pattern. Her willingness to let him set the pace shows how much she trusts him.
 
-Their sex should feel like the bodily continuation of a partnership built under pressure. It becomes unavoidable because they have repeatedly saved, sheltered, and steadied one another, not because danger automatically produces attraction. The encounter near the end of the first arc carries both accumulated tenderness and the intensity of people who may not receive another safe interval.
+Their first sexual encounter follows repeated acts of rescue, shelter, and reassurance. It occurs near the end of the first arc, during a short safe interval, and carries the tenderness and urgency accumulated throughout their partnership.
 
 ### Writing guardrail
 
@@ -52,13 +52,13 @@ His quietness does not imply passivity or lack of desire. It means that attentio
 
 ### Sexual expression
 
-Kyrien is likely to be controlled, observant, and comparatively quiet. Early encounters suit a responsive role because he will not presume that access granted under emotional pressure grants him authority. As familiarity grows, he becomes more deliberate about initiating, but does so less often than Lynleit. The rarity gives those reversals unusual force.
+Kyrien is likely to be controlled, observant, and comparatively quiet. In early encounters he responds more often than he initiates because he does not presume that emotional vulnerability grants him authority. As familiarity grows, he initiates more deliberately, though still less often than Lynleit.
 
-His intensity is concentrated rather than theatrical. He is unlikely to perform confidence through excessive speech or noise. What matters is sustained attention, a willingness to accept the same vulnerability he asks of another person, and practical aftercare that may look like water, warmth, securing the room, or simply refusing to leave.
+He expresses intensity through sustained attention instead of excessive speech or noise. He accepts the same vulnerability he asks of a partner and handles aftercare practically by bringing water, providing warmth, securing the room, or staying beside them.
 
 ### With Lynleit
 
-Lynleit is one of the few people capable of making his reserve feel playful rather than defensive. He lets her provoke visible reactions because he trusts that she will not use them to humiliate him. In return, his steadiness gives her permission to stop directing every emotional condition around her.
+With Lynleit, Kyrien can respond to teasing without becoming defensive. He trusts her not to humiliate him for a visible reaction. His steadiness also lets her stop managing the emotional conditions around them.
 
 Their usual pattern places her in the initiating role and him in the attentive one. A later scene in which he chooses the pace should signal that he no longer experiences desire merely as something permitted by his handler and protector. It becomes a choice he is willing to own, with all the reciprocal risk his personal morality assigns to decisive action.
 
@@ -78,11 +78,11 @@ Her composure makes spontaneous need difficult to expose. She is more likely to 
 
 ### Sexual expression
 
-No sexual behavior is established. A character-consistent interpretation would make Helena controlled, attentive to power, and sensitive to any sign that a partner is emotionally elsewhere. Desire may be genuine while still becoming a test the partner does not realize they are taking.
+No sexual behavior is established. A character-consistent interpretation would make Helena controlled, attentive to power, and sensitive to signs that a partner is emotionally elsewhere. She may turn an encounter into an unspoken test of the partner's attention or loyalty.
 
 ### With Fionn
 
-Fionn genuinely respects her intelligence, but his deepest compartment remains closed. Their private life is strongest if physical closeness is real and still cannot repair that exclusion. Helena can be desired, respected, and married while continuing to feel that she was never trusted as a wife. This gives her legitimate pain without turning that pain into justification for what she later chooses.
+Fionn genuinely respects her intelligence, but keeps the deepest part of his life closed to her. Their physical closeness is real and does not repair that exclusion. Helena is desired and respected, yet believes she was never trusted as a wife. Her grievance is legitimate even though it does not excuse her later choices.
 
 ### Writing guardrail
 
@@ -94,7 +94,7 @@ Do not make sex the cause of Helena's betrayal or use sexual dissatisfaction as 
 
 ### Natural approach
 
-Fionn is caring through provision, protection, and structure. He can be emotionally sincere while still deciding that secrecy is an act of love. This makes him capable of warmth and companionship, but poor at granting another person equal access to the dangers governing his choices.
+Fionn shows care through provision, protection, and structure. He is emotionally sincere but treats secrecy as an act of love. He offers warmth and companionship while denying a partner equal access to the dangers governing his choices.
 
 ### Sexual expression
 
@@ -102,7 +102,7 @@ No sexual behavior is established. A plausible model is measured, patient, and g
 
 ### With Helena
 
-He respects Helena, desires her, and can share a genuine domestic marriage while withholding the hidden architecture of MSF, the Magiarchy, and his succession plans. The tragedy is not that their closeness was false. It is that Fionn mistakes partial intimacy for sufficient partnership because he believes exclusion keeps her safe.
+He respects and desires Helena, and their domestic marriage contains genuine closeness. He still withholds the hidden structure of MSF, the Magiarchy, and his succession plans. Fionn believes this exclusion keeps her safe and fails to understand that Helena experiences it as proof that their marriage is incomplete.
 
 ### Writing guardrail
 
@@ -186,7 +186,7 @@ No romantic or sexual partner is established. His friendship with Lynleit is lon
 
 ### Writing guardrail
 
-Do not equate sternness with emotional dullness. Reiner's smallest voluntary tenderness should feel consequential because he does not distribute it casually.
+Reiner's sternness does not make him emotionally dull. Because he rarely displays tenderness, small voluntary gestures carry particular weight.
 
 ## Sherie
 
@@ -246,7 +246,7 @@ No romantic or sexual partner is established. Drake and Sherie are his principal
 
 ### Writing guardrail
 
-Do not use sex as an instant cure for trauma. Intimacy may reveal his grief or give him temporary rest, but it cannot erase the squad he lost.
+Sex does not cure Heyk's trauma. Intimacy may reveal his grief or give him temporary rest, but the loss of his squad remains with him.
 
 ## Natalia
 
@@ -274,7 +274,7 @@ Do not reduce independence to avoidance of attachment. Natalia can desire closen
 
 ### Natural approach
 
-Tien's work depends on concealment, clean separation, and control over what another person can know. Genuine intimacy would therefore create operational exposure as well as emotional risk. The useful question is not whether an assassin can feel desire, but what private information Tien would consider more dangerous than being physically seen.
+Tien's work depends on concealment, clean separation, and control over what another person can know. Genuine intimacy creates both operational exposure and emotional risk. Tien may find disclosure of private information more dangerous than physical exposure.
 
 ### Sexual expression
 
@@ -294,7 +294,7 @@ Do not use professional violence as automatic evidence of sexual dominance, crue
 
 ### Natural approach
 
-Lester's personhood is inseparable from the question of how human and Holumn conditions coexist within him. Intimacy could become one of the strongest tests of whether he experiences himself as a person who can be known, a danger that must be managed, or both.
+Lester's understanding of intimacy depends on how his human and Holumn conditions coexist. A close relationship would force him to confront whether he sees himself as a person who can be known, a danger that must be managed, or both.
 
 ### Sexual expression
 
@@ -373,8 +373,8 @@ Keep her bond with Natalia familial. Do not use the absence of a sexual profile 
 - Intimacy should alter access. After a meaningful encounter, somebody knows, trusts, fears, or can wound the other person differently.
 - Initiative is not a permanent rank. A character can lead one encounter and surrender control in another without changing personality.
 - Sexual intensity is not the same as aggression. Slow, rough, playful, urgent, and tender behavior each require mutual choice and character-specific meaning.
-- Aftercare is characterization. Remaining, withdrawing, speaking, securing the room, offering warmth, or returning to work can reveal more than the act itself.
+- A character's behavior afterward can be as revealing as the encounter. They may remain, withdraw, speak, secure the room, offer warmth, or return to work.
 - Functional trust should precede major thresholds. Shared work, danger, domestic routine, and protected secrets give physical intimacy narrative weight.
-- Pairings should create asymmetry without erasing either person. Each partner should give the other access to a strength, weakness, or form of rest unavailable elsewhere.
+- Each pairing should preserve both personalities. The partners may give one another access to a strength, weakness, or form of rest unavailable elsewhere.
 - Orientation, experience, and preference remain undefined unless established. Personality typing does not determine sexuality.
 - No intimate scene is required merely because two characters have chemistry. The scene belongs only when it changes the story or the writer's understanding of them.
