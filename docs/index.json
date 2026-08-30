@@ -1,5 +1,16 @@
 [
   {
+    "slug": "character-intimacy-and-sexuality",
+    "title": "Character Intimacy and Sexuality Reference",
+    "topic": "Writer's Character Reference",
+    "file": "character-intimacy-and-sexuality.md",
+    "updated": "2026-08-30",
+    "description": "A writer-facing reference for each character's approach to closeness, desire, sexual initiative, boundaries, and established or possible partner dynamics.",
+    "speakers": [
+      "Character Archive"
+    ]
+  },
+  {
     "slug": "holumn-incidents-and-testimonies",
     "title": "Holumn Incidents and Victim Testimonies",
     "topic": "Holumn Archive",
@@ -16,7 +27,7 @@
     "title": "Questions to Be Answered",
     "topic": "Editorial Ledger",
     "file": "questions-to-be-answered.md",
-    "updated": "2026-08-28",
+    "updated": "2026-08-30",
     "description": "Confidence-tracked current canon and chronology questions, separated to support both worldbuilding and timeline placement.",
     "speakers": [
       "Author's Desk"

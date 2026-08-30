@@ -9,6 +9,7 @@ Story, character, world, relationship, institution, location, and event question
 | Area | Question | Confidence |
 | --- | --- | --- |
 | Family | Which emotionally inconvenient but reliable distant relative receives Lynleit and Kyrien's son, and how much truth does that person know about his parents? | 0% |
+| Relationships | Which adult characters beyond Lynleit and Kyrien, Fionn and Helena, and the emerging Yulia and Hiyu bond have romantic or sexual histories that materially shape their present behavior? | 0% |
 | Holumn incident HI-001 | What does the voice want, and what changes when it stops copying the victim and begins speaking before the victim does? | 0% |
 | Holumn incident HI-002 | Who made or first completed the puzzle, how does its compulsion move between owners, and where does completion send its victims? | 0% |
 | Holumns | Can any victim taken by a Holumn return, and what would return mean for the person's identity? | 0% |
@@ -26,6 +27,8 @@ Story, character, world, relationship, institution, location, and event question
 | Institutions | What evidence does each institution possess, and how do the Police, Magi Academy, private investigators, and MSF reach incompatible but rational interpretations of the same crisis? | 5% |
 | Lester | Who knows that Lester is a demiholumn, and which factions would classify him as person, specimen, heresy, weapon, or kin? | 5% |
 | Natalia | What refusal line defines Natalia's consent and ethics more clearly than the cases she accepts? | 5% |
+| Fionn and Helena | Was their marriage still physically intimate near Fionn's death, and what private moment best shows that bodily closeness could not repair the trust he withheld? | 5% |
+| Yulia and Hiyu | Which event makes either of them consciously recognize investigative dependence as desire, and who first establishes a clear romantic boundary? | 5% |
 | The Church | What one narrow but terrifying authority is delegated to Father Mikhail, and what happens when that assignment crosses ordinary Church territories? | 5% |
 | River Holumns | Are the Drowned Chorus and the river leviathan separate Holumns, two expressions of one river-bound intelligence, or phenomena feeding from the same wound? | 5% |
 | Holumns | Where do Holumns take disappeared victims, and what evidence can reveal the destination without yet explaining the mechanism or possibility of return? | 5% |
