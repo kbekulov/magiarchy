@@ -11,6 +11,7 @@
 ## Product and design direction
 
 - Avoid prose that reads like an AI-generated soundbite. Do not use formulaic reversals, symmetrical slogans, vague profundity, self-congratulatory summaries, or generic dramatic conclusions. State the fact, mechanism, consequence, or writer guidance directly. Use contrast only when it communicates a necessary distinction that cannot be stated more plainly.
+- Across the entire archive, do not add contemporary compliance, policy, or institutional-SOP language for ordinary assumptions about consent, sexuality, adult conduct, interpersonal ethics, representation, or acceptable behavior. Mention such matters only when the author has established them as canon or a specific story conflict makes them relevant. Write about characters, relationships, and events as fiction, not as governance guidance.
 
 - Use a dark, flat, minimal palette inspired specifically by the Discord desktop app's UI/UX patterns (layered workspace panels, compact navigation, channel/member-list logic, and utility-first density), not Discord's marketing website, while keeping the visual identity original to Magiarchy.
 - Keep interactions professional and accessible, with smooth, restrained animations and a functional reduced-motion mode.

@@ -26,9 +26,9 @@ Story, character, world, relationship, institution, location, and event question
 | Magiarchy | Which church authorities recognized Fionn as Magiarch, and how do different Churches agree on his legitimacy while disagreeing about what it means? | 5% |
 | Institutions | What evidence does each institution possess, and how do the Police, Magi Academy, private investigators, and MSF reach incompatible but rational interpretations of the same crisis? | 5% |
 | Lester | Who knows that Lester is a demiholumn, and which factions would classify him as person, specimen, heresy, weapon, or kin? | 5% |
-| Natalia | What refusal line defines Natalia's consent and ethics more clearly than the cases she accepts? | 5% |
+| Natalia | What kind of case does Natalia refuse, and what does that refusal reveal about her priorities? | 5% |
 | Fionn and Helena | Was their marriage still physically intimate near Fionn's death, and what private moment best shows that bodily closeness could not repair the trust he withheld? | 5% |
-| Yulia and Hiyu | Which event makes either of them consciously recognize investigative dependence as desire, and who first establishes a clear romantic boundary? | 5% |
+| Yulia and Hiyu | Which event makes either of them consciously recognize investigative dependence as desire, and who first names what is happening between them? | 5% |
 | The Church | What one narrow but terrifying authority is delegated to Father Mikhail, and what happens when that assignment crosses ordinary Church territories? | 5% |
 | River Holumns | Are the Drowned Chorus and the river leviathan separate Holumns, two expressions of one river-bound intelligence, or phenomena feeding from the same wound? | 5% |
 | Holumns | Where do Holumns take disappeared victims, and what evidence can reveal the destination without yet explaining the mechanism or possibility of return? | 5% |

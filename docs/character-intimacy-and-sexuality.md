@@ -1,6 +1,6 @@
 # Character Intimacy and Sexuality Reference
 
-This writer-facing reference records how each character approaches affection, desire, sexual initiative, vulnerability, boundaries, and specific partners. Intimate scenes are useful when they expose guarded behavior, complicate an existing dependency, or change the trust between two people.
+This writer-facing reference records how each character approaches affection, desire, sexual initiative, vulnerability, and specific partners. Intimate scenes are useful when they expose guarded behavior, complicate an existing dependency, or change the trust between two people.
 
 ## How to read the profiles
 
@@ -8,9 +8,7 @@ This writer-facing reference records how each character approaches affection, de
 
 **Working interpretation** extends established personality into a plausible intimate pattern. It is guidance for writing, not confirmed canon, and may change when the character receives a fuller history or partner.
 
-**Unresolved** marks matters the archive does not yet know. Absence of information is not evidence of celibacy, heterosexuality, inexperience, or any other particular history.
-
-Sexual analysis is limited to characters who are clearly adults. Myka remains outside that analysis until her age and adult status are established. No profile should treat charm, flirtation, professional closeness, coercion, or emotional dependence as automatic consent.
+**Unresolved** marks matters the archive does not yet know.
 
 ## Lynleit
 
@@ -20,7 +18,7 @@ Sexual analysis is limited to characters who are clearly adults. Myka remains ou
 
 Lynleit approaches closeness through attention. She notices what another person needs, makes herself useful, and often assumes responsibility before admitting that she also wants comfort. Early intimacy therefore appears functional: keeping another person warm, remaining beside them after danger, offering shelter, or allowing them to witness an emotional collapse she would conceal in public.
 
-Once trust is secure, she becomes playful and more likely to initiate. She enjoys drawing a reaction from a reserved partner, but remains attentive to hesitation, changes in mood, and continued consent.
+Once trust is secure, she becomes playful and more likely to initiate. She enjoys drawing a reaction from a reserved partner and notices changes in mood quickly.
 
 ### Sexual expression
 
@@ -30,7 +28,7 @@ With familiarity, Lynleit becomes increasingly playful, openly desirous, and mor
 
 ### With Kyrien
 
-Kyrien first earns her trust when he witnesses her forbidden water walking and never uses the secret against her. He also shares warmth with her after the river incident without treating their physical closeness as sexual permission. Lynleit begins to see him differently because of this discretion.
+Kyrien first earns her trust when he witnesses her forbidden water walking and never uses the secret against her. He shares warmth with her after the river incident, does not sexualize the moment, and never mentions what he saw. Lynleit begins to see him differently because of this discretion.
 
 Lynleit later becomes the more frequent initiator. She can tease him, test his reserve, and express desire in ways that do not depend on a verbal response. Kyrien initiates less often, so his firm advances mark a change in their usual pattern. Her willingness to let him set the pace shows how much she trusts him.
 
@@ -48,7 +46,7 @@ Do not reduce Lynleit to a universally dominant seductress. Her initiative is me
 
 Kyrien treats intimacy as confidential knowledge. He does not speak or smile often, and he is more comfortable proving care through what he does not expose, what danger he prepares for, and whether he remains after he is no longer operationally necessary. He is slow to trust and unlikely to use confession as the first route into closeness.
 
-His quietness does not imply passivity or lack of desire. It means that attention, consent, and commitment are expressed through precise behavior. He notices exits, physical discomfort, changes in breathing, and the moment a partner stops performing composure. Remaining present is one of his strongest forms of affection.
+His quietness does not imply passivity or lack of desire. He expresses attention and commitment through precise behavior. He notices exits, physical discomfort, changes in breathing, and the moment a partner stops performing composure. Remaining present is one of his strongest forms of affection.
 
 ### Sexual expression
 
@@ -60,7 +58,7 @@ He expresses intensity through sustained attention instead of excessive speech o
 
 With Lynleit, Kyrien can respond to teasing without becoming defensive. He trusts her not to humiliate him for a visible reaction. His steadiness also lets her stop managing the emotional conditions around them.
 
-Their usual pattern places her in the initiating role and him in the attentive one. A later scene in which he chooses the pace should signal that he no longer experiences desire merely as something permitted by his handler and protector. It becomes a choice he is willing to own, with all the reciprocal risk his personal morality assigns to decisive action.
+Their usual pattern places her in the initiating role and him in the attentive one. A later scene in which he chooses the pace should show that he no longer experiences desire only as a response to Lynleit's initiative. He is willing to act on it with the same seriousness he brings to every decisive choice.
 
 ### Writing guardrail
 
@@ -98,7 +96,7 @@ Fionn shows care through provision, protection, and structure. He is emotionally
 
 ### Sexual expression
 
-No sexual behavior is established. A plausible model is measured, patient, and generous within boundaries he controls. The same composure that makes him reassuring may also prevent intimacy from reaching the part of him Helena most needs to know.
+No sexual behavior is established. A plausible model is measured, patient, and generous within emotional limits he controls. The same composure that makes him reassuring may also prevent intimacy from reaching the part of him Helena most needs to know.
 
 ### With Helena
 
@@ -122,7 +120,7 @@ No sexual encounter is established. A character-consistent approach would be qui
 
 ### With Hiyu
 
-Their attraction grows from repeated dependence between incompatible methods. Hiyu pulls her beyond established procedure, while she gives his ideas a survivable form. Yulia may recognize the danger of their emotional attachment before he recognizes the attachment itself. If they become sexual partners, she is likely to establish the first explicit boundary even if he produces the first accidental moment of closeness.
+Their attraction grows from repeated dependence between incompatible methods. Hiyu pulls her beyond established procedure, while she gives his ideas a survivable form. Yulia may recognize the emotional attachment first and is also more likely to speak plainly about what is happening between them.
 
 ### Writing guardrail
 
@@ -138,7 +136,7 @@ Hiyu notices intellectual fascination before romantic desire. He becomes depende
 
 ### Sexual expression
 
-No sexual encounter is established. He would likely bring curiosity, improvisation, and enthusiasm into physical intimacy, but his growth must include learning that attention is not the same as inference. A partner cannot be treated as another fascinating puzzle whose answer he is entitled to discover.
+No sexual encounter is established. He would likely bring curiosity, improvisation, and enthusiasm into physical intimacy. His habit of treating people as puzzles can make him misunderstand Yulia, so he must learn to listen when she is more direct than he is.
 
 ### With Yulia
 
@@ -146,7 +144,7 @@ Yulia is the person whose corrections he continues to seek even while complainin
 
 ### Writing guardrail
 
-Do not turn obliviousness into permission to ignore boundaries. His romantic charm depends on learning attention, not on being excused from it.
+His obliviousness should create misunderstandings without making him insensitive to Yulia.
 
 ## Felix
 
@@ -158,7 +156,7 @@ Felix uses flirtation as expression, play, social testing, and tension relief. T
 
 ### Sexual expression
 
-A working interpretation makes him playful, communicative, inventive, and comfortable initiating. His strongest boundary is the distinction between enjoying a reaction and knowingly exploiting one. A serious partner should eventually encounter the quieter loyalty beneath the troublemaker persona.
+A working interpretation makes him playful, communicative, inventive, and comfortable initiating. He enjoys provoking a reaction but does not want to exploit one. A serious partner should eventually encounter the quieter loyalty beneath the troublemaker persona.
 
 ### With a specific partner
 
@@ -178,7 +176,7 @@ Reiner expresses closeness through consistency, preparedness, and staying in pos
 
 ### Sexual expression
 
-No sexual behavior is established. A working interpretation makes him deliberate, private, and restrained. Clear consent and established expectations would matter to him, while impulsive ambiguity would be uncomfortable. The rare loss of composure should carry more meaning than elaborate display.
+No sexual behavior is established. A working interpretation makes him deliberate, private, and restrained. He prefers clear expectations and established trust, while impulsive ambiguity makes him uncomfortable. The rare loss of composure should carry more meaning than elaborate display.
 
 ### With a specific partner
 
@@ -226,7 +224,7 @@ No romantic or sexual partner is established. His closest confirmed bonds are th
 
 ### Writing guardrail
 
-Do not use social awkwardness to make him oblivious to consent or incapable of tenderness. His weakness is execution, not care or intelligence.
+Drake's social awkwardness affects timing and reassurance, not his ability to care for another person.
 
 ## Heyk
 
@@ -278,7 +276,7 @@ Tien's work depends on concealment, clean separation, and control over what anot
 
 ### Sexual expression
 
-No sexual behavior is established. Any interpretation should remain tentative until Tien's history, orientation, and boundaries are defined. A plausible pattern would separate controlled physical contact from the much rarer act of personal disclosure.
+No sexual behavior is established. Any interpretation should remain tentative until Tien's history and preferences are defined. A plausible pattern would separate controlled physical contact from the much rarer act of personal disclosure.
 
 ### With a specific partner
 
@@ -290,7 +288,7 @@ Do not use professional violence as automatic evidence of sexual dominance, crue
 
 ## Lester
 
-**Basis: Adult status and partner unresolved**
+**Basis: Personal and romantic history unresolved**
 
 ### Natural approach
 
@@ -298,7 +296,7 @@ Lester's understanding of intimacy depends on how his human and Holumn condition
 
 ### Sexual expression
 
-Sexual characterization should wait until his adulthood, bodily nature, agency, and capacity for ordinary human consent are established. His demiholumn condition must not be used as an excuse to exoticize him or bypass those questions.
+Sexual characterization should wait until his bodily nature, agency, and experience of human intimacy are established. His demiholumn condition must not become his entire sexual characterization.
 
 ### With a specific partner
 
@@ -350,7 +348,7 @@ Do not assume celibacy merely because he is called Father, and do not assume hyp
 
 ## Myka
 
-**Basis: Age and adult status unresolved**
+**Basis: Personal and romantic history unresolved**
 
 ### Natural approach to closeness
 
@@ -376,5 +374,4 @@ Keep her bond with Natalia familial. Do not use the absence of a sexual profile 
 - A character's behavior afterward can be as revealing as the encounter. They may remain, withdraw, speak, secure the room, offer warmth, or return to work.
 - Functional trust should precede major thresholds. Shared work, danger, domestic routine, and protected secrets give physical intimacy narrative weight.
 - Each pairing should preserve both personalities. The partners may give one another access to a strength, weakness, or form of rest unavailable elsewhere.
-- Orientation, experience, and preference remain undefined unless established. Personality typing does not determine sexuality.
 - No intimate scene is required merely because two characters have chemistry. The scene belongs only when it changes the story or the writer's understanding of them.
