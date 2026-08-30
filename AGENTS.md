@@ -10,6 +10,8 @@
 
 ## Product and design direction
 
+- Avoid prose that reads like an AI-generated soundbite. Do not use formulaic reversals, symmetrical slogans, vague profundity, self-congratulatory summaries, or generic dramatic conclusions. State the fact, mechanism, consequence, or writer guidance directly. Use contrast only when it communicates a necessary distinction that cannot be stated more plainly.
+
 - Use a dark, flat, minimal palette inspired specifically by the Discord desktop app's UI/UX patterns (layered workspace panels, compact navigation, channel/member-list logic, and utility-first density), not Discord's marketing website, while keeping the visual identity original to Magiarchy.
 - Keep interactions professional and accessible, with smooth, restrained animations and a functional reduced-motion mode.
 - Never use an em dash anywhere on the website, in metadata, or in repository-managed site content. Rewrite the sentence or use a comma, colon, parenthesis, or simple hyphen instead.

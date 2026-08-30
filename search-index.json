@@ -1,6 +1,6 @@
 {
-  "generated": "2026-08-30T11:35:55.835Z",
-  "count": 322,
+  "generated": "2026-08-30T12:47:56.677Z",
+  "count": 323,
   "entries": [
     {
       "id": "page-characters",
@@ -1377,6 +1377,14 @@
       "url": "index.html#update-weapon-hierarchy-blue-flame-and-ownership",
       "subtitle": "Home update feed",
       "text": "Archive Revision: Site update Home update feed AR Archive Revision 28 Aug 2026 · Arms, magecraft, and ownership The Ren Arms hierarchy now places Rook in the micro-compact role, Crow in the compact role, Raven in the full-size role, and Swan in the premium large-frame role. Blue flame now has a defined purpose against threats and barriers that ordinary weapons cannot resolve. Project ownership is also stated clearly as Kiril Bekulov & Co., owned by Kiril Bekulov. Review the revised pistol hierarchy →"
+    },
+    {
+      "id": "update-update-direct-prose-rule",
+      "title": "Archive Standard: Site update",
+      "type": "Update",
+      "url": "index.html#update-direct-prose-rule",
+      "subtitle": "Home update feed",
+      "text": "Archive Standard: Site update Home update feed PR Archive Standard 30 Aug 2026 · Prose rule Direct prose is now a permanent archive rule. Reader-facing records must avoid formulaic slogans, vague conclusions, and decorative contrasts, and state facts or writer guidance plainly. Browse the document archive →"
     },
     {
       "id": "update-update-editorial-question-audit",
