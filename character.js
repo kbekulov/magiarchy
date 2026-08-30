@@ -11,7 +11,7 @@ const profileSeeds = [
     equipment: [
       { label: 'Issued sidearm', title: 'Ren L17 "Sparrow"', meta: ['9×17 mm', 'Leather OWB holster', 'Right-handed draw'], detail: 'Lynleit carries the compact Sparrow in a snug leather outside-the-waistband holster centered just above her tailbone. A rightward cant lets her draw with her right hand. The pistol\'s small proportions and the long jackets or coats central to her wardrobe keep it concealed without disturbing her usual silhouette.', href: 'weapons.html#ren-l17-sparrow' }
     ],
-    personalitySummary: 'Lynleit studies hidden structures with private precision. Under pressure, she moves toward people, assumes responsibility, and measures strategy by its human consequences. She expresses warmth deliberately and pays close attention to the relationships around her.',
+    personalitySummary: 'Lynleit studies hidden structures with private precision, interprets present events through their future consequences, and builds contingencies around the people for whom she feels responsible. Under pressure, she moves toward those people and assumes responsibility for the human cost of her strategy.',
     traits: [
       { label: 'Relational leadership', score: 95, note: 'Her first instinct in crisis is to read trust, morale, legitimacy, shared burden, and the emotional field around her.' },
       { label: 'Strategic foresight', score: 92, note: 'Her unusually strong intuition identifies long-range patterns and what events are becoming before most people can name the change.' },
@@ -29,13 +29,13 @@ const profileSeeds = [
     beats: ['The Heir Apparent', 'The Accusation', 'Fugitive Counteroffensive', 'Hidden Pregnancy and Inquiry', 'Seen at the Mission Edge']
   },
   {
-    slug: 'kyrien', name: 'Kyrien', code: 'IND · 002', role: 'Independent operator and later MSF director', ageBand: 'Late twenties', factions: ['Independent', 'MSF'], affiliationTimeline: [{ name: 'Independent', stage: 'Opening' }, { name: 'MSF', stage: 'Later director' }], mbti: { type: 'INTJ', detail: 'strong Te', status: 'Confirmed' }, accent: 'amber', materialStatus: 'Canon traits + mock details',
+    slug: 'kyrien', name: 'Kyrien', code: 'IND · 002', role: 'Independent operator and later MSF director', ageBand: 'Late twenties', factions: ['Independent', 'MSF'], affiliationTimeline: [{ name: 'Independent', stage: 'Opening' }, { name: 'MSF', stage: 'Later director' }], mbti: { type: 'ISTP / INTJ', detail: 'Ti or Ni; ISTP lean', status: 'Provisional' }, accent: 'amber', materialStatus: 'Canon traits + mock details',
     summary: 'A quiet non-Magus shaped by an officer\'s ethics, a fugitive\'s instincts, and the conviction that force creates an equal claim against the person who uses it.',
     visual: 'Practical layers, concealed tools, and a silhouette built for movement', palette: 'Charcoal, muted amber, worn steel, off-white',
     personalitySummary: 'Kyrien speaks little and smiles less, yet he is intensely competitive. Cards, chess, an investigation, and a gunfight can all become contests he feels compelled to win. He accepts hard play, but reacts quickly when an opponent cheats, and that urge to punish unfairness can pull him away from the safer objective. His reserve comes from learned discipline and does not indicate emotional emptiness.',
     traits: [
       { label: 'Intelligence tradecraft', score: 97, note: 'He turns surveillance, deception, logistics, human behavior, and escape planning into a substitute for magical perception.' },
-      { label: 'Strategic adaptation', score: 94, note: 'His strong Te converts unfamiliar threats into usable procedures, leverage, and decisions that survive contact with reality.' },
+      { label: 'Strategic adaptation', score: 94, note: 'His practical reasoning converts unfamiliar threats into usable procedures, leverage, and decisions that survive contact with reality.' },
       { label: 'Survival discipline', score: 92, note: 'He does not try to overpower Magi. He stays difficult to locate, corner, deceive, or kill.' }
     ],
     tradecraft: [
@@ -56,25 +56,28 @@ const profileSeeds = [
     beats: ['Outside the System', 'Alliance under Pressure', 'The Director without Magecraft', 'The Secret Kept from Him']
   },
   {
-    slug: 'helena', name: 'Helena', code: 'MSF · 003', role: 'Political usurper', ageBand: 'Early forties', factions: ['MSF'], mbti: { type: 'XXTJ', status: 'Suspected' }, accent: 'red', materialStatus: 'Canon actions + mock details',
+    slug: 'helena', name: 'Helena', code: 'MSF · 003', role: 'Political usurper', ageBand: 'Early forties', factions: ['MSF'], mbti: { type: 'ENTJ', detail: 'strong Te', status: 'Confirmed' }, accent: 'red', materialStatus: 'Canon actions + mock details',
     summary: 'Fionn\'s wife and Lynleit\'s stepmother, Helena plays a major but still-undefined role in his assassination, converts the resulting vacuum into control of MSF, and frames his biological daughter.',
     visual: 'Severe tailoring, immaculate posture, and an intentionally unreadable expression', palette: 'Oxblood, black, ivory, muted gold', traits: ['Composed', 'Possessive', 'Calculating'],
+    personalitySummary: 'Helena measures people and institutions by what they can be made to accomplish. She searches for weak points, tightens hierarchy, removes obstacles, and acts directly once she decides that a structure has failed.',
     origin: 'Fionn genuinely respects Helena\'s intelligence but never trusts her with the deepest layer of his life. He believes compartmentalization protects his family. Helena experiences the same secrecy as proof that she was never truly his wife. Her grievance is legitimate even when the choices it produces become monstrous. She learns to read MSF as a hierarchy of loyalties and quietly probes Fionn\'s schedules, visitors to the family house, trusted officers, and Lynleit\'s travel, but never learns every protocol embedded by its founder.', rupture: 'Helena knowingly opens one door in the pressure against Fionn without understanding or controlling everything that will pass through it. Several incompatible agendas converge into his assassination, and her partial complicity creates the opening she uses to seize control, make Lynleit the official suspect, and direct the hunt for her arrest.', focus: 'Her authority depends on keeping the accusation intact while the investigation exposes layers of conspiracy that extend beyond her own knowledge and seizure of MSF. She knows neither the blue initiation signal nor the conversational challenge-response that authenticates it among Fionn\'s trusted officers.', future: 'Fionn\'s most conservative old officers notice the gap first. Helena can occupy the office, but strict obedience to the founder\'s private protocol gives his least rebellious officers a reason to disobey his official successor.',
     ally: 'Tien', allyNote: 'Her covert instrument when official authority is too visible or too slow.', rival: 'Lynleit', rivalNote: 'Her stepdaughter, Fionn\'s biological daughter, and the displaced heir whose survival threatens Helena\'s entire political structure.', goal: 'Hold MSF long enough to make her version of events irreversible.',
     beats: ['Reading the Institution', 'The Opening', 'Control through Accusation', 'A Throne under Pressure']
   },
   {
-    slug: 'tien', name: 'Tien', code: 'IND · 004', role: 'Mercenary assassin and secret bodyguard', factions: ['Independent'], mbti: { type: 'XXXX', status: 'Undiscussed' }, accent: 'violet', materialStatus: 'Canon role + mock details',
+    slug: 'tien', name: 'Tien', code: 'IND · 004', role: 'Mercenary assassin and secret bodyguard', factions: ['Independent'], mbti: { type: 'ISTP', detail: 'strong Se', status: 'Confirmed' }, accent: 'violet', materialStatus: 'Canon role + mock details',
     summary: 'A professional mercenary and assassin concealed by Helena as her private bodyguard, Tien removes her enemies quietly and cleanly.',
     visual: 'Low-profile fieldwear, obscured identifiers, and a deliberately forgettable outline', palette: 'Deep violet, graphite, smoke grey, black', traits: ['Silent', 'Precise', 'Relentless'],
+    personalitySummary: 'Tien trusts immediate perception and decisive movement. Danger sharpens rather than interrupts the work, and changing conditions become material for improvisation instead of reasons to pause.',
     origin: 'Tien works professionally as a mercenary and assassin whose cleanest assignments leave no visible author. Helena hires Tien secretly as her bodyguard and removal specialist, keeping the relationship concealed from the people around her.', rupture: 'Helena deploys Tien against Lynleit and Kyrien as MSF\'s internal conflict leaves official channels behind.', focus: 'Tien and Kyrien become direct operational rivals because both begin as concealed assets serving handlers with opposing interests. Their functions overlap, but Tien exists primarily to remove Helena\'s enemies quietly and cleanly.', future: 'Kyrien becomes evidence that similar methods can serve survival and intelligence rather than assassination, sharpening the personal and professional contrast between them.',
     ally: 'Helena', allyNote: 'Her handler, employer, and protected principal. Helena conceals Tien in much the same way Lynleit conceals Kyrien.', rival: 'Kyrien', rivalNote: 'A directly opposing secret operator whose function resembles Tien\'s without sharing the same purpose or methods.', goal: 'Protect Helena and remove her enemies without exposing either the assignment or the relationship.',
     beats: ['Work without a Record', 'Helena\'s Shadow', 'The Counter-Operator', 'No Safe Exit']
   },
   {
-    slug: 'fionn', name: 'Fionn', code: 'ARC · 005', role: 'Magiarch and MSF founder', ageBand: 'Late fifties', factions: ['MSF', 'Magiarchy'], mbti: { type: 'XXXX', status: 'Undiscussed' }, accent: 'neutral', materialStatus: 'Canon magecraft + mock details',
+    slug: 'fionn', name: 'Fionn', code: 'ARC · 005', role: 'Magiarch and MSF founder', ageBand: 'Late fifties', factions: ['MSF', 'Magiarchy'], mbti: { type: 'INTJ', detail: 'strong Ni', status: 'Confirmed' }, accent: 'neutral', materialStatus: 'Canon magecraft + mock details',
     summary: 'Lynleit\'s biological father, publicly the director of MSF and secretly the country\'s Magiarch, Fionn faces a foreign magical conflict disguised as political chaos inside Narvea.',
     visual: 'Formal authority softened by practical details and an old ceremonial restraint', palette: 'Stone, black, muted blue, antique brass', traits: ['Measured', 'Secretive', 'Responsible'],
+    personalitySummary: 'Fionn prepares for threats before other people can see their shape. He prefers hidden safeguards, indirect control, long-term containment, and institutions built to survive dangers that have not yet arrived.',
     residenceNote: 'The family house is also a discreet residential node for MSF, with offices and a library supporting selected work without replacing the formal headquarters in Turon.',
     magecraft: [
       { label: 'Hereditary magecraft', title: 'Blue flame', detail: 'Fionn carries the same lineage-bound blue flame later inherited by Lynleit. The flame is a family discipline with a broad range of applications.' },
@@ -87,36 +90,37 @@ const profileSeeds = [
     beats: ['Two Offices', 'The Hidden Purpose of MSF', 'Conflict behind the Mask', 'The Inheritance after Death']
   },
   {
-    slug: 'heyk', name: 'Heyk', code: 'FLD · 006', role: 'Ducal Guard field agent and bodyguard', ageBand: 'Mid-thirties', factions: ['Government'], mbti: { type: 'XSTJ', status: 'Suspected' }, accent: 'green', materialStatus: 'Canon role + mock details',
+    slug: 'heyk', name: 'Heyk', code: 'FLD · 006', role: 'Ducal Guard field agent and bodyguard', ageBand: 'Mid-thirties', factions: ['Government'], mbti: { type: 'ISTJ', detail: 'balanced Si-Te', status: 'Confirmed' }, accent: 'green', materialStatus: 'Canon role + mock details',
     summary: 'The sole survivor of a paramilitary unit massacred inside Vilen\'s quarantined park, later recruited into the Ducal Guard under Drake and Sherie.',
     visual: 'Field equipment adapted beyond regulation and kept ready for rapid extraction', palette: 'Dark green, utility black, concrete, signal orange', traits: ['Practical', 'Suspicious', 'Decisive'],
+    personalitySummary: 'Heyk relies on training, professional standards, and procedures proven under pressure. When a system fails, he looks first for the discipline, preparation, or institutional correction that could prevent the same loss from happening again.',
     origin: 'Captain Heyk enters the park at the head of a specially equipped paramilitary unit, expecting a material threat that disciplined preparation can survive.', rupture: 'Forces he cannot understand or explain massacre his squad. Heyk becomes the sole survivor and is briefly evacuated by the Ducal Guard under Drake\'s orders.', focus: 'Grief for the unit he lost becomes his primary motive. His survival also leaves him carrying an account that official language cannot make coherent.', future: 'Heyk is recruited into the Ducal Guard as a field agent and bodyguard, serving Drake and Sherie\'s interests while remaining personally bound to the unanswered deaths inside the park.',
     ally: 'Drake and Sherie', allyNote: 'Drake orders his evacuation, and both later rely on him as bodyguard, confidant, and field agent.', rival: 'The quarantine', rivalNote: 'The place that killed his unit and denied him any explanation adequate to their deaths.', goal: 'Serve Drake and Sherie while learning what massacred his squad and making his survival answer for something.',
     beats: ['Captain of the Unit', 'The Last Man out of the Park', 'Ducal Guard Evacuation', 'Field Agent and Bodyguard']
   },
   {
-    slug: 'sherie', name: 'Sherie', code: 'FLD · 007', role: 'Diplomat in training and covert negotiator', ageBand: 'Early twenties', factions: ['Government'], mbti: { type: 'EXFX', status: 'Suspected' }, accent: 'blue', materialStatus: 'Canon traits + mock details',
+    slug: 'sherie', name: 'Sherie', code: 'FLD · 007', role: 'Diplomat in training and covert negotiator', ageBand: 'Early twenties', factions: ['Government'], mbti: { type: 'ENFJ', detail: 'strong Fe', status: 'Confirmed' }, accent: 'blue', materialStatus: 'Canon traits + mock details',
     summary: 'Drake\'s niece and diplomatic apprentice, Sherie combines his strategic instruction with the charm and quick judgment he cannot easily bring into a room himself.',
     visual: 'Compact support gear, visible communications equipment, and a clean operational silhouette', palette: 'Navy, slate, white, emergency blue', traits: ['Charming', 'Quick-minded', 'Politically curious'],
-    personalitySummary: 'Sherie reads people quickly and adjusts without making the adjustment visible. Drake teaches her how institutions, leverage, and long strategy operate, while she compensates for his poor social instincts by turning difficult positions into conversations other people are willing to continue.',
+    personalitySummary: 'Sherie reads emotional atmosphere, relationships, and social position quickly. She draws information from people without making the extraction feel like an interrogation, then turns difficult positions into conversations they are willing to continue.',
     origin: 'Sherie trains under her uncle Drake to become a successful diplomat. Their age gap matters less than the complement between his strategic mind and her instinctive command of social atmosphere.', rupture: 'Drake\'s peers ridicule his warning and the Duke remains skeptical. Sherie believes her uncle, but rejects his decision to remain inside official limits and begins designing her own approach to Lynleit.', focus: 'The illegal MSF partnership is entirely Sherie\'s idea and strategy. She develops it against Drake\'s wishes, persuades him to attend, and takes command of the negotiations. In this specific diplomatic test, the student surpasses her teacher. Once it succeeds, she asks Drake to praise and pamper her for her first achievement.', future: 'The failed boat infiltration proves that the suspected coup cannot be understood as a purely political operation and gives her diplomatic training a conflict no normal protocol anticipated.',
     ally: 'Drake', allyNote: 'Her uncle, mentor, and strategic counterpart. He trains her for diplomacy, while her charm and quick mind carry them through situations his social skills cannot.', rival: 'Official oversight', rivalNote: 'The government and Ducal Court would end the partnership if either discovered it.', goal: 'Become a diplomat capable of turning Drake\'s strategic understanding into alliances, while tracing the suspected coup without exposing MSF cooperation.',
     beats: ['Diplomatic Apprenticeship', 'The Secret Proposal', 'Leading the Meeting', 'What the Boat Reveals']
   },
   {
-    slug: 'drake', name: 'Drake', code: 'FLD · 008', role: 'Official for Special Assignments', ageBand: 'Late thirties', factions: ['Government'], mbti: { type: 'XNTJ', status: 'Suspected' }, accent: 'amber', materialStatus: 'Canon traits + mock details',
+    slug: 'drake', name: 'Drake', code: 'FLD · 008', role: 'Official for Special Assignments', ageBand: 'Late thirties', factions: ['Government'], mbti: { type: 'INTJ', detail: 'strong Ni; notable Fi', status: 'Confirmed' }, accent: 'amber', materialStatus: 'Canon traits + mock details',
     summary: 'The story\'s primary strategic mind, Drake holds the rank of State Councillor and serves as an Official for Special Assignments with unusual access to the Duke.',
     visual: 'Formal field attire, restrained insignia, and an immaculate profile under pressure', palette: 'Black, burgundy, silver, muted amber', traits: ['Commanding', 'Disciplined', 'Skeptical'],
-    personalitySummary: 'Drake remains the story\'s main strategic thinker before and after Sherie\'s successful negotiation. His weakness is social execution, not strategic capacity. His niece can outperform him inside a room without replacing the larger intelligence, patience, and pattern recognition that make him central to the conspiracy investigation.',
+    personalitySummary: 'Drake is strategic, introspective, patient, and attentive to patterns that others dismiss. His loyalty to duty, legitimacy, and the ducal system is deeply personal. Sherie can outperform him inside a room, but she does not replace the larger strategic judgment that makes him central to the conspiracy investigation.',
     origin: 'Drake reaches the rank of State Councillor and serves as an Official for Special Assignments, an elite executive troubleshooter attached directly to a high-ranking personal office. Free from routine administration, he can carry delegated authority into confidential criminal inquiries, political counter-espionage, emergency audits, and diplomatic errands. His friendship with the Duke begins when Drake is the only official willing to tell him that he is wrong. The refusal to flatter earns a trust that later looks like pampering to hostile courtiers. He also trains his niece Sherie for diplomacy.', rupture: 'He reads the park disappearances as cover for illegal material movement, but his peers ridicule the theory and the Duke remains skeptical. The Court\'s existing resentment makes his warning easier to dismiss as another indulgence granted to a favorite.', focus: 'Drake opposes Sherie\'s illegal approach to Lynleit and does not design its strategy. On a hill overlooking Vilen, his apprentice leads the negotiation while he speaks reluctantly. Drake refuses to hand sensitive evidence outside his circle and instead seeks selected MSF resources in exchange for concessions or favors.', future: 'The failed boat infiltration opens his investigation toward a hidden force that political analysis alone cannot contain. Sherie\'s achievement expands his available options without displacing him as the story\'s primary strategic mind.',
     ally: 'Sherie', allyNote: 'His niece, diplomatic apprentice, first believer, and social counterpart. Her charm gives his strategic thinking a form other people can trust.', rival: 'The Ducal Court', rivalNote: 'Courtiers shun him as the Duke\'s pampered favorite, overlooking that he first earned the friendship by refusing to flatter the Duke.', goal: 'Locate the coup network, prepare Sherie for state diplomacy, and justify the Duke\'s trust without allowing friendship to become cover for his mistakes.',
     beats: ['A Coup without a Source', 'The Favorite Boy', 'The Illegal Partnership', 'The Boat below the Bridge']
   },
   {
-    slug: 'felix', name: 'Felix', code: 'ARC · 009', role: 'MSF officer, friend, and personal bodyguard', ageBand: 'Late twenties', factions: ['MSF'], mbti: { type: 'XXFP', status: 'Partial' }, accent: 'neutral', materialStatus: 'Canon relationship + mock details',
+    slug: 'felix', name: 'Felix', code: 'ARC · 009', role: 'MSF officer, friend, and personal bodyguard', ageBand: 'Late twenties', factions: ['MSF'], mbti: { type: 'ESFP', detail: 'strong Se-Fi', status: 'Confirmed' }, accent: 'neutral', materialStatus: 'Canon relationship + mock details',
     summary: 'Lynleit\'s playful friend and Fionn-trusted bodyguard, Felix specializes in hacking and communications, approaching operations like a knight that reaches its objective through unexpected angles.',
     visual: 'Loose fieldwear, fast movement, a compact communications kit, and one bright accent against neutral equipment', palette: 'Grey, black, bright blue, rust orange',
-    personalitySummary: 'Felix is playful, improvisational, flirtatious, and willing to test a rule simply to discover whether it deserves obedience. His technical work follows the same pattern. He prefers indirect entry, unusual routes, and sudden changes of angle, making him the knight to Reiner\'s rook.',
+    personalitySummary: 'Felix is playful, expressive, flirtatious, and quick to improvise. He reacts personally and immediately, then prefers direct relational repair once the conflict has passed. His technical work follows the same oblique pattern, making him the knight to Reiner\'s rook.',
     traits: [
       { label: 'Playful flirt', note: 'He turns tension into teasing, tests reactions openly, and treats charm as both genuine expression and useful disruption.' },
       { label: 'Troublemaker', note: 'Protocol invites experimentation. Felix is the first to lean over a boundary, question an order, or make a formal situation less dignified.' },
@@ -132,10 +136,10 @@ const profileSeeds = [
     beats: ['Friend and Bodyguard', 'The Secret Third Ally', 'No Trust for Kyrien', 'Loyalty after Fionn']
   },
   {
-    slug: 'reiner', name: 'Reiner', code: 'ARC · 010', role: 'MSF officer, friend, and personal bodyguard', factions: ['MSF'], mbti: { type: 'XSTJ', status: 'Partial' }, accent: 'neutral', materialStatus: 'Canon relationship + mock details',
+    slug: 'reiner', name: 'Reiner', code: 'ARC · 010', role: 'MSF officer, friend, and personal bodyguard', factions: ['MSF'], mbti: { type: 'ISTJ', detail: 'strong Si-Te', status: 'Confirmed' }, accent: 'neutral', materialStatus: 'Canon relationship + mock details',
     summary: 'Lynleit\'s stern friend and Fionn-trusted bodyguard, Reiner is a powerfully built brute-force specialist who holds the direct line like a rook.',
     visual: 'A powerful build, structured field clothing, reinforced equipment, and a deliberately immovable presence', palette: 'Graphite, ash, muted teal, paper white',
-    personalitySummary: 'Reiner is stern, procedural, controlled, and far more comfortable with a defined responsibility than an improvised excuse. He rarely smiles, which makes every small break in his composure unusually visible. Where Felix works around an obstacle, Reiner commits to the direct line and becomes the rook that holds or breaks it.',
+    personalitySummary: 'Reiner is stern, procedural, controlled, and anchored by role boundaries, chain of command, duty, and legitimate authority. He rarely smiles, which makes every small break in his composure unusually visible. Where Felix works around an obstacle, Reiner commits to the direct line and becomes the rook that holds or breaks it.',
     traits: [
       { label: 'Protocol-focused', note: 'He treats procedure as accumulated operational knowledge and notices quickly when others disregard it.' },
       { label: 'Severe composure', note: 'Reiner is restrained, difficult to fluster, and rarely seen smiling even among people he trusts.' },
@@ -151,7 +155,7 @@ const profileSeeds = [
     beats: ['Friend and Bodyguard', 'The Anti-Protocol Compartment', 'Trusting Lynleit', 'Watching Kyrien']
   },
   {
-    slug: 'yulia', name: 'Yulia', code: 'ARC · 011', role: 'Criminology student and procedural investigator', ageBand: 'Mid-twenties', factions: ['Independent'], mbti: { type: 'ISTJ', status: 'Confirmed' }, accent: 'neutral', materialStatus: 'Canon personality and relationship + mock visual details',
+    slug: 'yulia', name: 'Yulia', code: 'ARC · 011', role: 'Criminology student and procedural investigator', ageBand: 'Mid-twenties', factions: ['Independent'], mbti: { type: 'ISTJ', detail: 'strong Si', status: 'Confirmed' }, accent: 'neutral', materialStatus: 'Canon personality and relationship + mock visual details',
     summary: 'A top criminology student whose meticulous discipline makes her the evidentiary counterweight to Hiyu\'s wild inference, even when reluctant loyalty follows him into Vilen\'s quarantined park.',
     visual: 'Precise civilian layers, neatly organized study materials, and an attractive but severe presence whose expression rarely softens into a smile', palette: 'Cream, charcoal, muted red, pale gold',
     appearanceDetails: [
@@ -174,7 +178,7 @@ const profileSeeds = [
     beats: ['Top of the Class', 'Dragged into the Park', 'Proof without Protocol', 'Addicted to the Contrast']
   },
   {
-    slug: 'hiyu', name: 'Hiyu', code: 'ARC · 012', role: 'Criminology student and intuitive investigator', ageBand: 'Mid-twenties', factions: ['Independent'], mbti: { type: 'ENTP', status: 'Confirmed' }, accent: 'neutral', materialStatus: 'Canon personality and relationship + mock visual details',
+    slug: 'hiyu', name: 'Hiyu', code: 'ARC · 012', role: 'Criminology student and intuitive investigator', ageBand: 'Mid-twenties', factions: ['Independent'], mbti: { type: 'ENTP', detail: 'strong Ne', status: 'Confirmed' }, accent: 'neutral', materialStatus: 'Canon personality and relationship + mock visual details',
     summary: 'A criminology student whose restless pattern-making reaches the impossible possibility of magic, then carries him and Yulia into Vilen\'s quarantined park in search of proof.',
     visual: 'Soft civilian clothing, portable research tools stored wherever they fit, and the distracted posture of someone following an idea that has already left the room', palette: 'Black, soft blue, warm grey, white',
     appearanceDetails: [
@@ -197,10 +201,10 @@ const profileSeeds = [
     beats: ['The Impossible Theory', 'Beyond the Cordon', 'A Correct but Incomplete Hunch', 'Dependence without Recognition']
   },
   {
-    slug: 'natalia', name: 'Natalia', code: 'ARC · 013', role: 'Independent magical examiner and private investigator', ageBand: 'Late thirties', factions: ['Private Eye', 'Magiarchy', 'Magi Academy'], affiliationTimeline: [{ name: 'Magi Academy', stage: 'Former professor' }, { name: 'Private Eye', stage: 'Current sole proprietor' }, { name: 'Magiarchy', stage: 'Magus affiliation' }], mbti: { type: 'XXXX', status: 'Undiscussed' }, accent: 'neutral', materialStatus: 'Canon role + mock visual details',
+    slug: 'natalia', name: 'Natalia', code: 'ARC · 013', role: 'Independent magical examiner and private investigator', ageBand: 'Late thirties', factions: ['Private Eye', 'Magiarchy', 'Magi Academy'], affiliationTimeline: [{ name: 'Magi Academy', stage: 'Former professor' }, { name: 'Private Eye', stage: 'Current sole proprietor' }, { name: 'Magiarchy', stage: 'Magus affiliation' }], mbti: { type: 'INTP', detail: 'strong Ti', status: 'Confirmed' }, accent: 'neutral', materialStatus: 'Canon role + mock visual details',
     summary: 'A former Magi Academy professor who left a restrictive academic career to pursue independent research. Private cases fund that work, turning her one-woman office into a discreet practice for magical deviations, personal afflictions, and edge cases.',
     visual: 'Professional citywear, compact case tools, and magical details hidden in plain sight', palette: 'Black, wine red, parchment, muted violet',
-    personalitySummary: 'Natalia is a researcher first and a private investigator by necessity. She values intellectual autonomy above institutional standing. With unusual clients, she examines unstable talents, personal deviations, and magical conditions before deciding whether a crime has occurred.',
+    personalitySummary: 'Natalia is a researcher first and a private investigator by necessity. She protects her intellectual autonomy, builds her own analytical framework, and studies unusual systems without needing institutional agreement. With unusual clients, she examines unstable talents, personal deviations, and magical conditions before deciding whether a crime has occurred.',
     traits: [
       { label: 'Independent scholarship', note: 'She resigned from the Academy when its environment became too restrictive for the questions and methods she wanted to pursue.' },
       { label: 'Magical examination', note: 'She investigates people as readily as incidents, studying unusual magecraft, personal deviations, and conditions with a precision closer to a physician than a conventional detective.' },
@@ -214,10 +218,10 @@ const profileSeeds = [
     beats: ['Professor at the Academy', 'Scholarship without Permission', 'The Examiner for Hire', 'The Demiholumn Ally']
   },
   {
-    slug: 'lester', name: 'Lester', code: 'ARC · 014', role: 'Demiholumn and Natalia\'s outside ally', factions: ['Independent'], mbti: { type: 'XXXX', status: 'Undiscussed' }, accent: 'neutral', materialStatus: 'Canon nature + mock visual details',
+    slug: 'lester', name: 'Lester', code: 'ARC · 014', role: 'Demiholumn and Natalia\'s outside ally', factions: ['Independent'], mbti: { type: 'ESTP', detail: 'strong Se', status: 'Confirmed' }, accent: 'neutral', materialStatus: 'Canon nature + mock visual details',
     summary: 'A demiholumn, half human and half Holumn, who remains outside Natalia\'s one-woman business but sometimes does the impossible on her behalf.',
     visual: 'Weathered professional clothing, an outwardly human silhouette, and small visual irregularities that remain undefined', palette: 'Brown, charcoal, cream, faded green',
-    personalitySummary: 'Lester is an anomaly the hidden order does not yet explain: human enough to act as Natalia\'s trusted ally, Holumn enough to exceed ordinary limits. His exact capabilities, origin, and inner experience remain intentionally unresolved.',
+    personalitySummary: 'Lester seeks stimulation, novelty, conflict, and direct engagement with whatever stands in front of him. His appetite for immediate experience gives Natalia an ally willing to enter situations that scholarship alone cannot reach. His exact capabilities, origin, and inner experience remain unresolved.',
     traits: [
       { label: 'Impossible intervention', note: 'His part-Holumn nature can make an otherwise impossible task achievable for Natalia, although the mechanism and limits remain unknown.' },
       { label: 'Outside ally', note: 'He assists Natalia without joining her business. The distinction preserves the fact that her private office has only one employee.' },
@@ -233,7 +237,7 @@ const profileSeeds = [
     beats: ['Between Human and Holumn', 'Natalia\'s Outside Ally', 'The Impossible Favor', 'A Nature without an Explanation']
   },
   {
-    slug: 'myka', name: 'Myka', code: 'ARC · 015', role: 'Magi Academy student', factions: ['Magi Academy', 'Magiarchy'], mbti: { type: 'XXXX', status: 'Undiscussed' }, accent: 'neutral',
+    slug: 'myka', name: 'Myka', code: 'ARC · 015', role: 'Magi Academy student', factions: ['Magi Academy', 'Magiarchy'], mbti: { type: 'ISFP?', detail: 'possible strong Fi', status: 'Provisional' }, accent: 'neutral',
     summary: 'A young Magus studying at the Magi Academy who relies on her aunt Natalia for academic advice, personal reassurance, and a view of magical inquiry beyond institutional limits.',
     visual: 'Academic uniform elements, experimental accessories, and an expressive magical silhouette', palette: 'Indigo, cream, pale cyan, black', traits: ['Gifted', 'Earnest', 'Impulsive'],
     origin: 'Myka enters an Academy that functions as a public institution within Magi society. Magi families and lineages fund it so their children can succeed them, while acclaimed Magi who choose research and teaching serve as professors. Her aunt Natalia, a former professor, remains a constant source of advice and a personal connection to life beyond the institution.', rupture: 'The Spill turns distant doctrine into an immediate threat affecting people outside protected magical society.', focus: 'Talent creates pressure to act before training has taught the restraint that action requires. Myka turns to Natalia with questions about her studies, while Natalia reaches back to make sure the student is coping with more than coursework.', future: 'Protecting a surviving clue draws aunt and niece into a conflict far beyond the Academy\'s controlled exercises, testing whether their familial trust can survive the danger attached to Natalia\'s independent work.',
@@ -241,7 +245,7 @@ const profileSeeds = [
     beats: ['Learning the Structure', 'Advice beyond the Academy', 'A Clue Worth Protecting', 'Aunt and Niece in the Crisis']
   },
   {
-    slug: 'inspector-leo', name: 'Inspector Leo', code: 'PLC · 016', role: 'Police inspector', factions: ['Police'], mbti: { type: 'XSTJ', status: 'Suspected' }, accent: 'blue',
+    slug: 'inspector-leo', name: 'Inspector Leo', code: 'PLC · 016', role: 'Police inspector', factions: ['Police'], mbti: { type: 'XSTJ?', detail: 'possible Te', status: 'Provisional' }, accent: 'blue',
     summary: 'A police inspector whose missing-person investigation reaches the edge of a quarantine controlled by authorities above his clearance.',
     visual: 'Practical detective clothing, worn notebook, and restrained police identifiers', palette: 'Navy, grey, white, signal blue', traits: ['Tenacious', 'Procedural', 'Skeptical'],
     origin: 'Leo trusts patient interviews and the belief that every disappearance leaves a human trail.', rupture: 'Searchers vanish after entering the park, then the case is removed from police control under a government quarantine.', focus: 'Following procedure now means abandoning the investigation, while continuing it means challenging his own institution.', future: 'The Church and MSF each know more than they admit, leaving Leo to investigate the people controlling the answers.',
@@ -249,7 +253,7 @@ const profileSeeds = [
     beats: ['The Missing-Person Desk', 'Searchers Vanish Too', 'Locked outside the Quarantine', 'Investigating the Authorities']
   },
   {
-    slug: 'father-mikhail', name: 'Father Mikhail', code: 'CHR · 017', role: 'Church special envoy', factions: ['The Church'], mbti: { type: 'XXXX', status: 'Undiscussed' }, accent: 'neutral', materialStatus: 'Canon office + mock details',
+    slug: 'father-mikhail', name: 'Father Mikhail', code: 'CHR · 017', role: 'Church special envoy', factions: ['The Church'], mbti: { type: 'XNJ?', detail: 'possible Ni; INFJ lead', status: 'Provisional' }, accent: 'neutral', materialStatus: 'Canon office + mock details',
     summary: 'A confirmed special envoy whose priesthood provides public cover for restricted Church work. His exact specialization and delegated authority remain undefined.',
     visual: 'Understated clerical dress, old protective symbols, and no ornamental excess', palette: 'Black, stone, dull gold, deep red', traits: ['Disciplined', 'Compassionate', 'Severe'],
     origin: 'Mikhail is trained as a priest for public cover and as a special envoy for the restricted operational needs of Church leadership. His specialization and exact authority are not yet known.', rupture: 'The Spill creates suffering too visible to dismiss and too dangerous to explain openly.', focus: 'Protecting ordinary people may require cooperating with Magi the Church is prepared to condemn.', future: 'His choices place him between doctrine, institutional survival, and the individuals paying the price for both.',

@@ -1,6 +1,6 @@
 {
-  "generated": "2026-08-30T13:37:55.117Z",
-  "count": 324,
+  "generated": "2026-08-30T16:41:53.883Z",
+  "count": 325,
   "entries": [
     {
       "id": "page-characters",
@@ -96,7 +96,7 @@
       "type": "Character",
       "url": "character.html?character=drake",
       "subtitle": "Official for Special Assignments · Government",
-      "text": "Drake Official for Special Assignments · Government The story's primary strategic mind, Drake holds the rank of State Councillor and serves as an Official for Special Assignments with unusual access to the Duke. Late thirties XNTJ Suspected"
+      "text": "Drake Official for Special Assignments · Government The story's primary strategic mind, Drake holds the rank of State Councillor and serves as an Official for Special Assignments with unusual access to the Duke. Late thirties INTJ strong Ni; notable Fi Confirmed"
     },
     {
       "id": "character-father-mikhail",
@@ -104,7 +104,7 @@
       "type": "Character",
       "url": "character.html?character=father-mikhail",
       "subtitle": "Church special envoy · The Church",
-      "text": "Father Mikhail Church special envoy · The Church A confirmed special envoy whose priesthood provides public cover for restricted Church work. His exact specialization and delegated authority remain undefined. XXXX Undiscussed"
+      "text": "Father Mikhail Church special envoy · The Church A confirmed special envoy whose priesthood provides public cover for restricted Church work. His exact specialization and delegated authority remain undefined. XNJ? possible Ni; INFJ lead Provisional"
     },
     {
       "id": "character-felix",
@@ -112,7 +112,7 @@
       "type": "Character",
       "url": "character.html?character=felix",
       "subtitle": "MSF officer, friend, and personal bodyguard · MSF",
-      "text": "Felix MSF officer, friend, and personal bodyguard · MSF Lynleit's playful friend and Fionn-trusted bodyguard, Felix specializes in hacking and communications, approaching operations like a knight that reaches its objective through unexpected angles. Late twenties XXFP Partial"
+      "text": "Felix MSF officer, friend, and personal bodyguard · MSF Lynleit's playful friend and Fionn-trusted bodyguard, Felix specializes in hacking and communications, approaching operations like a knight that reaches its objective through unexpected angles. Late twenties ESFP strong Se-Fi Confirmed"
     },
     {
       "id": "character-fionn",
@@ -120,7 +120,7 @@
       "type": "Character",
       "url": "character.html?character=fionn",
       "subtitle": "Magiarch and MSF founder · MSF / Magiarchy",
-      "text": "Fionn Magiarch and MSF founder · MSF / Magiarchy Lynleit's biological father, publicly the director of MSF and secretly the country's Magiarch, Fionn faces a foreign magical conflict disguised as political chaos inside Narvea. Late fifties XXXX Undiscussed"
+      "text": "Fionn Magiarch and MSF founder · MSF / Magiarchy Lynleit's biological father, publicly the director of MSF and secretly the country's Magiarch, Fionn faces a foreign magical conflict disguised as political chaos inside Narvea. Late fifties INTJ strong Ni Confirmed"
     },
     {
       "id": "character-helena",
@@ -128,7 +128,7 @@
       "type": "Character",
       "url": "character.html?character=helena",
       "subtitle": "Political usurper · MSF",
-      "text": "Helena Political usurper · MSF Fionn's wife and Lynleit's stepmother, Helena plays a major but still-undefined role in his assassination, converts the resulting vacuum into control of MSF, and frames his biological daughter. Early forties XXTJ Suspected"
+      "text": "Helena Political usurper · MSF Fionn's wife and Lynleit's stepmother, Helena plays a major but still-undefined role in his assassination, converts the resulting vacuum into control of MSF, and frames his biological daughter. Early forties ENTJ strong Te Confirmed"
     },
     {
       "id": "character-heyk",
@@ -136,7 +136,7 @@
       "type": "Character",
       "url": "character.html?character=heyk",
       "subtitle": "Ducal Guard field agent and bodyguard · Government",
-      "text": "Heyk Ducal Guard field agent and bodyguard · Government The sole survivor of a paramilitary unit massacred inside Vilen's quarantined park, later recruited into the Ducal Guard under Drake and Sherie. Mid-thirties XSTJ Suspected"
+      "text": "Heyk Ducal Guard field agent and bodyguard · Government The sole survivor of a paramilitary unit massacred inside Vilen's quarantined park, later recruited into the Ducal Guard under Drake and Sherie. Mid-thirties ISTJ balanced Si-Te Confirmed"
     },
     {
       "id": "character-hiyu",
@@ -144,7 +144,7 @@
       "type": "Character",
       "url": "character.html?character=hiyu",
       "subtitle": "Criminology student and intuitive investigator · Independent",
-      "text": "Hiyu Criminology student and intuitive investigator · Independent A criminology student whose restless pattern-making reaches the impossible possibility of magic, then carries him and Yulia into Vilen's quarantined park in search of proof. Mid-twenties ENTP Confirmed"
+      "text": "Hiyu Criminology student and intuitive investigator · Independent A criminology student whose restless pattern-making reaches the impossible possibility of magic, then carries him and Yulia into Vilen's quarantined park in search of proof. Mid-twenties ENTP strong Ne Confirmed"
     },
     {
       "id": "character-inspector-leo",
@@ -152,7 +152,7 @@
       "type": "Character",
       "url": "character.html?character=inspector-leo",
       "subtitle": "Police inspector · Police",
-      "text": "Inspector Leo Police inspector · Police A police inspector whose missing-person investigation reaches the edge of a quarantine controlled by authorities above his clearance. XSTJ Suspected"
+      "text": "Inspector Leo Police inspector · Police A police inspector whose missing-person investigation reaches the edge of a quarantine controlled by authorities above his clearance. XSTJ? possible Te Provisional"
     },
     {
       "id": "character-kyrien",
@@ -160,7 +160,7 @@
       "type": "Character",
       "url": "character.html?character=kyrien",
       "subtitle": "Independent operator and later MSF director · Independent / MSF",
-      "text": "Kyrien Independent operator and later MSF director · Independent / MSF A quiet non-Magus shaped by an officer's ethics, a fugitive's instincts, and the conviction that force creates an equal claim against the person who uses it. Late twenties INTJ strong Te Confirmed"
+      "text": "Kyrien Independent operator and later MSF director · Independent / MSF A quiet non-Magus shaped by an officer's ethics, a fugitive's instincts, and the conviction that force creates an equal claim against the person who uses it. Late twenties ISTP / INTJ Ti or Ni; ISTP lean Provisional"
     },
     {
       "id": "character-lester",
@@ -168,7 +168,7 @@
       "type": "Character",
       "url": "character.html?character=lester",
       "subtitle": "Demiholumn and Natalia's outside ally · Independent",
-      "text": "Lester Demiholumn and Natalia's outside ally · Independent A demiholumn, half human and half Holumn, who remains outside Natalia's one-woman business but sometimes does the impossible on her behalf. XXXX Undiscussed"
+      "text": "Lester Demiholumn and Natalia's outside ally · Independent A demiholumn, half human and half Holumn, who remains outside Natalia's one-woman business but sometimes does the impossible on her behalf. ESTP strong Se Confirmed"
     },
     {
       "id": "character-lynleit",
@@ -184,7 +184,7 @@
       "type": "Character",
       "url": "character.html?character=myka",
       "subtitle": "Magi Academy student · Magi Academy / Magiarchy",
-      "text": "Myka Magi Academy student · Magi Academy / Magiarchy A young Magus studying at the Magi Academy who relies on her aunt Natalia for academic advice, personal reassurance, and a view of magical inquiry beyond institutional limits. XXXX Undiscussed"
+      "text": "Myka Magi Academy student · Magi Academy / Magiarchy A young Magus studying at the Magi Academy who relies on her aunt Natalia for academic advice, personal reassurance, and a view of magical inquiry beyond institutional limits. ISFP? possible strong Fi Provisional"
     },
     {
       "id": "character-natalia",
@@ -192,7 +192,7 @@
       "type": "Character",
       "url": "character.html?character=natalia",
       "subtitle": "Independent magical examiner and private investigator · Private Eye / Magiarchy / Magi Academy",
-      "text": "Natalia Independent magical examiner and private investigator · Private Eye / Magiarchy / Magi Academy A former Magi Academy professor who left a restrictive academic career to pursue independent research. Private cases fund that work, turning her one-woman office into a discreet practice for magical deviations, personal afflictions, and edge cases. Late thirties XXXX Undiscussed"
+      "text": "Natalia Independent magical examiner and private investigator · Private Eye / Magiarchy / Magi Academy A former Magi Academy professor who left a restrictive academic career to pursue independent research. Private cases fund that work, turning her one-woman office into a discreet practice for magical deviations, personal afflictions, and edge cases. Late thirties INTP strong Ti Confirmed"
     },
     {
       "id": "character-reiner",
@@ -200,7 +200,7 @@
       "type": "Character",
       "url": "character.html?character=reiner",
       "subtitle": "MSF officer, friend, and personal bodyguard · MSF",
-      "text": "Reiner MSF officer, friend, and personal bodyguard · MSF Lynleit's stern friend and Fionn-trusted bodyguard, Reiner is a powerfully built brute-force specialist who holds the direct line like a rook. XSTJ Partial"
+      "text": "Reiner MSF officer, friend, and personal bodyguard · MSF Lynleit's stern friend and Fionn-trusted bodyguard, Reiner is a powerfully built brute-force specialist who holds the direct line like a rook. ISTJ strong Si-Te Confirmed"
     },
     {
       "id": "character-sherie",
@@ -208,7 +208,7 @@
       "type": "Character",
       "url": "character.html?character=sherie",
       "subtitle": "Diplomat in training and covert negotiator · Government",
-      "text": "Sherie Diplomat in training and covert negotiator · Government Drake's niece and diplomatic apprentice, Sherie combines his strategic instruction with the charm and quick judgment he cannot easily bring into a room himself. Early twenties EXFX Suspected"
+      "text": "Sherie Diplomat in training and covert negotiator · Government Drake's niece and diplomatic apprentice, Sherie combines his strategic instruction with the charm and quick judgment he cannot easily bring into a room himself. Early twenties ENFJ strong Fe Confirmed"
     },
     {
       "id": "character-tien",
@@ -216,7 +216,7 @@
       "type": "Character",
       "url": "character.html?character=tien",
       "subtitle": "Mercenary assassin and secret bodyguard · Independent",
-      "text": "Tien Mercenary assassin and secret bodyguard · Independent A professional mercenary and assassin concealed by Helena as her private bodyguard, Tien removes her enemies quietly and cleanly. XXXX Undiscussed"
+      "text": "Tien Mercenary assassin and secret bodyguard · Independent A professional mercenary and assassin concealed by Helena as her private bodyguard, Tien removes her enemies quietly and cleanly. ISTP strong Se Confirmed"
     },
     {
       "id": "character-yulia",
@@ -224,7 +224,7 @@
       "type": "Character",
       "url": "character.html?character=yulia",
       "subtitle": "Criminology student and procedural investigator · Independent",
-      "text": "Yulia Criminology student and procedural investigator · Independent A top criminology student whose meticulous discipline makes her the evidentiary counterweight to Hiyu's wild inference, even when reluctant loyalty follows him into Vilen's quarantined park. Mid-twenties ISTJ Confirmed"
+      "text": "Yulia Criminology student and procedural investigator · Independent A top criminology student whose meticulous discipline makes her the evidentiary counterweight to Hiyu's wild inference, even when reluctant loyalty follows him into Vilen's quarantined park. Mid-twenties ISTJ strong Si Confirmed"
     },
     {
       "id": "character-drake-appearance",
@@ -272,7 +272,7 @@
       "type": "Character section",
       "url": "character.html?character=drake#personality-title",
       "subtitle": "Official for Special Assignments",
-      "text": "Drake: Strengths and weaknesses Official for Special Assignments Drake remains the story's main strategic thinker before and after Sherie's successful negotiation. His weakness is social execution, not strategic capacity. His niece can outperform him inside a room without replacing the larger intelligence, patience, and pattern recognition that make him central to the conspiracy investigation. Commanding Disciplined Skeptical XNTJ Suspected Drake"
+      "text": "Drake: Strengths and weaknesses Official for Special Assignments Drake is strategic, introspective, patient, and attentive to patterns that others dismiss. His loyalty to duty, legitimacy, and the ducal system is deeply personal. Sherie can outperform him inside a room, but she does not replace the larger strategic judgment that makes him central to the conspiracy investigation. Commanding Disciplined Skeptical INTJ strong Ni; notable Fi Confirmed Drake"
     },
     {
       "id": "character-father-mikhail-appearance",
@@ -320,7 +320,7 @@
       "type": "Character section",
       "url": "character.html?character=father-mikhail#personality-title",
       "subtitle": "Church special envoy",
-      "text": "Father Mikhail: Strengths and weaknesses Church special envoy Disciplined Compassionate Severe XXXX Undiscussed Father Mikhail"
+      "text": "Father Mikhail: Strengths and weaknesses Church special envoy Disciplined Compassionate Severe XNJ? possible Ni; INFJ lead Provisional Father Mikhail"
     },
     {
       "id": "character-felix-appearance",
@@ -368,7 +368,7 @@
       "type": "Character section",
       "url": "character.html?character=felix#personality-title",
       "subtitle": "MSF officer, friend, and personal bodyguard",
-      "text": "Felix: Strengths and weaknesses MSF officer, friend, and personal bodyguard Felix is playful, improvisational, flirtatious, and willing to test a rule simply to discover whether it deserves obedience. His technical work follows the same pattern. He prefers indirect entry, unusual routes, and sudden changes of angle, making him the knight to Reiner's rook. Playful flirt He turns tension into teasing, tests reactions openly, and treats charm as both genuine expression and useful disruption. Troublemaker Protocol invites experimentation. Felix is the first to lean over a boundary, question an order, or make a formal situation less dignified. Personal loyalty His casual manner does not weaken his reliability. Friendship makes his protection of Lynleit more personal, not less serious. XXFP Partial Felix"
+      "text": "Felix: Strengths and weaknesses MSF officer, friend, and personal bodyguard Felix is playful, expressive, flirtatious, and quick to improvise. He reacts personally and immediately, then prefers direct relational repair once the conflict has passed. His technical work follows the same oblique pattern, making him the knight to Reiner's rook. Playful flirt He turns tension into teasing, tests reactions openly, and treats charm as both genuine expression and useful disruption. Troublemaker Protocol invites experimentation. Felix is the first to lean over a boundary, question an order, or make a formal situation less dignified. Personal loyalty His casual manner does not weaken his reliability. Friendship makes his protection of Lynleit more personal, not less serious. ESFP strong Se-Fi Confirmed Felix"
     },
     {
       "id": "character-felix-tradecraft",
@@ -432,7 +432,7 @@
       "type": "Character section",
       "url": "character.html?character=fionn#personality-title",
       "subtitle": "Magiarch and MSF founder",
-      "text": "Fionn: Strengths and weaknesses Magiarch and MSF founder Measured Secretive Responsible XXXX Undiscussed Fionn"
+      "text": "Fionn: Strengths and weaknesses Magiarch and MSF founder Fionn prepares for threats before other people can see their shape. He prefers hidden safeguards, indirect control, long-term containment, and institutions built to survive dangers that have not yet arrived. Measured Secretive Responsible INTJ strong Ni Confirmed Fionn"
     },
     {
       "id": "character-helena-appearance",
@@ -480,7 +480,7 @@
       "type": "Character section",
       "url": "character.html?character=helena#personality-title",
       "subtitle": "Political usurper",
-      "text": "Helena: Strengths and weaknesses Political usurper Composed Possessive Calculating XXTJ Suspected Helena"
+      "text": "Helena: Strengths and weaknesses Political usurper Helena measures people and institutions by what they can be made to accomplish. She searches for weak points, tightens hierarchy, removes obstacles, and acts directly once she decides that a structure has failed. Composed Possessive Calculating ENTJ strong Te Confirmed Helena"
     },
     {
       "id": "character-heyk-appearance",
@@ -528,7 +528,7 @@
       "type": "Character section",
       "url": "character.html?character=heyk#personality-title",
       "subtitle": "Ducal Guard field agent and bodyguard",
-      "text": "Heyk: Strengths and weaknesses Ducal Guard field agent and bodyguard Practical Suspicious Decisive XSTJ Suspected Heyk"
+      "text": "Heyk: Strengths and weaknesses Ducal Guard field agent and bodyguard Heyk relies on training, professional standards, and procedures proven under pressure. When a system fails, he looks first for the discipline, preparation, or institutional correction that could prevent the same loss from happening again. Practical Suspicious Decisive ISTJ balanced Si-Te Confirmed Heyk"
     },
     {
       "id": "character-hiyu-appearance",
@@ -576,7 +576,7 @@
       "type": "Character section",
       "url": "character.html?character=hiyu#personality-title",
       "subtitle": "Criminology student and intuitive investigator",
-      "text": "Hiyu: Strengths and weaknesses Criminology student and intuitive investigator Hiyu is driven by possibility, contradiction, and the pleasure of making an unlikely pattern click. He constantly experiences eureka moments, builds protocols while using them, and abandons a clean path as soon as a stranger one becomes interesting. He has a reputation for ignoring women because ideas consume his attention so completely. This also leaves him oblivious to the romantic tension slowly forming with Yulia. Divergent inference He can connect fragments through possibilities other investigators reject too early, which is how a non-Magus with no knowledge of magic nevertheless suspects it. Improvised method Hiyu invents investigative procedures in response to the problem in front of him, making him flexible where Yulia is disciplined and unreliable where she is exact. Dangerous conviction A brilliant possibility becomes a plan before he has established whether the environment is survivable. Partial success makes him even more reckless. ENTP Confirmed Hiyu"
+      "text": "Hiyu: Strengths and weaknesses Criminology student and intuitive investigator Hiyu is driven by possibility, contradiction, and the pleasure of making an unlikely pattern click. He constantly experiences eureka moments, builds protocols while using them, and abandons a clean path as soon as a stranger one becomes interesting. He has a reputation for ignoring women because ideas consume his attention so completely. This also leaves him oblivious to the romantic tension slowly forming with Yulia. Divergent inference He can connect fragments through possibilities other investigators reject too early, which is how a non-Magus with no knowledge of magic nevertheless suspects it. Improvised method Hiyu invents investigative procedures in response to the problem in front of him, making him flexible where Yulia is disciplined and unreliable where she is exact. Dangerous conviction A brilliant possibility becomes a plan before he has established whether the environment is survivable. Partial success makes him even more reckless. ENTP strong Ne Confirmed Hiyu"
     },
     {
       "id": "character-hiyu-tradecraft",
@@ -632,7 +632,7 @@
       "type": "Character section",
       "url": "character.html?character=inspector-leo#personality-title",
       "subtitle": "Police inspector",
-      "text": "Inspector Leo: Strengths and weaknesses Police inspector Tenacious Procedural Skeptical XSTJ Suspected Inspector Leo"
+      "text": "Inspector Leo: Strengths and weaknesses Police inspector Tenacious Procedural Skeptical XSTJ? possible Te Provisional Inspector Leo"
     },
     {
       "id": "character-kyrien-appearance",
@@ -680,7 +680,7 @@
       "type": "Character section",
       "url": "character.html?character=kyrien#personality-title",
       "subtitle": "Independent operator and later MSF director",
-      "text": "Kyrien: Strengths and weaknesses Independent operator and later MSF director Kyrien speaks little and smiles less, yet he is intensely competitive. Cards, chess, an investigation, and a gunfight can all become contests he feels compelled to win. He accepts hard play, but reacts quickly when an opponent cheats, and that urge to punish unfairness can pull him away from the safer objective. His reserve comes from learned discipline and does not indicate emotional emptiness. Intelligence tradecraft 97 He turns surveillance, deception, logistics, human behavior, and escape planning into a substitute for magical perception. Strategic adaptation 94 His strong Te converts unfamiliar threats into usable procedures, leverage, and decisions that survive contact with reality. Survival discipline 92 He does not try to overpower Magi. He stays difficult to locate, corner, deceive, or kill. INTJ strong Te Confirmed Kyrien"
+      "text": "Kyrien: Strengths and weaknesses Independent operator and later MSF director Kyrien speaks little and smiles less, yet he is intensely competitive. Cards, chess, an investigation, and a gunfight can all become contests he feels compelled to win. He accepts hard play, but reacts quickly when an opponent cheats, and that urge to punish unfairness can pull him away from the safer objective. His reserve comes from learned discipline and does not indicate emotional emptiness. Intelligence tradecraft 97 He turns surveillance, deception, logistics, human behavior, and escape planning into a substitute for magical perception. Strategic adaptation 94 His practical reasoning converts unfamiliar threats into usable procedures, leverage, and decisions that survive contact with reality. Survival discipline 92 He does not try to overpower Magi. He stays difficult to locate, corner, deceive, or kill. ISTP / INTJ Ti or Ni; ISTP lean Provisional Kyrien"
     },
     {
       "id": "character-kyrien-tradecraft",
@@ -744,7 +744,7 @@
       "type": "Character section",
       "url": "character.html?character=lester#personality-title",
       "subtitle": "Demiholumn and Natalia's outside ally",
-      "text": "Lester: Strengths and weaknesses Demiholumn and Natalia's outside ally Lester is an anomaly the hidden order does not yet explain: human enough to act as Natalia's trusted ally, Holumn enough to exceed ordinary limits. His exact capabilities, origin, and inner experience remain intentionally unresolved. Impossible intervention His part-Holumn nature can make an otherwise impossible task achievable for Natalia, although the mechanism and limits remain unknown. Outside ally He assists Natalia without joining her business. The distinction preserves the fact that her private office has only one employee. Unclassified existence Neither the human nor Holumn half currently explains the whole person, leaving his place in the hidden world uncertain. XXXX Undiscussed Lester"
+      "text": "Lester: Strengths and weaknesses Demiholumn and Natalia's outside ally Lester seeks stimulation, novelty, conflict, and direct engagement with whatever stands in front of him. His appetite for immediate experience gives Natalia an ally willing to enter situations that scholarship alone cannot reach. His exact capabilities, origin, and inner experience remain unresolved. Impossible intervention His part-Holumn nature can make an otherwise impossible task achievable for Natalia, although the mechanism and limits remain unknown. Outside ally He assists Natalia without joining her business. The distinction preserves the fact that her private office has only one employee. Unclassified existence Neither the human nor Holumn half currently explains the whole person, leaving his place in the hidden world uncertain. ESTP strong Se Confirmed Lester"
     },
     {
       "id": "character-lynleit-appearance",
@@ -808,7 +808,7 @@
       "type": "Character section",
       "url": "character.html?character=lynleit#personality-title",
       "subtitle": "Fionn's biological daughter and displaced heir",
-      "text": "Lynleit: Strengths and weaknesses Fionn's biological daughter and displaced heir Lynleit studies hidden structures with private precision. Under pressure, she moves toward people, assumes responsibility, and measures strategy by its human consequences. She expresses warmth deliberately and pays close attention to the relationships around her. Relational leadership 95 Her first instinct in crisis is to read trust, morale, legitimacy, shared burden, and the emotional field around her. Strategic foresight 92 Her unusually strong intuition identifies long-range patterns and what events are becoming before most people can name the change. Private introspection 86 In private she is comfortable disappearing into solitude, following symbolic threads, and processing difficult emotion internally. ENFJ strong Ni Confirmed Lynleit"
+      "text": "Lynleit: Strengths and weaknesses Fionn's biological daughter and displaced heir Lynleit studies hidden structures with private precision, interprets present events through their future consequences, and builds contingencies around the people for whom she feels responsible. Under pressure, she moves toward those people and assumes responsibility for the human cost of her strategy. Relational leadership 95 Her first instinct in crisis is to read trust, morale, legitimacy, shared burden, and the emotional field around her. Strategic foresight 92 Her unusually strong intuition identifies long-range patterns and what events are becoming before most people can name the change. Private introspection 86 In private she is comfortable disappearing into solitude, following symbolic threads, and processing difficult emotion internally. ENFJ strong Ni Confirmed Lynleit"
     },
     {
       "id": "character-myka-appearance",
@@ -856,7 +856,7 @@
       "type": "Character section",
       "url": "character.html?character=myka#personality-title",
       "subtitle": "Magi Academy student",
-      "text": "Myka: Strengths and weaknesses Magi Academy student Gifted Earnest Impulsive XXXX Undiscussed Myka"
+      "text": "Myka: Strengths and weaknesses Magi Academy student Gifted Earnest Impulsive ISFP? possible strong Fi Provisional Myka"
     },
     {
       "id": "character-natalia-appearance",
@@ -904,7 +904,7 @@
       "type": "Character section",
       "url": "character.html?character=natalia#personality-title",
       "subtitle": "Independent magical examiner and private investigator",
-      "text": "Natalia: Strengths and weaknesses Independent magical examiner and private investigator Natalia is a researcher first and a private investigator by necessity. She values intellectual autonomy above institutional standing. With unusual clients, she examines unstable talents, personal deviations, and magical conditions before deciding whether a crime has occurred. Independent scholarship She resigned from the Academy when its environment became too restrictive for the questions and methods she wanted to pursue. Magical examination She investigates people as readily as incidents, studying unusual magecraft, personal deviations, and conditions with a precision closer to a physician than a conventional detective. Selective casework The business has one employee: Natalia. Paid cases finance her research and let her choose which clients, risks, and secrets enter her office. XXXX Undiscussed Natalia"
+      "text": "Natalia: Strengths and weaknesses Independent magical examiner and private investigator Natalia is a researcher first and a private investigator by necessity. She protects her intellectual autonomy, builds her own analytical framework, and studies unusual systems without needing institutional agreement. With unusual clients, she examines unstable talents, personal deviations, and magical conditions before deciding whether a crime has occurred. Independent scholarship She resigned from the Academy when its environment became too restrictive for the questions and methods she wanted to pursue. Magical examination She investigates people as readily as incidents, studying unusual magecraft, personal deviations, and conditions with a precision closer to a physician than a conventional detective. Selective casework The business has one employee: Natalia. Paid cases finance her research and let her choose which clients, risks, and secrets enter her office. INTP strong Ti Confirmed Natalia"
     },
     {
       "id": "character-reiner-appearance",
@@ -952,7 +952,7 @@
       "type": "Character section",
       "url": "character.html?character=reiner#personality-title",
       "subtitle": "MSF officer, friend, and personal bodyguard",
-      "text": "Reiner: Strengths and weaknesses MSF officer, friend, and personal bodyguard Reiner is stern, procedural, controlled, and far more comfortable with a defined responsibility than an improvised excuse. He rarely smiles, which makes every small break in his composure unusually visible. Where Felix works around an obstacle, Reiner commits to the direct line and becomes the rook that holds or breaks it. Protocol-focused He treats procedure as accumulated operational knowledge and notices quickly when others disregard it. Severe composure Reiner is restrained, difficult to fluster, and rarely seen smiling even among people he trusts. Reliable protection He expresses friendship through preparation, consistency, and remaining exactly where Lynleit needs him to be. XSTJ Partial Reiner"
+      "text": "Reiner: Strengths and weaknesses MSF officer, friend, and personal bodyguard Reiner is stern, procedural, controlled, and anchored by role boundaries, chain of command, duty, and legitimate authority. He rarely smiles, which makes every small break in his composure unusually visible. Where Felix works around an obstacle, Reiner commits to the direct line and becomes the rook that holds or breaks it. Protocol-focused He treats procedure as accumulated operational knowledge and notices quickly when others disregard it. Severe composure Reiner is restrained, difficult to fluster, and rarely seen smiling even among people he trusts. Reliable protection He expresses friendship through preparation, consistency, and remaining exactly where Lynleit needs him to be. ISTJ strong Si-Te Confirmed Reiner"
     },
     {
       "id": "character-reiner-tradecraft",
@@ -1008,7 +1008,7 @@
       "type": "Character section",
       "url": "character.html?character=sherie#personality-title",
       "subtitle": "Diplomat in training and covert negotiator",
-      "text": "Sherie: Strengths and weaknesses Diplomat in training and covert negotiator Sherie reads people quickly and adjusts without making the adjustment visible. Drake teaches her how institutions, leverage, and long strategy operate, while she compensates for his poor social instincts by turning difficult positions into conversations other people are willing to continue. Charming Quick-minded Politically curious EXFX Suspected Sherie"
+      "text": "Sherie: Strengths and weaknesses Diplomat in training and covert negotiator Sherie reads emotional atmosphere, relationships, and social position quickly. She draws information from people without making the extraction feel like an interrogation, then turns difficult positions into conversations they are willing to continue. Charming Quick-minded Politically curious ENFJ strong Fe Confirmed Sherie"
     },
     {
       "id": "character-tien-appearance",
@@ -1056,7 +1056,7 @@
       "type": "Character section",
       "url": "character.html?character=tien#personality-title",
       "subtitle": "Mercenary assassin and secret bodyguard",
-      "text": "Tien: Strengths and weaknesses Mercenary assassin and secret bodyguard Silent Precise Relentless XXXX Undiscussed Tien"
+      "text": "Tien: Strengths and weaknesses Mercenary assassin and secret bodyguard Tien trusts immediate perception and decisive movement. Danger sharpens rather than interrupts the work, and changing conditions become material for improvisation instead of reasons to pause. Silent Precise Relentless ISTP strong Se Confirmed Tien"
     },
     {
       "id": "character-yulia-appearance",
@@ -1104,7 +1104,7 @@
       "type": "Character section",
       "url": "character.html?character=yulia#personality-title",
       "subtitle": "Criminology student and procedural investigator",
-      "text": "Yulia: Strengths and weaknesses Criminology student and procedural investigator Yulia is methodical, detail-oriented, reliable, and most comfortable when evidence can be tested against a stable procedure. Hiyu's constant eureka moments and improvised logic give her a headache, but she repeatedly follows him anyway. Their opposition works because she checks what he leaps toward, while he forces her to consider possibilities no established protocol would admit. Procedural rigor She is at the top of her criminology class because she applies method consistently, respects chains of evidence, and notices when a required step has been skipped. Detail verification Yulia is strongest when a theory must be tested against the record, an observation must be preserved accurately, or an exciting conclusion must survive patient scrutiny. Reluctant loyalty She complains, resists, and wishes she were elsewhere, yet still goes with Hiyu when leaving him alone would place him in greater danger. ISTJ Confirmed Yulia"
+      "text": "Yulia: Strengths and weaknesses Criminology student and procedural investigator Yulia is methodical, detail-oriented, reliable, and most comfortable when evidence can be tested against a stable procedure. Hiyu's constant eureka moments and improvised logic give her a headache, but she repeatedly follows him anyway. Their opposition works because she checks what he leaps toward, while he forces her to consider possibilities no established protocol would admit. Procedural rigor She is at the top of her criminology class because she applies method consistently, respects chains of evidence, and notices when a required step has been skipped. Detail verification Yulia is strongest when a theory must be tested against the record, an observation must be preserved accurately, or an exciting conclusion must survive patient scrutiny. Reluctant loyalty She complains, resists, and wishes she were elsewhere, yet still goes with Hiyu when leaving him alone would place him in greater danger. ISTJ strong Si Confirmed Yulia"
     },
     {
       "id": "character-yulia-tradecraft",
@@ -1443,6 +1443,14 @@
       "text": "Canon Audit: Site update Home update feed QA Canon Audit 28 Aug 2026 · Questions and dramatic constraints The open-question ledger now asks for choices with character, thematic, or narrative consequence instead of background encyclopedia detail. Confirmed additions establish the Council of State's jurisdictional paradox, MSF's freedom to accept private clients, the independent origin of the Spill, the river's lingering scar, Helena's partial complicity, and the incompatible agendas that converge into Fionn's death. Review the revised questions →"
     },
     {
+      "id": "update-update-complete-mbti-records",
+      "title": "Character Archive: Site update",
+      "type": "Update",
+      "url": "index.html#update-complete-mbti-records",
+      "subtitle": "Home update feed",
+      "text": "Character Archive: Site update Home update feed MB Character Archive 30 Aug 2026 · Personality records All seventeen character profiles now carry the current MBTI reading and function emphasis. Kyrien retains the ISTP and INTJ uncertainty with ISTP as the present lean, while Myka, Inspector Leo, and Father Mikhail remain provisional. Review the character profiles →"
+    },
+    {
       "id": "update-update-intimacy-dossier-design",
       "title": "Character Archive: Site update",
       "type": "Update",
@@ -1520,7 +1528,7 @@
       "type": "Update",
       "url": "index.html#update-character-mbti-records",
       "subtitle": "Home update feed",
-      "text": "Character Archive: Site update Home update feed MB Character Archive 27 Aug 2026 · Personality records Every character profile now displays an MBTI record. Confirmed and partial types retain the author's wording, strong cognitive functions appear where established, tentative readings are marked as suspected, and undiscussed characters remain XXXX. Review the character profiles →"
+      "text": "Character Archive: Site update Home update feed MB Character Archive 27 Aug 2026 · Personality records Every character profile received a dedicated MBTI record in the Strengths and Weaknesses section, separate from affiliations and profile descriptions. Review the character profiles →"
     },
     {
       "id": "update-update-yulia-hiyu-investigative-pair",
@@ -1568,7 +1576,7 @@
       "type": "Update",
       "url": "index.html#update-felix-reiner-friendship-contrast",
       "subtitle": "Home update feed",
-      "text": "Character Archive: Site update Home update feed FR Character Archive 24 Aug 2026 · Trusted companions Felix and Reiner are Lynleit's long-standing friends and the personal bodyguards Fionn trusts with her safety. Felix is a playful, flirtatious xxFP-coded troublemaker. Reiner is stern, protocol-focused, rarely smiling, and xSTJ-coded. Open Felix's profile →"
+      "text": "Character Archive: Site update Home update feed FR Character Archive 24 Aug 2026 · Trusted companions Felix and Reiner are Lynleit's long-standing friends and the personal bodyguards Fionn trusts with her safety. Felix is a playful, flirtatious ESFP troublemaker. Reiner is a stern, protocol-focused ISTJ who rarely smiles. Open Felix's profile →"
     },
     {
       "id": "update-update-lynleit-signature-wardrobe",
