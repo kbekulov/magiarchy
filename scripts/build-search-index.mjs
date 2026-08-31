@@ -84,7 +84,7 @@ characters.forEach((character) => {
   });
 
   const sections = [
-    ['appearance', 'Appearance', [character.visual, character.palette]],
+    ['appearance', 'Appearance', [character.physical, character.visual, character.palette]],
     ['personality', 'Strengths and weaknesses', [character.personalitySummary, character.traits, character.mbti]],
     ['equipment', 'Equipment', character.equipment],
     ['nature', 'Nature', character.nature],
