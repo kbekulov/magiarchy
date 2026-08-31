@@ -29,12 +29,12 @@ Story, character, world, relationship, institution, location, and event question
 | Fionn and Helena | Was their marriage still physically intimate near Fionn's death, and what private moment best shows that bodily closeness could not repair the trust he withheld? | 5% |
 | Yulia and Hiyu | Which event makes either of them consciously recognize investigative dependence as desire, and who first names what is happening between them? | 5% |
 | The Church | What one narrow but terrifying authority is delegated to Father Mikhail, and what happens when that assignment crosses ordinary Church territories? | 5% |
-| River Holumns | Are the Drowned Chorus and the river leviathan separate Holumns, two expressions of one river-bound intelligence, or phenomena feeding from the same wound? | 5% |
+| River Holumns | Are the Drowned Choir and the river leviathan separate Holumns, two expressions of one river-bound intelligence, or phenomena feeding from the same wound? | 5% |
 | Holumns | Where do Holumns take disappeared victims, and what evidence can reveal the destination without yet explaining the mechanism or possibility of return? | 5% |
 | Core mystery | What logically defensible worldview and incompatible objective does each faction bring to Fionn, MSF, the Spill, and Narvea? | 10% |
 | Lynleit | Which of Lynleit's later actions around MSF missions can plausibly read as help, observation, manipulation, or causation before her intention becomes clear? | 10% |
 | Location | What human act in the Vilen park's history unknowingly prepares it for the Spill, and what is the park called? | 10% |
-| Boat operation | Which rule expressed by the Drowned Chorus makes Lynleit's blue flame relevant, and what remains after the agents reach shore? | 10% |
+| Boat operation | Which small oddities emerge from the quarantined park during the unsuccessful bridge watches, and how do they escalate while the team must ignore them? | 10% |
 | House | Which room in the Director's House carries an unexplained rule, and what do characters reveal through their refusal to enter it? | 10% |
 | Security | Which ordinary habits, complaints, chores, meals, and relationships keep the Director's House a family home while existential MSF work occurs inside it? | 10% |
 | MSF | Which officers learn that magic exists, what remains compartmentalized, and how does hidden knowledge become a second rank system inside the smaller post-Spill agency? | 10% |
@@ -67,9 +67,10 @@ Story, character, world, relationship, institution, location, and event question
 | Core mystery | Which incompatible agendas intend which outcomes around Fionn, and how do they accidentally cooperate to cause a death that none completely controls? | 45% |
 | Park trespass | How do Hiyu and Yulia bypass the cordon, what price do they pay to survive, and what evidence proves their experience while making their testimony harder to believe? | 45% |
 | Hotel refuge | What tiny ordinary behavior does Kyrien witness once Lynleit no longer has the strength to perform being Lynleit, and what private trust exists the next morning? | 45% |
+| Boat operation | What breaks the silent standoff between Lynleit and the Drowned Choir, does blue flame enter the encounter, and how do Lynleit and Kyrien finally reach shore? | 45% |
 | Relationship | Which repeated functional encounters make Lynleit and Kyrien necessary to one another despite neither wanting the dependence, bridging river, hotel, and end-of-arc intimacy? | 50% |
-| Covert alliance | What does Lynleit refuse to provide Drake and Sherie, and how do requested MSF resources, offered concessions, and operational limits reveal the hierarchy at the hilltop meeting? | 50% |
 | Character appearance | What exact heights belong to the illustrated cast, and which artwork-derived hair, eye, build, or distinguishing details require correction? | 70% |
+| Covert alliance | Beyond the confirmed river-surveillance operation, what does Lynleit refuse to provide Drake and Sherie, and what concessions or favors do they offer in return? | 70% |
 
 ## Chronology questions
 
@@ -79,9 +80,9 @@ These questions determine sequence, event placement, reveal timing, or elapsed t
 | --- | --- | --- |
 | Family | When, if ever, does Kyrien learn that Lynleit bore his son, and where does that revelation belong in relation to Lynleit's elusive return and his leadership of MSF? | 0% |
 | Timeline | How much time passes between the first disappearance, the park quarantine, Kyrien's early recruitment, Fionn's much later assassination, Helena's takeover, and the hunt for Lynleit's arrest? | 10% |
+| Succession | When does Lynleit formally inherit the Magiarchate after Fionn's death, and how does that transfer of responsibility overlap with Kyrien assuming MSF's director seat? | 20% |
 | Timeline | Exactly how many years pass between Lynleit's disappearance and return, and how old is her and Kyrien's son when she reappears? | 25% |
 | House chronology | How old was Lynleit when she made the third-floor room a condition of moving from Turon to Vilen, and when did the Vilen house become a residential MSF node? | 35% |
 | Fugitive campaign | How much time passes between the hotel-room refuge, Kyrien's first secure contact with Felix and Reiner, Lynleit's first foothold inside MSF, and Helena's eventual loss of control? | 35% |
 | Relationship | At what point in the opening chapters does Lynleit reveal Kyrien's recruitment to Felix and Reiner, where does the disclosure occur, and how much time remains before Fionn's assassination? | 60% |
 | Relationship | Is Lynleit and Kyrien's end-of-arc sexual encounter the conception of their son, when does Lynleit realize she is pregnant, and how much time passes before she disappears? | 65% |
-| Succession | When does Lynleit formally inherit the Magiarchate after Fionn's death, and how does that transfer of responsibility overlap with Kyrien assuming MSF's director seat? | 20% |

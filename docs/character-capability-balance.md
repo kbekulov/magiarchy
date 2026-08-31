@@ -33,7 +33,6 @@ These questions define what each character can do, what they cannot do, and why 
 | Son | Does Lynleit and Kyrien's son inherit the blue-flame lineage, another ability, or no Magus talent, and how would any inheritance remain balanced against both parents? | 0% |
 | Lynleit | Beyond passing MSF weapons certification, what level of firearms skill does Lynleit possess, and where does she remain dependent on Felix, Reiner, Kyrien, or another specialist? | 0% |
 | Myka | Which Academy disciplines make Myka gifted, which remain weak, and how does inexperience constrain high magical potential? | 15% |
-| Lynleit | What practical limits, bodily costs, and backlash govern her unsafe blue-flame output and secret water walking, and how often can she answer threats that firearms cannot without making Fionn's finesse or her allies' skills unnecessary? | 20% |
 | Inspector Leo | Which investigative strengths belong specifically to Leo, and what does restricted clearance prevent him from accomplishing without Natalia, MSF, or Church access? | 20% |
 | Natalia | Which magical disciplines support Natalia's examinations, what can she not diagnose alone, and what cost or risk prevents broad scholarship from solving every edge case? | 20% |
 | Tien | What constraints, personal blind spots, or counters keep Tien's elite fieldcraft and combat from making Helena's concealed assassin an automatic solution? | 25% |
@@ -42,6 +41,7 @@ These questions define what each character can do, what they cannot do, and why 
 | Heyk | Which skills survive the park massacre, which are damaged by trauma, and how does becoming Drake and Sherie's field agent change his strengths over time? | 30% |
 | Felix | What technical access, equipment, preparation, and failure conditions limit Felix's hacking and communications work? | 35% |
 | Reiner | How strong and durable is Reiner in practical terms, and what kinds of distance, deception, technology, or magecraft neutralize his direct approach? | 35% |
+| Lynleit | Beyond the confirmed fear-triggered river manifestation and the drowned hands' inability to cross the surface, how long can Lynleit maintain water walking, what bodily cost follows it, and what limits keep it from replacing her allies' skills? | 35% |
 | Axis model | Should Analysis split into procedural verification and generative inference so Yulia and Hiyu's opposite investigative strengths are visible instead of receiving nearly identical scores under one label? | 40% |
 | Yulia and Hiyu | Which concrete park tasks require Yulia's procedural rigor, which require Hiyu's improvisation, and where does each method fail without the other? | 50% |
 | Kyrien | Which consequential failure shows how Kyrien's need to win and punish unfair play can override his officer discipline, and what blind spot appears when he later directs MSF while Lynleit carries the Magiarchate? | 60% |

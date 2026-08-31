@@ -13,7 +13,7 @@ function holumnElement(tag, className, text) {
 
 function incidentLink(incident, label) {
   const link = holumnElement('a', '', label || incident.id);
-  link.href = `docs.html?doc=holumn-incidents-and-testimonies#${incident.id.toLowerCase()}-${incident.slug}`;
+  link.href = `docs.html?doc=holumn-incidents-and-testimonies#${incident.slug}`;
   link.setAttribute('aria-label', `Open ${incident.title} in the testimony archive`);
   return link;
 }

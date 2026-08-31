@@ -39,20 +39,28 @@ The object carries a condition. The disappearance occurs when the puzzle is comp
 ## The Drowned Choir
 
 **Record:** HI-003
-**Known form:** Embodied manifestation
-**Primary medium:** Water and a humanlike body
+**Known forms:** Embodied and environmental manifestation
+**Primary medium:** The city river, drowned souls, and a humanlike body
 
-A pale girl emerges from the water. Her eyes are sewn shut with fishing line, and her dress is made from dead fish. She speaks with the combined voices of drowned people.
+A pale girl emerges from the water. Her eyes are sewn shut with fishing line, and her dress is made from dead fish. The souls of people drowned in the river across generations are bound to her. Their submerged hands seize swimmers and pull them downward, and their voices form the choir through which she can speak.
 
-The manifestation is encountered during the failed boat operation involving Lynleit and MSF officers. Its complete relation to the river and the Spill remains unknown.
+> It felt as though my legs were being grabbed and pulled by someone's hands.
+
+**Source:** Unnamed female MSF officer after reaching shore
+
+The encounter occurs during a covert MSF operation requested by Sherie and Drake. Small boats owned by contraband gangs have been moving on the darkest nights without visible operators. When Lynleit's team finally boards them from a bridge, the boats are empty. The Drowned Choir has already taken every crew before the boats reach the interception point.
+
+The officers are trained swimmers, but unseen hands make the short escape to shore nearly impossible. Only Lynleit sees them clearly after she is pulled underwater. Her violent reaction to drowning brings her forbidden water walking into full effect. Once she stands on the surface, the hands cannot reach through the layer beneath her feet.
+
+The girl then rises before Lynleit. She remains silent and tilts her head because a person standing on water falls outside the rule by which she takes victims. Lynleit is equally bewildered. Only Kyrien witnesses Lynleit standing on the river and keeps the ability secret afterward.
 
 ### Institutional readings
 
 **Police and government**
-No stable public account can contain the body, the voices, and the surrounding losses as one credible event.
+Darkness, panic, current, exhaustion, and shared misperception can be used to separate the officers' accounts from the empty boats and missing smugglers. No ordinary report can explain why several trained swimmers independently describe hands pulling at their legs.
 
 **Magi and special envoys**
-A physical manifestation carrying the memory or voices of multiple drowned people.
+An embodied Holumn has enslaved the river's drowned souls and uses them as both grasping limbs and a collective voice. The hands cannot cross the surface layer, making Lynleit's miracle-like movement a temporary boundary rather than a confirmed means of destroying the manifestation.
 
 ## The River That Is Too Deep
 
