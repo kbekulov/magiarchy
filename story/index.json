@@ -72,5 +72,47 @@
       "Myka reveals an unaltered copy carrying Fionn's name beside a future date.",
       "The archive erases the evidence while Natalia attempts to preserve it."
     ]
+  },
+  {
+    "slug": "the-empty-boats-beneath-the-bridge",
+    "number": "Chapter 05",
+    "title": "The Empty Boats Beneath the Bridge",
+    "status": "Working draft",
+    "file": "the-empty-boats-beneath-the-bridge.md",
+    "updated": "2026-08-31",
+    "description": "A covert MSF inspection of apparently unmanned river shipments collapses when the Drowned Choir attacks from below, leaving Kyrien to witness Lynleit's forbidden water walking from the quarantined bank.",
+    "characters": ["Lynleit", "Kyrien", "Felix", "Reiner", "Sherie", "Drake"],
+    "timelinePhase": "unknowing-convergence",
+    "timelineLabel": "Unknowing Convergence",
+    "events": [
+      "Sherie and Drake ask Lynleit to assemble a loyal team and inspect recurring night traffic on the Vilen river.",
+      "Several surveillance nights produce no boats while small oddities emerge from the quarantined park.",
+      "Felix freezes the bridge cameras, Reiner prepares the ropes, and the team descends onto the boats when they finally appear.",
+      "The boats are empty because the Drowned Choir has already taken their contraband crews.",
+      "Felix, Reiner, and the other officers reach the city bank while Kyrien is forced toward the quarantined park bank.",
+      "The drowned hands drag Lynleit underwater until her fear provokes water walking and leaves her facing the pale girl on the river.",
+      "Lynleit later reaches Kyrien inside the park, where they sit back to back for warmth and he conceals what he witnessed."
+    ]
+  },
+  {
+    "slug": "the-nameless-street",
+    "number": "Chapter 06",
+    "title": "The Nameless Street",
+    "status": "Working draft",
+    "file": "the-nameless-street.md",
+    "updated": "2026-08-31",
+    "description": "Days before Fionn's death, Lynleit disappears from an ordinary walk with Felix into an impossible old street where a child's lure ends in a fall that will later return inside Helena's accusation.",
+    "characters": ["Lynleit", "Felix", "Fionn", "Helena"],
+    "timelinePhase": "divided-attention",
+    "timelineLabel": "Divided Attention",
+    "events": [
+      "Lynleit and Felix take an ordinary walk through central Vilen after lunch.",
+      "Lynleit finds herself alone, dizzy, and unable to navigate a street that does not obey the surrounding city.",
+      "A little girl loses a red balloon and runs away crying.",
+      "Lynleit catches the balloon and follows the girl's cries through the labyrinth.",
+      "The girl leads Lynleit to a broken fence above the body of a dead boy, then pushes her from the ledge.",
+      "Lynleit wakes on a city bench while Felix tries to revive her from an apparent fainting episode.",
+      "Days later, the dead boy's fall returns to Lynleit when she sees Fionn's body below the hill at the family house."
+    ]
   }
 ]

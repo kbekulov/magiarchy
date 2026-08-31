@@ -211,10 +211,15 @@ function renderMomentCatalog(entries) {
   initializeMomentTrackDrag();
 }
 
-function populateList(selector, entries) {
+function populateList(selector, entries, { factStatus = false } = {}) {
   document.querySelector(selector).replaceChildren(...entries.map((entry, index) => {
+    const record = typeof entry === 'string' ? { text: entry, status: 'reader' } : entry;
     const item = momentElement('li');
-    item.append(momentElement('span', '', String(index + 1).padStart(2, '0')), momentElement('p', '', entry));
+    const status = record.status === 'audit' ? 'audit' : 'reader';
+    item.append(momentElement('span', 'moment-fact-number', String(index + 1).padStart(2, '0')), momentElement('p', '', record.text));
+    if (factStatus) {
+      item.classList.add(`is-${status}`);
+    }
     return item;
   }));
 }
@@ -245,7 +250,7 @@ function renderMomentReader(entry, entries) {
   document.querySelector('#moment-before').textContent = entry.continuityBefore;
   document.querySelector('#moment-purpose').textContent = entry.purpose;
   document.querySelector('#moment-after').textContent = entry.continuityAfter;
-  populateList('#moment-known', entry.known);
+  populateList('#moment-known', entry.known, { factStatus: true });
 
   const characterLinks = entry.characters.length
     ? entry.characters.map((character) => {

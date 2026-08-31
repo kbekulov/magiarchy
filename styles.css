@@ -4917,6 +4917,32 @@ a.status-member:hover {
   font-size: .9rem;
 }
 
+.moment-fact-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 16px;
+  padding: 11px 18px 6px;
+  color: #9ca0a9;
+  font-size: .49rem;
+}
+
+.moment-fact-legend span {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.moment-fact-legend i {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #7580f0;
+}
+
+.moment-fact-legend .is-audit i {
+  background: #bd8adb;
+}
+
 .moment-fact-panel ol {
   margin: 0;
   padding: 5px 18px 15px;
@@ -4935,10 +4961,20 @@ a.status-member:hover {
   border-bottom: 0;
 }
 
-.moment-fact-panel li > span {
+.moment-fact-panel .moment-fact-number {
   color: #7f85e8;
   font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
   font-size: .5rem;
+}
+
+.moment-fact-panel li.is-audit {
+  margin-inline: -18px;
+  padding-inline: 18px;
+  background: rgba(180, 107, 214, .06);
+}
+
+.moment-fact-panel li.is-audit .moment-fact-number {
+  color: #bd8adb;
 }
 
 .moment-fact-panel li p {
@@ -9289,17 +9325,23 @@ a.equipment-card:focus-visible {
 
 .relationship-map-detail {
   display: grid;
-  grid-template-columns: minmax(110px, .2fr) minmax(140px, .25fr) minmax(0, 1fr) auto;
-  align-items: center;
-  gap: 18px;
-  min-height: 86px;
-  padding: 15px 16px;
+  grid-template-columns: minmax(0, 920px) auto;
+  grid-template-areas:
+    "label action"
+    "name action"
+    "copy action";
+  align-items: start;
+  justify-content: start;
+  gap: 5px 28px;
+  min-height: 108px;
+  padding: 17px 24px 19px;
   border: 1px solid #383a41;
   border-radius: 0 0 7px 7px;
   background: #27282d;
 }
 
 .relationship-map-detail small {
+  grid-area: label;
   color: #8993ff;
   font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
   font-size: .49rem;
@@ -9309,11 +9351,14 @@ a.equipment-card:focus-visible {
 }
 
 .relationship-map-detail strong {
+  grid-area: name;
   color: #f2f3f5;
   font-size: .72rem;
 }
 
 .relationship-map-detail p {
+  grid-area: copy;
+  max-width: 920px;
   margin: 0;
   color: #aeb1b8;
   font-size: .62rem;
@@ -9321,6 +9366,8 @@ a.equipment-card:focus-visible {
 }
 
 .relationship-map-detail a {
+  grid-area: action;
+  align-self: center;
   color: #b7bdff;
   font-size: .56rem;
   font-weight: 750;
@@ -9406,14 +9453,6 @@ a.equipment-card:focus-visible {
     padding: 28px;
   }
 
-  .relationship-map-detail {
-    grid-template-columns: minmax(120px, .28fr) minmax(0, 1fr) auto;
-  }
-
-  .relationship-map-detail p {
-    grid-column: 1 / -1;
-    grid-row: 2;
-  }
 }
 
 @media (max-width: 620px) {
@@ -9511,22 +9550,24 @@ a.equipment-card:focus-visible {
 
   .relationship-map-detail {
     grid-template-columns: minmax(0, 1fr) auto;
+    grid-template-areas:
+      "label action"
+      "name action"
+      "copy copy";
     gap: 7px 12px;
     padding: 14px;
   }
 
   .relationship-map-detail strong {
-    grid-column: 1;
+    grid-area: name;
   }
 
   .relationship-map-detail a {
-    grid-column: 2;
-    grid-row: 1 / span 2;
+    grid-area: action;
   }
 
   .relationship-map-detail p {
-    grid-column: 1 / -1;
-    grid-row: auto;
+    grid-area: copy;
     margin-top: 5px;
   }
 

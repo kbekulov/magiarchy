@@ -305,6 +305,7 @@
       { "name": "Drake", "slug": "drake" },
       { "name": "Lynleit", "slug": "lynleit" },
       { "name": "Felix", "slug": "felix" },
+      { "name": "Reiner", "slug": "reiner" },
       { "name": "Kyrien", "slug": "kyrien" }
     ],
     "characterAnchors": [
@@ -312,6 +313,7 @@
       { "slug": "drake", "beat": "The Boat below the Bridge" },
       { "slug": "lynleit", "beat": "The Heir Apparent" },
       { "slug": "felix", "beat": "No Trust for Kyrien" },
+      { "slug": "reiner", "beat": "Trusting Lynleit" },
       { "slug": "kyrien", "beat": "Alliance under Pressure" }
     ],
     "known": [
@@ -320,12 +322,20 @@
       "The chosen bridge links a city street to the quarantined park.",
       "The plan requires the team to freeze the bridge's civil safety cameras, wait within a narrow surveillance window, descend by rope onto the boats, inspect their contents, and leave by rope at the next bridge.",
       "Several nights produce no boats. Each unsuccessful watch consumes the limited camera window and exposes Lynleit or Kyrien to small oddities emerging from the quarantined park that the mission gives them no freedom to pursue.",
+      {
+        "text": "The working chapter places the successful interception on the fifth watch.",
+        "status": "audit"
+      },
+      {
+        "text": "The working chapter uses a branch breaking before the wind reaches the trees and a pale interruption in a frozen camera feed as the two park-side oddities.",
+        "status": "audit"
+      },
       "When the boats finally appear, the team descends and finds them empty.",
       "The boats belong to contraband gangs, but the Drowned Choir has already taken every crew before the boats reach the bridge.",
       "The river attack begins while the officers search the empty boats for another explanation.",
       "The officers are capable swimmers. Reaching shore becomes difficult because unseen hands seize their legs and pull downward.",
       "After reaching land, one female officer describes the sensation of hands gripping and pulling her legs.",
-      "The rest of the official MSF team makes it ashore without understanding what attacked them and does not realize that Lynleit remains behind.",
+      "Felix, Reiner, and the other MSF officers reach the street-facing city bank without understanding what attacked them and do not realize that Lynleit remains behind.",
       "The hands belong to people who drowned in the river across generations. The girl in the water has enslaved their souls and uses them to drown new victims.",
       "Only Lynleit sees the hands clearly. They seize her most violently and drag her underwater.",
       "The attack activates her childhood fear of drowning and provokes an unusually violent Magus response.",
@@ -335,9 +345,12 @@
       "The girl is the embodied Holumn governing the drowned hands. The souls she holds form the Drowned Choir.",
       "She stares at Lynleit in silence, then tilts her head in confusion because a person standing on water contradicts the rule by which she drowns people.",
       "Kyrien is present as Lynleit's concealed unofficial asset rather than an acknowledged MSF officer.",
+      "The force in the river separates Kyrien from the official team and drives him toward the quarantined park side of the river.",
+      "Kyrien reaches the park bank, enters the trees, and observes Lynleit's confrontation on the river from inside the quarantine.",
       "Only Kyrien witnesses Lynleit walking on water.",
       "Kyrien is too careful to acknowledge what he saw and feigns innocence convincingly.",
-      "They reach the night park drenched and struggling to catch their breath.",
+      "Lynleit later reaches the park side of the river, where Kyrien is waiting among the trees.",
+      "They remain inside the night park, drenched and struggling to catch their breath.",
       "They sit with their backs pressed together to share body heat while they recover.",
       "Lynleit indirectly asks whether Kyrien saw anything strange during the escape.",
       "Kyrien denies seeing anything, and his careful performance of innocence gives Lynleit nothing she can safely test.",
@@ -345,15 +358,14 @@
     ],
     "openQuestions": [
       "Which oddities emerge from the quarantined park during the unsuccessful watches?",
-      "What breaks the silent standoff between Lynleit and the girl, and does blue flame enter the encounter?",
-      "How do Lynleit and Kyrien finally reach shore after the confrontation?",
+      "What breaks the silent standoff between Lynleit and the girl, does blue flame enter the encounter, and how does Lynleit escape to the park bank?",
       "What form does the river's scar take, and in what sense does the place remember the encounter?",
       "Which additional MSF officers join the infiltration?",
       "What intelligence survives the failed operation?"
     ],
     "continuityBefore": "The hilltop agreement gives Drake and Sherie access to a small loyal MSF team without granting them control of the agency. Their first request is a limited investigation of apparently unmanned river shipments, with contraband still the leading material explanation.",
-    "continuityAfter": "The surviving officers carry an account of impossible resistance in the water but no shared sight of its cause. Drenched and seated back to back in the night park, Lynleit and Kyrien preserve a mutual silence around what he witnessed. Much later, after Fionn's murder, the hotel-room refuge deepens that physical trust into emotional reliance.",
-    "chapterSlug": null,
+    "continuityAfter": "Felix, Reiner, and the other officers carry an account of impossible resistance back to the city bank but no shared sight of its cause. Kyrien observes the river from the quarantined trees, and Lynleit later joins him on the park bank. Drenched and seated back to back inside the park, they preserve a mutual silence around what he witnessed. Much later, after Fionn's murder, the hotel-room refuge deepens that physical trust into emotional reliance.",
+    "chapterSlug": "the-empty-boats-beneath-the-bridge",
     "updated": "2026-08-31"
   },
   {
@@ -569,6 +581,123 @@
     "updated": "2026-08-26"
   },
   {
+    "slug": "the-nameless-street",
+    "code": "MOM-014",
+    "title": "The Nameless Street",
+    "status": "Key foreshadowing scene",
+    "placementStatus": "Days before Fionn's death confirmed",
+    "timelinePhase": "divided-attention",
+    "timelineLabel": "Divided Attention",
+    "sequence": 1,
+    "sceneType": "Holumn encounter",
+    "thread": "The framing of Lynleit",
+    "location": "Vilen old town and an untraceable street",
+    "summary": "During a casual walk after lunch with Felix, Lynleit enters a deserted labyrinthine street, follows a crying girl with a red balloon, sees a dead boy below a broken fence, and is pushed from the same ledge before waking on an ordinary city bench.",
+    "purpose": "Gives Lynleit a private memory of a child's fatal fall that later overwhelms her when she sees Fionn below the hill at the family house. Helena can use Lynleit's genuine shock as emotionally credible evidence for a false accusation.",
+    "characters": [
+      { "name": "Lynleit", "slug": "lynleit" },
+      { "name": "Felix", "slug": "felix" },
+      { "name": "Fionn", "slug": "fionn" },
+      { "name": "Helena", "slug": "helena" }
+    ],
+    "characterAnchors": [
+      { "slug": "lynleit", "beat": "The Heir Apparent" },
+      { "slug": "felix", "beat": "Friend and Bodyguard" },
+      { "slug": "fionn", "beat": "The Inheritance after Death" },
+      { "slug": "helena", "beat": "The Opening" }
+    ],
+    "known": [
+      "The Nameless Street is an urban myth in the old town of central Vilen.",
+      "Under unknown conditions, a lost visitor may enter it alone.",
+      "Its buildings and routes form a labyrinth that does not obey the surrounding city.",
+      "The warning attached to the myth is not to follow anyone encountered there, because those who do may never return to ordinary streets.",
+      "Days before Fionn's murder, Lynleit is walking with Felix after a work lunch when she abruptly finds herself alone, dizzy, unsteady, and suffering a severe headache.",
+      "A little girl carrying a red balloon appears, loses it, and runs away crying.",
+      "Lynleit catches the balloon by its thread and follows the girl's cries so she can return it.",
+      "The girl eventually stands beside a broken fence above an abrupt drop, looking down at the body of a dead boy.",
+      "Lynleit releases the balloon in shock. The girl smiles and pushes her from the ledge.",
+      "Before reaching the ground, Lynleit wakes on a bench in the ordinary city center while Felix fans her face with a piece of paper after her apparent faint.",
+      "Whether the street is a place, an illusion, or another kind of Holumn remains unresolved.",
+      "When Lynleit later sees Fionn's body below the hill at the family house, the memory of the boy stupefies her and gives Helena leverage to accuse her of pushing Fionn.",
+      {
+        "text": "The working chapter makes the transition into the street occur without a visible threshold and uses a silent, maintained district to distinguish it from an ordinary abandoned place.",
+        "status": "audit"
+      },
+      {
+        "text": "The working chapter lets Felix accept Lynleit's implausible account without laughing, preserving his role as an old friend before the encounter's meaning is understood.",
+        "status": "audit"
+      }
+    ],
+    "openQuestions": [
+      "What conditions admit a visitor to the Nameless Street, and why does it take Lynleit on this day?",
+      "Are the girl and boy inhabitants, repeated roles, former victims, or images produced by the street?",
+      "Does the fall release Lynleit, or does another interruption return her to the bench?",
+      "Does the street anticipate Fionn's death, draw from Lynleit's future, or leave a pattern that later events happen to reactivate?",
+      "What does Felix observe between Lynleit's last ordinary step and her collapse?"
+    ],
+    "continuityBefore": "Lynleit is already watching Helena study her family, but Fionn remains alive and the danger has not yet broken into an open accusation.",
+    "continuityAfter": "Several days later Fionn is found below the hill at the Vilen family house. Lynleit's involuntary recognition of the dead boy gives Helena a true emotional reaction that can be assigned a false cause.",
+    "chapterSlug": "the-nameless-street",
+    "updated": "2026-08-31"
+  },
+  {
+    "slug": "mikhail-discovers-the-breach",
+    "code": "MOM-015",
+    "title": "Father Mikhail Discovers the Breach",
+    "status": "Institutional turning point",
+    "placementStatus": "Middle-story placement confirmed, exact chapter unresolved",
+    "timelinePhase": "divided-attention",
+    "timelineLabel": "Divided Attention",
+    "sequence": 2,
+    "sceneType": "Forbidden-knowledge confrontation",
+    "thread": "MSF enters the hidden order",
+    "location": "Unspecified private location",
+    "summary": "Father Mikhail becomes the first authority to discover that Lynleit has shared forbidden knowledge of magic with outsiders. Kyrien corrects her attempt to limit the breach to himself by revealing that Felix and Reiner also know.",
+    "purpose": "Turns a private breach into pressure for an institutional answer. Lynleit's promise to handle the witnesses on her own terms becomes an early cause of MSF's later conversion from a purely private intelligence company into a partly Magi enterprise accountable to the Magiarchy and the Church.",
+    "characters": [
+      { "name": "Lynleit", "slug": "lynleit" },
+      { "name": "Kyrien", "slug": "kyrien" },
+      { "name": "Felix", "slug": "felix" },
+      { "name": "Reiner", "slug": "reiner" },
+      { "name": "Father Mikhail", "slug": "father-mikhail" }
+    ],
+    "characterAnchors": [
+      { "slug": "lynleit", "beat": "The Heir Apparent" },
+      { "slug": "kyrien", "beat": "Alliance under Pressure" },
+      { "slug": "felix", "beat": "The Secret Third Ally" },
+      { "slug": "reiner", "beat": "Trusting Lynleit" },
+      { "slug": "father-mikhail", "beat": "The Witness Breach" }
+    ],
+    "known": [
+      "Father Mikhail is the first authority to learn that Lynleit has disclosed forbidden knowledge of magic to outsiders.",
+      "Lynleit is unprepared for the discovery and promises to resolve the exposure on her own terms.",
+      "Mikhail asks whether Kyrien is the only witness, and Lynleit reassures him.",
+      "Kyrien immediately states that Felix and Reiner also know.",
+      "Mikhail responds by looking at Lynleit in judgment rather than escalating the confrontation openly.",
+      "Lynleit again promises to handle the problem in her own way.",
+      "Mikhail leaves her with the warning: 'What you do is none of my business, but don't be surprised if I'll be sent to clean up your mess.'",
+      "The encounter becomes an early cause of MSF's later transformation into a partly Magi private enterprise reporting to the Magiarchy and the Church.",
+      {
+        "text": "The Nasu audit reads Kyrien's correction as literal honesty rather than comic disloyalty: he refuses to let Lynleit build an institutional defense on a statement he knows is false.",
+        "status": "audit"
+      },
+      {
+        "text": "Mikhail's restrained judgment carries more pressure than an immediate threat because his final warning identifies what the Church may require of him later without claiming that authority now.",
+        "status": "audit"
+      }
+    ],
+    "openQuestions": [
+      "Where does the confrontation occur, and what evidence prevents Lynleit from denying the original disclosure?",
+      "What action does Lynleit mean by handling the problem in her own way?",
+      "What narrow authority would allow Mikhail to be sent back to clean up the breach?",
+      "What formal agreement later makes MSF accountable to both the Magiarchy and the Church while preserving its private ownership?"
+    ],
+    "continuityBefore": "Lynleit has already allowed Kyrien, Felix, and Reiner to operate with knowledge that ordinary MSF officers and outsiders are forbidden to possess.",
+    "continuityAfter": "Lynleit must create an institutional place for people she refuses to suppress or surrender. The eventual answer changes MSF's mandate and places part of the private company inside the Magiarchal and Church order.",
+    "chapterSlug": null,
+    "updated": "2026-08-31"
+  },
+  {
     "slug": "fionn-is-eliminated",
     "code": "MOM-007",
     "title": "The Unresolved Assassination",
@@ -579,8 +708,8 @@
     "sequence": 1,
     "sceneType": "Political assassination",
     "thread": "The hidden conflict",
-    "location": "Unspecified location",
-    "summary": "Fionn is assassinated when several incompatible agendas converge without one actor controlling the whole outcome. Helena knowingly opens one part of the path, then uses his death to seize MSF and frame Lynleit.",
+    "location": "The hillside grounds of the Vilen family house",
+    "summary": "Fionn is found dead below the hill at the Vilen family house after several incompatible agendas converge without one actor controlling the whole outcome. Helena knowingly opens one part of the path, then uses his death and Lynleit's stunned response to seize MSF and frame her.",
     "purpose": "Fionn's death connects the hidden conflict to Helena's visible takeover. The unresolved conspiracy contains several motives, partial knowledge, and accidental cooperation, with no single clean chain of command.",
     "characters": [
       { "name": "Fionn", "slug": "fionn" },
@@ -592,6 +721,9 @@
     ],
     "known": [
       "Fionn is successfully assassinated.",
+      "His body is found below the hill at the Vilen family house, but whether the fall kills him, follows another attack, or is staged remains unresolved.",
+      "Lynleit's recent memory of the dead boy on the Nameless Street stupefies her when she sees Fionn below the hill.",
+      "Helena assigns a false meaning to Lynleit's genuine shock and accuses her of pushing Fionn.",
       "His death creates the opening Helena uses to take control of MSF.",
       "Helena frames Lynleit for the assassination and directs a hunt for her arrest.",
       "Helena knowingly enables one part of the pressure against Fionn without understanding everything that follows.",
@@ -608,8 +740,9 @@
       "Did one faction covertly or illegally infiltrate another and use its people or resources without authorization?",
       "Does any participant's apparent affiliation conceal who truly directed them?",
       "Which door does Helena knowingly open, what does she expect to happen, and what follows beyond her knowledge?"
+      ,"Does the fall kill Fionn, conceal another cause of death, or stage the physical evidence used against Lynleit?"
     ],
-    "continuityBefore": "Manufactured political strife isolates Fionn and divides his attention while the Spill develops.",
+    "continuityBefore": "Manufactured political strife isolates Fionn and divides his attention while the Spill develops. Days earlier, the Nameless Street gives Lynleit an unexplained memory of a boy lying dead below a fall.",
     "continuityAfter": "Helena converts the vacancy into control of MSF, makes Lynleit the official suspect, and directs a hunt for her arrest while the true authorship remains hidden.",
     "chapterSlug": null,
     "updated": "2026-08-24"

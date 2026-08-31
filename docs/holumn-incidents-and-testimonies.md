@@ -50,9 +50,9 @@ A pale girl emerges from the water. Her eyes are sewn shut with fishing line, an
 
 The encounter occurs during a covert MSF operation requested by Sherie and Drake. Small boats owned by contraband gangs have been moving on the darkest nights without visible operators. When Lynleit's team finally boards them from a bridge, the boats are empty. The Drowned Choir has already taken every crew before the boats reach the interception point.
 
-The officers are trained swimmers, but unseen hands make the short escape to shore nearly impossible. Only Lynleit sees them clearly after she is pulled underwater. Her violent reaction to drowning brings her forbidden water walking into full effect. Once she stands on the surface, the hands cannot reach through the layer beneath her feet.
+The officers are trained swimmers, but unseen hands make the short escape to shore nearly impossible. Felix, Reiner, and the other officers reach the street-facing city bank. Kyrien is driven toward the quarantined park bank instead and observes the river from inside the trees. Only Lynleit sees the hands clearly after she is pulled underwater. Her violent reaction to drowning brings her forbidden water walking into full effect. Once she stands on the surface, the hands cannot reach through the layer beneath her feet.
 
-The girl then rises before Lynleit. She remains silent and tilts her head because a person standing on water falls outside the rule by which she takes victims. Lynleit is equally bewildered. Only Kyrien witnesses Lynleit standing on the river and keeps the ability secret afterward.
+The girl then rises before Lynleit. She remains silent and tilts her head because a person standing on water falls outside the rule by which she takes victims. Lynleit is equally bewildered. Only Kyrien witnesses Lynleit standing on the river and keeps the ability secret afterward. Lynleit later reaches him on the park side, where they recover among the trees before rejoining the others.
 
 ### Institutional readings
 
@@ -79,3 +79,27 @@ Hidden debris, dangerous currents, criminal interference, and postmortem animal 
 
 **Magi and special envoys**
 The place exceeds its physical dimensions. Its impossible depth, force, and predation may belong to one governing rule.
+
+## The Nameless Street
+
+**Record:** HI-005
+**Known forms:** Environmental, event-bound, and possibly curse-bound
+**Primary medium:** An untraceable street in the old town of central Vilen
+
+The Nameless Street is an urban myth among visitors to Vilen. Under unknown conditions, a person who becomes lost may enter a deserted network of steep lanes, stairs, courtyards, balconies, retaining walls, and sudden drops that cannot be reconciled with the surrounding city. The warning attached to the story is simple: do not follow anyone encountered there. Those who follow may never return to ordinary streets.
+
+Days before Fionn's death, Lynleit is walking with Felix after lunch when she finds herself alone. She is dizzy, unable to walk straight, and suffering a severe headache. A little girl carrying a red balloon appears. When the balloon escapes, the girl runs away crying. Lynleit catches its thread and follows the girl's cries through the labyrinth so she can return it.
+
+The girl eventually stands beside a broken fence above an abrupt fall. A dead boy lies below. Lynleit releases the balloon in shock. The girl smiles and pushes her from the ledge.
+
+Before Lynleit strikes the ground, she wakes on a bench in the ordinary city center. Felix is fanning her face with a piece of paper and describes only a fainting episode. He did not enter the street.
+
+Several days later, Lynleit sees Fionn's body below the hill at the family house. The memory of the dead boy returns before she can control her reaction. Helena uses that genuine shock to support the false accusation that Lynleit pushed her father.
+
+### Institutional readings
+
+**Police and government**
+Felix's account supports a sudden loss of consciousness followed by a vivid dream, hallucination, or neurological episode. No second witness, traceable route, girl, balloon, or dead boy establishes a physical street.
+
+**Magi and special envoys**
+The street itself may be the Holumn. It isolates one visitor, replaces navigable urban space with a hostile sequence, and presents a lure whose pursuit ends at a fatal fall. It remains unknown whether Lynleit physically entered another place, experienced an event imposed on consciousness, or occupied both conditions at once.

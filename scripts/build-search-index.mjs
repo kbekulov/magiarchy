@@ -203,7 +203,7 @@ holumnArchive.incidents.forEach((incident) => {
     id: `holumn-${incident.slug}`,
     title: incident.title,
     type: 'Holumn incident',
-    url: `docs.html?doc=holumn-incidents-and-testimonies#${incident.id.toLowerCase()}-${incident.slug}`,
+    url: `docs.html?doc=holumn-incidents-and-testimonies#${incident.slug}`,
     subtitle: `${incident.id} · ${incident.recordType}`,
     text: flatten(incident),
     keywords: incident.types

@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-28",
+  "updated": "2026-08-31",
   "principles": [
     "Holumn is a category of manifestation, not a biological species.",
     "A Holumn may be a physical creature, a natural phenomenon, a repeating event, a disembodied will, or a curse.",
@@ -18,13 +18,13 @@
       "id": "environmental",
       "name": "Environmental",
       "summary": "Weather, water, terrain, or another natural system becomes the body or behavior of the manifestation.",
-      "evidence": ["HI-003", "HI-004"]
+      "evidence": ["HI-003", "HI-004", "HI-005"]
     },
     {
       "id": "event",
       "name": "Event-bound",
       "summary": "The Holumn exists as a sequence, compulsion, rule, or occurrence with no creature that can be confronted directly.",
-      "evidence": ["HI-002"]
+      "evidence": ["HI-002", "HI-005"]
     },
     {
       "id": "disembodied",
@@ -36,7 +36,7 @@
       "id": "curse",
       "name": "Curse-bound",
       "summary": "A person, object, place, or action carries a hostile rule that persists until its particular condition is interrupted.",
-      "evidence": ["HI-001", "HI-002"]
+      "evidence": ["HI-001", "HI-002", "HI-005"]
     }
   ],
   "incidents": [
@@ -91,6 +91,19 @@
       "observedEffect": "The river behaves as though it can briefly contain a body larger than its physical depth. Water displacement, impact damage, and feeding traces persist after the shape itself is gone.",
       "knownWeakness": "No countermeasure is confirmed. Its dependence on the river may be a boundary, but it is not yet known whether the water contains the Holumn or belongs to it.",
       "spillContribution": "The pattern supports the possibility that the Spill changes a place's physical capacity as well as the creatures that can enter it."
+    },
+    {
+      "id": "HI-005",
+      "slug": "the-nameless-street",
+      "title": "The Nameless Street",
+      "recordType": "Urban legend and direct encounter",
+      "types": ["environmental", "event", "curse"],
+      "summary": "A lost visitor may enter a deserted old street whose lanes, stairs, courtyards, and hills cannot be reconciled with the surrounding city. Following anyone encountered there may prevent the visitor from returning to ordinary streets.",
+      "ordinaryReading": "Felix sees Lynleit stop responding, move toward a city bench, and faint after lunch. Dizziness, a severe headache, a dream, or a neurological episode can explain the only part of the incident another person directly observes.",
+      "hiddenReading": "The street behaves as a place-bound Holumn whose body is an impossible route and whose rule uses isolation, pursuit, and a fatal fall. Whether the girl, the boy, and the red balloon belong permanently to that rule remains unknown.",
+      "observedEffect": "The visitor is separated without perceiving a threshold, becomes dizzy and disoriented, and cannot navigate the district by ordinary geometry. Lynleit follows a crying girl to a broken fence, is pushed toward a dead boy below, and returns to a city bench before impact.",
+      "knownWeakness": "The urban warning instructs visitors not to follow anyone encountered on the street. It is not known whether refusing the lure guarantees escape or why Lynleit returns after following it.",
+      "spillContribution": "The encounter establishes that a Holumn can occupy urban arrangement itself. Its later connection to Fionn's fall may be anticipation, memory, coincidence, or a rule that makes one death resemble another; the evidence does not yet distinguish them."
     }
   ]
 }

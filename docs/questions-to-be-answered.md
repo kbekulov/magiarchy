@@ -12,6 +12,7 @@ Story, character, world, relationship, institution, location, and event question
 | Relationships | Which adult characters beyond Lynleit and Kyrien, Fionn and Helena, and the emerging Yulia and Hiyu bond have romantic or sexual histories that materially shape their present behavior? | 0% |
 | Holumn incident HI-001 | What does the voice want, and what changes when it stops copying the victim and begins speaking before the victim does? | 0% |
 | Holumn incident HI-002 | Who made or first completed the puzzle, how does its compulsion move between owners, and where does completion send its victims? | 0% |
+| Holumn incident HI-005 | What conditions admit a visitor to the Nameless Street, what are the girl and dead boy, and why does Lynleit return after following the lure? | 0% |
 | Holumns | Can any victim taken by a Holumn return, and what would return mean for the person's identity? | 0% |
 | Lester | How did Lester become a demiholumn, and what metaphysical answer about his human and Holumn conditions would most threaten his sense of self? | 0% |
 | Location | What emotional or thematic role will Narvea's western gateway serve before Port City receives its proper name? | 0% |
@@ -28,7 +29,6 @@ Story, character, world, relationship, institution, location, and event question
 | Natalia | What kind of case does Natalia refuse, and what does that refusal reveal about her priorities? | 5% |
 | Fionn and Helena | Was their marriage still physically intimate near Fionn's death, and what private moment best shows that bodily closeness could not repair the trust he withheld? | 5% |
 | Yulia and Hiyu | Which event makes either of them consciously recognize investigative dependence as desire, and who first names what is happening between them? | 5% |
-| The Church | What one narrow but terrifying authority is delegated to Father Mikhail, and what happens when that assignment crosses ordinary Church territories? | 5% |
 | River Holumns | Are the Drowned Choir and the river leviathan separate Holumns, two expressions of one river-bound intelligence, or phenomena feeding from the same wound? | 5% |
 | Holumns | Where do Holumns take disappeared victims, and what evidence can reveal the destination without yet explaining the mechanism or possibility of return? | 5% |
 | Core mystery | What logically defensible worldview and incompatible objective does each faction bring to Fionn, MSF, the Spill, and Narvea? | 10% |
@@ -39,7 +39,7 @@ Story, character, world, relationship, institution, location, and event question
 | Security | Which ordinary habits, complaints, chores, meals, and relationships keep the Director's House a family home while existential MSF work occurs inside it? | 10% |
 | MSF | Which officers learn that magic exists, what remains compartmentalized, and how does hidden knowledge become a second rank system inside the smaller post-Spill agency? | 10% |
 | MSF | What action can the government take against a defiant MSF when mutual dependence means the company cannot safely rebel and the state cannot safely destroy it? | 10% |
-| Lynleit | How is Fionn killed, who discovers him, and which true facts are placed in an emotionally believable false relationship to frame Lynleit? | 15% |
+| The Church | What narrow authority would allow Father Mikhail to be sent back to clean up Lynleit's witness breach, and what does that authority permit him to do? | 15% |
 | Opening chapter | What bureaucratic-sounding matter are Fionn and Lynleit negotiating before dawn that will later be revealed as horrifying, and why does Lynleit leave irritated? | 15% |
 | Heyk | What evidence does Heyk carry out of the park that is personally undeniable but institutionally useless, and how does that contradiction push him toward Drake and Sherie? | 15% |
 | Private investigation | Which case first connects Natalia and Lester to the central story, and what separate half of its impossible phenomenon can each of them understand? | 15% |
@@ -49,7 +49,9 @@ Story, character, world, relationship, institution, location, and event question
 | Core mystery | Which individually rational political and institutional pressures persuade Fionn to wait, and when does reasonable delay become his fatal mistake? | 20% |
 | Magi Academy | What is the Academy's normal admission and training hierarchy, and which exceptional student or body of knowledge can it not classify? | 20% |
 | MSF operations | Which operation lets Felix solve the communications layer while Reiner solves the physical layer, proving why Lynleit values their knight-and-rook combination? | 20% |
+| MSF | What formal agreement makes a still-private MSF partly accountable to the Magiarchy and Church after Mikhail discovers the witness breach? | 20% |
 | Government | What exact jurisdiction gives the confirmed Council of State authority when ordinary constitutional sovereignty collides with hidden supernatural sovereignty? | 25% |
+| Lynleit | Does Fionn die from the fall below the Vilen family house, from an earlier attack, or from a staged combination, and who first reaches his body? | 25% |
 | Helena | What legitimate wrong does Fionn's compartmentalization inflict on Helena, and when does her response to that grievance become monstrous? | 25% |
 | Boat operation | What scar remains in the river after the failed infiltration, and in what sense can the place remember the encounter without proving that memory is conscious? | 30% |
 | Resolution | What human victory ends Helena's control and settles the political crisis while leaving the supernatural wound of the Spill open? | 30% |
@@ -67,8 +69,8 @@ Story, character, world, relationship, institution, location, and event question
 | Core mystery | Which incompatible agendas intend which outcomes around Fionn, and how do they accidentally cooperate to cause a death that none completely controls? | 45% |
 | Park trespass | How do Hiyu and Yulia bypass the cordon, what price do they pay to survive, and what evidence proves their experience while making their testimony harder to believe? | 45% |
 | Hotel refuge | What tiny ordinary behavior does Kyrien witness once Lynleit no longer has the strength to perform being Lynleit, and what private trust exists the next morning? | 45% |
-| Boat operation | What breaks the silent standoff between Lynleit and the Drowned Choir, does blue flame enter the encounter, and how do Lynleit and Kyrien finally reach shore? | 45% |
 | Relationship | Which repeated functional encounters make Lynleit and Kyrien necessary to one another despite neither wanting the dependence, bridging river, hotel, and end-of-arc intimacy? | 50% |
+| Boat operation | What breaks the silent standoff between Lynleit and the Drowned Choir, does blue flame enter the encounter, and how does Lynleit escape to the confirmed park-side bank? | 55% |
 | Character appearance | What exact heights belong to the illustrated cast, and which artwork-derived hair, eye, build, or distinguishing details require correction? | 70% |
 | Covert alliance | Beyond the confirmed river-surveillance operation, what does Lynleit refuse to provide Drake and Sherie, and what concessions or favors do they offer in return? | 70% |
 
@@ -84,5 +86,6 @@ These questions determine sequence, event placement, reveal timing, or elapsed t
 | Timeline | Exactly how many years pass between Lynleit's disappearance and return, and how old is her and Kyrien's son when she reappears? | 25% |
 | House chronology | How old was Lynleit when she made the third-floor room a condition of moving from Turon to Vilen, and when did the Vilen house become a residential MSF node? | 35% |
 | Fugitive campaign | How much time passes between the hotel-room refuge, Kyrien's first secure contact with Felix and Reiner, Lynleit's first foothold inside MSF, and Helena's eventual loss of control? | 35% |
+| Nameless Street | Exactly how many days separate Lynleit's encounter from Fionn's death, and which intervening scene allows the memory to recede before it returns? | 40% |
 | Relationship | At what point in the opening chapters does Lynleit reveal Kyrien's recruitment to Felix and Reiner, where does the disclosure occur, and how much time remains before Fionn's assassination? | 60% |
 | Relationship | Is Lynleit and Kyrien's end-of-arc sexual encounter the conception of their son, when does Lynleit realize she is pregnant, and how much time passes before she disappears? | 65% |
