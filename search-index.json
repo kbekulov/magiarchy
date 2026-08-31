@@ -1,6 +1,6 @@
 {
-  "generated": "2026-08-31T05:35:40.392Z",
-  "count": 338,
+  "generated": "2026-08-31T05:55:32.116Z",
+  "count": 339,
   "entries": [
     {
       "id": "page-characters",
@@ -1497,6 +1497,14 @@
       "url": "index.html#update-question-ledger-dramatic-constraints",
       "subtitle": "Home update feed",
       "text": "Canon Audit: Site update Home update feed QA Canon Audit 28 Aug 2026 · Questions and dramatic constraints The open-question ledger now asks for choices with character, thematic, or narrative consequence instead of background encyclopedia detail. Confirmed additions establish the Council of State's jurisdictional paradox, MSF's freedom to accept private clients, the independent origin of the Spill, the river's lingering scar, Helena's partial complicity, and the incompatible agendas that converge into Fionn's death. Review the revised questions →"
+    },
+    {
+      "id": "update-update-relationship-map-border",
+      "title": "Character Archive: Site update",
+      "type": "Update",
+      "url": "index.html#update-relationship-map-border",
+      "subtitle": "Home update feed",
+      "text": "Character Archive: Site update Home update feed UI Character Archive 31 Aug 2026 · Relationship map finish The relationship visualisation and its selected-character record now share one continuous frame and a clean dividing line. Open Lynleit's relationship map →"
     },
     {
       "id": "update-update-interactive-relationship-maps",
