@@ -128,14 +128,20 @@
     "known": [
       "The scene occurs in the early chapters, after danger has begun outside but before Lynleit's life starts to collapse.",
       "The grey cat is male and is named Ash.",
-      "Ash trespasses into Lynleit's family house and becomes an omen of outside threats entering her private life.",
+      {
+        "text": "Ash's trespass and permanent stay allow the reader to treat him as an omen of outside threats entering Lynleit's private life without any character naming him as one.",
+        "status": "inferred"
+      },
       "The family maintained an original house in Turon while Lynleit's mother was alive and Lynleit was in junior school.",
       "After her mother's death, the family moved to a Vilen residence for Fionn's access to the capital. Lynleit accepted the move only after securing the third-floor study-bedroom.",
       "The Vilen house is a three-floor family residence on a wooded hill above the river that flows toward the city center, with a small rear park and garden.",
       "Lynleit values the thick vegetation and the sound of leaves and branches in the wind. She regards nearby flowing water as life energy and seeks its emotional grounding despite her childhood fear of drowning.",
       "The garden-facing first floor contains glass-enclosed relaxation areas that preserve contact with nature through every season.",
       "Lynleit personally chases Ash through the house, revealing a clumsier and more childish side of her than her public role usually permits.",
-      "As Ash repeatedly escapes her, Lynleit intuitively and emotionally connects him with her leads, understanding of her life, and sense of safety escaping her control.",
+      {
+        "text": "The chase can imply that Ash's repeated escapes echo Lynleit's fear that her leads, understanding, and safety are also escaping her control.",
+        "status": "inferred"
+      },
       "Lynleit eventually catches Ash.",
       "She cannot bring herself to expel him because rain is falling outside.",
       "Ash decides to remain and becomes a permanent loiterer in the family home."
@@ -214,7 +220,10 @@
       "He cannot yet identify where the conspiracy begins or how far it reaches.",
       "His peers ridicule the suspicion and the Duke remains skeptical.",
       "Drake interprets the park disappearances as possible cover for the illegal movement of material intended for action against Narvea or Ducal authority.",
-      "The apparent coup is a political mask over a deeper conflict involving Fionn, Magiarchs abroad, and manipulative actors across several churches."
+      {
+        "text": "The mismatch between Drake's political evidence and the park's impossible events lets the reader infer that the apparent coup is a mask over a deeper conflict involving Fionn, foreign Magiarchs, and church actors.",
+        "status": "inferred"
+      }
     ],
     "openQuestions": [
       "What first convinces Drake that the irregularities form a coup attempt?",
@@ -298,8 +307,8 @@
     "sceneType": "Failed river surveillance",
     "thread": "The suspected coup and the Spill",
     "location": "A Vilen river bridge linking a city street to the quarantined park",
-    "summary": "A covert MSF team descends from a bridge to inspect small night shipments requested by Drake and Sherie. The boats arrive empty because the Drowned Choir has already taken their crews, and the operation ends with Lynleit standing on the river before a Holumn that cannot understand what she has done.",
-    "purpose": "Reveals the supernatural cause inside an operation still framed as contraband surveillance, forces Lynleit's drowning fear to manifest as forbidden water walking, and gives Kyrien a secret he chooses to protect before either character trusts the other openly.",
+    "summary": "A covert MSF team descends from a bridge to inspect small night shipments requested by Drake and Sherie. The tarp-covered wooden boats arrive empty, the Drowned Choir attacks from below, and Kyrien secretly witnesses Lynleit burn the drowned hands and stand on the river.",
+    "purpose": "Carries an operation framed as contraband surveillance into the supernatural without a formal reveal, turns Lynleit's drowning fear into uncontrolled blue flame and forbidden water walking, and gives Kyrien a secret he chooses to protect before either character trusts the other openly.",
     "characters": [
       { "name": "Sherie", "slug": "sherie" },
       { "name": "Drake", "slug": "drake" },
@@ -320,48 +329,58 @@
       "Sherie and Drake ask Lynleit to assemble a loyal MSF team and investigate recurring night traffic on the Vilen river.",
       "Drake's intelligence identifies small boats moving only on the darkest nights. No operator is visible, the pattern appears intricate, and contraband remains a plausible explanation.",
       "The chosen bridge links a city street to the quarantined park.",
-      "The plan requires the team to freeze the bridge's civil safety cameras, wait within a narrow surveillance window, descend by rope onto the boats, inspect their contents, and leave by rope at the next bridge.",
+      "The plan requires Felix to freeze the bridge's civil safety cameras, maintain communications, and remain on the city side as fallback while the river team descends by rope, inspects the boats, and leaves by rope at the next bridge.",
       "Several nights produce no boats. Each unsuccessful watch consumes the limited camera window and exposes Lynleit or Kyrien to small oddities emerging from the quarantined park that the mission gives them no freedom to pursue.",
       "The successful interception occurs on the fifth watch.",
       "The unsuccessful watches reveal a branch breaking before the wind reaches the trees and a pale interruption in a frozen camera feed.",
-      "When the boats finally appear, the team descends and finds them empty.",
+      "The boats are small wooden craft with dark tarps over shallow holds. Fixed rudders keep them aligned while the current provides most of their movement.",
+      "When the boats finally appear, Reiner, Lynleit, Kyrien, Maren, and Ivo descend and find them empty. Felix remains ashore.",
       {
         "text": "The empty boats, drowned hands, and pale girl imply that the Drowned Choir took the contraband crews before the interception, although the surviving officers cannot prove that connection.",
         "status": "inferred"
       },
       "The river attack begins while the officers search the empty boats for another explanation.",
       "The officers are capable swimmers. Reaching shore becomes difficult because unseen hands seize their legs and pull downward.",
-      "After reaching land, one female officer describes the sensation of hands gripping and pulling her legs.",
-      "Felix, Reiner, and the other MSF officers reach the street-facing city bank without understanding what attacked them and do not realize that Lynleit remains behind.",
-      "The hands belong to people who drowned in the river across generations. The girl in the water has enslaved their souls and uses them to drown new victims.",
+      "After reaching land, Maren describes the sensation of hands gripping and pulling her legs.",
+      "Reiner, Maren, and Ivo reach the street-facing city bank with Felix's fallback line without understanding what attacked them. They do not realize that Lynleit remains behind.",
+      {
+        "text": "The dead hands, the pale girl's drowned voices, and the pattern of new victims imply that she has bound people who drowned in the river across generations and uses them to pull others under.",
+        "status": "inferred"
+      },
       "Only Lynleit sees the hands clearly. They seize her most violently and drag her underwater.",
-      "The attack activates her childhood fear of drowning and provokes an unusually violent Magus response.",
-      "Lynleit fights back to the air and discovers herself standing on the river surface, soaked, breathless, and as bewildered as the entity below her.",
+      "Lynleit wears a fitted blue suede jacket for the operation because it interferes less with ropes and wet timber than her usual coat.",
+      "The hands tear the blue suede jacket away during the underwater struggle.",
+      "The attack activates her childhood fear of drowning. Fury releases her blue flame at unsafe volume, and the fire catches and burns the drowned hands even beneath the water.",
+      "After breaking the surface, Lynleit's palm meets resistance. She brings a knee and then both boots onto the same yielding layer until she stands above the river.",
       "The drowned hands reach upward from the darkness but cannot pass through the surface layer beneath Lynleit's feet.",
       "A pale girl emerges wearing a dress made from dead fish. Fishing line sews her eyes shut.",
-      "The girl is the embodied Holumn governing the drowned hands. The souls she holds form the Drowned Choir.",
-      "She stares at Lynleit in silence, then tilts her head in confusion because a person standing on water contradicts the rule by which she drowns people.",
+      {
+        "text": "The girl's silence and tilted head imply that a person standing on water contradicts the rule by which she takes victims.",
+        "status": "inferred"
+      },
       "Kyrien is present as Lynleit's concealed unofficial asset rather than an acknowledged MSF officer.",
       "The force in the river separates Kyrien from the official team and drives him toward the quarantined park side of the river.",
       "Kyrien reaches the park bank, enters the trees, and observes Lynleit's confrontation on the river from inside the quarantine.",
       "Only Kyrien witnesses Lynleit walking on water.",
+      "Lynleit tests each step across the yielding surface and backs toward the park bank while the girl remains still.",
       "Kyrien is too careful to acknowledge what he saw and feigns innocence convincingly.",
-      "Lynleit later reaches the park side of the river, where Kyrien is waiting among the trees.",
+      "Lynleit reaches the park side of the river without the jacket, where Kyrien is waiting among the trees.",
       "They remain inside the night park, drenched and struggling to catch their breath.",
       "They sit with their backs pressed together to share body heat while they recover.",
       "Lynleit indirectly asks whether Kyrien saw anything strange during the escape.",
       "Kyrien denies seeing anything, and his careful performance of innocence gives Lynleit nothing she can safely test.",
-      "His silence becomes the first trigger in an intimacy that develops slowly through practical dependence and protected knowledge."
+      {
+        "text": "Kyrien's decision to protect the secret, made without an order from Lynleit, implies the first voluntary trust inside their coerced alliance.",
+        "status": "inferred"
+      }
     ],
     "openQuestions": [
-      "Which oddities emerge from the quarantined park during the unsuccessful watches?",
-      "What breaks the silent standoff between Lynleit and the girl, does blue flame enter the encounter, and how does Lynleit escape to the park bank?",
       "What form does the river's scar take, and in what sense does the place remember the encounter?",
-      "Which additional MSF officers join the infiltration?",
-      "What intelligence survives the failed operation?"
+      "What intelligence survives the failed operation beyond the officers' separate accounts?",
+      "Does the submerged blue flame leave a lasting injury on the Drowned Choir or only force the hands to release Lynleit?"
     ],
     "continuityBefore": "The hilltop agreement gives Drake and Sherie access to a small loyal MSF team without granting them control of the agency. Their first request is a limited investigation of apparently unmanned river shipments, with contraband still the leading material explanation.",
-    "continuityAfter": "Felix, Reiner, and the other officers carry an account of impossible resistance back to the city bank but no shared sight of its cause. Kyrien observes the river from the quarantined trees, and Lynleit later joins him on the park bank. Drenched and seated back to back inside the park, they preserve a mutual silence around what he witnessed. Much later, after Fionn's murder, the hotel-room refuge deepens that physical trust into emotional reliance.",
+    "continuityAfter": "Felix, Reiner, Maren, and Ivo carry an account of impossible resistance from the city bank but no shared sight of its cause. Kyrien observes the river from the quarantined trees, and Lynleit later joins him on the park bank without the blue suede jacket. Drenched and seated back to back inside the park, they preserve a mutual silence around what he witnessed. Lynleit later complains about the lost jacket. Much later, after Fionn's murder, the hotel-room refuge deepens that physical trust into emotional reliance.",
     "chapterSlug": "the-empty-boats-beneath-the-bridge",
     "updated": "2026-08-31"
   },
@@ -691,6 +710,61 @@
     ],
     "continuityBefore": "Lynleit has already allowed Kyrien, Felix, and Reiner to operate with knowledge that ordinary MSF officers and outsiders are forbidden to possess.",
     "continuityAfter": "Lynleit must create an institutional place for people she refuses to suppress or surrender. The eventual answer changes MSF's mandate and places part of the private company inside the Magiarchal and Church order.",
+    "chapterSlug": null,
+    "updated": "2026-08-31"
+  },
+  {
+    "slug": "the-coat-fionn-left-behind",
+    "code": "MOM-016",
+    "title": "The Coat Fionn Left Behind",
+    "status": "Inherited object",
+    "placementStatus": "After Fionn's death confirmed, exact placement unresolved",
+    "timelinePhase": "clear-her-name",
+    "timelineLabel": "Clear Her Name",
+    "sequence": 3,
+    "sceneType": "Posthumous discovery",
+    "thread": "Fionn's concealed protection",
+    "location": "Unspecified",
+    "summary": "Long after losing a blue suede jacket in the river, Lynleit learns that Fionn had discreetly replaced the blue coat she wears with a garment sewn from material called the hide of leviathan.",
+    "purpose": "Turns a familiar piece of clothing into evidence of Fionn's concealed care. Its protection is useful but conditional, and its autonomous changes of form keep the inheritance from behaving like a passive suit of armour.",
+    "characters": [
+      {
+        "name": "Lynleit",
+        "slug": "lynleit"
+      },
+      {
+        "name": "Fionn",
+        "slug": "fionn"
+      }
+    ],
+    "characterAnchors": [
+      {
+        "slug": "lynleit",
+        "beat": "Fugitive Counteroffensive"
+      },
+      {
+        "slug": "fionn",
+        "beat": "The Inheritance after Death"
+      }
+    ],
+    "known": [
+      "Lynleit loses a fitted blue suede jacket during the Drowned Choir attack and later complains about the loss because she liked it.",
+      "After Fionn's death, Lynleit discovers that he had discreetly replaced the blue coat she wears.",
+      "The replacement is sewn from material called the hide of leviathan.",
+      "The coat can shield its user from minor magically induced damage and phenomena.",
+      "Wearing the coat is not enough to activate its protection. Lynleit must cover the threatened part of her body or remove the garment and place or throw it over someone who needs protection.",
+      "The coat chooses its own form. It may appear as a coat, scarf, an imitation of Lynleit's lost blue jacket, or another piece of clothing.",
+      "Lynleit cannot command the change, which creates occasional practical and comic problems."
+    ],
+    "openQuestions": [
+      "When did Fionn replace the original coat, and how did he do it without Lynleit noticing?",
+      "How does Lynleit discover the substitution after his death?",
+      "What does hide of leviathan mean, and is it connected to the river phenomenon recorded as HI-004?",
+      "What counts as minor magically induced damage, and what limits the coat's protection?",
+      "Why does the coat choose forms autonomously, and can it refuse the form Lynleit needs?"
+    ],
+    "continuityBefore": "Lynleit loses the blue suede jacket during the river operation. Fionn dies without explaining the protective garment he had placed in her wardrobe.",
+    "continuityAfter": "The inherited coat becomes part of Lynleit's equipment. Its changing forms can preserve the silhouette of the lost jacket, but its protection remains deliberate rather than automatic.",
     "chapterSlug": null,
     "updated": "2026-08-31"
   },

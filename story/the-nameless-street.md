@@ -174,7 +174,7 @@ The sheet struck her again.
 
 She opened her eyes.
 
-Felix stood over her, violently fanning her with the folded newspaper. Behind him, the ordinary city moved without concern. People crossed the square. A tram sounded somewhere beyond the buildings. The dry fountain was close enough for Lynleit to hear children running around it.
+Felix stood over her, violently fanning her with the folded newspaper. Behind him, the ordinary city moved without concern. People crossed the square. A bus braked somewhere beyond the buildings. The dry fountain was close enough for Lynleit to hear children running around it.
 
 She was lying across a bench.
 

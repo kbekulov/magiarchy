@@ -437,6 +437,65 @@ function enhanceCharacterIntimacyDocument(container) {
   }
 }
 
+function enhanceCharacterBehaviorDocument(container) {
+  const title = container.querySelector(':scope > h1');
+  const lede = title?.nextElementSibling;
+  if (lede?.tagName === 'P') lede.classList.add('behavior-lede');
+
+  const legend = document.createElement('div');
+  legend.className = 'behavior-legend';
+  legend.setAttribute('aria-label', 'Advisory note key');
+  [
+    ['♀', 'Female character lens', 'is-female'],
+    ['♂', 'Male character lens', 'is-male'],
+    ['✦', 'Story-pressure suggestion', 'is-story']
+  ].forEach(([iconText, labelText, className]) => {
+    const item = document.createElement('span');
+    item.className = className;
+    const icon = document.createElement('i');
+    icon.setAttribute('aria-hidden', 'true');
+    icon.textContent = iconText;
+    item.append(icon, document.createTextNode(labelText));
+    legend.append(item);
+  });
+  if (lede) lede.after(legend);
+  else if (title) title.after(legend);
+
+  const sectionHeadings = Array.from(container.querySelectorAll(':scope > h2'));
+  const methodHeading = sectionHeadings.find((heading) => heading.id === 'how-the-audit-works');
+  const followingHeading = methodHeading ? sectionHeadings[sectionHeadings.indexOf(methodHeading) + 1] : null;
+  if (methodHeading && followingHeading) {
+    const method = document.createElement('section');
+    method.className = 'behavior-method';
+    method.setAttribute('aria-labelledby', methodHeading.id);
+    container.insertBefore(method, methodHeading);
+    collectDocumentNodes(methodHeading, followingHeading).forEach((node) => method.append(node));
+  }
+
+  Array.from(container.querySelectorAll(':scope > h2')).forEach((heading, index) => {
+    heading.classList.add('behavior-section-heading');
+    heading.dataset.section = String(index + 1).padStart(2, '0');
+  });
+
+  Array.from(container.querySelectorAll(':scope > blockquote')).forEach((note) => {
+    const marker = note.textContent.trim().match(/^([♀♂✦])/u)?.[1] || '✦';
+    const className = marker === '♀' ? 'is-female' : marker === '♂' ? 'is-male' : 'is-story';
+    note.classList.add('behavior-note', className);
+
+    const walker = document.createTreeWalker(note, NodeFilter.SHOW_TEXT);
+    const firstText = walker.nextNode();
+    if (firstText) firstText.nodeValue = firstText.nodeValue.replace(/^\s*[♀♂✦]\s*/u, '');
+
+    const body = document.createElement('div');
+    while (note.firstChild) body.append(note.firstChild);
+    const icon = document.createElement('span');
+    icon.className = 'behavior-note-icon';
+    icon.setAttribute('aria-hidden', 'true');
+    icon.textContent = marker;
+    note.append(icon, body);
+  });
+}
+
 async function loadDocument(entry) {
   if (!documentReader || !documentMeta || !documentError) return;
 
@@ -446,6 +505,7 @@ async function loadDocument(entry) {
   documentReader.replaceChildren();
   documentReader.classList.toggle('holumn-testimony-document', entry.slug === 'holumn-incidents-and-testimonies');
   documentReader.classList.toggle('character-intimacy-document', entry.slug === 'character-intimacy-and-sexuality');
+  documentReader.classList.toggle('character-behavior-document', entry.slug === 'character-behavior-audit');
   documentError.hidden = true;
   documentMeta.textContent = 'Loading document…';
 
@@ -458,6 +518,7 @@ async function loadDocument(entry) {
     const markdown = await response.text();
     documentReader.append(renderMarkdown(markdown));
     if (entry.slug === 'character-intimacy-and-sexuality') enhanceCharacterIntimacyDocument(documentReader);
+    if (entry.slug === 'character-behavior-audit') enhanceCharacterBehaviorDocument(documentReader);
     documentMeta.textContent = `${entry.topic} · ${entry.speakers.join(' / ')} · Updated ${entry.updated}`;
 
     if (documentSummary) {

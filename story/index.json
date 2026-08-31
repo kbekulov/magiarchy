@@ -90,14 +90,23 @@
     "events": [
       "Sherie and Drake ask Lynleit to assemble a loyal team and inspect recurring night traffic on the Vilen river.",
       "Several surveillance nights produce no boats while small oddities emerge from the quarantined park.",
-      "Felix freezes the bridge cameras, Reiner prepares the ropes, and the team descends onto the boats when they finally appear.",
+      "Felix freezes the bridge cameras and remains on the city bank as fallback while Reiner leads Lynleit, Kyrien, Maren, and Ivo down onto the boats.",
       {
         "text": "The empty boats, drowned hands, and pale girl imply that the contraband crews were taken before the interception.",
         "status": "inferred"
       },
-      "Felix, Reiner, and the other officers reach the city bank while Kyrien is forced toward the quarantined park bank.",
-      "The drowned hands drag Lynleit underwater until her fear provokes water walking and leaves her facing the pale girl on the river.",
-      "Lynleit later reaches Kyrien inside the park, where they sit back to back for warmth and he conceals what he witnessed."
+      "Reiner, Maren, and Ivo reach the city bank with Felix's fallback line while Kyrien is forced toward the quarantined park bank.",
+      "The drowned hands tear away Lynleit's blue suede jacket and drag her underwater until fury releases blue flame through the river.",
+      "The river surface holds beneath Lynleit's palm, knee, and boots, allowing her to stand above hands that cannot cross it.",
+      {
+        "text": "The pale girl's silence and tilted head imply that Lynleit's survival contradicts the rule by which the Drowned Choir takes people.",
+        "status": "inferred"
+      },
+      {
+        "text": "Kyrien's careful denial and continued silence imply that he has chosen to protect Lynleit's forbidden ability before either of them openly trusts the other.",
+        "status": "inferred"
+      },
+      "Lynleit crosses the held surface to the park bank and later sits back to back with Kyrien for warmth among the trees."
     ]
   },
   {

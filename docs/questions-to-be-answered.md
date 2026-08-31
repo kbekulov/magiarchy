@@ -19,6 +19,7 @@ Story, character, world, relationship, institution, location, and event question
 | Location | What older personal name belongs to the Director's House, and what painful memory changes how the reader understands Fionn or Lynleit? | 0% |
 | Private investigation | What mundane, slightly absurd referral network carries impossible cases to Natalia, and how does she screen it without alerting the Magiarchy or Church? | 0% |
 | Kyrien | Which surviving military contact forces Kyrien to choose between loyalty to his father's officer code and loyalty to Lynleit or MSF? | 0% |
+| Inherited coat | What does "hide of leviathan" mean, and is the material connected to the river phenomenon recorded as HI-004? | 0% |
 | Helena | Is Helena a non-Magus who manipulates supernatural institutions, and if so, what access, allies, and leverage make that possible? | 5% |
 | Spill inquiry | Which three experts does Lynleit consult, and how can their incompatible explanations of the Spill each be partly correct? | 5% |
 | Relationship | Which serious clash forces Felix to recognize Kyrien's value without requiring either man to like the other? | 5% |
@@ -50,6 +51,7 @@ Story, character, world, relationship, institution, location, and event question
 | Magi Academy | What is the Academy's normal admission and training hierarchy, and which exceptional student or body of knowledge can it not classify? | 20% |
 | MSF operations | Which operation lets Felix solve the communications layer while Reiner solves the physical layer, proving why Lynleit values their knight-and-rook combination? | 20% |
 | MSF | What formal agreement makes a still-private MSF partly accountable to the Magiarchy and Church after Mikhail discovers the witness breach? | 20% |
+| Inherited coat | How does Lynleit discover that Fionn replaced her coat, and what evidence establishes that he arranged the substitution before his death? | 20% |
 | Government | What exact jurisdiction gives the confirmed Council of State authority when ordinary constitutional sovereignty collides with hidden supernatural sovereignty? | 25% |
 | Lynleit | Does Fionn die from the fall below the Vilen family house, from an earlier attack, or from a staged combination, and who first reaches his body? | 25% |
 | Helena | What legitimate wrong does Fionn's compartmentalization inflict on Helena, and when does her response to that grievance become monstrous? | 25% |
@@ -70,7 +72,7 @@ Story, character, world, relationship, institution, location, and event question
 | Park trespass | How do Hiyu and Yulia bypass the cordon, what price do they pay to survive, and what evidence proves their experience while making their testimony harder to believe? | 45% |
 | Hotel refuge | What tiny ordinary behavior does Kyrien witness once Lynleit no longer has the strength to perform being Lynleit, and what private trust exists the next morning? | 45% |
 | Relationship | Which repeated functional encounters make Lynleit and Kyrien necessary to one another despite neither wanting the dependence, bridging river, hotel, and end-of-arc intimacy? | 50% |
-| Boat operation | What breaks the silent standoff between Lynleit and the Drowned Choir, does blue flame enter the encounter, and how does Lynleit escape to the confirmed park-side bank? | 55% |
+| Boat operation | Does the submerged blue flame leave a lasting injury on the Drowned Choir, and what does the girl's refusal to pursue Lynleit reveal about its limits? | 65% |
 | Character appearance | What exact heights belong to the illustrated cast, and which artwork-derived hair, eye, build, or distinguishing details require correction? | 70% |
 | Covert alliance | Beyond the confirmed river-surveillance operation, what does Lynleit refuse to provide Drake and Sherie, and what concessions or favors do they offer in return? | 70% |
 
@@ -82,6 +84,7 @@ These questions determine sequence, event placement, reveal timing, or elapsed t
 | --- | --- | --- |
 | Family | When, if ever, does Kyrien learn that Lynleit bore his son, and where does that revelation belong in relation to Lynleit's elusive return and his leadership of MSF? | 0% |
 | Timeline | How much time passes between the first disappearance, the park quarantine, Kyrien's early recruitment, Fionn's much later assassination, Helena's takeover, and the hunt for Lynleit's arrest? | 10% |
+| Inherited coat | When does Fionn replace Lynleit's coat relative to the river operation, and how long after his death does she discover what he left her? | 10% |
 | Succession | When does Lynleit formally inherit the Magiarchate after Fionn's death, and how does that transfer of responsibility overlap with Kyrien assuming MSF's director seat? | 20% |
 | Timeline | Exactly how many years pass between Lynleit's disappearance and return, and how old is her and Kyrien's son when she reappears? | 25% |
 | House chronology | How old was Lynleit when she made the third-floor room a condition of moving from Turon to Vilen, and when did the Vilen house become a residential MSF node? | 35% |

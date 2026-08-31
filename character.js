@@ -15,7 +15,8 @@ const profileSeeds = [
       ['Variation rule', 'Other outfits may change the coat length, layers, or degree of formality, but usually preserve a blue tailored outer layer, a pale blouse, restrained black detailing, and tall practical footwear.']
     ],
     equipment: [
-      { label: 'Issued sidearm', title: 'Ren L17 "Sparrow"', meta: ['9×17 mm', 'Leather OWB holster', 'Right-handed draw'], detail: 'Lynleit carries the compact Sparrow in a snug leather outside-the-waistband holster centered just above her tailbone. A rightward cant lets her draw with her right hand. The pistol\'s small proportions and the long jackets or coats central to her wardrobe keep it concealed without disturbing her usual silhouette.', href: 'weapons.html#ren-l17-sparrow' }
+      { label: 'Issued sidearm', title: 'Ren L17 "Sparrow"', meta: ['9×17 mm', 'Leather OWB holster', 'Right-handed draw'], detail: 'Lynleit carries the compact Sparrow in a snug leather outside-the-waistband holster centered just above her tailbone. A rightward cant lets her draw with her right hand. The pistol\'s small proportions and the long jackets or coats central to her wardrobe keep it concealed without disturbing her usual silhouette.', href: 'weapons.html#ren-l17-sparrow' },
+      { label: 'Inherited protection', title: 'Leviathan-hide coat', meta: ['Autonomous form', 'Minor magical protection', 'Active coverage required'], detail: 'After Fionn\'s death, Lynleit discovers that he had discreetly replaced her blue coat with a garment sewn from material called the hide of leviathan. The coat chooses whether to appear as a coat, scarf, an imitation of her lost suede jacket, or another piece of clothing. Its protection does not activate merely because she wears it. She must cover the threatened part of her body or place the garment over someone else.' }
     ],
     personalitySummary: 'Lynleit studies hidden structures with private precision, interprets present events through their future consequences, and builds contingencies around the people for whom she feels responsible. Under pressure, she moves toward those people and assumes responsibility for the human cost of her strategy.',
     traits: [
@@ -30,7 +31,7 @@ const profileSeeds = [
       { label: 'Accidental miracle-making', title: 'Walking on water', detail: 'This ability was neither inherited nor taught. It manifested from her childhood fear of drowning and allows her to cross the surface of water on foot. Its resemblance to a sacred miracle places it outside tolerated magecraft.' },
       { label: 'Strictly concealed', title: 'Night practice', detail: 'Lynleit keeps the talent secret from everyone because the Church strongly punishes miracle-making that imitates acts associated with Jesus, saints, saviours, and other sacred figures, even when the effect seems harmless. She practices alone at night on secluded stretches of local lakes and rivers.' }
     ],
-    origin: 'Lynleit is Fionn\'s biological daughter and intended heir. Helena is her stepmother, not her biological mother. Raised close to MSF leadership, Lynleit inherits Fionn\'s blue-flame magecraft, while a childhood fear of drowning independently manifests as the forbidden ability to walk on water. Felix and Reiner are already her close, long-standing friends before the story begins, as well as the personal bodyguards Fionn trusts with her safety. Her relationship with Helena is always tense. Before any open conspiracy, Lynleit notices Helena repeatedly probing details that seem domestic in isolation: Fionn\'s schedules, visitors to the house, officers he trusts, and Lynleit\'s own travel. She begins to suspect murder because somebody is studying her family too carefully. Within the first few chapters, she senses a near-future danger she cannot yet prove and uses an extraordinary transfer clause in MSF\'s government service contract to recruit Kyrien as her first deeply anti-protocol MSF decision. She eventually limits the truth to Felix and Reiner without informing even Fionn.', rupture: 'Days before Fionn\'s death, the Nameless Street leaves Lynleit with the memory of a dead boy below a broken fence. When Fionn is later found below the hill at the family house, the resemblance stupefies her and allows Helena to give a false meaning to a genuine reaction. The still-unresolved conspiracy vindicates Lynleit\'s warning without implying that she foresaw its exact form. Helena takes control, frames Lynleit for his death, and directs a hunt for her arrest. Lynleit exhausts her available resources to escape and reaches Kyrien\'s hotel-room hideout, where her composure finally breaks. He later helps her establish contact with Felix and Reiner, beginning her slow effort to reclaim MSF while she remains hunted. Lynleit continues initiating Fionn\'s blue recognition sequence on the run. His most conservative old officers recognize the conversational response that Helena cannot give and begin to treat obedience to the founder\'s protocol as a reason to question his official successor.', focus: 'During the river surveillance requested by Sherie and Drake, drowned hands drag Lynleit underwater more violently than the other officers. Felix, Reiner, and the other officers reach the city bank, while Kyrien is driven toward the quarantined park bank and observes from inside the trees. Lynleit\'s fear of drowning provokes an extreme Magus response, and she breaks the surface to find herself standing above hands that cannot reach through the water beneath her feet. Only Kyrien sees the forbidden act. Lynleit later reaches him inside the night park, where, both drenched and breathless, they sit back to back for warmth. His careful denial protects her secret and becomes the first trigger in their slowly developing intimacy. Father Mikhail later discovers that she has shared forbidden knowledge with Kyrien, Felix, and Reiner. Her refusal to surrender or suppress them begins the pressure to create a formal Magi role for MSF.', future: 'Their relationship becomes sexual only at the end of the first arc, after intimacy has accumulated slowly through functional care, danger, and trust. Pregnancy and disappearance follow. After restoring a smaller MSF around the unfinished Spill, Lynleit vanishes to protect the pregnancy, deliver the child beyond the conflict\'s reach, recover, and consult wiser people about the Spill\'s origins. Years later she does not announce a return. She appears around MSF missions, sometimes seemingly by accident and sometimes by design, and her unexplained presence can make her look like a culprit.',
+    origin: 'Lynleit is Fionn\'s biological daughter and intended heir. Helena is her stepmother, not her biological mother. Raised close to MSF leadership, Lynleit inherits Fionn\'s blue-flame magecraft, while a childhood fear of drowning independently manifests as the forbidden ability to walk on water. Felix and Reiner are already her close, long-standing friends before the story begins, as well as the personal bodyguards Fionn trusts with her safety. Her relationship with Helena is always tense. Before any open conspiracy, Lynleit notices Helena repeatedly probing details that seem domestic in isolation: Fionn\'s schedules, visitors to the house, officers he trusts, and Lynleit\'s own travel. She begins to suspect murder because somebody is studying her family too carefully. Within the first few chapters, she senses a near-future danger she cannot yet prove and uses an extraordinary transfer clause in MSF\'s government service contract to recruit Kyrien as her first deeply anti-protocol MSF decision. She eventually limits the truth to Felix and Reiner without informing even Fionn.', rupture: 'Days before Fionn\'s death, the Nameless Street leaves Lynleit with the memory of a dead boy below a broken fence. When Fionn is later found below the hill at the family house, the resemblance stupefies her and allows Helena to give a false meaning to a genuine reaction. The still-unresolved conspiracy vindicates Lynleit\'s warning without implying that she foresaw its exact form. Helena takes control, frames Lynleit for his death, and directs a hunt for her arrest. Lynleit exhausts her available resources to escape and reaches Kyrien\'s hotel-room hideout, where her composure finally breaks. He later helps her establish contact with Felix and Reiner, beginning her slow effort to reclaim MSF while she remains hunted. Lynleit continues initiating Fionn\'s blue recognition sequence on the run. His most conservative old officers recognize the conversational response that Helena cannot give and begin to treat obedience to the founder\'s protocol as a reason to question his official successor.', focus: 'During the river surveillance requested by Sherie and Drake, Lynleit chooses a fitted blue suede jacket for mobility while Felix remains on the city bank as the communications fallback. Reiner, Maren, and Ivo reach him after drowned hands overturn the inspection. Kyrien is driven toward the quarantined park bank and observes from inside the trees. The hands drag Lynleit underwater, tear away the jacket, and trigger fury alongside her childhood fear of drowning. Her blue flame burns the hands even beneath the water. After she breaks the surface, it supports her palm, knee, and boots until she stands above hands that cannot cross the surface layer. Only Kyrien sees the forbidden act. Lynleit later reaches him inside the night park, where, both drenched and breathless, they sit back to back for warmth. His careful denial protects her secret and becomes the first trigger in their slowly developing intimacy. Father Mikhail later discovers that she has shared forbidden knowledge with Kyrien, Felix, and Reiner. Her refusal to surrender or suppress them begins the pressure to create a formal Magi role for MSF.', future: 'Lynleit later complains about losing the blue suede jacket because she liked it. After Fionn\'s death, she discovers that he had discreetly replaced her blue coat with a protective garment made from the hide of leviathan. The coat changes form by its own judgment and sometimes imitates the lost jacket, but protection requires Lynleit to use it actively rather than simply wear it. Her relationship with Kyrien becomes sexual only at the end of the first arc, after intimacy has accumulated slowly through functional care, danger, and trust. Pregnancy and disappearance follow. After restoring a smaller MSF around the unfinished Spill, Lynleit vanishes to protect the pregnancy, deliver the child beyond the conflict\'s reach, recover, and consult wiser people about the Spill\'s origins. Years later she does not announce a return. She appears around MSF missions, sometimes seemingly by accident and sometimes by design, and her unexplained presence can make her look like a culprit.',
     ally: 'Kyrien', allyNote: 'Their connection begins as coercion and a calculated information imbalance against Helena. Only Felix and Reiner know Lynleit has brought him into her circle, while even Fionn remains uninformed. Separated from the officers on the city bank, Kyrien observes her water walking from inside the quarantined trees. Lynleit later reaches him on the park side, where his silence and their back-to-back recovery create the first intimate threshold. The hotel-room refuge after Fionn\'s murder comes much later, and the relationship remains non-sexual until the end of the first arc.', rival: 'Helena', rivalNote: 'Lynleit distrusts her stepmother before the takeover, then learns Helena played a major role in Fionn\'s assassination even though the full conspiracy remains unclear.', goal: 'Keep Kyrien hidden as leverage against Helena, restore legitimate leadership, protect their child, and investigate the Spill without revealing what her later appearances around MSF missions are meant to accomplish.',
     beats: ['The Heir Apparent', 'The Accusation', 'Fugitive Counteroffensive', 'Hidden Pregnancy and Inquiry', 'Seen at the Mission Edge']
   },
@@ -709,10 +710,12 @@ async function loadRelationshipChibis(nodes) {
       const card = cards.find((candidate) => (candidate.dataset.character ?? '').split(/\s+/).includes(record.profile.slug));
       const source = card?.querySelector('img')?.getAttribute('src');
       if (!source) return;
+      record.chibiSource = source;
       const image = createElement('img');
       image.src = source;
       image.alt = '';
       image.decoding = 'async';
+      image.draggable = false;
       avatar.replaceChildren(image);
       avatar.classList.add('has-image');
     });
@@ -745,14 +748,40 @@ function renderRelationshipMap(profile, host) {
 
   const detail = createElement('div', 'relationship-map-detail');
   detail.setAttribute('aria-live', 'polite');
-  const detailLabel = createElement('small', '', 'Selected connection');
-  const detailName = createElement('strong');
-  const detailCopy = createElement('p');
-  const detailLink = createElement('a', '', 'Open character profile →');
-  const detailHeading = createElement('div', 'relationship-map-detail-heading');
   const detailInner = createElement('div', 'relationship-map-detail-inner');
-  detailHeading.append(detailName, detailLink);
-  detailInner.append(detailLabel, detailHeading, detailCopy);
+  const detailVisual = createElement('div', 'relationship-map-detail-visual');
+  const detailPair = createElement('div', 'relationship-map-detail-pair');
+  const detailOriginAvatar = createElement('span', 'relationship-map-detail-avatar is-origin');
+  const detailConnector = createElement('span', 'relationship-map-detail-connector');
+  detailConnector.setAttribute('aria-hidden', 'true');
+  const detailTargetAvatar = createElement('span', 'relationship-map-detail-avatar is-target');
+  detailPair.append(detailOriginAvatar, detailConnector, detailTargetAvatar);
+  const detailCounter = createElement('span', 'relationship-map-detail-counter');
+  const detailPager = createElement('div', 'relationship-map-detail-pager');
+  const detailPrevious = createElement('button', '', '←');
+  detailPrevious.type = 'button';
+  detailPrevious.setAttribute('aria-label', 'Show previous connection');
+  const detailBrowseLabel = createElement('span', '', 'Browse');
+  const detailNext = createElement('button', '', '→');
+  detailNext.type = 'button';
+  detailNext.setAttribute('aria-label', 'Show next connection');
+  detailPager.append(detailPrevious, detailBrowseLabel, detailNext);
+  detailVisual.append(detailPair, detailCounter, detailPager);
+
+  const detailBody = createElement('article', 'relationship-map-detail-body');
+  const detailHeader = createElement('header', 'relationship-map-detail-header');
+  const detailTitle = createElement('div');
+  const detailEyebrow = createElement('small', 'relationship-map-detail-eyebrow', 'Selected relationship');
+  const detailName = createElement('h3');
+  detailTitle.append(detailEyebrow, detailName);
+  const detailLabel = createElement('span', 'relationship-map-detail-kind');
+  detailHeader.append(detailTitle, detailLabel);
+  const detailCopy = createElement('p');
+  const detailActions = createElement('div', 'relationship-map-detail-actions');
+  const detailLink = createElement('a', 'relationship-map-detail-link');
+  detailActions.append(detailLink);
+  detailBody.append(detailHeader, detailCopy, detailActions);
+  detailInner.append(detailVisual, detailBody);
   detail.append(detailInner);
 
   const records = [{
@@ -766,8 +795,10 @@ function renderRelationshipMap(profile, host) {
     ...relationship,
     profile: profilesBySlug.get(relationship.slug)
   }))];
+  const connectionRecords = records.slice(1);
   const nodeRecords = [];
   const edgeRecords = [];
+  let selectedRecord = connectionRecords[0];
 
   const addEdge = (from, to, kind, secondary = false) => {
     const edge = createSvgElement('line', {
@@ -791,12 +822,43 @@ function renderRelationshipMap(profile, host) {
     }
   }
 
+  function setDetailAvatar(avatar, record) {
+    avatar.classList.toggle('has-image', Boolean(record.chibiSource));
+    if (record.chibiSource) {
+      const image = createElement('img');
+      image.src = record.chibiSource;
+      image.alt = '';
+      image.decoding = 'async';
+      image.draggable = false;
+      avatar.replaceChildren(image);
+      return;
+    }
+    avatar.textContent = record.name.split(' ').map((part) => part[0]).join('').slice(0, 2);
+  }
+
   function updateDetail(record) {
+    selectedRecord = record;
+    const connectionIndex = connectionRecords.findIndex((candidate) => candidate.slug === record.slug);
+    const isCurrentProfile = record.slug === profile.slug;
     detailLabel.textContent = record.relation;
     detailName.textContent = record.name;
     detailCopy.textContent = record.detail;
     detailLink.href = `character.html?character=${encodeURIComponent(record.slug)}`;
-    detailLink.hidden = record.slug === profile.slug;
+    detailLink.textContent = `Open ${record.name} profile →`;
+    detailLink.hidden = isCurrentProfile;
+    detailCounter.textContent = connectionIndex >= 0
+      ? `Connection ${connectionIndex + 1} of ${connectionRecords.length}`
+      : `${connectionRecords.length} known ${connectionRecords.length === 1 ? 'connection' : 'connections'}`;
+    detailPrevious.disabled = connectionRecords.length < 2;
+    detailNext.disabled = connectionRecords.length < 2;
+    detailPair.classList.toggle('is-current-profile', isCurrentProfile);
+    detailPair.setAttribute('aria-label', isCurrentProfile
+      ? `${profile.name}, current profile`
+      : `${profile.name} connected to ${record.name}`);
+    detailConnector.hidden = isCurrentProfile;
+    detailTargetAvatar.hidden = isCurrentProfile;
+    setDetailAvatar(detailOriginAvatar, records[0]);
+    setDetailAvatar(detailTargetAvatar, record);
     nodeRecords.forEach(({ record: candidate, node }) => {
       const active = candidate.slug === record.slug;
       node.classList.toggle('is-selected', active);
@@ -807,15 +869,28 @@ function renderRelationshipMap(profile, host) {
     });
   }
 
+  function moveDetail(direction) {
+    const currentIndex = connectionRecords.findIndex((record) => record.slug === selectedRecord?.slug);
+    const nextIndex = currentIndex < 0
+      ? (direction > 0 ? 0 : connectionRecords.length - 1)
+      : (currentIndex + direction + connectionRecords.length) % connectionRecords.length;
+    updateDetail(connectionRecords[nextIndex]);
+  }
+
+  detailPrevious.addEventListener('click', () => moveDetail(-1));
+  detailNext.addEventListener('click', () => moveDetail(1));
+
   records.forEach((record, index) => {
     const node = createElement('button', `relationship-node${index === 0 ? ' is-center' : ''}`);
     node.type = 'button';
+    node.draggable = false;
     node.dataset.slug = record.slug;
     node.setAttribute('aria-label', `${record.name}: ${record.relation}`);
     node.setAttribute('aria-pressed', 'false');
     const avatar = createElement('span', 'relationship-node-avatar', record.name.split(' ').map((part) => part[0]).join('').slice(0, 2));
     avatar.setAttribute('aria-hidden', 'true');
     node.append(avatar, createElement('span', 'relationship-node-name', record.name));
+    node.addEventListener('dragstart', (event) => event.preventDefault());
 
     if (index === 0) {
       node.style.left = '50%';
@@ -863,6 +938,7 @@ function renderRelationshipMap(profile, host) {
 
     node.addEventListener('pointerdown', (event) => {
       if (event.button !== 0) return;
+      event.preventDefault();
       const nodeRect = node.getBoundingClientRect();
       const stageRect = stage.getBoundingClientRect();
       pointerState = {
@@ -891,13 +967,21 @@ function renderRelationshipMap(profile, host) {
     });
     const finishDrag = (event) => {
       if (!pointerState || event.pointerId !== pointerState.id) return;
+      const moved = pointerState.moved;
+      pointerState = null;
       if (node.hasPointerCapture(event.pointerId)) node.releasePointerCapture(event.pointerId);
       node.classList.remove('is-dragging');
-      if (pointerState.moved) updateDetail(record);
-      setTimeout(() => { pointerState = null; }, 0);
+      if (moved) updateDetail(record);
     };
     node.addEventListener('pointerup', finishDrag);
     node.addEventListener('pointercancel', finishDrag);
+    window.addEventListener('pointerup', finishDrag);
+    window.addEventListener('pointercancel', finishDrag);
+    node.addEventListener('lostpointercapture', () => {
+      node.classList.remove('is-dragging');
+      if (pointerState?.moved) updateDetail(record);
+      pointerState = null;
+    });
     node.addEventListener('keydown', (event) => {
       const movement = {
         ArrowLeft: [-12, 0], ArrowRight: [12, 0], ArrowUp: [0, -12], ArrowDown: [0, 12]
@@ -919,7 +1003,7 @@ function renderRelationshipMap(profile, host) {
   updateDetail(records[1]);
   requestAnimationFrame(drawEdges);
   if ('ResizeObserver' in window) new ResizeObserver(drawEdges).observe(stage);
-  loadRelationshipChibis(nodeRecords);
+  loadRelationshipChibis(nodeRecords).then(() => updateDetail(selectedRecord));
 }
 
 async function loadCharacterMoments(profile, timeline) {

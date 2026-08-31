@@ -46,11 +46,13 @@ A pale girl emerges from the water. Her eyes are sewn shut with fishing line, an
 
 > It felt as though my legs were being grabbed and pulled by someone's hands.
 
-**Source:** Unnamed female MSF officer after reaching shore
+**Source:** MSF Officer Maren after reaching shore
 
-The encounter occurs during a covert MSF operation requested by Sherie and Drake. Small boats owned by contraband gangs have been moving on the darkest nights without visible operators. When Lynleit's team finally boards them from a bridge, the boats are empty. The Drowned Choir has already taken every crew before the boats reach the interception point.
+The encounter occurs during a covert MSF operation requested by Sherie and Drake. Small wooden boats owned by contraband gangs move on the darkest nights without visible operators. Dark tarps cover their shallow holds, fixed rudders hold their heading, and the current provides most of their movement. Felix freezes the bridge cameras and remains on the city side as communications fallback while Lynleit, Reiner, Kyrien, Maren, and Ivo descend. When they pull back the tarps, the holds are empty. The Drowned Choir has already taken every crew before the boats reach the interception point.
 
-The officers are trained swimmers, but unseen hands make the short escape to shore nearly impossible. Felix, Reiner, and the other officers reach the street-facing city bank. Kyrien is driven toward the quarantined park bank instead and observes the river from inside the trees. Only Lynleit sees the hands clearly after she is pulled underwater. Her violent reaction to drowning brings her forbidden water walking into full effect. Once she stands on the surface, the hands cannot reach through the layer beneath her feet.
+The officers are trained swimmers, but unseen hands make the short escape to shore nearly impossible. Reiner, Maren, and Ivo reach the street-facing city bank with Felix's fallback line. Kyrien is driven toward the quarantined park bank instead and observes the river from inside the trees. Only Lynleit sees the hands clearly after she is pulled underwater. They tear away the fitted blue suede jacket she chose for the operation. Fear and fury release her blue flame at full force. It burns the drowned hands beneath the water until their grip opens.
+
+When Lynleit breaks the surface, her palm meets resistance. She brings one knee and then both boots onto the same yielding layer. The river bows beneath her weight without admitting her body. Once she stands, the hands cannot cross the surface beneath her feet.
 
 The girl then rises before Lynleit. She remains silent and tilts her head because a person standing on water falls outside the rule by which she takes victims. Lynleit is equally bewildered. Only Kyrien witnesses Lynleit standing on the river and keeps the ability secret afterward. Lynleit later reaches him on the park side, where they recover among the trees before rejoining the others.
 
@@ -60,7 +62,7 @@ The girl then rises before Lynleit. She remains silent and tilts her head becaus
 Darkness, panic, current, exhaustion, and shared misperception can be used to separate the officers' accounts from the empty boats and missing smugglers. No ordinary report can explain why several trained swimmers independently describe hands pulling at their legs.
 
 **Magi and special envoys**
-An embodied Holumn has enslaved the river's drowned souls and uses them as both grasping limbs and a collective voice. The hands cannot cross the surface layer, making Lynleit's miracle-like movement a temporary boundary rather than a confirmed means of destroying the manifestation.
+An embodied Holumn has enslaved the river's drowned souls and uses them as both grasping limbs and a collective voice. Blue flame can injure the submerged hands, and the hands cannot cross the surface layer. Both limits permit escape without establishing a means of destroying the manifestation or releasing the dead.
 
 ## The River That Is Too Deep
 
