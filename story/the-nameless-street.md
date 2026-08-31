@@ -1,6 +1,6 @@
 # Chapter 06: The Nameless Street
 
-> Working draft based on the confirmed Nameless Street encounter. Exact dialogue, the route Lynleit and Felix take after lunch, and the sensory details of the street remain Nasu-audit inferences until confirmed.
+> Working draft based on the confirmed Nameless Street encounter. Exact dialogue, the route Lynleit and Felix take after lunch, and the sensory details of the street remain provisional.
 
 ## After Lunch
 

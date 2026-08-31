@@ -15,7 +15,10 @@
       "Felix and Reiner, Lynleit's friends and Fionn-trusted personal bodyguards, are required to wait outside.",
       "Lynleit leaves the meeting early and visibly irritated.",
       "Felix and Reiner seek gossip, but Lynleit redirects them with a playful tease.",
-      "The negotiation occurs during the first disappearances in Vilen, which remain a distant background story that nobody present yet understands."
+      {
+        "text": "The disappearance reports and the concealed negotiation occupy the same morning, but nobody present explains whether they are connected.",
+        "status": "inferred"
+      }
     ]
   },
   {
@@ -88,7 +91,10 @@
       "Sherie and Drake ask Lynleit to assemble a loyal team and inspect recurring night traffic on the Vilen river.",
       "Several surveillance nights produce no boats while small oddities emerge from the quarantined park.",
       "Felix freezes the bridge cameras, Reiner prepares the ropes, and the team descends onto the boats when they finally appear.",
-      "The boats are empty because the Drowned Choir has already taken their contraband crews.",
+      {
+        "text": "The empty boats, drowned hands, and pale girl imply that the contraband crews were taken before the interception.",
+        "status": "inferred"
+      },
       "Felix, Reiner, and the other officers reach the city bank while Kyrien is forced toward the quarantined park bank.",
       "The drowned hands drag Lynleit underwater until her fear provokes water walking and leaves her facing the pale girl on the river.",
       "Lynleit later reaches Kyrien inside the park, where they sit back to back for warmth and he conceals what he witnessed."
@@ -112,7 +118,11 @@
       "Lynleit catches the balloon and follows the girl's cries through the labyrinth.",
       "The girl leads Lynleit to a broken fence above the body of a dead boy, then pushes her from the ledge.",
       "Lynleit wakes on a city bench while Felix tries to revive her from an apparent fainting episode.",
-      "Days later, the dead boy's fall returns to Lynleit when she sees Fionn's body below the hill at the family house."
+      "Days later, the dead boy's fall returns to Lynleit when she sees Fionn's body below the hill at the family house.",
+      {
+        "text": "The street leaves no material trace, so whether it was a physical place, a hallucination, or a place-bound Holumn remains for the reader to infer.",
+        "status": "inferred"
+      }
     ]
   }
 ]

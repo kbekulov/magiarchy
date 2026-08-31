@@ -749,7 +749,11 @@ function renderRelationshipMap(profile, host) {
   const detailName = createElement('strong');
   const detailCopy = createElement('p');
   const detailLink = createElement('a', '', 'Open character profile →');
-  detail.append(detailLabel, detailName, detailCopy, detailLink);
+  const detailHeading = createElement('div', 'relationship-map-detail-heading');
+  const detailInner = createElement('div', 'relationship-map-detail-inner');
+  detailHeading.append(detailName, detailLink);
+  detailInner.append(detailLabel, detailHeading, detailCopy);
+  detail.append(detailInner);
 
   const records = [{
     slug: profile.slug,

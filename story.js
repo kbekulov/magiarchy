@@ -285,12 +285,14 @@ async function loadChapter(entry) {
   chapterSummary.textContent = entry.description;
   chapterReaderCharacters.replaceChildren(...createCharacterLabels(entry.characters));
   chapterEventList.replaceChildren(...(entry.events ?? []).map((event, index) => {
+    const record = typeof event === 'string' ? { text: event, status: 'reader' } : event;
     const row = document.createElement('tr');
+    row.className = record.status === 'inferred' ? 'is-inferred' : 'is-reader';
     const number = document.createElement('th');
     number.scope = 'row';
     number.textContent = String(index + 1).padStart(2, '0');
     const description = document.createElement('td');
-    description.textContent = event;
+    description.textContent = record.text;
     row.append(number, description);
     return row;
   }));

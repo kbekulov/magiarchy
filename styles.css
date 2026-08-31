@@ -4194,10 +4194,41 @@ a.status-member:hover {
   content: "";
 }
 
-.chapter-preface > div {
+.chapter-preface-header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 20px;
   padding: 16px 20px 13px;
   border-bottom: 1px solid #3b3d43;
   background: #313338;
+}
+
+.chapter-preface-legend {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 7px 16px;
+  color: #b1b4bc;
+  font-size: .52rem;
+}
+
+.chapter-preface-legend span {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  white-space: nowrap;
+}
+
+.chapter-preface-legend i {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #7580f0;
+}
+
+.chapter-preface-legend .is-inferred i {
+  background: #bd8adb;
 }
 
 .chapter-preface .eyebrow {
@@ -4253,6 +4284,28 @@ a.status-member:hover {
 
 .chapter-preface tbody tr:nth-child(even) td {
   background: rgba(255, 255, 255, .018);
+}
+
+.chapter-preface tbody tr.is-inferred th {
+  background: rgba(180, 107, 214, .11);
+  color: #d5a9ed;
+}
+
+.chapter-preface tbody tr.is-inferred td,
+.chapter-preface tbody tr.is-inferred:nth-child(even) td {
+  background: rgba(180, 107, 214, .055);
+}
+
+@media (max-width: 620px) {
+  .chapter-preface-header {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .chapter-preface-legend {
+    justify-content: flex-start;
+  }
 }
 
 .chapter-body blockquote:first-of-type {
@@ -4874,7 +4927,7 @@ a.status-member:hover {
 
 .moment-reader-grid {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: minmax(0, 1fr);
   gap: 14px;
   margin-top: 14px;
 }
@@ -4939,7 +4992,7 @@ a.status-member:hover {
   background: #7580f0;
 }
 
-.moment-fact-legend .is-audit i {
+.moment-fact-legend .is-inferred i {
   background: #bd8adb;
 }
 
@@ -4967,17 +5020,18 @@ a.status-member:hover {
   font-size: .5rem;
 }
 
-.moment-fact-panel li.is-audit {
+.moment-fact-panel li.is-inferred {
   margin-inline: -18px;
   padding-inline: 18px;
   background: rgba(180, 107, 214, .06);
 }
 
-.moment-fact-panel li.is-audit .moment-fact-number {
+.moment-fact-panel li.is-inferred .moment-fact-number {
   color: #bd8adb;
 }
 
 .moment-fact-panel li p {
+  max-width: 1180px;
   margin: 0;
   color: #c0c3c9;
   font-size: .67rem;
@@ -9324,24 +9378,21 @@ a.equipment-card:focus-visible {
 }
 
 .relationship-map-detail {
-  display: grid;
-  grid-template-columns: minmax(0, 920px) auto;
-  grid-template-areas:
-    "label action"
-    "name action"
-    "copy action";
-  align-items: start;
-  justify-content: start;
-  gap: 5px 28px;
   min-height: 108px;
-  padding: 17px 24px 19px;
   border: 1px solid #383a41;
   border-radius: 0 0 7px 7px;
   background: #27282d;
 }
 
+.relationship-map-detail-inner {
+  width: min(100%, 920px);
+  margin-inline: auto;
+  padding: 18px 24px 20px;
+}
+
 .relationship-map-detail small {
-  grid-area: label;
+  display: block;
+  margin-bottom: 6px;
   color: #8993ff;
   font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
   font-size: .49rem;
@@ -9350,24 +9401,27 @@ a.equipment-card:focus-visible {
   text-transform: uppercase;
 }
 
+.relationship-map-detail-heading {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 20px;
+}
+
 .relationship-map-detail strong {
-  grid-area: name;
   color: #f2f3f5;
-  font-size: .72rem;
+  font-size: .78rem;
 }
 
 .relationship-map-detail p {
-  grid-area: copy;
-  max-width: 920px;
-  margin: 0;
+  max-width: 780px;
+  margin: 10px 0 0;
   color: #aeb1b8;
-  font-size: .62rem;
-  line-height: 1.55;
+  font-size: .66rem;
+  line-height: 1.6;
 }
 
 .relationship-map-detail a {
-  grid-area: action;
-  align-self: center;
   color: #b7bdff;
   font-size: .56rem;
   font-weight: 750;
@@ -9549,26 +9603,21 @@ a.equipment-card:focus-visible {
   }
 
   .relationship-map-detail {
-    grid-template-columns: minmax(0, 1fr) auto;
-    grid-template-areas:
-      "label action"
-      "name action"
-      "copy copy";
-    gap: 7px 12px;
+    min-height: 0;
+  }
+
+  .relationship-map-detail-inner {
     padding: 14px;
   }
 
-  .relationship-map-detail strong {
-    grid-area: name;
-  }
-
-  .relationship-map-detail a {
-    grid-area: action;
+  .relationship-map-detail-heading {
+    align-items: flex-start;
+    gap: 12px;
   }
 
   .relationship-map-detail p {
-    grid-area: copy;
-    margin-top: 5px;
+    margin-top: 8px;
+    font-size: .62rem;
   }
 
   .magecraft-grid,

@@ -215,7 +215,7 @@ function populateList(selector, entries, { factStatus = false } = {}) {
   document.querySelector(selector).replaceChildren(...entries.map((entry, index) => {
     const record = typeof entry === 'string' ? { text: entry, status: 'reader' } : entry;
     const item = momentElement('li');
-    const status = record.status === 'audit' ? 'audit' : 'reader';
+    const status = record.status === 'inferred' ? 'inferred' : 'reader';
     item.append(momentElement('span', 'moment-fact-number', String(index + 1).padStart(2, '0')), momentElement('p', '', record.text));
     if (factStatus) {
       item.classList.add(`is-${status}`);

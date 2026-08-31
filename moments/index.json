@@ -322,16 +322,13 @@
       "The chosen bridge links a city street to the quarantined park.",
       "The plan requires the team to freeze the bridge's civil safety cameras, wait within a narrow surveillance window, descend by rope onto the boats, inspect their contents, and leave by rope at the next bridge.",
       "Several nights produce no boats. Each unsuccessful watch consumes the limited camera window and exposes Lynleit or Kyrien to small oddities emerging from the quarantined park that the mission gives them no freedom to pursue.",
-      {
-        "text": "The working chapter places the successful interception on the fifth watch.",
-        "status": "audit"
-      },
-      {
-        "text": "The working chapter uses a branch breaking before the wind reaches the trees and a pale interruption in a frozen camera feed as the two park-side oddities.",
-        "status": "audit"
-      },
+      "The successful interception occurs on the fifth watch.",
+      "The unsuccessful watches reveal a branch breaking before the wind reaches the trees and a pale interruption in a frozen camera feed.",
       "When the boats finally appear, the team descends and finds them empty.",
-      "The boats belong to contraband gangs, but the Drowned Choir has already taken every crew before the boats reach the bridge.",
+      {
+        "text": "The empty boats, drowned hands, and pale girl imply that the Drowned Choir took the contraband crews before the interception, although the surviving officers cannot prove that connection.",
+        "status": "inferred"
+      },
       "The river attack begins while the officers search the empty boats for another explanation.",
       "The officers are capable swimmers. Reaching shore becomes difficult because unseen hands seize their legs and pull downward.",
       "After reaching land, one female officer describes the sensation of hands gripping and pulling her legs.",
@@ -620,12 +617,12 @@
       "Whether the street is a place, an illusion, or another kind of Holumn remains unresolved.",
       "When Lynleit later sees Fionn's body below the hill at the family house, the memory of the boy stupefies her and gives Helena leverage to accuse her of pushing Fionn.",
       {
-        "text": "The working chapter makes the transition into the street occur without a visible threshold and uses a silent, maintained district to distinguish it from an ordinary abandoned place.",
-        "status": "audit"
+        "text": "Because Lynleit perceives no threshold and Felix witnesses only a faint, the reader must infer whether the street is a physical place, an imposed event, or an experience confined to her consciousness.",
+        "status": "inferred"
       },
       {
-        "text": "The working chapter lets Felix accept Lynleit's implausible account without laughing, preserving his role as an old friend before the encounter's meaning is understood.",
-        "status": "audit"
+        "text": "Felix does not explain why he accepts Lynleit's implausible account without laughing, leaving his response to be read through their long friendship.",
+        "status": "inferred"
       }
     ],
     "openQuestions": [
@@ -678,12 +675,12 @@
       "Mikhail leaves her with the warning: 'What you do is none of my business, but don't be surprised if I'll be sent to clean up your mess.'",
       "The encounter becomes an early cause of MSF's later transformation into a partly Magi private enterprise reporting to the Magiarchy and the Church.",
       {
-        "text": "The Nasu audit reads Kyrien's correction as literal honesty rather than comic disloyalty: he refuses to let Lynleit build an institutional defense on a statement he knows is false.",
-        "status": "audit"
+        "text": "Kyrien gives no reason for correcting Lynleit, leaving the reader to infer whether literal honesty, distrust of institutional half-truths, or another motive drives him.",
+        "status": "inferred"
       },
       {
-        "text": "Mikhail's restrained judgment carries more pressure than an immediate threat because his final warning identifies what the Church may require of him later without claiming that authority now.",
-        "status": "audit"
+        "text": "Mikhail does not define his authority. His restraint and final warning imply that the Church may later send him back with powers he is not claiming in this conversation.",
+        "status": "inferred"
       }
     ],
     "openQuestions": [
