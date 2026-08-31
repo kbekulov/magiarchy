@@ -4,10 +4,10 @@ const profileSeeds = [
     summary: 'Fionn\'s biological daughter and Helena\'s stepdaughter, Lynleit is a people-first leader whose responsibility is sharpened by unusually strong long-range intuition.',
     visual: 'A long tailored blue coat over a pale high-collared blouse with a narrow black ribbon, paired with high-waisted black shorts, dark tights, and tall black lace-up boots', palette: 'Midnight blue, black, white, cold cyan',
     physical: [
-      ['Hair', 'Very long, wavy blue-black hair with a side-parted fringe.'],
+      ['Hair', 'Very long, wavy ash-black hair with a side-parted fringe.'],
       ['Eyes', 'Bright cyan-blue.'],
       ['Height and build', 'Above-average height, slender and long-limbed.'],
-      ['Distinguishing features', 'A pale complexion, fine angular features, and a naturally serious resting expression.']
+      ['Distinguishing features', 'A pale complexion, fine angular features, and a reserved, inward-looking resting expression that can soften into a distant, dreamy gaze.']
     ],
     residenceNote: 'After her mother\'s death, Lynleit resisted the family\'s move from Turon to Vilen and accepted it only on the condition that her study-bedroom occupy the third floor. The hillside site places thick trees close to the house and overlooks a river flowing toward the city center. Rustling leaves inspire her. She regards flowing water as life energy and seeks its emotional grounding despite her childhood fear of drowning.',
     appearanceDetails: [

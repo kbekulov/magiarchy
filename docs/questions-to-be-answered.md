@@ -69,7 +69,7 @@ Story, character, world, relationship, institution, location, and event question
 | Hotel refuge | What tiny ordinary behavior does Kyrien witness once Lynleit no longer has the strength to perform being Lynleit, and what private trust exists the next morning? | 45% |
 | Relationship | Which repeated functional encounters make Lynleit and Kyrien necessary to one another despite neither wanting the dependence, bridging river, hotel, and end-of-arc intimacy? | 50% |
 | Covert alliance | What does Lynleit refuse to provide Drake and Sherie, and how do requested MSF resources, offered concessions, and operational limits reveal the hierarchy at the hilltop meeting? | 50% |
-| Character appearance | What exact heights belong to the illustrated cast, and which artwork-derived hair, eye, build, or distinguishing details require correction? | 60% |
+| Character appearance | What exact heights belong to the illustrated cast, and which artwork-derived hair, eye, build, or distinguishing details require correction? | 65% |
 
 ## Chronology questions
 
