@@ -367,10 +367,10 @@ const profileSeeds = [
     summary: 'A grey male cat who enters Lynleit\'s family home uninvited, survives her clumsy attempt to remove him, and decides to remain.',
     visual: 'A grey domestic cat with a compact feline silhouette', palette: 'Ash grey',
     physical: [
-      ['Coat', 'Grey fur.'],
-      ['Eyes', 'Unspecified.'],
-      ['Size and build', 'Domestic-cat stature; exact size and build are unspecified.'],
-      ['Distinguishing features', 'Male.']
+      ['Coat', 'Short ash-grey fur.'],
+      ['Eyes', 'Amber-gold.'],
+      ['Size and build', 'Medium-sized with a lean, long-limbed build.'],
+      ['Distinguishing features', 'A dark collar with a round silver tag bearing the letter A.']
     ],
     personalitySummary: 'Ash behaves as an independent domestic cat. He enters where he is not invited, repeatedly evades Lynleit, accepts shelter when rain makes removal difficult, and remains because the house has become his territory.',
     traits: [
