@@ -575,6 +575,24 @@ function wildcardPattern(pattern) {
   return new RegExp(`^${escaped}$`, 'i');
 }
 
+let galleryCatalogPromise;
+
+function loadGalleryCatalog() {
+  if (!galleryCatalogPromise) {
+    galleryCatalogPromise = fetch('gallery.html', { cache: 'no-cache' })
+      .then((response) => {
+        if (!response.ok) throw new Error(`Gallery catalog returned ${response.status}`);
+        return response.text();
+      })
+      .then((markup) => new DOMParser().parseFromString(markup, 'text/html'))
+      .catch((error) => {
+        galleryCatalogPromise = null;
+        throw error;
+      });
+  }
+  return galleryCatalogPromise;
+}
+
 async function loadProfilePortrait(profile, portrait, note) {
   const placeholder = createElement('div', 'profile-portrait-placeholder', profile.name.split(' ').map((part) => part[0]).join(''));
   placeholder.setAttribute('role', 'img');
@@ -582,10 +600,7 @@ async function loadProfilePortrait(profile, portrait, note) {
   portrait.append(placeholder, note);
 
   try {
-    const response = await fetch('gallery.html', { cache: 'no-cache' });
-    if (!response.ok) throw new Error(`Gallery catalog returned ${response.status}`);
-
-    const galleryDocument = new DOMParser().parseFromString(await response.text(), 'text/html');
+    const galleryDocument = await loadGalleryCatalog();
     const filePattern = wildcardPattern(`char-*${profile.slug}*-*`);
     const artworks = Array.from(galleryDocument.querySelectorAll('.gallery-card'))
       .filter((card) => (card.dataset.character ?? '').split(/\s+/).includes(profile.slug) && card.dataset.chibi === 'false')
@@ -621,6 +636,286 @@ async function loadProfilePortrait(profile, portrait, note) {
   } catch (error) {
     console.warn(`Could not load gallery portrait for ${profile.name}.`, error);
   }
+}
+
+function relationshipTextMentions(text, name) {
+  if (!text || !name) return false;
+  const escaped = name.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+  return new RegExp(`(^|[^a-z0-9])${escaped}(?=$|[^a-z0-9])`, 'i').test(text);
+}
+
+function relationshipKind(relation = '') {
+  return /rival|friction|enemy|conflict/i.test(relation) ? 'friction' : 'bond';
+}
+
+function directRelationshipTargets(profile) {
+  const targets = new Map();
+  const add = (reference, relation, detail, kind, priority) => {
+    profileSeeds.forEach((candidate) => {
+      if (candidate.slug === profile.slug || !relationshipTextMentions(reference, candidate.name)) return;
+      const previous = targets.get(candidate.slug);
+      if (!previous || priority > previous.priority) {
+        targets.set(candidate.slug, {
+          slug: candidate.slug,
+          name: candidate.name,
+          relation,
+          detail,
+          kind,
+          priority
+        });
+      }
+    });
+  };
+
+  (profile.connections ?? []).forEach(({ name, relation, detail }) => {
+    add(name, relation, detail, relationshipKind(relation), 4);
+  });
+  add(profile.ally, 'Primary connection', profile.allyNote, 'bond', 3);
+  add(profile.rival, 'Central friction', profile.rivalNote, 'friction', 3);
+  return targets;
+}
+
+function collectProfileRelationships(profile) {
+  const relationships = directRelationshipTargets(profile);
+
+  profileSeeds.forEach((candidate) => {
+    if (candidate.slug === profile.slug) return;
+    const incoming = directRelationshipTargets(candidate).get(profile.slug);
+    if (!incoming || relationships.has(candidate.slug)) return;
+    relationships.set(candidate.slug, {
+      slug: candidate.slug,
+      name: candidate.name,
+      relation: incoming.kind === 'friction' ? 'Recorded friction' : 'Recorded connection',
+      detail: incoming.detail,
+      kind: incoming.kind,
+      priority: 1
+    });
+  });
+
+  return [...relationships.values()].sort((a, b) => b.priority - a.priority || a.name.localeCompare(b.name));
+}
+
+function createSvgElement(name, attributes = {}) {
+  const element = document.createElementNS('http://www.w3.org/2000/svg', name);
+  Object.entries(attributes).forEach(([key, value]) => element.setAttribute(key, value));
+  return element;
+}
+
+async function loadRelationshipChibis(nodes) {
+  try {
+    const galleryDocument = await loadGalleryCatalog();
+    const cards = Array.from(galleryDocument.querySelectorAll('.gallery-card[data-chibi="true"]'));
+    nodes.forEach(({ record, avatar }) => {
+      const card = cards.find((candidate) => (candidate.dataset.character ?? '').split(/\s+/).includes(record.profile.slug));
+      const source = card?.querySelector('img')?.getAttribute('src');
+      if (!source) return;
+      const image = createElement('img');
+      image.src = source;
+      image.alt = '';
+      image.decoding = 'async';
+      avatar.replaceChildren(image);
+      avatar.classList.add('has-image');
+    });
+  } catch (error) {
+    console.warn('Relationship-map chibis could not be loaded.', error);
+  }
+}
+
+function renderRelationshipMap(profile, host) {
+  if (!host) return;
+  const relationships = collectProfileRelationships(profile);
+  if (!relationships.length) {
+    host.hidden = true;
+    return;
+  }
+
+  const map = createElement('div', 'relationship-map');
+  const meta = createElement('div', 'relationship-map-meta');
+  const metaCopy = createElement('div');
+  metaCopy.append(
+    createElement('strong', '', 'Known character links'),
+    createElement('span', '', `${relationships.length} connected ${relationships.length === 1 ? 'character' : 'characters'}`)
+  );
+  meta.append(metaCopy, createElement('span', 'relationship-map-instruction', 'Select a portrait to inspect · drag to rearrange'));
+
+  const stage = createElement('div', 'relationship-map-stage');
+  stage.setAttribute('aria-label', `Interactive relationship map for ${profile.name}`);
+  const lines = createSvgElement('svg', { class: 'relationship-map-lines', 'aria-hidden': 'true' });
+  stage.append(lines);
+
+  const detail = createElement('div', 'relationship-map-detail');
+  detail.setAttribute('aria-live', 'polite');
+  const detailLabel = createElement('small', '', 'Selected connection');
+  const detailName = createElement('strong');
+  const detailCopy = createElement('p');
+  const detailLink = createElement('a', '', 'Open character profile →');
+  detail.append(detailLabel, detailName, detailCopy, detailLink);
+
+  const records = [{
+    slug: profile.slug,
+    name: profile.name,
+    relation: 'Current profile',
+    detail: profile.summary,
+    kind: 'center',
+    profile
+  }, ...relationships.map((relationship) => ({
+    ...relationship,
+    profile: profilesBySlug.get(relationship.slug)
+  }))];
+  const nodeRecords = [];
+  const edgeRecords = [];
+
+  const addEdge = (from, to, kind, secondary = false) => {
+    const edge = createSvgElement('line', {
+      class: `relationship-map-edge is-${kind}${secondary ? ' is-secondary' : ''}`,
+      'data-from': from,
+      'data-to': to
+    });
+    lines.append(edge);
+    edgeRecords.push({ from, to, edge });
+  };
+
+  relationships.forEach((relationship) => addEdge(profile.slug, relationship.slug, relationship.kind));
+  for (let first = 0; first < relationships.length; first += 1) {
+    for (let second = first + 1; second < relationships.length; second += 1) {
+      const source = profilesBySlug.get(relationships[first].slug);
+      const target = relationships[second];
+      const targetProfile = profilesBySlug.get(target.slug);
+      const connection = directRelationshipTargets(source).get(target.slug)
+        ?? directRelationshipTargets(targetProfile).get(source.slug);
+      if (connection) addEdge(source.slug, target.slug, connection.kind, true);
+    }
+  }
+
+  function updateDetail(record) {
+    detailLabel.textContent = record.relation;
+    detailName.textContent = record.name;
+    detailCopy.textContent = record.detail;
+    detailLink.href = `character.html?character=${encodeURIComponent(record.slug)}`;
+    detailLink.hidden = record.slug === profile.slug;
+    nodeRecords.forEach(({ record: candidate, node }) => {
+      const active = candidate.slug === record.slug;
+      node.classList.toggle('is-selected', active);
+      node.setAttribute('aria-pressed', String(active));
+    });
+    edgeRecords.forEach(({ from, to, edge }) => {
+      edge.classList.toggle('is-active', from === record.slug || to === record.slug);
+    });
+  }
+
+  records.forEach((record, index) => {
+    const node = createElement('button', `relationship-node${index === 0 ? ' is-center' : ''}`);
+    node.type = 'button';
+    node.dataset.slug = record.slug;
+    node.setAttribute('aria-label', `${record.name}: ${record.relation}`);
+    node.setAttribute('aria-pressed', 'false');
+    const avatar = createElement('span', 'relationship-node-avatar', record.name.split(' ').map((part) => part[0]).join('').slice(0, 2));
+    avatar.setAttribute('aria-hidden', 'true');
+    node.append(avatar, createElement('span', 'relationship-node-name', record.name));
+
+    if (index === 0) {
+      node.style.left = '50%';
+      node.style.top = '50%';
+    } else {
+      const angle = -Math.PI / 2 + ((index - 1) * Math.PI * 2) / relationships.length;
+      node.style.left = `${50 + Math.cos(angle) * 37}%`;
+      node.style.top = `${50 + Math.sin(angle) * 37}%`;
+    }
+    stage.append(node);
+    nodeRecords.push({ record, node, avatar });
+  });
+
+  function drawEdges() {
+    const stageRect = stage.getBoundingClientRect();
+    if (!stageRect.width || !stageRect.height) return;
+    const centers = new Map(nodeRecords.map(({ record, node }) => {
+      const rect = node.getBoundingClientRect();
+      return [record.slug, {
+        x: rect.left - stageRect.left + rect.width / 2,
+        y: rect.top - stageRect.top + rect.height / 2
+      }];
+    }));
+    edgeRecords.forEach(({ from, to, edge }) => {
+      const start = centers.get(from);
+      const end = centers.get(to);
+      if (!start || !end) return;
+      edge.setAttribute('x1', start.x);
+      edge.setAttribute('y1', start.y);
+      edge.setAttribute('x2', end.x);
+      edge.setAttribute('y2', end.y);
+    });
+  }
+
+  nodeRecords.forEach(({ record, node }, index) => {
+    let pointerState = null;
+    node.addEventListener('click', () => {
+      if (pointerState?.moved) {
+        pointerState.moved = false;
+        return;
+      }
+      updateDetail(record);
+    });
+    if (index === 0) return;
+
+    node.addEventListener('pointerdown', (event) => {
+      if (event.button !== 0) return;
+      const nodeRect = node.getBoundingClientRect();
+      const stageRect = stage.getBoundingClientRect();
+      pointerState = {
+        id: event.pointerId,
+        startX: event.clientX,
+        startY: event.clientY,
+        nodeX: nodeRect.left - stageRect.left + nodeRect.width / 2,
+        nodeY: nodeRect.top - stageRect.top + nodeRect.height / 2,
+        moved: false
+      };
+      node.setPointerCapture(event.pointerId);
+    });
+    node.addEventListener('pointermove', (event) => {
+      if (!pointerState || event.pointerId !== pointerState.id) return;
+      const deltaX = event.clientX - pointerState.startX;
+      const deltaY = event.clientY - pointerState.startY;
+      if (Math.hypot(deltaX, deltaY) > 4) pointerState.moved = true;
+      if (!pointerState.moved) return;
+      const padding = 44;
+      const x = Math.max(padding, Math.min(stage.clientWidth - padding, pointerState.nodeX + deltaX));
+      const y = Math.max(padding, Math.min(stage.clientHeight - padding, pointerState.nodeY + deltaY));
+      node.style.left = `${x}px`;
+      node.style.top = `${y}px`;
+      node.classList.add('is-dragging');
+      drawEdges();
+    });
+    const finishDrag = (event) => {
+      if (!pointerState || event.pointerId !== pointerState.id) return;
+      if (node.hasPointerCapture(event.pointerId)) node.releasePointerCapture(event.pointerId);
+      node.classList.remove('is-dragging');
+      if (pointerState.moved) updateDetail(record);
+      setTimeout(() => { pointerState = null; }, 0);
+    };
+    node.addEventListener('pointerup', finishDrag);
+    node.addEventListener('pointercancel', finishDrag);
+    node.addEventListener('keydown', (event) => {
+      const movement = {
+        ArrowLeft: [-12, 0], ArrowRight: [12, 0], ArrowUp: [0, -12], ArrowDown: [0, 12]
+      }[event.key];
+      if (!movement) return;
+      event.preventDefault();
+      const nodeRect = node.getBoundingClientRect();
+      const stageRect = stage.getBoundingClientRect();
+      const x = Math.max(44, Math.min(stage.clientWidth - 44, nodeRect.left - stageRect.left + nodeRect.width / 2 + movement[0]));
+      const y = Math.max(44, Math.min(stage.clientHeight - 44, nodeRect.top - stageRect.top + nodeRect.height / 2 + movement[1]));
+      node.style.left = `${x}px`;
+      node.style.top = `${y}px`;
+      drawEdges();
+    });
+  });
+
+  map.append(meta, stage, detail);
+  host.replaceChildren(map);
+  updateDetail(records[1]);
+  requestAnimationFrame(drawEdges);
+  if ('ResizeObserver' in window) new ResizeObserver(drawEdges).observe(stage);
+  loadRelationshipChibis(nodeRecords);
 }
 
 async function loadCharacterMoments(profile, timeline) {
@@ -824,6 +1119,7 @@ function renderProfile(profile) {
   });
 
   const connections = document.querySelector('#character-connections');
+  renderRelationshipMap(profile, document.querySelector('#character-relationship-map'));
   const personalConnections = profile.connections
     ? profile.connections.map(({ name, relation, detail }) => [name, relation, detail])
     : [[profile.ally, 'Primary connection', profile.allyNote]];

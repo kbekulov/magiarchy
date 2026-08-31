@@ -1,6 +1,6 @@
 {
-  "generated": "2026-08-31T02:30:40.697Z",
-  "count": 337,
+  "generated": "2026-08-31T05:35:40.392Z",
+  "count": 338,
   "entries": [
     {
       "id": "page-characters",
@@ -1497,6 +1497,14 @@
       "url": "index.html#update-question-ledger-dramatic-constraints",
       "subtitle": "Home update feed",
       "text": "Canon Audit: Site update Home update feed QA Canon Audit 28 Aug 2026 · Questions and dramatic constraints The open-question ledger now asks for choices with character, thematic, or narrative consequence instead of background encyclopedia detail. Confirmed additions establish the Council of State's jurisdictional paradox, MSF's freedom to accept private clients, the independent origin of the Spill, the river's lingering scar, Helena's partial complicity, and the incompatible agendas that converge into Fionn's death. Review the revised questions →"
+    },
+    {
+      "id": "update-update-interactive-relationship-maps",
+      "title": "Character Archive: Site update",
+      "type": "Update",
+      "url": "index.html#update-interactive-relationship-maps",
+      "subtitle": "Home update feed",
+      "text": "Character Archive: Site update Home update feed RM Character Archive 31 Aug 2026 · Relationship maps Character profiles now map known relationships through connected chibi portraits. Each portrait opens its relationship record, links to the corresponding profile, and can be repositioned inside the map. Open Lynleit's relationship map →"
     },
     {
       "id": "update-update-ash-chibi-art",
