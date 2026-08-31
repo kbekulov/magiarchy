@@ -16,7 +16,6 @@ Story, character, world, relationship, institution, location, and event question
 | Lester | How did Lester become a demiholumn, and what metaphysical answer about his human and Holumn conditions would most threaten his sense of self? | 0% |
 | Location | What emotional or thematic role will Narvea's western gateway serve before Port City receives its proper name? | 0% |
 | Location | What older personal name belongs to the Director's House, and what painful memory changes how the reader understands Fionn or Lynleit? | 0% |
-| Domestic thread | Does the grey cat receive a name, and who in the household accepts or resists the permanent loiterer as the story becomes crueler? | 0% |
 | Private investigation | What mundane, slightly absurd referral network carries impossible cases to Natalia, and how does she screen it without alerting the Magiarchy or Church? | 0% |
 | Kyrien | Which surviving military contact forces Kyrien to choose between loyalty to his father's officer code and loyalty to Lynleit or MSF? | 0% |
 | Helena | Is Helena a non-Magus who manipulates supernatural institutions, and if so, what access, allies, and leverage make that possible? | 5% |
@@ -44,6 +43,7 @@ Story, character, world, relationship, institution, location, and event question
 | Opening chapter | What bureaucratic-sounding matter are Fionn and Lynleit negotiating before dawn that will later be revealed as horrifying, and why does Lynleit leave irritated? | 15% |
 | Heyk | What evidence does Heyk carry out of the park that is personally undeniable but institutionally useless, and how does that contradiction push him toward Drake and Sherie? | 15% |
 | Private investigation | Which case first connects Natalia and Lester to the central story, and what separate half of its impossible phenomenon can each of them understand? | 15% |
+| Domestic thread | Beyond Lynleit, who in the household accepts or resists Ash the cat as a permanent resident, and how does his place in the house change after Fionn's death? | 15% |
 | Holumns | By what mechanism do Holumns make victims disappear, and at what stage should that mechanism be revealed separately from destination and return? | 20% |
 | Kyrien | What mostly true cover story conceals Kyrien's release and unofficial MSF role, and which single altered fact leads outsiders to the wrong conclusion? | 20% |
 | Core mystery | Which individually rational political and institutional pressures persuade Fionn to wait, and when does reasonable delay become his fatal mistake? | 20% |

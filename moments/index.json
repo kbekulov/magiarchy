@@ -106,7 +106,7 @@
   {
     "slug": "the-cat-in-the-family-house",
     "code": "MOM-002",
-    "title": "The Cat in the Family House",
+    "title": "Ash in the Family House",
     "status": "Canon scene seed",
     "placementStatus": "Early chronology confirmed",
     "timelinePhase": "vanishing-point",
@@ -115,36 +115,38 @@
     "sceneType": "Domestic omen",
     "thread": "Lynleit's private life",
     "location": "The Director's House",
-    "summary": "Before the crisis reaches her home directly, Lynleit clumsily chases a grey cat that has trespassed into the family house, catches it, then cannot bring herself to expel it into the rain.",
+    "summary": "Before the crisis reaches her home directly, Lynleit clumsily chases a grey male cat named Ash, catches him, then cannot bring herself to expel him into the rain.",
     "purpose": "Shows Lynleit's clumsy and childish private side while using the grey intruder as an omen. Outside threats and tragedies have begun to bleed into her life, and the escaping cat becomes an emotional symbol for her slipping leads, understanding, and sense of safety.",
     "characters": [
-      { "name": "Lynleit", "slug": "lynleit" }
+      { "name": "Lynleit", "slug": "lynleit" },
+      { "name": "Ash", "slug": "ash" }
     ],
     "characterAnchors": [
-      { "slug": "lynleit", "beat": "The Heir Apparent" }
+      { "slug": "lynleit", "beat": "The Heir Apparent" },
+      { "slug": "ash", "beat": "The Chase" }
     ],
     "known": [
       "The scene occurs in the early chapters, after danger has begun outside but before Lynleit's life starts to collapse.",
-      "A grey cat trespasses into Lynleit's family house and becomes an omen of outside threats entering her private life.",
+      "The grey cat is male and is named Ash.",
+      "Ash trespasses into Lynleit's family house and becomes an omen of outside threats entering her private life.",
       "The family maintained an original house in Turon while Lynleit's mother was alive and Lynleit was in junior school.",
       "After her mother's death, the family moved to a Vilen residence for Fionn's access to the capital. Lynleit accepted the move only after securing the third-floor study-bedroom.",
       "The Vilen house is a three-floor family residence on a wooded hill above the river that flows toward the city center, with a small rear park and garden.",
       "Lynleit values the thick vegetation and the sound of leaves and branches in the wind. She regards nearby flowing water as life energy and seeks its emotional grounding despite her childhood fear of drowning.",
       "The garden-facing first floor contains glass-enclosed relaxation areas that preserve contact with nature through every season.",
-      "Lynleit personally chases the cat through the house, revealing a clumsier and more childish side of her than her public role usually permits.",
-      "As the cat repeatedly escapes her, Lynleit intuitively and emotionally connects it with her leads, understanding of her life, and sense of safety escaping her control.",
-      "Lynleit eventually catches the cat.",
-      "She cannot bring herself to expel it because rain is falling outside.",
-      "The cat decides to remain and becomes a permanent loiterer in the family home."
+      "Lynleit personally chases Ash through the house, revealing a clumsier and more childish side of her than her public role usually permits.",
+      "As Ash repeatedly escapes her, Lynleit intuitively and emotionally connects him with her leads, understanding of her life, and sense of safety escaping her control.",
+      "Lynleit eventually catches Ash.",
+      "She cannot bring herself to expel him because rain is falling outside.",
+      "Ash decides to remain and becomes a permanent loiterer in the family home."
     ],
     "openQuestions": [
-      "Does the cat ever receive a name?",
-      "Who else in the household accepts or resists its permanent presence?"
+      "Who else in the household accepts or resists Ash's permanent presence?"
     ],
     "continuityBefore": "The first disappearances have begun outside Lynleit's private life, but the full crisis, Fionn's death, and the destruction of her family security remain ahead.",
-    "continuityAfter": "The cat remains inside the house as a quiet domestic echo of the danger Lynleit cannot keep outside. Later losses can turn the once-comic chase into an omen whose meaning becomes clear only in retrospect.",
+    "continuityAfter": "Ash remains inside the house as a quiet domestic echo of the danger Lynleit cannot keep outside. Later losses can turn the once-comic chase into an omen whose meaning becomes clear only in retrospect.",
     "chapterSlug": null,
-    "updated": "2026-08-26"
+    "updated": "2026-08-31"
   },
   {
     "slug": "a-citizen-is-taken",

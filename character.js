@@ -361,6 +361,35 @@ const profileSeeds = [
     origin: 'Mikhail is trained as a priest for public cover and as a special envoy for the restricted operational needs of Church leadership. His specialization and exact authority are not yet known.', rupture: 'The Spill creates suffering too visible to dismiss and too dangerous to explain openly.', focus: 'Protecting ordinary people may require cooperating with Magi the Church is prepared to condemn.', future: 'His choices place him between doctrine, institutional survival, and the individuals paying the price for both.',
     ally: 'Inspector Leo', allyNote: 'A secular investigator whose questions keep returning to the human cost of secrecy.', rival: 'Church doctrine', rivalNote: 'The authority that gives him purpose while limiting the mercy he can show.', goal: 'Prevent the hidden conflict from turning necessary secrecy into moral surrender.',
     beats: ['A Keeper of Restricted Truth', 'Called to the Spill', 'Cooperation with the Condemned', 'Faith under Institutional Pressure']
+  },
+  {
+    slug: 'ash', name: 'Ash', code: 'HSE · 018', role: 'Grey cat of the Director\'s House', ageBand: 'Unspecified', factions: ['Household'], mbti: { type: 'XXXX', status: 'Undiscussed' }, accent: 'neutral', materialStatus: 'Canon character',
+    summary: 'A grey male cat who enters Lynleit\'s family home uninvited, survives her clumsy attempt to remove him, and decides to remain.',
+    visual: 'A grey domestic cat with a compact feline silhouette', palette: 'Ash grey',
+    physical: [
+      ['Coat', 'Grey fur.'],
+      ['Eyes', 'Unspecified.'],
+      ['Size and build', 'Domestic-cat stature; exact size and build are unspecified.'],
+      ['Distinguishing features', 'Male.']
+    ],
+    personalitySummary: 'Ash behaves as an independent domestic cat. He enters where he is not invited, repeatedly evades Lynleit, accepts shelter when rain makes removal difficult, and remains because the house has become his territory.',
+    traits: [
+      { label: 'Evasion', note: 'He repeatedly slips away during Lynleit\'s pursuit through the house.' },
+      { label: 'Persistence', note: 'Being caught does not end his occupation of the house.' },
+      { label: 'Domestic presence', note: 'His continued presence preserves a small ordinary life inside a residence shared with MSF work.' }
+    ],
+    origin: 'Ash enters the Vilen family house as a grey trespasser during the early chapters, after danger has begun outside but before Lynleit\'s private life collapses.',
+    rupture: 'Lynleit notices him and begins a clumsy chase through the house. His repeated escapes become emotionally entangled with her fear that her leads, safety, and understanding of her own life are also slipping away.',
+    focus: 'Lynleit eventually catches Ash but cannot expel him into the rain. The scene remains comic in the moment even as his intrusion marks the first outside presence that she fails to keep beyond the family threshold.',
+    future: 'Ash chooses to remain in the house as a permanent loiterer. His ordinary presence becomes a domestic reminder of the home that existed before Fionn\'s death and Lynleit\'s flight.',
+    connections: [
+      { name: 'Lynleit', relation: 'First household bond', detail: 'She chases and catches him, then allows him to remain rather than putting him outside in the rain.' },
+      { name: 'The Director\'s House', relation: 'Chosen home', detail: 'Ash enters as a trespasser and establishes himself as a permanent resident.' }
+    ],
+    rival: 'Expulsion from the house', rivalNote: 'Lynleit catches him, but the rain prevents his removal and gives him the chance to stay.',
+    institutionConflict: 'Ash has no institutional role. His place in the house depends on its residents continuing to tolerate the occupation he began without permission.',
+    goal: 'Remain in the Vilen house as shelter and territory.',
+    beats: ['The Trespasser', 'The Chase', 'Shelter from the Rain', 'The Permanent Loiterer']
   }
 ];
 
@@ -392,7 +421,8 @@ const skillProfiles = {
   lester: { analysis: 76, influence: 54, awareness: 92, fieldcraft: 84, combat: 72, magecraft: 91 },
   myka: { analysis: 75, influence: 70, awareness: 76, fieldcraft: 40, combat: 35, magecraft: 90 },
   'inspector-leo': { analysis: 84, influence: 65, awareness: 90, fieldcraft: 76, combat: 70, magecraft: 0 },
-  'father-mikhail': { analysis: 86, influence: 82, awareness: 84, fieldcraft: 52, combat: 45, magecraft: 0 }
+  'father-mikhail': { analysis: 86, influence: 82, awareness: 84, fieldcraft: 52, combat: 45, magecraft: 0 },
+  ash: { analysis: 25, influence: 45, awareness: 88, fieldcraft: 75, combat: 18, magecraft: 0 }
 };
 
 function createElement(tagName, className, text) {
@@ -807,7 +837,7 @@ function renderProfile(profile) {
 
   const conflicts = document.querySelector('#character-conflicts');
   [
-    ['External', profile.rival, profile.rivalNote], ['Institutional', profile.factions[0], `The demands of ${profile.factions[0]} do not always align with ${profile.name}'s judgment.`], ['Narrative', 'Central pressure', profile.focus]
+    ['External', profile.rival, profile.rivalNote], ['Institutional', profile.factions[0], profile.institutionConflict ?? `The demands of ${profile.factions[0]} do not always align with ${profile.name}'s judgment.`], ['Narrative', 'Central pressure', profile.focus]
   ].forEach(([type, title, detail]) => {
     const card = createElement('article');
     card.append(createElement('span', '', type), createElement('div'));

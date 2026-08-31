@@ -1966,6 +1966,12 @@ a {
   color: #d1c7b1;
 }
 
+.faction-household {
+  border-color: rgba(156, 146, 136, .28);
+  background: rgba(156, 146, 136, .1);
+  color: #c9c1b8;
+}
+
 .dispatch-button {
   margin-top: 12px;
 }
@@ -2889,6 +2895,7 @@ body::before {
 .avatar-amber { background: #9b6b32; }
 .avatar-green { background: #24845a; }
 .avatar-blue { background: #356caa; }
+.avatar-neutral { background: #5c5f66; }
 
 .dispatch-author {
   display: flex;

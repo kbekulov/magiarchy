@@ -24,6 +24,7 @@ These questions define what each character can do, what they cannot do, and why 
 | Axis model | Should the current Magecraft axis be paired with a separate Anomalous Nature axis, especially when a non-Magus demiholumn such as Lester cannot be described accurately by practiced ability? | 0% |
 | Axis model | Should Fieldcraft be divided into technical systems, infiltration, survival, and physical operations so Felix, Kyrien, Tien, Heyk, and Reiner are not measured as if they share one discipline? | 0% |
 | Axis model | Should Combat distinguish force, technique, ranged capability, and survival under pressure, or is a single comparative combat axis still useful? | 0% |
+| Axis model | Should an ordinary non-human character such as Ash the cat use the operational six-axis graph, or receive a smaller behavior-oriented record that does not compare him with trained agents and Magi? | 0% |
 | Timeline | Should profiles display separate opening, crisis, and late-story capability states for characters whose competence changes substantially? | 0% |
 | Helena | Is Helena a Magus, what practical abilities support her takeover, and what weakness prevents political manipulation from making her self-sufficient? | 0% |
 | Fionn | What operational blind spots, physical limitations, magical costs, or personal dependencies make Fionn vulnerable despite his mastery? | 0% |

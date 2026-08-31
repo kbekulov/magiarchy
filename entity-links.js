@@ -2,6 +2,7 @@
 const archiveEntityLinks = [
   ['Inspector Leo', 'character.html?character=inspector-leo'],
   ['Father Mikhail', 'character.html?character=father-mikhail'],
+  ['Ash the cat', 'character.html?character=ash'],
   ['Director\'s House', 'director-house.html'],
   ['Magi Academy', 'world.html#planned-records-title'],
   ['The Magiarchy', 'magiarchy.html'],
