@@ -2,17 +2,17 @@ const profileSeeds = [
   {
     slug: 'lynleit', name: 'Lynleit', code: 'MSF · 001', role: 'Fionn\'s biological daughter and displaced heir', ageBand: 'Late twenties', factions: ['MSF', 'Magiarchy'], mbti: { type: 'ENFJ', detail: 'strong Ni', status: 'Confirmed' }, accent: 'blue', materialStatus: 'Canon traits + mock details',
     summary: 'Fionn\'s biological daughter and Helena\'s stepdaughter, Lynleit is a people-first leader whose responsibility is sharpened by unusually strong long-range intuition.',
-    visual: 'A long tailored blue coat over a pale high-collared blouse with a narrow black ribbon, paired with high-waisted black shorts, dark tights, and tall black lace-up boots', palette: 'Midnight blue, black, white, cold cyan',
+    visual: 'A long tailored blue coat over a pale high-collared blouse with a narrow black ribbon, paired with fitted high-waisted black shorts, dark tights, and black over-the-knee lace-up boots. The outfit is elegant and deliberately fashion-conscious rather than athletic or utilitarian.', palette: 'Midnight blue, black, white, cold cyan',
     physical: [
-      ['Hair', 'Very long, wavy ash-black hair with a side-parted fringe.'],
+      ['Hair', 'Very long, wavy ash-black hair with a side-parted fringe, most often worn loose.'],
       ['Eyes', 'Bright cyan-blue.'],
-      ['Height and build', '169 cm, slender and long-limbed.'],
+      ['Height and build', '169 cm with a slender build.'],
       ['Distinguishing features', 'A pale complexion, fine angular features, and a reserved, inward-looking resting expression that can soften into a distant, dreamy gaze.']
     ],
     residenceNote: 'After her mother\'s death, Lynleit resisted the family\'s move from Turon to Vilen and accepted it only on the condition that her study-bedroom occupy the third floor. The hillside site places thick trees close to the house and overlooks a river flowing toward the city center. Rustling leaves inspire her. She regards flowing water as life energy and seeks its emotional grounding despite her childhood fear of drowning.',
     appearanceDetails: [
-      ['Signature silhouette', 'Long structured outerwear frames a compact, practical lower silhouette. The contrast between formal tailoring and movement-ready shorts and boots is the recognizable core of her wardrobe.'],
-      ['Variation rule', 'Other outfits may change the coat length, layers, or degree of formality, but usually preserve a blue tailored outer layer, a pale blouse, restrained black detailing, and tall practical footwear.']
+      ['Elegance and movement', 'The close fit keeps loose fabric out of her way, but mobility is secondary. The fitted shorts, dark tights, and over-the-knee boots are a deliberate fashion statement whose effect depends on controlled posture and graceful movement. They are not sportswear or ordinary field gear.'],
+      ['Hair variation', 'For dangerous work, long nights over reports, or sleep, she occasionally gathers her hair into a ponytail or bun. The bun becomes her preferred hairstyle in the second arc, especially while working.']
     ],
     equipment: [
       { label: 'Issued sidearm', title: 'Ren L17 "Sparrow"', meta: ['9×17 mm', 'Leather OWB holster', 'Right-handed draw'], detail: 'Lynleit carries the compact Sparrow in a snug leather outside-the-waistband holster centered just above her tailbone. A rightward cant lets her draw with her right hand. The pistol\'s small proportions and the long jackets or coats central to her wardrobe keep it concealed without disturbing her usual silhouette.', href: 'weapons.html#ren-l17-sparrow' },
@@ -38,11 +38,11 @@ const profileSeeds = [
   {
     slug: 'kyrien', name: 'Kyrien', code: 'IND · 002', role: 'Independent operator and later MSF director', ageBand: 'Late twenties', factions: ['Independent', 'MSF'], affiliationTimeline: [{ name: 'Independent', stage: 'Opening' }, { name: 'MSF', stage: 'Later director' }], mbti: { type: 'ISTP / INTJ', detail: 'Ti or Ni; ISTP lean', status: 'Provisional' }, accent: 'amber', materialStatus: 'Canon traits + mock details',
     summary: 'A quiet non-Magus shaped by an officer\'s ethics, a fugitive\'s instincts, and the conviction that force creates an equal claim against the person who uses it.',
-    visual: 'Practical layers, concealed tools, and a silhouette built for movement', palette: 'Charcoal, muted amber, worn steel, off-white',
+    visual: 'A burgundy formal shirt worn with the collar open and sleeves rolled, dark trousers suited to both formal and informal settings, dark leather shoes, and a fitted leather jacket. The combination is polished without restricting quick movement.', palette: 'Burgundy, charcoal, black, dark brown leather',
     physical: [
       ['Hair', 'Short, tousled charcoal-black hair with a heavy forward fringe.'],
       ['Eyes', 'Golden brown.'],
-      ['Height and build', 'Average height with a lean, compact build.'],
+      ['Height and build', '180 cm with a slender, lightly built frame whose strength is easy to underestimate.'],
       ['Distinguishing features', 'A youthful face, sharply focused eyes, and an expression that rarely softens into a smile.']
     ],
     personalitySummary: 'Kyrien speaks little and smiles less, yet he is intensely competitive. Cards, chess, an investigation, and a gunfight can all become contests he feels compelled to win. He accepts hard play, but reacts quickly when an opponent cheats, and that urge to punish unfairness can pull him away from the safer objective. His reserve comes from learned discipline and does not indicate emotional emptiness.',
@@ -55,6 +55,8 @@ const profileSeeds = [
       { label: 'Concealment', title: 'Subterfuge', detail: 'Controls what others can infer about his intent, identity, loyalties, and next movement. He survives by giving opponents a convincing answer that is not the true one.' },
       { label: 'Escape discipline', title: 'Evasion', detail: 'Breaks surveillance, avoids magical attention, plans exits before entry, and refuses confrontations whose terms were chosen by somebody else.' },
       { label: 'Misdirection', title: 'Trickery', detail: 'Uses false patterns, staged weaknesses, timing, and selective truth to make stronger opponents commit to the wrong interpretation.' },
+      { label: 'Relative strength', title: 'Obstacle movement', detail: 'His strength is most effective against his own body weight. He may not strike with the greatest force, but he moves quickly through difficult ground, pulls himself over obstacles, and can climb fences or walls when an escape route demands it.' },
+      { label: 'Preparedness', title: 'Redundant options', detail: 'Kyrien usually keeps at least two objects available that are weapons or can become weapons. The pair changes with circumstance and may include a knife, keys, a pen, or a pocket pistol. The habit keeps options within reach rather than imposing a fixed loadout.' },
       { label: 'Reciprocal force', title: 'Firearms', detail: 'His father taught him that pointing a weapon creates an obligation. Kyrien keeps the lesson as a personal rule: "You cannot do much in this world without life or death stakes. But if you dare to point a gun at someone, you should be prepared to be shot yourself." He uses firearms to create distance, interrupt an attack, or open an escape route.' },
       { label: 'Mobility', title: 'Motorcycle', detail: 'The only driving licence he ever wanted was for a motorcycle. He values the machine as a narrow, responsive escape tool that is harder to trap than a car, not as a leisure accessory.' },
       { label: 'Last resort', title: 'Survival combat', detail: 'Fights to remain mobile and alive, combining practical close combat with terrain awareness instead of pursuing elegant or decisive victories.' },

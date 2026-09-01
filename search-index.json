@@ -1,6 +1,6 @@
 {
-  "generated": "2026-09-01T05:49:19.764Z",
-  "count": 358,
+  "generated": "2026-09-01T06:33:14.061Z",
+  "count": 359,
   "entries": [
     {
       "id": "page-characters",
@@ -712,7 +712,7 @@
       "type": "Character section",
       "url": "character.html?character=kyrien#appearance-title",
       "subtitle": "Independent operator and later MSF director",
-      "text": "Kyrien: Appearance Independent operator and later MSF director Hair Short, tousled charcoal-black hair with a heavy forward fringe. Eyes Golden brown. Height and build Average height with a lean, compact build. Distinguishing features A youthful face, sharply focused eyes, and an expression that rarely softens into a smile. Practical layers, concealed tools, and a silhouette built for movement Charcoal, muted amber, worn steel, off-white Kyrien"
+      "text": "Kyrien: Appearance Independent operator and later MSF director Hair Short, tousled charcoal-black hair with a heavy forward fringe. Eyes Golden brown. Height and build 180 cm with a slender, lightly built frame whose strength is easy to underestimate. Distinguishing features A youthful face, sharply focused eyes, and an expression that rarely softens into a smile. A burgundy formal shirt worn with the collar open and sleeves rolled, dark trousers suited to both formal and informal settings, dark leather shoes, and a fitted leather jacket. The combination is polished without restricting quick movement. Burgundy, charcoal, black, dark brown leather Kyrien"
     },
     {
       "id": "character-kyrien-biography",
@@ -760,7 +760,7 @@
       "type": "Character section",
       "url": "character.html?character=kyrien#tradecraft-title",
       "subtitle": "Independent operator and later MSF director",
-      "text": "Kyrien: Tradecraft Independent operator and later MSF director Concealment Subterfuge Controls what others can infer about his intent, identity, loyalties, and next movement. He survives by giving opponents a convincing answer that is not the true one. Escape discipline Evasion Breaks surveillance, avoids magical attention, plans exits before entry, and refuses confrontations whose terms were chosen by somebody else. Misdirection Trickery Uses false patterns, staged weaknesses, timing, and selective truth to make stronger opponents commit to the wrong interpretation. Reciprocal force Firearms His father taught him that pointing a weapon creates an obligation. Kyrien keeps the lesson as a personal rule: \"You cannot do much in this world without life or death stakes. But if you dare to point a gun at someone, you should be prepared to be shot yourself.\" He uses firearms to create distance, interrupt an attack, or open an escape route. Mobility Motorcycle The only driving licence he ever wanted was for a motorcycle. He values the machine as a narrow, responsive escape tool that is harder to trap than a car, not as a leisure accessory. Last resort Survival combat Fights to remain mobile and alive, combining practical close combat with terrain awareness instead of pursuing elegant or decisive victories. Leadership peak Intelligence operations His unofficial MSF association gives him access to surveillance, counterintelligence, field planning, and institutional command. By Lynleit's disappearance, this becomes the side of MSF he has mastered completely. Kyrien"
+      "text": "Kyrien: Tradecraft Independent operator and later MSF director Concealment Subterfuge Controls what others can infer about his intent, identity, loyalties, and next movement. He survives by giving opponents a convincing answer that is not the true one. Escape discipline Evasion Breaks surveillance, avoids magical attention, plans exits before entry, and refuses confrontations whose terms were chosen by somebody else. Misdirection Trickery Uses false patterns, staged weaknesses, timing, and selective truth to make stronger opponents commit to the wrong interpretation. Relative strength Obstacle movement His strength is most effective against his own body weight. He may not strike with the greatest force, but he moves quickly through difficult ground, pulls himself over obstacles, and can climb fences or walls when an escape route demands it. Preparedness Redundant options Kyrien usually keeps at least two objects available that are weapons or can become weapons. The pair changes with circumstance and may include a knife, keys, a pen, or a pocket pistol. The habit keeps options within reach rather than imposing a fixed loadout. Reciprocal force Firearms His father taught him that pointing a weapon creates an obligation. Kyrien keeps the lesson as a personal rule: \"You cannot do much in this world without life or death stakes. But if you dare to point a gun at someone, you should be prepared to be shot yourself.\" He uses firearms to create distance, interrupt an attack, or open an escape route. Mobility Motorcycle The only driving licence he ever wanted was for a motorcycle. He values the machine as a narrow, responsive escape tool that is harder to trap than a car, not as a leisure accessory. Last resort Survival combat Fights to remain mobile and alive, combining practical close combat with terrain awareness instead of pursuing elegant or decisive victories. Leadership peak Intelligence operations His unofficial MSF association gives him access to surveillance, counterintelligence, field planning, and institutional command. By Lynleit's disappearance, this becomes the side of MSF he has mastered completely. Kyrien"
     },
     {
       "id": "character-lester-appearance",
@@ -824,7 +824,7 @@
       "type": "Character section",
       "url": "character.html?character=lynleit#appearance-title",
       "subtitle": "Fionn's biological daughter and displaced heir",
-      "text": "Lynleit: Appearance Fionn's biological daughter and displaced heir Hair Very long, wavy ash-black hair with a side-parted fringe. Eyes Bright cyan-blue. Height and build 169 cm, slender and long-limbed. Distinguishing features A pale complexion, fine angular features, and a reserved, inward-looking resting expression that can soften into a distant, dreamy gaze. A long tailored blue coat over a pale high-collared blouse with a narrow black ribbon, paired with high-waisted black shorts, dark tights, and tall black lace-up boots Midnight blue, black, white, cold cyan Lynleit"
+      "text": "Lynleit: Appearance Fionn's biological daughter and displaced heir Hair Very long, wavy ash-black hair with a side-parted fringe, most often worn loose. Eyes Bright cyan-blue. Height and build 169 cm with a slender build. Distinguishing features A pale complexion, fine angular features, and a reserved, inward-looking resting expression that can soften into a distant, dreamy gaze. A long tailored blue coat over a pale high-collared blouse with a narrow black ribbon, paired with fitted high-waisted black shorts, dark tights, and black over-the-knee lace-up boots. The outfit is elegant and deliberately fashion-conscious rather than athletic or utilitarian. Midnight blue, black, white, cold cyan Lynleit"
     },
     {
       "id": "character-lynleit-biography",
@@ -1553,6 +1553,14 @@
       "url": "index.html#update-question-ledger-dramatic-constraints",
       "subtitle": "Home update feed",
       "text": "Canon Audit: Site update Home update feed QA Canon Audit 28 Aug 2026 · Questions and dramatic constraints The open-question ledger now asks for choices with character, thematic, or narrative consequence instead of background encyclopedia detail. Confirmed additions establish the Council of State's jurisdictional paradox, MSF's freedom to accept private clients, the independent origin of the Spill, the river's lingering scar, Helena's partial complicity, and the incompatible agendas that converge into Fionn's death. Review the revised questions →"
+    },
+    {
+      "id": "update-update-lynleit-kyrien-appearance-audit",
+      "title": "Character Archive: Site update",
+      "type": "Update",
+      "url": "index.html#update-lynleit-kyrien-appearance-audit",
+      "subtitle": "Home update feed",
+      "text": "Character Archive: Site update Home update feed AP Character Archive 01 Sep 2026 · Lynleit and Kyrien appearance audit Lynleit's profile now treats her fitted shorts, dark tights, and over-the-knee boots as deliberate fashion rather than generic fieldwear, records her changing hairstyles, and removes an unhelpful body-proportion label. Kyrien now has a defined height, understated formal wardrobe, relative-strength movement, and redundant everyday preparedness. Read Lynleit's appearance record →"
     },
     {
       "id": "update-update-relationship-inspector",
