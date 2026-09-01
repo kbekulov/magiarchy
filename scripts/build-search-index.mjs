@@ -112,15 +112,19 @@ characters.forEach((character) => {
 });
 
 const docs = readJson('docs/index.json');
+const behaviorNotes = readJson('docs/character-behavior-notes.json');
 docs.forEach((document) => {
   const markdown = stripMarkdown(readText(path.join('docs', document.file)));
+  const contextualText = document.slug === 'character-behavior-audit'
+    ? flatten([behaviorNotes.sections, behaviorNotes.notes])
+    : '';
   addEntry({
     id: `doc-${document.slug}`,
     title: document.title,
     type: 'Document',
     url: document.href || `docs.html?doc=${encodeURIComponent(document.slug)}`,
     subtitle: document.topic,
-    text: `${document.description} ${markdown}`,
+    text: `${document.description} ${markdown} ${contextualText}`,
     keywords: document.speakers
   });
 });

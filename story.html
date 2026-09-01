@@ -11,6 +11,7 @@
     <script src="script.js" defer></script>
     <script src="entity-links.js" defer></script>
     <script src="story-phases.js" defer></script>
+    <script src="behavior-notes.js" defer></script>
     <script src="story.js" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2" defer></script>
     <script src="notes-config.js" defer></script>
@@ -125,6 +126,19 @@
                 </thead>
                 <tbody id="chapter-event-list"></tbody>
               </table>
+            </section>
+
+            <section class="context-behavior-panel" id="chapter-behavior-panel" aria-labelledby="chapter-behavior-title" hidden>
+              <header class="context-behavior-header">
+                <div>
+                  <p class="eyebrow">Writer guidance</p>
+                  <h2 id="chapter-behavior-title">Character reactions</h2>
+                  <p>Possibilities shaped by the characters, their bodies, and the pressure of this chapter. These are not canon until accepted into the story.</p>
+                </div>
+                <a href="docs.html?doc=character-behavior-audit">Open full audit <span aria-hidden="true">→</span></a>
+              </header>
+              <div id="chapter-behavior-legend"></div>
+              <div class="behavior-notes-grid" id="chapter-behavior-notes"></div>
             </section>
 
             <div class="document-shell">
