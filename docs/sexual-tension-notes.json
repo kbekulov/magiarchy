@@ -1,0 +1,143 @@
+{
+  "updated": "2026-09-01",
+  "pairs": [
+    {
+      "id": "lynleit-kyrien",
+      "status": "Established arc",
+      "direction": "Mutual, slow to surface",
+      "participants": [
+        {
+          "slug": "lynleit",
+          "name": "Lynleit",
+          "reading": "Kyrien resists the social legibility on which Lynleit normally relies. His restraint keeps her attention fixed on small reactions she cannot confidently interpret, while his refusal to exploit what he sees gives that attention a private charge."
+        },
+        {
+          "slug": "kyrien",
+          "name": "Kyrien",
+          "reading": "Lynleit's elegance, authority, and nerve attract his attention before he permits himself to call it desire. She is also unusually capable of noticing the mask he uses to keep other people at a safe distance."
+        }
+      ],
+      "dynamic": "The tension develops because each frustrates a habit the other normally relies on. Lynleit keeps trying to interpret the reactions Kyrien withholds. Kyrien notices how closely she watches him while resisting her authority over his inner life. Protected secrets and repeated awareness of physical distance let attraction develop before either person names it."
+    },
+    {
+      "id": "lynleit-felix",
+      "status": "Established asymmetry",
+      "direction": "Felix overt, Lynleit deflecting",
+      "participants": [
+        {
+          "slug": "lynleit",
+          "name": "Lynleit",
+          "reading": "Felix's flirting belongs to a long friendship she refuses to reorganize around his advances. Her ease with him, combined with the repeated refusal, creates visible chemistry without requiring matching sexual intent."
+        },
+        {
+          "slug": "felix",
+          "name": "Felix",
+          "reading": "Lynleit is one of the few people his charm cannot simply move into the response he wants. Familiar affection, physical ease, and repeated deflection keep his attraction active even when he respects the boundary she has made."
+        }
+      ],
+      "dynamic": "The tension is easy for readers to recognize because it already has a social rhythm: he advances through jokes and flirtation, she ignores or redirects him, and neither abandons the closeness underneath the exchange. It does not need to become a relationship to remain real."
+    },
+    {
+      "id": "yulia-hiyu",
+      "status": "Emerging arc",
+      "direction": "Mutual, unequally conscious",
+      "participants": [
+        {
+          "slug": "yulia",
+          "name": "Yulia",
+          "reading": "Hiyu irritates her into sustained attention. She keeps arguing, correcting, and following because his ideas have already occupied more of her mind than she wants to admit. Suppressed attraction can sharpen both her impatience and her awareness of his physical presence."
+        },
+        {
+          "slug": "hiyu",
+          "name": "Hiyu",
+          "reading": "Yulia is the critic whose resistance makes an idea worth pursuing. He becomes dependent on her attention before he understands that the dependence is personal, leaving him oblivious to tension that is already changing how he seeks her out."
+        }
+      ],
+      "dynamic": "Their arguments repeatedly force proximity and attention. Yulia wants distance but keeps choosing engagement, while Hiyu treats her engagement as intellectual fuel and misses its emotional cost. Her urge to make him stop talking can acquire an unwanted physical charge even while she continues to reject his theories."
+    },
+    {
+      "id": "kyrien-sherie",
+      "status": "Strong potential",
+      "direction": "Situational and confrontational",
+      "participants": [
+        {
+          "slug": "kyrien",
+          "name": "Kyrien",
+          "reading": "Sherie's charm is too deliberate to disarm him, but the precision behind it earns his attention. He is more likely to watch for the moment her performance fails than reward the performance itself."
+        },
+        {
+          "slug": "sherie",
+          "name": "Sherie",
+          "reading": "Kyrien's refusal to be steered threatens a skill she has internalized as part of her identity. Each failed attempt to produce a reaction can make his eventual attention feel more valuable and personally dangerous."
+        }
+      ],
+      "dynamic": "Sherie uses language and calibrated flirtation to control the rhythm of an exchange. Kyrien answers with silence, literalism, or no usable reaction at all. Repeated negotiation could turn her professional frustration into sexual tension without making them compatible or displacing Kyrien's eventual relationship with Lynleit."
+    },
+    {
+      "id": "fionn-helena",
+      "status": "Established marriage",
+      "direction": "Mutual, damaged by exclusion",
+      "participants": [
+        {
+          "slug": "fionn",
+          "name": "Fionn",
+          "reading": "Fionn's affection and desire for Helena are genuine. He separates bodily and domestic closeness from the secrets he believes he must carry alone, never understanding that this division changes what their intimacy means to her."
+        },
+        {
+          "slug": "helena",
+          "name": "Helena",
+          "reading": "Helena experiences desire alongside the need to be admitted into Fionn's complete life. Physical familiarity can therefore intensify resentment: she can be close enough to know his body while remaining excluded from the truth governing him."
+        }
+      ],
+      "dynamic": "Their sexual tension survives inside a real marriage because attraction and grievance occupy the same private space. The closer they become physically, the harder it is for Helena to accept that Fionn still decides which parts of himself she is permitted to know."
+    },
+    {
+      "id": "natalia-inspector-leo",
+      "status": "Conditional potential",
+      "direction": "Mutual if a case forces repeated contact",
+      "participants": [
+        {
+          "slug": "natalia",
+          "name": "Natalia",
+          "reading": "Leo insists on human evidence and remains unimpressed by the authority of knowledge he cannot verify. His persistence can irritate Natalia while also giving her an unusually grounded intellectual opponent."
+        },
+        {
+          "slug": "inspector-leo",
+          "name": "Inspector Leo",
+          "reading": "Natalia repeatedly understands the part of a case that his institution cannot name, then refuses to make that understanding admissible. Respect, suspicion, and frustrated curiosity can become difficult for him to separate."
+        }
+      ],
+      "dynamic": "The tension requires a case that neither can solve or control alone. His procedural persistence presses against her conceptual autonomy, while each person sees the other produce results through methods they distrust. Without repeated conflict and reluctant reliance, this pairing remains only a possibility."
+    }
+  ],
+  "unresolved": [
+    {
+      "slug": "tien",
+      "note": "No current pairing contains enough personal exposure beyond professional dependency or operational rivalry."
+    },
+    {
+      "slug": "heyk",
+      "note": "No current pairing is supported. Shared danger and survivor's grief do not create sexual tension on their own."
+    },
+    {
+      "slug": "drake",
+      "note": "No current pairing has the repeated personal friction needed to move beyond abstract compatibility."
+    },
+    {
+      "slug": "reiner",
+      "note": "No current pairing is supported. His long-standing bond with Lynleit remains protective rather than romantic."
+    },
+    {
+      "slug": "lester",
+      "note": "No current pairing is supported. His intimate history and the personal meaning of his demiholumn embodiment remain undefined."
+    },
+    {
+      "slug": "father-mikhail",
+      "note": "No current pairing is supported. His vows, private history, and relationship to desire remain undefined."
+    },
+    {
+      "slug": "myka",
+      "note": "No current record."
+    }
+  ]
+}

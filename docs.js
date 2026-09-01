@@ -336,7 +336,7 @@ function intimacyLensClass(heading) {
   return '';
 }
 
-function enhanceCharacterIntimacyDocument(container) {
+async function enhanceCharacterIntimacyDocument(container) {
   const sectionHeadings = Array.from(container.querySelectorAll(':scope > h2'));
   const guideHeading = sectionHeadings.find((heading) => heading.id === 'how-to-read-the-profiles');
   const principlesHeading = sectionHeadings.find((heading) => heading.id === 'archive-wide-writing-principles');
@@ -347,6 +347,15 @@ function enhanceCharacterIntimacyDocument(container) {
   const title = container.querySelector(':scope > h1');
   const lede = title?.nextElementSibling;
   if (lede?.tagName === 'P') lede.classList.add('intimacy-lede');
+
+  let tensionRegistry = null;
+  if (window.MAGIARCHY_SEXUAL_TENSION) {
+    try {
+      tensionRegistry = await window.MAGIARCHY_SEXUAL_TENSION.load();
+    } catch (error) {
+      console.warn('Sexual tension records could not be loaded.', error);
+    }
+  }
 
   if (guideHeading && characterHeadings[0]) {
     const guide = document.createElement('section');
@@ -425,7 +434,13 @@ function enhanceCharacterIntimacyDocument(container) {
       }
     });
 
-    card.append(cardHeader, lensGrid);
+    const profileSlug = characterName.toLowerCase().replace(/[^a-z0-9]+/g, '-');
+    const tensionModule = tensionRegistry
+      ? window.MAGIARCHY_SEXUAL_TENSION.createModule(tensionRegistry, profileSlug, { detailed: true, headingLevel: 3 })
+      : null;
+    card.append(cardHeader);
+    if (tensionModule) card.append(tensionModule);
+    card.append(lensGrid);
   });
 
   if (principlesHeading) {
@@ -501,7 +516,7 @@ async function loadDocument(entry) {
 
     const markdown = await response.text();
     documentReader.append(renderMarkdown(markdown));
-    if (entry.slug === 'character-intimacy-and-sexuality') enhanceCharacterIntimacyDocument(documentReader);
+    if (entry.slug === 'character-intimacy-and-sexuality') await enhanceCharacterIntimacyDocument(documentReader);
     if (entry.slug === 'character-behavior-audit') await enhanceCharacterBehaviorDocument(documentReader);
     documentMeta.textContent = `${entry.topic} · ${entry.speakers.join(' / ')} · Updated ${entry.updated}`;
 

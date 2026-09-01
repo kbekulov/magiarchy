@@ -59,6 +59,25 @@ function extractArrayLiteral(source, declaration, nextDeclaration) {
 
 const characterSource = readText('character.js');
 const characters = extractArrayLiteral(characterSource, 'profileSeeds', 'profilesBySlug');
+const sexualTensionNotes = readJson('docs/sexual-tension-notes.json');
+const sexualTensionFor = (slug) => [
+  ...sexualTensionNotes.pairs.flatMap((pair) => {
+    const participant = pair.participants.find((candidate) => candidate.slug === slug);
+    if (!participant) return [];
+    const other = pair.participants.find((candidate) => candidate.slug !== slug);
+    return [{
+      label: 'Potential sexual tension',
+      counterpart: other?.name,
+      status: pair.status,
+      direction: pair.direction,
+      reading: participant.reading,
+      dynamic: pair.dynamic
+    }];
+  }),
+  ...sexualTensionNotes.unresolved
+    .filter((entry) => entry.slug === slug)
+    .map((entry) => ({ label: 'Potential sexual tension', status: 'Unresolved', note: entry.note }))
+];
 const characterAnchors = {
   appearance: 'appearance-title',
   personality: 'personality-title',
@@ -91,7 +110,7 @@ characters.forEach((character) => {
     ['tradecraft', 'Tradecraft', character.tradecraft],
     ['magecraft', 'Magecraft', character.magecraft],
     ['biography', 'Biography', [character.origin, character.rupture, character.focus, character.future, character.beats]],
-    ['connections', 'Connections', [character.connections, character.ally, character.allyNote, character.rival, character.rivalNote]],
+    ['connections', 'Connections', [character.connections, character.ally, character.allyNote, character.rival, character.rivalNote, sexualTensionFor(character.slug)]],
     ['conflicts', 'Conflicts', [character.rival, character.rivalNote, character.focus]],
     ['motivations', 'Motivations', character.goal]
   ];
@@ -115,12 +134,19 @@ const docs = readJson('docs/index.json');
 const behaviorNotes = readJson('docs/character-behavior-notes.json');
 docs.forEach((document) => {
   const markdown = stripMarkdown(readText(path.join('docs', document.file)));
-  const contextualText = document.slug === 'character-behavior-audit'
-    ? flatten([
+  let contextualText = '';
+  if (document.slug === 'character-behavior-audit') {
+    contextualText = flatten([
       behaviorNotes.sections,
       behaviorNotes.notes.map(({ id, section, kind, title, basis, text, chapters, moments }) => ({ id, section, kind, title, basis, text, chapters, moments }))
-    ])
-    : '';
+    ]);
+  }
+  if (document.slug === 'character-intimacy-and-sexuality') {
+    contextualText = flatten([
+      sexualTensionNotes.pairs.map(({ status, direction, participants, dynamic }) => ({ status, direction, participants, dynamic })),
+      sexualTensionNotes.unresolved
+    ]);
+  }
   addEntry({
     id: `doc-${document.slug}`,
     title: document.title,

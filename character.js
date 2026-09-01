@@ -1211,6 +1211,18 @@ function renderProfile(profile) {
   const connections = document.querySelector('#character-connections');
   const mappedRelationships = collectProfileRelationships(profile);
   renderRelationshipMap(profile, document.querySelector('#character-relationship-map'));
+  const tensionHost = document.querySelector('#character-sexual-tension');
+  if (tensionHost && window.MAGIARCHY_SEXUAL_TENSION) {
+    window.MAGIARCHY_SEXUAL_TENSION.load().then((registry) => {
+      const module = window.MAGIARCHY_SEXUAL_TENSION.createModule(registry, profile.slug);
+      tensionHost.replaceChildren();
+      tensionHost.hidden = !module;
+      if (module) tensionHost.append(module);
+    }).catch((error) => {
+      tensionHost.hidden = true;
+      console.warn(`Sexual tension notes could not be connected to ${profile.name}.`, error);
+    });
+  }
   const personalConnections = profile.connections
     ? profile.connections.map(({ name, relation, detail }) => [name, relation, detail])
     : [[profile.ally, 'Primary connection', profile.allyNote]];

@@ -10,6 +10,7 @@ Story, character, world, relationship, institution, location, and event question
 | --- | --- | --- |
 | Family | Which emotionally inconvenient but reliable distant relative receives Lynleit and Kyrien's son, and how much truth does that person know about his parents? | 0% |
 | Relationships | Which adult characters beyond Lynleit and Kyrien, Fionn and Helena, and the emerging Yulia and Hiyu bond have romantic or sexual histories that materially shape their present behavior? | 0% |
+| Kyrien and Sherie | Does their current potential for confrontational sexual tension ever enter the story, and which negotiation would let her calibrated charm collide repeatedly with his refusal to be steered? | 0% |
 | Holumn incident HI-001 | What does the voice want, and what changes when it stops copying the victim and begins speaking before the victim does? | 0% |
 | Holumn incident HI-002 | Who made or first completed the puzzle, how does its compulsion move between owners, and where does completion send its victims? | 0% |
 | Holumn incident HI-005 | What conditions admit a visitor to the Nameless Street, what are the girl and dead boy, and why does Lynleit return after following the lure? | 0% |
@@ -30,6 +31,7 @@ Story, character, world, relationship, institution, location, and event question
 | Natalia | What kind of case does Natalia refuse, and what does that refusal reveal about her priorities? | 5% |
 | Fionn and Helena | Was their marriage still physically intimate near Fionn's death, and what private moment best shows that bodily closeness could not repair the trust he withheld? | 5% |
 | Yulia and Hiyu | Which event makes either of them consciously recognize investigative dependence as desire, and who first names what is happening between them? | 5% |
+| Sexual tension | Which current tension records become visible story dynamics, which remain one-sided or conditional, and which scenes give the reader enough contact to perceive the difference? | 5% |
 | River Holumns | Are the Drowned Choir and the river leviathan separate Holumns, two expressions of one river-bound intelligence, or phenomena feeding from the same wound? | 5% |
 | Holumns | Where do Holumns take disappeared victims, and what evidence can reveal the destination without yet explaining the mechanism or possibility of return? | 5% |
 | Core mystery | What logically defensible worldview and incompatible objective does each faction bring to Fionn, MSF, the Spill, and Narvea? | 10% |
@@ -71,7 +73,7 @@ Story, character, world, relationship, institution, location, and event question
 | Core mystery | Which incompatible agendas intend which outcomes around Fionn, and how do they accidentally cooperate to cause a death that none completely controls? | 45% |
 | Park trespass | How do Hiyu and Yulia bypass the cordon, what price do they pay to survive, and what evidence proves their experience while making their testimony harder to believe? | 45% |
 | Hotel refuge | What tiny ordinary behavior does Kyrien witness once Lynleit no longer has the strength to perform being Lynleit, and what private trust exists the next morning? | 45% |
-| Relationship | Which repeated functional encounters make Lynleit and Kyrien necessary to one another despite neither wanting the dependence, bridging river, hotel, and end-of-arc intimacy? | 50% |
+| Relationship | Which repeated encounters make Lynleit and Kyrien necessary to one another, and which small non-crisis behaviors turn dependence into desire instead of using rescue and protected secrets as substitutes for attraction? | 50% |
 | Boat operation | Does the submerged blue flame leave a lasting injury on the Drowned Choir, and what does the girl's refusal to pursue Lynleit reveal about its limits? | 65% |
 | Character appearance | What exact heights belong to the illustrated cast, and which artwork-derived hair, eye, build, or distinguishing details require correction? | 70% |
 | Covert alliance | Beyond the confirmed river-surveillance operation, what does Lynleit refuse to provide Drake and Sherie, and what concessions or favors do they offer in return? | 70% |

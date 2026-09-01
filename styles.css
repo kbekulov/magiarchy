@@ -5669,6 +5669,149 @@ a.moment-connection-card:hover {
   font-size: .76rem;
 }
 
+.sexual-tension-module {
+  --tension-accent: #cf819b;
+  border-top: 1px solid #41434a;
+  border-bottom: 1px solid #41434a;
+  background: #232429;
+}
+
+.sexual-tension-module > header {
+  display: grid;
+  grid-template-columns: 104px minmax(180px, .42fr) minmax(280px, 1fr);
+  align-items: center;
+  gap: 18px;
+  padding: 15px 20px;
+  border-bottom: 1px solid #3b3d43;
+  background: #202125;
+}
+
+.sexual-tension-module > header > span {
+  color: var(--tension-accent);
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: .54rem;
+  font-weight: 800;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+
+.sexual-tension-module > header h3 {
+  margin: 0;
+  color: #f2f3f5;
+  font-size: .88rem;
+}
+
+.sexual-tension-module > header p {
+  margin: 0;
+  color: #90959f;
+  font-size: .64rem;
+  line-height: 1.45;
+}
+
+.sexual-tension-module > div {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 8px;
+  padding: 10px;
+}
+
+.sexual-tension-entry,
+.sexual-tension-empty {
+  min-width: 0;
+  padding: 15px 16px;
+  border: 1px solid #3d3f46;
+  border-left: 3px solid var(--tension-accent);
+  border-radius: 6px;
+  background: #292a2f;
+  color: inherit;
+  text-decoration: none;
+}
+
+.sexual-tension-entry {
+  transition: border-color .16s ease, background-color .16s ease, transform .16s ease;
+}
+
+.sexual-tension-entry:hover,
+.sexual-tension-entry:focus-within {
+  border-color: #7c5261;
+  border-left-color: #e49ab2;
+  background: #303137;
+  transform: translateY(-1px);
+}
+
+.sexual-tension-entry > div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin-bottom: 9px;
+}
+
+.sexual-tension-entry > div span {
+  padding: 3px 6px;
+  border: 1px solid #494b53;
+  border-radius: 3px;
+  color: #a9adb6;
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: .48rem;
+  font-weight: 750;
+  letter-spacing: .035em;
+  text-transform: uppercase;
+}
+
+.sexual-tension-entry h4,
+.sexual-tension-empty strong {
+  display: block;
+  margin: 0 0 7px;
+  color: #f2f3f5;
+  font-size: .78rem;
+}
+
+.sexual-tension-entry h4 a,
+.sexual-tension-entry h4 a:visited {
+  color: inherit;
+  text-decoration: none;
+}
+
+.sexual-tension-entry h4 a:hover,
+.sexual-tension-entry h4 a:focus-visible {
+  color: #e49ab2;
+  text-decoration: none;
+}
+
+.sexual-tension-entry p,
+.sexual-tension-empty p {
+  margin: 0;
+  color: #b8bbc2;
+  font-size: .67rem;
+  line-height: 1.58;
+}
+
+.sexual-tension-entry > small {
+  display: block;
+  margin-top: 12px;
+  padding-top: 11px;
+  border-top: 1px solid #3d3f46;
+  color: #989ca6;
+  font-size: .62rem;
+  line-height: 1.58;
+}
+
+.sexual-tension-empty {
+  border-left-color: #666a74;
+}
+
+.character-intimacy-document .sexual-tension-module {
+  border-top: 0;
+}
+
+#character-sexual-tension {
+  border-bottom: 1px solid #3a3c42;
+}
+
+#character-sexual-tension .sexual-tension-module {
+  border: 0;
+}
+
 .intimacy-principles {
   margin-top: 44px;
   overflow: hidden;
@@ -5798,6 +5941,21 @@ a.moment-connection-card:hover {
 
   .character-intimacy-document .intimacy-lens p {
     font-size: .77rem;
+  }
+
+  .sexual-tension-module > header {
+    grid-template-columns: 1fr;
+    gap: 6px;
+    padding: 15px 16px;
+  }
+
+  .sexual-tension-module > header p {
+    font-size: .62rem;
+  }
+
+  .sexual-tension-module > div {
+    grid-template-columns: 1fr;
+    padding: 8px;
   }
 
   .character-intimacy-document .intimacy-principles ul {

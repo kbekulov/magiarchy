@@ -1,6 +1,6 @@
 # Character Intimacy and Sexuality Reference
 
-This writer-facing reference records how each character approaches affection, desire, sexual initiative, vulnerability, and specific partners. Intimate scenes are useful when they expose guarded behavior, complicate an existing dependency, or change the trust between two people.
+This writer-facing reference records how each character approaches affection, desire, sexual initiative, vulnerability, specific partners, and sexual tension. Tension may be mutual or one-sided, conscious or instinctive, welcome or inconvenient. It matters before intimacy occurs and can remain unresolved for the whole story.
 
 ## How to read the profiles
 
@@ -9,6 +9,8 @@ This writer-facing reference records how each character approaches affection, de
 **Working interpretation** extends established personality into a plausible intimate pattern. It is guidance for writing, not confirmed canon, and may change when the character receives a fuller history or partner.
 
 **Unresolved** marks matters the archive does not yet know.
+
+**Potential sexual tension** records chemistry supported by current characterization and contact. It does not predict a relationship. Physical attraction, intellectual friction, emotional exposure, rivalry, status, and situational dependence may contribute in different proportions. A pairing is not added merely because two characters are attractive or of opposite sexes.
 
 ## Lynleit
 
@@ -28,11 +30,11 @@ With familiarity, Lynleit becomes increasingly playful, openly desirous, and mor
 
 ### With Kyrien
 
-Kyrien first earns her trust when he witnesses her forbidden water walking and never uses the secret against her. He shares warmth with her after the river incident, does not sexualize the moment, and never mentions what he saw. Lynleit begins to see him differently because of this discretion.
+Kyrien first earns her trust when he witnesses her forbidden water walking and never uses the secret against her. Their attraction grows through more than rescue and protected secrets. Lynleit is accustomed to reading a room and guiding its emotional rhythm, while Kyrien gives her almost nothing she can interpret with confidence. His restraint makes small reactions unusually important to her. She begins watching him before she admits that the attention is personal.
 
 Lynleit later becomes the more frequent initiator. She can tease him, test his reserve, and express desire in ways that do not depend on a verbal response. Kyrien initiates less often, so his firm advances mark a change in their usual pattern. Her willingness to let him set the pace shows how much she trusts him.
 
-Their first sexual encounter follows repeated acts of rescue, shelter, and reassurance. It occurs near the end of the first arc, during a short safe interval, and carries the tenderness and urgency accumulated throughout their partnership.
+Their first sexual encounter follows repeated acts of rescue, shelter, reassurance, irritation, unreadable pauses, and unwanted awareness of one another's physical presence. It occurs near the end of the first arc, during a short safe interval, and carries the tenderness and urgency accumulated throughout their partnership.
 
 ### Writing guardrail
 
@@ -56,7 +58,7 @@ He expresses intensity through sustained attention instead of excessive speech o
 
 ### With Lynleit
 
-With Lynleit, Kyrien can respond to teasing without becoming defensive. He trusts her not to humiliate him for a visible reaction. His steadiness also lets her stop managing the emotional conditions around them.
+With Lynleit, Kyrien can respond to teasing without becoming defensive. He trusts her not to humiliate him for a visible reaction. He is attracted to her elegance, competence, and nerve, but her ability to notice what he would rather keep private makes desire feel like another loss of operational control. His steadiness also lets her stop managing the emotional conditions around them.
 
 Their usual pattern places her in the initiating role and him in the attentive one. A later scene in which he chooses the pace should show that he no longer experiences desire only as a response to Lynleit's initiative. He is willing to act on it with the same seriousness he brings to every decisive choice.
 
@@ -120,7 +122,7 @@ No sexual encounter is established. A character-consistent approach would be qui
 
 ### With Hiyu
 
-Their attraction grows from repeated dependence between incompatible methods. Hiyu pulls her beyond established procedure, while she gives his ideas a survivable form. Yulia may recognize the emotional attachment first and is also more likely to speak plainly about what is happening between them.
+Their attraction grows from repeated dependence between incompatible methods. Hiyu pulls her beyond established procedure, while she gives his ideas a survivable form. His ability to occupy her attention against her will gives the irritation a physical undertone she would rather dismiss. Yulia may recognize the emotional attachment first and is also more likely to speak plainly about what is happening between them.
 
 ### Writing guardrail
 
@@ -140,7 +142,7 @@ No sexual encounter is established. He would likely bring curiosity, improvisati
 
 ### With Yulia
 
-Yulia is the person whose corrections he continues to seek even while complaining about them. Attraction should emerge through habits they already share: leaning over the same evidence, forgetting personal space during an argument, noticing the other person's absence, or trusting a warning before understanding it. Once he recognizes desire, his openness can relieve Yulia's fear of ambiguity, provided he learns to slow down and hear her actual terms.
+Yulia is the person whose corrections he continues to seek even while complaining about them. Attraction should emerge through habits they already share: leaning over the same evidence, forgetting personal space during an argument, noticing the other person's absence, or trusting a warning before understanding it. He experiences her attention as intellectual friction long after the same exchanges have acquired sexual tension for her.
 
 ### Writing guardrail
 
@@ -160,7 +162,7 @@ A working interpretation makes him playful, communicative, inventive, and comfor
 
 ### With a specific partner
 
-No romantic or sexual partner is established. Lynleit is a close friend he protects, not an implied partner. Any future pairing should distinguish real vulnerability from the charm he can offer almost anyone.
+No romantic or sexual partner is established. Felix's flirting with Lynleit does create one-sided sexual tension: he keeps advancing through play, she keeps deflecting him, and both preserve the friendship beneath it. The chemistry does not oblige Lynleit to reciprocate and does not need to become a relationship to remain visible.
 
 ### Writing guardrail
 
@@ -200,7 +202,7 @@ No sexual behavior is established. A working interpretation suggests a playful a
 
 ### With a specific partner
 
-No romantic or sexual partner is established. Her bond with Drake is familial and pedagogical. Her request to be praised and pampered after the MSF negotiation expresses niece-and-mentor affection, not sexual subtext.
+No romantic or sexual partner is established. Her bond with Drake is familial and pedagogical. Kyrien is a strong potential source of tension because her calibrated charm would meet a man who refuses to supply the reaction she expects. Repeated failure to steer him could make his attention matter to her more than attention she wins easily.
 
 ### Writing guardrail
 
@@ -260,7 +262,7 @@ No sexual behavior is established. A working interpretation makes her observant,
 
 ### With a specific partner
 
-No romantic or sexual partner is established. Lester is an outside investigative ally. Myka is her niece and carries a daughter-like familial bond. Neither relationship contains implied sexual material.
+No romantic or sexual partner is established. Inspector Leo offers conditional potential if a case forces repeated contact: his insistence on admissible human evidence presses against Natalia's conceptual independence, while each produces results through methods the other distrusts. Lester remains an outside investigative ally, and Myka is her niece with a daughter-like familial bond.
 
 ### Writing guardrail
 
@@ -320,7 +322,7 @@ No sexual behavior is established. A working interpretation makes him grounded a
 
 ### With a specific partner
 
-No romantic or sexual partner is established. Natalia is an investigative ally, not an implied partner.
+No romantic or sexual partner is established. Natalia offers conditional potential if their investigations repeatedly collide. Leo must rely on a woman whose knowledge he cannot admit into police procedure, while Natalia encounters a persistent investigator who will not accept intellectual authority as proof.
 
 ### Writing guardrail
 
@@ -370,7 +372,10 @@ Keep her bond with Natalia familial. Do not use the absence of a sexual profile 
 
 - Intimacy should alter access. After a meaningful encounter, somebody knows, trusts, fears, or can wound the other person differently.
 - Initiative is not a permanent rank. A character can lead one encounter and surrender control in another without changing personality.
-- Sexual intensity is not the same as aggression. Slow, rough, playful, urgent, and tender behavior each require mutual choice and character-specific meaning.
+- Sexual intensity is not the same as aggression. Slow, rough, playful, urgent, and tender behavior each require character-specific meaning.
+- Sexual tension is not a relationship forecast. It may be asymmetric, subconscious, antagonistic, intermittent, or permanently unresolved.
+- Every proposed tension needs a repeated source of attention. Friction, attraction, status, danger, or proximity must operate differently for these two characters than it would for two arbitrary people.
+- New Chapters and Moments must be checked for changes in attraction, avoidance, physical awareness, rivalry, and emotional access. Revise the tension record when the story changes the pair.
 - A character's behavior afterward can be as revealing as the encounter. They may remain, withdraw, speak, secure the room, offer warmth, or return to work.
 - Functional trust should precede major thresholds. Shared work, danger, domestic routine, and protected secrets give physical intimacy narrative weight.
 - Each pairing should preserve both personalities. The partners may give one another access to a strength, weakness, or form of rest unavailable elsewhere.
