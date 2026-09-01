@@ -2,9 +2,15 @@
 
 > Placeholder draft built only from confirmed scene facts. The dialogue, location details, and connective action will be replaced or revised when final chapter material is available.
 
+## The Protection Failure
+
+The politician is under MSF protection when Kyrien makes the attempt. It fails for a reason he could not have anticipated: the target belongs to the hidden world of Magi.
+
+Lynleit is present during the attempt and is almost harmed by it. Kyrien does not know she was there. Lynleit never tells him.
+
 ## The Interview Room
 
-Kyrien's attempt on a politician has failed for a reason he could not have anticipated: the target belongs to the hidden world of Magi. He now faces prison, and the police office gives him no reason to expect another outcome.
+Kyrien now faces prison, and the police office gives him no reason to expect another outcome. Lynleit enters the interrogation knowing that the man opposite her nearly injured or killed her without intending to. To Kyrien, the personal edge in her questions has no visible source.
 
 Lynleit enters the interrogation with authority that has not yet been explained. She does not offer forgiveness. She offers conditional freedom.
 

@@ -29,7 +29,7 @@
       "chapterMatch": "Panic arrived without confusion.",
       "chapters": ["the-empty-boats-beneath-the-bridge"],
       "moments": ["the-boat-beneath-the-bridge"],
-      "momentFact": { "the-boat-beneath-the-bridge": 18 }
+      "momentFact": { "the-boat-beneath-the-bridge": 24 }
     },
     {
       "id": "river-kyrien",
@@ -41,7 +41,7 @@
       "chapterMatch": "It was a careful answer.",
       "chapters": ["the-empty-boats-beneath-the-bridge"],
       "moments": ["the-boat-beneath-the-bridge"],
-      "momentFact": { "the-boat-beneath-the-bridge": 33 }
+      "momentFact": { "the-boat-beneath-the-bridge": 40 }
     },
     {
       "id": "river-maren",
@@ -53,7 +53,7 @@
       "chapterMatch": "It was hands",
       "chapters": ["the-empty-boats-beneath-the-bridge"],
       "moments": ["the-boat-beneath-the-bridge"],
-      "momentFact": { "the-boat-beneath-the-bridge": 12 }
+      "momentFact": { "the-boat-beneath-the-bridge": 18 }
     },
     {
       "id": "river-reiner",
@@ -65,7 +65,7 @@
       "chapterMatch": "Reiner forced Maren toward it.",
       "chapters": ["the-empty-boats-beneath-the-bridge"],
       "moments": ["the-boat-beneath-the-bridge"],
-      "momentFact": { "the-boat-beneath-the-bridge": 13 }
+      "momentFact": { "the-boat-beneath-the-bridge": 19 }
     },
     {
       "id": "river-felix",
@@ -77,7 +77,7 @@
       "chapterMatch": "Felix left the van only when the operation had already collapsed.",
       "chapters": ["the-empty-boats-beneath-the-bridge"],
       "moments": ["the-boat-beneath-the-bridge"],
-      "momentFact": { "the-boat-beneath-the-bridge": 13 }
+      "momentFact": { "the-boat-beneath-the-bridge": 19 }
     },
     {
       "id": "river-blue-flame",
@@ -89,7 +89,53 @@
       "chapterMatch": "Lynleit twisted downward instead of up.",
       "chapters": ["the-empty-boats-beneath-the-bridge"],
       "moments": ["the-boat-beneath-the-bridge"],
-      "momentFact": { "the-boat-beneath-the-bridge": 18 }
+      "momentFact": { "the-boat-beneath-the-bridge": 24 }
+    },
+    {
+      "id": "pressure-lynleit-interrogation",
+      "section": "relationships-under-pressure",
+      "kind": "female",
+      "title": "Lynleit",
+      "basis": "ENFJ with strong Ni, MSF duty primary",
+      "text": "Lynleit's concealed knowledge that Kyrien nearly harmed her gives the interrogation a personal edge, but she does not make the injury the purpose of the scene. Her MSF responsibility and anticipation of a larger threat remain decisive. The private anger should appear through unusually exact questions, controlled distance, or refusal to explain herself rather than flirtation or an emotional confession.",
+      "chapterMatch": "Kyrien now faces prison",
+      "chapters": ["after-the-failed-attempt"],
+      "moments": ["interrogation-after-the-failed-attempt"],
+      "momentFact": { "interrogation-after-the-failed-attempt": 3 }
+    },
+    {
+      "id": "pressure-card-tells",
+      "section": "relationships-under-pressure",
+      "kind": "story",
+      "title": "Cards and physical tells",
+      "basis": "Approved sexual-tension pattern",
+      "text": "Keep the games brief and embedded in operational downtime. Kyrien should win more often through technical play, while Lynleit gains ground by reading him. Their attention becomes sexual because hands, breathing, gaze, and proximity begin to distract them, not because either character starts performing romance. Lynleit notices the intrusion and returns to the mission.",
+      "chapterMatch": "The rematch continued on the third night.",
+      "chapters": ["the-empty-boats-beneath-the-bridge"],
+      "moments": ["the-boat-beneath-the-bridge"],
+      "momentFact": { "the-boat-beneath-the-bridge": 8 }
+    },
+    {
+      "id": "pressure-kyrien-voluntary-stay",
+      "section": "relationships-under-pressure",
+      "kind": "male",
+      "title": "Kyrien",
+      "basis": "ISTP lean, officer ethics and autonomy",
+      "text": "Kyrien's decision to remain must occur when departure is genuinely possible and Lynleit's original authority has lost practical force. He is unlikely to explain the choice romantically. Staying, accepting the danger, and reopening contact are enough to separate voluntary loyalty from the vigilance of a coerced asset.",
+      "chapters": [],
+      "moments": ["the-first-lines-back-into-msf"],
+      "momentFact": { "the-first-lines-back-into-msf": 5 }
+    },
+    {
+      "id": "pressure-mikhail-aftermath",
+      "section": "relationships-under-pressure",
+      "kind": "story",
+      "title": "The argument after Mikhail",
+      "basis": "Approved relationship-pressure beat",
+      "text": "The argument remains about Kyrien exposing Felix and Reiner. Physical awareness belongs only in the delayed step apart and should not soften either position. Kyrien remains to help without apologizing, while Lynleit returns immediately to the institutional problem he has worsened.",
+      "chapters": [],
+      "moments": ["mikhail-discovers-the-breach"],
+      "momentFact": { "mikhail-discovers-the-breach": 10 }
     },
     {
       "id": "nameless-lynleit",

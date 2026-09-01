@@ -84,6 +84,8 @@ Every character profile includes:
 
 Sexual tension is not a relationship forecast. It may be mutual, asymmetric, subconscious, antagonistic, situational, or permanently unresolved. Each proposed pairing needs character-specific contact and a reason for repeated attention. Do not pair characters merely because they are attractive, available, or of opposite sexes.
 
+Construct tension from an established character priority rather than replacing it. Identify what each person normally controls, then use a repeatable ordinary interaction to let the other disrupt that control. Add restrained bodily tells, allow the reader to notice the pattern before the characters name it, and let crisis intensify tension that already exists instead of using rescue or trauma as its sole source. If authority, coercion, or dependency begins the relationship, a later voluntary choice to remain or return is required before compliance can be read as desire. Lynleit's MSF duty and personal missions remain primary, while her attraction to Kyrien is an involuntary complication.
+
 Appearance records contain observable facts only. State physical features, clothing, accessories, grooming, posture, and visible variation without justifying the design, explaining the character's reasons, or assigning personality and capability to the clothing.
 
 ## Audit boundaries
@@ -93,7 +95,7 @@ Appearance records contain observable facts only. State physical features, cloth
 - Contradiction audit: records only mutually incompatible statements. Ordinary uncertainty stays in Questions.
 - Capability audit: balances through scope, cost, counterplay, dependencies, and failure. It does not weaken competence arbitrarily.
 - Behavior audit: offers character-specific reactions based on history, physical circumstance, MBTI, culture, role, sex, and immediate pressure. It does not claim all men or all women behave alike.
-- Sexual tension audit: tracks chemistry supported by contact, friction, attraction, rivalry, status, and exposure. It does not turn chemistry into a romance, affair, or sexual encounter.
+- Sexual tension audit: tracks chemistry supported by contact, friction, attraction, rivalry, status, exposure, ordinary repetition, involuntary bodily awareness, and free choice after coercion. It distinguishes loyalty from desire, compares every pairing against the rest of the cast, and does not turn chemistry into a romance, affair, sexual encounter, or replacement for the main story.
 - Public prose audit: removes drafting commentary, AI-like slogans, and process explanations from reader-facing pages.
 
 ## Design and delivery invariants

@@ -46,13 +46,14 @@
     "title": "After the Failed Attempt",
     "status": "Placeholder draft",
     "file": "after-the-failed-attempt.md",
-    "updated": "2026-08-25",
-    "description": "After a failed political assassination, Lynleit converts Kyrien's prison risk into a secret alliance that even Fionn cannot know about.",
+    "updated": "2026-09-01",
+    "description": "After Kyrien's failed attack on an MSF-protected politician nearly harms Lynleit, she questions him without revealing that she was present and converts his prison risk into a secret alliance.",
     "characters": ["Lynleit", "Kyrien", "Felix", "Reiner"],
     "timelinePhase": "the-hidden-wager",
     "timelineLabel": "The Hidden Wager",
     "events": [
-      "Kyrien's attempt on a politician fails because the target secretly belongs to the Magi world.",
+      "Kyrien's attempt on an MSF-protected politician fails because the target secretly belongs to the Magi world.",
+      "Lynleit is present and almost harmed during the attempt, but Kyrien does not know she was there and she never tells him.",
       "Lynleit takes control of his interrogation and offers conditional freedom in exchange for becoming her secret helper.",
       "She recruits him because her intuition warns her that a danger she cannot yet identify is approaching.",
       "Lynleit later tells only Felix and Reiner, while even Fionn remains outside the compartment.",
@@ -82,7 +83,7 @@
     "title": "The Empty Boats Beneath the Bridge",
     "status": "Working draft",
     "file": "the-empty-boats-beneath-the-bridge.md",
-    "updated": "2026-08-31",
+    "updated": "2026-09-01",
     "description": "A covert MSF inspection of apparently unmanned river shipments collapses when the Drowned Choir attacks from below, leaving Kyrien to witness Lynleit's forbidden water walking from the quarantined bank.",
     "characters": ["Lynleit", "Kyrien", "Felix", "Reiner", "Sherie", "Drake"],
     "timelinePhase": "unknowing-convergence",
@@ -90,7 +91,13 @@
     "events": [
       "Sherie and Drake ask Lynleit to assemble a loyal team and inspect recurring night traffic on the Vilen river.",
       "Several surveillance nights produce no boats while small oddities emerge from the quarantined park.",
+      "After the failed watches, Lynleit repeatedly challenges Kyrien to short card games and they learn each other's physical tells.",
+      {
+        "text": "Their unfinished rematches and attention to breath, hands, and pauses imply an attraction neither character names or allows to displace the operation.",
+        "status": "inferred"
+      },
       "Felix freezes the bridge cameras and remains on the city bank as fallback while Reiner leads Lynleit, Kyrien, Maren, and Ivo down onto the boats.",
+      "When a boat shifts, Kyrien briefly steadies Lynleit near the concealed Sparrow holster and releases her before she asks.",
       {
         "text": "The empty boats, drowned hands, and pale girl imply that the contraband crews were taken before the interception.",
         "status": "inferred"

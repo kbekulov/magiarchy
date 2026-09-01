@@ -18,7 +18,7 @@ This writer-facing reference records how each character approaches affection, de
 
 ### Natural approach
 
-Lynleit approaches closeness through attention. She notices what another person needs, makes herself useful, and often assumes responsibility before admitting that she also wants comfort. Early intimacy therefore appears functional: keeping another person warm, remaining beside them after danger, offering shelter, or allowing them to witness an emotional collapse she would conceal in public.
+Lynleit approaches closeness through attention. She notices what another person needs, makes herself useful, and often assumes responsibility before admitting that she also wants comfort. MSF duty and her personal missions remain more important to her than intimacy. Attraction enters as unwanted awareness inside work she would have undertaken without it.
 
 Once trust is secure, she becomes playful and more likely to initiate. She enjoys drawing a reaction from a reserved partner and notices changes in mood quickly.
 
@@ -30,15 +30,19 @@ With familiarity, Lynleit becomes increasingly playful, openly desirous, and mor
 
 ### With Kyrien
 
-Kyrien first earns her trust when he witnesses her forbidden water walking and never uses the secret against her. Their attraction grows through more than rescue and protected secrets. Lynleit is accustomed to reading a room and guiding its emotional rhythm, while Kyrien gives her almost nothing she can interpret with confidence. His restraint makes small reactions unusually important to her. She begins watching him before she admits that the attention is personal.
+Their first tension predates attraction. Lynleit interrogates Kyrien knowing that his failed attack on an MSF-protected politician almost harmed her. Kyrien does not know she was present, and Lynleit never tells him. The private injury gives her questions an edge he cannot interpret.
+
+During the failed river watches, short card games after each aborted operation create their first voluntary rhythm. Kyrien normally wins through technical play. Lynleit keeps requesting rematches because she cannot find his tells. She eventually learns the stopped breath before one of his risks, while he learns the hand movement that precedes one of her decisions. Studying the game becomes involuntary attention to hands, breathing, gaze, and proximity. Lynleit notices the distraction, dislikes it, and returns to the operation.
+
+Kyrien later earns her trust when he witnesses her forbidden water walking and never uses the secret against her. The river deepens an attraction that already has an ordinary source instead of creating it through rescue. When Lynleit's institutional control over him eventually loses force, his decision to remain gives the relationship a voluntary basis that the original interrogation could not provide.
 
 Lynleit later becomes the more frequent initiator. She can tease him, test his reserve, and express desire in ways that do not depend on a verbal response. Kyrien initiates less often, so his firm advances mark a change in their usual pattern. Her willingness to let him set the pace shows how much she trusts him.
 
-Their first sexual encounter follows repeated acts of rescue, shelter, reassurance, irritation, unreadable pauses, and unwanted awareness of one another's physical presence. It occurs near the end of the first arc, during a short safe interval, and carries the tenderness and urgency accumulated throughout their partnership.
+Their first sexual encounter follows repeated work, unfinished contests, irritation, practical care, voluntary loyalty, and unwanted awareness of one another's physical presence. It occurs near the end of the first arc during a short safe interval. Lynleit does not reach that threshold because her priorities have changed. Intimacy has accumulated inside the mission until continuing to ignore it requires more effort than acknowledging it.
 
 ### Writing guardrail
 
-Do not reduce Lynleit to a universally dominant seductress. Her initiative is meaningful because it coexists with vigilance, responsibility, and a private desire to be cared for without first having to manage the situation herself.
+Do not reduce Lynleit to a universally dominant seductress or make romance a competing mission. Her initiative is meaningful because it coexists with vigilance, responsibility, and a private desire to be cared for without first having to manage the situation herself. When attraction interrupts her work, she notices it, contains it, and returns to the task.
 
 ## Kyrien
 
@@ -58,7 +62,9 @@ He expresses intensity through sustained attention instead of excessive speech o
 
 ### With Lynleit
 
-With Lynleit, Kyrien can respond to teasing without becoming defensive. He trusts her not to humiliate him for a visible reaction. He is attracted to her elegance, competence, and nerve, but her ability to notice what he would rather keep private makes desire feel like another loss of operational control. His steadiness also lets her stop managing the emotional conditions around them.
+With Lynleit, Kyrien's need to win becomes the first visible crack in his reserve. Their card games teach him that she is studying his breath, hands, and pauses, while he becomes able to distinguish her social composure from the stillness before a dangerous decision. He is attracted to her elegance, competence, and nerve, but her ability to notice what he would rather keep private makes desire feel like another loss of operational control.
+
+He does not know that his assassination attempt nearly harmed her. Her refusal to reveal that fact leaves him unable to explain the first personal edge in their relationship. Later, when the coercive force behind their arrangement has weakened, remaining beside her becomes his decision. That choice matters more than any declaration because it proves that attention once produced by captivity has become voluntary.
 
 Their usual pattern places her in the initiating role and him in the attentive one. A later scene in which he chooses the pace should show that he no longer experiences desire only as a response to Lynleit's initiative. He is willing to act on it with the same seriousness he brings to every decisive choice.
 
@@ -150,7 +156,7 @@ His obliviousness should create misunderstandings without making him insensitive
 
 ## Felix
 
-**Basis: Established adult personality, partner unresolved**
+**Basis: Established adult personality and established asymmetric tension with Lynleit**
 
 ### Natural approach
 
@@ -250,7 +256,7 @@ Sex does not cure Heyk's trauma. Intimacy may reveal his grief or give him tempo
 
 ## Natalia
 
-**Basis: Established adult personality, partner unresolved**
+**Basis: Established adult personality and established tension with Lester**
 
 ### Natural approach
 
@@ -262,7 +268,7 @@ No sexual behavior is established. A working interpretation makes her observant,
 
 ### With a specific partner
 
-No romantic or sexual partner is established. Inspector Leo offers conditional potential if a case forces repeated contact: his insistence on admissible human evidence presses against Natalia's conceptual independence, while each produces results through methods the other distrusts. Lester remains an outside investigative ally, and Myka is her niece with a daughter-like familial bond.
+Natalia has sexual tension with Lester. His demiholumn existence is the living exception her research cannot finish classifying, while his direct engagement with danger forces her out of detached observation. The tension sharpens whenever Lester notices that she is watching him personally rather than examining his condition. Myka remains her niece with a daughter-like familial bond.
 
 ### Writing guardrail
 
@@ -290,7 +296,7 @@ Do not use professional violence as automatic evidence of sexual dominance, crue
 
 ## Lester
 
-**Basis: Personal and romantic history unresolved**
+**Basis: Demiholumn nature unresolved, tension with Natalia established**
 
 ### Natural approach
 
@@ -302,7 +308,7 @@ Sexual characterization should wait until his bodily nature, agency, and experie
 
 ### With a specific partner
 
-No romantic or sexual partner is established. Natalia is his trusted investigative ally, not an implied partner.
+Lester has sexual tension with Natalia. He enjoys provoking the reserved researcher into immediate experience, but her attention matters most when it recognizes him as a man rather than an impossible case. Their attraction does not settle the conflict between her need to understand and his need to remain more than a classification.
 
 ### Writing guardrail
 
@@ -310,7 +316,7 @@ Do not make physical difference the whole of his intimate identity. Any eventual
 
 ## Inspector Leo
 
-**Basis: Adult professional context, partner unresolved**
+**Basis: Adult professional context and marriage established**
 
 ### Natural approach
 
@@ -322,7 +328,7 @@ No sexual behavior is established. A working interpretation makes him grounded a
 
 ### With a specific partner
 
-No romantic or sexual partner is established. Natalia offers conditional potential if their investigations repeatedly collide. Leo must rely on a woman whose knowledge he cannot admit into police procedure, while Natalia encounters a persistent investigator who will not accept intellectual authority as proof.
+Leo is married. His spouse and the private character of the marriage are not yet defined. He has no established sexual tension with Natalia and remains outside the hidden Magi world.
 
 ### Writing guardrail
 
@@ -342,7 +348,7 @@ No sexual behavior should be inferred until those institutional and personal con
 
 ### With a specific partner
 
-No romantic or sexual partner is established. Inspector Leo is a secular investigative ally.
+No romantic or sexual partner is established.
 
 ### Writing guardrail
 
@@ -375,6 +381,12 @@ Keep her bond with Natalia familial. Do not use the absence of a sexual profile 
 - Sexual intensity is not the same as aggression. Slow, rough, playful, urgent, and tender behavior each require character-specific meaning.
 - Sexual tension is not a relationship forecast. It may be asymmetric, subconscious, antagonistic, intermittent, or permanently unresolved.
 - Every proposed tension needs a repeated source of attention. Friction, attraction, status, danger, or proximity must operate differently for these two characters than it would for two arbitrary people.
+- Preserve the main story and the character's hierarchy of priorities. Attraction may disrupt concentration or create unwanted awareness without becoming a goal, a voluntary pursuit, or the subject of the genre.
+- Begin with ordinary repetition before relying on crisis. Work, waiting, games, travel, rivalry, or domestic habits create chosen attention that rescue, grief, and protected secrets can later intensify.
+- Identify what each character normally controls and how the other person disrupts it. Use that disruption to create a private rhythm that belongs only to the pair.
+- Use restrained bodily tells such as hands, breath, gaze, voice, stillness, or proximity. Let the reader notice attraction before the characters explain it.
+- When coercion, authority, or dependency begins a relationship, require a later free choice to remain, return, or reopen contact before reading compliance as desire.
+- Compare every proposed dynamic against the rest of the cast. Revise it when another pairing already owns the same rhythm, conflict, or physical language.
 - New Chapters and Moments must be checked for changes in attraction, avoidance, physical awareness, rivalry, and emotional access. Revise the tension record when the story changes the pair.
 - A character's behavior afterward can be as revealing as the encounter. They may remain, withdraw, speak, secure the room, offer warmth, or return to work.
 - Functional trust should precede major thresholds. Shared work, danger, domestic routine, and protected secrets give physical intimacy narrative weight.

@@ -31,10 +31,11 @@ Story, character, world, relationship, institution, location, and event question
 | Natalia | What kind of case does Natalia refuse, and what does that refusal reveal about her priorities? | 5% |
 | Fionn and Helena | Was their marriage still physically intimate near Fionn's death, and what private moment best shows that bodily closeness could not repair the trust he withheld? | 5% |
 | Yulia and Hiyu | Which event makes either of them consciously recognize investigative dependence as desire, and who first names what is happening between them? | 5% |
-| Sexual tension | Which current tension records become visible story dynamics, which remain one-sided or conditional, and which scenes give the reader enough contact to perceive the difference? | 5% |
+| Natalia and Lester | Which ordinary case interaction first makes Natalia respond to Lester as a man rather than an anomalous condition, and how does he recognize the change without forcing either of them to name it? | 5% |
 | River Holumns | Are the Drowned Choir and the river leviathan separate Holumns, two expressions of one river-bound intelligence, or phenomena feeding from the same wound? | 5% |
 | Holumns | Where do Holumns take disappeared victims, and what evidence can reveal the destination without yet explaining the mechanism or possibility of return? | 5% |
 | Core mystery | What logically defensible worldview and incompatible objective does each faction bring to Fionn, MSF, the Spill, and Narvea? | 10% |
+| Sexual tension | Which current tension records become visible story dynamics, which remain one-sided or conditional, and which scenes give the reader enough contact to perceive the difference? | 10% |
 | Lynleit | Which of Lynleit's later actions around MSF missions can plausibly read as help, observation, manipulation, or causation before her intention becomes clear? | 10% |
 | Location | What human act in the Vilen park's history unknowingly prepares it for the Spill, and what is the park called? | 10% |
 | Boat operation | Which small oddities emerge from the quarantined park during the unsuccessful bridge watches, and how do they escalate while the team must ignore them? | 10% |
@@ -68,12 +69,11 @@ Story, character, world, relationship, institution, location, and event question
 | Magiarchy | Who attempts to restore legitimacy after Church recognition fractures, and how do rival Magiarchates respond when no selection is mechanically clean? | 35% |
 | MSF | Which private contract first conflicts with Narvea's interests and exposes why MSF's confirmed freedom to accept non-government clients is dangerous? | 35% |
 | Helena | Which door does Helena knowingly open against Fionn, what outcome does she expect, and what enters the conspiracy beyond her knowledge or control? | 40% |
-| Kyrien | Who is the Magus politician targeted by Kyrien, what office do they hold, what incomplete truth connects them to his father's death, and how does their survival harm Lynleit? | 40% |
 | Core mystery | Who is the first missing man, how does he independently cause the Spill, and which faction first recognizes and exploits the resulting crisis? | 45% |
 | Core mystery | Which incompatible agendas intend which outcomes around Fionn, and how do they accidentally cooperate to cause a death that none completely controls? | 45% |
 | Park trespass | How do Hiyu and Yulia bypass the cordon, what price do they pay to survive, and what evidence proves their experience while making their testimony harder to believe? | 45% |
 | Hotel refuge | What tiny ordinary behavior does Kyrien witness once Lynleit no longer has the strength to perform being Lynleit, and what private trust exists the next morning? | 45% |
-| Relationship | Which repeated encounters make Lynleit and Kyrien necessary to one another, and which small non-crisis behaviors turn dependence into desire instead of using rescue and protected secrets as substitutes for attraction? | 50% |
+| Kyrien | What are the protected politician's name and office, what incomplete truth connects them to Kyrien's father, what exact physical sequence unfolds during the failed attempt, and how does the survivor later retaliate against Lynleit? | 50% |
 | Boat operation | Does the submerged blue flame leave a lasting injury on the Drowned Choir, and what does the girl's refusal to pursue Lynleit reveal about its limits? | 65% |
 | Character appearance | What exact heights belong to the illustrated cast, and which artwork-derived hair, eye, build, or distinguishing details require correction? | 70% |
 | Covert alliance | Beyond the confirmed river-surveillance operation, what does Lynleit refuse to provide Drake and Sherie, and what concessions or favors do they offer in return? | 70% |

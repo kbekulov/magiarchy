@@ -30,6 +30,24 @@ They had no authority to investigate the park, no safe way to extend the camera 
 
 "Restore the cameras. We leave."
 
+The second night had left Lynleit and Kyrien waiting inside the maintenance van while Felix restored the live feeds and Reiner recovered the anchors. Felix kept a worn deck of cards in a side compartment. Kyrien found it first.
+
+Lynleit sat opposite him. He won the first short game without speaking more than the rules required.
+
+"Again," she said.
+
+The rematch continued on the third night. Lynleit watched his hands until Kyrien asked whether she intended to look at her own cards. She did not answer. Before one reckless play, his breathing stopped for a beat. He won anyway.
+
+On the fourth night, she noticed the same pause and smiled before placing an ordinary card. Kyrien looked at her instead of the table. The hesitation was brief, but his next play was the safer one.
+
+"You changed the conditions," he said.
+
+"The cards are unchanged."
+
+He began watching her hands after that. By the end of the night, he had found the small movement of her thumb that came before a committed decision.
+
+They dealt another hand before the fifth camera window opened. Felix called them to position before either could finish it. Kyrien left his cards face down on the metal shelf. Lynleit left hers opposite them.
+
 By the fifth watch, nobody expected the boats.
 
 Felix sat inside a maintenance van on the city side with a compact terminal across his knees. The bridge cameras were displayed in four muted panes. Each showed a version of the previous several minutes with no MSF officers in it.
@@ -102,6 +120,10 @@ The river moved beneath her boots. The lead boat passed under the bridge at the 
 
 Kyrien landed behind her.
 
+His weight rolled the boat farther than Reiner's landing had. Lynleit's footing shifted on the wet boards. Kyrien caught her at the waist from behind. The heel of his hand met the leather edge of the Sparrow holster beneath her jacket.
+
+Lynleit's hand went to the rail instead of the pistol. Kyrien released her before she had recovered her balance completely.
+
 The boat continued forward.
 
 There was no pilot.
@@ -122,7 +144,9 @@ The plan had assumed that the boats would carry something. Contraband, documents
 
 The park passed on their right. From the water, the trees appeared closer than they had from the bridge. Their lowest branches extended over the bank and hid the path behind them.
 
-Kyrien looked into the trees.
+Kyrien stopped breathing for one beat.
+
+Lynleit looked toward him before he turned to the trees.
 
 "What?" Lynleit asked.
 
@@ -289,6 +313,8 @@ They moved deeper into the trees until the river could no longer be seen between
 Lynleit stopped at the base of a broad tree and sat. Kyrien lowered himself behind her. They settled back to back, shoulders touching through soaked clothes, each lending the other the little warmth that remained.
 
 For a while neither spoke.
+
+His breathing was slower than hers but not yet steady. Once, it stopped for the same brief interval she had learned across the cards. The observation had no immediate use. Lynleit noticed it anyway, then looked across the river toward the officers gathering under Felix's light.
 
 "You came ashore on this side," Lynleit said.
 
