@@ -2,7 +2,7 @@ const profileSeeds = [
   {
     slug: 'lynleit', name: 'Lynleit', code: 'MSF · 001', role: 'Fionn\'s biological daughter and displaced heir', ageBand: 'Late twenties', factions: ['MSF', 'Magiarchy'], mbti: { type: 'ENFJ', detail: 'strong Ni', status: 'Confirmed' }, accent: 'blue', materialStatus: 'Canon traits + mock details',
     summary: 'Fionn\'s biological daughter and Helena\'s stepdaughter, Lynleit is a people-first leader whose responsibility is sharpened by unusually strong long-range intuition.',
-    visual: 'A long tailored blue coat over a pale high-collared blouse with a narrow black ribbon, paired with fitted high-waisted black shorts, dark tights, and black over-the-knee lace-up boots. The outfit is elegant and deliberately fashion-conscious rather than athletic or utilitarian.', palette: 'Midnight blue, black, white, cold cyan',
+    visual: 'A long tailored blue coat over a pale high-collared blouse with a narrow black ribbon, fitted high-waisted black shorts, dark tights, and black over-the-knee lace-up boots. Her wardrobe is formal and fashion-conscious.', palette: 'Midnight blue, black, white, cold cyan',
     physical: [
       ['Hair', 'Very long, wavy ash-black hair with a side-parted fringe, most often worn loose.'],
       ['Eyes', 'Bright cyan-blue.'],
@@ -11,8 +11,7 @@ const profileSeeds = [
     ],
     residenceNote: 'After her mother\'s death, Lynleit resisted the family\'s move from Turon to Vilen and accepted it only on the condition that her study-bedroom occupy the third floor. The hillside site places thick trees close to the house and overlooks a river flowing toward the city center. Rustling leaves inspire her. She regards flowing water as life energy and seeks its emotional grounding despite her childhood fear of drowning.',
     appearanceDetails: [
-      ['Elegance and movement', 'The close fit keeps loose fabric out of her way, but mobility is secondary. The fitted shorts, dark tights, and over-the-knee boots are a deliberate fashion statement whose effect depends on controlled posture and graceful movement. They are not sportswear or ordinary field gear.'],
-      ['Hair variation', 'For dangerous work, long nights over reports, or sleep, she occasionally gathers her hair into a ponytail or bun. The bun becomes her preferred hairstyle in the second arc, especially while working.']
+      ['Hair variation', 'She occasionally wears her hair in a ponytail or bun. The bun becomes her usual working hairstyle in the second arc and is also worn during long report sessions and before sleep.']
     ],
     equipment: [
       { label: 'Issued sidearm', title: 'Ren L17 "Sparrow"', meta: ['9×17 mm', 'Leather OWB holster', 'Right-handed draw'], detail: 'Lynleit carries the compact Sparrow in a snug leather outside-the-waistband holster centered just above her tailbone. A rightward cant lets her draw with her right hand. The pistol\'s small proportions and the long jackets or coats central to her wardrobe keep it concealed without disturbing her usual silhouette.', href: 'weapons.html#ren-l17-sparrow' },
@@ -38,11 +37,11 @@ const profileSeeds = [
   {
     slug: 'kyrien', name: 'Kyrien', code: 'IND · 002', role: 'Independent operator and later MSF director', ageBand: 'Late twenties', factions: ['Independent', 'MSF'], affiliationTimeline: [{ name: 'Independent', stage: 'Opening' }, { name: 'MSF', stage: 'Later director' }], mbti: { type: 'ISTP / INTJ', detail: 'Ti or Ni; ISTP lean', status: 'Provisional' }, accent: 'amber', materialStatus: 'Canon traits + mock details',
     summary: 'A quiet non-Magus shaped by an officer\'s ethics, a fugitive\'s instincts, and the conviction that force creates an equal claim against the person who uses it.',
-    visual: 'A burgundy formal shirt worn with the collar open and sleeves rolled, dark trousers suited to both formal and informal settings, dark leather shoes, and a fitted leather jacket. The combination is polished without restricting quick movement.', palette: 'Burgundy, charcoal, black, dark brown leather',
+    visual: 'A burgundy formal shirt with the collar open and sleeves rolled, dark tailored trousers, dark leather shoes, and a fitted leather jacket.', palette: 'Burgundy, charcoal, black, dark brown leather',
     physical: [
       ['Hair', 'Short, tousled charcoal-black hair with a heavy forward fringe.'],
       ['Eyes', 'Golden brown.'],
-      ['Height and build', '180 cm with a slender, lightly built frame whose strength is easy to underestimate.'],
+      ['Height and build', '180 cm with a slender, lightly built frame.'],
       ['Distinguishing features', 'A youthful face, sharply focused eyes, and an expression that rarely softens into a smile.']
     ],
     personalitySummary: 'Kyrien speaks little and smiles less, yet he is intensely competitive. Cards, chess, an investigation, and a gunfight can all become contests he feels compelled to win. He accepts hard play, but reacts quickly when an opponent cheats, and that urge to punish unfairness can pull him away from the safer objective. His reserve comes from learned discipline and does not indicate emotional emptiness.',
@@ -73,7 +72,7 @@ const profileSeeds = [
   {
     slug: 'helena', name: 'Helena', code: 'MSF · 003', role: 'Political usurper', ageBand: 'Early forties', factions: ['MSF'], mbti: { type: 'ENTJ', detail: 'strong Te', status: 'Confirmed' }, accent: 'red', materialStatus: 'Canon actions + mock details',
     summary: 'Fionn\'s wife and Lynleit\'s stepmother, Helena plays a major but still-undefined role in his assassination, converts the resulting vacuum into control of MSF, and frames his biological daughter.',
-    visual: 'Severe tailoring, immaculate posture, and an intentionally unreadable expression', palette: 'Oxblood, black, ivory, muted gold', traits: ['Composed', 'Possessive', 'Calculating'],
+    visual: 'Severely tailored clothing, immaculate posture, and a controlled expression', palette: 'Oxblood, black, ivory, muted gold', traits: ['Composed', 'Possessive', 'Calculating'],
     physical: [
       ['Hair', 'Glossy black hair cut into a sleek, side-parted bob.'],
       ['Eyes', 'Amber-brown.'],
@@ -88,7 +87,7 @@ const profileSeeds = [
   {
     slug: 'tien', name: 'Tien', code: 'IND · 004', role: 'Mercenary assassin and secret bodyguard', factions: ['Independent'], mbti: { type: 'ISTP', detail: 'strong Se', status: 'Confirmed' }, accent: 'violet', materialStatus: 'Canon role + mock details',
     summary: 'A professional mercenary and assassin concealed by Helena as her private bodyguard, Tien removes her enemies quietly and cleanly.',
-    visual: 'Low-profile fieldwear, obscured identifiers, and a deliberately forgettable outline', palette: 'Deep violet, graphite, smoke grey, black', traits: ['Silent', 'Precise', 'Relentless'],
+    visual: 'Dark low-profile fieldwear with obscured identifiers and no visible ornament', palette: 'Deep violet, graphite, smoke grey, black', traits: ['Silent', 'Precise', 'Relentless'],
     physical: [
       ['Hair', 'Short black hair with an uneven forward fringe.'],
       ['Eyes', 'Crimson red.'],
@@ -103,7 +102,7 @@ const profileSeeds = [
   {
     slug: 'fionn', name: 'Fionn', code: 'ARC · 005', role: 'Magiarch and MSF founder', ageBand: 'Late fifties', factions: ['MSF', 'Magiarchy'], mbti: { type: 'INTJ', detail: 'strong Ni', status: 'Confirmed' }, accent: 'neutral', materialStatus: 'Canon magecraft + mock details',
     summary: 'Lynleit\'s biological father, publicly the director of MSF and secretly the country\'s Magiarch, Fionn faces a foreign magical conflict disguised as political chaos inside Narvea.',
-    visual: 'Formal authority softened by practical details and an old ceremonial restraint', palette: 'Stone, black, muted blue, antique brass', traits: ['Measured', 'Secretive', 'Responsible'],
+    visual: 'Formal dark clothing with restrained ceremonial details and practical accessories', palette: 'Stone, black, muted blue, antique brass', traits: ['Measured', 'Secretive', 'Responsible'],
     physical: [
       ['Hair', 'Short dark-brown hair swept back from the face.'],
       ['Eyes', 'Clear blue.'],
@@ -125,7 +124,7 @@ const profileSeeds = [
   {
     slug: 'heyk', name: 'Heyk', code: 'FLD · 006', role: 'Ducal Guard field agent and bodyguard', ageBand: 'Mid-thirties', factions: ['Government'], mbti: { type: 'ISTJ', detail: 'balanced Si-Te', status: 'Confirmed' }, accent: 'green', materialStatus: 'Canon role + mock details',
     summary: 'The sole survivor of a paramilitary unit massacred inside Vilen\'s quarantined park, later recruited into the Ducal Guard under Drake and Sherie.',
-    visual: 'Field equipment adapted beyond regulation and kept ready for rapid extraction', palette: 'Dark green, utility black, concrete, signal orange', traits: ['Practical', 'Suspicious', 'Decisive'],
+    visual: 'Non-standard field clothing with compact extraction equipment', palette: 'Dark green, utility black, concrete, signal orange', traits: ['Practical', 'Suspicious', 'Decisive'],
     physical: [
       ['Hair', 'Short white hair over darker clipped sides.'],
       ['Eyes', 'Steel grey.'],
@@ -140,7 +139,7 @@ const profileSeeds = [
   {
     slug: 'sherie', name: 'Sherie', code: 'FLD · 007', role: 'Diplomat in training and covert negotiator', ageBand: 'Early twenties', factions: ['Government'], mbti: { type: 'ENFJ', detail: 'strong Fe', status: 'Confirmed' }, accent: 'blue', materialStatus: 'Canon traits + mock details',
     summary: 'Drake\'s niece and diplomatic apprentice, Sherie combines his strategic instruction with the charm and quick judgment he cannot easily bring into a room himself.',
-    visual: 'Compact support gear, visible communications equipment, and a clean operational silhouette', palette: 'Navy, slate, white, emergency blue', traits: ['Charming', 'Quick-minded', 'Politically curious'],
+    visual: 'Tailored fieldwear with compact support gear and visible communications equipment', palette: 'Navy, slate, white, emergency blue', traits: ['Charming', 'Quick-minded', 'Politically curious'],
     physical: [
       ['Hair', 'Long pale-blonde hair gathered into a high bun, with loose lengths sweeping over one shoulder.'],
       ['Eyes', 'Pale grey-green.'],
@@ -155,7 +154,7 @@ const profileSeeds = [
   {
     slug: 'drake', name: 'Drake', code: 'FLD · 008', role: 'Official for Special Assignments', ageBand: 'Late thirties', factions: ['Government'], mbti: { type: 'INTJ', detail: 'strong Ni; notable Fi', status: 'Confirmed' }, accent: 'amber', materialStatus: 'Canon traits + mock details',
     summary: 'The story\'s primary strategic mind, Drake holds the rank of State Councillor and serves as an Official for Special Assignments with unusual access to the Duke.',
-    visual: 'Formal field attire, restrained insignia, and an immaculate profile under pressure', palette: 'Black, burgundy, silver, muted amber', traits: ['Commanding', 'Disciplined', 'Skeptical'],
+    visual: 'Formal dark field attire with restrained insignia and immaculate grooming', palette: 'Black, burgundy, silver, muted amber', traits: ['Commanding', 'Disciplined', 'Skeptical'],
     physical: [
       ['Hair', 'Medium-length silver-white hair swept back with loose strands falling over the forehead.'],
       ['Eyes', 'Red.'],
@@ -170,7 +169,7 @@ const profileSeeds = [
   {
     slug: 'felix', name: 'Felix', code: 'ARC · 009', role: 'MSF officer, friend, and personal bodyguard', ageBand: 'Late twenties', factions: ['MSF'], mbti: { type: 'ESFP', detail: 'strong Se-Fi', status: 'Confirmed' }, accent: 'neutral', materialStatus: 'Canon relationship + mock details',
     summary: 'Lynleit\'s playful friend and Fionn-trusted bodyguard, Felix specializes in hacking and communications, approaching operations like a knight that reaches its objective through unexpected angles.',
-    visual: 'Loose fieldwear, fast movement, a compact communications kit, and one bright accent against neutral equipment', palette: 'Grey, black, bright blue, rust orange',
+    visual: 'Loose fieldwear with a compact communications kit and one bright accent against neutral equipment', palette: 'Grey, black, bright blue, rust orange',
     physical: [
       ['Hair', 'Vivid orange hair swept back into sharp points and tied into a short tail.'],
       ['Eyes', 'Bright green.'],
@@ -195,7 +194,7 @@ const profileSeeds = [
   {
     slug: 'reiner', name: 'Reiner', code: 'ARC · 010', role: 'MSF officer, friend, and personal bodyguard', factions: ['MSF'], mbti: { type: 'ISTJ', detail: 'strong Si-Te', status: 'Confirmed' }, accent: 'neutral', materialStatus: 'Canon relationship + mock details',
     summary: 'Lynleit\'s stern friend and Fionn-trusted bodyguard, Reiner is a powerfully built brute-force specialist who holds the direct line like a rook.',
-    visual: 'A powerful build, structured field clothing, reinforced equipment, and a deliberately immovable presence', palette: 'Graphite, ash, muted teal, paper white',
+    visual: 'Structured field clothing, reinforced equipment, and black sunglasses', palette: 'Graphite, ash, muted teal, paper white',
     physical: [
       ['Hair', 'Clean-shaven scalp.'],
       ['Eyes', 'Usually concealed behind black sunglasses; eye colour is unspecified.'],
@@ -220,16 +219,12 @@ const profileSeeds = [
   {
     slug: 'yulia', name: 'Yulia', code: 'ARC · 011', role: 'Criminology student and procedural investigator', ageBand: 'Mid-twenties', factions: ['Independent'], mbti: { type: 'ISTJ', detail: 'strong Si', status: 'Confirmed' }, accent: 'neutral', materialStatus: 'Canon personality and relationship + mock visual details',
     summary: 'A top criminology student whose meticulous discipline makes her the evidentiary counterweight to Hiyu\'s wild inference, even when reluctant loyalty follows him into Vilen\'s quarantined park.',
-    visual: 'Precise civilian layers, neatly organized study materials, and an attractive but severe presence whose expression rarely softens into a smile', palette: 'Cream, charcoal, muted red, pale gold',
+    visual: 'Neatly layered civilian clothing with orderly study materials', palette: 'Cream, charcoal, muted red, pale gold',
     physical: [
       ['Hair', 'Very long dark chestnut-brown hair with a blunt fringe and softly flared ends.'],
       ['Eyes', 'Green.'],
       ['Height and build', 'Average height with a slim, straight build.'],
-      ['Distinguishing features', 'A fair complexion, wide observant eyes, and an expression rarely seen smiling.']
-    ],
-    appearanceDetails: [
-      ['Expression', 'Yulia is widely regarded as attractive, but her reputation for never smiling gives her a distant and severe first impression.'],
-      ['Working habits', 'Her notebooks, evidence materials, and personal effects are kept orderly enough that an interruption is immediately visible.']
+      ['Distinguishing features', 'A fair complexion, wide observant eyes, and a habitually unsmiling expression.']
     ],
     personalitySummary: 'Yulia is methodical, detail-oriented, reliable, and most comfortable when evidence can be tested against a stable procedure. Hiyu\'s constant eureka moments and improvised logic give her a headache, but she repeatedly follows him anyway. Their opposition works because she checks what he leaps toward, while he forces her to consider possibilities no established protocol would admit.',
     traits: [
@@ -249,16 +244,12 @@ const profileSeeds = [
   {
     slug: 'hiyu', name: 'Hiyu', code: 'ARC · 012', role: 'Criminology student and intuitive investigator', ageBand: 'Mid-twenties', factions: ['Independent'], mbti: { type: 'ENTP', detail: 'strong Ne', status: 'Confirmed' }, accent: 'neutral', materialStatus: 'Canon personality and relationship + mock visual details',
     summary: 'A criminology student whose restless pattern-making reaches the impossible possibility of magic, then carries him and Yulia into Vilen\'s quarantined park in search of proof.',
-    visual: 'Soft civilian clothing, portable research tools stored wherever they fit, and the distracted posture of someone following an idea that has already left the room', palette: 'Black, soft blue, warm grey, white',
+    visual: 'Soft civilian clothing with portable research tools tucked into pockets and bags', palette: 'Black, soft blue, warm grey, white',
     physical: [
       ['Hair', 'Short, untidy charcoal hair with a loose forward fringe.'],
       ['Eyes', 'Blue-grey.'],
       ['Height and build', 'Average height with a lean build.'],
-      ['Distinguishing features', 'Light chin stubble and an animated face that changes quickly when an idea takes hold.']
-    ],
-    appearanceDetails: [
-      ['Working habits', 'Notes, clippings, and improvised tools follow the investigation in his head. Another person would struggle to reconstruct the system.'],
-      ['Attention', 'His gaze often passes over the social scene around him because several competing explanations are already occupying it.']
+      ['Distinguishing features', 'Light chin stubble and an animated, rapidly changing expression.']
     ],
     personalitySummary: 'Hiyu is driven by possibility, contradiction, and the pleasure of making an unlikely pattern click. He constantly experiences eureka moments, builds protocols while using them, and abandons a clean path as soon as a stranger one becomes interesting. He has a reputation for ignoring women because ideas consume his attention so completely. This also leaves him oblivious to the romantic tension slowly forming with Yulia.',
     traits: [
@@ -278,7 +269,7 @@ const profileSeeds = [
   {
     slug: 'natalia', name: 'Natalia', code: 'ARC · 013', role: 'Independent magical examiner and private investigator', ageBand: 'Late thirties', factions: ['Private Eye', 'Magiarchy', 'Magi Academy'], affiliationTimeline: [{ name: 'Magi Academy', stage: 'Former professor' }, { name: 'Private Eye', stage: 'Current sole proprietor' }, { name: 'Magiarchy', stage: 'Magus affiliation' }], mbti: { type: 'INTP', detail: 'strong Ti', status: 'Confirmed' }, accent: 'neutral', materialStatus: 'Canon role + mock visual details',
     summary: 'A former Magi Academy professor who left a restrictive academic career to pursue independent research. Private cases fund that work, turning her one-woman office into a discreet practice for magical deviations, personal afflictions, and edge cases.',
-    visual: 'Professional citywear, compact case tools, and magical details hidden in plain sight', palette: 'Black, wine red, parchment, muted violet',
+    visual: 'Professional citywear with compact case tools and discreet magecraft accessories', palette: 'Black, wine red, parchment, muted violet',
     physical: [
       ['Hair', 'Deep burgundy hair gathered into a high bun, with long side-parted strands framing the face.'],
       ['Eyes', 'Light hazel.'],
@@ -301,7 +292,7 @@ const profileSeeds = [
   {
     slug: 'lester', name: 'Lester', code: 'ARC · 014', role: 'Demiholumn and Natalia\'s outside ally', factions: ['Independent'], mbti: { type: 'ESTP', detail: 'strong Se', status: 'Confirmed' }, accent: 'neutral', materialStatus: 'Canon nature + mock visual details',
     summary: 'A demiholumn, half human and half Holumn, who remains outside Natalia\'s one-woman business but sometimes does the impossible on her behalf.',
-    visual: 'Weathered professional clothing, an outwardly human silhouette, and small visual irregularities that remain undefined', palette: 'Brown, charcoal, cream, faded green',
+    visual: 'Weathered professional clothing over an outwardly human silhouette', palette: 'Brown, charcoal, cream, faded green',
     physical: [
       ['Hair', 'Unspecified.'],
       ['Eyes', 'Unspecified.'],
@@ -326,7 +317,7 @@ const profileSeeds = [
   {
     slug: 'myka', name: 'Myka', code: 'ARC · 015', role: 'Magi Academy student', factions: ['Magi Academy', 'Magiarchy'], mbti: { type: 'ISFP?', detail: 'possible strong Fi', status: 'Provisional' }, accent: 'neutral',
     summary: 'A young Magus studying at the Magi Academy who relies on her aunt Natalia for academic advice, personal reassurance, and a view of magical inquiry beyond institutional limits.',
-    visual: 'Academic uniform elements, experimental accessories, and an expressive magical silhouette', palette: 'Indigo, cream, pale cyan, black', traits: ['Gifted', 'Earnest', 'Impulsive'],
+    visual: 'Academic uniform pieces worn with experimental accessories', palette: 'Indigo, cream, pale cyan, black', traits: ['Gifted', 'Earnest', 'Impulsive'],
     physical: [
       ['Hair', 'Long straight black hair with a blunt fringe.'],
       ['Eyes', 'Vivid turquoise.'],
@@ -340,7 +331,7 @@ const profileSeeds = [
   {
     slug: 'inspector-leo', name: 'Inspector Leo', code: 'PLC · 016', role: 'Police inspector', factions: ['Police'], mbti: { type: 'XSTJ?', detail: 'possible Te', status: 'Provisional' }, accent: 'blue',
     summary: 'A police inspector whose missing-person investigation reaches the edge of a quarantine controlled by authorities above his clearance.',
-    visual: 'Practical detective clothing, worn notebook, and restrained police identifiers', palette: 'Navy, grey, white, signal blue', traits: ['Tenacious', 'Procedural', 'Skeptical'],
+    visual: 'Practical detective clothing with restrained police identifiers and a worn notebook', palette: 'Navy, grey, white, signal blue', traits: ['Tenacious', 'Procedural', 'Skeptical'],
     physical: [
       ['Hair', 'Unspecified.'],
       ['Eyes', 'Unspecified.'],
@@ -354,7 +345,7 @@ const profileSeeds = [
   {
     slug: 'father-mikhail', name: 'Father Mikhail', code: 'CHR · 017', role: 'Church special envoy', factions: ['The Church'], mbti: { type: 'XNJ?', detail: 'possible Ni; INFJ lead', status: 'Provisional' }, accent: 'neutral', materialStatus: 'Canon office + mock details',
     summary: 'A confirmed special envoy whose priesthood provides public cover for restricted Church work. His exact specialization and delegated authority remain undefined.',
-    visual: 'Understated clerical dress, old protective symbols, and no ornamental excess', palette: 'Black, stone, dull gold, deep red', traits: ['Disciplined', 'Compassionate', 'Severe'],
+    visual: 'Understated clerical dress with old protective symbols and no ornament', palette: 'Black, stone, dull gold, deep red', traits: ['Disciplined', 'Compassionate', 'Severe'],
     physical: [
       ['Hair', 'Unspecified.'],
       ['Eyes', 'Unspecified.'],
