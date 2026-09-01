@@ -1,6 +1,6 @@
 {
-  "generated": "2026-09-01T06:33:14.061Z",
-  "count": 359,
+  "generated": "2026-09-01T06:48:01.440Z",
+  "count": 360,
   "entries": [
     {
       "id": "page-characters",
@@ -32,7 +32,7 @@
       "type": "Archive page",
       "url": "moments.html",
       "subtitle": "",
-      "text": "Moments # moments Scene anchors and continuity Scene archive online Scene-led story construction Moments Key scenes can exist before the chapters around them do. Each Moment records a key scene, its place in the Story, the characters involved, and the consequences that connect it to the wider narrative. Continuity map Scene anchors across the Story Story phases Drag or scroll → Scene inventory Key scenes 0 visible Search Moments Story phase All phases Character All characters Scene role All roles Loading Moments... No Moments match Change a filter or clear the search to see more scene anchors. Moments / Scene MOM Story phase Scene seed Moment Continuity coordinates Where this scene belongs Story phase Unassigned Open in Story → Scene function Scene seed Location Unspecified location Updated 01 Reader knowledge What the scene shows Shown or stated Left for the reader to infer Writer guidance Character reactions Possibilities shaped by the characters, their bodies, and the pressure of this scene. These are not canon until accepted into the story. Open full audit → Binding glue Continuity bridge Before The scene After Shared records Connected elsewhere ! Moment unavailable This scene anchor does not exist in the current archive. Return to Moments → ✎ Page notes Moments Open 01 Confirm scene placement Review the remaining provisional Story placements and character-timeline anchors as more connective scenes become clear. Notes are stored in Supabase and synchronized when this page loads."
+      "text": "Moments # moments Scene anchors and continuity Scene archive online Scene-led story construction Moments Key scenes can exist before the chapters around them do. Each Moment records a key scene, its place in the Story, the characters involved, and the consequences that connect it to the wider narrative. Continuity map Scene anchors across the Story Story phases Drag or scroll → Scene inventory Key scenes 0 visible Search Moments Story phase All phases Character All characters Scene role All roles Loading Moments... No Moments match Change a filter or clear the search to see more scene anchors. Moments / Scene MOM Story phase Scene seed Moment Continuity coordinates Where this scene belongs Story phase Unassigned Open in Story → Scene function Scene seed Location Unspecified location Updated 01 Reader knowledge What the scene shows Shown or stated Left for the reader to infer Binding glue Continuity bridge Before The scene After Shared records Connected elsewhere ! Moment unavailable This scene anchor does not exist in the current archive. Return to Moments → ✎ Page notes Moments Open 01 Confirm scene placement Review the remaining provisional Story placements and character-timeline anchors as more connective scenes become clear. Notes are stored in Supabase and synchronized when this page loads."
     },
     {
       "id": "page-music",
@@ -48,7 +48,7 @@
       "type": "Archive page",
       "url": "story.html",
       "subtitle": "",
-      "text": "Story # story Serialized story archive Story archive online Story archive Story The overall narrative, its anchored Moments, and the Chapters that eventually connect them. Chapter entries remain temporary drafts ready to be replaced. Overall narrative Story timeline Story chronology Drag or scroll → Loading story… Story / Chapter Placeholder draft View Markdown ↗ Before reading Chapter preface Shown or stated Left for the reader to infer # Main event Writer guidance Character reactions Possibilities shaped by the characters, their bodies, and the pressure of this chapter. These are not canon until accepted into the story. Open full audit → Loading chapter… ! Chapter unavailable The chapter file could not be loaded. Narrative architecture One crisis, two explanations Underlying conflict What the country sees A political conspiracy Disappearances, illegal material movement, court tension, and strife inside MSF suggest a domestic coup aimed at Narvea and Ducal authority. Coup rumors Institutional mistrust MSF power struggle masks → What drives it A magical conflict Foreign Magiarchates, church actors, and criminal Magi all remain plausible participants in the pressure surrounding Fionn. Their struggle is translated into political chaos that ordinary investigators can recognize but cannot fully explain. Renegade Magi Foreign Magiarchs Competing churches Consequence chain 01 Fionn is isolated 02 Fionn is eliminated 03 Helena takes control 04 Lynleit is framed ✎ Page notes Story Open 01 Replace placeholder chapters Swap the temporary drafts for final story installments when they are provided. Notes are updated with the site code and published through GitHub Pages."
+      "text": "Story # story Serialized story archive Story archive online Story archive Story The overall narrative, its anchored Moments, and the Chapters that eventually connect them. Chapter entries remain temporary drafts ready to be replaced. Overall narrative Story timeline Story chronology Drag or scroll → Loading story… Story / Chapter Placeholder draft View Markdown ↗ Before reading Chapter preface Shown or stated Left for the reader to infer # Main event Loading chapter… ! Chapter unavailable The chapter file could not be loaded. Narrative architecture One crisis, two explanations Underlying conflict What the country sees A political conspiracy Disappearances, illegal material movement, court tension, and strife inside MSF suggest a domestic coup aimed at Narvea and Ducal authority. Coup rumors Institutional mistrust MSF power struggle masks → What drives it A magical conflict Foreign Magiarchates, church actors, and criminal Magi all remain plausible participants in the pressure surrounding Fionn. Their struggle is translated into political chaos that ordinary investigators can recognize but cannot fully explain. Renegade Magi Foreign Magiarchs Competing churches Consequence chain 01 Fionn is isolated 02 Fionn is eliminated 03 Helena takes control 04 Lynleit is framed ✎ Page notes Story Open 01 Replace placeholder chapters Swap the temporary drafts for final story installments when they are provided. Notes are updated with the site code and published through GitHub Pages."
     },
     {
       "id": "page-world",
@@ -1457,6 +1457,14 @@
       "url": "index.html#update-canon-audit",
       "subtitle": "Home update feed",
       "text": "Archive Audit: Site update Home update feed AU Archive Audit 26 Aug 2026 · Coordination pass A terminology and canon audit now keeps Vilen Narvea-centered, narrows the remaining Heyk question to what is still unknown, and confirms that the contradictions ledger has no unresolved conflicts. Review the editorial ledgers →"
+    },
+    {
+      "id": "update-update-flat-design-context-notes",
+      "title": "Archive Interface: Site update",
+      "type": "Update",
+      "url": "index.html#update-flat-design-context-notes",
+      "subtitle": "Home update feed",
+      "text": "Archive Interface: Site update Home update feed UI Archive Interface 01 Sep 2026 · Flat surfaces and contextual notes Every site gradient has been replaced with flat colour and layered borders. Chapter and Moment reaction guidance now stays in the paragraph gutter and opens only when its F, M, or S marker is selected. Try the chapter notes →"
     },
     {
       "id": "update-update-global-archive-search",

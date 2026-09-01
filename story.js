@@ -11,9 +11,6 @@ const chapterError = document.querySelector('#chapter-error');
 const chapterCrumb = document.querySelector('#chapter-crumb');
 const chapterReaderCharacters = document.querySelector('#chapter-reader-characters');
 const chapterEventList = document.querySelector('#chapter-event-list');
-const chapterBehaviorPanel = document.querySelector('#chapter-behavior-panel');
-const chapterBehaviorLegend = document.querySelector('#chapter-behavior-legend');
-const chapterBehaviorNotes = document.querySelector('#chapter-behavior-notes');
 const timelineTrack = document.querySelector('.timeline-track');
 const storyPhases = window.MAGIARCHY_STORY_PHASES ?? [];
 
@@ -302,28 +299,20 @@ async function loadChapter(entry) {
   chapterSourceLink.href = `story/${entry.file}`;
   setActiveTimelinePhase(entry);
 
-  if (chapterBehaviorPanel && window.MAGIARCHY_BEHAVIOR_NOTES) {
-    try {
-      const registry = await window.MAGIARCHY_BEHAVIOR_NOTES.load();
-      const notes = window.MAGIARCHY_BEHAVIOR_NOTES.forChapter(registry, entry.slug);
-      chapterBehaviorPanel.hidden = notes.length === 0;
-      chapterBehaviorLegend.replaceChildren();
-      chapterBehaviorNotes.replaceChildren();
-      if (notes.length) {
-        chapterBehaviorLegend.append(window.MAGIARCHY_BEHAVIOR_NOTES.createLegend());
-        window.MAGIARCHY_BEHAVIOR_NOTES.renderNotes(chapterBehaviorNotes, notes);
-      }
-    } catch (error) {
-      chapterBehaviorPanel.hidden = true;
-      console.warn('Chapter behaviour guidance could not be loaded.', error);
-    }
-  }
-
   try {
     const response = await fetch(`story/${entry.file}`);
     if (!response.ok) throw new Error(`Chapter request failed: ${response.status}`);
     const markdown = await response.text();
     chapterReader.append(renderChapterMarkdown(markdown));
+    if (window.MAGIARCHY_BEHAVIOR_NOTES) {
+      try {
+        const registry = await window.MAGIARCHY_BEHAVIOR_NOTES.load();
+        const notes = window.MAGIARCHY_BEHAVIOR_NOTES.forChapter(registry, entry.slug);
+        window.MAGIARCHY_BEHAVIOR_NOTES.attachToChapter(chapterReader, notes);
+      } catch (error) {
+        console.warn('Chapter behaviour guidance could not be loaded.', error);
+      }
+    }
     chapterMeta.textContent = `${entry.number} · ${entry.characters.join(' / ')} · Updated ${entry.updated}`;
     document.title = `${entry.title} - Story - Magiarchy`;
   } catch (error) {

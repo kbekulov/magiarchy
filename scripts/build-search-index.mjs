@@ -116,7 +116,10 @@ const behaviorNotes = readJson('docs/character-behavior-notes.json');
 docs.forEach((document) => {
   const markdown = stripMarkdown(readText(path.join('docs', document.file)));
   const contextualText = document.slug === 'character-behavior-audit'
-    ? flatten([behaviorNotes.sections, behaviorNotes.notes])
+    ? flatten([
+      behaviorNotes.sections,
+      behaviorNotes.notes.map(({ id, section, kind, title, basis, text, chapters, moments }) => ({ id, section, kind, title, basis, text, chapters, moments }))
+    ])
     : '';
   addEntry({
     id: `doc-${document.slug}`,

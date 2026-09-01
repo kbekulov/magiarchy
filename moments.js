@@ -269,22 +269,12 @@ async function renderMomentReader(entry, entries) {
   else connections.push(createConnectionCard('Chapter', 'Not assigned yet', 'This scene can remain stable while the chapter around it is still unwritten.'));
   document.querySelector('#moment-connection-grid').replaceChildren(...connections);
 
-  const behaviorPanel = document.querySelector('#moment-behavior-panel');
-  if (behaviorPanel && window.MAGIARCHY_BEHAVIOR_NOTES) {
+  if (window.MAGIARCHY_BEHAVIOR_NOTES) {
     try {
       const registry = await window.MAGIARCHY_BEHAVIOR_NOTES.load();
       const notes = window.MAGIARCHY_BEHAVIOR_NOTES.forMoment(registry, entry.slug);
-      behaviorPanel.hidden = notes.length === 0;
-      const legend = document.querySelector('#moment-behavior-legend');
-      const noteGrid = document.querySelector('#moment-behavior-notes');
-      legend.replaceChildren();
-      noteGrid.replaceChildren();
-      if (notes.length) {
-        legend.append(window.MAGIARCHY_BEHAVIOR_NOTES.createLegend());
-        window.MAGIARCHY_BEHAVIOR_NOTES.renderNotes(noteGrid, notes);
-      }
+      window.MAGIARCHY_BEHAVIOR_NOTES.attachToMoment(document.querySelector('#moment-known'), entry.slug, notes);
     } catch (error) {
-      behaviorPanel.hidden = true;
       console.warn('Moment behaviour guidance could not be loaded.', error);
     }
   }
