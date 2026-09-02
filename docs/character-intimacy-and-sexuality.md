@@ -34,11 +34,13 @@ Their first tension predates attraction. Lynleit interrogates Kyrien knowing tha
 
 During the failed river watches, short card games after each aborted operation create their first voluntary rhythm. Kyrien normally wins through technical play. Lynleit keeps requesting rematches because she cannot find his tells. She eventually learns the stopped breath before one of his risks, while he learns the hand movement that precedes one of her decisions. Studying the game becomes involuntary attention to hands, breathing, gaze, and proximity. Lynleit notices the distraction, dislikes it, and returns to the operation.
 
+When Lynleit later asks why he keeps risking his life without a reward waiting for him, Kyrien answers, "Because there's a battle to be fought." He does not make her the reason or the reward. The answer preserves his independence but leaves Lynleit with the more difficult knowledge that he repeatedly chooses the danger beside her.
+
 Kyrien later earns her trust when he witnesses her forbidden water walking and never uses the secret against her. The river deepens an attraction that already has an ordinary source instead of creating it through rescue. When Lynleit's institutional control over him eventually loses force, his decision to remain gives the relationship a voluntary basis that the original interrogation could not provide.
 
 Lynleit later becomes the more frequent initiator. She can tease him, test his reserve, and express desire in ways that do not depend on a verbal response. Kyrien initiates less often, so his firm advances mark a change in their usual pattern. Her willingness to let him set the pace shows how much she trusts him.
 
-Their first sexual encounter follows repeated work, unfinished contests, irritation, practical care, voluntary loyalty, and unwanted awareness of one another's physical presence. It occurs near the end of the first arc during a short safe interval. Lynleit does not reach that threshold because her priorities have changed. Intimacy has accumulated inside the mission until continuing to ignore it requires more effort than acknowledging it.
+Their first sexual encounter follows repeated work, unfinished contests, irritation, practical care, voluntary loyalty, and unwanted awareness of one another's physical presence. It occurs near the end of Arc 1 during a short safe interval. Lynleit does not reach that threshold because her priorities have changed. Intimacy has accumulated inside the mission until continuing to ignore it requires more effort than acknowledging it.
 
 ### Writing guardrail
 
@@ -63,6 +65,8 @@ He expresses intensity through sustained attention instead of excessive speech o
 ### With Lynleit
 
 With Lynleit, Kyrien's need to win becomes the first visible crack in his reserve. Their card games teach him that she is studying his breath, hands, and pauses, while he becomes able to distinguish her social composure from the stillness before a dangerous decision. He is attracted to her elegance, competence, and nerve, but her ability to notice what he would rather keep private makes desire feel like another loss of operational control.
+
+His answer to Lynleit's question about reward is blunt: "Because there's a battle to be fought." Kyrien understands the battle as sufficient payment and may also be proving himself to his own standards or to the memory of his father. He does not yet examine why the battles he chooses increasingly place him beside Lynleit.
 
 He does not know that his assassination attempt nearly harmed her. Her refusal to reveal that fact leaves him unable to explain the first personal edge in their relationship. Later, when the coercive force behind their arrangement has weakened, remaining beside her becomes his decision. That choice matters more than any declaration because it proves that attention once produced by captivity has become voluntary.
 

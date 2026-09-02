@@ -243,6 +243,38 @@ holumnArchive.incidents.forEach((incident) => {
   });
 });
 
+const itemArchive = readJson('items/index.json');
+addEntry({
+  id: 'world-items-and-artefacts',
+  title: itemArchive.title,
+  type: 'World record',
+  url: 'items.html',
+  subtitle: 'Objects, relics, and anomalous holdings',
+  text: flatten([itemArchive.description, itemArchive.items])
+});
+itemArchive.items.forEach((item) => {
+  addEntry({
+    id: `item-${item.slug}`,
+    title: item.name,
+    type: 'Item & artefact',
+    url: `items.html?item=${encodeURIComponent(item.slug)}`,
+    subtitle: `${item.id} · ${item.recordType}`,
+    text: flatten([
+      item.summary,
+      item.status,
+      item.holder,
+      item.associatedCharacter,
+      item.material,
+      item.materialNote,
+      item.forms,
+      item.properties,
+      item.limits,
+      item.chronology,
+      item.storyLinks
+    ])
+  });
+});
+
 const pageDefinitions = [
   ['characters', 'Characters', 'Archive page', 'characters.html'],
   ['story', 'Story', 'Archive page', 'story.html'],
@@ -253,6 +285,7 @@ const pageDefinitions = [
   ['magiarchy', 'The Magiarchy', 'World record', 'magiarchy.html'],
   ['msf', 'MSF', 'World record', 'msf.html'],
   ['church', 'The Church', 'World record', 'church.html'],
+  ['items', 'Items & Artefacts', 'World record', 'items.html'],
   ['music', 'Music', 'Archive page', 'music.html'],
   ['gallery', 'Gallery', 'Archive page', 'gallery.html'],
   ['docs', 'Docs', 'Archive page', 'docs.html']

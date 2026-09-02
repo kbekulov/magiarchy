@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Browse story-relevant objects and anomalous artefacts recorded for Project MAGIARCHY.">
+    <meta name="theme-color" content="#1e1f22">
+    <title>Items &amp; Artefacts - Magiarchy</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <script src="entity-links.js" defer></script>
+    <script src="items.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2" defer></script>
+    <script src="notes-config.js" defer></script>
+    <script src="notes.js" defer></script>
+  </head>
+  <body class="items-page world-section-page" data-notes-page="items-and-artefacts">
+    <a class="skip-link" href="#main-content">Skip to content</a>
+
+    <header class="site-header">
+      <nav class="navbar shell" aria-label="Primary navigation">
+        <a class="brand" href="index.html" aria-label="Magiarchy home">
+          <span class="brand-mark" aria-hidden="true"><span></span></span>
+          <span>Magiarchy</span>
+        </a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links">
+          <span class="sr-only">Toggle navigation</span>
+          <span></span><span></span>
+        </button>
+        <div class="nav-links" id="nav-links">
+          <a href="index.html">Home</a>
+          <a href="characters.html">Characters</a>
+          <a href="story.html">Story</a>
+          <a href="moments.html">Moments</a>
+          <details class="nav-dropdown">
+            <summary>World</summary>
+            <div class="nav-submenu">
+              <a href="world.html"><span>World index</span><small>Places, institutions, and powers</small></a>
+              <a href="duchy.html"><span>The Duchy</span><small>Country profile</small></a>
+              <a href="director-house.html"><span>The Director's House</span><small>Family residence and MSF node</small></a>
+              <a href="magiarchy.html"><span>The Magiarchy</span><small>Territorial magical order</small></a>
+              <a href="msf.html"><span>MSF</span><small>Private intelligence firm</small></a>
+              <a href="church.html"><span>The Church</span><small>Hidden religious authority</small></a>
+              <a href="holumns.html"><span>Holumns</span><small>Forms, effects, and evidence</small></a>
+              <a href="weapons.html"><span>Weapons</span><small>Firearms and procurement</small></a>
+              <a href="items.html" aria-current="page"><span>Items &amp; Artefacts</span><small>Objects, relics, and anomalous holdings</small></a>
+            </div>
+          </details>
+          <a href="music.html">Music</a>
+          <a href="gallery.html">Gallery</a>
+          <a href="docs.html">Docs</a>
+        </div>
+      </nav>
+    </header>
+
+    <main class="app-main" id="main-content">
+      <div class="docs-workspace shell">
+        <div class="docs-main-pane">
+          <header class="feed-header">
+            <div><span aria-hidden="true">#</span><strong>items-and-artefacts</strong><i></i><p>Objects with recorded story consequences</p></div>
+            <span class="feed-status"><span class="status-dot"></span> <span id="item-record-count">01</span> record</span>
+          </header>
+
+          <div class="items-scroll">
+            <section id="items-catalog-view">
+              <nav class="document-breadcrumbs items-breadcrumbs" aria-label="Breadcrumb">
+                <a href="world.html">World</a><span aria-hidden="true">/</span><span>Items &amp; Artefacts</span>
+              </nav>
+
+              <section class="items-hero reveal" aria-labelledby="items-title">
+                <div>
+                  <p class="eyebrow">Material culture archive</p>
+                  <h1 id="items-title">Items &amp;<br>Artefacts</h1>
+                  <p>Objects, relics, garments, records, and other nonhuman holdings whose properties, custody, or history affect the story. Weapons and Holumn manifestations remain in their own archives.</p>
+                </div>
+                <dl>
+                  <div><dt>Current records</dt><dd id="items-total-count">01</dd></div>
+                  <div><dt>Known holders</dt><dd id="items-holder-count">01</dd></div>
+                  <div><dt>Recorded images</dt><dd id="items-image-count">00</dd></div>
+                </dl>
+              </section>
+
+              <section class="items-scope reveal" aria-labelledby="items-scope-title">
+                <header>
+                  <span>ARCHIVE SCOPE</span>
+                  <h2 id="items-scope-title">A record for consequential objects</h2>
+                </header>
+                <div>
+                  <article><span>01</span><strong>Identity</strong><p>Names, physical forms, makers, materials, and classifications are recorded when known.</p></article>
+                  <article><span>02</span><strong>Operation</strong><p>Properties are paired with their activation conditions, limits, and practical consequences.</p></article>
+                  <article><span>03</span><strong>Custody</strong><p>Holders, inheritances, losses, substitutions, and story appearances remain linked to the people affected by them.</p></article>
+                </div>
+              </section>
+
+              <section class="items-catalog" aria-labelledby="items-catalog-title">
+                <header class="items-section-heading reveal">
+                  <div><span>01</span><p class="eyebrow">Current holdings</p></div>
+                  <h2 id="items-catalog-title">Recorded items</h2>
+                  <p>Each entry opens a dedicated record of the object's known forms, properties, limits, custody, and place in the story.</p>
+                </header>
+                <div class="item-record-grid" id="item-record-grid" aria-live="polite"></div>
+              </section>
+            </section>
+
+            <article class="item-detail" id="item-detail-view" hidden aria-live="polite"></article>
+            <p class="item-load-error" id="item-load-error" hidden>The Items &amp; Artefacts archive could not be loaded.</p>
+          </div>
+        </div>
+
+        <aside class="notes-sidebar" aria-label="Items and artefacts page notes">
+          <header class="notes-header"><div><span aria-hidden="true">✎</span><strong>Page notes</strong></div><span>Items</span></header>
+          <div class="notes-list">
+            <article class="page-note">
+              <div><span>Open</span><span>01</span></div>
+              <h2>Define the coat's limits</h2>
+              <p>Resolve what qualifies as minor magical damage and whether the coat can refuse protection.</p>
+            </article>
+            <article class="page-note">
+              <div><span>Open</span><span>02</span></div>
+              <h2>Identify the material</h2>
+              <p>Determine what the hide of leviathan is and whether it is connected to the Vilen river phenomenon.</p>
+            </article>
+          </div>
+          <p class="notes-footnote">Notes are stored in Supabase and synchronized when this page loads.</p>
+        </aside>
+      </div>
+    </main>
+  </body>
+</html>

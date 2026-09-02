@@ -93,13 +93,14 @@ function renderMomentPhaseTrack(entries) {
   const nodes = storyPhases.map((phase) => {
     const item = momentElement('li');
     item.dataset.momentPhase = phase.id;
+    item.dataset.storyArc = phase.arc;
     const button = momentElement('button');
     button.type = 'button';
     button.dataset.phase = phase.id;
     button.setAttribute('aria-label', `Filter Moments to ${phase.title}`);
     button.append(momentElement('span', 'moment-phase-number', phase.number));
     const copy = momentElement('div');
-    copy.append(momentElement('small', '', phase.label), momentElement('h3', '', phase.title));
+    copy.append(momentElement('small', '', `${phase.arcLabel} · ${phase.label}`), momentElement('h3', '', phase.title));
     const count = counts.get(phase.id) ?? 0;
     item.classList.toggle('has-moments', count > 0);
     copy.append(momentElement('p', '', count ? `${count} anchored ${count === 1 ? 'Moment' : 'Moments'}` : 'No scenes anchored yet'));
@@ -119,7 +120,10 @@ function appendOptions(select, values, labelForValue = (value) => value) {
 }
 
 function renderMomentFilters(entries) {
-  appendOptions(momentPhaseFilter, storyPhases.map((phase) => phase.id), (id) => storyPhases.find((phase) => phase.id === id)?.title ?? id);
+  appendOptions(momentPhaseFilter, storyPhases.map((phase) => phase.id), (id) => {
+    const phase = storyPhases.find((candidate) => candidate.id === id);
+    return phase ? `${phase.arcLabel} · ${phase.title}` : id;
+  });
   const characters = [...new Set(entries.flatMap(characterNames))].sort((a, b) => a.localeCompare(b));
   const sceneTypes = [...new Set(entries.map((entry) => entry.sceneType))].sort((a, b) => a.localeCompare(b));
   appendOptions(momentCharacterFilter, characters);
@@ -129,6 +133,7 @@ function renderMomentFilters(entries) {
 function createMomentCard(entry) {
   const card = momentElement('article', 'moment-card');
   card.dataset.phase = entry.timelinePhase;
+  const phase = storyPhases.find((candidate) => candidate.id === entry.timelinePhase);
   card.dataset.characters = characterNames(entry).join('|').toLowerCase();
   card.dataset.type = entry.sceneType;
   card.dataset.search = `${entry.title} ${entry.summary} ${entry.thread} ${entry.location} ${entry.sceneType} ${characterNames(entry).join(' ')}`.toLowerCase();
@@ -142,7 +147,7 @@ function createMomentCard(entry) {
   link.append(top, momentElement('h3', '', entry.title), momentElement('p', 'moment-card-summary', entry.summary));
 
   const position = momentElement('div', 'moment-card-position');
-  position.append(momentElement('span', '', entry.timelineLabel), momentElement('small', '', entry.placementStatus));
+  position.append(momentElement('span', '', `${phase?.arcLabel ?? 'Arc unassigned'} · ${entry.timelineLabel}`), momentElement('small', '', entry.placementStatus));
   link.append(position);
 
   const metadata = momentElement('dl', 'moment-card-meta');
@@ -245,7 +250,9 @@ async function renderMomentReader(entry, entries) {
   document.querySelector('#moment-thread').textContent = entry.thread;
   document.querySelector('#moment-location').textContent = entry.location;
   document.querySelector('#moment-date').textContent = `Updated ${entry.updated}`;
-  document.querySelector('#moment-phase-name').textContent = entry.timelineLabel;
+  const phase = storyPhases.find((candidate) => candidate.id === entry.timelinePhase);
+  const phaseLabel = `${phase?.arcLabel ?? 'Arc unassigned'} · ${entry.timelineLabel}`;
+  document.querySelector('#moment-phase-name').textContent = phaseLabel;
   document.querySelector('#moment-story-link').href = `story.html?phase=${encodeURIComponent(entry.timelinePhase)}`;
   document.querySelector('#moment-before').textContent = entry.continuityBefore;
   document.querySelector('#moment-purpose').textContent = entry.purpose;
@@ -262,7 +269,7 @@ async function renderMomentReader(entry, entries) {
   document.querySelector('#moment-reader-characters').replaceChildren(...characterLinks);
 
   const connections = [
-    createConnectionCard('Overall Story', entry.timelineLabel, entry.placementStatus, `story.html?phase=${encodeURIComponent(entry.timelinePhase)}`),
+    createConnectionCard('Overall Story', phaseLabel, entry.placementStatus, `story.html?phase=${encodeURIComponent(entry.timelinePhase)}`),
     ...entry.characters.map((character) => createConnectionCard('Character timeline', character.name, 'This Moment is anchored to the character\'s personal chronology.', `character.html?character=${encodeURIComponent(character.slug)}`))
   ];
   if (entry.chapterSlug) connections.push(createConnectionCard('Chapter', 'Assigned chapter', 'Open the chapter containing this Moment.', `story.html?chapter=${encodeURIComponent(entry.chapterSlug)}`));

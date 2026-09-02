@@ -18,10 +18,11 @@ This file is the concise operating map for future agents and maintainers. `AGENT
 | Character artwork | `media/gallery/images/` plus Gallery metadata | Gallery, character card or portrait where approved |
 | Chapters | `story/*.md` and `story/index.json` | Story catalog, chapter reader, preface table, Story phase, involved profiles, global search |
 | Moments | `moments/index.json` | Moment catalog and reader, Story phase, involved profiles, assigned Chapter, global search |
-| Story phases | `story-phases.js` | Story timeline, Moments timeline, Chapter placement |
+| Story arcs and phases | `story-phases.js` | Story timeline, Moments timeline, Chapter placement and reveal timing |
 | World institutions and places | Dedicated page and owning data file where present | World index and submenu, entity links, global search |
 | Holumn evidence | `holumns/index.json` | Holumns World synthesis and `docs/holumn-incidents-and-testimonies.md` |
 | Weapons | `weapons/index.json` | Weapons World record, character Equipment links, global search |
+| Items and artefacts | `items/index.json` | Items & Artefacts World catalog and detail records, character Equipment links, Moments, Chapters, entity links, global search |
 | Character behavior guidance | `docs/character-behavior-notes.json` | Full Character Behaviour Audit plus F, M, or S paragraph tooltips in every relevant Chapter and Moment |
 | Sexual tension guidance | `docs/sexual-tension-notes.json` | Character profile tension module and Character Intimacy and Sexuality Reference |
 | Editorial uncertainty | `docs/questions-to-be-answered.md` | Questions document only |
@@ -66,6 +67,8 @@ Every Moment must have:
 
 Inference means the scene supplies enough evidence for the reader to reach a conclusion without openly explaining it. Public labels never mention the Nasu audit or internal drafting language.
 
+Arcs are life periods that may span several years and contain several Story phases. Arc 1 is the main story. Later arcs may function as sequels or prequels. Phase placement must never flatten an arc boundary or expose a reveal earlier than the narrative does. Lynleit's coat is discovered in the middle of Arc 1. Her pregnancy begins near the transition into Arc 2, remains unshown and unexplained, and becomes understandable through inference at the opening of Arc 2.
+
 ## Character completion
 
 Every character profile includes:
@@ -87,6 +90,22 @@ Sexual tension is not a relationship forecast. It may be mutual, asymmetric, sub
 Construct tension from an established character priority rather than replacing it. Identify what each person normally controls, then use a repeatable ordinary interaction to let the other disrupt that control. Add restrained bodily tells, allow the reader to notice the pattern before the characters name it, and let crisis intensify tension that already exists instead of using rescue or trauma as its sole source. If authority, coercion, or dependency begins the relationship, a later voluntary choice to remain or return is required before compliance can be read as desire. Lynleit's MSF duty and personal missions remain primary, while her attraction to Kyrien is an involuntary complication.
 
 Appearance records contain observable facts only. State physical features, clothing, accessories, grooming, posture, and visible variation without justifying the design, explaining the character's reasons, or assigning personality and capability to the clothing.
+
+## Item and artefact completion
+
+Every Items & Artefacts record includes:
+
+- a stable identifier, slug, name, and classification;
+- an image or an honest unavailable-image state;
+- known physical forms and visible variation;
+- confirmed holder, custody, inheritance, loss, or substitution history;
+- properties paired with activation conditions and practical effects;
+- limits, blind spots, counterplay, or explicitly unresolved boundaries;
+- placement within the correct arc, Story phase, Moment, or Chapter;
+- bidirectional links to every affected character Equipment record and story appearance;
+- unresolved origin, mechanics, or balance questions kept in the Questions or Capability ledger rather than answered by invention.
+
+An artefact belongs in this archive when its identity, custody, rule, or history changes a character decision or story outcome. Ordinary possessions without such consequence do not need dedicated records. A self-directed item is not automatically classified as a Holumn; that classification remains unresolved until canon establishes it.
 
 ## Audit boundaries
 

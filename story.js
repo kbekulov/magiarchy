@@ -20,12 +20,13 @@ function renderStoryTimeline() {
     const item = document.createElement('li');
     item.id = `phase-${phase.id}`;
     item.dataset.timelinePhase = phase.id;
+    item.dataset.storyArc = phase.arc;
     const marker = document.createElement('span');
     marker.className = 'timeline-marker';
     marker.textContent = phase.number;
     const copy = document.createElement('div');
     const label = document.createElement('small');
-    label.textContent = phase.label;
+    label.textContent = `${phase.arcLabel} · ${phase.label}`;
     const title = document.createElement('h3');
     title.textContent = phase.title;
     const description = document.createElement('p');
@@ -182,7 +183,8 @@ function createChapterCard(entry) {
   const timelineDot = document.createElement('span');
   timelineDot.setAttribute('aria-hidden', 'true');
   const timelineText = document.createElement('span');
-  timelineText.textContent = `Story phase · ${entry.timelineLabel ?? 'Unassigned'}`;
+  const phase = storyPhases.find((candidate) => candidate.id === entry.timelinePhase);
+  timelineText.textContent = `${phase?.arcLabel ?? 'Arc unassigned'} · ${entry.timelineLabel ?? 'Phase unassigned'}`;
   timelinePosition.append(timelineDot, timelineText);
 
   const characters = document.createElement('div');
@@ -207,6 +209,7 @@ function createChapterCard(entry) {
 }
 
 function showChapterLibrary(entries) {
+  document.body.classList.remove('story-reader-open');
   setActiveTimelinePhase();
   setMomentContextPhase(new URLSearchParams(window.location.search).get('phase'));
   chapterReaderView.hidden = true;
@@ -274,6 +277,7 @@ function setActiveTimelinePhase(entry) {
 }
 
 async function loadChapter(entry) {
+  document.body.classList.add('story-reader-open');
   chapterLibrary.hidden = true;
   storyHeading.hidden = true;
   chapterReaderView.hidden = false;

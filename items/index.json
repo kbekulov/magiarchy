@@ -1,0 +1,116 @@
+{
+  "updated": "2026-09-01",
+  "title": "Items & Artefacts",
+  "description": "Story-relevant objects, artefacts, and other nonhuman holdings that are not weapons or Holumns.",
+  "items": [
+    {
+      "id": "IA-001",
+      "slug": "leviathan-hide-coat",
+      "updated": "2026-09-01",
+      "name": "Leviathan-hide coat",
+      "recordType": "Anomalous garment",
+      "status": "Held by Lynleit",
+      "summary": "A blue garment left to Lynleit through Fionn's concealed intervention. It changes form without accepting commands and shields only what Lynleit deliberately covers with it.",
+      "holder": {
+        "name": "Lynleit",
+        "slug": "lynleit"
+      },
+      "associatedCharacter": {
+        "name": "Fionn",
+        "slug": "fionn",
+        "relation": "Arranged the substitution before his death"
+      },
+      "material": "A material called the hide of leviathan",
+      "materialNote": "The nature and source of the material are not identified.",
+      "image": null,
+      "forms": [
+        {
+          "name": "Blue coat",
+          "detail": "Its familiar full-length form and the appearance in which Lynleit first understands what Fionn left her."
+        },
+        {
+          "name": "Scarf",
+          "detail": "A smaller form chosen by the garment without instruction from Lynleit."
+        },
+        {
+          "name": "Blue suede jacket",
+          "detail": "The garment can imitate the fitted jacket Lynleit lost during the Drowned Choir attack."
+        },
+        {
+          "name": "Other clothing",
+          "detail": "The coat can assume other wearable forms. Lynleit cannot choose which form appears on a given day."
+        }
+      ],
+      "properties": [
+        {
+          "name": "Minor magical protection",
+          "detail": "The material can shield a covered body from minor magically induced damage and phenomena."
+        },
+        {
+          "name": "Protection by coverage",
+          "detail": "Wearing the garment is not sufficient. Lynleit must use it to cover the threatened part of her body."
+        },
+        {
+          "name": "Protection of another person",
+          "detail": "Lynleit can remove the garment and place or throw it over someone who needs immediate protection."
+        },
+        {
+          "name": "Autonomous form",
+          "detail": "The garment decides its own appearance. It does not respond to Lynleit's preference or tactical need."
+        }
+      ],
+      "limits": [
+        "Protection is local to the area physically covered by the garment.",
+        "The garment does not provide passive protection merely because Lynleit is wearing it.",
+        "Lynleit cannot command its form or rely on it to assume the form most useful to the situation.",
+        "The exact boundary of minor magically induced damage remains unknown."
+      ],
+      "chronology": [
+        {
+          "arc": "Arc 1",
+          "phase": "The river operation",
+          "title": "The lost jacket",
+          "detail": "The Drowned Choir tears away Lynleit's fitted blue suede jacket while dragging her underwater. She later complains about losing it because she liked it."
+        },
+        {
+          "arc": "Arc 1",
+          "phase": "Middle of the main story",
+          "title": "Fionn's concealed substitution",
+          "detail": "After Fionn's death, Lynleit discovers that he had discreetly replaced the blue coat she wore with the leviathan-hide garment."
+        },
+        {
+          "arc": "Arc 1",
+          "phase": "After the discovery",
+          "title": "An inherited protection",
+          "detail": "The garment becomes part of Lynleit's equipment. Its resemblance to the lost jacket can preserve an ordinary preference inside Fionn's posthumous protection."
+        }
+      ],
+      "storyLinks": [
+        {
+          "label": "Moment",
+          "title": "The Coat Fionn Left Behind",
+          "href": "moments.html?moment=the-coat-fionn-left-behind",
+          "detail": "Lynleit discovers the substitution and the garment's properties."
+        },
+        {
+          "label": "Chapter",
+          "title": "The Empty Boats Beneath the Bridge",
+          "href": "story.html?chapter=the-empty-boats-beneath-the-bridge",
+          "detail": "The river operation in which Lynleit loses the jacket later imitated by the coat."
+        },
+        {
+          "label": "Character",
+          "title": "Lynleit",
+          "href": "character.html?character=lynleit#equipment-title",
+          "detail": "The coat is recorded among Lynleit's carried equipment."
+        },
+        {
+          "label": "Character",
+          "title": "Fionn",
+          "href": "character.html?character=fionn",
+          "detail": "Fionn arranged the substitution without explaining it to Lynleit."
+        }
+      ]
+    }
+  ]
+}

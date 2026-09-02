@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-01",
+  "updated": "2026-09-02",
   "sections": [
     {
       "id": "river-operation",
@@ -16,6 +16,10 @@
     {
       "id": "long-term-inheritance",
       "title": "Long-term inheritance"
+    },
+    {
+      "id": "academy-crisis",
+      "title": "The Academy crisis"
     }
   ],
   "notes": [
@@ -127,6 +131,17 @@
       "momentFact": { "the-first-lines-back-into-msf": 5 }
     },
     {
+      "id": "pressure-kyrien-battle-reward",
+      "section": "relationships-under-pressure",
+      "kind": "male",
+      "title": "Kyrien",
+      "basis": "ISTP lean, competitive drive and paternal inheritance",
+      "text": "The answer should remain immediate and unadorned. Kyrien does not reassure Lynleit or make her the reward because he experiences the fight as a chance to test himself. The useful ambiguity lies in what he does not examine: choosing a battle repeatedly places him beside the same woman, even while he continues to describe the motive as his own.",
+      "chapters": [],
+      "moments": ["because-theres-a-battle-to-be-fought"],
+      "momentFact": { "because-theres-a-battle-to-be-fought": 2 }
+    },
+    {
       "id": "pressure-mikhail-aftermath",
       "section": "relationships-under-pressure",
       "kind": "story",
@@ -214,6 +229,28 @@
       "text": "Directing MSF while Lynleit carries the Magiarchate forces Kyrien into a role built around speech, delegation, and institutional patience. His instinct may be to solve pressure alone because that resembles the officer ideal inherited from his father. A believable failure occurs when he withholds a burden that subordinates needed to understand, repeating Fionn's mistake in a different personality.",
       "chapters": [],
       "moments": []
+    },
+    {
+      "id": "academy-myka-survival",
+      "section": "academy-crisis",
+      "kind": "story",
+      "title": "Myka earns the outcome",
+      "basis": "Story-pressure suggestion",
+      "text": "Myka's eventual first-place graduation should be earned through decisions she makes during the Academy crisis, not granted because Natalia and Kyrien rescue her. Their help can keep her alive or give her access, but at least one decisive discovery, refusal, or use of magecraft should belong to Myka alone and expose a weakness that follows her into MSF.",
+      "chapters": [],
+      "moments": ["terrors-inside-the-academy"],
+      "momentFact": { "terrors-inside-the-academy": 0 }
+    },
+    {
+      "id": "academy-kyrien-outsider",
+      "section": "academy-crisis",
+      "kind": "male",
+      "title": "Kyrien",
+      "basis": "ISTP lean, non-Magus field operator",
+      "text": "Kyrien's usefulness inside the Academy should come from seeing an ordinary operational pattern that trained Magi dismiss because they are looking for a magecraft explanation. His outsider status must also cost him: he cannot read magical danger directly and needs Myka or Natalia to interpret what his field instincts expose.",
+      "chapters": [],
+      "moments": ["terrors-inside-the-academy"],
+      "momentFact": { "terrors-inside-the-academy": 4 }
     },
     {
       "id": "inheritance-jacket-form",

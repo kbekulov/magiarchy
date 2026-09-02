@@ -7,12 +7,20 @@ globalSearchScript.src = 'global-search.js';
 document.head.append(globalSearchScript);
 
 document.querySelectorAll('.nav-submenu').forEach((submenu) => {
-  if (submenu.querySelector('a[href="holumns.html"]')) return;
-  const holumnLink = document.createElement('a');
-  holumnLink.href = 'holumns.html';
-  holumnLink.innerHTML = '<span>Holumns</span><small>Manifestations and hidden threats</small>';
   const weaponsLink = submenu.querySelector('a[href="weapons.html"]');
-  submenu.insertBefore(holumnLink, weaponsLink);
+  if (!submenu.querySelector('a[href="holumns.html"]')) {
+    const holumnLink = document.createElement('a');
+    holumnLink.href = 'holumns.html';
+    holumnLink.innerHTML = '<span>Holumns</span><small>Manifestations and hidden threats</small>';
+    submenu.insertBefore(holumnLink, weaponsLink);
+  }
+  if (!submenu.querySelector('a[href="items.html"]')) {
+    const itemLink = document.createElement('a');
+    itemLink.href = 'items.html';
+    itemLink.innerHTML = '<span>Items &amp; Artefacts</span><small>Objects, relics, and anomalous holdings</small>';
+    if (weaponsLink?.nextSibling) submenu.insertBefore(itemLink, weaponsLink.nextSibling);
+    else submenu.append(itemLink);
+  }
 });
 
 if (navToggle && navLinks) {
@@ -56,6 +64,7 @@ document.querySelectorAll('[data-year]').forEach((node) => {
 const copyrightHostSelectors = [
   '.feed-scroll',
   '.weapons-scroll',
+  '.items-scroll',
   '.duchy-scroll',
   '.world-scroll',
   '.character-profile-main-pane',

@@ -515,8 +515,11 @@
       "Their earlier intimate encounters are non-sexual and arise functionally from isolation, danger, cold, near drowning, or emotional rupture.",
       "The first trigger is Kyrien's silent protection of Lynleit's water-walking secret and their back-to-back attempt to share body heat after the river incident.",
       "Lynleit does not pursue attraction as a separate goal. It develops inside work and danger that remain more important to her.",
-      "Their relationship becomes sexual at the end of the first arc.",
-      "The sexual encounter precedes Lynleit's pregnancy and disappearance."
+      "Their relationship becomes sexual at the end of Arc 1.",
+      {
+        "text": "The opening of Arc 2 lets the reader infer that Lynleit's disappearance concealed a pregnancy near the boundary between the two arcs.",
+        "status": "inferred"
+      }
     ],
     "openQuestions": [
       "How does Lynleit locate the hideout without leading pursuit to Kyrien?",
@@ -586,14 +589,14 @@
     "sceneType": "Intimacy threshold",
     "thread": "Lynleit and Kyrien",
     "location": "Unspecified location",
-    "summary": "After a story-long accumulation of functional trust and non-sexual intimacy, Lynleit and Kyrien finally have sex at the end of the first arc, shortly before her pregnancy and disappearance.",
-    "purpose": "Completes a progression that begins with protected knowledge and shared warmth after the river incident, deepens through emotional refuge after Fionn's murder, and becomes sexual only when the first arc is closing.",
+    "summary": "After a story-long accumulation of functional trust and non-sexual intimacy, Lynleit and Kyrien finally have sex at the end of Arc 1, shortly before Lynleit disappears.",
+    "purpose": "Completes a progression that begins with protected knowledge and shared warmth after the river incident, deepens through emotional refuge after Fionn's murder, and becomes sexual only when Arc 1 is closing.",
     "characters": [
       { "name": "Lynleit", "slug": "lynleit" },
       { "name": "Kyrien", "slug": "kyrien" }
     ],
     "characterAnchors": [
-      { "slug": "lynleit", "beat": "Hidden Pregnancy and Inquiry" },
+      { "slug": "lynleit", "beat": "Protected Absence and Inquiry" },
       { "slug": "kyrien", "beat": "Alliance under Pressure" }
     ],
     "known": [
@@ -602,16 +605,20 @@
       "The relationship remains non-sexual through the river aftermath and the much later hotel-room refuge.",
       "Kyrien chooses to remain beside Lynleit after her authority over him can no longer enforce the original bargain.",
       "MSF duty and Lynleit's personal missions remain her priorities throughout the relationship.",
-      "Their relationship becomes sexual at the end of the first arc.",
-      "The encounter occurs before Lynleit's pregnancy and disappearance."
+      "Their relationship becomes sexual at the end of Arc 1.",
+      {
+        "text": "The opening of Arc 2 lets the reader infer that Lynleit became pregnant near the boundary between the arcs, without a direct explanation or shown realization.",
+        "status": "inferred"
+      }
     ],
     "openQuestions": [
       "What final circumstances bring them together at the end of the arc?",
       "Is this encounter the conception of their son?",
-      "When does Lynleit realize she is pregnant, and how much time passes before she disappears?"
+      "What details at the opening of Arc 2 make the pregnancy inference clear without explaining or showing it directly?",
+      "How much time passes between the encounter, the beginning of the pregnancy, and Lynleit's disappearance?"
     ],
     "continuityBefore": "The failed watches establish voluntary competition and physical attention. The river incident establishes silent trust, the hotel-room refuge establishes emotional safety, and Kyrien's later choice to remain makes his loyalty independent of the original coercion. These changes accumulate inside Lynleit's continuing MSF mission.",
-    "continuityAfter": "Lynleit becomes pregnant close to the end of the arc and disappears to keep the child beyond the conflict's reach. Kyrien is left to direct MSF without knowing that she carries their son.",
+    "continuityAfter": "Lynleit disappears near the transition into Arc 2. The opening of Arc 2 supplies enough evidence for the reader to infer the pregnancy, while Kyrien directs MSF without knowing that she carries their son.",
     "chapterSlug": null,
     "updated": "2026-09-01"
   },
@@ -744,14 +751,14 @@
     "code": "MOM-016",
     "title": "The Coat Fionn Left Behind",
     "status": "Inherited object",
-    "placementStatus": "After Fionn's death confirmed, exact placement unresolved",
+    "placementStatus": "Middle of Arc 1 confirmed, exact scene unresolved",
     "timelinePhase": "clear-her-name",
     "timelineLabel": "Clear Her Name",
     "sequence": 3,
     "sceneType": "Posthumous discovery",
     "thread": "Fionn's concealed protection",
     "location": "Unspecified",
-    "summary": "Long after losing a blue suede jacket in the river, Lynleit learns that Fionn had discreetly replaced the blue coat she wears with a garment sewn from material called the hide of leviathan.",
+    "summary": "Midway through Arc 1, after losing a blue suede jacket in the river and after Fionn's death, Lynleit learns that he had discreetly replaced the blue coat she wears with a garment sewn from material called the hide of leviathan.",
     "purpose": "Turns a familiar piece of clothing into evidence of Fionn's concealed care. Its protection is useful but conditional, and its autonomous changes of form keep the inheritance from behaving like a passive suit of armour.",
     "characters": [
       {
@@ -776,6 +783,7 @@
     "known": [
       "Lynleit loses a fitted blue suede jacket during the Drowned Choir attack and later complains about the loss because she liked it.",
       "After Fionn's death, Lynleit discovers that he had discreetly replaced the blue coat she wears.",
+      "The discovery occurs in the middle of Arc 1.",
       "The replacement is sewn from material called the hide of leviathan.",
       "The coat can shield its user from minor magically induced damage and phenomena.",
       "Wearing the coat is not enough to activate its protection. Lynleit must cover the threatened part of her body or remove the garment and place or throw it over someone who needs protection.",
@@ -793,6 +801,144 @@
     "continuityAfter": "The inherited coat becomes part of Lynleit's equipment. Its changing forms can preserve the silhouette of the lost jacket, but its protection remains deliberate rather than automatic.",
     "chapterSlug": null,
     "updated": "2026-08-31"
+  },
+  {
+    "slug": "because-theres-a-battle-to-be-fought",
+    "code": "MOM-017",
+    "title": "Because There's a Battle to Be Fought",
+    "status": "Character exchange",
+    "placementStatus": "Arc 1 confirmed, exact operation unresolved",
+    "timelinePhase": "clear-her-name",
+    "timelineLabel": "Clear Her Name",
+    "sequence": 2.5,
+    "sceneType": "Private operational exchange",
+    "thread": "Kyrien's reason for remaining",
+    "location": "Unspecified",
+    "summary": "Lynleit asks Kyrien why he continues to help her and risk his life when no reward awaits him. He answers immediately: \"Because there's a battle to be fought.\"",
+    "purpose": "Makes Kyrien's continued involvement legible without turning it into a declaration of love or loyalty. Lynleit wants to keep him out of needless danger, while Kyrien treats a difficult fight as its own reason to act.",
+    "characters": [
+      { "name": "Lynleit", "slug": "lynleit" },
+      { "name": "Kyrien", "slug": "kyrien" }
+    ],
+    "characterAnchors": [
+      { "slug": "lynleit", "beat": "The Battle as Reward" },
+      { "slug": "kyrien", "beat": "The Battle as Reward" }
+    ],
+    "known": [
+      "Lynleit is bewildered by Kyrien's willingness to keep helping her and entering danger when no reward has been promised.",
+      "She does not want to place him in danger without necessity.",
+      "Kyrien answers bluntly and without hesitation: \"Because there's a battle to be fought.\"",
+      "For Kyrien, the existence of a battle is itself a reason to enter it.",
+      "The impulse belongs to the same childish competitive streak that makes him want to win every game.",
+      {
+        "text": "Kyrien does not say that he is fighting for Lynleit, leaving the reader to judge how much of his persistence is self-directed and how much attachment has entered a motive he still describes as combat.",
+        "status": "inferred"
+      },
+      {
+        "text": "His need to prove his worth may be directed toward his own standards, the memory of his father, or both.",
+        "status": "inferred"
+      }
+    ],
+    "openQuestions": [
+      "Which operation or immediate danger prompts Lynleit to ask the question?",
+      "How does Lynleit respond to an answer that removes her from Kyrien's stated reason for staying?",
+      "Does Kyrien understand at this point that attachment has become part of the battle he keeps choosing?"
+    ],
+    "continuityBefore": "Kyrien has repeatedly accepted danger beside Lynleit, but rescue, coercion, and operational necessity do not fully explain why he keeps returning.",
+    "continuityAfter": "Lynleit can rely on Kyrien without mistaking his involvement for obedience or romance. His later free choice to remain after her authority fails confirms that the answer was not an excuse.",
+    "chapterSlug": null,
+    "updated": "2026-09-02"
+  },
+  {
+    "slug": "terrors-inside-the-academy",
+    "code": "MOM-018",
+    "title": "Terrors Inside the Academy",
+    "status": "Academy crisis",
+    "placementStatus": "Story placement provisional",
+    "timelinePhase": "the-real-mission",
+    "timelineLabel": "The Real Mission",
+    "sequence": 1,
+    "sceneType": "Undercover intervention",
+    "thread": "Myka's Academy ordeal",
+    "location": "Magi Academy",
+    "summary": "Myka encounters terrors inside the Magi Academy and relies on Natalia for rescue and support. Lynleit eventually sends Kyrien into the Academy as an undercover helper.",
+    "purpose": "Places Myka's education under genuine supernatural pressure and gives Kyrien a mission inside an institution built around knowledge he does not possess.",
+    "characters": [
+      { "name": "Myka", "slug": "myka" },
+      { "name": "Natalia", "slug": "natalia" },
+      { "name": "Lynleit", "slug": "lynleit" },
+      { "name": "Kyrien", "slug": "kyrien" }
+    ],
+    "characterAnchors": [
+      { "slug": "myka", "beat": "Terrors inside the Academy" },
+      { "slug": "natalia", "beat": "Myka's Academy Crisis" },
+      { "slug": "lynleit", "beat": "Academy Intervention" },
+      { "slug": "kyrien", "beat": "Undercover at the Academy" }
+    ],
+    "known": [
+      "Myka encounters terrors inside the Magi Academy.",
+      "She relies on Natalia for rescue, advice, and support.",
+      "Natalia and Myka eventually become connected to Lynleit.",
+      "Lynleit agrees to send Kyrien into the Academy as an undercover helper.",
+      "Kyrien enters the operation as a non-Magus working inside a Magus institution.",
+      {
+        "text": "The danger persists inside an institution expected to understand magecraft, implying either concealed knowledge, a failure of classification, or a threat the Academy cannot acknowledge openly.",
+        "status": "inferred"
+      }
+    ],
+    "openQuestions": [
+      "What terrors does Myka encounter, and why can the Academy not resolve them through its own hierarchy?",
+      "How do Natalia and Myka reach Lynleit, and was Natalia previously one of Lynleit's professors?",
+      "What cover, objective, and practical access allow Kyrien to operate inside the Academy?",
+      "Why does Lynleit choose Kyrien rather than a Magus or an established MSF officer?",
+      "Where does the crisis fall within Arc 1?"
+    ],
+    "continuityBefore": "Myka already relies on Natalia for ordinary academic advice and personal reassurance.",
+    "continuityAfter": "Surviving the Academy crisis contributes to the knowledge and strength with which Myka later graduates at the top of her class.",
+    "chapterSlug": null,
+    "updated": "2026-09-02"
+  },
+  {
+    "slug": "myka-enters-msf",
+    "code": "MOM-019",
+    "title": "Myka Enters MSF",
+    "status": "Later-life transition",
+    "placementStatus": "Outcome confirmed, Arc 2 placement provisional",
+    "timelinePhase": "kyriens-burden",
+    "timelineLabel": "Kyrien's Burden",
+    "sequence": 1,
+    "sceneType": "Recruitment",
+    "thread": "MSF after Lynleit's disappearance",
+    "location": "Unspecified MSF office",
+    "summary": "After surviving the Academy crisis and graduating at the top of her class, Myka is recruited by MSF as a strong Magus.",
+    "purpose": "Carries the Academy ordeal into Myka's professional life and gives the smaller MSF a highly trained Magus whose history already connects Natalia, Lynleit, and Kyrien.",
+    "characters": [
+      { "name": "Myka", "slug": "myka" },
+      { "name": "Kyrien", "slug": "kyrien" }
+    ],
+    "characterAnchors": [
+      { "slug": "myka", "beat": "Recruited by MSF" },
+      { "slug": "kyrien", "beat": "The Director without Magecraft" }
+    ],
+    "known": [
+      "Myka survives the dangers she encounters inside the Magi Academy.",
+      "She graduates at the top of her class.",
+      "MSF later recruits her as a strong Magus.",
+      {
+        "text": "The current chronology suggests that Myka joins after Lynleit disappears and Kyrien assumes control of MSF, but the exact timing remains unresolved.",
+        "status": "inferred"
+      }
+    ],
+    "openQuestions": [
+      "Does Kyrien personally recruit Myka after becoming interim director?",
+      "Which Academy disciplines make Myka a strong Magus, and what can she not yet do despite graduating first?",
+      "How does her earlier undercover contact with Kyrien affect their later working relationship?",
+      "What role does Natalia play in deciding whether Myka should join MSF?"
+    ],
+    "continuityBefore": "Myka's Academy ordeal forces her to apply knowledge under danger and brings Kyrien into her life as an undercover helper.",
+    "continuityAfter": "Myka enters the post-Spill agency as a trained Magus while Kyrien directs it without magecraft of his own.",
+    "chapterSlug": null,
+    "updated": "2026-09-02"
   },
   {
     "slug": "fionn-is-eliminated",
