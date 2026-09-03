@@ -5604,7 +5604,6 @@ a.status-member:hover {
 .moment-card:hover {
   border-color: rgba(139, 149, 255, .4);
   background: #2f3136;
-  transform: translateY(-2px);
 }
 
 .moment-card-link {
