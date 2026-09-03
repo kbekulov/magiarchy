@@ -4538,11 +4538,11 @@ a.status-member:hover {
  * unstable column-fragment compositing in Chromium. Keep masonry cards in the
  * document layer while retaining hover feedback inside each stable fragment.
  */
-.gallery-grid > .gallery-card.reveal,
-.music-card-grid > .music-card.reveal,
-.document-card-grid > .document-card.reveal,
-.character-grid > .character-card.reveal,
-.moment-card-grid > .moment-card.reveal {
+.gallery-grid > .gallery-card,
+.music-card-grid > .music-card,
+.document-card-grid > .document-card,
+.character-grid > .character-card,
+.moment-card-grid > .moment-card {
   transform: none;
 }
 
