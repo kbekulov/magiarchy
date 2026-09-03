@@ -15,7 +15,7 @@ This file is the concise operating map for future agents and maintainers. `AGENT
 | Content | Shared source | Required public or writer surfaces |
 | --- | --- | --- |
 | Characters | `character.js` | Character catalog, profile, timeline, connections, global search |
-| Character artwork | `media/gallery/images/` plus Gallery metadata | Gallery, character card or portrait where approved |
+| Character artwork | `media/gallery/images/` plus Gallery metadata | Gallery, character card or portrait where approved, with explicit Arc metadata for era-specific art |
 | Chapters | `story/*.md` and `story/index.json` | Story catalog, chapter reader, preface table, Story phase, involved profiles, global search |
 | Moments | `moments/index.json` | Moment catalog and reader, Story phase, involved profiles, assigned Chapter, global search |
 | Story arcs and phases | `story-phases.js` | Story timeline, Moments timeline, Chapter placement and reveal timing |
@@ -69,6 +69,8 @@ Inference means the scene supplies enough evidence for the reader to reach a con
 
 Arcs are life periods that may span several years and contain several Story phases. Arc 1 is the main story. Later arcs may function as sequels or prequels. Phase placement must never flatten an arc boundary or expose a reveal earlier than the narrative does. Lynleit's coat is discovered in the middle of Arc 1. Her pregnancy begins near the transition into Arc 2, remains unshown and unexplained, and becomes understandable through inference at the opening of Arc 2.
 
+Concurrent side stories share a Story phase and carry reciprocal Moment links until individual Chapters establish their precise alternation. Each branch keeps its own objective, cast, location, and consequences while recording the event that makes one character delegate responsibility into the other branch.
+
 ## Character completion
 
 Every character profile includes:
@@ -84,6 +86,8 @@ Every character profile includes:
 - lower connection records only for information the map cannot display;
 - potential sexual tension sourced from `docs/sexual-tension-notes.json` when supported, or a concise unresolved record where the archive is deliberately watching the question;
 - conflicts and motivations.
+
+When artwork depicts a specific Arc or life period, preserve that period in the filename, Gallery metadata, caption, alt text, and profile portrait label. Generic catalog cards and relationship maps keep the character's baseline-period chibi unless the interface is explicitly presenting another Arc.
 
 Sexual tension is not a relationship forecast. It may be mutual, asymmetric, subconscious, antagonistic, situational, or permanently unresolved. Each proposed pairing needs character-specific contact and a reason for repeated attention. Do not pair characters merely because they are attractive, available, or of opposite sexes.
 
@@ -123,6 +127,7 @@ An artefact belongs in this archive when its identity, custody, rule, or history
 - Gradients are never allowed. Use solid fills, borders, opacity, spacing, and layered panels.
 - Entity links look like ordinary prose until hover or keyboard focus.
 - Interfaces must work with mouse, keyboard, and touch, with restrained motion and reduced-motion support.
+- Direct children of CSS multi-column masonry layouts remain transform-free. Hover feedback may change borders, shadows, colors, media scale, and nested controls, but must not transform or resize the column fragment itself because that destabilizes Chromium compositing and can make unrelated cards flicker.
 - Primary navigation remains in the top bar. Every detailed view has breadcrumbs. Every page has the ownership footer and Page notes sidebar.
 - The site remains static, uses relative paths, preserves `CNAME`, and deploys through GitHub Pages at `magiarchy.bekulov.com`.
 - No em dash may appear in repository-managed site content.

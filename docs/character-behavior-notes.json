@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-02",
+  "updated": "2026-09-03",
   "sections": [
     {
       "id": "river-operation",
@@ -20,6 +20,10 @@
     {
       "id": "academy-crisis",
       "title": "The Academy crisis"
+    },
+    {
+      "id": "cardiff-venture",
+      "title": "The Cardiff venture"
     }
   ],
   "notes": [
@@ -250,7 +254,29 @@
       "text": "Kyrien's usefulness inside the Academy should come from seeing an ordinary operational pattern that trained Magi dismiss because they are looking for a magecraft explanation. His outsider status must also cost him: he cannot read magical danger directly and needs Myka or Natalia to interpret what his field instincts expose.",
       "chapters": [],
       "moments": ["terrors-inside-the-academy"],
-      "momentFact": { "terrors-inside-the-academy": 4 }
+      "momentFact": { "terrors-inside-the-academy": 9 }
+    },
+    {
+      "id": "cardiff-mikhail-capability",
+      "section": "cardiff-venture",
+      "kind": "male",
+      "title": "Father Mikhail",
+      "basis": "XNJ lean, Church special envoy and confirmed counter-Magus field operative",
+      "text": "Mikhail's capability is strongest when the reader learns it through the decisions that keep him alive, not through a summary of techniques. Solitary endurance should expose what his Church training asks him to sacrifice, while at least one successful choice should become the reason Lynleit cannot dismiss his method as simple cruelty.",
+      "chapters": [],
+      "moments": ["father-mikhails-foreign-venture"],
+      "momentFact": { "father-mikhails-foreign-venture": 3 }
+    },
+    {
+      "id": "cardiff-moral-rift",
+      "section": "cardiff-venture",
+      "kind": "story",
+      "title": "Two effective methods",
+      "basis": "Nasu audit story-pressure suggestion",
+      "text": "The moral conflict should not make Lynleit naive or Mikhail a caricature. Each method needs to solve something the other cannot, and each needs a human cost the other recognizes. Their protection of one another remains professional and deliberate even while the disagreement makes later cooperation in Narvea harder.",
+      "chapters": [],
+      "moments": ["father-mikhails-foreign-venture"],
+      "momentFact": { "father-mikhails-foreign-venture": 8 }
     },
     {
       "id": "inheritance-jacket-form",

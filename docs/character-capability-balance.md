@@ -29,7 +29,6 @@ These questions define what each character can do, what they cannot do, and why 
 | Helena | Is Helena a Magus, what practical abilities support her takeover, and what weakness prevents political manipulation from making her self-sufficient? | 0% |
 | Fionn | What operational blind spots, physical limitations, magical costs, or personal dependencies make Fionn vulnerable despite his mastery? | 0% |
 | Lester | What can Lester's demiholumn nature actually do, what can it never do, what triggers it, and what cost or danger follows an impossible intervention? | 0% |
-| Father Mikhail | What political, intelligence, combat, or assassination specialization belongs to Father Mikhail, and where is he weaker than another special envoy? | 0% |
 | Son | Does Lynleit and Kyrien's son inherit the blue-flame lineage, another ability, or no Magus talent, and how would any inheritance remain balanced against both parents? | 0% |
 | Lynleit | Beyond passing MSF weapons certification, what level of firearms skill does Lynleit possess, and where does she remain dependent on Felix, Reiner, Kyrien, or another specialist? | 0% |
 | Items & Artefacts | What governs the leviathan-hide coat's autonomous forms, what counts as minor magical damage, can it refuse protection, and what prevents it from becoming a universal defence? | 0% |
@@ -42,6 +41,7 @@ These questions define what each character can do, what they cannot do, and why 
 | Heyk | Which skills survive the park massacre, which are damaged by trauma, and how does becoming Drake and Sherie's field agent change his strengths over time? | 30% |
 | Felix | What technical access, equipment, preparation, and failure conditions limit Felix's hacking and communications work? | 35% |
 | Reiner | How strong and durable is Reiner in practical terms, and what kinds of distance, deception, technology, or magecraft neutralize his direct approach? | 35% |
+| Father Mikhail | Which Church techniques let Mikhail survive several Magi threats alone in Cardiff, what preparation or cost do they require, and which threat can bypass them? | 35% |
 | Lynleit | After the confirmed underwater blue flame and fear-triggered water walking, how long can she sustain either effect, what bodily cost follows them, and what limits keep those abilities from replacing her allies' skills? | 45% |
 | Axis model | Should Analysis split into procedural verification and generative inference so Yulia and Hiyu's opposite investigative strengths are visible instead of receiving nearly identical scores under one label? | 40% |
 | Yulia and Hiyu | Which concrete park tasks require Yulia's procedural rigor, which require Hiyu's improvisation, and where does each method fail without the other? | 50% |
@@ -55,6 +55,6 @@ This table is limited to current profile claims or graph presentations that cann
 | --- | --- | --- |
 | Fionn | Fionn currently scores 80 or higher on every axis and reaches 98 in both Analysis and Magecraft, leaving no meaningful comparative weakness despite a story in which rivals isolate and eliminate him. | 0% |
 | Lester | Lester receives a Magecraft score of 91 even though his profile explicitly classifies demiholumn nature as inherent and not magecraft. | 0% |
-| Father Mikhail | Father Mikhail has exact comparative scores despite his special-envoy specialization and delegated practical abilities being entirely undefined. | 0% |
+| Father Mikhail | Cardiff establishes Mikhail as a formidable counter-Magus field operative, but the six-axis graph collapses Church countermeasures into ordinary Fieldcraft and Combat while correctly showing no magecraft. | 20% |
 | System-wide | Exact graph scores still look more authoritative than the underlying canon permits, although profiles now label the assessment and values as provisional and link directly to this balance ledger. | 30% |
 | Kyrien | Kyrien's graph now preserves clear limits below Tien's fieldcraft and combat while identifying competitiveness as an exploitable weakness, but it still presents his later intelligence mastery as a timeless value rather than a developed state. | 35% |

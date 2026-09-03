@@ -854,15 +854,15 @@
     "code": "MOM-018",
     "title": "Terrors Inside the Academy",
     "status": "Academy crisis",
-    "placementStatus": "Story placement provisional",
-    "timelinePhase": "the-real-mission",
-    "timelineLabel": "The Real Mission",
+    "placementStatus": "Arc 1 placement and concurrency confirmed, exact chapter sequence unresolved",
+    "timelinePhase": "divided-attention",
+    "timelineLabel": "Divided Attention",
     "sequence": 1,
     "sceneType": "Undercover intervention",
     "thread": "Myka's Academy ordeal",
     "location": "Magi Academy",
-    "summary": "Myka encounters terrors inside the Magi Academy and relies on Natalia for rescue and support. Lynleit eventually sends Kyrien into the Academy as an undercover helper.",
-    "purpose": "Places Myka's education under genuine supernatural pressure and gives Kyrien a mission inside an institution built around knowledge he does not possess.",
+    "summary": "While Lynleit is dispatched to Cardiff, she answers Natalia's request by sending Kyrien into the Magi Academy as Myka's undercover helper. The danger exceeds Lynleit's estimate and forces Natalia to intervene personally.",
+    "purpose": "Places Myka's education under genuine supernatural pressure, gives Kyrien a mission inside an institution built around knowledge he does not possess, and makes their first contact the foundation of Myka's later decision to join MSF.",
     "characters": [
       { "name": "Myka", "slug": "myka" },
       { "name": "Natalia", "slug": "natalia" },
@@ -878,9 +878,17 @@
     "known": [
       "Myka encounters terrors inside the Magi Academy.",
       "She relies on Natalia for rescue, advice, and support.",
-      "Natalia and Myka eventually become connected to Lynleit.",
-      "Lynleit agrees to send Kyrien into the Academy as an undercover helper.",
+      "Natalia asks Lynleit to help Myka.",
+      "Natalia was Lynleit's favourite teacher during Lynleit's Magi Academy years.",
+      "Lynleit cannot intervene personally because the Magiarchy and Church have dispatched her to Cardiff to assist Father Mikhail.",
+      "Lynleit sends Kyrien into the Academy as a substitute undercover helper.",
+      "Lynleit understates the threat and expects the assignment to help Kyrien understand the Magi world.",
       "Kyrien enters the operation as a non-Magus working inside a Magus institution.",
+      "The danger Kyrien and Myka encounter exceeds Lynleit's estimate.",
+      "Kyrien relies on conventional field skills and communications with Felix and Reiner to keep Myka safe.",
+      "Natalia is forced to intervene personally.",
+      "This is Myka's first exposure to Kyrien and MSF.",
+      "The experience contributes to Myka's later decision to join MSF after graduation.",
       {
         "text": "The danger persists inside an institution expected to understand magecraft, implying either concealed knowledge, a failure of classification, or a threat the Academy cannot acknowledge openly.",
         "status": "inferred"
@@ -888,15 +896,68 @@
     ],
     "openQuestions": [
       "What terrors does Myka encounter, and why can the Academy not resolve them through its own hierarchy?",
-      "How do Natalia and Myka reach Lynleit, and was Natalia previously one of Lynleit's professors?",
       "What cover, objective, and practical access allow Kyrien to operate inside the Academy?",
-      "Why does Lynleit choose Kyrien rather than a Magus or an established MSF officer?",
-      "Where does the crisis fall within Arc 1?"
+      "How does Kyrien communicate with Felix and Reiner without exposing the operation?",
+      "Which event forces Natalia to intervene personally?",
+      "How are the Academy crisis and the Cardiff venture divided across their parallel chapters?"
     ],
-    "continuityBefore": "Myka already relies on Natalia for ordinary academic advice and personal reassurance.",
-    "continuityAfter": "Surviving the Academy crisis contributes to the knowledge and strength with which Myka later graduates at the top of her class.",
+    "continuityBefore": "Myka already relies on Natalia for ordinary academic advice and personal reassurance. Natalia asks her former favourite student Lynleit for help shortly before Lynleit leaves for Cardiff.",
+    "continuityAfter": "Surviving the Academy crisis contributes to the knowledge and strength with which Myka later graduates at the top of her class. Her first experience with Kyrien and MSF gives her a personal reason to join the agency later.",
     "chapterSlug": null,
-    "updated": "2026-09-02"
+    "parallelWith": "father-mikhails-foreign-venture",
+    "updated": "2026-09-03"
+  },
+  {
+    "slug": "father-mikhails-foreign-venture",
+    "code": "MOM-020",
+    "title": "Father Mikhail's Foreign Venture",
+    "status": "Side-story sequence",
+    "placementStatus": "Arc 1 placement and concurrency confirmed, chapter sequence unresolved",
+    "timelinePhase": "divided-attention",
+    "timelineLabel": "Divided Attention",
+    "sequence": 2,
+    "sceneType": "Foreign special-envoy operation",
+    "thread": "Mikhail and Lynleit in Cardiff",
+    "location": "Cardiff, United Kingdom",
+    "summary": "Father Mikhail travels to Cardiff on special-envoy duty and is drawn into a life-and-death operation against several Magi threats. Lynleit is later sent abroad to assist him, without MSF or its conventional arsenal.",
+    "purpose": "Gives Mikhail a personal Arc 1 sequence that reveals his past, character, and ability as a Church warrior. His forced cooperation with Lynleit exposes a moral divide whose consequences return to the main story in Narvea.",
+    "characters": [
+      { "name": "Father Mikhail", "slug": "father-mikhail" },
+      { "name": "Lynleit", "slug": "lynleit" }
+    ],
+    "characterAnchors": [
+      { "slug": "father-mikhail", "beat": "The Cardiff Venture" },
+      { "slug": "lynleit", "beat": "Cardiff with Father Mikhail" }
+    ],
+    "known": [
+      "Father Mikhail travels to Cardiff to perform special-envoy duties for the Church.",
+      "The assignment develops into a life-and-death ordeal.",
+      "Mikhail faces several Magi threats alone before assistance reaches him.",
+      "He survives and defeats some of those threats, establishing him as a formidable Church warrior.",
+      "The venture reveals more of Mikhail's past, personality, and capabilities.",
+      "The Magiarchy and Church later request Lynleit's assistance in Cardiff.",
+      "Because Lynleit is abroad, she cannot rely on MSF or its conventional arsenal and must depend on her training as a Magus.",
+      "Lynleit and Mikhail continue to cooperate, fulfil their missions, and protect one another.",
+      "Their methods of solving the crisis are morally incompatible, and the rift between them grows during the operation.",
+      "Consequences from Cardiff later enter the main story in Narvea.",
+      {
+        "text": "The Academy crisis unfolds in Narvea during Lynleit's Cardiff dispatch, dividing her responsibilities between a mission she must perform herself and a danger she has delegated to Kyrien.",
+        "status": "inferred"
+      }
+    ],
+    "openQuestions": [
+      "What special-envoy duty brings Mikhail to Cardiff, and which event turns it into a life-and-death operation?",
+      "Which Magi threats does Mikhail face, and what Church techniques let him survive them alone?",
+      "What part of Mikhail's past is exposed by the operation?",
+      "Which specific method divides Lynleit and Mikhail morally while still requiring them to protect one another?",
+      "What consequence follows them from Cardiff into Narvea?",
+      "How many Chapters belong to the side story, and where do they alternate with the Academy operation?"
+    ],
+    "continuityBefore": "Mikhail already serves as a special envoy and has confronted Lynleit over forbidden knowledge. Natalia asks Lynleit to help Myka shortly before the foreign dispatch removes Lynleit from Narvea.",
+    "continuityAfter": "Lynleit and Mikhail return from a successful but morally divisive cooperation. The Academy crisis has meanwhile forced Kyrien, Myka, Felix, Reiner, and Natalia into their first shared operation.",
+    "chapterSlug": null,
+    "parallelWith": "terrors-inside-the-academy",
+    "updated": "2026-09-03"
   },
   {
     "slug": "myka-enters-msf",

@@ -29,7 +29,6 @@ Story, character, world, relationship, institution, location, and event question
 | Institutions | What evidence does each institution possess, and how do the Police, Magi Academy, private investigators, and MSF reach incompatible but rational interpretations of the same crisis? | 5% |
 | Lester | Who knows that Lester is a demiholumn, and which factions would classify him as person, specimen, heresy, weapon, or kin? | 5% |
 | Natalia | What kind of case does Natalia refuse, and what does that refusal reveal about her priorities? | 5% |
-| Natalia and Lynleit | Was Natalia one of Lynleit's professors, and what later contact lets Natalia and Myka ask her for covert help inside the Academy? | 5% |
 | Fionn and Helena | Was their marriage still physically intimate near Fionn's death, and what private moment best shows that bodily closeness could not repair the trust he withheld? | 5% |
 | Yulia and Hiyu | Which event makes either of them consciously recognize investigative dependence as desire, and who first names what is happening between them? | 5% |
 | Natalia and Lester | Which ordinary case interaction first makes Natalia respond to Lester as a man rather than an anomalous condition, and how does he recognize the change without forcing either of them to name it? | 5% |
@@ -50,11 +49,13 @@ Story, character, world, relationship, institution, location, and event question
 | Heyk | What evidence does Heyk carry out of the park that is personally undeniable but institutionally useless, and how does that contradiction push him toward Drake and Sherie? | 15% |
 | Private investigation | Which case first connects Natalia and Lester to the central story, and what separate half of its impossible phenomenon can each of them understand? | 15% |
 | Domestic thread | Beyond Lynleit, who in the household accepts or resists Ash the cat as a permanent resident, and how does his place in the house change after Fionn's death? | 15% |
+| Cardiff venture | What special-envoy duty takes Father Mikhail to Cardiff, which Magi threats turn it into a life-and-death operation, and what part of his past does the ordeal expose? | 15% |
+| Cardiff aftermath | Which morally incompatible method divides Lynleit and Mikhail, and what consequence from Cardiff later enters the main story in Narvea? | 15% |
 | Holumns | By what mechanism do Holumns make victims disappear, and at what stage should that mechanism be revealed separately from destination and return? | 20% |
 | Kyrien | What mostly true cover story conceals Kyrien's release and unofficial MSF role, and which single altered fact leads outsiders to the wrong conclusion? | 20% |
 | Core mystery | Which individually rational political and institutional pressures persuade Fionn to wait, and when does reasonable delay become his fatal mistake? | 20% |
 | Magi Academy | What is the Academy's normal admission and training hierarchy, and what knowledge gained during the terrors helps Myka graduate at the top of her class? | 20% |
-| Academy operation | What cover, access, and objective allow Kyrien to work undercover inside the Magi Academy, and why does Lynleit send a non-Magus instead of an established Magus officer? | 20% |
+| Parallel side stories | How many Chapters belong to the Cardiff venture and Academy crisis, and where should their concurrent events alternate inside Divided Attention? | 20% |
 | MSF operations | Which operation lets Felix solve the communications layer while Reiner solves the physical layer, proving why Lynleit values their knight-and-rook combination? | 20% |
 | MSF | What formal agreement makes a still-private MSF partly accountable to the Magiarchy and Church after Mikhail discovers the witness breach? | 20% |
 | Government | What exact jurisdiction gives the confirmed Council of State authority when ordinary constitutional sovereignty collides with hidden supernatural sovereignty? | 25% |
@@ -68,10 +69,12 @@ Story, character, world, relationship, institution, location, and event question
 | The Church | How can the Church and Magiarchy sincerely call the same suppression act salvation or murder, and what form must Church sanction take? | 35% |
 | Magiarchy | What formal rules govern fitness contests, duels, and sanctioned wars, and what exceptional conflict exposes values those rules never anticipated? | 35% |
 | Natalia | What single unanswered obsession drove Natalia out of the Academy, and which former students, colleagues, or obligations embody the costs of pursuing it? | 35% |
+| Natalia and Lynleit | What contact did Natalia and Lynleit preserve after the Academy, and how does Natalia ask her former favourite student to intervene without alerting Academy authorities? | 35% |
 | MSF | What morally impossible act by Helena turns the old officers' recognition of Lynleit's blue signal into coordinated action? | 35% |
 | Magiarchy | Who attempts to restore legitimacy after Church recognition fractures, and how do rival Magiarchates respond when no selection is mechanically clean? | 35% |
 | MSF | Which private contract first conflicts with Narvea's interests and exposes why MSF's confirmed freedom to accept non-government clients is dangerous? | 35% |
 | Helena | Which door does Helena knowingly open against Fionn, what outcome does she expect, and what enters the conspiracy beyond her knowledge or control? | 40% |
+| Academy operation | What cover, access, and objective allow Kyrien to work undercover inside the Magi Academy, and which secure communications route connects him with Felix and Reiner? | 40% |
 | Core mystery | Who is the first missing man, how does he independently cause the Spill, and which faction first recognizes and exploits the resulting crisis? | 45% |
 | Core mystery | Which incompatible agendas intend which outcomes around Fionn, and how do they accidentally cooperate to cause a death that none completely controls? | 45% |
 | Park trespass | How do Hiyu and Yulia bypass the cordon, what price do they pay to survive, and what evidence proves their experience while making their testimony harder to believe? | 45% |

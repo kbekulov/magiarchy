@@ -2667,19 +2667,21 @@ a {
   width: 100%;
   grid-template-columns: minmax(170px, 42%) 1fr;
   margin: 0 0 18px;
+  vertical-align: top;
   overflow: hidden;
   border: 1px solid var(--line);
   border-radius: var(--radius);
   background: var(--surface);
+  -webkit-column-break-inside: avoid;
+  page-break-inside: avoid;
   break-inside: avoid;
-  transition: transform .35s var(--ease), border-color .25s ease, box-shadow .35s var(--ease), opacity .2s ease;
+  transition: border-color .25s ease, box-shadow .35s var(--ease), opacity .2s ease;
 }
 
 .character-card:hover {
   z-index: 2;
   border-color: var(--line-bright);
   box-shadow: 0 16px 42px rgba(0,0,0,.24);
-  transform: translateY(-5px);
 }
 
 .character-card[hidden] { display: none; }
@@ -4192,19 +4194,21 @@ a.status-member:hover {
   display: inline-block;
   width: 100%;
   margin: 0 0 12px;
+  vertical-align: top;
   overflow: hidden;
   border: 1px solid rgba(0, 0, 0, .24);
   border-radius: 7px;
   background: #2b2d31;
+  -webkit-column-break-inside: avoid;
+  page-break-inside: avoid;
   break-inside: avoid;
   box-shadow: 0 1px 2px rgba(0, 0, 0, .13);
-  transition: transform .25s var(--ease), box-shadow .25s ease, border-color .2s ease;
+  transition: box-shadow .25s ease, border-color .2s ease;
 }
 
 .gallery-card:hover {
   border-color: #4e5058;
   box-shadow: 0 8px 24px rgba(0, 0, 0, .24);
-  transform: translateY(-2px);
 }
 
 .gallery-card[hidden] {
@@ -4288,7 +4292,10 @@ a.status-member:hover {
   display: inline-block;
   width: 100%;
   margin: 0 0 12px;
+  vertical-align: top;
   overflow: hidden;
+  -webkit-column-break-inside: avoid;
+  page-break-inside: avoid;
   break-inside: avoid;
   border: 1px solid rgba(0, 0, 0, .24);
   border-radius: 7px;
@@ -4505,21 +4512,38 @@ a.status-member:hover {
 }
 
 .document-card {
+  display: inline-block;
+  width: 100%;
   margin: 0 0 12px;
+  vertical-align: top;
   overflow: hidden;
+  -webkit-column-break-inside: avoid;
+  page-break-inside: avoid;
   break-inside: avoid;
   border: 1px solid rgba(0, 0, 0, .24);
   border-radius: 7px;
   background: #2b2d31;
   box-shadow: 0 1px 2px rgba(0, 0, 0, .12);
-  transition: transform .2s ease, border-color .2s ease, background .2s ease, box-shadow .2s ease;
+  transition: border-color .2s ease, background .2s ease, box-shadow .2s ease;
 }
 
 .document-card:hover {
   border-color: rgba(88, 101, 242, .32);
   background: #2e3035;
   box-shadow: 0 7px 20px rgba(0, 0, 0, .18);
-  transform: translateY(-2px);
+}
+
+/*
+ * Transforms on direct children of CSS multi-column layouts can produce
+ * unstable column-fragment compositing in Chromium. Keep masonry cards in the
+ * document layer while retaining hover feedback inside each stable fragment.
+ */
+.gallery-grid > .gallery-card.reveal,
+.music-card-grid > .music-card.reveal,
+.document-card-grid > .document-card.reveal,
+.character-grid > .character-card.reveal,
+.moment-card-grid > .moment-card.reveal {
+  transform: none;
 }
 
 .document-card-link {
@@ -5559,13 +5583,18 @@ a.status-member:hover {
 }
 
 .moment-card {
+  display: inline-block;
+  width: 100%;
   margin: 0 0 12px;
+  vertical-align: top;
   overflow: hidden;
+  -webkit-column-break-inside: avoid;
+  page-break-inside: avoid;
   break-inside: avoid;
   border: 1px solid rgba(0, 0, 0, .28);
   border-radius: 7px;
   background: #2b2d31;
-  transition: border-color .18s ease, background .18s ease, transform .18s ease;
+  transition: border-color .18s ease, background .18s ease;
 }
 
 .moment-card[hidden] {
@@ -7798,7 +7827,6 @@ a.moment-connection-card:hover {
   border-color: rgba(0, 0, 0, .3);
   background: #2e3035;
   box-shadow: 0 5px 14px rgba(0, 0, 0, .18);
-  transform: translateY(-2px);
 }
 
 .character-info {
@@ -10882,7 +10910,6 @@ a.equipment-card:focus-visible {
 .relationship-node.is-selected .relationship-node-avatar {
   border-color: #8993ff;
   box-shadow: 0 0 0 4px rgba(88, 101, 242, .14), 0 8px 18px rgba(0, 0, 0, .34);
-  transform: translateY(-2px);
 }
 
 .relationship-node:focus-visible {
