@@ -4554,7 +4554,8 @@ a.status-member:hover {
 .document-card-grid > *,
 .character-grid > *,
 .moment-card-grid > * {
-  transform: none;
+  opacity: 1 !important;
+  transform: none !important;
 }
 
 .document-card-link {
