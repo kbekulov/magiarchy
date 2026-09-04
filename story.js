@@ -11,6 +11,9 @@ const chapterError = document.querySelector('#chapter-error');
 const chapterCrumb = document.querySelector('#chapter-crumb');
 const chapterReaderCharacters = document.querySelector('#chapter-reader-characters');
 const chapterEventList = document.querySelector('#chapter-event-list');
+const chapterVersionSwitcher = document.querySelector('#chapter-version-switcher');
+const chapterVersionCurrent = document.querySelector('#chapter-version-current');
+const chapterVersionOptions = document.querySelector('#chapter-version-options');
 const timelineTrack = document.querySelector('.timeline-track');
 const storyPhases = window.MAGIARCHY_STORY_PHASES ?? [];
 
@@ -151,7 +154,50 @@ function createCharacterLabels(characters) {
   });
 }
 
+function chapterVersions(entry) {
+  if (Array.isArray(entry.versions) && entry.versions.length) {
+    return entry.versions.map((version, index) => ({
+      id: version.id || `v${index + 1}`,
+      label: version.label || `Version ${index + 1}`,
+      ...version
+    }));
+  }
+  return [{ id: 'v1', label: 'Version 1' }];
+}
+
+function resolveChapterVersion(entry, requestedVersion) {
+  const versions = chapterVersions(entry);
+  const fallbackId = entry.defaultVersion || versions[0].id;
+  const selected = versions.find((version) => version.id === requestedVersion)
+    || versions.find((version) => version.id === fallbackId)
+    || versions[0];
+  return {
+    ...entry,
+    ...selected,
+    versionId: selected.id,
+    versionLabel: selected.label,
+    versionCount: versions.length,
+    versionRecords: versions
+  };
+}
+
+function renderChapterVersionSwitcher(entry, selected) {
+  if (!chapterVersionSwitcher || !chapterVersionOptions || !chapterVersionCurrent) return;
+  const versions = chapterVersions(entry);
+  chapterVersionSwitcher.hidden = versions.length < 2;
+  chapterVersionCurrent.textContent = selected.versionLabel;
+  chapterVersionOptions.replaceChildren(...versions.map((version) => {
+    const link = document.createElement('a');
+    link.href = `story.html?chapter=${encodeURIComponent(entry.slug)}&version=${encodeURIComponent(version.id)}`;
+    link.textContent = version.label;
+    link.classList.toggle('is-active', version.id === selected.versionId);
+    if (version.id === selected.versionId) link.setAttribute('aria-current', 'page');
+    return link;
+  }));
+}
+
 function createChapterCard(entry) {
+  const resolved = resolveChapterVersion(entry);
   const card = document.createElement('article');
   card.className = 'document-card chapter-card reveal is-visible';
 
@@ -169,14 +215,14 @@ function createChapterCard(entry) {
 
   const status = document.createElement('span');
   status.className = 'document-card-code';
-  status.textContent = entry.status;
+  status.textContent = resolved.versionCount > 1 ? `${resolved.status} · ${resolved.versionCount} versions` : resolved.status;
   top.append(number, status);
 
   const title = document.createElement('h2');
   title.textContent = entry.title;
 
   const description = document.createElement('p');
-  description.textContent = entry.description;
+  description.textContent = resolved.description;
 
   const timelinePosition = document.createElement('div');
   timelinePosition.className = 'chapter-card-timeline';
@@ -196,7 +242,7 @@ function createChapterCard(entry) {
   const footer = document.createElement('div');
   footer.className = 'document-card-footer';
   const date = document.createElement('span');
-  date.textContent = `Updated ${entry.updated}`;
+  date.textContent = `Updated ${resolved.updated}`;
   const arrow = document.createElement('span');
   arrow.className = 'document-card-arrow';
   arrow.setAttribute('aria-hidden', 'true');
@@ -276,7 +322,8 @@ function setActiveTimelinePhase(entry) {
   });
 }
 
-async function loadChapter(entry) {
+async function loadChapter(entry, requestedVersion) {
+  const selected = resolveChapterVersion(entry, requestedVersion);
   document.body.classList.add('story-reader-open');
   chapterLibrary.hidden = true;
   storyHeading.hidden = true;
@@ -285,10 +332,10 @@ async function loadChapter(entry) {
   chapterError.hidden = true;
   chapterMeta.textContent = 'Loading chapter…';
   chapterCrumb.textContent = `${entry.number}: ${entry.title}`;
-  chapterStatus.textContent = entry.status;
-  chapterSummary.textContent = entry.description;
+  chapterStatus.textContent = selected.status;
+  chapterSummary.textContent = selected.description;
   chapterReaderCharacters.replaceChildren(...createCharacterLabels(entry.characters));
-  chapterEventList.replaceChildren(...(entry.events ?? []).map((event, index) => {
+  chapterEventList.replaceChildren(...(selected.events ?? []).map((event, index) => {
     const record = typeof event === 'string' ? { text: event, status: 'reader' } : event;
     const row = document.createElement('tr');
     row.className = record.status === 'inferred' ? 'is-inferred' : 'is-reader';
@@ -300,25 +347,26 @@ async function loadChapter(entry) {
     row.append(number, description);
     return row;
   }));
-  chapterSourceLink.href = `story/${entry.file}`;
-  setActiveTimelinePhase(entry);
+  chapterSourceLink.href = `story/${selected.file}`;
+  renderChapterVersionSwitcher(entry, selected);
+  setActiveTimelinePhase(selected);
 
   try {
-    const response = await fetch(`story/${entry.file}`);
+    const response = await fetch(`story/${selected.file}`);
     if (!response.ok) throw new Error(`Chapter request failed: ${response.status}`);
     const markdown = await response.text();
     chapterReader.append(renderChapterMarkdown(markdown));
     if (window.MAGIARCHY_BEHAVIOR_NOTES) {
       try {
         const registry = await window.MAGIARCHY_BEHAVIOR_NOTES.load();
-        const notes = window.MAGIARCHY_BEHAVIOR_NOTES.forChapter(registry, entry.slug);
+        const notes = window.MAGIARCHY_BEHAVIOR_NOTES.forChapter(registry, entry.slug, selected.versionId);
         window.MAGIARCHY_BEHAVIOR_NOTES.attachToChapter(chapterReader, notes);
       } catch (error) {
         console.warn('Chapter behaviour guidance could not be loaded.', error);
       }
     }
-    chapterMeta.textContent = `${entry.number} · ${entry.characters.join(' / ')} · Updated ${entry.updated}`;
-    document.title = `${entry.title} - Story - Magiarchy`;
+    chapterMeta.textContent = `${entry.number} · ${selected.versionLabel} · ${entry.characters.join(' / ')} · Updated ${selected.updated}`;
+    document.title = `${entry.title} · ${selected.versionLabel} - Story - Magiarchy`;
   } catch (error) {
     chapterMeta.textContent = 'Chapter unavailable';
     chapterError.hidden = false;
@@ -335,9 +383,11 @@ async function initializeStory() {
     const entries = await response.json();
     if (!Array.isArray(entries) || entries.length === 0) throw new Error('Chapter catalog is empty');
 
-    const requestedSlug = new URLSearchParams(window.location.search).get('chapter');
+    const parameters = new URLSearchParams(window.location.search);
+    const requestedSlug = parameters.get('chapter');
+    const requestedVersion = parameters.get('version');
     const selectedEntry = entries.find((entry) => entry.slug === requestedSlug);
-    if (selectedEntry) await loadChapter(selectedEntry);
+    if (selectedEntry) await loadChapter(selectedEntry, requestedVersion);
     else showChapterLibrary(entries);
   } catch (error) {
     chapterCardGrid.replaceChildren();

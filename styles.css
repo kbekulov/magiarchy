@@ -6103,6 +6103,94 @@ a.moment-connection-card:hover {
   padding: 0 30px 50px;
 }
 
+.record-version-switcher {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  width: min(900px, 100%);
+  margin: 0 auto 14px;
+  padding: 12px 14px;
+  border: 1px solid #3b3d43;
+  border-radius: 7px;
+  background: #26272b;
+}
+
+.record-version-switcher[hidden] {
+  display: none;
+}
+
+.moment-reader .record-version-switcher {
+  width: 100%;
+}
+
+.record-version-switcher > div:first-child {
+  display: grid;
+  gap: 3px;
+}
+
+.record-version-switcher small {
+  color: #9297a1;
+  font-size: .5rem;
+  font-weight: 800;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+
+.record-version-switcher strong {
+  color: #f2f3f5;
+  font-size: .68rem;
+}
+
+.record-version-switcher > div:last-child {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 6px;
+}
+
+.record-version-switcher a {
+  padding: 7px 11px;
+  border: 1px solid #404249;
+  border-radius: 5px;
+  background: #1e1f22;
+  color: #b5bac1;
+  font-size: .58rem;
+  font-weight: 750;
+  text-decoration: none;
+}
+
+.record-version-switcher a:hover,
+.record-version-switcher a:focus-visible {
+  border-color: #6973dc;
+  background: #303239;
+  color: #f2f3f5;
+}
+
+.record-version-switcher a.is-active {
+  border-color: #7780ed;
+  background: #5865f2;
+  color: #ffffff;
+}
+
+@media (max-width: 620px) {
+  .record-version-switcher {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .record-version-switcher > div:last-child {
+    justify-content: flex-start;
+    width: 100%;
+  }
+
+  .record-version-switcher a {
+    flex: 1 1 0;
+    text-align: center;
+  }
+}
+
 .document-breadcrumbs {
   display: flex;
   align-items: center;

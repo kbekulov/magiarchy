@@ -1040,10 +1040,12 @@ async function loadCharacterMoments(profile, timeline) {
     const section = document.querySelector('#character-moments-section');
     const grid = document.querySelector('#character-moment-grid');
     const cards = related.map((entry) => {
+      const versionCount = Array.isArray(entry.versions) && entry.versions.length ? entry.versions.length : 1;
+      const versionLabel = versionCount > 1 ? ` · ${versionCount} versions` : '';
       const link = createElement('a', 'character-moment-card');
       link.href = `moments.html?moment=${encodeURIComponent(entry.slug)}`;
       const top = createElement('div');
-      top.append(createElement('span', '', entry.code), createElement('small', '', entry.timelineLabel));
+      top.append(createElement('span', '', entry.code), createElement('small', '', `${entry.timelineLabel}${versionLabel}`));
       link.append(top, createElement('h3', '', entry.title), createElement('p', '', entry.summary), createElement('strong', '', 'Open Moment →'));
       return link;
     });
@@ -1059,7 +1061,9 @@ async function loadCharacterMoments(profile, timeline) {
         anchorList = createElement('div', 'character-timeline-moments');
         timelineItem.querySelector(':scope > div').append(anchorList);
       }
-      const link = createElement('a', '', `${entry.code} · ${entry.title}`);
+      const versionCount = Array.isArray(entry.versions) && entry.versions.length ? entry.versions.length : 1;
+      const versionLabel = versionCount > 1 ? ` · ${versionCount} versions` : '';
+      const link = createElement('a', '', `${entry.code} · ${entry.title}${versionLabel}`);
       link.href = `moments.html?moment=${encodeURIComponent(entry.slug)}`;
       anchorList.append(link);
       timelineItem.classList.add('has-moments');

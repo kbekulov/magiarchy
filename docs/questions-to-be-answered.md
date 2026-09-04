@@ -16,6 +16,7 @@ Story, character, world, relationship, institution, location, and event question
 | Holumn incident HI-005 | What conditions admit a visitor to the Nameless Street, what are the girl and dead boy, and why does Lynleit return after following the lure? | 0% |
 | Holumn incident HI-006 | What identity, appearance, and history belong to the Holumn that Lynleit and Kyrien destroy before its terminal condition transfers to them? | 0% |
 | Doom Has an Address | What operation brings Lynleit and Kyrien to the Holumn, where does the final confrontation occur, and what evidence lets them understand that destroying it caused their decline? | 0% |
+| Doom Has an Address V2 | If Version 2 becomes canon, which later encounter becomes Lynleit and Kyrien's first completed sexual threshold, and how does it connect to their subsequent relationship and the Arc 2 pregnancy chronology? | 0% |
 | Holumns | Can any victim taken by a Holumn return, and what would return mean for the person's identity? | 0% |
 | Lester | How did Lester become a demiholumn, and what metaphysical answer about his human and Holumn conditions would most threaten his sense of self? | 0% |
 | Location | What emotional or thematic role will Narvea's western gateway serve before Port City receives its proper name? | 0% |

@@ -20,8 +20,8 @@ Before beginning ordinary work, inspect `backlog/` for author-supplied `*.txt` f
 | --- | --- | --- |
 | Characters | `character.js` | Character catalog, profile, timeline, connections, global search |
 | Character artwork | `media/gallery/images/` plus Gallery metadata | Gallery, character card or portrait where approved, with explicit Arc metadata for era-specific art |
-| Chapters | `story/*.md` and `story/index.json` | Story catalog, chapter reader, preface table, Story phase, involved profiles, global search |
-| Moments | `moments/index.json` | Moment catalog and reader, Story phase, involved profiles, assigned Chapter, global search |
+| Chapters | `story/*.md` and `story/index.json` | Story catalog, chapter reader, version switcher, preface table, Story phase, involved profiles, global search |
+| Moments | `moments/index.json` | Moment catalog and reader, version switcher, Story phase, involved profiles, assigned Chapter, global search |
 | Story arcs and phases | `story-phases.js` | Story timeline, Moments timeline, Chapter placement and reveal timing |
 | World institutions and places | Dedicated page and owning data file where present | World index and submenu, entity links, global search |
 | Holumn evidence | `holumns/index.json` | Holumns World synthesis and `docs/holumn-incidents-and-testimonies.md` |
@@ -60,6 +60,8 @@ Every Chapter must have:
 - a preface table whose rows are marked as shown or stated, or left for the reader to infer;
 - links to assigned Moments and involved character timelines;
 - F, M, or S paragraph markers where the behavior registry contains relevant guidance.
+
+Alternate Chapters and Moments use ordered `versions` records with one explicit `defaultVersion`. Each Chapter version has its own Markdown file, and each versioned Moment points to the matching Chapter version. Reader switchers and global search expose direct version links. Shared character, Holumn, intimacy, and chronology records continue to follow the default version until the author selects another. Differences that cannot coexist belong in the contradictions ledger and must name every shared record that currently follows one outcome.
 
 Every Moment must have:
 

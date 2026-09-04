@@ -1107,6 +1107,55 @@
     "continuityBefore": "Lynleit and Kyrien have accumulated a private rhythm through work, cards, protected secrets, voluntary loyalty, and repeated physical awareness. Her original authority over him has already lost practical force, and he has chosen to remain.",
     "continuityAfter": "The curse fractures and both survive. Their short sexual relationship becomes part of an emerging shared life before Lynleit disappears near the Arc 2 threshold and her pregnancy becomes legible only at the opening of the next arc.",
     "chapterSlug": "doom-has-an-address",
-    "updated": "2026-09-04"
+    "updated": "2026-09-04",
+    "defaultVersion": "v1",
+    "versions": [
+      {
+        "id": "v1",
+        "label": "Version 1",
+        "chapterVersion": "v1",
+        "updated": "2026-09-04"
+      },
+      {
+        "id": "v2",
+        "label": "Version 2",
+        "chapterVersion": "v2",
+        "updated": "2026-09-04",
+        "summary": "After Lynleit and Kyrien inherit one terminal curse across both identities, Lynleit pursues identity transformation as an alternative to death. An incomplete attempt at intimacy is followed by the curse's collapse, while neither person fully understands what changed between them.",
+        "purpose": "Retains the identity-bound Holumn mechanism while postponing the pair's completed sexual threshold. Survival follows a failed or incomplete encounter, leaving Lynleit's newly unprotected desire and Kyrien's incomplete understanding active after the immediate threat ends.",
+        "known": [
+          "Lynleit and Kyrien consciously destroy the same Holumn together.",
+          "Destroying the Holumn completes its mechanism and transfers its terminal condition to the ego responsible for its death.",
+          "Their joint action leaves one curse distributed across two identities rather than creating two separate curses.",
+          "Their bodies weaken, sleep stops restoring them, minor injuries heal slowly, magical tolerance declines, and ordinary exertion becomes increasingly difficult.",
+          "Suppressing the condition in either person fails because the remaining attachment reconstructs it in the other.",
+          "The traditional solution requires one of them to die first, collapsing the relation and releasing the survivor.",
+          "Lynleit refuses to choose which of them should live and searches Magiarchal records, medicine, prohibited theurgy, Natalia's research, and Church records for another answer.",
+          "Natalia identifies the curse as an attachment to conscious identity and explains that profound transformation may make the original ego unrecognizable to it.",
+          "Father Mikhail independently confirms that conversion, marriage, war, parenthood, confession, and other identity-changing experiences have disrupted related curses.",
+          "Mikhail tells Lynleit that sex could produce the necessary discontinuity only if a sufficient reciprocal attachment already exists.",
+          "Lynleit does not tell Kyrien about the proposed method and gradually begins treating their relationship as a possible procedure.",
+          "With the prognosis reduced to days, Lynleit attempts to initiate an encounter while behaving with unusual hostility and embarrassment.",
+          "The attempt does not fully cross the boundary between them, but the curse begins weakening the following morning and is later gone.",
+          "Natalia's later questions expose Lynleit's disappointment that the disappearance of the medical reason has not removed her interest in Kyrien.",
+          "Kyrien knows Lynleit tried to sleep with him, refused to explain why, and became hostile whenever he mentioned the evening.",
+          "Kyrien recognizes a connection between that attempt and the weakening curse but lacks enough information to model it.",
+          "The account identifies changes in Kyrien's understanding of private vulnerability and Lynleit's understanding of another person entering her solutions as the discontinuities that release them.",
+          {
+            "text": "The closing word 'mostly' leaves the exact physical boundary crossed that evening and the later timing of their first completed encounter for the reader to infer.",
+            "status": "inferred"
+          }
+        ],
+        "openQuestions": [
+          "What identity, appearance, and prior incident history belong to the Holumn before Lynleit and Kyrien destroy it?",
+          "What operation places them in position to destroy it together?",
+          "Which Magi first identify the traditional one-death solution, and how much of the prognosis becomes known outside the four people in this scene?",
+          "What exactly occurs during Lynleit's incomplete attempt, and what does the final qualification 'mostly' exclude?",
+          "Why does an incomplete crossing alter both identities enough to release the curse?",
+          "Which later encounter becomes Lynleit and Kyrien's first completed sexual threshold?"
+        ],
+        "continuityAfter": "The curse disappears and both survive, but the sexual boundary remains mostly uncrossed. Lynleit is left without a medical justification for her continued interest, while Kyrien has only disconnected facts. Their first completed encounter must occur later in Arc 1 before the relationship and pregnancy chronology already associated with the Arc 2 threshold."
+      }
+    ]
   }
 ]

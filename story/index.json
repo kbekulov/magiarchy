@@ -167,6 +167,43 @@
         "text": "Their survival leaves the reader to infer which parts of their former self-conceptions have ended and how that change will shape the life they begin to share before Lynleit's disappearance.",
         "status": "inferred"
       }
+    ],
+    "defaultVersion": "v1",
+    "versions": [
+      {
+        "id": "v1",
+        "label": "Version 1",
+        "status": "Author text",
+        "file": "doom-has-an-address.md",
+        "updated": "2026-09-04"
+      },
+      {
+        "id": "v2",
+        "label": "Version 2",
+        "status": "Author text",
+        "file": "doom-has-an-address-v2.md",
+        "updated": "2026-09-04",
+        "description": "After Lynleit and Kyrien inherit one fatal curse across both identities, an incomplete attempt at intimacy is followed by the curse's collapse and leaves the exact threshold of their transformation unresolved.",
+        "events": [
+          "Lynleit and Kyrien destroy a Holumn together and complete the final condition of its mechanism.",
+          "The Holumn transfers one terminal curse across both identities, causing progressive physical decline and a prognosis measured first in weeks and then in days.",
+          "Suppressing the curse in either person fails because the remaining attachment reconstructs it in the other.",
+          "The traditional solution requires one of them to die first so the surviving identity is released.",
+          "Lynleit rejects that answer and searches Magiarchal, medical, theurgical, academic, and Church records for another form of identity discontinuity.",
+          "Natalia identifies the attachment as sympathetic recognition of the ego and proposes profound reciprocal transformation as a possible alternative to death.",
+          "Father Mikhail reaches the same conclusion through Church records and tells Lynleit that physical intimacy could work only if an existing attachment changes both identities.",
+          "Lynleit withholds the proposed method from Kyrien and investigates their relationship as a possible procedure.",
+          "Lynleit attempts to initiate an encounter but does not fully cross the boundary between them.",
+          "The curse begins weakening the following morning and is later gone.",
+          "Natalia's questions force Lynleit to confront disappointment now that survival no longer provides a reason to try again.",
+          "Kyrien knows about Lynleit's attempt, her refusal to explain it, and the curse's decline, but lacks enough information to connect them.",
+          "The account identifies Kyrien's lost certainty that vulnerability can remain private and Lynleit's lost certainty that another person can enter a solution without changing her as the discontinuities that satisfy the curse.",
+          {
+            "text": "The statement that the boundary remained uncrossed 'mostly' leaves the physical extent of the attempt and the timing of their first completed encounter for the reader to infer.",
+            "status": "inferred"
+          }
+        ]
+      }
     ]
   }
 ]

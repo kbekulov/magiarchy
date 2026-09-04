@@ -9,6 +9,9 @@ const momentPhaseFilter = document.querySelector('#moment-phase-filter');
 const momentCharacterFilter = document.querySelector('#moment-character-filter');
 const momentTypeFilter = document.querySelector('#moment-type-filter');
 const momentPhaseTrack = document.querySelector('#moment-phase-track');
+const momentVersionSwitcher = document.querySelector('#moment-version-switcher');
+const momentVersionCurrent = document.querySelector('#moment-version-current');
+const momentVersionOptions = document.querySelector('#moment-version-options');
 const storyPhases = window.MAGIARCHY_STORY_PHASES ?? [];
 
 function momentElement(tagName, className, text) {
@@ -71,6 +74,46 @@ function characterNames(entry) {
   return entry.characters.map((character) => character.name);
 }
 
+function momentVersions(entry) {
+  if (Array.isArray(entry.versions) && entry.versions.length) {
+    return entry.versions.map((version, index) => ({
+      id: version.id || `v${index + 1}`,
+      label: version.label || `Version ${index + 1}`,
+      ...version
+    }));
+  }
+  return [{ id: 'v1', label: 'Version 1' }];
+}
+
+function resolveMomentVersion(entry, requestedVersion) {
+  const versions = momentVersions(entry);
+  const fallbackId = entry.defaultVersion || versions[0].id;
+  const selected = versions.find((version) => version.id === requestedVersion)
+    || versions.find((version) => version.id === fallbackId)
+    || versions[0];
+  return {
+    ...entry,
+    ...selected,
+    versionId: selected.id,
+    versionLabel: selected.label,
+    versionCount: versions.length,
+    versionRecords: versions
+  };
+}
+
+function renderMomentVersionSwitcher(entry, selected) {
+  if (!momentVersionSwitcher || !momentVersionOptions || !momentVersionCurrent) return;
+  const versions = momentVersions(entry);
+  momentVersionSwitcher.hidden = versions.length < 2;
+  momentVersionCurrent.textContent = selected.versionLabel;
+  momentVersionOptions.replaceChildren(...versions.map((version) => {
+    const link = momentElement('a', version.id === selected.versionId ? 'is-active' : '', version.label);
+    link.href = `moments.html?moment=${encodeURIComponent(entry.slug)}&version=${encodeURIComponent(version.id)}`;
+    if (version.id === selected.versionId) link.setAttribute('aria-current', 'page');
+    return link;
+  }));
+}
+
 function phaseOrder(phaseId) {
   const index = storyPhases.findIndex((phase) => phase.id === phaseId);
   return index === -1 ? Number.MAX_SAFE_INTEGER : index;
@@ -131,6 +174,7 @@ function renderMomentFilters(entries) {
 }
 
 function createMomentCard(entry) {
+  entry = resolveMomentVersion(entry);
   const card = momentElement('article', 'moment-card');
   card.dataset.phase = entry.timelinePhase;
   const phase = storyPhases.find((candidate) => candidate.id === entry.timelinePhase);
@@ -143,7 +187,8 @@ function createMomentCard(entry) {
   link.setAttribute('aria-label', `Open ${entry.title}`);
 
   const top = momentElement('div', 'moment-card-top');
-  top.append(momentElement('span', 'moment-code', entry.code), momentElement('span', 'moment-status', entry.status));
+  const status = entry.versionCount > 1 ? `${entry.status} · ${entry.versionCount} versions` : entry.status;
+  top.append(momentElement('span', 'moment-code', entry.code), momentElement('span', 'moment-status', status));
   link.append(top, momentElement('h3', '', entry.title), momentElement('p', 'moment-card-summary', entry.summary));
 
   const position = momentElement('div', 'moment-card-position');
@@ -237,30 +282,32 @@ function createConnectionCard(label, title, detail, href) {
   return element;
 }
 
-async function renderMomentReader(entry, entries) {
+async function renderMomentReader(entry, entries, requestedVersion) {
+  const selected = resolveMomentVersion(entry, requestedVersion);
   momentsCatalogView.hidden = true;
   momentReader.hidden = false;
-  document.querySelector('#moment-crumb').textContent = entry.title;
-  document.querySelector('#moment-code').textContent = entry.code;
-  document.querySelector('#moment-placement-status').textContent = entry.placementStatus;
-  document.querySelector('#moment-scene-type').textContent = entry.sceneType;
-  document.querySelector('#moment-reader-title').textContent = entry.title;
-  document.querySelector('#moment-reader-summary').textContent = entry.summary;
-  document.querySelector('#moment-purpose-label').textContent = entry.sceneType;
-  document.querySelector('#moment-thread').textContent = entry.thread;
-  document.querySelector('#moment-location').textContent = entry.location;
-  document.querySelector('#moment-date').textContent = `Updated ${entry.updated}`;
-  const phase = storyPhases.find((candidate) => candidate.id === entry.timelinePhase);
-  const phaseLabel = `${phase?.arcLabel ?? 'Arc unassigned'} · ${entry.timelineLabel}`;
+  document.querySelector('#moment-crumb').textContent = selected.title;
+  document.querySelector('#moment-code').textContent = selected.code;
+  document.querySelector('#moment-placement-status').textContent = selected.placementStatus;
+  document.querySelector('#moment-scene-type').textContent = selected.sceneType;
+  document.querySelector('#moment-reader-title').textContent = selected.title;
+  document.querySelector('#moment-reader-summary').textContent = selected.summary;
+  document.querySelector('#moment-purpose-label').textContent = selected.sceneType;
+  document.querySelector('#moment-thread').textContent = selected.thread;
+  document.querySelector('#moment-location').textContent = selected.location;
+  document.querySelector('#moment-date').textContent = `Updated ${selected.updated}`;
+  const phase = storyPhases.find((candidate) => candidate.id === selected.timelinePhase);
+  const phaseLabel = `${phase?.arcLabel ?? 'Arc unassigned'} · ${selected.timelineLabel}`;
   document.querySelector('#moment-phase-name').textContent = phaseLabel;
-  document.querySelector('#moment-story-link').href = `story.html?phase=${encodeURIComponent(entry.timelinePhase)}`;
-  document.querySelector('#moment-before').textContent = entry.continuityBefore;
-  document.querySelector('#moment-purpose').textContent = entry.purpose;
-  document.querySelector('#moment-after').textContent = entry.continuityAfter;
-  populateList('#moment-known', entry.known, { factStatus: true });
+  document.querySelector('#moment-story-link').href = `story.html?phase=${encodeURIComponent(selected.timelinePhase)}`;
+  document.querySelector('#moment-before').textContent = selected.continuityBefore;
+  document.querySelector('#moment-purpose').textContent = selected.purpose;
+  document.querySelector('#moment-after').textContent = selected.continuityAfter;
+  populateList('#moment-known', selected.known, { factStatus: true });
+  renderMomentVersionSwitcher(entry, selected);
 
-  const characterLinks = entry.characters.length
-    ? entry.characters.map((character) => {
+  const characterLinks = selected.characters.length
+    ? selected.characters.map((character) => {
       const link = momentElement('a', '', character.name);
       link.href = `character.html?character=${encodeURIComponent(character.slug)}`;
       return link;
@@ -269,17 +316,20 @@ async function renderMomentReader(entry, entries) {
   document.querySelector('#moment-reader-characters').replaceChildren(...characterLinks);
 
   const connections = [
-    createConnectionCard('Overall Story', phaseLabel, entry.placementStatus, `story.html?phase=${encodeURIComponent(entry.timelinePhase)}`),
-    ...entry.characters.map((character) => createConnectionCard('Character timeline', character.name, 'This Moment is anchored to the character\'s personal chronology.', `character.html?character=${encodeURIComponent(character.slug)}`))
+    createConnectionCard('Overall Story', phaseLabel, selected.placementStatus, `story.html?phase=${encodeURIComponent(selected.timelinePhase)}`),
+    ...selected.characters.map((character) => createConnectionCard('Character timeline', character.name, 'This Moment is anchored to the character\'s personal chronology.', `character.html?character=${encodeURIComponent(character.slug)}`))
   ];
-  if (entry.chapterSlug) connections.push(createConnectionCard('Chapter', 'Assigned chapter', 'Open the chapter containing this Moment.', `story.html?chapter=${encodeURIComponent(entry.chapterSlug)}`));
+  if (selected.chapterSlug) {
+    const chapterVersion = selected.chapterVersion ? `&version=${encodeURIComponent(selected.chapterVersion)}` : '';
+    connections.push(createConnectionCard('Chapter', `Assigned chapter · ${selected.versionLabel}`, 'Open the corresponding version of the chapter containing this Moment.', `story.html?chapter=${encodeURIComponent(selected.chapterSlug)}${chapterVersion}`));
+  }
   else connections.push(createConnectionCard('Chapter', 'Not assigned yet', 'This scene can remain stable while the chapter around it is still unwritten.'));
   document.querySelector('#moment-connection-grid').replaceChildren(...connections);
 
   if (window.MAGIARCHY_BEHAVIOR_NOTES) {
     try {
       const registry = await window.MAGIARCHY_BEHAVIOR_NOTES.load();
-      const notes = window.MAGIARCHY_BEHAVIOR_NOTES.forMoment(registry, entry.slug);
+      const notes = window.MAGIARCHY_BEHAVIOR_NOTES.forMoment(registry, entry.slug, selected.versionId);
       window.MAGIARCHY_BEHAVIOR_NOTES.attachToMoment(document.querySelector('#moment-known'), entry.slug, notes);
     } catch (error) {
       console.warn('Moment behaviour guidance could not be loaded.', error);
@@ -304,7 +354,7 @@ async function renderMomentReader(entry, entries) {
     neighbors.push(link);
   }
   document.querySelector('#moment-neighbors').replaceChildren(...neighbors);
-  document.title = `${entry.title} - Moments - Magiarchy`;
+  document.title = `${selected.title} · ${selected.versionLabel} - Moments - Magiarchy`;
 }
 
 async function initializeMoments() {
@@ -313,7 +363,9 @@ async function initializeMoments() {
     if (!response.ok) throw new Error(`Moment catalog request failed: ${response.status}`);
     const entries = await response.json();
     if (!Array.isArray(entries) || entries.length === 0) throw new Error('Moment catalog is empty');
-    const requestedMoment = new URLSearchParams(window.location.search).get('moment');
+    const parameters = new URLSearchParams(window.location.search);
+    const requestedMoment = parameters.get('moment');
+    const requestedVersion = parameters.get('version');
     if (requestedMoment) {
       const selected = entries.find((entry) => entry.slug === requestedMoment);
       if (!selected) {
@@ -321,7 +373,7 @@ async function initializeMoments() {
         momentError.hidden = false;
         return;
       }
-      await renderMomentReader(selected, entries);
+      await renderMomentReader(selected, entries, requestedVersion);
       return;
     }
     renderMomentCatalog(entries);

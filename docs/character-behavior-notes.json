@@ -314,6 +314,7 @@
       "chapterMatch": "She refuses to accept a system whose only solution",
       "chapters": ["doom-has-an-address"],
       "moments": ["doom-has-an-address"],
+      "versions": ["v1", "v2"],
       "momentFact": { "doom-has-an-address": 6 }
     },
     {
@@ -326,6 +327,7 @@
       "chapterMatch": "Kyrien is surprised rather than overwhelmed.",
       "chapters": ["doom-has-an-address"],
       "moments": ["doom-has-an-address"],
+      "versions": ["v1"],
       "momentFact": { "doom-has-an-address": 12 }
     },
     {
@@ -338,6 +340,7 @@
       "chapterMatch": "Natalia was silent long enough that Lynleit checked the connection.",
       "chapters": ["doom-has-an-address"],
       "moments": ["doom-has-an-address"],
+      "versions": ["v1", "v2"],
       "momentFact": { "doom-has-an-address": 7 }
     },
     {
@@ -350,6 +353,7 @@
       "chapterMatch": "The priest appears to consider several centuries of theology.",
       "chapters": ["doom-has-an-address"],
       "moments": ["doom-has-an-address"],
+      "versions": ["v1", "v2"],
       "momentFact": { "doom-has-an-address": 9 }
     },
     {
@@ -362,7 +366,47 @@
       "chapterMatch": "Sex did not cure them.",
       "chapters": ["doom-has-an-address"],
       "moments": ["doom-has-an-address"],
+      "versions": ["v1"],
       "momentFact": { "doom-has-an-address": 14 }
+    },
+    {
+      "id": "doom-v2-lynleit-aftermath",
+      "section": "doom-address",
+      "kind": "female",
+      "title": "Lynleit after the failed attempt",
+      "basis": "Version 2 behavior, ENFJ with strong Ni and private embarrassment",
+      "text": "Lynleit tries to close the subject as soon as survival removes its operational justification. Her repeated denials and the unread page show that desire remains present even when she has no procedure through which to defend it. This is personal evasion under embarrassment, not a retreat from openness as a general leadership practice.",
+      "chapterMatch": "There will not be another attempt.",
+      "chapters": ["doom-has-an-address"],
+      "moments": ["doom-has-an-address"],
+      "versions": ["v2"],
+      "momentFact": { "doom-has-an-address": 13 }
+    },
+    {
+      "id": "doom-v2-kyrien-model",
+      "section": "doom-address",
+      "kind": "male",
+      "title": "Kyrien without the missing premise",
+      "basis": "Version 2 behavior, ISTP lean and Ti-led observation",
+      "text": "Kyrien identifies the relevant facts but cannot complete the model because Lynleit controls the missing premise. His irritation belongs to failed analysis rather than wounded pride. He continues observing instead of demanding the confession that would resolve the pattern for him.",
+      "chapterMatch": "There is a connection between these facts.",
+      "chapters": ["doom-has-an-address"],
+      "moments": ["doom-has-an-address"],
+      "versions": ["v2"],
+      "momentFact": { "doom-has-an-address": 15 }
+    },
+    {
+      "id": "doom-v2-transformation-rule",
+      "section": "doom-address",
+      "kind": "story",
+      "title": "Transformation before completion",
+      "basis": "Version 2 mechanism",
+      "text": "Version 2 makes the attempted crossing and its aftermath sufficient to change both identities even though the sexual boundary remains mostly uncrossed. This creates a different supernatural threshold from Version 1 and must remain version-specific until the author chooses which mechanism governs shared canon.",
+      "chapterMatch": "Those people no longer existed in precisely the same form.",
+      "chapters": ["doom-has-an-address"],
+      "moments": ["doom-has-an-address"],
+      "versions": ["v2"],
+      "momentFact": { "doom-has-an-address": 16 }
     }
   ]
 }

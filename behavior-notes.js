@@ -65,8 +65,12 @@
     container.replaceChildren(...notes.map(createNote));
   }
 
-  function notesFor(registry, field, slug) {
-    return registry.notes.filter((note) => Array.isArray(note[field]) && note[field].includes(slug));
+  function notesFor(registry, field, slug, versionId) {
+    return registry.notes.filter((note) => {
+      const matchesRecord = Array.isArray(note[field]) && note[field].includes(slug);
+      const matchesVersion = !Array.isArray(note.versions) || !note.versions.length || note.versions.includes(versionId);
+      return matchesRecord && matchesVersion;
+    });
   }
 
   function ensureTooltip() {
@@ -238,7 +242,7 @@
     renderNotes,
     attachToChapter,
     attachToMoment,
-    forChapter: (registry, slug) => notesFor(registry, 'chapters', slug),
-    forMoment: (registry, slug) => notesFor(registry, 'moments', slug)
+    forChapter: (registry, slug, versionId = 'v1') => notesFor(registry, 'chapters', slug, versionId),
+    forMoment: (registry, slug, versionId = 'v1') => notesFor(registry, 'moments', slug, versionId)
   };
 })();

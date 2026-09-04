@@ -48,6 +48,19 @@ function addEntry({ id, title, type, url, subtitle = '', text = '', keywords = '
   entries.push({ id, title: clean(title), type, url, subtitle: clean(subtitle), text: content });
 }
 
+function resolveVersions(record) {
+  const versions = Array.isArray(record.versions) && record.versions.length
+    ? record.versions
+    : [{ id: 'v1', label: 'Version 1' }];
+  return versions.map((version, index) => ({
+    ...record,
+    ...version,
+    versionId: version.id || `v${index + 1}`,
+    versionLabel: version.label || `Version ${index + 1}`,
+    versionCount: versions.length
+  }));
+}
+
 function extractArrayLiteral(source, declaration, nextDeclaration) {
   const startMarker = `const ${declaration} = `;
   const start = source.indexOf(startMarker);
@@ -138,7 +151,7 @@ docs.forEach((document) => {
   if (document.slug === 'character-behavior-audit') {
     contextualText = flatten([
       behaviorNotes.sections,
-      behaviorNotes.notes.map(({ id, section, kind, title, basis, text, chapters, moments }) => ({ id, section, kind, title, basis, text, chapters, moments }))
+      behaviorNotes.notes.map(({ id, section, kind, title, basis, text, chapters, moments, versions }) => ({ id, section, kind, title, basis, text, chapters, moments, versions }))
     ]);
   }
   if (document.slug === 'character-intimacy-and-sexuality') {
@@ -160,27 +173,37 @@ docs.forEach((document) => {
 
 const chapters = readJson('story/index.json');
 chapters.forEach((chapter) => {
-  addEntry({
-    id: `chapter-${chapter.slug}`,
-    title: chapter.title,
-    type: 'Chapter',
-    url: `story.html?chapter=${encodeURIComponent(chapter.slug)}`,
-    subtitle: `${chapter.number} · ${chapter.timelineLabel}`,
-    text: `${chapter.description} ${flatten(chapter.events)} ${stripMarkdown(readText(path.join('story', chapter.file)))}`,
-    keywords: chapter.characters
+  resolveVersions(chapter).forEach((version) => {
+    const versionSuffix = version.versionCount > 1 ? `-${version.versionId}` : '';
+    const versionTitle = version.versionCount > 1 ? `${chapter.title} · ${version.versionLabel}` : chapter.title;
+    const versionQuery = version.versionCount > 1 ? `&version=${encodeURIComponent(version.versionId)}` : '';
+    addEntry({
+      id: `chapter-${chapter.slug}${versionSuffix}`,
+      title: versionTitle,
+      type: 'Chapter',
+      url: `story.html?chapter=${encodeURIComponent(chapter.slug)}${versionQuery}`,
+      subtitle: `${chapter.number} · ${chapter.timelineLabel}`,
+      text: `${version.description} ${flatten(version.events)} ${stripMarkdown(readText(path.join('story', version.file)))}`,
+      keywords: chapter.characters
+    });
   });
 });
 
 const moments = readJson('moments/index.json');
 moments.forEach((moment) => {
-  addEntry({
-    id: `moment-${moment.slug}`,
-    title: moment.title,
-    type: 'Moment',
-    url: `moments.html?moment=${encodeURIComponent(moment.slug)}`,
-    subtitle: `${moment.code} · ${moment.timelineLabel}`,
-    text: flatten([moment.summary, moment.purpose, moment.location, moment.known, moment.openQuestions, moment.continuityBefore, moment.continuityAfter]),
-    keywords: flatten(moment.characters)
+  resolveVersions(moment).forEach((version) => {
+    const versionSuffix = version.versionCount > 1 ? `-${version.versionId}` : '';
+    const versionTitle = version.versionCount > 1 ? `${moment.title} · ${version.versionLabel}` : moment.title;
+    const versionQuery = version.versionCount > 1 ? `&version=${encodeURIComponent(version.versionId)}` : '';
+    addEntry({
+      id: `moment-${moment.slug}${versionSuffix}`,
+      title: versionTitle,
+      type: 'Moment',
+      url: `moments.html?moment=${encodeURIComponent(moment.slug)}${versionQuery}`,
+      subtitle: `${moment.code} · ${moment.timelineLabel}`,
+      text: flatten([version.summary, version.purpose, version.location, version.known, version.openQuestions, version.continuityBefore, version.continuityAfter]),
+      keywords: flatten(moment.characters)
+    });
   });
 });
 
