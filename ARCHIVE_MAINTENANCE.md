@@ -127,7 +127,7 @@ An artefact belongs in this archive when its identity, custody, rule, or history
 - Gradients are never allowed. Use solid fills, borders, opacity, spacing, and layered panels.
 - Entity links look like ordinary prose until hover or keyboard focus.
 - Interfaces must work with mouse, keyboard, and touch, with restrained motion and reduced-motion support.
-- Direct children of CSS multi-column masonry layouts remain transform-free. Hover feedback may change borders, shadows, colors, media scale, and nested controls, but must not transform or resize the column fragment itself because that destabilizes Chromium compositing and can make unrelated cards flicker.
+- Masonry catalogs use the shared measured CSS Grid layout in `script.js`, never CSS multi-column layout. Direct masonry items remain transform-free while hover feedback may use stable borders, shadows, colors, media scale, and nested controls. This avoids Safari column-fragment repaint failures and keeps card placement consistent across browsers.
 - Primary navigation remains in the top bar. Every detailed view has breadcrumbs. Every page has the ownership footer and Page notes sidebar.
 - The site remains static, uses relative paths, preserves `CNAME`, and deploys through GitHub Pages at `magiarchy.bekulov.com`.
 - No em dash may appear in repository-managed site content.

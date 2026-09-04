@@ -2658,15 +2658,18 @@ a {
 .archive-state .status-dot { width: 6px; height: 6px; }
 
 .character-grid {
-  columns: 2 480px;
-  column-gap: 18px;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-auto-rows: 1px;
+  gap: 12px 18px;
+  align-items: start;
 }
 
 .character-card {
   display: inline-grid;
   width: 100%;
   grid-template-columns: minmax(170px, 42%) 1fr;
-  margin: 0 0 18px;
+  margin: 0;
   vertical-align: top;
   overflow: hidden;
   border: 1px solid var(--line);
@@ -3025,7 +3028,7 @@ a {
   .roster-header { padding-block: 62px 38px; }
   .roster-title h1 { font-size: clamp(3.6rem, 19vw, 5.7rem); }
   .roster-title > p:last-child { margin-top: 25px; }
-  .character-grid { columns: 1; }
+  .character-grid { grid-template-columns: minmax(0, 1fr); }
   .character-card { grid-template-columns: minmax(128px, 38%) 1fr; }
   .character-art, .card-featured .character-art, .card-compact .character-art { min-height: 245px; }
   .character-info { padding: 20px 17px; }
@@ -4186,14 +4189,17 @@ a.status-member:hover {
 }
 
 .gallery-grid {
-  columns: 3 250px;
-  column-gap: 12px;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-auto-rows: 1px;
+  gap: 12px;
+  align-items: start;
 }
 
 .gallery-card {
   display: inline-block;
   width: 100%;
-  margin: 0 0 12px;
+  margin: 0;
   vertical-align: top;
   overflow: hidden;
   border: 1px solid rgba(0, 0, 0, .24);
@@ -4284,14 +4290,17 @@ a.status-member:hover {
 }
 
 .music-card-grid {
-  columns: 2 300px;
-  column-gap: 12px;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-auto-rows: 1px;
+  gap: 12px;
+  align-items: start;
 }
 
 .music-card {
   display: inline-block;
   width: 100%;
-  margin: 0 0 12px;
+  margin: 0;
   vertical-align: top;
   overflow: hidden;
   -webkit-column-break-inside: avoid;
@@ -4507,14 +4516,17 @@ a.status-member:hover {
 }
 
 .document-card-grid {
-  columns: 2 300px;
-  column-gap: 12px;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-auto-rows: 1px;
+  gap: 12px;
+  align-items: start;
 }
 
 .document-card {
   display: inline-block;
   width: 100%;
-  margin: 0 0 12px;
+  margin: 0;
   vertical-align: top;
   overflow: hidden;
   -webkit-column-break-inside: avoid;
@@ -4534,15 +4546,14 @@ a.status-member:hover {
 }
 
 /*
- * Transforms on direct children of CSS multi-column layouts can produce
- * unstable column-fragment compositing in Chromium. Keep masonry cards in the
- * document layer while retaining hover feedback inside each stable fragment.
+ * Masonry cards stay transform-free while their nested media and controls
+ * provide hover feedback. This keeps every measured grid item stable.
  */
-.gallery-grid > .gallery-card,
-.music-card-grid > .music-card,
-.document-card-grid > .document-card,
-.character-grid > .character-card,
-.moment-card-grid > .moment-card {
+.gallery-grid > *,
+.music-card-grid > *,
+.document-card-grid > *,
+.character-grid > *,
+.moment-card-grid > * {
   transform: none;
 }
 
@@ -5578,14 +5589,17 @@ a.status-member:hover {
 }
 
 .moment-card-grid {
-  columns: 2 310px;
-  column-gap: 12px;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-auto-rows: 1px;
+  gap: 12px;
+  align-items: start;
 }
 
 .moment-card {
   display: inline-block;
   width: 100%;
-  margin: 0 0 12px;
+  margin: 0;
   vertical-align: top;
   overflow: hidden;
   -webkit-column-break-inside: avoid;
@@ -7810,7 +7824,7 @@ a.moment-connection-card:hover {
 }
 
 .character-grid {
-  columns: 2 410px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   column-gap: 12px;
 }
 
@@ -9213,7 +9227,7 @@ a.moment-connection-card:hover {
   }
 
   .character-grid {
-    columns: 1;
+    grid-template-columns: minmax(0, 1fr);
   }
 }
 
@@ -9293,7 +9307,7 @@ a.moment-connection-card:hover {
   }
 
   .document-card-grid {
-    columns: 2 240px;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .docs-toolbar {
@@ -9368,7 +9382,7 @@ a.moment-connection-card:hover {
   }
 
   .gallery-grid {
-    columns: 2 150px;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     column-gap: 9px;
   }
 
@@ -9525,11 +9539,11 @@ a.moment-connection-card:hover {
 
 @media (max-width: 560px) {
   .document-card-grid {
-    columns: 1;
+    grid-template-columns: minmax(0, 1fr);
   }
 
   .music-card-grid {
-    columns: 1;
+    grid-template-columns: minmax(0, 1fr);
   }
 
   .document-reader-header {
@@ -9661,7 +9675,7 @@ a.moment-connection-card:hover {
   }
 
   .moment-card-grid {
-    columns: 1;
+    grid-template-columns: minmax(0, 1fr);
   }
 
   .moment-reader-hero {

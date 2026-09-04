@@ -101,6 +101,70 @@ if ('IntersectionObserver' in window && !window.matchMedia('(prefers-reduced-mot
   revealItems.forEach((item) => item.classList.add('is-visible'));
 }
 
+const masonryGrids = document.querySelectorAll('.gallery-grid, .music-card-grid, .document-card-grid, .character-grid, .moment-card-grid');
+
+masonryGrids.forEach((grid) => {
+  let layoutFrame = 0;
+  const observedItems = new WeakSet();
+
+  const layoutMasonry = () => {
+    cancelAnimationFrame(layoutFrame);
+    layoutFrame = requestAnimationFrame(() => {
+      const gridStyle = getComputedStyle(grid);
+      const rowHeight = Number.parseFloat(gridStyle.gridAutoRows) || 1;
+      const rowGap = Number.parseFloat(gridStyle.rowGap) || 0;
+
+      Array.from(grid.children).forEach((item) => {
+        if (item.hidden || getComputedStyle(item).display === 'none') {
+          item.style.removeProperty('grid-row-end');
+          return;
+        }
+
+        const itemHeight = item.getBoundingClientRect().height;
+        const rowSpan = Math.max(1, Math.ceil((itemHeight + rowGap) / (rowHeight + rowGap)));
+        const nextGridRowEnd = `span ${rowSpan}`;
+
+        if (item.style.gridRowEnd !== nextGridRowEnd) {
+          item.style.gridRowEnd = nextGridRowEnd;
+        }
+      });
+    });
+  };
+
+  const resizeObserver = 'ResizeObserver' in window
+    ? new ResizeObserver(layoutMasonry)
+    : null;
+
+  const observeItems = () => {
+    Array.from(grid.children).forEach((item) => {
+      if (!resizeObserver || observedItems.has(item)) {
+        return;
+      }
+
+      observedItems.add(item);
+      resizeObserver.observe(item);
+    });
+  };
+
+  observeItems();
+  resizeObserver?.observe(grid);
+
+  const mutationObserver = new MutationObserver(() => {
+    observeItems();
+    layoutMasonry();
+  });
+
+  mutationObserver.observe(grid, {
+    childList: true,
+    attributes: true,
+    attributeFilter: ['hidden'],
+  });
+
+  grid.addEventListener('load', layoutMasonry, true);
+  window.addEventListener('resize', layoutMasonry, { passive: true });
+  layoutMasonry();
+});
+
 const searchInput = document.querySelector('#character-search');
 const filterButtons = document.querySelectorAll('[data-filter]');
 const characterCards = document.querySelectorAll('.character-card');
