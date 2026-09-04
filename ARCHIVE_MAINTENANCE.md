@@ -10,6 +10,10 @@ This file is the concise operating map for future agents and maintainers. `AGENT
 4. The Nasu audit is advisory. Notify the author whenever it materially shapes work. Never present it as literal participation by Kinoko Nasu, and never convert its proposal into canon without approval.
 5. A user-supplied answer overrides an audit preference. Improve setup, consequence, and presentation without changing the answer.
 
+## Backlog intake
+
+Before beginning ordinary work, inspect `backlog/` for author-supplied `*.txt` files. Each file takes priority over the incoming request and must be integrated through every affected source, public surface, editorial ledger, entity link, search record, and update-feed entry. Delete a backlog file only after its contents have been fully integrated and verified. If its meaning is ambiguous or conflicts with established canon, preserve the file and stop for author direction.
+
 ## Source and surface map
 
 | Content | Shared source | Required public or writer surfaces |
@@ -92,6 +96,10 @@ When artwork depicts a specific Arc or life period, preserve that period in the 
 Sexual tension is not a relationship forecast. It may be mutual, asymmetric, subconscious, antagonistic, situational, or permanently unresolved. Each proposed pairing needs character-specific contact and a reason for repeated attention. Do not pair characters merely because they are attractive, available, or of opposite sexes.
 
 Construct tension from an established character priority rather than replacing it. Identify what each person normally controls, then use a repeatable ordinary interaction to let the other disrupt that control. Add restrained bodily tells, allow the reader to notice the pattern before the characters name it, and let crisis intensify tension that already exists instead of using rescue or trauma as its sole source. If authority, coercion, or dependency begins the relationship, a later voluntary choice to remain or return is required before compliance can be read as desire. Lynleit's MSF duty and personal missions remain primary, while her attraction to Kyrien is an involuntary complication.
+
+Describe intimacy through initiative, hesitation, attention, speech, silence, trust, conflict, and change. Do not prescribe sexual positions unless the author establishes exact scene choreography as canon.
+
+When the author supplies a Chapter and identifies its characterization as canon, treat the characters' decisions, speech rhythms, problem-solving habits, and responses under pressure as profile evidence. Reconcile conflicting summaries and guidance with that evidence without turning one exceptional scene into the character's only mode of behavior.
 
 Appearance records contain observable facts only. State physical features, clothing, accessories, grooming, posture, and visible variation without justifying the design, explaining the character's reasons, or assigning personality and capability to the clothing.
 

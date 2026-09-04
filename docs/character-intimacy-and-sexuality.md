@@ -18,15 +18,15 @@ This writer-facing reference records how each character approaches affection, de
 
 ### Natural approach
 
-Lynleit approaches closeness through attention. She notices what another person needs, makes herself useful, and often assumes responsibility before admitting that she also wants comfort. MSF duty and her personal missions remain more important to her than intimacy. Attraction enters as unwanted awareness inside work she would have undertaken without it.
+Lynleit approaches closeness through attention. She notices what another person needs, makes herself useful, and often assumes responsibility before admitting that she also wants comfort. MSF duty and her personal missions remain more important to her than intimacy. Attraction enters as unwanted awareness inside work she would have undertaken without it. Her normal leadership style values openness; she becomes evasive in this area because speaking about sex and personal desire embarrasses her.
 
 Once trust is secure, she becomes playful and more likely to initiate. She enjoys drawing a reaction from a reserved partner and notices changes in mood quickly.
 
 ### Sexual expression
 
-Her first sexual encounter is likely to begin slowly because of the emotional weight behind it. Once their hesitation breaks, she can become intense and urgent while remaining affectionate. She prefers sensual closeness, decisive physical contact, and quiet contact afterward.
+Lynleit's first sexual encounter with Kyrien is sudden, clumsy, and almost argumentative because a shared curse has reduced their remaining time to days. She initiates after exhausting every answer she considers survivable. The urgency is real, but so is the attachment that makes their reciprocal change possible.
 
-With familiarity, Lynleit becomes increasingly playful, openly desirous, and more vocal than Kyrien. Face-to-face closeness, seated or straddling arrangements, and positions that let her watch and guide her partner suit her early confidence. Side-by-side intimacy suits exhausted or emotionally exposed moments. From-behind arrangements become more plausible only after deep trust, because surrendering sight and some control makes them more vulnerable for her than their apparent physical boldness suggests.
+With familiarity, Lynleit becomes increasingly playful, openly desirous, and more vocal than Kyrien. She uses the hands, breath, gaze, pauses, and competitive tells learned during their card games to provoke reactions he rarely exposes. Her behavior remains attentive rather than performative, and quiet contact afterward matters as much as initiative.
 
 ### With Kyrien
 
@@ -36,11 +36,19 @@ During the failed river watches, short card games after each aborted operation c
 
 When Lynleit later asks why he keeps risking his life without a reward waiting for him, Kyrien answers, "Because there's a battle to be fought." He does not make her the reason or the reward. The answer preserves his independence but leaves Lynleit with the more difficult knowledge that he repeatedly chooses the danger beside her.
 
-Kyrien later earns her trust when he witnesses her forbidden water walking and never uses the secret against her. The river deepens an attraction that already has an ordinary source instead of creating it through rescue. When Lynleit's institutional control over him eventually loses force, his decision to remain gives the relationship a voluntary basis that the original interrogation could not provide.
+Kyrien later earns her trust when he witnesses her forbidden water walking and never uses the secret against her. Their soaked, back-to-back recovery remains non-sexual. The same is true of the hotel refuge after Fionn's murder, where she finally breaks down and falls asleep while he holds her. These scenes establish that he can receive physical and emotional vulnerability without turning either into an opportunity. When Lynleit's institutional control over him eventually loses force, his decision to remain gives the relationship a voluntary basis that the original interrogation could not provide.
 
 Lynleit later becomes the more frequent initiator. She can tease him, test his reserve, and express desire in ways that do not depend on a verbal response. Kyrien initiates less often, so his firm advances mark a change in their usual pattern. Her willingness to let him set the pace shows how much she trusts him.
 
-Their first sexual encounter follows repeated work, unfinished contests, irritation, practical care, voluntary loyalty, and unwanted awareness of one another's physical presence. It occurs near the end of Arc 1 during a short safe interval. Lynleit does not reach that threshold because her priorities have changed. Intimacy has accumulated inside the mission until continuing to ignore it requires more effort than acknowledging it.
+Their first sexual encounter follows repeated work, unfinished contests, irritation, practical care, voluntary loyalty, and unwanted awareness of one another's physical presence. It occurs near the end of Arc 1 after they destroy a Holumn and inherit one fatal curse across both identities. Lynleit first treats their attachment as a possible procedure, conceals that conclusion from Kyrien, and becomes unusually irritable as the prognosis contracts from weeks to days. She eventually acts because allowing him to die has become less tolerable than the embarrassment and uncertainty of crossing the boundary between them.
+
+The encounter fractures the curse because both people change their relationship to self and other at the same time. Sex has no independent curative property. Kyrien has enough time to understand what Lynleit is asking and answers deliberately. Their behavior in this crisis is canon: Lynleit investigates, assumes responsibility, withholds the sexual and personally embarrassing part of her plan despite her usual preference for openness, and finally acts; Kyrien observes the contradiction in her behavior, asks directly, and responds through a choice rather than a speech.
+
+Their second encounter can be lighter and more playful because neither needs to pretend the first threshold did not occur. A later encounter initiated firmly by Kyrien marks a more substantial reversal: he chooses desire as an action rather than only answering Lynleit's initiative, while she allows him to set the rhythm without treating that choice as a loss of authority.
+
+The relationship continues for long enough to form private jokes and ordinary habits before Lynleit disappears. A later Arc 1 encounter in her third-floor study-bedroom gives Kyrien access to the part of the Director's House tied most closely to her childhood, solitude, work, trees, and river. The pregnancy near the Arc 2 threshold follows this short established sexual relationship rather than the first encounter alone.
+
+Their Arc 2 reunion revives physical awareness without producing immediate sex. Kyrien's ignorance of their son and Lynleit's concealment create a trust crisis that must be addressed before intimacy can resume. Their mature pattern can eventually include exhaustion, teasing, practical care, and undramatic nights in which closing the door is no longer an exceptional event.
 
 ### Writing guardrail
 
@@ -58,7 +66,7 @@ His quietness does not imply passivity or lack of desire. He expresses attention
 
 ### Sexual expression
 
-Kyrien is likely to be controlled, observant, and comparatively quiet. In early encounters he responds more often than he initiates because he does not presume that emotional vulnerability grants him authority. As familiarity grows, he initiates more deliberately, though still less often than Lynleit.
+Kyrien is controlled, observant, and comparatively quiet. In the first encounter he responds rather than initiates, but his response is deliberate once he understands Lynleit's request. As familiarity grows, he initiates more often, though still less often than Lynleit.
 
 He expresses intensity through sustained attention instead of excessive speech or noise. He accepts the same vulnerability he asks of a partner and handles aftercare practically by bringing water, providing warmth, securing the room, or staying beside them.
 
@@ -70,7 +78,9 @@ His answer to Lynleit's question about reward is blunt: "Because there's a battl
 
 He does not know that his assassination attempt nearly harmed her. Her refusal to reveal that fact leaves him unable to explain the first personal edge in their relationship. Later, when the coercive force behind their arrangement has weakened, remaining beside her becomes his decision. That choice matters more than any declaration because it proves that attention once produced by captivity has become voluntary.
 
-Their usual pattern places her in the initiating role and him in the attentive one. A later scene in which he chooses the pace should show that he no longer experiences desire only as a response to Lynleit's initiative. He is willing to act on it with the same seriousness he brings to every decisive choice.
+Their shared curse confirms how he behaves under intimate pressure. He notices that Lynleit's system is behaving incorrectly, asks whether the change concerns the curse, and does not force the explanation she refuses to give. When she finally crosses the boundary, he is surprised but has enough time to understand and answer her physically and deliberately. The silence between them carries trust because both have learned how much the other can communicate without confession.
+
+Their usual pattern places her in the initiating role and him in the attentive one. A later scene in which he chooses the pace shows that he no longer experiences desire only as a response to Lynleit's initiative. He acts with the same seriousness he brings to every decisive choice.
 
 ### Writing guardrail
 
@@ -132,7 +142,9 @@ No sexual encounter is established. A character-consistent approach would be qui
 
 ### With Hiyu
 
-Their attraction grows from repeated dependence between incompatible methods. Hiyu pulls her beyond established procedure, while she gives his ideas a survivable form. His ability to occupy her attention against her will gives the irritation a physical undertone she would rather dismiss. Yulia may recognize the emotional attachment first and is also more likely to speak plainly about what is happening between them.
+Their attraction grows from repeated dependence between incompatible methods. Hiyu pulls her beyond established procedure, while she gives his ideas a survivable form. During arguments they lean over the same evidence, reach for the same document, and remain too close until Yulia notices and steps away. Hiyu continues speaking and wonders why she moved.
+
+Yulia's anger becomes disproportionate when Hiyu's recklessness makes the possibility of losing him real. Her procedural complaints remain valid, but they no longer explain the full intensity of her response. She recognizes the attachment first and is more likely to end the ambiguity with a direct question once she believes Hiyu can understand what he has been doing.
 
 ### Writing guardrail
 
@@ -152,7 +164,7 @@ No sexual encounter is established. He would likely bring curiosity, improvisati
 
 ### With Yulia
 
-Yulia is the person whose corrections he continues to seek even while complaining about them. Attraction should emerge through habits they already share: leaning over the same evidence, forgetting personal space during an argument, noticing the other person's absence, or trusting a warning before understanding it. He experiences her attention as intellectual friction long after the same exchanges have acquired sexual tension for her.
+Yulia is the person whose corrections he continues to seek even while complaining about them. Hiyu's first conscious recognition arrives through absence. When she does not appear, he briefly enjoys the freedom, then keeps turning toward where she should be and discovers that the investigation is less interesting without her. He experiences her attention as intellectual friction long after the same exchanges have acquired sexual tension for her. Their intimacy depends on learning to communicate through the noise they already make together.
 
 ### Writing guardrail
 
@@ -170,9 +182,11 @@ Felix uses flirtation as expression, play, social testing, and tension relief. T
 
 A working interpretation makes him playful, communicative, inventive, and comfortable initiating. He enjoys provoking a reaction but does not want to exploit one. A serious partner should eventually encounter the quieter loyalty beneath the troublemaker persona.
 
-### With a specific partner
+### With Lynleit and Sherie
 
-No romantic or sexual partner is established. Felix's flirting with Lynleit does create one-sided sexual tension: he keeps advancing through play, she keeps deflecting him, and both preserve the friendship beneath it. The chemistry does not oblige Lynleit to reciprocate and does not need to become a relationship to remain visible.
+Felix's flirting with Lynleit creates one-sided sexual tension: he keeps advancing through play, she keeps deflecting him, and both preserve the friendship beneath it. The chemistry does not oblige Lynleit to reciprocate and does not need to become a relationship to remain visible.
+
+Sherie can match Felix's teasing, verbal speed, and appetite for reaction. Their immediate ease is also their main obstacle because both can hide seriousness inside performance. Felix's unresolved attachment to Lynleit prevents Sherie from simply charming him into a new allegiance. Sherie becomes more compelling to him when she recognizes a joke as concealment and insists on a sincere answer.
 
 ### Writing guardrail
 
@@ -210,9 +224,13 @@ Sherie enjoys praise, attention, playful reward, and the pleasure of successfull
 
 No sexual behavior is established. A working interpretation suggests a playful and verbally expressive partner who enjoys being openly appreciated. Her strongest intimate growth may come when she cannot negotiate the exact response she wants and must risk asking for affection directly.
 
-### With a specific partner
+### With Felix and Kyrien
 
-No romantic or sexual partner is established. Her bond with Drake is familial and pedagogical. Kyrien is a strong potential source of tension because her calibrated charm would meet a man who refuses to supply the reaction she expects. Repeated failure to steer him could make his attention matter to her more than attention she wins easily.
+Sherie's bond with Drake is familial and pedagogical. Kyrien remains a strong potential source of tension because her calibrated charm meets a man who refuses to supply the reaction she expects. Repeated failure to steer him can make his attention matter more than attention she wins easily.
+
+Felix offers a different pressure. He responds immediately, plays as fluently as she does, and gives her visible attention, but he also protects seriousness behind humor. Sherie first tests their friendship as play and competition after learning that Lynleit has slept with Kyrien while still feeling responsible for Felix's affection. She refuses Lynleit's premise that Felix is a permanent emotional charge under her protection and says: "What exactly is this? Do you imagine every man is your permanent responsibility? Felix is not your wounded soldier. If you refuse to have him, I may very well take him myself, you shameless hussy!"
+
+Lynleit objects that Sherie should not play with him. Sherie points out that Lynleit has spent months preserving Felix's devotion while becoming entangled with Kyrien. Her initial curiosity includes whether she can pull Felix's attention away from Lynleit. The tension becomes serious only when winning no longer satisfies her and she discovers that she genuinely wants his company and a response that cannot be manufactured through charm.
 
 ### Writing guardrail
 

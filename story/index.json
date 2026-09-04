@@ -140,5 +140,33 @@
         "status": "inferred"
       }
     ]
+  },
+  {
+    "slug": "doom-has-an-address",
+    "number": "Chapter 07",
+    "title": "Doom Has an Address",
+    "status": "Author text",
+    "file": "doom-has-an-address.md",
+    "updated": "2026-09-04",
+    "description": "After jointly destroying a Holumn, Lynleit and Kyrien inherit one fatal curse written across both identities and search for a way to survive without sacrificing either life.",
+    "characters": ["Lynleit", "Kyrien", "Natalia", "Father Mikhail"],
+    "timelinePhase": "lynleit-disappears",
+    "timelineLabel": "Lynleit Disappears",
+    "events": [
+      "Lynleit and Kyrien destroy a Holumn together and complete the final condition of its mechanism.",
+      "The Holumn transfers one terminal curse across both of their identities, causing progressive physical decline and a prognosis measured first in weeks and then in days.",
+      "Suppressing the curse in either person fails because the remaining half reconstructs the other.",
+      "The traditional solution requires one of them to die first so the surviving identity is released.",
+      "Lynleit rejects that answer and searches Magiarchal, medical, theurgical, academic, and Church records for another form of identity discontinuity.",
+      "Natalia identifies the attachment as sympathetic recognition of the ego and proposes profound reciprocal transformation as a possible alternative to death.",
+      "Father Mikhail reaches the same conclusion through Church records and tells Lynleit that physical intimacy could work only if an existing attachment changes both identities.",
+      "Although Lynleit normally treats openness as a leadership strength, the sexual and personal implications embarrass her into withholding the proposed method from Kyrien while she investigates whether it can save them.",
+      "With the prognosis reduced to days, Lynleit initiates a sudden and imperfect sexual encounter, and Kyrien responds deliberately.",
+      "Their reciprocal change makes the curse unable to recognize the exact pair of identities that destroyed the Holumn, causing the entanglement to fracture.",
+      {
+        "text": "Their survival leaves the reader to infer which parts of their former self-conceptions have ended and how that change will shape the life they begin to share before Lynleit's disappearance.",
+        "status": "inferred"
+      }
+    ]
   }
 ]

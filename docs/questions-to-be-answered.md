@@ -14,12 +14,15 @@ Story, character, world, relationship, institution, location, and event question
 | Holumn incident HI-001 | What does the voice want, and what changes when it stops copying the victim and begins speaking before the victim does? | 0% |
 | Holumn incident HI-002 | Who made or first completed the puzzle, how does its compulsion move between owners, and where does completion send its victims? | 0% |
 | Holumn incident HI-005 | What conditions admit a visitor to the Nameless Street, what are the girl and dead boy, and why does Lynleit return after following the lure? | 0% |
+| Holumn incident HI-006 | What identity, appearance, and history belong to the Holumn that Lynleit and Kyrien destroy before its terminal condition transfers to them? | 0% |
+| Doom Has an Address | What operation brings Lynleit and Kyrien to the Holumn, where does the final confrontation occur, and what evidence lets them understand that destroying it caused their decline? | 0% |
 | Holumns | Can any victim taken by a Holumn return, and what would return mean for the person's identity? | 0% |
 | Lester | How did Lester become a demiholumn, and what metaphysical answer about his human and Holumn conditions would most threaten his sense of self? | 0% |
 | Location | What emotional or thematic role will Narvea's western gateway serve before Port City receives its proper name? | 0% |
 | Location | What older personal name belongs to the Director's House, and what painful memory changes how the reader understands Fionn or Lynleit? | 0% |
 | Private investigation | What mundane, slightly absurd referral network carries impossible cases to Natalia, and how does she screen it without alerting the Magiarchy or Church? | 0% |
 | Kyrien | Which surviving military contact forces Kyrien to choose between loyalty to his father's officer code and loyalty to Lynleit or MSF? | 0% |
+| Sherie and Felix | Does Sherie's competitive interest in Felix become reciprocal intimacy, and which moment proves that she wants him rather than the victory of drawing his attention away from Lynleit? | 0% |
 | Items & Artefacts | What does "hide of leviathan" mean, and is the material connected to the river phenomenon recorded as HI-004? | 0% |
 | Helena | Is Helena a non-Magus who manipulates supernatural institutions, and if so, what access, allies, and leverage make that possible? | 5% |
 | Spill inquiry | Which three experts does Lynleit consult, and how can their incompatible explanations of the Spill each be partly correct? | 5% |
@@ -35,10 +38,11 @@ Story, character, world, relationship, institution, location, and event question
 | River Holumns | Are the Drowned Choir and the river leviathan separate Holumns, two expressions of one river-bound intelligence, or phenomena feeding from the same wound? | 5% |
 | Holumns | Where do Holumns take disappeared victims, and what evidence can reveal the destination without yet explaining the mechanism or possibility of return? | 5% |
 | Core mystery | What logically defensible worldview and incompatible objective does each faction bring to Fionn, MSF, the Spill, and Narvea? | 10% |
-| Sexual tension | Which current tension records become visible story dynamics, which remain one-sided or conditional, and which scenes give the reader enough contact to perceive the difference? | 10% |
+| Sexual tension | Which current tension records beyond Lynleit and Kyrien, Yulia and Hiyu, Fionn and Helena, Natalia and Lester, Lynleit and Felix, and Sherie and Felix become visible story dynamics rather than remaining conditional? | 10% |
 | Lynleit | Which of Lynleit's later actions around MSF missions can plausibly read as help, observation, manipulation, or causation before her intention becomes clear? | 10% |
 | Location | What human act in the Vilen park's history unknowingly prepares it for the Spill, and what is the park called? | 10% |
 | Boat operation | Which small oddities emerge from the quarantined park during the unsuccessful bridge watches, and how do they escalate while the team must ignore them? | 10% |
+| Weapons | At what point does Felix lend Lynleit his Ren L21 Rook, and what failure or near miss with the 9×17 Sparrow turns his existing concern into action? | 10% |
 | Magi Academy | What terrors does Myka encounter inside the Academy, and why can its own teachers and hierarchy not resolve them? | 10% |
 | House | Which room in the Director's House carries an unexplained rule, and what do characters reveal through their refusal to enter it? | 10% |
 | Security | Which ordinary habits, complaints, chores, meals, and relationships keep the Director's House a family home while existential MSF work occurs inside it? | 10% |
@@ -100,4 +104,4 @@ These questions determine sequence, event placement, reveal timing, or elapsed t
 | Fugitive campaign | How much time passes between the hotel-room refuge, Kyrien's first secure contact with Felix and Reiner, Lynleit's first foothold inside MSF, and Helena's eventual loss of control? | 35% |
 | Nameless Street | Exactly how many days separate Lynleit's encounter from Fionn's death, and which intervening scene allows the memory to recede before it returns? | 40% |
 | Relationship | At what point in the opening chapters does Lynleit reveal Kyrien's recruitment to Felix and Reiner, where does the disclosure occur, and how much time remains before Fionn's assassination? | 60% |
-| Relationship | Is Lynleit and Kyrien's end-of-Arc 1 sexual encounter the conception of their son, what evidence makes the pregnancy inferable at the opening of Arc 2, and how much time separates the encounter, pregnancy, and disappearance? | 80% |
+| Relationship | Which later encounter results in the conception of Lynleit and Kyrien's son, what evidence makes the pregnancy inferable at the opening of Arc 2, and how much time separates Doom Has an Address, their later encounters, pregnancy, and disappearance? | 75% |

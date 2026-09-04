@@ -105,3 +105,31 @@ Felix's account supports a sudden loss of consciousness followed by a vivid drea
 
 **Magi and special envoys**
 The street itself may be the Holumn. It isolates one visitor, replaces navigable urban space with a hostile sequence, and presents a lure whose pursuit ends at a fatal fall. It remains unknown whether Lynleit physically entered another place, experienced an event imposed on consciousness, or occupied both conditions at once.
+
+## Doom Has an Address
+
+[Read the Chapter](../story.html?chapter=doom-has-an-address)
+
+**Record:** HI-006
+**Known forms:** Event-bound and curse-bound
+**Primary medium:** The conscious identity of whoever destroys the Holumn
+
+Lynleit and Kyrien destroy the same Holumn together. Its death completes rather than ends its governing rule. The terminal condition transfers to the ego responsible for destroying it, and their joint action causes one curse to recognize both people as a single causal answer.
+
+The condition progresses over several weeks. Sleep ceases to restore either subject, minor injuries heal slowly, magical tolerance declines, and ordinary exertion becomes difficult. Suppression fails in both directions: removing the condition from Lynleit allows Kyrien's attachment to reconstruct it, while removing it from Kyrien allows Lynleit's attachment to do the same.
+
+The established answer requires one subject to die first. Permanent loss of either ego collapses the two-person relation and releases the survivor. Lynleit refuses that solution and pursues medical, Magiarchal, theurgical, academic, and Church accounts of curses attached to identity.
+
+Natalia identifies the mechanism as sympathetic recognition of the ego. Father Mikhail finds related Church records in which conversion, marriage, war, parenthood, or confession changed a subject deeply enough to disrupt a psychic attachment. Both conclude that biological death is the most reliable identity discontinuity, but not the only one.
+
+Lynleit and Kyrien survive when an existing reciprocal attachment changes both identities at the same time. Their sexual encounter is the embodied event through which that change becomes simultaneous and undeniable. Sex has no independent curative property. A meaningless encounter, a stranger, or a change affecting only one subject would leave the governing relation intact.
+
+### Institutional readings
+
+**Police and government**
+The visible case consists of two people developing the same rapid decline after an operation. Medicine can document the symptoms and treatment failures but cannot explain why intervention in one patient is reversed through the other.
+
+**Magi and special envoys**
+The Holumn stores its death in the identity of its killer. A joint killing gives the curse two coordinates. It can be broken by death or by a transformation severe enough that the original identities can no longer be recognized as the complete answer to the act.
+
+The destroyed Holumn's appearance, origin, prior incident history, and the operation that brings Lynleit and Kyrien into contact with it remain unidentified.

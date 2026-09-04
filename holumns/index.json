@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-31",
+  "updated": "2026-09-04",
   "principles": [
     "Holumn is a category of manifestation, not a biological species.",
     "A Holumn may be a physical creature, a natural phenomenon, a repeating event, a disembodied will, or a curse.",
@@ -24,7 +24,7 @@
       "id": "event",
       "name": "Event-bound",
       "summary": "The Holumn exists as a sequence, compulsion, rule, or occurrence with no creature that can be confronted directly.",
-      "evidence": ["HI-002", "HI-005"]
+      "evidence": ["HI-002", "HI-005", "HI-006"]
     },
     {
       "id": "disembodied",
@@ -36,7 +36,7 @@
       "id": "curse",
       "name": "Curse-bound",
       "summary": "A person, object, place, or action carries a hostile rule that persists until its particular condition is interrupted.",
-      "evidence": ["HI-001", "HI-002", "HI-005"]
+      "evidence": ["HI-001", "HI-002", "HI-005", "HI-006"]
     }
   ],
   "incidents": [
@@ -104,6 +104,20 @@
       "observedEffect": "The visitor is separated without perceiving a threshold, becomes dizzy and disoriented, and cannot navigate the district by ordinary geometry. Lynleit follows a crying girl to a broken fence, is pushed toward a dead boy below, and returns to a city bench before impact.",
       "knownWeakness": "The urban warning instructs visitors not to follow anyone encountered on the street. It is not known whether refusing the lure guarantees escape or why Lynleit returns after following it.",
       "spillContribution": "The encounter establishes that a Holumn can occupy urban arrangement itself. Its later connection to Fionn's fall may be anticipation, memory, coincidence, or a rule that makes one death resemble another; the evidence does not yet distinguish them."
+    },
+    {
+      "id": "HI-006",
+      "slug": "doom-has-an-address",
+      "title": "Doom Has an Address",
+      "recordType": "Operational encounter and curse",
+      "types": ["event", "curse"],
+      "summary": "A Holumn transfers its own terminal condition to whoever consciously destroys it. When Lynleit and Kyrien kill it together, one fatal curse identifies both egos as a single causal answer and remains distributed across them.",
+      "ordinaryReading": "Physicians can chart fatigue, declining tolerance, failed recovery, slow healing, and approaching organ failure, but no physical infection explains why treatment of either patient is undone through the other.",
+      "hiddenReading": "The Holumn hides its death in the conscious identity of its killer. A joint killing gives the curse two coordinates, each capable of reconstructing the condition in the other while both remain recognizably the same people.",
+      "observedEffect": "The subjects weaken over several weeks. Sleep ceases to restore them, injuries heal too slowly, magecraft becomes exhausting, and ordinary exertion eventually becomes difficult. Suppressing either attachment causes the other to restore it.",
+      "knownWeakness": "The curse requires exact sympathetic recognition of the ego or egos responsible for the Holumn's destruction. Biological death breaks that identity absolutely, but profound reciprocal transformation can introduce enough uncertainty to fracture the attachment without killing either subject.",
+      "spillContribution": "The incident establishes that destroying a Holumn may complete rather than defeat its governing rule. It also shows that a curse can treat identity as an address, distribute one condition across several people, and mistake psychological discontinuity for death.",
+      "storyLink": "story.html?chapter=doom-has-an-address"
     }
   ]
 }

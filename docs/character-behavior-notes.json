@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-03",
+  "updated": "2026-09-04",
   "sections": [
     {
       "id": "river-operation",
@@ -24,6 +24,10 @@
     {
       "id": "cardiff-venture",
       "title": "The Cardiff venture"
+    },
+    {
+      "id": "doom-address",
+      "title": "Doom Has an Address"
     }
   ],
   "notes": [
@@ -299,6 +303,66 @@
       "chapters": [],
       "moments": ["the-coat-fionn-left-behind"],
       "momentFact": { "the-coat-fionn-left-behind": 4 }
+    },
+    {
+      "id": "doom-lynleit-method",
+      "section": "doom-address",
+      "kind": "female",
+      "title": "Lynleit",
+      "basis": "Canon behavior, ENFJ with strong Ni and MSF duty primary",
+      "text": "The chapter establishes Lynleit's response to intimate and mortal pressure. She rejects the sacrificial answer absolutely, searches every available discipline, treats humiliation as less important than Kyrien's survival, and withholds only the sexual and personally embarrassing part of the plan. This is an exception to her usual belief that openness is a leadership skill. Future scenes should preserve her responsibility, analysis, and decisive initiative without turning private embarrassment into a general habit of secrecy or recasting the encounter as spontaneous romance.",
+      "chapterMatch": "She refuses to accept a system whose only solution",
+      "chapters": ["doom-has-an-address"],
+      "moments": ["doom-has-an-address"],
+      "momentFact": { "doom-has-an-address": 6 }
+    },
+    {
+      "id": "doom-kyrien-answer",
+      "section": "doom-address",
+      "kind": "male",
+      "title": "Kyrien",
+      "basis": "Canon behavior, ISTP lean and officer ethics",
+      "text": "Kyrien notices that Lynleit is behaving incorrectly, asks one direct question, and does not force the explanation she refuses. His eventual response is physical, deliberate, and chosen after he understands what she is asking. Future intimacy should keep him legible through observation and decision rather than sudden verbal confession.",
+      "chapterMatch": "Kyrien is surprised rather than overwhelmed.",
+      "chapters": ["doom-has-an-address"],
+      "moments": ["doom-has-an-address"],
+      "momentFact": { "doom-has-an-address": 12 }
+    },
+    {
+      "id": "doom-natalia-teaching",
+      "section": "doom-address",
+      "kind": "female",
+      "title": "Natalia",
+      "basis": "Canon behavior, INTP with strong Ti and former professor",
+      "text": "Natalia answers the emergency by moving across ritual history, folklore, analytical psychology, and sympathetic magecraft until one mechanism explains them all. Her old teaching rhythm with Lynleit remains intact: she refuses to supply the conclusion before making her former student define the problem correctly, then uses dry humor when the answer becomes personally uncomfortable.",
+      "chapterMatch": "Natalia was silent long enough that Lynleit checked the connection.",
+      "chapters": ["doom-has-an-address"],
+      "moments": ["doom-has-an-address"],
+      "momentFact": { "doom-has-an-address": 7 }
+    },
+    {
+      "id": "doom-mikhail-diagnosis",
+      "section": "doom-address",
+      "kind": "male",
+      "title": "Father Mikhail",
+      "basis": "Canon behavior, XNJ lean and Church special envoy",
+      "text": "Mikhail patiently establishes the theological mechanism before giving a brutally plain recommendation. His irreverence does not replace expertise. It appears after he has determined that the practical answer is simpler than the centuries of doctrine behind it, and he immediately returns to precision when Lynleit tries to leave with only the joke.",
+      "chapterMatch": "The priest appears to consider several centuries of theology.",
+      "chapters": ["doom-has-an-address"],
+      "moments": ["doom-has-an-address"],
+      "momentFact": { "doom-has-an-address": 9 }
+    },
+    {
+      "id": "doom-transformation-rule",
+      "section": "doom-address",
+      "kind": "story",
+      "title": "Transformation, not intercourse",
+      "basis": "Confirmed Holumn mechanism",
+      "text": "Future references must preserve the causal distinction established by the chapter. Sex does not possess curative force. The shared curse fractures because an existing reciprocal attachment changes both identities simultaneously and makes the original sympathetic address uncertain. A meaningless encounter or a change affecting only one person would not satisfy the rule.",
+      "chapterMatch": "Sex did not cure them.",
+      "chapters": ["doom-has-an-address"],
+      "moments": ["doom-has-an-address"],
+      "momentFact": { "doom-has-an-address": 14 }
     }
   ]
 }

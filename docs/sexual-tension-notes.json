@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-02",
+  "updated": "2026-09-04",
   "pairs": [
     {
       "id": "lynleit-kyrien",
@@ -9,15 +9,15 @@
         {
           "slug": "lynleit",
           "name": "Lynleit",
-          "reading": "MSF and her personal missions remain Lynleit's priorities. Her attention to Kyrien begins as operational scrutiny, sharpened by the knowledge that his failed attempt nearly harmed her, and becomes involuntarily physical through the tells she learns during their repeated card games. His claim that a battle is reason enough to stay removes both obedience and promised reward from his persistence. She dislikes the distraction and returns to the work whenever it intrudes."
+          "reading": "MSF and her personal missions remain Lynleit's priorities. Her attention to Kyrien begins as operational scrutiny, sharpened by the knowledge that his failed attempt nearly harmed her, and becomes involuntarily physical through the tells she learns during their repeated card games. His claim that a battle is reason enough to stay removes both obedience and promised reward from his persistence. She dislikes the distraction and returns to the work whenever it intrudes. When their shared curse forces a decision, she still approaches intimacy as a problem to investigate and a responsibility she must carry."
         },
         {
           "slug": "kyrien",
           "name": "Kyrien",
-          "reading": "Kyrien enters Lynleit's interrogation without knowing that his attack on the protected politician almost harmed her. Later, the card games expose his need to win and make him aware that she is studying his breath, hands, and pauses rather than only his play. When asked why he keeps risking himself, he says the battle itself is enough. The answer is honest but incomplete: her elegance, authority, and nerve have become physically distracting before he permits himself to call the reaction desire."
+          "reading": "Kyrien enters Lynleit's interrogation without knowing that his attack on the protected politician almost harmed her. Later, the card games expose his need to win and make him aware that she is studying his breath, hands, and pauses rather than only his play. When asked why he keeps risking himself, he says the battle itself is enough. The answer is honest but incomplete: her elegance, authority, and nerve have become physically distracting before he permits himself to call the reaction desire. His strongest answer remains behavioral, including his deliberate response when she finally crosses the boundary between them."
         }
       ],
-      "dynamic": "The first tension is hidden inside the interrogation: Lynleit knows Kyrien's botched attempt nearly harmed her, while he does not know she was present and she never tells him. During the failed river watches, short card games after each aborted operation give them a voluntary contest outside the handler-asset bargain. Kyrien usually wins through technical play. Lynleit learns the stopped breath that precedes one of his risks, while he learns the hand movement that precedes one of her decisions. Their unfinished final hand, a brief contact near her concealed Sparrow when he steadies her on the boat, and their awareness of each other's breathing on the park bank let the reader see attraction that neither character prioritizes or names. When Lynleit asks why he remains without reward, Kyrien answers that there is a battle to be fought. He does not make her the reward, which preserves his independence while forcing her to recognize that he keeps choosing the danger beside her. His later choice to remain after her authority can no longer compel him separates desire from compliance."
+      "dynamic": "Their attraction begins through observation rather than romance. The interrogation gives Lynleit private knowledge Kyrien cannot read. The failed river watches then give them a voluntary contest outside the handler-asset bargain: Lynleit learns the stopped breath before one of his risks, while he learns the hand movement before one of her decisions. Hands, breath, gaze, pauses, proximity, and competitive attention become their private language. The river recovery and the hotel refuge remain non-sexual thresholds in which restraint makes physical and emotional trust possible. Kyrien's choice to remain after Lynleit's authority loses practical force separates desire from compliance. When a shared Holumn curse later reduces their remaining time to days, Lynleit investigates intimacy as a possible identity change and initiates a clumsy, sudden, almost argumentative encounter. Kyrien understands what she is asking and answers deliberately. The curse does not create their attachment or make sex curative. It forces both to acknowledge a relationship already capable of changing the identities it recognizes."
     },
     {
       "id": "lynleit-felix",
@@ -53,7 +53,7 @@
           "reading": "Yulia is the critic whose resistance makes an idea worth pursuing. He becomes dependent on her attention before he understands that the dependence is personal, leaving him oblivious to tension that is already changing how he seeks her out."
         }
       ],
-      "dynamic": "Their arguments repeatedly force proximity and attention. Yulia wants distance but keeps choosing engagement, while Hiyu treats her engagement as intellectual fuel and misses its emotional cost. Her urge to make him stop talking can acquire an unwanted physical charge even while she continues to reject his theories."
+      "dynamic": "Their arguments repeatedly force proximity and attention. They lean over the same evidence, reach for the same document, and forget ordinary distance while trying to prove incompatible explanations. Yulia notices first and steps away; Hiyu continues the theory and wonders why she moved. Her anger becomes disproportionate when his recklessness makes the possibility of losing him real. Hiyu recognizes the bond through absence: an investigation without her corrections becomes less interesting, and he keeps turning toward the place where she should be. Yulia and Hiyu become intimate by learning to communicate through the noise they already create together."
     },
     {
       "id": "kyrien-sherie",
@@ -108,6 +108,24 @@
         }
       ],
       "dynamic": "Their casework repeatedly joins Natalia's detached analysis to Lester's direct, embodied engagement with the impossible. She is drawn toward the part of him her research cannot settle. He pushes against being treated as a case and learns to distinguish her examiner's attention from personal interest. The tension belongs to that unstable boundary: Natalia must encounter him as a man without abandoning the questions his existence raises, while Lester wants to be understood without becoming legible enough to lose his freedom."
+    },
+    {
+      "id": "sherie-felix",
+      "status": "Emerging potential",
+      "direction": "Mutual play, sincerity unresolved",
+      "participants": [
+        {
+          "slug": "sherie",
+          "name": "Sherie",
+          "reading": "Felix gives Sherie immediate wit, visible attention, and resistance that does not become hostility. She first tests him as play and competition, including whether his attention can be drawn away from Lynleit. The tension becomes personal when winning ceases to satisfy her and she begins wanting a response that is not produced by technique."
+        },
+        {
+          "slug": "felix",
+          "name": "Felix",
+          "reading": "Sherie can match Felix's teasing without mistaking it for a complete confession. Her ability to see when he hides seriousness behind a joke gives him an opponent and possible partner who can enjoy the performance while still asking for something sincere. His unresolved feelings for Lynleit prevent Sherie from winning him by charm alone."
+        }
+      ],
+      "dynamic": "Both use social ease as protection: Felix hides seriousness behind jokes, while Sherie hides vulnerability behind charm and diplomacy. Their chemistry is immediate, but similarity makes them capable of prolonged flirtation without honest movement. Sherie begins testing the friendship after learning that Lynleit has slept with Kyrien while still feeling responsible for Felix's affection. Her refusal to treat Felix as Lynleit's permanent responsibility creates a comic rivalry with Lynleit and a more serious test of whether Sherie wants Felix himself or only wants to win his attention."
     }
   ],
   "unresolved": [

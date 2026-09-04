@@ -580,17 +580,17 @@
   {
     "slug": "the-end-of-the-first-arc",
     "code": "MOM-012",
-    "title": "At the End of the First Arc",
-    "status": "Canon relationship milestone",
-    "placementStatus": "Arc placement confirmed, circumstances unresolved",
+    "title": "Before the Arc Turns",
+    "status": "Canon relationship period",
+    "placementStatus": "Late Arc 1 placement confirmed, exact duration unresolved",
     "timelinePhase": "lynleit-disappears",
     "timelineLabel": "Lynleit Disappears",
-    "sequence": 0.5,
-    "sceneType": "Intimacy threshold",
+    "sequence": 0.8,
+    "sceneType": "Established intimacy",
     "thread": "Lynleit and Kyrien",
     "location": "Unspecified location",
-    "summary": "After a story-long accumulation of functional trust and non-sexual intimacy, Lynleit and Kyrien finally have sex at the end of Arc 1, shortly before Lynleit disappears.",
-    "purpose": "Completes a progression that begins with protected knowledge and shared warmth after the river incident, deepens through emotional refuge after Fionn's murder, and becomes sexual only when Arc 1 is closing.",
+    "summary": "After surviving the shared curse in Doom Has an Address, Lynleit and Kyrien have several further sexual encounters and develop private jokes and ordinary habits before her pregnancy and disappearance near the Arc 2 threshold.",
+    "purpose": "Establishes that the crisis-driven first encounter becomes a sustained private relationship rather than an isolated cure attempt, while keeping Lynleit's work and the closing pressures of Arc 1 primary.",
     "characters": [
       { "name": "Lynleit", "slug": "lynleit" },
       { "name": "Kyrien", "slug": "kyrien" }
@@ -600,27 +600,26 @@
       { "slug": "kyrien", "beat": "Alliance under Pressure" }
     ],
     "known": [
-      "Lynleit and Kyrien's intimacy develops slowly and functionally across the entire story.",
-      "Short card games during the failed river watches create a voluntary private rhythm before the Drowned Choir attack.",
-      "The relationship remains non-sexual through the river aftermath and the much later hotel-room refuge.",
-      "Kyrien chooses to remain beside Lynleit after her authority over him can no longer enforce the original bargain.",
+      "Their first sexual encounter occurs in Doom Has an Address after their shared Holumn curse reduces the remaining prognosis to days.",
+      "Several further encounters follow before Lynleit's pregnancy and disappearance.",
+      "Their second encounter is lighter and more playful because neither needs to deny that the first threshold occurred.",
+      "Kyrien later initiates firmly, reversing their usual pattern and marking desire as his own chosen action.",
+      "One later encounter occurs in Lynleit's third-floor study-bedroom at the Director's House.",
       "MSF duty and Lynleit's personal missions remain her priorities throughout the relationship.",
-      "Their relationship becomes sexual at the end of Arc 1.",
       {
         "text": "The opening of Arc 2 lets the reader infer that Lynleit became pregnant near the boundary between the arcs, without a direct explanation or shown realization.",
         "status": "inferred"
       }
     ],
     "openQuestions": [
-      "What final circumstances bring them together at the end of the arc?",
-      "Is this encounter the conception of their son?",
+      "Which later encounter is the conception of their son?",
       "What details at the opening of Arc 2 make the pregnancy inference clear without explaining or showing it directly?",
-      "How much time passes between the encounter, the beginning of the pregnancy, and Lynleit's disappearance?"
+      "How much time passes between Doom Has an Address, their later encounters, the beginning of the pregnancy, and Lynleit's disappearance?"
     ],
-    "continuityBefore": "The failed watches establish voluntary competition and physical attention. The river incident establishes silent trust, the hotel-room refuge establishes emotional safety, and Kyrien's later choice to remain makes his loyalty independent of the original coercion. These changes accumulate inside Lynleit's continuing MSF mission.",
+    "continuityBefore": "Doom Has an Address turns accumulated trust and unwanted attraction into a first sexual encounter under mortal pressure. Their reciprocal transformation fractures the shared curse, and both survive.",
     "continuityAfter": "Lynleit disappears near the transition into Arc 2. The opening of Arc 2 supplies enough evidence for the reader to infer the pregnancy, while Kyrien directs MSF without knowing that she carries their son.",
     "chapterSlug": null,
-    "updated": "2026-09-01"
+    "updated": "2026-09-04"
   },
   {
     "slug": "the-nameless-street",
@@ -1050,5 +1049,64 @@
     "continuityAfter": "Helena converts the vacancy into control of MSF, makes Lynleit the official suspect, and directs a hunt for her arrest while the true authorship remains hidden.",
     "chapterSlug": null,
     "updated": "2026-08-24"
+  },
+  {
+    "slug": "doom-has-an-address",
+    "code": "MOM-021",
+    "title": "Doom Has an Address",
+    "status": "Key scene",
+    "placementStatus": "Late Arc 1 placement confirmed",
+    "timelinePhase": "lynleit-disappears",
+    "timelineLabel": "Lynleit Disappears",
+    "sequence": 0.4,
+    "sceneType": "Curse and identity crisis",
+    "thread": "Lynleit and Kyrien",
+    "location": "Several locations, ending in a private room",
+    "summary": "After Lynleit and Kyrien destroy a Holumn together, its death becomes one terminal curse written across both identities. Research leads Lynleit to a form of survival that requires reciprocal change rather than either person's death.",
+    "purpose": "Turns the pair's accumulated trust and involuntary attraction into the mechanism of a Holumn conflict without making romance the story's primary objective. Natalia's scholarship and Father Mikhail's Church records independently identify transformation as the only survivable answer.",
+    "characters": [
+      { "name": "Lynleit", "slug": "lynleit" },
+      { "name": "Kyrien", "slug": "kyrien" },
+      { "name": "Natalia", "slug": "natalia" },
+      { "name": "Father Mikhail", "slug": "father-mikhail" }
+    ],
+    "characterAnchors": [
+      { "slug": "lynleit", "beat": "Doom Has an Address" },
+      { "slug": "kyrien", "beat": "One Curse across Two Identities" },
+      { "slug": "natalia", "beat": "The Ego as Address" },
+      { "slug": "father-mikhail", "beat": "The Unrespectable Answer" }
+    ],
+    "known": [
+      "Lynleit and Kyrien consciously destroy the same Holumn together.",
+      "Destroying the Holumn completes its mechanism and transfers its terminal condition to the ego responsible for its death.",
+      "Their joint action leaves one curse distributed across two identities rather than creating two separate curses.",
+      "Their bodies weaken, sleep stops restoring them, minor injuries heal slowly, magical tolerance declines, and ordinary exertion becomes increasingly difficult.",
+      "Suppressing the condition in either person fails because the remaining attachment reconstructs it in the other.",
+      "The traditional solution requires one of them to die first, collapsing the relation and releasing the survivor.",
+      "Lynleit refuses to choose which of them should live and searches Magiarchal records, medicine, prohibited theurgy, Natalia's research, and Church records for another answer.",
+      "Natalia identifies the curse as an attachment to conscious identity and explains that profound transformation may make the original ego unrecognizable to it.",
+      "Father Mikhail independently confirms that conversion, marriage, war, parenthood, confession, and other identity-changing experiences have disrupted related curses.",
+      "Mikhail tells Lynleit that sex could produce the necessary discontinuity only if a sufficient reciprocal attachment already exists.",
+      "Although Lynleit normally treats openness as a leadership skill, she keeps this proposed solution from Kyrien because its sexual and personal implications embarrass her, and initially evaluates their relationship as a possible procedure.",
+      "When their prognosis contracts from weeks to days, Lynleit initiates a sudden, clumsy, and almost argumentative encounter.",
+      "Kyrien has enough time to understand what she is asking and responds deliberately.",
+      "Their simultaneous and reciprocal crossing changes the identities recognized by the curse and makes its sympathetic attachment unstable.",
+      "Sex is not itself the cure. The curse fractures because the encounter embodies a relationship change neither identity can dismiss as hypothetical.",
+      "Both survive, but neither remains psychologically identical to the person who entered the battle.",
+      {
+        "text": "The final change leaves the reader to infer which former boundaries have ended and what ordinary shared life might become possible before Lynleit's disappearance.",
+        "status": "inferred"
+      }
+    ],
+    "openQuestions": [
+      "What identity, appearance, and prior incident history belong to the Holumn before Lynleit and Kyrien destroy it?",
+      "What operation places them in position to destroy it together?",
+      "Which Magi first identify the traditional one-death solution, and how much of the prognosis becomes known outside the four people in this scene?",
+      "Where does the final private encounter occur within late Arc 1?"
+    ],
+    "continuityBefore": "Lynleit and Kyrien have accumulated a private rhythm through work, cards, protected secrets, voluntary loyalty, and repeated physical awareness. Her original authority over him has already lost practical force, and he has chosen to remain.",
+    "continuityAfter": "The curse fractures and both survive. Their short sexual relationship becomes part of an emerging shared life before Lynleit disappears near the Arc 2 threshold and her pregnancy becomes legible only at the opening of the next arc.",
+    "chapterSlug": "doom-has-an-address",
+    "updated": "2026-09-04"
   }
 ]

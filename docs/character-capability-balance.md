@@ -30,6 +30,7 @@ These questions define what each character can do, what they cannot do, and why 
 | Fionn | What operational blind spots, physical limitations, magical costs, or personal dependencies make Fionn vulnerable despite his mastery? | 0% |
 | Lester | What can Lester's demiholumn nature actually do, what can it never do, what triggers it, and what cost or danger follows an impossible intervention? | 0% |
 | Son | Does Lynleit and Kyrien's son inherit the blue-flame lineage, another ability, or no Magus talent, and how would any inheritance remain balanced against both parents? | 0% |
+| Lynleit and Kyrien | Does the identity curse leave any lasting physical, magical, or psychological limitation after it fractures, or do all capability effects end with the terminal condition? | 0% |
 | Lynleit | Beyond passing MSF weapons certification, what level of firearms skill does Lynleit possess, and where does she remain dependent on Felix, Reiner, Kyrien, or another specialist? | 0% |
 | Items & Artefacts | What governs the leviathan-hide coat's autonomous forms, what counts as minor magical damage, can it refuse protection, and what prevents it from becoming a universal defence? | 0% |
 | Inspector Leo | Which investigative strengths belong specifically to Leo, and what does restricted clearance prevent him from accomplishing without Natalia, MSF, or Church access? | 20% |

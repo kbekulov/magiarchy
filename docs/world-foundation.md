@@ -16,6 +16,8 @@ There is no standard monster and no requirement that a Holumn possess a body. A 
 
 Containment always has a cost. Every intervention changes the balance. Suppressing one breach can move the pressure somewhere else, while destroying a visible form may leave the rule behind.
 
+The incident recorded as HI-006 establishes that destruction can itself complete a Holumn's mechanism. Lynleit and Kyrien destroy one manifestation together and inherit a single terminal curse distributed across both identities. Suppressing the condition in either person causes it to reconstruct from the other. The curse breaks only after both people undergo a reciprocal change deep enough that its original identification of them no longer holds.
+
 ### A Demiholumn Exists
 
 Lester is a demiholumn, half human and half Holumn. His existence does not yet have a complete explanation. It is unclear whether he was born this way, became this way, or requires a different account entirely.

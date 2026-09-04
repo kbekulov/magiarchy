@@ -9,8 +9,21 @@
 - Record every website change, however small, as a concise update entry in the Home-page update feed in `index.html`. Add the newest entry first and include the publication date plus a plain-language summary of what changed.
 - Do not include unrelated user changes in a commit. If a push is blocked, report the blocker and leave the local commit intact.
 
+## Backlog
+
+Before starting any new user request, check the repository's `backlog/` folder for `*.txt` files.
+
+- Treat every `*.txt` file in `backlog/` as pending author-supplied work that takes priority over the new request.
+- Process and fully integrate all backlog files before beginning the new request.
+- Integrate each backlog prompt into all relevant project files, records, ledgers, indexes, and user-facing surfaces according to the normal project rules.
+- Once a backlog file has been fully integrated, delete that `*.txt` file from `backlog/`.
+- Backlog files are added manually by the author. Do not create backlog files unless explicitly requested.
+- Do not leave a processed backlog file in place.
+- If a backlog item cannot be fully integrated because it is ambiguous, contradictory, or requires author confirmation, stop and report the blocker instead of deleting the file or proceeding with unrelated work.
+
 ## Product and design direction
 
+- Public wiki pages use clear declarative prose for established canon. Keep development workflow language such as mock, placeholder, pending, provisional, awaiting definition, or instructions to the author inside the editorial Docs ledgers and private page notes, not in reader-facing records. When an image or recording is unavailable, state that plainly without describing future work.
 - Avoid prose that reads like an AI-generated soundbite. Do not use formulaic reversals, symmetrical slogans, vague profundity, self-congratulatory summaries, or generic dramatic conclusions. State the fact, mechanism, consequence, or writer guidance directly. Use contrast only when it communicates a necessary distinction that cannot be stated more plainly.
 - In reader-facing Moment fact lists and Chapter preface tables, distinguish material shown or stated in the scene from conclusions intentionally left for the reader to infer. Use the shared blue and purple visual key, and label the categories in plain reader language. Never expose Nasu-audit, drafting, or internal-review terminology in these public labels. Mark inference only when the prose supplies enough evidence for the conclusion without explaining it openly.
 - Maintain `docs/character-behavior-audit.md` as a writer-facing advisory record for character reactions where sex, embodiment, or gendered social experience may matter. Keep every note separate from canon until the author accepts it. Combine the character's established history, physical circumstances, MBTI type and function emphasis, culture, role, and immediate pressure. Use the female, male, and story-pressure visual keys. Reject broad suggestions that would make every man or every woman behave alike.

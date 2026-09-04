@@ -11,7 +11,7 @@
   "hierarchy": [
     "ren-l17-sparrow",
     "ren-l19-magpie",
-    "ren-l22-rook",
+    "ren-l21-rook",
     "ren-l24-crow",
     "ren-l28-raven",
     "ren-l31-swan"
@@ -27,14 +27,14 @@
       "role": "Compact institutional and concealed-carry sidearm",
       "familyPosition": "Small, discreet, elegant institutional pistol",
       "storyUse": "Standard-issued pistol for every MSF officer who has passed weapons certification. MSF purchases the Sparrow from Ren Arms and does not manufacture firearms.",
-      "designSummary": "A slim, compact, silver-finished pistol with an elegant and deliberately understated appearance. Its proportions sit conceptually between the Walther PPK and SIG Sauer P230, slightly more elongated and graceful than a PPK while retaining enough visual weight to avoid looking fragile.",
+      "designSummary": "A slim silver-and-charcoal pistol built around the older Ren Arms metal-frame language. The brushed silver slide is elongated for its height, with a beveled nose, a long shallow ejection-port cut, a narrow rear serration block, and the RN shield set behind the caliber mark. The dark frame rises into an exposed hammer and a smooth, gently curved backstrap, keeping the pistol graceful without making it visually fragile.",
       "characteristics": [
-        "Narrow silver slide",
-        "Gently rounded upper profile",
-        "Exposed hammer and small conventional sights",
-        "Dark grip panels contrasting with silver metal",
-        "Smooth exterior surfaces and restrained controls",
-        "Designed for personnel who carry it far more often than they fire it"
+        "Brushed silver slide over a dark charcoal frame",
+        "Beveled muzzle and gently rounded upper profile",
+        "Exposed serrated hammer and low conventional sights",
+        "Deeply inset grip panels with broad, smooth palm surfaces",
+        "Curved trigger, restrained slide controls, and no external manual safety",
+        "Short extended magazine base that adds purchase without changing the narrow silhouette"
       ],
       "modernizationNote": "Despite the Sparrow's older design lineage, current-production models omit an external manual safety to reflect the demands and handling priorities of modern combat.",
       "finishNote": "The silver finish is standard to the firearm and is not an MSF customization. Routine issue gradually makes the ordinary Ren Arms product visually associated with MSF officers.",
@@ -57,14 +57,14 @@
       "caliber": "9×19 mm",
       "role": "Heavier compact service pistol",
       "familyPosition": "Larger, louder, and heavier relative of the Sparrow",
-      "designSummary": "An enlarged and strengthened development of the Sparrow for the more powerful 9×19 cartridge. It retains the older Ren Arms family line while becoming thicker, heavier, visually denser, and more assertive.",
+      "designSummary": "An enlarged silver-and-charcoal development of the Sparrow for 9×19 mm. The longer brushed slide, taller dark frame, extended grip, and squared accessory profile give it more mass without abandoning the exposed hammer or the older Ren Arms silhouette. The supplied reference image shows the optional muzzle compensator and extended magazine installed, making the pistol visibly longer in both directions than its base configuration.",
       "characteristics": [
-        "Graceful slide profile and exposed hammer",
-        "Narrow forward profile",
-        "Restrained controls",
-        "Recognizably Ren Arms grip and frame lines",
-        "Metallic finishes remain common",
-        "Darker service finishes may exist"
+        "Brushed silver slide with a long upper relief cut",
+        "Exposed serrated hammer and conventional raised sights",
+        "Dark charcoal frame with the Sparrow family's curved backstrap and inset grip panels",
+        "Restrained slide controls and no external manual safety",
+        "Optional squared compensator with two open top ports",
+        "Optional extended magazine projecting below the grip for added hand support"
       ],
       "modernizationNote": "Despite the Magpie's older design lineage, current-production models omit an external manual safety to reflect the demands and handling priorities of modern combat.",
       "optionsSummary": "Two optional attachments help the compact pistol remain controllable under the stronger recoil of its 9×19 cartridge.",
@@ -83,42 +83,59 @@
       "references": ["SIG Sauer P230 aesthetic lineage", "SIG Sauer P225 / P239-type proportions", "Compact CZ influence"]
     },
     {
-      "slug": "ren-l22-rook",
-      "model": "Ren L22",
+      "slug": "ren-l21-rook",
+      "model": "Ren L21",
       "nickname": "Rook",
+      "image": "media/gallery/images/weapons/ren_l21_rook.png",
+      "imageAlt": "Side profile illustration of the compact black Ren L21 Rook with brass-colored barrel, trigger, and controls",
       "caliber": "9×19 mm",
-      "role": "Micro-compact concealed-carry and close-protection pistol",
-      "familyPosition": "Micro-compact modern carry pistol",
-      "designSummary": "The Rook moves Ren Arms into a micro-compact service philosophy. It is shorter, slimmer, and more carry-focused than the Sparrow and Magpie while retaining enough grip and slide length to remain credible for trained close-protection and institutional users.",
+      "role": "Micro-compact personal-defense and close-protection pistol",
+      "familyPosition": "Smallest modern polymer-frame pistol in the family",
+      "storyUse": "A common personal purchase for self-defense and a favored private sidearm among style-conscious MSF officers. Felix owns an L21 and later lends it to Lynleit when her continued reliance on the weaker 9×17 Sparrow concerns him.",
+      "designSummary": "The Rook is a short, dense 9×19 mm pistol derived from the L24 Crow but reduced in slide, dust-cover, and grip length. Its black polymer frame and dark steel slide keep the mass low, while brass-colored details at the barrel, trigger, slide lock, and magazine release distinguish it from an ordinary service finish. Interlocking diagonal serrations at both ends of the slide give the small pistol a more intricate personal character than the Crow.",
       "characteristics": [
-        "Polymer or polymer-dominant frame",
-        "Slim micro-compact proportions",
-        "Extended micro-compact grip profile",
-        "Clean, practical slide surfaces",
-        "Carry-focused controls and serrations",
-        "Modern styling without excessive decorative machining"
+        "Short dark steel slide over a compact black polymer frame",
+        "Brass-colored barrel visible at the muzzle and through the ejection port",
+        "Brass-colored trigger, slide lock, and magazine release",
+        "Dense crossed serration fields at the front and rear of the slide",
+        "Squared trigger guard with an undercut and a short accessory rail",
+        "Extended magazine base that completes the firing grip without giving the pistol Crow-length proportions"
       ],
       "variantNote": "Ghost Comp is the Rook's compensated premium configuration, occupying the same conceptual place that a Spectre Comp-style model holds within a micro-compact family.",
-      "finishNote": "The smallest modern service-oriented member of the family, intended for discreet carry without returning to the older metal-pistol language.",
+      "finishNote": "The smallest modern polymer-frame 9×19 mm pistol on the Narvean market. Its size and chambering support discreet defensive carry, while its brass details and elaborate serrations make it more individual than a standard service gun.",
       "nameMeaning": "A compact, practical, intelligent bird with more confidence and modern utility than a Sparrow.",
+      "characterLinks": [
+        {
+          "slug": "felix",
+          "name": "Felix",
+          "note": "Owns an L21 as his personal sidearm."
+        },
+        {
+          "slug": "lynleit",
+          "name": "Lynleit",
+          "note": "Later carries Felix's L21 on loan when he objects to her continued reliance on the 9×17 Sparrow."
+        }
+      ],
       "references": ["Walther P22Q", "SIG Sauer P365 XL", "SIG Sauer P365 Spectre Comp"]
     },
     {
       "slug": "ren-l24-crow",
       "model": "Ren L24",
       "nickname": "Crow",
+      "image": "media/gallery/images/weapons/ren_l24_crow.png",
+      "imageAlt": "Side profile illustration of the black Ren L24 Crow compact duty pistol",
       "caliber": "9×19 mm",
       "role": "Compact general-purpose duty pistol",
       "familyPosition": "Compact modern duty workhorse",
-      "designSummary": "The Crow is the compact workhorse of the modern Ren Arms family. It is larger and easier to control than the micro-compact Rook while remaining suitable for concealed, bodyguard, police, and ordinary duty use.",
+      "designSummary": "The Crow is the compact workhorse of the modern Ren Arms family and the parent design of the smaller L21 Rook. Its dark steel slide and black polymer frame are longer and taller than the Rook, with simpler parallel serrations, a full compact grip, and neutral metal controls. The proportions remain short enough for concealed and protective work while giving the firing hand more uninterrupted surface than the micro-compact model.",
       "characteristics": [
-        "Dark charcoal or black finishes",
-        "Polymer or polymer-dominant frame",
-        "Moderately sculpted ergonomic grip",
-        "Broad, clean slide surfaces",
-        "Practical serrations",
-        "Slight taper toward the muzzle",
-        "Compact proportions suited to concealed and duty carry"
+        "Dark charcoal steel slide and black polymer frame",
+        "Full compact grip with a textured central panel and sculpted finger channel",
+        "Straight parallel serrations at both ends of the slide",
+        "Broad central slide flats with an understated caliber mark",
+        "Squared undercut trigger guard and short accessory rail",
+        "Neutral silver trigger and restrained controls",
+        "Flush compact magazine and conventional duty sights"
       ],
       "finishNote": "It is neither prestigious nor exotic. It is the dependable all-purpose compact of the current family.",
       "nameMeaning": "Its common, capable, dark, and practical character.",
@@ -128,19 +145,22 @@
       "slug": "ren-l28-raven",
       "model": "Ren L28",
       "nickname": "Raven",
+      "image": "media/gallery/images/weapons/ren_l28_raven.png",
+      "imageAlt": "Side profile illustration of the dark full-size Ren L28 Raven pistol with a bright exposed barrel and blue trigger",
       "caliber": "9×19 mm",
       "role": "Full-size general service pistol",
       "familyPosition": "Full-size modern service pistol",
-      "designSummary": "The Raven is the full-size workhorse of the modern Ren Arms line. It extends the Crow's service philosophy into a longer slide, taller grip, greater mass, and conventional full-size duty silhouette.",
+      "designSummary": "The Raven is the full-size workhorse of the modern Ren Arms line. Its long dark slide carries five rounded forward windows that expose the bright barrel, while deep rear serrations, a full-length sculpted grip, and a squared frame give it greater visual weight than the Crow. A blue trigger provides the only vivid accent within an otherwise restrained service finish.",
       "characteristics": [
-        "Dark charcoal or black finishes",
-        "Longer slide and taller grip than the Crow",
-        "Greater overall mass",
-        "Sculpted full-size ergonomic grip",
-        "Clean modern service-pistol slide shaping",
-        "Intended for police, military, security, and state service"
+        "Long dark-charcoal slide with broad uninterrupted side flats",
+        "Five rounded forward slide windows exposing the bright barrel",
+        "Deep straight rear serrations and raised conventional sights",
+        "Full-size sculpted grip with finger channels and inset textured panels",
+        "Squared trigger guard, extended dust cover, and accessory rail",
+        "Blue trigger set against restrained black controls",
+        "Flush full-size magazine and a small lanyard loop at the heel"
       ],
-      "finishNote": "A serious, reliable full-size service pistol with no prestige role.",
+      "finishNote": "A serious full-size service pistol rather than a prestige model. Its barrel windows and blue trigger distinguish it without moving it into the Swan's crafted specialist role.",
       "nameMeaning": "A larger, darker, and more imposing service weapon than the Rook or Crow.",
       "references": ["Glock 17", "Walther PDP Full Size", "Full-size modern service pistols"]
     },
@@ -148,20 +168,23 @@
       "slug": "ren-l31-swan",
       "model": "Ren L31",
       "nickname": "Swan",
+      "image": "media/gallery/images/weapons/ren_l31_swan.png",
+      "imageAlt": "Side profile illustration of the silver, black, and brass-accented Ren L31 Swan premium long-slide pistol",
       "caliber": "9×19 mm",
-      "role": "Premium large-frame precision and prestige pistol",
-      "familyPosition": "Premium large-frame specialist pistol",
-      "designSummary": "The Swan is Ren Arms' premium large-frame pistol. Its design draws on the precise construction of premium 2011 and 1911 pistols, the scale of the Desert Eagle, and the controlled proportions of the SIG GTO reference.",
+      "role": "Premium long-slide precision, prestige, and specialist pistol",
+      "familyPosition": "Longest and most refined specialist pistol",
+      "designSummary": "The Swan is a long-slide, exposed-hammer prestige pistol built around a 2011 and 1911-derived silhouette. A silver slide and upper frame sit over a black grip module, while the brass-colored barrel is visible through a row of elongated side windows and at the muzzle. The extended dust cover, long sight radius, skeletonized controls, flared beavertail, and sculpted frame keep the large pistol narrow and deliberate rather than bulky.",
       "characteristics": [
-        "Large premium frame and substantial slide",
-        "Exposed-hammer prestige-gun silhouette",
-        "Extended sighting profile",
-        "Refined frame-to-slide lines",
-        "Sculpted full-size grip",
-        "Visually powerful with controlled proportions"
+        "Long brushed-silver slide with a row of elongated forward windows",
+        "Brass-colored barrel visible through the slide and at the muzzle",
+        "Black lower frame with an extended dust cover and accessory rail",
+        "Exposed skeletonized hammer, long beavertail, and fitted thumb safety",
+        "Lightened trigger and raised precision sights",
+        "Deeply textured black grip with sculpted front and rear purchase",
+        "Fine rear slide serrations and a polished script model mark"
       ],
-      "finishNote": "A specialist or prestige sidearm that is not part of ordinary standard issue.",
-      "nameMeaning": "Size, grace, refinement, and composure. A Raven should look like a full-size duty weapon; a Swan should look premium, powerful, and controlled.",
+      "finishNote": "A specialist or prestige sidearm outside ordinary standard issue. Its long slide, exposed mechanism, ported presentation, and mixed metal finishes give it a crafted appearance distinct from the modern duty line.",
+      "nameMeaning": "Length, grace, refinement, and composure. A Raven remains a full-size duty weapon; a Swan is visibly crafted, controlled, and personal.",
       "references": ["Premium 2011 pistols", "Premium 1911 pistols", "Desert Eagle", "SIG GTO"]
     }
   ]}

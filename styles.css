@@ -970,8 +970,7 @@
 
 .weapons-page .docs-main-pane,
 .weapon-hierarchy-section,
-.weapon-catalog-section,
-.weapons-future-section {
+.weapon-catalog-section {
   min-width: 0;
 }
 
@@ -1681,48 +1680,6 @@
   font-size: .67rem;
 }
 
-.weapons-future-grid {
-  display: grid;
-  grid-template-columns: repeat(5, minmax(0, 1fr));
-  border: 1px solid var(--weapon-line);
-  border-radius: 8px;
-  overflow: hidden;
-}
-
-.weapon-future-card {
-  display: grid;
-  min-height: 125px;
-  align-content: space-between;
-  gap: 8px;
-  padding: 18px;
-  background: #222328;
-}
-
-.weapon-future-card:not(:nth-child(5n + 1)) {
-  border-left: 1px solid var(--weapon-line);
-}
-
-.weapon-future-card:nth-child(n + 6) {
-  border-top: 1px solid var(--weapon-line);
-}
-
-.weapon-future-card > span {
-  color: #737af0;
-  font-family: var(--mono);
-  font-size: .68rem;
-}
-
-.weapon-future-card strong {
-  align-self: end;
-  color: #d6d8de;
-  font-size: .84rem;
-}
-
-.weapon-future-card small {
-  color: #777d87;
-  font-size: .65rem;
-}
-
 .weapon-load-error {
   padding: 20px;
   border: 1px solid #884f55;
@@ -1750,18 +1707,6 @@
 
   .weapon-record {
     grid-template-columns: 250px minmax(0, 1fr);
-  }
-
-  .weapons-future-grid {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
-
-  .weapon-future-card:not(:nth-child(5n + 1)) {
-    border-left: 0;
-  }
-
-  .weapon-future-card:not(:nth-child(3n + 1)) {
-    border-left: 1px solid var(--weapon-line);
   }
 
   .weapon-future-card:nth-child(n + 4) {
@@ -1939,21 +1884,6 @@
     grid-template-columns: 1fr;
   }
 
-  .weapons-future-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
-  .weapon-future-card:not(:nth-child(3n + 1)) {
-    border-left: 0;
-  }
-
-  .weapon-future-card:nth-child(even) {
-    border-left: 1px solid var(--weapon-line);
-  }
-
-  .weapon-future-card:nth-child(n + 3) {
-    border-top: 1px solid var(--weapon-line);
-  }
 }
 
 * {
