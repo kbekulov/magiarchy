@@ -1,6 +1,6 @@
 {
-  "generated": "2026-09-04T14:11:47.404Z",
-  "count": 386,
+  "generated": "2026-09-04T14:38:28.283Z",
+  "count": 388,
   "entries": [
     {
       "id": "page-characters",
@@ -1041,6 +1041,14 @@
       "url": "character.html?character=reiner#connections-title",
       "subtitle": "MSF officer, friend, and personal bodyguard",
       "text": "Reiner: Connections MSF officer, friend, and personal bodyguard Lynleit Their friendship allows Reiner to remain close without every interaction feeling like an assignment. Trusting her judgment over protocol is therefore a serious personal choice, not passive obedience. Kyrien Reiner remains suspicious of Kyrien's presence near Lynleit, but contains that suspicion after consciously accepting her decision. Potential sexual tension Unresolved No current pairing is supported. His long-standing bond with Lynleit remains protective rather than romantic. Reiner"
+    },
+    {
+      "id": "character-reiner-equipment",
+      "title": "Reiner: Equipment",
+      "type": "Character section",
+      "url": "character.html?character=reiner#equipment-title",
+      "subtitle": "MSF officer, friend, and personal bodyguard",
+      "text": "Reiner: Equipment MSF officer, friend, and personal bodyguard Preferred sidearm Ren L28 \"Raven\" 9×19 mm Advanced service pistol Accuracy and performance Reiner prefers the full-size Raven over the standard Crow for its better accuracy and performance. weapons.html#ren-l28-raven Reiner"
     },
     {
       "id": "character-reiner-motivations",
@@ -2563,6 +2571,14 @@
       "text": "Visual Archive: Site update Home update feed SH Visual Archive 22 Aug 2026 · Sherie Sherie's first character artwork is now featured on her personnel card and catalogued in the Gallery. View the artwork →"
     },
     {
+      "id": "update-update-ren-arms-service-hierarchy",
+      "title": "Weapons Archive: Site update",
+      "type": "Update",
+      "url": "index.html#update-ren-arms-service-hierarchy",
+      "subtitle": "Home update feed",
+      "text": "Weapons Archive: Site update Home update feed RA Weapons Archive 04 Sep 2026 · Service hierarchy The Ren L24 Crow is Narvea's ordinary police and military secondary sidearm. Officers may request the higher-performance L28 Raven, which Reiner prefers, while the L31 Swan occupies the family's luxury tier. Review the service pistols →"
+    },
+    {
       "id": "update-update-ren-arms-l21-art",
       "title": "Weapons Archive: Site update",
       "type": "Update",
@@ -2999,24 +3015,24 @@
       "title": "Ren L24 “Crow”",
       "type": "Weapon",
       "url": "weapons.html#ren-l24-crow",
-      "subtitle": "Compact general-purpose duty pistol",
-      "text": "Ren L24 “Crow” Compact general-purpose duty pistol Ren L24 Crow 9×19 mm Compact general-purpose duty pistol Compact modern duty workhorse The Crow is the compact workhorse of the modern Ren Arms family and the parent design of the smaller L21 Rook. Its dark steel slide and black polymer frame are longer and taller than the Rook, with simpler parallel serrations, a full compact grip, and neutral metal controls. The proportions remain short enough for concealed and protective work while giving the firing hand more uninterrupted surface than the micro-compact model. Dark charcoal steel slide and black polymer frame Full compact grip with a textured central panel and sculpted finger channel Straight parallel serrations at both ends of the slide Broad central slide flats with an understated caliber mark Squared undercut trigger guard and short accessory rail Neutral silver trigger and restrained controls Flush compact magazine and conventional duty sights It is neither prestigious nor exotic. It is the dependable all-purpose compact of the current family. Its common, capable, dark, and practical character. Glock 19 CZ P-10 C Compact modern service pistols Ren Arms Rennel, Narvea"
+      "subtitle": "Standard compact law-enforcement and military secondary sidearm",
+      "text": "Ren L24 “Crow” Standard compact law-enforcement and military secondary sidearm Ren L24 Crow 9×19 mm Standard compact law-enforcement and military secondary sidearm Default compact state-service pistol The Crow is the preferred default secondary sidearm for Narvean law enforcement and military service. It is widely issued because it is conventional, dependable, and easy to treat as ordinary equipment rather than a specialist selection. The Crow is the compact workhorse of the modern Ren Arms family and the parent design of the smaller L21 Rook. Its dark steel slide and black polymer frame are longer and taller than the Rook, with simpler parallel serrations, a full compact grip, and neutral metal controls. The proportions remain short enough for concealed and protective work while giving the firing hand more uninterrupted surface than the micro-compact model. Dark charcoal steel slide and black polymer frame Full compact grip with a textured central panel and sculpted finger channel Straight parallel serrations at both ends of the slide Broad central slide flats with an understated caliber mark Squared undercut trigger guard and short accessory rail Neutral silver trigger and restrained controls Flush compact magazine and conventional duty sights It is the boring default of the current service family: common, dependable, and unremarkable enough to disappear into police and military equipment. Its common, capable, dark, and practical character. Glock 19 CZ P-10 C Compact modern service pistols Ren Arms Rennel, Narvea"
     },
     {
       "id": "weapon-ren-l28-raven",
       "title": "Ren L28 “Raven”",
       "type": "Weapon",
       "url": "weapons.html#ren-l28-raven",
-      "subtitle": "Full-size general service pistol",
-      "text": "Ren L28 “Raven” Full-size general service pistol Ren L28 Raven 9×19 mm Full-size general service pistol Full-size modern service pistol The Raven is the full-size workhorse of the modern Ren Arms line. Its long dark slide carries five rounded forward windows that expose the bright barrel, while deep rear serrations, a full-length sculpted grip, and a squared frame give it greater visual weight than the Crow. A blue trigger provides the only vivid accent within an otherwise restrained service finish. Long dark-charcoal slide with broad uninterrupted side flats Five rounded forward slide windows exposing the bright barrel Deep straight rear serrations and raised conventional sights Full-size sculpted grip with finger channels and inset textured panels Squared trigger guard, extended dust cover, and accessory rail Blue trigger set against restrained black controls Flush full-size magazine and a small lanyard loop at the heel A serious full-size service pistol rather than a prestige model. Its barrel windows and blue trigger distinguish it without moving it into the Swan's crafted specialist role. A larger, darker, and more imposing service weapon than the Rook or Crow. Glock 17 Walther PDP Full Size Full-size modern service pistols Ren Arms Rennel, Narvea"
+      "subtitle": "Advanced full-size law-enforcement and military service pistol",
+      "text": "Ren L28 “Raven” Advanced full-size law-enforcement and military service pistol Ren L28 Raven 9×19 mm Advanced full-size law-enforcement and military service pistol Performance-oriented service upgrade Police and military officers may request the Raven in place of the standard Crow when they favor better accuracy and performance. Reiner prefers the Raven. The Raven is the advanced full-size counterpart to the standard Crow. Its long dark slide carries five rounded forward windows that expose the bright barrel, while deep rear serrations, a full-length sculpted grip, and a squared frame give it greater visual weight than the Crow. A blue trigger provides the only vivid accent within an otherwise restrained service finish. Long dark-charcoal slide with broad uninterrupted side flats Five rounded forward slide windows exposing the bright barrel Deep straight rear serrations and raised conventional sights Full-size sculpted grip with finger channels and inset textured panels Squared trigger guard, extended dust cover, and accessory rail Blue trigger set against restrained black controls Flush full-size magazine and a small lanyard loop at the heel A serious performance-focused service pistol rather than a luxury model. Its barrel windows and blue trigger distinguish an officer-selected upgrade without moving it into the Swan's crafted role. A larger, darker, and more imposing service weapon than the Rook or Crow. reiner Reiner Prefers the Raven over the standard Crow for its accuracy and performance. Glock 17 Walther PDP Full Size Full-size modern service pistols Ren Arms Rennel, Narvea"
     },
     {
       "id": "weapon-ren-l31-swan",
       "title": "Ren L31 “Swan”",
       "type": "Weapon",
       "url": "weapons.html#ren-l31-swan",
-      "subtitle": "Premium long-slide precision, prestige, and specialist pistol",
-      "text": "Ren L31 “Swan” Premium long-slide precision, prestige, and specialist pistol Ren L31 Swan 9×19 mm Premium long-slide precision, prestige, and specialist pistol Longest and most refined specialist pistol The Swan is a long-slide, exposed-hammer prestige pistol built around a 2011 and 1911-derived silhouette. A silver slide and upper frame sit over a black grip module, while the brass-colored barrel is visible through a row of elongated side windows and at the muzzle. The extended dust cover, long sight radius, skeletonized controls, flared beavertail, and sculpted frame keep the large pistol narrow and deliberate rather than bulky. Long brushed-silver slide with a row of elongated forward windows Brass-colored barrel visible through the slide and at the muzzle Black lower frame with an extended dust cover and accessory rail Exposed skeletonized hammer, long beavertail, and fitted thumb safety Lightened trigger and raised precision sights Deeply textured black grip with sculpted front and rear purchase Fine rear slide serrations and a polished script model mark A specialist or prestige sidearm outside ordinary standard issue. Its long slide, exposed mechanism, ported presentation, and mixed metal finishes give it a crafted appearance distinct from the modern duty line. Length, grace, refinement, and composure. A Raven remains a full-size duty weapon; a Swan is visibly crafted, controlled, and personal. Premium 2011 pistols Premium 1911 pistols Desert Eagle SIG GTO Ren Arms Rennel, Narvea"
+      "subtitle": "Luxury long-slide pistol",
+      "text": "Ren L31 “Swan” Luxury long-slide pistol Ren L31 Swan 9×19 mm Luxury long-slide pistol Luxury flagship of the Ren Arms pistol family The Swan is a luxury long-slide, exposed-hammer pistol built around a 2011 and 1911-derived silhouette. A silver slide and upper frame sit over a black grip module, while the brass-colored barrel is visible through a row of elongated side windows and at the muzzle. The extended dust cover, long sight radius, skeletonized controls, flared beavertail, and sculpted frame keep the large pistol narrow and deliberate rather than bulky. Long brushed-silver slide with a row of elongated forward windows Brass-colored barrel visible through the slide and at the muzzle Black lower frame with an extended dust cover and accessory rail Exposed skeletonized hammer, long beavertail, and fitted thumb safety Lightened trigger and raised precision sights Deeply textured black grip with sculpted front and rear purchase Fine rear slide serrations and a polished script model mark A luxury sidearm outside ordinary standard issue. Its long slide, exposed mechanism, ported presentation, and mixed metal finishes give it a crafted appearance distinct from the modern duty line. Length, grace, refinement, and composure. A Raven remains a full-size duty weapon; a Swan is visibly crafted, controlled, and personal. Premium 2011 pistols Premium 1911 pistols Desert Eagle SIG GTO Ren Arms Rennel, Narvea"
     },
     {
       "id": "world-holumns",

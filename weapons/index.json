@@ -125,8 +125,9 @@
       "image": "media/gallery/images/weapons/ren_l24_crow.png",
       "imageAlt": "Side profile illustration of the black Ren L24 Crow compact duty pistol",
       "caliber": "9×19 mm",
-      "role": "Compact general-purpose duty pistol",
-      "familyPosition": "Compact modern duty workhorse",
+      "role": "Standard compact law-enforcement and military secondary sidearm",
+      "familyPosition": "Default compact state-service pistol",
+      "storyUse": "The Crow is the preferred default secondary sidearm for Narvean law enforcement and military service. It is widely issued because it is conventional, dependable, and easy to treat as ordinary equipment rather than a specialist selection.",
       "designSummary": "The Crow is the compact workhorse of the modern Ren Arms family and the parent design of the smaller L21 Rook. Its dark steel slide and black polymer frame are longer and taller than the Rook, with simpler parallel serrations, a full compact grip, and neutral metal controls. The proportions remain short enough for concealed and protective work while giving the firing hand more uninterrupted surface than the micro-compact model.",
       "characteristics": [
         "Dark charcoal steel slide and black polymer frame",
@@ -137,7 +138,7 @@
         "Neutral silver trigger and restrained controls",
         "Flush compact magazine and conventional duty sights"
       ],
-      "finishNote": "It is neither prestigious nor exotic. It is the dependable all-purpose compact of the current family.",
+      "finishNote": "It is the boring default of the current service family: common, dependable, and unremarkable enough to disappear into police and military equipment.",
       "nameMeaning": "Its common, capable, dark, and practical character.",
       "references": ["Glock 19", "CZ P-10 C", "Compact modern service pistols"]
     },
@@ -148,9 +149,10 @@
       "image": "media/gallery/images/weapons/ren_l28_raven.png",
       "imageAlt": "Side profile illustration of the dark full-size Ren L28 Raven pistol with a bright exposed barrel and blue trigger",
       "caliber": "9×19 mm",
-      "role": "Full-size general service pistol",
-      "familyPosition": "Full-size modern service pistol",
-      "designSummary": "The Raven is the full-size workhorse of the modern Ren Arms line. Its long dark slide carries five rounded forward windows that expose the bright barrel, while deep rear serrations, a full-length sculpted grip, and a squared frame give it greater visual weight than the Crow. A blue trigger provides the only vivid accent within an otherwise restrained service finish.",
+      "role": "Advanced full-size law-enforcement and military service pistol",
+      "familyPosition": "Performance-oriented service upgrade",
+      "storyUse": "Police and military officers may request the Raven in place of the standard Crow when they favor better accuracy and performance. Reiner prefers the Raven.",
+      "designSummary": "The Raven is the advanced full-size counterpart to the standard Crow. Its long dark slide carries five rounded forward windows that expose the bright barrel, while deep rear serrations, a full-length sculpted grip, and a squared frame give it greater visual weight than the Crow. A blue trigger provides the only vivid accent within an otherwise restrained service finish.",
       "characteristics": [
         "Long dark-charcoal slide with broad uninterrupted side flats",
         "Five rounded forward slide windows exposing the bright barrel",
@@ -160,8 +162,15 @@
         "Blue trigger set against restrained black controls",
         "Flush full-size magazine and a small lanyard loop at the heel"
       ],
-      "finishNote": "A serious full-size service pistol rather than a prestige model. Its barrel windows and blue trigger distinguish it without moving it into the Swan's crafted specialist role.",
+      "finishNote": "A serious performance-focused service pistol rather than a luxury model. Its barrel windows and blue trigger distinguish an officer-selected upgrade without moving it into the Swan's crafted role.",
       "nameMeaning": "A larger, darker, and more imposing service weapon than the Rook or Crow.",
+      "characterLinks": [
+        {
+          "slug": "reiner",
+          "name": "Reiner",
+          "note": "Prefers the Raven over the standard Crow for its accuracy and performance."
+        }
+      ],
       "references": ["Glock 17", "Walther PDP Full Size", "Full-size modern service pistols"]
     },
     {
@@ -169,11 +178,11 @@
       "model": "Ren L31",
       "nickname": "Swan",
       "image": "media/gallery/images/weapons/ren_l31_swan.png",
-      "imageAlt": "Side profile illustration of the silver, black, and brass-accented Ren L31 Swan premium long-slide pistol",
+      "imageAlt": "Side profile illustration of the silver, black, and brass-accented Ren L31 Swan luxury long-slide pistol",
       "caliber": "9×19 mm",
-      "role": "Premium long-slide precision, prestige, and specialist pistol",
-      "familyPosition": "Longest and most refined specialist pistol",
-      "designSummary": "The Swan is a long-slide, exposed-hammer prestige pistol built around a 2011 and 1911-derived silhouette. A silver slide and upper frame sit over a black grip module, while the brass-colored barrel is visible through a row of elongated side windows and at the muzzle. The extended dust cover, long sight radius, skeletonized controls, flared beavertail, and sculpted frame keep the large pistol narrow and deliberate rather than bulky.",
+      "role": "Luxury long-slide pistol",
+      "familyPosition": "Luxury flagship of the Ren Arms pistol family",
+      "designSummary": "The Swan is a luxury long-slide, exposed-hammer pistol built around a 2011 and 1911-derived silhouette. A silver slide and upper frame sit over a black grip module, while the brass-colored barrel is visible through a row of elongated side windows and at the muzzle. The extended dust cover, long sight radius, skeletonized controls, flared beavertail, and sculpted frame keep the large pistol narrow and deliberate rather than bulky.",
       "characteristics": [
         "Long brushed-silver slide with a row of elongated forward windows",
         "Brass-colored barrel visible through the slide and at the muzzle",
@@ -183,7 +192,7 @@
         "Deeply textured black grip with sculpted front and rear purchase",
         "Fine rear slide serrations and a polished script model mark"
       ],
-      "finishNote": "A specialist or prestige sidearm outside ordinary standard issue. Its long slide, exposed mechanism, ported presentation, and mixed metal finishes give it a crafted appearance distinct from the modern duty line.",
+      "finishNote": "A luxury sidearm outside ordinary standard issue. Its long slide, exposed mechanism, ported presentation, and mixed metal finishes give it a crafted appearance distinct from the modern duty line.",
       "nameMeaning": "Length, grace, refinement, and composure. A Raven remains a full-size duty weapon; a Swan is visibly crafted, controlled, and personal.",
       "references": ["Premium 2011 pistols", "Premium 1911 pistols", "Desert Eagle", "SIG GTO"]
     }

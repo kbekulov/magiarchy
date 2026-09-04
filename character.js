@@ -211,6 +211,9 @@ const profileSeeds = [
       ['Height and build', 'Tall, broad, and heavily muscled.'],
       ['Distinguishing features', 'A squared face, pronounced brows, and a sharply trimmed black goatee.']
     ],
+    equipment: [
+      { label: 'Preferred sidearm', title: 'Ren L28 "Raven"', meta: ['9×19 mm', 'Advanced service pistol', 'Accuracy and performance'], detail: 'Reiner prefers the full-size Raven over the standard Crow for its better accuracy and performance.', href: 'weapons.html#ren-l28-raven' }
+    ],
     personalitySummary: 'Reiner is stern, procedural, controlled, and anchored by role boundaries, chain of command, duty, and legitimate authority. He rarely smiles, which makes every small break in his composure unusually visible. Where Felix works around an obstacle, Reiner commits to the direct line and becomes the rook that holds or breaks it.',
     traits: [
       { label: 'Protocol-focused', note: 'He treats procedure as accumulated operational knowledge and notices quickly when others disregard it.' },
