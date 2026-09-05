@@ -1,6 +1,6 @@
 {
-  "generated": "2026-09-05T09:45:20.412Z",
-  "count": 395,
+  "generated": "2026-09-05T09:50:14.316Z",
+  "count": 396,
   "entries": [
     {
       "id": "page-characters",
@@ -2281,6 +2281,14 @@
       "url": "index.html#update-grey-cat-omen",
       "subtitle": "Home update feed",
       "text": "Moment Archive: Site update Home update feed GC Moment Archive 26 Aug 2026 · Domestic omen Ash's chase is fixed in the early story as an omen of danger entering Lynleit's private life. Her clumsy pursuit exposes a childish side, while his repeated escape mirrors her slipping grasp on leads, safety, and the shape of her own future. Rain wins him shelter, and the trespasser chooses to stay. Open the cat chase Moment →"
+    },
+    {
+      "id": "update-update-moment-filter-alignment",
+      "title": "Moments: Site update",
+      "type": "Update",
+      "url": "index.html#update-moment-filter-alignment",
+      "subtitle": "Home update feed",
+      "text": "Moments: Site update Home update feed UI Moments 05 Sep 2026 · Filter alignment The Moments search and dropdown fields now share aligned labels and controls across desktop, tablet, and mobile layouts. Browse Moments →"
     },
     {
       "id": "update-update-msf-private-status",

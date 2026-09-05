@@ -147,6 +147,7 @@ Physicians have no knowledge of magic unless the author establishes an exception
 - Gradients are never allowed. Use solid fills, borders, opacity, spacing, and layered panels.
 - Entity links look like ordinary prose until hover or keyboard focus.
 - Interfaces must work with mouse, keyboard, and touch, with restrained motion and reduced-motion support.
+- Filter bars with labeled fields keep a visible label on every field, consistent control heights, and bottom-aligned field groups so label wrapping cannot stagger controls within a row. Verify desktop, intermediate two-column, and stacked mobile layouts; do not compensate with browser-specific offsets.
 - Weapon fact grids use row-aware dividers: vertical borders separate columns only, horizontal borders separate rows, and an unpaired final fact spans the row. Stacked mobile facts have horizontal separators only.
 - Masonry catalogs use the shared measured CSS Grid layout in `script.js`, never CSS multi-column layout. Direct masonry items remain transform-free while hover feedback may use stable borders, shadows, colors, media scale, and nested controls. This avoids Safari column-fragment repaint failures and keeps card placement consistent across browsers.
 - Primary navigation remains in the top bar. Every detailed view has breadcrumbs. Every page has the ownership footer and Page notes sidebar.
