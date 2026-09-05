@@ -156,6 +156,8 @@ Physicians have no knowledge of magic unless the author establishes an exception
 
 Music cards preserve the archive's flat artwork and compact metadata layout. Play only the supplied MP3, load audio on visitor action rather than autoplaying or preloading full tracks, and expose separate same-origin MP3 and WAV download links with file sizes. Keep unrecorded concepts inactive. Do not assign a supplied recording to a concept, character, or scene without author confirmation. Preserve the supplied audio bytes and filenames when importing into `media/music/`.
 
+The playable card banner is the primary play/pause button, operable by pointer, touch, Enter, or Space. Use a compact custom seek/time/mute row, synchronized with actual media events, and keep download actions independent. Do not show native browser controls when the custom player is active; retain them as a no-JavaScript fallback. Keep loading, paused, ended, and failed states readable without relying on color alone. Custom seek tracks must use solid fills, never gradients.
+
 - The design is dark, flat, compact, and original to MAGIARCHY.
 - Gradients are never allowed. Use solid fills, borders, opacity, spacing, and layered panels.
 - Entity links look like ordinary prose until hover or keyboard focus.

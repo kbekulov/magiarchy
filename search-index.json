@@ -1,6 +1,6 @@
 {
-  "generated": "2026-09-05T20:12:05.149Z",
-  "count": 405,
+  "generated": "2026-09-05T20:21:00.202Z",
+  "count": 406,
   "entries": [
     {
       "id": "page-characters",
@@ -40,7 +40,7 @@
       "type": "Archive page",
       "url": "music.html",
       "subtitle": "",
-      "text": "Music # music Themes, motifs, and scene tracks 1 playable track Audio archive Music Themes, motifs, and scene tracks. Listen here or download in MP3 and WAV. AUDIO 01 ♫ Soundtrack Available Theme 1 (stem) 1:53 MP3 playback Your browser cannot play this audio. Use the download links below. Playback is unavailable. Try downloading the MP3 below. Download MP3 ↓ 2.7 MB WAV ↓ 21.8 MB 01 ♫ Main theme Audio pending Reality Has Seams A restrained opening theme for the hidden world, built around pressure, secrecy, and the sense that reality is almost coming apart. Atmospheric Opening Placeholder 02 ♫ Character motif Audio pending Inherited Weight A possible Lynleit motif: controlled, formal, and carrying more responsibility than its melody initially admits. Lynleit Reflective Placeholder 03 ♫ Scene track Audio pending Containment Protocol A tense procedural track for controlled operations, incomplete information, and the moment a clean plan begins to fail. Containment Tension Placeholder 04 ♫ Aftermath Audio pending After the Spill A quiet aftermath piece for the space between survival and understanding, when the danger has passed but nothing feels resolved. Ambient Aftermath Placeholder ✎ Page notes Music Open 01 Replace placeholder tracks Add final titles, credits, artwork, and audio when music files are available. Notes are updated with the site code and published through GitHub Pages."
+      "text": "Music # music Themes, motifs, and scene tracks 1 playable track Audio archive Music Themes, motifs, and scene tracks. Listen here or download in MP3 and WAV. AUDIO 01 ♫ Play track Soundtrack Available Theme 1 (stem) Your browser cannot play this audio. Use the download links below. 0:00 1:53 Playback is unavailable. Try downloading the MP3 below. Download MP3 ↓ 2.7 MB WAV ↓ 21.8 MB 01 ♫ Main theme Audio pending Reality Has Seams A restrained opening theme for the hidden world, built around pressure, secrecy, and the sense that reality is almost coming apart. Atmospheric Opening Placeholder 02 ♫ Character motif Audio pending Inherited Weight A possible Lynleit motif: controlled, formal, and carrying more responsibility than its melody initially admits. Lynleit Reflective Placeholder 03 ♫ Scene track Audio pending Containment Protocol A tense procedural track for controlled operations, incomplete information, and the moment a clean plan begins to fail. Containment Tension Placeholder 04 ♫ Aftermath Audio pending After the Spill A quiet aftermath piece for the space between survival and understanding, when the danger has passed but nothing feels resolved. Ambient Aftermath Placeholder ✎ Page notes Music Open 01 Replace placeholder tracks Add final titles, credits, artwork, and audio when music files are available. Notes are updated with the site code and published through GitHub Pages."
     },
     {
       "id": "page-story",
@@ -2369,6 +2369,14 @@
       "url": "index.html#update-msf-blue-protocol",
       "subtitle": "Home update feed",
       "text": "MSF Archive: Site update Home update feed B1 MSF Archive 24 Aug 2026 · Blue protocol Lynleit's blue coat is now part of an encrypted MSF authority signal devised by Fionn. Top officers can identify genuine command through ordinary clothing, while Helena's ignorance of the rule is preserved as one of her greatest unresolved mistakes. Read the blue protocol →"
+    },
+    {
+      "id": "update-update-music-banner-player",
+      "title": "Music: Site update",
+      "type": "Update",
+      "url": "index.html#update-music-banner-player",
+      "subtitle": "Home update feed",
+      "text": "Music: Site update Home update feed ♫ Music 05 Sep 2026 · Custom card player Click or tap the track banner to play and pause. A compact seek bar, elapsed time, and mute control replace the browser player, while MP3 and WAV downloads remain separate. Open Music →"
     },
     {
       "id": "update-update-first-music-track",

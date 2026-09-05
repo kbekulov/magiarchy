@@ -73,15 +73,34 @@
           <section class="music-library" aria-label="Tracks and music concepts">
             <div class="music-card-grid">
               <article class="music-card music-card-playable reveal" id="theme-1-stem" aria-labelledby="theme-1-title">
-                <div class="music-card-art art-violet" aria-hidden="true"><span>AUDIO 01</span><i>♫</i></div>
+                <div class="music-card-art art-violet">
+                  <span aria-hidden="true">AUDIO 01</span><i aria-hidden="true">♫</i>
+                  <button class="music-banner-toggle" type="button" aria-label="Play Theme 1 (stem)" aria-controls="theme-1-audio" hidden>
+                    <span class="music-banner-icon" aria-hidden="true">
+                      <svg class="music-icon-play" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                      <svg class="music-icon-pause" viewBox="0 0 24 24"><path d="M6 5h4v14H6zm8 0h4v14h-4z"/></svg>
+                    </span>
+                    <span class="music-banner-label">Play track</span>
+                  </button>
+                </div>
                 <div class="music-card-body">
                   <div class="music-card-top"><span class="doc-topic">Soundtrack</span><span class="music-status music-status-ready">Available</span></div>
                   <h2 id="theme-1-title">Theme 1 (stem)</h2>
-                  <div class="music-tags"><span>1:53</span><span>MP3 playback</span></div>
-                  <audio class="music-player" controls preload="none" aria-label="Play Theme 1 (stem)" aria-describedby="theme-1-error">
+                  <audio class="music-player" id="theme-1-audio" controls preload="none" aria-label="Play Theme 1 (stem)" aria-describedby="theme-1-error">
                     <source src="media/music/theme_1_stem.mp3" type="audio/mpeg">
                     Your browser cannot play this audio. Use the download links below.
                   </audio>
+                  <div class="music-transport" hidden>
+                    <span class="music-elapsed">0:00</span>
+                    <div class="music-seek-track">
+                      <span class="music-seek-fill" aria-hidden="true"></span>
+                      <input class="music-seek" type="range" min="0" max="113.476" value="0" step="0.1" aria-label="Seek in Theme 1 (stem)" aria-valuetext="0:00 of 1:53" disabled>
+                    </div>
+                    <span class="music-duration">1:53</span>
+                    <button class="music-mute" type="button" aria-label="Mute Theme 1 (stem)" aria-pressed="false">
+                      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M11 5 6 9H3v6l5 4z"/><path class="music-volume-waves" d="M15 8a6 6 0 0 1 0 8m3-11a10 10 0 0 1 0 14"/><path class="music-volume-off" d="m15 9 6 6m0-6-6 6"/></svg>
+                    </button>
+                  </div>
                   <p class="music-player-error" id="theme-1-error" role="status" hidden>Playback is unavailable. Try downloading the MP3 below.</p>
                   <div class="music-downloads" role="group" aria-label="Download Theme 1 (stem)">
                     <span class="music-download-label">Download</span>
