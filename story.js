@@ -185,11 +185,12 @@ function renderChapterVersionSwitcher(entry, selected) {
   if (!chapterVersionSwitcher || !chapterVersionOptions || !chapterVersionCurrent) return;
   const versions = chapterVersions(entry);
   chapterVersionSwitcher.hidden = versions.length < 2;
-  chapterVersionCurrent.textContent = selected.versionLabel;
+  chapterVersionCurrent.textContent = `${selected.versionId}${selected.versionId === entry.defaultVersion ? ' · Canon' : ''}`;
   chapterVersionOptions.replaceChildren(...versions.map((version) => {
     const link = document.createElement('a');
     link.href = `story.html?chapter=${encodeURIComponent(entry.slug)}&version=${encodeURIComponent(version.id)}`;
-    link.textContent = version.label;
+    link.textContent = version.id;
+    link.title = version.label;
     link.classList.toggle('is-active', version.id === selected.versionId);
     if (version.id === selected.versionId) link.setAttribute('aria-current', 'page');
     return link;

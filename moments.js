@@ -105,9 +105,10 @@ function renderMomentVersionSwitcher(entry, selected) {
   if (!momentVersionSwitcher || !momentVersionOptions || !momentVersionCurrent) return;
   const versions = momentVersions(entry);
   momentVersionSwitcher.hidden = versions.length < 2;
-  momentVersionCurrent.textContent = selected.versionLabel;
+  momentVersionCurrent.textContent = `${selected.versionId}${selected.versionId === entry.defaultVersion ? ' · Canon' : ''}`;
   momentVersionOptions.replaceChildren(...versions.map((version) => {
-    const link = momentElement('a', version.id === selected.versionId ? 'is-active' : '', version.label);
+    const link = momentElement('a', version.id === selected.versionId ? 'is-active' : '', version.id);
+    link.title = version.label;
     link.href = `moments.html?moment=${encodeURIComponent(entry.slug)}&version=${encodeURIComponent(version.id)}`;
     if (version.id === selected.versionId) link.setAttribute('aria-current', 'page');
     return link;
@@ -321,7 +322,7 @@ async function renderMomentReader(entry, entries, requestedVersion) {
   ];
   if (selected.chapterSlug) {
     const chapterVersion = selected.chapterVersion ? `&version=${encodeURIComponent(selected.chapterVersion)}` : '';
-    connections.push(createConnectionCard('Chapter', `Assigned chapter · ${selected.versionLabel}`, 'Open the corresponding version of the chapter containing this Moment.', `story.html?chapter=${encodeURIComponent(selected.chapterSlug)}${chapterVersion}`));
+    connections.push(createConnectionCard('Chapter', `Assigned chapter · ${selected.versionId}`, 'Open the corresponding version of the chapter containing this Moment.', `story.html?chapter=${encodeURIComponent(selected.chapterSlug)}${chapterVersion}`));
   }
   else connections.push(createConnectionCard('Chapter', 'Not assigned yet', 'This scene can remain stable while the chapter around it is still unwritten.'));
   document.querySelector('#moment-connection-grid').replaceChildren(...connections);

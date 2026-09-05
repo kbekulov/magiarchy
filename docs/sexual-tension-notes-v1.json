@@ -1,0 +1,161 @@
+{
+  "updated": "2026-09-05",
+  "pairs": [
+    {
+      "id": "lynleit-kyrien",
+      "status": "Established arc",
+      "direction": "Mutual, slow to surface",
+      "participants": [
+        {
+          "slug": "lynleit",
+          "name": "Lynleit",
+          "reading": "Lynleit studies Kyrien first as a recruit whose failed attack nearly harmed her. Their card games make that scrutiny personal: she learns his tells and begins noticing his hands and breath. Later she attempts intimacy as a possible treatment for their shared curse, but remains interested after they survive without completing it."
+        },
+        {
+          "slug": "kyrien",
+          "name": "Kyrien",
+          "reading": "Kyrien wants to beat Lynleit at cards and dislikes finding that she can read him. Her elegance and nerve also attract him. He stays because he wants the battle, then finds himself facing private questions that her orders cannot answer. After the attempted intimacy, she will not tell him why their curse disappeared."
+        }
+      ],
+      "dynamic": "The interrogation, card games, protected secret, and voluntary decision to stay give this pairing different kinds of familiarity. In Doom Has an Address, an incomplete attempt at intimacy breaks the shared curse. Lynleit loses the excuse of treatment without losing her interest in Kyrien; he is left trying to understand what happened. Their sexual relationship begins later in Arc 1."
+    },
+    {
+      "id": "lynleit-felix",
+      "status": "Established asymmetry",
+      "direction": "Felix overt, Lynleit deflecting",
+      "participants": [
+        {
+          "slug": "lynleit",
+          "name": "Lynleit",
+          "reading": "Felix's flirting belongs to a long friendship she refuses to reorganize around his advances. Her ease with him, combined with the repeated refusal, creates visible chemistry without requiring matching sexual intent."
+        },
+        {
+          "slug": "felix",
+          "name": "Felix",
+          "reading": "Lynleit is one of the few people his charm cannot simply move into the response he wants. Familiar affection, physical ease, and repeated deflection keep his attraction active even when he respects the boundary she has made."
+        }
+      ],
+      "dynamic": "The tension is easy for readers to recognize because it already has a social rhythm: he advances through jokes and flirtation, she ignores or redirects him, and neither abandons the closeness underneath the exchange. It does not need to become a relationship to remain real."
+    },
+    {
+      "id": "yulia-hiyu",
+      "status": "Emerging arc",
+      "direction": "Mutual, unequally conscious",
+      "participants": [
+        {
+          "slug": "yulia",
+          "name": "Yulia",
+          "reading": "Hiyu irritates her into sustained attention. She keeps arguing, correcting, and following because his ideas have already occupied more of her mind than she wants to admit. Suppressed attraction can sharpen both her impatience and her awareness of his physical presence."
+        },
+        {
+          "slug": "hiyu",
+          "name": "Hiyu",
+          "reading": "Yulia is the critic whose resistance makes an idea worth pursuing. He becomes dependent on her attention before he understands that the dependence is personal, leaving him oblivious to tension that is already changing how he seeks her out."
+        }
+      ],
+      "dynamic": "Their arguments repeatedly force proximity and attention. They lean over the same evidence, reach for the same document, and forget ordinary distance while trying to prove incompatible explanations. Yulia notices first and steps away; Hiyu continues the theory and wonders why she moved. Her anger becomes disproportionate when his recklessness makes the possibility of losing him real. Hiyu recognizes the bond through absence: an investigation without her corrections becomes less interesting, and he keeps turning toward the place where she should be. Yulia and Hiyu become intimate by learning to communicate through the noise they already create together."
+    },
+    {
+      "id": "kyrien-sherie",
+      "status": "Strong potential",
+      "direction": "Situational and confrontational",
+      "participants": [
+        {
+          "slug": "kyrien",
+          "name": "Kyrien",
+          "reading": "Sherie's charm is too deliberate to disarm him, but the precision behind it earns his attention. He is more likely to watch for the moment her performance fails than reward the performance itself."
+        },
+        {
+          "slug": "sherie",
+          "name": "Sherie",
+          "reading": "Kyrien's refusal to be steered threatens a skill she has internalized as part of her identity. Each failed attempt to produce a reaction can make his eventual attention feel more valuable and personally dangerous."
+        }
+      ],
+      "dynamic": "Sherie uses language and calibrated flirtation to control the rhythm of an exchange. Kyrien answers with silence, literalism, or no usable reaction at all. Repeated negotiation could turn her professional frustration into sexual tension without making them compatible or displacing Kyrien's eventual relationship with Lynleit."
+    },
+    {
+      "id": "fionn-helena",
+      "status": "Established marriage",
+      "direction": "Mutual, damaged by exclusion",
+      "participants": [
+        {
+          "slug": "fionn",
+          "name": "Fionn",
+          "reading": "Fionn's affection and desire for Helena are genuine. He separates bodily and domestic closeness from the secrets he believes he must carry alone, never understanding that this division changes what their intimacy means to her."
+        },
+        {
+          "slug": "helena",
+          "name": "Helena",
+          "reading": "Helena experiences desire alongside the need to be admitted into Fionn's complete life. Physical familiarity can therefore intensify resentment: she can be close enough to know his body while remaining excluded from the truth governing him."
+        }
+      ],
+      "dynamic": "Their sexual tension survives inside a real marriage because attraction and grievance occupy the same private space. The closer they become physically, the harder it is for Helena to accept that Fionn still decides which parts of himself she is permitted to know."
+    },
+    {
+      "id": "natalia-lester",
+      "status": "Established tension",
+      "direction": "Mutual, differently expressed",
+      "participants": [
+        {
+          "slug": "natalia",
+          "name": "Natalia",
+          "reading": "Lester is the living exception that Natalia cannot finish classifying. Her professional attention can become personal before she recognizes the change, especially when he interrupts an examination by noticing that she is watching him rather than the phenomenon around him."
+        },
+        {
+          "slug": "lester",
+          "name": "Lester",
+          "reading": "Natalia's analytical distance gives Lester something unusually difficult to provoke. He enjoys forcing the reserved researcher into immediate experience, but the tension changes when he wants her attention to recognize the man rather than examine the demiholumn condition."
+        }
+      ],
+      "dynamic": "Repeated cases bring Natalia's examination of Lester into conflict with his insistence on being treated as more than a case. He provokes her to act; she notices more than he expected. Their attraction does not answer her questions about his demiholumn nature."
+    },
+    {
+      "id": "sherie-felix",
+      "status": "Emerging potential",
+      "direction": "Mutual play, sincerity unresolved",
+      "participants": [
+        {
+          "slug": "sherie",
+          "name": "Sherie",
+          "reading": "Felix gives Sherie immediate wit, visible attention, and resistance that does not become hostility. She first tests him as play and competition, including whether his attention can be drawn away from Lynleit. The tension becomes personal when winning ceases to satisfy her and she begins wanting a response that is not produced by technique."
+        },
+        {
+          "slug": "felix",
+          "name": "Felix",
+          "reading": "Sherie can match Felix's teasing without mistaking it for a complete confession. Her ability to see when he hides seriousness behind a joke gives him an opponent and possible partner who can enjoy the performance while still asking for something sincere. His unresolved feelings for Lynleit prevent Sherie from winning him by charm alone."
+        }
+      ],
+      "dynamic": "Both use social ease as protection: Felix hides seriousness behind jokes, while Sherie hides vulnerability behind charm and diplomacy. Their chemistry is immediate, but similarity makes them capable of prolonged flirtation without honest movement. Sherie begins testing the friendship after learning that Lynleit has slept with Kyrien while still feeling responsible for Felix's affection. Her refusal to treat Felix as Lynleit's permanent responsibility creates a comic rivalry with Lynleit and a more serious test of whether Sherie wants Felix himself or only wants to win his attention."
+    }
+  ],
+  "unresolved": [
+    {
+      "slug": "tien",
+      "note": "No current pairing contains enough personal exposure beyond professional dependency or operational rivalry."
+    },
+    {
+      "slug": "heyk",
+      "note": "No current pairing is supported. Shared danger and survivor's grief do not create sexual tension on their own."
+    },
+    {
+      "slug": "drake",
+      "note": "No current pairing has the repeated personal friction needed to move beyond abstract compatibility."
+    },
+    {
+      "slug": "reiner",
+      "note": "No current pairing is supported. His long-standing bond with Lynleit remains protective rather than romantic."
+    },
+    {
+      "slug": "inspector-leo",
+      "note": "Leo is married and remains outside the hidden Magi world. No sexual-tension pairing beyond his marriage is supported."
+    },
+    {
+      "slug": "father-mikhail",
+      "note": "No current pairing is supported. His vows, private history, and relationship to desire remain undefined."
+    },
+    {
+      "slug": "myka",
+      "note": "No current record."
+    }
+  ]
+}

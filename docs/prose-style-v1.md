@@ -44,19 +44,11 @@ Speech should carry at least one immediate purpose: obtain an answer, evade it, 
 
 She can handle professional disclosure yet become evasive when the subject is personally embarrassing. Repeated denials may expose what she intends to close.
 
-With Natalia, keep the whimsy and loyalty of a favourite student who has become a friend. Lynleit may joke about marks, challenge a conclusion, or offer her professor an absurd favour. She also listens, tries the example, and asks the next useful question. Show the difference in expertise through what Natalia notices or corrects, not through formal submission or a loss of Lynleit's intelligence.
-
 ### Natalia
 
-**Idiolect:** concrete demonstrations, personal research anecdotes, precise definitions, a former teacher's questions, and dry corrections.
+**Idiolect:** precise definitions, associative examples, a former teacher's questions, and dry corrections.
 
 She enjoys making Lynleit follow a sound argument to an unwelcome conclusion. Do not remove her playfulness in order to make her seem intelligent.
-
-Use **worked examples** and **instructional scaffolding**: begin with an object, action, or familiar problem; let the listener make a prediction; introduce the difficult term after its purpose is apparent. Have the listener apply the idea to a new case rather than merely say that it makes sense. These are craft tools, not a compulsory sequence for every conversation.
-
-Her personal examples should include an attempted approach, an observable result, and what she changed afterward. Failure can be useful teaching material without secretly making every failed experiment a triumph. In Doom v4, the decision diary exposes her habit of inventing reasonable explanations after choosing; comparing predictions with actions gives her a better question, not a universal answer. Her resignation and a missed call from Myka provide different examples of habits and attachment.
-
-Limit **analogical transfer** explicitly where it matters. Names on paper illustrate the shared attachment; crossing them out is not a spell. Concern for a niece illustrates attention reorganized around another person; it does not prove romantic desire or guarantee the cure. Keep Natalia's practical warmth distinct from certainty about an untested hypothesis. Use personal stories where they clarify this problem, not as decorative memoirs between lectures.
 
 ### Father Mikhail
 
@@ -128,13 +120,11 @@ Physicians are ordinary medical professionals without knowledge of magic unless 
 
 Natalia introduces the ego hypothesis and attributes the psychological definition to Jung. Her application of it to the curse belongs to fictional magecraft, not to Jung's claim. Brief quotations must be verified; store their source here rather than interrupting dialogue with research apparatus.
 
-The short definition retained in v3 and v4 is reproduced in the [C. G. Jung Society of Sydney's account of ego, shame, and embodiment](https://www.junginsydney.org.au/events/2023/egoshame). Only that definition is quoted. The curse mechanism and Natalia's proposed use of reciprocal change are fictional. The substitute-king example has a historical basis in [the Assyrian report of a substitute assuming the omens](https://oracc.museum.upenn.edu/saao/saa10/P334434/html); Natalia's explanation of supernatural recognition is an in-world interpretation, not a verified historical effect.
+The short definition quoted in Version 3 is reproduced in the [C. G. Jung Society of Sydney's account of ego, shame, and embodiment](https://www.junginsydney.org.au/events/2023/egoshame). Only that definition is quoted. The curse mechanism and Natalia's proposed use of reciprocal change are fictional.
 
 ## Revision protocol
 
 Before drafting or editing a Chapter or Moment, read this document, the chosen source version, and the relevant character records. Identify the focal character, discovery sequence, emotional pressure, and any dialogue whose timing must survive.
-
-This reference is versioned in Docs. Use its current revision for new work. Before changing it or another prose reference, preserve the previous published revision and register the new one; a historical version records past decisions without directing current canon.
 
 During revision, keep two separate passes:
 
@@ -165,10 +155,4 @@ Refine the house style from what the author accepts in finished scenes.
 
 **Limit:** no new event or character trait becomes canon through this document.
 
-### Author direction and implementation: Doom Has an Address, v4
-
-Natalia teaches complex topics through practical examples and personal attempts, failures, and discoveries. Lynleit remains a whimsical, loyal student and friend; intellectual asymmetry is visible without a superior-subordinate social rhythm. The worked diagram, decision diary, resignation anecdote, and Myka call implement that direction in v4. Preserve the curse outcome and the earlier comic callbacks.
-
-**Limit:** an anecdote must earn its place by changing the listener's understanding. Do not manufacture a major invention, past relationship, or magical success merely to supply an example.
-
-Version 3 derives from the earlier Version 2 text in commit `868fc31`, before the rewrite in `b06c821`. Version 4 builds on v3, revises Natalia's teaching and the teacher-student dialogue, and is now canonical. Versions 1 through 3 remain accessible alternates.
+Version 3 is based on the earlier Version 2 text preserved in commit `868fc31`, before the prose rewrite in `b06c821`. It restores that dialogue-led treatment, applies the author's corrections, and is now the canonical version. Versions 1 and 2 remain accessible alternates.

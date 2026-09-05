@@ -5,9 +5,26 @@
     "topic": "Writer's Style Reference",
     "file": "prose-style.md",
     "updated": "2026-09-05",
-    "description": "The working house style: narrative voice, focalization, comic timing, dialogue, rhythm, imagery, and reader inference, developed through the Chapters.",
+    "description": "House style for narrative voice, dialogue, comic timing, and practical exposition, including Natalia's worked examples and her friendship with Lynleit.",
     "speakers": [
       "Author's Desk"
+    ],
+    "defaultVersion": "v2",
+    "versions": [
+      {
+        "id": "v1",
+        "label": "v1 · Archived",
+        "file": "prose-style-v1.md",
+        "updated": "2026-09-05",
+        "description": "The working house style: narrative voice, focalization, comic timing, dialogue, rhythm, imagery, and reader inference, developed through the Chapters."
+      },
+      {
+        "id": "v2",
+        "label": "v2 · Current",
+        "file": "prose-style.md",
+        "updated": "2026-09-05",
+        "description": "House style for narrative voice, dialogue, comic timing, and practical exposition, including Natalia's worked examples and her friendship with Lynleit."
+      }
     ]
   },
   {
@@ -19,6 +36,23 @@
     "description": "Revision principles, content boundaries, and author-favored development approaches kept separate from established canon.",
     "speakers": [
       "Author's Desk"
+    ],
+    "defaultVersion": "v2",
+    "versions": [
+      {
+        "id": "v1",
+        "label": "v1 · Archived",
+        "file": "prose-and-scene-guidance-v1.md",
+        "updated": "2026-09-05",
+        "description": "Revision principles, content boundaries, and author-favored development approaches kept separate from established canon."
+      },
+      {
+        "id": "v2",
+        "label": "v2 · Current",
+        "file": "prose-and-scene-guidance.md",
+        "updated": "2026-09-05",
+        "description": "Revision principles, content boundaries, and author-favored development approaches kept separate from established canon."
+      }
     ]
   },
   {
@@ -30,6 +64,25 @@
     "description": "Advisory scene notes combining established characterization, physical circumstance, sex, social experience, and MBTI function emphasis without turning broad gender patterns into canon.",
     "speakers": [
       "Character Archive"
+    ],
+    "defaultVersion": "v2",
+    "versions": [
+      {
+        "id": "v1",
+        "label": "v1 · Archived",
+        "file": "character-behavior-audit-v1.md",
+        "updated": "2026-09-05",
+        "description": "Advisory scene notes combining established characterization, physical circumstance, sex, social experience, and MBTI function emphasis without turning broad gender patterns into canon.",
+        "behaviorFile": "character-behavior-notes-v1.json"
+      },
+      {
+        "id": "v2",
+        "label": "v2 · Current",
+        "file": "character-behavior-audit.md",
+        "updated": "2026-09-05",
+        "description": "Advisory scene notes combining established characterization, physical circumstance, sex, social experience, and MBTI function emphasis without turning broad gender patterns into canon.",
+        "behaviorFile": "character-behavior-notes.json"
+      }
     ]
   },
   {
@@ -41,6 +94,25 @@
     "description": "A writer-facing reference for each character's approach to closeness, desire, sexual initiative, and established, asymmetric, or potential sexual tension.",
     "speakers": [
       "Character Archive"
+    ],
+    "defaultVersion": "v2",
+    "versions": [
+      {
+        "id": "v1",
+        "label": "v1 · Archived",
+        "file": "character-intimacy-and-sexuality-v1.md",
+        "updated": "2026-09-05",
+        "description": "A writer-facing reference for each character's approach to closeness, desire, sexual initiative, and established, asymmetric, or potential sexual tension.",
+        "tensionFile": "sexual-tension-notes-v1.json"
+      },
+      {
+        "id": "v2",
+        "label": "v2 · Current",
+        "file": "character-intimacy-and-sexuality.md",
+        "updated": "2026-09-05",
+        "description": "A writer-facing reference for each character's approach to closeness, desire, sexual initiative, and established, asymmetric, or potential sexual tension.",
+        "tensionFile": "sexual-tension-notes.json"
+      }
     ]
   },
   {
@@ -75,6 +147,23 @@
     "description": "A resolution-tracked list of places where current story, character, world, timeline, or alternate-version records cannot all be read literally at the same time.",
     "speakers": [
       "Author's Desk"
+    ],
+    "defaultVersion": "v2",
+    "versions": [
+      {
+        "id": "v1",
+        "label": "v1 · Archived",
+        "file": "contradictions-to-resolve-v1.md",
+        "updated": "2026-09-05",
+        "description": "A resolution-tracked list of places where current story, character, world, timeline, or alternate-version records cannot all be read literally at the same time."
+      },
+      {
+        "id": "v2",
+        "label": "v2 · Current",
+        "file": "contradictions-to-resolve.md",
+        "updated": "2026-09-05",
+        "description": "A resolution-tracked list of places where current story, character, world, timeline, or alternate-version records cannot all be read literally at the same time."
+      }
     ]
   },
   {

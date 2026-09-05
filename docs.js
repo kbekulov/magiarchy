@@ -8,6 +8,49 @@ const documentSummary = document.querySelector('#document-summary');
 const documentSourceLink = document.querySelector('#document-source-link');
 const documentError = document.querySelector('#document-error');
 const documentCrumb = document.querySelector('#document-crumb');
+const documentVersionSwitcher = document.querySelector('#document-version-switcher');
+const documentVersionCurrent = document.querySelector('#document-version-current');
+const documentVersionOptions = document.querySelector('#document-version-options');
+
+function documentVersions(entry) {
+  const versions = entry.versions?.length ? entry.versions : [{ id: 'v1' }];
+  return versions.map((version, index) => ({
+    ...entry,
+    ...version,
+    versionId: version.id || `v${index + 1}`,
+    versionCount: versions.length
+  }));
+}
+
+function resolveDocumentVersion(entry, requested) {
+  const versions = documentVersions(entry);
+  return versions.find((version) => version.versionId === requested)
+    || versions.find((version) => version.versionId === (entry.defaultVersion || 'v1'))
+    || versions[0];
+}
+
+function renderDocumentVersionSwitcher(entry, selected) {
+  if (!documentVersionSwitcher) return;
+  const versions = documentVersions(entry);
+  documentVersionSwitcher.hidden = versions.length < 2;
+  documentVersionCurrent.textContent = `${selected.versionId} · ${selected.versionId === entry.defaultVersion ? 'Current' : 'Archived'}`;
+  documentVersionOptions.replaceChildren(...versions.map((version) => {
+    const link = document.createElement('a');
+    link.textContent = version.versionId;
+    link.href = `docs.html?doc=${encodeURIComponent(entry.slug)}&version=${encodeURIComponent(version.versionId)}`;
+    link.title = version.label || version.versionId;
+    link.classList.toggle('is-active', version.versionId === selected.versionId);
+    if (version.versionId === selected.versionId) link.setAttribute('aria-current', 'page');
+    return link;
+  }));
+}
+
+async function loadDocumentRegistry(file, fallback) {
+  if (!file) return fallback();
+  const response = await fetch(`docs/${file}`);
+  if (!response.ok) throw new Error(`Document registry unavailable: ${response.status}`);
+  return response.json();
+}
 
 function appendInlineMarkdown(text, parent) {
   const tokenPattern = /(~~[^~]+~~|\*\*[^*]+\*\*|\*[^*]+\*|`[^`]+`|\[[^\]]+\]\([^)]+\))/g;
@@ -293,7 +336,7 @@ function showDocumentLibrary(entries) {
   documentReaderView.hidden = true;
   documentLibrary.hidden = false;
   docsHeading.hidden = false;
-  documentCardGrid.replaceChildren(...entries.map(createDocumentCard));
+  documentCardGrid.replaceChildren(...entries.map((entry, index) => createDocumentCard(resolveDocumentVersion(entry), index)));
 }
 
 const intimacyCharacterAccents = {
@@ -336,7 +379,7 @@ function intimacyLensClass(heading) {
   return '';
 }
 
-async function enhanceCharacterIntimacyDocument(container) {
+async function enhanceCharacterIntimacyDocument(container, entry) {
   const sectionHeadings = Array.from(container.querySelectorAll(':scope > h2'));
   const guideHeading = sectionHeadings.find((heading) => heading.id === 'how-to-read-the-profiles');
   const principlesHeading = sectionHeadings.find((heading) => heading.id === 'archive-wide-writing-principles');
@@ -351,7 +394,7 @@ async function enhanceCharacterIntimacyDocument(container) {
   let tensionRegistry = null;
   if (window.MAGIARCHY_SEXUAL_TENSION) {
     try {
-      tensionRegistry = await window.MAGIARCHY_SEXUAL_TENSION.load();
+      tensionRegistry = await loadDocumentRegistry(entry.tensionFile, () => window.MAGIARCHY_SEXUAL_TENSION.load());
     } catch (error) {
       console.warn('Sexual tension records could not be loaded.', error);
     }
@@ -452,7 +495,7 @@ async function enhanceCharacterIntimacyDocument(container) {
   }
 }
 
-async function enhanceCharacterBehaviorDocument(container) {
+async function enhanceCharacterBehaviorDocument(container, entry) {
   const title = container.querySelector(':scope > h1');
   const lede = title?.nextElementSibling;
   if (lede?.tagName === 'P') lede.classList.add('behavior-lede');
@@ -475,7 +518,7 @@ async function enhanceCharacterBehaviorDocument(container) {
   }
 
   try {
-    const registry = await behaviorArchive.load();
+    const registry = await loadDocumentRegistry(entry.behaviorFile, () => behaviorArchive.load());
     registry.sections.forEach((section, index) => {
       const sectionElement = document.createElement('section');
       sectionElement.className = 'behavior-section';
@@ -495,8 +538,10 @@ async function enhanceCharacterBehaviorDocument(container) {
   }
 }
 
-async function loadDocument(entry) {
+async function loadDocument(record, requestedVersion) {
   if (!documentReader || !documentMeta || !documentError) return;
+  const entry = resolveDocumentVersion(record, requestedVersion);
+  renderDocumentVersionSwitcher(record, entry);
 
   documentLibrary.hidden = true;
   docsHeading.hidden = true;
@@ -516,9 +561,11 @@ async function loadDocument(entry) {
 
     const markdown = await response.text();
     documentReader.append(renderMarkdown(markdown));
-    if (entry.slug === 'character-intimacy-and-sexuality') await enhanceCharacterIntimacyDocument(documentReader);
-    if (entry.slug === 'character-behavior-audit') await enhanceCharacterBehaviorDocument(documentReader);
-    documentMeta.textContent = `${entry.topic} · ${entry.speakers.join(' / ')} · Updated ${entry.updated}`;
+    if (entry.slug === 'character-intimacy-and-sexuality') await enhanceCharacterIntimacyDocument(documentReader, entry);
+    if (entry.slug === 'character-behavior-audit') await enhanceCharacterBehaviorDocument(documentReader, entry);
+    const versionMeta = entry.versionCount > 1 ? ` · ${entry.versionId}` : '';
+    documentMeta.textContent = `${entry.topic}${versionMeta} · ${entry.speakers.join(' / ')} · Updated ${entry.updated}`;
+    document.title = `${entry.title}${versionMeta} - Docs - Magiarchy`;
 
     if (documentSummary) {
       documentSummary.replaceChildren();
@@ -557,7 +604,7 @@ async function initializeDocumentLibrary() {
     const selectedEntry = entries.find((entry) => entry.slug === requestedSlug);
 
     if (selectedEntry) {
-      await loadDocument(selectedEntry);
+      await loadDocument(selectedEntry, new URLSearchParams(window.location.search).get('version'));
     } else {
       showDocumentLibrary(entries);
     }

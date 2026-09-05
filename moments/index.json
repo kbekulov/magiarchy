@@ -1413,7 +1413,7 @@
       "Suppressing the condition in either person fails because the remaining attachment reconstructs it in the other.",
       "The traditional solution requires one of them to die first, collapsing the relation and releasing the survivor.",
       "Lynleit refuses the fatal solution and consults other Magi, Magiarchal records, prohibited theurgy, Natalia, and Father Mikhail.",
-      "Natalia introduces the ego as her explanation of what the curse recognizes, quotes Jung, and proposes profound reciprocal transformation.",
+      "Natalia explains the shared attachment with two names on paper. She introduces the ego hypothesis and quotes Jung, using her failed decision diary, her departure from the Academy, and worry over Myka to distinguish descriptions of identity from changes in lived decisions.",
       "Father Mikhail independently confirms that conversion, marriage, war, parenthood, confession, and other identity-changing experiences have disrupted related curses.",
       "Mikhail tells Lynleit that sex could produce the necessary discontinuity only if a sufficient reciprocal attachment already exists.",
       "Lynleit does not tell Kyrien about the proposed method and gradually begins treating their relationship as a possible procedure.",
@@ -1425,7 +1425,8 @@
       },
       "Kyrien knows Lynleit tried to sleep with him, refused to explain why, and became hostile whenever he mentioned the evening.",
       "Kyrien suspects the attempt and their recovery are connected, but Lynleit withholds the proposed treatment.",
-      "The incomplete attempt and its aftermath change both identities enough to break the curse's recognition."
+      "The incomplete attempt and its aftermath change both identities enough to break the curse's recognition.",
+      "Lynleit answers Natalia's questions, jokes about her old marking, offers to approve her research, and keeps the diagram. Natalia acknowledges what she cannot measure and does not promise a cure."
     ],
     "openQuestions": [
       "What identity, appearance, and prior incident history belong to the Holumn before Lynleit and Kyrien destroy it?",
@@ -1439,7 +1440,7 @@
     "continuityAfter": "Both survive without completing the sexual encounter. Their first completed encounter occurs later in Arc 1, before their established sexual relationship and the pregnancy near the Arc 2 threshold. Its exact placement remains unresolved.",
     "chapterSlug": "doom-has-an-address",
     "updated": "2026-09-05",
-    "defaultVersion": "v3",
+    "defaultVersion": "v4",
     "versions": [
       {
         "id": "v1",
@@ -1523,7 +1524,7 @@
       },
       {
         "id": "v3",
-        "label": "Version 3 · Canon",
+        "label": "Version 3 · Superseded",
         "chapterVersion": "v3",
         "updated": "2026-09-05",
         "summary": "Lynleit and Kyrien survive an identity-bound curse after an incomplete attempt at intimacy. Lynleit will not explain what she tried, and Kyrien does not know why they recovered.",
@@ -1549,6 +1550,46 @@
           "Kyrien knows Lynleit tried to sleep with him, refused to explain why, and became hostile whenever he mentioned the evening.",
           "Kyrien suspects the attempt and their recovery are connected, but Lynleit withholds the proposed treatment.",
           "The incomplete attempt and its aftermath change both identities enough to break the curse's recognition."
+        ],
+        "openQuestions": [
+          "What identity, appearance, and prior incident history belong to the Holumn before Lynleit and Kyrien destroy it?",
+          "What operation places them in position to destroy it together?",
+          "Which Magi first identify the traditional one-death solution, and how much of the prognosis becomes known outside the four people in this scene?",
+          "What happens during the incomplete attempt?",
+          "What lasting effects, if any, remain after the curse collapses?",
+          "Which later encounter becomes Lynleit and Kyrien's first completed sexual threshold?"
+        ],
+        "continuityAfter": "Both survive without completing the sexual encounter. Their first completed encounter occurs later in Arc 1, before their established sexual relationship and the pregnancy near the Arc 2 threshold. Its exact placement remains unresolved."
+      },
+      {
+        "id": "v4",
+        "label": "Version 4 · Canon",
+        "chapterVersion": "v4",
+        "updated": "2026-09-05",
+        "summary": "Lynleit and Kyrien survive an identity-bound curse after an incomplete attempt at intimacy. Lynleit will not explain what she tried, and Kyrien does not know why they recovered.",
+        "purpose": "The curse ends before Lynleit can use its treatment to explain away her continued interest in Kyrien.",
+        "known": [
+          "Lynleit and Kyrien consciously destroy the same Holumn together.",
+          "Destroying the Holumn completes its mechanism and transfers its terminal condition to the people responsible for its death.",
+          "Their joint action leaves one curse distributed across two identities rather than creating two separate curses.",
+          "Both weaken, sleep ceases to restore them, minor injuries heal slowly, and ordinary exertion becomes difficult. Lynleit's magecraft also grows exhausting.",
+          "Suppressing the condition in either person fails because the remaining attachment reconstructs it in the other.",
+          "The traditional solution requires one of them to die first, collapsing the relation and releasing the survivor.",
+          "Lynleit refuses the fatal solution and consults other Magi, Magiarchal records, prohibited theurgy, Natalia, and Father Mikhail.",
+          "Natalia explains the shared attachment with two names on paper. She introduces the ego hypothesis and quotes Jung, using her failed decision diary, her departure from the Academy, and worry over Myka to distinguish descriptions of identity from changes in lived decisions.",
+          "Father Mikhail independently confirms that conversion, marriage, war, parenthood, confession, and other identity-changing experiences have disrupted related curses.",
+          "Mikhail tells Lynleit that sex could produce the necessary discontinuity only if a sufficient reciprocal attachment already exists.",
+          "Lynleit does not tell Kyrien about the proposed method and gradually begins treating their relationship as a possible procedure.",
+          "With the prognosis reduced to days, Lynleit attempts to initiate an encounter while behaving with unusual hostility and embarrassment.",
+          "The attempt does not fully cross the boundary between them, but the curse begins weakening the following morning and is later gone.",
+          {
+            "text": "Lynleit's unread pages and repeated denials suggest that she remains interested in Kyrien after the curse is gone.",
+            "status": "inferred"
+          },
+          "Kyrien knows Lynleit tried to sleep with him, refused to explain why, and became hostile whenever he mentioned the evening.",
+          "Kyrien suspects the attempt and their recovery are connected, but Lynleit withholds the proposed treatment.",
+          "The incomplete attempt and its aftermath change both identities enough to break the curse's recognition.",
+          "Lynleit answers Natalia's questions, jokes about her old marking, offers to approve her research, and keeps the diagram. Natalia acknowledges what she cannot measure and does not promise a cure."
         ],
         "openQuestions": [
           "What identity, appearance, and prior incident history belong to the Holumn before Lynleit and Kyrien destroy it?",

@@ -33,7 +33,7 @@ Before beginning ordinary work, inspect `backlog/` for author-supplied `*.txt` f
 | Genuine conflict | `docs/contradictions-to-resolve.md` | Contradictions document only |
 | Capability balance | `docs/character-capability-balance.md` and `skillProfiles` in `character.js` | Capability ledger and profile graph |
 | Prose style | `docs/prose-style.md` | Read alongside each Chapter or Moment draft; record accepted style choices, working implementations, source-version provenance, and verified quotation sources |
-| Documents | Markdown in `docs/` plus `docs/index.json` | Docs catalog, document reader, global search |
+| Documents | Markdown in `docs/` plus `docs/index.json`, with `defaultVersion` and ordered `versions` | Docs catalog, versioned reader, matching Markdown link, global search for every version |
 
 ## Mandatory follow-up for every content change
 
@@ -137,7 +137,17 @@ An artefact belongs in this archive when its identity, custody, rule, or history
 
 ## Selected Chapter canon
 
-Doom Has an Address uses Version 3 as its default and shared canon, selected by the author on 5 September 2026. It derives from the pre-rewrite Version 2 in commit `868fc31`, restores its banter, removes magic-aware physicians, and gives Natalia the ego hypothesis and Jung quotation. An incomplete attempt at intimacy precedes the curse's collapse. Their first completed sexual encounter occurs later in Arc 1. Versions 1 and 2 remain non-canonical alternates; Version 2 is the superseded prose revision. Version-specific behavior notes stay scoped to the appropriate version.
+Doom Has an Address uses v4 as its default and shared canon, requested by the author on 5 September 2026. It builds on v3's restored banter with Natalia's practical examples and personal research experiences, and Lynleit's whimsical, loyal student-friend dialogue. Natalia introduces the ego hypothesis and quotes Jung; no magic-aware physicians appear. The incomplete attempt and curse outcome remain unchanged. Their first completed sexual encounter occurs later in Arc 1. Versions 1 through 3 remain non-canonical alternates. Version-specific behavior notes stay scoped to the appropriate version.
+
+Natalia's explanations use worked examples, relevant attempts and failures, and listener participation. Lynleit treats her as a favourite teacher and friend rather than a superior. Keep the expertise difference visible through corrections and reasoning. The prose-style document owns the detailed craft guidance.
+
+## Document revisions
+
+Before changing a document, preserve its previous published content as a separate version file and register the next revision in `docs/index.json`. Repoint the old version's file to that snapshot before editing the current source; snapshot and repoint any live JSON dependencies as well. Keep the established Markdown filename as the current maintenance source, with `defaultVersion` pointing to its current version record. Never overwrite an archived file. Readers and search must support `docs.html?doc=slug&version=v1`, the selected revision's metadata, and its matching Markdown download. Unversioned legacy documents resolve as v1 until revised.
+
+When a document is augmented from JSON, preserve that data too. Use version-specific `behaviorFile` or `tensionFile` snapshots for old advisory and intimacy documents so new notes cannot leak into their archived views or search entries. Current versions use the live registries. The prose-style and scene-guidance documents must be revised alongside narrative work when a reusable approach changes. Historical guidance remains readable but does not override the current charter or AGENTS.md.
+
+All Chapter, Moment, and Document version links use the compact identifiers v1, v2, and so forth. Show current/canon status separately from the link text.
 
 Physicians have no knowledge of magic unless the author establishes an exception. Do not invent such specialists; an ordinary examination requires concealment to be accounted for. Keep researched quotations distinct from the fictional mechanism a character proposes using them.
 

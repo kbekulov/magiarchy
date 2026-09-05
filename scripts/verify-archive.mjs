@@ -69,9 +69,9 @@ for (const note of notes) {
 
 const doom = chapters.find((entry) => entry.slug === 'doom-has-an-address');
 const doomMoment = moments.find((entry) => entry.slug === doom.slug);
-assert.equal(doom.defaultVersion, 'v3');
-assert.equal(doomMoment.defaultVersion, 'v3');
-assert.equal(doom.file, 'doom-has-an-address-v3.md');
+assert.equal(doom.defaultVersion, 'v4');
+assert.equal(doomMoment.defaultVersion, 'v4');
+assert.equal(doom.file, 'doom-has-an-address-v4.md');
 const doomText = read(`story/${doom.file}`);
 assert.ok(!/physician/i.test(doomText), 'Magic-aware physician returned to Doom');
 const nataliaHypothesis = doomText.indexOf('"The ego," Natalia said.');
@@ -87,18 +87,39 @@ for (const exchange of [
 ]) assert.ok(plain(doomText).includes(exchange), 'Protected Doom banter changed: review the source and prose style reference');
 assert.deepEqual(doom.events, selected(doom).events, 'Default Chapter facts drifted from canon version');
 assert.deepEqual(doomMoment.known, selected(doomMoment).known, 'Default Moment facts drifted from canon version');
+assert.equal(selected(doomMoment).chapterVersion, doom.defaultVersion, 'Moment opens the wrong Chapter version');
+assert.ok(doomText.includes('Expectation and result.'), 'Natalia lost the worked research example');
+assert.ok(doomText.includes('You could have sent it to me. I\'d have approved it.'), 'Lynleit lost her student-friend voice');
 assert.notDeepEqual(versions(doom)[0].events, selected(doom).events, 'Alternate version inherited canon events');
 assert.ok(!read('story/the-nameless-street.md').includes("when Lynleit looked down the hill at her father's body"), 'Premature Fionn reveal returned');
 assert.ok(read('CNAME').trim() === 'magiarchy.bekulov.com');
 
-for (const doc of json('docs/index.json')) assert.ok(read(`docs/${doc.file}`).trim(), `${doc.slug}: empty document`);
+for (const doc of json('docs/index.json')) {
+  assert.ok(read(`docs/${doc.file}`).trim(), `${doc.slug}: empty document`);
+  assert.ok(selected(doc), `${doc.slug}: missing default document version`);
+  assert.equal(selected(doc).file, doc.file, `${doc.slug}: default document file drift`);
+  assert.equal(new Set(versions(doc).map(v => v.id)).size, versions(doc).length, `${doc.slug}: duplicate document versions`);
+  for (const version of versions(doc)) {
+    assert.ok(read(`docs/${version.file}`).trim(), `${doc.slug}/${version.id}: empty document revision`);
+    for (const key of ['behaviorFile', 'tensionFile']) if (version[key]) json(`docs/${version[key]}`);
+  }
+}
+assert.ok(!json('docs/character-behavior-notes-v1.json').notes.some(n => n.versions?.includes('v4')), 'New notes leaked into archived document');
 for (const name of ['holumns/index.json', 'items/index.json', 'weapons/index.json', 'docs/sexual-tension-notes.json']) json(name);
 const search = json('search-index.json');
 const entries = Array.isArray(search) ? search : search.entries;
-assert.ok(entries.some((entry) => entry.url.includes('chapter=doom-has-an-address&version=v3')), 'Canonical chapter missing from search');
+assert.ok(entries.some((entry) => entry.url.includes('chapter=doom-has-an-address&version=v4')), 'Canonical chapter missing from search');
+assert.ok(entries.some((entry) => entry.url.includes('chapter=doom-has-an-address&version=v3')), 'Archived v3 chapter missing from search');
 assert.ok(entries.some((entry) => entry.url.includes('chapter=doom-has-an-address&version=v2')), 'Superseded chapter missing from search');
 assert.ok(entries.some((entry) => entry.url.includes('chapter=doom-has-an-address&version=v1')), 'Alternate chapter missing from search');
 assert.ok(entries.some((entry) => entry.url.includes('doc=prose-and-scene-guidance')), 'Editorial guide missing from search');
 assert.ok(entries.some((entry) => entry.url.includes('doc=prose-style')), 'Prose style reference missing from search');
+for (const doc of json('docs/index.json').filter(d => d.versions?.length)) {
+  for (const version of doc.versions) {
+    const entry = entries.find(e => e.url.includes(`doc=${doc.slug}&version=${version.id}`));
+    assert.ok(entry, `${doc.slug}/${version.id}: document revision missing from search`);
+    if (doc.slug === 'character-behavior-audit' && version.id === 'v1') assert.ok(!entry.text.includes('doom-v4'), 'New advisory search text leaked into v1');
+  }
+}
 
 console.log(`Verified ${profiles.length} profiles, ${chapters.length} Chapters, ${moments.length} Moments, ${checkedAnchors} paragraph anchors, version isolation, and search coverage.`);

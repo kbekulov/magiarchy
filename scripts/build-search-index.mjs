@@ -146,28 +146,30 @@ characters.forEach((character) => {
 const docs = readJson('docs/index.json');
 const behaviorNotes = readJson('docs/character-behavior-notes.json');
 docs.forEach((document) => {
+  resolveVersions(document).forEach((document) => {
   const markdown = stripMarkdown(readText(path.join('docs', document.file)));
   let contextualText = '';
   if (document.slug === 'character-behavior-audit') {
     contextualText = flatten([
-      behaviorNotes.sections,
-      behaviorNotes.notes.map(({ id, section, kind, title, basis, text, chapters, moments, versions }) => ({ id, section, kind, title, basis, text, chapters, moments, versions }))
+      (document.behaviorFile ? readJson(`docs/${document.behaviorFile}`) : behaviorNotes).sections,
+      (document.behaviorFile ? readJson(`docs/${document.behaviorFile}`) : behaviorNotes).notes.map(({ id, section, kind, title, basis, text, chapters, moments, versions }) => ({ id, section, kind, title, basis, text, chapters, moments, versions }))
     ]);
   }
   if (document.slug === 'character-intimacy-and-sexuality') {
     contextualText = flatten([
-      sexualTensionNotes.pairs.map(({ status, direction, participants, dynamic }) => ({ status, direction, participants, dynamic })),
-      sexualTensionNotes.unresolved
+      (document.tensionFile ? readJson(`docs/${document.tensionFile}`) : sexualTensionNotes).pairs.map(({ status, direction, participants, dynamic }) => ({ status, direction, participants, dynamic })),
+      (document.tensionFile ? readJson(`docs/${document.tensionFile}`) : sexualTensionNotes).unresolved
     ]);
   }
   addEntry({
-    id: `doc-${document.slug}`,
-    title: document.title,
+    id: `doc-${document.slug}${document.versionCount > 1 ? `-${document.versionId}` : ''}`,
+    title: `${document.title}${document.versionCount > 1 ? ` · ${document.versionId}` : ''}`,
     type: 'Document',
-    url: document.href || `docs.html?doc=${encodeURIComponent(document.slug)}`,
+    url: document.href || `docs.html?doc=${encodeURIComponent(document.slug)}${document.versionCount > 1 ? `&version=${encodeURIComponent(document.versionId)}` : ''}`,
     subtitle: document.topic,
     text: `${document.description} ${markdown} ${contextualText}`,
     keywords: document.speakers
+  });
   });
 });
 
