@@ -34,6 +34,7 @@ Before beginning ordinary work, inspect `backlog/` for author-supplied `*.txt` f
 | Capability balance | `docs/character-capability-balance.md` and `skillProfiles` in `character.js` | Capability ledger and profile graph |
 | Prose style | `docs/prose-style.md` | Read alongside each Chapter or Moment draft; record accepted style choices, working implementations, source-version provenance, and verified quotation sources |
 | Documents | Markdown in `docs/` plus `docs/index.json`, with `defaultVersion` and ordered `versions` | Docs catalog, versioned reader, matching Markdown link, global search for every version |
+| Music | `music.html` and author-supplied audio in `media/music/` | Music cards, MP3 playback, separate MP3 and WAV downloads, global search |
 
 ## Mandatory follow-up for every content change
 
@@ -152,6 +153,8 @@ All Chapter, Moment, and Document version links use the compact identifiers v1, 
 Physicians have no knowledge of magic unless the author establishes an exception. Do not invent such specialists; an ordinary examination requires concealment to be accounted for. Keep researched quotations distinct from the fictional mechanism a character proposes using them.
 
 ## Design and delivery invariants
+
+Music cards preserve the archive's flat artwork and compact metadata layout. Play only the supplied MP3, load audio on visitor action rather than autoplaying or preloading full tracks, and expose separate same-origin MP3 and WAV download links with file sizes. Keep unrecorded concepts inactive. Do not assign a supplied recording to a concept, character, or scene without author confirmation. Preserve the supplied audio bytes and filenames when importing into `media/music/`.
 
 - The design is dark, flat, compact, and original to MAGIARCHY.
 - Gradients are never allowed. Use solid fills, borders, opacity, spacing, and layered panels.

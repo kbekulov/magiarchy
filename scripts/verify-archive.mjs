@@ -122,4 +122,20 @@ for (const doc of json('docs/index.json').filter(d => d.versions?.length)) {
   }
 }
 
-console.log(`Verified ${profiles.length} profiles, ${chapters.length} Chapters, ${moments.length} Moments, ${checkedAnchors} paragraph anchors, version isolation, and search coverage.`);
+const music = read('music.html');
+const audioPlayers = [...music.matchAll(/<audio\b([^>]*)>([\s\S]*?)<\/audio>/g)];
+assert.ok(audioPlayers.length, 'Music: missing playable audio');
+for (const [, attributes, content] of audioPlayers) {
+  assert.ok(attributes.includes('controls') && attributes.includes('preload="none"') && !attributes.includes('autoplay'), 'Music: require visitor-controlled playback');
+  const sources = [...content.matchAll(/<source src="([^"]+)" type="([^"]+)"/g)];
+  assert.equal(sources.length, 1, 'Music: stream MP3 only');
+  const [, mp3, mime] = sources[0];
+  assert.equal(mime, 'audio/mpeg');
+  for (const file of [mp3, mp3.replace(/\.mp3$/, '.wav')]) {
+    assert.ok(fs.statSync(path.join(root, file)).size > 0, `Music: empty file ${file}`);
+    assert.ok(music.includes(`href="${file}" download="${path.basename(file)}"`), `Music: missing download ${file}`);
+  }
+}
+assert.ok(entries.some(entry => entry.url.includes('music.html') && entry.text.includes('Theme 1 (stem)')), 'Music: track missing from search');
+
+console.log(`Verified ${profiles.length} profiles, ${chapters.length} Chapters, ${moments.length} Moments, ${checkedAnchors} paragraph anchors, version isolation, music assets, and search coverage.`);

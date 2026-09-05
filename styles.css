@@ -4469,6 +4469,77 @@ a.status-member:hover {
   align-items: start;
 }
 
+.music-status-ready {
+  color: #71c69a;
+}
+
+.music-player {
+  display: block;
+  width: 100%;
+  min-width: 0;
+  height: 54px;
+  margin-top: 18px;
+  color-scheme: dark;
+}
+
+.music-player:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 4px;
+  border-radius: 6px;
+}
+
+.music-card .music-player-error {
+  margin-top: 10px;
+  color: #e9a3a3;
+}
+
+.music-downloads {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  margin-top: 18px;
+  padding-top: 16px;
+  border-top: 1px solid var(--line-bright);
+}
+
+.music-download-label {
+  margin-right: auto;
+  color: var(--subtle);
+  font-size: .7rem;
+}
+
+.music-downloads a {
+  display: flex;
+  min-height: 44px;
+  align-items: center;
+  gap: 12px;
+  padding: 8px 12px;
+  border: 1px solid var(--line-bright);
+  border-radius: 5px;
+  background: #232428;
+  color: var(--text);
+  font-size: .72rem;
+  text-decoration: none;
+}
+
+.music-downloads small {
+  color: var(--subtle);
+  font-size: .6rem;
+}
+
+.music-downloads a:hover,
+.music-downloads a:focus-visible {
+  border-color: var(--accent);
+  background: #313338;
+  color: var(--accent);
+}
+
+.music-downloads a:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
 .document-card {
   display: inline-block;
   width: 100%;

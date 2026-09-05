@@ -3,12 +3,13 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Browse music concepts and future tracks for the Magiarchy universe.">
+    <meta name="description" content="Listen to MAGIARCHY music and download tracks in MP3 or WAV format.">
     <meta name="theme-color" content="#1e1f22">
     <title>Music - Magiarchy</title>
     <link rel="icon" href="favicon.svg" type="image/svg+xml">
     <link rel="stylesheet" href="styles.css">
     <script src="script.js" defer></script>
+    <script src="music.js" defer></script>
     <script src="entity-links.js" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2" defer></script>
     <script src="notes-config.js" defer></script>
@@ -58,19 +59,38 @@
         <div class="docs-main-pane">
           <header class="feed-header">
             <div><span aria-hidden="true">#</span><strong>music</strong><i></i><p>Themes, motifs, and scene tracks</p></div>
-            <span class="feed-status"><span class="status-dot"></span> Track archive reserved</span>
+            <span class="feed-status"><span class="status-dot"></span> 1 playable track</span>
           </header>
 
           <section class="docs-heading reveal" aria-labelledby="music-title">
             <div>
               <p class="eyebrow">Audio archive</p>
               <h1 id="music-title">Music</h1>
-              <p>This archive records themes, motifs, and scene tracks. No audio is currently attached.</p>
+              <p>Themes, motifs, and scene tracks. Listen here or download in MP3 and WAV.</p>
             </div>
           </section>
 
-          <section class="music-library" aria-label="Music concepts">
+          <section class="music-library" aria-label="Tracks and music concepts">
             <div class="music-card-grid">
+              <article class="music-card music-card-playable reveal" id="theme-1-stem" aria-labelledby="theme-1-title">
+                <div class="music-card-art art-violet" aria-hidden="true"><span>AUDIO 01</span><i>♫</i></div>
+                <div class="music-card-body">
+                  <div class="music-card-top"><span class="doc-topic">Soundtrack</span><span class="music-status music-status-ready">Available</span></div>
+                  <h2 id="theme-1-title">Theme 1 (stem)</h2>
+                  <div class="music-tags"><span>1:53</span><span>MP3 playback</span></div>
+                  <audio class="music-player" controls preload="none" aria-label="Play Theme 1 (stem)" aria-describedby="theme-1-error">
+                    <source src="media/music/theme_1_stem.mp3" type="audio/mpeg">
+                    Your browser cannot play this audio. Use the download links below.
+                  </audio>
+                  <p class="music-player-error" id="theme-1-error" role="status" hidden>Playback is unavailable. Try downloading the MP3 below.</p>
+                  <div class="music-downloads" role="group" aria-label="Download Theme 1 (stem)">
+                    <span class="music-download-label">Download</span>
+                    <a href="media/music/theme_1_stem.mp3" download="theme_1_stem.mp3" aria-label="Download Theme 1 (stem) as MP3, 2.7 MB"><span>MP3 <span aria-hidden="true">↓</span></span><small>2.7 MB</small></a>
+                    <a href="media/music/theme_1_stem.wav" download="theme_1_stem.wav" aria-label="Download Theme 1 (stem) as WAV, 21.8 MB"><span>WAV <span aria-hidden="true">↓</span></span><small>21.8 MB</small></a>
+                  </div>
+                </div>
+              </article>
+
               <article class="music-card reveal">
                 <div class="music-card-art art-violet" aria-hidden="true"><span>01</span><i>♫</i></div>
                 <div class="music-card-body">
