@@ -118,9 +118,9 @@ Lynleit and Kyrien destroy the same Holumn together. Its death completes rather 
 
 The condition progresses over several weeks. Sleep ceases to restore either subject, minor injuries heal slowly, magical tolerance declines, and ordinary exertion becomes difficult. Suppression fails in both directions: removing the condition from Lynleit allows Kyrien's attachment to reconstruct it, while removing it from Kyrien allows Lynleit's attachment to do the same.
 
-The established answer requires one subject to die first. Permanent loss of either ego collapses the two-person relation and releases the survivor. Lynleit refuses that solution and pursues medical, Magiarchal, theurgical, academic, and Church accounts of curses attached to identity.
+The established answer requires one subject to die first. Permanent loss of either ego collapses the two-person relation and releases the survivor. Lynleit refuses that solution and pursues Magiarchal, theurgical, academic, and Church accounts of curses attached to identity.
 
-Natalia identifies the mechanism as sympathetic recognition of the ego. Father Mikhail finds related Church records in which conversion, marriage, war, parenthood, or confession changed a subject deeply enough to disrupt a psychic attachment. Both conclude that biological death is the most reliable identity discontinuity, but not the only one.
+Natalia introduces the ego hypothesis and quotes Jung's definition of conscious identity to explain what she believes the curse recognizes. Father Mikhail finds related Church records in which conversion, marriage, war, parenthood, or confession changed a subject deeply enough to disrupt a psychic attachment. Both conclude that biological death is the most reliable identity discontinuity, but not the only one.
 
 Lynleit attempts intimacy with Kyrien without telling him about the proposed treatment. The encounter is not completed. The curse begins weakening the following morning and later disappears. The attempt and its aftermath change both identities enough to defeat its recognition; a completed sexual act is not required. Kyrien remains unaware of the proposed method.
 

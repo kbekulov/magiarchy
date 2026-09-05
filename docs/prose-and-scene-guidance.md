@@ -1,5 +1,7 @@
 # Prose and Scene Guidance
 
+For narrative voice, dialogue, rhythm, comic timing, and a log of Chapter-specific style choices, use [MAGIARCHY Prose Style](../docs.html?doc=prose-style) alongside every draft. This document owns revision boundaries and development approaches.
+
 This is editorial guidance. It does not add events, motives, or supernatural rules to canon. Established facts belong in their archive records; a Chapter lets the reader experience them.
 
 ## Revision priorities
@@ -54,4 +56,4 @@ Use a private gesture in the hotel refuge only if it fits Lynleit's immediate ex
 
 ## Current version decision
 
-Doom Has an Address Version 2 is canon. The attempt at intimacy is incomplete. Both survive after the attempt and its aftermath change the identities to which the curse is attached. Their first completed sexual encounter belongs later in Arc 1. Version 1 remains an alternate and must not supply shared character or Holumn facts where it differs.
+Doom Has an Address Version 3 is canon. It restores the pre-rewrite Version 2's banter while correcting the physician references and making Natalia the source of the ego hypothesis and Jung quotation. The attempt at intimacy is incomplete. Both survive after the attempt and its aftermath change the identities to which the curse is attached. Their first completed sexual encounter belongs later in Arc 1. Versions 1 and 2 remain alternates and must not supply shared character or Holumn facts where they differ.

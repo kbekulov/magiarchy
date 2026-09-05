@@ -32,11 +32,12 @@ Before beginning ordinary work, inspect `backlog/` for author-supplied `*.txt` f
 | Editorial uncertainty | `docs/questions-to-be-answered.md` | Questions document only |
 | Genuine conflict | `docs/contradictions-to-resolve.md` | Contradictions document only |
 | Capability balance | `docs/character-capability-balance.md` and `skillProfiles` in `character.js` | Capability ledger and profile graph |
+| Prose style | `docs/prose-style.md` | Read alongside each Chapter or Moment draft; record accepted style choices, working implementations, source-version provenance, and verified quotation sources |
 | Documents | Markdown in `docs/` plus `docs/index.json` | Docs catalog, document reader, global search |
 
 ## Mandatory follow-up for every content change
 
-1. Update the owning source instead of copying the fact into unrelated records.
+1. Update the owning source instead of copying the fact into unrelated records. For narrative work, first read `docs/prose-style.md` and keep it alongside the draft; use its revision protocol and record only reusable findings afterward.
 2. Check every affected surface in the source and surface map.
 3. Add or update entity links for every character, place, faction, institution, weapon, and defined term that already has a destination.
 4. Check chronology, Story phase placement, character timelines, Moment links, and Chapter assignment.
@@ -131,12 +132,14 @@ An artefact belongs in this archive when its identity, custody, rule, or history
 - Behavior audit: offers character-specific reactions based on history, physical circumstance, MBTI, culture, role, sex, and immediate pressure. It does not claim all men or all women behave alike.
 - Sexual tension audit: tracks chemistry supported by contact, friction, attraction, rivalry, status, exposure, ordinary repetition, involuntary bodily awareness, and free choice after coercion. It distinguishes loyalty from desire, compares every pairing against the rest of the cast, and does not turn chemistry into a romance, affair, sexual encounter, or replacement for the main story.
 - Public prose audit: removes drafting commentary, AI-like slogans, and process explanations from reader-facing pages.
-- Scene prose audit: preserves distinct voices, concrete details, humor, and flawed reactions while removing repeated interpretation. Consult `docs/prose-and-scene-guidance.md`. Do not turn every event into an audit demonstration or an unresolved author choice into a reader inference. After Chapter edits, recheck preface facts, Moment continuity, and every `chapterMatch` in the behavior registry. Preserve later consequences in continuity rather than revealing them prematurely in Chapter narration.
+- Scene prose audit: preserves distinct voices, concrete details, humor, and flawed reactions while removing repeated interpretation. Read `docs/prose-style.md` for narrative voice, focalization, dialogue, comic timing, and line editing. Consult `docs/prose-and-scene-guidance.md` for boundaries. Preserve productive comic repetition and compare against the source before cutting banter. Do not turn every event into an audit demonstration or an unresolved author choice into a reader inference. After Chapter edits, recheck preface facts, Moment continuity, and every `chapterMatch` in the behavior registry. Preserve later consequences in continuity rather than revealing them prematurely in Chapter narration.
 - Profile prose: `timelineNotes` maps exact beat titles to concise summaries. Biography owns longer history; `conflicts` contains explicit character-specific pressures. Never attach generic paragraphs by timeline index or generate filler where information is absent. The search builder must index these same fields.
 
 ## Selected Chapter canon
 
-Doom Has an Address uses Version 2 as its default and shared canon, selected by the author on 5 September 2026. An incomplete attempt at intimacy precedes the curse's collapse. Their first completed sexual encounter occurs later in Arc 1. Version 1 remains a non-canonical alternate with its own events and continuity. Version-specific behavior notes stay scoped to the appropriate version.
+Doom Has an Address uses Version 3 as its default and shared canon, selected by the author on 5 September 2026. It derives from the pre-rewrite Version 2 in commit `868fc31`, restores its banter, removes magic-aware physicians, and gives Natalia the ego hypothesis and Jung quotation. An incomplete attempt at intimacy precedes the curse's collapse. Their first completed sexual encounter occurs later in Arc 1. Versions 1 and 2 remain non-canonical alternates; Version 2 is the superseded prose revision. Version-specific behavior notes stay scoped to the appropriate version.
+
+Physicians have no knowledge of magic unless the author establishes an exception. Do not invent such specialists; an ordinary examination requires concealment to be accounted for. Keep researched quotations distinct from the fictional mechanism a character proposes using them.
 
 ## Design and delivery invariants
 

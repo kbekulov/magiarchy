@@ -69,9 +69,22 @@ for (const note of notes) {
 
 const doom = chapters.find((entry) => entry.slug === 'doom-has-an-address');
 const doomMoment = moments.find((entry) => entry.slug === doom.slug);
-assert.equal(doom.defaultVersion, 'v2');
-assert.equal(doomMoment.defaultVersion, 'v2');
-assert.equal(doom.file, 'doom-has-an-address-v2.md');
+assert.equal(doom.defaultVersion, 'v3');
+assert.equal(doomMoment.defaultVersion, 'v3');
+assert.equal(doom.file, 'doom-has-an-address-v3.md');
+const doomText = read(`story/${doom.file}`);
+assert.ok(!/physician/i.test(doomText), 'Magic-aware physician returned to Doom');
+const nataliaHypothesis = doomText.indexOf('"The ego," Natalia said.');
+assert.ok(nataliaHypothesis >= 0 && !/\bego\b/i.test(doomText.slice(0, nataliaHypothesis)), 'Ego hypothesis appears before Natalia introduces it');
+assert.ok(doomText.includes("Jung describes it as 'a complex of ideas"), 'Natalia lost the attributed Jung quotation');
+for (const exchange of [
+  '"Unfortunately, you\'ve always needed both."',
+  '"No. Sentimental nonsense is what poets do with it afterward."',
+  '"Just have sex, loser."',
+  '"Which is why I recommend choosing your partner carefully."',
+  '"It failed."\n\n"It worked."\n\n"By failing."',
+  '"Are you disappointed?"'
+]) assert.ok(plain(doomText).includes(exchange), 'Protected Doom banter changed: review the source and prose style reference');
 assert.deepEqual(doom.events, selected(doom).events, 'Default Chapter facts drifted from canon version');
 assert.deepEqual(doomMoment.known, selected(doomMoment).known, 'Default Moment facts drifted from canon version');
 assert.notDeepEqual(versions(doom)[0].events, selected(doom).events, 'Alternate version inherited canon events');
@@ -82,8 +95,10 @@ for (const doc of json('docs/index.json')) assert.ok(read(`docs/${doc.file}`).tr
 for (const name of ['holumns/index.json', 'items/index.json', 'weapons/index.json', 'docs/sexual-tension-notes.json']) json(name);
 const search = json('search-index.json');
 const entries = Array.isArray(search) ? search : search.entries;
-assert.ok(entries.some((entry) => entry.url.includes('chapter=doom-has-an-address&version=v2')), 'Canonical chapter missing from search');
+assert.ok(entries.some((entry) => entry.url.includes('chapter=doom-has-an-address&version=v3')), 'Canonical chapter missing from search');
+assert.ok(entries.some((entry) => entry.url.includes('chapter=doom-has-an-address&version=v2')), 'Superseded chapter missing from search');
 assert.ok(entries.some((entry) => entry.url.includes('chapter=doom-has-an-address&version=v1')), 'Alternate chapter missing from search');
 assert.ok(entries.some((entry) => entry.url.includes('doc=prose-and-scene-guidance')), 'Editorial guide missing from search');
+assert.ok(entries.some((entry) => entry.url.includes('doc=prose-style')), 'Prose style reference missing from search');
 
 console.log(`Verified ${profiles.length} profiles, ${chapters.length} Chapters, ${moments.length} Moments, ${checkedAnchors} paragraph anchors, version isolation, and search coverage.`);

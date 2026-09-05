@@ -10,4 +10,4 @@ No unresolved contradiction is currently recorded.
 
 ## Version decision
 
-On 5 September 2026, the author selected Doom Has an Address Version 2 as canon. The default Chapter and Moment, Holumn record, character profiles, intimacy reference, and later continuity follow the incomplete attempt and subsequent recovery. Version 1 remains a non-canonical alternate. The exact placement of the later completed encounter belongs in Questions to Be Answered.
+On 5 September 2026, the author selected Doom Has an Address Version 3 as canon, using the pre-rewrite Version 2 as its basis. The default Chapter and Moment, Holumn record, character profiles, intimacy reference, and later continuity follow the incomplete attempt and subsequent recovery. Versions 1 and 2 remain non-canonical alternates. Shared records follow Version 3: Magi examine the curse, while Natalia introduces the ego hypothesis and quotes Jung. The exact placement of the later completed encounter belongs in Questions to Be Answered.

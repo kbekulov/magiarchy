@@ -313,7 +313,7 @@ const profileSeeds = [
       ['Height and build', 'Average height with a curving figure.'],
       ['Distinguishing features', 'Round gold-rimmed glasses and long gold drop earrings.']
     ],
-    personalitySummary: 'Natalia is a researcher first and a private investigator by necessity. She protects her intellectual autonomy, builds her own analytical framework, and studies unusual systems without needing institutional agreement. Under pressure, she moves between ritual history, psychology, folklore, and magecraft until one mechanism accounts for the evidence. She teaches by making the other person define the problem correctly before she supplies the conclusion, then permits herself dry humor once the analysis is secure.',
+    personalitySummary: 'Natalia is a researcher first and a private investigator by necessity. She protects her intellectual autonomy, builds her own analytical framework, and studies unusual systems without needing institutional agreement. Under pressure, she moves between ritual history, psychology, folklore, and magecraft until one mechanism accounts for the evidence. In the shared-curse case, she introduces the ego hypothesis and quotes Jung. Her former teaching habits and deliberate teasing turn Lynleit\'s search for an answer into an unwelcome examination.',
     traits: [
       { label: 'Independent scholarship', note: 'She resigned from the Academy when its environment became too restrictive for the questions and methods she wanted to pursue.' },
       { label: 'Magical examination', note: 'She investigates people as readily as incidents, studying unusual magecraft, personal deviations, and conditions with a precision closer to a physician than a conventional detective.' },

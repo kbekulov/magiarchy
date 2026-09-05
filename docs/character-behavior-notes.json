@@ -571,8 +571,8 @@
       "section": "doom-address",
       "kind": "story",
       "title": "Transformation before completion",
-      "basis": "Confirmed Version 2 mechanism",
-      "text": "Version 2 is canon. The incomplete attempt and its aftermath change both identities enough for the curse to lose recognition. Keep the later completed sexual encounter separate; its timing is still unresolved.",
+      "basis": "Superseded Version 2 mechanism",
+      "text": "In this superseded revision, The incomplete attempt and its aftermath change both identities enough for the curse to lose recognition. Keep the later completed sexual encounter separate; its timing is still unresolved.",
       "chapterMatch": "Whatever Lynleit had planned, they had not completed it.",
       "chapters": [
         "doom-has-an-address"
@@ -582,6 +582,132 @@
       ],
       "versions": [
         "v2"
+      ],
+      "momentFact": {
+        "doom-has-an-address": 16
+      }
+    },
+    {
+      "id": "doom-v3-lynleit-method",
+      "section": "doom-address",
+      "kind": "female",
+      "title": "Lynleit",
+      "basis": "Canon behavior, ENFJ with strong Ni and MSF duty primary",
+      "text": "Lynleit rejects the fatal treatment and keeps looking. Her research is competent; discussing its sexual implication with Kyrien is where she becomes evasive. Do not repeat a defense of her leadership after each awkward response.",
+      "chapterMatch": "Lynleit rejected the answer.",
+      "chapters": [
+        "doom-has-an-address"
+      ],
+      "moments": [
+        "doom-has-an-address"
+      ],
+      "versions": [
+        "v3"
+      ],
+      "momentFact": {
+        "doom-has-an-address": 6
+      }
+    },
+    {
+      "id": "doom-v3-natalia-teaching",
+      "section": "doom-address",
+      "kind": "female",
+      "title": "Natalia",
+      "basis": "Canon behavior, INTP with strong Ti and former professor",
+      "text": "Natalia supplies the ego hypothesis herself, then uses her former teaching routine to make Lynleit work through it. Preserve the examination joke and her pleasure in the unwelcome conclusion. Precision and mischief coexist here.",
+      "chapterMatch": "Natalia was silent long enough that Lynleit checked the connection.",
+      "chapters": [
+        "doom-has-an-address"
+      ],
+      "moments": [
+        "doom-has-an-address"
+      ],
+      "versions": [
+        "v3"
+      ],
+      "momentFact": {
+        "doom-has-an-address": 7
+      }
+    },
+    {
+      "id": "doom-v3-mikhail-diagnosis",
+      "section": "doom-address",
+      "kind": "male",
+      "title": "Father Mikhail",
+      "basis": "Canon behavior, XNJ lean and Church special envoy",
+      "text": "The long apparent deliberation sets up Mikhail's blunt line. His repeated attempts to stop Lynleit leaving are the escalation, not redundant dialogue. Keep his actual explanation after the interruption.",
+      "chapterMatch": "The priest appeared to consider several centuries of theology.",
+      "chapters": [
+        "doom-has-an-address"
+      ],
+      "moments": [
+        "doom-has-an-address"
+      ],
+      "versions": [
+        "v3"
+      ],
+      "momentFact": {
+        "doom-has-an-address": 9
+      }
+    },
+    {
+      "id": "doom-v3-lynleit-aftermath",
+      "section": "doom-address",
+      "kind": "female",
+      "title": "Lynleit after the failed attempt",
+      "basis": "Version 3 behavior, ENFJ with strong Ni and private embarrassment",
+      "text": "The unread pages and excessive denials already convey Lynleit's continued interest. Let Natalia's question end the exchange without another paragraph decoding her answer.",
+      "chapterMatch": "There will not be another attempt.",
+      "chapters": [
+        "doom-has-an-address"
+      ],
+      "moments": [
+        "doom-has-an-address"
+      ],
+      "versions": [
+        "v3"
+      ],
+      "momentFact": {
+        "doom-has-an-address": 13
+      }
+    },
+    {
+      "id": "doom-v3-kyrien-model",
+      "section": "doom-address",
+      "kind": "male",
+      "title": "Kyrien without the missing premise",
+      "basis": "Version 3 behavior, ISTP lean and Ti-led observation",
+      "text": "Kyrien lacks one crucial piece of information. His unanswered question can remain irritating without becoming a demand for confession or a speech about trust.",
+      "chapterMatch": "He knew Lynleit had tried to sleep with him",
+      "chapters": [
+        "doom-has-an-address"
+      ],
+      "moments": [
+        "doom-has-an-address"
+      ],
+      "versions": [
+        "v3"
+      ],
+      "momentFact": {
+        "doom-has-an-address": 15
+      }
+    },
+    {
+      "id": "doom-v3-transformation-rule",
+      "section": "doom-address",
+      "kind": "story",
+      "title": "Transformation before completion",
+      "basis": "Confirmed Version 3 mechanism",
+      "text": "The incomplete attempt changes both identities enough to break recognition. Keep the later completed encounter separate. Do not turn Jung's definition into a real-world claim about supernatural cures.",
+      "chapterMatch": "The incomplete attempt and what followed had changed both of them",
+      "chapters": [
+        "doom-has-an-address"
+      ],
+      "moments": [
+        "doom-has-an-address"
+      ],
+      "versions": [
+        "v3"
       ],
       "momentFact": {
         "doom-has-an-address": 16

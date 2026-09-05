@@ -17,6 +17,8 @@ Story, character, world, relationship, institution, location, and event question
 | Holumn incident HI-006 | What identity, appearance, and history belong to the Holumn that Lynleit and Kyrien destroy before its terminal condition transfers to them? | 0% |
 | Doom Has an Address | What operation brings Lynleit and Kyrien to the Holumn, where does the final confrontation occur, and what evidence lets them understand that destroying it caused their decline? | 0% |
 | Doom Has an Address | Which encounter after Doom Has an Address becomes Lynleit and Kyrien's first completed sexual encounter? | 0% |
+| Doom Has an Address | What happens during the incomplete attempt that the Chapter leaves off-page? | 0% |
+| Doom Has an Address | Which Magi first examine the curse and identify the one-death solution before Lynleit consults Natalia? | 0% |
 | Holumns | Can any victim taken by a Holumn return, and what would return mean for the person's identity? | 0% |
 | Lester | How did Lester become a demiholumn, and what metaphysical answer about his human and Holumn conditions would most threaten his sense of self? | 0% |
 | Location | What is Port City's proper name, and which events take place there? | 0% |

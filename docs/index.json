@@ -1,5 +1,16 @@
 [
   {
+    "slug": "prose-style",
+    "title": "MAGIARCHY Prose Style",
+    "topic": "Writer's Style Reference",
+    "file": "prose-style.md",
+    "updated": "2026-09-05",
+    "description": "The working house style: narrative voice, focalization, comic timing, dialogue, rhythm, imagery, and reader inference, developed through the Chapters.",
+    "speakers": [
+      "Author's Desk"
+    ]
+  },
+  {
     "slug": "prose-and-scene-guidance",
     "title": "Prose and Scene Guidance",
     "topic": "Editorial Reference",

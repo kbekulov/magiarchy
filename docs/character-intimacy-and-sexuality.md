@@ -10,7 +10,7 @@ A writer's reference to affection, attraction, initiative, and particular partne
 
 **Unresolved** means there is not enough information to describe it.
 
-Doom Has an Address follows Version 2. Lynleit and Kyrien survive after an incomplete attempt at intimacy. Their first completed sexual encounter occurs later in Arc 1; its exact placement is unresolved.
+Doom Has an Address follows Version 3. Lynleit and Kyrien survive after an incomplete attempt at intimacy. Their first completed sexual encounter occurs later in Arc 1; its exact placement is unresolved.
 
 ## Lynleit
 
@@ -22,7 +22,7 @@ Lynleit notices other people's needs and often makes herself responsible for the
 
 ### Sexual expression
 
-Her attempt with Kyrien in Doom Has an Address is irritable, awkward, and incomplete. After they recover, she repeatedly insists there is no reason to try again. The unread pages and her response to Natalia suggest otherwise.
+Her attempt with Kyrien in Doom Has an Address is irritable, awkward, and incomplete. After they recover, she repeatedly insists there is no reason to try again. The unread pages and her response to Natalia suggest otherwise. Natalia keeps the familiar examination routine and deliberate silences; Lynleit's increasingly emphatic denials prolong the subject she wants to close.
 
 Their later pattern makes Lynleit the more frequent initiator. She is more vocal than Kyrien and likes teasing his reserve. The precise staging of those later encounters remains subject to the author's review.
 
