@@ -1,6 +1,6 @@
 {
-  "generated": "2026-09-05T05:45:45.490Z",
-  "count": 394,
+  "generated": "2026-09-05T09:45:20.412Z",
+  "count": 395,
   "entries": [
     {
       "id": "page-characters",
@@ -2617,6 +2617,14 @@
       "url": "index.html#update-sherie-artwork",
       "subtitle": "Home update feed",
       "text": "Visual Archive: Site update Home update feed SH Visual Archive 22 Aug 2026 · Sherie Sherie's first character artwork is now featured on her personnel card and catalogued in the Gallery. View the artwork →"
+    },
+    {
+      "id": "update-update-weapon-dividers-crow-art",
+      "title": "Weapons Archive: Site update",
+      "type": "Update",
+      "url": "index.html#update-weapon-dividers-crow-art",
+      "subtitle": "Home update feed",
+      "text": "Weapons Archive: Site update Home update feed RA Weapons Archive 05 Sep 2026 · Weapon layout and Crow artwork The Crow illustration has been updated. Weapon descriptions now have aligned row dividers, full-width final details, and consistent spacing on desktop and mobile. Browse weapons →"
     },
     {
       "id": "update-update-ren-arms-service-hierarchy",

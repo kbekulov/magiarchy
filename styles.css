@@ -1477,13 +1477,24 @@
   border-bottom: 1px solid var(--weapon-line);
 }
 
-.weapon-primary-facts div {
-  padding: 20px 0;
+.weapon-primary-facts > div {
+  min-width: 0;
+  padding: 20px 24px 20px 0;
 }
 
-.weapon-primary-facts div + div {
+.weapon-primary-facts > div:nth-child(even) {
+  padding-right: 0;
   padding-left: 24px;
   border-left: 1px solid var(--weapon-line);
+}
+
+.weapon-primary-facts > div:nth-child(n + 3) {
+  border-top: 1px solid var(--weapon-line);
+}
+
+.weapon-primary-facts > div:last-child:nth-child(odd) {
+  grid-column: 1 / -1;
+  padding-right: 0;
 }
 
 .weapon-primary-facts dt {
@@ -1845,10 +1856,15 @@
     grid-template-columns: 1fr;
   }
 
-  .weapon-primary-facts div + div {
+  .weapon-primary-facts > div,
+  .weapon-primary-facts > div:nth-child(even) {
+    padding-right: 0;
     padding-left: 0;
-    border-top: 1px solid var(--weapon-line);
     border-left: 0;
+  }
+
+  .weapon-primary-facts > div + div {
+    border-top: 1px solid var(--weapon-line);
   }
 
   .weapon-characteristics li:nth-child(even) {
