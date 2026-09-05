@@ -26,7 +26,7 @@ That diplomatic legacy made multilingualism part of Narvean public culture. Peop
 
 ### Bird's Nest, the city with many names
 
-Bird's Nest has an intentionally unusual name. Most negotiations between rival nations take place there, and every country uses a different title for the same city. Bird's Nest is the Narvean name for this shared diplomatic ground, reflecting a place where competing powers gather without fully belonging to one another.
+Most negotiations between rival nations take place in Bird's Nest. Foreign countries use their own names for the city; Bird's Nest is its Narvean name.
 
 ## Territory
 
@@ -36,7 +36,7 @@ Bird's Nest has an intentionally unusual name. Most negotiations between rival n
 - Strategic frontier with Russia
 - Strong commercial and military importance in the Baltic
 
-Exact borders remain provisional until the alternate-history timeline is finalized.
+The country's exact borders are not fully recorded.
 
 ## The two capitals
 
@@ -44,13 +44,13 @@ Exact borders remain provisional until the alternate-history timeline is finaliz
 
 Rennel, in the historic Narva region, is the seat of the Crown.
 
-It contains the Ducal Palace, court, Privy Council, Guard headquarters, dynastic archives, heraldic offices, and ceremonial institutions. It represents dynasty, continuity, military tradition, and the old state.
+It contains the Ducal Palace, court, Privy Council, Guard headquarters, dynastic archives, heraldic offices, and ceremonial institutions.
 
 ### Vilen
 
 Vilen is the parliamentary and administrative capital.
 
-It contains Parliament, the Prime Minister's office, ministries, major courts, central bureaucracy, and financial institutions. It represents law, administration, commerce, and modern political life.
+It contains Parliament, the Prime Minister's office, ministries, major courts, central bureaucracy, and financial institutions.
 
 The Prime Minister travels to Rennel for formal audiences with the Duke. The Duke travels to Vilen for major constitutional ceremonies, including the opening of Parliament.
 
@@ -69,8 +69,6 @@ The Duke is head of state and constitutional guardian. He appoints the Prime Min
 ### The parliamentary state
 
 The Prime Minister is head of government. Parliament, Cabinet, ministries, the civil service, courts, police, and national armed forces handle ordinary administration, taxation, defence policy, education, infrastructure, economic policy, and foreign policy.
-
-Neither side is decorative, and neither rules alone.
 
 ## Security institutions
 
@@ -100,10 +98,6 @@ Drake holds the rank of State Councillor and the office of Official for Special 
 
 Narvea carries layered coastal, inland, courtly, mercantile, urban, rural, and frontier traditions. Catholic and Orthodox communities coexist across regions with distinct architecture, memory, dialect, and politics.
 
-The result is not a uniform cultural mixture. The state itself is what connects its different regions.
-
 ## The central tension
 
 Narvea lives through a permanent partnership, and occasional rivalry, between inherited continuity and popular government. A modern minister can hold an old civil rank. A national officer can attend a ceremony governed by ducal precedence. An elected Prime Minister controls policy but still travels to the palace for a formal audience.
-
-That tension between modern public life and inherited hierarchy is central to the country, and to the story unfolding inside it.

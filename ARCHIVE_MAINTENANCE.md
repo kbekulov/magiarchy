@@ -45,6 +45,7 @@ Before beginning ordinary work, inspect `backlog/` for author-supplied `*.txt` f
 7. Check sexual tension records whenever a Chapter, Moment, or relationship changes contact, attraction, avoidance, rivalry, physical awareness, status, or emotional access.
 8. Check character behavior notes whenever a Chapter or Moment creates a reaction where embodiment, sex, social experience, MBTI, or story pressure may matter. Place any F, M, or S marker on the exact paragraph or fact it concerns.
 9. Rebuild `search-index.json` with `node scripts/build-search-index.mjs`.
+   Run `node scripts/verify-archive.mjs` to check timelines, version isolation, behavior-note anchors, and search coverage. This does not replace reading the revised scenes and evaluating their implications.
 10. Add the newest Home update entry first in `index.html`.
 11. Verify the ownership footer, breadcrumbs, Page notes sidebar, and responsive layout on every new page.
 12. Run syntax, content, link, no-gradient, desktop, and mobile checks. Commit task-only changes, push to `origin`, wait for GitHub Pages, and verify the live custom domain.
@@ -130,6 +131,12 @@ An artefact belongs in this archive when its identity, custody, rule, or history
 - Behavior audit: offers character-specific reactions based on history, physical circumstance, MBTI, culture, role, sex, and immediate pressure. It does not claim all men or all women behave alike.
 - Sexual tension audit: tracks chemistry supported by contact, friction, attraction, rivalry, status, exposure, ordinary repetition, involuntary bodily awareness, and free choice after coercion. It distinguishes loyalty from desire, compares every pairing against the rest of the cast, and does not turn chemistry into a romance, affair, sexual encounter, or replacement for the main story.
 - Public prose audit: removes drafting commentary, AI-like slogans, and process explanations from reader-facing pages.
+- Scene prose audit: preserves distinct voices, concrete details, humor, and flawed reactions while removing repeated interpretation. Consult `docs/prose-and-scene-guidance.md`. Do not turn every event into an audit demonstration or an unresolved author choice into a reader inference. After Chapter edits, recheck preface facts, Moment continuity, and every `chapterMatch` in the behavior registry. Preserve later consequences in continuity rather than revealing them prematurely in Chapter narration.
+- Profile prose: `timelineNotes` maps exact beat titles to concise summaries. Biography owns longer history; `conflicts` contains explicit character-specific pressures. Never attach generic paragraphs by timeline index or generate filler where information is absent. The search builder must index these same fields.
+
+## Selected Chapter canon
+
+Doom Has an Address uses Version 2 as its default and shared canon, selected by the author on 5 September 2026. An incomplete attempt at intimacy precedes the curse's collapse. Their first completed sexual encounter occurs later in Arc 1. Version 1 remains a non-canonical alternate with its own events and continuity. Version-specific behavior notes stay scoped to the appropriate version.
 
 ## Design and delivery invariants
 

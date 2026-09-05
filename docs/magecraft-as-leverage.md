@@ -1,30 +1,16 @@
 # Magecraft: Structure, Leverage, and Cost
 
-## The One Rule
-
-Magecraft does not break natural law. It applies pressure from inside it.
-
 ## Magecraft and miracle-making
 
-The hidden world distinguishes ordinary magecraft from miracle-making.
+Magecraft uses conditions already present in reality. A Magus perceives a point of strain or weakness and deliberately alters it. Fire can be encouraged to start, matter weakened, attention sharpened, or perception redirected. The effect requires something to act upon.
 
-Magecraft, including thaumaturgy, works through the structure already present in reality. A Magus applies pressure, exploits a seam, or manipulates a condition that natural law can still permit.
+Miracle-making is a separate, forbidden category. The Church condemns acts that imitate sacred deeds associated with Jesus, saints, saviours, and other religious figures, even when the immediate effect is harmless. Lynleit's water walking falls within this prohibition.
 
-Miracle-making resembles wizardry in the religious imagination. It imitates or mocks acts associated with Jesus, saints, saviours, and other sacred figures. The Church judges such acts by their form and symbolic claim, not only by the immediate harm they cause.
-
-This is why walking on water is forbidden. The ability may be harmless in use, but it reproduces a sacred miracle closely enough to cross a boundary the Church enforces severely. If Lynleit's accidental talent became known, the Church would punish her.
-
-A Magus cannot invent a new rule for reality. They find an existing seam, weakness, or point of strain and use it deliberately. Fire can be encouraged to start. Attention can be sharpened. Matter can be weakened. Perception can be redirected. None of this comes from nothing.
-
-Magecraft combines structural perception with deliberate action. A Magus sees more of the system than an ordinary person and knows where a small intervention can produce a much larger result.
-
-## Two Directions of Practice
-
-Magical practice is usually discussed in two broad directions.
+## Two directions of practice
 
 ### Thaumaturgy
 
-Thaumaturgy applies pressure outward. Its effects are visible in the surrounding world and can usually be observed or measured.
+Thaumaturgy acts outward upon the surrounding world. Its effects can usually be observed or measured.
 
 - Igniting or suppressing fire
 - Reinforcing or weakening material
@@ -32,96 +18,53 @@ Thaumaturgy applies pressure outward. Its effects are visible in the surrounding
 - Altering physical sensation
 - Redirecting an environmental process
 
-Thaumaturgy changes the conditions around the operator.
-
 ### Theurgy
 
-Theurgy applies pressure inward. It changes the operator's relationship to the system.
+Theurgy acts upon the operator's perception, thought, identity, or relationship to the world.
 
 - Expanding awareness
 - Altering perception
 - Recalibrating thought and emotion
 - Integrating spiritual experience
-- Shifting the way identity is held or understood
+- Changing the way identity is understood
 
-Theurgy is less visibly dramatic, but that does not make it safer. Changing the observer can be as consequential as changing the world being observed.
+An inward change can carry risks as serious as a visible physical intervention.
 
-## The Continuum Between Practices
+## The continuum
 
-Thaumaturgy and theurgy are useful categories within one reality. Every magical act changes both the world and the person performing it.
+Thaumaturgy and theurgy are categories within one connected reality. An outward spell requires an adjustment in its operator. A change in perception or identity changes how that person acts upon the world.
 
-An outward spell demands an inward adjustment. An inward transformation changes how the operator acts upon everything outside them. The two directions remain connected because matter, perception, emotion, probability, agency, and cognition all belong to the same natural structure.
+Matter, perception, emotion, probability, agency, and cognition belong to the same natural structure. The distinction between inward and outward practice describes the principal direction of an act, not a complete separation.
 
-The continuum doctrine treats the inner and outer worlds as connected parts of the same structure.
+## Magi
 
-## What Makes a Magus Different
+Magi are human. Their unusual perception lets them identify conditions that other people cannot detect, and their training lets them intervene deliberately. Talent is rare and unevenly distributed. Training alone does not guarantee it.
 
-Magi are not a superior species and they are not divine figures. They are human anomalies with unusual access to the structure of reality.
+Power depends on both perception and control. Fionn's precise blue flame and Lynleit's dangerous volume illustrate different uses of the same inherited ability.
 
-Their advantage lies in perception and control. They can recognize pressure points that most people cannot see, then act upon them with intention. Talent is rare, unevenly distributed, and still not fully understood. Training matters, but training alone cannot guarantee ability.
+## Holumn manifestations
 
-A Magus remains human and is subject to limits, costs, and errors.
+Fear, memory, fixation, and psychic strain can produce Holumns. The source may be an individual or a population, and its manifestation need not be a creature. Weather, events, disembodied wills, and curses also belong to the category.
 
-## How Nightmares Enter Reality
+A visible body may be only one part of a manifestation. Containment therefore requires evidence about its circumstances, repeated conditions, people, and objects as well as its physical form. Incident records and known countermeasures are collected in [Holumns](../holumns.html).
 
-Nightmares do not come from a fixed bestiary. Holumn classifies many kinds of manifestation and does not describe a single species.
+## Limits and cost
 
-Each manifestation is shaped by the psyche feeding it: fear, memory, fixation, trauma, and the exact places where a person or population has fractured. The pressure can enter reality as a physical creature, an environmental phenomenon, a repeating event, a disembodied will, or a curse.
+Magecraft cannot create something from nothing or erase the foundational conditions upon which it works. Every intervention changes an existing balance and can meet resistance.
 
-Because no two inner lives are identical, no two manifestations have to follow the same design. The possible threats are effectively inexhaustible.
+- Overuse can destabilize the affected system.
+- Poor judgment can direct force into the wrong place.
+- Greater force increases exposure to backlash.
+- A successful effect can cause harmful secondary consequences.
 
-This is why containment teams study people, objects, places, and repeated conditions as carefully as they study creatures. A visible body can be only one surface of the rule producing it.
+Precision can achieve what a larger display cannot. Its value depends on the operator understanding the conditions well enough to avoid unwanted effects.
 
-## Limits and Cost
+## Authority and secrecy
 
-Magecraft cannot produce an absolute contradiction. It cannot create something from pure nothingness, erase foundational structure, or make the impossible possible simply because an operator wants it badly enough.
+The Magiarchy regulates sanctioned practice and cooperates with the Church in containment. The Church needs Magi to suppress threats ordinary institutions cannot handle, but watches for uncontrolled practice and forbidden miracles.
 
-Every intervention introduces stress. That stress shifts the existing balance and invites resistance.
+Renegade Magi reject the arrangement. Both the Church and the Magiarchates pursue them.
 
-- Overuse destabilizes the system.
-- Poor judgment sends pressure into the wrong place.
-- Greater force creates greater exposure to backlash.
-- A successful spell can still produce a worse second-order consequence.
+Most people do not know magic exists. Some clergy, officials, and advisers receive limited knowledge. The Church holds final sanction over suppression; Magiarchal resources may investigate, contain, coerce, recruit, or remove witnesses under that authority.
 
-These limits prevent magecraft from becoming omnipotent.
-
-## What Power Actually Looks Like
-
-A Magus's power depends on understanding a structure well enough to change it precisely. The largest display may achieve less than a controlled intervention.
-
-A careless operator forces reality until something breaks. A skilled operator finds the smallest intervention that can produce the required result.
-
-Precise magecraft can be more dangerous than a large display. A restrained operator may understand the consequences well enough to use only the required force.
-
-## Why Magecraft Becomes Political
-
-The conflict between Magi, law, religion, and political power is built into the system. A person who can identify and manipulate the weak points in reality is useful, dangerous, and difficult to govern.
-
-The hidden Magi society exists to regulate practice, prevent uncontrolled destabilization, and preserve its arrangement with the Church. The Magiarchy and its Magiarchates represent the sanctioned side of that order.
-
-The Church understands the hidden world and permits cooperation because Magi suppress threats that ordinary institutions cannot manage. It also watches them with persistent suspicion. Successful containment demonstrates the need for Magi. An uncontrolled miracle gives the Church grounds to question whether their continued activity is tolerable.
-
-Renegade Magi reject this arrangement and pursue their own ends. The Church and the Magiarchates hunt them for the same basic reason: unchecked magical power is treated as a threat to civilization, regardless of the operator's stated intentions.
-
-## Why the World Is Kept Ignorant
-
-Knowledge is distributed as narrowly as possible and only as widely as necessary.
-
-Some clergy, advisers, officials, and political actors are allowed partial awareness. Most people are allowed none. Suppression doctrine keeps ordinary life intact by preventing the public from understanding what exists beneath it. The Church and Magiarchy share responsibility for carrying it out, but the Church holds final sanction over its use.
-
-The secrecy is not peaceful. Sanctioned Magi and renegades remain locked in a hidden conflict shaped by surveillance, betrayal, containment, and reprisal.
-
-Exposure could trigger retaliation from the Church, panic among the public, collapse inside Magi institutions, or wider civil destabilization. The system stays hidden because every faction believes the visible world would become less stable if it knew the truth.
-
-## The Practical Doctrine
-
-Competent magecraft follows a few simple principles:
-
-- Understand before acting.
-- Favor precision over spectacle.
-- Expect every intervention to alter the balance.
-- Treat internal change as seriously as visible force.
-- Never assume a successful effect is free of consequence.
-- Distrust anyone who believes power has made them exempt from restraint.
-
-Mastery allows a Magus to make the necessary change without losing control of the surrounding conditions.
+Exposure can provoke Church retaliation, public panic, or conflict inside Magi institutions. Disagreement over what to conceal and how to conceal it persists within the sanctioned order.

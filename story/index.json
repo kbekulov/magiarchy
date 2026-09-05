@@ -5,20 +5,22 @@
     "title": "Before the First Bell",
     "status": "Working draft",
     "file": "before-the-first-bell.md",
-    "updated": "2026-08-24",
+    "updated": "2026-09-05",
     "description": "Lynleit and Fionn attend private negotiations at a church before dawn while their MSF escort waits outside and wonders why.",
-    "characters": ["Lynleit", "Fionn", "Felix", "Reiner"],
+    "characters": [
+      "Lynleit",
+      "Fionn",
+      "Felix",
+      "Reiner"
+    ],
     "timelinePhase": "vanishing-point",
     "timelineLabel": "Vanishing Point",
     "events": [
       "Lynleit and Fionn arrive at a church before dawn for private negotiations.",
-      "Felix and Reiner, Lynleit's friends and Fionn-trusted personal bodyguards, are required to wait outside.",
+      "Felix and Reiner wait outside as the family's security detail.",
       "Lynleit leaves the meeting early and visibly irritated.",
       "Felix and Reiner seek gossip, but Lynleit redirects them with a playful tease.",
-      {
-        "text": "The disappearance reports and the concealed negotiation occupy the same morning, but nobody present explains whether they are connected.",
-        "status": "inferred"
-      }
+      "A report of another disappearance appears while the meeting is in progress."
     ]
   },
   {
@@ -29,7 +31,11 @@
     "file": "ash-under-glass.md",
     "updated": "2026-08-26",
     "description": "Captain Heyk leads a specially equipped unit into Vilen's sealed park and becomes its sole survivor.",
-    "characters": ["Heyk", "Drake", "Sherie"],
+    "characters": [
+      "Heyk",
+      "Drake",
+      "Sherie"
+    ],
     "timelinePhase": "the-quarantine",
     "timelineLabel": "The Quarantine",
     "events": [
@@ -48,7 +54,12 @@
     "file": "after-the-failed-attempt.md",
     "updated": "2026-09-01",
     "description": "After Kyrien's failed attack on an MSF-protected politician nearly harms Lynleit, she questions him without revealing that she was present and converts his prison risk into a secret alliance.",
-    "characters": ["Lynleit", "Kyrien", "Felix", "Reiner"],
+    "characters": [
+      "Lynleit",
+      "Kyrien",
+      "Felix",
+      "Reiner"
+    ],
     "timelinePhase": "the-hidden-wager",
     "timelineLabel": "The Hidden Wager",
     "events": [
@@ -68,7 +79,11 @@
     "file": "the-name-left-behind.md",
     "updated": "2026-08-27",
     "description": "Natalia follows a missing name through the city archive and finds her niece Myka protecting the last surviving clue.",
-    "characters": ["Natalia", "Myka", "Fionn"],
+    "characters": [
+      "Natalia",
+      "Myka",
+      "Fionn"
+    ],
     "timelinePhase": "unknowing-convergence",
     "timelineLabel": "Unknowing Convergence",
     "events": [
@@ -83,9 +98,16 @@
     "title": "The Empty Boats Beneath the Bridge",
     "status": "Working draft",
     "file": "the-empty-boats-beneath-the-bridge.md",
-    "updated": "2026-09-01",
+    "updated": "2026-09-05",
     "description": "A covert MSF inspection of apparently unmanned river shipments collapses when the Drowned Choir attacks from below, leaving Kyrien to witness Lynleit's forbidden water walking from the quarantined bank.",
-    "characters": ["Lynleit", "Kyrien", "Felix", "Reiner", "Sherie", "Drake"],
+    "characters": [
+      "Lynleit",
+      "Kyrien",
+      "Felix",
+      "Reiner",
+      "Sherie",
+      "Drake"
+    ],
     "timelinePhase": "unknowing-convergence",
     "timelineLabel": "Unknowing Convergence",
     "events": [
@@ -122,9 +144,14 @@
     "title": "The Nameless Street",
     "status": "Working draft",
     "file": "the-nameless-street.md",
-    "updated": "2026-08-31",
-    "description": "Days before Fionn's death, Lynleit disappears from an ordinary walk with Felix into an impossible old street where a child's lure ends in a fall that will later return inside Helena's accusation.",
-    "characters": ["Lynleit", "Felix", "Fionn", "Helena"],
+    "updated": "2026-09-05",
+    "description": "Lynleit loses Felix during a walk after lunch and follows a child's cries through an impossible street.",
+    "characters": [
+      "Lynleit",
+      "Felix",
+      "Fionn",
+      "Helena"
+    ],
     "timelinePhase": "divided-attention",
     "timelineLabel": "Divided Attention",
     "events": [
@@ -134,9 +161,8 @@
       "Lynleit catches the balloon and follows the girl's cries through the labyrinth.",
       "The girl leads Lynleit to a broken fence above the body of a dead boy, then pushes her from the ledge.",
       "Lynleit wakes on a city bench while Felix tries to revive her from an apparent fainting episode.",
-      "Days later, the dead boy's fall returns to Lynleit when she sees Fionn's body below the hill at the family house.",
       {
-        "text": "The street leaves no material trace, so whether it was a physical place, a hallucination, or a place-bound Holumn remains for the reader to infer.",
+        "text": "The girl's smile and sudden push suggest that her crying was a lure.",
         "status": "inferred"
       }
     ]
@@ -145,44 +171,72 @@
     "slug": "doom-has-an-address",
     "number": "Chapter 07",
     "title": "Doom Has an Address",
-    "status": "Author text",
-    "file": "doom-has-an-address.md",
-    "updated": "2026-09-04",
-    "description": "After jointly destroying a Holumn, Lynleit and Kyrien inherit one fatal curse written across both identities and search for a way to survive without sacrificing either life.",
-    "characters": ["Lynleit", "Kyrien", "Natalia", "Father Mikhail"],
+    "status": "Revised canon draft",
+    "file": "doom-has-an-address-v2.md",
+    "updated": "2026-09-05",
+    "description": "After Lynleit and Kyrien inherit one fatal curse across both identities, an incomplete attempt at intimacy is followed by the curse's collapse and leaves the exact threshold of their transformation unresolved.",
+    "characters": [
+      "Lynleit",
+      "Kyrien",
+      "Natalia",
+      "Father Mikhail"
+    ],
     "timelinePhase": "lynleit-disappears",
     "timelineLabel": "Lynleit Disappears",
     "events": [
       "Lynleit and Kyrien destroy a Holumn together and complete the final condition of its mechanism.",
-      "The Holumn transfers one terminal curse across both of their identities, causing progressive physical decline and a prognosis measured first in weeks and then in days.",
-      "Suppressing the curse in either person fails because the remaining half reconstructs the other.",
+      "The Holumn transfers one terminal curse across both identities, causing progressive physical decline and a prognosis measured first in weeks and then in days.",
+      "Suppressing the curse in either person fails because the remaining attachment reconstructs it in the other.",
       "The traditional solution requires one of them to die first so the surviving identity is released.",
       "Lynleit rejects that answer and searches Magiarchal, medical, theurgical, academic, and Church records for another form of identity discontinuity.",
       "Natalia identifies the attachment as sympathetic recognition of the ego and proposes profound reciprocal transformation as a possible alternative to death.",
       "Father Mikhail reaches the same conclusion through Church records and tells Lynleit that physical intimacy could work only if an existing attachment changes both identities.",
-      "Although Lynleit normally treats openness as a leadership strength, the sexual and personal implications embarrass her into withholding the proposed method from Kyrien while she investigates whether it can save them.",
-      "With the prognosis reduced to days, Lynleit initiates a sudden and imperfect sexual encounter, and Kyrien responds deliberately.",
-      "Their reciprocal change makes the curse unable to recognize the exact pair of identities that destroyed the Holumn, causing the entanglement to fracture.",
+      "Lynleit withholds the proposed method from Kyrien and investigates their relationship as a possible procedure.",
+      "Lynleit attempts to initiate an encounter but does not fully cross the boundary between them.",
+      "The curse begins weakening the following morning and is later gone.",
       {
-        "text": "Their survival leaves the reader to infer which parts of their former self-conceptions have ended and how that change will shape the life they begin to share before Lynleit's disappearance.",
+        "text": "Lynleit's unread pages and repeated denials suggest that she still wants Kyrien now that the curse is gone.",
+        "status": "inferred"
+      },
+      "Kyrien knows about Lynleit's attempt, her refusal to explain it, and the curse's decline, but lacks enough information to connect them.",
+      "The incomplete attempt and its aftermath change both identities enough for the curse to lose its hold.",
+      {
+        "text": "Her prepared answer suggests that Lynleit expected, and had been thinking about, another conversation with Kyrien.",
         "status": "inferred"
       }
     ],
-    "defaultVersion": "v1",
+    "defaultVersion": "v2",
     "versions": [
       {
         "id": "v1",
-        "label": "Version 1",
-        "status": "Author text",
+        "label": "Version 1 · Alternate",
+        "status": "Revised alternate",
         "file": "doom-has-an-address.md",
-        "updated": "2026-09-04"
+        "updated": "2026-09-05",
+        "events": [
+          "Lynleit and Kyrien destroy a Holumn together and complete the final condition of its mechanism.",
+          "The Holumn transfers one terminal curse across both of their identities, causing progressive physical decline and a prognosis measured first in weeks and then in days.",
+          "Suppressing the curse in either person fails because the remaining half reconstructs the other.",
+          "The traditional solution requires one of them to die first so the surviving identity is released.",
+          "Lynleit rejects that answer and searches Magiarchal, medical, theurgical, academic, and Church records for another form of identity discontinuity.",
+          "Natalia identifies the attachment as sympathetic recognition of the ego and proposes profound reciprocal transformation as a possible alternative to death.",
+          "Father Mikhail reaches the same conclusion through Church records and tells Lynleit that physical intimacy could work only if an existing attachment changes both identities.",
+          "Lynleit withholds Natalia and Mikhail's proposed treatment from Kyrien.",
+          "Lynleit initiates an awkward sexual encounter and Kyrien responds.",
+          "Their reciprocal change makes the curse unable to recognize the exact pair of identities that destroyed the Holumn, causing the entanglement to fracture.",
+          {
+            "text": "Lynleit hiding the notebook page suggests that she still cannot discuss the attempt openly with Kyrien.",
+            "status": "inferred"
+          }
+        ],
+        "description": "After jointly destroying a Holumn, Lynleit and Kyrien inherit one fatal curse written across both identities and search for a way to survive without sacrificing either life."
       },
       {
         "id": "v2",
-        "label": "Version 2",
-        "status": "Author text",
+        "label": "Version 2 · Canon",
+        "status": "Revised canon draft",
         "file": "doom-has-an-address-v2.md",
-        "updated": "2026-09-04",
+        "updated": "2026-09-05",
         "description": "After Lynleit and Kyrien inherit one fatal curse across both identities, an incomplete attempt at intimacy is followed by the curse's collapse and leaves the exact threshold of their transformation unresolved.",
         "events": [
           "Lynleit and Kyrien destroy a Holumn together and complete the final condition of its mechanism.",
@@ -195,11 +249,14 @@
           "Lynleit withholds the proposed method from Kyrien and investigates their relationship as a possible procedure.",
           "Lynleit attempts to initiate an encounter but does not fully cross the boundary between them.",
           "The curse begins weakening the following morning and is later gone.",
-          "Natalia's questions force Lynleit to confront disappointment now that survival no longer provides a reason to try again.",
-          "Kyrien knows about Lynleit's attempt, her refusal to explain it, and the curse's decline, but lacks enough information to connect them.",
-          "The account identifies Kyrien's lost certainty that vulnerability can remain private and Lynleit's lost certainty that another person can enter a solution without changing her as the discontinuities that satisfy the curse.",
           {
-            "text": "The statement that the boundary remained uncrossed 'mostly' leaves the physical extent of the attempt and the timing of their first completed encounter for the reader to infer.",
+            "text": "Lynleit's unread pages and repeated denials suggest that she still wants Kyrien now that the curse is gone.",
+            "status": "inferred"
+          },
+          "Kyrien knows about Lynleit's attempt, her refusal to explain it, and the curse's decline, but lacks enough information to connect them.",
+          "The incomplete attempt and its aftermath change both identities enough for the curse to lose its hold.",
+          {
+            "text": "Her prepared answer suggests that Lynleit expected, and had been thinking about, another conversation with Kyrien.",
             "status": "inferred"
           }
         ]

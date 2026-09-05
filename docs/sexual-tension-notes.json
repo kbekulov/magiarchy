@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-04",
+  "updated": "2026-09-05",
   "pairs": [
     {
       "id": "lynleit-kyrien",
@@ -9,15 +9,15 @@
         {
           "slug": "lynleit",
           "name": "Lynleit",
-          "reading": "MSF and her personal missions remain Lynleit's priorities. Her attention to Kyrien begins as operational scrutiny, sharpened by the knowledge that his failed attempt nearly harmed her, and becomes involuntarily physical through the tells she learns during their repeated card games. His claim that a battle is reason enough to stay removes both obedience and promised reward from his persistence. She dislikes the distraction and returns to the work whenever it intrudes. When their shared curse forces a decision, she still approaches intimacy as a problem to investigate and a responsibility she must carry."
+          "reading": "Lynleit studies Kyrien first as a recruit whose failed attack nearly harmed her. Their card games make that scrutiny personal: she learns his tells and begins noticing his hands and breath. Later she attempts intimacy as a possible treatment for their shared curse, but remains interested after they survive without completing it."
         },
         {
           "slug": "kyrien",
           "name": "Kyrien",
-          "reading": "Kyrien enters Lynleit's interrogation without knowing that his attack on the protected politician almost harmed her. Later, the card games expose his need to win and make him aware that she is studying his breath, hands, and pauses rather than only his play. When asked why he keeps risking himself, he says the battle itself is enough. The answer is honest but incomplete: her elegance, authority, and nerve have become physically distracting before he permits himself to call the reaction desire. His strongest answer remains behavioral, including his deliberate response when she finally crosses the boundary between them."
+          "reading": "Kyrien wants to beat Lynleit at cards and dislikes finding that she can read him. Her elegance and nerve also attract him. He stays because he wants the battle, then finds himself facing private questions that her orders cannot answer. After the attempted intimacy, she will not tell him why their curse disappeared."
         }
       ],
-      "dynamic": "Their attraction begins through observation rather than romance. The interrogation gives Lynleit private knowledge Kyrien cannot read. The failed river watches then give them a voluntary contest outside the handler-asset bargain: Lynleit learns the stopped breath before one of his risks, while he learns the hand movement before one of her decisions. Hands, breath, gaze, pauses, proximity, and competitive attention become their private language. The river recovery and the hotel refuge remain non-sexual thresholds in which restraint makes physical and emotional trust possible. Kyrien's choice to remain after Lynleit's authority loses practical force separates desire from compliance. When a shared Holumn curse later reduces their remaining time to days, Lynleit investigates intimacy as a possible identity change and initiates a clumsy, sudden, almost argumentative encounter. Kyrien understands what she is asking and answers deliberately. The curse does not create their attachment or make sex curative. It forces both to acknowledge a relationship already capable of changing the identities it recognizes."
+      "dynamic": "The interrogation, card games, protected secret, and voluntary decision to stay give this pairing different kinds of familiarity. In Doom Has an Address, an incomplete attempt at intimacy breaks the shared curse. Lynleit loses the excuse of treatment without losing her interest in Kyrien; he is left trying to understand what happened. Their sexual relationship begins later in Arc 1."
     },
     {
       "id": "lynleit-felix",
@@ -107,7 +107,7 @@
           "reading": "Natalia's analytical distance gives Lester something unusually difficult to provoke. He enjoys forcing the reserved researcher into immediate experience, but the tension changes when he wants her attention to recognize the man rather than examine the demiholumn condition."
         }
       ],
-      "dynamic": "Their casework repeatedly joins Natalia's detached analysis to Lester's direct, embodied engagement with the impossible. She is drawn toward the part of him her research cannot settle. He pushes against being treated as a case and learns to distinguish her examiner's attention from personal interest. The tension belongs to that unstable boundary: Natalia must encounter him as a man without abandoning the questions his existence raises, while Lester wants to be understood without becoming legible enough to lose his freedom."
+      "dynamic": "Repeated cases bring Natalia's examination of Lester into conflict with his insistence on being treated as more than a case. He provokes her to act; she notices more than he expected. Their attraction does not answer her questions about his demiholumn nature."
     },
     {
       "id": "sherie-felix",

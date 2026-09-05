@@ -1,12 +1,12 @@
 {
-  "updated": "2026-09-01",
+  "updated": "2026-09-05",
   "title": "Items & Artefacts",
   "description": "Story-relevant objects, artefacts, and other nonhuman holdings that are not weapons or Holumns.",
   "items": [
     {
       "id": "IA-001",
       "slug": "leviathan-hide-coat",
-      "updated": "2026-09-01",
+      "updated": "2026-09-05",
       "name": "Leviathan-hide coat",
       "recordType": "Anomalous garment",
       "status": "Held by Lynleit",
@@ -82,7 +82,7 @@
           "arc": "Arc 1",
           "phase": "After the discovery",
           "title": "An inherited protection",
-          "detail": "The garment becomes part of Lynleit's equipment. Its resemblance to the lost jacket can preserve an ordinary preference inside Fionn's posthumous protection."
+          "detail": "Lynleit carries the garment after discovering its properties. It sometimes takes the form of the suede jacket she lost."
         }
       ],
       "storyLinks": [

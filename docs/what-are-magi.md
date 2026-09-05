@@ -1,63 +1,61 @@
 # What Can You Tell Me About Magi?
 
-**Journalist:** “What can you tell me about Magi?”
+**Journalist:** "What can you tell me about Magi?"
 
-**Fionn:** “That depends on whether you want the answer fit for a child, a priest, or a judge.”
+**Fionn:** "What do you already know?"
 
-**Journalist:** “The true one.”
+**Journalist:** "That you can do things other people cannot. Nobody will tell me how."
 
-**Fionn:** “A dangerous preference.”
+**Fionn:** "We perceive conditions most people miss. With training, we can alter them. Encourage a fire, weaken material, redirect attention. The result may look impossible to someone who cannot see how it was done."
 
-**Fionn:** “Very well. Magi do not create miracles. They exploit them.”
+**Journalist:** "So it is natural."
 
-**Journalist:** “Explain.”
+**Fionn:** "It occurs within nature. That doesn't make it safe."
 
-**Fionn:** “Nature is full of pressure points. Fault lines. Small mercies in the machinery. Most men live their entire lives without seeing them. A Magus sees them, presses where others only endure, and obtains from the world an effect that the world was already willing to permit.”
+**Journalist:** "And miracles?"
 
-**Journalist:** “So your craft is natural.”
+**Fionn:** "A separate question. The Church considers certain acts an imitation of sacred miracles. A harmless result can still be forbidden."
 
-**Fionn:** “Do not say that too loudly. It upsets both the devout and the educated, though for different reasons.”
+**Journalist:** "Who decides what counts?"
 
-**Journalist:** “And the common word for it?”
+**Fionn:** "The Church has a considerable interest in that decision."
 
-**Fionn:** “Magic. Superstition. Blasphemy. Treason, on difficult days.”
+**Journalist:** "You sound less certain than before."
 
-**Journalist:** “You speak of it with very little reverence.”
+**Fionn:** "I'm describing an agreement, not a law of physics."
 
-**Fionn:** “I was not asked to admire it.”
+**Journalist:** "Why keep all this secret?"
 
-**Journalist:** “Then what are Magi, truly?”
+**Fionn:** "Because the institutions containing it depend on secrecy. A witness can expose people, methods, and threats we have not learned to control."
 
-**Fionn:** “Loopholes. Human ones.”
+**Journalist:** "Does that mean the witness has to die?"
 
-**Journalist:** “You say that as if it were an accusation.”
+**Fionn:** "It means the authorities will consider how to prevent the exposure."
 
-**Fionn:** “It often is.”
+**Journalist:** "Including killing them."
 
-**Journalist:** “And what follows from this?”
+**Fionn:** "Yes."
 
-**Fionn:** “What follows is secrecy. Always secrecy. A society can forgive murder more easily than it can forgive a wound in its understanding of nature.”
+**Journalist:** "Would you?"
 
-**Journalist:** “That is a severe claim.”
+**Fionn:** "You have not given me a case."
 
-**Fionn:** “It is also a practical one.”
+**Journalist:** "I have given you a person."
 
-**Journalist:** “You mean that a witness must die.”
+**Fionn:** "And I have not given you permission to assume the decision is simple."
 
-**Fionn:** “I mean that the world protects its coherence with astonishing cruelty.”
+**Journalist:** "The Church approves these decisions?"
 
-**Journalist:** “That was not my question.”
+**Fionn:** "It holds final sanction over suppression. Magi have resources the Church needs, and powers it has reason to fear. Cooperation has not removed either fact."
 
-**Fionn:** “No. But it was the truthful answer.”
+**Journalist:** "Then the Church rules you."
 
-**Journalist:** “And the Church?”
+**Fionn:** "A Magiarch governs a territory. There is no lawful universal ruler of Magi."
 
-**Fionn:** “The Church is wiser than statesmen and less honest than philosophers. It knows enough to fear us, enough to use us, and enough to deny both.”
+**Journalist:** "Could the Magiarchs organize one?"
 
-**Journalist:** “And politics?”
+**Fionn:** "Not without breaking the arrangement with the churches."
 
-**Fionn:** “Politics is forbidden.”
+**Journalist:** "That sounds political."
 
-**Journalist:** “Forbidden, or impossible?”
-
-**Fionn:** “Neither. Merely expensive.”
+**Fionn:** "It is."

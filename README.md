@@ -18,6 +18,8 @@ The site is intentionally framework-free: HTML, CSS, and a small amount of vanil
 
 Global archive search is backed by the generated `search-index.json` file. After changing site content, rebuild it with `node scripts/build-search-index.mjs` before committing so character sections, Chapters, Moments, Docs, World records, weapons, Holumn incidents, and update entries remain searchable.
 
+After rebuilding search, run `node scripts/verify-archive.mjs`. It checks title-specific profile timelines, Chapter and Moment versions, behavior-note paragraph anchors, canon selection, and search coverage. Reader-knowledge classifications still require editorial review against the scene; the script cannot decide whether an implication is convincing.
+
 Design and workflow rules for future AI development are maintained in [`AGENTS.md`](./AGENTS.md). The site must remain compatible with GitHub Pages, retain the root `CNAME`, use relative links and assets, and must not depend on the Codex Sites extension.
 
 ## Ownership

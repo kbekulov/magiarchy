@@ -1,236 +1,90 @@
 ## Doom Has an Address
 
-The Holumn is eventually destroyed.
+### After the killing
 
-That is the first mistake.
+For several nights after they destroyed the Holumn, Lynleit blamed her exhaustion on the fight.
 
-Lynleit and Kyrien do not understand what they are fighting until after they have already killed it. The creature is not merely a manifestation capable of defending itself. Its continued existence depends upon a peculiar relationship between itself and whoever consciously recognizes it as something that must cease to exist.
+Then small cuts stopped closing. Sleep left her as tired as she had been before it. Kyrien began pausing on stairs. He waited for her at the landings, which might have been considerate if she had not seen him trying to recover his breath.
 
-To destroy it is therefore to complete the final part of its mechanism.
+The examinations gave them weeks.
 
-The Holumn dies by transferring its own terminal condition to the ego responsible for its destruction.
+Suppressing the curse in Lynleit brought brief relief. It returned through Kyrien. Treating him produced the same result in reverse. Whatever had followed them out of the fight was attached to both of them.
 
-Had Kyrien destroyed it alone, he would have inherited the entire condition.
+One could survive if the other died first.
 
-Had Lynleit destroyed it alone, the same would have happened to her.
+"No," Lynleit said.
 
-Instead, they destroy it together.
+She took the reports away and began calling people who had not yet given her that answer.
 
-The result is worse.
+The Magiarchal records led her to physicians, prohibited theurgical procedures, and arguments about what counted as a person. Memory erasure would not work. Neither would a coma. Destroying magical capacity offered no reliable prospect, and having someone declared dead would change nothing.
 
-The curse does not divide itself into two copies. There remains only one curse, but its subject becomes distributed between two people.
+Eventually she called Natalia.
 
-For lack of a better scientific vocabulary, later researchers compare the condition to quantum entanglement, although the comparison is considered crude. The actual mechanism is theurgic rather than physical.
-
-The curse has identified two egos as one causal answer to the same event.
-
-**Who killed the Holumn?**
-
-Lynleit.
-
-Kyrien.
-
-Neither answer is complete without the other.
-
-From that point onward, the curse continuously attempts to complete the Holumn's death through them.
-
-Their bodies begin to weaken.
-
-Their magical tolerances decline.
-
-Sleep stops restoring them properly.
-
-Minor injuries heal too slowly.
-
-Thaumaturgy becomes increasingly exhausting.
-
-Eventually even ordinary exertion becomes difficult.
-
-The projected prognosis is several weeks.
-
-Then death.
-
-Attempts to suppress the curse produce a second discovery.
-
-If the condition is removed from Lynleit while it remains attached to Kyrien, Kyrien's half reconstructs hers.
-
-If it is removed from Kyrien, Lynleit's reconstructs his.
-
-There are not two infections.
-
-There is one statement written across two identities.
-
-As long as both identities continue to exist in approximately the form recognized by the curse, the statement remains valid.
-
-The traditional solution is therefore horrifyingly simple.
-
-One of them dies first.
-
-Once one ego permanently ceases to exist, the relation collapses. The curse can no longer describe two subjects as the joint cause of the Holumn's destruction, and the surviving subject is released.
-
-This is the answer Lynleit receives.
-
-She rejects it immediately.
-
-Not emotionally.
-
-Absolutely.
-
-She refuses to accept a system whose only solution is deciding which of them deserves to remain alive.
-
-So she begins searching.
-
-She speaks to Magi.
-
-She digs through Magiarchal records.
-
-She contacts physicians who understand the interaction between psyche and thaumaturgy.
-
-She investigates prohibited theurgical procedures.
-
-She asks whether memory erasure would work.
-
-It would not.
-
-Whether coma would work.
-
-It would not.
-
-Whether destroying magical capacity would work.
-
-Probably not.
-
-Whether one of them could be declared legally or spiritually dead.
-
-No.
-
-The curse has no interest in legal language.
-
-It recognizes the ego.
-
-And eventually Lynleit calls Natalia.
+### The former professor
 
 Natalia was silent long enough that Lynleit checked the connection.
 
-"This is older than your Holumn," she said at last. "Not the creature itself. The mechanism. People have been inventing versions of it for thousands of years."
+"I'm reading," she said. "You sent six reports."
 
-Lynleit leaned back against the desk. "Such as?"
+"The last two are the same treatment. On different patients."
 
-"The Assyrians had a substitute-king ritual. If an omen predicted the king's death, they could install another man in his place and let the omen fall on him instead. The important part wasn't biology. It was identity. For the duration of the rite, that man occupied the position the omen recognized as king."
+"I noticed."
 
-"Comforting."
+Lynleit leaned against the desk. Her hand had begun trembling again. She put the telephone in the other one.
 
-"It gets worse. Japanese purification rites used human-shaped substitutes to receive pollution or misfortune from a person. Folklore is full of beings whose life is hidden somewhere outside their bodies. An egg, an animal, a box, a tree. Destroying the body does nothing because the actual point of attachment is elsewhere."
+"The Holumn transferred its death to whoever killed it," Natalia said. "You killed it together. That's why treating either of you separately fails."
 
-Lynleit frowned. "You're saying the Holumn did the same thing."
+"They've established that."
 
-"Almost. It inverted the principle." Natalia's voice became more focused. "It hid its death in the people who killed it."
+"They've established what happens. I'm asking what it recognizes."
 
-Lynleit said nothing.
+Lynleit looked at the reports.
 
-"And then there is the old logic of sympathetic magic," Natalia continued. "Things that have been joined remain connected after separation. Hair, blood, possessions, names, vows. Primitive language for a phenomenon your Magi would dress up with considerably more mathematics."
+"Us."
 
-"So when Kyrien and I destroyed it together..."
+"Your bodies? Your names? The people you understand yourselves to be?"
 
-"You didn't each receive half a curse. That would be easier. You became two coordinates of the same one."
+She had used that tone in lectures. Lynleit had once liked being the student who could answer her.
 
-Lynleit looked down at her hand.
+"The ego," she said.
 
-"If I suppress mine, his restores it."
+"Good. Now tell me why it has to be destroyed."
 
-"Because the structure still resolves correctly. Kyrien exists. You exist. Both of you remain sufficiently identical to the people who performed the act. The curse checks its address and finds both occupants still at home."
+"Because it keeps reconstructing the curse."
 
-"Then the usual solution really is what they told me."
+"And death is the only thing that can change a person?"
 
-"One dies first."
+Lynleit stopped looking at the reports.
 
-The words settled badly between them.
+Natalia spoke about substitute kings, human-shaped vessels used in purification rites, and stories in which a life was hidden outside its body. Lynleit let her finish the first example, interrupted the second, and had to ask her to repeat the third.
 
-Lynleit stared out the window. "I'm not doing that."
+"These aren't your curse," Natalia said. "But the point of attachment isn't always where you'd expect. Something can recognize a role or a relationship. In this case it recognizes the two people responsible for one act."
 
-"I assumed as much."
+"Could we make it recognize someone else?"
 
-"There has to be another way."
+"You need to stop being the people it recognizes."
 
-"There usually is. People just become lazy when death works reliably."
+"Memory erasure doesn't work."
 
-Lynleit closed her eyes. "Natalia."
+"Because your memories aren't all of you. Nor is your title, or your name, or the description you'd give a stranger. Jung's ego isn't the whole psyche either, but it is a useful place to begin: the conscious sense of who you are. That can change without killing you."
 
-"I'm serious."
-
-"Then explain."
-
-Another pause.
-
-"What exactly did they tell you has to disappear?"
-
-"The ego."
-
-"No. Think."
-
-Lynleit exhaled through her nose. Natalia had used that tone in lectures too.
-
-"The ego," she repeated.
-
-"And what is an ego?"
-
-"You called me so I could answer questions, not sit an examination."
-
-"Unfortunately, you've always needed both."
-
-"Natalia."
-
-"Jung would have objected to the way you're using the word. The ego is not the whole psyche. It is the center of conscious identity. The part that says this is me, this happened to me, this is what I want, this is where I end and the rest of the world begins."
-
-Lynleit straightened slightly.
-
-Natalia continued.
-
-"If the curse attached itself to that structure, then biological death is merely the most absolute way of disrupting it. It isn't necessarily the only way."
-
-Lynleit was quiet now.
-
-"You think the ego can change enough that the curse stops recognizing it."
-
-"Exactly."
-
-"How much?"
+"How much would we have to change?"
 
 "That I don't know."
 
-"Helpful."
+Lynleit rubbed her forehead.
 
-"I can tell you what would not be enough. New clothes. A new title. Hypnosis. Memory tampering at the surface level. Pretending to become someone else. The change would have to reach the architecture beneath ordinary self-description."
+"Conversion," Natalia continued. "Grief. Parenthood, sometimes. An experience that makes your old assumptions impossible to live by. The trouble is getting there deliberately, and getting both of you there before the curse restores what you've changed."
 
-"What kind of change?"
+"We're already confronting death."
 
-"The kind after which a person can truthfully say that the one who entered an event and the one who emerged from it are not psychologically identical."
+"I was hoping for something you could survive."
 
-Lynleit looked toward the floor.
+"Then suggest it."
 
-"Trauma," Natalia said. "Religious conversion. Surviving something that forces a complete reorganization of one's values. Grief can do it. Parenthood sometimes does it. A genuine confrontation with death certainly can."
+Natalia went quiet.
 
-"We already have one of those arranged."
-
-"Yes. I was hoping for something less terminal."
-
-Lynleit rubbed her forehead. "And you think both Kyrien and I would have to change?"
-
-"Most likely. The curse is relational. Altering one coordinate might destabilize it, but if the other remains intact it may simply reconstruct the original pattern. You need to damage the relation itself."
-
-"Damage?"
-
-"Change, if you prefer a nicer word."
-
-"Into what?"
-
-Natalia went quiet again.
-
-Lynleit knew that silence.
-
-It was the silence Natalia used immediately before saying something she knew would irritate her.
-
-"No."
+"No," Lynleit said.
 
 "I haven't said anything."
 
@@ -242,119 +96,59 @@ It was the silence Natalia used immediately before saying something she knew wou
 
 "Fall in love."
 
-Lynleit stared at the phone.
+Lynleit took the telephone away from her ear and looked at it.
 
-For several seconds neither spoke.
+"You cannot possibly be serious."
 
-Then Lynleit said, very carefully, "You cannot possibly be serious."
+"I am."
 
-"I am entirely serious."
+"You've taken me through death rituals and Carl Jung to tell me to fall in love?"
 
-"You spent the last ten minutes explaining Assyrian death rituals, sympathetic magic, external souls and Carl Jung so that you could tell me to fall in love?"
+"You asked for an alternative."
 
-"When you phrase it like that, it does sound theatrical."
+"I asked for something we can do."
 
-"Natalia."
+"And I can't prescribe it. You can't pretend your way out of this. But if you already matter enough to each other, there may be something to work with."
 
-"Love is one of the few ordinary human experiences capable of reorganizing identity at several levels simultaneously. Future, loyalty, fear, attachment, self-image, boundaries. People begin making decisions as though another person has partially entered the structure of the self."
+Lynleit looked toward the door.
 
-"That is sentimental nonsense."
+"How would we know?"
 
-"No. Sentimental nonsense is what poets do with it afterward."
+"You'd have to risk finding out."
 
-Lynleit said nothing.
-
-"If the Holumn's curse is anchored to where each of you draws the boundary between self and other," Natalia continued, "then a sufficiently profound reciprocal attachment could distort that boundary enough to break the original configuration."
-
-"You make it sound like surgery."
-
-"At the moment, it is."
-
-"And how exactly do you prescribe falling in love with someone?"
-
-"You don't."
-
-"Then this is useless."
-
-"I didn't say it was convenient. You asked what might work."
-
-Lynleit closed her eyes.
-
-Natalia added, almost casually, "There are faster ways to produce similar changes, of course."
-
-Lynleit opened them again.
-
-"I dislike the way you said that."
-
-"You should."
-
-"What ways?"
-
-"Ask someone else."
-
-"Natalia."
-
-"I've already given you the academically respectable answer."
-
-"And the unrespectable one?"
-
-Natalia laughed softly.
+There were faster possibilities, Natalia admitted. She declined to describe them.
 
 "Go speak to a priest."
 
-Lynleit hangs up eventually with considerably more knowledge and considerably less dignity than she possessed before making the call.
+### A second opinion
 
-She seeks a second opinion.
+Father Mikhail had records Natalia could not consult. He laid them out while Lynleit took notes.
 
-Then a third.
+Conversion had broken one attachment. Marriage had broken another. Other accounts concerned war, parenthood, and a confession followed by absolution that had only partly succeeded.
 
-Eventually the investigation takes her to Father Mikhail.
+Lynleit put a mark beside the partial result.
 
-Unlike Natalia, Mikhail has access to older theological records concerning curses that attach themselves to personal identity rather than flesh or soul.
+"So confession isn't enough."
 
-His conclusion is disturbingly similar.
+"In that case, no."
 
-The Church has encountered analogous phenomena before.
+"And marriage?"
 
-Not identical curses, but conditions in which an entity remained attached to a person's psychic continuity.
+"Neither is a certificate."
 
-Conversion sometimes worked.
+She looked up.
 
-Marriage occasionally worked.
+"These people changed," he said. "The records tell us when. They don't give us a rite that will make it happen to you."
 
-Surviving war sometimes worked.
-
-Parenthood had worked once.
-
-A profound confession followed by absolution had produced partial success in another case.
-
-None of these things were magical rituals in themselves.
-
-The common element was transformation.
-
-An old organization of the self ceased to be sufficient.
-
-Something new replaced it.
-
-Mikhail explains this patiently while Lynleit takes notes.
-
-Then she reaches the practical question.
+The list occupied most of a page. She had already crossed out more than half of it.
 
 "What would you recommend for Kyrien and me?"
 
-Mikhail looks at her.
-
-Lynleit waits.
-
-The priest appears to consider several centuries of theology.
-
-Then he says, completely straight-faced:
+Mikhail looked at her notebook, then at her.
 
 "Just have sex, loser."
 
-Silence.
-
-Lynleit becomes red from her throat to her ears.
+Lynleit became red from her throat to her ears.
 
 "What?"
 
@@ -364,93 +158,39 @@ Lynleit becomes red from her throat to her ears.
 
 "An observant one."
 
-She stands.
+She stood and took her coat.
 
-"Lynleit."
+"Lynleit. There are theological reasons."
 
-She grabs her coat.
-
-"There are theological reasons."
-
-She heads for the door.
-
-"Lynleit."
-
-She opens it.
+She reached the door.
 
 "Sex is not the important part."
 
-She stops.
+Her hand remained on the handle.
 
-Mikhail remains seated.
+"If the attachment is already there, acting on it may change what you are to each other. Enough to break the recognition. I cannot promise you that it will."
 
-"The important part is what happens when two people who have spent years maintaining separate identities voluntarily cross a boundary that neither can afterward pretend was never crossed."
-
-Lynleit slowly turns around.
-
-"If there is already sufficient attachment between you, physical intimacy may produce exactly the discontinuity you need. Body, trust, vulnerability, future expectation, shame, desire, identity. Several layers of the psyche move at once."
-
-"And if there isn't sufficient attachment?"
+"And if it doesn't?"
 
 "Then you will merely have had sex."
 
-Her expression becomes murderous.
+She left before he could add anything.
 
-Mikhail shrugs.
+In the corridor she discovered that she had written **SEX?** across the middle of her notebook. She nearly tore the page out.
 
-"Which is why I recommend choosing your partner carefully."
+### Days
 
-She leaves.
+Kyrien knew the prognosis and the failed treatments. When he asked about her research, she told him she was still checking something.
 
-Only in the corridor does Lynleit realize that she has written **SEX?** in enormous letters across the middle of her notebook.
+She checked it against a Magiarchal text, then a thaumaturgical paper. Neither gave her a dependable way to measure the change. Both gave her reasons to keep thinking about it.
 
-She nearly tears the page out.
+She tried to imagine explaining the proposed treatment to Kyrien. She got as far as his expression and shut the notebook.
 
-She does not tell Kyrien.
+By then he tired after ordinary errands. She had to steady her wrist to write. Their remaining time was measured in days.
 
-That becomes important.
+### Two days later
 
-Because Kyrien knows only the original prognosis.
-
-He knows that the curse is killing them.
-
-He knows that conventional suppression has failed.
-
-He knows Lynleit is searching for alternatives.
-
-He does not know what Natalia told her.
-
-He does not know what Mikhail told her.
-
-Most importantly, he does not know that Lynleit has slowly begun treating their relationship itself as a possible medical procedure.
-
-At first she refuses the idea.
-
-Then she investigates it.
-
-Then she attempts to disprove it.
-
-Then she quietly discovers that several independent sources describe essentially the same mechanism using different terminology.
-
-The Church calls it transformation.
-
-Natalia calls it reorganization of the ego.
-
-An old Magiarchal text calls it discontinuity of identity.
-
-A thaumaturgical paper calls it failure of sympathetic recognition.
-
-Different language.
-
-Same principle.
-
-They do not need to destroy the curse.
-
-They need to become people to whom the curse no longer knows how to attach.
-
-Time continues running out.
-
-Natalia calls two days later.
+Natalia called while Lynleit was reading.
 
 "So."
 
@@ -462,17 +202,13 @@ Natalia calls two days later.
 
 "I was."
 
-Lynleit continues reading.
+Lynleit kept her eyes on the page.
 
-Finally Natalia says, "How do you feel about Kyrien now?"
+"How do you feel about Kyrien now?"
 
 "The same."
 
-"Really."
-
-"Yes."
-
-"Nothing changed."
+"Nothing changed?"
 
 "Nothing relevant."
 
@@ -480,35 +216,21 @@ Finally Natalia says, "How do you feel about Kyrien now?"
 
 "There is no distinction."
 
-"Of course."
+Lynleit turned a page she had not read.
 
-Lynleit turns a page she has not read.
+"The curse is gone," she said.
 
-Natalia waits again.
+"Yes."
 
-"The curse is gone," Lynleit says.
+"We're alive. The intervention accomplished its purpose."
 
-"It is."
+"I thought you said the attempt failed."
 
-"Kyrien is alive."
+"It did."
 
-"He is."
+"Then it wasn't necessary to finish."
 
-"I am alive."
-
-"Also true."
-
-"The intervention therefore accomplished its purpose."
-
-Natalia makes a thoughtful sound.
-
-"It failed."
-
-"It worked."
-
-"By failing."
-
-Lynleit closes the book.
+Lynleit closed the book.
 
 "There will not be another attempt."
 
@@ -520,98 +242,34 @@ Lynleit closes the book.
 
 "The matter is resolved."
 
-"Completely."
+Natalia let her wait.
 
-Lynleit narrows her eyes.
-
-Natalia says nothing.
-
-That silence is intolerable.
-
-"There is absolutely no reason whatsoever for Kyrien and me to repeat anything that happened that evening."
+"There is absolutely no reason for Kyrien and me to repeat anything that happened that evening."
 
 "I agree."
 
 "Good."
 
-"Good."
-
 Another silence.
 
-Then Natalia asks:
+Then Natalia asked, "Are you disappointed?"
 
-"Are you disappointed?"
+Lynleit hung up.
 
-Lynleit hangs up.
+The book was open again before she remembered that she had lost her place. She went back a page. That one was unfamiliar too.
 
-The answer remains in the room.
+### The missing explanation
 
-She had wanted the curse gone.
+Kyrien knew she had tried to sleep with him. He had not known she could approach it with quite so much anger.
 
-It is gone.
+The curse had begun weakening the following morning. Now it was gone. When he asked her about that evening, she refused to explain. When he mentioned the improvement, she said she was glad.
 
-She had wanted Kyrien alive.
+He was glad too. He still wanted to know what had happened.
 
-He is alive.
+She had not told him what Natalia and Mikhail proposed, and he could not connect the attempt to their recovery without it. Asking again seemed likely to bring another household object at his head.
 
-She had wanted the evening forgotten.
+Whatever Lynleit had planned, they had not completed it. The attempt and what followed had nevertheless changed them enough for the curse to lose its hold.
 
-That has proved more difficult.
+He left the subject alone when they next met.
 
-Because now she knows what it is like to almost cross that boundary with him.
-
-She does not know what it would be like to cross it completely.
-
-Before, there had been a reason.
-
-A reason she could write down, defend, and blame on someone else.
-
-Now there is none.
-
-That should make the question easier to dismiss.
-
-It does not.
-
-Kyrien understands considerably less.
-
-He knows Lynleit tried to sleep with him while behaving as though she were attempting an assassination.
-
-He knows she refuses to explain why.
-
-He knows the curse began weakening the following morning.
-
-He knows any mention of that evening causes her to become hostile enough to weaponize household items.
-
-There is a connection between these facts.
-
-He does not possess enough information to model it.
-
-This irritates him.
-
-For once, Lynleit knows something about the structure between them that Kyrien does not.
-
-She intends to keep it that way.
-
-The Holumn had demanded that one of them cease to exist.
-
-It had been almost correct.
-
-Something did.
-
-Kyrien's certainty that vulnerability could remain private.
-
-Lynleit's certainty that another person could become part of a solution without changing the person constructing it.
-
-The curse had been written across those people.
-
-Those people no longer existed in precisely the same form.
-
-That was enough.
-
-They survived.
-
-And the boundary between them remained uncrossed.
-
-Mostly.
-
-Which became, for Lynleit, a considerably more difficult problem than dying.
+She had prepared an answer. There was no occasion to use it.

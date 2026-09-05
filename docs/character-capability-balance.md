@@ -54,7 +54,7 @@ This table is limited to current profile claims or graph presentations that cann
 
 | Area | Contradiction | Resolution |
 | --- | --- | --- |
-| Fionn | Fionn currently scores 80 or higher on every axis and reaches 98 in both Analysis and Magecraft, leaving no meaningful comparative weakness despite a story in which rivals isolate and eliminate him. | 0% |
+| Fionn | Fionn reaches 98 in Analysis and Magecraft, while Fieldcraft is lower at 72. The graph still does not identify the particular blind spots and dependencies that allow rivals to isolate and eliminate him. | 0% |
 | Lester | Lester receives a Magecraft score of 91 even though his profile explicitly classifies demiholumn nature as inherent and not magecraft. | 0% |
 | Father Mikhail | Cardiff establishes Mikhail as a formidable counter-Magus field operative, but the six-axis graph collapses Church countermeasures into ordinary Fieldcraft and Combat while correctly showing no magecraft. | 20% |
 | System-wide | Exact graph scores still look more authoritative than the underlying canon permits, although profiles now label the assessment and values as provisional and link directly to this balance ledger. | 30% |

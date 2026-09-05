@@ -4,19 +4,17 @@
 
 ## The Fifth Watch
 
-The bridge joined an ordinary street to a place the city had stopped admitting was part of itself.
+The bridge was closed at the park end.
 
 On the southern bank, a low riverside district faced the water through mature trees and garden fences. Old wooden villas stood beside modest masonry houses, their windows scattered across the slope. The nearest main road lay beyond them. Lamps threw pale circles across the pavement, and civil safety cameras watched the bridge from both approaches.
 
 On the northern bank, the same bridge ended at a locked path into the quarantined park. No lamps remained lit beyond the barrier. Trees had grown into a single black mass behind it.
 
-Drake's intelligence had identified the river traffic through repetition rather than evidence. Small boats appeared on nights when the sky was darkest. They passed beneath the bridge without navigation lights, visible cargo, or a person at the controls. The pattern suggested preparation and timing. It might also have been contraband, and Drake refused to discard the ordinary explanation simply because it had begun to look strange.
+Drake's reports described small boats passing on the darkest nights, without navigation lights, visible cargo, or anyone at the controls. The timing looked deliberate. Contraband remained a possibility.
 
 Sherie and Drake had asked Lynleit for a team capable of observing the boats without turning the investigation into an official MSF operation.
 
 The plan was narrow. Felix would freeze the bridge cameras for as long as he could preserve a convincing loop, maintain communications, and remain on the city side as the fallback if the river team lost its exit. Reiner would secure the descent ropes. Lynleit, Reiner, Kyrien, Maren, and Ivo would board from above, inspect the boats, and leave by ropes at the next bridge. They were not to seize cargo, stop a suspect, or remain after the camera window closed.
-
-In theory, the hardest part was leaving no record that they had been there.
 
 The first watch produced nothing.
 
@@ -52,7 +50,7 @@ By the fifth watch, nobody expected the boats.
 
 Felix sat inside a maintenance van on the city side with a compact terminal across his knees. The bridge cameras were displayed in four muted panes. Each showed a version of the previous several minutes with no MSF officers in it.
 
-"The loop is clean," he said through the earpieces. "It will not remain clean because time continues to exist despite my objections."
+"The loop is clean," he said through the earpieces. "Please do something before I have to put it back."
 
 Reiner tested the last anchor point with both hands. "Window."
 
@@ -102,7 +100,7 @@ The officers moved.
 
 ## The Descent
 
-Reiner went over the rail first. He descended without hurry, controlling the rope with the same severity he applied to every procedure. Maren and Ivo followed on the adjacent line. Felix stayed with the terminal inside the locked maintenance van, watching the camera loop and every signal the descending team still transmitted.
+Reiner went over the rail first, paying out the rope in short, even lengths. Maren and Ivo followed on the adjacent line. Felix stayed with the terminal inside the locked maintenance van, watching the camera loop and every signal the descending team still transmitted.
 
 Kyrien waited until Lynleit reached the rail.
 
@@ -136,11 +134,11 @@ Reiner's voice came from the first boat. "Empty."
 
 The second team confirmed the same.
 
-Felix opened the restricted channel. "No people, no visible shipment. All boats clean enough to be useless and strange enough to ruin my evening."
+Felix opened the restricted channel. "Nothing in any of them? Check under the boards."
 
 Lynleit crouched beside the controls. The metal was wet. So was the deck. Nothing proved that a living person had occupied the boat recently.
 
-The plan had assumed that the boats would carry something. Contraband, documents, weapons, money, a courier, even a body would have given the operation a recognizable shape. An empty boat was not an answer. It was the removal of the question they had prepared to ask.
+She looked back at the tarp. Someone had covered an empty hold.
 
 The park passed on their right. From the water, the trees appeared closer than they had from the bridge. Their lowest branches extended over the bank and hid the path behind them.
 
@@ -151,10 +149,6 @@ Lynleit looked toward him before he turned to the trees.
 "What?" Lynleit asked.
 
 "Nothing."
-
-"You keep finding it."
-
-"It keeps being there."
 
 Maren shifted toward the gunwale. "There is something beside us."
 
@@ -192,7 +186,7 @@ Cold closed around the team.
 
 The city bank was the assigned emergency route. It had steps, lamps, and streets where an extraction vehicle could approach without crossing the quarantine.
 
-Reiner forced Maren toward it. When something pulled her legs down, he locked an arm under her shoulders and drove forward with both of his. Ivo reached them from the side. Together they gained a metre, lost half of it, and gained it again.
+Reiner forced Maren toward it. When something pulled her legs down, he hooked an arm beneath her shoulders and kicked hard. Ivo reached them from the side. Together they gained a metre, lost half of it, and gained it again.
 
 Felix kept the communications channel open from the city bank.
 
@@ -240,7 +234,7 @@ Another hand caught her calf. A third pressed against the back of her knee. They
 
 She kicked and felt a wrist bend beneath her heel. The grip did not release. Her jacket dragged in the current and made every movement heavier.
 
-The surface remained visible above her, close enough to promise air and far enough to refuse it.
+The surface was still visible. She could not reach it.
 
 Her fear of drowning had existed since childhood. Training had given it procedures: control the breath, identify the current, discard weight, choose a direction. The hands made each instruction useless. They were not a current. They did not tire. They had no single body against which leverage mattered.
 
@@ -248,9 +242,7 @@ One closed around her other ankle. Others seized the suede jacket and pulled its
 
 The river pulled her farther from the light.
 
-Panic arrived without confusion. It was clean, furious, and complete.
-
-Magecraft answered it before restraint could.
+She kicked again. The grip tightened. In the panic she wanted to hurt whatever was holding her, even if she had to turn and go deeper to reach it.
 
 Lynleit twisted downward instead of up. Blue flame broke from both hands and spread through the water without steam or loss of colour. It caught the drowned wrists as if the river were air. The hands burned beneath the surface. Fingers opened. Others caught at her sleeves, her boots, and the edge of the jacket until the suede tore free and disappeared among them.
 
@@ -272,7 +264,7 @@ From the trees, Kyrien watched without moving.
 
 The water ahead of Lynleit swelled.
 
-Hair appeared first, flattened against a white forehead. Then came a face with fishing line drawn through both eyelids. The knots were neat. Water moved from them like tears that could not begin or end.
+Hair appeared first, flattened against a white forehead. Then came a face with fishing line drawn through both eyelids. The knots were neat. Water dripped from them.
 
 The girl rose until the river released the upper half of her dress. Dead fish had been fastened together in overlapping rows, their bodies colourless, their mouths opening as the current passed through them.
 
@@ -284,15 +276,7 @@ The girl said nothing.
 
 Lynleit could not tell whether sewn eyes were capable of looking at her, but she felt the attention settle. The girl's head tilted slowly to one side.
 
-The gesture did not read as a threat. It read as bewilderment.
-
-People entered the river. The hands caught them. The river received them.
-
-Lynleit had entered and remained above it.
-
-The girl did not understand.
-
-Neither did Lynleit.
+Lynleit glanced down at her own boots, then back at the girl. She did not dare move yet.
 
 ## The Park Bank
 
@@ -314,7 +298,7 @@ Lynleit stopped at the base of a broad tree and sat. Kyrien lowered himself behi
 
 For a while neither spoke.
 
-His breathing was slower than hers but not yet steady. Once, it stopped for the same brief interval she had learned across the cards. The observation had no immediate use. Lynleit noticed it anyway, then looked across the river toward the officers gathering under Felix's light.
+His breathing was slower than hers but not yet steady. Once, it stopped for the same brief interval she had learned across the cards. Lynleit looked across the river toward the officers gathering under Felix's light.
 
 "You came ashore on this side," Lynleit said.
 
@@ -325,8 +309,6 @@ His breathing was slower than hers but not yet steady. Once, it stopped for the 
 "Parts of it."
 
 She waited.
-
-Kyrien did not fill silence merely because somebody else had made room for him.
 
 "Did you see anything strange?" she asked.
 
@@ -340,10 +322,6 @@ Lynleit turned her face slightly, not enough to look at him. "And nothing else?"
 
 "Nothing I can explain."
 
-It was a careful answer. It allowed the entire night to remain true without giving her the one fact she was searching for.
-
-She could have pressed him. She could have asked where he had stood, what direction he had faced, or when he had last seen her in the water. Every question would tell him that there was something she needed hidden.
-
 Lynleit let her head rest back against his shoulder.
 
 "Then do not invent an explanation," she said.
@@ -353,7 +331,3 @@ Lynleit let her head rest back against his shoulder.
 Across the river, Felix's light moved along the embankment. Reiner stood at the edge, looking toward the park.
 
 Kyrien saw the search before Lynleit did. He remained still for another moment, keeping his back against hers while her breathing slowed.
-
-He had entered her service because she left him no acceptable alternative.
-
-She had not ordered his silence. Keeping the river to himself was the first decision about her that belonged entirely to him.

@@ -16,13 +16,13 @@ There is no standard monster and no requirement that a Holumn possess a body. A 
 
 Containment always has a cost. Every intervention changes the balance. Suppressing one breach can move the pressure somewhere else, while destroying a visible form may leave the rule behind.
 
-The incident recorded as HI-006 establishes that destruction can itself complete a Holumn's mechanism. Lynleit and Kyrien destroy one manifestation together and inherit a single terminal curse distributed across both identities. Suppressing the condition in either person causes it to reconstruct from the other. The curse breaks only after both people undergo a reciprocal change deep enough that its original identification of them no longer holds.
+In Doom Has an Address (HI-006), destroying the Holumn activates its fatal curse. Lynleit and Kyrien destroy one manifestation together and inherit a single terminal curse distributed across both identities. Suppressing the condition in either person causes it to reconstruct from the other. The curse breaks only after both people undergo a reciprocal change deep enough that its original identification of them no longer holds.
 
 ### A Demiholumn Exists
 
 Lester is a demiholumn, half human and half Holumn. His existence does not yet have a complete explanation. It is unclear whether he was born this way, became this way, or requires a different account entirely.
 
-What is known is practical. Lester retains human agency and acts as Natalia's trusted outside ally. His part-Holumn nature sometimes lets him accomplish what should be impossible through ordinary investigation or conventional magecraft. The limits, cost, and institutional consequences of that nature remain unresolved.
+Lester acts as Natalia's trusted outside ally. His part-Holumn nature sometimes lets him accomplish what should be impossible through ordinary investigation or conventional magecraft. The limits, cost, and institutional consequences of that nature remain unresolved.
 
 ## Why Magic Stayed Hidden
 
@@ -36,13 +36,13 @@ Those outside the sanctioned order became renegades and enemies of both the Chur
 
 No single institution controls the hidden world. The Church, the Magiarchy, state authorities, aristocratic families, and intelligence networks depend on one another and remain mutually suspicious.
 
-The partnership between the Church and the Magiarchy is useful when it works. When trust fails, it becomes violent very quickly.
+The Church and Magiarchy cooperate in containment while disputing the limits of each other's authority.
 
 ## Public Ignorance
 
 The Magi identify, contain, and erase breaches before the public can understand what it has seen. The Church knows the nightmares are real, knows the Magi can oppose them, and is wary of both.
 
-Ordinary society still believes the world is secular, rational, and transparent. That belief only survives because ignorance is actively maintained.
+Most people do not know that magic exists. Institutions conceal incidents and suppress the evidence that might make the hidden world publicly credible.
 
 The institutions responsible for secrecy place social stability above public access to the truth. Under pressure, they may harden their rules, divide internally, or change their methods to survive.
 
@@ -54,7 +54,7 @@ Possible responses include murder, assassination, or kidnapping; extortion, inti
 
 ## The First Missing Person
 
-The first person to disappear is also the person who causes the Spill. For most of the story, neither his identity nor his significance is revealed. What first appears to be a random victim later becomes pivotal to understanding how the crisis began.
+The first missing person causes the Spill. Other factions exploit the crisis he creates. His identity and the circumstances of the breach remain unresolved.
 
 The disappearances that follow are caused by Holumns. This remains hidden behind missing-person cases, failed searches, and material explanations until the supernatural pattern becomes impossible to ignore.
 

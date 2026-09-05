@@ -116,15 +116,15 @@ characters.forEach((character) => {
   });
 
   const sections = [
-    ['appearance', 'Appearance', [character.physical, character.visual, character.palette]],
+    ['appearance', 'Appearance', [character.physical, character.visual, character.palette, character.appearanceDetails]],
     ['personality', 'Strengths and weaknesses', [character.personalitySummary, character.traits, character.mbti]],
     ['equipment', 'Equipment', character.equipment],
     ['nature', 'Nature', character.nature],
     ['tradecraft', 'Tradecraft', character.tradecraft],
     ['magecraft', 'Magecraft', character.magecraft],
-    ['biography', 'Biography', [character.origin, character.rupture, character.focus, character.future, character.beats]],
+    ['biography', 'Biography', [character.origin, character.residenceNote, character.rupture, character.focus, character.future, character.timelineNotes]],
     ['connections', 'Connections', [character.connections, character.ally, character.allyNote, character.rival, character.rivalNote, sexualTensionFor(character.slug)]],
-    ['conflicts', 'Conflicts', [character.rival, character.rivalNote, character.focus]],
+    ['conflicts', 'Conflicts', character.conflicts],
     ['motivations', 'Motivations', character.goal]
   ];
 

@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-04",
+  "updated": "2026-09-05",
   "sections": [
     {
       "id": "river-operation",
@@ -37,11 +37,17 @@
       "kind": "female",
       "title": "Lynleit",
       "basis": "ENFJ with strong Ni",
-      "text": "Lynleit is likely to remain in command while other people are still in immediate danger, then feel the bodily violation of the attack once she reaches the trees. Her fury underwater fits both her childhood fear and her refusal to become helpless before something using human bodies as tools. The later complaint about the lost jacket can be concrete and mildly childish. She liked the garment, chose it for the operation, and had no chance to save it.",
-      "chapterMatch": "Panic arrived without confusion.",
-      "chapters": ["the-empty-boats-beneath-the-bridge"],
-      "moments": ["the-boat-beneath-the-bridge"],
-      "momentFact": { "the-boat-beneath-the-bridge": 24 }
+      "text": "Once Lynleit is ashore, the feeling of hands holding her down may linger even while she tries to give orders. Her later complaint about the jacket can be petty and heartfelt: she liked it and could not save it.",
+      "chapterMatch": "She kicked again. The grip tightened.",
+      "chapters": [
+        "the-empty-boats-beneath-the-bridge"
+      ],
+      "moments": [
+        "the-boat-beneath-the-bridge"
+      ],
+      "momentFact": {
+        "the-boat-beneath-the-bridge": 24
+      }
     },
     {
       "id": "river-kyrien",
@@ -49,11 +55,17 @@
       "kind": "male",
       "title": "Kyrien",
       "basis": "ISTP lean",
-      "text": "Kyrien is more likely to protect Lynleit by controlling what he says than by offering reassurance. His officer upbringing, private reserve, and Ti-led caution all support a literal answer that cannot be disproved. The restraint should not make him passive. He notices where she is exposed, where the official team has gone, and what his silence will cost if another authority learns the truth.",
-      "chapterMatch": "It was a careful answer.",
-      "chapters": ["the-empty-boats-beneath-the-bridge"],
-      "moments": ["the-boat-beneath-the-bridge"],
-      "momentFact": { "the-boat-beneath-the-bridge": 40 }
+      "text": "Keep Kyrien's answer literal and brief. He knows what he saw and chooses not to say it. His officer upbringing and watchfulness can appear in his attention to the search on the other bank.",
+      "chapterMatch": "Nothing I can explain.",
+      "chapters": [
+        "the-empty-boats-beneath-the-bridge"
+      ],
+      "moments": [
+        "the-boat-beneath-the-bridge"
+      ],
+      "momentFact": {
+        "the-boat-beneath-the-bridge": 40
+      }
     },
     {
       "id": "river-maren",
@@ -63,9 +75,15 @@
       "basis": "Type unknown",
       "text": "Maren is a trained officer, not a weaker swimmer. The horror lies in losing ownership of her own movement when hands seize her legs. Once ashore, a short sensory statement is more credible than a theory: she knows what fingers felt like, but does not claim to know who they belonged to. Anger or embarrassment at having needed to be hauled over the wall may surface after the immediate shock.",
       "chapterMatch": "It was hands",
-      "chapters": ["the-empty-boats-beneath-the-bridge"],
-      "moments": ["the-boat-beneath-the-bridge"],
-      "momentFact": { "the-boat-beneath-the-bridge": 18 }
+      "chapters": [
+        "the-empty-boats-beneath-the-bridge"
+      ],
+      "moments": [
+        "the-boat-beneath-the-bridge"
+      ],
+      "momentFact": {
+        "the-boat-beneath-the-bridge": 18
+      }
     },
     {
       "id": "river-reiner",
@@ -75,9 +93,15 @@
       "basis": "ISTJ with strong Si and Te",
       "text": "Reiner's greater build makes him the practical anchor for Maren and Ivo, but the river prevents strength from solving the whole problem. He is likely to convert fear into tasks: secure the person, reach the wall, count the team, check the line. His later guilt would appear as stricter procedure and repeated equipment checks rather than a broad confession.",
       "chapterMatch": "Reiner forced Maren toward it.",
-      "chapters": ["the-empty-boats-beneath-the-bridge"],
-      "moments": ["the-boat-beneath-the-bridge"],
-      "momentFact": { "the-boat-beneath-the-bridge": 19 }
+      "chapters": [
+        "the-empty-boats-beneath-the-bridge"
+      ],
+      "moments": [
+        "the-boat-beneath-the-bridge"
+      ],
+      "momentFact": {
+        "the-boat-beneath-the-bridge": 19
+      }
     },
     {
       "id": "river-felix",
@@ -87,9 +111,15 @@
       "basis": "ESFP with strong Se and Fi",
       "text": "Remaining ashore should frustrate Felix because his most valued people descend without him. His role is still decisive. He keeps the cameras frozen, hears the failure before he can see it, abandons the van at the correct moment, and turns a communications fallback into a physical rescue line. A joke after the extraction can be an attempt to restore ordinary human rhythm, not proof that he took the danger lightly.",
       "chapterMatch": "Felix left the van only when the operation had already collapsed.",
-      "chapters": ["the-empty-boats-beneath-the-bridge"],
-      "moments": ["the-boat-beneath-the-bridge"],
-      "momentFact": { "the-boat-beneath-the-bridge": 19 }
+      "chapters": [
+        "the-empty-boats-beneath-the-bridge"
+      ],
+      "moments": [
+        "the-boat-beneath-the-bridge"
+      ],
+      "momentFact": {
+        "the-boat-beneath-the-bridge": 19
+      }
     },
     {
       "id": "river-blue-flame",
@@ -99,9 +129,15 @@
       "basis": "Story-pressure suggestion",
       "text": "The blue flame can expose the scale of the horror without an explanation. Hands burning in blue beneath the surface would briefly illuminate different ages, sizes, and states of decay before the river closes over them again. The image would let the reader understand that Lynleit is fighting accumulated dead rather than a single submerged attacker.",
       "chapterMatch": "Lynleit twisted downward instead of up.",
-      "chapters": ["the-empty-boats-beneath-the-bridge"],
-      "moments": ["the-boat-beneath-the-bridge"],
-      "momentFact": { "the-boat-beneath-the-bridge": 24 }
+      "chapters": [
+        "the-empty-boats-beneath-the-bridge"
+      ],
+      "moments": [
+        "the-boat-beneath-the-bridge"
+      ],
+      "momentFact": {
+        "the-boat-beneath-the-bridge": 24
+      }
     },
     {
       "id": "pressure-lynleit-interrogation",
@@ -111,9 +147,15 @@
       "basis": "ENFJ with strong Ni, MSF duty primary",
       "text": "Lynleit's concealed knowledge that Kyrien nearly harmed her gives the interrogation a personal edge, but she does not make the injury the purpose of the scene. Her MSF responsibility and anticipation of a larger threat remain decisive. The private anger should appear through unusually exact questions, controlled distance, or refusal to explain herself rather than flirtation or an emotional confession.",
       "chapterMatch": "Kyrien now faces prison",
-      "chapters": ["after-the-failed-attempt"],
-      "moments": ["interrogation-after-the-failed-attempt"],
-      "momentFact": { "interrogation-after-the-failed-attempt": 3 }
+      "chapters": [
+        "after-the-failed-attempt"
+      ],
+      "moments": [
+        "interrogation-after-the-failed-attempt"
+      ],
+      "momentFact": {
+        "interrogation-after-the-failed-attempt": 3
+      }
     },
     {
       "id": "pressure-card-tells",
@@ -123,9 +165,15 @@
       "basis": "Approved sexual-tension pattern",
       "text": "Keep the games brief and embedded in operational downtime. Kyrien should win more often through technical play, while Lynleit gains ground by reading him. Their attention becomes sexual because hands, breathing, gaze, and proximity begin to distract them, not because either character starts performing romance. Lynleit notices the intrusion and returns to the mission.",
       "chapterMatch": "The rematch continued on the third night.",
-      "chapters": ["the-empty-boats-beneath-the-bridge"],
-      "moments": ["the-boat-beneath-the-bridge"],
-      "momentFact": { "the-boat-beneath-the-bridge": 8 }
+      "chapters": [
+        "the-empty-boats-beneath-the-bridge"
+      ],
+      "moments": [
+        "the-boat-beneath-the-bridge"
+      ],
+      "momentFact": {
+        "the-boat-beneath-the-bridge": 8
+      }
     },
     {
       "id": "pressure-kyrien-voluntary-stay",
@@ -135,8 +183,12 @@
       "basis": "ISTP lean, officer ethics and autonomy",
       "text": "Kyrien's decision to remain must occur when departure is genuinely possible and Lynleit's original authority has lost practical force. He is unlikely to explain the choice romantically. Staying, accepting the danger, and reopening contact are enough to separate voluntary loyalty from the vigilance of a coerced asset.",
       "chapters": [],
-      "moments": ["the-first-lines-back-into-msf"],
-      "momentFact": { "the-first-lines-back-into-msf": 5 }
+      "moments": [
+        "the-first-lines-back-into-msf"
+      ],
+      "momentFact": {
+        "the-first-lines-back-into-msf": 5
+      }
     },
     {
       "id": "pressure-kyrien-battle-reward",
@@ -146,8 +198,12 @@
       "basis": "ISTP lean, competitive drive and paternal inheritance",
       "text": "The answer should remain immediate and unadorned. Kyrien does not reassure Lynleit or make her the reward because he experiences the fight as a chance to test himself. The useful ambiguity lies in what he does not examine: choosing a battle repeatedly places him beside the same woman, even while he continues to describe the motive as his own.",
       "chapters": [],
-      "moments": ["because-theres-a-battle-to-be-fought"],
-      "momentFact": { "because-theres-a-battle-to-be-fought": 2 }
+      "moments": [
+        "because-theres-a-battle-to-be-fought"
+      ],
+      "momentFact": {
+        "because-theres-a-battle-to-be-fought": 2
+      }
     },
     {
       "id": "pressure-mikhail-aftermath",
@@ -157,8 +213,12 @@
       "basis": "Approved relationship-pressure beat",
       "text": "The argument remains about Kyrien exposing Felix and Reiner. Physical awareness belongs only in the delayed step apart and should not soften either position. Kyrien remains to help without apologizing, while Lynleit returns immediately to the institutional problem he has worsened.",
       "chapters": [],
-      "moments": ["mikhail-discovers-the-breach"],
-      "momentFact": { "mikhail-discovers-the-breach": 10 }
+      "moments": [
+        "mikhail-discovers-the-breach"
+      ],
+      "momentFact": {
+        "mikhail-discovers-the-breach": 10
+      }
     },
     {
       "id": "nameless-lynleit",
@@ -167,10 +227,16 @@
       "title": "Lynleit",
       "basis": "ENFJ with strong Ni",
       "text": "The crying girl works as a lure because Lynleit notices a vulnerable person and assumes responsibility before she can test the situation. This does not require a general claim that women are more nurturing. Her Fe-oriented leadership, strong symbolic intuition, and experience of being watched make the trap personal. Afterward she may be angrier that the street used her protective instinct than frightened by the child herself.",
-      "chapterMatch": "She followed because a child was lost.",
-      "chapters": ["the-nameless-street"],
-      "moments": ["the-nameless-street"],
-      "momentFact": { "the-nameless-street": 6 }
+      "chapterMatch": "Her crying continued somewhere beyond the passage.",
+      "chapters": [
+        "the-nameless-street"
+      ],
+      "moments": [
+        "the-nameless-street"
+      ],
+      "momentFact": {
+        "the-nameless-street": 6
+      }
     },
     {
       "id": "nameless-felix",
@@ -180,9 +246,15 @@
       "basis": "ESFP with strong Se and Fi",
       "text": "Felix experiences an ordinary physical emergency while Lynleit experiences the impossible street. His first response is immediate and tactile: get close, make noise, fan her face, check whether she responds. Once she wakes, his familiarity gives him room to tease, but affection should make him notice that her explanation is not a performance. He can believe that something happened without pretending to understand it.",
       "chapterMatch": "His expression changed. The playfulness withdrew",
-      "chapters": ["the-nameless-street"],
-      "moments": ["the-nameless-street"],
-      "momentFact": { "the-nameless-street": 13 }
+      "chapters": [
+        "the-nameless-street"
+      ],
+      "moments": [
+        "the-nameless-street"
+      ],
+      "momentFact": {
+        "the-nameless-street": 12
+      }
     },
     {
       "id": "pressure-helena",
@@ -192,8 +264,12 @@
       "basis": "ENTJ with strong Te",
       "text": "Helena's grievance against Fionn becomes stronger if it includes the private humiliation of being treated as a wife in public and a security risk in his deepest life. Her response remains character-specific: she turns exclusion into a structural problem to remove. She is not dangerous because resentment makes her emotional. She is dangerous because she can organize resentment into policy, access, and succession.",
       "chapters": [],
-      "moments": ["fionn-is-eliminated"],
-      "momentFact": { "fionn-is-eliminated": 6 }
+      "moments": [
+        "fionn-is-eliminated"
+      ],
+      "momentFact": {
+        "fionn-is-eliminated": 6
+      }
     },
     {
       "id": "pressure-fionn",
@@ -203,8 +279,12 @@
       "basis": "INTJ with strong Ni",
       "text": "Fionn can sincerely believe that silence is a form of protection because his identity as father, husband, director, and Magiarch has trained him to equate love with containment. A masculine officer culture may reinforce the habit of carrying danger without asking family to share it. The flaw is not lack of feeling. It is his confidence that private endurance gives him the right to decide what everyone else may know.",
       "chapters": [],
-      "moments": ["fionn-is-eliminated"],
-      "momentFact": { "fionn-is-eliminated": 0 }
+      "moments": [
+        "fionn-is-eliminated"
+      ],
+      "momentFact": {
+        "fionn-is-eliminated": 0
+      }
     },
     {
       "id": "pressure-yulia",
@@ -214,8 +294,12 @@
       "basis": "ISTJ with strong Si",
       "text": "Yulia's decision to follow Hiyu into the park can contain two competing reactions: procedural disgust at the trespass and a familiar expectation that she will be the one who prevents his idea from killing him. As a young woman beside a reckless male friend, she may resent being pushed into practical responsibility while still choosing it. Her care appears in preparation, correction, and staying present rather than an open admission of attraction.",
       "chapters": [],
-      "moments": ["students-beyond-the-cordon"],
-      "momentFact": { "students-beyond-the-cordon": 4 }
+      "moments": [
+        "students-beyond-the-cordon"
+      ],
+      "momentFact": {
+        "students-beyond-the-cordon": 4
+      }
     },
     {
       "id": "pressure-hiyu",
@@ -225,8 +309,12 @@
       "basis": "ENTP with strong Ne",
       "text": "Hiyu's confidence in an elegant possibility may make the physical risk feel secondary until Yulia reacts to it. His eventual attachment should develop through dependence on the person who makes his ideas survivable. He does not need to become conventionally suave when desire appears. Confusion is more consistent if he recognizes that losing Yulia's company would be intolerable before he recognizes the feeling as romantic.",
       "chapters": [],
-      "moments": ["students-beyond-the-cordon"],
-      "momentFact": { "students-beyond-the-cordon": 3 }
+      "moments": [
+        "students-beyond-the-cordon"
+      ],
+      "momentFact": {
+        "students-beyond-the-cordon": 3
+      }
     },
     {
       "id": "inheritance-kyrien",
@@ -246,8 +334,12 @@
       "basis": "Story-pressure suggestion",
       "text": "Myka's eventual first-place graduation should be earned through decisions she makes during the Academy crisis, not granted because Natalia and Kyrien rescue her. Their help can keep her alive or give her access, but at least one decisive discovery, refusal, or use of magecraft should belong to Myka alone and expose a weakness that follows her into MSF.",
       "chapters": [],
-      "moments": ["terrors-inside-the-academy"],
-      "momentFact": { "terrors-inside-the-academy": 0 }
+      "moments": [
+        "terrors-inside-the-academy"
+      ],
+      "momentFact": {
+        "terrors-inside-the-academy": 0
+      }
     },
     {
       "id": "academy-kyrien-outsider",
@@ -257,8 +349,12 @@
       "basis": "ISTP lean, non-Magus field operator",
       "text": "Kyrien's usefulness inside the Academy should come from seeing an ordinary operational pattern that trained Magi dismiss because they are looking for a magecraft explanation. His outsider status must also cost him: he cannot read magical danger directly and needs Myka or Natalia to interpret what his field instincts expose.",
       "chapters": [],
-      "moments": ["terrors-inside-the-academy"],
-      "momentFact": { "terrors-inside-the-academy": 9 }
+      "moments": [
+        "terrors-inside-the-academy"
+      ],
+      "momentFact": {
+        "terrors-inside-the-academy": 9
+      }
     },
     {
       "id": "cardiff-mikhail-capability",
@@ -268,8 +364,12 @@
       "basis": "XNJ lean, Church special envoy and confirmed counter-Magus field operative",
       "text": "Mikhail's capability is strongest when the reader learns it through the decisions that keep him alive, not through a summary of techniques. Solitary endurance should expose what his Church training asks him to sacrifice, while at least one successful choice should become the reason Lynleit cannot dismiss his method as simple cruelty.",
       "chapters": [],
-      "moments": ["father-mikhails-foreign-venture"],
-      "momentFact": { "father-mikhails-foreign-venture": 3 }
+      "moments": [
+        "father-mikhails-foreign-venture"
+      ],
+      "momentFact": {
+        "father-mikhails-foreign-venture": 3
+      }
     },
     {
       "id": "cardiff-moral-rift",
@@ -279,8 +379,12 @@
       "basis": "Nasu audit story-pressure suggestion",
       "text": "The moral conflict should not make Lynleit naive or Mikhail a caricature. Each method needs to solve something the other cannot, and each needs a human cost the other recognizes. Their protection of one another remains professional and deliberate even while the disagreement makes later cooperation in Narvea harder.",
       "chapters": [],
-      "moments": ["father-mikhails-foreign-venture"],
-      "momentFact": { "father-mikhails-foreign-venture": 8 }
+      "moments": [
+        "father-mikhails-foreign-venture"
+      ],
+      "momentFact": {
+        "father-mikhails-foreign-venture": 8
+      }
     },
     {
       "id": "inheritance-jacket-form",
@@ -290,8 +394,12 @@
       "basis": "Story-pressure suggestion",
       "text": "The first time the leviathan-hide coat imitates Lynleit's lost suede jacket could occur when the resemblance is emotionally inconvenient. The form would turn an irritable complaint about clothing into posthumous evidence that Fionn noticed more of her ordinary preferences than his secrecy allowed him to say.",
       "chapters": [],
-      "moments": ["the-coat-fionn-left-behind"],
-      "momentFact": { "the-coat-fionn-left-behind": 5 }
+      "moments": [
+        "the-coat-fionn-left-behind"
+      ],
+      "momentFact": {
+        "the-coat-fionn-left-behind": 5
+      }
     },
     {
       "id": "inheritance-coat-choice",
@@ -301,8 +409,12 @@
       "basis": "Story-pressure suggestion",
       "text": "The coat works best as protection with judgment rather than passive armour. Its need to be placed over a specific wound or person forces Lynleit to choose what she covers. Its autonomous form can inconvenience her, but the decision to protect remains hers.",
       "chapters": [],
-      "moments": ["the-coat-fionn-left-behind"],
-      "momentFact": { "the-coat-fionn-left-behind": 4 }
+      "moments": [
+        "the-coat-fionn-left-behind"
+      ],
+      "momentFact": {
+        "the-coat-fionn-left-behind": 4
+      }
     },
     {
       "id": "doom-lynleit-method",
@@ -310,25 +422,42 @@
       "kind": "female",
       "title": "Lynleit",
       "basis": "Canon behavior, ENFJ with strong Ni and MSF duty primary",
-      "text": "The chapter establishes Lynleit's response to intimate and mortal pressure. She rejects the sacrificial answer absolutely, searches every available discipline, treats humiliation as less important than Kyrien's survival, and withholds only the sexual and personally embarrassing part of the plan. This is an exception to her usual belief that openness is a leadership skill. Future scenes should preserve her responsibility, analysis, and decisive initiative without turning private embarrassment into a general habit of secrecy or recasting the encounter as spontaneous romance.",
-      "chapterMatch": "She refuses to accept a system whose only solution",
-      "chapters": ["doom-has-an-address"],
-      "moments": ["doom-has-an-address"],
-      "versions": ["v1", "v2"],
-      "momentFact": { "doom-has-an-address": 6 }
+      "text": "Lynleit rejects the fatal treatment and keeps looking. Her research is competent; discussing its sexual implication with Kyrien is where she becomes evasive. Do not repeat a defense of her leadership after each awkward response.",
+      "chapterMatch": "She took the reports away",
+      "chapters": [
+        "doom-has-an-address"
+      ],
+      "moments": [
+        "doom-has-an-address"
+      ],
+      "versions": [
+        "v1",
+        "v2"
+      ],
+      "momentFact": {
+        "doom-has-an-address": 6
+      }
     },
     {
       "id": "doom-kyrien-answer",
       "section": "doom-address",
       "kind": "male",
       "title": "Kyrien",
-      "basis": "Canon behavior, ISTP lean and officer ethics",
+      "basis": "Alternate Version 1 only",
       "text": "Kyrien notices that Lynleit is behaving incorrectly, asks one direct question, and does not force the explanation she refuses. His eventual response is physical, deliberate, and chosen after he understands what she is asking. Future intimacy should keep him legible through observation and decision rather than sudden verbal confession.",
-      "chapterMatch": "Kyrien is surprised rather than overwhelmed.",
-      "chapters": ["doom-has-an-address"],
-      "moments": ["doom-has-an-address"],
-      "versions": ["v1"],
-      "momentFact": { "doom-has-an-address": 12 }
+      "chapterMatch": "He was surprised. She gave him time to understand",
+      "chapters": [
+        "doom-has-an-address"
+      ],
+      "moments": [
+        "doom-has-an-address"
+      ],
+      "versions": [
+        "v1"
+      ],
+      "momentFact": {
+        "doom-has-an-address": 12
+      }
     },
     {
       "id": "doom-natalia-teaching",
@@ -336,12 +465,21 @@
       "kind": "female",
       "title": "Natalia",
       "basis": "Canon behavior, INTP with strong Ti and former professor",
-      "text": "Natalia answers the emergency by moving across ritual history, folklore, analytical psychology, and sympathetic magecraft until one mechanism explains them all. Her old teaching rhythm with Lynleit remains intact: she refuses to supply the conclusion before making her former student define the problem correctly, then uses dry humor when the answer becomes personally uncomfortable.",
+      "text": "Natalia checks the premise before offering a solution. Let her former teaching habits interrupt Lynleit's demand for an immediate answer, but give each example a job in the reasoning rather than a second explanation of the whole curse.",
       "chapterMatch": "Natalia was silent long enough that Lynleit checked the connection.",
-      "chapters": ["doom-has-an-address"],
-      "moments": ["doom-has-an-address"],
-      "versions": ["v1", "v2"],
-      "momentFact": { "doom-has-an-address": 7 }
+      "chapters": [
+        "doom-has-an-address"
+      ],
+      "moments": [
+        "doom-has-an-address"
+      ],
+      "versions": [
+        "v1",
+        "v2"
+      ],
+      "momentFact": {
+        "doom-has-an-address": 7
+      }
     },
     {
       "id": "doom-mikhail-diagnosis",
@@ -349,25 +487,42 @@
       "kind": "male",
       "title": "Father Mikhail",
       "basis": "Canon behavior, XNJ lean and Church special envoy",
-      "text": "Mikhail patiently establishes the theological mechanism before giving a brutally plain recommendation. His irreverence does not replace expertise. It appears after he has determined that the practical answer is simpler than the centuries of doctrine behind it, and he immediately returns to precision when Lynleit tries to leave with only the joke.",
-      "chapterMatch": "The priest appears to consider several centuries of theology.",
-      "chapters": ["doom-has-an-address"],
-      "moments": ["doom-has-an-address"],
-      "versions": ["v1", "v2"],
-      "momentFact": { "doom-has-an-address": 9 }
+      "text": "Mikhail has records Natalia lacks. Their mixed outcomes give his advice limits before he makes the blunt joke. Preserve both the expertise and the irreverence.",
+      "chapterMatch": "Mikhail looked at her notebook",
+      "chapters": [
+        "doom-has-an-address"
+      ],
+      "moments": [
+        "doom-has-an-address"
+      ],
+      "versions": [
+        "v1",
+        "v2"
+      ],
+      "momentFact": {
+        "doom-has-an-address": 9
+      }
     },
     {
       "id": "doom-transformation-rule",
       "section": "doom-address",
       "kind": "story",
       "title": "Transformation, not intercourse",
-      "basis": "Confirmed Holumn mechanism",
+      "basis": "Alternate Version 1 only",
       "text": "Future references must preserve the causal distinction established by the chapter. Sex does not possess curative force. The shared curse fractures because an existing reciprocal attachment changes both identities simultaneously and makes the original sympathetic address uncertain. A meaningless encounter or a change affecting only one person would not satisfy the rule.",
-      "chapterMatch": "Sex did not cure them.",
-      "chapters": ["doom-has-an-address"],
-      "moments": ["doom-has-an-address"],
-      "versions": ["v1"],
-      "momentFact": { "doom-has-an-address": 14 }
+      "chapterMatch": "Their attachment had changed both identities",
+      "chapters": [
+        "doom-has-an-address"
+      ],
+      "moments": [
+        "doom-has-an-address"
+      ],
+      "versions": [
+        "v1"
+      ],
+      "momentFact": {
+        "doom-has-an-address": 14
+      }
     },
     {
       "id": "doom-v2-lynleit-aftermath",
@@ -375,12 +530,20 @@
       "kind": "female",
       "title": "Lynleit after the failed attempt",
       "basis": "Version 2 behavior, ENFJ with strong Ni and private embarrassment",
-      "text": "Lynleit tries to close the subject as soon as survival removes its operational justification. Her repeated denials and the unread page show that desire remains present even when she has no procedure through which to defend it. This is personal evasion under embarrassment, not a retreat from openness as a general leadership practice.",
+      "text": "The unread pages and excessive denials already convey Lynleit's continued interest. Let Natalia's question end the exchange without another paragraph decoding her answer.",
       "chapterMatch": "There will not be another attempt.",
-      "chapters": ["doom-has-an-address"],
-      "moments": ["doom-has-an-address"],
-      "versions": ["v2"],
-      "momentFact": { "doom-has-an-address": 13 }
+      "chapters": [
+        "doom-has-an-address"
+      ],
+      "moments": [
+        "doom-has-an-address"
+      ],
+      "versions": [
+        "v2"
+      ],
+      "momentFact": {
+        "doom-has-an-address": 13
+      }
     },
     {
       "id": "doom-v2-kyrien-model",
@@ -388,25 +551,41 @@
       "kind": "male",
       "title": "Kyrien without the missing premise",
       "basis": "Version 2 behavior, ISTP lean and Ti-led observation",
-      "text": "Kyrien identifies the relevant facts but cannot complete the model because Lynleit controls the missing premise. His irritation belongs to failed analysis rather than wounded pride. He continues observing instead of demanding the confession that would resolve the pattern for him.",
-      "chapterMatch": "There is a connection between these facts.",
-      "chapters": ["doom-has-an-address"],
-      "moments": ["doom-has-an-address"],
-      "versions": ["v2"],
-      "momentFact": { "doom-has-an-address": 15 }
+      "text": "Kyrien lacks one crucial piece of information. His unanswered question can remain irritating without becoming a demand for confession or a speech about trust.",
+      "chapterMatch": "She had not told him what Natalia and Mikhail proposed",
+      "chapters": [
+        "doom-has-an-address"
+      ],
+      "moments": [
+        "doom-has-an-address"
+      ],
+      "versions": [
+        "v2"
+      ],
+      "momentFact": {
+        "doom-has-an-address": 15
+      }
     },
     {
       "id": "doom-v2-transformation-rule",
       "section": "doom-address",
       "kind": "story",
       "title": "Transformation before completion",
-      "basis": "Version 2 mechanism",
-      "text": "Version 2 makes the attempted crossing and its aftermath sufficient to change both identities even though the sexual boundary remains mostly uncrossed. This creates a different supernatural threshold from Version 1 and must remain version-specific until the author chooses which mechanism governs shared canon.",
-      "chapterMatch": "Those people no longer existed in precisely the same form.",
-      "chapters": ["doom-has-an-address"],
-      "moments": ["doom-has-an-address"],
-      "versions": ["v2"],
-      "momentFact": { "doom-has-an-address": 16 }
+      "basis": "Confirmed Version 2 mechanism",
+      "text": "Version 2 is canon. The incomplete attempt and its aftermath change both identities enough for the curse to lose recognition. Keep the later completed sexual encounter separate; its timing is still unresolved.",
+      "chapterMatch": "Whatever Lynleit had planned, they had not completed it.",
+      "chapters": [
+        "doom-has-an-address"
+      ],
+      "moments": [
+        "doom-has-an-address"
+      ],
+      "versions": [
+        "v2"
+      ],
+      "momentFact": {
+        "doom-has-an-address": 16
+      }
     }
   ]
 }

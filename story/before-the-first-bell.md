@@ -12,13 +12,11 @@ Felix slowed at the iron gate.
 
 "This is the address?"
 
-Reiner checked the card in his hand for the third time. "Unless the Church has opened a second Saint Orison Cathedral overnight."
+Reiner checked the card in his hand for the third time. "Saint Orison Cathedral. East entrance."
 
-"It would explain the budget."
+"A cathedral. At this hour."
 
 From the rear seat, Lynleit looked past them toward the steps. She had said little since they left MSF headquarters. Her coat was buttoned neatly, her expression composed, and the file resting across her knees had not been opened once.
-
-Felix and Reiner were present as MSF security, but neither belonged to her life as a mere subordinate. They were friends Fionn trusted as her personal bodyguards, familiar company on official journeys and casual outings alike.
 
 Fionn sat beside her with his eyes closed.
 
@@ -66,7 +64,7 @@ Lynleit stopped before following him.
 
 Felix leaned against the open car door. "How long will you be?"
 
-"Long enough for you to invent three explanations and believe the least sensible one."
+"I don't know. Stay warm."
 
 Then she disappeared into the church, and the door closed behind her.
 
@@ -80,13 +78,9 @@ At 05:46, after a delivery van passed without stopping and a light appeared in o
 
 Reiner remained beside the car, arms folded.
 
-"You have been specifically instructed not to invent explanations."
+"You could ask him when he comes out."
 
-"She predicted three. It would be rude to disappoint her."
-
-"You are already on four."
-
-"The first was a working theory."
+"And spoil it?"
 
 Across the street, a newspaper bundle landed outside a closed kiosk. The top page loosened in the wind. For a moment, Felix could read part of the headline.
 
@@ -116,7 +110,7 @@ At 05:53, the side door opened.
 
 Lynleit came out alone.
 
-She descended the steps with the same measured pace she used when crossing the operations floor, but the file was now held too tightly beneath one arm. Her expression was calm in the deliberate way that meant calm had required effort.
+She descended the steps with the same measured pace she used when crossing the operations floor, but the file was now held too tightly beneath one arm. Her mouth was set.
 
 Felix straightened.
 
@@ -146,9 +140,7 @@ Felix continued. "We were refused entry. The priest knew we were coming. You lef
 
 Lynleit looked back at the closed door.
 
-For one second, the irritation showed plainly. Not anger exactly. Something more contained, sharpened by disappointment.
-
-Then she turned to them again, and the edge softened into intent.
+She turned back to them.
 
 "You are both remarkably interested in private church business."
 

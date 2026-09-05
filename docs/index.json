@@ -1,10 +1,21 @@
 [
   {
+    "slug": "prose-and-scene-guidance",
+    "title": "Prose and Scene Guidance",
+    "topic": "Editorial Reference",
+    "file": "prose-and-scene-guidance.md",
+    "updated": "2026-09-05",
+    "description": "Revision principles, content boundaries, and author-favored development approaches kept separate from established canon.",
+    "speakers": [
+      "Author's Desk"
+    ]
+  },
+  {
     "slug": "character-behavior-audit",
     "title": "Character Behaviour Audit",
     "topic": "Writer's Character Reference",
     "file": "character-behavior-audit.md",
-    "updated": "2026-09-04",
+    "updated": "2026-09-05",
     "description": "Advisory scene notes combining established characterization, physical circumstance, sex, social experience, and MBTI function emphasis without turning broad gender patterns into canon.",
     "speakers": [
       "Character Archive"
@@ -15,7 +26,7 @@
     "title": "Character Intimacy and Sexuality Reference",
     "topic": "Writer's Character Reference",
     "file": "character-intimacy-and-sexuality.md",
-    "updated": "2026-09-04",
+    "updated": "2026-09-05",
     "description": "A writer-facing reference for each character's approach to closeness, desire, sexual initiative, and established, asymmetric, or potential sexual tension.",
     "speakers": [
       "Character Archive"
@@ -26,7 +37,7 @@
     "title": "Holumn Incidents and Victim Testimonies",
     "topic": "Holumn Archive",
     "file": "holumn-incidents-and-testimonies.md",
-    "updated": "2026-09-04",
+    "updated": "2026-09-05",
     "description": "Victim testimony and incident evidence for physical, environmental, event-bound, disembodied, and curse-bound Holumn manifestations, including the shared terminal curse in Doom Has an Address.",
     "speakers": [
       "Victims and Incident Witnesses",
@@ -38,7 +49,7 @@
     "title": "Questions to Be Answered",
     "topic": "Editorial Ledger",
     "file": "questions-to-be-answered.md",
-    "updated": "2026-09-04",
+    "updated": "2026-09-05",
     "description": "Confidence-tracked current canon and chronology questions, separated to support both worldbuilding and timeline placement.",
     "speakers": [
       "Author's Desk"
@@ -49,7 +60,7 @@
     "title": "Contradictions to Resolve",
     "topic": "Editorial Ledger",
     "file": "contradictions-to-resolve.md",
-    "updated": "2026-09-04",
+    "updated": "2026-09-05",
     "description": "A resolution-tracked list of places where current story, character, world, timeline, or alternate-version records cannot all be read literally at the same time.",
     "speakers": [
       "Author's Desk"
@@ -60,7 +71,7 @@
     "title": "Character Capability Balance",
     "topic": "Editorial Ledger",
     "file": "character-capability-balance.md",
-    "updated": "2026-09-04",
+    "updated": "2026-09-05",
     "description": "Questions and contradictions that keep character skills, talents, abilities, strengths, weaknesses, costs, and comparative graphs balanced across the cast.",
     "speakers": [
       "Character Archive"
@@ -71,7 +82,7 @@
     "title": "The Duchy of Narvea",
     "topic": "Country Profile",
     "file": "duchy-of-narvea.md",
-    "updated": "2026-08-27",
+    "updated": "2026-09-05",
     "description": "A concise visual guide to the mapped Baltic country where the story takes place, including its cities, diplomatic legacy, divided authority, institutions, and multilingual culture.",
     "speakers": [
       "Narvean State Archive"
@@ -83,7 +94,7 @@
     "title": "What Can You Tell Me About Magi?",
     "topic": "Magistry",
     "file": "what-are-magi.md",
-    "updated": "2026-08-22",
+    "updated": "2026-09-05",
     "description": "A dialogue on the nature, secrecy, religion, and politics of Magi.",
     "speakers": [
       "Journalist",
@@ -95,7 +106,7 @@
     "title": "Hidden World Foundation",
     "topic": "World Foundation",
     "file": "world-foundation.md",
-    "updated": "2026-09-04",
+    "updated": "2026-09-05",
     "description": "A direct guide to magic, Holumns, identity-bound curses, Lester's unresolved demiholumn nature, hidden history, political balance, and the setting's central conflict.",
     "speakers": [
       "World Archive"
@@ -106,7 +117,7 @@
     "title": "Magecraft: Structure, Leverage, and Cost",
     "topic": "Magecraft Doctrine",
     "file": "magecraft-as-leverage.md",
-    "updated": "2026-08-30",
+    "updated": "2026-09-05",
     "description": "A practical guide to magecraft mechanics, internal and external practice, limitations, Holumn manifestations, and the need for control.",
     "speakers": [
       "Magistry Archive"

@@ -20,8 +20,6 @@ He continued after they left the restaurant, even though Lynleit had stopped ans
 
 They walked without destination because neither had to return immediately. The older part of central Vilen rose and folded around them. Narrow streets bent between plastered facades and old brick. Timber gates opened into courtyards too deep to see from the road. Iron balconies hung above steep passages, and flights of stone steps connected streets built at different heights. A roof could appear level with the pavement on one side of a hill and three storeys below it on the other.
 
-Lynleit liked this part of the city because it refused to be understood from a map. Felix liked it because no official driver could follow them without becoming angry.
-
 He bought a folded newspaper from a street stall and carried it under one arm. Lynleit suspected he had no intention of reading it.
 
 They turned past a small square where children chased pigeons around a dry fountain.
@@ -34,7 +32,7 @@ Lynleit did not hear the end of the sentence.
 
 She was alone.
 
-The change had no edge. There was no doorway, sudden darkness, or moment in which Felix disappeared. One step belonged to their walk after lunch. The next belonged to a street she could not place.
+She looked back for Felix. The square was gone too.
 
 Lynleit stopped.
 
@@ -62,7 +60,7 @@ It climbed for longer than the hill could contain. At the top, the pavement slop
 
 Lynleit tried to remember whether the old city had a street like this.
 
-Vilen had many streets whose names had changed with governments, dynasties, and wars. This one felt different. A name had not been removed from it. A name had never reached it.
+She searched the corners of the buildings for a street sign.
 
 The headache sharpened.
 
@@ -92,8 +90,6 @@ The girl did not return.
 
 Her crying continued somewhere beyond the passage.
 
-Lynleit could have released the balloon. She could have marked the courtyard and concentrated on finding Felix. She knew this before she followed.
-
 The passage narrowed until her shoulders almost touched both walls. It opened at the top of another stairway, then divided between a covered arcade and an alley descending beneath houses. The crying came from the arcade.
 
 She followed it.
@@ -111,10 +107,6 @@ The crying weakened into broken breaths.
 "I have it," Lynleit called. "Stop running."
 
 Her own voice sounded intoxicated. She could no longer keep one shoulder from striking the walls. The headache pulsed with her steps, and the pavement rose under her feet at angles that made no physical sense.
-
-She followed because a child was lost.
-
-The street did not need a stronger reason.
 
 ## The Broken Fence
 
@@ -148,19 +140,13 @@ Lynleit looked at the girl.
 
 The girl was smiling.
 
-There was no grief in her face and no surprise that Lynleit had seen the body. She smiled as if the lost balloon, the crying, and the long pursuit had all arrived at the expected answer.
-
 Lynleit tried to step back.
 
 Her heel caught against the uneven pavement. The headache surged hard enough to empty the strength from her legs.
 
 The girl placed both hands against her.
 
-The push was not strong.
-
-It did not need to be.
-
-The broken fence passed beneath Lynleit's hands. Stone, roofs, and pale sky changed places. She saw the boy below growing larger. For a moment she understood that she would land beside him and that whoever found them would have no reason to believe one fall had anything to do with the other.
+The broken fence passed beneath Lynleit's hands. Stone, roofs, and pale sky changed places. She saw the boy below growing larger.
 
 Then a white sheet struck her across the face.
 
@@ -223,7 +209,3 @@ She looked at the folded newspaper in his hand, then at the city around them.
 The answer sounded less credible once spoken aloud.
 
 Felix did not laugh.
-
-Several days later, when Lynleit looked down the hill at her father's body, the dead boy returned to her before she could stop him. For one terrible second the broken fence, the smiling girl, and Fionn occupied the same memory.
-
-Helena needed no invented terror in Lynleit's face. She needed only to tell everyone what that terror meant.

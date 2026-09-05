@@ -27,7 +27,7 @@
       "role": "Compact institutional and concealed-carry sidearm",
       "familyPosition": "Small, discreet, elegant institutional pistol",
       "storyUse": "Standard-issued pistol for every MSF officer who has passed weapons certification. MSF purchases the Sparrow from Ren Arms and does not manufacture firearms.",
-      "designSummary": "A slim silver-and-charcoal pistol built around the older Ren Arms metal-frame language. The brushed silver slide is elongated for its height, with a beveled nose, a long shallow ejection-port cut, a narrow rear serration block, and the RN shield set behind the caliber mark. The dark frame rises into an exposed hammer and a smooth, gently curved backstrap, keeping the pistol graceful without making it visually fragile.",
+      "designSummary": "A slim silver-and-charcoal pistol built around the older Ren Arms metal-frame language. The brushed silver slide is elongated for its height, with a beveled nose, a long shallow ejection-port cut, a narrow rear serration block, and the RN shield set behind the caliber mark. The dark frame rises into an exposed hammer and a smooth, gently curved backstrap.",
       "characteristics": [
         "Brushed silver slide over a dark charcoal frame",
         "Beveled muzzle and gently rounded upper profile",
@@ -46,7 +46,10 @@
           "note": "Carries the issued Sparrow as her personal sidearm."
         }
       ],
-      "references": ["Walther PPK", "SIG Sauer P230"]
+      "references": [
+        "Walther PPK",
+        "SIG Sauer P230"
+      ]
     },
     {
       "slug": "ren-l19-magpie",
@@ -57,7 +60,7 @@
       "caliber": "9×19 mm",
       "role": "Heavier compact service pistol",
       "familyPosition": "Larger, louder, and heavier relative of the Sparrow",
-      "designSummary": "An enlarged silver-and-charcoal development of the Sparrow for 9×19 mm. The longer brushed slide, taller dark frame, extended grip, and squared accessory profile give it more mass without abandoning the exposed hammer or the older Ren Arms silhouette. The supplied reference image shows the optional muzzle compensator and extended magazine installed, making the pistol visibly longer in both directions than its base configuration.",
+      "designSummary": "An enlarged silver-and-charcoal development of the Sparrow for 9×19 mm. The longer brushed slide, taller dark frame, extended grip, and squared accessory profile give it more mass without abandoning the exposed hammer or the older Ren Arms silhouette. The illustration shows the optional muzzle compensator and extended magazine installed, making the pistol visibly longer in both directions than its base configuration.",
       "characteristics": [
         "Brushed silver slide with a long upper relief cut",
         "Exposed serrated hammer and conventional raised sights",
@@ -80,7 +83,11 @@
       ],
       "finishNote": "It fills the space between a discreet institutional pistol and a full modern duty handgun.",
       "nameMeaning": "Its close relationship to the Sparrow, with a larger, louder, heavier, and more noticeable character.",
-      "references": ["SIG Sauer P230 aesthetic lineage", "SIG Sauer P225 / P239-type proportions", "Compact CZ influence"]
+      "references": [
+        "SIG Sauer P230 aesthetic lineage",
+        "SIG Sauer P225 / P239-type proportions",
+        "Compact CZ influence"
+      ]
     },
     {
       "slug": "ren-l21-rook",
@@ -116,7 +123,11 @@
           "note": "Later carries Felix's L21 on loan when he objects to her continued reliance on the 9×17 Sparrow."
         }
       ],
-      "references": ["Walther P22Q", "SIG Sauer P365 XL", "SIG Sauer P365 Spectre Comp"]
+      "references": [
+        "Walther P22Q",
+        "SIG Sauer P365 XL",
+        "SIG Sauer P365 Spectre Comp"
+      ]
     },
     {
       "slug": "ren-l24-crow",
@@ -140,7 +151,11 @@
       ],
       "finishNote": "It is the boring default of the current service family: common, dependable, and unremarkable enough to disappear into police and military equipment.",
       "nameMeaning": "Its common, capable, dark, and practical character.",
-      "references": ["Glock 19", "CZ P-10 C", "Compact modern service pistols"]
+      "references": [
+        "Glock 19",
+        "CZ P-10 C",
+        "Compact modern service pistols"
+      ]
     },
     {
       "slug": "ren-l28-raven",
@@ -171,7 +186,11 @@
           "note": "Prefers the Raven over the standard Crow for its accuracy and performance."
         }
       ],
-      "references": ["Glock 17", "Walther PDP Full Size", "Full-size modern service pistols"]
+      "references": [
+        "Glock 17",
+        "Walther PDP Full Size",
+        "Full-size modern service pistols"
+      ]
     },
     {
       "slug": "ren-l31-swan",
@@ -194,6 +213,12 @@
       ],
       "finishNote": "A luxury sidearm outside ordinary standard issue. Its long slide, exposed mechanism, ported presentation, and mixed metal finishes give it a crafted appearance distinct from the modern duty line.",
       "nameMeaning": "Length, grace, refinement, and composure. A Raven remains a full-size duty weapon; a Swan is visibly crafted, controlled, and personal.",
-      "references": ["Premium 2011 pistols", "Premium 1911 pistols", "Desert Eagle", "SIG GTO"]
+      "references": [
+        "Premium 2011 pistols",
+        "Premium 1911 pistols",
+        "Desert Eagle",
+        "SIG GTO"
+      ]
     }
-  ]}
+  ]
+}

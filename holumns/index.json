@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-04",
+  "updated": "2026-09-05",
   "principles": [
     "Holumn is a category of manifestation, not a biological species.",
     "A Holumn may be a physical creature, a natural phenomenon, a repeating event, a disembodied will, or a curse.",
@@ -12,31 +12,49 @@
       "id": "embodied",
       "name": "Embodied",
       "summary": "A creature or body that occupies physical space, including forms that move without being alive.",
-      "evidence": ["HI-003", "HI-004"]
+      "evidence": [
+        "HI-003",
+        "HI-004"
+      ]
     },
     {
       "id": "environmental",
       "name": "Environmental",
       "summary": "Weather, water, terrain, or another natural system becomes the body or behavior of the manifestation.",
-      "evidence": ["HI-003", "HI-004", "HI-005"]
+      "evidence": [
+        "HI-003",
+        "HI-004",
+        "HI-005"
+      ]
     },
     {
       "id": "event",
       "name": "Event-bound",
       "summary": "The Holumn exists as a sequence, compulsion, rule, or occurrence with no creature that can be confronted directly.",
-      "evidence": ["HI-002", "HI-005", "HI-006"]
+      "evidence": [
+        "HI-002",
+        "HI-005",
+        "HI-006"
+      ]
     },
     {
       "id": "disembodied",
       "name": "Disembodied",
       "summary": "A voice, memory, desire, or will acquires agency without a stable body of its own.",
-      "evidence": ["HI-001"]
+      "evidence": [
+        "HI-001"
+      ]
     },
     {
       "id": "curse",
       "name": "Curse-bound",
       "summary": "A person, object, place, or action carries a hostile rule that persists until its particular condition is interrupted.",
-      "evidence": ["HI-001", "HI-002", "HI-005", "HI-006"]
+      "evidence": [
+        "HI-001",
+        "HI-002",
+        "HI-005",
+        "HI-006"
+      ]
     }
   ],
   "incidents": [
@@ -45,78 +63,97 @@
       "slug": "the-voice-on-the-line",
       "title": "The Voice on the Line",
       "recordType": "Victim testimony",
-      "types": ["disembodied", "curse"],
+      "types": [
+        "disembodied",
+        "curse"
+      ],
       "testimony": "Have you heard of a telephone call that answers to you in your own voice? At first I thought whoever was on the phone was repeating me. But it was my own voice. At first it felt like an echo, as all it did was repeat my words. But then it started calling me incessantly, and it was talking to me, in bizarre ways. In my own voice.",
       "ordinaryReading": "Police and communications specialists would first investigate harassment, recording fraud, a compromised exchange, equipment failure, or a witness in psychological distress.",
       "hiddenReading": "Magi and special envoys treat the change from repetition to unsolicited speech as the decisive detail. Something learned the witness's voice, then began using it without the witness.",
-      "observedEffect": "Imitation develops into initiative. The calls become incessant and the borrowed voice speaks in ways the witness does not recognize as their own thought.",
+      "observedEffect": "The calls become incessant. The voice stops merely repeating the witness and begins speaking independently.",
       "knownWeakness": "No countermeasure is confirmed.",
-      "spillContribution": "The incident establishes that a Holumn can enter ordinary infrastructure and acquire presence without forming a visible body."
+      "spillContribution": "The calls use an ordinary telephone line. No visible body accompanies the borrowed voice."
     },
     {
       "id": "HI-002",
       "slug": "the-last-piece",
       "title": "The Last Piece",
       "recordType": "Missing-person incident",
-      "types": ["event", "curse"],
+      "types": [
+        "event",
+        "curse"
+      ],
       "summary": "A puzzle purchased at a market compels its owner to finish it. When the final piece is placed, the owner disappears and enters the missing-persons archive.",
       "ordinaryReading": "Investigators see a purchased object, a developed obsession, and a disappearance. The puzzle may be treated as an unrelated possession, a clue to voluntary flight, or an instrument used by another person.",
       "hiddenReading": "The compulsion and completion belong to the same rule. Placing the final piece completes the condition that permits the disappearance.",
       "observedEffect": "Attention narrows into addiction. Completion is followed by permanent disappearance, while the object remains available to be found again.",
       "knownWeakness": "No countermeasure is confirmed. Refusing completion appears safer than solving the object, but the strength and transfer of the compulsion remain unknown.",
-      "spillContribution": "The incident establishes that a Holumn may be an event encoded into an ordinary object, with no creature concealed inside it."
+      "spillContribution": "The puzzle ties a disappearance to an ordinary act: placing the final piece."
     },
     {
       "id": "HI-003",
       "slug": "the-drowned-choir",
       "title": "The Drowned Choir",
       "recordType": "Operational encounter",
-      "types": ["embodied", "environmental"],
+      "types": [
+        "embodied",
+        "environmental"
+      ],
       "summary": "A pale girl rises from the river with her eyes sewn shut by fishing line and a dress made from dead fish. She enslaves the souls of people drowned in the river and uses their hands to pull new victims beneath the surface.",
       "ordinaryReading": "Maren and the surviving officers report trained swimmers being pulled down by an unexpected force. Darkness, panic, dangerous current, exhaustion, and mutually reinforced testimony remain the available material explanations, while the empty contraband boats provide no visible attacker.",
       "hiddenReading": "The girl is an embodied Holumn controlling the river's accumulated drowned souls. The dead reach through the water as her hands and speak through her as the Drowned Choir.",
       "observedEffect": "Submerged hands seize swimmers by the legs and pull downward. Lynleit's blue flame burns them even beneath the water and forces their grip open. They cannot pass through the surface layer beneath her feet once her water walking manifests. The girl's tilted head reads as confusion when Lynleit remains above the river.",
       "knownWeakness": "The drowned hands can be injured by blue flame beneath the water and cannot reach through the river's surface. These limits let Lynleit escape their grasp, but no method of freeing the enslaved dead or defeating the girl is confirmed.",
-      "spillContribution": "The Drowned Choir takes the crews of contraband boats before they reach the bridge, allowing real criminal traffic to continue without living operators. The encounter establishes that a Holumn can absorb human wrongdoing into its own pattern and make an ordinary conspiracy appear supernaturally self-moving."
+      "spillContribution": "The Drowned Choir takes the contraband crews before the boats reach the bridge. The current carries the empty vessels onward."
     },
     {
       "id": "HI-004",
       "slug": "the-river-that-is-too-deep",
       "title": "The River That Is Too Deep",
       "recordType": "Accumulated incident pattern",
-      "types": ["embodied", "environmental"],
+      "types": [
+        "embodied",
+        "environmental"
+      ],
       "summary": "Something immense moves beneath the city river despite stretches too shallow to contain it. Impossible waves damage boats and kayaks, while drowned bodies lose pieces to bites larger than any expected river predator could make.",
       "ordinaryReading": "Each report can be separated into wake damage, submerged debris, boating accidents, postmortem animal activity, or exaggerated witness comparison. Together they remain difficult to explain without inventing a cause the river should not contain.",
       "hiddenReading": "The leviathan may be an animal-like Holumn, the river giving itself predatory mass, or a depth that exists only when the manifestation passes through it.",
       "observedEffect": "The river behaves as though it can briefly contain a body larger than its physical depth. Water displacement, impact damage, and feeding traces persist after the shape itself is gone.",
       "knownWeakness": "No countermeasure is confirmed. Its dependence on the river may be a boundary, but it is not yet known whether the water contains the Holumn or belongs to it.",
-      "spillContribution": "The pattern supports the possibility that the Spill changes a place's physical capacity as well as the creatures that can enter it."
+      "spillContribution": "The damage suggests a moving mass larger than the river's measured depth could contain."
     },
     {
       "id": "HI-005",
       "slug": "the-nameless-street",
       "title": "The Nameless Street",
       "recordType": "Urban legend and direct encounter",
-      "types": ["environmental", "event", "curse"],
+      "types": [
+        "environmental",
+        "event",
+        "curse"
+      ],
       "summary": "A lost visitor may enter a deserted old street whose lanes, stairs, courtyards, and hills cannot be reconciled with the surrounding city. Following anyone encountered there may prevent the visitor from returning to ordinary streets.",
       "ordinaryReading": "Felix sees Lynleit stop responding, move toward a city bench, and faint after lunch. Dizziness, a severe headache, a dream, or a neurological episode can explain the only part of the incident another person directly observes.",
       "hiddenReading": "The street behaves as a place-bound Holumn whose body is an impossible route and whose rule uses isolation, pursuit, and a fatal fall. Whether the girl, the boy, and the red balloon belong permanently to that rule remains unknown.",
       "observedEffect": "The visitor is separated without perceiving a threshold, becomes dizzy and disoriented, and cannot navigate the district by ordinary geometry. Lynleit follows a crying girl to a broken fence, is pushed toward a dead boy below, and returns to a city bench before impact.",
       "knownWeakness": "The urban warning instructs visitors not to follow anyone encountered on the street. It is not known whether refusing the lure guarantees escape or why Lynleit returns after following it.",
-      "spillContribution": "The encounter establishes that a Holumn can occupy urban arrangement itself. Its later connection to Fionn's fall may be anticipation, memory, coincidence, or a rule that makes one death resemble another; the evidence does not yet distinguish them."
+      "spillContribution": "Lynleit cannot reconcile the street with Vilen's geography. The fall later recalls Fionn's death, but no causal connection between the two is established."
     },
     {
       "id": "HI-006",
       "slug": "doom-has-an-address",
       "title": "Doom Has an Address",
       "recordType": "Operational encounter and curse",
-      "types": ["event", "curse"],
+      "types": [
+        "event",
+        "curse"
+      ],
       "summary": "A Holumn transfers its own terminal condition to whoever consciously destroys it. When Lynleit and Kyrien kill it together, one fatal curse identifies both egos as a single causal answer and remains distributed across them.",
-      "ordinaryReading": "Physicians can chart fatigue, declining tolerance, failed recovery, slow healing, and approaching organ failure, but no physical infection explains why treatment of either patient is undone through the other.",
+      "ordinaryReading": "Physicians can document fatigue, slow healing, and failed recovery. The cause of the linked decline and the failure of treatment remain unexplained by a physical diagnosis.",
       "hiddenReading": "The Holumn hides its death in the conscious identity of its killer. A joint killing gives the curse two coordinates, each capable of reconstructing the condition in the other while both remain recognizably the same people.",
-      "observedEffect": "The subjects weaken over several weeks. Sleep ceases to restore them, injuries heal too slowly, magecraft becomes exhausting, and ordinary exertion eventually becomes difficult. Suppressing either attachment causes the other to restore it.",
+      "observedEffect": "The subjects weaken over several weeks. Sleep ceases to restore them, injuries heal too slowly, magecraft becomes exhausting, and ordinary exertion eventually becomes difficult. Suppressing either attachment causes the other to restore it. The curse begins weakening the morning after Lynleit and Kyrien's incomplete attempt at intimacy and later disappears.",
       "knownWeakness": "The curse requires exact sympathetic recognition of the ego or egos responsible for the Holumn's destruction. Biological death breaks that identity absolutely, but profound reciprocal transformation can introduce enough uncertainty to fracture the attachment without killing either subject.",
-      "spillContribution": "The incident establishes that destroying a Holumn may complete rather than defeat its governing rule. It also shows that a curse can treat identity as an address, distribute one condition across several people, and mistake psychological discontinuity for death.",
+      "spillContribution": "Destroying this Holumn transfers its fatal condition to its killers. Lynleit and Kyrien survive after an incomplete attempt at intimacy changes both identities enough to break its recognition.",
       "storyLink": "story.html?chapter=doom-has-an-address"
     }
   ]

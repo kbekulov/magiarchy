@@ -12,14 +12,26 @@
     "thread": "Lynleit and Kyrien",
     "location": "Police office",
     "summary": "Lynleit interrogates Kyrien after his failed attempt against an MSF-protected Magus politician nearly harms her, then converts his prison risk into a secret recruitment without telling him she was present.",
-    "purpose": "Creates the concealed personal tension and coercive bargain that begin Kyrien's hidden association with MSF. Lynleit knows he almost harmed her, while Kyrien cannot account for the personal edge in her questions. She still places the approaching threat and MSF's needs above the injury, using him as an ally Helena cannot anticipate.",
+    "purpose": "Lynleit recruits Kyrien under threat of imprisonment without revealing that his attack nearly harmed her.",
     "characters": [
-      { "name": "Lynleit", "slug": "lynleit" },
-      { "name": "Kyrien", "slug": "kyrien" }
+      {
+        "name": "Lynleit",
+        "slug": "lynleit"
+      },
+      {
+        "name": "Kyrien",
+        "slug": "kyrien"
+      }
     ],
     "characterAnchors": [
-      { "slug": "lynleit", "beat": "The Heir Apparent" },
-      { "slug": "kyrien", "beat": "Outside the System" }
+      {
+        "slug": "lynleit",
+        "beat": "The Heir Apparent"
+      },
+      {
+        "slug": "kyrien",
+        "beat": "Outside the System"
+      }
     ],
     "known": [
       "Kyrien has made a failed attempt to assassinate a politician who belongs to the Magi world.",
@@ -54,7 +66,7 @@
     "continuityBefore": "Kyrien's father's death, the politician's involvement, the MSF protection assignment, and the military knowledge behind the attempt still need connective scenes.",
     "continuityAfter": "Kyrien enters Lynleit's service unwillingly without knowing that the handler controlling his case was nearly harmed by his attack. Lynleit must later decide who, if anyone, can be trusted with the recruitment. The arrangement preserves him as hidden leverage against Helena through the early investigation. Fionn's much later assassination vindicates Lynleit's warning without proving that she understood its source.",
     "chapterSlug": "after-the-failed-attempt",
-    "updated": "2026-09-01"
+    "updated": "2026-09-05"
   },
   {
     "slug": "the-secret-third-ally",
@@ -69,18 +81,42 @@
     "thread": "Lynleit's hidden circle",
     "location": "Unspecified location",
     "summary": "Lynleit eventually tells only Felix and Reiner that she has recruited Kyrien as an unknown ally and possible trump card against Helena, keeping the decision hidden even from Fionn.",
-    "purpose": "Defines Lynleit's first deeply anti-protocol MSF decision early in the story, turns secrecy into an advantage over Helena, and establishes the split between Reiner's trust in Lynleit's judgment and Felix's lasting distrust of Kyrien.",
+    "purpose": "Reiner accepts Lynleit's decision; Felix remains opposed. Fionn is not told.",
     "characters": [
-      { "name": "Lynleit", "slug": "lynleit" },
-      { "name": "Kyrien", "slug": "kyrien" },
-      { "name": "Felix", "slug": "felix" },
-      { "name": "Reiner", "slug": "reiner" }
+      {
+        "name": "Lynleit",
+        "slug": "lynleit"
+      },
+      {
+        "name": "Kyrien",
+        "slug": "kyrien"
+      },
+      {
+        "name": "Felix",
+        "slug": "felix"
+      },
+      {
+        "name": "Reiner",
+        "slug": "reiner"
+      }
     ],
     "characterAnchors": [
-      { "slug": "lynleit", "beat": "The Heir Apparent" },
-      { "slug": "kyrien", "beat": "Alliance under Pressure" },
-      { "slug": "felix", "beat": "The Secret Third Ally" },
-      { "slug": "reiner", "beat": "The Anti-Protocol Compartment" }
+      {
+        "slug": "lynleit",
+        "beat": "The Heir Apparent"
+      },
+      {
+        "slug": "kyrien",
+        "beat": "Alliance under Pressure"
+      },
+      {
+        "slug": "felix",
+        "beat": "The Secret Third Ally"
+      },
+      {
+        "slug": "reiner",
+        "beat": "The Anti-Protocol Compartment"
+      }
     ],
     "known": [
       "Helena knows everyone already inside Lynleit's circle, so an unknown ally creates a favorable information imbalance.",
@@ -105,7 +141,7 @@
     "continuityBefore": "Lynleit has already coerced Kyrien into service after the failed assassination attempt, but the arrangement initially exists only between handler and asset.",
     "continuityAfter": "Reiner becomes the stabilizing vote that permits the compartment to continue. Felix complies without trust, creating recurring friction with Kyrien and forcing Lynleit to defend the judgment on which the entire imbalance depends.",
     "chapterSlug": "after-the-failed-attempt",
-    "updated": "2026-08-25"
+    "updated": "2026-09-05"
   },
   {
     "slug": "the-cat-in-the-family-house",
@@ -120,32 +156,36 @@
     "thread": "Lynleit's private life",
     "location": "The Director's House",
     "summary": "Before the crisis reaches her home directly, Lynleit clumsily chases a grey male cat named Ash, catches him, then cannot bring herself to expel him into the rain.",
-    "purpose": "Shows Lynleit's clumsy and childish private side while using the grey intruder as an omen. Outside threats and tragedies have begun to bleed into her life, and the escaping cat becomes an emotional symbol for her slipping leads, understanding, and sense of safety.",
+    "purpose": "Lynleit catches Ash but lets him stay because it is raining.",
     "characters": [
-      { "name": "Lynleit", "slug": "lynleit" },
-      { "name": "Ash", "slug": "ash" }
+      {
+        "name": "Lynleit",
+        "slug": "lynleit"
+      },
+      {
+        "name": "Ash",
+        "slug": "ash"
+      }
     ],
     "characterAnchors": [
-      { "slug": "lynleit", "beat": "The Heir Apparent" },
-      { "slug": "ash", "beat": "The Chase" }
+      {
+        "slug": "lynleit",
+        "beat": "The Heir Apparent"
+      },
+      {
+        "slug": "ash",
+        "beat": "The Chase"
+      }
     ],
     "known": [
       "The scene occurs in the early chapters, after danger has begun outside but before Lynleit's life starts to collapse.",
       "The grey cat is male and is named Ash.",
-      {
-        "text": "Ash's trespass and permanent stay allow the reader to treat him as an omen of outside threats entering Lynleit's private life without any character naming him as one.",
-        "status": "inferred"
-      },
       "The family maintained an original house in Turon while Lynleit's mother was alive and Lynleit was in junior school.",
       "After her mother's death, the family moved to a Vilen residence for Fionn's access to the capital. Lynleit accepted the move only after securing the third-floor study-bedroom.",
       "The Vilen house is a three-floor family residence on a wooded hill above the river that flows toward the city center, with a small rear park and garden.",
       "Lynleit values the thick vegetation and the sound of leaves and branches in the wind. She regards nearby flowing water as life energy and seeks its emotional grounding despite her childhood fear of drowning.",
       "The garden-facing first floor contains glass-enclosed relaxation areas that preserve contact with nature through every season.",
       "Lynleit personally chases Ash through the house, revealing a clumsier and more childish side of her than her public role usually permits.",
-      {
-        "text": "The chase can imply that Ash's repeated escapes echo Lynleit's fear that her leads, understanding, and safety are also escaping her control.",
-        "status": "inferred"
-      },
       "Lynleit eventually catches Ash.",
       "She cannot bring herself to expel him because rain is falling outside.",
       "Ash decides to remain and becomes a permanent loiterer in the family home."
@@ -156,7 +196,7 @@
     "continuityBefore": "The first disappearances have begun outside Lynleit's private life, but the full crisis, Fionn's death, and the destruction of her family security remain ahead.",
     "continuityAfter": "Ash remains inside the house as a quiet domestic echo of the danger Lynleit cannot keep outside. Later losses can turn the once-comic chase into an omen whose meaning becomes clear only in retrospect.",
     "chapterSlug": null,
-    "updated": "2026-08-31"
+    "updated": "2026-09-05"
   },
   {
     "slug": "a-citizen-is-taken",
@@ -171,7 +211,7 @@
     "thread": "The first disappearances",
     "location": "Vilen park, exact site unspecified",
     "summary": "The first man to disappear appears to be the Spill's first victim, but he independently causes the crisis. His identity and significance remain concealed for most of the story while hidden factions begin exploiting the catastrophe he created.",
-    "purpose": "Makes the apparent first victim the buried cause of an independent crisis, allowing a later identity revelation to reframe both the Holumn disappearances and the agendas built around them.",
+    "purpose": "The apparent first victim caused the Spill. Other factions begin exploiting it without the public knowing its origin.",
     "characters": [],
     "characterAnchors": [],
     "known": [
@@ -193,7 +233,7 @@
     "continuityBefore": "His public identity and ordinary routine must conceal the significance he will acquire later.",
     "continuityAfter": "Holumns begin taking further victims. Investigators treat the first disappearance as the start of the case and do not know that the missing man caused the crisis.",
     "chapterSlug": null,
-    "updated": "2026-08-26"
+    "updated": "2026-09-05"
   },
   {
     "slug": "the-warning-dismissed",
@@ -208,12 +248,18 @@
     "thread": "The suspected coup",
     "location": "Ducal Court",
     "summary": "State Councillor Drake becomes convinced that a coup is developing somewhere inside Narvea, but neither his peers nor the Duke believe he has found more than disconnected irregularities.",
-    "purpose": "Establishes the political explanation that first draws government figures toward the disappearances. Court resentment over Drake's friendship with the Duke deepens his isolation until an illegal alliance feels necessary.",
+    "purpose": "Drake cannot secure official support for his investigation.",
     "characters": [
-      { "name": "Drake", "slug": "drake" }
+      {
+        "name": "Drake",
+        "slug": "drake"
+      }
     ],
     "characterAnchors": [
-      { "slug": "drake", "beat": "A Coup without a Source" }
+      {
+        "slug": "drake",
+        "beat": "A Coup without a Source"
+      }
     ],
     "known": [
       "Drake is deeply convinced that a coup is underway.",
@@ -223,11 +269,7 @@
       "Courtiers shun Drake as the Duke's pampered favorite and overlook that he originally earned the relationship by refusing to flatter him.",
       "He cannot yet identify where the conspiracy begins or how far it reaches.",
       "His peers ridicule the suspicion and the Duke remains skeptical.",
-      "Drake interprets the park disappearances as possible cover for the illegal movement of material intended for action against Narvea or Ducal authority.",
-      {
-        "text": "The mismatch between Drake's political evidence and the park's impossible events lets the reader infer that the apparent coup is a mask over a deeper conflict involving Fionn, foreign Magiarchs, and church actors.",
-        "status": "inferred"
-      }
+      "Drake interprets the park disappearances as possible cover for the illegal movement of material intended for action against Narvea or Ducal authority."
     ],
     "openQuestions": [
       "What first convinces Drake that the irregularities form a coup attempt?",
@@ -238,7 +280,7 @@
     "continuityBefore": "Early disappearances and irregular movements need to produce the evidence that Drake reads as one political pattern.",
     "continuityAfter": "Sherie responds to her uncle's isolation by proposing contact with Lynleit outside every lawful chain of supervision.",
     "chapterSlug": null,
-    "updated": "2026-08-27"
+    "updated": "2026-09-05"
   },
   {
     "slug": "a-meeting-beyond-authority",
@@ -253,24 +295,66 @@
     "thread": "The suspected coup",
     "location": "A hill overlooking Vilen",
     "summary": "At night on a hill overlooking Vilen, Sherie leads an illegal negotiation in which Drake seeks limited access to MSF resources without surrendering sensitive evidence.",
-    "purpose": "Binds the government and MSF investigations together through an alliance that is politically dangerous before anyone understands that the underlying threat is magical. It is Sherie's first independent diplomatic success, not a transfer of Drake's wider role as the story's primary strategic mind.",
+    "purpose": "Sherie secures MSF assistance through negotiations neither the government nor Court has authorized.",
     "characters": [
-      { "name": "Drake", "slug": "drake" },
-      { "name": "Sherie", "slug": "sherie" },
-      { "name": "Lynleit", "slug": "lynleit" },
-      { "name": "Felix", "slug": "felix" },
-      { "name": "Reiner", "slug": "reiner" },
-      { "name": "Kyrien", "slug": "kyrien" },
-      { "name": "Heyk", "slug": "heyk" }
+      {
+        "name": "Drake",
+        "slug": "drake"
+      },
+      {
+        "name": "Sherie",
+        "slug": "sherie"
+      },
+      {
+        "name": "Lynleit",
+        "slug": "lynleit"
+      },
+      {
+        "name": "Felix",
+        "slug": "felix"
+      },
+      {
+        "name": "Reiner",
+        "slug": "reiner"
+      },
+      {
+        "name": "Kyrien",
+        "slug": "kyrien"
+      },
+      {
+        "name": "Heyk",
+        "slug": "heyk"
+      }
     ],
     "characterAnchors": [
-      { "slug": "drake", "beat": "The Illegal Partnership" },
-      { "slug": "sherie", "beat": "Leading the Meeting" },
-      { "slug": "lynleit", "beat": "The Heir Apparent" },
-      { "slug": "felix", "beat": "No Trust for Kyrien" },
-      { "slug": "reiner", "beat": "Watching Kyrien" },
-      { "slug": "kyrien", "beat": "Alliance under Pressure" },
-      { "slug": "heyk", "beat": "Field Agent and Bodyguard" }
+      {
+        "slug": "drake",
+        "beat": "The Illegal Partnership"
+      },
+      {
+        "slug": "sherie",
+        "beat": "Leading the Meeting"
+      },
+      {
+        "slug": "lynleit",
+        "beat": "The Heir Apparent"
+      },
+      {
+        "slug": "felix",
+        "beat": "No Trust for Kyrien"
+      },
+      {
+        "slug": "reiner",
+        "beat": "Watching Kyrien"
+      },
+      {
+        "slug": "kyrien",
+        "beat": "Alliance under Pressure"
+      },
+      {
+        "slug": "heyk",
+        "beat": "Field Agent and Bodyguard"
+      }
     ],
     "known": [
       "Sherie believes her uncle when the Court does not.",
@@ -297,7 +381,7 @@
     "continuityBefore": "Sherie must persuade Drake that Lynleit is worth the legal and political danger of contact.",
     "continuityAfter": "Sherie claims praise and pampering for her success while Drake remains uncertain about what she has created. The private agreement then produces a narrow intelligence operation. The team may inspect the suspected shipment but cannot arrest anyone or seize material.",
     "chapterSlug": null,
-    "updated": "2026-08-31"
+    "updated": "2026-09-05"
   },
   {
     "slug": "the-boat-beneath-the-bridge",
@@ -312,22 +396,58 @@
     "thread": "The suspected coup and the Spill",
     "location": "A Vilen river bridge linking a city street to the quarantined park",
     "summary": "A covert MSF team descends from a bridge to inspect small night shipments requested by Drake and Sherie. The tarp-covered wooden boats arrive empty, the Drowned Choir attacks from below, and Kyrien secretly witnesses Lynleit burn the drowned hands and stand on the river.",
-    "purpose": "Carries an operation framed as contraband surveillance into the supernatural without a formal reveal. The failed watches give Lynleit and Kyrien a voluntary card-game ritual before shared danger, then the Drowned Choir turns Lynleit's drowning fear into uncontrolled blue flame and forbidden water walking. Kyrien leaves with a secret he chooses to protect.",
+    "purpose": "The river attack separates the team. Kyrien witnesses Lynleit's forbidden ability and keeps it secret.",
     "characters": [
-      { "name": "Sherie", "slug": "sherie" },
-      { "name": "Drake", "slug": "drake" },
-      { "name": "Lynleit", "slug": "lynleit" },
-      { "name": "Felix", "slug": "felix" },
-      { "name": "Reiner", "slug": "reiner" },
-      { "name": "Kyrien", "slug": "kyrien" }
+      {
+        "name": "Sherie",
+        "slug": "sherie"
+      },
+      {
+        "name": "Drake",
+        "slug": "drake"
+      },
+      {
+        "name": "Lynleit",
+        "slug": "lynleit"
+      },
+      {
+        "name": "Felix",
+        "slug": "felix"
+      },
+      {
+        "name": "Reiner",
+        "slug": "reiner"
+      },
+      {
+        "name": "Kyrien",
+        "slug": "kyrien"
+      }
     ],
     "characterAnchors": [
-      { "slug": "sherie", "beat": "What the Boat Reveals" },
-      { "slug": "drake", "beat": "The Boat below the Bridge" },
-      { "slug": "lynleit", "beat": "The Heir Apparent" },
-      { "slug": "felix", "beat": "No Trust for Kyrien" },
-      { "slug": "reiner", "beat": "Trusting Lynleit" },
-      { "slug": "kyrien", "beat": "Alliance under Pressure" }
+      {
+        "slug": "sherie",
+        "beat": "What the Boat Reveals"
+      },
+      {
+        "slug": "drake",
+        "beat": "The Boat below the Bridge"
+      },
+      {
+        "slug": "lynleit",
+        "beat": "The Heir Apparent"
+      },
+      {
+        "slug": "felix",
+        "beat": "No Trust for Kyrien"
+      },
+      {
+        "slug": "reiner",
+        "beat": "Trusting Lynleit"
+      },
+      {
+        "slug": "kyrien",
+        "beat": "Alliance under Pressure"
+      }
     ],
     "known": [
       "Sherie and Drake ask Lynleit to assemble a loyal MSF team and investigate recurring night traffic on the Vilen river.",
@@ -357,7 +477,7 @@
       "After reaching land, Maren describes the sensation of hands gripping and pulling her legs.",
       "Reiner, Maren, and Ivo reach the street-facing city bank with Felix's fallback line without understanding what attacked them. They do not realize that Lynleit remains behind.",
       {
-        "text": "The dead hands, the pale girl's drowned voices, and the pattern of new victims imply that she has bound people who drowned in the river across generations and uses them to pull others under.",
+        "text": "The hands of different sizes and states of decay suggest many drowned victims, rather than one submerged attacker.",
         "status": "inferred"
       },
       "Only Lynleit sees the hands clearly. They seize her most violently and drag her underwater.",
@@ -396,7 +516,7 @@
     "continuityBefore": "The hilltop agreement gives Drake and Sherie access to a small loyal MSF team without granting them control of the agency. Their first request is a limited investigation of apparently unmanned river shipments, with contraband still the leading material explanation.",
     "continuityAfter": "Felix, Reiner, Maren, and Ivo carry an account of impossible resistance from the city bank but no shared sight of its cause. Kyrien observes the river from the quarantined trees, and Lynleit later joins him on the park bank without the blue suede jacket. Their back-to-back recovery combines the physical awareness established during the failed watches with a mutual silence around what he witnessed. Lynleit later complains about the lost jacket. Much later, after Fionn's murder, the hotel-room refuge deepens that physical trust into emotional reliance.",
     "chapterSlug": "the-empty-boats-beneath-the-bridge",
-    "updated": "2026-09-01"
+    "updated": "2026-09-05"
   },
   {
     "slug": "the-park-unit-is-lost",
@@ -411,16 +531,34 @@
     "thread": "The Vilen quarantine",
     "location": "The quarantined park in Vilen",
     "summary": "A specially equipped paramilitary unit enters the sealed park and is massacred by forces it cannot understand. Captain Heyk becomes the sole survivor.",
-    "purpose": "Turns a public missing-person crisis into a state-level containment failure and gives Heyk the grief, access, and personal motive that carry him into Drake and Sherie's service.",
+    "purpose": "Heyk loses his unit and enters Drake and Sherie's service after evacuation.",
     "characters": [
-      { "name": "Heyk", "slug": "heyk" },
-      { "name": "Drake", "slug": "drake" },
-      { "name": "Sherie", "slug": "sherie" }
+      {
+        "name": "Heyk",
+        "slug": "heyk"
+      },
+      {
+        "name": "Drake",
+        "slug": "drake"
+      },
+      {
+        "name": "Sherie",
+        "slug": "sherie"
+      }
     ],
     "characterAnchors": [
-      { "slug": "heyk", "beat": "The Last Man out of the Park" },
-      { "slug": "drake", "beat": "A Coup without a Source" },
-      { "slug": "sherie", "beat": "The Secret Proposal" }
+      {
+        "slug": "heyk",
+        "beat": "The Last Man out of the Park"
+      },
+      {
+        "slug": "drake",
+        "beat": "A Coup without a Source"
+      },
+      {
+        "slug": "sherie",
+        "beat": "The Secret Proposal"
+      }
     ],
     "known": [
       "The park quarantine follows the disappearances of citizens, private investigators, and police officers.",
@@ -440,7 +578,7 @@
     "continuityBefore": "The public already knows that people are missing. Gas, poison, or another harmful substance remains a possible explanation, although no bodies have been recovered.",
     "continuityAfter": "Heyk enters Drake and Sherie's orbit carrying grief, survivor knowledge, and direct experience that no official material explanation can fully contain.",
     "chapterSlug": "ash-under-glass",
-    "updated": "2026-08-26"
+    "updated": "2026-09-05"
   },
   {
     "slug": "students-beyond-the-cordon",
@@ -455,14 +593,26 @@
     "thread": "The Vilen quarantine",
     "location": "The quarantined park in Vilen",
     "summary": "Hiyu enters the quarantined park to test his impossible suspicion that magic is involved in the disappearances. Yulia goes with him to prove the theory wrong and keep him alive.",
-    "purpose": "Places two opposite investigative methods inside the same impossible case: Hiyu's generative intuition reaches the right category without understanding it, while Yulia's disciplined criminology loses the ordinary rules it depends upon.",
+    "purpose": "Hiyu's theory takes him and Yulia into a danger neither understands.",
     "characters": [
-      { "name": "Hiyu", "slug": "hiyu" },
-      { "name": "Yulia", "slug": "yulia" }
+      {
+        "name": "Hiyu",
+        "slug": "hiyu"
+      },
+      {
+        "name": "Yulia",
+        "slug": "yulia"
+      }
     ],
     "characterAnchors": [
-      { "slug": "hiyu", "beat": "Beyond the Cordon" },
-      { "slug": "yulia", "beat": "Dragged into the Park" }
+      {
+        "slug": "hiyu",
+        "beat": "Beyond the Cordon"
+      },
+      {
+        "slug": "yulia",
+        "beat": "Dragged into the Park"
+      }
     ],
     "known": [
       "Hiyu and Yulia are university students in their mid-twenties who study criminology.",
@@ -479,7 +629,7 @@
     "continuityBefore": "The widening disappearance case gives Hiyu enough fragments to form an impossible but directionally correct theory. Yulia rejects the conclusion but refuses to let him test it alone.",
     "continuityAfter": "Their evidence connects two civilian students to the larger institutional response. Hiyu correctly suspects magic but still lacks any complete knowledge of it.",
     "chapterSlug": null,
-    "updated": "2026-08-27"
+    "updated": "2026-09-05"
   },
   {
     "slug": "shelter-after-the-accusation",
@@ -494,14 +644,26 @@
     "thread": "Lynleit and Kyrien",
     "location": "Kyrien's hotel-room hideout",
     "summary": "After exhausting her available resources to escape the directed hunt for her arrest, Lynleit reaches Kyrien's hotel-room hideout and finally loses the composure that carried her through the immediate crisis.",
-    "purpose": "Marks a much later threshold in an intimacy that began functionally after the river incident. Safety, grief, and care turn the coerced alliance into emotional reliance without making the relationship sexual yet.",
+    "purpose": "Lynleit reaches safety with Kyrien and breaks down after her escape.",
     "characters": [
-      { "name": "Lynleit", "slug": "lynleit" },
-      { "name": "Kyrien", "slug": "kyrien" }
+      {
+        "name": "Lynleit",
+        "slug": "lynleit"
+      },
+      {
+        "name": "Kyrien",
+        "slug": "kyrien"
+      }
     ],
     "characterAnchors": [
-      { "slug": "lynleit", "beat": "Fugitive Counteroffensive" },
-      { "slug": "kyrien", "beat": "Alliance under Pressure" }
+      {
+        "slug": "lynleit",
+        "beat": "Fugitive Counteroffensive"
+      },
+      {
+        "slug": "kyrien",
+        "beat": "Alliance under Pressure"
+      }
     ],
     "known": [
       "Lynleit acts rationally and efficiently during the accusation and escape.",
@@ -515,11 +677,7 @@
       "Their earlier intimate encounters are non-sexual and arise functionally from isolation, danger, cold, near drowning, or emotional rupture.",
       "The first trigger is Kyrien's silent protection of Lynleit's water-walking secret and their back-to-back attempt to share body heat after the river incident.",
       "Lynleit does not pursue attraction as a separate goal. It develops inside work and danger that remain more important to her.",
-      "Their relationship becomes sexual at the end of Arc 1.",
-      {
-        "text": "The opening of Arc 2 lets the reader infer that Lynleit's disappearance concealed a pregnancy near the boundary between the two arcs.",
-        "status": "inferred"
-      }
+      "Their relationship becomes sexual at the end of Arc 1."
     ],
     "openQuestions": [
       "How does Lynleit locate the hideout without leading pursuit to Kyrien?",
@@ -529,7 +687,7 @@
     "continuityBefore": "Helena has used Fionn's death to frame Lynleit and direct a hunt for her arrest, forcing her to rely on the secret ally she recruited long before the danger became visible.",
     "continuityAfter": "Their bond remains non-sexual at this point, but it becomes a private source of safety within Lynleit's continuing effort to reclaim MSF. Kyrien next helps her establish contact with Felix and Reiner and later chooses to remain after the original bargain has lost its practical force.",
     "chapterSlug": null,
-    "updated": "2026-09-01"
+    "updated": "2026-09-05"
   },
   {
     "slug": "the-first-lines-back-into-msf",
@@ -544,18 +702,42 @@
     "thread": "Reclaiming MSF",
     "location": "Unspecified secure contact points",
     "summary": "While Lynleit remains the target of an active arrest hunt, Kyrien helps her find secure ways to contact Felix and Reiner. Their reconnection becomes the first step in her slow campaign to reclaim MSF from Helena.",
-    "purpose": "Bridges Lynleit's immediate escape and hotel refuge to an organized counteroffensive. The hidden ally Helena did not know becomes the route back to the two trusted officers she does know.",
+    "purpose": "Kyrien helps Lynleit reconnect with allies inside Helena's MSF.",
     "characters": [
-      { "name": "Lynleit", "slug": "lynleit" },
-      { "name": "Kyrien", "slug": "kyrien" },
-      { "name": "Felix", "slug": "felix" },
-      { "name": "Reiner", "slug": "reiner" }
+      {
+        "name": "Lynleit",
+        "slug": "lynleit"
+      },
+      {
+        "name": "Kyrien",
+        "slug": "kyrien"
+      },
+      {
+        "name": "Felix",
+        "slug": "felix"
+      },
+      {
+        "name": "Reiner",
+        "slug": "reiner"
+      }
     ],
     "characterAnchors": [
-      { "slug": "lynleit", "beat": "Fugitive Counteroffensive" },
-      { "slug": "kyrien", "beat": "Alliance under Pressure" },
-      { "slug": "felix", "beat": "Loyalty after Fionn" },
-      { "slug": "reiner", "beat": "Watching Kyrien" }
+      {
+        "slug": "lynleit",
+        "beat": "Fugitive Counteroffensive"
+      },
+      {
+        "slug": "kyrien",
+        "beat": "Alliance under Pressure"
+      },
+      {
+        "slug": "felix",
+        "beat": "Loyalty after Fionn"
+      },
+      {
+        "slug": "reiner",
+        "beat": "Watching Kyrien"
+      }
     ],
     "known": [
       "Lynleit remains actively hunted for arrest after escaping the immediate accusation.",
@@ -575,7 +757,7 @@
     "continuityBefore": "Lynleit reaches Kyrien's hotel room after exhausting her immediate escape resources. Helena's seizure has also broken the practical authority behind Lynleit's original bargain with Kyrien.",
     "continuityAfter": "Kyrien's voluntary decision to remain separates his loyalty from the coercion that began their association. The four-person link gives Lynleit an internal line into Helena's MSF and begins a prolonged contest for legitimacy, intelligence, and control under the pressure of an active manhunt.",
     "chapterSlug": null,
-    "updated": "2026-09-01"
+    "updated": "2026-09-05"
   },
   {
     "slug": "the-end-of-the-first-arc",
@@ -589,18 +771,30 @@
     "sceneType": "Established intimacy",
     "thread": "Lynleit and Kyrien",
     "location": "Unspecified location",
-    "summary": "After surviving the shared curse in Doom Has an Address, Lynleit and Kyrien have several further sexual encounters and develop private jokes and ordinary habits before her pregnancy and disappearance near the Arc 2 threshold.",
-    "purpose": "Establishes that the crisis-driven first encounter becomes a sustained private relationship rather than an isolated cure attempt, while keeping Lynleit's work and the closing pressures of Arc 1 primary.",
+    "summary": "After surviving the shared curse in Doom Has an Address, Lynleit and Kyrien begin a sexual relationship and develop private jokes and ordinary habits before her pregnancy and disappearance near the Arc 2 threshold.",
+    "purpose": "Their sexual relationship develops after the curse has ended, alongside Lynleit's work and the closing pressures of Arc 1.",
     "characters": [
-      { "name": "Lynleit", "slug": "lynleit" },
-      { "name": "Kyrien", "slug": "kyrien" }
+      {
+        "name": "Lynleit",
+        "slug": "lynleit"
+      },
+      {
+        "name": "Kyrien",
+        "slug": "kyrien"
+      }
     ],
     "characterAnchors": [
-      { "slug": "lynleit", "beat": "Protected Absence and Inquiry" },
-      { "slug": "kyrien", "beat": "Alliance under Pressure" }
+      {
+        "slug": "lynleit",
+        "beat": "Protected Absence and Inquiry"
+      },
+      {
+        "slug": "kyrien",
+        "beat": "Alliance under Pressure"
+      }
     ],
     "known": [
-      "Their first sexual encounter occurs in Doom Has an Address after their shared Holumn curse reduces the remaining prognosis to days.",
+      "Their first completed sexual encounter occurs after Doom Has an Address, later in Arc 1.",
       "Several further encounters follow before Lynleit's pregnancy and disappearance.",
       "Their second encounter is lighter and more playful because neither needs to deny that the first threshold occurred.",
       "Kyrien later initiates firmly, reversing their usual pattern and marking desire as his own chosen action.",
@@ -616,10 +810,10 @@
       "What details at the opening of Arc 2 make the pregnancy inference clear without explaining or showing it directly?",
       "How much time passes between Doom Has an Address, their later encounters, the beginning of the pregnancy, and Lynleit's disappearance?"
     ],
-    "continuityBefore": "Doom Has an Address turns accumulated trust and unwanted attraction into a first sexual encounter under mortal pressure. Their reciprocal transformation fractures the shared curse, and both survive.",
+    "continuityBefore": "In Doom Has an Address, an incomplete attempt at intimacy changes both of them enough to break the shared curse. Their sexual relationship begins later.",
     "continuityAfter": "Lynleit disappears near the transition into Arc 2. The opening of Arc 2 supplies enough evidence for the reader to infer the pregnancy, while Kyrien directs MSF without knowing that she carries their son.",
     "chapterSlug": null,
-    "updated": "2026-09-04"
+    "updated": "2026-09-05"
   },
   {
     "slug": "the-nameless-street",
@@ -634,18 +828,42 @@
     "thread": "The framing of Lynleit",
     "location": "Vilen old town and an untraceable street",
     "summary": "During a casual walk after lunch with Felix, Lynleit enters a deserted labyrinthine street, follows a crying girl with a red balloon, sees a dead boy below a broken fence, and is pushed from the same ledge before waking on an ordinary city bench.",
-    "purpose": "Gives Lynleit a private memory of a child's fatal fall that later overwhelms her when she sees Fionn below the hill at the family house. Helena can use Lynleit's genuine shock as emotionally credible evidence for a false accusation.",
+    "purpose": "Lynleit returns with a memory of a dead boy that later resurfaces when she finds Fionn.",
     "characters": [
-      { "name": "Lynleit", "slug": "lynleit" },
-      { "name": "Felix", "slug": "felix" },
-      { "name": "Fionn", "slug": "fionn" },
-      { "name": "Helena", "slug": "helena" }
+      {
+        "name": "Lynleit",
+        "slug": "lynleit"
+      },
+      {
+        "name": "Felix",
+        "slug": "felix"
+      },
+      {
+        "name": "Fionn",
+        "slug": "fionn"
+      },
+      {
+        "name": "Helena",
+        "slug": "helena"
+      }
     ],
     "characterAnchors": [
-      { "slug": "lynleit", "beat": "The Heir Apparent" },
-      { "slug": "felix", "beat": "Friend and Bodyguard" },
-      { "slug": "fionn", "beat": "The Inheritance after Death" },
-      { "slug": "helena", "beat": "The Opening" }
+      {
+        "slug": "lynleit",
+        "beat": "The Heir Apparent"
+      },
+      {
+        "slug": "felix",
+        "beat": "Friend and Bodyguard"
+      },
+      {
+        "slug": "fionn",
+        "beat": "The Inheritance after Death"
+      },
+      {
+        "slug": "helena",
+        "beat": "The Opening"
+      }
     ],
     "known": [
       "The Nameless Street is an urban myth in the old town of central Vilen.",
@@ -661,10 +879,6 @@
       "Whether the street is a place, an illusion, or another kind of Holumn remains unresolved.",
       "When Lynleit later sees Fionn's body below the hill at the family house, the memory of the boy stupefies her and gives Helena leverage to accuse her of pushing Fionn.",
       {
-        "text": "Because Lynleit perceives no threshold and Felix witnesses only a faint, the reader must infer whether the street is a physical place, an imposed event, or an experience confined to her consciousness.",
-        "status": "inferred"
-      },
-      {
         "text": "Felix does not explain why he accepts Lynleit's implausible account without laughing, leaving his response to be read through their long friendship.",
         "status": "inferred"
       }
@@ -679,7 +893,7 @@
     "continuityBefore": "Lynleit is already watching Helena study her family, but Fionn remains alive and the danger has not yet broken into an open accusation.",
     "continuityAfter": "Several days later Fionn is found below the hill at the Vilen family house. Lynleit's involuntary recognition of the dead boy gives Helena a true emotional reaction that can be assigned a false cause.",
     "chapterSlug": "the-nameless-street",
-    "updated": "2026-08-31"
+    "updated": "2026-09-05"
   },
   {
     "slug": "mikhail-discovers-the-breach",
@@ -694,20 +908,50 @@
     "thread": "MSF enters the hidden order",
     "location": "Unspecified private location",
     "summary": "Father Mikhail becomes the first authority to discover that Lynleit has shared forbidden knowledge of magic with outsiders. Kyrien corrects her attempt to limit the breach to himself by revealing that Felix and Reiner also know.",
-    "purpose": "Turns a private breach into pressure for an institutional answer. Lynleit's promise to handle the witnesses on her own terms becomes an early cause of MSF's later conversion from a purely private intelligence company into a partly Magi enterprise accountable to the Magiarchy and the Church.",
+    "purpose": "Mikhail's discovery forces Lynleit to answer for the witnesses and contributes to MSF's later Magi role.",
     "characters": [
-      { "name": "Lynleit", "slug": "lynleit" },
-      { "name": "Kyrien", "slug": "kyrien" },
-      { "name": "Felix", "slug": "felix" },
-      { "name": "Reiner", "slug": "reiner" },
-      { "name": "Father Mikhail", "slug": "father-mikhail" }
+      {
+        "name": "Lynleit",
+        "slug": "lynleit"
+      },
+      {
+        "name": "Kyrien",
+        "slug": "kyrien"
+      },
+      {
+        "name": "Felix",
+        "slug": "felix"
+      },
+      {
+        "name": "Reiner",
+        "slug": "reiner"
+      },
+      {
+        "name": "Father Mikhail",
+        "slug": "father-mikhail"
+      }
     ],
     "characterAnchors": [
-      { "slug": "lynleit", "beat": "The Heir Apparent" },
-      { "slug": "kyrien", "beat": "Alliance under Pressure" },
-      { "slug": "felix", "beat": "The Secret Third Ally" },
-      { "slug": "reiner", "beat": "Trusting Lynleit" },
-      { "slug": "father-mikhail", "beat": "The Witness Breach" }
+      {
+        "slug": "lynleit",
+        "beat": "The Heir Apparent"
+      },
+      {
+        "slug": "kyrien",
+        "beat": "Alliance under Pressure"
+      },
+      {
+        "slug": "felix",
+        "beat": "The Secret Third Ally"
+      },
+      {
+        "slug": "reiner",
+        "beat": "Trusting Lynleit"
+      },
+      {
+        "slug": "father-mikhail",
+        "beat": "A Keeper of Restricted Truth"
+      }
     ],
     "known": [
       "Father Mikhail is the first authority to learn that Lynleit has disclosed forbidden knowledge of magic to outsiders.",
@@ -743,7 +987,7 @@
     "continuityBefore": "Lynleit has already allowed Kyrien, Felix, and Reiner to operate with knowledge that ordinary MSF officers and outsiders are forbidden to possess.",
     "continuityAfter": "Lynleit must create an institutional place for people she refuses to suppress or surrender. Kyrien's refusal to preserve her convenient half-truth creates personal friction, but he remains involved in solving the exposure. The eventual answer changes MSF's mandate and places part of the private company inside the Magiarchal and Church order.",
     "chapterSlug": null,
-    "updated": "2026-09-01"
+    "updated": "2026-09-05"
   },
   {
     "slug": "the-coat-fionn-left-behind",
@@ -758,7 +1002,7 @@
     "thread": "Fionn's concealed protection",
     "location": "Unspecified",
     "summary": "Midway through Arc 1, after losing a blue suede jacket in the river and after Fionn's death, Lynleit learns that he had discreetly replaced the blue coat she wears with a garment sewn from material called the hide of leviathan.",
-    "purpose": "Turns a familiar piece of clothing into evidence of Fionn's concealed care. Its protection is useful but conditional, and its autonomous changes of form keep the inheritance from behaving like a passive suit of armour.",
+    "purpose": "Lynleit discovers Fionn's concealed gift and learns that she cannot command its form.",
     "characters": [
       {
         "name": "Lynleit",
@@ -799,7 +1043,7 @@
     "continuityBefore": "Lynleit loses the blue suede jacket during the river operation. Fionn dies without explaining the protective garment he had placed in her wardrobe.",
     "continuityAfter": "The inherited coat becomes part of Lynleit's equipment. Its changing forms can preserve the silhouette of the lost jacket, but its protection remains deliberate rather than automatic.",
     "chapterSlug": null,
-    "updated": "2026-08-31"
+    "updated": "2026-09-05"
   },
   {
     "slug": "because-theres-a-battle-to-be-fought",
@@ -814,14 +1058,26 @@
     "thread": "Kyrien's reason for remaining",
     "location": "Unspecified",
     "summary": "Lynleit asks Kyrien why he continues to help her and risk his life when no reward awaits him. He answers immediately: \"Because there's a battle to be fought.\"",
-    "purpose": "Makes Kyrien's continued involvement legible without turning it into a declaration of love or loyalty. Lynleit wants to keep him out of needless danger, while Kyrien treats a difficult fight as its own reason to act.",
+    "purpose": "Lynleit wants to spare Kyrien needless danger. He considers the fight sufficient reason to go.",
     "characters": [
-      { "name": "Lynleit", "slug": "lynleit" },
-      { "name": "Kyrien", "slug": "kyrien" }
+      {
+        "name": "Lynleit",
+        "slug": "lynleit"
+      },
+      {
+        "name": "Kyrien",
+        "slug": "kyrien"
+      }
     ],
     "characterAnchors": [
-      { "slug": "lynleit", "beat": "The Battle as Reward" },
-      { "slug": "kyrien", "beat": "The Battle as Reward" }
+      {
+        "slug": "lynleit",
+        "beat": "The Battle as Reward"
+      },
+      {
+        "slug": "kyrien",
+        "beat": "The Battle as Reward"
+      }
     ],
     "known": [
       "Lynleit is bewildered by Kyrien's willingness to keep helping her and entering danger when no reward has been promised.",
@@ -846,7 +1102,7 @@
     "continuityBefore": "Kyrien has repeatedly accepted danger beside Lynleit, but rescue, coercion, and operational necessity do not fully explain why he keeps returning.",
     "continuityAfter": "Lynleit can rely on Kyrien without mistaking his involvement for obedience or romance. His later free choice to remain after her authority fails confirms that the answer was not an excuse.",
     "chapterSlug": null,
-    "updated": "2026-09-02"
+    "updated": "2026-09-05"
   },
   {
     "slug": "terrors-inside-the-academy",
@@ -861,18 +1117,42 @@
     "thread": "Myka's Academy ordeal",
     "location": "Magi Academy",
     "summary": "While Lynleit is dispatched to Cardiff, she answers Natalia's request by sending Kyrien into the Magi Academy as Myka's undercover helper. The danger exceeds Lynleit's estimate and forces Natalia to intervene personally.",
-    "purpose": "Places Myka's education under genuine supernatural pressure, gives Kyrien a mission inside an institution built around knowledge he does not possess, and makes their first contact the foundation of Myka's later decision to join MSF.",
+    "purpose": "Kyrien protects Myka until the escalating danger forces Natalia to intervene.",
     "characters": [
-      { "name": "Myka", "slug": "myka" },
-      { "name": "Natalia", "slug": "natalia" },
-      { "name": "Lynleit", "slug": "lynleit" },
-      { "name": "Kyrien", "slug": "kyrien" }
+      {
+        "name": "Myka",
+        "slug": "myka"
+      },
+      {
+        "name": "Natalia",
+        "slug": "natalia"
+      },
+      {
+        "name": "Lynleit",
+        "slug": "lynleit"
+      },
+      {
+        "name": "Kyrien",
+        "slug": "kyrien"
+      }
     ],
     "characterAnchors": [
-      { "slug": "myka", "beat": "Terrors inside the Academy" },
-      { "slug": "natalia", "beat": "Myka's Academy Crisis" },
-      { "slug": "lynleit", "beat": "Academy Intervention" },
-      { "slug": "kyrien", "beat": "Undercover at the Academy" }
+      {
+        "slug": "myka",
+        "beat": "Terrors inside the Academy"
+      },
+      {
+        "slug": "natalia",
+        "beat": "Myka's Academy Crisis"
+      },
+      {
+        "slug": "lynleit",
+        "beat": "Academy Intervention"
+      },
+      {
+        "slug": "kyrien",
+        "beat": "Undercover at the Academy"
+      }
     ],
     "known": [
       "Myka encounters terrors inside the Magi Academy.",
@@ -887,11 +1167,7 @@
       "Kyrien relies on conventional field skills and communications with Felix and Reiner to keep Myka safe.",
       "Natalia is forced to intervene personally.",
       "This is Myka's first exposure to Kyrien and MSF.",
-      "The experience contributes to Myka's later decision to join MSF after graduation.",
-      {
-        "text": "The danger persists inside an institution expected to understand magecraft, implying either concealed knowledge, a failure of classification, or a threat the Academy cannot acknowledge openly.",
-        "status": "inferred"
-      }
+      "The experience contributes to Myka's later decision to join MSF after graduation."
     ],
     "openQuestions": [
       "What terrors does Myka encounter, and why can the Academy not resolve them through its own hierarchy?",
@@ -904,7 +1180,7 @@
     "continuityAfter": "Surviving the Academy crisis contributes to the knowledge and strength with which Myka later graduates at the top of her class. Her first experience with Kyrien and MSF gives her a personal reason to join the agency later.",
     "chapterSlug": null,
     "parallelWith": "father-mikhails-foreign-venture",
-    "updated": "2026-09-03"
+    "updated": "2026-09-05"
   },
   {
     "slug": "father-mikhails-foreign-venture",
@@ -919,14 +1195,26 @@
     "thread": "Mikhail and Lynleit in Cardiff",
     "location": "Cardiff, United Kingdom",
     "summary": "Father Mikhail travels to Cardiff on special-envoy duty and is drawn into a life-and-death operation against several Magi threats. Lynleit is later sent abroad to assist him, without MSF or its conventional arsenal.",
-    "purpose": "Gives Mikhail a personal Arc 1 sequence that reveals his past, character, and ability as a Church warrior. His forced cooperation with Lynleit exposes a moral divide whose consequences return to the main story in Narvea.",
+    "purpose": "Mikhail and Lynleit complete their missions while disagreeing over their methods.",
     "characters": [
-      { "name": "Father Mikhail", "slug": "father-mikhail" },
-      { "name": "Lynleit", "slug": "lynleit" }
+      {
+        "name": "Father Mikhail",
+        "slug": "father-mikhail"
+      },
+      {
+        "name": "Lynleit",
+        "slug": "lynleit"
+      }
     ],
     "characterAnchors": [
-      { "slug": "father-mikhail", "beat": "The Cardiff Venture" },
-      { "slug": "lynleit", "beat": "Cardiff with Father Mikhail" }
+      {
+        "slug": "father-mikhail",
+        "beat": "The Cardiff Venture"
+      },
+      {
+        "slug": "lynleit",
+        "beat": "Cardiff with Father Mikhail"
+      }
     ],
     "known": [
       "Father Mikhail travels to Cardiff to perform special-envoy duties for the Church.",
@@ -939,10 +1227,7 @@
       "Lynleit and Mikhail continue to cooperate, fulfil their missions, and protect one another.",
       "Their methods of solving the crisis are morally incompatible, and the rift between them grows during the operation.",
       "Consequences from Cardiff later enter the main story in Narvea.",
-      {
-        "text": "The Academy crisis unfolds in Narvea during Lynleit's Cardiff dispatch, dividing her responsibilities between a mission she must perform herself and a danger she has delegated to Kyrien.",
-        "status": "inferred"
-      }
+      "The Academy crisis unfolds in Narvea during Lynleit's Cardiff dispatch, dividing her responsibilities between a mission she must perform herself and a danger she has delegated to Kyrien."
     ],
     "openQuestions": [
       "What special-envoy duty brings Mikhail to Cardiff, and which event turns it into a life-and-death operation?",
@@ -956,7 +1241,7 @@
     "continuityAfter": "Lynleit and Mikhail return from a successful but morally divisive cooperation. The Academy crisis has meanwhile forced Kyrien, Myka, Felix, Reiner, and Natalia into their first shared operation.",
     "chapterSlug": null,
     "parallelWith": "terrors-inside-the-academy",
-    "updated": "2026-09-03"
+    "updated": "2026-09-05"
   },
   {
     "slug": "myka-enters-msf",
@@ -971,23 +1256,31 @@
     "thread": "MSF after Lynleit's disappearance",
     "location": "Unspecified MSF office",
     "summary": "After surviving the Academy crisis and graduating at the top of her class, Myka is recruited by MSF as a strong Magus.",
-    "purpose": "Carries the Academy ordeal into Myka's professional life and gives the smaller MSF a highly trained Magus whose history already connects Natalia, Lynleit, and Kyrien.",
+    "purpose": "Myka joins the agency she first encountered during the Academy crisis.",
     "characters": [
-      { "name": "Myka", "slug": "myka" },
-      { "name": "Kyrien", "slug": "kyrien" }
+      {
+        "name": "Myka",
+        "slug": "myka"
+      },
+      {
+        "name": "Kyrien",
+        "slug": "kyrien"
+      }
     ],
     "characterAnchors": [
-      { "slug": "myka", "beat": "Recruited by MSF" },
-      { "slug": "kyrien", "beat": "The Director without Magecraft" }
+      {
+        "slug": "myka",
+        "beat": "Recruited by MSF"
+      },
+      {
+        "slug": "kyrien",
+        "beat": "The Director without Magecraft"
+      }
     ],
     "known": [
       "Myka survives the dangers she encounters inside the Magi Academy.",
       "She graduates at the top of her class.",
-      "MSF later recruits her as a strong Magus.",
-      {
-        "text": "The current chronology suggests that Myka joins after Lynleit disappears and Kyrien assumes control of MSF, but the exact timing remains unresolved.",
-        "status": "inferred"
-      }
+      "MSF later recruits her as a strong Magus."
     ],
     "openQuestions": [
       "Does Kyrien personally recruit Myka after becoming interim director?",
@@ -998,7 +1291,7 @@
     "continuityBefore": "Myka's Academy ordeal forces her to apply knowledge under danger and brings Kyrien into her life as an undercover helper.",
     "continuityAfter": "Myka enters the post-Spill agency as a trained Magus while Kyrien directs it without magecraft of his own.",
     "chapterSlug": null,
-    "updated": "2026-09-02"
+    "updated": "2026-09-05"
   },
   {
     "slug": "fionn-is-eliminated",
@@ -1015,12 +1308,24 @@
     "summary": "Fionn is found dead below the hill at the Vilen family house after several incompatible agendas converge without one actor controlling the whole outcome. Helena knowingly opens one part of the path, then uses his death and Lynleit's stunned response to seize MSF and frame her.",
     "purpose": "Fionn's death connects the hidden conflict to Helena's visible takeover. The unresolved conspiracy contains several motives, partial knowledge, and accidental cooperation, with no single clean chain of command.",
     "characters": [
-      { "name": "Fionn", "slug": "fionn" },
-      { "name": "Helena", "slug": "helena" }
+      {
+        "name": "Fionn",
+        "slug": "fionn"
+      },
+      {
+        "name": "Helena",
+        "slug": "helena"
+      }
     ],
     "characterAnchors": [
-      { "slug": "fionn", "beat": "The Inheritance after Death" },
-      { "slug": "helena", "beat": "The Opening" }
+      {
+        "slug": "fionn",
+        "beat": "The Inheritance after Death"
+      },
+      {
+        "slug": "helena",
+        "beat": "The Opening"
+      }
     ],
     "known": [
       "Fionn is successfully assassinated.",
@@ -1042,13 +1347,13 @@
       "Which actions accidentally cooperate even though their authors do not share one objective?",
       "Did one faction covertly or illegally infiltrate another and use its people or resources without authorization?",
       "Does any participant's apparent affiliation conceal who truly directed them?",
-      "Which door does Helena knowingly open, what does she expect to happen, and what follows beyond her knowledge?"
-      ,"Does the fall kill Fionn, conceal another cause of death, or stage the physical evidence used against Lynleit?"
+      "Which door does Helena knowingly open, what does she expect to happen, and what follows beyond her knowledge?",
+      "Does the fall kill Fionn, conceal another cause of death, or stage the physical evidence used against Lynleit?"
     ],
     "continuityBefore": "Manufactured political strife isolates Fionn and divides his attention while the Spill develops. Days earlier, the Nameless Street gives Lynleit an unexplained memory of a boy lying dead below a fall.",
     "continuityAfter": "Helena converts the vacancy into control of MSF, makes Lynleit the official suspect, and directs a hunt for her arrest while the true authorship remains hidden.",
     "chapterSlug": null,
-    "updated": "2026-08-24"
+    "updated": "2026-09-05"
   },
   {
     "slug": "doom-has-an-address",
@@ -1062,19 +1367,43 @@
     "sceneType": "Curse and identity crisis",
     "thread": "Lynleit and Kyrien",
     "location": "Several locations, ending in a private room",
-    "summary": "After Lynleit and Kyrien destroy a Holumn together, its death becomes one terminal curse written across both identities. Research leads Lynleit to a form of survival that requires reciprocal change rather than either person's death.",
-    "purpose": "Turns the pair's accumulated trust and involuntary attraction into the mechanism of a Holumn conflict without making romance the story's primary objective. Natalia's scholarship and Father Mikhail's Church records independently identify transformation as the only survivable answer.",
+    "summary": "Lynleit and Kyrien survive an identity-bound curse after an incomplete attempt at intimacy. Lynleit will not explain what she tried, and Kyrien does not know why they recovered.",
+    "purpose": "The curse ends before Lynleit can use its treatment to explain away her continued interest in Kyrien.",
     "characters": [
-      { "name": "Lynleit", "slug": "lynleit" },
-      { "name": "Kyrien", "slug": "kyrien" },
-      { "name": "Natalia", "slug": "natalia" },
-      { "name": "Father Mikhail", "slug": "father-mikhail" }
+      {
+        "name": "Lynleit",
+        "slug": "lynleit"
+      },
+      {
+        "name": "Kyrien",
+        "slug": "kyrien"
+      },
+      {
+        "name": "Natalia",
+        "slug": "natalia"
+      },
+      {
+        "name": "Father Mikhail",
+        "slug": "father-mikhail"
+      }
     ],
     "characterAnchors": [
-      { "slug": "lynleit", "beat": "Doom Has an Address" },
-      { "slug": "kyrien", "beat": "One Curse across Two Identities" },
-      { "slug": "natalia", "beat": "The Ego as Address" },
-      { "slug": "father-mikhail", "beat": "The Unrespectable Answer" }
+      {
+        "slug": "lynleit",
+        "beat": "Doom Has an Address"
+      },
+      {
+        "slug": "kyrien",
+        "beat": "One Curse across Two Identities"
+      },
+      {
+        "slug": "natalia",
+        "beat": "The Ego as Address"
+      },
+      {
+        "slug": "father-mikhail",
+        "beat": "The Unrespectable Answer"
+      }
     ],
     "known": [
       "Lynleit and Kyrien consciously destroy the same Holumn together.",
@@ -1087,14 +1416,18 @@
       "Natalia identifies the curse as an attachment to conscious identity and explains that profound transformation may make the original ego unrecognizable to it.",
       "Father Mikhail independently confirms that conversion, marriage, war, parenthood, confession, and other identity-changing experiences have disrupted related curses.",
       "Mikhail tells Lynleit that sex could produce the necessary discontinuity only if a sufficient reciprocal attachment already exists.",
-      "Although Lynleit normally treats openness as a leadership skill, she keeps this proposed solution from Kyrien because its sexual and personal implications embarrass her, and initially evaluates their relationship as a possible procedure.",
-      "When their prognosis contracts from weeks to days, Lynleit initiates a sudden, clumsy, and almost argumentative encounter.",
-      "Kyrien has enough time to understand what she is asking and responds deliberately.",
-      "Their simultaneous and reciprocal crossing changes the identities recognized by the curse and makes its sympathetic attachment unstable.",
-      "Sex is not itself the cure. The curse fractures because the encounter embodies a relationship change neither identity can dismiss as hypothetical.",
-      "Both survive, but neither remains psychologically identical to the person who entered the battle.",
+      "Lynleit does not tell Kyrien about the proposed method and gradually begins treating their relationship as a possible procedure.",
+      "With the prognosis reduced to days, Lynleit attempts to initiate an encounter while behaving with unusual hostility and embarrassment.",
+      "The attempt does not fully cross the boundary between them, but the curse begins weakening the following morning and is later gone.",
       {
-        "text": "The final change leaves the reader to infer which former boundaries have ended and what ordinary shared life might become possible before Lynleit's disappearance.",
+        "text": "Lynleit's unread pages and repeated denials suggest that she remains interested in Kyrien after the curse is gone.",
+        "status": "inferred"
+      },
+      "Kyrien knows Lynleit tried to sleep with him, refused to explain why, and became hostile whenever he mentioned the evening.",
+      "Kyrien suspects the attempt and their recovery are connected, but Lynleit withholds the proposed treatment.",
+      "The incomplete attempt and its aftermath change both identities enough to break the curse's recognition.",
+      {
+        "text": "Lynleit's prepared answer suggests that she has been expecting Kyrien to bring the subject up again.",
         "status": "inferred"
       }
     ],
@@ -1102,27 +1435,60 @@
       "What identity, appearance, and prior incident history belong to the Holumn before Lynleit and Kyrien destroy it?",
       "What operation places them in position to destroy it together?",
       "Which Magi first identify the traditional one-death solution, and how much of the prognosis becomes known outside the four people in this scene?",
-      "Where does the final private encounter occur within late Arc 1?"
+      "What happens during the incomplete attempt?",
+      "What lasting effects, if any, remain after the curse collapses?",
+      "Which later encounter becomes Lynleit and Kyrien's first completed sexual threshold?"
     ],
     "continuityBefore": "Lynleit and Kyrien have accumulated a private rhythm through work, cards, protected secrets, voluntary loyalty, and repeated physical awareness. Her original authority over him has already lost practical force, and he has chosen to remain.",
-    "continuityAfter": "The curse fractures and both survive. Their short sexual relationship becomes part of an emerging shared life before Lynleit disappears near the Arc 2 threshold and her pregnancy becomes legible only at the opening of the next arc.",
+    "continuityAfter": "Both survive without completing the sexual encounter. Their first completed encounter occurs later in Arc 1, before their established sexual relationship and the pregnancy near the Arc 2 threshold. Its exact placement remains unresolved.",
     "chapterSlug": "doom-has-an-address",
-    "updated": "2026-09-04",
-    "defaultVersion": "v1",
+    "updated": "2026-09-05",
+    "defaultVersion": "v2",
     "versions": [
       {
         "id": "v1",
-        "label": "Version 1",
+        "label": "Version 1 · Alternate",
         "chapterVersion": "v1",
-        "updated": "2026-09-04"
+        "updated": "2026-09-05",
+        "summary": "After Lynleit and Kyrien destroy a Holumn together, its death becomes one terminal curse written across both identities. Research leads Lynleit to a form of survival that requires reciprocal change rather than either person's death.",
+        "purpose": "Turns the pair's accumulated trust and involuntary attraction into the mechanism of a Holumn conflict without making romance the story's primary objective. Natalia's scholarship and Father Mikhail's Church records independently identify transformation as the only survivable answer.",
+        "known": [
+          "Lynleit and Kyrien consciously destroy the same Holumn together.",
+          "Destroying the Holumn completes its mechanism and transfers its terminal condition to the ego responsible for its death.",
+          "Their joint action leaves one curse distributed across two identities rather than creating two separate curses.",
+          "Their bodies weaken, sleep stops restoring them, minor injuries heal slowly, magical tolerance declines, and ordinary exertion becomes increasingly difficult.",
+          "Suppressing the condition in either person fails because the remaining attachment reconstructs it in the other.",
+          "The traditional solution requires one of them to die first, collapsing the relation and releasing the survivor.",
+          "Lynleit refuses to choose which of them should live and searches Magiarchal records, medicine, prohibited theurgy, Natalia's research, and Church records for another answer.",
+          "Natalia identifies the curse as an attachment to conscious identity and explains that profound transformation may make the original ego unrecognizable to it.",
+          "Father Mikhail independently confirms that conversion, marriage, war, parenthood, confession, and other identity-changing experiences have disrupted related curses.",
+          "Mikhail tells Lynleit that sex could produce the necessary discontinuity only if a sufficient reciprocal attachment already exists.",
+          "Although Lynleit normally treats openness as a leadership skill, she keeps this proposed solution from Kyrien because its sexual and personal implications embarrass her, and initially evaluates their relationship as a possible procedure.",
+          "When their prognosis contracts from weeks to days, Lynleit initiates a sudden, clumsy, and almost argumentative encounter.",
+          "Kyrien has enough time to understand what she is asking and responds deliberately.",
+          "Their simultaneous and reciprocal crossing changes the identities recognized by the curse and makes its sympathetic attachment unstable.",
+          "Sex is not itself the cure. The curse fractures because the encounter embodies a relationship change neither identity can dismiss as hypothetical.",
+          "Both survive, but neither remains psychologically identical to the person who entered the battle.",
+          {
+            "text": "The final change leaves the reader to infer which former boundaries have ended and what ordinary shared life might become possible before Lynleit's disappearance.",
+            "status": "inferred"
+          }
+        ],
+        "openQuestions": [
+          "What identity, appearance, and prior incident history belong to the Holumn before Lynleit and Kyrien destroy it?",
+          "What operation places them in position to destroy it together?",
+          "Which Magi first identify the traditional one-death solution, and how much of the prognosis becomes known outside the four people in this scene?",
+          "Where does the final private encounter occur within late Arc 1?"
+        ],
+        "continuityAfter": "The curse fractures and both survive. Their short sexual relationship becomes part of an emerging shared life before Lynleit disappears near the Arc 2 threshold and her pregnancy becomes legible only at the opening of the next arc."
       },
       {
         "id": "v2",
-        "label": "Version 2",
+        "label": "Version 2 · Canon",
         "chapterVersion": "v2",
-        "updated": "2026-09-04",
-        "summary": "After Lynleit and Kyrien inherit one terminal curse across both identities, Lynleit pursues identity transformation as an alternative to death. An incomplete attempt at intimacy is followed by the curse's collapse, while neither person fully understands what changed between them.",
-        "purpose": "Retains the identity-bound Holumn mechanism while postponing the pair's completed sexual threshold. Survival follows a failed or incomplete encounter, leaving Lynleit's newly unprotected desire and Kyrien's incomplete understanding active after the immediate threat ends.",
+        "updated": "2026-09-05",
+        "summary": "Lynleit and Kyrien survive an identity-bound curse after an incomplete attempt at intimacy. Lynleit will not explain what she tried, and Kyrien does not know why they recovered.",
+        "purpose": "The curse ends before Lynleit can use its treatment to explain away her continued interest in Kyrien.",
         "known": [
           "Lynleit and Kyrien consciously destroy the same Holumn together.",
           "Destroying the Holumn completes its mechanism and transfers its terminal condition to the ego responsible for its death.",
@@ -1137,12 +1503,15 @@
           "Lynleit does not tell Kyrien about the proposed method and gradually begins treating their relationship as a possible procedure.",
           "With the prognosis reduced to days, Lynleit attempts to initiate an encounter while behaving with unusual hostility and embarrassment.",
           "The attempt does not fully cross the boundary between them, but the curse begins weakening the following morning and is later gone.",
-          "Natalia's later questions expose Lynleit's disappointment that the disappearance of the medical reason has not removed her interest in Kyrien.",
-          "Kyrien knows Lynleit tried to sleep with him, refused to explain why, and became hostile whenever he mentioned the evening.",
-          "Kyrien recognizes a connection between that attempt and the weakening curse but lacks enough information to model it.",
-          "The account identifies changes in Kyrien's understanding of private vulnerability and Lynleit's understanding of another person entering her solutions as the discontinuities that release them.",
           {
-            "text": "The closing word 'mostly' leaves the exact physical boundary crossed that evening and the later timing of their first completed encounter for the reader to infer.",
+            "text": "Lynleit's unread pages and repeated denials suggest that she remains interested in Kyrien after the curse is gone.",
+            "status": "inferred"
+          },
+          "Kyrien knows Lynleit tried to sleep with him, refused to explain why, and became hostile whenever he mentioned the evening.",
+          "Kyrien suspects the attempt and their recovery are connected, but Lynleit withholds the proposed treatment.",
+          "The incomplete attempt and its aftermath change both identities enough to break the curse's recognition.",
+          {
+            "text": "Lynleit's prepared answer suggests that she has been expecting Kyrien to bring the subject up again.",
             "status": "inferred"
           }
         ],
@@ -1150,11 +1519,11 @@
           "What identity, appearance, and prior incident history belong to the Holumn before Lynleit and Kyrien destroy it?",
           "What operation places them in position to destroy it together?",
           "Which Magi first identify the traditional one-death solution, and how much of the prognosis becomes known outside the four people in this scene?",
-          "What exactly occurs during Lynleit's incomplete attempt, and what does the final qualification 'mostly' exclude?",
-          "Why does an incomplete crossing alter both identities enough to release the curse?",
+          "What happens during the incomplete attempt?",
+          "What lasting effects, if any, remain after the curse collapses?",
           "Which later encounter becomes Lynleit and Kyrien's first completed sexual threshold?"
         ],
-        "continuityAfter": "The curse disappears and both survive, but the sexual boundary remains mostly uncrossed. Lynleit is left without a medical justification for her continued interest, while Kyrien has only disconnected facts. Their first completed encounter must occur later in Arc 1 before the relationship and pregnancy chronology already associated with the Arc 2 threshold."
+        "continuityAfter": "Both survive without completing the sexual encounter. Their first completed encounter occurs later in Arc 1, before their established sexual relationship and the pregnancy near the Arc 2 threshold. Its exact placement remains unresolved."
       }
     ]
   }

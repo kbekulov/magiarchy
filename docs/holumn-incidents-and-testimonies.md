@@ -2,7 +2,7 @@
 
 This archive preserves accounts of Holumn contact as they are known across several institutions. Police and government records usually begin with material explanations. Magi and Church special envoys examine the same evidence for a governing supernatural rule.
 
-The records remain connected to the [Holumns](../holumns.html) taxonomy. New incidents refine recognized forms, effects, and boundaries. A Holumn does not require a physical body.
+Forms and countermeasures are collected in [Holumns](../holumns.html). Accounts quoted below are testimony; the surrounding text records events and institutional interpretations.
 
 ## The Voice on the Line
 
@@ -80,7 +80,7 @@ The available evidence does not yet establish whether a creature occupies the ri
 Hidden debris, dangerous currents, criminal interference, and postmortem animal damage remain the available categories.
 
 **Magi and special envoys**
-The place exceeds its physical dimensions. Its impossible depth, force, and predation may belong to one governing rule.
+The damage may come from a Holumn whose movement does not fit the river's measured depth. Whether this is a creature, a change in the river, or both remains disputed.
 
 ## The Nameless Street
 
@@ -122,7 +122,7 @@ The established answer requires one subject to die first. Permanent loss of eith
 
 Natalia identifies the mechanism as sympathetic recognition of the ego. Father Mikhail finds related Church records in which conversion, marriage, war, parenthood, or confession changed a subject deeply enough to disrupt a psychic attachment. Both conclude that biological death is the most reliable identity discontinuity, but not the only one.
 
-Lynleit and Kyrien survive when an existing reciprocal attachment changes both identities at the same time. Their sexual encounter is the embodied event through which that change becomes simultaneous and undeniable. Sex has no independent curative property. A meaningless encounter, a stranger, or a change affecting only one subject would leave the governing relation intact.
+Lynleit attempts intimacy with Kyrien without telling him about the proposed treatment. The encounter is not completed. The curse begins weakening the following morning and later disappears. The attempt and its aftermath change both identities enough to defeat its recognition; a completed sexual act is not required. Kyrien remains unaware of the proposed method.
 
 ### Institutional readings
 
