@@ -69,10 +69,16 @@ for (const note of notes) {
 
 const doom = chapters.find((entry) => entry.slug === 'doom-has-an-address');
 const doomMoment = moments.find((entry) => entry.slug === doom.slug);
-assert.equal(doom.defaultVersion, 'v4');
-assert.equal(doomMoment.defaultVersion, 'v4');
-assert.equal(doom.file, 'doom-has-an-address-v4.md');
+assert.equal(doom.defaultVersion, 'v5');
+assert.equal(doomMoment.defaultVersion, 'v5');
+assert.equal(doom.file, 'doom-has-an-address-v5.md');
 const doomText = read(`story/${doom.file}`);
+assert.ok(doomText.indexOf('O great warrior of the divine whore') < doomText.indexOf('Just have sex, loser.'), 'Mock blessing must precede the plain answer');
+assert.ok(doomText.includes("Remembering your father's household."), 'Family allusion missing');
+assert.ok(!/Inanna|Kotomine|Kirei/.test(doomText), 'The implied family connection or external inspiration became explicit in the Chapter');
+const v4Text = plain(read('story/doom-has-an-address-v4.md'));
+assert.equal(plain(doomText).split('### The unrespectable answer')[0], v4Text.split('### The unrespectable answer')[0], 'Natalia teaching changed during the v5 allusion edit');
+assert.equal(plain(doomText).split('"Just have sex, loser."')[1], v4Text.split('"Just have sex, loser."')[1], 'Protected banter and outcome changed during the v5 edit');
 assert.ok(!/physician/i.test(doomText), 'Magic-aware physician returned to Doom');
 const nataliaHypothesis = doomText.indexOf('"The ego," Natalia said.');
 assert.ok(nataliaHypothesis >= 0 && !/\bego\b/i.test(doomText.slice(0, nataliaHypothesis)), 'Ego hypothesis appears before Natalia introduces it');
@@ -108,7 +114,8 @@ assert.ok(!json('docs/character-behavior-notes-v1.json').notes.some(n => n.versi
 for (const name of ['holumns/index.json', 'items/index.json', 'weapons/index.json', 'docs/sexual-tension-notes.json']) json(name);
 const search = json('search-index.json');
 const entries = Array.isArray(search) ? search : search.entries;
-assert.ok(entries.some((entry) => entry.url.includes('chapter=doom-has-an-address&version=v4')), 'Canonical chapter missing from search');
+assert.ok(entries.some((entry) => entry.url.includes('chapter=doom-has-an-address&version=v5')), 'Canonical chapter missing from search');
+assert.ok(entries.some((entry) => entry.url.includes('chapter=doom-has-an-address&version=v4')), 'Archived v4 chapter missing from search');
 assert.ok(entries.some((entry) => entry.url.includes('chapter=doom-has-an-address&version=v3')), 'Archived v3 chapter missing from search');
 assert.ok(entries.some((entry) => entry.url.includes('chapter=doom-has-an-address&version=v2')), 'Superseded chapter missing from search');
 assert.ok(entries.some((entry) => entry.url.includes('chapter=doom-has-an-address&version=v1')), 'Alternate chapter missing from search');

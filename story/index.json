@@ -172,9 +172,9 @@
     "number": "Chapter 07",
     "title": "Doom Has an Address",
     "status": "Canon draft",
-    "file": "doom-has-an-address-v4.md",
-    "updated": "2026-09-05",
-    "description": "Natalia works through a shared curse with a pen-and-paper example, failed self-observation, and stories from her own life. Lynleit follows the lesson, disputes its conclusion, and seeks Father Mikhail's second opinion.",
+    "file": "doom-has-an-address-v5.md",
+    "updated": "2026-09-06",
+    "description": "Natalia's practical lesson leads Lynleit to Mikhail, whose mock blessing gives his blunt advice an unwelcome family resonance.",
     "characters": [
       "Lynleit",
       "Kyrien",
@@ -192,6 +192,10 @@
       "Natalia uses a two-name diagram, her failed decision diary, and her experience after leaving the Academy to explain why a change of identity must go deeper than its description. She introduces the ego hypothesis and quotes Jung.",
       "Lynleit jokes with Natalia, works through the examples, and keeps the diagram; Natalia proposes reciprocal attachment as a possible change, not a guaranteed cure.",
       "Father Mikhail reaches the same conclusion through Church records and tells Lynleit that physical intimacy could work only if an existing attachment changes both identities.",
+      {
+        "text": "Mikhail's mock blessing and reference to her father's household suggest that his advice also carries a private family allusion.",
+        "status": "inferred"
+      },
       "Lynleit withholds the proposed method from Kyrien and investigates their relationship as a possible procedure.",
       "Lynleit attempts to initiate an encounter but does not fully cross the boundary between them.",
       "The curse begins weakening the following morning and is later gone.",
@@ -202,7 +206,7 @@
       "Kyrien knows about Lynleit's attempt, her refusal to explain it, and the curse's decline, but lacks enough information to connect them.",
       "The incomplete attempt and its aftermath change both identities enough for the curse to lose its hold."
     ],
-    "defaultVersion": "v4",
+    "defaultVersion": "v5",
     "versions": [
       {
         "id": "v1",
@@ -286,8 +290,8 @@
       },
       {
         "id": "v4",
-        "label": "Version 4 · Canon",
-        "status": "Canon draft",
+        "label": "v4 · Superseded",
+        "status": "Superseded draft",
         "file": "doom-has-an-address-v4.md",
         "updated": "2026-09-05",
         "description": "Natalia works through a shared curse with a pen-and-paper example, failed self-observation, and stories from her own life. Lynleit follows the lesson, disputes its conclusion, and seeks Father Mikhail's second opinion.",
@@ -300,6 +304,37 @@
           "Natalia uses a two-name diagram, her failed decision diary, and her experience after leaving the Academy to explain why a change of identity must go deeper than its description. She introduces the ego hypothesis and quotes Jung.",
           "Lynleit jokes with Natalia, works through the examples, and keeps the diagram; Natalia proposes reciprocal attachment as a possible change, not a guaranteed cure.",
           "Father Mikhail reaches the same conclusion through Church records and tells Lynleit that physical intimacy could work only if an existing attachment changes both identities.",
+          "Lynleit withholds the proposed method from Kyrien and investigates their relationship as a possible procedure.",
+          "Lynleit attempts to initiate an encounter but does not fully cross the boundary between them.",
+          "The curse begins weakening the following morning and is later gone.",
+          {
+            "text": "Lynleit's unread pages and repeated denials suggest that she still wants Kyrien now that the curse is gone.",
+            "status": "inferred"
+          },
+          "Kyrien knows about Lynleit's attempt, her refusal to explain it, and the curse's decline, but lacks enough information to connect them.",
+          "The incomplete attempt and its aftermath change both identities enough for the curse to lose its hold."
+        ]
+      },
+      {
+        "id": "v5",
+        "label": "v5 · Canon",
+        "status": "Canon draft",
+        "file": "doom-has-an-address-v5.md",
+        "updated": "2026-09-06",
+        "description": "Natalia's practical lesson leads Lynleit to Mikhail, whose mock blessing gives his blunt advice an unwelcome family resonance.",
+        "events": [
+          "Lynleit and Kyrien destroy a Holumn together and complete the final condition of its mechanism.",
+          "The Holumn transfers one terminal curse across both identities, causing progressive physical decline and a prognosis measured first in weeks and then in days.",
+          "Suppressing the curse in either person fails because the remaining attachment reconstructs it in the other.",
+          "The traditional solution requires one of them to die first so the surviving identity is released.",
+          "Lynleit rejects the fatal solution, consults other Magi, and searches Magiarchal records and prohibited theurgical procedures for an alternative.",
+          "Natalia uses a two-name diagram, her failed decision diary, and her experience after leaving the Academy to explain why a change of identity must go deeper than its description. She introduces the ego hypothesis and quotes Jung.",
+          "Lynleit jokes with Natalia, works through the examples, and keeps the diagram; Natalia proposes reciprocal attachment as a possible change, not a guaranteed cure.",
+          "Father Mikhail reaches the same conclusion through Church records and tells Lynleit that physical intimacy could work only if an existing attachment changes both identities.",
+          {
+            "text": "Mikhail's mock blessing and reference to her father's household suggest that his advice also carries a private family allusion.",
+            "status": "inferred"
+          },
           "Lynleit withholds the proposed method from Kyrien and investigates their relationship as a possible procedure.",
           "Lynleit attempts to initiate an encounter but does not fully cross the boundary between them.",
           "The curse begins weakening the following morning and is later gone.",

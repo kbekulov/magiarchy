@@ -171,14 +171,4 @@ Natalia teaches complex topics through practical examples and personal attempts,
 
 **Limit:** an anecdote must earn its place by changing the listener's understanding. Do not manufacture a major invention, past relationship, or magical success merely to supply an example.
 
-Version 3 derives from the earlier Version 2 text in commit `868fc31`, before the rewrite in `b06c821`. Version 4 builds on v3 and revises Natalia's teaching and the teacher-student dialogue. Version 5 retains that text and adds Mikhail's mock blessing; v5 now supplies shared canon. Versions 1 through 4 remain accessible alternates.
-
-### Author direction and working implementation: Doom Has an Address, v5
-
-**Mock encomium and bathos:** Mikhail gives each phrase of an exaggerated honorific the cadence of a blessing. Lynleit's stopped pen interrupts the register. She asks him to speak normally; the unchanged mundane insult answers that request. Keep the declaration short enough that the listener's confusion remains the turning point. His seated patience, her successive attempts to leave, and the later notebook joke retain their original timing.
-
-**Delayed recognition:** the address to her father's household lets a first-time reader detect private knowledge without yet identifying its source. The author has confirmed Fionn's Magi-lineage association with the Cult of Inanna and Lynleit's indirect association without direct participation. Keep that exact connection in writer records until the intended reveal, not in Chapter narration or explanatory profile paragraphs.
-
-**Jungian editorial lens:** inherited identity, conscious self-description, desire, and embarrassment can pull in different directions. Here the imposed honorific makes an expectation personal before Lynleit can dismiss it as theory. This is a craft reading of the scene, not a diagnosis, a new Jung quotation, or a rule that shame causes transformation. Natalia's existing attributed definition remains the Chapter's psychological reference; see the [Jung Society source](https://www.junginsydney.org.au/events/2023/egoshame) above.
-
-**Limit:** Mikhail's phrase "divine whore" is his mocking allusion. It establishes neither an authentic liturgical quotation nor compulsory cult practice. His insult is not the narrator's judgment about sexual inexperience. No borrowed character name, catchphrase, or imported fictional theology belongs in the scene.
+Version 3 derives from the earlier Version 2 text in commit `868fc31`, before the rewrite in `b06c821`. Version 4 builds on v3, revises Natalia's teaching and the teacher-student dialogue, and is now canonical. Versions 1 through 3 remain accessible alternates.

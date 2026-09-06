@@ -9,7 +9,3 @@ This writer-facing record tests whether a reaction feels specific to the charact
 - Use MBTI functions to shape attention and decision-making. They do not excuse an action or predetermine it.
 - A useful note creates a more precise choice. A broad claim that any man or woman would behave the same way should be discarded.
 - Story-pressure notes identify a possible payoff or image. They remain separate from confirmed scene facts.
-
-## Doom v5: scope of the new notes
-
-The current notes cover Mikhail's mock-liturgical delivery and Lynleit's interrupted composure. They guide performance and reader inference, not a new romantic pairing or a general claim about women. The family connection is author-confirmed background; suggested gestures remain advisory except where the selected Chapter enacts them. Earlier versions retain their own paragraph anchors and notes.

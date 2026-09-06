@@ -10,7 +10,7 @@ A writer's reference to affection, attraction, initiative, and particular partne
 
 **Unresolved** means there is not enough information to describe it.
 
-Doom Has an Address follows v5. Lynleit and Kyrien survive after an incomplete attempt at intimacy. Their first completed sexual encounter occurs later in Arc 1; its exact placement is unresolved.
+Doom Has an Address follows v4. Lynleit and Kyrien survive after an incomplete attempt at intimacy. Their first completed sexual encounter occurs later in Arc 1; its exact placement is unresolved.
 
 ## Lynleit
 
@@ -23,8 +23,6 @@ Lynleit notices other people's needs and often makes herself responsible for the
 ### Sexual expression
 
 Her attempt with Kyrien in Doom Has an Address is irritable, awkward, and incomplete. After they recover, she repeatedly insists there is no reason to try again. The unread pages and her response to Natalia suggest otherwise. Natalia's practical examples and familiar teasing keep the conversation between friends, even when Lynleit objects to the lesson. The deliberate silences in their later call let Lynleit's increasingly emphatic denials prolong the subject she wants to close.
-
-In v5, Mikhail's exaggerated religious address adds a private family allusion to the embarrassment. Fionn's Magi lineage is associated with the Cult of Inanna; Lynleit is an associate through her family, not a direct participant. His mock praise makes her feel measured against an inherited expectation. This is confirmed background for the writer; the Chapter leaves the connection and its double sting implied. It does not establish a religious obligation or explain her attraction to Kyrien.
 
 Their later pattern makes Lynleit the more frequent initiator. She is more vocal than Kyrien and likes teasing his reserve. The precise staging of those later encounters remains subject to the author's review.
 
@@ -354,7 +352,7 @@ His history, personal attachments, and vows are not yet defined.
 
 ### Sexual expression
 
-No specific behavior is recorded. His mock blessing and blunt advice to Lynleit establish how he teases her using knowledge of her family, not how he behaves with a partner.
+No specific behavior is recorded. His blunt advice to Lynleit establishes how he speaks to her, not how he behaves with a partner.
 
 ### With a specific partner
 

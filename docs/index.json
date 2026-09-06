@@ -4,12 +4,12 @@
     "title": "MAGIARCHY Prose Style",
     "topic": "Writer's Style Reference",
     "file": "prose-style.md",
-    "updated": "2026-09-05",
-    "description": "House style for narrative voice, dialogue, comic timing, and practical exposition, including Natalia's worked examples and her friendship with Lynleit.",
+    "updated": "2026-09-06",
+    "description": "House style for narrative voice, practical exposition, comic bathos, and delayed recognition, developed through the current Chapters.",
     "speakers": [
       "Author's Desk"
     ],
-    "defaultVersion": "v2",
+    "defaultVersion": "v3",
     "versions": [
       {
         "id": "v1",
@@ -20,10 +20,17 @@
       },
       {
         "id": "v2",
-        "label": "v2 · Current",
-        "file": "prose-style.md",
+        "label": "v2 · Archived",
+        "file": "prose-style-v2.md",
         "updated": "2026-09-05",
         "description": "House style for narrative voice, dialogue, comic timing, and practical exposition, including Natalia's worked examples and her friendship with Lynleit."
+      },
+      {
+        "id": "v3",
+        "label": "v3 · Current",
+        "file": "prose-style.md",
+        "updated": "2026-09-06",
+        "description": "House style for narrative voice, practical exposition, comic bathos, and delayed recognition, developed through the current Chapters."
       }
     ]
   },
@@ -32,12 +39,12 @@
     "title": "Prose and Scene Guidance",
     "topic": "Editorial Reference",
     "file": "prose-and-scene-guidance.md",
-    "updated": "2026-09-05",
-    "description": "Revision principles, content boundaries, and author-favored development approaches kept separate from established canon.",
+    "updated": "2026-09-06",
+    "description": "Revision boundaries and author-confirmed development directions, including the implied family allusion in Doom v5.",
     "speakers": [
       "Author's Desk"
     ],
-    "defaultVersion": "v2",
+    "defaultVersion": "v3",
     "versions": [
       {
         "id": "v1",
@@ -48,10 +55,17 @@
       },
       {
         "id": "v2",
-        "label": "v2 · Current",
-        "file": "prose-and-scene-guidance.md",
+        "label": "v2 · Archived",
+        "file": "prose-and-scene-guidance-v2.md",
         "updated": "2026-09-05",
         "description": "Revision principles, content boundaries, and author-favored development approaches kept separate from established canon."
+      },
+      {
+        "id": "v3",
+        "label": "v3 · Current",
+        "file": "prose-and-scene-guidance.md",
+        "updated": "2026-09-06",
+        "description": "Revision boundaries and author-confirmed development directions, including the implied family allusion in Doom v5."
       }
     ]
   },
@@ -60,12 +74,12 @@
     "title": "Character Behaviour Audit",
     "topic": "Writer's Character Reference",
     "file": "character-behavior-audit.md",
-    "updated": "2026-09-05",
-    "description": "Advisory scene notes combining established characterization, physical circumstance, sex, social experience, and MBTI function emphasis without turning broad gender patterns into canon.",
+    "updated": "2026-09-06",
+    "description": "Version-scoped F, M, and S advisory notes, including Mikhail's mock blessing and Lynleit's response in Doom v5.",
     "speakers": [
       "Character Archive"
     ],
-    "defaultVersion": "v2",
+    "defaultVersion": "v3",
     "versions": [
       {
         "id": "v1",
@@ -77,10 +91,18 @@
       },
       {
         "id": "v2",
-        "label": "v2 · Current",
-        "file": "character-behavior-audit.md",
+        "label": "v2 · Archived",
+        "file": "character-behavior-audit-v2.md",
         "updated": "2026-09-05",
         "description": "Advisory scene notes combining established characterization, physical circumstance, sex, social experience, and MBTI function emphasis without turning broad gender patterns into canon.",
+        "behaviorFile": "character-behavior-notes-v2.json"
+      },
+      {
+        "id": "v3",
+        "label": "v3 · Current",
+        "file": "character-behavior-audit.md",
+        "updated": "2026-09-06",
+        "description": "Version-scoped F, M, and S advisory notes, including Mikhail's mock blessing and Lynleit's response in Doom v5.",
         "behaviorFile": "character-behavior-notes.json"
       }
     ]
@@ -90,12 +112,12 @@
     "title": "Character Intimacy and Sexuality Reference",
     "topic": "Writer's Character Reference",
     "file": "character-intimacy-and-sexuality.md",
-    "updated": "2026-09-05",
-    "description": "A writer-facing reference for each character's approach to closeness, desire, sexual initiative, and established, asymmetric, or potential sexual tension.",
+    "updated": "2026-09-06",
+    "description": "Character-specific intimacy and attraction, distinguishing confirmed background from working interpretations and preserving Doom v5's incomplete encounter.",
     "speakers": [
       "Character Archive"
     ],
-    "defaultVersion": "v2",
+    "defaultVersion": "v3",
     "versions": [
       {
         "id": "v1",
@@ -107,10 +129,18 @@
       },
       {
         "id": "v2",
-        "label": "v2 · Current",
-        "file": "character-intimacy-and-sexuality.md",
+        "label": "v2 · Archived",
+        "file": "character-intimacy-and-sexuality-v2.md",
         "updated": "2026-09-05",
         "description": "A writer-facing reference for each character's approach to closeness, desire, sexual initiative, and established, asymmetric, or potential sexual tension.",
+        "tensionFile": "sexual-tension-notes-v2.json"
+      },
+      {
+        "id": "v3",
+        "label": "v3 · Current",
+        "file": "character-intimacy-and-sexuality.md",
+        "updated": "2026-09-06",
+        "description": "Character-specific intimacy and attraction, distinguishing confirmed background from working interpretations and preserving Doom v5's incomplete encounter.",
         "tensionFile": "sexual-tension-notes.json"
       }
     ]
@@ -133,11 +163,11 @@
     "topic": "Editorial Ledger",
     "file": "questions-to-be-answered.md",
     "updated": "2026-09-06",
-    "description": "Confidence-tracked canon and chronology questions, including the Cult of Inanna and pagan traditions among the Magi.",
+    "description": "Confidence-tracked canon and chronology questions, including the unrevealed form of Fionn's lineage association with the Cult of Inanna.",
     "speakers": [
       "Author's Desk"
     ],
-    "defaultVersion": "v2",
+    "defaultVersion": "v3",
     "versions": [
       {
         "id": "v1",
@@ -148,10 +178,17 @@
       },
       {
         "id": "v2",
-        "label": "v2 · Current",
-        "file": "questions-to-be-answered.md",
+        "label": "v2 · Archived",
+        "file": "questions-to-be-answered-v2.md",
         "updated": "2026-09-06",
         "description": "Confidence-tracked canon and chronology questions, including the Cult of Inanna and pagan traditions among the Magi."
+      },
+      {
+        "id": "v3",
+        "label": "v3 · Current",
+        "file": "questions-to-be-answered.md",
+        "updated": "2026-09-06",
+        "description": "Confidence-tracked canon and chronology questions, including the unrevealed form of Fionn's lineage association with the Cult of Inanna."
       }
     ]
   },
@@ -160,12 +197,12 @@
     "title": "Contradictions to Resolve",
     "topic": "Editorial Ledger",
     "file": "contradictions-to-resolve.md",
-    "updated": "2026-09-05",
-    "description": "A resolution-tracked list of places where current story, character, world, timeline, or alternate-version records cannot all be read literally at the same time.",
+    "updated": "2026-09-06",
+    "description": "Cross-record conflicts and version decisions; shared Doom continuity follows v5.",
     "speakers": [
       "Author's Desk"
     ],
-    "defaultVersion": "v2",
+    "defaultVersion": "v3",
     "versions": [
       {
         "id": "v1",
@@ -176,10 +213,17 @@
       },
       {
         "id": "v2",
-        "label": "v2 · Current",
-        "file": "contradictions-to-resolve.md",
+        "label": "v2 · Archived",
+        "file": "contradictions-to-resolve-v2.md",
         "updated": "2026-09-05",
         "description": "A resolution-tracked list of places where current story, character, world, timeline, or alternate-version records cannot all be read literally at the same time."
+      },
+      {
+        "id": "v3",
+        "label": "v3 · Current",
+        "file": "contradictions-to-resolve.md",
+        "updated": "2026-09-06",
+        "description": "Cross-record conflicts and version decisions; shared Doom continuity follows v5."
       }
     ]
   },

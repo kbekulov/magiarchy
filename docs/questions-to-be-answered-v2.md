@@ -9,6 +9,7 @@ Story, character, world, relationship, institution, location, and event question
 | Area | Question | Confidence |
 | --- | --- | --- |
 | Family | Which relative receives Lynleit and Kyrien's son, and what does that person know about his parents? | 0% |
+| Cult of Inanna | Which encounter first makes the Cult of Inanna consequential to a character's choices? | 0% |
 | Pagan traditions | How does a pagan cult's magecraft differ from Church doctrine, and when does that difference affect a Magus's standing within the sanctioned order? | 0% |
 | Relationships | Which adult characters beyond Lynleit and Kyrien, Fionn and Helena, and the emerging Yulia and Hiyu bond have romantic or sexual histories that materially shape their present behavior? | 0% |
 | Kyrien and Sherie | Does their current potential for confrontational sexual tension ever enter the story, and which negotiation would let her calibrated charm collide repeatedly with his refusal to be steered? | 0% |
@@ -41,7 +42,6 @@ Story, character, world, relationship, institution, location, and event question
 | Natalia and Lester | Which ordinary case interaction first makes Natalia respond to Lester as a man rather than an anomalous condition, and how does he recognize the change without forcing either of them to name it? | 5% |
 | River Holumns | Are the Drowned Choir and the river leviathan separate Holumns, two expressions of one river-bound intelligence, or phenomena feeding from the same wound? | 5% |
 | Holumns | Where do Holumns take disappeared victims, and what evidence can reveal the destination without yet explaining the mechanism or possibility of return? | 5% |
-| Cult of Inanna | What form does Fionn\'s lineage association take, and which later scene makes the connection behind Mikhail\'s allusion legible to the reader? | 10% |
 | Core mystery | What logically defensible worldview and incompatible objective does each faction bring to Fionn, MSF, the Spill, and Narvea? | 10% |
 | Sexual tension | Which current tension records beyond Lynleit and Kyrien, Yulia and Hiyu, Fionn and Helena, Natalia and Lester, Lynleit and Felix, and Sherie and Felix become visible story dynamics rather than remaining conditional? | 10% |
 | Lynleit | Which of Lynleit's later actions around MSF missions can plausibly read as help, observation, manipulation, or causation before her intention becomes clear? | 10% |
