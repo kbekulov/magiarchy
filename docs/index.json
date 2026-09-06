@@ -132,10 +132,27 @@
     "title": "Questions to Be Answered",
     "topic": "Editorial Ledger",
     "file": "questions-to-be-answered.md",
-    "updated": "2026-09-05",
-    "description": "Confidence-tracked current canon and chronology questions, separated to support both worldbuilding and timeline placement.",
+    "updated": "2026-09-06",
+    "description": "Confidence-tracked canon and chronology questions, including the Cult of Inanna and pagan traditions among the Magi.",
     "speakers": [
       "Author's Desk"
+    ],
+    "defaultVersion": "v2",
+    "versions": [
+      {
+        "id": "v1",
+        "label": "v1 · Archived",
+        "file": "questions-to-be-answered-v1.md",
+        "updated": "2026-09-05",
+        "description": "Confidence-tracked current canon and chronology questions, separated to support both worldbuilding and timeline placement."
+      },
+      {
+        "id": "v2",
+        "label": "v2 · Current",
+        "file": "questions-to-be-answered.md",
+        "updated": "2026-09-06",
+        "description": "Confidence-tracked canon and chronology questions, including the Cult of Inanna and pagan traditions among the Magi."
+      }
     ]
   },
   {

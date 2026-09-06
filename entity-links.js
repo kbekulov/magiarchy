@@ -1,5 +1,7 @@
 /* Shared archive vocabulary links. Keep this registry limited to records that have a stable in-site destination. */
 const archiveEntityLinks = [
+  ['Cult of Inanna', 'magiarchy.html#cult-of-inanna'],
+  ['Inanna', 'magiarchy.html#cult-of-inanna'],
   ['Inspector Leo', 'character.html?character=inspector-leo'],
   ['Father Mikhail', 'character.html?character=father-mikhail'],
   ['Ash the cat', 'character.html?character=ash'],

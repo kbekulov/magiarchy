@@ -9,8 +9,6 @@ Story, character, world, relationship, institution, location, and event question
 | Area | Question | Confidence |
 | --- | --- | --- |
 | Family | Which relative receives Lynleit and Kyrien's son, and what does that person know about his parents? | 0% |
-| Cult of Inanna | Which encounter first makes the Cult of Inanna consequential to a character's choices? | 0% |
-| Pagan traditions | How does a pagan cult's magecraft differ from Church doctrine, and when does that difference affect a Magus's standing within the sanctioned order? | 0% |
 | Relationships | Which adult characters beyond Lynleit and Kyrien, Fionn and Helena, and the emerging Yulia and Hiyu bond have romantic or sexual histories that materially shape their present behavior? | 0% |
 | Kyrien and Sherie | Does their current potential for confrontational sexual tension ever enter the story, and which negotiation would let her calibrated charm collide repeatedly with his refusal to be steered? | 0% |
 | Holumn incident HI-001 | What does the voice want, and what changes when it stops copying the victim and begins speaking before the victim does? | 0% |
