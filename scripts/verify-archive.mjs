@@ -69,16 +69,19 @@ for (const note of notes) {
 
 const doom = chapters.find((entry) => entry.slug === 'doom-has-an-address');
 const doomMoment = moments.find((entry) => entry.slug === doom.slug);
-assert.equal(doom.defaultVersion, 'v5');
-assert.equal(doomMoment.defaultVersion, 'v5');
-assert.equal(doom.file, 'doom-has-an-address-v5.md');
+assert.equal(doom.defaultVersion, 'v6');
+assert.equal(doomMoment.defaultVersion, 'v6');
+assert.equal(doom.file, 'doom-has-an-address-v6.md');
 const doomText = read(`story/${doom.file}`);
-assert.ok(doomText.indexOf('O great warrior of the divine whore') < doomText.indexOf('Just have sex, loser.'), 'Mock blessing must precede the plain answer');
-assert.ok(doomText.includes("Remembering your father's household."), 'Family allusion missing');
-assert.ok(!/Inanna|Kotomine|Kirei/.test(doomText), 'The implied family connection or external inspiration became explicit in the Chapter');
-const v4Text = plain(read('story/doom-has-an-address-v4.md'));
-assert.equal(plain(doomText).split('### The unrespectable answer')[0], v4Text.split('### The unrespectable answer')[0], 'Natalia teaching changed during the v5 allusion edit');
-assert.equal(plain(doomText).split('"Just have sex, loser."')[1], v4Text.split('"Just have sex, loser."')[1], 'Protected banter and outcome changed during the v5 edit');
+assert.ok(doomText.indexOf('O great warrior of the Divine Whore') < doomText.indexOf('Just have sex, loser.'), 'Mock blessing must precede the plain answer');
+assert.ok(doomText.includes("Inanna's gates") && doomText.includes('three thousand years'), 'Author-supplied family history missing');
+assert.ok(!/Kotomine|Kirei/.test(doomText), 'External fictional character entered the Chapter');
+const v5Text = plain(read('story/doom-has-an-address-v5.md'));
+assert.equal(plain(doomText).split('### The unrespectable answer')[0], v5Text.split('### The unrespectable answer')[0], 'Natalia teaching changed during the v6 exchange edit');
+assert.equal(plain(doomText).split('### An alternative')[1], v5Text.split('### An alternative')[1], 'Outcome or later banter changed during the v6 edit');
+for (const beat of ['porcelain is behaving with more dignity', 'canonically permissible', 'A disgrace to the institution.', 'SEX?', 'cannot promise anything']) assert.ok(doomText.includes(beat), 'Protected v6 beat missing: ' + beat);
+assert.equal(typeof doomMoment.known[18], 'string', 'Spoken Inanna history must not be marked inferred');
+assert.equal(doomMoment.known[19].status, 'inferred', 'Private embarrassment must remain inferred');
 assert.ok(!/physician/i.test(doomText), 'Magic-aware physician returned to Doom');
 const nataliaHypothesis = doomText.indexOf('"The ego," Natalia said.');
 assert.ok(nataliaHypothesis >= 0 && !/\bego\b/i.test(doomText.slice(0, nataliaHypothesis)), 'Ego hypothesis appears before Natalia introduces it');
@@ -87,7 +90,7 @@ for (const exchange of [
   '"Unfortunately, you\'ve always needed both."',
   '"No. Sentimental nonsense is what poets do with it afterward."',
   '"Just have sex, loser."',
-  '"Which is why I recommend choosing your partner carefully."',
+  '"Perhaps the porcelain is behaving with more dignity than certain people present."',
   '"It failed."\n\n"It worked."\n\n"By failing."',
   '"Are you disappointed?"'
 ]) assert.ok(plain(doomText).includes(exchange), 'Protected Doom banter changed: review the source and prose style reference');
@@ -114,7 +117,7 @@ assert.ok(!json('docs/character-behavior-notes-v1.json').notes.some(n => n.versi
 for (const name of ['holumns/index.json', 'items/index.json', 'weapons/index.json', 'docs/sexual-tension-notes.json']) json(name);
 const search = json('search-index.json');
 const entries = Array.isArray(search) ? search : search.entries;
-assert.ok(entries.some((entry) => entry.url.includes('chapter=doom-has-an-address&version=v5')), 'Canonical chapter missing from search');
+assert.ok(entries.some((entry) => entry.url.includes('chapter=doom-has-an-address&version=v6')), 'Canonical chapter missing from search');
 assert.ok(entries.some((entry) => entry.url.includes('chapter=doom-has-an-address&version=v4')), 'Archived v4 chapter missing from search');
 assert.ok(entries.some((entry) => entry.url.includes('chapter=doom-has-an-address&version=v3')), 'Archived v3 chapter missing from search');
 assert.ok(entries.some((entry) => entry.url.includes('chapter=doom-has-an-address&version=v2')), 'Superseded chapter missing from search');

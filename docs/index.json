@@ -5,11 +5,11 @@
     "topic": "Writer's Style Reference",
     "file": "prose-style.md",
     "updated": "2026-09-06",
-    "description": "House style for narrative voice, practical exposition, comic bathos, and delayed recognition, developed through the current Chapters.",
+    "description": "House style for practical exposition, dialogue, mock-liturgical comedy, prop business, and character-specific embarrassment.",
     "speakers": [
       "Author's Desk"
     ],
-    "defaultVersion": "v3",
+    "defaultVersion": "v4",
     "versions": [
       {
         "id": "v1",
@@ -27,10 +27,17 @@
       },
       {
         "id": "v3",
-        "label": "v3 · Current",
-        "file": "prose-style.md",
+        "label": "v3 · Archived",
+        "file": "prose-style-v3.md",
         "updated": "2026-09-06",
         "description": "House style for narrative voice, practical exposition, comic bathos, and delayed recognition, developed through the current Chapters."
+      },
+      {
+        "id": "v4",
+        "label": "v4 · Current",
+        "file": "prose-style.md",
+        "updated": "2026-09-06",
+        "description": "House style for practical exposition, dialogue, mock-liturgical comedy, prop business, and character-specific embarrassment."
       }
     ]
   },
@@ -40,11 +47,11 @@
     "topic": "Editorial Reference",
     "file": "prose-and-scene-guidance.md",
     "updated": "2026-09-06",
-    "description": "Revision boundaries and author-confirmed development directions, including the implied family allusion in Doom v5.",
+    "description": "Revision boundaries and author-confirmed development directions, including the implied family allusion in Doom v6.",
     "speakers": [
       "Author's Desk"
     ],
-    "defaultVersion": "v3",
+    "defaultVersion": "v4",
     "versions": [
       {
         "id": "v1",
@@ -62,10 +69,17 @@
       },
       {
         "id": "v3",
-        "label": "v3 · Current",
-        "file": "prose-and-scene-guidance.md",
+        "label": "v3 · Archived",
+        "file": "prose-and-scene-guidance-v3.md",
         "updated": "2026-09-06",
         "description": "Revision boundaries and author-confirmed development directions, including the implied family allusion in Doom v5."
+      },
+      {
+        "id": "v4",
+        "label": "v4 · Current",
+        "file": "prose-and-scene-guidance.md",
+        "updated": "2026-09-06",
+        "description": "Revision boundaries and author-confirmed development directions, including the implied family allusion in Doom v6."
       }
     ]
   },
@@ -75,11 +89,11 @@
     "topic": "Writer's Character Reference",
     "file": "character-behavior-audit.md",
     "updated": "2026-09-06",
-    "description": "Version-scoped F, M, and S advisory notes, including Mikhail's mock blessing and Lynleit's response in Doom v5.",
+    "description": "Version-scoped F, M, and S advisory notes, including Mikhail's mock blessing and Lynleit's response in Doom v6.",
     "speakers": [
       "Character Archive"
     ],
-    "defaultVersion": "v3",
+    "defaultVersion": "v4",
     "versions": [
       {
         "id": "v1",
@@ -99,10 +113,18 @@
       },
       {
         "id": "v3",
-        "label": "v3 · Current",
-        "file": "character-behavior-audit.md",
+        "label": "v3 · Archived",
+        "file": "character-behavior-audit-v3.md",
         "updated": "2026-09-06",
         "description": "Version-scoped F, M, and S advisory notes, including Mikhail's mock blessing and Lynleit's response in Doom v5.",
+        "behaviorFile": "character-behavior-notes-v3.json"
+      },
+      {
+        "id": "v4",
+        "label": "v4 · Current",
+        "file": "character-behavior-audit.md",
+        "updated": "2026-09-06",
+        "description": "Version-scoped F, M, and S advisory notes, including Mikhail's mock blessing and Lynleit's response in Doom v6.",
         "behaviorFile": "character-behavior-notes.json"
       }
     ]
@@ -113,11 +135,11 @@
     "topic": "Writer's Character Reference",
     "file": "character-intimacy-and-sexuality.md",
     "updated": "2026-09-06",
-    "description": "Character-specific intimacy and attraction, distinguishing confirmed background from working interpretations and preserving Doom v5's incomplete encounter.",
+    "description": "Character-specific intimacy and attraction, distinguishing confirmed background from working interpretations and preserving Doom v6's incomplete encounter.",
     "speakers": [
       "Character Archive"
     ],
-    "defaultVersion": "v3",
+    "defaultVersion": "v4",
     "versions": [
       {
         "id": "v1",
@@ -137,10 +159,18 @@
       },
       {
         "id": "v3",
-        "label": "v3 · Current",
-        "file": "character-intimacy-and-sexuality.md",
+        "label": "v3 · Archived",
+        "file": "character-intimacy-and-sexuality-v3.md",
         "updated": "2026-09-06",
         "description": "Character-specific intimacy and attraction, distinguishing confirmed background from working interpretations and preserving Doom v5's incomplete encounter.",
+        "tensionFile": "sexual-tension-notes-v3.json"
+      },
+      {
+        "id": "v4",
+        "label": "v4 · Current",
+        "file": "character-intimacy-and-sexuality.md",
+        "updated": "2026-09-06",
+        "description": "Character-specific intimacy and attraction, distinguishing confirmed background from working interpretations and preserving Doom v6's incomplete encounter.",
         "tensionFile": "sexual-tension-notes.json"
       }
     ]
@@ -167,7 +197,7 @@
     "speakers": [
       "Author's Desk"
     ],
-    "defaultVersion": "v3",
+    "defaultVersion": "v4",
     "versions": [
       {
         "id": "v1",
@@ -185,7 +215,14 @@
       },
       {
         "id": "v3",
-        "label": "v3 · Current",
+        "label": "v3 · Archived",
+        "file": "questions-to-be-answered-v3.md",
+        "updated": "2026-09-06",
+        "description": "Confidence-tracked canon and chronology questions, including the unrevealed form of Fionn's lineage association with the Cult of Inanna."
+      },
+      {
+        "id": "v4",
+        "label": "v4 · Current",
         "file": "questions-to-be-answered.md",
         "updated": "2026-09-06",
         "description": "Confidence-tracked canon and chronology questions, including the unrevealed form of Fionn's lineage association with the Cult of Inanna."
@@ -198,11 +235,11 @@
     "topic": "Editorial Ledger",
     "file": "contradictions-to-resolve.md",
     "updated": "2026-09-06",
-    "description": "Cross-record conflicts and version decisions; shared Doom continuity follows v5.",
+    "description": "Cross-record conflicts and version decisions; shared Doom continuity follows v6.",
     "speakers": [
       "Author's Desk"
     ],
-    "defaultVersion": "v3",
+    "defaultVersion": "v4",
     "versions": [
       {
         "id": "v1",
@@ -220,10 +257,17 @@
       },
       {
         "id": "v3",
-        "label": "v3 · Current",
-        "file": "contradictions-to-resolve.md",
+        "label": "v3 · Archived",
+        "file": "contradictions-to-resolve-v3.md",
         "updated": "2026-09-06",
         "description": "Cross-record conflicts and version decisions; shared Doom continuity follows v5."
+      },
+      {
+        "id": "v4",
+        "label": "v4 · Current",
+        "file": "contradictions-to-resolve.md",
+        "updated": "2026-09-06",
+        "description": "Cross-record conflicts and version decisions; shared Doom continuity follows v6."
       }
     ]
   },

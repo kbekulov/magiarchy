@@ -171,30 +171,14 @@ Natalia teaches complex topics through practical examples and personal attempts,
 
 **Limit:** an anecdote must earn its place by changing the listener's understanding. Do not manufacture a major invention, past relationship, or magical success merely to supply an example.
 
-Version 3 derives from the earlier Version 2 text in commit `868fc31`, before the rewrite in `b06c821`. Version 4 builds on v3 and revises Natalia's teaching and the teacher-student dialogue. Version 5 retains that text and adds Mikhail's mock blessing. Version 6 adapts the author's Russian exchange and now supplies shared canon. Versions 1 through 5 remain accessible alternates.
+Version 3 derives from the earlier Version 2 text in commit `868fc31`, before the rewrite in `b06c821`. Version 4 builds on v3 and revises Natalia's teaching and the teacher-student dialogue. Version 5 retains that text and adds Mikhail's mock blessing; v5 now supplies shared canon. Versions 1 through 4 remain accessible alternates.
 
-### Historical implementation: Doom Has an Address, v5
+### Author direction and working implementation: Doom Has an Address, v5
 
 **Mock encomium and bathos:** Mikhail gives each phrase of an exaggerated honorific the cadence of a blessing. Lynleit's stopped pen interrupts the register. She asks him to speak normally; the unchanged mundane insult answers that request. Keep the declaration short enough that the listener's confusion remains the turning point. His seated patience, her successive attempts to leave, and the later notebook joke retain their original timing.
 
-**Delayed recognition:** the address to her father's household lets a first-time reader detect private knowledge without yet identifying its source. The author has confirmed Fionn's Magi-lineage association with the Cult of Inanna and Lynleit's indirect association without direct participation. That withholding governed v5. The author's v6 exchange replaces it by naming Inanna and discussing the lineage openly.
+**Delayed recognition:** the address to her father's household lets a first-time reader detect private knowledge without yet identifying its source. The author has confirmed Fionn's Magi-lineage association with the Cult of Inanna and Lynleit's indirect association without direct participation. Keep that exact connection in writer records until the intended reveal, not in Chapter narration or explanatory profile paragraphs.
 
 **Jungian editorial lens:** inherited identity, conscious self-description, desire, and embarrassment can pull in different directions. Here the imposed honorific makes an expectation personal before Lynleit can dismiss it as theory. This is a craft reading of the scene, not a diagnosis, a new Jung quotation, or a rule that shame causes transformation. Natalia's existing attributed definition remains the Chapter's psychological reference; see the [Jung Society source](https://www.junginsydney.org.au/events/2023/egoshame) above.
 
 **Limit:** Mikhail's phrase "divine whore" is his mocking allusion. It establishes neither an authentic liturgical quotation nor compulsory cult practice. His insult is not the narrator's judgment about sexual inexperience. No borrowed character name, catchphrase, or imported fictional theology belongs in the scene.
-
-### Author direction and working implementation: Doom Has an Address, v6
-
-**Author direction:** sexual subjects involving the main cast should be psychologically revealing, funny, raw, and memorable where the scene supports comedy. Adapt the supplied exchange, preserving its useful lore and slapstick rather than merely making the language respectable. This does not require erotic comedy in every intimate or frightening scene.
-
-**Register clash and mock encomium:** Mikhail rises to deliver an ornate invocation, then sits, drinks, and speaks crudely. The register changes are deliberate acts by the speaker. His knowledge supplies the material; his timing makes it embarrassing. Keep his practical answer and its uncertainty intact so the scene remains a consultation.
-
-**Prop business and status negotiation:** Lynleit's cup repeatedly gives her hands somewhere to go. Mikhail notices and names it; she answers with the porcelain retort. Preserve her capacity to resist. Her increasingly abstract principles defend a private discomfort, while her ordinary professional openness remains unchanged.
-
-**Escalation and selective compression:** keep repetitions that change the stakes: inappropriate wording, rejected objection, personal genealogy, an attempted exit, and the final threat. Cut acknowledgments or objections that only confirm the previous line. The authorial source's elaborate pauses become selected action beats rather than a fragment after every movement.
-
-**Subtext and explicit exposition:** v6 names Inanna and states the lineage's long association. Do not label that information inferred. The cup, formal defence, and threat carry the private embarrassment without a narrator explaining the double insult. Mikhail's monastic composure and Lynleit's defensive formality are character-specific, not universal male or female behavior.
-
-**Scene breaks and closing tag:** a break isolates Mikhail's private last joke from Lynleit's corridor reaction. The notebook callback preserves the earlier Chapter, while the priest's coda belongs to the author's new exchange.
-
-**Limit:** the priest's accusation is personal mockery, not an objective finding that Lynleit has failed a religious duty. The ancestry is not the source of her desire for Kyrien. A Jungian reading may attend to the difference between her declared indifference and her behavior, but it does not establish a clinical diagnosis or give Mikhail access to her unspoken thoughts.
