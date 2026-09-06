@@ -56,7 +56,7 @@ Use a private gesture in the hotel refuge only if it fits Lynleit's immediate ex
 
 ## Current version decision
 
-Doom Has an Address v7 is canon. It builds on v3's restored banter, with Natalia teaching through a worked diagram and personal experience while Lynleit responds as her playful, loyal former student and friend. Natalia remains the source of the ego hypothesis and Jung quotation; no magic-aware physicians are introduced. The attempt at intimacy is incomplete. Both survive after the attempt and its aftermath change the identities to which the curse is attached. Their first completed sexual encounter belongs later in Arc 1. Versions 1 through 6 remain alternates and must not supply shared character or Holumn facts where they differ.
+Doom Has an Address v6 is canon. It builds on v3's restored banter, with Natalia teaching through a worked diagram and personal experience while Lynleit responds as her playful, loyal former student and friend. Natalia remains the source of the ego hypothesis and Jung quotation; no magic-aware physicians are introduced. The attempt at intimacy is incomplete. Both survive after the attempt and its aftermath change the identities to which the curse is attached. Their first completed sexual encounter belongs later in Arc 1. Versions 1 through 5 remain alternates and must not supply shared character or Holumn facts where they differ.
 
 ### Family history and embarrassment in Doom v6
 
@@ -64,6 +64,4 @@ The author confirms that Fionn's Magi lineage is associated with the Cult of Ina
 
 The author's v6 exchange names Inanna and describes three thousand years of lineage association, ancestral covenants, and the political force of intimacy. This replaces v5's concealed identification. Keep the private sting in her handling of the cup, formal defence, and threatened reprisal. Do not add a paragraph explaining why she should feel ashamed, make her actual competence depend on sexual experience, or invent a rite she has failed. Her family affiliation is not a cause of attraction to Kyrien. The curse still depends on reciprocal identity change, not on obedience to a cult.
 
-The author's sexual-comedy direction favors psychologically revealing, memorable exchanges that still advance the scene. Let Mikhail provoke through ceremony and observation, and let Lynleit answer sharply rather than simply suffer the joke. Retain the possibility of failure in his treatment advice. See the v6 and v7 craft notes in the current Prose Style reference.
-
-V7 restores the nine approved comic and behavioral beats from the longer exchange. Keep the pause in which Mikhail does not pursue Lynleit's averted gaze. It does not add a romance or turn his teasing into infallible knowledge. The consultation still concerns their survival, and its treatment remains uncertain.
+The author's sexual-comedy direction favors psychologically revealing, memorable exchanges that still advance the scene. Let Mikhail provoke through ceremony and observation, and let Lynleit answer sharply rather than simply suffer the joke. Retain the possibility of failure in his treatment advice. See the v6 craft notes in the current Prose Style reference.

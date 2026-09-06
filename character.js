@@ -405,7 +405,7 @@ const profileSeeds = [
       ['Height and build', 'Unspecified.'],
       ['Distinguishing features', 'Unspecified.']
     ],
-    personalitySummary: 'Mikhail explains difficult doctrine patiently and can deliver a personal taunt with the solemn cadence of a blessing before dropping into blunt ordinary speech. He notices evasions in speech and small gestures, and uses them to prolong a joke. He lets Lynleit be angry without withdrawing his advice or promising that it will work. In the field, he survives confrontations with Magi even when operating alone.',
+    personalitySummary: 'Mikhail explains difficult doctrine patiently and can deliver a personal taunt with the solemn cadence of a blessing before dropping into blunt ordinary speech. He notices evasions in speech and small gestures, and uses them to prolong a joke. He lets Lynleit be angry without withdrawing his advice or promising that it will work. When she looks away during their conversation about intimacy, he leaves the reaction unremarked. In the field, he survives confrontations with Magi even when operating alone.',
     tradecraft: [
       { label: 'Church field service', title: 'Counter-Magus survival', detail: 'Mikhail can continue operating alone against several Magi threats and defeat some of them.' },
       { label: 'Special-envoy duty', title: 'Restricted authority', detail: 'Church leadership sends him into exceptional cases under a delegated authority distinct from ordinary priesthood.' },

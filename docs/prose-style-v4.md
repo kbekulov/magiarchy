@@ -171,7 +171,7 @@ Natalia teaches complex topics through practical examples and personal attempts,
 
 **Limit:** an anecdote must earn its place by changing the listener's understanding. Do not manufacture a major invention, past relationship, or magical success merely to supply an example.
 
-Version 3 derives from the earlier Version 2 text in commit `868fc31`, before the rewrite in `b06c821`. Version 4 builds on v3 and revises Natalia's teaching and the teacher-student dialogue. Version 5 retains that text and adds Mikhail's mock blessing. Version 6 adapts the author's Russian exchange. Version 7 restores nine author-approved performance beats and supplies shared canon. Versions 1 through 6 remain accessible alternates.
+Version 3 derives from the earlier Version 2 text in commit `868fc31`, before the rewrite in `b06c821`. Version 4 builds on v3 and revises Natalia's teaching and the teacher-student dialogue. Version 5 retains that text and adds Mikhail's mock blessing. Version 6 adapts the author's Russian exchange and now supplies shared canon. Versions 1 through 5 remain accessible alternates.
 
 ### Historical implementation: Doom Has an Address, v5
 
@@ -198,15 +198,3 @@ Version 3 derives from the earlier Version 2 text in commit `868fc31`, before th
 **Scene breaks and closing tag:** a break isolates Mikhail's private last joke from Lynleit's corridor reaction. The notebook callback preserves the earlier Chapter, while the priest's coda belongs to the author's new exchange.
 
 **Limit:** the priest's accusation is personal mockery, not an objective finding that Lynleit has failed a religious duty. The ancestry is not the source of her desire for Kyrien. A Jungian reading may attend to the difference between her declared indifference and her behavior, but it does not establish a clinical diagnosis or give Mikhail access to her unspoken thoughts.
-
-### Author-approved restoration: Doom Has an Address, v7
-
-**Performance beats and comic delay:** the author approved the priestly calm, Lynleit's hope for discretion, finger-counting assessment, delayed reply to the insult, accidental defence, porcelain setup, withheld joke, ancient-versus-present problem, and farewell/coda pacing. Preserve these as turns in the exchange rather than compressing them into a description of teasing.
-
-**Blocking and prop continuity:** a restored gesture must fit the actions around it. Lynleit returns the cup during the porcelain setup; later she leaves it alone rather than setting it down again. The prop reveals divided attention without narration explaining that her hands need occupation.
-
-**Withheld response:** after repeatedly exploiting her hesitation, Mikhail lets one averted glance pass. The reader can notice this change without a verdict announcing tenderness. A character's restraint can be visible through an expected action they do not perform.
-
-**Reaction and reply:** Lynleit's denial of agreement, correction from defence to principle, and porcelain retort keep her an active participant. Allow the silence after an insult to land before either speaker resumes.
-
-**Limit:** these are approved choices for this exchange, not instructions to give every joke a long pause or every provocative character a reassuring moment. Natalia's explanation, Mikhail's uncertain treatment, and the later outcome remain unchanged.

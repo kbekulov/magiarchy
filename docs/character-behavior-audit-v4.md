@@ -10,8 +10,6 @@ This writer-facing record tests whether a reaction feels specific to the charact
 - A useful note creates a more precise choice. A broad claim that any man or woman would behave the same way should be discarded.
 - Story-pressure notes identify a possible payoff or image. They remain separate from confirmed scene facts.
 
-## Doom v7: scope of the current notes
+## Doom v6: scope of the current notes
 
 The current notes cover Mikhail's mock-liturgical delivery and Lynleit's interrupted composure. They guide performance and reader inference, not a new romantic pairing or a general claim about women. The family connection is now named in dialogue. Her private discomfort is conveyed by the cup, increasingly formal objections, and final threat. The notes distinguish what the scene says from what the reader infers; suggested additions remain advisory. Earlier versions retain their own paragraph anchors and notes.
-
-The v7 restoration also lets Mikhail leave one averted glance unremarked. Its story-pressure note addresses the interruption of his teasing, without assigning him a new motive or romantic interest. Restored action beats preserve Lynleit's replies and the timing of the porcelain exchange.
