@@ -713,7 +713,9 @@ async function loadProfilePortrait(profile, portrait, note) {
     next.addEventListener('click', () => show(selectedIndex + 1));
     previous.hidden = next.hidden = thumbnails.hidden = artworks.length < 2;
     portrait.classList.add('has-art-browser');
-    portrait.replaceChildren(stage, controls, thumbnails);
+    const overlay = createElement('div', 'profile-art-overlay');
+    overlay.append(controls, thumbnails);
+    portrait.replaceChildren(stage, overlay);
     show(selectedIndex);
   } catch (error) {
     console.warn(`Could not load gallery portrait for ${profile.name}.`, error);

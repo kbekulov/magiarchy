@@ -1,6 +1,6 @@
 {
-  "generated": "2026-09-08T22:19:23.410Z",
-  "count": 458,
+  "generated": "2026-09-08T23:25:46.574Z",
+  "count": 459,
   "entries": [
     {
       "id": "page-characters",
@@ -2065,6 +2065,14 @@
       "url": "index.html#update-direct-prose-rule",
       "subtitle": "Home update feed",
       "text": "Archive Standard: Site update Home update feed PR Archive Standard 30 Aug 2026 · Prose rule Direct prose is now a permanent archive rule. Reader-facing records must avoid formulaic slogans, vague conclusions, and decorative contrasts, and state facts or writer guidance plainly. Browse the document archive →"
+    },
+    {
+      "id": "update-update-portrait-overlay",
+      "title": "Archive Update: Site update",
+      "type": "Update",
+      "url": "index.html#update-portrait-overlay",
+      "subtitle": "Home update feed",
+      "text": "Archive Update: Site update Home update feed 09 Archive Update 9 Sep 2026 · Portrait browsing Portrait controls and thumbnails now sit over the artwork without extending its panel. Images are aligned to the top to keep faces visible in tall portraits."
     },
     {
       "id": "update-update-artwork-music-arcs",

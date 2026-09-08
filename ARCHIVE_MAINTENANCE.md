@@ -170,6 +170,8 @@ Physicians have no knowledge of magic unless the author establishes an exception
 
 ## Design and delivery invariants
 
+Profile portrait controls and scrollable thumbnails overlay the image inside its existing bounds. They never add a separate height-expanding footer. Anchor every profile image and thumbnail to the top so tall artwork retains its face; keep captions, touch targets, and keyboard focus readable on a flat overlay.
+
 Music cards preserve the archive's flat artwork and compact metadata layout. Play only the supplied MP3, load audio on visitor action rather than autoplaying or preloading full tracks, and expose separate same-origin MP3 and WAV download links with file sizes. Keep unrecorded concepts inactive. Do not assign a supplied recording to a concept, character, or scene without author confirmation. Preserve the supplied audio bytes and filenames when importing into `media/music/`.
 
 Music search and category/tag filtering use each card's explicit `data-story`, `data-character`, `data-event`, `data-arc`, and `data-misc` pipe-separated metadata. Empty fields mean unassigned. Categories may overlap; do not infer an Arc or character from the sound. Keep counts, empty states, shareable filter URLs, and resets synchronized. Filtering a playing card out pauses it. Preserve the shared Safari-safe masonry layout.
