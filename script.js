@@ -183,6 +183,28 @@ characterCards.forEach((card) => {
   card.prepend(profileLink);
 });
 
+if (characterCards.length) {
+  fetch('gallery.html').then(response => {
+    if (!response.ok) throw new Error('Gallery unavailable');
+    return response.text();
+  }).then(html => {
+    const gallery = new DOMParser().parseFromString(html, 'text/html');
+    characterCards.forEach(card => {
+      const slug = new URL(card.querySelector('.character-card-link').href).searchParams.get('character');
+      const choices = [...gallery.querySelectorAll('.gallery-card[data-chibi="true"]')]
+        .filter(art => (art.dataset.character || '').split(/\s+/).includes(slug) && art.querySelector('img'));
+      if (!choices.length) return;
+      const choice = choices[Math.floor(Math.random() * choices.length)];
+      const image = card.querySelector('.character-chibi');
+      if (!image) return;
+      image.src = choice.querySelector('img').getAttribute('src');
+      image.alt = choice.querySelector('img').alt;
+      const note = card.querySelector('.art-note');
+      if (note) note.textContent = choice.dataset.storyArc ? choice.dataset.storyArc.replace('-', ' ') + ' · Chibi' : 'Chibi';
+    });
+  }).catch(error => console.warn('Keeping default character artwork.', error));
+}
+
 function updateCharacterResults() {
   const query = searchInput?.value.trim().toLowerCase() ?? '';
   let visibleCount = 0;

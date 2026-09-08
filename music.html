@@ -62,6 +62,22 @@
             <span class="feed-status"><span class="status-dot"></span> 1 playable track</span>
           </header>
 
+          <div class="archive-toolbar music-filters reveal" role="search" aria-label="Music filters">
+            <label class="search-field">
+              <svg aria-hidden="true" viewBox="0 0 24 24"><path d="m21 21-4.35-4.35m2.35-5.65a8 8 0 1 1-16 0 8 8 0 0 1 16 0Z"/></svg>
+              <input id="music-search" type="search" placeholder="Search records" aria-label="Search music" autocomplete="off">
+            </label>
+            <div class="filter-group" role="group" aria-label="Filter music">
+              <button class="filter-chip is-active" type="button" data-category="all" aria-pressed="true">All music</button>
+              <button class="filter-chip" type="button" data-category="story" aria-pressed="false">Story</button>
+              <button class="filter-chip" type="button" data-category="character" aria-pressed="false">Character</button>
+              <button class="filter-chip" type="button" data-category="event" aria-pressed="false">Event</button>
+              <button class="filter-chip" type="button" data-category="arc" aria-pressed="false">Arc</button>
+              <button class="filter-chip" type="button" data-category="misc" aria-pressed="false">Miscellaneous</button>
+            </div>
+            <div class="filter-group music-tag-chips" id="music-tag-chips" role="group" aria-label="Filter music tags"></div>
+          </div>
+
           <section class="docs-heading reveal" aria-labelledby="music-title">
             <div>
               <p class="eyebrow">Audio archive</p>
@@ -71,24 +87,10 @@
           </section>
 
           <section class="music-library" aria-label="Tracks and music concepts">
-            <form class="music-filters" role="search" aria-label="Music filters" hidden>
-              <div class="music-filter-fields">
-                <label class="gallery-select music-search-field"><span>Search music</span><input id="music-search" type="search" placeholder="Titles, characters, scenes, themes…" autocomplete="off"></label>
-                <label class="gallery-select"><span id="music-tag-label">Tag</span><select id="music-tag" aria-labelledby="music-tag-label"><option value="all">All tags</option></select></label>
-                <button class="music-filter-reset" type="reset">Clear filters</button>
-              </div>
-              <div class="music-categories" role="group" aria-label="Theme categories">
-                <button type="button" data-category="all" aria-pressed="true">All</button>
-                <button type="button" data-category="story" aria-pressed="false">Story</button>
-                <button type="button" data-category="character" aria-pressed="false">Character</button>
-                <button type="button" data-category="event" aria-pressed="false">Event</button>
-                <button type="button" data-category="arc" aria-pressed="false">Arc</button>
-                <button type="button" data-category="misc" aria-pressed="false">Miscellaneous</button>
-              </div>
-            </form>
+
             <p class="music-results" id="music-results" role="status" aria-live="polite">5 tracks and concepts</p>
             <div class="music-card-grid">
-              <article class="music-card music-card-playable reveal" id="theme-1-stem" aria-labelledby="theme-1-title" data-story="" data-character="" data-event="" data-arc="" data-misc="Soundtrack|Stem">
+              <article class="music-card music-card-playable reveal" id="theme-1-stem" aria-labelledby="theme-1-title" data-story="Main story" data-character="Lynleit" data-event="Investigation" data-arc="Arc 1" data-misc="Soundtrack|Stem" data-assignment="Working selection">
                 <div class="music-card-art art-violet">
                   <span aria-hidden="true">AUDIO 01</span><i aria-hidden="true">♫</i>
                   <button class="music-banner-toggle" type="button" aria-label="Play Theme 1 (stem)" aria-controls="theme-1-audio" hidden>
@@ -126,7 +128,7 @@
                 </div>
               </article>
 
-              <article class="music-card reveal" data-story="Main theme|Opening" data-character="" data-event="" data-arc="" data-misc="Atmospheric">
+              <article class="music-card reveal" data-story="Main theme|Opening" data-character="" data-event="" data-arc="Arc 1" data-misc="Atmospheric">
                 <div class="music-card-art art-violet" aria-hidden="true"><span>01</span><i>♫</i></div>
                 <div class="music-card-body">
                   <div class="music-card-top"><span class="doc-topic">Main theme</span><span class="music-status">Audio pending</span></div>
@@ -136,7 +138,7 @@
                 </div>
               </article>
 
-              <article class="music-card reveal" data-story="" data-character="Lynleit" data-event="" data-arc="" data-misc="Reflective">
+              <article class="music-card reveal" data-story="" data-character="Lynleit" data-event="" data-arc="Arc 1" data-misc="Reflective">
                 <div class="music-card-art art-blue" aria-hidden="true"><span>02</span><i>♫</i></div>
                 <div class="music-card-body">
                   <div class="music-card-top"><span class="doc-topic">Character motif</span><span class="music-status">Audio pending</span></div>
@@ -146,7 +148,7 @@
                 </div>
               </article>
 
-              <article class="music-card reveal" data-story="" data-character="" data-event="Containment" data-arc="" data-misc="Tension">
+              <article class="music-card reveal" data-story="" data-character="" data-event="Containment" data-arc="Arc 1" data-misc="Tension">
                 <div class="music-card-art art-red" aria-hidden="true"><span>03</span><i>♫</i></div>
                 <div class="music-card-body">
                   <div class="music-card-top"><span class="doc-topic">Scene track</span><span class="music-status">Audio pending</span></div>
@@ -156,7 +158,7 @@
                 </div>
               </article>
 
-              <article class="music-card reveal" data-story="" data-character="" data-event="Aftermath" data-arc="" data-misc="Ambient">
+              <article class="music-card reveal" data-story="" data-character="" data-event="Aftermath" data-arc="Arc 2" data-misc="Ambient">
                 <div class="music-card-art art-amber" aria-hidden="true"><span>04</span><i>♫</i></div>
                 <div class="music-card-body">
                   <div class="music-card-top"><span class="doc-topic">Aftermath</span><span class="music-status">Audio pending</span></div>

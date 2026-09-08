@@ -144,7 +144,7 @@ function renderMomentPhaseTrack(entries) {
     button.setAttribute('aria-label', `Filter Moments to ${phase.title}`);
     button.append(momentElement('span', 'moment-phase-number', phase.number));
     const copy = momentElement('div');
-    copy.append(momentElement('small', '', `${phase.arcLabel} · ${phase.label}`), momentElement('h3', '', phase.title));
+    copy.append(momentElement('small', '', phase.label), momentElement('h3', '', phase.title));
     const count = counts.get(phase.id) ?? 0;
     item.classList.toggle('has-moments', count > 0);
     copy.append(momentElement('p', '', count ? `${count} anchored ${count === 1 ? 'Moment' : 'Moments'}` : 'No scenes anchored yet'));
@@ -153,6 +153,7 @@ function renderMomentPhaseTrack(entries) {
     return item;
   });
   momentPhaseTrack.replaceChildren(...nodes);
+  window.decorateArcTimeline(momentPhaseTrack);
 }
 
 function appendOptions(select, values, labelForValue = (value) => value) {
@@ -193,7 +194,7 @@ function createMomentCard(entry) {
   link.append(top, momentElement('h3', '', entry.title), momentElement('p', 'moment-card-summary', entry.summary));
 
   const position = momentElement('div', 'moment-card-position');
-  position.append(momentElement('span', '', `${phase?.arcLabel ?? 'Arc unassigned'} · ${entry.timelineLabel}`), momentElement('small', '', entry.placementStatus));
+  position.append(momentElement('span', '', `${phase?.arcLabel ?? 'Arc unassigned'} · ${phase?.title ?? entry.timelineLabel}`), momentElement('small', '', entry.placementStatus));
   link.append(position);
 
   const metadata = momentElement('dl', 'moment-card-meta');
@@ -298,7 +299,7 @@ async function renderMomentReader(entry, entries, requestedVersion) {
   document.querySelector('#moment-location').textContent = selected.location;
   document.querySelector('#moment-date').textContent = `Updated ${selected.updated}`;
   const phase = storyPhases.find((candidate) => candidate.id === selected.timelinePhase);
-  const phaseLabel = `${phase?.arcLabel ?? 'Arc unassigned'} · ${selected.timelineLabel}`;
+  const phaseLabel = `${phase?.arcLabel ?? 'Arc unassigned'} · ${phase?.title ?? selected.timelineLabel}`;
   document.querySelector('#moment-phase-name').textContent = phaseLabel;
   document.querySelector('#moment-story-link').href = `story.html?phase=${encodeURIComponent(selected.timelinePhase)}`;
   document.querySelector('#moment-before').textContent = selected.continuityBefore;

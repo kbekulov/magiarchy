@@ -4,6 +4,8 @@ This file is the concise operating map for future agents and maintainers. `AGENT
 
 ## Authority and record states
 
+Shared UI invariants: Music uses the Characters archive toolbar with category and tag chips. Track assignments are editable catalog metadata, not new canon. Character cards randomize registered chibis with visible era labels; profile artwork uses a previous/next and thumbnail browser. Timeline counts may expand anywhere: retain IDs, derive numbers from order, and use the shared labelled Arc bands in Story, Moments, and profile timelines. Never infer an unplaced event's Arc merely to color it.
+
 1. The author is the only final authority over canon.
 2. Established canon is written as fact on public wiki surfaces.
 3. Questions, contradictions, mock structures, audit proposals, and working interpretations remain in writer-facing Docs or private page notes.

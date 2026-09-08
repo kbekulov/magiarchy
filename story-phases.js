@@ -4,6 +4,38 @@ window.MAGIARCHY_STORY_ARCS = [
   { id: 'arc-2', number: 'ARC 2', title: 'After the main story', description: 'A sequel life period shaped by Lynleit\'s absence, Kyrien\'s direction of MSF, and the consequences carried forward from Arc 1.' }
 ];
 
+// Stable phase IDs own links. Display numbers follow the current order, not a fixed count.
+window.decorateArcTimeline = (track) => {
+  if (!track) return;
+  const arcs = window.MAGIARCHY_STORY_ARCS;
+  let previous = null;
+  track.classList.add('arc-timeline');
+  [...track.children].forEach(item => {
+    item.querySelector(':scope > .timeline-arc-band')?.remove();
+    const arc = arcs.find(entry => entry.id === item.dataset.storyArc);
+    const band = document.createElement('span');
+    band.className = 'timeline-arc-band';
+    band.textContent = arc && arc.id !== previous ? `${arc.number} · ${arc.title}` : '';
+    if (!band.textContent) band.setAttribute('aria-hidden', 'true');
+    item.prepend(band);
+    previous = arc?.id || null;
+  });
+  let key = track.previousElementSibling;
+  if (!key?.classList.contains('timeline-arc-key')) {
+    key = document.createElement('div');
+    key.className = 'timeline-arc-key';
+    key.setAttribute('aria-label', 'Story arcs');
+    track.before(key);
+  }
+  const present = new Set([...track.children].map(item => item.dataset.storyArc));
+  key.replaceChildren(...arcs.filter(arc => present.has(arc.id)).map(arc => {
+    const label = document.createElement('span');
+    label.dataset.storyArc = arc.id;
+    label.textContent = `${arc.number} · ${arc.title}`;
+    return label;
+  }));
+};
+
 window.MAGIARCHY_STORY_PHASES = [
   { id: 'households-before-the-spill', arc: 'arc-0', arcLabel: 'Arc 0', number: '00', label: 'Prequel outline', title: 'Households before the Spill', description: 'Fionn rebuilds a household while MSF develops through practical and political pressures. The younger cast faces school, family change, and responsibilities it cannot yet manage. Individual events and dates remain a development outline.' },
   { id: 'vanishing-point', arc: 'arc-1', arcLabel: 'Arc 1', number: '01', label: 'First disappearances', title: 'Vanishing Point', description: 'The first person to disappear independently causes the Spill, though his identity and significance remain concealed for most of the story. Holumns cause the disappearances that follow. Hidden factions later recognize and exploit a crisis they did not create.' },
@@ -15,8 +47,11 @@ window.MAGIARCHY_STORY_PHASES = [
   { id: 'clear-her-name', arc: 'arc-1', arcLabel: 'Arc 1', number: '07', label: 'Fugitive counteroffensive', title: 'Clear Her Name', description: 'After Fionn\'s murder, Helena frames Lynleit and directs a hunt for her arrest. Lynleit discovers Fionn\'s leviathan-hide coat during the middle of Arc 1, then begins a slow campaign to reclaim MSF while the hunt continues.' },
   { id: 'the-real-mission', arc: 'arc-1', arcLabel: 'Arc 1', number: '08', label: 'A smaller MSF', title: 'The Real Mission', description: 'The Spill cannot be fully contained. MSF contracts into a smaller, mainly Magi-focused task force whose members must now juggle magical threats and ordinary intelligence work.' },
   { id: 'after-the-spill', arc: 'arc-1', arcLabel: 'Arc 1', number: '09', label: 'Permanent containment', title: 'The Unfinished Spill', description: 'The political struggle for MSF is settled, but the Spill remains. The agency and everyone changed by the crisis must rebuild around a threat that has become a permanent mandate.' },
-  { id: 'late-arc-one', arc: 'arc-1', arcLabel: 'Arc 1', number: '09b', label: 'Approximate subplot placement', title: 'Later in Arc 1', description: 'Doom Has an Address occurs in the later part of the main story\'s second half, after Fionn\'s death and the hotel refuge. The park encounter follows months later. Their precise relationship to the surrounding main-plot phases is not yet fixed.' },
+  { id: 'late-arc-one', arc: 'arc-1', arcLabel: 'Arc 1', number: '09b', label: 'Approximate subplot placement', title: 'Private Consequences', description: 'Doom Has an Address occurs in the later part of the main story\'s second half, after Fionn\'s death and the hotel refuge. The park encounter follows months later. Their precise relationship to the surrounding main-plot phases is not yet fixed.' },
   { id: 'lynleit-disappears', arc: 'arc-1', arcLabel: 'Arc 1', number: '10', label: 'Identity discontinuity', title: 'Lynleit Disappears', description: 'After their relationship has developed over time, Lynleit disappears near the transition into the next life period, leaving Kyrien in charge of MSF.' },
   { id: 'kyriens-burden', arc: 'arc-2', arcLabel: 'Arc 2', number: '11', label: 'A non-Magus director', title: 'Kyrien\'s Burden', description: 'At the opening of Arc 2, Kyrien directs an agency built to confront magic without being a Magus himself. The circumstances surrounding Lynleit\'s absence allow the reader to infer her pregnancy without a direct explanation or shown realization.' },
   { id: 'the-return', arc: 'arc-2', arcLabel: 'Arc 2', number: '12', label: 'Years later', title: 'The Return', description: 'After recovering and placing her son with a reliable distant relative, Lynleit begins appearing near MSF missions without announcing her return. Only a few notice her, sometimes Kyrien, and her unexplained activity can make her appear responsible for the danger.' }
 ];
+
+
+window.MAGIARCHY_STORY_PHASES.forEach((phase, index) => { phase.number = String(index + 1).padStart(2, '0'); });

@@ -172,7 +172,7 @@ for (const facet of ['story','character','event','arc','misc']) {
   assert.ok(music.includes(`data-category="${facet}"`), `Music: missing ${facet} category`);
   assert.ok(music.includes(`data-${facet}=`), `Music: missing explicit ${facet} metadata`);
 }
-assert.ok(music.includes('id="music-search"') && music.includes('id="music-tag"'), 'Music: missing search or tags');
+assert.ok(music.includes('id="music-search"') && music.includes('id="music-tag-chips"') && music.includes('archive-toolbar music-filters'), 'Music: missing shared search toolbar or tag chips');
 assert.ok(/\.story-reader-open \.docs-main-pane\s*\{\s*display: flow-root;/.test(read('styles.css')), 'Chapter reader: collapsed top-margin protection missing');
 for (const file of ['story.js', 'docs.js']) assert.ok(read(file).includes("aside.className = 'writer-notice'"), `${file}: writer notices are not highlighted`);
 assert.ok(music.includes('class="music-banner-toggle" type="button"'), 'Music: require keyboard-operable banner button');

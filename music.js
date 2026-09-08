@@ -10,8 +10,9 @@ if (musicFilterForm) {
     text: [card.querySelector('h2')?.textContent, card.querySelector('.music-card-body > p')?.textContent, ...facets.map(key => card.dataset[key] || '')].join(' ').toLocaleLowerCase()
   }));
   const search = document.querySelector('#music-search');
-  const tags = document.querySelector('#music-tag');
-  const buttons = [...document.querySelectorAll('.music-categories button')];
+  const tagGroup = document.querySelector('#music-tag-chips');
+  let selectedTag = 'all';
+  const buttons = [...document.querySelectorAll('.music-filters [data-category]')];
   const result = document.querySelector('#music-results');
   const empty = document.querySelector('.music-empty');
   let category = 'all';
@@ -22,9 +23,15 @@ if (musicFilterForm) {
   function fillTags(selected = 'all') {
     const keys = category === 'all' ? facets : [category];
     const values = [...new Set(cards.flatMap(item => keys.flatMap(key => item.tags[key])))].sort((a,b) => a.localeCompare(b));
-    tags.replaceChildren(new Option('All tags', 'all'), ...values.map(value => new Option(value, value)));
-    tags.value = values.includes(selected) ? selected : 'all';
-    tags.disabled = values.length === 0;
+    selectedTag = values.includes(selected) ? selected : 'all';
+    tagGroup.replaceChildren(...['all', ...values].map(value => {
+      const button = document.createElement('button');
+      button.type = 'button'; button.className = 'filter-chip';
+      button.dataset.tag = value; button.textContent = value === 'all' ? 'All tags' : value;
+      button.addEventListener('click', () => { selectedTag = value; filterMusic(); });
+      return button;
+    }));
+    tagGroup.hidden = category === 'all' && selectedTag === 'all';
   }
 
   function filterMusic() {
@@ -35,7 +42,7 @@ if (musicFilterForm) {
       const keys = category === 'all' ? facets : [category];
       const scopedTags = keys.flatMap(key => item.tags[key]);
       const visible = (category === 'all' || scopedTags.length > 0)
-        && (tags.value === 'all' || scopedTags.includes(tags.value))
+        && (selectedTag === 'all' || scopedTags.includes(selectedTag))
         && terms.every(term => item.text.includes(term));
       item.card.hidden = !visible;
       if (visible) { count++; if (item.card.querySelector('audio')) playable++; }
@@ -43,9 +50,13 @@ if (musicFilterForm) {
     });
     result.textContent = `${count} of ${cards.length} tracks and concepts · ${playable} playable`;
     empty.hidden = count !== 0;
-    buttons.forEach(button => button.setAttribute('aria-pressed', String(button.dataset.category === category)));
+    [...buttons, ...tagGroup.children].forEach(button => {
+      const active = button.dataset.category ? button.dataset.category === category : button.dataset.tag === selectedTag;
+      button.classList.toggle('is-active', active);
+      button.setAttribute('aria-pressed', String(active));
+    });
     const url = new URL(location.href);
-    [['q', search.value.trim()], ['category', category === 'all' ? '' : category], ['tag', tags.value === 'all' ? '' : tags.value]].forEach(([key,value]) => value ? url.searchParams.set(key,value) : url.searchParams.delete(key));
+    [['q', search.value.trim()], ['category', category === 'all' ? '' : category], ['tag', selectedTag === 'all' ? '' : selectedTag]].forEach(([key,value]) => value ? url.searchParams.set(key,value) : url.searchParams.delete(key));
     history.replaceState(null, '', url);
   }
   function resetMusic() {
@@ -54,11 +65,9 @@ if (musicFilterForm) {
   buttons.forEach(button => button.addEventListener('click', () => {
     category = button.dataset.category; fillTags(); filterMusic();
   }));
-  musicFilterForm.addEventListener('submit', event => event.preventDefault());
-  musicFilterForm.addEventListener('reset', event => { event.preventDefault(); resetMusic(); });
   document.querySelector('#music-empty-reset').addEventListener('click', () => { resetMusic(); search.focus(); });
   search.addEventListener('input', filterMusic);
-  tags.addEventListener('change', filterMusic);
+
   fillTags(params.get('tag'));
   filterMusic();
   musicFilterForm.hidden = false;

@@ -675,28 +675,46 @@ async function loadProfilePortrait(profile, portrait, note) {
 
     if (!artworks.length) return;
 
-    let selectedIndex = 0;
-    if (artworks.length > 1) {
-      const rotationKey = `magiarchy-profile-portrait-${profile.slug}`;
-      const previousIndex = Number.parseInt(sessionStorage.getItem(rotationKey) ?? '-1', 10);
-      selectedIndex = Number.isInteger(previousIndex) ? (previousIndex + 1) % artworks.length : 0;
-      sessionStorage.setItem(rotationKey, String(selectedIndex));
-    }
-
-    const sourceImage = artworks[selectedIndex];
+    let selectedIndex = Math.floor(Math.random() * artworks.length);
+    const stage = createElement('div', 'profile-portrait-stage');
     const image = createElement('img');
-    image.src = sourceImage.getAttribute('src');
-    image.alt = `Character artwork of ${profile.name}`;
-    image.width = Number(sourceImage.getAttribute('width')) || 1200;
-    image.height = Number(sourceImage.getAttribute('height')) || 1200;
-    image.decoding = 'async';
-
-    const storyArc = sourceImage.closest('.gallery-card')?.dataset.storyArc;
-    const portraitLabel = storyArc ? `${storyArc.replace('-', ' ')} gallery portrait` : 'Gallery portrait';
-    note.textContent = artworks.length > 1
-      ? `${portraitLabel} ${selectedIndex + 1} of ${artworks.length}`
-      : portraitLabel;
-    portrait.replaceChildren(image, note);
+    stage.append(image);
+    const controls = createElement('div', 'profile-art-controls');
+    const previous = createElement('button', '', '←');
+    const next = createElement('button', '', '→');
+    previous.type = next.type = 'button';
+    previous.setAttribute('aria-label', 'Previous portrait');
+    next.setAttribute('aria-label', 'Next portrait');
+    note.setAttribute('aria-live', 'polite');
+    controls.append(previous, note, next);
+    const thumbnails = createElement('div', 'profile-art-thumbnails');
+    thumbnails.setAttribute('aria-label', 'Choose portrait');
+    const choices = artworks.map((source, index) => {
+      const button = createElement('button');
+      button.type = 'button';
+      button.setAttribute('aria-label', `Portrait ${index + 1}`);
+      const thumb = createElement('img');
+      thumb.src = source.getAttribute('src'); thumb.alt = ''; thumb.loading = 'lazy';
+      button.append(thumb);
+      button.addEventListener('click', () => show(index));
+      thumbnails.append(button);
+      return button;
+    });
+    function show(index) {
+      selectedIndex = (index + artworks.length) % artworks.length;
+      const source = artworks[selectedIndex];
+      image.src = source.getAttribute('src');
+      image.alt = source.alt || `Character artwork of ${profile.name}`;
+      const arc = source.closest('.gallery-card')?.dataset.storyArc;
+      note.textContent = `${arc ? arc.replace('-', ' ') + ' · ' : ''}${selectedIndex + 1} / ${artworks.length}`;
+      choices.forEach((button, i) => button.setAttribute('aria-pressed', String(i === selectedIndex)));
+    }
+    previous.addEventListener('click', () => show(selectedIndex - 1));
+    next.addEventListener('click', () => show(selectedIndex + 1));
+    previous.hidden = next.hidden = thumbnails.hidden = artworks.length < 2;
+    portrait.classList.add('has-art-browser');
+    portrait.replaceChildren(stage, controls, thumbnails);
+    show(selectedIndex);
   } catch (error) {
     console.warn(`Could not load gallery portrait for ${profile.name}.`, error);
   }
@@ -1085,7 +1103,8 @@ async function loadCharacterMoments(profile, timeline) {
       const link = createElement('a', 'character-moment-card');
       link.href = `moments.html?moment=${encodeURIComponent(entry.slug)}`;
       const top = createElement('div');
-      top.append(createElement('span', '', entry.code), createElement('small', '', `${entry.timelineLabel}${versionLabel}`));
+      const phase = window.MAGIARCHY_STORY_PHASES.find(phase => phase.id === entry.timelinePhase);
+      top.append(createElement('span', '', entry.code), createElement('small', '', `${phase?.title ?? entry.timelineLabel}${versionLabel}`));
       link.append(top, createElement('h3', '', entry.title), createElement('p', '', entry.summary), createElement('strong', '', 'Open Moment →'));
       return link;
     });
@@ -1096,6 +1115,8 @@ async function loadCharacterMoments(profile, timeline) {
       const anchor = entry.characterAnchors.find((candidate) => candidate.slug === profile.slug);
       const timelineItem = [...timeline.children].find((item) => item.dataset.timelineBeat === anchor?.beat);
       if (!timelineItem) return;
+      const phase = window.MAGIARCHY_STORY_PHASES.find(phase => phase.id === entry.timelinePhase);
+      if (phase) timelineItem.dataset.storyArc = phase.arc;
       let anchorList = timelineItem.querySelector('.character-timeline-moments');
       if (!anchorList) {
         anchorList = createElement('div', 'character-timeline-moments');
@@ -1108,6 +1129,7 @@ async function loadCharacterMoments(profile, timeline) {
       anchorList.append(link);
       timelineItem.classList.add('has-moments');
     });
+    window.decorateArcTimeline(timeline);
   } catch (error) {
     console.warn(`Moments could not be connected to ${profile.name}.`, error);
   }
@@ -1154,7 +1176,7 @@ function renderProfile(profile) {
     item.dataset.timelineBeat = title;
     item.append(createElement('span', 'character-timeline-marker', String(index + 1).padStart(2, '0')));
     const copy = createElement('div');
-    copy.append(createElement('h3', '', title));
+    copy.append(createElement('h3', '', title.replace(/^Arc \d+:\s*/i, '')));
     const detail = profile.timelineNotes?.[title];
     if (detail) copy.append(createElement('p', '', detail));
     item.append(copy);

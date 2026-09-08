@@ -29,7 +29,7 @@ function renderStoryTimeline() {
     marker.textContent = phase.number;
     const copy = document.createElement('div');
     const label = document.createElement('small');
-    label.textContent = `${phase.arcLabel} · ${phase.label}`;
+    label.textContent = phase.label;
     const title = document.createElement('h3');
     title.textContent = phase.title;
     const description = document.createElement('p');
@@ -38,6 +38,7 @@ function renderStoryTimeline() {
     item.append(marker, copy);
     return item;
   }));
+  window.decorateArcTimeline(timelineTrack);
 }
 
 function initializeTimelineDrag() {
@@ -243,7 +244,7 @@ function createChapterCard(entry) {
   timelineDot.setAttribute('aria-hidden', 'true');
   const timelineText = document.createElement('span');
   const phase = storyPhases.find((candidate) => candidate.id === entry.timelinePhase);
-  timelineText.textContent = `${phase?.arcLabel ?? 'Arc unassigned'} · ${entry.timelineLabel ?? 'Phase unassigned'}`;
+  timelineText.textContent = `${phase?.arcLabel ?? 'Arc unassigned'} · ${phase?.title ?? entry.timelineLabel ?? 'Phase unassigned'}`;
   timelinePosition.append(timelineDot, timelineText);
 
   const characters = document.createElement('div');

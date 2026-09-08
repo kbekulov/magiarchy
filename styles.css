@@ -4235,47 +4235,10 @@ a.status-member:hover {
   padding: 0 30px 50px;
 }
 
-.music-filters {
-  padding: 14px;
-  border: 1px solid #3b3d43;
-  border-radius: 7px;
-  background: #2b2d31;
-}
-
-.music-filter-fields {
-  display: grid;
-  grid-template-columns: minmax(0, 2fr) minmax(0, 1fr) auto;
-  align-items: end;
-  gap: 12px;
-}
-
-.music-filter-fields .gallery-select { width: 100%; min-width: 0; }
-.music-search-field input {
-  width: 100%;
-  min-width: 0;
-  height: 36px;
-  padding: 0 10px;
-  border: 1px solid #1e1f22;
-  border-radius: 4px;
-  background: #1e1f22;
-  color: var(--text);
-  font: inherit;
-  font-size: .75rem;
-}
-
-.music-categories { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 14px; }
-.music-categories button, .music-filter-reset {
-  min-height: 36px;
-  padding: 7px 12px;
-  border: 1px solid #45474e;
-  border-radius: 5px;
-  background: #232428;
-  color: #bfc2cb;
-  font: inherit;
-  font-size: .72rem;
-  cursor: pointer;
-}
-.music-categories button:hover, .music-filter-reset:hover { background: #36383f; color: #f2f3f5; }
+.music-filters { flex-wrap: wrap; }
+.music-tag-chips { flex-basis: 100%; }
+.archive-toolbar .music-tag-chips[hidden] { display: none; }
+.music-filter-reset { padding: 8px 12px; background: #232428; color: #dbdee1; border: 1px solid #45474e; border-radius: 4px; cursor: pointer; }
 .music-categories button[aria-pressed="true"] { color: #d2d4ff; border-color: #858aff; background: #35364e; }
 .music-filters :focus-visible, .music-empty button:focus-visible { outline: 2px solid #9297ff; outline-offset: 3px; }
 .music-results { margin: 14px 0; color: var(--muted); font-size: .72rem; }
@@ -10043,6 +10006,28 @@ a.moment-connection-card:hover {
   object-fit: cover;
   object-position: center;
 }
+
+.has-art-browser { display: flex; flex-direction: column; }
+.profile-portrait-stage { position: relative; flex: 1; min-height: 410px; }
+.profile-portrait-stage img { position: absolute; inset: 0; }
+.profile-art-controls { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 10px 14px; background: #232428; border-top: 1px solid #404249; }
+.profile-art-controls .profile-portrait-note { position: static; color: #dbdee1; }
+.profile-art-controls button { width: 36px; height: 36px; border: 1px solid #45474e; border-radius: 4px; background: #2b2d31; color: #dbdee1; cursor: pointer; }
+.profile-art-thumbnails { display: flex; gap: 8px; overflow-x: auto; padding: 0 14px 12px; background: #232428; }
+.profile-art-thumbnails button { flex: 0 0 44px; padding: 2px; border: 2px solid transparent; border-radius: 4px; background: #313338; cursor: pointer; }
+.profile-art-thumbnails button[aria-pressed="true"] { border-color: #9498ff; }
+.character-profile-portrait .profile-art-thumbnails img { width: 36px; height: 44px; min-height: 0; object-fit: cover; }
+.profile-art-controls[hidden], .profile-art-thumbnails[hidden] { display: none; }
+.has-art-browser button:focus-visible { outline: 2px solid #b5b8ff; outline-offset: 2px; }
+
+.timeline-arc-key { display: flex; flex-wrap: wrap; gap: 10px 18px; padding: 12px 18px; border-bottom: 1px solid #404249; font-size: .65rem; color: #b5bac1; }
+.arc-timeline > li, .timeline-arc-key > span { --arc-color: #85888f; }
+.arc-timeline > [data-story-arc="arc-0"], .timeline-arc-key > [data-story-arc="arc-0"] { --arc-color: #c1aa82; }
+.arc-timeline > [data-story-arc="arc-1"], .timeline-arc-key > [data-story-arc="arc-1"] { --arc-color: #9599d8; }
+.arc-timeline > [data-story-arc="arc-2"], .timeline-arc-key > [data-story-arc="arc-2"] { --arc-color: #80b9b4; }
+.timeline-arc-key > span { border-left: 3px solid var(--arc-color); padding-left: 8px; }
+.timeline-arc-band { display: block; height: 40px; box-sizing: border-box; padding: 7px 0; border-top: 2px solid var(--arc-color); color: var(--arc-color); font-size: .6rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.timeline-track.arc-timeline > li:not(:last-child)::after, .character-timeline-track.arc-timeline > li:not(:last-child)::after { top: 56px; }
 
 .profile-portrait-placeholder {
   display: grid;

@@ -23,6 +23,10 @@ Before starting any new user request, check the repository's `backlog/` folder f
 
 ## Product and design direction
 
+- Timeline event counts are flexible. Insert phases wherever continuity needs them; derive display numbering from order while preserving stable IDs. Use shared Arc bands and a labelled color key across Story, Moments, and character timelines. Arc names belong to this grouping, not episode titles. Do not invent chronology for unplaced events.
+- Music search and category/tag chips reuse the Characters archive-toolbar architecture and interaction styles. Keep metadata editable; initial author-permitted working assignments are not story canon.
+- Character catalog cards randomly select registered chibi artwork on each load, with explicit Arc labels for era-specific selections. Profile portraits provide previous/next controls and a scrollable thumbnail selector for all registered non-chibi portraits, preserving era captions and accessible button labels.
+
 - Intimacy remains a subplot beneath magic, politics, horror, institutions, and character duties. Preserve the confirmed order: Fionn's death, nonsexual hotel refuge, Doom later in the second half of Arc 1, the park encounter months later, subsequent reciprocal exploration and first intercourse, established intimacy, pregnancy, and the son's Arc 2 reveal. Do not collapse these milestones or fix Doom to the disappearance phase while the main timeline remains approximate.
 - Arc 0 is a tentative Fionn-centered prequel direction, not completed history. Consult `docs/arc-zero-development.md`. Keep optional encounters, MSF founding versus restructuring, and flask origins unresolved. Preserve Lynleit's junior-school bereavement and Kyrien's later introduction to the Magi world.
 - Kyrien's whiskey flask is recurring personal equipment, used in measured amounts for exceptional strain, not routine drinking or medical treatment. Establish familiarity before the park payoff; leave the bench before Lynleit's request and do not explain away the joke.

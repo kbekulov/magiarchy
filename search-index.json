@@ -1,6 +1,6 @@
 {
-  "generated": "2026-09-08T17:09:03.723Z",
-  "count": 457,
+  "generated": "2026-09-08T22:19:23.410Z",
+  "count": 458,
   "entries": [
     {
       "id": "page-characters",
@@ -40,7 +40,7 @@
       "type": "Archive page",
       "url": "music.html",
       "subtitle": "",
-      "text": "Music # music Themes, motifs, and scene tracks 1 playable track Audio archive Music Themes, motifs, and scene tracks. Listen here or download in MP3 and WAV. Search music Tag All tags Clear filters All Story Character Event Arc Miscellaneous 5 tracks and concepts AUDIO 01 ♫ Play track Soundtrack Available Theme 1 (stem) Your browser cannot play this audio. Use the download links below. 0:00 1:53 Playback is unavailable. Try downloading the MP3 below. Download MP3 ↓ 2.7 MB WAV ↓ 21.8 MB 01 ♫ Main theme Audio pending Reality Has Seams A restrained opening theme for the hidden world, built around pressure, secrecy, and the sense that reality is almost coming apart. Atmospheric Opening Placeholder 02 ♫ Character motif Audio pending Inherited Weight A possible Lynleit motif: controlled, formal, and carrying more responsibility than its melody initially admits. Lynleit Reflective Placeholder 03 ♫ Scene track Audio pending Containment Protocol A tense procedural track for controlled operations, incomplete information, and the moment a clean plan begins to fail. Containment Tension Placeholder 04 ♫ Aftermath Audio pending After the Spill A quiet aftermath piece for the space between survival and understanding, when the danger has passed but nothing feels resolved. Ambient Aftermath Placeholder No matching music No tracks or concepts match these filters. Some story and arc assignments have not been made. Clear filters ✎ Page notes Music Open 01 Replace placeholder tracks Add final titles, credits, artwork, and audio when music files are available. Notes are updated with the site code and published through GitHub Pages."
+      "text": "Music # music Themes, motifs, and scene tracks 1 playable track All music Story Character Event Arc Miscellaneous Audio archive Music Themes, motifs, and scene tracks. Listen here or download in MP3 and WAV. 5 tracks and concepts AUDIO 01 ♫ Play track Soundtrack Available Theme 1 (stem) Your browser cannot play this audio. Use the download links below. 0:00 1:53 Playback is unavailable. Try downloading the MP3 below. Download MP3 ↓ 2.7 MB WAV ↓ 21.8 MB 01 ♫ Main theme Audio pending Reality Has Seams A restrained opening theme for the hidden world, built around pressure, secrecy, and the sense that reality is almost coming apart. Atmospheric Opening Placeholder 02 ♫ Character motif Audio pending Inherited Weight A possible Lynleit motif: controlled, formal, and carrying more responsibility than its melody initially admits. Lynleit Reflective Placeholder 03 ♫ Scene track Audio pending Containment Protocol A tense procedural track for controlled operations, incomplete information, and the moment a clean plan begins to fail. Containment Tension Placeholder 04 ♫ Aftermath Audio pending After the Spill A quiet aftermath piece for the space between survival and understanding, when the danger has passed but nothing feels resolved. Ambient Aftermath Placeholder No matching music No tracks or concepts match these filters. Some story and arc assignments have not been made. Clear filters ✎ Page notes Music Open 01 Replace placeholder tracks Add final titles, credits, artwork, and audio when music files are available. Notes are updated with the site code and published through GitHub Pages."
     },
     {
       "id": "page-story",
@@ -2065,6 +2065,14 @@
       "url": "index.html#update-direct-prose-rule",
       "subtitle": "Home update feed",
       "text": "Archive Standard: Site update Home update feed PR Archive Standard 30 Aug 2026 · Prose rule Direct prose is now a permanent archive rule. Reader-facing records must avoid formulaic slogans, vague conclusions, and decorative contrasts, and state facts or writer guidance plainly. Browse the document archive →"
+    },
+    {
+      "id": "update-update-artwork-music-arcs",
+      "title": "Archive Update: Site update",
+      "type": "Update",
+      "url": "index.html#update-artwork-music-arcs",
+      "subtitle": "Home update feed",
+      "text": "Archive Update: Site update Home update feed 09 Archive Update 9 Sep 2026 · Music, portraits, and timelines Music uses the Characters search and filter layout, with tracks assigned to browsable categories. Character cards rotate chibi artwork and profiles offer a portrait browser. Shared Arc markers distinguish life periods across timelines, whose numbering now follows their order."
     },
     {
       "id": "update-update-reader-music-filters",
