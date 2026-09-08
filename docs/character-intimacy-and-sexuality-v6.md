@@ -28,10 +28,6 @@ In v7, Mikhail names the Cult of Inanna and her lineage's long association with 
 
 After the failed attempt, Lynleit's private research grows from curiosity and wounded pride. The park opportunity is spontaneous. Satisfaction in pleasing Kyrien matters alongside proving her competence, and his particular responses matter more than general theory. The later whiskey request is a practical aftertaste problem, not regret or rejection of him.
 
-Her preparation is theoretical, not evidence of earlier physical practice. The author's park direction moves from comfortable proximity to remembered failure and renewed curiosity. Initially she wants to establish her own competence; accepting practical assistance later need not erase that independence. She discovers an interest in affecting Kyrien's usual composure, while he begins noticing what his reactions reveal about her. These are character-specific developments, not universal claims about women or men. Their ordinary work clothes and the need to find the park exit remain part of the scene.
-
-The Bench under the Lamp v2 removes the invented kiss and leaves the intimate passage as an amber Writer notice. These author-confirmed intentions remain recorded here, but the omitted sequence is not yet demonstrated by the Chapter. The original detailed source is retained in the backlog archive.
-
 Their later pattern makes Lynleit the more frequent initiator. She is more vocal than Kyrien and likes teasing his reserve. The precise staging of those later encounters remains subject to the author's review.
 
 ### With Kyrien

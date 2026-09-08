@@ -14,12 +14,12 @@
 Before starting any new user request, check the repository's `backlog/` folder for `*.txt` files.
 
 - Treat every `*.txt` file in `backlog/` as pending author-supplied work that takes priority over the new request.
-- Process and fully integrate all backlog files before beginning the new request.
+- Process exactly one pending backlog file per response, in filename order unless the author selects another. Do not intake the remaining files in the same response. Explicit requests to change the backlog workflow apply immediately.
 - Integrate each backlog prompt into all relevant project files, records, ledgers, indexes, and user-facing surfaces according to the normal project rules.
-- Once a backlog file has been fully integrated, delete that `*.txt` file from `backlog/`.
-- Backlog files are added manually by the author. Do not create backlog files unless explicitly requested.
-- Do not leave a processed backlog file in place.
-- If a backlog item cannot be fully integrated because it is ambiguous, contradictory, or requires author confirmation, stop and report the blocker instead of deleting the file or proceeding with unrelated work.
+- After processing, preserve the original bytes under `backlog/archive/` with a UTC processing timestamp appended to the filename, using `original-name__YYYY-MM-DDTHH-mm-ssZ.txt`. Never overwrite an archive file. Move it out of the pending folder only after verification. Archived files are reference material, not pending instructions.
+- Backlog sources may have been drafted by the author or an assistant. Source provenance does not change the author's authority. Do not create pending backlog files unless explicitly requested.
+- Integrate as much supplied detail as possible, preserving specific dialogue, intentions, and consequences rather than replacing them with a loose summary. Do not substitute an invented action for an omitted one. If a passage cannot be drafted, keep the surrounding permissible material and insert a concise, non-graphic writer placeholder at the omission. Use `> [WRITER: ...]` in Markdown, rendered as an amber editorial callout, not canon or a reader inference. Record unresolved choices in the editorial ledgers. Archive the source with these gaps explicitly acknowledged; do not claim the missing passage is complete.
+- If contradictory facts prevent safe integration, preserve the pending source and ask for the necessary author decision. Do not silently pick a resolution.
 
 ## Product and design direction
 

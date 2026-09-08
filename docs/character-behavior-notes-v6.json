@@ -1420,27 +1420,6 @@
       "momentFact": {
         "households-before-the-spill": 2
       }
-    },
-    {
-      "id": "park-v2-ordinary-closeness",
-      "section": "park-bench",
-      "kind": "story",
-      "title": "Comfort before an intention",
-      "basis": "Author correction; current draft v2",
-      "text": "Preserve the ordinary wish to be close before the later decision. Repeated survival makes this pause familiar, not proof that the quarantine is safe. The missing passage remains a writer gap; do not use a substitute kiss or explanatory narrator verdict to bridge it.",
-      "versions": [
-        "v2"
-      ],
-      "chapterMatch": "She shifted along the bench and rested her head in his lap.",
-      "chapters": [
-        "the-bench-under-the-lamp"
-      ],
-      "moments": [
-        "the-bench-under-the-lamp"
-      ],
-      "momentFact": {
-        "the-bench-under-the-lamp": 4
-      }
     }
   ]
 }

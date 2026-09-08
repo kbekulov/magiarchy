@@ -1,7 +1,5 @@
 # Character Behaviour Audit
 
-The park's current v2 draft includes an amber Writer notice. Advisory notes describe author-supplied characterization but do not turn the undrafted passage into reader-visible evidence.
-
 This writer-facing record tests whether a reaction feels specific to the character who performs it. The notes combine established history, physical circumstances, sex, social expectations, and MBTI function emphasis. They are possibilities for the author to accept, reject, or revise. They are not canon until they enter a story record.
 
 ## How the audit works

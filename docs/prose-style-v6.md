@@ -217,18 +217,10 @@ Version 3 derives from the earlier Version 2 text in commit `868fc31`, before th
 
 **Embodied motive and rationalization:** Lynleit's curiosity and attachment precede the research she uses to manage embarrassment. Distinguish general knowledge from skill adapted to one person. Reuse an established tell sparingly rather than narrating a lesson about the callback.
 
-**Ellipsis and unfinished prose:** The Bench under the Lamp v2 leaves a marked writer gap between the supplied approach and aftermath. Do not disguise an undrafted passage as a deliberate finished ellipsis, or replace the omitted action with an invented kiss. Its preface describes only what the prose shows or supports; the Moment's continuity keeps the author's separate milestones explicit.
+**Ellipsis and aftermath, working implementation:** The Bench under the Lamp cuts from chosen closeness to afterward. Its preface describes only what the prose shows or supports; the Moment's continuity keeps the author's distinction between oral intimacy and later intercourse explicit. A cut away must not accidentally merge those milestones.
 
 **Delayed comic consequence:** let the bench seem finished, let Lynleit enjoy her success, and move the pair down the path before the whiskey request. Kyrien's decision not to demand an explanation preserves the last exchange. The flask should already have an ordinary use, not appear solely to serve this joke.
 
 **Prequel restraint:** Arc 0 develops unfinished habits through candidate experiences rather than repeating adult personalities in younger bodies. Keep its unselected scenes in development records. Fionn's own work and household remain its center.
 
 **Limit:** these directions do not make grief a prescription for sex, ancestry an obligation, alcohol a treatment, or every private gesture an interpretable symbol.
-
-### Author correction: source fidelity and character blocking
-
-**Blocking:** retain the supplied approach, setting, and sequence where drafted. A substitute romantic gesture changes the scene even if the emotional destination seems similar. The park revision removes the unrequested kiss and preserves the original research-success line.
-
-**Character exposition:** preparation need not equal experience. Lynleit brings theoretical knowledge, learns that a particular person does not behave exactly like an account on paper, and becomes interested in his responses beyond her initial wish to prove herself. Kyrien also observes her. Keep that reciprocal observation distinct from a one-sided demonstration of mastery. The complete intimate passage remains for the author, not concealed inside instructional prose.
-
-**Editorial lacuna:** use `> [WRITER: concise non-graphic completion notice]` for an undrafted passage. The amber callout is an editorial marker, not a fictional event. Preserve the source in the timestamped backlog archive and retain the surrounding dialogue and aftermath. Do not count the gap as shown or inferred evidence in the preface.

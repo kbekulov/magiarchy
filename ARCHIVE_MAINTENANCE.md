@@ -12,7 +12,9 @@ This file is the concise operating map for future agents and maintainers. `AGENT
 
 ## Backlog intake
 
-Before beginning ordinary work, inspect `backlog/` for author-supplied `*.txt` files. Each file takes priority over the incoming request and must be integrated through every affected source, public surface, editorial ledger, entity link, search record, and update-feed entry. Delete a backlog file only after its contents have been fully integrated and verified. If its meaning is ambiguous or conflicts with established canon, preserve the file and stop for author direction.
+Inspect only the pending `backlog/*.txt` queue. Process exactly one file per response, in filename order unless the author selects another, before ordinary requested work. Workflow changes apply immediately. Both author-drafted and assistant-drafted sources can carry author-approved direction. Preserve specific details, dialogue, and consequences across the relevant sources, ledgers, links, and public surfaces.
+
+After verification, move the unchanged source into `backlog/archive/original-name__YYYY-MM-DDTHH-mm-ssZ.txt` using a UTC timestamp. Never overwrite or delete archived originals, and never treat that subfolder as a pending queue. A concise non-graphic `> [WRITER: ...]` placeholder marks any undrafted passage in Chapters or Docs, with a shared amber callout and visible Writer notice label. Preserve permissible surrounding material without inventing replacement actions. Such a gap is not completed prose or a reader inference. Contradictions that block integration still require author direction; keep that source pending.
 
 ## Source and surface map
 
@@ -168,6 +170,8 @@ Physicians have no knowledge of magic unless the author establishes an exception
 
 Music cards preserve the archive's flat artwork and compact metadata layout. Play only the supplied MP3, load audio on visitor action rather than autoplaying or preloading full tracks, and expose separate same-origin MP3 and WAV download links with file sizes. Keep unrecorded concepts inactive. Do not assign a supplied recording to a concept, character, or scene without author confirmation. Preserve the supplied audio bytes and filenames when importing into `media/music/`.
 
+Music search and category/tag filtering use each card's explicit `data-story`, `data-character`, `data-event`, `data-arc`, and `data-misc` pipe-separated metadata. Empty fields mean unassigned. Categories may overlap; do not infer an Arc or character from the sound. Keep counts, empty states, shareable filter URLs, and resets synchronized. Filtering a playing card out pauses it. Preserve the shared Safari-safe masonry layout.
+
 The playable card banner is the primary play/pause button, operable by pointer, touch, Enter, or Space. Use a compact custom seek/time/mute row, synchronized with actual media events, and keep download actions independent. Do not show native browser controls when the custom player is active; retain them as a no-JavaScript fallback. Keep loading, paused, ended, and failed states readable without relying on color alone. Custom seek tracks must use solid fills, never gradients.
 
 - The design is dark, flat, compact, and original to MAGIARCHY.
@@ -175,6 +179,7 @@ The playable card banner is the primary play/pause button, operable by pointer, 
 - Entity links look like ordinary prose until hover or keyboard focus.
 - Interfaces must work with mouse, keyboard, and touch, with restrained motion and reduced-motion support.
 - Filter bars with labeled fields keep a visible label on every field, consistent control heights, and bottom-aligned field groups so label wrapping cannot stagger controls within a row. Verify desktop, intermediate two-column, and stacked mobile layouts; do not compensate with browser-specific offsets.
+- In Chapter reader mode, the main pane contains the timeline's top margin even when the feed header and catalog heading are hidden. Do not let the first visible child's margin collapse outside the page background; verify the gap on mobile as well as desktop.
 - Weapon fact grids use row-aware dividers: vertical borders separate columns only, horizontal borders separate rows, and an unpaired final fact spans the row. Stacked mobile facts have horizontal separators only.
 - Masonry catalogs use the shared measured CSS Grid layout in `script.js`, never CSS multi-column layout. Direct masonry items remain transform-free while hover feedback may use stable borders, shadows, colors, media scale, and nested controls. This avoids Safari column-fragment repaint failures and keeps card placement consistent across browsers.
 - Primary navigation remains in the top bar. Every detailed view has breadcrumbs. Every page has the ownership footer and Page notes sidebar.

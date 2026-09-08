@@ -4235,6 +4235,61 @@ a.status-member:hover {
   padding: 0 30px 50px;
 }
 
+.music-filters {
+  padding: 14px;
+  border: 1px solid #3b3d43;
+  border-radius: 7px;
+  background: #2b2d31;
+}
+
+.music-filter-fields {
+  display: grid;
+  grid-template-columns: minmax(0, 2fr) minmax(0, 1fr) auto;
+  align-items: end;
+  gap: 12px;
+}
+
+.music-filter-fields .gallery-select { width: 100%; min-width: 0; }
+.music-search-field input {
+  width: 100%;
+  min-width: 0;
+  height: 36px;
+  padding: 0 10px;
+  border: 1px solid #1e1f22;
+  border-radius: 4px;
+  background: #1e1f22;
+  color: var(--text);
+  font: inherit;
+  font-size: .75rem;
+}
+
+.music-categories { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 14px; }
+.music-categories button, .music-filter-reset {
+  min-height: 36px;
+  padding: 7px 12px;
+  border: 1px solid #45474e;
+  border-radius: 5px;
+  background: #232428;
+  color: #bfc2cb;
+  font: inherit;
+  font-size: .72rem;
+  cursor: pointer;
+}
+.music-categories button:hover, .music-filter-reset:hover { background: #36383f; color: #f2f3f5; }
+.music-categories button[aria-pressed="true"] { color: #d2d4ff; border-color: #858aff; background: #35364e; }
+.music-filters :focus-visible, .music-empty button:focus-visible { outline: 2px solid #9297ff; outline-offset: 3px; }
+.music-results { margin: 14px 0; color: var(--muted); font-size: .72rem; }
+.music-empty { padding: 32px 20px; text-align: center; border: 1px dashed #45474e; border-radius: 7px; background: #282a2e; }
+.music-empty h2 { font-size: 1rem; }
+.music-empty p { color: var(--muted); font-size: .8rem; }
+.music-filters[hidden], .music-empty[hidden] { display: none; }
+
+@media (max-width: 620px) {
+  .music-filter-fields { grid-template-columns: minmax(0, 1fr) auto; }
+  .music-search-field { grid-column: 1 / -1; }
+  .music-categories button, .music-filter-reset, .music-filter-fields input, .music-filter-fields select { min-height: 44px; }
+}
+
 .music-card-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -5242,6 +5297,31 @@ a.status-member:hover {
 
 .story-reader-open .story-timeline {
   margin-top: 22px;
+}
+
+/* Keep the first visible child's margin inside the pane when the feed is hidden. */
+.story-reader-open .docs-main-pane {
+  display: flow-root;
+}
+
+.writer-notice {
+  margin-block: 1.5em;
+  padding: 16px 18px;
+  border: 1px solid #75613b;
+  border-left: 3px solid #d8b66a;
+  border-radius: 6px;
+  background: #302d26;
+  color: #e2d6bc;
+  font-style: normal;
+}
+
+.writer-notice > strong {
+  display: block;
+  margin-bottom: 6px;
+  color: #e9c77e;
+  font-size: .72rem;
+  letter-spacing: .04em;
+  text-transform: uppercase;
 }
 
 .chapter-preface-legend {

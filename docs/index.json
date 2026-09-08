@@ -5,11 +5,11 @@
     "topic": "Writer's Style Reference",
     "file": "prose-style.md",
     "updated": "2026-09-08",
-    "description": "House style for practical exposition, dialogue, mock-liturgical comedy, prop business, and character-specific embarrassment.",
+    "description": "House style for voice, practical exposition, comic timing, source-faithful blocking, and visible writer gaps.",
     "speakers": [
       "Author's Desk"
     ],
-    "defaultVersion": "v6",
+    "defaultVersion": "v7",
     "versions": [
       {
         "id": "v1",
@@ -48,10 +48,17 @@
       },
       {
         "id": "v6",
-        "label": "v6 · Current",
-        "file": "prose-style.md",
+        "label": "v6",
+        "file": "prose-style-v6.md",
         "updated": "2026-09-08",
         "description": "House style for practical exposition, dialogue, mock-liturgical comedy, prop business, and character-specific embarrassment."
+      },
+      {
+        "id": "v7",
+        "label": "v7 · Current",
+        "file": "prose-style.md",
+        "updated": "2026-09-08",
+        "description": "House style for voice, practical exposition, comic timing, source-faithful blocking, and visible writer gaps."
       }
     ]
   },
@@ -61,11 +68,11 @@
     "topic": "Editorial Reference",
     "file": "prose-and-scene-guidance.md",
     "updated": "2026-09-08",
-    "description": "Revision boundaries and author-confirmed development directions, including the implied family allusion in Doom v7.",
+    "description": "Revision boundaries, source fidelity, marked omissions, and the current Chapter chronology.",
     "speakers": [
       "Author's Desk"
     ],
-    "defaultVersion": "v6",
+    "defaultVersion": "v7",
     "versions": [
       {
         "id": "v1",
@@ -104,10 +111,17 @@
       },
       {
         "id": "v6",
-        "label": "v6 · Current",
-        "file": "prose-and-scene-guidance.md",
+        "label": "v6",
+        "file": "prose-and-scene-guidance-v6.md",
         "updated": "2026-09-08",
         "description": "Revision boundaries and author-confirmed development directions, including the implied family allusion in Doom v7."
+      },
+      {
+        "id": "v7",
+        "label": "v7 · Current",
+        "file": "prose-and-scene-guidance.md",
+        "updated": "2026-09-08",
+        "description": "Revision boundaries, source fidelity, marked omissions, and the current Chapter chronology."
       }
     ]
   },
@@ -117,11 +131,11 @@
     "topic": "Writer's Character Reference",
     "file": "character-behavior-audit.md",
     "updated": "2026-09-08",
-    "description": "Version-scoped F, M, and S advisory notes, including Mikhail's mock blessing and Lynleit's response in Doom v7.",
+    "description": "Version-scoped F, M, and S advisory notes, including the park v2 approach and its writer gap.",
     "speakers": [
       "Character Archive"
     ],
-    "defaultVersion": "v6",
+    "defaultVersion": "v7",
     "versions": [
       {
         "id": "v1",
@@ -165,10 +179,18 @@
       },
       {
         "id": "v6",
-        "label": "v6 · Current",
-        "file": "character-behavior-audit.md",
+        "label": "v6",
+        "file": "character-behavior-audit-v6.md",
         "updated": "2026-09-08",
         "description": "Version-scoped F, M, and S advisory notes, including Mikhail's mock blessing and Lynleit's response in Doom v7.",
+        "behaviorFile": "character-behavior-notes-v6.json"
+      },
+      {
+        "id": "v7",
+        "label": "v7 · Current",
+        "file": "character-behavior-audit.md",
+        "updated": "2026-09-08",
+        "description": "Version-scoped F, M, and S advisory notes, including the park v2 approach and its writer gap.",
         "behaviorFile": "character-behavior-notes.json"
       }
     ]
@@ -179,11 +201,11 @@
     "topic": "Writer's Character Reference",
     "file": "character-intimacy-and-sexuality.md",
     "updated": "2026-09-08",
-    "description": "Character-specific intimacy and attraction, distinguishing confirmed background from working interpretations and preserving Doom v7's incomplete encounter.",
+    "description": "Character-specific attraction and intimacy, with the park scene’s author-confirmed intentions distinguished from its unfinished passage.",
     "speakers": [
       "Character Archive"
     ],
-    "defaultVersion": "v6",
+    "defaultVersion": "v7",
     "versions": [
       {
         "id": "v1",
@@ -227,10 +249,18 @@
       },
       {
         "id": "v6",
-        "label": "v6 · Current",
-        "file": "character-intimacy-and-sexuality.md",
+        "label": "v6",
+        "file": "character-intimacy-and-sexuality-v6.md",
         "updated": "2026-09-08",
         "description": "Character-specific intimacy and attraction, distinguishing confirmed background from working interpretations and preserving Doom v7's incomplete encounter.",
+        "tensionFile": "sexual-tension-notes-v6.json"
+      },
+      {
+        "id": "v7",
+        "label": "v7 · Current",
+        "file": "character-intimacy-and-sexuality.md",
+        "updated": "2026-09-08",
+        "description": "Character-specific attraction and intimacy, with the park scene’s author-confirmed intentions distinguished from its unfinished passage.",
         "tensionFile": "sexual-tension-notes.json"
       }
     ]
@@ -302,11 +332,11 @@
     "topic": "Editorial Ledger",
     "file": "contradictions-to-resolve.md",
     "updated": "2026-09-08",
-    "description": "Cross-record conflicts and version decisions; shared Doom continuity follows v7.",
+    "description": "Current cross-version decisions, including Doom v7 and the park v2 correction.",
     "speakers": [
       "Author's Desk"
     ],
-    "defaultVersion": "v6",
+    "defaultVersion": "v7",
     "versions": [
       {
         "id": "v1",
@@ -345,10 +375,17 @@
       },
       {
         "id": "v6",
-        "label": "v6 · Current",
-        "file": "contradictions-to-resolve.md",
+        "label": "v6",
+        "file": "contradictions-to-resolve-v6.md",
         "updated": "2026-09-08",
         "description": "Cross-record conflicts and version decisions; shared Doom continuity follows v7."
+      },
+      {
+        "id": "v7",
+        "label": "v7 · Current",
+        "file": "contradictions-to-resolve.md",
+        "updated": "2026-09-08",
+        "description": "Current cross-version decisions, including Doom v7 and the park v2 correction."
       }
     ]
   },

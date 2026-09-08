@@ -124,6 +124,18 @@ function renderChapterMarkdown(markdown) {
     }
 
     if (line.startsWith('> ')) {
+      const notice = line.match(/^> \[WRITER:\s*(.*?)\]$/);
+      if (notice) {
+        const aside = document.createElement('aside');
+        aside.className = 'writer-notice';
+        aside.setAttribute('aria-label', 'Writer notice');
+        const label = document.createElement('strong');
+        label.textContent = 'Writer notice';
+        aside.append(label, document.createTextNode(notice[1]));
+        fragment.append(aside);
+        index += 1;
+        continue;
+      }
       const quote = document.createElement('blockquote');
       appendChapterInline(line.slice(2), quote);
       fragment.append(quote);

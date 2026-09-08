@@ -1,4 +1,69 @@
 const musicPlayers = Array.from(document.querySelectorAll('.music-player'));
+
+// Metadata is author-assigned. Empty facets do not imply an Arc or character.
+const musicFilterForm = document.querySelector('.music-filters');
+if (musicFilterForm) {
+  const facets = ['story', 'character', 'event', 'arc', 'misc'];
+  const cards = [...document.querySelectorAll('.music-card')].map(card => ({
+    card,
+    tags: Object.fromEntries(facets.map(key => [key, (card.dataset[key] || '').split('|').filter(Boolean)])),
+    text: [card.querySelector('h2')?.textContent, card.querySelector('.music-card-body > p')?.textContent, ...facets.map(key => card.dataset[key] || '')].join(' ').toLocaleLowerCase()
+  }));
+  const search = document.querySelector('#music-search');
+  const tags = document.querySelector('#music-tag');
+  const buttons = [...document.querySelectorAll('.music-categories button')];
+  const result = document.querySelector('#music-results');
+  const empty = document.querySelector('.music-empty');
+  let category = 'all';
+  const params = new URLSearchParams(location.search);
+  search.value = params.get('q') || '';
+  if (facets.includes(params.get('category'))) category = params.get('category');
+
+  function fillTags(selected = 'all') {
+    const keys = category === 'all' ? facets : [category];
+    const values = [...new Set(cards.flatMap(item => keys.flatMap(key => item.tags[key])))].sort((a,b) => a.localeCompare(b));
+    tags.replaceChildren(new Option('All tags', 'all'), ...values.map(value => new Option(value, value)));
+    tags.value = values.includes(selected) ? selected : 'all';
+    tags.disabled = values.length === 0;
+  }
+
+  function filterMusic() {
+    const terms = search.value.trim().toLocaleLowerCase().split(/\s+/).filter(Boolean);
+    let count = 0;
+    let playable = 0;
+    cards.forEach(item => {
+      const keys = category === 'all' ? facets : [category];
+      const scopedTags = keys.flatMap(key => item.tags[key]);
+      const visible = (category === 'all' || scopedTags.length > 0)
+        && (tags.value === 'all' || scopedTags.includes(tags.value))
+        && terms.every(term => item.text.includes(term));
+      item.card.hidden = !visible;
+      if (visible) { count++; if (item.card.querySelector('audio')) playable++; }
+      else item.card.querySelector('audio')?.pause();
+    });
+    result.textContent = `${count} of ${cards.length} tracks and concepts · ${playable} playable`;
+    empty.hidden = count !== 0;
+    buttons.forEach(button => button.setAttribute('aria-pressed', String(button.dataset.category === category)));
+    const url = new URL(location.href);
+    [['q', search.value.trim()], ['category', category === 'all' ? '' : category], ['tag', tags.value === 'all' ? '' : tags.value]].forEach(([key,value]) => value ? url.searchParams.set(key,value) : url.searchParams.delete(key));
+    history.replaceState(null, '', url);
+  }
+  function resetMusic() {
+    category = 'all'; search.value = ''; fillTags(); filterMusic();
+  }
+  buttons.forEach(button => button.addEventListener('click', () => {
+    category = button.dataset.category; fillTags(); filterMusic();
+  }));
+  musicFilterForm.addEventListener('submit', event => event.preventDefault());
+  musicFilterForm.addEventListener('reset', event => { event.preventDefault(); resetMusic(); });
+  document.querySelector('#music-empty-reset').addEventListener('click', () => { resetMusic(); search.focus(); });
+  search.addEventListener('input', filterMusic);
+  tags.addEventListener('change', filterMusic);
+  fillTags(params.get('tag'));
+  filterMusic();
+  musicFilterForm.hidden = false;
+}
+
 const musicTime = (seconds) => {
   const value = Math.max(0, Math.floor(Number.isFinite(seconds) ? seconds : 0));
   return `${Math.floor(value / 60)}:${String(value % 60).padStart(2, '0')}`;

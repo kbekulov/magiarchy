@@ -439,8 +439,8 @@
     "slug": "the-bench-under-the-lamp",
     "number": "Chapter 08",
     "title": "The Bench under the Lamp",
-    "status": "Draft adaptation",
-    "file": "the-bench-under-the-lamp.md",
+    "status": "Draft with writer gap",
+    "file": "the-bench-under-the-lamp-v2.md",
     "updated": "2026-09-08",
     "description": "An evening walk leaves Lynleit and Kyrien beneath a park lamp. A joke about their failed attempt becomes a private encounter, followed by an unexpected request for his flask.",
     "characters": [
@@ -454,9 +454,9 @@
       "Kyrien takes one small drink from his flask after the long day and returns it to its usual pocket.",
       "Their comfortable proximity and teasing bring up the failed curse encounter months earlier.",
       "Lynleit has spent the intervening months researching intimacy; the opportunity on the bench is spontaneous.",
-      "They kiss, and the scene cuts away before the private encounter.",
+      "Lynleit rests her head in Kyrien’s lap.",
       {
-        "text": "The cut away and Lynleit's later claim of successful research indicate that their intimacy has progressed beyond the failed attempt.",
+        "text": "Lynleit’s satisfaction and claim of successful research indicate progress beyond the earlier failed encounter.",
         "status": "inferred"
       },
       "Lynleit calls the research successful, and they leave the bench before Kyrien asks whether she intends to win arguments this way.",
@@ -465,6 +465,57 @@
         "status": "inferred"
       },
       "Kyrien hands her the flask without pressing for an explanation, and they continue walking."
+    ],
+    "defaultVersion": "v2",
+    "versions": [
+      {
+        "id": "v1",
+        "label": "v1",
+        "file": "the-bench-under-the-lamp.md",
+        "status": "Draft adaptation",
+        "events": [
+          "Lynleit and Kyrien walk through the quarantined park after work, lose their way, and stop at a bench beneath a lamppost.",
+          "Kyrien takes one small drink from his flask after the long day and returns it to its usual pocket.",
+          "Their comfortable proximity and teasing bring up the failed curse encounter months earlier.",
+          "Lynleit has spent the intervening months researching intimacy; the opportunity on the bench is spontaneous.",
+          "They kiss, and the scene cuts away before the private encounter.",
+          {
+            "text": "The cut away and Lynleit's later claim of successful research indicate that their intimacy has progressed beyond the failed attempt.",
+            "status": "inferred"
+          },
+          "Lynleit calls the research successful, and they leave the bench before Kyrien asks whether she intends to win arguments this way.",
+          {
+            "text": "Her delayed request for whiskey and refusal to explain suggest an unexpected practical consequence without undoing her satisfaction.",
+            "status": "inferred"
+          },
+          "Kyrien hands her the flask without pressing for an explanation, and they continue walking."
+        ],
+        "description": "An evening walk leaves Lynleit and Kyrien beneath a park lamp. A joke about their failed attempt becomes a private encounter, followed by an unexpected request for his flask."
+      },
+      {
+        "id": "v2",
+        "label": "v2",
+        "file": "the-bench-under-the-lamp-v2.md",
+        "status": "Draft with writer gap",
+        "events": [
+          "Lynleit and Kyrien walk through the quarantined park after work, lose their way, and stop at a bench beneath a lamppost.",
+          "Kyrien takes one small drink from his flask after the long day and returns it to its usual pocket.",
+          "Their comfortable proximity and teasing bring up the failed curse encounter months earlier.",
+          "Lynleit has spent the intervening months researching intimacy; the opportunity on the bench is spontaneous.",
+          "Lynleit rests her head in Kyrien’s lap.",
+          {
+            "text": "Lynleit’s satisfaction and claim of successful research indicate progress beyond the earlier failed encounter.",
+            "status": "inferred"
+          },
+          "Lynleit calls the research successful, and they leave the bench before Kyrien asks whether she intends to win arguments this way.",
+          {
+            "text": "Her delayed request for whiskey and refusal to explain suggest an unexpected practical consequence without undoing her satisfaction.",
+            "status": "inferred"
+          },
+          "Kyrien hands her the flask without pressing for an explanation, and they continue walking."
+        ],
+        "description": "An evening walk leaves Lynleit and Kyrien beneath a park lamp. A joke about their failed attempt becomes a private encounter, followed by an unexpected request for his flask."
+      }
     ]
   }
 ]

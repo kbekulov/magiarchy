@@ -1940,9 +1940,9 @@
       "Kyrien takes one small drink from his flask after the long day and returns it to its usual pocket.",
       "Their comfortable proximity and teasing bring up the failed curse encounter months earlier.",
       "Lynleit has spent the intervening months researching intimacy; the opportunity on the bench is spontaneous.",
-      "They kiss, and the scene cuts away before the private encounter.",
+      "Lynleit rests her head in Kyrien’s lap.",
       {
-        "text": "The cut away and Lynleit's later claim of successful research indicate that their intimacy has progressed beyond the failed attempt.",
+        "text": "Lynleit’s satisfaction and claim of successful research indicate progress beyond the earlier failed encounter.",
         "status": "inferred"
       },
       "Lynleit calls the research successful, and they leave the bench before Kyrien asks whether she intends to win arguments this way.",
@@ -1954,12 +1954,72 @@
     ],
     "openQuestions": [
       "What operational work precedes the walk, and which familiar precautions make this pause possible?",
-      "When does their later first intercourse occur?"
+      "When does their later first intercourse occur?",
+      "Complete the marked Chapter passage from the archived source; the current draft does not depict the intimate sequence."
     ],
-    "continuityBefore": "Fionn's death and the hotel refuge precede Doom. Months of private theoretical research follow its failed attempt. Lynleit knows Kyrien's flask and usual carrying place; she has not planned this evening's encounter.",
+    "continuityBefore": "Fionn's death and the hotel refuge precede Doom. Months of private theoretical research follow its failed attempt. Lynleit knows Kyrien's flask and usual carrying place; she has not planned this evening's encounter. The first approach is comfortable proximity, not a pre-planned sexual procedure. Her preparation was theoretical, not prior physical practice.",
     "continuityAfter": "The author's scene establishes successful oral intimacy, not intercourse. Later reciprocal exploration and first intercourse remain separate milestones. Pregnancy and the Arc 2 child reveal occur later.",
     "chapterSlug": "the-bench-under-the-lamp",
-    "updated": "2026-09-08"
+    "updated": "2026-09-08",
+    "defaultVersion": "v2",
+    "chapterVersion": "v2",
+    "versions": [
+      {
+        "id": "v1",
+        "label": "v1",
+        "known": [
+          "Lynleit and Kyrien walk through the quarantined park after work, lose their way, and stop at a bench beneath a lamppost.",
+          "Kyrien takes one small drink from his flask after the long day and returns it to its usual pocket.",
+          "Their comfortable proximity and teasing bring up the failed curse encounter months earlier.",
+          "Lynleit has spent the intervening months researching intimacy; the opportunity on the bench is spontaneous.",
+          "They kiss, and the scene cuts away before the private encounter.",
+          {
+            "text": "The cut away and Lynleit's later claim of successful research indicate that their intimacy has progressed beyond the failed attempt.",
+            "status": "inferred"
+          },
+          "Lynleit calls the research successful, and they leave the bench before Kyrien asks whether she intends to win arguments this way.",
+          {
+            "text": "Her delayed request for whiskey and refusal to explain suggest an unexpected practical consequence without undoing her satisfaction.",
+            "status": "inferred"
+          },
+          "Kyrien hands her the flask without pressing for an explanation, and they continue walking."
+        ],
+        "openQuestions": [
+          "What operational work precedes the walk, and which familiar precautions make this pause possible?",
+          "When does their later first intercourse occur?"
+        ],
+        "continuityBefore": "Fionn's death and the hotel refuge precede Doom. Months of private theoretical research follow its failed attempt. Lynleit knows Kyrien's flask and usual carrying place; she has not planned this evening's encounter.",
+        "chapterVersion": "v1"
+      },
+      {
+        "id": "v2",
+        "label": "v2",
+        "known": [
+          "Lynleit and Kyrien walk through the quarantined park after work, lose their way, and stop at a bench beneath a lamppost.",
+          "Kyrien takes one small drink from his flask after the long day and returns it to its usual pocket.",
+          "Their comfortable proximity and teasing bring up the failed curse encounter months earlier.",
+          "Lynleit has spent the intervening months researching intimacy; the opportunity on the bench is spontaneous.",
+          "Lynleit rests her head in Kyrien’s lap.",
+          {
+            "text": "Lynleit’s satisfaction and claim of successful research indicate progress beyond the earlier failed encounter.",
+            "status": "inferred"
+          },
+          "Lynleit calls the research successful, and they leave the bench before Kyrien asks whether she intends to win arguments this way.",
+          {
+            "text": "Her delayed request for whiskey and refusal to explain suggest an unexpected practical consequence without undoing her satisfaction.",
+            "status": "inferred"
+          },
+          "Kyrien hands her the flask without pressing for an explanation, and they continue walking."
+        ],
+        "openQuestions": [
+          "What operational work precedes the walk, and which familiar precautions make this pause possible?",
+          "When does their later first intercourse occur?",
+          "Complete the marked Chapter passage from the archived source; the current draft does not depict the intimate sequence."
+        ],
+        "continuityBefore": "Fionn's death and the hotel refuge precede Doom. Months of private theoretical research follow its failed attempt. Lynleit knows Kyrien's flask and usual carrying place; she has not planned this evening's encounter. The first approach is comfortable proximity, not a pre-planned sexual procedure. Her preparation was theoretical, not prior physical practice.",
+        "chapterVersion": "v2"
+      }
+    ]
   },
   {
     "slug": "households-before-the-spill",

@@ -77,6 +77,10 @@ assert.ok(phaseContext.window.MAGIARCHY_STORY_ARCS.some(a => a.id === 'arc-0'), 
 const park = chapters.find(c => c.slug === 'the-bench-under-the-lamp');
 assert.ok(park && park.timelinePhase === 'late-arc-one', 'Park milestone placement missing');
 const parkText = read(`story/${park.file}`);
+assert.equal(park.defaultVersion, 'v2', 'Park: source correction is not default');
+assert.ok(parkText.includes('> [WRITER:'), 'Park: missing visible writer gap');
+assert.ok(!parkText.includes('she kissed him'), 'Park: rejected substitute kiss returned');
+assert.ok(read('story/the-bench-under-the-lamp.md').includes('she kissed him'), 'Park: archived v1 was overwritten');
 assert.ok(parkText.indexOf('They left the lamp behind.') < parkText.indexOf('Give me your whiskey.'), 'Flask payoff occurs too early');
 assert.ok(parkText.indexOf('Kyrien took out his flask.') < parkText.indexOf('Give me your whiskey.'), 'Flask is not established before payoff');
 assert.ok(json('items/index.json').items.some(i => i.slug === 'kyriens-whiskey-flask'), 'Missing flask item');
@@ -164,6 +168,13 @@ for (const doc of json('docs/index.json').filter(d => d.versions?.length)) {
 }
 
 const music = read('music.html');
+for (const facet of ['story','character','event','arc','misc']) {
+  assert.ok(music.includes(`data-category="${facet}"`), `Music: missing ${facet} category`);
+  assert.ok(music.includes(`data-${facet}=`), `Music: missing explicit ${facet} metadata`);
+}
+assert.ok(music.includes('id="music-search"') && music.includes('id="music-tag"'), 'Music: missing search or tags');
+assert.ok(/\.story-reader-open \.docs-main-pane\s*\{\s*display: flow-root;/.test(read('styles.css')), 'Chapter reader: collapsed top-margin protection missing');
+for (const file of ['story.js', 'docs.js']) assert.ok(read(file).includes("aside.className = 'writer-notice'"), `${file}: writer notices are not highlighted`);
 assert.ok(music.includes('class="music-banner-toggle" type="button"'), 'Music: require keyboard-operable banner button');
 assert.ok(music.includes('class="music-seek" type="range"'), 'Music: missing accessible custom seek control');
 assert.ok(read('music.js').includes("player.addEventListener('ended', syncPlayback)"), 'Music: missing ended-state synchronization');

@@ -16,8 +16,6 @@ This is editorial guidance. It does not add events, motives, or supernatural rul
 
 ## Where information belongs
 
-An undrafted passage is not a license to replace the author's action with a more familiar trope. Preserve the supported surrounding material, insert a non-graphic amber Writer notice at the gap, and retain the timestamped backlog source. The Bench under the Lamp v2 follows this approach and removes v1's invented kiss. The writer gap must be completed before the Chapter is described as finished prose.
-
 **Chapters:** action, perception, dialogue, and character interpretation. Keep later revelations out of an earlier scene's closing explanation unless a deliberate flash-forward is part of the intended structure.
 
 **Wiki records:** identity, properties, history, limits, and known uncertainty. Describe what a coat does, not what preserving the coat achieves for the writer.
