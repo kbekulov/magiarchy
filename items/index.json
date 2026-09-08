@@ -1,11 +1,17 @@
 {
-  "updated": "2026-09-05",
+  "updated": "2026-09-08",
   "title": "Items & Artefacts",
   "description": "Story-relevant objects, artefacts, and other nonhuman holdings that are not weapons or Holumns.",
   "items": [
     {
       "id": "IA-001",
       "slug": "leviathan-hide-coat",
+      "sectionTitles": {
+        "forms": "The garment chooses its appearance",
+        "operation": "Protection requires action",
+        "limits": "What the coat does not solve",
+        "chronology": "How the object enters Lynleit's life"
+      },
       "updated": "2026-09-05",
       "name": "Leviathan-hide coat",
       "recordType": "Anomalous garment",
@@ -109,6 +115,88 @@
           "title": "Fionn",
           "href": "character.html?character=fionn",
           "detail": "Fionn arranged the substitution without explaining it to Lynleit."
+        }
+      ]
+    },
+    {
+      "id": "IA-002",
+      "slug": "kyriens-whiskey-flask",
+      "updated": "2026-09-08",
+      "name": "Kyrien's whiskey flask",
+      "recordType": "Personal field object",
+      "status": "Carried by Kyrien",
+      "summary": "A small flask of whiskey that Kyrien keeps for difficult moments rather than routine drinking.",
+      "holder": {
+        "name": "Kyrien",
+        "slug": "kyrien"
+      },
+      "material": "Unspecified",
+      "image": null,
+      "forms": [
+        {
+          "name": "Small personal flask",
+          "detail": "Kept in a consistent pocket; Lynleit learns where to find it."
+        }
+      ],
+      "properties": [
+        {
+          "name": "Measured use",
+          "detail": "Kyrien takes a small drink before or after exceptional danger, distress, exhaustion, cold field conditions, or a difficult personal decision."
+        },
+        {
+          "name": "Private pause",
+          "detail": "He opens it, drinks, closes it, and carries on. He occasionally calls the whiskey medicine."
+        }
+      ],
+      "limits": [
+        "No magical properties are established.",
+        "The whiskey is a personal comfort, not medical treatment or a source of combat ability.",
+        "Kyrien does not drink continually during ordinary work or conversation."
+      ],
+      "chronology": [
+        {
+          "arc": "Arc 0",
+          "phase": "Origin unconfirmed",
+          "title": "Family history",
+          "detail": "The precise source of the flask and the beginning of the habit are not known."
+        },
+        {
+          "arc": "Arc 1",
+          "phase": "Field work",
+          "title": "A familiar ritual",
+          "detail": "Kyrien carries it through difficult work, and Lynleit becomes familiar with it."
+        },
+        {
+          "arc": "Arc 1",
+          "phase": "Months after Doom",
+          "title": "The park request",
+          "detail": "After they leave the bench, Lynleit unexpectedly asks for the whiskey. Kyrien gives it to her without pressing for an explanation."
+        }
+      ],
+      "storyLinks": [
+        {
+          "label": "Chapter",
+          "title": "The Bench under the Lamp",
+          "href": "story.html?chapter=the-bench-under-the-lamp",
+          "detail": "The familiar flask has an unexpected use after the private encounter."
+        },
+        {
+          "label": "Moment",
+          "title": "The Bench under the Lamp",
+          "href": "moments.html?moment=the-bench-under-the-lamp",
+          "detail": "The request comes after they have left the bench."
+        },
+        {
+          "label": "Character",
+          "title": "Kyrien",
+          "href": "character.html?character=kyrien#equipment-title",
+          "detail": "Recorded among his carried equipment."
+        },
+        {
+          "label": "Development",
+          "title": "Arc 0",
+          "href": "docs.html?doc=arc-zero-development",
+          "detail": "Unselected possibilities for its earlier history."
         }
       ]
     }

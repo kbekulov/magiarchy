@@ -16,11 +16,6 @@ Story, character, world, relationship, institution, location, and event question
 | Holumn incident HI-002 | Who made or first completed the puzzle, how does its compulsion move between owners, and where does completion send its victims? | 0% |
 | Holumn incident HI-005 | What conditions admit a visitor to the Nameless Street, what are the girl and dead boy, and why does Lynleit return after following the lure? | 0% |
 | Holumn incident HI-006 | What identity, appearance, and history belong to the Holumn that Lynleit and Kyrien destroy before its terminal condition transfers to them? | 0% |
-| Doom placement | Where does Doom fall within the later part of Arc 1’s second half, and what main-plot events surround the months before the park encounter? | 20% |
-| Arc 0 | Which formative incidents become canon, when does Fionn remarry, and is MSF being founded or restructured? | 10% |
-| Kyrien’s family | What are his mother’s and sister’s identities, circumstances, and later fates, and how old is Kyrien at his father’s death? | 10% |
-| Whiskey flask | What is the flask’s origin, and which earlier scene first establishes the habit? | 20% |
-| Park encounter | What work precedes the walk, and what precautions permit the pause in a still-dangerous park? | 15% |
 | Doom Has an Address | What operation brings Lynleit and Kyrien to the Holumn, where does the final confrontation occur, and what evidence lets them understand that destroying it caused their decline? | 0% |
 | Doom Has an Address | Which encounter after Doom Has an Address becomes Lynleit and Kyrien's first completed sexual encounter? | 0% |
 | Doom Has an Address | What happens during the incomplete attempt that the Chapter leaves off-page? | 0% |

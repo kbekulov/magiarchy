@@ -677,7 +677,7 @@
       "Their earlier intimate encounters are non-sexual and arise functionally from isolation, danger, cold, near drowning, or emotional rupture.",
       "The first trigger is Kyrien's silent protection of Lynleit's water-walking secret and their back-to-back attempt to share body heat after the river incident.",
       "Lynleit does not pursue attraction as a separate goal. It develops inside work and danger that remain more important to her.",
-      "Their relationship becomes sexual at the end of Arc 1."
+      "Lynleit collapses emotionally and accepts Kyrien's warmth and embrace. The refuge is nonsexual."
     ],
     "openQuestions": [
       "How does Lynleit locate the hideout without leading pursuit to Kyrien?",
@@ -685,9 +685,72 @@
       "What changes between them the following morning?"
     ],
     "continuityBefore": "Helena has used Fionn's death to frame Lynleit and direct a hunt for her arrest, forcing her to rely on the secret ally she recruited long before the danger became visible.",
-    "continuityAfter": "Their bond remains non-sexual at this point, but it becomes a private source of safety within Lynleit's continuing effort to reclaim MSF. Kyrien next helps her establish contact with Felix and Reiner and later chooses to remain after the original bargain has lost its practical force.",
+    "continuityAfter": "This refuge precedes Doom Has an Address, which occurs much later in the second half of Arc 1. Later sexual milestones must not be folded into this night of grief. Kyrien next helps her reconnect with Felix and Reiner; the refuge remains a source of safety during her effort to reclaim MSF.",
     "chapterSlug": null,
-    "updated": "2026-09-05"
+    "updated": "2026-09-08",
+    "defaultVersion": "v2",
+    "versions": [
+      {
+        "id": "v1",
+        "label": "v1 · Archived",
+        "summary": "After exhausting her available resources to escape the directed hunt for her arrest, Lynleit reaches Kyrien's hotel-room hideout and finally loses the composure that carried her through the immediate crisis.",
+        "purpose": "Lynleit reaches safety with Kyrien and breaks down after her escape.",
+        "known": [
+          "Lynleit acts rationally and efficiently during the accusation and escape.",
+          "Helena's response is a directed hunt for Lynleit's arrest.",
+          "Lynleit uses every available resource she can reach to evade capture.",
+          "Her emotions surface only after she reaches safety in Kyrien's hotel room.",
+          "She stays the night.",
+          "There is no sexual interaction between them.",
+          "Kyrien holds her while she falls asleep.",
+          "The hotel-room refuge occurs much later than the river incident and only after Fionn has been murdered.",
+          "Their earlier intimate encounters are non-sexual and arise functionally from isolation, danger, cold, near drowning, or emotional rupture.",
+          "The first trigger is Kyrien's silent protection of Lynleit's water-walking secret and their back-to-back attempt to share body heat after the river incident.",
+          "Lynleit does not pursue attraction as a separate goal. It develops inside work and danger that remain more important to her.",
+          "Their relationship becomes sexual at the end of Arc 1."
+        ],
+        "openQuestions": [
+          "How does Lynleit locate the hideout without leading pursuit to Kyrien?",
+          "What does she say once her composure breaks?",
+          "What changes between them the following morning?"
+        ],
+        "continuityBefore": "Helena has used Fionn's death to frame Lynleit and direct a hunt for her arrest, forcing her to rely on the secret ally she recruited long before the danger became visible.",
+        "continuityAfter": "Their bond remains non-sexual at this point, but it becomes a private source of safety within Lynleit's continuing effort to reclaim MSF. Kyrien next helps her establish contact with Felix and Reiner and later chooses to remain after the original bargain has lost its practical force.",
+        "placementStatus": "Core placement confirmed",
+        "timelinePhase": "clear-her-name",
+        "timelineLabel": "Clear Her Name"
+      },
+      {
+        "id": "v2",
+        "label": "v2 · Current",
+        "summary": "After exhausting her available resources to escape the directed hunt for her arrest, Lynleit reaches Kyrien's hotel-room hideout and finally loses the composure that carried her through the immediate crisis.",
+        "purpose": "Lynleit reaches safety with Kyrien and breaks down after her escape.",
+        "known": [
+          "Lynleit acts rationally and efficiently during the accusation and escape.",
+          "Helena's response is a directed hunt for Lynleit's arrest.",
+          "Lynleit uses every available resource she can reach to evade capture.",
+          "Her emotions surface only after she reaches safety in Kyrien's hotel room.",
+          "She stays the night.",
+          "There is no sexual interaction between them.",
+          "Kyrien holds her while she falls asleep.",
+          "The hotel-room refuge occurs much later than the river incident and only after Fionn has been murdered.",
+          "Their earlier intimate encounters are non-sexual and arise functionally from isolation, danger, cold, near drowning, or emotional rupture.",
+          "The first trigger is Kyrien's silent protection of Lynleit's water-walking secret and their back-to-back attempt to share body heat after the river incident.",
+          "Lynleit does not pursue attraction as a separate goal. It develops inside work and danger that remain more important to her.",
+          "Lynleit collapses emotionally and accepts Kyrien's warmth and embrace. The refuge is nonsexual."
+        ],
+        "openQuestions": [
+          "How does Lynleit locate the hideout without leading pursuit to Kyrien?",
+          "What does she say once her composure breaks?",
+          "What changes between them the following morning?"
+        ],
+        "continuityBefore": "Helena has used Fionn's death to frame Lynleit and direct a hunt for her arrest, forcing her to rely on the secret ally she recruited long before the danger became visible.",
+        "continuityAfter": "This refuge precedes Doom Has an Address, which occurs much later in the second half of Arc 1. Later sexual milestones must not be folded into this night of grief. Kyrien next helps her reconnect with Felix and Reiner; the refuge remains a source of safety during her effort to reclaim MSF.",
+        "placementStatus": "Core placement confirmed",
+        "timelinePhase": "clear-her-name",
+        "timelineLabel": "Clear Her Name"
+      }
+    ]
   },
   {
     "slug": "the-first-lines-back-into-msf",
@@ -794,9 +857,9 @@
       }
     ],
     "known": [
-      "Their first completed sexual encounter occurs after Doom Has an Address, later in Arc 1.",
+      "The park encounter after Doom is their first successful sexual act, not their first intercourse. Reciprocal exploration and intercourse follow as separate stages.",
       "Several further encounters follow before Lynleit's pregnancy and disappearance.",
-      "Their second encounter is lighter and more playful because neither needs to deny that the first threshold occurred.",
+      "Later encounters become lighter and more playful as intimacy acquires familiar habits.",
       "Kyrien later initiates firmly, reversing their usual pattern and marking desire as his own chosen action.",
       "One later encounter occurs in Lynleit's third-floor study-bedroom at the Director's House.",
       "MSF duty and Lynleit's personal missions remain her priorities throughout the relationship.",
@@ -810,10 +873,69 @@
       "What details at the opening of Arc 2 make the pregnancy inference clear without explaining or showing it directly?",
       "How much time passes between Doom Has an Address, their later encounters, the beginning of the pregnancy, and Lynleit's disappearance?"
     ],
-    "continuityBefore": "In Doom Has an Address, an incomplete attempt at intimacy changes both of them enough to break the shared curse. Their sexual relationship begins later.",
-    "continuityAfter": "Lynleit disappears near the transition into Arc 2. The opening of Arc 2 supplies enough evidence for the reader to infer the pregnancy, while Kyrien directs MSF without knowing that she carries their son.",
+    "continuityBefore": "Fionn's death, the nonsexual hotel refuge, Doom's incomplete attempt, the later park encounter, and subsequent reciprocal intimacy precede the established sexual relationship. These are separate stages, not one compressed encounter.",
+    "continuityAfter": "Pregnancy begins near the transition out of Arc 1. The son's existence is revealed only during Arc 2; Kyrien does not know about him at its opening.",
     "chapterSlug": null,
-    "updated": "2026-09-05"
+    "updated": "2026-09-08",
+    "defaultVersion": "v2",
+    "versions": [
+      {
+        "id": "v1",
+        "label": "v1 · Archived",
+        "summary": "After surviving the shared curse in Doom Has an Address, Lynleit and Kyrien begin a sexual relationship and develop private jokes and ordinary habits before her pregnancy and disappearance near the Arc 2 threshold.",
+        "purpose": "Their sexual relationship develops after the curse has ended, alongside Lynleit's work and the closing pressures of Arc 1.",
+        "known": [
+          "Their first completed sexual encounter occurs after Doom Has an Address, later in Arc 1.",
+          "Several further encounters follow before Lynleit's pregnancy and disappearance.",
+          "Their second encounter is lighter and more playful because neither needs to deny that the first threshold occurred.",
+          "Kyrien later initiates firmly, reversing their usual pattern and marking desire as his own chosen action.",
+          "One later encounter occurs in Lynleit's third-floor study-bedroom at the Director's House.",
+          "MSF duty and Lynleit's personal missions remain her priorities throughout the relationship.",
+          {
+            "text": "The opening of Arc 2 lets the reader infer that Lynleit became pregnant near the boundary between the arcs, without a direct explanation or shown realization.",
+            "status": "inferred"
+          }
+        ],
+        "openQuestions": [
+          "Which later encounter is the conception of their son?",
+          "What details at the opening of Arc 2 make the pregnancy inference clear without explaining or showing it directly?",
+          "How much time passes between Doom Has an Address, their later encounters, the beginning of the pregnancy, and Lynleit's disappearance?"
+        ],
+        "continuityBefore": "In Doom Has an Address, an incomplete attempt at intimacy changes both of them enough to break the shared curse. Their sexual relationship begins later.",
+        "continuityAfter": "Lynleit disappears near the transition into Arc 2. The opening of Arc 2 supplies enough evidence for the reader to infer the pregnancy, while Kyrien directs MSF without knowing that she carries their son.",
+        "placementStatus": "Late Arc 1 placement confirmed, exact duration unresolved",
+        "timelinePhase": "lynleit-disappears",
+        "timelineLabel": "Lynleit Disappears"
+      },
+      {
+        "id": "v2",
+        "label": "v2 · Current",
+        "summary": "After surviving the shared curse in Doom Has an Address, Lynleit and Kyrien begin a sexual relationship and develop private jokes and ordinary habits before her pregnancy and disappearance near the Arc 2 threshold.",
+        "purpose": "Their sexual relationship develops after the curse has ended, alongside Lynleit's work and the closing pressures of Arc 1.",
+        "known": [
+          "The park encounter after Doom is their first successful sexual act, not their first intercourse. Reciprocal exploration and intercourse follow as separate stages.",
+          "Several further encounters follow before Lynleit's pregnancy and disappearance.",
+          "Later encounters become lighter and more playful as intimacy acquires familiar habits.",
+          "Kyrien later initiates firmly, reversing their usual pattern and marking desire as his own chosen action.",
+          "One later encounter occurs in Lynleit's third-floor study-bedroom at the Director's House.",
+          "MSF duty and Lynleit's personal missions remain her priorities throughout the relationship.",
+          {
+            "text": "The opening of Arc 2 lets the reader infer that Lynleit became pregnant near the boundary between the arcs, without a direct explanation or shown realization.",
+            "status": "inferred"
+          }
+        ],
+        "openQuestions": [
+          "Which later encounter is the conception of their son?",
+          "What details at the opening of Arc 2 make the pregnancy inference clear without explaining or showing it directly?",
+          "How much time passes between Doom Has an Address, their later encounters, the beginning of the pregnancy, and Lynleit's disappearance?"
+        ],
+        "continuityBefore": "Fionn's death, the nonsexual hotel refuge, Doom's incomplete attempt, the later park encounter, and subsequent reciprocal intimacy precede the established sexual relationship. These are separate stages, not one compressed encounter.",
+        "continuityAfter": "Pregnancy begins near the transition out of Arc 1. The son's existence is revealed only during Arc 2; Kyrien does not know about him at its opening.",
+        "placementStatus": "Late Arc 1 placement confirmed, exact duration unresolved",
+        "timelinePhase": "lynleit-disappears",
+        "timelineLabel": "Lynleit Disappears"
+      }
+    ]
   },
   {
     "slug": "the-nameless-street",
@@ -1360,10 +1482,10 @@
     "code": "MOM-021",
     "title": "Doom Has an Address",
     "status": "Key scene",
-    "placementStatus": "Late Arc 1 placement confirmed",
-    "timelinePhase": "lynleit-disappears",
-    "timelineLabel": "Lynleit Disappears",
-    "sequence": 0.4,
+    "placementStatus": "Later part of Arc 1 second half; exact placement unresolved",
+    "timelinePhase": "late-arc-one",
+    "timelineLabel": "Later in Arc 1",
+    "sequence": 1,
     "sceneType": "Curse and identity crisis",
     "thread": "Lynleit and Kyrien",
     "location": "Several locations, ending in a private room",
@@ -1444,12 +1566,12 @@
       "Which Magi first identify the traditional one-death solution, and how much of the prognosis becomes known outside the four people in this scene?",
       "What happens during the incomplete attempt?",
       "What lasting effects, if any, remain after the curse collapses?",
-      "Which later encounter becomes Lynleit and Kyrien's first completed sexual threshold?"
+      "Where in the later second half of Arc 1 does this subplot fit relative to the unresolved main-plot chronology?"
     ],
-    "continuityBefore": "Lynleit and Kyrien have accumulated a private rhythm through work, cards, protected secrets, voluntary loyalty, and repeated physical awareness. Her original authority over him has already lost practical force, and he has chosen to remain.",
-    "continuityAfter": "Both survive without completing the sexual encounter. Their first completed encounter occurs later in Arc 1, before their established sexual relationship and the pregnancy near the Arc 2 threshold. Its exact placement remains unresolved.",
+    "continuityBefore": "Fionn's death and the nonsexual hotel refuge have already occurred. Kyrien has chosen to remain without Lynleit's former power to compel him. Doom is a later subplot in the second half of Arc 1, not a fixed immediate prelude to her disappearance.",
+    "continuityAfter": "Months later, the park encounter is their first successful sexual act, specifically oral intimacy, not intercourse. Reciprocal exploration, first intercourse, an established sexual life, and pregnancy remain distinct later stages. The son is revealed only in Arc 2.",
     "chapterSlug": "doom-has-an-address",
-    "updated": "2026-09-06",
+    "updated": "2026-09-08",
     "defaultVersion": "v7",
     "versions": [
       {
@@ -1487,7 +1609,10 @@
           "Which Magi first identify the traditional one-death solution, and how much of the prognosis becomes known outside the four people in this scene?",
           "Where does the final private encounter occur within late Arc 1?"
         ],
-        "continuityAfter": "The curse fractures and both survive. Their short sexual relationship becomes part of an emerging shared life before Lynleit disappears near the Arc 2 threshold and her pregnancy becomes legible only at the opening of the next arc."
+        "continuityAfter": "The curse fractures and both survive. Their short sexual relationship becomes part of an emerging shared life before Lynleit disappears near the Arc 2 threshold and her pregnancy becomes legible only at the opening of the next arc.",
+        "timelinePhase": "lynleit-disappears",
+        "timelineLabel": "Lynleit Disappears",
+        "placementStatus": "Late Arc 1 placement confirmed"
       },
       {
         "id": "v2",
@@ -1530,7 +1655,10 @@
           "What lasting effects, if any, remain after the curse collapses?",
           "Which later encounter becomes Lynleit and Kyrien's first completed sexual threshold?"
         ],
-        "continuityAfter": "Both survive without completing the sexual encounter. Their first completed encounter occurs later in Arc 1, before their established sexual relationship and the pregnancy near the Arc 2 threshold. Its exact placement remains unresolved."
+        "continuityAfter": "Both survive without completing the sexual encounter. Their first completed encounter occurs later in Arc 1, before their established sexual relationship and the pregnancy near the Arc 2 threshold. Its exact placement remains unresolved.",
+        "timelinePhase": "lynleit-disappears",
+        "timelineLabel": "Lynleit Disappears",
+        "placementStatus": "Late Arc 1 placement confirmed"
       },
       {
         "id": "v3",
@@ -1569,7 +1697,10 @@
           "What lasting effects, if any, remain after the curse collapses?",
           "Which later encounter becomes Lynleit and Kyrien's first completed sexual threshold?"
         ],
-        "continuityAfter": "Both survive without completing the sexual encounter. Their first completed encounter occurs later in Arc 1, before their established sexual relationship and the pregnancy near the Arc 2 threshold. Its exact placement remains unresolved."
+        "continuityAfter": "Both survive without completing the sexual encounter. Their first completed encounter occurs later in Arc 1, before their established sexual relationship and the pregnancy near the Arc 2 threshold. Its exact placement remains unresolved.",
+        "timelinePhase": "lynleit-disappears",
+        "timelineLabel": "Lynleit Disappears",
+        "placementStatus": "Late Arc 1 placement confirmed"
       },
       {
         "id": "v4",
@@ -1609,7 +1740,10 @@
           "What lasting effects, if any, remain after the curse collapses?",
           "Which later encounter becomes Lynleit and Kyrien's first completed sexual threshold?"
         ],
-        "continuityAfter": "Both survive without completing the sexual encounter. Their first completed encounter occurs later in Arc 1, before their established sexual relationship and the pregnancy near the Arc 2 threshold. Its exact placement remains unresolved."
+        "continuityAfter": "Both survive without completing the sexual encounter. Their first completed encounter occurs later in Arc 1, before their established sexual relationship and the pregnancy near the Arc 2 threshold. Its exact placement remains unresolved.",
+        "timelinePhase": "lynleit-disappears",
+        "timelineLabel": "Lynleit Disappears",
+        "placementStatus": "Late Arc 1 placement confirmed"
       },
       {
         "id": "v5",
@@ -1657,7 +1791,10 @@
           "What lasting effects, if any, remain after the curse collapses?",
           "Which later encounter becomes Lynleit and Kyrien's first completed sexual threshold?"
         ],
-        "continuityAfter": "Both survive without completing the sexual encounter. Their first completed encounter occurs later in Arc 1, before their established sexual relationship and the pregnancy near the Arc 2 threshold. Its exact placement remains unresolved."
+        "continuityAfter": "Both survive without completing the sexual encounter. Their first completed encounter occurs later in Arc 1, before their established sexual relationship and the pregnancy near the Arc 2 threshold. Its exact placement remains unresolved.",
+        "timelinePhase": "lynleit-disappears",
+        "timelineLabel": "Lynleit Disappears",
+        "placementStatus": "Late Arc 1 placement confirmed"
       },
       {
         "id": "v6",
@@ -1703,7 +1840,10 @@
           "What lasting effects, if any, remain after the curse collapses?",
           "Which later encounter becomes Lynleit and Kyrien's first completed sexual threshold?"
         ],
-        "continuityAfter": "Both survive without completing the sexual encounter. Their first completed encounter occurs later in Arc 1, before their established sexual relationship and the pregnancy near the Arc 2 threshold. Its exact placement remains unresolved."
+        "continuityAfter": "Both survive without completing the sexual encounter. Their first completed encounter occurs later in Arc 1, before their established sexual relationship and the pregnancy near the Arc 2 threshold. Its exact placement remains unresolved.",
+        "timelinePhase": "lynleit-disappears",
+        "timelineLabel": "Lynleit Disappears",
+        "placementStatus": "Late Arc 1 placement confirmed"
       },
       {
         "id": "v7",
@@ -1751,10 +1891,139 @@
           "Which Magi first identify the traditional one-death solution, and how much of the prognosis becomes known outside the four people in this scene?",
           "What happens during the incomplete attempt?",
           "What lasting effects, if any, remain after the curse collapses?",
-          "Which later encounter becomes Lynleit and Kyrien's first completed sexual threshold?"
+          "Where in the later second half of Arc 1 does this subplot fit relative to the unresolved main-plot chronology?"
         ],
-        "continuityAfter": "Both survive without completing the sexual encounter. Their first completed encounter occurs later in Arc 1, before their established sexual relationship and the pregnancy near the Arc 2 threshold. Its exact placement remains unresolved."
+        "continuityAfter": "Months later, the park encounter is their first successful sexual act, specifically oral intimacy, not intercourse. Reciprocal exploration, first intercourse, an established sexual life, and pregnancy remain distinct later stages. The son is revealed only in Arc 2.",
+        "timelinePhase": "late-arc-one",
+        "timelineLabel": "Later in Arc 1",
+        "placementStatus": "Later part of Arc 1 second half; exact placement unresolved",
+        "continuityBefore": "Fionn's death and the nonsexual hotel refuge have already occurred. Kyrien has chosen to remain without Lynleit's former power to compel him. Doom is a later subplot in the second half of Arc 1, not a fixed immediate prelude to her disappearance."
       }
     ]
+  },
+  {
+    "slug": "the-bench-under-the-lamp",
+    "code": "MOM-022",
+    "title": "The Bench under the Lamp",
+    "status": "Key scene",
+    "placementStatus": "Months after Doom; exact date unresolved",
+    "timelinePhase": "late-arc-one",
+    "timelineLabel": "Later in Arc 1",
+    "sequence": 2,
+    "sceneType": "Private milestone",
+    "thread": "Lynleit and Kyrien",
+    "location": "A bench beneath a lamppost in the quarantined park",
+    "summary": "After work, their walk becomes their first successful sexual encounter. The park remains dangerous, and they still have to find the exit.",
+    "purpose": "Lynleit's preparation meets the particular person she has been studying, while the later flask request interrupts her victory.",
+    "characters": [
+      {
+        "name": "Lynleit",
+        "slug": "lynleit"
+      },
+      {
+        "name": "Kyrien",
+        "slug": "kyrien"
+      }
+    ],
+    "characterAnchors": [
+      {
+        "slug": "lynleit",
+        "beat": "The Bench under the Lamp"
+      },
+      {
+        "slug": "kyrien",
+        "beat": "The Bench under the Lamp"
+      }
+    ],
+    "known": [
+      "Lynleit and Kyrien walk through the quarantined park after work, lose their way, and stop at a bench beneath a lamppost.",
+      "Kyrien takes one small drink from his flask after the long day and returns it to its usual pocket.",
+      "Their comfortable proximity and teasing bring up the failed curse encounter months earlier.",
+      "Lynleit has spent the intervening months researching intimacy; the opportunity on the bench is spontaneous.",
+      "They kiss, and the scene cuts away before the private encounter.",
+      {
+        "text": "The cut away and Lynleit's later claim of successful research indicate that their intimacy has progressed beyond the failed attempt.",
+        "status": "inferred"
+      },
+      "Lynleit calls the research successful, and they leave the bench before Kyrien asks whether she intends to win arguments this way.",
+      {
+        "text": "Her delayed request for whiskey and refusal to explain suggest an unexpected practical consequence without undoing her satisfaction.",
+        "status": "inferred"
+      },
+      "Kyrien hands her the flask without pressing for an explanation, and they continue walking."
+    ],
+    "openQuestions": [
+      "What operational work precedes the walk, and which familiar precautions make this pause possible?",
+      "When does their later first intercourse occur?"
+    ],
+    "continuityBefore": "Fionn's death and the hotel refuge precede Doom. Months of private theoretical research follow its failed attempt. Lynleit knows Kyrien's flask and usual carrying place; she has not planned this evening's encounter.",
+    "continuityAfter": "The author's scene establishes successful oral intimacy, not intercourse. Later reciprocal exploration and first intercourse remain separate milestones. Pregnancy and the Arc 2 child reveal occur later.",
+    "chapterSlug": "the-bench-under-the-lamp",
+    "updated": "2026-09-08"
+  },
+  {
+    "slug": "households-before-the-spill",
+    "code": "MOM-023",
+    "title": "Households before the Spill",
+    "status": "Development outline",
+    "placementStatus": "Tentative prequel direction; events not fixed",
+    "timelinePhase": "households-before-the-spill",
+    "timelineLabel": "Households before the Spill",
+    "sequence": 1,
+    "sceneType": "Prequel outline",
+    "thread": "Fionn, the household, and MSF",
+    "location": "Family homes, schools, and institutional settings",
+    "summary": "A prequel outline follows Fionn and the development of MSF alongside the younger cast's school years.",
+    "purpose": "Develop the adult institutional story and the pressures shaping the younger cast without inventing completed prequel events.",
+    "characters": [
+      {
+        "name": "Lynleit",
+        "slug": "lynleit"
+      },
+      {
+        "name": "Kyrien",
+        "slug": "kyrien"
+      },
+      {
+        "name": "Fionn",
+        "slug": "fionn"
+      },
+      {
+        "name": "Helena",
+        "slug": "helena"
+      }
+    ],
+    "characterAnchors": [
+      {
+        "slug": "lynleit",
+        "beat": "Arc 0: Formative Years"
+      },
+      {
+        "slug": "kyrien",
+        "beat": "Arc 0: Formative Years"
+      },
+      {
+        "slug": "fionn",
+        "beat": "Arc 0: Formative Years"
+      },
+      {
+        "slug": "helena",
+        "beat": "Arc 0: Formative Years"
+      }
+    ],
+    "known": [
+      "Fionn, his household, and the becoming of MSF are the proposed center of Arc 0.",
+      "Lynleit's mother dies while she is a junior schooler; the move to Vilen remains earlier than the proposed teenage focus.",
+      "The outline explores remarriage, continuing grief, school life, and Kyrien's attempt to protect his mother and sister after his father's death."
+    ],
+    "openQuestions": [
+      "Which events in this development outline will become canon?",
+      "Is this period MSF founding, restructuring, or both?",
+      "Does a forgotten, non-romantic teenage encounter between Lynleit and Kyrien occur?",
+      "Which family event begins Kyrien’s flask habit?"
+    ],
+    "continuityBefore": "Family history predates the main story. Specific dates and the extent of MSF's existing organization remain open.",
+    "continuityAfter": "Arc 1 encounters the adults shaped by these years. The prequel does not need to end immediately before it or disclose the future child.",
+    "updated": "2026-09-08"
   }
 ]

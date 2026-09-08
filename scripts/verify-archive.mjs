@@ -68,6 +68,22 @@ for (const note of notes) {
 }
 
 const doom = chapters.find((entry) => entry.slug === 'doom-has-an-address');
+const phaseContext = { window: {} };
+vm.runInNewContext(read('story-phases.js'), phaseContext);
+const phaseIds = new Set(phaseContext.window.MAGIARCHY_STORY_PHASES.map(p => p.id));
+for (const chapter of chapters) assert.ok(phaseIds.has(chapter.timelinePhase), `${chapter.slug}: unknown Story phase`);
+for (const moment of moments) assert.ok(phaseIds.has(moment.timelinePhase), `${moment.slug}: unknown Moment phase`);
+assert.ok(phaseContext.window.MAGIARCHY_STORY_ARCS.some(a => a.id === 'arc-0'), 'Missing prequel life period');
+const park = chapters.find(c => c.slug === 'the-bench-under-the-lamp');
+assert.ok(park && park.timelinePhase === 'late-arc-one', 'Park milestone placement missing');
+const parkText = read(`story/${park.file}`);
+assert.ok(parkText.indexOf('They left the lamp behind.') < parkText.indexOf('Give me your whiskey.'), 'Flask payoff occurs too early');
+assert.ok(parkText.indexOf('Kyrien took out his flask.') < parkText.indexOf('Give me your whiskey.'), 'Flask is not established before payoff');
+assert.ok(json('items/index.json').items.some(i => i.slug === 'kyriens-whiskey-flask'), 'Missing flask item');
+assert.ok(profiles.find(p => p.slug === 'kyrien').equipment.some(e => e.href.includes('kyriens-whiskey-flask')), 'Missing flask equipment link');
+assert.equal(chapters.find(c => c.slug === 'doom-has-an-address').timelinePhase, 'late-arc-one');
+assert.ok(moments.find(m => m.slug === 'doom-has-an-address').continuityBefore.includes('hotel refuge'), 'Hotel must precede Doom');
+assert.ok(moments.find(m => m.slug === 'the-bench-under-the-lamp').continuityAfter.includes('not intercourse'), 'Distinct milestone lost');
 const doomMoment = moments.find((entry) => entry.slug === doom.slug);
 assert.equal(doom.defaultVersion, 'v7');
 assert.equal(doomMoment.defaultVersion, 'v7');

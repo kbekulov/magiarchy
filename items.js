@@ -100,14 +100,18 @@ function renderItemDetail(item) {
   const identityLinks = itemElement('div', 'item-identity-links');
   identityLinks.append(
     itemLink(`character.html?character=${encodeURIComponent(item.holder.slug)}#equipment-title`, '', item.holder.name),
-    itemElement('p', '', 'Current holder and equipment record'),
-    itemLink(`character.html?character=${encodeURIComponent(item.associatedCharacter.slug)}`, '', item.associatedCharacter.name),
-    itemElement('p', '', item.associatedCharacter.relation)
+    itemElement('p', '', 'Current holder and equipment record')
   );
+  if (item.associatedCharacter) {
+    identityLinks.append(
+      itemLink(`character.html?character=${encodeURIComponent(item.associatedCharacter.slug)}`, '', item.associatedCharacter.name),
+      itemElement('p', '', item.associatedCharacter.relation)
+    );
+  }
   identityPanel.append(identityCopy, identityLinks);
   identity.append(identityPanel);
 
-  const forms = makeRecordSection('02', 'Recorded forms', 'The garment chooses its appearance');
+  const forms = makeRecordSection('02', 'Recorded forms', item.sectionTitles?.forms || 'Appearance and forms');
   const formGrid = itemElement('div', 'item-form-grid');
   item.forms.forEach((form, index) => {
     const article = itemElement('article');
@@ -116,7 +120,7 @@ function renderItemDetail(item) {
   });
   forms.append(formGrid);
 
-  const operation = makeRecordSection('03', 'Known operation', 'Protection requires action');
+  const operation = makeRecordSection('03', 'Known operation', item.sectionTitles?.operation || 'Properties and use');
   const propertyGrid = itemElement('div', 'item-property-grid');
   item.properties.forEach((property, index) => {
     const article = itemElement('article');
@@ -125,7 +129,7 @@ function renderItemDetail(item) {
   });
   operation.append(propertyGrid);
 
-  const limits = makeRecordSection('04', 'Operating limits', 'What the coat does not solve');
+  const limits = makeRecordSection('04', 'Operating limits', item.sectionTitles?.limits || 'Limits');
   const limitPanel = itemElement('ol', 'item-limit-list');
   item.limits.forEach((limit, index) => {
     const row = itemElement('li');
@@ -134,7 +138,7 @@ function renderItemDetail(item) {
   });
   limits.append(limitPanel);
 
-  const chronology = makeRecordSection('05', 'Arc 1 chronology', 'How the object enters Lynleit’s life');
+  const chronology = makeRecordSection('05', 'Chronology', item.sectionTitles?.chronology || 'History and custody');
   const chronologyTrack = itemElement('ol', 'item-chronology');
   item.chronology.forEach((entry) => {
     const row = itemElement('li');

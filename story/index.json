@@ -173,7 +173,7 @@
     "title": "Doom Has an Address",
     "status": "Canon draft",
     "file": "doom-has-an-address-v7.md",
-    "updated": "2026-09-06",
+    "updated": "2026-09-08",
     "description": "Mikhail's mock blessing becomes a prolonged argument over ancestry, porcelain, and Lynleit's private life. Once she looks away, he lets one silence pass without a joke.",
     "characters": [
       "Lynleit",
@@ -181,8 +181,8 @@
       "Natalia",
       "Father Mikhail"
     ],
-    "timelinePhase": "lynleit-disappears",
-    "timelineLabel": "Lynleit Disappears",
+    "timelinePhase": "late-arc-one",
+    "timelineLabel": "Later in Arc 1",
     "events": [
       "Lynleit and Kyrien destroy a Holumn together and complete the final condition of its mechanism.",
       "The Holumn transfers one terminal curse across both identities, causing progressive physical decline and a prognosis measured first in weeks and then in days.",
@@ -235,7 +235,9 @@
             "status": "inferred"
           }
         ],
-        "description": "After jointly destroying a Holumn, Lynleit and Kyrien inherit one fatal curse written across both identities and search for a way to survive without sacrificing either life."
+        "description": "After jointly destroying a Holumn, Lynleit and Kyrien inherit one fatal curse written across both identities and search for a way to survive without sacrificing either life.",
+        "timelinePhase": "lynleit-disappears",
+        "timelineLabel": "Lynleit Disappears"
       },
       {
         "id": "v2",
@@ -265,7 +267,9 @@
             "text": "Her prepared answer suggests that Lynleit expected, and had been thinking about, another conversation with Kyrien.",
             "status": "inferred"
           }
-        ]
+        ],
+        "timelinePhase": "lynleit-disappears",
+        "timelineLabel": "Lynleit Disappears"
       },
       {
         "id": "v3",
@@ -291,7 +295,9 @@
           },
           "Kyrien knows about Lynleit's attempt, her refusal to explain it, and the curse's decline, but lacks enough information to connect them.",
           "The incomplete attempt and its aftermath change both identities enough for the curse to lose its hold."
-        ]
+        ],
+        "timelinePhase": "lynleit-disappears",
+        "timelineLabel": "Lynleit Disappears"
       },
       {
         "id": "v4",
@@ -318,7 +324,9 @@
           },
           "Kyrien knows about Lynleit's attempt, her refusal to explain it, and the curse's decline, but lacks enough information to connect them.",
           "The incomplete attempt and its aftermath change both identities enough for the curse to lose its hold."
-        ]
+        ],
+        "timelinePhase": "lynleit-disappears",
+        "timelineLabel": "Lynleit Disappears"
       },
       {
         "id": "v5",
@@ -349,7 +357,9 @@
           },
           "Kyrien knows about Lynleit's attempt, her refusal to explain it, and the curse's decline, but lacks enough information to connect them.",
           "The incomplete attempt and its aftermath change both identities enough for the curse to lose its hold."
-        ]
+        ],
+        "timelinePhase": "lynleit-disappears",
+        "timelineLabel": "Lynleit Disappears"
       },
       {
         "id": "v6",
@@ -381,14 +391,16 @@
           },
           "Kyrien knows about Lynleit's attempt, her refusal to explain it, and the curse's decline, but lacks enough information to connect them.",
           "The incomplete attempt and its aftermath change both identities enough for the curse to lose its hold."
-        ]
+        ],
+        "timelinePhase": "lynleit-disappears",
+        "timelineLabel": "Lynleit Disappears"
       },
       {
         "id": "v7",
         "label": "v7 · Canon",
         "status": "Canon draft",
         "file": "doom-has-an-address-v7.md",
-        "updated": "2026-09-06",
+        "updated": "2026-09-08",
         "description": "Mikhail's mock blessing becomes a prolonged argument over ancestry, porcelain, and Lynleit's private life. Once she looks away, he lets one silence pass without a joke.",
         "events": [
           "Lynleit and Kyrien destroy a Holumn together and complete the final condition of its mechanism.",
@@ -417,8 +429,42 @@
           },
           "Kyrien knows about Lynleit's attempt, her refusal to explain it, and the curse's decline, but lacks enough information to connect them.",
           "The incomplete attempt and its aftermath change both identities enough for the curse to lose its hold."
-        ]
+        ],
+        "timelinePhase": "late-arc-one",
+        "timelineLabel": "Later in Arc 1"
       }
+    ]
+  },
+  {
+    "slug": "the-bench-under-the-lamp",
+    "number": "Chapter 08",
+    "title": "The Bench under the Lamp",
+    "status": "Draft adaptation",
+    "file": "the-bench-under-the-lamp.md",
+    "updated": "2026-09-08",
+    "description": "An evening walk leaves Lynleit and Kyrien beneath a park lamp. A joke about their failed attempt becomes a private encounter, followed by an unexpected request for his flask.",
+    "characters": [
+      "Lynleit",
+      "Kyrien"
+    ],
+    "timelinePhase": "late-arc-one",
+    "timelineLabel": "Later in Arc 1",
+    "events": [
+      "Lynleit and Kyrien walk through the quarantined park after work, lose their way, and stop at a bench beneath a lamppost.",
+      "Kyrien takes one small drink from his flask after the long day and returns it to its usual pocket.",
+      "Their comfortable proximity and teasing bring up the failed curse encounter months earlier.",
+      "Lynleit has spent the intervening months researching intimacy; the opportunity on the bench is spontaneous.",
+      "They kiss, and the scene cuts away before the private encounter.",
+      {
+        "text": "The cut away and Lynleit's later claim of successful research indicate that their intimacy has progressed beyond the failed attempt.",
+        "status": "inferred"
+      },
+      "Lynleit calls the research successful, and they leave the bench before Kyrien asks whether she intends to win arguments this way.",
+      {
+        "text": "Her delayed request for whiskey and refusal to explain suggest an unexpected practical consequence without undoing her satisfaction.",
+        "status": "inferred"
+      },
+      "Kyrien hands her the flask without pressing for an explanation, and they continue walking."
     ]
   }
 ]

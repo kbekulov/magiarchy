@@ -210,17 +210,3 @@ Version 3 derives from the earlier Version 2 text in commit `868fc31`, before th
 **Reaction and reply:** Lynleit's denial of agreement, correction from defence to principle, and porcelain retort keep her an active participant. Allow the silence after an insult to land before either speaker resumes.
 
 **Limit:** these are approved choices for this exchange, not instructions to give every joke a long pause or every provocative character a reassuring moment. Natalia's explanation, Mikhail's uncertain treatment, and the later outcome remain unchanged.
-
-### Author direction: 8 September 2026
-
-**Subplot hierarchy:** intimacy develops inside the ongoing political, magical, and institutional story. It must not reorganize every character's priorities around romance. The hotel refuge is grief and nonsexual comfort; do not eroticize it or use it as a shortcut to the later sexual milestones.
-
-**Embodied motive and rationalization:** Lynleit's curiosity and attachment precede the research she uses to manage embarrassment. Distinguish general knowledge from skill adapted to one person. Reuse an established tell sparingly rather than narrating a lesson about the callback.
-
-**Ellipsis and aftermath, working implementation:** The Bench under the Lamp cuts from chosen closeness to afterward. Its preface describes only what the prose shows or supports; the Moment's continuity keeps the author's distinction between oral intimacy and later intercourse explicit. A cut away must not accidentally merge those milestones.
-
-**Delayed comic consequence:** let the bench seem finished, let Lynleit enjoy her success, and move the pair down the path before the whiskey request. Kyrien's decision not to demand an explanation preserves the last exchange. The flask should already have an ordinary use, not appear solely to serve this joke.
-
-**Prequel restraint:** Arc 0 develops unfinished habits through candidate experiences rather than repeating adult personalities in younger bodies. Keep its unselected scenes in development records. Fionn's own work and household remain its center.
-
-**Limit:** these directions do not make grief a prescription for sex, ancestry an obligation, alcohol a treatment, or every private gesture an interpretable symbol.

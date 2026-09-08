@@ -56,7 +56,7 @@ Use a private gesture in the hotel refuge only if it fits Lynleit's immediate ex
 
 ## Current version decision
 
-Doom Has an Address v7 is canon. It builds on v3's restored banter, with Natalia teaching through a worked diagram and personal experience while Lynleit responds as her playful, loyal former student and friend. Natalia remains the source of the ego hypothesis and Jung quotation; no magic-aware physicians are introduced. The attempt at intimacy is incomplete. Both survive after the attempt and its aftermath change the identities to which the curse is attached. The successful park encounter and later first intercourse are separate milestones in Arc 1. Versions 1 through 6 remain alternates and must not supply shared character or Holumn facts where they differ.
+Doom Has an Address v7 is canon. It builds on v3's restored banter, with Natalia teaching through a worked diagram and personal experience while Lynleit responds as her playful, loyal former student and friend. Natalia remains the source of the ego hypothesis and Jung quotation; no magic-aware physicians are introduced. The attempt at intimacy is incomplete. Both survive after the attempt and its aftermath change the identities to which the curse is attached. Their first completed sexual encounter belongs later in Arc 1. Versions 1 through 6 remain alternates and must not supply shared character or Holumn facts where they differ.
 
 ### Family history and embarrassment in Doom v6
 
@@ -67,15 +67,3 @@ The author's v6 exchange names Inanna and describes three thousand years of line
 The author's sexual-comedy direction favors psychologically revealing, memorable exchanges that still advance the scene. Let Mikhail provoke through ceremony and observation, and let Lynleit answer sharply rather than simply suffer the joke. Retain the possibility of failure in his treatment advice. See the v6 and v7 craft notes in the current Prose Style reference.
 
 V7 restores the nine approved comic and behavioral beats from the longer exchange. Keep the pause in which Mikhail does not pursue Lynleit's averted gaze. It does not add a romance or turn his teasing into infallible knowledge. The consultation still concerns their survival, and its treatment remains uncertain.
-
-## Current chronology clarification: 8 September 2026
-
-Fionn's death precedes the nonsexual hotel refuge. Doom follows much later, in the later part of Arc 1's second half. Its exact main-plot placement remains approximate. The park encounter follows months of private research after Doom and is the first successful sexual act, not the first intercourse. Reciprocal exploration, intercourse, established habits, pregnancy, and the Arc 2 reveal remain distinct stages.
-
-The loss of Fionn changes Lynleit's household role without making her less than fully adult beforehand. The author favors an inferred movement from daughterhood toward a family she chooses herself. Do not state that she owes the lineage a child, seeks sex because Fionn died, or follows Mikhail's supposed prescription. Inanna's resonance is retrospective, not the mechanism causing her choices.
-
-The main story does not openly reveal their son. Arc 2 supplies that reveal, and Kyrien does not know at its opening. Keep reader knowledge separate from the full writer-facing chronology.
-
-The park remains supernatural territory. Repeated experience allows a pause; it does not establish that the quarantine has become safe. The preceding operation and exact precautions remain open rather than invented for convenience.
-
-For the tentative prequel, use [Arc 0: Households and the Becoming of MSF](../docs.html?doc=arc-zero-development). Do not resolve its optional encounters, family details, flask origin, or institutional dates by writing them into an adult biography as facts.

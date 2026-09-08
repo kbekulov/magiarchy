@@ -10,7 +10,7 @@ A writer's reference to affection, attraction, initiative, and particular partne
 
 **Unresolved** means there is not enough information to describe it.
 
-Doom Has an Address follows v7. Lynleit and Kyrien survive after an incomplete attempt at intimacy. The hotel refuge precedes Doom, which belongs in the later part of Arc 1's second half. Months later, the park encounter establishes successful oral intimacy. First intercourse is a separate later milestone; its exact placement is unresolved.
+Doom Has an Address follows v7. Lynleit and Kyrien survive after an incomplete attempt at intimacy. Their first completed sexual encounter occurs later in Arc 1; its exact placement is unresolved.
 
 ## Lynleit
 
@@ -26,8 +26,6 @@ Her attempt with Kyrien in Doom Has an Address is irritable, awkward, and incomp
 
 In v7, Mikhail names the Cult of Inanna and her lineage's long association with it. Lynleit is an associate through her family, not a direct participant. She counters his mock praise with a general principle, takes refuge in handling her cup, and threatens a reprisal if he repeats the address publicly. The family connection is explicit; the discomfort is carried through the exchange. He lets one averted glance pass without comment before the argument resumes. His accusation is not a religious obligation or a reason for her attraction to Kyrien.
 
-After the failed attempt, Lynleit's private research grows from curiosity and wounded pride. The park opportunity is spontaneous. Satisfaction in pleasing Kyrien matters alongside proving her competence, and his particular responses matter more than general theory. The later whiskey request is a practical aftertaste problem, not regret or rejection of him.
-
 Their later pattern makes Lynleit the more frequent initiator. She is more vocal than Kyrien and likes teasing his reserve. The precise staging of those later encounters remains subject to the author's review.
 
 ### With Kyrien
@@ -38,7 +36,7 @@ Card games during the river watches give them something to do together outside h
 
 He eventually stays when she can no longer compel him. When she asks what reward makes the danger worthwhile, he answers, "Because there's a battle to be fought." She cannot dismiss his persistence as obedience or explain it through a promise she made him.
 
-After Fionn's death, the hotel refuge gives her nonsexual comfort in Kyrien's embrace. Much later the curse brings an incomplete attempt at intimacy, then a recovery she will not explain. Their sexual relationship begins afterward and lasts long enough to acquire private jokes and ordinary habits. A later encounter takes place in her third-floor study-bedroom. Pregnancy follows near the Arc 2 transition, with its meaning left for the reader to recognize at the next arc's opening.
+The curse brings an incomplete attempt at intimacy, then a recovery she will not explain. Their sexual relationship begins afterward and lasts long enough to acquire private jokes and ordinary habits. A later encounter takes place in her third-floor study-bedroom. Pregnancy follows near the Arc 2 transition, with its meaning left for the reader to recognize at the next arc's opening.
 
 Her later return revives their physical awareness, but Kyrien still does not know about their son. The consequences for renewed intimacy remain a separate question.
 
@@ -386,16 +384,3 @@ No romantic partner or sexual profile is recorded.
 - Let gestures, interruptions, and choices carry implications without narrating the conclusion again.
 - A useful encounter may leave a disagreement, an unanswered question, or a changed habit.
 - Keep interpretations separate from confirmed preferences. Revisit them when new scenes supply evidence.
-
-## Development sequence and thematic limits
-
-1. Fionn's death and the nonsexual hotel refuge.
-2. Doom's incomplete attempt, late in the second half of Arc 1.
-3. Months of private theoretical study, followed by the spontaneous park encounter.
-4. Reciprocal exploration and learning to receive as well as initiate.
-5. First intercourse by mutual choice, followed by ordinary, playful intimacy.
-6. Pregnancy near the Arc 1 transition and the son's reveal in Arc 2.
-
-These are separate milestones, not a conscious program Lynleit follows. Her duty remains primary. She was already a competent adult while Fionn lived; his death changes the structure of belonging and responsibility. The family she eventually forms with Kyrien is her choice, not compliance with a Cult duty or Fionn's selection of a successor.
-
-Arc 0's possible teenage encounter is non-romantic and unconfirmed. Do not backdate this adult sexual progression into the prequel.

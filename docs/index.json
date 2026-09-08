@@ -4,12 +4,12 @@
     "title": "MAGIARCHY Prose Style",
     "topic": "Writer's Style Reference",
     "file": "prose-style.md",
-    "updated": "2026-09-06",
+    "updated": "2026-09-08",
     "description": "House style for practical exposition, dialogue, mock-liturgical comedy, prop business, and character-specific embarrassment.",
     "speakers": [
       "Author's Desk"
     ],
-    "defaultVersion": "v5",
+    "defaultVersion": "v6",
     "versions": [
       {
         "id": "v1",
@@ -41,9 +41,16 @@
       },
       {
         "id": "v5",
-        "label": "v5 · Current",
-        "file": "prose-style.md",
+        "label": "v5 · Archived",
+        "file": "prose-style-v5.md",
         "updated": "2026-09-06",
+        "description": "House style for practical exposition, dialogue, mock-liturgical comedy, prop business, and character-specific embarrassment."
+      },
+      {
+        "id": "v6",
+        "label": "v6 · Current",
+        "file": "prose-style.md",
+        "updated": "2026-09-08",
         "description": "House style for practical exposition, dialogue, mock-liturgical comedy, prop business, and character-specific embarrassment."
       }
     ]
@@ -53,12 +60,12 @@
     "title": "Prose and Scene Guidance",
     "topic": "Editorial Reference",
     "file": "prose-and-scene-guidance.md",
-    "updated": "2026-09-06",
+    "updated": "2026-09-08",
     "description": "Revision boundaries and author-confirmed development directions, including the implied family allusion in Doom v7.",
     "speakers": [
       "Author's Desk"
     ],
-    "defaultVersion": "v5",
+    "defaultVersion": "v6",
     "versions": [
       {
         "id": "v1",
@@ -90,9 +97,16 @@
       },
       {
         "id": "v5",
-        "label": "v5 · Current",
-        "file": "prose-and-scene-guidance.md",
+        "label": "v5 · Archived",
+        "file": "prose-and-scene-guidance-v5.md",
         "updated": "2026-09-06",
+        "description": "Revision boundaries and author-confirmed development directions, including the implied family allusion in Doom v7."
+      },
+      {
+        "id": "v6",
+        "label": "v6 · Current",
+        "file": "prose-and-scene-guidance.md",
+        "updated": "2026-09-08",
         "description": "Revision boundaries and author-confirmed development directions, including the implied family allusion in Doom v7."
       }
     ]
@@ -102,12 +116,12 @@
     "title": "Character Behaviour Audit",
     "topic": "Writer's Character Reference",
     "file": "character-behavior-audit.md",
-    "updated": "2026-09-06",
+    "updated": "2026-09-08",
     "description": "Version-scoped F, M, and S advisory notes, including Mikhail's mock blessing and Lynleit's response in Doom v7.",
     "speakers": [
       "Character Archive"
     ],
-    "defaultVersion": "v5",
+    "defaultVersion": "v6",
     "versions": [
       {
         "id": "v1",
@@ -143,9 +157,17 @@
       },
       {
         "id": "v5",
-        "label": "v5 · Current",
-        "file": "character-behavior-audit.md",
+        "label": "v5 · Archived",
+        "file": "character-behavior-audit-v5.md",
         "updated": "2026-09-06",
+        "description": "Version-scoped F, M, and S advisory notes, including Mikhail's mock blessing and Lynleit's response in Doom v7.",
+        "behaviorFile": "character-behavior-notes-v5.json"
+      },
+      {
+        "id": "v6",
+        "label": "v6 · Current",
+        "file": "character-behavior-audit.md",
+        "updated": "2026-09-08",
         "description": "Version-scoped F, M, and S advisory notes, including Mikhail's mock blessing and Lynleit's response in Doom v7.",
         "behaviorFile": "character-behavior-notes.json"
       }
@@ -156,12 +178,12 @@
     "title": "Character Intimacy and Sexuality Reference",
     "topic": "Writer's Character Reference",
     "file": "character-intimacy-and-sexuality.md",
-    "updated": "2026-09-06",
+    "updated": "2026-09-08",
     "description": "Character-specific intimacy and attraction, distinguishing confirmed background from working interpretations and preserving Doom v7's incomplete encounter.",
     "speakers": [
       "Character Archive"
     ],
-    "defaultVersion": "v5",
+    "defaultVersion": "v6",
     "versions": [
       {
         "id": "v1",
@@ -197,9 +219,17 @@
       },
       {
         "id": "v5",
-        "label": "v5 · Current",
-        "file": "character-intimacy-and-sexuality.md",
+        "label": "v5 · Archived",
+        "file": "character-intimacy-and-sexuality-v5.md",
         "updated": "2026-09-06",
+        "description": "Character-specific intimacy and attraction, distinguishing confirmed background from working interpretations and preserving Doom v7's incomplete encounter.",
+        "tensionFile": "sexual-tension-notes-v5.json"
+      },
+      {
+        "id": "v6",
+        "label": "v6 · Current",
+        "file": "character-intimacy-and-sexuality.md",
+        "updated": "2026-09-08",
         "description": "Character-specific intimacy and attraction, distinguishing confirmed background from working interpretations and preserving Doom v7's incomplete encounter.",
         "tensionFile": "sexual-tension-notes.json"
       }
@@ -222,12 +252,12 @@
     "title": "Questions to Be Answered",
     "topic": "Editorial Ledger",
     "file": "questions-to-be-answered.md",
-    "updated": "2026-09-06",
+    "updated": "2026-09-08",
     "description": "Confidence-tracked canon and chronology questions, including the unrevealed form of Fionn's lineage association with the Cult of Inanna.",
     "speakers": [
       "Author's Desk"
     ],
-    "defaultVersion": "v4",
+    "defaultVersion": "v5",
     "versions": [
       {
         "id": "v1",
@@ -252,9 +282,16 @@
       },
       {
         "id": "v4",
-        "label": "v4 · Current",
-        "file": "questions-to-be-answered.md",
+        "label": "v4 · Archived",
+        "file": "questions-to-be-answered-v4.md",
         "updated": "2026-09-06",
+        "description": "Confidence-tracked canon and chronology questions, including the unrevealed form of Fionn's lineage association with the Cult of Inanna."
+      },
+      {
+        "id": "v5",
+        "label": "v5 · Current",
+        "file": "questions-to-be-answered.md",
+        "updated": "2026-09-08",
         "description": "Confidence-tracked canon and chronology questions, including the unrevealed form of Fionn's lineage association with the Cult of Inanna."
       }
     ]
@@ -264,12 +301,12 @@
     "title": "Contradictions to Resolve",
     "topic": "Editorial Ledger",
     "file": "contradictions-to-resolve.md",
-    "updated": "2026-09-06",
+    "updated": "2026-09-08",
     "description": "Cross-record conflicts and version decisions; shared Doom continuity follows v7.",
     "speakers": [
       "Author's Desk"
     ],
-    "defaultVersion": "v5",
+    "defaultVersion": "v6",
     "versions": [
       {
         "id": "v1",
@@ -301,9 +338,16 @@
       },
       {
         "id": "v5",
-        "label": "v5 · Current",
-        "file": "contradictions-to-resolve.md",
+        "label": "v5 · Archived",
+        "file": "contradictions-to-resolve-v5.md",
         "updated": "2026-09-06",
+        "description": "Cross-record conflicts and version decisions; shared Doom continuity follows v7."
+      },
+      {
+        "id": "v6",
+        "label": "v6 · Current",
+        "file": "contradictions-to-resolve.md",
+        "updated": "2026-09-08",
         "description": "Cross-record conflicts and version decisions; shared Doom continuity follows v7."
       }
     ]
@@ -363,6 +407,17 @@
     "description": "A practical guide to magecraft mechanics, internal and external practice, limitations, Holumn manifestations, and the need for control.",
     "speakers": [
       "Magistry Archive"
+    ]
+  },
+  {
+    "slug": "arc-zero-development",
+    "title": "Arc 0: Households and the Becoming of MSF",
+    "topic": "Prequel Development",
+    "file": "arc-zero-development.md",
+    "updated": "2026-09-08",
+    "description": "A tentative, Fionn-centered prequel outline: changing households, school years, MSF, and the younger cast’s unfinished habits.",
+    "speakers": [
+      "Author's Desk"
     ]
   }
 ]

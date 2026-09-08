@@ -15,7 +15,3 @@ This writer-facing record tests whether a reaction feels specific to the charact
 The current notes cover Mikhail's mock-liturgical delivery and Lynleit's interrupted composure. They guide performance and reader inference, not a new romantic pairing or a general claim about women. The family connection is now named in dialogue. Her private discomfort is conveyed by the cup, increasingly formal objections, and final threat. The notes distinguish what the scene says from what the reader infers; suggested additions remain advisory. Earlier versions retain their own paragraph anchors and notes.
 
 The v7 restoration also lets Mikhail leave one averted glance unremarked. Its story-pressure note addresses the interruption of his teasing, without assigning him a new motive or romantic interest. Restored action beats preserve Lynleit's replies and the timing of the porcelain exchange.
-
-## Park encounter and prequel direction
-
-The park notes concern adult Lynleit and Kyrien: spontaneous closeness after work, private preparation, the familiar flask, and a delayed comic consequence. Arc 0 notes remain tentative formation guidance and do not backdate adult intimate behavior into the younger cast’s school years. The hotel refuge remains nonsexual.

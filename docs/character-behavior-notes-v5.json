@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-08",
+  "updated": "2026-09-06",
   "sections": [
     {
       "id": "river-operation",
@@ -28,14 +28,6 @@
     {
       "id": "doom-address",
       "title": "Doom Has an Address"
-    },
-    {
-      "id": "park-bench",
-      "title": "The bench under the lamp"
-    },
-    {
-      "id": "arc-zero",
-      "title": "Arc 0 development"
     }
   ],
   "notes": [
@@ -1349,76 +1341,6 @@
       ],
       "momentFact": {
         "doom-has-an-address": 21
-      }
-    },
-    {
-      "id": "park-lynleit-pride",
-      "section": "park-bench",
-      "kind": "female",
-      "title": "Preparation follows curiosity",
-      "basis": "Author-supplied adult scene direction; character-specific interpretation",
-      "text": "Keep Lynleit's work primary and the opportunity spontaneous. Months of reading do not make the evening a scheduled experiment. Her restrained competitiveness recalls the card games without requiring explanatory narration.",
-      "chapterMatch": "There had been quite a lot of reading since that evening.",
-      "chapters": [
-        "the-bench-under-the-lamp"
-      ],
-      "moments": [
-        "the-bench-under-the-lamp"
-      ],
-      "momentFact": {
-        "the-bench-under-the-lamp": 3
-      }
-    },
-    {
-      "id": "park-kyrien-flask",
-      "section": "park-bench",
-      "kind": "male",
-      "title": "The familiar flask",
-      "basis": "Author-supplied adult scene direction; character-specific interpretation",
-      "text": "A measured drink can disclose strain that Kyrien does not name. Do not turn it into constant sipping or evidence that he needs alcohol to act.",
-      "chapterMatch": "Kyrien took out his flask.",
-      "chapters": [
-        "the-bench-under-the-lamp"
-      ],
-      "moments": [
-        "the-bench-under-the-lamp"
-      ],
-      "momentFact": {
-        "the-bench-under-the-lamp": 1
-      }
-    },
-    {
-      "id": "park-delayed-request",
-      "section": "park-bench",
-      "kind": "story",
-      "title": "Let the victory last",
-      "basis": "Author-supplied adult scene direction; character-specific interpretation",
-      "text": "Leave the bench before the request. The practical inconvenience does not negate Lynleit's satisfaction. Kyrien should not demand an explanation that the exchange works better without.",
-      "chapterMatch": "\"Give me your whiskey.\"",
-      "chapters": [
-        "the-bench-under-the-lamp"
-      ],
-      "moments": [
-        "the-bench-under-the-lamp"
-      ],
-      "momentFact": {
-        "the-bench-under-the-lamp": 7
-      }
-    },
-    {
-      "id": "arc-zero-formation",
-      "section": "arc-zero",
-      "kind": "story",
-      "title": "Unfinished adults",
-      "basis": "Tentative author direction; not an established scene",
-      "text": "Treat these as possible formation scenes, not proof of a single cause for every adult trait. Keep the mother's death in junior school, the later high-school focus distinct, and Kyrien outside magical schooling.",
-      "chapterMatch": null,
-      "chapters": [],
-      "moments": [
-        "households-before-the-spill"
-      ],
-      "momentFact": {
-        "households-before-the-spill": 2
       }
     }
   ]
