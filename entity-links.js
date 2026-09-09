@@ -1,5 +1,6 @@
 /* Shared archive vocabulary links. Keep this registry limited to records that have a stable in-site destination. */
 const archiveEntityLinks = [
+  ['Sleepers', 'docs.html?doc=holumn-incidents-and-testimonies#sleepers'],
   ["Kyrien's whiskey flask", 'items.html?item=kyriens-whiskey-flask'],
   ['whiskey flask', 'items.html?item=kyriens-whiskey-flask'],
   ['The Bench under the Lamp', 'story.html?chapter=the-bench-under-the-lamp'],

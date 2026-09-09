@@ -49,6 +49,13 @@ for (const moment of moments) {
 }
 
 let checkedAnchors = 0;
+const sleepers = moments.find(moment => moment.slug === 'sleepers-above-the-river');
+assert.equal(sleepers.timelinePhase, null, 'Sleepers must remain unplaced');
+assert.equal(sleepers.characterAnchors.length, 0, 'Sleepers must not acquire invented chronology');
+assert.ok(sleepers.prose.length > 20 && !sleepers.chapterSlug, 'Sleepers: standalone prose missing');
+assert.ok(sleepers.prose.at(-1).includes('came into view'), 'Sleepers: preserve the incomplete downstream ending');
+assert.ok(!/\bomen\b/i.test(sleepers.prose.join(' ')), 'Sleepers: editorial meaning leaked into narration');
+assert.ok(json('holumns/index.json').incidents.some(incident => incident.id === 'HI-007' && incident.storyLink.includes(sleepers.slug)), 'Sleepers: incident link missing');
 for (const note of notes) {
   for (const slug of note.chapters || []) {
     const chapter = chapters.find((entry) => entry.slug === slug);
@@ -72,7 +79,7 @@ const phaseContext = { window: {} };
 vm.runInNewContext(read('story-phases.js'), phaseContext);
 const phaseIds = new Set(phaseContext.window.MAGIARCHY_STORY_PHASES.map(p => p.id));
 for (const chapter of chapters) assert.ok(phaseIds.has(chapter.timelinePhase), `${chapter.slug}: unknown Story phase`);
-for (const moment of moments) assert.ok(phaseIds.has(moment.timelinePhase), `${moment.slug}: unknown Moment phase`);
+for (const moment of moments) assert.ok((moment.timelinePhase === null && moment.placementStatus === 'Unplaced') || phaseIds.has(moment.timelinePhase), `${moment.slug}: unknown Moment phase`);
 assert.ok(phaseContext.window.MAGIARCHY_STORY_ARCS.some(a => a.id === 'arc-0'), 'Missing prequel life period');
 const park = chapters.find(c => c.slug === 'the-bench-under-the-lamp');
 assert.ok(park && park.timelinePhase === 'late-arc-one', 'Park milestone placement missing');

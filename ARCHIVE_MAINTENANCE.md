@@ -170,7 +170,11 @@ Physicians have no knowledge of magic unless the author establishes an exception
 
 ## Design and delivery invariants
 
-Profile portrait controls and scrollable thumbnails overlay the image inside its existing bounds. They never add a separate height-expanding footer. Anchor every profile image and thumbnail to the top so tall artwork retains its face; keep captions, touch targets, and keyboard focus readable on a flat overlay.
+Profile portrait controls and scrollable thumbnails overlay the image inside its existing bounds. The overlay has no panel background, border, or visible image count: only arrows and thumbnails remain. Keep era information in image alt text and thumbnail labels. Anchor every profile image and thumbnail to the top so tall artwork retains its face.
+
+Standalone Moments may carry a single shared `prose` paragraph array, rendered in their reader and indexed in search. An explicitly unplaced Moment uses `timelinePhase: null`, `placementStatus: Unplaced`, and no fabricated character-timeline anchor. It remains accessible from involved profiles and the Moments catalog. Do not create a numbered phase to accommodate unknown chronology.
+
+Sleepers (HI-007, MOM-024) remain a passive manifestation encountered by Kyrien, not a professional investigation. Their intended omen of circumstances beyond meaningful control is editorial direction only. Preserve the incomplete downstream stopping point; do not invent other witnesses, institutional readings, an attack, a forecast referent, or a connection to other river Holumns. The behavior audit supports Kyrien's informal observation and curiosity without requiring new gender guidance or a capability change.
 
 Music cards preserve the archive's flat artwork and compact metadata layout. Play only the supplied MP3, load audio on visitor action rather than autoplaying or preloading full tracks, and expose separate same-origin MP3 and WAV download links with file sizes. Keep unrecorded concepts inactive. Do not assign a supplied recording to a concept, character, or scene without author confirmation. Preserve the supplied audio bytes and filenames when importing into `media/music/`.
 

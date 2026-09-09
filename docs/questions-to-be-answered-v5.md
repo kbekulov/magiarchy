@@ -8,10 +8,6 @@ Story, character, world, relationship, institution, location, and event question
 
 | Area | Question | Confidence |
 | --- | --- | --- |
-| Sleepers: placement | When does Kyrien's solitary river encounter occur, how does it relate to the main plot, and what happens after he continues downstream? | 0% |
-| Sleepers: identity and visibility | Are the suspended figures human, dead, asleep, or connected to missing people; who can see them, and does the river matter to their appearance? | 0% |
-| Sleepers: omen | What situation, if any, do they foreshadow; does the omen concern Kyrien, groups, or cities; do they cause it, and can it be escaped? | 0% |
-| Sleepers: other knowledge | Does anyone already understand the manifestation, and is there any connection to the Spill, the Drowned Choir, or the river leviathan? | 0% |
 | Family | Which relative receives Lynleit and Kyrien's son, and what does that person know about his parents? | 0% |
 | Pagan traditions | How does a pagan cult's magecraft differ from Church doctrine, and when does that difference affect a Magus's standing within the sanctioned order? | 0% |
 | Relationships | Which adult characters beyond Lynleit and Kyrien, Fionn and Helena, and the emerging Yulia and Hiyu bond have romantic or sexual histories that materially shape their present behavior? | 0% |

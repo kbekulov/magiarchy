@@ -706,7 +706,13 @@ async function loadProfilePortrait(profile, portrait, note) {
       image.src = source.getAttribute('src');
       image.alt = source.alt || `Character artwork of ${profile.name}`;
       const arc = source.closest('.gallery-card')?.dataset.storyArc;
-      note.textContent = `${arc ? arc.replace('-', ' ') + ' · ' : ''}${selectedIndex + 1} / ${artworks.length}`;
+      note.textContent = '';
+      image.alt = `${source.alt || profile.name}${arc ? ' (' + arc.replace('-', ' ') + ')' : ''}`;
+      choices.forEach((button, i) => {
+        const era = artworks[i].closest('.gallery-card')?.dataset.storyArc;
+        button.setAttribute('aria-label', `Portrait ${i + 1}${era ? ', ' + era.replace('-', ' ') : ''}`);
+        button.title = button.getAttribute('aria-label');
+      });
       choices.forEach((button, i) => button.setAttribute('aria-pressed', String(i === selectedIndex)));
     }
     previous.addEventListener('click', () => show(selectedIndex - 1));
@@ -1094,7 +1100,7 @@ async function loadCharacterMoments(profile, timeline) {
     const response = await fetch('moments/index.json');
     if (!response.ok) throw new Error(`Moment catalog request failed: ${response.status}`);
     const entries = await response.json();
-    const related = entries.filter((entry) => entry.characterAnchors.some((anchor) => anchor.slug === profile.slug));
+    const related = entries.filter((entry) => entry.characters.some((character) => character.slug === profile.slug));
     if (!related.length) return;
 
     const section = document.querySelector('#character-moments-section');

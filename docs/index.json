@@ -270,24 +270,41 @@
     "title": "Holumn Incidents and Victim Testimonies",
     "topic": "Holumn Archive",
     "file": "holumn-incidents-and-testimonies.md",
-    "updated": "2026-09-05",
+    "updated": "2026-09-09",
     "description": "Victim testimony and incident evidence for physical, environmental, event-bound, disembodied, and curse-bound Holumn manifestations, including the shared terminal curse in Doom Has an Address.",
     "speakers": [
       "Victims and Incident Witnesses",
       "Archive"
-    ]
+    ],
+    "versions": [
+      {
+        "id": "v1",
+        "label": "v1",
+        "file": "holumn-incidents-and-testimonies-v1.md",
+        "updated": "2026-09-05",
+        "description": "Victim testimony and incident evidence for physical, environmental, event-bound, disembodied, and curse-bound Holumn manifestations, including the shared terminal curse in Doom Has an Address."
+      },
+      {
+        "id": "v2",
+        "label": "v2",
+        "file": "holumn-incidents-and-testimonies.md",
+        "updated": "2026-09-09",
+        "description": "Victim testimony and incident evidence for physical, environmental, event-bound, disembodied, and curse-bound Holumn manifestations, including the shared terminal curse in Doom Has an Address."
+      }
+    ],
+    "defaultVersion": "v2"
   },
   {
     "slug": "questions-to-be-answered",
     "title": "Questions to Be Answered",
     "topic": "Editorial Ledger",
     "file": "questions-to-be-answered.md",
-    "updated": "2026-09-08",
+    "updated": "2026-09-09",
     "description": "Confidence-tracked canon and chronology questions, including the unrevealed form of Fionn's lineage association with the Cult of Inanna.",
     "speakers": [
       "Author's Desk"
     ],
-    "defaultVersion": "v5",
+    "defaultVersion": "v6",
     "versions": [
       {
         "id": "v1",
@@ -320,8 +337,15 @@
       {
         "id": "v5",
         "label": "v5 · Current",
-        "file": "questions-to-be-answered.md",
+        "file": "questions-to-be-answered-v5.md",
         "updated": "2026-09-08",
+        "description": "Confidence-tracked canon and chronology questions, including the unrevealed form of Fionn's lineage association with the Cult of Inanna."
+      },
+      {
+        "id": "v6",
+        "label": "v6",
+        "file": "questions-to-be-answered.md",
+        "updated": "2026-09-09",
         "description": "Confidence-tracked canon and chronology questions, including the unrevealed form of Fionn's lineage association with the Cult of Inanna."
       }
     ]

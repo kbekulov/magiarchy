@@ -203,7 +203,7 @@ moments.forEach((moment) => {
       type: 'Moment',
       url: `moments.html?moment=${encodeURIComponent(moment.slug)}${versionQuery}`,
       subtitle: `${moment.code} · ${moment.timelineLabel}`,
-      text: flatten([version.summary, version.purpose, version.location, version.known, version.openQuestions, version.continuityBefore, version.continuityAfter]),
+      text: flatten([version.summary, version.purpose, version.location, version.prose, version.known, version.openQuestions, version.continuityBefore, version.continuityAfter]),
       keywords: flatten(moment.characters)
     });
   });

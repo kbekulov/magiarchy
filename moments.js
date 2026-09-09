@@ -301,11 +301,19 @@ async function renderMomentReader(entry, entries, requestedVersion) {
   const phase = storyPhases.find((candidate) => candidate.id === selected.timelinePhase);
   const phaseLabel = `${phase?.arcLabel ?? 'Arc unassigned'} · ${phase?.title ?? selected.timelineLabel}`;
   document.querySelector('#moment-phase-name').textContent = phaseLabel;
-  document.querySelector('#moment-story-link').href = `story.html?phase=${encodeURIComponent(selected.timelinePhase)}`;
+  document.querySelector('#moment-story-link').href = selected.timelinePhase ? `story.html?phase=${encodeURIComponent(selected.timelinePhase)}` : 'story.html';
   document.querySelector('#moment-before').textContent = selected.continuityBefore;
   document.querySelector('#moment-purpose').textContent = selected.purpose;
   document.querySelector('#moment-after').textContent = selected.continuityAfter;
   populateList('#moment-known', selected.known, { factStatus: true });
+  let prose = document.querySelector('#moment-scene-prose');
+  if (!prose) {
+    prose = momentElement('section', 'moment-scene-prose');
+    prose.id = 'moment-scene-prose';
+    document.querySelector('.moment-fact-panel').before(prose);
+  }
+  prose.hidden = !selected.prose?.length;
+  prose.replaceChildren(momentElement('h2', '', selected.title), ...(selected.prose || []).map(text => momentElement('p', '', text)));
   renderMomentVersionSwitcher(entry, selected);
 
   const characterLinks = selected.characters.length
@@ -318,8 +326,8 @@ async function renderMomentReader(entry, entries, requestedVersion) {
   document.querySelector('#moment-reader-characters').replaceChildren(...characterLinks);
 
   const connections = [
-    createConnectionCard('Overall Story', phaseLabel, selected.placementStatus, `story.html?phase=${encodeURIComponent(selected.timelinePhase)}`),
-    ...selected.characters.map((character) => createConnectionCard('Character timeline', character.name, 'This Moment is anchored to the character\'s personal chronology.', `character.html?character=${encodeURIComponent(character.slug)}`))
+    createConnectionCard('Overall Story', phaseLabel, selected.placementStatus, selected.timelinePhase ? `story.html?phase=${encodeURIComponent(selected.timelinePhase)}` : 'story.html'),
+    ...selected.characters.map((character) => createConnectionCard('Character timeline', character.name, selected.timelinePhase ? 'Open the character profile and related Moments.' : 'Chronological placement is unassigned.', `character.html?character=${encodeURIComponent(character.slug)}`))
   ];
   if (selected.chapterSlug) {
     const chapterVersion = selected.chapterVersion ? `&version=${encodeURIComponent(selected.chapterVersion)}` : '';
@@ -338,7 +346,7 @@ async function renderMomentReader(entry, entries, requestedVersion) {
     }
   }
 
-  const ordered = sortMoments(entries);
+  const ordered = sortMoments(entries).filter(candidate => Boolean(candidate.timelinePhase) === Boolean(entry.timelinePhase));
   const currentIndex = ordered.findIndex((candidate) => candidate.slug === entry.slug);
   const neighbors = [];
   if (ordered[currentIndex - 1]) {

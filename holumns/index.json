@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-05",
+  "updated": "2026-09-09",
   "principles": [
     "Holumn is a category of manifestation, not a biological species.",
     "A Holumn may be a physical creature, a natural phenomenon, a repeating event, a disembodied will, or a curse.",
@@ -58,6 +58,20 @@
     }
   ],
   "incidents": [
+    {
+      "id": "HI-007",
+      "slug": "sleepers",
+      "title": "Sleepers",
+      "recordType": "Kyrien's encounter",
+      "types": [],
+      "summary": "Human figures hang roughly twenty to fifty metres above ground or water, heads lowered and limbs loose. Most of those Kyrien sees resemble men in trench coats and hats. Their faces are obscured by height and angle.",
+      "ordinaryReading": "No police or government account has been established.",
+      "hiddenReading": "No Magus or Church interpretation has been established.",
+      "observedEffect": "Clothing shifts in the wind and figures sway slightly. They do not attack, follow, communicate, or visibly react to being watched. Their human appearance does not establish that they are people.",
+      "knownWeakness": "No weakness or countermeasure is known. Kyrien does not attempt to harm them.",
+      "spillContribution": "The manifestation remains passive while Kyrien observes it. Its connection to the Spill is unknown.",
+      "storyLink": "moments.html?moment=sleepers-above-the-river"
+    },
     {
       "id": "HI-001",
       "slug": "the-voice-on-the-line",

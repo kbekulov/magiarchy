@@ -1,5 +1,80 @@
 [
   {
+    "slug": "sleepers-above-the-river",
+    "code": "MOM-024",
+    "title": "Sleepers above the River",
+    "status": "Incomplete scene",
+    "placementStatus": "Unplaced",
+    "timelinePhase": null,
+    "timelineLabel": "Placement undecided",
+    "sequence": 24,
+    "sceneType": "Encounter",
+    "thread": "Sleepers",
+    "location": "Vilen river and pier",
+    "summary": "On an early morning walk, Kyrien notices motionless human figures suspended above the river. He takes a boat downstream to see how far they extend.",
+    "purpose": "Kyrien follows an unexplained manifestation out of curiosity. The figures remain passive.",
+    "characters": [
+      {
+        "name": "Kyrien",
+        "slug": "kyrien"
+      }
+    ],
+    "characterAnchors": [],
+    "known": [
+      "Kyrien walks alone through Vilen early in the morning and reaches the river.",
+      "Human figures hang without visible supports, their heads lowered and limbs loose. Most appear to be men in trench coats and hats.",
+      "Kyrien looks for cables and a crane but finds neither.",
+      "He privately calls the figures Sleepers and takes a rowing boat downstream.",
+      "The figures neither attack nor communicate nor visibly react to his attention.",
+      {
+        "text": "Some figures would be difficult to notice from the street; their positions do not suggest a display arranged for Kyrien.",
+        "status": "inferred"
+      },
+      "Kyrien continues downriver. The scene stops before his journey ends."
+    ],
+    "openQuestions": [
+      "When does this encounter occur, and what happens after Kyrien continues downstream?",
+      "Are the figures human, and who can see them?",
+      "What, if anything, does their appearance foreshadow?"
+    ],
+    "continuityBefore": "The preceding events and story phase are undecided. This is a solitary walk, not an MSF assignment.",
+    "continuityAfter": "The continuation and main-plot connection remain undecided. No connection to the Drowned Choir or river leviathan is established.",
+    "prose": [
+      "The traffic light changed while Kyrien was still half a street away. By the time he reached the crossing it had gone red again. No cars had passed.",
+      "He waited with his hands in his jacket pockets. Across the road, a delivery van stood outside a shuttered shop, its rear doors open. There was nobody beside it. Most of the windows above the shops were dark, although daylight had begun to show between the roofs.",
+      "Was everyone still asleep?",
+      "He crossed when the light changed and took the street toward the river. His shoes sounded loud beneath the overhanging balconies. At the end of the street the wind reached him, colder than it had been among the buildings, and he pulled his collar up.",
+      "Steps led down to an exposed strip of bank beside a wooden pier. Water slapped against its posts. On the opposite side, the upper windows of a row of houses had caught the morning light; below them the bank remained in shadow. Kyrien stopped at the foot of the steps and looked along the water.",
+      "Something dark hung above it.",
+      "For a moment he took it for something farther away, attached to a building across the river. He moved a few paces sideways. The thing shifted against the roofs.",
+      "It was a man.",
+      "Kyrien tipped his head back. Thirty metres up, perhaps forty. A dark trench coat reached below the man's knees, and a hat hid most of his lowered head. His arms hung beside him. One foot was slightly lower than the other.",
+      "Kyrien looked above him.",
+      "No cable. He followed the empty air to either side, looking for the end of a crane, then turned to check the buildings behind the pier. Nothing nearby reached high enough.",
+      "When he looked back, the man was still there.",
+      "A gust lifted the bottom of the coat and let it fall. The body turned a little, too slowly for Kyrien to be sure at first. The hands stayed loose.",
+      "He went out onto the pier. Its boards shifted under his weight, and the change of angle showed him a pale strip between one sleeve and a glove. Or perhaps it was the hand itself. He couldn't make out the face.",
+      "Farther downriver, above the embankment, another man hung against the light sky.",
+      "This one was heavier. His coat was shorter, his hat broader. His head had dropped forward in the same way. Kyrien looked from one to the other, then found a third beyond a roof, where he had mistaken the dark shape for part of a chimney.",
+      "Were they asleep?",
+      "He stood with that possibility for a few seconds. From this distance he couldn't see anyone breathing. He couldn't see a rope around a neck either.",
+      "Sleepers, then. He needed some word for them.",
+      "The first had turned far enough to show its other shoulder. It had done nothing else. Kyrien walked to the end of the pier, watching for a change as he came closer. There wasn't one.",
+      "A small rowing boat was tied beside the lower landing. Two oars lay inside it. He looked downriver again. The farthest sleeper disappeared behind the corner of a building when he leaned to his left; from the road above, he doubted he would have noticed it at all.",
+      "He stepped into the boat, steadied himself against a post and untied the line. The hull knocked against the landing before he pushed it clear.",
+      "For a little while he watched the pier recede. Then he set the oars in their places and pulled toward the middle of the river. The blades made two broad disturbances in the otherwise quiet water.",
+      "There were gaps between the figures. Past the first bend he went long enough without seeing one that he turned to look back. The man over the embankment was still visible behind him. Ahead, a narrow coat hung above a stand of trees.",
+      "Kyrien counted five before he lost sight of the first.",
+      "They were at different heights. One was little higher than the nearby roof; another hung well above it, perhaps fifty metres from the water. A sleeve stirred. Farther off, the hem of a coat moved in the opposite direction as the wind changed.",
+      "He let the current carry the boat beneath the next one.",
+      "From directly below he could see the soles of two shoes, trouser cuffs and the hands hanging clear of the coat. One hand was open. The fingers of the other curled slightly inward. The head remained beyond the shoulders and the brim of the hat.",
+      "Kyrien rested the oars and watched.",
+      "The boat drifted on. He had to turn on the seat to keep looking up. A shoe moved against the sky as the whole figure swayed, then settled.",
+      "He faced downstream again and took up the oars. Beyond the next stretch of bank, another hat and pair of lowered shoulders came into view."
+    ],
+    "updated": "2026-09-09"
+  },
+  {
     "slug": "interrogation-after-the-failed-attempt",
     "code": "MOM-001",
     "title": "After the Failed Attempt",

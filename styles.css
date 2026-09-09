@@ -10009,9 +10009,14 @@ a.moment-connection-card:hover {
 
 .profile-portrait-stage { position: absolute; inset: 0; }
 .character-profile-portrait .profile-portrait-stage img { position: absolute; inset: 0; min-height: 0; object-position: center top; }
-.profile-art-overlay { position: absolute; z-index: 2; bottom: 12px; left: 12px; right: 12px; border: 1px solid #45474e; border-radius: 6px; background: rgba(30, 31, 34, .92); }
+.profile-art-overlay { position: absolute; z-index: 2; bottom: 12px; left: 12px; right: 12px; }
 .profile-art-controls { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 8px; }
 .profile-art-controls .profile-portrait-note { position: static; color: #dbdee1; }
+.profile-art-controls .profile-portrait-note:empty { display: none; }
+.moment-scene-prose { padding: clamp(20px, 4vw, 40px); border: 1px solid #404249; border-radius: 8px; background: #232428; margin: 24px 0; }
+.moment-scene-prose p { max-width: 72ch; margin: 0 auto 1.2em; line-height: 1.8; }
+.moment-scene-prose h2 { max-width: 36ch; margin: 0 auto 24px; }
+.moment-scene-prose[hidden] { display: none; }
 .profile-art-controls button { width: 44px; height: 44px; border: 1px solid #45474e; border-radius: 4px; background: #2b2d31; color: #dbdee1; cursor: pointer; }
 .profile-art-thumbnails { display: flex; gap: 8px; overflow-x: auto; padding: 0 8px 8px; }
 .profile-art-thumbnails button { flex: 0 0 44px; padding: 2px; border: 2px solid transparent; border-radius: 4px; background: #313338; cursor: pointer; }

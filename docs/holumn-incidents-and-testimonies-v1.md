@@ -1,36 +1,8 @@
 # Holumn Incidents and Victim Testimonies
 
-This archive preserves Holumn encounters, victim testimony, and institutional readings where they exist. An individual encounter does not establish that police, government, Magi, or Church envoys know of it.
+This archive preserves accounts of Holumn contact as they are known across several institutions. Police and government records usually begin with material explanations. Magi and Church special envoys examine the same evidence for a governing supernatural rule.
 
-Forms and countermeasures are collected in [Holumns](../holumns.html).
-
-## Sleepers
-
-**Record:** HI-007
-
-**Witness:** Kyrien
-
-**Location:** Vilen river
-
-**Account:** [Sleepers above the River](../moments.html?moment=sleepers-above-the-river)
-
-Kyrien encounters human figures hanging roughly twenty to fifty metres above the water and embankment. Most resemble men wearing trench coats and hats. Their heads are lowered and their limbs hang loosely, as if from invisible puppet strings. Clothing moves in the wind; the figures otherwise remain still. They do not attack, pursue, communicate, or visibly respond to his presence. Their faces are difficult to see.
-
-He finds no visible supports. After privately calling them Sleepers, he takes a boat downstream to observe more of them. The available account ends while he is still on the river. No quoted testimony, additional witness, institutional investigation, or later outcome is recorded.
-
-No countermeasure is known. It is not established whether the figures are people, whether other observers can see them, or whether the river is necessary to their appearance. No connection to the Drowned Choir, river leviathan, or Spill is established.
-
-### Institutional readings
-
-No police, government, Magus, or Church reading has been established for this encounter.
-
-### Editorial status
-
-The manifestation and encounter are author-established; the scene is intentionally incomplete and unplaced. The intended omen concerns approaching circumstances beyond a person's meaningful control, despite preparation or ability. It need not mean death or failure, and choices may still affect details. This is development direction, not an explanation known to Kyrien or a demonstrated predictive rule. Its referent, scope, cause, and reliability remain undecided. See the [Questions ledger](../docs.html?doc=questions-to-be-answered).
-
-
-
-
+Forms and countermeasures are collected in [Holumns](../holumns.html). Accounts quoted below are testimony; the surrounding text records events and institutional interpretations.
 
 ## The Voice on the Line
 
