@@ -41,13 +41,13 @@ function initializeMomentTrackDrag() {
     pointerStartX = event.clientX;
     scrollStartX = momentPhaseTrack.scrollLeft;
     moved = false;
-    momentPhaseTrack.setPointerCapture(event.pointerId);
   });
 
   momentPhaseTrack.addEventListener('pointermove', (event) => {
     if (event.pointerId !== pointerId) return;
     const distance = event.clientX - pointerStartX;
     if (Math.abs(distance) > 4) {
+      if (!moved) momentPhaseTrack.setPointerCapture(event.pointerId);
       moved = true;
       momentPhaseTrack.classList.add('is-dragging');
     }
@@ -59,10 +59,11 @@ function initializeMomentTrackDrag() {
   momentPhaseTrack.addEventListener('click', (event) => {
     if (moved) {
       event.preventDefault();
+      event.stopPropagation();
       moved = false;
     }
   }, true);
-  momentPhaseTrack.addEventListener('pointerup', finish);
+  window.addEventListener('pointerup', finish);
   momentPhaseTrack.addEventListener('pointercancel', finish);
   momentPhaseTrack.addEventListener('lostpointercapture', () => {
     momentPhaseTrack.classList.remove('is-dragging');
@@ -142,9 +143,12 @@ function renderMomentPhaseTrack(entries) {
     button.type = 'button';
     button.dataset.phase = phase.id;
     button.setAttribute('aria-label', `Filter Moments to ${phase.title}`);
-    button.append(momentElement('span', 'moment-phase-number', phase.number));
+    const heading = momentElement('div', 'moment-phase-heading');
+    heading.append(momentElement('span', 'moment-phase-number', phase.number), momentElement('small', '', phase.label));
+    button.append(heading);
     const copy = momentElement('div');
-    copy.append(momentElement('small', '', phase.label), momentElement('h3', '', phase.title));
+    copy.className = 'moment-phase-copy';
+    copy.append(momentElement('h3', '', phase.title));
     const count = counts.get(phase.id) ?? 0;
     item.classList.toggle('has-moments', count > 0);
     copy.append(momentElement('p', '', count ? `${count} anchored ${count === 1 ? 'Moment' : 'Moments'}` : 'No scenes anchored yet'));
@@ -154,6 +158,7 @@ function renderMomentPhaseTrack(entries) {
   });
   momentPhaseTrack.replaceChildren(...nodes);
   window.decorateArcTimeline(momentPhaseTrack);
+  momentPhaseTrack.querySelectorAll('.timeline-arc-band').forEach(band => band.setAttribute('aria-hidden', 'true'));
 }
 
 function appendOptions(select, values, labelForValue = (value) => value) {

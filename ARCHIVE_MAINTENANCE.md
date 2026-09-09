@@ -170,6 +170,10 @@ Physicians have no knowledge of magic unless the author establishes an exception
 
 ## Design and delivery invariants
 
+Moments phase navigation uses compact, equal-height cards with aligned label, title, and count areas. Show one Arc legend and colored card edges, not duplicate Arc headings with an empty label band. Preserve horizontal dragging, filtering, keyboard focus, and full untruncated titles.
+
+The author's playful Inanna backlog note reinforces enjoyment of the already-established uncomfortable lineage connection. It adds no event, obligation, cult mechanism, or relationship fact. Keep this as a tonal preference within existing canon, not permission to invent further consequences.
+
 Profile portrait controls and scrollable thumbnails overlay the image inside its existing bounds. The overlay has no panel background, border, or visible image count: only arrows and thumbnails remain. Keep era information in image alt text and thumbnail labels. Anchor every profile image and thumbnail to the top so tall artwork retains its face.
 
 Standalone Moments may carry a single shared `prose` paragraph array, rendered in their reader and indexed in search. An explicitly unplaced Moment uses `timelinePhase: null`, `placementStatus: Unplaced`, and no fabricated character-timeline anchor. It remains accessible from involved profiles and the Moments catalog. Do not create a numbered phase to accommodate unknown chronology.

@@ -5646,6 +5646,37 @@ a.status-member:hover {
   padding: 24px 0 50px;
 }
 
+/* Compact phase cards: one Arc legend, aligned labels, titles, and counts. */
+.moment-phase-track.arc-timeline {
+  grid-auto-columns: 220px;
+  gap: 10px;
+  padding: 14px 18px 16px;
+  scroll-padding-inline: 18px;
+}
+.moment-phase-track.arc-timeline > li {
+  overflow: hidden;
+  border: 1px solid #404249;
+  border-top: 3px solid var(--arc-color);
+  border-radius: 6px;
+  background: #232428;
+}
+.moment-phase-track.arc-timeline .timeline-arc-band { display: none; }
+.moment-phase-track.arc-timeline button {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+    min-height: 160px;
+  height: 100%;
+  padding: 14px;
+}
+.moment-phase-heading { display: flex; align-items: center; gap: 10px; min-height: 36px; }
+.moment-phase-heading .moment-phase-number { flex: 0 0 28px; }
+.moment-phase-heading small { font-size: .56rem; line-height: 1.5; color: #a4a8b2; }
+.moment-phase-copy { display: flex; flex: 1; flex-direction: column; width: 100%; gap: 12px; }
+.moment-phase-track .moment-phase-copy h3 { margin: 0; font-size: .82rem; line-height: 1.45; }
+.moment-phase-track .moment-phase-copy p { margin-top: auto; font-size: .65rem; }
+.moment-phase-track.arc-timeline > li.is-filter-active { border-color: #9297ff; }
+
 .moment-library-header {
   display: flex;
   align-items: flex-end;

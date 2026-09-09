@@ -4,6 +4,8 @@ Files in this directory are preserved source references, not pending work. Each 
 
 ## 9 September 2026
 
+The timestamped `3 - cult_of_inanna` note reinforces the author's enjoyment of Lynleit's uncomfortable lineage association. Existing canon already supplies this connection; the preference is recorded in the maintenance charter without inventing a scene, doctrine, obligation, or consequence.
+
 The timestamped `2 - sleeper_holumn` source is integrated as MOM-024, Sleepers above the River, and HI-007. The standalone Moment contains the opening and downstream observations only. Its chronology, continuation, forecast referent, and institutional knowledge remain unresolved. The testimony and question documents preserve their prior published versions. No unsupported continuation was drafted and no writer passage was omitted; the stopping point is intentionally incomplete.
 
 The timestamped `1 - timeline_upgrade` source adds shared Arc bands and labelled color keys to Story, Moments, and character timelines. Arc names are separated from episode headings, and Private Consequences replaces Later in Arc 1 as the phase title. Display numbering follows phase order; stable links and chronology remain intact.

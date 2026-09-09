@@ -1,6 +1,6 @@
 {
-  "generated": "2026-09-09T03:29:11.406Z",
-  "count": 464,
+  "generated": "2026-09-09T03:38:49.015Z",
+  "count": 465,
   "entries": [
     {
       "id": "page-characters",
@@ -2097,6 +2097,14 @@
       "url": "index.html#update-direct-prose-rule",
       "subtitle": "Home update feed",
       "text": "Archive Standard: Site update Home update feed PR Archive Standard 30 Aug 2026 · Prose rule Direct prose is now a permanent archive rule. Reader-facing records must avoid formulaic slogans, vague conclusions, and decorative contrasts, and state facts or writer guidance plainly. Browse the document archive →"
+    },
+    {
+      "id": "update-update-moment-phase-cards",
+      "title": "Archive Update: Site update",
+      "type": "Update",
+      "url": "index.html#update-moment-phase-cards",
+      "subtitle": "Home update feed",
+      "text": "Archive Update: Site update Home update feed 09 Archive Update 9 Sep 2026 · Moments timeline The Moments timeline now uses compact phase cards with aligned headings and counts, clearer spacing, and one Arc legend. Dragging and phase filtering remain available."
     },
     {
       "id": "update-update-sleepers-and-portrait-controls",
