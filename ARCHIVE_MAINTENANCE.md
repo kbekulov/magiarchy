@@ -174,7 +174,7 @@ Moments phase navigation uses compact, equal-height cards with aligned label, ti
 
 The author's playful Inanna backlog note reinforces enjoyment of the already-established uncomfortable lineage connection. It adds no event, obligation, cult mechanism, or relationship fact. Keep this as a tonal preference within existing canon, not permission to invent further consequences.
 
-Profile portrait controls and scrollable thumbnails overlay the image inside its existing bounds. The overlay has no panel background, border, or visible image count: only arrows and thumbnails remain. Keep era information in image alt text and thumbnail labels. Anchor every profile image and thumbnail to the top so tall artwork retains its face.
+Profile portraits navigate through thumbnails, left/right image-half taps, horizontal touch swipes, or mouse drags. Do not show arrow buttons. Keep transparent half-image buttons keyboard-accessible, prevent native image dragging and duplicate clicks after a swipe, and preserve vertical page scrolling and pinch zoom. Scrollable thumbnails overlay the image without a panel background, border, or visible image count. Keep era information in image alt text and thumbnail labels, with a screen-reader announcement on selection. Anchor every profile image and thumbnail to the top so tall artwork retains its face.
 
 Standalone Moments may carry a single shared `prose` paragraph array, rendered in their reader and indexed in search. An explicitly unplaced Moment uses `timelinePhase: null`, `placementStatus: Unplaced`, and no fabricated character-timeline anchor. It remains accessible from involved profiles and the Moments catalog. Do not create a numbered phase to accommodate unknown chronology.
 

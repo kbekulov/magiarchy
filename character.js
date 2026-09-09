@@ -678,15 +678,16 @@ async function loadProfilePortrait(profile, portrait, note) {
     let selectedIndex = Math.floor(Math.random() * artworks.length);
     const stage = createElement('div', 'profile-portrait-stage');
     const image = createElement('img');
+    image.draggable = false;
     stage.append(image);
-    const controls = createElement('div', 'profile-art-controls');
-    const previous = createElement('button', '', '←');
-    const next = createElement('button', '', '→');
+    const previous = createElement('button', 'profile-art-zone profile-art-zone-previous');
+    const next = createElement('button', 'profile-art-zone profile-art-zone-next');
     previous.type = next.type = 'button';
     previous.setAttribute('aria-label', 'Previous portrait');
     next.setAttribute('aria-label', 'Next portrait');
     note.setAttribute('aria-live', 'polite');
-    controls.append(previous, note, next);
+    note.className = 'sr-only';
+    stage.append(previous, next);
     const thumbnails = createElement('div', 'profile-art-thumbnails');
     thumbnails.setAttribute('aria-label', 'Choose portrait');
     const choices = artworks.map((source, index) => {
@@ -706,7 +707,7 @@ async function loadProfilePortrait(profile, portrait, note) {
       image.src = source.getAttribute('src');
       image.alt = source.alt || `Character artwork of ${profile.name}`;
       const arc = source.closest('.gallery-card')?.dataset.storyArc;
-      note.textContent = '';
+      note.textContent = `Portrait ${selectedIndex + 1} of ${artworks.length}${arc ? ', ' + arc.replace('-', ' ') : ''}`;
       image.alt = `${source.alt || profile.name}${arc ? ' (' + arc.replace('-', ' ') + ')' : ''}`;
       choices.forEach((button, i) => {
         const era = artworks[i].closest('.gallery-card')?.dataset.storyArc;
@@ -715,13 +716,57 @@ async function loadProfilePortrait(profile, portrait, note) {
       });
       choices.forEach((button, i) => button.setAttribute('aria-pressed', String(i === selectedIndex)));
     }
+    let gesture = null;
+    let suppressClick = false;
+    stage.addEventListener('pointerdown', (event) => {
+      if (!event.isPrimary || event.button !== 0 || artworks.length < 2) return;
+      suppressClick = false;
+      gesture = { id: event.pointerId, x: event.clientX, y: event.clientY, horizontal: false };
+    });
+    stage.addEventListener('pointermove', (event) => {
+      if (event.pointerId !== gesture?.id) return;
+      const dx = event.clientX - gesture.x;
+      const dy = event.clientY - gesture.y;
+      if (!gesture.horizontal && Math.max(Math.abs(dx), Math.abs(dy)) > 8) {
+        suppressClick = true;
+        if (Math.abs(dy) >= Math.abs(dx)) { gesture = null; return; }
+        gesture.horizontal = true;
+        stage.setPointerCapture(event.pointerId);
+        stage.classList.add('is-dragging');
+      }
+      if (gesture?.horizontal) event.preventDefault();
+    });
+    function finishPortraitGesture(event) {
+      if (event.pointerId !== gesture?.id) return;
+      const dx = event.clientX - gesture.x;
+      if (event.type === 'pointerup' && gesture.horizontal && Math.abs(dx) >= 40) {
+        show(selectedIndex + (dx < 0 ? 1 : -1));
+      }
+      gesture = null;
+      stage.classList.remove('is-dragging');
+      if (stage.hasPointerCapture(event.pointerId)) stage.releasePointerCapture(event.pointerId);
+    }
+    stage.addEventListener('pointerup', finishPortraitGesture);
+    stage.addEventListener('pointercancel', finishPortraitGesture);
+    stage.addEventListener('lostpointercapture', () => {
+      gesture = null;
+      stage.classList.remove('is-dragging');
+    });
+    stage.addEventListener('click', (event) => {
+      if (suppressClick && event.detail !== 0) { event.preventDefault(); event.stopPropagation(); }
+    }, true);
     previous.addEventListener('click', () => show(selectedIndex - 1));
     next.addEventListener('click', () => show(selectedIndex + 1));
+    stage.addEventListener('keydown', (event) => {
+      if (event.key !== 'ArrowLeft' && event.key !== 'ArrowRight') return;
+      event.preventDefault();
+      show(selectedIndex + (event.key === 'ArrowLeft' ? -1 : 1));
+    });
     previous.hidden = next.hidden = thumbnails.hidden = artworks.length < 2;
     portrait.classList.add('has-art-browser');
     const overlay = createElement('div', 'profile-art-overlay');
-    overlay.append(controls, thumbnails);
-    portrait.replaceChildren(stage, overlay);
+    overlay.append(thumbnails);
+    portrait.replaceChildren(stage, overlay, note);
     show(selectedIndex);
   } catch (error) {
     console.warn(`Could not load gallery portrait for ${profile.name}.`, error);

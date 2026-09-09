@@ -1,6 +1,6 @@
 {
-  "generated": "2026-09-09T03:38:49.015Z",
-  "count": 465,
+  "generated": "2026-09-09T08:51:14.739Z",
+  "count": 466,
   "entries": [
     {
       "id": "page-characters",
@@ -2097,6 +2097,14 @@
       "url": "index.html#update-direct-prose-rule",
       "subtitle": "Home update feed",
       "text": "Archive Standard: Site update Home update feed PR Archive Standard 30 Aug 2026 · Prose rule Direct prose is now a permanent archive rule. Reader-facing records must avoid formulaic slogans, vague conclusions, and decorative contrasts, and state facts or writer guidance plainly. Browse the document archive →"
+    },
+    {
+      "id": "update-update-portrait-gestures",
+      "title": "Archive Update: Site update",
+      "type": "Update",
+      "url": "index.html#update-portrait-gestures",
+      "subtitle": "Home update feed",
+      "text": "Archive Update: Site update Home update feed 09 Archive Update 9 Sep 2026 · Portrait navigation Browse character portraits by tapping either half of the image, swiping, dragging with a mouse, or selecting a thumbnail. The visible arrow buttons have been removed; keyboard navigation remains available."
     },
     {
       "id": "update-update-moment-phase-cards",
