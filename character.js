@@ -679,7 +679,44 @@ async function loadProfilePortrait(profile, portrait, note) {
     const stage = createElement('div', 'profile-portrait-stage');
     const image = createElement('img');
     image.draggable = false;
-    stage.append(image);
+    const strip = createElement('div', 'profile-portrait-strip');
+    const beforeImage = createElement('img');
+    const afterImage = createElement('img');
+    for (const neighbour of [beforeImage, afterImage]) {
+      neighbour.alt = '';
+      neighbour.draggable = false;
+      neighbour.setAttribute('aria-hidden', 'true');
+    }
+    strip.append(beforeImage, image, afterImage);
+    stage.append(strip);
+    let settleTimer = null;
+    let settleIndex = null;
+    function stopPortraitMotion() {
+      clearTimeout(settleTimer);
+      settleTimer = null;
+      strip.style.transition = 'none';
+      if (settleIndex !== null) {
+        const index = settleIndex;
+        settleIndex = null;
+        show(index);
+      }
+    }
+    function movePortrait(dx) {
+      strip.style.transition = 'none';
+      const width = stage.getBoundingClientRect().width;
+      strip.style.transform = `translateX(${Math.max(-width, Math.min(width, dx))}px)`;
+    }
+    function settlePortrait(dx, commit = true) {
+      const width = stage.getBoundingClientRect().width;
+      const advance = commit && Math.abs(dx) >= 40;
+      const index = selectedIndex + (advance ? (dx < 0 ? 1 : -1) : 0);
+      settleIndex = index;
+      if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) { show(index); return; }
+      strip.style.transition = 'transform 220ms cubic-bezier(.22,.61,.36,1)';
+      strip.style.transform = `translateX(${advance ? (dx < 0 ? -width : width) : 0}px)`;
+      clearTimeout(settleTimer);
+      settleTimer = setTimeout(() => show(index), 230);
+    }
     const previous = createElement('button', 'profile-art-zone profile-art-zone-previous');
     const next = createElement('button', 'profile-art-zone profile-art-zone-next');
     previous.type = next.type = 'button';
@@ -702,7 +739,14 @@ async function loadProfilePortrait(profile, portrait, note) {
       return button;
     });
     function show(index) {
+      clearTimeout(settleTimer);
+      settleTimer = null;
+      settleIndex = null;
+      strip.style.transition = 'none';
+      strip.style.transform = 'translateX(0px)';
       selectedIndex = (index + artworks.length) % artworks.length;
+      beforeImage.src = artworks[(selectedIndex + artworks.length - 1) % artworks.length].getAttribute('src');
+      afterImage.src = artworks[(selectedIndex + 1) % artworks.length].getAttribute('src');
       const source = artworks[selectedIndex];
       image.src = source.getAttribute('src');
       image.alt = source.alt || `Character artwork of ${profile.name}`;
@@ -722,19 +766,24 @@ async function loadProfilePortrait(profile, portrait, note) {
     let lastTouchTime = 0;
     // Handle touch completion directly, rather than relying on Safari's synthesized click.
     stage.addEventListener('touchstart', (event) => {
+      stopPortraitMotion();
+      movePortrait(0);
       lastTouchTime = Date.now();
       gesture = null;
       touchGesture = event.touches.length === 1 && artworks.length > 1
         ? { x: event.touches[0].clientX, y: event.touches[0].clientY, axis: null } : null;
     }, { passive: true });
     stage.addEventListener('touchmove', (event) => {
-      if (!touchGesture || event.touches.length !== 1) { touchGesture = null; return; }
+      if (!touchGesture || event.touches.length !== 1) { touchGesture = null; movePortrait(0); return; }
       const dx = event.touches[0].clientX - touchGesture.x;
       const dy = event.touches[0].clientY - touchGesture.y;
       if (!touchGesture.axis && Math.max(Math.abs(dx), Math.abs(dy)) > 10) {
         touchGesture.axis = Math.abs(dx) > Math.abs(dy) ? 'x' : 'y';
       }
-      if (touchGesture.axis === 'x' && event.cancelable) event.preventDefault();
+      if (touchGesture.axis === 'x') {
+        if (event.cancelable) event.preventDefault();
+        movePortrait(dx);
+      }
     }, { passive: false });
     stage.addEventListener('touchend', (event) => {
       lastTouchTime = Date.now();
@@ -746,17 +795,18 @@ async function loadProfilePortrait(profile, portrait, note) {
       const dy = end.clientY - start.y;
       if (start.axis !== 'y' && Math.abs(dx) >= 40 && Math.abs(dx) > Math.abs(dy)) {
         if (event.cancelable) event.preventDefault();
-        show(selectedIndex + (dx < 0 ? 1 : -1));
+        settlePortrait(dx);
       } else if (!start.axis && Math.max(Math.abs(dx), Math.abs(dy)) <= 10) {
         if (event.cancelable) event.preventDefault();
         const bounds = stage.getBoundingClientRect();
         show(selectedIndex + (end.clientX < bounds.left + bounds.width / 2 ? -1 : 1));
-      }
+      } else settlePortrait(dx, false);
     }, { passive: false });
-    stage.addEventListener('touchcancel', () => { touchGesture = null; lastTouchTime = Date.now(); });
+    stage.addEventListener('touchcancel', () => { touchGesture = null; lastTouchTime = Date.now(); settlePortrait(0, false); });
     stage.addEventListener('pointerdown', (event) => {
       if (event.pointerType === 'touch') return;
       if (!event.isPrimary || event.button !== 0 || artworks.length < 2) return;
+      stopPortraitMotion();
       suppressClick = false;
       gesture = { id: event.pointerId, x: event.clientX, y: event.clientY, horizontal: false };
     });
@@ -771,14 +821,12 @@ async function loadProfilePortrait(profile, portrait, note) {
         stage.setPointerCapture(event.pointerId);
         stage.classList.add('is-dragging');
       }
-      if (gesture?.horizontal) event.preventDefault();
+      if (gesture?.horizontal) { event.preventDefault(); movePortrait(dx); }
     });
     function finishPortraitGesture(event) {
       if (event.pointerId !== gesture?.id) return;
       const dx = event.clientX - gesture.x;
-      if (event.type === 'pointerup' && gesture.horizontal && Math.abs(dx) >= 40) {
-        show(selectedIndex + (dx < 0 ? 1 : -1));
-      }
+      if (gesture.horizontal) settlePortrait(dx, event.type === 'pointerup');
       gesture = null;
       stage.classList.remove('is-dragging');
       if (stage.hasPointerCapture(event.pointerId)) stage.releasePointerCapture(event.pointerId);
@@ -787,6 +835,7 @@ async function loadProfilePortrait(profile, portrait, note) {
     stage.addEventListener('pointercancel', finishPortraitGesture);
     stage.addEventListener('lostpointercapture', (event) => {
       if (event.target !== stage) return;
+      if (gesture) settlePortrait(0, false);
       gesture = null;
       stage.classList.remove('is-dragging');
     });

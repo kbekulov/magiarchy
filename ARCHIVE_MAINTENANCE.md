@@ -170,6 +170,8 @@ Physicians have no knowledge of magic unless the author establishes an exception
 
 ## Design and delivery invariants
 
+Portrait swipes translate the current and adjacent images directly with the finger or mouse, without easing during contact. Release slides to the adjacent portrait or snaps back for short/cancelled gestures. Preload adjacent artwork, retain the Safari touch path, and skip release animation when reduced motion is requested. Thumbnails stay stationary over the image.
+
 Portrait touch navigation handles touch completion directly, suppressing duplicate synthesized clicks. Ignore child capture-loss events when handling mouse drags. Preserve vertical scroll and pinch gestures. Thumbnail buttons have no background, padding, or border: display only rounded images, retaining accessible selection state and a keyboard-focus outline.
 
 Moments phase navigation uses compact, equal-height cards with aligned label, title, and count areas. Show one Arc legend and colored card edges, not duplicate Arc headings with an empty label band. Preserve horizontal dragging, filtering, keyboard focus, and full untruncated titles.

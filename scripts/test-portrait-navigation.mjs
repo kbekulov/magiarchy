@@ -27,6 +27,8 @@ function target() {
 const stage = target(), previous = target(), next = target();
 const changes = [];
 const context = vm.createContext({ stage, previous, next, artworks: [1, 2, 3, 4], selectedIndex: 1,
+  stopPortraitMotion() {}, movePortrait(dx) { context.lastOffset = dx; },
+  settlePortrait(dx, commit = true) { if (commit && Math.abs(dx) >= 40) context.show(context.selectedIndex + (dx < 0 ? 1 : -1)); },
   show(index) { changes.push(index); context.selectedIndex = (index + 4) % 4; } });
 vm.runInContext(handlers, context);
 function click(button, detail = 1) {
@@ -36,6 +38,7 @@ stage.fire('pointerdown'); stage.fire('pointerup'); click(next);
 assert.deepEqual(changes, [2], 'A tap advances exactly once');
 stage.fire('pointerdown');
 stage.fire('pointermove', { clientX: 70 });
+assert.equal(context.lastOffset, -80, 'The portrait tracks the mouse displacement');
 stage.fire('pointerup', { clientX: 70 }); click(next);
 assert.deepEqual(changes, [2, 3], 'A left drag advances once without a duplicate click');
 stage.fire('pointerdown');
@@ -70,6 +73,7 @@ touch('touchstart', 40); touch('touchend', 40);
 assert.equal(changes.at(-1), 2, 'Left-half touch goes backward');
 touch('touchstart', 240);
 assert.equal(touch('touchmove', 90).prevented, true);
+assert.equal(context.lastOffset, -150, 'The portrait tracks finger displacement');
 touch('touchend', 90); click(next);
 assert.equal(changes.at(-1), 3, 'Touch swipe advances exactly once');
 total = changes.length;
@@ -83,3 +87,27 @@ assert.equal(changes.length, total, 'Pinching does not navigate');
 touch('touchstart', 240); stage.fire('touchcancel'); touch('touchend', 80);
 assert.equal(changes.length, total, 'Cancelled touch does not navigate');
 console.log('Direct touch taps, swipes, duplicate clicks, vertical scrolling, pinch, and cancellation checks passed.');
+
+const motionSource = source.slice(source.indexOf('    let settleTimer = null;'), source.indexOf("    const previous = createElement('button', 'profile-art-zone"));
+let finishAnimation;
+const strip = { style: {} };
+const motion = vm.createContext({ stage, strip, selectedIndex: 2,
+  window: { matchMedia: () => ({ matches: false }) },
+  clearTimeout() { finishAnimation = null; },
+  setTimeout(fn) { finishAnimation = fn; return 1; },
+  show(index) { motion.selectedIndex = index; strip.style.transform = 'translateX(0px)'; } });
+vm.runInContext(motionSource, motion);
+motion.movePortrait(-85);
+assert.equal(strip.style.transform, 'translateX(-85px)');
+assert.equal(strip.style.transition, 'none', 'No easing while the finger is down');
+motion.settlePortrait(-85);
+assert.equal(strip.style.transform, 'translateX(-300px)', 'Release completes the full-width slide');
+assert.equal(motion.selectedIndex, 2, 'Selection is not replaced midway through the slide');
+finishAnimation();
+assert.equal(motion.selectedIndex, 3);
+motion.movePortrait(20); motion.settlePortrait(20);
+assert.equal(strip.style.transform, 'translateX(0px)', 'Short drags animate back');
+motion.window.matchMedia = () => ({ matches: true });
+motion.settlePortrait(80);
+assert.equal(motion.selectedIndex, 2, 'Reduced motion skips the release animation');
+console.log('Drag-following transforms, release distance, snap-back, and reduced-motion checks passed.');

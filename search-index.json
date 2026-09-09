@@ -1,6 +1,6 @@
 {
-  "generated": "2026-09-09T09:02:12.958Z",
-  "count": 467,
+  "generated": "2026-09-09T09:13:03.555Z",
+  "count": 468,
   "entries": [
     {
       "id": "page-characters",
@@ -2097,6 +2097,14 @@
       "url": "index.html#update-direct-prose-rule",
       "subtitle": "Home update feed",
       "text": "Archive Standard: Site update Home update feed PR Archive Standard 30 Aug 2026 · Prose rule Direct prose is now a permanent archive rule. Reader-facing records must avoid formulaic slogans, vague conclusions, and decorative contrasts, and state facts or writer guidance plainly. Browse the document archive →"
+    },
+    {
+      "id": "update-update-portrait-follow-drag",
+      "title": "Archive Update: Site update",
+      "type": "Update",
+      "url": "index.html#update-portrait-follow-drag",
+      "subtitle": "Home update feed",
+      "text": "Archive Update: Site update Home update feed 09 Archive Update 9 Sep 2026 · Portrait sliding Portraits now follow your finger or mouse during a horizontal drag, revealing the neighbouring artwork. Releasing completes the slide or returns a short drag to the current image."
     },
     {
       "id": "update-update-portrait-touch-fix",
