@@ -10040,7 +10040,7 @@ a.moment-connection-card:hover {
 
 .profile-portrait-stage { position: absolute; inset: 0; touch-action: pan-y pinch-zoom; user-select: none; -webkit-user-select: none; }
 .profile-portrait-stage img { -webkit-user-drag: none; }
-.profile-art-zone { position: absolute; top: 0; bottom: 0; width: 50%; border: 0; padding: 0; background: transparent; cursor: grab; touch-action: pan-y pinch-zoom; }
+.profile-art-zone { position: absolute; z-index: 1; top: 0; bottom: 0; width: 50%; height: 100%; appearance: none; -webkit-appearance: none; border: 0; padding: 0; background: transparent; cursor: pointer; touch-action: pan-y pinch-zoom; }
 .profile-art-zone-previous { left: 0; }
 .profile-art-zone-next { right: 0; }
 .profile-portrait-stage.is-dragging .profile-art-zone { cursor: grabbing; }
@@ -10052,10 +10052,9 @@ a.moment-connection-card:hover {
 .moment-scene-prose h2 { max-width: 36ch; margin: 0 auto 24px; }
 .moment-scene-prose[hidden] { display: none; }
 .profile-art-thumbnails { display: flex; gap: 8px; overflow-x: auto; padding: 0 8px 8px; }
-.profile-art-thumbnails button { flex: 0 0 44px; padding: 2px; border: 2px solid transparent; border-radius: 4px; background: #313338; cursor: pointer; }
+.profile-art-thumbnails button { flex: 0 0 44px; padding: 0; border: 0; border-radius: 6px; background: transparent; cursor: pointer; }
 .profile-art-thumbnails { pointer-events: auto; }
-.profile-art-thumbnails button[aria-pressed="true"] { border-color: #9498ff; }
-.character-profile-portrait .profile-art-thumbnails img { width: 36px; height: 44px; min-height: 0; object-fit: cover; }
+.character-profile-portrait .profile-art-thumbnails img { width: 44px; height: 52px; min-height: 0; border-radius: 6px; object-fit: cover; }
 .profile-art-zone[hidden], .profile-art-thumbnails[hidden] { display: none; }
 .has-art-browser button:focus-visible { outline: 2px solid #b5b8ff; outline-offset: 2px; }
 

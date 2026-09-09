@@ -9,6 +9,7 @@ function target() {
   const listeners = new Map();
   const captures = new Set();
   return {
+    getBoundingClientRect() { return { left: 0, width: 300 }; },
     classList: { add() {}, remove() {} },
     addEventListener(type, fn) { listeners.set(type, fn); },
     setPointerCapture(id) { captures.add(id); },
@@ -57,3 +58,28 @@ assert.equal(changes.length, before + 1, 'Keyboard activation works after a canc
 stage.fire('keydown', { key: 'ArrowLeft' });
 assert.equal(changes.at(-1), 2, 'Arrow keys remain available');
 console.log('Portrait tap, drag, swipe, cancellation, vertical-scroll intent, and keyboard checks passed.');
+const finger = (clientX, clientY = 100) => ({ clientX, clientY });
+function touch(type, x, y = 100) {
+  return stage.fire(type, { touches: type === 'touchend' ? [] : [finger(x, y)], changedTouches: [finger(x, y)], cancelable: true });
+}
+let total = changes.length;
+touch('touchstart', 240); touch('touchend', 240); click(next);
+assert.equal(changes.length, total + 1, 'Touch tap works without a synthesized click, and ignores a duplicate');
+assert.equal(changes.at(-1), 3);
+touch('touchstart', 40); touch('touchend', 40);
+assert.equal(changes.at(-1), 2, 'Left-half touch goes backward');
+touch('touchstart', 240);
+assert.equal(touch('touchmove', 90).prevented, true);
+touch('touchend', 90); click(next);
+assert.equal(changes.at(-1), 3, 'Touch swipe advances exactly once');
+total = changes.length;
+touch('touchstart', 100); assert.equal(touch('touchmove', 100, 200).prevented, false);
+touch('touchend', 100, 210); click(next);
+assert.equal(changes.length, total, 'Touch vertical scrolling does not navigate');
+touch('touchstart', 100);
+stage.fire('touchstart', { touches: [finger(100), finger(200)] });
+touch('touchend', 200);
+assert.equal(changes.length, total, 'Pinching does not navigate');
+touch('touchstart', 240); stage.fire('touchcancel'); touch('touchend', 80);
+assert.equal(changes.length, total, 'Cancelled touch does not navigate');
+console.log('Direct touch taps, swipes, duplicate clicks, vertical scrolling, pinch, and cancellation checks passed.');

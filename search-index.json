@@ -1,6 +1,6 @@
 {
-  "generated": "2026-09-09T08:51:14.739Z",
-  "count": 466,
+  "generated": "2026-09-09T09:02:12.958Z",
+  "count": 467,
   "entries": [
     {
       "id": "page-characters",
@@ -2097,6 +2097,14 @@
       "url": "index.html#update-direct-prose-rule",
       "subtitle": "Home update feed",
       "text": "Archive Standard: Site update Home update feed PR Archive Standard 30 Aug 2026 · Prose rule Direct prose is now a permanent archive rule. Reader-facing records must avoid formulaic slogans, vague conclusions, and decorative contrasts, and state facts or writer guidance plainly. Browse the document archive →"
+    },
+    {
+      "id": "update-update-portrait-touch-fix",
+      "title": "Archive Update: Site update",
+      "type": "Update",
+      "url": "index.html#update-portrait-touch-fix",
+      "subtitle": "Home update feed",
+      "text": "Archive Update: Site update Home update feed 09 Archive Update 9 Sep 2026 · Portrait touch controls Portrait navigation now handles touch taps and swipes directly, with safeguards against duplicate clicks. Thumbnails are rounded images without gray frames."
     },
     {
       "id": "update-update-portrait-gestures",
