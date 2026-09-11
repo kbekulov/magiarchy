@@ -12,6 +12,13 @@ Story, character, world, relationship, institution, location, and event question
 | Sleepers: identity and visibility | Are the suspended figures human, dead, asleep, or connected to missing people; who can see them, and does the river matter to their appearance? | 0% |
 | Sleepers: omen | What situation, if any, do they foreshadow; does the omen concern Kyrien, groups, or cities; do they cause it, and can it be escaped? | 0% |
 | Sleepers: other knowledge | Does anyone already understand the manifestation, and is there any connection to the Spill, the Drowned Choir, or the river leviathan? | 0% |
+| Family | What circumstances allow Lynleit to conceal her son after his birth, and who besides her knows he exists? | 0% |
+| Family | Which events restore Lynleit and Kyrien's intimacy during Arc 2, and how do their duties and the hidden son affect that process? | 0% |
+| Family | When is their daughter conceived and born, and what post-Arc 2 development makes the conception apparent without revealing it during Arc 2? | 0% |
+| Family | What later circumstances shape the lives of both children? | 0% |
+| Holumns | For each incident involving a taken or returned victim, what state is imposed, what permits return, and what evidence establishes personal continuity or its loss? | 0% |
+| Lester | Which concrete chronological facts reveal the contradiction in Lester's biography, and when do Natalia and the reader encounter them? | 0% |
+| Natalia | What experience leads Natalia to recognize contradiction as intrinsic to nature without explaining Lester's origin? | 0% |
 | Family | Which relative receives Lynleit and Kyrien's son, and what does that person know about his parents? | 0% |
 | Pagan traditions | How does a pagan cult's magecraft differ from Church doctrine, and when does that difference affect a Magus's standing within the sanctioned order? | 0% |
 | Relationships | Which adult characters beyond Lynleit and Kyrien, Fionn and Helena, and the emerging Yulia and Hiyu bond have romantic or sexual histories that materially shape their present behavior? | 0% |
@@ -29,8 +36,6 @@ Story, character, world, relationship, institution, location, and event question
 | Doom Has an Address | Which encounter after Doom Has an Address becomes Lynleit and Kyrien's first completed sexual encounter? | 0% |
 | Doom Has an Address | What happens during the incomplete attempt that the Chapter leaves off-page? | 0% |
 | Doom Has an Address | Which Magi first examine the curse and identify the one-death solution before Lynleit consults Natalia? | 0% |
-| Holumns | Can any victim taken by a Holumn return, and what would return mean for the person's identity? | 0% |
-| Lester | How did Lester become a demiholumn, and what metaphysical answer about his human and Holumn conditions would most threaten his sense of self? | 0% |
 | Location | What is Port City's proper name, and which events take place there? | 0% |
 | Location | What was the Director's House called before it acquired that title, and who gave it the name? | 0% |
 | Private investigation | How do clients find Natalia, and how does she screen cases without alerting the Magiarchy or Church? | 0% |
@@ -48,8 +53,6 @@ Story, character, world, relationship, institution, location, and event question
 | Fionn and Helena | Was their marriage still physically intimate near Fionn's death, and what private moment best shows that bodily closeness could not repair the trust he withheld? | 5% |
 | Yulia and Hiyu | Which event makes either of them consciously recognize investigative dependence as desire, and who first names what is happening between them? | 5% |
 | Natalia and Lester | Which ordinary case interaction first makes Natalia respond to Lester as a man rather than an anomalous condition, and how does he recognize the change without forcing either of them to name it? | 5% |
-| River Holumns | Are the Drowned Choir and the river leviathan separate Holumns, two expressions of one river-bound intelligence, or phenomena feeding from the same wound? | 5% |
-| Holumns | Where do Holumns take disappeared victims, and what evidence can reveal the destination without yet explaining the mechanism or possibility of return? | 5% |
 | Cult of Inanna | Which covenants or obligations survive in Fionn's lineage today, and what consequences do they have beyond Mikhail's account of its history? | 10% |
 | Core mystery | What logically defensible worldview and incompatible objective does each faction bring to Fionn, MSF, the Spill, and Narvea? | 10% |
 | Sexual tension | Which current tension records beyond Lynleit and Kyrien, Yulia and Hiyu, Fionn and Helena, Natalia and Lester, Lynleit and Felix, and Sherie and Felix become visible story dynamics rather than remaining conditional? | 10% |
@@ -69,7 +72,6 @@ Story, character, world, relationship, institution, location, and event question
 | Domestic thread | Beyond Lynleit, who in the household accepts or resists Ash the cat as a permanent resident, and how does his place in the house change after Fionn's death? | 15% |
 | Cardiff venture | What special-envoy duty takes Father Mikhail to Cardiff, which Magi threats turn it into a life-and-death operation, and what part of his past does the ordeal expose? | 15% |
 | Cardiff aftermath | Which morally incompatible method divides Lynleit and Mikhail, and what consequence from Cardiff later enters the main story in Narvea? | 15% |
-| Holumns | By what mechanism do Holumns make victims disappear, and at what stage should that mechanism be revealed separately from destination and return? | 20% |
 | Kyrien | What cover story conceals Kyrien's release and unofficial MSF role? | 20% |
 | Core mystery | Which individually rational political and institutional pressures persuade Fionn to wait, and when does reasonable delay become his fatal mistake? | 20% |
 | Magi Academy | What is the Academy's normal admission and training hierarchy, and what knowledge gained during the terrors helps Myka graduate at the top of her class? | 20% |
@@ -108,7 +110,7 @@ These questions determine sequence, event placement, reveal timing, or elapsed t
 
 | Area | Question | Confidence |
 | --- | --- | --- |
-| Family | When, if ever, does Kyrien learn that Lynleit bore his son, and where does that revelation belong in relation to Lynleit's elusive return and his leadership of MSF? | 0% |
+| Family | When and how does Kyrien learn that Lynleit bore his son, and where does that revelation belong in relation to Lynleit's elusive return and his leadership of MSF? | 0% |
 | Timeline | How much time passes between the first disappearance, the park quarantine, Kyrien's early recruitment, Fionn's much later assassination, Helena's takeover, and the hunt for Lynleit's arrest? | 10% |
 | Succession | When does Lynleit formally inherit the Magiarchate after Fionn's death, and how does that transfer of responsibility overlap with Kyrien assuming MSF's director seat? | 20% |
 | Myka | Does Myka join MSF after Lynleit's disappearance and Kyrien's assumption of the director's office, and does Kyrien recruit her personally? | 20% |

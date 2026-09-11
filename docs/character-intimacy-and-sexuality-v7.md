@@ -44,7 +44,7 @@ He eventually stays when she can no longer compel him. When she asks what reward
 
 After Fionn's death, the hotel refuge gives her nonsexual comfort in Kyrien's embrace. Much later the curse brings an incomplete attempt at intimacy, then a recovery she will not explain. Their sexual relationship begins afterward and lasts long enough to acquire private jokes and ordinary habits. A later encounter takes place in her third-floor study-bedroom. Pregnancy follows near the Arc 2 transition, with its meaning left for the reader to recognize at the next arc's opening.
 
-Lynleit bears their son during her disappearance and later keeps him hidden from both Kyrien and the wider world. They restore intimacy during Arc 2 and eventually conceive a second child, a daughter, who is born later. The daughter's conception becomes apparent only after Arc 2, not within it. The circumstances of concealment, Kyrien's eventual discovery, the process of reconciliation, and the daughter's timing and later family life remain undecided.
+Her later return revives their physical awareness, but Kyrien still does not know about their son. The consequences for renewed intimacy remain a separate question.
 
 ### Writing guardrail
 
@@ -282,7 +282,7 @@ No specific behavior is established. An observant and selective approach is a wo
 
 ### With Lester
 
-She examines his demiholumn condition and is attracted to him. He notices when her attention becomes personal and provokes her to act rather than continue observing. Neither knows his origin, and attraction does not resolve his contradictory history. Natalia can recognize contradiction as natural without acquiring a complete explanation of Lester.
+She examines his demiholumn condition and is attracted to him. He notices when her attention becomes personal and provokes her to act rather than continue observing.
 
 Their work keeps bringing them together. Neither the attraction nor an eventual encounter would answer all of her questions about his nature.
 
@@ -398,9 +398,7 @@ No romantic partner or sexual profile is recorded.
 3. Months of private theoretical study, followed by the spontaneous park encounter.
 4. Reciprocal exploration and learning to receive as well as initiate.
 5. First intercourse by mutual choice, followed by ordinary, playful intimacy.
-6. Pregnancy near the Arc 1 transition; the son is born during Lynleit's disappearance. Arc 2 makes his existence legible to the reader, not automatically to Kyrien.
-7. Lynleit keeps their son hidden from Kyrien and the wider world after his birth. The timing and circumstances of Kyrien's eventual discovery are undecided.
-8. Restored intimacy during Arc 2 ultimately leads to the conception of their daughter and her later birth. The conception becomes apparent only after Arc 2. They have two children by the end of the story.
+6. Pregnancy near the Arc 1 transition and the son's reveal in Arc 2.
 
 These are separate milestones, not a conscious program Lynleit follows. Her duty remains primary. She was already a competent adult while Fionn lived; his death changes the structure of belonging and responsibility. The family she eventually forms with Kyrien is her choice, not compliance with a Cult duty or Fionn's selection of a successor.
 

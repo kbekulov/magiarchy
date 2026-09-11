@@ -25,6 +25,24 @@ for (const profile of profiles) {
   assert.equal(new Set(profile.beats).size, profile.beats.length, `${profile.slug}: duplicate beats`);
 }
 assert.ok(!source.includes('const timelineDetails = [profile.origin'), 'Positional timeline prose returned');
+// Author-confirmed boundaries must survive later continuity edits.
+const holumnCanon = json('holumns/index.json');
+assert.ok(holumnCanon.principles.some(text => text.includes('no universal destination')), 'Holumn taking must not imply a universal destination');
+assert.ok(holumnCanon.principles.some(text => text.includes('A taken person can return')), 'Holumn-specific return is possible');
+assert.ok(holumnCanon.principles.some(text => text.includes('separate Holumns')), 'The two river Holumns must remain distinct');
+for (const slug of ['lynleit', 'kyrien']) {
+  const profile = profiles.find(record => record.slug === slug);
+  assert.ok(profile.connections.some(link => link.name === 'Their son'), `${slug}: missing first child`);
+  assert.ok(profile.connections.some(link => link.name === 'Their daughter'), `${slug}: missing second child`);
+}
+const lester = profiles.find(record => record.slug === 'lester');
+assert.ok(lester.origin.includes('contradict continuity itself'), 'Lester: intrinsic chronological contradiction lost');
+assert.ok(lester.origin.includes('Neither he nor Natalia knows'), 'Lester: origin must remain unknown to both');
+assert.ok(lester.future.includes('intrinsic feature of nature'), 'Natalia: contradiction is natural, not merely an error');
+const familyContinuity = selected(moments.find(record => record.slug === 'the-end-of-the-first-arc')).continuityAfter;
+assert.ok(familyContinuity.includes('only after Arc 2'), 'Daughter: preserve post-Arc 2 reveal');
+assert.ok(familyContinuity.includes('no fixed timing'), 'Son: do not fix Kyrien\'s discovery');
+assert.ok(read('holumns.html').includes('id="taken-and-returned"'), 'Holumn states must have a World surface');
 assert.ok(!source.includes('The factional context that shapes'), 'Generic connection fallback returned');
 assert.ok(!source.includes("do not always align with ${profile.name}"), 'Generic conflict fallback returned');
 

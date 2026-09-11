@@ -21,3 +21,9 @@ On 6 September 2026, the author selected Doom v6 through the backlog exchange. I
 On 6 September 2026, the author approved all nine proposed restorations for Doom v7. The default Chapter and Moment, character interpretation, intimacy reference, and current prose guidance follow v7. V6 remains an archived alternate. The restoration expands performance and reveals a moment of restraint without changing the named family connection, the curse mechanism, incomplete attempt, or later chronology. No new cross-version contradiction results.
 
 On 8 September 2026, the author resolved the backlog's inconsistent sequence: Fionn's death, then the nonsexual hotel refuge, then Doom in the later part of Arc 1's second half. Its exact placement remains open. The successful park encounter follows months later and is distinct from later intercourse. Current Moments, phases, profiles, intimacy records, and guidance follow this sequence; archived versions preserve their earlier wording. The prequel outline does not move Lynleit's mother's death from junior school into her teenage years, give Kyrien magical schooling, or establish an optional forgotten meeting as fact.
+
+## Author clarification: 11 September 2026
+
+The Drowned Choir and river leviathan are separate Holumns. General disappearances and returns do not share one destination or mechanism. Lester's contradictory biography is deliberate ontology, not an editorial inconsistency requiring a causal repair. These decisions are integrated into the current Holumn and character records.
+
+The family direction now includes a son born during Lynleit's disappearance and a daughter following restored intimacy in Arc 2. The daughter is understood only after Arc 2; Kyrien's discovery of the son remains undecided. Historical document and Moment versions retain their earlier wording.

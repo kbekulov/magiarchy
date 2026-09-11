@@ -59,9 +59,3 @@ This table is limited to current profile claims or graph presentations that cann
 | Father Mikhail | Cardiff establishes Mikhail as a formidable counter-Magus field operative, but the six-axis graph collapses Church countermeasures into ordinary Fieldcraft and Combat while correctly showing no magecraft. | 20% |
 | System-wide | Exact graph scores still look more authoritative than the underlying canon permits, although profiles now label the assessment and values as provisional and link directly to this balance ledger. | 30% |
 | Kyrien | Kyrien's graph now preserves clear limits below Tien's fieldcraft and combat while identifying competitiveness as an exploitable weakness, but it still presents his later intelligence mastery as a timeless value rather than a developed state. | 35% |
-
-## Lester: intrinsic contradiction
-
-Lester's chronology cannot form a conventional continuous causal history. Neither he nor Natalia knows his origin; Natalia recognizes contradiction as intrinsic to nature. This establishes his ontology, not a new ability, immunity, or unrestricted power. Keep the existing questions about his intervention limits and costs open. Do not require a discoverable transformation event to answer them, or upgrade his capability graph because his existence is incomprehensible.
-
-The confirmed second child, a daughter, has no established abilities. Neither child's parentage alone establishes inherited magecraft.

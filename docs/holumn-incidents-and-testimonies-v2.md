@@ -4,24 +4,6 @@ This archive preserves Holumn encounters, victim testimony, and institutional re
 
 Forms and countermeasures are collected in [Holumns](../holumns.html).
 
-## What an incident can establish
-
-Being taken describes a Holumn-specific state, not travel to one common destination. Death is one possibility. Other effects can involve madness, contradiction, disrupted time, altered reality, compromised physicality, damaged or transformed memory, and changes to identity or causality. Location, chronology, life, death, and physical continuity may cease to behave as ordinary categories.
-
-A victim can return, but each Holumn determines what makes return possible and whether the returned person is continuous with the person taken. Phenomena resembling life after death and reanimated corpses are also possible. Neither establishes ordinary resurrection or restoration of the original person.
-
-These are author-confirmed boundaries of the category, not testimony attributed to the witnesses below. No universal mechanism or destination should be inferred from one record. See the [Holumns World archive](../holumns.html) for the shared principles.
-
-### A conceptual analogy, not a recorded incident
-
-Jungian synchronicity offers an analogy for the possible range. A Holumn could make a synchronicity-like condition inhabitable or imprisoning: meaningful coincidence would become the condition of the victim's existence, rather than something they observe. No such specific Holumn or victim is established here. The relevant inquiry would be what state the Holumn imposed, not where the victim travelled.
-
-### Lester and continuity
-
-Lester's biography contains chronological factors that cannot be reconciled into a continuous causal history. Neither Lester nor Natalia knows how he became a demiholumn. Understanding his coming into existence lies beyond the horizon of human singularity and normal human comprehension. His condition is not a missing transformation event, experiment, infection, or ordinary supernatural mechanism waiting to be found.
-
-Natalia comes to recognize contradiction as an intrinsic feature of nature. Lester's apparent violation of continuity can belong to reality at a deeper level, rather than merely being an error in it. This does not establish that he was taken by another Holumn, returned from one, or possesses unlimited abilities. See [Lester](../character.html?character=lester) and [Natalia](../character.html?character=natalia).
-
 ## Sleepers
 
 **Record:** HI-007
@@ -84,8 +66,6 @@ The object carries a condition. The disappearance occurs when the puzzle is comp
 
 ## The Drowned Choir
 
-The Drowned Choir and the river leviathan are separate Holumns, not two manifestations of one river-bound intelligence.
-
 **Record:** HI-003
 **Known forms:** Embodied and environmental manifestation
 **Primary medium:** The city river, drowned souls, and a humanlike body
@@ -113,8 +93,6 @@ Darkness, panic, current, exhaustion, and shared misperception can be used to se
 An embodied Holumn has enslaved the river's drowned souls and uses them as both grasping limbs and a collective voice. Blue flame can injure the submerged hands, and the hands cannot cross the surface layer. Both limits permit escape without establishing a means of destroying the manifestation or releasing the dead.
 
 ## The River That Is Too Deep
-
-This river leviathan is distinct from the Drowned Choir. Their shared river does not make them one entity.
 
 **Record:** HI-004
 **Known forms:** Environmental and possibly embodied

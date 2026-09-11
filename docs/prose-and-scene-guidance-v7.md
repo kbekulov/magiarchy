@@ -42,7 +42,7 @@ The author favors old rules meeting unforeseen cases, limited Church authority w
 
 A small observation may distinguish Drake. Evidence that Heyk cannot make useful to an institution may explain his need for unconventional allies. Natalia and Lester can understand different parts of one case. Experts on the Spill may each possess only part of the explanation.
 
-Separate a Holumn's imposed state, the evidence of its effects, and its particular possibility of return. Do not assume a spatial destination or a common mechanism. Reappearance does not establish unchanged identity; reanimation does not establish resurrection. Keep uncertainty honest: if the author has not decided the answer, do not label it a conclusion the reader should infer.
+Separate a disappearance's mechanism, destination, and possibility of return when that preserves a worthwhile mystery. Keep uncertainty honest: if the author has not decided the answer, do not label it a conclusion the reader should infer.
 
 ### Places and domestic life
 
@@ -81,11 +81,3 @@ The main story does not openly reveal their son. Arc 2 supplies that reveal, and
 The park remains supernatural territory. Repeated experience allows a pause; it does not establish that the quarantine has become safe. The preceding operation and exact precautions remain open rather than invented for convenience.
 
 For the tentative prequel, use [Arc 0: Households and the Becoming of MSF](../docs.html?doc=arc-zero-development). Do not resolve its optional encounters, family details, flask origin, or institutional dates by writing them into an adult biography as facts.
-
-## Author decisions: family and Holumn continuity
-
-Lynleit bears their son during her disappearance and later keeps him hidden from both Kyrien and the wider world. They restore intimacy during Arc 2 and eventually conceive a second child, a daughter, who is born later. The daughter's conception becomes apparent only after Arc 2, not within it. They have two children by the end of the story. Reader recognition of the son in Arc 2 is separate from Kyrien's eventual discovery, whose timing and circumstances remain undecided. Do not make the daughter's conception obvious or mark it as a reader inference within Arc 2. The circumstances of reconciliation, pregnancy, birth, and later family life remain open. Their duties and the main story retain priority.
-
-The Drowned Choir and river leviathan are separate Holumns. Being taken and returning are specific to each Holumn; do not turn them into a common underworld, transport system, or resurrection rule. Synchronicity is a conceptual analogy, not a newly established incident.
-
-Lester's contradictory chronology is intentional canon, not an editorial continuity mistake to repair. Neither he nor Natalia knows his origin. Do not invent a recoverable transformation, infection, experiment, or ordinary mechanism. Natalia recognizes contradiction itself as intrinsic to nature without making his origin comprehensible. Observable consequences and limits still need definition; ontological contradiction is not permission for an arbitrary solution to any scene.

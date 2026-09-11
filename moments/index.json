@@ -949,10 +949,10 @@
       "How much time passes between Doom Has an Address, their later encounters, the beginning of the pregnancy, and Lynleit's disappearance?"
     ],
     "continuityBefore": "Fionn's death, the nonsexual hotel refuge, Doom's incomplete attempt, the later park encounter, and subsequent reciprocal intimacy precede the established sexual relationship. These are separate stages, not one compressed encounter.",
-    "continuityAfter": "Pregnancy begins near the transition out of Arc 1. The son's existence is revealed only during Arc 2; Kyrien does not know about him at its opening.",
+    "continuityAfter": "Pregnancy begins near the transition out of Arc 1. Lynleit bears their son during her disappearance and later keeps him hidden from Kyrien and the wider world. Arc 2 reveals his existence to the reader; Kyrien's eventual discovery has no fixed timing. Intimacy is restored during Arc 2, ultimately leading to the conception and later birth of their daughter. That conception becomes apparent only after Arc 2. These are later continuity facts, not revelations in this Moment.",
     "chapterSlug": null,
-    "updated": "2026-09-08",
-    "defaultVersion": "v2",
+    "updated": "2026-09-11",
+    "defaultVersion": "v3",
     "versions": [
       {
         "id": "v1",
@@ -984,7 +984,7 @@
       },
       {
         "id": "v2",
-        "label": "v2 · Current",
+        "label": "v2 · Archived",
         "summary": "After surviving the shared curse in Doom Has an Address, Lynleit and Kyrien begin a sexual relationship and develop private jokes and ordinary habits before her pregnancy and disappearance near the Arc 2 threshold.",
         "purpose": "Their sexual relationship develops after the curse has ended, alongside Lynleit's work and the closing pressures of Arc 1.",
         "known": [
@@ -1006,6 +1006,34 @@
         ],
         "continuityBefore": "Fionn's death, the nonsexual hotel refuge, Doom's incomplete attempt, the later park encounter, and subsequent reciprocal intimacy precede the established sexual relationship. These are separate stages, not one compressed encounter.",
         "continuityAfter": "Pregnancy begins near the transition out of Arc 1. The son's existence is revealed only during Arc 2; Kyrien does not know about him at its opening.",
+        "placementStatus": "Late Arc 1 placement confirmed, exact duration unresolved",
+        "timelinePhase": "lynleit-disappears",
+        "timelineLabel": "Lynleit Disappears"
+      },
+      {
+        "id": "v3",
+        "label": "v3 · Current",
+        "summary": "After surviving the shared curse in Doom Has an Address, Lynleit and Kyrien begin a sexual relationship and develop private jokes and ordinary habits before her pregnancy and disappearance near the Arc 2 threshold.",
+        "purpose": "Their sexual relationship develops after the curse has ended, alongside Lynleit's work and the closing pressures of Arc 1.",
+        "known": [
+          "The park encounter after Doom is their first successful sexual act, not their first intercourse. Reciprocal exploration and intercourse follow as separate stages.",
+          "Several further encounters follow before Lynleit's pregnancy and disappearance.",
+          "Later encounters become lighter and more playful as intimacy acquires familiar habits.",
+          "Kyrien later initiates firmly, reversing their usual pattern and marking desire as his own chosen action.",
+          "One later encounter occurs in Lynleit's third-floor study-bedroom at the Director's House.",
+          "MSF duty and Lynleit's personal missions remain her priorities throughout the relationship.",
+          {
+            "text": "The opening of Arc 2 lets the reader infer that Lynleit became pregnant near the boundary between the arcs, without a direct explanation or shown realization.",
+            "status": "inferred"
+          }
+        ],
+        "openQuestions": [
+          "Which later encounter is the conception of their son?",
+          "What details at the opening of Arc 2 make the pregnancy inference clear without explaining or showing it directly?",
+          "How much time passes between Doom Has an Address, their later encounters, the beginning of the pregnancy, and Lynleit's disappearance?"
+        ],
+        "continuityBefore": "Fionn's death, the nonsexual hotel refuge, Doom's incomplete attempt, the later park encounter, and subsequent reciprocal intimacy precede the established sexual relationship. These are separate stages, not one compressed encounter.",
+        "continuityAfter": "Pregnancy begins near the transition out of Arc 1. Lynleit bears their son during her disappearance and later keeps him hidden from Kyrien and the wider world. Arc 2 reveals his existence to the reader; Kyrien's eventual discovery has no fixed timing. Intimacy is restored during Arc 2, ultimately leading to the conception and later birth of their daughter. That conception becomes apparent only after Arc 2. These are later continuity facts, not revelations in this Moment.",
         "placementStatus": "Late Arc 1 placement confirmed, exact duration unresolved",
         "timelinePhase": "lynleit-disappears",
         "timelineLabel": "Lynleit Disappears"

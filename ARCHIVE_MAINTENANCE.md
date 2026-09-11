@@ -205,3 +205,9 @@ The playable card banner is the primary play/pause button, operable by pointer, 
 - Primary navigation remains in the top bar. Every detailed view has breadcrumbs. Every page has the ownership footer and Page notes sidebar.
 - The site remains static, uses relative paths, preserves `CNAME`, and deploys through GitHub Pages at `magiarchy.bekulov.com`.
 - No em dash may appear in repository-managed site content.
+
+## Family reveals and Holumn ontology: 11 September 2026
+
+Lynleit bears their son during her disappearance and later keeps him hidden from both Kyrien and the wider world. They restore intimacy during Arc 2 and eventually conceive a second child, a daughter, who is born later. The daughter's conception becomes apparent only after Arc 2, not within it. They have two children by story end. Preserve the separation between reader knowledge and Kyrien's eventual discovery of the son. Do not invent the concealment, reconciliation, or later family circumstances. Profiles and the shared intimacy registry carry the confirmed direction; Moment continuity carries future consequences, not premature reader revelations.
+
+Holumn taking and return are Holumn-specific states, not a universal destination or mechanism; returned identity and reanimation must be evaluated separately. The Drowned Choir and river leviathan are distinct entities. Lester's chronology is intrinsically contradictory, beyond an ordinary human causal account, and must not be repaired into a transformation, experiment, or infection. Natalia recognizes contradiction as natural without comprehending his origin. This grants no unconfirmed powers. Synchronicity remains an analogy until a particular incident is authorized. General author-confirmed category boundaries belong in registry principles and are identified separately from witness testimony in Docs.
