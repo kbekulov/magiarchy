@@ -35,6 +35,10 @@ for (const file of fs.readdirSync(root).filter(file => /\.(html|css|js)$/.test(f
   assert.ok(!source.includes('\u2014'), `${file}: em dash regression`);
 }
 assert.equal(read('CNAME').trim(), 'magiarchy.bekulov.com');
+for (const section of read('docs/questions-to-be-answered.md').split(/^## /m)) {
+  const confidence = [...section.matchAll(/^\|.*\| (\d+)% \|$/gm)].map(match => Number(match[1]));
+  assert.deepEqual(confidence, [...confidence].sort((a, b) => a - b), 'Question confidence ordering has drifted');
+}
 const search = json('search-index.json');
 assert.equal(search.sourceDigest, searchSourceDigest(root), 'Search content is stale; rebuild it');
 for (const entry of search.entries) {

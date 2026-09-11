@@ -27,11 +27,6 @@ Story, character, world, relationship, institution, location, and event question
 | Holumn incident HI-002 | Who made or first completed the puzzle, how does its compulsion move between owners, and what state does completion impose on its victims? | 0% |
 | Holumn incident HI-005 | What conditions admit a visitor to the Nameless Street, what are the girl and dead boy, and why does Lynleit return after following the lure? | 0% |
 | Holumn incident HI-006 | What identity, appearance, and history belong to the Holumn that Lynleit and Kyrien destroy before its terminal condition transfers to them? | 0% |
-| Doom placement | Where does Doom fall within the later part of Arc 1’s second half, and what main-plot events surround the months before the park encounter? | 20% |
-| Arc 0 | Which formative incidents become canon, when does Fionn remarry, and is MSF being founded or restructured? | 10% |
-| Kyrien’s family | What are his mother’s and sister’s identities, circumstances, and later fates, and how old is Kyrien at his father’s death? | 10% |
-| Whiskey flask | What is the flask’s origin, and which earlier scene first establishes the habit? | 20% |
-| Park encounter | What work precedes the walk, and what precautions permit the pause in a still-dangerous park? | 15% |
 | Doom Has an Address | What operation brings Lynleit and Kyrien to the Holumn, where does the final confrontation occur, and what evidence lets them understand that destroying it caused their decline? | 0% |
 | Later intimacy | When and under what circumstances do Lynleit and Kyrien first have intercourse, after the park encounter and subsequent reciprocal exploration? | 0% |
 | Doom Has an Address | What happens during the incomplete attempt that the Chapter leaves off-page? | 0% |
@@ -54,6 +49,8 @@ Story, character, world, relationship, institution, location, and event question
 | Yulia and Hiyu | Which event makes either of them consciously recognize investigative dependence as desire, and who first names what is happening between them? | 5% |
 | Natalia and Lester | Which ordinary case interaction first makes Natalia respond to Lester as a man rather than an anomalous condition, and how does he recognize the change without forcing either of them to name it? | 5% |
 | Cult of Inanna | Which covenants or obligations survive in Fionn's lineage today, and what consequences do they have beyond Mikhail's account of its history? | 10% |
+| Arc 0 | Which formative incidents become canon, when does Fionn remarry, and is MSF being founded or restructured? | 10% |
+| Kyrien’s family | What are his mother’s and sister’s identities, circumstances, and later fates, and how old is Kyrien at his father’s death? | 10% |
 | Core mystery | What logically defensible worldview and incompatible objective does each faction bring to Fionn, MSF, the Spill, and Narvea? | 10% |
 | Sexual tension | Which current tension records beyond Lynleit and Kyrien, Yulia and Hiyu, Fionn and Helena, Natalia and Lester, Lynleit and Felix, and Sherie and Felix become visible story dynamics rather than remaining conditional? | 10% |
 | Lynleit | Which of Lynleit's later actions around MSF missions can plausibly read as help, observation, manipulation, or causation before her intention becomes clear? | 10% |
@@ -66,6 +63,7 @@ Story, character, world, relationship, institution, location, and event question
 | MSF | Which officers learn that magic exists, what remains compartmentalized, and how does hidden knowledge become a second rank system inside the smaller post-Spill agency? | 10% |
 | MSF | What action can the government take against a defiant MSF when mutual dependence means the company cannot safely rebel and the state cannot safely destroy it? | 10% |
 | The Church | What narrow authority would allow Father Mikhail to be sent back to clean up Lynleit's witness breach, and what does that authority permit him to do? | 15% |
+| Park encounter | What work precedes the walk, and what precautions permit the pause in a still-dangerous park? | 15% |
 | Opening chapter | What are Fionn and Lynleit negotiating before dawn, and why does Lynleit leave irritated? | 15% |
 | Heyk | What evidence does Heyk carry out of the park, and which parts of his account can anyone corroborate? | 15% |
 | Private investigation | Which case connects Natalia and Lester to the main story, and why does it require both of them? | 15% |
@@ -73,6 +71,8 @@ Story, character, world, relationship, institution, location, and event question
 | Cardiff venture | What special-envoy duty takes Father Mikhail to Cardiff, which Magi threats turn it into a life-and-death operation, and what part of his past does the ordeal expose? | 15% |
 | Cardiff aftermath | Which morally incompatible method divides Lynleit and Mikhail, and what consequence from Cardiff later enters the main story in Narvea? | 15% |
 | Kyrien | What cover story conceals Kyrien's release and unofficial MSF role? | 20% |
+| Doom placement | Where does Doom fall within the later part of Arc 1’s second half, and what main-plot events surround the months before the park encounter? | 20% |
+| Whiskey flask | What is the flask’s origin, and which earlier scene first establishes the habit? | 20% |
 | Core mystery | Which individually rational political and institutional pressures persuade Fionn to wait, and when does reasonable delay become his fatal mistake? | 20% |
 | Magi Academy | What is the Academy's normal admission and training hierarchy, and what knowledge gained during the terrors helps Myka graduate at the top of her class? | 20% |
 | Parallel side stories | How many Chapters belong to the Cardiff venture and Academy crisis, and where should their concurrent events alternate inside Divided Attention? | 20% |
