@@ -199,15 +199,8 @@ function renderChapterVersionSwitcher(entry, selected) {
   const versions = chapterVersions(entry);
   chapterVersionSwitcher.hidden = versions.length < 2;
   chapterVersionCurrent.textContent = `${selected.versionId}${selected.versionId === entry.defaultVersion ? ' · Canon' : ''}`;
-  chapterVersionOptions.replaceChildren(...versions.map((version) => {
-    const link = document.createElement('a');
-    link.href = `story.html?chapter=${encodeURIComponent(entry.slug)}&version=${encodeURIComponent(version.id)}`;
-    link.textContent = version.id;
-    link.title = version.label;
-    link.classList.toggle('is-active', version.id === selected.versionId);
-    if (version.id === selected.versionId) link.setAttribute('aria-current', 'page');
-    return link;
-  }));
+  window.renderVersionNavigation(chapterVersionOptions, versions, selected.versionId,
+    id => `story.html?chapter=${encodeURIComponent(entry.slug)}&version=${encodeURIComponent(id)}`, entry.defaultVersion);
 }
 
 function createChapterCard(entry) {

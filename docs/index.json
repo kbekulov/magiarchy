@@ -304,51 +304,7 @@
     "speakers": [
       "Author's Desk"
     ],
-    "defaultVersion": "v6",
-    "versions": [
-      {
-        "id": "v1",
-        "label": "v1 · Archived",
-        "file": "questions-to-be-answered-v1.md",
-        "updated": "2026-09-05",
-        "description": "Confidence-tracked current canon and chronology questions, separated to support both worldbuilding and timeline placement."
-      },
-      {
-        "id": "v2",
-        "label": "v2 · Archived",
-        "file": "questions-to-be-answered-v2.md",
-        "updated": "2026-09-06",
-        "description": "Confidence-tracked canon and chronology questions, including the Cult of Inanna and pagan traditions among the Magi."
-      },
-      {
-        "id": "v3",
-        "label": "v3 · Archived",
-        "file": "questions-to-be-answered-v3.md",
-        "updated": "2026-09-06",
-        "description": "Confidence-tracked canon and chronology questions, including the unrevealed form of Fionn's lineage association with the Cult of Inanna."
-      },
-      {
-        "id": "v4",
-        "label": "v4 · Archived",
-        "file": "questions-to-be-answered-v4.md",
-        "updated": "2026-09-06",
-        "description": "Confidence-tracked canon and chronology questions, including the unrevealed form of Fionn's lineage association with the Cult of Inanna."
-      },
-      {
-        "id": "v5",
-        "label": "v5 · Current",
-        "file": "questions-to-be-answered-v5.md",
-        "updated": "2026-09-08",
-        "description": "Confidence-tracked canon and chronology questions, including the unrevealed form of Fionn's lineage association with the Cult of Inanna."
-      },
-      {
-        "id": "v6",
-        "label": "v6",
-        "file": "questions-to-be-answered.md",
-        "updated": "2026-09-09",
-        "description": "Confidence-tracked canon and chronology questions, including the unrevealed form of Fionn's lineage association with the Cult of Inanna."
-      }
-    ]
+    "latestOnly": true
   },
   {
     "slug": "contradictions-to-resolve",
@@ -360,58 +316,7 @@
     "speakers": [
       "Author's Desk"
     ],
-    "defaultVersion": "v7",
-    "versions": [
-      {
-        "id": "v1",
-        "label": "v1 · Archived",
-        "file": "contradictions-to-resolve-v1.md",
-        "updated": "2026-09-05",
-        "description": "A resolution-tracked list of places where current story, character, world, timeline, or alternate-version records cannot all be read literally at the same time."
-      },
-      {
-        "id": "v2",
-        "label": "v2 · Archived",
-        "file": "contradictions-to-resolve-v2.md",
-        "updated": "2026-09-05",
-        "description": "A resolution-tracked list of places where current story, character, world, timeline, or alternate-version records cannot all be read literally at the same time."
-      },
-      {
-        "id": "v3",
-        "label": "v3 · Archived",
-        "file": "contradictions-to-resolve-v3.md",
-        "updated": "2026-09-06",
-        "description": "Cross-record conflicts and version decisions; shared Doom continuity follows v5."
-      },
-      {
-        "id": "v4",
-        "label": "v4 · Archived",
-        "file": "contradictions-to-resolve-v4.md",
-        "updated": "2026-09-06",
-        "description": "Cross-record conflicts and version decisions; shared Doom continuity follows v6."
-      },
-      {
-        "id": "v5",
-        "label": "v5 · Archived",
-        "file": "contradictions-to-resolve-v5.md",
-        "updated": "2026-09-06",
-        "description": "Cross-record conflicts and version decisions; shared Doom continuity follows v7."
-      },
-      {
-        "id": "v6",
-        "label": "v6",
-        "file": "contradictions-to-resolve-v6.md",
-        "updated": "2026-09-08",
-        "description": "Cross-record conflicts and version decisions; shared Doom continuity follows v7."
-      },
-      {
-        "id": "v7",
-        "label": "v7 · Current",
-        "file": "contradictions-to-resolve.md",
-        "updated": "2026-09-08",
-        "description": "Current cross-version decisions, including Doom v7 and the park v2 correction."
-      }
-    ]
+    "latestOnly": true
   },
   {
     "slug": "character-capability-balance",

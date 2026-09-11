@@ -107,13 +107,8 @@ function renderMomentVersionSwitcher(entry, selected) {
   const versions = momentVersions(entry);
   momentVersionSwitcher.hidden = versions.length < 2;
   momentVersionCurrent.textContent = `${selected.versionId}${selected.versionId === entry.defaultVersion ? ' · Canon' : ''}`;
-  momentVersionOptions.replaceChildren(...versions.map((version) => {
-    const link = momentElement('a', version.id === selected.versionId ? 'is-active' : '', version.id);
-    link.title = version.label;
-    link.href = `moments.html?moment=${encodeURIComponent(entry.slug)}&version=${encodeURIComponent(version.id)}`;
-    if (version.id === selected.versionId) link.setAttribute('aria-current', 'page');
-    return link;
-  }));
+  window.renderVersionNavigation(momentVersionOptions, versions, selected.versionId,
+    id => `moments.html?moment=${encodeURIComponent(entry.slug)}&version=${encodeURIComponent(id)}`, entry.defaultVersion);
 }
 
 function phaseOrder(phaseId) {

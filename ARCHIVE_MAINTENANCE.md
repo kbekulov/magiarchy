@@ -160,6 +160,10 @@ Sexual-topic scenes should preserve character-specific comedy, rawness, irony, a
 
 ## Document revisions
 
+Exception: Questions to Be Answered and Contradictions to Resolve are latest-only ledgers (`latestOnly: true`). Update them in place without snapshots or version records. Old reader version URLs resolve to the latest text and drop the version parameter. Only current ledger content is indexed in search; Git retains edit history.
+
+All other versioned readers use `version-navigation.js`: Previous, a native version selector, Next, and Latest. Controls have bounded width and stack compactly on narrow phones. Disable unavailable directions. Latest targets the final ordered revision; canon/current remains tied to `defaultVersion` and must not silently change.
+
 Before changing a document, preserve its previous published content as a separate version file and register the next revision in `docs/index.json`. Repoint the old version's file to that snapshot before editing the current source; snapshot and repoint any live JSON dependencies as well. Keep the established Markdown filename as the current maintenance source, with `defaultVersion` pointing to its current version record. Never overwrite an archived file. Readers and search must support `docs.html?doc=slug&version=v1`, the selected revision's metadata, and its matching Markdown download. Unversioned legacy documents resolve as v1 until revised.
 
 When a document is augmented from JSON, preserve that data too. Use version-specific `behaviorFile` or `tensionFile` snapshots for old advisory and intimacy documents so new notes cannot leak into their archived views or search entries. Current versions use the live registries. The prose-style and scene-guidance documents must be revised alongside narrative work when a reusable approach changes. Historical guidance remains readable but does not override the current charter or AGENTS.md.

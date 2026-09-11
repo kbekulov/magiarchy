@@ -23,6 +23,8 @@ Before starting any new user request, check the repository's `backlog/` folder f
 
 ## Product and design direction
 
+- Questions to Be Answered and Contradictions to Resolve are latest-only living ledgers. Do not create versions for these two documents. Other versioned documents, Chapters, and Moments share compact Previous, version dropdown, Next, and Latest controls. Latest means newest registered revision, not necessarily the author-selected canon/default. Preserve direct version URLs and distinguish current/canon status.
+
 - Timeline event counts are flexible. Insert phases wherever continuity needs them; derive display numbering from order while preserving stable IDs. Use shared Arc bands and a labelled color key across Story, Moments, and character timelines. Arc names belong to this grouping, not episode titles. Do not invent chronology for unplaced events.
 - Music search and category/tag chips reuse the Characters archive-toolbar architecture and interaction styles. Keep metadata editable; initial author-permitted working assignments are not story canon.
 - Character catalog cards randomly select registered chibi artwork on each load, with explicit Arc labels for era-specific selections. Profile portraits use left/right image-half taps, horizontal swipes or mouse drags, and scrollable thumbnails for all registered non-chibi portraits. Do not show arrow buttons. Preserve keyboard navigation, vertical page scrolling, era metadata, and accessible labels.

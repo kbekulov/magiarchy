@@ -34,15 +34,8 @@ function renderDocumentVersionSwitcher(entry, selected) {
   const versions = documentVersions(entry);
   documentVersionSwitcher.hidden = versions.length < 2;
   documentVersionCurrent.textContent = `${selected.versionId} · ${selected.versionId === entry.defaultVersion ? 'Current' : 'Archived'}`;
-  documentVersionOptions.replaceChildren(...versions.map((version) => {
-    const link = document.createElement('a');
-    link.textContent = version.versionId;
-    link.href = `docs.html?doc=${encodeURIComponent(entry.slug)}&version=${encodeURIComponent(version.versionId)}`;
-    link.title = version.label || version.versionId;
-    link.classList.toggle('is-active', version.versionId === selected.versionId);
-    if (version.versionId === selected.versionId) link.setAttribute('aria-current', 'page');
-    return link;
-  }));
+  window.renderVersionNavigation(documentVersionOptions, versions.map(version => ({ ...version, id: version.versionId })), selected.versionId,
+    id => `docs.html?doc=${encodeURIComponent(entry.slug)}&version=${encodeURIComponent(id)}`, entry.defaultVersion);
 }
 
 async function loadDocumentRegistry(file, fallback) {
@@ -552,6 +545,11 @@ async function enhanceCharacterBehaviorDocument(container, entry) {
 
 async function loadDocument(record, requestedVersion) {
   if (!documentReader || !documentMeta || !documentError) return;
+  if (record.latestOnly) {
+    const url = new URL(window.location.href);
+    url.searchParams.delete('version');
+    window.history.replaceState(null, '', url);
+  }
   const entry = resolveDocumentVersion(record, requestedVersion);
   renderDocumentVersionSwitcher(record, entry);
 
