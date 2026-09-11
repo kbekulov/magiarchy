@@ -14,7 +14,7 @@ const archiveEntityLinks = [
   ['leviathan-hide garment', 'items.html?item=leviathan-hide-coat'],
   ['hide of leviathan', 'items.html?item=leviathan-hide-coat'],
   ['Items & Artefacts', 'items.html'],
-  ['Magi Academy', 'world.html#planned-records-title'],
+  ['Magi Academy', 'world.html#academy-title'],
   ['The Magiarchy', 'magiarchy.html'],
   ['The Church', 'church.html'],
   ['Suppression doctrine', 'church.html#suppression-doctrine-title'],
@@ -38,6 +38,12 @@ const archiveEntityLinks = [
   ['The Drowned Choir', 'docs.html?doc=holumn-incidents-and-testimonies#the-drowned-choir'],
   ['The Voice on the Line', 'docs.html?doc=holumn-incidents-and-testimonies#the-voice-on-the-line'],
   ['The Last Piece', 'docs.html?doc=holumn-incidents-and-testimonies#the-last-piece'],
+  ['The Nameless Street', 'docs.html?doc=holumn-incidents-and-testimonies#the-nameless-street'],
+  ['Nameless Street', 'docs.html?doc=holumn-incidents-and-testimonies#the-nameless-street'],
+  ['Sparrow', 'weapons.html#ren-l17-sparrow'],
+  ['Crow', 'weapons.html#ren-l24-crow'],
+  ['Raven', 'weapons.html#ren-l28-raven'],
+  ['Swan', 'weapons.html#ren-l31-swan'],
   ['Doom Has an Address', 'story.html?chapter=doom-has-an-address'],
   ['Holumns', 'holumns.html'],
   ['Holumn', 'holumns.html'],
@@ -78,7 +84,7 @@ const archiveEntityTargets = new Map(archiveEntityLinks.map(([label, href]) => [
 const archiveEntityPattern = new RegExp(`(?<![A-Za-z0-9])(${archiveEntityLinks.map(([label]) => label.replace(/[.*+?^${}()|[\\]\\\\]/g, '\\\\$&')).join('|')})(?![A-Za-z0-9])`, 'gi');
 
 function archiveLinkableTextNode(node) {
-  if (!node.nodeValue?.trim() || node.parentElement?.closest('a, button, script, style, textarea, select, option, nav')) return;
+  if (!node.nodeValue?.trim() || node.parentElement?.closest('a, button, script, style, textarea, select, option, nav, .sr-only, [aria-hidden="true"], [data-no-entity-links], .site-footer, .global-search-layer')) return;
   archiveEntityPattern.lastIndex = 0;
   if (!archiveEntityPattern.test(node.nodeValue)) return;
   archiveEntityPattern.lastIndex = 0;
@@ -88,6 +94,9 @@ function archiveLinkableTextNode(node) {
   let match;
   while ((match = archiveEntityPattern.exec(node.nodeValue))) {
     const label = match[0];
+    if (label === 'MAGIARCHY' || /\bProject\s+$/.test(node.nodeValue.slice(0, match.index))) continue;
+    // Short weapon aliases require their proper-name casing, not an ordinary bird.
+    if (['sparrow', 'crow', 'raven', 'swan'].includes(label.toLowerCase()) && label[0] === label[0].toLowerCase()) continue;
     const href = archiveEntityTargets.get(label.toLowerCase());
     if (!href) continue;
     if (match.index > cursor) fragment.append(document.createTextNode(node.nodeValue.slice(cursor, match.index)));

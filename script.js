@@ -24,15 +24,30 @@ document.querySelectorAll('.nav-submenu').forEach((submenu) => {
 });
 
 if (navToggle && navLinks) {
+  const mobileNavigation = window.matchMedia('(max-width: 620px)');
+  const syncNavigation = () => {
+    const closed = mobileNavigation.matches && !navLinks.classList.contains('is-open');
+    navLinks.inert = closed;
+    navLinks.setAttribute('aria-hidden', String(closed));
+  };
+  const closeNavigation = (restoreFocus = false) => {
+    navLinks.classList.remove('is-open');
+    navToggle.setAttribute('aria-expanded', 'false');
+    if (restoreFocus && navLinks.contains(document.activeElement)) navToggle.focus();
+    syncNavigation();
+  };
+  window.closeArchiveNavigation = closeNavigation;
+  mobileNavigation.addEventListener('change', syncNavigation);
+  syncNavigation();
   navToggle.addEventListener('click', () => {
     const isOpen = navLinks.classList.toggle('is-open');
     navToggle.setAttribute('aria-expanded', String(isOpen));
+    syncNavigation();
   });
 
   document.addEventListener('click', (event) => {
     if (!navLinks.contains(event.target) && !navToggle.contains(event.target)) {
-      navLinks.classList.remove('is-open');
-      navToggle.setAttribute('aria-expanded', 'false');
+      closeNavigation(true);
     }
   });
 }
@@ -55,6 +70,7 @@ document.addEventListener('click', (event) => {
 document.addEventListener('keydown', (event) => {
   if (event.key !== 'Escape') return;
   navDropdowns.forEach((dropdown) => dropdown.removeAttribute('open'));
+  window.closeArchiveNavigation?.(true);
 });
 
 document.querySelectorAll('[data-year]').forEach((node) => {
@@ -197,8 +213,10 @@ if (characterCards.length) {
       const choice = choices[Math.floor(Math.random() * choices.length)];
       const image = card.querySelector('.character-chibi');
       if (!image) return;
-      image.src = choice.querySelector('img').getAttribute('src');
-      image.alt = choice.querySelector('img').alt;
+      const selectedArtwork = choice.querySelector('img');
+      image.removeAttribute('srcset');
+      image.src = selectedArtwork.dataset.preview || selectedArtwork.getAttribute('src');
+      image.alt = selectedArtwork.alt;
       const note = card.querySelector('.art-note');
       if (note) note.textContent = choice.dataset.storyArc ? choice.dataset.storyArc.replace('-', ' ') + ' · Chibi' : 'Chibi';
     });

@@ -16,10 +16,24 @@ function itemLink(href, className, text) {
   return link;
 }
 
-function makeItemMark(size = 'catalog') {
+function makeItemMark(item, size = 'catalog') {
+  if (item.image) {
+    const image = itemElement('img', 'item-record-image');
+    image.src = item.image;
+    image.alt = item.name;
+    image.loading = 'lazy';
+    return image;
+  }
   const mark = itemElement('div', `item-object-mark item-object-mark-${size}`);
   mark.setAttribute('aria-hidden', 'true');
-  mark.append(itemElement('span'), itemElement('i'), itemElement('b'));
+  if (item.slug === 'leviathan-hide-coat') {
+    mark.append(itemElement('span'), itemElement('i'), itemElement('b'));
+  } else {
+    mark.classList.add('item-object-mark-neutral');
+    mark.innerHTML = item.slug === 'kyriens-whiskey-flask'
+      ? '<svg viewBox="0 0 80 110"><path d="M30 24V12h20v12M23 24h34q9 0 9 12v56q0 8-9 8H23q-9 0-9-8V36q0-12 9-12Z"/></svg>'
+      : '<svg viewBox="0 0 80 110"><rect x="14" y="25" width="52" height="60" rx="6"/></svg>';
+  }
   return mark;
 }
 
@@ -28,7 +42,7 @@ function renderItemCard(item) {
   link.setAttribute('aria-label', `Open ${item.name}`);
 
   const visual = itemElement('div', 'item-record-visual');
-  visual.append(makeItemMark(), itemElement('small', '', item.image ? 'Recorded image' : 'Image unavailable'));
+  visual.append(makeItemMark(item), itemElement('small', '', item.image ? 'Recorded image' : 'Image unavailable'));
 
   const body = itemElement('div', 'item-record-copy');
   const top = itemElement('div', 'item-record-top');
@@ -82,7 +96,7 @@ function renderItemDetail(item) {
 
   const hero = itemElement('header', 'item-detail-hero');
   const visual = itemElement('div', 'item-detail-visual');
-  visual.append(makeItemMark('detail'), itemElement('small', '', item.image ? 'Recorded image' : 'Image unavailable'));
+  visual.append(makeItemMark(item, 'detail'), itemElement('small', '', item.image ? 'Recorded image' : 'Image unavailable'));
   const copy = itemElement('div', 'item-detail-copy');
   copy.append(itemElement('p', 'eyebrow', `${item.id} · ${item.recordType}`), itemElement('h1', '', item.name), itemElement('p', '', item.summary));
   const facts = itemElement('dl', 'item-detail-facts');

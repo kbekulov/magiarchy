@@ -7,6 +7,7 @@
 - Preserve the public ownership notice stating that Project MAGIARCHY is the work of Kiril Bekulov & Co. and is owned by Kiril Bekulov. Credit any additional contributors separately when the author identifies them.
 - After making code changes, commit all task-related changes and push the resulting commit to `origin` before finishing the task.
 - Record every website change, however small, as a concise update entry in the Home-page update feed in `index.html`. Add the newest entry first and include the publication date plus a plain-language summary of what changed.
+- Run `npm run build`, `npm run check`, and the relevant browser regression checks before publishing. Character preview roles/summaries and Holumn form/incident listings are generated from their owning records; do not hand-edit those copies. Keep original artwork intact when regenerating lightweight display previews. Current/default revisions lead search; earlier versions remain available through the history toggle. Outline-only Moments use neutral recorded facts, not the shown/inferred reader key. See `ARCHIVE_MAINTENANCE.md` for commands and limits.
 - Do not include unrelated user changes in a commit. If a push is blocked, report the blocker and leave the local commit intact.
 
 ## Backlog

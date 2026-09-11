@@ -4,7 +4,7 @@ This file is the concise operating map for future agents and maintainers. `AGENT
 
 ## Authority and record states
 
-Shared UI invariants: Music uses the Characters archive toolbar with category and tag chips. Track assignments are editable catalog metadata, not new canon. Character cards randomize registered chibis with visible era labels; profile artwork uses a previous/next and thumbnail browser. Timeline counts may expand anywhere: retain IDs, derive numbers from order, and use the shared labelled Arc bands in Story, Moments, and profile timelines. Never infer an unplaced event's Arc merely to color it.
+Shared UI invariants: Music uses the Characters archive toolbar with category and tag chips. Track assignments are editable catalog metadata, not new canon. Character cards randomize registered chibis with visible era labels; profile artwork uses image-half navigation, swipes, and thumbnails, without arrow buttons. Timeline counts may expand anywhere: retain IDs, derive numbers from order, and use the shared labelled Arc bands in Story, Moments, and profile timelines. Never infer an unplaced event's Arc merely to color it.
 
 1. The author is the only final authority over canon.
 2. Established canon is written as fact on public wiki surfaces.
@@ -100,7 +100,7 @@ Every character profile includes:
 - potential sexual tension sourced from `docs/sexual-tension-notes.json` when supported, or a concise unresolved record where the archive is deliberately watching the question;
 - conflicts and motivations.
 
-When artwork depicts a specific Arc or life period, preserve that period in the filename, Gallery metadata, caption, alt text, and profile portrait label. Generic catalog cards and relationship maps keep the character's baseline-period chibi unless the interface is explicitly presenting another Arc.
+When artwork depicts a specific Arc or life period, preserve that period in the filename, Gallery metadata, caption, alt text, and profile portrait label. Catalog cards may select any registered chibi, with its explicit era label. Relationship maps keep baseline-period chibis unless explicitly presenting another Arc.
 
 Sexual tension is not a relationship forecast. It may be mutual, asymmetric, subconscious, antagonistic, situational, or permanently unresolved. Each proposed pairing needs character-specific contact and a reason for repeated attention. Do not pair characters merely because they are attractive, available, or of opposite sexes.
 
@@ -188,7 +188,7 @@ Standalone Moments may carry a single shared `prose` paragraph array, rendered i
 
 Sleepers (HI-007, MOM-024) remain a passive manifestation encountered by Kyrien, not a professional investigation. Their intended omen of circumstances beyond meaningful control is editorial direction only. Preserve the incomplete downstream stopping point; do not invent other witnesses, institutional readings, an attack, a forecast referent, or a connection to other river Holumns. The behavior audit supports Kyrien's informal observation and curiosity without requiring new gender guidance or a capability change.
 
-Music cards preserve the archive's flat artwork and compact metadata layout. Play only the supplied MP3, load audio on visitor action rather than autoplaying or preloading full tracks, and expose separate same-origin MP3 and WAV download links with file sizes. Keep unrecorded concepts inactive. Do not assign a supplied recording to a concept, character, or scene without author confirmation. Preserve the supplied audio bytes and filenames when importing into `media/music/`.
+Music cards preserve the archive's flat artwork and compact metadata layout. Play only the supplied MP3, load audio on visitor action rather than autoplaying or preloading full tracks, and expose separate same-origin MP3 and WAV download links with file sizes. Keep unrecorded concepts inactive. Author-permitted working category assignments are editable catalog metadata, not confirmed soundtrack or story associations. Preserve the supplied audio bytes and filenames when importing into `media/music/`.
 
 Music search and category/tag filtering use each card's explicit `data-story`, `data-character`, `data-event`, `data-arc`, and `data-misc` pipe-separated metadata. Empty fields mean unassigned. Categories may overlap; do not infer an Arc or character from the sound. Keep counts, empty states, shareable filter URLs, and resets synchronized. Filtering a playing card out pauses it. Preserve the shared Safari-safe masonry layout.
 
@@ -205,6 +205,18 @@ The playable card banner is the primary play/pause button, operable by pointer, 
 - Primary navigation remains in the top bar. Every detailed view has breadcrumbs. Every page has the ownership footer and Page notes sidebar.
 - The site remains static, uses relative paths, preserves `CNAME`, and deploys through GitHub Pages at `magiarchy.bekulov.com`.
 - No em dash may appear in repository-managed site content.
+
+## Build and regression checks
+
+Run `npm ci`, then `npm run build` and `npm run check`. The build synchronizes character card roles and summaries from `character.js`, Holumn forms and incident cards from `holumns/index.json`, artwork previews, and global search. Do not hand-edit generated card copy. `scripts/sync-archive-surfaces.mjs --check` rejects stale surfaces and missing testimony headings. The testimony document retains its fuller editorial accounts and must still be reviewed against changed incidents; a heading check is not a factual audit.
+
+Run `npm run test:ui` after layout or interaction changes. Set `TEST_BROWSERS=chromium,webkit` to cover both engines after installing them with Playwright. Native Safari/iPhone testing remains distinct from WebKit regression coverage. CI runs record, link, design-invariant, and browser checks; GitHub Pages deployment status is verified separately.
+
+Current/default revisions are the search default. An explicit earlier-versions toggle retains access to every indexed historical revision. The search index carries structured current/default metadata rather than inferring authority from version numbers or titles.
+
+An outline-only Moment uses neutral recorded-fact styling, not the shown/inferred key. A Chapter assignment or actual standalone prose supplies the scene against which reader-knowledge labels can be audited. Do not promote future continuity into demonstrated reader knowledge.
+
+Gallery originals remain untouched. Generate small WebP display derivatives with `scripts/build-image-previews.mjs`; use these for catalog art, thumbnails, and map avatars. Keep original URLs for full portrait viewing and Gallery source downloads. Collapsed mobile navigation must be invisible and inert, with Escape and focus recovery supported.
 
 ## Family reveals and Holumn ontology: 11 September 2026
 

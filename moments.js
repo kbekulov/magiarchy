@@ -263,11 +263,11 @@ function renderMomentCatalog(entries) {
   initializeMomentTrackDrag();
 }
 
-function populateList(selector, entries, { factStatus = false } = {}) {
+function populateList(selector, entries, { factStatus = false, hasScene = true } = {}) {
   document.querySelector(selector).replaceChildren(...entries.map((entry, index) => {
     const record = typeof entry === 'string' ? { text: entry, status: 'reader' } : entry;
     const item = momentElement('li');
-    const status = record.status === 'inferred' ? 'inferred' : 'reader';
+    const status = !hasScene ? 'continuity' : record.status === 'inferred' ? 'inferred' : 'reader';
     item.append(momentElement('span', 'moment-fact-number', String(index + 1).padStart(2, '0')), momentElement('p', '', record.text));
     if (factStatus) {
       item.classList.add(`is-${status}`);
@@ -305,7 +305,12 @@ async function renderMomentReader(entry, entries, requestedVersion) {
   document.querySelector('#moment-before').textContent = selected.continuityBefore;
   document.querySelector('#moment-purpose').textContent = selected.purpose;
   document.querySelector('#moment-after').textContent = selected.continuityAfter;
-  populateList('#moment-known', selected.known, { factStatus: true });
+  const hasScene = Boolean(selected.chapterSlug || selected.prose?.length);
+  const factPanel = document.querySelector('.moment-fact-panel');
+  factPanel.querySelector('.eyebrow').textContent = hasScene ? 'Reader knowledge' : 'Scene outline';
+  document.querySelector('#moment-known-title').textContent = hasScene ? 'What the scene shows' : 'Recorded scene facts';
+  factPanel.querySelector('.moment-fact-legend').hidden = !hasScene;
+  populateList('#moment-known', selected.known, { factStatus: true, hasScene });
   let prose = document.querySelector('#moment-scene-prose');
   if (!prose) {
     prose = momentElement('section', 'moment-scene-prose');

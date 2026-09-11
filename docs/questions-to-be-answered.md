@@ -24,7 +24,7 @@ Story, character, world, relationship, institution, location, and event question
 | Relationships | Which adult characters beyond Lynleit and Kyrien, Fionn and Helena, and the emerging Yulia and Hiyu bond have romantic or sexual histories that materially shape their present behavior? | 0% |
 | Kyrien and Sherie | Does their current potential for confrontational sexual tension ever enter the story, and which negotiation would let her calibrated charm collide repeatedly with his refusal to be steered? | 0% |
 | Holumn incident HI-001 | What does the voice want, and what changes when it stops copying the victim and begins speaking before the victim does? | 0% |
-| Holumn incident HI-002 | Who made or first completed the puzzle, how does its compulsion move between owners, and where does completion send its victims? | 0% |
+| Holumn incident HI-002 | Who made or first completed the puzzle, how does its compulsion move between owners, and what state does completion impose on its victims? | 0% |
 | Holumn incident HI-005 | What conditions admit a visitor to the Nameless Street, what are the girl and dead boy, and why does Lynleit return after following the lure? | 0% |
 | Holumn incident HI-006 | What identity, appearance, and history belong to the Holumn that Lynleit and Kyrien destroy before its terminal condition transfers to them? | 0% |
 | Doom placement | Where does Doom fall within the later part of Arc 1’s second half, and what main-plot events surround the months before the park encounter? | 20% |
@@ -33,7 +33,7 @@ Story, character, world, relationship, institution, location, and event question
 | Whiskey flask | What is the flask’s origin, and which earlier scene first establishes the habit? | 20% |
 | Park encounter | What work precedes the walk, and what precautions permit the pause in a still-dangerous park? | 15% |
 | Doom Has an Address | What operation brings Lynleit and Kyrien to the Holumn, where does the final confrontation occur, and what evidence lets them understand that destroying it caused their decline? | 0% |
-| Doom Has an Address | Which encounter after Doom Has an Address becomes Lynleit and Kyrien's first completed sexual encounter? | 0% |
+| Later intimacy | When and under what circumstances do Lynleit and Kyrien first have intercourse, after the park encounter and subsequent reciprocal exploration? | 0% |
 | Doom Has an Address | What happens during the incomplete attempt that the Chapter leaves off-page? | 0% |
 | Doom Has an Address | Which Magi first examine the curse and identify the one-death solution before Lynleit consults Natalia? | 0% |
 | Location | What is Port City's proper name, and which events take place there? | 0% |

@@ -2,6 +2,8 @@ import fs from 'node:fs';
 import path from 'node:path';
 import vm from 'node:vm';
 import { fileURLToPath } from 'node:url';
+import './sync-archive-surfaces.mjs';
+import { searchSourceDigest } from './search-source-digest.mjs';
 
 const scriptDirectory = path.dirname(fileURLToPath(import.meta.url));
 const repositoryRoot = path.resolve(scriptDirectory, '..');
@@ -42,10 +44,10 @@ const stripMarkdown = (value) => clean(value
   .replace(/^\s*>\s?/gm, '')
   .replace(/[|*_`~]/g, ' '));
 
-function addEntry({ id, title, type, url, subtitle = '', text = '', keywords = '' }) {
+function addEntry({ id, title, type, url, subtitle = '', text = '', keywords = '', current = true, recordId = id }) {
   const content = clean(`${title} ${subtitle} ${text} ${keywords}`);
   if (!title || !url || content.length < 2) return;
-  entries.push({ id, title: clean(title), type, url, subtitle: clean(subtitle), text: content });
+  entries.push({ id, title: clean(title), type, url, subtitle: clean(subtitle), text: content, current, recordId });
 }
 
 function resolveVersions(record) {
@@ -57,7 +59,8 @@ function resolveVersions(record) {
     ...version,
     versionId: version.id || `v${index + 1}`,
     versionLabel: version.label || `Version ${index + 1}`,
-    versionCount: versions.length
+    versionCount: versions.length,
+    current: (version.id || `v${index + 1}`) === (record.defaultVersion || versions[0].id || 'v1')
   }));
 }
 
@@ -165,6 +168,8 @@ docs.forEach((document) => {
     id: `doc-${document.slug}${document.versionCount > 1 ? `-${document.versionId}` : ''}`,
     title: `${document.title}${document.versionCount > 1 ? ` · ${document.versionId}` : ''}`,
     type: 'Document',
+    current: document.current,
+    recordId: `doc-${document.slug}`,
     url: document.href || `docs.html?doc=${encodeURIComponent(document.slug)}${document.versionCount > 1 ? `&version=${encodeURIComponent(document.versionId)}` : ''}`,
     subtitle: document.topic,
     text: `${document.description} ${markdown} ${contextualText}`,
@@ -183,6 +188,8 @@ chapters.forEach((chapter) => {
       id: `chapter-${chapter.slug}${versionSuffix}`,
       title: versionTitle,
       type: 'Chapter',
+      current: version.current,
+      recordId: `chapter-${chapter.slug}`,
       url: `story.html?chapter=${encodeURIComponent(chapter.slug)}${versionQuery}`,
       subtitle: `${chapter.number} · ${chapter.timelineLabel}`,
       text: `${version.description} ${flatten(version.events)} ${stripMarkdown(readText(path.join('story', version.file)))}`,
@@ -201,6 +208,8 @@ moments.forEach((moment) => {
       id: `moment-${moment.slug}${versionSuffix}`,
       title: versionTitle,
       type: 'Moment',
+      current: version.current,
+      recordId: `moment-${moment.slug}`,
       url: `moments.html?moment=${encodeURIComponent(moment.slug)}${versionQuery}`,
       subtitle: `${moment.code} · ${moment.timelineLabel}`,
       text: flatten([version.summary, version.purpose, version.location, version.prose, version.known, version.openQuestions, version.continuityBefore, version.continuityAfter]),
@@ -340,9 +349,10 @@ entries.sort((left, right) => left.type.localeCompare(right.type) || left.title.
 
 const output = {
   generated: new Date().toISOString(),
+  sourceDigest: searchSourceDigest(repositoryRoot),
   count: entries.length,
   entries
 };
 
-fs.writeFileSync(path.join(repositoryRoot, 'search-index.json'), `${JSON.stringify(output, null, 2)}\n`);
+fs.writeFileSync(path.join(repositoryRoot, 'search-index.json'), `${JSON.stringify(output)}\n`);
 console.log(`Built ${entries.length} search entries.`);

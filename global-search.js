@@ -23,12 +23,13 @@
       <h2 class="sr-only" id="global-search-label">Search the Magiarchy archive</h2>
       <div class="global-search-field">
         ${searchIcon}
-        <input type="search" autocomplete="off" spellcheck="false" placeholder="Search characters, scenes, Holumns, weapons..." aria-describedby="global-search-status">
+        <input type="search" role="combobox" aria-autocomplete="list" aria-controls="global-search-results" aria-expanded="false" autocomplete="off" spellcheck="false" placeholder="Search characters, scenes, Holumns, weapons..." aria-describedby="global-search-status">
         <kbd>Esc</kbd>
       </div>
       <div class="global-search-body">
+        <label class="global-search-history"><input type="checkbox">Include earlier versions</label>
         <p class="global-search-status" id="global-search-status" aria-live="polite">Start typing to search the complete archive.</p>
-        <div class="global-search-results" role="listbox" aria-label="Global search results"></div>
+        <div id="global-search-results" class="global-search-results" role="listbox" aria-label="Global search results"></div>
         <div class="global-search-empty" hidden>
           <span aria-hidden="true">?</span>
           <strong>No matching archive entries</strong>
@@ -39,7 +40,8 @@
     </section>`;
   document.body.append(layer);
 
-  const input = layer.querySelector('input');
+  const input = layer.querySelector('input[type="search"]');
+  const historyToggle = layer.querySelector('input[type="checkbox"]');
   const resultsHost = layer.querySelector('.global-search-results');
   const status = layer.querySelector('.global-search-status');
   const emptyState = layer.querySelector('.global-search-empty');
@@ -48,6 +50,7 @@
   let archiveEntries = [];
   let activeResult = -1;
   let previousFocus = null;
+  let indexLoaded = false;
 
   const normalize = (value) => String(value ?? '')
     .normalize('NFKD')
@@ -64,7 +67,10 @@
           return response.json();
         })
         .then((payload) => {
-          archiveEntries = payload.entries ?? [];
+          archiveEntries = (payload.entries ?? []).map(entry => ({ ...entry, normalized: {
+            title: normalize(entry.title), subtitle: normalize(entry.subtitle), text: normalize(entry.text)
+          } }));
+          indexLoaded = true;
           return archiveEntries;
         });
     }
@@ -72,9 +78,7 @@
   }
 
   function scoreEntry(entry, phrase, tokens) {
-    const title = normalize(entry.title);
-    const subtitle = normalize(entry.subtitle);
-    const text = normalize(entry.text);
+    const { title, subtitle, text } = entry.normalized;
     if (!tokens.every((token) => title.includes(token) || subtitle.includes(token) || text.includes(token))) return 0;
 
     let score = 0;
@@ -152,6 +156,13 @@
     const tokens = [...new Set(phrase.split(/\s+/).filter((token) => token.length > 1))];
     resultsHost.replaceChildren();
     activeResult = -1;
+    input.removeAttribute('aria-activedescendant');
+    input.setAttribute('aria-expanded', 'false');
+    if (!indexLoaded) {
+      status.textContent = 'Loading the archive index...';
+      emptyState.hidden = true;
+      return;
+    }
 
     if (!tokens.length) {
       status.textContent = 'Start typing to search the complete archive.';
@@ -160,13 +171,14 @@
     }
 
     const matches = archiveEntries
+      .filter(entry => historyToggle.checked || entry.current !== false)
       .map((entry) => ({ entry, score: scoreEntry(entry, phrase, tokens) }))
       .filter((match) => match.score > 0)
       .sort((left, right) => right.score - left.score || left.entry.title.localeCompare(right.entry.title))
       .slice(0, 40);
 
     status.textContent = matches.length
-      ? `${matches.length}${matches.length === 40 ? '+' : ''} archive ${matches.length === 1 ? 'entry' : 'entries'} found for “${rawQuery}”.`
+      ? `${matches.length}${matches.length === 40 ? '+' : ''} ${historyToggle.checked ? 'archive' : 'current'} ${matches.length === 1 ? 'entry' : 'entries'} found for “${rawQuery}”.`
       : `No archive entries found for “${rawQuery}”.`;
     emptyState.hidden = matches.length !== 0;
 
@@ -193,7 +205,7 @@
       heading.append(title, type);
       const subtitle = document.createElement('span');
       subtitle.className = 'global-search-result-subtitle';
-      subtitle.textContent = entry.subtitle;
+      subtitle.textContent = `${entry.current === false ? 'Earlier version · ' : ''}${entry.subtitle}`;
       const excerpt = document.createElement('span');
       excerpt.className = 'global-search-result-excerpt';
       appendHighlightedText(excerpt, excerptFor(entry, phrase, tokens), tokens);
@@ -205,6 +217,7 @@
       resultsHost.append(link);
     });
 
+    input.setAttribute('aria-expanded', String(matches.length > 0));
     if (matches.length) setActiveResult(0);
   }
 
@@ -214,8 +227,7 @@
     layer.hidden = false;
     document.body.classList.add('global-search-open');
     trigger.setAttribute('aria-expanded', 'true');
-    navLinks?.classList.remove('is-open');
-    navToggle?.setAttribute('aria-expanded', 'false');
+    window.closeArchiveNavigation?.();
     status.textContent = 'Loading the archive index...';
     input.focus();
     try {
@@ -241,6 +253,7 @@
   document.querySelectorAll('[data-open-global-search]').forEach((button) => button.addEventListener('click', openSearch));
   layer.querySelector('.global-search-backdrop').addEventListener('click', closeSearch);
   input.addEventListener('input', renderResults);
+  historyToggle.addEventListener('change', renderResults);
 
   document.addEventListener('keydown', (event) => {
     if ((event.ctrlKey || event.metaKey) && event.key.toLowerCase() === 'k') {
@@ -252,10 +265,10 @@
     if (event.key === 'Escape') {
       event.preventDefault();
       closeSearch();
-    } else if (event.key === 'ArrowDown') {
+    } else if (event.key === 'ArrowDown' && document.activeElement === input) {
       event.preventDefault();
       setActiveResult(activeResult + 1);
-    } else if (event.key === 'ArrowUp') {
+    } else if (event.key === 'ArrowUp' && document.activeElement === input) {
       event.preventDefault();
       setActiveResult(activeResult - 1);
     } else if (event.key === 'Enter' && activeResult >= 0 && document.activeElement === input) {

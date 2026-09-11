@@ -196,7 +196,7 @@ const profileSeeds = [
   },
   {
     slug: 'felix', name: 'Felix', code: 'ARC · 009', role: 'MSF officer, friend, and personal bodyguard', ageBand: 'Late twenties', factions: ['MSF'], mbti: { type: 'ESFP', detail: 'strong Se-Fi', status: 'Confirmed' }, accent: 'neutral', materialStatus: 'Canon relationship + mock details',
-    summary: 'Lynleit\'s playful friend and Fionn-trusted bodyguard, Felix specializes in hacking and communications, approaching operations like a knight that reaches its objective through unexpected angles.',
+    summary: 'Lynleit\'s playful friend and bodyguard, trusted by Fionn. Felix handles hacking and communications for the field team.',
     visual: 'Loose fieldwear with a compact communications kit and one bright accent against neutral equipment', palette: 'Grey, black, bright blue, rust orange',
     physical: [
       ['Hair', 'Vivid orange hair swept back into sharp points and tied into a short tail.'],
@@ -226,7 +226,7 @@ const profileSeeds = [
   },
   {
     slug: 'reiner', name: 'Reiner', code: 'ARC · 010', role: 'MSF officer, friend, and personal bodyguard', factions: ['MSF'], mbti: { type: 'ISTJ', detail: 'strong Si-Te', status: 'Confirmed' }, accent: 'neutral', materialStatus: 'Canon relationship + mock details',
-    summary: 'Lynleit\'s stern friend and Fionn-trusted bodyguard, Reiner is a powerfully built brute-force specialist who holds the direct line like a rook.',
+    summary: 'Lynleit\'s stern friend and bodyguard, trusted by Fionn. Reiner is a powerfully built protection specialist who holds exposed positions and confronts threats directly.',
     visual: 'Structured field clothing, reinforced equipment, and black sunglasses', palette: 'Graphite, ash, muted teal, paper white',
     physical: [
       ['Hair', 'Clean-shaven scalp.'],
@@ -256,7 +256,7 @@ const profileSeeds = [
   },
   {
     slug: 'yulia', name: 'Yulia', code: 'ARC · 011', role: 'Criminology student and procedural investigator', ageBand: 'Mid-twenties', factions: ['Independent'], mbti: { type: 'ISTJ', detail: 'strong Si', status: 'Confirmed' }, accent: 'neutral', materialStatus: 'Canon personality and relationship + mock visual details',
-    summary: 'A top criminology student whose meticulous discipline makes her the evidentiary counterweight to Hiyu\'s wild inference, even when reluctant loyalty follows him into Vilen\'s quarantined park.',
+    summary: 'A top criminology student who checks Hiyu\'s theories against evidence and reluctantly accompanies him into Vilen\'s quarantined park.',
     visual: 'Neatly layered civilian clothing with orderly study materials', palette: 'Cream, charcoal, muted red, pale gold',
     physical: [
       ['Hair', 'Very long dark chestnut-brown hair with a blunt fringe and softly flared ends.'],
@@ -283,7 +283,7 @@ const profileSeeds = [
   },
   {
     slug: 'hiyu', name: 'Hiyu', code: 'ARC · 012', role: 'Criminology student and intuitive investigator', ageBand: 'Mid-twenties', factions: ['Independent'], mbti: { type: 'ENTP', detail: 'strong Ne', status: 'Confirmed' }, accent: 'neutral', materialStatus: 'Canon personality and relationship + mock visual details',
-    summary: 'A criminology student whose restless pattern-making reaches the impossible possibility of magic, then carries him and Yulia into Vilen\'s quarantined park in search of proof.',
+    summary: 'A criminology student who suspects magic behind the disappearances and enters Vilen\'s quarantined park with Yulia to find proof.',
     visual: 'Soft civilian clothing with portable research tools tucked into pockets and bags', palette: 'Black, soft blue, warm grey, white',
     physical: [
       ['Hair', 'Short, untidy charcoal hair with a loose forward fringe.'],
@@ -736,7 +736,7 @@ async function loadProfilePortrait(profile, portrait, note) {
       button.type = 'button';
       button.setAttribute('aria-label', `Portrait ${index + 1}`);
       const thumb = createElement('img');
-      thumb.src = source.getAttribute('src'); thumb.alt = ''; thumb.loading = 'lazy';
+      thumb.src = source.dataset.preview || source.getAttribute('src'); thumb.alt = ''; thumb.loading = 'lazy';
       button.append(thumb);
       button.addEventListener('click', () => show(index));
       thumbnails.append(button);
@@ -923,19 +923,14 @@ function collectProfileRelationships(profile) {
   return [...relationships.values()].sort((a, b) => b.priority - a.priority || a.name.localeCompare(b.name));
 }
 
-function createSvgElement(name, attributes = {}) {
-  const element = document.createElementNS('http://www.w3.org/2000/svg', name);
-  Object.entries(attributes).forEach(([key, value]) => element.setAttribute(key, value));
-  return element;
-}
-
 async function loadRelationshipChibis(nodes) {
   try {
     const galleryDocument = await loadGalleryCatalog();
     const cards = Array.from(galleryDocument.querySelectorAll('.gallery-card[data-chibi="true"]'));
     nodes.forEach(({ record, avatar }) => {
       const card = cards.find((candidate) => (candidate.dataset.character ?? '').split(/\s+/).includes(record.profile.slug));
-      const source = card?.querySelector('img')?.getAttribute('src');
+      const artwork = card?.querySelector('img');
+      const source = artwork?.dataset.preview || artwork?.getAttribute('src');
       if (!source) return;
       record.chibiSource = source;
       const image = createElement('img');
