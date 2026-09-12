@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-12",
+  "updated": "2026-09-08",
   "sections": [
     {
       "id": "river-operation",
@@ -44,7 +44,7 @@
       "section": "river-operation",
       "kind": "female",
       "title": "Lynleit",
-      "basis": "Suspected INFJ, Ni-led reading with strong Fe",
+      "basis": "ENFJ with strong Ni",
       "text": "Once Lynleit is ashore, the feeling of hands holding her down may linger even while she tries to give orders. Her later complaint about the jacket can be petty and heartfelt: she liked it and could not save it.",
       "chapterMatch": "She kicked again. The grip tightened.",
       "chapters": [
@@ -116,7 +116,7 @@
       "section": "river-operation",
       "kind": "male",
       "title": "Felix",
-      "basis": "Suspected ENFP, habitual alternatives and personal loyalty",
+      "basis": "ESFP with strong Se and Fi",
       "text": "Remaining ashore should frustrate Felix because his most valued people descend without him. His role is still decisive. He keeps the cameras frozen, hears the failure before he can see it, abandons the van at the correct moment, and turns a communications fallback into a physical rescue line. A joke after the extraction can be an attempt to restore ordinary human rhythm, not proof that he took the danger lightly.",
       "chapterMatch": "Felix left the van only when the operation had already collapsed.",
       "chapters": [
@@ -152,7 +152,7 @@
       "section": "relationships-under-pressure",
       "kind": "female",
       "title": "Lynleit",
-      "basis": "Suspected INFJ, Ni-led reading with strong Fe, MSF duty primary",
+      "basis": "ENFJ with strong Ni, MSF duty primary",
       "text": "Lynleit's concealed knowledge that Kyrien nearly harmed her gives the interrogation a personal edge, but she does not make the injury the purpose of the scene. Her MSF responsibility and anticipation of a larger threat remain decisive. The private anger should appear through unusually exact questions, controlled distance, or refusal to explain herself rather than flirtation or an emotional confession.",
       "chapterMatch": "Kyrien now faces prison",
       "chapters": [
@@ -233,7 +233,7 @@
       "section": "nameless-street",
       "kind": "female",
       "title": "Lynleit",
-      "basis": "Suspected INFJ, Ni-led reading with strong Fe",
+      "basis": "ENFJ with strong Ni",
       "text": "The crying girl works as a lure because Lynleit notices a vulnerable person and assumes responsibility before she can test the situation. This does not require a general claim that women are more nurturing. Her Fe-oriented leadership, strong symbolic intuition, and experience of being watched make the trap personal. Afterward she may be angrier that the street used her protective instinct than frightened by the child herself.",
       "chapterMatch": "Her crying continued somewhere beyond the passage.",
       "chapters": [
@@ -251,7 +251,7 @@
       "section": "nameless-street",
       "kind": "male",
       "title": "Felix",
-      "basis": "Suspected ENFP, habitual alternatives and personal loyalty",
+      "basis": "ESFP with strong Se and Fi",
       "text": "Felix experiences an ordinary physical emergency while Lynleit experiences the impossible street. His first response is immediate and tactile: get close, make noise, fan her face, check whether she responds. Once she wakes, his familiarity gives him room to tease, but affection should make him notice that her explanation is not a performance. He can believe that something happened without pretending to understand it.",
       "chapterMatch": "His expression changed. The playfulness withdrew",
       "chapters": [
@@ -329,7 +329,7 @@
       "section": "long-term-inheritance",
       "kind": "male",
       "title": "Kyrien",
-      "basis": "Suspected ISTP moving into command",
+      "basis": "Probable ISTP moving into command",
       "text": "Directing MSF while Lynleit carries the Magiarchate forces Kyrien into a role built around speech, delegation, and institutional patience. His instinct may be to solve pressure alone because that resembles the officer ideal inherited from his father. A believable failure occurs when he withholds a burden that subordinates needed to understand, repeating Fionn's mistake in a different personality.",
       "chapters": [],
       "moments": []
@@ -1167,7 +1167,7 @@
       "section": "doom-address",
       "kind": "female",
       "title": "Lynleit",
-      "basis": "Canon behavior, Suspected INFJ, Ni-led reading with strong Fe and MSF duty primary",
+      "basis": "Canon behavior, ENFJ with strong Ni and MSF duty primary",
       "text": "Lynleit rejects the fatal treatment and keeps looking. Her research is competent; discussing its sexual implication with Kyrien is where she becomes evasive. Do not repeat a defense of her leadership after each awkward response.",
       "chapterMatch": "Lynleit rejected the answer.",
       "chapters": [
@@ -1230,7 +1230,7 @@
       "section": "doom-address",
       "kind": "female",
       "title": "Lynleit after the failed attempt",
-      "basis": "Version 7 behavior, Suspected INFJ, Ni-led reading with strong Fe and private embarrassment",
+      "basis": "Version 7 behavior, ENFJ with strong Ni and private embarrassment",
       "text": "The unread pages and excessive denials already convey Lynleit's continued interest. Let Natalia's question end the exchange without another paragraph decoding her answer.",
       "chapterMatch": "There will not be another attempt.",
       "chapters": [
@@ -1251,7 +1251,7 @@
       "section": "doom-address",
       "kind": "male",
       "title": "Kyrien without the missing premise",
-      "basis": "Version 7 behavior, Suspected ISTP; observation and background reasoning",
+      "basis": "Version 7 behavior, ISTP lean and Ti-led observation",
       "text": "Kyrien lacks one crucial piece of information. His unanswered question can remain irritating without becoming a demand for confession or a speech about trust.",
       "chapterMatch": "He knew Lynleit had tried to sleep with him",
       "chapters": [
@@ -1314,7 +1314,7 @@
       "section": "doom-address",
       "kind": "female",
       "title": "A defence that becomes personal",
-      "basis": "Author-supplied response, Suspected INFJ, Ni-led reading with strong Fe and private embarrassment",
+      "basis": "Author-supplied response, ENFJ with strong Ni and private embarrassment",
       "text": "The cup gives Lynleit's hands something to do while she tries to keep the discussion abstract. Preserve her porcelain retort so she remains an active opponent, not simply the target of a lecture. This private evasiveness does not replace her openness as a leader.",
       "chapterMatch": "Perhaps the porcelain is behaving with more dignity",
       "chapters": [

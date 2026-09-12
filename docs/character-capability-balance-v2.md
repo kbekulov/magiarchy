@@ -34,10 +34,7 @@ These questions define what each character can do, what they cannot do, and why 
 | Lynleit | Beyond passing MSF weapons certification, what level of firearms skill does Lynleit possess, and where does she remain dependent on Felix, Reiner, Kyrien, or another specialist? | 0% |
 | Items & Artefacts | What governs the leviathan-hide coat's autonomous forms, what counts as minor magical damage, can it refuse protection, and what prevents it from becoming a universal defence? | 0% |
 | Inspector Leo | Which investigative strengths belong specifically to Leo, and what does restricted clearance prevent him from accomplishing without Natalia, MSF, or Church access? | 20% |
-| Lynleit: physical skills | Which practice and experience underpin her agility and survival under immediate threat, and in which physical situations does she need help? | 20% |
-| Kyrien: physical skills | Which forms of endurance are strongest, what sustains his movement precision, and how do fatigue and unfamiliar conditions limit them? | 20% |
 | Natalia | Which magical disciplines support Natalia's examinations, what can she not diagnose alone, and what cost or risk prevents broad scholarship from solving every edge case? | 20% |
-| Felix: physical skills | Which tasks does his field training reliably cover, and where does he need a physical specialist? | 25% |
 | Myka | Which Academy disciplines make Myka a strong Magus, which remain weak despite graduating at the top of her class, and what failure still follows her into MSF? | 25% |
 | Tien | What constraints, personal blind spots, or counters keep Tien's elite fieldcraft and combat from making Helena's concealed assassin an automatic solution? | 25% |
 | Sherie | Beyond charm and quick thinking, what can Sherie execute without Drake, and which strategic or operational tasks still require her teacher? | 30% |
@@ -46,9 +43,8 @@ These questions define what each character can do, what they cannot do, and why 
 | Felix | What technical access, equipment, preparation, and failure conditions limit Felix's hacking and communications work? | 35% |
 | Reiner | How strong and durable is Reiner in practical terms, and what kinds of distance, deception, technology, or magecraft neutralize his direct approach? | 35% |
 | Father Mikhail | Which Church techniques let Mikhail survive several Magi threats alone in Cardiff, what preparation or cost do they require, and which threat can bypass them? | 35% |
-| Axis model | Should Analysis split into procedural verification and generative inference so Yulia and Hiyu's opposite investigative strengths are visible instead of receiving nearly identical scores under one label? | 40% |
 | Lynleit | After the confirmed underwater blue flame and fear-triggered water walking, how long can she sustain either effect, what bodily cost follows them, and what limits keep those abilities from replacing her allies' skills? | 45% |
-| Kyrien: anticipation | Which preparations and missed details become visible before a rescue, and what can invalidate his reading of a developing threat? | 50% |
+| Axis model | Should Analysis split into procedural verification and generative inference so Yulia and Hiyu's opposite investigative strengths are visible instead of receiving nearly identical scores under one label? | 40% |
 | Yulia and Hiyu | Which concrete park tasks require Yulia's procedural rigor, which require Hiyu's improvisation, and where does each method fail without the other? | 50% |
 | Kyrien | Which consequential failure shows how Kyrien's need to win and punish unfair play can override his officer discipline, and what blind spot appears when he later directs MSF while Lynleit carries the Magiarchate? | 60% |
 
@@ -69,11 +65,3 @@ This table is limited to current profile claims or graph presentations that cann
 Lester's chronology cannot form a conventional continuous causal history. Neither he nor Natalia knows his origin; Natalia recognizes contradiction as intrinsic to nature. This establishes his ontology, not a new ability, immunity, or unrestricted power. Keep the existing questions about his intervention limits and costs open. Do not require a discoverable transformation event to answer them, or upgrade his capability graph because his existence is incomprehensible.
 
 The confirmed second child, a daughter, has no established abilities. Neither child's parentage alone establishes inherited magecraft.
-
-## Physical distinctions: 12 September 2026
-
-The author confirms that Lynleit is somewhat more agile and nimble than the average woman and generally competent at surviving imminent physical threats. Kyrien combines endurance and precision in movement and action. Felix has general field-officer physical competence through training, alongside his technical specialty.
-
-Kyrien notices environmental details and developing situations that others miss, prepares for possible threats, and converts that preparation into immediate tactical action when Lynleit is isolated or conspired against. An overall realization may precede reconstructed reasoning; an incorrect assumption remains possible. Neither this clarification nor a suspected type justifies higher numerical graph scores.
-
-The [Cognition and Physical Competence reference](../docs.html?doc=character-cognition-and-physical-competence) separates these facts from proposed explanations. Balance and recovery for Lynleit, economical repeatability for Kyrien, and a defined training baseline for Felix are development options, not new canon. No sport, teacher, conditioning routine, or magical enhancement of ordinary agility has been established.

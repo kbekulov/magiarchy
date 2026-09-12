@@ -181,7 +181,7 @@ Give him reasons to listen that arise from the case as well as the relationship.
 
 ### Natural approach
 
-Felix flirts, jokes, and watches the response. He enjoys trying multiple interpretations even without a social purpose. When reassuring someone, he can offer a hopeful reading before he fully believes it, continuing to think privately. Serious feelings can be harder for him to state plainly than a playful advance.
+Felix flirts, jokes, and watches the response. Serious feelings can be harder for him to state plainly than a playful advance.
 
 ### Sexual expression
 
@@ -195,7 +195,7 @@ At the opening, he and Sherie have no meaningful personal relationship. Professi
 
 He remains internally fixated on Lynleit throughout that developing chemistry. His responses to Sherie can be immediate and sincere while his interpretation remains organized around Lynleit. He may regard Sherie's interest as her usual charm or their closeness as an unusually entertaining professional friendship. He can become emotionally invested before recognizing the intimate possibility. His attachment to Lynleit carries genuine disappointment and hope; one successful flirtation cannot dissolve it.
 
-Sherie comes to recognize the seriousness beneath his jokes. With her, he need not always supply the entertainment. His eventual movement toward her requires recognizing someone he wants in her own right, not accepting a substitute after disappointment with Lynleit. If someone he respects points out that he is hurting Sherie, his first response would be stunned recognition and surprise that he did not notice. This is a confirmed hypothetical response, not an existing scene or an immediate resolution of his attachment.
+Sherie comes to recognize the seriousness beneath his jokes. With her, he need not always supply the entertainment. His eventual movement toward her requires recognizing someone he wants in her own right, not accepting a substitute after disappointment with Lynleit.
 
 ### Writing guardrail
 
@@ -229,7 +229,7 @@ His reserve leaves room for warmth. It does not prescribe how every private enco
 
 ### Natural approach
 
-Sherie enjoys attention, praise, teasing, and mischief even when she has no professional reason to perform. Flirting is also part of her diplomatic skill, used so often that it can make a sincere approach difficult to distinguish from a practiced one. If a response changes unexpectedly, she notices the emotional change in the person and the situation. That sensitivity does not make her interpretation infallible.
+Sherie enjoys attention and praise. Flirting is also part of her diplomatic skill, used so often that it can make a sincere approach difficult to distinguish from a practiced one.
 
 ### Sexual expression
 
@@ -432,7 +432,3 @@ No romantic partner or sexual profile is recorded.
 These are separate milestones, not a conscious program Lynleit follows. Her duty remains primary. She was already a competent adult while Fionn lived; his death changes the structure of belonging and responsibility. The family she eventually forms with Kyrien is her choice, not compliance with a Cult duty or Fionn's selection of a successor.
 
 Arc 0's possible teenage encounter is non-romantic and unconfirmed. Do not backdate this adult sexual progression into the prequel.
-
-## Related characterization
-
-The [Cognition and Physical Competence reference](../docs.html?doc=character-cognition-and-physical-competence) records the author’s 12 September clarifications and separates confirmed behavior from suspected types. These additions do not date a relationship milestone or replace the unresolved scenes above.

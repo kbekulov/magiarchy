@@ -232,15 +232,3 @@ Version 3 derives from the earlier Version 2 text in commit `868fc31`, before th
 **Character exposition:** preparation need not equal experience. Lynleit brings theoretical knowledge, learns that a particular person does not behave exactly like an account on paper, and becomes interested in his responses beyond her initial wish to prove herself. Kyrien also observes her. Keep that reciprocal observation distinct from a one-sided demonstration of mastery. The complete intimate passage remains for the author, not concealed inside instructional prose.
 
 **Editorial lacuna:** use `> [WRITER: concise non-graphic completion notice]` for an undrafted passage. The amber callout is an editorial marker, not a fictional event. Preserve the source in the timestamped backlog archive and retain the surrounding dialogue and aftermath. Do not count the gap as shown or inferred evidence in the preface.
-
-## Character attention: author answers from 12 September 2026
-
-Use the [Cognition and Physical Competence reference](../docs.html?doc=character-cognition-and-physical-competence) for the full facts and uncertain type readings.
-
-**Focalization and divided attention:** Lynleit can seek help articulating an internal answer while concealing distress. Trusted reassurance need not remove her unease. Kyrien can continue reasoning in the background and arrive at an overall realization before he can explain it. Write the available observations; do not give either character unexplained access to the correct answer.
-
-**Social play and reassurance:** Sherie enjoys mischief without a professional purpose. An unexpected response first changes her reading of the emotional situation. Felix enjoys generating alternatives even at ease; in danger he can offer a hopeful interpretation while privately continuing to test it. This distinction between reassurance and belief need not be announced after each joke.
-
-**Physical characterization:** keep Lynleit's confirmed agility, Kyrien's endurance and precision, and Felix's trained field competence independent of type labels. Demonstrate capability through the task when a scene calls for it. No particular training method or failure example becomes canon through this guidance.
-
-**Limit:** these answers describe tendencies, not compulsory beats. They do not prescribe a new scene, a guaranteed correct intuition, or a relationship milestone.

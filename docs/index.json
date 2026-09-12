@@ -4,12 +4,12 @@
     "title": "MAGIARCHY Prose Style",
     "topic": "Writer's Style Reference",
     "file": "prose-style.md",
-    "updated": "2026-09-08",
-    "description": "House style for voice, practical exposition, comic timing, source-faithful blocking, and visible writer gaps.",
+    "updated": "2026-09-12",
+    "description": "House style and character-specific attention: private unease, background reasoning, emotional play, and hopeful reframing.",
     "speakers": [
       "Author's Desk"
     ],
-    "defaultVersion": "v7",
+    "defaultVersion": "v8",
     "versions": [
       {
         "id": "v1",
@@ -55,11 +55,40 @@
       },
       {
         "id": "v7",
-        "label": "v7 · Current",
-        "file": "prose-style.md",
+        "label": "v7 · Archived",
+        "file": "prose-style-v7.md",
         "updated": "2026-09-08",
         "description": "House style for voice, practical exposition, comic timing, source-faithful blocking, and visible writer gaps."
+      },
+      {
+        "id": "v8",
+        "label": "v8 · Current",
+        "file": "prose-style.md",
+        "updated": "2026-09-12",
+        "description": "House style and character-specific attention: private unease, background reasoning, emotional play, and hopeful reframing."
       }
+    ]
+  },
+  {
+    "slug": "character-cognition-and-physical-competence",
+    "title": "Character Cognition and Physical Competence",
+    "topic": "Writer's Character Reference",
+    "file": "character-cognition-and-physical-competence.md",
+    "updated": "2026-09-12",
+    "description": "Confirmed habits of attention, uncertainty, social play, and physical competence, separated from suspected MBTI readings and proposed training explanations.",
+    "speakers": [
+      "Character Archive"
+    ]
+  },
+  {
+    "slug": "archive-audit-2026-09-12",
+    "title": "Archive Audit: 12 September 2026",
+    "topic": "Editorial Audit",
+    "file": "archive-audit-2026-09-12.md",
+    "updated": "2026-09-12",
+    "description": "Approval-pending findings on canon consistency, chronology, prose, character development, reader knowledge, and responsive design. No audit actions have been implemented.",
+    "speakers": [
+      "Archive Review"
     ]
   },
   {
@@ -137,12 +166,12 @@
     "title": "Character Behaviour Audit",
     "topic": "Writer's Character Reference",
     "file": "character-behavior-audit.md",
-    "updated": "2026-09-08",
-    "description": "Version-scoped F, M, and S advisory notes, including the park v2 approach and its writer gap.",
+    "updated": "2026-09-12",
+    "description": "Paragraph guidance aligned with the author’s cognition clarifications and suspected type readings.",
     "speakers": [
       "Character Archive"
     ],
-    "defaultVersion": "v7",
+    "defaultVersion": "v8",
     "versions": [
       {
         "id": "v1",
@@ -194,10 +223,18 @@
       },
       {
         "id": "v7",
-        "label": "v7 · Current",
-        "file": "character-behavior-audit.md",
+        "label": "v7 · Archived",
+        "file": "character-behavior-audit-v7.md",
         "updated": "2026-09-08",
         "description": "Version-scoped F, M, and S advisory notes, including the park v2 approach and its writer gap.",
+        "behaviorFile": "character-behavior-notes-v7.json"
+      },
+      {
+        "id": "v8",
+        "label": "v8 · Current",
+        "file": "character-behavior-audit.md",
+        "updated": "2026-09-12",
+        "description": "Paragraph guidance aligned with the author’s cognition clarifications and suspected type readings.",
         "behaviorFile": "character-behavior-notes.json"
       }
     ]
@@ -208,11 +245,11 @@
     "topic": "Writer's Character Reference",
     "file": "character-intimacy-and-sexuality.md",
     "updated": "2026-09-12",
-    "description": "Sherie and Felix's gradual professional familiarity, Felix's unresolved attachment to Lynleit, and the distinct private rhythms of both central pairings.",
+    "description": "Sherie and Felix’s emotional attention, reassurance, and uneven recognition, alongside the established relationship and family directions.",
     "speakers": [
       "Character Archive"
     ],
-    "defaultVersion": "v9",
+    "defaultVersion": "v10",
     "versions": [
       {
         "id": "v1",
@@ -280,10 +317,18 @@
       },
       {
         "id": "v9",
-        "label": "v9 · Current",
-        "file": "character-intimacy-and-sexuality.md",
+        "label": "v9 · Archived",
+        "file": "character-intimacy-and-sexuality-v9.md",
         "updated": "2026-09-12",
         "description": "Sherie and Felix's gradual professional familiarity, Felix's unresolved attachment to Lynleit, and the distinct private rhythms of both central pairings.",
+        "tensionFile": "sexual-tension-notes-v9.json"
+      },
+      {
+        "id": "v10",
+        "label": "v10 · Current",
+        "file": "character-intimacy-and-sexuality.md",
+        "updated": "2026-09-12",
+        "description": "Sherie and Felix’s emotional attention, reassurance, and uneven recognition, alongside the established relationship and family directions.",
         "tensionFile": "sexual-tension-notes.json"
       }
     ]
@@ -353,8 +398,8 @@
     "title": "Character Capability Balance",
     "topic": "Editorial Ledger",
     "file": "character-capability-balance.md",
-    "updated": "2026-09-11",
-    "description": "Capability limits and questions, including Lester's intrinsic contradiction without assuming unrestricted powers.",
+    "updated": "2026-09-12",
+    "description": "Confirmed physical distinctions, observational preparation, and open training and endurance limits.",
     "speakers": [
       "Character Archive"
     ],
@@ -368,13 +413,20 @@
       },
       {
         "id": "v2",
-        "label": "v2 · Current",
-        "file": "character-capability-balance.md",
+        "label": "v2 · Archived",
+        "file": "character-capability-balance-v2.md",
         "updated": "2026-09-11",
         "description": "Capability limits and questions, including Lester's intrinsic contradiction without assuming unrestricted powers."
+      },
+      {
+        "id": "v3",
+        "label": "v3 · Current",
+        "file": "character-capability-balance.md",
+        "updated": "2026-09-12",
+        "description": "Confirmed physical distinctions, observational preparation, and open training and endurance limits."
       }
     ],
-    "defaultVersion": "v2"
+    "defaultVersion": "v3"
   },
   {
     "slug": "duchy-of-narvea",

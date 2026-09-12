@@ -84,6 +84,7 @@ Story, character, world, relationship, institution, location, and event question
 | Government | What exact jurisdiction gives the confirmed Council of State authority when ordinary constitutional sovereignty collides with hidden supernatural sovereignty? | 25% |
 | Lynleit | Does Fionn die from the fall below the Vilen family house, from an earlier attack, or from a staged combination, and who first reaches his body? | 25% |
 | Helena | What does Fionn withhold from Helena, and how does that exclusion affect her involvement in the plot? | 25% |
+| Kyrien: reasoning | What does he actually do to test the assumption that caused a mistaken realization? | 25% |
 | Items & Artefacts | How does Lynleit discover midway through Arc 1 that Fionn replaced her coat, and what evidence establishes that he arranged the substitution before his death? | 30% |
 | Boat operation | What changes in the river after the failed infiltration, and what evidence of the encounter remains? | 30% |
 | Resolution | What human victory ends Helena's control and settles the political crisis while leaving the supernatural wound of the Spill open? | 30% |
@@ -103,6 +104,7 @@ Story, character, world, relationship, institution, location, and event question
 | Park trespass | How do Hiyu and Yulia bypass the cordon, what price do they pay to survive, and what evidence proves their experience while making their testimony harder to believe? | 45% |
 | Hotel refuge | What does Kyrien witness when Lynleit breaks down at the hotel, and what changes between them by morning? | 45% |
 | Kyrien | What are the protected politician's name and office, what incomplete truth connects them to Kyrien's father, what exact physical sequence unfolds during the failed attempt, and how does the survivor later retaliate against Lynleit? | 50% |
+| Character typing | Does the author confirm Lynleit's INFJ and Felix's ENFP working readings, and what further behavior settles Felix's judging function and Kyrien's ISTP versus INTJ uncertainty? | 50% |
 | Boat operation | Does the submerged blue flame leave a lasting injury on the Drowned Choir, and what does the girl's refusal to pursue Lynleit reveal about its limits? | 65% |
 | Character appearance | What exact heights belong to the illustrated cast, and which artwork-derived hair, eye, build, or distinguishing details require correction? | 70% |
 | Covert alliance | Beyond the confirmed river-surveillance operation, what does Lynleit refuse to provide Drake and Sherie, and what concessions or favors do they offer in return? | 70% |

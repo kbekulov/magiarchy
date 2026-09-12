@@ -21,11 +21,3 @@ The v7 restoration also lets Mikhail leave one averted glance unremarked. Its st
 ## Park encounter and prequel direction
 
 The park notes concern adult Lynleit and Kyrien: spontaneous closeness after work, private preparation, the familiar flask, and a delayed comic consequence. Arc 0 notes remain tentative formation guidance and do not backdate adult intimate behavior into the younger cast’s school years. The hotel refuge remains nonsexual.
-
-## Attention and type readings: 12 September 2026
-
-The [Cognition and Physical Competence reference](../docs.html?doc=character-cognition-and-physical-competence) preserves the author's answers separately from interpretation. Current notes use suspected INFJ for Lynleit and suspected ENFP for Felix; Kyrien remains an ISTP lead with INTJ open, while Sherie's ENFJ and strong Fe are retained. Historical Chapter-version notes retain their earlier context.
-
-Use those answers before a type stereotype. Lynleit consults others without automatically settling her private unease. Kyrien's quiet may contain continuing analysis, not complete understanding. Sherie plays socially even off duty and notices emotional change. Felix can reassure others while privately testing the interpretation he has offered. The hypothetical response to Sherie's hurt is not an established scene.
-
-Physical competence belongs to aptitude and acquired skill, not function order. No new paragraph marker is added where there is no actual paragraph or scene to annotate.

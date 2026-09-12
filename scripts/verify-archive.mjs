@@ -25,6 +25,19 @@ for (const profile of profiles) {
   assert.equal(new Set(profile.beats).size, profile.beats.length, `${profile.slug}: duplicate beats`);
 }
 assert.ok(!source.includes('const timelineDetails = [profile.origin'), 'Positional timeline prose returned');
+// Keep confirmed author answers distinct from working type readings and training proposals.
+for (const [slug, type] of [['lynleit', 'INFJ'], ['kyrien', 'ISTP'], ['felix', 'ENFP']]) {
+  const profile = profiles.find(record => record.slug === slug);
+  assert.equal(profile.mbti.type, type);
+  assert.equal(profile.mbti.status, 'Suspected', `${slug}: interpretation promoted to confirmed type`);
+}
+assert.equal(profiles.find(record => record.slug === 'sherie').mbti.type, 'ENFJ');
+assert.ok(profiles.find(record => record.slug === 'lynleit').tradecraft.some(entry => entry.title === 'Agility'));
+assert.ok(profiles.find(record => record.slug === 'kyrien').tradecraft.some(entry => entry.title === 'Endurance and precision'));
+assert.ok(profiles.find(record => record.slug === 'felix').tradecraft.some(entry => entry.title === 'Field training'));
+assert.ok(read('docs/character-cognition-and-physical-competence.md').includes('The exact steps he takes to investigate that error remain undecided.'));
+assert.ok(!read('docs/character-behavior-notes-v7.json').includes('Suspected INFJ'), 'New type reading leaked into historical guidance');
+assert.ok(!read('docs/sexual-tension-notes-v9.json').includes('stunned recognition'), 'New answer leaked into historical tension guidance');
 // A confirmed relationship direction must not leak into earlier document snapshots.
 const intimacy = json('docs/index.json').find(doc => doc.slug === 'character-intimacy-and-sexuality');
 const currentTension = json(`docs/${selected(intimacy).tensionFile}`);

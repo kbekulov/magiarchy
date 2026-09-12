@@ -35,3 +35,7 @@ On 8 September 2026, the author resolved the backlog's inconsistent sequence: Fi
 The Drowned Choir and river leviathan are separate Holumns. General disappearances and returns do not share one destination or mechanism. Lester's contradictory biography is deliberate ontology, not an editorial inconsistency requiring a causal repair. These decisions are integrated into the current Holumn and character records.
 
 The family direction now includes a son born during Lynleit's disappearance and a daughter following restored intimacy in Arc 2. The daughter is understood only after Arc 2; Kyrien's discovery of the son remains undecided. Historical document and Moment versions retain their earlier wording.
+
+## Character clarification: 12 September 2026
+
+The author’s MBTI discussion supplies confirmed habits of attention and physical competence, recorded in the [Cognition reference](../docs.html?doc=character-cognition-and-physical-competence). The profiles now distinguish suspected INFJ for Lynleit and ENFP for Felix from Sherie’s retained ENFJ; Kyrien remains a suspected ISTP with INTJ open. Earlier labels are preserved in historical guidance. Type interpretation is unresolved evidence, not a conflict between two events. No new training history, scene, chronology, or capability score follows from a typing change.

@@ -1,6 +1,6 @@
 const profileSeeds = [
   {
-    slug: 'lynleit', name: 'Lynleit', code: 'MSF · 001', role: 'Fionn\'s biological daughter and displaced heir', ageBand: 'Late twenties', factions: ['MSF', 'Magiarchy'], mbti: { type: 'ENFJ', detail: 'strong Ni', status: 'Confirmed' }, accent: 'blue', materialStatus: 'Canon traits + mock details',
+    slug: 'lynleit', name: 'Lynleit', code: 'MSF · 001', role: 'Fionn\'s biological daughter and displaced heir', ageBand: 'Late twenties', factions: ['MSF', 'Magiarchy'], mbti: { type: 'INFJ', detail: 'Ni-led reading; strong Fe', status: 'Suspected' }, accent: 'blue', materialStatus: 'Canon traits + mock details',
     summary: 'Fionn\'s daughter, an MSF officer and Magus who becomes a fugitive after Helena accuses her of his murder.',
     visual: 'A long tailored blue coat over a pale high-collared blouse with a narrow black ribbon, fitted high-waisted black shorts, dark tights, and black over-the-knee lace-up boots. Her wardrobe is formal and fashion-conscious.', palette: 'Midnight blue, black, white, cold cyan',
     physical: [
@@ -19,11 +19,15 @@ const profileSeeds = [
       { label: 'Later loan', title: 'Ren L21 "Rook"', meta: ['9×19 mm', 'Borrowed from Felix', 'Micro-compact'], detail: 'Felix later lends Lynleit his personal L21 after her continued preference for the weaker 9×17 Sparrow becomes a cause of concern for him. The Rook gives her a lighter polymer-frame pistol in the more common 9×19 mm cartridge.', href: 'weapons.html#ren-l21-rook' },
       { label: 'Inherited protection', title: 'Leviathan-hide coat', meta: ['Autonomous form', 'Minor magical protection', 'Active coverage required'], detail: 'Midway through Arc 1, after Fionn\'s death, Lynleit discovers that he had discreetly replaced her blue coat with a garment sewn from material called the hide of leviathan. The coat chooses whether to appear as a coat, scarf, an imitation of her lost suede jacket, or another piece of clothing. Its protection does not activate merely because she wears it. She must cover the threatened part of her body or place the garment over someone else.', href: 'items.html?item=leviathan-hide-coat' }
     ],
-    personalitySummary: 'Lynleit puts MSF and her personal missions first. She plans ahead, notices shifts in people\'s loyalties, and usually shares enough of her thinking for others to act with her. In private she is reserved and reflective. Personal embarrassment can make her evasive or irritable, especially when Kyrien notices more than she meant to reveal. When Mikhail needles her about her private life, she answers with formal objections, sharp retorts, and eventually a carefully worded threat.',
+    personalitySummary: 'Lynleit puts MSF and her personal missions first. She values openness as a leadership skill and shares her thinking so others can act with her. When uncertain, she feels that an answer is taking shape internally and talks to trusted people to bring it into focus. She tries to hide the distress of not yet understanding it. In private she is reserved and reflective. Personal embarrassment can make her evasive or irritable, especially when Kyrien notices more than she meant to reveal. When Mikhail needles her about her private life, she answers with formal objections, sharp retorts, and eventually a carefully worded threat.',
     traits: [
-      { label: 'Relational leadership', score: 95, note: 'Her first instinct in crisis is to read trust, morale, legitimacy, shared burden, and the emotional field around her. She treats candid communication as a practical source of trust and coordinated action.' },
-      { label: 'Strategic foresight', score: 92, note: 'Her unusually strong intuition identifies long-range patterns and what events are becoming before most people can name the change.' },
+      { label: 'Relational leadership', score: 95, note: 'She treats candid communication as a source of trust and coordinated action. A trusted objection can unsettle her even when a plan is working, making her question whether she pushed for something others were uncomfortable with.' },
+      { label: 'Strategic foresight', score: 92, note: 'An unresolved sense that something is wrong can prevent her from fully committing to a plan. Trusted reassurance sometimes helps her proceed, but does not settle the unease; she may postpone without being able to explain why.' },
       { label: 'Private introspection', score: 86, note: 'In private she is comfortable disappearing into solitude, following symbolic threads, and processing difficult emotion internally.' }
+    ],
+    tradecraft: [
+      { label: 'Physical aptitude', title: 'Agility', detail: 'Lynleit is somewhat more agile and nimble than the average woman.' },
+      { label: 'Immediate danger', title: 'Physical survival', detail: 'She is generally competent at keeping herself alive under imminent physical threat.' }
     ],
     magecraft: [
       { label: 'Hereditary magecraft', title: 'Blue flame', detail: 'Lynleit inherited her family\'s ability to manifest blue flame. It can be directed into many applications, but her control is less subtle than Fionn\'s.' },
@@ -46,7 +50,7 @@ const profileSeeds = [
     beats: ['Arc 0: Formative Years', 'The Heir Apparent', 'The River Secret', 'Cardiff with Father Mikhail', 'Academy Intervention', 'The Accusation', 'Fugitive Counteroffensive', 'The Battle as Reward', 'Doom Has an Address', 'The Bench under the Lamp', 'Protected Absence and Inquiry', 'Seen at the Mission Edge']
   },
   {
-    slug: 'kyrien', name: 'Kyrien', code: 'IND · 002', role: 'Independent operator and later MSF director', ageBand: 'Late twenties', factions: ['Independent', 'MSF'], affiliationTimeline: [{ name: 'Independent', stage: 'Opening' }, { name: 'MSF', stage: 'Later director' }], mbti: { type: 'ISTP / INTJ', detail: 'Ti or Ni; ISTP lean', status: 'Provisional' }, accent: 'amber', materialStatus: 'Canon traits + mock details',
+    slug: 'kyrien', name: 'Kyrien', code: 'IND · 002', role: 'Independent operator and later MSF director', ageBand: 'Late twenties', factions: ['Independent', 'MSF'], affiliationTimeline: [{ name: 'Independent', stage: 'Opening' }, { name: 'MSF', stage: 'Later director' }], mbti: { type: 'ISTP', detail: 'Ti-Se-Ni working model; INTJ alternative', status: 'Suspected' }, accent: 'amber', materialStatus: 'Canon traits + mock details',
     summary: 'A non-Magus who begins as Lynleit\'s secret recruit and later becomes director of MSF.',
     visual: 'A burgundy formal shirt with the collar open and sleeves rolled, dark tailored trousers, dark leather shoes, and a fitted leather jacket.', palette: 'Burgundy, charcoal, black, dark brown leather',
     physical: [
@@ -56,16 +60,17 @@ const profileSeeds = [
       ['Distinguishing features', 'Fair complexion, refined angular features, deep-set expressive eyes, and a composed, slightly aloof gaze with a sharp, elegant edge.']
     ],
     equipment: [{ label: 'Personal field object', title: "Kyrien's whiskey flask", meta: ['Small personal flask', 'Whiskey', 'Consistent pocket'], detail: 'Kyrien reserves a small drink for exceptional danger, exhaustion, distress, or a difficult personal moment. He sometimes calls it medicine. Lynleit learns its usual pocket.', href: 'items.html?item=kyriens-whiskey-flask' }],
-    personalitySummary: 'Kyrien speaks little, rarely smiles, and wants to win. Cards, chess, and a gunfight can all provoke the same stubbornness. He reacts quickly to cheating, sometimes at the expense of the safer objective. He watches people\'s habits closely and asks blunt questions when they change.',
+    personalitySummary: 'Kyrien speaks little, rarely smiles, and wants to win. Cards, chess, and a gunfight can all provoke the same stubbornness. He reacts quickly to cheating, sometimes at the expense of the safer objective. He notices features of his surroundings and developments that others miss, first checking unfamiliar behavior for signs of danger. An explanation that seems wrong keeps working at the back of his mind even when the approach itself succeeds. An overall realization may arrive before he has reconstructed its reasoning, sometimes followed by urgent action. After a mistaken reading, he wants to understand the assumption that distorted it and prevent the same failure.',
     traits: [
-      { label: 'Intelligence tradecraft', score: 97, note: 'He turns surveillance, deception, logistics, human behavior, and escape planning into a substitute for magical perception.' },
-      { label: 'Strategic adaptation', score: 94, note: 'His practical reasoning converts unfamiliar threats into usable procedures, leverage, and decisions that survive contact with reality.' },
+      { label: 'Intelligence tradecraft', score: 97, note: 'He observes details in the environment and in unfolding situations that others overlook. Those observations let him prepare for dangers that are not yet apparent to the people around him.' },
+      { label: 'Strategic adaptation', score: 94, note: 'He turns preparation into immediate tactical action when a threat develops. This makes him a concealed resource for Lynleit when isolation or conspiracy leaves her without her usual support.' },
       { label: 'Survival discipline', score: 92, note: 'He does not try to overpower Magi. He stays difficult to locate, corner, deceive, or kill.' }
     ],
     tradecraft: [
       { label: 'Concealment', title: 'Subterfuge', detail: 'Controls what others can infer about his intent, identity, loyalties, and next movement. He survives by giving opponents a convincing answer that is not the true one.' },
       { label: 'Escape discipline', title: 'Evasion', detail: 'Breaks surveillance, avoids magical attention, plans exits before entry, and refuses confrontations whose terms were chosen by somebody else.' },
       { label: 'Misdirection', title: 'Trickery', detail: 'Uses false patterns, staged weaknesses, timing, and selective truth to make stronger opponents commit to the wrong interpretation.' },
+      { label: 'Physical execution', title: 'Endurance and precision', detail: 'Kyrien combines endurance with precision in his movements and actions.' },
       { label: 'Relative strength', title: 'Obstacle movement', detail: 'His strength is most effective against his own body weight. He may not strike with the greatest force, but he moves quickly through difficult ground, pulls himself over obstacles, and can climb fences or walls when an escape route demands it.' },
       { label: 'Preparedness', title: 'Redundant options', detail: 'Kyrien usually keeps at least two objects available that are weapons or can become weapons. The pair changes with circumstance and may include a knife, keys, a pen, or a pocket pistol. The habit keeps options within reach rather than imposing a fixed loadout.' },
       { label: 'Reciprocal force', title: 'Firearms', detail: 'His father taught him that pointing a weapon creates an obligation. Kyrien keeps the lesson as a personal rule: "You cannot do much in this world without life or death stakes. But if you dare to point a gun at someone, you should be prepared to be shot yourself." He uses firearms to create distance, interrupt an attack, or open an escape route.' },
@@ -164,14 +169,14 @@ const profileSeeds = [
   {
     slug: 'sherie', name: 'Sherie', code: 'FLD · 007', role: 'Diplomat in training and covert negotiator', ageBand: 'Early twenties', factions: ['Government'], mbti: { type: 'ENFJ', detail: 'strong Fe', status: 'Confirmed' }, accent: 'blue', materialStatus: 'Canon traits + mock details',
     summary: 'Drake\'s niece and diplomatic apprentice, Sherie combines his strategic instruction with the charm and quick judgment he cannot easily bring into a room himself.',
-    visual: 'Tailored fieldwear with compact support gear and visible communications equipment', palette: 'Navy, slate, white, emergency blue', traits: ['Charming', 'Quick-minded', 'Politically curious'],
+    visual: 'Tailored fieldwear with compact support gear and visible communications equipment', palette: 'Navy, slate, white, emergency blue', traits: [{ label: 'Social play', note: 'She enjoys teasing and provoking mischief even when nobody needs to be persuaded or impressed. Quietness usually means she feels unwell or uncomfortable.' }, { label: 'Emotional attention', note: 'An unexpected response draws her attention to what changed in the person and in the atmosphere of the whole exchange.' }, { label: 'Persuasive judgment', note: 'A useful agreement reached for the wrong reason feels like a success she cannot safely repeat. She may joke that she failed successfully while reconsidering her understanding of the other person.' }],
     physical: [
       ['Hair', 'Long pale-blonde hair gathered into a high bun, with loose lengths sweeping over one shoulder.'],
       ['Eyes', 'Pale grey-green.'],
       ['Height and build', 'Above-average height, slender and long-legged.'],
       ['Distinguishing features', 'A fine oval face, long lashes, and ornate red-gold drop earrings.']
     ],
-    personalitySummary: 'Sherie reads emotional atmosphere, relationships, and social position quickly. She draws information from people without making the extraction feel like an interrogation, then turns difficult positions into conversations they are willing to continue. With growing familiarity, Felix gives her room to be theatrical, petty, ridiculous, or openly delighted without losing his respect. She learns to recognize the seriousness beneath his jokes.',
+    personalitySummary: 'Sherie enjoys social interaction as play, including when she is off duty. She reads emotional atmosphere, relationships, and social position quickly. When someone responds unexpectedly, she notices the emotional change and reconsiders the situation she thought she understood. She draws information from people without making the extraction feel like an interrogation, then turns difficult positions into conversations they are willing to continue. With growing familiarity, Felix gives her room to be theatrical, petty, ridiculous, or openly delighted without losing his respect. She learns to recognize the seriousness beneath his jokes.',
     connections: [
       { name: 'Felix', relation: 'Growing familiarity', detail: 'They have no meaningful personal relationship at the story\'s opening. Her diplomatic work increasingly overlaps with his duties around Lynleit and MSF. Repeated encounters bring respect, private jokes, and affection. Sherie enjoys directing their exchanges; Felix teases back and complicates her control. His continued fixation on Lynleit can hurt, even as he seeks Sherie\'s company. Her confidence does not spare her disappointment or doubts about whether he sees her clearly.' }
     ],
@@ -199,7 +204,7 @@ const profileSeeds = [
     beats: ['A Coup without a Source', 'The Favorite Boy', 'The Illegal Partnership', 'The Boat below the Bridge']
   },
   {
-    slug: 'felix', name: 'Felix', code: 'ARC · 009', role: 'MSF officer, friend, and personal bodyguard', ageBand: 'Late twenties', factions: ['MSF'], mbti: { type: 'ESFP', detail: 'strong Se-Fi', status: 'Confirmed' }, accent: 'neutral', materialStatus: 'Canon relationship + mock details',
+    slug: 'felix', name: 'Felix', code: 'ARC · 009', role: 'MSF officer, friend, and personal bodyguard', ageBand: 'Late twenties', factions: ['MSF'], mbti: { type: 'ENFP', detail: 'Ne-led reading; Fi tentative', status: 'Suspected' }, accent: 'neutral', materialStatus: 'Canon relationship + mock details',
     summary: 'Lynleit\'s playful friend and bodyguard, trusted by Fionn. Felix handles hacking and communications for the field team.',
     visual: 'Loose fieldwear with a compact communications kit and one bright accent against neutral equipment', palette: 'Grey, black, bright blue, rust orange',
     physical: [
@@ -211,16 +216,18 @@ const profileSeeds = [
     equipment: [
       { label: 'Personal sidearm', title: 'Ren L21 "Rook"', meta: ['9×19 mm', 'Micro-compact', 'Personal finish'], detail: 'Felix owns a compact L21 with brass-colored controls and the Rook\'s intricate slide serrations. He later lends it to Lynleit because her continued reliance on the weaker 9×17 Sparrow concerns him.', href: 'weapons.html#ren-l21-rook' }
     ],
-    personalitySummary: 'Felix is playful, expressive, flirtatious, and quick to improvise. He reacts personally and immediately, then prefers direct relational repair once the conflict has passed. His technical work follows the same oblique pattern, making him the knight to Reiner\'s rook. He enjoys challenging Sherie\'s confident lead as their work brings them together. Beneath the jokes, he grows attached before recognizing the intimate possibility; his thoughts still return to Lynleit.',
+    personalitySummary: 'Felix is playful, expressive, flirtatious, and quick to generate alternatives. He enjoys trying different interpretations even when nothing important is at stake. In danger he is often the first to joke, searching for an interpretation that helps people cope. He may offer that reassurance before he believes it himself while continuing to think the problem through privately. Evidence and personal significance guide what he eventually accepts. He reacts personally and immediately, then prefers direct relational repair once the conflict has passed. His technical work follows the same oblique pattern, making him the knight to Reiner\'s rook. He enjoys challenging Sherie\'s confident lead as their work brings them together. Beneath the jokes, he grows attached before recognizing the intimate possibility; his thoughts still return to Lynleit.',
     connections: [
       { name: 'Sherie', relation: 'Growing familiarity', detail: 'Their connection develops slowly from repeated professional encounters, with no meaningful personal relationship at the opening. Felix enjoys her company, responds to her teasing, and starts seeking her out. Still fixated on Lynleit, he can mistake Sherie\'s interest for practiced charm or an entertaining friendship. She gradually becomes someone around whom he need not always perform. His eventual movement toward her requires recognizing that he wants Sherie herself.' }
     ],
     traits: [
       { label: 'Playful flirt', note: 'He turns tension into teasing, tests reactions openly, and treats charm as both genuine expression and useful disruption.' },
       { label: 'Troublemaker', note: 'Protocol invites experimentation. Felix is the first to lean over a boundary, question an order, or make a formal situation less dignified.' },
-      { label: 'Personal loyalty', note: 'He protects Lynleit as a long-standing friend and is openly suspicious of anyone he thinks may hurt her.' }
+      { label: 'Personal loyalty', note: 'He protects Lynleit as a long-standing friend and is openly suspicious of anyone he thinks may hurt her.' },
+      { label: 'Missed consequences', note: 'If someone he respects points out that his attachment to Lynleit is hurting Sherie, his first response is stunned recognition and surprise that he failed to notice. That realization does not immediately settle his feelings.' }
     ],
     tradecraft: [
+      { label: 'Professional baseline', title: 'Field training', detail: 'His training gives him general physical competence as a field officer, alongside his specialist work in hacking and communications.' },
       { label: 'Technical access', title: 'Hacking', detail: 'Felix uses technical improvisation to reach protected information and infrastructure from unexpected angles.' },
       { label: 'Signal control', title: 'Communications', detail: 'He handles operational communications, signal access, and the movement of information between people who cannot afford a visible connection.' },
       { label: 'Operational geometry', title: 'Knight pattern', detail: 'His value lies in mobility and oblique approach. Felix bypasses the obvious line, changes direction quickly, and appears where a rigid defense did not expect him.' }
