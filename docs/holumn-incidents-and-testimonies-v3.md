@@ -90,7 +90,7 @@ The Drowned Choir and the river leviathan are separate Holumns, not two manifest
 **Known forms:** Embodied and environmental manifestation
 **Primary medium:** The city river, drowned souls, and a humanlike body
 
-A pale girl emerges from the water. Her eyes are sewn shut with fishing line, and her dress is made from dead fish. The souls of people drowned in the river across generations are bound to her. Their submerged hands seize swimmers and pull them downward. The girl does not speak during this encounter.
+A pale girl emerges from the water. Her eyes are sewn shut with fishing line, and her dress is made from dead fish. The souls of people drowned in the river across generations are bound to her. Their submerged hands seize swimmers and pull them downward, and their voices form the choir through which she can speak.
 
 > It felt as though my legs were being grabbed and pulled by someone's hands.
 
@@ -110,7 +110,7 @@ The girl then rises before Lynleit. She remains silent and tilts her head becaus
 Darkness, panic, current, exhaustion, and shared misperception can be used to separate the officers' accounts from the empty boats and missing smugglers. No ordinary report can explain why several trained swimmers independently describe hands pulling at their legs.
 
 **Magi and special envoys**
-An embodied Holumn has enslaved the river's drowned souls and uses their hands to seize victims. Lynleit's blue flame burns the submerged hands. Once the surface supports her, the hands below her cannot reach through it. This encounter does not establish that the hands are unable to cross any part of the river surface, or explain what holds them below her. Neither observation establishes a means of destroying the girl or releasing the dead.
+An embodied Holumn has enslaved the river's drowned souls and uses them as both grasping limbs and a collective voice. Blue flame can injure the submerged hands, and the hands cannot cross the surface layer. Both limits permit escape without establishing a means of destroying the manifestation or releasing the dead.
 
 ## The River That Is Too Deep
 

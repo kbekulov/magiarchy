@@ -8,6 +8,11 @@ Story, character, world, relationship, institution, location, and event question
 
 | Area | Question | Confidence |
 | --- | --- | --- |
+| Natalia and Lynleit | Was Lynleit also Natalia's favourite student, or is the confirmed preference only Lynleit's for Natalia as her teacher? Compare [Natalia's profile](../character.html?character=natalia) and the [Academy Moment](../moments.html?moment=terrors-inside-the-academy). | 0% |
+| River boundary | What permits the first pull from the boat, and what prevents the submerged hands from reaching Lynleit once the water supports her? The [river Chapter](../story.html?chapter=the-empty-boats-beneath-the-bridge) records the actions but does not establish a universal surface rule. | 0% |
+| Drowned Choir | Can the girl or the drowned souls speak outside the silent river encounter? | 0% |
+| Magiarchy framework | Who convenes a replacement process after recognition is withdrawn, how are contested boundaries appealed, and which customs govern disputes between Magiarchates? | 0% |
+| House layout | Where are the library, offices, service rooms, and other bedrooms placed within the Director's House? | 0% |
 | Sleepers: placement | When does Kyrien's solitary river encounter occur, how does it relate to the main plot, and what happens after he continues downstream? | 0% |
 | Sleepers: identity and visibility | Are the suspended figures human, dead, asleep, or connected to missing people; who can see them, and does the river matter to their appearance? | 0% |
 | Sleepers: omen | What situation, if any, do they foreshadow; does the omen concern Kyrien, groups, or cities; do they cause it, and can it be escaped? | 0% |
@@ -40,6 +45,7 @@ Story, character, world, relationship, institution, location, and event question
 | Sherie and Felix | When does Sherie first feel unseen, what boundary does she set, and how does Felix respond? | 0% |
 | Sherie and Felix | Which moments let one stop performing and receive care from the other, and when do they consciously choose intimacy? | 0% |
 | Items & Artefacts | What does "hide of leviathan" mean, and is the material connected to the river phenomenon recorded as HI-004? | 0% |
+| Family | When and how does Kyrien learn that Lynleit bore his son, and where does that revelation belong in relation to Lynleit's elusive return and his leadership of MSF? | 0% |
 | Helena | Is Helena a Magus, and how does she gain access to supernatural institutions? | 5% |
 | Spill inquiry | Whom does Lynleit consult about the Spill, and what does each person know? | 5% |
 | Relationship | Which clash between Felix and Kyrien has lasting consequences, and does Felix's opinion of him change? | 5% |
@@ -65,6 +71,7 @@ Story, character, world, relationship, institution, location, and event question
 | Security | Which ordinary habits, complaints, chores, meals, and relationships keep the Director's House a family home while existential MSF work occurs inside it? | 10% |
 | MSF | Which officers learn that magic exists, what remains compartmentalized, and how does hidden knowledge become a second rank system inside the smaller post-Spill agency? | 10% |
 | MSF | What action can the government take against a defiant MSF when mutual dependence means the company cannot safely rebel and the state cannot safely destroy it? | 10% |
+| Timeline | How much time passes between the first disappearance, the park quarantine, Kyrien's early recruitment, Fionn's much later assassination, Helena's takeover, and the hunt for Lynleit's arrest? | 10% |
 | The Church | What narrow authority would allow Father Mikhail to be sent back to clean up Lynleit's witness breach, and what does that authority permit him to do? | 15% |
 | Park encounter | What work precedes the walk, and what precautions permit the pause in a still-dangerous park? | 15% |
 | Opening chapter | What are Fionn and Lynleit negotiating before dawn, and why does Lynleit leave irritated? | 15% |
@@ -81,15 +88,19 @@ Story, character, world, relationship, institution, location, and event question
 | Parallel side stories | How many Chapters belong to the Cardiff venture and Academy crisis, and where should their concurrent events alternate inside Divided Attention? | 20% |
 | MSF operations | Beyond the river operation, which assignments require Felix's technical work and Reiner's physical intervention together? | 20% |
 | MSF | What formal agreement makes a still-private MSF partly accountable to the Magiarchy and Church after Mikhail discovers the witness breach? | 20% |
+| Succession | When does Lynleit formally inherit the Magiarchate after Fionn's death, and how does that transfer of responsibility overlap with Kyrien assuming MSF's director seat? | 20% |
+| Myka | Does Myka join MSF after Lynleit's disappearance and Kyrien's assumption of the director's office, and does Kyrien recruit her personally? | 20% |
 | Government | What exact jurisdiction gives the confirmed Council of State authority when ordinary constitutional sovereignty collides with hidden supernatural sovereignty? | 25% |
 | Lynleit | Does Fionn die from the fall below the Vilen family house, from an earlier attack, or from a staged combination, and who first reaches his body? | 25% |
 | Helena | What does Fionn withhold from Helena, and how does that exclusion affect her involvement in the plot? | 25% |
 | Kyrien: reasoning | What does he actually do to test the assumption that caused a mistaken realization? | 25% |
+| Timeline | Exactly how many years pass between Lynleit's disappearance and return, and how old is her and Kyrien's son when she reappears? | 25% |
 | Items & Artefacts | How does Lynleit discover midway through Arc 1 that Fionn replaced her coat, and what evidence establishes that he arranged the substitution before his death? | 30% |
 | Boat operation | What changes in the river after the failed infiltration, and what evidence of the encounter remains? | 30% |
 | Resolution | What human victory ends Helena's control and settles the political crisis while leaving the supernatural wound of the Spill open? | 30% |
 | Fugitive network | Does Felix or Reiner answer the hunted Lynleit first, and what help can he safely give her? | 30% |
 | MSF | What rule permits Kyrien to inherit MSF, why was it created, and what limits does it place on him? | 30% |
+| Items & Artefacts | When does Fionn replace Lynleit's coat relative to the river operation, and how long after his death passes before her confirmed mid-Arc 1 discovery? | 30% |
 | The Church | How are suppression measures selected and sanctioned, and where do the Church and Magiarchy disagree about their use? | 35% |
 | Magiarchy | What rules govern fitness contests, duels, and sanctioned wars, and who recognizes the result? | 35% |
 | Natalia | What research did Natalia find too constrained at the Academy, and which former colleagues or students remain involved? | 35% |
@@ -97,17 +108,11 @@ Story, character, world, relationship, institution, location, and event question
 | MSF | What event makes the old officers act together against Helena? | 35% |
 | Magiarchy | Who convenes a new selection after Church recognition is withdrawn, and how are rival claims handled? | 35% |
 | MSF | Which private contract first conflicts with Narvea's interests and exposes why MSF's confirmed freedom to accept non-government clients is dangerous? | 35% |
+| House chronology | How old was Lynleit when she made the third-floor room a condition of moving from Turon to Vilen, and when did the Vilen house become a residential MSF node? | 35% |
+| Fugitive campaign | How much time passes between the hotel-room refuge, Kyrien's first secure contact with Felix and Reiner, Lynleit's first foothold inside MSF, and Helena's eventual loss of control? | 35% |
 | Helena | Which door does Helena knowingly open against Fionn, what outcome does she expect, and what enters the conspiracy beyond her knowledge or control? | 40% |
 | Academy operation | What cover, access, and objective allow Kyrien to work undercover inside the Magi Academy, and which secure communications route connects him with Felix and Reiner? | 40% |
-| Core mystery | Who is the first missing man, how does he independently cause the Spill, and which faction first recognizes and exploits the resulting crisis? | 45% |
-| Core mystery | Which incompatible agendas intend which outcomes around Fionn, and how do they accidentally cooperate to cause a death that none completely controls? | 45% |
-| Park trespass | How do Hiyu and Yulia bypass the cordon, what price do they pay to survive, and what evidence proves their experience while making their testimony harder to believe? | 45% |
-| Hotel refuge | What does Kyrien witness when Lynleit breaks down at the hotel, and what changes between them by morning? | 45% |
-| Kyrien | What are the protected politician's name and office, what incomplete truth connects them to Kyrien's father, what exact physical sequence unfolds during the failed attempt, and how does the survivor later retaliate against Lynleit? | 50% |
-| Character typing | Does the author confirm Lynleit's INFJ and Felix's ENFP working readings, and what further behavior settles Felix's judging function and Kyrien's ISTP versus INTJ uncertainty? | 50% |
-| Boat operation | Does the submerged blue flame leave a lasting injury on the Drowned Choir, and what does the girl's refusal to pursue Lynleit reveal about its limits? | 65% |
-| Character appearance | What exact heights belong to the illustrated cast, and which artwork-derived hair, eye, build, or distinguishing details require correction? | 70% |
-| Covert alliance | Beyond the confirmed river-surveillance operation, what does Lynleit refuse to provide Drake and Sherie, and what concessions or favors do they offer in return? | 70% |
+| Nameless Street | Exactly how many days separate Lynleit's encounter from Fionn's death, and which intervening scene allows the memory to recede before it returns? | 40% |
 
 ## Chronology questions
 
@@ -115,14 +120,14 @@ These questions determine sequence, event placement, reveal timing, or elapsed t
 
 | Area | Question | Confidence |
 | --- | --- | --- |
-| Family | When and how does Kyrien learn that Lynleit bore his son, and where does that revelation belong in relation to Lynleit's elusive return and his leadership of MSF? | 0% |
-| Timeline | How much time passes between the first disappearance, the park quarantine, Kyrien's early recruitment, Fionn's much later assassination, Helena's takeover, and the hunt for Lynleit's arrest? | 10% |
-| Succession | When does Lynleit formally inherit the Magiarchate after Fionn's death, and how does that transfer of responsibility overlap with Kyrien assuming MSF's director seat? | 20% |
-| Myka | Does Myka join MSF after Lynleit's disappearance and Kyrien's assumption of the director's office, and does Kyrien recruit her personally? | 20% |
-| Timeline | Exactly how many years pass between Lynleit's disappearance and return, and how old is her and Kyrien's son when she reappears? | 25% |
-| Items & Artefacts | When does Fionn replace Lynleit's coat relative to the river operation, and how long after his death passes before her confirmed mid-Arc 1 discovery? | 30% |
-| House chronology | How old was Lynleit when she made the third-floor room a condition of moving from Turon to Vilen, and when did the Vilen house become a residential MSF node? | 35% |
-| Fugitive campaign | How much time passes between the hotel-room refuge, Kyrien's first secure contact with Felix and Reiner, Lynleit's first foothold inside MSF, and Helena's eventual loss of control? | 35% |
-| Nameless Street | Exactly how many days separate Lynleit's encounter from Fionn's death, and which intervening scene allows the memory to recede before it returns? | 40% |
+| Core mystery | Who is the first missing man, how does he independently cause the Spill, and which faction first recognizes and exploits the resulting crisis? | 45% |
+| Core mystery | Which incompatible agendas intend which outcomes around Fionn, and how do they accidentally cooperate to cause a death that none completely controls? | 45% |
+| Park trespass | How do Hiyu and Yulia bypass the cordon, what price do they pay to survive, and what evidence proves their experience while making their testimony harder to believe? | 45% |
+| Hotel refuge | What does Kyrien witness when Lynleit breaks down at the hotel, and what changes between them by morning? | 45% |
+| Kyrien | What are the protected politician's name and office, what incomplete truth connects them to Kyrien's father, what exact physical sequence unfolds during the failed attempt, and how does the survivor later retaliate against Lynleit? | 50% |
+| Character typing | Does the author confirm Lynleit's INFJ and Felix's ENFP working readings, and what further behavior settles Felix's judging function and Kyrien's ISTP versus INTJ uncertainty? | 50% |
 | Relationship | At what point in the opening chapters does Lynleit reveal Kyrien's recruitment to Felix and Reiner, where does the disclosure occur, and how much time remains before Fionn's assassination? | 60% |
+| Boat operation | Does the submerged blue flame leave a lasting injury on the Drowned Choir, and what does the girl's refusal to pursue Lynleit reveal about its limits? | 65% |
+| Character appearance | What exact heights belong to the illustrated cast, and which artwork-derived hair, eye, build, or distinguishing details require correction? | 70% |
+| Covert alliance | Beyond the confirmed river-surveillance operation, what does Lynleit refuse to provide Drake and Sherie, and what concessions or favors do they offer in return? | 70% |
 | Relationship | Which later encounter results in the conception of Lynleit and Kyrien's son, what evidence makes the pregnancy inferable at the opening of Arc 2, and how much time separates Doom Has an Address, their later encounters, pregnancy, and disappearance? | 75% |

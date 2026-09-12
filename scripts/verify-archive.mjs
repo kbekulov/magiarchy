@@ -2,6 +2,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import vm from 'node:vm';
 import assert from 'node:assert/strict';
+import { documentSearchUrl } from './search-urls.mjs';
 import { fileURLToPath } from 'node:url';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
@@ -244,5 +245,25 @@ for (const [, attributes, content] of audioPlayers) {
   }
 }
 assert.ok(entries.some(entry => entry.url.includes('music.html') && entry.text.includes('Theme 1 (stem)')), 'Music: track missing from search');
+
+// Approved consistency boundaries, not invented metaphysical rules or score targets.
+assert.ok(read('docs/world-foundation.md').includes('not in a discoverable transformation'), 'Lester: foundation reopened an ordinary transformation');
+assert.ok(!read('docs/world-foundation.md').includes('whether he was born this way'), 'Lester: stale origin possibilities');
+const choir = json('holumns/index.json').incidents.find(record => record.id === 'HI-003');
+assert.ok(choir.knownWeakness.includes('beneath her') && choir.knownWeakness.includes('not a proven restriction'), 'River observation expanded into a universal rule');
+assert.ok(!choir.hiddenReading.includes('speak through'), 'Unestablished Choir voice returned');
+assert.equal(json('items/index.json').items.find(i => i.slug === 'kyriens-whiskey-flask').chronology[0].arc, 'Unplaced', 'Flask origin assigned an unsupported Arc');
+assert.equal(phaseContext.window.MAGIARCHY_STORY_PHASES.find(p => p.id === 'late-arc-one').placement, 'approximate');
+for (const chapter of chapters) {
+  for (const version of versions(chapter)) {
+    assert.ok(['outline', 'scene', 'writer-gap'].includes(version.contentKind), `${chapter.slug}/${version.id}: missing content kind`);
+    if (/\[WRITER:/.test(read(`story/${version.file}`))) assert.equal(version.contentKind, 'writer-gap');
+  }
+}
+assert.equal(documentSearchUrl({ slug: 'test', versions: [{ id: 'v1' }], versionId: 'v1' }), 'docs.html?doc=test&version=v1', 'Explicit single-version document lost its version URL');
+assert.equal(documentSearchUrl({ slug: 'test', versionId: 'v1' }), 'docs.html?doc=test');
+assert.ok(entries.some(e => e.recordId === 'doc-reader-knowledge' && e.current), 'Current reader knowledge record missing from search');
+assert.ok(read('story/after-the-failed-attempt-v2.md').includes('transfer clause'), 'Interrogation authority missing');
+assert.equal((read('story/after-the-failed-attempt-v2.md').match(/Lynleit enters the interrogation/g) || []).length, 1);
 
 console.log(`Verified ${profiles.length} profiles, ${chapters.length} Chapters, ${moments.length} Moments, ${checkedAnchors} paragraph anchors, version isolation, music assets, and search coverage.`);

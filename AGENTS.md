@@ -1,6 +1,8 @@
 # Project instructions
 
 - Read `ARCHIVE_MAINTENANCE.md` before changing archive content or structure. Treat it as the concise source-and-surface map for mandatory follow-up work. When a new recurring workflow, record type, audit boundary, interlinking rule, or design invariant is introduced, update that charter in the same commit. `AGENTS.md` remains controlling if the two files conflict.
+- Keep `docs/reader-knowledge.md` synchronized when a major secret or reveal changes. Separate event period, reader knowledge, and character knowledge; an archive explanation is not automatically known inside the story. Chapter `contentKind` distinguishes outlines, scene drafts, and writer gaps. Outlines and their linked Moments use neutral recorded facts, and omitted prose is not reader evidence.
+- Display approximate Story strands outside numbered chronological tracks while preserving their known Arc and stable phase links. Do not assign an unknown origin to a life period merely to fill a timeline.
 - This project is deployed with GitHub Pages at `https://magiarchy.bekulov.com`.
 - Build and test the project for GitHub Pages. Do not use the Codex Sites extension for hosting or deployment.
 - Preserve the root `CNAME` file with the custom domain `magiarchy.bekulov.com`.

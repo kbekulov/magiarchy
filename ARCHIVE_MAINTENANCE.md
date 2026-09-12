@@ -198,7 +198,7 @@ The playable card banner is the primary play/pause button, operable by pointer, 
 
 - The design is dark, flat, compact, and original to MAGIARCHY.
 - Gradients are never allowed. Use solid fills, borders, opacity, spacing, and layered panels.
-- Entity links look like ordinary prose until hover or keyboard focus.
+- Entity links retain ordinary prose color and no underline in every state, including hover, visited links, and Markdown tables. Keyboard focus retains a visible outline.
 - Interfaces must work with mouse, keyboard, and touch, with restrained motion and reduced-motion support.
 - Filter bars with labeled fields keep a visible label on every field, consistent control heights, and bottom-aligned field groups so label wrapping cannot stagger controls within a row. Verify desktop, intermediate two-column, and stacked mobile layouts; do not compensate with browser-specific offsets.
 - In Chapter reader mode, the main pane contains the timeline's top margin even when the feed header and catalog heading are hidden. Do not let the first visible child's margin collapse outside the page background; verify the gap on mobile as well as desktop.
@@ -228,6 +228,17 @@ Holumn taking and return are Holumn-specific states, not a universal destination
 
 ## Character evidence and physical competence
 
-The dated report `docs/archive-audit-2026-09-12.md` records approval-pending findings, not accepted changes to canon or design. Its R01-R24 actions must not be treated as implementation instructions until the author approves them. Audit reports follow normal Docs registration and versioning; keep their scope, evidence, unresolved decisions, and approval status explicit.
+The author approved bounded consistency, prose, reading, UI, and test cleanup from `docs/archive-audit-2026-09-12.md` on 12 September 2026. V2 records implemented scope and held author decisions; v1 preserves the original unapproved findings. This is not blanket approval of R01-R24, new scenes, chronology, powers, graph values, or a spoiler-default change. Audit reports follow normal Docs registration and versioning.
 
 `docs/character-cognition-and-physical-competence.md` owns the author’s 12 September behavioral answers and the separate working type interpretations. Keep confirmed behavior in profile Personality or relevant Tradecraft; put physical skill in capability sections, not Appearance. Update current behavior-note bases and affected tension records when interpretation changes, with immutable document and JSON snapshots. Historical Chapter-version guidance retains its original context. Do not derive reflexes, endurance, training, or numerical graph scores from MBTI function order. Hypothetical answers describe a response pattern, not an event to place on a timeline. New type readings remain suspected until the author confirms them; proposed physical explanations remain advisory.
+
+## Reader evidence and shared controls
+
+- `docs/reader-knowledge.md` owns the compact separation of event period, reader revelation, and character knowledge for major secrets. Update it when a relevant Chapter, Moment, or author decision changes that separation; leave unchosen timings open. A public reference can expose a fact before the novel does.
+- Chapter `contentKind` is `outline`, `scene`, or `writer-gap` in `story/index.json`, including version overrides. It describes the delivered text, not its canonicity. Chapter filters and linked Moment reader keys follow the selected version. A writer gap is not evidence of its omitted action.
+- `story-phases.js` owns approximate placement metadata and separates approximate strands from numbered tracks in Story, Moments, and applicable personal timelines. Keep stable phase IDs and use `placement: approximate`; do not assign an unknown origin an Arc or number.
+- `script.js` owns the shared On this page selector and optional reader timeline collapse. Catalog timelines and reader timelines remain expanded by default; preserve breadcrumbs, version queries, keyboard focus, and the visible active phase in the expanded view. No permanent left sidebar or new spoiler default.
+- The HTML `hidden` state must override component display rules. Filters, reader switching, and collapsed panels must hide the content itself, not merely change a count. Keep relationship-map position changes immediate under reduced motion and calculate coordinates inside the stage border so keyboard movement does not drift.
+- `character.js` owns the compact visible artwork-era badge as well as the accessible status. Keep thumbnails, image-half taps, swipes, and drags; no arrow controls or counter overlay.
+- Gallery location options derive from registered image metadata. Music playable-only filtering is optional, URL-addressable, and off by default; categories retain the shared archive toolbar.
+- `church.html#suppression-doctrine-title` owns the full suppression response list. Other records use a short contextual account and link back. `world.html` supplies a concise term entry point with owning links rather than another competing ontology.

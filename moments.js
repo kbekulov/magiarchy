@@ -79,11 +79,11 @@ function momentVersions(entry) {
   if (Array.isArray(entry.versions) && entry.versions.length) {
     return entry.versions.map((version, index) => ({
       id: version.id || `v${index + 1}`,
-      label: version.label || `Version ${index + 1}`,
+      label: version.label || `v${index + 1}`,
       ...version
     }));
   }
-  return [{ id: 'v1', label: 'Version 1' }];
+  return [{ id: 'v1', label: 'v1' }];
 }
 
 function resolveMomentVersion(entry, requestedVersion) {
@@ -106,7 +106,8 @@ function renderMomentVersionSwitcher(entry, selected) {
   if (!momentVersionSwitcher || !momentVersionOptions || !momentVersionCurrent) return;
   const versions = momentVersions(entry);
   momentVersionSwitcher.hidden = versions.length < 2;
-  momentVersionCurrent.textContent = `${selected.versionId}${selected.versionId === entry.defaultVersion ? ' · Canon' : ''}`;
+  const status = /canon/i.test(selected.status) ? 'Canon' : 'Current';
+  momentVersionCurrent.textContent = `${selected.versionId}${selected.versionId === entry.defaultVersion ? ` · ${status}` : ''}`;
   window.renderVersionNavigation(momentVersionOptions, versions, selected.versionId,
     id => `moments.html?moment=${encodeURIComponent(entry.slug)}&version=${encodeURIComponent(id)}`, entry.defaultVersion);
 }
@@ -134,6 +135,7 @@ function renderMomentPhaseTrack(entries) {
     const item = momentElement('li');
     item.dataset.momentPhase = phase.id;
     item.dataset.storyArc = phase.arc;
+    if (phase.placement) item.dataset.timelinePlacement = phase.placement;
     const button = momentElement('button');
     button.type = 'button';
     button.dataset.phase = phase.id;
@@ -252,7 +254,7 @@ function renderMomentCatalog(entries) {
   [momentSearch, momentPhaseFilter, momentCharacterFilter, momentTypeFilter].forEach((control) => {
     control.addEventListener(control === momentSearch ? 'input' : 'change', applyMomentFilters);
   });
-  momentPhaseTrack.addEventListener('click', (event) => {
+  momentPhaseTrack.closest('.moment-phase-map').addEventListener('click', (event) => {
     if (event.defaultPrevented) return;
     const button = event.target.closest('button[data-phase]');
     if (!button) return;
@@ -305,7 +307,15 @@ async function renderMomentReader(entry, entries, requestedVersion) {
   document.querySelector('#moment-before').textContent = selected.continuityBefore;
   document.querySelector('#moment-purpose').textContent = selected.purpose;
   document.querySelector('#moment-after').textContent = selected.continuityAfter;
-  const hasScene = Boolean(selected.chapterSlug || selected.prose?.length);
+  let hasScene = Boolean(selected.prose?.length);
+  if (selected.chapterSlug) {
+    const response = await fetch('story/index.json');
+    if (!response.ok) throw new Error('Chapter evidence could not be loaded');
+    const chapters = await response.json();
+    const chapter = chapters.find(candidate => candidate.slug === selected.chapterSlug);
+    const version = chapter?.versions?.find(v => v.id === (selected.chapterVersion || chapter.defaultVersion));
+    hasScene ||= Boolean(chapter && (version?.contentKind || chapter.contentKind) !== 'outline');
+  }
   const factPanel = document.querySelector('.moment-fact-panel');
   factPanel.querySelector('.eyebrow').textContent = hasScene ? 'Reader knowledge' : 'Scene outline';
   document.querySelector('#moment-known-title').textContent = hasScene ? 'What the scene shows' : 'Recorded scene facts';
@@ -336,10 +346,11 @@ async function renderMomentReader(entry, entries, requestedVersion) {
   ];
   if (selected.chapterSlug) {
     const chapterVersion = selected.chapterVersion ? `&version=${encodeURIComponent(selected.chapterVersion)}` : '';
-    connections.push(createConnectionCard('Chapter', `Assigned chapter · ${selected.versionId}`, 'Open the corresponding version of the chapter containing this Moment.', `story.html?chapter=${encodeURIComponent(selected.chapterSlug)}${chapterVersion}`));
+    connections.push(createConnectionCard('Chapter', `Assigned chapter${selected.chapterVersion ? ` · ${selected.chapterVersion}` : ''}`, 'Open the corresponding version of the chapter containing this Moment.', `story.html?chapter=${encodeURIComponent(selected.chapterSlug)}${chapterVersion}`));
   }
   else connections.push(createConnectionCard('Chapter', 'Not assigned yet', 'This scene can remain stable while the chapter around it is still unwritten.'));
   document.querySelector('#moment-connection-grid').replaceChildren(...connections);
+  window.addReaderSections(momentReader);
 
   if (window.MAGIARCHY_BEHAVIOR_NOTES) {
     try {

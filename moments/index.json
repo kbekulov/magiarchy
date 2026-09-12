@@ -141,7 +141,150 @@
     "continuityBefore": "Kyrien's father's death, the politician's involvement, the MSF protection assignment, and the military knowledge behind the attempt still need connective scenes.",
     "continuityAfter": "Kyrien enters Lynleit's service unwillingly without knowing that the handler controlling his case was nearly harmed by his attack. Lynleit must later decide who, if anyone, can be trusted with the recruitment. The arrangement preserves him as hidden leverage against Helena through the early investigation. Fionn's much later assassination vindicates Lynleit's warning without proving that she understood its source.",
     "chapterSlug": "after-the-failed-attempt",
-    "updated": "2026-09-05"
+    "updated": "2026-09-12",
+    "defaultVersion": "v2",
+    "versions": [
+      {
+        "title": "After the Failed Attempt",
+        "status": "Scene seed",
+        "placementStatus": "Early chronology confirmed",
+        "timelinePhase": "the-hidden-wager",
+        "timelineLabel": "The Hidden Wager",
+        "sequence": 1,
+        "sceneType": "Confrontation",
+        "thread": "Lynleit and Kyrien",
+        "location": "Police office",
+        "summary": "Lynleit interrogates Kyrien after his failed attempt against an MSF-protected Magus politician nearly harms her, then converts his prison risk into a secret recruitment without telling him she was present.",
+        "purpose": "Lynleit recruits Kyrien under threat of imprisonment without revealing that his attack nearly harmed her.",
+        "characters": [
+          {
+            "name": "Lynleit",
+            "slug": "lynleit"
+          },
+          {
+            "name": "Kyrien",
+            "slug": "kyrien"
+          }
+        ],
+        "characterAnchors": [
+          {
+            "slug": "lynleit",
+            "beat": "The Heir Apparent"
+          },
+          {
+            "slug": "kyrien",
+            "beat": "Outside the System"
+          }
+        ],
+        "known": [
+          "Kyrien has made a failed attempt to assassinate a politician who belongs to the Magi world.",
+          "The politician is under MSF protection when Kyrien makes the attempt.",
+          "Lynleit is present and is almost harmed unintentionally during the failed attack.",
+          "Lynleit knows Kyrien nearly harmed her, but Kyrien does not know she was present.",
+          "Lynleit never tells Kyrien that his attempt placed her in danger.",
+          "The immediate aftermath brings him into a police office.",
+          "Lynleit conducts the interrogation.",
+          "Lynleit invokes an extraordinary transfer clause in MSF's government service contract, drafted under Fionn for extraordinary threats.",
+          "The transfer gives her control of Kyrien's case, and she does not disclose the secret recruitment to Fionn.",
+          "Kyrien faces prison unless he agrees to become Lynleit's secret helper.",
+          "His freedom remains conditional on accepting Lynleit's demands, leaving him confined to her whims.",
+          "Lynleit's private strategy is to keep Kyrien as a secret trump card against Helena.",
+          "The recruitment occurs within the first few chapters, well before Fionn's assassination.",
+          "Lynleit acts because her intuition warns her of near-future danger before she has enough evidence to define it.",
+          "Lynleit is Fionn's biological daughter. Helena is Lynleit's stepmother and Fionn's wife.",
+          "Lynleit already suspects Helena of being an enemy despite that family relationship.",
+          "Kyrien's father held an important position in Narvea's military.",
+          "The targeted politician was involved in causing his father's death.",
+          "Kyrien obtained the knowledge and tools for the attempt through his father's military background.",
+          "The attempt fails solely because the politician belongs to the Magi world.",
+          "The politician's survival later creates consequences for Lynleit.",
+          "Lynleit notices Helena probing Fionn's schedules, visitors to the family house, trusted officers, and Lynleit's own travel.",
+          "Lynleit suspects murder because Helena appears to be studying the family too carefully."
+        ],
+        "openQuestions": [
+          "What is the politician's name, office, and exact role in Kyrien's father's death?",
+          "How does the surviving politician later retaliate against Lynleit?",
+          "What initial cover story conceals Kyrien's release and unofficial MSF association?"
+        ],
+        "continuityBefore": "Kyrien's father's death, the politician's involvement, the MSF protection assignment, and the military knowledge behind the attempt still need connective scenes.",
+        "continuityAfter": "Kyrien enters Lynleit's service unwillingly without knowing that the handler controlling his case was nearly harmed by his attack. Lynleit must later decide who, if anyone, can be trusted with the recruitment. The arrangement preserves him as hidden leverage against Helena through the early investigation. Fionn's much later assassination vindicates Lynleit's warning without proving that she understood its source.",
+        "chapterSlug": "after-the-failed-attempt",
+        "updated": "2026-09-05",
+        "id": "v1",
+        "label": "v1 · Archived",
+        "chapterVersion": "v1"
+      },
+      {
+        "title": "After the Failed Attempt",
+        "status": "Scene seed",
+        "placementStatus": "Early chronology confirmed",
+        "timelinePhase": "the-hidden-wager",
+        "timelineLabel": "The Hidden Wager",
+        "sequence": 1,
+        "sceneType": "Confrontation",
+        "thread": "Lynleit and Kyrien",
+        "location": "Police office",
+        "summary": "Lynleit interrogates Kyrien after his failed attempt against an MSF-protected Magus politician nearly harms her, then converts his prison risk into a secret recruitment without telling him she was present.",
+        "purpose": "Lynleit recruits Kyrien under threat of imprisonment without revealing that his attack nearly harmed her.",
+        "characters": [
+          {
+            "name": "Lynleit",
+            "slug": "lynleit"
+          },
+          {
+            "name": "Kyrien",
+            "slug": "kyrien"
+          }
+        ],
+        "characterAnchors": [
+          {
+            "slug": "lynleit",
+            "beat": "The Heir Apparent"
+          },
+          {
+            "slug": "kyrien",
+            "beat": "Outside the System"
+          }
+        ],
+        "known": [
+          "Kyrien has made a failed attempt to assassinate a politician who belongs to the Magi world.",
+          "The politician is under MSF protection when Kyrien makes the attempt.",
+          "Lynleit is present and is almost harmed unintentionally during the failed attack.",
+          "Lynleit knows Kyrien nearly harmed her, but Kyrien does not know she was present.",
+          "Lynleit never tells Kyrien that his attempt placed her in danger.",
+          "The immediate aftermath brings him into a police office.",
+          "Lynleit conducts the interrogation.",
+          "Lynleit invokes an extraordinary transfer clause in MSF's government service contract, drafted under Fionn for extraordinary threats.",
+          "The transfer gives her control of Kyrien's case, and she does not disclose the secret recruitment to Fionn.",
+          "Kyrien faces prison unless he agrees to become Lynleit's secret helper.",
+          "His freedom remains conditional on accepting Lynleit's demands, leaving him confined to her whims.",
+          "Lynleit's private strategy is to keep Kyrien as a secret trump card against Helena.",
+          "The recruitment occurs within the first few chapters, well before Fionn's assassination.",
+          "Lynleit acts because her intuition warns her of near-future danger before she has enough evidence to define it.",
+          "Lynleit is Fionn's biological daughter. Helena is Lynleit's stepmother and Fionn's wife.",
+          "Lynleit already suspects Helena of being an enemy despite that family relationship.",
+          "Kyrien's father held an important position in Narvea's military.",
+          "The targeted politician was involved in causing his father's death.",
+          "Kyrien obtained the knowledge and tools for the attempt through his father's military background.",
+          "The attempt fails solely because the politician belongs to the Magi world.",
+          "The politician's survival later creates consequences for Lynleit.",
+          "Lynleit notices Helena probing Fionn's schedules, visitors to the family house, trusted officers, and Lynleit's own travel.",
+          "Lynleit suspects murder because Helena appears to be studying the family too carefully."
+        ],
+        "openQuestions": [
+          "What is the politician's name, office, and exact role in Kyrien's father's death?",
+          "How does the surviving politician later retaliate against Lynleit?",
+          "What initial cover story conceals Kyrien's release and unofficial MSF association?"
+        ],
+        "continuityBefore": "Kyrien's father's death, the politician's involvement, the MSF protection assignment, and the military knowledge behind the attempt still need connective scenes.",
+        "continuityAfter": "Kyrien enters Lynleit's service unwillingly without knowing that the handler controlling his case was nearly harmed by his attack. Lynleit must later decide who, if anyone, can be trusted with the recruitment. The arrangement preserves him as hidden leverage against Helena through the early investigation. Fionn's much later assassination vindicates Lynleit's warning without proving that she understood its source.",
+        "chapterSlug": "after-the-failed-attempt",
+        "updated": "2026-09-12",
+        "id": "v2",
+        "label": "v2 · Current",
+        "chapterVersion": "v2"
+      }
+    ]
   },
   {
     "slug": "the-secret-third-ally",
@@ -216,7 +359,162 @@
     "continuityBefore": "Lynleit has already coerced Kyrien into service after the failed assassination attempt, but the arrangement initially exists only between handler and asset.",
     "continuityAfter": "Reiner becomes the stabilizing vote that permits the compartment to continue. Felix complies without trust, creating recurring friction with Kyrien and forcing Lynleit to defend the judgment on which the entire imbalance depends.",
     "chapterSlug": "after-the-failed-attempt",
-    "updated": "2026-09-05"
+    "updated": "2026-09-12",
+    "defaultVersion": "v2",
+    "versions": [
+      {
+        "title": "The Secret Third Ally",
+        "status": "Scene chain",
+        "placementStatus": "Early chronology confirmed",
+        "timelinePhase": "the-hidden-wager",
+        "timelineLabel": "The Hidden Wager",
+        "sequence": 1.5,
+        "sceneType": "Trust test",
+        "thread": "Lynleit's hidden circle",
+        "location": "Unspecified location",
+        "summary": "Lynleit eventually tells only Felix and Reiner that she has recruited Kyrien as an unknown ally and possible trump card against Helena, keeping the decision hidden even from Fionn.",
+        "purpose": "Reiner accepts Lynleit's decision; Felix remains opposed. Fionn is not told.",
+        "characters": [
+          {
+            "name": "Lynleit",
+            "slug": "lynleit"
+          },
+          {
+            "name": "Kyrien",
+            "slug": "kyrien"
+          },
+          {
+            "name": "Felix",
+            "slug": "felix"
+          },
+          {
+            "name": "Reiner",
+            "slug": "reiner"
+          }
+        ],
+        "characterAnchors": [
+          {
+            "slug": "lynleit",
+            "beat": "The Heir Apparent"
+          },
+          {
+            "slug": "kyrien",
+            "beat": "Alliance under Pressure"
+          },
+          {
+            "slug": "felix",
+            "beat": "The Secret Third Ally"
+          },
+          {
+            "slug": "reiner",
+            "beat": "The Anti-Protocol Compartment"
+          }
+        ],
+        "known": [
+          "Helena knows everyone already inside Lynleit's circle, so an unknown ally creates a favorable information imbalance.",
+          "Felix and Reiner are already Lynleit's close, long-standing friends before the story begins, not subordinates who become her friends during this crisis.",
+          "Lynleit eventually confines Kyrien's recruitment to Felix and Reiner and does not inform even Fionn.",
+          "This is Lynleit's first deeply anti-protocol MSF decision, made with strong intuitive conviction.",
+          "Fionn's assassination is still far ahead when the compartment is created.",
+          "The later assassination validates Lynleit's sense of approaching danger, although it does not prove she foresaw the event itself.",
+          "Felix and Reiner both regard Kyrien as a possible threat to Lynleit, especially when neither bodyguard is near her.",
+          "Reiner accepts the arrangement because he chooses to trust Lynleit's judgment.",
+          "Felix accepts only after Reiner's decision leaves him in the minority.",
+          "Felix never fully learns to trust Kyrien and later clashes with him repeatedly.",
+          "Lynleit reprimands Felix when those clashes interfere with her decision or the arrangement around Kyrien."
+        ],
+        "openQuestions": [
+          "Where and when does Lynleit disclose the compartment to Felix and Reiner?",
+          "What evidence or argument does Lynleit use to justify trusting Kyrien?",
+          "What continuing cover story protects the compartment from Fionn, Helena, the police, and the wider MSF?",
+          "Which clash between Felix and Kyrien produces the most serious consequence for Lynleit or an operation?",
+          "What would Fionn do if he learned Lynleit had hidden Kyrien from him?"
+        ],
+        "continuityBefore": "Lynleit has already coerced Kyrien into service after the failed assassination attempt, but the arrangement initially exists only between handler and asset.",
+        "continuityAfter": "Reiner becomes the stabilizing vote that permits the compartment to continue. Felix complies without trust, creating recurring friction with Kyrien and forcing Lynleit to defend the judgment on which the entire imbalance depends.",
+        "chapterSlug": "after-the-failed-attempt",
+        "updated": "2026-09-05",
+        "id": "v1",
+        "label": "v1 · Archived",
+        "chapterVersion": "v1"
+      },
+      {
+        "title": "The Secret Third Ally",
+        "status": "Scene chain",
+        "placementStatus": "Early chronology confirmed",
+        "timelinePhase": "the-hidden-wager",
+        "timelineLabel": "The Hidden Wager",
+        "sequence": 1.5,
+        "sceneType": "Trust test",
+        "thread": "Lynleit's hidden circle",
+        "location": "Unspecified location",
+        "summary": "Lynleit eventually tells only Felix and Reiner that she has recruited Kyrien as an unknown ally and possible trump card against Helena, keeping the decision hidden even from Fionn.",
+        "purpose": "Reiner accepts Lynleit's decision; Felix remains opposed. Fionn is not told.",
+        "characters": [
+          {
+            "name": "Lynleit",
+            "slug": "lynleit"
+          },
+          {
+            "name": "Kyrien",
+            "slug": "kyrien"
+          },
+          {
+            "name": "Felix",
+            "slug": "felix"
+          },
+          {
+            "name": "Reiner",
+            "slug": "reiner"
+          }
+        ],
+        "characterAnchors": [
+          {
+            "slug": "lynleit",
+            "beat": "The Heir Apparent"
+          },
+          {
+            "slug": "kyrien",
+            "beat": "Alliance under Pressure"
+          },
+          {
+            "slug": "felix",
+            "beat": "The Secret Third Ally"
+          },
+          {
+            "slug": "reiner",
+            "beat": "The Anti-Protocol Compartment"
+          }
+        ],
+        "known": [
+          "Helena knows everyone already inside Lynleit's circle, so an unknown ally creates a favorable information imbalance.",
+          "Felix and Reiner are already Lynleit's close, long-standing friends before the story begins, not subordinates who become her friends during this crisis.",
+          "Lynleit eventually confines Kyrien's recruitment to Felix and Reiner and does not inform even Fionn.",
+          "This is Lynleit's first deeply anti-protocol MSF decision, made with strong intuitive conviction.",
+          "Fionn's assassination is still far ahead when the compartment is created.",
+          "The later assassination validates Lynleit's sense of approaching danger, although it does not prove she foresaw the event itself.",
+          "Felix and Reiner both regard Kyrien as a possible threat to Lynleit, especially when neither bodyguard is near her.",
+          "Reiner accepts the arrangement because he chooses to trust Lynleit's judgment.",
+          "Felix accepts only after Reiner's decision leaves him in the minority.",
+          "Felix never fully learns to trust Kyrien and later clashes with him repeatedly.",
+          "Lynleit reprimands Felix when those clashes interfere with her decision or the arrangement around Kyrien."
+        ],
+        "openQuestions": [
+          "Where and when does Lynleit disclose the compartment to Felix and Reiner?",
+          "What evidence or argument does Lynleit use to justify trusting Kyrien?",
+          "What continuing cover story protects the compartment from Fionn, Helena, the police, and the wider MSF?",
+          "Which clash between Felix and Kyrien produces the most serious consequence for Lynleit or an operation?",
+          "What would Fionn do if he learned Lynleit had hidden Kyrien from him?"
+        ],
+        "continuityBefore": "Lynleit has already coerced Kyrien into service after the failed assassination attempt, but the arrangement initially exists only between handler and asset.",
+        "continuityAfter": "Reiner becomes the stabilizing vote that permits the compartment to continue. Felix complies without trust, creating recurring friction with Kyrien and forcing Lynleit to defend the judgment on which the entire imbalance depends.",
+        "chapterSlug": "after-the-failed-attempt",
+        "updated": "2026-09-12",
+        "id": "v2",
+        "label": "v2 · Current",
+        "chapterVersion": "v2"
+      }
+    ]
   },
   {
     "slug": "the-cat-in-the-family-house",
@@ -531,7 +829,7 @@
       "The plan requires Felix to freeze the bridge's civil safety cameras, maintain communications, and remain on the city side as fallback while the river team descends by rope, inspects the boats, and leaves by rope at the next bridge.",
       "Several nights produce no boats. Each unsuccessful watch consumes the limited camera window and exposes Lynleit or Kyrien to small oddities emerging from the quarantined park that the mission gives them no freedom to pursue.",
       "After an unsuccessful watch is formally aborted, Lynleit and Kyrien play short card games while the camera feed and bridge equipment are restored.",
-      "Kyrien wins the first game through technical play, and Lynleit requests a rematch because she cannot read him.",
+      "Kyrien wins the first game, and Lynleit requests a rematch.",
       "Across the failed watches, Lynleit learns that Kyrien briefly stops breathing before a risky play. Kyrien learns the small hand movement that precedes one of Lynleit's decisions.",
       {
         "text": "Their continued rematches and attention to each other's physical tells allow the reader to recognize attraction before either character names or prioritizes it.",
@@ -541,7 +839,7 @@
       "The unsuccessful watches reveal a branch breaking before the wind reaches the trees and a pale interruption in a frozen camera feed.",
       "The boats are small wooden craft with dark tarps over shallow holds. Fixed rudders keep them aligned while the current provides most of their movement.",
       "When the boats finally appear, Reiner, Lynleit, Kyrien, Maren, and Ivo descend and find them empty. Felix remains ashore.",
-      "The final card game remains unfinished when the boats appear.",
+      "Felix calls them to position before the fifth camera window opens, leaving their last card game unfinished.",
       "When an empty boat shifts, Kyrien briefly steadies Lynleit at the waist near the Sparrow holster above her tailbone. Lynleit allows the contact, and Kyrien releases her before she asks.",
       {
         "text": "The empty boats, drowned hands, and pale girl imply that the Drowned Choir took the contraband crews before the interception, although the surviving officers cannot prove that connection.",
@@ -550,7 +848,7 @@
       "The river attack begins while the officers search the empty boats for another explanation.",
       "The officers are capable swimmers. Reaching shore becomes difficult because unseen hands seize their legs and pull downward.",
       "After reaching land, Maren describes the sensation of hands gripping and pulling her legs.",
-      "Reiner, Maren, and Ivo reach the street-facing city bank with Felix's fallback line without understanding what attacked them. They do not realize that Lynleit remains behind.",
+      "Reiner, Maren, and Ivo reach the city bank with Felix’s fallback line without understanding what attacked them. Reiner looks back and finds Lynleit and Kyrien missing.",
       {
         "text": "The hands of different sizes and states of decay suggest many drowned victims, rather than one submerged attacker.",
         "status": "inferred"
@@ -558,7 +856,7 @@
       "Only Lynleit sees the hands clearly. They seize her most violently and drag her underwater.",
       "Lynleit wears a fitted blue suede jacket for the operation because it interferes less with ropes and wet timber than her usual coat.",
       "The hands tear the blue suede jacket away during the underwater struggle.",
-      "The attack activates her childhood fear of drowning. Fury releases her blue flame at unsafe volume, and the fire catches and burns the drowned hands even beneath the water.",
+      "The attack activates her childhood fear of drowning. Fury releases her blue flame, and the fire catches and burns the drowned hands even beneath the water.",
       "After breaking the surface, Lynleit's palm meets resistance. She brings a knee and then both boots onto the same yielding layer until she stands above the river.",
       "The drowned hands reach upward from the darkness but cannot pass through the surface layer beneath Lynleit's feet.",
       "A pale girl emerges wearing a dress made from dead fish. Fishing line sews her eyes shut.",
@@ -591,7 +889,282 @@
     "continuityBefore": "The hilltop agreement gives Drake and Sherie access to a small loyal MSF team without granting them control of the agency. Their first request is a limited investigation of apparently unmanned river shipments, with contraband still the leading material explanation.",
     "continuityAfter": "Felix, Reiner, Maren, and Ivo carry an account of impossible resistance from the city bank but no shared sight of its cause. Kyrien observes the river from the quarantined trees, and Lynleit later joins him on the park bank without the blue suede jacket. Their back-to-back recovery combines the physical awareness established during the failed watches with a mutual silence around what he witnessed. Lynleit later complains about the lost jacket. Much later, after Fionn's murder, the hotel-room refuge deepens that physical trust into emotional reliance.",
     "chapterSlug": "the-empty-boats-beneath-the-bridge",
-    "updated": "2026-09-05"
+    "updated": "2026-09-12",
+    "defaultVersion": "v2",
+    "versions": [
+      {
+        "title": "The Empty Boats Beneath the Bridge",
+        "status": "Key scene",
+        "placementStatus": "Core sequence confirmed",
+        "timelinePhase": "unknowing-convergence",
+        "timelineLabel": "Unknowing Convergence",
+        "sequence": 4,
+        "sceneType": "Failed river surveillance",
+        "thread": "The suspected coup and the Spill",
+        "location": "A Vilen river bridge linking a city street to the quarantined park",
+        "summary": "A covert MSF team descends from a bridge to inspect small night shipments requested by Drake and Sherie. The tarp-covered wooden boats arrive empty, the Drowned Choir attacks from below, and Kyrien secretly witnesses Lynleit burn the drowned hands and stand on the river.",
+        "purpose": "The river attack separates the team. Kyrien witnesses Lynleit's forbidden ability and keeps it secret.",
+        "characters": [
+          {
+            "name": "Sherie",
+            "slug": "sherie"
+          },
+          {
+            "name": "Drake",
+            "slug": "drake"
+          },
+          {
+            "name": "Lynleit",
+            "slug": "lynleit"
+          },
+          {
+            "name": "Felix",
+            "slug": "felix"
+          },
+          {
+            "name": "Reiner",
+            "slug": "reiner"
+          },
+          {
+            "name": "Kyrien",
+            "slug": "kyrien"
+          }
+        ],
+        "characterAnchors": [
+          {
+            "slug": "sherie",
+            "beat": "What the Boat Reveals"
+          },
+          {
+            "slug": "drake",
+            "beat": "The Boat below the Bridge"
+          },
+          {
+            "slug": "lynleit",
+            "beat": "The Heir Apparent"
+          },
+          {
+            "slug": "felix",
+            "beat": "No Trust for Kyrien"
+          },
+          {
+            "slug": "reiner",
+            "beat": "Trusting Lynleit"
+          },
+          {
+            "slug": "kyrien",
+            "beat": "Alliance under Pressure"
+          }
+        ],
+        "known": [
+          "Sherie and Drake ask Lynleit to assemble a loyal MSF team and investigate recurring night traffic on the Vilen river.",
+          "Drake's intelligence identifies small boats moving only on the darkest nights. No operator is visible, the pattern appears intricate, and contraband remains a plausible explanation.",
+          "The chosen bridge links a city street to the quarantined park.",
+          "The plan requires Felix to freeze the bridge's civil safety cameras, maintain communications, and remain on the city side as fallback while the river team descends by rope, inspects the boats, and leaves by rope at the next bridge.",
+          "Several nights produce no boats. Each unsuccessful watch consumes the limited camera window and exposes Lynleit or Kyrien to small oddities emerging from the quarantined park that the mission gives them no freedom to pursue.",
+          "After an unsuccessful watch is formally aborted, Lynleit and Kyrien play short card games while the camera feed and bridge equipment are restored.",
+          "Kyrien wins the first game through technical play, and Lynleit requests a rematch because she cannot read him.",
+          "Across the failed watches, Lynleit learns that Kyrien briefly stops breathing before a risky play. Kyrien learns the small hand movement that precedes one of Lynleit's decisions.",
+          {
+            "text": "Their continued rematches and attention to each other's physical tells allow the reader to recognize attraction before either character names or prioritizes it.",
+            "status": "inferred"
+          },
+          "The successful interception occurs on the fifth watch.",
+          "The unsuccessful watches reveal a branch breaking before the wind reaches the trees and a pale interruption in a frozen camera feed.",
+          "The boats are small wooden craft with dark tarps over shallow holds. Fixed rudders keep them aligned while the current provides most of their movement.",
+          "When the boats finally appear, Reiner, Lynleit, Kyrien, Maren, and Ivo descend and find them empty. Felix remains ashore.",
+          "The final card game remains unfinished when the boats appear.",
+          "When an empty boat shifts, Kyrien briefly steadies Lynleit at the waist near the Sparrow holster above her tailbone. Lynleit allows the contact, and Kyrien releases her before she asks.",
+          {
+            "text": "The empty boats, drowned hands, and pale girl imply that the Drowned Choir took the contraband crews before the interception, although the surviving officers cannot prove that connection.",
+            "status": "inferred"
+          },
+          "The river attack begins while the officers search the empty boats for another explanation.",
+          "The officers are capable swimmers. Reaching shore becomes difficult because unseen hands seize their legs and pull downward.",
+          "After reaching land, Maren describes the sensation of hands gripping and pulling her legs.",
+          "Reiner, Maren, and Ivo reach the street-facing city bank with Felix's fallback line without understanding what attacked them. They do not realize that Lynleit remains behind.",
+          {
+            "text": "The hands of different sizes and states of decay suggest many drowned victims, rather than one submerged attacker.",
+            "status": "inferred"
+          },
+          "Only Lynleit sees the hands clearly. They seize her most violently and drag her underwater.",
+          "Lynleit wears a fitted blue suede jacket for the operation because it interferes less with ropes and wet timber than her usual coat.",
+          "The hands tear the blue suede jacket away during the underwater struggle.",
+          "The attack activates her childhood fear of drowning. Fury releases her blue flame at unsafe volume, and the fire catches and burns the drowned hands even beneath the water.",
+          "After breaking the surface, Lynleit's palm meets resistance. She brings a knee and then both boots onto the same yielding layer until she stands above the river.",
+          "The drowned hands reach upward from the darkness but cannot pass through the surface layer beneath Lynleit's feet.",
+          "A pale girl emerges wearing a dress made from dead fish. Fishing line sews her eyes shut.",
+          {
+            "text": "The girl's silence and tilted head imply that a person standing on water contradicts the rule by which she takes victims.",
+            "status": "inferred"
+          },
+          "Kyrien is present as Lynleit's concealed unofficial asset rather than an acknowledged MSF officer.",
+          "The force in the river separates Kyrien from the official team and drives him toward the quarantined park side of the river.",
+          "Kyrien reaches the park bank, enters the trees, and observes Lynleit's confrontation on the river from inside the quarantine.",
+          "Only Kyrien witnesses Lynleit walking on water.",
+          "Lynleit tests each step across the yielding surface and backs toward the park bank while the girl remains still.",
+          "Kyrien is too careful to acknowledge what he saw and feigns innocence convincingly.",
+          "Lynleit reaches the park side of the river without the jacket, where Kyrien is waiting among the trees.",
+          "They remain inside the night park, drenched and struggling to catch their breath.",
+          "They sit with their backs pressed together to share body heat while they recover.",
+          "The contact makes each of them aware of the other's breathing through their soaked clothes, continuing the physical tell-reading established during the card games without displacing the danger of the river.",
+          "Lynleit indirectly asks whether Kyrien saw anything strange during the escape.",
+          "Kyrien denies seeing anything, and his careful performance of innocence gives Lynleit nothing she can safely test.",
+          {
+            "text": "Kyrien's decision to protect the secret, made without an order from Lynleit, implies the first voluntary trust inside their coerced alliance.",
+            "status": "inferred"
+          }
+        ],
+        "openQuestions": [
+          "What form does the river's scar take, and in what sense does the place remember the encounter?",
+          "What intelligence survives the failed operation beyond the officers' separate accounts?",
+          "Does the submerged blue flame leave a lasting injury on the Drowned Choir or only force the hands to release Lynleit?"
+        ],
+        "continuityBefore": "The hilltop agreement gives Drake and Sherie access to a small loyal MSF team without granting them control of the agency. Their first request is a limited investigation of apparently unmanned river shipments, with contraband still the leading material explanation.",
+        "continuityAfter": "Felix, Reiner, Maren, and Ivo carry an account of impossible resistance from the city bank but no shared sight of its cause. Kyrien observes the river from the quarantined trees, and Lynleit later joins him on the park bank without the blue suede jacket. Their back-to-back recovery combines the physical awareness established during the failed watches with a mutual silence around what he witnessed. Lynleit later complains about the lost jacket. Much later, after Fionn's murder, the hotel-room refuge deepens that physical trust into emotional reliance.",
+        "chapterSlug": "the-empty-boats-beneath-the-bridge",
+        "updated": "2026-09-05",
+        "id": "v1",
+        "label": "v1 · Archived",
+        "chapterVersion": "v1"
+      },
+      {
+        "title": "The Empty Boats Beneath the Bridge",
+        "status": "Key scene",
+        "placementStatus": "Core sequence confirmed",
+        "timelinePhase": "unknowing-convergence",
+        "timelineLabel": "Unknowing Convergence",
+        "sequence": 4,
+        "sceneType": "Failed river surveillance",
+        "thread": "The suspected coup and the Spill",
+        "location": "A Vilen river bridge linking a city street to the quarantined park",
+        "summary": "A covert MSF team descends from a bridge to inspect small night shipments requested by Drake and Sherie. The tarp-covered wooden boats arrive empty, the Drowned Choir attacks from below, and Kyrien secretly witnesses Lynleit burn the drowned hands and stand on the river.",
+        "purpose": "The river attack separates the team. Kyrien witnesses Lynleit's forbidden ability and keeps it secret.",
+        "characters": [
+          {
+            "name": "Sherie",
+            "slug": "sherie"
+          },
+          {
+            "name": "Drake",
+            "slug": "drake"
+          },
+          {
+            "name": "Lynleit",
+            "slug": "lynleit"
+          },
+          {
+            "name": "Felix",
+            "slug": "felix"
+          },
+          {
+            "name": "Reiner",
+            "slug": "reiner"
+          },
+          {
+            "name": "Kyrien",
+            "slug": "kyrien"
+          }
+        ],
+        "characterAnchors": [
+          {
+            "slug": "sherie",
+            "beat": "What the Boat Reveals"
+          },
+          {
+            "slug": "drake",
+            "beat": "The Boat below the Bridge"
+          },
+          {
+            "slug": "lynleit",
+            "beat": "The Heir Apparent"
+          },
+          {
+            "slug": "felix",
+            "beat": "No Trust for Kyrien"
+          },
+          {
+            "slug": "reiner",
+            "beat": "Trusting Lynleit"
+          },
+          {
+            "slug": "kyrien",
+            "beat": "Alliance under Pressure"
+          }
+        ],
+        "known": [
+          "Sherie and Drake ask Lynleit to assemble a loyal MSF team and investigate recurring night traffic on the Vilen river.",
+          "Drake's intelligence identifies small boats moving only on the darkest nights. No operator is visible, the pattern appears intricate, and contraband remains a plausible explanation.",
+          "The chosen bridge links a city street to the quarantined park.",
+          "The plan requires Felix to freeze the bridge's civil safety cameras, maintain communications, and remain on the city side as fallback while the river team descends by rope, inspects the boats, and leaves by rope at the next bridge.",
+          "Several nights produce no boats. Each unsuccessful watch consumes the limited camera window and exposes Lynleit or Kyrien to small oddities emerging from the quarantined park that the mission gives them no freedom to pursue.",
+          "After an unsuccessful watch is formally aborted, Lynleit and Kyrien play short card games while the camera feed and bridge equipment are restored.",
+          "Kyrien wins the first game, and Lynleit requests a rematch.",
+          "Across the failed watches, Lynleit learns that Kyrien briefly stops breathing before a risky play. Kyrien learns the small hand movement that precedes one of Lynleit's decisions.",
+          {
+            "text": "Their continued rematches and attention to each other's physical tells allow the reader to recognize attraction before either character names or prioritizes it.",
+            "status": "inferred"
+          },
+          "The successful interception occurs on the fifth watch.",
+          "The unsuccessful watches reveal a branch breaking before the wind reaches the trees and a pale interruption in a frozen camera feed.",
+          "The boats are small wooden craft with dark tarps over shallow holds. Fixed rudders keep them aligned while the current provides most of their movement.",
+          "When the boats finally appear, Reiner, Lynleit, Kyrien, Maren, and Ivo descend and find them empty. Felix remains ashore.",
+          "Felix calls them to position before the fifth camera window opens, leaving their last card game unfinished.",
+          "When an empty boat shifts, Kyrien briefly steadies Lynleit at the waist near the Sparrow holster above her tailbone. Lynleit allows the contact, and Kyrien releases her before she asks.",
+          {
+            "text": "The empty boats, drowned hands, and pale girl imply that the Drowned Choir took the contraband crews before the interception, although the surviving officers cannot prove that connection.",
+            "status": "inferred"
+          },
+          "The river attack begins while the officers search the empty boats for another explanation.",
+          "The officers are capable swimmers. Reaching shore becomes difficult because unseen hands seize their legs and pull downward.",
+          "After reaching land, Maren describes the sensation of hands gripping and pulling her legs.",
+          "Reiner, Maren, and Ivo reach the city bank with Felix’s fallback line without understanding what attacked them. Reiner looks back and finds Lynleit and Kyrien missing.",
+          {
+            "text": "The hands of different sizes and states of decay suggest many drowned victims, rather than one submerged attacker.",
+            "status": "inferred"
+          },
+          "Only Lynleit sees the hands clearly. They seize her most violently and drag her underwater.",
+          "Lynleit wears a fitted blue suede jacket for the operation because it interferes less with ropes and wet timber than her usual coat.",
+          "The hands tear the blue suede jacket away during the underwater struggle.",
+          "The attack activates her childhood fear of drowning. Fury releases her blue flame, and the fire catches and burns the drowned hands even beneath the water.",
+          "After breaking the surface, Lynleit's palm meets resistance. She brings a knee and then both boots onto the same yielding layer until she stands above the river.",
+          "The drowned hands reach upward from the darkness but cannot pass through the surface layer beneath Lynleit's feet.",
+          "A pale girl emerges wearing a dress made from dead fish. Fishing line sews her eyes shut.",
+          {
+            "text": "The girl's silence and tilted head imply that a person standing on water contradicts the rule by which she takes victims.",
+            "status": "inferred"
+          },
+          "Kyrien is present as Lynleit's concealed unofficial asset rather than an acknowledged MSF officer.",
+          "The force in the river separates Kyrien from the official team and drives him toward the quarantined park side of the river.",
+          "Kyrien reaches the park bank, enters the trees, and observes Lynleit's confrontation on the river from inside the quarantine.",
+          "Only Kyrien witnesses Lynleit walking on water.",
+          "Lynleit tests each step across the yielding surface and backs toward the park bank while the girl remains still.",
+          "Kyrien is too careful to acknowledge what he saw and feigns innocence convincingly.",
+          "Lynleit reaches the park side of the river without the jacket, where Kyrien is waiting among the trees.",
+          "They remain inside the night park, drenched and struggling to catch their breath.",
+          "They sit with their backs pressed together to share body heat while they recover.",
+          "The contact makes each of them aware of the other's breathing through their soaked clothes, continuing the physical tell-reading established during the card games without displacing the danger of the river.",
+          "Lynleit indirectly asks whether Kyrien saw anything strange during the escape.",
+          "Kyrien denies seeing anything, and his careful performance of innocence gives Lynleit nothing she can safely test.",
+          {
+            "text": "Kyrien's decision to protect the secret, made without an order from Lynleit, implies the first voluntary trust inside their coerced alliance.",
+            "status": "inferred"
+          }
+        ],
+        "openQuestions": [
+          "What form does the river's scar take, and in what sense does the place remember the encounter?",
+          "What intelligence survives the failed operation beyond the officers' separate accounts?",
+          "Does the submerged blue flame leave a lasting injury on the Drowned Choir or only force the hands to release Lynleit?"
+        ],
+        "continuityBefore": "The hilltop agreement gives Drake and Sherie access to a small loyal MSF team without granting them control of the agency. Their first request is a limited investigation of apparently unmanned river shipments, with contraband still the leading material explanation.",
+        "continuityAfter": "Felix, Reiner, Maren, and Ivo carry an account of impossible resistance from the city bank but no shared sight of its cause. Kyrien observes the river from the quarantined trees, and Lynleit later joins him on the park bank without the blue suede jacket. Their back-to-back recovery combines the physical awareness established during the failed watches with a mutual silence around what he witnessed. Lynleit later complains about the lost jacket. Much later, after Fionn's murder, the hotel-room refuge deepens that physical trust into emotional reliance.",
+        "chapterSlug": "the-empty-boats-beneath-the-bridge",
+        "updated": "2026-09-12",
+        "id": "v2",
+        "label": "v2 · Current",
+        "chapterVersion": "v1"
+      }
+    ]
   },
   {
     "slug": "the-park-unit-is-lost",

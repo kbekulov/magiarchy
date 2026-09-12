@@ -39,3 +39,7 @@ The family direction now includes a son born during Lynleit's disappearance and 
 ## Character clarification: 12 September 2026
 
 The author’s MBTI discussion supplies confirmed habits of attention and physical competence, recorded in the [Cognition reference](../docs.html?doc=character-cognition-and-physical-competence). The profiles now distinguish suspected INFJ for Lynleit and ENFP for Felix from Sherie’s retained ENFJ; Kyrien remains a suspected ISTP with INTJ open. Earlier labels are preserved in historical guidance. Type interpretation is unresolved evidence, not a conflict between two events. No new training history, scene, chronology, or capability score follows from a typing change.
+
+## Consistency cleanup: 12 September 2026
+
+Hidden World Foundation v2 now follows Lester’s established contradictory ontology; v1 preserves the superseded origin possibilities as history. The current river incident and testimony record only the boundary observed beneath water-walking Lynleit and no longer assert a speaking choir. Its mechanism remains a question. After the Failed Attempt v2 removes the duplicate entrance and uses the already-established MSF transfer clause; its two linked Moments retain matching v1 and v2 access. These are reconciliations with existing canon, not new origin or reveal decisions.

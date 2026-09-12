@@ -36,7 +36,7 @@ const profileSeeds = [
       { label: 'Accidental miracle-making', title: 'Walking on water', detail: 'This ability appeared independently of her inherited magecraft. It manifested from her childhood fear of drowning and allows her to cross the surface of water on foot. Its resemblance to a sacred miracle places it outside tolerated magecraft.' },
       { label: 'Strictly concealed', title: 'Night practice', detail: 'Lynleit keeps the talent secret from everyone because the Church strongly punishes miracle-making that imitates acts associated with Jesus, saints, saviours, and other sacred figures, even when the effect seems harmless. She practices alone at night on secluded stretches of local lakes and rivers.' }
     ],
-    origin: 'Lynleit is associated with the Cult of Inanna through Fionn\'s lineage, without directly participating in it. She grew up close to MSF leadership. Felix and Reiner became her friends and the bodyguards Fionn trusted with her safety. At the Magi Academy, Natalia was her favourite teacher. She distrusted Helena before any open conspiracy, noticing her stepmother\'s questions about Fionn\'s schedules, visitors, trusted officers, and Lynleit\'s travel. During Kyrien\'s failed attack on an MSF-protected politician, Lynleit was nearly harmed. He never learns that she was there. She later questions him and uses an extraordinary transfer clause in MSF\'s government contract to recruit him secretly, telling only Felix and Reiner.', rupture: 'Days before Fionn\'s death, the Nameless Street leaves Lynleit with the memory of a dead boy below a broken fence. Seeing her father\'s body below the hill at the family house brings the memory back. Helena uses her stunned reaction to support the accusation that Lynleit killed him. Hunted and out of resources, Lynleit reaches Kyrien\'s hotel-room hideout. He helps her reconnect with Felix and Reiner. Fionn\'s old officers begin questioning Helena when Lynleit can answer his private recognition challenge and Helena cannot.', focus: 'During the river operation, the Drowned Choir drags Lynleit underwater and tears away her blue suede jacket. She burns the hands with blue flame, breaks the surface, and stands on the water. Kyrien sees her from the park bank and keeps her secret. Father Mikhail later discovers that Kyrien, Felix, and Reiner know about magic. Lynleit insists on handling the breach herself. When the Church and Magiarchy send her to assist Mikhail in Cardiff, she sends Kyrien to help Myka at the Academy. She underestimates the danger there. In Cardiff, she and Mikhail protect one another despite their incompatible methods.', future: 'Midway through Arc 1, after Fionn\'s death, Lynleit discovers that he replaced her coat with a leviathan-hide garment. Near the end of the arc, she and Kyrien survive a shared curse after an incomplete attempt at intimacy. She refuses to discuss it with him even after the curse is gone. Their sexual relationship begins later. Near the Arc 2 transition she disappears, remaining away to raise their son, recover, and seek answers about the Spill. Years later she begins appearing around MSF missions without explaining her return. She bears their son during her disappearance and keeps him hidden from Kyrien and the wider world afterward. During Arc 2 they restore intimacy; this eventually leads to the conception and later birth of their daughter, their second child.',
+    origin: 'Lynleit is associated with the Cult of Inanna through Fionn\'s lineage, without directly participating in it. She grew up close to MSF leadership. Felix and Reiner became her friends and the bodyguards Fionn trusted with her safety. At the Magi Academy, Natalia was her favourite teacher. She distrusted Helena before any open conspiracy, noticing her stepmother\'s questions about Fionn\'s schedules, visitors, trusted officers, and Lynleit\'s travel. During Kyrien\'s failed attack on an MSF-protected politician, Lynleit was nearly harmed. He never learns that she was there. She later questions him and uses an extraordinary transfer clause in MSF\'s government contract to recruit him secretly, telling only Felix and Reiner.', rupture: 'Days before Fionn\'s death, the Nameless Street leaves Lynleit with the memory of a dead boy below a broken fence. Seeing her father\'s body below the hill at the family house brings the memory back. Helena uses her stunned reaction to support the accusation that Lynleit killed him. Hunted and out of resources, Lynleit reaches Kyrien\'s hotel-room hideout. He helps her reconnect with Felix and Reiner. Fionn\'s old officers begin questioning Helena when Lynleit can answer his private recognition challenge and Helena cannot.', focus: 'During the river operation, the Drowned Choir drags Lynleit underwater and tears away her blue suede jacket. She burns the hands with blue flame, breaks the surface, and stands on the water. Kyrien sees her from the park bank and keeps her secret. Father Mikhail later discovers that Kyrien, Felix, and Reiner know about magic. Lynleit insists on handling the breach herself. When the Church and Magiarchy send her to assist Mikhail in Cardiff, she sends Kyrien to help Myka at the Academy. She underestimates the danger there. In Cardiff, she and Mikhail protect one another despite their incompatible methods.', future: 'Midway through Arc 1, after Fionn\'s death, Lynleit discovers that he replaced her coat with a leviathan-hide garment. Later in the second half of Arc 1, she and Kyrien survive a shared curse after an incomplete attempt at intimacy. She refuses to discuss it with him even after the curse is gone. Their sexual relationship begins later. Near the Arc 2 transition she disappears, remaining away to raise their son, recover, and seek answers about the Spill. Years later she begins appearing around MSF missions without explaining her return. She bears their son during her disappearance and keeps him hidden from Kyrien and the wider world afterward. During Arc 2 they restore intimacy; this eventually leads to the conception and later birth of their daughter, their second child.',
     connections: [
       {"name":"Their son","relation":"First child","detail":"Born during Lynleit's disappearance and kept hidden from Kyrien and the wider world afterward."},
       {"name":"Their daughter","relation":"Second child","detail":"Conceived after intimacy is restored during Arc 2 and born later."},
@@ -76,7 +76,7 @@ const profileSeeds = [
       { label: 'Reciprocal force', title: 'Firearms', detail: 'His father taught him that pointing a weapon creates an obligation. Kyrien keeps the lesson as a personal rule: "You cannot do much in this world without life or death stakes. But if you dare to point a gun at someone, you should be prepared to be shot yourself." He uses firearms to create distance, interrupt an attack, or open an escape route.' },
       { label: 'Mobility', title: 'Motorcycle', detail: 'The only driving licence he ever wanted was for a motorcycle. He values the machine as a narrow, responsive escape tool that is harder to trap than a car, not as a leisure accessory.' },
       { label: 'Last resort', title: 'Survival combat', detail: 'Fights to remain mobile and alive, combining practical close combat with terrain awareness instead of pursuing elegant or decisive victories.' },
-      { label: 'Leadership peak', title: 'Intelligence operations', detail: 'His unofficial MSF association gives him access to surveillance, counterintelligence, field planning, and institutional command. By Lynleit\'s disappearance, this becomes the side of MSF he has mastered completely.' }
+      { label: 'Leadership', title: 'Intelligence operations', detail: 'His unofficial MSF association gives him experience in surveillance, counterintelligence, and field planning. By Lynleit\'s disappearance, he can direct the agency\'s ordinary intelligence work while relying on Magi for its supernatural operations.' }
     ],
     origin: 'Kyrien begins the story as an independent figure and the son of a Narvean military commanding officer. His father introduces him to weapons and officer conduct unusually early. At five, Kyrien is allowed to hold a Sparrow and immediately aims it at a civilian in the street. His father stops and scolds him, making clear that familiarity with a weapon never permits a breach of protocol. The incident leaves Kyrien with a quiet affinity for military practice and the moral burden attached to force. After his father\'s death, he retains that mentality alongside access to surviving contacts, suppliers, knowledge, and tools. The inheritance later enables his attempt on a politician involved in causing his father\'s death. The target is under MSF protection. The attempt fails because the politician belongs to the Magi world, and Kyrien never learns that Lynleit was present and almost harmed by his actions.', rupture: 'After the failed assassination, Lynleit takes over Kyrien\'s interrogation at a police office. An extraordinary transfer clause in MSF\'s government contract lets her offer conditional freedom in exchange for his service. He cannot explain the personal edge in her questions. She keeps his recruitment from Fionn and eventually tells only Felix and Reiner.', focus: 'Felix clashes with Kyrien; Reiner remains watchful but accepts Lynleit\'s decision. During the failed river watches, Kyrien plays cards with her and begins learning her tells. He later witnesses her water walking and keeps it secret. When Mikhail questions her about the breach, however, Kyrien tells him that Felix and Reiner also know. While Lynleit is in Cardiff, Kyrien protects Myka undercover at the Academy, relying on Felix and Reiner until Natalia intervenes. After Fionn\'s death he shelters Lynleit and helps her reconnect with the officers. Asked why he keeps risking his life without a reward, he answers: "Because there\'s a battle to be fought."', future: 'Kyrien stays with Lynleit after she loses the authority to compel him. They survive a shared curse following an incomplete attempt at intimacy, but she will not explain the proposed treatment. Months after Doom, the spontaneous park encounter becomes their first successful sexual act, distinct from later intercourse. When Lynleit inherits the Magiarchate and then disappears, Kyrien becomes director of MSF. He must manage its government contracts, divided loyalties, ordinary intelligence work, and response to the Spill without her magical authority. He does not know that Lynleit bore their son during her disappearance and continues to conceal him. During Arc 2 they restore intimacy and eventually conceive a daughter, who is born later. They have two children by the end of their story.',
     connections: [
@@ -742,6 +742,10 @@ async function loadProfilePortrait(profile, portrait, note) {
     next.setAttribute('aria-label', 'Next portrait');
     note.setAttribute('aria-live', 'polite');
     note.className = 'sr-only';
+    const eraLabel = createElement('span', 'profile-art-era');
+    eraLabel.hidden = true;
+    eraLabel.setAttribute('aria-hidden', 'true');
+    stage.append(eraLabel);
     stage.append(previous, next);
     const thumbnails = createElement('div', 'profile-art-thumbnails');
     thumbnails.setAttribute('aria-label', 'Choose portrait');
@@ -769,6 +773,8 @@ async function loadProfilePortrait(profile, portrait, note) {
       image.src = source.getAttribute('src');
       image.alt = source.alt || `Character artwork of ${profile.name}`;
       const arc = source.closest('.gallery-card')?.dataset.storyArc;
+      eraLabel.textContent = arc ? arc.replace('-', ' ').replace(/^arc/i, 'Arc') : '';
+      eraLabel.hidden = !arc;
       note.textContent = `Portrait ${selectedIndex + 1} of ${artworks.length}${arc ? ', ' + arc.replace('-', ' ') : ''}`;
       image.alt = `${source.alt || profile.name}${arc ? ' (' + arc.replace('-', ' ') + ')' : ''}`;
       choices.forEach((button, i) => {
@@ -1146,8 +1152,8 @@ function renderRelationshipMap(profile, host) {
     const centers = new Map(nodeRecords.map(({ record, node }) => {
       const rect = node.getBoundingClientRect();
       return [record.slug, {
-        x: rect.left - stageRect.left + rect.width / 2,
-        y: rect.top - stageRect.top + rect.height / 2
+        x: rect.left - stageRect.left - stage.clientLeft + rect.width / 2,
+        y: rect.top - stageRect.top - stage.clientTop + rect.height / 2
       }];
     }));
     edgeRecords.forEach(({ from, to, edge }) => {
@@ -1181,8 +1187,8 @@ function renderRelationshipMap(profile, host) {
         id: event.pointerId,
         startX: event.clientX,
         startY: event.clientY,
-        nodeX: nodeRect.left - stageRect.left + nodeRect.width / 2,
-        nodeY: nodeRect.top - stageRect.top + nodeRect.height / 2,
+        nodeX: nodeRect.left - stageRect.left - stage.clientLeft + nodeRect.width / 2,
+        nodeY: nodeRect.top - stageRect.top - stage.clientTop + nodeRect.height / 2,
         moved: false
       };
       node.setPointerCapture(event.pointerId);
@@ -1226,8 +1232,8 @@ function renderRelationshipMap(profile, host) {
       event.preventDefault();
       const nodeRect = node.getBoundingClientRect();
       const stageRect = stage.getBoundingClientRect();
-      const x = Math.max(44, Math.min(stage.clientWidth - 44, nodeRect.left - stageRect.left + nodeRect.width / 2 + movement[0]));
-      const y = Math.max(44, Math.min(stage.clientHeight - 44, nodeRect.top - stageRect.top + nodeRect.height / 2 + movement[1]));
+      const x = Math.max(44, Math.min(stage.clientWidth - 44, nodeRect.left - stageRect.left - stage.clientLeft + nodeRect.width / 2 + movement[0]));
+      const y = Math.max(44, Math.min(stage.clientHeight - 44, nodeRect.top - stageRect.top - stage.clientTop + nodeRect.height / 2 + movement[1]));
       node.style.left = `${x}px`;
       node.style.top = `${y}px`;
       drawEdges();
@@ -1272,6 +1278,7 @@ async function loadCharacterMoments(profile, timeline) {
       if (!timelineItem) return;
       const phase = window.MAGIARCHY_STORY_PHASES.find(phase => phase.id === entry.timelinePhase);
       if (phase) timelineItem.dataset.storyArc = phase.arc;
+      if (phase?.placement === 'approximate') timelineItem.dataset.timelinePlacement = 'approximate';
       let anchorList = timelineItem.querySelector('.character-timeline-moments');
       if (!anchorList) {
         anchorList = createElement('div', 'character-timeline-moments');
@@ -1285,6 +1292,8 @@ async function loadCharacterMoments(profile, timeline) {
       timelineItem.classList.add('has-moments');
     });
     window.decorateArcTimeline(timeline);
+    window.addReaderSections(document.querySelector('#character-profile-content'));
+    window.addTimelineToggle(document.querySelector('.character-personal-timeline'));
   } catch (error) {
     console.warn(`Moments could not be connected to ${profile.name}.`, error);
   }
@@ -1497,6 +1506,7 @@ function renderProfile(profile) {
   });
 
   document.querySelector('#character-profile-content').hidden = false;
+  window.addReaderSections(document.querySelector('#character-profile-content'));
 }
 
 const requestedCharacter = new URLSearchParams(window.location.search).get('character');

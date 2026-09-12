@@ -34,6 +34,34 @@ window.decorateArcTimeline = (track) => {
     label.textContent = `${arc.number} · ${arc.title}`;
     return label;
   }));
+  const approximate = [...track.children].filter(item => item.dataset.timelinePlacement === 'approximate');
+  if (approximate.length) {
+    const panel = document.createElement('section');
+    panel.className = 'timeline-approximate';
+    const title = document.createElement('h3');
+    title.textContent = 'Approximate placement';
+    const description = document.createElement('p');
+    description.textContent = 'These events belong to a known life period, but their position among the numbered phases is not fixed.';
+    const list = document.createElement('ul');
+    list.className = 'timeline-approximate-track';
+    list.append(...approximate);
+    approximate.forEach(item => {
+      const arc = arcs.find(entry => entry.id === item.dataset.storyArc);
+      const band = item.querySelector('.timeline-arc-band');
+      if (band && arc) {
+        band.textContent = `${arc.number} · ${arc.title}`;
+        band.removeAttribute('aria-hidden');
+      }
+      const marker = item.querySelector('.timeline-marker, .moment-phase-number, .character-timeline-marker');
+      if (marker) { marker.textContent = '≈'; marker.setAttribute('aria-label', 'Approximate placement'); }
+    });
+    panel.append(title, description, list);
+    track.after(panel);
+    [...track.children].forEach((item, index) => {
+      const marker = item.querySelector('.character-timeline-marker');
+      if (marker) marker.textContent = String(index + 1).padStart(2, '0');
+    });
+  }
 };
 
 window.MAGIARCHY_STORY_PHASES = [
@@ -54,4 +82,8 @@ window.MAGIARCHY_STORY_PHASES = [
 ];
 
 
-window.MAGIARCHY_STORY_PHASES.forEach((phase, index) => { phase.number = String(index + 1).padStart(2, '0'); });
+let chronologicalNumber = 0;
+window.MAGIARCHY_STORY_PHASES.forEach(phase => {
+  if (phase.id === 'late-arc-one') phase.placement = 'approximate';
+  phase.number = phase.placement === 'approximate' ? '≈' : String(++chronologicalNumber).padStart(2, '0');
+});

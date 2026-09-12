@@ -21,7 +21,8 @@
       "Lynleit leaves the meeting early and visibly irritated.",
       "Felix and Reiner seek gossip, but Lynleit redirects them with a playful tease.",
       "A report of another disappearance appears while the meeting is in progress."
-    ]
+    ],
+    "contentKind": "scene"
   },
   {
     "slug": "ash-under-glass",
@@ -44,15 +45,16 @@
       "Forces the unit cannot understand or explain massacre the squad.",
       "Heyk becomes the sole survivor and is evacuated by the Ducal Guard under Drake's orders.",
       "Grief for his squad follows him into a new role as a Ducal Guard field agent and bodyguard serving Drake and Sherie."
-    ]
+    ],
+    "contentKind": "outline"
   },
   {
     "slug": "after-the-failed-attempt",
     "number": "Chapter 03",
     "title": "After the Failed Attempt",
     "status": "Placeholder draft",
-    "file": "after-the-failed-attempt.md",
-    "updated": "2026-09-01",
+    "file": "after-the-failed-attempt-v2.md",
+    "updated": "2026-09-12",
     "description": "After Kyrien's failed attack on an MSF-protected politician nearly harms Lynleit, she questions him without revealing that she was present and converts his prison risk into a secret alliance.",
     "characters": [
       "Lynleit",
@@ -69,7 +71,45 @@
       "She recruits him because her intuition warns her that a danger she cannot yet identify is approaching.",
       "Lynleit later tells only Felix and Reiner, while even Fionn remains outside the compartment.",
       "Reiner trusts Lynleit's judgment, while Felix accepts the decision without trusting Kyrien."
-    ]
+    ],
+    "defaultVersion": "v2",
+    "versions": [
+      {
+        "id": "v1",
+        "label": "v1 · Archived",
+        "file": "after-the-failed-attempt.md",
+        "updated": "2026-09-01",
+        "description": "After Kyrien's failed attack on an MSF-protected politician nearly harms Lynleit, she questions him without revealing that she was present and converts his prison risk into a secret alliance.",
+        "status": "Placeholder draft",
+        "events": [
+          "Kyrien's attempt on an MSF-protected politician fails because the target secretly belongs to the Magi world.",
+          "Lynleit is present and almost harmed during the attempt, but Kyrien does not know she was there and she never tells him.",
+          "Lynleit takes control of his interrogation and offers conditional freedom in exchange for becoming her secret helper.",
+          "She recruits him because her intuition warns her that a danger she cannot yet identify is approaching.",
+          "Lynleit later tells only Felix and Reiner, while even Fionn remains outside the compartment.",
+          "Reiner trusts Lynleit's judgment, while Felix accepts the decision without trusting Kyrien."
+        ],
+        "contentKind": "outline"
+      },
+      {
+        "id": "v2",
+        "label": "v2 · Current",
+        "file": "after-the-failed-attempt-v2.md",
+        "updated": "2026-09-12",
+        "description": "After Kyrien's failed attack on an MSF-protected politician nearly harms Lynleit, she questions him without revealing that she was present and converts his prison risk into a secret alliance.",
+        "status": "Placeholder draft",
+        "events": [
+          "Kyrien's attempt on an MSF-protected politician fails because the target secretly belongs to the Magi world.",
+          "Lynleit is present and almost harmed during the attempt, but Kyrien does not know she was there and she never tells him.",
+          "Lynleit takes control of his interrogation and offers conditional freedom in exchange for becoming her secret helper.",
+          "She recruits him because her intuition warns her that a danger she cannot yet identify is approaching.",
+          "Lynleit later tells only Felix and Reiner, while even Fionn remains outside the compartment.",
+          "Reiner trusts Lynleit's judgment, while Felix accepts the decision without trusting Kyrien."
+        ],
+        "contentKind": "outline"
+      }
+    ],
+    "contentKind": "outline"
   },
   {
     "slug": "the-name-left-behind",
@@ -90,7 +130,8 @@
       "Natalia finds a missing page hidden from every archive index.",
       "Myka reveals an unaltered copy carrying Fionn's name beside a future date.",
       "The archive erases the evidence while Natalia attempts to preserve it."
-    ]
+    ],
+    "contentKind": "outline"
   },
   {
     "slug": "the-empty-boats-beneath-the-bridge",
@@ -136,7 +177,8 @@
         "status": "inferred"
       },
       "Lynleit crosses the held surface to the park bank and later sits back to back with Kyrien for warmth among the trees."
-    ]
+    ],
+    "contentKind": "scene"
   },
   {
     "slug": "the-nameless-street",
@@ -165,7 +207,8 @@
         "text": "The girl's smile and sudden push suggest that her crying was a lure.",
         "status": "inferred"
       }
-    ]
+    ],
+    "contentKind": "scene"
   },
   {
     "slug": "doom-has-an-address",
@@ -208,7 +251,7 @@
         "text": "Lynleit's unread pages and repeated denials suggest that she still wants Kyrien now that the curse is gone.",
         "status": "inferred"
       },
-      "Kyrien knows about Lynleit's attempt, her refusal to explain it, and the curse's decline, but lacks enough information to connect them.",
+      "Kyrien suspects a connection between Lynleit’s attempt and their recovery, but she withholds the proposed treatment.",
       "The incomplete attempt and its aftermath change both identities enough for the curse to lose its hold."
     ],
     "defaultVersion": "v7",
@@ -237,7 +280,8 @@
         ],
         "description": "After jointly destroying a Holumn, Lynleit and Kyrien inherit one fatal curse written across both identities and search for a way to survive without sacrificing either life.",
         "timelinePhase": "lynleit-disappears",
-        "timelineLabel": "Lynleit Disappears"
+        "timelineLabel": "Lynleit Disappears",
+        "contentKind": "scene"
       },
       {
         "id": "v2",
@@ -269,7 +313,8 @@
           }
         ],
         "timelinePhase": "lynleit-disappears",
-        "timelineLabel": "Lynleit Disappears"
+        "timelineLabel": "Lynleit Disappears",
+        "contentKind": "scene"
       },
       {
         "id": "v3",
@@ -297,7 +342,8 @@
           "The incomplete attempt and its aftermath change both identities enough for the curse to lose its hold."
         ],
         "timelinePhase": "lynleit-disappears",
-        "timelineLabel": "Lynleit Disappears"
+        "timelineLabel": "Lynleit Disappears",
+        "contentKind": "scene"
       },
       {
         "id": "v4",
@@ -326,7 +372,8 @@
           "The incomplete attempt and its aftermath change both identities enough for the curse to lose its hold."
         ],
         "timelinePhase": "lynleit-disappears",
-        "timelineLabel": "Lynleit Disappears"
+        "timelineLabel": "Lynleit Disappears",
+        "contentKind": "scene"
       },
       {
         "id": "v5",
@@ -359,7 +406,8 @@
           "The incomplete attempt and its aftermath change both identities enough for the curse to lose its hold."
         ],
         "timelinePhase": "lynleit-disappears",
-        "timelineLabel": "Lynleit Disappears"
+        "timelineLabel": "Lynleit Disappears",
+        "contentKind": "scene"
       },
       {
         "id": "v6",
@@ -393,7 +441,8 @@
           "The incomplete attempt and its aftermath change both identities enough for the curse to lose its hold."
         ],
         "timelinePhase": "lynleit-disappears",
-        "timelineLabel": "Lynleit Disappears"
+        "timelineLabel": "Lynleit Disappears",
+        "contentKind": "scene"
       },
       {
         "id": "v7",
@@ -427,13 +476,15 @@
             "text": "Lynleit's unread pages and repeated denials suggest that she still wants Kyrien now that the curse is gone.",
             "status": "inferred"
           },
-          "Kyrien knows about Lynleit's attempt, her refusal to explain it, and the curse's decline, but lacks enough information to connect them.",
+          "Kyrien suspects a connection between Lynleit’s attempt and their recovery, but she withholds the proposed treatment.",
           "The incomplete attempt and its aftermath change both identities enough for the curse to lose its hold."
         ],
         "timelinePhase": "late-arc-one",
-        "timelineLabel": "Later in Arc 1"
+        "timelineLabel": "Later in Arc 1",
+        "contentKind": "scene"
       }
-    ]
+    ],
+    "contentKind": "scene"
   },
   {
     "slug": "the-bench-under-the-lamp",
@@ -490,7 +541,8 @@
           },
           "Kyrien hands her the flask without pressing for an explanation, and they continue walking."
         ],
-        "description": "An evening walk leaves Lynleit and Kyrien beneath a park lamp. A joke about their failed attempt becomes a private encounter, followed by an unexpected request for his flask."
+        "description": "An evening walk leaves Lynleit and Kyrien beneath a park lamp. A joke about their failed attempt becomes a private encounter, followed by an unexpected request for his flask.",
+        "contentKind": "scene"
       },
       {
         "id": "v2",
@@ -514,8 +566,10 @@
           },
           "Kyrien hands her the flask without pressing for an explanation, and they continue walking."
         ],
-        "description": "An evening walk leaves Lynleit and Kyrien beneath a park lamp. A joke about their failed attempt becomes a private encounter, followed by an unexpected request for his flask."
+        "description": "An evening walk leaves Lynleit and Kyrien beneath a park lamp. A joke about their failed attempt becomes a private encounter, followed by an unexpected request for his flask.",
+        "contentKind": "writer-gap"
       }
-    ]
+    ],
+    "contentKind": "writer-gap"
   }
 ]

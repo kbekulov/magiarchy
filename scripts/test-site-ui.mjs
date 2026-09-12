@@ -120,8 +120,97 @@ try {
         const after = await neighbor.evaluate(relativePosition);
         assert.ok(before && after && Math.abs(before.x - after.x) < 1 && Math.abs(before.y - after.y) < 1, `${route}: hovering a card displaced its neighbor`);
       }
+      // Intermediate panes, not only page-wide overflow.
+      for (const width of [700, 820, 950, 1024, 1200, 1600]) {
+        await page.setViewportSize({ width, height: 900 });
+        for (const [route, selector] of [['director-house.html', '.house-hero h1, .house-facts dd'], ['holumns.html', '.anarchy-effects strong, .anarchy-effects p']]) {
+          await visit(route);
+          const clipped = await page.locator(selector).evaluateAll(nodes => nodes.filter(node => node.scrollWidth > node.clientWidth + 2).map(node => node.textContent));
+          assert.deepEqual(clipped, [], `${engine}/${route}/${width}: internal text clipping`);
+        }
+      }
+      for (const width of [390, 1440]) {
+        await page.setViewportSize({ width, height: 900 });
+        await visit('gallery.html');
+        const available = await page.locator('.gallery-card').evaluateAll(cards => ['all', ...new Set(cards.map(card => card.dataset.location))].sort());
+        const options = await page.locator('#gallery-location-filter option').evaluateAll(nodes => nodes.map(node => node.value).sort());
+        assert.deepEqual(options, available, 'Gallery offers an unpopulated location');
+        await visit('music.html');
+        const musicCount = await page.locator('.music-card').count();
+        const playableCount = await page.locator('.music-card:has(audio)').count();
+        assert.equal(await page.locator('.music-card:visible').count(), musicCount);
+        await page.getByLabel('Playable only').check();
+        assert.equal(await page.locator('.music-card:visible').count(), playableCount);
+        assert.ok(page.url().includes('playable=1'));
+        await page.reload();
+        await page.waitForLoadState('networkidle');
+        assert.ok(await page.getByLabel('Playable only').isChecked());
+        await page.getByRole('searchbox', { name: 'Search music' }).fill('no-such-track');
+        assert.ok(await page.locator('.music-empty').isVisible());
+        await page.locator('#music-empty-reset').click();
+        assert.equal(await page.locator('.music-card:visible').count(), musicCount);
+        await visit('story.html');
+        await page.getByRole('button', { name: 'Scene outline', exact: true }).click();
+        assert.equal(await page.locator('.chapter-card:visible').count(), await page.locator('.chapter-card[data-content-kind="outline"]').count());
+        await visit('story.html?chapter=after-the-failed-attempt');
+        assert.ok(await page.locator('.chapter-preface-legend').isHidden());
+        await visit('moments.html?moment=interrogation-after-the-failed-attempt');
+        assert.ok(await page.locator('.moment-fact-legend').isHidden(), 'Linked outline promoted to delivered scene');
+        await visit('moments.html');
+        assert.equal(await page.locator('#moment-phase-track [data-phase="late-arc-one"]').count(), 0);
+        await page.locator('.timeline-approximate [data-phase="late-arc-one"]').click();
+        assert.equal(await page.locator('#moment-phase-filter').inputValue(), 'late-arc-one');
+        assert.ok(await page.locator('.moment-card:visible').count() > 0);
+        await page.locator('.timeline-approximate').scrollIntoViewIfNeeded();
+        await page.screenshot({ path: `test-results/${engine}-approximate-moments-${width}.png` });
+        await visit('story.html?chapter=doom-has-an-address&version=v7');
+        assert.equal(await page.locator('.timeline-track [data-timeline-phase="late-arc-one"]').count(), 0);
+        assert.equal(await page.locator('.timeline-approximate [aria-current="step"]').count(), 1);
+        await page.getByRole('button', { name: 'Collapse timeline' }).click();
+        assert.ok(await page.locator('.timeline-content').isHidden());
+        await page.getByRole('button', { name: 'Expand timeline' }).click();
+        assert.ok(await page.locator('.timeline-content').isVisible());
+        await page.locator('.timeline-approximate').scrollIntoViewIfNeeded();
+        await page.screenshot({ path: `test-results/${engine}-approximate-story-${width}.png` });
+        const sections = page.locator('.reader-section-nav select');
+        const sectionId = await sections.locator('option').nth(1).getAttribute('value');
+        await sections.selectOption(sectionId);
+        assert.ok(page.url().includes('version=v7') && page.url().endsWith(`#${sectionId}`));
+        const marker = page.locator('.behavior-gutter-marker').first();
+        await marker.focus();
+        await page.keyboard.press('Enter');
+        assert.ok(await page.locator('#behavior-note-tooltip').isVisible());
+        assert.ok(await page.locator('.behavior-tooltip-close').evaluate(el => el === document.activeElement));
+        await page.keyboard.press('Escape');
+        assert.ok(await marker.evaluate(el => el === document.activeElement));
+        assert.ok(await page.locator('#behavior-note-tooltip').isHidden());
+        await marker.click();
+        await page.locator('.behavior-tooltip-close').click();
+        assert.ok(await marker.evaluate(el => el === document.activeElement));
+        await visit('character.html?character=lynleit');
+        const arcThumb = page.locator('.profile-art-thumbnails button[aria-label*="arc 2" i]').first();
+        await arcThumb.click();
+        assert.equal(await page.locator('.profile-art-era').textContent(), 'Arc 2');
+        assert.ok(await page.locator('.profile-art-era').isVisible());
+        const node = page.locator('.relationship-node:not(.is-center)').first();
+        await node.focus();
+        const beforeMove = await node.boundingBox();
+        await page.keyboard.press('ArrowRight');
+        const afterMove = await node.boundingBox();
+        assert.ok(Math.abs(afterMove.x - beforeMove.x - 12) < 1, 'Relationship keyboard movement failed');
+        assert.ok(Math.abs(afterMove.y - beforeMove.y) < 1, 'Horizontal map movement drifted vertically');
+        await page.screenshot({ path: `test-results/${engine}-reader-controls-${width}.png` });
+      }
+      await visit('story.html?chapter=doom-has-an-address');
+      const proseLink = page.locator('#chapter-reader .archive-entity-link').first();
+      const color = await proseLink.evaluate(el => getComputedStyle(el.parentElement).color);
+      await proseLink.hover();
+      assert.equal(await proseLink.evaluate(el => getComputedStyle(el).color), color, 'Entity link changes prose color on hover');
+      await proseLink.focus();
+      assert.equal(await proseLink.evaluate(el => getComputedStyle(el).color), color, 'Entity link changes prose color on focus');
+      assert.notEqual(await proseLink.evaluate(el => getComputedStyle(el).outlineStyle), 'none', 'Entity keyboard focus is invisible');
       assert.deepEqual(errors, [], `${engine}: browser script errors`);
-      console.log(`${engine}: ${pages.length} routes at 3 widths, menu keyboard access, version search, Holumn coverage, outline labels, portrait thumbnails passed.`);
+      console.log(`${engine}: ${pages.length} routes at 3 widths; intermediate panes at 6 widths; reader navigation, filtering, version search, note focus, map movement, entity styling, and portrait eras passed.`);
     } finally { await browser.close(); }
   }
 } finally { await new Promise(resolve => server.close(resolve)); }

@@ -573,6 +573,7 @@ async function loadDocument(record, requestedVersion) {
     documentReader.append(renderMarkdown(markdown));
     if (entry.slug === 'character-intimacy-and-sexuality') await enhanceCharacterIntimacyDocument(documentReader, entry);
     if (entry.slug === 'character-behavior-audit') await enhanceCharacterBehaviorDocument(documentReader, entry);
+    if (entry.slug !== 'character-intimacy-and-sexuality') window.addReaderSections(documentReader);
     const versionMeta = entry.versionCount > 1 ? ` · ${entry.versionId}` : '';
     documentMeta.textContent = `${entry.topic}${versionMeta} · ${entry.speakers.join(' / ')} · Updated ${entry.updated}`;
     document.title = `${entry.title}${versionMeta} - Docs - Magiarchy`;

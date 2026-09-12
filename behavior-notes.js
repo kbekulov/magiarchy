@@ -108,7 +108,15 @@
     window.addEventListener('resize', () => {
       if (!tooltip.hidden && activeAnchor) positionTooltip(tooltip, activeAnchor);
     });
-    window.addEventListener('scroll', () => closeTooltip(false), { passive: true, capture: true });
+    window.addEventListener('scroll', event => {
+      if (tooltip.hidden || !activeAnchor || tooltip.contains(event.target)) return;
+      const bounds = activeAnchor.getBoundingClientRect();
+      if (bounds.bottom < 0 || bounds.top > window.innerHeight) {
+        closeTooltip(tooltip.contains(document.activeElement));
+      } else {
+        positionTooltip(tooltip, activeAnchor);
+      }
+    }, { passive: true, capture: true });
     return tooltip;
   }
 
@@ -143,7 +151,7 @@
     const trigger = activeTrigger;
     activeTrigger = null;
     activeAnchor = null;
-    if (restoreFocus && trigger) trigger.focus();
+    if (restoreFocus && trigger) trigger.focus({ preventScroll: true });
   }
 
   function openTooltip(note, trigger, anchor) {
@@ -161,6 +169,8 @@
     tooltip.querySelector('.behavior-tooltip-copy').textContent = note.text;
     tooltip.hidden = false;
     setExpanded(anchor, true);
+    trigger.setAttribute('aria-controls', tooltip.id);
+    tooltip.querySelector('.behavior-tooltip-close').focus({ preventScroll: true });
     requestAnimationFrame(() => positionTooltip(tooltip, anchor));
   }
 

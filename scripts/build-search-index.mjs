@@ -1,4 +1,5 @@
 import fs from 'node:fs';
+import { documentSearchUrl } from './search-urls.mjs';
 import path from 'node:path';
 import vm from 'node:vm';
 import { fileURLToPath } from 'node:url';
@@ -170,7 +171,7 @@ docs.forEach((document) => {
     type: 'Document',
     current: document.current,
     recordId: `doc-${document.slug}`,
-    url: document.href || `docs.html?doc=${encodeURIComponent(document.slug)}${document.versionCount > 1 ? `&version=${encodeURIComponent(document.versionId)}` : ''}`,
+    url: documentSearchUrl(document),
     subtitle: document.topic,
     text: `${document.description} ${markdown} ${contextualText}`,
     keywords: document.speakers

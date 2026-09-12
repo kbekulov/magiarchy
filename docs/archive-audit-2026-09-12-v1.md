@@ -2,7 +2,7 @@
 
 ## Status and scope
 
-**The author approved the bounded cleanup on 12 September 2026.** The original findings below are retained as the evidence and proposal record. Implementation status is listed separately; an unresolved story decision is not implicitly approved. Today's character clarifications remain in the [Cognition and Physical Competence reference](../docs.html?doc=character-cognition-and-physical-competence).
+**Findings and proposals only. The author has not approved implementation of the actions below.** Today's character clarifications have been integrated separately in the [Cognition and Physical Competence reference](../docs.html?doc=character-cognition-and-physical-competence). That integration does not authorize the revisions proposed here.
 
 Jump to [consistency and chronology](#first-priority-factual-consistency-and-chronology), [story and writing](#story-prose-and-reader-comprehension), [UI and reading](#ui-and-reading-experience), [writer workflow](#writer-workflow-and-cohesion), or [recommended order](#recommended-order-after-approval).
 
@@ -11,34 +11,6 @@ The review covered the current public pages, 18 profiles, 8 default Chapters, 24
 Automated browser checks exercised 80 routes at 390, 1024, and 1440 pixels in Chromium and WebKit: 480 views. They found no broken displayed images, page-wide horizontal overflow, or browser script errors. They did find two local text-overflow problems at 1024 pixels. Existing regression checks also covered navigation, search history, portrait thumbnails, relationship selection, and masonry hover stability. These are useful checks, not proof of complete accessibility or of behavior on a physical iPhone. Native Safari, VoiceOver, and live authenticated Page notes were not exercised by the local sweep.
 
 The Nasu audit was applied as the project's advisory framework, not as participation by Kinoko Nasu. Its principal influence is to require observable preparation, consequential limits, and earned exceptions without explaining away the mysteries. The author's established outcomes remain controlling.
-
-## Cleanup status
-
-| Findings | Implemented scope | Still outside this cleanup |
-| --- | --- | --- |
-| R01-R04 | Foundation v2 follows Lester's ontology; the river record and testimony distinguish observations from an unknown surface mechanism; interrogation v2 uses the existing transfer clause once; Kyrien's leadership description names his work without claiming complete mastery. | Natalia's reciprocal favourite-student status, a broader river boundary, and any voice outside the encounter. |
-| R05-R06 | Approximate strands sit outside numbered timelines; the flask's origin is unplaced. The [Events, Witnesses, and Reveals reference](../docs.html?doc=reader-knowledge) separates occurrence, reader evidence, and character knowledge. | Exact political placement, Nameless Street's relation to Cardiff, and the unchosen family revelations. |
-| R08, R11-R12 | Chapter-format filters distinguish outlines, scenes, and writer gaps. Outlines and their linked Moments use neutral facts. The river table follows the prose's card-game timing and Reiner's awareness; Doom's preface preserves Kyrien's suspicion without giving him the withheld method. Selected repetitive institutional headings were simplified. Existing Chapter banter is unchanged. | Full new scenes, approval of The Name Left Behind, missing Moment coverage for unratified material, and a new Doom recovery passage. |
-| R16-R19 | The World entry point links brief term definitions to their owning records; public development prompts moved to Questions. House and Holumn layouts respond to their content pane. Portraits show era labels, Gallery offers only populated locations, and Music has an optional playable-only filter. | New metaphysical definitions or music assignments. |
-| R20-R21 | Shared section navigation and optional timeline collapse preserve the full default view. Note dialogs receive keyboard focus and close back to their trigger. Existing map arrow-key movement is retained and regression-tested. | Spoiler-default policy, native Safari and assistive-technology certification, and a redesign of the Page notes area. |
-| R22-R24 | Questions distinguish source uncertainty from resolved drift; archived documents retain the older readings. The maintenance charter names the new owners and boundaries. Explicit single-version documents keep their version URL in search. Tests cover intermediate-width clipping, reader controls, filters, notes, portraits, and selected source invariants. | Capability graph calibration and unresolved author choices must not become forced test expectations. |
-
-### Verification record
-
-The post-cleanup sweep covered 82 routes at 390, 1024, and 1440 pixels in Chromium and WebKit, 492 views with no detected internal text clipping, page-wide overflow, broken displayed images, or script errors. Dedicated regressions additionally exercise the House and Holumn panes at six widths from 700 to 1600 pixels, filters, current and historical version links, note focus and dismissal, map keyboard movement, artwork-era labels, and the flat-design rules. Native Safari on a physical iPhone, VoiceOver, and authenticated Page notes remain outside this local verification.
-
-Interaction testing also caught CSS display rules overriding the HTML hidden state. The shared visibility rule now keeps filtered cards, collapsed panels, and inactive reader content hidden. Map positions and their strings update together under reduced motion, without border-width drift during keyboard movement.
-
-### Author decisions still open
-
-1. Is Lynleit also Natalia's favourite student?
-2. What produces the river boundary, and how does the first pull from the boat work? Can the Choir speak outside this encounter?
-3. Where do the approximate late-Arc-1 strand and the Nameless Street fall relative to other plot phases?
-4. Should the archive offer a spoiler-conscious default, and should The Name Left Behind be developed or kept only as an unused outline?
-5. Which physical limits should the capability graph compare? Which concrete act divides Mikhail and Lynleit in Cardiff?
-6. Which new main-plot scenes should be drafted first, and what observable change in Kyrien should support a future Doom revision?
-
-These questions remain open. No new powers, training histories, graph scores, relationship milestones, cure mechanism, or exact reveal dates were supplied by the cleanup.
 
 ## What is already working
 

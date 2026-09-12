@@ -86,9 +86,46 @@
     "topic": "Editorial Audit",
     "file": "archive-audit-2026-09-12.md",
     "updated": "2026-09-12",
-    "description": "Approval-pending findings on canon consistency, chronology, prose, character development, reader knowledge, and responsive design. No audit actions have been implemented.",
+    "description": "Approved consistency and reading improvements, verification results, and the story decisions still reserved for the author.",
     "speakers": [
       "Archive Review"
+    ],
+    "versions": [
+      {
+        "id": "v1",
+        "label": "v1 · Archived",
+        "file": "archive-audit-2026-09-12-v1.md",
+        "updated": "2026-09-12",
+        "description": "Approval-pending findings on canon consistency, chronology, prose, character development, reader knowledge, and responsive design. No audit actions have been implemented."
+      },
+      {
+        "id": "v2",
+        "label": "v2 · Current",
+        "file": "archive-audit-2026-09-12.md",
+        "updated": "2026-09-12",
+        "description": "Approved consistency and reading improvements, verification results, and the story decisions still reserved for the author."
+      }
+    ],
+    "defaultVersion": "v2"
+  },
+  {
+    "slug": "reader-knowledge",
+    "title": "Events, Witnesses, and Reveals",
+    "topic": "Reader Knowledge",
+    "file": "reader-knowledge.md",
+    "updated": "2026-09-12",
+    "description": "Known event periods, character knowledge, and reader evidence for the major secrets, with unchosen reveal dates kept open.",
+    "speakers": [
+      "Author's Desk"
+    ],
+    "defaultVersion": "v1",
+    "versions": [
+      {
+        "id": "v1",
+        "label": "v1 · Current",
+        "file": "reader-knowledge.md",
+        "updated": "2026-09-12"
+      }
     ]
   },
   {
@@ -338,8 +375,8 @@
     "title": "Holumn Incidents and Victim Testimonies",
     "topic": "Holumn Archive",
     "file": "holumn-incidents-and-testimonies.md",
-    "updated": "2026-09-11",
-    "description": "Incident evidence, separate river Holumns, and the boundaries of taking, return, and identity.",
+    "updated": "2026-09-12",
+    "description": "Incident evidence and institutional readings, with the Drowned Choir’s observed surface boundary distinguished from an unexplained mechanism.",
     "speakers": [
       "Victims and Incident Witnesses",
       "Archive"
@@ -361,13 +398,20 @@
       },
       {
         "id": "v3",
-        "label": "v3 · Current",
-        "file": "holumn-incidents-and-testimonies.md",
+        "label": "v3 · Archived",
+        "file": "holumn-incidents-and-testimonies-v3.md",
         "updated": "2026-09-11",
         "description": "Incident evidence, separate river Holumns, and the boundaries of taking, return, and identity."
+      },
+      {
+        "id": "v4",
+        "label": "v4 · Current",
+        "file": "holumn-incidents-and-testimonies.md",
+        "updated": "2026-09-12",
+        "description": "Incident evidence and institutional readings, with the Drowned Choir’s observed surface boundary distinguished from an unexplained mechanism."
       }
     ],
-    "defaultVersion": "v3"
+    "defaultVersion": "v4"
   },
   {
     "slug": "questions-to-be-answered",
@@ -457,11 +501,28 @@
     "title": "Hidden World Foundation",
     "topic": "World Foundation",
     "file": "world-foundation.md",
-    "updated": "2026-09-05",
-    "description": "A direct guide to magic, Holumns, identity-bound curses, Lester's unresolved demiholumn nature, hidden history, political balance, and the setting's central conflict.",
+    "updated": "2026-09-12",
+    "description": "Magic, magecraft, hidden history, and Holumn ontology, with Lester’s contradictory continuity distinguished from an unknown transformation.",
     "speakers": [
       "World Archive"
-    ]
+    ],
+    "versions": [
+      {
+        "id": "v1",
+        "label": "v1 · Archived",
+        "file": "world-foundation-v1.md",
+        "updated": "2026-09-05",
+        "description": "A direct guide to magic, Holumns, identity-bound curses, Lester's unresolved demiholumn nature, hidden history, political balance, and the setting's central conflict."
+      },
+      {
+        "id": "v2",
+        "label": "v2 · Current",
+        "file": "world-foundation.md",
+        "updated": "2026-09-12",
+        "description": "Magic, magecraft, hidden history, and Holumn ontology, with Lester’s contradictory continuity distinguished from an unknown transformation."
+      }
+    ],
+    "defaultVersion": "v2"
   },
   {
     "slug": "magecraft-as-leverage",

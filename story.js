@@ -24,6 +24,7 @@ function renderStoryTimeline() {
     item.id = `phase-${phase.id}`;
     item.dataset.timelinePhase = phase.id;
     item.dataset.storyArc = phase.arc;
+    if (phase.placement) item.dataset.timelinePlacement = phase.placement;
     const marker = document.createElement('span');
     marker.className = 'timeline-marker';
     marker.textContent = phase.number;
@@ -118,6 +119,7 @@ function renderChapterMarkdown(markdown) {
     const headingMatch = line.match(/^(#{1,3})\s+(.+)$/);
     if (headingMatch) {
       const heading = document.createElement(`h${headingMatch[1].length}`);
+      heading.id = headingMatch[2].toLowerCase().replace(/[^a-z0-9\s-]/g, '').trim().replace(/\s+/g, '-');
       appendChapterInline(headingMatch[2], heading);
       fragment.append(heading);
       index += 1;
@@ -171,11 +173,11 @@ function chapterVersions(entry) {
   if (Array.isArray(entry.versions) && entry.versions.length) {
     return entry.versions.map((version, index) => ({
       id: version.id || `v${index + 1}`,
-      label: version.label || `Version ${index + 1}`,
+      label: version.label || `v${index + 1}`,
       ...version
     }));
   }
-  return [{ id: 'v1', label: 'Version 1' }];
+  return [{ id: 'v1', label: 'v1' }];
 }
 
 function resolveChapterVersion(entry, requestedVersion) {
@@ -198,7 +200,8 @@ function renderChapterVersionSwitcher(entry, selected) {
   if (!chapterVersionSwitcher || !chapterVersionOptions || !chapterVersionCurrent) return;
   const versions = chapterVersions(entry);
   chapterVersionSwitcher.hidden = versions.length < 2;
-  chapterVersionCurrent.textContent = `${selected.versionId}${selected.versionId === entry.defaultVersion ? ' · Canon' : ''}`;
+  const status = /canon/i.test(selected.status) ? 'Canon' : 'Current';
+  chapterVersionCurrent.textContent = `${selected.versionId}${selected.versionId === entry.defaultVersion ? ` · ${status}` : ''}`;
   window.renderVersionNavigation(chapterVersionOptions, versions, selected.versionId,
     id => `story.html?chapter=${encodeURIComponent(entry.slug)}&version=${encodeURIComponent(id)}`, entry.defaultVersion);
 }
@@ -207,6 +210,7 @@ function createChapterCard(entry) {
   const resolved = resolveChapterVersion(entry);
   const card = document.createElement('article');
   card.className = 'document-card chapter-card reveal is-visible';
+  card.dataset.contentKind = resolved.contentKind || 'scene';
 
   const link = document.createElement('a');
   link.className = 'document-card-link';
@@ -230,6 +234,9 @@ function createChapterCard(entry) {
 
   const description = document.createElement('p');
   description.textContent = resolved.description;
+  const kind = document.createElement('p');
+  kind.className = 'chapter-kind';
+  kind.textContent = chapterKindLabel(resolved);
 
   const timelinePosition = document.createElement('div');
   timelinePosition.className = 'chapter-card-timeline';
@@ -256,9 +263,13 @@ function createChapterCard(entry) {
   arrow.textContent = '→';
   footer.append(date, arrow);
 
-  link.append(top, title, description, timelinePosition, characters, footer);
+  link.append(top, title, kind, description, timelinePosition, characters, footer);
   card.append(link);
   return card;
+}
+
+function chapterKindLabel(entry) {
+  return { outline: 'Scene outline', scene: 'Scene draft', 'writer-gap': 'Scene with a writer gap' }[entry.contentKind] || 'Scene draft';
 }
 
 function showChapterLibrary(entries) {
@@ -269,11 +280,35 @@ function showChapterLibrary(entries) {
   chapterLibrary.hidden = false;
   storyHeading.hidden = false;
   chapterCardGrid.replaceChildren(...entries.map(createChapterCard));
+  const filters = document.createElement('div');
+  filters.className = 'archive-toolbar';
+  filters.setAttribute('role', 'group');
+  filters.setAttribute('aria-label', 'Chapter formats');
+  const group = document.createElement('div');
+  group.className = 'filter-group';
+  ['all', 'scene', 'outline', 'writer-gap'].forEach(kind => {
+    const button = document.createElement('button');
+    button.type = 'button';
+    button.className = 'filter-chip';
+    button.textContent = kind === 'all' ? 'All Chapters' : chapterKindLabel({ contentKind: kind });
+    button.setAttribute('aria-pressed', String(kind === 'all'));
+    button.classList.toggle('is-active', kind === 'all');
+    button.addEventListener('click', () => {
+      [...chapterCardGrid.children].forEach(card => { card.hidden = kind !== 'all' && card.dataset.contentKind !== kind; });
+      [...group.children].forEach(candidate => {
+        candidate.setAttribute('aria-pressed', String(candidate === button));
+        candidate.classList.toggle('is-active', candidate === button);
+      });
+    });
+    group.append(button);
+  });
+  filters.append(group);
+  chapterCardGrid.before(filters);
 }
 
 function setMomentContextPhase(phaseId) {
   if (!timelineTrack) return;
-  const phases = [...timelineTrack.querySelectorAll('[data-timeline-phase]')];
+  const phases = [...document.querySelectorAll('.story-timeline [data-timeline-phase]')];
   phases.forEach((phase) => phase.classList.remove('is-moment-context'));
   if (!phaseId) return;
   const activePhase = phases.find((phase) => phase.dataset.timelinePhase === phaseId);
@@ -293,7 +328,7 @@ async function initializeStoryMoments() {
     const response = await fetch('moments/index.json');
     if (!response.ok) throw new Error(`Moment catalog request failed: ${response.status}`);
     const moments = await response.json();
-    timelineTrack.querySelectorAll('[data-timeline-phase]').forEach((phase) => {
+    document.querySelectorAll('.story-timeline [data-timeline-phase]').forEach((phase) => {
       const anchored = moments.filter((moment) => moment.timelinePhase === phase.dataset.timelinePhase);
       if (!anchored.length) return;
       phase.classList.add('has-moments');
@@ -310,7 +345,7 @@ async function initializeStoryMoments() {
 
 function setActiveTimelinePhase(entry) {
   if (!timelineTrack) return;
-  const phases = [...timelineTrack.querySelectorAll('[data-timeline-phase]')];
+  const phases = [...document.querySelectorAll('.story-timeline [data-timeline-phase]')];
   phases.forEach((phase) => {
     phase.classList.remove('is-chapter-active');
     phase.removeAttribute('aria-current');
@@ -339,13 +374,17 @@ async function loadChapter(entry, requestedVersion) {
   chapterError.hidden = true;
   chapterMeta.textContent = 'Loading chapter…';
   chapterCrumb.textContent = `${entry.number}: ${entry.title}`;
-  chapterStatus.textContent = selected.status;
+  chapterStatus.textContent = `${selected.status} · ${chapterKindLabel(selected)}`;
+  const isOutline = selected.contentKind === 'outline';
+  document.querySelector('.chapter-preface').classList.toggle('is-outline', isOutline);
+  document.querySelector('.chapter-preface-legend').hidden = isOutline;
+  document.querySelector('#chapter-preface-title').textContent = isOutline ? 'Outline events' : 'Chapter preface';
   chapterSummary.textContent = selected.description;
   chapterReaderCharacters.replaceChildren(...createCharacterLabels(entry.characters));
   chapterEventList.replaceChildren(...(selected.events ?? []).map((event, index) => {
     const record = typeof event === 'string' ? { text: event, status: 'reader' } : event;
     const row = document.createElement('tr');
-    row.className = record.status === 'inferred' ? 'is-inferred' : 'is-reader';
+    row.className = isOutline ? 'is-continuity' : record.status === 'inferred' ? 'is-inferred' : 'is-reader';
     const number = document.createElement('th');
     number.scope = 'row';
     number.textContent = String(index + 1).padStart(2, '0');
@@ -357,12 +396,14 @@ async function loadChapter(entry, requestedVersion) {
   chapterSourceLink.href = `story/${selected.file}`;
   renderChapterVersionSwitcher(entry, selected);
   setActiveTimelinePhase(selected);
+  window.addTimelineToggle(document.querySelector('.story-timeline'));
 
   try {
     const response = await fetch(`story/${selected.file}`);
     if (!response.ok) throw new Error(`Chapter request failed: ${response.status}`);
     const markdown = await response.text();
     chapterReader.append(renderChapterMarkdown(markdown));
+    window.addReaderSections(chapterReader);
     if (window.MAGIARCHY_BEHAVIOR_NOTES) {
       try {
         const registry = await window.MAGIARCHY_BEHAVIOR_NOTES.load();

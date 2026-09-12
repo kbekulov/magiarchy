@@ -10,6 +10,7 @@ if (musicFilterForm) {
     text: [card.querySelector('h2')?.textContent, card.querySelector('.music-card-body > p')?.textContent, ...facets.map(key => card.dataset[key] || '')].join(' ').toLocaleLowerCase()
   }));
   const search = document.querySelector('#music-search');
+  const playableOnly = document.querySelector('#music-playable-only');
   const tagGroup = document.querySelector('#music-tag-chips');
   let selectedTag = 'all';
   const buttons = [...document.querySelectorAll('.music-filters [data-category]')];
@@ -18,6 +19,7 @@ if (musicFilterForm) {
   let category = 'all';
   const params = new URLSearchParams(location.search);
   search.value = params.get('q') || '';
+  playableOnly.checked = params.get('playable') === '1';
   if (facets.includes(params.get('category'))) category = params.get('category');
 
   function fillTags(selected = 'all') {
@@ -43,7 +45,8 @@ if (musicFilterForm) {
       const scopedTags = keys.flatMap(key => item.tags[key]);
       const visible = (category === 'all' || scopedTags.length > 0)
         && (selectedTag === 'all' || scopedTags.includes(selectedTag))
-        && terms.every(term => item.text.includes(term));
+        && terms.every(term => item.text.includes(term))
+        && (!playableOnly.checked || Boolean(item.card.querySelector('audio')));
       item.card.hidden = !visible;
       if (visible) { count++; if (item.card.querySelector('audio')) playable++; }
       else item.card.querySelector('audio')?.pause();
@@ -56,17 +59,18 @@ if (musicFilterForm) {
       button.setAttribute('aria-pressed', String(active));
     });
     const url = new URL(location.href);
-    [['q', search.value.trim()], ['category', category === 'all' ? '' : category], ['tag', selectedTag === 'all' ? '' : selectedTag]].forEach(([key,value]) => value ? url.searchParams.set(key,value) : url.searchParams.delete(key));
+    [['q', search.value.trim()], ['category', category === 'all' ? '' : category], ['tag', selectedTag === 'all' ? '' : selectedTag], ['playable', playableOnly.checked ? '1' : '']].forEach(([key,value]) => value ? url.searchParams.set(key,value) : url.searchParams.delete(key));
     history.replaceState(null, '', url);
   }
   function resetMusic() {
-    category = 'all'; search.value = ''; fillTags(); filterMusic();
+    category = 'all'; search.value = ''; playableOnly.checked = false; fillTags(); filterMusic();
   }
   buttons.forEach(button => button.addEventListener('click', () => {
     category = button.dataset.category; fillTags(); filterMusic();
   }));
   document.querySelector('#music-empty-reset').addEventListener('click', () => { resetMusic(); search.focus(); });
   search.addEventListener('input', filterMusic);
+  playableOnly.addEventListener('change', filterMusic);
 
   fillTags(params.get('tag'));
   filterMusic();

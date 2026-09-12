@@ -20,9 +20,7 @@ In Doom Has an Address (HI-006), destroying the Holumn activates its fatal curse
 
 ### A Demiholumn Exists
 
-Lester is a demiholumn, half human and half Holumn. Neither he nor Natalia knows how he came to exist. The chronological facts of his biography cannot form a continuous causal history. His origin lies beyond normal human comprehension, not in a discoverable transformation, experiment, infection, or ordinary supernatural mechanism.
-
-Natalia comes to recognize contradiction itself as an intrinsic feature of nature. Lester can belong to reality without his biography becoming causally consistent. This does not give him unlimited powers or establish that another Holumn took or returned him. See [Lester](../character.html?character=lester) and the [incident archive](../docs.html?doc=holumn-incidents-and-testimonies#lester-and-continuity).
+Lester is a demiholumn, half human and half Holumn. His existence does not yet have a complete explanation. It is unclear whether he was born this way, became this way, or requires a different account entirely.
 
 Lester acts as Natalia's trusted outside ally. His part-Holumn nature sometimes lets him accomplish what should be impossible through ordinary investigation or conventional magecraft. The limits, cost, and institutional consequences of that nature remain unresolved.
 
@@ -50,7 +48,9 @@ The institutions responsible for secrecy place social stability above public acc
 
 ## Suppression Doctrine
 
-The Church and Magiarchy share responsibility for containing public knowledge of magic, with final sanction held by the Church. The response depends on the witness and the exposure; it can include discrediting, coercion, forced service, or killing. The [Church's suppression doctrine](../church.html#suppression-doctrine-title) owns the full account of those responses and the disputes they create.
+The Church and the Magiarchy share responsibility for suppression doctrine. It exists to keep knowledge of magic from spreading through ordinary society, but the Church holds final sanction over its use. Magiarchal resources may investigate, contain, absorb, or remove witnesses under that authority. The doctrine does not prescribe one automatic punishment. The response depends on the witness, the credibility of their account, the scale of exposure, and the danger of leaving them outside institutional control.
+
+Possible responses include murder, assassination, or kidnapping; extortion, intimidation, or bribery; framing the witness as mentally ill; forced integration into Church staff or clergy; and forced integration into Magiarchy service staff or a comparable supervised role. Officials weigh secrecy, risk, and moral cost in each case.
 
 ## The First Missing Person
 

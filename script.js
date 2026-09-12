@@ -255,6 +255,76 @@ filterButtons.forEach((button) => {
   });
 });
 
+// Shared reader controls. They do not change the default spoiler or timeline view.
+window.addReaderSections = (root) => {
+  if (!root) return;
+  const sections = [...root.querySelectorAll('h2, h3')].filter(h => !h.closest('[hidden]'));
+  const major = sections.filter(h => h.tagName === 'H2');
+  const headings = major.length >= 3 ? major : sections;
+  if (headings.length < 3) return;
+  const id = `reader-sections-${root.id}`;
+  let nav = document.getElementById(id);
+  if (!nav) {
+    nav = document.createElement('nav');
+    nav.id = id;
+    nav.className = 'reader-section-nav';
+    nav.setAttribute('aria-label', 'On this page');
+    const label = document.createElement('label');
+    label.htmlFor = `${id}-select`;
+    label.textContent = 'On this page';
+    const select = document.createElement('select');
+    select.id = label.htmlFor;
+    select.addEventListener('change', () => {
+      const target = document.getElementById(select.value);
+      if (!target) return;
+      target.tabIndex = -1;
+      target.focus({ preventScroll: true });
+      target.scrollIntoView({ block: 'start', behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth' });
+      const url = new URL(location.href);
+      url.hash = target.id;
+      history.replaceState(history.state, '', url);
+    });
+    nav.append(label, select);
+    if (root.id === 'character-profile-content') root.querySelector('.character-personal-timeline').before(nav);
+    else if (root.id === 'moment-reader') root.querySelector('.moment-reader-hero').after(nav);
+    else root.before(nav);
+  }
+  const placeholder = document.createElement('option');
+  placeholder.value = '';
+  placeholder.textContent = 'Jump to section';
+  const options = headings.map((heading, index) => {
+    if (!heading.id) heading.id = `${root.id}-section-${index + 1}`;
+    const option = document.createElement('option');
+    option.value = heading.id;
+    option.textContent = heading.textContent.trim();
+    return option;
+  });
+  nav.querySelector('select').replaceChildren(placeholder, ...options);
+};
+
+window.addTimelineToggle = (panel) => {
+  if (!panel || panel.querySelector('.timeline-toggle')) return;
+  const header = panel.querySelector(':scope > header');
+  if (!header) return;
+  const content = document.createElement('div');
+  content.id = `${header.querySelector('h2').id}-content`;
+  content.className = 'timeline-content';
+  [...panel.children].filter(child => child !== header).forEach(child => content.append(child));
+  const button = document.createElement('button');
+  button.className = 'timeline-toggle';
+  button.type = 'button';
+  button.textContent = 'Collapse timeline';
+  button.setAttribute('aria-expanded', 'true');
+  button.setAttribute('aria-controls', content.id);
+  button.addEventListener('click', () => {
+    content.hidden = !content.hidden;
+    button.setAttribute('aria-expanded', String(!content.hidden));
+    button.textContent = content.hidden ? 'Expand timeline' : 'Collapse timeline';
+  });
+  header.append(button);
+  panel.append(content);
+};
+
 const galleryCharacterFilter = document.querySelector('#gallery-character-filter');
 const galleryLocationFilter = document.querySelector('#gallery-location-filter');
 const galleryChibiFilter = document.querySelector('#gallery-chibi-filter');
@@ -274,6 +344,17 @@ const galleryDetailSource = document.querySelector('#gallery-detail-source');
 
 function initializeGalleryCards() {
   if (!galleryItems.length) return;
+
+  if (galleryLocationFilter) {
+    const available = new Set([...galleryItems].map(card => card.dataset.location).filter(Boolean));
+    const labels = new Map([...galleryLocationFilter.options].map(option => [option.value, option.textContent]));
+    galleryLocationFilter.replaceChildren(...['all', ...[...available].sort()].map(value => {
+      const option = document.createElement('option');
+      option.value = value;
+      option.textContent = labels.get(value) || value;
+      return option;
+    }));
+  }
 
   galleryItems.forEach((card) => {
     const image = card.querySelector('img');
