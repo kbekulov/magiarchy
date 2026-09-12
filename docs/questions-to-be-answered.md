@@ -35,7 +35,10 @@ Story, character, world, relationship, institution, location, and event question
 | Location | What was the Director's House called before it acquired that title, and who gave it the name? | 0% |
 | Private investigation | How do clients find Natalia, and how does she screen cases without alerting the Magiarchy or Church? | 0% |
 | Kyrien | Which of his father's contacts does Kyrien still use, and what obligations does he have to them? | 0% |
-| Sherie and Felix | Does Sherie's competitive interest in Felix become reciprocal intimacy, and which moment proves that she wants him rather than the victory of drawing his attention away from Lynleit? | 0% |
+| Sherie and Felix | Which repeated professional assignments first give them private jokes and familiarity, and where do these encounters fall in the main plot? | 0% |
+| Sherie and Felix | What makes Felix recognize that he wants Sherie herself, and what experiences loosen his emotionally significant fixation on Lynleit? | 0% |
+| Sherie and Felix | When does Sherie first feel unseen, what boundary does she set, and how does Felix respond? | 0% |
+| Sherie and Felix | Which moments let one stop performing and receive care from the other, and when do they consciously choose intimacy? | 0% |
 | Items & Artefacts | What does "hide of leviathan" mean, and is the material connected to the river phenomenon recorded as HI-004? | 0% |
 | Helena | Is Helena a Magus, and how does she gain access to supernatural institutions? | 5% |
 | Spill inquiry | Whom does Lynleit consult about the Spill, and what does each person know? | 5% |

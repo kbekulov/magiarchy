@@ -89,6 +89,21 @@ try {
       assert.ok(thumbs, 'Portrait thumbnails load full-size originals');
       await page.locator('.profile-art-thumbnails button').first().click();
       await page.screenshot({ path: `test-results/${engine}-portrait.png`, fullPage: true });
+      for (const width of [390, 1440]) {
+        await page.setViewportSize({ width, height: 900 });
+        for (const [slug, other] of [['sherie', 'felix'], ['felix', 'sherie']]) {
+          await visit(`character.html?character=${slug}`);
+          await page.locator(`.relationship-node[data-slug="${other}"]`).click();
+          assert.ok((await page.locator('.relationship-map-detail').textContent()).includes('no meaningful personal relationship'), `${slug}: relationship detail is stale`);
+          assert.ok((await page.locator('.sexual-tension-module').textContent()).includes('Author-confirmed direction'), `${slug}: tension registry is stale`);
+          assert.ok(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1), `${slug}/${width}: relationship content overflow`);
+        }
+      }
+      await visit('docs.html?doc=character-intimacy-and-sexuality');
+      assert.ok((await page.locator('#document-reader').textContent()).includes('Two relationship directions'), 'Current intimacy document is stale');
+      await visit('docs.html?doc=character-intimacy-and-sexuality&version=v8');
+      assert.ok(!(await page.locator('#document-reader').textContent()).includes('Two relationship directions'), 'New prose leaked into v8');
+      assert.ok((await page.locator('#document-reader').textContent()).includes('Mutual play, sincerity unresolved'), 'Archived tension data was not preserved');
       await page.setViewportSize({ width: 1440, height: 900 });
       for (const [route, selector] of [['characters.html', '.character-card'], ['gallery.html', '.gallery-card'], ['music.html', '.music-card'], ['docs.html', '.document-card'], ['moments.html', '.moment-card']]) {
         await visit(route);

@@ -25,6 +25,20 @@ for (const profile of profiles) {
   assert.equal(new Set(profile.beats).size, profile.beats.length, `${profile.slug}: duplicate beats`);
 }
 assert.ok(!source.includes('const timelineDetails = [profile.origin'), 'Positional timeline prose returned');
+// A confirmed relationship direction must not leak into earlier document snapshots.
+const intimacy = json('docs/index.json').find(doc => doc.slug === 'character-intimacy-and-sexuality');
+const currentTension = json(`docs/${selected(intimacy).tensionFile}`);
+const sherieFelix = currentTension.pairs.find(pair => pair.id === 'sherie-felix');
+assert.equal(sherieFelix.status, 'Author-confirmed direction');
+assert.ok(sherieFelix.dynamic.includes('no meaningful personal relationship'), 'Sherie and Felix must not begin already close');
+assert.ok(sherieFelix.participants.find(person => person.slug === 'felix').reading.includes('internally fixated on Lynleit'), 'Felix must retain his unresolved attachment');
+for (const [slug, other] of [['sherie', 'Felix'], ['felix', 'Sherie']]) {
+  assert.ok(profiles.find(profile => profile.slug === slug).connections.some(link => link.name === other), `${slug}: missing reciprocal relationship-map record`);
+}
+const oldIntimacy = intimacy.versions.find(version => version.id === 'v8');
+assert.notEqual(oldIntimacy.file, selected(intimacy).file);
+assert.notEqual(oldIntimacy.tensionFile, selected(intimacy).tensionFile);
+assert.ok(!read(`docs/${oldIntimacy.file}`).includes('12 September 2026'), 'New relationship direction leaked into v8');
 // Author-confirmed boundaries must survive later continuity edits.
 const holumnCanon = json('holumns/index.json');
 assert.ok(holumnCanon.principles.some(text => text.includes('no universal destination')), 'Holumn taking must not imply a universal destination');

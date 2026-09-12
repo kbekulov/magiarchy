@@ -12,17 +12,6 @@ A writer's reference to affection, attraction, initiative, and particular partne
 
 Doom Has an Address follows v7. Lynleit and Kyrien survive after an incomplete attempt at intimacy. The hotel refuge precedes Doom, which belongs in the later part of Arc 1's second half. Months later, the park encounter establishes successful oral intimacy. First intercourse is a separate later milestone; its exact placement is unresolved.
 
-## Two relationship directions
-
-**Author-confirmed direction, 12 September 2026.** Sherie and Felix have no meaningful personal relationship at the opening. Her diplomatic responsibilities increasingly overlap with his work around Lynleit and MSF. Repeated assignments bring familiarity, respect, private jokes, and an unexpectedly compatible rhythm before either chooses personal closeness. Lynleit, by contrast, deliberately recruits Kyrien for strategic reasons and cannot anticipate the emotional consequences.
-
-| Pair | Familiarity and private rhythm | Vulnerability and unresolved pressure |
-| --- | --- | --- |
-| Sherie and Felix | She enjoys directing the exchange; he improvises, teases back, and makes her work for the response. Humor, visible enjoyment, mutual provocation, and occasional reversals carry into affection and eventual adult intimacy. | He can enjoy and seek her company while still imagining a future with Lynleit. Sherie can recognize the possibility first without being willing to accept whatever attention he offers. Their care becomes especially revealing when a joke fails or neither feels able to perform. |
-| Lynleit and Kyrien | Restrained attention, private tells, protected secrets, and practical dependence gradually make quiet companionship possible. Her initiative, pride, and curiosity meet his reserve and observation. | Being recognized and challenged matters alongside being protected. Both must allow the other to affect them instead of continually managing what can be noticed. Their restraint can become unnecessary without making either consistently forthcoming. |
-
-These are development directions, not a fixed sequence of new scenes. Neither pair should perform its characteristic rhythm in every exchange. The political and supernatural story supplies their work, loyalties, and immediate priorities; intimacy remains a subplot.
-
 ## Lynleit
 
 **Basis: Established relationship; later behavior partly interpreted**
@@ -50,8 +39,6 @@ Their later pattern makes Lynleit the more frequent initiator. She is more vocal
 She knows his failed assassination nearly harmed her. He never learns she was there. That withheld fact gives the interrogation a personal edge before there is any attraction.
 
 Card games during the river watches give them something to do together outside her orders. She asks for rematches, learns his held breath before a risk, and catches him watching her hands. He protects her water-walking secret. Their recovery in the park and the later hotel refuge remain non-sexual.
-
-Her initiative and curiosity do not spare her the discomfort of being read accurately. Kyrien's quiet company can matter without requiring a conversation about it. Their growing intimacy needs moments when she lets his attention reach her without immediately turning it into a test or taking charge of what he is allowed to see.
 
 He eventually stays when she can no longer compel him. When she asks what reward makes the danger worthwhile, he answers, "Because there's a battle to be fought." She cannot dismiss his persistence as obedience or explain it through a promise she made him.
 
@@ -84,8 +71,6 @@ Their games provoke his need to win. Her ability to read him irritates him and d
 He does not explain his decision to stay as a romantic sacrifice. He wants the battle. The question of how much he is still trying to prove to his father remains open.
 
 When she refuses to discuss the attempted intimacy, he lets the subject rest without ceasing to wonder about it. Their later sexual relationship need not settle every disagreement or make him talkative.
-
-His observation must eventually allow reciprocal exposure. Lynleit can recognize or challenge him too; he cannot always remain the unreadable person who notices everything about her. Remaining beside one another, accepting help, and allowing an unguarded response carry their trust without requiring eloquence.
 
 ### Writing guardrail
 
@@ -177,7 +162,7 @@ Give him reasons to listen that arise from the case as well as the relationship.
 
 ## Felix
 
-**Basis: Established asymmetry with Lynleit; author-confirmed gradual relationship direction with Sherie**
+**Basis: Established flirtation and asymmetric tension with Lynleit**
 
 ### Natural approach
 
@@ -185,23 +170,17 @@ Felix flirts, jokes, and watches the response. Serious feelings can be harder fo
 
 ### Sexual expression
 
-His eventual intimacy with Sherie retains their humor, visible enjoyment, mutual provocation, and occasional reversals. He can challenge her confident lead without needing to win every exchange. This is confirmed direction; specific encounters remain unwritten.
+The working interpretation makes him communicative, playful, and comfortable initiating. His private behavior has not yet been established in a scene.
 
 ### With Lynleit and Sherie
 
 Lynleit deflects his advances while remaining his close friend. His attraction does not establish a matching desire on her side.
 
-At the opening, he and Sherie have no meaningful personal relationship. Professional overlap brings them together repeatedly. He enjoys complicating her direction of an exchange, answers her teasing, and gradually seeks out her company. Familiarity and respect accumulate alongside private jokes.
-
-He remains internally fixated on Lynleit throughout that developing chemistry. His responses to Sherie can be immediate and sincere while his interpretation remains organized around Lynleit. He may regard Sherie's interest as her usual charm or their closeness as an unusually entertaining professional friendship. He can become emotionally invested before recognizing the intimate possibility. His attachment to Lynleit carries genuine disappointment and hope; one successful flirtation cannot dissolve it.
-
-Sherie comes to recognize the seriousness beneath his jokes. With her, he need not always supply the entertainment. His eventual movement toward her requires recognizing someone he wants in her own right, not accepting a substitute after disappointment with Lynleit.
+Sherie can match his wit. Their similar habits allow them to keep flirting without saying anything definite. His attachment to Lynleit complicates Sherie's interest in him.
 
 ### Writing guardrail
 
 An unsuccessful joke, a change of subject, or a plain answer can distinguish his sincere attention from his usual performance.
-
-Let readers notice the difference between whom he imagines being close to and whom he is actually becoming close to. Do not add a narrator's verdict explaining the contradiction after an exchange has made it visible.
 
 ## Reiner
 
@@ -225,7 +204,7 @@ His reserve leaves room for warmth. It does not prescribe how every private enco
 
 ## Sherie
 
-**Basis: Established personality; author-confirmed gradual relationship direction with Felix**
+**Basis: Established personality and flirtation; sexual behavior unresolved**
 
 ### Natural approach
 
@@ -233,27 +212,21 @@ Sherie enjoys attention and praise. Flirting is also part of her diplomatic skil
 
 ### Sexual expression
 
-With Felix, her confident, playful lead carries into affection and eventual adult intimacy. He enjoys challenging it, and she can enjoy an unexpected reversal. Humor and visible pleasure belong to their shared rhythm; no specific encounter or choreography has been established.
+A playful, verbally expressive approach is plausible. Her actual preferences remain unwritten.
 
 ### With Felix and Kyrien
 
 Kyrien is a potential source of tension because he does not give her the reactions she expects. Repeated negotiation could turn that frustration personal. No relationship between them is established.
 
-Her connection with Felix grows slowly through recurring diplomatic and MSF work, not an immediate personal bond. He responds readily and teases back, making her work for the reaction she wants. She can become theatrical, petty, ridiculous, or openly delighted around him without losing his respect. In turn, she learns to take his seriousness as readily as his jokes.
-
-She may understand the intimate possibility before he does. His attachment to Lynleit can hurt even when he is attentive to Sherie. Her confidence leaves room for disappointment and doubt about whether he sees her clearly. She has boundaries and reasons to reconsider the closeness; she is not obliged to keep charming him until he notices her. The particular moments that expose those limits remain to be written.
-
-The already-recorded later exchange with Lynleit retains its teasing rivalry. After learning that Lynleit has slept with Kyrien, Sherie challenges Lynleit's continuing sense of responsibility for Felix:
+Felix responds readily and can answer her teasing in kind. After learning that Lynleit has slept with Kyrien, Sherie challenges Lynleit's continuing sense of responsibility for Felix:
 
 "What exactly is this? Do you imagine every man is your permanent responsibility? Felix is not your wounded soldier. If you refuse to have him, I may very well take him myself, you shameless hussy!"
 
-Lynleit objects to her playing with him. The boast does not define the origin or extent of Sherie's interest. Her own attachment develops through accumulated familiarity with Felix, and his fixation cannot be settled as a contest between the two women. This exchange belongs after Lynleit and Kyrien's later completed encounter, not immediately after Doom Has an Address; it does not date the beginning of Sherie and Felix's professional contact.
+Lynleit objects to her playing with him. Sherie's interest includes competition with Lynleit, but whether it becomes lasting affection for Felix remains unresolved. This exchange belongs after Lynleit and Kyrien's later completed encounter, not immediately after Doom Has an Address.
 
 ### Writing guardrail
 
 Allow a sincere request to sound less polished than her diplomatic speech.
-
-Keep the care reciprocal. Felix can respond when her performance falters, just as she can stay attentive when he stops entertaining her. Neither needs to turn every such moment into a confession.
 
 ## Drake
 

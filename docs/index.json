@@ -207,12 +207,12 @@
     "title": "Character Intimacy and Sexuality Reference",
     "topic": "Writer's Character Reference",
     "file": "character-intimacy-and-sexuality.md",
-    "updated": "2026-09-11",
-    "description": "Character-specific intimacy and the confirmed two-child direction, with distinct Arc 2 and post-Arc 2 reveal boundaries.",
+    "updated": "2026-09-12",
+    "description": "Sherie and Felix's gradual professional familiarity, Felix's unresolved attachment to Lynleit, and the distinct private rhythms of both central pairings.",
     "speakers": [
       "Character Archive"
     ],
-    "defaultVersion": "v8",
+    "defaultVersion": "v9",
     "versions": [
       {
         "id": "v1",
@@ -272,10 +272,18 @@
       },
       {
         "id": "v8",
-        "label": "v8 · Current",
-        "file": "character-intimacy-and-sexuality.md",
+        "label": "v8 · Archived",
+        "file": "character-intimacy-and-sexuality-v8.md",
         "updated": "2026-09-11",
         "description": "Character-specific intimacy and the confirmed two-child direction, with distinct Arc 2 and post-Arc 2 reveal boundaries.",
+        "tensionFile": "sexual-tension-notes-v8.json"
+      },
+      {
+        "id": "v9",
+        "label": "v9 · Current",
+        "file": "character-intimacy-and-sexuality.md",
+        "updated": "2026-09-12",
+        "description": "Sherie and Felix's gradual professional familiarity, Felix's unresolved attachment to Lynleit, and the distinct private rhythms of both central pairings.",
         "tensionFile": "sexual-tension-notes.json"
       }
     ]
@@ -321,7 +329,7 @@
     "title": "Questions to Be Answered",
     "topic": "Editorial Ledger",
     "file": "questions-to-be-answered.md",
-    "updated": "2026-09-11",
+    "updated": "2026-09-12",
     "description": "Unanswered questions about chronology, family reveals, Holumn effects, and the limits of established lore.",
     "speakers": [
       "Author's Desk"
@@ -333,7 +341,7 @@
     "title": "Contradictions to Resolve",
     "topic": "Editorial Ledger",
     "file": "contradictions-to-resolve.md",
-    "updated": "2026-09-11",
+    "updated": "2026-09-12",
     "description": "Current cross-version decisions, including Doom v7 and the park v2 correction.",
     "speakers": [
       "Author's Desk"
