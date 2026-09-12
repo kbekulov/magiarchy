@@ -135,6 +135,31 @@ try {
         const available = await page.locator('.gallery-card').evaluateAll(cards => ['all', ...new Set(cards.map(card => card.dataset.location))].sort());
         const options = await page.locator('#gallery-location-filter option').evaluateAll(nodes => nodes.map(node => node.value).sort());
         assert.deepEqual(options, available, 'Gallery offers an unpopulated location');
+        const sharedArtwork = 'char-lynleit-felix-1';
+        for (const slug of ['lynleit', 'felix']) {
+          await page.locator('#gallery-character-filter').selectOption(slug);
+          const card = page.locator(`.gallery-card[data-image="${sharedArtwork}"]`);
+          assert.ok(await card.isVisible(), `${slug}: shared artwork missing from Gallery filter`);
+          await page.locator('.chibi-toggle').click();
+          assert.ok(await page.locator('#gallery-chibi-filter').isChecked());
+          assert.ok(await card.isHidden(), 'Shared illustration appears in chibi-only results');
+          await page.locator('.chibi-toggle').click();
+          assert.ok(!await page.locator('#gallery-chibi-filter').isChecked());
+        }
+        await visit(`gallery.html?image=${sharedArtwork}`);
+        assert.ok(await page.locator('#gallery-reader-view').isVisible());
+        assert.ok((await page.locator('#gallery-detail-source').getAttribute('href')).endsWith(`${sharedArtwork}.png`));
+        await page.screenshot({ path: `test-results/${engine}-shared-art-gallery-${width}.png`, fullPage: true });
+        for (const slug of ['lynleit', 'felix']) {
+          await visit(`character.html?character=${slug}`);
+          const thumb = page.locator(`.profile-art-thumbnails button:has(img[src$="${sharedArtwork}.webp"])`);
+          assert.equal(await thumb.count(), 1, `${slug}: shared artwork missing from portraits`);
+          await thumb.click();
+          assert.equal(await thumb.getAttribute('aria-pressed'), 'true');
+          await page.waitForFunction(source => [...document.querySelectorAll('.profile-portrait-strip img')].some(image => image.src.endsWith(`${source}.png`) && image.alt && image.complete && image.naturalWidth === 1024), sharedArtwork);
+          assert.ok(await page.locator(`.profile-portrait-strip img[src$="${sharedArtwork}.png"]`).evaluateAll(images => images.some(image => image.alt && image.complete && image.naturalWidth === 1024)), `${slug}: selected shared portrait failed to load`);
+          await page.locator('#character-profile-portrait').screenshot({ path: `test-results/${engine}-shared-art-${slug}-${width}.png` });
+        }
         await visit('music.html');
         const musicCount = await page.locator('.music-card').count();
         const playableCount = await page.locator('.music-card:has(audio)').count();
