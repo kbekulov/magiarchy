@@ -150,6 +150,10 @@ try {
         await page.locator('#music-empty-reset').click();
         assert.equal(await page.locator('.music-card:visible').count(), musicCount);
         await visit('story.html');
+        const formats = await page.getByRole('group', { name: 'Chapter formats', exact: true }).boundingBox();
+        const chapterGrid = await page.locator('#chapter-card-grid').boundingBox();
+        assert.ok(chapterGrid.y - formats.y - formats.height >= 12, 'Chapter filters are glued to the cards');
+        assert.ok(Math.abs(chapterGrid.x - formats.x) < 1, 'Chapter filters have inconsistent gutters');
         await page.getByRole('button', { name: 'Scene outline', exact: true }).click();
         assert.equal(await page.locator('.chapter-card:visible').count(), await page.locator('.chapter-card[data-content-kind="outline"]').count());
         await visit('story.html?chapter=after-the-failed-attempt');
@@ -168,8 +172,10 @@ try {
         assert.equal(await page.locator('.timeline-approximate [aria-current="step"]').count(), 1);
         await page.getByRole('button', { name: 'Collapse timeline' }).click();
         assert.ok(await page.locator('.timeline-content').isHidden());
+        assert.ok(await page.locator('.timeline-header-actions .timeline-scroll-cue').isHidden(), 'Collapsed timeline still asks the reader to drag');
         await page.getByRole('button', { name: 'Expand timeline' }).click();
         assert.ok(await page.locator('.timeline-content').isVisible());
+        assert.ok(await page.locator('.timeline-header-actions .timeline-scroll-cue').isVisible());
         await page.locator('.timeline-approximate').scrollIntoViewIfNeeded();
         await page.screenshot({ path: `test-results/${engine}-approximate-story-${width}.png` });
         const sections = page.locator('.reader-section-nav select');
@@ -194,12 +200,44 @@ try {
         assert.ok(await page.locator('.profile-art-era').isVisible());
         const node = page.locator('.relationship-node:not(.is-center)').first();
         await node.focus();
-        const beforeMove = await node.boundingBox();
+        // Compare map-local coordinates: WebKit can finish scrolling the focused
+        // node into view between calls without the node moving within its map.
+        const mapPosition = () => node.evaluate(el => {
+          const bounds = el.getBoundingClientRect();
+          const stage = el.parentElement.getBoundingClientRect();
+          return { x: bounds.x - stage.x, y: bounds.y - stage.y };
+        });
+        const beforeMove = await mapPosition();
         await page.keyboard.press('ArrowRight');
-        const afterMove = await node.boundingBox();
+        const afterMove = await mapPosition();
         assert.ok(Math.abs(afterMove.x - beforeMove.x - 12) < 1, 'Relationship keyboard movement failed');
         assert.ok(Math.abs(afterMove.y - beforeMove.y) < 1, 'Horizontal map movement drifted vertically');
         await page.screenshot({ path: `test-results/${engine}-reader-controls-${width}.png` });
+      }
+      for (const width of [320, 390, 820, 1024, 1440, 2560]) {
+        await page.setViewportSize({ width, height: 900 });
+        await visit('docs.html?doc=prose-style&version=v8');
+        const toolbar = page.locator('.document-shell > .reader-toolbar');
+        assert.equal(await toolbar.locator('.document-meta').count(), 1, 'Reader metadata left outside its toolbar');
+        const sectionNav = toolbar.locator('.reader-section-nav');
+        const navBounds = await sectionNav.boundingBox();
+        const selectBounds = await sectionNav.locator('select').boundingBox();
+        assert.ok(navBounds.height <= 48, `Section navigation became a tall panel at ${width}px`);
+        assert.ok(selectBounds.height >= 44 && selectBounds.width <= 331, 'Section selector lost its bounded touch target');
+        assert.equal(await sectionNav.evaluate(el => getComputedStyle(el).borderTopWidth), '0px');
+        assert.ok((await toolbar.boundingBox()).height <= 140, `Reader toolbar too tall at ${width}px`);
+        assert.ok(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1));
+        await toolbar.scrollIntoViewIfNeeded();
+        await page.screenshot({ path: `test-results/${engine}-compact-reader-${width}.png` });
+        const sectionId = await sectionNav.locator('option').nth(1).getAttribute('value');
+        await sectionNav.locator('select').selectOption(sectionId);
+        assert.ok(page.url().includes('version=v8') && page.url().endsWith(`#${sectionId}`));
+        assert.equal(await page.evaluate(() => document.activeElement.id), sectionId);
+        await visit('world.html');
+        const terms = await page.locator('.world-term-guide').boundingBox();
+        const records = await page.locator('.world-record-section').first().boundingBox();
+        assert.ok(Math.abs(terms.x - records.x) < 1 && Math.abs(terms.width - records.width) < 1, `Glossary gutters differ from World records at ${width}px`);
+        assert.ok(await page.locator('.world-term-guide dl').evaluate(el => getComputedStyle(el).gridTemplateColumns.split(' ').length <= 3), 'Glossary has a ragged four-column grid');
       }
       await visit('story.html?chapter=doom-has-an-address');
       const proseLink = page.locator('#chapter-reader .archive-entity-link').first();

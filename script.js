@@ -287,7 +287,20 @@ window.addReaderSections = (root) => {
     nav.append(label, select);
     if (root.id === 'character-profile-content') root.querySelector('.character-personal-timeline').before(nav);
     else if (root.id === 'moment-reader') root.querySelector('.moment-reader-hero').after(nav);
-    else root.before(nav);
+    else {
+      const shell = root.closest('.document-shell');
+      const meta = shell?.querySelector('.document-meta');
+      if (meta) {
+        let toolbar = shell.querySelector('.reader-toolbar');
+        if (!toolbar) {
+          toolbar = document.createElement('div');
+          toolbar.className = 'reader-toolbar';
+          meta.before(toolbar);
+          toolbar.append(meta);
+        }
+        toolbar.append(nav);
+      } else root.before(nav);
+    }
   }
   const placeholder = document.createElement('option');
   placeholder.value = '';
@@ -310,6 +323,9 @@ window.addTimelineToggle = (panel) => {
   content.id = `${header.querySelector('h2').id}-content`;
   content.className = 'timeline-content';
   [...panel.children].filter(child => child !== header).forEach(child => content.append(child));
+  const actions = document.createElement('div');
+  actions.className = 'timeline-header-actions';
+  [...header.children].slice(1).forEach(child => actions.append(child));
   const button = document.createElement('button');
   button.className = 'timeline-toggle';
   button.type = 'button';
@@ -320,8 +336,10 @@ window.addTimelineToggle = (panel) => {
     content.hidden = !content.hidden;
     button.setAttribute('aria-expanded', String(!content.hidden));
     button.textContent = content.hidden ? 'Expand timeline' : 'Collapse timeline';
+    actions.querySelectorAll('.timeline-scroll-cue, :scope > span').forEach(cue => { cue.hidden = content.hidden; });
   });
-  header.append(button);
+  actions.append(button);
+  header.append(actions);
   panel.append(content);
 };
 
