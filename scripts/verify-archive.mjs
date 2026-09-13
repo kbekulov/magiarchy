@@ -116,9 +116,28 @@ for (const note of notes) {
     assert.ok(moment, `${note.id}: missing Moment ${slug}`);
     for (const version of versions(moment).filter((entry) => !note.versions?.length || note.versions.includes(entry.id))) {
       assert.ok(version.known[note.momentFact[slug]], `${note.id}: missing fact in ${slug}/${version.id}`);
+      const match = note.momentProseMatch?.[slug];
+      if (match) {
+        assert.equal(version.prose?.filter(paragraph => paragraph.includes(match)).length, 1, `${note.id}: standalone paragraph must match exactly once in ${slug}/${version.id}`);
+        checkedAnchors += 1;
+      }
     }
   }
 }
+
+const churchInterlude = moments.find(moment => moment.slug === 'only-eyes-for-you');
+assert.equal(churchInterlude.timelinePhase, null, 'Church interlude: do not invent placement');
+assert.equal(churchInterlude.characterAnchors.length, 0);
+for (const line of ['"Flirt with nuns one more time!"', '"I only have eyes for you."']) assert.ok(churchInterlude.prose.includes(line), 'Church interlude: preserve illustrated dialogue');
+assert.ok(!churchInterlude.prose.some(paragraph => /Inanna|jealous/i.test(paragraph)), 'Church interlude: do not explain the allusion or assign jealousy');
+assert.ok(churchInterlude.known.filter(fact => fact.status === 'inferred').length);
+assert.ok(read('gallery.html').includes('data-moment="only-eyes-for-you"'));
+assert.ok(read('gallery.html').includes(`${churchInterlude.artwork.id}.png`));
+for (const slug of ['lynleit', 'felix']) assert.ok(churchInterlude.characters.some(character => character.slug === slug));
+assert.ok(!read('docs/character-intimacy-and-sexuality-v10.md').includes('Only Eyes for You'));
+assert.ok(!read('docs/sexual-tension-notes-v10.json').includes('Only Eyes for You'));
+assert.ok(!read('docs/character-behavior-notes-v8.json').includes('church-lynleit-public-irritation'));
+assert.ok(!read('docs/prose-style-v8.md').includes('Pragmatic misinterpretation'));
 
 const doom = chapters.find((entry) => entry.slug === 'doom-has-an-address');
 const phaseContext = { window: {} };

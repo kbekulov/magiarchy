@@ -149,9 +149,12 @@ try {
         await visit(`gallery.html?image=${sharedArtwork}`);
         assert.ok(await page.locator('#gallery-reader-view').isVisible());
         assert.ok((await page.locator('#gallery-detail-source').getAttribute('href')).endsWith(`${sharedArtwork}.png`));
+        assert.equal(await page.locator('#gallery-detail-moment').getAttribute('href'), 'moments.html?moment=only-eyes-for-you');
+        assert.ok(await page.locator('#gallery-detail-moment').isVisible());
         await page.screenshot({ path: `test-results/${engine}-shared-art-gallery-${width}.png`, fullPage: true });
         for (const slug of ['lynleit', 'felix']) {
           await visit(`character.html?character=${slug}`);
+          assert.ok(await page.locator('#character-moment-grid a[href="moments.html?moment=only-eyes-for-you"]').count(), `${slug}: church scene missing from related Moments`);
           const thumb = page.locator(`.profile-art-thumbnails button:has(img[src$="${sharedArtwork}.webp"])`);
           assert.equal(await thumb.count(), 1, `${slug}: shared artwork missing from portraits`);
           await thumb.click();
@@ -160,6 +163,32 @@ try {
           assert.ok(await page.locator(`.profile-portrait-strip img[src$="${sharedArtwork}.png"]`).evaluateAll(images => images.some(image => image.alt && image.complete && image.naturalWidth === 1024)), `${slug}: selected shared portrait failed to load`);
           await page.locator('#character-profile-portrait').screenshot({ path: `test-results/${engine}-shared-art-${slug}-${width}.png` });
         }
+        await visit('moments.html?moment=only-eyes-for-you');
+        assert.equal(await page.locator('#moment-placement-status').textContent(), 'Unplaced');
+        assert.equal(await page.locator('#moment-scene-prose .behavior-gutter-marker').count(), 3);
+        assert.equal(await page.locator('#moment-known .behavior-gutter-marker').count(), 0, 'Standalone notes duplicated in fact table');
+        assert.equal(await page.locator('#moment-known .is-inferred').count(), 2);
+        assert.ok(await page.locator('#moment-connection-grid a[href="gallery.html?image=char-lynleit-felix-1"]').count());
+        for (const kind of ['female', 'male', 'story']) {
+          const marker = page.locator(`#moment-scene-prose .behavior-gutter-marker.is-${kind}`);
+          await marker.click();
+          assert.ok(await page.locator('#behavior-note-tooltip').isVisible());
+          await page.keyboard.press('Escape');
+          assert.ok(await page.locator('#behavior-note-tooltip').isHidden());
+          assert.ok(await marker.evaluate(el => el === document.activeElement));
+        }
+        assert.ok(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1), `Church scene/${width}: overflow`);
+        const misplacedMarkers = await page.locator('#moment-scene-prose .behavior-annotated').evaluateAll(paragraphs => paragraphs.some(paragraph => {
+          const gutter = paragraph.querySelector('.behavior-gutter').getBoundingClientRect();
+          const copy = paragraph.querySelector('.behavior-paragraph-copy').getBoundingClientRect();
+          const panel = paragraph.closest('.moment-scene-prose').getBoundingClientRect();
+          return gutter.right > copy.left - 5 || Math.abs(gutter.top - copy.top) > 12 || gutter.left < panel.left;
+        }));
+        assert.ok(!misplacedMarkers, `Church scene/${width}: notes must stay in the left gutter`);
+        await page.locator('#moment-scene-prose .behavior-annotated').first().evaluate(el => {
+          el.scrollIntoView({ block: 'center' });
+        });
+        await page.screenshot({ path: `test-results/${engine}-church-scene-${width}.png` });
         await visit('music.html');
         const musicCount = await page.locator('.music-card').count();
         const playableCount = await page.locator('.music-card:has(audio)').count();

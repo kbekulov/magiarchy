@@ -10101,6 +10101,9 @@ a.moment-connection-card:hover {
 .moment-scene-prose p { max-width: 72ch; margin: 0 auto 1.2em; line-height: 1.8; }
 .moment-scene-prose h2 { max-width: 36ch; margin: 0 auto 24px; }
 .moment-scene-prose[hidden] { display: none; }
+.moment-scene-prose.has-behavior-notes { padding-inline-start: clamp(44px, 4vw, 72px); }
+.moment-scene-prose p.behavior-annotated { position: relative; }
+.moment-scene-prose p.behavior-annotated .behavior-gutter { position: absolute; inset-inline-start: -32px; top: .2em; }
 .profile-art-thumbnails { display: flex; gap: 8px; overflow-x: auto; padding: 0 8px 8px; }
 .profile-art-thumbnails button { flex: 0 0 44px; padding: 0; border: 0; border-radius: 6px; background: transparent; cursor: pointer; }
 .profile-art-thumbnails { pointer-events: auto; }

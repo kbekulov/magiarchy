@@ -234,15 +234,21 @@
     grouped.forEach((group, target) => annotate(target, group));
   }
 
-  function attachToMoment(list, slug, notes) {
+  function attachToMoment(list, slug, notes, prose) {
     const rows = [...list.children];
+    const paragraphs = [...(prose?.querySelectorAll('p') || [])];
     const grouped = new Map();
     notes.forEach((note) => {
+      const match = note.momentProseMatch?.[slug];
       const index = note.momentFact?.[slug];
-      if (!Number.isInteger(index) || !rows[index]) return;
-      grouped.set(rows[index], [...(grouped.get(rows[index]) || []), note]);
+      const target = match
+        ? paragraphs.find(paragraph => paragraph.textContent.includes(match))
+        : Number.isInteger(index) ? rows[index] : null;
+      if (!target) return;
+      grouped.set(target, [...(grouped.get(target) || []), note]);
     });
     grouped.forEach((group, target) => annotate(target, group));
+    prose?.classList.toggle('has-behavior-notes', Boolean(prose.querySelector('.behavior-annotated')));
   }
 
   window.MAGIARCHY_BEHAVIOR_NOTES = {

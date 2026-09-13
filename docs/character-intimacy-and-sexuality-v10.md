@@ -63,12 +63,6 @@ Lynleit bears their son during her disappearance and later keeps him hidden from
 
 Let embarrassment occasionally make her unfair or difficult. Her competence does not require an explanation defending each awkward response.
 
-### With Felix: the church interlude
-
-In [Only Eyes for You](../moments.html?moment=only-eyes-for-you), Lynleit catches Felix by his tie and raises a Bible after his flirting with the nuns. He answers, "I only have eyes for you." She rejects his attempt to make the reprimand about romantic loyalty, returns the book when asked, and tells him to go outside.
-
-The author approved the illustrated scene for integration. The surrounding dialogue is a scene draft; the church, reason for visiting, and chronology remain undecided. Physical familiarity and visible irritation support their established closeness. Jealousy is a possible reader interpretation, not a confirmed motive. Neither the Bible nor the setting creates a new magical rule. Readers who know her family connection to Inanna may notice an irony that the scene itself leaves unspoken.
-
 ## Kyrien
 
 **Basis: Established relationship; later behavior partly interpreted**
@@ -196,8 +190,6 @@ His eventual intimacy with Sherie retains their humor, visible enjoyment, mutual
 ### With Lynleit and Sherie
 
 Lynleit deflects his advances while remaining his close friend. His attraction does not establish a matching desire on her side.
-
-The [church interlude](../moments.html?moment=only-eyes-for-you) shows how quickly he can offer a flattering alternative to the situation she wants him to acknowledge. His reply keeps his attention on her while dodging an apology. It need not be reduced to either an empty joke or an unguarded confession.
 
 At the opening, he and Sherie have no meaningful personal relationship. Professional overlap brings them together repeatedly. He enjoys complicating her direction of an exchange, answers her teasing, and gradually seeks out her company. Familiarity and respect accumulate alongside private jokes.
 

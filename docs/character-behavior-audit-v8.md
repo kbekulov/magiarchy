@@ -29,7 +29,3 @@ The [Cognition and Physical Competence reference](../docs.html?doc=character-cog
 Use those answers before a type stereotype. Lynleit consults others without automatically settling her private unease. Kyrien's quiet may contain continuing analysis, not complete understanding. Sherie plays socially even off duty and notices emotional change. Felix can reassure others while privately testing the interpretation he has offered. The hypothetical response to Sherie's hurt is not an established scene.
 
 Physical competence belongs to aptitude and acquired skill, not function order. No new paragraph marker is added where there is no actual paragraph or scene to annotate.
-
-## Only Eyes for You
-
-The [church interlude](../moments.html?moment=only-eyes-for-you) has F, M, and S notes on the relevant prose paragraphs. They address Lynleit's public irritation, Felix's flirtatious reframing, and the nun's request for her book. The image's two lines and physical setup are the author-approved basis; the connective dialogue is a scene draft. The guidance preserves uncertainty about jealousy and does not turn comic surrender into a strength comparison. Its place in the story remains open.

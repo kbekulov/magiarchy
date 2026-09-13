@@ -412,6 +412,11 @@ function initializeGalleryCards() {
   galleryDetailTitle.textContent = title;
   galleryDetailMeta.textContent = `${code} · ${location}`;
   galleryDetailSource.href = image.getAttribute('src');
+  const momentLink = document.querySelector('#gallery-detail-moment');
+  if (momentLink && selectedCard.dataset.moment) {
+    momentLink.href = `moments.html?moment=${encodeURIComponent(selectedCard.dataset.moment)}`;
+    momentLink.hidden = false;
+  }
   document.title = `${title} - Gallery - Magiarchy`;
 }
 

@@ -4,12 +4,12 @@
     "title": "MAGIARCHY Prose Style",
     "topic": "Writer's Style Reference",
     "file": "prose-style.md",
-    "updated": "2026-09-12",
-    "description": "House style and character-specific attention: private unease, background reasoning, emotional play, and hopeful reframing.",
+    "updated": "2026-09-13",
+    "description": "House style with the church interlude: comic misinterpretation, physical blocking, and an unexplained religious allusion.",
     "speakers": [
       "Author's Desk"
     ],
-    "defaultVersion": "v8",
+    "defaultVersion": "v9",
     "versions": [
       {
         "id": "v1",
@@ -62,10 +62,17 @@
       },
       {
         "id": "v8",
-        "label": "v8 · Current",
-        "file": "prose-style.md",
+        "label": "v8 · Archived",
+        "file": "prose-style-v8.md",
         "updated": "2026-09-12",
         "description": "House style and character-specific attention: private unease, background reasoning, emotional play, and hopeful reframing."
+      },
+      {
+        "id": "v9",
+        "label": "v9 · Current",
+        "file": "prose-style.md",
+        "updated": "2026-09-13",
+        "description": "House style with the church interlude: comic misinterpretation, physical blocking, and an unexplained religious allusion."
       }
     ]
   },
@@ -203,12 +210,12 @@
     "title": "Character Behaviour Audit",
     "topic": "Writer's Character Reference",
     "file": "character-behavior-audit.md",
-    "updated": "2026-09-12",
-    "description": "Paragraph guidance aligned with the author’s cognition clarifications and suspected type readings.",
+    "updated": "2026-09-13",
+    "description": "Character-specific paragraph notes for the church interlude, alongside existing scene guidance.",
     "speakers": [
       "Character Archive"
     ],
-    "defaultVersion": "v8",
+    "defaultVersion": "v9",
     "versions": [
       {
         "id": "v1",
@@ -268,10 +275,18 @@
       },
       {
         "id": "v8",
-        "label": "v8 · Current",
-        "file": "character-behavior-audit.md",
+        "label": "v8 · Archived",
+        "file": "character-behavior-audit-v8.md",
         "updated": "2026-09-12",
         "description": "Paragraph guidance aligned with the author’s cognition clarifications and suspected type readings.",
+        "behaviorFile": "character-behavior-notes-v8.json"
+      },
+      {
+        "id": "v9",
+        "label": "v9 · Current",
+        "file": "character-behavior-audit.md",
+        "updated": "2026-09-13",
+        "description": "Character-specific paragraph notes for the church interlude, alongside existing scene guidance.",
         "behaviorFile": "character-behavior-notes.json"
       }
     ]
@@ -281,12 +296,12 @@
     "title": "Character Intimacy and Sexuality Reference",
     "topic": "Writer's Character Reference",
     "file": "character-intimacy-and-sexuality.md",
-    "updated": "2026-09-12",
-    "description": "Sherie and Felix’s emotional attention, reassurance, and uneven recognition, alongside the established relationship and family directions.",
+    "updated": "2026-09-13",
+    "description": "The church interlude gives Lynleit and Felix a concrete exchange while preserving their uneven attraction.",
     "speakers": [
       "Character Archive"
     ],
-    "defaultVersion": "v10",
+    "defaultVersion": "v11",
     "versions": [
       {
         "id": "v1",
@@ -362,10 +377,18 @@
       },
       {
         "id": "v10",
-        "label": "v10 · Current",
-        "file": "character-intimacy-and-sexuality.md",
+        "label": "v10 · Archived",
+        "file": "character-intimacy-and-sexuality-v10.md",
         "updated": "2026-09-12",
         "description": "Sherie and Felix’s emotional attention, reassurance, and uneven recognition, alongside the established relationship and family directions.",
+        "tensionFile": "sexual-tension-notes-v10.json"
+      },
+      {
+        "id": "v11",
+        "label": "v11 · Current",
+        "file": "character-intimacy-and-sexuality.md",
+        "updated": "2026-09-13",
+        "description": "The church interlude gives Lynleit and Felix a concrete exchange while preserving their uneven attraction.",
         "tensionFile": "sexual-tension-notes.json"
       }
     ]
@@ -418,7 +441,7 @@
     "title": "Questions to Be Answered",
     "topic": "Editorial Ledger",
     "file": "questions-to-be-answered.md",
-    "updated": "2026-09-12",
+    "updated": "2026-09-13",
     "description": "Unanswered questions about chronology, family reveals, Holumn effects, and the limits of established lore.",
     "speakers": [
       "Author's Desk"

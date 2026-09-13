@@ -244,11 +244,3 @@ Use the [Cognition and Physical Competence reference](../docs.html?doc=character
 **Physical characterization:** keep Lynleit's confirmed agility, Kyrien's endurance and precision, and Felix's trained field competence independent of type labels. Demonstrate capability through the task when a scene calls for it. No particular training method or failure example becomes canon through this guidance.
 
 **Limit:** these answers describe tendencies, not compulsory beats. They do not prescribe a new scene, a guaranteed correct intuition, or a relationship milestone.
-
-### Working implementation: Only Eyes for You
-
-**Pragmatic misinterpretation:** Felix answers a reprimand about flirting with nuns as though Lynleit asked for romantic loyalty. The two lines supplied by the artwork establish the mismatch. Let her correction keep the disagreement alive rather than explaining his tactic in narration.
-
-**Blocking and straight-person interruption:** track the tie and the Bible through the exchange. A nun's ordinary request for her book interrupts the escalation; Lynleit must return it while still holding Felix's tie. The supporting character need not compete for the cleverest line. See the [Moment](../moments.html?moment=only-eyes-for-you).
-
-**Limit:** this is a working expansion of the approved image premise. Familiar touch and anger leave jealousy readable without establishing it. The family association with Inanna remains an optional retrospective allusion for an informed reader, not narrated theology, and the scene does not prove a new physical or magical capability.

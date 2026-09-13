@@ -349,6 +349,9 @@ async function renderMomentReader(entry, entries, requestedVersion) {
     connections.push(createConnectionCard('Chapter', `Assigned chapter${selected.chapterVersion ? ` · ${selected.chapterVersion}` : ''}`, 'Open the corresponding version of the chapter containing this Moment.', `story.html?chapter=${encodeURIComponent(selected.chapterSlug)}${chapterVersion}`));
   }
   else connections.push(createConnectionCard('Chapter', 'Not assigned yet', 'This scene can remain stable while the chapter around it is still unwritten.'));
+  if (selected.artwork) {
+    connections.push(createConnectionCard('Gallery', selected.artwork.title, 'View the illustration for this scene.', `gallery.html?image=${encodeURIComponent(selected.artwork.id)}`));
+  }
   document.querySelector('#moment-connection-grid').replaceChildren(...connections);
   window.addReaderSections(momentReader);
 
@@ -356,7 +359,7 @@ async function renderMomentReader(entry, entries, requestedVersion) {
     try {
       const registry = await window.MAGIARCHY_BEHAVIOR_NOTES.load();
       const notes = window.MAGIARCHY_BEHAVIOR_NOTES.forMoment(registry, entry.slug, selected.versionId);
-      window.MAGIARCHY_BEHAVIOR_NOTES.attachToMoment(document.querySelector('#moment-known'), entry.slug, notes);
+      window.MAGIARCHY_BEHAVIOR_NOTES.attachToMoment(document.querySelector('#moment-known'), entry.slug, notes, prose);
     } catch (error) {
       console.warn('Moment behaviour guidance could not be loaded.', error);
     }

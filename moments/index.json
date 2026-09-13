@@ -1,5 +1,100 @@
 [
   {
+    "slug": "only-eyes-for-you",
+    "code": "MOM-025",
+    "title": "Only Eyes for You",
+    "status": "Scene draft",
+    "placementStatus": "Unplaced",
+    "timelinePhase": null,
+    "timelineLabel": "Placement undecided",
+    "sequence": 25,
+    "sceneType": "Comic interlude",
+    "thread": "Lynleit and Felix",
+    "location": "A church",
+    "summary": "Felix flirts with the nuns. Lynleit catches him by his tie and raises a Bible; he answers her reprimand with another flirtation.",
+    "purpose": "Show the familiar friction between Lynleit and Felix during an embarrassing public exchange.",
+    "characters": [
+      {
+        "name": "Lynleit",
+        "slug": "lynleit"
+      },
+      {
+        "name": "Felix",
+        "slug": "felix"
+      }
+    ],
+    "characterAnchors": [],
+    "artwork": {
+      "id": "char-lynleit-felix-1",
+      "title": "Lynleit and Felix - illustration 01"
+    },
+    "known": [
+      "Lynleit and Felix are inside a church, near nuns gathering their music books.",
+      "Felix asks when the choir rehearses and suggests becoming a regular visitor.",
+      "Lynleit catches Felix by his tie and raises a Bible, warning him: \"Flirt with nuns one more time!\"",
+      "Felix leans back with his hands raised and replies: \"I only have eyes for you.\"",
+      {
+        "text": "Felix turns a correction of his behaviour into an opportunity to address Lynleit as a romantic interest.",
+        "status": "inferred"
+      },
+      "Lynleit rejects his interpretation. A nun asks for the Bible back; Lynleit returns it without striking him.",
+      {
+        "text": "Their ready physical familiarity suggests that this argument occurs within an established closeness, rather than between a distant officer and subordinate.",
+        "status": "inferred"
+      },
+      "Lynleit releases his tie and tells him to go outside. Felix adds one last teasing question, then follows her."
+    ],
+    "openQuestions": [
+      "Where does this church visit fall in the story, and what brings Lynleit and Felix there?",
+      "Which church is it, and does this visit connect to any existing Church encounter?"
+    ],
+    "continuityBefore": "Their friendship and his flirtatious familiarity are already established. The Arc, preceding assignment, and purpose of the visit are undecided.",
+    "continuityAfter": "The visit has no assigned downstream consequence yet. Lynleit does not confirm jealousy or reciprocal attraction, and the scene does not settle its position relative to Felix becoming close to Sherie.",
+    "prose": [
+      "The organ had fallen silent. Felix had not.",
+      "Lynleit found him beside a pew, holding the end of his blue tie out of the way while a nun gathered a stack of music books. Two more waited in the aisle. He had put on the helpful expression she knew rather too well.",
+      "\"Do you rehearse every evening?\" he asked.",
+      "\"Tuesdays.\"",
+      "\"I might become a regular.\"",
+      "\"Felix.\"",
+      "He turned. \"She was telling me when to come back.\"",
+      "\"She was telling you when the choir rehearses.\"",
+      "\"Yes. I was listening.\"",
+      "A loose sheet slipped from the stack. The nun caught it against her skirt. Felix reached to help, added something in a lower voice, and smiled.",
+      "Lynleit took hold of his tie.",
+      "\"We are leaving.\"",
+      "\"Already? I was just making friends.\"",
+      "He sat down abruptly as she drew him back toward the pew. A Bible lay on the seat beside his hand. Lynleit picked it up before he could sit on that too.",
+      "\"You can make friends outside.\"",
+      "Felix glanced past her toward the aisle. She pulled the tie a little farther.",
+      "\"Flirt with nuns one more time!\"",
+      "The book was above her shoulder now. Felix leaned back against the pew and raised both hands.",
+      "\"I only have eyes for you.\"",
+      "Nobody moved. The sister with the music books looked from him to Lynleit. Behind her, the other two had stopped rearranging their pages.",
+      "Lynleit could feel the heat climbing to her ears.",
+      "\"That is not what I said.\"",
+      "\"I thought it might help.\"",
+      "\"How?\"",
+      "His eyes went to the Bible.",
+      "\"Has it?\"",
+      "\"Excuse me.\"",
+      "Lynleit turned. The nun had shifted the music books to one arm and was holding out her free hand.",
+      "\"May I have that back?\"",
+      "For a moment Lynleit looked at the offered hand without understanding. Then she lowered the Bible.",
+      "\"Of course. I am sorry.\"",
+      "She placed it carefully on top of the music books. One corner had caught beneath her thumb; she smoothed it before letting go.",
+      "Felix cleared his throat.",
+      "\"The other hand, too, if you can spare it.\"",
+      "She was still holding his tie. She released it.",
+      "\"Outside.\"",
+      "Felix straightened the knot. \"Together?\"",
+      "Lynleit looked at him.",
+      "\"Going,\" he said.",
+      "He caught the loose end of his tie before it snagged on the pew and followed her into the aisle."
+    ],
+    "updated": "2026-09-13"
+  },
+  {
     "slug": "sleepers-above-the-river",
     "code": "MOM-024",
     "title": "Sleepers above the River",

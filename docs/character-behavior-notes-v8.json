@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-13",
+  "updated": "2026-09-12",
   "sections": [
     {
       "id": "river-operation",
@@ -36,10 +36,6 @@
     {
       "id": "arc-zero",
       "title": "Arc 0 development"
-    },
-    {
-      "id": "church-interlude",
-      "title": "Only Eyes for You"
     }
   ],
   "notes": [
@@ -1444,60 +1440,6 @@
       ],
       "momentFact": {
         "the-bench-under-the-lamp": 4
-      }
-    },
-    {
-      "id": "church-lynleit-public-irritation",
-      "section": "church-interlude",
-      "kind": "female",
-      "title": "Irritation without a declared motive",
-      "basis": "Lynleit: established reserve and familiar assertiveness; suspected INFJ with strong Fe",
-      "text": "Keep her reprimand specific to Felix flirting with the nuns. The tie grip and embarrassment can invite a jealous reading without confirming it. Familiarity permits an animated reaction; it does not require a change to her reserved disposition or priorities.",
-      "chapters": [],
-      "moments": [
-        "only-eyes-for-you"
-      ],
-      "momentFact": {
-        "only-eyes-for-you": 2
-      },
-      "momentProseMatch": {
-        "only-eyes-for-you": "\"Flirt with nuns one more time!\""
-      }
-    },
-    {
-      "id": "church-felix-deflection",
-      "section": "church-interlude",
-      "kind": "male",
-      "title": "A flirtation inside the defence",
-      "basis": "Felix: playful reframing and established attachment to Lynleit; suspected ENFP, Ne-led",
-      "text": "Let the reply arrive before a sensible apology. He can mean the compliment while using it to escape the reprimand. His raised hands and backward lean are comic surrender, not evidence of inferior fighting ability. Avoid a narrator explaining how sincere the line is.",
-      "chapters": [],
-      "moments": [
-        "only-eyes-for-you"
-      ],
-      "momentFact": {
-        "only-eyes-for-you": 3
-      },
-      "momentProseMatch": {
-        "only-eyes-for-you": "\"I only have eyes for you.\""
-      }
-    },
-    {
-      "id": "church-bible-return",
-      "section": "church-interlude",
-      "kind": "story",
-      "title": "The book has another owner",
-      "basis": "Author-approved image premise; working scene and Nasu-audit guidance",
-      "text": "The nun asks for her book rather than delivering another punchline. Her plain request interrupts the pair and makes Lynleit restore ordinary courtesy. The Bible and church provide the religious setting; leave Inanna unmentioned so any retrospective irony depends on the reader’s existing knowledge, not a new cult rule.",
-      "chapters": [],
-      "moments": [
-        "only-eyes-for-you"
-      ],
-      "momentFact": {
-        "only-eyes-for-you": 5
-      },
-      "momentProseMatch": {
-        "only-eyes-for-you": "\"May I have that back?\""
       }
     }
   ]

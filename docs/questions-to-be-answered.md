@@ -8,6 +8,7 @@ Story, character, world, relationship, institution, location, and event question
 
 | Area | Question | Confidence |
 | --- | --- | --- |
+| Church interlude | Where does [Only Eyes for You](../moments.html?moment=only-eyes-for-you) fall in the story, which church is it, and what brings Lynleit and Felix there? | 0% |
 | Natalia and Lynleit | Was Lynleit also Natalia's favourite student, or is the confirmed preference only Lynleit's for Natalia as her teacher? Compare [Natalia's profile](../character.html?character=natalia) and the [Academy Moment](../moments.html?moment=terrors-inside-the-academy). | 0% |
 | River boundary | What permits the first pull from the boat, and what prevents the submerged hands from reaching Lynleit once the water supports her? The [river Chapter](../story.html?chapter=the-empty-boats-beneath-the-bridge) records the actions but does not establish a universal surface rule. | 0% |
 | Drowned Choir | Can the girl or the drowned souls speak outside the silent river encounter? | 0% |
