@@ -1,4 +1,6 @@
 const musicPlayers = Array.from(document.querySelectorAll('.music-player'));
+const playableCount = document.querySelector('#music-playable-count');
+if (playableCount) playableCount.textContent = `${musicPlayers.length} playable ${musicPlayers.length === 1 ? 'track' : 'tracks'}`;
 
 // Metadata is author-assigned. Empty facets do not imply an Arc or character.
 const musicFilterForm = document.querySelector('.music-filters');

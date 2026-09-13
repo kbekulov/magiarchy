@@ -7,13 +7,30 @@ import { fileURLToPath } from 'node:url';
 import { chromium, webkit } from 'playwright';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
-const mime = { '.html': 'text/html', '.js': 'text/javascript', '.json': 'application/json', '.css': 'text/css', '.png': 'image/png', '.webp': 'image/webp', '.md': 'text/plain', '.mp3': 'audio/mpeg' };
+const mime = { '.html': 'text/html', '.js': 'text/javascript', '.json': 'application/json', '.css': 'text/css', '.png': 'image/png', '.webp': 'image/webp', '.md': 'text/plain', '.mp3': 'audio/mpeg', '.wav': 'audio/wav' };
 const server = http.createServer((request, response) => {
   const pathname = decodeURIComponent(new URL(request.url, 'http://localhost').pathname);
   const file = path.resolve(root, `.${pathname === '/' ? '/index.html' : pathname}`);
   if (!file.startsWith(root + path.sep) || !fs.existsSync(file) || !fs.statSync(file).isFile()) { response.writeHead(404); response.end(); return; }
-  response.setHeader('Content-Type', `${mime[path.extname(file)] || 'application/octet-stream'}; charset=utf-8`);
-  fs.createReadStream(file).pipe(response);
+  response.setHeader('Content-Type', mime[path.extname(file)] || 'application/octet-stream');
+  const size = fs.statSync(file).size;
+  response.setHeader('Accept-Ranges', 'bytes');
+  let start = 0, end = size - 1;
+  if (request.headers.range) {
+    const range = /^bytes=(\d*)-(\d*)$/.exec(request.headers.range);
+    if (range) {
+      start = range[1] ? Number(range[1]) : Math.max(0, size - Number(range[2]));
+      end = range[1] && range[2] ? Math.min(size - 1, Number(range[2])) : size - 1;
+    }
+    if (!range || (!range[1] && !range[2]) || start > end || start >= size) {
+      response.writeHead(416, { 'Content-Range': `bytes */${size}` }); response.end(); return;
+    }
+    response.statusCode = 206;
+    response.setHeader('Content-Range', `bytes ${start}-${end}/${size}`);
+  }
+  response.setHeader('Content-Length', Math.max(0, end - start + 1));
+  if (request.method === 'HEAD' || size === 0) { response.end(); return; }
+  fs.createReadStream(file, { start, end }).pipe(response);
 });
 await new Promise(resolve => server.listen(0, '127.0.0.1', resolve));
 const origin = `http://127.0.0.1:${server.address().port}`;
@@ -151,6 +168,8 @@ try {
         assert.ok((await page.locator('#gallery-detail-source').getAttribute('href')).endsWith(`${sharedArtwork}.png`));
         assert.equal(await page.locator('#gallery-detail-moment').getAttribute('href'), 'moments.html?moment=only-eyes-for-you');
         assert.ok(await page.locator('#gallery-detail-moment').isVisible());
+        assert.ok(await page.locator('#gallery-detail-music').isVisible());
+        assert.equal(await page.locator('#gallery-detail-music').getAttribute('href'), 'music.html?category=event&tag=Only%20Eyes%20for%20You');
         await page.screenshot({ path: `test-results/${engine}-shared-art-gallery-${width}.png`, fullPage: true });
         for (const slug of ['lynleit', 'felix']) {
           await visit(`character.html?character=${slug}`);
@@ -172,6 +191,7 @@ try {
         assert.equal(await page.locator('#moment-known .behavior-gutter-marker').count(), 0, 'Standalone notes duplicated in fact table');
         assert.equal(await page.locator('#moment-known .is-inferred').count(), 2);
         assert.ok(await page.locator('#moment-connection-grid a[href="gallery.html?image=char-lynleit-felix-1"]').count());
+        assert.ok(await page.locator('#moment-connection-grid a[href="music.html?category=event&tag=Only%20Eyes%20for%20You"]').count());
         for (const kind of ['female', 'male', 'story']) {
           const marker = page.locator(`#moment-scene-prose .behavior-gutter-marker.is-${kind}`);
           await marker.click();
@@ -203,7 +223,41 @@ try {
         await visit('music.html');
         const musicCount = await page.locator('.music-card').count();
         const playableCount = await page.locator('.music-card:has(audio)').count();
+        assert.equal(await page.locator('#music-playable-count').textContent(), `${playableCount} playable tracks`);
         assert.equal(await page.locator('.music-card:visible').count(), musicCount);
+        await visit('music.html?category=event&tag=Only%20Eyes%20for%20You');
+        assert.equal(await page.locator('.music-card:visible').count(), 2, 'Soundtrack event should find both movements');
+        for (const slug of ['passacaglia-movement-i', 'passacaglia-movement-ii']) {
+          const card = page.locator(`#${slug}`);
+          assert.ok(await card.isVisible());
+          assert.equal(await card.getAttribute('data-arc'), '', 'Do not invent an Arc for the soundtrack');
+          assert.equal(await card.locator('.music-downloads a[download]').count(), 2);
+          assert.ok(await card.locator('a[href="moments.html?moment=only-eyes-for-you"]').count());
+          assert.ok(await card.locator('a[href="gallery.html?image=char-lynleit-felix-1"]').count());
+          assert.ok(await card.locator('audio').evaluate(audio => audio.paused && audio.preload === 'none' && !audio.autoplay), 'Audio must wait for visitor-controlled playback');
+        }
+        if (width === 390) {
+          await page.locator('audio').evaluateAll(players => players.forEach(player => { player.muted = true; }));
+          for (const [slug, duration] of [['passacaglia-movement-i', 208.8], ['passacaglia-movement-ii', 214.4]]) {
+            await page.locator(`#${slug} .music-banner-toggle`).click();
+            await page.waitForFunction(id => { const audio = document.querySelector(`#${id} audio`); return !audio.paused && audio.currentTime > .05 && Number.isFinite(audio.duration); }, slug, { timeout: 20000 });
+            assert.ok(Math.abs(await page.locator(`#${slug} audio`).evaluate(audio => audio.duration) - duration) < 1);
+            assert.ok((await page.locator(`#${slug} .music-banner-toggle`).getAttribute('aria-label')).startsWith('Pause'));
+            assert.ok(await page.locator(`#${slug} .music-seek`).isEnabled());
+            assert.ok(await page.locator(`#${slug} .music-player-error`).isHidden());
+          }
+          assert.ok(await page.locator('#passacaglia-movement-i audio').evaluate(audio => audio.paused), 'Starting another track must pause the previous one');
+          const seek = page.locator('#passacaglia-movement-ii .music-seek');
+          await seek.focus();
+          await page.keyboard.press('ArrowRight');
+          assert.ok(Number(await seek.inputValue()) > 0);
+          await page.getByRole('searchbox', { name: 'Search music' }).fill('no-such-track');
+          assert.ok(await page.locator('#passacaglia-movement-ii audio').evaluate(audio => audio.paused), 'Filtering a playing track away must pause it');
+          await visit('music.html?category=event&tag=Only%20Eyes%20for%20You');
+        }
+        await page.locator('#passacaglia-movement-i').scrollIntoViewIfNeeded();
+        await page.screenshot({ path: `test-results/${engine}-passacaglia-${width}.png` });
+        await visit('music.html');
         await page.getByLabel('Playable only').check();
         assert.equal(await page.locator('.music-card:visible').count(), playableCount);
         assert.ok(page.url().includes('playable=1'));

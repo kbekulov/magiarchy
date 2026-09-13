@@ -4519,6 +4519,18 @@ a.status-member:hover {
 
 .music-player-ready .music-card-art { min-height: 128px; }
 
+.music-card .music-card-artwork { min-height: clamp(180px, 20vw, 240px); }
+.music-card-artwork::before, .music-card-artwork::after { display: none; }
+.music-card-artwork > img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center 35%; }
+.music-card-artwork > span { z-index: 1; padding: 5px 8px; background: #232428; color: #dbdee1; border-radius: 4px; }
+.music-card-artwork .music-banner-label { padding: 4px 8px; background: #232428; color: #dbdee1; border-radius: 4px; }
+.music-connections, .gallery-related-links { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 18px; }
+.music-connections { margin: 8px 0 4px; }
+.music-connections a { display: inline-flex; align-items: center; gap: 6px; min-height: 44px; color: var(--accent-bright); font-size: .7rem; text-decoration: none; }
+.music-connections a:hover { text-decoration: underline; }
+.music-connections a:focus-visible { outline: 2px solid var(--accent-bright); outline-offset: 3px; border-radius: 3px; }
+.music-card[id] { scroll-margin-top: 100px; }
+
 .music-banner-toggle:not([hidden]) {
   position: absolute;
   inset: 0;

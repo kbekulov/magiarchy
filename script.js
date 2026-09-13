@@ -417,6 +417,11 @@ function initializeGalleryCards() {
     momentLink.href = `moments.html?moment=${encodeURIComponent(selectedCard.dataset.moment)}`;
     momentLink.hidden = false;
   }
+  const musicLink = document.querySelector('#gallery-detail-music');
+  if (musicLink && selectedCard.dataset.musicEvent) {
+    musicLink.href = `music.html?category=event&tag=${encodeURIComponent(selectedCard.dataset.musicEvent)}`;
+    musicLink.hidden = false;
+  }
   document.title = `${title} - Gallery - Magiarchy`;
 }
 

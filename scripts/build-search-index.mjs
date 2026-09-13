@@ -332,6 +332,14 @@ pageDefinitions.forEach(([id, title, type, file]) => {
   addEntry({ id: `page-${id}`, title, type, url: file, text: stripHtml(main) });
 });
 
+for (const match of readText('music.html').matchAll(/<article\b([^>]*\bclass="music-card[^\"]*"[^>]*)>([\s\S]*?)<\/article>/gi)) {
+  const id = match[1].match(/\bid="([^"]+)"/)?.[1];
+  const title = stripHtml(match[2].match(/<h2\b[^>]*>([\s\S]*?)<\/h2>/i)?.[1] || '');
+  if (!id || !title || !match[2].includes('<audio')) continue;
+  const tags = [...match[1].matchAll(/data-(?:story|character|event|arc|misc)="([^"]*)"/g)].map(tag => tag[1].replace(/\|/g, ' '));
+  addEntry({ id: `music-${id}`, title, type: 'Soundtrack', url: `music.html#${id}`, subtitle: 'Music · MP3 playback · MP3 and WAV downloads', text: stripHtml(match[2]), keywords: tags.join(' ') });
+}
+
 const homeHtml = readText('index.html');
 for (const match of homeHtml.matchAll(/<article\s+class="dispatch[^\"]*"\s+id="([^"]+)"[^>]*>([\s\S]*?)<\/article>/gi)) {
   const content = stripHtml(match[2]);

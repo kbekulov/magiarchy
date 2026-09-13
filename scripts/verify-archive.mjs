@@ -275,6 +275,19 @@ for (const [, attributes, content] of audioPlayers) {
   }
 }
 assert.ok(entries.some(entry => entry.url.includes('music.html') && entry.text.includes('Theme 1 (stem)')), 'Music: track missing from search');
+assert.deepEqual(churchInterlude.soundtrack.tracks, ['passacaglia-movement-i', 'passacaglia-movement-ii']);
+assert.equal(churchInterlude.soundtrack.event, 'Only Eyes for You');
+assert.ok(read('gallery.html').includes('data-music-event="Only Eyes for You"'), 'Gallery: soundtrack filter link missing');
+for (const [slug, title, mp3Bytes, wavBytes] of [
+  ['passacaglia-movement-i', 'Passacaglia (Movement I)', 4820256, 40089792],
+  ['passacaglia-movement-ii', 'Passacaglia (Movement II)', 4930752, 41164992]
+]) {
+  const card = music.match(new RegExp(`<article[^>]*id="${slug}"[^>]*>[\\s\\S]*?<\\/article>`))?.[0];
+  assert.ok(card && card.includes('data-event="Only Eyes for You|Church visits"') && card.includes('data-arc=""'), `${slug}: author association or open Arc missing`);
+  assert.ok(card.includes('gallery.html?image=char-lynleit-felix-1') && card.includes('moments.html?moment=only-eyes-for-you'), `${slug}: missing reciprocal links`);
+  assert.ok(entries.some(entry => entry.id === `music-${slug}` && entry.title === title && entry.url === `music.html#${slug}`), `${slug}: individual search result missing`);
+  for (const [extension, size] of [['mp3', mp3Bytes], ['wav', wavBytes]]) assert.equal(fs.statSync(path.join(root, `media/music/soundtrack/drafts/${title}.${extension}`)).size, size, `${title}: original audio size changed`);
+}
 
 // Approved consistency boundaries, not invented metaphysical rules or score targets.
 assert.ok(read('docs/world-foundation.md').includes('not in a discoverable transformation'), 'Lester: foundation reopened an ordinary transformation');

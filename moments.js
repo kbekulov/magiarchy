@@ -352,6 +352,9 @@ async function renderMomentReader(entry, entries, requestedVersion) {
   if (selected.artwork) {
     connections.push(createConnectionCard('Gallery', selected.artwork.title, 'View the illustration for this scene.', `gallery.html?image=${encodeURIComponent(selected.artwork.id)}`));
   }
+  if (selected.soundtrack) {
+    connections.push(createConnectionCard('Soundtrack', selected.soundtrack.title, `${selected.soundtrack.tracks.length} tracks. Listen and download in Music.`, `music.html?category=event&tag=${encodeURIComponent(selected.soundtrack.event)}`));
+  }
   document.querySelector('#moment-connection-grid').replaceChildren(...connections);
   window.addReaderSections(momentReader);
 

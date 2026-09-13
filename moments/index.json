@@ -32,6 +32,11 @@
       }
     ],
     "characterAnchors": [],
+    "soundtrack": {
+      "title": "Passacaglia",
+      "event": "Only Eyes for You",
+      "tracks": ["passacaglia-movement-i", "passacaglia-movement-ii"]
+    },
     "artwork": {
       "id": "char-lynleit-felix-1",
       "title": "Lynleit and Felix - illustration 01"
