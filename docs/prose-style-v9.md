@@ -245,12 +245,10 @@ Use the [Cognition and Physical Competence reference](../docs.html?doc=character
 
 **Limit:** these answers describe tendencies, not compulsory beats. They do not prescribe a new scene, a guaranteed correct intuition, or a relationship milestone.
 
-### Author clarification and working implementation: Only Eyes for You, v2
+### Working implementation: Only Eyes for You
 
 **Pragmatic misinterpretation:** Felix answers a reprimand about flirting with nuns as though Lynleit asked for romantic loyalty. The two lines supplied by the artwork establish the mismatch. Let her correction keep the disagreement alive rather than explaining his tactic in narration.
 
-**Running gag and accumulated irritation:** the author establishes repeated church visits by Lynleit and Fionn, accompanied by Felix and Reiner. Felix repeatedly flirts with the nuns while Reiner behaves. A promise already broken at another church gives the final outburst a history without requiring every visit to be dramatized. Lynleit reaches the end of her patience; the scene is not a jealousy reveal.
+**Blocking and straight-person interruption:** track the tie and the Bible through the exchange. A nun's ordinary request for her book interrupts the escalation; Lynleit must return it while still holding Felix's tie. The supporting character need not compete for the cleverest line. See the [Moment](../moments.html?moment=only-eyes-for-you).
 
-**Blocking and straight-person contrast:** Reiner holds doors, waits with Fionn, and calls Felix away. His restraint makes Felix conspicuous without another stream of jokes. Track the tie and the Bible through the exchange. The nun's ordinary request for her book interrupts the escalation; Lynleit returns it while still holding Felix's tie. See the [Moment](../moments.html?moment=only-eyes-for-you).
-
-**Limit:** the recurring visits, four participants, contrast, and eventual irritation are author-confirmed. The exact dialogue around the illustrated lines remains a scene draft. Do not invent Fionn's reaction, the substance of the church business, or exact chronology. Felix's wider flirting does not erase his fixation on Lynleit, and her correction is not reciprocal desire. No new physical or magical capability follows from the slapstick.
+**Limit:** this is a working expansion of the approved image premise. Familiar touch and anger leave jealousy readable without establishing it. The family association with Inanna remains an optional retrospective allusion for an informed reader, not narrated theology, and the scene does not prove a new physical or magical capability.

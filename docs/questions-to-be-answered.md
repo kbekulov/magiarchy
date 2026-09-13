@@ -8,7 +8,6 @@ Story, character, world, relationship, institution, location, and event question
 
 | Area | Question | Confidence |
 | --- | --- | --- |
-| Church interlude | Where does [Only Eyes for You](../moments.html?moment=only-eyes-for-you) fall in the story, which church is it, and what brings Lynleit and Felix there? | 0% |
 | Natalia and Lynleit | Was Lynleit also Natalia's favourite student, or is the confirmed preference only Lynleit's for Natalia as her teacher? Compare [Natalia's profile](../character.html?character=natalia) and the [Academy Moment](../moments.html?moment=terrors-inside-the-academy). | 0% |
 | River boundary | What permits the first pull from the boat, and what prevents the submerged hands from reaching Lynleit once the water supports her? The [river Chapter](../story.html?chapter=the-empty-boats-beneath-the-bridge) records the actions but does not establish a universal surface rule. | 0% |
 | Drowned Choir | Can the girl or the drowned souls speak outside the silent river encounter? | 0% |
@@ -114,6 +113,7 @@ Story, character, world, relationship, institution, location, and event question
 | Helena | Which door does Helena knowingly open against Fionn, what outcome does she expect, and what enters the conspiracy beyond her knowledge or control? | 40% |
 | Academy operation | What cover, access, and objective allow Kyrien to work undercover inside the Magi Academy, and which secure communications route connects him with Felix and Reiner? | 40% |
 | Nameless Street | Exactly how many days separate Lynleit's encounter from Fionn's death, and which intervening scene allows the memory to recede before it returns? | 40% |
+| Church interlude | Where among the events before Fionn's death does [Only Eyes for You](../moments.html?moment=only-eyes-for-you) fall, which church hosts the outburst, and what business brings Lynleit and Fionn on these visits? | 40% |
 
 ## Chronology questions
 

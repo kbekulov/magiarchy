@@ -1450,70 +1450,7 @@
       "id": "church-lynleit-public-irritation",
       "section": "church-interlude",
       "kind": "female",
-      "title": "Patience worn down over several visits",
-      "basis": "Lynleit: author-confirmed repeated irritation; suspected INFJ with strong Fe",
-      "text": "Lynleit's irritation has accumulated across church visits with Fionn. Let the remembered promise and Felix's fresh lapse carry that history. Do not play her correction as jealousy. Her familiar assertiveness and attention to the social situation fit this response without changing her otherwise reserved disposition.",
-      "chapters": [],
-      "moments": [
-        "only-eyes-for-you"
-      ],
-      "momentFact": {
-        "only-eyes-for-you": 4
-      },
-      "momentProseMatch": {
-        "only-eyes-for-you": "\"Flirt with nuns one more time!\""
-      },
-      "versions": [
-        "v2"
-      ]
-    },
-    {
-      "id": "church-felix-deflection",
-      "section": "church-interlude",
-      "kind": "male",
-      "title": "A flirtation inside the defence",
-      "basis": "Felix: playful reframing and established attachment to Lynleit; suspected ENFP, Ne-led",
-      "text": "Felix repeatedly means to behave and still starts flirting. His reply to Lynleit arrives before a sensible apology, consistent with his quick reframing and attachment to her. Flirting with nuns is not a calculated attempt to provoke jealousy. Raised hands are comic surrender, not a loss of field competence.",
-      "chapters": [],
-      "moments": [
-        "only-eyes-for-you"
-      ],
-      "momentFact": {
-        "only-eyes-for-you": 5
-      },
-      "momentProseMatch": {
-        "only-eyes-for-you": "\"I only have eyes for you.\""
-      },
-      "versions": [
-        "v2"
-      ]
-    },
-    {
-      "id": "church-bible-return",
-      "section": "church-interlude",
-      "kind": "story",
-      "title": "Reiner behaves; the nun wants her book",
-      "basis": "Author-confirmed four-person church visits; Reiner's established restraint; working comic blocking",
-      "text": "Reiner's ordinary restraint gives the repeated problem a visible contrast. He need not banter or join Felix's performance. The nun's plain request then interrupts Lynleit's outburst and restores the book's ordinary use. Keep Fionn part of the visit without inventing approval, disapproval, or a private joke for him.",
-      "chapters": [],
-      "moments": [
-        "only-eyes-for-you"
-      ],
-      "momentFact": {
-        "only-eyes-for-you": 7
-      },
-      "momentProseMatch": {
-        "only-eyes-for-you": "\"May I have that back?\""
-      },
-      "versions": [
-        "v2"
-      ]
-    },
-    {
-      "id": "church-lynleit-public-irritation-v1",
-      "section": "church-interlude",
-      "kind": "female",
-      "title": "Irritation without a declared motive (v1)",
+      "title": "Irritation without a declared motive",
       "basis": "Lynleit: established reserve and familiar assertiveness; suspected INFJ with strong Fe",
       "text": "Keep her reprimand specific to Felix flirting with the nuns. The tie grip and embarrassment can invite a jealous reading without confirming it. Familiarity permits an animated reaction; it does not require a change to her reserved disposition or priorities.",
       "chapters": [],
@@ -1525,16 +1462,13 @@
       },
       "momentProseMatch": {
         "only-eyes-for-you": "\"Flirt with nuns one more time!\""
-      },
-      "versions": [
-        "v1"
-      ]
+      }
     },
     {
-      "id": "church-felix-deflection-v1",
+      "id": "church-felix-deflection",
       "section": "church-interlude",
       "kind": "male",
-      "title": "A flirtation inside the defence (v1)",
+      "title": "A flirtation inside the defence",
       "basis": "Felix: playful reframing and established attachment to Lynleit; suspected ENFP, Ne-led",
       "text": "Let the reply arrive before a sensible apology. He can mean the compliment while using it to escape the reprimand. His raised hands and backward lean are comic surrender, not evidence of inferior fighting ability. Avoid a narrator explaining how sincere the line is.",
       "chapters": [],
@@ -1546,16 +1480,13 @@
       },
       "momentProseMatch": {
         "only-eyes-for-you": "\"I only have eyes for you.\""
-      },
-      "versions": [
-        "v1"
-      ]
+      }
     },
     {
-      "id": "church-bible-return-v1",
+      "id": "church-bible-return",
       "section": "church-interlude",
       "kind": "story",
-      "title": "The book has another owner (v1)",
+      "title": "The book has another owner",
       "basis": "Author-approved image premise; working scene and Nasu-audit guidance",
       "text": "The nun asks for her book rather than delivering another punchline. Her plain request interrupts the pair and makes Lynleit restore ordinary courtesy. The Bible and church provide the religious setting; leave Inanna unmentioned so any retrospective irony depends on the reader’s existing knowledge, not a new cult rule.",
       "chapters": [],
@@ -1567,10 +1498,7 @@
       },
       "momentProseMatch": {
         "only-eyes-for-you": "\"May I have that back?\""
-      },
-      "versions": [
-        "v1"
-      ]
+      }
     }
   ]
 }

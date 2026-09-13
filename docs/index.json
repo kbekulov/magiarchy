@@ -5,11 +5,11 @@
     "topic": "Writer's Style Reference",
     "file": "prose-style.md",
     "updated": "2026-09-13",
-    "description": "House style with the church interlude: comic misinterpretation, physical blocking, and an unexplained religious allusion.",
+    "description": "Running-gag construction, accumulated irritation, and restrained supporting characters in the church visits.",
     "speakers": [
       "Author's Desk"
     ],
-    "defaultVersion": "v9",
+    "defaultVersion": "v10",
     "versions": [
       {
         "id": "v1",
@@ -69,10 +69,17 @@
       },
       {
         "id": "v9",
-        "label": "v9 · Current",
-        "file": "prose-style.md",
+        "label": "v9 · Archived",
+        "file": "prose-style-v9.md",
         "updated": "2026-09-13",
         "description": "House style with the church interlude: comic misinterpretation, physical blocking, and an unexplained religious allusion."
+      },
+      {
+        "id": "v10",
+        "label": "v10 · Current",
+        "file": "prose-style.md",
+        "updated": "2026-09-13",
+        "description": "Running-gag construction, accumulated irritation, and restrained supporting characters in the church visits."
       }
     ]
   },
@@ -211,11 +218,11 @@
     "topic": "Writer's Character Reference",
     "file": "character-behavior-audit.md",
     "updated": "2026-09-13",
-    "description": "Character-specific paragraph notes for the church interlude, alongside existing scene guidance.",
+    "description": "Version-scoped church notes for recurring flirting, Lynleit’s irritation, and Reiner’s restraint.",
     "speakers": [
       "Character Archive"
     ],
-    "defaultVersion": "v9",
+    "defaultVersion": "v10",
     "versions": [
       {
         "id": "v1",
@@ -283,10 +290,18 @@
       },
       {
         "id": "v9",
-        "label": "v9 · Current",
-        "file": "character-behavior-audit.md",
+        "label": "v9 · Archived",
+        "file": "character-behavior-audit-v9.md",
         "updated": "2026-09-13",
         "description": "Character-specific paragraph notes for the church interlude, alongside existing scene guidance.",
+        "behaviorFile": "character-behavior-notes-v9.json"
+      },
+      {
+        "id": "v10",
+        "label": "v10 · Current",
+        "file": "character-behavior-audit.md",
+        "updated": "2026-09-13",
+        "description": "Version-scoped church notes for recurring flirting, Lynleit’s irritation, and Reiner’s restraint.",
         "behaviorFile": "character-behavior-notes.json"
       }
     ]
@@ -297,11 +312,11 @@
     "topic": "Writer's Character Reference",
     "file": "character-intimacy-and-sexuality.md",
     "updated": "2026-09-13",
-    "description": "The church interlude gives Lynleit and Felix a concrete exchange while preserving their uneven attraction.",
+    "description": "The recurring church comedy distinguishes Felix’s broad flirting from his attachment to Lynleit and her irritation from jealousy.",
     "speakers": [
       "Character Archive"
     ],
-    "defaultVersion": "v11",
+    "defaultVersion": "v12",
     "versions": [
       {
         "id": "v1",
@@ -385,10 +400,18 @@
       },
       {
         "id": "v11",
-        "label": "v11 · Current",
-        "file": "character-intimacy-and-sexuality.md",
+        "label": "v11 · Archived",
+        "file": "character-intimacy-and-sexuality-v11.md",
         "updated": "2026-09-13",
         "description": "The church interlude gives Lynleit and Felix a concrete exchange while preserving their uneven attraction.",
+        "tensionFile": "sexual-tension-notes-v11.json"
+      },
+      {
+        "id": "v12",
+        "label": "v12 · Current",
+        "file": "character-intimacy-and-sexuality.md",
+        "updated": "2026-09-13",
+        "description": "The recurring church comedy distinguishes Felix’s broad flirting from his attachment to Lynleit and her irritation from jealousy.",
         "tensionFile": "sexual-tension-notes.json"
       }
     ]

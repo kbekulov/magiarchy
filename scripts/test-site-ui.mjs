@@ -165,6 +165,9 @@ try {
         }
         await visit('moments.html?moment=only-eyes-for-you');
         assert.equal(await page.locator('#moment-placement-status').textContent(), 'Unplaced');
+        assert.ok((await page.locator('#moment-scene-prose').innerText()).includes('Reiner held the door for Fionn.'));
+        assert.ok((await page.locator('#moment-scene-prose').innerText()).includes('You said that at the last one'));
+        for (const slug of ['fionn', 'reiner']) assert.ok(await page.locator(`#moment-scene-prose a[href="character.html?character=${slug}"]`).count(), `${slug}: church prose entity link missing`);
         assert.equal(await page.locator('#moment-scene-prose .behavior-gutter-marker').count(), 3);
         assert.equal(await page.locator('#moment-known .behavior-gutter-marker').count(), 0, 'Standalone notes duplicated in fact table');
         assert.equal(await page.locator('#moment-known .is-inferred').count(), 2);
@@ -189,6 +192,14 @@ try {
           el.scrollIntoView({ block: 'center' });
         });
         await page.screenshot({ path: `test-results/${engine}-church-scene-${width}.png` });
+        await visit('moments.html?moment=only-eyes-for-you&version=v1');
+        assert.equal(await page.locator('#moment-scene-prose > p').first().innerText(), 'The organ had fallen silent. Felix had not.');
+        assert.equal(await page.locator('#moment-scene-prose .behavior-gutter-marker').count(), 3, 'Church v1: historical notes missing');
+        assert.ok(!(await page.locator('#moment-scene-prose').innerText()).includes('Reiner held the door for Fionn.'));
+        for (const slug of ['fionn', 'reiner']) {
+          await visit(`character.html?character=${slug}`);
+          assert.ok(await page.locator('#character-moment-grid a[href="moments.html?moment=only-eyes-for-you"]').count(), `${slug}: church visit missing from profile`);
+        }
         await visit('music.html');
         const musicCount = await page.locator('.music-card').count();
         const playableCount = await page.locator('.music-card:has(audio)').count();

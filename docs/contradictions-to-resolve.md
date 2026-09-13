@@ -18,6 +18,8 @@ Doom Has an Address v7 supplies current shared canon. The Bench under the Lamp u
 
 The entries below describe successive author decisions, not competing instructions for current records.
 
+On 13 September 2026, the author clarified Only Eyes for You as the culmination of Felix repeatedly flirting with nuns during church visits by Lynleit and Fionn, accompanied by Felix and Reiner. Reiner behaves; Lynleit eventually loses patience. The Moment's v2, profiles, and current advisory references replace the earlier open jealous reading with accumulated irritation. V1 and the earlier document snapshots remain historical. The visits precede Fionn's death; precise placement and church business remain questions, not contradictions.
+
 On 12 September 2026, the author established that Sherie and Felix begin without a meaningful personal relationship and grow close through repeated professional encounters. Intimacy Reference v9, the current tension registry, and their profiles replace v8's immediate-chemistry and competitive-conquest framing. Felix remains fixated on Lynleit during that development. The later teasing exchange between Sherie and Lynleit is retained, but no longer serves as the origin of Sherie's interest. Specific encounters and chronology remain questions, not contradictions.
 
 On 5 September 2026, v4 replaced v3 with practical teaching, personal examples, and Lynleit's familiar student-friend dialogue. It added Natalia's decision-diary experiment, resignation anecdote, and concern over Myka's missed call. Magi examined the curse; Natalia introduced the ego hypothesis and quoted Jung. These additions survive in v7. V1's completed encounter remains incompatible with the incomplete attempt preserved by current canon.

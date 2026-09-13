@@ -65,9 +65,9 @@ Let embarrassment occasionally make her unfair or difficult. Her competence does
 
 ### With Felix: the church interlude
 
-In [Only Eyes for You](../moments.html?moment=only-eyes-for-you), Felix and Reiner accompany Lynleit and Fionn on church visits. Reiner behaves; Felix keeps flirting with nuns. After repeated visits wear down her patience, Lynleit catches Felix by his tie and raises a Bible. He answers, "I only have eyes for you." She rejects his attempt to make the reprimand about romantic loyalty, returns the book when asked, and tells him to go outside.
+In [Only Eyes for You](../moments.html?moment=only-eyes-for-you), Lynleit catches Felix by his tie and raises a Bible after his flirting with the nuns. He answers, "I only have eyes for you." She rejects his attempt to make the reprimand about romantic loyalty, returns the book when asked, and tells him to go outside.
 
-The author confirms this as a running comic problem, culminating in irritation, not a jealous response to a romantic rival. V2 follows that clarification; v1 preserves the earlier expansion. The visits occur before Fionn's death, but the specific churches, business, and exact placement remain undecided. Their familiar handling of one another fits the friendship without making her anger evidence of desire.
+The author approved the illustrated scene for integration. The surrounding dialogue is a scene draft; the church, reason for visiting, and chronology remain undecided. Physical familiarity and visible irritation support their established closeness. Jealousy is a possible reader interpretation, not a confirmed motive. Neither the Bible nor the setting creates a new magical rule. Readers who know her family connection to Inanna may notice an irony that the scene itself leaves unspoken.
 
 ## Kyrien
 
@@ -197,7 +197,7 @@ His eventual intimacy with Sherie retains their humor, visible enjoyment, mutual
 
 Lynleit deflects his advances while remaining his close friend. His attraction does not establish a matching desire on her side.
 
-His repeated flirting with nuns during the church visits is a genuine habit, not a scheme to make Lynleit jealous. Reiner accompanies the same visits without causing trouble. In the [church interlude](../moments.html?moment=only-eyes-for-you), Felix answers Lynleit's eventual outburst with a flattering alternative to the situation she wants him to acknowledge. The ready compliment lets him dodge an apology. His broad flirtatiousness coexists with a more persistent attachment to Lynleit; neither requires him to stop noticing other women.
+The [church interlude](../moments.html?moment=only-eyes-for-you) shows how quickly he can offer a flattering alternative to the situation she wants him to acknowledge. His reply keeps his attention on her while dodging an apology. It need not be reduced to either an empty joke or an unguarded confession.
 
 At the opening, he and Sherie have no meaningful personal relationship. Professional overlap brings them together repeatedly. He enjoys complicating her direction of an exchange, answers her teasing, and gradually seeks out her company. Familiarity and respect accumulate alongside private jokes.
 

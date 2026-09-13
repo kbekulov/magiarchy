@@ -126,6 +126,15 @@ for (const note of notes) {
 }
 
 const churchInterlude = moments.find(moment => moment.slug === 'only-eyes-for-you');
+assert.equal(churchInterlude.defaultVersion, 'v2');
+assert.match(churchInterlude.continuityBefore, /before Fionn's death/);
+assert.match(churchInterlude.summary, /Reiner behaves/);
+assert.match(churchInterlude.continuityAfter, /not a jealousy reveal/);
+assert.ok(churchInterlude.prose.includes('"You said that at the last one," Lynleit said.'));
+assert.ok(churchInterlude.prose.includes('"I meant it then, too."'));
+const churchV1 = versions(churchInterlude).find(version => version.id === 'v1');
+assert.equal(churchV1.prose[0], 'The organ had fallen silent. Felix had not.');
+assert.equal(churchV1.characters.length, 2, 'Church v1: original cast must stay isolated');
 assert.equal(churchInterlude.timelinePhase, null, 'Church interlude: do not invent placement');
 assert.equal(churchInterlude.characterAnchors.length, 0);
 for (const line of ['"Flirt with nuns one more time!"', '"I only have eyes for you."']) assert.ok(churchInterlude.prose.includes(line), 'Church interlude: preserve illustrated dialogue');
@@ -133,7 +142,9 @@ assert.ok(!churchInterlude.prose.some(paragraph => /Inanna|jealous/i.test(paragr
 assert.ok(churchInterlude.known.filter(fact => fact.status === 'inferred').length);
 assert.ok(read('gallery.html').includes('data-moment="only-eyes-for-you"'));
 assert.ok(read('gallery.html').includes(`${churchInterlude.artwork.id}.png`));
-for (const slug of ['lynleit', 'felix']) assert.ok(churchInterlude.characters.some(character => character.slug === slug));
+for (const slug of ['lynleit', 'felix', 'fionn', 'reiner']) assert.ok(churchInterlude.characters.some(character => character.slug === slug));
+assert.ok(json('docs/character-behavior-notes-v9.json').notes.some(note => note.id === 'church-lynleit-public-irritation' && note.text.includes('jealous reading')));
+assert.ok(json('docs/character-behavior-notes.json').notes.filter(note => note.section === 'church-interlude').every(note => note.versions?.length === 1), 'Church notes must be version-scoped');
 assert.ok(!read('docs/character-intimacy-and-sexuality-v10.md').includes('Only Eyes for You'));
 assert.ok(!read('docs/sexual-tension-notes-v10.json').includes('Only Eyes for You'));
 assert.ok(!read('docs/character-behavior-notes-v8.json').includes('church-lynleit-public-irritation'));
