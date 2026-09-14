@@ -1,0 +1,34 @@
+# Character Image Production
+
+## Templates come first
+
+Using approved templates is a required first step for future character image generation, not an optional finishing check. Writers and agents must inspect the relevant [Gallery production resources](gallery.html?collection=production) and the target character's approved artwork before preparing a generation request.
+
+Use the actual reference images as inputs wherever the generation tool supports them. A written description or recollection of an image is not a substitute for an available visual reference. If a required reference cannot be accessed or supplied, explain the limitation and agree on an alternative with the author before generating.
+
+## Female T-pose baseline
+
+The author's personal mascot provides the gold-standard pose and overall body-proportion reference for future female-character T-poses:
+
+- [Black-and-gold template, front and back](gallery.html?resource=author-mascot-black-gold)
+- [Red-drapery template, front and back](gallery.html?resource=author-mascot-red-drapery)
+
+Adapt height, body mass, and individual shapes to the target character. The template does not require identical bodies. Its costume, face, accessories, and hair are not automatically part of another character's design. The mascot remains outside story canon.
+
+## Reference selection and design continuity
+
+Start with the target character's established face, hair, clothing, physical features, and life period. Use a production template to guide pose and presentation while preserving that identity. For other character images, consult applicable templates and approved artwork without forcing an action scene or portrait into a T-pose.
+
+Use front, back, and other available views from the same design version together. Keep alternate costumes and revisions distinct. Do not blend incompatible versions or transfer later-Arc features into an earlier incarnation without the author's direction.
+
+If a template and a confirmed character feature conflict, preserve the confirmed feature. If the intended design or version is unclear, ask the author rather than inventing a resolution.
+
+## Generation brief
+
+Record which references the request uses, what each controls, and which character-specific differences must be preserved. Distinguish the pose/proportion template from the character-identity reference. State the intended view and design version, and identify any approved change explicitly.
+
+## Visual review and publication
+
+Compare the result with the references before registration or publication. Check identity, proportions, silhouette, costume details, pose, and front/back consistency. Inspect hands, feet, accessories, and occluded areas for discrepancies. Treat an unexplained generated difference as something to review, not as new canon.
+
+Preserve approved source files. Register production views as matching-version siblings with original downloads and descriptive metadata. Keep unapproved outputs outside the published archive. Follow the production intake workflow in the archive maintenance charter.

@@ -1,5 +1,24 @@
 [
   {
+    "slug": "character-image-production",
+    "title": "Character Image Production",
+    "topic": "Visual Production Standard",
+    "file": "character-image-production.md",
+    "updated": "2026-09-14",
+    "description": "Required template use, female T-pose baselines, character-specific design continuity, and visual review for writers and agents.",
+    "speakers": ["Author's Desk"],
+    "defaultVersion": "v1",
+    "versions": [
+      {
+        "id": "v1",
+        "label": "v1 · Current",
+        "file": "character-image-production.md",
+        "updated": "2026-09-14",
+        "description": "Template-first character image generation and review."
+      }
+    ]
+  },
+  {
     "slug": "prose-style",
     "title": "MAGIARCHY Prose Style",
     "topic": "Writer's Style Reference",
