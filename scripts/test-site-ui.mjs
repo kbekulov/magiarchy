@@ -5,11 +5,16 @@ import assert from 'node:assert/strict';
 import vm from 'node:vm';
 import { fileURLToPath } from 'node:url';
 import { chromium, webkit } from 'playwright';
+import { testGalleryResources } from './test-gallery-resources.mjs';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const mime = { '.html': 'text/html', '.js': 'text/javascript', '.json': 'application/json', '.css': 'text/css', '.png': 'image/png', '.webp': 'image/webp', '.md': 'text/plain', '.mp3': 'audio/mpeg', '.wav': 'audio/wav' };
 const server = http.createServer((request, response) => {
   const pathname = decodeURIComponent(new URL(request.url, 'http://localhost').pathname);
+  if (['/media/gallery/resources/test-pose-v1/model source.blend', '/media/gallery/resources/test-model/model.zip'].includes(pathname)) {
+    response.writeHead(200, { 'Content-Type': 'application/octet-stream', 'Content-Length': '12' });
+    response.end('test fixture'); return;
+  }
   const file = path.resolve(root, `.${pathname === '/' ? '/index.html' : pathname}`);
   if (!file.startsWith(root + path.sep) || !fs.existsSync(file) || !fs.statSync(file).isFile()) { response.writeHead(404); response.end(); return; }
   response.setHeader('Content-Type', mime[path.extname(file)] || 'application/octet-stream');
@@ -50,6 +55,11 @@ try {
         await page.goto(`${origin}/${route}`);
         await page.waitForLoadState('networkidle');
       };
+      if (process.env.TEST_GALLERY_ONLY === '1') {
+        await testGalleryResources(page, origin, engine);
+        assert.deepEqual(errors, [], `${engine}: browser script errors`);
+        continue;
+      }
       for (const width of [390, 820, 1440]) {
         await page.setViewportSize({ width, height: 900 });
         for (const route of pages) {
@@ -366,6 +376,7 @@ try {
       await proseLink.focus();
       assert.equal(await proseLink.evaluate(el => getComputedStyle(el).color), color, 'Entity link changes prose color on focus');
       assert.notEqual(await proseLink.evaluate(el => getComputedStyle(el).outlineStyle), 'none', 'Entity keyboard focus is invisible');
+      await testGalleryResources(page, origin, engine);
       assert.deepEqual(errors, [], `${engine}: browser script errors`);
       console.log(`${engine}: ${pages.length} routes at 3 widths; intermediate panes at 6 widths; reader navigation, filtering, version search, note focus, map movement, entity styling, and portrait eras passed.`);
     } finally { await browser.close(); }

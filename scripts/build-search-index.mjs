@@ -341,6 +341,11 @@ for (const match of readText('music.html').matchAll(/<article\b([^>]*\bclass="mu
 }
 
 const homeHtml = readText('index.html');
+addEntry({ id: 'gallery-production', title: 'Production resources', type: 'Gallery collection', url: 'gallery.html?collection=production', text: 'Character reference sheets, T-poses, turnarounds, development sketches, and downloadable 3D models for animation and modelling.' });
+for (const record of readJson('gallery/resources.json')) {
+  addEntry({ id: `resource-${record.id}`, title: record.title, type: 'Production resource', url: `gallery.html?resource=${encodeURIComponent(record.id)}`, subtitle: [record.kind, record.modelVersion, record.era].filter(Boolean).join(' · '), text: flatten([record.summary, record.characters, record.technical, record.usage, record.files.map(file => [file.label, file.format, file.notes]), record.previews.map(preview => [preview.alt, preview.caption])]) });
+}
+
 for (const match of homeHtml.matchAll(/<article\s+class="dispatch[^\"]*"\s+id="([^"]+)"[^>]*>([\s\S]*?)<\/article>/gi)) {
   const content = stripHtml(match[2]);
   const title = stripHtml(match[2].match(/<strong>([\s\S]*?)<\/strong>/i)?.[1] ?? 'Site update');

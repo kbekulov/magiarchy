@@ -3,7 +3,7 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "build": "node scripts/build-image-previews.mjs && node scripts/build-search-index.mjs",
+    "build": "node scripts/build-image-previews.mjs && node scripts/build-gallery-resources.mjs && node scripts/build-search-index.mjs",
     "check": "node scripts/sync-archive-surfaces.mjs --check && node scripts/verify-archive.mjs && node scripts/verify-site.mjs",
     "test:ui": "node scripts/test-site-ui.mjs",
     "test": "npm run check && npm run test:ui"

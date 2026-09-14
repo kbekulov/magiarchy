@@ -4,7 +4,7 @@ import { createHash } from 'node:crypto';
 
 export function searchSourceDigest(root) {
   const files = fs.readdirSync(root).filter(name => /\.(html|js)$/.test(name));
-  for (const folder of ['docs', 'story', 'moments', 'holumns', 'items', 'weapons']) {
+  for (const folder of ['docs', 'story', 'moments', 'holumns', 'items', 'weapons', 'gallery']) {
     for (const name of fs.readdirSync(path.join(root, folder))) {
       if (/\.(md|json)$/.test(name)) files.push(`${folder}/${name}`);
     }

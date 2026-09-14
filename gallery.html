@@ -3,12 +3,13 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Browse character artwork and chibis from the Magiarchy universe.">
+    <meta name="description" content="Browse Magiarchy artwork, character references, and downloadable production resources for animation and 3D work.">
     <meta name="theme-color" content="#1e1f22">
     <title>Gallery - Magiarchy</title>
     <link rel="icon" href="favicon.svg" type="image/svg+xml">
     <link rel="stylesheet" href="styles.css">
     <script src="script.js" defer></script>
+    <script src="gallery-resources.js" defer></script>
     <script src="entity-links.js" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2" defer></script>
     <script src="notes-config.js" defer></script>
@@ -65,9 +66,14 @@
             <div>
               <p class="eyebrow">Visual archive</p>
               <h1 id="gallery-title">Gallery</h1>
-              <p>Character studies, key art, and chibi records from the Magiarchy universe.</p>
+              <p id="gallery-intro">Illustrations and chibis, with a separate collection of references and files for animation and 3D work.</p>
             </div>
           </section>
+
+          <nav class="gallery-collections" id="gallery-collections" aria-label="Gallery collections">
+            <a href="gallery.html" aria-current="page"><strong>Artwork</strong><span>Illustrations &amp; chibis</span></a>
+            <a href="gallery.html?collection=production"><strong>Production resources</strong><span>References &amp; 3D files</span></a>
+          </nav>
 
           <section class="gallery-toolbar reveal" id="gallery-toolbar" aria-label="Gallery filters">
             <label class="gallery-select">
@@ -261,6 +267,45 @@
             </div>
           </section>
 
+          <section class="production-collection" id="production-collection" aria-label="Production resources" hidden>
+            <form class="production-filters" role="search" aria-label="Find production resources">
+              <label class="gallery-select"><span>Search resources</span><input id="resource-search" type="search" placeholder="Name, format, or keyword..."></label>
+              <label class="gallery-select"><span>Resource type</span><select id="resource-kind"><option value="all">All types</option><option value="reference-sheet">Reference sheets</option><option value="t-pose">T-poses &amp; turnarounds</option><option value="sketch">Development sketches</option><option value="3d-model">3D models</option></select></label>
+              <label class="gallery-select"><span>Character</span><select id="resource-character"><option value="all">All characters</option></select></label>
+            </form>
+            <p class="resource-results" id="resource-results" role="status">Loading resources...</p>
+            <div class="gallery-grid production-grid" id="resource-grid"></div>
+            <div class="resource-empty" id="resource-empty" hidden>
+              <h2>No production resources yet</h2>
+              <p>Reference sheets, T-poses, development sketches, and 3D models will appear here with their related downloads.</p>
+              <a class="source-link" href="gallery.html">Browse artwork <span aria-hidden="true">→</span></a>
+              <button class="button button-secondary" id="resource-reset" type="button" hidden>Clear filters</button>
+            </div>
+          </section>
+
+          <section class="resource-reader" id="resource-reader" aria-labelledby="resource-title" hidden>
+            <nav class="document-breadcrumbs" aria-label="Breadcrumb"><a href="gallery.html">Gallery</a><span aria-hidden="true">/</span><a id="resource-back" href="gallery.html?collection=production">Production resources</a><span aria-hidden="true">/</span><span id="resource-crumb" aria-current="page">Resource</span></nav>
+            <header class="resource-heading"><span class="doc-topic" id="resource-type">Production resource</span><h1 id="resource-title"></h1><p id="resource-summary"></p><nav id="resource-characters" aria-label="Related characters"></nav></header>
+            <div class="resource-layout">
+              <section class="resource-preview" aria-label="Resource previews">
+                <figure><img id="resource-image" alt="" hidden><div class="resource-no-preview" id="resource-no-preview">No preview image</div><figcaption id="resource-caption"></figcaption></figure>
+                <div class="resource-thumbnails" id="resource-thumbnails" role="group" aria-label="Choose a preview"></div>
+                <p class="sr-only" id="resource-view-status" role="status"></p>
+                <div class="resource-preview-links">
+                  <a class="source-link" id="resource-original" target="_blank" rel="noopener" hidden>Open full-size preview <span aria-hidden="true">↗</span></a>
+                  <a class="source-link" id="resource-image-download" hidden>Download image <span aria-hidden="true">↓</span></a>
+                </div>
+              </section>
+              <div class="resource-info">
+                <section class="resource-files" aria-labelledby="resource-files-title"><header><h2 id="resource-files-title">Downloads</h2><span id="resource-file-count"></span></header><p id="resource-no-files" hidden>No downloadable files supplied.</p><ul id="resource-downloads"></ul></section>
+                <section class="resource-specs" id="resource-specs" hidden><h2>Technical notes</h2><dl id="resource-details"></dl></section>
+                <section class="resource-specs" id="resource-usage" hidden><h2>Usage &amp; credits</h2><p></p></section>
+                <nav class="resource-specs" id="resource-related" aria-label="Related artwork" hidden><h2>Related artwork</h2></nav>
+              </div>
+            </div>
+          </section>
+          <noscript><p class="resource-noscript">Enable JavaScript to browse production resources and their downloads. Artwork remains available below.</p></noscript>
+
           <section class="gallery-reader-view" id="gallery-reader-view" hidden>
             <nav class="document-breadcrumbs gallery-breadcrumbs" aria-label="Breadcrumb">
               <a href="gallery.html">Gallery</a>
@@ -272,6 +317,7 @@
               <div class="gallery-detail-image-wrap">
                 <img id="gallery-detail-image" src="favicon.svg" alt="" width="1024" height="1024">
               </div>
+              <nav class="gallery-siblings" id="gallery-siblings" aria-label="Sibling images" hidden></nav>
               <figcaption>
                 <div>
                   <span class="doc-topic" id="gallery-detail-type">Artwork</span>

@@ -412,6 +412,25 @@ function initializeGalleryCards() {
   galleryDetailTitle.textContent = title;
   galleryDetailMeta.textContent = `${code} · ${location}`;
   galleryDetailSource.href = image.getAttribute('src');
+  const siblings = document.querySelector('#gallery-siblings');
+  const group = selectedCard.dataset.siblingGroup;
+  if (siblings && group) {
+    const matches = [...galleryItems].filter(card => card.dataset.siblingGroup === group && (card.dataset.modelVersion || '') === (selectedCard.dataset.modelVersion || ''));
+    if (matches.length > 1) {
+      siblings.hidden = false;
+      matches.forEach(card => {
+        const siblingImage = card.querySelector('img');
+        const thumbnail = document.createElement('img');
+        thumbnail.src = siblingImage.dataset.preview || siblingImage.getAttribute('src');
+        thumbnail.alt = ''; thumbnail.loading = 'lazy';
+        const link = document.createElement('a');
+        link.href = `gallery.html?image=${encodeURIComponent(card.dataset.image)}`;
+        link.setAttribute('aria-label', `View ${siblingImage.alt}`);
+        if (card === selectedCard) link.setAttribute('aria-current', 'true');
+        link.append(thumbnail); siblings.append(link);
+      });
+    }
+  }
   const momentLink = document.querySelector('#gallery-detail-moment');
   if (momentLink && selectedCard.dataset.moment) {
     momentLink.href = `moments.html?moment=${encodeURIComponent(selectedCard.dataset.moment)}`;
