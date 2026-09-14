@@ -11,9 +11,24 @@ export async function testGalleryResources(page, origin, engine) {
     await page.screenshot({ path: `test-results/${engine}-production-empty.png` });
   }
   const published = JSON.parse(fs.readFileSync('gallery/resources.json', 'utf8'));
+  for (const width of [390, 1440]) {
+    await page.setViewportSize({ width, height: 900 });
+    await visit('gallery.html?collection=production');
+    for (const record of published.filter(record => record.template)) {
+      const card = page.locator(`[data-resource="${record.id}"]`);
+      assert.equal(await card.locator('h2').textContent(), record.title);
+      assert.equal(await card.locator('.resource-template-badge').textContent(), 'Template');
+    }
+    const style = await page.locator('#resource-kind').evaluate(el => { const s = getComputedStyle(el); return { position: s.backgroundPosition, padding: s.paddingRight, appearance: s.appearance }; });
+    assert.equal(style.padding, '38px');
+    assert.equal(style.appearance, 'none');
+    assert.ok(style.position.includes('12px'));
+    await page.screenshot({ path: `test-results/${engine}-template-catalog-${width}.png`, fullPage: true });
+  }
   for (const record of published.filter(record => record.id.startsWith('author-mascot-'))) {
     assert.deepEqual(record.characters, [], 'Mascot references must not enter story character pools');
     assert.equal(record.nonCanon, true);
+    for (const file of record.files) assert.match(file.path.split('/').pop(), /^anima-t-pose-(black-gold|red-drapery)-(front|back)\.png$/);
     for (const width of [390, 1440]) {
       await page.setViewportSize({ width, height: 900 });
       await visit(`gallery.html?resource=${record.id}`);
@@ -28,6 +43,7 @@ export async function testGalleryResources(page, origin, engine) {
       await page.screenshot({ path: `test-results/${engine}-${record.id}-${width}.png`, fullPage: true });
     }
     const [download] = await Promise.all([page.waitForEvent('download'), page.locator('#resource-downloads a').first().click()]);
+    assert.equal(download.suggestedFilename(), record.files[0].path.split('/').pop());
     assert.deepEqual(fs.readFileSync(await download.path()), fs.readFileSync(record.files[0].path), 'Original PNG downloads must be byte-identical');
   }
   const preview = (id, number) => ({ id, src: `media/gallery/images/characters/char-lynleit-${number}.png`, thumbnail: `media/gallery/previews/characters/char-lynleit-${number}.webp`, alt: `Test ${id} view`, caption: `${id} view`, width: 1024, height: 1024 });

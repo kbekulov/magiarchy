@@ -2,7 +2,8 @@
   {
     "id": "author-mascot-black-gold",
     "nonCanon": true,
-    "title": "Anima: black-and-gold female template",
+    "title": "Anima",
+    "template": true,
     "kind": "t-pose",
     "modelVersion": "Variant 1",
     "summary": "Anima, unofficially nicknamed Inanna, is the author's personal mascot and female-character T-pose template. Black-and-gold outfit, front and back views. Not a character in story canon.",
@@ -11,7 +12,7 @@
     "previews": [
       {
         "id": "front",
-        "src": "media/gallery/resources/author-mascot-black-gold/codex-clipboard-759df2f2-2078-485e-bd32-be668ca13b82.png",
+        "src": "media/gallery/resources/author-mascot-black-gold/anima-t-pose-black-gold-front.png",
         "alt": "Front T-pose of Anima with long dark hair, red eyes, a black face covering, black-and-gold outfit, and gold accessories.",
         "caption": "Variant 1 · Front",
         "thumbnail": "media/gallery/previews/resources/author-mascot-black-gold-1.webp",
@@ -20,7 +21,7 @@
       },
       {
         "id": "back",
-        "src": "media/gallery/resources/author-mascot-black-gold/codex-clipboard-9fa77f1e-4ef7-42a8-a460-fca287073aeb.png",
+        "src": "media/gallery/resources/author-mascot-black-gold/anima-t-pose-black-gold-back.png",
         "alt": "Back T-pose of Anima in the black-and-gold outfit, with hair arranged to expose the upper back.",
         "caption": "Variant 1 · Back",
         "thumbnail": "media/gallery/previews/resources/author-mascot-black-gold-2.webp",
@@ -30,13 +31,13 @@
     ],
     "files": [
       {
-        "path": "media/gallery/resources/author-mascot-black-gold/codex-clipboard-759df2f2-2078-485e-bd32-be668ca13b82.png",
+        "path": "media/gallery/resources/author-mascot-black-gold/anima-t-pose-black-gold-front.png",
         "label": "Front reference",
         "bytes": 1405288,
         "format": "PNG"
       },
       {
-        "path": "media/gallery/resources/author-mascot-black-gold/codex-clipboard-9fa77f1e-4ef7-42a8-a460-fca287073aeb.png",
+        "path": "media/gallery/resources/author-mascot-black-gold/anima-t-pose-black-gold-back.png",
         "label": "Back reference",
         "bytes": 1300965,
         "format": "PNG"
@@ -56,7 +57,8 @@
   {
     "id": "author-mascot-red-drapery",
     "nonCanon": true,
-    "title": "Anima: red-drapery female template",
+    "title": "Anima",
+    "template": true,
     "kind": "t-pose",
     "modelVersion": "Variant 2",
     "summary": "Anima, unofficially nicknamed Inanna, is the author's personal mascot and female-character T-pose template. Red drapery and gold ornaments, front and back views. Not a character in story canon.",
@@ -65,7 +67,7 @@
     "previews": [
       {
         "id": "front",
-        "src": "media/gallery/resources/author-mascot-red-drapery/codex-clipboard-eaede279-c428-4f16-a4f4-94a969528685.png",
+        "src": "media/gallery/resources/author-mascot-red-drapery/anima-t-pose-red-drapery-front.png",
         "alt": "Front T-pose of Anima in a black-and-gold outfit with red fabric hanging from the wrists and hips, tipped with gold ornaments.",
         "caption": "Variant 2 · Front",
         "thumbnail": "media/gallery/previews/resources/author-mascot-red-drapery-1.webp",
@@ -74,7 +76,7 @@
       },
       {
         "id": "back",
-        "src": "media/gallery/resources/author-mascot-red-drapery/codex-clipboard-89447749-131b-4ad4-a605-f0ef3592e0e0.png",
+        "src": "media/gallery/resources/author-mascot-red-drapery/anima-t-pose-red-drapery-back.png",
         "alt": "Back T-pose of Anima with long dark hair falling over red drapery and dangling gold ornaments.",
         "caption": "Variant 2 · Back",
         "thumbnail": "media/gallery/previews/resources/author-mascot-red-drapery-2.webp",
@@ -84,13 +86,13 @@
     ],
     "files": [
       {
-        "path": "media/gallery/resources/author-mascot-red-drapery/codex-clipboard-eaede279-c428-4f16-a4f4-94a969528685.png",
+        "path": "media/gallery/resources/author-mascot-red-drapery/anima-t-pose-red-drapery-front.png",
         "label": "Front reference",
         "bytes": 1559686,
         "format": "PNG"
       },
       {
-        "path": "media/gallery/resources/author-mascot-red-drapery/codex-clipboard-89447749-131b-4ad4-a605-f0ef3592e0e0.png",
+        "path": "media/gallery/resources/author-mascot-red-drapery/anima-t-pose-red-drapery-back.png",
         "label": "Back reference",
         "bytes": 1600590,
         "format": "PNG"

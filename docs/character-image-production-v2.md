@@ -31,18 +31,6 @@ Record which references the request uses, what each controls, and which characte
 
 ## Visual review and publication
 
-### Descriptive asset filenames
-
-Every image or other file pasted or attached for site integration receives a descriptive filename before publication. This applies to images, music, documents, models, and other downloadable assets. Use lowercase ASCII words separated by hyphens, with the subject or title, purpose, and relevant confirmed variant, Arc, view, or revision. Preserve the actual extension.
-
-For Anima, use `anima-t-pose-black-gold-front.png`, `anima-t-pose-black-gold-back.png`, `anima-t-pose-red-drapery-front.png`, and `anima-t-pose-red-drapery-back.png`.
-
-Do not publish random clipboard IDs or generic export names. Keep matching views and formats on consistent stems, follow the existing character-art naming conventions, and do not invent details just to fill a filename. Explicit author-requested filenames take precedence. Preserve dependency-sensitive names inside source projects unless all affected references can be updated safely. Backlog text archives follow their own timestamp rule.
-
-Rename without changing file contents, verify original bytes, avoid collisions, and update every registry entry, preview source, download, and search reference. Stable resource-page links should continue working.
-
-### Review checklist
-
 Compare the result with the references before registration or publication. Check identity, proportions, silhouette, costume details, pose, and front/back consistency. Inspect hands, feet, accessories, and occluded areas for discrepancies. Treat an unexplained generated difference as something to review, not as new canon.
 
 Preserve approved source files. Register production views as matching-version siblings with original downloads and descriptive metadata. Keep unapproved outputs outside the published archive. Follow the production intake workflow in the archive maintenance charter.

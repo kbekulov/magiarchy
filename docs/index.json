@@ -7,7 +7,7 @@
     "updated": "2026-09-14",
     "description": "Required template use, female T-pose baselines, character-specific design continuity, and visual review for writers and agents.",
     "speakers": ["Author's Desk"],
-    "defaultVersion": "v2",
+    "defaultVersion": "v3",
     "versions": [
       {
         "id": "v1",
@@ -18,10 +18,17 @@
       },
       {
         "id": "v2",
-        "label": "v2 · Current",
-        "file": "character-image-production.md",
+        "label": "v2 · Archived",
+        "file": "character-image-production-v2.md",
         "updated": "2026-09-14",
         "description": "Anima and her nickname Inanna, the future Animus template, and template-first image generation."
+      },
+      {
+        "id": "v3",
+        "label": "v3 · Current",
+        "file": "character-image-production.md",
+        "updated": "2026-09-14",
+        "description": "Descriptive filenames for all supplied assets, alongside approved templates and visual review."
       }
     ]
   },

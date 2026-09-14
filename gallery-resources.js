@@ -42,7 +42,7 @@
     reader.hidden = false;
     $('#resource-crumb').textContent = record.title;
     $('#resource-title').textContent = record.title;
-    $('#resource-type').textContent = [kinds[record.kind], record.modelVersion, record.era].filter(Boolean).join(' · ');
+    $('#resource-type').textContent = [record.template ? 'Template' : null, kinds[record.kind], record.modelVersion, record.era].filter(Boolean).join(' · ');
     $('#resource-summary').textContent = record.summary;
     $('#resource-characters').replaceChildren(...record.characters.map(slug => link(nameFor(slug), `character.html?character=${encodeURIComponent(slug)}`, 'tag')));
     const back = new URLSearchParams(params);
@@ -129,7 +129,7 @@
       const card = node('article', null, 'production-card');
       card.dataset.resource = record.id;
       const open = link(null, `gallery.html?resource=${encodeURIComponent(record.id)}`);
-      open.setAttribute('aria-label', `View ${record.title}`);
+      open.setAttribute('aria-label', `View ${record.title}${record.modelVersion ? `, ${record.modelVersion}` : ''}`);
       if (record.previews.length) {
         const image = node('img'); image.src = record.previews[0].thumbnail;
         image.alt = record.previews[0].alt; image.loading = 'lazy';
@@ -137,7 +137,10 @@
         open.append(image);
       } else open.append(node('div', 'No preview image', 'resource-no-preview'));
       const copy = node('div', null, 'production-card-copy');
-      copy.append(node('span', kinds[record.kind], 'doc-topic'), node('h2', record.title), node('p', record.summary));
+      const badges = node('div', null, 'resource-badges');
+      if (record.template) badges.append(node('span', 'Template', 'resource-template-badge'));
+      badges.append(node('span', kinds[record.kind], 'doc-topic'));
+      copy.append(badges, node('h2', record.title), node('p', record.summary));
       const metadata = [record.modelVersion, record.era, ...record.characters.map(nameFor), ...new Set(record.files.map(file => file.format))].filter(Boolean);
       copy.append(node('small', metadata.join(' · ')), node('span', record.files.length ? `${record.files.length} downloadable ${record.files.length === 1 ? 'file' : 'files'}` : 'Preview only', 'resource-file-label'));
       open.append(copy); card.append(open); $('#resource-grid').append(card);
