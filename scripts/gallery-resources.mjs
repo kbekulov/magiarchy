@@ -21,6 +21,7 @@ export function validateResources(root, records, { built = true } = {}) {
   for (const record of records) {
     assert.ok(typeof record.id === 'string' && /^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(record.id) && !ids.has(record.id), `Invalid or duplicate resource id: ${record.id}`);
     ids.add(record.id);
+    if (record.nonCanon != null) assert.equal(typeof record.nonCanon, 'boolean', `${record.id}: nonCanon must be boolean`);
     for (const key of ['title', 'summary']) assert.ok(typeof record[key] === 'string' && record[key].trim(), `${record.id}: missing ${key}`);
     assert.ok(resourceKinds.includes(record.kind), `${record.id}: unknown resource type`);
     assert.ok(Array.isArray(record.characters) && Array.isArray(record.previews) && Array.isArray(record.files), `${record.id}: characters, previews, and files must be arrays`);

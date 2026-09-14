@@ -1,17 +1,18 @@
 [
   {
     "id": "author-mascot-black-gold",
-    "title": "Female T-pose template: black and gold",
+    "nonCanon": true,
+    "title": "Anima: black-and-gold female template",
     "kind": "t-pose",
     "modelVersion": "Variant 1",
-    "summary": "The author's personal mascot and female-character T-pose template, in a black-and-gold outfit. Front and back views. Not a character in story canon.",
+    "summary": "Anima, unofficially nicknamed Inanna, is the author's personal mascot and female-character T-pose template. Black-and-gold outfit, front and back views. Not a character in story canon.",
     "usage": "Author-designated gold standard for future female-character T-poses and overall body proportions. Adapt height, body mass, and individual shapes to each character's established design.",
     "characters": [],
     "previews": [
       {
         "id": "front",
         "src": "media/gallery/resources/author-mascot-black-gold/codex-clipboard-759df2f2-2078-485e-bd32-be668ca13b82.png",
-        "alt": "Front T-pose of the author's mascot with long dark hair, red eyes, a black face covering, black-and-gold outfit, and gold accessories.",
+        "alt": "Front T-pose of Anima with long dark hair, red eyes, a black face covering, black-and-gold outfit, and gold accessories.",
         "caption": "Variant 1 · Front",
         "thumbnail": "media/gallery/previews/resources/author-mascot-black-gold-1.webp",
         "width": 1122,
@@ -20,7 +21,7 @@
       {
         "id": "back",
         "src": "media/gallery/resources/author-mascot-black-gold/codex-clipboard-9fa77f1e-4ef7-42a8-a460-fca287073aeb.png",
-        "alt": "Back T-pose of the author's mascot in the black-and-gold outfit, with hair arranged to expose the upper back.",
+        "alt": "Back T-pose of Anima in the black-and-gold outfit, with hair arranged to expose the upper back.",
         "caption": "Variant 1 · Back",
         "thumbnail": "media/gallery/previews/resources/author-mascot-black-gold-2.webp",
         "width": 1122,
@@ -54,17 +55,18 @@
   },
   {
     "id": "author-mascot-red-drapery",
-    "title": "Female T-pose template: red drapery",
+    "nonCanon": true,
+    "title": "Anima: red-drapery female template",
     "kind": "t-pose",
     "modelVersion": "Variant 2",
-    "summary": "The same personal mascot and female-character T-pose template, with red drapery and gold ornaments. Front and back views. Not a character in story canon.",
+    "summary": "Anima, unofficially nicknamed Inanna, is the author's personal mascot and female-character T-pose template. Red drapery and gold ornaments, front and back views. Not a character in story canon.",
     "usage": "Author-designated gold standard for future female-character T-poses and overall body proportions. Adapt height, body mass, and individual shapes to each character's established design.",
     "characters": [],
     "previews": [
       {
         "id": "front",
         "src": "media/gallery/resources/author-mascot-red-drapery/codex-clipboard-eaede279-c428-4f16-a4f4-94a969528685.png",
-        "alt": "Front T-pose of the author's mascot in a black-and-gold outfit with red fabric hanging from the wrists and hips, tipped with gold ornaments.",
+        "alt": "Front T-pose of Anima in a black-and-gold outfit with red fabric hanging from the wrists and hips, tipped with gold ornaments.",
         "caption": "Variant 2 · Front",
         "thumbnail": "media/gallery/previews/resources/author-mascot-red-drapery-1.webp",
         "width": 1122,
@@ -73,7 +75,7 @@
       {
         "id": "back",
         "src": "media/gallery/resources/author-mascot-red-drapery/codex-clipboard-89447749-131b-4ad4-a605-f0ef3592e0e0.png",
-        "alt": "Back T-pose of the author's mascot with long dark hair falling over red drapery and dangling gold ornaments.",
+        "alt": "Back T-pose of Anima with long dark hair falling over red drapery and dangling gold ornaments.",
         "caption": "Variant 2 · Back",
         "thumbnail": "media/gallery/previews/resources/author-mascot-red-drapery-2.webp",
         "width": 1122,

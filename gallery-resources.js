@@ -35,6 +35,7 @@
   $('.production-filters').addEventListener('submit', event => event.preventDefault());
 
   function showResource(record) {
+    reader.toggleAttribute('data-no-entity-links', record.nonCanon === true);
     collection.hidden = true;
     collections.hidden = true;
     $('#gallery-heading').hidden = true;

@@ -8,12 +8,10 @@ Use the actual reference images as inputs wherever the generation tool supports 
 
 ## Female T-pose baseline
 
-Anima, the author's personal mascot, provides the gold-standard pose and overall body-proportion reference for future female-character T-poses. Her unofficial nickname is <span data-no-entity-links>Inanna</span>.
+The author's personal mascot provides the gold-standard pose and overall body-proportion reference for future female-character T-poses:
 
 - [Black-and-gold template, front and back](gallery.html?resource=author-mascot-black-gold)
 - [Red-drapery template, front and back](gallery.html?resource=author-mascot-red-drapery)
-
-The future male template is named Animus. No male template artwork is registered yet. Template mascots may also have unofficial nicknames; keep official names and nicknames distinct. These production identities do not establish story characters or a connection to the story's Cult of Inanna.
 
 Adapt height, body mass, and individual shapes to the target character. The template does not require identical bodies. Its costume, face, accessories, and hair are not automatically part of another character's design. The mascot remains outside story canon.
 

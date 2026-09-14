@@ -13,10 +13,12 @@ export async function testGalleryResources(page, origin, engine) {
   const published = JSON.parse(fs.readFileSync('gallery/resources.json', 'utf8'));
   for (const record of published.filter(record => record.id.startsWith('author-mascot-'))) {
     assert.deepEqual(record.characters, [], 'Mascot references must not enter story character pools');
+    assert.equal(record.nonCanon, true);
     for (const width of [390, 1440]) {
       await page.setViewportSize({ width, height: 900 });
       await visit(`gallery.html?resource=${record.id}`);
       assert.equal(await page.locator('#resource-thumbnails button').count(), 2);
+      assert.equal(await page.locator('#resource-summary a').count(), 0, 'Mascot nickname must not link to story lore');
       assert.ok((await page.locator('#resource-summary').textContent()).includes('Not a character in story canon'));
       assert.equal(await page.locator('#resource-downloads a[download]').count(), 2);
       await page.locator('#resource-thumbnails button').nth(1).click();
