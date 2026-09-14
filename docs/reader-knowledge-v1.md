@@ -84,18 +84,6 @@ This writer reference separates what happens from what a character knows and wha
 
 **Source:** [Lynleit](../character.html?character=lynleit), [Kyrien](../character.html?character=kyrien), [Questions to Be Answered](../docs.html?doc=questions-to-be-answered).
 
-## Bone Archive
-
-**Event period:** Unplaced. An officer avoids a shot before it is fired and later discovers a scar where the bullet would have entered. No name, affiliation, location, Arc, or main-cast involvement is established.
-
-**Reader:** The intended introduction gives the bodily trace before the wider explanation. The incident is currently an archive account, not a drafted Chapter. It does not prove a previous death, a discarded timeline, or accurate foreknowledge. Do not mark the Archive's complete mechanism as a reader inference from the scar alone.
-
-**Characters:** The officer knows about his unexplained movement and the scar. No investigator's access to that account is fixed. Natalia's potential comparison with Lester is a development route, not a completed investigation or knowledge she already possesses.
-
-**Limits:** Preserved experience and surviving bargain records do not establish literal devils or angels, a recoverable original timeline, or a cause for Lester's existence. The song's speaker is not an identified story character.
-
-**Source:** [Bone Archive](../docs.html?doc=holumn-incidents-and-testimonies#bone-archive), [development record](../docs.html?doc=bone-archive-development).
-
 ## Table evidence checks
 
 - **Shown or stated:** The selected Chapter or Moment prose delivers the fact, including an explicit narrator explanation. A fact can be author-confirmed without belonging in this category yet.

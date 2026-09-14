@@ -22,40 +22,6 @@ Lester's biography contains chronological factors that cannot be reconciled into
 
 Natalia comes to recognize contradiction as an intrinsic feature of nature. Lester's apparent violation of continuity can belong to reality at a deeper level, rather than merely being an error in it. This does not establish that he was taken by another Holumn, returned from one, or possesses unlimited abilities. See [Lester](../character.html?character=lester) and [Natalia](../character.html?character=natalia).
 
-## Bone Archive
-
-**Record:** HI-008
-
-**Known forms:** Event-bound and curse-bound effects
-
-**Primary medium:** Embodied experience, discontinuous memory, and surviving records
-
-An officer steps aside before a shot is fired. He cannot explain the movement. Later, while changing his shirt, he finds a scar where the bullet would have entered. His name, affiliation, location, and the date of the incident are not recorded here.
-
-The Bone Archive preserves experiences that no longer have a place in the surviving history of a life. A person may remember a conversation nobody else recalls, mourn a child absent from their biography, or recognize someone as their killer while still alive. An unexplained limp, pain, or practiced movement can carry the experience into the body. The Archive has not been identified as a physical library, and its name does not establish a collection of literal bones.
-
-Recovery is costly. Knowledge of how to survive a burning room may arrive with the memory of dying in it. A useful response and the suffering through which it was acquired need not be separable. This does not establish controllable time travel, an interchangeable supply of skills, or a reliable forecast.
-
-A person may become attached to the remembered life. Someone who loved them there is a stranger here; actual friends can feel less familiar. Loyalty to those experiences can give an affected person reasons to resist losing them, even when they suffer from their return.
-
-### Surviving bargains
-
-The associated records include bargains whose consequences remain although their making cannot be recovered. An authentic record may demand an act as the price of preventing something worse. Authentic evidence against the person who committed it can coexist with that record. Neither proves that the promised alternative would have occurred, or settles whether the act was justified.
-
-The source song calls the parties a devil and an angel. These are not confirmed species, divine offices, or identified custodians of the Archive.
-
-### Interpretive limits
-
-An old scar, anticipation, and mistaken recollection are ordinary explanations for individual details of the officer's account. The available incident does not itself establish a discarded timeline. The broader Archive phenomenon preserves experiences without a reconciled causal history; whether those experiences were erased, imposed, or displaced remains unresolved.
-
-No access condition, keeper, transferable ownership, reliable selection procedure, or means of release is known. No Church ruling on the records is established. The officer's incident has no assigned Arc, Story phase, or Chapter. No connection to the Spill is confirmed.
-
-### Development and source
-
-The author approved this Holumn direction from their song **Bone Archive (Rewind)**. The preferred introduction follows one person's bodily evidence before revealing the wider Archive. Natalia is a possible investigator, not an established witness. A comparison with Lester must preserve his distinct ontological contradiction: this Holumn does not explain his origin, turn him into a returned victim, or make his biography a solvable missing-history problem.
-
-See [Bone Archive: Development and Source](../docs.html?doc=bone-archive-development) for the approved direction, song imagery, and unresolved implementation choices.
-
 ## Sleepers
 
 **Record:** HI-007

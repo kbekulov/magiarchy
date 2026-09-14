@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-11",
+  "updated": "2026-09-14",
   "principles": [
     "Holumn is a category of manifestation, not a biological species.",
     "A Holumn may be a physical creature, a natural phenomenon, a repeating event, a disembodied will, or a curse.",
@@ -41,7 +41,8 @@
       "evidence": [
         "HI-002",
         "HI-005",
-        "HI-006"
+        "HI-006",
+        "HI-008"
       ]
     },
     {
@@ -60,11 +61,25 @@
         "HI-001",
         "HI-002",
         "HI-005",
-        "HI-006"
+        "HI-006",
+        "HI-008"
       ]
     }
   ],
   "incidents": [
+    {
+      "id": "HI-008",
+      "slug": "bone-archive",
+      "title": "Bone Archive",
+      "recordType": "Bodily trace and discontinuous memory",
+      "types": ["event", "curse"],
+      "summary": "The Bone Archive preserves experiences that have no place in the surviving account of a person's life. They return through memory and the body: an unexplained scar, a familiar pain, or a practiced movement its owner never learned. An officer steps aside before a shot is fired and later discovers a scar where the bullet would have entered.",
+      "ordinaryReading": "Anticipation, an unnoticed old injury, and a mistaken recollection can account for separate details. The officer's escape and scar alone do not prove that a previous history existed.",
+      "hiddenReading": "An experience can survive without a continuous history to support it. Whether these traces come from discarded events, imposed experiences, or another disruption of continuity remains unresolved. No physical library or keeper has been identified.",
+      "observedEffect": "Recovered experience may provide knowledge or a practiced response while restoring remembered suffering. Attachments can persist toward people who do not share the remembered relationship. Records of bargains can survive without a recoverable account of their making; their authenticity does not establish the justice of the acts they concern.",
+      "knownWeakness": "No countermeasure is confirmed. The Archive is not a reliable method of undoing events or predicting the future. The conditions of access, selection, repetition, and release are unknown; no ability to choose a history has been established.",
+      "spillContribution": "Bodily traces and surviving records make discontinuous experience materially consequential. No causal connection to the Spill or to Lester's origin is established."
+    },
     {
       "id": "HI-007",
       "slug": "sleepers",

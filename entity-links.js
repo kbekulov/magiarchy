@@ -4,6 +4,7 @@ const archiveEntityLinks = [
   ["Kyrien's whiskey flask", 'items.html?item=kyriens-whiskey-flask'],
   ['whiskey flask', 'items.html?item=kyriens-whiskey-flask'],
   ['The Bench under the Lamp', 'story.html?chapter=the-bench-under-the-lamp'],
+  ['Bone Archive', 'docs.html?doc=holumn-incidents-and-testimonies#bone-archive'],
   ['Cult of Inanna', 'magiarchy.html#cult-of-inanna'],
   ['Inanna', 'magiarchy.html#cult-of-inanna'],
   ['Inspector Leo', 'character.html?character=inspector-leo'],

@@ -1,12 +1,34 @@
 [
   {
+    "slug": "bone-archive-development",
+    "title": "Bone Archive: Development and Source",
+    "topic": "World Development",
+    "file": "bone-archive-development.md",
+    "updated": "2026-09-14",
+    "description": "The song-inspired Holumn direction, recovery costs, surviving bargains, and limits of the comparison with Lester.",
+    "speakers": [
+      "Author's Desk"
+    ],
+    "defaultVersion": "v1",
+    "versions": [
+      {
+        "id": "v1",
+        "label": "v1 · Current",
+        "file": "bone-archive-development.md",
+        "updated": "2026-09-14"
+      }
+    ]
+  },
+  {
     "slug": "character-image-production",
     "title": "Character Image Production",
     "topic": "Visual Production Standard",
     "file": "character-image-production.md",
     "updated": "2026-09-14",
     "description": "Required template use, female T-pose baselines, character-specific design continuity, and visual review for writers and agents.",
-    "speakers": ["Author's Desk"],
+    "speakers": [
+      "Author's Desk"
+    ],
     "defaultVersion": "v3",
     "versions": [
       {
@@ -160,18 +182,25 @@
     "title": "Events, Witnesses, and Reveals",
     "topic": "Reader Knowledge",
     "file": "reader-knowledge.md",
-    "updated": "2026-09-12",
-    "description": "Known event periods, character knowledge, and reader evidence for the major secrets, with unchosen reveal dates kept open.",
+    "updated": "2026-09-14",
+    "description": "Event, reader, and character knowledge, including the unplaced Bone Archive incident.",
     "speakers": [
       "Author's Desk"
     ],
-    "defaultVersion": "v1",
+    "defaultVersion": "v2",
     "versions": [
       {
         "id": "v1",
-        "label": "v1 · Current",
-        "file": "reader-knowledge.md",
+        "label": "v1 · Archived",
+        "file": "reader-knowledge-v1.md",
         "updated": "2026-09-12"
+      },
+      {
+        "id": "v2",
+        "label": "v2 · Current",
+        "file": "reader-knowledge.md",
+        "updated": "2026-09-14",
+        "description": "Event, reader, and character knowledge, including the unplaced Bone Archive incident."
       }
     ]
   },
@@ -454,8 +483,8 @@
     "title": "Holumn Incidents and Victim Testimonies",
     "topic": "Holumn Archive",
     "file": "holumn-incidents-and-testimonies.md",
-    "updated": "2026-09-12",
-    "description": "Incident evidence and institutional readings, with the Drowned Choir’s observed surface boundary distinguished from an unexplained mechanism.",
+    "updated": "2026-09-14",
+    "description": "Bone Archive evidence, costly recovery, surviving bargains, and unresolved institutional readings.",
     "speakers": [
       "Victims and Incident Witnesses",
       "Archive"
@@ -484,20 +513,27 @@
       },
       {
         "id": "v4",
-        "label": "v4 · Current",
-        "file": "holumn-incidents-and-testimonies.md",
+        "label": "v4 · Archived",
+        "file": "holumn-incidents-and-testimonies-v4.md",
         "updated": "2026-09-12",
         "description": "Incident evidence and institutional readings, with the Drowned Choir’s observed surface boundary distinguished from an unexplained mechanism."
+      },
+      {
+        "id": "v5",
+        "label": "v5 · Current",
+        "file": "holumn-incidents-and-testimonies.md",
+        "updated": "2026-09-14",
+        "description": "Bone Archive evidence, costly recovery, surviving bargains, and unresolved institutional readings."
       }
     ],
-    "defaultVersion": "v4"
+    "defaultVersion": "v5"
   },
   {
     "slug": "questions-to-be-answered",
     "title": "Questions to Be Answered",
     "topic": "Editorial Ledger",
     "file": "questions-to-be-answered.md",
-    "updated": "2026-09-13",
+    "updated": "2026-09-14",
     "description": "Unanswered questions about chronology, family reveals, Holumn effects, and the limits of established lore.",
     "speakers": [
       "Author's Desk"

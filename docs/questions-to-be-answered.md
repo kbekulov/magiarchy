@@ -8,6 +8,9 @@ Story, character, world, relationship, institution, location, and event question
 
 | Area | Question | Confidence |
 | --- | --- | --- |
+| Bone Archive: first encounter | Who is the officer, when and where does the shot occur, and how does the incident reach the main cast? | 0% |
+| Bone Archive: access and release | What admits a person to the Archive's effects, what determines the experience recovered, and can recovery or attachment be interrupted? | 0% |
+| Bone Archive: surviving bargains | Who makes or keeps the records, how is authenticity established, and what can a record prove about the catastrophe an act was meant to prevent? | 0% |
 | Natalia and Lynleit | Was Lynleit also Natalia's favourite student, or is the confirmed preference only Lynleit's for Natalia as her teacher? Compare [Natalia's profile](../character.html?character=natalia) and the [Academy Moment](../moments.html?moment=terrors-inside-the-academy). | 0% |
 | River boundary | What permits the first pull from the boat, and what prevents the submerged hands from reaching Lynleit once the water supports her? The [river Chapter](../story.html?chapter=the-empty-boats-beneath-the-bridge) records the actions but does not establish a universal surface rule. | 0% |
 | Drowned Choir | Can the girl or the drowned souls speak outside the silent river encounter? | 0% |
@@ -72,6 +75,7 @@ Story, character, world, relationship, institution, location, and event question
 | MSF | Which officers learn that magic exists, what remains compartmentalized, and how does hidden knowledge become a second rank system inside the smaller post-Spill agency? | 10% |
 | MSF | What action can the government take against a defiant MSF when mutual dependence means the company cannot safely rebel and the state cannot safely destroy it? | 10% |
 | Timeline | How much time passes between the first disappearance, the park quarantine, Kyrien's early recruitment, Fionn's much later assassination, Helena's takeover, and the hunt for Lynleit's arrest? | 10% |
+| Bone Archive: continuity | What does the Archive preserve: discarded events, imposed experiences, or another form of discontinuity; how far can memory, bodily traces, and learned responses diverge? | 15% |
 | The Church | What narrow authority would allow Father Mikhail to be sent back to clean up Lynleit's witness breach, and what does that authority permit him to do? | 15% |
 | Park encounter | What work precedes the walk, and what precautions permit the pause in a still-dangerous park? | 15% |
 | Opening chapter | What are Fionn and Lynleit negotiating before dawn, and why does Lynleit leave irritated? | 15% |
