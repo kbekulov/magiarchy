@@ -1,7 +1,7 @@
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
 
-// Private fixtures only: no model, reference classification, or version is published.
+// Check published assets before exercising edge cases with private fixtures.
 export async function testGalleryResources(page, origin, engine) {
   const visit = async route => { await page.goto(`${origin}/${route}`); await page.waitForLoadState('networkidle'); };
   await visit('gallery.html?collection=production');
@@ -9,6 +9,24 @@ export async function testGalleryResources(page, origin, engine) {
     assert.ok(await page.getByRole('heading', { name: 'No production resources yet' }).isVisible());
     assert.equal(await page.locator('#resource-downloads a').count(), 0);
     await page.screenshot({ path: `test-results/${engine}-production-empty.png` });
+  }
+  const published = JSON.parse(fs.readFileSync('gallery/resources.json', 'utf8'));
+  for (const record of published.filter(record => record.id.startsWith('author-mascot-'))) {
+    assert.deepEqual(record.characters, [], 'Mascot references must not enter story character pools');
+    for (const width of [390, 1440]) {
+      await page.setViewportSize({ width, height: 900 });
+      await visit(`gallery.html?resource=${record.id}`);
+      assert.equal(await page.locator('#resource-thumbnails button').count(), 2);
+      assert.ok((await page.locator('#resource-summary').textContent()).includes('Not a character in story canon'));
+      assert.equal(await page.locator('#resource-downloads a[download]').count(), 2);
+      await page.locator('#resource-thumbnails button').nth(1).click();
+      assert.equal(await page.locator('#resource-image').getAttribute('src'), record.previews[1].src);
+      assert.ok(page.url().includes('view=back'));
+      assert.ok(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1));
+      await page.screenshot({ path: `test-results/${engine}-${record.id}-${width}.png`, fullPage: true });
+    }
+    const [download] = await Promise.all([page.waitForEvent('download'), page.locator('#resource-downloads a').first().click()]);
+    assert.deepEqual(fs.readFileSync(await download.path()), fs.readFileSync(record.files[0].path), 'Original PNG downloads must be byte-identical');
   }
   const preview = (id, number) => ({ id, src: `media/gallery/images/characters/char-lynleit-${number}.png`, thumbnail: `media/gallery/previews/characters/char-lynleit-${number}.webp`, alt: `Test ${id} view`, caption: `${id} view`, width: 1024, height: 1024 });
   const records = [
