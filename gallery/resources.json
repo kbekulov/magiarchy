@@ -56,6 +56,9 @@
   },
   {
     "id": "author-mascot-red-drapery",
+    "artwork": [
+      "char-anima-red-drapery-artwork-01"
+    ],
     "nonCanon": true,
     "title": "Anima",
     "template": true,

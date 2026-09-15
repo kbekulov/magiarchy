@@ -404,6 +404,7 @@ function initializeGalleryCards() {
   galleryReaderView.hidden = false;
 
   galleryDetailCrumb.textContent = title;
+  galleryReaderView.toggleAttribute('data-no-entity-links', selectedCard.dataset.nonCanon === 'true');
   galleryDetailImage.src = image.getAttribute('src');
   galleryDetailImage.alt = image.alt;
   galleryDetailImage.width = Number(image.getAttribute('width'));
@@ -442,6 +443,11 @@ function initializeGalleryCards() {
     musicLink.hidden = false;
   }
   document.title = `${title} - Gallery - Magiarchy`;
+  const resourceLink = document.querySelector('#gallery-detail-resource');
+  if (resourceLink && selectedCard.dataset.resource) {
+    resourceLink.href = `gallery.html?resource=${encodeURIComponent(selectedCard.dataset.resource)}`;
+    resourceLink.hidden = false;
+  }
 }
 
 initializeGalleryCards();

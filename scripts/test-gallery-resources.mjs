@@ -11,6 +11,19 @@ export async function testGalleryResources(page, origin, engine) {
     await page.screenshot({ path: `test-results/${engine}-production-empty.png` });
   }
   const published = JSON.parse(fs.readFileSync('gallery/resources.json', 'utf8'));
+  await visit('gallery.html');
+  await page.locator('#gallery-character-filter').selectOption('anima');
+  assert.equal(await page.locator('.gallery-card:visible').count(), 1);
+  assert.equal(await page.locator('.gallery-card:visible').getAttribute('data-chibi'), 'false');
+  await page.locator('.gallery-card:visible > a').click();
+  assert.equal(await page.locator('#gallery-detail-title').textContent(), 'Anima');
+  assert.ok((await page.locator('#gallery-detail-type').textContent()).includes('Outside story canon'));
+  assert.ok(await page.locator('#gallery-detail-resource').isVisible());
+  await page.locator('#gallery-detail-resource').click();
+  await page.waitForLoadState('networkidle');
+  assert.ok(page.url().includes('resource=author-mascot-red-drapery'));
+  assert.ok(await page.locator('#resource-related a[href*="char-anima-red-drapery-artwork-01"]').isVisible());
+  assert.ok(!fs.readFileSync('character.js', 'utf8').includes("slug: 'anima'"), 'Mascot must not become a story character');
   for (const width of [390, 1440]) {
     await page.setViewportSize({ width, height: 900 });
     await visit('gallery.html?collection=production');
