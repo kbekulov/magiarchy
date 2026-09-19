@@ -23,6 +23,10 @@
         "title": "Beneath the surface"
       },
       {
+        "id": "reaching",
+        "title": "Reaching through the water"
+      },
+      {
         "id": "flame",
         "title": "Flame underwater"
       },
@@ -37,13 +41,16 @@
       {
         "id": "sewn-eyelids",
         "title": "The sewn eyelids"
+      },
+      {
+        "id": "river-contact",
+        "title": "A hand on the water"
       }
     ],
     "panels": [
       {
         "id": "panel-0a",
         "beat": "submerged",
-        "composition": "A",
         "label": "Sketch 1",
         "title": "Beneath the surface",
         "src": "media/gallery/panels/river-incident/river-incident-panel-1-sketch-r6.png",
@@ -56,12 +63,11 @@
       },
       {
         "id": "panel-0b",
-        "beat": "submerged",
-        "composition": "B",
+        "beat": "reaching",
         "label": "Sketch 2",
         "title": "Reaching through the water",
         "src": "media/gallery/panels/river-incident/river-incident-panel-2-sketch-r6.png",
-        "alt": "A second pencil composition of Lynleit underwater, reaching toward the viewer as hands hold her legs. A boot close-up sits in the lower right.",
+        "alt": "Lynleit reaches toward the viewer underwater as hands hold her legs. A boot close-up sits in the lower right.",
         "width": 1672,
         "height": 941,
         "bytes": 1908442,
@@ -119,6 +125,19 @@
         "bytes": 3354390,
         "display": "media/gallery/previews/panels/river-incident-r6-panel-3b-display.webp",
         "thumbnail": "media/gallery/previews/panels/river-incident-r6-panel-3b-thumbnail.webp"
+      },
+      {
+        "id": "panel-7",
+        "beat": "river-contact",
+        "label": "Sketch 7",
+        "title": "A hand on the water",
+        "src": "media/gallery/panels/river-incident/river-incident-panel-7-sketch-r6.png",
+        "alt": "Pencil close-up of the river girl's eyelids stitched shut with fishing thread, beside a hand touching the water and sending ripples across the surface. Handwritten notes surround both drawings.",
+        "width": 1106,
+        "height": 620,
+        "bytes": 703891,
+        "display": "media/gallery/previews/panels/river-incident-r6-panel-7-display.webp",
+        "thumbnail": "media/gallery/previews/panels/river-incident-r6-panel-7-thumbnail.webp"
       }
     ]
   }
