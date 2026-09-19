@@ -54,6 +54,7 @@ export async function testGalleryPanels(page, origin, engine) {
     await page.screenshot({ path: `test-results/${engine}-panels-index-${width}.png` });
     await page.locator('#panel-jump-links a').last().focus();
     await page.keyboard.press('Enter');
+    await page.waitForURL(url => url.hash === '#panel-3b');
     assert.ok(page.url().endsWith('#panel-3b'));
     await page.waitForFunction(() => document.querySelector('#panel-jump-links a[aria-current]')?.getAttribute('href') === '#panel-3b');
     assert.ok(await page.locator('#panel-3b').evaluate(el => el === document.activeElement));
@@ -79,6 +80,7 @@ export async function testGalleryPanels(page, origin, engine) {
     await touchPage.goto(`${origin}/gallery.html?panels=river-incident`);
     await touchPage.locator('#panel-index summary').tap();
     await touchPage.locator('#panel-jump-links a').last().tap();
+    await touchPage.waitForURL(url => url.hash === '#panel-3b');
     await touchPage.locator('#panel-3b img').evaluate(img => img.decode());
     assert.ok(touchPage.url().endsWith('#panel-3b'));
     assert.ok(await touchPage.locator('#panel-3b').isVisible());
