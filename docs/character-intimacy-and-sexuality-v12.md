@@ -2,20 +2,6 @@
 
 A writer's reference to affection, attraction, initiative, and particular partners. Established events and working interpretations are distinguished below. The shared tension records attached to each profile track pairings as new scenes develop.
 
-## Scale and inclusion
-
-Sex is relatively rare in MAGIARCHY, within a larger political, supernatural, horror, and espionage story. It can nevertheless change a life, a relationship, an inheritance, or the operation of a curse. This specialist reference gives intimacy more space than it should occupy in the narrative; its length is not a request for more scenes.
-
-A sexual scene or small reference earns inclusion when removing it would weaken something specific: character revelation, trust, conflict, a decision, identity, embodiment, family, religion, power, secrecy, or a later consequence. A joke may expose embarrassment; flirtation may change an exchange; attraction may divert attention or judgment. A past encounter must matter to the present, and pregnancy must belong to the family's circumstances rather than serve as trivia. A sensual observation needs a reason to enter this person's attention.
-
-Do not repeatedly announce desire, infer it from every close bond, or fill an unknown private life with temperament-based preferences. Permission to address sex does not create a need to include it. Once a relationship becomes sexual, ordinary work, duty, danger, politics, disagreement, and companionship still occupy most of it.
-
-### The useful example in Doom
-
-[Doom Has an Address](../story.html?chapter=doom-has-an-address&version=v7) brings physical intimacy into a problem of survival and metaphysical identity. Natalia's research, Mikhail's theology and family knowledge, Lynleit's embarrassment, and Kyrien's incomplete understanding all matter to the same uncertain treatment. That combination gives limited sexual material considerable consequence. It is a model of density, not a formula requiring every encounter to involve a curse or religion.
-
-[Thematic Direction](../docs.html?doc=thematic-direction) owns the broader Inanna association and its limits. [Scene Guidance](../docs.html?doc=prose-and-scene-guidance#does-the-intimate-detail-belong) supplies a practical revision test. Neither changes the confirmed relationship directions below.
-
 ## How to read the profiles
 
 **Established** means confirmed by the author or present in the selected canon.
@@ -121,7 +107,7 @@ Helena wants to be admitted into a partner's whole life. Fionn's secrecy makes h
 
 ### Sexual expression
 
-No specific behavior is established. Her concern about Fionn's withheld life belongs to their marriage, without prescribing a sexual response.
+No specific behavior is established. The working interpretation makes her attentive to whether a partner is distracted or withholding something.
 
 ### With Fionn
 
@@ -141,7 +127,7 @@ Fionn provides for and protects the people he loves. He also decides what they s
 
 ### Sexual expression
 
-No specific behavior is established.
+No specific behavior is established. A patient, measured approach fits his present characterization, but a scene is needed before it becomes a reliable pattern.
 
 ### With Helena
 
@@ -161,7 +147,7 @@ Yulia accompanies Hiyu while complaining about the reasons for going. She checks
 
 ### Sexual expression
 
-No encounter or particular sexual behavior is established.
+No encounter is established. A quiet and initially cautious approach is plausible; it should be tested against actual scenes rather than treated as an automatic consequence of her reserve.
 
 ### With Hiyu
 
@@ -183,7 +169,7 @@ Hiyu keeps seeking the person whose criticism makes his ideas more interesting. 
 
 ### Sexual expression
 
-No encounter or particular sexual behavior is established.
+No encounter is established. Curiosity and improvisation are possible extensions of his personality, not established sexual preferences.
 
 ### With Yulia
 
@@ -235,7 +221,7 @@ Reiner shows care through consistency and preparation. A working interpretation 
 
 ### Sexual expression
 
-No specific behavior is established.
+No specific behavior is established. Privacy and a deliberate pace are possibilities to explore.
 
 ### With a specific partner
 
@@ -287,7 +273,7 @@ Drake may try to help by removing a practical burden while missing the reassuran
 
 ### Sexual expression
 
-No specific behavior is established.
+No specific behavior is established. Reserve and overthinking are possibilities, not a complete profile.
 
 ### With a specific partner
 
@@ -327,7 +313,7 @@ Natalia values solitude and independent thought. Her work makes her accustomed t
 
 ### Sexual expression
 
-No specific behavior is established. Her attraction to Lester does not yet establish how an encounter would unfold.
+No specific behavior is established. An observant and selective approach is a working interpretation.
 
 ### With Lester
 

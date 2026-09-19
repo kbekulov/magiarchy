@@ -60,7 +60,7 @@ Story, character, world, relationship, institution, location, and event question
 | Fionn and Helena | Was their marriage still physically intimate near Fionn's death, and what private moment best shows that bodily closeness could not repair the trust he withheld? | 5% |
 | Yulia and Hiyu | Which event makes either of them consciously recognize investigative dependence as desire, and who first names what is happening between them? | 5% |
 | Natalia and Lester | Which ordinary case interaction first makes Natalia respond to Lester as a man rather than an anomalous condition, and how does he recognize the change without forcing either of them to name it? | 5% |
-| Cult of Inanna | Which covenants or obligations survive in Fionn's lineage today, and what consequences do they have beyond Mikhail's account of its history? | 10% |
+| Cult of Inanna | Do any ancestral covenants still bind Fionn's lineage, and what consequences, if any, exist beyond Mikhail's account of its history? | 10% |
 | Arc 0 | Which formative incidents become canon, when does Fionn remarry, and is MSF being founded or restructured? | 10% |
 | Kyrien’s family | What are his mother’s and sister’s identities, circumstances, and later fates, and how old is Kyrien at his father’s death? | 10% |
 | Core mystery | What logically defensible worldview and incompatible objective does each faction bring to Fionn, MSF, the Spill, and Narvea? | 10% |

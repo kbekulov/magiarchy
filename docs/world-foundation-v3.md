@@ -1,13 +1,5 @@
 # Hidden World Foundation
 
-## A contemporary world with older institutions
-
-MAGIARCHY takes place in the 21st century, in a contemporary European political and material environment. Mobile communications, modern firearms, intelligence work, transport, policing, media, offices, and ordinary domestic life coexist with substantial 18th- and 19th-century institutional inheritance.
-
-Narvea retains aristocratic houses, inherited titles, state councillors, courtly habits, estates, and older ideas of rank and legitimacy. Church structures and long-standing institutional relationships continue inside the modern state. These inheritances affect authority and private lives without making the setting technologically premodern. The [Duchy](../duchy.html) describes Narvea's particular political settlement.
-
-Much older religious traditions survive within the hidden world. The [Cult of Inanna](../magiarchy.html#cult-of-inanna) belongs to Magi lineage and religious history; it does not define the everyday appearance or material life of modern Narvea.
-
 ## Magic Comes From Inside Reality
 
 Magic exists within reality. Psyche and soul are part of the world's structure, and their pressure becomes strongest wherever many lives overlap, especially in cities.

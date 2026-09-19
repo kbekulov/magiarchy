@@ -94,7 +94,7 @@ function collect() {
     markdown(`story/${selected.file}`, 'fiction');
   }
   for (const record of JSON.parse(read('docs/index.json'))) {
-    if (record.slug === 'prose-style-history' || record.slug.startsWith('archive-audit-')) continue;
+    if (record.slug === 'prose-style-history' || record.topic === 'Archive Audit' || record.slug.startsWith('archive-audit-')) continue;
     const selected = { ...record, ...record.versions?.find(v => v.id === record.defaultVersion) };
     markdown(`docs/${selected.file}`, 'reference');
   }

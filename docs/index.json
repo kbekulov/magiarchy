@@ -1,5 +1,45 @@
 [
   {
+    "slug": "thematic-audit-2026-09-19",
+    "title": "Thematic Integration Audit: 19 September 2026",
+    "topic": "Archive Audit",
+    "description": "Current-source review of intimacy, Inanna, production templates, and the contemporary setting: corrections, preserved material, and open author decisions.",
+    "file": "thematic-audit-2026-09-19.md",
+    "updated": "2026-09-19",
+    "speakers": [
+      "Author's Desk"
+    ],
+    "defaultVersion": "v1",
+    "versions": [
+      {
+        "id": "v1",
+        "label": "v1 · Current",
+        "file": "thematic-audit-2026-09-19.md",
+        "updated": "2026-09-19"
+      }
+    ]
+  },
+  {
+    "slug": "thematic-direction",
+    "title": "Thematic Direction",
+    "topic": "Writer's Direction",
+    "description": "Inanna's limited lore role and wider tonal association, Anima's three roles, and the boundaries of thematic integration.",
+    "file": "thematic-direction.md",
+    "updated": "2026-09-19",
+    "speakers": [
+      "Author's Desk"
+    ],
+    "defaultVersion": "v1",
+    "versions": [
+      {
+        "id": "v1",
+        "label": "v1 · Current",
+        "file": "thematic-direction.md",
+        "updated": "2026-09-19"
+      }
+    ]
+  },
+  {
     "slug": "bone-archive-development",
     "title": "Bone Archive: Development and Source",
     "topic": "World Development",
@@ -24,12 +64,12 @@
     "title": "Character Image Production",
     "topic": "Visual Production Standard",
     "file": "character-image-production.md",
-    "updated": "2026-09-14",
-    "description": "Required template use, female T-pose baselines, character-specific design continuity, and visual review for writers and agents.",
+    "updated": "2026-09-19",
+    "description": "Anima's distinct mascot, symbolic, and anatomical-template roles; character-specific bodies, design briefs, references, and asset naming.",
     "speakers": [
       "Author's Desk"
     ],
-    "defaultVersion": "v3",
+    "defaultVersion": "v4",
     "versions": [
       {
         "id": "v1",
@@ -47,10 +87,17 @@
       },
       {
         "id": "v3",
-        "label": "v3 · Current",
-        "file": "character-image-production.md",
+        "label": "v3 · Archived",
+        "file": "character-image-production-v3.md",
         "updated": "2026-09-14",
         "description": "Descriptive filenames for all supplied assets, alongside approved templates and visual review."
+      },
+      {
+        "id": "v4",
+        "label": "v4 · Current",
+        "file": "character-image-production.md",
+        "updated": "2026-09-19",
+        "description": "Anima's distinct mascot, symbolic, and anatomical-template roles; character-specific bodies, design briefs, references, and asset naming."
       }
     ]
   },
@@ -60,11 +107,11 @@
     "topic": "Writer's Style Reference",
     "file": "prose-style.md",
     "updated": "2026-09-19",
-    "description": "The active house style: concrete attention, uneven conversation, dry comedy, and restraint in explanation.",
+    "description": "The active house style, with concise guidance for consequential intimacy and changes between sacred, political, intimate, and mundane registers.",
     "speakers": [
       "Author's Desk"
     ],
-    "defaultVersion": "v11",
+    "defaultVersion": "v12",
     "versions": [
       {
         "id": "v1",
@@ -138,10 +185,17 @@
       },
       {
         "id": "v11",
-        "label": "v11 · Current",
-        "file": "prose-style.md",
+        "label": "v11 · Archived",
+        "file": "prose-style-v11.md",
         "updated": "2026-09-19",
         "description": "The active house style: concrete attention, uneven conversation, dry comedy, and restraint in explanation."
+      },
+      {
+        "id": "v12",
+        "label": "v12 · Current",
+        "file": "prose-style.md",
+        "updated": "2026-09-19",
+        "description": "The active house style, with concise guidance for consequential intimacy and changes between sacred, political, intimate, and mundane registers."
       }
     ]
   },
@@ -237,11 +291,11 @@
     "topic": "Editorial Reference",
     "file": "prose-and-scene-guidance.md",
     "updated": "2026-09-19",
-    "description": "Practical revision checks, source fidelity, and boundaries for scenes and public records.",
+    "description": "Practical revision checks and a scene-level inclusion test for intimate details, with ordinary life and duty kept primary.",
     "speakers": [
       "Author's Desk"
     ],
-    "defaultVersion": "v9",
+    "defaultVersion": "v10",
     "versions": [
       {
         "id": "v1",
@@ -301,10 +355,17 @@
       },
       {
         "id": "v9",
-        "label": "v9 · Current",
-        "file": "prose-and-scene-guidance.md",
+        "label": "v9 · Archived",
+        "file": "prose-and-scene-guidance-v9.md",
         "updated": "2026-09-19",
         "description": "Practical revision checks, source fidelity, and boundaries for scenes and public records."
+      },
+      {
+        "id": "v10",
+        "label": "v10 · Current",
+        "file": "prose-and-scene-guidance.md",
+        "updated": "2026-09-19",
+        "description": "Practical revision checks and a scene-level inclusion test for intimate details, with ordinary life and duty kept primary."
       }
     ]
   },
@@ -407,12 +468,12 @@
     "title": "Character Intimacy and Sexuality Reference",
     "topic": "Writer's Character Reference",
     "file": "character-intimacy-and-sexuality.md",
-    "updated": "2026-09-13",
-    "description": "The recurring church comedy distinguishes Felix’s broad flirting from his attachment to Lynleit and her irritation from jealousy.",
+    "updated": "2026-09-19",
+    "description": "Intimacy's limited narrative scale, its character-specific consequences, and confirmed relationship directions without speculative sexual styles.",
     "speakers": [
       "Character Archive"
     ],
-    "defaultVersion": "v12",
+    "defaultVersion": "v13",
     "versions": [
       {
         "id": "v1",
@@ -504,10 +565,18 @@
       },
       {
         "id": "v12",
-        "label": "v12 · Current",
-        "file": "character-intimacy-and-sexuality.md",
+        "label": "v12 · Archived",
+        "file": "character-intimacy-and-sexuality-v12.md",
         "updated": "2026-09-13",
         "description": "The recurring church comedy distinguishes Felix’s broad flirting from his attachment to Lynleit and her irritation from jealousy.",
+        "tensionFile": "sexual-tension-notes-v12.json"
+      },
+      {
+        "id": "v13",
+        "label": "v13 · Current",
+        "file": "character-intimacy-and-sexuality.md",
+        "updated": "2026-09-19",
+        "description": "Intimacy's limited narrative scale, its character-specific consequences, and confirmed relationship directions without speculative sexual styles.",
         "tensionFile": "sexual-tension-notes.json"
       }
     ]
@@ -574,7 +643,7 @@
     "title": "Questions to Be Answered",
     "topic": "Editorial Ledger",
     "file": "questions-to-be-answered.md",
-    "updated": "2026-09-14",
+    "updated": "2026-09-19",
     "description": "Unanswered questions about chronology, family reveals, Holumn effects, and the limits of established lore.",
     "speakers": [
       "Author's Desk"
@@ -658,7 +727,7 @@
     "topic": "World Foundation",
     "file": "world-foundation.md",
     "updated": "2026-09-19",
-    "description": "Magic, magecraft, hidden history, and Holumn ontology, with Lester’s contradictory continuity distinguished from an unknown transformation.",
+    "description": "A 21st-century setting with older institutions, alongside magic, hidden history, and Holumn ontology.",
     "speakers": [
       "World Archive"
     ],
@@ -679,13 +748,20 @@
       },
       {
         "id": "v3",
-        "label": "v3 · Current",
-        "file": "world-foundation.md",
+        "label": "v3 · Archived",
+        "file": "world-foundation-v3.md",
         "updated": "2026-09-19",
         "description": "Magic, hidden history, and Holumn ontology. The suppression doctrine has one concise account of its disputed moral boundary."
+      },
+      {
+        "id": "v4",
+        "label": "v4 · Current",
+        "file": "world-foundation.md",
+        "updated": "2026-09-19",
+        "description": "A 21st-century setting with older institutions, alongside magic, hidden history, and Holumn ontology."
       }
     ],
-    "defaultVersion": "v3"
+    "defaultVersion": "v4"
   },
   {
     "slug": "magecraft-as-leverage",

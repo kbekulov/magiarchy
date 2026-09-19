@@ -38,18 +38,6 @@ A firearms detail may deserve more words than an incidental meal. A quiet charac
 
 These checks are invitations to reread, not a required set of ingredients. Preserve good prose even when it does not demonstrate them all.
 
-## Does the intimate detail belong?
-
-Use the [Intimacy Reference](../docs.html?doc=character-intimacy-and-sexuality) for scale, established relationships, and milestone order. Read [Thematic Direction](../docs.html?doc=thematic-direction) when sacred, ancestral, or symbolic material enters the scene.
-
-1. Temporarily remove the joke, memory, flirtation, or physical observation. What particular response, relationship change, decision, or consequence becomes weaker? A revealing joke can be enough; it need not advance the entire plot.
-2. Ask why the focal character notices this detail now. Repeated reminders of beauty or desire add little if attention and behavior stay the same.
-3. Check whose meaning it is. Mikhail's insult is his provocation, not a narrator's judgment or a Cult obligation. Attraction need not explain irritation, loyalty, or physical proximity.
-4. Check what follows. A private event may change trust, secrecy, identity, family, or later decisions. Do not invent a consequence to justify an unnecessary detail.
-5. Return to the characters' lives. Once intimacy is established, work, politics, danger, chores, disagreements, and humor should still occupy most of their shared time. Do not prescribe extra encounters or make every important relationship sexual.
-
-Apply this test to proposed material and genuine conflicts, not as a pretext to remove approved banter or rewrite scenes that already work. Keep undecided intimate history undecided rather than supplying a sexual style from a character's temperament.
-
 ## Where information belongs
 
 An undrafted passage is not a license to replace the author's action with a more familiar trope. Preserve the supported surrounding material, insert a non-graphic amber Writer notice at the gap, and retain the timestamped backlog source. The Bench under the Lamp v2 follows this approach and removes v1's invented kiss. The writer gap must be completed before the Chapter is described as finished prose.

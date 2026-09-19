@@ -6,24 +6,16 @@ Using approved templates is a required first step for future character image gen
 
 Use the actual reference images as inputs wherever the generation tool supports them. A written description or recollection of an image is not a substitute for an available visual reference. If a required reference cannot be accessed or supplied, explain the limitation and agree on an alternative with the author before generating.
 
-## Anima's three roles
+## Female T-pose baseline
 
-Anima, unofficially nicknamed <span data-no-entity-links>Inanna</span>, has three distinct roles: the author's personal mascot, a symbolic expression of the project's tonal world, and the female anatomical production template. None makes her a character in story canon. [Thematic Direction](../docs.html?doc=thematic-direction) owns the symbolic role and distinguishes it from the Cult of Inanna.
-
-Her black, red, and gold palette, mask, ritual jewelry, exposed skin, flowing fabric, ornaments, and dancer-like presentation belong to her mascot design. Another character needs an independent design reason to share them. Anatomy does not prescribe clothing, personality, sexuality, sexual behavior, religious or cultural identity, social role, temperament, or a hierarchy of beauty.
-
-## Female anatomical baseline
-
-Anima's approved T-pose sets are the shared anatomical starting point for future female-character design and the gold-standard presentation for their T-poses. Use them together with the target character's approved references.
+Anima, the author's personal mascot, provides the gold-standard pose and overall body-proportion reference for future female-character T-poses. Her unofficial nickname is <span data-no-entity-links>Inanna</span>.
 
 - [Black-and-gold template, front and back](gallery.html?resource=author-mascot-black-gold)
 - [Red-drapery template, front and back](gallery.html?resource=author-mascot-red-drapery)
 
 The future male template is named Animus. No male template artwork is registered yet. Template mascots may also have unofficial nicknames; keep official names and nicknames distinct. These production identities do not establish story characters or a connection to the story's Cult of Inanna.
 
-Design individual bodies through deliberate differences from that baseline. Record the target's established height, build, musculature, body composition, proportions, age or life period, lifestyle, training, physical history, and distinguishing appearance. Differences are not improvements or deficiencies. Shared structural continuity does not require identical bodies, and an existing approved design must not be reshaped merely to resemble Anima.
-
-The template is a production tool, not in-world anatomy lore. Its costume, face, accessories, hair, color palette, sensual presentation, and cultural styling do not transfer automatically. Standardized T-pose presentation is useful for reference sheets; it does not impose the mascot's dancer-like gestures on ordinary character artwork.
+Adapt height, body mass, and individual shapes to the target character. The template does not require identical bodies. Its costume, face, accessories, and hair are not automatically part of another character's design. The mascot remains outside story canon.
 
 ## Reference selection and design continuity
 
@@ -36,16 +28,6 @@ If a template and a confirmed character feature conflict, preserve the confirmed
 ## Generation brief
 
 Record which references the request uses, what each controls, and which character-specific differences must be preserved. Distinguish the pose/proportion template from the character-identity reference. State the intended view and design version, and identify any approved change explicitly.
-
-Use this compact brief when designing a new female character or revising an existing one:
-
-- **Identity and period:** character, approved incarnation, reference filenames, and matching-version views.
-- **Baseline:** the chosen Anima set and the anatomy or pose presentation it supplies.
-- **Individual body:** established height, build, musculature, body composition, and proportions, with their source. Include age, lifestyle, training, or physical history only where these establish a visible design requirement; do not derive a measurement from a personality type or profession.
-- **Separate design:** face, hair, costume, accessories, palette, and pose language specific to the character. Keep the contemporary setting in view.
-- **Unspecified features:** identify genuine gaps instead of inventing weight, measurements, age, or medical history. Resolve consequential ambiguity with the author before generation.
-
-For example, Lynleit's confirmed 169 cm slender build and tailored blue-and-black wardrobe remain hers. The reference does not replace them with Anima's proportions or red drapery. Consult [Hidden World Foundation](../docs.html?doc=world-foundation) when changing material or historical styling.
 
 ## Visual review and publication
 
@@ -62,7 +44,5 @@ Rename without changing file contents, verify original bytes, avoid collisions, 
 ### Review checklist
 
 Compare the result with the references before registration or publication. Check identity, proportions, silhouette, costume details, pose, and front/back consistency. Inspect hands, feet, accessories, and occluded areas for discrepancies. Treat an unexplained generated difference as something to review, not as new canon.
-
-Check the recorded individual differences as deliberately as the shared anatomy. Reject accidental bodily sameness, imported mascot styling, and ancient-fantasy drift in otherwise contemporary designs. Do not turn a model's invented difference into a new character fact.
 
 Preserve approved source files. Register production views as matching-version siblings with original downloads and descriptive metadata. Keep unapproved outputs outside the published archive. Follow the production intake workflow in the archive maintenance charter.

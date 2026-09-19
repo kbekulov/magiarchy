@@ -39,6 +39,10 @@ After verification, move the unchanged source into `backlog/archive/original-nam
 | Genuine conflict | `docs/contradictions-to-resolve.md` | Contradictions document only |
 | Capability balance | `docs/character-capability-balance.md` and `skillProfiles` in `character.js` | Capability ledger and profile graph |
 | Prose style | `docs/prose-style.md` | Concise active house style; read alongside each Chapter or Moment draft |
+| Thematic direction | `docs/thematic-direction.md` | Writer-facing Inanna/Ishtar orientation and register collisions; concise cross-references in prose and production guidance, not a public lore explanation |
+| Intimacy scale and inclusion | `docs/character-intimacy-and-sexuality.md` | Relationship guidance and confirmed milestones; practical scene test in `docs/prose-and-scene-guidance.md` |
+| Female anatomical baseline | `docs/character-image-production.md` and approved `gallery/resources.json` templates | Generation briefs, character-specific differences, same-version reference views, visual review; never automatic story canon |
+| Material and historical setting | `docs/world-foundation.md` | World overview and relevant institution/place records: 21st-century life with persistent 18th- and 19th-century institutions |
 | Style history | `docs/prose-style-history.md` | Chapter-specific examples, earlier decisions, provenance, and quotation sources; historical evidence, not an automatic voice reference |
 | Documents | Markdown in `docs/` plus `docs/index.json`, with `defaultVersion` and ordered `versions` | Docs catalog, versioned reader, matching Markdown link, global search for every version |
 | Music | `music.html` and author-supplied audio in `media/music/` | Music cards, MP3 playback, separate MP3 and WAV downloads, global search |
@@ -148,7 +152,17 @@ An artefact belongs in this archive when its identity, custody, rule, or history
 
 ## Pagan traditions
 
+Before changing Cult lore or Lynleit's lineage, read `docs/thematic-direction.md`, the owning Magiarchy record below, and relevant current/default scenes. The tonal association with Inanna/Ishtar is writer-facing. It must not become a universal cause of attraction, magic, feminine identity, or the world's visual design.
+
 Ancient pagan cults and religions, explicitly including the Cult of Inanna, have an important role in magic and belong intrinsically to the Magi world, distinct from official Church doctrine. The concise World record lives at `magiarchy.html#cult-of-inanna`, with links from World and Church. Keep other cults unnamed until the author identifies them. Fionn's Magi lineage is associated with the Cult of Inanna; Lynleit is indirectly associated through her family, not a direct participant. Mikhail knows this and names Inanna in the author-supplied Doom v6 exchange, describing three thousand years of lineage continuity, ancestral covenants, and the political significance of intimacy. This supersedes v5's concealed identification. Mark the named lineage history as spoken information, while Lynleit's private embarrassment remains conveyed through behavior. The mock honorific is not a cult rank or authentic liturgy, and no sexual obligation, cult-derived blue-flame ability, or compulsory practice follows from it. The specific covenants, current obligations, other members, powers, and locations remain unresolved. Doctrinal difference alone does not establish exemption from Church jurisdiction, criminal status, or hostility. Do not import real-world religious history as fictional canon without author direction.
+
+## Thematic audit triggers
+
+- Sexual/intimate material: consult the Intimacy Reference, current Prose Style, and Scene Guidance. Ask what removing the detail would cost this character, scene, relationship, or later consequence. Scale the test to a joke or glance; do not require a new plot event from every line. Preserve approved humor. Established intimacy does not require more sexual scenes, and strong friendship or irritation does not automatically imply attraction. Check the tension registry, milestone order, and reader-knowledge ledger when facts actually change.
+- Cult/lineage material: distinguish confirmed history, a character's rhetoric, and author-facing symbolism. Check the Magiarchy record, Fionn/Lynleit/Mikhail profiles, Doom, and relevant Docs for invented obligation or universal influence. Keep unknown practices unknown.
+- Female design: consult Character Image Production before drafting the brief. Record established differences from Anima's anatomical baseline and their sources; leave missing measurements unassigned. Keep anatomy separate from costume, personality, sexuality, and symbolic role. Review matching-version reference views and existing character identity, not whether every body matches the mascot. Gallery-only mascot metadata must not create a story profile or Cult connection.
+- Setting changes: consult Hidden World Foundation. Check relevant World pages, current scenes, and artwork metadata for contemporary communications, weapons, transport, work, and domestic life alongside established older titles and institutions. Ancient imagery belongs only where justified. Do not add explanatory technology or historical lore to every scene merely to prove the period.
+- Record findings as already fitting, correction needed, author decision needed, or deliberately unchanged because applying the principle would overstate it. Correct only demonstrated conflicts. Use Questions for actual missing facts, Contradictions for incompatible facts, and do not manufacture new ledger entries to satisfy an audit. Version changed Docs and their live JSON dependencies. Publish only static generated output.
 
 ## Selected Chapter canon
 
@@ -173,6 +187,8 @@ All other versioned readers use `version-navigation.js`: Previous, a native vers
 Before changing a document, preserve its previous published content as a separate version file and register the next revision in `docs/index.json`. Repoint the old version's file to that snapshot before editing the current source; snapshot and repoint any live JSON dependencies as well. Keep the established Markdown filename as the current maintenance source, with `defaultVersion` pointing to its current version record. Never overwrite an archived file. Readers and search must support `docs.html?doc=slug&version=v1`, the selected revision's metadata, and its matching Markdown download. Unversioned legacy documents resolve as v1 until revised.
 
 When a document is augmented from JSON, preserve that data too. Use version-specific `behaviorFile` or `tensionFile` snapshots for old advisory and intimacy documents so new notes cannot leak into their archived views or search entries. Current versions use the live registries. The prose-style and scene-guidance documents must be revised alongside narrative work when a reusable approach changes. Historical guidance remains readable but does not override the current charter or AGENTS.md.
+
+The Intimacy reader recognizes character sections by the `Basis:` paragraph immediately below their heading. General guidance, comparisons, and continuity sections remain ordinary document sections rather than character cards. Keep section boundaries intact when introducing new headings, and test both current and archived documents.
 
 All Chapter, Moment, and Document version links use the compact identifiers v1, v2, and so forth. Show current/canon status separately from the link text.
 

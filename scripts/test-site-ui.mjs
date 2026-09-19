@@ -64,7 +64,7 @@ try {
       }
       for (const width of [390, 1440]) {
         await page.setViewportSize({ width, height: 900 });
-        for (const slug of ['prose-style', 'prose-and-scene-guidance', 'prose-style-history', 'world-foundation', 'holumn-incidents-and-testimonies']) {
+        for (const slug of ['prose-style', 'prose-and-scene-guidance', 'prose-style-history', 'world-foundation', 'holumn-incidents-and-testimonies', 'character-intimacy-and-sexuality', 'character-image-production', 'thematic-direction', 'thematic-audit-2026-09-19']) {
           await visit(`docs.html?doc=${slug}`);
           const record = JSON.parse(fs.readFileSync(path.join(root, 'docs/index.json'), 'utf8')).find(d => d.slug === slug);
           assert.equal(await page.locator('#document-source-link').getAttribute('href'), `docs/${record.file}`);
@@ -76,9 +76,34 @@ try {
             await page.locator('#document-reader h1').scrollIntoViewIfNeeded();
             await page.screenshot({ path: `test-results/${engine}-active-prose-${width}.png` });
           }
+          if (slug === 'character-image-production') {
+            assert.ok(await page.getByRole('heading', { name: "Anima's three roles" }).isVisible());
+            assert.equal(await page.locator('#document-reader [data-no-entity-links] a.archive-entity-link').count(), 0, 'Mascot nickname incorrectly linked to Cult lore');
+          }
+          if (slug === 'character-intimacy-and-sexuality') {
+            assert.ok(await page.locator('#document-error').isHidden(), 'Intimacy reader failed');
+            assert.equal(await page.locator('.intimacy-character').count(), 17);
+            assert.equal(await page.locator('.intimacy-character-index a').count(), 17);
+            for (const id of ['scale-and-inclusion', 'two-relationship-directions', 'development-sequence-and-thematic-limits', 'related-characterization']) {
+              assert.equal(await page.locator(`#document-reader > h2#${id}`).count(), 1, `${id}: editorial section treated as a character`);
+            }
+            await page.locator('#document-reader h1').scrollIntoViewIfNeeded();
+            await page.screenshot({ path: `test-results/${engine}-intimacy-guidance-${width}.png` });
+          }
+          if (slug === 'thematic-direction') {
+            await page.locator('#document-reader h1').scrollIntoViewIfNeeded();
+            await page.screenshot({ path: `test-results/${engine}-thematic-direction-${width}.png` });
+          }
         }
         await visit('docs.html?doc=prose-style&version=v10');
         assert.equal(await page.locator('#document-source-link').getAttribute('href'), 'docs/prose-style-v10.md');
+        await visit('docs.html?doc=character-intimacy-and-sexuality&version=v12');
+        assert.equal(await page.locator('#document-source-link').getAttribute('href'), 'docs/character-intimacy-and-sexuality-v12.md');
+        assert.ok(await page.locator('#document-reader').getByText('A patient, measured approach', { exact: false }).count(), 'Earlier intimate interpretation was not preserved');
+        await visit('world.html');
+        await page.locator('a[href="docs.html?doc=world-foundation#a-contemporary-world-with-older-institutions"]').click();
+        await page.getByRole('heading', { name: 'A contemporary world with older institutions', exact: true }).waitFor();
+        assert.ok(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1), `World foundation deep link/${width}: overflow`);
       }
       if (process.env.TEST_PROSE_ONLY === '1') {
         assert.deepEqual(errors, [], `${engine}: prose reader errors`);

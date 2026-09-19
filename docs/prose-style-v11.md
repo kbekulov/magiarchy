@@ -45,12 +45,6 @@ Keep objects available for ordinary use. A cup occupies hands, a jacket can be l
 
 Preserve awkwardness, uneven attention, and occasional bluntness. Do not roughen clean prose with artificial mistakes, and do not polish every section into equal length. Appearance states observable facts without defending the outfit.
 
-## Intimacy and changes of register
-
-Sex occupies little space in the larger story but can change much. A joke, glance, memory, or sensual detail should earn its place through this character's attention or a specific consequence. Established intimacy does not displace work and ordinary life. The [Intimacy Reference](../docs.html?doc=character-intimacy-and-sexuality) owns the fuller inclusion test.
-
-Allow sacred, political, violent, intimate, supernatural, and mundane registers to meet when the situation brings them together. Doom's consultations can be frightening, scholarly, embarrassing, and funny in one conversation. Preserve that range without making every scene imitate it. [Thematic Direction](../docs.html?doc=thematic-direction) distinguishes this authorial orientation from lore.
-
 ## Implication and uncertainty
 
 Let action, dialogue, and perception carry an implication once they supply enough evidence. Do not append a sentence certifying it. An undecided fact is not subtext; an undrafted passage is not a finished ellipsis.

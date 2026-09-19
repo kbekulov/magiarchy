@@ -388,9 +388,13 @@ async function enhanceCharacterIntimacyDocument(container, entry) {
   const sectionHeadings = Array.from(container.querySelectorAll(':scope > h2'));
   const guideHeading = sectionHeadings.find((heading) => heading.id === 'how-to-read-the-profiles');
   const principlesHeading = sectionHeadings.find((heading) => heading.id === 'archive-wide-writing-principles');
+  // Editorial sections can precede, follow, or interrupt the character records.
+  // A profile declares its basis immediately after its heading; other h2s are not characters.
   const characterHeadings = sectionHeadings.filter((heading) => (
-    heading !== guideHeading && heading !== principlesHeading
+    heading.nextElementSibling?.tagName === 'P'
+    && /^Basis:\s/.test(heading.nextElementSibling.textContent.trim())
   ));
+  const nextSection = heading => sectionHeadings[sectionHeadings.indexOf(heading) + 1] || null;
 
   const title = container.querySelector(':scope > h1');
   const lede = title?.nextElementSibling;
@@ -410,7 +414,7 @@ async function enhanceCharacterIntimacyDocument(container, entry) {
     guide.className = 'intimacy-guide';
     guide.setAttribute('aria-labelledby', guideHeading.id);
     container.insertBefore(guide, guideHeading);
-    collectDocumentNodes(guideHeading, characterHeadings[0]).forEach((node) => guide.append(node));
+    collectDocumentNodes(guideHeading, nextSection(guideHeading)).forEach((node) => guide.append(node));
 
     const navigator = document.createElement('nav');
     navigator.className = 'intimacy-character-index';
@@ -436,7 +440,7 @@ async function enhanceCharacterIntimacyDocument(container, entry) {
   }
 
   characterHeadings.forEach((heading, index) => {
-    const boundary = characterHeadings[index + 1] || principlesHeading;
+    const boundary = nextSection(heading);
     const contentNodes = collectDocumentNodes(heading.nextSibling, boundary);
     const characterName = heading.textContent.trim();
     const card = document.createElement('section');
@@ -496,7 +500,7 @@ async function enhanceCharacterIntimacyDocument(container, entry) {
     principles.className = 'intimacy-principles';
     principles.setAttribute('aria-labelledby', principlesHeading.id);
     container.insertBefore(principles, principlesHeading);
-    collectDocumentNodes(principlesHeading, null).forEach((node) => principles.append(node));
+    collectDocumentNodes(principlesHeading, nextSection(principlesHeading)).forEach((node) => principles.append(node));
   }
 }
 
