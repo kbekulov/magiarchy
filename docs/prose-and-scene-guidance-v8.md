@@ -1,6 +1,6 @@
 # Prose and Scene Guidance
 
-Read [MAGIARCHY Prose Style](../docs.html?doc=prose-style) alongside every draft. [Style History](../docs.html?doc=prose-style-history) keeps earlier Chapter decisions and examples. Use the current voice when revising; an old audit is not a model for how characters should speak.
+For narrative voice, dialogue, rhythm, comic timing, and a log of Chapter-specific style choices, use [MAGIARCHY Prose Style](../docs.html?doc=prose-style) alongside every draft. This document owns revision boundaries and development approaches.
 
 This is editorial guidance. It does not add events, motives, or supernatural rules to canon. Established facts belong in their archive records; a Chapter lets the reader experience them.
 
@@ -13,30 +13,6 @@ This is editorial guidance. It does not add events, motives, or supernatural rul
 - Do not defend a competent character after every bad reaction. Competence, affection, embarrassment, selfishness, and poor judgment can coexist.
 - Give each consultation a new piece of evidence, a failed treatment, a limitation, or a disagreement. Do not have several experts repeat one explanation in different vocabularies.
 - Use MBTI to check a portrayal, not as its vocabulary. People do not need to think about their relationships as systems, access, or control merely because those terms helped an audit.
-
-## Practical revision checks
-
-### Let the conversation get somewhere imperfectly
-
-Read an exchange without the narration. Does every question receive exactly the answer needed to introduce the next concept? Look for the point where this particular listener would resist, misunderstand, or become distracted. Keep an existing interruption before inventing another. Natalia can teach clearly while Lynleit objects to what the answer would require of her. Avoid turning both into cooperative voices for one lecture.
-
-### Find the behavior under the summary
-
-When a profile says someone manages uncertainty or controls emotional access, ask what the existing scenes actually show. Lynleit can postpone a plan she cannot explain her doubts about. Felix can reassure others while continuing to test his hopeful account. Use that evidence rather than inventing a new habit to make the paragraph colorful. Keep physical competence separate from personality typing.
-
-### Remove the certificate, not the implication
-
-Try ending a paragraph one sentence earlier. If the gesture or reply still makes sense, the last sentence may merely be explaining what it proved. Keep an explanation when it supplies a missing rule or necessary observation. Do not make the reader guess basic blocking in the name of subtext.
-
-### Keep the particular inconvenience
-
-A cup, lost coat, awkward room, or poorly timed question can carry feeling without being called an emotional anchor. Check where the object is and what the person does with it. Ordinary inconvenience can continue during a supernatural crisis; it need not become a comic interruption or symbol on command.
-
-### Leave emphasis uneven
-
-A firearms detail may deserve more words than an incidental meal. A quiet character may give one answer while another talks around it for a page. Do not equalize these differences to make the archive look complete. Short, concrete declarations are useful; a generic dramatic final line is not a necessary reward for finishing a paragraph.
-
-These checks are invitations to reread, not a required set of ingredients. Preserve good prose even when it does not demonstrate them all.
 
 ## Where information belongs
 
@@ -90,7 +66,7 @@ The author confirms that Fionn's Magi lineage is associated with the Cult of Ina
 
 The author's v6 exchange names Inanna and describes three thousand years of lineage association, ancestral covenants, and the political force of intimacy. This replaces v5's concealed identification. Keep the private sting in her handling of the cup, formal defence, and threatened reprisal. Do not add a paragraph explaining why she should feel ashamed, make her actual competence depend on sexual experience, or invent a rite she has failed. Her family affiliation is not a cause of attraction to Kyrien. The curse still depends on reciprocal identity change, not on obedience to a cult.
 
-Let Mikhail provoke through ceremony and observation, and let Lynleit answer sharply rather than simply suffer the joke. His treatment can fail. The v6 and v7 examples are in [Style History](../docs.html?doc=prose-style-history).
+The author's sexual-comedy direction favors psychologically revealing, memorable exchanges that still advance the scene. Let Mikhail provoke through ceremony and observation, and let Lynleit answer sharply rather than simply suffer the joke. Retain the possibility of failure in his treatment advice. See the v6 and v7 craft notes in the current Prose Style reference.
 
 V7 restores the nine approved comic and behavioral beats from the longer exchange. Keep the pause in which Mikhail does not pursue Lynleit's averted gaze. It does not add a romance or turn his teasing into infallible knowledge. The consultation still concerns their survival, and its treatment remains uncertain.
 

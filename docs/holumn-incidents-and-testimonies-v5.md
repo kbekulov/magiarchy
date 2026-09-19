@@ -1,6 +1,6 @@
 # Holumn Incidents and Victim Testimonies
 
-These accounts describe Holumn encounters, what victims remember, and how institutions have interpreted them. Police, government, Magi, and Church envoys may not know about every encounter listed here.
+This archive preserves Holumn encounters, victim testimony, and institutional readings where they exist. An individual encounter does not establish that police, government, Magi, or Church envoys know of it.
 
 Forms and countermeasures are collected in [Holumns](../holumns.html).
 
@@ -32,7 +32,7 @@ Natalia comes to recognize contradiction as an intrinsic feature of nature. Lest
 
 An officer steps aside before a shot is fired. He cannot explain the movement. Later, while changing his shirt, he finds a scar where the bullet would have entered. His name, affiliation, location, and the date of the incident are not recorded here.
 
-The Bone Archive preserves experiences that no longer have a place in the surviving history of a life. A person may remember a conversation nobody else recalls, mourn a child absent from their biography, or recognize someone as their killer while still alive. An unexplained limp, pain, or practiced movement can carry the experience into the body. No physical library or collection of bones has been identified.
+The Bone Archive preserves experiences that no longer have a place in the surviving history of a life. A person may remember a conversation nobody else recalls, mourn a child absent from their biography, or recognize someone as their killer while still alive. An unexplained limp, pain, or practiced movement can carry the experience into the body. The Archive has not been identified as a physical library, and its name does not establish a collection of literal bones.
 
 Recovery is costly. Knowledge of how to survive a burning room may arrive with the memory of dying in it. A useful response and the suffering through which it was acquired need not be separable. This does not establish controllable time travel, an interchangeable supply of skills, or a reliable forecast.
 

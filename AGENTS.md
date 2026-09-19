@@ -24,6 +24,22 @@ Before starting any new user request, check the repository's `backlog/` folder f
 - Integrate as much supplied detail as possible, preserving specific dialogue, intentions, and consequences rather than replacing them with a loose summary. Do not substitute an invented action for an omitted one. If a passage cannot be drafted, keep the surrounding permissible material and insert a concise, non-graphic writer placeholder at the omission. Use `> [WRITER: ...]` in Markdown, rendered as an amber editorial callout, not canon or a reader inference. Record unresolved choices in the editorial ledgers. Archive the source with these gaps explicitly acknowledged; do not claim the missing passage is complete.
 - If contradictory facts prevent safe integration, preserve the pending source and ask for the necessary author decision. Do not silently pick a resolution.
 
+## Author voice preservation
+
+1. For voice, use direct author wording and explicitly approved passages first, then successful current/default Chapters and Moments, the current `docs/prose-style.md`, character-specific speech and behavior, and other current public prose, in that order.
+2. Historical revisions, superseded Docs, old audits, archived backlog prompts, and prior AI summaries are not a style corpus. Consult them for continuity, provenance, recovering author details, comparisons, or explicitly approved material. Current voice wins unless older wording was itself supplied or approved by the author.
+3. Public prose describes people, events, rules, objects, places, institutions, and what is unknown. Keep synchronization, validation, alignment, tracking, and maintenance commentary on pages about site administration.
+4. Do not add an editorial certificate after a gesture, joke, image, or contradiction has already communicated its implication. Explain only what the reader still needs.
+5. Prefer habits, characteristic failures, choices, gestures, contradictions, and repeated social behavior to abstract psychological summaries. MBTI, functions, attachment, systems, access, regulation, control, and optimization are not substitutes for characterization.
+6. Preserve human asymmetry. Pages need not have equal paragraph lengths, explanatory depth, polish, or section rhythms. Spend words where the author's interest lies.
+7. Conversations may include ignored questions, wrong premises, interruptions, distraction, irritation, and jokes. Preserve fitting inefficiency; do not manufacture it in every exchange.
+8. Question portable dramatic endings about silence, darkness, fate, or words settling. Anchor important lines in this character, object, rule, profession, place, or inconvenience. Short declarative sentences are welcome when they carry something particular.
+9. State a necessary caveat precisely and once. Do not surround every uncertain fact with a list of everything it fails to imply.
+10. Use craft terminology in writer Docs only when it helps someone revise. Keep it out of Chapters, Moment prose, profiles, World records, Home summaries, and dialogue unless the fictional speaker has a real reason to use it.
+11. Do not accumulate a permanent style rule after every edit. Add one when the author approves it as reusable or several accepted passages demonstrate the preference. Keep Chapter history in `docs/prose-style-history.md`, not in the active house style.
+12. Canon synchronization and prose normalization are separate operations. Agree on facts across surfaces without copying one polished sentence everywhere; each surface has its own purpose and emphasis.
+13. Build, audit, and generator scripts are local development tools. Publish their static output, never require Node or a backend to read the site. Keep scripts small, transparent, and dependency-free where possible; do not add packages, frameworks, or external AI-detection services for prose checks. `npm run prose:audit` gives review warnings, not authorship verdicts or automatic rewrites.
+
 ## Product and design direction
 
 - Questions to Be Answered and Contradictions to Resolve are latest-only living ledgers. Do not create versions for these two documents. Other versioned documents, Chapters, and Moments share compact Previous, version dropdown, Next, and Latest controls. Latest means newest registered revision, not necessarily the author-selected canon/default. Preserve direct version URLs and distinguish current/canon status.

@@ -69,7 +69,7 @@
         "Protection is local to the area physically covered by the garment.",
         "The garment does not provide passive protection merely because Lynleit is wearing it.",
         "Lynleit cannot command its form or rely on it to assume the form most useful to the situation.",
-        "The exact boundary of minor magically induced damage remains unknown."
+        "How much magical force the coat can withstand is unknown."
       ],
       "chronology": [
         {
@@ -108,7 +108,7 @@
           "label": "Character",
           "title": "Lynleit",
           "href": "character.html?character=lynleit#equipment-title",
-          "detail": "The coat is recorded among Lynleit's carried equipment."
+          "detail": "Lynleit carries the coat and uses it to shield herself or others."
         },
         {
           "label": "Character",
@@ -190,7 +190,7 @@
           "label": "Character",
           "title": "Kyrien",
           "href": "character.html?character=kyrien#equipment-title",
-          "detail": "Recorded among his carried equipment."
+          "detail": "Kyrien keeps the flask in a familiar pocket."
         },
         {
           "label": "Development",

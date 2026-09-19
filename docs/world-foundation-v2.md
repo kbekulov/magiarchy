@@ -50,10 +50,12 @@ The institutions responsible for secrecy place social stability above public acc
 
 ## Suppression Doctrine
 
-The Church and Magiarchy share responsibility for containing public knowledge of magic, with final sanction held by the Church. The response depends on the witness and the exposure; it can include discrediting, coercion, forced service, or killing. Where containment becomes murder is disputed. See the [Church's suppression doctrine](../church.html#suppression-doctrine-title) for those responses and the arguments over them.
+The Church and Magiarchy share responsibility for containing public knowledge of magic, with final sanction held by the Church. The response depends on the witness and the exposure; it can include discrediting, coercion, forced service, or killing. The [Church's suppression doctrine](../church.html#suppression-doctrine-title) owns the full account of those responses and the disputes they create.
 
 ## The First Missing Person
 
 The first missing person causes the Spill. Other factions exploit the crisis he creates. His identity and the circumstances of the breach remain unresolved.
 
-The disappearances that follow are caused by Holumns. Missing-person cases, failed searches, and material explanations conceal the supernatural pattern until it becomes impossible to ignore.
+The disappearances that follow are caused by Holumns. This remains hidden behind missing-person cases, failed searches, and material explanations until the supernatural pattern becomes impossible to ignore.
+
+The unresolved moral boundary lies between containment and murder. Officials may absorb, discredit, coerce, or kill a witness under the same doctrine.

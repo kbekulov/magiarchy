@@ -59,12 +59,12 @@
     "title": "MAGIARCHY Prose Style",
     "topic": "Writer's Style Reference",
     "file": "prose-style.md",
-    "updated": "2026-09-13",
-    "description": "Running-gag construction, accumulated irritation, and restrained supporting characters in the church visits.",
+    "updated": "2026-09-19",
+    "description": "The active house style: concrete attention, uneven conversation, dry comedy, and restraint in explanation.",
     "speakers": [
       "Author's Desk"
     ],
-    "defaultVersion": "v10",
+    "defaultVersion": "v11",
     "versions": [
       {
         "id": "v1",
@@ -131,10 +131,37 @@
       },
       {
         "id": "v10",
-        "label": "v10 · Current",
-        "file": "prose-style.md",
+        "label": "v10 · Archived",
+        "file": "prose-style-v10.md",
         "updated": "2026-09-13",
         "description": "Running-gag construction, accumulated irritation, and restrained supporting characters in the church visits."
+      },
+      {
+        "id": "v11",
+        "label": "v11 · Current",
+        "file": "prose-style.md",
+        "updated": "2026-09-19",
+        "description": "The active house style: concrete attention, uneven conversation, dry comedy, and restraint in explanation."
+      }
+    ]
+  },
+  {
+    "slug": "prose-style-history",
+    "title": "Prose Style History",
+    "topic": "Historical Writing Reference",
+    "file": "prose-style-history.md",
+    "updated": "2026-09-19",
+    "description": "Earlier Chapter decisions, approved examples, research sources, and revision provenance. Use the current house style for new prose.",
+    "speakers": [
+      "Author's Desk"
+    ],
+    "defaultVersion": "v1",
+    "versions": [
+      {
+        "id": "v1",
+        "label": "v1 · Current",
+        "file": "prose-style-history.md",
+        "updated": "2026-09-19"
       }
     ]
   },
@@ -209,12 +236,12 @@
     "title": "Prose and Scene Guidance",
     "topic": "Editorial Reference",
     "file": "prose-and-scene-guidance.md",
-    "updated": "2026-09-11",
-    "description": "Revision boundaries, Holumn-specific states, intrinsic contradiction, and delayed family revelations.",
+    "updated": "2026-09-19",
+    "description": "Practical revision checks, source fidelity, and boundaries for scenes and public records.",
     "speakers": [
       "Author's Desk"
     ],
-    "defaultVersion": "v8",
+    "defaultVersion": "v9",
     "versions": [
       {
         "id": "v1",
@@ -267,10 +294,17 @@
       },
       {
         "id": "v8",
-        "label": "v8 · Current",
-        "file": "prose-and-scene-guidance.md",
+        "label": "v8 · Archived",
+        "file": "prose-and-scene-guidance-v8.md",
         "updated": "2026-09-11",
         "description": "Revision boundaries, Holumn-specific states, intrinsic contradiction, and delayed family revelations."
+      },
+      {
+        "id": "v9",
+        "label": "v9 · Current",
+        "file": "prose-and-scene-guidance.md",
+        "updated": "2026-09-19",
+        "description": "Practical revision checks, source fidelity, and boundaries for scenes and public records."
       }
     ]
   },
@@ -483,7 +517,7 @@
     "title": "Holumn Incidents and Victim Testimonies",
     "topic": "Holumn Archive",
     "file": "holumn-incidents-and-testimonies.md",
-    "updated": "2026-09-14",
+    "updated": "2026-09-19",
     "description": "Bone Archive evidence, costly recovery, surviving bargains, and unresolved institutional readings.",
     "speakers": [
       "Victims and Incident Witnesses",
@@ -520,13 +554,20 @@
       },
       {
         "id": "v5",
-        "label": "v5 · Current",
-        "file": "holumn-incidents-and-testimonies.md",
+        "label": "v5 · Archived",
+        "file": "holumn-incidents-and-testimonies-v5.md",
         "updated": "2026-09-14",
         "description": "Bone Archive evidence, costly recovery, surviving bargains, and unresolved institutional readings."
+      },
+      {
+        "id": "v6",
+        "label": "v6 · Current",
+        "file": "holumn-incidents-and-testimonies.md",
+        "updated": "2026-09-19",
+        "description": "Holumn encounters and institutional readings, with plainer introductory prose. Witness testimony and evidence boundaries are unchanged."
       }
     ],
-    "defaultVersion": "v5"
+    "defaultVersion": "v6"
   },
   {
     "slug": "questions-to-be-answered",
@@ -616,7 +657,7 @@
     "title": "Hidden World Foundation",
     "topic": "World Foundation",
     "file": "world-foundation.md",
-    "updated": "2026-09-12",
+    "updated": "2026-09-19",
     "description": "Magic, magecraft, hidden history, and Holumn ontology, with Lester’s contradictory continuity distinguished from an unknown transformation.",
     "speakers": [
       "World Archive"
@@ -631,13 +672,20 @@
       },
       {
         "id": "v2",
-        "label": "v2 · Current",
-        "file": "world-foundation.md",
+        "label": "v2 · Archived",
+        "file": "world-foundation-v2.md",
         "updated": "2026-09-12",
         "description": "Magic, magecraft, hidden history, and Holumn ontology, with Lester’s contradictory continuity distinguished from an unknown transformation."
+      },
+      {
+        "id": "v3",
+        "label": "v3 · Current",
+        "file": "world-foundation.md",
+        "updated": "2026-09-19",
+        "description": "Magic, hidden history, and Holumn ontology. The suppression doctrine has one concise account of its disputed moral boundary."
       }
     ],
-    "defaultVersion": "v2"
+    "defaultVersion": "v3"
   },
   {
     "slug": "magecraft-as-leverage",

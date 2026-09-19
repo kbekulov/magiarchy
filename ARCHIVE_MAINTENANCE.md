@@ -38,7 +38,8 @@ After verification, move the unchanged source into `backlog/archive/original-nam
 | Editorial uncertainty | `docs/questions-to-be-answered.md` | Questions document only |
 | Genuine conflict | `docs/contradictions-to-resolve.md` | Contradictions document only |
 | Capability balance | `docs/character-capability-balance.md` and `skillProfiles` in `character.js` | Capability ledger and profile graph |
-| Prose style | `docs/prose-style.md` | Read alongside each Chapter or Moment draft; record accepted style choices, working implementations, source-version provenance, and verified quotation sources |
+| Prose style | `docs/prose-style.md` | Concise active house style; read alongside each Chapter or Moment draft |
+| Style history | `docs/prose-style-history.md` | Chapter-specific examples, earlier decisions, provenance, and quotation sources; historical evidence, not an automatic voice reference |
 | Documents | Markdown in `docs/` plus `docs/index.json`, with `defaultVersion` and ordered `versions` | Docs catalog, versioned reader, matching Markdown link, global search for every version |
 | Music | `music.html` and author-supplied audio in `media/music/` | Music cards, MP3 playback, separate MP3 and WAV downloads, global search |
 
@@ -140,7 +141,8 @@ An artefact belongs in this archive when its identity, custody, rule, or history
 - Capability audit: balances through scope, cost, counterplay, dependencies, and failure. It does not weaken competence arbitrarily.
 - Behavior audit: offers character-specific reactions based on history, physical circumstance, MBTI, culture, role, sex, and immediate pressure. It does not claim all men or all women behave alike.
 - Sexual tension audit: tracks chemistry supported by contact, friction, attraction, rivalry, status, exposure, ordinary repetition, involuntary bodily awareness, and free choice after coercion. It distinguishes loyalty from desire, compares every pairing against the rest of the cast, and does not turn chemistry into a romance, affair, sexual encounter, or replacement for the main story.
-- Public prose audit: removes drafting commentary, AI-like slogans, and process explanations from reader-facing pages.
+- Public prose audit: describe the world, not the work of maintaining its records. Check for process leaks, repeated maintenance verbs, symmetrical contrasts or triples, redundant uncertainty disclaimers, portable dramatic endings, abstract psychology replacing behavior, and sentences certifying implications already shown. Review clusters and context, not isolated words.
+- Author voice check: use the source hierarchy in AGENTS.md. Check that historical AI wording has not returned through a summary or search result. Preserve differences in emphasis, paragraph length, and register; do not normalize every page into the same cadence. Canon synchronization and prose normalization are separate operations: reconcile facts without forcing identical phrasing onto different surfaces.
 - Scene prose audit: preserves distinct voices, concrete details, humor, and flawed reactions while removing repeated interpretation. Read `docs/prose-style.md` for narrative voice, focalization, dialogue, comic timing, and line editing. Consult `docs/prose-and-scene-guidance.md` for boundaries. Preserve productive comic repetition and compare against the source before cutting banter. Do not turn every event into an audit demonstration or an unresolved author choice into a reader inference. After Chapter edits, recheck preface facts, Moment continuity, and every `chapterMatch` in the behavior registry. Preserve later consequences in continuity rather than revealing them prematurely in Chapter narration.
 - Profile prose: `timelineNotes` maps exact beat titles to concise summaries. Biography owns longer history; `conflicts` contains explicit character-specific pressures. Never attach generic paragraphs by timeline index or generate filler where information is absent. The search builder must index these same fields.
 
@@ -263,6 +265,10 @@ The playable card banner is the primary play/pause button, operable by pointer, 
 - No em dash may appear in repository-managed site content.
 
 ## Build and regression checks
+
+For prose changes, run `npm run prose:audit`. `scripts/audit-prose-voice.mjs` reviews current/default sources and reports file, line, phrase, and reason for clustered or repeated patterns. Its watchlist is not a blacklist. Fiction receives only conservative repetition and punctuation checks; archive and Home prose receive broader cadence checks. Warnings require human judgment and never trigger rewrites or fail a build. Run the ordinary invariant checks separately. All auditing, preview generation, and validation remain local development work; commit their static outputs and add no server or runtime Node requirement.
+
+Watchlist: now, remains, preserves, retains, establishes, clarifies, distinguishes, aligns, reflects, supports, records, ensures, consistent, current, "this does not establish", "this does not imply", and "remains unresolved". All are allowed. Investigate clustering and habitual sentence structures, not isolated vocabulary. Do not swap synonyms to satisfy a counter. `npm run test:prose` checks version selection, source locations, and conservative warning behavior using the built-in Node test runner.
 
 Run `npm ci`, then `npm run build` and `npm run check`. The build synchronizes character card roles and summaries from `character.js`, Holumn forms and incident cards from `holumns/index.json`, artwork previews, and global search. Do not hand-edit generated card copy. `scripts/sync-archive-surfaces.mjs --check` rejects stale surfaces and missing testimony headings. The testimony document retains its fuller editorial accounts and must still be reviewed against changed incidents; a heading check is not a factual audit.
 

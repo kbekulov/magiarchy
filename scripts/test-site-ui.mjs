@@ -62,6 +62,29 @@ try {
         assert.deepEqual(errors, [], `${engine}: browser script errors`);
         continue;
       }
+      for (const width of [390, 1440]) {
+        await page.setViewportSize({ width, height: 900 });
+        for (const slug of ['prose-style', 'prose-and-scene-guidance', 'prose-style-history', 'world-foundation', 'holumn-incidents-and-testimonies']) {
+          await visit(`docs.html?doc=${slug}`);
+          const record = JSON.parse(fs.readFileSync(path.join(root, 'docs/index.json'), 'utf8')).find(d => d.slug === slug);
+          assert.equal(await page.locator('#document-source-link').getAttribute('href'), `docs/${record.file}`);
+          assert.ok(await page.locator('#document-reader h1').isVisible(), `${slug}: missing document text`);
+          if (record.versions.length > 1) assert.equal(await page.getByRole('combobox', { name: 'Choose version' }).inputValue(), record.defaultVersion);
+          assert.ok(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1), `${slug}/${width}: overflow`);
+          if (slug === 'prose-style') {
+            assert.equal(await page.locator('#document-reader a[href$="docs.html?doc=prose-style-history"]').count(), 1);
+            await page.locator('#document-reader h1').scrollIntoViewIfNeeded();
+            await page.screenshot({ path: `test-results/${engine}-active-prose-${width}.png` });
+          }
+        }
+        await visit('docs.html?doc=prose-style&version=v10');
+        assert.equal(await page.locator('#document-source-link').getAttribute('href'), 'docs/prose-style-v10.md');
+      }
+      if (process.env.TEST_PROSE_ONLY === '1') {
+        assert.deepEqual(errors, [], `${engine}: prose reader errors`);
+        console.log(`${engine}: current prose references, history, immutable v10, and mobile/desktop readers passed.`);
+        continue;
+      }
       for (const width of [390, 820, 1440]) {
         await page.setViewportSize({ width, height: 900 });
         for (const route of pages) {
