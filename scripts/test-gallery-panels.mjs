@@ -60,12 +60,16 @@ export async function testGalleryPanels(page, origin, engine) {
     assert.equal(await page.locator('.scene-panel').count(), 6);
     assert.ok(await page.evaluate(() => document.documentElement.scrollWidth <= document.documentElement.clientWidth + 1), 'Reader must also fit beside a native scrollbar');
     assert.equal(await page.locator('body').evaluate(el => getComputedStyle(el).minWidth), '0px');
-    assert.equal(await page.locator('.panel-beat').count(), 4);
+    assert.equal(await page.locator('.panel-beat').count(), 5);
     assert.equal(await page.locator('.panel-beat').first().locator('.scene-panel').count(), 2);
-    assert.equal(await page.locator('.panel-beat').last().locator('.scene-panel').count(), 2);
+    assert.equal(await page.locator('.panel-beat').last().locator('.scene-panel').count(), 1);
+    assert.equal(await page.locator('.panel-beat').nth(3).locator('.scene-panel').getAttribute('id'), 'panel-3a');
+    assert.equal(await page.locator('.panel-beat').last().locator('.scene-panel').getAttribute('id'), 'panel-3b', 'Sketch 6 must continue sketch 5 as its own beat');
+    assert.equal(await page.locator('#panel-count').textContent(), '5 beats · 6 images');
+    assert.ok(!/Composition/.test(await page.locator('#panel-3a figcaption, #panel-3b figcaption').allTextContents().then(text => text.join(' '))), 'Successive beats must not carry alternative-composition labels');
     assert.equal(await page.locator('#panel-jump-links a').count(), 6);
     assert.deepEqual(await page.locator('#panel-jump-links img').evaluateAll(images => images.map(img => img.getAttribute('src'))), record.panels.map(panel => panel.thumbnail), 'Thumbnail index must show the current artwork revision');
-    assert.equal(await page.locator('.panel-jump-group').count(), 4);
+    assert.equal(await page.locator('.panel-jump-group').count(), 5);
     assert.ok(!await page.locator('#panel-index').evaluate(el => el.open), 'Sketch index is a secondary disclosure');
     assert.ok(await page.locator('.scene-panel').first().isVisible(), 'Reading art does not depend on opening the index');
     assert.equal(await page.locator('.panel-beat-artwork').first().evaluate(el => getComputedStyle(el).gridTemplateColumns.split(' ').length), width === 1440 ? 2 : 1, 'Alternative compositions compare on wide screens and stack on narrow ones');
@@ -74,7 +78,7 @@ export async function testGalleryPanels(page, origin, engine) {
     await page.locator('#panel-index summary').focus();
     await page.keyboard.press('Enter');
     assert.ok(await page.locator('#panel-index').evaluate(el => el.open), 'Keyboard opens the sketch index');
-    assert.deepEqual(await page.locator('.panel-jump-group').evaluateAll(groups => groups.map(group => group.querySelectorAll('a').length)), [2, 1, 1, 2]);
+    assert.deepEqual(await page.locator('.panel-jump-group').evaluateAll(groups => groups.map(group => group.querySelectorAll('a').length)), [2, 1, 1, 1, 1]);
     assert.ok(await page.locator('#panel-jump-links').evaluate(el => el.scrollWidth <= el.clientWidth + 1), 'Panel navigator must wrap without horizontal scrolling');
     const thumbHeights = await page.locator('.panel-jump-preview').evaluateAll(nodes => nodes.map(el => el.getBoundingClientRect().height));
     assert.ok(thumbHeights.every(height => height === thumbHeights[0]), 'Thumbnail bays must align');
