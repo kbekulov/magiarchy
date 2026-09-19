@@ -15,7 +15,7 @@ for (const record of records) {
     panel.width = meta.width; panel.height = meta.height;
     panel.bytes = fs.statSync(source).size;
     for (const [key, width, quality] of [['display', 1680, 90], ['thumbnail', 480, 85]]) {
-      panel[key] = `media/gallery/previews/panels/${record.id}-${panel.id}-${key}.webp`;
+      panel[key] = `media/gallery/previews/panels/${record.id}${record.revision ? `-${record.revision}` : ''}-${panel.id}-${key}.webp`;
       const output = path.join(root, panel[key]);
       fs.mkdirSync(path.dirname(output), { recursive: true });
       await sharp(source).resize({ width, withoutEnlargement: true }).webp({ quality }).toFile(output);

@@ -1,0 +1,122 @@
+[
+  {
+    "id": "river-incident",
+    "title": "The River Incident",
+    "summary": "Lynleit struggles beneath the river, reaches its surface, and encounters the girl in the fish dress.",
+    "medium": "Pencil sketches",
+    "characters": [
+      "lynleit"
+    ],
+    "moment": {
+      "slug": "the-boat-beneath-the-bridge",
+      "version": "v3"
+    },
+    "chapter": {
+      "slug": "the-empty-boats-beneath-the-bridge",
+      "version": "v2"
+    },
+    "cover": "panel-2",
+    "beats": [
+      {
+        "id": "submerged",
+        "title": "Beneath the surface"
+      },
+      {
+        "id": "flame",
+        "title": "Flame underwater"
+      },
+      {
+        "id": "surface",
+        "title": "The surface holds"
+      },
+      {
+        "id": "girl",
+        "title": "The girl in the fish dress"
+      }
+    ],
+    "panels": [
+      {
+        "id": "panel-0a",
+        "beat": "submerged",
+        "composition": "A",
+        "label": "Sketch 0a",
+        "title": "Beneath the surface",
+        "src": "media/gallery/panels/river-incident/river-incident-panel-0a-sketch.png",
+        "alt": "Pencil sketch of Lynleit reaching toward the surface while submerged hands grip her legs. An inset shows hands around her boot.",
+        "width": 1672,
+        "height": 941,
+        "bytes": 2929875,
+        "display": "media/gallery/previews/panels/river-incident-panel-0a-display.webp",
+        "thumbnail": "media/gallery/previews/panels/river-incident-panel-0a-thumbnail.webp"
+      },
+      {
+        "id": "panel-0b",
+        "beat": "submerged",
+        "composition": "B",
+        "label": "Sketch 0b",
+        "title": "Reaching through the water",
+        "src": "media/gallery/panels/river-incident/river-incident-panel-0b-sketch.png",
+        "alt": "A second pencil composition of Lynleit underwater, reaching toward the viewer as hands hold her legs. A boot close-up sits in the lower right.",
+        "width": 1672,
+        "height": 941,
+        "bytes": 3032503,
+        "display": "media/gallery/previews/panels/river-incident-panel-0b-display.webp",
+        "thumbnail": "media/gallery/previews/panels/river-incident-panel-0b-thumbnail.webp"
+      },
+      {
+        "id": "panel-1",
+        "beat": "flame",
+        "label": "Sketch 1",
+        "title": "Flame underwater",
+        "src": "media/gallery/panels/river-incident/river-incident-panel-1-sketch.png",
+        "alt": "Lynleit seizes a submerged hand in a burst of flame while other hands clutch her legs. Bubbles rise toward the distant surface.",
+        "width": 1672,
+        "height": 941,
+        "bytes": 3051809,
+        "display": "media/gallery/previews/panels/river-incident-panel-1-display.webp",
+        "thumbnail": "media/gallery/previews/panels/river-incident-panel-1-thumbnail.webp"
+      },
+      {
+        "id": "panel-2",
+        "beat": "surface",
+        "label": "Sketch 2",
+        "title": "The surface holds",
+        "src": "media/gallery/panels/river-incident/river-incident-panel-2-sketch.png",
+        "alt": "Lynleit braces her palm and boots on the river surface. Her wet hair hangs forward and ripples spread beneath each point of contact.",
+        "width": 1489,
+        "height": 1056,
+        "bytes": 1645142,
+        "display": "media/gallery/previews/panels/river-incident-panel-2-display.webp",
+        "thumbnail": "media/gallery/previews/panels/river-incident-panel-2-thumbnail.webp"
+      },
+      {
+        "id": "panel-3a",
+        "beat": "girl",
+        "composition": "A",
+        "label": "Sketch 3a",
+        "title": "The girl in the fish dress",
+        "src": "media/gallery/panels/river-incident/river-incident-panel-3a-sketch.png",
+        "alt": "A long-haired girl stands on the river in a dress of dead fish. Insets show her eyelids sewn shut, a fish, and a hand touching the water.",
+        "width": 1672,
+        "height": 941,
+        "bytes": 3373125,
+        "display": "media/gallery/previews/panels/river-incident-panel-3a-display.webp",
+        "thumbnail": "media/gallery/previews/panels/river-incident-panel-3a-thumbnail.webp"
+      },
+      {
+        "id": "panel-3b",
+        "beat": "girl",
+        "composition": "B",
+        "label": "Sketch 3b",
+        "title": "The sewn eyelids",
+        "src": "media/gallery/panels/river-incident/river-incident-panel-3b-sketch.png",
+        "alt": "Another pencil composition of the girl in a dead-fish dress, with her head tilted and a close-up of fishing thread sewing her eyelids shut.",
+        "width": 1672,
+        "height": 941,
+        "bytes": 3323540,
+        "display": "media/gallery/previews/panels/river-incident-panel-3b-display.webp",
+        "thumbnail": "media/gallery/previews/panels/river-incident-panel-3b-thumbnail.webp"
+      }
+    ]
+  }
+]

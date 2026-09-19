@@ -13,6 +13,7 @@ export async function testGalleryPanels(page, origin, engine) {
     assert.ok(!await page.locator('#gallery-content').isVisible());
     assert.ok(!await page.locator('#production-collection').isVisible());
     assert.equal(await page.locator('.panel-card').count(), records.length);
+    assert.equal(await page.locator('.panel-card img').first().getAttribute('src'), record.panels.find(panel => panel.id === record.cover).display, 'Catalog must show the current cover revision');
     assert.ok(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1));
     await page.screenshot({ path: `test-results/${engine}-panels-catalog-${width}.png`, fullPage: true });
     await page.locator('#panel-search').fill('no such panel');
@@ -32,6 +33,7 @@ export async function testGalleryPanels(page, origin, engine) {
     assert.equal(await page.locator('.panel-beat').first().locator('.scene-panel').count(), 2);
     assert.equal(await page.locator('.panel-beat').last().locator('.scene-panel').count(), 2);
     assert.equal(await page.locator('#panel-jump-links a').count(), 6);
+    assert.deepEqual(await page.locator('#panel-jump-links img').evaluateAll(images => images.map(img => img.getAttribute('src'))), record.panels.map(panel => panel.thumbnail), 'Thumbnail index must show the current artwork revision');
     assert.equal(await page.locator('.panel-jump-group').count(), 4);
     assert.ok(!await page.locator('#panel-index').evaluate(el => el.open), 'Sketch index is a secondary disclosure');
     assert.ok(await page.locator('.scene-panel').first().isVisible(), 'Reading art does not depend on opening the index');

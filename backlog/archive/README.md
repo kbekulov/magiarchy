@@ -4,6 +4,8 @@ Files in this directory are preserved source references, not pending work. Each 
 
 ## 19 September 2026
 
+The revised river drawing set replaces all six active panel images, preserving the same four beats, alternative pairs, stable fragments, and current Moment v3 / Chapter v2 links. The previous published originals, previews, and registry are preserved in `river-incident-panels-r1__2026-09-19T15-37-10Z/`; the six replacement sources are in `panel-sketch-revision__2026-09-19T15-37-10Z/`. Active originals and previews use distinct `r2` filenames. No scene prose or lore changed.
+
 The timestamped `0. manga_panels` source adds Gallery's Panels collection. All six supplied river sketches are registered in `gallery/panels.json`, linked to MOM-006 v2 and Chapter 05 v1, and published with uncropped previews and original downloads. The author confirms that 0a/0b and 3a/3b are alternative compositions of the same beats, making four beats in total. Original image bytes remain intact under descriptive names; the source drawings also remain in their author drop folder. Naming, grouping, version-specific interlinking, validation, and browser checks are recorded in AGENTS.md and the maintenance charter. No scene passage was omitted and no new lore was inferred from the annotations.
 
 ## 9 September 2026

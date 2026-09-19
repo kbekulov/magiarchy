@@ -18,6 +18,7 @@ export function validatePanels(root, records, { built = true } = {}) {
   for (const record of records) {
     assert.ok(typeof record.id === 'string' && slug.test(record.id) && !ids.has(record.id), `Invalid or duplicate panel set: ${record.id}`);
     ids.add(record.id);
+    if (record.revision !== undefined) assert.match(record.revision, /^r[1-9]\d*$/, `${record.id}: invalid artwork revision`);
     for (const key of ['title', 'summary', 'medium']) assert.ok(typeof record[key] === 'string' && record[key].trim(), `${record.id}: missing ${key}`);
     assert.ok(Array.isArray(record.characters), `${record.id}: characters required`);
     for (const name of record.characters) assert.ok(characters.includes(`slug: '${name}'`), `${record.id}: unknown character ${name}`);
@@ -60,6 +61,10 @@ export function validatePanels(root, records, { built = true } = {}) {
         assert.ok(panel.width > 0 && panel.height > 0, `${record.id}: image dimensions required`);
         localFile(panel.display, 'media/gallery/previews/panels/');
         localFile(panel.thumbnail, 'media/gallery/previews/panels/');
+        if (record.revision) {
+          assert.ok(path.basename(panel.src, path.extname(panel.src)).endsWith(`-${record.revision}`), `${record.id}: original needs the artwork revision suffix`);
+          for (const key of ['display', 'thumbnail']) assert.equal(panel[key], `media/gallery/previews/panels/${record.id}-${record.revision}-${panel.id}-${key}.webp`, `${record.id}: stale ${key} revision`);
+        }
       }
     }
     assert.ok(views.has(record.cover), `${record.id}: cover must be a registered panel`);
