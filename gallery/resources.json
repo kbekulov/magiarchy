@@ -181,9 +181,9 @@
     "id": "lynleit-t-pose-v1",
     "title": "Lynleit",
     "kind": "t-pose",
-    "modelVersion": "v1",
+    "modelVersion": "Young / teenager",
     "era": "Arc 1",
-    "summary": "Arc 1 front and back T-poses with long dark hair, a blue coat, a ruffled white blouse, black ribbon, laced black shorts, dark tights, and over-knee lace-up boots.",
+    "summary": "Young / teenage Lynleit in front and back T-poses, with long dark hair, a blue coat, a ruffled white blouse, black ribbon, laced black shorts, dark tights, and over-knee lace-up boots.",
     "characters": [
       "lynleit"
     ],
@@ -192,7 +192,7 @@
         "id": "front",
         "src": "media/gallery/resources/lynleit-t-pose-v1/char-lynleit-arc-1-t-pose-v1-arm-corrected-front.png",
         "alt": "Arc 1 front T-pose of Lynleit with long dark hair, blue eyes, a blue coat, ruffled white collar and cuffs, black bow, laced shorts, dark tights, and over-knee boots.",
-        "caption": "v1 · Arc 1 · Front",
+        "caption": "Young / teenager · Arc 1 · Front",
         "thumbnail": "media/gallery/previews/resources/lynleit-t-pose-v1-1.webp",
         "width": 1122,
         "height": 1402
@@ -202,7 +202,7 @@
         "src": "media/gallery/resources/lynleit-t-pose-v1/char-lynleit-arc-1-t-pose-v1-arm-hand-corrected-back.png",
         "revision": "r2",
         "alt": "Arc 1 back T-pose of Lynleit with long dark hair falling over a blue coat, dark tights, and tall black boots.",
-        "caption": "v1 · Arc 1 · Back",
+        "caption": "Young / teenager · Arc 1 · Back",
         "thumbnail": "media/gallery/previews/resources/lynleit-t-pose-v1-2-r2.webp",
         "width": 1122,
         "height": 1402
@@ -307,5 +307,58 @@
       }
     ],
     "usage": "Use this version's front and back together. Arm lengths are balanced, and the back-view hands have the correct finger orientation. The original two-view sheet remains available unchanged."
+  },
+  {
+    "id": "lynleit-arc-2-t-pose",
+    "title": "Lynleit",
+    "kind": "t-pose",
+    "era": "Arc 2",
+    "summary": "Arc 2 front and back T-poses with dark hair in a bun, a short black cape, long gloves, fitted black clothing, a blue sash, and over-knee lace-up boots.",
+    "characters": [
+      "lynleit"
+    ],
+    "previews": [
+      {
+        "id": "front",
+        "src": "media/gallery/resources/lynleit-arc-2-t-pose/char-lynleit-arc-2-t-pose-front.png",
+        "alt": "Arc 2 front T-pose of Lynleit with blue eyes, dark hair in a bun, a high-collared black cape, long gloves, a blue waist sash, a slanted belt, fitted black clothing, and tall lace-up boots.",
+        "caption": "Arc 2 · Front",
+        "thumbnail": "media/gallery/previews/resources/lynleit-arc-2-t-pose-1.webp",
+        "width": 1122,
+        "height": 1402
+      },
+      {
+        "id": "back",
+        "src": "media/gallery/resources/lynleit-arc-2-t-pose/char-lynleit-arc-2-t-pose-back.png",
+        "alt": "Arc 2 back T-pose of Lynleit showing her bun, short black cape, long gloves, blue sash tied at the hip, fitted black clothing, and over-knee boots with rear straps.",
+        "caption": "Arc 2 · Back",
+        "thumbnail": "media/gallery/previews/resources/lynleit-arc-2-t-pose-2.webp",
+        "width": 1122,
+        "height": 1402
+      }
+    ],
+    "files": [
+      {
+        "path": "media/gallery/resources/lynleit-arc-2-t-pose/char-lynleit-arc-2-t-pose-front.png",
+        "label": "Front reference",
+        "notes": "Original supplied PNG, 1122 × 1402 px.",
+        "bytes": 1450593,
+        "format": "PNG"
+      },
+      {
+        "path": "media/gallery/resources/lynleit-arc-2-t-pose/char-lynleit-arc-2-t-pose-back.png",
+        "label": "Back reference",
+        "notes": "Original supplied PNG, 1122 × 1402 px.",
+        "bytes": 1356962,
+        "format": "PNG"
+      }
+    ],
+    "technical": [
+      {
+        "label": "Reference canvas",
+        "value": "1122 × 1402 px, matching Anima’s template aspect ratio"
+      }
+    ],
+    "usage": "Use these matching front and back views together for Lynleit's Arc 2 design."
   }
 ]

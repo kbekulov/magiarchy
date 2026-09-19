@@ -63,11 +63,12 @@ export async function testGalleryResources(page, origin, engine) {
   const preview = (id, number) => ({ id, src: `media/gallery/images/characters/char-lynleit-${number}.png`, thumbnail: `media/gallery/previews/characters/char-lynleit-${number}.webp`, alt: `Test ${id} view`, caption: `${id} view`, width: 1024, height: 1024 });
   const referenceIds = ['felix-t-pose-v1', 'lynleit-t-pose-v1', 'lynleit-t-pose-v2'];
   assert.ok(referenceIds.every(id => published.some(record => record.id === id)), 'Missing supplied T-pose set');
+  assert.equal(published.find(record => record.id === 'lynleit-t-pose-v1').modelVersion, 'Young / teenager');
   for (const width of [390, 820, 1440]) {
     await page.setViewportSize({ width, height: 900 });
     await visit('gallery.html?collection=production');
     await page.locator('#resource-character').selectOption('lynleit');
-    assert.equal(await page.locator('.production-card:visible').count(), 2);
+    assert.equal(await page.locator('.production-card:visible').count(), published.filter(record => record.characters.includes('lynleit')).length);
     await page.locator('#resource-character').selectOption('felix');
     assert.equal(await page.locator('.production-card:visible').count(), 1);
     for (const record of published.filter(record => referenceIds.includes(record.id))) {
@@ -103,6 +104,31 @@ export async function testGalleryResources(page, origin, engine) {
         }
       }
     }
+  }
+  const arcTwo = published.find(record => record.id === 'lynleit-arc-2-t-pose');
+  assert.ok(arcTwo, 'Missing Arc 2 T-pose set');
+  assert.equal(arcTwo.era, 'Arc 2');
+  assert.deepEqual(arcTwo.characters, ['lynleit']);
+  assert.deepEqual(arcTwo.previews.map(view => [view.width, view.height]), [[1122, 1402], [1122, 1402]]);
+  for (const width of [390, 820, 1440]) {
+    await page.setViewportSize({ width, height: 900 });
+    await visit(`gallery.html?resource=${arcTwo.id}&view=back`);
+    assert.ok((await page.locator('#resource-type').textContent()).includes('Arc 2'));
+    assert.equal(await page.locator('#resource-image').getAttribute('src'), arcTwo.previews[1].src);
+    assert.equal(await page.locator('#resource-thumbnails button').count(), 2);
+    assert.equal(await page.locator('#resource-downloads a[download]').count(), 2);
+    await page.getByRole('button', { name: 'Arc 2 · Front', exact: true }).click();
+    assert.equal(await page.locator('#resource-image').getAttribute('src'), arcTwo.previews[0].src);
+    assert.ok(page.url().includes('view=front'));
+    assert.equal(await page.locator('.gallery-card:visible').count(), 0);
+    assert.ok(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1));
+    await page.screenshot({ path: `test-results/${engine}-${arcTwo.id}-${width}.png`, fullPage: true });
+  }
+  for (const file of arcTwo.files) {
+    assert.match(file.path.split('/').pop(), /^char-lynleit-arc-2-t-pose-(front|back)\.png$/);
+    const [download] = await Promise.all([page.waitForEvent('download'), page.locator(`#resource-downloads a[href="${file.path}"]`).click()]);
+    assert.equal(download.suggestedFilename(), file.path.split('/').pop());
+    assert.deepEqual(fs.readFileSync(await download.path()), fs.readFileSync(file.path));
   }
   await visit('docs.html?doc=character-image-production');
   assert.equal(await page.getByRole('combobox', { name: 'Choose version' }).inputValue(), 'v7');
