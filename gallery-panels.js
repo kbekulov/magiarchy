@@ -51,6 +51,12 @@
     let imageIndex = 0;
     for (const [beatIndex, beat] of record.beats.entries()) {
       const beatPanels = record.panels.filter(panel => panel.beat === beat.id);
+      const jumpGroup = node('div', null, 'panel-jump-group');
+      const jumpHeading = node('div', null, 'panel-jump-heading');
+      jumpHeading.append(node('span', String(beatIndex + 1).padStart(2, '0')), node('strong', beat.title));
+      const jumpViews = node('div', null, 'panel-jump-views');
+      jumpGroup.append(jumpHeading, jumpViews);
+      $('#panel-jump-links').append(jumpGroup);
       const section = node('section', null, 'panel-beat');
       const heading = node('header', null, 'panel-beat-heading');
       const title = node('h2', beat.title); title.id = `beat-${beat.id}`;
@@ -62,8 +68,10 @@
       for (const panel of beatPanels) {
         const jump = link(null, `#${panel.id}`);
         jump.setAttribute('aria-label', `${panel.label}: ${panel.title}`);
-        jump.append(image(panel, true), node('span', panel.label));
-        $('#panel-jump-links').append(jump);
+        const preview = node('span', null, 'panel-jump-preview');
+        preview.append(image(panel, true));
+        jump.append(preview, node('span', panel.composition ? `Composition ${panel.composition}` : panel.label));
+        jumpViews.append(jump);
         const figure = node('figure', null, 'scene-panel');
         figure.id = panel.id;
         figure.tabIndex = -1;
@@ -86,6 +94,15 @@
         jump.addEventListener('click', () => { img.loading = 'eager'; figure.focus({ preventScroll: true }); });
       }
     }
+    function markSelected() {
+      const selectedHash = record.panels.some(panel => `#${panel.id}` === location.hash) ? location.hash : `#${record.panels[0].id}`;
+      $('#panel-jump-links').querySelectorAll('a').forEach(anchor => {
+        if (anchor.getAttribute('href') === selectedHash) anchor.setAttribute('aria-current', 'location');
+        else anchor.removeAttribute('aria-current');
+      });
+    }
+    markSelected();
+    window.addEventListener('hashchange', markSelected);
     const selected = record.panels.find(panel => `#${panel.id}` === location.hash);
     if (selected) {
       const figure = document.getElementById(selected.id);

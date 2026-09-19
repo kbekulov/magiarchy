@@ -30,6 +30,12 @@ export async function testGalleryPanels(page, origin, engine) {
     assert.equal(await page.locator('.panel-beat').first().locator('.scene-panel').count(), 2);
     assert.equal(await page.locator('.panel-beat').last().locator('.scene-panel').count(), 2);
     assert.equal(await page.locator('#panel-jump-links a').count(), 6);
+    assert.equal(await page.locator('.panel-jump-group').count(), 4);
+    assert.equal(await page.locator('#panel-jump-links').evaluate(el => getComputedStyle(el).gridTemplateColumns.split(' ').length), width === 1440 ? 4 : 2, 'Navigator uses balanced rows');
+    assert.deepEqual(await page.locator('.panel-jump-group').evaluateAll(groups => groups.map(group => group.querySelectorAll('a').length)), [2, 1, 1, 2]);
+    assert.ok(await page.locator('#panel-jump-links').evaluate(el => el.scrollWidth <= el.clientWidth + 1), 'Panel navigator must wrap without horizontal scrolling');
+    const thumbHeights = await page.locator('.panel-jump-preview').evaluateAll(nodes => nodes.map(el => el.getBoundingClientRect().height));
+    assert.ok(thumbHeights.every(height => height === thumbHeights[0]), 'Thumbnail bays must align');
     assert.ok(await page.locator('#panel-reader').isVisible());
     assert.ok(!await page.locator('#gallery-heading').isVisible());
     assert.ok(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1));
@@ -40,6 +46,7 @@ export async function testGalleryPanels(page, origin, engine) {
     await page.locator('#panel-jump-links a').last().focus();
     await page.keyboard.press('Enter');
     assert.ok(page.url().endsWith('#panel-3b'));
+    await page.waitForFunction(() => document.querySelector('#panel-jump-links a[aria-current]')?.getAttribute('href') === '#panel-3b');
     assert.ok(await page.locator('#panel-3b').evaluate(el => el === document.activeElement));
     await page.locator('#panel-3b img').evaluate(img => img.decode());
     await page.screenshot({ path: `test-results/${engine}-panels-last-image-${width}.png` });
