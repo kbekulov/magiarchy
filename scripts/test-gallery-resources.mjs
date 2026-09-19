@@ -16,6 +16,7 @@ export async function testGalleryResources(page, origin, engine) {
   assert.equal(await page.locator('.gallery-card:visible').count(), 1);
   assert.equal(await page.locator('.gallery-card:visible').getAttribute('data-chibi'), 'false');
   await page.locator('.gallery-card:visible > a').click();
+  await page.waitForLoadState('networkidle');
   assert.equal(await page.locator('#gallery-detail-title').textContent(), 'Anima');
   assert.ok((await page.locator('#gallery-detail-type').textContent()).includes('Outside story canon'));
   assert.ok(await page.locator('#gallery-detail-resource').isVisible());
