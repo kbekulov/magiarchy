@@ -61,6 +61,52 @@ export async function testGalleryResources(page, origin, engine) {
     assert.deepEqual(fs.readFileSync(await download.path()), fs.readFileSync(record.files[0].path), 'Original PNG downloads must be byte-identical');
   }
   const preview = (id, number) => ({ id, src: `media/gallery/images/characters/char-lynleit-${number}.png`, thumbnail: `media/gallery/previews/characters/char-lynleit-${number}.webp`, alt: `Test ${id} view`, caption: `${id} view`, width: 1024, height: 1024 });
+  const referenceIds = ['felix-t-pose-v1', 'lynleit-t-pose-v1', 'lynleit-t-pose-v2'];
+  assert.ok(referenceIds.every(id => published.some(record => record.id === id)), 'Missing supplied T-pose set');
+  for (const width of [390, 820, 1440]) {
+    await page.setViewportSize({ width, height: 900 });
+    await visit('gallery.html?collection=production');
+    await page.locator('#resource-character').selectOption('lynleit');
+    assert.equal(await page.locator('.production-card:visible').count(), 2);
+    await page.locator('#resource-character').selectOption('felix');
+    assert.equal(await page.locator('.production-card:visible').count(), 1);
+    for (const record of published.filter(record => referenceIds.includes(record.id))) {
+      assert.equal(record.era, record.id === 'lynleit-t-pose-v1' ? 'Arc 1' : undefined, 'Design revision must not imply an Arc');
+      assert.equal(record.template, undefined, 'Character references must not replace the mascot template');
+      assert.deepEqual(record.previews.map(view => [view.width, view.height]), [[1122, 1402], [1122, 1402]]);
+      await visit(`gallery.html?resource=${record.id}&view=front`);
+      assert.equal(await page.locator('#resource-title').textContent(), record.title);
+      assert.equal(await page.locator('#resource-thumbnails button').count(), 2);
+      assert.equal(await page.locator('#resource-downloads a[download]').count(), 3);
+      assert.equal(await page.locator('#resource-downloads small a').count(), 0, 'Filename text must not become profile links');
+      assert.deepEqual(await page.locator('#resource-downloads small').allTextContents(), record.files.map(file => file.path.split('/').pop()));
+      assert.ok(await page.locator(`#resource-characters a[href="character.html?character=${record.characters[0]}"]`).isVisible());
+      assert.equal(await page.locator('.gallery-card:visible').count(), 0, 'Production references leaked into artwork');
+      await page.locator('#resource-thumbnails button').nth(1).click();
+      assert.equal(await page.locator('#resource-image').getAttribute('src'), record.previews[1].src);
+      assert.ok(page.url().includes('view=back'));
+      await page.reload(); await page.waitForLoadState('networkidle');
+      assert.equal(await page.locator('#resource-image').getAttribute('src'), record.previews[1].src);
+      assert.equal(await page.locator('#resource-image').evaluate(image => getComputedStyle(image).objectFit), 'contain');
+      assert.ok(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1));
+      await page.locator('#resource-image').scrollIntoViewIfNeeded();
+      await page.screenshot({ path: `test-results/${engine}-${record.id}-${width}.png`, fullPage: width < 820 });
+      if (width === 1440) {
+        for (const file of record.files) {
+          assert.match(file.path.split('/').pop(), /^char-(felix|lynleit)-(arc-1-)?t-pose-v[12]-(front|back|sheet)\.png$/);
+          const [download] = await Promise.all([page.waitForEvent('download'), page.locator(`#resource-downloads a[href="${file.path}"]`).click()]);
+          assert.equal(download.suggestedFilename(), file.path.split('/').pop());
+          assert.deepEqual(fs.readFileSync(await download.path()), fs.readFileSync(file.path));
+        }
+      }
+    }
+  }
+  await visit('docs.html?doc=character-image-production');
+  assert.equal(await page.getByRole('combobox', { name: 'Choose version' }).inputValue(), 'v5');
+  assert.ok(await page.getByRole('heading', { name: 'Separating supplied T-pose sheets' }).isVisible());
+  await visit('docs.html?doc=character-image-production&version=v4');
+  assert.equal(await page.locator('#document-source-link').getAttribute('href'), 'docs/character-image-production-v4.md');
+  assert.equal(await page.getByRole('heading', { name: 'Separating supplied T-pose sheets' }).count(), 0);
   const records = [
     { id: 'test-pose-v1', title: 'Lynleit reference set', kind: 't-pose', modelVersion: 'Model v1', era: 'Arc 2', summary: 'Private UI test fixture for a same-version reference set.', characters: ['lynleit'], previews: [preview('front', 1), preview('back', 2)], files: [{ path: 'media/gallery/resources/test-pose-v1/model source.blend', label: 'Source project with a long descriptive filename', format: 'BLEND', bytes: 12, notes: 'Private test download.' }], technical: [{ label: 'Software', value: 'Test application' }], usage: 'Test fixture only.', artwork: ['char-lynleit-felix-1'] },
     { id: 'test-pose-v2', title: 'Lynleit alternate reference', kind: 'reference-sheet', modelVersion: 'Model v2', summary: 'Private UI test fixture for a separate revision.', characters: ['lynleit'], previews: [preview('side', 0)], files: [] },

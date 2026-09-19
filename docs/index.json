@@ -85,11 +85,11 @@
     "topic": "Visual Production Standard",
     "file": "character-image-production.md",
     "updated": "2026-09-19",
-    "description": "Anima's distinct mascot, symbolic, and anatomical-template roles; character-specific bodies, design briefs, references, and asset naming.",
+    "description": "Template-first production, character-specific design, descriptive filenames, and separate T-pose views matching Anima's portrait aspect ratio.",
     "speakers": [
       "Author's Desk"
     ],
-    "defaultVersion": "v4",
+    "defaultVersion": "v5",
     "versions": [
       {
         "id": "v1",
@@ -114,10 +114,17 @@
       },
       {
         "id": "v4",
-        "label": "v4 · Current",
-        "file": "character-image-production.md",
+        "label": "v4 · Archived",
+        "file": "character-image-production-v4.md",
         "updated": "2026-09-19",
         "description": "Anima's distinct mascot, symbolic, and anatomical-template roles; character-specific bodies, design briefs, references, and asset naming."
+      },
+      {
+        "id": "v5",
+        "label": "v5 · Current",
+        "file": "character-image-production.md",
+        "updated": "2026-09-19",
+        "description": "Template-first production, character-specific design, descriptive filenames, and separate T-pose views matching Anima's portrait aspect ratio."
       }
     ]
   },

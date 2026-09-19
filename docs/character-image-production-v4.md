@@ -59,14 +59,6 @@ Do not publish random clipboard IDs or generic export names. Keep matching views
 
 Rename without changing file contents, verify original bytes, avoid collisions, and update every registry entry, preview source, download, and search reference. Stable resource-page links should continue working.
 
-### Separating supplied T-pose sheets
-
-Use Anima's actual portrait canvas, 1122 × 1402 pixels, when preparing separate T-pose views. It is approximately 4:5, not square. Match this aspect ratio without stretching or reshaping the character to fit it.
-
-When the author requests a sheet to be split, preserve the complete original as a byte-identical download and create separately named front/back derivatives. Retain all hair, hands, clothing, accessories, and feet. Keep the same scale and vertical alignment within each pair; add background padding where necessary. Do not redraw anatomy or manufacture missing detail. Lettering outside the figure may be omitted from the separated presentation, with that distinction recorded and the original sheet retained.
-
-Measure the split and inspect the result rather than blindly halving a sheet through touching fingertips. Keep reproducible crop, padding, and any background-only lettering adjustments in `gallery/t-pose-extractions.json`; verify original hashes and generated views with `node scripts/prepare-t-pose-views.mjs --check`. A design revision such as v2 is not an Arc label. Keep every supplied version's views together and separate from the other versions.
-
 ### Review checklist
 
 Compare the result with the references before registration or publication. Check identity, proportions, silhouette, costume details, pose, and front/back consistency. Inspect hands, feet, accessories, and occluded areas for discrepancies. Treat an unexplained generated difference as something to review, not as new canon.

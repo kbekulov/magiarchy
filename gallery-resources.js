@@ -86,7 +86,9 @@
       download.download = file.path.split('/').pop();
       download.setAttribute('aria-label', `Download ${file.label}, ${file.format}, ${bytes(file.bytes)}`);
       download.append(node('strong', file.label), node('span', `${file.format} · ${bytes(file.bytes)} ↓`));
-      item.append(download, node('small', download.download));
+      const filename = node('small', download.download);
+      filename.setAttribute('data-no-entity-links', '');
+      item.append(download, filename);
       if (file.notes) item.append(node('p', file.notes));
       $('#resource-downloads').append(item);
     });
