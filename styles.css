@@ -11456,6 +11456,39 @@ a.equipment-card:focus-visible {
   color: #fff;
 }
 
+.timeline-panel-links {
+  margin-top: 14px;
+  border-top: 1px solid #3f4147;
+  padding-top: 10px;
+}
+
+.timeline-panel-link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-height: 48px;
+  padding: 4px 0;
+  border-radius: 4px;
+  color: #d5d7df;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.timeline-panel-link img {
+  flex: 0 0 56px;
+  width: 56px;
+  height: 42px;
+  border-radius: 4px;
+  object-fit: contain;
+  background: #1e1f22;
+}
+
+.timeline-panel-link > span { min-width: 0; }
+.timeline-panel-label { display: block; margin-bottom: 3px; color: #a5a9b4; font-size: .5rem; line-height: 1.4; }
+.timeline-panel-link strong { display: block; font-size: .65rem; line-height: 1.45; font-weight: 650; }
+.timeline-panel-link:hover { background: #303238; color: #c4c8ff; }
+.timeline-panel-link:focus-visible { outline: 2px solid var(--accent-bright); outline-offset: 3px; }
+
 .relationship-map-detail {
   border: 1px solid #383a41;
   border-radius: 0 0 7px 7px;

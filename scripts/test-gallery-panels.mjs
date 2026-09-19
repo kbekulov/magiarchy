@@ -5,6 +5,37 @@ export async function testGalleryPanels(page, origin, engine) {
   const records = JSON.parse(fs.readFileSync('gallery/panels.json', 'utf8'));
   const record = records.find(record => record.id === 'river-incident');
   const visit = async route => { await page.goto(`${origin}/${route}`); await page.waitForLoadState('networkidle'); };
+  const timelineLink = '.timeline-panel-link';
+  for (const width of [390, 820, 1440]) {
+    await page.setViewportSize({ width, height: 900 });
+    await visit('story.html?phase=unknowing-convergence');
+    assert.equal(await page.locator(timelineLink).count(), 1);
+    assert.equal(await page.locator('#phase-unknowing-convergence .timeline-panel-link').count(), 1);
+    assert.equal(await page.locator(`${timelineLink} strong`).textContent(), record.title);
+    assert.equal(await page.locator(`${timelineLink} img`).getAttribute('src'), record.panels.find(panel => panel.id === record.cover).thumbnail);
+    assert.ok(await page.locator('#phase-unknowing-convergence .timeline-moment-anchor').isVisible());
+    assert.ok(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1));
+    await page.locator(timelineLink).scrollIntoViewIfNeeded();
+    await page.locator('.story-timeline').screenshot({ path: `test-results/${engine}-timeline-panels-${width}.png` });
+    await page.locator(timelineLink).click();
+    await page.waitForURL('**/gallery.html?panels=river-incident');
+    await visit('story.html?phase=unknowing-convergence');
+    await page.locator(timelineLink).focus();
+    await page.keyboard.press('Enter');
+    await page.waitForURL('**/gallery.html?panels=river-incident');
+  }
+  const historical = structuredClone(records);
+  historical[0].chapter.version = 'v1';
+  historical[0].moment.version = 'v1';
+  await page.route('**/gallery/panels.json', route => route.fulfill({ json: historical }));
+  await visit('story.html');
+  assert.equal(await page.locator(timelineLink).count(), 0, 'Historical-only panels must not attach to the current timeline');
+  await page.unroute('**/gallery/panels.json');
+  await page.route('**/gallery/panels.json', route => route.fulfill({ status: 503, body: '' }));
+  await visit('story.html');
+  assert.equal(await page.locator(timelineLink).count(), 0);
+  assert.ok(await page.locator('.timeline-moment-anchor').count() > 0, 'Panel failure must leave Moment links intact');
+  await page.unroute('**/gallery/panels.json');
   for (const width of [320, 390, 820, 1440]) {
     await page.setViewportSize({ width, height: 900 });
     await visit('gallery.html?collection=panels');
@@ -79,7 +110,9 @@ export async function testGalleryPanels(page, origin, engine) {
   const touchPage = await page.context().browser().newPage({ hasTouch: true, viewport: { width: 390, height: 844 }, reducedMotion: 'reduce' });
   try {
     await touchPage.route('https://**/*', route => route.abort());
-    await touchPage.goto(`${origin}/gallery.html?panels=river-incident`);
+    await touchPage.goto(`${origin}/story.html?phase=unknowing-convergence`);
+    await touchPage.locator(timelineLink).tap();
+    await touchPage.waitForURL('**/gallery.html?panels=river-incident');
     await touchPage.locator('#panel-index summary').tap();
     await touchPage.locator('#panel-jump-links a').last().tap();
     await touchPage.waitForURL(url => url.hash === '#panel-3b');

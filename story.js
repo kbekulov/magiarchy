@@ -59,6 +59,8 @@ function initializeTimelineDrag() {
 
   timelineTrack.addEventListener('pointerdown', (event) => {
     if (event.pointerType !== 'mouse' || event.button !== 0) return;
+    moved = false;
+    if (event.target.closest('a, button, input, select')) return;
     activePointerId = event.pointerId;
     pointerStartX = event.clientX;
     scrollStartX = timelineTrack.scrollLeft;
@@ -322,7 +324,7 @@ function setMomentContextPhase(phaseId) {
   });
 }
 
-async function initializeStoryMoments() {
+async function initializeStoryMoments(chapters) {
   if (!timelineTrack) return;
   try {
     const response = await fetch('moments/index.json');
@@ -338,8 +340,57 @@ async function initializeStoryMoments() {
       link.textContent = `${anchored.length} ${anchored.length === 1 ? 'Moment' : 'Moments'} anchored`;
       phase.querySelector(':scope > div').append(link);
     });
+    await initializeTimelinePanels(chapters, moments);
   } catch (error) {
     console.warn('Moment annotations could not be loaded.', error);
+  }
+}
+
+async function initializeTimelinePanels(chapters, moments) {
+  try {
+    const currentScene = (reference, entries) => {
+      const entry = entries.find(candidate => candidate.slug === reference?.slug);
+      if (!entry) return null;
+      const versionId = entry.defaultVersion || entry.versions?.[0]?.id || 'v1';
+      if (reference.version !== versionId) return null;
+      return { ...entry, ...entry.versions?.find(version => version.id === versionId) };
+    };
+    for (const record of await window.MAGIARCHY_PANELS.load()) {
+      const scenes = [currentScene(record.chapter, chapters), currentScene(record.moment, moments)].filter(Boolean);
+      const phaseIds = [...new Set(scenes.map(scene => scene.timelinePhase).filter(Boolean))];
+      if (phaseIds.length !== 1) continue;
+      const phase = [...document.querySelectorAll('.story-timeline [data-timeline-phase]')].find(item => item.dataset.timelinePhase === phaseIds[0]);
+      if (!phase) continue;
+      let links = phase.querySelector('.timeline-panel-links');
+      if (!links) {
+        links = document.createElement('nav');
+        links.className = 'timeline-panel-links';
+        links.setAttribute('aria-label', `Scene panels in ${storyPhases.find(item => item.id === phaseIds[0])?.title || 'this phase'}`);
+        phase.querySelector(':scope > div').append(links);
+      }
+      const link = document.createElement('a');
+      link.className = 'timeline-panel-link';
+      link.href = window.MAGIARCHY_PANELS.url(record);
+      const cover = record.panels.find(panel => panel.id === record.cover) || record.panels[0];
+      const image = document.createElement('img');
+      image.src = cover.thumbnail;
+      image.alt = '';
+      image.width = 56;
+      image.height = 42;
+      image.loading = 'lazy';
+      image.draggable = false;
+      const copy = document.createElement('span');
+      const label = document.createElement('span');
+      label.className = 'timeline-panel-label';
+      label.textContent = `Scene panels · ${record.panels.length} images`;
+      const title = document.createElement('strong');
+      title.textContent = record.title;
+      copy.append(label, title);
+      link.append(image, copy);
+      links.append(link);
+    }
+  } catch (error) {
+    console.warn('Timeline panels could not be loaded.', error);
   }
 }
 
@@ -450,6 +501,7 @@ async function initializeStory() {
     if (!response.ok) throw new Error(`Chapter catalog request failed: ${response.status}`);
     const entries = await response.json();
     if (!Array.isArray(entries) || entries.length === 0) throw new Error('Chapter catalog is empty');
+    initializeStoryMoments(entries);
 
     const parameters = new URLSearchParams(window.location.search);
     const requestedSlug = parameters.get('chapter');
@@ -473,5 +525,4 @@ async function initializeStory() {
 
 renderStoryTimeline();
 initializeTimelineDrag();
-initializeStoryMoments();
 initializeStory();
