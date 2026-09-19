@@ -341,6 +341,10 @@ for (const match of readText('music.html').matchAll(/<article\b([^>]*\bclass="mu
 }
 
 const homeHtml = readText('index.html');
+addEntry({ id: 'gallery-panels', title: 'Panels', type: 'Gallery collection', url: 'gallery.html?collection=panels', text: 'Illustrated scenes, sequential panels and sketches linked to their Moments and Chapters.' });
+for (const record of readJson('gallery/panels.json')) {
+  addEntry({ id: `panels-${record.id}`, title: record.title, type: 'Scene panels', url: `gallery.html?panels=${encodeURIComponent(record.id)}`, subtitle: `${record.medium} · ${record.panels.length} images`, text: flatten([record.summary, record.characters, record.panels.map(panel => [panel.label, panel.title, panel.alt])]) });
+}
 addEntry({ id: 'gallery-production', title: 'Production resources', type: 'Gallery collection', url: 'gallery.html?collection=production', text: 'Character reference sheets, T-poses, turnarounds, development sketches, and downloadable 3D models for animation and modelling.' });
 for (const record of readJson('gallery/resources.json')) {
   addEntry({ id: `resource-${record.id}`, title: record.title, type: 'Production resource', url: `gallery.html?resource=${encodeURIComponent(record.id)}`, subtitle: [record.kind, record.modelVersion, record.era].filter(Boolean).join(' · '), text: flatten([record.summary, record.characters, record.technical, record.usage, record.files.map(file => [file.label, file.format, file.notes]), record.previews.map(preview => [preview.alt, preview.caption])]) });

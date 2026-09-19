@@ -2,6 +2,10 @@
 
 Files in this directory are preserved source references, not pending work. Each filename ends with its UTC processing timestamp. Preserve original bytes; do not edit or overwrite an archived source. Pending work remains directly under `backlog/`.
 
+## 19 September 2026
+
+The timestamped `0. manga_panels` source adds Gallery's Panels collection. All six supplied river sketches are registered in `gallery/panels.json`, linked to MOM-006 v2 and Chapter 05 v1, and published with uncropped previews and original downloads. The author confirms that 0a/0b and 3a/3b are alternative compositions of the same beats, making four beats in total. Original image bytes remain intact under descriptive names; the source drawings also remain in their author drop folder. Naming, grouping, version-specific interlinking, validation, and browser checks are recorded in AGENTS.md and the maintenance charter. No scene passage was omitted and no new lore was inferred from the annotations.
+
 ## 9 September 2026
 
 The timestamped `3 - cult_of_inanna` note reinforces the author's enjoyment of Lynleit's uncomfortable lineage association. Existing canon already supplies this connection; the preference is recorded in the maintenance charter without inventing a scene, doctrine, obligation, or consequence.

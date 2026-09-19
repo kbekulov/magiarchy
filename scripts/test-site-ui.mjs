@@ -6,6 +6,7 @@ import vm from 'node:vm';
 import { fileURLToPath } from 'node:url';
 import { chromium, webkit } from 'playwright';
 import { testGalleryResources } from './test-gallery-resources.mjs';
+import { testGalleryPanels } from './test-gallery-panels.mjs';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const mime = { '.html': 'text/html', '.js': 'text/javascript', '.json': 'application/json', '.css': 'text/css', '.png': 'image/png', '.webp': 'image/webp', '.md': 'text/plain', '.mp3': 'audio/mpeg', '.wav': 'audio/wav' };
@@ -57,6 +58,7 @@ try {
       };
       if (process.env.TEST_GALLERY_ONLY === '1') {
         await testGalleryResources(page, origin, engine);
+        await testGalleryPanels(page, origin, engine);
         assert.deepEqual(errors, [], `${engine}: browser script errors`);
         continue;
       }
@@ -377,6 +379,7 @@ try {
       assert.equal(await proseLink.evaluate(el => getComputedStyle(el).color), color, 'Entity link changes prose color on focus');
       assert.notEqual(await proseLink.evaluate(el => getComputedStyle(el).outlineStyle), 'none', 'Entity keyboard focus is invisible');
       await testGalleryResources(page, origin, engine);
+      await testGalleryPanels(page, origin, engine);
       assert.deepEqual(errors, [], `${engine}: browser script errors`);
       console.log(`${engine}: ${pages.length} routes at 3 widths; intermediate panes at 6 widths; reader navigation, filtering, version search, note focus, map movement, entity styling, and portrait eras passed.`);
     } finally { await browser.close(); }

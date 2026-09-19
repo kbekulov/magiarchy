@@ -381,6 +381,26 @@ async function loadChapter(entry, requestedVersion) {
   document.querySelector('#chapter-preface-title').textContent = isOutline ? 'Outline events' : 'Chapter preface';
   chapterSummary.textContent = selected.description;
   chapterReaderCharacters.replaceChildren(...createCharacterLabels(entry.characters));
+  let panelLinks = document.querySelector('#chapter-panel-links');
+  if (!panelLinks) {
+    panelLinks = document.createElement('nav');
+    panelLinks.id = 'chapter-panel-links';
+    panelLinks.className = 'chapter-panel-links';
+    panelLinks.setAttribute('aria-label', 'Scene panels');
+    chapterReaderCharacters.after(panelLinks);
+  }
+  panelLinks.replaceChildren();
+  panelLinks.hidden = true;
+  try {
+    for (const panels of await window.MAGIARCHY_PANELS.forScene('chapter', entry.slug, selected.versionId)) {
+      const link = document.createElement('a');
+      link.className = 'source-link';
+      link.href = window.MAGIARCHY_PANELS.url(panels);
+      link.textContent = `View panels: ${panels.title} (${panels.panels.length} images)`;
+      panelLinks.append(link);
+    }
+    panelLinks.hidden = !panelLinks.childElementCount;
+  } catch (error) { console.warn('Scene panels could not be loaded.', error); }
   chapterEventList.replaceChildren(...(selected.events ?? []).map((event, index) => {
     const record = typeof event === 'string' ? { text: event, status: 'reader' } : event;
     const row = document.createElement('tr');

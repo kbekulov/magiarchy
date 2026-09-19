@@ -1,0 +1,97 @@
+import assert from 'node:assert/strict';
+import fs from 'node:fs';
+
+export async function testGalleryPanels(page, origin, engine) {
+  const records = JSON.parse(fs.readFileSync('gallery/panels.json', 'utf8'));
+  const record = records.find(record => record.id === 'river-incident');
+  const visit = async route => { await page.goto(`${origin}/${route}`); await page.waitForLoadState('networkidle'); };
+  for (const width of [390, 820, 1440]) {
+    await page.setViewportSize({ width, height: 900 });
+    await visit('gallery.html?collection=panels');
+    assert.equal(await page.locator('#gallery-collections a').count(), 3);
+    assert.equal(await page.locator('#gallery-collections a[aria-current]').textContent(), 'PanelsScenes in sequence');
+    assert.ok(!await page.locator('#gallery-content').isVisible());
+    assert.ok(!await page.locator('#production-collection').isVisible());
+    assert.equal(await page.locator('.panel-card').count(), records.length);
+    assert.ok(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1));
+    await page.screenshot({ path: `test-results/${engine}-panels-catalog-${width}.png`, fullPage: true });
+    await page.locator('#panel-search').fill('no such panel');
+    assert.equal(await page.locator('.panel-card').count(), 0);
+    assert.ok(await page.locator('#panel-empty').isVisible());
+    assert.ok(page.url().includes('q=no+such+panel'));
+    await page.locator('#panel-reset').click();
+    await page.locator('#panel-character').selectOption('lynleit');
+    await page.reload(); await page.waitForLoadState('networkidle');
+    assert.equal(await page.locator('#panel-character').inputValue(), 'lynleit');
+    await page.locator('.panel-card > a').first().click();
+    await page.waitForLoadState('networkidle');
+    assert.equal(await page.locator('.scene-panel').count(), 6);
+    assert.equal(await page.locator('.panel-beat').count(), 4);
+    assert.equal(await page.locator('.panel-beat').first().locator('.scene-panel').count(), 2);
+    assert.equal(await page.locator('.panel-beat').last().locator('.scene-panel').count(), 2);
+    assert.equal(await page.locator('#panel-jump-links a').count(), 6);
+    assert.ok(await page.locator('#panel-reader').isVisible());
+    assert.ok(!await page.locator('#gallery-heading').isVisible());
+    assert.ok(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1));
+    const panels = await page.locator('.scene-panel-art img').evaluateAll(images => images.map(img => ({ src: img.getAttribute('src'), width: img.width, height: img.height, ratio: Number(img.getAttribute('width')) / Number(img.getAttribute('height')) })));
+    assert.deepEqual(panels.map(p => p.src), record.panels.map(p => p.display));
+    for (const panel of panels) assert.ok(Math.abs(panel.width / panel.height - panel.ratio) < .02, 'Scene art must not be cropped');
+    await page.screenshot({ path: `test-results/${engine}-panels-reader-${width}.png` });
+    await page.locator('#panel-jump-links a').last().focus();
+    await page.keyboard.press('Enter');
+    assert.ok(page.url().endsWith('#panel-3b'));
+    assert.ok(await page.locator('#panel-3b').evaluate(el => el === document.activeElement));
+    await page.locator('#panel-3b img').evaluate(img => img.decode());
+    await page.screenshot({ path: `test-results/${engine}-panels-last-image-${width}.png` });
+    await visit('gallery.html?panels=river-incident#panel-2');
+    await page.locator('#panel-2 img').evaluate(img => img.decode());
+    const top = await page.locator('#panel-2').evaluate(el => el.getBoundingClientRect().top);
+    assert.ok(top >= 60 && top < 180, `Direct panel anchor displaced: ${top}`);
+  }
+  for (const [index, panel] of record.panels.entries()) {
+    const response = await page.request.get(`${origin}/${panel.src}`);
+    assert.equal(response.status(), 200);
+    assert.deepEqual(await response.body(), fs.readFileSync(panel.src));
+    assert.equal(await page.locator('.scene-panel a[download]').nth(index).getAttribute('href'), panel.src);
+  }
+  const [download] = await Promise.all([page.waitForEvent('download'), page.locator('.scene-panel a[download]').first().click()]);
+  assert.equal(download.suggestedFilename(), record.panels[0].src.split('/').pop());
+  assert.deepEqual(fs.readFileSync(await download.path()), fs.readFileSync(record.panels[0].src));
+  const touchPage = await page.context().browser().newPage({ hasTouch: true, viewport: { width: 390, height: 844 }, reducedMotion: 'reduce' });
+  try {
+    await touchPage.route('https://**/*', route => route.abort());
+    await touchPage.goto(`${origin}/gallery.html?panels=river-incident`);
+    await touchPage.locator('#panel-jump-links a').last().tap();
+    await touchPage.locator('#panel-3b img').evaluate(img => img.decode());
+    assert.ok(touchPage.url().endsWith('#panel-3b'));
+    assert.ok(await touchPage.locator('#panel-3b').isVisible());
+  } finally { await touchPage.close(); }
+  const momentURL = `moments.html?moment=${record.moment.slug}&version=${record.moment.version}`;
+  const chapterURL = `story.html?chapter=${record.chapter.slug}&version=${record.chapter.version}`;
+  assert.equal(await page.locator('#panel-context a').nth(0).getAttribute('href'), momentURL);
+  assert.equal(await page.locator('#panel-context a').nth(1).getAttribute('href'), chapterURL);
+  await page.locator('#panel-context a').nth(0).click(); await page.waitForLoadState('networkidle');
+  assert.ok(await page.locator('#moment-connection-grid a[href="gallery.html?panels=river-incident"]').isVisible());
+  await visit('moments.html?moment=the-boat-beneath-the-bridge&version=v1');
+  assert.equal(await page.locator('#moment-connection-grid a[href="gallery.html?panels=river-incident"]').count(), 0, 'No leaking panels into an older Moment revision');
+  await visit(chapterURL);
+  assert.ok(await page.locator('#chapter-panel-links a[href="gallery.html?panels=river-incident"]').isVisible());
+  await visit('story.html?chapter=the-nameless-street');
+  assert.ok(!await page.locator('#chapter-panel-links').isVisible());
+  await visit('gallery.html?panels=missing-scene');
+  assert.ok(await page.getByRole('heading', { name: 'Scene unavailable' }).isVisible());
+  await page.route('**/gallery/panels.json', route => route.fulfill({ json: [] }));
+  await visit('gallery.html?collection=panels');
+  assert.ok(await page.getByRole('heading', { name: 'No scene panels yet' }).isVisible());
+  await page.unroute('**/gallery/panels.json');
+  await page.route('**/gallery/panels.json', route => route.fulfill({ status: 503, body: '' }));
+  await visit('gallery.html?panels=river-incident');
+  assert.match(await page.locator('#panel-results').textContent(), /could not be loaded/);
+  await page.unroute('**/gallery/panels.json');
+  await visit('gallery.html?collection=production');
+  assert.equal(await page.locator('#gallery-collections a[aria-current]').getAttribute('href'), 'gallery.html?collection=production');
+  assert.ok(!await page.locator('#panel-collection').isVisible());
+  await visit('gallery.html');
+  assert.equal(await page.locator('.gallery-card').count(), 35, 'Panel images must stay outside artwork/profile pools');
+  console.log(`${engine}: scene panels, versions, filters, layouts, originals, and error states passed.`);
+}

@@ -29,7 +29,7 @@
   $('#gallery-content').hidden = true;
   $('#gallery-intro').textContent = 'Reference sheets, poses, sketches, and downloadable files for animation and 3D work.';
   collections.querySelector('[aria-current]').removeAttribute('aria-current');
-  collections.querySelector('a:last-child').setAttribute('aria-current', 'page');
+  collections.querySelector('a[href="gallery.html?collection=production"]').setAttribute('aria-current', 'page');
   collection.hidden = false;
   document.title = 'Production resources - Gallery - Magiarchy';
   $('.production-filters').addEventListener('submit', event => event.preventDefault());

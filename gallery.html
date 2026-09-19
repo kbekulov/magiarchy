@@ -3,13 +3,15 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Browse Magiarchy artwork, character references, and downloadable production resources for animation and 3D work.">
+    <meta name="description" content="Browse Magiarchy artwork, scene panels, character references, and downloadable production resources for animation and 3D work.">
     <meta name="theme-color" content="#1e1f22">
     <title>Gallery - Magiarchy</title>
     <link rel="icon" href="favicon.svg" type="image/svg+xml">
     <link rel="stylesheet" href="styles.css">
     <script src="script.js" defer></script>
     <script src="gallery-resources.js" defer></script>
+    <script src="scene-panels.js" defer></script>
+    <script src="gallery-panels.js" defer></script>
     <script src="entity-links.js" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2" defer></script>
     <script src="notes-config.js" defer></script>
@@ -66,13 +68,14 @@
             <div>
               <p class="eyebrow">Visual archive</p>
               <h1 id="gallery-title">Gallery</h1>
-              <p id="gallery-intro">Illustrations and chibis, with a separate collection of references and files for animation and 3D work.</p>
+              <p id="gallery-intro">Illustrations, production references, and scene-by-scene panel art.</p>
             </div>
           </section>
 
           <nav class="gallery-collections" id="gallery-collections" aria-label="Gallery collections">
             <a href="gallery.html" aria-current="page"><strong>Artwork</strong><span>Illustrations &amp; chibis</span></a>
             <a href="gallery.html?collection=production"><strong>Production resources</strong><span>References &amp; 3D files</span></a>
+            <a href="gallery.html?collection=panels"><strong>Panels</strong><span>Scenes in sequence</span></a>
           </nav>
 
           <section class="gallery-toolbar reveal" id="gallery-toolbar" aria-label="Gallery filters">
@@ -309,7 +312,23 @@
               </div>
             </div>
           </section>
-          <noscript><p class="resource-noscript">Enable JavaScript to browse production resources and their downloads. Artwork remains available below.</p></noscript>
+          <section class="panel-collection" id="panel-collection" aria-label="Scene panels" hidden>
+            <form class="panel-filters production-filters" role="search" aria-label="Find scene panels">
+              <label class="gallery-select"><span>Search scenes</span><input id="panel-search" type="search" placeholder="Scene, character, or keyword..."></label>
+              <label class="gallery-select"><span>Character depicted</span><select id="panel-character"><option value="all">All characters</option></select></label>
+            </form>
+            <p class="resource-results" id="panel-results" role="status">Loading panels...</p>
+            <div class="panel-grid" id="panel-grid"></div>
+            <div class="resource-empty" id="panel-empty" hidden><h2>No matching scenes</h2><p>Try another search or character.</p><button class="button button-secondary" id="panel-reset" type="button">Clear filters</button></div>
+          </section>
+          <section class="panel-reader" id="panel-reader" aria-labelledby="panel-title" hidden>
+            <nav class="document-breadcrumbs" aria-label="Breadcrumb"><a href="gallery.html">Gallery</a><span aria-hidden="true">/</span><a href="gallery.html?collection=panels" id="panel-back">Panels</a><span aria-hidden="true">/</span><span id="panel-crumb" aria-current="page">Scene</span></nav>
+            <header class="resource-heading"><span class="doc-topic" id="panel-medium"></span><h1 id="panel-title"></h1><p id="panel-summary"></p><nav class="panel-context" id="panel-context" aria-label="Scene connections"></nav></header>
+            <nav class="panel-jump" aria-label="Jump to a sketch"><p class="eyebrow">In this scene</p><div id="panel-jump-links"></div></nav>
+            <div class="panel-sequence" id="panel-sequence"></div>
+            <a class="source-link panel-return" href="gallery.html?collection=panels">Back to Panels <span aria-hidden="true">→</span></a>
+          </section>
+          <noscript><p class="resource-noscript">Enable JavaScript to browse production resources, scene panels, and their downloads. Artwork remains available below.</p></noscript>
 
           <section class="gallery-reader-view" id="gallery-reader-view" hidden>
             <nav class="document-breadcrumbs gallery-breadcrumbs" aria-label="Breadcrumb">

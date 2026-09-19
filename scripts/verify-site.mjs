@@ -5,6 +5,7 @@ import { fileURLToPath } from 'node:url';
 import { searchSourceDigest } from './search-source-digest.mjs';
 import { execFileSync } from 'node:child_process';
 import { validateResources } from './gallery-resources.mjs';
+import { validatePanels } from './gallery-panels.mjs';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const read = file => fs.readFileSync(path.join(root, file), 'utf8');
@@ -41,6 +42,9 @@ for (const section of read('docs/questions-to-be-answered.md').split(/^## /m)) {
   assert.deepEqual(confidence, [...confidence].sort((a, b) => a - b), 'Question confidence ordering has drifted');
 }
 const search = json('search-index.json');
+const panels = json('gallery/panels.json');
+validatePanels(root, panels);
+for (const record of panels) assert.ok(search.entries.some(entry => entry.id === `panels-${record.id}` && entry.url === `gallery.html?panels=${record.id}`), `${record.id}: panel set missing from search`);
 const resources = json('gallery/resources.json');
 validateResources(root, resources);
 for (const record of resources) assert.ok(search.entries.some(entry => entry.id === `resource-${record.id}` && entry.url === `gallery.html?resource=${record.id}`), `${record.id}: production resource missing from search`);

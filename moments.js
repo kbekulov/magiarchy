@@ -352,6 +352,11 @@ async function renderMomentReader(entry, entries, requestedVersion) {
   if (selected.artwork) {
     connections.push(createConnectionCard('Gallery', selected.artwork.title, 'View the illustration for this scene.', `gallery.html?image=${encodeURIComponent(selected.artwork.id)}`));
   }
+  try {
+    for (const panels of await window.MAGIARCHY_PANELS.forScene('moment', entry.slug, selected.versionId)) {
+      connections.push(createConnectionCard('Panels', panels.title, `${panels.panels.length} images. View the scene sketches in Gallery.`, window.MAGIARCHY_PANELS.url(panels)));
+    }
+  } catch (error) { console.warn('Scene panels could not be loaded.', error); }
   if (selected.soundtrack) {
     connections.push(createConnectionCard('Soundtrack', selected.soundtrack.title, `${selected.soundtrack.tracks.length} tracks. Listen and download in Music.`, `music.html?category=event&tag=${encodeURIComponent(selected.soundtrack.event)}`));
   }
