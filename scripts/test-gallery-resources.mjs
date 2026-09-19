@@ -74,6 +74,7 @@ export async function testGalleryResources(page, origin, engine) {
       assert.equal(record.era, record.id === 'lynleit-t-pose-v1' ? 'Arc 1' : undefined, 'Design revision must not imply an Arc');
       assert.equal(record.template, undefined, 'Character references must not replace the mascot template');
       assert.deepEqual(record.previews.map(view => [view.width, view.height]), [[1122, 1402], [1122, 1402]]);
+      assert.ok(record.previews.every(view => view.src.includes('-arm-corrected-')), 'Reference preview must use the corrected derivative');
       await visit(`gallery.html?resource=${record.id}&view=front`);
       assert.equal(await page.locator('#resource-title').textContent(), record.title);
       assert.equal(await page.locator('#resource-thumbnails button').count(), 2);
@@ -93,7 +94,7 @@ export async function testGalleryResources(page, origin, engine) {
       await page.screenshot({ path: `test-results/${engine}-${record.id}-${width}.png`, fullPage: width < 820 });
       if (width === 1440) {
         for (const file of record.files) {
-          assert.match(file.path.split('/').pop(), /^char-(felix|lynleit)-(arc-1-)?t-pose-v[12]-(front|back|sheet)\.png$/);
+          assert.match(file.path.split('/').pop(), /^char-(felix|lynleit)-(arc-1-)?t-pose-v[12]-(arm-corrected-(front|back)|sheet)\.png$/);
           const [download] = await Promise.all([page.waitForEvent('download'), page.locator(`#resource-downloads a[href="${file.path}"]`).click()]);
           assert.equal(download.suggestedFilename(), file.path.split('/').pop());
           assert.deepEqual(fs.readFileSync(await download.path()), fs.readFileSync(file.path));
@@ -102,8 +103,12 @@ export async function testGalleryResources(page, origin, engine) {
     }
   }
   await visit('docs.html?doc=character-image-production');
-  assert.equal(await page.getByRole('combobox', { name: 'Choose version' }).inputValue(), 'v5');
+  assert.equal(await page.getByRole('combobox', { name: 'Choose version' }).inputValue(), 'v6');
   assert.ok(await page.getByRole('heading', { name: 'Separating supplied T-pose sheets' }).isVisible());
+  assert.ok(await page.getByRole('heading', { name: 'Author-approved anatomy corrections' }).isVisible());
+  await visit('docs.html?doc=character-image-production&version=v5');
+  assert.equal(await page.locator('#document-source-link').getAttribute('href'), 'docs/character-image-production-v5.md');
+  assert.equal(await page.getByRole('heading', { name: 'Author-approved anatomy corrections' }).count(), 0);
   await visit('docs.html?doc=character-image-production&version=v4');
   assert.equal(await page.locator('#document-source-link').getAttribute('href'), 'docs/character-image-production-v4.md');
   assert.equal(await page.getByRole('heading', { name: 'Separating supplied T-pose sheets' }).count(), 0);

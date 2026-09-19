@@ -4,9 +4,11 @@ import path from 'node:path';
 import { createHash } from 'node:crypto';
 import { fileURLToPath } from 'node:url';
 import sharp from 'sharp';
+import { correctArms, verifyVisibleReach } from './t-pose-arm-corrections.mjs';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const manifest = JSON.parse(fs.readFileSync(path.join(root, 'gallery/t-pose-extractions.json'), 'utf8'));
+const corrections = JSON.parse(fs.readFileSync(path.join(root, 'gallery/t-pose-arm-corrections.json'), 'utf8'));
 const check = process.argv.includes('--check');
 const hash = bytes => createHash('sha256').update(bytes).digest('hex');
 const template = await sharp(path.join(root, manifest.template)).metadata();
@@ -16,6 +18,7 @@ assert.equal(manifest.canvas.height, template.height);
 // These measured regions contain sheet lettering only, never character pixels.
 // Keep this explicit recipe instead of detecting subjects or regenerating artwork.
 for (const sheet of manifest.sheets) {
+  const pairedReaches = [];
   const source = fs.readFileSync(path.join(root, sheet.source));
   assert.equal(hash(source), sheet.sha256, `${sheet.id}: original sheet changed`);
   const { data: original, info } = await sharp(source).removeAlpha().raw().toBuffer({ resolveWithObject: true });
@@ -54,5 +57,22 @@ for (const sheet of manifest.sheets) {
       assert.deepEqual(await sharp(target).removeAlpha().raw().toBuffer(), await sharp(output).removeAlpha().raw().toBuffer(), `${sheet.id}/${view}: derivative differs from the approved extraction recipe`);
     } else fs.writeFileSync(target, output);
     console.log(`${check ? 'Verified' : 'Prepared'} ${sheet.id}/${view}: ${manifest.canvas.width} x ${manifest.canvas.height}`);
+    const correction = corrections.sets.find(record => record.id === sheet.id);
+    if (correction) {
+      const corrected = await correctArms(padded, correction, view, left, padLeft, width);
+      const correctedOutput = await sharp(corrected).resize(manifest.canvas.width, manifest.canvas.height, { fit: 'contain', background: '#808080' }).png().toBuffer();
+      pairedReaches.push(await verifyVisibleReach(correctedOutput, correction));
+      const correctedTarget = path.join(root, sheet.source.replace('-sheet.png', `-arm-corrected-${view}.png`));
+      if (check) {
+        const actual = await sharp(correctedTarget).metadata();
+        assert.equal(actual.width, manifest.canvas.width);
+        assert.equal(actual.height, manifest.canvas.height);
+        assert.deepEqual(await sharp(correctedTarget).removeAlpha().raw().toBuffer(), await sharp(correctedOutput).removeAlpha().raw().toBuffer(), `${sheet.id}/${view}: arm correction differs from measured recipe`);
+      } else fs.writeFileSync(correctedTarget, correctedOutput);
+    }
+  }
+  if (pairedReaches.length) {
+    assert.equal(pairedReaches.length, 2, 'Correct matching front/back views together');
+    for (const side of [0, 1]) assert.ok(Math.abs(pairedReaches[0][side] - pairedReaches[1][side]) <= 6, `${sheet.id}: front/back reach mismatch`);
   }
 }

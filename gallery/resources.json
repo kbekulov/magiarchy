@@ -124,7 +124,7 @@
     "previews": [
       {
         "id": "front",
-        "src": "media/gallery/resources/felix-t-pose-v1/char-felix-t-pose-v1-front.png",
+        "src": "media/gallery/resources/felix-t-pose-v1/char-felix-t-pose-v1-arm-corrected-front.png",
         "alt": "Front T-pose of Felix with orange hair, green eyes, a blue tie, white shirt, black suspenders, trousers, shoes, and a wristwatch.",
         "caption": "v1 · Front",
         "thumbnail": "media/gallery/previews/resources/felix-t-pose-v1-1.webp",
@@ -133,7 +133,7 @@
       },
       {
         "id": "back",
-        "src": "media/gallery/resources/felix-t-pose-v1/char-felix-t-pose-v1-back.png",
+        "src": "media/gallery/resources/felix-t-pose-v1/char-felix-t-pose-v1-arm-corrected-back.png",
         "alt": "Back T-pose of Felix with an orange ponytail, crossed black suspenders, a rolled-sleeve white shirt, dark trousers, and black shoes.",
         "caption": "v1 · Back",
         "thumbnail": "media/gallery/previews/resources/felix-t-pose-v1-2.webp",
@@ -143,17 +143,17 @@
     ],
     "files": [
       {
-        "path": "media/gallery/resources/felix-t-pose-v1/char-felix-t-pose-v1-front.png",
-        "label": "Front reference",
-        "notes": "Separated view, 1122 × 1402 PNG.",
-        "bytes": 1291620,
+        "path": "media/gallery/resources/felix-t-pose-v1/char-felix-t-pose-v1-arm-corrected-front.png",
+        "label": "Front reference, arm-corrected",
+        "notes": "Arm lengths balanced across matching views, 1122 × 1402 PNG.",
+        "bytes": 1187861,
         "format": "PNG"
       },
       {
-        "path": "media/gallery/resources/felix-t-pose-v1/char-felix-t-pose-v1-back.png",
-        "label": "Back reference",
-        "notes": "Separated view, 1122 × 1402 PNG.",
-        "bytes": 1243510,
+        "path": "media/gallery/resources/felix-t-pose-v1/char-felix-t-pose-v1-arm-corrected-back.png",
+        "label": "Back reference, arm-corrected",
+        "notes": "Arm lengths balanced across matching views, 1122 × 1402 PNG.",
+        "bytes": 1154135,
         "format": "PNG"
       },
       {
@@ -174,7 +174,7 @@
         "value": "1536 × 1024 px"
       }
     ],
-    "usage": "Use the front and back of this version together. Separated views retain the supplied character design, with uniform scaling and side padding. Sheet lettering is omitted from the separated views; the original sheet is preserved."
+    "usage": "Use this version's front and back together. These views have locally corrected arm lengths and matching shoulder, wrist, and fingertip positions. Faces, torso proportions, clothing designs, and the template canvas are preserved. The original two-view sheet remains available unchanged."
   },
   {
     "id": "lynleit-t-pose-v1",
@@ -189,7 +189,7 @@
     "previews": [
       {
         "id": "front",
-        "src": "media/gallery/resources/lynleit-t-pose-v1/char-lynleit-arc-1-t-pose-v1-front.png",
+        "src": "media/gallery/resources/lynleit-t-pose-v1/char-lynleit-arc-1-t-pose-v1-arm-corrected-front.png",
         "alt": "Arc 1 front T-pose of Lynleit with long dark hair, blue eyes, a blue coat, ruffled white collar and cuffs, black bow, laced shorts, dark tights, and over-knee boots.",
         "caption": "v1 · Arc 1 · Front",
         "thumbnail": "media/gallery/previews/resources/lynleit-t-pose-v1-1.webp",
@@ -198,7 +198,7 @@
       },
       {
         "id": "back",
-        "src": "media/gallery/resources/lynleit-t-pose-v1/char-lynleit-arc-1-t-pose-v1-back.png",
+        "src": "media/gallery/resources/lynleit-t-pose-v1/char-lynleit-arc-1-t-pose-v1-arm-corrected-back.png",
         "alt": "Arc 1 back T-pose of Lynleit with long dark hair falling over a blue coat, dark tights, and tall black boots.",
         "caption": "v1 · Arc 1 · Back",
         "thumbnail": "media/gallery/previews/resources/lynleit-t-pose-v1-2.webp",
@@ -208,17 +208,17 @@
     ],
     "files": [
       {
-        "path": "media/gallery/resources/lynleit-t-pose-v1/char-lynleit-arc-1-t-pose-v1-front.png",
-        "label": "Front reference",
-        "notes": "Separated view, 1122 × 1402 PNG.",
-        "bytes": 1557211,
+        "path": "media/gallery/resources/lynleit-t-pose-v1/char-lynleit-arc-1-t-pose-v1-arm-corrected-front.png",
+        "label": "Front reference, arm-corrected",
+        "notes": "Arm lengths balanced across matching views, 1122 × 1402 PNG.",
+        "bytes": 1462934,
         "format": "PNG"
       },
       {
-        "path": "media/gallery/resources/lynleit-t-pose-v1/char-lynleit-arc-1-t-pose-v1-back.png",
-        "label": "Back reference",
-        "notes": "Separated view, 1122 × 1402 PNG.",
-        "bytes": 1428077,
+        "path": "media/gallery/resources/lynleit-t-pose-v1/char-lynleit-arc-1-t-pose-v1-arm-corrected-back.png",
+        "label": "Back reference, arm-corrected",
+        "notes": "Arm lengths balanced across matching views, 1122 × 1402 PNG.",
+        "bytes": 1338847,
         "format": "PNG"
       },
       {
@@ -239,7 +239,7 @@
         "value": "1536 × 1024 px"
       }
     ],
-    "usage": "Use the front and back of this version together. Separated views retain the supplied character design, with uniform scaling and side padding. Sheet lettering is omitted from the separated views; the original sheet is preserved."
+    "usage": "Use this version's front and back together. These views have locally corrected arm lengths and matching shoulder, wrist, and fingertip positions. Faces, torso proportions, clothing designs, and the template canvas are preserved. The original two-view sheet remains available unchanged."
   },
   {
     "id": "lynleit-t-pose-v2",
@@ -253,7 +253,7 @@
     "previews": [
       {
         "id": "front",
-        "src": "media/gallery/resources/lynleit-t-pose-v2/char-lynleit-t-pose-v2-front.png",
+        "src": "media/gallery/resources/lynleit-t-pose-v2/char-lynleit-t-pose-v2-arm-corrected-front.png",
         "alt": "Front T-pose of Lynleit with long dark hair, blue eyes, a blue coat, a white collared shirt, black ribbon, belted shorts, dark tights, and tall folded-cuff boots.",
         "caption": "v2 · Front",
         "thumbnail": "media/gallery/previews/resources/lynleit-t-pose-v2-1.webp",
@@ -262,7 +262,7 @@
       },
       {
         "id": "back",
-        "src": "media/gallery/resources/lynleit-t-pose-v2/char-lynleit-t-pose-v2-back.png",
+        "src": "media/gallery/resources/lynleit-t-pose-v2/char-lynleit-t-pose-v2-arm-corrected-back.png",
         "alt": "Back T-pose of Lynleit with long dark hair, a blue coat, dark tights, and tall black boots with folded cuffs.",
         "caption": "v2 · Back",
         "thumbnail": "media/gallery/previews/resources/lynleit-t-pose-v2-2.webp",
@@ -272,17 +272,17 @@
     ],
     "files": [
       {
-        "path": "media/gallery/resources/lynleit-t-pose-v2/char-lynleit-t-pose-v2-front.png",
-        "label": "Front reference",
-        "notes": "Separated view, 1122 × 1402 PNG.",
-        "bytes": 1472739,
+        "path": "media/gallery/resources/lynleit-t-pose-v2/char-lynleit-t-pose-v2-arm-corrected-front.png",
+        "label": "Front reference, arm-corrected",
+        "notes": "Arm lengths balanced across matching views, 1122 × 1402 PNG.",
+        "bytes": 1362899,
         "format": "PNG"
       },
       {
-        "path": "media/gallery/resources/lynleit-t-pose-v2/char-lynleit-t-pose-v2-back.png",
-        "label": "Back reference",
-        "notes": "Separated view, 1122 × 1402 PNG.",
-        "bytes": 1329980,
+        "path": "media/gallery/resources/lynleit-t-pose-v2/char-lynleit-t-pose-v2-arm-corrected-back.png",
+        "label": "Back reference, arm-corrected",
+        "notes": "Arm lengths balanced across matching views, 1122 × 1402 PNG.",
+        "bytes": 1238320,
         "format": "PNG"
       },
       {
@@ -303,6 +303,6 @@
         "value": "1536 × 1024 px"
       }
     ],
-    "usage": "Use the front and back of this version together. Separated views retain the supplied character design, with uniform scaling and side padding. Sheet lettering is omitted from the separated views; the original sheet is preserved."
+    "usage": "Use this version's front and back together. These views have locally corrected arm lengths and matching shoulder, wrist, and fingertip positions. Faces, torso proportions, clothing designs, and the template canvas are preserved. The original two-view sheet remains available unchanged."
   }
 ]

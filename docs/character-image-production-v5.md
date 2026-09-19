@@ -67,14 +67,6 @@ When the author requests a sheet to be split, preserve the complete original as 
 
 Measure the split and inspect the result rather than blindly halving a sheet through touching fingertips. Keep reproducible crop, padding, and any background-only lettering adjustments in `gallery/t-pose-extractions.json`; verify original hashes and generated views with `node scripts/prepare-t-pose-views.mjs --check`. A design revision such as v2 is not an Arc label. Keep every supplied version's views together and separate from the other versions.
 
-### Author-approved anatomy corrections
-
-Splitting a sheet does not authorize changes to its anatomy. When the author explicitly requests a correction, preserve both the original sheet and the previous separated views. Publish the correction as a separately named derivative, such as `char-felix-t-pose-v1-arm-corrected-front.png`, under the same design-version record. Keep the original sheet available to download and identify the corrected downloads plainly.
-
-For unequal T-pose arms, compare visible shoulder, sleeve, wrist, and fingertip positions on both sides and both views. Clothing folds are not reliable evidence of an elbow joint. Measure each design independently; do not force different characters into one reach or change their face, torso, clothing design, or life period. Use local geometric adjustments when preserving the drawing is important. A whole-figure stretch or regenerated face is not an arm-length repair.
-
-Keep the approved measurements and edit regions in `gallery/t-pose-arm-corrections.json`. The preparation script reproduces corrected derivatives separately from the unmodified extractions, recenters by translation, and verifies that pixels outside the arm regions remain unchanged after that translation and background padding. Retain the template canvas and a common scale within each pair. Inspect every result, including sleeve joins, fingers, padding, and front/back consistency; check the visible fingertip spans as well as the intended coordinates. These are drawing corrections, not new canonical body measurements or a claim of 3D-model readiness.
-
 ### Review checklist
 
 Compare the result with the references before registration or publication. Check identity, proportions, silhouette, costume details, pose, and front/back consistency. Inspect hands, feet, accessories, and occluded areas for discrepancies. Treat an unexplained generated difference as something to review, not as new canon.
