@@ -38,7 +38,7 @@ This writer reference separates what happens from what a character knows and wha
 
 **Event:** Lynleit experiences the street days before Fionn's murder. The memory of the boy below the ledge later returns when she discovers her father's body and helps Helena exploit her shock.
 
-**Reader:** The current street Chapter ends after Lynleit wakes beside Felix. The urban legend and its warning belong to the archive's background; the chapter does not show Lynleit learning them. The crying girl's smile and push support the inference of a lure. The later discovery of Fionn's body is not dramatized there. Whether the street was real or an illusion remains unresolved.
+**Reader:** The current street Chapter ends after Lynleit wakes beside Felix. The crying girl's smile and push support the inference of a lure. The later discovery of Fionn's body is not dramatized there. Whether the street was real or an illusion remains unresolved.
 
 **Characters:** Lynleit experiences the street. Felix witnesses her apparent faint and recovery, not the street itself. Do not give Helena knowledge of the street merely because she exploits Lynleit's later reaction.
 
@@ -59,8 +59,6 @@ This writer reference separates what happens from what a character knows and wha
 **Event:** Doom belongs to the later part of Arc 1's second half, after Fionn's death and the nonsexual hotel refuge. Its relation to the political settlement is not fixed.
 
 **Reader:** In current v7, Mikhail names Inanna and discusses the family's association openly. These are spoken facts, not concealed allusions. Lynleit's cup handling, denials, and unread pages carry implications about embarrassment and continuing attraction. The final account explicitly states that both identities changed enough to loosen the curse, so that outcome is not merely inferred.
-
-**Treatment:** Natalia offers the ego hypothesis; Mikhail finds related cases and proposes a possible reciprocal change. Neither adviser can promise this treatment will work before the attempt. The later narrated recovery establishes the outcome of this case, not a guaranteed cure for other curses.
 
 **Characters:** Mikhail knows the family history and Lynleit understands his reference. Natalia introduces the ego hypothesis. Kyrien suspects a connection between Lynleit's attempt and their recovery, but she withholds the proposed treatment. Neither the mock blessing nor his suspicions make him fully informed.
 
@@ -106,4 +104,4 @@ This writer reference separates what happens from what a character knows and wha
 - **Writer gap:** The amber notice marks missing prose, not an event-status category or a clue. Assess only the material on either side of it.
 - **Historical versions:** Check against that revision's text. Do not apply current knowledge to an earlier Chapter or restore an obsolete claim to the default merely because it survives in history.
 
-The river v2 Chapter corrects the sightline from the park trees to the opposite bank. Its v3 Moment and the Nameless Street v2 Moment distinguish scene evidence from background, later events, and unproven mechanisms. Kyrien does not simply deny seeing anything: he describes the boats and attack while omitting Lynleit's ability. Doom's current preface now describes Kyrien as suspecting a connection while missing the proposed treatment. Its explicit cure explanation remains unchanged pending a separately approved prose revision.
+The river's card-game motive, last-hand timing, and city-bank awareness were corrected against the actual prose. Doom's current preface now describes Kyrien as suspecting a connection while missing the proposed treatment. Its explicit cure explanation remains unchanged pending a separately approved prose revision.

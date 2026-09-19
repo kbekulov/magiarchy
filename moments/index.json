@@ -35,7 +35,10 @@
     "soundtrack": {
       "title": "Passacaglia",
       "event": "Only Eyes for You",
-      "tracks": ["passacaglia-movement-i", "passacaglia-movement-ii"]
+      "tracks": [
+        "passacaglia-movement-i",
+        "passacaglia-movement-ii"
+      ]
     },
     "artwork": {
       "id": "char-lynleit-felix-1",
@@ -749,7 +752,7 @@
     "timelinePhase": "vanishing-point",
     "timelineLabel": "Vanishing Point",
     "sequence": 2,
-    "sceneType": "Domestic omen",
+    "sceneType": "Domestic interlude",
     "thread": "Lynleit's private life",
     "location": "The Director's House",
     "summary": "Before the crisis reaches her home directly, Lynleit clumsily chases a grey male cat named Ash, catches him, then cannot bring herself to expel him into the rain.",
@@ -791,9 +794,126 @@
       "Who else in the household accepts or resists Ash's permanent presence?"
     ],
     "continuityBefore": "The first disappearances have begun outside Lynleit's private life, but the full crisis, Fionn's death, and the destruction of her family security remain ahead.",
-    "continuityAfter": "Ash remains inside the house as a quiet domestic echo of the danger Lynleit cannot keep outside. Later losses can turn the once-comic chase into an omen whose meaning becomes clear only in retrospect.",
+    "continuityAfter": "Ash stays in the family house. The chase and Lynleit's reluctance to send him into the rain establish their ordinary domestic relationship before the family's later losses.",
     "chapterSlug": null,
-    "updated": "2026-09-05"
+    "updated": "2026-09-19",
+    "versions": [
+      {
+        "slug": "the-cat-in-the-family-house",
+        "code": "MOM-002",
+        "title": "Ash in the Family House",
+        "status": "Canon scene seed",
+        "placementStatus": "Early chronology confirmed",
+        "timelinePhase": "vanishing-point",
+        "timelineLabel": "Vanishing Point",
+        "sequence": 2,
+        "sceneType": "Domestic omen",
+        "thread": "Lynleit's private life",
+        "location": "The Director's House",
+        "summary": "Before the crisis reaches her home directly, Lynleit clumsily chases a grey male cat named Ash, catches him, then cannot bring herself to expel him into the rain.",
+        "purpose": "Lynleit catches Ash but lets him stay because it is raining.",
+        "characters": [
+          {
+            "name": "Lynleit",
+            "slug": "lynleit"
+          },
+          {
+            "name": "Ash",
+            "slug": "ash"
+          }
+        ],
+        "characterAnchors": [
+          {
+            "slug": "lynleit",
+            "beat": "The Heir Apparent"
+          },
+          {
+            "slug": "ash",
+            "beat": "The Chase"
+          }
+        ],
+        "known": [
+          "The scene occurs in the early chapters, after danger has begun outside but before Lynleit's life starts to collapse.",
+          "The grey cat is male and is named Ash.",
+          "The family maintained an original house in Turon while Lynleit's mother was alive and Lynleit was in junior school.",
+          "After her mother's death, the family moved to a Vilen residence for Fionn's access to the capital. Lynleit accepted the move only after securing the third-floor study-bedroom.",
+          "The Vilen house is a three-floor family residence on a wooded hill above the river that flows toward the city center, with a small rear park and garden.",
+          "Lynleit values the thick vegetation and the sound of leaves and branches in the wind. She regards nearby flowing water as life energy and seeks its emotional grounding despite her childhood fear of drowning.",
+          "The garden-facing first floor contains glass-enclosed relaxation areas that preserve contact with nature through every season.",
+          "Lynleit personally chases Ash through the house, revealing a clumsier and more childish side of her than her public role usually permits.",
+          "Lynleit eventually catches Ash.",
+          "She cannot bring herself to expel him because rain is falling outside.",
+          "Ash decides to remain and becomes a permanent loiterer in the family home."
+        ],
+        "openQuestions": [
+          "Who else in the household accepts or resists Ash's permanent presence?"
+        ],
+        "continuityBefore": "The first disappearances have begun outside Lynleit's private life, but the full crisis, Fionn's death, and the destruction of her family security remain ahead.",
+        "continuityAfter": "Ash remains inside the house as a quiet domestic echo of the danger Lynleit cannot keep outside. Later losses can turn the once-comic chase into an omen whose meaning becomes clear only in retrospect.",
+        "chapterSlug": null,
+        "updated": "2026-09-05",
+        "id": "v1",
+        "label": "v1 · Archived"
+      },
+      {
+        "slug": "the-cat-in-the-family-house",
+        "code": "MOM-002",
+        "title": "Ash in the Family House",
+        "status": "Canon scene seed",
+        "placementStatus": "Early chronology confirmed",
+        "timelinePhase": "vanishing-point",
+        "timelineLabel": "Vanishing Point",
+        "sequence": 2,
+        "sceneType": "Domestic interlude",
+        "thread": "Lynleit's private life",
+        "location": "The Director's House",
+        "summary": "Before the crisis reaches her home directly, Lynleit clumsily chases a grey male cat named Ash, catches him, then cannot bring herself to expel him into the rain.",
+        "purpose": "Lynleit catches Ash but lets him stay because it is raining.",
+        "characters": [
+          {
+            "name": "Lynleit",
+            "slug": "lynleit"
+          },
+          {
+            "name": "Ash",
+            "slug": "ash"
+          }
+        ],
+        "characterAnchors": [
+          {
+            "slug": "lynleit",
+            "beat": "The Heir Apparent"
+          },
+          {
+            "slug": "ash",
+            "beat": "The Chase"
+          }
+        ],
+        "known": [
+          "The scene occurs in the early chapters, after danger has begun outside but before Lynleit's life starts to collapse.",
+          "The grey cat is male and is named Ash.",
+          "The family maintained an original house in Turon while Lynleit's mother was alive and Lynleit was in junior school.",
+          "After her mother's death, the family moved to a Vilen residence for Fionn's access to the capital. Lynleit accepted the move only after securing the third-floor study-bedroom.",
+          "The Vilen house is a three-floor family residence on a wooded hill above the river that flows toward the city center, with a small rear park and garden.",
+          "Lynleit values the thick vegetation and the sound of leaves and branches in the wind. She regards nearby flowing water as life energy and seeks its emotional grounding despite her childhood fear of drowning.",
+          "The garden-facing first floor contains glass-enclosed relaxation areas that preserve contact with nature through every season.",
+          "Lynleit personally chases Ash through the house, revealing a clumsier and more childish side of her than her public role usually permits.",
+          "Lynleit eventually catches Ash.",
+          "She cannot bring herself to expel him because rain is falling outside.",
+          "Ash decides to remain and becomes a permanent loiterer in the family home."
+        ],
+        "openQuestions": [
+          "Who else in the household accepts or resists Ash's permanent presence?"
+        ],
+        "continuityBefore": "The first disappearances have begun outside Lynleit's private life, but the full crisis, Fionn's death, and the destruction of her family security remain ahead.",
+        "continuityAfter": "Ash stays in the family house. The chase and Lynleit's reluctance to send him into the rain establish their ordinary domestic relationship before the family's later losses.",
+        "chapterSlug": null,
+        "updated": "2026-09-19",
+        "id": "v2",
+        "label": "v2 · Current"
+      }
+    ],
+    "defaultVersion": "v2"
   },
   {
     "slug": "a-citizen-is-taken",
@@ -992,7 +1112,7 @@
     "sceneType": "Failed river surveillance",
     "thread": "The suspected coup and the Spill",
     "location": "A Vilen river bridge linking a city street to the quarantined park",
-    "summary": "A covert MSF team descends from a bridge to inspect small night shipments requested by Drake and Sherie. The tarp-covered wooden boats arrive empty, the Drowned Choir attacks from below, and Kyrien secretly witnesses Lynleit burn the drowned hands and stand on the river.",
+    "summary": "A covert MSF team descends from a bridge to inspect small night shipments requested by Drake and Sherie. The tarp-covered wooden boats arrive empty, the Drowned Choir attacks from below, and Kyrien secretly witnesses Lynleit stand on the river.",
     "purpose": "The river attack separates the team. Kyrien witnesses Lynleit's forbidden ability and keeps it secret.",
     "characters": [
       {
@@ -1056,7 +1176,7 @@
       "Kyrien wins the first game, and Lynleit requests a rematch.",
       "Across the failed watches, Lynleit learns that Kyrien briefly stops breathing before a risky play. Kyrien learns the small hand movement that precedes one of Lynleit's decisions.",
       {
-        "text": "Their continued rematches and attention to each other's physical tells allow the reader to recognize attraction before either character names or prioritizes it.",
+        "text": "Their repeated rematches and attention to hands and breathing suggest a growing attraction neither names.",
         "status": "inferred"
       },
       "The successful interception occurs on the fifth watch.",
@@ -1064,7 +1184,7 @@
       "The boats are small wooden craft with dark tarps over shallow holds. Fixed rudders keep them aligned while the current provides most of their movement.",
       "When the boats finally appear, Reiner, Lynleit, Kyrien, Maren, and Ivo descend and find them empty. Felix remains ashore.",
       "Felix calls them to position before the fifth camera window opens, leaving their last card game unfinished.",
-      "When an empty boat shifts, Kyrien briefly steadies Lynleit at the waist near the Sparrow holster above her tailbone. Lynleit allows the contact, and Kyrien releases her before she asks.",
+      "When an empty boat shifts, Kyrien briefly steadies Lynleit at the waist near her concealed Sparrow holster. She catches the rail instead of reaching for the pistol, and he releases her as she regains her balance.",
       {
         "text": "The empty boats, drowned hands, and pale girl imply that the Drowned Choir took the contraband crews before the interception, although the surviving officers cannot prove that connection.",
         "status": "inferred"
@@ -1085,7 +1205,7 @@
       "The drowned hands reach upward from the darkness but cannot pass through the surface layer beneath Lynleit's feet.",
       "A pale girl emerges wearing a dress made from dead fish. Fishing line sews her eyes shut.",
       {
-        "text": "The girl's silence and tilted head imply that a person standing on water contradicts the rule by which she takes victims.",
+        "text": "The girl's tilted head and failure to pursue suggest bewilderment at Lynleit standing on the water.",
         "status": "inferred"
       },
       "Kyrien is present as Lynleit's concealed unofficial asset rather than an acknowledged MSF officer.",
@@ -1097,24 +1217,24 @@
       "Lynleit reaches the park side of the river without the jacket, where Kyrien is waiting among the trees.",
       "They remain inside the night park, drenched and struggling to catch their breath.",
       "They sit with their backs pressed together to share body heat while they recover.",
-      "The contact makes each of them aware of the other's breathing through their soaked clothes, continuing the physical tell-reading established during the card games without displacing the danger of the river.",
+      "Sitting back to back, Lynleit notices Kyrien hold his breath. She recognizes the tell from their card games.",
       "Lynleit indirectly asks whether Kyrien saw anything strange during the escape.",
-      "Kyrien denies seeing anything, and his careful performance of innocence gives Lynleit nothing she can safely test.",
+      "Kyrien answers with the empty boats and the attack, without mentioning Lynleit standing on the water.",
       {
-        "text": "Kyrien's decision to protect the secret, made without an order from Lynleit, implies the first voluntary trust inside their coerced alliance.",
+        "text": "Kyrien's evasive answer protects Lynleit's secret without an order from her.",
         "status": "inferred"
       }
     ],
     "openQuestions": [
-      "What form does the river's scar take, and in what sense does the place remember the encounter?",
+      "What lasting evidence or change, if any, does the encounter leave in the river?",
       "What intelligence survives the failed operation beyond the officers' separate accounts?",
       "Does the submerged blue flame leave a lasting injury on the Drowned Choir or only force the hands to release Lynleit?"
     ],
     "continuityBefore": "The hilltop agreement gives Drake and Sherie access to a small loyal MSF team without granting them control of the agency. Their first request is a limited investigation of apparently unmanned river shipments, with contraband still the leading material explanation.",
     "continuityAfter": "Felix, Reiner, Maren, and Ivo carry an account of impossible resistance from the city bank but no shared sight of its cause. Kyrien observes the river from the quarantined trees, and Lynleit later joins him on the park bank without the blue suede jacket. Their back-to-back recovery combines the physical awareness established during the failed watches with a mutual silence around what he witnessed. Lynleit later complains about the lost jacket. Much later, after Fionn's murder, the hotel-room refuge deepens that physical trust into emotional reliance.",
     "chapterSlug": "the-empty-boats-beneath-the-bridge",
-    "updated": "2026-09-12",
-    "defaultVersion": "v2",
+    "updated": "2026-09-19",
+    "defaultVersion": "v3",
     "versions": [
       {
         "title": "The Empty Boats Beneath the Bridge",
@@ -1385,10 +1505,149 @@
         "chapterSlug": "the-empty-boats-beneath-the-bridge",
         "updated": "2026-09-12",
         "id": "v2",
-        "label": "v2 · Current",
+        "label": "v2 · Archived",
         "chapterVersion": "v1"
+      },
+      {
+        "slug": "the-boat-beneath-the-bridge",
+        "code": "MOM-006",
+        "title": "The Empty Boats Beneath the Bridge",
+        "status": "Key scene",
+        "placementStatus": "Core sequence confirmed",
+        "timelinePhase": "unknowing-convergence",
+        "timelineLabel": "Unknowing Convergence",
+        "sequence": 4,
+        "sceneType": "Failed river surveillance",
+        "thread": "The suspected coup and the Spill",
+        "location": "A Vilen river bridge linking a city street to the quarantined park",
+        "summary": "A covert MSF team descends from a bridge to inspect small night shipments requested by Drake and Sherie. The tarp-covered wooden boats arrive empty, the Drowned Choir attacks from below, and Kyrien secretly witnesses Lynleit stand on the river.",
+        "purpose": "The river attack separates the team. Kyrien witnesses Lynleit's forbidden ability and keeps it secret.",
+        "characters": [
+          {
+            "name": "Sherie",
+            "slug": "sherie"
+          },
+          {
+            "name": "Drake",
+            "slug": "drake"
+          },
+          {
+            "name": "Lynleit",
+            "slug": "lynleit"
+          },
+          {
+            "name": "Felix",
+            "slug": "felix"
+          },
+          {
+            "name": "Reiner",
+            "slug": "reiner"
+          },
+          {
+            "name": "Kyrien",
+            "slug": "kyrien"
+          }
+        ],
+        "characterAnchors": [
+          {
+            "slug": "sherie",
+            "beat": "What the Boat Reveals"
+          },
+          {
+            "slug": "drake",
+            "beat": "The Boat below the Bridge"
+          },
+          {
+            "slug": "lynleit",
+            "beat": "The Heir Apparent"
+          },
+          {
+            "slug": "felix",
+            "beat": "No Trust for Kyrien"
+          },
+          {
+            "slug": "reiner",
+            "beat": "Trusting Lynleit"
+          },
+          {
+            "slug": "kyrien",
+            "beat": "Alliance under Pressure"
+          }
+        ],
+        "known": [
+          "Sherie and Drake ask Lynleit to assemble a loyal MSF team and investigate recurring night traffic on the Vilen river.",
+          "Drake's intelligence identifies small boats moving only on the darkest nights. No operator is visible, the pattern appears intricate, and contraband remains a plausible explanation.",
+          "The chosen bridge links a city street to the quarantined park.",
+          "The plan requires Felix to freeze the bridge's civil safety cameras, maintain communications, and remain on the city side as fallback while the river team descends by rope, inspects the boats, and leaves by rope at the next bridge.",
+          "Several nights produce no boats. Each unsuccessful watch consumes the limited camera window and exposes Lynleit or Kyrien to small oddities emerging from the quarantined park that the mission gives them no freedom to pursue.",
+          "After an unsuccessful watch is formally aborted, Lynleit and Kyrien play short card games while the camera feed and bridge equipment are restored.",
+          "Kyrien wins the first game, and Lynleit requests a rematch.",
+          "Across the failed watches, Lynleit learns that Kyrien briefly stops breathing before a risky play. Kyrien learns the small hand movement that precedes one of Lynleit's decisions.",
+          {
+            "text": "Their repeated rematches and attention to hands and breathing suggest a growing attraction neither names.",
+            "status": "inferred"
+          },
+          "The successful interception occurs on the fifth watch.",
+          "The unsuccessful watches reveal a branch breaking before the wind reaches the trees and a pale interruption in a frozen camera feed.",
+          "The boats are small wooden craft with dark tarps over shallow holds. Fixed rudders keep them aligned while the current provides most of their movement.",
+          "When the boats finally appear, Reiner, Lynleit, Kyrien, Maren, and Ivo descend and find them empty. Felix remains ashore.",
+          "Felix calls them to position before the fifth camera window opens, leaving their last card game unfinished.",
+          "When an empty boat shifts, Kyrien briefly steadies Lynleit at the waist near her concealed Sparrow holster. She catches the rail instead of reaching for the pistol, and he releases her as she regains her balance.",
+          {
+            "text": "The empty boats, drowned hands, and pale girl imply that the Drowned Choir took the contraband crews before the interception, although the surviving officers cannot prove that connection.",
+            "status": "inferred"
+          },
+          "The river attack begins while the officers search the empty boats for another explanation.",
+          "The officers are capable swimmers. Reaching shore becomes difficult because unseen hands seize their legs and pull downward.",
+          "After reaching land, Maren describes the sensation of hands gripping and pulling her legs.",
+          "Reiner, Maren, and Ivo reach the city bank with Felix’s fallback line without understanding what attacked them. Reiner looks back and finds Lynleit and Kyrien missing.",
+          {
+            "text": "The hands of different sizes and states of decay suggest many drowned victims, rather than one submerged attacker.",
+            "status": "inferred"
+          },
+          "Only Lynleit sees the hands clearly. They seize her most violently and drag her underwater.",
+          "Lynleit wears a fitted blue suede jacket for the operation because it interferes less with ropes and wet timber than her usual coat.",
+          "The hands tear the blue suede jacket away during the underwater struggle.",
+          "The attack activates her childhood fear of drowning. Fury releases her blue flame, and the fire catches and burns the drowned hands even beneath the water.",
+          "After breaking the surface, Lynleit's palm meets resistance. She brings a knee and then both boots onto the same yielding layer until she stands above the river.",
+          "The drowned hands reach upward from the darkness but cannot pass through the surface layer beneath Lynleit's feet.",
+          "A pale girl emerges wearing a dress made from dead fish. Fishing line sews her eyes shut.",
+          {
+            "text": "The girl's tilted head and failure to pursue suggest bewilderment at Lynleit standing on the water.",
+            "status": "inferred"
+          },
+          "Kyrien is present as Lynleit's concealed unofficial asset rather than an acknowledged MSF officer.",
+          "The force in the river separates Kyrien from the official team and drives him toward the quarantined park side of the river.",
+          "Kyrien reaches the park bank, enters the trees, and observes Lynleit's confrontation on the river from inside the quarantine.",
+          "Only Kyrien witnesses Lynleit walking on water.",
+          "Lynleit tests each step across the yielding surface and backs toward the park bank while the girl remains still.",
+          "Kyrien is too careful to acknowledge what he saw and feigns innocence convincingly.",
+          "Lynleit reaches the park side of the river without the jacket, where Kyrien is waiting among the trees.",
+          "They remain inside the night park, drenched and struggling to catch their breath.",
+          "They sit with their backs pressed together to share body heat while they recover.",
+          "Sitting back to back, Lynleit notices Kyrien hold his breath. She recognizes the tell from their card games.",
+          "Lynleit indirectly asks whether Kyrien saw anything strange during the escape.",
+          "Kyrien answers with the empty boats and the attack, without mentioning Lynleit standing on the water.",
+          {
+            "text": "Kyrien's evasive answer protects Lynleit's secret without an order from her.",
+            "status": "inferred"
+          }
+        ],
+        "openQuestions": [
+          "What lasting evidence or change, if any, does the encounter leave in the river?",
+          "What intelligence survives the failed operation beyond the officers' separate accounts?",
+          "Does the submerged blue flame leave a lasting injury on the Drowned Choir or only force the hands to release Lynleit?"
+        ],
+        "continuityBefore": "The hilltop agreement gives Drake and Sherie access to a small loyal MSF team without granting them control of the agency. Their first request is a limited investigation of apparently unmanned river shipments, with contraband still the leading material explanation.",
+        "continuityAfter": "Felix, Reiner, Maren, and Ivo carry an account of impossible resistance from the city bank but no shared sight of its cause. Kyrien observes the river from the quarantined trees, and Lynleit later joins him on the park bank without the blue suede jacket. Their back-to-back recovery combines the physical awareness established during the failed watches with a mutual silence around what he witnessed. Lynleit later complains about the lost jacket. Much later, after Fionn's murder, the hotel-room refuge deepens that physical trust into emotional reliance.",
+        "chapterSlug": "the-empty-boats-beneath-the-bridge",
+        "updated": "2026-09-19",
+        "id": "v3",
+        "label": "v3 · Current",
+        "chapterVersion": "v2"
       }
-    ]
+    ],
+    "chapterVersion": "v2"
   },
   {
     "slug": "the-park-unit-is-lost",
@@ -1488,8 +1747,8 @@
     ],
     "known": [
       "Hiyu and Yulia are university students in their mid-twenties who study criminology.",
-      "Yulia is a classical ISTJ and the top student in their class, with meticulous command of detail and criminological protocol.",
-      "Hiyu is an ENTP whose personal investigations rely on intuitive threads, improvised methods, and rapid hypothesis generation.",
+      "Yulia is the top student in their class, with meticulous command of detail and criminological protocol.",
+      "Hiyu pursues intuitive connections, improvises methods, and rapidly generates competing explanations.",
       "Without knowing that magic exists, Hiyu suspects it is involved in the disappearances.",
       "Yulia enters partly to prove him wrong and partly to prevent him from facing the danger alone."
     ],
@@ -1499,9 +1758,118 @@
       "What lasting evidence, injury, or change in their relationship follows the trespass?"
     ],
     "continuityBefore": "The widening disappearance case gives Hiyu enough fragments to form an impossible but directionally correct theory. Yulia rejects the conclusion but refuses to let him test it alone.",
-    "continuityAfter": "Their evidence connects two civilian students to the larger institutional response. Hiyu correctly suspects magic but still lacks any complete knowledge of it.",
+    "continuityAfter": "Hiyu's suspicion of magic is correct, but what they discover in the park and how they survive remain unknown.",
     "chapterSlug": null,
-    "updated": "2026-09-05"
+    "updated": "2026-09-19",
+    "versions": [
+      {
+        "slug": "students-beyond-the-cordon",
+        "code": "MOM-010",
+        "title": "Beyond the Cordon",
+        "status": "Scene seed",
+        "placementStatus": "Phase confirmed, exact timing open",
+        "timelinePhase": "the-quarantine",
+        "timelineLabel": "The Quarantine",
+        "sequence": 2,
+        "sceneType": "Civilian trespass",
+        "thread": "The Vilen quarantine",
+        "location": "The quarantined park in Vilen",
+        "summary": "Hiyu enters the quarantined park to test his impossible suspicion that magic is involved in the disappearances. Yulia goes with him to prove the theory wrong and keep him alive.",
+        "purpose": "Hiyu's theory takes him and Yulia into a danger neither understands.",
+        "characters": [
+          {
+            "name": "Hiyu",
+            "slug": "hiyu"
+          },
+          {
+            "name": "Yulia",
+            "slug": "yulia"
+          }
+        ],
+        "characterAnchors": [
+          {
+            "slug": "hiyu",
+            "beat": "Beyond the Cordon"
+          },
+          {
+            "slug": "yulia",
+            "beat": "Dragged into the Park"
+          }
+        ],
+        "known": [
+          "Hiyu and Yulia are university students in their mid-twenties who study criminology.",
+          "Yulia is a classical ISTJ and the top student in their class, with meticulous command of detail and criminological protocol.",
+          "Hiyu is an ENTP whose personal investigations rely on intuitive threads, improvised methods, and rapid hypothesis generation.",
+          "Without knowing that magic exists, Hiyu suspects it is involved in the disappearances.",
+          "Yulia enters partly to prove him wrong and partly to prevent him from facing the danger alone."
+        ],
+        "openQuestions": [
+          "How do they bypass the cordon?",
+          "What do they find, and how do they survive or escape?",
+          "What lasting evidence, injury, or change in their relationship follows the trespass?"
+        ],
+        "continuityBefore": "The widening disappearance case gives Hiyu enough fragments to form an impossible but directionally correct theory. Yulia rejects the conclusion but refuses to let him test it alone.",
+        "continuityAfter": "Their evidence connects two civilian students to the larger institutional response. Hiyu correctly suspects magic but still lacks any complete knowledge of it.",
+        "chapterSlug": null,
+        "updated": "2026-09-05",
+        "id": "v1",
+        "label": "v1 · Archived"
+      },
+      {
+        "slug": "students-beyond-the-cordon",
+        "code": "MOM-010",
+        "title": "Beyond the Cordon",
+        "status": "Scene seed",
+        "placementStatus": "Phase confirmed, exact timing open",
+        "timelinePhase": "the-quarantine",
+        "timelineLabel": "The Quarantine",
+        "sequence": 2,
+        "sceneType": "Civilian trespass",
+        "thread": "The Vilen quarantine",
+        "location": "The quarantined park in Vilen",
+        "summary": "Hiyu enters the quarantined park to test his impossible suspicion that magic is involved in the disappearances. Yulia goes with him to prove the theory wrong and keep him alive.",
+        "purpose": "Hiyu's theory takes him and Yulia into a danger neither understands.",
+        "characters": [
+          {
+            "name": "Hiyu",
+            "slug": "hiyu"
+          },
+          {
+            "name": "Yulia",
+            "slug": "yulia"
+          }
+        ],
+        "characterAnchors": [
+          {
+            "slug": "hiyu",
+            "beat": "Beyond the Cordon"
+          },
+          {
+            "slug": "yulia",
+            "beat": "Dragged into the Park"
+          }
+        ],
+        "known": [
+          "Hiyu and Yulia are university students in their mid-twenties who study criminology.",
+          "Yulia is the top student in their class, with meticulous command of detail and criminological protocol.",
+          "Hiyu pursues intuitive connections, improvises methods, and rapidly generates competing explanations.",
+          "Without knowing that magic exists, Hiyu suspects it is involved in the disappearances.",
+          "Yulia enters partly to prove him wrong and partly to prevent him from facing the danger alone."
+        ],
+        "openQuestions": [
+          "How do they bypass the cordon?",
+          "What do they find, and how do they survive or escape?",
+          "What lasting evidence, injury, or change in their relationship follows the trespass?"
+        ],
+        "continuityBefore": "The widening disappearance case gives Hiyu enough fragments to form an impossible but directionally correct theory. Yulia rejects the conclusion but refuses to let him test it alone.",
+        "continuityAfter": "Hiyu's suspicion of magic is correct, but what they discover in the park and how they survive remain unknown.",
+        "chapterSlug": null,
+        "updated": "2026-09-19",
+        "id": "v2",
+        "label": "v2 · Current"
+      }
+    ],
+    "defaultVersion": "v2"
   },
   {
     "slug": "shelter-after-the-accusation",
@@ -1888,20 +2256,23 @@
       }
     ],
     "known": [
-      "The Nameless Street is an urban myth in the old town of central Vilen.",
-      "Under unknown conditions, a lost visitor may enter it alone.",
+      "Lynleit and Felix walk through Vilen after lunch.",
+      "Lynleit abruptly finds herself alone on an unfamiliar street.",
       "Its buildings and routes form a labyrinth that does not obey the surrounding city.",
-      "The warning attached to the myth is not to follow anyone encountered there, because those who do may never return to ordinary streets.",
-      "Days before Fionn's murder, Lynleit is walking with Felix after a work lunch when she abruptly finds herself alone, dizzy, unsteady, and suffering a severe headache.",
+      "Her attempts to retrace her route lead her through more unfamiliar streets.",
+      "Lynleit becomes dizzy and unsteady, with a severe headache.",
       "A little girl carrying a red balloon appears, loses it, and runs away crying.",
       "Lynleit catches the balloon by its thread and follows the girl's cries so she can return it.",
       "The girl eventually stands beside a broken fence above an abrupt drop, looking down at the body of a dead boy.",
       "Lynleit releases the balloon in shock. The girl smiles and pushes her from the ledge.",
       "Before reaching the ground, Lynleit wakes on a bench in the ordinary city center while Felix fans her face with a piece of paper after her apparent faint.",
-      "Whether the street is a place, an illusion, or another kind of Holumn remains unresolved.",
-      "When Lynleit later sees Fionn's body below the hill at the family house, the memory of the boy stupefies her and gives Helena leverage to accuse her of pushing Fionn.",
+      "Felix describes her falling silent, reaching the bench, and collapsing. He has not seen the street she describes.",
       {
-        "text": "Felix does not explain why he accepts Lynleit's implausible account without laughing, leaving his response to be read through their long friendship.",
+        "text": "The crying girl's smile and push suggest that her distress was a lure.",
+        "status": "inferred"
+      },
+      {
+        "text": "Felix stops teasing and waits for Lynleit to speak. His response suggests that he takes her distress seriously without understanding its cause.",
         "status": "inferred"
       }
     ],
@@ -1909,13 +2280,181 @@
       "What conditions admit a visitor to the Nameless Street, and why does it take Lynleit on this day?",
       "Are the girl and boy inhabitants, repeated roles, former victims, or images produced by the street?",
       "Does the fall release Lynleit, or does another interruption return her to the bench?",
-      "Does the street anticipate Fionn's death, draw from Lynleit's future, or leave a pattern that later events happen to reactivate?",
-      "What does Felix observe between Lynleit's last ordinary step and her collapse?"
+      "Does the street anticipate Fionn's death, draw from Lynleit's future, or leave a pattern that later events happen to reactivate?"
     ],
-    "continuityBefore": "Lynleit is already watching Helena study her family, but Fionn remains alive and the danger has not yet broken into an open accusation.",
+    "continuityBefore": "The Nameless Street is an urban myth in Vilen, with a warning not to follow anyone encountered there. Lynleit's encounter occurs days before Fionn's death. She is already watching Helena study her family, but the danger has not yet broken into an open accusation.",
     "continuityAfter": "Several days later Fionn is found below the hill at the Vilen family house. Lynleit's involuntary recognition of the dead boy gives Helena a true emotional reaction that can be assigned a false cause.",
     "chapterSlug": "the-nameless-street",
-    "updated": "2026-09-05"
+    "updated": "2026-09-19",
+    "versions": [
+      {
+        "slug": "the-nameless-street",
+        "code": "MOM-014",
+        "title": "The Nameless Street",
+        "status": "Key foreshadowing scene",
+        "placementStatus": "Days before Fionn's death confirmed",
+        "timelinePhase": "divided-attention",
+        "timelineLabel": "Divided Attention",
+        "sequence": 1,
+        "sceneType": "Holumn encounter",
+        "thread": "The framing of Lynleit",
+        "location": "Vilen old town and an untraceable street",
+        "summary": "During a casual walk after lunch with Felix, Lynleit enters a deserted labyrinthine street, follows a crying girl with a red balloon, sees a dead boy below a broken fence, and is pushed from the same ledge before waking on an ordinary city bench.",
+        "purpose": "Lynleit returns with a memory of a dead boy that later resurfaces when she finds Fionn.",
+        "characters": [
+          {
+            "name": "Lynleit",
+            "slug": "lynleit"
+          },
+          {
+            "name": "Felix",
+            "slug": "felix"
+          },
+          {
+            "name": "Fionn",
+            "slug": "fionn"
+          },
+          {
+            "name": "Helena",
+            "slug": "helena"
+          }
+        ],
+        "characterAnchors": [
+          {
+            "slug": "lynleit",
+            "beat": "The Heir Apparent"
+          },
+          {
+            "slug": "felix",
+            "beat": "Friend and Bodyguard"
+          },
+          {
+            "slug": "fionn",
+            "beat": "The Inheritance after Death"
+          },
+          {
+            "slug": "helena",
+            "beat": "The Opening"
+          }
+        ],
+        "known": [
+          "The Nameless Street is an urban myth in the old town of central Vilen.",
+          "Under unknown conditions, a lost visitor may enter it alone.",
+          "Its buildings and routes form a labyrinth that does not obey the surrounding city.",
+          "The warning attached to the myth is not to follow anyone encountered there, because those who do may never return to ordinary streets.",
+          "Days before Fionn's murder, Lynleit is walking with Felix after a work lunch when she abruptly finds herself alone, dizzy, unsteady, and suffering a severe headache.",
+          "A little girl carrying a red balloon appears, loses it, and runs away crying.",
+          "Lynleit catches the balloon by its thread and follows the girl's cries so she can return it.",
+          "The girl eventually stands beside a broken fence above an abrupt drop, looking down at the body of a dead boy.",
+          "Lynleit releases the balloon in shock. The girl smiles and pushes her from the ledge.",
+          "Before reaching the ground, Lynleit wakes on a bench in the ordinary city center while Felix fans her face with a piece of paper after her apparent faint.",
+          "Whether the street is a place, an illusion, or another kind of Holumn remains unresolved.",
+          "When Lynleit later sees Fionn's body below the hill at the family house, the memory of the boy stupefies her and gives Helena leverage to accuse her of pushing Fionn.",
+          {
+            "text": "Felix does not explain why he accepts Lynleit's implausible account without laughing, leaving his response to be read through their long friendship.",
+            "status": "inferred"
+          }
+        ],
+        "openQuestions": [
+          "What conditions admit a visitor to the Nameless Street, and why does it take Lynleit on this day?",
+          "Are the girl and boy inhabitants, repeated roles, former victims, or images produced by the street?",
+          "Does the fall release Lynleit, or does another interruption return her to the bench?",
+          "Does the street anticipate Fionn's death, draw from Lynleit's future, or leave a pattern that later events happen to reactivate?",
+          "What does Felix observe between Lynleit's last ordinary step and her collapse?"
+        ],
+        "continuityBefore": "Lynleit is already watching Helena study her family, but Fionn remains alive and the danger has not yet broken into an open accusation.",
+        "continuityAfter": "Several days later Fionn is found below the hill at the Vilen family house. Lynleit's involuntary recognition of the dead boy gives Helena a true emotional reaction that can be assigned a false cause.",
+        "chapterSlug": "the-nameless-street",
+        "updated": "2026-09-05",
+        "id": "v1",
+        "label": "v1 · Archived"
+      },
+      {
+        "slug": "the-nameless-street",
+        "code": "MOM-014",
+        "title": "The Nameless Street",
+        "status": "Key foreshadowing scene",
+        "placementStatus": "Days before Fionn's death confirmed",
+        "timelinePhase": "divided-attention",
+        "timelineLabel": "Divided Attention",
+        "sequence": 1,
+        "sceneType": "Holumn encounter",
+        "thread": "The framing of Lynleit",
+        "location": "Vilen old town and an untraceable street",
+        "summary": "During a casual walk after lunch with Felix, Lynleit enters a deserted labyrinthine street, follows a crying girl with a red balloon, sees a dead boy below a broken fence, and is pushed from the same ledge before waking on an ordinary city bench.",
+        "purpose": "Lynleit returns with a memory of a dead boy that later resurfaces when she finds Fionn.",
+        "characters": [
+          {
+            "name": "Lynleit",
+            "slug": "lynleit"
+          },
+          {
+            "name": "Felix",
+            "slug": "felix"
+          },
+          {
+            "name": "Fionn",
+            "slug": "fionn"
+          },
+          {
+            "name": "Helena",
+            "slug": "helena"
+          }
+        ],
+        "characterAnchors": [
+          {
+            "slug": "lynleit",
+            "beat": "The Heir Apparent"
+          },
+          {
+            "slug": "felix",
+            "beat": "Friend and Bodyguard"
+          },
+          {
+            "slug": "fionn",
+            "beat": "The Inheritance after Death"
+          },
+          {
+            "slug": "helena",
+            "beat": "The Opening"
+          }
+        ],
+        "known": [
+          "Lynleit and Felix walk through Vilen after lunch.",
+          "Lynleit abruptly finds herself alone on an unfamiliar street.",
+          "Its buildings and routes form a labyrinth that does not obey the surrounding city.",
+          "Her attempts to retrace her route lead her through more unfamiliar streets.",
+          "Lynleit becomes dizzy and unsteady, with a severe headache.",
+          "A little girl carrying a red balloon appears, loses it, and runs away crying.",
+          "Lynleit catches the balloon by its thread and follows the girl's cries so she can return it.",
+          "The girl eventually stands beside a broken fence above an abrupt drop, looking down at the body of a dead boy.",
+          "Lynleit releases the balloon in shock. The girl smiles and pushes her from the ledge.",
+          "Before reaching the ground, Lynleit wakes on a bench in the ordinary city center while Felix fans her face with a piece of paper after her apparent faint.",
+          "Felix describes her falling silent, reaching the bench, and collapsing. He has not seen the street she describes.",
+          {
+            "text": "The crying girl's smile and push suggest that her distress was a lure.",
+            "status": "inferred"
+          },
+          {
+            "text": "Felix stops teasing and waits for Lynleit to speak. His response suggests that he takes her distress seriously without understanding its cause.",
+            "status": "inferred"
+          }
+        ],
+        "openQuestions": [
+          "What conditions admit a visitor to the Nameless Street, and why does it take Lynleit on this day?",
+          "Are the girl and boy inhabitants, repeated roles, former victims, or images produced by the street?",
+          "Does the fall release Lynleit, or does another interruption return her to the bench?",
+          "Does the street anticipate Fionn's death, draw from Lynleit's future, or leave a pattern that later events happen to reactivate?"
+        ],
+        "continuityBefore": "The Nameless Street is an urban myth in Vilen, with a warning not to follow anyone encountered there. Lynleit's encounter occurs days before Fionn's death. She is already watching Helena study her family, but the danger has not yet broken into an open accusation.",
+        "continuityAfter": "Several days later Fionn is found below the hill at the Vilen family house. Lynleit's involuntary recognition of the dead boy gives Helena a true emotional reaction that can be assigned a false cause.",
+        "chapterSlug": "the-nameless-street",
+        "updated": "2026-09-19",
+        "id": "v2",
+        "label": "v2 · Current"
+      }
+    ],
+    "defaultVersion": "v2"
   },
   {
     "slug": "mikhail-discovers-the-breach",
@@ -2119,12 +2658,137 @@
     "openQuestions": [
       "Which operation or immediate danger prompts Lynleit to ask the question?",
       "How does Lynleit respond to an answer that removes her from Kyrien's stated reason for staying?",
-      "Does Kyrien understand at this point that attachment has become part of the battle he keeps choosing?"
+      "What does Kyrien understand about his own motives at this point?"
     ],
     "continuityBefore": "Kyrien has repeatedly accepted danger beside Lynleit, but rescue, coercion, and operational necessity do not fully explain why he keeps returning.",
-    "continuityAfter": "Lynleit can rely on Kyrien without mistaking his involvement for obedience or romance. His later free choice to remain after her authority fails confirms that the answer was not an excuse.",
+    "continuityAfter": "Kyrien's persistence gives Lynleit practical help while exposing the competitive impulse behind his willingness to take risks. The exchange does not settle how much personal attachment has entered that motive.",
     "chapterSlug": null,
-    "updated": "2026-09-05"
+    "updated": "2026-09-19",
+    "versions": [
+      {
+        "slug": "because-theres-a-battle-to-be-fought",
+        "code": "MOM-017",
+        "title": "Because There's a Battle to Be Fought",
+        "status": "Character exchange",
+        "placementStatus": "Arc 1 confirmed, exact operation unresolved",
+        "timelinePhase": "clear-her-name",
+        "timelineLabel": "Clear Her Name",
+        "sequence": 2.5,
+        "sceneType": "Private operational exchange",
+        "thread": "Kyrien's reason for remaining",
+        "location": "Unspecified",
+        "summary": "Lynleit asks Kyrien why he continues to help her and risk his life when no reward awaits him. He answers immediately: \"Because there's a battle to be fought.\"",
+        "purpose": "Lynleit wants to spare Kyrien needless danger. He considers the fight sufficient reason to go.",
+        "characters": [
+          {
+            "name": "Lynleit",
+            "slug": "lynleit"
+          },
+          {
+            "name": "Kyrien",
+            "slug": "kyrien"
+          }
+        ],
+        "characterAnchors": [
+          {
+            "slug": "lynleit",
+            "beat": "The Battle as Reward"
+          },
+          {
+            "slug": "kyrien",
+            "beat": "The Battle as Reward"
+          }
+        ],
+        "known": [
+          "Lynleit is bewildered by Kyrien's willingness to keep helping her and entering danger when no reward has been promised.",
+          "She does not want to place him in danger without necessity.",
+          "Kyrien answers bluntly and without hesitation: \"Because there's a battle to be fought.\"",
+          "For Kyrien, the existence of a battle is itself a reason to enter it.",
+          "The impulse belongs to the same childish competitive streak that makes him want to win every game.",
+          {
+            "text": "Kyrien does not say that he is fighting for Lynleit, leaving the reader to judge how much of his persistence is self-directed and how much attachment has entered a motive he still describes as combat.",
+            "status": "inferred"
+          },
+          {
+            "text": "His need to prove his worth may be directed toward his own standards, the memory of his father, or both.",
+            "status": "inferred"
+          }
+        ],
+        "openQuestions": [
+          "Which operation or immediate danger prompts Lynleit to ask the question?",
+          "How does Lynleit respond to an answer that removes her from Kyrien's stated reason for staying?",
+          "Does Kyrien understand at this point that attachment has become part of the battle he keeps choosing?"
+        ],
+        "continuityBefore": "Kyrien has repeatedly accepted danger beside Lynleit, but rescue, coercion, and operational necessity do not fully explain why he keeps returning.",
+        "continuityAfter": "Lynleit can rely on Kyrien without mistaking his involvement for obedience or romance. His later free choice to remain after her authority fails confirms that the answer was not an excuse.",
+        "chapterSlug": null,
+        "updated": "2026-09-05",
+        "id": "v1",
+        "label": "v1 · Archived"
+      },
+      {
+        "slug": "because-theres-a-battle-to-be-fought",
+        "code": "MOM-017",
+        "title": "Because There's a Battle to Be Fought",
+        "status": "Character exchange",
+        "placementStatus": "Arc 1 confirmed, exact operation unresolved",
+        "timelinePhase": "clear-her-name",
+        "timelineLabel": "Clear Her Name",
+        "sequence": 2.5,
+        "sceneType": "Private operational exchange",
+        "thread": "Kyrien's reason for remaining",
+        "location": "Unspecified",
+        "summary": "Lynleit asks Kyrien why he continues to help her and risk his life when no reward awaits him. He answers immediately: \"Because there's a battle to be fought.\"",
+        "purpose": "Lynleit wants to spare Kyrien needless danger. He considers the fight sufficient reason to go.",
+        "characters": [
+          {
+            "name": "Lynleit",
+            "slug": "lynleit"
+          },
+          {
+            "name": "Kyrien",
+            "slug": "kyrien"
+          }
+        ],
+        "characterAnchors": [
+          {
+            "slug": "lynleit",
+            "beat": "The Battle as Reward"
+          },
+          {
+            "slug": "kyrien",
+            "beat": "The Battle as Reward"
+          }
+        ],
+        "known": [
+          "Lynleit is bewildered by Kyrien's willingness to keep helping her and entering danger when no reward has been promised.",
+          "She does not want to place him in danger without necessity.",
+          "Kyrien answers bluntly and without hesitation: \"Because there's a battle to be fought.\"",
+          "For Kyrien, the existence of a battle is itself a reason to enter it.",
+          "The impulse belongs to the same childish competitive streak that makes him want to win every game.",
+          {
+            "text": "Kyrien does not say that he is fighting for Lynleit, leaving the reader to judge how much of his persistence is self-directed and how much attachment has entered a motive he still describes as combat.",
+            "status": "inferred"
+          },
+          {
+            "text": "His need to prove his worth may be directed toward his own standards, the memory of his father, or both.",
+            "status": "inferred"
+          }
+        ],
+        "openQuestions": [
+          "Which operation or immediate danger prompts Lynleit to ask the question?",
+          "How does Lynleit respond to an answer that removes her from Kyrien's stated reason for staying?",
+          "What does Kyrien understand about his own motives at this point?"
+        ],
+        "continuityBefore": "Kyrien has repeatedly accepted danger beside Lynleit, but rescue, coercion, and operational necessity do not fully explain why he keeps returning.",
+        "continuityAfter": "Kyrien's persistence gives Lynleit practical help while exposing the competitive impulse behind his willingness to take risks. The exchange does not settle how much personal attachment has entered that motive.",
+        "chapterSlug": null,
+        "updated": "2026-09-19",
+        "id": "v2",
+        "label": "v2 · Current"
+      }
+    ],
+    "defaultVersion": "v2"
   },
   {
     "slug": "terrors-inside-the-academy",
@@ -2198,11 +2862,174 @@
       "Which event forces Natalia to intervene personally?",
       "How are the Academy crisis and the Cardiff venture divided across their parallel chapters?"
     ],
-    "continuityBefore": "Myka already relies on Natalia for ordinary academic advice and personal reassurance. Natalia asks her former favourite student Lynleit for help shortly before Lynleit leaves for Cardiff.",
+    "continuityBefore": "Myka already relies on Natalia for ordinary academic advice and personal reassurance. Natalia asks her former student Lynleit for help shortly before Lynleit leaves for Cardiff.",
     "continuityAfter": "Surviving the Academy crisis contributes to the knowledge and strength with which Myka later graduates at the top of her class. Her first experience with Kyrien and MSF gives her a personal reason to join the agency later.",
     "chapterSlug": null,
     "parallelWith": "father-mikhails-foreign-venture",
-    "updated": "2026-09-05"
+    "updated": "2026-09-19",
+    "versions": [
+      {
+        "slug": "terrors-inside-the-academy",
+        "code": "MOM-018",
+        "title": "Terrors Inside the Academy",
+        "status": "Academy crisis",
+        "placementStatus": "Arc 1 placement and concurrency confirmed, exact chapter sequence unresolved",
+        "timelinePhase": "divided-attention",
+        "timelineLabel": "Divided Attention",
+        "sequence": 1,
+        "sceneType": "Undercover intervention",
+        "thread": "Myka's Academy ordeal",
+        "location": "Magi Academy",
+        "summary": "While Lynleit is dispatched to Cardiff, she answers Natalia's request by sending Kyrien into the Magi Academy as Myka's undercover helper. The danger exceeds Lynleit's estimate and forces Natalia to intervene personally.",
+        "purpose": "Kyrien protects Myka until the escalating danger forces Natalia to intervene.",
+        "characters": [
+          {
+            "name": "Myka",
+            "slug": "myka"
+          },
+          {
+            "name": "Natalia",
+            "slug": "natalia"
+          },
+          {
+            "name": "Lynleit",
+            "slug": "lynleit"
+          },
+          {
+            "name": "Kyrien",
+            "slug": "kyrien"
+          }
+        ],
+        "characterAnchors": [
+          {
+            "slug": "myka",
+            "beat": "Terrors inside the Academy"
+          },
+          {
+            "slug": "natalia",
+            "beat": "Myka's Academy Crisis"
+          },
+          {
+            "slug": "lynleit",
+            "beat": "Academy Intervention"
+          },
+          {
+            "slug": "kyrien",
+            "beat": "Undercover at the Academy"
+          }
+        ],
+        "known": [
+          "Myka encounters terrors inside the Magi Academy.",
+          "She relies on Natalia for rescue, advice, and support.",
+          "Natalia asks Lynleit to help Myka.",
+          "Natalia was Lynleit's favourite teacher during Lynleit's Magi Academy years.",
+          "Lynleit cannot intervene personally because the Magiarchy and Church have dispatched her to Cardiff to assist Father Mikhail.",
+          "Lynleit sends Kyrien into the Academy as a substitute undercover helper.",
+          "Lynleit understates the threat and expects the assignment to help Kyrien understand the Magi world.",
+          "Kyrien enters the operation as a non-Magus working inside a Magus institution.",
+          "The danger Kyrien and Myka encounter exceeds Lynleit's estimate.",
+          "Kyrien relies on conventional field skills and communications with Felix and Reiner to keep Myka safe.",
+          "Natalia is forced to intervene personally.",
+          "This is Myka's first exposure to Kyrien and MSF.",
+          "The experience contributes to Myka's later decision to join MSF after graduation."
+        ],
+        "openQuestions": [
+          "What terrors does Myka encounter, and why can the Academy not resolve them through its own hierarchy?",
+          "What cover, objective, and practical access allow Kyrien to operate inside the Academy?",
+          "How does Kyrien communicate with Felix and Reiner without exposing the operation?",
+          "Which event forces Natalia to intervene personally?",
+          "How are the Academy crisis and the Cardiff venture divided across their parallel chapters?"
+        ],
+        "continuityBefore": "Myka already relies on Natalia for ordinary academic advice and personal reassurance. Natalia asks her former favourite student Lynleit for help shortly before Lynleit leaves for Cardiff.",
+        "continuityAfter": "Surviving the Academy crisis contributes to the knowledge and strength with which Myka later graduates at the top of her class. Her first experience with Kyrien and MSF gives her a personal reason to join the agency later.",
+        "chapterSlug": null,
+        "parallelWith": "father-mikhails-foreign-venture",
+        "updated": "2026-09-05",
+        "id": "v1",
+        "label": "v1 · Archived"
+      },
+      {
+        "slug": "terrors-inside-the-academy",
+        "code": "MOM-018",
+        "title": "Terrors Inside the Academy",
+        "status": "Academy crisis",
+        "placementStatus": "Arc 1 placement and concurrency confirmed, exact chapter sequence unresolved",
+        "timelinePhase": "divided-attention",
+        "timelineLabel": "Divided Attention",
+        "sequence": 1,
+        "sceneType": "Undercover intervention",
+        "thread": "Myka's Academy ordeal",
+        "location": "Magi Academy",
+        "summary": "While Lynleit is dispatched to Cardiff, she answers Natalia's request by sending Kyrien into the Magi Academy as Myka's undercover helper. The danger exceeds Lynleit's estimate and forces Natalia to intervene personally.",
+        "purpose": "Kyrien protects Myka until the escalating danger forces Natalia to intervene.",
+        "characters": [
+          {
+            "name": "Myka",
+            "slug": "myka"
+          },
+          {
+            "name": "Natalia",
+            "slug": "natalia"
+          },
+          {
+            "name": "Lynleit",
+            "slug": "lynleit"
+          },
+          {
+            "name": "Kyrien",
+            "slug": "kyrien"
+          }
+        ],
+        "characterAnchors": [
+          {
+            "slug": "myka",
+            "beat": "Terrors inside the Academy"
+          },
+          {
+            "slug": "natalia",
+            "beat": "Myka's Academy Crisis"
+          },
+          {
+            "slug": "lynleit",
+            "beat": "Academy Intervention"
+          },
+          {
+            "slug": "kyrien",
+            "beat": "Undercover at the Academy"
+          }
+        ],
+        "known": [
+          "Myka encounters terrors inside the Magi Academy.",
+          "She relies on Natalia for rescue, advice, and support.",
+          "Natalia asks Lynleit to help Myka.",
+          "Natalia was Lynleit's favourite teacher during Lynleit's Magi Academy years.",
+          "Lynleit cannot intervene personally because the Magiarchy and Church have dispatched her to Cardiff to assist Father Mikhail.",
+          "Lynleit sends Kyrien into the Academy as a substitute undercover helper.",
+          "Lynleit understates the threat and expects the assignment to help Kyrien understand the Magi world.",
+          "Kyrien enters the operation as a non-Magus working inside a Magus institution.",
+          "The danger Kyrien and Myka encounter exceeds Lynleit's estimate.",
+          "Kyrien relies on conventional field skills and communications with Felix and Reiner to keep Myka safe.",
+          "Natalia is forced to intervene personally.",
+          "This is Myka's first exposure to Kyrien and MSF.",
+          "The experience contributes to Myka's later decision to join MSF after graduation."
+        ],
+        "openQuestions": [
+          "What terrors does Myka encounter, and why can the Academy not resolve them through its own hierarchy?",
+          "What cover, objective, and practical access allow Kyrien to operate inside the Academy?",
+          "How does Kyrien communicate with Felix and Reiner without exposing the operation?",
+          "Which event forces Natalia to intervene personally?",
+          "How are the Academy crisis and the Cardiff venture divided across their parallel chapters?"
+        ],
+        "continuityBefore": "Myka already relies on Natalia for ordinary academic advice and personal reassurance. Natalia asks her former student Lynleit for help shortly before Lynleit leaves for Cardiff.",
+        "continuityAfter": "Surviving the Academy crisis contributes to the knowledge and strength with which Myka later graduates at the top of her class. Her first experience with Kyrien and MSF gives her a personal reason to join the agency later.",
+        "chapterSlug": null,
+        "parallelWith": "father-mikhails-foreign-venture",
+        "updated": "2026-09-19",
+        "id": "v2",
+        "label": "v2 · Current"
+      }
+    ],
+    "defaultVersion": "v2"
   },
   {
     "slug": "father-mikhails-foreign-venture",
@@ -2311,9 +3138,116 @@
       "What role does Natalia play in deciding whether Myka should join MSF?"
     ],
     "continuityBefore": "Myka's Academy ordeal forces her to apply knowledge under danger and brings Kyrien into her life as an undercover helper.",
-    "continuityAfter": "Myka enters the post-Spill agency as a trained Magus while Kyrien directs it without magecraft of his own.",
+    "continuityAfter": "Myka joins MSF as a trained Magus. Whether this happens after Lynleit's disappearance, during Kyrien's directorate, remains uncertain.",
     "chapterSlug": null,
-    "updated": "2026-09-05"
+    "updated": "2026-09-19",
+    "versions": [
+      {
+        "slug": "myka-enters-msf",
+        "code": "MOM-019",
+        "title": "Myka Enters MSF",
+        "status": "Later-life transition",
+        "placementStatus": "Outcome confirmed, Arc 2 placement provisional",
+        "timelinePhase": "kyriens-burden",
+        "timelineLabel": "Kyrien's Burden",
+        "sequence": 1,
+        "sceneType": "Recruitment",
+        "thread": "MSF after Lynleit's disappearance",
+        "location": "Unspecified MSF office",
+        "summary": "After surviving the Academy crisis and graduating at the top of her class, Myka is recruited by MSF as a strong Magus.",
+        "purpose": "Myka joins the agency she first encountered during the Academy crisis.",
+        "characters": [
+          {
+            "name": "Myka",
+            "slug": "myka"
+          },
+          {
+            "name": "Kyrien",
+            "slug": "kyrien"
+          }
+        ],
+        "characterAnchors": [
+          {
+            "slug": "myka",
+            "beat": "Recruited by MSF"
+          },
+          {
+            "slug": "kyrien",
+            "beat": "The Director without Magecraft"
+          }
+        ],
+        "known": [
+          "Myka survives the dangers she encounters inside the Magi Academy.",
+          "She graduates at the top of her class.",
+          "MSF later recruits her as a strong Magus."
+        ],
+        "openQuestions": [
+          "Does Kyrien personally recruit Myka after becoming interim director?",
+          "Which Academy disciplines make Myka a strong Magus, and what can she not yet do despite graduating first?",
+          "How does her earlier undercover contact with Kyrien affect their later working relationship?",
+          "What role does Natalia play in deciding whether Myka should join MSF?"
+        ],
+        "continuityBefore": "Myka's Academy ordeal forces her to apply knowledge under danger and brings Kyrien into her life as an undercover helper.",
+        "continuityAfter": "Myka enters the post-Spill agency as a trained Magus while Kyrien directs it without magecraft of his own.",
+        "chapterSlug": null,
+        "updated": "2026-09-05",
+        "id": "v1",
+        "label": "v1 · Archived"
+      },
+      {
+        "slug": "myka-enters-msf",
+        "code": "MOM-019",
+        "title": "Myka Enters MSF",
+        "status": "Later-life transition",
+        "placementStatus": "Outcome confirmed, Arc 2 placement provisional",
+        "timelinePhase": "kyriens-burden",
+        "timelineLabel": "Kyrien's Burden",
+        "sequence": 1,
+        "sceneType": "Recruitment",
+        "thread": "MSF after Lynleit's disappearance",
+        "location": "Unspecified MSF office",
+        "summary": "After surviving the Academy crisis and graduating at the top of her class, Myka is recruited by MSF as a strong Magus.",
+        "purpose": "Myka joins the agency she first encountered during the Academy crisis.",
+        "characters": [
+          {
+            "name": "Myka",
+            "slug": "myka"
+          },
+          {
+            "name": "Kyrien",
+            "slug": "kyrien"
+          }
+        ],
+        "characterAnchors": [
+          {
+            "slug": "myka",
+            "beat": "Recruited by MSF"
+          },
+          {
+            "slug": "kyrien",
+            "beat": "The Director without Magecraft"
+          }
+        ],
+        "known": [
+          "Myka survives the dangers she encounters inside the Magi Academy.",
+          "She graduates at the top of her class.",
+          "MSF later recruits her as a strong Magus."
+        ],
+        "openQuestions": [
+          "Does Kyrien personally recruit Myka after becoming interim director?",
+          "Which Academy disciplines make Myka a strong Magus, and what can she not yet do despite graduating first?",
+          "How does her earlier undercover contact with Kyrien affect their later working relationship?",
+          "What role does Natalia play in deciding whether Myka should join MSF?"
+        ],
+        "continuityBefore": "Myka's Academy ordeal forces her to apply knowledge under danger and brings Kyrien into her life as an undercover helper.",
+        "continuityAfter": "Myka joins MSF as a trained Magus. Whether this happens after Lynleit's disappearance, during Kyrien's directorate, remains uncertain.",
+        "chapterSlug": null,
+        "updated": "2026-09-19",
+        "id": "v2",
+        "label": "v2 · Current"
+      }
+    ],
+    "defaultVersion": "v2"
   },
   {
     "slug": "fionn-is-eliminated",
@@ -2337,6 +3271,10 @@
       {
         "name": "Helena",
         "slug": "helena"
+      },
+      {
+        "name": "Lynleit",
+        "slug": "lynleit"
       }
     ],
     "characterAnchors": [
@@ -2347,6 +3285,10 @@
       {
         "slug": "helena",
         "beat": "The Opening"
+      },
+      {
+        "slug": "lynleit",
+        "beat": "The Accusation"
       }
     ],
     "known": [
@@ -2375,7 +3317,146 @@
     "continuityBefore": "Manufactured political strife isolates Fionn and divides his attention while the Spill develops. Days earlier, the Nameless Street gives Lynleit an unexplained memory of a boy lying dead below a fall.",
     "continuityAfter": "Helena converts the vacancy into control of MSF, makes Lynleit the official suspect, and directs a hunt for her arrest while the true authorship remains hidden.",
     "chapterSlug": null,
-    "updated": "2026-09-05"
+    "updated": "2026-09-19",
+    "versions": [
+      {
+        "slug": "fionn-is-eliminated",
+        "code": "MOM-007",
+        "title": "The Unresolved Assassination",
+        "status": "Key event",
+        "placementStatus": "Chronology confirmed, authorship unresolved",
+        "timelinePhase": "the-takeover",
+        "timelineLabel": "The Takeover",
+        "sequence": 1,
+        "sceneType": "Political assassination",
+        "thread": "The hidden conflict",
+        "location": "The hillside grounds of the Vilen family house",
+        "summary": "Fionn is found dead below the hill at the Vilen family house after several incompatible agendas converge without one actor controlling the whole outcome. Helena knowingly opens one part of the path, then uses his death and Lynleit's stunned response to seize MSF and frame her.",
+        "purpose": "Fionn's death connects the hidden conflict to Helena's visible takeover. The unresolved conspiracy contains several motives, partial knowledge, and accidental cooperation, with no single clean chain of command.",
+        "characters": [
+          {
+            "name": "Fionn",
+            "slug": "fionn"
+          },
+          {
+            "name": "Helena",
+            "slug": "helena"
+          }
+        ],
+        "characterAnchors": [
+          {
+            "slug": "fionn",
+            "beat": "The Inheritance after Death"
+          },
+          {
+            "slug": "helena",
+            "beat": "The Opening"
+          }
+        ],
+        "known": [
+          "Fionn is successfully assassinated.",
+          "His body is found below the hill at the Vilen family house, but whether the fall kills him, follows another attack, or is staged remains unresolved.",
+          "Lynleit's recent memory of the dead boy on the Nameless Street stupefies her when she sees Fionn below the hill.",
+          "Helena assigns a false meaning to Lynleit's genuine shock and accuses her of pushing Fionn.",
+          "His death creates the opening Helena uses to take control of MSF.",
+          "Helena frames Lynleit for the assassination and directs a hunt for her arrest.",
+          "Helena knowingly enables one part of the pressure against Fionn without understanding everything that follows.",
+          "No single participant controls the complete assassination outcome.",
+          "Several incompatible agendas accidentally cooperate to produce Fionn's death.",
+          "The broader conflict already includes pressure from criminal Magi, foreign Magiarchates, and church actors.",
+          "The unresolved issue is how each participant's intended outcome and partial action converge into the assassination."
+        ],
+        "openQuestions": [
+          "What outcome do the criminal Magi seek around Fionn?",
+          "What separate outcome does a rival foreign Magiarchate seek?",
+          "What separate outcome does a church faction seek?",
+          "Which actions accidentally cooperate even though their authors do not share one objective?",
+          "Did one faction covertly or illegally infiltrate another and use its people or resources without authorization?",
+          "Does any participant's apparent affiliation conceal who truly directed them?",
+          "Which door does Helena knowingly open, what does she expect to happen, and what follows beyond her knowledge?",
+          "Does the fall kill Fionn, conceal another cause of death, or stage the physical evidence used against Lynleit?"
+        ],
+        "continuityBefore": "Manufactured political strife isolates Fionn and divides his attention while the Spill develops. Days earlier, the Nameless Street gives Lynleit an unexplained memory of a boy lying dead below a fall.",
+        "continuityAfter": "Helena converts the vacancy into control of MSF, makes Lynleit the official suspect, and directs a hunt for her arrest while the true authorship remains hidden.",
+        "chapterSlug": null,
+        "updated": "2026-09-05",
+        "id": "v1",
+        "label": "v1 · Archived"
+      },
+      {
+        "slug": "fionn-is-eliminated",
+        "code": "MOM-007",
+        "title": "The Unresolved Assassination",
+        "status": "Key event",
+        "placementStatus": "Chronology confirmed, authorship unresolved",
+        "timelinePhase": "the-takeover",
+        "timelineLabel": "The Takeover",
+        "sequence": 1,
+        "sceneType": "Political assassination",
+        "thread": "The hidden conflict",
+        "location": "The hillside grounds of the Vilen family house",
+        "summary": "Fionn is found dead below the hill at the Vilen family house after several incompatible agendas converge without one actor controlling the whole outcome. Helena knowingly opens one part of the path, then uses his death and Lynleit's stunned response to seize MSF and frame her.",
+        "purpose": "Fionn's death connects the hidden conflict to Helena's visible takeover. The unresolved conspiracy contains several motives, partial knowledge, and accidental cooperation, with no single clean chain of command.",
+        "characters": [
+          {
+            "name": "Fionn",
+            "slug": "fionn"
+          },
+          {
+            "name": "Helena",
+            "slug": "helena"
+          },
+          {
+            "name": "Lynleit",
+            "slug": "lynleit"
+          }
+        ],
+        "characterAnchors": [
+          {
+            "slug": "fionn",
+            "beat": "The Inheritance after Death"
+          },
+          {
+            "slug": "helena",
+            "beat": "The Opening"
+          },
+          {
+            "slug": "lynleit",
+            "beat": "The Accusation"
+          }
+        ],
+        "known": [
+          "Fionn is successfully assassinated.",
+          "His body is found below the hill at the Vilen family house, but whether the fall kills him, follows another attack, or is staged remains unresolved.",
+          "Lynleit's recent memory of the dead boy on the Nameless Street stupefies her when she sees Fionn below the hill.",
+          "Helena assigns a false meaning to Lynleit's genuine shock and accuses her of pushing Fionn.",
+          "His death creates the opening Helena uses to take control of MSF.",
+          "Helena frames Lynleit for the assassination and directs a hunt for her arrest.",
+          "Helena knowingly enables one part of the pressure against Fionn without understanding everything that follows.",
+          "No single participant controls the complete assassination outcome.",
+          "Several incompatible agendas accidentally cooperate to produce Fionn's death.",
+          "The broader conflict already includes pressure from criminal Magi, foreign Magiarchates, and church actors.",
+          "The unresolved issue is how each participant's intended outcome and partial action converge into the assassination."
+        ],
+        "openQuestions": [
+          "What outcome do the criminal Magi seek around Fionn?",
+          "What separate outcome does a rival foreign Magiarchate seek?",
+          "What separate outcome does a church faction seek?",
+          "Which actions accidentally cooperate even though their authors do not share one objective?",
+          "Did one faction covertly or illegally infiltrate another and use its people or resources without authorization?",
+          "Does any participant's apparent affiliation conceal who truly directed them?",
+          "Which door does Helena knowingly open, what does she expect to happen, and what follows beyond her knowledge?",
+          "Does the fall kill Fionn, conceal another cause of death, or stage the physical evidence used against Lynleit?"
+        ],
+        "continuityBefore": "Manufactured political strife isolates Fionn and divides his attention while the Spill develops. Days earlier, the Nameless Street gives Lynleit an unexplained memory of a boy lying dead below a fall.",
+        "continuityAfter": "Helena converts the vacancy into control of MSF, makes Lynleit the official suspect, and directs a hunt for her arrest while the true authorship remains hidden.",
+        "chapterSlug": null,
+        "updated": "2026-09-19",
+        "id": "v2",
+        "label": "v2 · Current"
+      }
+    ],
+    "defaultVersion": "v2"
   },
   {
     "slug": "doom-has-an-address",
@@ -2454,7 +3535,7 @@
         "text": "Lynleit's repeated handling of her cup, formal defence, and threat of a canonically permissible reprisal suggest that his mock praise has struck personally.",
         "status": "inferred"
       },
-      "Mikhail calls her response an observation rather than a diagnosis and says that physical intimacy is only a possible treatment, not a guaranteed cure.",
+      "Mikhail calls his interpretation of her behavior an observation rather than a diagnosis and says that physical intimacy is only a possible treatment, not a guaranteed cure.",
       {
         "text": "Mikhail leaving Lynleit's averted gaze unremarked suggests a moment of restraint when his teasing reaches something personally difficult.",
         "status": "inferred"
@@ -2779,7 +3860,7 @@
             "text": "Lynleit's repeated handling of her cup, formal defence, and threat of a canonically permissible reprisal suggest that his mock praise has struck personally.",
             "status": "inferred"
           },
-          "Mikhail calls her response an observation rather than a diagnosis and says that physical intimacy is only a possible treatment, not a guaranteed cure.",
+          "Mikhail calls his interpretation of her behavior an observation rather than a diagnosis and says that physical intimacy is only a possible treatment, not a guaranteed cure.",
           {
             "text": "Mikhail leaving Lynleit's averted gaze unremarked suggests a moment of restraint when his teasing reaches something personally difficult.",
             "status": "inferred"

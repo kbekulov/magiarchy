@@ -138,8 +138,8 @@
     "number": "Chapter 05",
     "title": "The Empty Boats Beneath the Bridge",
     "status": "Working draft",
-    "file": "the-empty-boats-beneath-the-bridge.md",
-    "updated": "2026-09-05",
+    "file": "the-empty-boats-beneath-the-bridge-v2.md",
+    "updated": "2026-09-19",
     "description": "A covert MSF inspection of apparently unmanned river shipments collapses when the Drowned Choir attacks from below, leaving Kyrien to witness Lynleit's forbidden water walking from the quarantined bank.",
     "characters": [
       "Lynleit",
@@ -169,16 +169,117 @@
       "The drowned hands tear away Lynleit's blue suede jacket and drag her underwater until fury releases blue flame through the river.",
       "The river surface holds beneath Lynleit's palm, knee, and boots, allowing her to stand above hands that cannot cross it.",
       {
-        "text": "The pale girl's silence and tilted head imply that Lynleit's survival contradicts the rule by which the Drowned Choir takes people.",
+        "text": "The pale girl's tilted head and failure to pursue suggest bewilderment at Lynleit standing on the water.",
         "status": "inferred"
       },
       {
-        "text": "Kyrien's careful denial and continued silence imply that he has chosen to protect Lynleit's forbidden ability before either of them openly trusts the other.",
+        "text": "Kyrien's evasive answer and continued silence suggest a decision to protect Lynleit's forbidden ability without being asked.",
         "status": "inferred"
       },
       "Lynleit crosses the held surface to the park bank and later sits back to back with Kyrien for warmth among the trees."
     ],
-    "contentKind": "scene"
+    "contentKind": "scene",
+    "versions": [
+      {
+        "slug": "the-empty-boats-beneath-the-bridge",
+        "number": "Chapter 05",
+        "title": "The Empty Boats Beneath the Bridge",
+        "status": "Working draft",
+        "file": "the-empty-boats-beneath-the-bridge.md",
+        "updated": "2026-09-05",
+        "description": "A covert MSF inspection of apparently unmanned river shipments collapses when the Drowned Choir attacks from below, leaving Kyrien to witness Lynleit's forbidden water walking from the quarantined bank.",
+        "characters": [
+          "Lynleit",
+          "Kyrien",
+          "Felix",
+          "Reiner",
+          "Sherie",
+          "Drake"
+        ],
+        "timelinePhase": "unknowing-convergence",
+        "timelineLabel": "Unknowing Convergence",
+        "events": [
+          "Sherie and Drake ask Lynleit to assemble a loyal team and inspect recurring night traffic on the Vilen river.",
+          "Several surveillance nights produce no boats while small oddities emerge from the quarantined park.",
+          "After the failed watches, Lynleit repeatedly challenges Kyrien to short card games and they learn each other's physical tells.",
+          {
+            "text": "Their unfinished rematches and attention to breath, hands, and pauses imply an attraction neither character names or allows to displace the operation.",
+            "status": "inferred"
+          },
+          "Felix freezes the bridge cameras and remains on the city bank as fallback while Reiner leads Lynleit, Kyrien, Maren, and Ivo down onto the boats.",
+          "When a boat shifts, Kyrien briefly steadies Lynleit near the concealed Sparrow holster and releases her before she asks.",
+          {
+            "text": "The empty boats, drowned hands, and pale girl imply that the contraband crews were taken before the interception.",
+            "status": "inferred"
+          },
+          "Reiner, Maren, and Ivo reach the city bank with Felix's fallback line while Kyrien is forced toward the quarantined park bank.",
+          "The drowned hands tear away Lynleit's blue suede jacket and drag her underwater until fury releases blue flame through the river.",
+          "The river surface holds beneath Lynleit's palm, knee, and boots, allowing her to stand above hands that cannot cross it.",
+          {
+            "text": "The pale girl's silence and tilted head imply that Lynleit's survival contradicts the rule by which the Drowned Choir takes people.",
+            "status": "inferred"
+          },
+          {
+            "text": "Kyrien's careful denial and continued silence imply that he has chosen to protect Lynleit's forbidden ability before either of them openly trusts the other.",
+            "status": "inferred"
+          },
+          "Lynleit crosses the held surface to the park bank and later sits back to back with Kyrien for warmth among the trees."
+        ],
+        "contentKind": "scene",
+        "id": "v1",
+        "label": "v1 · Archived"
+      },
+      {
+        "slug": "the-empty-boats-beneath-the-bridge",
+        "number": "Chapter 05",
+        "title": "The Empty Boats Beneath the Bridge",
+        "status": "Working draft",
+        "file": "the-empty-boats-beneath-the-bridge-v2.md",
+        "updated": "2026-09-19",
+        "description": "A covert MSF inspection of apparently unmanned river shipments collapses when the Drowned Choir attacks from below, leaving Kyrien to witness Lynleit's forbidden water walking from the quarantined bank.",
+        "characters": [
+          "Lynleit",
+          "Kyrien",
+          "Felix",
+          "Reiner",
+          "Sherie",
+          "Drake"
+        ],
+        "timelinePhase": "unknowing-convergence",
+        "timelineLabel": "Unknowing Convergence",
+        "events": [
+          "Sherie and Drake ask Lynleit to assemble a loyal team and inspect recurring night traffic on the Vilen river.",
+          "Several surveillance nights produce no boats while small oddities emerge from the quarantined park.",
+          "After the failed watches, Lynleit repeatedly challenges Kyrien to short card games and they learn each other's physical tells.",
+          {
+            "text": "Their unfinished rematches and attention to breath, hands, and pauses imply an attraction neither character names or allows to displace the operation.",
+            "status": "inferred"
+          },
+          "Felix freezes the bridge cameras and remains on the city bank as fallback while Reiner leads Lynleit, Kyrien, Maren, and Ivo down onto the boats.",
+          "When a boat shifts, Kyrien briefly steadies Lynleit near the concealed Sparrow holster and releases her before she asks.",
+          {
+            "text": "The empty boats, drowned hands, and pale girl imply that the contraband crews were taken before the interception.",
+            "status": "inferred"
+          },
+          "Reiner, Maren, and Ivo reach the city bank with Felix's fallback line while Kyrien is forced toward the quarantined park bank.",
+          "The drowned hands tear away Lynleit's blue suede jacket and drag her underwater until fury releases blue flame through the river.",
+          "The river surface holds beneath Lynleit's palm, knee, and boots, allowing her to stand above hands that cannot cross it.",
+          {
+            "text": "The pale girl's tilted head and failure to pursue suggest bewilderment at Lynleit standing on the water.",
+            "status": "inferred"
+          },
+          {
+            "text": "Kyrien's evasive answer and continued silence suggest a decision to protect Lynleit's forbidden ability without being asked.",
+            "status": "inferred"
+          },
+          "Lynleit crosses the held surface to the park bank and later sits back to back with Kyrien for warmth among the trees."
+        ],
+        "contentKind": "scene",
+        "id": "v2",
+        "label": "v2 · Current"
+      }
+    ],
+    "defaultVersion": "v2"
   },
   {
     "slug": "the-nameless-street",

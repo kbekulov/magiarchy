@@ -45,3 +45,10 @@ The author’s MBTI discussion supplies confirmed habits of attention and physic
 ## Consistency cleanup: 12 September 2026
 
 Hidden World Foundation v2 now follows Lester’s established contradictory ontology; v1 preserves the superseded origin possibilities as history. The current river incident and testimony record only the boundary observed beneath water-walking Lynleit and no longer assert a speaking choir. Its mechanism remains a question. After the Failed Attempt v2 removes the duplicate entrance and uses the already-established MSF transfer clause; its two linked Moments retain matching v1 and v2 access. These are reconciliations with existing canon, not new origin or reveal decisions.
+
+
+## Content reconciliation: 19 September 2026
+
+The river Chapter's v2 keeps the city bank visible through gaps in the park trees; v1's contradictory sightline remains historical. Its v3 Moment and the Nameless Street v2 separate scene evidence from later events and archive explanations. The related river panels now link explicitly to those revised records. The advisers' uncertain treatment proposal and the later narrated cure remain distinct. Doom v7 is unchanged apart from a Moment wording correction that attributes Mikhail's observation to him, not to Lynleit's response.
+
+Natalia's preference among her former students, Myka's recruitment date, and the Director's House second-floor layout are unresolved choices, not established facts. Current records no longer assert answers. Ash's domestic scene does not establish a supernatural omen. Earlier Moment and document revisions preserve the superseded wording.

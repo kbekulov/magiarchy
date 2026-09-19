@@ -166,6 +166,8 @@ Ancient pagan cults and religions, explicitly including the Cult of Inanna, have
 
 ## Selected Chapter canon
 
+The 19 September whole-content review is recorded in `docs/content-audit-2026-09-19.md`. The river Chapter uses v2 for a sightline correction, with Moment v3 and explicitly matching panel links; its original prose remains available as v1. The Nameless Street Moment uses v2 to keep background lore and Fionn's later death outside its scene-evidence list. These revisions change neither the encounter outcomes nor their reveal timing.
+
 The current chronology follows the author's 8 September clarification: Fionn's death precedes the nonsexual hotel refuge, and Doom belongs in the later part of Arc 1's second half. `late-arc-one` is an approximate subplot grouping, not a newly fixed main-plot phase. Months separate Doom from The Bench under the Lamp. The park encounter, later reciprocal exploration, first intercourse, established intimacy, and pregnancy are distinct milestones. The main story does not openly reveal the son; Arc 2 does, and Kyrien does not know at its opening.
 
 Arc 0 remains a tentative prequel outline centered on Fionn, his household, and the becoming of MSF. `docs/arc-zero-development.md` owns its candidate scenes and limits, with a sparse shared phase and Moment. Do not promote its optional teenage meeting, family details, or flask origins into canon. Do not move Lynleit's childhood bereavement into high school or introduce Kyrien to magic early.

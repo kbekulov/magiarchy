@@ -108,7 +108,7 @@
         "Squared trigger guard with an undercut and a short accessory rail",
         "Extended magazine base that completes the firing grip without giving the pistol Crow-length proportions"
       ],
-      "variantNote": "Ghost Comp is the Rook's compensated premium configuration, occupying the same conceptual place that a Spectre Comp-style model holds within a micro-compact family.",
+      "variantNote": "Ghost Comp is the Rook's compensated premium configuration.",
       "finishNote": "The smallest modern polymer-frame 9×19 mm pistol on the Narvean market. Its size and chambering support discreet defensive carry, while its brass details and elaborate serrations make it more individual than a standard service gun.",
       "nameMeaning": "A compact, practical, intelligent bird with more confidence and modern utility than a Sparrow.",
       "characterLinks": [
@@ -201,7 +201,7 @@
       "caliber": "9×19 mm",
       "role": "Luxury long-slide pistol",
       "familyPosition": "Luxury flagship of the Ren Arms pistol family",
-      "designSummary": "The Swan is a luxury long-slide, exposed-hammer pistol built around a 2011 and 1911-derived silhouette. A silver slide and upper frame sit over a black grip module, while the brass-colored barrel is visible through a row of elongated side windows and at the muzzle. The extended dust cover, long sight radius, skeletonized controls, flared beavertail, and sculpted frame keep the large pistol narrow and deliberate rather than bulky.",
+      "designSummary": "The Swan is a luxury long-slide pistol with an exposed hammer. A silver slide and upper frame sit over a black grip module, while the brass-colored barrel is visible through a row of elongated side windows and at the muzzle. The extended dust cover, long sight radius, skeletonized controls, flared beavertail, and sculpted frame give it a long, narrow profile.",
       "characteristics": [
         "Long brushed-silver slide with a row of elongated forward windows",
         "Brass-colored barrel visible through the slide and at the muzzle",
@@ -220,5 +220,6 @@
         "SIG GTO"
       ]
     }
-  ]
+  ],
+  "updated": "2026-09-19"
 }

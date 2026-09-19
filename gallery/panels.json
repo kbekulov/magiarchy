@@ -9,11 +9,11 @@
     ],
     "moment": {
       "slug": "the-boat-beneath-the-bridge",
-      "version": "v2"
+      "version": "v3"
     },
     "chapter": {
       "slug": "the-empty-boats-beneath-the-bridge",
-      "version": "v1"
+      "version": "v2"
     },
     "cover": "panel-2",
     "beats": [

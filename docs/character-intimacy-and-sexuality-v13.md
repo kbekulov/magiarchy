@@ -165,7 +165,7 @@ No encounter or particular sexual behavior is established.
 
 ### With Hiyu
 
-A possible scene puts them over the same evidence, close enough that Yulia notices their proximity before Hiyu does. This is a proposed staging choice, not a completed encounter. Her impatience can include attraction without making her objections false.
+They argue over the same evidence and remain close while trying to prove each other wrong. Yulia is likely to notice that proximity before Hiyu does. Her impatience can include attraction without making her objections false.
 
 The approved development direction gives her an earlier awareness of the attachment. Hiyu continues treating the exchange as an argument about the investigation.
 

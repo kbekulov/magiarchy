@@ -1,5 +1,25 @@
 [
   {
+    "slug": "content-audit-2026-09-19",
+    "title": "Content Audit: 19 September 2026",
+    "topic": "Archive Audit",
+    "description": "Prose, character, chronology, and scene-evidence corrections, with the remaining story decisions identified.",
+    "file": "content-audit-2026-09-19.md",
+    "updated": "2026-09-19",
+    "speakers": [
+      "Author's Desk"
+    ],
+    "defaultVersion": "v1",
+    "versions": [
+      {
+        "id": "v1",
+        "label": "v1 · Current",
+        "file": "content-audit-2026-09-19.md",
+        "updated": "2026-09-19"
+      }
+    ]
+  },
+  {
     "slug": "thematic-audit-2026-09-19",
     "title": "Thematic Integration Audit: 19 September 2026",
     "topic": "Archive Audit",
@@ -263,12 +283,12 @@
     "title": "Events, Witnesses, and Reveals",
     "topic": "Reader Knowledge",
     "file": "reader-knowledge.md",
-    "updated": "2026-09-14",
-    "description": "Event, reader, and character knowledge, including the unplaced Bone Archive incident.",
+    "updated": "2026-09-19",
+    "description": "Scene evidence, later consequences, and uncertain treatment distinguished across the river, Nameless Street, and Doom.",
     "speakers": [
       "Author's Desk"
     ],
-    "defaultVersion": "v2",
+    "defaultVersion": "v3",
     "versions": [
       {
         "id": "v1",
@@ -278,10 +298,17 @@
       },
       {
         "id": "v2",
-        "label": "v2 · Current",
-        "file": "reader-knowledge.md",
+        "label": "v2 · Archived",
+        "file": "reader-knowledge-v2.md",
         "updated": "2026-09-14",
         "description": "Event, reader, and character knowledge, including the unplaced Bone Archive incident."
+      },
+      {
+        "id": "v3",
+        "label": "v3 · Current",
+        "file": "reader-knowledge.md",
+        "updated": "2026-09-19",
+        "description": "Scene evidence, later consequences, and uncertain treatment distinguished across the river, Nameless Street, and Doom."
       }
     ]
   },
@@ -374,12 +401,12 @@
     "title": "Character Behaviour Audit",
     "topic": "Writer's Character Reference",
     "file": "character-behavior-audit.md",
-    "updated": "2026-09-13",
-    "description": "Version-scoped church notes for recurring flirting, Lynleit’s irritation, and Reiner’s restraint.",
+    "updated": "2026-09-19",
+    "description": "Author approval governs advisory notes; current paragraph guidance remains separate from scene facts.",
     "speakers": [
       "Character Archive"
     ],
-    "defaultVersion": "v10",
+    "defaultVersion": "v11",
     "versions": [
       {
         "id": "v1",
@@ -455,10 +482,18 @@
       },
       {
         "id": "v10",
-        "label": "v10 · Current",
-        "file": "character-behavior-audit.md",
+        "label": "v10 · Archived",
+        "file": "character-behavior-audit-v10.md",
         "updated": "2026-09-13",
         "description": "Version-scoped church notes for recurring flirting, Lynleit’s irritation, and Reiner’s restraint.",
+        "behaviorFile": "character-behavior-notes-v10.json"
+      },
+      {
+        "id": "v11",
+        "label": "v11 · Current",
+        "file": "character-behavior-audit.md",
+        "updated": "2026-09-19",
+        "description": "Author approval governs advisory notes; current paragraph guidance remains separate from scene facts.",
         "behaviorFile": "character-behavior-notes.json"
       }
     ]
@@ -469,11 +504,11 @@
     "topic": "Writer's Character Reference",
     "file": "character-intimacy-and-sexuality.md",
     "updated": "2026-09-19",
-    "description": "Intimacy's limited narrative scale, its character-specific consequences, and confirmed relationship directions without speculative sexual styles.",
+    "description": "Confirmed relationship directions separated from proposed staging, while preserving intimacy's limited narrative scale.",
     "speakers": [
       "Character Archive"
     ],
-    "defaultVersion": "v13",
+    "defaultVersion": "v14",
     "versions": [
       {
         "id": "v1",
@@ -573,10 +608,18 @@
       },
       {
         "id": "v13",
-        "label": "v13 · Current",
-        "file": "character-intimacy-and-sexuality.md",
+        "label": "v13 · Archived",
+        "file": "character-intimacy-and-sexuality-v13.md",
         "updated": "2026-09-19",
         "description": "Intimacy's limited narrative scale, its character-specific consequences, and confirmed relationship directions without speculative sexual styles.",
+        "tensionFile": "sexual-tension-notes-v13.json"
+      },
+      {
+        "id": "v14",
+        "label": "v14 · Current",
+        "file": "character-intimacy-and-sexuality.md",
+        "updated": "2026-09-19",
+        "description": "Confirmed relationship directions separated from proposed staging, while preserving intimacy's limited narrative scale.",
         "tensionFile": "sexual-tension-notes.json"
       }
     ]
@@ -587,7 +630,7 @@
     "topic": "Holumn Archive",
     "file": "holumn-incidents-and-testimonies.md",
     "updated": "2026-09-19",
-    "description": "Bone Archive evidence, costly recovery, surviving bargains, and unresolved institutional readings.",
+    "description": "Incident evidence separated from proposed institutional readings, with river boundaries, missing-person outcomes, and ordinary medicine kept distinct.",
     "speakers": [
       "Victims and Incident Witnesses",
       "Archive"
@@ -630,13 +673,20 @@
       },
       {
         "id": "v6",
-        "label": "v6 · Current",
-        "file": "holumn-incidents-and-testimonies.md",
+        "label": "v6 · Archived",
+        "file": "holumn-incidents-and-testimonies-v6.md",
         "updated": "2026-09-19",
         "description": "Holumn encounters and institutional readings, with plainer introductory prose. Witness testimony and evidence boundaries are unchanged."
+      },
+      {
+        "id": "v7",
+        "label": "v7 · Current",
+        "file": "holumn-incidents-and-testimonies.md",
+        "updated": "2026-09-19",
+        "description": "Incident evidence separated from proposed institutional readings, with river boundaries, missing-person outcomes, and ordinary medicine kept distinct."
       }
     ],
-    "defaultVersion": "v6"
+    "defaultVersion": "v7"
   },
   {
     "slug": "questions-to-be-answered",

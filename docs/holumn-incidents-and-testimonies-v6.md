@@ -4,8 +4,6 @@ These accounts describe Holumn encounters, what victims remember, and how instit
 
 Forms and countermeasures are collected in [Holumns](../holumns.html).
 
-The institutional readings below compare plausible interpretations of the same evidence. They are not transcripts of completed investigations unless a source explicitly establishes one. A stated Holumn property belongs to the archive; it is not automatically known to a witness or institution.
-
 ## What an incident can establish
 
 Being taken describes a Holumn-specific state, not travel to one common destination. Death is one possibility. Other effects can involve madness, contradiction, disrupted time, altered reality, compromised physicality, damaged or transformed memory, and changes to identity or causality. Location, chronology, life, death, and physical continuity may cease to behave as ordinary categories.
@@ -113,7 +111,7 @@ The purchaser becomes increasingly compelled to solve the puzzle. Once the final
 ### Institutional readings
 
 **Police and government**
-A missing-person case with a market purchase among the owner's possessions. Whether investigators connect the puzzle to the disappearance is unknown.
+A cluster of missing-person cases associated with an unverified market purchase.
 
 **Magi and special envoys**
 The object carries a condition. The disappearance occurs when the puzzle is completed.
@@ -138,7 +136,7 @@ The officers are trained swimmers, but unseen hands make the short escape to sho
 
 When Lynleit breaks the surface, her palm meets resistance. She brings one knee and then both boots onto the same yielding layer. The river bows beneath her weight without admitting her body. Once she stands, the hands cannot cross the surface beneath her feet.
 
-The girl then rises before Lynleit. She remains silent and tilts her head. The gesture suggests bewilderment at Lynleit standing on the water, but does not explain the girl's rule or why she does not pursue her. Only Kyrien witnesses Lynleit standing on the river and keeps the ability secret afterward. Lynleit later reaches him on the park side, where they recover among the trees. Their return to the others is not yet recorded.
+The girl then rises before Lynleit. She remains silent and tilts her head because a person standing on water falls outside the rule by which she takes victims. Lynleit is equally bewildered. Only Kyrien witnesses Lynleit standing on the river and keeps the ability secret afterward. Lynleit later reaches him on the park side, where they recover among the trees before rejoining the others.
 
 ### Institutional readings
 
@@ -213,7 +211,7 @@ Lynleit attempts intimacy with Kyrien without telling him about the proposed tre
 ### Institutional readings
 
 **Police and government**
-To an observer unaware of magic, both people appear ill and exhausted. No ordinary medical examination is established in the chapter. The attempts to suppress the curse belong to the Magi and Church consultations, not to magic-aware physicians.
+The visible case consists of two people developing the same rapid decline after an operation. Medicine can document the symptoms and treatment failures but cannot explain why intervention in one patient is reversed through the other.
 
 **Magi and special envoys**
 The Holumn stores its death in the identity of its killer. A joint killing gives the curse two coordinates. It can be broken by death or by a transformation severe enough that the original identities can no longer be recognized as the complete answer to the act.

@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-14",
+  "updated": "2026-09-19",
   "principles": [
     "Holumn is a category of manifestation, not a biological species.",
     "A Holumn may be a physical creature, a natural phenomenon, a repeating event, a disembodied will, or a curse.",
@@ -72,7 +72,10 @@
       "slug": "bone-archive",
       "title": "Bone Archive",
       "recordType": "Bodily trace and discontinuous memory",
-      "types": ["event", "curse"],
+      "types": [
+        "event",
+        "curse"
+      ],
       "summary": "The Bone Archive preserves experiences that have no place in the surviving account of a person's life. They return through memory and the body: an unexplained scar, a familiar pain, or a practiced movement its owner never learned. An officer steps aside before a shot is fired and later discovers a scar where the bullet would have entered.",
       "ordinaryReading": "Anticipation, an unnoticed old injury, and a mistaken recollection can account for separate details. The officer's escape and scar alone do not prove that a previous history existed.",
       "hiddenReading": "An experience can survive without a continuous history to support it. Whether these traces come from discarded events, imposed experiences, or another disruption of continuity remains unresolved. No physical library or keeper has been identified.",
@@ -122,7 +125,7 @@
       "summary": "A puzzle purchased at a market compels its owner to finish it. When the final piece is placed, the owner disappears and enters the missing-persons archive.",
       "ordinaryReading": "Investigators see a purchased object, a developed obsession, and a disappearance. The puzzle may be treated as an unrelated possession, a clue to voluntary flight, or an instrument used by another person.",
       "hiddenReading": "The compulsion and completion belong to the same rule. Placing the final piece completes the condition that permits the disappearance.",
-      "observedEffect": "Attention narrows into addiction. Completion is followed by permanent disappearance, while the object remains available to be found again.",
+      "observedEffect": "Attention narrows into compulsion. When the puzzle is completed, the owner disappears and has not been found. The object remains.",
       "knownWeakness": "No countermeasure is confirmed. Refusing completion appears safer than solving the object, but the strength and transfer of the compulsion remain unknown.",
       "spillContribution": "The puzzle ties a disappearance to an ordinary act: placing the final piece."
     },
@@ -170,10 +173,10 @@
       ],
       "summary": "A lost visitor may enter a deserted old street whose lanes, stairs, courtyards, and hills cannot be reconciled with the surrounding city. Following anyone encountered there may prevent the visitor from returning to ordinary streets.",
       "ordinaryReading": "Felix sees Lynleit stop responding, move toward a city bench, and faint after lunch. Dizziness, a severe headache, a dream, or a neurological episode can explain the only part of the incident another person directly observes.",
-      "hiddenReading": "The street behaves as a place-bound Holumn whose body is an impossible route and whose rule uses isolation, pursuit, and a fatal fall. Whether the girl, the boy, and the red balloon belong permanently to that rule remains unknown.",
+      "hiddenReading": "In Lynleit's encounter, impossible routes isolate her and a crying child leads her to a fall. Whether the girl, the boy, and the red balloon are permanent features of the Holumn remains unknown.",
       "observedEffect": "The visitor is separated without perceiving a threshold, becomes dizzy and disoriented, and cannot navigate the district by ordinary geometry. Lynleit follows a crying girl to a broken fence, is pushed toward a dead boy below, and returns to a city bench before impact.",
       "knownWeakness": "The urban warning instructs visitors not to follow anyone encountered on the street. It is not known whether refusing the lure guarantees escape or why Lynleit returns after following it.",
-      "spillContribution": "Lynleit cannot reconcile the street with Vilen's geography. The fall later recalls Fionn's death, but no causal connection between the two is established."
+      "spillContribution": "Lynleit cannot reconcile the street with Vilen's geography. Her memory of the dead boy returns when she later finds Fionn's body, but no causal connection between the two events is established."
     },
     {
       "id": "HI-006",
@@ -188,7 +191,7 @@
       "ordinaryReading": "Fatigue, slow healing, and persistent exhaustion appear as a physical illness to anyone unaware of the curse. The linked decline has no explanation within that account.",
       "hiddenReading": "Natalia identifies the attachment as recognition of the ego, using Jung's definition of conscious identity. A joint killing gives the curse two subjects, each capable of restoring the condition in the other while both remain recognizably the same people.",
       "observedEffect": "The subjects weaken over several weeks. Sleep ceases to restore them, injuries heal too slowly, Lynleit's magecraft becomes exhausting, and ordinary exertion eventually becomes difficult. Suppressing either attachment causes the other to restore it. The curse begins weakening the morning after Lynleit and Kyrien's incomplete attempt at intimacy and later disappears.",
-      "knownWeakness": "The curse requires exact sympathetic recognition of the ego or egos responsible for the Holumn's destruction. Biological death breaks that identity absolutely, but profound reciprocal transformation can introduce enough uncertainty to fracture the attachment without killing either subject.",
+      "knownWeakness": "The curse recognizes the egos responsible for the Holumn's destruction. The advisers identify the death of either subject as a way to release the survivor. Lynleit and Kyrien instead undergo enough reciprocal identity change to break its recognition. That outcome does not establish a reliable treatment for other subjects or curses.",
       "spillContribution": "Destroying this Holumn transfers its fatal condition to its killers. Lynleit and Kyrien survive after an incomplete attempt at intimacy changes both identities enough to break its recognition.",
       "storyLink": "story.html?chapter=doom-has-an-address"
     }
