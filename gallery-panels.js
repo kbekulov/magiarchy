@@ -33,6 +33,7 @@
     return img;
   }
   function showRecord(record) {
+    document.body.classList.add('panel-reading');
     collection.hidden = true;
     collections.hidden = true;
     $('#gallery-heading').hidden = true;
@@ -40,14 +41,17 @@
     document.title = `${record.title} - Panels - Magiarchy`;
     $('#panel-title').textContent = $('#panel-crumb').textContent = record.title;
     $('#panel-summary').textContent = record.summary;
-    $('#panel-medium').textContent = `${record.medium} · ${record.beats.length} beats · ${record.panels.length} images`;
+    $('#panel-medium').textContent = `Scene panels / ${record.medium}`;
+    $('#panel-count').textContent = `${record.beats.length} beats · ${record.panels.length} images`;
     const back = new URLSearchParams(params);
     back.delete('panels'); back.set('collection', 'panels');
     $('#panel-back').href = `gallery.html?${back}`;
     const context = $('#panel-context');
-    if (record.moment) context.append(link('Read the Moment', `moments.html?moment=${encodeURIComponent(record.moment.slug)}&version=${record.moment.version}`, 'button button-secondary'));
-    if (record.chapter) context.append(link('Read the Chapter', `story.html?chapter=${encodeURIComponent(record.chapter.slug)}&version=${record.chapter.version}`, 'button button-secondary'));
-    record.characters.forEach(slug => context.append(link(names.get(slug) || slug, `character.html?character=${encodeURIComponent(slug)}`, 'tag')));
+    if (record.chapter) context.append(link('Read Chapter →', `story.html?chapter=${encodeURIComponent(record.chapter.slug)}&version=${record.chapter.version}`, 'panel-context-link'));
+    if (record.moment) context.append(link('Explore Moment →', `moments.html?moment=${encodeURIComponent(record.moment.slug)}&version=${record.moment.version}`, 'panel-context-link'));
+    const cast = $('#panel-characters');
+    if (record.characters.length) cast.append(node('span', 'Featuring'));
+    record.characters.forEach(slug => cast.append(link(names.get(slug) || slug, `character.html?character=${encodeURIComponent(slug)}`, 'panel-character-link')));
     let imageIndex = 0;
     for (const [beatIndex, beat] of record.beats.entries()) {
       const beatPanels = record.panels.filter(panel => panel.beat === beat.id);
@@ -61,9 +65,12 @@
       const heading = node('header', null, 'panel-beat-heading');
       const title = node('h2', beat.title); title.id = `beat-${beat.id}`;
       section.setAttribute('aria-labelledby', title.id);
-      heading.append(node('span', String(beatIndex + 1).padStart(2, '0'), 'panel-beat-number'), title);
-      if (beatPanels.length > 1) heading.append(node('p', 'Alternative compositions of this beat'));
+      const beatCopy = node('div');
+      beatCopy.append(node('span', beatPanels.length > 1 ? `${beatPanels.length} alternative compositions` : 'Scene beat', 'eyebrow'), title);
+      heading.append(node('span', String(beatIndex + 1).padStart(2, '0'), 'panel-beat-number'), beatCopy);
       section.append(heading);
+      const artwork = node('div', null, 'panel-beat-artwork');
+      section.append(artwork);
       $('#panel-sequence').append(section);
       for (const panel of beatPanels) {
         const jump = link(null, `#${panel.id}`);
@@ -83,14 +90,15 @@
         original.append(img);
         const caption = node('figcaption');
         const heading = node('div');
-        heading.append(node('span', panel.composition ? `${panel.label} · Composition ${panel.composition}` : panel.label, 'eyebrow'), node('h3', panel.title));
+        heading.append(node('span', panel.composition ? `${panel.label} · Composition ${panel.composition}` : panel.label, 'eyebrow'));
+        if (panel.title !== beat.title) heading.append(node('h3', panel.title));
         const format = panel.src.split('.').pop().toUpperCase();
         const download = link(`${format} ↓ · ${(panel.bytes / 1048576).toFixed(1)} MB`, panel.src, 'source-link');
         download.download = panel.src.split('/').pop();
         download.setAttribute('aria-label', `Download original ${panel.label.toLowerCase()}, ${format}`);
         caption.append(heading, download);
         figure.append(original, caption);
-        section.append(figure);
+        artwork.append(figure);
         jump.addEventListener('click', () => { img.loading = 'eager'; figure.focus({ preventScroll: true }); });
       }
     }

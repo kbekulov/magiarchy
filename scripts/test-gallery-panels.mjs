@@ -5,7 +5,7 @@ export async function testGalleryPanels(page, origin, engine) {
   const records = JSON.parse(fs.readFileSync('gallery/panels.json', 'utf8'));
   const record = records.find(record => record.id === 'river-incident');
   const visit = async route => { await page.goto(`${origin}/${route}`); await page.waitForLoadState('networkidle'); };
-  for (const width of [390, 820, 1440]) {
+  for (const width of [320, 390, 820, 1440]) {
     await page.setViewportSize({ width, height: 900 });
     await visit('gallery.html?collection=panels');
     assert.equal(await page.locator('#gallery-collections a').count(), 3);
@@ -26,12 +26,21 @@ export async function testGalleryPanels(page, origin, engine) {
     await page.locator('.panel-card > a').first().click();
     await page.waitForLoadState('networkidle');
     assert.equal(await page.locator('.scene-panel').count(), 6);
+    assert.ok(await page.evaluate(() => document.documentElement.scrollWidth <= document.documentElement.clientWidth + 1), 'Reader must also fit beside a native scrollbar');
+    assert.equal(await page.locator('body').evaluate(el => getComputedStyle(el).minWidth), '0px');
     assert.equal(await page.locator('.panel-beat').count(), 4);
     assert.equal(await page.locator('.panel-beat').first().locator('.scene-panel').count(), 2);
     assert.equal(await page.locator('.panel-beat').last().locator('.scene-panel').count(), 2);
     assert.equal(await page.locator('#panel-jump-links a').count(), 6);
     assert.equal(await page.locator('.panel-jump-group').count(), 4);
-    assert.equal(await page.locator('#panel-jump-links').evaluate(el => getComputedStyle(el).gridTemplateColumns.split(' ').length), width === 1440 ? 4 : 2, 'Navigator uses balanced rows');
+    assert.ok(!await page.locator('#panel-index').evaluate(el => el.open), 'Sketch index is a secondary disclosure');
+    assert.ok(await page.locator('.scene-panel').first().isVisible(), 'Reading art does not depend on opening the index');
+    assert.equal(await page.locator('.panel-beat-artwork').first().evaluate(el => getComputedStyle(el).gridTemplateColumns.split(' ').length), width === 1440 ? 2 : 1, 'Alternative compositions compare on wide screens and stack on narrow ones');
+    assert.equal(await page.locator('.panel-characters a').count(), record.characters.length);
+    await page.screenshot({ path: `test-results/${engine}-panels-reader-${width}.png` });
+    await page.locator('#panel-index summary').focus();
+    await page.keyboard.press('Enter');
+    assert.ok(await page.locator('#panel-index').evaluate(el => el.open), 'Keyboard opens the sketch index');
     assert.deepEqual(await page.locator('.panel-jump-group').evaluateAll(groups => groups.map(group => group.querySelectorAll('a').length)), [2, 1, 1, 2]);
     assert.ok(await page.locator('#panel-jump-links').evaluate(el => el.scrollWidth <= el.clientWidth + 1), 'Panel navigator must wrap without horizontal scrolling');
     const thumbHeights = await page.locator('.panel-jump-preview').evaluateAll(nodes => nodes.map(el => el.getBoundingClientRect().height));
@@ -42,7 +51,7 @@ export async function testGalleryPanels(page, origin, engine) {
     const panels = await page.locator('.scene-panel-art img').evaluateAll(images => images.map(img => ({ src: img.getAttribute('src'), width: img.width, height: img.height, ratio: Number(img.getAttribute('width')) / Number(img.getAttribute('height')) })));
     assert.deepEqual(panels.map(p => p.src), record.panels.map(p => p.display));
     for (const panel of panels) assert.ok(Math.abs(panel.width / panel.height - panel.ratio) < .02, 'Scene art must not be cropped');
-    await page.screenshot({ path: `test-results/${engine}-panels-reader-${width}.png` });
+    await page.screenshot({ path: `test-results/${engine}-panels-index-${width}.png` });
     await page.locator('#panel-jump-links a').last().focus();
     await page.keyboard.press('Enter');
     assert.ok(page.url().endsWith('#panel-3b'));
@@ -68,6 +77,7 @@ export async function testGalleryPanels(page, origin, engine) {
   try {
     await touchPage.route('https://**/*', route => route.abort());
     await touchPage.goto(`${origin}/gallery.html?panels=river-incident`);
+    await touchPage.locator('#panel-index summary').tap();
     await touchPage.locator('#panel-jump-links a').last().tap();
     await touchPage.locator('#panel-3b img').evaluate(img => img.decode());
     assert.ok(touchPage.url().endsWith('#panel-3b'));
@@ -75,9 +85,9 @@ export async function testGalleryPanels(page, origin, engine) {
   } finally { await touchPage.close(); }
   const momentURL = `moments.html?moment=${record.moment.slug}&version=${record.moment.version}`;
   const chapterURL = `story.html?chapter=${record.chapter.slug}&version=${record.chapter.version}`;
-  assert.equal(await page.locator('#panel-context a').nth(0).getAttribute('href'), momentURL);
-  assert.equal(await page.locator('#panel-context a').nth(1).getAttribute('href'), chapterURL);
-  await page.locator('#panel-context a').nth(0).click(); await page.waitForLoadState('networkidle');
+  assert.equal(await page.locator('#panel-context a').nth(0).getAttribute('href'), chapterURL);
+  assert.equal(await page.locator('#panel-context a').nth(1).getAttribute('href'), momentURL);
+  await page.locator('#panel-context a').nth(1).click(); await page.waitForLoadState('networkidle');
   assert.ok(await page.locator('#moment-connection-grid a[href="gallery.html?panels=river-incident"]').isVisible());
   await visit('moments.html?moment=the-boat-beneath-the-bridge&version=v1');
   assert.equal(await page.locator('#moment-connection-grid a[href="gallery.html?panels=river-incident"]').count(), 0, 'No leaking panels into an older Moment revision');

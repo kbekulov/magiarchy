@@ -323,8 +323,14 @@
           </section>
           <section class="panel-reader" id="panel-reader" aria-labelledby="panel-title" hidden>
             <nav class="document-breadcrumbs" aria-label="Breadcrumb"><a href="gallery.html">Gallery</a><span aria-hidden="true">/</span><a href="gallery.html?collection=panels" id="panel-back">Panels</a><span aria-hidden="true">/</span><span id="panel-crumb" aria-current="page">Scene</span></nav>
-            <header class="resource-heading"><span class="doc-topic" id="panel-medium"></span><h1 id="panel-title"></h1><p id="panel-summary"></p><nav class="panel-context" id="panel-context" aria-label="Scene connections"></nav></header>
-            <nav class="panel-jump" aria-label="Jump to a sketch"><p class="eyebrow">In this scene</p><div id="panel-jump-links"></div></nav>
+            <header class="panel-heading">
+              <div class="panel-heading-copy"><p class="eyebrow" id="panel-medium"></p><h1 id="panel-title"></h1><p id="panel-summary"></p></div>
+              <div class="panel-heading-footer"><nav class="panel-context" id="panel-context" aria-label="Scene connections"></nav><nav class="panel-characters" id="panel-characters" aria-label="Characters depicted"></nav></div>
+            </header>
+            <details class="panel-jump" id="panel-index">
+              <summary><span>Browse sketches</span><span id="panel-count"></span><svg viewBox="0 0 20 20" aria-hidden="true"><path d="m5 7 5 5 5-5"/></svg></summary>
+              <nav id="panel-jump-links" aria-label="Jump to a sketch"></nav>
+            </details>
             <div class="panel-sequence" id="panel-sequence"></div>
             <a class="source-link panel-return" href="gallery.html?collection=panels">Back to Panels <span aria-hidden="true">→</span></a>
           </section>
