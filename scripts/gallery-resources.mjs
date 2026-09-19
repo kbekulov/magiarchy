@@ -32,6 +32,7 @@ export function validateResources(root, records, { built = true } = {}) {
     const sources = new Set();
     const views = new Set();
     for (const preview of record.previews) {
+      if (preview.revision !== undefined) assert.match(preview.revision, /^r[1-9]\d*$/, `${record.id}: invalid preview revision`);
       assert.ok(typeof preview.id === 'string' && /^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(preview.id) && !views.has(preview.id), `${record.id}: unique preview id required`);
       views.add(preview.id);
       const source = resourcePath(root, preview.src, true);
@@ -41,6 +42,7 @@ export function validateResources(root, records, { built = true } = {}) {
       if (built) {
         assert.ok(preview.width > 0 && preview.height > 0, `${record.id}: missing preview dimensions`);
         assert.ok(preview.thumbnail?.startsWith('media/gallery/previews/resources/') && fs.existsSync(path.join(root, preview.thumbnail)), `${record.id}: missing lightweight preview`);
+        if (preview.revision) assert.ok(preview.thumbnail.endsWith(`-${preview.revision}.webp`), `${record.id}: stale preview revision`);
       }
     }
     const files = new Set();

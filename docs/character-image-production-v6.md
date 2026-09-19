@@ -75,12 +75,6 @@ For unequal T-pose arms, compare visible shoulder, sleeve, wrist, and fingertip 
 
 Keep the approved measurements and edit regions in `gallery/t-pose-arm-corrections.json`. The preparation script reproduces corrected derivatives separately from the unmodified extractions, recenters by translation, and verifies that pixels outside the arm regions remain unchanged after that translation and background padding. Retain the template canvas and a common scale within each pair. Inspect every result, including sleeve joins, fingers, padding, and front/back consistency; check the visible fingertip spans as well as the intended coordinates. These are drawing corrections, not new canonical body measurements or a claim of 3D-model readiness.
 
-### Rear-view hands
-
-Judge hand orientation from the camera and pose, not by mirroring a front-view silhouette. In these palms-down T-poses, the rear camera sees the little-finger edge; the thumb sits on the far side and is largely occluded. Check all four extended fingers, their overlapping contours, the hidden thumb's plausible attachment, and wrist continuity. A thumb-like projection must not replace the little finger.
-
-For an explicitly requested local correction, keep the approved arm lengths and use the matching front/back references. The hand edit may be generated, but publish only the reviewed hand regions on the unchanged base. Preserve the preceding derivatives. `gallery/t-pose-hand-corrections.json` records the built-in image-generation prompts, actual references, base and patch hashes, edit rectangles, and separate outputs. `node scripts/prepare-t-pose-hands.mjs --check` verifies the final canvas, retained fingertip reach, and exact preservation of pixels outside those hand regions. Anatomical correctness still requires visual inspection.
-
 ### Review checklist
 
 Compare the result with the references before registration or publication. Check identity, proportions, silhouette, costume details, pose, and front/back consistency. Inspect hands, feet, accessories, and occluded areas for discrepancies. Treat an unexplained generated difference as something to review, not as new canon.

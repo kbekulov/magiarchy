@@ -133,10 +133,11 @@
       },
       {
         "id": "back",
-        "src": "media/gallery/resources/felix-t-pose-v1/char-felix-t-pose-v1-arm-corrected-back.png",
+        "src": "media/gallery/resources/felix-t-pose-v1/char-felix-t-pose-v1-arm-hand-corrected-back.png",
+        "revision": "r2",
         "alt": "Back T-pose of Felix with an orange ponytail, crossed black suspenders, a rolled-sleeve white shirt, dark trousers, and black shoes.",
         "caption": "v1 · Back",
-        "thumbnail": "media/gallery/previews/resources/felix-t-pose-v1-2.webp",
+        "thumbnail": "media/gallery/previews/resources/felix-t-pose-v1-2-r2.webp",
         "width": 1122,
         "height": 1402
       }
@@ -150,10 +151,10 @@
         "format": "PNG"
       },
       {
-        "path": "media/gallery/resources/felix-t-pose-v1/char-felix-t-pose-v1-arm-corrected-back.png",
-        "label": "Back reference, arm-corrected",
-        "notes": "Arm lengths balanced across matching views, 1122 × 1402 PNG.",
-        "bytes": 1154135,
+        "path": "media/gallery/resources/felix-t-pose-v1/char-felix-t-pose-v1-arm-hand-corrected-back.png",
+        "label": "Back reference, arms and hands corrected",
+        "notes": "Balanced arm lengths and corrected rear-view fingers, 1122 × 1402 PNG.",
+        "bytes": 1156811,
         "format": "PNG"
       },
       {
@@ -174,7 +175,7 @@
         "value": "1536 × 1024 px"
       }
     ],
-    "usage": "Use this version's front and back together. These views have locally corrected arm lengths and matching shoulder, wrist, and fingertip positions. Faces, torso proportions, clothing designs, and the template canvas are preserved. The original two-view sheet remains available unchanged."
+    "usage": "Use this version's front and back together. Arm lengths are balanced, and the back-view hands have the correct finger orientation. The original two-view sheet remains available unchanged."
   },
   {
     "id": "lynleit-t-pose-v1",
@@ -198,10 +199,11 @@
       },
       {
         "id": "back",
-        "src": "media/gallery/resources/lynleit-t-pose-v1/char-lynleit-arc-1-t-pose-v1-arm-corrected-back.png",
+        "src": "media/gallery/resources/lynleit-t-pose-v1/char-lynleit-arc-1-t-pose-v1-arm-hand-corrected-back.png",
+        "revision": "r2",
         "alt": "Arc 1 back T-pose of Lynleit with long dark hair falling over a blue coat, dark tights, and tall black boots.",
         "caption": "v1 · Arc 1 · Back",
-        "thumbnail": "media/gallery/previews/resources/lynleit-t-pose-v1-2.webp",
+        "thumbnail": "media/gallery/previews/resources/lynleit-t-pose-v1-2-r2.webp",
         "width": 1122,
         "height": 1402
       }
@@ -215,10 +217,10 @@
         "format": "PNG"
       },
       {
-        "path": "media/gallery/resources/lynleit-t-pose-v1/char-lynleit-arc-1-t-pose-v1-arm-corrected-back.png",
-        "label": "Back reference, arm-corrected",
-        "notes": "Arm lengths balanced across matching views, 1122 × 1402 PNG.",
-        "bytes": 1338847,
+        "path": "media/gallery/resources/lynleit-t-pose-v1/char-lynleit-arc-1-t-pose-v1-arm-hand-corrected-back.png",
+        "label": "Back reference, arms and hands corrected",
+        "notes": "Balanced arm lengths and corrected rear-view fingers, 1122 × 1402 PNG.",
+        "bytes": 1340910,
         "format": "PNG"
       },
       {
@@ -239,7 +241,7 @@
         "value": "1536 × 1024 px"
       }
     ],
-    "usage": "Use this version's front and back together. These views have locally corrected arm lengths and matching shoulder, wrist, and fingertip positions. Faces, torso proportions, clothing designs, and the template canvas are preserved. The original two-view sheet remains available unchanged."
+    "usage": "Use this version's front and back together. Arm lengths are balanced, and the back-view hands have the correct finger orientation. The original two-view sheet remains available unchanged."
   },
   {
     "id": "lynleit-t-pose-v2",
@@ -262,10 +264,11 @@
       },
       {
         "id": "back",
-        "src": "media/gallery/resources/lynleit-t-pose-v2/char-lynleit-t-pose-v2-arm-corrected-back.png",
+        "src": "media/gallery/resources/lynleit-t-pose-v2/char-lynleit-t-pose-v2-arm-hand-corrected-back.png",
+        "revision": "r2",
         "alt": "Back T-pose of Lynleit with long dark hair, a blue coat, dark tights, and tall black boots with folded cuffs.",
         "caption": "v2 · Back",
-        "thumbnail": "media/gallery/previews/resources/lynleit-t-pose-v2-2.webp",
+        "thumbnail": "media/gallery/previews/resources/lynleit-t-pose-v2-2-r2.webp",
         "width": 1122,
         "height": 1402
       }
@@ -279,10 +282,10 @@
         "format": "PNG"
       },
       {
-        "path": "media/gallery/resources/lynleit-t-pose-v2/char-lynleit-t-pose-v2-arm-corrected-back.png",
-        "label": "Back reference, arm-corrected",
-        "notes": "Arm lengths balanced across matching views, 1122 × 1402 PNG.",
-        "bytes": 1238320,
+        "path": "media/gallery/resources/lynleit-t-pose-v2/char-lynleit-t-pose-v2-arm-hand-corrected-back.png",
+        "label": "Back reference, arms and hands corrected",
+        "notes": "Balanced arm lengths and corrected rear-view fingers, 1122 × 1402 PNG.",
+        "bytes": 1240070,
         "format": "PNG"
       },
       {
@@ -303,6 +306,6 @@
         "value": "1536 × 1024 px"
       }
     ],
-    "usage": "Use this version's front and back together. These views have locally corrected arm lengths and matching shoulder, wrist, and fingertip positions. Faces, torso proportions, clothing designs, and the template canvas are preserved. The original two-view sheet remains available unchanged."
+    "usage": "Use this version's front and back together. Arm lengths are balanced, and the back-view hands have the correct finger orientation. The original two-view sheet remains available unchanged."
   }
 ]

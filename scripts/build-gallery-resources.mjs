@@ -10,7 +10,7 @@ const records = JSON.parse(fs.readFileSync(index, 'utf8'));
 validateResources(root, records, { built: false });
 for (const record of records) {
   for (const [i, preview] of record.previews.entries()) {
-    preview.thumbnail = `media/gallery/previews/resources/${record.id}-${i + 1}.webp`;
+    preview.thumbnail = `media/gallery/previews/resources/${record.id}-${i + 1}${preview.revision ? `-${preview.revision}` : ''}.webp`;
     const output = path.join(root, preview.thumbnail);
     fs.mkdirSync(path.dirname(output), { recursive: true });
     const source = path.join(root, preview.src);

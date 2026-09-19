@@ -85,11 +85,11 @@
     "topic": "Visual Production Standard",
     "file": "character-image-production.md",
     "updated": "2026-09-19",
-    "description": "Template-first production, character-specific design, template-aspect T-pose views, and separately preserved author-approved anatomy corrections.",
+    "description": "Template-first production, character-specific design, template-aspect T-poses, and localized arm and rear-view hand corrections.",
     "speakers": [
       "Author's Desk"
     ],
-    "defaultVersion": "v6",
+    "defaultVersion": "v7",
     "versions": [
       {
         "id": "v1",
@@ -128,10 +128,17 @@
       },
       {
         "id": "v6",
-        "label": "v6 · Current",
-        "file": "character-image-production.md",
+        "label": "v6 · Archived",
+        "file": "character-image-production-v6.md",
         "updated": "2026-09-19",
         "description": "Template-first production, character-specific design, template-aspect T-pose views, and separately preserved author-approved anatomy corrections."
+      },
+      {
+        "id": "v7",
+        "label": "v7 · Current",
+        "file": "character-image-production.md",
+        "updated": "2026-09-19",
+        "description": "Template-first production, character-specific design, template-aspect T-poses, and localized arm and rear-view hand corrections."
       }
     ]
   },
