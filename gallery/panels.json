@@ -140,5 +140,160 @@
         "thumbnail": "media/gallery/previews/panels/river-incident-r6-panel-7-thumbnail.webp"
       }
     ]
+  },
+  {
+    "id": "cat-incident",
+    "title": "Ash in the Family House",
+    "summary": "Lynleit follows Ash through the house and onto the roof as a storm approaches.",
+    "medium": "Pencil sketches",
+    "characters": [
+      "lynleit",
+      "ash"
+    ],
+    "moment": {
+      "slug": "the-cat-in-the-family-house",
+      "version": "v2"
+    },
+    "cover": "panel-5",
+    "beats": [
+      {
+        "id": "noticed",
+        "title": "Movement in the corridor"
+      },
+      {
+        "id": "corner",
+        "title": "Around the corner"
+      },
+      {
+        "id": "look-back",
+        "title": "Ash looks back"
+      },
+      {
+        "id": "offended",
+        "title": "A slight offence"
+      },
+      {
+        "id": "roof",
+        "title": "Onto the roof"
+      },
+      {
+        "id": "storm",
+        "title": "The approaching storm"
+      },
+      {
+        "id": "challenge",
+        "title": "The standoff"
+      },
+      {
+        "id": "table",
+        "title": "Beneath the table"
+      }
+    ],
+    "panels": [
+      {
+        "id": "panel-1",
+        "beat": "noticed",
+        "label": "Sketch 1",
+        "title": "Movement in the corridor",
+        "src": "media/gallery/panels/cat-incident/cat-incident-panel-1-sketch.png",
+        "alt": "Lynleit pauses with her hand on a door handle as Ash stands in the long corridor behind her.",
+        "width": 1536,
+        "height": 1024,
+        "bytes": 1596796,
+        "display": "media/gallery/previews/panels/cat-incident-panel-1-display.webp",
+        "thumbnail": "media/gallery/previews/panels/cat-incident-panel-1-thumbnail.webp"
+      },
+      {
+        "id": "panel-2",
+        "beat": "corner",
+        "label": "Sketch 2",
+        "title": "Around the corner",
+        "src": "media/gallery/panels/cat-incident/cat-incident-panel-2-sketch.png",
+        "alt": "Lynleit peeks around a corner while Ash passes close to the viewer, his tail raised.",
+        "width": 1536,
+        "height": 1024,
+        "bytes": 1509797,
+        "display": "media/gallery/previews/panels/cat-incident-panel-2-display.webp",
+        "thumbnail": "media/gallery/previews/panels/cat-incident-panel-2-thumbnail.webp"
+      },
+      {
+        "id": "panel-3",
+        "beat": "look-back",
+        "label": "Sketch 3",
+        "title": "Ash looks back",
+        "src": "media/gallery/panels/cat-incident/cat-incident-panel-3-sketch.png",
+        "alt": "Seen over Lynleit's shoulder, Ash looks back at her from farther along the corridor.",
+        "width": 1536,
+        "height": 1024,
+        "bytes": 1816924,
+        "display": "media/gallery/previews/panels/cat-incident-panel-3-display.webp",
+        "thumbnail": "media/gallery/previews/panels/cat-incident-panel-3-thumbnail.webp"
+      },
+      {
+        "id": "panel-4",
+        "beat": "offended",
+        "label": "Sketch 4",
+        "title": "A slight offence",
+        "src": "media/gallery/panels/cat-incident/cat-incident-panel-4-sketch.png",
+        "alt": "Close-up of Lynleit with lowered eyebrows and a tight, slightly offended expression.",
+        "width": 1672,
+        "height": 941,
+        "bytes": 1877344,
+        "display": "media/gallery/previews/panels/cat-incident-panel-4-display.webp",
+        "thumbnail": "media/gallery/previews/panels/cat-incident-panel-4-thumbnail.webp"
+      },
+      {
+        "id": "panel-5",
+        "beat": "roof",
+        "label": "Sketch 5",
+        "title": "Onto the roof",
+        "src": "media/gallery/panels/cat-incident/cat-incident-panel-5-sketch.png",
+        "alt": "Without her coat, Lynleit crawls after Ash on a sloping roof. A maid gestures from the courtyard below, near a parked car.",
+        "width": 1536,
+        "height": 1024,
+        "bytes": 1842751,
+        "display": "media/gallery/previews/panels/cat-incident-panel-5-display.webp",
+        "thumbnail": "media/gallery/previews/panels/cat-incident-panel-5-thumbnail.webp"
+      },
+      {
+        "id": "panel-6",
+        "beat": "storm",
+        "label": "Sketch 6",
+        "title": "The approaching storm",
+        "src": "media/gallery/panels/cat-incident/cat-incident-panel-6-sketch.png",
+        "alt": "Lynleit and Ash pause together on the roof, facing a distant flash of lightning over the trees.",
+        "width": 1536,
+        "height": 1024,
+        "bytes": 1991328,
+        "display": "media/gallery/previews/panels/cat-incident-panel-6-display.webp",
+        "thumbnail": "media/gallery/previews/panels/cat-incident-panel-6-thumbnail.webp"
+      },
+      {
+        "id": "panel-7",
+        "beat": "challenge",
+        "label": "Sketch 7",
+        "title": "The standoff",
+        "src": "media/gallery/panels/cat-incident/cat-incident-panel-7-sketch.png",
+        "alt": "Paired close-ups show Lynleit's uneasy expression and Ash's narrowed eyes, with a drawn glint over one eye.",
+        "width": 1448,
+        "height": 1086,
+        "bytes": 2002760,
+        "display": "media/gallery/previews/panels/cat-incident-panel-7-display.webp",
+        "thumbnail": "media/gallery/previews/panels/cat-incident-panel-7-thumbnail.webp"
+      },
+      {
+        "id": "panel-8",
+        "beat": "table",
+        "label": "Sketch 8",
+        "title": "Beneath the table",
+        "src": "media/gallery/panels/cat-incident/cat-incident-panel-8-sketch.png",
+        "alt": "Soaked Lynleit lifts a tablecloth and peers underneath at equally wet Ash, crouched with flattened ears.",
+        "width": 1536,
+        "height": 1024,
+        "bytes": 1556537,
+        "display": "media/gallery/previews/panels/cat-incident-panel-8-display.webp",
+        "thumbnail": "media/gallery/previews/panels/cat-incident-panel-8-thumbnail.webp"
+      }
+    ]
   }
 ]

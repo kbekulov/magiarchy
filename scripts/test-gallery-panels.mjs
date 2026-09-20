@@ -9,7 +9,7 @@ export async function testGalleryPanels(page, origin, engine) {
   assert.equal(new Set(record.panels.map(panel => panel.beat)).size, 7, 'Every river panel is a successive beat');
   assert.ok(record.panels.every(panel => !panel.composition), 'River panels are not alternative compositions');
   const visit = async route => { await page.goto(`${origin}/${route}`); await page.waitForLoadState('networkidle'); };
-  const timelineLink = '.timeline-panel-link';
+  const timelineLink = '.timeline-panel-link[href="gallery.html?panels=river-incident"]';
   for (const width of [390, 820, 1440]) {
     await page.setViewportSize({ width, height: 900 });
     await visit('story.html?phase=unknowing-convergence');
@@ -37,6 +37,24 @@ export async function testGalleryPanels(page, origin, engine) {
   await page.locator('#panel-slide-toggle').click();
   assert.equal(await page.locator('#panel-slide-toggle').textContent(), 'Play');
   await page.emulateMedia({ reducedMotion: 'reduce' });
+  const cat = records.find(record => record.id === 'cat-incident');
+  for (const width of [390, 1440]) {
+    await page.setViewportSize({width, height:900});
+    await visit('gallery.html?panels=cat-incident');
+    assert.equal(await page.locator('.scene-panel').count(), 8);
+    assert.ok(await page.locator('#panel-slideshow').isVisible());
+    assert.equal(await page.locator('#panel-context a').getAttribute('href'), 'moments.html?moment=the-cat-in-the-family-house&version=v2');
+    assert.ok(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1));
+    await page.screenshot({path:`test-results/${engine}-cat-panels-${width}.png`});
+  }
+  for (const panel of cat.panels) {
+    const response = await page.request.get(`${origin}/${panel.src}`);
+    assert.deepEqual(await response.body(), fs.readFileSync(panel.src));
+  }
+  await visit('moments.html?moment=the-cat-in-the-family-house&version=v2');
+  assert.ok(await page.locator('#moment-connection-grid a[href="gallery.html?panels=cat-incident"]').isVisible());
+  await visit('story.html?phase=vanishing-point');
+  assert.ok(await page.locator('#phase-vanishing-point a[href="gallery.html?panels=cat-incident"]').count());
   const historical = structuredClone(records);
   historical[0].chapter.version = 'v1';
   historical[0].moment.version = 'v1';

@@ -125,9 +125,10 @@
       {
         "id": "front",
         "src": "media/gallery/resources/felix-t-pose-v1/char-felix-t-pose-v1-arm-corrected-front.png",
+        "revision": "r2",
         "alt": "Front T-pose of Felix with orange hair, green eyes, a blue tie, white shirt, black suspenders, trousers, shoes, and a wristwatch.",
         "caption": "v1 · Front",
-        "thumbnail": "media/gallery/previews/resources/felix-t-pose-v1-1.webp",
+        "thumbnail": "media/gallery/previews/resources/felix-t-pose-v1-1-r2.webp",
         "width": 1122,
         "height": 1402
       },
@@ -147,7 +148,7 @@
         "path": "media/gallery/resources/felix-t-pose-v1/char-felix-t-pose-v1-arm-corrected-front.png",
         "label": "Front reference, arm-corrected",
         "notes": "Arm lengths balanced across matching views, 1122 × 1402 PNG.",
-        "bytes": 1187861,
+        "bytes": 954290,
         "format": "PNG"
       },
       {

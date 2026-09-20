@@ -7,7 +7,8 @@
       "id": "felix-t-pose-v1",
       "source": "backlog/archive/t-pose-source-sheets__2026-09-20T08-14-25Z/media/gallery/resources/felix-t-pose-v1/char-felix-t-pose-v1-sheet.png",
       "outputs": { "front": "backlog/archive/unused-gallery-images__2026-09-20T08-07-22Z/media/gallery/resources/felix-t-pose-v1/char-felix-t-pose-v1-front.png", "back": "backlog/archive/unused-gallery-images__2026-09-20T08-07-22Z/media/gallery/resources/felix-t-pose-v1/char-felix-t-pose-v1-back.png" },
-      "correctedOutputs": { "front": "media/gallery/resources/felix-t-pose-v1/char-felix-t-pose-v1-arm-corrected-front.png", "back": "backlog/archive/unused-gallery-images__2026-09-20T08-07-22Z/media/gallery/resources/felix-t-pose-v1/char-felix-t-pose-v1-arm-corrected-back.png" },
+      "correctedOutputs": { "front": "backlog/archive/felix-front-before-author-revision__2026-09-20/char-felix-t-pose-v1-arm-corrected-front.png", "back": "backlog/archive/unused-gallery-images__2026-09-20T08-07-22Z/media/gallery/resources/felix-t-pose-v1/char-felix-t-pose-v1-arm-corrected-back.png" },
+      "authorRevisions": [{"path":"media/gallery/resources/felix-t-pose-v1/char-felix-t-pose-v1-arm-corrected-front.png","sha256":"45d5d339309c3d81f87ceaa24555cbd6ece38ed4a9ade64d273fdbe6e98b878a"}],
       "sha256": "4b39aff9c950064b226ecf71cbf044c8b11dfa2996a339e674aacd3aaf4ee5f1",
       "split": 775,
       "lettering": [

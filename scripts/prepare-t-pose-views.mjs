@@ -22,6 +22,13 @@ assert.equal(manifest.canvas.height, template.height);
 // These measured regions contain sheet lettering only, never character pixels.
 // Keep this explicit recipe instead of detecting subjects or regenerating artwork.
 for (const sheet of manifest.sheets) {
+  for (const revision of sheet.authorRevisions || []) {
+    const file = targetPath(revision.path);
+    assert.equal(hash(fs.readFileSync(file)), revision.sha256, `${sheet.id}: author revision changed`);
+    const meta = await sharp(file).metadata();
+    assert.equal(meta.width, manifest.canvas.width);
+    assert.equal(meta.height, manifest.canvas.height);
+  }
   const pairedReaches = [];
   const source = fs.readFileSync(path.join(root, sheet.source));
   assert.equal(hash(source), sheet.sha256, `${sheet.id}: original sheet changed`);
