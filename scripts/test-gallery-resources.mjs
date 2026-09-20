@@ -81,7 +81,8 @@ export async function testGalleryResources(page, origin, engine) {
       await visit(`gallery.html?resource=${record.id}&view=front`);
       assert.equal(await page.locator('#resource-title').textContent(), record.title);
       assert.equal(await page.locator('#resource-thumbnails button').count(), 2);
-      assert.equal(await page.locator('#resource-downloads a[download]').count(), 3);
+      assert.equal(await page.locator('#resource-downloads a[download]').count(), 2);
+      assert.equal(await page.getByText('Original two-view sheet', { exact: true }).count(), 0, 'Source sheets belong in the archive, not public downloads');
       assert.equal(await page.locator('#resource-downloads small a').count(), 0, 'Filename text must not become profile links');
       assert.deepEqual(await page.locator('#resource-downloads small').allTextContents(), record.files.map(file => file.path.split('/').pop()));
       assert.ok(await page.locator(`#resource-characters a[href="character.html?character=${record.characters[0]}"]`).isVisible());
@@ -97,7 +98,7 @@ export async function testGalleryResources(page, origin, engine) {
       await page.screenshot({ path: `test-results/${engine}-${record.id}-${width}.png`, fullPage: width < 820 });
       if (width === 1440) {
         for (const file of record.files) {
-          assert.match(file.path.split('/').pop(), /^char-(felix|lynleit)-(arc-1-)?t-pose-v[12]-(arm-corrected-front|arm-hand-corrected-back|sheet)\.png$/);
+          assert.match(file.path.split('/').pop(), /^char-(felix|lynleit)-(arc-1-)?t-pose-v[12]-(arm-corrected-front|arm-hand-corrected-back)\.png$/);
           const [download] = await Promise.all([page.waitForEvent('download'), page.locator(`#resource-downloads a[href="${file.path}"]`).click()]);
           assert.equal(download.suggestedFilename(), file.path.split('/').pop());
           assert.deepEqual(fs.readFileSync(await download.path()), fs.readFileSync(file.path));
@@ -131,7 +132,7 @@ export async function testGalleryResources(page, origin, engine) {
     assert.deepEqual(fs.readFileSync(await download.path()), fs.readFileSync(file.path));
   }
   await visit('docs.html?doc=character-image-production');
-  assert.equal(await page.getByRole('combobox', { name: 'Choose version' }).inputValue(), 'v7');
+  assert.equal(await page.getByRole('combobox', { name: 'Choose version' }).inputValue(), 'v8');
   assert.ok(await page.getByRole('heading', { name: 'Separating supplied T-pose sheets' }).isVisible());
   assert.ok(await page.getByRole('heading', { name: 'Author-approved anatomy corrections' }).isVisible());
   assert.ok(await page.getByRole('heading', { name: 'Rear-view hands' }).isVisible());

@@ -156,26 +156,15 @@
         "notes": "Balanced arm lengths and corrected rear-view fingers, 1122 × 1402 PNG.",
         "bytes": 1156811,
         "format": "PNG"
-      },
-      {
-        "path": "media/gallery/resources/felix-t-pose-v1/char-felix-t-pose-v1-sheet.png",
-        "label": "Original two-view sheet",
-        "notes": "Unaltered supplied PNG, including the original lettering.",
-        "bytes": 1585178,
-        "format": "PNG"
       }
     ],
     "technical": [
       {
         "label": "Reference canvas",
         "value": "1122 × 1402 px, matching Anima’s template aspect ratio"
-      },
-      {
-        "label": "Source sheet",
-        "value": "1536 × 1024 px"
       }
     ],
-    "usage": "Use this version's front and back together. Arm lengths are balanced, and the back-view hands have the correct finger orientation. The original two-view sheet remains available unchanged."
+    "usage": "Use this version's front and back together. Arm lengths are balanced, and the back-view hands have the correct finger orientation."
   },
   {
     "id": "lynleit-t-pose-v1",
@@ -222,26 +211,15 @@
         "notes": "Balanced arm lengths and corrected rear-view fingers, 1122 × 1402 PNG.",
         "bytes": 1340910,
         "format": "PNG"
-      },
-      {
-        "path": "media/gallery/resources/lynleit-t-pose-v1/char-lynleit-arc-1-t-pose-v1-sheet.png",
-        "label": "Original two-view sheet",
-        "notes": "Unaltered supplied PNG, including the original lettering.",
-        "bytes": 1698581,
-        "format": "PNG"
       }
     ],
     "technical": [
       {
         "label": "Reference canvas",
         "value": "1122 × 1402 px, matching Anima’s template aspect ratio"
-      },
-      {
-        "label": "Source sheet",
-        "value": "1536 × 1024 px"
       }
     ],
-    "usage": "Use this version's front and back together. Arm lengths are balanced, and the back-view hands have the correct finger orientation. The original two-view sheet remains available unchanged."
+    "usage": "Use this version's front and back together. Arm lengths are balanced, and the back-view hands have the correct finger orientation."
   },
   {
     "id": "lynleit-t-pose-v2",
@@ -287,26 +265,15 @@
         "notes": "Balanced arm lengths and corrected rear-view fingers, 1122 × 1402 PNG.",
         "bytes": 1240070,
         "format": "PNG"
-      },
-      {
-        "path": "media/gallery/resources/lynleit-t-pose-v2/char-lynleit-t-pose-v2-sheet.png",
-        "label": "Original two-view sheet",
-        "notes": "Unaltered supplied PNG, including the original lettering.",
-        "bytes": 1603933,
-        "format": "PNG"
       }
     ],
     "technical": [
       {
         "label": "Reference canvas",
         "value": "1122 × 1402 px, matching Anima’s template aspect ratio"
-      },
-      {
-        "label": "Source sheet",
-        "value": "1536 × 1024 px"
       }
     ],
-    "usage": "Use this version's front and back together. Arm lengths are balanced, and the back-view hands have the correct finger orientation. The original two-view sheet remains available unchanged."
+    "usage": "Use this version's front and back together. Arm lengths are balanced, and the back-view hands have the correct finger orientation."
   },
   {
     "id": "lynleit-arc-2-t-pose",
