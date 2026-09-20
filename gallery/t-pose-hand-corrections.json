@@ -4,7 +4,7 @@
   "records": [
     {
       "id": "felix-t-pose-v1",
-      "source": "media/gallery/resources/felix-t-pose-v1/char-felix-t-pose-v1-arm-corrected-back.png",
+      "source": "backlog/archive/unused-gallery-images__2026-09-20T08-07-22Z/media/gallery/resources/felix-t-pose-v1/char-felix-t-pose-v1-arm-corrected-back.png",
       "sourceSha256": "71ed34a2476238c8abbfc772dd0f7d5d294ab7247e820da6d7c26966be10df90",
       "output": "media/gallery/resources/felix-t-pose-v1/char-felix-t-pose-v1-arm-hand-corrected-back.png",
       "patches": [
@@ -27,13 +27,13 @@
       ],
       "prompt": "Use case: precise-object-edit. This is a surgical anatomy repair to an existing professional character turnaround, not a redesign.\nImage 1 is the EDIT TARGET: the BACK VIEW of Felix standing in a horizontal T-pose. Image 2 is the matching FRONT VIEW, supplied to establish the same pose and the same arm/hand lengths.\nChange ONLY the two exposed hands in Image 1, distal to the wrists. Correct the handedness for a rear view of a palms-down T-pose. The current image mistakenly repeats the front-view thumb silhouette on the near little-finger edge. On both back-view hands, replace that downward hook/thumb-like protrusion with the correct slim little-finger-side contour and four naturally overlapping straight fingers reaching outward. The thumb is on the FAR/anterior side, mostly occluded by the hand from this rear camera; if any thumb is visible, it must be a subtle anatomically attached far-side feature, never a second large thumb at the near edge. Each hand has exactly five anatomically coherent digits. Do NOT merely mirror the existing faulty hand.\nKeep the wrists at exactly the same positions and keep fingertip reach, hand size, horizontal arm alignment, already-corrected arm lengths, pose, camera, framing, complete full-body silhouette, all clothing/cuffs/accessories, hair, body, boots, lighting, background, and original rendering unchanged. Do not copy front-view hand orientation onto the back view. Preserve character-specific skin tone and line quality. Keep every pixel outside the small hand regions as unchanged as possible.\nOutput only the corrected full BACK VIEW of Image 1, one image, no labels or montage. Preserve original 1122 by 1402 portrait canvas/aspect ratio and figure scale.",
       "references": [
-        "media/gallery/resources/felix-t-pose-v1/char-felix-t-pose-v1-arm-corrected-back.png",
+        "backlog/archive/unused-gallery-images__2026-09-20T08-07-22Z/media/gallery/resources/felix-t-pose-v1/char-felix-t-pose-v1-arm-corrected-back.png",
         "media/gallery/resources/felix-t-pose-v1/char-felix-t-pose-v1-arm-corrected-front.png"
       ]
     },
     {
       "id": "lynleit-t-pose-v1",
-      "source": "media/gallery/resources/lynleit-t-pose-v1/char-lynleit-arc-1-t-pose-v1-arm-corrected-back.png",
+      "source": "backlog/archive/unused-gallery-images__2026-09-20T08-07-22Z/media/gallery/resources/lynleit-t-pose-v1/char-lynleit-arc-1-t-pose-v1-arm-corrected-back.png",
       "sourceSha256": "bb032669cfc50ffbcfb66cbbafd7022704e62160d944033505aa8ddda1f9e280",
       "output": "media/gallery/resources/lynleit-t-pose-v1/char-lynleit-arc-1-t-pose-v1-arm-hand-corrected-back.png",
       "patches": [
@@ -56,7 +56,7 @@
       ],
       "prompt": "Use case: precise-object-edit. This is a surgical anatomy repair to an existing professional character turnaround, not a redesign.\nImage 1 is the EDIT TARGET: the BACK VIEW of Lynleit standing in a horizontal T-pose. Image 2 is the matching FRONT VIEW, supplied to establish the same pose and the same arm/hand lengths. Images 3 and 4 are Anima's approved female template front/back pair, for correct rear-view hand presentation only, NOT costume or character identity.\nChange ONLY the two exposed hands in Image 1, distal to the wrists. Correct the handedness for a rear view of a palms-down T-pose. The current image mistakenly repeats the front-view thumb silhouette on the near little-finger edge. On both back-view hands, replace that downward hook/thumb-like protrusion with the correct slim little-finger-side contour and four naturally overlapping straight fingers reaching outward. The thumb is on the FAR/anterior side, mostly occluded by the hand from this rear camera; if any thumb is visible, it must be a subtle anatomically attached far-side feature, never a second large thumb at the near edge. Each hand has exactly five anatomically coherent digits. Do NOT merely mirror the existing faulty hand.\nKeep the wrists at exactly the same positions and keep fingertip reach, hand size, horizontal arm alignment, already-corrected arm lengths, pose, camera, framing, complete full-body silhouette, all clothing/cuffs/accessories, hair, body, boots, lighting, background, and original rendering unchanged. Do not copy front-view hand orientation onto the back view. Preserve character-specific skin tone and line quality. Keep every pixel outside the small hand regions as unchanged as possible.\nOutput only the corrected full BACK VIEW of Image 1, one image, no labels or montage. Preserve original 1122 by 1402 portrait canvas/aspect ratio and figure scale.",
       "references": [
-        "media/gallery/resources/lynleit-t-pose-v1/char-lynleit-arc-1-t-pose-v1-arm-corrected-back.png",
+        "backlog/archive/unused-gallery-images__2026-09-20T08-07-22Z/media/gallery/resources/lynleit-t-pose-v1/char-lynleit-arc-1-t-pose-v1-arm-corrected-back.png",
         "media/gallery/resources/lynleit-t-pose-v1/char-lynleit-arc-1-t-pose-v1-arm-corrected-front.png",
         "media/gallery/resources/author-mascot-black-gold/anima-t-pose-black-gold-front.png",
         "media/gallery/resources/author-mascot-black-gold/anima-t-pose-black-gold-back.png"
@@ -64,7 +64,7 @@
     },
     {
       "id": "lynleit-t-pose-v2",
-      "source": "media/gallery/resources/lynleit-t-pose-v2/char-lynleit-t-pose-v2-arm-corrected-back.png",
+      "source": "backlog/archive/unused-gallery-images__2026-09-20T08-07-22Z/media/gallery/resources/lynleit-t-pose-v2/char-lynleit-t-pose-v2-arm-corrected-back.png",
       "sourceSha256": "78989bf5aa48c63abfc83f717a7ded23daa86a7c8415f837cd0354032d0d42c7",
       "output": "media/gallery/resources/lynleit-t-pose-v2/char-lynleit-t-pose-v2-arm-hand-corrected-back.png",
       "patches": [
@@ -87,7 +87,7 @@
       ],
       "prompt": "Use case: precise-object-edit. This is a surgical anatomy repair to an existing professional character turnaround, not a redesign.\nImage 1 is the EDIT TARGET: the BACK VIEW of Lynleit standing in a horizontal T-pose. Image 2 is the matching FRONT VIEW, supplied to establish the same pose and the same arm/hand lengths. Images 3 and 4 are Anima's approved female template front/back pair, for correct rear-view hand presentation only, NOT costume or character identity.\nChange ONLY the two exposed hands in Image 1, distal to the wrists. Correct the handedness for a rear view of a palms-down T-pose. The current image mistakenly repeats the front-view thumb silhouette on the near little-finger edge. On both back-view hands, replace that downward hook/thumb-like protrusion with the correct slim little-finger-side contour and four naturally overlapping straight fingers reaching outward. The thumb is on the FAR/anterior side, mostly occluded by the hand from this rear camera; if any thumb is visible, it must be a subtle anatomically attached far-side feature, never a second large thumb at the near edge. Each hand has exactly five anatomically coherent digits. Do NOT merely mirror the existing faulty hand.\nKeep the wrists at exactly the same positions and keep fingertip reach, hand size, horizontal arm alignment, already-corrected arm lengths, pose, camera, framing, complete full-body silhouette, all clothing/cuffs/accessories, hair, body, boots, lighting, background, and original rendering unchanged. Do not copy front-view hand orientation onto the back view. Preserve character-specific skin tone and line quality. Keep every pixel outside the small hand regions as unchanged as possible.\nOutput only the corrected full BACK VIEW of Image 1, one image, no labels or montage. Preserve original 1122 by 1402 portrait canvas/aspect ratio and figure scale.",
       "references": [
-        "media/gallery/resources/lynleit-t-pose-v2/char-lynleit-t-pose-v2-arm-corrected-back.png",
+        "backlog/archive/unused-gallery-images__2026-09-20T08-07-22Z/media/gallery/resources/lynleit-t-pose-v2/char-lynleit-t-pose-v2-arm-corrected-back.png",
         "media/gallery/resources/lynleit-t-pose-v2/char-lynleit-t-pose-v2-arm-corrected-front.png",
         "media/gallery/resources/author-mascot-black-gold/anima-t-pose-black-gold-front.png",
         "media/gallery/resources/author-mascot-black-gold/anima-t-pose-black-gold-back.png"

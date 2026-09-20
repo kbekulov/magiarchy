@@ -12,11 +12,12 @@ const arms = JSON.parse(fs.readFileSync(path.join(root, 'gallery/t-pose-arm-corr
 const check = process.argv.includes('--check');
 const hash = bytes => createHash('sha256').update(bytes).digest('hex');
 const local = value => {
-  assert.ok(value.startsWith('media/gallery/resources/') && !/[\\?#%:]/.test(value) && !value.split('/').includes('..'), 'Unsafe hand correction path');
+  assert.ok((value.startsWith('media/gallery/resources/') || value.startsWith('backlog/archive/')) && !/[\\?#%:]/.test(value) && !value.split('/').includes('..'), 'Unsafe hand correction path');
   return path.join(root, value);
 };
 
 for (const record of manifest.records) {
+  assert.ok(record.output.startsWith('media/gallery/resources/'), 'Publish corrected outputs only in active resources');
   assert.ok(record.source.endsWith('-arm-corrected-back.png') && record.output.endsWith('-arm-hand-corrected-back.png'), 'Only back-view hands are edited');
   assert.notEqual(record.source, record.output, 'Preserve the previous derivative');
   const source = fs.readFileSync(local(record.source));

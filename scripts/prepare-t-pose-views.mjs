@@ -11,6 +11,10 @@ const manifest = JSON.parse(fs.readFileSync(path.join(root, 'gallery/t-pose-extr
 const corrections = JSON.parse(fs.readFileSync(path.join(root, 'gallery/t-pose-arm-corrections.json'), 'utf8'));
 const check = process.argv.includes('--check');
 const hash = bytes => createHash('sha256').update(bytes).digest('hex');
+const targetPath = value => {
+  assert.ok((value.startsWith('media/gallery/resources/') || value.startsWith('backlog/archive/')) && !/[\\?#%:]/.test(value) && !value.split('/').includes('..'), 'Unsafe extraction target');
+  return path.join(root, value);
+};
 const template = await sharp(path.join(root, manifest.template)).metadata();
 assert.equal(manifest.canvas.width, template.width);
 assert.equal(manifest.canvas.height, template.height);
@@ -48,9 +52,10 @@ for (const sheet of manifest.sheets) {
       .composite([{ input: strips[0], left: 0, top: 0 }, { input: crop, left: padLeft, top: 0 }, { input: strips[1], left: padLeft + width, top: 0 }]).png().toBuffer();
     // Uniform scaling with contain preserves anatomy; exact template canvas handles rounding.
     const output = await sharp(padded).resize(manifest.canvas.width, manifest.canvas.height, { fit: 'contain', background: '#808080' }).png().toBuffer();
-    const target = path.join(root, sheet.source.replace('-sheet.png', `-${view}.png`));
+    const targetName = sheet.outputs?.[view] || sheet.source.replace('-sheet.png', `-${view}.png`);
+    const target = targetPath(targetName);
     assert.notEqual(target, path.join(root, sheet.source));
-    if (check) {
+    if (check || targetName.startsWith('backlog/archive/')) {
       const actual = await sharp(target).metadata();
       assert.equal(actual.width, manifest.canvas.width);
       assert.equal(actual.height, manifest.canvas.height);
@@ -62,8 +67,9 @@ for (const sheet of manifest.sheets) {
       const corrected = await correctArms(padded, correction, view, left, padLeft, width);
       const correctedOutput = await sharp(corrected).resize(manifest.canvas.width, manifest.canvas.height, { fit: 'contain', background: '#808080' }).png().toBuffer();
       pairedReaches.push(await verifyVisibleReach(correctedOutput, correction));
-      const correctedTarget = path.join(root, sheet.source.replace('-sheet.png', `-arm-corrected-${view}.png`));
-      if (check) {
+      const correctedName = sheet.correctedOutputs?.[view] || sheet.source.replace('-sheet.png', `-arm-corrected-${view}.png`);
+      const correctedTarget = targetPath(correctedName);
+      if (check || correctedName.startsWith('backlog/archive/')) {
         const actual = await sharp(correctedTarget).metadata();
         assert.equal(actual.width, manifest.canvas.width);
         assert.equal(actual.height, manifest.canvas.height);
