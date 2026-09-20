@@ -65,7 +65,7 @@ Use Anima's actual portrait canvas, 1122 × 1402 pixels, when preparing separate
 
 When the author requests a sheet to be split, preserve the complete original byte-for-byte in the source archive and create separately named front/back derivatives. Retain all hair, hands, clothing, accessories, and feet. Keep the same scale and vertical alignment within each pair; add background padding where necessary. Do not redraw anatomy or manufacture missing detail. Lettering outside the figure may be omitted from the separated presentation, with that distinction recorded and the original sheet retained.
 
-Measure the split and inspect the result rather than blindly halving a sheet through touching fingertips. Record crop and padding decisions while sources remain available. Keep matching versions together and do not infer an Arc from a design version.
+Measure the split and inspect the result rather than blindly halving a sheet through touching fingertips. Keep reproducible crop, padding, and any background-only lettering adjustments in `gallery/t-pose-extractions.json`; verify original hashes and generated views with `node scripts/prepare-t-pose-views.mjs --check`. A design revision such as v2 is not an Arc label. Keep every supplied version's views together and separate from the other versions.
 
 ### Author-approved anatomy corrections
 
@@ -73,13 +73,13 @@ Splitting a sheet does not authorize changes to its anatomy. When the author exp
 
 For unequal T-pose arms, compare visible shoulder, sleeve, wrist, and fingertip positions on both sides and both views. Clothing folds are not reliable evidence of an elbow joint. Measure each design independently; do not force different characters into one reach or change their face, torso, clothing design, or life period. Use local geometric adjustments when preserving the drawing is important. A whole-figure stretch or regenerated face is not an arm-length repair.
 
-Retain the template canvas and common scale within each pair. Inspect sleeve joins, fingers, padding, front/back consistency, and visible fingertip spans. These are drawing corrections, not new canonical body measurements.
+Keep the approved measurements and edit regions in `gallery/t-pose-arm-corrections.json`. The preparation script reproduces corrected derivatives separately from the unmodified extractions, recenters by translation, and verifies that pixels outside the arm regions remain unchanged after that translation and background padding. Retain the template canvas and a common scale within each pair. Inspect every result, including sleeve joins, fingers, padding, and front/back consistency; check the visible fingertip spans as well as the intended coordinates. These are drawing corrections, not new canonical body measurements or a claim of 3D-model readiness.
 
 ### Rear-view hands
 
 Judge hand orientation from the camera and pose, not by mirroring a front-view silhouette. In these palms-down T-poses, the rear camera sees the little-finger edge; the thumb sits on the far side and is largely occluded. Check all four extended fingers, their overlapping contours, the hidden thumb's plausible attachment, and wrist continuity. A thumb-like projection must not replace the little finger.
 
-For an explicitly requested hand correction, preserve approved arm lengths and use matching views. Publish reviewed hand regions on the unchanged base. Compare pixels outside the edit while both versions remain available; anatomical correctness requires visual inspection.
+For an explicitly requested local correction, keep the approved arm lengths and use the matching front/back references. The hand edit may be generated, but publish only the reviewed hand regions on the unchanged base. Preserve the preceding derivatives. `gallery/t-pose-hand-corrections.json` records the built-in image-generation prompts, actual references, base and patch hashes, edit rectangles, and separate outputs. `node scripts/prepare-t-pose-hands.mjs --check` verifies the final canvas, retained fingertip reach, and exact preservation of pixels outside those hand regions. Anatomical correctness still requires visual inspection.
 
 ### Review checklist
 
@@ -88,9 +88,3 @@ Compare the result with the references before registration or publication. Check
 Check the recorded individual differences as deliberately as the shared anatomy. Reject accidental bodily sameness, imported mascot styling, and ancient-fantasy drift in otherwise contemporary designs. Do not turn a model's invented difference into a new character fact.
 
 Preserve approved source files. Register production views as matching-version siblings with original downloads and descriptive metadata. Keep unapproved outputs outside the published archive. Follow the production intake workflow in the archive maintenance charter.
-
-## Retired production sources
-
-At the author’s request, backlog/archive was purged on 20 September 2026. Source sheets, intermediate corrections, and processed prompts remain recoverable through Git history, not in the working tree. The old source-dependent correction tools were retired. Historical document commands no longer apply.
-
-`gallery/t-pose-approved.json` records the current approved T-pose files. `node scripts/verify-t-pose-assets.mjs` verifies hashes, dimensions, and registered views without regenerating artwork. Update this baseline only after inspecting an author-requested revision. Future intakes still preserve sources unless the author requests another purge.

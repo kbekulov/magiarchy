@@ -1,8 +1,0 @@
-I want to add a third section to the gallery, called "Panels"
-And each panel will consist of N amount of images, per moment or story scene.
-For now I added a few panels for the river incident where Lynleit survives drowning, gets to the top of the river surface using her magic, and encounters the girl in the fish dress and with sown eyelids. 
-Investigate the panels, understand them. Then integrate the third section into the gallery. Each panel page should include/showcase all panels devoted to the moment. And expect future other moments/scenes to have panels too.
-
-Design the system for this, follow current design philosophy of the website, come up with standard naming conventions and rules for integrating and interlinking these things where relevant with the rest of the site.
-
-If any outstanding questions, ask me before finishing this job.

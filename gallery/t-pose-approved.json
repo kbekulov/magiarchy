@@ -1,0 +1,98 @@
+[
+  {
+    "resource": "author-mascot-black-gold",
+    "view": "front",
+    "path": "media/gallery/resources/author-mascot-black-gold/anima-t-pose-black-gold-front.png",
+    "sha256": "f119335fc181d3254128584c15c20171e7873b7d4b24bdfbc7855b05b2c527fd",
+    "width": 1122,
+    "height": 1402
+  },
+  {
+    "resource": "author-mascot-black-gold",
+    "view": "back",
+    "path": "media/gallery/resources/author-mascot-black-gold/anima-t-pose-black-gold-back.png",
+    "sha256": "4bead4aefccc4d7aba2755d57de689abec55cd2b571349f5bb779e17216b4f52",
+    "width": 1122,
+    "height": 1402
+  },
+  {
+    "resource": "author-mascot-red-drapery",
+    "view": "front",
+    "path": "media/gallery/resources/author-mascot-red-drapery/anima-t-pose-red-drapery-front.png",
+    "sha256": "7744c91fecceedb69ca145d26da4bdbcb7d8a642b731de705e1f79154eea2233",
+    "width": 1122,
+    "height": 1402
+  },
+  {
+    "resource": "author-mascot-red-drapery",
+    "view": "back",
+    "path": "media/gallery/resources/author-mascot-red-drapery/anima-t-pose-red-drapery-back.png",
+    "sha256": "22aee1aaecb40ac140616b16b0821d6e8507dd8fd2997e64414285fd3c646b8d",
+    "width": 1122,
+    "height": 1402
+  },
+  {
+    "resource": "felix-t-pose-v1",
+    "view": "front",
+    "path": "media/gallery/resources/felix-t-pose-v1/char-felix-t-pose-v1-arm-corrected-front.png",
+    "sha256": "45d5d339309c3d81f87ceaa24555cbd6ece38ed4a9ade64d273fdbe6e98b878a",
+    "width": 1122,
+    "height": 1402
+  },
+  {
+    "resource": "felix-t-pose-v1",
+    "view": "back",
+    "path": "media/gallery/resources/felix-t-pose-v1/char-felix-t-pose-v1-arm-hand-corrected-back.png",
+    "sha256": "5b9452531b75b526f9e213bbbc3a163d51a8a553f0944a17dad91b449995fe1c",
+    "width": 1122,
+    "height": 1402
+  },
+  {
+    "resource": "lynleit-t-pose-v1",
+    "view": "front",
+    "path": "media/gallery/resources/lynleit-t-pose-v1/char-lynleit-arc-1-t-pose-v1-arm-corrected-front.png",
+    "sha256": "1d631acf5bfa7e357d56c4eb0000ffd9d5f4abe01506a538aaf787670af275ca",
+    "width": 1122,
+    "height": 1402
+  },
+  {
+    "resource": "lynleit-t-pose-v1",
+    "view": "back",
+    "path": "media/gallery/resources/lynleit-t-pose-v1/char-lynleit-arc-1-t-pose-v1-arm-hand-corrected-back.png",
+    "sha256": "ef7ce2137f776ca0605a61de4d81355e1f349bbbf782deb41bc67f2e261b5cbb",
+    "width": 1122,
+    "height": 1402
+  },
+  {
+    "resource": "lynleit-t-pose-v2",
+    "view": "front",
+    "path": "media/gallery/resources/lynleit-t-pose-v2/char-lynleit-t-pose-v2-arm-corrected-front.png",
+    "sha256": "b92d8f59452deea661025b8e6a37f8c93d3831593911d5b2dfb893d4042a207c",
+    "width": 1122,
+    "height": 1402
+  },
+  {
+    "resource": "lynleit-t-pose-v2",
+    "view": "back",
+    "path": "media/gallery/resources/lynleit-t-pose-v2/char-lynleit-t-pose-v2-arm-hand-corrected-back.png",
+    "sha256": "2143eba8447c04ac600ca823e4a5818c45426bb6b467dc4ae2d0f1638123ba0a",
+    "width": 1122,
+    "height": 1402
+  },
+  {
+    "resource": "lynleit-arc-2-t-pose",
+    "view": "front",
+    "path": "media/gallery/resources/lynleit-arc-2-t-pose/char-lynleit-arc-2-t-pose-front.png",
+    "sha256": "d12f83cfcb10994599d2a35914c3eaae58292607359e9d10324e3a7d8c2df66c",
+    "width": 1122,
+    "height": 1402
+  },
+  {
+    "resource": "lynleit-arc-2-t-pose",
+    "view": "back",
+    "path": "media/gallery/resources/lynleit-arc-2-t-pose/char-lynleit-arc-2-t-pose-back.png",
+    "sha256": "1737ee485b0b276d0158d20b6efabb913cb3b4a7aa424b985bc1697ec3e6c95c",
+    "width": 1122,
+    "height": 1402
+  }
+]

@@ -85,11 +85,11 @@
     "topic": "Visual Production Standard",
     "file": "character-image-production.md",
     "updated": "2026-09-20",
-    "description": "Template-first production and corrected T-pose references, with source sheets and superseded exports kept in the archive.",
+    "description": "Template-first production and approved-image validation after retirement of archived production sources.",
     "speakers": [
       "Author's Desk"
     ],
-    "defaultVersion": "v8",
+    "defaultVersion": "v9",
     "versions": [
       {
         "id": "v1",
@@ -142,10 +142,17 @@
       },
       {
         "id": "v8",
-        "label": "v8 · Current",
-        "file": "character-image-production.md",
+        "label": "v8 · Archived",
+        "file": "character-image-production-v8.md",
         "updated": "2026-09-20",
         "description": "Template-first production and corrected T-pose references, with source sheets and superseded exports kept in the archive."
+      },
+      {
+        "id": "v9",
+        "label": "v9 · Current",
+        "file": "character-image-production.md",
+        "updated": "2026-09-20",
+        "description": "Template-first production and approved-image validation after retirement of archived production sources."
       }
     ]
   },

@@ -132,7 +132,7 @@ export async function testGalleryResources(page, origin, engine) {
     assert.deepEqual(fs.readFileSync(await download.path()), fs.readFileSync(file.path));
   }
   await visit('docs.html?doc=character-image-production');
-  assert.equal(await page.getByRole('combobox', { name: 'Choose version' }).inputValue(), 'v8');
+  assert.equal(await page.getByRole('combobox', { name: 'Choose version' }).inputValue(), 'v9');
   assert.ok(await page.getByRole('heading', { name: 'Separating supplied T-pose sheets' }).isVisible());
   assert.ok(await page.getByRole('heading', { name: 'Author-approved anatomy corrections' }).isVisible());
   assert.ok(await page.getByRole('heading', { name: 'Rear-view hands' }).isVisible());
