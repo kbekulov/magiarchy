@@ -327,6 +327,17 @@
               <div class="panel-heading-copy"><p class="eyebrow" id="panel-medium"></p><h1 id="panel-title"></h1><p id="panel-summary"></p></div>
               <div class="panel-heading-footer"><nav class="panel-context" id="panel-context" aria-label="Scene connections"></nav><nav class="panel-characters" id="panel-characters" aria-label="Characters depicted"></nav></div>
             </header>
+            <section class="panel-slideshow" id="panel-slideshow" aria-label="Scene slideshow" aria-roledescription="carousel" hidden>
+              <div class="panel-slideshow-stage" id="panel-slideshow-stage"></div>
+              <div class="panel-slideshow-footer">
+                <a id="panel-slide-caption" class="source-link"></a>
+                <div class="panel-slideshow-controls">
+                  <button type="button" id="panel-slide-previous" aria-label="Previous panel">←</button>
+                  <button type="button" id="panel-slide-toggle">Pause</button>
+                  <button type="button" id="panel-slide-next" aria-label="Next panel">→</button>
+                </div>
+              </div>
+            </section>
             <details class="panel-jump" id="panel-index">
               <summary><span>Browse sketches</span><span id="panel-count"></span><svg viewBox="0 0 20 20" aria-hidden="true"><path d="m5 7 5 5 5-5"/></svg></summary>
               <nav id="panel-jump-links" aria-label="Jump to a sketch"></nav>

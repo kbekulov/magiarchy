@@ -198,6 +198,8 @@ Physicians have no knowledge of magic unless the author establishes an exception
 
 ## Design and delivery invariants
 
+Scene readers begin with a shared slideshow derived from the selected `gallery/panels.json` record in registered panel order. Use uncropped display previews, slow opacity fades, a repeating sequence, and compact pause/previous/next controls. Pause offscreen and in hidden tabs; reduced motion starts paused and removes fades. Preserve the full reading sequence, original downloads, and stable panel anchors below it.
+
 ### Gallery production intake
 
 Before archiving an unused gallery image, check live previews, original downloads, profile pools, historical public documents, and dynamically constructed production-tool paths. Keep current reference views and reviewed correction patches active. Original two-view sheets are archived production inputs, not public downloads. Superseded extraction and arm-only back views can live under `backlog/archive/`: explicit `outputs` and `correctedOutputs` in `gallery/t-pose-extractions.json` locate them, and hand-correction sources and references must follow the move. Reproduction tools verify archived derivatives without overwriting them or recreating obsolete active copies. Record original paths, archive paths, byte sizes, and SHA-256 hashes in an archive manifest. If an identical file already exists in an earlier archive, verify its bytes and remove only the redundant active copy. Moving files within the repository does not shrink Git history.

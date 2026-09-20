@@ -4570,6 +4570,17 @@ a.status-member:hover {
 .panel-characters > span { margin-right: 4px; color: var(--subtle); font-size: .65rem; }
 .panel-character-link { display: inline-flex; align-items: center; min-height: 36px; padding: 4px 12px; border: 1px solid var(--line-bright); border-radius: 5px; color: var(--muted); font-size: .7rem; text-decoration: none; }
 .panel-character-link:hover { background: var(--surface-hover); color: var(--text); }
+.panel-slideshow { margin: 0 0 24px; overflow: hidden; border: 1px solid var(--line-bright); border-radius: var(--radius-small); background: var(--surface); }
+.panel-slideshow-stage { position: relative; width: 100%; aspect-ratio: 16 / 10; max-height: 620px; background: #1e1f22; }
+.panel-slideshow-stage img { position: absolute; inset: 0; display: block; width: 100%; height: 100%; object-fit: contain; opacity: 0; transition: opacity 1.8s ease-in-out; }
+.panel-slideshow-stage img.is-current { opacity: 1; }
+.panel-slideshow-footer { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 8px 20px; padding: 10px 16px; border-top: 1px solid var(--line-bright); }
+.panel-slideshow-footer > a { min-width: 0; font-size: .75rem; }
+.panel-slideshow-controls { display: flex; gap: 4px; margin-left: auto; }
+.panel-slideshow-controls button { min-width: 44px; min-height: 44px; padding: 8px 12px; border: 0; border-radius: 5px; background: transparent; color: var(--muted); font: inherit; font-size: .75rem; cursor: pointer; }
+.panel-slideshow-controls button:hover { background: var(--surface-hover); color: var(--text); }
+.panel-slideshow-controls button:focus-visible { outline: 2px solid var(--accent-bright); outline-offset: -2px; }
+@media (prefers-reduced-motion: reduce) { .panel-slideshow-stage img { transition: none; } }
 .panel-jump { margin: 0 0 24px; border-block: 1px solid var(--line-bright); }
 .panel-jump summary { display: flex; align-items: center; gap: 12px; min-height: 56px; padding: 10px 4px; cursor: pointer; list-style: none; color: var(--muted); font-size: .75rem; }
 .panel-jump summary::-webkit-details-marker { display: none; }

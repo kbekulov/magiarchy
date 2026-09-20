@@ -28,6 +28,15 @@ export async function testGalleryPanels(page, origin, engine) {
     await page.keyboard.press('Enter');
     await page.waitForURL('**/gallery.html?panels=river-incident');
   }
+  await page.emulateMedia({ reducedMotion: 'no-preference' });
+  await visit('gallery.html?panels=river-incident');
+  await page.locator('#panel-slideshow').scrollIntoViewIfNeeded();
+  assert.equal(await page.locator('#panel-slide-toggle').textContent(), 'Pause');
+  assert.equal(await page.locator('#panel-slideshow-stage img').first().evaluate(img => getComputedStyle(img).transitionDuration), '1.8s');
+  await page.waitForFunction(() => document.querySelector('#panel-slideshow').dataset.index === '1', { timeout: 15000 });
+  await page.locator('#panel-slide-toggle').click();
+  assert.equal(await page.locator('#panel-slide-toggle').textContent(), 'Play');
+  await page.emulateMedia({ reducedMotion: 'reduce' });
   const historical = structuredClone(records);
   historical[0].chapter.version = 'v1';
   historical[0].moment.version = 'v1';
@@ -62,6 +71,18 @@ export async function testGalleryPanels(page, origin, engine) {
     await page.locator('.panel-card > a').first().click();
     await page.waitForLoadState('networkidle');
     assert.equal(await page.locator('.scene-panel').count(), 7);
+    assert.ok(await page.locator('#panel-slideshow').isVisible());
+    assert.equal(await page.locator('#panel-slide-toggle').textContent(), 'Play', 'Reduced motion starts paused');
+    assert.equal(await page.locator('#panel-slideshow-stage img').count(), 2);
+    await page.locator('#panel-slide-next').click();
+    await page.waitForFunction(() => document.querySelector('#panel-slideshow').dataset.index === '1');
+    assert.equal(await page.locator('#panel-slide-caption').getAttribute('href'), `#${record.panels[1].id}`);
+    await page.locator('#panel-slide-previous').click();
+    await page.waitForFunction(() => document.querySelector('#panel-slideshow').dataset.index === '0');
+    await page.locator('#panel-slide-previous').click();
+    await page.waitForFunction(() => document.querySelector('#panel-slideshow').dataset.index === '6');
+    await page.locator('#panel-slide-next').click();
+    await page.waitForFunction(() => document.querySelector('#panel-slideshow').dataset.index === '0');
     assert.ok(await page.evaluate(() => document.documentElement.scrollWidth <= document.documentElement.clientWidth + 1), 'Reader must also fit beside a native scrollbar');
     assert.equal(await page.locator('body').evaluate(el => getComputedStyle(el).minWidth), '0px');
     assert.equal(await page.locator('.panel-beat').count(), 7);

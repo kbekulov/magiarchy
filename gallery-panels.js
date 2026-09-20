@@ -32,6 +32,69 @@
     img.loading = 'lazy'; img.decoding = 'async';
     return img;
   }
+  function slideshow(record) {
+    const root = $('#panel-slideshow'), stage = $('#panel-slideshow-stage');
+    const caption = $('#panel-slide-caption'), toggle = $('#panel-slide-toggle');
+    const motion = matchMedia('(prefers-reduced-motion: reduce)');
+    let current = 0, timer, visible = false, busy = false, stopped = motion.matches;
+    root.hidden = !record.panels.length;
+    if (!record.panels.length) return;
+    // Only two display images are needed, regardless of the scene's length.
+    const layers = [image(record.panels[0]), image(record.panels[0])];
+    layers.forEach((img, index) => {
+      img.loading = 'eager'; img.alt = ''; img.setAttribute('aria-hidden', 'true');
+      img.className = index ? '' : 'is-current'; stage.append(img);
+    });
+    let front = 0;
+    function describe() {
+      const panel = record.panels[current];
+      caption.textContent = `${panel.label} · ${panel.title}`;
+      caption.href = `#${panel.id}`;
+      stage.setAttribute('role', 'img'); stage.setAttribute('aria-label', panel.alt);
+      root.dataset.index = String(current);
+      toggle.textContent = stopped ? 'Play' : 'Pause';
+      toggle.setAttribute('aria-label', stopped ? 'Play slideshow' : 'Pause slideshow');
+    }
+    function schedule() {
+      clearTimeout(timer);
+      if (!stopped && visible && !document.hidden && !busy && record.panels.length > 1) {
+        timer = setTimeout(() => advance(1), 7000);
+      }
+    }
+    async function advance(direction) {
+      if (busy) return;
+      clearTimeout(timer); busy = true;
+      const next = (current + direction + record.panels.length) % record.panels.length;
+      const incoming = layers[1 - front];
+      incoming.src = record.panels[next].display;
+      try {
+        await incoming.decode();
+        layers[front].classList.remove('is-current');
+        incoming.classList.add('is-current');
+        front = 1 - front; current = next; describe();
+        // Avoid replacing a layer while it is still fading out.
+        await new Promise(resolve => setTimeout(resolve, motion.matches ? 0 : 1800));
+      } catch {
+        stopped = true; describe(); // Leave the last readable frame in place.
+      } finally { busy = false; schedule(); }
+    }
+    toggle.addEventListener('click', () => { stopped = !stopped; describe(); schedule(); });
+    for (const [selector, direction] of [['#panel-slide-previous', -1], ['#panel-slide-next', 1]]) {
+      $(selector).addEventListener('click', () => { stopped = true; describe(); advance(direction); });
+    }
+    // Keyboard readers can explore controls without the artwork changing beneath them.
+    root.addEventListener('focusin', event => {
+      if (!root.contains(event.relatedTarget) && event.target.matches(':focus-visible')) { stopped = true; describe(); schedule(); }
+    });
+    motion.addEventListener('change', () => { if (motion.matches) stopped = true; describe(); schedule(); });
+    document.addEventListener('visibilitychange', schedule);
+    window.addEventListener('pagehide', () => clearTimeout(timer));
+    window.addEventListener('pageshow', schedule);
+    const observer = new IntersectionObserver(entries => { visible = entries[0].isIntersecting; schedule(); });
+    observer.observe(root);
+    root.querySelector('.panel-slideshow-controls').hidden = record.panels.length < 2;
+    describe(); schedule();
+  }
   function showRecord(record) {
     document.body.classList.add('panel-reading');
     collection.hidden = true;
@@ -52,6 +115,7 @@
     const cast = $('#panel-characters');
     if (record.characters.length) cast.append(node('span', 'Featuring'));
     record.characters.forEach(slug => cast.append(link(names.get(slug) || slug, `character.html?character=${encodeURIComponent(slug)}`, 'panel-character-link')));
+    slideshow(record);
     let imageIndex = 0;
     for (const [beatIndex, beat] of record.beats.entries()) {
       const beatPanels = record.panels.filter(panel => panel.beat === beat.id);
