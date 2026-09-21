@@ -14,7 +14,8 @@ export async function testGalleryPanels(page, origin, engine) {
     await page.setViewportSize({ width, height: 900 });
     await visit('story.html?phase=unknowing-convergence');
     assert.equal(await page.locator(timelineLink).count(), 1);
-    assert.equal(await page.locator('#phase-unknowing-convergence .timeline-panel-link').count(), 1);
+    assert.equal(await page.locator(`#phase-unknowing-convergence ${timelineLink}`).count(), 1);
+    assert.equal(await page.locator('#phase-unknowing-convergence .timeline-panel-link[href="gallery.html?panels=kyrien-lynleit-river-rest"]').count(), 1);
     assert.equal(await page.locator(`${timelineLink} strong`).textContent(), record.title);
     assert.equal(await page.locator(`${timelineLink} img`).getAttribute('src'), record.panels.find(panel => panel.id === record.cover).thumbnail);
     assert.ok(await page.locator('#phase-unknowing-convergence .timeline-moment-anchor').isVisible());
@@ -195,6 +196,7 @@ export async function testGalleryPanels(page, origin, engine) {
   assert.equal(await page.locator('#gallery-collections a[aria-current]').getAttribute('href'), 'gallery.html?collection=production');
   assert.ok(!await page.locator('#panel-collection').isVisible());
   await visit('gallery.html');
-  assert.equal(await page.locator('.gallery-card').count(), 35, 'Panel images must stay outside artwork/profile pools');
+  const artworkCount = [...fs.readFileSync('gallery.html', 'utf8').matchAll(/<figure class="gallery-card\b/g)].length;
+  assert.equal(await page.locator('.gallery-card').count(), artworkCount, 'Panel images must stay outside artwork/profile pools');
   console.log(`${engine}: scene panels, versions, filters, layouts, originals, and error states passed.`);
 }

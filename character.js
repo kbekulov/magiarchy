@@ -53,10 +53,10 @@ const profileSeeds = [
   {
     slug: 'kyrien', name: 'Kyrien', code: 'IND · 002', role: 'Independent operator and later MSF director', ageBand: 'Late twenties', factions: ['Independent', 'MSF'], affiliationTimeline: [{ name: 'Independent', stage: 'Opening' }, { name: 'MSF', stage: 'Later director' }], mbti: { type: 'ISTP', detail: 'Ti-Se-Ni working model; INTJ alternative', status: 'Suspected' }, accent: 'amber', materialStatus: 'Canon traits + mock details',
     summary: 'A non-Magus who begins as Lynleit\'s secret recruit and later becomes director of MSF.',
-    visual: 'A burgundy formal shirt with the collar open and sleeves rolled, dark tailored trousers, dark leather shoes, and a fitted leather jacket.', palette: 'Burgundy, charcoal, black, dark brown leather',
+    visual: 'A blue open-neck shirt, black tailored trousers, black leather shoes, and a silver cross necklace. His beige matte leather jacket has an upright stand collar and no pockets. Other outfits include the rolled-sleeve shirt alone and a long black coat with a black scarf and gloves.', palette: 'Dusty blue, beige, charcoal, black, silver',
     physical: [
-      ['Hair', 'Short, tousled charcoal-black hair with a heavy forward fringe.'],
-      ['Eyes', 'Golden brown.'],
+      ['Hair', 'Short, tousled dark brown hair with a parted fringe.'],
+      ['Eyes', 'Grey-blue.'],
       ['Height and build', '180 cm with a slender, lightly built frame.'],
       ['Distinguishing features', 'Fair complexion, refined angular features, deep-set expressive eyes, and a composed, slightly aloof gaze with a sharp, elegant edge.']
     ],

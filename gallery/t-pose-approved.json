@@ -94,5 +94,29 @@
     "sha256": "1737ee485b0b276d0158d20b6efabb913cb3b4a7aa424b985bc1697ec3e6c95c",
     "width": 1122,
     "height": 1402
+  },
+  {
+    "resource": "kyrien-beige-jacket",
+    "view": "sheet",
+    "path": "media/gallery/resources/kyrien-beige-jacket/char-kyrien-arc-1-beige-jacket-t-pose.png",
+    "sha256": "afeabcdd123198c603c39bb3f00c18a51cb529066d97e7cf701166740337b051",
+    "width": 1536,
+    "height": 1024
+  },
+  {
+    "resource": "kyrien-blue-shirt",
+    "view": "sheet",
+    "path": "media/gallery/resources/kyrien-blue-shirt/char-kyrien-arc-1-blue-shirt-t-pose.png",
+    "sha256": "a92d821a95b59cde7585cff538cecece598e2d424fccab7ff97d34a435f1c2e0",
+    "width": 1536,
+    "height": 1024
+  },
+  {
+    "resource": "kyrien-black-coat",
+    "view": "sheet",
+    "path": "media/gallery/resources/kyrien-black-coat/char-kyrien-arc-1-black-coat-t-pose.png",
+    "sha256": "32a1f2200bb2869416aec071c2c3a501224ad2486a2b7a66b2b74b71fef723a8",
+    "width": 1536,
+    "height": 1024
   }
 ]
