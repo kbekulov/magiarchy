@@ -3,15 +3,22 @@
     "slug": "dread-and-action-direction",
     "title": "Dread and Action Direction",
     "topic": "Writer's Direction",
-    "description": "Resident Evil-inspired isolation, grim atmosphere, pressured action, and relief, translated into MAGIARCHY scene and Holumn guidance with research sources.",
+    "description": "MAGIARCHY's direction for isolation, grim atmosphere, vulnerable survival, pressured action, and credible relief in scenes and Holumn encounters.",
     "file": "dread-and-action-direction.md",
     "updated": "2026-09-21",
     "speakers": ["Author's Desk"],
-    "defaultVersion": "v1",
+    "defaultVersion": "v2",
     "versions": [
       {
         "id": "v1",
-        "label": "v1 · Current",
+        "label": "v1 · Archived",
+        "file": "dread-and-action-direction-v1.md",
+        "updated": "2026-09-21",
+        "description": "The initial dread and action guidance, with external reference framing removed at the author's request."
+      },
+      {
+        "id": "v2",
+        "label": "v2 · Current",
         "file": "dread-and-action-direction.md",
         "updated": "2026-09-21"
       }
@@ -67,7 +74,7 @@
     "speakers": [
       "Author's Desk"
     ],
-    "defaultVersion": "v2",
+    "defaultVersion": "v3",
     "versions": [
       {
         "id": "v1",
@@ -78,10 +85,17 @@
       },
       {
         "id": "v2",
-        "label": "v2 · Current",
-        "file": "thematic-direction.md",
+        "label": "v2 · Archived",
+        "file": "thematic-direction-v2.md",
         "updated": "2026-09-21",
         "description": "Thematic direction with an additional survival-horror and action preference, without new canon."
+      },
+      {
+        "id": "v3",
+        "label": "v3 · Current",
+        "file": "thematic-direction.md",
+        "updated": "2026-09-21",
+        "description": "MAGIARCHY's own atmosphere and encounter direction, alongside the established thematic boundaries."
       }
     ]
   },
@@ -390,7 +404,7 @@
     "speakers": [
       "Author's Desk"
     ],
-    "defaultVersion": "v11",
+    "defaultVersion": "v12",
     "versions": [
       {
         "id": "v1",
@@ -464,10 +478,17 @@
       },
       {
         "id": "v11",
-        "label": "v11 · Current",
-        "file": "prose-and-scene-guidance.md",
+        "label": "v11 · Archived",
+        "file": "prose-and-scene-guidance-v11.md",
         "updated": "2026-09-21",
         "description": "Practical revision checks for danger, agency, geography, consequences, and relief alongside existing scene boundaries."
+      },
+      {
+        "id": "v12",
+        "label": "v12 · Current",
+        "file": "prose-and-scene-guidance.md",
+        "updated": "2026-09-21",
+        "description": "Scene revision checks linked to MAGIARCHY's standalone dread and action direction."
       }
     ]
   },

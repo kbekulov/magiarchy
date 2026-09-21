@@ -96,7 +96,10 @@ try {
           }
           if (slug === 'dread-and-action-direction') {
             assert.ok(await page.getByRole('heading', { name: 'Holumns retain their own nature', exact: true }).count());
-            assert.ok(await page.locator('#document-reader a[href^="https://blog.playstation.com/"]').count() >= 5, 'Research citations missing');
+            for (const name of ['Competence under pressure', 'Composure without security', 'Restricted means, meaningful initiative', 'Fear close to the body']) {
+              assert.equal(await page.getByRole('heading', { name, exact: true }).count(), 1, `Missing experiential guidance: ${name}`);
+            }
+            assert.equal(await page.locator('#document-reader a[href^="https://"]').count(), 0, 'Outside research links remain in standalone guidance');
             await page.locator('#document-reader h1').scrollIntoViewIfNeeded();
             await page.screenshot({ path: `test-results/${engine}-dread-direction-${width}.png` });
           }
@@ -105,6 +108,14 @@ try {
           await visit(`docs.html?doc=${slug}&version=${version}`);
           assert.equal(await page.locator('#document-source-link').getAttribute('href'), `docs/${slug}-${version}.md`);
           assert.equal(await page.locator('#document-reader a[href$="docs.html?doc=dread-and-action-direction"]').count(), 0, 'New guidance leaked into a historical version');
+        }
+        for (const [slug, version] of [['dread-and-action-direction', 'v1'], ['thematic-direction', 'v2'], ['prose-and-scene-guidance', 'v11']]) {
+          await visit(`docs.html?doc=${slug}&version=${version}`);
+          assert.equal(await page.locator('#document-source-link').getAttribute('href'), `docs/${slug}-${version}.md`);
+          assert.equal(await page.getByRole('combobox', { name: 'Choose version' }).inputValue(), version);
+          assert.equal(await page.locator('#document-reader a[href^="https://"]').count(), 0, 'Outside research links remain in cleaned history');
+          assert.ok(await page.getByRole('heading', { name: slug === 'dread-and-action-direction' ? 'Holumns retain their own nature' : slug === 'thematic-direction' ? 'Dread, isolation, and action' : 'Does the danger become an experience?', exact: true }).count(), 'Historical atmosphere guidance missing');
+          assert.ok(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1), `${slug}/${version}/${width}: overflow`);
         }
         await visit('docs.html?doc=prose-style&version=v10');
         assert.equal(await page.locator('#document-source-link').getAttribute('href'), 'docs/prose-style-v10.md');
