@@ -1,6 +1,6 @@
 # Thematic Direction
 
-Author-approved creative direction, updated 21 September 2026. This reference governs future writing and design; it adds no scenes, rituals, powers, or historical events.
+Author-approved creative direction, 19 September 2026. This reference governs future writing and design; it adds no scenes, rituals, powers, or historical events.
 
 ## Several forces in one life
 
@@ -27,13 +27,5 @@ Her third role is practical: a female anatomical baseline for production. [Chara
 [Hidden World Foundation](../docs.html?doc=world-foundation#a-contemporary-world-with-older-institutions) owns the setting's period: contemporary life with substantial 18th- and 19th-century institutional inheritance. Ancient religious material can survive beneath modern intelligence work without turning the streets, clothing, or technology into generalized ancient fantasy.
 
 ## Applying this direction
-
-### Dread, isolation, and action
-
-The author also wants the experience of entering dangerous places to draw on Resident Evil 4 remake, including Leon, Ada, and Ashley, and Grace's survival horror in Resident Evil Requiem. Emphasize grim surroundings, isolation, uncertain safety, immediate physical danger, and the effort of getting through an encounter. Competent action and temporary relief should make that danger more varied, not eliminate it.
-
-[Dread and Action Direction](../docs.html?doc=dread-and-action-direction) owns the research, practical scene choices, and limits of this comparison. It supplements the existing Japanese and broader Asian horror influences on Holumns. Preserve magic's particular threats to identity, memory, continuity, and ordinary reality; biological explanations and gunfights are not the default. Political work, friendship, comedy, beauty, and domestic life retain their own space.
-
-### Scope
 
 Consult the owning references before writing intimacy, changing Cult or lineage lore, designing female characters, or altering the setting. Keep most of this reasoning in writer and production guidance. Public records need the relevant facts, not an explanation of the author's thematic intentions. Preserve successful scenes and distinct designs. Do not invent more sex, more Cult lore, or more ancient imagery merely to make this direction visible.

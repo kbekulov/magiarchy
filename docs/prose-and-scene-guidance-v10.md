@@ -38,20 +38,6 @@ A firearms detail may deserve more words than an incidental meal. A quiet charac
 
 These checks are invitations to reread, not a required set of ingredients. Preserve good prose even when it does not demonstrate them all.
 
-## Does the danger become an experience?
-
-Read [Dread and Action Direction](../docs.html?doc=dread-and-action-direction) for the Resident Evil research and its MAGIARCHY applications. For a relevant draft, ask:
-
-1. What must this person accomplish here, and what specifically limits help or retreat?
-2. Can the reader place the nearest danger, useful route, and other person before the action accelerates?
-3. Which observed detail changes a choice, rather than merely decorating the scene with dread?
-4. What can the character still do well, and why is that insufficient to make the encounter safe?
-5. Does an action spend something, reveal something, open a route, or change the immediate danger?
-6. Is there genuine relief or human contact somewhere in the larger sequence, and does its aftermath remain credible?
-7. Have we preserved the particular Holumn's evidence, unknowns, nonphysical possibilities, and reveal timing?
-
-Use these as revision questions, not seven mandatory beats. A passive encounter can remain passive; an existing effective scene need not acquire an attack. Keep proposed supernatural rules and consequences advisory until the author accepts them.
-
 ## Does the intimate detail belong?
 
 Use the [Intimacy Reference](../docs.html?doc=character-intimacy-and-sexuality) for scale, established relationships, and milestone order. Read [Thematic Direction](../docs.html?doc=thematic-direction) when sacred, ancestral, or symbolic material enters the scene.

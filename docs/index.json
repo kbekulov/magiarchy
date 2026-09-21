@@ -1,5 +1,23 @@
 [
   {
+    "slug": "dread-and-action-direction",
+    "title": "Dread and Action Direction",
+    "topic": "Writer's Direction",
+    "description": "Resident Evil-inspired isolation, grim atmosphere, pressured action, and relief, translated into MAGIARCHY scene and Holumn guidance with research sources.",
+    "file": "dread-and-action-direction.md",
+    "updated": "2026-09-21",
+    "speakers": ["Author's Desk"],
+    "defaultVersion": "v1",
+    "versions": [
+      {
+        "id": "v1",
+        "label": "v1 · Current",
+        "file": "dread-and-action-direction.md",
+        "updated": "2026-09-21"
+      }
+    ]
+  },
+  {
     "slug": "content-audit-2026-09-19",
     "title": "Content Audit: 19 September 2026",
     "topic": "Archive Audit",
@@ -43,19 +61,27 @@
     "slug": "thematic-direction",
     "title": "Thematic Direction",
     "topic": "Writer's Direction",
-    "description": "Inanna's limited lore role and wider tonal association, Anima's three roles, and the boundaries of thematic integration.",
+    "description": "Inanna's tonal association, Anima's three roles, the contemporary world, and an additional survival-horror and action preference.",
     "file": "thematic-direction.md",
-    "updated": "2026-09-19",
+    "updated": "2026-09-21",
     "speakers": [
       "Author's Desk"
     ],
-    "defaultVersion": "v1",
+    "defaultVersion": "v2",
     "versions": [
       {
         "id": "v1",
-        "label": "v1 · Current",
+        "label": "v1 · Archived",
+        "file": "thematic-direction-v1.md",
+        "updated": "2026-09-19",
+        "description": "Inanna's limited lore role and wider tonal association, Anima's three roles, and the boundaries of thematic integration."
+      },
+      {
+        "id": "v2",
+        "label": "v2 · Current",
         "file": "thematic-direction.md",
-        "updated": "2026-09-19"
+        "updated": "2026-09-21",
+        "description": "Thematic direction with an additional survival-horror and action preference, without new canon."
       }
     ]
   },
@@ -161,12 +187,12 @@
     "title": "MAGIARCHY Prose Style",
     "topic": "Writer's Style Reference",
     "file": "prose-style.md",
-    "updated": "2026-09-19",
-    "description": "The active house style, with concise guidance for consequential intimacy and changes between sacred, political, intimate, and mundane registers.",
+    "updated": "2026-09-21",
+    "description": "The active house style, including close sensory dread, legible action, relief, and changes between sacred, political, intimate, and mundane registers.",
     "speakers": [
       "Author's Desk"
     ],
-    "defaultVersion": "v12",
+    "defaultVersion": "v13",
     "versions": [
       {
         "id": "v1",
@@ -247,10 +273,17 @@
       },
       {
         "id": "v12",
-        "label": "v12 · Current",
-        "file": "prose-style.md",
+        "label": "v12 · Archived",
+        "file": "prose-style-v12.md",
         "updated": "2026-09-19",
         "description": "The active house style, with concise guidance for consequential intimacy and changes between sacred, political, intimate, and mundane registers."
+      },
+      {
+        "id": "v13",
+        "label": "v13 · Current",
+        "file": "prose-style.md",
+        "updated": "2026-09-21",
+        "description": "Close sensory dread, readable action, character competence, and relief within the existing house style."
       }
     ]
   },
@@ -352,12 +385,12 @@
     "title": "Prose and Scene Guidance",
     "topic": "Editorial Reference",
     "file": "prose-and-scene-guidance.md",
-    "updated": "2026-09-19",
-    "description": "Practical revision checks and a scene-level inclusion test for intimate details, with ordinary life and duty kept primary.",
+    "updated": "2026-09-21",
+    "description": "Practical revision checks for experienced danger and intimate details, preserving character competence, ordinary life, duty, and canon boundaries.",
     "speakers": [
       "Author's Desk"
     ],
-    "defaultVersion": "v10",
+    "defaultVersion": "v11",
     "versions": [
       {
         "id": "v1",
@@ -424,10 +457,17 @@
       },
       {
         "id": "v10",
-        "label": "v10 · Current",
-        "file": "prose-and-scene-guidance.md",
+        "label": "v10 · Archived",
+        "file": "prose-and-scene-guidance-v10.md",
         "updated": "2026-09-19",
         "description": "Practical revision checks and a scene-level inclusion test for intimate details, with ordinary life and duty kept primary."
+      },
+      {
+        "id": "v11",
+        "label": "v11 · Current",
+        "file": "prose-and-scene-guidance.md",
+        "updated": "2026-09-21",
+        "description": "Practical revision checks for danger, agency, geography, consequences, and relief alongside existing scene boundaries."
       }
     ]
   },

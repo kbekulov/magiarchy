@@ -64,7 +64,7 @@ try {
       }
       for (const width of [390, 1440]) {
         await page.setViewportSize({ width, height: 900 });
-        for (const slug of ['prose-style', 'prose-and-scene-guidance', 'prose-style-history', 'world-foundation', 'holumn-incidents-and-testimonies', 'character-intimacy-and-sexuality', 'character-image-production', 'thematic-direction', 'thematic-audit-2026-09-19']) {
+        for (const slug of ['prose-style', 'prose-and-scene-guidance', 'prose-style-history', 'world-foundation', 'holumn-incidents-and-testimonies', 'character-intimacy-and-sexuality', 'character-image-production', 'thematic-direction', 'dread-and-action-direction', 'thematic-audit-2026-09-19']) {
           await visit(`docs.html?doc=${slug}`);
           const record = JSON.parse(fs.readFileSync(path.join(root, 'docs/index.json'), 'utf8')).find(d => d.slug === slug);
           assert.equal(await page.locator('#document-source-link').getAttribute('href'), `docs/${record.file}`);
@@ -94,6 +94,17 @@ try {
             await page.locator('#document-reader h1').scrollIntoViewIfNeeded();
             await page.screenshot({ path: `test-results/${engine}-thematic-direction-${width}.png` });
           }
+          if (slug === 'dread-and-action-direction') {
+            assert.ok(await page.getByRole('heading', { name: 'Holumns retain their own nature', exact: true }).count());
+            assert.ok(await page.locator('#document-reader a[href^="https://blog.playstation.com/"]').count() >= 5, 'Research citations missing');
+            await page.locator('#document-reader h1').scrollIntoViewIfNeeded();
+            await page.screenshot({ path: `test-results/${engine}-dread-direction-${width}.png` });
+          }
+        }
+        for (const [slug, version] of [['prose-style', 'v12'], ['prose-and-scene-guidance', 'v10'], ['thematic-direction', 'v1']]) {
+          await visit(`docs.html?doc=${slug}&version=${version}`);
+          assert.equal(await page.locator('#document-source-link').getAttribute('href'), `docs/${slug}-${version}.md`);
+          assert.equal(await page.locator('#document-reader a[href$="docs.html?doc=dread-and-action-direction"]').count(), 0, 'New guidance leaked into a historical version');
         }
         await visit('docs.html?doc=prose-style&version=v10');
         assert.equal(await page.locator('#document-source-link').getAttribute('href'), 'docs/prose-style-v10.md');

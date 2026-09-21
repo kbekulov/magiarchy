@@ -45,12 +45,6 @@ Keep objects available for ordinary use. A cup occupies hands, a jacket can be l
 
 Preserve awkwardness, uneven attention, and occasional bluntness. Do not roughen clean prose with artificial mistakes, and do not polish every section into equal length. Appearance states observable facts without defending the outfit.
 
-## Dread and action
-
-Use [Dread and Action Direction](../docs.html?doc=dread-and-action-direction) when a scene involves frightening exploration, a Holumn, or physical danger. Keep the reader close to what the focal character can perceive and attempt. Establish the useful geography before speed matters. Let a sound, distance, bodily limitation, or altered familiar detail change a decision instead of repeatedly naming the atmosphere as sinister.
-
-During action, keep cause, movement, and consequence legible. During anticipation, allow observation and hesitation enough time to become uncomfortable. Neither mode requires uniformly short sentences. Expertise should produce effective choices without guaranteeing safety; retreat and rescue can be substantial achievements. Give survival, quiet, and existing character-specific humor room to register. Do not explain away the remaining horror after a temporary success.
-
 ## Intimacy and changes of register
 
 Sex occupies little space in the larger story but can change much. A joke, glance, memory, or sensual detail should earn its place through this character's attention or a specific consequence. Established intimacy does not displace work and ordinary life. The [Intimacy Reference](../docs.html?doc=character-intimacy-and-sexuality) owns the fuller inclusion test.
