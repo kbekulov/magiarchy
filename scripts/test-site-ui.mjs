@@ -70,6 +70,19 @@ try {
           assert.equal(await page.locator('#document-source-link').getAttribute('href'), `docs/${record.file}`);
           assert.ok(await page.locator('#document-reader h1').isVisible(), `${slug}: missing document text`);
           if (record.versions.length > 1) assert.equal(await page.getByRole('combobox', { name: 'Choose version' }).inputValue(), record.defaultVersion);
+          if (slug === 'character-image-production') {
+            assert.ok(await page.getByRole('heading', { name: 'Kyrien: fixed character design', exact: true }).isVisible());
+            await page.getByRole('combobox', { name: 'Choose version' }).selectOption('v9');
+            await page.waitForURL('**/docs.html?doc=character-image-production&version=v9');
+            await page.waitForLoadState('networkidle');
+            await page.locator('#document-reader h1').waitFor();
+            assert.equal(await page.locator('#document-source-link').getAttribute('href'), 'docs/character-image-production-v9.md');
+            assert.equal(await page.getByRole('heading', { name: 'Kyrien: fixed character design', exact: true }).count(), 0);
+            await page.getByRole('combobox', { name: 'Choose version' }).selectOption(record.defaultVersion);
+            await page.waitForURL(`**/docs.html?doc=character-image-production&version=${record.defaultVersion}`);
+            await page.waitForLoadState('networkidle');
+            await page.locator('#document-reader h1').waitFor();
+          }
           assert.ok(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1), `${slug}/${width}: overflow`);
           if (slug === 'prose-style') {
             assert.equal(await page.locator('#document-reader a[href$="docs.html?doc=prose-style-history"]').count(), 1);

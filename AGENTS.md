@@ -51,6 +51,8 @@ Before starting any new user request, check the repository's `backlog/` folder f
 
 ## Product and design direction
 
+- Before describing or illustrating Kyrien, read his fixed design requirements in `docs/character-image-production.md`. Preserve a clear anatomical middle part, subtly tired eyes, a lean lightly built frame, lived-in mobile elegance, and only a modest height difference beside Lynleit (180 cm / 169 cm). These author-confirmed requirements override conflicting older artwork without changing his approved clothing or capabilities.
+
 - Questions to Be Answered and Contradictions to Resolve are latest-only living ledgers. Do not create versions for these two documents. Other versioned documents, Chapters, and Moments share compact Previous, version dropdown, Next, and Latest controls. Latest means newest registered revision, not necessarily the author-selected canon/default. Preserve direct version URLs and distinguish current/canon status.
 
 - Timeline event counts are flexible. Insert phases wherever continuity needs them; derive display numbering from order while preserving stable IDs. Use shared Arc bands and a labelled color key across Story, Moments, and character timelines. Arc names belong to this grouping, not episode titles. Do not invent chronology for unplaced events.

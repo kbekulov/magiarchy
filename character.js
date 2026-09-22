@@ -53,12 +53,13 @@ const profileSeeds = [
   {
     slug: 'kyrien', name: 'Kyrien', code: 'IND · 002', role: 'Independent operator and later MSF director', ageBand: 'Late twenties', factions: ['Independent', 'MSF'], affiliationTimeline: [{ name: 'Independent', stage: 'Opening' }, { name: 'MSF', stage: 'Later director' }], mbti: { type: 'ISTP', detail: 'Ti-Se-Ni working model; INTJ alternative', status: 'Suspected' }, accent: 'amber', materialStatus: 'Canon traits + mock details',
     summary: 'A non-Magus who begins as Lynleit\'s secret recruit and later becomes director of MSF.',
-    visual: 'A blue open-neck shirt, black tailored trousers, black leather shoes, and a silver cross necklace. His beige matte leather jacket has an upright stand collar and no pockets.', palette: 'Dusty blue, beige, charcoal, black, silver',
+    visual: 'A blue open-neck shirt, black tailored trousers, black leather shoes, and a silver cross necklace. His beige matte leather jacket has an upright stand collar and no pockets. The clothes fall naturally, with light creasing from wear.', palette: 'Dusty blue, beige, charcoal, black, silver',
     physical: [
-      ['Hair', 'Short, tousled dark brown hair with a parted fringe.'],
-      ['Eyes', 'Grey-blue.'],
-      ['Height and build', '180 cm with a slender, lightly built frame.'],
-      ['Distinguishing features', 'Fair complexion, refined angular features, deep-set expressive eyes, and a composed, slightly aloof gaze with a sharp, elegant edge.']
+      ['Hair', 'Short, tousled dark brown hair with a clear middle part. The front sections fall to either side of his forehead.'],
+      ['Eyes', 'Grey-blue, with slightly heavy upper lids and subtle shading beneath the eyes. He habitually looks a little tired; his gaze remains alert.'],
+      ['Height and build', '180 cm, slender and lightly built, with restrained shoulder width, a narrow torso, and lean limbs without pronounced muscle definition. He is modestly taller than Lynleit at 169 cm.'],
+      ['Distinguishing features', 'Fair complexion, refined angular features, deep-set expressive eyes, and a composed, slightly aloof gaze with a sharp, elegant edge.'],
+      ['Bearing', 'Balanced, relaxed posture and economical movement.']
     ],
     equipment: [{ label: 'Personal field object', title: "Kyrien's whiskey flask", meta: ['Small personal flask', 'Whiskey', 'Consistent pocket'], detail: 'Kyrien reserves a small drink for exceptional danger, exhaustion, distress, or a difficult personal moment. He sometimes calls it medicine. Lynleit learns its usual pocket.', href: 'items.html?item=kyriens-whiskey-flask' }],
     personalitySummary: 'Kyrien speaks little, rarely smiles, and wants to win. Cards, chess, and a gunfight can all provoke the same stubbornness. Cheating can make him abandon the safer objective. He notices things others miss in his surroundings and in unfolding events, looking first for danger in unfamiliar behavior. An explanation that seems faulty bothers him even when the method works. He keeps thinking about it in the background, sometimes reaching an answer and acting before he can explain how he got there. If he is wrong, he wants to find the assumption that misled him and avoid repeating the mistake.',

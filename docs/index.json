@@ -124,12 +124,12 @@
     "title": "Character Image Production",
     "topic": "Visual Production Standard",
     "file": "character-image-production.md",
-    "updated": "2026-09-20",
-    "description": "Template-first production and approved-image validation after retirement of archived production sources.",
+    "updated": "2026-09-23",
+    "description": "Template-first production, approved-image validation, and Kyrien's fixed appearance across prose and artwork.",
     "speakers": [
       "Author's Desk"
     ],
-    "defaultVersion": "v9",
+    "defaultVersion": "v10",
     "versions": [
       {
         "id": "v1",
@@ -189,10 +189,17 @@
       },
       {
         "id": "v9",
-        "label": "v9 · Current",
-        "file": "character-image-production.md",
+        "label": "v9 · Archived",
+        "file": "character-image-production-v9.md",
         "updated": "2026-09-20",
         "description": "Template-first production and approved-image validation after retirement of archived production sources."
+      },
+      {
+        "id": "v10",
+        "label": "v10 · Current",
+        "file": "character-image-production.md",
+        "updated": "2026-09-23",
+        "description": "Kyrien's fixed center part, mildly tired eyes, lean frame, modest height difference beside Lynleit, and mobile elegance."
       }
     ]
   },

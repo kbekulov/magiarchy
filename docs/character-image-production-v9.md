@@ -33,34 +33,6 @@ Use front, back, and other available views from the same design version together
 
 If a template and a confirmed character feature conflict, preserve the confirmed feature. If the intended design or version is unclear, ask the author rather than inventing a resolution.
 
-## Kyrien: fixed character design
-
-These author-confirmed requirements apply to descriptions, portraits, full-body illustrations, reference sheets, manga panels, and chibis. They clarify Kyrien's identity rather than redesigning him. Where older artwork or ambiguous wording conflicts, these requirements take priority. Preserve his established face and clothing designs. The [selected front/back reference](gallery.html?resource=kyrien-beige-jacket) owns his canon outfit; the three-variant concept sheets remain costume studies.
-
-### Hair: always a middle part
-
-Keep a clearly identifiable central part, with the front sections separating at the middle of his forehead and falling to either side. Tousling, wind, and movement may displace individual strands without erasing that structure. Do not substitute a side part, a predominantly one-sided fringe, an unbroken fringe across the separation, or swept-back hair that removes it. In three-quarter views, locate the part at the anatomical center of his head, not the center of the visible silhouette. A rear view need not expose the frontal part through the back of his hair.
-
-### Height: modestly taller than Lynleit
-
-Kyrien is 180 cm; Lynleit is 169 cm. On the same ground plane he is only modestly taller, never a head taller or looming over a miniature-looking Lynleit. Account for posture, footwear, and perspective without enlarging his actual stature. Do not lengthen his legs or torso, shrink his head, or give him heroic proportions. His expression, bearing, and composure carry his presence.
-
-### Eyes: habitual mild tiredness
-
-Use slightly heavy upper eyelids, restrained eye openness, and understated definition or shading beneath the eyes. This is his baseline, including ordinary scenes, not a feature reserved for extreme exhaustion. He should suggest someone who rarely gets quite enough rest while remaining observant, responsive, intelligent, and sharp. Expressions can change without defaulting to bright, wide-open, freshly rested eyes. Avoid severe bags, illness, constant misery, or a vacant half-asleep expression. Do not invent a medical cause or sleep history from the visual requirement.
-
-### Elegance: lived-in and mobile
-
-Preserve taste, fit, restraint, and self-possession in clothing that settles and creases naturally on an active body. His stance is balanced and relaxed, readily able to move; avoid rigid ceremonial posing outside the deliberate reference-sheet pose. Even stillness should suit someone accustomed to walking, travelling, climbing, escaping, changing locations, and spending time away from comfortable interiors. He can be polished without being pristine. Do not make him ornamental, excessively aristocratic, filthy, ragged, heavily weathered, or overloaded with tactical equipment to convey this. Preserve the established wardrobe rather than inventing a new outfit or accessory.
-
-### Build: lean and lightly built
-
-Use restrained shoulder width, a relatively narrow torso, lean arms and legs, and natural male proportions without conspicuous muscular development. Reject a broad action-hero chest, oversized shoulders, a thick neck, large biceps, bulky arms, heavy muscular thighs, an exaggerated V-shaped torso, or prominently sculpted muscles. Clothing must not suggest that hidden build by stretching across a broad chest or upper arms. He is neither gym-built nor frail. Convey capability through coordination, balance, endurance, precision, and economical movement. His established strength relative to body weight and obstacle-climbing ability remain unchanged; a light frame is not a loss of competence.
-
-### Acceptance check
-
-Kyrien must read as lean, center-parted, subtly tired-looking, and elegantly dressed for an active life. Beside Lynleit, check their shared ground plane and modest height difference. A towering, muscular, broad-shouldered, freshly rested, perfectly posed man with a side-swept fringe is an incorrect interpretation even if otherwise attractive or recognizable. Review these features at full resolution and at the intended display size. Chibi simplification must retain the part, restrained eyes, and relative size without importing heroic bulk.
-
 ## Generation brief
 
 Record which references the request uses, what each controls, and which character-specific differences must be preserved. Distinguish the pose/proportion template from the character-identity reference. State the intended view and design version, and identify any approved change explicitly.

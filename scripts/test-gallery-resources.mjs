@@ -30,6 +30,10 @@ export async function testGalleryResources(page, origin, engine) {
     await visit('character.html?character=kyrien');
     assert.equal(await page.locator('#character-profile-portrait img').count(), 0, 'Withdrawn portrait still displayed');
     assert.ok(await page.locator('#character-profile-portrait .profile-portrait-placeholder').isVisible());
+    const profileText = await page.locator('main').innerText();
+    for (const detail of ['clear middle part', 'slightly heavy upper lids', 'restrained shoulder width', 'modestly taller than Lynleit', 'Balanced, relaxed posture']) {
+      assert.ok(profileText.includes(detail), `Kyrien profile missing fixed design: ${detail}`);
+    }
   }
   await visit('gallery.html');
   assert.equal(await page.locator('.gallery-card[data-character~="kyrien"]').count(), 2);
@@ -165,7 +169,9 @@ export async function testGalleryResources(page, origin, engine) {
     assert.deepEqual(fs.readFileSync(await download.path()), fs.readFileSync(file.path));
   }
   await visit('docs.html?doc=character-image-production');
-  assert.equal(await page.getByRole('combobox', { name: 'Choose version' }).inputValue(), 'v9');
+  const productionGuide = JSON.parse(fs.readFileSync('docs/index.json', 'utf8')).find(record => record.slug === 'character-image-production');
+  assert.equal(await page.getByRole('combobox', { name: 'Choose version' }).inputValue(), productionGuide.defaultVersion);
+  assert.ok(await page.getByRole('heading', { name: 'Kyrien: fixed character design', exact: true }).isVisible());
   assert.ok(await page.getByRole('heading', { name: 'Separating supplied T-pose sheets' }).isVisible());
   assert.ok(await page.getByRole('heading', { name: 'Author-approved anatomy corrections' }).isVisible());
   assert.ok(await page.getByRole('heading', { name: 'Rear-view hands' }).isVisible());
