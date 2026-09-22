@@ -14,13 +14,11 @@ This writer reference separates what happens from what a character knows and wha
 
 ## The failed attempt and recruitment
 
-**Event:** Kyrien's military-police commander father witnesses magic while surviving a fugitive's assault and tells nobody. Officials linked to the Magiarchy engineer his persecution and obtain sanction to murder him, presenting it as suicide. Years later, the inquiry Kyrien funds establishes distorted evidence but a closed review protects the prosecutor. After a separate shop humiliation of his mother, Kyrien attempts to kill the newly appointed Prosecutor General at a dinner protected partly by MSF. He escapes and is detained later; Lynleit is nearly harmed without his knowing she attended.
+**Event:** Kyrien's attack on an MSF-protected politician nearly harms Lynleit. The MSF transfer clause subsequently permits her to take control of his case and offer conditional freedom.
 
-**Reader:** Chapter v3 dramatizes the legal success and refusal, the shop, the represented interrogation, and the recruitment. Its separate Lynleit viewpoint identifies suppression. The father's actual magical encounter and murder are full archive history, not directly witnessed scenes in this Chapter. The exact means by which the attempt fails remains undescribed.
+**Reader:** The current Chapter is an outline that states both facts. It does not yet establish a final scene's reveal order or dialogue.
 
-**Characters:** Kyrien knows his family was wronged but not its magical reason. His father disclosed nothing. Lynleit conceals her attendance, her recognition of suppression, and magic itself. Her contract-based proposal requires legal review and official approval; it does not give her unlimited control of his case. Felix and Reiner are the only people in her established circle whom she tells; Fionn is not informed. Kyrien's lawyer remains his representative.
-
-**Later direction:** The prosecutor's own magical status is unresolved. After Kyrien openly knows about Magi, a distinct new offence may allow Lynleit to offer revenge, conditional on genuine proof under a still-undefined prohibition. This need not bring redress for the original protected persecution. Do not give either character this later case in the interrogation.
+**Characters:** Lynleit knows she was nearly harmed. Kyrien does not know she was present, and she never tells him. Felix and Reiner eventually know of his recruitment; Fionn is not informed.
 
 **Source:** [After the Failed Attempt](../story.html?chapter=after-the-failed-attempt), [the interrogation Moment](../moments.html?moment=interrogation-after-the-failed-attempt).
 
@@ -30,7 +28,7 @@ This writer reference separates what happens from what a character knows and wha
 
 **Reader:** The missing crews' fate is suggested by the empty boats and subsequent attack, not witnessed directly. Blue flame and water walking are shown. The girl's head tilt can suggest bewilderment; it does not deliver a full account of her rules.
 
-**Characters:** Maren reports hands on her legs. Lynleit sees them beneath the water; Kyrien alone witnesses her standing above it. This is his first unmistakable exposure to magic, following an origin, failed attempt, interview, and initial service in which he remains ignorant of it. Reiner notices that Lynleit and Kyrien have not reached the city bank. Kyrien tells nobody; Lynleit initially only suspects what he saw.
+**Characters:** Maren reports hands on her legs. Lynleit sees them beneath the water; Kyrien alone witnesses her standing above it. Reiner notices that Lynleit and Kyrien have not reached the city bank. Kyrien withholds what he saw from Lynleit and the others.
 
 **Limit:** The supporting surface holds the hands below Lynleit. Its mechanism, and the precise first grip that pulls Maren from the boat, remain open. The encounter does not establish a universal prohibition on hands crossing water.
 

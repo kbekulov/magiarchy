@@ -52,10 +52,10 @@
     "slug": "after-the-failed-attempt",
     "number": "Chapter 03",
     "title": "After the Failed Attempt",
-    "status": "Placeholder draft",
-    "file": "after-the-failed-attempt-v2.md",
-    "updated": "2026-09-12",
-    "description": "After Kyrien's failed attack on an MSF-protected politician nearly harms Lynleit, she questions him without revealing that she was present and converts his prison risk into a secret alliance.",
+    "status": "Scene draft",
+    "file": "after-the-failed-attempt-v3.md",
+    "updated": "2026-09-23",
+    "description": "Years of work buy Kyrien proof but no justice. After his failed attack on the Prosecutor General, Lynleit questions him and offers confidential service while his lawyer negotiates the terms.",
     "characters": [
       "Lynleit",
       "Kyrien",
@@ -65,14 +65,19 @@
     "timelinePhase": "the-hidden-wager",
     "timelineLabel": "The Hidden Wager",
     "events": [
-      "Kyrien's attempt on an MSF-protected politician fails because the target secretly belongs to the Magi world.",
-      "Lynleit is present and almost harmed during the attempt, but Kyrien does not know she was there and she never tells him.",
-      "Lynleit takes control of his interrogation and offers conditional freedom in exchange for becoming her secret helper.",
-      "She recruits him because her intuition warns her that a danger she cannot yet identify is approaching.",
-      "Lynleit later tells only Felix and Reiner, while even Fionn remains outside the compartment.",
-      "Reiner trusts Lynleit's judgment, while Felix accepts the decision without trusting Kyrien."
+      "Kyrien funds years of legal work while supporting his mother. Credible evidence is found, but a closed review protects the prosecutor.",
+      "After an interval, strangers humiliate his mother in a shop. He decides to kill the prosecutor only after getting her home and attending to her needs.",
+      "The newly appointed Prosecutor General survives the dinner attack. Kyrien escapes immediate capture, sees no unmistakable magic, and is detained later.",
+      "Lynleit nearly suffers harm at the dinner but conceals her attendance during questioning.",
+      "With his lawyer present, Kyrien describes his family's treatment without confessing. Lynleit helps confirm his mother's welfare.",
+      {
+        "text": "His refusal to repeat his mother's apology suggests how difficult the humiliation remains to discuss.",
+        "status": "inferred"
+      },
+      "Lynleit privately recognizes suppression and her need for an ally outside her circle. Kyrien accepts paid confidential work subject to legal review of release, care, and employment terms.",
+      "Lynleit tells Felix and Reiner, not Fionn. Reiner trusts her judgment; Felix accepts without trusting Kyrien."
     ],
-    "defaultVersion": "v2",
+    "defaultVersion": "v3",
     "versions": [
       {
         "id": "v1",
@@ -93,7 +98,7 @@
       },
       {
         "id": "v2",
-        "label": "v2 · Current",
+        "label": "v2 · Archived",
         "file": "after-the-failed-attempt-v2.md",
         "updated": "2026-09-12",
         "description": "After Kyrien's failed attack on an MSF-protected politician nearly harms Lynleit, she questions him without revealing that she was present and converts his prison risk into a secret alliance.",
@@ -107,9 +112,31 @@
           "Reiner trusts Lynleit's judgment, while Felix accepts the decision without trusting Kyrien."
         ],
         "contentKind": "outline"
+      },
+      {
+        "id": "v3",
+        "label": "v3 · Current",
+        "file": "after-the-failed-attempt-v3.md",
+        "updated": "2026-09-23",
+        "description": "Years of work buy Kyrien proof but no justice. After his failed attack on the Prosecutor General, Lynleit questions him and offers confidential service while his lawyer negotiates the terms.",
+        "status": "Scene draft",
+        "events": [
+          "Kyrien funds years of legal work while supporting his mother. Credible evidence is found, but a closed review protects the prosecutor.",
+          "After an interval, strangers humiliate his mother in a shop. He decides to kill the prosecutor only after getting her home and attending to her needs.",
+          "The newly appointed Prosecutor General survives the dinner attack. Kyrien escapes immediate capture, sees no unmistakable magic, and is detained later.",
+          "Lynleit nearly suffers harm at the dinner but conceals her attendance during questioning.",
+          "With his lawyer present, Kyrien describes his family's treatment without confessing. Lynleit helps confirm his mother's welfare.",
+          {
+            "text": "His refusal to repeat his mother's apology suggests how difficult the humiliation remains to discuss.",
+            "status": "inferred"
+          },
+          "Lynleit privately recognizes suppression and her need for an ally outside her circle. Kyrien accepts paid confidential work subject to legal review of release, care, and employment terms.",
+          "Lynleit tells Felix and Reiner, not Fionn. Reiner trusts her judgment; Felix accepts without trusting Kyrien."
+        ],
+        "contentKind": "scene"
       }
     ],
-    "contentKind": "outline"
+    "contentKind": "scene"
   },
   {
     "slug": "the-name-left-behind",

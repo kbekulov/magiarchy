@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-23",
+  "updated": "2026-09-19",
   "sections": [
     {
       "id": "river-operation",
@@ -167,74 +167,7 @@
       ],
       "momentFact": {
         "interrogation-after-the-failed-attempt": 3
-      },
-      "versions": [
-        "v1",
-        "v2"
-      ]
-    },
-    {
-      "id": "pressure-lynleit-interrogation-v3",
-      "section": "relationships-under-pressure",
-      "kind": "female",
-      "title": "Lynleit",
-      "basis": "Suspected INFJ with strong Fe; duty, guilt, and concealed anger",
-      "text": "Let the welfare check be a practical response to what she has just learned. It need not soften every later question or erase her wish to recruit him. Her attention to his mother's needs is not flirtation, and she must never threaten the mother to obtain cooperation.",
-      "chapterMatch": "Is someone with her now?",
-      "chapters": [
-        "after-the-failed-attempt"
-      ],
-      "moments": [
-        "interrogation-after-the-failed-attempt"
-      ],
-      "momentFact": {
-        "interrogation-after-the-failed-attempt": 8
-      },
-      "versions": [
-        "v3"
-      ]
-    },
-    {
-      "id": "pressure-kyrien-family-v3",
-      "section": "relationships-under-pressure",
-      "kind": "male",
-      "title": "Kyrien",
-      "basis": "Suspected ISTP; close observation, legal experience, and family care",
-      "text": "Keep his attention on the missed shift and the neighbour's availability as well as the questioning. His guarded replies come from this history, not an assumption that men cannot speak about distress. Let him follow competent advice rather than suddenly become an expert in law.",
-      "chapterMatch": "The shift he had missed would have paid the neighbour",
-      "chapters": [
-        "after-the-failed-attempt"
-      ],
-      "moments": [
-        "interrogation-after-the-failed-attempt"
-      ],
-      "momentFact": {
-        "interrogation-after-the-failed-attempt": 7
-      },
-      "versions": [
-        "v3"
-      ]
-    },
-    {
-      "id": "pressure-lawyer-proof-v3",
-      "section": "relationships-under-pressure",
-      "kind": "story",
-      "title": "Truth without accountability",
-      "basis": "Nasu advisory framework; professional competence and institutional refusal",
-      "text": "Keep the original and amended statement concrete enough for Kyrien and the reader to understand the legal achievement. The later closed review should defeat accountability without making the lawyer's work fraudulent or useless. Do not give every official the same knowledge of the magical reason.",
-      "chapterMatch": "The preliminary review supports us",
-      "chapters": [
-        "after-the-failed-attempt"
-      ],
-      "moments": [
-        "interrogation-after-the-failed-attempt"
-      ],
-      "momentFact": {
-        "interrogation-after-the-failed-attempt": 1
-      },
-      "versions": [
-        "v3"
-      ]
+      }
     },
     {
       "id": "pressure-card-tells",

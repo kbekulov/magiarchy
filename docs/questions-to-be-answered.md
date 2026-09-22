@@ -62,7 +62,7 @@ Story, character, world, relationship, institution, location, and event question
 | Natalia and Lester | Which ordinary case interaction first makes Natalia respond to Lester as a man rather than an anomalous condition, and how does he recognize the change without forcing either of them to name it? | 5% |
 | Cult of Inanna | Do any ancestral covenants still bind Fionn's lineage, and what consequences, if any, exist beyond Mikhail's account of its history? | 10% |
 | Arc 0 | Which formative incidents become canon, when does Fionn remarry, and is MSF being founded or restructured? | 10% |
-| Kyrien’s family | What are his mother’s and sister’s identities, circumstances, and later fates, and how old is Kyrien at his father’s death? | 10% |
+| Kyrien’s family | What are his parents' and sister's names, how old is he at his father's death, and what are his sister's circumstances and his mother's later fate? His mother needs his care at recruitment. | 10% |
 | Core mystery | What logically defensible worldview and incompatible objective does each faction bring to Fionn, MSF, the Spill, and Narvea? | 10% |
 | Sexual tension | Which current tension records beyond Lynleit and Kyrien, Yulia and Hiyu, Fionn and Helena, Natalia and Lester, Lynleit and Felix, and Sherie and Felix become visible story dynamics rather than remaining conditional? | 10% |
 | Lynleit | Which of Lynleit's later actions around MSF missions can plausibly read as help, observation, manipulation, or causation before her intention becomes clear? | 10% |
@@ -129,7 +129,9 @@ These questions determine sequence, event placement, reveal timing, or elapsed t
 | Core mystery | Which incompatible agendas intend which outcomes around Fionn, and how do they accidentally cooperate to cause a death that none completely controls? | 45% |
 | Park trespass | How do Hiyu and Yulia bypass the cordon, what happens to them inside, and what evidence survives their experience? | 45% |
 | Hotel refuge | What does Kyrien witness when Lynleit breaks down at the hotel, and what changes between them by morning? | 45% |
-| Kyrien | What are the protected politician's name and office, what role they played in Kyrien's father's death, what exact physical sequence unfolds during the failed attempt, and does the survivor later retaliate against Lynleit? | 50% |
+| Kyrien | What is the Prosecutor General's name and own magical status, who authorized and carried out his father's killing, and what exact physical sequence makes the dinner attempt fail without revealing magic to Kyrien? | 50% |
+| Prosecutor General | What later abuse, prohibition, proof, and jurisdiction make punishment possible? Ordinary political involvement is not enough. When does Lynleit offer revenge, and does punishment actually occur? | 50% |
+| Kyrien's obligations | How does his mother's continuing care work across later assignments, and what durable cover protects his paid service from Fionn and Helena? The neighbour and written terms are v3 scene staging. | 50% |
 | Character typing | Does the author confirm Lynleit's INFJ and Felix's ENFP working readings, and what further behavior settles Felix's judging function and Kyrien's ISTP versus INTJ uncertainty? | 50% |
 | Relationship | At what point in the opening chapters does Lynleit reveal Kyrien's recruitment to Felix and Reiner, where does the disclosure occur, and how much time remains before Fionn's assassination? | 60% |
 | Boat operation | Does the submerged blue flame leave a lasting injury on the Drowned Choir, and what does the girl's refusal to pursue Lynleit reveal about its limits? | 65% |

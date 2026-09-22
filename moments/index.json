@@ -1,5 +1,50 @@
 [
   {
+    "slug": "the-prosecutors-return",
+    "code": "MOM-026",
+    "title": "The Prosecutor's Return",
+    "status": "Story direction",
+    "placementStatus": "Unplaced",
+    "timelinePhase": null,
+    "timelineLabel": "Unplaced",
+    "sequence": 26,
+    "sceneType": "Political reckoning",
+    "thread": "Kyrien's family and the Prosecutor General",
+    "location": "Unspecified",
+    "summary": "After Kyrien openly knows about Magi, a new offence by the Prosecutor General gives Lynleit a possible means of offering revenge. She requires proof; the original persecution remains institutionally protected.",
+    "purpose": "Separate personal revenge, a genuine new violation, and the accountability the family was denied.",
+    "characters": [
+      {
+        "name": "Lynleit",
+        "slug": "lynleit"
+      },
+      {
+        "name": "Kyrien",
+        "slug": "kyrien"
+      }
+    ],
+    "characterAnchors": [],
+    "known": [
+      "The Prosecutor General remains a recurring professional contact whom Lynleit treats civilly despite her dislike.",
+      "This later development follows Kyrien openly learning about Magi, with Lynleit aware of that knowledge.",
+      "A new transgression brings the prosecutor within the Magi framework's punitive jurisdiction.",
+      "Lynleit deliberately offers Kyrien the possibility of revenge as an incentive, and he recognizes the manipulation.",
+      "She requires proof of a genuine violation serious enough for the contemplated punishment.",
+      "The new offence is separate from the original persecution of his father, which remains institutionally protected.",
+      "Any eventual punishment need not include an admission of responsibility or redress for Kyrien's family."
+    ],
+    "openQuestions": [
+      "What is the exact new offence, and which previously established prohibition does it breach?",
+      "How does punitive jurisdiction apply whether or not the prosecutor is himself a Magus?",
+      "Does the offence involve abuse of suppression or Magiarchy connections to control state leadership or remove obstructing officials?",
+      "When does this occur, what evidence is found, and does punishment take place?"
+    ],
+    "continuityBefore": "Years of legal work fail to obtain accountability for the father's murder. Kyrien's dinner attempt fails; Lynleit recruits him without disclosing magic. The river supplies his first unmistakable exposure. Professional contact with the prosecutor continues.",
+    "continuityAfter": "The outcome and its effect on Kyrien, Lynleit, his mother's life, and the institutions involved remain undecided. A possibility of revenge is not a confirmed killing or legal vindication.",
+    "chapterSlug": null,
+    "updated": "2026-09-23"
+  },
+  {
     "slug": "only-eyes-for-you",
     "code": "MOM-025",
     "title": "Only Eyes for You",
@@ -305,7 +350,7 @@
     "slug": "interrogation-after-the-failed-attempt",
     "code": "MOM-001",
     "title": "After the Failed Attempt",
-    "status": "Scene seed",
+    "status": "Scene draft",
     "placementStatus": "Early chronology confirmed",
     "timelinePhase": "the-hidden-wager",
     "timelineLabel": "The Hidden Wager",
@@ -313,8 +358,8 @@
     "sceneType": "Confrontation",
     "thread": "Lynleit and Kyrien",
     "location": "Police office",
-    "summary": "Lynleit interrogates Kyrien after his failed attempt against an MSF-protected Magus politician nearly harms her, then converts his prison risk into a secret recruitment without telling him she was present.",
-    "purpose": "Lynleit recruits Kyrien under threat of imprisonment without revealing that his attack nearly harmed her.",
+    "summary": "Kyrien's legal campaign establishes credible evidence but cannot obtain accountability. After his failed attack at the Prosecutor General's dinner, Lynleit questions him with his lawyer present and offers confidential paid work.",
+    "purpose": "Lynleit gains cooperation without a confession or trust, while Kyrien tries to get home to his mother.",
     "characters": [
       {
         "name": "Lynleit",
@@ -336,40 +381,33 @@
       }
     ],
     "known": [
-      "Kyrien has made a failed attempt to assassinate a politician who belongs to the Magi world.",
-      "The politician is under MSF protection when Kyrien makes the attempt.",
-      "Lynleit is present and is almost harmed unintentionally during the failed attack.",
-      "Lynleit knows Kyrien nearly harmed her, but Kyrien does not know she was present.",
-      "Lynleit never tells Kyrien that his attempt placed her in danger.",
-      "The immediate aftermath brings him into a police office.",
-      "Lynleit conducts the interrogation.",
-      "Lynleit invokes an extraordinary transfer clause in MSF's government service contract, drafted under Fionn for extraordinary threats.",
-      "The transfer gives her control of Kyrien's case, and she does not disclose the secret recruitment to Fionn.",
-      "Kyrien faces prison unless he agrees to become Lynleit's secret helper.",
-      "His freedom remains conditional on accepting Lynleit's demands, leaving him confined to her whims.",
-      "Lynleit's private strategy is to keep Kyrien as a secret trump card against Helena.",
-      "The recruitment occurs within the first few chapters, well before Fionn's assassination.",
-      "Lynleit acts because her intuition warns her of near-future danger before she has enough evidence to define it.",
-      "Lynleit is Fionn's biological daughter. Helena is Lynleit's stepmother and Fionn's wife.",
-      "Lynleit already suspects Helena of being an enemy despite that family relationship.",
-      "Kyrien's father held an important position in Narvea's military.",
-      "The targeted politician was involved in causing his father's death.",
-      "Kyrien obtained the knowledge and tools for the attempt through his father's military background.",
-      "The attempt fails solely because the politician belongs to the Magi world.",
-      "The politician's survival later creates consequences for Lynleit.",
-      "Lynleit notices Helena probing Fionn's schedules, visitors to the family house, trusted officers, and Lynleit's own travel.",
-      "Lynleit suspects murder because Helena appears to be studying the family too carefully."
+      "Kyrien works for years to pay competent lawyers while caring for his mother.",
+      "The preliminary inquiry confirms knowingly distorted evidence. A closed review protects the prosecutor under a confidential national-security mandate.",
+      "After an interval, a customer humiliates his mother and the shopkeeper asks her to stop making a scene.",
+      "His mother apologizes: \"I'm sorry. I thought I could manage the shopping.\" He decides to kill the prosecutor only after taking her home and caring for her.",
+      "The prosecutor is promoted to Prosecutor General and survives the attempt at his appointment dinner, where MSF assists with security.",
+      "Lynleit is present and nearly harmed; Kyrien does not know she attended. He escapes immediate capture and is detained later.",
+      "His lawyer stays involved during questioning and the private employment proposal.",
+      "Lynleit examines employment and payment records. Kyrien admits his family's mistreatment without confessing to the attack.",
+      "Lynleit asks his lawyer to confirm his mother's welfare; she never threatens her.",
+      "Lynleit privately recognizes suppression and feels she needs an ally outside her circle. She conceals magic and her attendance from Kyrien.",
+      "The offer includes paid confidential work, release support, and care expenses, subject to approvals and legal review, not unconditional immunity.",
+      "Kyrien agrees reluctantly if the written terms match the offer.",
+      {
+        "text": "His refusal to repeat his mother's apology suggests how difficult the humiliation remains to disclose.",
+        "status": "inferred"
+      }
     ],
     "openQuestions": [
-      "What is the politician's name, office, and exact role in Kyrien's father's death?",
-      "How does the surviving politician later retaliate against Lynleit?",
-      "What initial cover story conceals Kyrien's release and unofficial MSF association?"
+      "What is the Prosecutor General's name, and is he himself a Magus?",
+      "What exactly happens during the attempt, including the concealed magical contribution to failure?",
+      "What continuing cover protects Kyrien's service from Fionn and Helena?"
     ],
-    "continuityBefore": "Kyrien's father's death, the politician's involvement, the MSF protection assignment, and the military knowledge behind the attempt still need connective scenes.",
-    "continuityAfter": "Kyrien enters Lynleit's service unwillingly without knowing that the handler controlling his case was nearly harmed by his attack. Lynleit must later decide who, if anyone, can be trusted with the recruitment. The arrangement preserves him as hidden leverage against Helena through the early investigation. Fionn's much later assassination vindicates Lynleit's warning without proving that she understood its source.",
+    "continuityBefore": "His military-police commander father silently witnesses magic while protecting his officers from a fugitive's assault, then kills the fugitive in self-defence. Officials connected to the Magiarchy engineer a prosecution and obtain sanction to murder him, disguising it as suicide. Kyrien finances an inquiry that proves distorted evidence but fails to obtain accountability. The shop incident comes after an interval.",
+    "continuityAfter": "Kyrien's work and care obligations continue. Lynleit never reveals her attendance. He remains ignorant of magic until seeing her walk on water at the river; she initially only suspects what he saw. Lynleit tells only Felix and Reiner in her circle. Much later a separate prosecutorial offence may allow revenge under an as-yet undefined Magi prohibition, without redress for the father's protected persecution.",
     "chapterSlug": "after-the-failed-attempt",
-    "updated": "2026-09-12",
-    "defaultVersion": "v2",
+    "updated": "2026-09-23",
+    "defaultVersion": "v3",
     "versions": [
       {
         "title": "After the Failed Attempt",
@@ -508,25 +546,89 @@
         "chapterSlug": "after-the-failed-attempt",
         "updated": "2026-09-12",
         "id": "v2",
-        "label": "v2 · Current",
+        "label": "v2 · Archived",
         "chapterVersion": "v2"
+      },
+      {
+        "title": "After the Failed Attempt",
+        "status": "Scene draft",
+        "placementStatus": "Early chronology confirmed",
+        "timelinePhase": "the-hidden-wager",
+        "timelineLabel": "The Hidden Wager",
+        "sequence": 1,
+        "sceneType": "Confrontation",
+        "thread": "Lynleit and Kyrien",
+        "location": "Police office",
+        "summary": "Kyrien's legal campaign establishes credible evidence but cannot obtain accountability. After his failed attack at the Prosecutor General's dinner, Lynleit questions him with his lawyer present and offers confidential paid work.",
+        "purpose": "Lynleit gains cooperation without a confession or trust, while Kyrien tries to get home to his mother.",
+        "characters": [
+          {
+            "name": "Lynleit",
+            "slug": "lynleit"
+          },
+          {
+            "name": "Kyrien",
+            "slug": "kyrien"
+          }
+        ],
+        "characterAnchors": [
+          {
+            "slug": "lynleit",
+            "beat": "The Heir Apparent"
+          },
+          {
+            "slug": "kyrien",
+            "beat": "Outside the System"
+          }
+        ],
+        "known": [
+          "Kyrien works for years to pay competent lawyers while caring for his mother.",
+          "The preliminary inquiry confirms knowingly distorted evidence. A closed review protects the prosecutor under a confidential national-security mandate.",
+          "After an interval, a customer humiliates his mother and the shopkeeper asks her to stop making a scene.",
+          "His mother apologizes: \"I'm sorry. I thought I could manage the shopping.\" He decides to kill the prosecutor only after taking her home and caring for her.",
+          "The prosecutor is promoted to Prosecutor General and survives the attempt at his appointment dinner, where MSF assists with security.",
+          "Lynleit is present and nearly harmed; Kyrien does not know she attended. He escapes immediate capture and is detained later.",
+          "His lawyer stays involved during questioning and the private employment proposal.",
+          "Lynleit examines employment and payment records. Kyrien admits his family's mistreatment without confessing to the attack.",
+          "Lynleit asks his lawyer to confirm his mother's welfare; she never threatens her.",
+          "Lynleit privately recognizes suppression and feels she needs an ally outside her circle. She conceals magic and her attendance from Kyrien.",
+          "The offer includes paid confidential work, release support, and care expenses, subject to approvals and legal review, not unconditional immunity.",
+          "Kyrien agrees reluctantly if the written terms match the offer.",
+          {
+            "text": "His refusal to repeat his mother's apology suggests how difficult the humiliation remains to disclose.",
+            "status": "inferred"
+          }
+        ],
+        "openQuestions": [
+          "What is the Prosecutor General's name, and is he himself a Magus?",
+          "What exactly happens during the attempt, including the concealed magical contribution to failure?",
+          "What continuing cover protects Kyrien's service from Fionn and Helena?"
+        ],
+        "continuityBefore": "His military-police commander father silently witnesses magic while protecting his officers from a fugitive's assault, then kills the fugitive in self-defence. Officials connected to the Magiarchy engineer a prosecution and obtain sanction to murder him, disguising it as suicide. Kyrien finances an inquiry that proves distorted evidence but fails to obtain accountability. The shop incident comes after an interval.",
+        "continuityAfter": "Kyrien's work and care obligations continue. Lynleit never reveals her attendance. He remains ignorant of magic until seeing her walk on water at the river; she initially only suspects what he saw. Lynleit tells only Felix and Reiner in her circle. Much later a separate prosecutorial offence may allow revenge under an as-yet undefined Magi prohibition, without redress for the father's protected persecution.",
+        "chapterSlug": "after-the-failed-attempt",
+        "updated": "2026-09-23",
+        "chapterVersion": "v3",
+        "id": "v3",
+        "label": "v3 · Current"
       }
-    ]
+    ],
+    "chapterVersion": "v3"
   },
   {
     "slug": "the-secret-third-ally",
     "code": "MOM-008",
     "title": "The Secret Third Ally",
-    "status": "Scene chain",
+    "status": "Scene draft",
     "placementStatus": "Early chronology confirmed",
     "timelinePhase": "the-hidden-wager",
     "timelineLabel": "The Hidden Wager",
     "sequence": 1.5,
     "sceneType": "Trust test",
     "thread": "Lynleit's hidden circle",
-    "location": "Unspecified location",
+    "location": "Private meeting; location unspecified",
     "summary": "Lynleit eventually tells only Felix and Reiner that she has recruited Kyrien as an unknown ally and possible trump card against Helena, keeping the decision hidden even from Fionn.",
-    "purpose": "Reiner accepts Lynleit's decision; Felix remains opposed. Fionn is not told.",
+    "purpose": "Reiner accepts Lynleit's judgment; Felix accepts the decision without trusting Kyrien.",
     "characters": [
       {
         "name": "Lynleit",
@@ -564,30 +666,24 @@
       }
     ],
     "known": [
-      "Helena knows everyone already inside Lynleit's circle, so an unknown ally creates a favorable information imbalance.",
-      "Felix and Reiner are already Lynleit's close, long-standing friends before the story begins, not subordinates who become her friends during this crisis.",
-      "Lynleit eventually confines Kyrien's recruitment to Felix and Reiner and does not inform even Fionn.",
-      "This is Lynleit's first deeply anti-protocol MSF decision, made with strong intuitive conviction.",
-      "Fionn's assassination is still far ahead when the compartment is created.",
-      "The later assassination validates Lynleit's sense of approaching danger, although it does not prove she foresaw the event itself.",
-      "Felix and Reiner both regard Kyrien as a possible threat to Lynleit, especially when neither bodyguard is near her.",
-      "Reiner accepts the arrangement because he chooses to trust Lynleit's judgment.",
-      "Felix accepts only after Reiner's decision leaves him in the minority.",
-      "Felix never fully learns to trust Kyrien and later clashes with him repeatedly.",
-      "Lynleit reprimands Felix when those clashes interfere with her decision or the arrangement around Kyrien."
+      "Lynleit tells Felix and Reiner she recruited the man responsible for the dinner attack.",
+      "She needs an ally Helena has not already counted among her people.",
+      "Kyrien does not know she was present at the dinner. Fionn is not informed of the recruitment.",
+      "Felix objects to the danger Kyrien presents to her.",
+      "Lynleit does not claim to trust Kyrien; she expects him to do the work.",
+      "Reiner supports her judgment while remaining watchful.",
+      "Felix accepts without agreeing Kyrien is safe."
     ],
     "openQuestions": [
-      "Where and when does Lynleit disclose the compartment to Felix and Reiner?",
-      "What evidence or argument does Lynleit use to justify trusting Kyrien?",
-      "What continuing cover story protects the compartment from Fionn, Helena, the police, and the wider MSF?",
-      "Which clash between Felix and Kyrien produces the most serious consequence for Lynleit or an operation?",
-      "What would Fionn do if he learned Lynleit had hidden Kyrien from him?"
+      "Where does the disclosure occur and how soon after recruitment?",
+      "What continuing cover protects the arrangement from Fionn, Helena, and wider MSF?",
+      "Which later clash between Felix and Kyrien has the most serious consequence?"
     ],
-    "continuityBefore": "Lynleit has already coerced Kyrien into service after the failed assassination attempt, but the arrangement initially exists only between handler and asset.",
+    "continuityBefore": "Kyrien reluctantly agrees to confidential paid service after a represented interview. His lawyer checks the terms; care for his mother and a reliable income remain obligations. Lynleit has concealed her attendance and her recognition of suppression.",
     "continuityAfter": "Reiner becomes the stabilizing vote that permits the compartment to continue. Felix complies without trust, creating recurring friction with Kyrien and forcing Lynleit to defend the judgment on which the entire imbalance depends.",
     "chapterSlug": "after-the-failed-attempt",
-    "updated": "2026-09-12",
-    "defaultVersion": "v2",
+    "updated": "2026-09-23",
+    "defaultVersion": "v3",
     "versions": [
       {
         "title": "The Secret Third Ally",
@@ -738,10 +834,81 @@
         "chapterSlug": "after-the-failed-attempt",
         "updated": "2026-09-12",
         "id": "v2",
-        "label": "v2 · Current",
+        "label": "v2 · Archived",
         "chapterVersion": "v2"
+      },
+      {
+        "title": "The Secret Third Ally",
+        "status": "Scene draft",
+        "placementStatus": "Early chronology confirmed",
+        "timelinePhase": "the-hidden-wager",
+        "timelineLabel": "The Hidden Wager",
+        "sequence": 1.5,
+        "sceneType": "Trust test",
+        "thread": "Lynleit's hidden circle",
+        "location": "Private meeting; location unspecified",
+        "summary": "Lynleit eventually tells only Felix and Reiner that she has recruited Kyrien as an unknown ally and possible trump card against Helena, keeping the decision hidden even from Fionn.",
+        "purpose": "Reiner accepts Lynleit's judgment; Felix accepts the decision without trusting Kyrien.",
+        "characters": [
+          {
+            "name": "Lynleit",
+            "slug": "lynleit"
+          },
+          {
+            "name": "Kyrien",
+            "slug": "kyrien"
+          },
+          {
+            "name": "Felix",
+            "slug": "felix"
+          },
+          {
+            "name": "Reiner",
+            "slug": "reiner"
+          }
+        ],
+        "characterAnchors": [
+          {
+            "slug": "lynleit",
+            "beat": "The Heir Apparent"
+          },
+          {
+            "slug": "kyrien",
+            "beat": "Alliance under Pressure"
+          },
+          {
+            "slug": "felix",
+            "beat": "The Secret Third Ally"
+          },
+          {
+            "slug": "reiner",
+            "beat": "The Anti-Protocol Compartment"
+          }
+        ],
+        "known": [
+          "Lynleit tells Felix and Reiner she recruited the man responsible for the dinner attack.",
+          "She needs an ally Helena has not already counted among her people.",
+          "Kyrien does not know she was present at the dinner. Fionn is not informed of the recruitment.",
+          "Felix objects to the danger Kyrien presents to her.",
+          "Lynleit does not claim to trust Kyrien; she expects him to do the work.",
+          "Reiner supports her judgment while remaining watchful.",
+          "Felix accepts without agreeing Kyrien is safe."
+        ],
+        "openQuestions": [
+          "Where does the disclosure occur and how soon after recruitment?",
+          "What continuing cover protects the arrangement from Fionn, Helena, and wider MSF?",
+          "Which later clash between Felix and Kyrien has the most serious consequence?"
+        ],
+        "continuityBefore": "Kyrien reluctantly agrees to confidential paid service after a represented interview. His lawyer checks the terms; care for his mother and a reliable income remain obligations. Lynleit has concealed her attendance and her recognition of suppression.",
+        "continuityAfter": "Reiner becomes the stabilizing vote that permits the compartment to continue. Felix complies without trust, creating recurring friction with Kyrien and forcing Lynleit to defend the judgment on which the entire imbalance depends.",
+        "chapterSlug": "after-the-failed-attempt",
+        "updated": "2026-09-23",
+        "chapterVersion": "v3",
+        "id": "v3",
+        "label": "v3 · Current"
       }
-    ]
+    ],
+    "chapterVersion": "v3"
   },
   {
     "slug": "the-cat-in-the-family-house",

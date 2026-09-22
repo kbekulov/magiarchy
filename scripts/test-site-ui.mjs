@@ -7,6 +7,7 @@ import { fileURLToPath } from 'node:url';
 import { chromium, webkit } from 'playwright';
 import { testGalleryResources } from './test-gallery-resources.mjs';
 import { testGalleryPanels } from './test-gallery-panels.mjs';
+import { testKyrienOrigin } from './test-kyrien-origin.mjs';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const mime = { '.html': 'text/html', '.js': 'text/javascript', '.json': 'application/json', '.css': 'text/css', '.png': 'image/png', '.webp': 'image/webp', '.md': 'text/plain', '.mp3': 'audio/mpeg', '.wav': 'audio/wav' };
@@ -60,6 +61,11 @@ try {
         await testGalleryResources(page, origin, engine);
         await testGalleryPanels(page, origin, engine);
         assert.deepEqual(errors, [], `${engine}: browser script errors`);
+        continue;
+      }
+      if (process.env.TEST_RECRUITMENT_ONLY === '1') {
+        await testKyrienOrigin(page, origin, engine);
+        assert.deepEqual(errors, [], `${engine}: recruitment reader errors`);
         continue;
       }
       for (const width of [390, 1440]) {
@@ -140,6 +146,7 @@ try {
         await page.getByRole('heading', { name: 'A contemporary world with older institutions', exact: true }).waitFor();
         assert.ok(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1), `World foundation deep link/${width}: overflow`);
       }
+      await testKyrienOrigin(page, origin, engine);
       if (process.env.TEST_PROSE_ONLY === '1') {
         assert.deepEqual(errors, [], `${engine}: prose reader errors`);
         console.log(`${engine}: current prose references, history, immutable v10, and mobile/desktop readers passed.`);
@@ -370,9 +377,9 @@ try {
         assert.ok(Math.abs(chapterGrid.x - formats.x) < 1, 'Chapter filters have inconsistent gutters');
         await page.getByRole('button', { name: 'Scene outline', exact: true }).click();
         assert.equal(await page.locator('.chapter-card:visible').count(), await page.locator('.chapter-card[data-content-kind="outline"]').count());
-        await visit('story.html?chapter=after-the-failed-attempt');
+        await visit('story.html?chapter=after-the-failed-attempt&version=v2');
         assert.ok(await page.locator('.chapter-preface-legend').isHidden());
-        await visit('moments.html?moment=interrogation-after-the-failed-attempt');
+        await visit('moments.html?moment=interrogation-after-the-failed-attempt&version=v2');
         assert.ok(await page.locator('.moment-fact-legend').isHidden(), 'Linked outline promoted to delivered scene');
         await visit('moments.html');
         assert.equal(await page.locator('#moment-phase-track [data-phase="late-arc-one"]').count(), 0);

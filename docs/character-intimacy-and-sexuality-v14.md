@@ -63,8 +63,6 @@ Their later pattern makes Lynleit the more frequent initiator. She is more vocal
 
 She knows his failed assassination nearly harmed her. He never learns she was there. That withheld fact gives the interrogation a personal edge before there is any attraction.
 
-In the current interrogation, Kyrien's lawyer remains involved and his mother's care and his income are negotiated. Lynleit admires his competence and recognizes the injustice behind his family history, while using her limited influence over release to recruit him. His reluctant agreement, her guilt, and her practical help with his mother's welfare are not evidence of desire. The later voluntary choice to remain must still occur when departure is genuinely possible.
-
 Card games during the river watches give them something to do together outside her orders. She asks for rematches, learns his held breath before a risk, and catches him watching her hands. He protects her water-walking secret. Their recovery in the park and the later hotel refuge remain non-sexual.
 
 Her initiative and curiosity do not spare her the discomfort of being read accurately. Kyrien's quiet company can matter without requiring a conversation about it. Their growing intimacy needs moments when she lets his attention reach her without immediately turning it into a test or taking charge of what he is allowed to see.

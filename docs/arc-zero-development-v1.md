@@ -26,9 +26,9 @@ Ordinary father-daughter familiarity matters: a late meal, an argument about sch
 
 ### Kyrien and his family
 
-Kyrien's family history now includes his military-police commander father's persecution and murder disguised as suicide, his mother's difficulty managing ordinary life, and years of work to fund competent lawyers and support her. [Family, Justice, and Recruitment](../docs.html?doc=kyrien-origin-and-recruitment) owns that confirmed history. His age at the death, its Arc placement, and his sister's circumstances remain open. Do not force the whole sequence into the proposed teenage prequel. His mother is alive and needs support at recruitment; her later fate is undecided.
+The proposed teenage arc gives Kyrien a mother and sister whom he tries to protect after his father's death. Their names, ages, circumstances, and present-day status remain open. Show their ordinary life before the loss: meals, arguments, unwanted chores, jokes, and someone expecting him home.
 
-His father's death makes family responsibility a practical burden. The legal campaign, institutional refusal, and later shop humiliation are confirmed, not optional examples of hardship. Keep the interval between the inquiry's defeat and his decision to kill the prosecutor. His mother retains habits, preferences, and attempts at independence. A sister's role or assistance cannot be assumed merely because it would solve his care obligations.
+His father's death makes lineage a practical burden before he has the resources or authority to carry it. Money, legal standing, inherited danger, dismissive officials, and relatives are candidate pressures, not confirmed incidents. His mother and sister must retain their own judgment and sometimes reject his interference.
 
 The useful conflict is between responsibility and actual capacity. Accepting help, listening, or standing down can cost him more pride than a fight. Institutions may include people acting reasonably who still cannot help his family. Avoid making either solitary defiance or official procedure a universal answer.
 
@@ -64,7 +64,7 @@ Let later knowledge change the reader's experience of ordinary places and habits
 
 - Which MSF changes occur in these years, and what already exists beforehand?
 - When does Fionn remarry relative to the move and Lynleit's school years?
-- How old is Kyrien when his father dies, where does that history fall relative to Arc 0, and what are his sister's circumstances and his mother's later fate?
+- How old is Kyrien when his father dies, and what happens to his mother and sister?
 - Which younger characters overlap in age and schooling?
 - Which origin, if any, belongs to the flask?
 - Does the forgotten encounter happen at all?

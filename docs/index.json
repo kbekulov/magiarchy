@@ -1,5 +1,16 @@
 [
   {
+    "slug": "kyrien-origin-and-recruitment",
+    "title": "Kyrien: Family, Justice, and Recruitment",
+    "topic": "Character Continuity",
+    "description": "The father's persecution, years spent financing justice, the shop humiliation, represented recruitment, and the unresolved conditions for later revenge.",
+    "file": "kyrien-origin-and-recruitment.md",
+    "updated": "2026-09-23",
+    "speakers": ["Author's Desk"],
+    "defaultVersion": "v1",
+    "versions": [{"id": "v1", "label": "v1 · Current", "file": "kyrien-origin-and-recruitment.md", "updated": "2026-09-23"}]
+  },
+  {
     "slug": "dread-and-action-direction",
     "title": "Dread and Action Direction",
     "topic": "Writer's Direction",
@@ -313,18 +324,26 @@
     "title": "Prose Style History",
     "topic": "Historical Writing Reference",
     "file": "prose-style-history.md",
-    "updated": "2026-09-19",
-    "description": "Earlier Chapter decisions, approved examples, research sources, and revision provenance. Use the current house style for new prose.",
+    "updated": "2026-09-23",
+    "description": "Chapter history including Kyrien's family trajectory and the dramatized interrogation.",
     "speakers": [
       "Author's Desk"
     ],
-    "defaultVersion": "v1",
+    "defaultVersion": "v2",
     "versions": [
       {
         "id": "v1",
-        "label": "v1 · Current",
+        "label": "v1 · Archived",
+        "file": "prose-style-history-v1.md",
+        "updated": "2026-09-19",
+        "description": "Earlier Chapter decisions, approved examples, research sources, and revision provenance. Use the current house style for new prose."
+      },
+      {
+        "id": "v2",
+        "label": "v2 · Current",
         "file": "prose-style-history.md",
-        "updated": "2026-09-19"
+        "updated": "2026-09-23",
+        "description": "Chapter history including Kyrien's family trajectory and the dramatized interrogation."
       }
     ]
   },
@@ -372,18 +391,19 @@
     "title": "Events, Witnesses, and Reveals",
     "topic": "Reader Knowledge",
     "file": "reader-knowledge.md",
-    "updated": "2026-09-19",
-    "description": "Scene evidence, later consequences, and uncertain treatment distinguished across the river, Nameless Street, and Doom.",
+    "updated": "2026-09-23",
+    "description": "Kyrien's family persecution, recruitment, and the river as his first unmistakable encounter with magic.",
     "speakers": [
       "Author's Desk"
     ],
-    "defaultVersion": "v3",
+    "defaultVersion": "v4",
     "versions": [
       {
         "id": "v1",
         "label": "v1 · Archived",
         "file": "reader-knowledge-v1.md",
-        "updated": "2026-09-12"
+        "updated": "2026-09-12",
+        "description": "Scene evidence, later consequences, and uncertain treatment distinguished across the river, Nameless Street, and Doom."
       },
       {
         "id": "v2",
@@ -394,10 +414,17 @@
       },
       {
         "id": "v3",
-        "label": "v3 · Current",
-        "file": "reader-knowledge.md",
+        "label": "v3 · Archived",
+        "file": "reader-knowledge-v3.md",
         "updated": "2026-09-19",
         "description": "Scene evidence, later consequences, and uncertain treatment distinguished across the river, Nameless Street, and Doom."
+      },
+      {
+        "id": "v4",
+        "label": "v4 · Current",
+        "file": "reader-knowledge.md",
+        "updated": "2026-09-23",
+        "description": "Kyrien's family persecution, recruitment, and the river as his first unmistakable encounter with magic."
       }
     ]
   },
@@ -504,12 +531,12 @@
     "title": "Character Behaviour Audit",
     "topic": "Writer's Character Reference",
     "file": "character-behavior-audit.md",
-    "updated": "2026-09-19",
-    "description": "Author approval governs advisory notes; current paragraph guidance remains separate from scene facts.",
+    "updated": "2026-09-23",
+    "description": "Version-specific guidance for the represented interrogation, family responsibilities, and concealed motives.",
     "speakers": [
       "Character Archive"
     ],
-    "defaultVersion": "v11",
+    "defaultVersion": "v12",
     "versions": [
       {
         "id": "v1",
@@ -593,10 +620,18 @@
       },
       {
         "id": "v11",
-        "label": "v11 · Current",
-        "file": "character-behavior-audit.md",
+        "label": "v11 · Archived",
+        "file": "character-behavior-audit-v11.md",
         "updated": "2026-09-19",
         "description": "Author approval governs advisory notes; current paragraph guidance remains separate from scene facts.",
+        "behaviorFile": "character-behavior-notes-v11.json"
+      },
+      {
+        "id": "v12",
+        "label": "v12 · Current",
+        "file": "character-behavior-audit.md",
+        "updated": "2026-09-23",
+        "description": "Version-specific guidance for the represented interrogation, family responsibilities, and concealed motives.",
         "behaviorFile": "character-behavior-notes.json"
       }
     ]
@@ -606,12 +641,12 @@
     "title": "Character Intimacy and Sexuality Reference",
     "topic": "Writer's Character Reference",
     "file": "character-intimacy-and-sexuality.md",
-    "updated": "2026-09-19",
-    "description": "Confirmed relationship directions separated from proposed staging, while preserving intimacy's limited narrative scale.",
+    "updated": "2026-09-23",
+    "description": "Recruitment pressure and family obligations distinguished from later voluntary intimacy.",
     "speakers": [
       "Character Archive"
     ],
-    "defaultVersion": "v14",
+    "defaultVersion": "v15",
     "versions": [
       {
         "id": "v1",
@@ -719,10 +754,18 @@
       },
       {
         "id": "v14",
-        "label": "v14 · Current",
-        "file": "character-intimacy-and-sexuality.md",
+        "label": "v14 · Archived",
+        "file": "character-intimacy-and-sexuality-v14.md",
         "updated": "2026-09-19",
         "description": "Confirmed relationship directions separated from proposed staging, while preserving intimacy's limited narrative scale.",
+        "tensionFile": "sexual-tension-notes-v14.json"
+      },
+      {
+        "id": "v15",
+        "label": "v15 · Current",
+        "file": "character-intimacy-and-sexuality.md",
+        "updated": "2026-09-23",
+        "description": "Recruitment pressure and family obligations distinguished from later voluntary intimacy.",
         "tensionFile": "sexual-tension-notes.json"
       }
     ]
@@ -932,10 +975,27 @@
     "title": "Arc 0: Households and the Becoming of MSF",
     "topic": "Prequel Development",
     "file": "arc-zero-development.md",
-    "updated": "2026-09-08",
-    "description": "A tentative, Fionn-centered prequel outline: changing households, school years, MSF, and the younger cast’s unfinished habits.",
+    "updated": "2026-09-23",
+    "description": "Tentative prequel boundaries and Kyrien's confirmed family history without invented ages or dates.",
     "speakers": [
       "Author's Desk"
-    ]
+    ],
+    "versions": [
+      {
+        "id": "v1",
+        "label": "v1 · Archived",
+        "file": "arc-zero-development-v1.md",
+        "updated": "2026-09-08",
+        "description": "A tentative, Fionn-centered prequel outline: changing households, school years, MSF, and the younger cast’s unfinished habits."
+      },
+      {
+        "id": "v2",
+        "label": "v2 · Current",
+        "file": "arc-zero-development.md",
+        "updated": "2026-09-23",
+        "description": "Tentative prequel boundaries and Kyrien's confirmed family history without invented ages or dates."
+      }
+    ],
+    "defaultVersion": "v2"
   }
 ]

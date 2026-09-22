@@ -95,6 +95,20 @@ for (const moment of moments) {
 }
 
 let checkedAnchors = 0;
+const recruitment = selected(chapters.find(record => record.slug === 'after-the-failed-attempt'));
+assert.equal(recruitment.id, 'v3');
+assert.equal(recruitment.contentKind, 'scene');
+for (const slug of ['interrogation-after-the-failed-attempt', 'the-secret-third-ally']) {
+  assert.equal(selected(moments.find(record => record.slug === slug)).chapterVersion, 'v3', `${slug}: recruitment version drift`);
+}
+const prosecutorReturn = moments.find(record => record.slug === 'the-prosecutors-return');
+assert.equal(prosecutorReturn.timelinePhase, null, 'Later revenge must remain unplaced');
+assert.equal(prosecutorReturn.characterAnchors.length, 0, 'Later revenge must not acquire invented chronology');
+assert.ok(prosecutorReturn.characters.some(character => character.slug === 'lynleit'));
+assert.ok(prosecutorReturn.characters.some(character => character.slug === 'kyrien'));
+assert.ok(read('docs/kyrien-origin-and-recruitment.md').includes('whether he is himself a Magus is not'));
+assert.ok(!profiles.find(profile => profile.slug === 'kyrien').goal.includes('Magus politician'));
+assert.ok(profiles.find(profile => profile.slug === 'kyrien').connections.some(link => link.name === "Kyrien's mother"));
 const sleepers = moments.find(moment => moment.slug === 'sleepers-above-the-river');
 assert.equal(sleepers.timelinePhase, null, 'Sleepers must remain unplaced');
 assert.equal(sleepers.characterAnchors.length, 0, 'Sleepers must not acquire invented chronology');

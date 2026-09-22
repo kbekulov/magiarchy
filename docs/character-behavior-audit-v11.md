@@ -30,10 +30,6 @@ Use those answers before a type stereotype. Lynleit consults others without auto
 
 Physical competence belongs to aptitude and acquired skill, not function order. No new paragraph marker is added where there is no actual paragraph or scene to annotate.
 
-## After the Failed Attempt v3
-
-The current interrogation dramatizes Kyrien's years of work, legal defeat, care for his mother, and guarded negotiation. The new paragraph notes are version-specific. His caution comes from experience with lawyers, not legal expertise or a rule about male stoicism. Lynleit's questions combine concealed anger, duty, guilt, and an intuitive need for an ally; care for his mother does not erase her leverage. Earlier outline notes remain scoped to v1 and v2. No type or capability score changes.
-
 ## Only Eyes for You
 
 In [Only Eyes for You v2](../moments.html?moment=only-eyes-for-you&version=v2), Lynleit and Fionn visit churches with Felix and Reiner. Reiner behaves; Felix keeps flirting with the nuns until Lynleit loses patience. The F, M, and S notes address her accumulated irritation, his instinctive flattering reply, and the straight-person roles of Reiner and the nun. Her outburst is not jealousy. Fionn need not comment on it. V1 has its own draft and notes; the visits' purpose and exact placement before Fionn's death are undecided.

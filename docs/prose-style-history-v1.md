@@ -2,12 +2,6 @@
 
 Historical notes relocated from Prose Style v10 on 19 September 2026. These record how particular revisions were made, including superseded choices. They are not a style corpus for new prose. Use the [current house style](../docs.html?doc=prose-style); consult this history for provenance, continuity, comparison, and explicitly approved passages. The complete earlier reference remains available as [v10](../docs.html?doc=prose-style&version=v10).
 
-## After the Failed Attempt v3: 23 September 2026
-
-The author's backlog supplies the sequence from paid professional legal work through institutional refusal, an interval, the shop humiliation, the dinner attempt, and reluctant recruitment. V3 replaces the outline with scene prose while retaining earlier versions. The mother's apology and the lawyer-payment exchange use the supplied wording, with only typography normalized. Names, the exact attack choreography, the prosecutor's magical status, and the later prohibition remain undecided.
-
-The consultation's concrete success precedes its defeat; the lawyer remains competent and present in the later interview. Tea, shopping, shifts, and paid care keep the mother and household visible outside the revenge plot. A marked viewpoint change gives Lynleit knowledge Kyrien lacks. The private employment discussion negotiates material terms without a confession. These are revision choices for this Chapter, not new compulsory formulas in the house style.
-
 ## Earlier Chapter examples
 
 In Doom Version 3:
@@ -147,3 +141,4 @@ Use the [Cognition and Physical Competence reference](../docs.html?doc=character
 **Blocking and straight-person contrast:** Reiner holds doors, waits with Fionn, and calls Felix away. His restraint makes Felix conspicuous without another stream of jokes. Track the tie and the Bible through the exchange. The nun's ordinary request for her book interrupts the escalation; Lynleit returns it while still holding Felix's tie. See the [Moment](../moments.html?moment=only-eyes-for-you).
 
 **Limit:** the recurring visits, four participants, contrast, and eventual irritation are author-confirmed. The exact dialogue around the illustrated lines remains a scene draft. Do not invent Fionn's reaction, the substance of the church business, or exact chronology. Felix's wider flirting does not erase his fixation on Lynleit, and her correction is not reciprocal desire. No new physical or magical capability follows from the slapstick.
+
