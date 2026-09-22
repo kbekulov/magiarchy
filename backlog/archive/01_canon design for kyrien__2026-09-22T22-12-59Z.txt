@@ -1,0 +1,6 @@
+I added an image to the backlog called "01_kyrien_t-pose_beige_jacket_front_and_back.png"
+this is the only canon design for Kyrien so far, all other images on the site related to him should be removed for now, event chibis. 
+I'll work from there later.
+
+your job is to take that t-pose image and slice it into front and back separate t-pose images, and integrate it same way you integrated others.
+but make sure to fix the fingers on the backside image, because thumbs again are showing instead of pinkies.

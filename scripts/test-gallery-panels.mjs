@@ -15,7 +15,7 @@ export async function testGalleryPanels(page, origin, engine) {
     await visit('story.html?phase=unknowing-convergence');
     assert.equal(await page.locator(timelineLink).count(), 1);
     assert.equal(await page.locator(`#phase-unknowing-convergence ${timelineLink}`).count(), 1);
-    assert.equal(await page.locator('#phase-unknowing-convergence .timeline-panel-link[href="gallery.html?panels=kyrien-lynleit-river-rest"]').count(), 1);
+    assert.equal(await page.locator('#phase-unknowing-convergence .timeline-panel-link[href="gallery.html?panels=kyrien-lynleit-river-rest"]').count(), 0, 'Withdrawn Kyrien artwork remains on the timeline');
     assert.equal(await page.locator(`${timelineLink} strong`).textContent(), record.title);
     assert.equal(await page.locator(`${timelineLink} img`).getAttribute('src'), record.panels.find(panel => panel.id === record.cover).thumbnail);
     assert.ok(await page.locator('#phase-unknowing-convergence .timeline-moment-anchor').isVisible());

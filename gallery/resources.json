@@ -331,101 +331,57 @@
   },
   {
     "id": "kyrien-beige-jacket",
-    "title": "Kyrien: Beige leather jacket",
+    "title": "Kyrien",
     "kind": "t-pose",
     "era": "Arc 1",
-    "summary": "A matte beige leather jacket with an upright stand collar and no pockets, over a blue shirt and black trousers.",
+    "summary": "Matching front and back views of Kyrien in a beige stand-collar jacket over a blue open-neck shirt, with black trousers, black leather shoes and a silver cross necklace.",
     "characters": [
       "kyrien"
     ],
     "previews": [
       {
-        "id": "sheet",
-        "src": "media/gallery/resources/kyrien-beige-jacket/char-kyrien-arc-1-beige-jacket-t-pose.png",
-        "alt": "Kyrien in Arc 1, matching front and rear T-poses. A matte beige leather jacket with an upright stand collar and no pockets, over a blue shirt and black trousers.",
-        "caption": "Arc 1 · Front and back",
-        "thumbnail": "media/gallery/previews/resources/kyrien-beige-jacket-1.webp",
-        "width": 1536,
-        "height": 1024
+        "id": "front",
+        "src": "media/gallery/resources/kyrien-beige-jacket/char-kyrien-arc-1-beige-jacket-t-pose-front-r2.png",
+        "alt": "Kyrien, front T-pose: dark brown parted hair, a beige stand-collar jacket, blue open-neck shirt, silver cross necklace, black trousers and black leather shoes.",
+        "caption": "Arc 1 · Front",
+        "revision": "r2",
+        "thumbnail": "media/gallery/previews/resources/kyrien-beige-jacket-1-r2.webp",
+        "width": 1122,
+        "height": 1402
+      },
+      {
+        "id": "back",
+        "src": "media/gallery/resources/kyrien-beige-jacket/char-kyrien-arc-1-beige-jacket-t-pose-hand-corrected-back-r2.png",
+        "alt": "Kyrien, rear T-pose in his beige jacket, blue shirt, black trousers and black shoes, with the little-finger edges visible and thumbs occluded.",
+        "caption": "Arc 1 · Back",
+        "revision": "r2",
+        "thumbnail": "media/gallery/previews/resources/kyrien-beige-jacket-2-r2.webp",
+        "width": 1122,
+        "height": 1402
       }
     ],
     "files": [
       {
-        "path": "media/gallery/resources/kyrien-beige-jacket/char-kyrien-arc-1-beige-jacket-t-pose.png",
-        "label": "Front and back reference sheet",
-        "bytes": 1587615,
+        "path": "media/gallery/resources/kyrien-beige-jacket/char-kyrien-arc-1-beige-jacket-t-pose-front-r2.png",
+        "label": "Front T-pose",
+        "notes": "Separated from the supplied reference sheet.",
+        "bytes": 1236932,
+        "format": "PNG"
+      },
+      {
+        "path": "media/gallery/resources/kyrien-beige-jacket/char-kyrien-arc-1-beige-jacket-t-pose-hand-corrected-back-r2.png",
+        "label": "Back T-pose",
+        "notes": "Rear-view hands corrected.",
+        "bytes": 1223477,
         "format": "PNG"
       }
     ],
-    "usage": "Use the front and back views together. Preserve his slender build, dark brown parted hair, and grey-blue eyes.",
-    "artwork": [
-      "char-kyrien-arc-1-beige-jacket"
-    ]
-  },
-  {
-    "id": "kyrien-blue-shirt",
-    "title": "Kyrien: Blue shirt",
-    "kind": "t-pose",
-    "era": "Arc 1",
-    "summary": "An open-neck blue shirt with rolled sleeves, a silver cross necklace, black trousers, and black shoes.",
-    "characters": [
-      "kyrien"
-    ],
-    "previews": [
+    "technical": [
       {
-        "id": "sheet",
-        "src": "media/gallery/resources/kyrien-blue-shirt/char-kyrien-arc-1-blue-shirt-t-pose.png",
-        "alt": "Kyrien in Arc 1, matching front and rear T-poses. An open-neck blue shirt with rolled sleeves, a silver cross necklace, black trousers, and black shoes.",
-        "caption": "Arc 1 · Front and back",
-        "thumbnail": "media/gallery/previews/resources/kyrien-blue-shirt-1.webp",
-        "width": 1536,
-        "height": 1024
+        "label": "Reference canvas",
+        "value": "1122 × 1402 px, matching the template aspect ratio"
       }
     ],
-    "files": [
-      {
-        "path": "media/gallery/resources/kyrien-blue-shirt/char-kyrien-arc-1-blue-shirt-t-pose.png",
-        "label": "Front and back reference sheet",
-        "bytes": 1613723,
-        "format": "PNG"
-      }
-    ],
-    "usage": "Use the front and back views together. Preserve his slender build, dark brown parted hair, and grey-blue eyes.",
-    "artwork": [
-      "char-kyrien-arc-1-beige-jacket"
-    ]
-  },
-  {
-    "id": "kyrien-black-coat",
-    "title": "Kyrien: Black travel coat",
-    "kind": "t-pose",
-    "era": "Arc 1",
-    "summary": "A long tailored black coat, black scarf, gloves, shirt, and trousers.",
-    "characters": [
-      "kyrien"
-    ],
-    "previews": [
-      {
-        "id": "sheet",
-        "src": "media/gallery/resources/kyrien-black-coat/char-kyrien-arc-1-black-coat-t-pose.png",
-        "alt": "Kyrien in Arc 1, matching front and rear T-poses. A long tailored black coat, black scarf, gloves, shirt, and trousers.",
-        "caption": "Arc 1 · Front and back",
-        "thumbnail": "media/gallery/previews/resources/kyrien-black-coat-1.webp",
-        "width": 1536,
-        "height": 1024
-      }
-    ],
-    "files": [
-      {
-        "path": "media/gallery/resources/kyrien-black-coat/char-kyrien-arc-1-black-coat-t-pose.png",
-        "label": "Front and back reference sheet",
-        "bytes": 1592932,
-        "format": "PNG"
-      }
-    ],
-    "usage": "Use the front and back views together. Preserve his slender build, dark brown parted hair, and grey-blue eyes.",
-    "artwork": [
-      "char-kyrien-arc-1-black-coat"
-    ]
+    "usage": "The author-selected canon design for Kyrien. Use these two views together as the character reference."
   }
 ]

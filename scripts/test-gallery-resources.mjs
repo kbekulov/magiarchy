@@ -11,7 +11,28 @@ export async function testGalleryResources(page, origin, engine) {
     await page.screenshot({ path: `test-results/${engine}-production-empty.png` });
   }
   const published = JSON.parse(fs.readFileSync('gallery/resources.json', 'utf8'));
+  const kyrien = published.filter(record => record.characters.includes('kyrien'));
+  assert.equal(kyrien.length, 1, 'Only the selected Kyrien design should be published');
+  assert.deepEqual(kyrien[0].previews.map(view => view.id), ['front', 'back']);
+  for (const width of [390, 1440]) {
+    await page.setViewportSize({ width, height: 900 });
+    await visit('gallery.html?resource=kyrien-beige-jacket');
+    assert.equal(await page.locator('#resource-thumbnails button').count(), 2);
+    assert.equal(await page.locator('#resource-downloads a[download]').count(), 2);
+    await page.locator('#resource-thumbnails button').nth(1).click();
+    assert.equal(await page.locator('#resource-image').getAttribute('src'), kyrien[0].previews[1].src);
+    assert.ok(page.url().includes('view=back'));
+    assert.ok(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1));
+    await page.screenshot({ path: `test-results/${engine}-kyrien-reference-${width}.png`, fullPage: true });
+    await visit('characters.html');
+    assert.equal(await page.locator('[data-name="Kyrien"] img').count(), 0, 'Withdrawn chibi still displayed');
+    assert.ok(await page.locator('[data-name="Kyrien"] .chibi-placeholder').isVisible());
+    await visit('character.html?character=kyrien');
+    assert.equal(await page.locator('#character-profile-portrait img').count(), 0, 'Withdrawn portrait still displayed');
+    assert.ok(await page.locator('#character-profile-portrait .profile-portrait-placeholder').isVisible());
+  }
   await visit('gallery.html');
+  assert.equal(await page.locator('.gallery-card[data-character~="kyrien"]').count(), 0);
   await page.locator('#gallery-character-filter').selectOption('anima');
   assert.equal(await page.locator('.gallery-card:visible').count(), 1);
   assert.equal(await page.locator('.gallery-card:visible').getAttribute('data-chibi'), 'false');

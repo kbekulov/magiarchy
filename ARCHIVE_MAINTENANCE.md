@@ -205,6 +205,8 @@ Scene readers begin with a shared slideshow derived from the selected `gallery/p
 
 ### Gallery production intake
 
+Kyrien's 23 September 2026 design selection supersedes his earlier published portraits, chibis, outfit sheets, and shared scene illustrations. `kyrien-beige-jacket` now owns the sole approved front/back reference pair, separated from the first backlog sheet with rear-view hand corrections. Profile and catalog artwork stays unavailable until new artwork is approved; production T-poses do not enter portrait or chibi pools. Withdrawing illustrations does not withdraw their written scenes. Source and retired files are preserved under `backlog/archive/2026-09-23-kyrien-design-intake/`.
+
 Before archiving an unused gallery image, check all public and tooling dependencies. The author explicitly requested a purge of existing backlog/archive files on 20 September 2026. Deleted sources remain in Git history. Current media and public document history stay active. Normal future backlog archiving remains in force.
 
 Anatomy corrections require explicit author direction. The old extraction/arm/hand tools and manifests were retired with their purged source files. `gallery/t-pose-approved.json` records current approved files, hashes, and dimensions; `scripts/verify-t-pose-assets.mjs` verifies them without regenerating or overwriting art.

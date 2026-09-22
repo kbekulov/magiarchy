@@ -97,26 +97,18 @@
   },
   {
     "resource": "kyrien-beige-jacket",
-    "view": "sheet",
-    "path": "media/gallery/resources/kyrien-beige-jacket/char-kyrien-arc-1-beige-jacket-t-pose.png",
-    "sha256": "afeabcdd123198c603c39bb3f00c18a51cb529066d97e7cf701166740337b051",
-    "width": 1536,
-    "height": 1024
+    "view": "front",
+    "path": "media/gallery/resources/kyrien-beige-jacket/char-kyrien-arc-1-beige-jacket-t-pose-front-r2.png",
+    "sha256": "f90759315c47e8ec0820f811ca2f4944b67758561a4a02fdaa7e49c21fa661ab",
+    "width": 1122,
+    "height": 1402
   },
   {
-    "resource": "kyrien-blue-shirt",
-    "view": "sheet",
-    "path": "media/gallery/resources/kyrien-blue-shirt/char-kyrien-arc-1-blue-shirt-t-pose.png",
-    "sha256": "a92d821a95b59cde7585cff538cecece598e2d424fccab7ff97d34a435f1c2e0",
-    "width": 1536,
-    "height": 1024
-  },
-  {
-    "resource": "kyrien-black-coat",
-    "view": "sheet",
-    "path": "media/gallery/resources/kyrien-black-coat/char-kyrien-arc-1-black-coat-t-pose.png",
-    "sha256": "32a1f2200bb2869416aec071c2c3a501224ad2486a2b7a66b2b74b71fef723a8",
-    "width": 1536,
-    "height": 1024
+    "resource": "kyrien-beige-jacket",
+    "view": "back",
+    "path": "media/gallery/resources/kyrien-beige-jacket/char-kyrien-arc-1-beige-jacket-t-pose-hand-corrected-back-r2.png",
+    "sha256": "3a08df8e13026d91154151f73dcdef23331d80b78ceb16fc2cd742ad2228eb83",
+    "width": 1122,
+    "height": 1402
   }
 ]
