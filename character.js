@@ -685,7 +685,7 @@ async function loadProfilePortrait(profile, portrait, note) {
     const galleryDocument = await loadGalleryCatalog();
     const filePattern = wildcardPattern(`char-*${profile.slug}*-*`);
     const artworks = Array.from(galleryDocument.querySelectorAll('.gallery-card'))
-      .filter((card) => (card.dataset.character ?? '').split(/\s+/).includes(profile.slug) && card.dataset.chibi === 'false')
+      .filter((card) => (card.dataset.character ?? '').split(/\s+/).includes(profile.slug) && card.dataset.chibi === 'false' && card.dataset.profilePortrait !== 'false')
       .map((card) => card.querySelector('img'))
       .filter((image) => {
         const source = image?.getAttribute('src') ?? '';

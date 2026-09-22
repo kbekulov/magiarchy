@@ -32,7 +32,19 @@ export async function testGalleryResources(page, origin, engine) {
     assert.ok(await page.locator('#character-profile-portrait .profile-portrait-placeholder').isVisible());
   }
   await visit('gallery.html');
-  assert.equal(await page.locator('.gallery-card[data-character~="kyrien"]').count(), 0);
+  assert.equal(await page.locator('.gallery-card[data-character~="kyrien"]').count(), 2);
+  assert.equal(await page.locator('.gallery-card[data-character~="kyrien"][data-profile-portrait="false"]').count(), 2, 'Concept sheets must stay outside the canon portrait pool');
+  for (const view of ['closeup', 'standing']) {
+    const id = `char-kyrien-concept-${view}-three-variants`;
+    await visit(`gallery.html?image=${id}`);
+    assert.ok((await page.locator('#gallery-detail-type').textContent()).includes('Concept artwork'));
+    assert.ok(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1));
+    const response = await page.request.get(`${origin}/media/gallery/images/characters/${id}.png`);
+    assert.ok(response.ok());
+    assert.deepEqual(await response.body(), fs.readFileSync(`media/gallery/images/characters/${id}.png`));
+    await page.screenshot({ path: `test-results/${engine}-kyrien-concept-${view}.png`, fullPage: true });
+  }
+  await visit('gallery.html');
   await page.locator('#gallery-character-filter').selectOption('anima');
   assert.equal(await page.locator('.gallery-card:visible').count(), 1);
   assert.equal(await page.locator('.gallery-card:visible').getAttribute('data-chibi'), 'false');

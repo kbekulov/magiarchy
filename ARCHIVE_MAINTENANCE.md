@@ -209,6 +209,8 @@ Kyrien's 23 September 2026 design selection supersedes his earlier published por
 
 Before archiving an unused gallery image, check all public and tooling dependencies. The author explicitly requested a purge of existing backlog/archive files on 20 September 2026. Deleted sources remain in Git history. Current media and public document history stay active. Normal future backlog archiving remains in force.
 
+Kyrien's subsequently supplied close-up and standing three-variant sheets are Gallery Artwork labelled as concept studies. They do not supersede the selected beige-jacket T-pose or establish new equipment, outfits, or events as canon. Gallery cards may declare `data-profile-portrait="false"` for concept sheets that should remain browsable and searchable without entering profile portrait rotation. Keep their character association and visible concept label; preserve their supplied compositions and original bytes. Do not infer same-model sibling groups or chronology from concept variants.
+
 Anatomy corrections require explicit author direction. The old extraction/arm/hand tools and manifests were retired with their purged source files. `gallery/t-pose-approved.json` records current approved files, hashes, and dimensions; `scripts/verify-t-pose-assets.mjs` verifies them without regenerating or overwriting art.
 
 Rear-view hand corrections require visual review of fingers, thumb occlusion, wrist joins, and matching-view reach. Update the approved-file baseline only for inspected author-requested revisions. Keep preview revision filenames and downloads synchronized.
