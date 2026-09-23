@@ -51,6 +51,8 @@ Before starting any new user request, check the repository's `backlog/` folder f
 
 ## Product and design direction
 
+- Fog is a major recurring problem in selected areas of Narvea. Ordinary fog predates the Spill; certain Holumn incidents produce unusual fog or mist, especially in the Vilen park and river encounters. Read the fog section of `docs/dread-and-action-direction.md` when developing these settings. Use limited visibility, sound without visual confirmation, legible routes, and character-specific responses. Do not make all fog supernatural, invent one shared fog mechanism, or hide actions and reveals the reader must be able to follow. Keep the direction in MAGIARCHY's own terms.
+
 - Before describing or illustrating Kyrien, read his fixed design requirements in `docs/character-image-production.md`. Preserve a clear anatomical middle part, subtly tired eyes, a lean lightly built frame, lived-in mobile elegance, and only a modest height difference beside Lynleit (180 cm / 169 cm). These author-confirmed requirements override conflicting older artwork without changing his approved clothing or capabilities.
 
 - Questions to Be Answered and Contradictions to Resolve are latest-only living ledgers. Do not create versions for these two documents. Other versioned documents, Chapters, and Moments share compact Previous, version dropdown, Next, and Latest controls. Latest means newest registered revision, not necessarily the author-selected canon/default. Preserve direct version URLs and distinguish current/canon status.

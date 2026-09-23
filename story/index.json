@@ -29,8 +29,8 @@
     "number": "Chapter 02",
     "title": "The Last Man Out",
     "status": "Placeholder draft",
-    "file": "ash-under-glass.md",
-    "updated": "2026-08-26",
+    "file": "ash-under-glass-v2.md",
+    "updated": "2026-09-23",
     "description": "Captain Heyk leads a specially equipped unit into Vilen's sealed park and becomes its sole survivor.",
     "characters": [
       "Heyk",
@@ -44,9 +44,66 @@
       "Captain Heyk leads a specially equipped paramilitary unit into the park.",
       "Forces the unit cannot understand or explain massacre the squad.",
       "Heyk becomes the sole survivor and is evacuated by the Ducal Guard under Drake's orders.",
-      "Grief for his squad follows him into a new role as a Ducal Guard field agent and bodyguard serving Drake and Sherie."
+      "Grief for his squad follows him into a new role as a Ducal Guard field agent and bodyguard serving Drake and Sherie.",
+      "Unusual fog restricts observation and searches in the park; the force that kills the unit remains unexplained."
     ],
-    "contentKind": "outline"
+    "contentKind": "outline",
+    "versions": [
+      {
+        "slug": "ash-under-glass",
+        "number": "Chapter 02",
+        "title": "The Last Man Out",
+        "status": "Placeholder draft",
+        "file": "ash-under-glass.md",
+        "updated": "2026-08-26",
+        "description": "Captain Heyk leads a specially equipped unit into Vilen's sealed park and becomes its sole survivor.",
+        "characters": [
+          "Heyk",
+          "Drake",
+          "Sherie"
+        ],
+        "timelinePhase": "the-quarantine",
+        "timelineLabel": "The Quarantine",
+        "events": [
+          "Public disappearances force police to close the park before the government seals it even from them.",
+          "Captain Heyk leads a specially equipped paramilitary unit into the park.",
+          "Forces the unit cannot understand or explain massacre the squad.",
+          "Heyk becomes the sole survivor and is evacuated by the Ducal Guard under Drake's orders.",
+          "Grief for his squad follows him into a new role as a Ducal Guard field agent and bodyguard serving Drake and Sherie."
+        ],
+        "contentKind": "outline",
+        "id": "v1",
+        "label": "v1 · Archived"
+      },
+      {
+        "slug": "ash-under-glass",
+        "number": "Chapter 02",
+        "title": "The Last Man Out",
+        "status": "Placeholder draft",
+        "file": "ash-under-glass-v2.md",
+        "updated": "2026-09-23",
+        "description": "Captain Heyk leads a specially equipped unit into Vilen's sealed park and becomes its sole survivor.",
+        "characters": [
+          "Heyk",
+          "Drake",
+          "Sherie"
+        ],
+        "timelinePhase": "the-quarantine",
+        "timelineLabel": "The Quarantine",
+        "events": [
+          "Public disappearances force police to close the park before the government seals it even from them.",
+          "Captain Heyk leads a specially equipped paramilitary unit into the park.",
+          "Forces the unit cannot understand or explain massacre the squad.",
+          "Heyk becomes the sole survivor and is evacuated by the Ducal Guard under Drake's orders.",
+          "Grief for his squad follows him into a new role as a Ducal Guard field agent and bodyguard serving Drake and Sherie.",
+          "Unusual fog restricts observation and searches in the park; the force that kills the unit remains unexplained."
+        ],
+        "contentKind": "outline",
+        "id": "v2",
+        "label": "v2 · Current"
+      }
+    ],
+    "defaultVersion": "v2"
   },
   {
     "slug": "after-the-failed-attempt",
@@ -165,8 +222,8 @@
     "number": "Chapter 05",
     "title": "The Empty Boats Beneath the Bridge",
     "status": "Working draft",
-    "file": "the-empty-boats-beneath-the-bridge-v2.md",
-    "updated": "2026-09-19",
+    "file": "the-empty-boats-beneath-the-bridge-v3.md",
+    "updated": "2026-09-23",
     "description": "A covert MSF inspection of apparently unmanned river shipments collapses when the Drowned Choir attacks from below, leaving Kyrien to witness Lynleit's forbidden water walking from the quarantined bank.",
     "characters": [
       "Lynleit",
@@ -203,7 +260,8 @@
         "text": "Kyrien's evasive answer and continued silence suggest a decision to protect Lynleit's forbidden ability without being asked.",
         "status": "inferred"
       },
-      "Lynleit crosses the held surface to the park bank and later sits back to back with Kyrien for warmth among the trees."
+      "Lynleit crosses the held surface to the park bank and later sits back to back with Kyrien for warmth among the trees.",
+      "Heavy mist interrupts sight across the river while the near water remains visible from the park bank."
     ],
     "contentKind": "scene",
     "versions": [
@@ -303,10 +361,60 @@
         ],
         "contentKind": "scene",
         "id": "v2",
-        "label": "v2 · Current"
+        "label": "v2 · Archived"
+      },
+      {
+        "slug": "the-empty-boats-beneath-the-bridge",
+        "number": "Chapter 05",
+        "title": "The Empty Boats Beneath the Bridge",
+        "status": "Working draft",
+        "file": "the-empty-boats-beneath-the-bridge-v3.md",
+        "updated": "2026-09-23",
+        "description": "A covert MSF inspection of apparently unmanned river shipments collapses when the Drowned Choir attacks from below, leaving Kyrien to witness Lynleit's forbidden water walking from the quarantined bank.",
+        "characters": [
+          "Lynleit",
+          "Kyrien",
+          "Felix",
+          "Reiner",
+          "Sherie",
+          "Drake"
+        ],
+        "timelinePhase": "unknowing-convergence",
+        "timelineLabel": "Unknowing Convergence",
+        "events": [
+          "Sherie and Drake ask Lynleit to assemble a loyal team and inspect recurring night traffic on the Vilen river.",
+          "Several surveillance nights produce no boats while small oddities emerge from the quarantined park.",
+          "After the failed watches, Lynleit repeatedly challenges Kyrien to short card games and they learn each other's physical tells.",
+          {
+            "text": "Their unfinished rematches and attention to breath, hands, and pauses imply an attraction neither character names or allows to displace the operation.",
+            "status": "inferred"
+          },
+          "Felix freezes the bridge cameras and remains on the city bank as fallback while Reiner leads Lynleit, Kyrien, Maren, and Ivo down onto the boats.",
+          "When a boat shifts, Kyrien briefly steadies Lynleit near the concealed Sparrow holster and releases her before she asks.",
+          {
+            "text": "The empty boats, drowned hands, and pale girl imply that the contraband crews were taken before the interception.",
+            "status": "inferred"
+          },
+          "Reiner, Maren, and Ivo reach the city bank with Felix's fallback line while Kyrien is forced toward the quarantined park bank.",
+          "The drowned hands tear away Lynleit's blue suede jacket and drag her underwater until fury releases blue flame through the river.",
+          "The river surface holds beneath Lynleit's palm, knee, and boots, allowing her to stand above hands that cannot cross it.",
+          {
+            "text": "The pale girl's tilted head and failure to pursue suggest bewilderment at Lynleit standing on the water.",
+            "status": "inferred"
+          },
+          {
+            "text": "Kyrien's evasive answer and continued silence suggest a decision to protect Lynleit's forbidden ability without being asked.",
+            "status": "inferred"
+          },
+          "Lynleit crosses the held surface to the park bank and later sits back to back with Kyrien for warmth among the trees.",
+          "Heavy mist interrupts sight across the river while the near water remains visible from the park bank."
+        ],
+        "contentKind": "scene",
+        "id": "v3",
+        "label": "v3 · Current"
       }
     ],
-    "defaultVersion": "v2"
+    "defaultVersion": "v3"
   },
   {
     "slug": "the-nameless-street",

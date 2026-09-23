@@ -2,7 +2,7 @@
 
 MAGIARCHY's dangerous places should evoke isolation, apprehension, grimness, and the urgency of surviving. People enter them with work to do, incomplete knowledge, and abilities that remain useful even when their safety is uncertain. This author-approved preference supplements the story's political, supernatural, and domestic life.
 
-Read alongside [Prose Style](../docs.html?doc=prose-style), [Prose and Scene Guidance](../docs.html?doc=prose-and-scene-guidance), [Thematic Direction](../docs.html?doc=thematic-direction), and [Hidden World Foundation](../docs.html?doc=world-foundation). Scene techniques below do not establish new incidents, abilities, or historical facts; confirmed setting additions are identified separately.
+Read alongside [Prose Style](../docs.html?doc=prose-style), [Prose and Scene Guidance](../docs.html?doc=prose-and-scene-guidance), [Thematic Direction](../docs.html?doc=thematic-direction), and [Hidden World Foundation](../docs.html?doc=world-foundation). These are writing principles, not new incidents, abilities, or historical facts.
 
 ## Different ways to face danger
 
@@ -33,46 +33,6 @@ Choose a few specific sensory details that affect behavior. A sound beyond a wal
 For a location brief, identify its ordinary purpose, the lives or work still visible there, the feature that has become unreliable, and the practical route through it. Keep Narvea's contemporary buildings, communications, domestic life, and older institutional inheritance. Grimness need not mean abandoned Gothic interiors everywhere. A maintained, occupied place can fail its inhabitants; daylight and other people do not automatically supply help.
 
 MAGIARCHY's physicians remain ordinary professionals unless the author establishes otherwise. An institutional interior is not permission to invent a secret experiment, laboratory, or biography.
-
-## Fog and visibility
-
-### Confirmed setting
-
-Fog is a major recurring problem for Narvea, concentrated in particular areas. Ordinary fog predates the Spill. During the Spill, certain Holumn incidents cause unusual amounts of fog or mist, with particular emphasis on Vilen's park and river encounters. See [Narvean fog](../duchy.html#fog). This is an author-confirmed addition; the applications below are writing guidance, not a list of new powers.
-
-### Familiar inconvenience before supernatural danger
-
-Give fog an ordinary place in an inhabited country. A slowed journey, a landmark that cannot be seen from its usual approach, or a search that must stay within calling distance can establish the nuisance without announcing an encounter. Choose details appropriate to the location. Do not make the whole country permanently opaque or attach every foggy morning to a Holumn.
-
-Let people have reasons to continue: getting home, reaching someone, finishing an inspection. Familiarity can make a worsening condition easier to underestimate. It does not make residents foolish or every official explanation knowingly false. A forecast can describe the surrounding weather without explaining a particular patch inside it.
-
-### Restrict the view, preserve the place
-
-Establish the bank, path, railing, door, or other usable reference before visibility contracts. Keep the reader able to follow the next consequential movement. A person may know where the bridge is while losing sight of who remains on it. Withhold the threat's explanation, not the blocking needed to understand an action.
-
-Vary depth and density. Near surfaces may remain distinct while an approach disappears. Gaps can briefly restore orientation or reveal that someone has moved. Do not use a perfectly timed clearing for every necessary clue. Fix the useful sightlines while planning the scene and preserve them through the action.
-
-Sound can arrive without a visible source. A voice, wet footstep, motor, or strike against a railing should give the listener something to judge, correctly or otherwise. Fog does not automatically silence sound, break radios, corrupt cameras, or rearrange space. A lamp can remain visible as a glow while failing to identify the person beneath it. Keep the difference between detecting a light and recognizing a face.
-
-### Observation and action
-
-Use reduced visibility to change a choice, not merely decorate a paragraph. Which route can still be checked? Who can answer but cannot be seen? What must be crossed before the next landmark appears? Leave competent responses available where the established danger permits them: maintaining contact, returning to a known edge, stopping instead of charging an uncertain shape. These are possible actions, not new institutional procedures or guaranteed countermeasures.
-
-Fog can conceal a retreat as well as an approach. An opening gained through judgment should sometimes remain useful. Do not grant every threat perfect vision while blinding everyone else unless that manifestation supports the asymmetry. Restored visibility can offer genuine relief without proving that the area is safe.
-
-### Park and river
-
-- **The quarantined park:** unusual fog makes familiar paths, companions, and the cordon harder to keep in view. Preserve the confirmed disappearances and Heyk's losses. Fog is an incident condition, not an explanation of the force that massacres his unit. The exact assault and evacuation remain unresolved.
-- **The river operation:** retain the opposite banks, bridge, descent, current, and fallback route. Mist can conceal stretches between identifiable boats and lights. Kyrien must still witness Lynleit standing on the water from the park bank. The girl, her sewn eyes, fish dress, and reaching hands must remain perceptible in the relevant viewpoint. Felix must have a usable sightline for his fallback line. The attack and current separate the team, not a newly invented fog power.
-- **The recovery:** narrowed visibility can limit what the two banks know about one another while ordinary voices, practical help, and the existing wet-jacket exchange survive. Do not turn the quiet interval into another attack merely to keep the fog threatening.
-
-The park emphasis concerns its Holumn encounters. It does not automatically add supernatural fog to every later scene set in a park, including the bench encounter. Sleepers retains its own unconfirmed relation to the Spill.
-
-### Evidence and limits
-
-Separate what the witness sees from what the archive knows. Unusual density or persistence can be evidence to investigate, not proof of a single source. Whether the fog is an effect, a manifestation, or a condition exploited by something within it must be answered for that Holumn, if answered at all. Do not invent thresholds, chemical properties, contagious effects, or a universal way to disperse it.
-
-Fog is not a shared dimension, a measure of guilt, or the cause of the Spill. It does not connect the Drowned Choir and river leviathan into one intelligence. Do not award Lynleit a fog-clearing ability because her flame burns underwater. Existing approved artwork remains authoritative; a prose revision does not require adding mist over every panel.
 
 ## Isolation that has a cause
 

@@ -2,12 +2,6 @@
 
 Historical notes relocated from Prose Style v10 on 19 September 2026. These record how particular revisions were made, including superseded choices. They are not a style corpus for new prose. Use the [current house style](../docs.html?doc=prose-style); consult this history for provenance, continuity, comparison, and explicitly approved passages. The complete earlier reference remains available as [v10](../docs.html?doc=prose-style&version=v10).
 
-## Narvean fog: 23 September 2026
-
-The author establishes fog as a recurring national problem, especially in selected areas, with unusual fog during certain Spill incidents. The river Chapter v3 adds interrupted sightlines while retaining the near-bank view needed for Kyrien's discovery and the city-side view needed for Felix's fallback. Dialogue, the underwater struggle, and the recovery sequence remain intact. The Last Man Out v2 adds the park's fog to its outline without inventing Heyk's missing assault or evacuation sequence.
-
-The fog section of [Dread and Action Direction](../docs.html?doc=dread-and-action-direction#fog-and-visibility) owns the reusable writing guidance. These revisions do not establish a single fog mechanism or give the characters the archive's knowledge of the Spill.
-
 ## After the Failed Attempt v3: 23 September 2026
 
 The author's backlog supplies the sequence from paid professional legal work through institutional refusal, an interval, the shop humiliation, the dinner attempt, and reluctant recruitment. V3 replaces the outline with scene prose while retaining earlier versions. The mother's apology and the lawyer-payment exchange use the supplied wording, with only typography normalized. Names, the exact attack choreography, the prosecutor's magical status, and the later prohibition remain undecided.

@@ -8,6 +8,8 @@ Story, character, world, relationship, institution, location, and event question
 
 | Area | Question | Confidence |
 | --- | --- | --- |
+| Narvean fog: geography | Which areas are most affected by ordinary fog, and what seasonal or local conditions distinguish them? | 0% |
+| Incident fog | Which Holumn produces the excess mist in each park or river incident, by what mechanism, and what evidence could distinguish it from weather? | 0% |
 | Bone Archive: first encounter | Who is the officer, when and where does the shot occur, and how does the incident reach the main cast? | 0% |
 | Bone Archive: access and release | What admits a person to the Archive's effects, what determines the experience recovered, and can recovery or attachment be interrupted? | 0% |
 | Bone Archive: surviving bargains | Who makes or keeps the records, how is authenticity established, and what can a record prove about the catastrophe an act was meant to prevent? | 0% |

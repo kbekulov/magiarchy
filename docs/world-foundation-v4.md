@@ -8,14 +8,6 @@ Narvea retains aristocratic houses, inherited titles, state councillors, courtly
 
 Much older religious traditions survive within the hidden world. The [Cult of Inanna](../magiarchy.html#cult-of-inanna) belongs to Magi lineage and religious history; it does not define the everyday appearance or material life of modern Narvea.
 
-## Narvean fog
-
-Fog is a recurring problem in Narvea, especially in particular areas rather than uniformly across the country. It limits travel, observation, and searches in an otherwise inhabited, contemporary landscape. Much of it is ordinary weather, familiar before the Spill.
-
-During the Spill, certain Holumn incidents produce unusually dense or extensive fog and mist. Vilen's quarantined park and the river encounters are particularly affected. Familiar bad visibility makes the first signs difficult to distinguish from weather. Fog alone does not identify a Holumn or establish that a person has entered an altered state of existence.
-
-The [Duchy's fog record](../duchy.html#fog) owns the public setting account. [Dread and Action Direction](../docs.html?doc=dread-and-action-direction#fog-and-visibility) covers its use in scenes. The affected regions, seasonal pattern, and individual supernatural mechanisms are not yet mapped.
-
 ## Magic Comes From Inside Reality
 
 Magic exists within reality. Psyche and soul are part of the world's structure, and their pressure becomes strongest wherever many lives overlap, especially in cities.

@@ -100,16 +100,6 @@ This writer reference separates what happens from what a character knows and wha
 
 **Source:** [Bone Archive](../docs.html?doc=holumn-incidents-and-testimonies#bone-archive), [development record](../docs.html?doc=bone-archive-development).
 
-## Narvean fog
-
-**Event period:** Ordinary regional fog predates the Spill. Particular Holumn incidents during the Spill produce unusual fog or mist, especially in Vilen's park and river encounters.
-
-**Reader:** The river Chapter v3 shows mist interrupting sight across the river while leaving the near water visible from Kyrien's position. It does not name the mist's source. The Last Man Out v2 remains an outline: its fog condition is a recorded fact, not a fully dramatized clue to the unit's destruction.
-
-**Characters:** Familiarity with ordinary fog does not give the officers knowledge of a supernatural mechanism. Kyrien still sees Lynleit standing on the water; Felix and the officers on the city bank do not acquire that knowledge. Mist neither proves a shared river intelligence nor explains the park massacre.
-
-**Source:** [Narvean fog](../duchy.html#fog), [river Chapter](../story.html?chapter=the-empty-boats-beneath-the-bridge&version=v3), [park outline](../story.html?chapter=ash-under-glass&version=v2).
-
 ## Table evidence checks
 
 - **Shown or stated:** The selected Chapter or Moment prose delivers the fact, including an explicit narrator explanation. A fact can be author-confirmed without belonging in this category yet.

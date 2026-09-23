@@ -6,19 +6,30 @@
     "description": "The father's persecution, years spent financing justice, the shop humiliation, represented recruitment, and the unresolved conditions for later revenge.",
     "file": "kyrien-origin-and-recruitment.md",
     "updated": "2026-09-23",
-    "speakers": ["Author's Desk"],
+    "speakers": [
+      "Author's Desk"
+    ],
     "defaultVersion": "v1",
-    "versions": [{"id": "v1", "label": "v1 · Current", "file": "kyrien-origin-and-recruitment.md", "updated": "2026-09-23"}]
+    "versions": [
+      {
+        "id": "v1",
+        "label": "v1 · Current",
+        "file": "kyrien-origin-and-recruitment.md",
+        "updated": "2026-09-23"
+      }
+    ]
   },
   {
     "slug": "dread-and-action-direction",
     "title": "Dread and Action Direction",
     "topic": "Writer's Direction",
-    "description": "MAGIARCHY's direction for isolation, grim atmosphere, vulnerable survival, pressured action, and credible relief in scenes and Holumn encounters.",
+    "description": "Isolation, pressured action, and Narvean fog: practical visibility, sound, routes, and the limits of incident-specific effects.",
     "file": "dread-and-action-direction.md",
-    "updated": "2026-09-21",
-    "speakers": ["Author's Desk"],
-    "defaultVersion": "v2",
+    "updated": "2026-09-23",
+    "speakers": [
+      "Author's Desk"
+    ],
+    "defaultVersion": "v3",
     "versions": [
       {
         "id": "v1",
@@ -29,9 +40,17 @@
       },
       {
         "id": "v2",
-        "label": "v2 · Current",
+        "label": "v2 · Archived",
+        "file": "dread-and-action-direction-v2.md",
+        "updated": "2026-09-21",
+        "description": "MAGIARCHY's direction for isolation, grim atmosphere, vulnerable survival, pressured action, and credible relief in scenes and Holumn encounters."
+      },
+      {
+        "id": "v3",
+        "label": "v3 · Current",
         "file": "dread-and-action-direction.md",
-        "updated": "2026-09-21"
+        "updated": "2026-09-23",
+        "description": "Isolation, pressured action, and Narvean fog: practical visibility, sound, routes, and the limits of incident-specific effects."
       }
     ]
   },
@@ -325,11 +344,11 @@
     "topic": "Historical Writing Reference",
     "file": "prose-style-history.md",
     "updated": "2026-09-23",
-    "description": "Chapter history including Kyrien's family trajectory and the dramatized interrogation.",
+    "description": "Chapter revision history, including the river and park fog revisions.",
     "speakers": [
       "Author's Desk"
     ],
-    "defaultVersion": "v2",
+    "defaultVersion": "v3",
     "versions": [
       {
         "id": "v1",
@@ -340,10 +359,17 @@
       },
       {
         "id": "v2",
-        "label": "v2 · Current",
-        "file": "prose-style-history.md",
+        "label": "v2 · Archived",
+        "file": "prose-style-history-v2.md",
         "updated": "2026-09-23",
         "description": "Chapter history including Kyrien's family trajectory and the dramatized interrogation."
+      },
+      {
+        "id": "v3",
+        "label": "v3 · Current",
+        "file": "prose-style-history.md",
+        "updated": "2026-09-23",
+        "description": "Chapter revision history, including the river and park fog revisions."
       }
     ]
   },
@@ -392,11 +418,11 @@
     "topic": "Reader Knowledge",
     "file": "reader-knowledge.md",
     "updated": "2026-09-23",
-    "description": "Kyrien's family persecution, recruitment, and the river as his first unmistakable encounter with magic.",
+    "description": "Event periods, reader evidence, and character knowledge, including fog without new knowledge of its source.",
     "speakers": [
       "Author's Desk"
     ],
-    "defaultVersion": "v4",
+    "defaultVersion": "v5",
     "versions": [
       {
         "id": "v1",
@@ -421,10 +447,17 @@
       },
       {
         "id": "v4",
-        "label": "v4 · Current",
-        "file": "reader-knowledge.md",
+        "label": "v4 · Archived",
+        "file": "reader-knowledge-v4.md",
         "updated": "2026-09-23",
         "description": "Kyrien's family persecution, recruitment, and the river as his first unmistakable encounter with magic."
+      },
+      {
+        "id": "v5",
+        "label": "v5 · Current",
+        "file": "reader-knowledge.md",
+        "updated": "2026-09-23",
+        "description": "Event periods, reader evidence, and character knowledge, including fog without new knowledge of its source."
       }
     ]
   },
@@ -775,8 +808,8 @@
     "title": "Holumn Incidents and Victim Testimonies",
     "topic": "Holumn Archive",
     "file": "holumn-incidents-and-testimonies.md",
-    "updated": "2026-09-19",
-    "description": "Incident evidence separated from proposed institutional readings, with river boundaries, missing-person outcomes, and ordinary medicine kept distinct.",
+    "updated": "2026-09-23",
+    "description": "Holumn evidence and institutional readings, including unusual fog in the park and river incidents without a universal fog mechanism.",
     "speakers": [
       "Victims and Incident Witnesses",
       "Archive"
@@ -826,20 +859,27 @@
       },
       {
         "id": "v7",
-        "label": "v7 · Current",
-        "file": "holumn-incidents-and-testimonies.md",
+        "label": "v7 · Archived",
+        "file": "holumn-incidents-and-testimonies-v7.md",
         "updated": "2026-09-19",
         "description": "Incident evidence separated from proposed institutional readings, with river boundaries, missing-person outcomes, and ordinary medicine kept distinct."
+      },
+      {
+        "id": "v8",
+        "label": "v8 · Current",
+        "file": "holumn-incidents-and-testimonies.md",
+        "updated": "2026-09-23",
+        "description": "Holumn evidence and institutional readings, including unusual fog in the park and river incidents without a universal fog mechanism."
       }
     ],
-    "defaultVersion": "v7"
+    "defaultVersion": "v8"
   },
   {
     "slug": "questions-to-be-answered",
     "title": "Questions to Be Answered",
     "topic": "Editorial Ledger",
     "file": "questions-to-be-answered.md",
-    "updated": "2026-09-19",
+    "updated": "2026-09-23",
     "description": "Unanswered questions about chronology, family reveals, Holumn effects, and the limits of established lore.",
     "speakers": [
       "Author's Desk"
@@ -898,12 +938,29 @@
     "title": "The Duchy of Narvea",
     "topic": "Country Profile",
     "file": "duchy-of-narvea.md",
-    "updated": "2026-09-05",
-    "description": "A concise visual guide to the mapped Baltic country where the story takes place, including its cities, diplomatic legacy, divided authority, institutions, and multilingual culture.",
+    "updated": "2026-09-23",
+    "description": "Narvea’s cities, institutions, diplomatic legacy, and recurring fog, including the Spill’s effects around Vilen.",
     "speakers": [
       "Narvean State Archive"
     ],
-    "href": "duchy.html"
+    "href": "duchy.html",
+    "versions": [
+      {
+        "id": "v1",
+        "label": "v1 · Archived",
+        "file": "duchy-of-narvea-v1.md",
+        "updated": "2026-09-05",
+        "description": "A concise visual guide to the mapped Baltic country where the story takes place, including its cities, diplomatic legacy, divided authority, institutions, and multilingual culture."
+      },
+      {
+        "id": "v2",
+        "label": "v2 · Current",
+        "file": "duchy-of-narvea.md",
+        "updated": "2026-09-23",
+        "description": "Narvea’s cities, institutions, diplomatic legacy, and recurring fog, including the Spill’s effects around Vilen."
+      }
+    ],
+    "defaultVersion": "v2"
   },
   {
     "slug": "what-are-magi",
@@ -922,8 +979,8 @@
     "title": "Hidden World Foundation",
     "topic": "World Foundation",
     "file": "world-foundation.md",
-    "updated": "2026-09-19",
-    "description": "A 21st-century setting with older institutions, alongside magic, hidden history, and Holumn ontology.",
+    "updated": "2026-09-23",
+    "description": "A contemporary country with older institutions, recurrent regional fog, and a hidden supernatural world.",
     "speakers": [
       "World Archive"
     ],
@@ -951,13 +1008,20 @@
       },
       {
         "id": "v4",
-        "label": "v4 · Current",
-        "file": "world-foundation.md",
+        "label": "v4 · Archived",
+        "file": "world-foundation-v4.md",
         "updated": "2026-09-19",
         "description": "A 21st-century setting with older institutions, alongside magic, hidden history, and Holumn ontology."
+      },
+      {
+        "id": "v5",
+        "label": "v5 · Current",
+        "file": "world-foundation.md",
+        "updated": "2026-09-23",
+        "description": "A contemporary country with older institutions, recurrent regional fog, and a hidden supernatural world."
       }
     ],
-    "defaultVersion": "v4"
+    "defaultVersion": "v5"
   },
   {
     "slug": "magecraft-as-leverage",

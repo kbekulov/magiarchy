@@ -118,14 +118,6 @@ A missing-person case with a market purchase among the owner's possessions. Whet
 **Magi and special envoys**
 The object carries a condition. The disappearance occurs when the puzzle is completed.
 
-## Fog during the Spill
-
-Narvea already has areas where ordinary fog repeatedly disrupts travel and observation. Certain Holumn incidents during the Spill produce unusually large amounts of fog or mist. The quarantined park in Vilen and the river encounters are especially affected.
-
-This is a confirmed setting condition, not a quotation attributed to a witness. Its mechanism must be established incident by incident. Poor visibility alone does not identify a manifestation, prove a disappearance, or establish altered space. The force responsible for the loss of Heyk's unit remains unexplained; no separate fog entity has been identified there.
-
-See [Narvean fog](../duchy.html#fog) for the country record and [Dread and Action Direction](../docs.html?doc=dread-and-action-direction#fog-and-visibility) for scene guidance.
-
 ## The Drowned Choir
 
 The Drowned Choir and the river leviathan are separate Holumns, not two manifestations of one river-bound intelligence.
@@ -143,8 +135,6 @@ A pale girl emerges from the water. Her eyes are sewn shut with fishing line, an
 The encounter occurs during a covert MSF operation requested by Sherie and Drake. Small wooden boats owned by contraband gangs move on the darkest nights without visible operators. Dark tarps cover their shallow holds, fixed rudders hold their heading, and the current provides most of their movement. Felix freezes the bridge cameras and remains on the city side as communications fallback while Lynleit, Reiner, Kyrien, Maren, and Ivo descend. When they pull back the tarps, the holds are empty. The Drowned Choir has already taken every crew before the boats reach the interception point.
 
 The officers are trained swimmers, but unseen hands make the short escape to shore nearly impossible. Reiner, Maren, and Ivo reach the street-facing city bank with Felix's fallback line. Kyrien is driven toward the quarantined park bank instead and observes the river from inside the trees. Only Lynleit sees the hands clearly after she is pulled underwater. They tear away the fitted blue suede jacket she chose for the operation. Fear and fury release her blue flame at full force. It burns the drowned hands beneath the water until their grip opens.
-
-Unusually heavy mist restricts sight across the river during the encounter. Visibility remains uneven: the near water can be seen from the park bank, and Felix can distinguish the swimmers approaching the city steps. The surviving accounts do not establish which manifestation produces the mist or how it does so.
 
 When Lynleit breaks the surface, her palm meets resistance. She brings one knee and then both boots onto the same yielding layer. The river bows beneath her weight without admitting her body. Once she stands, the hands cannot cross the surface beneath her feet.
 

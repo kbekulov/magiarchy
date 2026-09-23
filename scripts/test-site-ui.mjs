@@ -8,6 +8,7 @@ import { chromium, webkit } from 'playwright';
 import { testGalleryResources } from './test-gallery-resources.mjs';
 import { testGalleryPanels } from './test-gallery-panels.mjs';
 import { testKyrienOrigin } from './test-kyrien-origin.mjs';
+import { testNarveanFog } from './test-narvean-fog.mjs';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const mime = { '.html': 'text/html', '.js': 'text/javascript', '.json': 'application/json', '.css': 'text/css', '.png': 'image/png', '.webp': 'image/webp', '.md': 'text/plain', '.mp3': 'audio/mpeg', '.wav': 'audio/wav' };
@@ -66,6 +67,11 @@ try {
       if (process.env.TEST_RECRUITMENT_ONLY === '1') {
         await testKyrienOrigin(page, origin, engine);
         assert.deepEqual(errors, [], `${engine}: recruitment reader errors`);
+        continue;
+      }
+      await testNarveanFog(page, origin, engine);
+      if (process.env.TEST_FOG_ONLY === '1') {
+        assert.deepEqual(errors, [], `${engine}: fog reader errors`);
         continue;
       }
       for (const width of [390, 1440]) {

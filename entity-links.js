@@ -1,5 +1,6 @@
 /* Shared archive vocabulary links. Keep this registry limited to records that have a stable in-site destination. */
 const archiveEntityLinks = [
+  ['Narvean fog', 'duchy.html#fog'],
   ['Prosecutor General', 'church.html#prosecutor-general'],
   ['Sleepers', 'docs.html?doc=holumn-incidents-and-testimonies#sleepers'],
   ["Kyrien's whiskey flask", 'items.html?item=kyriens-whiskey-flask'],

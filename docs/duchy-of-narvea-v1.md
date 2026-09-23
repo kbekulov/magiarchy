@@ -38,14 +38,6 @@ Most negotiations between rival nations take place in Bird's Nest. Foreign count
 
 The country's exact borders are not fully recorded.
 
-## Narvean fog
-
-Fog is a recurring national problem, especially in particular areas. It delays journeys, restricts observation, and makes searches harder. Much of it is ordinary weather, familiar before the Spill.
-
-During the Spill, certain Holumn incidents produce unusually dense or extensive fog and mist. Vilen's quarantined park and river encounters are particularly affected. People can lose sight of a familiar route or a nearby companion while still hearing traffic or voices. Fog alone does not reveal whether anything supernatural is happening.
-
-See the [country record](../duchy.html#fog) and [Holumn incidents](../docs.html?doc=holumn-incidents-and-testimonies#fog-during-the-spill).
-
 ## The two capitals
 
 ### Rennel

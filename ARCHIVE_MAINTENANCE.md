@@ -140,6 +140,8 @@ An artefact belongs in this archive when its identity, custody, rule, or history
 
 ## Audit boundaries
 
+Narvean fog: `duchy.html#fog` owns the public setting; `docs/world-foundation.md` and the fog section in `docs/dread-and-action-direction.md` preserve canon and scene guidance. Ordinary regional fog predates the Spill. Certain Holumn incidents cause excessive fog, especially the Vilen park and river encounters. Synchronize incident context in `holumns/index.json` and the testimony document, then version affected Chapters and Moments. Keep witness knowledge distinct from author-confirmed cause; do not invent a universal fog system, regional map, shared river intelligence, or fog-clearing power. Preserve necessary sightlines, communications, approved artwork, and unresolved attack mechanisms.
+
 - Nasu audit: strengthens pressure, exceptions, costs, partial truths, reveal timing, and character consequence. It remains advisory.
 - Continuity audit: finds missing causal links and timeline drift. It does not invent connective canon.
 - Contradiction audit: records only mutually incompatible statements. Ordinary uncertainty stays in Questions.

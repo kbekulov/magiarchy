@@ -319,6 +319,8 @@ for (const chapter of chapters) {
 }
 assert.equal(documentSearchUrl({ slug: 'test', versions: [{ id: 'v1' }], versionId: 'v1' }), 'docs.html?doc=test&version=v1', 'Explicit single-version document lost its version URL');
 assert.equal(documentSearchUrl({ slug: 'test', versionId: 'v1' }), 'docs.html?doc=test');
+assert.equal(documentSearchUrl({ slug: 'test', href: 'duchy.html', versions: [{ id: 'v1' }], versionId: 'v1' }), 'docs.html?doc=test&version=v1', 'A bespoke page must not replace a historical document URL');
+assert.equal(documentSearchUrl({ slug: 'test', href: 'duchy.html' }), 'duchy.html', 'Unversioned bespoke documents retain their destination');
 assert.ok(entries.some(e => e.recordId === 'doc-reader-knowledge' && e.current), 'Current reader knowledge record missing from search');
 assert.ok(read('story/after-the-failed-attempt-v2.md').includes('transfer clause'), 'Interrogation authority missing');
 assert.equal((read('story/after-the-failed-attempt-v2.md').match(/Lynleit enters the interrogation/g) || []).length, 1);

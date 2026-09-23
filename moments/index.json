@@ -1390,7 +1390,8 @@
       {
         "text": "Kyrien's evasive answer protects Lynleit's secret without an order from her.",
         "status": "inferred"
-      }
+      },
+      "Unusually heavy mist interrupts visibility across the river. The near water remains visible from the park bank, allowing Kyrien to witness Lynleit; Felix can still distinguish swimmers at the city steps."
     ],
     "openQuestions": [
       "What lasting evidence or change, if any, does the encounter leave in the river?",
@@ -1400,8 +1401,8 @@
     "continuityBefore": "The hilltop agreement gives Drake and Sherie access to a small loyal MSF team without granting them control of the agency. Their first request is a limited investigation of apparently unmanned river shipments, with contraband still the leading material explanation.",
     "continuityAfter": "Felix, Reiner, Maren, and Ivo carry an account of impossible resistance from the city bank but no shared sight of its cause. Kyrien observes the river from the quarantined trees, and Lynleit later joins him on the park bank without the blue suede jacket. Their back-to-back recovery combines the physical awareness established during the failed watches with a mutual silence around what he witnessed. Lynleit later complains about the lost jacket. Much later, after Fionn's murder, the hotel-room refuge deepens that physical trust into emotional reliance.",
     "chapterSlug": "the-empty-boats-beneath-the-bridge",
-    "updated": "2026-09-19",
-    "defaultVersion": "v3",
+    "updated": "2026-09-23",
+    "defaultVersion": "v4",
     "versions": [
       {
         "title": "The Empty Boats Beneath the Bridge",
@@ -1810,11 +1811,150 @@
         "chapterSlug": "the-empty-boats-beneath-the-bridge",
         "updated": "2026-09-19",
         "id": "v3",
-        "label": "v3 · Current",
+        "label": "v3 · Archived",
         "chapterVersion": "v2"
+      },
+      {
+        "slug": "the-boat-beneath-the-bridge",
+        "code": "MOM-006",
+        "title": "The Empty Boats Beneath the Bridge",
+        "status": "Key scene",
+        "placementStatus": "Core sequence confirmed",
+        "timelinePhase": "unknowing-convergence",
+        "timelineLabel": "Unknowing Convergence",
+        "sequence": 4,
+        "sceneType": "Failed river surveillance",
+        "thread": "The suspected coup and the Spill",
+        "location": "A Vilen river bridge linking a city street to the quarantined park",
+        "summary": "A covert MSF team descends from a bridge to inspect small night shipments requested by Drake and Sherie. The tarp-covered wooden boats arrive empty, the Drowned Choir attacks from below, and Kyrien secretly witnesses Lynleit stand on the river.",
+        "purpose": "The river attack separates the team. Kyrien witnesses Lynleit's forbidden ability and keeps it secret.",
+        "characters": [
+          {
+            "name": "Sherie",
+            "slug": "sherie"
+          },
+          {
+            "name": "Drake",
+            "slug": "drake"
+          },
+          {
+            "name": "Lynleit",
+            "slug": "lynleit"
+          },
+          {
+            "name": "Felix",
+            "slug": "felix"
+          },
+          {
+            "name": "Reiner",
+            "slug": "reiner"
+          },
+          {
+            "name": "Kyrien",
+            "slug": "kyrien"
+          }
+        ],
+        "characterAnchors": [
+          {
+            "slug": "sherie",
+            "beat": "What the Boat Reveals"
+          },
+          {
+            "slug": "drake",
+            "beat": "The Boat below the Bridge"
+          },
+          {
+            "slug": "lynleit",
+            "beat": "The Heir Apparent"
+          },
+          {
+            "slug": "felix",
+            "beat": "No Trust for Kyrien"
+          },
+          {
+            "slug": "reiner",
+            "beat": "Trusting Lynleit"
+          },
+          {
+            "slug": "kyrien",
+            "beat": "Alliance under Pressure"
+          }
+        ],
+        "known": [
+          "Sherie and Drake ask Lynleit to assemble a loyal MSF team and investigate recurring night traffic on the Vilen river.",
+          "Drake's intelligence identifies small boats moving only on the darkest nights. No operator is visible, the pattern appears intricate, and contraband remains a plausible explanation.",
+          "The chosen bridge links a city street to the quarantined park.",
+          "The plan requires Felix to freeze the bridge's civil safety cameras, maintain communications, and remain on the city side as fallback while the river team descends by rope, inspects the boats, and leaves by rope at the next bridge.",
+          "Several nights produce no boats. Each unsuccessful watch consumes the limited camera window and exposes Lynleit or Kyrien to small oddities emerging from the quarantined park that the mission gives them no freedom to pursue.",
+          "After an unsuccessful watch is formally aborted, Lynleit and Kyrien play short card games while the camera feed and bridge equipment are restored.",
+          "Kyrien wins the first game, and Lynleit requests a rematch.",
+          "Across the failed watches, Lynleit learns that Kyrien briefly stops breathing before a risky play. Kyrien learns the small hand movement that precedes one of Lynleit's decisions.",
+          {
+            "text": "Their repeated rematches and attention to hands and breathing suggest a growing attraction neither names.",
+            "status": "inferred"
+          },
+          "The successful interception occurs on the fifth watch.",
+          "The unsuccessful watches reveal a branch breaking before the wind reaches the trees and a pale interruption in a frozen camera feed.",
+          "The boats are small wooden craft with dark tarps over shallow holds. Fixed rudders keep them aligned while the current provides most of their movement.",
+          "When the boats finally appear, Reiner, Lynleit, Kyrien, Maren, and Ivo descend and find them empty. Felix remains ashore.",
+          "Felix calls them to position before the fifth camera window opens, leaving their last card game unfinished.",
+          "When an empty boat shifts, Kyrien briefly steadies Lynleit at the waist near her concealed Sparrow holster. She catches the rail instead of reaching for the pistol, and he releases her as she regains her balance.",
+          {
+            "text": "The empty boats, drowned hands, and pale girl imply that the Drowned Choir took the contraband crews before the interception, although the surviving officers cannot prove that connection.",
+            "status": "inferred"
+          },
+          "The river attack begins while the officers search the empty boats for another explanation.",
+          "The officers are capable swimmers. Reaching shore becomes difficult because unseen hands seize their legs and pull downward.",
+          "After reaching land, Maren describes the sensation of hands gripping and pulling her legs.",
+          "Reiner, Maren, and Ivo reach the city bank with Felix’s fallback line without understanding what attacked them. Reiner looks back and finds Lynleit and Kyrien missing.",
+          {
+            "text": "The hands of different sizes and states of decay suggest many drowned victims, rather than one submerged attacker.",
+            "status": "inferred"
+          },
+          "Only Lynleit sees the hands clearly. They seize her most violently and drag her underwater.",
+          "Lynleit wears a fitted blue suede jacket for the operation because it interferes less with ropes and wet timber than her usual coat.",
+          "The hands tear the blue suede jacket away during the underwater struggle.",
+          "The attack activates her childhood fear of drowning. Fury releases her blue flame, and the fire catches and burns the drowned hands even beneath the water.",
+          "After breaking the surface, Lynleit's palm meets resistance. She brings a knee and then both boots onto the same yielding layer until she stands above the river.",
+          "The drowned hands reach upward from the darkness but cannot pass through the surface layer beneath Lynleit's feet.",
+          "A pale girl emerges wearing a dress made from dead fish. Fishing line sews her eyes shut.",
+          {
+            "text": "The girl's tilted head and failure to pursue suggest bewilderment at Lynleit standing on the water.",
+            "status": "inferred"
+          },
+          "Kyrien is present as Lynleit's concealed unofficial asset rather than an acknowledged MSF officer.",
+          "The force in the river separates Kyrien from the official team and drives him toward the quarantined park side of the river.",
+          "Kyrien reaches the park bank, enters the trees, and observes Lynleit's confrontation on the river from inside the quarantine.",
+          "Only Kyrien witnesses Lynleit walking on water.",
+          "Lynleit tests each step across the yielding surface and backs toward the park bank while the girl remains still.",
+          "Kyrien is too careful to acknowledge what he saw and feigns innocence convincingly.",
+          "Lynleit reaches the park side of the river without the jacket, where Kyrien is waiting among the trees.",
+          "They remain inside the night park, drenched and struggling to catch their breath.",
+          "They sit with their backs pressed together to share body heat while they recover.",
+          "Sitting back to back, Lynleit notices Kyrien hold his breath. She recognizes the tell from their card games.",
+          "Lynleit indirectly asks whether Kyrien saw anything strange during the escape.",
+          "Kyrien answers with the empty boats and the attack, without mentioning Lynleit standing on the water.",
+          {
+            "text": "Kyrien's evasive answer protects Lynleit's secret without an order from her.",
+            "status": "inferred"
+          },
+          "Unusually heavy mist interrupts visibility across the river. The near water remains visible from the park bank, allowing Kyrien to witness Lynleit; Felix can still distinguish swimmers at the city steps."
+        ],
+        "openQuestions": [
+          "What lasting evidence or change, if any, does the encounter leave in the river?",
+          "What intelligence survives the failed operation beyond the officers' separate accounts?",
+          "Does the submerged blue flame leave a lasting injury on the Drowned Choir or only force the hands to release Lynleit?"
+        ],
+        "continuityBefore": "The hilltop agreement gives Drake and Sherie access to a small loyal MSF team without granting them control of the agency. Their first request is a limited investigation of apparently unmanned river shipments, with contraband still the leading material explanation.",
+        "continuityAfter": "Felix, Reiner, Maren, and Ivo carry an account of impossible resistance from the city bank but no shared sight of its cause. Kyrien observes the river from the quarantined trees, and Lynleit later joins him on the park bank without the blue suede jacket. Their back-to-back recovery combines the physical awareness established during the failed watches with a mutual silence around what he witnessed. Lynleit later complains about the lost jacket. Much later, after Fionn's murder, the hotel-room refuge deepens that physical trust into emotional reliance.",
+        "chapterSlug": "the-empty-boats-beneath-the-bridge",
+        "updated": "2026-09-23",
+        "chapterVersion": "v3",
+        "id": "v4",
+        "label": "v4 · Current"
       }
     ],
-    "chapterVersion": "v2"
+    "chapterVersion": "v3"
   },
   {
     "slug": "the-park-unit-is-lost",
@@ -1866,7 +2006,8 @@
       "Heyk is the sole survivor.",
       "The Ducal Guard evacuates him briefly under Drake's orders.",
       "He is subsequently recruited into the Ducal Guard as a field agent and bodyguard serving Drake and Sherie's interests.",
-      "His continuing motive is grief for the squad he lost."
+      "His continuing motive is grief for the squad he lost.",
+      "Unusual fog accompanies the park incidents and restricts visibility during the unit’s operation. It does not establish what massacres the unit."
     ],
     "openQuestions": [
       "What does Heyk perceive during the massacre, and which parts of his account can he articulate?",
@@ -1876,7 +2017,142 @@
     "continuityBefore": "The public already knows that people are missing. Gas, poison, or another harmful substance remains a possible explanation, although no bodies have been recovered.",
     "continuityAfter": "Heyk enters Drake and Sherie's orbit carrying grief, survivor knowledge, and direct experience that no official material explanation can fully contain.",
     "chapterSlug": "ash-under-glass",
-    "updated": "2026-09-05"
+    "updated": "2026-09-23",
+    "versions": [
+      {
+        "slug": "the-park-unit-is-lost",
+        "code": "MOM-009",
+        "title": "The Last Man out of the Park",
+        "status": "Key scene",
+        "placementStatus": "Core chronology confirmed",
+        "timelinePhase": "the-quarantine",
+        "timelineLabel": "The Quarantine",
+        "sequence": 3,
+        "sceneType": "Failed containment",
+        "thread": "The Vilen quarantine",
+        "location": "The quarantined park in Vilen",
+        "summary": "A specially equipped paramilitary unit enters the sealed park and is massacred by forces it cannot understand. Captain Heyk becomes the sole survivor.",
+        "purpose": "Heyk loses his unit and enters Drake and Sherie's service after evacuation.",
+        "characters": [
+          {
+            "name": "Heyk",
+            "slug": "heyk"
+          },
+          {
+            "name": "Drake",
+            "slug": "drake"
+          },
+          {
+            "name": "Sherie",
+            "slug": "sherie"
+          }
+        ],
+        "characterAnchors": [
+          {
+            "slug": "heyk",
+            "beat": "The Last Man out of the Park"
+          },
+          {
+            "slug": "drake",
+            "beat": "A Coup without a Source"
+          },
+          {
+            "slug": "sherie",
+            "beat": "The Secret Proposal"
+          }
+        ],
+        "known": [
+          "The park quarantine follows the disappearances of citizens, private investigators, and police officers.",
+          "Police enforce the first closure before the park is sealed even from them.",
+          "The government deploys specially equipped paramilitary units to investigate the whole park.",
+          "The unit commanded by Captain Heyk is massacred by forces he cannot understand or explain.",
+          "Heyk is the sole survivor.",
+          "The Ducal Guard evacuates him briefly under Drake's orders.",
+          "He is subsequently recruited into the Ducal Guard as a field agent and bodyguard serving Drake and Sherie's interests.",
+          "His continuing motive is grief for the squad he lost."
+        ],
+        "openQuestions": [
+          "What does Heyk perceive during the massacre, and which parts of his account can he articulate?",
+          "Why does Drake have enough warning or access to order the Ducal Guard evacuation?",
+          "What evidence, equipment, or injury leaves the park with Heyk?"
+        ],
+        "continuityBefore": "The public already knows that people are missing. Gas, poison, or another harmful substance remains a possible explanation, although no bodies have been recovered.",
+        "continuityAfter": "Heyk enters Drake and Sherie's orbit carrying grief, survivor knowledge, and direct experience that no official material explanation can fully contain.",
+        "chapterSlug": "ash-under-glass",
+        "updated": "2026-09-05",
+        "id": "v1",
+        "label": "v1 · Archived",
+        "chapterVersion": "v1"
+      },
+      {
+        "slug": "the-park-unit-is-lost",
+        "code": "MOM-009",
+        "title": "The Last Man out of the Park",
+        "status": "Key scene",
+        "placementStatus": "Core chronology confirmed",
+        "timelinePhase": "the-quarantine",
+        "timelineLabel": "The Quarantine",
+        "sequence": 3,
+        "sceneType": "Failed containment",
+        "thread": "The Vilen quarantine",
+        "location": "The quarantined park in Vilen",
+        "summary": "A specially equipped paramilitary unit enters the sealed park and is massacred by forces it cannot understand. Captain Heyk becomes the sole survivor.",
+        "purpose": "Heyk loses his unit and enters Drake and Sherie's service after evacuation.",
+        "characters": [
+          {
+            "name": "Heyk",
+            "slug": "heyk"
+          },
+          {
+            "name": "Drake",
+            "slug": "drake"
+          },
+          {
+            "name": "Sherie",
+            "slug": "sherie"
+          }
+        ],
+        "characterAnchors": [
+          {
+            "slug": "heyk",
+            "beat": "The Last Man out of the Park"
+          },
+          {
+            "slug": "drake",
+            "beat": "A Coup without a Source"
+          },
+          {
+            "slug": "sherie",
+            "beat": "The Secret Proposal"
+          }
+        ],
+        "known": [
+          "The park quarantine follows the disappearances of citizens, private investigators, and police officers.",
+          "Police enforce the first closure before the park is sealed even from them.",
+          "The government deploys specially equipped paramilitary units to investigate the whole park.",
+          "The unit commanded by Captain Heyk is massacred by forces he cannot understand or explain.",
+          "Heyk is the sole survivor.",
+          "The Ducal Guard evacuates him briefly under Drake's orders.",
+          "He is subsequently recruited into the Ducal Guard as a field agent and bodyguard serving Drake and Sherie's interests.",
+          "His continuing motive is grief for the squad he lost.",
+          "Unusual fog accompanies the park incidents and restricts visibility during the unit’s operation. It does not establish what massacres the unit."
+        ],
+        "openQuestions": [
+          "What does Heyk perceive during the massacre, and which parts of his account can he articulate?",
+          "Why does Drake have enough warning or access to order the Ducal Guard evacuation?",
+          "What evidence, equipment, or injury leaves the park with Heyk?"
+        ],
+        "continuityBefore": "The public already knows that people are missing. Gas, poison, or another harmful substance remains a possible explanation, although no bodies have been recovered.",
+        "continuityAfter": "Heyk enters Drake and Sherie's orbit carrying grief, survivor knowledge, and direct experience that no official material explanation can fully contain.",
+        "chapterSlug": "ash-under-glass",
+        "updated": "2026-09-23",
+        "chapterVersion": "v2",
+        "id": "v2",
+        "label": "v2 · Current"
+      }
+    ],
+    "chapterVersion": "v2",
+    "defaultVersion": "v2"
   },
   {
     "slug": "students-beyond-the-cordon",
