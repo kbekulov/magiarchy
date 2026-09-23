@@ -6,6 +6,13 @@ export async function testArtworkVersions(page, origin, engine) {
     await page.goto(`${origin}/gallery.html`);
     await page.waitForLoadState('networkidle');
     const historical = page.locator('[data-historical="true"]');
+    await historical.scrollIntoViewIfNeeded();
+    await page.waitForTimeout(250);
+    assert.ok(await historical.evaluate(card => {
+      const others = [...card.parentElement.children].filter(item => item !== card && !item.hidden);
+      return card === card.parentElement.lastElementChild && others.every(item => item.getBoundingClientRect().bottom <= card.getBoundingClientRect().top + 1);
+    }), 'Historical artwork must sit below every current artwork');
+    assert.ok((await historical.textContent()).includes('2021 OR EARLIER'));
     assert.equal(await historical.getAttribute('data-character'), '');
     assert.equal(await historical.getAttribute('data-profile-portrait'), 'false');
     assert.ok((await historical.innerText()).includes('no connection to the current characters'));
