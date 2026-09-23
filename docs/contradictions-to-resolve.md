@@ -16,6 +16,8 @@ Doom Has an Address v7 supplies current shared canon. The Bench under the Lamp u
 
 ## Decision history
 
+On 23 September 2026, the author selected the motorboat depicted in the new Sleepers panels for the written scene. Sleepers above the River v2 replaces rowing with an outboard motor; v1 preserves the rowing draft. The seven-panel sequence links to v2. The passive figures, unknown chronology, and unfinished downstream journey remain unchanged.
+
 On 23 September 2026, After the Failed Attempt v3 and its two matching Moments replace the earlier outline's confirmed Magus politician with a senior prosecutor promoted to Prosecutor General, whose own magical status is undecided. The failure is partly due to a concealed magical connection, not solely proof of personal magecraft. His father is a military-police commander murdered under suppression sanction. Credible legal evidence precedes institutional refusal, then an interval and the shop humiliation. MSF can support a represented release arrangement, not assume unrestricted police or judicial control. Profiles, World context, reader knowledge, and current advisory records follow v3; Chapter and Moment v1/v2 retain their incompatible earlier wording as history. Later revenge requires a separate genuine offence, not retroactive invalidation of the protected original operation.
 
 The entries below describe successive author decisions, not competing instructions for current records.

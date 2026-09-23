@@ -472,5 +472,143 @@
       }
     ],
     "revision": "r3"
+  },
+  {
+    "id": "sleepers-above-the-river",
+    "revision": "r1",
+    "title": "Sleepers above the River",
+    "summary": "Kyrien reaches the riverbank, notices figures suspended above the water, and takes a boat downstream for a closer look.",
+    "medium": "Pencil sketches",
+    "characters": [
+      "kyrien"
+    ],
+    "moment": {
+      "slug": "sleepers-above-the-river",
+      "version": "v2"
+    },
+    "cover": "panel-2",
+    "beats": [
+      {
+        "id": "riverbank",
+        "title": "At the riverbank"
+      },
+      {
+        "id": "suspended-figures",
+        "title": "Figures above the water"
+      },
+      {
+        "id": "looking-up",
+        "title": "Kyrien looks up"
+      },
+      {
+        "id": "jetty",
+        "title": "Along the jetty"
+      },
+      {
+        "id": "downriver",
+        "title": "Farther downriver"
+      },
+      {
+        "id": "boat",
+        "title": "Out on the water"
+      },
+      {
+        "id": "sleeper",
+        "title": "Beneath the brim"
+      }
+    ],
+    "panels": [
+      {
+        "id": "panel-1",
+        "beat": "riverbank",
+        "label": "Sketch 1",
+        "title": "At the riverbank",
+        "src": "media/gallery/panels/sleepers-above-the-river/sleepers-above-the-river-panel-1-sketch-r1.png",
+        "alt": "Kyrien approaches a sandy riverbank in a light jacket. A wooden jetty and small boat lie to his left; mist hangs along the trees across the water.",
+        "width": 1448,
+        "height": 1086,
+        "bytes": 2676544,
+        "display": "media/gallery/previews/panels/sleepers-above-the-river-r1-panel-1-display.webp",
+        "thumbnail": "media/gallery/previews/panels/sleepers-above-the-river-r1-panel-1-thumbnail.webp"
+      },
+      {
+        "id": "panel-2",
+        "beat": "suspended-figures",
+        "label": "Sketch 2",
+        "title": "Figures above the water",
+        "src": "media/gallery/panels/sleepers-above-the-river/sleepers-above-the-river-panel-2-sketch-r1.png",
+        "alt": "Kyrien stands on the bank beneath a line of men suspended above the river, their dark coats hanging loose and their heads bowed beneath hats.",
+        "width": 1448,
+        "height": 1086,
+        "bytes": 2844295,
+        "display": "media/gallery/previews/panels/sleepers-above-the-river-r1-panel-2-display.webp",
+        "thumbnail": "media/gallery/previews/panels/sleepers-above-the-river-r1-panel-2-thumbnail.webp"
+      },
+      {
+        "id": "panel-3",
+        "beat": "looking-up",
+        "label": "Sketch 3",
+        "title": "Kyrien looks up",
+        "src": "media/gallery/panels/sleepers-above-the-river/sleepers-above-the-river-panel-3-sketch-r1.png",
+        "alt": "Close view of Kyrien looking upward, his dark hair parted over his forehead and his light jacket open over a dark shirt.",
+        "width": 1448,
+        "height": 1086,
+        "bytes": 2671024,
+        "display": "media/gallery/previews/panels/sleepers-above-the-river-r1-panel-3-display.webp",
+        "thumbnail": "media/gallery/previews/panels/sleepers-above-the-river-r1-panel-3-thumbnail.webp"
+      },
+      {
+        "id": "panel-4",
+        "beat": "jetty",
+        "label": "Sketch 4",
+        "title": "Along the jetty",
+        "src": "media/gallery/panels/sleepers-above-the-river/sleepers-above-the-river-panel-4-sketch-r1.png",
+        "alt": "Kyrien walks along a wooden jetty beside a moored wooden boat fitted with an outboard motor.",
+        "width": 1448,
+        "height": 1086,
+        "bytes": 3019530,
+        "display": "media/gallery/previews/panels/sleepers-above-the-river-r1-panel-4-display.webp",
+        "thumbnail": "media/gallery/previews/panels/sleepers-above-the-river-r1-panel-4-thumbnail.webp"
+      },
+      {
+        "id": "panel-5",
+        "beat": "downriver",
+        "label": "Sketch 5",
+        "title": "Farther downriver",
+        "src": "media/gallery/panels/sleepers-above-the-river/sleepers-above-the-river-panel-5-sketch-r1.png",
+        "alt": "A line of suspended figures in long coats and hats extends down the river above wooded banks and low mist, with distant buildings beyond the trees.",
+        "width": 1448,
+        "height": 1086,
+        "bytes": 3044352,
+        "display": "media/gallery/previews/panels/sleepers-above-the-river-r1-panel-5-display.webp",
+        "thumbnail": "media/gallery/previews/panels/sleepers-above-the-river-r1-panel-5-thumbnail.webp"
+      },
+      {
+        "id": "panel-6",
+        "beat": "boat",
+        "label": "Sketch 6",
+        "title": "Out on the water",
+        "src": "media/gallery/panels/sleepers-above-the-river/sleepers-above-the-river-panel-6-sketch-r1.png",
+        "alt": "Kyrien steers the small motorboat downriver toward the suspended figures. A wake spreads behind the boat between the tree-lined banks.",
+        "width": 1448,
+        "height": 1086,
+        "bytes": 3022168,
+        "display": "media/gallery/previews/panels/sleepers-above-the-river-r1-panel-6-display.webp",
+        "thumbnail": "media/gallery/previews/panels/sleepers-above-the-river-r1-panel-6-thumbnail.webp"
+      },
+      {
+        "id": "panel-7",
+        "beat": "sleeper",
+        "label": "Sketch 7",
+        "title": "Beneath the brim",
+        "src": "media/gallery/panels/sleepers-above-the-river/sleepers-above-the-river-panel-7-sketch-r1.png",
+        "alt": "Close view of a Sleeper in a long dark coat, his head lowered and his eyes hidden in the shadow of his hat.",
+        "width": 1448,
+        "height": 1086,
+        "bytes": 3180669,
+        "display": "media/gallery/previews/panels/sleepers-above-the-river-r1-panel-7-display.webp",
+        "thumbnail": "media/gallery/previews/panels/sleepers-above-the-river-r1-panel-7-thumbnail.webp"
+      }
+    ]
   }
 ]

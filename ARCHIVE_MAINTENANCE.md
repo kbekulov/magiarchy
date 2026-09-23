@@ -255,6 +255,8 @@ Exactly one card per version group carries `data-image-version-default="true"`. 
 
 ### Scene panel intake
 
+The seven Sleepers above the River panels follow source filenames 1 through 7 as successive beats and link to Moment v2. The author selected their outboard motorboat for the prose on 23 September 2026; v1 preserves the rowing draft. The close-up is an artwork view, not evidence that Kyrien can see the figure's face from below. Keep this unplaced encounter outside numbered timelines and distinct from the Drowned Choir's river operation.
+
 The cat-incident sketches illustrate the current v2 Ash in the Family House Moment, in supplied numeric order. Their roof, storm, and table compositions remain artwork rather than additions to the written scene's canon. No Chapter is assigned. Author-edited T-pose exports are verified by `gallery/t-pose-approved.json`; old recipes must not overwrite them.
 
 Story timeline phases include a compact thumbnail link for each panel set associated with a current/default Chapter or Moment in that phase. Derive placement from those owning records and `gallery/panels.json`, not a second timeline field. Omit unplaced, conflicting-phase, or historical-only associations. Keep the scene title and image count readable, preserve ordinary mouse/keyboard/touch link activation inside the draggable track, and do not create a numbered phase for artwork. Existing version-specific Chapter/Moment links remain unchanged.

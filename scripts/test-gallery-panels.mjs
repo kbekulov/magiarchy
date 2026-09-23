@@ -9,6 +9,32 @@ export async function testGalleryPanels(page, origin, engine) {
   assert.equal(new Set(record.panels.map(panel => panel.beat)).size, 7, 'Every river panel is a successive beat');
   assert.ok(record.panels.every(panel => !panel.composition), 'River panels are not alternative compositions');
   const visit = async route => { await page.goto(`${origin}/${route}`); await page.waitForLoadState('networkidle'); };
+  const sleepers = records.find(item => item.id === 'sleepers-above-the-river');
+  assert.deepEqual(sleepers.panels.map(panel => panel.id), Array.from({ length: 7 }, (_, i) => `panel-${i + 1}`));
+  for (const width of [390, 820, 1440]) {
+    await page.setViewportSize({ width, height: 900 });
+    await visit('gallery.html?panels=sleepers-above-the-river');
+    assert.deepEqual(await page.locator('.scene-panel').evaluateAll(nodes => nodes.map(node => node.id)), sleepers.panels.map(panel => panel.id));
+    assert.equal(await page.locator('#panel-count').textContent(), '7 beats · 7 images');
+    assert.equal(await page.locator('#panel-context a').getAttribute('href'), 'moments.html?moment=sleepers-above-the-river&version=v2');
+    assert.ok(await page.locator('.panel-characters a[href="character.html?character=kyrien"]').isVisible());
+    assert.ok(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1));
+    await page.locator('#panel-slide-next').click();
+    await page.waitForFunction(() => document.querySelector('#panel-slideshow').dataset.index === '1');
+    await page.screenshot({ path: `test-results/${engine}-sleepers-panels-${width}.png` });
+  }
+  for (const panel of sleepers.panels) {
+    const response = await page.request.get(`${origin}/${panel.src}`);
+    assert.deepEqual(await response.body(), fs.readFileSync(panel.src));
+  }
+  await visit('moments.html?moment=sleepers-above-the-river&version=v2');
+  assert.ok(await page.locator('#moment-connection-grid a[href="gallery.html?panels=sleepers-above-the-river"]').isVisible());
+  assert.ok((await page.locator('main').textContent()).includes('an outboard motor fixed to its stern'));
+  await visit('moments.html?moment=sleepers-above-the-river&version=v1');
+  assert.equal(await page.locator('#moment-connection-grid a[href="gallery.html?panels=sleepers-above-the-river"]').count(), 0);
+  assert.ok((await page.locator('main').textContent()).includes('Two oars lay inside it.'));
+  await visit('story.html');
+  assert.equal(await page.locator('.timeline-panel-link[href="gallery.html?panels=sleepers-above-the-river"]').count(), 0, 'Unplaced Sleepers must not gain a numbered phase');
   for (const meetingId of ['a-meeting-beyond-authority']) {
     const meeting = records.find(record => record.id === meetingId);
     assert.equal(meeting.revision, 'r3');
