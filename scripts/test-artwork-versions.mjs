@@ -18,7 +18,7 @@ export async function testArtworkVersions(page, origin, engine) {
     assert.ok((await historical.innerText()).includes('no connection to the current characters'));
     await historical.locator('a').click();
     await page.waitForURL('**/gallery.html?image=author-hand-drawn-sketch-circa-2021');
-    assert.equal(await page.locator('#gallery-detail-title').innerText(), 'Historical artwork only');
+    assert.equal(await page.locator('#gallery-detail-title').innerText(), 'Earliest cast sketch');
     assert.ok((await page.locator('#gallery-detail-type').textContent()).includes('no connection to the current characters'));
     await page.locator('#gallery-detail-image').evaluate(img => img.decode());
     assert.ok(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1));

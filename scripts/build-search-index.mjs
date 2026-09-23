@@ -350,7 +350,7 @@ for (const match of readText('gallery.html').matchAll(/<figure\b([^>]*data-image
 }
 for (const match of readText('gallery.html').matchAll(/<figure\b[^>]*data-historical="true"[^>]*>([\s\S]*?)<\/figure>/g)) {
   const id = match[1].match(/src="[^" ]*\/([^/" ]+)\.[^."]+"/)?.[1];
-  if (id) addEntry({ id: `artwork-${id}`, title: 'Historical artwork only', type: 'Historical artwork', url: `gallery.html?image=${encodeURIComponent(id)}`, text: stripHtml(match[1]) });
+  if (id) addEntry({ id: `artwork-${id}`, title: 'Earliest cast sketch', type: 'Historical artwork', url: `gallery.html?image=${encodeURIComponent(id)}`, text: stripHtml(match[1]) });
 }
 addEntry({ id: 'gallery-panels', title: 'Panels', type: 'Gallery collection', url: 'gallery.html?collection=panels', text: 'Illustrated scenes, sequential panels and sketches linked to their Moments and Chapters.' });
 for (const record of readJson('gallery/panels.json')) {
