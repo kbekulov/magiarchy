@@ -9,8 +9,10 @@ export async function testGalleryPanels(page, origin, engine) {
   assert.equal(new Set(record.panels.map(panel => panel.beat)).size, 7, 'Every river panel is a successive beat');
   assert.ok(record.panels.every(panel => !panel.composition), 'River panels are not alternative compositions');
   const visit = async route => { await page.goto(`${origin}/${route}`); await page.waitForLoadState('networkidle'); };
-  for (const meetingId of ['a-meeting-beyond-authority', 'a-meeting-beyond-authority-v2']) {
+  for (const meetingId of ['a-meeting-beyond-authority']) {
     const meeting = records.find(record => record.id === meetingId);
+    assert.equal(meeting.revision, 'r3');
+    assert.equal(records.filter(r => r.id.startsWith(meetingId)).length, 1);
     for (const width of [390, 820, 1440]) {
       await page.setViewportSize({ width, height: 900 });
       await visit(`gallery.html?panels=${meeting.id}#panel-8`);
@@ -27,10 +29,10 @@ export async function testGalleryPanels(page, origin, engine) {
   }
   await visit('moments.html?moment=a-meeting-beyond-authority&version=v1');
   assert.ok(await page.locator('#moment-connection-grid a[href="gallery.html?panels=a-meeting-beyond-authority"]').isVisible());
-  assert.ok(await page.locator('#moment-connection-grid a[href="gallery.html?panels=a-meeting-beyond-authority-v2"]').isVisible());
+  assert.equal(await page.locator('#moment-connection-grid a[href="gallery.html?panels=a-meeting-beyond-authority-v2"]').count(), 0);
   await visit('story.html?phase=unknowing-convergence');
   assert.ok(await page.locator('#phase-unknowing-convergence a[href="gallery.html?panels=a-meeting-beyond-authority"]').count());
-  assert.ok(await page.locator('#phase-unknowing-convergence a[href="gallery.html?panels=a-meeting-beyond-authority-v2"]').count());
+  assert.equal(await page.locator('#phase-unknowing-convergence a[href="gallery.html?panels=a-meeting-beyond-authority-v2"]').count(), 0);
   const timelineLink = '.timeline-panel-link[href="gallery.html?panels=river-incident"]';
   for (const width of [390, 820, 1440]) {
     await page.setViewportSize({ width, height: 900 });
