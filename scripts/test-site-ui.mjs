@@ -4,7 +4,7 @@ import http from 'node:http';
 import assert from 'node:assert/strict';
 import vm from 'node:vm';
 import { fileURLToPath } from 'node:url';
-import { chromium, webkit } from 'playwright';
+import { chromium, webkit, firefox } from 'playwright';
 import { testGalleryResources } from './test-gallery-resources.mjs';
 import { testGalleryPanels } from './test-gallery-panels.mjs';
 import { testKyrienOrigin } from './test-kyrien-origin.mjs';
@@ -50,7 +50,7 @@ const characterSource = fs.readFileSync(path.join(root, 'character.js'), 'utf8')
 const profiles = vm.runInNewContext(`${characterSource.slice(0, characterSource.indexOf('const profilesBySlug'))}; profileSeeds`);
 try {
   for (const engine of (process.env.TEST_BROWSERS || 'chromium').split(',')) {
-    const browser = await ({ chromium, webkit }[engine]).launch({ headless: true });
+    const browser = await ({ chromium, webkit, firefox }[engine]).launch({ headless: true });
     try {
       const page = await browser.newPage({ reducedMotion: 'reduce' });
       const errors = [];
@@ -83,6 +83,7 @@ try {
         continue;
       }
       await testNarveanFog(page, origin, engine);
+      await testMusicMovements(page, origin, engine);
       await testArtworkVersions(page, origin, engine);
       if (process.env.TEST_FOG_ONLY === '1') {
         assert.deepEqual(errors, [], `${engine}: fog reader errors`);
@@ -357,25 +358,6 @@ try {
           assert.ok(await card.locator('a[href="moments.html?moment=only-eyes-for-you"]').count());
           assert.ok(await card.locator('a[href="gallery.html?image=char-lynleit-felix-1"]').count());
           assert.ok(await card.locator('audio').evaluate(audio => audio.paused && audio.preload === 'none' && !audio.autoplay), 'Audio must wait for visitor-controlled playback');
-        }
-        if (width === 390) {
-          await page.locator('audio').evaluateAll(players => players.forEach(player => { player.muted = true; }));
-          for (const [slug, duration] of [['passacaglia-movement-i', 208.8], ['passacaglia-movement-ii', 214.4]]) {
-            await page.locator(`#${slug} .music-banner-toggle`).click();
-            await page.waitForFunction(id => { const audio = document.querySelector(`#${id} audio`); return !audio.paused && audio.currentTime > .05 && Number.isFinite(audio.duration); }, slug, { timeout: 20000 });
-            assert.ok(Math.abs(await page.locator(`#${slug} audio`).evaluate(audio => audio.duration) - duration) < 1);
-            assert.ok((await page.locator(`#${slug} .music-banner-toggle`).getAttribute('aria-label')).startsWith('Pause'));
-            assert.ok(await page.locator(`#${slug} .music-seek`).isEnabled());
-            assert.ok(await page.locator(`#${slug} .music-player-error`).isHidden());
-          }
-          assert.ok(await page.locator('#passacaglia-movement-i audio').evaluate(audio => audio.paused), 'Starting another track must pause the previous one');
-          const seek = page.locator('#passacaglia-movement-ii .music-seek');
-          await seek.focus();
-          await page.keyboard.press('ArrowRight');
-          assert.ok(Number(await seek.inputValue()) > 0);
-          await page.getByRole('searchbox', { name: 'Search music' }).fill('no-such-track');
-          assert.ok(await page.locator('#passacaglia-movement-ii audio').evaluate(audio => audio.paused), 'Filtering a playing track away must pause it');
-          await visit('music.html?category=event&tag=Only%20Eyes%20for%20You');
         }
         await page.locator('#passacaglia-movement-i').scrollIntoViewIfNeeded();
         await page.screenshot({ path: `test-results/${engine}-passacaglia-${width}.png` });

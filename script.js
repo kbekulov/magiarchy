@@ -1,4 +1,5 @@
 const navToggle = document.querySelector('.nav-toggle');
+window.archiveMusicReady = import('./persistent-music.js').then(module => module.connectMusic());
 const navLinks = document.querySelector('.nav-links');
 const navDropdowns = Array.from(document.querySelectorAll('.nav-dropdown'));
 

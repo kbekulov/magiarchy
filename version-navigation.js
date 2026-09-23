@@ -19,7 +19,11 @@ window.renderVersionNavigation = function (container, versions, selected, urlFor
     option.selected = version.id === selected;
     select.append(option);
   });
-  select.addEventListener('change', () => { window.location.href = urlFor(select.value); });
+  select.addEventListener('change', () => {
+    const url = urlFor(select.value);
+    if (window.archiveNavigate) window.archiveNavigate(url);
+    else window.location.href = url;
+  });
   container.replaceChildren(
     link('Previous', versions[index - 1], index <= 0), select,
     link('Next', versions[index + 1], index >= versions.length - 1),

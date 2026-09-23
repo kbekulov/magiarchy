@@ -51,7 +51,6 @@ if (musicFilterForm) {
         && (!playableOnly.checked || Boolean(item.card.querySelector('audio')));
       item.card.hidden = !visible;
       if (visible) { count++; if (item.card.querySelector('audio')) playable++; }
-      else item.card.querySelector('audio')?.pause();
     });
     result.textContent = `${count} of ${cards.length} tracks and concepts · ${playable} playable`;
     empty.hidden = count !== 0;
@@ -84,87 +83,55 @@ const musicTime = (seconds) => {
   return `${Math.floor(value / 60)}:${String(value % 60).padStart(2, '0')}`;
 };
 
-musicPlayers.forEach((player) => {
-  const card = player.closest('.music-card');
-  const toggle = card.querySelector('.music-banner-toggle');
-  const transport = card.querySelector('.music-transport');
-  if (!toggle || !transport) return; // Keep native controls as the fallback.
-  const title = card.querySelector('h2').textContent;
-  const label = card.querySelector('.music-banner-label');
-  const status = card.querySelector('.music-status');
-  const seek = card.querySelector('.music-seek');
-  const fill = card.querySelector('.music-seek-fill');
-  const elapsed = card.querySelector('.music-elapsed');
-  const duration = card.querySelector('.music-duration');
-  const mute = card.querySelector('.music-mute');
-  const error = document.getElementById(player.getAttribute('aria-describedby'));
-  let pending = false;
-
-  const syncPlayback = () => {
-    const active = pending || !player.paused;
-    card.classList.toggle('is-playing', active);
-    toggle.setAttribute('aria-label', `${active ? 'Pause' : 'Play'} ${title}`);
-    label.textContent = pending ? 'Loading…' : active ? 'Pause track' : player.ended ? 'Play again' : 'Play track';
-    status.textContent = pending ? 'Loading' : active ? 'Playing' : player.currentTime > 0 && !player.ended ? 'Paused' : 'Available';
-  };
-  const syncTime = () => {
-    const length = player.duration;
-    if (!Number.isFinite(length) || length <= 0) return;
-    seek.disabled = false;
-    seek.max = length;
-    seek.value = player.currentTime;
-    elapsed.textContent = musicTime(player.currentTime);
-    duration.textContent = musicTime(length);
-    seek.setAttribute('aria-valuetext', `${musicTime(player.currentTime)} of ${musicTime(length)}`);
-    fill.style.width = `${Math.min(100, player.currentTime / length * 100)}%`;
-  };
-  const showError = () => {
-    pending = false;
-    player.pause();
-    syncPlayback();
-    error.hidden = false;
-    status.textContent = 'Unavailable';
-    label.textContent = 'Try again';
-  };
-  toggle.addEventListener('click', async () => {
-    if (pending || !player.paused) {
-      pending = false;
-      player.pause();
-      syncPlayback();
-      return;
-    }
-    if (!error.hidden) player.load();
-    error.hidden = true;
-    musicPlayers.forEach((other) => { if (other !== player) other.pause(); });
-    pending = true;
-    syncPlayback();
-    try { await player.play(); }
-    catch (failure) { if (failure.name !== 'AbortError') showError(); }
-    finally { pending = false; if (error.hidden) syncPlayback(); }
+window.archiveMusicReady.then(host => {
+  const cards = musicPlayers.map(player => player.closest('.music-card'));
+  host.register(cards.map(card => ({
+    id: card.id,
+    title: card.querySelector('h2').textContent,
+    src: card.querySelector('audio source').src,
+    art: card.querySelector('.music-card-art img')?.src || '',
+    duration: Number(card.querySelector('.music-seek').max)
+  })));
+  cards.forEach(card => {
+    const toggle = card.querySelector('.music-banner-toggle');
+    const seek = card.querySelector('.music-seek');
+    toggle.addEventListener('click', () => {
+      const state = host.state();
+      if (state.current?.id === card.id && (state.pending || !state.audio.paused)) host.pause();
+      else host.play(card.id);
+    });
+    seek.addEventListener('input', () => {
+      if (host.state().current?.id === card.id && Number.isFinite(host.audio.duration)) host.audio.currentTime = Number(seek.value);
+    });
+    card.querySelector('.music-mute').addEventListener('click', () => { host.audio.muted = !host.audio.muted; });
+    toggle.hidden = false;
+    card.querySelector('.music-transport').hidden = false;
+    card.classList.add('music-player-ready');
   });
-  seek.addEventListener('input', () => {
-    if (Number.isFinite(player.duration)) {
-      player.currentTime = Number(seek.value);
-      syncTime();
-    }
+  const unsubscribe = host.subscribe(({ audio, current, open, pending, error }) => {
+    cards.forEach(card => {
+      const selected = open && current?.id === card.id;
+      const active = selected && (pending || !audio.paused);
+      const title = card.querySelector('h2').textContent;
+      const toggle = card.querySelector('.music-banner-toggle');
+      card.classList.toggle('is-playing', active);
+      toggle.setAttribute('aria-label', `${active ? 'Pause' : 'Play'} ${title}`);
+      card.querySelector('.music-banner-label').textContent = selected && pending ? 'Loading…' : active ? 'Pause track' : 'Play track';
+      card.querySelector('.music-status').textContent = selected && error ? 'Unavailable' : selected && pending ? 'Loading' : active ? 'Playing' : selected ? 'Paused' : 'Available';
+      const length = selected && Number.isFinite(audio.duration) ? audio.duration : Number(card.querySelector('audio').dataset.duration || card.querySelector('.music-seek').max);
+      const position = selected ? audio.currentTime : 0;
+      const seek = card.querySelector('.music-seek');
+      seek.disabled = !selected || !Number.isFinite(audio.duration);
+      seek.max = length; seek.value = position;
+      seek.setAttribute('aria-valuetext', `${musicTime(position)} of ${musicTime(length)}`);
+      card.querySelector('.music-seek-fill').style.width = `${length ? position / length * 100 : 0}%`;
+      card.querySelector('.music-elapsed').textContent = musicTime(position);
+      card.querySelector('.music-duration').textContent = musicTime(length);
+      card.querySelector('.music-player-error').hidden = !selected || !error;
+      const mute = card.querySelector('.music-mute');
+      mute.setAttribute('aria-pressed', String(audio.muted));
+      mute.setAttribute('aria-label', `${audio.muted ? 'Unmute' : 'Mute'} ${title}`);
+    });
   });
-  mute.addEventListener('click', () => { player.muted = !player.muted; });
-  player.addEventListener('volumechange', () => {
-    mute.setAttribute('aria-pressed', String(player.muted));
-    mute.setAttribute('aria-label', `${player.muted ? 'Unmute' : 'Mute'} ${title}`);
-  });
-  player.addEventListener('error', showError);
-  player.querySelectorAll('source').forEach((source) => source.addEventListener('error', showError));
-  player.addEventListener('playing', () => {
-    pending = false;
-    error.hidden = true;
-    musicPlayers.forEach((other) => { if (other !== player) other.pause(); });
-    syncPlayback();
-  });
-  player.addEventListener('pause', () => { pending = false; if (error.hidden) syncPlayback(); });
-  player.addEventListener('ended', syncPlayback);
-  ['loadedmetadata', 'durationchange', 'timeupdate', 'seeked'].forEach((event) => player.addEventListener(event, syncTime));
-  toggle.hidden = false;
-  transport.hidden = false;
-  card.classList.add('music-player-ready');
+  window.addEventListener('pagehide', unsubscribe, { once: true });
 });

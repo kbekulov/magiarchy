@@ -1,4 +1,5 @@
 :root {
+  --music-dock-space: 0px;
   color-scheme: dark;
   --bg: #1e1f22;
   --surface: #2b2d31;
@@ -17,6 +18,47 @@
   --radius-small: 8px;
   --shell: min(1180px, calc(100% - 40px));
   --ease: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+/* A single audio owner survives navigation while ordinary pages keep their
+   own document lifecycle in the reading frame. No styling leaks between pages. */
+.music-dock-open:not(.music-shell-active) body { padding-bottom: var(--music-dock-space); }
+.music-shell-active, .music-shell-active body { height: 100%; overflow: hidden; }
+.music-shell-active .music-shell-original { display: none !important; }
+#music-reading-frame { position: fixed; inset: 0; width: 100%; height: calc(100% - var(--music-dock-space)); border: 0; background: var(--bg); z-index: 1000; }
+.music-dock { position: fixed; bottom: 0; left: 0; right: 0; z-index: 1200; display: grid; grid-template-columns: minmax(150px, 1fr) auto minmax(140px, 1fr) minmax(180px, 1fr); align-items: center; gap: 16px; padding: 12px max(16px, env(safe-area-inset-right)) calc(12px + env(safe-area-inset-bottom)) max(16px, env(safe-area-inset-left)); background: #202125; border-top: 1px solid #454750; color: var(--text); box-shadow: 0 -4px 20px #0003; }
+.music-dock[hidden], .music-dock [hidden] { display: none !important; }
+.music-dock-track { display: flex; gap: 12px; align-items: center; min-width: 0; }
+.music-dock-track img { width: 44px; height: 44px; object-fit: cover; border-radius: 6px; }
+.music-dock-track > div { min-width: 0; }
+.music-dock-title { display: block; font-size: 14px; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }
+.music-dock-kicker { display: block; color: var(--subtle); font-size: 11px; margin-bottom: 3px; }
+.music-dock-buttons, .music-dock-options { display: flex; align-items: center; gap: 6px; min-width: 0; }
+.music-dock button { display: grid; place-items: center; flex: 0 0 44px; width: 44px; height: 44px; padding: 10px; border: 1px solid transparent; border-radius: 8px; color: var(--text); background: transparent; cursor: pointer; }
+.music-dock button:hover { background: var(--surface-hover); }
+.music-dock button.music-dock-play { background: var(--accent); color: white; }
+.music-dock button:focus-visible, .music-dock select:focus-visible, .music-dock input:focus-visible { outline: 2px solid #aba5ff; outline-offset: 2px; }
+.music-dock svg { width: 22px; height: 22px; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+.music-dock-progress { display: flex; align-items: center; gap: 8px; min-width: 0; font-size: 11px; color: var(--muted); font-variant-numeric: tabular-nums; }
+.music-dock input[type="range"] { width: 100%; min-width: 40px; height: 32px; padding: 0; background: transparent; accent-color: #a29aff; cursor: pointer; }
+.music-dock-queue { flex: 1; min-width: 0; }
+.music-dock select { width: 100%; min-width: 0; height: 44px; padding: 0 28px 0 10px; font: inherit; font-size: 12px; border: 1px solid var(--line-bright); border-radius: 6px; background-color: var(--bg); color: var(--text); text-overflow: ellipsis; }
+.music-dock-error { grid-column: 1 / -1; margin: 0; font-size: 12px; color: #efbf85; }
+@media (max-width: 900px) {
+  .music-dock { grid-template-columns: minmax(0, 1fr) auto; gap: 6px 12px; }
+  .music-dock-progress { grid-column: 1; grid-row: 2; }
+  .music-dock-options { grid-column: 2; grid-row: 2; }
+  .music-dock-queue { max-width: 150px; }
+}
+@media (max-width: 480px) {
+  .music-dock { padding: 8px 10px calc(8px + env(safe-area-inset-bottom)); gap: 4px 6px; }
+  .music-dock-track { gap: 8px; }
+  .music-dock-track img { width: 32px; height: 38px; }
+  .music-dock-title { font-size: 12px; }
+  .music-dock-buttons { gap: 0; }
+  .music-dock-options { grid-column: 1 / -1; grid-row: 3; }
+  .music-dock-progress { grid-column: 1 / -1; }
+  .music-dock-queue { max-width: none; }
 }
 
 /* Items and artefacts archive */

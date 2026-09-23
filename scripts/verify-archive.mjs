@@ -274,7 +274,8 @@ assert.ok(/\.story-reader-open \.docs-main-pane\s*\{\s*display: flow-root;/.test
 for (const file of ['story.js', 'docs.js']) assert.ok(read(file).includes("aside.className = 'writer-notice'"), `${file}: writer notices are not highlighted`);
 assert.ok(music.includes('class="music-banner-toggle" type="button"'), 'Music: require keyboard-operable banner button');
 assert.ok(music.includes('class="music-seek" type="range"'), 'Music: missing accessible custom seek control');
-assert.ok(read('music.js').includes("player.addEventListener('ended', syncPlayback)"), 'Music: missing ended-state synchronization');
+assert.ok(read('persistent-music.js').includes('audio.loop = true'), 'Music: persistent player must repeat');
+assert.ok(read('script.js').includes("import('./persistent-music.js')"), 'Music: shared player missing');
 const audioPlayers = [...music.matchAll(/<audio\b([^>]*)>([\s\S]*?)<\/audio>/g)];
 assert.ok(audioPlayers.length, 'Music: missing playable audio');
 for (const [, attributes, content] of audioPlayers) {
