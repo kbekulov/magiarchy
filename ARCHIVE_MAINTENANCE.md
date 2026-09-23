@@ -247,6 +247,12 @@ Ordinary Artwork cards may declare an author-approved `data-sibling-group`; card
 
 `gallery-resources.js` owns production collection filters, detail views, accessible thumbnails, download controls, and missing-resource/load-failure states. Search, kind, and character filters are URL-addressable. `scripts/build-gallery-resources.mjs` measures assets; `scripts/gallery-resources.mjs` validates local paths, IDs, file presence and sizes, previews, and links. The search builder indexes the production collection and each real resource. Test empty and populated collections using private fixtures, model-version isolation, direct preview URLs, mouse/touch/keyboard selection, downloads, narrow layouts, and existing Gallery/profile behavior in Chromium and WebKit. Register this workflow without inventing a new story event or changing prose-document versions.
 
+### Artwork versions
+
+Artwork versions use `data-image-version-group`, `data-image-version` (v1, v2, etc.), and a concise `data-image-version-label` on ordinary Gallery cards. Register only author-confirmed variants of the same image. Each retains its original file, stable image URL, searchable caption, and source download. The reader displays a labelled Versions thumbnail selector with the current choice indicated. These are separate from same-model sibling views and do not imply a newer costume supersedes character canon. Preserve original URLs and bytes; name new files descriptively. Test switching both ways, keyboard access, unrelated-image isolation, downloads, and phone/desktop layouts.
+
+Exactly one card per version group carries `data-image-version-default="true"`. Only that version appears as the catalog preview; other versions remain available by direct URL and through the reader selector. Global search marks other versions historical. The author chooses the default, not the largest version number. Keep non-default cards hidden in initial HTML to avoid a duplicate-card flash.
+
 ### Scene panel intake
 
 The cat-incident sketches illustrate the current v2 Ash in the Family House Moment, in supplied numeric order. Their roof, storm, and table compositions remain artwork rather than additions to the written scene's canon. No Chapter is assigned. Author-edited T-pose exports are verified by `gallery/t-pose-approved.json`; old recipes must not overwrite them.

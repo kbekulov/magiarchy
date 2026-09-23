@@ -413,6 +413,32 @@ function initializeGalleryCards() {
   galleryDetailTitle.textContent = title;
   galleryDetailMeta.textContent = `${code} · ${location}`;
   galleryDetailSource.href = image.getAttribute('src');
+  const versionNav = document.querySelector('#gallery-image-versions');
+  const versionGroup = selectedCard.dataset.imageVersionGroup;
+  if (versionNav && versionGroup) {
+    const versions = [...galleryItems].filter(card => card.dataset.imageVersionGroup === versionGroup);
+    if (versions.length > 1) {
+      versionNav.hidden = false;
+      const heading = document.createElement('span');
+      heading.className = 'eyebrow';
+      heading.textContent = 'Versions';
+      versionNav.append(heading);
+      versions.forEach(card => {
+        const artwork = card.querySelector('img');
+        const link = document.createElement('a');
+        link.href = `gallery.html?image=${encodeURIComponent(card.dataset.image)}`;
+        const thumbnail = document.createElement('img');
+        thumbnail.src = artwork.dataset.preview || artwork.getAttribute('src');
+        thumbnail.alt = ''; thumbnail.width = 56; thumbnail.height = 56;
+        const label = document.createElement('span');
+        label.textContent = `${card.dataset.imageVersion} · ${card.dataset.imageVersionLabel}${card.dataset.imageVersionDefault === 'true' ? ' · Default' : ''}`;
+        if (card === selectedCard) link.setAttribute('aria-current', 'page');
+        link.append(thumbnail, label);
+        versionNav.append(link);
+      });
+      galleryDetailMeta.textContent += ` · ${selectedCard.dataset.imageVersion} · ${selectedCard.dataset.imageVersionLabel}`;
+    }
+  }
   const siblings = document.querySelector('#gallery-siblings');
   const group = selectedCard.dataset.siblingGroup;
   if (siblings && group) {
@@ -465,7 +491,8 @@ function updateGalleryResults() {
     const matchesCharacter = selectedCharacter === 'all' || itemCharacters.includes(selectedCharacter);
     const matchesLocation = selectedLocation === 'all' || item.dataset.location === selectedLocation;
     const matchesChibi = !chibiOnly || item.dataset.chibi === 'true';
-    const isVisible = matchesCharacter && matchesLocation && matchesChibi;
+    const isPreview = !item.dataset.imageVersionGroup || item.dataset.imageVersionDefault === 'true';
+    const isVisible = isPreview && matchesCharacter && matchesLocation && matchesChibi;
 
     item.hidden = !isVisible;
     if (isVisible) visibleCount += 1;
