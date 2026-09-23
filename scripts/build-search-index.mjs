@@ -348,6 +348,10 @@ for (const match of readText('gallery.html').matchAll(/<figure\b([^>]*data-image
   const id = path.basename(source, path.extname(source));
   addEntry({ id: `artwork-${id}`, recordId: `artwork-${attr('data-image-version-group')}`, title: stripHtml(match[2].match(/<strong>([\s\S]*?)<\/strong>/)?.[1] || id), type: 'Artwork', url: `gallery.html?image=${encodeURIComponent(id)}`, subtitle: `${attr('data-image-version')} · ${attr('data-image-version-label')}`, text: stripHtml(match[2]), current: attr('data-image-version-default') === 'true' });
 }
+for (const match of readText('gallery.html').matchAll(/<figure\b[^>]*data-historical="true"[^>]*>([\s\S]*?)<\/figure>/g)) {
+  const id = match[1].match(/src="[^" ]*\/([^/" ]+)\.[^."]+"/)?.[1];
+  if (id) addEntry({ id: `artwork-${id}`, title: 'Historical artwork only', type: 'Historical artwork', url: `gallery.html?image=${encodeURIComponent(id)}`, text: stripHtml(match[1]) });
+}
 addEntry({ id: 'gallery-panels', title: 'Panels', type: 'Gallery collection', url: 'gallery.html?collection=panels', text: 'Illustrated scenes, sequential panels and sketches linked to their Moments and Chapters.' });
 for (const record of readJson('gallery/panels.json')) {
   addEntry({ id: `panels-${record.id}`, title: record.title, type: 'Scene panels', url: `gallery.html?panels=${encodeURIComponent(record.id)}`, subtitle: `${record.medium} · ${record.panels.length} images`, text: flatten([record.summary, record.characters, record.panels.map(panel => [panel.label, panel.title, panel.alt])]) });
