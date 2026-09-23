@@ -6,6 +6,7 @@ export async function testMusicMovements(page, origin, engine) {
     await page.goto(`${origin}/music.html?category=event&tag=Only%20Eyes%20for%20You`);
     await page.waitForLoadState('networkidle');
     assert.equal(await page.locator('.music-card:visible').count(), 3);
+    assert.ok(await page.locator('audio').evaluateAll(players => players.every(a => a.loop)));
     for (const [suffix, duration] of [['i', 208.8], ['ii', 214.4], ['iii', 155.94]]) {
       const card = page.locator(`#passacaglia-movement-${suffix}`);
       assert.ok(await card.isVisible());
@@ -16,7 +17,7 @@ export async function testMusicMovements(page, origin, engine) {
         assert.equal(response.status(), 200);
         assert.ok(Number(response.headers()['content-length']) > 1000000);
       }
-      await card.locator('audio').evaluate(a => { a.muted = true; });
+      await card.locator('audio').evaluate(a => { a.volume = 0; });
       await card.locator('.music-banner-toggle').click();
       await page.waitForFunction(id => {
         const a = document.querySelector(`#${id} audio`);
@@ -25,6 +26,20 @@ export async function testMusicMovements(page, origin, engine) {
       assert.ok(Math.abs(await card.locator('audio').evaluate(a => a.duration) - duration) < 1);
       assert.ok(await card.locator('.music-seek').isEnabled());
       assert.ok(await card.locator('.music-player-error').isHidden());
+      // Windows headless WebKit pauses at the repeat boundary, including with
+      // an explicit ended/play handler. Test native wraparound in Chromium;
+      // WebKit still verifies loop configuration and visitor controls.
+      if (engine === 'chromium') {
+        await card.locator('audio').evaluate(a => { a.currentTime = a.duration - .5; });
+        await page.waitForFunction(id => {
+          const a = document.querySelector(`#${id} audio`);
+          return !a.paused && !a.ended && !a.seeking && a.currentTime > .05 && a.currentTime < 2;
+        }, `passacaglia-movement-${suffix}`);
+      }
+      assert.ok((await card.locator('.music-banner-toggle').getAttribute('aria-label')).startsWith('Pause'));
+      await card.locator('.music-banner-toggle').click();
+      await page.waitForFunction(id => document.querySelector(`#${id} audio`).paused, `passacaglia-movement-${suffix}`);
+      await card.locator('.music-banner-toggle').click();
     }
     assert.ok(await page.locator('#passacaglia-movement-ii audio').evaluate(a => a.paused));
     const card = page.locator('#passacaglia-movement-iii');
@@ -38,4 +53,5 @@ export async function testMusicMovements(page, origin, engine) {
     assert.ok(await card.locator('audio').evaluate(a => a.paused));
   }
   console.log(`${engine}: all three music movements passed at mobile and desktop widths`);
+  if (engine === 'webkit') console.log('WebKit: native repeat boundary requires real-device verification; configuration and pause controls passed.');
 }

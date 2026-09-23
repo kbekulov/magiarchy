@@ -278,6 +278,7 @@ assert.ok(read('music.js').includes("player.addEventListener('ended', syncPlayba
 const audioPlayers = [...music.matchAll(/<audio\b([^>]*)>([\s\S]*?)<\/audio>/g)];
 assert.ok(audioPlayers.length, 'Music: missing playable audio');
 for (const [, attributes, content] of audioPlayers) {
+  assert.ok(/\bloop\b/.test(attributes), 'Music: every track must loop until paused');
   assert.ok(attributes.includes('controls') && attributes.includes('preload="none"') && !attributes.includes('autoplay'), 'Music: require visitor-controlled playback');
   const sources = [...content.matchAll(/<source src="([^"]+)" type="([^"]+)"/g)];
   assert.equal(sources.length, 1, 'Music: stream MP3 only');
