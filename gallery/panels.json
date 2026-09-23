@@ -295,5 +295,181 @@
         "thumbnail": "media/gallery/previews/panels/cat-incident-panel-8-thumbnail.webp"
       }
     ]
+  },
+  {
+    "id": "a-meeting-beyond-authority",
+    "title": "A Meeting Beyond Authority",
+    "summary": "Sherie and Lynleit bargain at a table beside the gazebo while Drake stands apart. Along the wooded path, Felix watches Kyrien, who senses someone nearby.",
+    "medium": "Rough pencil and pen sketches",
+    "characters": [
+      "drake",
+      "sherie",
+      "lynleit",
+      "felix",
+      "kyrien",
+      "heyk"
+    ],
+    "moment": {
+      "slug": "a-meeting-beyond-authority",
+      "version": "v1"
+    },
+    "cover": "panel-1",
+    "beats": [
+      {
+        "id": "beat-1",
+        "title": "Beside the gazebo"
+      },
+      {
+        "id": "beat-2",
+        "title": "Lynleit pushes back"
+      },
+      {
+        "id": "beat-3",
+        "title": "Drake leaves it to Sherie"
+      },
+      {
+        "id": "beat-4",
+        "title": "Felix watches Kyrien"
+      },
+      {
+        "id": "beat-5",
+        "title": "Something nearby"
+      },
+      {
+        "id": "beat-6",
+        "title": "Heyk stays in cover"
+      },
+      {
+        "id": "beat-7",
+        "title": "Sherie enjoys the bargaining"
+      },
+      {
+        "id": "beat-8",
+        "title": "A limited agreement"
+      },
+      {
+        "id": "beat-9",
+        "title": "Reading the terms"
+      }
+    ],
+    "panels": [
+      {
+        "id": "panel-1",
+        "beat": "beat-1",
+        "label": "Sketch 1",
+        "title": "Beside the gazebo",
+        "src": "media/gallery/panels/a-meeting-beyond-authority/a-meeting-beyond-authority-panel-1-sketch.png",
+        "alt": "An overhead rough sketch of Sherie and Lynleit at a table with benches beside an empty gazebo. Drake stands apart, while Felix and Kyrien wait farther along the wooded path. City lights appear through the trees.",
+        "width": 1536,
+        "height": 1024,
+        "bytes": 3432025,
+        "display": "media/gallery/previews/panels/a-meeting-beyond-authority-panel-1-display.webp",
+        "thumbnail": "media/gallery/previews/panels/a-meeting-beyond-authority-panel-1-thumbnail.webp"
+      },
+      {
+        "id": "panel-2",
+        "beat": "beat-2",
+        "label": "Sketch 2",
+        "title": "Lynleit pushes back",
+        "src": "media/gallery/panels/a-meeting-beyond-authority/a-meeting-beyond-authority-panel-2-sketch.png",
+        "alt": "Across the table from a smiling Sherie, Lynleit points to the closed envelope with a cautious expression.",
+        "width": 1536,
+        "height": 1024,
+        "bytes": 3237167,
+        "display": "media/gallery/previews/panels/a-meeting-beyond-authority-panel-2-display.webp",
+        "thumbnail": "media/gallery/previews/panels/a-meeting-beyond-authority-panel-2-thumbnail.webp"
+      },
+      {
+        "id": "panel-3",
+        "beat": "beat-3",
+        "label": "Sketch 3",
+        "title": "Drake leaves it to Sherie",
+        "src": "media/gallery/panels/a-meeting-beyond-authority/a-meeting-beyond-authority-panel-3-sketch.png",
+        "alt": "Drake rests a hand on his cane and looks away while Sherie gestures to Lynleit at the table behind him.",
+        "width": 1536,
+        "height": 1024,
+        "bytes": 3278079,
+        "display": "media/gallery/previews/panels/a-meeting-beyond-authority-panel-3-display.webp",
+        "thumbnail": "media/gallery/previews/panels/a-meeting-beyond-authority-panel-3-thumbnail.webp"
+      },
+      {
+        "id": "panel-4",
+        "beat": "beat-4",
+        "label": "Sketch 4",
+        "title": "Felix watches Kyrien",
+        "src": "media/gallery/panels/a-meeting-beyond-authority/a-meeting-beyond-authority-panel-4-sketch.png",
+        "alt": "Felix watches Kyrien with an irritated, cautious expression. Kyrien faces the trees; the meeting is distant behind them.",
+        "width": 1536,
+        "height": 1024,
+        "bytes": 3485123,
+        "display": "media/gallery/previews/panels/a-meeting-beyond-authority-panel-4-display.webp",
+        "thumbnail": "media/gallery/previews/panels/a-meeting-beyond-authority-panel-4-thumbnail.webp"
+      },
+      {
+        "id": "panel-5",
+        "beat": "beat-5",
+        "label": "Sketch 5",
+        "title": "Something nearby",
+        "src": "media/gallery/panels/a-meeting-beyond-authority/a-meeting-beyond-authority-panel-5-sketch.png",
+        "alt": "Kyrien raises a hand toward Felix without looking back, concentrating on an unexplained presence in the woods.",
+        "width": 1536,
+        "height": 1024,
+        "bytes": 2929994,
+        "display": "media/gallery/previews/panels/a-meeting-beyond-authority-panel-5-display.webp",
+        "thumbnail": "media/gallery/previews/panels/a-meeting-beyond-authority-panel-5-thumbnail.webp"
+      },
+      {
+        "id": "panel-6",
+        "beat": "beat-6",
+        "label": "Sketch 6",
+        "title": "Heyk stays in cover",
+        "src": "media/gallery/panels/a-meeting-beyond-authority/a-meeting-beyond-authority-panel-6-sketch.png",
+        "alt": "Masked Heyk is concealed behind a tree in dense pencil shadows, watching the distant table beside the gazebo.",
+        "width": 1536,
+        "height": 1024,
+        "bytes": 3431768,
+        "display": "media/gallery/previews/panels/a-meeting-beyond-authority-panel-6-display.webp",
+        "thumbnail": "media/gallery/previews/panels/a-meeting-beyond-authority-panel-6-thumbnail.webp"
+      },
+      {
+        "id": "panel-7",
+        "beat": "beat-7",
+        "label": "Sketch 7",
+        "title": "Sherie enjoys the bargaining",
+        "src": "media/gallery/panels/a-meeting-beyond-authority/a-meeting-beyond-authority-panel-7-sketch.png",
+        "alt": "Sherie smiles with her chin on one hand and her other palm raised as she bargains with Lynleit. Drake looks away in the background.",
+        "width": 1536,
+        "height": 1024,
+        "bytes": 2904417,
+        "display": "media/gallery/previews/panels/a-meeting-beyond-authority-panel-7-display.webp",
+        "thumbnail": "media/gallery/previews/panels/a-meeting-beyond-authority-panel-7-thumbnail.webp"
+      },
+      {
+        "id": "panel-8",
+        "beat": "beat-8",
+        "label": "Sketch 8",
+        "title": "A limited agreement",
+        "src": "media/gallery/panels/a-meeting-beyond-authority/a-meeting-beyond-authority-panel-8-sketch.png",
+        "alt": "Sherie passes an envelope across the table to Lynleit. Drake stands beside them, with Felix and Kyrien farther along the path.",
+        "width": 1536,
+        "height": 1024,
+        "bytes": 3579507,
+        "display": "media/gallery/previews/panels/a-meeting-beyond-authority-panel-8-display.webp",
+        "thumbnail": "media/gallery/previews/panels/a-meeting-beyond-authority-panel-8-thumbnail.webp"
+      },
+      {
+        "id": "panel-9",
+        "beat": "beat-9",
+        "label": "Sketch 9",
+        "title": "Reading the terms",
+        "src": "media/gallery/panels/a-meeting-beyond-authority/a-meeting-beyond-authority-panel-9-sketch.png",
+        "alt": "Lynleit reads a sheet from the envelope after leaving the table. Felix walks nearby while Kyrien continues looking toward the trees.",
+        "width": 1536,
+        "height": 1024,
+        "bytes": 3585526,
+        "display": "media/gallery/previews/panels/a-meeting-beyond-authority-panel-9-display.webp",
+        "thumbnail": "media/gallery/previews/panels/a-meeting-beyond-authority-panel-9-thumbnail.webp"
+      }
+    ]
   }
 ]

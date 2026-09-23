@@ -9,6 +9,24 @@ export async function testGalleryPanels(page, origin, engine) {
   assert.equal(new Set(record.panels.map(panel => panel.beat)).size, 7, 'Every river panel is a successive beat');
   assert.ok(record.panels.every(panel => !panel.composition), 'River panels are not alternative compositions');
   const visit = async route => { await page.goto(`${origin}/${route}`); await page.waitForLoadState('networkidle'); };
+  const meeting = records.find(record => record.id === 'a-meeting-beyond-authority');
+  for (const width of [390, 820, 1440]) {
+    await page.setViewportSize({ width, height: 900 });
+    await visit(`gallery.html?panels=${meeting.id}#panel-8`);
+    assert.deepEqual(await page.locator('.scene-panel').evaluateAll(nodes => nodes.map(node => node.id)), meeting.panels.map(panel => panel.id));
+    assert.equal(await page.locator('#panel-count').textContent(), '9 beats · 9 images');
+    assert.equal(await page.locator('#panel-context a').getAttribute('href'), 'moments.html?moment=a-meeting-beyond-authority&version=v1');
+    assert.ok(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1));
+    await page.screenshot({ path: `test-results/${engine}-meeting-panels-${width}.png` });
+  }
+  for (const panel of meeting.panels) {
+    const response = await page.request.get(`${origin}/${panel.src}`);
+    assert.deepEqual(await response.body(), fs.readFileSync(panel.src));
+  }
+  await visit('moments.html?moment=a-meeting-beyond-authority&version=v1');
+  assert.ok(await page.locator('#moment-connection-grid a[href="gallery.html?panels=a-meeting-beyond-authority"]').isVisible());
+  await visit('story.html?phase=unknowing-convergence');
+  assert.ok(await page.locator('#phase-unknowing-convergence a[href="gallery.html?panels=a-meeting-beyond-authority"]').count());
   const timelineLink = '.timeline-panel-link[href="gallery.html?panels=river-incident"]';
   for (const width of [390, 820, 1440]) {
     await page.setViewportSize({ width, height: 900 });
