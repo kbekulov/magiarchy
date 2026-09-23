@@ -36,8 +36,23 @@ export async function testGalleryResources(page, origin, engine) {
     }
   }
   await visit('gallery.html');
-  assert.equal(await page.locator('.gallery-card[data-character~="kyrien"]').count(), 2);
-  assert.equal(await page.locator('.gallery-card[data-character~="kyrien"][data-profile-portrait="false"]').count(), 2, 'Concept sheets must stay outside the canon portrait pool');
+  assert.equal(await page.locator('.gallery-card[data-character~="kyrien"]').count(), 3);
+  assert.equal(await page.locator('.gallery-card[data-character~="kyrien"][data-profile-portrait="false"]').count(), 3, 'Concept sheets and lineup sketches must stay outside the portrait pool');
+  const lineupId = 'char-drake-sherie-kyrien-lynleit-felix-lineup-sketch-01';
+  for (const slug of ['drake', 'sherie', 'kyrien', 'lynleit', 'felix']) {
+    await page.locator('#gallery-character-filter').selectOption(slug);
+    assert.ok(await page.locator(`.gallery-card[data-image="${lineupId}"]`).isVisible(), `${slug}: lineup missing from filter`);
+  }
+  for (const width of [390, 1440]) {
+    await page.setViewportSize({ width, height: 900 });
+    await visit(`gallery.html?image=${lineupId}`);
+    assert.equal(await page.locator('#gallery-detail-title').textContent(), 'Character lineup sketch');
+    assert.equal(await page.locator('#gallery-detail-image').getAttribute('src'), `media/gallery/images/characters/${lineupId}.png`);
+    assert.ok(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1));
+    const response = await page.request.get(new URL(await page.locator('#gallery-detail-source').getAttribute('href'), origin).href);
+    assert.deepEqual(await response.body(), fs.readFileSync(`media/gallery/images/characters/${lineupId}.png`));
+    await page.screenshot({ path: `test-results/${engine}-character-lineup-${width}.png`, fullPage: true });
+  }
   for (const view of ['closeup', 'standing']) {
     const id = `char-kyrien-concept-${view}-three-variants`;
     await visit(`gallery.html?image=${id}`);
