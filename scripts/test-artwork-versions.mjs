@@ -9,13 +9,14 @@ export async function testArtworkVersions(page, origin, engine) {
     await historical.scrollIntoViewIfNeeded();
     await page.waitForTimeout(250);
     assert.ok(await historical.evaluate(card => {
-      const others = [...card.parentElement.children].filter(item => item !== card && !item.hidden);
-      return card === card.parentElement.lastElementChild && others.every(item => item.getBoundingClientRect().bottom <= card.getBoundingClientRect().top + 1);
-    }), 'Historical artwork must sit below every current artwork');
+      const other = [...card.parentElement.children].find(item => item !== card && !item.hidden);
+      return card === card.parentElement.lastElementChild && getComputedStyle(card).gridColumnStart === 'auto' && Math.abs(card.getBoundingClientRect().width - other.getBoundingClientRect().width) < 2;
+    }), 'Historical artwork must remain last and use the same masonry column width');
     assert.ok((await historical.textContent()).includes('2021 OR EARLIER'));
     assert.equal(await historical.getAttribute('data-character'), '');
     assert.equal(await historical.getAttribute('data-profile-portrait'), 'false');
     assert.ok((await historical.innerText()).includes('no connection to the current characters'));
+    await page.screenshot({ path: `test-results/${engine}-historical-masonry-${width}.png` });
     await historical.locator('a').click();
     await page.waitForURL('**/gallery.html?image=author-hand-drawn-sketch-circa-2021');
     assert.equal(await page.locator('#gallery-detail-title').innerText(), 'Earliest cast sketch');
@@ -23,6 +24,17 @@ export async function testArtworkVersions(page, origin, engine) {
     await page.locator('#gallery-detail-image').evaluate(img => img.decode());
     assert.ok(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1));
     await page.screenshot({ path: `test-results/${engine}-historical-artwork-${width}.png` });
+    await page.goto(`${origin}/gallery.html?image=char-lynleit-2`);
+    await page.waitForLoadState('networkidle');
+    assert.ok((await page.locator('#gallery-detail-title').innerText()).includes('Arc 0'));
+    assert.equal(await page.locator('#gallery-detail-source').getAttribute('href'), 'media/gallery/images/characters/char-lynleit-arc0-1.png');
+    await page.goto(`${origin}/gallery.html?image=char-lynleit-arc2-1`);
+    await page.waitForLoadState('networkidle');
+    assert.ok((await page.locator('#gallery-detail-title').innerText()).includes('Arc 2'));
+    await page.goto(`${origin}/character.html?character=lynleit`);
+    await page.waitForLoadState('networkidle');
+    await page.getByRole('button', { name: /^Portrait \d+, Arc 0$/ }).click();
+    assert.ok(await page.getByText('Arc 0', { exact: true }).isVisible());
     await page.goto(`${origin}/gallery.html`);
     await page.waitForLoadState('networkidle');
     assert.ok(await page.locator('[data-image-version-group="sherie-study-01"][data-image-version="v1"]').isHidden());

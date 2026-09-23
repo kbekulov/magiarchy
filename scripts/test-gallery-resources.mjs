@@ -264,7 +264,7 @@ export async function testGalleryResources(page, origin, engine) {
   await page.route('**/gallery.html?*', async route => {
     const response = await route.fetch();
     const body = (await response.text()).replace(/<figure class="gallery-card[^>]*>[\s\S]*?<\/figure>/g, card => {
-      const id = card.match(/char-lynleit-([012])\.png/)?.[1];
+      const id = card.includes('char-lynleit-arc0-1.png') ? '2' : card.match(/char-lynleit-([012])\.png/)?.[1];
       return id == null ? card : card.replace('<figure ', `<figure data-sibling-group="test-group" data-model-version="${id === '0' ? 'v2' : 'v1'}" `);
     });
     await route.fulfill({ response, body });

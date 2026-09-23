@@ -381,7 +381,7 @@ function initializeGalleryCards() {
     if (!image || !link) return;
 
     const source = image.getAttribute('src');
-    const imageId = source.split('/').pop().replace(/\.[^.]+$/, '');
+    const imageId = card.dataset.image || source.split('/').pop().replace(/\.[^.]+$/, '');
     card.dataset.image = imageId;
     link.href = `gallery.html?image=${encodeURIComponent(imageId)}`;
     link.setAttribute('aria-label', `View ${image.alt} details`);
