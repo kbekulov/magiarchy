@@ -30,6 +30,27 @@ export async function testMusicMovements(page, origin, engine) {
       }
     }
     await page.getByRole('searchbox', { name: 'Search music' }).fill('no-such-track');
+    const repeat = dock.locator('[data-action="repeat"]');
+    assert.ok((await repeat.getAttribute('aria-label')).startsWith('Repeat track.'));
+    await repeat.click();
+    assert.ok((await repeat.getAttribute('aria-label')).startsWith('Repeat playlist.'));
+    assert.ok(await audio.evaluate(a => !a.loop));
+    if (engine === 'chromium') {
+      await audio.evaluate(a => { a.currentTime = a.duration - .25; });
+      await page.waitForFunction(() => archiveMusic.state().current.id === 'passacaglia-movement-i' && !archiveMusic.audio.paused);
+      await dock.locator('select').selectOption('theme-1-stem');
+      await page.waitForFunction(() => archiveMusic.audio.currentTime > .05 && !archiveMusic.audio.paused);
+    }
+    await repeat.click();
+    assert.ok((await repeat.getAttribute('aria-label')).startsWith('Repeat off.'));
+    assert.equal(await repeat.getAttribute('aria-pressed'), 'false');
+    if (engine === 'chromium') {
+      await audio.evaluate(a => { a.currentTime = a.duration - .25; });
+      await page.waitForFunction(() => archiveMusic.audio.ended && archiveMusic.audio.paused);
+      await dock.getByRole('button', { name: 'Play', exact: true }).click();
+    }
+    await repeat.click();
+    assert.ok(await audio.evaluate(a => a.loop));
     assert.ok(await audio.evaluate(a => !a.paused), 'Filtering must not stop music');
     await dock.getByRole('button', { name: 'Pause', exact: true }).click();
     assert.ok(await audio.evaluate(a => a.paused));
@@ -115,6 +136,15 @@ export async function testMusicMovements(page, origin, engine) {
       assert.ok(await touch.locator('#site-music-audio').evaluate(a => !a.paused));
       await touch.locator('#site-music-player [data-action="next"]').tap();
       await touch.waitForFunction(() => archiveMusic.state().current.id === 'passacaglia-movement-ii' && !archiveMusic.audio.paused);
+      const nextStyle = await touch.locator('#site-music-player [data-action="next"]').evaluate(button => ({ background: getComputedStyle(button).backgroundColor, opacity: getComputedStyle(button).opacity }));
+      assert.equal(nextStyle.background, 'rgba(0, 0, 0, 0)', 'Touch hover must not stick');
+      assert.equal(nextStyle.opacity, '1', 'Pressed styling must clear after touch');
+      await touch.evaluate(() => document.documentElement.style.setProperty('--music-safe-bottom', '34px'));
+      const padding = await touch.locator('#site-music-player').evaluate(dock => parseFloat(getComputedStyle(dock).paddingBottom));
+      assert.ok(padding >= 42, 'Home-indicator safe area must be reserved');
+      await touch.locator('#site-music-player [data-action="repeat"]').tap();
+      assert.equal(await touch.evaluate(() => archiveMusic.state().repeat), 'all');
+      await touch.screenshot({ path: 'test-results/' + engine + '-music-safe-area.png' });
       await touch.setViewportSize({ width: 844, height: 390 });
       assert.ok(await touch.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1));
       await touch.locator('#site-music-player [data-action="close"]').tap();

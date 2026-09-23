@@ -12,6 +12,7 @@ const icon = name => {
     pause: '<path d="M8 5v14M16 5v14"/>',
     previous: '<path d="M5 5v14m14-14L8 12l11 7z"/>',
     next: '<path d="M19 5v14M5 5l11 7-11 7z"/>',
+    repeat: '<path d="m17 2 4 4-4 4M3 11V9a3 3 0 0 1 3-3h15M7 22l-4-4 4-4m14-1v2a3 3 0 0 1-3 3H3"/>',
     close: '<path d="m6 6 12 12M6 18 18 6"/>',
     sound: '<path d="M11 4 6 9H3v6h3l5 5zM15 8a6 6 0 0 1 0 8m3-11a10 10 0 0 1 0 14"/>',
     muted: '<path d="M11 4 6 9H3v6h3l5 5zM16 9l6 6m0-6-6 6"/>'
@@ -31,14 +32,15 @@ function createPlayer() {
   dock.setAttribute('aria-label', 'Site music player');
   dock.hidden = true;
   dock.innerHTML = `
-    <div class="music-dock-track"><img alt="" hidden><div><span class="music-dock-kicker">Now playing</span><strong class="music-dock-title" aria-live="polite" aria-atomic="true"></strong></div></div>
+    <div class="music-dock-track"><img alt="" hidden><div><span class="music-dock-kicker">Now playing</span><strong class="music-dock-title sr-only" aria-live="polite" aria-atomic="true"></strong><label class="music-dock-queue"><span class="sr-only">Choose playlist track</span><select aria-label="Choose playlist track"></select></label></div></div>
     <div class="music-dock-buttons">
       <button type="button" data-action="previous" aria-label="Previous track">${icon('previous')}</button>
       <button type="button" data-action="toggle" aria-label="Play" class="music-dock-play">${icon('play')}</button>
       <button type="button" data-action="next" aria-label="Next track">${icon('next')}</button>
     </div>
     <div class="music-dock-progress"><span class="music-dock-elapsed">0:00</span><input type="range" min="0" max="1" step="0.1" value="0" aria-label="Seek track" disabled><span class="music-dock-duration">0:00</span></div>
-    <div class="music-dock-options"><label class="music-dock-queue"><span class="sr-only">Choose playlist track</span><select aria-label="Choose playlist track"></select></label>
+    <div class="music-dock-options">
+      <button type="button" data-action="repeat" aria-label="Repeat track. Change to repeat playlist" title="Repeat track" aria-pressed="true">${icon('repeat')}<span class="music-repeat-mark" aria-hidden="true">1</span></button>
       <button type="button" data-action="mute" aria-label="Mute" aria-pressed="false">${icon('sound')}</button>
       <button type="button" data-action="close" aria-label="Stop music and close player">${icon('close')}</button>
     </div>
@@ -50,10 +52,11 @@ function createPlayer() {
   const error = dock.querySelector('.music-dock-error');
   const listeners = new Set();
   let tracks = [], current = null, open = false, pending = false, request = 0;
+  let repeat = 'one';
   let frame = null;
   let originFocus = null;
   const originalTitle = document.title;
-  const state = () => ({ audio, tracks, current, open, pending, error: error.hidden ? '' : error.textContent });
+  const state = () => ({ audio, tracks, current, open, pending, repeat, error: error.hidden ? '' : error.textContent });
   const sizeDock = () => document.documentElement.style.setProperty('--music-dock-space', `${open ? dock.getBoundingClientRect().height : 0}px`);
   new ResizeObserver(sizeDock).observe(dock);
 
@@ -71,7 +74,13 @@ function createPlayer() {
     const playing = pending || !audio.paused;
     toggle.innerHTML = icon(playing ? 'pause' : 'play');
     toggle.setAttribute('aria-label', playing ? 'Pause' : 'Play');
-    dock.querySelector('.music-dock-kicker').textContent = pending ? 'Loading' : playing ? 'Playing · Repeat' : 'Paused · Repeat';
+    dock.querySelector('.music-dock-kicker').textContent = pending ? 'Loading' : playing ? 'Playing' : 'Paused';
+    const repeatButton = dock.querySelector('[data-action="repeat"]');
+    const repeatName = { one: 'Repeat track', all: 'Repeat playlist', off: 'Repeat off' }[repeat];
+    repeatButton.setAttribute('aria-label', `${repeatName}. Change to ${ { one: 'repeat playlist', all: 'repeat off', off: 'repeat track' }[repeat] }`);
+    repeatButton.title = repeatName;
+    repeatButton.setAttribute('aria-pressed', String(repeat !== 'off'));
+    repeatButton.querySelector('.music-repeat-mark').textContent = repeat === 'one' ? '1' : repeat === 'off' ? '−' : '';
     const mute = dock.querySelector('[data-action="mute"]');
     mute.innerHTML = icon(audio.muted ? 'muted' : 'sound');
     mute.setAttribute('aria-label', audio.muted ? 'Unmute' : 'Mute');
@@ -133,11 +142,21 @@ function createPlayer() {
     if (action === 'previous') step(-1);
     if (action === 'next') step(1);
     if (action === 'mute') audio.muted = !audio.muted;
+    if (action === 'repeat') {
+      repeat = { one: 'all', all: 'off', off: 'one' }[repeat];
+      audio.loop = repeat === 'one';
+      sync();
+    }
     if (action === 'close') close();
   });
   select.addEventListener('change', () => play(select.value));
   seek.addEventListener('input', () => { if (Number.isFinite(audio.duration)) audio.currentTime = Number(seek.value); sync(); });
   for (const name of ['playing', 'pause', 'timeupdate', 'durationchange', 'volumechange', 'seeked', 'ended']) audio.addEventListener(name, sync);
+  audio.addEventListener('ended', () => {
+    if (!open || repeat === 'one') return;
+    const index = tracks.findIndex(track => track.id === current?.id);
+    if (index < tracks.length - 1 || repeat === 'all') step(1);
+  });
   audio.addEventListener('error', () => { if (open && audio.hasAttribute('src')) showError('This track could not load. Try Play again or choose another track.'); });
   if ('mediaSession' in navigator) {
     for (const [action, handler] of Object.entries({ play: () => play(), pause, stop: close, previoustrack: () => step(-1), nexttrack: () => step(1), seekto: event => { if (Number.isFinite(audio.duration)) audio.currentTime = Math.min(audio.duration, Math.max(0, event.seekTime)); } })) {
