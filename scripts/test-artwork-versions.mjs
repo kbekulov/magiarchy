@@ -28,6 +28,16 @@ export async function testArtworkVersions(page, origin, engine) {
     await page.goto(`${origin}/gallery.html?image=char-sherie_drake-1`);
     await page.waitForLoadState('networkidle');
     assert.ok(await nav.isHidden());
+    await page.goto(`${origin}/gallery.html?image=char-drake-sherie-kyrien-lynleit-felix-lineup-sketch-01`);
+    await page.waitForLoadState('networkidle');
+    const lineup = page.locator('#gallery-detail-image');
+    await lineup.evaluate(img => img.decode());
+    assert.ok((await lineup.getAttribute('alt')).includes('heeled ankle boots'));
+    assert.equal(await lineup.evaluate(img => img.naturalWidth), 1671);
+    assert.equal(await lineup.evaluate(img => img.naturalHeight), 941);
+    assert.ok(await nav.isHidden());
+    assert.ok(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1));
+    await page.screenshot({ path: `test-results/${engine}-lineup-${width}.png` });
   }
   console.log(`${engine}: artwork versions, source links, keyboard switching and responsive layouts passed`);
 }
