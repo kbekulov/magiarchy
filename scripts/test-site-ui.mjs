@@ -10,6 +10,7 @@ import { testGalleryPanels } from './test-gallery-panels.mjs';
 import { testKyrienOrigin } from './test-kyrien-origin.mjs';
 import { testNarveanFog } from './test-narvean-fog.mjs';
 import { testArtworkVersions } from './test-artwork-versions.mjs';
+import { testMusicMovements } from './test-music-movements.mjs';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const mime = { '.html': 'text/html', '.js': 'text/javascript', '.json': 'application/json', '.css': 'text/css', '.png': 'image/png', '.webp': 'image/webp', '.md': 'text/plain', '.mp3': 'audio/mpeg', '.wav': 'audio/wav' };
@@ -59,6 +60,11 @@ try {
         await page.goto(`${origin}/${route}`);
         await page.waitForLoadState('networkidle');
       };
+      if (process.env.TEST_MUSIC_ONLY === '1') {
+        await testMusicMovements(page, origin, engine);
+        assert.deepEqual(errors, [], `${engine}: music errors`);
+        continue;
+      }
       if (process.env.TEST_GALLERY_ONLY === '1') {
         await testArtworkVersions(page, origin, engine);
         await testGalleryResources(page, origin, engine);
@@ -342,8 +348,8 @@ try {
         assert.equal(await page.locator('#music-playable-count').textContent(), `${playableCount} playable tracks`);
         assert.equal(await page.locator('.music-card:visible').count(), musicCount);
         await visit('music.html?category=event&tag=Only%20Eyes%20for%20You');
-        assert.equal(await page.locator('.music-card:visible').count(), 2, 'Soundtrack event should find both movements');
-        for (const slug of ['passacaglia-movement-i', 'passacaglia-movement-ii']) {
+        assert.equal(await page.locator('.music-card:visible').count(), 3, 'Soundtrack event should find all three movements');
+        for (const slug of ['passacaglia-movement-i', 'passacaglia-movement-ii', 'passacaglia-movement-iii']) {
           const card = page.locator(`#${slug}`);
           assert.ok(await card.isVisible());
           assert.equal(await card.getAttribute('data-arc'), '', 'Do not invent an Arc for the soundtrack');

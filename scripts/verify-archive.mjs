@@ -289,12 +289,13 @@ for (const [, attributes, content] of audioPlayers) {
   }
 }
 assert.ok(entries.some(entry => entry.url.includes('music.html') && entry.text.includes('Theme 1 (stem)')), 'Music: track missing from search');
-assert.deepEqual(churchInterlude.soundtrack.tracks, ['passacaglia-movement-i', 'passacaglia-movement-ii']);
+assert.deepEqual(churchInterlude.soundtrack.tracks, ['passacaglia-movement-i', 'passacaglia-movement-ii', 'passacaglia-movement-iii']);
 assert.equal(churchInterlude.soundtrack.event, 'Only Eyes for You');
 assert.ok(read('gallery.html').includes('data-music-event="Only Eyes for You"'), 'Gallery: soundtrack filter link missing');
 for (const [slug, title, mp3Bytes, wavBytes] of [
   ['passacaglia-movement-i', 'Passacaglia (Movement I)', 4820256, 40089792],
-  ['passacaglia-movement-ii', 'Passacaglia (Movement II)', 4930752, 41164992]
+  ['passacaglia-movement-ii', 'Passacaglia (Movement II)', 4930752, 41164992],
+  ['passacaglia-movement-iii', 'Passacaglia (Movement III)', 3999456, 29940740]
 ]) {
   const card = music.match(new RegExp(`<article[^>]*id="${slug}"[^>]*>[\\s\\S]*?<\\/article>`))?.[0];
   assert.ok(card && card.includes('data-event="Only Eyes for You|Church visits"') && card.includes('data-arc=""'), `${slug}: author association or open Arc missing`);
