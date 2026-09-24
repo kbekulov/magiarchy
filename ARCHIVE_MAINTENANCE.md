@@ -4,6 +4,8 @@ This file is the concise operating map for future agents and maintainers. `AGENT
 
 ## Authority and record states
 
+Gallery artwork filters include mutually exclusive Chibi only and Exclude chibis toggles. Both off includes both artwork styles; either mode combines with the existing character and location filters and preserves default-version previews.
+
 Shared UI invariants: Music uses the Characters archive toolbar with category and tag chips. Track assignments are editable catalog metadata, not new canon. Character cards randomize registered chibis with visible era labels; profile artwork uses image-half navigation, swipes, and thumbnails, without arrow buttons. Timeline counts may expand anywhere: retain IDs, derive numbers from order, and use the shared labelled Arc bands in Story, Moments, and profile timelines. Never infer an unplaced event's Arc merely to color it.
 
 1. The author is the only final authority over canon.

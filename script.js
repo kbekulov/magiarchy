@@ -347,6 +347,7 @@ window.addTimelineToggle = (panel) => {
 const galleryCharacterFilter = document.querySelector('#gallery-character-filter');
 const galleryLocationFilter = document.querySelector('#gallery-location-filter');
 const galleryChibiFilter = document.querySelector('#gallery-chibi-filter');
+const galleryExcludeChibiFilter = document.querySelector('#gallery-exclude-chibi-filter');
 const galleryItems = document.querySelectorAll('.gallery-card');
 const galleryResultCount = document.querySelector('#gallery-result-count');
 const galleryEmptyState = document.querySelector('#gallery-empty-state');
@@ -485,13 +486,15 @@ function updateGalleryResults() {
   const selectedCharacter = galleryCharacterFilter?.value ?? 'all';
   const selectedLocation = galleryLocationFilter?.value ?? 'all';
   const chibiOnly = galleryChibiFilter?.checked ?? false;
+  const excludeChibis = galleryExcludeChibiFilter?.checked ?? false;
   let visibleCount = 0;
 
   galleryItems.forEach((item) => {
     const itemCharacters = (item.dataset.character ?? '').split(/\s+/).filter(Boolean);
     const matchesCharacter = selectedCharacter === 'all' || itemCharacters.includes(selectedCharacter);
     const matchesLocation = selectedLocation === 'all' || item.dataset.location === selectedLocation;
-    const matchesChibi = !chibiOnly || item.dataset.chibi === 'true';
+    const isChibi = item.dataset.chibi === 'true';
+    const matchesChibi = (!chibiOnly || isChibi) && (!excludeChibis || !isChibi);
     const isPreview = !item.dataset.imageVersionGroup || item.dataset.imageVersionDefault === 'true';
     const isVisible = isPreview && matchesCharacter && matchesLocation && matchesChibi;
 
@@ -505,7 +508,12 @@ function updateGalleryResults() {
 
 galleryCharacterFilter?.addEventListener('change', updateGalleryResults);
 galleryLocationFilter?.addEventListener('change', updateGalleryResults);
-galleryChibiFilter?.addEventListener('change', updateGalleryResults);
+for (const [toggle, other] of [[galleryChibiFilter, galleryExcludeChibiFilter], [galleryExcludeChibiFilter, galleryChibiFilter]]) {
+  toggle?.addEventListener('change', () => {
+    if (toggle.checked && other) other.checked = false;
+    updateGalleryResults();
+  });
+}
 
 const duchyMap = document.querySelector('.duchy-map-figure');
 const duchyMapHotspots = Array.from(document.querySelectorAll('.duchy-map-hotspot'));
