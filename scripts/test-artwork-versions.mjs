@@ -93,6 +93,21 @@ export async function testArtworkVersions(page, origin, engine) {
     assert.ok(await nav.isHidden());
     assert.ok(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1));
     await page.screenshot({ path: `test-results/${engine}-lineup-${width}.png` });
+    await page.goto(`${origin}/gallery.html?image=char-hiyu-yulia-church-interior`);
+    await page.locator('#gallery-detail-image').evaluate(img => img.decode());
+    assert.equal(await page.locator('#gallery-detail-title').innerText(), 'Hiyu and Yulia');
+    assert.equal(await page.locator('#gallery-detail-source').getAttribute('href'), 'media/gallery/images/characters/char-hiyu-yulia-church-interior.png');
+    for (const slug of ['hiyu', 'yulia']) {
+      await page.goto(`${origin}/character.html?character=${slug}`);
+      await page.waitForLoadState('networkidle');
+      const thumbnail = page.locator('.profile-art-thumbnails button').filter({ has: page.locator('img[src*="char-hiyu-yulia-church-interior"]') });
+      assert.equal(await thumbnail.count(), 1);
+      if (await thumbnail.isVisible()) await thumbnail.click();
+      const sharedPortrait = page.locator('.profile-portrait-strip img[src*="char-hiyu-yulia-church-interior"]').first();
+      await sharedPortrait.evaluate(img => img.decode());
+      assert.ok(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1));
+      await page.screenshot({ path: `test-results/${engine}-${slug}-shared-artwork-${width}.png` });
+    }
   }
   console.log(`${engine}: artwork versions, source links, keyboard switching and responsive layouts passed`);
 }
