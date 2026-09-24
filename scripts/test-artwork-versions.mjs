@@ -7,6 +7,11 @@ export async function testArtworkVersions(page, origin, engine) {
     await page.waitForLoadState('networkidle');
     const only = page.locator('#gallery-chibi-filter');
     const exclude = page.locator('#gallery-exclude-chibi-filter');
+    if (width > 1000) {
+      const first = await only.locator('..').boundingBox();
+      const second = await exclude.locator('..').boundingBox();
+      assert.ok(second.x - first.x - first.width <= 25, 'Related chibi toggles should stay grouped on desktop');
+    }
     const visibleCards = page.locator('.gallery-card:not([hidden])');
     const allCount = await visibleCards.count();
     await only.check({ force: true });

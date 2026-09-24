@@ -4122,6 +4122,10 @@ a.status-member:hover {
   cursor: pointer;
 }
 
+.chibi-toggle + .chibi-toggle {
+  margin-left: 14px;
+}
+
 .chibi-toggle input {
   position: absolute;
   opacity: 0;
@@ -9920,6 +9924,10 @@ a.moment-connection-card:hover {
 
   .chibi-toggle {
     grid-column: 1 / -1;
+    margin-left: 0;
+  }
+
+  .chibi-toggle + .chibi-toggle {
     margin-left: 0;
   }
 
