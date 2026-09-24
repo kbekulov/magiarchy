@@ -25,8 +25,10 @@ export async function testGalleryResources(page, origin, engine) {
     assert.ok(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1));
     await page.screenshot({ path: `test-results/${engine}-kyrien-reference-${width}.png`, fullPage: true });
     await visit('characters.html');
-    assert.equal(await page.locator('[data-name="Kyrien"] img').count(), 0, 'Withdrawn chibi still displayed');
-    assert.ok(await page.locator('[data-name="Kyrien"] .chibi-placeholder').isVisible());
+    const chibi = page.locator('[data-name="Kyrien"] .character-chibi');
+    await chibi.evaluate(img => img.decode());
+    assert.ok((await chibi.getAttribute('src')).includes('char-kyrien-arc-1-chibi-beige-jacket'), 'Approved Kyrien chibi missing');
+    assert.equal(await page.locator('[data-name="Kyrien"] .chibi-placeholder').count(), 0);
     await visit('character.html?character=kyrien');
     assert.equal(await page.locator('#character-profile-portrait img').count(), 0, 'Withdrawn portrait still displayed');
     assert.ok(await page.locator('#character-profile-portrait .profile-portrait-placeholder').isVisible());
@@ -36,7 +38,7 @@ export async function testGalleryResources(page, origin, engine) {
     }
   }
   await visit('gallery.html');
-  assert.equal(await page.locator('.gallery-card[data-character~="kyrien"]').count(), 3);
+  assert.equal(await page.locator('.gallery-card[data-character~="kyrien"]').count(), 4);
   assert.equal(await page.locator('.gallery-card[data-character~="kyrien"][data-profile-portrait="false"]').count(), 3, 'Concept sheets and lineup sketches must stay outside the portrait pool');
   const lineupId = 'char-drake-sherie-kyrien-lynleit-felix-lineup-sketch-01';
   for (const slug of ['drake', 'sherie', 'kyrien', 'lynleit', 'felix']) {
