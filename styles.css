@@ -10482,6 +10482,15 @@ a.moment-connection-card:hover {
   line-height: 1.65;
 }
 
+.character-profile-name-meaning {
+  max-width: 760px;
+  margin: -10px 0 23px;
+  color: #aeb2bd;
+  font-size: .85rem;
+  line-height: 1.6;
+  scroll-margin-top: 110px;
+}
+
 .character-profile-intro .faction-badges {
   max-width: 100%;
   justify-content: flex-start;
@@ -10753,7 +10762,6 @@ a.moment-connection-card:hover {
   font-size: 1rem;
 }
 
-.profile-name,
 .profile-biography,
 .profile-connections,
 .profile-nature,
@@ -11041,15 +11049,6 @@ a.equipment-card:focus-visible {
 .appearance-ledger dt {
   color: #9499a6;
   font-weight: 750;
-}
-
-#character-name-section,
-#name-meaning-title {
-  scroll-margin-top: 110px;
-}
-
-#character-name-meaning {
-  column-gap: 16px;
 }
 
 .appearance-ledger dd {

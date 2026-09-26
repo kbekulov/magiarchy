@@ -2,10 +2,7 @@ const profileSeeds = [
   {
     slug: 'lynleit', name: 'Lynleit', code: 'MSF · 001', role: 'Fionn\'s biological daughter and displaced heir', ageBand: 'Late twenties', factions: ['MSF', 'Magiarchy'], mbti: { type: 'INFJ', detail: 'Ni-led reading; strong Fe', status: 'Suspected' }, accent: 'blue', materialStatus: 'Canon traits + mock details',
     summary: 'Fionn\'s daughter, an MSF officer and Magus who becomes a fugitive after Helena accuses her of his murder.',
-    nameMeaning: [
-      ['Suspected reading', 'Moonlight, moon lit, or illuminated by moonlight.'],
-      ['Alternative reading', 'Moon lake. The meaning is not settled.']
-    ],
+    nameMeaning: 'Her name may mean "moonlight" or "illuminated by moonlight"; "moon lake" is another interpretation.',
     visual: 'A long tailored blue coat over a pale high-collared blouse with a narrow black ribbon, fitted high-waisted black shorts, dark tights, and black over-the-knee lace-up boots. Her wardrobe is formal and fashion-conscious.', palette: 'Midnight blue, black, white, cold cyan',
     physical: [
       ['Hair', 'Very long, wavy ash-black hair with a side-parted fringe, most often worn loose.'],
@@ -57,10 +54,7 @@ const profileSeeds = [
   {
     slug: 'kyrien', name: 'Kyrien', code: 'IND · 002', role: 'Independent operator and later MSF director', ageBand: 'Late twenties', factions: ['Independent', 'MSF'], affiliationTimeline: [{ name: 'Independent', stage: 'Opening' }, { name: 'MSF', stage: 'Later director' }], mbti: { type: 'ISTP', detail: 'Ti-Se-Ni working model; INTJ alternative', status: 'Suspected' }, accent: 'amber', materialStatus: 'Canon traits + mock details',
     summary: 'A non-Magus who begins as Lynleit\'s secret recruit and later becomes director of MSF.',
-    nameMeaning: [
-      ["Author's intended meaning", 'Of God or belonging to God.'],
-      ['Name construction', 'Kyrie with a possessive -n in the author’s construction of the name.']
-    ],
+    nameMeaning: 'His name means "of God" or "belonging to God", formed from Kyrie and the possessive -n.',
     visual: 'A blue open-neck shirt, black tailored trousers, black leather shoes, and a silver cross necklace. His beige matte leather jacket has an upright stand collar and no pockets. The clothes fall naturally, with light creasing from wear.', palette: 'Dusty blue, beige, charcoal, black, silver',
     physical: [
       ['Hair', 'Short, tousled dark brown hair with a clear middle part. The front sections fall to either side of his forehead.'],
@@ -762,12 +756,17 @@ async function loadProfilePortrait(profile, portrait, note) {
     stage.append(previous, next);
     const thumbnails = createElement('div', 'profile-art-thumbnails');
     thumbnails.setAttribute('aria-label', 'Choose portrait');
+    function portraitPosition(source) {
+      const focus = source.closest('.gallery-card')?.dataset.profileFocus;
+      return `${['left', 'right'].includes(focus) ? focus : 'center'} top`;
+    }
     const choices = artworks.map((source, index) => {
       const button = createElement('button');
       button.type = 'button';
       button.setAttribute('aria-label', `Portrait ${index + 1}`);
       const thumb = createElement('img');
       thumb.src = source.dataset.preview || source.getAttribute('src'); thumb.alt = ''; thumb.loading = 'lazy';
+      thumb.style.objectPosition = portraitPosition(source);
       button.append(thumb);
       button.addEventListener('click', () => show(index));
       thumbnails.append(button);
@@ -780,10 +779,15 @@ async function loadProfilePortrait(profile, portrait, note) {
       strip.style.transition = 'none';
       strip.style.transform = 'translateX(0px)';
       selectedIndex = (index + artworks.length) % artworks.length;
-      beforeImage.src = artworks[(selectedIndex + artworks.length - 1) % artworks.length].getAttribute('src');
-      afterImage.src = artworks[(selectedIndex + 1) % artworks.length].getAttribute('src');
+      const beforeSource = artworks[(selectedIndex + artworks.length - 1) % artworks.length];
+      const afterSource = artworks[(selectedIndex + 1) % artworks.length];
+      beforeImage.src = beforeSource.getAttribute('src');
+      beforeImage.style.objectPosition = portraitPosition(beforeSource);
+      afterImage.src = afterSource.getAttribute('src');
+      afterImage.style.objectPosition = portraitPosition(afterSource);
       const source = artworks[selectedIndex];
       image.src = source.getAttribute('src');
+      image.style.objectPosition = portraitPosition(source);
       image.alt = source.alt || `Character artwork of ${profile.name}`;
       const arc = source.closest('.gallery-card')?.dataset.storyArc;
       eraLabel.textContent = arc ? arc.replace('-', ' ').replace(/^arc/i, 'Arc') : '';
@@ -1323,6 +1327,9 @@ function renderProfile(profile) {
   document.querySelector('#character-profile-role').textContent = profile.role;
   document.querySelector('#character-profile-name').textContent = profile.name;
   document.querySelector('#character-profile-summary').textContent = profile.summary;
+  const nameMeaning = document.querySelector('#name-meaning-title');
+  nameMeaning.textContent = profile.nameMeaning ?? '';
+  nameMeaning.hidden = !profile.nameMeaning;
 
   const mbti = profile.mbti ?? { type: 'XXXX', status: 'Undiscussed' };
   const mbtiStatus = mbti.status.toLowerCase().replace(/[^a-z]+/g, '-');
@@ -1363,13 +1370,6 @@ function renderProfile(profile) {
   loadCharacterMoments(profile, timeline);
 
   const appearance = document.querySelector('#character-appearance');
-  const nameMeaning = document.querySelector('#character-name-meaning');
-  if (profile.nameMeaning?.length) {
-    profile.nameMeaning.forEach(([term, detail]) => {
-      nameMeaning.append(createElement('dt', '', term), createElement('dd', '', detail));
-    });
-    document.querySelector('#character-name-section').hidden = false;
-  }
   const appearanceDetails = [
     ...(profile.physical ?? []),
     ['Wardrobe and silhouette', profile.visual],

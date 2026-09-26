@@ -66,7 +66,9 @@ export async function testSherieFelixBanter(page, origin, engine) {
   for (const character of ['sherie', 'felix']) {
     await visit(`character.html?character=${character}`);
     assert.equal(await page.locator('.character-moment-card[href="moments.html?moment=unresolved-tension"]').count(), 1);
-    assert.equal(await page.locator('.profile-art-thumbnails img[src*="card-game"]').count(), 0, 'Scene illustrations should not become profile portraits');
+    for (const imageId of imageIds) {
+      assert.equal(await page.locator(`.profile-art-thumbnails img[src*="${imageId}"]`).count(), 0, 'Scene illustrations should not become profile portraits');
+    }
   }
   await visit('story.html');
   assert.equal(await page.locator('.timeline-panel-link[href="gallery.html?panels=sherie-felix-banter"]').count(), 0, 'Unplaced exchange must not gain a numbered phase');

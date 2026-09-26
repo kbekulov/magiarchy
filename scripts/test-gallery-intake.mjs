@@ -7,7 +7,8 @@ export async function testGalleryIntake(page, origin, engine) {
     ['char-sherie-red-sofa', 'sherie', 'char-sherie-red-sofa'],
     ['char-lynleit-blue-gown-ballroom', 'lynleit', 'char-lynleit-arc-1-prosecutor-dinner'],
     ['char-lynleit-in-the-park', 'lynleit', 'char-lynleit-in-the-park'],
-    ['char-yulia-white-sweater', 'yulia', 'char-yulia-white-sweater']
+    ['char-yulia-white-sweater', 'yulia', 'char-yulia-white-sweater-r2'],
+    ['char-sherie-ivory-sofa-card-game', 'sherie', 'char-sherie-ivory-sofa-card-game']
   ];
   const visit = async route => {
     await page.goto(`${origin}/${route}`);
@@ -43,6 +44,26 @@ export async function testGalleryIntake(page, origin, engine) {
       await page.locator(`.profile-portrait-strip img[src$="${filename}.png"]`).first().evaluate(image => image.decode());
       assert.equal(await page.locator('.profile-art-thumbnails img[src$="-v1.webp"]').count(), 0, `${character}: retired portrait still in rotation`);
       if (id === 'char-lynleit-blue-gown-ballroom') assert.equal(await page.locator('.profile-art-era').textContent(), 'Arc 1');
+      if (character === 'yulia') assert.equal(await page.locator('.profile-art-thumbnails img[src$="char-yulia-white-sweater.webp"]').count(), 0);
+      if (id === 'char-sherie-ivory-sofa-card-game') {
+        assert.equal(await button.locator('img').evaluate(image => getComputedStyle(image).objectPosition), '100% 0%');
+        assert.equal(await page.locator('.profile-portrait-strip img').nth(1).evaluate(image => getComputedStyle(image).objectPosition), '100% 0%');
+        await page.getByRole('button', { name: 'Next portrait', exact: true }).focus();
+        await page.keyboard.press('ArrowRight');
+        await page.waitForFunction(() => getComputedStyle(document.querySelector('.profile-portrait-strip img:first-child')).objectPosition === '100% 0%');
+        assert.equal(await page.locator('.profile-portrait-strip img').nth(0).evaluate(image => getComputedStyle(image).objectPosition), '100% 0%');
+        assert.equal(await page.locator('.profile-portrait-strip img').nth(1).evaluate(image => getComputedStyle(image).objectPosition), '50% 0%');
+        await button.click();
+        await page.getByRole('button', { name: 'Previous portrait', exact: true }).focus();
+        await page.keyboard.press('ArrowLeft');
+        await page.waitForFunction(() => getComputedStyle(document.querySelector('.profile-portrait-strip img:last-child')).objectPosition === '100% 0%');
+        assert.equal(await page.locator('.profile-portrait-strip img').nth(2).evaluate(image => getComputedStyle(image).objectPosition), '100% 0%');
+        await button.click();
+      }
+      if (character === 'yulia' || id === 'char-sherie-ivory-sofa-card-game') {
+        await page.locator('.character-profile-hero').scrollIntoViewIfNeeded();
+        await page.screenshot({ path: `test-results/${engine}-${character}-updated-artwork-${width}.png` });
+      }
     }
     await visit('gallery.html?image=char-lynleit-blue-gown-ballroom');
     assert.ok((await page.locator('#gallery-detail-type').textContent()).includes('Arc 1'));
@@ -59,6 +80,11 @@ export async function testGalleryIntake(page, origin, engine) {
     }
   }
   const search = JSON.parse(fs.readFileSync('search-index.json', 'utf8')).entries;
+  for (const [id] of images.slice(4)) assert.ok(search.some(record => record.url === `gallery.html?image=${id}`));
+  for (const extension of ['png', 'webp']) {
+    const folder = extension === 'png' ? 'images' : 'previews';
+    assert.ok(!fs.existsSync(`media/gallery/${folder}/characters/char-yulia-white-sweater.${extension}`));
+  }
   for (const [id, , filename] of images.slice(0, 3)) {
     assert.ok(!fs.existsSync(`media/gallery/images/characters/${filename}-v1.png`));
     assert.ok(!fs.existsSync(`media/gallery/previews/characters/${filename}-v1.webp`));

@@ -9,13 +9,19 @@ export async function testRelationshipDirection(page, origin, engine) {
   const artwork = 'char-lynleit-kyrien-arc-1-park-bank';
   for (const width of [390, 820, 1440]) {
     await page.setViewportSize({ width, height: 900 });
-    for (const [slug, phrase] of [['kyrien', 'belonging to God'], ['lynleit', 'Moon lake']]) {
+    for (const [slug, phrase] of [['kyrien', 'belonging to God'], ['lynleit', 'moon lake']]) {
       await visit(`character.html?character=${slug}#name-meaning-title`);
-      assert.ok(await page.locator('#character-name-section').isVisible());
-      assert.ok((await page.locator('#character-name-meaning').textContent()).includes(phrase));
+      const meaning = page.locator('.character-profile-intro > p#name-meaning-title');
+      assert.ok(await meaning.isVisible());
+      assert.ok((await meaning.textContent()).includes(phrase));
+      assert.ok(!/author/i.test(await meaning.textContent()));
+      assert.equal(await page.locator('#character-name-section').count(), 0);
+      assert.equal(await page.getByRole('heading', { name: 'Name meaning', exact: true }).count(), 0);
+      assert.equal(await page.locator('.profile-section').first().locator('header > span').textContent(), '01');
+      assert.ok(await meaning.evaluate(node => node.previousElementSibling.id === 'character-profile-summary'));
       assert.equal(await page.locator(`.profile-art-thumbnails img[src*="${artwork}"]`).count(), 0);
       assert.ok(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1));
-      await page.locator('#character-name-section').scrollIntoViewIfNeeded();
+      await page.locator('.character-profile-intro').scrollIntoViewIfNeeded();
       await page.screenshot({ path: `test-results/${engine}-${slug}-name-${width}.png` });
     }
     await visit(`gallery.html?image=${artwork}`);
@@ -46,16 +52,17 @@ export async function testRelationshipDirection(page, origin, engine) {
   assert.ok(!(await page.locator('#document-reader').textContent()).includes('accommodating his hopes'));
   for (const slug of ['sherie', 'felix']) {
     await visit(`character.html?character=${slug}`);
-    assert.ok(await page.locator('#character-name-section').isHidden());
+    assert.ok(await page.locator('#name-meaning-title').isHidden());
     await page.locator(`.relationship-node[data-slug="${slug === 'sherie' ? 'felix' : 'sherie'}"]`).click();
     assert.ok((await page.locator('.relationship-map-detail-body').textContent()).includes(slug === 'sherie' ? 'without an invitation' : 'learning the changes in her voice'));
   }
   const entries = JSON.parse(fs.readFileSync('search-index.json', 'utf8')).entries;
-  for (const slug of ['lynleit', 'kyrien']) {
-    assert.ok(entries.some(entry => entry.url === `character.html?character=${slug}#name-meaning-title`));
+  for (const [slug, phrase] of [['lynleit', 'moon lake'], ['kyrien', 'belonging to God']]) {
+    assert.ok(entries.some(entry => entry.url === `character.html?character=${slug}` && entry.text.includes(phrase)));
+    assert.ok(!entries.some(entry => entry.url === `character.html?character=${slug}#name-meaning-title`));
   }
   assert.ok(entries.some(entry => entry.url === `gallery.html?image=${artwork}`));
   const panels = JSON.parse(fs.readFileSync('gallery/panels.json', 'utf8'));
   assert.ok(!JSON.stringify(panels).includes(artwork));
-  console.log(`${engine}: name sections, relationship history, park artwork, links, filters, and source download passed.`);
+  console.log(`${engine}: inline name lore, relationship history, park artwork, links, filters, and source download passed.`);
 }
