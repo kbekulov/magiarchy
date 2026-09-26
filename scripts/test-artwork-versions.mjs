@@ -1,6 +1,8 @@
 import assert from 'node:assert/strict';
+import { testGalleryFilters } from './test-gallery-filters.mjs';
 
 export async function testArtworkVersions(page, origin, engine) {
+  await testGalleryFilters(page, origin, engine);
   for (const width of [390, 1440]) {
     await page.setViewportSize({ width, height: 900 });
     await page.goto(`${origin}/gallery.html`);
@@ -10,7 +12,7 @@ export async function testArtworkVersions(page, origin, engine) {
     if (width > 1000) {
       const first = await only.locator('..').boundingBox();
       const second = await exclude.locator('..').boundingBox();
-      assert.ok(second.x - first.x - first.width <= 25, 'Related chibi toggles should stay grouped on desktop');
+      assert.ok(Math.abs(second.x - first.x) < 1 && second.y - first.y - first.height <= 8, 'Related chibi toggles should stay grouped on desktop');
     }
     const visibleCards = page.locator('.gallery-card:not([hidden])');
     const allCount = await visibleCards.count();

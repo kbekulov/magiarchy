@@ -6,6 +6,8 @@ This file is the concise operating map for future agents and maintainers. `AGENT
 
 Gallery artwork filters include mutually exclusive Chibi only and Exclude chibis toggles. Both off includes both artwork styles; either mode combines with the existing character and location filters and preserves default-version previews.
 
+Pencil only and Colored only form a second mutually exclusive pair, independent of the chibi pair. Each artwork card has explicit `data-art-finish="pencil"` or `data-art-finish="colored"` metadata. Pencil is the browsing category for monochrome pencil/pen sketches, not a claim about the physical medium; colored includes sketches with deliberate color accents. Classify from the image, not its filename, and preserve the original medium in captions. Keep each pair grouped with compact spacing, apply all selected filters together, and show an accurate count and empty state. These filters apply to Artwork only, not Production resources or Panels.
+
 Shared UI invariants: Music uses the Characters archive toolbar with category and tag chips. Track assignments are editable catalog metadata, not new canon. Character cards randomize registered chibis with visible era labels; profile artwork uses image-half navigation, swipes, and thumbnails, without arrow buttons. Timeline counts may expand anywhere: retain IDs, derive numbers from order, and use the shared labelled Arc bands in Story, Moments, and profile timelines. Never infer an unplaced event's Arc merely to color it.
 
 1. The author is the only final authority over canon.

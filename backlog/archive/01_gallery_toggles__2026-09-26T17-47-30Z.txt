@@ -1,0 +1,1 @@
+Same as we have interrelated toggles in the gallery for chibi only and non chibi, lets also add pencil only and colored only toggles

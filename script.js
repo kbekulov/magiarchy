@@ -348,6 +348,8 @@ const galleryCharacterFilter = document.querySelector('#gallery-character-filter
 const galleryLocationFilter = document.querySelector('#gallery-location-filter');
 const galleryChibiFilter = document.querySelector('#gallery-chibi-filter');
 const galleryExcludeChibiFilter = document.querySelector('#gallery-exclude-chibi-filter');
+const galleryPencilFilter = document.querySelector('#gallery-pencil-filter');
+const galleryColoredFilter = document.querySelector('#gallery-colored-filter');
 const galleryItems = document.querySelectorAll('.gallery-card');
 const galleryResultCount = document.querySelector('#gallery-result-count');
 const galleryEmptyState = document.querySelector('#gallery-empty-state');
@@ -487,6 +489,8 @@ function updateGalleryResults() {
   const selectedLocation = galleryLocationFilter?.value ?? 'all';
   const chibiOnly = galleryChibiFilter?.checked ?? false;
   const excludeChibis = galleryExcludeChibiFilter?.checked ?? false;
+  const pencilOnly = galleryPencilFilter?.checked ?? false;
+  const coloredOnly = galleryColoredFilter?.checked ?? false;
   let visibleCount = 0;
 
   galleryItems.forEach((item) => {
@@ -495,8 +499,9 @@ function updateGalleryResults() {
     const matchesLocation = selectedLocation === 'all' || item.dataset.location === selectedLocation;
     const isChibi = item.dataset.chibi === 'true';
     const matchesChibi = (!chibiOnly || isChibi) && (!excludeChibis || !isChibi);
+    const matchesFinish = (!pencilOnly || item.dataset.artFinish === 'pencil') && (!coloredOnly || item.dataset.artFinish === 'colored');
     const isPreview = !item.dataset.imageVersionGroup || item.dataset.imageVersionDefault === 'true';
-    const isVisible = isPreview && matchesCharacter && matchesLocation && matchesChibi;
+    const isVisible = isPreview && matchesCharacter && matchesLocation && matchesChibi && matchesFinish;
 
     item.hidden = !isVisible;
     if (isVisible) visibleCount += 1;
@@ -508,10 +513,12 @@ function updateGalleryResults() {
 
 galleryCharacterFilter?.addEventListener('change', updateGalleryResults);
 galleryLocationFilter?.addEventListener('change', updateGalleryResults);
-for (const [toggle, other] of [[galleryChibiFilter, galleryExcludeChibiFilter], [galleryExcludeChibiFilter, galleryChibiFilter]]) {
-  toggle?.addEventListener('change', () => {
-    if (toggle.checked && other) other.checked = false;
-    updateGalleryResults();
+for (const pair of [[galleryChibiFilter, galleryExcludeChibiFilter], [galleryPencilFilter, galleryColoredFilter]]) {
+  pair.forEach((toggle, index) => {
+    toggle?.addEventListener('change', () => {
+      if (toggle.checked && pair[1 - index]) pair[1 - index].checked = false;
+      updateGalleryResults();
+    });
   });
 }
 

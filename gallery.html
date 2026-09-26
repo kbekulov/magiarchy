@@ -115,16 +115,32 @@
               </select>
             </label>
 
-            <label class="chibi-toggle">
-              <input id="gallery-chibi-filter" type="checkbox">
-              <span class="toggle-track" aria-hidden="true"><span></span></span>
-              <span><strong>Chibi only</strong><small>Show compact character art</small></span>
-            </label>
-            <label class="chibi-toggle">
-              <input id="gallery-exclude-chibi-filter" type="checkbox">
-              <span class="toggle-track" aria-hidden="true"><span></span></span>
-              <span><strong>Exclude chibis</strong><small>Hide compact character art</small></span>
-            </label>
+            <div class="gallery-toggle-options">
+              <div class="gallery-toggle-pair" role="group" aria-label="Character format">
+                <label class="chibi-toggle">
+                  <input id="gallery-chibi-filter" type="checkbox">
+                  <span class="toggle-track" aria-hidden="true"><span></span></span>
+                  <span><strong>Chibi only</strong><small>Show compact character art</small></span>
+                </label>
+                <label class="chibi-toggle">
+                  <input id="gallery-exclude-chibi-filter" type="checkbox">
+                  <span class="toggle-track" aria-hidden="true"><span></span></span>
+                  <span><strong>Exclude chibis</strong><small>Hide compact character art</small></span>
+                </label>
+              </div>
+              <div class="gallery-toggle-pair" role="group" aria-label="Artwork finish">
+                <label class="chibi-toggle">
+                  <input id="gallery-pencil-filter" type="checkbox">
+                  <span class="toggle-track" aria-hidden="true"><span></span></span>
+                  <span><strong>Pencil only</strong><small>Monochrome sketches</small></span>
+                </label>
+                <label class="chibi-toggle">
+                  <input id="gallery-colored-filter" type="checkbox">
+                  <span class="toggle-track" aria-hidden="true"><span></span></span>
+                  <span><strong>Colored only</strong><small>Full or accent color</small></span>
+                </label>
+              </div>
+            </div>
           </section>
 
           <section class="gallery-content" id="gallery-content" aria-live="polite">
@@ -132,187 +148,187 @@
 
             <div class="gallery-grid" id="gallery-grid">
 
-              <figure class="gallery-card reveal" data-character="hiyu yulia" data-location="unspecified" data-chibi="false">
+              <figure class="gallery-card reveal" data-art-finish="colored" data-character="hiyu yulia" data-location="unspecified" data-chibi="false">
                 <a href="gallery.html?image=char-hiyu-yulia-church-interior" aria-label="View Hiyu and Yulia"><img data-preview="media/gallery/previews/characters/char-hiyu-yulia-church-interior.webp" srcset="media/gallery/previews/characters/char-hiyu-yulia-church-interior.webp 1x" src="media/gallery/images/characters/char-hiyu-yulia-church-interior.png" width="1024" height="1024" alt="Hiyu in a brown coat and loosened tie, with a hand in his hair, beside Yulia in a black turtleneck with folded arms and a gold cross necklace, inside a candlelit church." loading="eager"></a>
                 <figcaption><div><strong>Hiyu and Yulia</strong><span>Shared character artwork</span></div><span class="media-code">HIY · YUL</span></figcaption>
               </figure>
-              <figure class="gallery-card reveal" data-character="drake sherie kyrien lynleit felix" data-location="unspecified" data-chibi="false" data-profile-portrait="false">
+              <figure class="gallery-card reveal" data-art-finish="pencil" data-character="drake sherie kyrien lynleit felix" data-location="unspecified" data-chibi="false" data-profile-portrait="false">
                 <a href="gallery.html?image=char-drake-sherie-kyrien-lynleit-felix-lineup-sketch-01" aria-label="View Character lineup sketch"><img data-preview="media/gallery/previews/characters/char-drake-sherie-kyrien-lynleit-felix-lineup-sketch-01.webp" srcset="media/gallery/previews/characters/char-drake-sherie-kyrien-lynleit-felix-lineup-sketch-01.webp 1x" src="media/gallery/images/characters/char-drake-sherie-kyrien-lynleit-felix-lineup-sketch-01.png" width="1671" height="941" alt="Black-and-white lineup sketch, from left to right: Drake with a cane and long coat, Sherie holding a phone and wearing heeled ankle boots, Kyrien in a short jacket with a very low stand-up collar, Lynleit in a coat and tall boots, and Felix wearing suspenders." loading="eager"></a>
                 <figcaption><div><strong>Character lineup sketch</strong><span>Drake, Sherie, Kyrien, Lynleit and Felix</span></div><span class="media-code">SKETCH · 01</span></figcaption>
               </figure>
-              <figure class="gallery-card reveal" data-character="kyrien" data-location="unspecified" data-chibi="false">
+              <figure class="gallery-card reveal" data-art-finish="colored" data-character="kyrien" data-location="unspecified" data-chibi="false">
                 <a href="gallery.html?image=char-kyrien-red-sofa-pistol" aria-label="View Kyrien seated with a pistol"><img data-preview="media/gallery/previews/characters/char-kyrien-red-sofa-pistol.webp" srcset="media/gallery/previews/characters/char-kyrien-red-sofa-pistol.webp 1x" src="media/gallery/images/characters/char-kyrien-red-sofa-pistol.png" width="1038" height="1516" alt="Kyrien seated on a red tufted sofa, aiming a pistol toward the viewer, wearing a beige jacket, blue shirt and dark trousers." loading="lazy"></a>
                 <figcaption><div><strong>Kyrien - pistol on the red sofa</strong><span>Character art</span></div><span class="media-code">KYR · Sofa</span></figcaption>
               </figure>
-              <figure class="gallery-card reveal" data-character="kyrien" data-location="unspecified" data-chibi="true" data-story-arc="Arc-1">
+              <figure class="gallery-card reveal" data-art-finish="colored" data-character="kyrien" data-location="unspecified" data-chibi="true" data-story-arc="Arc-1">
                 <a href="gallery.html?image=char-kyrien-arc-1-chibi-beige-jacket" aria-label="View Kyrien Arc 1 chibi"><img data-preview="media/gallery/previews/chibis/char-kyrien-arc-1-chibi-beige-jacket.webp" srcset="media/gallery/previews/chibis/char-kyrien-arc-1-chibi-beige-jacket.webp 1x" src="media/gallery/images/chibis/char-kyrien-arc-1-chibi-beige-jacket.png" width="1254" height="1254" alt="Kyrien in Arc 1 as a chibi, with center-parted brown hair, subtly tired blue-gray eyes, a beige jacket, blue shirt and black trousers." loading="lazy"></a>
                 <figcaption><div><strong>Kyrien - Arc 1 chibi</strong><span>Arc 1 · Beige jacket</span></div><span class="media-code">KYR · C01</span></figcaption>
               </figure>
-              <figure class="gallery-card reveal" data-character="kyrien" data-location="unspecified" data-chibi="false" data-profile-portrait="false">
+              <figure class="gallery-card reveal" data-art-finish="colored" data-character="kyrien" data-location="unspecified" data-chibi="false" data-profile-portrait="false">
                 <a href="gallery.html?image=char-kyrien-concept-closeup-three-variants" aria-label="View Kyrien close-up concept studies"><img data-preview="media/gallery/previews/characters/char-kyrien-concept-closeup-three-variants.webp" srcset="media/gallery/previews/characters/char-kyrien-concept-closeup-three-variants.webp 1x" src="media/gallery/images/characters/char-kyrien-concept-closeup-three-variants.png" width="1010" height="600" alt="Three close-up costume studies of Kyrien: a beige jacket with a shoulder bag, a rolled-sleeve blue shirt, and a black coat over the blue shirt. A cross necklace, wristwatch, rings and a pistol appear in the studies." loading="lazy"></a>
                 <figcaption><div><strong>Kyrien: Close-up studies</strong><span>Concept artwork · Three costume variants</span></div><span class="media-code">KYR · CONCEPT</span></figcaption>
               </figure>
-              <figure class="gallery-card reveal" data-character="kyrien" data-location="unspecified" data-chibi="false" data-profile-portrait="false">
+              <figure class="gallery-card reveal" data-art-finish="colored" data-character="kyrien" data-location="unspecified" data-chibi="false" data-profile-portrait="false">
                 <a href="gallery.html?image=char-kyrien-concept-standing-three-variants" aria-label="View Kyrien standing concept studies"><img data-preview="media/gallery/previews/characters/char-kyrien-concept-standing-three-variants.webp" srcset="media/gallery/previews/characters/char-kyrien-concept-standing-three-variants.webp 1x" src="media/gallery/images/characters/char-kyrien-concept-standing-three-variants.png" width="1200" height="1402" alt="Three full-length costume studies of Kyrien in a beige jacket, a rolled-sleeve blue shirt, and a long black coat. All three wear black trousers and black shoes; the shirt and coat studies include a lowered pistol." loading="lazy"></a>
                 <figcaption><div><strong>Kyrien: Standing studies</strong><span>Concept artwork · Three costume variants</span></div><span class="media-code">KYR · CONCEPT</span></figcaption>
               </figure>
-              <figure class="gallery-card reveal" data-character="anima" data-location="unspecified" data-chibi="false" data-non-canon="true" data-resource="author-mascot-red-drapery" data-no-entity-links>
+              <figure class="gallery-card reveal" data-art-finish="colored" data-character="anima" data-location="unspecified" data-chibi="false" data-non-canon="true" data-resource="author-mascot-red-drapery" data-no-entity-links>
                 <a href="gallery.html?image=char-anima-red-drapery-artwork-01" aria-label="View Anima artwork"><img data-preview="media/gallery/previews/characters/char-anima-red-drapery-artwork-01.webp" srcset="media/gallery/previews/characters/char-anima-red-drapery-artwork-01.webp 1x" src="media/gallery/images/characters/char-anima-red-drapery-artwork-01.png" alt="Anima in a flowing red-and-black costume with gold ornaments, one arm raised and the other reaching forward" loading="eager"></a>
                 <figcaption><div><strong>Anima</strong><span>Author's mascot · Artwork · Outside story canon</span></div><span class="media-code">ANI · 01</span></figcaption>
               </figure>
-              <figure class="gallery-card reveal" data-character="lynleit" data-location="unspecified" data-chibi="false">
+              <figure class="gallery-card reveal" data-art-finish="colored" data-character="lynleit" data-location="unspecified" data-chibi="false">
                 <a href="gallery.html?image=char-lynleit-blue-rose-gown" aria-label="View Lynleit in a blue rose gown"><img data-preview="media/gallery/previews/characters/char-lynleit-blue-rose-gown.webp" srcset="media/gallery/previews/characters/char-lynleit-blue-rose-gown.webp 1x" src="media/gallery/images/characters/char-lynleit-blue-rose-gown.png" width="1920" height="1080" alt="Lynleit looks over her shoulder in a blue gown with black lace, blue roses, and floating blue petals" loading="lazy"></a>
                 <figcaption><div><strong>Lynleit - blue rose gown</strong><span>Character art</span></div><span class="media-code">LYN · Roses</span></figcaption>
               </figure>
-              <figure class="gallery-card reveal" data-character="lynleit felix" data-location="unspecified" data-chibi="false" data-moment="only-eyes-for-you" data-music-event="Only Eyes for You">
+              <figure class="gallery-card reveal" data-art-finish="colored" data-character="lynleit felix" data-location="unspecified" data-chibi="false" data-moment="only-eyes-for-you" data-music-event="Only Eyes for You">
                 <a href="media/gallery/images/characters/char-lynleit-felix-1.png" target="_blank" rel="noopener" aria-label="View Lynleit and Felix illustration 01 full size"><img data-preview="media/gallery/previews/characters/char-lynleit-felix-1.webp" srcset="media/gallery/previews/characters/char-lynleit-felix-1.webp 1x" src="media/gallery/images/characters/char-lynleit-felix-1.png" width="1024" height="1024" alt="Lynleit raises a Bible and pulls Felix by his tie beside a church pew" loading="eager"></a>
                 <figcaption><div><strong>Lynleit and Felix - illustration 01</strong><span>Character art</span></div><span class="media-code">LYN + FEL · 01</span></figcaption>
               </figure>
-              <figure class="gallery-card reveal" data-character="lynleit" data-location="unspecified" data-chibi="false" data-story-arc="Arc-1">
+              <figure class="gallery-card reveal" data-art-finish="colored" data-character="lynleit" data-location="unspecified" data-chibi="false" data-story-arc="Arc-1">
                 <a href="gallery.html?image=char-lynleit-arc-1-blue-flame-river-sketch" aria-label="View Lynleit blue flame river sketch"><img data-preview="media/gallery/previews/characters/char-lynleit-arc-1-blue-flame-river-sketch.webp" srcset="media/gallery/previews/characters/char-lynleit-arc-1-blue-flame-river-sketch.webp 1x" src="media/gallery/images/characters/char-lynleit-arc-1-blue-flame-river-sketch.png" width="941" height="1672" alt="Lynleit in Arc 1, running across water with blue flame in her outstretched hand, in a rough pen sketch" loading="lazy"></a>
                 <figcaption><div><strong>Lynleit - blue flame river sketch</strong><span>Arc 1 · Character art · Pen sketch</span></div><span class="media-code">LYN · Sketch</span></figcaption>
               </figure>
-              <figure class="gallery-card reveal" data-character="lynleit" data-location="unspecified" data-chibi="false">
+              <figure class="gallery-card reveal" data-art-finish="colored" data-character="lynleit" data-location="unspecified" data-chibi="false">
                 <a href="media/gallery/images/characters/char-lynleit-0.png" target="_blank" rel="noopener" aria-label="View Lynleit key art 01 full size"><img data-preview="media/gallery/previews/characters/char-lynleit-0.webp" srcset="media/gallery/previews/characters/char-lynleit-0.webp 1x" src="media/gallery/images/characters/char-lynleit-0.png" width="1590" height="1088" alt="Lynleit key art 01" loading="eager"></a>
                 <figcaption><div><strong>Lynleit - key art 01</strong><span>Character art</span></div><span class="media-code">LYN · 01</span></figcaption>
               </figure>
-              <figure class="gallery-card reveal" data-character="ash" data-location="unspecified" data-chibi="false">
+              <figure class="gallery-card reveal" data-art-finish="colored" data-character="ash" data-location="unspecified" data-chibi="false">
                 <a href="media/gallery/images/characters/char-ash-1.png" target="_blank" rel="noopener" aria-label="View Ash character study 01 full size"><img data-preview="media/gallery/previews/characters/char-ash-1.webp" srcset="media/gallery/previews/characters/char-ash-1.webp 1x" src="media/gallery/images/characters/char-ash-1.png" width="935" height="935" alt="Ash character study 01" loading="eager"></a>
                 <figcaption><div><strong>Ash - study 01</strong><span>Character art</span></div><span class="media-code">ASH · 01</span></figcaption>
               </figure>
-              <figure class="gallery-card reveal" data-character="ash" data-location="unspecified" data-chibi="true">
+              <figure class="gallery-card reveal" data-art-finish="colored" data-character="ash" data-location="unspecified" data-chibi="true">
                 <a href="media/gallery/images/chibis/chibi_ash_1.png" target="_blank" rel="noopener" aria-label="View Ash chibi 01 full size"><img data-preview="media/gallery/previews/chibis/chibi_ash_1.webp" srcset="media/gallery/previews/chibis/chibi_ash_1.webp 1x" src="media/gallery/images/chibis/chibi_ash_1.png" width="1254" height="1254" alt="Ash chibi 01" loading="eager"></a>
                 <figcaption><div><strong>Ash - chibi 01</strong><span>Chibi</span></div><span class="media-code">ASH · C01</span></figcaption>
               </figure>
-              <figure class="gallery-card reveal" data-character="drake" data-location="unspecified" data-chibi="false">
+              <figure class="gallery-card reveal" data-art-finish="colored" data-character="drake" data-location="unspecified" data-chibi="false">
                 <a href="media/gallery/images/characters/char-drake-1.png" target="_blank" rel="noopener" aria-label="View Drake character study 01 full size"><img data-preview="media/gallery/previews/characters/char-drake-1.webp" srcset="media/gallery/previews/characters/char-drake-1.webp 1x" src="media/gallery/images/characters/char-drake-1.png" width="1254" height="1254" alt="Drake character study 01" loading="eager"></a>
                 <figcaption><div><strong>Drake - study 01</strong><span>Character art</span></div><span class="media-code">DRA · 01</span></figcaption>
               </figure>
-              <figure class="gallery-card reveal" data-character="sherie" data-location="unspecified" data-chibi="false" data-image-version-group="sherie-study-01" data-image-version="v1" data-image-version-label="Original heels" hidden>
+              <figure class="gallery-card reveal" data-art-finish="colored" data-character="sherie" data-location="unspecified" data-chibi="false" data-image-version-group="sherie-study-01" data-image-version="v1" data-image-version-label="Original heels" hidden>
                 <a href="media/gallery/images/characters/char-sherie-1.png" target="_blank" rel="noopener" aria-label="View Sherie character study 01 full size"><img data-preview="media/gallery/previews/characters/char-sherie-1.webp" srcset="media/gallery/previews/characters/char-sherie-1.webp 1x" src="media/gallery/images/characters/char-sherie-1.png" width="1254" height="1254" alt="Sherie character study 01" loading="eager"></a>
                 <figcaption><div><strong>Sherie - study 01</strong><span>Character art · v1 · Original heels</span></div><span class="media-code">SHE · 01</span></figcaption>
               </figure>
-              <figure class="gallery-card reveal" data-character="sherie" data-location="unspecified" data-chibi="false" data-image-version-group="sherie-study-01" data-image-version="v2" data-image-version-label="Ankle boots" data-image-version-default="true">
+              <figure class="gallery-card reveal" data-art-finish="colored" data-character="sherie" data-location="unspecified" data-chibi="false" data-image-version-group="sherie-study-01" data-image-version="v2" data-image-version-label="Ankle boots" data-image-version-default="true">
                 <a href="gallery.html?image=char-sherie-1-v2-ankle-boots" aria-label="View Sherie study 01 with ankle boots"><img data-preview="media/gallery/previews/characters/char-sherie-1-v2-ankle-boots.webp" srcset="media/gallery/previews/characters/char-sherie-1-v2-ankle-boots.webp 1x" src="media/gallery/images/characters/char-sherie-1-v2-ankle-boots.png" width="1254" height="1254" alt="Sherie holding a phone, wearing a dark blazer, pleated skirt, tights and buttoned heeled ankle boots." loading="lazy"></a>
                 <figcaption><div><strong>Sherie - study 01</strong><span>Character art · v2 · Ankle boots</span></div><span class="media-code">SHE · 01</span></figcaption>
               </figure>
-              <figure class="gallery-card reveal" data-character="sherie" data-location="unspecified" data-chibi="false">
+              <figure class="gallery-card reveal" data-art-finish="colored" data-character="sherie" data-location="unspecified" data-chibi="false">
                 <a href="gallery.html?image=char-sherie-red-sofa" aria-label="View Sherie seated on a red sofa"><img data-preview="media/gallery/previews/characters/char-sherie-red-sofa.webp" srcset="media/gallery/previews/characters/char-sherie-red-sofa.webp 1x" src="media/gallery/images/characters/char-sherie-red-sofa.png" width="1024" height="1536" alt="Sherie seated on a red tufted sofa, looking up toward the camera, wearing her dark blazer, pleated skirt, tights and ankle boots." loading="lazy"></a>
                 <figcaption><div><strong>Sherie - red sofa</strong><span>Character art</span></div><span class="media-code">SHE · 02</span></figcaption>
               </figure>
-              <figure class="gallery-card reveal" data-character="sherie" data-location="unspecified" data-chibi="false">
+              <figure class="gallery-card reveal" data-art-finish="pencil" data-character="sherie" data-location="unspecified" data-chibi="false">
                 <a href="gallery.html?image=char-sherie-sofa-rough-sketch" aria-label="View Sherie sofa sketch"><img data-preview="media/gallery/previews/characters/char-sherie-sofa-rough-sketch.webp" srcset="media/gallery/previews/characters/char-sherie-sofa-rough-sketch.webp 1x" src="media/gallery/images/characters/char-sherie-sofa-rough-sketch.png" width="1024" height="1536" alt="Rough pen sketch of Sherie seated on a tufted sofa, looking up with her hands resting on the cushion." loading="lazy"></a>
                 <figcaption><div><strong>Sherie - sofa sketch</strong><span>Character art · Rough pen sketch</span></div><span class="media-code">SHE · Sketch</span></figcaption>
               </figure>
-              <figure class="gallery-card reveal" data-character="sherie drake" data-location="unspecified" data-chibi="false">
+              <figure class="gallery-card reveal" data-art-finish="colored" data-character="sherie drake" data-location="unspecified" data-chibi="false">
                 <a href="media/gallery/images/characters/char-sherie_drake-1.png" target="_blank" rel="noopener" aria-label="View Sherie and Drake night scene 01 full size"><img data-preview="media/gallery/previews/characters/char-sherie_drake-1.webp" srcset="media/gallery/previews/characters/char-sherie_drake-1.webp 1x" src="media/gallery/images/characters/char-sherie_drake-1.png" width="1854" height="1057" alt="Sherie and Drake night scene 01" loading="eager"></a>
                 <figcaption><div><strong>Sherie and Drake - night scene 01</strong><span>Character art</span></div><span class="media-code">SHE + DRA · 01</span></figcaption>
               </figure>
-              <figure class="gallery-card reveal" data-character="sherie" data-location="unspecified" data-chibi="true">
+              <figure class="gallery-card reveal" data-art-finish="colored" data-character="sherie" data-location="unspecified" data-chibi="true">
                 <a href="media/gallery/images/chibis/chibi_sherie_1.png" target="_blank" rel="noopener" aria-label="View Sherie chibi 01 full size"><img data-preview="media/gallery/previews/chibis/chibi_sherie_1.webp" srcset="media/gallery/previews/chibis/chibi_sherie_1.webp 1x" src="media/gallery/images/chibis/chibi_sherie_1.png" width="1254" height="1254" alt="Sherie chibi 01" loading="eager"></a>
                 <figcaption><div><strong>Sherie - chibi 01</strong><span>Chibi</span></div><span class="media-code">SHE · C01</span></figcaption>
               </figure>
-              <figure class="gallery-card reveal" data-character="lynleit" data-location="unspecified" data-chibi="true">
+              <figure class="gallery-card reveal" data-art-finish="colored" data-character="lynleit" data-location="unspecified" data-chibi="true">
                 <a href="media/gallery/images/chibis/chibi_lynleit_1.png" target="_blank" rel="noopener" aria-label="View Lynleit chibi 01 full size"><img data-preview="media/gallery/previews/chibis/chibi_lynleit_1.webp" srcset="media/gallery/previews/chibis/chibi_lynleit_1.webp 1x" src="media/gallery/images/chibis/chibi_lynleit_1.png" width="1024" height="1024" alt="Lynleit chibi 01" loading="eager"></a>
                 <figcaption><div><strong>Lynleit - chibi 01</strong><span>Chibi</span></div><span class="media-code">LYN · C01</span></figcaption>
               </figure>
-              <figure class="gallery-card reveal" data-character="lynleit" data-location="unspecified" data-chibi="false">
+              <figure class="gallery-card reveal" data-art-finish="colored" data-character="lynleit" data-location="unspecified" data-chibi="false">
                 <a href="media/gallery/images/characters/char-lynleit-1.png" target="_blank" rel="noopener" aria-label="View Lynleit key art 02 full size"><img data-preview="media/gallery/previews/characters/char-lynleit-1.webp" srcset="media/gallery/previews/characters/char-lynleit-1.webp 1x" src="media/gallery/images/characters/char-lynleit-1.png" width="1920" height="1057" alt="Lynleit key art 02" loading="lazy"></a>
                 <figcaption><div><strong>Lynleit - key art 02</strong><span>Character art</span></div><span class="media-code">LYN · 02</span></figcaption>
               </figure>
-              <figure class="gallery-card reveal" data-image="char-lynleit-2" data-character="lynleit" data-location="unspecified" data-chibi="false" data-story-arc="Arc-0">
+              <figure class="gallery-card reveal" data-image="char-lynleit-2" data-art-finish="colored" data-character="lynleit" data-location="unspecified" data-chibi="false" data-story-arc="Arc-0">
                 <a href="media/gallery/images/characters/char-lynleit-arc0-1.png" target="_blank" rel="noopener" aria-label="View Lynleit Arc 0 key art 01 full size"><img data-preview="media/gallery/previews/characters/char-lynleit-arc0-1.webp" srcset="media/gallery/previews/characters/char-lynleit-arc0-1.webp 1x" src="media/gallery/images/characters/char-lynleit-arc0-1.png" width="1550" height="1057" alt="Lynleit Arc 0 key art 01" loading="lazy"></a>
                 <figcaption><div><strong>Lynleit - Arc 0 key art 01</strong><span>Character art · Arc 0</span></div><span class="media-code">LYN · A0-01</span></figcaption>
               </figure>
-              <figure class="gallery-card reveal" data-character="lynleit" data-location="unspecified" data-chibi="false" data-story-arc="Arc-2">
+              <figure class="gallery-card reveal" data-art-finish="colored" data-character="lynleit" data-location="unspecified" data-chibi="false" data-story-arc="Arc-2">
                 <a href="media/gallery/images/characters/char-lynleit-arc2-1.png" target="_blank" rel="noopener" aria-label="View Lynleit Arc 2 key art 01 full size"><img data-preview="media/gallery/previews/characters/char-lynleit-arc2-1.webp" srcset="media/gallery/previews/characters/char-lynleit-arc2-1.webp 1x" src="media/gallery/images/characters/char-lynleit-arc2-1.png" width="1088" height="1920" alt="Lynleit in her elusive Arc 2 appearance" loading="lazy"></a>
                 <figcaption><div><strong>Lynleit - Arc 2 key art 01</strong><span>Character art · Arc 2</span></div><span class="media-code">LYN · A2-01</span></figcaption>
               </figure>
-              <figure class="gallery-card reveal" data-character="drake" data-location="unspecified" data-chibi="true">
+              <figure class="gallery-card reveal" data-art-finish="colored" data-character="drake" data-location="unspecified" data-chibi="true">
                 <a href="media/gallery/images/chibis/chibi_drake_1.png" target="_blank" rel="noopener" aria-label="View Drake chibi 01 full size"><img data-preview="media/gallery/previews/chibis/chibi_drake_1.webp" srcset="media/gallery/previews/chibis/chibi_drake_1.webp 1x" src="media/gallery/images/chibis/chibi_drake_1.png" width="1024" height="1024" alt="Drake chibi 01" loading="lazy"></a>
                 <figcaption><div><strong>Drake - chibi 01</strong><span>Chibi</span></div><span class="media-code">DRA · C01</span></figcaption>
               </figure>
-              <figure class="gallery-card reveal" data-character="felix" data-location="unspecified" data-chibi="true">
+              <figure class="gallery-card reveal" data-art-finish="colored" data-character="felix" data-location="unspecified" data-chibi="true">
                 <a href="media/gallery/images/chibis/chibi_felix_1.png" target="_blank" rel="noopener" aria-label="View Felix chibi 01 full size"><img data-preview="media/gallery/previews/chibis/chibi_felix_1.webp" srcset="media/gallery/previews/chibis/chibi_felix_1.webp 1x" src="media/gallery/images/chibis/chibi_felix_1.png" width="1024" height="1024" alt="Felix chibi 01" loading="lazy"></a>
                 <figcaption><div><strong>Felix - chibi 01</strong><span>Chibi</span></div><span class="media-code">FEL · C01</span></figcaption>
               </figure>
-              <figure class="gallery-card reveal" data-character="felix" data-location="unspecified" data-chibi="false">
+              <figure class="gallery-card reveal" data-art-finish="colored" data-character="felix" data-location="unspecified" data-chibi="false">
                 <a href="media/gallery/images/characters/char-felix-1.png" target="_blank" rel="noopener" aria-label="View Felix character study 01 full size"><img data-preview="media/gallery/previews/characters/char-felix-1.webp" srcset="media/gallery/previews/characters/char-felix-1.webp 1x" src="media/gallery/images/characters/char-felix-1.png" width="1024" height="1024" alt="Felix character study 01" loading="lazy"></a>
                 <figcaption><div><strong>Felix - study 01</strong><span>Character art</span></div><span class="media-code">FEL · 01</span></figcaption>
               </figure>
-              <figure class="gallery-card reveal" data-character="felix" data-location="unspecified" data-chibi="true">
+              <figure class="gallery-card reveal" data-art-finish="colored" data-character="felix" data-location="unspecified" data-chibi="true">
                 <a href="media/gallery/images/chibis/chibi_felix_2.png" target="_blank" rel="noopener" aria-label="View Felix chibi 02 full size"><img data-preview="media/gallery/previews/chibis/chibi_felix_2.webp" srcset="media/gallery/previews/chibis/chibi_felix_2.webp 1x" src="media/gallery/images/chibis/chibi_felix_2.png" width="1024" height="1024" alt="Felix chibi 02" loading="lazy"></a>
                 <figcaption><div><strong>Felix - chibi 02</strong><span>Chibi</span></div><span class="media-code">FEL · C02</span></figcaption>
               </figure>
-              <figure class="gallery-card reveal" data-character="fionn" data-location="unspecified" data-chibi="true">
+              <figure class="gallery-card reveal" data-art-finish="colored" data-character="fionn" data-location="unspecified" data-chibi="true">
                 <a href="media/gallery/images/chibis/chibi_fionn_1.png" target="_blank" rel="noopener" aria-label="View Fionn chibi 01 full size"><img data-preview="media/gallery/previews/chibis/chibi_fionn_1.webp" srcset="media/gallery/previews/chibis/chibi_fionn_1.webp 1x" src="media/gallery/images/chibis/chibi_fionn_1.png" width="1024" height="1024" alt="Fionn chibi 01" loading="lazy"></a>
                 <figcaption><div><strong>Fionn - chibi 01</strong><span>Chibi</span></div><span class="media-code">FIO · C01</span></figcaption>
               </figure>
-              <figure class="gallery-card reveal" data-character="helena" data-location="unspecified" data-chibi="true">
+              <figure class="gallery-card reveal" data-art-finish="colored" data-character="helena" data-location="unspecified" data-chibi="true">
                 <a href="media/gallery/images/chibis/chibi_helena_1.png" target="_blank" rel="noopener" aria-label="View Helena chibi 01 full size"><img data-preview="media/gallery/previews/chibis/chibi_helena_1.webp" srcset="media/gallery/previews/chibis/chibi_helena_1.webp 1x" src="media/gallery/images/chibis/chibi_helena_1.png" width="1024" height="1024" alt="Helena chibi 01" loading="lazy"></a>
                 <figcaption><div><strong>Helena - chibi 01</strong><span>Chibi</span></div><span class="media-code">HEL · C01</span></figcaption>
               </figure>
-              <figure class="gallery-card reveal" data-character="heyk" data-location="unspecified" data-chibi="true">
+              <figure class="gallery-card reveal" data-art-finish="colored" data-character="heyk" data-location="unspecified" data-chibi="true">
                 <a href="media/gallery/images/chibis/chibi_heyk_1.png" target="_blank" rel="noopener" aria-label="View Heyk chibi 01 full size"><img data-preview="media/gallery/previews/chibis/chibi_heyk_1.webp" srcset="media/gallery/previews/chibis/chibi_heyk_1.webp 1x" src="media/gallery/images/chibis/chibi_heyk_1.png" width="1024" height="1024" alt="Heyk chibi 01" loading="lazy"></a>
                 <figcaption><div><strong>Heyk - chibi 01</strong><span>Chibi</span></div><span class="media-code">HEY · C01</span></figcaption>
               </figure>
-              <figure class="gallery-card reveal" data-character="hiyu" data-location="unspecified" data-chibi="true">
+              <figure class="gallery-card reveal" data-art-finish="colored" data-character="hiyu" data-location="unspecified" data-chibi="true">
                 <a href="media/gallery/images/chibis/chibi_hiyu_1.png" target="_blank" rel="noopener" aria-label="View Hiyu chibi 01 full size"><img data-preview="media/gallery/previews/chibis/chibi_hiyu_1.webp" srcset="media/gallery/previews/chibis/chibi_hiyu_1.webp 1x" src="media/gallery/images/chibis/chibi_hiyu_1.png" width="1024" height="1024" alt="Hiyu chibi 01" loading="lazy"></a>
                 <figcaption><div><strong>Hiyu - chibi 01</strong><span>Chibi</span></div><span class="media-code">HIY · C01</span></figcaption>
               </figure>
-              <figure class="gallery-card reveal" data-character="lynleit" data-location="unspecified" data-chibi="true">
+              <figure class="gallery-card reveal" data-art-finish="colored" data-character="lynleit" data-location="unspecified" data-chibi="true">
                 <a href="media/gallery/images/chibis/chibi_lynleit_2.png" target="_blank" rel="noopener" aria-label="View Lynleit chibi 02 full size"><img data-preview="media/gallery/previews/chibis/chibi_lynleit_2.webp" srcset="media/gallery/previews/chibis/chibi_lynleit_2.webp 1x" src="media/gallery/images/chibis/chibi_lynleit_2.png" width="1024" height="1024" alt="Lynleit chibi 02" loading="lazy"></a>
                 <figcaption><div><strong>Lynleit - chibi 02</strong><span>Chibi</span></div><span class="media-code">LYN · C02</span></figcaption>
               </figure>
-              <figure class="gallery-card reveal" data-character="lynleit" data-location="unspecified" data-chibi="true">
+              <figure class="gallery-card reveal" data-art-finish="colored" data-character="lynleit" data-location="unspecified" data-chibi="true">
                 <a href="media/gallery/images/chibis/chibi_lynleit_3.png" target="_blank" rel="noopener" aria-label="View Lynleit chibi 03 full size"><img data-preview="media/gallery/previews/chibis/chibi_lynleit_3.webp" srcset="media/gallery/previews/chibis/chibi_lynleit_3.webp 1x" src="media/gallery/images/chibis/chibi_lynleit_3.png" width="1024" height="1024" alt="Lynleit chibi 03" loading="lazy"></a>
                 <figcaption><div><strong>Lynleit - chibi 03</strong><span>Chibi</span></div><span class="media-code">LYN · C03</span></figcaption>
               </figure>
-              <figure class="gallery-card reveal" data-character="lynleit" data-location="unspecified" data-chibi="true">
+              <figure class="gallery-card reveal" data-art-finish="colored" data-character="lynleit" data-location="unspecified" data-chibi="true">
                 <a href="media/gallery/images/chibis/chibi_lynleit_4.png" target="_blank" rel="noopener" aria-label="View Lynleit chibi 04 full size"><img data-preview="media/gallery/previews/chibis/chibi_lynleit_4.webp" srcset="media/gallery/previews/chibis/chibi_lynleit_4.webp 1x" src="media/gallery/images/chibis/chibi_lynleit_4.png" width="1024" height="1024" alt="Lynleit chibi 04" loading="lazy"></a>
                 <figcaption><div><strong>Lynleit - chibi 04</strong><span>Chibi</span></div><span class="media-code">LYN · C04</span></figcaption>
               </figure>
-              <figure class="gallery-card reveal" data-character="lynleit" data-location="unspecified" data-chibi="true" data-story-arc="Arc-2">
+              <figure class="gallery-card reveal" data-art-finish="colored" data-character="lynleit" data-location="unspecified" data-chibi="true" data-story-arc="Arc-2">
                 <a href="media/gallery/images/chibis/chibi_lynleit_arc2_1.png" target="_blank" rel="noopener" aria-label="View Lynleit Arc 2 chibi 01 full size"><img data-preview="media/gallery/previews/chibis/chibi_lynleit_arc2_1.webp" srcset="media/gallery/previews/chibis/chibi_lynleit_arc2_1.webp 1x" src="media/gallery/images/chibis/chibi_lynleit_arc2_1.png" width="1024" height="1024" alt="Lynleit Arc 2 chibi 01" loading="lazy"></a>
                 <figcaption><div><strong>Lynleit - Arc 2 chibi 01</strong><span>Chibi · Arc 2</span></div><span class="media-code">LYN · A2-C01</span></figcaption>
               </figure>
-              <figure class="gallery-card reveal" data-character="lynleit" data-location="unspecified" data-chibi="true" data-story-arc="Arc-2">
+              <figure class="gallery-card reveal" data-art-finish="colored" data-character="lynleit" data-location="unspecified" data-chibi="true" data-story-arc="Arc-2">
                 <a href="media/gallery/images/chibis/chibi_lynleit_arc2_2.png" target="_blank" rel="noopener" aria-label="View Lynleit Arc 2 chibi 02 full size"><img data-preview="media/gallery/previews/chibis/chibi_lynleit_arc2_2.webp" srcset="media/gallery/previews/chibis/chibi_lynleit_arc2_2.webp 1x" src="media/gallery/images/chibis/chibi_lynleit_arc2_2.png" width="705" height="705" alt="Lynleit Arc 2 chibi 02" loading="lazy"></a>
                 <figcaption><div><strong>Lynleit - Arc 2 chibi 02</strong><span>Chibi · Arc 2</span></div><span class="media-code">LYN · A2-C02</span></figcaption>
               </figure>
-              <figure class="gallery-card reveal" data-character="myka" data-location="unspecified" data-chibi="true">
+              <figure class="gallery-card reveal" data-art-finish="colored" data-character="myka" data-location="unspecified" data-chibi="true">
                 <a href="media/gallery/images/chibis/chibi_myka_1.png" target="_blank" rel="noopener" aria-label="View Myka chibi 01 full size"><img data-preview="media/gallery/previews/chibis/chibi_myka_1.webp" srcset="media/gallery/previews/chibis/chibi_myka_1.webp 1x" src="media/gallery/images/chibis/chibi_myka_1.png" width="1024" height="1024" alt="Myka chibi 01" loading="lazy"></a>
                 <figcaption><div><strong>Myka - chibi 01</strong><span>Chibi</span></div><span class="media-code">MYK · C01</span></figcaption>
               </figure>
-              <figure class="gallery-card reveal" data-character="myka" data-location="unspecified" data-chibi="true">
+              <figure class="gallery-card reveal" data-art-finish="colored" data-character="myka" data-location="unspecified" data-chibi="true">
                 <a href="media/gallery/images/chibis/chibi_myka_2.png" target="_blank" rel="noopener" aria-label="View Myka chibi 02 full size"><img data-preview="media/gallery/previews/chibis/chibi_myka_2.webp" srcset="media/gallery/previews/chibis/chibi_myka_2.webp 1x" src="media/gallery/images/chibis/chibi_myka_2.png" width="1024" height="1024" alt="Myka chibi 02" loading="lazy"></a>
                 <figcaption><div><strong>Myka - chibi 02</strong><span>Chibi</span></div><span class="media-code">MYK · C02</span></figcaption>
               </figure>
-              <figure class="gallery-card reveal" data-character="natalia" data-location="unspecified" data-chibi="true">
+              <figure class="gallery-card reveal" data-art-finish="colored" data-character="natalia" data-location="unspecified" data-chibi="true">
                 <a href="media/gallery/images/chibis/chibi_natalia_1.png" target="_blank" rel="noopener" aria-label="View Natalia chibi 01 full size"><img data-preview="media/gallery/previews/chibis/chibi_natalia_1.webp" srcset="media/gallery/previews/chibis/chibi_natalia_1.webp 1x" src="media/gallery/images/chibis/chibi_natalia_1.png" width="1024" height="1024" alt="Natalia chibi 01" loading="lazy"></a>
                 <figcaption><div><strong>Natalia - chibi 01</strong><span>Chibi</span></div><span class="media-code">NAT · C01</span></figcaption>
               </figure>
-              <figure class="gallery-card reveal" data-character="natalia" data-location="unspecified" data-chibi="true">
+              <figure class="gallery-card reveal" data-art-finish="colored" data-character="natalia" data-location="unspecified" data-chibi="true">
                 <a href="media/gallery/images/chibis/chibi_natalia_2.png" target="_blank" rel="noopener" aria-label="View Natalia chibi 02 full size"><img data-preview="media/gallery/previews/chibis/chibi_natalia_2.webp" srcset="media/gallery/previews/chibis/chibi_natalia_2.webp 1x" src="media/gallery/images/chibis/chibi_natalia_2.png" width="1024" height="1024" alt="Natalia chibi 02" loading="lazy"></a>
                 <figcaption><div><strong>Natalia - chibi 02</strong><span>Chibi</span></div><span class="media-code">NAT · C02</span></figcaption>
               </figure>
-              <figure class="gallery-card reveal" data-character="reiner" data-location="unspecified" data-chibi="true">
+              <figure class="gallery-card reveal" data-art-finish="colored" data-character="reiner" data-location="unspecified" data-chibi="true">
                 <a href="media/gallery/images/chibis/chibi_reiner_1.png" target="_blank" rel="noopener" aria-label="View Reiner chibi 01 full size"><img data-preview="media/gallery/previews/chibis/chibi_reiner_1.webp" srcset="media/gallery/previews/chibis/chibi_reiner_1.webp 1x" src="media/gallery/images/chibis/chibi_reiner_1.png" width="1024" height="1024" alt="Reiner chibi 01" loading="lazy"></a>
                 <figcaption><div><strong>Reiner - chibi 01</strong><span>Chibi</span></div><span class="media-code">REI · C01</span></figcaption>
               </figure>
-              <figure class="gallery-card reveal" data-character="tien" data-location="unspecified" data-chibi="true">
+              <figure class="gallery-card reveal" data-art-finish="colored" data-character="tien" data-location="unspecified" data-chibi="true">
                 <a href="media/gallery/images/chibis/chibi_tien_1.png" target="_blank" rel="noopener" aria-label="View Tien chibi 01 full size"><img data-preview="media/gallery/previews/chibis/chibi_tien_1.webp" srcset="media/gallery/previews/chibis/chibi_tien_1.webp 1x" src="media/gallery/images/chibis/chibi_tien_1.png" width="1024" height="1024" alt="Tien chibi 01" loading="lazy"></a>
                 <figcaption><div><strong>Tien - chibi 01</strong><span>Chibi</span></div><span class="media-code">TIE · C01</span></figcaption>
               </figure>
-              <figure class="gallery-card reveal" data-character="yulia" data-location="unspecified" data-chibi="true">
+              <figure class="gallery-card reveal" data-art-finish="colored" data-character="yulia" data-location="unspecified" data-chibi="true">
                 <a href="media/gallery/images/chibis/chibi_yulia_1.png" target="_blank" rel="noopener" aria-label="View Yulia chibi 01 full size"><img data-preview="media/gallery/previews/chibis/chibi_yulia_1.webp" srcset="media/gallery/previews/chibis/chibi_yulia_1.webp 1x" src="media/gallery/images/chibis/chibi_yulia_1.png" width="1024" height="1024" alt="Yulia chibi 01" loading="lazy"></a>
                 <figcaption><div><strong>Yulia - chibi 01</strong><span>Chibi</span></div><span class="media-code">YUL · C01</span></figcaption>
               </figure>
-              <figure class="gallery-card reveal" data-image="author-hand-drawn-sketch-circa-2021" data-sibling-group="earliest-cast-sketch" data-character="" data-location="unspecified" data-chibi="false" data-profile-portrait="false" data-non-canon="true" data-historical="true" data-no-entity-links>
+              <figure class="gallery-card reveal" data-image="author-hand-drawn-sketch-circa-2021" data-sibling-group="earliest-cast-sketch" data-art-finish="pencil" data-character="" data-location="unspecified" data-chibi="false" data-profile-portrait="false" data-non-canon="true" data-historical="true" data-no-entity-links>
                 <a href="gallery.html?image=author-hand-drawn-sketch-circa-2021" aria-label="View earliest cast sketch, part 1"><img data-preview="media/gallery/previews/history/earliest-cast-sketch-part-1.webp" srcset="media/gallery/previews/history/earliest-cast-sketch-part-1.webp 1x" src="media/gallery/images/history/earliest-cast-sketch-part-1.png" width="2000" height="921" alt="Part 1 of Kiril Bekulov's earliest cast sketch, 2021 or earlier: a bearded man putting on a glove and a woman with a bird perched on her hand. Unrelated to current characters." loading="lazy"></a>
                 <figcaption><div><strong>Earliest cast sketch - Part 1</strong><span>This piece of project history has no connection to the current characters, their designs, or story canon. By Kiril Bekulov, 2021 or earlier. First of two portions.</span></div><span class="media-code">HISTORY · 2021 OR EARLIER</span></figcaption>
               </figure>
-              <figure class="gallery-card reveal" data-sibling-group="earliest-cast-sketch" data-character="" data-location="unspecified" data-chibi="false" data-profile-portrait="false" data-non-canon="true" data-historical="true" data-no-entity-links>
+              <figure class="gallery-card reveal" data-sibling-group="earliest-cast-sketch" data-art-finish="pencil" data-character="" data-location="unspecified" data-chibi="false" data-profile-portrait="false" data-non-canon="true" data-historical="true" data-no-entity-links>
                 <a href="gallery.html?image=earliest-cast-sketch-part-2" aria-label="View earliest cast sketch, part 2"><img data-preview="media/gallery/previews/history/earliest-cast-sketch-part-2.webp" srcset="media/gallery/previews/history/earliest-cast-sketch-part-2.webp 1x" src="media/gallery/images/history/earliest-cast-sketch-part-2.png" width="3606" height="1878" alt="Part 2 of Kiril Bekulov's earliest cast sketch, 2021 or earlier: a man with a rifle, a woman holding an envelope, and a man holding an umbrella. Unrelated to current characters." loading="lazy"></a>
                 <figcaption><div><strong>Earliest cast sketch - Part 2</strong><span>This piece of project history has no connection to the current characters, their designs, or story canon. By Kiril Bekulov, 2021 or earlier. Second of two portions.</span></div><span class="media-code">HISTORY · 2021 OR EARLIER</span></figcaption>
               </figure>

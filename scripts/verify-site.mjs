@@ -11,6 +11,9 @@ const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const read = file => fs.readFileSync(path.join(root, file), 'utf8');
 const json = file => JSON.parse(read(file));
 const htmlFiles = fs.readdirSync(root).filter(file => file.endsWith('.html'));
+for (const card of read('gallery.html').matchAll(/<figure class="gallery-card[^>]*>/g)) {
+  assert.ok(/data-art-finish="(?:pencil|colored)"/.test(card[0]), 'Gallery artwork needs explicit pencil or colored finish metadata');
+}
 const dynamicAnchors = new Set(['docs.html', 'story.html', 'moments.html', 'character.html', 'weapons.html', 'items.html', 'gallery.html']);
 const decode = text => text.replaceAll('&amp;', '&');
 for (const file of fs.readdirSync(root).filter(file => file.endsWith('.js'))) execFileSync(process.execPath, ['--check', path.join(root, file)]);

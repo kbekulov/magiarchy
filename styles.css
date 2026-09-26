@@ -4072,6 +4072,7 @@ a.status-member:hover {
 
 .gallery-toolbar {
   display: flex;
+  flex-wrap: wrap;
   align-items: flex-end;
   gap: 10px;
   margin: 0 30px;
@@ -4113,17 +4114,25 @@ a.status-member:hover {
   border-color: var(--accent-bright);
 }
 
+.gallery-toggle-options {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+  margin-left: auto;
+  align-self: center;
+}
+
+.gallery-toggle-pair {
+  display: flex;
+  flex-direction: column;
+}
+
 .chibi-toggle {
   display: flex;
   min-height: 36px;
   align-items: center;
   gap: 9px;
-  margin-left: auto;
   cursor: pointer;
-}
-
-.chibi-toggle + .chibi-toggle {
-  margin-left: 14px;
 }
 
 .chibi-toggle input {
@@ -9922,13 +9931,14 @@ a.moment-connection-card:hover {
     width: 100%;
   }
 
-  .chibi-toggle {
+  .gallery-toggle-options {
     grid-column: 1 / -1;
+    gap: 10px;
     margin-left: 0;
   }
 
-  .chibi-toggle + .chibi-toggle {
-    margin-left: 0;
+  .chibi-toggle {
+    min-height: 44px;
   }
 
   .gallery-content {
