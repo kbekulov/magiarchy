@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-26",
+  "updated": "2026-09-23",
   "sections": [
     {
       "id": "river-operation",
@@ -40,10 +40,6 @@
     {
       "id": "church-interlude",
       "title": "Only Eyes for You"
-    },
-    {
-      "id": "unresolved-tension",
-      "title": "Unresolved Tension"
     }
   ],
   "notes": [
@@ -1638,69 +1634,6 @@
       },
       "momentProseMatch": {
         "only-eyes-for-you": "\"May I have that back?\""
-      },
-      "versions": [
-        "v1"
-      ]
-    },
-    {
-      "id": "card-game-sherie-comfort",
-      "section": "unresolved-tension",
-      "kind": "female",
-      "title": "Comfort becomes chosen teasing",
-      "basis": "Sherie: author-supplied aristocratic ease, social play, and emotional attention; confirmed ENFJ with strong Fe",
-      "text": "Do not make her first posture a prearranged seduction. The change comes when she notices Felix's distraction and chooses to stay comfortable. Her pleasure in being noticed can surprise her without making her unaware of every impression she creates. This is Sherie's learned ease, not a rule about women or aristocratic upbringing.",
-      "chapters": [],
-      "moments": [
-        "unresolved-tension"
-      ],
-      "momentFact": {
-        "unresolved-tension": 5
-      },
-      "momentProseMatch": {
-        "unresolved-tension": "She shifted a little deeper into the cushion and left her legs where they were."
-      },
-      "versions": [
-        "v1"
-      ]
-    },
-    {
-      "id": "card-game-felix-distraction",
-      "section": "unresolved-tension",
-      "kind": "male",
-      "title": "Still explaining Lynleit",
-      "basis": "Felix: expressive improvisation and enduring attachment to Lynleit; suspected ENFP, Ne-led reading",
-      "text": "Let the half-second interruption matter because he is usually fluent. His eyes return to Sherie while his account remains organized around Lynleit. A brief lapse in a private game does not diminish his field competence or prove that his earlier attachment has ended.",
-      "chapters": [],
-      "moments": [
-        "unresolved-tension"
-      ],
-      "momentFact": {
-        "unresolved-tension": 2
-      },
-      "momentProseMatch": {
-        "unresolved-tension": "Sherie glanced up. Felix resumed, but she had lost a few words. His eyes dropped toward her legs and came back to her face."
-      },
-      "versions": [
-        "v1"
-      ]
-    },
-    {
-      "id": "card-game-unanswered-question",
-      "section": "unresolved-tension",
-      "kind": "story",
-      "title": "Leave the question unanswered",
-      "basis": "Author-supplied card-game dialogue and final exchange; early Sherie/Felix direction",
-      "text": "Keep 'Why do you keep looking at me like that?' and 'Like what?' without an explanatory confession. His inability to answer and her small smile are enough. The literal card game can stall without a narrator explaining a second game, and her diagnosis of Felix and Lynleit need not be correct about both people.",
-      "chapters": [],
-      "moments": [
-        "unresolved-tension"
-      ],
-      "momentFact": {
-        "unresolved-tension": 7
-      },
-      "momentProseMatch": {
-        "unresolved-tension": "Felix opened his mouth, looked at her, and shut it again."
       },
       "versions": [
         "v1"

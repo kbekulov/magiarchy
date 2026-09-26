@@ -610,5 +610,59 @@
         "thumbnail": "media/gallery/previews/panels/sleepers-above-the-river-r1-panel-7-thumbnail.webp"
       }
     ]
+  },
+  {
+    "id": "sherie-felix-banter",
+    "revision": "r1",
+    "title": "Unresolved Tension",
+    "summary": "Across a hand of cards, Felix complains about Lynleit and Sherie replies from the red sofa. Two opposing viewpoints of the same exchange.",
+    "medium": "Colored sketches",
+    "characters": [
+      "sherie",
+      "felix"
+    ],
+    "moment": {
+      "slug": "unresolved-tension",
+      "version": "v1"
+    },
+    "cover": "panel-1",
+    "beats": [
+      {
+        "id": "complaint",
+        "title": "She's always like this"
+      },
+      {
+        "id": "reply",
+        "title": "Unresolved tension"
+      }
+    ],
+    "panels": [
+      {
+        "id": "panel-1",
+        "beat": "complaint",
+        "label": "Panel 1",
+        "title": "Sherie's view of Felix",
+        "src": "media/gallery/panels/sherie-felix-banter/sherie-felix-banter-panel-1-colored-sketch-r1.png",
+        "alt": "From Sherie's viewpoint, her hand and black ruffled cuff hold cards in the foreground. Felix stands across the sitting room with cards, a loose blue tie and an open-handed gesture, saying, \"She's always like this!\"",
+        "width": 1536,
+        "height": 1024,
+        "bytes": 2844821,
+        "display": "media/gallery/previews/panels/sherie-felix-banter-r1-panel-1-display.webp",
+        "thumbnail": "media/gallery/previews/panels/sherie-felix-banter-r1-panel-1-thumbnail.webp"
+      },
+      {
+        "id": "panel-2",
+        "beat": "reply",
+        "label": "Panel 2",
+        "title": "Felix's view of Sherie",
+        "src": "media/gallery/panels/sherie-felix-banter/sherie-felix-banter-panel-2-colored-sketch-r1.png",
+        "alt": "The reverse view shows Sherie reclining across a red sofa, legs stretched over the cushions, cards held loosely in one hand and the other at her face. She says, \"Looks like you two have unresolved tension.\"",
+        "width": 1536,
+        "height": 1024,
+        "bytes": 2720278,
+        "display": "media/gallery/previews/panels/sherie-felix-banter-r1-panel-2-display.webp",
+        "thumbnail": "media/gallery/previews/panels/sherie-felix-banter-r1-panel-2-thumbnail.webp"
+      }
+    ]
   }
 ]

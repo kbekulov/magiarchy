@@ -12,6 +12,7 @@ import { testNarveanFog } from './test-narvean-fog.mjs';
 import { testArtworkVersions } from './test-artwork-versions.mjs';
 import { testMusicMovements } from './test-music-movements.mjs';
 import { testHomeFeed } from './test-home-feed-ui.mjs';
+import { testSherieFelixBanter } from './test-sherie-felix-banter.mjs';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const mime = { '.html': 'text/html', '.js': 'text/javascript', '.json': 'application/json', '.css': 'text/css', '.png': 'image/png', '.webp': 'image/webp', '.md': 'text/plain', '.mp3': 'audio/mpeg', '.wav': 'audio/wav' };
@@ -67,6 +68,7 @@ try {
         continue;
       }
       if (process.env.TEST_GALLERY_ONLY === '1') {
+        await testSherieFelixBanter(page, origin, engine);
         await testArtworkVersions(page, origin, engine);
         await testGalleryResources(page, origin, engine);
         await testGalleryPanels(page, origin, engine);
@@ -76,6 +78,11 @@ try {
       if (process.env.TEST_ARTWORK_ONLY === '1') {
         await testArtworkVersions(page, origin, engine);
         assert.deepEqual(errors, [], `${engine}: artwork version errors`);
+        continue;
+      }
+      if (process.env.TEST_BANTER_ONLY === '1') {
+        await testSherieFelixBanter(page, origin, engine);
+        assert.deepEqual(errors, [], `${engine}: card-game reader errors`);
         continue;
       }
       if (process.env.TEST_RECRUITMENT_ONLY === '1') {
@@ -88,6 +95,7 @@ try {
         assert.deepEqual(errors, [], `${engine}: Home feed errors`);
         continue;
       }
+      await testSherieFelixBanter(page, origin, engine);
       await testNarveanFog(page, origin, engine);
       await testMusicMovements(page, origin, engine);
       await testArtworkVersions(page, origin, engine);

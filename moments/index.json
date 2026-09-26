@@ -4571,5 +4571,83 @@
     "continuityBefore": "Family history predates the main story. Specific dates and the extent of MSF's existing organization remain open.",
     "continuityAfter": "Arc 1 encounters the adults shaped by these years. The prequel does not need to end immediately before it or disclose the future child.",
     "updated": "2026-09-08"
+  },
+  {
+    "slug": "unresolved-tension",
+    "code": "MOM-027",
+    "title": "Unresolved Tension",
+    "status": "Scene draft",
+    "placementStatus": "Unplaced",
+    "timelinePhase": null,
+    "timelineLabel": "Early Sherie and Felix familiarity; exact phase unplaced",
+    "sequence": 27,
+    "sceneType": "Card-game interlude",
+    "thread": "Sherie and Felix",
+    "location": "A sitting room",
+    "summary": "Felix complains about Lynleit during a card game. From the red sofa, Sherie offers an observation he would rather dispute.",
+    "purpose": "Let Sherie notice and begin to enjoy Felix's distracted attention while his complaint remains about Lynleit.",
+    "characters": [
+      {
+        "name": "Sherie",
+        "slug": "sherie"
+      },
+      {
+        "name": "Felix",
+        "slug": "felix"
+      }
+    ],
+    "characterAnchors": [],
+    "known": [
+      "Felix holds cards and complains about Lynleit: \"She's always like this.\" Sherie is opposite him on a red sofa.",
+      "Sherie reclines with her legs stretched along the cushions, cards in one hand and the other resting against her face.",
+      "Felix interrupts himself and looks toward her legs before resuming. Sherie notices.",
+      "Sherie says, \"Looks like you two have unresolved tension.\" Felix denies it; she answers, \"Mm.\"",
+      {
+        "text": "Felix's pause and returning glance suggest that Sherie is distracting him even while he talks about Lynleit.",
+        "status": "inferred"
+      },
+      "Sherie shifts farther into the cushion without drawing her legs away.",
+      {
+        "text": "Sherie's choice to stay as she is after noticing his distraction suggests that her comfort has begun to include deliberate teasing.",
+        "status": "inferred"
+      },
+      "Felix asks why she keeps looking at him. She answers, \"Like what?\" He opens his mouth but does not answer.",
+      "Sherie notices a second glance and finds that she enjoyed it. The hand of cards remains unplayed."
+    ],
+    "openQuestions": [
+      "Which earlier professional encounters lead to this private card game, and where does it fall in the main plot?",
+      "Whose sitting room is this, what game are they playing, and what prompted Felix's complaint about Lynleit?",
+      "How does this early pleasure in his attention develop into Sherie's conscious interest, and when does Felix recognize her importance beyond his attachment to Lynleit?"
+    ],
+    "continuityBefore": "Repeated professional encounters have begun to give Sherie and Felix private familiarity. They have no meaningful personal relationship at the story's opening. Felix remains attached to Lynleit.",
+    "continuityAfter": "Their connection continues unevenly. This exchange does not resolve Felix's attachment to Lynleit or settle either person's understanding of the relationship. Sherie's later disappointment and boundaries, and Felix's eventual recognition of her in her own right, remain part of their direction.",
+    "prose": [
+      "Felix was still talking about Lynleit. He stood opposite the sofa, cards fanned in one hand, the loose end of his blue tie shifting as he gestured with the other.",
+      "\"She's always like this.\"",
+      "Sherie rested her head against her free hand. She had made herself comfortable along the red cushions, her legs stretched out and her skirt settled high on her thighs. The ruffle at her wrist brushed the edges of her cards.",
+      "She waited for him to finish. He seemed to have another point.",
+      "Then, halfway through it, he stopped.",
+      "Sherie glanced up. Felix resumed, but she had lost a few words. His eyes dropped toward her legs and came back to her face.",
+      "She looked at her cards. The sofa was comfortable. She had been comfortable before he interrupted himself, too.",
+      "\"Looks like you two have unresolved tension.\"",
+      "Felix groaned. \"There is no tension.\"",
+      "\"Mm.\"",
+      "He gave her a look. Sherie kept her own expression attentive. She was interested in what he was saying about Lynleit; he need not make quite such an accusation of it.",
+      "She shifted a little deeper into the cushion and left her legs where they were.",
+      "Felix began again. Sherie listened to the complaint, then to the care he took over explaining Lynleit. It was a subject on which he could apparently forget the game altogether.",
+      "She ought to remind him that he was holding cards.",
+      "Instead, she watched his face.",
+      "He noticed.",
+      "\"Why do you keep looking at me like that?\"",
+      "Sherie glanced down at her hand.",
+      "\"Like what?\"",
+      "Felix opened his mouth, looked at her, and shut it again.",
+      "She let him have a moment.",
+      "His gaze slipped once more. This time she was already watching when it returned.",
+      "Oh.",
+      "She had enjoyed that.",
+      "Sherie looked back up with a small smile. Felix still had not played."
+    ],
+    "updated": "2026-09-26"
   }
 ]

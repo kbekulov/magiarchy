@@ -37,20 +37,6 @@ Doom Has an Address follows v7. Lynleit and Kyrien survive after an incomplete a
 
 These are development directions, not a fixed sequence of new scenes. Neither pair should perform its characteristic rhythm in every exchange. The political and supernatural story supplies their work, loyalties, and immediate priorities; intimacy remains a subplot.
 
-### Unresolved Tension: the card-game interlude
-
-The author-supplied [two-panel exchange](../gallery.html?panels=sherie-felix-banter) has a [standalone Moment draft](../moments.html?moment=unresolved-tension&version=v1). In the first image, the foreground hand and ruffled black cuff belong to Sherie. Felix stands opposite her with cards and a loosened tie, complaining about Lynleit: "She's always like this." The second image reverses the viewpoint. Sherie reclines on the red sofa, cards loose in one hand, the other against her face, and replies, "Looks like you two have unresolved tension."
-
-The intended progression begins with ordinary comfort. Sherie's aristocratic surroundings have made elegant furniture, clothes, and bodily composure familiar. Her stretched legs, visible stockings, and high-set skirt need not begin as a plan to attract Felix. The source imagines a discrepancy between her simple "I'm comfortable" and his awareness of how she looks a few feet away. The draft stays close to Sherie and shows his interruption and returning glance rather than entering his thoughts.
-
-Her attention changes when he stops speaking for half a second. She looks up, hears him resume, and notices his eyes drop and return. Once she understands that her posture is affecting him, she leaves it unchanged. The draft chooses the source's small shift deeper into the cushion. Stretching a leg farther or uncrossing her ankles are unused alternatives, not additional actions or required choreography. Keep the initial uncertainty about her effect distinct from the later pleasure of knowingly prolonging it.
-
-The diagnosis concerns Felix and Lynleit, but another attraction is entering the room. "There is no tension," his groan, and Sherie's "Mm" preserve the joke without resolving either relationship. Sherie can read his attachment to Lynleit while being slower to understand why she herself enjoys the exchange. The source proposes three private excuses: the subject is psychologically interesting; she is watching his face because she reads people well; she is lying that way because the sofa is comfortable. These are possible ways of keeping her interest unnamed, not three explanations the narration must recite. Its playful inward "Teehee" becomes a small outward smile in the draft.
-
-Both hold cards. The game gives them something to do while Felix says more about Lynleit than he intends and Sherie says less about herself. Preserve that ordinary activity without explaining a second metaphorical game. In the closing exchange, he asks, "Why do you keep looking at me like that?" She glances at her cards: "Like what?" He cannot find an answer he wants to give. A further glance lets her recognize "I enjoyed that" before she can confidently name what she wants from him.
-
-This belongs to their early familiarity after repeated professional contact, not their first meeting. The exact phase, room, card game, stakes, and cause of Felix's complaint remain open. Sherie's teasing is not evidence of reciprocal desire from Lynleit. Felix's attachment still has emotional weight, and this brief success neither settles his feelings nor anticipates the scenes in which Sherie feels unseen and sets a boundary.
-
 ## Lynleit
 
 **Basis: Established relationship; later behavior partly interpreted**
@@ -229,8 +215,6 @@ Lynleit deflects his advances while remaining his close friend. His attraction d
 
 His repeated flirting with nuns during the church visits is a genuine habit, not a scheme to make Lynleit jealous. Reiner accompanies the same visits without causing trouble. In the [church interlude](../moments.html?moment=only-eyes-for-you), Felix answers Lynleit's eventual outburst with a flattering alternative to the situation she wants him to acknowledge. The ready compliment lets him dodge an apology. His broad flirtatiousness coexists with a more persistent attachment to Lynleit; neither requires him to stop noticing other women.
 
-In [Unresolved Tension](../moments.html?moment=unresolved-tension), he complains about Lynleit while Sherie's position on the sofa interrupts him. His complaint continues even after his attention wanders. The final unanswered question exposes his distraction without making him suddenly fluent about what Sherie means to him.
-
 At the opening, he and Sherie have no meaningful personal relationship. Professional overlap brings them together repeatedly. He enjoys complicating her direction of an exchange, answers her teasing, and gradually seeks out her company. Familiarity and respect accumulate alongside private jokes.
 
 He remains internally fixated on Lynleit throughout that developing chemistry. His responses to Sherie can be immediate and sincere while his interpretation remains organized around Lynleit. He may regard Sherie's interest as her usual charm or their closeness as an unusually entertaining professional friendship. He can become emotionally invested before recognizing the intimate possibility. His attachment to Lynleit carries genuine disappointment and hope; one successful flirtation cannot dissolve it.
@@ -280,8 +264,6 @@ With Felix, her confident, playful lead carries into affection and eventual adul
 Kyrien is a potential source of tension because he does not give her the reactions she expects. Repeated negotiation could turn that frustration personal. No relationship between them is established.
 
 Her connection with Felix grows slowly through recurring diplomatic and MSF work, not an immediate personal bond. He responds readily and teases back, making her work for the reaction she wants. She can become theatrical, petty, ridiculous, or openly delighted around him without losing his respect. In turn, she learns to take his seriousness as readily as his jokes.
-
-The card-game draft gives her an early, smaller discovery: she likes catching Felix looking at her. She can choose to prolong that attention before she understands its personal importance. Her initial ease on the sofa need not be calculated for his benefit.
 
 She may understand the intimate possibility before he does. His attachment to Lynleit can hurt even when he is attentive to Sherie. Her confidence leaves room for disappointment and doubt about whether he sees her clearly. She has boundaries and reasons to reconsider the closeness; she is not obliged to keep charming him until he notices her. The particular moments that expose those limits remain to be written.
 

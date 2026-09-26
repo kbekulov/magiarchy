@@ -564,12 +564,12 @@
     "title": "Character Behaviour Audit",
     "topic": "Writer's Character Reference",
     "file": "character-behavior-audit.md",
-    "updated": "2026-09-23",
-    "description": "Version-specific guidance for the represented interrogation, family responsibilities, and concealed motives.",
+    "updated": "2026-09-26",
+    "description": "Paragraph guidance for Sherie and Felix's card-game interlude, alongside existing scene notes.",
     "speakers": [
       "Character Archive"
     ],
-    "defaultVersion": "v12",
+    "defaultVersion": "v13",
     "versions": [
       {
         "id": "v1",
@@ -661,10 +661,18 @@
       },
       {
         "id": "v12",
-        "label": "v12 · Current",
-        "file": "character-behavior-audit.md",
+        "label": "v12 · Archived",
+        "file": "character-behavior-audit-v12.md",
         "updated": "2026-09-23",
         "description": "Version-specific guidance for the represented interrogation, family responsibilities, and concealed motives.",
+        "behaviorFile": "character-behavior-notes-v12.json"
+      },
+      {
+        "id": "v13",
+        "label": "v13 · Current",
+        "file": "character-behavior-audit.md",
+        "updated": "2026-09-26",
+        "description": "Paragraph guidance for Sherie and Felix's card-game interlude, alongside existing scene notes.",
         "behaviorFile": "character-behavior-notes.json"
       }
     ]
@@ -674,12 +682,12 @@
     "title": "Character Intimacy and Sexuality Reference",
     "topic": "Writer's Character Reference",
     "file": "character-intimacy-and-sexuality.md",
-    "updated": "2026-09-23",
-    "description": "Recruitment pressure and family obligations distinguished from later voluntary intimacy.",
+    "updated": "2026-09-26",
+    "description": "Sherie and Felix's card-game interlude: familiar comfort, noticed attention, and uneven recognition.",
     "speakers": [
       "Character Archive"
     ],
-    "defaultVersion": "v15",
+    "defaultVersion": "v16",
     "versions": [
       {
         "id": "v1",
@@ -795,10 +803,18 @@
       },
       {
         "id": "v15",
-        "label": "v15 · Current",
-        "file": "character-intimacy-and-sexuality.md",
+        "label": "v15 · Archived",
+        "file": "character-intimacy-and-sexuality-v15.md",
         "updated": "2026-09-23",
         "description": "Recruitment pressure and family obligations distinguished from later voluntary intimacy.",
+        "tensionFile": "sexual-tension-notes-v15.json"
+      },
+      {
+        "id": "v16",
+        "label": "v16 · Current",
+        "file": "character-intimacy-and-sexuality.md",
+        "updated": "2026-09-26",
+        "description": "Sherie and Felix's card-game interlude: familiar comfort, noticed attention, and uneven recognition.",
         "tensionFile": "sexual-tension-notes.json"
       }
     ]
