@@ -1,0 +1,1 @@
+The index page on the site shows all updates that were made since last month. But it's too much info. Lets cut-off update history to max 1 month, everything beyond 31 days oldness is no longer necessary to be mentioned in the index page. So set the update-news list retainment to max 1 month.

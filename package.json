@@ -4,7 +4,8 @@
   "type": "module",
   "scripts": {
     "build": "node scripts/build-image-previews.mjs && node scripts/build-gallery-resources.mjs && node scripts/build-gallery-panels.mjs && node scripts/build-search-index.mjs",
-    "check": "node scripts/verify-t-pose-assets.mjs && node scripts/sync-archive-surfaces.mjs --check && node scripts/verify-archive.mjs && node scripts/verify-site.mjs",
+    "check": "node --test scripts/test-home-updates.mjs && node scripts/verify-t-pose-assets.mjs && node scripts/sync-archive-surfaces.mjs --check && node scripts/verify-archive.mjs && node scripts/verify-site.mjs",
+    "test:home": "node --test scripts/test-home-updates.mjs",
     "prose:audit": "node scripts/audit-prose-voice.mjs",
     "test:prose": "node --test scripts/test-prose-voice.mjs",
     "test:ui": "node scripts/test-site-ui.mjs",

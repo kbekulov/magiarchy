@@ -7,6 +7,8 @@ import { execFileSync } from 'node:child_process';
 import { validateResources } from './gallery-resources.mjs';
 import { validatePanels } from './gallery-panels.mjs';
 import { verifyMediaVisibility } from './verify-media-visibility.mjs';
+import { readHomeUpdates, pruneHomeUpdates } from './home-updates.mjs';
+import { updateExpiry } from '../home-updates.js';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const read = file => fs.readFileSync(path.join(root, file), 'utf8');
@@ -46,6 +48,16 @@ for (const section of read('docs/questions-to-be-answered.md').split(/^## /m)) {
   assert.deepEqual(confidence, [...confidence].sort((a, b) => a - b), 'Question confidence ordering has drifted');
 }
 const search = json('search-index.json');
+const home = read('index.html').replace(/\r\n/g, '\n');
+const homeBuildDate = home.match(/data-updates-as-of="([^"]+)"/)?.[1];
+assert.ok(Number.isFinite(updateExpiry(homeBuildDate)), 'Home feed needs a valid build date');
+assert.equal(pruneHomeUpdates(home, new Date(`${homeBuildDate}T00:00:00Z`)).html, home, 'Home feed needs rebuilding');
+const updates = readHomeUpdates(home);
+assert.equal(search.entries.filter(entry => entry.type === 'Update').length, updates.length, 'Home news search coverage');
+for (const update of updates) {
+  const entry = search.entries.find(entry => entry.id === `update-${update.id}`);
+  assert.equal(entry?.expires, updateExpiry(update.published), `${update.id}: search expiry must match Home`);
+}
 verifyMediaVisibility(root, search);
 const panels = json('gallery/panels.json');
 validatePanels(root, panels);

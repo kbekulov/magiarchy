@@ -3789,6 +3789,14 @@ body::before {
   border-top: 1px solid #3f4147;
 }
 
+.home-updates-empty {
+  margin: 0;
+  padding: 18px 24px;
+  color: var(--muted);
+  font-size: .88rem;
+  line-height: 1.6;
+}
+
 .date-divider span {
   position: absolute;
   padding: 0 5px;

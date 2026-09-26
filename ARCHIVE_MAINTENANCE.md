@@ -22,6 +22,12 @@ Inspect only the pending `backlog/*.txt` queue. Process exactly one file per res
 
 After verification, move the unchanged source into `backlog/archive/original-name__YYYY-MM-DDTHH-mm-ssZ.txt` using a UTC timestamp. Never overwrite or delete archived originals, and never treat that subfolder as a pending queue. A concise non-graphic `> [WRITER: ...]` placeholder marks any undrafted passage in Chapters or Docs, with a shared amber callout and visible Writer notice label. Preserve permissible surrounding material without inventing replacement actions. Such a gap is not completed prose or a reader inference. Contradictions that block integration still require author direction; keep that source pending.
 
+## Home update retention
+
+Home news has a rolling maximum age of 31 UTC calendar days, not a calendar-month cutoff. An announcement exactly 31 days old stays through that UTC day and expires at the next midnight. Add each new dated dispatch first inside the `Home updates: start/end` markers in `index.html`; its visible date and `data-published="YYYY-MM-DD"` must agree. `scripts/build-home-updates.mjs`, invoked by the search build, removes older dispatches, rebuilds date dividers, and records the build date. Git retains the removed announcements; do not create a separate public news archive. Document, Chapter, and Moment versions are unaffected.
+
+`home-updates.js` also expires cached announcements on page load, return from a hidden tab, and UTC midnight. Empty feeds keep the welcome card and navigation and show a brief empty state. Global search excludes expired news even with earlier versions enabled. `npm run check` verifies publication dates, built retention, and matching search expirations; `npm run test:home` covers date boundaries and pruning. Use `TEST_HOME_ONLY=1` with `npm run test:ui` for desktop/mobile and cached-page expiry checks. Builds remain static and readable without JavaScript; between deployments, live expiry requires JavaScript.
+
 ## Source and surface map
 
 | Content | Shared source | Required public or writer surfaces |

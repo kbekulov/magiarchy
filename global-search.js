@@ -171,7 +171,7 @@
     }
 
     const matches = archiveEntries
-      .filter(entry => historyToggle.checked || entry.current !== false)
+      .filter(entry => (!entry.expires || Date.now() < entry.expires) && (historyToggle.checked || entry.current !== false))
       .map((entry) => ({ entry, score: scoreEntry(entry, phrase, tokens) }))
       .filter((match) => match.score > 0)
       .sort((left, right) => right.score - left.score || left.entry.title.localeCompare(right.entry.title))

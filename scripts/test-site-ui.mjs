@@ -11,6 +11,7 @@ import { testKyrienOrigin } from './test-kyrien-origin.mjs';
 import { testNarveanFog } from './test-narvean-fog.mjs';
 import { testArtworkVersions } from './test-artwork-versions.mjs';
 import { testMusicMovements } from './test-music-movements.mjs';
+import { testHomeFeed } from './test-home-feed-ui.mjs';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const mime = { '.html': 'text/html', '.js': 'text/javascript', '.json': 'application/json', '.css': 'text/css', '.png': 'image/png', '.webp': 'image/webp', '.md': 'text/plain', '.mp3': 'audio/mpeg', '.wav': 'audio/wav' };
@@ -80,6 +81,11 @@ try {
       if (process.env.TEST_RECRUITMENT_ONLY === '1') {
         await testKyrienOrigin(page, origin, engine);
         assert.deepEqual(errors, [], `${engine}: recruitment reader errors`);
+        continue;
+      }
+      await testHomeFeed(page, origin, engine);
+      if (process.env.TEST_HOME_ONLY === '1') {
+        assert.deepEqual(errors, [], `${engine}: Home feed errors`);
         continue;
       }
       await testNarveanFog(page, origin, engine);

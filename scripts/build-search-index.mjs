@@ -4,6 +4,8 @@ import path from 'node:path';
 import vm from 'node:vm';
 import { fileURLToPath } from 'node:url';
 import './sync-archive-surfaces.mjs';
+import './build-home-updates.mjs';
+import { updateExpiry } from '../home-updates.js';
 import { searchSourceDigest } from './search-source-digest.mjs';
 
 const scriptDirectory = path.dirname(fileURLToPath(import.meta.url));
@@ -45,10 +47,10 @@ const stripMarkdown = (value) => clean(value
   .replace(/^\s*>\s?/gm, '')
   .replace(/[|*_`~]/g, ' '));
 
-function addEntry({ id, title, type, url, subtitle = '', text = '', keywords = '', current = true, recordId = id }) {
+function addEntry({ id, title, type, url, subtitle = '', text = '', keywords = '', current = true, recordId = id, expires }) {
   const content = clean(`${title} ${subtitle} ${text} ${keywords}`);
   if (!title || !url || content.length < 2) return;
-  entries.push({ id, title: clean(title), type, url, subtitle: clean(subtitle), text: content, current, recordId });
+  entries.push({ id, title: clean(title), type, url, subtitle: clean(subtitle), text: content, current, recordId, ...(expires ? { expires } : {}) });
 }
 
 function resolveVersions(record) {
@@ -376,6 +378,7 @@ for (const match of homeHtml.matchAll(/<article\s+class="dispatch[^\"]*"\s+id="(
     type: 'Update',
     url: `index.html#${match[1]}`,
     subtitle: 'Home update feed',
+    expires: updateExpiry(match[0].match(/data-published="([^"]+)"/)?.[1]),
     text: content
   });
 }
