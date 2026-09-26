@@ -416,6 +416,11 @@ function initializeGalleryCards() {
   galleryDetailType.textContent = type;
   galleryDetailTitle.textContent = title;
   galleryDetailMeta.textContent = `${code} · ${location}`;
+  const context = document.querySelector('#gallery-detail-context');
+  if (context) {
+    context.textContent = selectedCard.dataset.storyContext || '';
+    context.hidden = !context.textContent;
+  }
   galleryDetailSource.href = image.getAttribute('src');
   const versionNav = document.querySelector('#gallery-image-versions');
   const versionGroup = selectedCard.dataset.imageVersionGroup;
@@ -465,6 +470,7 @@ function initializeGalleryCards() {
   const momentLink = document.querySelector('#gallery-detail-moment');
   if (momentLink && selectedCard.dataset.moment) {
     momentLink.href = `moments.html?moment=${encodeURIComponent(selectedCard.dataset.moment)}`;
+    if (selectedCard.dataset.momentVersion) momentLink.href += `&version=${encodeURIComponent(selectedCard.dataset.momentVersion)}`;
     momentLink.hidden = false;
   }
   const musicLink = document.querySelector('#gallery-detail-music');

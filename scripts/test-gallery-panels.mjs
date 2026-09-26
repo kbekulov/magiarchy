@@ -246,7 +246,7 @@ export async function testGalleryPanels(page, origin, engine) {
   assert.equal(await page.locator('#gallery-collections a[aria-current]').getAttribute('href'), 'gallery.html?collection=production');
   assert.ok(!await page.locator('#panel-collection').isVisible());
   await visit('gallery.html');
-  const artworkCount = [...fs.readFileSync('gallery.html', 'utf8').matchAll(/<figure class="gallery-card\b/g)].length;
+  const artworkCount = [...fs.readFileSync('gallery.html', 'utf8').matchAll(/<figure\b[^>]*\bclass="gallery-card\b/g)].length;
   assert.equal(await page.locator('.gallery-card').count(), artworkCount, 'Panel images must stay outside artwork/profile pools');
   console.log(`${engine}: scene panels, versions, filters, layouts, originals, and error states passed.`);
 }

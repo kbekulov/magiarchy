@@ -1,8 +1,10 @@
 import assert from 'node:assert/strict';
 import { testGalleryFilters } from './test-gallery-filters.mjs';
+import { testGalleryIntake } from './test-gallery-intake.mjs';
 
 export async function testArtworkVersions(page, origin, engine) {
   await testGalleryFilters(page, origin, engine);
+  await testGalleryIntake(page, origin, engine);
   for (const width of [390, 1440]) {
     await page.setViewportSize({ width, height: 900 });
     await page.goto(`${origin}/gallery.html`);

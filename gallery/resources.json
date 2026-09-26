@@ -141,6 +141,24 @@
         "thumbnail": "media/gallery/previews/resources/felix-t-pose-v1-2-r2.webp",
         "width": 1122,
         "height": 1402
+      },
+      {
+        "id": "back-hand-left",
+        "src": "media/gallery/resources/felix-t-pose-v1/corrections/char-felix-t-pose-v1-back-hand-left.png",
+        "alt": "Felix, v1: left hand detail from the back-view correction.",
+        "caption": "Back-view left hand detail",
+        "thumbnail": "media/gallery/previews/resources/felix-t-pose-v1-3.webp",
+        "width": 136,
+        "height": 67
+      },
+      {
+        "id": "back-hand-right",
+        "src": "media/gallery/resources/felix-t-pose-v1/corrections/char-felix-t-pose-v1-back-hand-right.png",
+        "alt": "Felix, v1: right hand detail from the back-view correction.",
+        "caption": "Back-view right hand detail",
+        "thumbnail": "media/gallery/previews/resources/felix-t-pose-v1-4.webp",
+        "width": 121,
+        "height": 68
       }
     ],
     "files": [
@@ -156,6 +174,20 @@
         "label": "Back reference, arms and hands corrected",
         "notes": "Balanced arm lengths and corrected rear-view fingers, 1122 × 1402 PNG.",
         "bytes": 1156811,
+        "format": "PNG"
+      },
+      {
+        "path": "media/gallery/resources/felix-t-pose-v1/corrections/char-felix-t-pose-v1-back-hand-left.png",
+        "label": "Back-view left hand detail",
+        "notes": "Detail crop from the hand correction. Use the full front and back references for body proportions.",
+        "bytes": 15205,
+        "format": "PNG"
+      },
+      {
+        "path": "media/gallery/resources/felix-t-pose-v1/corrections/char-felix-t-pose-v1-back-hand-right.png",
+        "label": "Back-view right hand detail",
+        "notes": "Detail crop from the hand correction. Use the full front and back references for body proportions.",
+        "bytes": 14309,
         "format": "PNG"
       }
     ],
@@ -196,6 +228,24 @@
         "thumbnail": "media/gallery/previews/resources/lynleit-t-pose-v1-2-r2.webp",
         "width": 1122,
         "height": 1402
+      },
+      {
+        "id": "back-hand-left",
+        "src": "media/gallery/resources/lynleit-t-pose-v1/corrections/char-lynleit-arc-1-t-pose-v1-back-hand-left.png",
+        "alt": "Lynleit, Young / teenager: left hand detail from the back-view correction.",
+        "caption": "Back-view left hand detail",
+        "thumbnail": "media/gallery/previews/resources/lynleit-t-pose-v1-3.webp",
+        "width": 119,
+        "height": 53
+      },
+      {
+        "id": "back-hand-right",
+        "src": "media/gallery/resources/lynleit-t-pose-v1/corrections/char-lynleit-arc-1-t-pose-v1-back-hand-right.png",
+        "alt": "Lynleit, Young / teenager: right hand detail from the back-view correction.",
+        "caption": "Back-view right hand detail",
+        "thumbnail": "media/gallery/previews/resources/lynleit-t-pose-v1-4.webp",
+        "width": 118,
+        "height": 54
       }
     ],
     "files": [
@@ -211,6 +261,20 @@
         "label": "Back reference, arms and hands corrected",
         "notes": "Balanced arm lengths and corrected rear-view fingers, 1122 × 1402 PNG.",
         "bytes": 1340910,
+        "format": "PNG"
+      },
+      {
+        "path": "media/gallery/resources/lynleit-t-pose-v1/corrections/char-lynleit-arc-1-t-pose-v1-back-hand-left.png",
+        "label": "Back-view left hand detail",
+        "notes": "Detail crop from the hand correction. Use the full front and back references for body proportions.",
+        "bytes": 11034,
+        "format": "PNG"
+      },
+      {
+        "path": "media/gallery/resources/lynleit-t-pose-v1/corrections/char-lynleit-arc-1-t-pose-v1-back-hand-right.png",
+        "label": "Back-view right hand detail",
+        "notes": "Detail crop from the hand correction. Use the full front and back references for body proportions.",
+        "bytes": 11664,
         "format": "PNG"
       }
     ],
@@ -250,6 +314,24 @@
         "thumbnail": "media/gallery/previews/resources/lynleit-t-pose-v2-2-r2.webp",
         "width": 1122,
         "height": 1402
+      },
+      {
+        "id": "back-hand-left",
+        "src": "media/gallery/resources/lynleit-t-pose-v2/corrections/char-lynleit-t-pose-v2-back-hand-left.png",
+        "alt": "Lynleit, v2: left hand detail from the back-view correction.",
+        "caption": "Back-view left hand detail",
+        "thumbnail": "media/gallery/previews/resources/lynleit-t-pose-v2-3.webp",
+        "width": 116,
+        "height": 57
+      },
+      {
+        "id": "back-hand-right",
+        "src": "media/gallery/resources/lynleit-t-pose-v2/corrections/char-lynleit-t-pose-v2-back-hand-right.png",
+        "alt": "Lynleit, v2: right hand detail from the back-view correction.",
+        "caption": "Back-view right hand detail",
+        "thumbnail": "media/gallery/previews/resources/lynleit-t-pose-v2-4.webp",
+        "width": 112,
+        "height": 57
       }
     ],
     "files": [
@@ -265,6 +347,20 @@
         "label": "Back reference, arms and hands corrected",
         "notes": "Balanced arm lengths and corrected rear-view fingers, 1122 × 1402 PNG.",
         "bytes": 1240070,
+        "format": "PNG"
+      },
+      {
+        "path": "media/gallery/resources/lynleit-t-pose-v2/corrections/char-lynleit-t-pose-v2-back-hand-left.png",
+        "label": "Back-view left hand detail",
+        "notes": "Detail crop from the hand correction. Use the full front and back references for body proportions.",
+        "bytes": 12180,
+        "format": "PNG"
+      },
+      {
+        "path": "media/gallery/resources/lynleit-t-pose-v2/corrections/char-lynleit-t-pose-v2-back-hand-right.png",
+        "label": "Back-view right hand detail",
+        "notes": "Detail crop from the hand correction. Use the full front and back references for body proportions.",
+        "bytes": 11843,
         "format": "PNG"
       }
     ],

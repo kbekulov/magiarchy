@@ -11,7 +11,7 @@ export async function testGalleryResources(page, origin, engine) {
     await page.screenshot({ path: `test-results/${engine}-production-empty.png` });
   }
   const published = JSON.parse(fs.readFileSync('gallery/resources.json', 'utf8'));
-  const kyrien = published.filter(record => record.characters.includes('kyrien'));
+  const kyrien = published.filter(record => record.characters.includes('kyrien') && record.kind === 't-pose');
   assert.equal(kyrien.length, 1, 'Only the selected Kyrien design should be published');
   assert.deepEqual(kyrien[0].previews.map(view => view.id), ['front', 'back']);
   for (const width of [390, 1440]) {
@@ -30,15 +30,15 @@ export async function testGalleryResources(page, origin, engine) {
     assert.ok((await chibi.getAttribute('src')).includes('char-kyrien-arc-1-chibi-beige-jacket'), 'Approved Kyrien chibi missing');
     assert.equal(await page.locator('[data-name="Kyrien"] .chibi-placeholder').count(), 0);
     await visit('character.html?character=kyrien');
-    assert.equal(await page.locator('#character-profile-portrait img').count(), 0, 'Withdrawn portrait still displayed');
-    assert.ok(await page.locator('#character-profile-portrait .profile-portrait-placeholder').isVisible());
+    assert.ok(await page.locator('#character-profile-portrait img[src$="char-kyrien-red-sofa-pistol.png"]').count(), 'Selected Kyrien portrait missing');
+    assert.equal(await page.locator('#character-profile-portrait .profile-portrait-placeholder').count(), 0);
     const profileText = await page.locator('main').innerText();
     for (const detail of ['clear middle part', 'slightly heavy upper lids', 'restrained shoulder width', 'modestly taller than Lynleit', 'Balanced, relaxed posture']) {
       assert.ok(profileText.includes(detail), `Kyrien profile missing fixed design: ${detail}`);
     }
   }
   await visit('gallery.html');
-  assert.equal(await page.locator('.gallery-card[data-character~="kyrien"]').count(), 4);
+  assert.equal(await page.locator('.gallery-card[data-character~="kyrien"]').count(), 6);
   assert.equal(await page.locator('.gallery-card[data-character~="kyrien"][data-profile-portrait="false"]').count(), 3, 'Concept sheets and lineup sketches must stay outside the portrait pool');
   const lineupId = 'char-drake-sherie-kyrien-lynleit-felix-lineup-sketch-01';
   for (const slug of ['drake', 'sherie', 'kyrien', 'lynleit', 'felix']) {
@@ -124,18 +124,19 @@ export async function testGalleryResources(page, origin, engine) {
     await page.locator('#resource-character').selectOption('lynleit');
     assert.equal(await page.locator('.production-card:visible').count(), published.filter(record => record.characters.includes('lynleit')).length);
     await page.locator('#resource-character').selectOption('felix');
-    assert.equal(await page.locator('.production-card:visible').count(), 1);
+    assert.equal(await page.locator('.production-card:visible').count(), published.filter(record => record.characters.includes('felix')).length);
     for (const record of published.filter(record => referenceIds.includes(record.id))) {
       assert.equal(record.era, record.id === 'lynleit-t-pose-v1' ? 'Arc 1' : undefined, 'Design revision must not imply an Arc');
       assert.equal(record.template, undefined, 'Character references must not replace the mascot template');
-      assert.deepEqual(record.previews.map(view => [view.width, view.height]), [[1122, 1402], [1122, 1402]]);
+      assert.deepEqual(record.previews.filter(view => ['front', 'back'].includes(view.id)).map(view => [view.width, view.height]), [[1122, 1402], [1122, 1402]]);
+      assert.deepEqual(record.previews.slice(2).map(view => view.id), ['back-hand-left', 'back-hand-right']);
       assert.ok(record.previews.find(view => view.id === 'front').src.endsWith('-arm-corrected-front.png'), 'Keep the approved front view');
       assert.ok(record.previews.find(view => view.id === 'back').src.endsWith('-arm-hand-corrected-back.png'), 'Back view must use the corrected hands');
       assert.ok(record.previews.find(view => view.id === 'back').thumbnail.endsWith('-r2.webp'), 'Back thumbnail must not reuse the previous cached revision');
       await visit(`gallery.html?resource=${record.id}&view=front`);
       assert.equal(await page.locator('#resource-title').textContent(), record.title);
-      assert.equal(await page.locator('#resource-thumbnails button').count(), 2);
-      assert.equal(await page.locator('#resource-downloads a[download]').count(), 2);
+      assert.equal(await page.locator('#resource-thumbnails button').count(), record.previews.length);
+      assert.equal(await page.locator('#resource-downloads a[download]').count(), record.files.length);
       assert.equal(await page.getByText('Original two-view sheet', { exact: true }).count(), 0, 'Source sheets belong in the archive, not public downloads');
       assert.equal(await page.locator('#resource-downloads small a').count(), 0, 'Filename text must not become profile links');
       assert.deepEqual(await page.locator('#resource-downloads small').allTextContents(), record.files.map(file => file.path.split('/').pop()));
@@ -150,9 +151,17 @@ export async function testGalleryResources(page, origin, engine) {
       assert.ok(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1));
       await page.locator('#resource-image').scrollIntoViewIfNeeded();
       await page.screenshot({ path: `test-results/${engine}-${record.id}-${width}.png`, fullPage: width < 820 });
+      for (const [index, detail] of record.previews.slice(2).entries()) {
+        await page.locator('#resource-thumbnails button').nth(index + 2).click();
+        assert.equal(await page.locator('#resource-image').getAttribute('src'), detail.src);
+        assert.ok(page.url().includes(`view=${detail.id}`));
+        await page.waitForFunction(width => document.querySelector('#resource-image').getBoundingClientRect().width <= width + 1, detail.width);
+      }
+      await page.locator('#resource-image').scrollIntoViewIfNeeded();
+      await page.screenshot({ path: `test-results/${engine}-${record.id}-hand-detail-${width}.png` });
       if (width === 1440) {
         for (const file of record.files) {
-          assert.match(file.path.split('/').pop(), /^char-(felix|lynleit)-(arc-1-)?t-pose-v[12]-(arm-corrected-front|arm-hand-corrected-back)\.png$/);
+          assert.match(file.path.split('/').pop(), /^char-(felix|lynleit)-(arc-1-)?t-pose-v[12]-(arm-corrected-front|arm-hand-corrected-back|back-hand-left|back-hand-right)\.png$/);
           const [download] = await Promise.all([page.waitForEvent('download'), page.locator(`#resource-downloads a[href="${file.path}"]`).click()]);
           assert.equal(download.suggestedFilename(), file.path.split('/').pop());
           assert.deepEqual(fs.readFileSync(await download.path()), fs.readFileSync(file.path));

@@ -56,6 +56,7 @@
       const preview = record.previews[index];
       previewImage.src = preview.src; previewImage.alt = preview.alt;
       previewImage.width = preview.width; previewImage.height = preview.height;
+      previewImage.style.maxWidth = `${preview.width}px`;
       previewImage.hidden = false; $('#resource-no-preview').hidden = true;
       $('#resource-caption').textContent = preview.caption || '';
       $('#resource-original').href = preview.src; $('#resource-original').hidden = false;

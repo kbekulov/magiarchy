@@ -1,0 +1,4 @@
+I added some images that were fixed, and some you forgot to include. Please commit and push all.
+And make sure no image remains in the folders that is not displayed on the site. All potentially hidden images need to be properly shown via gallery UI or elsewhere.
+
+Also, the "char-lynleit-blue-gown-ballroom.png" in particular should be story-wise related to the prosecutor's party mentioned in the story, that's where Lynleit attended and almost became collateral damage in Kyrien's attempt to assassinate the prosecutor.

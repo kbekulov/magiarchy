@@ -6,12 +6,13 @@ import { searchSourceDigest } from './search-source-digest.mjs';
 import { execFileSync } from 'node:child_process';
 import { validateResources } from './gallery-resources.mjs';
 import { validatePanels } from './gallery-panels.mjs';
+import { verifyMediaVisibility } from './verify-media-visibility.mjs';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const read = file => fs.readFileSync(path.join(root, file), 'utf8');
 const json = file => JSON.parse(read(file));
 const htmlFiles = fs.readdirSync(root).filter(file => file.endsWith('.html'));
-for (const card of read('gallery.html').matchAll(/<figure class="gallery-card[^>]*>/g)) {
+for (const card of read('gallery.html').matchAll(/<figure\b[^>]*\bclass="gallery-card[^>]*>/g)) {
   assert.ok(/data-art-finish="(?:pencil|colored)"/.test(card[0]), 'Gallery artwork needs explicit pencil or colored finish metadata');
 }
 const dynamicAnchors = new Set(['docs.html', 'story.html', 'moments.html', 'character.html', 'weapons.html', 'items.html', 'gallery.html']);
@@ -45,6 +46,7 @@ for (const section of read('docs/questions-to-be-answered.md').split(/^## /m)) {
   assert.deepEqual(confidence, [...confidence].sort((a, b) => a - b), 'Question confidence ordering has drifted');
 }
 const search = json('search-index.json');
+verifyMediaVisibility(root, search);
 const panels = json('gallery/panels.json');
 validatePanels(root, panels);
 for (const record of panels) assert.ok(search.entries.some(entry => entry.id === `panels-${record.id}` && entry.url === `gallery.html?panels=${record.id}`), `${record.id}: panel set missing from search`);
