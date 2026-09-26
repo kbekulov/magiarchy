@@ -49,6 +49,7 @@ Home news has a rolling maximum age of 31 UTC calendar days, not a calendar-mont
 | Genuine conflict | `docs/contradictions-to-resolve.md` | Contradictions document only |
 | Capability balance | `docs/character-capability-balance.md` and `skillProfiles` in `character.js` | Capability ledger and profile graph |
 | Prose style | `docs/prose-style.md` | Concise active house style; read alongside each Chapter or Moment draft |
+| Character aphorisms | `docs/character-aphorisms.md` | Versioned Docs collection, speaker links, scene citations when assigned, and global search |
 | Thematic direction | `docs/thematic-direction.md` | Writer-facing Inanna/Ishtar orientation and register collisions; concise cross-references in prose and production guidance, not a public lore explanation |
 | Dread and action | `docs/dread-and-action-direction.md` | MAGIARCHY's experiential direction for scenes, Holumn encounters, locations, and reader experience; entry points in AGENTS, Thematic Direction, Prose Style, and Scene Guidance; no automatic canon changes |
 | Intimacy scale and inclusion | `docs/character-intimacy-and-sexuality.md` | Relationship guidance and confirmed milestones; practical scene test in `docs/prose-and-scene-guidance.md` |
@@ -75,6 +76,8 @@ Home news has a rolling maximum age of 31 UTC calendar days, not a calendar-mont
 12. Run syntax, content, link, no-gradient, desktop, and mobile checks. Commit task-only changes, push to `origin`, wait for GitHub Pages, and verify the live custom domain.
 
 ## Chapter and Moment completion
+
+Character Aphorisms is a speaker-organized, versioned collection of project-specific sayings. Preserve author wording as the source when polishing a line. Distinguish unplaced dialogue drafts from exact quotations in a Chapter or Moment, and add a scene link only when the line is actually used there. A character's joke is not a narrator's statement of canon. Do not invent a listener, date, response, or new relationship fact to give an aphorism a setting. Keep placement questions in the living Questions ledger.
 
 Every Chapter must have:
 
@@ -266,6 +269,8 @@ Ordinary Artwork cards may declare an author-approved `data-sibling-group`; card
 
 ### Artwork versions
 
+An explicit author request can withdraw earlier image versions. Remove those cards, originals, generated previews, and search records from the active site; retain the chosen image under its normal descriptive filename and remove redundant version metadata. Git retains the withdrawn files. Do not apply a withdrawal to unrelated variation groups. The 26 September cleanup keeps only the revised Kyrien red-sofa pistol portrait, Sherie red-sofa portrait, and Lynleit Arc 1 appointment-dinner portrait; Sherie's independently requested heels/ankle-boots pair stays versioned.
+
 An artwork card may declare `data-image` to preserve its existing reader URL when an author-confirmed era requires renaming its files. Use that stable ID for reader links; the filename, Arc metadata, caption, alt text, and profile label still carry the confirmed era.
 
 Artwork versions use `data-image-version-group`, `data-image-version` (v1, v2, etc.), and a concise `data-image-version-label` on ordinary Gallery cards. Register only author-confirmed variants of the same image. Each retains its original file, stable image URL, searchable caption, and source download. The reader displays a labelled Versions thumbnail selector with the current choice indicated. These are separate from same-model sibling views and do not imply a newer costume supersedes character canon. Preserve original URLs and bytes; name new files descriptively. Test switching both ways, keyboard access, unrelated-image isolation, downloads, and phone/desktop layouts.
@@ -274,7 +279,7 @@ Exactly one card per version group carries `data-image-version-default="true"`. 
 
 ### Scene panel intake
 
-Unresolved Tension (MOM-027) links the two `sherie-felix-banter` panels in supplied order to standalone Moment v1. Sherie's foreground hand and ruffled cuff identify her viewpoint in panel 1; panel 2 reverses the view to her on the sofa. This is one card-game exchange, not alternative versions. Preserve the illustrated lines, the author's early-familiarity direction, and Felix's continuing attachment to Lynleit. Her initial comfort precedes her awareness and chosen teasing; her diagnosis does not establish Lynleit's reciprocal desire. Exact phase, room ownership, game, and stakes remain open. The unplaced Moment appears on both involved profiles without a fabricated numbered timeline anchor. Intimacy v16 preserves the full source's development choices; Behaviour Audit v13 owns its three advisory paragraph notes. Earlier document and data versions remain isolated.
+Unresolved Tension (MOM-027) accompanies two ordinary Gallery illustrations, reclassified from Panels at the author's request on 26 September. Their `sherie-felix-card-game` sibling group links the opposing viewpoints; both carry Sherie and Felix tags, matching filename slugs, and `data-profile-portrait="false"`. Sherie's foreground hand and ruffled cuff identify her viewpoint in the first image; the other looks toward her on the sofa. Both link to Moment v1, whose Gallery connection opens the pair. The former panel URL, including its second-image fragment, redirects to the corresponding artwork; the pair is absent from the panel registry and its search category. No replacement panel sequence is invented. Preserve the illustrated lines, early familiarity, and Felix's continuing attachment to Lynleit. Exact phase, room ownership, game, and stakes remain open. The Moment still appears on both profiles without a numbered timeline anchor. Current Intimacy and Behaviour Audit references follow the artwork classification; earlier document and data versions remain isolated.
 
 The seven Sleepers above the River panels follow source filenames 1 through 7 as successive beats and link to Moment v2. The author selected their outboard motorboat for the prose on 23 September 2026; v1 preserves the rowing draft. The close-up is an artwork view, not evidence that Kyrien can see the figure's face from below. Keep this unplaced encounter outside numbered timelines and distinct from the Drowned Choir's river operation.
 
@@ -364,7 +369,7 @@ Current/default revisions are the search default. An explicit earlier-versions t
 
 An outline-only Moment uses neutral recorded-fact styling, not the shown/inferred key. A Chapter assignment or actual standalone prose supplies the scene against which reader-knowledge labels can be audited. Do not promote future continuity into demonstrated reader knowledge.
 
-Every supplied Gallery original must have a reachable artwork, production-resource, panel, or World view. Keep earlier supplied portraits in the artwork version selector when importing author-supplied corrections. Unpublished generation studies require explicit approval before becoming public resources.
+Every supplied Gallery original must have a reachable artwork, production-resource, panel, or World view. Keep earlier supplied portraits in the artwork version selector when importing author-supplied corrections unless the author explicitly withdraws them. Unpublished generation studies require explicit approval before becoming public resources.
 
 Gallery originals remain untouched. Generate small WebP display derivatives with `scripts/build-image-previews.mjs`; use these for catalog art, thumbnails, and map avatars. Keep original URLs for full portrait viewing and Gallery source downloads. Collapsed mobile navigation must be invisible and inert, with Escape and focus recovery supported.
 

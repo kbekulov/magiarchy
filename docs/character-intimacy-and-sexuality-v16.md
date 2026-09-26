@@ -39,7 +39,7 @@ These are development directions, not a fixed sequence of new scenes. Neither pa
 
 ### Unresolved Tension: the card-game interlude
 
-The author-supplied [card-game illustrations](../gallery.html?image=char-sherie-felix-card-game-sherie-view) accompany a [standalone Moment draft](../moments.html?moment=unresolved-tension&version=v1). In the first image, the foreground hand and ruffled black cuff belong to Sherie. Felix stands opposite her with cards and a loosened tie, complaining about Lynleit: "She's always like this." The second image reverses the viewpoint. Sherie reclines on the red sofa, cards loose in one hand, the other against her face, and replies, "Looks like you two have unresolved tension." They are paired Gallery artwork, not a panel sequence.
+The author-supplied [two-panel exchange](../gallery.html?panels=sherie-felix-banter) has a [standalone Moment draft](../moments.html?moment=unresolved-tension&version=v1). In the first image, the foreground hand and ruffled black cuff belong to Sherie. Felix stands opposite her with cards and a loosened tie, complaining about Lynleit: "She's always like this." The second image reverses the viewpoint. Sherie reclines on the red sofa, cards loose in one hand, the other against her face, and replies, "Looks like you two have unresolved tension."
 
 The intended progression begins with ordinary comfort. Sherie's aristocratic surroundings have made elegant furniture, clothes, and bodily composure familiar. Her stretched legs, visible stockings, and high-set skirt need not begin as a plan to attract Felix. The source imagines a discrepancy between her simple "I'm comfortable" and his awareness of how she looks a few feet away. The draft stays close to Sherie and shows his interruption and returning glance rather than entering his thoughts.
 
@@ -294,8 +294,6 @@ Lynleit objects to her playing with him. The boast does not define the origin or
 ### Writing guardrail
 
 Allow a sincere request to sound less polished than her diplomatic speech.
-
-[Character Aphorisms](../docs.html?doc=character-aphorisms#sherie) collects two further author-supplied sayings for Sherie. They have no assigned scene and do not change the relationships described here.
 
 Keep the care reciprocal. Felix can respond when her performance falters, just as she can stay attentive when he stops entertaining her. Neither needs to turn every such moment into a confession.
 

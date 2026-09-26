@@ -7,30 +7,37 @@ export async function testSherieFelixBanter(page, origin, engine) {
     await page.waitForLoadState('networkidle');
   };
   const moment = JSON.parse(fs.readFileSync('moments/index.json', 'utf8')).find(record => record.slug === 'unresolved-tension');
-  const panels = JSON.parse(fs.readFileSync('gallery/panels.json', 'utf8')).find(record => record.id === 'sherie-felix-banter');
+  const panels = JSON.parse(fs.readFileSync('gallery/panels.json', 'utf8'));
+  const imageIds = ['sherie', 'felix'].map(viewpoint => `char-sherie-felix-card-game-${viewpoint}-view`);
   assert.equal(moment.timelinePhase, null);
   assert.deepEqual(moment.characterAnchors, []);
   assert.deepEqual(moment.characters.map(character => character.slug), ['sherie', 'felix']);
-  assert.deepEqual(panels.panels.map(panel => panel.id), ['panel-1', 'panel-2']);
-  assert.ok(panels.panels.every(panel => !panel.composition));
+  assert.ok(!panels.some(record => record.id === 'sherie-felix-banter'));
+  assert.equal(moment.artwork.id, imageIds[0]);
 
+  // A legacy redirect must not interrupt the site-wide player's module import.
+  await page.route('**/persistent-music.js', async route => {
+    await new Promise(resolve => setTimeout(resolve, 120));
+    await route.continue();
+  }, { times: 1 });
   for (const width of [390, 1440]) {
     await page.setViewportSize({ width, height: 900 });
     await visit('gallery.html?panels=sherie-felix-banter');
-    assert.equal(await page.locator('#panel-count').textContent(), '2 beats · 2 images');
-    assert.equal(await page.locator('#panel-context a').getAttribute('href'), 'moments.html?moment=unresolved-tension&version=v1');
-    assert.deepEqual(await page.locator('.scene-panel-art img').evaluateAll(images => images.map(image => image.getAttribute('src'))), panels.panels.map(panel => panel.display));
-    await page.locator('#panel-slide-next').click();
-    await page.waitForFunction(() => document.querySelector('#panel-slideshow').dataset.index === '1');
-    await page.locator('#panel-slide-next').click();
-    await page.waitForFunction(() => document.querySelector('#panel-slideshow').dataset.index === '0');
+    await page.waitForURL(`**/gallery.html?image=${imageIds[0]}`);
+    await page.locator('#gallery-detail-image').evaluate(image => image.decode());
+    assert.equal(await page.locator('#gallery-detail-moment').getAttribute('href'), `${origin}/moments.html?moment=unresolved-tension&version=v1`);
+    assert.equal(await page.locator('#gallery-siblings a').count(), 2);
+    assert.ok(await page.locator('#gallery-image-versions').isHidden());
     assert.ok(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1));
-    await page.screenshot({ path: `test-results/${engine}-banter-panels-${width}.png` });
-    await page.locator('#panel-index summary').click();
-    await page.locator('#panel-jump-links a').last().focus();
+    await page.locator('#gallery-siblings').scrollIntoViewIfNeeded();
+    await page.screenshot({ path: `test-results/${engine}-banter-artwork-${width}.png` });
+    await page.locator('#gallery-siblings a').last().focus();
     await page.keyboard.press('Enter');
-    await page.waitForURL(url => url.hash === '#panel-2');
-    assert.ok(await page.locator('#panel-2').evaluate(element => element === document.activeElement));
+    await page.waitForURL(`**/gallery.html?image=${imageIds[1]}`);
+    await page.locator('#gallery-detail-image').evaluate(image => image.decode());
+    assert.equal(await page.locator('#gallery-detail-source').getAttribute('href'), `media/gallery/images/characters/${imageIds[1]}.png`);
+    await visit('gallery.html?panels=sherie-felix-banter#panel-2');
+    await page.waitForURL(`**/gallery.html?image=${imageIds[1]}`);
 
     await visit('moments.html?moment=unresolved-tension&version=v1');
     assert.equal(await page.locator('#moment-reader-title').textContent(), 'Unresolved Tension');
@@ -38,7 +45,8 @@ export async function testSherieFelixBanter(page, origin, engine) {
     assert.equal(await page.locator('#moment-scene-prose > p').count(), moment.prose.length);
     assert.equal(await page.locator('#moment-known > .is-inferred').count(), 2);
     assert.equal(await page.locator('#moment-scene-prose .behavior-gutter-marker').count(), 3);
-    assert.ok(await page.locator('#moment-connection-grid a[href="gallery.html?panels=sherie-felix-banter"]').isVisible());
+    assert.ok(await page.locator(`#moment-connection-grid a[href="gallery.html?image=${imageIds[0]}"]`).isVisible());
+    assert.equal(await page.locator('#moment-connection-grid a[href="gallery.html?panels=sherie-felix-banter"]').count(), 0);
     assert.deepEqual(await page.locator('#moment-reader-characters a').allTextContents(), ['Sherie', 'Felix']);
     assert.ok(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1));
     await page.locator('#moment-scene-prose').scrollIntoViewIfNeeded();
@@ -49,14 +57,16 @@ export async function testSherieFelixBanter(page, origin, engine) {
     await page.keyboard.press('Escape');
     assert.ok(await page.locator('#behavior-note-tooltip').isHidden());
   }
-  for (const panel of panels.panels) {
-    const response = await page.request.get(`${origin}/${panel.src}`);
+  for (const imageId of imageIds) {
+    const source = `media/gallery/images/characters/${imageId}.png`;
+    const response = await page.request.get(`${origin}/${source}`);
     assert.equal(response.status(), 200);
-    assert.deepEqual(await response.body(), fs.readFileSync(panel.src));
+    assert.deepEqual(await response.body(), fs.readFileSync(source));
   }
   for (const character of ['sherie', 'felix']) {
     await visit(`character.html?character=${character}`);
     assert.equal(await page.locator('.character-moment-card[href="moments.html?moment=unresolved-tension"]').count(), 1);
+    assert.equal(await page.locator('.profile-art-thumbnails img[src*="card-game"]').count(), 0, 'Scene illustrations should not become profile portraits');
   }
   await visit('story.html');
   assert.equal(await page.locator('.timeline-panel-link[href="gallery.html?panels=sherie-felix-banter"]').count(), 0, 'Unplaced exchange must not gain a numbered phase');
@@ -78,6 +88,7 @@ export async function testSherieFelixBanter(page, origin, engine) {
   }
   const search = JSON.parse(fs.readFileSync('search-index.json', 'utf8')).entries;
   assert.ok(search.some(record => record.url === 'moments.html?moment=unresolved-tension'));
-  assert.ok(search.some(record => record.url === 'gallery.html?panels=sherie-felix-banter'));
-  console.log(`${engine}: card-game panels, Moment, character links, unplaced chronology, and document history passed.`);
+  for (const imageId of imageIds) assert.ok(search.some(record => record.url === `gallery.html?image=${imageId}` && record.current));
+  assert.ok(!search.some(record => record.url === 'gallery.html?panels=sherie-felix-banter'));
+  console.log(`${engine}: paired card-game artwork, legacy links, Moment, unplaced chronology, and document history passed.`);
 }

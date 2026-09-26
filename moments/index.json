@@ -4574,6 +4574,10 @@
   },
   {
     "slug": "unresolved-tension",
+    "artwork": {
+      "id": "char-sherie-felix-card-game-sherie-view",
+      "title": "Unresolved Tension: two viewpoints"
+    },
     "code": "MOM-027",
     "title": "Unresolved Tension",
     "status": "Scene draft",

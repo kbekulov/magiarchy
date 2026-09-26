@@ -38,7 +38,13 @@ export async function testGalleryResources(page, origin, engine) {
     }
   }
   await visit('gallery.html');
-  assert.equal(await page.locator('.gallery-card[data-character~="kyrien"]').count(), 6);
+  assert.deepEqual(await page.locator('.gallery-card[data-character~="kyrien"]').evaluateAll(cards => cards.map(card => card.dataset.image).sort()), [
+    'char-drake-sherie-kyrien-lynleit-felix-lineup-sketch-01',
+    'char-kyrien-arc-1-chibi-beige-jacket',
+    'char-kyrien-concept-closeup-three-variants',
+    'char-kyrien-concept-standing-three-variants',
+    'char-kyrien-red-sofa-pistol'
+  ]);
   assert.equal(await page.locator('.gallery-card[data-character~="kyrien"][data-profile-portrait="false"]').count(), 3, 'Concept sheets and lineup sketches must stay outside the portrait pool');
   const lineupId = 'char-drake-sherie-kyrien-lynleit-felix-lineup-sketch-01';
   for (const slug of ['drake', 'sherie', 'kyrien', 'lynleit', 'felix']) {

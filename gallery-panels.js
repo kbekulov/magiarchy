@@ -1,5 +1,13 @@
 (() => {
   const params = new URLSearchParams(location.search);
+  // The author reclassified this pair as artwork. Preserve published reader links.
+  if (params.get('panels') === 'sherie-felix-banter' && !params.has('image') && !params.has('resource')) {
+    const viewpoint = location.hash === '#panel-2' ? 'felix' : 'sherie';
+    const redirect = () => location.replace(`gallery.html?image=char-sherie-felix-card-game-${viewpoint}-view`);
+    // Safari can report a failed module import if navigation cancels the player setup.
+    Promise.resolve(window.archiveMusicReady).then(redirect, redirect);
+    return;
+  }
   if (params.has('image') || params.has('resource') || (params.get('collection') !== 'panels' && !params.has('panels'))) return;
   const $ = selector => document.querySelector(selector);
   const node = (tag, text, className) => {

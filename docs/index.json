@@ -1,5 +1,25 @@
 [
   {
+    "slug": "character-aphorisms",
+    "title": "Character Aphorisms",
+    "topic": "Writer's Dialogue Collection",
+    "description": "Sherie's sayings on games, catastrophe, catharsis, and the uncertainty of Lynleit.",
+    "file": "character-aphorisms.md",
+    "updated": "2026-09-26",
+    "speakers": [
+      "Sherie"
+    ],
+    "defaultVersion": "v1",
+    "versions": [
+      {
+        "id": "v1",
+        "label": "v1 · Current",
+        "file": "character-aphorisms.md",
+        "updated": "2026-09-26"
+      }
+    ]
+  },
+  {
     "slug": "kyrien-origin-and-recruitment",
     "title": "Kyrien: Family, Justice, and Recruitment",
     "topic": "Character Continuity",
@@ -565,11 +585,11 @@
     "topic": "Writer's Character Reference",
     "file": "character-behavior-audit.md",
     "updated": "2026-09-26",
-    "description": "Paragraph guidance for Sherie and Felix's card-game interlude, alongside existing scene notes.",
+    "description": "Card-game paragraph guidance with the illustrations classified as Gallery Artwork.",
     "speakers": [
       "Character Archive"
     ],
-    "defaultVersion": "v13",
+    "defaultVersion": "v14",
     "versions": [
       {
         "id": "v1",
@@ -669,10 +689,18 @@
       },
       {
         "id": "v13",
-        "label": "v13 · Current",
-        "file": "character-behavior-audit.md",
+        "label": "v13 · Archived",
+        "file": "character-behavior-audit-v13.md",
         "updated": "2026-09-26",
         "description": "Paragraph guidance for Sherie and Felix's card-game interlude, alongside existing scene notes.",
+        "behaviorFile": "character-behavior-notes-v13.json"
+      },
+      {
+        "id": "v14",
+        "label": "v14 · Current",
+        "file": "character-behavior-audit.md",
+        "updated": "2026-09-26",
+        "description": "Card-game paragraph guidance with the illustrations classified as Gallery Artwork.",
         "behaviorFile": "character-behavior-notes.json"
       }
     ]
@@ -683,11 +711,11 @@
     "topic": "Writer's Character Reference",
     "file": "character-intimacy-and-sexuality.md",
     "updated": "2026-09-26",
-    "description": "Sherie and Felix's card-game interlude: familiar comfort, noticed attention, and uneven recognition.",
+    "description": "The card-game illustrations in Gallery Artwork; Sherie's collected sayings remain separate from scene evidence.",
     "speakers": [
       "Character Archive"
     ],
-    "defaultVersion": "v16",
+    "defaultVersion": "v17",
     "versions": [
       {
         "id": "v1",
@@ -811,10 +839,18 @@
       },
       {
         "id": "v16",
-        "label": "v16 · Current",
-        "file": "character-intimacy-and-sexuality.md",
+        "label": "v16 · Archived",
+        "file": "character-intimacy-and-sexuality-v16.md",
         "updated": "2026-09-26",
         "description": "Sherie and Felix's card-game interlude: familiar comfort, noticed attention, and uneven recognition.",
+        "tensionFile": "sexual-tension-notes-v16.json"
+      },
+      {
+        "id": "v17",
+        "label": "v17 · Current",
+        "file": "character-intimacy-and-sexuality.md",
+        "updated": "2026-09-26",
+        "description": "The card-game illustrations in Gallery Artwork; Sherie's collected sayings remain separate from scene evidence.",
         "tensionFile": "sexual-tension-notes.json"
       }
     ]

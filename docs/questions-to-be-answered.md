@@ -50,6 +50,7 @@ Story, character, world, relationship, institution, location, and event question
 | Sherie and Felix | When does Sherie first feel unseen, what boundary does she set, and how does Felix respond? | 0% |
 | Sherie and Felix | Which moments let one stop performing and receive care from the other, and when do they consciously choose intimacy? | 0% |
 | Unresolved Tension | Whose sitting room hosts the card game, what game are they playing, and what prompted Felix's complaint about Lynleit? | 0% |
+| Character Aphorisms | In which conversations does Sherie use her sayings about catastrophe and catharsis, and Schrödinger's buttocks; who hears them? | 0% |
 | Items & Artefacts | What does "hide of leviathan" mean, and is the material connected to the river phenomenon recorded as HI-004? | 0% |
 | Family | When and how does Kyrien learn that Lynleit bore his son, and where does that revelation belong in relation to Lynleit's elusive return and his leadership of MSF? | 0% |
 | Helena | Is Helena a Magus, and how does she gain access to supernatural institutions? | 5% |

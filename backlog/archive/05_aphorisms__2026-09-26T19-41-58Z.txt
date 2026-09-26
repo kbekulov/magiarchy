@@ -1,0 +1,14 @@
+Create an aphorisms document where we collect the unique but intriguing aphorisms of characters that are unique to this project/story. Of course with below examples fix them to sound more memorable and colourful.
+
+I'll start.
+
+Sherie: "When males and females play games, rewards can range from catastrophic to cathartic. That's a whim of nature."
+Sherie: "When speaking of a woman, a Schrödinger’s Buttocks is one that presents two possibilities: either she intends to get to know you better, or to kick you head in. And that's Lynleit."
+
+also when you updated portraits of sherie and kyrien recently, you created v2 of the same portrait for them, I don't need that, just remove v1 portrait versions completely for both of them, and rename the v2 to normal naming
+
+also lynleit's "char-lynleit-blue-gown-ballroom" should have only one version
+
+also incorporate new portrait of yulia
+
+lets move the felix/sherie panel to gallery images, as I will create a more panely panel for them later

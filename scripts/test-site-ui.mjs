@@ -13,6 +13,7 @@ import { testArtworkVersions } from './test-artwork-versions.mjs';
 import { testMusicMovements } from './test-music-movements.mjs';
 import { testHomeFeed } from './test-home-feed-ui.mjs';
 import { testSherieFelixBanter } from './test-sherie-felix-banter.mjs';
+import { testAphorisms } from './test-aphorisms.mjs';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const mime = { '.html': 'text/html', '.js': 'text/javascript', '.json': 'application/json', '.css': 'text/css', '.png': 'image/png', '.webp': 'image/webp', '.md': 'text/plain', '.mp3': 'audio/mpeg', '.wav': 'audio/wav' };
@@ -56,7 +57,7 @@ try {
     try {
       const page = await browser.newPage({ reducedMotion: 'reduce' });
       const errors = [];
-      page.on('pageerror', error => errors.push(error.message));
+      page.on('pageerror', error => errors.push(`${page.url()}: ${error.message}`));
       await page.route('https://**/*', route => route.abort());
       const visit = async route => {
         await page.goto(`${origin}/${route}`);
@@ -68,6 +69,7 @@ try {
         continue;
       }
       if (process.env.TEST_GALLERY_ONLY === '1') {
+        await testAphorisms(page, origin, engine);
         await testSherieFelixBanter(page, origin, engine);
         await testArtworkVersions(page, origin, engine);
         await testGalleryResources(page, origin, engine);
@@ -81,6 +83,7 @@ try {
         continue;
       }
       if (process.env.TEST_BANTER_ONLY === '1') {
+        await testAphorisms(page, origin, engine);
         await testSherieFelixBanter(page, origin, engine);
         assert.deepEqual(errors, [], `${engine}: card-game reader errors`);
         continue;
@@ -97,6 +100,7 @@ try {
       }
       await testSherieFelixBanter(page, origin, engine);
       await testNarveanFog(page, origin, engine);
+      await testAphorisms(page, origin, engine);
       await testMusicMovements(page, origin, engine);
       await testArtworkVersions(page, origin, engine);
       if (process.env.TEST_FOG_ONLY === '1') {

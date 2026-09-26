@@ -1,0 +1,1710 @@
+{
+  "updated": "2026-09-26",
+  "sections": [
+    {
+      "id": "river-operation",
+      "title": "The river operation"
+    },
+    {
+      "id": "nameless-street",
+      "title": "The Nameless Street"
+    },
+    {
+      "id": "relationships-under-pressure",
+      "title": "Relationships under pressure"
+    },
+    {
+      "id": "long-term-inheritance",
+      "title": "Long-term inheritance"
+    },
+    {
+      "id": "academy-crisis",
+      "title": "The Academy crisis"
+    },
+    {
+      "id": "cardiff-venture",
+      "title": "The Cardiff venture"
+    },
+    {
+      "id": "doom-address",
+      "title": "Doom Has an Address"
+    },
+    {
+      "id": "park-bench",
+      "title": "The bench under the lamp"
+    },
+    {
+      "id": "arc-zero",
+      "title": "Arc 0 development"
+    },
+    {
+      "id": "church-interlude",
+      "title": "Only Eyes for You"
+    },
+    {
+      "id": "unresolved-tension",
+      "title": "Unresolved Tension"
+    }
+  ],
+  "notes": [
+    {
+      "id": "river-lynleit",
+      "section": "river-operation",
+      "kind": "female",
+      "title": "Lynleit",
+      "basis": "Suspected INFJ, Ni-led reading with strong Fe",
+      "text": "Once Lynleit is ashore, the feeling of hands holding her down may linger even while she tries to give orders. Her later complaint about the jacket can be petty and heartfelt: she liked it and could not save it.",
+      "chapterMatch": "She kicked again. The grip tightened.",
+      "chapters": [
+        "the-empty-boats-beneath-the-bridge"
+      ],
+      "moments": [
+        "the-boat-beneath-the-bridge"
+      ],
+      "momentFact": {
+        "the-boat-beneath-the-bridge": 24
+      }
+    },
+    {
+      "id": "river-kyrien",
+      "section": "river-operation",
+      "kind": "male",
+      "title": "Kyrien",
+      "basis": "ISTP lean",
+      "text": "Keep Kyrien's answer literal and brief. He knows what he saw and chooses not to say it. His officer upbringing and watchfulness can appear in his attention to the search on the other bank.",
+      "chapterMatch": "Nothing I can explain.",
+      "chapters": [
+        "the-empty-boats-beneath-the-bridge"
+      ],
+      "moments": [
+        "the-boat-beneath-the-bridge"
+      ],
+      "momentFact": {
+        "the-boat-beneath-the-bridge": 40
+      }
+    },
+    {
+      "id": "river-maren",
+      "section": "river-operation",
+      "kind": "female",
+      "title": "Maren",
+      "basis": "Type unknown",
+      "text": "Maren is a trained officer, not a weaker swimmer. The horror lies in losing ownership of her own movement when hands seize her legs. Once ashore, a short sensory statement is more credible than a theory: she knows what fingers felt like, but does not claim to know who they belonged to. Anger or embarrassment at having needed to be hauled over the wall may surface after the immediate shock.",
+      "chapterMatch": "It was hands",
+      "chapters": [
+        "the-empty-boats-beneath-the-bridge"
+      ],
+      "moments": [
+        "the-boat-beneath-the-bridge"
+      ],
+      "momentFact": {
+        "the-boat-beneath-the-bridge": 18
+      }
+    },
+    {
+      "id": "river-reiner",
+      "section": "river-operation",
+      "kind": "male",
+      "title": "Reiner",
+      "basis": "ISTJ with strong Si and Te",
+      "text": "Reiner's greater build makes him the practical anchor for Maren and Ivo, but the river prevents strength from solving the whole problem. He is likely to convert fear into tasks: secure the person, reach the wall, count the team, check the line. His later guilt would appear as stricter procedure and repeated equipment checks rather than a broad confession.",
+      "chapterMatch": "Reiner forced Maren toward it.",
+      "chapters": [
+        "the-empty-boats-beneath-the-bridge"
+      ],
+      "moments": [
+        "the-boat-beneath-the-bridge"
+      ],
+      "momentFact": {
+        "the-boat-beneath-the-bridge": 19
+      }
+    },
+    {
+      "id": "river-felix",
+      "section": "river-operation",
+      "kind": "male",
+      "title": "Felix",
+      "basis": "Suspected ENFP, habitual alternatives and personal loyalty",
+      "text": "Remaining ashore should frustrate Felix because his most valued people descend without him. His role is still decisive. He keeps the cameras frozen, hears the failure before he can see it, abandons the van at the correct moment, and turns a communications fallback into a physical rescue line. A joke after the extraction can be an attempt to restore ordinary human rhythm, not proof that he took the danger lightly.",
+      "chapterMatch": "Felix left the van only when the operation had already collapsed.",
+      "chapters": [
+        "the-empty-boats-beneath-the-bridge"
+      ],
+      "moments": [
+        "the-boat-beneath-the-bridge"
+      ],
+      "momentFact": {
+        "the-boat-beneath-the-bridge": 19
+      }
+    },
+    {
+      "id": "river-blue-flame",
+      "section": "river-operation",
+      "kind": "story",
+      "title": "Blue flame under the river",
+      "basis": "Story-pressure suggestion",
+      "text": "The blue flame can expose the scale of the horror without an explanation. Hands burning in blue beneath the surface would briefly illuminate different ages, sizes, and states of decay before the river closes over them again. The image would let the reader understand that Lynleit is fighting accumulated dead rather than a single submerged attacker.",
+      "chapterMatch": "Lynleit twisted downward instead of up.",
+      "chapters": [
+        "the-empty-boats-beneath-the-bridge"
+      ],
+      "moments": [
+        "the-boat-beneath-the-bridge"
+      ],
+      "momentFact": {
+        "the-boat-beneath-the-bridge": 24
+      }
+    },
+    {
+      "id": "pressure-lynleit-interrogation",
+      "section": "relationships-under-pressure",
+      "kind": "female",
+      "title": "Lynleit",
+      "basis": "Suspected INFJ, Ni-led reading with strong Fe, MSF duty primary",
+      "text": "Lynleit's concealed knowledge that Kyrien nearly harmed her gives the interrogation a personal edge, but she does not make the injury the purpose of the scene. Her MSF responsibility and anticipation of a larger threat remain decisive. The private anger should appear through unusually exact questions, controlled distance, or refusal to explain herself rather than flirtation or an emotional confession.",
+      "chapterMatch": "Kyrien now faces prison",
+      "chapters": [
+        "after-the-failed-attempt"
+      ],
+      "moments": [
+        "interrogation-after-the-failed-attempt"
+      ],
+      "momentFact": {
+        "interrogation-after-the-failed-attempt": 3
+      },
+      "versions": [
+        "v1",
+        "v2"
+      ]
+    },
+    {
+      "id": "pressure-lynleit-interrogation-v3",
+      "section": "relationships-under-pressure",
+      "kind": "female",
+      "title": "Lynleit",
+      "basis": "Suspected INFJ with strong Fe; duty, guilt, and concealed anger",
+      "text": "Let the welfare check be a practical response to what she has just learned. It need not soften every later question or erase her wish to recruit him. Her attention to his mother's needs is not flirtation, and she must never threaten the mother to obtain cooperation.",
+      "chapterMatch": "Is someone with her now?",
+      "chapters": [
+        "after-the-failed-attempt"
+      ],
+      "moments": [
+        "interrogation-after-the-failed-attempt"
+      ],
+      "momentFact": {
+        "interrogation-after-the-failed-attempt": 8
+      },
+      "versions": [
+        "v3"
+      ]
+    },
+    {
+      "id": "pressure-kyrien-family-v3",
+      "section": "relationships-under-pressure",
+      "kind": "male",
+      "title": "Kyrien",
+      "basis": "Suspected ISTP; close observation, legal experience, and family care",
+      "text": "Keep his attention on the missed shift and the neighbour's availability as well as the questioning. His guarded replies come from this history, not an assumption that men cannot speak about distress. Let him follow competent advice rather than suddenly become an expert in law.",
+      "chapterMatch": "The shift he had missed would have paid the neighbour",
+      "chapters": [
+        "after-the-failed-attempt"
+      ],
+      "moments": [
+        "interrogation-after-the-failed-attempt"
+      ],
+      "momentFact": {
+        "interrogation-after-the-failed-attempt": 7
+      },
+      "versions": [
+        "v3"
+      ]
+    },
+    {
+      "id": "pressure-lawyer-proof-v3",
+      "section": "relationships-under-pressure",
+      "kind": "story",
+      "title": "Truth without accountability",
+      "basis": "Nasu advisory framework; professional competence and institutional refusal",
+      "text": "Keep the original and amended statement concrete enough for Kyrien and the reader to understand the legal achievement. The later closed review should defeat accountability without making the lawyer's work fraudulent or useless. Do not give every official the same knowledge of the magical reason.",
+      "chapterMatch": "The preliminary review supports us",
+      "chapters": [
+        "after-the-failed-attempt"
+      ],
+      "moments": [
+        "interrogation-after-the-failed-attempt"
+      ],
+      "momentFact": {
+        "interrogation-after-the-failed-attempt": 1
+      },
+      "versions": [
+        "v3"
+      ]
+    },
+    {
+      "id": "pressure-card-tells",
+      "section": "relationships-under-pressure",
+      "kind": "story",
+      "title": "Cards and physical tells",
+      "basis": "Approved sexual-tension pattern",
+      "text": "Keep the games brief and embedded in operational downtime. Kyrien should win more often through technical play, while Lynleit gains ground by reading him. Their attention becomes sexual because hands, breathing, gaze, and proximity begin to distract them, not because either character starts performing romance. Lynleit notices the intrusion and returns to the mission.",
+      "chapterMatch": "The rematch continued on the third night.",
+      "chapters": [
+        "the-empty-boats-beneath-the-bridge"
+      ],
+      "moments": [
+        "the-boat-beneath-the-bridge"
+      ],
+      "momentFact": {
+        "the-boat-beneath-the-bridge": 8
+      }
+    },
+    {
+      "id": "pressure-kyrien-voluntary-stay",
+      "section": "relationships-under-pressure",
+      "kind": "male",
+      "title": "Kyrien",
+      "basis": "ISTP lean, officer ethics and autonomy",
+      "text": "Kyrien's decision to remain must occur when departure is genuinely possible and Lynleit's original authority has lost practical force. He is unlikely to explain the choice romantically. Staying, accepting the danger, and reopening contact are enough to separate voluntary loyalty from the vigilance of a coerced asset.",
+      "chapters": [],
+      "moments": [
+        "the-first-lines-back-into-msf"
+      ],
+      "momentFact": {
+        "the-first-lines-back-into-msf": 5
+      }
+    },
+    {
+      "id": "pressure-kyrien-battle-reward",
+      "section": "relationships-under-pressure",
+      "kind": "male",
+      "title": "Kyrien",
+      "basis": "ISTP lean, competitive drive and paternal inheritance",
+      "text": "The answer should remain immediate and unadorned. Kyrien does not reassure Lynleit or make her the reward because he experiences the fight as a chance to test himself. The useful ambiguity lies in what he does not examine: choosing a battle repeatedly places him beside the same woman, even while he continues to describe the motive as his own.",
+      "chapters": [],
+      "moments": [
+        "because-theres-a-battle-to-be-fought"
+      ],
+      "momentFact": {
+        "because-theres-a-battle-to-be-fought": 2
+      }
+    },
+    {
+      "id": "pressure-mikhail-aftermath",
+      "section": "relationships-under-pressure",
+      "kind": "story",
+      "title": "The argument after Mikhail",
+      "basis": "Approved relationship-pressure beat",
+      "text": "The argument remains about Kyrien exposing Felix and Reiner. Physical awareness belongs only in the delayed step apart and should not soften either position. Kyrien remains to help without apologizing, while Lynleit returns immediately to the institutional problem he has worsened.",
+      "chapters": [],
+      "moments": [
+        "mikhail-discovers-the-breach"
+      ],
+      "momentFact": {
+        "mikhail-discovers-the-breach": 10
+      }
+    },
+    {
+      "id": "nameless-lynleit",
+      "section": "nameless-street",
+      "kind": "female",
+      "title": "Lynleit",
+      "basis": "Suspected INFJ, Ni-led reading with strong Fe",
+      "text": "The crying girl works as a lure because Lynleit notices a vulnerable person and assumes responsibility before she can test the situation. This does not require a general claim that women are more nurturing. Her Fe-oriented leadership, strong symbolic intuition, and experience of being watched make the trap personal. Afterward she may be angrier that the street used her protective instinct than frightened by the child herself.",
+      "chapterMatch": "Her crying continued somewhere beyond the passage.",
+      "chapters": [
+        "the-nameless-street"
+      ],
+      "moments": [
+        "the-nameless-street"
+      ],
+      "momentFact": {
+        "the-nameless-street": 6
+      }
+    },
+    {
+      "id": "nameless-felix",
+      "section": "nameless-street",
+      "kind": "male",
+      "title": "Felix",
+      "basis": "Suspected ENFP, habitual alternatives and personal loyalty",
+      "text": "Felix experiences an ordinary physical emergency while Lynleit experiences the impossible street. His first response is immediate and tactile: get close, make noise, fan her face, check whether she responds. Once she wakes, his familiarity gives him room to tease, but affection should make him notice that her explanation is not a performance. He can believe that something happened without pretending to understand it.",
+      "chapterMatch": "His expression changed. The playfulness withdrew",
+      "chapters": [
+        "the-nameless-street"
+      ],
+      "moments": [
+        "the-nameless-street"
+      ],
+      "momentFact": {
+        "the-nameless-street": 12
+      }
+    },
+    {
+      "id": "pressure-helena",
+      "section": "relationships-under-pressure",
+      "kind": "female",
+      "title": "Helena",
+      "basis": "ENTJ with strong Te",
+      "text": "Helena's grievance against Fionn becomes stronger if it includes the private humiliation of being treated as a wife in public and a security risk in his deepest life. Her response remains character-specific: she turns exclusion into a structural problem to remove. She is not dangerous because resentment makes her emotional. She is dangerous because she can organize resentment into policy, access, and succession.",
+      "chapters": [],
+      "moments": [
+        "fionn-is-eliminated"
+      ],
+      "momentFact": {
+        "fionn-is-eliminated": 6
+      }
+    },
+    {
+      "id": "pressure-fionn",
+      "section": "relationships-under-pressure",
+      "kind": "male",
+      "title": "Fionn",
+      "basis": "INTJ with strong Ni",
+      "text": "Fionn can sincerely believe that silence is a form of protection because his identity as father, husband, director, and Magiarch has trained him to equate love with containment. A masculine officer culture may reinforce the habit of carrying danger without asking family to share it. The flaw is not lack of feeling. It is his confidence that private endurance gives him the right to decide what everyone else may know.",
+      "chapters": [],
+      "moments": [
+        "fionn-is-eliminated"
+      ],
+      "momentFact": {
+        "fionn-is-eliminated": 0
+      }
+    },
+    {
+      "id": "pressure-yulia",
+      "section": "relationships-under-pressure",
+      "kind": "female",
+      "title": "Yulia",
+      "basis": "ISTJ with strong Si",
+      "text": "Yulia's decision to follow Hiyu into the park can contain two competing reactions: procedural disgust at the trespass and a familiar expectation that she will be the one who prevents his idea from killing him. As a young woman beside a reckless male friend, she may resent being pushed into practical responsibility while still choosing it. Her care appears in preparation, correction, and staying present rather than an open admission of attraction.",
+      "chapters": [],
+      "moments": [
+        "students-beyond-the-cordon"
+      ],
+      "momentFact": {
+        "students-beyond-the-cordon": 4
+      }
+    },
+    {
+      "id": "pressure-hiyu",
+      "section": "relationships-under-pressure",
+      "kind": "male",
+      "title": "Hiyu",
+      "basis": "ENTP with strong Ne",
+      "text": "Hiyu's confidence in an elegant possibility may make the physical risk feel secondary until Yulia reacts to it. His eventual attachment should develop through dependence on the person who makes his ideas survivable. He does not need to become conventionally suave when desire appears. Confusion is more consistent if he recognizes that losing Yulia's company would be intolerable before he recognizes the feeling as romantic.",
+      "chapters": [],
+      "moments": [
+        "students-beyond-the-cordon"
+      ],
+      "momentFact": {
+        "students-beyond-the-cordon": 3
+      }
+    },
+    {
+      "id": "inheritance-kyrien",
+      "section": "long-term-inheritance",
+      "kind": "male",
+      "title": "Kyrien",
+      "basis": "Suspected ISTP moving into command",
+      "text": "Directing MSF while Lynleit carries the Magiarchate forces Kyrien into a role built around speech, delegation, and institutional patience. His instinct may be to solve pressure alone because that resembles the officer ideal inherited from his father. A believable failure occurs when he withholds a burden that subordinates needed to understand, repeating Fionn's mistake in a different personality.",
+      "chapters": [],
+      "moments": []
+    },
+    {
+      "id": "academy-myka-survival",
+      "section": "academy-crisis",
+      "kind": "story",
+      "title": "Myka earns the outcome",
+      "basis": "Story-pressure suggestion",
+      "text": "Myka's eventual first-place graduation should be earned through decisions she makes during the Academy crisis, not granted because Natalia and Kyrien rescue her. Their help can keep her alive or give her access, but at least one decisive discovery, refusal, or use of magecraft should belong to Myka alone and expose a weakness that follows her into MSF.",
+      "chapters": [],
+      "moments": [
+        "terrors-inside-the-academy"
+      ],
+      "momentFact": {
+        "terrors-inside-the-academy": 0
+      }
+    },
+    {
+      "id": "academy-kyrien-outsider",
+      "section": "academy-crisis",
+      "kind": "male",
+      "title": "Kyrien",
+      "basis": "ISTP lean, non-Magus field operator",
+      "text": "Kyrien's usefulness inside the Academy should come from seeing an ordinary operational pattern that trained Magi dismiss because they are looking for a magecraft explanation. His outsider status must also cost him: he cannot read magical danger directly and needs Myka or Natalia to interpret what his field instincts expose.",
+      "chapters": [],
+      "moments": [
+        "terrors-inside-the-academy"
+      ],
+      "momentFact": {
+        "terrors-inside-the-academy": 9
+      }
+    },
+    {
+      "id": "cardiff-mikhail-capability",
+      "section": "cardiff-venture",
+      "kind": "male",
+      "title": "Father Mikhail",
+      "basis": "XNJ lean, Church special envoy and confirmed counter-Magus field operative",
+      "text": "Mikhail's capability is strongest when the reader learns it through the decisions that keep him alive, not through a summary of techniques. Solitary endurance should expose what his Church training asks him to sacrifice, while at least one successful choice should become the reason Lynleit cannot dismiss his method as simple cruelty.",
+      "chapters": [],
+      "moments": [
+        "father-mikhails-foreign-venture"
+      ],
+      "momentFact": {
+        "father-mikhails-foreign-venture": 3
+      }
+    },
+    {
+      "id": "cardiff-moral-rift",
+      "section": "cardiff-venture",
+      "kind": "story",
+      "title": "Two effective methods",
+      "basis": "Nasu audit story-pressure suggestion",
+      "text": "The moral conflict should not make Lynleit naive or Mikhail a caricature. Each method needs to solve something the other cannot, and each needs a human cost the other recognizes. Their protection of one another remains professional and deliberate even while the disagreement makes later cooperation in Narvea harder.",
+      "chapters": [],
+      "moments": [
+        "father-mikhails-foreign-venture"
+      ],
+      "momentFact": {
+        "father-mikhails-foreign-venture": 8
+      }
+    },
+    {
+      "id": "inheritance-jacket-form",
+      "section": "long-term-inheritance",
+      "kind": "story",
+      "title": "The jacket form",
+      "basis": "Story-pressure suggestion",
+      "text": "The first time the leviathan-hide coat imitates Lynleit's lost suede jacket could occur when the resemblance is emotionally inconvenient. The form would turn an irritable complaint about clothing into posthumous evidence that Fionn noticed more of her ordinary preferences than his secrecy allowed him to say.",
+      "chapters": [],
+      "moments": [
+        "the-coat-fionn-left-behind"
+      ],
+      "momentFact": {
+        "the-coat-fionn-left-behind": 5
+      }
+    },
+    {
+      "id": "inheritance-coat-choice",
+      "section": "long-term-inheritance",
+      "kind": "story",
+      "title": "Protection requires a choice",
+      "basis": "Story-pressure suggestion",
+      "text": "The coat works best as protection with judgment rather than passive armour. Its need to be placed over a specific wound or person forces Lynleit to choose what she covers. Its autonomous form can inconvenience her, but the decision to protect remains hers.",
+      "chapters": [],
+      "moments": [
+        "the-coat-fionn-left-behind"
+      ],
+      "momentFact": {
+        "the-coat-fionn-left-behind": 4
+      }
+    },
+    {
+      "id": "doom-lynleit-method",
+      "section": "doom-address",
+      "kind": "female",
+      "title": "Lynleit",
+      "basis": "Canon behavior, ENFJ with strong Ni and MSF duty primary",
+      "text": "Lynleit rejects the fatal treatment and keeps looking. Her research is competent; discussing its sexual implication with Kyrien is where she becomes evasive. Do not repeat a defense of her leadership after each awkward response.",
+      "chapterMatch": "She took the reports away",
+      "chapters": [
+        "doom-has-an-address"
+      ],
+      "moments": [
+        "doom-has-an-address"
+      ],
+      "versions": [
+        "v1",
+        "v2"
+      ],
+      "momentFact": {
+        "doom-has-an-address": 6
+      }
+    },
+    {
+      "id": "doom-kyrien-answer",
+      "section": "doom-address",
+      "kind": "male",
+      "title": "Kyrien",
+      "basis": "Alternate Version 1 only",
+      "text": "Kyrien notices that Lynleit is behaving incorrectly, asks one direct question, and does not force the explanation she refuses. His eventual response is physical, deliberate, and chosen after he understands what she is asking. Future intimacy should keep him legible through observation and decision rather than sudden verbal confession.",
+      "chapterMatch": "He was surprised. She gave him time to understand",
+      "chapters": [
+        "doom-has-an-address"
+      ],
+      "moments": [
+        "doom-has-an-address"
+      ],
+      "versions": [
+        "v1"
+      ],
+      "momentFact": {
+        "doom-has-an-address": 12
+      }
+    },
+    {
+      "id": "doom-natalia-teaching",
+      "section": "doom-address",
+      "kind": "female",
+      "title": "Natalia",
+      "basis": "Canon behavior, INTP with strong Ti and former professor",
+      "text": "Natalia checks the premise before offering a solution. Let her former teaching habits interrupt Lynleit's demand for an immediate answer, but give each example a job in the reasoning rather than a second explanation of the whole curse.",
+      "chapterMatch": "Natalia was silent long enough that Lynleit checked the connection.",
+      "chapters": [
+        "doom-has-an-address"
+      ],
+      "moments": [
+        "doom-has-an-address"
+      ],
+      "versions": [
+        "v1",
+        "v2"
+      ],
+      "momentFact": {
+        "doom-has-an-address": 7
+      }
+    },
+    {
+      "id": "doom-mikhail-diagnosis",
+      "section": "doom-address",
+      "kind": "male",
+      "title": "Father Mikhail",
+      "basis": "Canon behavior, XNJ lean and Church special envoy",
+      "text": "Mikhail has records Natalia lacks. Their mixed outcomes give his advice limits before he makes the blunt joke. Preserve both the expertise and the irreverence.",
+      "chapterMatch": "Mikhail looked at her notebook",
+      "chapters": [
+        "doom-has-an-address"
+      ],
+      "moments": [
+        "doom-has-an-address"
+      ],
+      "versions": [
+        "v1",
+        "v2"
+      ],
+      "momentFact": {
+        "doom-has-an-address": 9
+      }
+    },
+    {
+      "id": "doom-transformation-rule",
+      "section": "doom-address",
+      "kind": "story",
+      "title": "Transformation, not intercourse",
+      "basis": "Alternate Version 1 only",
+      "text": "Future references must preserve the causal distinction established by the chapter. Sex does not possess curative force. The shared curse fractures because an existing reciprocal attachment changes both identities simultaneously and makes the original sympathetic address uncertain. A meaningless encounter or a change affecting only one person would not satisfy the rule.",
+      "chapterMatch": "Their attachment had changed both identities",
+      "chapters": [
+        "doom-has-an-address"
+      ],
+      "moments": [
+        "doom-has-an-address"
+      ],
+      "versions": [
+        "v1"
+      ],
+      "momentFact": {
+        "doom-has-an-address": 14
+      }
+    },
+    {
+      "id": "doom-v2-lynleit-aftermath",
+      "section": "doom-address",
+      "kind": "female",
+      "title": "Lynleit after the failed attempt",
+      "basis": "Version 2 behavior, ENFJ with strong Ni and private embarrassment",
+      "text": "The unread pages and excessive denials already convey Lynleit's continued interest. Let Natalia's question end the exchange without another paragraph decoding her answer.",
+      "chapterMatch": "There will not be another attempt.",
+      "chapters": [
+        "doom-has-an-address"
+      ],
+      "moments": [
+        "doom-has-an-address"
+      ],
+      "versions": [
+        "v2"
+      ],
+      "momentFact": {
+        "doom-has-an-address": 13
+      }
+    },
+    {
+      "id": "doom-v2-kyrien-model",
+      "section": "doom-address",
+      "kind": "male",
+      "title": "Kyrien without the missing premise",
+      "basis": "Version 2 behavior, ISTP lean and Ti-led observation",
+      "text": "Kyrien lacks one crucial piece of information. His unanswered question can remain irritating without becoming a demand for confession or a speech about trust.",
+      "chapterMatch": "She had not told him what Natalia and Mikhail proposed",
+      "chapters": [
+        "doom-has-an-address"
+      ],
+      "moments": [
+        "doom-has-an-address"
+      ],
+      "versions": [
+        "v2"
+      ],
+      "momentFact": {
+        "doom-has-an-address": 15
+      }
+    },
+    {
+      "id": "doom-v2-transformation-rule",
+      "section": "doom-address",
+      "kind": "story",
+      "title": "Transformation before completion",
+      "basis": "Superseded Version 2 mechanism",
+      "text": "In this superseded revision, The incomplete attempt and its aftermath change both identities enough for the curse to lose recognition. Keep the later completed sexual encounter separate; its timing is still unresolved.",
+      "chapterMatch": "Whatever Lynleit had planned, they had not completed it.",
+      "chapters": [
+        "doom-has-an-address"
+      ],
+      "moments": [
+        "doom-has-an-address"
+      ],
+      "versions": [
+        "v2"
+      ],
+      "momentFact": {
+        "doom-has-an-address": 16
+      }
+    },
+    {
+      "id": "doom-v3-lynleit-method",
+      "section": "doom-address",
+      "kind": "female",
+      "title": "Lynleit",
+      "basis": "Canon behavior, ENFJ with strong Ni and MSF duty primary",
+      "text": "Lynleit rejects the fatal treatment and keeps looking. Her research is competent; discussing its sexual implication with Kyrien is where she becomes evasive. Do not repeat a defense of her leadership after each awkward response.",
+      "chapterMatch": "Lynleit rejected the answer.",
+      "chapters": [
+        "doom-has-an-address"
+      ],
+      "moments": [
+        "doom-has-an-address"
+      ],
+      "versions": [
+        "v3"
+      ],
+      "momentFact": {
+        "doom-has-an-address": 6
+      }
+    },
+    {
+      "id": "doom-v3-natalia-teaching",
+      "section": "doom-address",
+      "kind": "female",
+      "title": "Natalia",
+      "basis": "Canon behavior, INTP with strong Ti and former professor",
+      "text": "Natalia supplies the ego hypothesis herself, then uses her former teaching routine to make Lynleit work through it. Preserve the examination joke and her pleasure in the unwelcome conclusion. Precision and mischief coexist here.",
+      "chapterMatch": "Natalia was silent long enough that Lynleit checked the connection.",
+      "chapters": [
+        "doom-has-an-address"
+      ],
+      "moments": [
+        "doom-has-an-address"
+      ],
+      "versions": [
+        "v3"
+      ],
+      "momentFact": {
+        "doom-has-an-address": 7
+      }
+    },
+    {
+      "id": "doom-v3-mikhail-diagnosis",
+      "section": "doom-address",
+      "kind": "male",
+      "title": "Father Mikhail",
+      "basis": "Canon behavior, XNJ lean and Church special envoy",
+      "text": "The long apparent deliberation sets up Mikhail's blunt line. His repeated attempts to stop Lynleit leaving are the escalation, not redundant dialogue. Keep his actual explanation after the interruption.",
+      "chapterMatch": "The priest appeared to consider several centuries of theology.",
+      "chapters": [
+        "doom-has-an-address"
+      ],
+      "moments": [
+        "doom-has-an-address"
+      ],
+      "versions": [
+        "v3"
+      ],
+      "momentFact": {
+        "doom-has-an-address": 9
+      }
+    },
+    {
+      "id": "doom-v3-lynleit-aftermath",
+      "section": "doom-address",
+      "kind": "female",
+      "title": "Lynleit after the failed attempt",
+      "basis": "Version 3 behavior, ENFJ with strong Ni and private embarrassment",
+      "text": "The unread pages and excessive denials already convey Lynleit's continued interest. Let Natalia's question end the exchange without another paragraph decoding her answer.",
+      "chapterMatch": "There will not be another attempt.",
+      "chapters": [
+        "doom-has-an-address"
+      ],
+      "moments": [
+        "doom-has-an-address"
+      ],
+      "versions": [
+        "v3"
+      ],
+      "momentFact": {
+        "doom-has-an-address": 13
+      }
+    },
+    {
+      "id": "doom-v3-kyrien-model",
+      "section": "doom-address",
+      "kind": "male",
+      "title": "Kyrien without the missing premise",
+      "basis": "Version 3 behavior, ISTP lean and Ti-led observation",
+      "text": "Kyrien lacks one crucial piece of information. His unanswered question can remain irritating without becoming a demand for confession or a speech about trust.",
+      "chapterMatch": "He knew Lynleit had tried to sleep with him",
+      "chapters": [
+        "doom-has-an-address"
+      ],
+      "moments": [
+        "doom-has-an-address"
+      ],
+      "versions": [
+        "v3"
+      ],
+      "momentFact": {
+        "doom-has-an-address": 15
+      }
+    },
+    {
+      "id": "doom-v3-transformation-rule",
+      "section": "doom-address",
+      "kind": "story",
+      "title": "Transformation before completion",
+      "basis": "Confirmed Version 3 mechanism",
+      "text": "The incomplete attempt changes both identities enough to break recognition. Keep the later completed encounter separate. Do not turn Jung's definition into a real-world claim about supernatural cures.",
+      "chapterMatch": "The incomplete attempt and what followed had changed both of them",
+      "chapters": [
+        "doom-has-an-address"
+      ],
+      "moments": [
+        "doom-has-an-address"
+      ],
+      "versions": [
+        "v3"
+      ],
+      "momentFact": {
+        "doom-has-an-address": 16
+      }
+    },
+    {
+      "id": "doom-v4-lynleit-method",
+      "section": "doom-address",
+      "kind": "female",
+      "title": "Lynleit",
+      "basis": "Canon behavior, ENFJ with strong Ni and MSF duty primary",
+      "text": "Lynleit rejects the fatal treatment and keeps looking. Her research is competent; discussing its sexual implication with Kyrien is where she becomes evasive. Do not repeat a defense of her leadership after each awkward response.",
+      "chapterMatch": "Lynleit rejected the answer.",
+      "chapters": [
+        "doom-has-an-address"
+      ],
+      "moments": [
+        "doom-has-an-address"
+      ],
+      "versions": [
+        "v4"
+      ],
+      "momentFact": {
+        "doom-has-an-address": 6
+      }
+    },
+    {
+      "id": "doom-v4-natalia-teaching",
+      "section": "doom-address",
+      "kind": "female",
+      "title": "Natalia",
+      "basis": "Canon behavior, INTP with strong Ti and former professor",
+      "text": "Begin with something Lynleit can try, then name the principle. Natalia's failed diary gives her a correction to teach, not an infallible research success. Let Lynleit joke freely, derive a consequence herself, and accept a correction without becoming a deferential subordinate. Keep Myka's missed call an example of attention, not evidence that family attachment and sexual attraction are interchangeable.",
+      "chapterMatch": "\"I wrote down what I expected to do before I did it.",
+      "chapters": [
+        "doom-has-an-address"
+      ],
+      "moments": [
+        "doom-has-an-address"
+      ],
+      "versions": [
+        "v4"
+      ],
+      "momentFact": {
+        "doom-has-an-address": 7
+      }
+    },
+    {
+      "id": "doom-v4-mikhail-diagnosis",
+      "section": "doom-address",
+      "kind": "male",
+      "title": "Father Mikhail",
+      "basis": "Canon behavior, XNJ lean and Church special envoy",
+      "text": "The long apparent deliberation sets up Mikhail's blunt line. His repeated attempts to stop Lynleit leaving are the escalation, not redundant dialogue. Keep his actual explanation after the interruption.",
+      "chapterMatch": "The priest appeared to consider several centuries of theology.",
+      "chapters": [
+        "doom-has-an-address"
+      ],
+      "moments": [
+        "doom-has-an-address"
+      ],
+      "versions": [
+        "v4"
+      ],
+      "momentFact": {
+        "doom-has-an-address": 9
+      }
+    },
+    {
+      "id": "doom-v4-lynleit-aftermath",
+      "section": "doom-address",
+      "kind": "female",
+      "title": "Lynleit after the failed attempt",
+      "basis": "Version 4 behavior, ENFJ with strong Ni and private embarrassment",
+      "text": "The unread pages and excessive denials already convey Lynleit's continued interest. Let Natalia's question end the exchange without another paragraph decoding her answer.",
+      "chapterMatch": "There will not be another attempt.",
+      "chapters": [
+        "doom-has-an-address"
+      ],
+      "moments": [
+        "doom-has-an-address"
+      ],
+      "versions": [
+        "v4"
+      ],
+      "momentFact": {
+        "doom-has-an-address": 13
+      }
+    },
+    {
+      "id": "doom-v4-kyrien-model",
+      "section": "doom-address",
+      "kind": "male",
+      "title": "Kyrien without the missing premise",
+      "basis": "Version 4 behavior, ISTP lean and Ti-led observation",
+      "text": "Kyrien lacks one crucial piece of information. His unanswered question can remain irritating without becoming a demand for confession or a speech about trust.",
+      "chapterMatch": "He knew Lynleit had tried to sleep with him",
+      "chapters": [
+        "doom-has-an-address"
+      ],
+      "moments": [
+        "doom-has-an-address"
+      ],
+      "versions": [
+        "v4"
+      ],
+      "momentFact": {
+        "doom-has-an-address": 15
+      }
+    },
+    {
+      "id": "doom-v4-transformation-rule",
+      "section": "doom-address",
+      "kind": "story",
+      "title": "Transformation before completion",
+      "basis": "Confirmed Version 4 mechanism",
+      "text": "The incomplete attempt changes both identities enough to break recognition. Keep the later completed encounter separate. Do not turn Jung's definition into a real-world claim about supernatural cures.",
+      "chapterMatch": "The incomplete attempt and what followed had changed both of them",
+      "chapters": [
+        "doom-has-an-address"
+      ],
+      "moments": [
+        "doom-has-an-address"
+      ],
+      "versions": [
+        "v4"
+      ],
+      "momentFact": {
+        "doom-has-an-address": 16
+      }
+    },
+    {
+      "id": "doom-v5-lynleit-method",
+      "section": "doom-address",
+      "kind": "female",
+      "title": "Lynleit",
+      "basis": "Canon behavior, ENFJ with strong Ni and MSF duty primary",
+      "text": "Lynleit rejects the fatal treatment and keeps looking. Her research is competent; discussing its sexual implication with Kyrien is where she becomes evasive. Do not repeat a defense of her leadership after each awkward response.",
+      "chapterMatch": "Lynleit rejected the answer.",
+      "chapters": [
+        "doom-has-an-address"
+      ],
+      "moments": [
+        "doom-has-an-address"
+      ],
+      "versions": [
+        "v5"
+      ],
+      "momentFact": {
+        "doom-has-an-address": 6
+      }
+    },
+    {
+      "id": "doom-v5-natalia-teaching",
+      "section": "doom-address",
+      "kind": "female",
+      "title": "Natalia",
+      "basis": "Canon behavior, INTP with strong Ti and former professor",
+      "text": "Begin with something Lynleit can try, then name the principle. Natalia's failed diary gives her a correction to teach, not an infallible research success. Let Lynleit joke freely, derive a consequence herself, and accept a correction without becoming a deferential subordinate. Keep Myka's missed call an example of attention, not evidence that family attachment and sexual attraction are interchangeable.",
+      "chapterMatch": "\"I wrote down what I expected to do before I did it.",
+      "chapters": [
+        "doom-has-an-address"
+      ],
+      "moments": [
+        "doom-has-an-address"
+      ],
+      "versions": [
+        "v5"
+      ],
+      "momentFact": {
+        "doom-has-an-address": 7
+      }
+    },
+    {
+      "id": "doom-v5-mikhail-diagnosis",
+      "section": "doom-address",
+      "kind": "male",
+      "title": "Father Mikhail",
+      "basis": "Canon behavior, XNJ lean and Church special envoy",
+      "text": "Keep the mock blessing ceremonious, brief, and straight-faced. Lynleit's request for ordinary speech cues the blunt answer. His reference to her father's household should let the reader sense private knowledge without decoding it in narration. The later attempts to stop her leaving remain part of the joke.",
+      "chapterMatch": "The priest appeared to consider several centuries of theology.",
+      "chapters": [
+        "doom-has-an-address"
+      ],
+      "moments": [
+        "doom-has-an-address"
+      ],
+      "versions": [
+        "v5"
+      ],
+      "momentFact": {
+        "doom-has-an-address": 9
+      }
+    },
+    {
+      "id": "doom-v5-lynleit-aftermath",
+      "section": "doom-address",
+      "kind": "female",
+      "title": "Lynleit after the failed attempt",
+      "basis": "Version 5 behavior, ENFJ with strong Ni and private embarrassment",
+      "text": "The unread pages and excessive denials already convey Lynleit's continued interest. Let Natalia's question end the exchange without another paragraph decoding her answer.",
+      "chapterMatch": "There will not be another attempt.",
+      "chapters": [
+        "doom-has-an-address"
+      ],
+      "moments": [
+        "doom-has-an-address"
+      ],
+      "versions": [
+        "v5"
+      ],
+      "momentFact": {
+        "doom-has-an-address": 13
+      }
+    },
+    {
+      "id": "doom-v5-kyrien-model",
+      "section": "doom-address",
+      "kind": "male",
+      "title": "Kyrien without the missing premise",
+      "basis": "Version 5 behavior, ISTP lean and Ti-led observation",
+      "text": "Kyrien lacks one crucial piece of information. His unanswered question can remain irritating without becoming a demand for confession or a speech about trust.",
+      "chapterMatch": "He knew Lynleit had tried to sleep with him",
+      "chapters": [
+        "doom-has-an-address"
+      ],
+      "moments": [
+        "doom-has-an-address"
+      ],
+      "versions": [
+        "v5"
+      ],
+      "momentFact": {
+        "doom-has-an-address": 15
+      }
+    },
+    {
+      "id": "doom-v5-transformation-rule",
+      "section": "doom-address",
+      "kind": "story",
+      "title": "Transformation before completion",
+      "basis": "Confirmed Version 5 mechanism",
+      "text": "The incomplete attempt changes both identities enough to break recognition. Keep the later completed encounter separate. Do not turn Jung's definition into a real-world claim about supernatural cures.",
+      "chapterMatch": "The incomplete attempt and what followed had changed both of them",
+      "chapters": [
+        "doom-has-an-address"
+      ],
+      "moments": [
+        "doom-has-an-address"
+      ],
+      "versions": [
+        "v5"
+      ],
+      "momentFact": {
+        "doom-has-an-address": 16
+      }
+    },
+    {
+      "id": "doom-v5-inherited-expectation",
+      "section": "doom-address",
+      "kind": "story",
+      "title": "An inherited expectation",
+      "basis": "Author-confirmed family allusion, presented indirectly in v5",
+      "text": "The honorific is Mikhail's teasing address, not an official title or a religious obligation. Let the stopped pen and request for plain speech show Lynleit's discomfort. Do not explain the allusion immediately or turn the insult into the narrator's verdict about her.",
+      "chapterMatch": "Lynleit had begun writing. Her pen stopped.",
+      "chapters": [
+        "doom-has-an-address"
+      ],
+      "moments": [
+        "doom-has-an-address"
+      ],
+      "versions": [
+        "v5"
+      ],
+      "momentFact": {
+        "doom-has-an-address": 19
+      }
+    },
+    {
+      "id": "doom-v6-lynleit-method",
+      "section": "doom-address",
+      "kind": "female",
+      "title": "Lynleit",
+      "basis": "Canon behavior, ENFJ with strong Ni and MSF duty primary",
+      "text": "Lynleit rejects the fatal treatment and keeps looking. Her research is competent; discussing its sexual implication with Kyrien is where she becomes evasive. Do not repeat a defense of her leadership after each awkward response.",
+      "chapterMatch": "Lynleit rejected the answer.",
+      "chapters": [
+        "doom-has-an-address"
+      ],
+      "moments": [
+        "doom-has-an-address"
+      ],
+      "versions": [
+        "v6"
+      ],
+      "momentFact": {
+        "doom-has-an-address": 6
+      }
+    },
+    {
+      "id": "doom-v6-natalia-teaching",
+      "section": "doom-address",
+      "kind": "female",
+      "title": "Natalia",
+      "basis": "Canon behavior, INTP with strong Ti and former professor",
+      "text": "Begin with something Lynleit can try, then name the principle. Natalia's failed diary gives her a correction to teach, not an infallible research success. Let Lynleit joke freely, derive a consequence herself, and accept a correction without becoming a deferential subordinate. Keep Myka's missed call an example of attention, not evidence that family attachment and sexual attraction are interchangeable.",
+      "chapterMatch": "\"I wrote down what I expected to do before I did it.",
+      "chapters": [
+        "doom-has-an-address"
+      ],
+      "moments": [
+        "doom-has-an-address"
+      ],
+      "versions": [
+        "v6"
+      ],
+      "momentFact": {
+        "doom-has-an-address": 7
+      }
+    },
+    {
+      "id": "doom-v6-mikhail-diagnosis",
+      "section": "doom-address",
+      "kind": "male",
+      "title": "Father Mikhail",
+      "basis": "Canon behavior, XNJ lean and Church special envoy",
+      "text": "Let Mikhail's ceremony accumulate specific family knowledge before the ordinary insult. His unhurried tea drinking keeps the provocation deliberate. Do not give every sentence a punchline: he must still answer the curse question and acknowledge the uncertainty.",
+      "chapterMatch": "He closed his eyes, rose, and went to the narrow window.",
+      "chapters": [
+        "doom-has-an-address"
+      ],
+      "moments": [
+        "doom-has-an-address"
+      ],
+      "versions": [
+        "v6"
+      ],
+      "momentFact": {
+        "doom-has-an-address": 9
+      }
+    },
+    {
+      "id": "doom-v6-lynleit-aftermath",
+      "section": "doom-address",
+      "kind": "female",
+      "title": "Lynleit after the failed attempt",
+      "basis": "Version 6 behavior, ENFJ with strong Ni and private embarrassment",
+      "text": "The unread pages and excessive denials already convey Lynleit's continued interest. Let Natalia's question end the exchange without another paragraph decoding her answer.",
+      "chapterMatch": "There will not be another attempt.",
+      "chapters": [
+        "doom-has-an-address"
+      ],
+      "moments": [
+        "doom-has-an-address"
+      ],
+      "versions": [
+        "v6"
+      ],
+      "momentFact": {
+        "doom-has-an-address": 13
+      }
+    },
+    {
+      "id": "doom-v6-kyrien-model",
+      "section": "doom-address",
+      "kind": "male",
+      "title": "Kyrien without the missing premise",
+      "basis": "Version 6 behavior, ISTP lean and Ti-led observation",
+      "text": "Kyrien lacks one crucial piece of information. His unanswered question can remain irritating without becoming a demand for confession or a speech about trust.",
+      "chapterMatch": "He knew Lynleit had tried to sleep with him",
+      "chapters": [
+        "doom-has-an-address"
+      ],
+      "moments": [
+        "doom-has-an-address"
+      ],
+      "versions": [
+        "v6"
+      ],
+      "momentFact": {
+        "doom-has-an-address": 15
+      }
+    },
+    {
+      "id": "doom-v6-transformation-rule",
+      "section": "doom-address",
+      "kind": "story",
+      "title": "Transformation before completion",
+      "basis": "Confirmed Version 6 mechanism",
+      "text": "The incomplete attempt changes both identities enough to break recognition. Keep the later completed encounter separate. Do not turn Jung's definition into a real-world claim about supernatural cures.",
+      "chapterMatch": "The incomplete attempt and what followed had changed both of them",
+      "chapters": [
+        "doom-has-an-address"
+      ],
+      "moments": [
+        "doom-has-an-address"
+      ],
+      "versions": [
+        "v6"
+      ],
+      "momentFact": {
+        "doom-has-an-address": 16
+      }
+    },
+    {
+      "id": "doom-v6-inherited-expectation",
+      "section": "doom-address",
+      "kind": "story",
+      "title": "An inherited expectation",
+      "basis": "Author-supplied v6 exchange and family history",
+      "text": "The Cult and family association are spoken openly in v6. Keep the private sting in the cup, the formal objection, and the later threat. Her ancestry does not make her a direct participant; Mikhail's charge of failure is his joke, not an established Cult duty.",
+      "chapterMatch": "An association between two traditions does not automatically oblige anyone",
+      "chapters": [
+        "doom-has-an-address"
+      ],
+      "moments": [
+        "doom-has-an-address"
+      ],
+      "versions": [
+        "v6"
+      ],
+      "momentFact": {
+        "doom-has-an-address": 19
+      }
+    },
+    {
+      "id": "doom-v6-porcelain",
+      "section": "doom-address",
+      "kind": "female",
+      "title": "A defence that becomes personal",
+      "basis": "Author-supplied response, ENFJ with strong Ni and private embarrassment",
+      "text": "The cup gives Lynleit's hands something to do while she tries to keep the discussion abstract. Preserve her porcelain retort so she remains an active opponent, not simply the target of a lecture. This private evasiveness does not replace her openness as a leader.",
+      "chapterMatch": "Perhaps the porcelain is behaving with more dignity",
+      "chapters": [
+        "doom-has-an-address"
+      ],
+      "moments": [
+        "doom-has-an-address"
+      ],
+      "versions": [
+        "v6"
+      ],
+      "momentFact": {
+        "doom-has-an-address": 19
+      }
+    },
+    {
+      "id": "doom-v7-lynleit-method",
+      "section": "doom-address",
+      "kind": "female",
+      "title": "Lynleit",
+      "basis": "Canon behavior, Suspected INFJ, Ni-led reading with strong Fe and MSF duty primary",
+      "text": "Lynleit rejects the fatal treatment and keeps looking. Her research is competent; discussing its sexual implication with Kyrien is where she becomes evasive. Do not repeat a defense of her leadership after each awkward response.",
+      "chapterMatch": "Lynleit rejected the answer.",
+      "chapters": [
+        "doom-has-an-address"
+      ],
+      "moments": [
+        "doom-has-an-address"
+      ],
+      "versions": [
+        "v7"
+      ],
+      "momentFact": {
+        "doom-has-an-address": 6
+      }
+    },
+    {
+      "id": "doom-v7-natalia-teaching",
+      "section": "doom-address",
+      "kind": "female",
+      "title": "Natalia",
+      "basis": "Canon behavior, INTP with strong Ti and former professor",
+      "text": "Begin with something Lynleit can try, then name the principle. Natalia's failed diary gives her a correction to teach, not an infallible research success. Let Lynleit joke freely, derive a consequence herself, and accept a correction without becoming a deferential subordinate. Keep Myka's missed call an example of attention, not evidence that family attachment and sexual attraction are interchangeable.",
+      "chapterMatch": "\"I wrote down what I expected to do before I did it.",
+      "chapters": [
+        "doom-has-an-address"
+      ],
+      "moments": [
+        "doom-has-an-address"
+      ],
+      "versions": [
+        "v7"
+      ],
+      "momentFact": {
+        "doom-has-an-address": 7
+      }
+    },
+    {
+      "id": "doom-v7-mikhail-diagnosis",
+      "section": "doom-address",
+      "kind": "male",
+      "title": "Father Mikhail",
+      "basis": "Canon behavior, XNJ lean and Church special envoy",
+      "text": "Let Mikhail's ceremony accumulate specific family knowledge before the ordinary insult. His unhurried tea drinking keeps the provocation deliberate. Do not give every sentence a punchline: he must still answer the curse question and acknowledge the uncertainty.",
+      "chapterMatch": "He closed his eyes, rose, and went to the narrow window.",
+      "chapters": [
+        "doom-has-an-address"
+      ],
+      "moments": [
+        "doom-has-an-address"
+      ],
+      "versions": [
+        "v7"
+      ],
+      "momentFact": {
+        "doom-has-an-address": 9
+      }
+    },
+    {
+      "id": "doom-v7-lynleit-aftermath",
+      "section": "doom-address",
+      "kind": "female",
+      "title": "Lynleit after the failed attempt",
+      "basis": "Version 7 behavior, Suspected INFJ, Ni-led reading with strong Fe and private embarrassment",
+      "text": "The unread pages and excessive denials already convey Lynleit's continued interest. Let Natalia's question end the exchange without another paragraph decoding her answer.",
+      "chapterMatch": "There will not be another attempt.",
+      "chapters": [
+        "doom-has-an-address"
+      ],
+      "moments": [
+        "doom-has-an-address"
+      ],
+      "versions": [
+        "v7"
+      ],
+      "momentFact": {
+        "doom-has-an-address": 13
+      }
+    },
+    {
+      "id": "doom-v7-kyrien-model",
+      "section": "doom-address",
+      "kind": "male",
+      "title": "Kyrien without the missing premise",
+      "basis": "Version 7 behavior, Suspected ISTP; observation and background reasoning",
+      "text": "Kyrien lacks one crucial piece of information. His unanswered question can remain irritating without becoming a demand for confession or a speech about trust.",
+      "chapterMatch": "He knew Lynleit had tried to sleep with him",
+      "chapters": [
+        "doom-has-an-address"
+      ],
+      "moments": [
+        "doom-has-an-address"
+      ],
+      "versions": [
+        "v7"
+      ],
+      "momentFact": {
+        "doom-has-an-address": 15
+      }
+    },
+    {
+      "id": "doom-v7-transformation-rule",
+      "section": "doom-address",
+      "kind": "story",
+      "title": "Transformation before completion",
+      "basis": "Confirmed Version 7 mechanism",
+      "text": "The incomplete attempt changes both identities enough to break recognition. Keep the later completed encounter separate. Do not turn Jung's definition into a real-world claim about supernatural cures.",
+      "chapterMatch": "The incomplete attempt and what followed had changed both of them",
+      "chapters": [
+        "doom-has-an-address"
+      ],
+      "moments": [
+        "doom-has-an-address"
+      ],
+      "versions": [
+        "v7"
+      ],
+      "momentFact": {
+        "doom-has-an-address": 16
+      }
+    },
+    {
+      "id": "doom-v7-inherited-expectation",
+      "section": "doom-address",
+      "kind": "story",
+      "title": "An inherited expectation",
+      "basis": "Author-supplied v7 exchange and family history",
+      "text": "The Cult and family association are spoken openly in v7. Keep the private sting in the cup, the formal objection, and the later threat. Her ancestry does not make her a direct participant; Mikhail's charge of failure is his joke, not an established Cult duty.",
+      "chapterMatch": "An association between two traditions does not automatically oblige anyone",
+      "chapters": [
+        "doom-has-an-address"
+      ],
+      "moments": [
+        "doom-has-an-address"
+      ],
+      "versions": [
+        "v7"
+      ],
+      "momentFact": {
+        "doom-has-an-address": 19
+      }
+    },
+    {
+      "id": "doom-v7-porcelain",
+      "section": "doom-address",
+      "kind": "female",
+      "title": "A defence that becomes personal",
+      "basis": "Author-supplied response, Suspected INFJ, Ni-led reading with strong Fe and private embarrassment",
+      "text": "The cup gives Lynleit's hands something to do while she tries to keep the discussion abstract. Preserve her porcelain retort so she remains an active opponent, not simply the target of a lecture. This private evasiveness does not replace her openness as a leader.",
+      "chapterMatch": "Perhaps the porcelain is behaving with more dignity",
+      "chapters": [
+        "doom-has-an-address"
+      ],
+      "moments": [
+        "doom-has-an-address"
+      ],
+      "versions": [
+        "v7"
+      ],
+      "momentFact": {
+        "doom-has-an-address": 19
+      }
+    },
+    {
+      "id": "doom-v7-restraint",
+      "section": "doom-address",
+      "kind": "story",
+      "title": "The joke he leaves unsaid",
+      "basis": "Author-approved v7 restoration; reader-supported interpretation",
+      "text": "The scene has taught the reader to expect Mikhail to seize every hesitation. Here he notices and drinks instead. Preserve that omission without adding a speech about compassion or treating it as romantic interest. His subsequent teasing can resume without erasing the pause.",
+      "chapterMatch": "For once, Mikhail did not comment.",
+      "chapters": [
+        "doom-has-an-address"
+      ],
+      "moments": [
+        "doom-has-an-address"
+      ],
+      "versions": [
+        "v7"
+      ],
+      "momentFact": {
+        "doom-has-an-address": 21
+      }
+    },
+    {
+      "id": "park-lynleit-pride",
+      "section": "park-bench",
+      "kind": "female",
+      "title": "Preparation follows curiosity",
+      "basis": "Author-supplied adult scene direction; character-specific interpretation",
+      "text": "Keep Lynleit's work primary and the opportunity spontaneous. Months of reading do not make the evening a scheduled experiment. Her restrained competitiveness recalls the card games without requiring explanatory narration.",
+      "chapterMatch": "There had been quite a lot of reading since that evening.",
+      "chapters": [
+        "the-bench-under-the-lamp"
+      ],
+      "moments": [
+        "the-bench-under-the-lamp"
+      ],
+      "momentFact": {
+        "the-bench-under-the-lamp": 3
+      }
+    },
+    {
+      "id": "park-kyrien-flask",
+      "section": "park-bench",
+      "kind": "male",
+      "title": "The familiar flask",
+      "basis": "Author-supplied adult scene direction; character-specific interpretation",
+      "text": "A measured drink can disclose strain that Kyrien does not name. Do not turn it into constant sipping or evidence that he needs alcohol to act.",
+      "chapterMatch": "Kyrien took out his flask.",
+      "chapters": [
+        "the-bench-under-the-lamp"
+      ],
+      "moments": [
+        "the-bench-under-the-lamp"
+      ],
+      "momentFact": {
+        "the-bench-under-the-lamp": 1
+      }
+    },
+    {
+      "id": "park-delayed-request",
+      "section": "park-bench",
+      "kind": "story",
+      "title": "Let the victory last",
+      "basis": "Author-supplied adult scene direction; character-specific interpretation",
+      "text": "Leave the bench before the request. The practical inconvenience does not negate Lynleit's satisfaction. Kyrien should not demand an explanation that the exchange works better without.",
+      "chapterMatch": "\"Give me your whiskey.\"",
+      "chapters": [
+        "the-bench-under-the-lamp"
+      ],
+      "moments": [
+        "the-bench-under-the-lamp"
+      ],
+      "momentFact": {
+        "the-bench-under-the-lamp": 7
+      }
+    },
+    {
+      "id": "arc-zero-formation",
+      "section": "arc-zero",
+      "kind": "story",
+      "title": "Unfinished adults",
+      "basis": "Tentative author direction; not an established scene",
+      "text": "Treat these as possible formation scenes, not proof of a single cause for every adult trait. Keep the mother's death in junior school, the later high-school focus distinct, and Kyrien outside magical schooling.",
+      "chapterMatch": null,
+      "chapters": [],
+      "moments": [
+        "households-before-the-spill"
+      ],
+      "momentFact": {
+        "households-before-the-spill": 2
+      }
+    },
+    {
+      "id": "park-v2-ordinary-closeness",
+      "section": "park-bench",
+      "kind": "story",
+      "title": "Comfort before an intention",
+      "basis": "Author correction; current draft v2",
+      "text": "Preserve the ordinary wish to be close before the later decision. Repeated survival makes this pause familiar, not proof that the quarantine is safe. The missing passage remains a writer gap; do not use a substitute kiss or explanatory narrator verdict to bridge it.",
+      "versions": [
+        "v2"
+      ],
+      "chapterMatch": "She shifted along the bench and rested her head in his lap.",
+      "chapters": [
+        "the-bench-under-the-lamp"
+      ],
+      "moments": [
+        "the-bench-under-the-lamp"
+      ],
+      "momentFact": {
+        "the-bench-under-the-lamp": 4
+      }
+    },
+    {
+      "id": "church-lynleit-public-irritation",
+      "section": "church-interlude",
+      "kind": "female",
+      "title": "Patience worn down over several visits",
+      "basis": "Lynleit: author-confirmed repeated irritation; suspected INFJ with strong Fe",
+      "text": "Lynleit's irritation has accumulated across church visits with Fionn. Let the remembered promise and Felix's fresh lapse carry that history. Do not play her correction as jealousy. Her familiar assertiveness and attention to the social situation fit this response without changing her otherwise reserved disposition.",
+      "chapters": [],
+      "moments": [
+        "only-eyes-for-you"
+      ],
+      "momentFact": {
+        "only-eyes-for-you": 4
+      },
+      "momentProseMatch": {
+        "only-eyes-for-you": "\"Flirt with nuns one more time!\""
+      },
+      "versions": [
+        "v2"
+      ]
+    },
+    {
+      "id": "church-felix-deflection",
+      "section": "church-interlude",
+      "kind": "male",
+      "title": "A flirtation inside the defence",
+      "basis": "Felix: playful reframing and established attachment to Lynleit; suspected ENFP, Ne-led",
+      "text": "Felix repeatedly means to behave and still starts flirting. His reply to Lynleit arrives before a sensible apology, consistent with his quick reframing and attachment to her. Flirting with nuns is not a calculated attempt to provoke jealousy. Raised hands are comic surrender, not a loss of field competence.",
+      "chapters": [],
+      "moments": [
+        "only-eyes-for-you"
+      ],
+      "momentFact": {
+        "only-eyes-for-you": 5
+      },
+      "momentProseMatch": {
+        "only-eyes-for-you": "\"I only have eyes for you.\""
+      },
+      "versions": [
+        "v2"
+      ]
+    },
+    {
+      "id": "church-bible-return",
+      "section": "church-interlude",
+      "kind": "story",
+      "title": "Reiner behaves; the nun wants her book",
+      "basis": "Author-confirmed four-person church visits; Reiner's established restraint; working comic blocking",
+      "text": "Reiner's ordinary restraint gives the repeated problem a visible contrast. He need not banter or join Felix's performance. The nun's plain request then interrupts Lynleit's outburst and restores the book's ordinary use. Keep Fionn part of the visit without inventing approval, disapproval, or a private joke for him.",
+      "chapters": [],
+      "moments": [
+        "only-eyes-for-you"
+      ],
+      "momentFact": {
+        "only-eyes-for-you": 7
+      },
+      "momentProseMatch": {
+        "only-eyes-for-you": "\"May I have that back?\""
+      },
+      "versions": [
+        "v2"
+      ]
+    },
+    {
+      "id": "church-lynleit-public-irritation-v1",
+      "section": "church-interlude",
+      "kind": "female",
+      "title": "Irritation without a declared motive (v1)",
+      "basis": "Lynleit: established reserve and familiar assertiveness; suspected INFJ with strong Fe",
+      "text": "Keep her reprimand specific to Felix flirting with the nuns. The tie grip and embarrassment can invite a jealous reading without confirming it. Familiarity permits an animated reaction; it does not require a change to her reserved disposition or priorities.",
+      "chapters": [],
+      "moments": [
+        "only-eyes-for-you"
+      ],
+      "momentFact": {
+        "only-eyes-for-you": 2
+      },
+      "momentProseMatch": {
+        "only-eyes-for-you": "\"Flirt with nuns one more time!\""
+      },
+      "versions": [
+        "v1"
+      ]
+    },
+    {
+      "id": "church-felix-deflection-v1",
+      "section": "church-interlude",
+      "kind": "male",
+      "title": "A flirtation inside the defence (v1)",
+      "basis": "Felix: playful reframing and established attachment to Lynleit; suspected ENFP, Ne-led",
+      "text": "Let the reply arrive before a sensible apology. He can mean the compliment while using it to escape the reprimand. His raised hands and backward lean are comic surrender, not evidence of inferior fighting ability. Avoid a narrator explaining how sincere the line is.",
+      "chapters": [],
+      "moments": [
+        "only-eyes-for-you"
+      ],
+      "momentFact": {
+        "only-eyes-for-you": 3
+      },
+      "momentProseMatch": {
+        "only-eyes-for-you": "\"I only have eyes for you.\""
+      },
+      "versions": [
+        "v1"
+      ]
+    },
+    {
+      "id": "church-bible-return-v1",
+      "section": "church-interlude",
+      "kind": "story",
+      "title": "The book has another owner (v1)",
+      "basis": "Author-approved image premise; working scene and Nasu-audit guidance",
+      "text": "The nun asks for her book rather than delivering another punchline. Her plain request interrupts the pair and makes Lynleit restore ordinary courtesy. The Bible and church provide the religious setting; leave Inanna unmentioned so any retrospective irony depends on the reader’s existing knowledge, not a new cult rule.",
+      "chapters": [],
+      "moments": [
+        "only-eyes-for-you"
+      ],
+      "momentFact": {
+        "only-eyes-for-you": 5
+      },
+      "momentProseMatch": {
+        "only-eyes-for-you": "\"May I have that back?\""
+      },
+      "versions": [
+        "v1"
+      ]
+    },
+    {
+      "id": "card-game-sherie-comfort",
+      "section": "unresolved-tension",
+      "kind": "female",
+      "title": "Comfort becomes chosen teasing",
+      "basis": "Sherie: author-supplied aristocratic ease, social play, and emotional attention; confirmed ENFJ with strong Fe",
+      "text": "Do not make her first posture a prearranged seduction. The change comes when she notices Felix's distraction and chooses to stay comfortable. Her pleasure in being noticed can surprise her without making her unaware of every impression she creates. This is Sherie's learned ease, not a rule about women or aristocratic upbringing.",
+      "chapters": [],
+      "moments": [
+        "unresolved-tension"
+      ],
+      "momentFact": {
+        "unresolved-tension": 5
+      },
+      "momentProseMatch": {
+        "unresolved-tension": "She shifted a little deeper into the cushion and left her legs where they were."
+      },
+      "versions": [
+        "v1"
+      ]
+    },
+    {
+      "id": "card-game-felix-distraction",
+      "section": "unresolved-tension",
+      "kind": "male",
+      "title": "Still explaining Lynleit",
+      "basis": "Felix: expressive improvisation and enduring attachment to Lynleit; suspected ENFP, Ne-led reading",
+      "text": "Let the half-second interruption matter because he is usually fluent. His eyes return to Sherie while his account remains organized around Lynleit. A brief lapse in a private game does not diminish his field competence or prove that his earlier attachment has ended.",
+      "chapters": [],
+      "moments": [
+        "unresolved-tension"
+      ],
+      "momentFact": {
+        "unresolved-tension": 2
+      },
+      "momentProseMatch": {
+        "unresolved-tension": "Sherie glanced up. Felix resumed, but she had lost a few words. His eyes dropped toward her legs and came back to her face."
+      },
+      "versions": [
+        "v1"
+      ]
+    },
+    {
+      "id": "card-game-unanswered-question",
+      "section": "unresolved-tension",
+      "kind": "story",
+      "title": "Leave the question unanswered",
+      "basis": "Author-supplied card-game dialogue and final exchange; early Sherie/Felix direction",
+      "text": "Keep 'Why do you keep looking at me like that?' and 'Like what?' without an explanatory confession. His inability to answer and her small smile are enough. The literal card game can stall without a narrator explaining a second game, and her diagnosis of Felix and Lynleit need not be correct about both people.",
+      "chapters": [],
+      "moments": [
+        "unresolved-tension"
+      ],
+      "momentFact": {
+        "unresolved-tension": 7
+      },
+      "momentProseMatch": {
+        "unresolved-tension": "Felix opened his mouth, looked at her, and shut it again."
+      },
+      "versions": [
+        "v1"
+      ]
+    }
+  ]
+}
