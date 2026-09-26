@@ -51,28 +51,6 @@ Both hold cards. The game gives them something to do while Felix says more about
 
 This belongs to their early familiarity after repeated professional contact, not their first meeting. The exact phase, room, card game, stakes, and cause of Felix's complaint remain open. Sherie's teasing is not evidence of reciprocal desire from Lynleit. Felix's attachment still has emotional weight, and this brief success neither settles his feelings nor anticipates the scenes in which Sherie feels unseen and sets a boundary.
 
-### Sherie and Felix: company worth missing
-
-**Author-confirmed direction, 26 September 2026.** Develop the sensuality and emotional danger from the company they already enjoy: teasing, cards, and making each other's work more complicated. At first Sherie enjoys catching Felix's attention. Gradually she cares whether he comes to find her without an invitation. Felix can flirt with her readily while sincere speech becomes harder. He remembers small details, wants to tell her things, notices her absence, and learns the changes in her voice. These habits can develop while he still imagines intimacy with Lynleit and calls his growing closeness with Sherie an entertaining professional friendship.
-
-Neither reads the other perfectly. Sherie can hear distraction without knowing its cause. Felix can unsettle her by noticing something she intended to hide inside an amusing account. Keep her mischief and his humor active enough that a failed exchange is unusual: a reply that ordinarily arrives does not, or one of them cannot make the familiar joke. Give the other person room to notice without requiring an immediate explanation or confession. Felix lets Sherie be theatrical or ridiculous without losing respect for her; she becomes someone around whom he need not always be entertaining.
-
-Their work must also produce substantive disagreements. Sherie has diplomatic purposes of her own, and Felix has duties around Lynleit and MSF. Attraction cannot settle an incompatible obligation or make a concession harmless. The particular disputes are not yet chosen. Keep both competent, capable of disappointing the other, and able to care without automatically yielding.
-
-Sherie eventually becomes unwilling to spend their private time accommodating his hopes about Lynleit. Her pleasure in him does not make that arrangement painless. This boundary grows from wanting to be seen clearly, not a competition in which winning Felix proves her superiority. Felix's recognition must be followed by sustained changes in what he chooses and makes time for. One declaration cannot erase his attachment to Lynleit, repair Sherie's disappointment, or do the work of choosing Sherie repeatedly. The circumstances and pace of those changes remain open.
-
-### Distance, danger, and the sound of her voice
-
-Make their ordinary company worth missing before using separation or a dangerous assignment to deepen the romance. Felix's communications work makes her voice a particularly useful recurring detail. Establish its familiar variations through actual exchanges; professional listening does not let him diagnose every silence correctly. A delayed reply can then frighten him because he has grown accustomed to hearing from this person. The delay alone is not proof that she has been harmed.
-
-After danger, an unfinished joke or a voluntary decision to stay can carry the feeling that neither can yet state. These are approved approaches for future scenes, not a new incident, assignment, rescue, or fixed separation. Keep the danger particular to its political or supernatural cause, following [Dread and Action Direction](../docs.html?doc=dread-and-action-direction). Their attachment must not replace the work that puts them at risk.
-
-Let the possibility of losing Sherie, or losing Felix, make their closeness grave and sensual without extinguishing pleasure, competence, or reciprocal care. A tragic outcome is not required. Their seriousness should remain recognizable as the relationship between the people who enjoyed the earlier card game.
-
-### Musical direction
-
-Introduce a restrained recurring motif during their early ease. Return to it as the attachment deepens, with greater space, unresolved harmony, and emotional weight. Its later use should recall the company they have come to miss, particularly the familiar voice and interrupted exchange. Preserve room for playfulness rather than scoring every meeting as impending loss. This is a composition brief; no recording or named track is assigned to it.
-
 ## Lynleit
 
 **Basis: Established relationship; later behavior partly interpreted**

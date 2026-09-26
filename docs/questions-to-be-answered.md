@@ -47,10 +47,13 @@ Story, character, world, relationship, institution, location, and event question
 | Kyrien | Which of his father's contacts does Kyrien still use, and what obligations does he have to them? | 0% |
 | Sherie and Felix | Which repeated professional assignments first give them private jokes and familiarity, and where do these encounters fall in the main plot? | 0% |
 | Sherie and Felix | What makes Felix recognize that he wants Sherie herself, and what experiences loosen his emotionally significant fixation on Lynleit? | 0% |
-| Sherie and Felix | When does Sherie first feel unseen, what boundary does she set, and how does Felix respond? | 0% |
+| Sherie and Felix | When does Sherie first feel unseen, and when does she refuse to spend their private time accommodating Felix's hopes about Lynleit? How does he respond in his subsequent choices? | 0% |
 | Sherie and Felix | Which moments let one stop performing and receive care from the other, and when do they consciously choose intimacy? | 0% |
 | Unresolved Tension | Whose sitting room hosts the card game, what game are they playing, and what prompted Felix's complaint about Lynleit? | 0% |
-| Character Aphorisms | In which conversations does Sherie use her sayings about catastrophe and catharsis, and Schrödinger's buttocks; who hears them? | 0% |
+| Character Aphorisms | In which conversations does Sherie use her sayings about catastrophe and catharsis, and Schrödinger's butt; who hears them? | 0% |
+| Sherie and Felix | Which professional obligations put them in substantive disagreement, and what consequences remain even when they care for one another? | 0% |
+| Sherie and Felix | Which separation or dangerous assignment changes the significance of their familiar exchanges, and what does each choose afterward? | 0% |
+| Lynleit's name | Which reading, if any, is definitive: moonlight, moon lit, illuminated by moonlight, or moon lake? | 0% |
 | Items & Artefacts | What does "hide of leviathan" mean, and is the material connected to the river phenomenon recorded as HI-004? | 0% |
 | Family | When and how does Kyrien learn that Lynleit bore his son, and where does that revelation belong in relation to Lynleit's elusive return and his leadership of MSF? | 0% |
 | Helena | Is Helena a Magus, and how does she gain access to supernatural institutions? | 5% |

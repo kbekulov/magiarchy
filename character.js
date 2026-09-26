@@ -2,6 +2,10 @@ const profileSeeds = [
   {
     slug: 'lynleit', name: 'Lynleit', code: 'MSF · 001', role: 'Fionn\'s biological daughter and displaced heir', ageBand: 'Late twenties', factions: ['MSF', 'Magiarchy'], mbti: { type: 'INFJ', detail: 'Ni-led reading; strong Fe', status: 'Suspected' }, accent: 'blue', materialStatus: 'Canon traits + mock details',
     summary: 'Fionn\'s daughter, an MSF officer and Magus who becomes a fugitive after Helena accuses her of his murder.',
+    nameMeaning: [
+      ['Suspected reading', 'Moonlight, moon lit, or illuminated by moonlight.'],
+      ['Alternative reading', 'Moon lake. The meaning is not settled.']
+    ],
     visual: 'A long tailored blue coat over a pale high-collared blouse with a narrow black ribbon, fitted high-waisted black shorts, dark tights, and black over-the-knee lace-up boots. Her wardrobe is formal and fashion-conscious.', palette: 'Midnight blue, black, white, cold cyan',
     physical: [
       ['Hair', 'Very long, wavy ash-black hair with a side-parted fringe, most often worn loose.'],
@@ -53,6 +57,10 @@ const profileSeeds = [
   {
     slug: 'kyrien', name: 'Kyrien', code: 'IND · 002', role: 'Independent operator and later MSF director', ageBand: 'Late twenties', factions: ['Independent', 'MSF'], affiliationTimeline: [{ name: 'Independent', stage: 'Opening' }, { name: 'MSF', stage: 'Later director' }], mbti: { type: 'ISTP', detail: 'Ti-Se-Ni working model; INTJ alternative', status: 'Suspected' }, accent: 'amber', materialStatus: 'Canon traits + mock details',
     summary: 'A non-Magus who begins as Lynleit\'s secret recruit and later becomes director of MSF.',
+    nameMeaning: [
+      ["Author's intended meaning", 'Of God or belonging to God.'],
+      ['Name construction', 'Kyrie with a possessive -n in the author’s construction of the name.']
+    ],
     visual: 'A blue open-neck shirt, black tailored trousers, black leather shoes, and a silver cross necklace. His beige matte leather jacket has an upright stand collar and no pockets. The clothes fall naturally, with light creasing from wear.', palette: 'Dusty blue, beige, charcoal, black, silver',
     physical: [
       ['Hair', 'Short, tousled dark brown hair with a clear middle part. The front sections fall to either side of his forehead.'],
@@ -182,7 +190,7 @@ const profileSeeds = [
     ],
     personalitySummary: 'Sherie teases and provokes mischief even off duty. She is quick to read someone\'s mood, relationships, and standing in a group; an unexpected reply makes her reconsider the exchange she thought she understood. She can draw out information without making a person feel interrogated and keep a difficult conversation going. With Felix she can be theatrical, petty, ridiculous, or openly delighted without losing his respect. As she gets to know him, she also learns when his jokes conceal something serious.',
     connections: [
-      { name: 'Felix', relation: 'Growing familiarity', detail: 'They have no meaningful personal relationship at the story\'s opening. Her diplomatic work increasingly overlaps with his duties around Lynleit and MSF. Repeated encounters bring respect, private jokes, and affection. Sherie enjoys directing their exchanges; Felix teases back and complicates her control. His continued fixation on Lynleit can hurt, even as he seeks Sherie\'s company. Her confidence does not spare her disappointment or doubts about whether he sees her clearly. During a card game she catches him looking at her while he complains about Lynleit. She leaves her legs stretched along the sofa and begins enjoying his distraction.' }
+      { name: 'Felix', relation: 'Growing familiarity', detail: 'They have no meaningful personal relationship at the story\'s opening. Her diplomatic work increasingly overlaps with his duties around Lynleit and MSF. Repeated encounters bring respect, private jokes, and affection. Sherie enjoys directing their exchanges; Felix teases back and complicates her control. His continued fixation on Lynleit can hurt, even as he seeks Sherie\'s company. Her confidence does not spare her disappointment or doubts about whether he sees her clearly. During a card game she catches him looking at her while he complains about Lynleit. She leaves her legs stretched along the sofa and begins enjoying his distraction. At first she enjoys catching his attention; later she wants him to seek her out without an invitation. She can hear his distraction without knowing its cause, while he sometimes catches what she hides inside an amusing account. Eventually she refuses to spend their private time accommodating his hopes about Lynleit.' }
     ],
     origin: 'Sherie studies diplomacy under her uncle Drake. She is quicker at reading a room and drawing people into conversation than he is.', rupture: 'Drake\'s peers ridicule his warning and the Duke remains skeptical. Sherie believes her uncle, but rejects his decision to remain inside official limits and begins designing her own approach to Lynleit.', focus: 'Sherie develops the unauthorized approach to Lynleit against Drake\'s wishes, persuades him to attend, and leads the negotiations herself. After it succeeds, she asks him to praise and pamper her.', future: 'Sherie and Drake use the private agreement to ask Lynleit for a loyal team capable of covertly inspecting apparently unmanned night shipments on the Vilen river. The empty boats and the Drowned Choir prove that the suspected coup cannot be understood as a purely political operation.',
     ally: 'Drake', allyNote: 'Her uncle, mentor, and strategic counterpart. He trains her for diplomacy, while her charm and quick mind carry them through situations his social skills cannot.', rival: 'Official oversight', rivalNote: 'The government and Ducal Court would end the partnership if either discovered it.', goal: 'Become a diplomat capable of turning Drake\'s strategic understanding into alliances, while tracing the suspected coup without exposing MSF cooperation.',
@@ -223,7 +231,7 @@ const profileSeeds = [
     personalitySummary: 'Felix jokes, flirts, and tries out explanations even when nothing depends on the answer. In danger he is often the first to offer an interpretation people can bear. He may not believe it yet; while reassuring them, he keeps looking for evidence and a meaning he can accept himself. He takes conflict personally and wants to make things right directly afterward. His hacking and communications work finds indirect approaches, making him the knight to Reiner\'s rook. Sherie\'s confident direction invites him to tease back. He enjoys her company and grows attached, while still imagining intimacy with Lynleit.',
     connections: [
       { name: 'Lynleit', relation: 'Friendship and persistent flirting', detail: 'He protects her as a long-standing friend and keeps testing her patience with flirtation. On church visits with her and Fionn, he cannot resist flirting with nuns. Reiner behaves; Felix keeps doing it until Lynleit loses patience. He tells her he only has eyes for her, but she does not accept his attempt to recast the reprimand as a request for romantic loyalty.' },
-      { name: 'Sherie', relation: 'Growing familiarity', detail: 'Their connection develops slowly from repeated professional encounters, with no meaningful personal relationship at the opening. Felix enjoys her company, responds to her teasing, and starts seeking her out. Still fixated on Lynleit, he can mistake Sherie\'s interest for practiced charm or an entertaining friendship. She gradually becomes someone around whom he need not always perform. His eventual movement toward her requires recognizing that he wants Sherie herself. At cards, he complains about Lynleit while Sherie interrupts his concentration without interrupting him. When he asks why she is looking at him that way, her reply leaves him without an answer.' }
+      { name: 'Sherie', relation: 'Growing familiarity', detail: 'Their connection develops slowly from repeated professional encounters, with no meaningful personal relationship at the opening. Felix enjoys her company, responds to her teasing, and starts seeking her out. Still fixated on Lynleit, he can mistake Sherie\'s interest for practiced charm or an entertaining friendship. She gradually becomes someone around whom he need not always perform. His eventual movement toward her requires recognizing that he wants Sherie herself. At cards, he complains about Lynleit while Sherie interrupts his concentration without interrupting him. When he asks why she is looking at him that way, her reply leaves him without an answer. He begins remembering small details, wanting to tell her things, noticing her absence, and learning the changes in her voice. Flirtation remains easy while sincere speech becomes harder. Wanting her eventually has to change his choices over time.' }
     ],
     traits: [
       { label: 'Playful flirt', note: 'He turns tension into teasing, tests reactions openly, and treats charm as both genuine expression and useful disruption.' },
@@ -1355,6 +1363,13 @@ function renderProfile(profile) {
   loadCharacterMoments(profile, timeline);
 
   const appearance = document.querySelector('#character-appearance');
+  const nameMeaning = document.querySelector('#character-name-meaning');
+  if (profile.nameMeaning?.length) {
+    profile.nameMeaning.forEach(([term, detail]) => {
+      nameMeaning.append(createElement('dt', '', term), createElement('dd', '', detail));
+    });
+    document.querySelector('#character-name-section').hidden = false;
+  }
   const appearanceDetails = [
     ...(profile.physical ?? []),
     ['Wardrobe and silhouette', profile.visual],

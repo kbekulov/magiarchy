@@ -98,6 +98,7 @@ const sexualTensionFor = (slug) => [
     .map((entry) => ({ label: 'Potential sexual tension', status: 'Unresolved', note: entry.note }))
 ];
 const characterAnchors = {
+  nameMeaning: 'name-meaning-title',
   appearance: 'appearance-title',
   personality: 'personality-title',
   equipment: 'equipment-title',
@@ -122,6 +123,7 @@ characters.forEach((character) => {
   });
 
   const sections = [
+    ['nameMeaning', 'Name meaning', character.nameMeaning],
     ['appearance', 'Appearance', [character.physical, character.visual, character.palette, character.appearanceDetails]],
     ['personality', 'Strengths and weaknesses', [character.personalitySummary, character.traits, character.mbti]],
     ['equipment', 'Equipment', character.equipment],

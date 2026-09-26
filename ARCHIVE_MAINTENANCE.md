@@ -79,6 +79,10 @@ Home news has a rolling maximum age of 31 UTC calendar days, not a calendar-mont
 
 Character Aphorisms is a speaker-organized, versioned collection of project-specific sayings. Preserve author wording as the source when polishing a line. Distinguish unplaced dialogue drafts from exact quotations in a Chapter or Moment, and add a scene link only when the line is actually used there. A character's joke is not a narrator's statement of canon. Do not invent a listener, date, response, or new relationship fact to give an aphorism a setting. Keep placement questions in the living Questions ledger.
 
+Character name interpretations belong in the optional `nameMeaning` field in `character.js`, rendered in a separate compact profile section and indexed under its own anchor. Distinguish an author's intended construction from uncertain readings and real-world linguistic claims. Do not infer a naming parent, religious allegiance, power, or plot destiny from a meaning. Lynleit's competing readings remain a question in the living ledger.
+
+Sherie and Felix's approved relationship and musical direction lives in the Intimacy Reference, with character-specific readings in the shared tension registry. Ordinary company precedes the fear of losing it; work disagreements and Sherie's eventual refusal to accommodate Felix's hopes about Lynleit retain consequences. Future assignments, separations, changed choices, and motif recordings require their own author-established particulars before entering timelines, scene evidence, or the playable Music library.
+
 Every Chapter must have:
 
 - Markdown text in `story/`;

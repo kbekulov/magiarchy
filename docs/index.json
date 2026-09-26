@@ -3,19 +3,27 @@
     "slug": "character-aphorisms",
     "title": "Character Aphorisms",
     "topic": "Writer's Dialogue Collection",
-    "description": "Sherie's sayings on games, catastrophe, catharsis, and the uncertainty of Lynleit.",
+    "description": "Sherie's two sayings in the author's exact wording, with their scene placements still open.",
     "file": "character-aphorisms.md",
     "updated": "2026-09-26",
     "speakers": [
       "Sherie"
     ],
-    "defaultVersion": "v1",
+    "defaultVersion": "v2",
     "versions": [
       {
         "id": "v1",
-        "label": "v1 · Current",
+        "label": "v1 · Archived",
+        "file": "character-aphorisms-v1.md",
+        "updated": "2026-09-26",
+        "description": "Sherie's sayings on games, catastrophe, catharsis, and the uncertainty of Lynleit."
+      },
+      {
+        "id": "v2",
+        "label": "v2 · Current",
         "file": "character-aphorisms.md",
-        "updated": "2026-09-26"
+        "updated": "2026-09-26",
+        "description": "Sherie's two sayings in the author's exact wording, with their scene placements still open."
       }
     ]
   },
@@ -711,11 +719,11 @@
     "topic": "Writer's Character Reference",
     "file": "character-intimacy-and-sexuality.md",
     "updated": "2026-09-26",
-    "description": "The card-game illustrations in Gallery Artwork; Sherie's collected sayings remain separate from scene evidence.",
+    "description": "Sherie and Felix: familiar company, uneven recognition, divided duties, separation, and musical direction.",
     "speakers": [
       "Character Archive"
     ],
-    "defaultVersion": "v17",
+    "defaultVersion": "v18",
     "versions": [
       {
         "id": "v1",
@@ -847,10 +855,18 @@
       },
       {
         "id": "v17",
-        "label": "v17 · Current",
-        "file": "character-intimacy-and-sexuality.md",
+        "label": "v17 · Archived",
+        "file": "character-intimacy-and-sexuality-v17.md",
         "updated": "2026-09-26",
         "description": "The card-game illustrations in Gallery Artwork; Sherie's collected sayings remain separate from scene evidence.",
+        "tensionFile": "sexual-tension-notes-v17.json"
+      },
+      {
+        "id": "v18",
+        "label": "v18 · Current",
+        "file": "character-intimacy-and-sexuality.md",
+        "updated": "2026-09-26",
+        "description": "Sherie and Felix: familiar company, uneven recognition, divided duties, separation, and musical direction.",
         "tensionFile": "sexual-tension-notes.json"
       }
     ]

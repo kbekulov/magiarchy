@@ -14,6 +14,7 @@ import { testMusicMovements } from './test-music-movements.mjs';
 import { testHomeFeed } from './test-home-feed-ui.mjs';
 import { testSherieFelixBanter } from './test-sherie-felix-banter.mjs';
 import { testAphorisms } from './test-aphorisms.mjs';
+import { testRelationshipDirection } from './test-relationship-direction.mjs';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const mime = { '.html': 'text/html', '.js': 'text/javascript', '.json': 'application/json', '.css': 'text/css', '.png': 'image/png', '.webp': 'image/webp', '.md': 'text/plain', '.mp3': 'audio/mpeg', '.wav': 'audio/wav' };
@@ -69,6 +70,7 @@ try {
         continue;
       }
       if (process.env.TEST_GALLERY_ONLY === '1') {
+        await testRelationshipDirection(page, origin, engine);
         await testAphorisms(page, origin, engine);
         await testSherieFelixBanter(page, origin, engine);
         await testArtworkVersions(page, origin, engine);
@@ -83,6 +85,7 @@ try {
         continue;
       }
       if (process.env.TEST_BANTER_ONLY === '1') {
+        await testRelationshipDirection(page, origin, engine);
         await testAphorisms(page, origin, engine);
         await testSherieFelixBanter(page, origin, engine);
         assert.deepEqual(errors, [], `${engine}: card-game reader errors`);
@@ -100,6 +103,7 @@ try {
       }
       await testSherieFelixBanter(page, origin, engine);
       await testNarveanFog(page, origin, engine);
+      await testRelationshipDirection(page, origin, engine);
       await testAphorisms(page, origin, engine);
       await testMusicMovements(page, origin, engine);
       await testArtworkVersions(page, origin, engine);
