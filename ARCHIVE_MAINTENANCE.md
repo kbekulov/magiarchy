@@ -4,6 +4,11 @@ This file is the concise operating map for future agents and maintainers. `AGENT
 
 ## Authority and record states
 
+Closely related artwork studies share one catalog entry using matching `data-artwork-stack` and `data-image-version-group` values. Choose one catalog variant randomly on each load; preserve every original and direct image URL. Group the reader thumbnails by `data-variant-category` when variants have meaningful types, such as With cards and Without cards. Keep scene panels out of artwork stacks.
+
+Panels records use an optional `hScene` boolean. Include H Scenes and H Scenes only are mutually exclusive and unchecked on fresh collection loads; both off excludes H Scenes. This category is for author-directed, story-driven suggestive scenes, not automatically every intimate image. A `placeholder: true` panel record has empty beats and panels and no invented scene link or cover. Show an honest unavailable-image message with breadcrumbs. Darkness is a Felix/Sherie placeholder, not a completed scene or new chronology.
+
+
 Gallery artwork filters include mutually exclusive Chibi only and Exclude chibis toggles. Both off includes both artwork styles; either mode combines with the existing character and location filters and preserves default-version previews.
 
 Pencil only and Colored only form a second mutually exclusive pair, independent of the chibi pair. Each artwork card has explicit `data-art-finish="pencil"` or `data-art-finish="colored"` metadata. Pencil is the browsing category for monochrome pencil/pen sketches, not a claim about the physical medium; colored includes sketches with deliberate color accents. Classify from the image, not its filename, and preserve the original medium in captions. Keep each pair grouped with compact spacing, apply all selected filters together, and show an accurate count and empty state. These filters apply to Artwork only, not Production resources or Panels.

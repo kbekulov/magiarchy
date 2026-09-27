@@ -22,6 +22,13 @@ export function validatePanels(root, records, { built = true } = {}) {
     for (const key of ['title', 'summary', 'medium']) assert.ok(typeof record[key] === 'string' && record[key].trim(), `${record.id}: missing ${key}`);
     assert.ok(Array.isArray(record.characters), `${record.id}: characters required`);
     for (const name of record.characters) assert.ok(characters.includes(`slug: '${name}'`), `${record.id}: unknown character ${name}`);
+    if (record.hScene !== undefined) assert.equal(typeof record.hScene, 'boolean', `${record.id}: invalid H scene flag`);
+    if (record.placeholder === true) {
+      assert.equal(record.panels.length, 0, `${record.id}: placeholder cannot contain artwork`);
+      assert.equal(record.beats.length, 0, `${record.id}: placeholder cannot invent beats`);
+      assert.ok(!record.moment && !record.chapter && !record.cover, `${record.id}: placeholder cannot imply a completed scene`);
+      continue;
+    }
     assert.ok(record.moment || record.chapter, `${record.id}: a scene connection is required`);
     for (const kind of ['moment', 'chapter']) {
       if (!record[kind]) continue;

@@ -126,7 +126,7 @@ export async function testGalleryPanels(page, origin, engine) {
     assert.equal(await page.locator('#gallery-collections a[aria-current]').textContent(), 'PanelsScenes in sequence');
     assert.ok(!await page.locator('#gallery-content').isVisible());
     assert.ok(!await page.locator('#production-collection').isVisible());
-    assert.equal(await page.locator('.panel-card').count(), records.length);
+    assert.equal(await page.locator('.panel-card').count(), records.filter(record => !record.hScene).length);
     assert.equal(await page.locator(`.panel-card a[href="gallery.html?panels=${record.id}"] img`).getAttribute('src'), record.panels.find(panel => panel.id === record.cover).display, 'Catalog must show the current cover revision');
     assert.ok(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1));
     await page.screenshot({ path: `test-results/${engine}-panels-catalog-${width}.png`, fullPage: true });

@@ -6,6 +6,7 @@ import vm from 'node:vm';
 import { fileURLToPath } from 'node:url';
 import { chromium, webkit, firefox } from 'playwright';
 import { testGalleryResources } from './test-gallery-resources.mjs';
+import { testGalleryStacks } from './test-gallery-stacks.mjs';
 import { testGalleryPanels } from './test-gallery-panels.mjs';
 import { testSeptemberPanelIntake } from './test-september-panel-intake.mjs';
 import { testKyrienOrigin } from './test-kyrien-origin.mjs';
@@ -71,6 +72,7 @@ try {
         continue;
       }
       if (process.env.TEST_GALLERY_ONLY === '1') {
+        await testGalleryStacks(page, origin, engine);
         await testSeptemberPanelIntake(page, origin, engine);
         await testRelationshipDirection(page, origin, engine);
         await testAphorisms(page, origin, engine);

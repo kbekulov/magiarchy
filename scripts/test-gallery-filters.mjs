@@ -18,7 +18,7 @@ export async function testGalleryFilters(page, origin, engine) {
       finish: item.dataset.artFinish,
       characters: item.dataset.character.split(/\s+/),
       location: item.dataset.location,
-      preview: !item.dataset.imageVersionGroup || item.dataset.imageVersionDefault === 'true'
+      preview: item.dataset.artworkStack ? item.dataset.stackPreview === 'true' : !item.dataset.imageVersionGroup || item.dataset.imageVersionDefault === 'true'
     })));
     assert.ok(cards.every(card => ['pencil', 'colored'].includes(card.finish)), 'Every artwork needs an explicit finish');
     assert.ok(cards.some(card => card.finish === 'pencil'));

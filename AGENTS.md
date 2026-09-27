@@ -1,5 +1,7 @@
 # Project instructions
 
+- Stack closely related artwork variants in one Gallery entry, with a random catalog preview and meaningful reader subgroups when needed. Preserve separate original downloads and direct variant URLs. Keep scene panels in Panels. H Scene filters start off, excluding that category until selected.
+
 - `workshop/` and all its contents are private local editing material. Never commit, upload, publish, index, or integrate them into the website. Keep the entire directory ignored by Git.
 
 - Read `ARCHIVE_MAINTENANCE.md` before changing archive content or structure. Treat it as the concise source-and-surface map for mandatory follow-up work. When a new recurring workflow, record type, audit boundary, interlinking rule, or design invariant is introduced, update that charter in the same commit. `AGENTS.md` remains controlling if the two files conflict.

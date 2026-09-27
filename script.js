@@ -392,6 +392,13 @@ function initializeGalleryCards() {
     link.removeAttribute('rel');
   });
 
+  // Grouped studies share one catalog tile while every original keeps its own URL.
+  const studyGroups = new Set([...galleryItems].map(card => card.dataset.artworkStack).filter(Boolean));
+  for (const group of studyGroups) {
+    const variants = [...galleryItems].filter(card => card.dataset.artworkStack === group);
+    const chosen = variants[Math.floor(Math.random() * variants.length)];
+    variants.forEach(card => { card.dataset.stackPreview = String(card === chosen); });
+  }
   const requestedImage = new URLSearchParams(window.location.search).get('image');
   const selectedCard = Array.from(galleryItems).find((card) => card.dataset.image === requestedImage);
   if (!selectedCard || !galleryReaderView) return;
@@ -432,7 +439,15 @@ function initializeGalleryCards() {
       heading.className = 'eyebrow';
       heading.textContent = 'Versions';
       versionNav.append(heading);
+      let subgroup;
       versions.forEach(card => {
+        if (card.dataset.variantCategory && subgroup !== card.dataset.variantCategory) {
+          subgroup = card.dataset.variantCategory;
+          const category = document.createElement('strong');
+          category.className = 'gallery-variant-category';
+          category.textContent = subgroup;
+          versionNav.append(category);
+        }
         const artwork = card.querySelector('img');
         const link = document.createElement('a');
         link.href = `gallery.html?image=${encodeURIComponent(card.dataset.image)}`;
@@ -506,7 +521,7 @@ function updateGalleryResults() {
     const isChibi = item.dataset.chibi === 'true';
     const matchesChibi = (!chibiOnly || isChibi) && (!excludeChibis || !isChibi);
     const matchesFinish = (!pencilOnly || item.dataset.artFinish === 'pencil') && (!coloredOnly || item.dataset.artFinish === 'colored');
-    const isPreview = !item.dataset.imageVersionGroup || item.dataset.imageVersionDefault === 'true';
+    const isPreview = item.dataset.artworkStack ? item.dataset.stackPreview === 'true' : !item.dataset.imageVersionGroup || item.dataset.imageVersionDefault === 'true';
     const isVisible = isPreview && matchesCharacter && matchesLocation && matchesChibi && matchesFinish;
 
     item.hidden = !isVisible;

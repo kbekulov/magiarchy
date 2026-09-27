@@ -28,6 +28,7 @@
   const names = new Map([...$('#gallery-character-filter').options].map(option => [option.value, option.textContent]));
   const collection = $('#panel-collection'), reader = $('#panel-reader'), grid = $('#panel-grid');
   const search = $('#panel-search'), character = $('#panel-character'), empty = $('#panel-empty');
+  const includeH = $('#panel-include-h'), onlyH = $('#panel-only-h');
   const collections = $('#gallery-collections');
   $('#gallery-toolbar').hidden = true;
   $('#gallery-content').hidden = true;
@@ -129,6 +130,12 @@
     const cast = $('#panel-characters');
     if (record.characters.length) cast.append(node('span', 'Featuring'));
     record.characters.forEach(slug => cast.append(link(names.get(slug) || slug, `character.html?character=${encodeURIComponent(slug)}`, 'panel-character-link')));
+    if (record.placeholder) {
+      $('#panel-count').textContent = 'No panel images available';
+      $('#panel-slideshow').hidden = true;
+      $('#panel-sequence').append(node('p', 'No panel images are available for this scene.', 'resource-no-preview'));
+      return;
+    }
     slideshow(record);
     let imageIndex = 0;
     for (const [beatIndex, beat] of record.beats.entries()) {
@@ -217,12 +224,13 @@
     if ([...character.options].some(option => option.value === params.get('character'))) character.value = params.get('character');
     function filter(updateURL = true) {
       const query = search.value.trim().toLowerCase();
-      const shown = records.filter(record => (character.value === 'all' || record.characters.includes(character.value)) && [record.title, record.summary, record.medium, ...record.characters.map(slug => names.get(slug) || slug), ...record.panels.map(panel => panel.title)].join(' ').toLowerCase().includes(query));
+      const shown = records.filter(record => (onlyH.checked ? record.hScene === true : includeH.checked || !record.hScene) && (character.value === 'all' || record.characters.includes(character.value)) && [record.title, record.summary, record.medium, ...record.characters.map(slug => names.get(slug) || slug), ...record.panels.map(panel => panel.title)].join(' ').toLowerCase().includes(query));
       grid.replaceChildren(...shown.map(record => {
         const card = node('article', null, 'panel-card');
         const anchor = link(null, window.MAGIARCHY_PANELS.url(record));
         const cover = record.panels.find(panel => panel.id === record.cover);
-        const img = image(cover); img.alt = cover.alt;
+        const img = cover ? image(cover) : node('div', 'No panel images available', 'resource-no-preview');
+        if (cover) img.alt = cover.alt;
         const copy = node('div', null, 'panel-card-copy');
         copy.append(node('span', record.medium, 'doc-topic'), node('h2', record.title), node('p', record.summary), node('span', `${record.beats.length} beats · ${record.panels.length} images · Open scene →`, 'panel-card-count'));
         anchor.append(img, copy); card.append(anchor); return card;
@@ -244,7 +252,11 @@
     }
     search.addEventListener('input', () => filter());
     character.addEventListener('change', () => filter());
-    $('#panel-reset').addEventListener('click', () => { search.value = ''; character.value = 'all'; filter(); search.focus(); });
+    for (const [toggle, other] of [[includeH, onlyH], [onlyH, includeH]]) {
+      toggle.checked = false;
+      toggle.addEventListener('change', () => { if (toggle.checked) other.checked = false; filter(); });
+    }
+    $('#panel-reset').addEventListener('click', () => { search.value = ''; character.value = 'all'; includeH.checked = onlyH.checked = false; filter(); search.focus(); });
     filter(false);
   }).catch(() => {
     collection.hidden = false;

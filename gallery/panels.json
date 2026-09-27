@@ -102,10 +102,10 @@
         "label": "Panel 5",
         "title": "Unresolved tension",
         "src": "media/gallery/panels/sherie-felix-unresolved-tension/sherie-felix-unresolved-tension-panel-5.png",
-        "alt": "Sherie reclines on a red sofa with playing cards and says, \"Looks like you two have unresolved tension.\"",
+        "alt": "Sherie reclines on a red and gold sofa, holding four playing cards beside her face.",
         "width": 1536,
         "height": 1024,
-        "bytes": 2720278,
+        "bytes": 2643455,
         "display": "media/gallery/previews/panels/sherie-felix-unresolved-tension-panel-5-display.webp",
         "thumbnail": "media/gallery/previews/panels/sherie-felix-unresolved-tension-panel-5-thumbnail.webp"
       },
@@ -977,5 +977,19 @@
         "thumbnail": "media/gallery/previews/panels/sleepers-above-the-river-r1-panel-7-thumbnail.webp"
       }
     ]
+  },
+  {
+    "id": "darkness",
+    "title": "Darkness",
+    "summary": "Felix and Sherie. No panel images are available.",
+    "medium": "H Scene",
+    "characters": [
+      "felix",
+      "sherie"
+    ],
+    "hScene": true,
+    "placeholder": true,
+    "beats": [],
+    "panels": []
   }
 ]
