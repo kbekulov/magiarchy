@@ -71,7 +71,7 @@ export function buildDashboard(root) {
   fact('yulia', 'A mystery she wears', profile('yulia').equipment.find(e => e.title === 'Pendant necklace').detail);
   fact('ash', 'An uninvited resident', profile('ash').personalitySummary);
   fact('yulia', 'She follows him anyway', profile('yulia').personalitySummary);
-  fact('sherie', 'Off duty', profile('sherie').personalitySummary);
+  fact('sherie', 'Off duty, with Felix', profile('sherie').personalitySummary.match(/With Felix[^.]+\./)?.[0]);
   let speaker = '', quoteTitle = '';
   for (const line of doc('character-aphorisms').split(/\r?\n/)) {
     if (line.startsWith('## ')) speaker = line.slice(3);
