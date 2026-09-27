@@ -39,9 +39,13 @@ export async function testGalleryStacks(page, origin, engine) {
       const {x,y,width,height} = element.getBoundingClientRect(); return {x,y,width,height};
     }));
     assert.ok(boxes.every(box => box.height >= 44));
+    const groupBox = await toggles.boundingBox();
+    assert.ok(Math.abs(boxes[1].x + boxes[1].width - groupBox.x - groupBox.width) < 1, 'H Scene toggles align to the right edge');
     if (width >= 820) {
       assert.ok(Math.abs(boxes[0].y - boxes[1].y) < 1, 'Desktop toggles share one row');
       assert.ok(boxes[1].x - boxes[0].x - boxes[0].width <= 32, 'Toggles stay grouped rather than spreading across the page');
+    } else {
+      assert.ok(Math.abs(boxes[0].x - boxes[1].x) < 1, 'Wrapped mobile switches share one aligned column');
     }
     assert.ok(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1));
     await page.screenshot({path:`test-results/${engine}-panel-filter-group-${width}.png`});
