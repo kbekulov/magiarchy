@@ -1,9 +1,15 @@
 (() => {
   const params = new URLSearchParams(location.search);
-  // The author reclassified this pair as artwork. Preserve published reader links.
-  if (params.get('panels') === 'sherie-felix-banter' && !params.has('image') && !params.has('resource')) {
-    const viewpoint = location.hash === '#panel-2' ? 'felix' : 'sherie';
-    const redirect = () => location.replace(`gallery.html?image=char-sherie-felix-card-game-${viewpoint}-view`);
+  // These former standalone artworks now belong only to the complete panel sequence.
+  const retiredArtwork = new Map([
+    ['char-sherie-felix-card-game-sherie-view', 'panel-2'],
+    ['char-sherie-felix-card-game-felix-view', 'panel-5']
+  ]);
+  const retiredPanelPair = params.get('panels') === 'sherie-felix-banter' && !params.has('image');
+  const destinationPanel = retiredArtwork.get(params.get('image')) ||
+    (retiredPanelPair ? (location.hash === '#panel-2' ? 'panel-5' : 'panel-2') : null);
+  if (destinationPanel && !params.has('resource')) {
+    const redirect = () => location.replace(`gallery.html?panels=sherie-felix-unresolved-tension#${destinationPanel}`);
     // Safari can report a failed module import if navigation cancels the player setup.
     Promise.resolve(window.archiveMusicReady).then(redirect, redirect);
     return;
