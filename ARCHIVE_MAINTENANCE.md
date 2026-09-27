@@ -18,6 +18,8 @@ Shared UI invariants: Music uses the Characters archive toolbar with category an
 
 ## Backlog intake
 
+`workshop/` is exclusively for private local edits. Its complete subtree must stay Git-ignored and outside public records, search, asset intake, build output, and deployment. Do not copy its contents into published surfaces or upload them to GitHub.
+
 Inspect only the pending `backlog/*.txt` queue. Process exactly one file per response, in filename order unless the author selects another, before ordinary requested work. Workflow changes apply immediately. Both author-drafted and assistant-drafted sources can carry author-approved direction. Preserve specific details, dialogue, and consequences across the relevant sources, ledgers, links, and public surfaces.
 
 After verification, move the unchanged source into `backlog/archive/original-name__YYYY-MM-DDTHH-mm-ssZ.txt` using a UTC timestamp. Never overwrite or delete archived originals, and never treat that subfolder as a pending queue. A concise non-graphic `> [WRITER: ...]` placeholder marks any undrafted passage in Chapters or Docs, with a shared amber callout and visible Writer notice label. Preserve permissible surrounding material without inventing replacement actions. Such a gap is not completed prose or a reader inference. Contradictions that block integration still require author direction; keep that source pending.

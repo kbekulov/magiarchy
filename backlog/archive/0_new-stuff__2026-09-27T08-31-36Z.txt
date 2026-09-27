@@ -1,0 +1,5 @@
+#1: Workshop folder
+I added a new folder called "workshop".
+Do not ever integrate this folder or its subfoldes/files/subfiles into the site's structure, it exists only for the sake of some local edits I will do in the local project folder, but they should never be placed on GitHub or be seen by visitors. Treat this is a reoccurring rule.
+
+#2:
