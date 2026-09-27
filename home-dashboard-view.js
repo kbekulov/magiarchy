@@ -2,6 +2,7 @@
 export const escape = value => String(value ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
 const link = (href, label, cls = '') => `<a class="${cls}" href="${escape(href)}">${escape(label)}</a>`;
 export function snapshot(record, kind) {
+  if (kind === 'panels') return record ? `<a class="desk-panel-image" href="${escape(record.href)}"><img src="${escape(record.src)}" width="${record.width}" height="${record.height}" alt="${escape(record.alt)}" decoding="async"></a><div class="desk-panel-caption"><div><p class="desk-kicker">${escape(record.label)}</p><h3>${link(record.href, record.title)}</h3><p>${escape(record.caption)}</p></div>${link(record.href, 'Read sequence →', 'desk-link')}</div>` : '<p>No panel images available.</p>';
   if (!record) return `<p class="desk-kicker">${kind === 'contradictions' ? 'Contradiction ledger' : 'Ledger'}</p><h3>None recorded</h3><p>No unresolved ${kind === 'contradictions' ? 'contradictions' : 'questions'} are currently listed.</p>${link(`docs.html?doc=${kind === 'contradictions' ? 'contradictions-to-resolve' : 'questions-to-be-answered'}`, 'Review the ledger →', 'desk-link')}`;
   return `<p class="desk-kicker">${escape(record.meta)}</p><h3>${escape(record.title)}</h3>
     <${record.quote ? 'blockquote' : 'p'} class="desk-excerpt">${escape(record.text)}</${record.quote ? 'blockquote' : 'p'}>
@@ -10,7 +11,7 @@ export function snapshot(record, kind) {
 }
 export function castRows(cast, mode = 'presence', selected = cast[0]?.slug) {
   const maximum = Math.max(1, ...cast.map(c => c.total));
-  return cast.map(c => `<button type="button" class="desk-cast-row" data-character-choice="${escape(c.slug)}" aria-pressed="${c.slug === selected}">
+  return (mode === 'presence' ? `<div class="desk-axis" aria-hidden="true"><span>0</span><span>${maximum / 2}</span><span>${maximum}</span></div>` : '') + cast.map(c => `<button type="button" class="desk-cast-row" data-character-choice="${escape(c.slug)}" aria-pressed="${c.slug === selected}">
     <span>${escape(c.name)}</span>${mode === 'presence' ? `<span class="desk-bars" aria-hidden="true"><i style="width:${c.prose / maximum * 100}%"></i><b style="width:${c.outline / maximum * 100}%"></b></span><span class="desk-tally">${c.total}<span class="sr-only"> Moments, ${c.prose} with scene prose, ${c.outline} outlines or seeds</span></span>` : `<span class="desk-coverage"><span>${c.goal ? '●' : '○'} <small>Goal</small></span><span>${c.conflicts.length} <small>conflicts</small></span><span>${c.links.length} <small>cast links</small></span></span>`}</button>`).join('');
 }
 export function castDetail(c) {
@@ -22,12 +23,25 @@ export function castDetail(c) {
 }
 const shuffle = (kind, label) => `<button type="button" class="desk-shuffle" data-shuffle="${kind}" aria-label="Another ${label}" hidden><span aria-hidden="true">↻</span></button>`;
 const card = (data, kind, title) => `<section class="desk-card" aria-labelledby="desk-${kind}-title"><header class="desk-section-head"><h2 id="desk-${kind}-title">${title}</h2>${shuffle(kind, { facts: 'world snapshot', questions: 'open question', contradictions: 'contradiction', holumns: 'Holumn', moments: 'Moment' }[kind])}</header><div data-snapshot="${kind}" data-selected="${escape(data[kind][0]?.id || '')}">${snapshot(data[kind][0], kind)}</div></section>`;
+export function genreChart(groups) {
+  const total = groups.reduce((sum, group) => sum + group.weight, 0);
+  let offset = 0;
+  const rings = groups.map(group => {
+    const share = group.weight / total * 100;
+    const ring = `<circle cx="100" cy="100" r="76" pathLength="100" fill="none" stroke="${group.color}" stroke-width="26" stroke-dasharray="${share - .8} ${100 - share + .8}" stroke-dashoffset="${-offset}" transform="rotate(-90 100 100)"/>`;
+    offset += share;
+    return ring;
+  }).join('');
+  return `<div class="desk-genre-layout"><svg class="desk-donut" viewBox="0 0 200 200" role="img" aria-labelledby="desk-donut-title"><title id="desk-donut-title">Editorial emphasis across six theme groups. Values appear in the adjacent legend, not measured shares of the written story.</title>${rings}<text x="100" y="97" text-anchor="middle" class="desk-donut-number">${groups.length}</text><text x="100" y="119" text-anchor="middle" class="desk-donut-label">theme groups</text></svg><ul class="desk-genre-legend">${groups.map(group => `<li><a href="${escape(group.href)}"><i style="background:${group.color}" aria-hidden="true"></i><span>${escape(group.name)}</span><b>${Math.round(group.weight / total * 100)}%</b></a></li>`).join('')}</ul></div><details class="desk-method"><summary>What these proportions mean</summary><p>This is a working editorial balance, not measured screen time or a prescribed story ratio. It groups the existing theme cloud's emphasis weights: primary 3, supporting 2, quieter 1.</p><ul>${groups.map(group => `<li><strong>${escape(group.name)}:</strong> ${escape(group.members.join(', '))} (${group.weight} points).</li>`).join('')}</ul></details>`;
+}
 export function dashboardHTML(data) {
   return `<section id="writer-dashboard" class="writer-dashboard" aria-label="Writer's dashboard">
     <div class="desk-overview"><p>${data.counts.chapters} Chapters <span>·</span> ${data.counts.moments} Moments <span>·</span> ${data.counts.characters} characters</p><span>Writer view · includes spoilers</span></div>
+    <div class="desk-visuals"><section class="desk-card desk-panel" aria-labelledby="desk-panel-title"><header class="desk-section-head"><h2 id="desk-panel-title">A window into the story</h2>${shuffle('panels', 'panel image')}</header><div data-snapshot="panels" data-selected="${escape(data.panels[0]?.id || '')}">${snapshot(data.panels[0], 'panels')}</div></section><section class="desk-card desk-genres" aria-labelledby="desk-genres-title"><header class="desk-section-head"><div><h2 id="desk-genres-title">Genre &amp; theme balance</h2><p class="desk-muted">Editorial emphasis</p></div></header>${genreChart(data.genreGroups)}</section></div>
     <div class="desk-lead">
       ${card(data, 'facts', 'Back into the world')}
       <section class="desk-card desk-work" aria-labelledby="desk-work-title"><header class="desk-section-head"><h2 id="desk-work-title">Pick up a thread</h2></header><p class="desk-muted">Open work in the current records.</p>
+      <div class="desk-draft-bar" aria-hidden="true">${data.draftStatus.map(s => `<span style="flex:${s.count};background:${s.color}"></span>`).join('')}</div><p class="desk-draft-key">${data.draftStatus.map(s => `<span><i style="background:${s.color}" aria-hidden="true"></i><strong>${s.count}</strong> ${s.label}</span>`).join('')}</p>
       ${data.tasks.map(t => `<details class="desk-task"><summary><span><strong>${escape(t.title)}</strong><small>${escape(t.hint)}</small></span><b>${t.rows.length}</b></summary>${t.rows.length ? `<ul>${t.rows.map(r => `<li>${link(r.href, r.title)}</li>`).join('')}</ul>` : '<p>None recorded.</p>'}</details>`).join('')}</section>
     </div>
     <div class="desk-pair desk-decisions">${card(data, 'questions', `Open questions <span class="desk-count">${data.questions.length}</span>`)}${card(data, 'contradictions', `Contradictions <span class="desk-count">${data.contradictions.length}</span>`)}</div>

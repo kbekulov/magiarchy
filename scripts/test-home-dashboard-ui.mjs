@@ -9,12 +9,16 @@ export async function testHomeDashboard(page, origin, engine) {
     await page.locator('[data-shuffle="facts"]:visible').waitFor();
     assert.equal(await page.locator('[data-character-choice]').count(), data.cast.length);
     assert.ok(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1), `${width}: dashboard overflow`);
-    for (const kind of ['facts', 'questions', 'holumns', 'moments']) {
+    for (const kind of ['facts', 'questions', 'holumns', 'moments', 'panels']) {
       const slot = page.locator(`[data-snapshot="${kind}"]`);
       const before = await slot.getAttribute('data-selected');
       await page.locator(`[data-shuffle="${kind}"]`).click();
       assert.notEqual(await slot.getAttribute('data-selected'), before);
     }
+    await page.waitForFunction(() => document.querySelector('.desk-panel-image img')?.naturalWidth > 0);
+    assert.equal(await page.locator('.desk-donut circle').count(), data.genreGroups.length);
+    assert.equal(await page.locator('.desk-genre-legend li').count(), data.genreGroups.length);
+    assert.equal(await page.locator('.desk-draft-bar span').count(), data.draftStatus.length);
     await page.locator('#desk-cast-order').selectOption('least');
     const ordered = [...data.cast].sort((a, b) => a.total - b.total || a.name.localeCompare(b.name));
     assert.equal(await page.locator('[data-character-choice]').first().getAttribute('data-character-choice'), ordered[0].slug);
@@ -32,11 +36,16 @@ export async function testHomeDashboard(page, origin, engine) {
     await page.locator('#writer-dashboard').scrollIntoViewIfNeeded();
     await page.evaluate(() => { document.querySelector('.feed-scroll').scrollTop = 0; window.scrollTo(0, 0); });
     await page.screenshot({ path: `test-results/${engine}-writer-dashboard-${width}.png` });
+    await page.locator('.desk-genres').scrollIntoViewIfNeeded();
+    await page.screenshot({ path: `test-results/${engine}-writer-genres-${width}.png` });
     await page.locator('.desk-cast').scrollIntoViewIfNeeded();
     await page.screenshot({ path: `test-results/${engine}-writer-cast-${width}.png` });
   }
   // The sampled ledger entry must open the exact row, not just the top of a long document.
   const href = await page.locator('[data-snapshot="questions"] .desk-link').getAttribute('href');
+  const panelHref = await page.locator('.desk-panel-image').getAttribute('href');
+  await page.goto(`${origin}/${panelHref}`);
+  await page.locator(new URL(panelHref, origin).hash).waitFor();
   await page.goto(`${origin}/${href}`);
   const id = new URL(href, origin).hash.slice(1);
   await page.locator(`[id="${id}"]`).waitFor();
@@ -50,7 +59,7 @@ export async function testHomeDashboard(page, origin, engine) {
   // Failure must not blank the useful build-time dashboard.
   await page.route('**/home-dashboard.json', route => route.abort());
   await page.goto(`${origin}/index.html`);
-  assert.equal(await page.locator('.desk-card').count(), 8);
+  assert.equal(await page.locator('.desk-card').count(), 10);
   assert.ok(await page.locator('[data-snapshot="facts"] .desk-link').isVisible());
   await page.unroute('**/home-dashboard.json');
   const noJs = await page.context().browser().newContext({ javaScriptEnabled: false });
@@ -58,7 +67,7 @@ export async function testHomeDashboard(page, origin, engine) {
     const staticPage = await noJs.newPage();
     await staticPage.route('https://**/*', route => route.abort());
     await staticPage.goto(`${origin}/index.html`);
-    assert.equal(await staticPage.locator('.desk-card').count(), 8);
+    assert.equal(await staticPage.locator('.desk-card').count(), 10);
     assert.ok(await staticPage.locator('#desk-work-title').isVisible());
   } finally { await noJs.close(); }
   console.log(`${engine}: writer dashboard sources, charts, refresh, exact ledger links, 5 widths and fallbacks passed.`);

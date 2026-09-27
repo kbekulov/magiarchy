@@ -7,6 +7,20 @@ import { dashboardHTML, snapshot } from '../home-dashboard-view.js';
 const root = fileURLToPath(new URL('../', import.meta.url));
 const data = buildDashboard(root);
 
+test('visual overview uses current public panels and traceable theme weights', () => {
+  const sets = JSON.parse(fs.readFileSync(new URL('../gallery/panels.json', import.meta.url)));
+  assert.equal(data.panels.length, sets.filter(s => !s.hScene && !s.placeholder).reduce((n, s) => n + s.panels.length, 0));
+  for (const panel of data.panels) {
+    assert.ok(fs.existsSync(new URL(`../${panel.src}`, import.meta.url)));
+    const set = sets.find(s => s.id === panel.set);
+    assert.ok(!set.hScene && !set.placeholder);
+    assert.ok(set.panels.some(p => panel.href.endsWith(`#${p.id}`) && p.display === panel.src));
+  }
+  assert.deepEqual(data.genreGroups.flatMap(g => g.members).sort(), data.themes.map(t => t.name).sort());
+  assert.equal(data.genreGroups.reduce((n, g) => n + g.weight, 0), data.themes.reduce((n, t) => n + t.weight, 0));
+  assert.equal(data.draftStatus.reduce((n, s) => n + s.count, 0), data.counts.chapters);
+});
+
 test('only the selected default contributes to dashboard data', () => {
   assert.equal(current({ title: 'base', defaultVersion: 'v2', versions: [{ id: 'v1', title: 'old' }, { id: 'v2', title: 'current' }, { id: 'v3', title: 'new alternate' }] }).title, 'current');
   const chapters = JSON.parse(fs.readFileSync(new URL('../story/index.json', import.meta.url))).map(current);
