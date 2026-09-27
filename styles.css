@@ -21,6 +21,9 @@
   --ease: cubic-bezier(0.22, 1, 0.36, 1);
 }
 
+/* Writer dashboard links open the exact living-ledger row. */
+.question-ledger-table tr:target { background: var(--accent-wash); outline: 1px solid var(--accent-bright); scroll-margin-top: 100px; }
+
 /* A single audio owner survives navigation while ordinary pages keep their
    own document lifecycle in the reading frame. No styling leaks between pages. */
 .music-dock-open:not(.music-shell-active) body { padding-bottom: var(--music-dock-space); }

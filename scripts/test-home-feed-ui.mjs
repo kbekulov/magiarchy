@@ -12,6 +12,19 @@ export async function testHomeFeed(page, origin, engine) {
     await page.goto(`${origin}/index.html`);
     await page.waitForLoadState('networkidle');
     assert.equal(await page.locator('#home-updates .dispatch').count(), readHomeUpdates(html).length);
+    const total = readHomeUpdates(html).length;
+    assert.equal(await page.locator('#home-updates .dispatch:not([hidden])').count(), Math.min(3, total));
+    if (total > 3) {
+      await page.locator('[data-news-toggle]').first().click();
+      assert.equal(await page.locator('#home-updates .dispatch:not([hidden])').count(), total);
+      await page.locator('[data-news-toggle]').last().click();
+      assert.equal(await page.locator('#home-updates .dispatch:not([hidden])').count(), 3);
+      const older = await page.locator('#home-updates .dispatch').nth(Math.min(4, total - 1)).getAttribute('id');
+      await page.evaluate(id => { location.hash = id; }, older);
+      await page.waitForFunction(() => document.querySelector('#home-updates').dataset.expanded === 'true');
+      assert.ok(await page.locator(`#${older}`).isVisible());
+      await page.locator('[data-news-toggle]').first().click();
+    }
     assert.ok(await page.locator('.welcome-card').isVisible());
     assert.equal(await page.locator('.home-updates-empty').isHidden(), readHomeUpdates(html).length > 0);
     assert.ok(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1), `Home overflow at ${width}`);

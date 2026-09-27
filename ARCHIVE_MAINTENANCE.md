@@ -31,11 +31,23 @@ Inspect only the pending `backlog/*.txt` queue. Process exactly one file per res
 
 After verification, move the unchanged source into `backlog/archive/original-name__YYYY-MM-DDTHH-mm-ssZ.txt` using a UTC timestamp. Never overwrite or delete archived originals, and never treat that subfolder as a pending queue. A concise non-graphic `> [WRITER: ...]` placeholder marks any undrafted passage in Chapters or Docs, with a shared amber callout and visible Writer notice label. Preserve permissible surrounding material without inventing replacement actions. Such a gap is not completed prose or a reader inference. Contradictions that block integration still require author direction; keep that source pending.
 
+## Home writer dashboard
+
+Home leads with a writer-facing, spoiler-labelled dashboard; recent news follows it. `scripts/home-dashboard.mjs` derives `home-dashboard.json` and the bounded static dashboard in `index.html` through `scripts/build-home-dashboard.mjs`, invoked by the search build. Change owning records, not generated copies. Use current/default Chapter, Moment, and Doc revisions only. The page remains useful without JavaScript or if its refresh data fails; random snapshots change on visits or explicit refresh, never on a timer. Keep storage optional.
+
+Scene presence counts distinct registered Moments per listed character, separating those with prose or a linked scene Chapter from outlines and seeds. Do not add linked Chapters again, estimate minutes, or claim an objective complexity score. Standalone Chapters are outside this chart. Development coverage shows recorded profile goals, conflicts, and links to named cast members, with source inspection. It is a review aid, not a quality ranking or a demand for equal prominence. Unplaced scenes remain unplaced. Theme sizes are curated from the creative direction, not computed word frequencies or quotas.
+
+Open questions come from the living question tables; unresolved contradictions come only from the Contradiction ledger table, never Decision history. Show an honest empty state when there are none. Dashboard question/contradiction URLs and `docs.js` share row anchors formed from the raw question text: kind plus its normalized heading ID, truncated to 96 characters. Validate uniqueness and test actual reader targets. Fact selectors point to current owning profile fields, while aphorisms retain their exact wording and unplaced-dialogue label. Holumn snapshots retain uncertainty and link their incident. Every snapshot offers a source link.
+
+Run `npm run build`, `npm run check`, and `TEST_HOME_ONLY=1` with `npm run test:ui` in Chromium and WebKit when changing the dashboard. Inspect screenshots at narrow phone, intermediate, and desktop widths. Test source/default isolation, chart counts, sorting and character selection, random refresh, exact ledger links, news expansion and collapse, and static/network-failure fallbacks. Preserve the site-wide player and Page notes.
+
 ## Home update retention
 
 Home news has a rolling maximum age of 31 UTC calendar days, not a calendar-month cutoff. An announcement exactly 31 days old stays through that UTC day and expires at the next midnight. Add each new dated dispatch first inside the `Home updates: start/end` markers in `index.html`; its visible date and `data-published="YYYY-MM-DD"` must agree. `scripts/build-home-updates.mjs`, invoked by the search build, removes older dispatches, rebuilds date dividers, and records the build date. Git retains the removed announcements; do not create a separate public news archive. Document, Chapter, and Moment versions are unaffected.
 
 `home-updates.js` also expires cached announcements on page load, return from a hidden tab, and UTC midnight. Empty feeds keep the welcome card and navigation and show a brief empty state. Global search excludes expired news even with earlier versions enabled. `npm run check` verifies publication dates, built retention, and matching search expirations; `npm run test:home` covers date boundaries and pruning. Use `TEST_HOME_ONLY=1` with `npm run test:ui` for desktop/mobile and cached-page expiry checks. Builds remain static and readable without JavaScript; between deployments, live expiry requires JavaScript.
+
+With JavaScript, show the newest three retained announcements initially. Keep expand/collapse controls together with the section heading and offer a collapse control after the full list. Hide date dividers with no visible entries; direct hashes to older retained announcements automatically expand the list. Without JavaScript all retained announcements remain readable. Expansion does not change the retention policy.
 
 ## Source and surface map
 

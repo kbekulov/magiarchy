@@ -14,6 +14,7 @@ import { testNarveanFog } from './test-narvean-fog.mjs';
 import { testArtworkVersions } from './test-artwork-versions.mjs';
 import { testMusicMovements } from './test-music-movements.mjs';
 import { testHomeFeed } from './test-home-feed-ui.mjs';
+import { testHomeDashboard } from './test-home-dashboard-ui.mjs';
 import { testSherieFelixBanter } from './test-sherie-felix-banter.mjs';
 import { testAphorisms } from './test-aphorisms.mjs';
 import { testRelationshipDirection } from './test-relationship-direction.mjs';
@@ -108,6 +109,7 @@ try {
         continue;
       }
       await testHomeFeed(page, origin, engine);
+      await testHomeDashboard(page, origin, engine);
       if (process.env.TEST_HOME_ONLY === '1') {
         assert.deepEqual(errors, [], `${engine}: Home feed errors`);
         continue;

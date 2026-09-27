@@ -21,6 +21,15 @@ export function refreshHomeUpdates(root, now = Date.now()) {
     if (!dates.has(divider.dataset.published)) divider.remove();
   }
   root.querySelector('.home-updates-empty').hidden = cards.length > 0;
+  const expanded = root.dataset.expanded === 'true';
+  cards.forEach((card, index) => { card.hidden = !expanded && index >= 3; });
+  const visibleDates = new Set(cards.filter(card => !card.hidden).map(card => card.dataset.published));
+  root.querySelectorAll('.date-divider').forEach(divider => { divider.hidden = !visibleDates.has(divider.dataset.published); });
+  root.querySelectorAll('[data-news-toggle]').forEach(button => {
+    button.hidden = cards.length <= 3 || (button.classList.contains('desk-news-bottom') && !expanded);
+    button.setAttribute('aria-expanded', String(expanded));
+    button.textContent = expanded ? 'Show latest 3' : `Show all ${cards.length} updates`;
+  });
 }
 
 if (typeof document !== 'undefined') {
@@ -34,6 +43,28 @@ if (typeof document !== 'undefined') {
       timer = setTimeout(refresh, DAY - (Date.now() % DAY) + 50);
     };
     refresh();
+    root.querySelectorAll('[data-news-toggle]').forEach(button => button.addEventListener('click', () => {
+      const expanded = root.dataset.expanded !== 'true';
+      root.dataset.expanded = String(expanded);
+      refresh();
+      if (!expanded) {
+        const topButton = root.querySelector('[data-news-toggle]');
+        topButton.focus({ preventScroll: true });
+        root.scrollIntoView({ block: 'start' });
+      }
+    }));
+    const revealLinkedUpdate = () => {
+      let id;
+      try { id = decodeURIComponent(location.hash.slice(1)); } catch { return; }
+      const target = document.getElementById(id);
+      if (target?.matches('.dispatch') && root.contains(target)) {
+        root.dataset.expanded = 'true';
+        refresh();
+        target.scrollIntoView({ block: 'start' });
+      }
+    };
+    revealLinkedUpdate();
+    window.addEventListener('hashchange', revealLinkedUpdate);
     window.addEventListener('pageshow', refresh);
     document.addEventListener('visibilitychange', () => { if (!document.hidden) refresh(); });
     window.addEventListener('pagehide', () => clearTimeout(timer));

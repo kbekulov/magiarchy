@@ -140,6 +140,7 @@ function createMarkdownTable(lines, startIndex) {
     if (values.length !== headers.length) break;
 
     const row = document.createElement('tr');
+    if (isEditorialLedger) row.id = `${isQuestionLedger ? 'question' : 'contradiction'}-${markdownHeadingId(values[contentIndex]).slice(0, 96)}`;
     values.forEach((value, cellIndex) => {
       const cell = document.createElement('td');
       cell.dataset.label = headers[cellIndex];

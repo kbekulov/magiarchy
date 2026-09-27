@@ -5,6 +5,7 @@ import vm from 'node:vm';
 import { fileURLToPath } from 'node:url';
 import './sync-archive-surfaces.mjs';
 import './build-home-updates.mjs';
+import './build-home-dashboard.mjs';
 import { updateExpiry } from '../home-updates.js';
 import { searchSourceDigest } from './search-source-digest.mjs';
 

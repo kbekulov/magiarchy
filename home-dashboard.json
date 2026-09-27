@@ -1,0 +1,2652 @@
+{
+  "schema": 1,
+  "counts": {
+    "chapters": 8,
+    "moments": 28,
+    "characters": 18,
+    "questions": 134,
+    "contradictions": 0
+  },
+  "tasks": [
+    {
+      "title": "Writer gaps",
+      "hint": "Passages still to write",
+      "rows": [
+        {
+          "id": "the-bench-under-the-lamp",
+          "title": "The Bench under the Lamp",
+          "href": "story.html?chapter=the-bench-under-the-lamp&version=v2",
+          "kind": "writer-gap"
+        }
+      ]
+    },
+    {
+      "title": "Chapter outlines",
+      "hint": "Recorded events without scene prose",
+      "rows": [
+        {
+          "id": "ash-under-glass",
+          "title": "The Last Man Out",
+          "href": "story.html?chapter=ash-under-glass&version=v2",
+          "kind": "outline"
+        },
+        {
+          "id": "the-name-left-behind",
+          "title": "The Name Left Behind",
+          "href": "story.html?chapter=the-name-left-behind&version=v1",
+          "kind": "outline"
+        }
+      ]
+    },
+    {
+      "title": "Unplaced Moments",
+      "hint": "No Story phase assigned",
+      "rows": [
+        {
+          "title": "University Days",
+          "href": "moments.html?moment=university-days-before-the-spill&version=v1"
+        },
+        {
+          "title": "The Prosecutor's Return",
+          "href": "moments.html?moment=the-prosecutors-return&version=v1"
+        },
+        {
+          "title": "Only Eyes for You",
+          "href": "moments.html?moment=only-eyes-for-you&version=v2"
+        },
+        {
+          "title": "Sleepers above the River",
+          "href": "moments.html?moment=sleepers-above-the-river&version=v2"
+        },
+        {
+          "title": "Unresolved Tension",
+          "href": "moments.html?moment=unresolved-tension&version=v1"
+        }
+      ]
+    }
+  ],
+  "cast": [
+    {
+      "slug": "lynleit",
+      "name": "Lynleit",
+      "role": "Fionn's biological daughter and displaced heir",
+      "goal": "Reclaim MSF from Helena, protect the people in her care, and investigate the Spill. During her later absence, she also keeps her son outside the conflict.",
+      "conflicts": [
+        [
+          "Helena's accusation",
+          "She must recover allies inside the agency now hunting her."
+        ],
+        [
+          "Forbidden witnesses",
+          "Mikhail knows she disclosed magic to Kyrien, Felix, and Reiner. She insists on handling the breach herself."
+        ]
+      ],
+      "links": [
+        {
+          "name": "Kyrien",
+          "href": "character.html?character=kyrien"
+        },
+        {
+          "name": "Helena",
+          "href": "character.html?character=helena"
+        },
+        {
+          "name": "Felix",
+          "href": "character.html?character=felix"
+        },
+        {
+          "name": "Natalia",
+          "href": "character.html?character=natalia"
+        },
+        {
+          "name": "Father Mikhail",
+          "href": "character.html?character=father-mikhail"
+        }
+      ],
+      "href": "character.html?character=lynleit",
+      "total": 20,
+      "prose": 7,
+      "outline": 13,
+      "scenes": [
+        {
+          "title": "The Prosecutor's Return",
+          "href": "moments.html?moment=the-prosecutors-return&version=v1",
+          "kind": "Outline / scene seed"
+        },
+        {
+          "title": "Only Eyes for You",
+          "href": "moments.html?moment=only-eyes-for-you&version=v2",
+          "kind": "Scene prose"
+        },
+        {
+          "title": "After the Failed Attempt",
+          "href": "moments.html?moment=interrogation-after-the-failed-attempt&version=v3",
+          "kind": "Scene prose"
+        },
+        {
+          "title": "The Secret Third Ally",
+          "href": "moments.html?moment=the-secret-third-ally&version=v3",
+          "kind": "Scene prose"
+        },
+        {
+          "title": "Ash in the Family House",
+          "href": "moments.html?moment=the-cat-in-the-family-house&version=v2",
+          "kind": "Outline / scene seed"
+        },
+        {
+          "title": "A Meeting Beyond Authority",
+          "href": "moments.html?moment=a-meeting-beyond-authority&version=v1",
+          "kind": "Outline / scene seed"
+        },
+        {
+          "title": "The Empty Boats Beneath the Bridge",
+          "href": "moments.html?moment=the-boat-beneath-the-bridge&version=v4",
+          "kind": "Scene prose"
+        },
+        {
+          "title": "Shelter after the Accusation",
+          "href": "moments.html?moment=shelter-after-the-accusation&version=v2",
+          "kind": "Outline / scene seed"
+        },
+        {
+          "title": "The First Lines Back into MSF",
+          "href": "moments.html?moment=the-first-lines-back-into-msf&version=v1",
+          "kind": "Outline / scene seed"
+        },
+        {
+          "title": "Before the Arc Turns",
+          "href": "moments.html?moment=the-end-of-the-first-arc&version=v3",
+          "kind": "Outline / scene seed"
+        },
+        {
+          "title": "The Nameless Street",
+          "href": "moments.html?moment=the-nameless-street&version=v2",
+          "kind": "Scene prose"
+        },
+        {
+          "title": "Father Mikhail Discovers the Breach",
+          "href": "moments.html?moment=mikhail-discovers-the-breach&version=v1",
+          "kind": "Outline / scene seed"
+        },
+        {
+          "title": "The Coat Fionn Left Behind",
+          "href": "moments.html?moment=the-coat-fionn-left-behind&version=v1",
+          "kind": "Outline / scene seed"
+        },
+        {
+          "title": "Because There's a Battle to Be Fought",
+          "href": "moments.html?moment=because-theres-a-battle-to-be-fought&version=v2",
+          "kind": "Outline / scene seed"
+        },
+        {
+          "title": "Terrors Inside the Academy",
+          "href": "moments.html?moment=terrors-inside-the-academy&version=v2",
+          "kind": "Outline / scene seed"
+        },
+        {
+          "title": "Father Mikhail's Foreign Venture",
+          "href": "moments.html?moment=father-mikhails-foreign-venture&version=v1",
+          "kind": "Outline / scene seed"
+        },
+        {
+          "title": "The Unresolved Assassination",
+          "href": "moments.html?moment=fionn-is-eliminated&version=v2",
+          "kind": "Outline / scene seed"
+        },
+        {
+          "title": "Doom Has an Address",
+          "href": "moments.html?moment=doom-has-an-address&version=v7",
+          "kind": "Scene prose"
+        },
+        {
+          "title": "The Bench under the Lamp",
+          "href": "moments.html?moment=the-bench-under-the-lamp&version=v2",
+          "kind": "Scene prose"
+        },
+        {
+          "title": "Households before the Spill",
+          "href": "moments.html?moment=households-before-the-spill&version=v1",
+          "kind": "Outline / scene seed"
+        }
+      ]
+    },
+    {
+      "slug": "kyrien",
+      "name": "Kyrien",
+      "role": "Independent operator and later MSF director",
+      "goal": "Survive Lynleit's control, master the intelligence side of MSF, pursue the Prosecutor General responsible for his family's destruction without abandoning his mother, and eventually make choices inside the hidden world on terms that are genuinely his own.",
+      "conflicts": [
+        [
+          "Concealed recruit",
+          "Felix distrusts him, and his position initially depends on Lynleit's protection."
+        ],
+        [
+          "Command without a Magiarch",
+          "He later runs MSF's ordinary and supernatural work while Lynleit is absent."
+        ]
+      ],
+      "links": [
+        {
+          "name": "Lynleit",
+          "href": "character.html?character=lynleit"
+        },
+        {
+          "name": "Tien",
+          "href": "character.html?character=tien"
+        },
+        {
+          "name": "Myka",
+          "href": "character.html?character=myka"
+        }
+      ],
+      "href": "character.html?character=kyrien",
+      "total": 16,
+      "prose": 6,
+      "outline": 10,
+      "scenes": [
+        {
+          "title": "The Prosecutor's Return",
+          "href": "moments.html?moment=the-prosecutors-return&version=v1",
+          "kind": "Outline / scene seed"
+        },
+        {
+          "title": "Sleepers above the River",
+          "href": "moments.html?moment=sleepers-above-the-river&version=v2",
+          "kind": "Scene prose"
+        },
+        {
+          "title": "After the Failed Attempt",
+          "href": "moments.html?moment=interrogation-after-the-failed-attempt&version=v3",
+          "kind": "Scene prose"
+        },
+        {
+          "title": "The Secret Third Ally",
+          "href": "moments.html?moment=the-secret-third-ally&version=v3",
+          "kind": "Scene prose"
+        },
+        {
+          "title": "A Meeting Beyond Authority",
+          "href": "moments.html?moment=a-meeting-beyond-authority&version=v1",
+          "kind": "Outline / scene seed"
+        },
+        {
+          "title": "The Empty Boats Beneath the Bridge",
+          "href": "moments.html?moment=the-boat-beneath-the-bridge&version=v4",
+          "kind": "Scene prose"
+        },
+        {
+          "title": "Shelter after the Accusation",
+          "href": "moments.html?moment=shelter-after-the-accusation&version=v2",
+          "kind": "Outline / scene seed"
+        },
+        {
+          "title": "The First Lines Back into MSF",
+          "href": "moments.html?moment=the-first-lines-back-into-msf&version=v1",
+          "kind": "Outline / scene seed"
+        },
+        {
+          "title": "Before the Arc Turns",
+          "href": "moments.html?moment=the-end-of-the-first-arc&version=v3",
+          "kind": "Outline / scene seed"
+        },
+        {
+          "title": "Father Mikhail Discovers the Breach",
+          "href": "moments.html?moment=mikhail-discovers-the-breach&version=v1",
+          "kind": "Outline / scene seed"
+        },
+        {
+          "title": "Because There's a Battle to Be Fought",
+          "href": "moments.html?moment=because-theres-a-battle-to-be-fought&version=v2",
+          "kind": "Outline / scene seed"
+        },
+        {
+          "title": "Terrors Inside the Academy",
+          "href": "moments.html?moment=terrors-inside-the-academy&version=v2",
+          "kind": "Outline / scene seed"
+        },
+        {
+          "title": "Myka Enters MSF",
+          "href": "moments.html?moment=myka-enters-msf&version=v2",
+          "kind": "Outline / scene seed"
+        },
+        {
+          "title": "Doom Has an Address",
+          "href": "moments.html?moment=doom-has-an-address&version=v7",
+          "kind": "Scene prose"
+        },
+        {
+          "title": "The Bench under the Lamp",
+          "href": "moments.html?moment=the-bench-under-the-lamp&version=v2",
+          "kind": "Scene prose"
+        },
+        {
+          "title": "Households before the Spill",
+          "href": "moments.html?moment=households-before-the-spill&version=v1",
+          "kind": "Outline / scene seed"
+        }
+      ]
+    },
+    {
+      "slug": "felix",
+      "name": "Felix",
+      "role": "MSF officer, friend, and personal bodyguard",
+      "goal": "Protect Lynleit without allowing either protocol or her intuition to place an untrustworthy person beyond scrutiny.",
+      "conflicts": [
+        [
+          "Lynleit's judgment",
+          "His distrust of Kyrien brings him into conflict with the friend he wants to protect."
+        ],
+        [
+          "Attachment to Lynleit",
+          "His hopes remain centered on Lynleit while familiarity and affection grow with Sherie. Reciprocating Sherie's teasing is easier than recognizing how important she has become to him."
+        ]
+      ],
+      "links": [
+        {
+          "name": "Lynleit",
+          "href": "character.html?character=lynleit"
+        },
+        {
+          "name": "Kyrien",
+          "href": "character.html?character=kyrien"
+        },
+        {
+          "name": "Sherie",
+          "href": "character.html?character=sherie"
+        }
+      ],
+      "href": "character.html?character=felix",
+      "total": 8,
+      "prose": 5,
+      "outline": 3,
+      "scenes": [
+        {
+          "title": "Only Eyes for You",
+          "href": "moments.html?moment=only-eyes-for-you&version=v2",
+          "kind": "Scene prose"
+        },
+        {
+          "title": "The Secret Third Ally",
+          "href": "moments.html?moment=the-secret-third-ally&version=v3",
+          "kind": "Scene prose"
+        },
+        {
+          "title": "A Meeting Beyond Authority",
+          "href": "moments.html?moment=a-meeting-beyond-authority&version=v1",
+          "kind": "Outline / scene seed"
+        },
+        {
+          "title": "The Empty Boats Beneath the Bridge",
+          "href": "moments.html?moment=the-boat-beneath-the-bridge&version=v4",
+          "kind": "Scene prose"
+        },
+        {
+          "title": "The First Lines Back into MSF",
+          "href": "moments.html?moment=the-first-lines-back-into-msf&version=v1",
+          "kind": "Outline / scene seed"
+        },
+        {
+          "title": "The Nameless Street",
+          "href": "moments.html?moment=the-nameless-street&version=v2",
+          "kind": "Scene prose"
+        },
+        {
+          "title": "Father Mikhail Discovers the Breach",
+          "href": "moments.html?moment=mikhail-discovers-the-breach&version=v1",
+          "kind": "Outline / scene seed"
+        },
+        {
+          "title": "Unresolved Tension",
+          "href": "moments.html?moment=unresolved-tension&version=v1",
+          "kind": "Scene prose"
+        }
+      ]
+    },
+    {
+      "slug": "reiner",
+      "name": "Reiner",
+      "role": "MSF officer, friend, and personal bodyguard",
+      "goal": "Protect Lynleit while testing whether disciplined loyalty can accommodate the anti-protocol risk she has chosen.",
+      "conflicts": [
+        [
+          "Trust and protocol",
+          "Supporting Lynleit's secret recruitment means accepting a breach he would ordinarily oppose."
+        ]
+      ],
+      "links": [
+        {
+          "name": "Lynleit",
+          "href": "character.html?character=lynleit"
+        },
+        {
+          "name": "Kyrien",
+          "href": "character.html?character=kyrien"
+        }
+      ],
+      "href": "character.html?character=reiner",
+      "total": 6,
+      "prose": 3,
+      "outline": 3,
+      "scenes": [
+        {
+          "title": "Only Eyes for You",
+          "href": "moments.html?moment=only-eyes-for-you&version=v2",
+          "kind": "Scene prose"
+        },
+        {
+          "title": "The Secret Third Ally",
+          "href": "moments.html?moment=the-secret-third-ally&version=v3",
+          "kind": "Scene prose"
+        },
+        {
+          "title": "A Meeting Beyond Authority",
+          "href": "moments.html?moment=a-meeting-beyond-authority&version=v1",
+          "kind": "Outline / scene seed"
+        },
+        {
+          "title": "The Empty Boats Beneath the Bridge",
+          "href": "moments.html?moment=the-boat-beneath-the-bridge&version=v4",
+          "kind": "Scene prose"
+        },
+        {
+          "title": "The First Lines Back into MSF",
+          "href": "moments.html?moment=the-first-lines-back-into-msf&version=v1",
+          "kind": "Outline / scene seed"
+        },
+        {
+          "title": "Father Mikhail Discovers the Breach",
+          "href": "moments.html?moment=mikhail-discovers-the-breach&version=v1",
+          "kind": "Outline / scene seed"
+        }
+      ]
+    },
+    {
+      "slug": "fionn",
+      "name": "Fionn",
+      "role": "Magiarch and MSF founder",
+      "goal": "Protect Narvea from a magical conflict whose participants can manufacture ordinary political reality as cover.",
+      "conflicts": [
+        [
+          "Delayed action",
+          "Competing pressures keep him from acting as Magiarch in time."
+        ],
+        [
+          "Succession",
+          "Naming an heir would endanger that person; leaving the question open divides MSF after his death."
+        ]
+      ],
+      "links": [
+        {
+          "name": "Lynleit",
+          "href": "character.html?character=lynleit"
+        }
+      ],
+      "href": "character.html?character=fionn",
+      "total": 5,
+      "prose": 2,
+      "outline": 3,
+      "scenes": [
+        {
+          "title": "Only Eyes for You",
+          "href": "moments.html?moment=only-eyes-for-you&version=v2",
+          "kind": "Scene prose"
+        },
+        {
+          "title": "The Nameless Street",
+          "href": "moments.html?moment=the-nameless-street&version=v2",
+          "kind": "Scene prose"
+        },
+        {
+          "title": "The Coat Fionn Left Behind",
+          "href": "moments.html?moment=the-coat-fionn-left-behind&version=v1",
+          "kind": "Outline / scene seed"
+        },
+        {
+          "title": "The Unresolved Assassination",
+          "href": "moments.html?moment=fionn-is-eliminated&version=v2",
+          "kind": "Outline / scene seed"
+        },
+        {
+          "title": "Households before the Spill",
+          "href": "moments.html?moment=households-before-the-spill&version=v1",
+          "kind": "Outline / scene seed"
+        }
+      ]
+    },
+    {
+      "slug": "drake",
+      "name": "Drake",
+      "role": "Official for Special Assignments",
+      "goal": "Locate the coup network, prepare Sherie for state diplomacy, and justify the Duke's trust without allowing friendship to become cover for his mistakes.",
+      "conflicts": [
+        [
+          "Official limits",
+          "He needs MSF's help but objects to Sherie's unauthorized agreement and will not surrender sensitive evidence."
+        ]
+      ],
+      "links": [
+        {
+          "name": "Sherie",
+          "href": "character.html?character=sherie"
+        }
+      ],
+      "href": "character.html?character=drake",
+      "total": 4,
+      "prose": 1,
+      "outline": 3,
+      "scenes": [
+        {
+          "title": "The Warning Dismissed",
+          "href": "moments.html?moment=the-warning-dismissed&version=v1",
+          "kind": "Outline / scene seed"
+        },
+        {
+          "title": "A Meeting Beyond Authority",
+          "href": "moments.html?moment=a-meeting-beyond-authority&version=v1",
+          "kind": "Outline / scene seed"
+        },
+        {
+          "title": "The Empty Boats Beneath the Bridge",
+          "href": "moments.html?moment=the-boat-beneath-the-bridge&version=v4",
+          "kind": "Scene prose"
+        },
+        {
+          "title": "The Last Man out of the Park",
+          "href": "moments.html?moment=the-park-unit-is-lost&version=v2",
+          "kind": "Outline / scene seed"
+        }
+      ]
+    },
+    {
+      "slug": "sherie",
+      "name": "Sherie",
+      "role": "Diplomat in training and covert negotiator",
+      "goal": "Become a diplomat capable of turning Drake's strategic understanding into alliances, while tracing the suspected coup without exposing MSF cooperation.",
+      "conflicts": [
+        [
+          "Unauthorized agreement",
+          "Her private approach to MSF would be stopped if the Court or government discovered it."
+        ],
+        [
+          "Uneven attachment",
+          "Felix becomes increasingly important to her while remaining fixated on Lynleit. Sherie has limits to what attention she will accept; she wants to be seen clearly, not simply enjoyed as a diversion."
+        ]
+      ],
+      "links": [
+        {
+          "name": "Drake",
+          "href": "character.html?character=drake"
+        },
+        {
+          "name": "Felix",
+          "href": "character.html?character=felix"
+        }
+      ],
+      "href": "character.html?character=sherie",
+      "total": 4,
+      "prose": 2,
+      "outline": 2,
+      "scenes": [
+        {
+          "title": "A Meeting Beyond Authority",
+          "href": "moments.html?moment=a-meeting-beyond-authority&version=v1",
+          "kind": "Outline / scene seed"
+        },
+        {
+          "title": "The Empty Boats Beneath the Bridge",
+          "href": "moments.html?moment=the-boat-beneath-the-bridge&version=v4",
+          "kind": "Scene prose"
+        },
+        {
+          "title": "The Last Man out of the Park",
+          "href": "moments.html?moment=the-park-unit-is-lost&version=v2",
+          "kind": "Outline / scene seed"
+        },
+        {
+          "title": "Unresolved Tension",
+          "href": "moments.html?moment=unresolved-tension&version=v1",
+          "kind": "Scene prose"
+        }
+      ]
+    },
+    {
+      "slug": "father-mikhail",
+      "name": "Father Mikhail",
+      "role": "Church special envoy",
+      "goal": "Complete the Cardiff assignment, contain supernatural threats under Church authority, and prevent necessary secrecy from becoming moral surrender.",
+      "conflicts": [
+        [
+          "Lynleit's methods",
+          "They protect one another in Cardiff without agreeing about how the work should be done."
+        ]
+      ],
+      "links": [
+        {
+          "name": "Lynleit",
+          "href": "character.html?character=lynleit"
+        }
+      ],
+      "href": "character.html?character=father-mikhail",
+      "total": 3,
+      "prose": 1,
+      "outline": 2,
+      "scenes": [
+        {
+          "title": "Father Mikhail Discovers the Breach",
+          "href": "moments.html?moment=mikhail-discovers-the-breach&version=v1",
+          "kind": "Outline / scene seed"
+        },
+        {
+          "title": "Father Mikhail's Foreign Venture",
+          "href": "moments.html?moment=father-mikhails-foreign-venture&version=v1",
+          "kind": "Outline / scene seed"
+        },
+        {
+          "title": "Doom Has an Address",
+          "href": "moments.html?moment=doom-has-an-address&version=v7",
+          "kind": "Scene prose"
+        }
+      ]
+    },
+    {
+      "slug": "helena",
+      "name": "Helena",
+      "role": "Political usurper",
+      "goal": "Hold MSF long enough to make her version of events irreversible.",
+      "conflicts": [
+        [
+          "An incomplete inheritance",
+          "Her formal control of MSF does not give her Fionn's private protocols or his officers' confidence."
+        ]
+      ],
+      "links": [
+        {
+          "name": "Lynleit",
+          "href": "character.html?character=lynleit"
+        },
+        {
+          "name": "Tien",
+          "href": "character.html?character=tien"
+        }
+      ],
+      "href": "character.html?character=helena",
+      "total": 3,
+      "prose": 1,
+      "outline": 2,
+      "scenes": [
+        {
+          "title": "The Nameless Street",
+          "href": "moments.html?moment=the-nameless-street&version=v2",
+          "kind": "Scene prose"
+        },
+        {
+          "title": "The Unresolved Assassination",
+          "href": "moments.html?moment=fionn-is-eliminated&version=v2",
+          "kind": "Outline / scene seed"
+        },
+        {
+          "title": "Households before the Spill",
+          "href": "moments.html?moment=households-before-the-spill&version=v1",
+          "kind": "Outline / scene seed"
+        }
+      ]
+    },
+    {
+      "slug": "heyk",
+      "name": "Heyk",
+      "role": "Ducal Guard field agent and bodyguard",
+      "goal": "Serve Drake and Sherie while learning what massacred his squad and making his survival answer for something.",
+      "conflicts": [
+        [
+          "The lost squad",
+          "He cannot explain the forces that killed his unit."
+        ]
+      ],
+      "links": [
+        {
+          "name": "Sherie",
+          "href": "character.html?character=sherie"
+        },
+        {
+          "name": "Drake",
+          "href": "character.html?character=drake"
+        }
+      ],
+      "href": "character.html?character=heyk",
+      "total": 2,
+      "prose": 0,
+      "outline": 2,
+      "scenes": [
+        {
+          "title": "A Meeting Beyond Authority",
+          "href": "moments.html?moment=a-meeting-beyond-authority&version=v1",
+          "kind": "Outline / scene seed"
+        },
+        {
+          "title": "The Last Man out of the Park",
+          "href": "moments.html?moment=the-park-unit-is-lost&version=v2",
+          "kind": "Outline / scene seed"
+        }
+      ]
+    },
+    {
+      "slug": "hiyu",
+      "name": "Hiyu",
+      "role": "Criminology student and intuitive investigator",
+      "goal": "Prove that the impossible explanation fits the disappearances, then learn enough restraint to keep the discovery from destroying both investigators.",
+      "conflicts": [
+        [
+          "Confidence before evidence",
+          "His excitement over an explanation can commit him and Yulia to danger he has not assessed."
+        ]
+      ],
+      "links": [
+        {
+          "name": "Yulia",
+          "href": "character.html?character=yulia"
+        }
+      ],
+      "href": "character.html?character=hiyu",
+      "total": 2,
+      "prose": 0,
+      "outline": 2,
+      "scenes": [
+        {
+          "title": "University Days",
+          "href": "moments.html?moment=university-days-before-the-spill&version=v1",
+          "kind": "Outline / scene seed"
+        },
+        {
+          "title": "Beyond the Cordon",
+          "href": "moments.html?moment=students-beyond-the-cordon&version=v2",
+          "kind": "Outline / scene seed"
+        }
+      ]
+    },
+    {
+      "slug": "myka",
+      "name": "Myka",
+      "role": "Magi Academy student",
+      "goal": "Become useful without mistaking raw ability for readiness, while learning which parts of Natalia's independence are worth following and which carry risks the Academy was built to contain.",
+      "conflicts": [
+        [
+          "Danger at the Academy",
+          "She needs outside help to survive inside the institution training her."
+        ]
+      ],
+      "links": [
+        {
+          "name": "Kyrien",
+          "href": "character.html?character=kyrien"
+        },
+        {
+          "name": "Natalia",
+          "href": "character.html?character=natalia"
+        }
+      ],
+      "href": "character.html?character=myka",
+      "total": 2,
+      "prose": 0,
+      "outline": 2,
+      "scenes": [
+        {
+          "title": "Terrors Inside the Academy",
+          "href": "moments.html?moment=terrors-inside-the-academy&version=v2",
+          "kind": "Outline / scene seed"
+        },
+        {
+          "title": "Myka Enters MSF",
+          "href": "moments.html?moment=myka-enters-msf&version=v2",
+          "kind": "Outline / scene seed"
+        }
+      ]
+    },
+    {
+      "slug": "natalia",
+      "name": "Natalia",
+      "role": "Independent magical examiner and private investigator",
+      "goal": "Fund and protect an independent life of magical research while giving clients an answer before hidden authorities reduce their problem to jurisdiction, secrecy, or punishment.",
+      "conflicts": [
+        [
+          "Institutional interference",
+          "The Academy, Magiarchy, and Church can restrict her inquiries or claim her cases."
+        ]
+      ],
+      "links": [
+        {
+          "name": "Lynleit",
+          "href": "character.html?character=lynleit"
+        },
+        {
+          "name": "Lester",
+          "href": "character.html?character=lester"
+        },
+        {
+          "name": "Myka",
+          "href": "character.html?character=myka"
+        }
+      ],
+      "href": "character.html?character=natalia",
+      "total": 2,
+      "prose": 1,
+      "outline": 1,
+      "scenes": [
+        {
+          "title": "Terrors Inside the Academy",
+          "href": "moments.html?moment=terrors-inside-the-academy&version=v2",
+          "kind": "Outline / scene seed"
+        },
+        {
+          "title": "Doom Has an Address",
+          "href": "moments.html?moment=doom-has-an-address&version=v7",
+          "kind": "Scene prose"
+        }
+      ]
+    },
+    {
+      "slug": "yulia",
+      "name": "Yulia",
+      "role": "Criminology student and procedural investigator",
+      "goal": "Keep Hiyu alive, test his impossible theory honestly, and preserve enough reliable evidence to understand what ordinary criminology cannot explain.",
+      "conflicts": [
+        [
+          "Unfamiliar evidence",
+          "Her training offers no established procedure for what happens in the park."
+        ]
+      ],
+      "links": [
+        {
+          "name": "Hiyu",
+          "href": "character.html?character=hiyu"
+        }
+      ],
+      "href": "character.html?character=yulia",
+      "total": 2,
+      "prose": 0,
+      "outline": 2,
+      "scenes": [
+        {
+          "title": "University Days",
+          "href": "moments.html?moment=university-days-before-the-spill&version=v1",
+          "kind": "Outline / scene seed"
+        },
+        {
+          "title": "Beyond the Cordon",
+          "href": "moments.html?moment=students-beyond-the-cordon&version=v2",
+          "kind": "Outline / scene seed"
+        }
+      ]
+    },
+    {
+      "slug": "ash",
+      "name": "Ash",
+      "role": "Grey cat of the Director's House",
+      "goal": "Remain in the Vilen house as shelter and territory.",
+      "conflicts": [
+        [
+          "An unwanted guest",
+          "Lynleit tries to put him out before deciding to let him stay."
+        ]
+      ],
+      "links": [
+        {
+          "name": "Lynleit",
+          "href": "character.html?character=lynleit"
+        }
+      ],
+      "href": "character.html?character=ash",
+      "total": 1,
+      "prose": 0,
+      "outline": 1,
+      "scenes": [
+        {
+          "title": "Ash in the Family House",
+          "href": "moments.html?moment=the-cat-in-the-family-house&version=v2",
+          "kind": "Outline / scene seed"
+        }
+      ]
+    },
+    {
+      "slug": "inspector-leo",
+      "name": "Inspector Leo",
+      "role": "Police inspector",
+      "goal": "Account for every missing person, regardless of who classified the reason.",
+      "conflicts": [
+        [
+          "Withheld evidence",
+          "The quarantine blocks access to the people and places his investigation concerns."
+        ]
+      ],
+      "links": [],
+      "href": "character.html?character=inspector-leo",
+      "total": 0,
+      "prose": 0,
+      "outline": 0,
+      "scenes": []
+    },
+    {
+      "slug": "lester",
+      "name": "Lester",
+      "role": "Demiholumn and Natalia's outside ally",
+      "goal": "Help Natalia when ordinary methods fail while preserving the autonomy and secrecy of a life the hidden authorities may refuse to recognize.",
+      "conflicts": [
+        [
+          "Classification",
+          "Institutions may treat his demiholumn nature as a threat rather than accept him as a person."
+        ]
+      ],
+      "links": [
+        {
+          "name": "Natalia",
+          "href": "character.html?character=natalia"
+        }
+      ],
+      "href": "character.html?character=lester",
+      "total": 0,
+      "prose": 0,
+      "outline": 0,
+      "scenes": []
+    },
+    {
+      "slug": "tien",
+      "name": "Tien",
+      "role": "Mercenary assassin and secret bodyguard",
+      "goal": "Protect Helena and remove her enemies without exposing either the assignment or the relationship.",
+      "conflicts": [
+        [
+          "Opposing asset",
+          "Kyrien interferes with his work for Helena."
+        ]
+      ],
+      "links": [
+        {
+          "name": "Kyrien",
+          "href": "character.html?character=kyrien"
+        },
+        {
+          "name": "Helena",
+          "href": "character.html?character=helena"
+        }
+      ],
+      "href": "character.html?character=tien",
+      "total": 0,
+      "prose": 0,
+      "outline": 0,
+      "scenes": []
+    }
+  ],
+  "facts": [
+    {
+      "id": "lynleit-walking-on-water-in-secret",
+      "title": "Walking on water, in secret",
+      "text": "Lynleit keeps the talent secret from everyone because the Church strongly punishes miracle-making that imitates acts associated with Jesus, saints, saviours, and other sacred figures, even when the effect seems harmless. She practices alone at night on secluded stretches of local lakes and rivers.",
+      "meta": "Lynleit",
+      "href": "character.html?character=lynleit"
+    },
+    {
+      "id": "kyrien-kyrien-s-whiskey-flask",
+      "title": "Kyrien's whiskey flask",
+      "text": "Kyrien reserves a small drink for exceptional danger, exhaustion, distress, or a difficult personal moment. He sometimes calls it medicine. Lynleit learns its usual pocket.",
+      "meta": "Kyrien",
+      "href": "character.html?character=kyrien"
+    },
+    {
+      "id": "yulia-a-mystery-she-wears",
+      "title": "A mystery she wears",
+      "text": "Yulia received the necklace as a birthday gift but does not know who sent it. She considers the unknown giver a \"crime mystery\", although no crime has occurred. She wants to find out, has no way to do so, and wears it anyway.",
+      "meta": "Yulia",
+      "href": "character.html?character=yulia"
+    },
+    {
+      "id": "ash-an-uninvited-resident",
+      "title": "An uninvited resident",
+      "text": "Ash enters uninvited, repeatedly slips away when Lynleit tries to catch him, and stays once she lets him shelter from the rain.",
+      "meta": "Ash",
+      "href": "character.html?character=ash"
+    },
+    {
+      "id": "yulia-she-follows-him-anyway",
+      "title": "She follows him anyway",
+      "text": "Yulia is reliable, meticulous, and most comfortable with evidence she can test against an established procedure. Hiyu's eureka moments give her a headache. She follows him anyway, checking his leaps and having to consider possibilities her usual methods would exclude.",
+      "meta": "Yulia",
+      "href": "character.html?character=yulia"
+    },
+    {
+      "id": "sherie-off-duty",
+      "title": "Off duty",
+      "text": "Sherie teases and provokes mischief even off duty. She is quick to read someone's mood, relationships, and standing in a group; an unexpected reply makes her reconsider the exchange she thought she understood. She can draw out information without making a person feel interrogated and keep a difficult conversation going. With Felix she can be theatrical, petty, ridiculous, or openly delighted without losing his respect. As she gets to know him, she also learns when his jokes conceal something serious.",
+      "meta": "Sherie",
+      "href": "character.html?character=sherie"
+    },
+    {
+      "id": "quote-catastrophe-and-catharsis",
+      "title": "Sherie",
+      "text": "\"When males and females play games, the prize is either catastrophic and cathartic. That is nature's whim.\"",
+      "meta": "Unplaced dialogue",
+      "quote": true,
+      "href": "docs.html?doc=character-aphorisms#catastrophe-and-catharsis"
+    },
+    {
+      "id": "quote-schr-dinger-s-butt",
+      "title": "Sherie",
+      "text": "\"Schrödinger's butt: she may want to get to know you closer, or kick your head in. With Lynleit, you won't know until you do.\"",
+      "meta": "Unplaced dialogue",
+      "quote": true,
+      "href": "docs.html?doc=character-aphorisms#schr-dinger-s-butt"
+    }
+  ],
+  "questions": [
+    {
+      "id": "question-what-occurs-in-the-felix-and-sherie-h-scene-titled-darkness-gallery-html-panels-darkness-and-whe",
+      "title": "Darkness",
+      "text": "What occurs in the Felix and Sherie H Scene titled Darkness, and where does it belong? The title and pairing are supplied, but no scene, images, or chronology have been established.",
+      "confidence": 0,
+      "meta": "0% answered",
+      "section": "Current questions",
+      "href": "docs.html?doc=questions-to-be-answered#question-what-occurs-in-the-felix-and-sherie-h-scene-titled-darkness-gallery-html-panels-darkness-and-whe"
+    },
+    {
+      "id": "question-what-case-if-any-connects-the-pre-spill-university-panels-gallery-html-panels-hiyu-yulia-univers",
+      "title": "University days",
+      "text": "What case, if any, connects the pre-Spill university panels, why are Hiyu and Yulia at the evidence marker, and what interrupts their earlier conversation? Their university studies are established; a specific case and police role are not.",
+      "confidence": 0,
+      "meta": "0% answered",
+      "section": "Current questions",
+      "href": "docs.html?doc=questions-to-be-answered#question-what-case-if-any-connects-the-pre-spill-university-panels-gallery-html-panels-hiyu-yulia-univers"
+    },
+    {
+      "id": "question-what-is-the-moving-shape-above-the-path-in-after-the-river-gallery-html-panels-after-the-river-a",
+      "title": "After the river",
+      "text": "What is the moving shape above the path in After the River, and does this illustrated continuation belong in a later revision of the river Chapter? The annotation wondering about the drowned girl does not establish a connection.",
+      "confidence": 0,
+      "meta": "0% answered",
+      "section": "Current questions",
+      "href": "docs.html?doc=questions-to-be-answered#question-what-is-the-moving-shape-above-the-path-in-after-the-river-gallery-html-panels-after-the-river-a"
+    },
+    {
+      "id": "question-which-areas-are-most-affected-by-ordinary-fog-and-what-seasonal-or-local-conditions-distinguish-",
+      "title": "Narvean fog: geography",
+      "text": "Which areas are most affected by ordinary fog, and what seasonal or local conditions distinguish them?",
+      "confidence": 0,
+      "meta": "0% answered",
+      "section": "Current questions",
+      "href": "docs.html?doc=questions-to-be-answered#question-which-areas-are-most-affected-by-ordinary-fog-and-what-seasonal-or-local-conditions-distinguish-"
+    },
+    {
+      "id": "question-which-holumn-produces-the-excess-mist-in-each-park-or-river-incident-by-what-mechanism-and-what-",
+      "title": "Incident fog",
+      "text": "Which Holumn produces the excess mist in each park or river incident, by what mechanism, and what evidence could distinguish it from weather?",
+      "confidence": 0,
+      "meta": "0% answered",
+      "section": "Current questions",
+      "href": "docs.html?doc=questions-to-be-answered#question-which-holumn-produces-the-excess-mist-in-each-park-or-river-incident-by-what-mechanism-and-what-"
+    },
+    {
+      "id": "question-who-is-the-officer-when-and-where-does-the-shot-occur-and-how-does-the-incident-reach-the-main-c",
+      "title": "Bone Archive: first encounter",
+      "text": "Who is the officer, when and where does the shot occur, and how does the incident reach the main cast?",
+      "confidence": 0,
+      "meta": "0% answered",
+      "section": "Current questions",
+      "href": "docs.html?doc=questions-to-be-answered#question-who-is-the-officer-when-and-where-does-the-shot-occur-and-how-does-the-incident-reach-the-main-c"
+    },
+    {
+      "id": "question-what-admits-a-person-to-the-archive-s-effects-what-determines-the-experience-recovered-and-can-r",
+      "title": "Bone Archive: access and release",
+      "text": "What admits a person to the Archive's effects, what determines the experience recovered, and can recovery or attachment be interrupted?",
+      "confidence": 0,
+      "meta": "0% answered",
+      "section": "Current questions",
+      "href": "docs.html?doc=questions-to-be-answered#question-what-admits-a-person-to-the-archive-s-effects-what-determines-the-experience-recovered-and-can-r"
+    },
+    {
+      "id": "question-who-makes-or-keeps-the-records-how-is-authenticity-established-and-what-can-a-record-prove-about",
+      "title": "Bone Archive: surviving bargains",
+      "text": "Who makes or keeps the records, how is authenticity established, and what can a record prove about the catastrophe an act was meant to prevent?",
+      "confidence": 0,
+      "meta": "0% answered",
+      "section": "Current questions",
+      "href": "docs.html?doc=questions-to-be-answered#question-who-makes-or-keeps-the-records-how-is-authenticity-established-and-what-can-a-record-prove-about"
+    },
+    {
+      "id": "question-was-lynleit-also-natalia-s-favourite-student-or-is-the-confirmed-preference-only-lynleit-s-for-n",
+      "title": "Natalia and Lynleit",
+      "text": "Was Lynleit also Natalia's favourite student, or is the confirmed preference only Lynleit's for Natalia as her teacher?",
+      "confidence": 0,
+      "meta": "0% answered",
+      "section": "Current questions",
+      "href": "docs.html?doc=questions-to-be-answered#question-was-lynleit-also-natalia-s-favourite-student-or-is-the-confirmed-preference-only-lynleit-s-for-n"
+    },
+    {
+      "id": "question-what-permits-the-first-pull-from-the-boat-and-what-prevents-the-submerged-hands-from-reaching-ly",
+      "title": "River boundary",
+      "text": "What permits the first pull from the boat, and what prevents the submerged hands from reaching Lynleit once the water supports her? The river Chapter records the actions but does not establish a universal surface rule.",
+      "confidence": 0,
+      "meta": "0% answered",
+      "section": "Current questions",
+      "href": "docs.html?doc=questions-to-be-answered#question-what-permits-the-first-pull-from-the-boat-and-what-prevents-the-submerged-hands-from-reaching-ly"
+    },
+    {
+      "id": "question-can-the-girl-or-the-drowned-souls-speak-outside-the-silent-river-encounter",
+      "title": "Drowned Choir",
+      "text": "Can the girl or the drowned souls speak outside the silent river encounter?",
+      "confidence": 0,
+      "meta": "0% answered",
+      "section": "Current questions",
+      "href": "docs.html?doc=questions-to-be-answered#question-can-the-girl-or-the-drowned-souls-speak-outside-the-silent-river-encounter"
+    },
+    {
+      "id": "question-how-are-contested-boundaries-appealed-and-which-customs-govern-disputes-between-magiarchates",
+      "title": "Magiarchy framework",
+      "text": "How are contested boundaries appealed, and which customs govern disputes between Magiarchates?",
+      "confidence": 0,
+      "meta": "0% answered",
+      "section": "Current questions",
+      "href": "docs.html?doc=questions-to-be-answered#question-how-are-contested-boundaries-appealed-and-which-customs-govern-disputes-between-magiarchates"
+    },
+    {
+      "id": "question-where-are-the-library-offices-service-rooms-and-other-bedrooms-placed-within-the-director-s-hous",
+      "title": "House layout",
+      "text": "Where are the library, offices, service rooms, and other bedrooms placed within the Director's House?",
+      "confidence": 0,
+      "meta": "0% answered",
+      "section": "Current questions",
+      "href": "docs.html?doc=questions-to-be-answered#question-where-are-the-library-offices-service-rooms-and-other-bedrooms-placed-within-the-director-s-hous"
+    },
+    {
+      "id": "question-when-does-kyrien-s-solitary-river-encounter-occur-how-does-it-relate-to-the-main-plot-and-what-h",
+      "title": "Sleepers: placement",
+      "text": "When does Kyrien's solitary river encounter occur, how does it relate to the main plot, and what happens after he continues downstream?",
+      "confidence": 0,
+      "meta": "0% answered",
+      "section": "Current questions",
+      "href": "docs.html?doc=questions-to-be-answered#question-when-does-kyrien-s-solitary-river-encounter-occur-how-does-it-relate-to-the-main-plot-and-what-h"
+    },
+    {
+      "id": "question-are-the-suspended-figures-human-dead-asleep-or-connected-to-missing-people-who-can-see-them-and-",
+      "title": "Sleepers: identity and visibility",
+      "text": "Are the suspended figures human, dead, asleep, or connected to missing people; who can see them, and does the river matter to their appearance?",
+      "confidence": 0,
+      "meta": "0% answered",
+      "section": "Current questions",
+      "href": "docs.html?doc=questions-to-be-answered#question-are-the-suspended-figures-human-dead-asleep-or-connected-to-missing-people-who-can-see-them-and-"
+    },
+    {
+      "id": "question-what-situation-if-any-do-they-foreshadow-does-the-omen-concern-kyrien-groups-or-cities-do-they-c",
+      "title": "Sleepers: omen",
+      "text": "What situation, if any, do they foreshadow; does the omen concern Kyrien, groups, or cities; do they cause it, and can it be escaped?",
+      "confidence": 0,
+      "meta": "0% answered",
+      "section": "Current questions",
+      "href": "docs.html?doc=questions-to-be-answered#question-what-situation-if-any-do-they-foreshadow-does-the-omen-concern-kyrien-groups-or-cities-do-they-c"
+    },
+    {
+      "id": "question-does-anyone-already-understand-the-manifestation-and-is-there-any-connection-to-the-spill-the-dr",
+      "title": "Sleepers: other knowledge",
+      "text": "Does anyone already understand the manifestation, and is there any connection to the Spill, the Drowned Choir, or the river leviathan?",
+      "confidence": 0,
+      "meta": "0% answered",
+      "section": "Current questions",
+      "href": "docs.html?doc=questions-to-be-answered#question-does-anyone-already-understand-the-manifestation-and-is-there-any-connection-to-the-spill-the-dr"
+    },
+    {
+      "id": "question-what-circumstances-allow-lynleit-to-conceal-her-son-after-his-birth-and-who-besides-her-knows-he",
+      "title": "Family",
+      "text": "What circumstances allow Lynleit to conceal her son after his birth, and who besides her knows he exists?",
+      "confidence": 0,
+      "meta": "0% answered",
+      "section": "Current questions",
+      "href": "docs.html?doc=questions-to-be-answered#question-what-circumstances-allow-lynleit-to-conceal-her-son-after-his-birth-and-who-besides-her-knows-he"
+    },
+    {
+      "id": "question-which-events-restore-lynleit-and-kyrien-s-intimacy-during-arc-2-and-how-do-their-duties-and-the-",
+      "title": "Family",
+      "text": "Which events restore Lynleit and Kyrien's intimacy during Arc 2, and how do their duties and the hidden son affect that process?",
+      "confidence": 0,
+      "meta": "0% answered",
+      "section": "Current questions",
+      "href": "docs.html?doc=questions-to-be-answered#question-which-events-restore-lynleit-and-kyrien-s-intimacy-during-arc-2-and-how-do-their-duties-and-the-"
+    },
+    {
+      "id": "question-when-is-their-daughter-conceived-and-born-and-what-post-arc-2-development-makes-the-conception-a",
+      "title": "Family",
+      "text": "When is their daughter conceived and born, and what post-Arc 2 development makes the conception apparent without revealing it during Arc 2?",
+      "confidence": 0,
+      "meta": "0% answered",
+      "section": "Current questions",
+      "href": "docs.html?doc=questions-to-be-answered#question-when-is-their-daughter-conceived-and-born-and-what-post-arc-2-development-makes-the-conception-a"
+    },
+    {
+      "id": "question-what-later-circumstances-shape-the-lives-of-both-children",
+      "title": "Family",
+      "text": "What later circumstances shape the lives of both children?",
+      "confidence": 0,
+      "meta": "0% answered",
+      "section": "Current questions",
+      "href": "docs.html?doc=questions-to-be-answered#question-what-later-circumstances-shape-the-lives-of-both-children"
+    },
+    {
+      "id": "question-for-each-incident-involving-a-taken-or-returned-victim-what-state-is-imposed-what-permits-return",
+      "title": "Holumns",
+      "text": "For each incident involving a taken or returned victim, what state is imposed, what permits return, and what evidence establishes personal continuity or its loss?",
+      "confidence": 0,
+      "meta": "0% answered",
+      "section": "Current questions",
+      "href": "docs.html?doc=questions-to-be-answered#question-for-each-incident-involving-a-taken-or-returned-victim-what-state-is-imposed-what-permits-return"
+    },
+    {
+      "id": "question-which-concrete-chronological-facts-reveal-the-contradiction-in-lester-s-biography-and-when-do-na",
+      "title": "Lester",
+      "text": "Which concrete chronological facts reveal the contradiction in Lester's biography, and when do Natalia and the reader encounter them?",
+      "confidence": 0,
+      "meta": "0% answered",
+      "section": "Current questions",
+      "href": "docs.html?doc=questions-to-be-answered#question-which-concrete-chronological-facts-reveal-the-contradiction-in-lester-s-biography-and-when-do-na"
+    },
+    {
+      "id": "question-what-experience-leads-natalia-to-recognize-contradiction-as-intrinsic-to-nature-without-explaini",
+      "title": "Natalia",
+      "text": "What experience leads Natalia to recognize contradiction as intrinsic to nature without explaining Lester's origin?",
+      "confidence": 0,
+      "meta": "0% answered",
+      "section": "Current questions",
+      "href": "docs.html?doc=questions-to-be-answered#question-what-experience-leads-natalia-to-recognize-contradiction-as-intrinsic-to-nature-without-explaini"
+    },
+    {
+      "id": "question-which-relative-receives-lynleit-and-kyrien-s-son-and-what-does-that-person-know-about-his-parent",
+      "title": "Family",
+      "text": "Which relative receives Lynleit and Kyrien's son, and what does that person know about his parents?",
+      "confidence": 0,
+      "meta": "0% answered",
+      "section": "Current questions",
+      "href": "docs.html?doc=questions-to-be-answered#question-which-relative-receives-lynleit-and-kyrien-s-son-and-what-does-that-person-know-about-his-parent"
+    },
+    {
+      "id": "question-how-does-a-pagan-cult-s-magecraft-differ-from-church-doctrine-and-when-does-that-difference-affe",
+      "title": "Pagan traditions",
+      "text": "How does a pagan cult's magecraft differ from Church doctrine, and when does that difference affect a Magus's standing within the sanctioned order?",
+      "confidence": 0,
+      "meta": "0% answered",
+      "section": "Current questions",
+      "href": "docs.html?doc=questions-to-be-answered#question-how-does-a-pagan-cult-s-magecraft-differ-from-church-doctrine-and-when-does-that-difference-affe"
+    },
+    {
+      "id": "question-which-adult-characters-beyond-lynleit-and-kyrien-fionn-and-helena-and-the-emerging-yulia-and-hiy",
+      "title": "Relationships",
+      "text": "Which adult characters beyond Lynleit and Kyrien, Fionn and Helena, and the emerging Yulia and Hiyu bond have romantic or sexual histories that materially shape their present behavior?",
+      "confidence": 0,
+      "meta": "0% answered",
+      "section": "Current questions",
+      "href": "docs.html?doc=questions-to-be-answered#question-which-adult-characters-beyond-lynleit-and-kyrien-fionn-and-helena-and-the-emerging-yulia-and-hiy"
+    },
+    {
+      "id": "question-does-their-current-potential-for-confrontational-sexual-tension-ever-enter-the-story-and-which-n",
+      "title": "Kyrien and Sherie",
+      "text": "Does their current potential for confrontational sexual tension ever enter the story, and which negotiation would let her calibrated charm collide repeatedly with his refusal to be steered?",
+      "confidence": 0,
+      "meta": "0% answered",
+      "section": "Current questions",
+      "href": "docs.html?doc=questions-to-be-answered#question-does-their-current-potential-for-confrontational-sexual-tension-ever-enter-the-story-and-which-n"
+    },
+    {
+      "id": "question-what-does-the-voice-want-and-what-does-it-say-once-it-begins-speaking-independently",
+      "title": "Holumn incident HI-001",
+      "text": "What does the voice want, and what does it say once it begins speaking independently?",
+      "confidence": 0,
+      "meta": "0% answered",
+      "section": "Current questions",
+      "href": "docs.html?doc=questions-to-be-answered#question-what-does-the-voice-want-and-what-does-it-say-once-it-begins-speaking-independently"
+    },
+    {
+      "id": "question-who-made-or-first-completed-the-puzzle-how-does-its-compulsion-move-between-owners-and-what-stat",
+      "title": "Holumn incident HI-002",
+      "text": "Who made or first completed the puzzle, how does its compulsion move between owners, and what state does completion impose on its victims?",
+      "confidence": 0,
+      "meta": "0% answered",
+      "section": "Current questions",
+      "href": "docs.html?doc=questions-to-be-answered#question-who-made-or-first-completed-the-puzzle-how-does-its-compulsion-move-between-owners-and-what-stat"
+    },
+    {
+      "id": "question-what-conditions-admit-a-visitor-to-the-nameless-street-what-are-the-girl-and-dead-boy-and-why-do",
+      "title": "Holumn incident HI-005",
+      "text": "What conditions admit a visitor to the Nameless Street, what are the girl and dead boy, and why does Lynleit return after following the lure?",
+      "confidence": 0,
+      "meta": "0% answered",
+      "section": "Current questions",
+      "href": "docs.html?doc=questions-to-be-answered#question-what-conditions-admit-a-visitor-to-the-nameless-street-what-are-the-girl-and-dead-boy-and-why-do"
+    },
+    {
+      "id": "question-what-identity-appearance-and-history-belong-to-the-holumn-that-lynleit-and-kyrien-destroy-before",
+      "title": "Holumn incident HI-006",
+      "text": "What identity, appearance, and history belong to the Holumn that Lynleit and Kyrien destroy before its terminal condition transfers to them?",
+      "confidence": 0,
+      "meta": "0% answered",
+      "section": "Current questions",
+      "href": "docs.html?doc=questions-to-be-answered#question-what-identity-appearance-and-history-belong-to-the-holumn-that-lynleit-and-kyrien-destroy-before"
+    },
+    {
+      "id": "question-what-operation-brings-lynleit-and-kyrien-to-the-holumn-where-does-the-final-confrontation-occur-",
+      "title": "Doom Has an Address",
+      "text": "What operation brings Lynleit and Kyrien to the Holumn, where does the final confrontation occur, and what evidence lets them understand that destroying it caused their decline?",
+      "confidence": 0,
+      "meta": "0% answered",
+      "section": "Current questions",
+      "href": "docs.html?doc=questions-to-be-answered#question-what-operation-brings-lynleit-and-kyrien-to-the-holumn-where-does-the-final-confrontation-occur-"
+    },
+    {
+      "id": "question-when-and-under-what-circumstances-do-lynleit-and-kyrien-first-have-intercourse-after-the-park-en",
+      "title": "Later intimacy",
+      "text": "When and under what circumstances do Lynleit and Kyrien first have intercourse, after the park encounter and subsequent reciprocal exploration?",
+      "confidence": 0,
+      "meta": "0% answered",
+      "section": "Current questions",
+      "href": "docs.html?doc=questions-to-be-answered#question-when-and-under-what-circumstances-do-lynleit-and-kyrien-first-have-intercourse-after-the-park-en"
+    },
+    {
+      "id": "question-what-happens-during-the-incomplete-attempt-that-the-chapter-leaves-off-page",
+      "title": "Doom Has an Address",
+      "text": "What happens during the incomplete attempt that the Chapter leaves off-page?",
+      "confidence": 0,
+      "meta": "0% answered",
+      "section": "Current questions",
+      "href": "docs.html?doc=questions-to-be-answered#question-what-happens-during-the-incomplete-attempt-that-the-chapter-leaves-off-page"
+    },
+    {
+      "id": "question-which-magi-first-examine-the-curse-and-identify-the-one-death-solution-before-lynleit-consults-n",
+      "title": "Doom Has an Address",
+      "text": "Which Magi first examine the curse and identify the one-death solution before Lynleit consults Natalia?",
+      "confidence": 0,
+      "meta": "0% answered",
+      "section": "Current questions",
+      "href": "docs.html?doc=questions-to-be-answered#question-which-magi-first-examine-the-curse-and-identify-the-one-death-solution-before-lynleit-consults-n"
+    },
+    {
+      "id": "question-what-is-port-city-s-proper-name-and-which-events-take-place-there",
+      "title": "Location",
+      "text": "What is Port City's proper name, and which events take place there?",
+      "confidence": 0,
+      "meta": "0% answered",
+      "section": "Current questions",
+      "href": "docs.html?doc=questions-to-be-answered#question-what-is-port-city-s-proper-name-and-which-events-take-place-there"
+    },
+    {
+      "id": "question-what-was-the-director-s-house-called-before-it-acquired-that-title-and-who-gave-it-the-name",
+      "title": "Location",
+      "text": "What was the Director's House called before it acquired that title, and who gave it the name?",
+      "confidence": 0,
+      "meta": "0% answered",
+      "section": "Current questions",
+      "href": "docs.html?doc=questions-to-be-answered#question-what-was-the-director-s-house-called-before-it-acquired-that-title-and-who-gave-it-the-name"
+    },
+    {
+      "id": "question-how-do-clients-find-natalia-and-how-does-she-screen-cases-without-alerting-the-magiarchy-or-chur",
+      "title": "Private investigation",
+      "text": "How do clients find Natalia, and how does she screen cases without alerting the Magiarchy or Church?",
+      "confidence": 0,
+      "meta": "0% answered",
+      "section": "Current questions",
+      "href": "docs.html?doc=questions-to-be-answered#question-how-do-clients-find-natalia-and-how-does-she-screen-cases-without-alerting-the-magiarchy-or-chur"
+    },
+    {
+      "id": "question-which-of-his-father-s-contacts-does-kyrien-still-use-and-what-obligations-does-he-have-to-them",
+      "title": "Kyrien",
+      "text": "Which of his father's contacts does Kyrien still use, and what obligations does he have to them?",
+      "confidence": 0,
+      "meta": "0% answered",
+      "section": "Current questions",
+      "href": "docs.html?doc=questions-to-be-answered#question-which-of-his-father-s-contacts-does-kyrien-still-use-and-what-obligations-does-he-have-to-them"
+    },
+    {
+      "id": "question-which-repeated-professional-assignments-first-give-them-private-jokes-and-familiarity-and-where-",
+      "title": "Sherie and Felix",
+      "text": "Which repeated professional assignments first give them private jokes and familiarity, and where do these encounters fall in the main plot?",
+      "confidence": 0,
+      "meta": "0% answered",
+      "section": "Current questions",
+      "href": "docs.html?doc=questions-to-be-answered#question-which-repeated-professional-assignments-first-give-them-private-jokes-and-familiarity-and-where-"
+    },
+    {
+      "id": "question-what-makes-felix-recognize-that-he-wants-sherie-herself-and-what-experiences-loosen-his-emotiona",
+      "title": "Sherie and Felix",
+      "text": "What makes Felix recognize that he wants Sherie herself, and what experiences loosen his emotionally significant fixation on Lynleit?",
+      "confidence": 0,
+      "meta": "0% answered",
+      "section": "Current questions",
+      "href": "docs.html?doc=questions-to-be-answered#question-what-makes-felix-recognize-that-he-wants-sherie-herself-and-what-experiences-loosen-his-emotiona"
+    },
+    {
+      "id": "question-when-does-sherie-first-feel-unseen-and-when-does-she-refuse-to-spend-their-private-time-accommod",
+      "title": "Sherie and Felix",
+      "text": "When does Sherie first feel unseen, and when does she refuse to spend their private time accommodating Felix's hopes about Lynleit? How does he respond in his subsequent choices?",
+      "confidence": 0,
+      "meta": "0% answered",
+      "section": "Current questions",
+      "href": "docs.html?doc=questions-to-be-answered#question-when-does-sherie-first-feel-unseen-and-when-does-she-refuse-to-spend-their-private-time-accommod"
+    },
+    {
+      "id": "question-which-moments-let-one-stop-performing-and-receive-care-from-the-other-and-when-do-they-conscious",
+      "title": "Sherie and Felix",
+      "text": "Which moments let one stop performing and receive care from the other, and when do they consciously choose intimacy?",
+      "confidence": 0,
+      "meta": "0% answered",
+      "section": "Current questions",
+      "href": "docs.html?doc=questions-to-be-answered#question-which-moments-let-one-stop-performing-and-receive-care-from-the-other-and-when-do-they-conscious"
+    },
+    {
+      "id": "question-whose-sitting-room-hosts-the-card-game-what-game-are-they-playing-and-what-prompted-felix-s-comp",
+      "title": "Unresolved Tension",
+      "text": "Whose sitting room hosts the card game, what game are they playing, and what prompted Felix's complaint about Lynleit?",
+      "confidence": 0,
+      "meta": "0% answered",
+      "section": "Current questions",
+      "href": "docs.html?doc=questions-to-be-answered#question-whose-sitting-room-hosts-the-card-game-what-game-are-they-playing-and-what-prompted-felix-s-comp"
+    },
+    {
+      "id": "question-in-which-conversations-does-sherie-use-her-sayings-about-catastrophe-and-catharsis-and-schr-ding",
+      "title": "Character Aphorisms",
+      "text": "In which conversations does Sherie use her sayings about catastrophe and catharsis, and Schrödinger's butt; who hears them?",
+      "confidence": 0,
+      "meta": "0% answered",
+      "section": "Current questions",
+      "href": "docs.html?doc=questions-to-be-answered#question-in-which-conversations-does-sherie-use-her-sayings-about-catastrophe-and-catharsis-and-schr-ding"
+    },
+    {
+      "id": "question-which-professional-obligations-put-them-in-substantive-disagreement-and-what-consequences-remain",
+      "title": "Sherie and Felix",
+      "text": "Which professional obligations put them in substantive disagreement, and what consequences remain even when they care for one another?",
+      "confidence": 0,
+      "meta": "0% answered",
+      "section": "Current questions",
+      "href": "docs.html?doc=questions-to-be-answered#question-which-professional-obligations-put-them-in-substantive-disagreement-and-what-consequences-remain"
+    },
+    {
+      "id": "question-which-separation-or-dangerous-assignment-changes-the-significance-of-their-familiar-exchanges-an",
+      "title": "Sherie and Felix",
+      "text": "Which separation or dangerous assignment changes the significance of their familiar exchanges, and what does each choose afterward?",
+      "confidence": 0,
+      "meta": "0% answered",
+      "section": "Current questions",
+      "href": "docs.html?doc=questions-to-be-answered#question-which-separation-or-dangerous-assignment-changes-the-significance-of-their-familiar-exchanges-an"
+    },
+    {
+      "id": "question-which-reading-if-any-is-definitive-moonlight-moon-lit-illuminated-by-moonlight-or-moon-lake",
+      "title": "Lynleit's name",
+      "text": "Which reading, if any, is definitive: moonlight, moon lit, illuminated by moonlight, or moon lake?",
+      "confidence": 0,
+      "meta": "0% answered",
+      "section": "Current questions",
+      "href": "docs.html?doc=questions-to-be-answered#question-which-reading-if-any-is-definitive-moonlight-moon-lit-illuminated-by-moonlight-or-moon-lake"
+    },
+    {
+      "id": "question-what-does-hide-of-leviathan-mean-and-is-the-material-connected-to-the-river-phenomenon-recorded-",
+      "title": "Items & Artefacts",
+      "text": "What does \"hide of leviathan\" mean, and is the material connected to the river phenomenon recorded as HI-004?",
+      "confidence": 0,
+      "meta": "0% answered",
+      "section": "Current questions",
+      "href": "docs.html?doc=questions-to-be-answered#question-what-does-hide-of-leviathan-mean-and-is-the-material-connected-to-the-river-phenomenon-recorded-"
+    },
+    {
+      "id": "question-when-and-how-does-kyrien-learn-that-lynleit-bore-his-son-and-where-does-that-revelation-belong-i",
+      "title": "Family",
+      "text": "When and how does Kyrien learn that Lynleit bore his son, and where does that revelation belong in relation to Lynleit's elusive return and his leadership of MSF?",
+      "confidence": 0,
+      "meta": "0% answered",
+      "section": "Current questions",
+      "href": "docs.html?doc=questions-to-be-answered#question-when-and-how-does-kyrien-learn-that-lynleit-bore-his-son-and-where-does-that-revelation-belong-i"
+    },
+    {
+      "id": "question-is-helena-a-magus-and-how-does-she-gain-access-to-supernatural-institutions",
+      "title": "Helena",
+      "text": "Is Helena a Magus, and how does she gain access to supernatural institutions?",
+      "confidence": 5,
+      "meta": "5% answered",
+      "section": "Current questions",
+      "href": "docs.html?doc=questions-to-be-answered#question-is-helena-a-magus-and-how-does-she-gain-access-to-supernatural-institutions"
+    },
+    {
+      "id": "question-whom-does-lynleit-consult-about-the-spill-and-what-does-each-person-know",
+      "title": "Spill inquiry",
+      "text": "Whom does Lynleit consult about the Spill, and what does each person know?",
+      "confidence": 5,
+      "meta": "5% answered",
+      "section": "Current questions",
+      "href": "docs.html?doc=questions-to-be-answered#question-whom-does-lynleit-consult-about-the-spill-and-what-does-each-person-know"
+    },
+    {
+      "id": "question-which-clash-between-felix-and-kyrien-has-lasting-consequences-and-does-felix-s-opinion-of-him-ch",
+      "title": "Relationship",
+      "text": "Which clash between Felix and Kyrien has lasting consequences, and does Felix's opinion of him change?",
+      "confidence": 5,
+      "meta": "5% answered",
+      "section": "Current questions",
+      "href": "docs.html?doc=questions-to-be-answered#question-which-clash-between-felix-and-kyrien-has-lasting-consequences-and-does-felix-s-opinion-of-him-ch"
+    },
+    {
+      "id": "question-what-evidence-first-convinces-drake-that-the-disappearances-conceal-a-coup-and-is-anyone-encoura",
+      "title": "Drake",
+      "text": "What evidence first convinces Drake that the disappearances conceal a coup, and is anyone encouraging the Court to dismiss him?",
+      "confidence": 5,
+      "meta": "5% answered",
+      "section": "Current questions",
+      "href": "docs.html?doc=questions-to-be-answered#question-what-evidence-first-convinces-drake-that-the-disappearances-conceal-a-coup-and-is-anyone-encoura"
+    },
+    {
+      "id": "question-which-church-authorities-recognized-fionn-as-magiarch-and-what-did-each-recognition-require",
+      "title": "Magiarchy",
+      "text": "Which church authorities recognized Fionn as Magiarch, and what did each recognition require?",
+      "confidence": 5,
+      "meta": "5% answered",
+      "section": "Current questions",
+      "href": "docs.html?doc=questions-to-be-answered#question-which-church-authorities-recognized-fionn-as-magiarch-and-what-did-each-recognition-require"
+    },
+    {
+      "id": "question-what-evidence-does-each-institution-possess-and-how-do-the-police-magi-academy-private-investiga",
+      "title": "Institutions",
+      "text": "What evidence does each institution possess, and how do the Police, Magi Academy, private investigators, and MSF reach incompatible but rational interpretations of the same crisis?",
+      "confidence": 5,
+      "meta": "5% answered",
+      "section": "Current questions",
+      "href": "docs.html?doc=questions-to-be-answered#question-what-evidence-does-each-institution-possess-and-how-do-the-police-magi-academy-private-investiga"
+    },
+    {
+      "id": "question-who-knows-that-lester-is-a-demiholumn-and-which-factions-would-classify-him-as-person-specimen-h",
+      "title": "Lester",
+      "text": "Who knows that Lester is a demiholumn, and which factions would classify him as person, specimen, heresy, weapon, or kin?",
+      "confidence": 5,
+      "meta": "5% answered",
+      "section": "Current questions",
+      "href": "docs.html?doc=questions-to-be-answered#question-who-knows-that-lester-is-a-demiholumn-and-which-factions-would-classify-him-as-person-specimen-h"
+    },
+    {
+      "id": "question-what-kind-of-case-does-natalia-refuse-and-what-does-that-refusal-reveal-about-her-priorities",
+      "title": "Natalia",
+      "text": "What kind of case does Natalia refuse, and what does that refusal reveal about her priorities?",
+      "confidence": 5,
+      "meta": "5% answered",
+      "section": "Current questions",
+      "href": "docs.html?doc=questions-to-be-answered#question-what-kind-of-case-does-natalia-refuse-and-what-does-that-refusal-reveal-about-her-priorities"
+    },
+    {
+      "id": "question-what-was-their-private-marriage-like-near-fionn-s-death-and-did-physical-intimacy-remain-part-of",
+      "title": "Fionn and Helena",
+      "text": "What was their private marriage like near Fionn's death, and did physical intimacy remain part of it?",
+      "confidence": 5,
+      "meta": "5% answered",
+      "section": "Current questions",
+      "href": "docs.html?doc=questions-to-be-answered#question-what-was-their-private-marriage-like-near-fionn-s-death-and-did-physical-intimacy-remain-part-of"
+    },
+    {
+      "id": "question-which-event-makes-either-of-them-consciously-recognize-investigative-dependence-as-desire-and-wh",
+      "title": "Yulia and Hiyu",
+      "text": "Which event makes either of them consciously recognize investigative dependence as desire, and who first names what is happening between them?",
+      "confidence": 5,
+      "meta": "5% answered",
+      "section": "Current questions",
+      "href": "docs.html?doc=questions-to-be-answered#question-which-event-makes-either-of-them-consciously-recognize-investigative-dependence-as-desire-and-wh"
+    },
+    {
+      "id": "question-which-ordinary-case-interaction-first-makes-natalia-respond-to-lester-as-a-man-rather-than-an-an",
+      "title": "Natalia and Lester",
+      "text": "Which ordinary case interaction first makes Natalia respond to Lester as a man rather than an anomalous condition, and how does he recognize the change without forcing either of them to name it?",
+      "confidence": 5,
+      "meta": "5% answered",
+      "section": "Current questions",
+      "href": "docs.html?doc=questions-to-be-answered#question-which-ordinary-case-interaction-first-makes-natalia-respond-to-lester-as-a-man-rather-than-an-an"
+    },
+    {
+      "id": "question-do-any-ancestral-covenants-still-bind-fionn-s-lineage-and-what-consequences-if-any-exist-beyond-",
+      "title": "Cult of Inanna",
+      "text": "Do any ancestral covenants still bind Fionn's lineage, and what consequences, if any, exist beyond Mikhail's account of its history?",
+      "confidence": 10,
+      "meta": "10% answered",
+      "section": "Current questions",
+      "href": "docs.html?doc=questions-to-be-answered#question-do-any-ancestral-covenants-still-bind-fionn-s-lineage-and-what-consequences-if-any-exist-beyond-"
+    },
+    {
+      "id": "question-which-formative-incidents-become-canon-when-does-fionn-remarry-and-is-msf-being-founded-or-restr",
+      "title": "Arc 0",
+      "text": "Which formative incidents become canon, when does Fionn remarry, and is MSF being founded or restructured?",
+      "confidence": 10,
+      "meta": "10% answered",
+      "section": "Current questions",
+      "href": "docs.html?doc=questions-to-be-answered#question-which-formative-incidents-become-canon-when-does-fionn-remarry-and-is-msf-being-founded-or-restr"
+    },
+    {
+      "id": "question-what-are-his-parents-and-sister-s-names-how-old-is-he-at-his-father-s-death-and-what-are-his-sis",
+      "title": "Kyrien’s family",
+      "text": "What are his parents' and sister's names, how old is he at his father's death, and what are his sister's circumstances and his mother's later fate? His mother needs his care at recruitment.",
+      "confidence": 10,
+      "meta": "10% answered",
+      "section": "Current questions",
+      "href": "docs.html?doc=questions-to-be-answered#question-what-are-his-parents-and-sister-s-names-how-old-is-he-at-his-father-s-death-and-what-are-his-sis"
+    },
+    {
+      "id": "question-what-logically-defensible-worldview-and-incompatible-objective-does-each-faction-bring-to-fionn-",
+      "title": "Core mystery",
+      "text": "What logically defensible worldview and incompatible objective does each faction bring to Fionn, MSF, the Spill, and Narvea?",
+      "confidence": 10,
+      "meta": "10% answered",
+      "section": "Current questions",
+      "href": "docs.html?doc=questions-to-be-answered#question-what-logically-defensible-worldview-and-incompatible-objective-does-each-faction-bring-to-fionn-"
+    },
+    {
+      "id": "question-which-current-tension-records-beyond-lynleit-and-kyrien-yulia-and-hiyu-fionn-and-helena-natalia-",
+      "title": "Sexual tension",
+      "text": "Which current tension records beyond Lynleit and Kyrien, Yulia and Hiyu, Fionn and Helena, Natalia and Lester, Lynleit and Felix, and Sherie and Felix become visible story dynamics rather than remaining conditional?",
+      "confidence": 10,
+      "meta": "10% answered",
+      "section": "Current questions",
+      "href": "docs.html?doc=questions-to-be-answered#question-which-current-tension-records-beyond-lynleit-and-kyrien-yulia-and-hiyu-fionn-and-helena-natalia-"
+    },
+    {
+      "id": "question-which-of-lynleit-s-later-actions-around-msf-missions-can-plausibly-read-as-help-observation-mani",
+      "title": "Lynleit",
+      "text": "Which of Lynleit's later actions around MSF missions can plausibly read as help, observation, manipulation, or causation before her intention becomes clear?",
+      "confidence": 10,
+      "meta": "10% answered",
+      "section": "Current questions",
+      "href": "docs.html?doc=questions-to-be-answered#question-which-of-lynleit-s-later-actions-around-msf-missions-can-plausibly-read-as-help-observation-mani"
+    },
+    {
+      "id": "question-what-is-the-vilen-park-called-and-what-in-its-history-makes-it-vulnerable-to-the-spill",
+      "title": "Location",
+      "text": "What is the Vilen park called, and what in its history makes it vulnerable to the Spill?",
+      "confidence": 10,
+      "meta": "10% answered",
+      "section": "Current questions",
+      "href": "docs.html?doc=questions-to-be-answered#question-what-is-the-vilen-park-called-and-what-in-its-history-makes-it-vulnerable-to-the-spill"
+    },
+    {
+      "id": "question-at-what-point-does-felix-lend-lynleit-his-ren-l21-rook-and-what-prompts-him-to-act-on-his-concer",
+      "title": "Weapons",
+      "text": "At what point does Felix lend Lynleit his Ren L21 Rook, and what prompts him to act on his concern about her 9×17 Sparrow?",
+      "confidence": 10,
+      "meta": "10% answered",
+      "section": "Current questions",
+      "href": "docs.html?doc=questions-to-be-answered#question-at-what-point-does-felix-lend-lynleit-his-ren-l21-rook-and-what-prompts-him-to-act-on-his-concer"
+    },
+    {
+      "id": "question-what-terrors-does-myka-encounter-inside-the-academy-and-why-can-its-own-teachers-and-hierarchy-n",
+      "title": "Magi Academy",
+      "text": "What terrors does Myka encounter inside the Academy, and why can its own teachers and hierarchy not resolve them?",
+      "confidence": 10,
+      "meta": "10% answered",
+      "section": "Current questions",
+      "href": "docs.html?doc=questions-to-be-answered#question-what-terrors-does-myka-encounter-inside-the-academy-and-why-can-its-own-teachers-and-hierarchy-n"
+    },
+    {
+      "id": "question-which-rooms-in-the-director-s-house-remain-outside-msf-use-and-who-may-enter-them",
+      "title": "House",
+      "text": "Which rooms in the Director's House remain outside MSF use, and who may enter them?",
+      "confidence": 10,
+      "meta": "10% answered",
+      "section": "Current questions",
+      "href": "docs.html?doc=questions-to-be-answered#question-which-rooms-in-the-director-s-house-remain-outside-msf-use-and-who-may-enter-them"
+    },
+    {
+      "id": "question-which-ordinary-habits-complaints-chores-meals-and-relationships-keep-the-director-s-house-a-fami",
+      "title": "Security",
+      "text": "Which ordinary habits, complaints, chores, meals, and relationships keep the Director's House a family home while existential MSF work occurs inside it?",
+      "confidence": 10,
+      "meta": "10% answered",
+      "section": "Current questions",
+      "href": "docs.html?doc=questions-to-be-answered#question-which-ordinary-habits-complaints-chores-meals-and-relationships-keep-the-director-s-house-a-fami"
+    },
+    {
+      "id": "question-which-officers-learn-that-magic-exists-what-remains-compartmentalized-and-how-does-hidden-knowle",
+      "title": "MSF",
+      "text": "Which officers learn that magic exists, what remains compartmentalized, and how does hidden knowledge become a second rank system inside the smaller post-Spill agency?",
+      "confidence": 10,
+      "meta": "10% answered",
+      "section": "Current questions",
+      "href": "docs.html?doc=questions-to-be-answered#question-which-officers-learn-that-magic-exists-what-remains-compartmentalized-and-how-does-hidden-knowle"
+    },
+    {
+      "id": "question-what-action-can-the-government-take-against-a-defiant-msf-when-mutual-dependence-means-the-compa",
+      "title": "MSF",
+      "text": "What action can the government take against a defiant MSF when mutual dependence means the company cannot safely rebel and the state cannot safely destroy it?",
+      "confidence": 10,
+      "meta": "10% answered",
+      "section": "Current questions",
+      "href": "docs.html?doc=questions-to-be-answered#question-what-action-can-the-government-take-against-a-defiant-msf-when-mutual-dependence-means-the-compa"
+    },
+    {
+      "id": "question-how-much-time-passes-between-the-first-disappearance-the-park-quarantine-kyrien-s-early-recruitm",
+      "title": "Timeline",
+      "text": "How much time passes between the first disappearance, the park quarantine, Kyrien's early recruitment, Fionn's much later assassination, Helena's takeover, and the hunt for Lynleit's arrest?",
+      "confidence": 10,
+      "meta": "10% answered",
+      "section": "Current questions",
+      "href": "docs.html?doc=questions-to-be-answered#question-how-much-time-passes-between-the-first-disappearance-the-park-quarantine-kyrien-s-early-recruitm"
+    },
+    {
+      "id": "question-what-does-the-archive-preserve-discarded-events-imposed-experiences-or-another-form-of-discontin",
+      "title": "Bone Archive: continuity",
+      "text": "What does the Archive preserve: discarded events, imposed experiences, or another form of discontinuity; how far can memory, bodily traces, and learned responses diverge?",
+      "confidence": 15,
+      "meta": "15% answered",
+      "section": "Current questions",
+      "href": "docs.html?doc=questions-to-be-answered#question-what-does-the-archive-preserve-discarded-events-imposed-experiences-or-another-form-of-discontin"
+    },
+    {
+      "id": "question-what-narrow-authority-would-allow-father-mikhail-to-be-sent-back-to-clean-up-lynleit-s-witness-b",
+      "title": "The Church",
+      "text": "What narrow authority would allow Father Mikhail to be sent back to clean up Lynleit's witness breach, and what does that authority permit him to do?",
+      "confidence": 15,
+      "meta": "15% answered",
+      "section": "Current questions",
+      "href": "docs.html?doc=questions-to-be-answered#question-what-narrow-authority-would-allow-father-mikhail-to-be-sent-back-to-clean-up-lynleit-s-witness-b"
+    },
+    {
+      "id": "question-what-work-precedes-the-walk-and-what-precautions-permit-the-pause-in-a-still-dangerous-park",
+      "title": "Park encounter",
+      "text": "What work precedes the walk, and what precautions permit the pause in a still-dangerous park?",
+      "confidence": 15,
+      "meta": "15% answered",
+      "section": "Current questions",
+      "href": "docs.html?doc=questions-to-be-answered#question-what-work-precedes-the-walk-and-what-precautions-permit-the-pause-in-a-still-dangerous-park"
+    },
+    {
+      "id": "question-what-are-fionn-and-lynleit-negotiating-before-dawn-and-why-does-lynleit-leave-irritated",
+      "title": "Opening chapter",
+      "text": "What are Fionn and Lynleit negotiating before dawn, and why does Lynleit leave irritated?",
+      "confidence": 15,
+      "meta": "15% answered",
+      "section": "Current questions",
+      "href": "docs.html?doc=questions-to-be-answered#question-what-are-fionn-and-lynleit-negotiating-before-dawn-and-why-does-lynleit-leave-irritated"
+    },
+    {
+      "id": "question-what-evidence-does-heyk-carry-out-of-the-park-and-which-parts-of-his-account-can-anyone-corrobor",
+      "title": "Heyk",
+      "text": "What evidence does Heyk carry out of the park, and which parts of his account can anyone corroborate?",
+      "confidence": 15,
+      "meta": "15% answered",
+      "section": "Current questions",
+      "href": "docs.html?doc=questions-to-be-answered#question-what-evidence-does-heyk-carry-out-of-the-park-and-which-parts-of-his-account-can-anyone-corrobor"
+    },
+    {
+      "id": "question-which-case-connects-natalia-and-lester-to-the-main-story-and-why-does-it-require-both-of-them",
+      "title": "Private investigation",
+      "text": "Which case connects Natalia and Lester to the main story, and why does it require both of them?",
+      "confidence": 15,
+      "meta": "15% answered",
+      "section": "Current questions",
+      "href": "docs.html?doc=questions-to-be-answered#question-which-case-connects-natalia-and-lester-to-the-main-story-and-why-does-it-require-both-of-them"
+    },
+    {
+      "id": "question-beyond-lynleit-who-in-the-household-accepts-or-resists-ash-the-cat-as-a-permanent-resident-and-h",
+      "title": "Domestic thread",
+      "text": "Beyond Lynleit, who in the household accepts or resists Ash the cat as a permanent resident, and how does his place in the house change after Fionn's death?",
+      "confidence": 15,
+      "meta": "15% answered",
+      "section": "Current questions",
+      "href": "docs.html?doc=questions-to-be-answered#question-beyond-lynleit-who-in-the-household-accepts-or-resists-ash-the-cat-as-a-permanent-resident-and-h"
+    },
+    {
+      "id": "question-what-special-envoy-duty-takes-father-mikhail-to-cardiff-which-magi-threats-turn-it-into-a-life-a",
+      "title": "Cardiff venture",
+      "text": "What special-envoy duty takes Father Mikhail to Cardiff, which Magi threats turn it into a life-and-death operation, and what part of his past does the ordeal expose?",
+      "confidence": 15,
+      "meta": "15% answered",
+      "section": "Current questions",
+      "href": "docs.html?doc=questions-to-be-answered#question-what-special-envoy-duty-takes-father-mikhail-to-cardiff-which-magi-threats-turn-it-into-a-life-a"
+    },
+    {
+      "id": "question-which-morally-incompatible-method-divides-lynleit-and-mikhail-and-what-consequence-from-cardiff-",
+      "title": "Cardiff aftermath",
+      "text": "Which morally incompatible method divides Lynleit and Mikhail, and what consequence from Cardiff later enters the main story in Narvea?",
+      "confidence": 15,
+      "meta": "15% answered",
+      "section": "Current questions",
+      "href": "docs.html?doc=questions-to-be-answered#question-which-morally-incompatible-method-divides-lynleit-and-mikhail-and-what-consequence-from-cardiff-"
+    },
+    {
+      "id": "question-do-the-out-of-sequence-branch-movement-and-camera-anomaly-recur-or-connect-to-any-later-holumn-e",
+      "title": "Boat operation",
+      "text": "Do the out-of-sequence branch movement and camera anomaly recur or connect to any later Holumn encounter?",
+      "confidence": 20,
+      "meta": "20% answered",
+      "section": "Current questions",
+      "href": "docs.html?doc=questions-to-be-answered#question-do-the-out-of-sequence-branch-movement-and-camera-anomaly-recur-or-connect-to-any-later-holumn-e"
+    },
+    {
+      "id": "question-what-cover-story-conceals-kyrien-s-release-and-unofficial-msf-role",
+      "title": "Kyrien",
+      "text": "What cover story conceals Kyrien's release and unofficial MSF role?",
+      "confidence": 20,
+      "meta": "20% answered",
+      "section": "Current questions",
+      "href": "docs.html?doc=questions-to-be-answered#question-what-cover-story-conceals-kyrien-s-release-and-unofficial-msf-role"
+    },
+    {
+      "id": "question-where-does-doom-fall-within-the-later-part-of-arc-1-s-second-half-and-what-main-plot-events-surr",
+      "title": "Doom placement",
+      "text": "Where does Doom fall within the later part of Arc 1’s second half, and what main-plot events surround the months before the park encounter?",
+      "confidence": 20,
+      "meta": "20% answered",
+      "section": "Current questions",
+      "href": "docs.html?doc=questions-to-be-answered#question-where-does-doom-fall-within-the-later-part-of-arc-1-s-second-half-and-what-main-plot-events-surr"
+    },
+    {
+      "id": "question-what-is-the-flask-s-origin-and-which-earlier-scene-first-establishes-the-habit",
+      "title": "Whiskey flask",
+      "text": "What is the flask’s origin, and which earlier scene first establishes the habit?",
+      "confidence": 20,
+      "meta": "20% answered",
+      "section": "Current questions",
+      "href": "docs.html?doc=questions-to-be-answered#question-what-is-the-flask-s-origin-and-which-earlier-scene-first-establishes-the-habit"
+    },
+    {
+      "id": "question-which-individually-rational-political-and-institutional-pressures-persuade-fionn-to-wait-and-whe",
+      "title": "Core mystery",
+      "text": "Which individually rational political and institutional pressures persuade Fionn to wait, and when does reasonable delay become his fatal mistake?",
+      "confidence": 20,
+      "meta": "20% answered",
+      "section": "Current questions",
+      "href": "docs.html?doc=questions-to-be-answered#question-which-individually-rational-political-and-institutional-pressures-persuade-fionn-to-wait-and-whe"
+    },
+    {
+      "id": "question-what-is-the-academy-s-normal-admission-and-training-hierarchy-and-what-knowledge-gained-during-t",
+      "title": "Magi Academy",
+      "text": "What is the Academy's normal admission and training hierarchy, and what knowledge gained during the terrors helps Myka graduate at the top of her class?",
+      "confidence": 20,
+      "meta": "20% answered",
+      "section": "Current questions",
+      "href": "docs.html?doc=questions-to-be-answered#question-what-is-the-academy-s-normal-admission-and-training-hierarchy-and-what-knowledge-gained-during-t"
+    },
+    {
+      "id": "question-how-many-chapters-belong-to-the-cardiff-venture-and-academy-crisis-and-where-should-their-concur",
+      "title": "Parallel side stories",
+      "text": "How many Chapters belong to the Cardiff venture and Academy crisis, and where should their concurrent events alternate inside Divided Attention?",
+      "confidence": 20,
+      "meta": "20% answered",
+      "section": "Current questions",
+      "href": "docs.html?doc=questions-to-be-answered#question-how-many-chapters-belong-to-the-cardiff-venture-and-academy-crisis-and-where-should-their-concur"
+    },
+    {
+      "id": "question-beyond-the-river-operation-which-assignments-require-felix-s-technical-work-and-reiner-s-physica",
+      "title": "MSF operations",
+      "text": "Beyond the river operation, which assignments require Felix's technical work and Reiner's physical intervention together?",
+      "confidence": 20,
+      "meta": "20% answered",
+      "section": "Current questions",
+      "href": "docs.html?doc=questions-to-be-answered#question-beyond-the-river-operation-which-assignments-require-felix-s-technical-work-and-reiner-s-physica"
+    },
+    {
+      "id": "question-what-formal-agreement-makes-a-still-private-msf-partly-accountable-to-the-magiarchy-and-church-a",
+      "title": "MSF",
+      "text": "What formal agreement makes a still-private MSF partly accountable to the Magiarchy and Church after Mikhail discovers the witness breach?",
+      "confidence": 20,
+      "meta": "20% answered",
+      "section": "Current questions",
+      "href": "docs.html?doc=questions-to-be-answered#question-what-formal-agreement-makes-a-still-private-msf-partly-accountable-to-the-magiarchy-and-church-a"
+    },
+    {
+      "id": "question-when-does-lynleit-formally-inherit-the-magiarchate-after-fionn-s-death-and-how-does-that-transfe",
+      "title": "Succession",
+      "text": "When does Lynleit formally inherit the Magiarchate after Fionn's death, and how does that transfer of responsibility overlap with Kyrien assuming MSF's director seat?",
+      "confidence": 20,
+      "meta": "20% answered",
+      "section": "Current questions",
+      "href": "docs.html?doc=questions-to-be-answered#question-when-does-lynleit-formally-inherit-the-magiarchate-after-fionn-s-death-and-how-does-that-transfe"
+    },
+    {
+      "id": "question-does-myka-join-msf-after-lynleit-s-disappearance-and-kyrien-s-assumption-of-the-director-s-offic",
+      "title": "Myka",
+      "text": "Does Myka join MSF after Lynleit's disappearance and Kyrien's assumption of the director's office, and does Kyrien recruit her personally?",
+      "confidence": 20,
+      "meta": "20% answered",
+      "section": "Current questions",
+      "href": "docs.html?doc=questions-to-be-answered#question-does-myka-join-msf-after-lynleit-s-disappearance-and-kyrien-s-assumption-of-the-director-s-offic"
+    },
+    {
+      "id": "question-what-exact-jurisdiction-gives-the-confirmed-council-of-state-authority-when-ordinary-constitutio",
+      "title": "Government",
+      "text": "What exact jurisdiction gives the confirmed Council of State authority when ordinary constitutional sovereignty collides with hidden supernatural sovereignty?",
+      "confidence": 25,
+      "meta": "25% answered",
+      "section": "Current questions",
+      "href": "docs.html?doc=questions-to-be-answered#question-what-exact-jurisdiction-gives-the-confirmed-council-of-state-authority-when-ordinary-constitutio"
+    },
+    {
+      "id": "question-does-fionn-die-from-the-fall-below-the-vilen-family-house-from-an-earlier-attack-or-from-a-stage",
+      "title": "Lynleit",
+      "text": "Does Fionn die from the fall below the Vilen family house, from an earlier attack, or from a staged combination, and who first reaches his body?",
+      "confidence": 25,
+      "meta": "25% answered",
+      "section": "Current questions",
+      "href": "docs.html?doc=questions-to-be-answered#question-does-fionn-die-from-the-fall-below-the-vilen-family-house-from-an-earlier-attack-or-from-a-stage"
+    },
+    {
+      "id": "question-what-does-fionn-withhold-from-helena-and-how-does-that-exclusion-affect-her-involvement-in-the-p",
+      "title": "Helena",
+      "text": "What does Fionn withhold from Helena, and how does that exclusion affect her involvement in the plot?",
+      "confidence": 25,
+      "meta": "25% answered",
+      "section": "Current questions",
+      "href": "docs.html?doc=questions-to-be-answered#question-what-does-fionn-withhold-from-helena-and-how-does-that-exclusion-affect-her-involvement-in-the-p"
+    },
+    {
+      "id": "question-what-does-he-actually-do-to-test-the-assumption-that-caused-a-mistaken-realization",
+      "title": "Kyrien: reasoning",
+      "text": "What does he actually do to test the assumption that caused a mistaken realization?",
+      "confidence": 25,
+      "meta": "25% answered",
+      "section": "Current questions",
+      "href": "docs.html?doc=questions-to-be-answered#question-what-does-he-actually-do-to-test-the-assumption-that-caused-a-mistaken-realization"
+    },
+    {
+      "id": "question-exactly-how-many-years-pass-between-lynleit-s-disappearance-and-return-and-how-old-is-her-and-ky",
+      "title": "Timeline",
+      "text": "Exactly how many years pass between Lynleit's disappearance and return, and how old is her and Kyrien's son when she reappears?",
+      "confidence": 25,
+      "meta": "25% answered",
+      "section": "Current questions",
+      "href": "docs.html?doc=questions-to-be-answered#question-exactly-how-many-years-pass-between-lynleit-s-disappearance-and-return-and-how-old-is-her-and-ky"
+    },
+    {
+      "id": "question-how-does-lynleit-discover-midway-through-arc-1-that-fionn-replaced-her-coat-and-what-evidence-es",
+      "title": "Items & Artefacts",
+      "text": "How does Lynleit discover midway through Arc 1 that Fionn replaced her coat, and what evidence establishes that he arranged the substitution before his death?",
+      "confidence": 30,
+      "meta": "30% answered",
+      "section": "Current questions",
+      "href": "docs.html?doc=questions-to-be-answered#question-how-does-lynleit-discover-midway-through-arc-1-that-fionn-replaced-her-coat-and-what-evidence-es"
+    },
+    {
+      "id": "question-what-lasting-change-if-any-follows-the-failed-river-operation-and-what-evidence-of-the-encounter",
+      "title": "Boat operation",
+      "text": "What lasting change, if any, follows the failed river operation, and what evidence of the encounter remains?",
+      "confidence": 30,
+      "meta": "30% answered",
+      "section": "Current questions",
+      "href": "docs.html?doc=questions-to-be-answered#question-what-lasting-change-if-any-follows-the-failed-river-operation-and-what-evidence-of-the-encounter"
+    },
+    {
+      "id": "question-what-human-victory-ends-helena-s-control-and-settles-the-political-crisis-while-leaving-the-supe",
+      "title": "Resolution",
+      "text": "What human victory ends Helena's control and settles the political crisis while leaving the supernatural wound of the Spill open?",
+      "confidence": 30,
+      "meta": "30% answered",
+      "section": "Current questions",
+      "href": "docs.html?doc=questions-to-be-answered#question-what-human-victory-ends-helena-s-control-and-settles-the-political-crisis-while-leaving-the-supe"
+    },
+    {
+      "id": "question-does-felix-or-reiner-answer-the-hunted-lynleit-first-and-what-help-can-he-safely-give-her",
+      "title": "Fugitive network",
+      "text": "Does Felix or Reiner answer the hunted Lynleit first, and what help can he safely give her?",
+      "confidence": 30,
+      "meta": "30% answered",
+      "section": "Current questions",
+      "href": "docs.html?doc=questions-to-be-answered#question-does-felix-or-reiner-answer-the-hunted-lynleit-first-and-what-help-can-he-safely-give-her"
+    },
+    {
+      "id": "question-what-rule-permits-kyrien-to-inherit-msf-why-was-it-created-and-what-limits-does-it-place-on-him",
+      "title": "MSF",
+      "text": "What rule permits Kyrien to inherit MSF, why was it created, and what limits does it place on him?",
+      "confidence": 30,
+      "meta": "30% answered",
+      "section": "Current questions",
+      "href": "docs.html?doc=questions-to-be-answered#question-what-rule-permits-kyrien-to-inherit-msf-why-was-it-created-and-what-limits-does-it-place-on-him"
+    },
+    {
+      "id": "question-when-does-fionn-replace-lynleit-s-coat-relative-to-the-river-operation-and-how-long-after-his-de",
+      "title": "Items & Artefacts",
+      "text": "When does Fionn replace Lynleit's coat relative to the river operation, and how long after his death passes before her confirmed mid-Arc 1 discovery?",
+      "confidence": 30,
+      "meta": "30% answered",
+      "section": "Current questions",
+      "href": "docs.html?doc=questions-to-be-answered#question-when-does-fionn-replace-lynleit-s-coat-relative-to-the-river-operation-and-how-long-after-his-de"
+    },
+    {
+      "id": "question-how-are-suppression-measures-selected-and-sanctioned-and-where-do-the-church-and-magiarchy-disag",
+      "title": "The Church",
+      "text": "How are suppression measures selected and sanctioned, and where do the Church and Magiarchy disagree about their use?",
+      "confidence": 35,
+      "meta": "35% answered",
+      "section": "Current questions",
+      "href": "docs.html?doc=questions-to-be-answered#question-how-are-suppression-measures-selected-and-sanctioned-and-where-do-the-church-and-magiarchy-disag"
+    },
+    {
+      "id": "question-what-rules-govern-fitness-contests-duels-and-sanctioned-wars-and-who-recognizes-the-result",
+      "title": "Magiarchy",
+      "text": "What rules govern fitness contests, duels, and sanctioned wars, and who recognizes the result?",
+      "confidence": 35,
+      "meta": "35% answered",
+      "section": "Current questions",
+      "href": "docs.html?doc=questions-to-be-answered#question-what-rules-govern-fitness-contests-duels-and-sanctioned-wars-and-who-recognizes-the-result"
+    },
+    {
+      "id": "question-what-research-did-natalia-find-too-constrained-at-the-academy-and-which-former-colleagues-or-stu",
+      "title": "Natalia",
+      "text": "What research did Natalia find too constrained at the Academy, and which former colleagues or students remain involved?",
+      "confidence": 35,
+      "meta": "35% answered",
+      "section": "Current questions",
+      "href": "docs.html?doc=questions-to-be-answered#question-what-research-did-natalia-find-too-constrained-at-the-academy-and-which-former-colleagues-or-stu"
+    },
+    {
+      "id": "question-what-contact-did-natalia-and-lynleit-preserve-after-the-academy-and-how-does-natalia-ask-her-for",
+      "title": "Natalia and Lynleit",
+      "text": "What contact did Natalia and Lynleit preserve after the Academy, and how does Natalia ask her former student to intervene without alerting Academy authorities?",
+      "confidence": 35,
+      "meta": "35% answered",
+      "section": "Current questions",
+      "href": "docs.html?doc=questions-to-be-answered#question-what-contact-did-natalia-and-lynleit-preserve-after-the-academy-and-how-does-natalia-ask-her-for"
+    },
+    {
+      "id": "question-what-event-makes-the-old-officers-act-together-against-helena",
+      "title": "MSF",
+      "text": "What event makes the old officers act together against Helena?",
+      "confidence": 35,
+      "meta": "35% answered",
+      "section": "Current questions",
+      "href": "docs.html?doc=questions-to-be-answered#question-what-event-makes-the-old-officers-act-together-against-helena"
+    },
+    {
+      "id": "question-who-convenes-a-new-selection-after-church-recognition-is-withdrawn-and-how-are-rival-claims-hand",
+      "title": "Magiarchy",
+      "text": "Who convenes a new selection after Church recognition is withdrawn, and how are rival claims handled?",
+      "confidence": 35,
+      "meta": "35% answered",
+      "section": "Current questions",
+      "href": "docs.html?doc=questions-to-be-answered#question-who-convenes-a-new-selection-after-church-recognition-is-withdrawn-and-how-are-rival-claims-hand"
+    },
+    {
+      "id": "question-which-private-contract-first-conflicts-with-narvea-s-interests-and-exposes-why-msf-s-confirmed-f",
+      "title": "MSF",
+      "text": "Which private contract first conflicts with Narvea's interests and exposes why MSF's confirmed freedom to accept non-government clients is dangerous?",
+      "confidence": 35,
+      "meta": "35% answered",
+      "section": "Current questions",
+      "href": "docs.html?doc=questions-to-be-answered#question-which-private-contract-first-conflicts-with-narvea-s-interests-and-exposes-why-msf-s-confirmed-f"
+    },
+    {
+      "id": "question-how-old-was-lynleit-when-she-made-the-third-floor-room-a-condition-of-moving-from-turon-to-vilen",
+      "title": "House chronology",
+      "text": "How old was Lynleit when she made the third-floor room a condition of moving from Turon to Vilen, and when did the Vilen house become a residential MSF node?",
+      "confidence": 35,
+      "meta": "35% answered",
+      "section": "Current questions",
+      "href": "docs.html?doc=questions-to-be-answered#question-how-old-was-lynleit-when-she-made-the-third-floor-room-a-condition-of-moving-from-turon-to-vilen"
+    },
+    {
+      "id": "question-how-much-time-passes-between-the-hotel-room-refuge-kyrien-s-first-secure-contact-with-felix-and-",
+      "title": "Fugitive campaign",
+      "text": "How much time passes between the hotel-room refuge, Kyrien's first secure contact with Felix and Reiner, Lynleit's first foothold inside MSF, and Helena's eventual loss of control?",
+      "confidence": 35,
+      "meta": "35% answered",
+      "section": "Current questions",
+      "href": "docs.html?doc=questions-to-be-answered#question-how-much-time-passes-between-the-hotel-room-refuge-kyrien-s-first-secure-contact-with-felix-and-"
+    },
+    {
+      "id": "question-which-door-does-helena-knowingly-open-against-fionn-what-outcome-does-she-expect-and-what-enters",
+      "title": "Helena",
+      "text": "Which door does Helena knowingly open against Fionn, what outcome does she expect, and what enters the conspiracy beyond her knowledge or control?",
+      "confidence": 40,
+      "meta": "40% answered",
+      "section": "Current questions",
+      "href": "docs.html?doc=questions-to-be-answered#question-which-door-does-helena-knowingly-open-against-fionn-what-outcome-does-she-expect-and-what-enters"
+    },
+    {
+      "id": "question-what-cover-access-and-objective-allow-kyrien-to-work-undercover-inside-the-magi-academy-and-whic",
+      "title": "Academy operation",
+      "text": "What cover, access, and objective allow Kyrien to work undercover inside the Magi Academy, and which secure communications route connects him with Felix and Reiner?",
+      "confidence": 40,
+      "meta": "40% answered",
+      "section": "Current questions",
+      "href": "docs.html?doc=questions-to-be-answered#question-what-cover-access-and-objective-allow-kyrien-to-work-undercover-inside-the-magi-academy-and-whic"
+    },
+    {
+      "id": "question-exactly-how-many-days-separate-lynleit-s-encounter-from-fionn-s-death-and-which-intervening-scen",
+      "title": "Nameless Street",
+      "text": "Exactly how many days separate Lynleit's encounter from Fionn's death, and which intervening scene allows the memory to recede before it returns?",
+      "confidence": 40,
+      "meta": "40% answered",
+      "section": "Current questions",
+      "href": "docs.html?doc=questions-to-be-answered#question-exactly-how-many-days-separate-lynleit-s-encounter-from-fionn-s-death-and-which-intervening-scen"
+    },
+    {
+      "id": "question-where-among-the-events-before-fionn-s-death-does-only-eyes-for-you-moments-html-moment-only-eyes",
+      "title": "Church interlude",
+      "text": "Where among the events before Fionn's death does Only Eyes for You fall, which church hosts the outburst, and what business brings Lynleit and Fionn on these visits?",
+      "confidence": 40,
+      "meta": "40% answered",
+      "section": "Current questions",
+      "href": "docs.html?doc=questions-to-be-answered#question-where-among-the-events-before-fionn-s-death-does-only-eyes-for-you-moments-html-moment-only-eyes"
+    },
+    {
+      "id": "question-where-does-unresolved-tension-moments-html-moment-unresolved-tension-fall-after-their-first-repe",
+      "title": "Sherie and Felix",
+      "text": "Where does Unresolved Tension fall after their first repeated professional encounters, and how does it relate to Sherie's later teasing challenge to Lynleit?",
+      "confidence": 0,
+      "meta": "0% answered",
+      "section": "Chronology questions",
+      "href": "docs.html?doc=questions-to-be-answered#question-where-does-unresolved-tension-moments-html-moment-unresolved-tension-fall-after-their-first-repe"
+    },
+    {
+      "id": "question-who-is-the-first-missing-man-how-does-he-independently-cause-the-spill-and-which-faction-first-r",
+      "title": "Core mystery",
+      "text": "Who is the first missing man, how does he independently cause the Spill, and which faction first recognizes and exploits the resulting crisis?",
+      "confidence": 45,
+      "meta": "45% answered",
+      "section": "Chronology questions",
+      "href": "docs.html?doc=questions-to-be-answered#question-who-is-the-first-missing-man-how-does-he-independently-cause-the-spill-and-which-faction-first-r"
+    },
+    {
+      "id": "question-which-incompatible-agendas-intend-which-outcomes-around-fionn-and-how-do-they-accidentally-coope",
+      "title": "Core mystery",
+      "text": "Which incompatible agendas intend which outcomes around Fionn, and how do they accidentally cooperate to cause a death that none completely controls?",
+      "confidence": 45,
+      "meta": "45% answered",
+      "section": "Chronology questions",
+      "href": "docs.html?doc=questions-to-be-answered#question-which-incompatible-agendas-intend-which-outcomes-around-fionn-and-how-do-they-accidentally-coope"
+    },
+    {
+      "id": "question-how-do-hiyu-and-yulia-bypass-the-cordon-what-happens-to-them-inside-and-what-evidence-survives-t",
+      "title": "Park trespass",
+      "text": "How do Hiyu and Yulia bypass the cordon, what happens to them inside, and what evidence survives their experience?",
+      "confidence": 45,
+      "meta": "45% answered",
+      "section": "Chronology questions",
+      "href": "docs.html?doc=questions-to-be-answered#question-how-do-hiyu-and-yulia-bypass-the-cordon-what-happens-to-them-inside-and-what-evidence-survives-t"
+    },
+    {
+      "id": "question-what-does-kyrien-witness-when-lynleit-breaks-down-at-the-hotel-and-what-changes-between-them-by-",
+      "title": "Hotel refuge",
+      "text": "What does Kyrien witness when Lynleit breaks down at the hotel, and what changes between them by morning?",
+      "confidence": 45,
+      "meta": "45% answered",
+      "section": "Chronology questions",
+      "href": "docs.html?doc=questions-to-be-answered#question-what-does-kyrien-witness-when-lynleit-breaks-down-at-the-hotel-and-what-changes-between-them-by-"
+    },
+    {
+      "id": "question-what-is-the-prosecutor-general-s-name-and-own-magical-status-who-authorized-and-carried-out-his-",
+      "title": "Kyrien",
+      "text": "What is the Prosecutor General's name and own magical status, who authorized and carried out his father's killing, and what exact physical sequence makes the dinner attempt fail without revealing magic to Kyrien?",
+      "confidence": 50,
+      "meta": "50% answered",
+      "section": "Chronology questions",
+      "href": "docs.html?doc=questions-to-be-answered#question-what-is-the-prosecutor-general-s-name-and-own-magical-status-who-authorized-and-carried-out-his-"
+    },
+    {
+      "id": "question-what-later-abuse-prohibition-proof-and-jurisdiction-make-punishment-possible-ordinary-political-",
+      "title": "Prosecutor General",
+      "text": "What later abuse, prohibition, proof, and jurisdiction make punishment possible? Ordinary political involvement is not enough. When does Lynleit offer revenge, and does punishment actually occur?",
+      "confidence": 50,
+      "meta": "50% answered",
+      "section": "Chronology questions",
+      "href": "docs.html?doc=questions-to-be-answered#question-what-later-abuse-prohibition-proof-and-jurisdiction-make-punishment-possible-ordinary-political-"
+    },
+    {
+      "id": "question-how-does-his-mother-s-continuing-care-work-across-later-assignments-and-what-durable-cover-prote",
+      "title": "Kyrien's obligations",
+      "text": "How does his mother's continuing care work across later assignments, and what durable cover protects his paid service from Fionn and Helena? The neighbour and written terms are v3 scene staging.",
+      "confidence": 50,
+      "meta": "50% answered",
+      "section": "Chronology questions",
+      "href": "docs.html?doc=questions-to-be-answered#question-how-does-his-mother-s-continuing-care-work-across-later-assignments-and-what-durable-cover-prote"
+    },
+    {
+      "id": "question-does-the-author-confirm-lynleit-s-infj-and-felix-s-enfp-working-readings-and-what-further-behavi",
+      "title": "Character typing",
+      "text": "Does the author confirm Lynleit's INFJ and Felix's ENFP working readings, and what further behavior settles Felix's judging function and Kyrien's ISTP versus INTJ uncertainty?",
+      "confidence": 50,
+      "meta": "50% answered",
+      "section": "Chronology questions",
+      "href": "docs.html?doc=questions-to-be-answered#question-does-the-author-confirm-lynleit-s-infj-and-felix-s-enfp-working-readings-and-what-further-behavi"
+    },
+    {
+      "id": "question-at-what-point-in-the-opening-chapters-does-lynleit-reveal-kyrien-s-recruitment-to-felix-and-rein",
+      "title": "Relationship",
+      "text": "At what point in the opening chapters does Lynleit reveal Kyrien's recruitment to Felix and Reiner, where does the disclosure occur, and how much time remains before Fionn's assassination?",
+      "confidence": 60,
+      "meta": "60% answered",
+      "section": "Chronology questions",
+      "href": "docs.html?doc=questions-to-be-answered#question-at-what-point-in-the-opening-chapters-does-lynleit-reveal-kyrien-s-recruitment-to-felix-and-rein"
+    },
+    {
+      "id": "question-does-the-submerged-blue-flame-leave-a-lasting-injury-on-the-drowned-choir-and-what-does-the-girl",
+      "title": "Boat operation",
+      "text": "Does the submerged blue flame leave a lasting injury on the Drowned Choir, and what does the girl's refusal to pursue Lynleit reveal about its limits?",
+      "confidence": 65,
+      "meta": "65% answered",
+      "section": "Chronology questions",
+      "href": "docs.html?doc=questions-to-be-answered#question-does-the-submerged-blue-flame-leave-a-lasting-injury-on-the-drowned-choir-and-what-does-the-girl"
+    },
+    {
+      "id": "question-what-exact-heights-belong-to-the-illustrated-cast-and-which-artwork-derived-hair-eye-build-or-di",
+      "title": "Character appearance",
+      "text": "What exact heights belong to the illustrated cast, and which artwork-derived hair, eye, build, or distinguishing details require correction?",
+      "confidence": 70,
+      "meta": "70% answered",
+      "section": "Chronology questions",
+      "href": "docs.html?doc=questions-to-be-answered#question-what-exact-heights-belong-to-the-illustrated-cast-and-which-artwork-derived-hair-eye-build-or-di"
+    },
+    {
+      "id": "question-beyond-the-confirmed-river-surveillance-operation-what-does-lynleit-refuse-to-provide-drake-and-",
+      "title": "Covert alliance",
+      "text": "Beyond the confirmed river-surveillance operation, what does Lynleit refuse to provide Drake and Sherie, and what concessions or favors do they offer in return?",
+      "confidence": 70,
+      "meta": "70% answered",
+      "section": "Chronology questions",
+      "href": "docs.html?doc=questions-to-be-answered#question-beyond-the-confirmed-river-surveillance-operation-what-does-lynleit-refuse-to-provide-drake-and-"
+    },
+    {
+      "id": "question-which-later-encounter-results-in-the-conception-of-lynleit-and-kyrien-s-son-what-evidence-makes-",
+      "title": "Relationship",
+      "text": "Which later encounter results in the conception of Lynleit and Kyrien's son, what evidence makes the pregnancy inferable at the opening of Arc 2, and how much time separates Doom Has an Address, their later encounters, pregnancy, and disappearance?",
+      "confidence": 75,
+      "meta": "75% answered",
+      "section": "Chronology questions",
+      "href": "docs.html?doc=questions-to-be-answered#question-which-later-encounter-results-in-the-conception-of-lynleit-and-kyrien-s-son-what-evidence-makes-"
+    }
+  ],
+  "contradictions": [],
+  "holumns": [
+    {
+      "id": "HI-008",
+      "title": "Bone Archive",
+      "text": "The Bone Archive preserves experiences that have no place in the surviving account of a person's life. They return through memory and the body: an unexplained scar, a familiar pain, or a practiced movement its owner never learned. An officer steps aside before a shot is fired and later discovers a scar where the bullet would have entered.",
+      "meta": "HI-008 · Bodily trace and discontinuous memory",
+      "detail": "No countermeasure is known. The Archive cannot be relied on to undo events or predict the future. How its experiences are accessed, selected, repeated, or escaped is unknown.",
+      "detailLabel": "Known limits and uncertainties",
+      "href": "docs.html?doc=holumn-incidents-and-testimonies#bone-archive"
+    },
+    {
+      "id": "HI-007",
+      "title": "Sleepers",
+      "text": "Human figures hang roughly twenty to fifty metres above ground or water, heads lowered and limbs loose. Most of those Kyrien sees resemble men in trench coats and hats. Their faces are obscured by height and angle.",
+      "meta": "HI-007 · Kyrien's encounter",
+      "detail": "No weakness or countermeasure is known. Kyrien does not attempt to harm them.",
+      "detailLabel": "Known limits and uncertainties",
+      "href": "docs.html?doc=holumn-incidents-and-testimonies#sleepers"
+    },
+    {
+      "id": "HI-001",
+      "title": "The Voice on the Line",
+      "text": "The calls become incessant. The voice stops merely repeating the witness and begins speaking independently.",
+      "meta": "HI-001 · Victim testimony",
+      "detail": "No countermeasure is confirmed.",
+      "detailLabel": "Known limits and uncertainties",
+      "href": "docs.html?doc=holumn-incidents-and-testimonies#the-voice-on-the-line"
+    },
+    {
+      "id": "HI-002",
+      "title": "The Last Piece",
+      "text": "A puzzle purchased at a market compels its owner to finish it. When the final piece is placed, the owner disappears and enters the missing-persons archive.",
+      "meta": "HI-002 · Missing-person incident",
+      "detail": "No countermeasure is confirmed. Refusing completion appears safer than solving the object, but the strength and transfer of the compulsion remain unknown.",
+      "detailLabel": "Known limits and uncertainties",
+      "href": "docs.html?doc=holumn-incidents-and-testimonies#the-last-piece"
+    },
+    {
+      "id": "HI-003",
+      "title": "The Drowned Choir",
+      "text": "A pale girl rises from the river with her eyes sewn shut by fishing line and a dress made from dead fish. She enslaves the souls of people drowned in the river and uses their hands to pull new victims beneath the surface.",
+      "meta": "HI-003 · Operational encounter",
+      "detail": "Lynleit's blue flame burns the submerged hands. Once the surface supports her, the hands beneath her cannot reach through it. This is an observed boundary around her escape, not a proven restriction across the entire river. No method of freeing the enslaved dead or defeating the girl is confirmed.",
+      "detailLabel": "Known limits and uncertainties",
+      "href": "docs.html?doc=holumn-incidents-and-testimonies#the-drowned-choir"
+    },
+    {
+      "id": "HI-004",
+      "title": "The River That Is Too Deep",
+      "text": "Something immense moves beneath the city river despite stretches too shallow to contain it. Impossible waves damage boats and kayaks, while drowned bodies lose pieces to bites larger than any expected river predator could make.",
+      "meta": "HI-004 · Accumulated incident pattern",
+      "detail": "No countermeasure is confirmed. Its dependence on the river may be a boundary, but it is not yet known whether the water contains the Holumn or belongs to it.",
+      "detailLabel": "Known limits and uncertainties",
+      "href": "docs.html?doc=holumn-incidents-and-testimonies#the-river-that-is-too-deep"
+    },
+    {
+      "id": "HI-005",
+      "title": "The Nameless Street",
+      "text": "A lost visitor may enter a deserted old street whose lanes, stairs, courtyards, and hills cannot be reconciled with the surrounding city. Following anyone encountered there may prevent the visitor from returning to ordinary streets.",
+      "meta": "HI-005 · Urban legend and direct encounter",
+      "detail": "The urban warning instructs visitors not to follow anyone encountered on the street. It is not known whether refusing the lure guarantees escape or why Lynleit returns after following it.",
+      "detailLabel": "Known limits and uncertainties",
+      "href": "docs.html?doc=holumn-incidents-and-testimonies#the-nameless-street"
+    },
+    {
+      "id": "HI-006",
+      "title": "Doom Has an Address",
+      "text": "A Holumn transfers its own terminal condition to whoever consciously destroys it. When Lynleit and Kyrien kill it together, one fatal curse identifies both egos as a single causal answer and remains distributed across them.",
+      "meta": "HI-006 · Operational encounter and curse",
+      "detail": "The curse recognizes the egos responsible for the Holumn's destruction. The advisers identify the death of either subject as a way to release the survivor. Lynleit and Kyrien instead undergo enough reciprocal identity change to break its recognition. That outcome does not establish a reliable treatment for other subjects or curses.",
+      "detailLabel": "Known limits and uncertainties",
+      "href": "docs.html?doc=holumn-incidents-and-testimonies#doom-has-an-address"
+    }
+  ],
+  "moments": [
+    {
+      "id": "university-days-before-the-spill",
+      "title": "University Days",
+      "text": "Before the Spill, Hiyu and Yulia study criminology together. His investigations keep giving her theories to question and evidence to check.",
+      "meta": "v1 · Scene outline",
+      "detail": "University years before the Spill; exact phase unplaced",
+      "detailLabel": "Placement",
+      "href": "moments.html?moment=university-days-before-the-spill&version=v1"
+    },
+    {
+      "id": "the-prosecutors-return",
+      "title": "The Prosecutor's Return",
+      "text": "After Kyrien openly knows about Magi, a new offence by the Prosecutor General gives Lynleit a possible means of offering revenge. She requires proof; the original persecution remains institutionally protected.",
+      "meta": "v1 · Story direction",
+      "detail": "Unplaced",
+      "detailLabel": "Placement",
+      "href": "moments.html?moment=the-prosecutors-return&version=v1"
+    },
+    {
+      "id": "only-eyes-for-you",
+      "title": "Only Eyes for You",
+      "text": "Felix and Reiner accompany Lynleit and Fionn on church visits. Reiner behaves; Felix keeps flirting with the nuns until Lynleit loses patience.",
+      "meta": "v2 · Scene draft",
+      "detail": "Before Fionn's death; exact phase unplaced",
+      "detailLabel": "Placement",
+      "href": "moments.html?moment=only-eyes-for-you&version=v2"
+    },
+    {
+      "id": "sleepers-above-the-river",
+      "title": "Sleepers above the River",
+      "text": "On an early morning walk, Kyrien notices motionless human figures suspended above the river. He takes a boat downstream to see how far they extend.",
+      "meta": "v2 · Incomplete scene",
+      "detail": "Placement undecided",
+      "detailLabel": "Placement",
+      "href": "moments.html?moment=sleepers-above-the-river&version=v2"
+    },
+    {
+      "id": "interrogation-after-the-failed-attempt",
+      "title": "After the Failed Attempt",
+      "text": "Kyrien's legal campaign establishes credible evidence but cannot obtain accountability. After his failed attack at the Prosecutor General's dinner, Lynleit questions him with his lawyer present and offers confidential paid work.",
+      "meta": "v3 · Scene draft",
+      "detail": "The Hidden Wager",
+      "detailLabel": "Placement",
+      "href": "moments.html?moment=interrogation-after-the-failed-attempt&version=v3"
+    },
+    {
+      "id": "the-secret-third-ally",
+      "title": "The Secret Third Ally",
+      "text": "Lynleit eventually tells only Felix and Reiner that she has recruited Kyrien as an unknown ally and possible trump card against Helena, keeping the decision hidden even from Fionn.",
+      "meta": "v3 · Scene draft",
+      "detail": "The Hidden Wager",
+      "detailLabel": "Placement",
+      "href": "moments.html?moment=the-secret-third-ally&version=v3"
+    },
+    {
+      "id": "the-cat-in-the-family-house",
+      "title": "Ash in the Family House",
+      "text": "Before the crisis reaches her home directly, Lynleit clumsily chases a grey male cat named Ash, catches him, then cannot bring herself to expel him into the rain.",
+      "meta": "v2 · Canon scene seed",
+      "detail": "Vanishing Point",
+      "detailLabel": "Placement",
+      "href": "moments.html?moment=the-cat-in-the-family-house&version=v2"
+    },
+    {
+      "id": "a-citizen-is-taken",
+      "title": "The First Missing Man",
+      "text": "The first man to disappear appears to be the Spill's first victim, but he independently causes the crisis. His identity and significance remain concealed for most of the story while hidden factions begin exploiting the catastrophe he created.",
+      "meta": "v1 · Key mystery seed",
+      "detail": "Vanishing Point",
+      "detailLabel": "Placement",
+      "href": "moments.html?moment=a-citizen-is-taken&version=v1"
+    },
+    {
+      "id": "the-warning-dismissed",
+      "title": "The Warning Dismissed",
+      "text": "State Councillor Drake becomes convinced that a coup is developing somewhere inside Narvea, but neither his peers nor the Duke believe he has found more than disconnected irregularities.",
+      "meta": "v1 · Scene chain",
+      "detail": "Unknowing Convergence",
+      "detailLabel": "Placement",
+      "href": "moments.html?moment=the-warning-dismissed&version=v1"
+    },
+    {
+      "id": "a-meeting-beyond-authority",
+      "title": "A Meeting Beyond Authority",
+      "text": "At night on a hill overlooking Vilen, Sherie leads an illegal negotiation in which Drake seeks limited access to MSF resources without surrendering sensitive evidence.",
+      "meta": "v1 · Scene chain",
+      "detail": "Unknowing Convergence",
+      "detailLabel": "Placement",
+      "href": "moments.html?moment=a-meeting-beyond-authority&version=v1"
+    },
+    {
+      "id": "the-boat-beneath-the-bridge",
+      "title": "The Empty Boats Beneath the Bridge",
+      "text": "A covert MSF team descends from a bridge to inspect small night shipments requested by Drake and Sherie. The tarp-covered wooden boats arrive empty, the Drowned Choir attacks from below, and Kyrien secretly witnesses Lynleit stand on the river.",
+      "meta": "v4 · Key scene",
+      "detail": "Unknowing Convergence",
+      "detailLabel": "Placement",
+      "href": "moments.html?moment=the-boat-beneath-the-bridge&version=v4"
+    },
+    {
+      "id": "the-park-unit-is-lost",
+      "title": "The Last Man out of the Park",
+      "text": "A specially equipped paramilitary unit enters the sealed park and is massacred by forces it cannot understand. Captain Heyk becomes the sole survivor.",
+      "meta": "v2 · Key scene",
+      "detail": "The Quarantine",
+      "detailLabel": "Placement",
+      "href": "moments.html?moment=the-park-unit-is-lost&version=v2"
+    },
+    {
+      "id": "students-beyond-the-cordon",
+      "title": "Beyond the Cordon",
+      "text": "Hiyu enters the quarantined park to test his impossible suspicion that magic is involved in the disappearances. Yulia goes with him to prove the theory wrong and keep him alive.",
+      "meta": "v2 · Scene seed",
+      "detail": "The Quarantine",
+      "detailLabel": "Placement",
+      "href": "moments.html?moment=students-beyond-the-cordon&version=v2"
+    },
+    {
+      "id": "shelter-after-the-accusation",
+      "title": "Shelter after the Accusation",
+      "text": "After exhausting her available resources to escape the directed hunt for her arrest, Lynleit reaches Kyrien's hotel-room hideout and finally loses the composure that carried her through the immediate crisis.",
+      "meta": "v2 · Key relationship scene",
+      "detail": "Clear Her Name",
+      "detailLabel": "Placement",
+      "href": "moments.html?moment=shelter-after-the-accusation&version=v2"
+    },
+    {
+      "id": "the-first-lines-back-into-msf",
+      "title": "The First Lines Back into MSF",
+      "text": "While Lynleit remains the target of an active arrest hunt, Kyrien helps her find secure ways to contact Felix and Reiner. Their reconnection becomes the first step in her slow campaign to reclaim MSF from Helena.",
+      "meta": "v1 · Continuity bridge",
+      "detail": "Clear Her Name",
+      "detailLabel": "Placement",
+      "href": "moments.html?moment=the-first-lines-back-into-msf&version=v1"
+    },
+    {
+      "id": "the-end-of-the-first-arc",
+      "title": "Before the Arc Turns",
+      "text": "After surviving the shared curse in Doom Has an Address, Lynleit and Kyrien begin a sexual relationship and develop private jokes and ordinary habits before her pregnancy and disappearance near the Arc 2 threshold.",
+      "meta": "v3 · Canon relationship period",
+      "detail": "Lynleit Disappears",
+      "detailLabel": "Placement",
+      "href": "moments.html?moment=the-end-of-the-first-arc&version=v3"
+    },
+    {
+      "id": "the-nameless-street",
+      "title": "The Nameless Street",
+      "text": "During a casual walk after lunch with Felix, Lynleit enters a deserted labyrinthine street, follows a crying girl with a red balloon, sees a dead boy below a broken fence, and is pushed from the same ledge before waking on an ordinary city bench.",
+      "meta": "v2 · Key foreshadowing scene",
+      "detail": "Divided Attention",
+      "detailLabel": "Placement",
+      "href": "moments.html?moment=the-nameless-street&version=v2"
+    },
+    {
+      "id": "mikhail-discovers-the-breach",
+      "title": "Father Mikhail Discovers the Breach",
+      "text": "Father Mikhail becomes the first authority to discover that Lynleit has shared forbidden knowledge of magic with outsiders. Kyrien corrects her attempt to limit the breach to himself by revealing that Felix and Reiner also know.",
+      "meta": "v1 · Institutional turning point",
+      "detail": "Divided Attention",
+      "detailLabel": "Placement",
+      "href": "moments.html?moment=mikhail-discovers-the-breach&version=v1"
+    },
+    {
+      "id": "the-coat-fionn-left-behind",
+      "title": "The Coat Fionn Left Behind",
+      "text": "Midway through Arc 1, after losing a blue suede jacket in the river and after Fionn's death, Lynleit learns that he had discreetly replaced the blue coat she wears with a garment sewn from material called the hide of leviathan.",
+      "meta": "v1 · Inherited object",
+      "detail": "Clear Her Name",
+      "detailLabel": "Placement",
+      "href": "moments.html?moment=the-coat-fionn-left-behind&version=v1"
+    },
+    {
+      "id": "because-theres-a-battle-to-be-fought",
+      "title": "Because There's a Battle to Be Fought",
+      "text": "Lynleit asks Kyrien why he continues to help her and risk his life when no reward awaits him. He answers immediately: \"Because there's a battle to be fought.\"",
+      "meta": "v2 · Character exchange",
+      "detail": "Clear Her Name",
+      "detailLabel": "Placement",
+      "href": "moments.html?moment=because-theres-a-battle-to-be-fought&version=v2"
+    },
+    {
+      "id": "terrors-inside-the-academy",
+      "title": "Terrors Inside the Academy",
+      "text": "While Lynleit is dispatched to Cardiff, she answers Natalia's request by sending Kyrien into the Magi Academy as Myka's undercover helper. The danger exceeds Lynleit's estimate and forces Natalia to intervene personally.",
+      "meta": "v2 · Academy crisis",
+      "detail": "Divided Attention",
+      "detailLabel": "Placement",
+      "href": "moments.html?moment=terrors-inside-the-academy&version=v2"
+    },
+    {
+      "id": "father-mikhails-foreign-venture",
+      "title": "Father Mikhail's Foreign Venture",
+      "text": "Father Mikhail travels to Cardiff on special-envoy duty and is drawn into a life-and-death operation against several Magi threats. Lynleit is later sent abroad to assist him, without MSF or its conventional arsenal.",
+      "meta": "v1 · Side-story sequence",
+      "detail": "Divided Attention",
+      "detailLabel": "Placement",
+      "href": "moments.html?moment=father-mikhails-foreign-venture&version=v1"
+    },
+    {
+      "id": "myka-enters-msf",
+      "title": "Myka Enters MSF",
+      "text": "After surviving the Academy crisis and graduating at the top of her class, Myka is recruited by MSF as a strong Magus.",
+      "meta": "v2 · Later-life transition",
+      "detail": "Kyrien's Burden",
+      "detailLabel": "Placement",
+      "href": "moments.html?moment=myka-enters-msf&version=v2"
+    },
+    {
+      "id": "fionn-is-eliminated",
+      "title": "The Unresolved Assassination",
+      "text": "Fionn is found dead below the hill at the Vilen family house after several incompatible agendas converge without one actor controlling the whole outcome. Helena knowingly opens one part of the path, then uses his death and Lynleit's stunned response to seize MSF and frame her.",
+      "meta": "v2 · Key event",
+      "detail": "The Takeover",
+      "detailLabel": "Placement",
+      "href": "moments.html?moment=fionn-is-eliminated&version=v2"
+    },
+    {
+      "id": "doom-has-an-address",
+      "title": "Doom Has an Address",
+      "text": "Lynleit and Kyrien survive an identity-bound curse after an incomplete attempt at intimacy. Lynleit will not explain what she tried, and Kyrien does not know why they recovered.",
+      "meta": "v7 · Key scene",
+      "detail": "Later in Arc 1",
+      "detailLabel": "Placement",
+      "href": "moments.html?moment=doom-has-an-address&version=v7"
+    },
+    {
+      "id": "the-bench-under-the-lamp",
+      "title": "The Bench under the Lamp",
+      "text": "After work, their walk becomes their first successful sexual encounter. The park remains dangerous, and they still have to find the exit.",
+      "meta": "v2 · Key scene",
+      "detail": "Later in Arc 1",
+      "detailLabel": "Placement",
+      "href": "moments.html?moment=the-bench-under-the-lamp&version=v2"
+    },
+    {
+      "id": "households-before-the-spill",
+      "title": "Households before the Spill",
+      "text": "A prequel outline follows Fionn and the development of MSF alongside the younger cast's school years.",
+      "meta": "v1 · Development outline",
+      "detail": "Households before the Spill",
+      "detailLabel": "Placement",
+      "href": "moments.html?moment=households-before-the-spill&version=v1"
+    },
+    {
+      "id": "unresolved-tension",
+      "title": "Unresolved Tension",
+      "text": "Felix complains about Lynleit during a card game. From the red sofa, Sherie offers an observation he would rather dispute.",
+      "meta": "v1 · Scene draft",
+      "detail": "Early Sherie and Felix familiarity; exact phase unplaced",
+      "detailLabel": "Placement",
+      "href": "moments.html?moment=unresolved-tension&version=v1"
+    }
+  ],
+  "themes": [
+    {
+      "name": "Magic",
+      "weight": 3,
+      "href": "docs.html?doc=thematic-direction"
+    },
+    {
+      "name": "Political intrigue",
+      "weight": 3,
+      "href": "docs.html?doc=thematic-direction"
+    },
+    {
+      "name": "Horror",
+      "weight": 3,
+      "href": "docs.html?doc=dread-and-action-direction"
+    },
+    {
+      "name": "Espionage",
+      "weight": 3,
+      "href": "docs.html?doc=thematic-direction"
+    },
+    {
+      "name": "Isolation",
+      "weight": 2,
+      "href": "docs.html?doc=dread-and-action-direction"
+    },
+    {
+      "name": "Survival",
+      "weight": 2,
+      "href": "docs.html?doc=dread-and-action-direction"
+    },
+    {
+      "name": "Identity",
+      "weight": 2,
+      "href": "docs.html?doc=thematic-direction"
+    },
+    {
+      "name": "Duty",
+      "weight": 2,
+      "href": "docs.html?doc=thematic-direction"
+    },
+    {
+      "name": "Trust",
+      "weight": 2,
+      "href": "docs.html?doc=prose-and-scene-guidance"
+    },
+    {
+      "name": "Mystery",
+      "weight": 2,
+      "href": "docs.html?doc=dread-and-action-direction"
+    },
+    {
+      "name": "Family",
+      "weight": 1,
+      "href": "docs.html?doc=thematic-direction"
+    },
+    {
+      "name": "Inheritance",
+      "weight": 1,
+      "href": "docs.html?doc=thematic-direction"
+    },
+    {
+      "name": "Humor",
+      "weight": 1,
+      "href": "docs.html?doc=prose-style"
+    },
+    {
+      "name": "Desire",
+      "weight": 1,
+      "href": "docs.html?doc=thematic-direction"
+    },
+    {
+      "name": "Ordinary life",
+      "weight": 1,
+      "href": "docs.html?doc=world-foundation"
+    }
+  ]
+}
