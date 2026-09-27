@@ -44,7 +44,7 @@ export async function testSherieFelixBanter(page, origin, engine) {
     for (const imageId of imageIds) {
       assert.equal(await page.locator(`.gallery-card a[href="gallery.html?image=${imageId}"]`).count(), 0, 'Panel duplicates must not appear in Artwork');
     }
-    assert.ok(await page.locator('.gallery-card a[href="gallery.html?image=char-sherie-ivory-sofa-card-game"]').isVisible(), 'Independent sofa artwork stays in the gallery');
+    assert.equal(await page.locator('.gallery-card[data-image="char-sherie-ivory-sofa-card-game"]').getAttribute('data-artwork-stack'), 'sherie-red-sofa', 'Ivory sofa remains available in the shared sofa stack');
 
     await visit('moments.html?moment=unresolved-tension&version=v1');
     assert.equal(await page.locator('#moment-reader-title').textContent(), 'Unresolved Tension');

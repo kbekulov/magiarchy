@@ -7,7 +7,13 @@ export async function testSeptemberPanelIntake(page, origin, engine) {
   const sets = [['sherie-felix-unresolved-tension', 7], ['hiyu-yulia-university-days', 7], ['after-the-river', 4]];
   for (const [id, count] of sets) {
     const record = records.find(item => item.id === id);
-    assert.deepEqual(record.panels.map(p => p.id), Array.from({ length: count }, (_, i) => `panel-${i + 1}`));
+    const order = id === 'sherie-felix-unresolved-tension' ? [1, 2, 5, 3, 4, 6, 7] : Array.from({ length: count }, (_, i) => i + 1);
+    assert.deepEqual(record.panels.map(p => p.id), order.map(number => `panel-${number}`));
+    assert.deepEqual(record.panels.map(p => p.label), Array.from({ length: count }, (_, i) => `Panel ${i + 1}`));
+    if (id === 'sherie-felix-unresolved-tension') {
+      assert.equal(record.revision, 'r2');
+      assert.deepEqual(record.panels.map(p => p.src), Array.from({length: 7}, (_, i) => `media/gallery/panels/${id}/${id}-panel-${i + 1}-r2.png`));
+    }
     assert.equal(new Set(record.panels.map(p => p.beat)).size, count);
     for (const width of [390, 1440]) {
       await page.setViewportSize({ width, height: 900 });

@@ -4628,6 +4628,8 @@ a.status-member:hover {
 .resource-results { margin: 18px 0 12px; color: var(--muted); font-size: .75rem; }
 .panel-collection, .panel-reader { padding: 0 30px 40px; }
 .production-filters.panel-filters { grid-template-columns: minmax(0, 2fr) minmax(0, 1fr); }
+.panel-scene-toggles { grid-column: 1 / -1; display: flex; flex-wrap: wrap; align-items: center; justify-content: flex-start; gap: 8px 28px; }
+.panel-scene-toggles .chibi-toggle { min-height: 44px; }
 .panel-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 360px), 1fr)); gap: 18px; align-items: start; }
 .panel-card { overflow: hidden; min-width: 0; border: 1px solid #41434a; border-radius: 8px; background: #232428; }
 .panel-card:hover { border-color: #8884ee; }

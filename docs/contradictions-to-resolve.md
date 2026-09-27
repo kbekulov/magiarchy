@@ -6,9 +6,7 @@ Rows are ordered from least resolved to most resolved. Once a contradiction is f
 
 ## Contradiction ledger
 
-| Area | Difference | Current shared source | Resolution |
-| --- | --- | --- | --- |
-| Unresolved Tension | The new seven-panel sequence puts Sherie's "Mm." and Felix's question about her look before her remark about unresolved tension. The written scene puts the remark first, followed by "Mm." and the question. | [Moment v1](../moments.html?moment=unresolved-tension&version=v1) remains the prose source. The [panels](../gallery.html?panels=sherie-felix-unresolved-tension) retain their supplied numeric order. | 0%: Decide whether the artwork should eventually change the dialogue order in a new prose revision. |
+No unresolved contradictions are currently recorded.
 
 The Bench under the Lamp v2 supersedes v1's invented kiss, which the author explicitly rejected. The current Chapter and Moment preserve the supplied approach and a marked writer gap. V1 remains an archived alternate, not evidence for the current relationship. Intimacy guidance distinguishes author-confirmed intent from the still-undrafted passage.
 
@@ -17,6 +15,8 @@ The Bench under the Lamp v2 supersedes v1's invented kiss, which the author expl
 Doom Has an Address v7 supplies current shared canon. The Bench under the Lamp uses v2. Earlier revisions remain accessible as historical alternatives and do not override these choices.
 
 ## Decision history
+
+On 27 September 2026, the revised Unresolved Tension panels put the sofa view third and omit the line about unresolved tension. This removes the earlier conflicting dialogue order. The written Moment stays at v1; the earlier dialogue-bearing illustration is available in Sherie's sofa artwork stack.
 
 On 23 September 2026, the author selected the motorboat depicted in the new Sleepers panels for the written scene. Sleepers above the River v2 replaces rowing with an outboard motor; v1 preserves the rowing draft. The seven-panel sequence links to v2. The passive figures, unknown chronology, and unfinished downstream journey remain unchanged.
 

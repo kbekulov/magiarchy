@@ -36,7 +36,7 @@ The current interrogation dramatizes Kyrien's years of work, legal defeat, care 
 
 ## Unresolved Tension
 
-The [card-game Moment](../moments.html?moment=unresolved-tension&version=v1) pairs Sherie's ordinary physical ease with Felix's distracted complaint about Lynleit. Its paragraph notes distinguish her noticing and enjoying a response from a prearranged seduction, keep his enduring attachment present, and leave the final question unanswered. The three notes remain advisory and appear beside their exact prose paragraphs. [Panels 2 and 5](../gallery.html?panels=sherie-felix-unresolved-tension#panel-2) show opposing viewpoints; they do not establish a named room or timeline phase.
+The [card-game Moment](../moments.html?moment=unresolved-tension&version=v1) pairs Sherie's ordinary physical ease with Felix's distracted complaint about Lynleit. Its paragraph notes distinguish her noticing and enjoying a response from a prearranged seduction, keep his enduring attachment present, and leave the final question unanswered. The three notes remain advisory and appear beside their exact prose paragraphs. [Panels 2 and 3](../gallery.html?panels=sherie-felix-unresolved-tension#panel-2) show opposing viewpoints; they do not establish a named room or timeline phase.
 
 ## Only Eyes for You
 

@@ -23,16 +23,16 @@
         "title": "She's always like this"
       },
       {
-        "id": "beat-5",
-        "title": "Cards on the sofa"
-      },
-      {
         "id": "beat-3",
         "title": "Mm."
       },
       {
         "id": "beat-4",
         "title": "An unanswered look"
+      },
+      {
+        "id": "beat-5",
+        "title": "Unresolved tension"
       },
       {
         "id": "beat-6",
@@ -49,94 +49,93 @@
         "beat": "beat-1",
         "label": "Panel 1",
         "title": "Across the cards",
-        "src": "media/gallery/panels/sherie-felix-unresolved-tension/sherie-felix-unresolved-tension-panel-1-r2.png",
+        "src": "media/gallery/panels/sherie-felix-unresolved-tension/sherie-felix-unresolved-tension-panel-1.png",
         "alt": "The view from Sherie's sofa: her cards and stockinged knees in the foreground, with Felix standing across the sitting room.",
         "width": 1672,
         "height": 941,
         "bytes": 2607332,
-        "display": "media/gallery/previews/panels/sherie-felix-unresolved-tension-r2-panel-1-display.webp",
-        "thumbnail": "media/gallery/previews/panels/sherie-felix-unresolved-tension-r2-panel-1-thumbnail.webp"
+        "display": "media/gallery/previews/panels/sherie-felix-unresolved-tension-panel-1-display.webp",
+        "thumbnail": "media/gallery/previews/panels/sherie-felix-unresolved-tension-panel-1-thumbnail.webp"
       },
       {
         "id": "panel-2",
         "beat": "beat-2",
         "label": "Panel 2",
         "title": "She's always like this",
-        "src": "media/gallery/panels/sherie-felix-unresolved-tension/sherie-felix-unresolved-tension-panel-2-r2.png",
+        "src": "media/gallery/panels/sherie-felix-unresolved-tension/sherie-felix-unresolved-tension-panel-2.png",
         "alt": "Felix gestures with a hand of cards and complains, \"She's always like this.\" Sherie's hand of cards and ruffled cuff fill the foreground.",
         "width": 1536,
         "height": 1024,
         "bytes": 2844821,
-        "display": "media/gallery/previews/panels/sherie-felix-unresolved-tension-r2-panel-2-display.webp",
-        "thumbnail": "media/gallery/previews/panels/sherie-felix-unresolved-tension-r2-panel-2-thumbnail.webp"
-      },
-      {
-        "id": "panel-5",
-        "beat": "beat-5",
-        "label": "Panel 3",
-        "title": "Cards on the sofa",
-        "src": "media/gallery/panels/sherie-felix-unresolved-tension/sherie-felix-unresolved-tension-panel-3-r2.png",
-        "alt": "Sherie reclines on a red and gold sofa with bent knees, holding red-backed playing cards in one hand and resting her cheek on the other.",
-        "width": 1536,
-        "height": 1024,
-        "bytes": 2639303,
-        "display": "media/gallery/previews/panels/sherie-felix-unresolved-tension-r2-panel-5-display.webp",
-        "thumbnail": "media/gallery/previews/panels/sherie-felix-unresolved-tension-r2-panel-5-thumbnail.webp"
+        "display": "media/gallery/previews/panels/sherie-felix-unresolved-tension-panel-2-display.webp",
+        "thumbnail": "media/gallery/previews/panels/sherie-felix-unresolved-tension-panel-2-thumbnail.webp"
       },
       {
         "id": "panel-3",
         "beat": "beat-3",
-        "label": "Panel 4",
+        "label": "Panel 3",
         "title": "Mm.",
-        "src": "media/gallery/panels/sherie-felix-unresolved-tension/sherie-felix-unresolved-tension-panel-4-r2.png",
+        "src": "media/gallery/panels/sherie-felix-unresolved-tension/sherie-felix-unresolved-tension-panel-3.png",
         "alt": "Sherie looks over the edge of her cards in a close-up sketch, with \"Mm.\" beside her face.",
         "width": 1672,
         "height": 941,
         "bytes": 2206497,
-        "display": "media/gallery/previews/panels/sherie-felix-unresolved-tension-r2-panel-3-display.webp",
-        "thumbnail": "media/gallery/previews/panels/sherie-felix-unresolved-tension-r2-panel-3-thumbnail.webp"
+        "display": "media/gallery/previews/panels/sherie-felix-unresolved-tension-panel-3-display.webp",
+        "thumbnail": "media/gallery/previews/panels/sherie-felix-unresolved-tension-panel-3-thumbnail.webp"
       },
       {
         "id": "panel-4",
         "beat": "beat-4",
-        "label": "Panel 5",
+        "label": "Panel 4",
         "title": "An unanswered look",
-        "src": "media/gallery/panels/sherie-felix-unresolved-tension/sherie-felix-unresolved-tension-panel-5-r2.png",
+        "src": "media/gallery/panels/sherie-felix-unresolved-tension/sherie-felix-unresolved-tension-panel-4.png",
         "alt": "Felix sits across the table from Sherie and asks, \"Why do you keep looking at me like that?\"",
         "width": 1672,
         "height": 941,
         "bytes": 2320801,
-        "display": "media/gallery/previews/panels/sherie-felix-unresolved-tension-r2-panel-4-display.webp",
-        "thumbnail": "media/gallery/previews/panels/sherie-felix-unresolved-tension-r2-panel-4-thumbnail.webp"
+        "display": "media/gallery/previews/panels/sherie-felix-unresolved-tension-panel-4-display.webp",
+        "thumbnail": "media/gallery/previews/panels/sherie-felix-unresolved-tension-panel-4-thumbnail.webp"
+      },
+      {
+        "id": "panel-5",
+        "beat": "beat-5",
+        "label": "Panel 5",
+        "title": "Unresolved tension",
+        "src": "media/gallery/panels/sherie-felix-unresolved-tension/sherie-felix-unresolved-tension-panel-5.png",
+        "alt": "Sherie reclines on a red and gold sofa, holding four playing cards beside her face.",
+        "width": 1536,
+        "height": 1024,
+        "bytes": 2643455,
+        "display": "media/gallery/previews/panels/sherie-felix-unresolved-tension-panel-5-display.webp",
+        "thumbnail": "media/gallery/previews/panels/sherie-felix-unresolved-tension-panel-5-thumbnail.webp"
       },
       {
         "id": "panel-6",
         "beat": "beat-6",
         "label": "Panel 6",
         "title": "Felix's reaction",
-        "src": "media/gallery/panels/sherie-felix-unresolved-tension/sherie-felix-unresolved-tension-panel-6-r2.png",
+        "src": "media/gallery/panels/sherie-felix-unresolved-tension/sherie-felix-unresolved-tension-panel-6.png",
         "alt": "Two adjacent close-up sketches show Felix holding his cards, first looking aside and then back toward Sherie.",
         "width": 1672,
         "height": 941,
         "bytes": 2141086,
-        "display": "media/gallery/previews/panels/sherie-felix-unresolved-tension-r2-panel-6-display.webp",
-        "thumbnail": "media/gallery/previews/panels/sherie-felix-unresolved-tension-r2-panel-6-thumbnail.webp"
+        "display": "media/gallery/previews/panels/sherie-felix-unresolved-tension-panel-6-display.webp",
+        "thumbnail": "media/gallery/previews/panels/sherie-felix-unresolved-tension-panel-6-thumbnail.webp"
       },
       {
         "id": "panel-7",
         "beat": "beat-7",
         "label": "Panel 7",
         "title": "Settling back",
-        "src": "media/gallery/panels/sherie-felix-unresolved-tension/sherie-felix-unresolved-tension-panel-7-r2.png",
+        "src": "media/gallery/panels/sherie-felix-unresolved-tension/sherie-felix-unresolved-tension-panel-7.png",
         "alt": "Sherie settles back along the sofa with her cards in one hand and her head resting against the other.",
         "width": 1672,
         "height": 941,
         "bytes": 1967111,
-        "display": "media/gallery/previews/panels/sherie-felix-unresolved-tension-r2-panel-7-display.webp",
-        "thumbnail": "media/gallery/previews/panels/sherie-felix-unresolved-tension-r2-panel-7-thumbnail.webp"
+        "display": "media/gallery/previews/panels/sherie-felix-unresolved-tension-panel-7-display.webp",
+        "thumbnail": "media/gallery/previews/panels/sherie-felix-unresolved-tension-panel-7-thumbnail.webp"
       }
-    ],
-    "revision": "r2"
+    ]
   },
   {
     "id": "hiyu-yulia-university-days",

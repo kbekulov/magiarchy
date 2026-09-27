@@ -83,6 +83,13 @@ try {
         assert.deepEqual(errors, [], `${engine}: browser script errors`);
         continue;
       }
+      if (process.env.TEST_SOFA_ONLY === '1') {
+        await testGalleryStacks(page, origin, engine);
+        await testSeptemberPanelIntake(page, origin, engine);
+        await testSherieFelixBanter(page, origin, engine);
+        assert.deepEqual(errors, [], `${engine}: sofa and panel reader errors`);
+        continue;
+      }
       if (process.env.TEST_ARTWORK_ONLY === '1') {
         await testArtworkVersions(page, origin, engine);
         assert.deepEqual(errors, [], `${engine}: artwork version errors`);
