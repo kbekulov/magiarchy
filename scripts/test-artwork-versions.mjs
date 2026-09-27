@@ -1,4 +1,5 @@
 import assert from 'node:assert/strict';
+import fs from 'node:fs';
 import { testGalleryFilters } from './test-gallery-filters.mjs';
 import { testGalleryIntake } from './test-gallery-intake.mjs';
 
@@ -69,6 +70,44 @@ export async function testArtworkVersions(page, origin, engine) {
     assert.equal(await kyrien.locator('.art-note').textContent(), 'Arc 1 · Chibi');
     await kyrien.scrollIntoViewIfNeeded();
     await page.screenshot({ path: `test-results/${engine}-kyrien-chibi-${width}.png` });
+    const updatedChibis = [
+      ['hiyu', 'Hiyu', 'char-hiyu-chibi-brown-coat-r2'],
+      ['yulia', 'Yulia', 'char-yulia-chibi-white-sweater-r2'],
+      ['sherie', 'Sherie', 'char-sherie-chibi-ankle-boots-r2']
+    ];
+    for (const [slug, name, filename] of updatedChibis) {
+      const card = page.locator(`[data-name="${name}"]`);
+      const chibi = card.locator('.character-chibi');
+      // WebKit waits for lazy-loaded cards to enter the viewport before decoding.
+      await card.evaluate(element => element.scrollIntoView({ block: 'center' }));
+      await page.waitForFunction(({ name, filename }) => {
+        const img = document.querySelector(`[data-name="${name}"] .character-chibi`);
+        return img?.complete && img.naturalWidth > 0 && img.currentSrc.endsWith(`${filename}.webp`);
+      }, { name, filename });
+      assert.equal(await chibi.getAttribute('src'), `media/gallery/previews/chibis/${filename}.webp`);
+      assert.ok((await chibi.evaluate(img => img.currentSrc)).includes(`${filename}.webp`));
+      await card.screenshot({ path: `test-results/${engine}-${slug}-updated-chibi-card-${width}.png` });
+    }
+    for (const [slug, name, filename] of updatedChibis) {
+      // Preserve incoming Gallery URLs while replacing the cached original and preview paths.
+      await page.goto(`${origin}/gallery.html?image=chibi_${slug}_1`);
+      await page.waitForLoadState('networkidle');
+      const image = page.locator('#gallery-detail-image');
+      await image.evaluate(img => img.decode());
+      assert.equal(await page.locator('#gallery-detail-title').textContent(), `${name} - chibi 01`);
+      const source = `media/gallery/images/chibis/${filename}.png`;
+      assert.equal(await page.locator('#gallery-detail-source').getAttribute('href'), source);
+      assert.equal(await image.evaluate(img => img.naturalWidth === img.naturalHeight), true);
+      const response = await page.request.get(`${origin}/${source}`);
+      assert.ok(response.ok());
+      assert.deepEqual(await response.body(), fs.readFileSync(source));
+      assert.ok(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1));
+      await page.screenshot({ path: `test-results/${engine}-${slug}-updated-chibi-reader-${width}.png` });
+      await page.goto(`${origin}/character.html?character=${slug}`);
+      await page.waitForLoadState('networkidle');
+      assert.ok(await page.locator('.profile-portrait-strip img').count() > 0);
+      assert.equal(await page.locator('.profile-portrait-strip img, .profile-art-thumbnails img').evaluateAll(images => images.some(img => img.src.includes('/chibis/'))), false, 'Chibis must not enter profile portrait rotation');
+    }
     await page.goto(`${origin}/gallery.html?image=char-kyrien-arc-1-chibi-beige-jacket`);
     await page.locator('#gallery-detail-image').evaluate(img => img.decode());
     assert.equal(await page.locator('#gallery-detail-source').getAttribute('href'), 'media/gallery/images/chibis/char-kyrien-arc-1-chibi-beige-jacket.png');
