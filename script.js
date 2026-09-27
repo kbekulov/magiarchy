@@ -219,7 +219,7 @@ if (characterCards.length) {
       image.src = selectedArtwork.dataset.preview || selectedArtwork.getAttribute('src');
       image.alt = selectedArtwork.alt;
       const note = card.querySelector('.art-note');
-      if (note) note.textContent = choice.dataset.storyArc ? choice.dataset.storyArc.replace('-', ' ') + ' · Chibi' : 'Chibi';
+      if (note) note.textContent = [choice.dataset.storyArc?.replace('-', ' '), 'Chibi', choice.dataset.chibiNote].filter(Boolean).join(' · ');
     });
   }).catch(error => console.warn('Keeping default character artwork.', error));
 }

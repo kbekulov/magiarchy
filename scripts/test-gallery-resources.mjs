@@ -1,5 +1,6 @@
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
+import { assertChibiCard } from './test-chibi-outfits.mjs';
 
 // Check published assets before exercising edge cases with private fixtures.
 export async function testGalleryResources(page, origin, engine) {
@@ -25,9 +26,7 @@ export async function testGalleryResources(page, origin, engine) {
     assert.ok(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1));
     await page.screenshot({ path: `test-results/${engine}-kyrien-reference-${width}.png`, fullPage: true });
     await visit('characters.html');
-    const chibi = page.locator('[data-name="Kyrien"] .character-chibi');
-    await chibi.evaluate(img => img.decode());
-    assert.ok((await chibi.getAttribute('src')).includes('char-kyrien-arc-1-chibi-beige-jacket'), 'Approved Kyrien chibi missing');
+    await assertChibiCard(page, 'Kyrien');
     assert.equal(await page.locator('[data-name="Kyrien"] .chibi-placeholder').count(), 0);
     await visit('character.html?character=kyrien');
     assert.ok(await page.locator('#character-profile-portrait img[src$="char-kyrien-red-sofa-pistol.png"]').count(), 'Selected Kyrien portrait missing');
@@ -41,6 +40,8 @@ export async function testGalleryResources(page, origin, engine) {
   assert.deepEqual(await page.locator('.gallery-card[data-character~="kyrien"]').evaluateAll(cards => cards.map(card => card.dataset.image).sort()), [
     'char-drake-sherie-kyrien-lynleit-felix-lineup-sketch-01',
     'char-kyrien-arc-1-chibi-beige-jacket',
+    'char-kyrien-chibi-black-coat-study',
+    'char-kyrien-chibi-blue-shirt-study',
     'char-kyrien-concept-closeup-three-variants',
     'char-kyrien-concept-standing-three-variants',
     'char-kyrien-red-sofa-pistol',

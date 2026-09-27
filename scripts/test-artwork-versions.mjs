@@ -2,10 +2,12 @@ import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import { testGalleryFilters } from './test-gallery-filters.mjs';
 import { testGalleryIntake } from './test-gallery-intake.mjs';
+import { assertChibiCard, testChibiOutfits } from './test-chibi-outfits.mjs';
 
 export async function testArtworkVersions(page, origin, engine) {
   await testGalleryFilters(page, origin, engine);
   await testGalleryIntake(page, origin, engine);
+  await testChibiOutfits(page, origin, engine);
   for (const width of [390, 1440]) {
     await page.setViewportSize({ width, height: 900 });
     await page.goto(`${origin}/gallery.html`);
@@ -64,10 +66,7 @@ export async function testArtworkVersions(page, origin, engine) {
     await page.screenshot({ path: `test-results/${engine}-historical-artwork-part-2-${width}.png` });
     await page.goto(`${origin}/characters.html`);
     await page.waitForLoadState('networkidle');
-    const kyrien = page.locator('[data-name="Kyrien"]');
-    await kyrien.locator('.character-chibi').evaluate(img => img.decode());
-    assert.ok((await kyrien.locator('.character-chibi').getAttribute('src')).includes('char-kyrien-arc-1-chibi-beige-jacket'));
-    assert.equal(await kyrien.locator('.art-note').textContent(), 'Arc 1 · Chibi');
+    const kyrien = await assertChibiCard(page, 'Kyrien');
     await kyrien.scrollIntoViewIfNeeded();
     await page.screenshot({ path: `test-results/${engine}-kyrien-chibi-${width}.png` });
     const updatedChibis = [
@@ -110,7 +109,7 @@ export async function testArtworkVersions(page, origin, engine) {
     }
     await page.goto(`${origin}/gallery.html?image=char-kyrien-arc-1-chibi-beige-jacket`);
     await page.locator('#gallery-detail-image').evaluate(img => img.decode());
-    assert.equal(await page.locator('#gallery-detail-source').getAttribute('href'), 'media/gallery/images/chibis/char-kyrien-arc-1-chibi-beige-jacket.png');
+    assert.equal(await page.locator('#gallery-detail-source').getAttribute('href'), 'media/gallery/images/chibis/char-kyrien-arc-1-chibi-beige-jacket-r2.png');
     await page.goto(`${origin}/gallery.html?image=char-lynleit-2`);
     await page.waitForLoadState('networkidle');
     assert.ok((await page.locator('#gallery-detail-title').innerText()).includes('Arc 0'));
