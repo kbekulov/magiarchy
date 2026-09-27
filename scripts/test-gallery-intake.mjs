@@ -17,7 +17,15 @@ export async function testGalleryIntake(page, origin, engine) {
   for (const width of [390, 1440]) {
     await page.setViewportSize({ width, height: 900 });
     await visit('gallery.html');
-    for (const [id] of images) assert.ok(await page.locator(`.gallery-card[data-image="${id}"]`).isVisible(), `${id}: default preview not visible`);
+    for (const [id] of images) {
+      const card = page.locator(`.gallery-card[data-image="${id}"]`);
+      const stack = await card.getAttribute('data-artwork-stack');
+      if (stack) {
+        assert.equal(await page.locator(`.gallery-card[data-artwork-stack="${stack}"]:not([hidden])`).count(), 1, `${id}: stack needs one catalog preview`);
+      } else {
+        assert.ok(await card.isVisible(), `${id}: default preview not visible`);
+      }
+    }
     for (const [id, character, filename] of images) {
       const source = `media/gallery/images/characters/${filename}.png`;
       await visit(`gallery.html?image=${id}`);
@@ -29,8 +37,13 @@ export async function testGalleryIntake(page, origin, engine) {
         assert.equal(response.status(), 200);
         assert.deepEqual(await response.body(), fs.readFileSync(source));
       }
-      assert.equal(await page.locator('#gallery-image-versions a').count(), 0);
-      assert.ok(await page.locator('#gallery-image-versions').isHidden());
+      if (id === 'char-sherie-ivory-sofa-card-game') {
+        assert.equal(await page.locator('#gallery-image-versions a').count(), 15);
+        assert.ok(await page.locator(`#gallery-image-versions a[href="gallery.html?image=${id}"][aria-current="page"]`).isVisible());
+      } else {
+        assert.equal(await page.locator('#gallery-image-versions a').count(), 0);
+        assert.ok(await page.locator('#gallery-image-versions').isHidden());
+      }
       assert.ok(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1));
       await visit(`character.html?character=${character}`);
       const button = page.locator('.profile-art-thumbnails button').filter({ has: page.locator(`img[src$="${filename}.webp"]`) });

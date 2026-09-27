@@ -31,6 +31,13 @@ export async function testMusicMovements(page, origin, engine) {
     }
     await page.getByRole('searchbox', { name: 'Search music' }).fill('no-such-track');
     const repeat = dock.locator('[data-action="repeat"]');
+    const repeatBounds = await repeat.boundingBox();
+    await page.mouse.move(repeatBounds.x + repeatBounds.width / 2, repeatBounds.y + repeatBounds.height / 2);
+    await page.mouse.down();
+    await page.waitForFunction(() => getComputedStyle(document.querySelector('#site-music-player [data-action="repeat"]')).opacity === '0.7');
+    await page.mouse.move(0, 0);
+    await page.mouse.up();
+    await page.waitForFunction(() => getComputedStyle(document.querySelector('#site-music-player [data-action="repeat"]')).opacity === '1');
     assert.ok((await repeat.getAttribute('aria-label')).startsWith('Repeat track.'));
     await repeat.click();
     assert.ok((await repeat.getAttribute('aria-label')).startsWith('Repeat playlist.'));

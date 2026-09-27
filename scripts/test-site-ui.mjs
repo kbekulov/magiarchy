@@ -313,10 +313,10 @@ try {
           await page.locator('#gallery-character-filter').selectOption(slug);
           const card = page.locator(`.gallery-card[data-image="${sharedArtwork}"]`);
           assert.ok(await card.isVisible(), `${slug}: shared artwork missing from Gallery filter`);
-          await page.locator('.chibi-toggle').click();
+          await page.locator('label').filter({ has: page.locator('#gallery-chibi-filter') }).click();
           assert.ok(await page.locator('#gallery-chibi-filter').isChecked());
           assert.ok(await card.isHidden(), 'Shared illustration appears in chibi-only results');
-          await page.locator('.chibi-toggle').click();
+          await page.locator('label').filter({ has: page.locator('#gallery-chibi-filter') }).click();
           assert.ok(!await page.locator('#gallery-chibi-filter').isChecked());
         }
         await visit(`gallery.html?image=${sharedArtwork}`);
@@ -503,6 +503,7 @@ try {
       await proseLink.focus();
       assert.equal(await proseLink.evaluate(el => getComputedStyle(el).color), color, 'Entity link changes prose color on focus');
       assert.notEqual(await proseLink.evaluate(el => getComputedStyle(el).outlineStyle), 'none', 'Entity keyboard focus is invisible');
+      await testGalleryStacks(page, origin, engine);
       await testSeptemberPanelIntake(page, origin, engine);
       await testGalleryResources(page, origin, engine);
       await testGalleryPanels(page, origin, engine);
