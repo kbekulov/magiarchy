@@ -285,6 +285,9 @@ const profileSeeds = [
       ['Height and build', 'Average height with a slim, straight build.'],
       ['Distinguishing features', 'A fair complexion, wide observant eyes, and a habitually unsmiling expression.']
     ],
+    equipment: [
+      { label: 'Birthday gift', title: 'Pendant necklace', detail: 'Yulia received the necklace as a birthday gift but does not know who sent it. She considers the unknown giver a "crime mystery", although no crime has occurred. She wants to find out, has no way to do so, and wears it anyway.' }
+    ],
     personalitySummary: 'Yulia is reliable, meticulous, and most comfortable with evidence she can test against an established procedure. Hiyu\'s eureka moments give her a headache. She follows him anyway, checking his leaps and having to consider possibilities her usual methods would exclude.',
     traits: [
       { label: 'Procedural rigor', note: 'She is at the top of her criminology class because she applies method consistently, respects chains of evidence, and notices when a required step has been skipped.' },

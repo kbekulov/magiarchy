@@ -1,5 +1,21 @@
 [
   {
+    "resource": "yulia-white-sweater",
+    "view": "front",
+    "path": "media/gallery/resources/yulia-white-sweater/char-yulia-white-sweater-t-pose-front.png",
+    "sha256": "c8fe4e6fb3d5f27f124641dab7c6acbd3141129fffa03ff9d037c4c812974eda",
+    "width": 1060,
+    "height": 1484
+  },
+  {
+    "resource": "yulia-white-sweater",
+    "view": "back",
+    "path": "media/gallery/resources/yulia-white-sweater/char-yulia-white-sweater-t-pose-back.png",
+    "sha256": "bd3a79efa9120a9bf76ecba9e56fd7a0c07bfbcf2f90652dc691240a741773c2",
+    "width": 1060,
+    "height": 1484
+  },
+  {
     "resource": "author-mascot-black-gold",
     "view": "front",
     "path": "media/gallery/resources/author-mascot-black-gold/anima-t-pose-black-gold-front.png",

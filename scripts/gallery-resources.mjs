@@ -57,7 +57,7 @@ export function validateResources(root, records, { built = true } = {}) {
       }
     }
     for (const fact of record.technical || []) assert.ok(typeof fact.label === 'string' && typeof fact.value === 'string', `${record.id}: invalid technical note`);
-    for (const id of record.artwork || []) assert.ok(gallery.includes(`/${id}.`), `${record.id}: unknown related artwork ${id}`);
+    for (const id of record.artwork || []) assert.ok(gallery.includes(`data-image="${id}"`) || gallery.includes(`/${id}.`), `${record.id}: unknown related artwork ${id}`);
     assert.ok(!JSON.stringify(record).includes('\u2014'), `${record.id}: em dash regression`);
   }
 }

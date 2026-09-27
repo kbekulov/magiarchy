@@ -107,8 +107,9 @@ export async function testGalleryPanels(page, origin, engine) {
   await visit('story.html?phase=vanishing-point');
   assert.ok(await page.locator('#phase-vanishing-point a[href="gallery.html?panels=cat-incident"]').count());
   const historical = structuredClone(records);
-  historical[0].chapter.version = 'v1';
-  historical[0].moment.version = 'v1';
+  const historicalRiver = historical.find(item => item.id === record.id);
+  historicalRiver.chapter.version = 'v1';
+  historicalRiver.moment.version = 'v1';
   await page.route('**/gallery/panels.json', route => route.fulfill({ json: historical }));
   await visit('story.html');
   assert.equal(await page.locator(timelineLink).count(), 0, 'Historical-only panels must not attach to the current timeline');
@@ -126,7 +127,7 @@ export async function testGalleryPanels(page, origin, engine) {
     assert.ok(!await page.locator('#gallery-content').isVisible());
     assert.ok(!await page.locator('#production-collection').isVisible());
     assert.equal(await page.locator('.panel-card').count(), records.length);
-    assert.equal(await page.locator('.panel-card img').first().getAttribute('src'), record.panels.find(panel => panel.id === record.cover).display, 'Catalog must show the current cover revision');
+    assert.equal(await page.locator(`.panel-card a[href="gallery.html?panels=${record.id}"] img`).getAttribute('src'), record.panels.find(panel => panel.id === record.cover).display, 'Catalog must show the current cover revision');
     assert.ok(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1));
     await page.screenshot({ path: `test-results/${engine}-panels-catalog-${width}.png`, fullPage: true });
     await page.locator('#panel-search').fill('no such panel');
@@ -137,7 +138,7 @@ export async function testGalleryPanels(page, origin, engine) {
     await page.locator('#panel-character').selectOption('lynleit');
     await page.reload(); await page.waitForLoadState('networkidle');
     assert.equal(await page.locator('#panel-character').inputValue(), 'lynleit');
-    await page.locator('.panel-card > a').first().click();
+    await page.locator(`.panel-card > a[href="gallery.html?panels=${record.id}"]`).click();
     await page.waitForLoadState('networkidle');
     assert.equal(await page.locator('.scene-panel').count(), 7);
     assert.ok(await page.locator('#panel-slideshow').isVisible());

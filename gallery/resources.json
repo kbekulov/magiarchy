@@ -1,5 +1,60 @@
 [
   {
+    "id": "yulia-white-sweater",
+    "title": "Yulia",
+    "kind": "t-pose",
+    "summary": "Matching front and back T-poses of Yulia in her white sweater, dark trousers and heeled ankle boots. Her birthday-gift pendant is visible in the front view.",
+    "characters": [
+      "yulia"
+    ],
+    "artwork": [
+      "char-yulia-white-sweater"
+    ],
+    "previews": [
+      {
+        "id": "front",
+        "src": "media/gallery/resources/yulia-white-sweater/char-yulia-white-sweater-t-pose-front.png",
+        "alt": "Yulia in front T-pose, with long brown hair, a white sweater over a black high-neck top, dark fitted trousers and black heeled ankle boots, with her silver-colored pendant visible.",
+        "caption": "Front",
+        "thumbnail": "media/gallery/previews/resources/yulia-white-sweater-1.webp",
+        "width": 1060,
+        "height": 1484
+      },
+      {
+        "id": "back",
+        "src": "media/gallery/resources/yulia-white-sweater/char-yulia-white-sweater-t-pose-back.png",
+        "alt": "Yulia in back T-pose, with long brown hair, a white sweater over a black high-neck top, dark fitted trousers and black heeled ankle boots.",
+        "caption": "Back",
+        "thumbnail": "media/gallery/previews/resources/yulia-white-sweater-2.webp",
+        "width": 1060,
+        "height": 1484
+      }
+    ],
+    "files": [
+      {
+        "path": "media/gallery/resources/yulia-white-sweater/char-yulia-white-sweater-t-pose-front.png",
+        "label": "Front reference",
+        "notes": "Original supplied PNG, 1060 × 1484 px.",
+        "bytes": 1262649,
+        "format": "PNG"
+      },
+      {
+        "path": "media/gallery/resources/yulia-white-sweater/char-yulia-white-sweater-t-pose-back.png",
+        "label": "Back reference",
+        "notes": "Original supplied PNG, 1060 × 1484 px.",
+        "bytes": 1386675,
+        "format": "PNG"
+      }
+    ],
+    "technical": [
+      {
+        "label": "Reference canvas",
+        "value": "1060 × 1484 px per view; supplied framing preserved"
+      }
+    ],
+    "usage": "Use both views together with Yulia's white-sweater portrait. Preserve the outfit, pendant and full figure; these views do not establish a particular story Arc."
+  },
+  {
     "id": "author-mascot-black-gold",
     "nonCanon": true,
     "title": "Anima",

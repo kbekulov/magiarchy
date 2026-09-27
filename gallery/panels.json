@@ -1,5 +1,372 @@
 [
   {
+    "id": "sherie-felix-unresolved-tension",
+    "title": "Unresolved Tension",
+    "summary": "A card game, Felix's complaint about Lynleit, and Sherie's distracting attention from the sofa.",
+    "medium": "Sketches and colored illustrations",
+    "characters": [
+      "sherie",
+      "felix"
+    ],
+    "moment": {
+      "slug": "unresolved-tension",
+      "version": "v1"
+    },
+    "cover": "panel-5",
+    "beats": [
+      {
+        "id": "beat-1",
+        "title": "Across the cards"
+      },
+      {
+        "id": "beat-2",
+        "title": "She's always like this"
+      },
+      {
+        "id": "beat-3",
+        "title": "Mm."
+      },
+      {
+        "id": "beat-4",
+        "title": "An unanswered look"
+      },
+      {
+        "id": "beat-5",
+        "title": "Unresolved tension"
+      },
+      {
+        "id": "beat-6",
+        "title": "Felix's reaction"
+      },
+      {
+        "id": "beat-7",
+        "title": "Settling back"
+      }
+    ],
+    "panels": [
+      {
+        "id": "panel-1",
+        "beat": "beat-1",
+        "label": "Panel 1",
+        "title": "Across the cards",
+        "src": "media/gallery/panels/sherie-felix-unresolved-tension/sherie-felix-unresolved-tension-panel-1.png",
+        "alt": "The view from Sherie's sofa: her cards and stockinged knees in the foreground, with Felix standing across the sitting room.",
+        "width": 1672,
+        "height": 941,
+        "bytes": 2607332,
+        "display": "media/gallery/previews/panels/sherie-felix-unresolved-tension-panel-1-display.webp",
+        "thumbnail": "media/gallery/previews/panels/sherie-felix-unresolved-tension-panel-1-thumbnail.webp"
+      },
+      {
+        "id": "panel-2",
+        "beat": "beat-2",
+        "label": "Panel 2",
+        "title": "She's always like this",
+        "src": "media/gallery/panels/sherie-felix-unresolved-tension/sherie-felix-unresolved-tension-panel-2.png",
+        "alt": "Felix gestures with a hand of cards and complains, \"She's always like this.\" Sherie's hand of cards and ruffled cuff fill the foreground.",
+        "width": 1536,
+        "height": 1024,
+        "bytes": 2844821,
+        "display": "media/gallery/previews/panels/sherie-felix-unresolved-tension-panel-2-display.webp",
+        "thumbnail": "media/gallery/previews/panels/sherie-felix-unresolved-tension-panel-2-thumbnail.webp"
+      },
+      {
+        "id": "panel-3",
+        "beat": "beat-3",
+        "label": "Panel 3",
+        "title": "Mm.",
+        "src": "media/gallery/panels/sherie-felix-unresolved-tension/sherie-felix-unresolved-tension-panel-3.png",
+        "alt": "Sherie looks over the edge of her cards in a close-up sketch, with \"Mm.\" beside her face.",
+        "width": 1672,
+        "height": 941,
+        "bytes": 2206497,
+        "display": "media/gallery/previews/panels/sherie-felix-unresolved-tension-panel-3-display.webp",
+        "thumbnail": "media/gallery/previews/panels/sherie-felix-unresolved-tension-panel-3-thumbnail.webp"
+      },
+      {
+        "id": "panel-4",
+        "beat": "beat-4",
+        "label": "Panel 4",
+        "title": "An unanswered look",
+        "src": "media/gallery/panels/sherie-felix-unresolved-tension/sherie-felix-unresolved-tension-panel-4.png",
+        "alt": "Felix sits across the table from Sherie and asks, \"Why do you keep looking at me like that?\"",
+        "width": 1672,
+        "height": 941,
+        "bytes": 2320801,
+        "display": "media/gallery/previews/panels/sherie-felix-unresolved-tension-panel-4-display.webp",
+        "thumbnail": "media/gallery/previews/panels/sherie-felix-unresolved-tension-panel-4-thumbnail.webp"
+      },
+      {
+        "id": "panel-5",
+        "beat": "beat-5",
+        "label": "Panel 5",
+        "title": "Unresolved tension",
+        "src": "media/gallery/panels/sherie-felix-unresolved-tension/sherie-felix-unresolved-tension-panel-5.png",
+        "alt": "Sherie reclines on a red sofa with playing cards and says, \"Looks like you two have unresolved tension.\"",
+        "width": 1536,
+        "height": 1024,
+        "bytes": 2720278,
+        "display": "media/gallery/previews/panels/sherie-felix-unresolved-tension-panel-5-display.webp",
+        "thumbnail": "media/gallery/previews/panels/sherie-felix-unresolved-tension-panel-5-thumbnail.webp"
+      },
+      {
+        "id": "panel-6",
+        "beat": "beat-6",
+        "label": "Panel 6",
+        "title": "Felix's reaction",
+        "src": "media/gallery/panels/sherie-felix-unresolved-tension/sherie-felix-unresolved-tension-panel-6.png",
+        "alt": "Two adjacent close-up sketches show Felix holding his cards, first looking aside and then back toward Sherie.",
+        "width": 1672,
+        "height": 941,
+        "bytes": 2141086,
+        "display": "media/gallery/previews/panels/sherie-felix-unresolved-tension-panel-6-display.webp",
+        "thumbnail": "media/gallery/previews/panels/sherie-felix-unresolved-tension-panel-6-thumbnail.webp"
+      },
+      {
+        "id": "panel-7",
+        "beat": "beat-7",
+        "label": "Panel 7",
+        "title": "Settling back",
+        "src": "media/gallery/panels/sherie-felix-unresolved-tension/sherie-felix-unresolved-tension-panel-7.png",
+        "alt": "Sherie settles back along the sofa with her cards in one hand and her head resting against the other.",
+        "width": 1672,
+        "height": 941,
+        "bytes": 1967111,
+        "display": "media/gallery/previews/panels/sherie-felix-unresolved-tension-panel-7-display.webp",
+        "thumbnail": "media/gallery/previews/panels/sherie-felix-unresolved-tension-panel-7-thumbnail.webp"
+      }
+    ]
+  },
+  {
+    "id": "hiyu-yulia-university-days",
+    "title": "University Days",
+    "summary": "Hiyu and Yulia before the Spill: conversations across campus, disagreements over evidence, and work at a shared desk.",
+    "medium": "Colored sketches",
+    "characters": [
+      "hiyu",
+      "yulia"
+    ],
+    "moment": {
+      "slug": "university-days-before-the-spill",
+      "version": "v1"
+    },
+    "cover": "panel-1",
+    "beats": [
+      {
+        "id": "beat-1",
+        "title": "A theory in the rain"
+      },
+      {
+        "id": "beat-2",
+        "title": "Interrupted"
+      },
+      {
+        "id": "beat-3",
+        "title": "Beside the steps"
+      },
+      {
+        "id": "beat-4",
+        "title": "An argument on the way"
+      },
+      {
+        "id": "beat-5",
+        "title": "Still discussing it"
+      },
+      {
+        "id": "beat-6",
+        "title": "At the scene"
+      },
+      {
+        "id": "beat-7",
+        "title": "Checking the evidence"
+      }
+    ],
+    "panels": [
+      {
+        "id": "panel-1",
+        "beat": "beat-1",
+        "label": "Panel 1",
+        "title": "A theory in the rain",
+        "src": "media/gallery/panels/hiyu-yulia-university-days/hiyu-yulia-university-days-panel-1.png",
+        "alt": "On a wet university walkway, Hiyu gestures as he talks to Yulia, who holds a dark notebook against her white sweater.",
+        "width": 1672,
+        "height": 941,
+        "bytes": 3348547,
+        "display": "media/gallery/previews/panels/hiyu-yulia-university-days-panel-1-display.webp",
+        "thumbnail": "media/gallery/previews/panels/hiyu-yulia-university-days-panel-1-thumbnail.webp"
+      },
+      {
+        "id": "panel-2",
+        "beat": "beat-2",
+        "label": "Panel 2",
+        "title": "Interrupted",
+        "src": "media/gallery/panels/hiyu-yulia-university-days/hiyu-yulia-university-days-panel-2.png",
+        "alt": "Hiyu turns sharply toward something outside the picture while Yulia looks past him, with the illuminated campus behind them.",
+        "width": 1672,
+        "height": 941,
+        "bytes": 3300597,
+        "display": "media/gallery/previews/panels/hiyu-yulia-university-days-panel-2-display.webp",
+        "thumbnail": "media/gallery/previews/panels/hiyu-yulia-university-days-panel-2-thumbnail.webp"
+      },
+      {
+        "id": "panel-3",
+        "beat": "beat-3",
+        "label": "Panel 3",
+        "title": "Beside the steps",
+        "src": "media/gallery/panels/hiyu-yulia-university-days/hiyu-yulia-university-days-panel-3.png",
+        "alt": "Hiyu sits on a stone ledge and looks up at Yulia as she stands beside him with a hand on his upper arm.",
+        "width": 1672,
+        "height": 941,
+        "bytes": 3357170,
+        "display": "media/gallery/previews/panels/hiyu-yulia-university-days-panel-3-display.webp",
+        "thumbnail": "media/gallery/previews/panels/hiyu-yulia-university-days-panel-3-thumbnail.webp"
+      },
+      {
+        "id": "panel-4",
+        "beat": "beat-4",
+        "label": "Panel 4",
+        "title": "An argument on the way",
+        "src": "media/gallery/panels/hiyu-yulia-university-days/hiyu-yulia-university-days-panel-4.png",
+        "alt": "Hiyu speaks animatedly as they walk beside a campus fence. Yulia keeps her arms folded and looks toward him.",
+        "width": 1672,
+        "height": 941,
+        "bytes": 3472518,
+        "display": "media/gallery/previews/panels/hiyu-yulia-university-days-panel-4-display.webp",
+        "thumbnail": "media/gallery/previews/panels/hiyu-yulia-university-days-panel-4-thumbnail.webp"
+      },
+      {
+        "id": "panel-5",
+        "beat": "beat-5",
+        "label": "Panel 5",
+        "title": "Still discussing it",
+        "src": "media/gallery/panels/hiyu-yulia-university-days/hiyu-yulia-university-days-panel-5.png",
+        "alt": "Yulia sits with an open book on her lap and a hand at her temple while Hiyu gestures from the opposite chair. Books, papers and a noticeboard fill the room.",
+        "width": 1672,
+        "height": 941,
+        "bytes": 3260533,
+        "display": "media/gallery/previews/panels/hiyu-yulia-university-days-panel-5-display.webp",
+        "thumbnail": "media/gallery/previews/panels/hiyu-yulia-university-days-panel-5-thumbnail.webp"
+      },
+      {
+        "id": "panel-6",
+        "beat": "beat-6",
+        "label": "Panel 6",
+        "title": "At the scene",
+        "src": "media/gallery/panels/hiyu-yulia-university-days/hiyu-yulia-university-days-panel-6.png",
+        "alt": "Yulia pulls on blue gloves beside an evidence marker. Behind her, a uniformed officer speaks to Hiyu near a police car on the university grounds.",
+        "width": 1672,
+        "height": 941,
+        "bytes": 3370018,
+        "display": "media/gallery/previews/panels/hiyu-yulia-university-days-panel-6-display.webp",
+        "thumbnail": "media/gallery/previews/panels/hiyu-yulia-university-days-panel-6-thumbnail.webp"
+      },
+      {
+        "id": "panel-7",
+        "beat": "beat-7",
+        "label": "Panel 7",
+        "title": "Checking the evidence",
+        "src": "media/gallery/panels/hiyu-yulia-university-days/hiyu-yulia-university-days-panel-7.png",
+        "alt": "Yulia points to a page among photographs and papers spread across a desk while Hiyu leans beside her, watching her work.",
+        "width": 1672,
+        "height": 941,
+        "bytes": 3482453,
+        "display": "media/gallery/previews/panels/hiyu-yulia-university-days-panel-7-display.webp",
+        "thumbnail": "media/gallery/previews/panels/hiyu-yulia-university-days-panel-7-thumbnail.webp"
+      }
+    ]
+  },
+  {
+    "id": "after-the-river",
+    "title": "After the River",
+    "summary": "Still wet from the river, Lynleit questions Kyrien along the park path while his attention turns to the trees above them.",
+    "medium": "Colored illustrations",
+    "characters": [
+      "lynleit",
+      "kyrien"
+    ],
+    "moment": {
+      "slug": "the-boat-beneath-the-bridge",
+      "version": "v4"
+    },
+    "chapter": {
+      "slug": "the-empty-boats-beneath-the-bridge",
+      "version": "v3"
+    },
+    "cover": "panel-2",
+    "beats": [
+      {
+        "id": "beat-1",
+        "title": "What he saw"
+      },
+      {
+        "id": "beat-2",
+        "title": "A reason to leave"
+      },
+      {
+        "id": "beat-3",
+        "title": "The drowned girl"
+      },
+      {
+        "id": "beat-4",
+        "title": "Above the path"
+      }
+    ],
+    "panels": [
+      {
+        "id": "panel-1",
+        "beat": "beat-1",
+        "label": "Panel 1",
+        "title": "What he saw",
+        "src": "media/gallery/panels/after-the-river/after-the-river-panel-1.png",
+        "alt": "Lynleit looks back along a wet, misty park path and says, \"I think you saw something, and don't want to tell me.\"",
+        "width": 1672,
+        "height": 941,
+        "bytes": 3030832,
+        "display": "media/gallery/previews/panels/after-the-river-panel-1-display.webp",
+        "thumbnail": "media/gallery/previews/panels/after-the-river-panel-1-thumbnail.webp"
+      },
+      {
+        "id": "panel-2",
+        "beat": "beat-2",
+        "label": "Panel 2",
+        "title": "A reason to leave",
+        "src": "media/gallery/panels/after-the-river/after-the-river-panel-2.png",
+        "alt": "Kyrien gestures toward Lynleit and asks whether they should leave as soon as possible. She walks ahead, gathering her wet hair, and asks, \"Are you scared?\"",
+        "width": 1672,
+        "height": 941,
+        "bytes": 2848431,
+        "display": "media/gallery/previews/panels/after-the-river-panel-2-display.webp",
+        "thumbnail": "media/gallery/previews/panels/after-the-river-panel-2-thumbnail.webp"
+      },
+      {
+        "id": "panel-3",
+        "beat": "beat-3",
+        "label": "Panel 3",
+        "title": "The drowned girl",
+        "src": "media/gallery/panels/after-the-river/after-the-river-panel-3.png",
+        "alt": "Lynleit looks toward the trees while Kyrien follows. Handwritten notes ask whether there is a connection to the drowned girl and describe Lynleit as still shaken by the river.",
+        "width": 1672,
+        "height": 941,
+        "bytes": 2583946,
+        "display": "media/gallery/previews/panels/after-the-river-panel-3-display.webp",
+        "thumbnail": "media/gallery/previews/panels/after-the-river-panel-3-thumbnail.webp"
+      },
+      {
+        "id": "panel-4",
+        "beat": "beat-4",
+        "label": "Panel 4",
+        "title": "Above the path",
+        "src": "media/gallery/panels/after-the-river/after-the-river-panel-4.png",
+        "alt": "Seen over Kyrien's shoulder, Lynleit continues along the path beneath a dark, elongated shape among the branches. A note reads, \"It moves... The branches do not.\"",
+        "width": 1672,
+        "height": 941,
+        "bytes": 3089636,
+        "display": "media/gallery/previews/panels/after-the-river-panel-4-display.webp",
+        "thumbnail": "media/gallery/previews/panels/after-the-river-panel-4-thumbnail.webp"
+      }
+    ]
+  },
+  {
     "id": "river-incident",
     "revision": "r6",
     "title": "The River Incident",

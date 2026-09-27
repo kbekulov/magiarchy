@@ -1,5 +1,45 @@
 [
   {
+    "slug": "university-days-before-the-spill",
+    "code": "MOM-028",
+    "title": "University Days",
+    "status": "Scene outline",
+    "placementStatus": "Unplaced",
+    "timelinePhase": null,
+    "timelineLabel": "University years before the Spill; exact phase unplaced",
+    "sequence": 28,
+    "sceneType": "University interlude",
+    "thread": "Hiyu and Yulia",
+    "location": "Their university and study rooms",
+    "summary": "Before the Spill, Hiyu and Yulia study criminology together. His investigations keep giving her theories to question and evidence to check.",
+    "purpose": "Establish the arguments, shared work and ordinary company that precede their attempt to enter the quarantined park.",
+    "characters": [
+      {
+        "name": "Hiyu",
+        "slug": "hiyu"
+      },
+      {
+        "name": "Yulia",
+        "slug": "yulia"
+      }
+    ],
+    "characterAnchors": [],
+    "known": [
+      "Hiyu and Yulia study criminology at the same university before the Spill.",
+      "Yulia excels through meticulous work and established methods. Hiyu pursues personal investigations and unlikely explanations.",
+      "They argue about his ideas and grow accustomed to working together.",
+      "The illustrated sequence moves between campus conversations, study rooms and work with evidence."
+    ],
+    "openQuestions": [
+      "What case brings them to the illustrated evidence marker, and in what capacity are they present?",
+      "What interrupts their conversation outside, and what leads to the pause beside the steps?",
+      "How do these university encounters fall relative to one another and to the opening of the main story?"
+    ],
+    "continuityBefore": "They meet through their university studies and develop very different approaches to investigation.",
+    "continuityAfter": "After the Spill, Hiyu suspects magic behind the disappearances and persuades Yulia to enter the quarantined park with him.",
+    "updated": "2026-09-27"
+  },
+  {
     "slug": "the-prosecutors-return",
     "code": "MOM-026",
     "title": "The Prosecutor's Return",

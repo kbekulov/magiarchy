@@ -6,7 +6,9 @@ Rows are ordered from least resolved to most resolved. Once a contradiction is f
 
 ## Contradiction ledger
 
-No unresolved contradiction is currently recorded.
+| Area | Difference | Current shared source | Resolution |
+| --- | --- | --- | --- |
+| Unresolved Tension | The new seven-panel sequence puts Sherie's "Mm." and Felix's question about her look before her remark about unresolved tension. The written scene puts the remark first, followed by "Mm." and the question. | [Moment v1](../moments.html?moment=unresolved-tension&version=v1) remains the prose source. The [panels](../gallery.html?panels=sherie-felix-unresolved-tension) retain their supplied numeric order. | 0%: Decide whether the artwork should eventually change the dialogue order in a new prose revision. |
 
 The Bench under the Lamp v2 supersedes v1's invented kiss, which the author explicitly rejected. The current Chapter and Moment preserve the supplied approach and a marked writer gap. V1 remains an archived alternate, not evidence for the current relationship. Intimacy guidance distinguishes author-confirmed intent from the still-undrafted passage.
 

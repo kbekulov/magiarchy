@@ -7,6 +7,7 @@ import { fileURLToPath } from 'node:url';
 import { chromium, webkit, firefox } from 'playwright';
 import { testGalleryResources } from './test-gallery-resources.mjs';
 import { testGalleryPanels } from './test-gallery-panels.mjs';
+import { testSeptemberPanelIntake } from './test-september-panel-intake.mjs';
 import { testKyrienOrigin } from './test-kyrien-origin.mjs';
 import { testNarveanFog } from './test-narvean-fog.mjs';
 import { testArtworkVersions } from './test-artwork-versions.mjs';
@@ -70,6 +71,7 @@ try {
         continue;
       }
       if (process.env.TEST_GALLERY_ONLY === '1') {
+        await testSeptemberPanelIntake(page, origin, engine);
         await testRelationshipDirection(page, origin, engine);
         await testAphorisms(page, origin, engine);
         await testSherieFelixBanter(page, origin, engine);
@@ -492,6 +494,7 @@ try {
       await proseLink.focus();
       assert.equal(await proseLink.evaluate(el => getComputedStyle(el).color), color, 'Entity link changes prose color on focus');
       assert.notEqual(await proseLink.evaluate(el => getComputedStyle(el).outlineStyle), 'none', 'Entity keyboard focus is invisible');
+      await testSeptemberPanelIntake(page, origin, engine);
       await testGalleryResources(page, origin, engine);
       await testGalleryPanels(page, origin, engine);
       assert.deepEqual(errors, [], `${engine}: browser script errors`);
