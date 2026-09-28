@@ -6,7 +6,7 @@ Distinctive sayings and turns of phrase from MAGIARCHY's characters. The lines b
 
 ### Catastrophe and catharsis
 
-> "When men and women play games, the prize is either cathartic or catastrophic. That is nature's whim."
+> "When males and females play games, the prize is either catastrophic and cathartic. That is nature's whim."
 
 ### Schrödinger's butt
 

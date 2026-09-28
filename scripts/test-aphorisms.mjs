@@ -14,7 +14,7 @@ export async function testAphorisms(page, origin, engine) {
     assert.ok(await page.locator('#document-reader a[href="character.html?character=lynleit"]').count());
     assert.equal(await page.locator('#document-source-link').getAttribute('href'), 'docs/character-aphorisms.md');
     assert.deepEqual((await page.locator('#document-reader blockquote').allTextContents()).map(text => text.trim()), [
-      '"When males and females play games, the prize is either catastrophic and cathartic. That is nature\'s whim."',
+      '"When men and women play games, the prize is either cathartic or catastrophic. That is nature\'s whim."',
       '"Schrödinger\'s butt: she may want to get to know you closer, or kick your head in. With Lynleit, you won\'t know until you do."'
     ]);
     assert.ok(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1));
@@ -33,9 +33,9 @@ export async function testAphorisms(page, origin, engine) {
   }
   const records = JSON.parse(fs.readFileSync('docs/index.json', 'utf8'));
   const aphorisms = records.find(record => record.slug === 'character-aphorisms');
-  assert.equal(aphorisms.defaultVersion, 'v2');
+  assert.equal(aphorisms.defaultVersion, 'v3');
   assert.equal(aphorisms.latestOnly, undefined);
   const search = JSON.parse(fs.readFileSync('search-index.json', 'utf8')).entries;
-  assert.ok(search.some(record => record.current && record.url === 'docs.html?doc=character-aphorisms&version=v2'));
+  assert.ok(search.some(record => record.current && record.url === 'docs.html?doc=character-aphorisms&version=v3'));
   console.log(`${engine}: aphorism reader, speaker links, source download, search, and Yulia portrait passed.`);
 }

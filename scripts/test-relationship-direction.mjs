@@ -45,6 +45,10 @@ export async function testRelationshipDirection(page, origin, engine) {
   await visit('docs.html?doc=character-intimacy-and-sexuality');
   assert.equal(await page.getByRole('heading', { name: 'Sherie and Felix: company worth missing', exact: true }).count(), 1);
   assert.ok((await page.locator('#document-reader').textContent()).includes('unresolved harmony'));
+  assert.ok((await page.locator('#document-reader').textContent()).includes('Sherie does not seek a formal relationship'));
+  assert.ok((await page.locator('#document-reader').textContent()).includes('Nothing happened'));
+  await visit('docs.html?doc=character-intimacy-and-sexuality&version=v18');
+  assert.equal(await page.getByRole('heading', { name: 'Sherie and Felix: the private game', exact: true }).count(), 0);
   await page.getByRole('combobox', { name: 'Choose version' }).selectOption('v17');
   await page.waitForURL('**/docs.html?doc=character-intimacy-and-sexuality&version=v17');
   await page.waitForLoadState('networkidle');

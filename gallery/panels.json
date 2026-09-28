@@ -136,7 +136,11 @@
         "thumbnail": "media/gallery/previews/panels/sherie-felix-unresolved-tension-r2-panel-7-thumbnail.webp"
       }
     ],
-    "revision": "r2"
+    "revision": "r2",
+    "sceneSummary": [
+      "Felix complains about Lynleit while holding a hand of cards. Opposite him, Sherie has made herself comfortable on the sofa. His attention slips from the complaint to the woman listening to it.",
+      "Sherie notices his pause and returning glance, then stays where she is. Their professional familiarity has become easy private company, but his attachment to Lynleit is still unresolved. This is an early card game, before their later private meanings have been established."
+    ]
   },
   {
     "id": "hiyu-yulia-university-days",
@@ -274,6 +278,10 @@
         "display": "media/gallery/previews/panels/hiyu-yulia-university-days-panel-7-display.webp",
         "thumbnail": "media/gallery/previews/panels/hiyu-yulia-university-days-panel-7-thumbnail.webp"
       }
+    ],
+    "sceneSummary": [
+      "Before the Spill, Hiyu and Yulia study criminology at the same university. He pursues personal investigations and unlikely explanations; she checks the evidence with meticulous attention to established methods.",
+      "The illustrations follow conversations across campus and work in study rooms. Their arguments become familiar company. The particular case behind the evidence marker is not identified."
     ]
   },
   {
@@ -365,6 +373,10 @@
         "display": "media/gallery/previews/panels/after-the-river-panel-4-display.webp",
         "thumbnail": "media/gallery/previews/panels/after-the-river-panel-4-thumbnail.webp"
       }
+    ],
+    "sceneSummary": [
+      "Lynleit and Kyrien have reached the quarantined park after the river attack. He has seen her stand on the water and keeps that knowledge to himself. She wants to discover how much he witnessed.",
+      "These panels continue along the wooded path: she questions him while his attention turns upward toward movement among the trees. The shape above them has not been identified. The linked Chapter provides the preceding escape and recovery."
     ]
   },
   {
@@ -507,6 +519,10 @@
         "display": "media/gallery/previews/panels/river-incident-r6-panel-7-display.webp",
         "thumbnail": "media/gallery/previews/panels/river-incident-r6-panel-7-thumbnail.webp"
       }
+    ],
+    "sceneSummary": [
+      "The covert inspection of apparently unmanned night shipments finds empty boats. Hands seize the officers from beneath the river and drag Lynleit underwater, tearing away her blue jacket. Her blue flame breaks their grip.",
+      "At the surface, the water supports her weight. A pale girl rises in a dress made from dead fish, her eyes sewn shut with fishing line. Kyrien watches from the quarantined bank as Lynleit backs toward land; she does not know he has seen her forbidden ability."
     ]
   },
   {
@@ -662,6 +678,10 @@
         "display": "media/gallery/previews/panels/cat-incident-panel-8-display.webp",
         "thumbnail": "media/gallery/previews/panels/cat-incident-panel-8-thumbnail.webp"
       }
+    ],
+    "sceneSummary": [
+      "Ash leads Lynleit through the family home and, in the illustrated chase, onto the roof as a storm approaches. Catching one grey cat proves less dignified than her public duties.",
+      "She eventually catches him but cannot bring herself to put him out in the rain. Ash stays. This happens early, while danger has begun outside and before her own life starts to collapse."
     ]
   },
   {
@@ -839,7 +859,11 @@
         "thumbnail": "media/gallery/previews/panels/a-meeting-beyond-authority-r3-panel-9-thumbnail.webp"
       }
     ],
-    "revision": "r3"
+    "revision": "r3",
+    "sceneSummary": [
+      "On a hill above Vilen, Sherie leads the unauthorized approach to Lynleit that she persuaded a reluctant Drake to attend. They seek selected MSF resources without surrendering his sensitive evidence.",
+      "Lynleit considers the request dangerous; Felix protests while Kyrien keeps his thoughts to himself. The panels show the table beside the gazebo and the surrounding wooded path. The agreement will lead to the covert inspection of night traffic on the river."
+    ]
   },
   {
     "id": "sleepers-above-the-river",
@@ -977,6 +1001,10 @@
         "display": "media/gallery/previews/panels/sleepers-above-the-river-r1-panel-7-display.webp",
         "thumbnail": "media/gallery/previews/panels/sleepers-above-the-river-r1-panel-7-thumbnail.webp"
       }
+    ],
+    "sceneSummary": [
+      "During an early morning walk in Vilen, Kyrien notices human figures hanging high above the river without visible supports. Their heads are lowered, their limbs loose. He looks for cables or a crane and finds neither.",
+      "He privately calls them Sleepers and takes a small motorboat downstream to see how far they extend. They neither attack nor communicate nor visibly react. He is still travelling when the scene ends."
     ]
   },
   {

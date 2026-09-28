@@ -63,7 +63,7 @@ Sherie eventually becomes unwilling to spend their private time accommodating hi
 
 ### Distance, danger, and the sound of her voice
 
-Make their ordinary company worth missing before using separation or a dangerous assignment to deepen their attachment. Felix's communications work makes her voice a particularly useful recurring detail. Establish its familiar variations through actual exchanges; professional listening does not let him diagnose every silence correctly. A delayed reply can then frighten him because he has grown accustomed to hearing from this person. The delay alone is not proof that she has been harmed.
+Make their ordinary company worth missing before using separation or a dangerous assignment to deepen the romance. Felix's communications work makes her voice a particularly useful recurring detail. Establish its familiar variations through actual exchanges; professional listening does not let him diagnose every silence correctly. A delayed reply can then frighten him because he has grown accustomed to hearing from this person. The delay alone is not proof that she has been harmed.
 
 After danger, an unfinished joke or a voluntary decision to stay can carry the feeling that neither can yet state. These are approved approaches for future scenes, not a new incident, assignment, rescue, or fixed separation. Keep the danger particular to its political or supernatural cause, following [Dread and Action Direction](../docs.html?doc=dread-and-action-direction). Their attachment must not replace the work that puts them at risk.
 
@@ -72,52 +72,6 @@ Let the possibility of losing Sherie, or losing Felix, make their closeness grav
 ### Musical direction
 
 Introduce a restrained recurring motif during their early ease. Return to it as the attachment deepens, with greater space, unresolved harmony, and emotional weight. Its later use should recall the company they have come to miss, particularly the familiar voice and interrupted exchange. Preserve room for playfulness rather than scoring every meeting as impending loss. This is a composition brief; no recording or named track is assigned to it.
-
-### Sherie and Felix: the private game
-
-**Author-confirmed direction, 28 September 2026.** Their intimacy develops as a private, deniable game. Sherie does not seek a formal relationship: naming one could complicate their reputations, loyalties, work and personal lives. Felix remains entangled with Lynleit through much of this period. Familiarity, trust and curiosity allow private closeness before either offers a declaration. This clarifies the earlier romantic framing without removing their affection, uneven recognition or capacity to hurt one another. Wanting to be seen clearly does not mean Sherie is asking to become his official partner.
-
-Her view of the risk is collected in [Character Aphorisms](../docs.html?doc=character-aphorisms#sherie): "When men and women play games, the prize is either cathartic or catastrophic. That is nature's whim." A joke or contest can acquire emotional, intimate or political stakes before either participant meant it to. The possibility fascinates her.
-
-Her aristocratic position, diplomatic work and concern for reputation leave little room for casual experience. Limited previous experience is a possibility, not a settled biography; do not explain her confidence by inventing a succession of lovers. She brings observation, emotional intelligence, improvisation, curiosity and carefully judged body language to unfamiliar circumstances. She notices changes in Felix's breath, posture, hesitation, gaze and ability to keep joking, then adjusts and remembers. What she learns is particular to Felix, not universal expertise.
-
-An early private encounter goes further than her teasing originally intended. She is genuinely surprised when his legs begin to tremble despite his effort to remain composed. The memory becomes a source of private pride and can return uninvited when she next sees him: "I could make him shake again." Keep the physical sequence off-page; the lasting discovery is how readily this particular man reveals her effect on him.
-
-> [WRITER: The source specifies the intimate sequence behind this discovery. Leave its mechanics off-page; preserve Sherie's surprise, Felix's unguarded response and her recurring memory when the encounter is drafted. Its placement is not yet fixed.]
-
-Confidence does not prevent practical mistakes. She may underestimate fatigue, awkward positioning, cleanup or the speed of an unexpected response; something elegant in her imagination may prove inconvenient. Her response is to learn and adjust rather than retreat into embarrassment. Keep those possibilities distinct from incidents already shown.
-
-She trusts Felix not to boast, claim her socially or use private knowledge as political leverage. That trust gives her room to be less civilized than her public role permits. He is not interchangeable with another discreet man: she likes his humor, resistance, familiarity and ability to surprise her. "I don't need Felix to belong to me. I need him to remain Felix."
-
-Afterward she can fix her hair and clothes, retrieve the cards and return to tomorrow's work. "Tea?" may arrive while Felix is still finding his bearings. Her ease in returning to companionship becomes part of what he likes about being with her. She need not demand a definition, reassurance or a solemn discussion after every encounter; her later disappointment and boundaries still matter when he fails to see her clearly.
-
-### What they say in company
-
-"We played cards" is an ordinary account that happens to be true. If Felix objects, Sherie can point out that cards were present. His fuller account would sound like boasting about an aristocratic woman; hers gives an outsider nothing unusual to repeat. She understands that asymmetry. Over time, the excuse becomes a language they share willingly, carrying memories outsiders cannot hear.
-
-| Phrase | Private meaning available to the pair |
-| --- | --- |
-| Cards | Private intimacy as well as the actual game. |
-| A rematch | An invitation to meet again. |
-| A new tactic | A new way of teasing him. |
-| You lost badly last time | A reminder of his lost composure. |
-| You need more practice | An invitation disguised as criticism. |
-| Shut me up | A challenge whose private meaning depends on the moment. |
-| Nothing happened | Their accumulating history of trust, embarrassment, pleasure, tenderness and shared secrets. |
-
-The author supplies these lines for later scenes; no listener or occasion is assigned:
-
-> "We only played cards. Felix is a dreadful loser. Though if he ever wants another round of that particular game to restore his honor, I might indulge him."
-
-Asked which game: "Oh, he knows."
-
-> "If you don't like what I say, then you'll simply have to find a way to shut me up."
-
-> "I only used one tactic on you in that game. It was effective. What makes you think I don't have several others?"
-
-"Nothing happened" begins as protection for Sherie's reputation and becomes a particularly affectionate shared joke. It need not accompany every encounter. Their work, disagreements, friendships and Felix's unresolved attachment to Lynleit continue outside it.
-
-If Sherie names what he gives her, "You're safe" carries more than a conventional declaration: she can become unguarded, trust his discretion and still be treated normally afterward. It does not make him flawless or remove the need for reciprocal care. This later private code is not already established in [Unresolved Tension](../moments.html?moment=unresolved-tension), whose cards remain an ordinary early game.
 
 ## Lynleit
 
@@ -341,7 +295,7 @@ Sherie enjoys attention, praise, teasing, and mischief even when she has no prof
 
 ### Sexual expression
 
-With Felix, her confident, playful lead carries into affection and adult intimacy. He enjoys challenging it, and she can enjoy an unexpected reversal. She learns his particular responses quickly while practical inexperience can still surprise her. The private-game direction above records an early discovery and later habits; their scenes and placement remain unwritten.
+With Felix, her confident, playful lead carries into affection and eventual adult intimacy. He enjoys challenging it, and she can enjoy an unexpected reversal. Humor and visible pleasure belong to their shared rhythm; no specific encounter or choreography has been established.
 
 ### With Felix and Kyrien
 

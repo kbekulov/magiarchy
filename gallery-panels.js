@@ -54,6 +54,8 @@
     let current = 0, timer, visible = false, busy = false, stopped = motion.matches;
     root.hidden = !record.panels.length;
     if (!record.panels.length) return;
+    const summary = $('#panel-scene-summary');
+    summary.replaceChildren(...(record.sceneSummary || [record.summary]).map(text => node('p', text)));
     // Only two display images are needed, regardless of the scene's length.
     const layers = [image(record.panels[0]), image(record.panels[0])];
     layers.forEach((img, index) => {

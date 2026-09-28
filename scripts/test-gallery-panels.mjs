@@ -144,6 +144,23 @@ export async function testGalleryPanels(page, origin, engine) {
     assert.ok(await page.locator('#panel-slideshow').isVisible());
     assert.equal(await page.locator('#panel-slide-toggle').textContent(), 'Play', 'Reduced motion starts paused');
     assert.equal(await page.locator('#panel-slideshow-stage img').count(), 2);
+    assert.deepEqual(await page.locator('#panel-scene-summary > p').allTextContents(), record.sceneSummary);
+    const stageBox = await page.locator('#panel-slideshow-stage').boundingBox();
+    const summaryBox = await page.locator('.panel-scene-summary').boundingBox();
+    assert.ok(summaryBox.height <= stageBox.height + 1, 'Scene text cannot grow taller than its image');
+    if (width > 700) assert.ok(summaryBox.x >= stageBox.x + stageBox.width - 1, 'Desktop summary sits beside the image');
+    else assert.ok(summaryBox.y >= stageBox.y + stageBox.height - 1, 'Phone summary stacks below the image');
+    await page.locator('.panel-scene-summary').focus();
+    assert.equal(await page.locator('.panel-scene-summary').evaluate(el => document.activeElement === el), true);
+    await page.locator('.panel-scene-summary').evaluate(el => {
+      const stress = document.createElement('p'); stress.id = 'summary-overflow-test';
+      stress.textContent = 'Long scene summary. '.repeat(500);
+      el.querySelector('#panel-scene-summary').append(stress); el.scrollTop = 100;
+    });
+    assert.ok(await page.locator('.panel-scene-summary').evaluate(el => el.scrollTop > 0), 'Long summaries remain scrollable');
+    assert.ok((await page.locator('.panel-scene-summary').boundingBox()).height <= stageBox.height + 1);
+    await page.locator('.panel-scene-summary').evaluate(el => { el.querySelector('#summary-overflow-test').remove(); el.scrollTop = 0; });
+    await page.locator('#panel-slideshow').screenshot({ path: `test-results/${engine}-panel-summary-${width}.png` });
     await page.locator('#panel-slide-next').click();
     await page.waitForFunction(() => document.querySelector('#panel-slideshow').dataset.index === '1');
     assert.equal(await page.locator('#panel-slide-caption').getAttribute('href'), `#${record.panels[1].id}`);

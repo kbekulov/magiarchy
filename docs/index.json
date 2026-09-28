@@ -3,13 +3,13 @@
     "slug": "character-aphorisms",
     "title": "Character Aphorisms",
     "topic": "Writer's Dialogue Collection",
-    "description": "Sherie's two sayings in the author's exact wording, with their scene placements still open.",
+    "description": "Sherie's corrected saying: either cathartic or catastrophic; unplaced dialogue.",
     "file": "character-aphorisms.md",
-    "updated": "2026-09-26",
+    "updated": "2026-09-28",
     "speakers": [
       "Sherie"
     ],
-    "defaultVersion": "v2",
+    "defaultVersion": "v3",
     "versions": [
       {
         "id": "v1",
@@ -20,10 +20,17 @@
       },
       {
         "id": "v2",
-        "label": "v2 · Current",
-        "file": "character-aphorisms.md",
+        "label": "v2 · Archived",
+        "file": "character-aphorisms-v2.md",
         "updated": "2026-09-26",
         "description": "Sherie's two sayings in the author's exact wording, with their scene placements still open."
+      },
+      {
+        "id": "v3",
+        "label": "v3 · Current",
+        "file": "character-aphorisms.md",
+        "updated": "2026-09-28",
+        "description": "Sherie's corrected saying: either cathartic or catastrophic; unplaced dialogue."
       }
     ]
   },
@@ -445,12 +452,12 @@
     "title": "Events, Witnesses, and Reveals",
     "topic": "Reader Knowledge",
     "file": "reader-knowledge.md",
-    "updated": "2026-09-23",
-    "description": "Event periods, reader evidence, and character knowledge, including fog without new knowledge of its source.",
+    "updated": "2026-09-28",
+    "description": "Event periods, reader evidence and character knowledge, including Sherie and Felix's later private language.",
     "speakers": [
       "Author's Desk"
     ],
-    "defaultVersion": "v5",
+    "defaultVersion": "v6",
     "versions": [
       {
         "id": "v1",
@@ -482,10 +489,17 @@
       },
       {
         "id": "v5",
-        "label": "v5 · Current",
-        "file": "reader-knowledge.md",
+        "label": "v5 · Archived",
+        "file": "reader-knowledge-v5.md",
         "updated": "2026-09-23",
         "description": "Event periods, reader evidence, and character knowledge, including fog without new knowledge of its source."
+      },
+      {
+        "id": "v6",
+        "label": "v6 · Current",
+        "file": "reader-knowledge.md",
+        "updated": "2026-09-28",
+        "description": "Event periods, reader evidence and character knowledge, including Sherie and Felix's later private language."
       }
     ]
   },
@@ -718,12 +732,12 @@
     "title": "Character Intimacy and Sexuality Reference",
     "topic": "Writer's Character Reference",
     "file": "character-intimacy-and-sexuality.md",
-    "updated": "2026-09-26",
-    "description": "Sherie and Felix: familiar company, uneven recognition, divided duties, separation, and musical direction.",
+    "updated": "2026-09-28",
+    "description": "Sherie and Felix's private game, discretion, partner-specific learning and shared language alongside their work and uneven attachment.",
     "speakers": [
       "Character Archive"
     ],
-    "defaultVersion": "v18",
+    "defaultVersion": "v19",
     "versions": [
       {
         "id": "v1",
@@ -863,10 +877,18 @@
       },
       {
         "id": "v18",
-        "label": "v18 · Current",
-        "file": "character-intimacy-and-sexuality.md",
+        "label": "v18 · Archived",
+        "file": "character-intimacy-and-sexuality-v18.md",
         "updated": "2026-09-26",
         "description": "Sherie and Felix: familiar company, uneven recognition, divided duties, separation, and musical direction.",
+        "tensionFile": "sexual-tension-notes-v18.json"
+      },
+      {
+        "id": "v19",
+        "label": "v19 · Current",
+        "file": "character-intimacy-and-sexuality.md",
+        "updated": "2026-09-28",
+        "description": "Sherie and Felix's private game, discretion, partner-specific learning and shared language alongside their work and uneven attachment.",
         "tensionFile": "sexual-tension-notes.json"
       }
     ]

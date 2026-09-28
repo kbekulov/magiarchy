@@ -110,16 +110,6 @@ This writer reference separates what happens from what a character knows and wha
 
 **Source:** [Narvean fog](../duchy.html#fog), [river Chapter](../story.html?chapter=the-empty-boats-beneath-the-bridge&version=v3), [park outline](../story.html?chapter=ash-under-glass&version=v2).
 
-## Sherie and Felix's private language
-
-**Event period:** Their private intimacy and shared code develop after professional familiarity. The early discovery encounter, later habits and Sherie's boundary concerning Lynleit have no fixed sequence or phase yet.
-
-**Reader:** Unresolved Tension v1 shows an ordinary card game and distracted attention. It does not establish their later private meanings. The Intimacy Reference records the confirmed direction, including an undrafted encounter; it is not additional evidence inside the Moment.
-
-**Characters:** As the code develops, Sherie and Felix understand what cards, rematches and "nothing happened" can mean between them. Other people hear plausible ordinary conversation; no particular outsider's discovery is established. Sherie's wish for discretion does not establish an official partnership, and Felix's attachment to Lynleit persists through much of this period.
-
-**Source:** [Private game direction](../docs.html?doc=character-intimacy-and-sexuality#sherie-and-felix-the-private-game), [early card game](../moments.html?moment=unresolved-tension&version=v1).
-
 ## Table evidence checks
 
 - **Shown or stated:** The selected Chapter or Moment prose delivers the fact, including an explicit narrator explanation. A fact can be author-confirmed without belonging in this category yet.

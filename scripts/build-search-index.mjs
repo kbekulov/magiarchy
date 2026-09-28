@@ -363,7 +363,7 @@ for (const match of readText('gallery.html').matchAll(/<figure\b([^>]*\bclass="g
 }
 addEntry({ id: 'gallery-panels', title: 'Panels', type: 'Gallery collection', url: 'gallery.html?collection=panels', text: 'Illustrated scenes, sequential panels and sketches linked to their Moments and Chapters.' });
 for (const record of readJson('gallery/panels.json')) {
-  addEntry({ id: `panels-${record.id}`, title: record.title, type: 'Scene panels', url: `gallery.html?panels=${encodeURIComponent(record.id)}`, subtitle: `${record.medium} · ${record.panels.length} images`, text: flatten([record.summary, record.characters, record.panels.map(panel => [panel.label, panel.title, panel.alt])]) });
+  addEntry({ id: `panels-${record.id}`, title: record.title, type: 'Scene panels', url: `gallery.html?panels=${encodeURIComponent(record.id)}`, subtitle: `${record.medium} · ${record.panels.length} images`, text: flatten([record.summary, record.sceneSummary, record.characters, record.panels.map(panel => [panel.label, panel.title, panel.alt])]) });
 }
 addEntry({ id: 'gallery-production', title: 'Production resources', type: 'Gallery collection', url: 'gallery.html?collection=production', text: 'Character reference sheets, T-poses, turnarounds, development sketches, and downloadable 3D models for animation and modelling.' });
 for (const record of readJson('gallery/resources.json')) {

@@ -23,6 +23,7 @@ export function validatePanels(root, records, { built = true } = {}) {
     assert.ok(Array.isArray(record.characters), `${record.id}: characters required`);
     for (const name of record.characters) assert.ok(characters.includes(`slug: '${name}'`), `${record.id}: unknown character ${name}`);
     if (record.hScene !== undefined) assert.equal(typeof record.hScene, 'boolean', `${record.id}: invalid H scene flag`);
+    if (record.sceneSummary !== undefined) assert.ok(Array.isArray(record.sceneSummary) && record.sceneSummary.length && record.sceneSummary.every(text => typeof text === 'string' && text.trim()), `${record.id}: scene summary must contain text paragraphs`);
     if (record.placeholder === true) {
       assert.equal(record.panels.length, 0, `${record.id}: placeholder cannot contain artwork`);
       assert.equal(record.beats.length, 0, `${record.id}: placeholder cannot invent beats`);

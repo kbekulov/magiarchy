@@ -8,6 +8,8 @@ Story, character, world, relationship, institution, location, and event question
 
 | Area | Question | Confidence |
 | --- | --- | --- |
+| Sherie and Felix: private game | When does the early private encounter that surprises Sherie occur, and how does their later coded language develop relative to Felix's attachment to Lynleit and Sherie's boundaries? The relationship direction is established, but its scenes and placement are not. | 0% |
+| Sherie: earlier experience | How much serious intimate experience does Sherie have before Felix? Limited experience is a possibility; her confidence and rapid learning do not establish a history of lovers. | 0% |
 | Darkness | What occurs in the Felix and Sherie H Scene titled [Darkness](../gallery.html?panels=darkness), and where does it belong? The title and pairing are supplied, but no scene, images, or chronology have been established. | 0% |
 | University days | What case, if any, connects the [pre-Spill university panels](../gallery.html?panels=hiyu-yulia-university-days), why are Hiyu and Yulia at the evidence marker, and what interrupts their earlier conversation? Their university studies are established; a specific case and police role are not. | 0% |
 | After the river | What is the moving shape above the path in [After the River](../gallery.html?panels=after-the-river), and does this illustrated continuation belong in a later revision of the river Chapter? The annotation wondering about the drowned girl does not establish a connection. | 0% |

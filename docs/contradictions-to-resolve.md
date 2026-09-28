@@ -16,6 +16,8 @@ Doom Has an Address v7 supplies current shared canon. The Bench under the Lamp u
 
 ## Decision history
 
+On 28 September 2026, the private-game direction clarified Sherie and Felix's earlier romantic framing. Their affection and uneven attachment remain, but Sherie does not seek a formal partnership. Current profiles, Intimacy Reference v19 and the live tension registry follow this clarification. The ordinary early card-game Moment is unchanged; their later code is not evidence already shown in that scene.
+
 On 27 September 2026, the revised Unresolved Tension panels put the sofa view third and omit the line about unresolved tension. This removes the earlier conflicting dialogue order. The written Moment stays at v1; the earlier dialogue-bearing illustration is available in Sherie's sofa artwork stack.
 
 On 23 September 2026, the author selected the motorboat depicted in the new Sleepers panels for the written scene. Sleepers above the River v2 replaces rowing with an outboard motor; v1 preserves the rowing draft. The seven-panel sequence links to v2. The passive figures, unknown chronology, and unfinished downstream journey remain unchanged.

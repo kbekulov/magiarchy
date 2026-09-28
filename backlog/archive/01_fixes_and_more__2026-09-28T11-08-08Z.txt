@@ -1,0 +1,54 @@
+
+1. Aphorisms fixes:
+There is a semantic error in the aphorism where it says "either catastrophic and cathartic" it should be "or" and not "and". Also for easier flow of the sentence, lets switch the words places to "either cathartic or catastrophic"
+
+2. Improved Panels functionality.
+In panels section, once we go inside a panel, we see all the story beats as a slideshow, and then as separate individual images listed below.
+I'd suggest dividing the slideshow area into 2 halves, on the left can be the slideshow itself, but on the right can be a short summary of the scene written in text.
+Of course do it in a tasteful manner that fits the UI/UX/design language of the site overall. And the text half should not over-extend beyond the height of the slideshow, regardless of amount of text present. You can probably solve that in elegant ways so I will leave it up to you. As for content of the text, you should summarize the scene by collecting relevant information from all over the site, and if something is unclear to you about the scene still, you can ask me about it and I'll provide clarification.
+
+3. Improved Felix vs. Sherie dynamic (including intimacy). Below is a full partially explicit explanation of their dynamic. You don't need to integrate it into various parts of the site in a word-for-word manner, but you need to preserve the elegance and nuances of all facts below, while any mention of sexual acts should become implied rather than directly stated.
+
+Sherie and Felix’s intimacy in the story is a private, deniable game rather than a conventional romance. Sherie does not seek to establish a formal relationship with Felix, and she understands that attempting to do so could complicate both of their lives, reputations, loyalties, and professional positions. Felix also remains psychologically entangled with Lynleit for much of this period. Their connection should therefore develop through playful familiarity, mutual trust, sexual curiosity, and an increasingly sophisticated private code rather than declarations of commitment.
+Sherie’s underlying philosophy is captured by the line:
+“When men and women play games, the prize is either cathartic or catastrophic. That is nature’s whim.”
+Treat this as an important statement about how Sherie understands attraction. Men and women can begin by joking, competing, testing boundaries, or provoking one another, only for the stakes to suddenly become emotional, sexual, political, or personally dangerous. Sherie is aware of this danger and finds it fascinating rather than frightening.
+Sherie’s aristocratic position, diplomatic training, professional workload, and concern for reputation leave her little realistic opportunity for casual sexual experience. She may therefore have surprisingly little serious sexual history before Felix. Her confidence should not be explained through a hidden succession of lovers. Instead, her sexual effectiveness comes from transferable traits she already possesses: exceptional observation, emotional intelligence, fast adaptation, confidence, curiosity, improvisation, controlled body language, social teasing, and an ability to notice tiny involuntary reactions.
+Sherie is especially good at reading Felix. His breathing, posture, muscle tension, eye movement, hesitation, loss of humor, and other involuntary reactions tell her what works. She learns extremely quickly and develops partner-specific mastery. Her apparent sexual expertise is therefore largely Felix-specific. She does something, observes his response, adjusts, remembers, and rarely makes the same mistake twice.
+A pivotal early discovery occurs during an “elegant” blowjob that begins as playful teasing and goes much farther than Sherie originally intended. As she repeatedly edges Felix toward climax, his thighs begin visibly and uncontrollably trembling. This genuinely surprises her. She realizes that she can affect him so deeply that his body loses the ability to conceal his arousal even while his mind tries to remain composed. The discovery gives her enormous private pride and becomes psychologically sticky. From that point onward, seeing Felix can trigger intrusive memories of his trembling thighs and the thought: I could make him shake again.
+Sherie should remain inexperienced in ways that preserve realism. She may initially underestimate fatigue, cleanup, awkward positioning, the physical unpredictability of sex, or how quickly Felix approaches orgasm. She may occasionally choose something impractical because it looked elegant in her imagination. The important trait is that she adapts immediately rather than becoming timid. Her psychology is closer to: “I don’t know how this works yet. Let me find out.”
+Felix becomes important to Sherie because he is one of the few men around whom she can safely stop being entirely civilized. She already likes him, trusts him, enjoys provoking him, and believes he will not weaponize sexual access to her, boast about it, socially claim her, or turn private intimacy into political leverage. This trust matters at least as much as attraction.
+Sherie can therefore use Felix as a safe outlet for sensual and sexual needs that her public life gives her almost no opportunity to express. However, Felix must never feel interchangeable with any sufficiently discreet man. He is “convenient” precisely because Sherie already enjoys him as a person. She likes his humor, resistance, familiarity, reactions, and ability to surprise her.
+Sherie’s implicit attitude toward him can be summarized as:
+“I don’t need Felix to belong to me. I need him to remain Felix.”
+After intimacy, Sherie should normalize almost immediately. She repairs her hair and clothes, retrieves the cards, drinks tea, discusses tomorrow’s work, and behaves as though nothing unusual happened. This is partly reputation management and partly temperament. She does not automatically demand relationship definitions, confessions, reassurance, or solemn emotional processing after sex. She can allow intimacy to exist without immediately converting it into a formal romantic arrangement.
+This post-sex normalization should become part of Felix’s attraction to her. Sherie can be intensely sexual in private and then return to ordinary companionship within minutes. The transition can be almost absurd:
+“Tea?”
+Felix may still be mentally processing what happened while Sherie is already discussing tomorrow’s meeting.
+Publicly, Sherie maintains strict deniability. If asked what she and Felix did, the answer is:
+“We played cards.”
+If Felix objects, Sherie can calmly point out that there were, in fact, cards present. His version of events sounds like a man bragging about an aristocratic woman. Hers sounds completely ordinary. Sherie understands the asymmetry and uses it.
+Over time, this deniability becomes their shared intimacy language rather than merely reputation protection. Ordinary phrases acquire private meanings known only to them:
+“Cards” can imply sex or private intimacy.
+“A rematch” can mean another encounter.
+“A new tactic” can mean Sherie has imagined a new way to tease him.
+“You lost badly last time” can reference Felix losing composure.
+“You need more practice” can function as an invitation.
+“Shut me up” can carry a private sexual implication.
+“Nothing happened” becomes their most important euphemism.
+This allows them to have conversations in completely respectable company that are obscene only to the two of them.
+Example:
+Sherie, publicly: “We only played cards. Felix is a dreadful loser. Though if he ever wants another round of that particular game to restore his honor, I might indulge him.”
+If someone asks what game she means:
+“Oh, he knows.”
+Sherie should also use coded lines such as:
+“If you don’t like what I say, then you’ll simply have to find a way to shut me up.”
+“I only used one tactic on you in that game. It was effective. What makes you think I don’t have several others?”
+These lines should remain plausibly innocent to outsiders while being unmistakable to Felix.
+The irony is that a mechanism originally created to protect Sherie’s reputation gradually becomes one of the most intimate things between them. Saying “nothing happened” eventually carries an entire private history of trust, sex, jokes, embarrassment, tenderness, and shared secrets.
+Publicly, nothing happened.
+Privately, “nothing happened” becomes one of the dirtiest, funniest, and eventually most affectionate jokes they share.
+Preserve the wider relationship beyond sex. Their intimacy should reveal character rather than replace plot, work, politics, friendships, Felix’s unresolved feelings toward Lynleit, or Sherie’s diplomatic ambitions. Sex gives Sherie a private space where she can stop performing aristocratic control. Felix becomes valuable because he can witness that hidden side of her and still treat her normally afterward.
+If Sherie ever articulates what Felix means to her, avoid conventional romantic language. A much more consequential statement from her would be:
+“You’re safe.”
+For Sherie, this means: I can lose control around you. I can be indecent around you. I can trust you with the version of me nobody else is allowed to see. I can tell the world nothing happened and trust you to understand why.

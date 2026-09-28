@@ -4,7 +4,7 @@
     "chapters": 8,
     "moments": 28,
     "characters": 18,
-    "questions": 134,
+    "questions": 136,
     "contradictions": 0
   },
   "tasks": [
@@ -1021,7 +1021,7 @@
     {
       "id": "quote-catastrophe-and-catharsis",
       "title": "Sherie",
-      "text": "\"When males and females play games, the prize is either catastrophic and cathartic. That is nature's whim.\"",
+      "text": "\"When men and women play games, the prize is either cathartic or catastrophic. That is nature's whim.\"",
       "meta": "Unplaced dialogue",
       "quote": true,
       "href": "docs.html?doc=character-aphorisms#catastrophe-and-catharsis"
@@ -1036,6 +1036,24 @@
     }
   ],
   "questions": [
+    {
+      "id": "question-when-does-the-early-private-encounter-that-surprises-sherie-occur-and-how-does-their-later-coded",
+      "title": "Sherie and Felix: private game",
+      "text": "When does the early private encounter that surprises Sherie occur, and how does their later coded language develop relative to Felix's attachment to Lynleit and Sherie's boundaries? The relationship direction is established, but its scenes and placement are not.",
+      "confidence": 0,
+      "meta": "0% answered",
+      "section": "Current questions",
+      "href": "docs.html?doc=questions-to-be-answered#question-when-does-the-early-private-encounter-that-surprises-sherie-occur-and-how-does-their-later-coded"
+    },
+    {
+      "id": "question-how-much-serious-intimate-experience-does-sherie-have-before-felix-limited-experience-is-a-possi",
+      "title": "Sherie: earlier experience",
+      "text": "How much serious intimate experience does Sherie have before Felix? Limited experience is a possibility; her confidence and rapid learning do not establish a history of lovers.",
+      "confidence": 0,
+      "meta": "0% answered",
+      "section": "Current questions",
+      "href": "docs.html?doc=questions-to-be-answered#question-how-much-serious-intimate-experience-does-sherie-have-before-felix-limited-experience-is-a-possi"
+    },
     {
       "id": "question-what-occurs-in-the-felix-and-sherie-h-scene-titled-darkness-gallery-html-panels-darkness-and-whe",
       "title": "Darkness",
