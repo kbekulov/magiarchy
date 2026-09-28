@@ -9,11 +9,11 @@ const data = buildDashboard(root);
 
 test('visual overview uses current public panels and traceable theme weights', () => {
   const sets = JSON.parse(fs.readFileSync(new URL('../gallery/panels.json', import.meta.url)));
-  assert.equal(data.panels.length, sets.filter(s => !s.hScene && !s.placeholder).reduce((n, s) => n + s.panels.length, 0));
+  assert.equal(data.panels.length, sets.filter(s => !s.hScene && !s.placeholder && !s.nonCanon).reduce((n, s) => n + s.panels.length, 0));
   for (const panel of data.panels) {
     assert.ok(fs.existsSync(new URL(`../${panel.src}`, import.meta.url)));
     const set = sets.find(s => s.id === panel.set);
-    assert.ok(!set.hScene && !set.placeholder);
+    assert.ok(!set.hScene && !set.placeholder && !set.nonCanon);
     assert.ok(set.panels.some(p => panel.href.endsWith(`#${p.id}`) && p.display === panel.src));
   }
   assert.deepEqual(data.genreGroups.flatMap(g => g.members).sort(), data.themes.map(t => t.name).sort());

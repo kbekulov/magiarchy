@@ -23,6 +23,14 @@ export function validatePanels(root, records, { built = true } = {}) {
     assert.ok(Array.isArray(record.characters), `${record.id}: characters required`);
     for (const name of record.characters) assert.ok(characters.includes(`slug: '${name}'`), `${record.id}: unknown character ${name}`);
     if (record.hScene !== undefined) assert.equal(typeof record.hScene, 'boolean', `${record.id}: invalid H scene flag`);
+    if (record.nonCanon !== undefined) assert.equal(typeof record.nonCanon, 'boolean', `${record.id}: invalid non-canon flag`);
+    if (record.nonCanon) {
+      assert.ok(!record.moment && !record.chapter, `${record.id}: non-canon studies cannot attach to story evidence`);
+      assert.ok(typeof record.contextDoc === 'string' && JSON.parse(fs.readFileSync(path.join(root, 'docs/index.json'), 'utf8')).some(doc => doc.slug === record.contextDoc), `${record.id}: non-canon studies need a registered context document`);
+    }
+    if (record.mascots !== undefined) {
+      assert.ok(record.nonCanon && Array.isArray(record.mascots) && record.mascots.every(name => name === 'anima'), `${record.id}: unsupported mascot association`);
+    }
     if (record.sceneSummary !== undefined) assert.ok(Array.isArray(record.sceneSummary) && record.sceneSummary.length && record.sceneSummary.every(text => typeof text === 'string' && text.trim()), `${record.id}: scene summary must contain text paragraphs`);
     if (record.placeholder === true) {
       assert.equal(record.panels.length, 0, `${record.id}: placeholder cannot contain artwork`);
@@ -30,7 +38,7 @@ export function validatePanels(root, records, { built = true } = {}) {
       assert.ok(!record.moment && !record.chapter && !record.cover, `${record.id}: placeholder cannot imply a completed scene`);
       continue;
     }
-    assert.ok(record.moment || record.chapter, `${record.id}: a scene connection is required`);
+    assert.ok(record.moment || record.chapter || record.nonCanon, `${record.id}: a scene connection is required`);
     for (const kind of ['moment', 'chapter']) {
       if (!record[kind]) continue;
       const scene = indexes[kind].find(item => item.slug === record[kind].slug);

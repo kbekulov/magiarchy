@@ -73,6 +73,12 @@ Let the possibility of losing Sherie, or losing Felix, make their closeness grav
 
 Introduce a restrained recurring motif during their early ease. Return to it as the attachment deepens, with greater space, unresolved harmony, and emotional weight. Its later use should recall the company they have come to miss, particularly the familiar voice and interrupted exchange. Preserve room for playfulness rather than scoring every meeting as impending loss. This is a composition brief; no recording or named track is assigned to it.
 
+### Sherie's personal reckoning
+
+[Sherie: Kyrie Eleison](../docs.html?doc=sherie-kyrie-eleison) records a wider personal arc: her repeated use of charm and desire as leverage eventually leads to a catastrophic game, a serious cost and the possibility of salvation. The chosen events are still open. This is consequence for her manipulative choices, not punishment for sexuality or a reclassification of every affectionate exchange as exploitation.
+
+Keep Felix's particular importance and her trust in him. He is not yet assigned as victim, cause or rescuer in this reckoning. Their private play and his continuing attachment to Lynleit must keep their existing emotional weight. Kyrie Eleison is her personal soundtrack theme, separate from the unassigned relationship motif above. She is not a Magus; nothing in her intimacy gives her premature knowledge of magic.
+
 ### Sherie and Felix: the private game
 
 **Author-confirmed direction, 28 September 2026.** Their intimacy develops as a private, deniable game. Sherie does not seek a formal relationship: naming one could complicate their reputations, loyalties, work and personal lives. Felix remains entangled with Lynleit through much of this period. Familiarity, trust and curiosity allow private closeness before either offers a declaration. This clarifies the earlier romantic framing without removing their affection, uneven recognition or capacity to hurt one another. Wanting to be seen clearly does not mean Sherie is asking to become his official partner.

@@ -1,5 +1,183 @@
 [
   {
+    "id": "anima-meets-female-cast",
+    "title": "Anima Meets the Female Cast",
+    "summary": "A non-canon dream collection with Anima, Lynleit, Sherie and Yulia: tea, gossip and the strings behind their shadows.",
+    "medium": "Colored sketches",
+    "nonCanon": true,
+    "contextDoc": "thematic-direction",
+    "characters": [
+      "lynleit",
+      "sherie",
+      "yulia"
+    ],
+    "mascots": [
+      "anima"
+    ],
+    "cover": "panel-1",
+    "beats": [
+      {
+        "id": "study-1",
+        "title": "Felix was looking"
+      },
+      {
+        "id": "study-2",
+        "title": "A whisper about Kyrien"
+      },
+      {
+        "id": "study-3",
+        "title": "Felix was looking: painted study"
+      },
+      {
+        "id": "study-4",
+        "title": "You noticed that too"
+      },
+      {
+        "id": "study-5",
+        "title": "I meant to leave"
+      },
+      {
+        "id": "study-6",
+        "title": "Who poured mine?"
+      },
+      {
+        "id": "study-7",
+        "title": "The reflection answers first"
+      },
+      {
+        "id": "study-8",
+        "title": "A way out"
+      },
+      {
+        "id": "study-9",
+        "title": "The reflection: painted study"
+      }
+    ],
+    "panels": [
+      {
+        "id": "panel-1",
+        "beat": "study-1",
+        "label": "Study 1",
+        "title": "Felix was looking",
+        "src": "media/gallery/panels/anima-meets-female-cast/anima-meets-female-cast-panel-1-felix-was-looking.png",
+        "alt": "Sherie, Anima, Lynleit and Yulia share tea beneath puppet-like shadows. Sherie says, \"Felix was looking.\" Lynleit replies, \"He usually is.\" Yulia asks, \"Can we discuss something else?\"",
+        "width": 1536,
+        "height": 1024,
+        "bytes": 3286862,
+        "display": "media/gallery/previews/panels/anima-meets-female-cast-panel-1-display.webp",
+        "thumbnail": "media/gallery/previews/panels/anima-meets-female-cast-panel-1-thumbnail.webp"
+      },
+      {
+        "id": "panel-2",
+        "beat": "study-2",
+        "label": "Study 2",
+        "title": "A whisper about Kyrien",
+        "src": "media/gallery/panels/anima-meets-female-cast/anima-meets-female-cast-panel-2-a-whisper-about-kyrien.png",
+        "alt": "Anima whispers beside Sherie while Lynleit holds a letter and Yulia holds a notebook. Sherie asks, \"And what did Kyrien say?\" Lynleit answers, \"Very little.\" Yulia says, \"That sounds pleasant.\" Their shadows hang from Anima's strings.",
+        "width": 1536,
+        "height": 1024,
+        "bytes": 3176061,
+        "display": "media/gallery/previews/panels/anima-meets-female-cast-panel-2-display.webp",
+        "thumbnail": "media/gallery/previews/panels/anima-meets-female-cast-panel-2-thumbnail.webp"
+      },
+      {
+        "id": "panel-3",
+        "beat": "study-3",
+        "label": "Study 3",
+        "title": "Felix was looking: painted study",
+        "src": "media/gallery/panels/anima-meets-female-cast/anima-meets-female-cast-panel-3-felix-was-looking-painted.png",
+        "alt": "A painted treatment of the tea-table composition: Sherie says, \"Felix was looking,\" Lynleit replies, \"He usually is,\" and Yulia asks to discuss something else. Anima sits between Sherie and Lynleit beneath a puppeteer's shadow.",
+        "width": 1536,
+        "height": 1024,
+        "bytes": 2736237,
+        "display": "media/gallery/previews/panels/anima-meets-female-cast-panel-3-display.webp",
+        "thumbnail": "media/gallery/previews/panels/anima-meets-female-cast-panel-3-thumbnail.webp"
+      },
+      {
+        "id": "panel-4",
+        "beat": "study-4",
+        "label": "Study 4",
+        "title": "You noticed that too",
+        "src": "media/gallery/panels/anima-meets-female-cast/anima-meets-female-cast-panel-4-you-noticed-that-too.png",
+        "alt": "By a moonlit window, Sherie holds cards beside Anima and asks, \"You noticed that too?\" Lynleit holds a teacup and replies, \"Unfortunately.\" Yulia watches with her notebook; puppet shadows cover the wall.",
+        "width": 1374,
+        "height": 1145,
+        "bytes": 2497435,
+        "display": "media/gallery/previews/panels/anima-meets-female-cast-panel-4-display.webp",
+        "thumbnail": "media/gallery/previews/panels/anima-meets-female-cast-panel-4-thumbnail.webp"
+      },
+      {
+        "id": "panel-5",
+        "beat": "study-5",
+        "label": "Study 5",
+        "title": "I meant to leave",
+        "src": "media/gallery/panels/anima-meets-female-cast/anima-meets-female-cast-panel-5-i-meant-to-leave.png",
+        "alt": "Lynleit tells Anima, \"You are enjoying this.\" Anima answers, \"Very much.\" Sherie smiles behind a card while Yulia says, \"I meant to leave.\" Their shadows suggest strings held by Anima.",
+        "width": 1374,
+        "height": 1145,
+        "bytes": 2469139,
+        "display": "media/gallery/previews/panels/anima-meets-female-cast-panel-5-display.webp",
+        "thumbnail": "media/gallery/previews/panels/anima-meets-female-cast-panel-5-thumbnail.webp"
+      },
+      {
+        "id": "panel-6",
+        "beat": "study-6",
+        "label": "Study 6",
+        "title": "Who poured mine?",
+        "src": "media/gallery/panels/anima-meets-female-cast/anima-meets-female-cast-panel-6-who-poured-mine.png",
+        "alt": "Anima holds fine threads over the tea service. Sherie says, \"Felix does listen. Occasionally.\" Lynleit replies, \"To himself.\" Yulia studies her cup and asks, \"Who poured mine?\"",
+        "width": 1536,
+        "height": 1024,
+        "bytes": 3466791,
+        "display": "media/gallery/previews/panels/anima-meets-female-cast-panel-6-display.webp",
+        "thumbnail": "media/gallery/previews/panels/anima-meets-female-cast-panel-6-thumbnail.webp"
+      },
+      {
+        "id": "panel-7",
+        "beat": "study-7",
+        "label": "Study 7",
+        "title": "The reflection answers first",
+        "src": "media/gallery/panels/anima-meets-female-cast/anima-meets-female-cast-panel-7-the-reflection-answers-first.png",
+        "alt": "The four women sit beside a mirror whose reflected expressions differ. Sherie says, \"You'd still go after him.\" Yulia says, \"Hiyu could try thinking before he goes.\" Her reflection replies, \"Someone has to.\" The sketch is labelled The Reflection Answers First.",
+        "width": 1536,
+        "height": 1024,
+        "bytes": 3340176,
+        "display": "media/gallery/previews/panels/anima-meets-female-cast-panel-7-display.webp",
+        "thumbnail": "media/gallery/previews/panels/anima-meets-female-cast-panel-7-thumbnail.webp"
+      },
+      {
+        "id": "panel-8",
+        "beat": "study-8",
+        "label": "Study 8",
+        "title": "A way out",
+        "src": "media/gallery/panels/anima-meets-female-cast/anima-meets-female-cast-panel-8-a-way-out.png",
+        "alt": "Lynleit points to papers spread beneath tea and books, saying, \"He needs a way out.\" Sherie asks, \"Which one?\" Lynleit replies, \"That isn't funny.\" Anima touches a cup while Yulia watches.",
+        "width": 1536,
+        "height": 1024,
+        "bytes": 3499032,
+        "display": "media/gallery/previews/panels/anima-meets-female-cast-panel-8-display.webp",
+        "thumbnail": "media/gallery/previews/panels/anima-meets-female-cast-panel-8-thumbnail.webp"
+      },
+      {
+        "id": "panel-9",
+        "beat": "study-9",
+        "label": "Study 9",
+        "title": "The reflection: painted study",
+        "src": "media/gallery/panels/anima-meets-female-cast/anima-meets-female-cast-panel-9-the-reflection-painted.png",
+        "alt": "A painted treatment of the sofa and mirror scene. Sherie says, \"You'd still go after him.\" Yulia says, \"Hiyu could try thinking before he goes,\" while her smiling reflection answers, \"Someone has to.\" Anima sits beside Lynleit.",
+        "width": 1536,
+        "height": 1024,
+        "bytes": 2981612,
+        "display": "media/gallery/previews/panels/anima-meets-female-cast-panel-9-display.webp",
+        "thumbnail": "media/gallery/previews/panels/anima-meets-female-cast-panel-9-thumbnail.webp"
+      }
+    ],
+    "sceneSummary": [
+      "Anima, unofficially nicknamed Inanna, entertains Lynleit, Sherie and Yulia in a room where gossip has a second life on the walls. Their shadows hang from strings; a reflection answers before its owner; a cup of tea arrives without an obvious hand pouring it.",
+      "These non-canon studies explore Anima's collective-unconscious influence and control over the female cast. They belong to a symbolic dream space, not to the story's chronology or an established magical mechanism. The supplied dialogue and changes of treatment remain part of the artwork."
+    ]
+  },
+  {
     "id": "sherie-felix-unresolved-tension",
     "title": "Unresolved Tension",
     "summary": "A card game, Felix's complaint about Lynleit, and Sherie's distracting attention from the sofa.",

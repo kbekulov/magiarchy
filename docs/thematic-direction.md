@@ -1,6 +1,6 @@
 # Thematic Direction
 
-Author-approved creative direction, updated 21 September 2026. This reference governs future writing and design; it adds no scenes, rituals, powers, or historical events.
+Author-approved creative direction, updated 28 September 2026. This reference governs future writing and design; it adds no scenes, rituals, powers, or historical events.
 
 ## Several forces in one life
 
@@ -16,11 +16,23 @@ Mysticism, magic, horror, war, sex, politics, espionage, murder, beauty, sacred 
 
 The [Cult of Inanna](../magiarchy.html#cult-of-inanna) remains one relatively small strand of explicit lore within a much larger Magi world. Its association with Fionn's lineage and Lynleit's indirect connection are confirmed. It does not explain all magic, female characters, attraction, politics, or the world's visual language. Keep unestablished practices, obligations, and covenants open. Mikhail's mock honorific is neither a rank nor authentic liturgy, and his provocation creates no sexual duty for Lynleit.
 
+## Sherie's descent and possible salvation
+
+[Kyrie Eleison](../docs.html?doc=sherie-kyrie-eleison) belongs to Sherie's personal arc. She enjoys using charm, beauty, sexuality and psychological pressure, and eventually one of her games should become catastrophic. The intended reckoning concerns what she does with people and power, not punishment for desire. She remains a sympathetic protagonist, with salvation still possible.
+
+The comparison between Ishtar's admiration and Ereshkigal's demand for payment is a writer's way of thinking about seduction, descent and cost. It introduces no literal divine intervention, Cult affiliation or underworld. Sherie starts outside knowledge of magic; a costly discovery much later remains possible, not scheduled. The particular game and consequences need author decisions before entering chronology.
+
 ## Mascot, symbol, and template
 
 Anima, unofficially nicknamed <span data-no-entity-links>Inanna</span>, is the author's mascot outside story canon. Her symbolic role gathers beauty, danger, eroticism, ritual, sacred power, mystery, confidence, theatricality, and physical humanity into one design. It does not identify her with an in-world deity or Cult member.
 
 Her third role is practical: a female anatomical baseline for production. [Character Image Production](../docs.html?doc=character-image-production) owns the approved templates and the required character-specific differences. Anatomy does not transfer costume, cultural identity, personality, or sexuality. Keep the mascot's own mask, palette, ornaments, and flowing fabric separate from that baseline.
+
+### The collective-unconscious dream studies
+
+[Anima Meets the Female Cast](../gallery.html?panels=anima-meets-female-cast) is an explicitly non-canon panel collection. It explores Anima's influence and control across the female cast through a collective-unconscious fantasy. The supplied images depict Lynleit, Sherie and Yulia: gossip, tea, whispered confidences and puppet-like shadows make familiar habits look partly directed by someone beside them.
+
+This is a place to play with that symbolic premise, including different forms of influence over different women. It is not evidence that Anima secretly causes their choices in the story. The women retain their particular duties, relationships and agency in canon; neither a shared dream nor awareness of Anima has been established there. Keep these studies out of story chronology, character biographies and reader-evidence lists. Their theatrical control also does not change the anatomical template's production role.
 
 ## The inhabited world
 

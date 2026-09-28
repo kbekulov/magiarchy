@@ -8,6 +8,9 @@ Story, character, world, relationship, institution, location, and event question
 
 | Area | Question | Confidence |
 | --- | --- | --- |
+| Sherie: catastrophic game | Which use of charm, desire or psychological pressure becomes catastrophic, whom does it affect, and what serious personal cost follows from her choices? | 0% |
+| Sherie: mercy and salvation | What makes "Lord, have mercy" emotionally appropriate to Sherie, and what possibility of salvation follows without erasing the consequences? | 0% |
+| Sherie: supernatural discovery | Does she discover magic much later, through what evidence and at what cost, and does that discovery intersect her catastrophic game? | 0% |
 | Sherie and Felix: private game | When does the early private encounter that surprises Sherie occur, and how does their later coded language develop relative to Felix's attachment to Lynleit and Sherie's boundaries? The relationship direction is established, but its scenes and placement are not. | 0% |
 | Sherie: earlier experience | How much serious intimate experience does Sherie have before Felix? Limited experience is a possibility; her confidence and rapid learning do not establish a history of lovers. | 0% |
 | Darkness | What occurs in the Felix and Sherie H Scene titled [Darkness](../gallery.html?panels=darkness), and where does it belong? The title and pairing are supplied, but no scene, images, or chronology have been established. | 0% |

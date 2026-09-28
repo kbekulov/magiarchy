@@ -120,6 +120,16 @@ This writer reference separates what happens from what a character knows and wha
 
 **Source:** [Private game direction](../docs.html?doc=character-intimacy-and-sexuality#sherie-and-felix-the-private-game), [early card game](../moments.html?moment=unresolved-tension&version=v1).
 
+## Sherie and the hidden world
+
+**Starting knowledge:** Sherie is not a Magus and initially knows nothing about magic. Her political suspicions and request for the river investigation do not establish knowledge of the Drowned Choir or Lynleit's abilities. Those revelations belong to their witnesses until a later exchange actually communicates them.
+
+**Later direction:** A much later discovery of the supernatural world is possible and may exact a serious personal cost. The event, witness, timing and connection to her intended catastrophic social game remain undecided.
+
+**Reader:** Kyrie Eleison gives her arc a direction of consequence, mercy and possible salvation; it does not reveal an existing secret power. Anima's separate non-canon dream panels cannot supply evidence that Sherie, Lynleit or Yulia knows the mascot or experiences her influence inside the story.
+
+**Source:** [Sherie: Kyrie Eleison](../docs.html?doc=sherie-kyrie-eleison), [Thematic Direction](../docs.html?doc=thematic-direction#the-collective-unconscious-dream-studies).
+
 ## Table evidence checks
 
 - **Shown or stated:** The selected Chapter or Moment prose delivers the fact, including an explicit narrator explanation. A fact can be author-confirmed without belonging in this category yet.

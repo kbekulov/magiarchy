@@ -1,5 +1,25 @@
 [
   {
+    "slug": "sherie-kyrie-eleison",
+    "title": "Sherie: Kyrie Eleison",
+    "topic": "Character Arc Direction",
+    "description": "Social power, catastrophic consequences, a plea for mercy, and the possibility of salvation. Confirmed direction with the decisive events still unchosen.",
+    "file": "sherie-kyrie-eleison.md",
+    "updated": "2026-09-28",
+    "speakers": [
+      "Author's Desk"
+    ],
+    "defaultVersion": "v1",
+    "versions": [
+      {
+        "id": "v1",
+        "label": "v1 · Current",
+        "file": "sherie-kyrie-eleison.md",
+        "updated": "2026-09-28"
+      }
+    ]
+  },
+  {
     "slug": "character-aphorisms",
     "title": "Character Aphorisms",
     "topic": "Writer's Dialogue Collection",
@@ -133,13 +153,13 @@
     "slug": "thematic-direction",
     "title": "Thematic Direction",
     "topic": "Writer's Direction",
-    "description": "Inanna's tonal association, Anima's three roles, the contemporary world, and an additional survival-horror and action preference.",
+    "description": "Sherie's cost and possible salvation, Anima's non-canon dream studies, and the distinction between symbolism and story rules.",
     "file": "thematic-direction.md",
-    "updated": "2026-09-21",
+    "updated": "2026-09-28",
     "speakers": [
       "Author's Desk"
     ],
-    "defaultVersion": "v3",
+    "defaultVersion": "v4",
     "versions": [
       {
         "id": "v1",
@@ -157,10 +177,17 @@
       },
       {
         "id": "v3",
-        "label": "v3 · Current",
-        "file": "thematic-direction.md",
+        "label": "v3 · Archived",
+        "file": "thematic-direction-v3.md",
         "updated": "2026-09-21",
         "description": "MAGIARCHY's own atmosphere and encounter direction, alongside the established thematic boundaries."
+      },
+      {
+        "id": "v4",
+        "label": "v4 · Current",
+        "file": "thematic-direction.md",
+        "updated": "2026-09-28",
+        "description": "Sherie's cost and possible salvation, Anima's non-canon dream studies, and the distinction between symbolism and story rules."
       }
     ]
   },
@@ -453,11 +480,11 @@
     "topic": "Reader Knowledge",
     "file": "reader-knowledge.md",
     "updated": "2026-09-28",
-    "description": "Event periods, reader evidence and character knowledge, including Sherie and Felix's later private language.",
+    "description": "Sherie's initially mundane knowledge and undecided later discovery, alongside existing event and reveal boundaries.",
     "speakers": [
       "Author's Desk"
     ],
-    "defaultVersion": "v6",
+    "defaultVersion": "v7",
     "versions": [
       {
         "id": "v1",
@@ -496,10 +523,17 @@
       },
       {
         "id": "v6",
-        "label": "v6 · Current",
-        "file": "reader-knowledge.md",
+        "label": "v6 · Archived",
+        "file": "reader-knowledge-v6.md",
         "updated": "2026-09-28",
         "description": "Event periods, reader evidence and character knowledge, including Sherie and Felix's later private language."
+      },
+      {
+        "id": "v7",
+        "label": "v7 · Current",
+        "file": "reader-knowledge.md",
+        "updated": "2026-09-28",
+        "description": "Sherie's initially mundane knowledge and undecided later discovery, alongside existing event and reveal boundaries."
       }
     ]
   },
@@ -733,11 +767,11 @@
     "topic": "Writer's Character Reference",
     "file": "character-intimacy-and-sexuality.md",
     "updated": "2026-09-28",
-    "description": "Sherie and Felix's private game, discretion, partner-specific learning and shared language alongside their work and uneven attachment.",
+    "description": "Sherie's dangerous social games and eventual reckoning, without reducing her private bond with Felix to manipulation.",
     "speakers": [
       "Character Archive"
     ],
-    "defaultVersion": "v19",
+    "defaultVersion": "v20",
     "versions": [
       {
         "id": "v1",
@@ -885,10 +919,18 @@
       },
       {
         "id": "v19",
-        "label": "v19 · Current",
-        "file": "character-intimacy-and-sexuality.md",
+        "label": "v19 · Archived",
+        "file": "character-intimacy-and-sexuality-v19.md",
         "updated": "2026-09-28",
         "description": "Sherie and Felix's private game, discretion, partner-specific learning and shared language alongside their work and uneven attachment.",
+        "tensionFile": "sexual-tension-notes-v19.json"
+      },
+      {
+        "id": "v20",
+        "label": "v20 · Current",
+        "file": "character-intimacy-and-sexuality.md",
+        "updated": "2026-09-28",
+        "description": "Sherie's dangerous social games and eventual reckoning, without reducing her private bond with Felix to manipulation.",
         "tensionFile": "sexual-tension-notes.json"
       }
     ]

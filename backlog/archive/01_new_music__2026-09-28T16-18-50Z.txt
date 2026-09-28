@@ -1,0 +1,2 @@
+I added a new track (both mp3 and wav) to the backlog, its currently named Stem, but its real name is "Kyrie Eleison (Movement I)".
+Clear their all meta data, and then rename them accordingly, and push/commit to the site. Also the album cover should be used and renamed accordingly.

@@ -16,6 +16,8 @@ Doom Has an Address v7 supplies current shared canon. The Bench under the Lamp u
 
 ## Decision history
 
+On 28 September 2026, Kyrie Eleison established Sherie's intended personal reckoning and possible salvation, not a dated catastrophe. She is not a Magus and begins without knowledge of magic. The profile's river-investigation account no longer implies that the witnesses' supernatural discoveries have already reached her. Her affection for Felix remains genuine; the new direction does not assign him as victim or savior. Anima's collective-unconscious panel studies remain outside story canon and do not create magical control over the cast's canonical choices.
+
 On 28 September 2026, the private-game direction clarified Sherie and Felix's earlier romantic framing. Their affection and uneven attachment remain, but Sherie does not seek a formal partnership. Current profiles, Intimacy Reference v19 and the live tension registry follow this clarification. The ordinary early card-game Moment is unchanged; their later code is not evidence already shown in that scene.
 
 On 27 September 2026, the revised Unresolved Tension panels put the sofa view third and omit the line about unresolved tension. This removes the earlier conflicting dialogue order. The written Moment stays at v1; the earlier dialogue-bearing illustration is available in Sherie's sofa artwork stack.

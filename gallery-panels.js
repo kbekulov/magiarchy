@@ -26,6 +26,7 @@
     const element = node('a', text, className); element.href = href; return element;
   };
   const names = new Map([...$('#gallery-character-filter').options].map(option => [option.value, option.textContent]));
+  const subjects = record => [...record.characters, ...(record.mascots || [])];
   const collection = $('#panel-collection'), reader = $('#panel-reader'), grid = $('#panel-grid');
   const search = $('#panel-search'), character = $('#panel-character'), empty = $('#panel-empty');
   const includeH = $('#panel-include-h'), onlyH = $('#panel-only-h');
@@ -118,20 +119,24 @@
     collections.hidden = true;
     $('#gallery-heading').hidden = true;
     reader.hidden = false;
+    // Mascot nicknames must not acquire links to unrelated in-world religious records.
+    reader.toggleAttribute('data-no-entity-links', record.nonCanon === true);
     document.title = `${record.title} - Panels - Magiarchy`;
     $('#panel-title').textContent = $('#panel-crumb').textContent = record.title;
     $('#panel-summary').textContent = record.summary;
-    $('#panel-medium').textContent = `Scene panels / ${record.medium}`;
-    $('#panel-count').textContent = `${record.beats.length} beats · ${record.panels.length} images`;
+    $('#panel-medium').textContent = `${record.nonCanon ? 'Non-canon dream studies' : 'Scene panels'} / ${record.medium}`;
+    $('#panel-count').textContent = `${record.beats.length} ${record.nonCanon ? 'studies' : 'beats'} · ${record.panels.length} images`;
     const back = new URLSearchParams(params);
     back.delete('panels'); back.set('collection', 'panels');
     $('#panel-back').href = `gallery.html?${back}`;
     const context = $('#panel-context');
     if (record.chapter) context.append(link('Read Chapter →', `story.html?chapter=${encodeURIComponent(record.chapter.slug)}&version=${record.chapter.version}`, 'panel-context-link'));
     if (record.moment) context.append(link('Explore Moment →', `moments.html?moment=${encodeURIComponent(record.moment.slug)}&version=${record.moment.version}`, 'panel-context-link'));
+    if (record.contextDoc) context.append(link('Creative context →', `docs.html?doc=${encodeURIComponent(record.contextDoc)}`, 'panel-context-link'));
     const cast = $('#panel-characters');
     if (record.characters.length) cast.append(node('span', 'Featuring'));
     record.characters.forEach(slug => cast.append(link(names.get(slug) || slug, `character.html?character=${encodeURIComponent(slug)}`, 'panel-character-link')));
+    (record.mascots || []).forEach(slug => cast.append(link(names.get(slug) || slug, `gallery.html?character=${encodeURIComponent(slug)}`, 'panel-character-link')));
     if (record.placeholder) {
       $('#panel-count').textContent = 'No panel images available';
       $('#panel-slideshow').hidden = true;
@@ -153,7 +158,7 @@
       const title = node('h2', beat.title); title.id = `beat-${beat.id}`;
       section.setAttribute('aria-labelledby', title.id);
       const beatCopy = node('div');
-      beatCopy.append(node('span', beatPanels.length > 1 ? `${beatPanels.length} alternative compositions` : 'Scene beat', 'eyebrow'), title);
+      beatCopy.append(node('span', beatPanels.length > 1 ? `${beatPanels.length} alternative compositions` : record.nonCanon ? 'Dream study' : 'Scene beat', 'eyebrow'), title);
       heading.append(node('span', String(beatIndex + 1).padStart(2, '0'), 'panel-beat-number'), beatCopy);
       section.append(heading);
       const artwork = node('div', null, 'panel-beat-artwork');
@@ -219,14 +224,14 @@
       empty.append(link('Back to Panels', 'gallery.html?collection=panels', 'source-link'));
       return;
     }
-    for (const slug of [...new Set(records.flatMap(record => record.characters))].sort()) {
+    for (const slug of [...new Set(records.flatMap(subjects))].sort()) {
       const option = node('option', names.get(slug) || slug); option.value = slug; character.append(option);
     }
     search.value = params.get('q') || '';
     if ([...character.options].some(option => option.value === params.get('character'))) character.value = params.get('character');
     function filter(updateURL = true) {
       const query = search.value.trim().toLowerCase();
-      const shown = records.filter(record => (onlyH.checked ? record.hScene === true : includeH.checked || !record.hScene) && (character.value === 'all' || record.characters.includes(character.value)) && [record.title, record.summary, record.medium, ...record.characters.map(slug => names.get(slug) || slug), ...record.panels.map(panel => panel.title)].join(' ').toLowerCase().includes(query));
+      const shown = records.filter(record => (onlyH.checked ? record.hScene === true : includeH.checked || !record.hScene) && (character.value === 'all' || subjects(record).includes(character.value)) && [record.title, record.summary, record.medium, ...subjects(record).map(slug => names.get(slug) || slug), ...record.panels.map(panel => panel.title)].join(' ').toLowerCase().includes(query));
       grid.replaceChildren(...shown.map(record => {
         const card = node('article', null, 'panel-card');
         const anchor = link(null, window.MAGIARCHY_PANELS.url(record));
@@ -234,7 +239,7 @@
         const img = cover ? image(cover) : node('div', 'No panel images available', 'resource-no-preview');
         if (cover) img.alt = cover.alt;
         const copy = node('div', null, 'panel-card-copy');
-        copy.append(node('span', record.medium, 'doc-topic'), node('h2', record.title), node('p', record.summary), node('span', `${record.beats.length} beats · ${record.panels.length} images · Open scene →`, 'panel-card-count'));
+        copy.append(node('span', record.nonCanon ? `Non-canon · ${record.medium}` : record.medium, 'doc-topic'), node('h2', record.title), node('p', record.summary), node('span', `${record.beats.length} ${record.nonCanon ? 'studies' : 'beats'} · ${record.panels.length} images · Open scene →`, 'panel-card-count'));
         anchor.append(img, copy); card.append(anchor); return card;
       }));
       $('#panel-results').textContent = `${shown.length} of ${records.length} scenes`;

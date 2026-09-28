@@ -1,0 +1,131 @@
+# Events, Witnesses, and Reveals
+
+This writer reference separates what happens from what a character knows and what the reader can establish. It records existing decisions, not new reveal dates. The public archive remains a full-spoiler reference; collapsing a timeline is a reading convenience, not a spoiler mode.
+
+## The first disappearance
+
+**Event:** The first missing person independently causes the Spill. Holumns cause the disappearances that follow; factions later exploit the crisis.
+
+**Reader:** His identity and significance remain concealed for most of the main story. The exact discovery scene is not established. The World archive states this underlying fact openly because it is a reference, not the sequence in which the novel reveals it.
+
+**Characters:** Do not give investigators the archive's explanation before their own evidence supplies it. Who learns it first remains undecided.
+
+**Source:** [Hidden World Foundation](../docs.html?doc=world-foundation#the-first-missing-person), [Story phases](../story.html?phase=vanishing-point).
+
+## The failed attempt and recruitment
+
+**Event:** Kyrien's military-police commander father witnesses magic while surviving a fugitive's assault and tells nobody. Officials linked to the Magiarchy engineer his persecution and obtain sanction to murder him, presenting it as suicide. Years later, the inquiry Kyrien funds establishes distorted evidence but a closed review protects the prosecutor. After a separate shop humiliation of his mother, Kyrien attempts to kill the newly appointed Prosecutor General at a dinner protected partly by MSF. He escapes and is detained later; Lynleit is nearly harmed without his knowing she attended.
+
+**Reader:** Chapter v3 dramatizes the legal success and refusal, the shop, the represented interrogation, and the recruitment. Its separate Lynleit viewpoint identifies suppression. The father's actual magical encounter and murder are full archive history, not directly witnessed scenes in this Chapter. The exact means by which the attempt fails remains undescribed.
+
+**Characters:** Kyrien knows his family was wronged but not its magical reason. His father disclosed nothing. Lynleit conceals her attendance, her recognition of suppression, and magic itself. Her contract-based proposal requires legal review and official approval; it does not give her unlimited control of his case. Felix and Reiner are the only people in her established circle whom she tells; Fionn is not informed. Kyrien's lawyer remains his representative.
+
+**Later direction:** The prosecutor's own magical status is unresolved. After Kyrien openly knows about Magi, a distinct new offence may allow Lynleit to offer revenge, conditional on genuine proof under a still-undefined prohibition. This need not bring redress for the original protected persecution. Do not give either character this later case in the interrogation.
+
+**Source:** [After the Failed Attempt](../story.html?chapter=after-the-failed-attempt), [the interrogation Moment](../moments.html?moment=interrogation-after-the-failed-attempt).
+
+## The river encounter
+
+**Event:** The Drowned Choir takes the contraband crews before the boats reach the bridge. The officers inspect empty holds and are pulled into the water. Lynleit burns the submerged hands and stands on the surface.
+
+**Reader:** The missing crews' fate is suggested by the empty boats and subsequent attack, not witnessed directly. Blue flame and water walking are shown. The girl's head tilt can suggest bewilderment; it does not deliver a full account of her rules.
+
+**Characters:** Maren reports hands on her legs. Lynleit sees them beneath the water; Kyrien alone witnesses her standing above it. This is his first unmistakable exposure to magic, following an origin, failed attempt, interview, and initial service in which he remains ignorant of it. Reiner notices that Lynleit and Kyrien have not reached the city bank. Kyrien tells nobody; Lynleit initially only suspects what he saw.
+
+**Limit:** The supporting surface holds the hands below Lynleit. Its mechanism, and the precise first grip that pulls Maren from the boat, remain open. The encounter does not establish a universal prohibition on hands crossing water.
+
+**Source:** [The Empty Boats Beneath the Bridge](../story.html?chapter=the-empty-boats-beneath-the-bridge), [HI-003](../docs.html?doc=holumn-incidents-and-testimonies#the-drowned-choir).
+
+## The Nameless Street and Fionn's death
+
+**Event:** Lynleit experiences the street days before Fionn's murder. The memory of the boy below the ledge later returns when she discovers her father's body and helps Helena exploit her shock.
+
+**Reader:** The current street Chapter ends after Lynleit wakes beside Felix. The urban legend and its warning belong to the archive's background; the chapter does not show Lynleit learning them. The crying girl's smile and push support the inference of a lure. The later discovery of Fionn's body is not dramatized there. Whether the street was real or an illusion remains unresolved.
+
+**Characters:** Lynleit experiences the street. Felix witnesses her apparent faint and recovery, not the street itself. Do not give Helena knowledge of the street merely because she exploits Lynleit's later reaction.
+
+**Source:** [The Nameless Street](../story.html?chapter=the-nameless-street), [Lynleit's profile](../character.html?character=lynleit).
+
+## The leviathan-hide coat
+
+**Event:** Fionn discreetly replaces Lynleit's coat before she discovers its properties. She makes that discovery after his death, during the middle of Arc 1.
+
+**Reader:** The archive explains the replacement and protective properties. The Chapter in which the discovery becomes legible to the reader has not been written. The ordinary blue suede jacket lost in the river is a separate garment.
+
+**Characters:** Fionn knows of his replacement. Lynleit learns what she has been wearing later. Do not treat her river jacket loss as the discovery of the artefact, or assume that every ally knows the coat's nature.
+
+**Source:** [Items & Artefacts](../items.html?item=leviathan-hide-coat).
+
+## Doom and the family association
+
+**Event:** Doom belongs to the later part of Arc 1's second half, after Fionn's death and the nonsexual hotel refuge. Its relation to the political settlement is not fixed.
+
+**Reader:** In current v7, Mikhail names Inanna and discusses the family's association openly. These are spoken facts, not concealed allusions. Lynleit's cup handling, denials, and unread pages carry implications about embarrassment and continuing attraction. The final account explicitly states that both identities changed enough to loosen the curse, so that outcome is not merely inferred.
+
+**Treatment:** Natalia offers the ego hypothesis; Mikhail finds related cases and proposes a possible reciprocal change. Neither adviser can promise this treatment will work before the attempt. The later narrated recovery establishes the outcome of this case, not a guaranteed cure for other curses.
+
+**Characters:** Mikhail knows the family history and Lynleit understands his reference. Natalia introduces the ego hypothesis. Kyrien suspects a connection between Lynleit's attempt and their recovery, but she withholds the proposed treatment. Neither the mock blessing nor his suspicions make him fully informed.
+
+**Source:** [Doom v7](../story.html?chapter=doom-has-an-address&version=v7). Earlier revisions preserve different disclosure choices and do not control current records.
+
+## The later park encounter
+
+**Event:** The park encounter follows Doom by months. Later reciprocal exploration and first intercourse are separate milestones.
+
+**Reader:** Current v2 supplies the approach and aftermath, with an amber writer gap between them. Lynleit's satisfaction and dialogue suggest a change since Doom; the undrafted action is not available as evidence. Do not label a precise sequence inside the gap as something the reader has seen or can reconstruct from the delivered prose.
+
+**Characters:** Their respective knowledge must follow the completed scene when it is written. The existing aftermath does not authorize new actions in the omission.
+
+**Source:** [The Bench under the Lamp v2](../story.html?chapter=the-bench-under-the-lamp&version=v2).
+
+## The children
+
+**Event:** Pregnancy begins near the Arc 1 to Arc 2 transition. Lynleit bears their son during her disappearance and conceals him from Kyrien and the wider world. Restored intimacy during Arc 2 later leads to the conception and birth of their daughter.
+
+**Reader:** The first pregnancy is not openly explained or shown; the inference becomes intelligible at the opening of Arc 2. The daughter's conception is not made obvious within Arc 2 and becomes apparent afterward. Exact scenes and clues remain unchosen.
+
+**Characters:** Lynleit knows about her son. Kyrien's eventual discovery, its circumstances, and the wider circle of people who know remain undecided. Reader recognition must not automatically update Kyrien's knowledge.
+
+**Source:** [Lynleit](../character.html?character=lynleit), [Kyrien](../character.html?character=kyrien), [Questions to Be Answered](../docs.html?doc=questions-to-be-answered).
+
+## Bone Archive
+
+**Event period:** Unplaced. An officer avoids a shot before it is fired and later discovers a scar where the bullet would have entered. No name, affiliation, location, Arc, or main-cast involvement is established.
+
+**Reader:** The intended introduction gives the bodily trace before the wider explanation. The incident is currently an archive account, not a drafted Chapter. It does not prove a previous death, a discarded timeline, or accurate foreknowledge. Do not mark the Archive's complete mechanism as a reader inference from the scar alone.
+
+**Characters:** The officer knows about his unexplained movement and the scar. No investigator's access to that account is fixed. Natalia's potential comparison with Lester is a development route, not a completed investigation or knowledge she already possesses.
+
+**Limits:** Preserved experience and surviving bargain records do not establish literal devils or angels, a recoverable original timeline, or a cause for Lester's existence. The song's speaker is not an identified story character.
+
+**Source:** [Bone Archive](../docs.html?doc=holumn-incidents-and-testimonies#bone-archive), [development record](../docs.html?doc=bone-archive-development).
+
+## Narvean fog
+
+**Event period:** Ordinary regional fog predates the Spill. Particular Holumn incidents during the Spill produce unusual fog or mist, especially in Vilen's park and river encounters.
+
+**Reader:** The river Chapter v3 shows mist interrupting sight across the river while leaving the near water visible from Kyrien's position. It does not name the mist's source. The Last Man Out v2 remains an outline: its fog condition is a recorded fact, not a fully dramatized clue to the unit's destruction.
+
+**Characters:** Familiarity with ordinary fog does not give the officers knowledge of a supernatural mechanism. Kyrien still sees Lynleit standing on the water; Felix and the officers on the city bank do not acquire that knowledge. Mist neither proves a shared river intelligence nor explains the park massacre.
+
+**Source:** [Narvean fog](../duchy.html#fog), [river Chapter](../story.html?chapter=the-empty-boats-beneath-the-bridge&version=v3), [park outline](../story.html?chapter=ash-under-glass&version=v2).
+
+## Sherie and Felix's private language
+
+**Event period:** Their private intimacy and shared code develop after professional familiarity. The early discovery encounter, later habits and Sherie's boundary concerning Lynleit have no fixed sequence or phase yet.
+
+**Reader:** Unresolved Tension v1 shows an ordinary card game and distracted attention. It does not establish their later private meanings. The Intimacy Reference records the confirmed direction, including an undrafted encounter; it is not additional evidence inside the Moment.
+
+**Characters:** As the code develops, Sherie and Felix understand what cards, rematches and "nothing happened" can mean between them. Other people hear plausible ordinary conversation; no particular outsider's discovery is established. Sherie's wish for discretion does not establish an official partnership, and Felix's attachment to Lynleit persists through much of this period.
+
+**Source:** [Private game direction](../docs.html?doc=character-intimacy-and-sexuality#sherie-and-felix-the-private-game), [early card game](../moments.html?moment=unresolved-tension&version=v1).
+
+## Table evidence checks
+
+- **Shown or stated:** The selected Chapter or Moment prose delivers the fact, including an explicit narrator explanation. A fact can be author-confirmed without belonging in this category yet.
+- **Left for the reader to infer:** Name the observable detail that supports the reading. The conclusion may remain uncertain; do not promise proof where the text offers a possibility.
+- **Outline events / Recorded scene facts:** Use neutral presentation when the linked text is only an outline. Do not imply that an unwritten scene has earned a revelation.
+- **Writer gap:** The amber notice marks missing prose, not an event-status category or a clue. Assess only the material on either side of it.
+- **Historical versions:** Check against that revision's text. Do not apply current knowledge to an earlier Chapter or restore an obsolete claim to the default merely because it survives in history.
+
+The river v2 Chapter corrects the sightline from the park trees to the opposite bank. Its v3 Moment and the Nameless Street v2 Moment distinguish scene evidence from background, later events, and unproven mechanisms. Kyrien does not simply deny seeing anything: he describes the boats and attack while omitting Lynleit's ability. Doom's current preface now describes Kyrien as suspecting a connection while missing the proposed treatment. Its explicit cure explanation remains unchanged pending a separately approved prose revision.

@@ -4,7 +4,7 @@
     "chapters": 8,
     "moments": 28,
     "characters": 18,
-    "questions": 136,
+    "questions": 139,
     "contradictions": 0
   },
   "tasks": [
@@ -568,6 +568,10 @@
           "Her private approach to MSF would be stopped if the Court or government discovered it."
         ],
         [
+          "The cost of persuasion",
+          "She enjoys making attraction useful and can keep playing while consequences grow beyond what she understands. Reading a response well does not tell her what the other person will do afterward."
+        ],
+        [
           "Uneven attachment",
           "Felix becomes increasingly important to her while remaining fixated on Lynleit. Sherie has limits to what attention she will accept; she wants to be seen clearly, not simply enjoyed as a diversion."
         ]
@@ -1036,6 +1040,33 @@
     }
   ],
   "questions": [
+    {
+      "id": "question-which-use-of-charm-desire-or-psychological-pressure-becomes-catastrophic-whom-does-it-affect-and",
+      "title": "Sherie: catastrophic game",
+      "text": "Which use of charm, desire or psychological pressure becomes catastrophic, whom does it affect, and what serious personal cost follows from her choices?",
+      "confidence": 0,
+      "meta": "0% answered",
+      "section": "Current questions",
+      "href": "docs.html?doc=questions-to-be-answered#question-which-use-of-charm-desire-or-psychological-pressure-becomes-catastrophic-whom-does-it-affect-and"
+    },
+    {
+      "id": "question-what-makes-lord-have-mercy-emotionally-appropriate-to-sherie-and-what-possibility-of-salvation-f",
+      "title": "Sherie: mercy and salvation",
+      "text": "What makes \"Lord, have mercy\" emotionally appropriate to Sherie, and what possibility of salvation follows without erasing the consequences?",
+      "confidence": 0,
+      "meta": "0% answered",
+      "section": "Current questions",
+      "href": "docs.html?doc=questions-to-be-answered#question-what-makes-lord-have-mercy-emotionally-appropriate-to-sherie-and-what-possibility-of-salvation-f"
+    },
+    {
+      "id": "question-does-she-discover-magic-much-later-through-what-evidence-and-at-what-cost-and-does-that-discover",
+      "title": "Sherie: supernatural discovery",
+      "text": "Does she discover magic much later, through what evidence and at what cost, and does that discovery intersect her catastrophic game?",
+      "confidence": 0,
+      "meta": "0% answered",
+      "section": "Current questions",
+      "href": "docs.html?doc=questions-to-be-answered#question-does-she-discover-magic-much-later-through-what-evidence-and-at-what-cost-and-does-that-discover"
+    },
     {
       "id": "question-when-does-the-early-private-encounter-that-surprises-sherie-occur-and-how-does-their-later-coded",
       "title": "Sherie and Felix: private game",

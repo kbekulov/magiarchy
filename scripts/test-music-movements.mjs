@@ -10,9 +10,9 @@ export async function testMusicMovements(page, origin, engine) {
     const dock = page.locator('#site-music-player');
     assert.ok(await dock.isHidden());
     assert.ok(await audio.evaluate(a => a.paused && a.preload === 'none' && a.loop));
-    assert.equal(await dock.locator('option').count(), 4);
+    assert.equal(await dock.locator('option').count(), 5);
     await audio.evaluate(a => { a.volume = 0; window.testAudioOwner = a; });
-    for (const [id, duration] of [['passacaglia-movement-i', 208.8], ['passacaglia-movement-ii', 214.4], ['passacaglia-movement-iii', 155.94], ['theme-1-stem', 113.476]]) {
+    for (const [id, duration] of [['kyrie-eleison-movement-i', 185.088], ['passacaglia-movement-i', 208.8], ['passacaglia-movement-ii', 214.4], ['passacaglia-movement-iii', 155.94], ['theme-1-stem', 113.476]]) {
       const card = page.locator('#' + id);
       assert.equal(await card.locator('.music-downloads a[download]').count(), 2);
       for (const link of await card.locator('.music-downloads a[download]').all()) {
@@ -44,7 +44,7 @@ export async function testMusicMovements(page, origin, engine) {
     assert.ok(await audio.evaluate(a => !a.loop));
     if (engine === 'chromium') {
       await audio.evaluate(a => { a.currentTime = a.duration - .25; });
-      await page.waitForFunction(() => archiveMusic.state().current.id === 'passacaglia-movement-i' && !archiveMusic.audio.paused);
+      await page.waitForFunction(() => archiveMusic.state().current.id === 'kyrie-eleison-movement-i' && !archiveMusic.audio.paused);
       await dock.locator('select').selectOption('theme-1-stem');
       await page.waitForFunction(() => archiveMusic.audio.currentTime > .05 && !archiveMusic.audio.paused);
     }
@@ -63,7 +63,7 @@ export async function testMusicMovements(page, origin, engine) {
     assert.ok(await audio.evaluate(a => a.paused));
     await dock.getByRole('button', { name: 'Play', exact: true }).click();
     await dock.getByRole('button', { name: 'Next track', exact: true }).click();
-    assert.equal(await dock.locator('select').inputValue(), 'passacaglia-movement-i');
+    assert.equal(await dock.locator('select').inputValue(), 'kyrie-eleison-movement-i');
     await dock.getByRole('button', { name: 'Previous track', exact: true }).click();
     assert.equal(await dock.locator('select').inputValue(), 'theme-1-stem');
     await dock.locator('select').selectOption('passacaglia-movement-ii');
