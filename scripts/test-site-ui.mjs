@@ -76,6 +76,11 @@ try {
         assert.deepEqual(errors, [], `${engine}: music errors`);
         continue;
       }
+      if (process.env.TEST_CHIBIS_ONLY === '1') {
+        await testArtworkVersions(page, origin, engine);
+        assert.deepEqual(errors, [], `${engine}: chibi browser errors`);
+        continue;
+      }
       if (process.env.TEST_SHARED_NIGHT_ONLY === '1') {
         await testSharedNight(page, origin, engine);
         assert.deepEqual(errors, [], `${engine}: shared-night browser errors`);

@@ -3,8 +3,10 @@ import fs from 'node:fs';
 import { testGalleryFilters } from './test-gallery-filters.mjs';
 import { testGalleryIntake } from './test-gallery-intake.mjs';
 import { assertChibiCard, testChibiOutfits } from './test-chibi-outfits.mjs';
+import { testChibiVariations } from './test-chibi-variations.mjs';
 
 export async function testArtworkVersions(page, origin, engine) {
+  await testChibiVariations(page, origin, engine);
   await testGalleryFilters(page, origin, engine);
   await testGalleryIntake(page, origin, engine);
   await testChibiOutfits(page, origin, engine);
@@ -64,7 +66,7 @@ export async function testArtworkVersions(page, origin, engine) {
     assert.equal(await page.locator('#gallery-detail-source').getAttribute('href'), 'media/gallery/images/history/earliest-cast-sketch-part-2.png');
     assert.ok(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1));
     await page.screenshot({ path: `test-results/${engine}-historical-artwork-part-2-${width}.png` });
-    await page.goto(`${origin}/characters.html`);
+    await page.goto(`${origin}/characters.html?chibi-test=0`);
     await page.waitForLoadState('networkidle');
     const kyrien = await assertChibiCard(page, 'Kyrien');
     await kyrien.scrollIntoViewIfNeeded();
@@ -93,7 +95,7 @@ export async function testArtworkVersions(page, origin, engine) {
       await page.waitForLoadState('networkidle');
       const image = page.locator('#gallery-detail-image');
       await image.evaluate(img => img.decode());
-      assert.equal(await page.locator('#gallery-detail-title').textContent(), `${name} - chibi 01`);
+      assert.equal(await page.locator('#gallery-detail-title').textContent(), `${name} - chibis`);
       const source = `media/gallery/images/chibis/${filename}.png`;
       assert.equal(await page.locator('#gallery-detail-source').getAttribute('href'), source);
       assert.equal(await image.evaluate(img => img.naturalWidth === img.naturalHeight), true);

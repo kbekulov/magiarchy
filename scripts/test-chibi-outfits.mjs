@@ -5,12 +5,14 @@ export const chibiOutfits = {
   Kyrien: [
     ['char-kyrien-arc-1-chibi-beige-jacket', 'char-kyrien-arc-1-chibi-beige-jacket-r2', 'Arc 1 · Chibi'],
     ['char-kyrien-chibi-blue-shirt-study', 'char-kyrien-chibi-blue-shirt-study', 'Chibi · Costume study'],
-    ['char-kyrien-chibi-black-coat-study', 'char-kyrien-chibi-black-coat-study', 'Chibi · Costume study']
+    ['char-kyrien-chibi-black-coat-study', 'char-kyrien-chibi-black-coat-study', 'Chibi · Costume study'],
+    ['char-kyrien-arc-1-chibi-low-crouch', 'char-kyrien-arc-1-chibi-low-crouch', 'Arc 1 · Chibi']
   ],
   Felix: [
     ['chibi_felix_1', 'char-felix-chibi-suspenders-r2', 'Chibi'],
     ['chibi_felix_2', 'char-felix-chibi-grey-jacket', 'Chibi'],
-    ['char-felix-chibi-jacket-over-shoulder', 'char-felix-chibi-jacket-over-shoulder', 'Chibi']
+    ['char-felix-chibi-jacket-over-shoulder', 'char-felix-chibi-jacket-over-shoulder', 'Chibi'],
+    ['char-felix-chibi-laughing-bow', 'char-felix-chibi-laughing-bow', 'Chibi']
   ]
 };
 
@@ -37,12 +39,12 @@ export async function testChibiOutfits(page, origin, engine) {
   // Deterministic samples exercise all choices, without a flaky probabilistic reload test.
   await page.addInitScript(() => {
     const sample = new URL(location.href).searchParams.get('chibi-test');
-    if (sample !== null) Math.random = () => (Number(sample) + 0.5) / 3;
+    if (sample !== null) Math.random = () => (Number(sample) + 0.5) / 4;
   });
   const search = JSON.parse(fs.readFileSync('search-index.json', 'utf8')).entries;
   for (const width of [390, 1440]) {
     await page.setViewportSize({ width, height: 900 });
-    for (let index = 0; index < 3; index++) {
+    for (let index = 0; index < 4; index++) {
       await page.goto(`${origin}/characters.html?chibi-test=${index}`);
       await page.waitForLoadState('networkidle');
       for (const name of Object.keys(chibiOutfits)) {
@@ -54,7 +56,7 @@ export async function testChibiOutfits(page, origin, engine) {
       await page.locator('#gallery-chibi-filter').check({ force: true });
       for (const [name, outfits] of Object.entries(chibiOutfits)) {
         const cards = page.locator(`.gallery-card[data-artwork-stack="${name.toLowerCase()}-chibis"]`);
-        assert.equal(await cards.count(), 3);
+        assert.equal(await cards.count(), outfits.length);
         const visible = page.locator(`.gallery-card[data-artwork-stack="${name.toLowerCase()}-chibis"]:not([hidden])`);
         assert.equal(await visible.count(), 1, 'Each outfit stack needs one catalog tile');
         assert.equal(await visible.getAttribute('data-image'), outfits[index][0]);
@@ -66,7 +68,7 @@ export async function testChibiOutfits(page, origin, engine) {
       for (let index = 0; index < outfits.length; index++) {
         const [id, filename, note] = outfits[index];
         const nav = page.locator('#gallery-image-versions');
-        assert.equal(await nav.locator('a').count(), 3);
+        assert.equal(await nav.locator('a').count(), outfits.length);
         if (index) {
           await nav.locator(`a[href="gallery.html?image=${id}"]`).focus();
           await page.keyboard.press('Enter');
@@ -94,5 +96,5 @@ export async function testChibiOutfits(page, origin, engine) {
       assert.equal(await page.locator('.profile-portrait-strip img, .profile-art-thumbnails img').evaluateAll(images => images.some(img => img.src.includes('/chibis/'))), false, 'Chibis must stay out of full-size profile portraits');
     }
   }
-  console.log(`${engine}: six chibi outfits, randomized cards/stacks, era/study labels, keyboard selection and original downloads passed`);
+  console.log(`${engine}: eight Kyrien/Felix chibis, randomized cards/stacks, era/study labels, keyboard selection and original downloads passed`);
 }
