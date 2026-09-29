@@ -33,14 +33,6 @@ Use front, back, and other available views from the same design version together
 
 If a template and a confirmed character feature conflict, preserve the confirmed feature. If the intended design or version is unclear, ask the author rather than inventing a resolution.
 
-## Seasonal setting and colour
-
-For scene artwork, follow the [late-summer-to-golden-autumn direction](../docs.html?doc=thematic-direction#late-summer-into-golden-autumn). The main story opens in very late summer and develops into autumn, especially warm, bright golden autumn. Give this substantial weight in relevant location and scene briefs rather than defaulting to grey horror scenery.
-
-Use golden and orange landscapes to contrast with Lynleit's approved blue-focused design. Retain her actual clothing colour under warm light and preserve readable faces and silhouettes. Fog may limit a particular view without erasing every warm colour or making the entire country overcast. Existing scene lighting, chronology, approved panels, and later life periods take priority over an invented seasonal placement.
-
-Record season, light, and visibility separately when a scene brief needs them. Reference sheets and standalone chibis can keep their plain backgrounds; autumn is not a required prop, backdrop, recolouring, or reason to repaint approved artwork.
-
 ## Lynleit: field clothing and flame protection
 
 Her main-story field silhouette includes the long blue coat, pale high-collared blouse and narrow black ribbon, fitted black shorts, dark tights, and black over-the-knee lace-up boots. Do not substitute trousers when depicting the office-building rescue. Preserve her approved hair and face; the witness's narration need not catalogue her eye colour.

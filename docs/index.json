@@ -180,13 +180,13 @@
     "slug": "thematic-direction",
     "title": "Thematic Direction",
     "topic": "Writer's Direction",
-    "description": "Sherie's cost and possible salvation, Anima's non-canon dream studies, and the distinction between symbolism and story rules.",
+    "description": "Late summer into golden autumn, Lynleit's blue against warm landscapes, and the established symbolic and story boundaries.",
     "file": "thematic-direction.md",
-    "updated": "2026-09-28",
+    "updated": "2026-09-29",
     "speakers": [
       "Author's Desk"
     ],
-    "defaultVersion": "v4",
+    "defaultVersion": "v5",
     "versions": [
       {
         "id": "v1",
@@ -211,10 +211,17 @@
       },
       {
         "id": "v4",
-        "label": "v4 · Current",
-        "file": "thematic-direction.md",
+        "label": "v4 · Archived",
+        "file": "thematic-direction-v4.md",
         "updated": "2026-09-28",
         "description": "Sherie's cost and possible salvation, Anima's non-canon dream studies, and the distinction between symbolism and story rules."
+      },
+      {
+        "id": "v5",
+        "label": "v5 · Current",
+        "file": "thematic-direction.md",
+        "updated": "2026-09-29",
+        "description": "Late summer into warm golden autumn, Lynleit's blue contrast, and seasonal atmosphere without compressing the chronology."
       }
     ]
   },
@@ -244,11 +251,11 @@
     "topic": "Visual Production Standard",
     "file": "character-image-production.md",
     "updated": "2026-09-29",
-    "description": "Template-first production, approved-image validation, Kyrien's fixed appearance, and Lynleit's field clothing and protective gloves.",
+    "description": "Approved templates and character designs, with golden-autumn scene colour and Lynleit's blue silhouette.",
     "speakers": [
       "Author's Desk"
     ],
-    "defaultVersion": "v11",
+    "defaultVersion": "v12",
     "versions": [
       {
         "id": "v1",
@@ -322,10 +329,17 @@
       },
       {
         "id": "v11",
-        "label": "v11 · Current",
-        "file": "character-image-production.md",
+        "label": "v11 · Archived",
+        "file": "character-image-production-v11.md",
         "updated": "2026-09-29",
         "description": "Lynleit's belt-carried protective gloves and rescue silhouette, alongside the approved template workflow and Kyrien's fixed design."
+      },
+      {
+        "id": "v12",
+        "label": "v12 · Current",
+        "file": "character-image-production.md",
+        "updated": "2026-09-29",
+        "description": "Golden-autumn scene briefs and blue-against-gold colour, preserving approved designs, references and scene chronology."
       }
     ]
   },
@@ -1209,8 +1223,8 @@
     "title": "Hidden World Foundation",
     "topic": "World Foundation",
     "file": "world-foundation.md",
-    "updated": "2026-09-23",
-    "description": "A contemporary country with older institutions, recurrent regional fog, and a hidden supernatural world.",
+    "updated": "2026-09-29",
+    "description": "A contemporary country with older institutions, a late-summer story opening, golden autumn, regional fog and a hidden supernatural world.",
     "speakers": [
       "World Archive"
     ],
@@ -1245,13 +1259,20 @@
       },
       {
         "id": "v5",
-        "label": "v5 · Current",
-        "file": "world-foundation.md",
+        "label": "v5 · Archived",
+        "file": "world-foundation-v5.md",
         "updated": "2026-09-23",
         "description": "A contemporary country with older institutions, recurrent regional fog, and a hidden supernatural world."
+      },
+      {
+        "id": "v6",
+        "label": "v6 · Current",
+        "file": "world-foundation.md",
+        "updated": "2026-09-29",
+        "description": "The late-summer opening and move into golden autumn, with the longer Arc chronology and regional fog preserved."
       }
     ],
-    "defaultVersion": "v5"
+    "defaultVersion": "v6"
   },
   {
     "slug": "magecraft-as-leverage",

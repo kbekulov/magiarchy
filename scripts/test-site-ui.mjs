@@ -22,6 +22,7 @@ import { testSeptember28Backlog } from './test-september-28-backlog.mjs';
 import { testSharedNight } from './test-shared-night.mjs';
 import { testPageSpacing } from './test-page-spacing.mjs';
 import { testEleventhFloor } from './test-eleventh-floor.mjs';
+import { testSeasonalDirection } from './test-seasonal-direction.mjs';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const mime = { '.html': 'text/html', '.js': 'text/javascript', '.json': 'application/json', '.css': 'text/css', '.png': 'image/png', '.webp': 'image/webp', '.md': 'text/plain', '.mp3': 'audio/mpeg', '.wav': 'audio/wav' };
@@ -71,6 +72,11 @@ try {
         await page.goto(`${origin}/${route}`);
         await page.waitForLoadState('networkidle');
       };
+      if (process.env.TEST_SEASONS_ONLY === '1') {
+        await testSeasonalDirection(page, origin, engine);
+        assert.deepEqual(errors, [], `${engine}: seasonal reader errors`);
+        continue;
+      }
       if (process.env.TEST_MUSIC_ONLY === '1') {
         await testMusicMovements(page, origin, engine);
         assert.deepEqual(errors, [], `${engine}: music errors`);
@@ -150,6 +156,7 @@ try {
         continue;
       }
       await testSherieFelixBanter(page, origin, engine);
+      await testSeasonalDirection(page, origin, engine);
       await testNarveanFog(page, origin, engine);
       await testRelationshipDirection(page, origin, engine);
       await testAphorisms(page, origin, engine);

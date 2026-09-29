@@ -8,12 +8,6 @@ Narvea retains aristocratic houses, inherited titles, state councillors, courtly
 
 Much older religious traditions survive within the hidden world. The [Cult of Inanna](../magiarchy.html#cult-of-inanna) belongs to Magi lineage and religious history; it does not define the everyday appearance or material life of modern Narvea.
 
-## The opening season
-
-The main story begins in very late summer. Its developing main events move into autumn, with warm, bright golden-autumn landscapes giving the opening period much of its character. This seasonal progression does not set an exact date for every encounter or limit the whole of Arc 1 to one season; that life period may span several years.
-
-[Thematic Direction](../docs.html?doc=thematic-direction#late-summer-into-golden-autumn) develops the visual emphasis, including Lynleit's blue clothing against golden and orange foliage. Narvea's fog remains a regional problem with its own ordinary and Holumn-related occurrences, not permanent weather across the whole country.
-
 ## Narvean fog
 
 Fog is a recurring problem in Narvea, especially in particular areas rather than uniformly across the country. It limits travel, observation, and searches in an otherwise inhabited, contemporary landscape. Much of it is ordinary weather, familiar before the Spill.

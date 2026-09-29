@@ -1,6 +1,6 @@
 # Thematic Direction
 
-Author-approved creative direction, updated 29 September 2026. This reference governs future writing and design. The seasonal opening below is confirmed; applications do not add scenes, rituals, powers, or historical events.
+Author-approved creative direction, updated 28 September 2026. This reference governs future writing and design; it adds no scenes, rituals, powers, or historical events.
 
 ## Several forces in one life
 
@@ -39,18 +39,6 @@ This is a place to play with that symbolic premise, including different forms of
 [Hidden World Foundation](../docs.html?doc=world-foundation#a-contemporary-world-with-older-institutions) owns the setting's period: contemporary life with substantial 18th- and 19th-century institutional inheritance. Ancient religious material can survive beneath modern intelligence work without turning the streets, clothing, or technology into generalized ancient fantasy.
 
 ## Applying this direction
-
-### Late summer into golden autumn
-
-The main story opens in very late summer and eases into autumn as its main events develop. Golden autumn has substantial weight in MAGIARCHY's visual identity: warm, bright landscapes, yellow and orange foliage, and lingering warmth. Do not make autumn uniformly grey, cold, leafless, or rain-soaked to signal that the story contains horror.
-
-Lynleit's blue-focused design is an important part of this direction. Her blue coat should remain distinct against golden and orange surroundings. Preserve the approved shade and silhouette; the landscape supplies the contrast. Warm light need not turn her clothing brown or orange, and the relationship needs no magical explanation.
-
-Let the transition accumulate through details appropriate to a scene: green still present among turning leaves, changing light, or leaves beginning to gather along familiar routes. These are production and writing options, not newly dated events. Ordinary work, political pressure, humor, and frightening encounters can all take place in this bright season. Beauty need not disappear when danger arrives.
-
-Keep fog local and variable under the established [fog direction](../docs.html?doc=dread-and-action-direction#fog-and-visibility). Bright golden distances and a mist-obscured stretch can belong to the same landscape without making all autumn weather supernatural. Preserve the visibility required by an existing scene.
-
-This establishes the story's opening progression and a strong aesthetic emphasis, not a calendar for every Chapter. Arc 1 can still span several years; later encounters and established intervals remain intact. Do not assign an exact month to the river, park, Cardiff, Doom, or another scene solely to obtain autumn scenery. [Hidden World Foundation](../docs.html?doc=world-foundation#the-opening-season) records the chronology boundary; [Character Image Production](../docs.html?doc=character-image-production#seasonal-setting-and-colour) applies it to image briefs.
 
 ### Dread, isolation, and action
 

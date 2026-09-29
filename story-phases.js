@@ -1,6 +1,6 @@
 window.MAGIARCHY_STORY_ARCS = [
   { id: 'arc-0', number: 'ARC 0', title: 'Formative prequel', description: 'A tentative prequel centered on Fionn, his household, and the becoming of MSF, alongside the younger cast during their school years.' },
-  { id: 'arc-1', number: 'ARC 1', title: 'Main story', description: 'The central story and its first major life period. Its internal phases may cover several years.' },
+  { id: 'arc-1', number: 'ARC 1', title: 'Main story', description: 'The main story opens in very late summer and develops into golden autumn. Its internal phases may still cover several years.' },
   { id: 'arc-2', number: 'ARC 2', title: 'After the main story', description: 'A sequel life period shaped by Lynleit\'s absence, Kyrien\'s direction of MSF, and the consequences carried forward from Arc 1.' }
 ];
 
