@@ -12,6 +12,8 @@ Before any new sexual or romantic scene intake, ask the author canon versus side
 
 Unplaced Chapters may use `timelinePhase: null` with an explicit Unplaced label while preserving known relative constraints in the Moment and reader-knowledge record. Do not manufacture a numbered phase merely to satisfy a catalog field.
 
+Unplaced records may retain a confirmed `arcLabel`; display it without selecting a numbered phase. There Is No Eleventh Floor (HI-010) belongs in Arc 1 after the coat substitution and before its discovery, with no finer placement. Its Chapter, Moment, Holumn testimony, Church handoff, Lynleit profile and equipment records share that boundary. Gloves protect her skin during blue-flame outbursts; they do not remove exertion or protect uncovered bystanders. The coat can choose to cooperate without becoming obedient. Keep its agency unknown to Lynleit in this rescue and its apparent movement only an inference for the witness. Ordinary physicians receive a mundane account, not magical investigative duties.
+
 Closely related artwork studies share one catalog entry using matching `data-artwork-stack` and `data-image-version-group` values. Choose one catalog variant randomly on each load; preserve every original and direct image URL. Group the reader thumbnails by `data-variant-category` when variants have meaningful types, such as With cards and Without cards. Keep scene panels out of artwork stacks. Sherie's sofa stack includes red-sofa studies and the ivory-sofa illustration; keep its established `sherie-red-sofa` group key and direct image IDs, with the general display title Sherie on the sofa.
 
 Chibi outfit variants use the same stack architecture, one Gallery tile per character with all looks available through reader thumbnails and catalog-card randomization. Retain stable reader IDs when replacing a chibi and archive retired originals and previews after checking dependencies. Optional `data-chibi-note` preserves a concise label such as Costume study on randomized character cards; keep confirmed Arc metadata on the individual image, not the whole stack. Kyrien's blue-shirt and black-coat chibis remain costume studies, not newly approved T-poses or story outfits.
@@ -34,6 +36,8 @@ Page-start spacing belongs to the content container, not a breadcrumb or notice.
 5. A user-supplied answer overrides an audit preference. Improve setup, consequence, and presentation without changing the answer.
 
 ## Backlog intake
+
+`backlog/prose_transcripts/` is a continuing technique-reference corpus, not pending story intake. The initial `blacklog` spelling refers to this folder. Its TXT files inform the detailed editorial ruleset in `docs/prose-style.md` as they arrive; never import their story content or treat them as canon. Empty folders yield no analysis findings. Preserve source references when recording techniques and distinguish working deductions from author-approved preferences. The author confirmed this permanent rule without supplying samples on 29 September 2026.
 
 `workshop/` is reserved for the author's private `h_scenes/` folder. Its complete subtree stays Git-ignored and outside public records, search, builds and deployment. Other unpublished editing studies belong under ignored `output/private-studies/`. Relocating a study is not approval to publish it. The 28 September batch explicitly authorizes moving the other workshop folders out; only the supplied backlog panel assets are approved for public intake.
 

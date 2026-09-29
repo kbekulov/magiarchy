@@ -1,5 +1,7 @@
 /* Shared archive vocabulary links. Keep this registry limited to records that have a stable in-site destination. */
 const archiveEntityLinks = [
+  ['There Is No Eleventh Floor', 'story.html?chapter=there-is-no-eleventh-floor'],
+  ["Lynleit's protective gloves", 'items.html?item=lynleits-protective-gloves'],
   ['The Oneiric Confluence', 'docs.html?doc=oneiric-confluence'],
   ['Oneiric Confluence', 'docs.html?doc=oneiric-confluence'],
   ['The Shared Night', 'story.html?chapter=the-shared-night'],

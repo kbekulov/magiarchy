@@ -33,12 +33,6 @@ Use front, back, and other available views from the same design version together
 
 If a template and a confirmed character feature conflict, preserve the confirmed feature. If the intended design or version is unclear, ask the author rather than inventing a resolution.
 
-## Lynleit: field clothing and flame protection
-
-Her main-story field silhouette includes the long blue coat, pale high-collared blouse and narrow black ribbon, fitted black shorts, dark tights, and black over-the-knee lace-up boots. Do not substitute trousers when depicting the office-building rescue. Preserve her approved hair and face; the witness's narration need not catalogue her eye colour.
-
-Her special [black leather gloves](../items.html?item=lynleits-protective-gloves) normally lie draped over her belt, mostly hidden beneath the coat. Show them worn during blue-flame outbursts, with the exposed wrist covered. Do not add routine burn scars to communicate competent flame use. In this rescue, a nosebleed, split lip and trembling convey its superficial cost while her hands remain unburned. The gloves and coat are separate protections, and the coat's subtle movement must not reveal its nature to Lynleit before the established discovery. Existing artwork stays intact; apply these confirmed details when producing relevant new work.
-
 ## Kyrien: fixed character design
 
 These author-confirmed requirements apply to descriptions, portraits, full-body illustrations, reference sheets, manga panels, and chibis. They clarify Kyrien's identity rather than redesigning him. Where older artwork or ambiguous wording conflicts, these requirements take priority. Preserve his established face and clothing designs. The [selected front/back reference](gallery.html?resource=kyrien-beige-jacket) owns his canon outfit; the three-variant concept sheets remain costume studies.

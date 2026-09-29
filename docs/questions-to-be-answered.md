@@ -8,6 +8,10 @@ Story, character, world, relationship, institution, location, and event question
 
 | Area | Question | Confidence |
 | --- | --- | --- |
+| There Is No Eleventh Floor: placement | Where in Arc 1 does the office-building rescue fall after Fionn's coat substitution and before Lynleit discovers its nature, relative to his death and the river operation? | 0% |
+| HI-010: entry and escape | What selects victims or admits rescuers, why do some inherited boundaries hold, and can waiting for a route reproduce the escape? | 0% |
+| HI-010: forms and aftermath | Do the figures belong to one Holumn, what becomes of the manifestation and lost pistol, and is the later platform sighting actually Lynleit? | 0% |
+| Protective gloves | Who made Lynleit's black leather gloves, when did she acquire them, and what are their protective limits? | 0% |
 | The Oneiric Confluence | What selects sleepers for shared contact, and what vector, range and duration govern HI-009? | 0% |
 | The Shared Night | Where does the episode fall after Kyrien learns about magic, relative to Sherie's discovery and both couples' waking intimacy? | 0% |
 | The Oneiric Confluence | How does the shared dream relate to waking chronology, and can a representation persist after one participant wakes? | 0% |

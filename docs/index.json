@@ -243,12 +243,12 @@
     "title": "Character Image Production",
     "topic": "Visual Production Standard",
     "file": "character-image-production.md",
-    "updated": "2026-09-23",
-    "description": "Template-first production, approved-image validation, and Kyrien's fixed appearance across prose and artwork.",
+    "updated": "2026-09-29",
+    "description": "Template-first production, approved-image validation, Kyrien's fixed appearance, and Lynleit's field clothing and protective gloves.",
     "speakers": [
       "Author's Desk"
     ],
-    "defaultVersion": "v10",
+    "defaultVersion": "v11",
     "versions": [
       {
         "id": "v1",
@@ -315,10 +315,17 @@
       },
       {
         "id": "v10",
-        "label": "v10 · Current",
-        "file": "character-image-production.md",
+        "label": "v10 · Archived",
+        "file": "character-image-production-v10.md",
         "updated": "2026-09-23",
         "description": "Kyrien's fixed center part, mildly tired eyes, lean frame, modest height difference beside Lynleit, and mobile elegance."
+      },
+      {
+        "id": "v11",
+        "label": "v11 · Current",
+        "file": "character-image-production.md",
+        "updated": "2026-09-29",
+        "description": "Lynleit's belt-carried protective gloves and rescue silhouette, alongside the approved template workflow and Kyrien's fixed design."
       }
     ]
   },
@@ -327,12 +334,12 @@
     "title": "MAGIARCHY Prose Style",
     "topic": "Writer's Style Reference",
     "file": "prose-style.md",
-    "updated": "2026-09-21",
-    "description": "The active house style, including close sensory dread, legible action, relief, and changes between sacred, political, intimate, and mundane registers.",
+    "updated": "2026-09-29",
+    "description": "The active house style and a technique-only method for learning from supplied prose transcripts without importing their story content.",
     "speakers": [
       "Author's Desk"
     ],
-    "defaultVersion": "v13",
+    "defaultVersion": "v14",
     "versions": [
       {
         "id": "v1",
@@ -420,10 +427,17 @@
       },
       {
         "id": "v13",
-        "label": "v13 · Current",
-        "file": "prose-style.md",
+        "label": "v13 · Archived",
+        "file": "prose-style-v13.md",
         "updated": "2026-09-21",
         "description": "Close sensory dread, readable action, character competence, and relief within the existing house style."
+      },
+      {
+        "id": "v14",
+        "label": "v14 · Current",
+        "file": "prose-style.md",
+        "updated": "2026-09-29",
+        "description": "Technique-only transcript analysis: an ongoing editorial reference method, with no samples analysed yet."
       }
     ]
   },
@@ -432,12 +446,12 @@
     "title": "Prose Style History",
     "topic": "Historical Writing Reference",
     "file": "prose-style-history.md",
-    "updated": "2026-09-23",
-    "description": "Chapter revision history, including the river and park fog revisions.",
+    "updated": "2026-09-29",
+    "description": "Chapter revision history, including the office-worker testimony and its author-requested rescue additions.",
     "speakers": [
       "Author's Desk"
     ],
-    "defaultVersion": "v3",
+    "defaultVersion": "v4",
     "versions": [
       {
         "id": "v1",
@@ -455,10 +469,17 @@
       },
       {
         "id": "v3",
-        "label": "v3 · Current",
-        "file": "prose-style-history.md",
+        "label": "v3 · Archived",
+        "file": "prose-style-history-v3.md",
         "updated": "2026-09-23",
         "description": "Chapter revision history, including the river and park fog revisions."
+      },
+      {
+        "id": "v4",
+        "label": "v4 · Current",
+        "file": "prose-style-history.md",
+        "updated": "2026-09-29",
+        "description": "There Is No Eleventh Floor: first-person continuity, protected flame use, covert coat agency and the Church handoff."
       }
     ]
   },
@@ -507,11 +528,11 @@
     "topic": "Reader Knowledge",
     "file": "reader-knowledge.md",
     "updated": "2026-09-29",
-    "description": "The Shared Night separates shared memories, private disclosures, recovered choice and unresolved chronology.",
+    "description": "Event periods and reveal boundaries, including the office witness, the coat's hidden cooperation and Church custody.",
     "speakers": [
       "Author's Desk"
     ],
-    "defaultVersion": "v8",
+    "defaultVersion": "v9",
     "versions": [
       {
         "id": "v1",
@@ -564,10 +585,17 @@
       },
       {
         "id": "v8",
-        "label": "v8 · Current",
-        "file": "reader-knowledge.md",
+        "label": "v8 · Archived",
+        "file": "reader-knowledge-v8.md",
         "updated": "2026-09-29",
         "description": "The Shared Night separates shared memories, private disclosures, recovered choice and unresolved chronology."
+      },
+      {
+        "id": "v9",
+        "label": "v9 · Current",
+        "file": "reader-knowledge.md",
+        "updated": "2026-09-29",
+        "description": "The office-building witness distinguishes perceived events, hidden coat agency and uncertain later recollection."
       }
     ]
   },
@@ -990,7 +1018,7 @@
     "topic": "Holumn Archive",
     "file": "holumn-incidents-and-testimonies.md",
     "updated": "2026-09-29",
-    "description": "HI-009, the Oneiric Confluence: shared dreams, weakened volition and competing explanations.",
+    "description": "Holumn testimony including HI-010's impossible office floors, local boundary tests, rescue and Church aftermath.",
     "speakers": [
       "Victims and Incident Witnesses",
       "Archive"
@@ -1054,13 +1082,20 @@
       },
       {
         "id": "v9",
-        "label": "v9 · Current",
-        "file": "holumn-incidents-and-testimonies.md",
+        "label": "v9 · Archived",
+        "file": "holumn-incidents-and-testimonies-v9.md",
         "updated": "2026-09-29",
         "description": "HI-009, the Oneiric Confluence: shared dreams, weakened volition and competing explanations."
+      },
+      {
+        "id": "v10",
+        "label": "v10 · Current",
+        "file": "holumn-incidents-and-testimonies.md",
+        "updated": "2026-09-29",
+        "description": "HI-010, There Is No Eleventh Floor: architectural entrapment, tested boundaries and witness suppression."
       }
     ],
-    "defaultVersion": "v9"
+    "defaultVersion": "v10"
   },
   {
     "slug": "questions-to-be-answered",
@@ -1091,8 +1126,8 @@
     "title": "Character Capability Balance",
     "topic": "Editorial Ledger",
     "file": "character-capability-balance.md",
-    "updated": "2026-09-12",
-    "description": "Confirmed physical distinctions, observational preparation, and open training and endurance limits.",
+    "updated": "2026-09-29",
+    "description": "Capability limits and open questions, including protective gloves and the bounded cost of Lynleit's office-building rescue.",
     "speakers": [
       "Character Archive"
     ],
@@ -1113,13 +1148,20 @@
       },
       {
         "id": "v3",
-        "label": "v3 · Current",
-        "file": "character-capability-balance.md",
+        "label": "v3 · Archived",
+        "file": "character-capability-balance-v3.md",
         "updated": "2026-09-12",
         "description": "Confirmed physical distinctions, observational preparation, and open training and endurance limits."
+      },
+      {
+        "id": "v4",
+        "label": "v4 · Current",
+        "file": "character-capability-balance.md",
+        "updated": "2026-09-29",
+        "description": "Gloves prevent routine burns without eliminating flame exertion, while HI-010's local counterplay stays incident-specific."
       }
     ],
-    "defaultVersion": "v3"
+    "defaultVersion": "v4"
   },
   {
     "slug": "duchy-of-narvea",

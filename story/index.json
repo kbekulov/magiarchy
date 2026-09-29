@@ -1,5 +1,32 @@
 [
   {
+    "slug": "there-is-no-eleventh-floor",
+    "number": "Unplaced Chapter",
+    "title": "There Is No Eleventh Floor",
+    "status": "Scene draft",
+    "file": "there-is-no-eleventh-floor.md",
+    "updated": "2026-09-29",
+    "description": "An office worker enters a lift in a ten-floor building. Lynleit finds him on Floor Forty-Seven, with warnings written on his arm and no way home he can trust.",
+    "characters": ["Lynleit"],
+    "timelinePhase": null,
+    "timelineLabel": "Unplaced",
+    "arcLabel": "ARC 1",
+    "events": [
+      "A late-working office employee encounters impossible floors, repeated rooms, misleading voices and clocks that cease to agree.",
+      "Lynleit finds him on Floor Forty-Seven and tests the stairs, painted boundaries, airflow and door fittings instead of trusting signs.",
+      "Her small silver pistol and spare magazine buy time but cannot stop the pursuer. She throws the empty pistol to interrupt its approach.",
+      "She puts on protective black leather gloves and tells the witness to cover his head and skin with his jacket. After he loses it, she covers him with her blue coat.",
+      { "text": "The coat's hem and lining appear to settle around exposed skin after Lynleit steps away, suggesting an agency the witness cannot explain.", "status": "inferred" },
+      "Blue flame follows the painted boundary through the distorted stairwell. Lynleit's protected hands remain unburned, but she suffers bleeding, a split lip and tremors.",
+      "They stop choosing routes, enter an elevator that appears, and return to the office at 22:55, six minutes after the witness's departure.",
+      "Lynleit makes a guarded call. Church envoys examine the witness, have already contacted his relatives, and take him away.",
+      "He spends seventeen days in a monastery, returns to work using the stairs, and months later glimpses someone resembling Lynleit across a railway platform."
+    ],
+    "contentKind": "scene",
+    "defaultVersion": "v1",
+    "versions": [{ "id": "v1", "label": "v1 · Current", "file": "there-is-no-eleventh-floor.md", "updated": "2026-09-29", "contentKind": "scene" }]
+  },
+  {
     "slug": "before-the-first-bell",
     "number": "Chapter 01",
     "title": "Before the First Bell",

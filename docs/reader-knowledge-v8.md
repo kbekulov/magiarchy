@@ -50,7 +50,7 @@ This writer reference separates what happens from what a character knows and wha
 
 **Event:** Fionn discreetly replaces Lynleit's coat before she discovers its properties. She makes that discovery after his death, during the middle of Arc 1.
 
-**Reader:** The archive explains the replacement and protective properties. There Is No Eleventh Floor shows the coat apparently settling around the witness after Lynleit moves away. This supports suspicion of agency without naming the material or revealing Fionn's substitution. The later discovery Chapter has not been written. The ordinary blue suede jacket lost in the river is a separate garment.
+**Reader:** The archive explains the replacement and protective properties. The Chapter in which the discovery becomes legible to the reader has not been written. The ordinary blue suede jacket lost in the river is a separate garment.
 
 **Characters:** Fionn knows of his replacement. Lynleit learns what she has been wearing later. Do not treat her river jacket loss as the discovery of the artefact, or assume that every ally knows the coat's nature.
 
@@ -139,18 +139,6 @@ This writer reference separates what happens from what a character knows and wha
 **Characters:** Sherie initially thinks the dreams are private; Felix suspects their shared nature earlier. The red room and black-water details expose the correspondence during the briefing. The group hears about both couples' dreams, but does not witness the later kiss or receive a confirmed account of it on-page. Sherie and Felix remember that choice and arrange coffee. Natalia has not yet received their final report. Kyrien already knows about magic; the chapter cannot precede his river revelation. Sherie has learned enough by the briefing to discuss a Holumn, but her first discovery is not depicted here.
 
 **Source:** [Chapter v1](../story.html?chapter=the-shared-night&version=v1), [Moment v1](../moments.html?moment=the-shared-night&version=v1), [research record](../docs.html?doc=oneiric-confluence).
-
-## There Is No Eleventh Floor
-
-**Event period:** Arc 1, after Fionn substitutes the coat and before Lynleit discovers its nature. No numbered phase is assigned; its relation to Fionn's death and the river operation remains open.
-
-**Reader:** The first-person witness experiences conflicting clocks, repeated rooms, lures, gunfire, gloves, shelter and blue flame. He notices the coat moving but cannot explain it. The preface marks its apparent independent cooperation as an inference, not an on-page revelation of leviathan hide. The archive knows that it chooses to cooperate. Lynleit's refusal to choose another route precedes escape, but does not prove her hypothesis of the whole phenomenon.
-
-**Characters:** Lynleit knows how to handle her flame and protect exposed skin. She does not know the coat's material or agency. The witness learns her name when an envoy addresses her after the rescue. Her phone call avoids technical disclosure; the envoys' later questioning does not tell him all they know. The ordinary physician is given a mundane accident account and does not conduct the questioning about doors.
-
-**Aftermath:** The pistol is left behind. The gloves prevent burns, not exertion: a nosebleed, split lip and tremors are the scene's small recoverable cost. Lynleit expects healing in days. The witness's seventeen-day stay and later recollection are retrospective passages in his own account, not objective proof that the Church erased or replaced him. The woman across the railway platform is not positively identified.
-
-**Source:** [Chapter](../story.html?chapter=there-is-no-eleventh-floor), [Moment](../moments.html?moment=there-is-no-eleventh-floor), [gloves](../items.html?item=lynleits-protective-gloves), [coat](../items.html?item=leviathan-hide-coat).
 
 ## Table evidence checks
 

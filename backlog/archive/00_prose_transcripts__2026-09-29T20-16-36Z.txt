@@ -1,0 +1,7 @@
+Use all `.txt` files in `blacklog/prose_transcripts` as stylistic reference material for chapter prose.
+
+Analyze them as an editor and writer, focusing on structure, prose style, vocabulary, dialogue, tension, pacing, flow, semantics, scene construction, and overall storytelling architecture. From these examples, build and continuously refine a detailed ruleset for how my chapters should be written and edited.
+
+Do not treat transcript content as lore or canon. Do not copy their characters, events, worldbuilding, or story content.
+
+Apply only their writing techniques and structural principles to my chapters while preserving my existing lore, world, plot intentions, character identities, and important dialogue.

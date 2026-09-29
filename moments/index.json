@@ -1,5 +1,46 @@
 [
   {
+    "slug": "there-is-no-eleventh-floor",
+    "code": "MOM-030",
+    "title": "There Is No Eleventh Floor",
+    "status": "Scene draft",
+    "placementStatus": "Unplaced",
+    "timelinePhase": null,
+    "timelineLabel": "Unplaced",
+    "arcLabel": "ARC 1",
+    "sequence": 30,
+    "sceneType": "Holumn rescue and witness handoff",
+    "thread": "Impossible architecture; Church suppression",
+    "location": "A ten-floor office building; a monastery; a railway platform",
+    "summary": "Lynleit rescues an office worker from a building whose floors cannot be counted. His return brings seventeen days in Church custody, not an immediate return to ordinary life.",
+    "purpose": "Follow an ordinary witness through immediate fear, practical rescue and the uncertainty of institutional protection.",
+    "characters": [{ "name": "Lynleit", "slug": "lynleit" }],
+    "characterAnchors": [],
+    "known": [
+      "The witness encounters repeated rooms, impossible floor numbers, luring voices and conflicting clocks.",
+      "Lynleit tests physical traces and observed boundaries, makes a wrong choice at one door, and changes course.",
+      "The compact silver pistol and a spare magazine cannot stop the pursuer; the empty weapon becomes a thrown distraction.",
+      "Lynleit wears protective gloves. The witness first tries his jacket, then shelters beneath her coat when the jacket is lost.",
+      { "text": "The unexplained movement of the covering suggests that the coat cooperates independently.", "status": "inferred" },
+      "The blue boundary delays the pursuer. Lynleit's hands remain unburned, but she bleeds and trembles.",
+      "A pause in choosing routes precedes the elevator's return; the incident does not establish a guaranteed escape method.",
+      "Church envoys collect the witness. He later recounts seventeen days in a monastery and lasting fear of elevators."
+    ],
+    "openQuestions": [
+      "Where in Arc 1 does this occur after the coat substitution and before Lynleit learns its nature?",
+      "What selects a victim or admits a rescuer, and do the figures belong to one Holumn?",
+      "Why do some painted boundaries hold, and can refusing routes ever reproduce the escape?",
+      "Is the railway-platform woman Lynleit, and how much of the witness's later uncertainty follows trauma or Church intervention?"
+    ],
+    "continuityBefore": "Fionn has already substituted the leviathan-hide coat. Lynleit still does not know its material or agency. Its later discovery remains in the middle of Arc 1 after his death; the incident's relation to his death is not fixed.",
+    "continuityAfter": "The witness spends seventeen days in Church custody and later returns to work. Lynleit expects her superficial injury to heal in a few days. The pistol remains inside the manifestation; no recovery is recorded.",
+    "chapterSlug": "there-is-no-eleventh-floor",
+    "chapterVersion": "v1",
+    "updated": "2026-09-29",
+    "defaultVersion": "v1",
+    "versions": [{ "id": "v1", "label": "v1 · Current", "updated": "2026-09-29" }]
+  },
+  {
     "slug": "university-days-before-the-spill",
     "code": "MOM-028",
     "title": "University Days",

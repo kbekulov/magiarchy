@@ -2,16 +2,6 @@
 
 Historical notes relocated from Prose Style v10 on 19 September 2026. These record how particular revisions were made, including superseded choices. They are not a style corpus for new prose. Use the [current house style](../docs.html?doc=prose-style); consult this history for provenance, continuity, comparison, and explicitly approved passages. The complete earlier reference remains available as [v10](../docs.html?doc=prose-style&version=v10).
 
-## There Is No Eleventh Floor: 29 September 2026
-
-The author supplied the first-person office-worker account and specifically approved its narrative voice, rescue, gun use and aftermath. Intake preserves its recurring questions, numbered disorientation, practical tests, blunt exchanges and monastery coda. Added real-time passages follow the witness checking the wall, repeated offices, window, corridor and covering rather than replacing his experience with a list of terrors.
-
-The follow-up replaces routine burn scars with belt-carried protective gloves and a small recoverable exertion cost. It requests practical victim coverage, covert cooperation from the leviathan-hide coat, a theatrical flame boundary, a compact silver pistol with a spare magazine and a final throw, and guarded Church dialogue. The final text gives the phone call and envoys their ordinary questions about denomination, meals, waking time and relatives without explaining the hidden machinery to the witness.
-
-The original file is retained unchanged in the backlog archive. It is provenance, not a second registered Chapter version overriding the author's corrections. The permanent transcript-reference rule was adopted separately; no transcript samples were available or analysed. The scene does not supply a new general house style or require every Chapter to use first person and short paragraphs.
-
-The Nasu advisory check separates usable observations from claimed laws: painted edges constrain some figures; a refusal to choose precedes one escape; flame buys time without destroying the whole incident. No additional Holumn mechanism was canonized to complete the audit. The coat's material remains archive knowledge rather than the narrator's discovery.
-
 ## Narvean fog: 23 September 2026
 
 The author establishes fog as a recurring national problem, especially in selected areas, with unusual fog during certain Spill incidents. The river Chapter v3 adds interrupted sightlines while retaining the near-bank view needed for Kyrien's discovery and the city-side view needed for Felix's fallback. Dialogue, the underwater struggle, and the recovery sequence remain intact. The Last Man Out v2 adds the park's fog to its outline without inventing Heyk's missing assault or evacuation sequence.

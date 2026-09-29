@@ -14,14 +14,6 @@ The current six-axis graph is provisional. Axis names, definitions, and even the
 - Social, intellectual, physical, technical, and supernatural competence should not be collapsed into a single idea of power.
 - Balance does not require equal strength. It requires meaningful tradeoffs, dependency on others, and credible ways to fail.
 
-## Blue flame: the office-building rescue
-
-The author confirms that Lynleit relies on special black leather gloves to protect her skin during blue-flame outbursts. Ordinary competent use need not scar her; exposed skin or clumsy handling can. She must also protect a nearby victim, using their jacket over head and skin or throwing her own coat over them when that fails. The coat can choose to cooperate without obeying her or revealing its nature to her.
-
-In [There Is No Eleventh Floor](../story.html?chapter=there-is-no-eleventh-floor), the gloves prevent burns while exertion leaves a nosebleed, split lip and tremors, with recovery expected in days. These are the scene's cost, not a fixed symptom schedule for every flame use. The small pistol and spare magazine buy time; throwing the empty weapon buys another moment. Neither ordinary weapons nor flame destroy the whole manifestation.
-
-The inherited painted boundary and distorted space belong to HI-010's local evidence. Do not give Lynleit general spatial control, a universal fire barrier against Holumns, or a guaranteed escape by refusing choices. Her hypothesis works well enough to attempt this rescue; its full explanation remains open. Capability scores are unchanged, and the wider duration and recovery questions below remain unanswered beyond this instance.
-
 ## Capability questions
 
 These questions define what each character can do, what they cannot do, and why another character remains necessary. Confidence measures how much of the answer is already established elsewhere on the site.

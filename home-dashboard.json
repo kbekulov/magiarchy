@@ -1,10 +1,10 @@
 {
   "schema": 1,
   "counts": {
-    "chapters": 9,
-    "moments": 29,
+    "chapters": 10,
+    "moments": 30,
     "characters": 18,
-    "questions": 143,
+    "questions": 147,
     "contradictions": 0
   },
   "tasks": [
@@ -42,6 +42,10 @@
       "title": "Unplaced Moments",
       "hint": "No Story phase assigned",
       "rows": [
+        {
+          "title": "There Is No Eleventh Floor",
+          "href": "moments.html?moment=there-is-no-eleventh-floor&version=v1"
+        },
         {
           "title": "University Days",
           "href": "moments.html?moment=university-days-before-the-spill&version=v1"
@@ -108,10 +112,15 @@
         }
       ],
       "href": "character.html?character=lynleit",
-      "total": 21,
-      "prose": 8,
+      "total": 22,
+      "prose": 9,
       "outline": 13,
       "scenes": [
+        {
+          "title": "There Is No Eleventh Floor",
+          "href": "moments.html?moment=there-is-no-eleventh-floor&version=v1",
+          "kind": "Scene prose"
+        },
         {
           "title": "The Prosecutor's Return",
           "href": "moments.html?moment=the-prosecutors-return&version=v1",
@@ -1084,6 +1093,42 @@
     }
   ],
   "questions": [
+    {
+      "id": "question-where-in-arc-1-does-the-office-building-rescue-fall-after-fionn-s-coat-substitution-and-before-l",
+      "title": "There Is No Eleventh Floor: placement",
+      "text": "Where in Arc 1 does the office-building rescue fall after Fionn's coat substitution and before Lynleit discovers its nature, relative to his death and the river operation?",
+      "confidence": 0,
+      "meta": "0% answered",
+      "section": "Current questions",
+      "href": "docs.html?doc=questions-to-be-answered#question-where-in-arc-1-does-the-office-building-rescue-fall-after-fionn-s-coat-substitution-and-before-l"
+    },
+    {
+      "id": "question-what-selects-victims-or-admits-rescuers-why-do-some-inherited-boundaries-hold-and-can-waiting-fo",
+      "title": "HI-010: entry and escape",
+      "text": "What selects victims or admits rescuers, why do some inherited boundaries hold, and can waiting for a route reproduce the escape?",
+      "confidence": 0,
+      "meta": "0% answered",
+      "section": "Current questions",
+      "href": "docs.html?doc=questions-to-be-answered#question-what-selects-victims-or-admits-rescuers-why-do-some-inherited-boundaries-hold-and-can-waiting-fo"
+    },
+    {
+      "id": "question-do-the-figures-belong-to-one-holumn-what-becomes-of-the-manifestation-and-lost-pistol-and-is-the",
+      "title": "HI-010: forms and aftermath",
+      "text": "Do the figures belong to one Holumn, what becomes of the manifestation and lost pistol, and is the later platform sighting actually Lynleit?",
+      "confidence": 0,
+      "meta": "0% answered",
+      "section": "Current questions",
+      "href": "docs.html?doc=questions-to-be-answered#question-do-the-figures-belong-to-one-holumn-what-becomes-of-the-manifestation-and-lost-pistol-and-is-the"
+    },
+    {
+      "id": "question-who-made-lynleit-s-black-leather-gloves-when-did-she-acquire-them-and-what-are-their-protective-",
+      "title": "Protective gloves",
+      "text": "Who made Lynleit's black leather gloves, when did she acquire them, and what are their protective limits?",
+      "confidence": 0,
+      "meta": "0% answered",
+      "section": "Current questions",
+      "href": "docs.html?doc=questions-to-be-answered#question-who-made-lynleit-s-black-leather-gloves-when-did-she-acquire-them-and-what-are-their-protective-"
+    },
     {
       "id": "question-what-selects-sleepers-for-shared-contact-and-what-vector-range-and-duration-govern-hi-009",
       "title": "The Oneiric Confluence",
@@ -2375,6 +2420,15 @@
   "contradictions": [],
   "holumns": [
     {
+      "id": "HI-010",
+      "title": "There Is No Eleventh Floor",
+      "text": "An office worker enters an elevator in a ten-floor building and encounters impossible floors, repeated rooms and luring voices. Lynleit brings him back; six minutes have elapsed on the office clock.",
+      "meta": "HI-010 · Architectural entrapment and rescue testimony",
+      "detail": "Physical continuity and repeated tests offer temporary guidance. Waiting rather than choosing another route precedes an elevator's appearance. Neither this escape nor the painted boundary is established as universally reliable, and the Holumn is not shown destroyed.",
+      "detailLabel": "Known limits and uncertainties",
+      "href": "docs.html?doc=holumn-incidents-and-testimonies#there-is-no-eleventh-floor"
+    },
+    {
       "id": "HI-008",
       "title": "Bone Archive",
       "text": "The Bone Archive preserves experiences that have no place in the surviving account of a person's life. They return through memory and the body: an unexplained scar, a familiar pain, or a practiced movement its owner never learned. An officer steps aside before a shot is fired and later discovers a scar where the bullet would have entered.",
@@ -2439,6 +2493,15 @@
     }
   ],
   "moments": [
+    {
+      "id": "there-is-no-eleventh-floor",
+      "title": "There Is No Eleventh Floor",
+      "text": "Lynleit rescues an office worker from a building whose floors cannot be counted. His return brings seventeen days in Church custody, not an immediate return to ordinary life.",
+      "meta": "v1 · Scene draft",
+      "detail": "Unplaced",
+      "detailLabel": "Placement",
+      "href": "moments.html?moment=there-is-no-eleventh-floor&version=v1"
+    },
     {
       "id": "university-days-before-the-spill",
       "title": "University Days",
@@ -3409,7 +3472,7 @@
   "draftStatus": [
     {
       "label": "Scene drafts",
-      "count": 6,
+      "count": 7,
       "color": "#8992f9"
     },
     {

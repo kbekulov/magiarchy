@@ -1,0 +1,57 @@
+import assert from 'node:assert/strict';
+import fs from 'node:fs';
+import vm from 'node:vm';
+
+export async function testEleventhFloor(page, origin, engine) {
+  const read = file => fs.readFileSync(file, 'utf8');
+  const json = file => JSON.parse(read(file));
+  const slug = 'there-is-no-eleventh-floor';
+  const chapter = json('story/index.json').find(entry => entry.slug === slug);
+  const moment = json('moments/index.json').find(entry => entry.slug === slug);
+  assert.equal(chapter.timelinePhase, null);
+  assert.equal(moment.timelinePhase, null);
+  assert.equal(chapter.arcLabel, 'ARC 1');
+  assert.equal(moment.arcLabel, 'ARC 1');
+  assert.equal(moment.chapterVersion, chapter.defaultVersion);
+  const prose = read(`story/${chapter.file}`);
+  for (const detail of ['black leather gloves', 'a spare', 'She threw the pistol', 'Hands inside. Don\'t move.', 'Unbroken skin. No blister.', 'Mass is at eight', 'seventeen days', 'Forty-seven.', 'ordinary doctor']) assert.ok(prose.includes(detail), detail);
+  assert.ok(prose.length > 28000, 'Keep the full account, not just a synopsis');
+  for (const obsolete of ['Blue eyes.', 'Dark trousers.', 'burned hand', 'old burn scars', 'Special envoys. Ordinary cover.', 'Protective doctrinal containment']) assert.ok(!prose.includes(obsolete), obsolete);
+  assert.ok(prose.indexOf('pulled one on') < prose.indexOf('blue point'), 'Gloves precede flame');
+  assert.ok(prose.indexOf('“Lynleit,” the man') < prose.indexOf('“Lynleit.”'), 'Witness learns her name before using it');
+  const incident = json('holumns/index.json').incidents.find(entry => entry.id === 'HI-010');
+  assert.equal(incident.storyLink, `story.html?chapter=${slug}`);
+  assert.ok(json('items/index.json').items.find(entry => entry.slug === 'lynleits-protective-gloves'));
+  const characterSource = read('character.js');
+  const profiles = vm.runInNewContext(`${characterSource.slice(0, characterSource.indexOf('const profilesBySlug'))}; profileSeeds`);
+  const rescueOwners = profiles.filter(profile => profile.tradecraft?.some(entry => entry.label === 'The office-building rescue')).map(profile => profile.slug);
+  assert.equal(JSON.stringify(rescueOwners), JSON.stringify(['lynleit']), 'Rescue belongs only to Lynleit');
+  assert.ok(read('AGENTS.md').includes('backlog/prose_transcripts/'));
+  assert.ok(read('docs/prose-style.md').includes('No samples were present'));
+  const visit = async route => { await page.goto(`${origin}/${route}`); await page.waitForLoadState('networkidle'); };
+  for (const width of [1440, 390]) {
+    await page.setViewportSize({ width, height: 900 });
+    await visit(`story.html?chapter=${slug}`);
+    assert.ok(await page.locator('#chapter-reader').innerText().then(text => text.includes('Mass is at eight')));
+    assert.equal(await page.locator('.story-timeline .is-active').count(), 0, 'No invented active phase');
+    assert.equal(await page.locator('#chapter-reader-view .content-notice').count(), 0, 'Horror testimony is not an H Scene');
+    await page.locator('#chapter-reader h1').scrollIntoViewIfNeeded();
+    await page.screenshot({ path: `test-results/${engine}-eleventh-floor-${width}.png` });
+    await visit(`moments.html?moment=${slug}`);
+    assert.ok(await page.locator('.moment-reader').innerText().then(text => text.includes('ARC 1')));
+    await visit('items.html?item=lynleits-protective-gloves');
+    assert.ok(await page.locator('#main-content').innerText().then(text => text.includes('Skin protection')));
+    await visit('character.html?character=lynleit');
+    assert.ok(await page.locator('#character-moment-grid').innerText().then(text => text.includes('There Is No Eleventh Floor')));
+    await visit('holumns.html');
+    assert.ok(await page.locator('[data-incident="HI-010"]').isVisible());
+    await visit('church.html');
+    assert.ok(await page.locator('#office-witness').innerText().then(text => text.includes('seventeen days')));
+    await visit('docs.html?doc=prose-style');
+    assert.ok(await page.locator('#document-reader').innerText().then(text => text.includes('Transcript reference method')));
+    assert.ok(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1));
+  }
+  await visit('docs.html?doc=prose-style&version=v13');
+  assert.ok(!(await page.locator('#document-reader').innerText()).includes('Transcript reference method'), 'Historical style remains intact');
+  console.log(`${engine}: Eleventh Floor continuity, archive links, history and mobile readers passed.`);
+}

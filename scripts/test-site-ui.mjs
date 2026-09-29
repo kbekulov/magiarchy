@@ -21,6 +21,7 @@ import { testRelationshipDirection } from './test-relationship-direction.mjs';
 import { testSeptember28Backlog } from './test-september-28-backlog.mjs';
 import { testSharedNight } from './test-shared-night.mjs';
 import { testPageSpacing } from './test-page-spacing.mjs';
+import { testEleventhFloor } from './test-eleventh-floor.mjs';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const mime = { '.html': 'text/html', '.js': 'text/javascript', '.json': 'application/json', '.css': 'text/css', '.png': 'image/png', '.webp': 'image/webp', '.md': 'text/plain', '.mp3': 'audio/mpeg', '.wav': 'audio/wav' };
@@ -85,6 +86,11 @@ try {
         assert.deepEqual(errors, [], `${engine}: page-spacing browser errors`);
         continue;
       }
+      if (process.env.TEST_ELEVENTH_FLOOR_ONLY === '1') {
+        await testEleventhFloor(page, origin, engine);
+        assert.deepEqual(errors, [], `${engine}: Eleventh Floor browser errors`);
+        continue;
+      }
       if (process.env.TEST_BACKLOG_ONLY === '1') {
         await testSeptember28Backlog(page, origin, engine);
         await testMusicMovements(page, origin, engine);
@@ -132,6 +138,7 @@ try {
       }
       await testHomeFeed(page, origin, engine);
       await testPageSpacing(page, origin, engine);
+      await testEleventhFloor(page, origin, engine);
       await testHomeDashboard(page, origin, engine);
       if (process.env.TEST_HOME_ONLY === '1') {
         assert.deepEqual(errors, [], `${engine}: Home feed errors`);
@@ -307,8 +314,9 @@ try {
       await page.setViewportSize({ width: 1440, height: 900 });
       for (const [route, selector] of [['characters.html', '.character-card'], ['gallery.html', '.gallery-card'], ['music.html', '.music-card'], ['docs.html', '.document-card'], ['moments.html', '.moment-card']]) {
         await visit(route);
-        const cards = page.locator(selector);
-        assert.ok(await cards.count(), `${route}: no masonry cards`);
+        // H Scene filters intentionally hide some catalog cards by default.
+        const cards = page.locator(`${selector}:visible`);
+        assert.ok(await cards.count() >= 2, `${route}: not enough visible masonry cards`);
         const neighbor = cards.nth(1);
         const relativePosition = el => {
           const box = el.getBoundingClientRect(), grid = el.parentElement.getBoundingClientRect();

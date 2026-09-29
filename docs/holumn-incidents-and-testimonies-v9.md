@@ -6,32 +6,6 @@ Forms and countermeasures are collected in [Holumns](../holumns.html).
 
 The institutional readings below compare plausible interpretations of the same evidence. They are not transcripts of completed investigations unless a source explicitly establishes one. A stated Holumn property belongs to the archive; it is not automatically known to a witness or institution.
 
-## There Is No Eleventh Floor
-
-**Record:** HI-010
-
-**Known form:** Event-bound architectural entrapment
-
-**Primary medium:** An office building and its impossible routes
-
-[Read the witness's Chapter](../story.html?chapter=there-is-no-eleventh-floor) · [Scene record](../moments.html?moment=there-is-no-eleventh-floor)
-
-An unnamed employee enters the elevator at 22:49 in a building he knows has ten floors. The display descends below its single parking level. He encounters his own office on an impossible floor, repeating rooms, displaced residential halls, misleading voices and a phone that remains at 02:17 with 73 percent charge. Warnings written on his forearm include one concerning a woman in white whom he cannot remember meeting. These warnings are his survival notes, not verified universal rules.
-
-Lynleit finds him on Floor Forty-Seven. A dropped coin sounds above them, some grasping forms stop at a yellow safety stripe, and a door's opening direction contradicts the witness's memory of his own floor. She tests what remains physically usable while treating signs as unreliable. She also opens a dangerous door and immediately retreats. Her small silver pistol and spare magazine interrupt the final pursuer without stopping it; she throws the empty weapon at its face to gain another moment.
-
-She puts on her protective black leather gloves and tells him to cover his head and exposed skin with his jacket. When the jacket is lost, she throws her blue coat over him. The witness notices the covering settle around exposed skin after she moves away. Blue flame follows the painted edges through the building's distorted space and interrupts a limb reaching across the boundary. Her hands remain unburned; bleeding, a split lip and tremors show the effort's cost.
-
-After she stops choosing another route, an elevator appears. Both return to the ordinary office at 22:55. The six-minute clock interval does not measure the duration of their subjective experience. Neither the pause nor the fire proves a repeatable escape method or the destruction of the manifestation.
-
-Church special envoys collect the witness. He later recounts seventeen days in a monastery, ordinary care, repeated questioning, and explanations that undermine confidence in his own account. An ordinary physician sees a workplace-accident account; questioning about the impossible doors happens separately. Months later, a glimpse of a woman resembling Lynleit brings back the number forty-seven. Her identity and any direct supernatural alteration of his later memory remain unconfirmed.
-
-### Institutional readings
-
-**Ordinary account:** Panic, exhaustion and disorientation can explain parts of the witness's behaviour. They do not account for the full rescue narrative. The Church's reframing is an intervention in what he can report, not independent disproof of his experience.
-
-**Magi and special envoys:** A Holumn imposes hostile transitions without an established single destination. The copied thresholds and inherited painted boundaries offer local counterplay. Entry conditions, the relation among the figures, repeatability of escape and eventual containment remain unknown. Nothing identifies this incident as another form of the Nameless Street or Bone Archive.
-
 ## The Oneiric Confluence
 
 **HI-009 · Event-bound · Common name: The Shared Night.**

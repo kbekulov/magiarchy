@@ -2,14 +2,6 @@
 
 Write from the author's wording and approved passages first. Successful current Chapters and Moments, then this reference, outrank generic advice about good prose. Older drafts are evidence of earlier decisions, not a supply of sentences to imitate. [Style History](../docs.html?doc=prose-style-history) holds the Chapter examples and provenance; [Prose and Scene Guidance](../docs.html?doc=prose-and-scene-guidance) holds revision boundaries and exercises.
 
-## Transcript reference method
-
-The author has approved a continuing technique-only reference corpus under `backlog/prose_transcripts/`. No samples were present when this rule was established on 29 September 2026. This is a method for future analysis, not a report of findings.
-
-Read every supplied TXT as an editor and writer. Examine structure, vocabulary, dialogue, tension, pacing, flow, semantics, scene construction and the larger arrangement of information and consequence. For each reusable technique, record what the passage does, why it works there, where a MAGIARCHY Chapter could benefit, and where copying the technique would weaken the scene. Keep the rules detailed enough to guide an actual revision and refine them when later examples qualify an earlier conclusion.
-
-Transfer techniques, not sentences, characters, events, settings or lore. The transcripts are not canon. Preserve MAGIARCHY's world, plot intentions, character identities, important dialogue and the author-approved voice hierarchy. An isolated stylistic habit is not a compulsory rule for every Chapter. Label working editorial deductions separately from the author's established preferences; do not claim evidence from files that have not been supplied.
-
 ## What the prose pays attention to
 
 People trying to do something difficult interest us: an officer interpreting a bad report, a professor testing an explanation, a daughter discovering what her father withheld. Institutions, theology, technical magecraft, firearms, clothing, inheritance, and domestic inconvenience can all deserve close attention. Spend words where a detail changes someone's options or where the author genuinely cares about it.

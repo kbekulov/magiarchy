@@ -196,7 +196,7 @@ function createMomentCard(entry) {
   link.append(top, momentElement('h3', '', entry.title), momentElement('p', 'moment-card-summary', entry.summary));
 
   const position = momentElement('div', 'moment-card-position');
-  position.append(momentElement('span', '', `${phase?.arcLabel ?? 'Arc unassigned'} · ${phase?.title ?? entry.timelineLabel}`), momentElement('small', '', entry.placementStatus));
+  position.append(momentElement('span', '', `${phase?.arcLabel ?? entry.arcLabel ?? 'Arc unassigned'} · ${phase?.title ?? entry.timelineLabel}`), momentElement('small', '', entry.placementStatus));
   link.append(position);
 
   const metadata = momentElement('dl', 'moment-card-meta');
@@ -308,7 +308,7 @@ async function renderMomentReader(entry, entries, requestedVersion) {
   document.querySelector('#moment-location').textContent = selected.location;
   document.querySelector('#moment-date').textContent = `Updated ${selected.updated}`;
   const phase = storyPhases.find((candidate) => candidate.id === selected.timelinePhase);
-  const phaseLabel = `${phase?.arcLabel ?? 'Arc unassigned'} · ${phase?.title ?? selected.timelineLabel}`;
+  const phaseLabel = `${phase?.arcLabel ?? selected.arcLabel ?? 'Arc unassigned'} · ${phase?.title ?? selected.timelineLabel}`;
   document.querySelector('#moment-phase-name').textContent = phaseLabel;
   document.querySelector('#moment-story-link').href = selected.timelinePhase ? `story.html?phase=${encodeURIComponent(selected.timelinePhase)}` : 'story.html';
   document.querySelector('#moment-before').textContent = selected.continuityBefore;

@@ -246,7 +246,7 @@ function createChapterCard(entry) {
   timelineDot.setAttribute('aria-hidden', 'true');
   const timelineText = document.createElement('span');
   const phase = storyPhases.find((candidate) => candidate.id === entry.timelinePhase);
-  timelineText.textContent = `${phase?.arcLabel ?? 'Arc unassigned'} · ${phase?.title ?? entry.timelineLabel ?? 'Phase unassigned'}`;
+  timelineText.textContent = `${phase?.arcLabel ?? entry.arcLabel ?? 'Arc unassigned'} · ${phase?.title ?? entry.timelineLabel ?? 'Phase unassigned'}`;
   timelinePosition.append(timelineDot, timelineText);
 
   const characters = document.createElement('div');
