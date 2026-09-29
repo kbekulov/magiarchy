@@ -20,6 +20,7 @@ import { testAphorisms } from './test-aphorisms.mjs';
 import { testRelationshipDirection } from './test-relationship-direction.mjs';
 import { testSeptember28Backlog } from './test-september-28-backlog.mjs';
 import { testSharedNight } from './test-shared-night.mjs';
+import { testPageSpacing } from './test-page-spacing.mjs';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const mime = { '.html': 'text/html', '.js': 'text/javascript', '.json': 'application/json', '.css': 'text/css', '.png': 'image/png', '.webp': 'image/webp', '.md': 'text/plain', '.mp3': 'audio/mpeg', '.wav': 'audio/wav' };
@@ -79,6 +80,11 @@ try {
         assert.deepEqual(errors, [], `${engine}: shared-night browser errors`);
         continue;
       }
+      if (process.env.TEST_SPACING_ONLY === '1') {
+        await testPageSpacing(page, origin, engine);
+        assert.deepEqual(errors, [], `${engine}: page-spacing browser errors`);
+        continue;
+      }
       if (process.env.TEST_BACKLOG_ONLY === '1') {
         await testSeptember28Backlog(page, origin, engine);
         await testMusicMovements(page, origin, engine);
@@ -125,6 +131,7 @@ try {
         continue;
       }
       await testHomeFeed(page, origin, engine);
+      await testPageSpacing(page, origin, engine);
       await testHomeDashboard(page, origin, engine);
       if (process.env.TEST_HOME_ONLY === '1') {
         assert.deepEqual(errors, [], `${engine}: Home feed errors`);

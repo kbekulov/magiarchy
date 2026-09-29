@@ -1,5 +1,6 @@
 :root {
   --music-dock-space: 0px;
+  --page-content-inset: clamp(16px, 2vw, 24px);
   --music-safe-bottom: env(safe-area-inset-bottom, 0px);
   color-scheme: dark;
   --bg: #1e1f22;
@@ -10350,9 +10351,7 @@ a.moment-connection-card:hover {
   padding: 0 30px 60px;
 }
 
-.character-breadcrumbs {
-  padding-top: 20px;
-}
+.character-breadcrumbs { padding-top: 0; }
 
 .character-profile-hero {
   display: grid;
@@ -17020,3 +17019,18 @@ a.equipment-card:focus-visible {
 .content-filter-status { color: var(--text-muted, #b5bac1); font-size: .8rem; margin: .6rem 0; }
 .holumn-incident-grid > [hidden], .document-card[hidden], .moment-card[hidden] { display: none !important; }
 .holumn-incident-grid a > .content-notice { color: #dfbd7d; font-family: inherit; letter-spacing: normal; }
+
+/* Page-start spacing belongs to the container, not whichever child loads first.
+   Use page-content-start for future standalone readers. Keep this after the
+   responsive padding shorthands; do not inset media or compound card interiors. */
+:is(.page-content-start, .gallery-reader-view, .resource-reader, .panel-reader,
+    .document-reader-view, .moment-reader, .character-profile-content,
+    .institution-scroll, .duchy-scroll) {
+  padding-block-start: var(--page-content-inset);
+}
+
+:is(.page-content-start, .gallery-reader-view, .resource-reader, .panel-reader,
+    .document-reader-view, .moment-reader, .character-profile-content,
+    .institution-scroll, .duchy-scroll) > .document-breadcrumbs {
+  padding-block-start: 0;
+}

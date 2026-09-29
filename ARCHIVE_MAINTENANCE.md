@@ -25,6 +25,8 @@ Pencil only and Colored only form a second mutually exclusive pair, independent 
 
 Shared UI invariants: Music uses the Characters archive toolbar with category and tag chips. Track assignments are editable catalog metadata, not new canon. Character cards randomize registered chibis with visible era labels; profile artwork uses image-half navigation, swipes, and thumbnails, without arrow buttons. Timeline counts may expand anywhere: retain IDs, derive numbers from order, and use the shared labelled Arc bands in Story, Moments, and profile timelines. Never infer an unplaced event's Arc merely to color it.
 
+Page-start spacing belongs to the content container, not a breadcrumb or notice. The shared `--page-content-inset` rule covers standalone readers and breadcrumb-led World pages; use `page-content-start` for new equivalent containers. Direct breadcrumbs do not add a second top inset. Preserve existing catalog heading padding, sticky header dimensions and edge-to-edge media. Run `TEST_SPACING_ONLY=1` with the UI runner to check desktop/mobile entry points, notices and a newly prepended first child.
+
 1. The author is the only final authority over canon.
 2. Established canon is written as fact on public wiki surfaces.
 3. Questions, contradictions, mock structures, audit proposals, and working interpretations remain in writer-facing Docs or private page notes.
