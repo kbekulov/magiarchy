@@ -19,6 +19,7 @@ import { testSherieFelixBanter } from './test-sherie-felix-banter.mjs';
 import { testAphorisms } from './test-aphorisms.mjs';
 import { testRelationshipDirection } from './test-relationship-direction.mjs';
 import { testSeptember28Backlog } from './test-september-28-backlog.mjs';
+import { testSharedNight } from './test-shared-night.mjs';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const mime = { '.html': 'text/html', '.js': 'text/javascript', '.json': 'application/json', '.css': 'text/css', '.png': 'image/png', '.webp': 'image/webp', '.md': 'text/plain', '.mp3': 'audio/mpeg', '.wav': 'audio/wav' };
@@ -71,6 +72,11 @@ try {
       if (process.env.TEST_MUSIC_ONLY === '1') {
         await testMusicMovements(page, origin, engine);
         assert.deepEqual(errors, [], `${engine}: music errors`);
+        continue;
+      }
+      if (process.env.TEST_SHARED_NIGHT_ONLY === '1') {
+        await testSharedNight(page, origin, engine);
+        assert.deepEqual(errors, [], `${engine}: shared-night browser errors`);
         continue;
       }
       if (process.env.TEST_BACKLOG_ONLY === '1') {
@@ -251,6 +257,7 @@ try {
       assert.ok(await toggle.evaluate(el => el === document.activeElement));
       await page.getByRole('button', { name: 'Search archive', exact: true }).click();
       await page.getByPlaceholder('Search characters, scenes, Holumns, weapons...').fill('Doom');
+      await page.getByRole('group', { name: 'Search H Scene visibility' }).getByRole('switch', { name: 'Include H Scenes', exact: true }).check();
       await page.waitForFunction(() => document.querySelector('.global-search-result'));
       const current = await page.locator('.global-search-result').evaluateAll(links => links.map(link => link.getAttribute('href')));
       assert.ok(current.includes('story.html?chapter=doom-has-an-address&version=v7'), 'Canon chapter missing from search');
@@ -520,6 +527,7 @@ try {
       await testSeptemberPanelIntake(page, origin, engine);
       await testGalleryResources(page, origin, engine);
       await testGalleryPanels(page, origin, engine);
+      await testSharedNight(page, origin, engine);
       assert.deepEqual(errors, [], `${engine}: browser script errors`);
       console.log(`${engine}: ${pages.length} routes at 3 widths; intermediate panes at 6 widths; reader navigation, filtering, version search, note focus, map movement, entity styling, and portrait eras passed.`);
     } finally { await browser.close(); }

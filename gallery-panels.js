@@ -114,6 +114,7 @@
     describe(); schedule();
   }
   function showRecord(record) {
+    window.MAGIARCHY_CONTENT.annotate(reader, window.MAGIARCHY_PANELS.url(record), true);
     document.body.classList.add('panel-reading');
     collection.hidden = true;
     collections.hidden = true;
@@ -240,6 +241,7 @@
         if (cover) img.alt = cover.alt;
         const copy = node('div', null, 'panel-card-copy');
         copy.append(node('span', record.nonCanon ? `Non-canon · ${record.medium}` : record.medium, 'doc-topic'), node('h2', record.title), node('p', record.summary), node('span', `${record.beats.length} ${record.nonCanon ? 'studies' : 'beats'} · ${record.panels.length} images · Open scene →`, 'panel-card-count'));
+        window.MAGIARCHY_CONTENT.annotate(copy, window.MAGIARCHY_PANELS.url(record));
         anchor.append(img, copy); card.append(anchor); return card;
       }));
       $('#panel-results').textContent = `${shown.length} of ${records.length} scenes`;

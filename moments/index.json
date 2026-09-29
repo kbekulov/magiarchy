@@ -4693,5 +4693,82 @@
       "Sherie looked back up with a small smile. Felix still had not played."
     ],
     "updated": "2026-09-26"
+  },
+  {
+    "slug": "the-shared-night",
+    "code": "MOM-029",
+    "title": "The Shared Night",
+    "status": "Canon events · Scene draft",
+    "placementStatus": "Unplaced",
+    "timelinePhase": null,
+    "timelineLabel": "Unplaced",
+    "sequence": 29,
+    "sceneType": "Shared-dream investigation",
+    "thread": "The Oneiric Confluence; Sherie and Felix",
+    "location": "Vilen; a briefing room; shared dream environments",
+    "summary": "Natalia investigates corresponding dreams. Sherie and Felix confront their remembered intimacy, while Lynleit and Kyrien report a quiet house by water.",
+    "purpose": "Investigate compromised volition without treating dream behaviour as a confession, and distinguish Sherie and Felix’s chosen kiss from the preceding compulsion.",
+    "characters": [
+      {
+        "name": "Natalia",
+        "slug": "natalia"
+      },
+      {
+        "name": "Lynleit",
+        "slug": "lynleit"
+      },
+      {
+        "name": "Kyrien",
+        "slug": "kyrien"
+      },
+      {
+        "name": "Felix",
+        "slug": "felix"
+      },
+      {
+        "name": "Sherie",
+        "slug": "sherie"
+      },
+      {
+        "name": "Reiner",
+        "slug": "reiner"
+      },
+      {
+        "name": "Hiyu",
+        "slug": "hiyu"
+      },
+      {
+        "name": "Yulia",
+        "slug": "yulia"
+      }
+    ],
+    "characterAnchors": [],
+    "known": [
+      "Independent reports describe corresponding dream memories, including violence, grief and intimate encounters, without corresponding bodily injuries.",
+      "Natalia briefs the group on the Oneiric Confluence and rejects treating dream behaviour as a confession.",
+      "Sherie discovers that Felix remembers their recurring sexual dreams. Their discussion exposes the difference between remembered participation and freely chosen action.",
+      "Lynleit and Kyrien describe a shared house, rain, tea, cards, two bedrooms and a cat.",
+      "Sherie and Felix agree to test whether they can resist the dream. Acknowledging their attachment helps them regain choice, although the pressure returns before easing again.",
+      "Once they can step away, Sherie deliberately kisses Felix. They wake, exchange messages and arrange coffee."
+    ],
+    "openQuestions": [
+      "Where does the incident fall within the Story, and relative to the couples’ waking intimacy?",
+      "How did Sherie first learn about magic, and who admitted her to this investigation?",
+      "What selects participants, and how do overlapping sleep and waking chronology affect contact?",
+      "What makes recognition effective or ineffective, and does a dream continue with an echo after someone wakes?"
+    ],
+    "continuityBefore": "Sherie and Felix have developed familiarity through repeated professional encounters. Kyrien already knows about magic; Sherie knows enough by the briefing to participate in the investigation.",
+    "continuityAfter": "Sherie and Felix remember a kiss chosen after the pressure eases and arrange coffee. Their longer-term response, Felix’s attachment to Lynleit and the incident’s resolution remain open.",
+    "chapterSlug": "the-shared-night",
+    "chapterVersion": "v1",
+    "updated": "2026-09-29",
+    "defaultVersion": "v1",
+    "versions": [
+      {
+        "id": "v1",
+        "label": "v1 · Current",
+        "updated": "2026-09-29"
+      }
+    ]
   }
 ]

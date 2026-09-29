@@ -43,7 +43,8 @@
         "HI-002",
         "HI-005",
         "HI-006",
-        "HI-008"
+        "HI-008",
+        "HI-009"
       ]
     },
     {
@@ -195,6 +196,22 @@
       "knownWeakness": "The curse recognizes the egos responsible for the Holumn's destruction. The advisers identify the death of either subject as a way to release the survivor. Lynleit and Kyrien instead undergo enough reciprocal identity change to break its recognition. That outcome does not establish a reliable treatment for other subjects or curses.",
       "spillContribution": "Destroying this Holumn transfers its fatal condition to its killers. Lynleit and Kyrien survive after an incomplete attempt at intimacy changes both identities enough to break its recognition.",
       "storyLink": "story.html?chapter=doom-has-an-address"
+    },
+    {
+      "id": "HI-009",
+      "slug": "the-oneiric-confluence",
+      "title": "The Oneiric Confluence",
+      "recordType": "Shared-dream incident",
+      "types": [
+        "event"
+      ],
+      "summary": "Sleepers remember encounters in a common dream environment. Their personalities remain recognizable while ordinary inhibition and the ability to refuse weaken.",
+      "ordinaryReading": "Coincidence, private dreams or unreliable recollection, until independently matching details become difficult to dismiss.",
+      "hiddenReading": "A Holumn connects sleepers through shared dream experience. Its relation to waking chronology and the source of particular actions remain uncertain.",
+      "observedEffect": "Corresponding conversations and emotionally important events survive waking, with discrepancies in peripheral details. Reported dreams include violence, intimacy, grief and ordinary companionship. Early reports show no corresponding injuries.",
+      "knownWeakness": "Naming and recognizing a pressure can sometimes restore a gap between impulse and action. This neither ends the dream nor guarantees safety or lasting control.",
+      "spillContribution": "Unconscious experience ceases to be reliably private. Shared recollection can damage trust even when the body wakes unharmed.",
+      "storyLink": "story.html?chapter=the-shared-night"
     }
   ]
 }

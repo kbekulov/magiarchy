@@ -266,6 +266,7 @@ function createChapterCard(entry) {
   footer.append(date, arrow);
 
   link.append(top, title, kind, description, timelinePosition, characters, footer);
+  window.MAGIARCHY_CONTENT.annotate(link, link.href);
   card.append(link);
   return card;
 }
@@ -288,6 +289,18 @@ function showChapterLibrary(entries) {
   filters.setAttribute('aria-label', 'Chapter formats');
   const group = document.createElement('div');
   group.className = 'filter-group';
+  let selectedKind = 'all';
+  const contentFilter = window.MAGIARCHY_CONTENT.controls(filters, applyFilters);
+  const result = document.createElement('p');
+  result.className = 'content-filter-status'; result.setAttribute('aria-live', 'polite');
+  function applyFilters() {
+    let visible = 0;
+    [...chapterCardGrid.children].forEach(card => {
+      card.hidden = (selectedKind !== 'all' && card.dataset.contentKind !== selectedKind) || !contentFilter.matches(card.querySelector('a').href);
+      if (!card.hidden) visible++;
+    });
+    result.textContent = `${visible} of ${entries.length} Chapters · H Scenes hidden unless selected`;
+  }
   ['all', 'scene', 'outline', 'writer-gap'].forEach(kind => {
     const button = document.createElement('button');
     button.type = 'button';
@@ -296,7 +309,8 @@ function showChapterLibrary(entries) {
     button.setAttribute('aria-pressed', String(kind === 'all'));
     button.classList.toggle('is-active', kind === 'all');
     button.addEventListener('click', () => {
-      [...chapterCardGrid.children].forEach(card => { card.hidden = kind !== 'all' && card.dataset.contentKind !== kind; });
+      selectedKind = kind;
+      applyFilters();
       [...group.children].forEach(candidate => {
         candidate.setAttribute('aria-pressed', String(candidate === button));
         candidate.classList.toggle('is-active', candidate === button);
@@ -304,8 +318,9 @@ function showChapterLibrary(entries) {
     });
     group.append(button);
   });
-  filters.append(group);
-  chapterCardGrid.before(filters);
+  filters.prepend(group);
+  chapterCardGrid.before(filters, result);
+  applyFilters();
 }
 
 function setMomentContextPhase(phaseId) {
@@ -422,6 +437,9 @@ async function loadChapter(entry, requestedVersion) {
   storyHeading.hidden = true;
   chapterReaderView.hidden = false;
   chapterReader.replaceChildren();
+  chapterReaderView.querySelector(':scope > .content-notice-full')?.remove();
+  const contentNotice = window.MAGIARCHY_CONTENT.badge(location.href, true);
+  if (contentNotice) document.querySelector('.chapter-reader-header').before(contentNotice);
   chapterError.hidden = true;
   chapterMeta.textContent = 'Loading chapter…';
   chapterCrumb.textContent = `${entry.number}: ${entry.title}`;

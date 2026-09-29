@@ -187,7 +187,7 @@ chapters.forEach((chapter) => {
   resolveVersions(chapter).forEach((version) => {
     const versionSuffix = version.versionCount > 1 ? `-${version.versionId}` : '';
     const versionTitle = version.versionCount > 1 ? `${chapter.title} · ${version.versionLabel}` : chapter.title;
-    const versionQuery = version.versionCount > 1 ? `&version=${encodeURIComponent(version.versionId)}` : '';
+    const versionQuery = chapter.versions?.length ? `&version=${encodeURIComponent(version.versionId)}` : '';
     addEntry({
       id: `chapter-${chapter.slug}${versionSuffix}`,
       title: versionTitle,
@@ -207,7 +207,7 @@ moments.forEach((moment) => {
   resolveVersions(moment).forEach((version) => {
     const versionSuffix = version.versionCount > 1 ? `-${version.versionId}` : '';
     const versionTitle = version.versionCount > 1 ? `${moment.title} · ${version.versionLabel}` : moment.title;
-    const versionQuery = version.versionCount > 1 ? `&version=${encodeURIComponent(version.versionId)}` : '';
+    const versionQuery = moment.versions?.length ? `&version=${encodeURIComponent(version.versionId)}` : '';
     addEntry({
       id: `moment-${moment.slug}${versionSuffix}`,
       title: versionTitle,

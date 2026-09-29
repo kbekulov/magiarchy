@@ -1,10 +1,10 @@
 {
   "schema": 1,
   "counts": {
-    "chapters": 8,
-    "moments": 28,
+    "chapters": 9,
+    "moments": 29,
     "characters": 18,
-    "questions": 139,
+    "questions": 143,
     "contradictions": 0
   },
   "tasks": [
@@ -61,6 +61,10 @@
         {
           "title": "Unresolved Tension",
           "href": "moments.html?moment=unresolved-tension&version=v1"
+        },
+        {
+          "title": "The Shared Night",
+          "href": "moments.html?moment=the-shared-night&version=v1"
         }
       ]
     }
@@ -104,8 +108,8 @@
         }
       ],
       "href": "character.html?character=lynleit",
-      "total": 20,
-      "prose": 7,
+      "total": 21,
+      "prose": 8,
       "outline": 13,
       "scenes": [
         {
@@ -207,6 +211,11 @@
           "title": "Households before the Spill",
           "href": "moments.html?moment=households-before-the-spill&version=v1",
           "kind": "Outline / scene seed"
+        },
+        {
+          "title": "The Shared Night",
+          "href": "moments.html?moment=the-shared-night&version=v1",
+          "kind": "Scene prose"
         }
       ]
     },
@@ -240,8 +249,8 @@
         }
       ],
       "href": "character.html?character=kyrien",
-      "total": 16,
-      "prose": 6,
+      "total": 17,
+      "prose": 7,
       "outline": 10,
       "scenes": [
         {
@@ -323,6 +332,11 @@
           "title": "Households before the Spill",
           "href": "moments.html?moment=households-before-the-spill&version=v1",
           "kind": "Outline / scene seed"
+        },
+        {
+          "title": "The Shared Night",
+          "href": "moments.html?moment=the-shared-night&version=v1",
+          "kind": "Scene prose"
         }
       ]
     },
@@ -356,8 +370,8 @@
         }
       ],
       "href": "character.html?character=felix",
-      "total": 8,
-      "prose": 5,
+      "total": 9,
+      "prose": 6,
       "outline": 3,
       "scenes": [
         {
@@ -399,6 +413,11 @@
           "title": "Unresolved Tension",
           "href": "moments.html?moment=unresolved-tension&version=v1",
           "kind": "Scene prose"
+        },
+        {
+          "title": "The Shared Night",
+          "href": "moments.html?moment=the-shared-night&version=v1",
+          "kind": "Scene prose"
         }
       ]
     },
@@ -424,8 +443,8 @@
         }
       ],
       "href": "character.html?character=reiner",
-      "total": 6,
-      "prose": 3,
+      "total": 7,
+      "prose": 4,
       "outline": 3,
       "scenes": [
         {
@@ -457,6 +476,11 @@
           "title": "Father Mikhail Discovers the Breach",
           "href": "moments.html?moment=mikhail-discovers-the-breach&version=v1",
           "kind": "Outline / scene seed"
+        },
+        {
+          "title": "The Shared Night",
+          "href": "moments.html?moment=the-shared-night&version=v1",
+          "kind": "Scene prose"
         }
       ]
     },
@@ -514,6 +538,67 @@
       ]
     },
     {
+      "slug": "sherie",
+      "name": "Sherie",
+      "role": "Diplomat in training and covert negotiator",
+      "goal": "Become a diplomat capable of turning Drake's strategic understanding into alliances, while tracing the suspected coup without exposing MSF cooperation.",
+      "conflicts": [
+        [
+          "Unauthorized agreement",
+          "Her private approach to MSF would be stopped if the Court or government discovered it."
+        ],
+        [
+          "The cost of persuasion",
+          "She enjoys making attraction useful and can keep playing while consequences grow beyond what she understands. Reading a response well does not tell her what the other person will do afterward."
+        ],
+        [
+          "Uneven attachment",
+          "Felix becomes increasingly important to her while remaining fixated on Lynleit. Sherie has limits to what attention she will accept; she wants to be seen clearly, not simply enjoyed as a diversion."
+        ]
+      ],
+      "links": [
+        {
+          "name": "Drake",
+          "href": "character.html?character=drake"
+        },
+        {
+          "name": "Felix",
+          "href": "character.html?character=felix"
+        }
+      ],
+      "href": "character.html?character=sherie",
+      "total": 5,
+      "prose": 3,
+      "outline": 2,
+      "scenes": [
+        {
+          "title": "A Meeting Beyond Authority",
+          "href": "moments.html?moment=a-meeting-beyond-authority&version=v1",
+          "kind": "Outline / scene seed"
+        },
+        {
+          "title": "The Empty Boats Beneath the Bridge",
+          "href": "moments.html?moment=the-boat-beneath-the-bridge&version=v4",
+          "kind": "Scene prose"
+        },
+        {
+          "title": "The Last Man out of the Park",
+          "href": "moments.html?moment=the-park-unit-is-lost&version=v2",
+          "kind": "Outline / scene seed"
+        },
+        {
+          "title": "Unresolved Tension",
+          "href": "moments.html?moment=unresolved-tension&version=v1",
+          "kind": "Scene prose"
+        },
+        {
+          "title": "The Shared Night",
+          "href": "moments.html?moment=the-shared-night&version=v1",
+          "kind": "Scene prose"
+        }
+      ]
+    },
+    {
       "slug": "drake",
       "name": "Drake",
       "role": "Official for Special Assignments",
@@ -554,62 +639,6 @@
           "title": "The Last Man out of the Park",
           "href": "moments.html?moment=the-park-unit-is-lost&version=v2",
           "kind": "Outline / scene seed"
-        }
-      ]
-    },
-    {
-      "slug": "sherie",
-      "name": "Sherie",
-      "role": "Diplomat in training and covert negotiator",
-      "goal": "Become a diplomat capable of turning Drake's strategic understanding into alliances, while tracing the suspected coup without exposing MSF cooperation.",
-      "conflicts": [
-        [
-          "Unauthorized agreement",
-          "Her private approach to MSF would be stopped if the Court or government discovered it."
-        ],
-        [
-          "The cost of persuasion",
-          "She enjoys making attraction useful and can keep playing while consequences grow beyond what she understands. Reading a response well does not tell her what the other person will do afterward."
-        ],
-        [
-          "Uneven attachment",
-          "Felix becomes increasingly important to her while remaining fixated on Lynleit. Sherie has limits to what attention she will accept; she wants to be seen clearly, not simply enjoyed as a diversion."
-        ]
-      ],
-      "links": [
-        {
-          "name": "Drake",
-          "href": "character.html?character=drake"
-        },
-        {
-          "name": "Felix",
-          "href": "character.html?character=felix"
-        }
-      ],
-      "href": "character.html?character=sherie",
-      "total": 4,
-      "prose": 2,
-      "outline": 2,
-      "scenes": [
-        {
-          "title": "A Meeting Beyond Authority",
-          "href": "moments.html?moment=a-meeting-beyond-authority&version=v1",
-          "kind": "Outline / scene seed"
-        },
-        {
-          "title": "The Empty Boats Beneath the Bridge",
-          "href": "moments.html?moment=the-boat-beneath-the-bridge&version=v4",
-          "kind": "Scene prose"
-        },
-        {
-          "title": "The Last Man out of the Park",
-          "href": "moments.html?moment=the-park-unit-is-lost&version=v2",
-          "kind": "Outline / scene seed"
-        },
-        {
-          "title": "Unresolved Tension",
-          "href": "moments.html?moment=unresolved-tension&version=v1",
-          "kind": "Scene prose"
         }
       ]
     },
@@ -696,6 +725,131 @@
       ]
     },
     {
+      "slug": "hiyu",
+      "name": "Hiyu",
+      "role": "Criminology student and intuitive investigator",
+      "goal": "Prove that the impossible explanation fits the disappearances, then learn enough restraint to keep the discovery from destroying both investigators.",
+      "conflicts": [
+        [
+          "Confidence before evidence",
+          "His excitement over an explanation can commit him and Yulia to danger he has not assessed."
+        ]
+      ],
+      "links": [
+        {
+          "name": "Yulia",
+          "href": "character.html?character=yulia"
+        }
+      ],
+      "href": "character.html?character=hiyu",
+      "total": 3,
+      "prose": 1,
+      "outline": 2,
+      "scenes": [
+        {
+          "title": "University Days",
+          "href": "moments.html?moment=university-days-before-the-spill&version=v1",
+          "kind": "Outline / scene seed"
+        },
+        {
+          "title": "Beyond the Cordon",
+          "href": "moments.html?moment=students-beyond-the-cordon&version=v2",
+          "kind": "Outline / scene seed"
+        },
+        {
+          "title": "The Shared Night",
+          "href": "moments.html?moment=the-shared-night&version=v1",
+          "kind": "Scene prose"
+        }
+      ]
+    },
+    {
+      "slug": "natalia",
+      "name": "Natalia",
+      "role": "Independent magical examiner and private investigator",
+      "goal": "Fund and protect an independent life of magical research while giving clients an answer before hidden authorities reduce their problem to jurisdiction, secrecy, or punishment.",
+      "conflicts": [
+        [
+          "Institutional interference",
+          "The Academy, Magiarchy, and Church can restrict her inquiries or claim her cases."
+        ]
+      ],
+      "links": [
+        {
+          "name": "Lynleit",
+          "href": "character.html?character=lynleit"
+        },
+        {
+          "name": "Lester",
+          "href": "character.html?character=lester"
+        },
+        {
+          "name": "Myka",
+          "href": "character.html?character=myka"
+        }
+      ],
+      "href": "character.html?character=natalia",
+      "total": 3,
+      "prose": 2,
+      "outline": 1,
+      "scenes": [
+        {
+          "title": "Terrors Inside the Academy",
+          "href": "moments.html?moment=terrors-inside-the-academy&version=v2",
+          "kind": "Outline / scene seed"
+        },
+        {
+          "title": "Doom Has an Address",
+          "href": "moments.html?moment=doom-has-an-address&version=v7",
+          "kind": "Scene prose"
+        },
+        {
+          "title": "The Shared Night",
+          "href": "moments.html?moment=the-shared-night&version=v1",
+          "kind": "Scene prose"
+        }
+      ]
+    },
+    {
+      "slug": "yulia",
+      "name": "Yulia",
+      "role": "Criminology student and procedural investigator",
+      "goal": "Keep Hiyu alive, test his impossible theory honestly, and preserve enough reliable evidence to understand what ordinary criminology cannot explain.",
+      "conflicts": [
+        [
+          "Unfamiliar evidence",
+          "Her training offers no established procedure for what happens in the park."
+        ]
+      ],
+      "links": [
+        {
+          "name": "Hiyu",
+          "href": "character.html?character=hiyu"
+        }
+      ],
+      "href": "character.html?character=yulia",
+      "total": 3,
+      "prose": 1,
+      "outline": 2,
+      "scenes": [
+        {
+          "title": "University Days",
+          "href": "moments.html?moment=university-days-before-the-spill&version=v1",
+          "kind": "Outline / scene seed"
+        },
+        {
+          "title": "Beyond the Cordon",
+          "href": "moments.html?moment=students-beyond-the-cordon&version=v2",
+          "kind": "Outline / scene seed"
+        },
+        {
+          "title": "The Shared Night",
+          "href": "moments.html?moment=the-shared-night&version=v1",
+          "kind": "Scene prose"
+        }
+      ]
+    },
+    {
       "slug": "heyk",
       "name": "Heyk",
       "role": "Ducal Guard field agent and bodyguard",
@@ -734,40 +888,6 @@
       ]
     },
     {
-      "slug": "hiyu",
-      "name": "Hiyu",
-      "role": "Criminology student and intuitive investigator",
-      "goal": "Prove that the impossible explanation fits the disappearances, then learn enough restraint to keep the discovery from destroying both investigators.",
-      "conflicts": [
-        [
-          "Confidence before evidence",
-          "His excitement over an explanation can commit him and Yulia to danger he has not assessed."
-        ]
-      ],
-      "links": [
-        {
-          "name": "Yulia",
-          "href": "character.html?character=yulia"
-        }
-      ],
-      "href": "character.html?character=hiyu",
-      "total": 2,
-      "prose": 0,
-      "outline": 2,
-      "scenes": [
-        {
-          "title": "University Days",
-          "href": "moments.html?moment=university-days-before-the-spill&version=v1",
-          "kind": "Outline / scene seed"
-        },
-        {
-          "title": "Beyond the Cordon",
-          "href": "moments.html?moment=students-beyond-the-cordon&version=v2",
-          "kind": "Outline / scene seed"
-        }
-      ]
-    },
-    {
       "slug": "myka",
       "name": "Myka",
       "role": "Magi Academy student",
@@ -801,82 +921,6 @@
         {
           "title": "Myka Enters MSF",
           "href": "moments.html?moment=myka-enters-msf&version=v2",
-          "kind": "Outline / scene seed"
-        }
-      ]
-    },
-    {
-      "slug": "natalia",
-      "name": "Natalia",
-      "role": "Independent magical examiner and private investigator",
-      "goal": "Fund and protect an independent life of magical research while giving clients an answer before hidden authorities reduce their problem to jurisdiction, secrecy, or punishment.",
-      "conflicts": [
-        [
-          "Institutional interference",
-          "The Academy, Magiarchy, and Church can restrict her inquiries or claim her cases."
-        ]
-      ],
-      "links": [
-        {
-          "name": "Lynleit",
-          "href": "character.html?character=lynleit"
-        },
-        {
-          "name": "Lester",
-          "href": "character.html?character=lester"
-        },
-        {
-          "name": "Myka",
-          "href": "character.html?character=myka"
-        }
-      ],
-      "href": "character.html?character=natalia",
-      "total": 2,
-      "prose": 1,
-      "outline": 1,
-      "scenes": [
-        {
-          "title": "Terrors Inside the Academy",
-          "href": "moments.html?moment=terrors-inside-the-academy&version=v2",
-          "kind": "Outline / scene seed"
-        },
-        {
-          "title": "Doom Has an Address",
-          "href": "moments.html?moment=doom-has-an-address&version=v7",
-          "kind": "Scene prose"
-        }
-      ]
-    },
-    {
-      "slug": "yulia",
-      "name": "Yulia",
-      "role": "Criminology student and procedural investigator",
-      "goal": "Keep Hiyu alive, test his impossible theory honestly, and preserve enough reliable evidence to understand what ordinary criminology cannot explain.",
-      "conflicts": [
-        [
-          "Unfamiliar evidence",
-          "Her training offers no established procedure for what happens in the park."
-        ]
-      ],
-      "links": [
-        {
-          "name": "Hiyu",
-          "href": "character.html?character=hiyu"
-        }
-      ],
-      "href": "character.html?character=yulia",
-      "total": 2,
-      "prose": 0,
-      "outline": 2,
-      "scenes": [
-        {
-          "title": "University Days",
-          "href": "moments.html?moment=university-days-before-the-spill&version=v1",
-          "kind": "Outline / scene seed"
-        },
-        {
-          "title": "Beyond the Cordon",
-          "href": "moments.html?moment=students-beyond-the-cordon&version=v2",
           "kind": "Outline / scene seed"
         }
       ]
@@ -1041,6 +1085,42 @@
   ],
   "questions": [
     {
+      "id": "question-what-selects-sleepers-for-shared-contact-and-what-vector-range-and-duration-govern-hi-009",
+      "title": "The Oneiric Confluence",
+      "text": "What selects sleepers for shared contact, and what vector, range and duration govern HI-009?",
+      "confidence": 0,
+      "meta": "0% answered",
+      "section": "Current questions",
+      "href": "docs.html?doc=questions-to-be-answered#question-what-selects-sleepers-for-shared-contact-and-what-vector-range-and-duration-govern-hi-009"
+    },
+    {
+      "id": "question-where-does-the-episode-fall-after-kyrien-learns-about-magic-relative-to-sherie-s-discovery-and-b",
+      "title": "The Shared Night",
+      "text": "Where does the episode fall after Kyrien learns about magic, relative to Sherie's discovery and both couples' waking intimacy?",
+      "confidence": 0,
+      "meta": "0% answered",
+      "section": "Current questions",
+      "href": "docs.html?doc=questions-to-be-answered#question-where-does-the-episode-fall-after-kyrien-learns-about-magic-relative-to-sherie-s-discovery-and-b"
+    },
+    {
+      "id": "question-how-does-the-shared-dream-relate-to-waking-chronology-and-can-a-representation-persist-after-one",
+      "title": "The Oneiric Confluence",
+      "text": "How does the shared dream relate to waking chronology, and can a representation persist after one participant wakes?",
+      "confidence": 0,
+      "meta": "0% answered",
+      "section": "Current questions",
+      "href": "docs.html?doc=questions-to-be-answered#question-how-does-the-shared-dream-relate-to-waking-chronology-and-can-a-representation-persist-after-one"
+    },
+    {
+      "id": "question-which-conditions-let-recognition-restore-choice-why-can-pressure-return-and-how-does-the-wider-i",
+      "title": "The Oneiric Confluence",
+      "text": "Which conditions let recognition restore choice, why can pressure return, and how does the wider incident end?",
+      "confidence": 0,
+      "meta": "0% answered",
+      "section": "Current questions",
+      "href": "docs.html?doc=questions-to-be-answered#question-which-conditions-let-recognition-restore-choice-why-can-pressure-return-and-how-does-the-wider-i"
+    },
+    {
       "id": "question-which-use-of-charm-desire-or-psychological-pressure-becomes-catastrophic-whom-does-it-affect-and",
       "title": "Sherie: catastrophic game",
       "text": "Which use of charm, desire or psychological pressure becomes catastrophic, whom does it affect, and what serious personal cost follows from her choices?",
@@ -1059,13 +1139,13 @@
       "href": "docs.html?doc=questions-to-be-answered#question-what-makes-lord-have-mercy-emotionally-appropriate-to-sherie-and-what-possibility-of-salvation-f"
     },
     {
-      "id": "question-does-she-discover-magic-much-later-through-what-evidence-and-at-what-cost-and-does-that-discover",
+      "id": "question-how-does-sherie-first-learn-about-magic-before-the-shared-night-briefing-through-what-evidence-a",
       "title": "Sherie: supernatural discovery",
-      "text": "Does she discover magic much later, through what evidence and at what cost, and does that discovery intersect her catastrophic game?",
+      "text": "How does Sherie first learn about magic before The Shared Night briefing, through what evidence and at what cost, and does that discovery intersect her catastrophic game?",
       "confidence": 0,
       "meta": "0% answered",
       "section": "Current questions",
-      "href": "docs.html?doc=questions-to-be-answered#question-does-she-discover-magic-much-later-through-what-evidence-and-at-what-cost-and-does-that-discover"
+      "href": "docs.html?doc=questions-to-be-answered#question-how-does-sherie-first-learn-about-magic-before-the-shared-night-briefing-through-what-evidence-a"
     },
     {
       "id": "question-when-does-the-early-private-encounter-that-surprises-sherie-occur-and-how-does-their-later-coded",
@@ -1473,13 +1553,13 @@
       "href": "docs.html?doc=questions-to-be-answered#question-when-does-sherie-first-feel-unseen-and-when-does-she-refuse-to-spend-their-private-time-accommod"
     },
     {
-      "id": "question-which-moments-let-one-stop-performing-and-receive-care-from-the-other-and-when-do-they-conscious",
+      "id": "question-how-do-they-respond-in-waking-life-to-their-chosen-kiss-in-the-shared-night-and-where-does-it-fa",
       "title": "Sherie and Felix",
-      "text": "Which moments let one stop performing and receive care from the other, and when do they consciously choose intimacy?",
+      "text": "How do they respond in waking life to their chosen kiss in The Shared Night, and where does it fall relative to their first waking intimacy and later private code?",
       "confidence": 0,
       "meta": "0% answered",
       "section": "Current questions",
-      "href": "docs.html?doc=questions-to-be-answered#question-which-moments-let-one-stop-performing-and-receive-care-from-the-other-and-when-do-they-conscious"
+      "href": "docs.html?doc=questions-to-be-answered#question-how-do-they-respond-in-waking-life-to-their-chosen-kiss-in-the-shared-night-and-where-does-it-fa"
     },
     {
       "id": "question-whose-sitting-room-hosts-the-card-game-what-game-are-they-playing-and-what-prompted-felix-s-comp",
@@ -2356,15 +2436,6 @@
       "detail": "The urban warning instructs visitors not to follow anyone encountered on the street. It is not known whether refusing the lure guarantees escape or why Lynleit returns after following it.",
       "detailLabel": "Known limits and uncertainties",
       "href": "docs.html?doc=holumn-incidents-and-testimonies#the-nameless-street"
-    },
-    {
-      "id": "HI-006",
-      "title": "Doom Has an Address",
-      "text": "A Holumn transfers its own terminal condition to whoever consciously destroys it. When Lynleit and Kyrien kill it together, one fatal curse identifies both egos as a single causal answer and remains distributed across them.",
-      "meta": "HI-006 · Operational encounter and curse",
-      "detail": "The curse recognizes the egos responsible for the Holumn's destruction. The advisers identify the death of either subject as a way to release the survivor. Lynleit and Kyrien instead undergo enough reciprocal identity change to break its recognition. That outcome does not establish a reliable treatment for other subjects or curses.",
-      "detailLabel": "Known limits and uncertainties",
-      "href": "docs.html?doc=holumn-incidents-and-testimonies#doom-has-an-address"
     }
   ],
   "moments": [
@@ -2583,24 +2654,6 @@
       "detail": "The Takeover",
       "detailLabel": "Placement",
       "href": "moments.html?moment=fionn-is-eliminated&version=v2"
-    },
-    {
-      "id": "doom-has-an-address",
-      "title": "Doom Has an Address",
-      "text": "Lynleit and Kyrien survive an identity-bound curse after an incomplete attempt at intimacy. Lynleit will not explain what she tried, and Kyrien does not know why they recovered.",
-      "meta": "v7 · Key scene",
-      "detail": "Later in Arc 1",
-      "detailLabel": "Placement",
-      "href": "moments.html?moment=doom-has-an-address&version=v7"
-    },
-    {
-      "id": "the-bench-under-the-lamp",
-      "title": "The Bench under the Lamp",
-      "text": "After work, their walk becomes their first successful sexual encounter. The park remains dangerous, and they still have to find the exit.",
-      "meta": "v2 · Key scene",
-      "detail": "Later in Arc 1",
-      "detailLabel": "Placement",
-      "href": "moments.html?moment=the-bench-under-the-lamp&version=v2"
     },
     {
       "id": "households-before-the-spill",
@@ -3356,7 +3409,7 @@
   "draftStatus": [
     {
       "label": "Scene drafts",
-      "count": 5,
+      "count": 6,
       "color": "#8992f9"
     },
     {

@@ -214,10 +214,12 @@ function createMomentCard(entry) {
   const footer = momentElement('div', 'moment-card-footer');
   footer.append(momentElement('span', '', `${entry.openQuestions.length} open ${entry.openQuestions.length === 1 ? 'question' : 'questions'}`), momentElement('span', '', 'Open →'));
   link.append(footer);
+  window.MAGIARCHY_CONTENT.annotate(link, link.href);
   card.append(link);
   return card;
 }
 
+let momentContentFilter;
 function applyMomentFilters() {
   const query = momentSearch.value.trim().toLowerCase();
   const phase = momentPhaseFilter.value;
@@ -229,7 +231,8 @@ function applyMomentFilters() {
     const matches = (!query || card.dataset.search.includes(query))
       && (phase === 'all' || card.dataset.phase === phase)
       && (character === 'all' || card.dataset.characters.split('|').includes(character))
-      && (type === 'all' || card.dataset.type === type);
+      && (type === 'all' || card.dataset.type === type)
+      && (!momentContentFilter || momentContentFilter.matches(card.querySelector('a').href));
     card.hidden = !matches;
     if (matches) visible += 1;
   });
@@ -247,6 +250,9 @@ function renderMomentCatalog(entries) {
   momentCardGrid.replaceChildren(...sortMoments(entries).map(createMomentCard));
   renderMomentPhaseTrack(entries);
   renderMomentFilters(entries);
+  const contentToolbar = document.createElement('div'); contentToolbar.className = 'content-filter-toolbar';
+  momentCardGrid.before(contentToolbar);
+  momentContentFilter = window.MAGIARCHY_CONTENT.controls(contentToolbar, applyMomentFilters);
   const requestedPhase = new URLSearchParams(window.location.search).get('phase');
   if (storyPhases.some((phase) => phase.id === requestedPhase)) momentPhaseFilter.value = requestedPhase;
   applyMomentFilters();
@@ -296,6 +302,7 @@ async function renderMomentReader(entry, entries, requestedVersion) {
   document.querySelector('#moment-scene-type').textContent = selected.sceneType;
   document.querySelector('#moment-reader-title').textContent = selected.title;
   document.querySelector('#moment-reader-summary').textContent = selected.summary;
+  window.MAGIARCHY_CONTENT.annotate(document.querySelector('#moment-reader-summary').parentElement, location.href, true);
   document.querySelector('#moment-purpose-label').textContent = selected.sceneType;
   document.querySelector('#moment-thread').textContent = selected.thread;
   document.querySelector('#moment-location').textContent = selected.location;

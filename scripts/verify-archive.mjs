@@ -168,7 +168,7 @@ const doom = chapters.find((entry) => entry.slug === 'doom-has-an-address');
 const phaseContext = { window: {} };
 vm.runInNewContext(read('story-phases.js'), phaseContext);
 const phaseIds = new Set(phaseContext.window.MAGIARCHY_STORY_PHASES.map(p => p.id));
-for (const chapter of chapters) assert.ok(phaseIds.has(chapter.timelinePhase), `${chapter.slug}: unknown Story phase`);
+for (const chapter of chapters) assert.ok((chapter.timelinePhase === null && chapter.timelineLabel === 'Unplaced') || phaseIds.has(chapter.timelinePhase), `${chapter.slug}: unknown Story phase`);
 for (const moment of moments) assert.ok((moment.timelinePhase === null && moment.placementStatus === 'Unplaced') || phaseIds.has(moment.timelinePhase), `${moment.slug}: unknown Moment phase`);
 assert.ok(phaseContext.window.MAGIARCHY_STORY_ARCS.some(a => a.id === 'arc-0'), 'Missing prequel life period');
 const park = chapters.find(c => c.slug === 'the-bench-under-the-lamp');

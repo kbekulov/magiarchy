@@ -124,21 +124,11 @@ This writer reference separates what happens from what a character knows and wha
 
 **Starting knowledge:** Sherie is not a Magus and initially knows nothing about magic. Her political suspicions and request for the river investigation do not establish knowledge of the Drowned Choir or Lynleit's abilities. Those revelations belong to their witnesses until a later exchange actually communicates them.
 
-**Later knowledge:** By The Shared Night, Sherie recognizes that a Holumn is involved and attends Natalia's briefing. How she first learns about magic, the interval since her earlier ignorance and any connection to her intended catastrophic social game remain undecided. Her participation is not evidence that she knew during the river operation.
+**Later direction:** A much later discovery of the supernatural world is possible and may exact a serious personal cost. The event, witness, timing and connection to her intended catastrophic social game remain undecided.
 
 **Reader:** Kyrie Eleison gives her arc a direction of consequence, mercy and possible salvation; it does not reveal an existing secret power. Anima's separate non-canon dream panels cannot supply evidence that Sherie, Lynleit or Yulia knows the mascot or experiences her influence inside the story.
 
 **Source:** [Sherie: Kyrie Eleison](../docs.html?doc=sherie-kyrie-eleison), [Thematic Direction](../docs.html?doc=thematic-direction#the-collective-unconscious-dream-studies).
-
-## The Shared Night
-
-**Event period:** Unplaced. The main events are canon: Natalia's group briefing, Sherie and Felix's recurring dreams and chosen kiss, and Lynleit and Kyrien's domestic dream. Exact dialogue remains draft. None has been assigned a numbered Story phase or a place among the couples' waking sexual milestones.
-
-**Reader:** The chapter supplies matching recollections and the participants' loss of choice, then shows Sherie and Felix able to step away before the kiss. Their accusations about each other's preferences remain accusations. Correspondence does not prove real-time contact or universal truthfulness. The possible echo after waking belongs to research questions, not shown events.
-
-**Characters:** Sherie initially thinks the dreams are private; Felix suspects their shared nature earlier. The red room and black-water details expose the correspondence during the briefing. The group hears about both couples' dreams, but does not witness the later kiss or receive a confirmed account of it on-page. Sherie and Felix remember that choice and arrange coffee. Natalia has not yet received their final report. Kyrien already knows about magic; the chapter cannot precede his river revelation. Sherie has learned enough by the briefing to discuss a Holumn, but her first discovery is not depicted here.
-
-**Source:** [Chapter v1](../story.html?chapter=the-shared-night&version=v1), [Moment v1](../moments.html?moment=the-shared-night&version=v1), [research record](../docs.html?doc=oneiric-confluence).
 
 ## Table evidence checks
 

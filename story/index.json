@@ -807,5 +807,53 @@
       }
     ],
     "contentKind": "writer-gap"
+  },
+  {
+    "slug": "the-shared-night",
+    "number": "Unplaced Chapter",
+    "title": "The Shared Night",
+    "status": "Canon events · Dialogue draft",
+    "file": "the-shared-night.md",
+    "updated": "2026-09-29",
+    "description": "A shared-dream investigation becomes painfully personal when Sherie discovers that Felix remembers the same nights. Natalia refuses to mistake a dream for a confession.",
+    "characters": [
+      "Natalia",
+      "Lynleit",
+      "Kyrien",
+      "Felix",
+      "Sherie",
+      "Reiner",
+      "Hiyu",
+      "Yulia"
+    ],
+    "timelinePhase": null,
+    "timelineLabel": "Unplaced",
+    "events": [
+      "Independent reports describe corresponding dream memories, including violence, grief and intimate encounters, without corresponding bodily injuries.",
+      "Natalia briefs the group on the Oneiric Confluence and rejects treating dream behaviour as a confession.",
+      "Sherie discovers that Felix remembers their recurring sexual dreams. Their discussion exposes the difference between remembered participation and freely chosen action.",
+      "Lynleit and Kyrien describe a shared house, rain, tea, cards, two bedrooms and a cat.",
+      "Sherie and Felix agree to test whether they can resist the dream. Acknowledging their attachment helps them regain choice, although the pressure returns before easing again.",
+      "Once they can step away, Sherie deliberately kisses Felix. They wake, exchange messages and arrange coffee."
+    ],
+    "contentKind": "scene",
+    "defaultVersion": "v1",
+    "versions": [
+      {
+        "id": "v1",
+        "label": "v1 · Current",
+        "file": "the-shared-night.md",
+        "updated": "2026-09-29",
+        "contentKind": "scene",
+        "events": [
+          "Independent reports describe corresponding dream memories, including violence, grief and intimate encounters, without corresponding bodily injuries.",
+          "Natalia briefs the group on the Oneiric Confluence and rejects treating dream behaviour as a confession.",
+          "Sherie discovers that Felix remembers their recurring sexual dreams. Their discussion exposes the difference between remembered participation and freely chosen action.",
+          "Lynleit and Kyrien describe a shared house, rain, tea, cards, two bedrooms and a cat.",
+          "Sherie and Felix agree to test whether they can resist the dream. Acknowledging their attachment helps them regain choice, although the pressure returns before easing again.",
+          "Once they can step away, Sherie deliberately kisses Felix. They wake, exchange messages and arrange coffee."
+        ]
+      }
+    ]
   }
 ]

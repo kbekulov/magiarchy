@@ -1,21 +1,48 @@
 [
   {
-    "slug": "sherie-kyrie-eleison",
-    "title": "Sherie: Kyrie Eleison",
-    "topic": "Character Arc Direction",
-    "description": "Social power, catastrophic consequences, a plea for mercy, and the possibility of salvation. Confirmed direction with the decisive events still unchosen.",
-    "file": "sherie-kyrie-eleison.md",
-    "updated": "2026-09-28",
+    "slug": "oneiric-confluence",
+    "title": "The Oneiric Confluence",
+    "topic": "Holumn Research",
+    "description": "Shared dreams, disowned impulses, three competing hypotheses, and the limits of recovered choice.",
+    "file": "oneiric-confluence.md",
+    "updated": "2026-09-29",
     "speakers": [
-      "Author's Desk"
+      "Natalia"
     ],
     "defaultVersion": "v1",
     "versions": [
       {
         "id": "v1",
         "label": "v1 · Current",
-        "file": "sherie-kyrie-eleison.md",
+        "file": "oneiric-confluence.md",
+        "updated": "2026-09-29"
+      }
+    ]
+  },
+  {
+    "slug": "sherie-kyrie-eleison",
+    "title": "Sherie: Kyrie Eleison",
+    "topic": "Character Arc Direction",
+    "description": "Sherie knows about Holumns by The Shared Night; the earlier discovery and her eventual reckoning remain undated.",
+    "file": "sherie-kyrie-eleison.md",
+    "updated": "2026-09-29",
+    "speakers": [
+      "Author's Desk"
+    ],
+    "defaultVersion": "v2",
+    "versions": [
+      {
+        "id": "v1",
+        "label": "v1 · Archived",
+        "file": "sherie-kyrie-eleison-v1.md",
         "updated": "2026-09-28"
+      },
+      {
+        "id": "v2",
+        "label": "v2 · Current",
+        "file": "sherie-kyrie-eleison.md",
+        "updated": "2026-09-29",
+        "description": "Sherie knows about Holumns by The Shared Night; the earlier discovery and her eventual reckoning remain undated."
       }
     ]
   },
@@ -479,12 +506,12 @@
     "title": "Events, Witnesses, and Reveals",
     "topic": "Reader Knowledge",
     "file": "reader-knowledge.md",
-    "updated": "2026-09-28",
-    "description": "Sherie's initially mundane knowledge and undecided later discovery, alongside existing event and reveal boundaries.",
+    "updated": "2026-09-29",
+    "description": "The Shared Night separates shared memories, private disclosures, recovered choice and unresolved chronology.",
     "speakers": [
       "Author's Desk"
     ],
-    "defaultVersion": "v7",
+    "defaultVersion": "v8",
     "versions": [
       {
         "id": "v1",
@@ -530,10 +557,17 @@
       },
       {
         "id": "v7",
-        "label": "v7 · Current",
-        "file": "reader-knowledge.md",
+        "label": "v7 · Archived",
+        "file": "reader-knowledge-v7.md",
         "updated": "2026-09-28",
         "description": "Sherie's initially mundane knowledge and undecided later discovery, alongside existing event and reveal boundaries."
+      },
+      {
+        "id": "v8",
+        "label": "v8 · Current",
+        "file": "reader-knowledge.md",
+        "updated": "2026-09-29",
+        "description": "The Shared Night separates shared memories, private disclosures, recovered choice and unresolved chronology."
       }
     ]
   },
@@ -542,12 +576,12 @@
     "title": "Prose and Scene Guidance",
     "topic": "Editorial Reference",
     "file": "prose-and-scene-guidance.md",
-    "updated": "2026-09-21",
-    "description": "Practical revision checks for experienced danger and intimate details, preserving character competence, ordinary life, duty, and canon boundaries.",
+    "updated": "2026-09-29",
+    "description": "H Scene intake distinguishes canon, story relevance and depiction before integration.",
     "speakers": [
       "Author's Desk"
     ],
-    "defaultVersion": "v12",
+    "defaultVersion": "v13",
     "versions": [
       {
         "id": "v1",
@@ -628,10 +662,17 @@
       },
       {
         "id": "v12",
-        "label": "v12 · Current",
-        "file": "prose-and-scene-guidance.md",
+        "label": "v12 · Archived",
+        "file": "prose-and-scene-guidance-v12.md",
         "updated": "2026-09-21",
         "description": "Scene revision checks linked to MAGIARCHY's standalone dread and action direction."
+      },
+      {
+        "id": "v13",
+        "label": "v13 · Current",
+        "file": "prose-and-scene-guidance.md",
+        "updated": "2026-09-29",
+        "description": "H Scene intake distinguishes canon, story relevance and depiction before integration."
       }
     ]
   },
@@ -766,12 +807,12 @@
     "title": "Character Intimacy and Sexuality Reference",
     "topic": "Writer's Character Reference",
     "file": "character-intimacy-and-sexuality.md",
-    "updated": "2026-09-28",
-    "description": "Sherie's dangerous social games and eventual reckoning, without reducing her private bond with Felix to manipulation.",
+    "updated": "2026-09-29",
+    "description": "The Shared Night: compelled dreams, a freely chosen kiss, and a separate quiet domestic dream.",
     "speakers": [
       "Character Archive"
     ],
-    "defaultVersion": "v20",
+    "defaultVersion": "v21",
     "versions": [
       {
         "id": "v1",
@@ -927,10 +968,18 @@
       },
       {
         "id": "v20",
-        "label": "v20 · Current",
-        "file": "character-intimacy-and-sexuality.md",
+        "label": "v20 · Archived",
+        "file": "character-intimacy-and-sexuality-v20.md",
         "updated": "2026-09-28",
         "description": "Sherie's dangerous social games and eventual reckoning, without reducing her private bond with Felix to manipulation.",
+        "tensionFile": "sexual-tension-notes-v20.json"
+      },
+      {
+        "id": "v21",
+        "label": "v21 · Current",
+        "file": "character-intimacy-and-sexuality.md",
+        "updated": "2026-09-29",
+        "description": "The Shared Night: compelled dreams, a freely chosen kiss, and a separate quiet domestic dream.",
         "tensionFile": "sexual-tension-notes.json"
       }
     ]
@@ -940,8 +989,8 @@
     "title": "Holumn Incidents and Victim Testimonies",
     "topic": "Holumn Archive",
     "file": "holumn-incidents-and-testimonies.md",
-    "updated": "2026-09-23",
-    "description": "Holumn evidence and institutional readings, including unusual fog in the park and river incidents without a universal fog mechanism.",
+    "updated": "2026-09-29",
+    "description": "HI-009, the Oneiric Confluence: shared dreams, weakened volition and competing explanations.",
     "speakers": [
       "Victims and Incident Witnesses",
       "Archive"
@@ -998,13 +1047,20 @@
       },
       {
         "id": "v8",
-        "label": "v8 · Current",
-        "file": "holumn-incidents-and-testimonies.md",
+        "label": "v8 · Archived",
+        "file": "holumn-incidents-and-testimonies-v8.md",
         "updated": "2026-09-23",
         "description": "Holumn evidence and institutional readings, including unusual fog in the park and river incidents without a universal fog mechanism."
+      },
+      {
+        "id": "v9",
+        "label": "v9 · Current",
+        "file": "holumn-incidents-and-testimonies.md",
+        "updated": "2026-09-29",
+        "description": "HI-009, the Oneiric Confluence: shared dreams, weakened volition and competing explanations."
       }
     ],
-    "defaultVersion": "v8"
+    "defaultVersion": "v9"
   },
   {
     "slug": "questions-to-be-answered",

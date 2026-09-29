@@ -19,6 +19,8 @@
 
 ## Backlog
 
+Before integrating newly supplied sexual or romantic scene material, ask whether its events affect canon or remain side-content. Record selective approval precisely. H Scene notices use `content-notices.js` for three independent classifications: explicit/implied depiction (including explicit language with off-page acts), story-relevant/exploratory purpose, and canon/side-content/mixed/unassigned status. H Scene catalog filters default off across Story, Moments, Docs, Holumns and Panels; global search respects the same classification. Incidental affection does not make a whole biography an H Scene. Keep private workshop content excluded entirely.
+
 Before starting any new user request, check the repository's `backlog/` folder for `*.txt` files.
 
 - Treat every `*.txt` file in `backlog/` as pending author-supplied work that takes priority over the new request.

@@ -32,7 +32,7 @@ Her diplomatic obligations offer an existing place for these pressures to meet t
 
 ## What she knows
 
-Sherie is not a Magus and initially knows nothing about magic. By The Shared Night she participates in Natalia's Holumn briefing and discovers that Felix remembers their dreams. Her first discovery of the supernatural world, its timing and any connection to her catastrophe remain unsettled. Her competence in reading people does not let her recognize hidden magecraft without evidence.
+Sherie is not a Magus and initially knows nothing about magic. A much later discovery of the supernatural world is possible and may carry a serious personal cost. Neither the discovery nor its connection to her catastrophe is settled. Her competence in reading people does not let her recognize hidden magecraft without evidence.
 
 The river operation can reveal magic to Kyrien and the reader without telling Sherie what happened. Her request for an investigation, access to officials and association with MSF do not grant her their concealed knowledge. [Events, Witnesses, and Reveals](../docs.html?doc=reader-knowledge#sherie-and-the-hidden-world) keeps these distinctions explicit.
 
@@ -52,4 +52,4 @@ Kyrie Eleison is Sherie's personal theme. It is not automatically the unnamed re
 
 ## Decisions still needed
 
-The [Questions ledger](../docs.html?doc=questions-to-be-answered) tracks the catastrophic game, its cost, the possibility of salvation and how she first learns about magic before The Shared Night. No exact Arc, antagonist, death, punishment, sacrifice or rescue is fixed. Her existing negotiation and card-game scenes remain unchanged; the shared dream is not automatically her catastrophe.
+The [Questions ledger](../docs.html?doc=questions-to-be-answered) tracks the catastrophic game, its cost, the possibility of salvation and any late supernatural discovery. No exact Arc, antagonist, death, punishment, sacrifice or rescue is fixed. Her existing negotiation and card-game scenes remain unchanged.

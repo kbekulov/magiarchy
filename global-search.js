@@ -51,6 +51,8 @@
   let activeResult = -1;
   let previousFocus = null;
   let indexLoaded = false;
+  const contentFilter = window.MAGIARCHY_CONTENT.controls(layer.querySelector('.global-search-body'), renderResults, 'Search H Scene visibility');
+  layer.querySelector('.global-search-history').after(layer.querySelector('.content-filter-group'));
 
   const normalize = (value) => String(value ?? '')
     .normalize('NFKD')
@@ -171,7 +173,7 @@
     }
 
     const matches = archiveEntries
-      .filter(entry => (!entry.expires || Date.now() < entry.expires) && (historyToggle.checked || entry.current !== false))
+      .filter(entry => (!entry.expires || Date.now() < entry.expires) && (historyToggle.checked || entry.current !== false) && contentFilter.matches(entry.url))
       .map((entry) => ({ entry, score: scoreEntry(entry, phrase, tokens) }))
       .filter((match) => match.score > 0)
       .sort((left, right) => right.score - left.score || left.entry.title.localeCompare(right.entry.title))
@@ -210,6 +212,7 @@
       excerpt.className = 'global-search-result-excerpt';
       appendHighlightedText(excerpt, excerptFor(entry, phrase, tokens), tokens);
       copy.append(heading);
+      window.MAGIARCHY_CONTENT.annotate(copy, entry.url);
       if (entry.subtitle) copy.append(subtitle);
       copy.append(excerpt);
       link.append(marker, copy);

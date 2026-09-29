@@ -8,9 +8,13 @@ Story, character, world, relationship, institution, location, and event question
 
 | Area | Question | Confidence |
 | --- | --- | --- |
+| The Oneiric Confluence | What selects sleepers for shared contact, and what vector, range and duration govern HI-009? | 0% |
+| The Shared Night | Where does the episode fall after Kyrien learns about magic, relative to Sherie's discovery and both couples' waking intimacy? | 0% |
+| The Oneiric Confluence | How does the shared dream relate to waking chronology, and can a representation persist after one participant wakes? | 0% |
+| The Oneiric Confluence | Which conditions let recognition restore choice, why can pressure return, and how does the wider incident end? | 0% |
 | Sherie: catastrophic game | Which use of charm, desire or psychological pressure becomes catastrophic, whom does it affect, and what serious personal cost follows from her choices? | 0% |
 | Sherie: mercy and salvation | What makes "Lord, have mercy" emotionally appropriate to Sherie, and what possibility of salvation follows without erasing the consequences? | 0% |
-| Sherie: supernatural discovery | Does she discover magic much later, through what evidence and at what cost, and does that discovery intersect her catastrophic game? | 0% |
+| Sherie: supernatural discovery | How does Sherie first learn about magic before The Shared Night briefing, through what evidence and at what cost, and does that discovery intersect her catastrophic game? | 0% |
 | Sherie and Felix: private game | When does the early private encounter that surprises Sherie occur, and how does their later coded language develop relative to Felix's attachment to Lynleit and Sherie's boundaries? The relationship direction is established, but its scenes and placement are not. | 0% |
 | Sherie: earlier experience | How much serious intimate experience does Sherie have before Felix? Limited experience is a possibility; her confidence and rapid learning do not establish a history of lovers. | 0% |
 | Darkness | What occurs in the Felix and Sherie H Scene titled [Darkness](../gallery.html?panels=darkness), and where does it belong? The title and pairing are supplied, but no scene, images, or chronology have been established. | 0% |
@@ -56,7 +60,7 @@ Story, character, world, relationship, institution, location, and event question
 | Sherie and Felix | Which repeated professional assignments first give them private jokes and familiarity, and where do these encounters fall in the main plot? | 0% |
 | Sherie and Felix | What makes Felix recognize that he wants Sherie herself, and what experiences loosen his emotionally significant fixation on Lynleit? | 0% |
 | Sherie and Felix | When does Sherie first feel unseen, and when does she refuse to spend their private time accommodating Felix's hopes about Lynleit? How does he respond in his subsequent choices? | 0% |
-| Sherie and Felix | Which moments let one stop performing and receive care from the other, and when do they consciously choose intimacy? | 0% |
+| Sherie and Felix | How do they respond in waking life to their chosen kiss in The Shared Night, and where does it fall relative to their first waking intimacy and later private code? | 0% |
 | Unresolved Tension | Whose sitting room hosts the card game, what game are they playing, and what prompted Felix's complaint about Lynleit? | 0% |
 | Character Aphorisms | In which conversations does Sherie use her sayings about catastrophe and catharsis, and Schrödinger's butt; who hears them? | 0% |
 | Sherie and Felix | Which professional obligations put them in substantive disagreement, and what consequences remain even when they care for one another? | 0% |

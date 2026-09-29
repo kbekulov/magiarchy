@@ -334,6 +334,7 @@ function createDocumentCard(entry, index) {
   footer.append(meta, arrow);
 
   link.append(top, title, description, footer);
+  window.MAGIARCHY_CONTENT.annotate(link, link.href);
   card.append(link);
   return card;
 }
@@ -343,6 +344,16 @@ function showDocumentLibrary(entries) {
   documentLibrary.hidden = false;
   docsHeading.hidden = false;
   documentCardGrid.replaceChildren(...entries.map((entry, index) => createDocumentCard(resolveDocumentVersion(entry), index)));
+  const toolbar = document.createElement('div'); toolbar.className = 'content-filter-toolbar';
+  const status = document.createElement('p'); status.className = 'content-filter-status'; status.setAttribute('aria-live','polite');
+  documentCardGrid.before(toolbar, status);
+  const filters = window.MAGIARCHY_CONTENT.controls(toolbar, apply);
+  function apply() {
+    let visible = 0;
+    [...documentCardGrid.children].forEach(card => { card.hidden = !filters.matches(card.querySelector('a').href); if (!card.hidden) visible++; });
+    status.textContent = `${visible} of ${entries.length} documents · H Scenes hidden unless selected`;
+  }
+  apply();
 }
 
 const intimacyCharacterAccents = {
@@ -578,6 +589,13 @@ async function loadDocument(record, requestedVersion) {
     documentReader.append(renderMarkdown(markdown));
     if (entry.slug === 'character-intimacy-and-sexuality') await enhanceCharacterIntimacyDocument(documentReader, entry);
     if (entry.slug === 'character-behavior-audit') await enhanceCharacterBehaviorDocument(documentReader, entry);
+    // Mixed reference books retain their general chapters; warn at each classified section.
+    if (entry.slug === 'holumn-incidents-and-testimonies') {
+      documentReader.querySelectorAll('h2[id]').forEach(heading => {
+        const notice = window.MAGIARCHY_CONTENT.badge(`docs.html?doc=${entry.slug}#${heading.id}`, true);
+        if (notice) heading.after(notice);
+      });
+    } else window.MAGIARCHY_CONTENT.annotate(documentReader, location.href, true);
     if (entry.slug !== 'character-intimacy-and-sexuality') window.addReaderSections(documentReader);
     const versionMeta = entry.versionCount > 1 ? ` · ${entry.versionId}` : '';
     documentMeta.textContent = `${entry.topic}${versionMeta} · ${entry.speakers.join(' / ')} · Updated ${entry.updated}`;

@@ -1,6 +1,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import vm from 'node:vm';
+import { loadContentNotices } from './content-notices.mjs';
 
 export const plain = (text = '') => String(text).replace(/\[([^\]]+)\]\([^)]+\)/g, '$1').replace(/[*_`]/g, '').trim();
 export const headingId = text => text.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '');
@@ -35,6 +36,7 @@ export function ledgerRows(markdown, kind = 'question') {
 }
 
 export function buildDashboard(root) {
+  const notices = loadContentNotices(root);
   const read = file => fs.readFileSync(path.join(root, file), 'utf8');
   const json = file => JSON.parse(read(file));
   const source = read('character.js');
@@ -78,9 +80,9 @@ export function buildDashboard(root) {
     if (line.startsWith('### ')) quoteTitle = line.slice(4);
     if (line.startsWith('> ') && profiles.some(p => p.name === speaker)) facts.push({ id: `quote-${headingId(quoteTitle)}`, title: speaker, text: line.slice(2), meta: 'Unplaced dialogue', quote: true, href: `docs.html?doc=character-aphorisms#${headingId(quoteTitle)}` });
   }
-  const holumns = json('holumns/index.json').incidents.map(h => ({ id: h.id, title: h.title, text: plain(h.summary || h.observedEffect),
+  const holumns = json('holumns/index.json').incidents.filter(h => !notices.forURL(`docs.html?doc=holumn-incidents-and-testimonies#${h.slug}`)).map(h => ({ id: h.id, title: h.title, text: plain(h.summary || h.observedEffect),
     meta: `${h.id} · ${h.recordType}`, detail: plain(h.knownWeakness), detailLabel: 'Known limits and uncertainties', href: `docs.html?doc=holumn-incidents-and-testimonies#${h.slug}` }));
-  const snapshots = moments.map(m => ({ id: m.slug, title: m.title, text: plain(m.summary), meta: `${m.versionId} · ${m.status}`,
+  const snapshots = moments.filter(m => !notices.forURL(url('moment',m))).map(m => ({ id: m.slug, title: m.title, text: plain(m.summary), meta: `${m.versionId} · ${m.status}`,
     detail: plain(m.timelineLabel || m.placementStatus), detailLabel: 'Placement', href: url('moment', m) }));
   // These sizes express the established creative direction, not word frequency or a genre quota.
   const themes = [
