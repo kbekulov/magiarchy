@@ -1,5 +1,23 @@
 [
   {
+    "slug": "content-audit-2026-09-30",
+    "title": "Comprehensive Content Audit: 30 September 2026",
+    "topic": "Archive Content Review",
+    "description": "Twenty-five source-linked findings covering continuity, chronology, character knowledge, prose, political development and cross-media canon boundaries.",
+    "file": "content-audit-2026-09-30.md",
+    "updated": "2026-09-30",
+    "speakers": ["Author's Desk"],
+    "defaultVersion": "v1",
+    "versions": [
+      {
+        "id": "v1",
+        "label": "v1 · Current",
+        "file": "content-audit-2026-09-30.md",
+        "updated": "2026-09-30"
+      }
+    ]
+  },
+  {
     "slug": "oneiric-confluence",
     "title": "The Oneiric Confluence",
     "topic": "Holumn Research",
