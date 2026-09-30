@@ -20,22 +20,6 @@ The author-approved collection is published under [Face & hair references](galle
 
 In each generation brief, identify the selected face-and-hair package separately from body, clothing and scene references. Review both the face and hair against it before accepting an image. Applying this package does not transfer unrelated costume, background, body proportions or story events from the reference. For a localized edit, preserve the existing composition and all unrequested details.
 
-## Mandatory situation-specific expressions
-
-Face-and-hair references establish identity and hairstyle, not a fixed facial expression. Never copy a reference's smile, stare, frown or neutral expression merely because it appears in the selected package. Preserve recognizable facial structure while allowing brows, eyelids, gaze, cheeks and mouth to move naturally. Expression changes must not alter the character's identity, skull scale or body proportions.
-
-Choose the expression for what is happening now and for this character's established personality, intended design, relationships, knowledge and immediate emotional pressure. Consult the character's recorded MBTI and function emphasis as supporting context, not a mechanical rule that assigns one expression to a type. The same situation may provoke different reactions from different characters. The author permits scene-specific judgment; do not require a separate instruction for every facial reaction or invent permanent traits and story events to justify it.
-
-In every generation brief, specify the intended expression separately from the identity reference. During review, check both likeness and whether the expression fits the situation and the character. Reject a reference-copied expression that conflicts with that brief. For localized edits, retain the target image's expression unless the requested change calls for a different one; applying a face-and-hair package must not import its incidental expression.
-
-## Mandatory story-world weapon references
-
-Whenever a character handles a weapon, consult the [Weapons archive](../weapons.html), whose owning records and image paths are in `weapons/index.json`. When a reference for that weapon type exists, use only the matching MAGIARCHY design as the weapon reference and supply its actual registered image to the generator. The archive's named real-world inspirations are background design notes, not substitutes for the finished fictional weapon. Do not replace an available story-world design with a generic weapon or one from another franchise.
-
-Respect the character's established equipment. Preserve the selected weapon's recognizable silhouette, relative size, finish and distinguishing details while adapting perspective and grip to the pose. Inspect those details in the result alongside hand anatomy and contact with the weapon. This applies to full artwork, panels, sketches and chibis; stylization simplifies the design without substituting another model.
-
-If the archive has no reference for the particular weapon type being depicted, the requirement may be skipped for that image. Check again on future requests rather than treating the exception as permanent. An improvised depiction does not automatically become an approved weapon design, a new character assignment or a public archive entry.
-
 ## Mandatory cohesive hair shapes
 
 For every character, construct hair as a cohesive mass rather than many separate strands. This high-priority direction applies to all hair lengths and to portraits, full-body artwork, panels, sketches and chibis. Use a few broad, connected locks or planes, with only several purposeful separations to imply the hair's volume, layering and direction. Describe the surface with restrained interior lines, shadow shapes and highlights rather than tracing individual hairs.
@@ -93,7 +77,7 @@ Record season, light, and visibility separately when a scene brief needs them. R
 
 Her main-story field silhouette includes the long blue coat, pale high-collared blouse and narrow black ribbon, fitted black shorts, dark tights, and black over-the-knee lace-up boots. Do not substitute trousers when depicting the office-building rescue. Preserve her approved hair and face; the witness's narration need not catalogue her eye colour.
 
-Her special [black leather gloves](../items.html?item=lynleits-protective-gloves) normally lie draped over her belt, mostly hidden beneath the coat. When she puts on one glove to use blue flame, she rolls up that arm’s sleeve so her clothing does not catch fire. With both gloves, both sleeves are rolled up. Show the protective gloves worn during blue-flame outbursts. Do not add routine burn scars to communicate competent flame use. In this rescue, a nosebleed, split lip and trembling convey its superficial cost while her hands remain unburned. The gloves and coat are separate protections, and the coat's subtle movement must not reveal its nature to Lynleit before the established discovery. Existing artwork stays intact; apply these confirmed details when producing relevant new work.
+Her special [black leather gloves](../items.html?item=lynleits-protective-gloves) normally lie draped over her belt, mostly hidden beneath the coat. Show them worn during blue-flame outbursts, with the exposed wrist covered. Do not add routine burn scars to communicate competent flame use. In this rescue, a nosebleed, split lip and trembling convey its superficial cost while her hands remain unburned. The gloves and coat are separate protections, and the coat's subtle movement must not reveal its nature to Lynleit before the established discovery. Existing artwork stays intact; apply these confirmed details when producing relevant new work.
 
 ## Kyrien: fixed character design
 

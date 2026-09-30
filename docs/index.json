@@ -276,11 +276,11 @@
     "topic": "Visual Production Standard",
     "file": "character-image-production.md",
     "updated": "2026-10-01",
-    "description": "Public face-and-hair reference packages, cohesive hair shapes and strict original-proportion preservation.",
+    "description": "Situation-specific expressions, story-world weapon references, Lynleit's sleeve preparation, cohesive hair shapes and preserved proportions.",
     "speakers": [
       "Author's Desk"
     ],
-    "defaultVersion": "v17",
+    "defaultVersion": "v18",
     "versions": [
       {
         "id": "v1",
@@ -396,10 +396,17 @@
       },
       {
         "id": "v17",
-        "label": "v17 · Current",
-        "file": "character-image-production.md",
+        "label": "v17 · Archived",
+        "file": "character-image-production-v17.md",
         "updated": "2026-10-01",
         "description": "Face-and-hair references move into public Production resources, grouped by character, Arc and treatment."
+      },
+      {
+        "id": "v18",
+        "label": "v18 · Current",
+        "file": "character-image-production.md",
+        "updated": "2026-10-01",
+        "description": "Scene-specific expressions, mandatory available story-world weapon references and Lynleit's rolled sleeves for blue flame."
       }
     ]
   },

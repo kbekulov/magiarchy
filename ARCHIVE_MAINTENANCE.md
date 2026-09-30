@@ -1,5 +1,11 @@
 # MAGIARCHY Archive Maintenance Charter
 
+For character imagery involving weapons, `weapons/index.json` and its registered original images provide the required story-world design references, surfaced by `weapons.html`. Supply the matching actual image, respect established equipment and verify design fidelity and grip. Named real-world inspirations do not replace an available MAGIARCHY design. Skip this requirement only when that particular weapon type has no archive reference yet; the exception does not establish new canon or authorize publication of a draft design.
+
+Character face-and-hair references lock identity and hairstyle, not expression. Follow the situation-specific expression rule in `docs/character-image-production.md`: choose reactions from the immediate scene and established characterization, with recorded MBTI as supporting context rather than a formula. State expression separately in generation briefs and verify it alongside likeness. Different characters may react differently; scene-specific judgment is authorized. Localized reference edits preserve the target's expression unless a change is requested.
+
+Lynleit rolls up the sleeve on each arm she gloves for blue-flame use, keeping her clothing from catching fire. One glove means the corresponding sleeve; both gloves mean both sleeves. This character-specific preparation belongs in her profile, protective-glove item record, production guide and future relevant prose and artwork, without automatically replacing approved images.
+
 This file is the concise operating map for future agents and maintainers. `AGENTS.md` remains the controlling instruction set. Read both before changing archive content or structure. When a new recurring workflow, record type, or design rule is introduced, update this charter in the same commit.
 
 ## Authority and record states
