@@ -3,7 +3,21 @@ const registryUrl = new URL('gallery/image-identities.json', import.meta.url);
 const base = new URL('.', import.meta.url);
 const byPath = new Map();
 const records = new WeakMap();
+const overlays = new Set();
+const resizeObserver = new ResizeObserver(() => placeOverlays());
 let toast, toastTimer;
+
+function placeOverlays() {
+  for (const state of overlays) {
+    const { image, host, row } = state;
+    if (!image.isConnected || !row.isConnected) { row.remove(); resizeObserver.unobserve(image); overlays.delete(state); continue; }
+    const art = image.getBoundingClientRect(), frame = host.getBoundingClientRect();
+    row.hidden = !art.width || !art.height || image.hidden;
+    row.style.left = `${art.right - frame.left - host.clientLeft + host.scrollLeft - 8}px`;
+    row.style.top = `${art.top - frame.top - host.clientTop + host.scrollTop + 8}px`;
+  }
+}
+window.addEventListener('resize', placeOverlays);
 
 function lookup(value) {
   if (!value) return null;
@@ -65,7 +79,7 @@ function update(row, record) {
   if (button.dataset.imageId === record.id && label.textContent === filename) return;
   label.textContent = filename; label.title = filename;
   button.textContent = record.id; button.dataset.imageId = record.id;
-  button.title = `Copy image ID: ${record.id}`;
+  button.title = `${filename}\nCopy image ID: ${record.id}`;
   button.setAttribute('aria-label', `Copy image ID ${record.id}, ${filename}`);
 }
 function decorate(image) {
@@ -81,17 +95,15 @@ function decorate(image) {
   }
   let state = records.get(image);
   if (state && state.row.isConnected) { update(state.row, record); return; }
-  const host = image.closest('.gallery-card, .scene-panel, .gallery-detail-card, .character-card, .character-profile-portrait, .panel-card, .production-card, .music-card, .weapon-figure, .duchy-map-figure');
-  const row = host?.querySelector(':scope > .published-image-meta') || metadata(record);
-  update(row, record);
-  if (host) {
-    row.classList.toggle('image-meta-portrait', host.matches('.character-profile-portrait'));
-    host.append(row);
-  } else {
-    const anchor = image.closest('a, button') || image;
-    anchor.after(row);
-  }
-  records.set(image, { row });
+  const host = image.closest('.gallery-card, .scene-panel, .gallery-detail-image-wrap, .character-card, .character-profile-portrait, .panel-card, .production-card, .music-card, .weapon-figure, .duchy-map-figure') || (image.closest('a, button') || image).parentElement;
+  if (getComputedStyle(host).position === 'static') host.classList.add('image-id-host');
+  const row = metadata(record);
+  host.append(row);
+  state = { row, host, image };
+  records.set(image, state);
+  overlays.add(state);
+  resizeObserver.observe(image);
+  image.addEventListener('load', placeOverlays);
 }
 let scheduled = false;
 function scan() {
@@ -101,10 +113,13 @@ function scan() {
   document.querySelectorAll('#resource-downloads a[download]').forEach(anchor => {
     const record = lookup(anchor.href);
     if (!record || anchor.parentElement.querySelector('.published-image-meta')) return;
+    const row = metadata(record);
+    row.classList.add('image-id-download');
     const existingFilename = anchor.parentElement.querySelector('small');
-    if (existingFilename) existingFilename.replaceWith(metadata(record));
-    else anchor.parentElement.append(metadata(record));
+    if (existingFilename) existingFilename.replaceWith(row);
+    else anchor.parentElement.append(row);
   });
+  placeOverlays();
 }
 function schedule() {
   if (!scheduled) { scheduled = true; requestAnimationFrame(scan); }

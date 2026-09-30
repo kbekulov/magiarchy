@@ -4087,46 +4087,39 @@ a.status-member:hover {
   font-size: .86rem;
 }
 
+.image-id-host { position: relative; }
 .published-image-meta {
+  position: absolute;
+  z-index: 6;
   display: flex;
   align-items: center;
-  gap: 8px;
-  min-width: 0;
-  max-width: 100%;
-  padding: 6px 12px;
-  border-top: 1px solid #3f4147;
-  background: #232428;
-  color: var(--subtle);
-  font-size: .65rem;
-  line-height: 1.4;
-  grid-column: 1 / -1;
+  width: max-content;
+  transform: translateX(-100%);
+  pointer-events: none;
 }
-.published-image-filename {
-  flex: 1 1 0;
-  min-width: 0;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
+.published-image-filename { display: none; }
+.published-image-meta[hidden] { display: none; }
 .image-id-copy {
   position: relative;
-  z-index: 5;
-  flex: 0 0 auto;
-  min-height: 32px;
-  padding: 4px 7px;
-  border: 1px solid #4e5058;
+  isolation: isolate;
+  min-height: 24px;
+  padding: 4px 6px;
+  border: 0;
   border-radius: 4px;
-  background: #2b2d31;
-  color: var(--text);
-  font: 600 .68rem monospace;
+  background: transparent;
+  color: #e1e2e5;
+  font: 400 10px/16px monospace;
   cursor: pointer;
   touch-action: manipulation;
+  pointer-events: auto;
 }
+.image-id-copy::before { content: ''; position: absolute; z-index: -1; inset: 0; border-radius: 4px; background: rgb(30 31 34 / 76%); }
 .image-id-copy:focus-visible { outline: 2px solid var(--accent-bright); outline-offset: 2px; }
 @media (hover: hover) and (pointer: fine) {
-  .image-id-copy:hover { border-color: var(--accent-bright); background: #383a40; }
+  .image-id-copy:hover::before { background: #383a40; }
 }
-.image-meta-portrait { position: absolute; top: 0; left: 0; right: 0; z-index: 4; border-top: 0; }
+.image-id-download { position: static; transform: none; width: auto; gap: 8px; flex-wrap: wrap; }
+.image-id-download .published-image-filename { display: inline; overflow-wrap: anywhere; min-width: 0; color: var(--subtle); font-size: .7rem; }
 .image-id-toast {
   position: fixed;
   z-index: 10000;
@@ -4144,7 +4137,10 @@ a.status-member:hover {
   pointer-events: none;
 }
 .image-id-copy-buffer { position: fixed; left: -9999px; top: 0; }
-@media (pointer: coarse) { .image-id-copy { min-height: 44px; } }
+@media (pointer: coarse) {
+  .image-id-copy { min-height: 44px; }
+  .image-id-copy::before { top: 10px; bottom: 10px; }
+}
 
 .gallery-toolbar {
   display: flex;
