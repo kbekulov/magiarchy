@@ -1,8 +1,30 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { currentNodes, inspect, jsonTree } from './audit-prose-voice.mjs';
+import { currentNodes, inspect, jsonTree, firstPersonChecklist, reviewFirstPerson } from './audit-prose-voice.mjs';
+import fs from 'node:fs';
 
 const passage = (text, kind = 'archive', line = 1) => ({ file: 'sample.md', line, text, kind });
+
+test('first-person review reads every mandatory rule from the current standard', () => {
+  const source = fs.readFileSync(new URL('../docs/first-person-prose.md', import.meta.url), 'utf8');
+  const checks = firstPersonChecklist(source);
+  assert.equal(checks.length, 16);
+  assert.deepEqual(checks.map(check => check.id), Array.from({ length: 16 }, (_, i) => 'FP' + String(i + 1).padStart(2, '0')));
+  assert.ok(checks.every(check => check.title && check.question));
+  assert.throws(() => firstPersonChecklist('### FP01 Missing question\nText.'), /Audit question/);
+  assert.throws(() => firstPersonChecklist('### FP01 A\nAudit: One?\n### FP01 B\nAudit: Two?'), /unique/);
+});
+
+test('first-person signals preserve ordinary filters, emotion and purposeful repetition', () => {
+  assert.deepEqual(reviewFirstPerson('I looked at the latch. I was scared.\n\nI tried again. It still would not lift.', 'scene.md'), []);
+  const warnings = reviewFirstPerson('I swear it moved.\nI know what I saw.\nBelieve me, I checked.', 'scene.md');
+  assert.deepEqual(warnings.map(warning => warning.line), [1, 2, 3]);
+  assert.ok(warnings.every(warning => warning.reason.includes('do not remove by quota')));
+  assert.equal(reviewFirstPerson('I swear it moved.', 'scene.md').length, 0);
+  const artifact = reviewFirstPerson('A scene.\n\nGo Unlimited at https://turboscribe.ai/', 'scene.md');
+  assert.equal(artifact[0].line, 3);
+  assert.match(artifact[0].reason, /artifact/);
+});
 
 test('selected revision wins, with inherited fields and exact source locations', () => {
   const source = '{\n "title":"Inherited",\n "summary":"old",\n "defaultVersion":"v2",\n "versions":[\n {"id":"v1","summary":"archived"},\n {"id":"v2","summary":"current"},\n {"id":"v3","summary":"newest, not default"}\n ]\n}';

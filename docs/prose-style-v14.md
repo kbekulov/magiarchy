@@ -4,19 +4,11 @@ Write from the author's wording and approved passages first. Successful current 
 
 ## Transcript reference method
 
-The author has approved a continuing technique-only reference corpus under `backlog/prose_transcripts/`. The first supplied collection was analysed on 1 October 2026: five complete accounts and an unfinished sixth. [First Person Prose](../docs.html?doc=first-person-prose) contains the source analysis, evidence locations and mandatory first-person rules. The original transcript stays private and unchanged; its stories are not MAGIARCHY lore.
+The author has approved a continuing technique-only reference corpus under `backlog/prose_transcripts/`. No samples were present when this rule was established on 29 September 2026. This is a method for future analysis, not a report of findings.
 
 Read every supplied TXT as an editor and writer. Examine structure, vocabulary, dialogue, tension, pacing, flow, semantics, scene construction and the larger arrangement of information and consequence. For each reusable technique, record what the passage does, why it works there, where a MAGIARCHY Chapter could benefit, and where copying the technique would weaken the scene. Keep the rules detailed enough to guide an actual revision and refine them when later examples qualify an earlier conclusion.
 
-Transfer techniques, not sentences, characters, events, settings or lore. The transcripts are not canon. Preserve MAGIARCHY's world, plot intentions, character identities, important dialogue and the author-approved voice hierarchy. An isolated stylistic habit is not a compulsory rule for every Chapter. The author explicitly requires the derived first-person standard for first-person generation and audits; that scoped requirement does not change the third-person default. Distinguish the analysis of how a sample works from the mandatory application rules, and never claim evidence from material not supplied.
-
-## Mandatory first person standard
-
-Before drafting, revising or auditing first-person narrative, read [First Person Prose](../docs.html?doc=first-person-prose) in full alongside the relevant character and canon records. Apply its FP01-FP16 rules: a particular speaking voice, bounded knowledge, ordinary context, perception before interpretation, intelligible choices and space, sustained consequential experience, natural spoken rhythm, purposeful repetition, personal emotion, consequential dialogue, distinct minds, earned intensity, specific aftermath and technique-only transfer.
-
-These are hard acceptance rules where applicable, not a requirement to give every scene every ingredient. Retrospective testimony is the unmarked first-person mode; an explicit immediate or present-tense brief controls instead. First-person dialogue inside third-person narration is not a viewpoint change. Keep the sample's plain admissions, practical reasoning and selective hindsight when they do real work; do not normalize them into the general third-person narrator's dry voice.
-
-Record pass, revise or justified not applicable with passage evidence for each FP rule during review. Resolve applicable revise findings before accepting the draft unless the author explicitly overrides them. `npm run prose:audit -- --first-person story/example.md` prints the shared mandatory checklist and limited review signals. Its lack of warnings cannot certify literary compliance. Do not rewrite existing Chapters solely because this standard was added.
+Transfer techniques, not sentences, characters, events, settings or lore. The transcripts are not canon. Preserve MAGIARCHY's world, plot intentions, character identities, important dialogue and the author-approved voice hierarchy. An isolated stylistic habit is not a compulsory rule for every Chapter. Label working editorial deductions separately from the author's established preferences; do not claim evidence from files that have not been supplied.
 
 ## What the prose pays attention to
 

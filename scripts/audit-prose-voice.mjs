@@ -138,10 +138,57 @@ export function inspect(group) {
   return findings;
 }
 
+// Explicit selection avoids mistaking quoted first-person dialogue for narrative.
+// Literary acceptance remains a mandatory editorial review, not a regex score.
+export function firstPersonChecklist(source) {
+  const checks = [...source.matchAll(/^### (FP\d{2}) ([^\r\n]+)\r?\n([\s\S]*?)(?=^### |^## |$(?![\s\S]))/gm)].map(match => ({
+    id: match[1], title: match[2], question: /^Audit: ([^\r\n]+)/m.exec(match[3])?.[1]
+  }));
+  if (!checks.length || checks.some(check => !check.question) || new Set(checks.map(check => check.id)).size !== checks.length) {
+    throw new Error('First-person standard must have unique FP rules with an Audit question.');
+  }
+  return checks;
+}
+
+export function reviewFirstPerson(source, file) {
+  const warnings = [];
+  const signal = (match, reason) => warnings.push({
+    file, line: source.slice(0, match.index).split('\n').length, phrase: match[0], reason
+  });
+  for (const match of source.matchAll(/\u2014/g)) signal(match, 'Banned punctuation. Preserve the voice while correcting the punctuation.');
+  for (const match of source.matchAll(/(?:Go Unlimited at https:\/\/turboscribe\.ai\/|This file is longer than \d+ minutes)/gi)) {
+    signal(match, 'Transcription-service artifact, not narrative technique (FP16).');
+  }
+  for (const expression of [
+    /\b(?:I swear|I know what I saw|believe me|I must sound crazy)\b/gi,
+    /\b(?:little did I know|I would soon discover|nothing could have prepared me)\b/gi
+  ]) {
+    const matches = [...source.matchAll(expression)];
+    if (matches.length >= 3) for (const match of matches) signal(match, 'Repeated credibility or forecast language. Review its changing function, do not remove by quota (FP02, FP10, FP14).');
+  }
+  return warnings;
+}
+
 if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.meta.url)) {
+  const args = process.argv.slice(2);
+  if (args[0] === '--first-person') {
+    if (args.length < 2) throw new Error('Supply at least one first-person narrative file after --first-person.');
+    const checklist = firstPersonChecklist(read('docs/first-person-prose.md'));
+    console.log('Mandatory first-person editorial review. Signals are advisory; no automatic style pass or authorship score.');
+    for (const file of args.slice(1)) {
+      const source = fs.readFileSync(path.resolve(root, file), 'utf8');
+      console.log('\nSelected narrative: ' + file);
+      for (const finding of reviewFirstPerson(source, file)) console.log(finding.file + ':' + finding.line + ' | ' + finding.phrase + ' | ' + finding.reason);
+      for (const check of checklist) console.log('[REVIEW REQUIRED] ' + check.id + ' ' + check.title + ': ' + check.question);
+    }
+    console.log('\nRecord pass, revise, or justified not applicable with passage locations for every rule. Resolve applicable revise findings before acceptance. Automated output is not editorial sign-off.');
+  } else {
+  if (args.length) throw new Error('Unknown arguments. Use --first-person followed by narrative file paths.');
   collect();
   const findings = inspect(units);
   console.log(`Prose voice review: ${files.size} current sources, ${units.length} passages. Historical revisions and generated duplicates excluded.`);
   for (const f of findings) console.log(`${f.file}:${f.line} | ${f.phrase.slice(0, 220)} | ${f.reason}`);
   console.log(`${findings.length} review warnings. No authorship score, automatic edits, or style failures. Watchwords are not banned; preserve concrete uses and deliberate repetition.`);
+  console.log('First-person narrative also requires the mandatory FP review in docs/first-person-prose.md. Run prose:audit -- --first-person <file> for its checklist; this archive scan does not certify it.');
+  }
 }

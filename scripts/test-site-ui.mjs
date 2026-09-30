@@ -27,6 +27,7 @@ import { testPageSpacing } from './test-page-spacing.mjs';
 import { testEleventhFloor } from './test-eleventh-floor.mjs';
 import { testSeasonalDirection } from './test-seasonal-direction.mjs';
 import { testLeoMikhailArt } from './test-leo-mikhail-art.mjs';
+import { testFirstPersonProse } from './test-first-person-prose.mjs';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const mime = { '.html': 'text/html', '.js': 'text/javascript', '.json': 'application/json', '.css': 'text/css', '.png': 'image/png', '.webp': 'image/webp', '.md': 'text/plain', '.mp3': 'audio/mpeg', '.wav': 'audio/wav' };
@@ -80,6 +81,11 @@ try {
         await testFanServiceIntake(page, origin, engine);
         await testGalleryFilters(page, origin, engine);
         assert.deepEqual(errors, [], `${engine}: gallery filter errors`);
+        continue;
+      }
+      if (process.env.TEST_FIRST_PERSON_ONLY === '1') {
+        await testFirstPersonProse(page, origin, engine);
+        assert.deepEqual(errors, [], engine + ': first-person reader errors');
         continue;
       }
       if (process.env.TEST_IMAGE_IDS_ONLY === '1') {
@@ -186,6 +192,7 @@ try {
         continue;
       }
       await testHomeFeed(page, origin, engine);
+      await testFirstPersonProse(page, origin, engine);
       await testPageSpacing(page, origin, engine);
       await testEleventhFloor(page, origin, engine);
       await testHomeDashboard(page, origin, engine);

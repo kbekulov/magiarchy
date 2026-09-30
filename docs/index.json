@@ -415,12 +415,12 @@
     "title": "MAGIARCHY Prose Style",
     "topic": "Writer's Style Reference",
     "file": "prose-style.md",
-    "updated": "2026-09-29",
-    "description": "The active house style and a technique-only method for learning from supplied prose transcripts without importing their story content.",
+    "updated": "2026-10-01",
+    "description": "The active house style with a mandatory, source-based first-person standard for writing and audits.",
     "speakers": [
       "Author's Desk"
     ],
-    "defaultVersion": "v14",
+    "defaultVersion": "v15",
     "versions": [
       {
         "id": "v1",
@@ -515,10 +515,38 @@
       },
       {
         "id": "v14",
-        "label": "v14 · Current",
-        "file": "prose-style.md",
+        "label": "v14 · Archived",
+        "file": "prose-style-v14.md",
         "updated": "2026-09-29",
         "description": "Technique-only transcript analysis: an ongoing editorial reference method, with no samples analysed yet."
+      },
+      {
+        "id": "v15",
+        "label": "v15 · Current",
+        "file": "prose-style.md",
+        "updated": "2026-10-01",
+        "description": "First supplied transcript analysed; mandatory first-person rules are owned by First Person Prose."
+      }
+    ]
+  },
+  {
+    "slug": "first-person-prose",
+    "title": "First Person Prose",
+    "topic": "Writer's Style Reference",
+    "file": "first-person-prose.md",
+    "updated": "2026-10-01",
+    "description": "Source-based analysis and sixteen mandatory rules for first-person narrative generation and editorial audits.",
+    "speakers": [
+      "Author's Desk"
+    ],
+    "defaultVersion": "v1",
+    "versions": [
+      {
+        "id": "v1",
+        "label": "v1 · Current",
+        "file": "first-person-prose.md",
+        "updated": "2026-10-01",
+        "description": "Five complete sample accounts and one unfinished excerpt analysed for transferable voice, structure, pacing, dialogue and viewpoint."
       }
     ]
   },
