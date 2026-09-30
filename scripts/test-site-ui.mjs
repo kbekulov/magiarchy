@@ -7,6 +7,7 @@ import { fileURLToPath } from 'node:url';
 import { chromium, webkit, firefox } from 'playwright';
 import { testGalleryResources } from './test-gallery-resources.mjs';
 import { testGalleryStacks } from './test-gallery-stacks.mjs';
+import { testGalleryFilters } from './test-gallery-filters.mjs';
 import { testGalleryPanels } from './test-gallery-panels.mjs';
 import { testSeptemberPanelIntake } from './test-september-panel-intake.mjs';
 import { testKyrienOrigin } from './test-kyrien-origin.mjs';
@@ -73,6 +74,11 @@ try {
         await page.goto(`${origin}/${route}`);
         await page.waitForLoadState('networkidle');
       };
+      if (process.env.TEST_GALLERY_FILTERS_ONLY === '1') {
+        await testGalleryFilters(page, origin, engine);
+        assert.deepEqual(errors, [], `${engine}: gallery filter errors`);
+        continue;
+      }
       if (process.env.TEST_SEASONS_ONLY === '1') {
         await testSeasonalDirection(page, origin, engine);
         assert.deepEqual(errors, [], `${engine}: seasonal reader errors`);

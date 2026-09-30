@@ -350,6 +350,8 @@ const galleryChibiFilter = document.querySelector('#gallery-chibi-filter');
 const galleryExcludeChibiFilter = document.querySelector('#gallery-exclude-chibi-filter');
 const galleryPencilFilter = document.querySelector('#gallery-pencil-filter');
 const galleryColoredFilter = document.querySelector('#gallery-colored-filter');
+const galleryFanServiceFilter = document.querySelector('#gallery-fan-service-filter');
+if (galleryFanServiceFilter) galleryFanServiceFilter.checked = new URLSearchParams(window.location.search).get('fan-service') === '1';
 const galleryItems = document.querySelectorAll('.gallery-card');
 const galleryResultCount = document.querySelector('#gallery-result-count');
 const galleryEmptyState = document.querySelector('#gallery-empty-state');
@@ -420,7 +422,7 @@ function initializeGalleryCards() {
   galleryDetailImage.alt = image.alt;
   galleryDetailImage.width = Number(image.getAttribute('width'));
   galleryDetailImage.height = Number(image.getAttribute('height'));
-  galleryDetailType.textContent = type;
+  galleryDetailType.textContent = selectedCard.dataset.fanService === 'true' ? `${type} · Fan Service` : type;
   galleryDetailTitle.textContent = title;
   galleryDetailMeta.textContent = `${code} · ${location}`;
   const context = document.querySelector('#gallery-detail-context');
@@ -512,17 +514,35 @@ function updateGalleryResults() {
   const excludeChibis = galleryExcludeChibiFilter?.checked ?? false;
   const pencilOnly = galleryPencilFilter?.checked ?? false;
   const coloredOnly = galleryColoredFilter?.checked ?? false;
+  const fanServiceOnly = galleryFanServiceFilter?.checked ?? false;
   let visibleCount = 0;
+  const matchesFilters = item => {
+    const characters = (item.dataset.character ?? '').split(/\s+/).filter(Boolean);
+    const isChibi = item.dataset.chibi === 'true';
+    return (selectedCharacter === 'all' || characters.includes(selectedCharacter))
+      && (selectedLocation === 'all' || item.dataset.location === selectedLocation)
+      && (!chibiOnly || isChibi) && (!excludeChibis || !isChibi)
+      && (!pencilOnly || item.dataset.artFinish === 'pencil')
+      && (!coloredOnly || item.dataset.artFinish === 'colored')
+      && (!fanServiceOnly || item.dataset.fanService === 'true');
+  };
+
+  // A mixed stack must show a matching variant, not disappear because its random preview differs.
+  const fanServiceStackPreviews = new Map();
+  if (fanServiceOnly) {
+    galleryItems.forEach(item => {
+      if (!item.dataset.artworkStack || !matchesFilters(item)) return;
+      if (!fanServiceStackPreviews.has(item.dataset.artworkStack) || item.dataset.stackPreview === 'true') {
+        fanServiceStackPreviews.set(item.dataset.artworkStack, item);
+      }
+    });
+  }
 
   galleryItems.forEach((item) => {
-    const itemCharacters = (item.dataset.character ?? '').split(/\s+/).filter(Boolean);
-    const matchesCharacter = selectedCharacter === 'all' || itemCharacters.includes(selectedCharacter);
-    const matchesLocation = selectedLocation === 'all' || item.dataset.location === selectedLocation;
-    const isChibi = item.dataset.chibi === 'true';
-    const matchesChibi = (!chibiOnly || isChibi) && (!excludeChibis || !isChibi);
-    const matchesFinish = (!pencilOnly || item.dataset.artFinish === 'pencil') && (!coloredOnly || item.dataset.artFinish === 'colored');
-    const isPreview = item.dataset.artworkStack ? item.dataset.stackPreview === 'true' : !item.dataset.imageVersionGroup || item.dataset.imageVersionDefault === 'true';
-    const isVisible = isPreview && matchesCharacter && matchesLocation && matchesChibi && matchesFinish;
+    const isPreview = item.dataset.artworkStack
+      ? (fanServiceOnly ? fanServiceStackPreviews.get(item.dataset.artworkStack) === item : item.dataset.stackPreview === 'true')
+      : !item.dataset.imageVersionGroup || item.dataset.imageVersionDefault === 'true';
+    const isVisible = isPreview && matchesFilters(item);
 
     item.hidden = !isVisible;
     if (isVisible) visibleCount += 1;
@@ -530,10 +550,22 @@ function updateGalleryResults() {
 
   if (galleryResultCount) galleryResultCount.textContent = String(visibleCount);
   if (galleryEmptyState) galleryEmptyState.hidden = visibleCount !== 0;
+  const emptyDescription = galleryEmptyState?.querySelector('p');
+  if (emptyDescription) emptyDescription.textContent = fanServiceOnly
+    ? 'No Fan Service artwork matches these filters. Try another selection or turn off Fan Service.'
+    : 'Try another character or location, or turn off a filter.';
 }
 
 galleryCharacterFilter?.addEventListener('change', updateGalleryResults);
+updateGalleryResults();
 galleryLocationFilter?.addEventListener('change', updateGalleryResults);
+galleryFanServiceFilter?.addEventListener('change', () => {
+  const url = new URL(window.location.href);
+  if (galleryFanServiceFilter.checked) url.searchParams.set('fan-service', '1');
+  else url.searchParams.delete('fan-service');
+  window.history.replaceState(window.history.state, '', url);
+  updateGalleryResults();
+});
 for (const pair of [[galleryChibiFilter, galleryExcludeChibiFilter], [galleryPencilFilter, galleryColoredFilter]]) {
   pair.forEach((toggle, index) => {
     toggle?.addEventListener('change', () => {

@@ -4133,7 +4133,7 @@ a.status-member:hover {
 
 .gallery-toggle-options {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 24px;
   margin-left: auto;
   align-self: center;
@@ -9972,8 +9972,13 @@ a.moment-connection-card:hover {
 
   .gallery-toggle-options {
     grid-column: 1 / -1;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 10px;
     margin-left: 0;
+  }
+
+  .gallery-purpose-filter {
+    grid-column: 1 / -1;
   }
 
   .chibi-toggle {
