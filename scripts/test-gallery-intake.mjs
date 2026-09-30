@@ -1,3 +1,4 @@
+import { publishedImagePath } from './test-image-paths.mjs';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
 
@@ -27,7 +28,7 @@ export async function testGalleryIntake(page, origin, engine) {
       }
     }
     for (const [id, character, filename] of images) {
-      const source = `media/gallery/images/characters/${filename}.png`;
+      const source = publishedImagePath(`media/gallery/images/characters/${filename}.png`);
       await visit(`gallery.html?image=${id}`);
       await page.locator('#gallery-detail-image').evaluate(image => image.decode());
       assert.equal(await page.locator('#gallery-detail-image').getAttribute('src'), source);
@@ -46,7 +47,8 @@ export async function testGalleryIntake(page, origin, engine) {
       }
       assert.ok(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1));
       await visit(`character.html?character=${character}`);
-      const button = page.locator('.profile-art-thumbnails button').filter({ has: page.locator(`img[src$="${filename}.webp"]`) });
+      const preview = publishedImagePath(`media/gallery/previews/characters/${filename}.webp`);
+      const button = page.locator('.profile-art-thumbnails button').filter({ has: page.locator(`img[src="${preview}"]`) });
       assert.equal(await button.count(), 1, `${id}: missing from profile viewer`);
       if (await page.locator('.profile-art-thumbnails button').count() > 1) {
         await button.click();
@@ -54,7 +56,7 @@ export async function testGalleryIntake(page, origin, engine) {
         assert.ok(await button.isHidden(), 'A single portrait does not need navigation');
       }
       assert.equal(await button.getAttribute('aria-pressed'), 'true');
-      await page.locator(`.profile-portrait-strip img[src$="${filename}.png"]`).first().evaluate(image => image.decode());
+      await page.locator(`.profile-portrait-strip img[src="${source}"]`).first().evaluate(image => image.decode());
       assert.equal(await page.locator('.profile-art-thumbnails img[src$="-v1.webp"]').count(), 0, `${character}: retired portrait still in rotation`);
       if (id === 'char-lynleit-blue-gown-ballroom') assert.equal(await page.locator('.profile-art-era').textContent(), 'Arc 1');
       if (character === 'yulia') assert.equal(await page.locator('.profile-art-thumbnails img[src$="char-yulia-white-sweater.webp"]').count(), 0);
@@ -96,11 +98,11 @@ export async function testGalleryIntake(page, origin, engine) {
   for (const [id] of images.slice(4)) assert.ok(search.some(record => record.url === `gallery.html?image=${id}`));
   for (const extension of ['png', 'webp']) {
     const folder = extension === 'png' ? 'images' : 'previews';
-    assert.ok(!fs.existsSync(`media/gallery/${folder}/characters/char-yulia-white-sweater.${extension}`));
+    assert.ok(!fs.existsSync(publishedImagePath(`media/gallery/${folder}/characters/char-yulia-white-sweater.${extension}`)));
   }
   for (const [id, , filename] of images.slice(0, 3)) {
-    assert.ok(!fs.existsSync(`media/gallery/images/characters/${filename}-v1.png`));
-    assert.ok(!fs.existsSync(`media/gallery/previews/characters/${filename}-v1.webp`));
+    assert.ok(!fs.existsSync(publishedImagePath(`media/gallery/images/characters/${filename}-v1.png`)));
+    assert.ok(!fs.existsSync(publishedImagePath(`media/gallery/previews/characters/${filename}-v1.webp`)));
     assert.ok(!search.some(record => record.id === `artwork-${id}-v1`));
   }
   console.log(`${engine}: single-revision portraits, Yulia artwork, original bytes, profile discovery, and dinner links passed`);

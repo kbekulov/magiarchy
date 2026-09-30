@@ -16,7 +16,7 @@ function renderManufacturer(manufacturer) {
   if (!weaponsManufacturerPanel) return;
   const mark = weaponElement('div', 'manufacturer-mark');
   const logo = weaponElement('img', 'manufacturer-logo');
-  logo.src = 'media/gallery/images/weapons/ren_arms_logo.png';
+  logo.src = 'media/gallery/images/weapons/FULL-ren_arms_logo-img-000095.png';
   logo.alt = 'Ren Arms mark';
   mark.append(logo, weaponElement('i'));
 

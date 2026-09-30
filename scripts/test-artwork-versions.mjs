@@ -1,3 +1,4 @@
+import { publishedImagePath } from './test-image-paths.mjs';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import { testGalleryFilters } from './test-gallery-filters.mjs';
@@ -57,13 +58,13 @@ export async function testArtworkVersions(page, origin, engine) {
     await page.locator('#gallery-detail-image').evaluate(img => img.decode());
     assert.ok(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1));
     await page.screenshot({ path: `test-results/${engine}-historical-artwork-${width}.png` });
-    assert.equal(await page.locator('#gallery-detail-source').getAttribute('href'), 'media/gallery/images/history/earliest-cast-sketch-part-1.png');
+    assert.equal(await page.locator('#gallery-detail-source').getAttribute('href'), 'media/gallery/images/history/FULL-earliest-cast-sketch-part-1-img-000093.png');
     assert.equal(await page.locator('#gallery-siblings a').count(), 2);
     await page.locator('#gallery-siblings a').nth(1).click();
     await page.waitForURL('**/gallery.html?image=earliest-cast-sketch-part-2');
     await page.locator('#gallery-detail-image').evaluate(img => img.decode());
     assert.equal(await page.locator('#gallery-detail-image').evaluate(img => img.naturalWidth), 3606);
-    assert.equal(await page.locator('#gallery-detail-source').getAttribute('href'), 'media/gallery/images/history/earliest-cast-sketch-part-2.png');
+    assert.equal(await page.locator('#gallery-detail-source').getAttribute('href'), 'media/gallery/images/history/FULL-earliest-cast-sketch-part-2-img-000094.png');
     assert.ok(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1));
     await page.screenshot({ path: `test-results/${engine}-historical-artwork-part-2-${width}.png` });
     await page.goto(`${origin}/characters.html?chibi-test=0`);
@@ -83,10 +84,10 @@ export async function testArtworkVersions(page, origin, engine) {
       await card.evaluate(element => element.scrollIntoView({ block: 'center' }));
       await page.waitForFunction(({ name, filename }) => {
         const img = document.querySelector(`[data-name="${name}"] .character-chibi`);
-        return img?.complete && img.naturalWidth > 0 && img.currentSrc.endsWith(`${filename}.webp`);
+        return img?.complete && img.naturalWidth > 0 && img.currentSrc.replace(/-img-\d{6}(?=\.webp$)/, '').endsWith(`${filename}.webp`);
       }, { name, filename });
-      assert.equal(await chibi.getAttribute('src'), `media/gallery/previews/chibis/${filename}.webp`);
-      assert.ok((await chibi.evaluate(img => img.currentSrc)).includes(`${filename}.webp`));
+      assert.equal(await chibi.getAttribute('src'), publishedImagePath(`media/gallery/previews/chibis/${filename}.webp`));
+      assert.ok((await chibi.evaluate(img => img.currentSrc.replace(/-img-\d{6}(?=\.webp$)/, ''))).includes(`${filename}.webp`));
       await card.screenshot({ path: `test-results/${engine}-${slug}-updated-chibi-card-${width}.png` });
     }
     for (const [slug, name, filename] of updatedChibis) {
@@ -96,7 +97,7 @@ export async function testArtworkVersions(page, origin, engine) {
       const image = page.locator('#gallery-detail-image');
       await image.evaluate(img => img.decode());
       assert.equal(await page.locator('#gallery-detail-title').textContent(), `${name} - chibis`);
-      const source = `media/gallery/images/chibis/${filename}.png`;
+      const source = publishedImagePath(`media/gallery/images/chibis/${filename}.png`);
       assert.equal(await page.locator('#gallery-detail-source').getAttribute('href'), source);
       assert.equal(await image.evaluate(img => img.naturalWidth === img.naturalHeight), true);
       const response = await page.request.get(`${origin}/${source}`);
@@ -111,11 +112,11 @@ export async function testArtworkVersions(page, origin, engine) {
     }
     await page.goto(`${origin}/gallery.html?image=char-kyrien-arc-1-chibi-beige-jacket`);
     await page.locator('#gallery-detail-image').evaluate(img => img.decode());
-    assert.equal(await page.locator('#gallery-detail-source').getAttribute('href'), 'media/gallery/images/chibis/char-kyrien-arc-1-chibi-beige-jacket-r2.png');
+    assert.equal(await page.locator('#gallery-detail-source').getAttribute('href'), 'media/gallery/images/chibis/FULL-char-kyrien-arc-1-chibi-beige-jacket-r2-img-000061.png');
     await page.goto(`${origin}/gallery.html?image=char-lynleit-2`);
     await page.waitForLoadState('networkidle');
     assert.ok((await page.locator('#gallery-detail-title').innerText()).includes('Arc 0'));
-    assert.equal(await page.locator('#gallery-detail-source').getAttribute('href'), 'media/gallery/images/characters/char-lynleit-arc0-1.png');
+    assert.equal(await page.locator('#gallery-detail-source').getAttribute('href'), 'media/gallery/images/characters/FULL-char-lynleit-arc0-1-img-000017.png');
     await page.goto(`${origin}/gallery.html?image=char-lynleit-arc2-1`);
     await page.waitForLoadState('networkidle');
     assert.ok((await page.locator('#gallery-detail-title').innerText()).includes('Arc 2'));
@@ -136,7 +137,7 @@ export async function testArtworkVersions(page, origin, engine) {
     await page.waitForURL('**/gallery.html?image=char-sherie-1-v2-ankle-boots');
     await page.waitForLoadState('networkidle');
     assert.ok((await nav.locator('[aria-current]').innerText()).includes('v2'));
-    assert.equal(await page.locator('#gallery-detail-source').getAttribute('href'), 'media/gallery/images/characters/char-sherie-1-v2-ankle-boots.png');
+    assert.equal(await page.locator('#gallery-detail-source').getAttribute('href'), 'media/gallery/images/characters/FULL-char-sherie-1-v2-ankle-boots-img-000023.png');
     assert.ok(await page.locator('#gallery-siblings').isHidden());
     await nav.scrollIntoViewIfNeeded();
     assert.ok(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1));
@@ -144,7 +145,7 @@ export async function testArtworkVersions(page, origin, engine) {
     await nav.getByRole('link', { name: 'v1 · Original heels', exact: true }).focus();
     await page.keyboard.press('Enter');
     await page.waitForURL('**/gallery.html?image=char-sherie-1');
-    assert.equal(await page.locator('#gallery-detail-source').getAttribute('href'), 'media/gallery/images/characters/char-sherie-1.png');
+    assert.equal(await page.locator('#gallery-detail-source').getAttribute('href'), 'media/gallery/images/characters/FULL-char-sherie-1-img-000024.png');
     await page.goto(`${origin}/gallery.html?image=char-sherie_drake-1`);
     await page.waitForLoadState('networkidle');
     assert.ok(await nav.isHidden());
@@ -161,7 +162,7 @@ export async function testArtworkVersions(page, origin, engine) {
     await page.goto(`${origin}/gallery.html?image=char-hiyu-yulia-church-interior`);
     await page.locator('#gallery-detail-image').evaluate(img => img.decode());
     assert.equal(await page.locator('#gallery-detail-title').innerText(), 'Hiyu and Yulia');
-    assert.equal(await page.locator('#gallery-detail-source').getAttribute('href'), 'media/gallery/images/characters/char-hiyu-yulia-church-interior.png');
+    assert.equal(await page.locator('#gallery-detail-source').getAttribute('href'), 'media/gallery/images/characters/FULL-char-hiyu-yulia-church-interior-img-000007.png');
     for (const slug of ['hiyu', 'yulia']) {
       await page.goto(`${origin}/character.html?character=${slug}`);
       await page.waitForLoadState('networkidle');

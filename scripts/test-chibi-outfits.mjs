@@ -1,3 +1,4 @@
+import { publishedImagePath } from './test-image-paths.mjs';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
 
@@ -23,7 +24,7 @@ export async function assertChibiCard(page, name, expectedIndex) {
     const img = document.querySelector(`[data-name="${name}"] .character-chibi`);
     return img?.complete && img.naturalWidth > 0 && img.currentSrc.endsWith('.webp');
   }, name);
-  const filename = (await card.locator('.character-chibi').getAttribute('src')).split('/').pop().replace('.webp', '');
+  const filename = (await card.locator('.character-chibi').getAttribute('src')).split('/').pop().replace(/^PREV-/, '').replace(/-img-\d{6}\.webp$/, '');
   const chosen = chibiOutfits[name].findIndex(outfit => outfit[1] === filename);
   assert.ok(chosen >= 0, `${name}: unregistered chibi selected`);
   if (expectedIndex !== undefined) assert.equal(chosen, expectedIndex, `${name}: randomization must reach every outfit`);
@@ -81,7 +82,7 @@ export async function testChibiOutfits(page, origin, engine) {
         assert.deepEqual(await image.evaluate(img => [img.naturalWidth, img.naturalHeight]), [1254, 1254]);
         assert.equal(await page.locator('#gallery-detail-title').textContent(), `${name} - chibis`);
         if (note.includes('Costume study')) assert.ok((await page.locator('#gallery-detail-type').textContent()).includes('Costume study'));
-        const source = `media/gallery/images/chibis/${filename}.png`;
+        const source = publishedImagePath(`media/gallery/images/chibis/${filename}.png`);
         assert.equal(await page.locator('#gallery-detail-source').getAttribute('href'), source);
         assert.ok(search.some(entry => entry.url === `gallery.html?image=${id}`));
         const response = await page.request.get(`${origin}/${source}`);

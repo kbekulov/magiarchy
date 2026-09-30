@@ -87,7 +87,7 @@ For example, Lynleit's confirmed 169 cm slender build and tailored blue-and-blac
 
 Every image or other file pasted or attached for site integration receives a descriptive filename before publication. This applies to images, music, documents, models, and other downloadable assets. Use lowercase ASCII words separated by hyphens, with the subject or title, purpose, and relevant confirmed variant, Arc, view, or revision. Preserve the actual extension.
 
-For Anima, use `anima-t-pose-black-gold-front.png`, `anima-t-pose-black-gold-back.png`, `anima-t-pose-red-drapery-front.png`, and `anima-t-pose-red-drapery-back.png`.
+For Anima, use `FULL-anima-t-pose-black-gold-front-img-000162.png`, `FULL-anima-t-pose-black-gold-back-img-000161.png`, `FULL-anima-t-pose-red-drapery-front-img-000164.png`, and `FULL-anima-t-pose-red-drapery-back-img-000163.png`.
 
 Do not publish random clipboard IDs or generic export names. Keep matching views and formats on consistent stems, follow the existing character-art naming conventions, and do not invent details just to fill a filename. Explicit author-requested filenames take precedence. Preserve dependency-sensitive names inside source projects unless all affected references can be updated safely. Backlog text archives follow their own timestamp rule.
 
@@ -103,7 +103,7 @@ Measure the split and inspect the result rather than blindly halving a sheet thr
 
 ### Author-approved anatomy corrections
 
-Splitting a sheet does not authorize changes to its anatomy. When the author explicitly requests a correction, preserve both the original sheet and the previous separated views. Publish the correction as a separately named derivative, such as `char-felix-t-pose-v1-arm-corrected-front.png`, under the same design-version record. Keep source sheets and superseded views in the archive for reproduction, not in the public download list. Publish only the current front/back reference files unless the author requests other formats.
+Splitting a sheet does not authorize changes to its anatomy. When the author explicitly requests a correction, preserve both the original sheet and the previous separated views. Publish the correction as a separately named derivative, such as `FULL-char-felix-t-pose-v1-arm-corrected-front-img-000165.png`, under the same design-version record. Keep source sheets and superseded views in the archive for reproduction, not in the public download list. Publish only the current front/back reference files unless the author requests other formats.
 
 For unequal T-pose arms, compare visible shoulder, sleeve, wrist, and fingertip positions on both sides and both views. Clothing folds are not reliable evidence of an elbow joint. Measure each design independently; do not force different characters into one reach or change their face, torso, clothing design, or life period. Use local geometric adjustments when preserving the drawing is important. A whole-figure stretch or regenerated face is not an arm-length repair.
 

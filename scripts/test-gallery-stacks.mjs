@@ -1,3 +1,4 @@
+import { publishedImagePath } from './test-image-paths.mjs';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
 
@@ -22,7 +23,7 @@ export async function testGalleryStacks(page, origin, engine) {
       await page.locator('#gallery-detail-image').evaluate(image => image.decode());
       assert.equal(await page.locator('#gallery-image-versions a').count(), 15);
       const source = await page.locator('#gallery-detail-source').getAttribute('href');
-      assert.equal(source, `media/gallery/images/characters/${id}.png`);
+      assert.equal(source, publishedImagePath(`media/gallery/images/characters/${id}.png`));
       const response = await page.request.get(`${origin}/${source}`);
       assert.ok(response.ok());
       assert.deepEqual(await response.body(), fs.readFileSync(source));

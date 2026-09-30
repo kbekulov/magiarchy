@@ -10,7 +10,7 @@ const sources = [...new Set([...gallery.matchAll(/<img\b[^>]*src="(media\/galler
 const previews = new Map();
 let before = 0, after = 0;
 for (const source of sources) {
-  const preview = source.replace('media/gallery/images/', 'media/gallery/previews/').replace(/\.[^.]+$/, '.webp');
+  const preview = source.replace('media/gallery/images/', 'media/gallery/previews/').replace(/\/FULL-/, '/PREV-').replace(/\.[^.]+$/, '.webp');
   const destination = path.join(root, preview);
   fs.mkdirSync(path.dirname(destination), { recursive: true });
   await sharp(path.join(root, source)).resize({ width: 480, height: 480, fit: 'inside', withoutEnlargement: true }).webp({ quality: 82 }).toFile(destination);

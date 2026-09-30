@@ -706,7 +706,7 @@ async function loadProfilePortrait(profile, portrait, note) {
       .map((card) => card.querySelector('img'))
       .filter((image) => {
         const source = image?.getAttribute('src') ?? '';
-        const fileName = source.split('/').pop() ?? '';
+        const fileName = (source.split('/').pop() ?? '').replace(/^FULL-/, '');
         return source.includes('/characters/') && filePattern.test(fileName);
       });
 

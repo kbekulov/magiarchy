@@ -1,3 +1,4 @@
+import { publishedImagePath } from './test-image-paths.mjs';
 import assert from 'node:assert/strict';
 
 export async function testLeoMikhailArt(page, origin, engine) {
@@ -18,7 +19,7 @@ export async function testLeoMikhailArt(page, origin, engine) {
         await page.waitForLoadState('networkidle');
         await page.locator('#gallery-detail-image').evaluate(image => image.decode());
         assert.equal(await page.locator('#gallery-image-versions a').count(), 3);
-        assert.equal(await page.locator('#gallery-detail-source').getAttribute('href'), `media/gallery/images/chibis/${id}.png`);
+        assert.equal(await page.locator('#gallery-detail-source').getAttribute('href'), publishedImagePath(`media/gallery/images/chibis/${id}.png`));
         assert.ok(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1));
       }
       await page.goto(`${origin}/character.html?character=${slug}`);

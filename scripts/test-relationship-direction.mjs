@@ -1,3 +1,4 @@
+import { publishedImagePath } from './test-image-paths.mjs';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
 
@@ -31,7 +32,7 @@ export async function testRelationshipDirection(page, origin, engine) {
     assert.ok(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1));
     await page.screenshot({ path: `test-results/${engine}-park-bank-artwork-${width}.png`, fullPage: true });
   }
-  const asset = `media/gallery/images/characters/${artwork}.png`;
+  const asset = publishedImagePath(`media/gallery/images/characters/${artwork}.png`);
   assert.deepEqual(await (await page.request.get(`${origin}/${asset}`)).body(), fs.readFileSync(asset));
   await visit('gallery.html');
   for (const slug of ['lynleit', 'kyrien']) {

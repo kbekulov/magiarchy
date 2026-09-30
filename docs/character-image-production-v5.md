@@ -53,7 +53,7 @@ For example, Lynleit's confirmed 169 cm slender build and tailored blue-and-blac
 
 Every image or other file pasted or attached for site integration receives a descriptive filename before publication. This applies to images, music, documents, models, and other downloadable assets. Use lowercase ASCII words separated by hyphens, with the subject or title, purpose, and relevant confirmed variant, Arc, view, or revision. Preserve the actual extension.
 
-For Anima, use `anima-t-pose-black-gold-front.png`, `anima-t-pose-black-gold-back.png`, `anima-t-pose-red-drapery-front.png`, and `anima-t-pose-red-drapery-back.png`.
+For Anima, use `FULL-anima-t-pose-black-gold-front-img-000162.png`, `FULL-anima-t-pose-black-gold-back-img-000161.png`, `FULL-anima-t-pose-red-drapery-front-img-000164.png`, and `FULL-anima-t-pose-red-drapery-back-img-000163.png`.
 
 Do not publish random clipboard IDs or generic export names. Keep matching views and formats on consistent stems, follow the existing character-art naming conventions, and do not invent details just to fill a filename. Explicit author-requested filenames take precedence. Preserve dependency-sensitive names inside source projects unless all affected references can be updated safely. Backlog text archives follow their own timestamp rule.
 

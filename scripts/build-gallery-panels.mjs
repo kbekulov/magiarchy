@@ -3,6 +3,7 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import sharp from 'sharp';
 import { validatePanels } from './gallery-panels.mjs';
+import { fileImageId } from './image-identities.mjs';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const file = path.join(root, 'gallery/panels.json');
@@ -15,7 +16,7 @@ for (const record of records) {
     panel.width = meta.width; panel.height = meta.height;
     panel.bytes = fs.statSync(source).size;
     for (const [key, width, quality] of [['display', 1680, 90], ['thumbnail', 480, 85]]) {
-      panel[key] = `media/gallery/previews/panels/${record.id}${record.revision ? `-${record.revision}` : ''}-${panel.id}-${key}.webp`;
+      panel[key] = `media/gallery/previews/panels/PREV-${record.id}${record.revision ? `-${record.revision}` : ''}-${panel.id}-${key}-${fileImageId(panel.src).toLowerCase()}.webp`;
       const output = path.join(root, panel[key]);
       fs.mkdirSync(path.dirname(output), { recursive: true });
       await sharp(source).resize({ width, withoutEnlargement: true }).webp({ quality }).toFile(output);

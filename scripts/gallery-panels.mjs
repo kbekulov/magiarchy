@@ -10,7 +10,7 @@ export function validatePanels(root, records, { built = true } = {}) {
   const indexes = Object.fromEntries(['moment', 'chapter'].map(kind => [kind, JSON.parse(fs.readFileSync(path.join(root, kind === 'moment' ? 'moments/index.json' : 'story/index.json'), 'utf8'))]));
   const localFile = (value, prefix) => {
     assert.ok(typeof value === 'string' && value.startsWith(prefix) && !/[\\?#%:]/.test(value) && !value.split('/').includes('..'), `Unsafe panel path: ${value}`);
-    assert.match(path.basename(value), /^[a-z0-9]+(?:-[a-z0-9]+)*\.(png|jpe?g|webp)$/);
+    assert.match(path.basename(value), /^(?:(?:FULL|PREV)-)?[a-z0-9]+(?:-[a-z0-9]+)*\.(png|jpe?g|webp)$/);
     const file = path.resolve(root, value);
     assert.ok(fs.existsSync(file) && fs.statSync(file).isFile() && fs.statSync(file).size > 0, `Missing panel image: ${value}`);
     return file;
@@ -78,8 +78,8 @@ export function validatePanels(root, records, { built = true } = {}) {
         localFile(panel.display, 'media/gallery/previews/panels/');
         localFile(panel.thumbnail, 'media/gallery/previews/panels/');
         if (record.revision) {
-          assert.ok(path.basename(panel.src, path.extname(panel.src)).endsWith(`-${record.revision}`), `${record.id}: original needs the artwork revision suffix`);
-          for (const key of ['display', 'thumbnail']) assert.equal(panel[key], `media/gallery/previews/panels/${record.id}-${record.revision}-${panel.id}-${key}.webp`, `${record.id}: stale ${key} revision`);
+          assert.ok(path.basename(panel.src, path.extname(panel.src)).replace(/-img-\d{6}$/, '').endsWith(`-${record.revision}`), `${record.id}: original needs the artwork revision suffix`);
+          for (const key of ['display', 'thumbnail']) assert.equal(panel[key].replace(/-img-\d{6}(?=\.webp$)/, ''), `media/gallery/previews/panels/PREV-${record.id}-${record.revision}-${panel.id}-${key}.webp`, `${record.id}: stale ${key} revision`);
         }
       }
     }

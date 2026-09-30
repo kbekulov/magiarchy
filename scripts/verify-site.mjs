@@ -5,6 +5,7 @@ import { fileURLToPath } from 'node:url';
 import { searchSourceDigest } from './search-source-digest.mjs';
 import { execFileSync } from 'node:child_process';
 import { validateResources } from './gallery-resources.mjs';
+import { validateImageIdentities } from './image-identities.mjs';
 import { validatePanels } from './gallery-panels.mjs';
 import { verifyMediaVisibility } from './verify-media-visibility.mjs';
 import { readHomeUpdates, pruneHomeUpdates } from './home-updates.mjs';
@@ -59,6 +60,7 @@ for (const update of updates) {
   assert.equal(entry?.expires, updateExpiry(update.published), `${update.id}: search expiry must match Home`);
 }
 verifyMediaVisibility(root, search);
+validateImageIdentities(root, json('gallery/image-identities.json'));
 const panels = json('gallery/panels.json');
 validatePanels(root, panels);
 for (const record of panels) assert.ok(search.entries.some(entry => entry.id === `panels-${record.id}` && entry.url === `gallery.html?panels=${record.id}`), `${record.id}: panel set missing from search`);

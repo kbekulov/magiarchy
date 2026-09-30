@@ -8,6 +8,7 @@ import { chromium, webkit, firefox } from 'playwright';
 import { testGalleryResources } from './test-gallery-resources.mjs';
 import { testGalleryStacks } from './test-gallery-stacks.mjs';
 import { testGalleryFilters } from './test-gallery-filters.mjs';
+import { testImageIdentities } from './test-image-identities-ui.mjs';
 import { testGalleryPanels } from './test-gallery-panels.mjs';
 import { testSeptemberPanelIntake } from './test-september-panel-intake.mjs';
 import { testKyrienOrigin } from './test-kyrien-origin.mjs';
@@ -77,6 +78,28 @@ try {
       if (process.env.TEST_GALLERY_FILTERS_ONLY === '1') {
         await testGalleryFilters(page, origin, engine);
         assert.deepEqual(errors, [], `${engine}: gallery filter errors`);
+        continue;
+      }
+      if (process.env.TEST_IMAGE_IDS_ONLY === '1') {
+        await testImageIdentities(page, origin, engine);
+        assert.deepEqual(errors, [], `${engine}: image-ID errors`);
+        continue;
+      }
+      if (process.env.TEST_IMAGE_MIGRATION_ONLY === '1') {
+        await testImageIdentities(page, origin, engine);
+        await testGalleryResources(page, origin, engine);
+        await testGalleryPanels(page, origin, engine);
+        await testLeoMikhailArt(page, origin, engine);
+        await testArtworkVersions(page, origin, engine);
+        await testGalleryStacks(page, origin, engine);
+        assert.deepEqual(errors, [], `${engine}: image migration errors`);
+        continue;
+      }
+      if (process.env.TEST_IMAGE_READERS_ONLY === '1') {
+        await testGalleryResources(page, origin, engine);
+        await testGalleryPanels(page, origin, engine);
+        await testLeoMikhailArt(page, origin, engine);
+        assert.deepEqual(errors, [], `${engine}: image reader errors`);
         continue;
       }
       if (process.env.TEST_SEASONS_ONLY === '1') {
@@ -175,6 +198,7 @@ try {
       await testAphorisms(page, origin, engine);
       await testSeptember28Backlog(page, origin, engine);
       await testMusicMovements(page, origin, engine);
+      await testImageIdentities(page, origin, engine);
       await testArtworkVersions(page, origin, engine);
       if (process.env.TEST_FOG_ONLY === '1') {
         assert.deepEqual(errors, [], `${engine}: fog reader errors`);

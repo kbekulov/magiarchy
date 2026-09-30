@@ -155,7 +155,7 @@ for (const line of ['"Flirt with nuns one more time!"', '"I only have eyes for y
 assert.ok(!churchInterlude.prose.some(paragraph => /Inanna|jealous/i.test(paragraph)), 'Church interlude: do not explain the allusion or assign jealousy');
 assert.ok(churchInterlude.known.filter(fact => fact.status === 'inferred').length);
 assert.ok(read('gallery.html').includes('data-moment="only-eyes-for-you"'));
-assert.ok(read('gallery.html').includes(`${churchInterlude.artwork.id}.png`));
+assert.ok(read('gallery.html').includes(`data-image="${churchInterlude.artwork.id}"`));
 for (const slug of ['lynleit', 'felix', 'fionn', 'reiner']) assert.ok(churchInterlude.characters.some(character => character.slug === slug));
 assert.ok(json('docs/character-behavior-notes-v9.json').notes.some(note => note.id === 'church-lynleit-public-irritation' && note.text.includes('jealous reading')));
 assert.ok(json('docs/character-behavior-notes.json').notes.filter(note => note.section === 'church-interlude').every(note => note.versions?.length === 1), 'Church notes must be version-scoped');

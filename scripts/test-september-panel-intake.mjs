@@ -1,3 +1,4 @@
+import { publishedImagePath } from './test-image-paths.mjs';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
 
@@ -12,7 +13,7 @@ export async function testSeptemberPanelIntake(page, origin, engine) {
     assert.deepEqual(record.panels.map(p => p.label), Array.from({ length: count }, (_, i) => `Panel ${i + 1}`));
     if (id === 'sherie-felix-unresolved-tension') {
       assert.equal(record.revision, 'r2');
-      assert.deepEqual(record.panels.map(p => p.src), Array.from({length: 7}, (_, i) => `media/gallery/panels/${id}/${id}-panel-${i + 1}-r2.png`));
+      assert.deepEqual(record.panels.map(p => p.src), Array.from({length: 7}, (_, i) => publishedImagePath(`media/gallery/panels/${id}/${id}-panel-${i + 1}-r2.png`)));
     }
     assert.equal(new Set(record.panels.map(p => p.beat)).size, count);
     for (const width of [390, 1440]) {

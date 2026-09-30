@@ -3,6 +3,7 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import sharp from 'sharp';
 import { validateResources } from './gallery-resources.mjs';
+import { fileImageId } from './image-identities.mjs';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const index = path.join(root, 'gallery/resources.json');
@@ -10,7 +11,7 @@ const records = JSON.parse(fs.readFileSync(index, 'utf8'));
 validateResources(root, records, { built: false });
 for (const record of records) {
   for (const [i, preview] of record.previews.entries()) {
-    preview.thumbnail = `media/gallery/previews/resources/${record.id}-${i + 1}${preview.revision ? `-${preview.revision}` : ''}.webp`;
+    preview.thumbnail = `media/gallery/previews/resources/PREV-${record.id}-${i + 1}${preview.revision ? `-${preview.revision}` : ''}-${fileImageId(preview.src).toLowerCase()}.webp`;
     const output = path.join(root, preview.thumbnail);
     fs.mkdirSync(path.dirname(output), { recursive: true });
     const source = path.join(root, preview.src);

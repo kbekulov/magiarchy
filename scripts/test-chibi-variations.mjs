@@ -1,3 +1,4 @@
+import { publishedImagePath } from './test-image-paths.mjs';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
 
@@ -27,9 +28,9 @@ export async function testChibiVariations(page, origin, engine) {
       const image = card.locator('.character-chibi');
       await page.waitForFunction(({ name, filename }) => {
         const img = document.querySelector(`[data-name="${name}"] .character-chibi`);
-        return img?.complete && img.naturalWidth > 0 && img.currentSrc.endsWith(`${filename}.webp`);
+        return img?.complete && img.naturalWidth > 0 && img.currentSrc.replace(/-img-\d{6}(?=\.webp$)/, '').endsWith(`${filename}.webp`);
       }, { name, filename: `char-${slug}-${suffix}` });
-      assert.equal(await image.getAttribute('src'), `media/gallery/previews/chibis/char-${slug}-${suffix}.webp`, `${name}: new pose must enter the random card pool`);
+      assert.equal(await image.getAttribute('src'), publishedImagePath(`media/gallery/previews/chibis/char-${slug}-${suffix}.webp`), `${name}: new pose must enter the random card pool`);
       if (slug === 'kyrien') assert.equal(await card.locator('.art-note').textContent(), 'Arc 1 · Chibi');
     }
     await page.screenshot({ path: `test-results/${engine}-chibi-variations-characters-${width}.png` });
@@ -56,7 +57,7 @@ export async function testChibiVariations(page, origin, engine) {
       const count = await page.locator(`.gallery-card[data-artwork-stack="${slug}-chibis"]`).count();
       assert.equal(await nav.locator('a').count(), count);
       assert.equal(await nav.locator('a[aria-current="page"]').getAttribute('href'), `gallery.html?image=${id}`);
-      const source = `media/gallery/images/chibis/${id}.png`;
+      const source = publishedImagePath(`media/gallery/images/chibis/${id}.png`);
       assert.equal(await page.locator('#gallery-detail-source').getAttribute('href'), source);
       const response = await page.request.get(`${origin}/${source}`);
       assert.deepEqual(await response.body(), fs.readFileSync(source));

@@ -3,8 +3,9 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "build": "node scripts/build-image-previews.mjs && node scripts/build-gallery-resources.mjs && node scripts/build-gallery-panels.mjs && node scripts/build-search-index.mjs",
-    "check": "node --test scripts/test-home-updates.mjs scripts/test-home-dashboard.mjs && node scripts/build-home-dashboard.mjs --check && node scripts/verify-t-pose-assets.mjs && node scripts/sync-archive-surfaces.mjs --check && node scripts/verify-archive.mjs && node scripts/verify-site.mjs",
+    "build": "node scripts/build-image-identities.mjs && node scripts/build-image-previews.mjs && node scripts/build-gallery-resources.mjs && node scripts/build-gallery-panels.mjs && node scripts/build-image-identities.mjs && node scripts/build-search-index.mjs",
+    "images:check": "node scripts/build-image-identities.mjs --check",
+    "check": "node --test scripts/test-home-updates.mjs scripts/test-home-dashboard.mjs scripts/test-image-identities.mjs && node scripts/build-home-dashboard.mjs --check && node scripts/verify-t-pose-assets.mjs && node scripts/sync-archive-surfaces.mjs --check && node scripts/verify-archive.mjs && node scripts/verify-site.mjs",
     "test:home": "node --test scripts/test-home-updates.mjs scripts/test-home-dashboard.mjs",
     "prose:audit": "node scripts/audit-prose-voice.mjs",
     "test:prose": "node --test scripts/test-prose-voice.mjs",

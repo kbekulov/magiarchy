@@ -13,33 +13,33 @@
     "previews": [
       {
         "id": "front",
-        "src": "media/gallery/resources/yulia-white-sweater/char-yulia-white-sweater-t-pose-front.png",
+        "src": "media/gallery/resources/yulia-white-sweater/FULL-char-yulia-white-sweater-t-pose-front-img-000182.png",
         "alt": "Yulia in front T-pose, with long brown hair, a white sweater over a black high-neck top, dark fitted trousers and black heeled ankle boots, with her silver-colored pendant visible.",
         "caption": "Front",
-        "thumbnail": "media/gallery/previews/resources/yulia-white-sweater-1.webp",
+        "thumbnail": "media/gallery/previews/resources/PREV-yulia-white-sweater-1-img-000182.webp",
         "width": 1060,
         "height": 1484
       },
       {
         "id": "back",
-        "src": "media/gallery/resources/yulia-white-sweater/char-yulia-white-sweater-t-pose-back.png",
+        "src": "media/gallery/resources/yulia-white-sweater/FULL-char-yulia-white-sweater-t-pose-back-img-000181.png",
         "alt": "Yulia in back T-pose, with long brown hair, a white sweater over a black high-neck top, dark fitted trousers and black heeled ankle boots.",
         "caption": "Back",
-        "thumbnail": "media/gallery/previews/resources/yulia-white-sweater-2.webp",
+        "thumbnail": "media/gallery/previews/resources/PREV-yulia-white-sweater-2-img-000181.webp",
         "width": 1060,
         "height": 1484
       }
     ],
     "files": [
       {
-        "path": "media/gallery/resources/yulia-white-sweater/char-yulia-white-sweater-t-pose-front.png",
+        "path": "media/gallery/resources/yulia-white-sweater/FULL-char-yulia-white-sweater-t-pose-front-img-000182.png",
         "label": "Front reference",
         "notes": "Original supplied PNG, 1060 × 1484 px.",
         "bytes": 1262649,
         "format": "PNG"
       },
       {
-        "path": "media/gallery/resources/yulia-white-sweater/char-yulia-white-sweater-t-pose-back.png",
+        "path": "media/gallery/resources/yulia-white-sweater/FULL-char-yulia-white-sweater-t-pose-back-img-000181.png",
         "label": "Back reference",
         "notes": "Original supplied PNG, 1060 × 1484 px.",
         "bytes": 1386675,
@@ -67,32 +67,32 @@
     "previews": [
       {
         "id": "front",
-        "src": "media/gallery/resources/author-mascot-black-gold/anima-t-pose-black-gold-front.png",
+        "src": "media/gallery/resources/author-mascot-black-gold/FULL-anima-t-pose-black-gold-front-img-000162.png",
         "alt": "Front T-pose of Anima with long dark hair, red eyes, a black face covering, black-and-gold outfit, and gold accessories.",
         "caption": "Variant 1 · Front",
-        "thumbnail": "media/gallery/previews/resources/author-mascot-black-gold-1.webp",
+        "thumbnail": "media/gallery/previews/resources/PREV-author-mascot-black-gold-1-img-000162.webp",
         "width": 1122,
         "height": 1402
       },
       {
         "id": "back",
-        "src": "media/gallery/resources/author-mascot-black-gold/anima-t-pose-black-gold-back.png",
+        "src": "media/gallery/resources/author-mascot-black-gold/FULL-anima-t-pose-black-gold-back-img-000161.png",
         "alt": "Back T-pose of Anima in the black-and-gold outfit, with hair arranged to expose the upper back.",
         "caption": "Variant 1 · Back",
-        "thumbnail": "media/gallery/previews/resources/author-mascot-black-gold-2.webp",
+        "thumbnail": "media/gallery/previews/resources/PREV-author-mascot-black-gold-2-img-000161.webp",
         "width": 1122,
         "height": 1402
       }
     ],
     "files": [
       {
-        "path": "media/gallery/resources/author-mascot-black-gold/anima-t-pose-black-gold-front.png",
+        "path": "media/gallery/resources/author-mascot-black-gold/FULL-anima-t-pose-black-gold-front-img-000162.png",
         "label": "Front reference",
         "bytes": 1405288,
         "format": "PNG"
       },
       {
-        "path": "media/gallery/resources/author-mascot-black-gold/anima-t-pose-black-gold-back.png",
+        "path": "media/gallery/resources/author-mascot-black-gold/FULL-anima-t-pose-black-gold-back-img-000161.png",
         "label": "Back reference",
         "bytes": 1300965,
         "format": "PNG"
@@ -125,32 +125,32 @@
     "previews": [
       {
         "id": "front",
-        "src": "media/gallery/resources/author-mascot-red-drapery/anima-t-pose-red-drapery-front.png",
+        "src": "media/gallery/resources/author-mascot-red-drapery/FULL-anima-t-pose-red-drapery-front-img-000164.png",
         "alt": "Front T-pose of Anima in a black-and-gold outfit with red fabric hanging from the wrists and hips, tipped with gold ornaments.",
         "caption": "Variant 2 · Front",
-        "thumbnail": "media/gallery/previews/resources/author-mascot-red-drapery-1.webp",
+        "thumbnail": "media/gallery/previews/resources/PREV-author-mascot-red-drapery-1-img-000164.webp",
         "width": 1122,
         "height": 1402
       },
       {
         "id": "back",
-        "src": "media/gallery/resources/author-mascot-red-drapery/anima-t-pose-red-drapery-back.png",
+        "src": "media/gallery/resources/author-mascot-red-drapery/FULL-anima-t-pose-red-drapery-back-img-000163.png",
         "alt": "Back T-pose of Anima with long dark hair falling over red drapery and dangling gold ornaments.",
         "caption": "Variant 2 · Back",
-        "thumbnail": "media/gallery/previews/resources/author-mascot-red-drapery-2.webp",
+        "thumbnail": "media/gallery/previews/resources/PREV-author-mascot-red-drapery-2-img-000163.webp",
         "width": 1122,
         "height": 1402
       }
     ],
     "files": [
       {
-        "path": "media/gallery/resources/author-mascot-red-drapery/anima-t-pose-red-drapery-front.png",
+        "path": "media/gallery/resources/author-mascot-red-drapery/FULL-anima-t-pose-red-drapery-front-img-000164.png",
         "label": "Front reference",
         "bytes": 1559686,
         "format": "PNG"
       },
       {
-        "path": "media/gallery/resources/author-mascot-red-drapery/anima-t-pose-red-drapery-back.png",
+        "path": "media/gallery/resources/author-mascot-red-drapery/FULL-anima-t-pose-red-drapery-back-img-000163.png",
         "label": "Back reference",
         "bytes": 1600590,
         "format": "PNG"
@@ -179,67 +179,67 @@
     "previews": [
       {
         "id": "front",
-        "src": "media/gallery/resources/felix-t-pose-v1/char-felix-t-pose-v1-arm-corrected-front.png",
+        "src": "media/gallery/resources/felix-t-pose-v1/FULL-char-felix-t-pose-v1-arm-corrected-front-img-000165.png",
         "revision": "r2",
         "alt": "Front T-pose of Felix with orange hair, green eyes, a blue tie, white shirt, black suspenders, trousers, shoes, and a wristwatch.",
         "caption": "v1 · Front",
-        "thumbnail": "media/gallery/previews/resources/felix-t-pose-v1-1-r2.webp",
+        "thumbnail": "media/gallery/previews/resources/PREV-felix-t-pose-v1-1-r2-img-000165.webp",
         "width": 1122,
         "height": 1402
       },
       {
         "id": "back",
-        "src": "media/gallery/resources/felix-t-pose-v1/char-felix-t-pose-v1-arm-hand-corrected-back.png",
+        "src": "media/gallery/resources/felix-t-pose-v1/FULL-char-felix-t-pose-v1-arm-hand-corrected-back-img-000166.png",
         "revision": "r2",
         "alt": "Back T-pose of Felix with an orange ponytail, crossed black suspenders, a rolled-sleeve white shirt, dark trousers, and black shoes.",
         "caption": "v1 · Back",
-        "thumbnail": "media/gallery/previews/resources/felix-t-pose-v1-2-r2.webp",
+        "thumbnail": "media/gallery/previews/resources/PREV-felix-t-pose-v1-2-r2-img-000166.webp",
         "width": 1122,
         "height": 1402
       },
       {
         "id": "back-hand-left",
-        "src": "media/gallery/resources/felix-t-pose-v1/corrections/char-felix-t-pose-v1-back-hand-left.png",
+        "src": "media/gallery/resources/felix-t-pose-v1/corrections/FULL-char-felix-t-pose-v1-back-hand-left-img-000167.png",
         "alt": "Felix, v1: left hand detail from the back-view correction.",
         "caption": "Back-view left hand detail",
-        "thumbnail": "media/gallery/previews/resources/felix-t-pose-v1-3.webp",
+        "thumbnail": "media/gallery/previews/resources/PREV-felix-t-pose-v1-3-img-000167.webp",
         "width": 136,
         "height": 67
       },
       {
         "id": "back-hand-right",
-        "src": "media/gallery/resources/felix-t-pose-v1/corrections/char-felix-t-pose-v1-back-hand-right.png",
+        "src": "media/gallery/resources/felix-t-pose-v1/corrections/FULL-char-felix-t-pose-v1-back-hand-right-img-000168.png",
         "alt": "Felix, v1: right hand detail from the back-view correction.",
         "caption": "Back-view right hand detail",
-        "thumbnail": "media/gallery/previews/resources/felix-t-pose-v1-4.webp",
+        "thumbnail": "media/gallery/previews/resources/PREV-felix-t-pose-v1-4-img-000168.webp",
         "width": 121,
         "height": 68
       }
     ],
     "files": [
       {
-        "path": "media/gallery/resources/felix-t-pose-v1/char-felix-t-pose-v1-arm-corrected-front.png",
+        "path": "media/gallery/resources/felix-t-pose-v1/FULL-char-felix-t-pose-v1-arm-corrected-front-img-000165.png",
         "label": "Front reference, arm-corrected",
         "notes": "Arm lengths balanced across matching views, 1122 × 1402 PNG.",
         "bytes": 954290,
         "format": "PNG"
       },
       {
-        "path": "media/gallery/resources/felix-t-pose-v1/char-felix-t-pose-v1-arm-hand-corrected-back.png",
+        "path": "media/gallery/resources/felix-t-pose-v1/FULL-char-felix-t-pose-v1-arm-hand-corrected-back-img-000166.png",
         "label": "Back reference, arms and hands corrected",
         "notes": "Balanced arm lengths and corrected rear-view fingers, 1122 × 1402 PNG.",
         "bytes": 1156811,
         "format": "PNG"
       },
       {
-        "path": "media/gallery/resources/felix-t-pose-v1/corrections/char-felix-t-pose-v1-back-hand-left.png",
+        "path": "media/gallery/resources/felix-t-pose-v1/corrections/FULL-char-felix-t-pose-v1-back-hand-left-img-000167.png",
         "label": "Back-view left hand detail",
         "notes": "Detail crop from the hand correction. Use the full front and back references for body proportions.",
         "bytes": 15205,
         "format": "PNG"
       },
       {
-        "path": "media/gallery/resources/felix-t-pose-v1/corrections/char-felix-t-pose-v1-back-hand-right.png",
+        "path": "media/gallery/resources/felix-t-pose-v1/corrections/FULL-char-felix-t-pose-v1-back-hand-right-img-000168.png",
         "label": "Back-view right hand detail",
         "notes": "Detail crop from the hand correction. Use the full front and back references for body proportions.",
         "bytes": 14309,
@@ -267,66 +267,66 @@
     "previews": [
       {
         "id": "front",
-        "src": "media/gallery/resources/lynleit-t-pose-v1/char-lynleit-arc-1-t-pose-v1-arm-corrected-front.png",
+        "src": "media/gallery/resources/lynleit-t-pose-v1/FULL-char-lynleit-arc-1-t-pose-v1-arm-corrected-front-img-000173.png",
         "alt": "Arc 1 front T-pose of Lynleit with long dark hair, blue eyes, a blue coat, ruffled white collar and cuffs, black bow, laced shorts, dark tights, and over-knee boots.",
         "caption": "Young / teenager · Arc 1 · Front",
-        "thumbnail": "media/gallery/previews/resources/lynleit-t-pose-v1-1.webp",
+        "thumbnail": "media/gallery/previews/resources/PREV-lynleit-t-pose-v1-1-img-000173.webp",
         "width": 1122,
         "height": 1402
       },
       {
         "id": "back",
-        "src": "media/gallery/resources/lynleit-t-pose-v1/char-lynleit-arc-1-t-pose-v1-arm-hand-corrected-back.png",
+        "src": "media/gallery/resources/lynleit-t-pose-v1/FULL-char-lynleit-arc-1-t-pose-v1-arm-hand-corrected-back-img-000174.png",
         "revision": "r2",
         "alt": "Arc 1 back T-pose of Lynleit with long dark hair falling over a blue coat, dark tights, and tall black boots.",
         "caption": "Young / teenager · Arc 1 · Back",
-        "thumbnail": "media/gallery/previews/resources/lynleit-t-pose-v1-2-r2.webp",
+        "thumbnail": "media/gallery/previews/resources/PREV-lynleit-t-pose-v1-2-r2-img-000174.webp",
         "width": 1122,
         "height": 1402
       },
       {
         "id": "back-hand-left",
-        "src": "media/gallery/resources/lynleit-t-pose-v1/corrections/char-lynleit-arc-1-t-pose-v1-back-hand-left.png",
+        "src": "media/gallery/resources/lynleit-t-pose-v1/corrections/FULL-char-lynleit-arc-1-t-pose-v1-back-hand-left-img-000175.png",
         "alt": "Lynleit, Young / teenager: left hand detail from the back-view correction.",
         "caption": "Back-view left hand detail",
-        "thumbnail": "media/gallery/previews/resources/lynleit-t-pose-v1-3.webp",
+        "thumbnail": "media/gallery/previews/resources/PREV-lynleit-t-pose-v1-3-img-000175.webp",
         "width": 119,
         "height": 53
       },
       {
         "id": "back-hand-right",
-        "src": "media/gallery/resources/lynleit-t-pose-v1/corrections/char-lynleit-arc-1-t-pose-v1-back-hand-right.png",
+        "src": "media/gallery/resources/lynleit-t-pose-v1/corrections/FULL-char-lynleit-arc-1-t-pose-v1-back-hand-right-img-000176.png",
         "alt": "Lynleit, Young / teenager: right hand detail from the back-view correction.",
         "caption": "Back-view right hand detail",
-        "thumbnail": "media/gallery/previews/resources/lynleit-t-pose-v1-4.webp",
+        "thumbnail": "media/gallery/previews/resources/PREV-lynleit-t-pose-v1-4-img-000176.webp",
         "width": 118,
         "height": 54
       }
     ],
     "files": [
       {
-        "path": "media/gallery/resources/lynleit-t-pose-v1/char-lynleit-arc-1-t-pose-v1-arm-corrected-front.png",
+        "path": "media/gallery/resources/lynleit-t-pose-v1/FULL-char-lynleit-arc-1-t-pose-v1-arm-corrected-front-img-000173.png",
         "label": "Front reference, arm-corrected",
         "notes": "Arm lengths balanced across matching views, 1122 × 1402 PNG.",
         "bytes": 1462934,
         "format": "PNG"
       },
       {
-        "path": "media/gallery/resources/lynleit-t-pose-v1/char-lynleit-arc-1-t-pose-v1-arm-hand-corrected-back.png",
+        "path": "media/gallery/resources/lynleit-t-pose-v1/FULL-char-lynleit-arc-1-t-pose-v1-arm-hand-corrected-back-img-000174.png",
         "label": "Back reference, arms and hands corrected",
         "notes": "Balanced arm lengths and corrected rear-view fingers, 1122 × 1402 PNG.",
         "bytes": 1340910,
         "format": "PNG"
       },
       {
-        "path": "media/gallery/resources/lynleit-t-pose-v1/corrections/char-lynleit-arc-1-t-pose-v1-back-hand-left.png",
+        "path": "media/gallery/resources/lynleit-t-pose-v1/corrections/FULL-char-lynleit-arc-1-t-pose-v1-back-hand-left-img-000175.png",
         "label": "Back-view left hand detail",
         "notes": "Detail crop from the hand correction. Use the full front and back references for body proportions.",
         "bytes": 11034,
         "format": "PNG"
       },
       {
-        "path": "media/gallery/resources/lynleit-t-pose-v1/corrections/char-lynleit-arc-1-t-pose-v1-back-hand-right.png",
+        "path": "media/gallery/resources/lynleit-t-pose-v1/corrections/FULL-char-lynleit-arc-1-t-pose-v1-back-hand-right-img-000176.png",
         "label": "Back-view right hand detail",
         "notes": "Detail crop from the hand correction. Use the full front and back references for body proportions.",
         "bytes": 11664,
@@ -353,66 +353,66 @@
     "previews": [
       {
         "id": "front",
-        "src": "media/gallery/resources/lynleit-t-pose-v2/char-lynleit-t-pose-v2-arm-corrected-front.png",
+        "src": "media/gallery/resources/lynleit-t-pose-v2/FULL-char-lynleit-t-pose-v2-arm-corrected-front-img-000177.png",
         "alt": "Front T-pose of Lynleit with long dark hair, blue eyes, a blue coat, a white collared shirt, black ribbon, belted shorts, dark tights, and tall folded-cuff boots.",
         "caption": "v2 · Front",
-        "thumbnail": "media/gallery/previews/resources/lynleit-t-pose-v2-1.webp",
+        "thumbnail": "media/gallery/previews/resources/PREV-lynleit-t-pose-v2-1-img-000177.webp",
         "width": 1122,
         "height": 1402
       },
       {
         "id": "back",
-        "src": "media/gallery/resources/lynleit-t-pose-v2/char-lynleit-t-pose-v2-arm-hand-corrected-back.png",
+        "src": "media/gallery/resources/lynleit-t-pose-v2/FULL-char-lynleit-t-pose-v2-arm-hand-corrected-back-img-000178.png",
         "revision": "r2",
         "alt": "Back T-pose of Lynleit with long dark hair, a blue coat, dark tights, and tall black boots with folded cuffs.",
         "caption": "v2 · Back",
-        "thumbnail": "media/gallery/previews/resources/lynleit-t-pose-v2-2-r2.webp",
+        "thumbnail": "media/gallery/previews/resources/PREV-lynleit-t-pose-v2-2-r2-img-000178.webp",
         "width": 1122,
         "height": 1402
       },
       {
         "id": "back-hand-left",
-        "src": "media/gallery/resources/lynleit-t-pose-v2/corrections/char-lynleit-t-pose-v2-back-hand-left.png",
+        "src": "media/gallery/resources/lynleit-t-pose-v2/corrections/FULL-char-lynleit-t-pose-v2-back-hand-left-img-000179.png",
         "alt": "Lynleit, v2: left hand detail from the back-view correction.",
         "caption": "Back-view left hand detail",
-        "thumbnail": "media/gallery/previews/resources/lynleit-t-pose-v2-3.webp",
+        "thumbnail": "media/gallery/previews/resources/PREV-lynleit-t-pose-v2-3-img-000179.webp",
         "width": 116,
         "height": 57
       },
       {
         "id": "back-hand-right",
-        "src": "media/gallery/resources/lynleit-t-pose-v2/corrections/char-lynleit-t-pose-v2-back-hand-right.png",
+        "src": "media/gallery/resources/lynleit-t-pose-v2/corrections/FULL-char-lynleit-t-pose-v2-back-hand-right-img-000180.png",
         "alt": "Lynleit, v2: right hand detail from the back-view correction.",
         "caption": "Back-view right hand detail",
-        "thumbnail": "media/gallery/previews/resources/lynleit-t-pose-v2-4.webp",
+        "thumbnail": "media/gallery/previews/resources/PREV-lynleit-t-pose-v2-4-img-000180.webp",
         "width": 112,
         "height": 57
       }
     ],
     "files": [
       {
-        "path": "media/gallery/resources/lynleit-t-pose-v2/char-lynleit-t-pose-v2-arm-corrected-front.png",
+        "path": "media/gallery/resources/lynleit-t-pose-v2/FULL-char-lynleit-t-pose-v2-arm-corrected-front-img-000177.png",
         "label": "Front reference, arm-corrected",
         "notes": "Arm lengths balanced across matching views, 1122 × 1402 PNG.",
         "bytes": 1362899,
         "format": "PNG"
       },
       {
-        "path": "media/gallery/resources/lynleit-t-pose-v2/char-lynleit-t-pose-v2-arm-hand-corrected-back.png",
+        "path": "media/gallery/resources/lynleit-t-pose-v2/FULL-char-lynleit-t-pose-v2-arm-hand-corrected-back-img-000178.png",
         "label": "Back reference, arms and hands corrected",
         "notes": "Balanced arm lengths and corrected rear-view fingers, 1122 × 1402 PNG.",
         "bytes": 1240070,
         "format": "PNG"
       },
       {
-        "path": "media/gallery/resources/lynleit-t-pose-v2/corrections/char-lynleit-t-pose-v2-back-hand-left.png",
+        "path": "media/gallery/resources/lynleit-t-pose-v2/corrections/FULL-char-lynleit-t-pose-v2-back-hand-left-img-000179.png",
         "label": "Back-view left hand detail",
         "notes": "Detail crop from the hand correction. Use the full front and back references for body proportions.",
         "bytes": 12180,
         "format": "PNG"
       },
       {
-        "path": "media/gallery/resources/lynleit-t-pose-v2/corrections/char-lynleit-t-pose-v2-back-hand-right.png",
+        "path": "media/gallery/resources/lynleit-t-pose-v2/corrections/FULL-char-lynleit-t-pose-v2-back-hand-right-img-000180.png",
         "label": "Back-view right hand detail",
         "notes": "Detail crop from the hand correction. Use the full front and back references for body proportions.",
         "bytes": 11843,
@@ -439,33 +439,33 @@
     "previews": [
       {
         "id": "front",
-        "src": "media/gallery/resources/lynleit-arc-2-t-pose/char-lynleit-arc-2-t-pose-front.png",
+        "src": "media/gallery/resources/lynleit-arc-2-t-pose/FULL-char-lynleit-arc-2-t-pose-front-img-000172.png",
         "alt": "Arc 2 front T-pose of Lynleit with blue eyes, dark hair in a bun, a high-collared black cape, long gloves, a blue waist sash, a slanted belt, fitted black clothing, and tall lace-up boots.",
         "caption": "Arc 2 · Front",
-        "thumbnail": "media/gallery/previews/resources/lynleit-arc-2-t-pose-1.webp",
+        "thumbnail": "media/gallery/previews/resources/PREV-lynleit-arc-2-t-pose-1-img-000172.webp",
         "width": 1122,
         "height": 1402
       },
       {
         "id": "back",
-        "src": "media/gallery/resources/lynleit-arc-2-t-pose/char-lynleit-arc-2-t-pose-back.png",
+        "src": "media/gallery/resources/lynleit-arc-2-t-pose/FULL-char-lynleit-arc-2-t-pose-back-img-000171.png",
         "alt": "Arc 2 back T-pose of Lynleit showing her bun, short black cape, long gloves, blue sash tied at the hip, fitted black clothing, and over-knee boots with rear straps.",
         "caption": "Arc 2 · Back",
-        "thumbnail": "media/gallery/previews/resources/lynleit-arc-2-t-pose-2.webp",
+        "thumbnail": "media/gallery/previews/resources/PREV-lynleit-arc-2-t-pose-2-img-000171.webp",
         "width": 1122,
         "height": 1402
       }
     ],
     "files": [
       {
-        "path": "media/gallery/resources/lynleit-arc-2-t-pose/char-lynleit-arc-2-t-pose-front.png",
+        "path": "media/gallery/resources/lynleit-arc-2-t-pose/FULL-char-lynleit-arc-2-t-pose-front-img-000172.png",
         "label": "Front reference",
         "notes": "Original supplied PNG, 1122 × 1402 px.",
         "bytes": 1450593,
         "format": "PNG"
       },
       {
-        "path": "media/gallery/resources/lynleit-arc-2-t-pose/char-lynleit-arc-2-t-pose-back.png",
+        "path": "media/gallery/resources/lynleit-arc-2-t-pose/FULL-char-lynleit-arc-2-t-pose-back-img-000171.png",
         "label": "Back reference",
         "notes": "Original supplied PNG, 1122 × 1402 px.",
         "bytes": 1356962,
@@ -492,35 +492,35 @@
     "previews": [
       {
         "id": "front",
-        "src": "media/gallery/resources/kyrien-beige-jacket/char-kyrien-arc-1-beige-jacket-t-pose-front-r2.png",
+        "src": "media/gallery/resources/kyrien-beige-jacket/FULL-char-kyrien-arc-1-beige-jacket-t-pose-front-r2-img-000169.png",
         "alt": "Kyrien, front T-pose: center-parted dark brown hair, restrained grey-blue eyes, a lean frame, beige stand-collar jacket, blue open-neck shirt, silver cross necklace, black trousers and black leather shoes.",
         "caption": "Arc 1 · Front",
         "revision": "r2",
-        "thumbnail": "media/gallery/previews/resources/kyrien-beige-jacket-1-r2.webp",
+        "thumbnail": "media/gallery/previews/resources/PREV-kyrien-beige-jacket-1-r2-img-000169.webp",
         "width": 1122,
         "height": 1402
       },
       {
         "id": "back",
-        "src": "media/gallery/resources/kyrien-beige-jacket/char-kyrien-arc-1-beige-jacket-t-pose-hand-corrected-back-r2.png",
+        "src": "media/gallery/resources/kyrien-beige-jacket/FULL-char-kyrien-arc-1-beige-jacket-t-pose-hand-corrected-back-r2-img-000170.png",
         "alt": "Kyrien, rear T-pose in his beige jacket, blue shirt, black trousers and black shoes, with the little-finger edges visible and thumbs occluded.",
         "caption": "Arc 1 · Back",
         "revision": "r2",
-        "thumbnail": "media/gallery/previews/resources/kyrien-beige-jacket-2-r2.webp",
+        "thumbnail": "media/gallery/previews/resources/PREV-kyrien-beige-jacket-2-r2-img-000170.webp",
         "width": 1122,
         "height": 1402
       }
     ],
     "files": [
       {
-        "path": "media/gallery/resources/kyrien-beige-jacket/char-kyrien-arc-1-beige-jacket-t-pose-front-r2.png",
+        "path": "media/gallery/resources/kyrien-beige-jacket/FULL-char-kyrien-arc-1-beige-jacket-t-pose-front-r2-img-000169.png",
         "label": "Front T-pose",
         "notes": "Separated from the supplied reference sheet.",
         "bytes": 1236932,
         "format": "PNG"
       },
       {
-        "path": "media/gallery/resources/kyrien-beige-jacket/char-kyrien-arc-1-beige-jacket-t-pose-hand-corrected-back-r2.png",
+        "path": "media/gallery/resources/kyrien-beige-jacket/FULL-char-kyrien-arc-1-beige-jacket-t-pose-hand-corrected-back-r2-img-000170.png",
         "label": "Back T-pose",
         "notes": "Rear-view hands corrected.",
         "bytes": 1223477,

@@ -1,0 +1,50 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import fs from 'node:fs';
+import os from 'node:os';
+import path from 'node:path';
+import { execFileSync } from 'node:child_process';
+
+test('IDs survive edits; previews share IDs; new images get new IDs; private images stay untouched', () => {
+  const root = fs.mkdtempSync(path.join(os.tmpdir(), 'magiarchy-image-ids-test-'));
+  for (const dir of ['scripts', 'docs', 'story', 'moments', 'holumns', 'items', 'weapons', 'gallery', 'workshop', 'backlog', 'media/gallery/images', 'media/gallery/previews']) fs.mkdirSync(path.join(root, dir), { recursive: true });
+  for (const file of ['build-image-identities.mjs', 'image-identities.mjs']) fs.copyFileSync(new URL(file, import.meta.url), path.join(root, 'scripts', file));
+  const write = (file, value) => fs.writeFileSync(path.join(root, file), value);
+  const read = file => fs.readFileSync(path.join(root, file), 'utf8');
+  write('gallery/resources.json', '[]'); write('gallery/panels.json', '[]');
+  write('workshop/private.png', 'private'); write('backlog/pending.png', 'pending');
+  write('media/gallery/images/example.png', 'original bytes');
+  write('media/gallery/previews/example.webp', 'preview bytes');
+  write('gallery.html', '<figure class="gallery-card"><img src="media/gallery/images/example.png" data-preview="media/gallery/previews/example.webp"></figure>');
+  const build = () => execFileSync(process.execPath, [path.join(root, 'scripts/build-image-identities.mjs')]);
+  build();
+  let registry = JSON.parse(read('gallery/image-identities.json'));
+  assert.equal(registry.images.length, 1);
+  const original = registry.images[0];
+  assert.equal(original.id, 'IMG-000001');
+  assert.equal(path.basename(original.source), 'FULL-example-img-000001.png');
+  assert.equal(path.basename(original.derivatives[0]), 'PREV-example-img-000001.webp');
+  assert.equal(read(original.source), 'original bytes');
+  assert.match(original.derivatives[0], /img-000001/);
+  assert.match(read('gallery.html'), /data-image="example"/);
+  assert.equal(read('workshop/private.png'), 'private');
+  assert.equal(read('backlog/pending.png'), 'pending');
+  const stable = read('gallery/image-identities.json'); build();
+  assert.equal(read('gallery/image-identities.json'), stable);
+  write(original.source, 'edited original'); build();
+  assert.equal(JSON.parse(read('gallery/image-identities.json')).images[0].id, original.id);
+  write('media/gallery/images/another.png', 'edited original'); build();
+  registry = JSON.parse(read('gallery/image-identities.json'));
+  assert.equal(registry.images[1].id, 'IMG-000002', 'Even byte-identical independent images have different IDs');
+  assert.equal(registry.nextId, 3);
+  // Retired identities remain reserved even after all their files are removed.
+  for (const file of [original.source, ...original.derivatives]) fs.unlinkSync(path.join(root, file));
+  write('gallery.html', '');
+  build();
+  assert.equal(JSON.parse(read('gallery/image-identities.json')).images[0].active, false);
+  write('media/gallery/images/third.png', 'third original'); build();
+  registry = JSON.parse(read('gallery/image-identities.json'));
+  assert.equal(registry.images[2].id, 'IMG-000003');
+  assert.equal(registry.nextId, 4);
+  // Leave this tiny private fixture in the OS temp directory, never in public media.
+});

@@ -42,7 +42,7 @@ export function validateResources(root, records, { built = true } = {}) {
       if (built) {
         assert.ok(preview.width > 0 && preview.height > 0, `${record.id}: missing preview dimensions`);
         assert.ok(preview.thumbnail?.startsWith('media/gallery/previews/resources/') && fs.existsSync(path.join(root, preview.thumbnail)), `${record.id}: missing lightweight preview`);
-        if (preview.revision) assert.ok(preview.thumbnail.endsWith(`-${preview.revision}.webp`), `${record.id}: stale preview revision`);
+        if (preview.revision) assert.ok(preview.thumbnail.replace(/-img-\d{6}(?=\.webp$)/, '').endsWith(`-${preview.revision}.webp`), `${record.id}: stale preview revision`);
       }
     }
     const files = new Set();
