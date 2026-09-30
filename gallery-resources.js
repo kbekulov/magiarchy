@@ -5,7 +5,7 @@
   if (params.get('collection') !== 'production' && !params.has('resource')) return;
 
   const $ = selector => document.querySelector(selector);
-  const kinds = { 'reference-sheet': 'Reference sheet', 't-pose': 'T-pose / turnaround', sketch: 'Development sketch', '3d-model': '3D model' };
+  const kinds = { 'face-reference': 'Face & hair reference', 'reference-sheet': 'Reference sheet', 't-pose': 'T-pose / turnaround', sketch: 'Development sketch', '3d-model': '3D model' };
   const characterNames = new Map([...$('#gallery-character-filter').options].map(option => [option.value, option.textContent]));
   const nameFor = slug => characterNames.get(slug) || slug.replace(/-/g, ' ').replace(/\b\w/g, c => c.toUpperCase());
   const node = (tag, text, className) => {

@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "nextId": 195,
+  "nextId": 203,
   "images": [
     {
       "id": "IMG-000001",
@@ -2815,6 +2815,94 @@
       ],
       "previousPaths": [
         "media/gallery/images/characters/char-yulia-fan-service-swimwear-pencil.png"
+      ],
+      "active": true
+    },
+    {
+      "id": "IMG-000195",
+      "source": "media/gallery/resources/face-references/drake/FULL-char-drake-arc-1-normal-face-reference-01-img-000195.png",
+      "derivatives": [
+        "media/gallery/previews/resources/PREV-drake-arc-1-normal-face-reference-1-img-000195.webp"
+      ],
+      "previousPaths": [
+        "media/gallery/resources/face-references/drake/char-drake-arc-1-normal-face-reference-01.png"
+      ],
+      "active": true
+    },
+    {
+      "id": "IMG-000196",
+      "source": "media/gallery/resources/face-references/kyrien/FULL-char-kyrien-arc-1-normal-face-reference-01-img-000196.png",
+      "derivatives": [
+        "media/gallery/previews/resources/PREV-kyrien-arc-1-normal-face-reference-1-img-000196.webp"
+      ],
+      "previousPaths": [
+        "media/gallery/resources/face-references/kyrien/char-kyrien-arc-1-normal-face-reference-01.png"
+      ],
+      "active": true
+    },
+    {
+      "id": "IMG-000197",
+      "source": "media/gallery/resources/face-references/lynleit/FULL-char-lynleit-arc-1-fancy-face-reference-01-img-000197.png",
+      "derivatives": [
+        "media/gallery/previews/resources/PREV-lynleit-arc-1-fancy-face-reference-1-img-000197.webp"
+      ],
+      "previousPaths": [
+        "media/gallery/resources/face-references/lynleit/char-lynleit-arc-1-fancy-face-reference-01.png"
+      ],
+      "active": true
+    },
+    {
+      "id": "IMG-000198",
+      "source": "media/gallery/resources/face-references/lynleit/FULL-char-lynleit-arc-1-fancy-face-reference-02-img-000198.png",
+      "derivatives": [
+        "media/gallery/previews/resources/PREV-lynleit-arc-1-fancy-face-reference-2-img-000198.webp"
+      ],
+      "previousPaths": [
+        "media/gallery/resources/face-references/lynleit/char-lynleit-arc-1-fancy-face-reference-02.png"
+      ],
+      "active": true
+    },
+    {
+      "id": "IMG-000199",
+      "source": "media/gallery/resources/face-references/lynleit/FULL-char-lynleit-arc-1-normal-face-reference-01-img-000199.png",
+      "derivatives": [
+        "media/gallery/previews/resources/PREV-lynleit-arc-1-normal-face-reference-1-img-000199.webp"
+      ],
+      "previousPaths": [
+        "media/gallery/resources/face-references/lynleit/char-lynleit-arc-1-normal-face-reference-01.png"
+      ],
+      "active": true
+    },
+    {
+      "id": "IMG-000200",
+      "source": "media/gallery/resources/face-references/lynleit/FULL-char-lynleit-arc-1-normal-face-reference-02-img-000200.png",
+      "derivatives": [
+        "media/gallery/previews/resources/PREV-lynleit-arc-1-normal-face-reference-2-img-000200.webp"
+      ],
+      "previousPaths": [
+        "media/gallery/resources/face-references/lynleit/char-lynleit-arc-1-normal-face-reference-02.png"
+      ],
+      "active": true
+    },
+    {
+      "id": "IMG-000201",
+      "source": "media/gallery/resources/face-references/lynleit/FULL-char-lynleit-arc-2-normal-face-reference-01-img-000201.png",
+      "derivatives": [
+        "media/gallery/previews/resources/PREV-lynleit-arc-2-normal-face-reference-1-img-000201.webp"
+      ],
+      "previousPaths": [
+        "media/gallery/resources/face-references/lynleit/char-lynleit-arc-2-normal-face-reference-01.png"
+      ],
+      "active": true
+    },
+    {
+      "id": "IMG-000202",
+      "source": "media/gallery/resources/face-references/sherie/FULL-char-sherie-arc-1-normal-face-reference-01-img-000202.png",
+      "derivatives": [
+        "media/gallery/previews/resources/PREV-sherie-arc-1-normal-face-reference-1-img-000202.webp"
+      ],
+      "previousPaths": [
+        "media/gallery/resources/face-references/sherie/char-sherie-arc-1-normal-face-reference-01.png"
       ],
       "active": true
     }

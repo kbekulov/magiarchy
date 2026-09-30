@@ -2,7 +2,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import assert from 'node:assert/strict';
 
-export const resourceKinds = ['reference-sheet', 't-pose', 'sketch', '3d-model'];
+export const resourceKinds = ['face-reference', 'reference-sheet', 't-pose', 'sketch', '3d-model'];
 export function resourcePath(root, value, preview = false) {
   assert.equal(typeof value, 'string', 'Resource file path must be a string');
   assert.ok(!/[\\?#%:]/.test(value) && !value.split('/').includes('..'), `Unsafe resource path: ${value}`);

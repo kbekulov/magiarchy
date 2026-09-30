@@ -13,6 +13,30 @@ export async function testGalleryResources(page, origin, engine) {
     await page.screenshot({ path: `test-results/${engine}-production-empty.png` });
   }
   const published = JSON.parse(fs.readFileSync('gallery/resources.json', 'utf8'));
+  const faceReferences = published.filter(record => record.kind === 'face-reference');
+  assert.equal(faceReferences.length, 6);
+  assert.equal(faceReferences.flatMap(record => record.previews).length, 8);
+  for (const width of [390, 1440]) {
+    await page.setViewportSize({ width, height: 900 });
+    await visit('gallery.html?collection=production&kind=face-reference');
+    assert.equal(await page.locator('#resource-kind').inputValue(), 'face-reference');
+    assert.equal(await page.locator('#resource-grid > :visible').count(), 6);
+    await page.screenshot({ path: `test-results/${engine}-face-references-${width}.png`, fullPage: true });
+    for (const record of faceReferences) {
+      await visit(`gallery.html?resource=${record.id}&kind=face-reference`);
+      assert.ok((await page.locator('#resource-type').textContent()).includes(record.era));
+      assert.equal(await page.locator('#resource-downloads a[download]').count(), record.files.length);
+      for (const [i, view] of record.previews.entries()) {
+        if (record.previews.length > 1) await page.locator('#resource-thumbnails button').nth(i).click();
+        assert.equal(await page.locator('#resource-image').getAttribute('src'), view.src);
+        await page.locator('#resource-image').evaluate(image => image.decode());
+        assert.ok(await page.locator('#resource-image').evaluate(image => image.naturalWidth > 0));
+        assert.match(view.src, /\/FULL-.*-img-\d{6}\.png$/);
+      }
+      assert.ok((await page.locator('#resource-back').getAttribute('href')).includes('kind=face-reference'));
+      assert.ok(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1));
+    }
+  }
   const kyrien = published.filter(record => record.characters.includes('kyrien') && record.kind === 't-pose');
   assert.equal(kyrien.length, 1, 'Only the selected Kyrien design should be published');
   assert.deepEqual(kyrien[0].previews.map(view => view.id), ['front', 'back']);

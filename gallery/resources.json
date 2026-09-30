@@ -534,5 +534,229 @@
       }
     ],
     "usage": "The author-selected canon design for Kyrien. Use both views together with the fixed Kyrien requirements in Character Image Production: a clear middle part, subtly tired eyes, a light frame, and lived-in elegance. At 180 cm he is only modestly taller than Lynleit at 169 cm."
+  },
+  {
+    "id": "drake-arc-1-normal-face-reference",
+    "title": "Drake - normal reference",
+    "kind": "face-reference",
+    "summary": "Drake's coordinated face-and-hair package for the Arc 1 normal design.",
+    "characters": [
+      "drake"
+    ],
+    "era": "Arc 1",
+    "modelVersion": "Normal",
+    "previews": [
+      {
+        "id": "view-1",
+        "src": "media/gallery/resources/face-references/drake/FULL-char-drake-arc-1-normal-face-reference-01-img-000195.png",
+        "alt": "Drake, Arc 1 normal face-and-hair reference, view 1",
+        "caption": "Drake · Arc 1 · normal · View 1",
+        "thumbnail": "media/gallery/previews/resources/PREV-drake-arc-1-normal-face-reference-1-img-000195.webp",
+        "width": 246,
+        "height": 246
+      }
+    ],
+    "files": [
+      {
+        "path": "media/gallery/resources/face-references/drake/FULL-char-drake-arc-1-normal-face-reference-01-img-000195.png",
+        "label": "Drake · Arc 1 · normal · View 1",
+        "notes": "Original reference image.",
+        "bytes": 103491,
+        "format": "PNG"
+      }
+    ],
+    "usage": "Use the complete face-and-hair package. Preserve the target image’s body and head proportions, costume and composition unless a change is requested."
+  },
+  {
+    "id": "kyrien-arc-1-normal-face-reference",
+    "title": "Kyrien - normal reference",
+    "kind": "face-reference",
+    "summary": "Kyrien's coordinated face-and-hair package for the Arc 1 normal design.",
+    "characters": [
+      "kyrien"
+    ],
+    "era": "Arc 1",
+    "modelVersion": "Normal",
+    "previews": [
+      {
+        "id": "view-1",
+        "src": "media/gallery/resources/face-references/kyrien/FULL-char-kyrien-arc-1-normal-face-reference-01-img-000196.png",
+        "alt": "Kyrien, Arc 1 normal face-and-hair reference, view 1",
+        "caption": "Kyrien · Arc 1 · normal · View 1",
+        "thumbnail": "media/gallery/previews/resources/PREV-kyrien-arc-1-normal-face-reference-1-img-000196.webp",
+        "width": 303,
+        "height": 303
+      }
+    ],
+    "files": [
+      {
+        "path": "media/gallery/resources/face-references/kyrien/FULL-char-kyrien-arc-1-normal-face-reference-01-img-000196.png",
+        "label": "Kyrien · Arc 1 · normal · View 1",
+        "notes": "Original reference image.",
+        "bytes": 153156,
+        "format": "PNG"
+      }
+    ],
+    "usage": "Use the complete face-and-hair package. Preserve the target image’s body and head proportions, costume and composition unless a change is requested."
+  },
+  {
+    "id": "lynleit-arc-1-normal-face-reference",
+    "title": "Lynleit - normal reference",
+    "kind": "face-reference",
+    "summary": "Lynleit's coordinated face-and-hair package for the Arc 1 normal design.",
+    "characters": [
+      "lynleit"
+    ],
+    "era": "Arc 1",
+    "modelVersion": "Normal",
+    "previews": [
+      {
+        "id": "view-1",
+        "src": "media/gallery/resources/face-references/lynleit/FULL-char-lynleit-arc-1-normal-face-reference-01-img-000199.png",
+        "alt": "Lynleit, Arc 1 normal face-and-hair reference, view 1",
+        "caption": "Lynleit · Arc 1 · normal · View 1",
+        "thumbnail": "media/gallery/previews/resources/PREV-lynleit-arc-1-normal-face-reference-1-img-000199.webp",
+        "width": 432,
+        "height": 432
+      },
+      {
+        "id": "view-2",
+        "src": "media/gallery/resources/face-references/lynleit/FULL-char-lynleit-arc-1-normal-face-reference-02-img-000200.png",
+        "alt": "Lynleit, Arc 1 normal face-and-hair reference, view 2",
+        "caption": "Lynleit · Arc 1 · normal · View 2",
+        "thumbnail": "media/gallery/previews/resources/PREV-lynleit-arc-1-normal-face-reference-2-img-000200.webp",
+        "width": 518,
+        "height": 518
+      }
+    ],
+    "files": [
+      {
+        "path": "media/gallery/resources/face-references/lynleit/FULL-char-lynleit-arc-1-normal-face-reference-01-img-000199.png",
+        "label": "Lynleit · Arc 1 · normal · View 1",
+        "notes": "Original reference image.",
+        "bytes": 266632,
+        "format": "PNG"
+      },
+      {
+        "path": "media/gallery/resources/face-references/lynleit/FULL-char-lynleit-arc-1-normal-face-reference-02-img-000200.png",
+        "label": "Lynleit · Arc 1 · normal · View 2",
+        "notes": "Original reference image.",
+        "bytes": 472908,
+        "format": "PNG"
+      }
+    ],
+    "usage": "Use the complete face-and-hair package. Preserve the target image’s body and head proportions, costume and composition unless a change is requested."
+  },
+  {
+    "id": "lynleit-arc-1-fancy-face-reference",
+    "title": "Lynleit - fancy reference",
+    "kind": "face-reference",
+    "summary": "Lynleit's coordinated face-and-hair package for the Arc 1 fancy design.",
+    "characters": [
+      "lynleit"
+    ],
+    "era": "Arc 1",
+    "modelVersion": "Fancy",
+    "previews": [
+      {
+        "id": "view-1",
+        "src": "media/gallery/resources/face-references/lynleit/FULL-char-lynleit-arc-1-fancy-face-reference-01-img-000197.png",
+        "alt": "Lynleit, Arc 1 fancy face-and-hair reference, view 1",
+        "caption": "Lynleit · Arc 1 · fancy · View 1",
+        "thumbnail": "media/gallery/previews/resources/PREV-lynleit-arc-1-fancy-face-reference-1-img-000197.webp",
+        "width": 697,
+        "height": 697
+      },
+      {
+        "id": "view-2",
+        "src": "media/gallery/resources/face-references/lynleit/FULL-char-lynleit-arc-1-fancy-face-reference-02-img-000198.png",
+        "alt": "Lynleit, Arc 1 fancy face-and-hair reference, view 2",
+        "caption": "Lynleit · Arc 1 · fancy · View 2",
+        "thumbnail": "media/gallery/previews/resources/PREV-lynleit-arc-1-fancy-face-reference-2-img-000198.webp",
+        "width": 777,
+        "height": 777
+      }
+    ],
+    "files": [
+      {
+        "path": "media/gallery/resources/face-references/lynleit/FULL-char-lynleit-arc-1-fancy-face-reference-01-img-000197.png",
+        "label": "Lynleit · Arc 1 · fancy · View 1",
+        "notes": "Original reference image.",
+        "bytes": 614839,
+        "format": "PNG"
+      },
+      {
+        "path": "media/gallery/resources/face-references/lynleit/FULL-char-lynleit-arc-1-fancy-face-reference-02-img-000198.png",
+        "label": "Lynleit · Arc 1 · fancy · View 2",
+        "notes": "Original reference image.",
+        "bytes": 776251,
+        "format": "PNG"
+      }
+    ],
+    "usage": "Use the complete face-and-hair package. Preserve the target image’s body and head proportions, costume and composition unless a change is requested."
+  },
+  {
+    "id": "lynleit-arc-2-normal-face-reference",
+    "title": "Lynleit - normal reference",
+    "kind": "face-reference",
+    "summary": "Lynleit's coordinated face-and-hair package for the Arc 2 normal design.",
+    "characters": [
+      "lynleit"
+    ],
+    "era": "Arc 2",
+    "modelVersion": "Normal",
+    "previews": [
+      {
+        "id": "view-1",
+        "src": "media/gallery/resources/face-references/lynleit/FULL-char-lynleit-arc-2-normal-face-reference-01-img-000201.png",
+        "alt": "Lynleit, Arc 2 normal face-and-hair reference, view 1",
+        "caption": "Lynleit · Arc 2 · normal · View 1",
+        "thumbnail": "media/gallery/previews/resources/PREV-lynleit-arc-2-normal-face-reference-1-img-000201.webp",
+        "width": 385,
+        "height": 385
+      }
+    ],
+    "files": [
+      {
+        "path": "media/gallery/resources/face-references/lynleit/FULL-char-lynleit-arc-2-normal-face-reference-01-img-000201.png",
+        "label": "Lynleit · Arc 2 · normal · View 1",
+        "notes": "Original reference image.",
+        "bytes": 245401,
+        "format": "PNG"
+      }
+    ],
+    "usage": "Use the complete face-and-hair package. Preserve the target image’s body and head proportions, costume and composition unless a change is requested."
+  },
+  {
+    "id": "sherie-arc-1-normal-face-reference",
+    "title": "Sherie - normal reference",
+    "kind": "face-reference",
+    "summary": "Sherie's coordinated face-and-hair package for the Arc 1 normal design.",
+    "characters": [
+      "sherie"
+    ],
+    "era": "Arc 1",
+    "modelVersion": "Normal",
+    "previews": [
+      {
+        "id": "view-1",
+        "src": "media/gallery/resources/face-references/sherie/FULL-char-sherie-arc-1-normal-face-reference-01-img-000202.png",
+        "alt": "Sherie, Arc 1 normal face-and-hair reference, view 1",
+        "caption": "Sherie · Arc 1 · normal · View 1",
+        "thumbnail": "media/gallery/previews/resources/PREV-sherie-arc-1-normal-face-reference-1-img-000202.webp",
+        "width": 757,
+        "height": 757
+      }
+    ],
+    "files": [
+      {
+        "path": "media/gallery/resources/face-references/sherie/FULL-char-sherie-arc-1-normal-face-reference-01-img-000202.png",
+        "label": "Sherie · Arc 1 · normal · View 1",
+        "notes": "Original reference image.",
+        "bytes": 829440,
+        "format": "PNG"
+      }
+    ],
+    "usage": "Use the complete face-and-hair package. Preserve the target image’s body and head proportions, costume and composition unless a change is requested."
   }
 ]
