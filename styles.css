@@ -4094,7 +4094,7 @@ a.status-member:hover {
   display: flex;
   align-items: center;
   width: max-content;
-  transform: translateX(-100%);
+  transform: translate(-100%, -100%);
   pointer-events: none;
 }
 .published-image-filename { display: none; }
@@ -4102,13 +4102,13 @@ a.status-member:hover {
 .image-id-copy {
   position: relative;
   isolation: isolate;
-  min-height: 24px;
-  padding: 4px 6px;
+  min-height: 20px;
+  padding: 3px 5px;
   border: 0;
   border-radius: 4px;
   background: transparent;
   color: #e1e2e5;
-  font: 400 10px/16px monospace;
+  font: 400 9px/14px monospace;
   cursor: pointer;
   touch-action: manipulation;
   pointer-events: auto;
@@ -4138,8 +4138,8 @@ a.status-member:hover {
 }
 .image-id-copy-buffer { position: fixed; left: -9999px; top: 0; }
 @media (pointer: coarse) {
-  .image-id-copy { min-height: 44px; }
-  .image-id-copy::before { top: 10px; bottom: 10px; }
+  .image-id-copy { display: flex; align-items: flex-end; min-height: 44px; }
+  .image-id-copy::before { top: auto; bottom: 0; height: 20px; }
 }
 
 .gallery-toolbar {

@@ -14,7 +14,7 @@ function placeOverlays() {
     const art = image.getBoundingClientRect(), frame = host.getBoundingClientRect();
     row.hidden = !art.width || !art.height || image.hidden;
     row.style.left = `${art.right - frame.left - host.clientLeft + host.scrollLeft - 8}px`;
-    row.style.top = `${art.top - frame.top - host.clientTop + host.scrollTop + 8}px`;
+    row.style.top = `${art.bottom - frame.top - host.clientTop + host.scrollTop - 8}px`;
   }
 }
 window.addEventListener('resize', placeOverlays);

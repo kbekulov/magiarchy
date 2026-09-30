@@ -93,7 +93,7 @@ For example, Lynleit's confirmed 169 cm slender build and tailored blue-and-blac
 
 ### Descriptive asset filenames
 
-Published images additionally use an uppercase `FULL-` prefix for originals or `PREV-` for generated previews, followed by the descriptive stem and permanent `-img-000001`-style ID suffix. Originals and their previews share an ID. `gallery/image-identities.json` reserves identities permanently; edits retain the ID, while independent pictures receive new ones. The public UI displays a small copyable ID over the image's top-right corner, with its filename in the tooltip and accessible label. Workshop images remain private and outside this registry.
+Published images additionally use an uppercase `FULL-` prefix for originals or `PREV-` for generated previews, followed by the descriptive stem and permanent `-img-000001`-style ID suffix. Originals and their previews share an ID. `gallery/image-identities.json` reserves identities permanently; edits retain the ID, while independent pictures receive new ones. The public UI displays a small copyable ID over the image's bottom-right corner, with its filename in the tooltip and accessible label. Workshop images remain private and outside this registry.
 
 Every image or other file pasted or attached for site integration receives a descriptive filename before publication. This applies to images, music, documents, models, and other downloadable assets. Use lowercase ASCII words separated by hyphens, with the subject or title, purpose, and relevant confirmed variant, Arc, view, or revision. Preserve the actual extension.
 

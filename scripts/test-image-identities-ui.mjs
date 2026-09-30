@@ -21,11 +21,11 @@ export async function testImageIdentities(page, origin, engine) {
         const row = button.parentElement;
         const image = [...row.parentElement.querySelectorAll('img')].find(image => image.dataset.publicImageId === button.dataset.imageId && image.getAttribute('aria-hidden') !== 'true');
         const art = image.getBoundingClientRect(), badge = button.getBoundingClientRect();
-        return { right: art.right - badge.right, top: badge.top - art.top, width: badge.width, position: getComputedStyle(row).position, filenameHidden: getComputedStyle(row.querySelector('.published-image-filename')).display === 'none' };
+        return { right: art.right - badge.right, bottom: art.bottom - badge.bottom, width: badge.width, position: getComputedStyle(row).position, filenameHidden: getComputedStyle(row.querySelector('.published-image-filename')).display === 'none' };
       });
       assert.equal(overlay.position, 'absolute', `${route}: ID must not take up a section in the layout`);
-      assert.ok(overlay.right >= 6 && overlay.right <= 10 && overlay.top >= 6 && overlay.top <= 10, `${route}: badge must follow the image top-right: ${JSON.stringify(overlay)}`);
-      assert.ok(overlay.width < 90 && overlay.filenameHidden, `${route}: badge must remain compact`);
+      assert.ok(overlay.right >= 6 && overlay.right <= 10 && overlay.bottom >= 6 && overlay.bottom <= 10, `${route}: badge must follow the image bottom-right: ${JSON.stringify(overlay)}`);
+      assert.ok(overlay.width < 65 && overlay.filenameHidden, `${route}: badge must remain compact`);
       const url = page.url();
       await button.click();
       assert.equal(page.url(), url, 'Copy must not navigate');
