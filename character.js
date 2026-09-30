@@ -417,12 +417,12 @@ const profileSeeds = [
   {
     slug: 'inspector-leo', name: 'Inspector Leo', code: 'PLC · 016', role: 'Police inspector', factions: ['Police'], mbti: { type: 'XSTJ?', detail: 'possible Te', status: 'Provisional' }, accent: 'blue',
     summary: 'A police inspector whose missing-person investigation reaches the edge of a quarantine controlled by authorities above his clearance.',
-    visual: 'Practical detective clothing with restrained police identifiers and a worn notebook', palette: 'Navy, grey, white, signal blue', traits: ['Tenacious', 'Procedural', 'Skeptical'],
+    visual: 'A long grey raincoat, dark trousers, practical shoes and a worn notebook', palette: 'Charcoal, grey, black', traits: ['Tenacious', 'Procedural', 'Skeptical'],
     physical: [
-      ['Hair', 'Unspecified.'],
+      ['Hair', 'Short, tousled grey hair with a side-swept front.'],
       ['Eyes', 'Unspecified.'],
       ['Height and build', 'Unspecified.'],
-      ['Distinguishing features', 'Unspecified.']
+      ['Distinguishing features', 'An angular, lined face and a clean-shaven jaw.']
     ],
     origin: 'Leo is a married police inspector who trusts patient interviews and the belief that every disappearance leaves a human trail.', rupture: 'Searchers vanish after entering the park, then the case is removed from police control under a government quarantine.', focus: 'Following procedure now means abandoning the investigation, while continuing it means challenging his own institution. He remains outside the hidden world of Magi and interprets the crisis through police evidence.', future: 'The Church and MSF each know more than they admit, leaving Leo to investigate the authorities controlling the answers without understanding the supernatural order behind them.',
     connections: [
@@ -436,12 +436,12 @@ const profileSeeds = [
   {
     slug: 'father-mikhail', name: 'Father Mikhail', code: 'CHR · 017', role: 'Church special envoy', factions: ['The Church'], mbti: { type: 'XNJ?', detail: 'possible Ni; INFJ lead', status: 'Provisional' }, accent: 'neutral', materialStatus: 'Canon office + mock details',
     summary: 'A Church special envoy and formidable field operative whose mission in Cardiff forces him to survive several Magi threats before Lynleit reaches him.',
-    visual: 'Understated clerical dress with old protective symbols and no ornament', palette: 'Black, stone, dull gold, deep red', traits: ['Disciplined', 'Compassionate', 'Severe'],
+    visual: 'A black standing-collar cassock, long charcoal scarf, Orthodox cross and a small book', palette: 'Black, charcoal, silver', traits: ['Disciplined', 'Compassionate', 'Severe'],
     physical: [
-      ['Hair', 'Unspecified.'],
+      ['Hair', 'Silver-grey hair swept back in pointed locks.'],
       ['Eyes', 'Unspecified.'],
       ['Height and build', 'Unspecified.'],
-      ['Distinguishing features', 'Unspecified.']
+      ['Distinguishing features', 'An angular face, narrow eyes and short stubble.']
     ],
     personalitySummary: 'Mikhail explains difficult doctrine patiently and can deliver a personal taunt with the solemn cadence of a blessing before dropping into blunt ordinary speech. He notices evasions in speech and small gestures, and uses them to prolong a joke. He lets Lynleit be angry without withdrawing his advice or promising that it will work. When she looks away during their conversation about intimacy, he leaves the reaction unremarked. In the field, he survives confrontations with Magi even when operating alone.',
     tradecraft: [

@@ -23,6 +23,7 @@ import { testSharedNight } from './test-shared-night.mjs';
 import { testPageSpacing } from './test-page-spacing.mjs';
 import { testEleventhFloor } from './test-eleventh-floor.mjs';
 import { testSeasonalDirection } from './test-seasonal-direction.mjs';
+import { testLeoMikhailArt } from './test-leo-mikhail-art.mjs';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const mime = { '.html': 'text/html', '.js': 'text/javascript', '.json': 'application/json', '.css': 'text/css', '.png': 'image/png', '.webp': 'image/webp', '.md': 'text/plain', '.mp3': 'audio/mpeg', '.wav': 'audio/wav' };
@@ -83,8 +84,14 @@ try {
         continue;
       }
       if (process.env.TEST_CHIBIS_ONLY === '1') {
+        await testLeoMikhailArt(page, origin, engine);
         await testArtworkVersions(page, origin, engine);
         assert.deepEqual(errors, [], `${engine}: chibi browser errors`);
+        continue;
+      }
+      if (process.env.TEST_LEO_MIKHAIL_ONLY === '1') {
+        await testLeoMikhailArt(page, origin, engine);
+        assert.deepEqual(errors, [], `${engine}: Leo and Mikhail artwork errors`);
         continue;
       }
       if (process.env.TEST_SHARED_NIGHT_ONLY === '1') {
