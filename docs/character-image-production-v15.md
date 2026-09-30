@@ -20,16 +20,6 @@ Keep the directory and its files private, Git-ignored and outside public search,
 
 In each generation brief, identify the selected face-and-hair package separately from body, clothing and scene references. Review both the face and hair against it before accepting an image. Applying this package does not transfer unrelated costume, background, body proportions or story events from the reference. For a localized edit, preserve the existing composition and all unrequested details.
 
-## Mandatory cohesive hair shapes
-
-For every character, construct hair as a cohesive mass rather than many separate strands. This high-priority direction applies to all hair lengths and to portraits, full-body artwork, panels, sketches and chibis. Use a few broad, connected locks or planes, with only several purposeful separations to imply the hair's volume, layering and direction. Describe the surface with restrained interior lines, shadow shapes and highlights rather than tracing individual hairs.
-
-Do not generate a spray of fine strands, stringy ribbons, repeated wisps, dense flyaways or dozens of individually outlined curls. Wind and action can lift or divide a few substantial sections while the overall hair remains a unified shape. The supplied examples show long hair flowing in broad connected sections and chibi hair reduced to a clear silhouette with a small number of tapered ends. The rule does not require a featureless solid block.
-
-Preserve the selected character package's colour, part, fringe, gathering, length and recognizable silhouette. Simplify the construction without borrowing another character's hairstyle or changing the original head and body proportions. This rendering direction controls over incidental over-stranded detail in older art; it does not authorize replacing existing pictures without a request.
-
-Inspect the author's private examples in `workshop/_art_references/hair-shape/` alongside the selected character package. They illustrate hair construction only, not a shared face, outfit or character identity. Keep them unpublished and outside public image IDs. Include cohesive hair shapes in generation briefs and reject fragmented, excessively strand-by-strand results during visual review.
-
 ## Mandatory proportion lock for existing images
 
 When applying references to an existing image, the original target controls its body and head proportions. This is a high-priority rule, not an optional preference. Preserve head size and position, head-to-body ratio, neck length, shoulder width, torso length, waist and hip shape, limb lengths, pose, camera and framing unless the author explicitly requests a change to them.

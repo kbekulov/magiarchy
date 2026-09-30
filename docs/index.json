@@ -276,11 +276,11 @@
     "topic": "Visual Production Standard",
     "file": "character-image-production.md",
     "updated": "2026-09-30",
-    "description": "Mandatory face-and-hair packages and preservation of original body and head proportions in reference-based edits.",
+    "description": "Cohesive hair shapes, mandatory face-and-hair packages and preservation of original head and body proportions.",
     "speakers": [
       "Author's Desk"
     ],
-    "defaultVersion": "v15",
+    "defaultVersion": "v16",
     "versions": [
       {
         "id": "v1",
@@ -382,10 +382,17 @@
       },
       {
         "id": "v15",
-        "label": "v15 · Current",
-        "file": "character-image-production.md",
+        "label": "v15 · Archived",
+        "file": "character-image-production-v15.md",
         "updated": "2026-09-30",
         "description": "Reference-based edits must preserve the target's original body and head proportions, pose and framing."
+      },
+      {
+        "id": "v16",
+        "label": "v16 · Current",
+        "file": "character-image-production.md",
+        "updated": "2026-09-30",
+        "description": "All character hair uses cohesive masses and a few broad separations, never many individual strands."
       }
     ]
   },
