@@ -275,12 +275,12 @@
     "title": "Character Image Production",
     "topic": "Visual Production Standard",
     "file": "character-image-production.md",
-    "updated": "2026-09-29",
-    "description": "Approved templates and character designs, with golden-autumn scene colour and Lynleit's blue silhouette.",
+    "updated": "2026-09-30",
+    "description": "Mandatory character face references, separate hairstyle choices, approved templates and visual continuity.",
     "speakers": [
       "Author's Desk"
     ],
-    "defaultVersion": "v12",
+    "defaultVersion": "v13",
     "versions": [
       {
         "id": "v1",
@@ -361,10 +361,17 @@
       },
       {
         "id": "v12",
-        "label": "v12 · Current",
-        "file": "character-image-production.md",
+        "label": "v12 · Archived",
+        "file": "character-image-production-v12.md",
         "updated": "2026-09-29",
         "description": "Golden-autumn scene briefs and blue-against-gold colour, preserving approved designs, references and scene chronology."
+      },
+      {
+        "id": "v13",
+        "label": "v13 · Current",
+        "file": "character-image-production.md",
+        "updated": "2026-09-30",
+        "description": "High-priority private face references for every character image, with facial identity held consistent and hairstyle selected separately."
       }
     ]
   },

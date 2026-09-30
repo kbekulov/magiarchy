@@ -6,20 +6,6 @@ Using approved templates is a required first step for future character image gen
 
 Use the actual reference images as inputs wherever the generation tool supports them. A written description or recollection of an image is not a substitute for an available visual reference. If a required reference cannot be accessed or supplied, explain the limitation and agree on an alternative with the author before generating.
 
-## Mandatory character face references
-
-Before crafting any new image of a specific character, inspect the private `workshop/_art_references/face_references/` directory and the matching character subfolder. This is a high-priority requirement for portraits, full-body art, panels, sketches, chibis and costume studies, including group images. Recheck the directory for each request so newly supplied references are not missed.
-
-The author-selected face references control facial identity and take priority over conflicting incidental depictions in older artwork. Inspect all applicable views and give the generation tool the relevant actual images. Preserve the recognizable facial structure, eye shape and spacing, brows, nose, mouth and jaw through changes in expression, angle, lighting and medium. Chibi simplification must retain identifying features rather than replace them with a generic face. Use the other approved references for body, clothing, palette and scene continuity.
-
-Hair and face are separate decisions. A file named for a hairstyle still establishes the same character's face. Hair variants do not authorize alternate facial identities. Choose the hairstyle for the intended Arc and scene; when that choice is open, ask the author which kind of hair to pursue. Preserve a hairstyle already specified in the request, and do not silently transfer an Arc 2 hairstyle into Arc 1. Do not interpret an expression or lighting difference as a redesign.
-
-At the introduction of this rule, Lynleit is the only character with a dedicated face-reference folder. Her four supplied images show two Arc 1 formal-hair treatments, an Arc 1 everyday-hair treatment and an Arc 2 hairstyle. All serve as references to her facial identity. This inventory is not a permanent limit: check for new characters and files before each generation. If no dedicated reference exists for a character, use that character's approved artwork; never substitute another character's face. Resolve inaccessible required references or genuine identity conflicts with the author before generating.
-
-Keep the directory and its files private, Git-ignored and outside public search, Gallery registration and image IDs. The author permits their use as generation inputs, not their publication. Existing filenames may remain unchanged. For future additions, prefer a character-slug subfolder and a descriptive stem such as `lynleit-face-arc-1-hair-formal-01.png`, preserving the actual extension. Arc and hairstyle labels describe the pictured treatment, not a different face.
-
-In each generation brief, record the face references separately from the chosen hairstyle and body or costume references. Review the resulting face against them before accepting an image. A hairstyle match alone is not an identity match.
-
 ## Anima's three roles
 
 Anima, unofficially nicknamed <span data-no-entity-links>Inanna</span>, has three distinct roles: the author's personal mascot, a symbolic expression of the project's tonal world, and the female anatomical production template. None makes her a character in story canon. [Thematic Direction](../docs.html?doc=thematic-direction) owns the symbolic role and distinguishes it from the Cult of Inanna.
