@@ -45,6 +45,8 @@ Page-start spacing belongs to the content container, not a breadcrumb or notice.
 
 ## Backlog intake
 
+Lynleit's future-image lingerie preference is a mandatory production rule in `AGENTS.md`: use strapless bras and generally black lace whenever lingerie is depicted, unless the author explicitly requests an exception. It does not require lingerie in other outfits or establish a magazine shoot as a story event. Sketches remain private under the workshop rule below.
+
 `backlog/prose_transcripts/` is a continuing technique-reference corpus, not pending story intake. The initial `blacklog` spelling refers to this folder. Its TXT files inform the detailed editorial ruleset in `docs/prose-style.md` as they arrive; never import their story content or treat them as canon. Empty folders yield no analysis findings. Preserve source references when recording techniques and distinguish working deductions from author-approved preferences. The author confirmed this permanent rule without supplying samples on 29 September 2026.
 
 Every requested sketch goes into `workshop/` unless the author explicitly specifies another destination. The 30 September instruction supersedes the earlier H-scene-only restriction: character design variations and other non-H sketches also belong here, alongside private `h_scenes/` work. Its complete subtree stays Git-ignored and outside commits, public records, search, builds and deployment. Other unpublished non-sketch editing studies may use ignored `output/private-studies/`. Generating or relocating a sketch is not approval to publish it. Only explicitly approved intake assets may be copied into public media through the normal intake workflow; workshop originals remain private.
