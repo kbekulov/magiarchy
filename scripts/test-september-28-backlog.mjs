@@ -6,7 +6,7 @@ export async function testSeptember28Backlog(page, origin, engine) {
   const records = JSON.parse(fs.readFileSync('gallery/panels.json'));
   const dream = records.find(r => r.id === 'anima-meets-female-cast');
   assert.ok(dream.nonCanon && !dream.moment && !dream.chapter);
-  assert.equal(dream.panels.length, 9);
+  assert.equal(dream.panels.length, 10);
   assert.deepEqual(dream.characters, ['lynleit', 'sherie', 'yulia']);
   const invalid = structuredClone(records);
   invalid.find(r => r.id === dream.id).moment = { slug: 'unresolved-tension', version: 'v1' };
@@ -16,7 +16,7 @@ export async function testSeptember28Backlog(page, origin, engine) {
     await page.setViewportSize({width, height:900});
     await visit(`gallery.html?panels=${dream.id}`);
     assert.match(await page.locator('#panel-medium').textContent(), /Non-canon/);
-    assert.equal(await page.locator('.scene-panel').count(), 9);
+    assert.equal(await page.locator('.scene-panel').count(), 10);
     assert.equal(await page.locator('#panel-context a[href^="story.html"], #panel-context a[href^="moments.html"]').count(), 0);
     assert.equal(await page.locator('#panel-characters a[href="character.html?character=anima"]').count(), 0);
     assert.equal(await page.locator('#panel-reader a[href*="cult-of-inanna"]').count(), 0);

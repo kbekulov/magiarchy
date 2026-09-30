@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "nextId": 184,
+  "nextId": 195,
   "images": [
     {
       "id": "IMG-000001",
@@ -2694,6 +2694,127 @@
       "previousPaths": [
         "media/music/kyrie-eleison/kyrie-eleison-cover.png",
         "media/music/kyrie-eleison/kyrie-eleison-cover-img-000183.png"
+      ],
+      "active": true
+    },
+    {
+      "id": "IMG-000184",
+      "source": "media/gallery/images/characters/FULL-char-lynleit-fan-service-blue-satin-img-000184.png",
+      "derivatives": [
+        "media/gallery/previews/characters/PREV-char-lynleit-fan-service-blue-satin-img-000184.webp"
+      ],
+      "previousPaths": [
+        "media/gallery/images/characters/char-lynleit-fan-service-blue-satin.png"
+      ],
+      "active": true
+    },
+    {
+      "id": "IMG-000185",
+      "source": "media/gallery/images/characters/FULL-char-lynleit-fan-service-navy-one-shoulder-img-000185.png",
+      "derivatives": [
+        "media/gallery/previews/characters/PREV-char-lynleit-fan-service-navy-one-shoulder-img-000185.webp"
+      ],
+      "previousPaths": [
+        "media/gallery/images/characters/char-lynleit-fan-service-navy-one-shoulder.png"
+      ],
+      "active": true
+    },
+    {
+      "id": "IMG-000186",
+      "source": "media/gallery/images/characters/FULL-char-lynleit-fan-service-striped-tankini-img-000186.png",
+      "derivatives": [
+        "media/gallery/previews/characters/PREV-char-lynleit-fan-service-striped-tankini-img-000186.webp"
+      ],
+      "previousPaths": [
+        "media/gallery/images/characters/char-lynleit-fan-service-striped-tankini.png"
+      ],
+      "active": true
+    },
+    {
+      "id": "IMG-000187",
+      "source": "media/gallery/images/characters/FULL-char-sherie-fan-service-black-swimwear-img-000187.png",
+      "derivatives": [
+        "media/gallery/previews/characters/PREV-char-sherie-fan-service-black-swimwear-img-000187.webp"
+      ],
+      "previousPaths": [
+        "media/gallery/images/characters/char-sherie-fan-service-black-swimwear.png"
+      ],
+      "active": true
+    },
+    {
+      "id": "IMG-000188",
+      "source": "media/gallery/images/characters/FULL-char-sherie-fan-service-coral-beachwear-img-000188.png",
+      "derivatives": [
+        "media/gallery/previews/characters/PREV-char-sherie-fan-service-coral-beachwear-img-000188.webp"
+      ],
+      "previousPaths": [
+        "media/gallery/images/characters/char-sherie-fan-service-coral-beachwear.png"
+      ],
+      "active": true
+    },
+    {
+      "id": "IMG-000189",
+      "source": "media/gallery/images/characters/FULL-char-sherie-fan-service-lace-trimmed-sleepwear-img-000189.png",
+      "derivatives": [
+        "media/gallery/previews/characters/PREV-char-sherie-fan-service-lace-trimmed-sleepwear-img-000189.webp"
+      ],
+      "previousPaths": [
+        "media/gallery/images/characters/char-sherie-fan-service-lace-trimmed-sleepwear.png"
+      ],
+      "active": true
+    },
+    {
+      "id": "IMG-000190",
+      "source": "media/gallery/images/characters/FULL-char-sherie-fan-service-rose-satin-img-000190.png",
+      "derivatives": [
+        "media/gallery/previews/characters/PREV-char-sherie-fan-service-rose-satin-img-000190.webp"
+      ],
+      "previousPaths": [
+        "media/gallery/images/characters/char-sherie-fan-service-rose-satin.png"
+      ],
+      "active": true
+    },
+    {
+      "id": "IMG-000191",
+      "source": "media/gallery/images/characters/FULL-char-sherie-fan-service-sage-swimwear-img-000191.png",
+      "derivatives": [
+        "media/gallery/previews/characters/PREV-char-sherie-fan-service-sage-swimwear-img-000191.webp"
+      ],
+      "previousPaths": [
+        "media/gallery/images/characters/char-sherie-fan-service-sage-swimwear.png"
+      ],
+      "active": true
+    },
+    {
+      "id": "IMG-000192",
+      "source": "media/gallery/images/characters/FULL-char-yulia-fan-service-ivory-satin-img-000192.png",
+      "derivatives": [
+        "media/gallery/previews/characters/PREV-char-yulia-fan-service-ivory-satin-img-000192.webp"
+      ],
+      "previousPaths": [
+        "media/gallery/images/characters/char-yulia-fan-service-ivory-satin.png"
+      ],
+      "active": true
+    },
+    {
+      "id": "IMG-000193",
+      "source": "media/gallery/images/characters/FULL-char-yulia-fan-service-linen-resort-img-000193.png",
+      "derivatives": [
+        "media/gallery/previews/characters/PREV-char-yulia-fan-service-linen-resort-img-000193.webp"
+      ],
+      "previousPaths": [
+        "media/gallery/images/characters/char-yulia-fan-service-linen-resort.png"
+      ],
+      "active": true
+    },
+    {
+      "id": "IMG-000194",
+      "source": "media/gallery/images/characters/FULL-char-yulia-fan-service-swimwear-pencil-img-000194.png",
+      "derivatives": [
+        "media/gallery/previews/characters/PREV-char-yulia-fan-service-swimwear-pencil-img-000194.webp"
+      ],
+      "previousPaths": [
+        "media/gallery/images/characters/char-yulia-fan-service-swimwear-pencil.png"
       ],
       "active": true
     }

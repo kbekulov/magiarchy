@@ -285,6 +285,8 @@ Original filenames start with `FULL-`; generated preview filenames start with `P
 
 ### Gallery production intake
 
+The 30 September Fan Service intake contains eleven posed illustrations in three character stacks: Lynleit (three), Sherie (five), and Yulia (three). Keep their beach, swimwear, sleepwear and satin subgroups, individual downloads and permanent image IDs. These presentation-only studies remain outside profile portrait pools and story chronology. The supplied `backlog/1.png` duplicates the existing Anima panel 10, Beneath the strings (IMG-000116); preserve that published identity and archive the duplicate source without creating another panel.
+
 Audit every image under `media/` for a public destination after image intake. Ordinary illustrations belong in Artwork, technical detail crops with their matching production reference, and scene sequences in Panels. World maps, flags, and weapon images may remain on their owning pages. Every Artwork card receives an individual search result, respecting its stable reader ID and default revision. `scripts/verify-media-visibility.mjs` checks published references and search coverage as part of `npm run check`; browser checks verify the actual readers and downloads. Keep generation drafts under the ignored `output/` directory private unless explicitly approved, and leave assets for later backlog entries pending. Do not publish draft studies just to satisfy media coverage.
 
 Back-view hand-detail crops accompany the matching Felix and Lynleit T-pose records as additional named previews and downloads. Keep the full front/back pair first, with its approved proportions and dimensions unchanged. Detail crops are not new body templates or separate character versions.

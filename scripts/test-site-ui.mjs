@@ -8,6 +8,7 @@ import { chromium, webkit, firefox } from 'playwright';
 import { testGalleryResources } from './test-gallery-resources.mjs';
 import { testGalleryStacks } from './test-gallery-stacks.mjs';
 import { testGalleryFilters } from './test-gallery-filters.mjs';
+import { testFanServiceIntake } from './test-fan-service-intake.mjs';
 import { testImageIdentities } from './test-image-identities-ui.mjs';
 import { testGalleryPanels } from './test-gallery-panels.mjs';
 import { testSeptemberPanelIntake } from './test-september-panel-intake.mjs';
@@ -76,6 +77,7 @@ try {
         await page.waitForLoadState('networkidle');
       };
       if (process.env.TEST_GALLERY_FILTERS_ONLY === '1') {
+        await testFanServiceIntake(page, origin, engine);
         await testGalleryFilters(page, origin, engine);
         assert.deepEqual(errors, [], `${engine}: gallery filter errors`);
         continue;
@@ -196,6 +198,7 @@ try {
       await testNarveanFog(page, origin, engine);
       await testRelationshipDirection(page, origin, engine);
       await testAphorisms(page, origin, engine);
+      await testFanServiceIntake(page, origin, engine);
       await testSeptember28Backlog(page, origin, engine);
       await testMusicMovements(page, origin, engine);
       await testImageIdentities(page, origin, engine);
