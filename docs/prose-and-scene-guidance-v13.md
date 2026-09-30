@@ -8,7 +8,7 @@ Before integrating newly supplied sexual or romantic scene material, ask whether
 
 For H Scene records, classify depiction (explicit material or implied intimacy), relevance (story-relevant or exploratory), and canon status independently in the shared content-notice registry. State when explicit language accompanies off-page action. Give readers a compact warning before the content and keep H Scene catalog filters off initially. Incidental romance is a reason to check intake scope, not an instruction to hide every mention of affection.
 
-The Shared Night demonstrates why these distinctions matter. Its main events are canon, its dialogue is draft, its sexual acts remain off-page, and the Holumn's compulsion cannot establish the participants' waking intentions. In its current revision Sherie uses recovered choice to step away, preserving her no-kissing boundary. Lynleit and Kyrien's unspecified experience remains a writer gap, not evidence of the earlier domestic dream. Hiyu and Yulia are absent from the briefing.
+The Shared Night demonstrates why these distinctions matter. Its main events are canon, its dialogue is draft, its sexual acts remain off-page, and the Holumn's compulsion cannot establish the participants' waking intentions. A voluntary action after recovered choice can have a consequence without turning all preceding dream activity into a confession.
 
 This is editorial guidance. It does not add events, motives, or supernatural rules to canon. Established facts belong in their archive records; a Chapter lets the reader experience them.
 

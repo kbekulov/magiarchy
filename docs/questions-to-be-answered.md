@@ -8,7 +8,7 @@ Story, character, world, relationship, institution, location, and event question
 
 | Area | Question | Confidence |
 | --- | --- | --- |
-| There Is No Eleventh Floor: placement | Where in Arc 1 does the office-building rescue fall after Fionn's coat substitution and before Lynleit discovers its nature, relative to his death and the river operation? | 0% |
+| There Is No Eleventh Floor: placement | Where within early Arc 1, before Kyrien's river revelation, does the rescue fall, and how soon afterward does Fionn reprimand Lynleit? | 0% |
 | HI-010: entry and escape | What selects victims or admits rescuers, why do some inherited boundaries hold, and can waiting for a route reproduce the escape? | 0% |
 | HI-010: forms and aftermath | Do the figures belong to one Holumn, what becomes of the manifestation and lost pistol, and is the later platform sighting actually Lynleit? | 0% |
 | Protective gloves | Who made Lynleit's black leather gloves, when did she acquire them, and what are their protective limits? | 0% |
@@ -64,7 +64,10 @@ Story, character, world, relationship, institution, location, and event question
 | Sherie and Felix | Which repeated professional assignments first give them private jokes and familiarity, and where do these encounters fall in the main plot? | 0% |
 | Sherie and Felix | What makes Felix recognize that he wants Sherie herself, and what experiences loosen his emotionally significant fixation on Lynleit? | 0% |
 | Sherie and Felix | When does Sherie first feel unseen, and when does she refuse to spend their private time accommodating Felix's hopes about Lynleit? How does he respond in his subsequent choices? | 0% |
-| Sherie and Felix | How do they respond in waking life to their chosen kiss in The Shared Night, and where does it fall relative to their first waking intimacy and later private code? | 0% |
+| Sherie and Felix | How does Sherie preserve enjoyable company and professional stability as their connection becomes sexual, while resisting dependency in either direction? No kiss occurs in or outside the dream. | 0% |
+| Lynleit and Kyrien: connected dream | What nonsexual experience unintentionally draws them emotionally closer? A painful disclosure, including childhood history, is possible but not chosen. | 0% |
+| Fionn's office and Ash | Does the cat chase follow immediately after the reprimand, with Lynleit's irritation giving way to distraction before she risks the roof? | 0% |
+| Natalia and the rescue | How does Natalia learn of the incident before notifying Fionn, and what safety instructions had she given Lynleit? | 0% |
 | Unresolved Tension | Whose sitting room hosts the card game, what game are they playing, and what prompted Felix's complaint about Lynleit? | 0% |
 | Character Aphorisms | In which conversations does Sherie use her sayings about catastrophe and catharsis, and Schrödinger's butt; who hears them? | 0% |
 | Sherie and Felix | Which professional obligations put them in substantive disagreement, and what consequences remain even when they care for one another? | 0% |

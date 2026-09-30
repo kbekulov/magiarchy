@@ -3,19 +3,26 @@
     "slug": "oneiric-confluence",
     "title": "The Oneiric Confluence",
     "topic": "Holumn Research",
-    "description": "Shared dreams, disowned impulses, three competing hypotheses, and the limits of recovered choice.",
+    "description": "Shared-dream evidence with Sherie's no-kissing boundary, a six-person briefing and unresolved Lynleit/Kyrien content.",
     "file": "oneiric-confluence.md",
-    "updated": "2026-09-29",
+    "updated": "2026-09-30",
     "speakers": [
       "Natalia"
     ],
-    "defaultVersion": "v1",
+    "defaultVersion": "v2",
     "versions": [
       {
         "id": "v1",
-        "label": "v1 · Current",
-        "file": "oneiric-confluence.md",
+        "label": "v1 · Archived",
+        "file": "oneiric-confluence-v1.md",
         "updated": "2026-09-29"
+      },
+      {
+        "id": "v2",
+        "label": "v2 · Current",
+        "file": "oneiric-confluence.md",
+        "updated": "2026-09-30",
+        "description": "Shared-dream evidence with Sherie's no-kissing boundary, a six-person briefing and unresolved Lynleit/Kyrien content."
       }
     ]
   },
@@ -460,12 +467,12 @@
     "title": "Prose Style History",
     "topic": "Historical Writing Reference",
     "file": "prose-style-history.md",
-    "updated": "2026-09-29",
-    "description": "Chapter revision history, including the office-worker testimony and its author-requested rescue additions.",
+    "updated": "2026-09-30",
+    "description": "Shared Night v2 retains banter while correcting intimacy and dream scope; the office reprimand remains an outline.",
     "speakers": [
       "Author's Desk"
     ],
-    "defaultVersion": "v4",
+    "defaultVersion": "v5",
     "versions": [
       {
         "id": "v1",
@@ -490,10 +497,17 @@
       },
       {
         "id": "v4",
-        "label": "v4 · Current",
-        "file": "prose-style-history.md",
+        "label": "v4 · Archived",
+        "file": "prose-style-history-v4.md",
         "updated": "2026-09-29",
         "description": "There Is No Eleventh Floor: first-person continuity, protected flame use, covert coat agency and the Church handoff."
+      },
+      {
+        "id": "v5",
+        "label": "v5 · Current",
+        "file": "prose-style-history.md",
+        "updated": "2026-09-30",
+        "description": "Shared Night v2 retains banter while correcting intimacy and dream scope; the office reprimand remains an outline."
       }
     ]
   },
@@ -541,12 +555,12 @@
     "title": "Events, Witnesses, and Reveals",
     "topic": "Reader Knowledge",
     "file": "reader-knowledge.md",
-    "updated": "2026-09-29",
-    "description": "Event periods and reveal boundaries, including the office witness, the coat's hidden cooperation and Church custody.",
+    "updated": "2026-09-30",
+    "description": "Shared Night v2 and the early office rescue: current evidence, writer gaps and Fionn's private reprimand.",
     "speakers": [
       "Author's Desk"
     ],
-    "defaultVersion": "v9",
+    "defaultVersion": "v10",
     "versions": [
       {
         "id": "v1",
@@ -606,10 +620,17 @@
       },
       {
         "id": "v9",
-        "label": "v9 · Current",
-        "file": "reader-knowledge.md",
+        "label": "v9 · Archived",
+        "file": "reader-knowledge-v9.md",
         "updated": "2026-09-29",
         "description": "The office-building witness distinguishes perceived events, hidden coat agency and uncertain later recollection."
+      },
+      {
+        "id": "v10",
+        "label": "v10 · Current",
+        "file": "reader-knowledge.md",
+        "updated": "2026-09-30",
+        "description": "Shared Night v2 and the early office rescue: current evidence, writer gaps and Fionn's private reprimand."
       }
     ]
   },
@@ -618,12 +639,12 @@
     "title": "Prose and Scene Guidance",
     "topic": "Editorial Reference",
     "file": "prose-and-scene-guidance.md",
-    "updated": "2026-09-29",
-    "description": "H Scene intake distinguishes canon, story relevance and depiction before integration.",
+    "updated": "2026-09-30",
+    "description": "Recovered choice can preserve distance; an undrafted dream is not reader evidence.",
     "speakers": [
       "Author's Desk"
     ],
-    "defaultVersion": "v13",
+    "defaultVersion": "v14",
     "versions": [
       {
         "id": "v1",
@@ -711,10 +732,17 @@
       },
       {
         "id": "v13",
-        "label": "v13 · Current",
-        "file": "prose-and-scene-guidance.md",
+        "label": "v13 · Archived",
+        "file": "prose-and-scene-guidance-v13.md",
         "updated": "2026-09-29",
         "description": "H Scene intake distinguishes canon, story relevance and depiction before integration."
+      },
+      {
+        "id": "v14",
+        "label": "v14 · Current",
+        "file": "prose-and-scene-guidance.md",
+        "updated": "2026-09-30",
+        "description": "Recovered choice can preserve distance; an undrafted dream is not reader evidence."
       }
     ]
   },
@@ -849,12 +877,12 @@
     "title": "Character Intimacy and Sexuality Reference",
     "topic": "Writer's Character Reference",
     "file": "character-intimacy-and-sexuality.md",
-    "updated": "2026-09-29",
-    "description": "The Shared Night: compelled dreams, a freely chosen kiss, and a separate quiet domestic dream.",
+    "updated": "2026-09-30",
+    "description": "Sherie's deliberate emotional restraint with Felix contrasts with the proposed nonsexual exposure of Lynleit and Kyrien.",
     "speakers": [
       "Character Archive"
     ],
-    "defaultVersion": "v21",
+    "defaultVersion": "v22",
     "versions": [
       {
         "id": "v1",
@@ -1018,10 +1046,18 @@
       },
       {
         "id": "v21",
-        "label": "v21 · Current",
-        "file": "character-intimacy-and-sexuality.md",
+        "label": "v21 · Archived",
+        "file": "character-intimacy-and-sexuality-v21.md",
         "updated": "2026-09-29",
         "description": "The Shared Night: compelled dreams, a freely chosen kiss, and a separate quiet domestic dream.",
+        "tensionFile": "sexual-tension-notes-v21.json"
+      },
+      {
+        "id": "v22",
+        "label": "v22 · Current",
+        "file": "character-intimacy-and-sexuality.md",
+        "updated": "2026-09-30",
+        "description": "Sherie's deliberate emotional restraint with Felix contrasts with the proposed nonsexual exposure of Lynleit and Kyrien.",
         "tensionFile": "sexual-tension-notes.json"
       }
     ]
@@ -1031,8 +1067,8 @@
     "title": "Holumn Incidents and Victim Testimonies",
     "topic": "Holumn Archive",
     "file": "holumn-incidents-and-testimonies.md",
-    "updated": "2026-09-29",
-    "description": "Holumn testimony including HI-010's impossible office floors, local boundary tests, rescue and Church aftermath.",
+    "updated": "2026-09-30",
+    "description": "Oneiric evidence follows the corrected briefing and no-kissing test.",
     "speakers": [
       "Victims and Incident Witnesses",
       "Archive"
@@ -1103,13 +1139,20 @@
       },
       {
         "id": "v10",
-        "label": "v10 · Current",
-        "file": "holumn-incidents-and-testimonies.md",
+        "label": "v10 · Archived",
+        "file": "holumn-incidents-and-testimonies-v10.md",
         "updated": "2026-09-29",
         "description": "HI-010, There Is No Eleventh Floor: architectural entrapment, tested boundaries and witness suppression."
+      },
+      {
+        "id": "v11",
+        "label": "v11 · Current",
+        "file": "holumn-incidents-and-testimonies.md",
+        "updated": "2026-09-30",
+        "description": "Oneiric evidence follows the corrected briefing and no-kissing test."
       }
     ],
-    "defaultVersion": "v10"
+    "defaultVersion": "v11"
   },
   {
     "slug": "questions-to-be-answered",
@@ -1140,8 +1183,8 @@
     "title": "Character Capability Balance",
     "topic": "Editorial Ledger",
     "file": "character-capability-balance.md",
-    "updated": "2026-09-29",
-    "description": "Capability limits and open questions, including protective gloves and the bounded cost of Lynleit's office-building rescue.",
+    "updated": "2026-09-30",
+    "description": "Fionn questions early Lynleit's readiness without erasing the rescue or Natalia's safety advice.",
     "speakers": [
       "Character Archive"
     ],
@@ -1169,13 +1212,20 @@
       },
       {
         "id": "v4",
-        "label": "v4 · Current",
-        "file": "character-capability-balance.md",
+        "label": "v4 · Archived",
+        "file": "character-capability-balance-v4.md",
         "updated": "2026-09-29",
         "description": "Gloves prevent routine burns without eliminating flame exertion, while HI-010's local counterplay stays incident-specific."
+      },
+      {
+        "id": "v5",
+        "label": "v5 · Current",
+        "file": "character-capability-balance.md",
+        "updated": "2026-09-30",
+        "description": "Fionn questions early Lynleit's readiness without erasing the rescue or Natalia's safety advice."
       }
     ],
-    "defaultVersion": "v4"
+    "defaultVersion": "v5"
   },
   {
     "slug": "duchy-of-narvea",

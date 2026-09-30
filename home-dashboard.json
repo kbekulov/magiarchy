@@ -2,9 +2,9 @@
   "schema": 1,
   "counts": {
     "chapters": 10,
-    "moments": 30,
+    "moments": 31,
     "characters": 18,
-    "questions": 147,
+    "questions": 150,
     "contradictions": 0
   },
   "tasks": [
@@ -16,6 +16,12 @@
           "id": "the-bench-under-the-lamp",
           "title": "The Bench under the Lamp",
           "href": "story.html?chapter=the-bench-under-the-lamp&version=v2",
+          "kind": "writer-gap"
+        },
+        {
+          "id": "the-shared-night",
+          "title": "The Shared Night",
+          "href": "story.html?chapter=the-shared-night&version=v2",
           "kind": "writer-gap"
         }
       ]
@@ -47,6 +53,10 @@
           "href": "moments.html?moment=there-is-no-eleventh-floor&version=v1"
         },
         {
+          "title": "After the Rescue",
+          "href": "moments.html?moment=fionns-office-after-the-rescue&version=v1"
+        },
+        {
           "title": "University Days",
           "href": "moments.html?moment=university-days-before-the-spill&version=v1"
         },
@@ -68,7 +78,7 @@
         },
         {
           "title": "The Shared Night",
-          "href": "moments.html?moment=the-shared-night&version=v1"
+          "href": "moments.html?moment=the-shared-night&version=v2"
         }
       ]
     }
@@ -112,14 +122,19 @@
         }
       ],
       "href": "character.html?character=lynleit",
-      "total": 22,
+      "total": 23,
       "prose": 9,
-      "outline": 13,
+      "outline": 14,
       "scenes": [
         {
           "title": "There Is No Eleventh Floor",
           "href": "moments.html?moment=there-is-no-eleventh-floor&version=v1",
           "kind": "Scene prose"
+        },
+        {
+          "title": "After the Rescue",
+          "href": "moments.html?moment=fionns-office-after-the-rescue&version=v1",
+          "kind": "Outline / scene seed"
         },
         {
           "title": "The Prosecutor's Return",
@@ -223,7 +238,7 @@
         },
         {
           "title": "The Shared Night",
-          "href": "moments.html?moment=the-shared-night&version=v1",
+          "href": "moments.html?moment=the-shared-night&version=v2",
           "kind": "Scene prose"
         }
       ]
@@ -344,7 +359,7 @@
         },
         {
           "title": "The Shared Night",
-          "href": "moments.html?moment=the-shared-night&version=v1",
+          "href": "moments.html?moment=the-shared-night&version=v2",
           "kind": "Scene prose"
         }
       ]
@@ -425,7 +440,7 @@
         },
         {
           "title": "The Shared Night",
-          "href": "moments.html?moment=the-shared-night&version=v1",
+          "href": "moments.html?moment=the-shared-night&version=v2",
           "kind": "Scene prose"
         }
       ]
@@ -488,7 +503,7 @@
         },
         {
           "title": "The Shared Night",
-          "href": "moments.html?moment=the-shared-night&version=v1",
+          "href": "moments.html?moment=the-shared-night&version=v2",
           "kind": "Scene prose"
         }
       ]
@@ -515,10 +530,15 @@
         }
       ],
       "href": "character.html?character=fionn",
-      "total": 5,
+      "total": 6,
       "prose": 2,
-      "outline": 3,
+      "outline": 4,
       "scenes": [
+        {
+          "title": "After the Rescue",
+          "href": "moments.html?moment=fionns-office-after-the-rescue&version=v1",
+          "kind": "Outline / scene seed"
+        },
         {
           "title": "Only Eyes for You",
           "href": "moments.html?moment=only-eyes-for-you&version=v2",
@@ -602,7 +622,7 @@
         },
         {
           "title": "The Shared Night",
-          "href": "moments.html?moment=the-shared-night&version=v1",
+          "href": "moments.html?moment=the-shared-night&version=v2",
           "kind": "Scene prose"
         }
       ]
@@ -734,45 +754,6 @@
       ]
     },
     {
-      "slug": "hiyu",
-      "name": "Hiyu",
-      "role": "Criminology student and intuitive investigator",
-      "goal": "Prove that the impossible explanation fits the disappearances, then learn enough restraint to keep the discovery from destroying both investigators.",
-      "conflicts": [
-        [
-          "Confidence before evidence",
-          "His excitement over an explanation can commit him and Yulia to danger he has not assessed."
-        ]
-      ],
-      "links": [
-        {
-          "name": "Yulia",
-          "href": "character.html?character=yulia"
-        }
-      ],
-      "href": "character.html?character=hiyu",
-      "total": 3,
-      "prose": 1,
-      "outline": 2,
-      "scenes": [
-        {
-          "title": "University Days",
-          "href": "moments.html?moment=university-days-before-the-spill&version=v1",
-          "kind": "Outline / scene seed"
-        },
-        {
-          "title": "Beyond the Cordon",
-          "href": "moments.html?moment=students-beyond-the-cordon&version=v2",
-          "kind": "Outline / scene seed"
-        },
-        {
-          "title": "The Shared Night",
-          "href": "moments.html?moment=the-shared-night&version=v1",
-          "kind": "Scene prose"
-        }
-      ]
-    },
-    {
       "slug": "natalia",
       "name": "Natalia",
       "role": "Independent magical examiner and private investigator",
@@ -814,46 +795,7 @@
         },
         {
           "title": "The Shared Night",
-          "href": "moments.html?moment=the-shared-night&version=v1",
-          "kind": "Scene prose"
-        }
-      ]
-    },
-    {
-      "slug": "yulia",
-      "name": "Yulia",
-      "role": "Criminology student and procedural investigator",
-      "goal": "Keep Hiyu alive, test his impossible theory honestly, and preserve enough reliable evidence to understand what ordinary criminology cannot explain.",
-      "conflicts": [
-        [
-          "Unfamiliar evidence",
-          "Her training offers no established procedure for what happens in the park."
-        ]
-      ],
-      "links": [
-        {
-          "name": "Hiyu",
-          "href": "character.html?character=hiyu"
-        }
-      ],
-      "href": "character.html?character=yulia",
-      "total": 3,
-      "prose": 1,
-      "outline": 2,
-      "scenes": [
-        {
-          "title": "University Days",
-          "href": "moments.html?moment=university-days-before-the-spill&version=v1",
-          "kind": "Outline / scene seed"
-        },
-        {
-          "title": "Beyond the Cordon",
-          "href": "moments.html?moment=students-beyond-the-cordon&version=v2",
-          "kind": "Outline / scene seed"
-        },
-        {
-          "title": "The Shared Night",
-          "href": "moments.html?moment=the-shared-night&version=v1",
+          "href": "moments.html?moment=the-shared-night&version=v2",
           "kind": "Scene prose"
         }
       ]
@@ -897,6 +839,40 @@
       ]
     },
     {
+      "slug": "hiyu",
+      "name": "Hiyu",
+      "role": "Criminology student and intuitive investigator",
+      "goal": "Prove that the impossible explanation fits the disappearances, then learn enough restraint to keep the discovery from destroying both investigators.",
+      "conflicts": [
+        [
+          "Confidence before evidence",
+          "His excitement over an explanation can commit him and Yulia to danger he has not assessed."
+        ]
+      ],
+      "links": [
+        {
+          "name": "Yulia",
+          "href": "character.html?character=yulia"
+        }
+      ],
+      "href": "character.html?character=hiyu",
+      "total": 2,
+      "prose": 0,
+      "outline": 2,
+      "scenes": [
+        {
+          "title": "University Days",
+          "href": "moments.html?moment=university-days-before-the-spill&version=v1",
+          "kind": "Outline / scene seed"
+        },
+        {
+          "title": "Beyond the Cordon",
+          "href": "moments.html?moment=students-beyond-the-cordon&version=v2",
+          "kind": "Outline / scene seed"
+        }
+      ]
+    },
+    {
       "slug": "myka",
       "name": "Myka",
       "role": "Magi Academy student",
@@ -930,6 +906,40 @@
         {
           "title": "Myka Enters MSF",
           "href": "moments.html?moment=myka-enters-msf&version=v2",
+          "kind": "Outline / scene seed"
+        }
+      ]
+    },
+    {
+      "slug": "yulia",
+      "name": "Yulia",
+      "role": "Criminology student and procedural investigator",
+      "goal": "Keep Hiyu alive, test his impossible theory honestly, and preserve enough reliable evidence to understand what ordinary criminology cannot explain.",
+      "conflicts": [
+        [
+          "Unfamiliar evidence",
+          "Her training offers no established procedure for what happens in the park."
+        ]
+      ],
+      "links": [
+        {
+          "name": "Hiyu",
+          "href": "character.html?character=hiyu"
+        }
+      ],
+      "href": "character.html?character=yulia",
+      "total": 2,
+      "prose": 0,
+      "outline": 2,
+      "scenes": [
+        {
+          "title": "University Days",
+          "href": "moments.html?moment=university-days-before-the-spill&version=v1",
+          "kind": "Outline / scene seed"
+        },
+        {
+          "title": "Beyond the Cordon",
+          "href": "moments.html?moment=students-beyond-the-cordon&version=v2",
           "kind": "Outline / scene seed"
         }
       ]
@@ -1094,13 +1104,13 @@
   ],
   "questions": [
     {
-      "id": "question-where-in-arc-1-does-the-office-building-rescue-fall-after-fionn-s-coat-substitution-and-before-l",
+      "id": "question-where-within-early-arc-1-before-kyrien-s-river-revelation-does-the-rescue-fall-and-how-soon-afte",
       "title": "There Is No Eleventh Floor: placement",
-      "text": "Where in Arc 1 does the office-building rescue fall after Fionn's coat substitution and before Lynleit discovers its nature, relative to his death and the river operation?",
+      "text": "Where within early Arc 1, before Kyrien's river revelation, does the rescue fall, and how soon afterward does Fionn reprimand Lynleit?",
       "confidence": 0,
       "meta": "0% answered",
       "section": "Current questions",
-      "href": "docs.html?doc=questions-to-be-answered#question-where-in-arc-1-does-the-office-building-rescue-fall-after-fionn-s-coat-substitution-and-before-l"
+      "href": "docs.html?doc=questions-to-be-answered#question-where-within-early-arc-1-before-kyrien-s-river-revelation-does-the-rescue-fall-and-how-soon-afte"
     },
     {
       "id": "question-what-selects-victims-or-admits-rescuers-why-do-some-inherited-boundaries-hold-and-can-waiting-fo",
@@ -1598,13 +1608,40 @@
       "href": "docs.html?doc=questions-to-be-answered#question-when-does-sherie-first-feel-unseen-and-when-does-she-refuse-to-spend-their-private-time-accommod"
     },
     {
-      "id": "question-how-do-they-respond-in-waking-life-to-their-chosen-kiss-in-the-shared-night-and-where-does-it-fa",
+      "id": "question-how-does-sherie-preserve-enjoyable-company-and-professional-stability-as-their-connection-become",
       "title": "Sherie and Felix",
-      "text": "How do they respond in waking life to their chosen kiss in The Shared Night, and where does it fall relative to their first waking intimacy and later private code?",
+      "text": "How does Sherie preserve enjoyable company and professional stability as their connection becomes sexual, while resisting dependency in either direction? No kiss occurs in or outside the dream.",
       "confidence": 0,
       "meta": "0% answered",
       "section": "Current questions",
-      "href": "docs.html?doc=questions-to-be-answered#question-how-do-they-respond-in-waking-life-to-their-chosen-kiss-in-the-shared-night-and-where-does-it-fa"
+      "href": "docs.html?doc=questions-to-be-answered#question-how-does-sherie-preserve-enjoyable-company-and-professional-stability-as-their-connection-become"
+    },
+    {
+      "id": "question-what-nonsexual-experience-unintentionally-draws-them-emotionally-closer-a-painful-disclosure-inc",
+      "title": "Lynleit and Kyrien: connected dream",
+      "text": "What nonsexual experience unintentionally draws them emotionally closer? A painful disclosure, including childhood history, is possible but not chosen.",
+      "confidence": 0,
+      "meta": "0% answered",
+      "section": "Current questions",
+      "href": "docs.html?doc=questions-to-be-answered#question-what-nonsexual-experience-unintentionally-draws-them-emotionally-closer-a-painful-disclosure-inc"
+    },
+    {
+      "id": "question-does-the-cat-chase-follow-immediately-after-the-reprimand-with-lynleit-s-irritation-giving-way-t",
+      "title": "Fionn's office and Ash",
+      "text": "Does the cat chase follow immediately after the reprimand, with Lynleit's irritation giving way to distraction before she risks the roof?",
+      "confidence": 0,
+      "meta": "0% answered",
+      "section": "Current questions",
+      "href": "docs.html?doc=questions-to-be-answered#question-does-the-cat-chase-follow-immediately-after-the-reprimand-with-lynleit-s-irritation-giving-way-t"
+    },
+    {
+      "id": "question-how-does-natalia-learn-of-the-incident-before-notifying-fionn-and-what-safety-instructions-had-s",
+      "title": "Natalia and the rescue",
+      "text": "How does Natalia learn of the incident before notifying Fionn, and what safety instructions had she given Lynleit?",
+      "confidence": 0,
+      "meta": "0% answered",
+      "section": "Current questions",
+      "href": "docs.html?doc=questions-to-be-answered#question-how-does-natalia-learn-of-the-incident-before-notifying-fionn-and-what-safety-instructions-had-s"
     },
     {
       "id": "question-whose-sitting-room-hosts-the-card-game-what-game-are-they-playing-and-what-prompted-felix-s-comp",
@@ -2498,9 +2535,18 @@
       "title": "There Is No Eleventh Floor",
       "text": "Lynleit rescues an office worker from a building whose floors cannot be counted. His return brings seventeen days in Church custody, not an immediate return to ordinary life.",
       "meta": "v1 · Scene draft",
-      "detail": "Unplaced",
+      "detail": "Early Arc 1, while Fionn is alive",
       "detailLabel": "Placement",
       "href": "moments.html?moment=there-is-no-eleventh-floor&version=v1"
+    },
+    {
+      "id": "fionns-office-after-the-rescue",
+      "title": "After the Rescue",
+      "text": "After Lynleit rescues the trapped office worker, Fionn questions the risks she took. Her appeal to Natalia's safety advice brings an unexpected answer.",
+      "meta": "v1 · Scene outline",
+      "detail": "Early Arc 1, after the office-building rescue",
+      "detailLabel": "Placement",
+      "href": "moments.html?moment=fionns-office-after-the-rescue&version=v1"
     },
     {
       "id": "university-days-before-the-spill",
@@ -3472,7 +3518,7 @@
   "draftStatus": [
     {
       "label": "Scene drafts",
-      "count": 7,
+      "count": 6,
       "color": "#8992f9"
     },
     {
@@ -3482,7 +3528,7 @@
     },
     {
       "label": "Writer gaps",
-      "count": 1,
+      "count": 2,
       "color": "#c09c79"
     }
   ]

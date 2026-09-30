@@ -1,6 +1,8 @@
 /* Shared H Scene classifications. Canon, relevance and depiction are independent. */
 (() => {
   const records = [
+    { paths: ['story.html?chapter=the-shared-night&version=v1'], depiction: 'explicit', detail: 'Superseded draft: the kiss, domestic dream details and full briefing cast do not govern current canon; explicit sexual language; sexual acts off-page', relevance: 'exploratory', canon: 'side-content' },
+    { paths: ['moments.html?moment=the-shared-night&version=v1'], depiction: 'implied', detail: 'Superseded scene record; current continuity follows v2', relevance: 'exploratory', canon: 'side-content' },
     { paths: ['story.html?chapter=the-shared-night'], depiction: 'explicit', detail: 'Explicit sexual language; sexual acts off-page; compromised volition', relevance: 'story', canon: 'canon' },
     { paths: ['moments.html?moment=the-shared-night', 'docs.html?doc=oneiric-confluence', 'docs.html?doc=holumn-incidents-and-testimonies#the-oneiric-confluence'], depiction: 'implied', detail: 'Intimate dreams and compromised volition', relevance: 'story', canon: 'canon' },
     { paths: ['story.html?chapter=doom-has-an-address', 'moments.html?moment=doom-has-an-address', 'docs.html?doc=holumn-incidents-and-testimonies#doom-has-an-address'], depiction: 'implied', detail: 'Attempted intimacy under a life-threatening curse', relevance: 'story', canon: 'canon' },

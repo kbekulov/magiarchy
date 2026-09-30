@@ -5,9 +5,11 @@
     "title": "There Is No Eleventh Floor",
     "status": "Scene draft",
     "file": "there-is-no-eleventh-floor.md",
-    "updated": "2026-09-29",
+    "updated": "2026-09-30",
     "description": "An office worker enters a lift in a ten-floor building. Lynleit finds him on Floor Forty-Seven, with warnings written on his arm and no way home he can trust.",
-    "characters": ["Lynleit"],
+    "characters": [
+      "Lynleit"
+    ],
     "timelinePhase": null,
     "timelineLabel": "Unplaced",
     "arcLabel": "ARC 1",
@@ -16,7 +18,10 @@
       "Lynleit finds him on Floor Forty-Seven and tests the stairs, painted boundaries, airflow and door fittings instead of trusting signs.",
       "Her small silver pistol and spare magazine buy time but cannot stop the pursuer. She throws the empty pistol to interrupt its approach.",
       "She puts on protective black leather gloves and tells the witness to cover his head and skin with his jacket. After he loses it, she covers him with her blue coat.",
-      { "text": "The coat's hem and lining appear to settle around exposed skin after Lynleit steps away, suggesting an agency the witness cannot explain.", "status": "inferred" },
+      {
+        "text": "The coat's hem and lining appear to settle around exposed skin after Lynleit steps away, suggesting an agency the witness cannot explain.",
+        "status": "inferred"
+      },
       "Blue flame follows the painted boundary through the distorted stairwell. Lynleit's protected hands remain unburned, but she suffers bleeding, a split lip and tremors.",
       "They stop choosing routes, enter an elevator that appears, and return to the office at 22:55, six minutes after the witness's departure.",
       "Lynleit makes a guarded call. Church envoys examine the witness, have already contacted his relatives, and take him away.",
@@ -24,7 +29,15 @@
     ],
     "contentKind": "scene",
     "defaultVersion": "v1",
-    "versions": [{ "id": "v1", "label": "v1 · Current", "file": "there-is-no-eleventh-floor.md", "updated": "2026-09-29", "contentKind": "scene" }]
+    "versions": [
+      {
+        "id": "v1",
+        "label": "v1 · Current",
+        "file": "there-is-no-eleventh-floor.md",
+        "updated": "2026-09-29",
+        "contentKind": "scene"
+      }
+    ]
   },
   {
     "slug": "before-the-first-bell",
@@ -839,9 +852,9 @@
     "slug": "the-shared-night",
     "number": "Unplaced Chapter",
     "title": "The Shared Night",
-    "status": "Canon events · Dialogue draft",
-    "file": "the-shared-night.md",
-    "updated": "2026-09-29",
+    "status": "Canon direction · Scene draft with writer gap",
+    "file": "the-shared-night-v2.md",
+    "updated": "2026-09-30",
     "description": "A shared-dream investigation becomes painfully personal when Sherie discovers that Felix remembers the same nights. Natalia refuses to mistake a dream for a confession.",
     "characters": [
       "Natalia",
@@ -849,29 +862,41 @@
       "Kyrien",
       "Felix",
       "Sherie",
-      "Reiner",
-      "Hiyu",
-      "Yulia"
+      "Reiner"
     ],
     "timelinePhase": null,
     "timelineLabel": "Unplaced",
     "events": [
       "Independent reports describe corresponding dream memories, including violence, grief and intimate encounters, without corresponding bodily injuries.",
-      "Natalia briefs the group on the Oneiric Confluence and rejects treating dream behaviour as a confession.",
+      "Natalia briefs Lynleit, Kyrien, Felix, Sherie and Reiner on the Oneiric Confluence and rejects treating dream behaviour as a confession.",
       "Sherie discovers that Felix remembers their recurring sexual dreams. Their discussion exposes the difference between remembered participation and freely chosen action.",
-      "Lynleit and Kyrien describe a shared house, rain, tea, cards, two bedrooms and a cat.",
-      "Sherie and Felix agree to test whether they can resist the dream. Acknowledging their attachment helps them regain choice, although the pressure returns before easing again.",
-      "Once they can step away, Sherie deliberately kisses Felix. They wake, exchange messages and arrange coffee."
+      "Lynleit and Kyrien acknowledge a shared experience without recounting it to the group.",
+      "Sherie and Felix test whether they can resist the dream. Recognizing a pressure briefly restores choice, but its return prevents them from treating recognition as a reliable cure.",
+      "When they can step away, Sherie does so. They keep their agreement not to touch or kiss, then arrange coffee after waking."
     ],
-    "contentKind": "scene",
-    "defaultVersion": "v1",
+    "contentKind": "writer-gap",
+    "defaultVersion": "v2",
     "versions": [
       {
-        "id": "v1",
-        "label": "v1 · Current",
+        "slug": "the-shared-night",
+        "number": "Unplaced Chapter",
+        "title": "The Shared Night",
+        "status": "Superseded scene draft",
         "file": "the-shared-night.md",
         "updated": "2026-09-29",
-        "contentKind": "scene",
+        "description": "A shared-dream investigation becomes painfully personal when Sherie discovers that Felix remembers the same nights. Natalia refuses to mistake a dream for a confession.",
+        "characters": [
+          "Natalia",
+          "Lynleit",
+          "Kyrien",
+          "Felix",
+          "Sherie",
+          "Reiner",
+          "Hiyu",
+          "Yulia"
+        ],
+        "timelinePhase": null,
+        "timelineLabel": "Unplaced",
         "events": [
           "Independent reports describe corresponding dream memories, including violence, grief and intimate encounters, without corresponding bodily injuries.",
           "Natalia briefs the group on the Oneiric Confluence and rejects treating dream behaviour as a confession.",
@@ -879,6 +904,33 @@
           "Lynleit and Kyrien describe a shared house, rain, tea, cards, two bedrooms and a cat.",
           "Sherie and Felix agree to test whether they can resist the dream. Acknowledging their attachment helps them regain choice, although the pressure returns before easing again.",
           "Once they can step away, Sherie deliberately kisses Felix. They wake, exchange messages and arrange coffee."
+        ],
+        "contentKind": "scene",
+        "id": "v1",
+        "label": "v1 · Superseded"
+      },
+      {
+        "id": "v2",
+        "label": "v2 · Current",
+        "file": "the-shared-night-v2.md",
+        "updated": "2026-09-30",
+        "contentKind": "writer-gap",
+        "status": "Canon direction · Scene draft with writer gap",
+        "events": [
+          "Independent reports describe corresponding dream memories, including violence, grief and intimate encounters, without corresponding bodily injuries.",
+          "Natalia briefs Lynleit, Kyrien, Felix, Sherie and Reiner on the Oneiric Confluence and rejects treating dream behaviour as a confession.",
+          "Sherie discovers that Felix remembers their recurring sexual dreams. Their discussion exposes the difference between remembered participation and freely chosen action.",
+          "Lynleit and Kyrien acknowledge a shared experience without recounting it to the group.",
+          "Sherie and Felix test whether they can resist the dream. Recognizing a pressure briefly restores choice, but its return prevents them from treating recognition as a reliable cure.",
+          "When they can step away, Sherie does so. They keep their agreement not to touch or kiss, then arrange coffee after waking."
+        ],
+        "characters": [
+          "Natalia",
+          "Lynleit",
+          "Kyrien",
+          "Felix",
+          "Sherie",
+          "Reiner"
         ]
       }
     ]

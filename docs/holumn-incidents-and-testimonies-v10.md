@@ -28,8 +28,6 @@ Church special envoys collect the witness. He later recounts seventeen days in a
 
 ### Institutional readings
 
-The rescue belongs to early Arc 1, while Fionn is alive and before Kyrien's discovery of magic. Natalia informs Fionn, whose [office reprimand](../moments.html?moment=fionns-office-after-the-rescue) concerns Lynleit's readiness for the danger she entered. That conversation is separate from the witness's testimony.
-
 **Ordinary account:** Panic, exhaustion and disorientation can explain parts of the witness's behaviour. They do not account for the full rescue narrative. The Church's reframing is an intervention in what he can report, not independent disproof of his experience.
 
 **Magi and special envoys:** A Holumn imposes hostile transitions without an established single destination. The copied thresholds and inherited painted boundaries offer local counterplay. Entry conditions, the relation among the figures, repeatability of escape and eventual containment remain unknown. Nothing identifies this incident as another form of the Nameless Street or Bone Archive.
@@ -40,11 +38,11 @@ The rescue belongs to early Arc 1, while Fionn is alive and before Kyrien's disc
 
 Affected sleepers independently remember the same environments, conversations and emotionally important actions, with smaller discrepancies in details and sequence. Early reports include a customs officer shot by his supervisor in a nonexistent station, an impossible library, an accountant and secretary whose shared memories damage their working relationship, and neighbours meeting over tea and grief. These reports produce no corresponding bodily injuries. The absence of injury does not make the experience psychologically harmless.
 
-During [Natalia's briefing](../story.html?chapter=the-shared-night), Sherie discovers that Felix remembers their recurring intimate dreams. Hiyu and Yulia do not attend. Lynleit and Kyrien acknowledge a shared experience whose particulars remain unwritten. Independent witness reports, rather than the superseded cast anecdotes, establish the range of intimate, violent and ordinary dream material.
+During [Natalia's briefing](../story.html?chapter=the-shared-night), Sherie discovers that Felix remembers their recurring intimate dreams. Yulia reports Hiyu's dream attack with a filing cabinet. Lynleit and Kyrien describe a quiet house beside water. The variety prevents intimacy, aggression or domestic imagery from becoming a universal explanation.
 
 Personality persists while ordinary inhibition and the ability to refuse weaken. The dreamer may recognize an unwanted impulse and still enact it. Natalia considers weakened censorship, a shared imaginal field and the Holumn's selective intensification as competing explanations. Overlapping sleep does not establish a shared clock. No common vector, location, object or deliberate targeting has been found in the initial reports.
 
-Sherie and Felix later find that naming a pressure can restore a gap between impulse and action. The pressure returns before easing again. Sherie steps away when she can; neither kisses the other. Their experience supports a limited recognition response, not a reliable cure; Natalia has not received that final account within the chapter. Dream behaviour does not prove fixed preferences or waking intentions.
+Sherie and Felix later find that naming a pressure can restore a gap between impulse and action. The pressure returns before easing again. They can step away before choosing a kiss. Their experience supports a limited recognition response, not a reliable cure; Natalia has not received that final account within the chapter. Dream behaviour does not prove fixed preferences or waking intentions.
 
 An echo continuing after one participant wakes is a research possibility, not observed testimony. The [full research record](../docs.html?doc=oneiric-confluence) preserves the competing hypotheses, Natalia's teaching, cast accounts and unresolved limits. Chronology remains unplaced; see [the Moment](../moments.html?moment=the-shared-night).
 

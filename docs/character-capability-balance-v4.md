@@ -22,8 +22,6 @@ In [There Is No Eleventh Floor](../story.html?chapter=there-is-no-eleventh-floor
 
 The inherited painted boundary and distorted space belong to HI-010's local evidence. Do not give Lynleit general spatial control, a universal fire barrier against Holumns, or a guaranteed escape by refusing choices. Her hypothesis works well enough to attempt this rescue; its full explanation remains open. Capability scores are unchanged, and the wider duration and recovery questions below remain unanswered beyond this instance.
 
-Fionn's [office reprimand](../moments.html?moment=fionns-office-after-the-rescue) follows the rescue in early Arc 1. He doubts Lynleit's readiness for that degree of danger; her effective rescue does not settle his objection to the risk. Natalia's safety advice informs Lynleit's defence, but Natalia is also the person who tells him what happened. Do not turn this into a general loss of capability or a new guarantee supplied by the instructions.
-
 ## Capability questions
 
 These questions define what each character can do, what they cannot do, and why another character remains necessary. Confidence measures how much of the answer is already established elsewhere on the site.

@@ -163,10 +163,3 @@ Use the [Cognition and Physical Competence reference](../docs.html?doc=character
 **Blocking and straight-person contrast:** Reiner holds doors, waits with Fionn, and calls Felix away. His restraint makes Felix conspicuous without another stream of jokes. Track the tie and the Bible through the exchange. The nun's ordinary request for her book interrupts the escalation; Lynleit returns it while still holding Felix's tie. See the [Moment](../moments.html?moment=only-eyes-for-you).
 
 **Limit:** the recurring visits, four participants, contrast, and eventual irritation are author-confirmed. The exact dialogue around the illustrated lines remains a scene draft. Do not invent Fionn's reaction, the substance of the church business, or exact chronology. Felix's wider flirting does not erase his fixation on Lynleit, and her correction is not reciprocal desire. No new physical or magical capability follows from the slapstick.
-
-
-## The Shared Night v2: author correction, 30 September 2026
-
-Preserve the briefing's specific jokes and Natalia's distinctions while removing Hiyu and Yulia, the kiss and the settled domestic-dream account. Sherie uses recovered choice to keep distance; her enjoyment of Felix does not become a romantic commitment. Keep the nonsexual emotional direction for Lynleit and Kyrien as a writer gap until its events are chosen. Their childhood histories must not be invented for an emotional payoff. These are scene decisions, not a new universal style rule.
-
-The office reprimand after There Is No Eleventh Floor is recorded as an outline. Its perspective must remain separate from the bystander's first-person testimony. The cat chase is a possible continuation, not yet a fixed next scene.

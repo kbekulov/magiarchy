@@ -132,19 +132,17 @@ This writer reference separates what happens from what a character knows and wha
 
 ## The Shared Night
 
-**Event period:** Unplaced, after Kyrien's river revelation and Sherie's still-undrafted discovery of magic. V2 is current. V1's kiss, domestic-dream particulars and Hiyu/Yulia participation are superseded.
+**Event period:** Unplaced. The main events are canon: Natalia's group briefing, Sherie and Felix's recurring dreams and chosen kiss, and Lynleit and Kyrien's domestic dream. Exact dialogue remains draft. None has been assigned a numbered Story phase or a place among the couples' waking sexual milestones.
 
-**Reader:** Matching recollections establish shared experience and compromised choice. In the test dream, Sherie steps away when she can and keeps the no-kissing agreement. Recognition helps temporarily; it does not establish a reliable cure. Lynleit and Kyrien acknowledge an experience, but its details are a writer gap, not a concealed scene the reader can reconstruct.
+**Reader:** The chapter supplies matching recollections and the participants' loss of choice, then shows Sherie and Felix able to step away before the kiss. Their accusations about each other's preferences remain accusations. Correspondence does not prove real-time contact or universal truthfulness. The possible echo after waking belongs to research questions, not shown events.
 
-**Characters:** Sherie initially believes the dreams private; Felix suspects correspondence earlier. Natalia, Lynleit, Kyrien, Felix, Sherie and Reiner attend the briefing. Hiyu and Yulia remain outsiders to the magic discussion. Natalia has not received Sherie and Felix's final account within the Chapter.
+**Characters:** Sherie initially thinks the dreams are private; Felix suspects their shared nature earlier. The red room and black-water details expose the correspondence during the briefing. The group hears about both couples' dreams, but does not witness the later kiss or receive a confirmed account of it on-page. Sherie and Felix remember that choice and arrange coffee. Natalia has not yet received their final report. Kyrien already knows about magic; the chapter cannot precede his river revelation. Sherie has learned enough by the briefing to discuss a Holumn, but her first discovery is not depicted here.
 
-**Direction, not shown evidence:** A nonsexual, painful or emotionally exposing dream may unintentionally deepen Lynleit and Kyrien's connection. Childhood disclosures are one possible approach, not established facts.
-
-**Source:** [Chapter v2](../story.html?chapter=the-shared-night&version=v2), [Moment v2](../moments.html?moment=the-shared-night&version=v2), [research record](../docs.html?doc=oneiric-confluence).
+**Source:** [Chapter v1](../story.html?chapter=the-shared-night&version=v1), [Moment v1](../moments.html?moment=the-shared-night&version=v1), [research record](../docs.html?doc=oneiric-confluence).
 
 ## There Is No Eleventh Floor
 
-**Event period:** Early Arc 1, while Fionn is alive and before Kyrien discovers magic at the river. The coat substitution has occurred; Lynleit does not discover its nature until the established later point. No numbered phase is assigned. Fionn, Lynleit and Natalia are the Magi in this early part of the cast; Myka and Lester have not entered it. Do not give later participants knowledge they have not yet acquired.
+**Event period:** Arc 1, after Fionn substitutes the coat and before Lynleit discovers its nature. No numbered phase is assigned; its relation to Fionn's death and the river operation remains open.
 
 **Reader:** The first-person witness experiences conflicting clocks, repeated rooms, lures, gunfire, gloves, shelter and blue flame. He notices the coat moving but cannot explain it. The preface marks its apparent independent cooperation as an inference, not an on-page revelation of leviathan hide. The archive knows that it chooses to cooperate. Lynleit's refusal to choose another route precedes escape, but does not prove her hypothesis of the whole phenomenon.
 
@@ -153,12 +151,6 @@ This writer reference separates what happens from what a character knows and wha
 **Aftermath:** The pistol is left behind. The gloves prevent burns, not exertion: a nosebleed, split lip and tremors are the scene's small recoverable cost. Lynleit expects healing in days. The witness's seventeen-day stay and later recollection are retrospective passages in his own account, not objective proof that the Church erased or replaced him. The woman across the railway platform is not positively identified.
 
 **Source:** [Chapter](../story.html?chapter=there-is-no-eleventh-floor), [Moment](../moments.html?moment=there-is-no-eleventh-floor), [gloves](../items.html?item=lynleits-protective-gloves), [coat](../items.html?item=leviathan-hide-coat).
-
-## After the rescue: Fionn's office
-
-**Recorded outline:** Fionn questions Lynleit's judgment after the rescue, not her decision to value the bystander's life. She cites Natalia's safety instructions; he reveals that Natalia reported the event. His assessment of her readiness is his judgment, not an objective statement that all her actions failed. Natalia knows enough to notify him; the route by which she learned of the rescue is not established.
-
-**Possible continuation:** Lynleit could leave irritated, find relief in chasing Ash, then risk herself again on the roof. Immediate adjacency is a proposal, not confirmed chronology. The bystander cannot narrate the office exchange from personal knowledge.
 
 ## Table evidence checks
 

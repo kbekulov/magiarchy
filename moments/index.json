@@ -6,7 +6,7 @@
     "status": "Scene draft",
     "placementStatus": "Unplaced",
     "timelinePhase": null,
-    "timelineLabel": "Unplaced",
+    "timelineLabel": "Early Arc 1, while Fionn is alive",
     "arcLabel": "ARC 1",
     "sequence": 30,
     "sceneType": "Holumn rescue and witness handoff",
@@ -14,31 +14,86 @@
     "location": "A ten-floor office building; a monastery; a railway platform",
     "summary": "Lynleit rescues an office worker from a building whose floors cannot be counted. His return brings seventeen days in Church custody, not an immediate return to ordinary life.",
     "purpose": "Follow an ordinary witness through immediate fear, practical rescue and the uncertainty of institutional protection.",
-    "characters": [{ "name": "Lynleit", "slug": "lynleit" }],
+    "characters": [
+      {
+        "name": "Lynleit",
+        "slug": "lynleit"
+      }
+    ],
     "characterAnchors": [],
     "known": [
       "The witness encounters repeated rooms, impossible floor numbers, luring voices and conflicting clocks.",
       "Lynleit tests physical traces and observed boundaries, makes a wrong choice at one door, and changes course.",
       "The compact silver pistol and a spare magazine cannot stop the pursuer; the empty weapon becomes a thrown distraction.",
       "Lynleit wears protective gloves. The witness first tries his jacket, then shelters beneath her coat when the jacket is lost.",
-      { "text": "The unexplained movement of the covering suggests that the coat cooperates independently.", "status": "inferred" },
+      {
+        "text": "The unexplained movement of the covering suggests that the coat cooperates independently.",
+        "status": "inferred"
+      },
       "The blue boundary delays the pursuer. Lynleit's hands remain unburned, but she bleeds and trembles.",
       "A pause in choosing routes precedes the elevator's return; the incident does not establish a guaranteed escape method.",
       "Church envoys collect the witness. He later recounts seventeen days in a monastery and lasting fear of elevators."
     ],
     "openQuestions": [
-      "Where in Arc 1 does this occur after the coat substitution and before Lynleit learns its nature?",
+      "Where within early Arc 1 does the rescue fall, and how soon afterward does Fionn speak to Lynleit?",
       "What selects a victim or admits a rescuer, and do the figures belong to one Holumn?",
       "Why do some painted boundaries hold, and can refusing routes ever reproduce the escape?",
       "Is the railway-platform woman Lynleit, and how much of the witness's later uncertainty follows trauma or Church intervention?"
     ],
-    "continuityBefore": "Fionn has already substituted the leviathan-hide coat. Lynleit still does not know its material or agency. Its later discovery remains in the middle of Arc 1 after his death; the incident's relation to his death is not fixed.",
-    "continuityAfter": "The witness spends seventeen days in Church custody and later returns to work. Lynleit expects her superficial injury to heal in a few days. The pistol remains inside the manifestation; no recovery is recorded.",
+    "continuityBefore": "Early Arc 1, while Fionn is alive and before Kyrien learns about magic at the river. Fionn has already substituted the coat, whose material and agency remain unknown to Lynleit. Natalia is her established adviser; Myka and Lester have not entered this part of the story.",
+    "continuityAfter": "Natalia informs Fionn. He reprimands Lynleit in his office for the danger she undertook, not for saving the witness. The witness spends seventeen days in Church custody. Lynleit expects her superficial injury to heal in days; the pistol remains inside the manifestation.",
     "chapterSlug": "there-is-no-eleventh-floor",
     "chapterVersion": "v1",
-    "updated": "2026-09-29",
+    "updated": "2026-09-30",
     "defaultVersion": "v1",
-    "versions": [{ "id": "v1", "label": "v1 · Current", "updated": "2026-09-29" }]
+    "versions": [
+      {
+        "id": "v1",
+        "label": "v1 · Current",
+        "updated": "2026-09-29"
+      }
+    ]
+  },
+  {
+    "slug": "fionns-office-after-the-rescue",
+    "code": "MOM-031",
+    "title": "After the Rescue",
+    "status": "Scene outline",
+    "contentKind": "outline",
+    "placementStatus": "Unplaced",
+    "timelinePhase": null,
+    "timelineLabel": "Early Arc 1, after the office-building rescue",
+    "arcLabel": "ARC 1",
+    "sequence": 31,
+    "sceneType": "Father and daughter",
+    "thread": "Lynleit's judgment; Fionn and Natalia",
+    "location": "Fionn's office",
+    "summary": "After Lynleit rescues the trapped office worker, Fionn questions the risks she took. Her appeal to Natalia's safety advice brings an unexpected answer.",
+    "purpose": "Show the distance between Lynleit's confidence and Fionn's assessment of her readiness, without treating rescue as wrongdoing.",
+    "characters": [
+      {
+        "name": "Lynleit",
+        "slug": "lynleit"
+      },
+      {
+        "name": "Fionn",
+        "slug": "fionn"
+      }
+    ],
+    "characterAnchors": [],
+    "known": [
+      "Fionn reprimands Lynleit in his office after the elevator and stairwell rescue.",
+      "He is concerned about the recklessness and danger, not angry that she saved a bystander. He does not yet consider her capable enough as a Magus to survive such situations competently.",
+      "Lynleit defends herself by citing clear and practical safety instructions from Natalia.",
+      "Fionn surprises her by revealing that Natalia herself notified him of the incident."
+    ],
+    "openQuestions": [
+      "How soon after the rescue does the office conversation occur?",
+      "Does Lynleit's pursuit of Ash immediately follow this conversation?"
+    ],
+    "continuityBefore": "The office-building rescue has occurred. Fionn is alive; Natalia and Lynleit are the other established Magi in this early part of the story. Myka and Lester have not entered it, and Kyrien has not yet discovered magic.",
+    "continuityAfter": "The timing of the cat chase relative to the reprimand is not established.",
+    "updated": "2026-09-30"
   },
   {
     "slug": "university-days-before-the-spill",
@@ -4739,7 +4794,7 @@
     "slug": "the-shared-night",
     "code": "MOM-029",
     "title": "The Shared Night",
-    "status": "Canon events · Scene draft",
+    "status": "Canon direction · Scene draft with writer gap",
     "placementStatus": "Unplaced",
     "timelinePhase": null,
     "timelineLabel": "Unplaced",
@@ -4747,8 +4802,8 @@
     "sceneType": "Shared-dream investigation",
     "thread": "The Oneiric Confluence; Sherie and Felix",
     "location": "Vilen; a briefing room; shared dream environments",
-    "summary": "Natalia investigates corresponding dreams. Sherie and Felix confront their remembered intimacy, while Lynleit and Kyrien report a quiet house by water.",
-    "purpose": "Investigate compromised volition without treating dream behaviour as a confession, and distinguish Sherie and Felix’s chosen kiss from the preceding compulsion.",
+    "summary": "Natalia investigates corresponding dreams. Sherie and Felix confront their remembered intimacy and attempt to preserve their ordinary company.",
+    "purpose": "Distinguish imposed dream activity from choices made when refusal becomes possible; keep Sherie's restraint separate from the unresolved emotional exposure between Lynleit and Kyrien.",
     "characters": [
       {
         "name": "Natalia",
@@ -4773,42 +4828,108 @@
       {
         "name": "Reiner",
         "slug": "reiner"
-      },
-      {
-        "name": "Hiyu",
-        "slug": "hiyu"
-      },
-      {
-        "name": "Yulia",
-        "slug": "yulia"
       }
     ],
     "characterAnchors": [],
     "known": [
       "Independent reports describe corresponding dream memories, including violence, grief and intimate encounters, without corresponding bodily injuries.",
-      "Natalia briefs the group on the Oneiric Confluence and rejects treating dream behaviour as a confession.",
+      "Natalia briefs Lynleit, Kyrien, Felix, Sherie and Reiner on the Oneiric Confluence and rejects treating dream behaviour as a confession.",
       "Sherie discovers that Felix remembers their recurring sexual dreams. Their discussion exposes the difference between remembered participation and freely chosen action.",
-      "Lynleit and Kyrien describe a shared house, rain, tea, cards, two bedrooms and a cat.",
-      "Sherie and Felix agree to test whether they can resist the dream. Acknowledging their attachment helps them regain choice, although the pressure returns before easing again.",
-      "Once they can step away, Sherie deliberately kisses Felix. They wake, exchange messages and arrange coffee."
+      "Lynleit and Kyrien acknowledge a shared experience without recounting it to the group.",
+      "Sherie and Felix test whether they can resist the dream. Recognizing a pressure briefly restores choice, but its return prevents them from treating recognition as a reliable cure.",
+      "When they can step away, Sherie does so. They keep their agreement not to touch or kiss, then arrange coffee after waking."
     ],
     "openQuestions": [
       "Where does the incident fall within the Story, and relative to the couples’ waking intimacy?",
       "How did Sherie first learn about magic, and who admitted her to this investigation?",
       "What selects participants, and how do overlapping sleep and waking chronology affect contact?",
-      "What makes recognition effective or ineffective, and does a dream continue with an echo after someone wakes?"
+      "What makes recognition effective or ineffective, and does a dream continue with an echo after someone wakes?",
+      "What nonsexual, painful or emotionally exposing experience do Lynleit and Kyrien share, and what do they each learn? Childhood disclosures remain one possible direction."
     ],
     "continuityBefore": "Sherie and Felix have developed familiarity through repeated professional encounters. Kyrien already knows about magic; Sherie knows enough by the briefing to participate in the investigation.",
-    "continuityAfter": "Sherie and Felix remember a kiss chosen after the pressure eases and arrange coffee. Their longer-term response, Felix’s attachment to Lynleit and the incident’s resolution remain open.",
+    "continuityAfter": "Sherie and Felix keep their no-kissing agreement and arrange coffee. She wants their gradually sexual connection to remain stable, professional and plausibly deniable. Lynleit and Kyrien's dream particulars are not settled.",
     "chapterSlug": "the-shared-night",
-    "chapterVersion": "v1",
-    "updated": "2026-09-29",
-    "defaultVersion": "v1",
+    "chapterVersion": "v2",
+    "updated": "2026-09-30",
+    "defaultVersion": "v2",
     "versions": [
       {
+        "slug": "the-shared-night",
+        "code": "MOM-029",
+        "title": "The Shared Night",
+        "status": "Superseded scene draft",
+        "placementStatus": "Unplaced",
+        "timelinePhase": null,
+        "timelineLabel": "Unplaced",
+        "sequence": 29,
+        "sceneType": "Shared-dream investigation",
+        "thread": "The Oneiric Confluence; Sherie and Felix",
+        "location": "Vilen; a briefing room; shared dream environments",
+        "summary": "Natalia investigates corresponding dreams. Sherie and Felix confront their remembered intimacy, while Lynleit and Kyrien report a quiet house by water.",
+        "purpose": "Investigate compromised volition without treating dream behaviour as a confession, and distinguish Sherie and Felix’s chosen kiss from the preceding compulsion.",
+        "characters": [
+          {
+            "name": "Natalia",
+            "slug": "natalia"
+          },
+          {
+            "name": "Lynleit",
+            "slug": "lynleit"
+          },
+          {
+            "name": "Kyrien",
+            "slug": "kyrien"
+          },
+          {
+            "name": "Felix",
+            "slug": "felix"
+          },
+          {
+            "name": "Sherie",
+            "slug": "sherie"
+          },
+          {
+            "name": "Reiner",
+            "slug": "reiner"
+          },
+          {
+            "name": "Hiyu",
+            "slug": "hiyu"
+          },
+          {
+            "name": "Yulia",
+            "slug": "yulia"
+          }
+        ],
+        "characterAnchors": [],
+        "known": [
+          "Independent reports describe corresponding dream memories, including violence, grief and intimate encounters, without corresponding bodily injuries.",
+          "Natalia briefs the group on the Oneiric Confluence and rejects treating dream behaviour as a confession.",
+          "Sherie discovers that Felix remembers their recurring sexual dreams. Their discussion exposes the difference between remembered participation and freely chosen action.",
+          "Lynleit and Kyrien describe a shared house, rain, tea, cards, two bedrooms and a cat.",
+          "Sherie and Felix agree to test whether they can resist the dream. Acknowledging their attachment helps them regain choice, although the pressure returns before easing again.",
+          "Once they can step away, Sherie deliberately kisses Felix. They wake, exchange messages and arrange coffee."
+        ],
+        "openQuestions": [
+          "Where does the incident fall within the Story, and relative to the couples’ waking intimacy?",
+          "How did Sherie first learn about magic, and who admitted her to this investigation?",
+          "What selects participants, and how do overlapping sleep and waking chronology affect contact?",
+          "What makes recognition effective or ineffective, and does a dream continue with an echo after someone wakes?",
+          "What nonsexual, painful or emotionally exposing experience do Lynleit and Kyrien share, and what do they each learn? Childhood disclosures remain one possible direction."
+        ],
+        "continuityBefore": "Sherie and Felix have developed familiarity through repeated professional encounters. Kyrien already knows about magic; Sherie knows enough by the briefing to participate in the investigation.",
+        "continuityAfter": "Sherie and Felix remember a kiss chosen after the pressure eases and arrange coffee. Their longer-term response, Felix’s attachment to Lynleit and the incident’s resolution remain open.",
+        "chapterSlug": "the-shared-night",
+        "chapterVersion": "v1",
+        "updated": "2026-09-29",
         "id": "v1",
-        "label": "v1 · Current",
-        "updated": "2026-09-29"
+        "label": "v1 · Superseded"
+      },
+      {
+        "id": "v2",
+        "label": "v2 · Current",
+        "updated": "2026-09-30",
+        "chapterVersion": "v2"
       }
     ]
   }

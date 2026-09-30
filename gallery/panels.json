@@ -51,6 +51,10 @@
       {
         "id": "study-9",
         "title": "The reflection: painted study"
+      },
+      {
+        "id": "study-10",
+        "title": "Beneath the strings"
       }
     ],
     "panels": [
@@ -170,6 +174,19 @@
         "bytes": 2981612,
         "display": "media/gallery/previews/panels/anima-meets-female-cast-panel-9-display.webp",
         "thumbnail": "media/gallery/previews/panels/anima-meets-female-cast-panel-9-thumbnail.webp"
+      },
+      {
+        "id": "panel-10",
+        "beat": "study-10",
+        "label": "Study 10",
+        "title": "Beneath the strings",
+        "src": "media/gallery/panels/anima-meets-female-cast/anima-meets-female-cast-panel-10-beneath-the-strings.png",
+        "alt": "Anima reclines on a red sofa and gestures toward Lynleit holding a teacup, Sherie leaning on the sofa and Yulia clutching a notebook. Behind them, Anima's shadow holds strings attached to the three women's shadows.",
+        "width": 1536,
+        "height": 1024,
+        "bytes": 2359019,
+        "display": "media/gallery/previews/panels/anima-meets-female-cast-panel-10-display.webp",
+        "thumbnail": "media/gallery/previews/panels/anima-meets-female-cast-panel-10-thumbnail.webp"
       }
     ],
     "sceneSummary": [

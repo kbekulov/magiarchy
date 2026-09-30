@@ -40,7 +40,7 @@ Natalia draws overlapping circles to explain the second possibility. "A relation
 
 ## Recognition and its limits
 
-Consciously identifying and expressing a pressure can sometimes restore a gap between impulse and action. It need not remove the image, desire, anger or danger, and it does not necessarily wake either person. Sherie and Felix experience a release, renewed pressure and another release. When they can step away, Sherie does so and they keep their agreement not to touch or kiss.
+Consciously identifying and expressing a pressure can sometimes restore a gap between impulse and action. It need not remove the image, desire, anger or danger, and it does not necessarily wake either person. Sherie and Felix experience a release, renewed pressure and another release. Their eventual ability to step away precedes their deliberately chosen kiss.
 
 Natalia's proposed explanation is: "An unconscious content does not need to seize consciousness as violently once consciousness agrees to see it."
 
@@ -64,17 +64,17 @@ Their recurring sexual dreams begin before either consciously initiates those en
 
 They quarrel, joke and try to assign the embarrassing material to each other. Those accusations are not findings. Their later conversation also recalls an ordinary tender interval, when she slept against him and asked whether he was still there.
 
-They agree to test whether they can refrain from touching or kissing. Inside the next dream, acknowledging their enjoyment of one another's company helps them notice a change in the pressure. When it eases again, Sherie steps away. They keep their agreement not to touch or kiss, then arrange coffee after waking. She wants to preserve their company without encouraging emotional dependency. It does not establish that Felix's attachment to Lynleit has disappeared, that they form an official couple, or when their waking sexual intimacy begins.
+They agree to test whether they can refrain from touching or kissing. Inside the next dream, acknowledging how each can feel absent even in the other's company helps them notice a change in the pressure. After it eases enough for them to leave one another alone, Sherie chooses to pull him closer and kiss him. The scene ends with their usual provocation, a waking exchange of messages and an arrangement for coffee. It does not establish that Felix's attachment to Lynleit has disappeared, that they form an official couple, or when their waking sexual intimacy begins.
 
 The chapter uses explicit sexual language but keeps the sexual acts off-page. Its humour belongs to these people handling exposure badly; the Holumn itself is not limited to comic or intimate outcomes.
 
 ### Lynleit and Kyrien
 
-Their shared experience remains unspecified. The current direction is nonsexual, painful or emotionally exposing, unintentionally drawing them closer. Mutual disclosure of childhood trauma is a possibility for development, not an event the Chapter has established. The earlier house and its furnishings are not current evidence.
+They share a quiet house beside water, rain, tea, cards, two bedrooms and a cat. No overt sexual encounter occurs. The house may matter as ordinary companionship, but the furnishings do not prove a wish for marriage, predict their children or move their established sexual milestones. Natalia allows the house to remain a house rather than immediately reducing every object to a symbol.
 
-### Reiner, Hiyu and Yulia
+### Hiyu, Yulia and Reiner
 
-Reiner attends the briefing. Hiyu and Yulia do not: they remain outsiders to the magic discussion. The filing-cabinet dream from the earlier draft is not current incident evidence.
+Yulia reports Hiyu throwing a filing cabinet down stairs at her while calling it an experiment. Hiyu's recognition of his own vocabulary does not make attempted murder his waking intention. Yulia's precise, forensic handling of the discussion remains funny without making her prudish or helplessly embarrassed. Reiner observes the briefing, then leaves when the contrast between the dreams becomes too much for him.
 
 ## Natalia and Lynleit
 

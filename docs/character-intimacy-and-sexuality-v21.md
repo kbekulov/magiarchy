@@ -6,9 +6,9 @@ A writer's reference to affection, attraction, initiative, and particular partne
 
 The main events of [The Shared Night](../story.html?chapter=the-shared-night) are canon, with exact dialogue and chronology still draft. Sherie and Felix experience recurring sexual dreams under the Oneiric Confluence before consciously choosing such encounters. Their matching memories expose what Sherie believed private. Neither the compulsion nor their accusations establishes a fixed preference, a waking intention or the ownership of a particular dream action.
 
-Their familiar teasing survives the embarrassment. A tender recollection alarms Sherie because she recognizes the risk of emotional dependency, both his and her own. When the dream releases them enough to step apart, she does so. They do not kiss in the dream or afterward. Coffee and ordinary work remain possible without treating the dream as a declaration.
+Their familiar teasing survives the embarrassment, but a quieter recollection also matters: sleeping against him, she asks whether he is still there. Later they agree to try refusing the dream. Naming their attachment sometimes loosens its pressure; only after they can step away does Sherie deliberately kiss Felix. That choice is a new confirmed encounter, not an automatic end to his fixation on Lynleit or the beginning of a formal partnership. Its relationship to waking intimacy and their later private code is not fixed.
 
-Lynleit and Kyrien's dream particulars are unresolved. The author favors a nonsexual, painful or emotionally exposing experience that draws them closer unintentionally. Childhood disclosures are a possible means, not a confirmed event. The earlier domestic setting is superseded. Keep this direction separate from Doom and their later physical milestones.
+Lynleit and Kyrien's shared house contains rain, tea, cards, two bedrooms and a cat, without an overt sexual encounter. Keep it separate from Doom, the later park encounter and subsequent physical milestones. Do not translate the furnishings into a marriage prediction or reveal their future children through the dream.
 
 The chapter contains explicit sexual language; the sexual acts stay off-page. The [Holumn research record](../docs.html?doc=oneiric-confluence) distinguishes weakened volition, three competing hypotheses, possible echoes and the limits of recognition. Other psychological dangers remain important even where the cast's embarrassment is funny.
 
@@ -43,10 +43,6 @@ Do not repeatedly announce desire, infer it from every close bond, or fill an un
 Doom Has an Address follows v7. Lynleit and Kyrien survive after an incomplete attempt at intimacy. The hotel refuge precedes Doom, which belongs in the later part of Arc 1's second half. Months later, the park encounter establishes successful oral intimacy. First intercourse is a separate later milestone; its exact placement is unresolved.
 
 ## Two relationship directions
-
-**Author clarification, 30 September 2026.** Sherie deeply enjoys Felix's company, and he enjoys hers. As their connection gradually becomes sexual, she tries to minimize emotional entanglement and keep it stable, professional and plausibly deniable. She understands the danger of making him dependent on her and considers becoming dependent on him still worse. She does not kiss him, inside or outside dreams. Her restraint does not erase enjoyment or care. Earlier language about growing attachment describes a danger she resists, not a conventional romance she intends to pursue.
-
-Lynleit and Kyrien provide a contrast: their connected dream may expose something painful and build an emotional bond neither intended. What happens remains undecided; do not invent childhood trauma to complete the contrast.
 
 **Author-confirmed direction, 12 September 2026.** Sherie and Felix have no meaningful personal relationship at the opening. Her diplomatic responsibilities increasingly overlap with his work around Lynleit and MSF. Repeated assignments bring familiarity, respect, private jokes, and an unexpectedly compatible rhythm before either chooses personal closeness. Lynleit, by contrast, deliberately recruits Kyrien for strategic reasons and cannot anticipate the emotional consequences.
 

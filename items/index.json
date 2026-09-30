@@ -11,24 +11,60 @@
       "recordType": "Magecraft protection",
       "status": "Carried by Lynleit",
       "summary": "Special black leather gloves protect Lynleit's skin during outbursts of her blue flame. She keeps them draped over her belt, usually hidden beneath her coat.",
-      "holder": { "name": "Lynleit", "slug": "lynleit" },
+      "holder": {
+        "name": "Lynleit",
+        "slug": "lynleit"
+      },
       "material": "Black leather; protective construction unspecified",
       "image": null,
-      "forms": [{ "name": "Pair of black leather gloves", "detail": "Carried together over the belt and pulled on before a blue-flame outburst." }],
+      "forms": [
+        {
+          "name": "Pair of black leather gloves",
+          "detail": "Carried together over the belt and pulled on before a blue-flame outburst."
+        }
+      ],
       "properties": [
-        { "name": "Skin protection", "detail": "The gloves protect the skin they cover from Lynleit's blue flame. She relies on them rather than accepting burns as a normal cost of competent use." },
-        { "name": "Practical preparation", "detail": "She checks the gloves and cuffs before using the flame. A nearby person still needs separate coverage." }
+        {
+          "name": "Skin protection",
+          "detail": "The gloves protect the skin they cover from Lynleit's blue flame. She relies on them rather than accepting burns as a normal cost of competent use."
+        },
+        {
+          "name": "Practical preparation",
+          "detail": "She checks the gloves and cuffs before using the flame. A nearby person still needs separate coverage."
+        }
       ],
       "limits": [
         "Unprotected or carelessly exposed skin risks damage and scarring.",
         "The gloves do not remove the strain of using blue flame or protect an uncovered bystander.",
         "Their maker, construction, acquisition and limits against other forces are unknown."
       ],
-      "chronology": [{ "arc": "Arc 1", "phase": "Before the coat's discovery; exact position unknown", "title": "The office-building rescue", "detail": "Lynleit uses the gloves while sheltering an office worker beneath her coat. Her hands remain unburned, though the exertion leaves bleeding and tremors." }],
+      "chronology": [
+        {
+          "arc": "Arc 1",
+          "phase": "Early Arc 1, while Fionn is alive",
+          "title": "The office-building rescue",
+          "detail": "Lynleit uses the gloves while sheltering an office worker beneath her coat. Her hands remain unburned, though the exertion leaves bleeding and tremors."
+        }
+      ],
       "storyLinks": [
-        { "label": "Chapter", "title": "There Is No Eleventh Floor", "href": "story.html?chapter=there-is-no-eleventh-floor", "detail": "The gloves and separate witness covering are used before the flame boundary." },
-        { "label": "Moment", "title": "The office-building rescue", "href": "moments.html?moment=there-is-no-eleventh-floor", "detail": "The rescue, its cost and the Church handoff." },
-        { "label": "Character", "title": "Lynleit", "href": "character.html?character=lynleit#equipment-title", "detail": "Her belt-carried protection for blue flame." }
+        {
+          "label": "Chapter",
+          "title": "There Is No Eleventh Floor",
+          "href": "story.html?chapter=there-is-no-eleventh-floor",
+          "detail": "The gloves and separate witness covering are used before the flame boundary."
+        },
+        {
+          "label": "Moment",
+          "title": "The office-building rescue",
+          "href": "moments.html?moment=there-is-no-eleventh-floor",
+          "detail": "The rescue, its cost and the Church handoff."
+        },
+        {
+          "label": "Character",
+          "title": "Lynleit",
+          "href": "character.html?character=lynleit#equipment-title",
+          "detail": "Her belt-carried protection for blue flame."
+        }
       ]
     },
     {
@@ -102,9 +138,9 @@
       "chronology": [
         {
           "arc": "Arc 1",
-          "phase": "Before Lynleit discovers the substitution; exact position unknown",
+          "phase": "Early Arc 1, before the river revelation",
           "title": "Quiet cooperation",
-          "detail": "Lynleit throws the coat over a witness before a blue-flame outburst. Its edges settle around him of their own accord. He notices something he cannot explain; Lynleit still does not know the garment's nature. The rescue's order relative to the river operation is unknown."
+          "detail": "Lynleit throws the coat over a witness before a blue-flame outburst. Its edges settle around him of their own accord. He notices something he cannot explain; Lynleit still does not know the garment's nature. The rescue occurs early in Arc 1, while Fionn is alive and before Kyrien's river revelation."
         },
         {
           "arc": "Arc 1",
