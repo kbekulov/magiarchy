@@ -20,14 +20,6 @@ Keep the directory and its files private, Git-ignored and outside public search,
 
 In each generation brief, identify the selected face-and-hair package separately from body, clothing and scene references. Review both the face and hair against it before accepting an image. Applying this package does not transfer unrelated costume, background, body proportions or story events from the reference. For a localized edit, preserve the existing composition and all unrequested details.
 
-## Mandatory proportion lock for existing images
-
-When applying references to an existing image, the original target controls its body and head proportions. This is a high-priority rule, not an optional preference. Preserve head size and position, head-to-body ratio, neck length, shoulder width, torso length, waist and hip shape, limb lengths, pose, camera and framing unless the author explicitly requests a change to them.
-
-Fit the selected face-and-hair package within the target's existing head scale and perspective. A close-up reference must not enlarge the head, shorten the body or import its own body proportions. The requested hair silhouette can change without changing the underlying skull scale. Preserve costume, hands, feet, background and all other unrequested details.
-
-Compare original and edited images at the same display scale, checking the skull and chin placement, shoulders, hips, knees and feet. Matching canvas dimensions alone does not demonstrate matching proportions. Reject or revise visible drift before accepting the result. Describe verification honestly: a visual match is not proof that every unedited pixel is identical. Keep test edits private and preserve the source until publication is approved.
-
 ## Anima's three roles
 
 Anima, unofficially nicknamed <span data-no-entity-links>Inanna</span>, has three distinct roles: the author's personal mascot, a symbolic expression of the project's tonal world, and the female anatomical production template. None makes her a character in story canon. [Thematic Direction](../docs.html?doc=thematic-direction) owns the symbolic role and distinguishes it from the Cult of Inanna.

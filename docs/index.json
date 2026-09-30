@@ -276,11 +276,11 @@
     "topic": "Visual Production Standard",
     "file": "character-image-production.md",
     "updated": "2026-09-30",
-    "description": "Mandatory whole face-and-hair reference packages, approved templates and visual continuity.",
+    "description": "Mandatory face-and-hair packages and preservation of original body and head proportions in reference-based edits.",
     "speakers": [
       "Author's Desk"
     ],
-    "defaultVersion": "v14",
+    "defaultVersion": "v15",
     "versions": [
       {
         "id": "v1",
@@ -375,10 +375,17 @@
       },
       {
         "id": "v14",
-        "label": "v14 · Current",
-        "file": "character-image-production.md",
+        "label": "v14 · Archived",
+        "file": "character-image-production-v14.md",
         "updated": "2026-09-30",
         "description": "Apply each selected character reference as a whole face-and-hair package, preserving its Arc and normal or fancy treatment."
+      },
+      {
+        "id": "v15",
+        "label": "v15 · Current",
+        "file": "character-image-production.md",
+        "updated": "2026-09-30",
+        "description": "Reference-based edits must preserve the target's original body and head proportions, pose and framing."
       }
     ]
   },
