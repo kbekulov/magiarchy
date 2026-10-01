@@ -4,8 +4,8 @@
     "number": "Unplaced Chapter",
     "title": "There Is No Eleventh Floor",
     "status": "Scene draft",
-    "file": "there-is-no-eleventh-floor.md",
-    "updated": "2026-09-30",
+    "file": "there-is-no-eleventh-floor-v2.md",
+    "updated": "2026-10-01",
     "description": "An office worker enters a lift in a ten-floor building. Lynleit finds him on Floor Forty-Seven, with warnings written on his arm and no way home he can trust.",
     "characters": [
       "Lynleit"
@@ -28,13 +28,20 @@
       "He spends seventeen days in a monastery, returns to work using the stairs, and months later glimpses someone resembling Lynleit across a railway platform."
     ],
     "contentKind": "scene",
-    "defaultVersion": "v1",
+    "defaultVersion": "v2",
     "versions": [
       {
         "id": "v1",
-        "label": "v1 · Current",
+        "label": "v1 · Earlier account",
         "file": "there-is-no-eleventh-floor.md",
         "updated": "2026-09-29",
+        "contentKind": "scene"
+      },
+      {
+        "id": "v2",
+        "label": "v2 · First-person revision",
+        "file": "there-is-no-eleventh-floor-v2.md",
+        "updated": "2026-10-01",
         "contentKind": "scene"
       }
     ]

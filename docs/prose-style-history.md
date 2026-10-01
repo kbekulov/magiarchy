@@ -2,6 +2,37 @@
 
 Historical notes relocated from Prose Style v10 on 19 September 2026. These record how particular revisions were made, including superseded choices. They are not a style corpus for new prose. Use the [current house style](../docs.html?doc=prose-style); consult this history for provenance, continuity, comparison, and explicitly approved passages. The complete earlier reference remains available as [v10](../docs.html?doc=prose-style&version=v10).
 
+## There Is No Eleventh Floor revision: 1 October 2026
+
+[Chapter v2](../story.html?chapter=there-is-no-eleventh-floor&version=v2) applies the supplied-transcript standard at the author's request. V1 remains unchanged and directly accessible. The linked Moment follows v2 while retaining its v1 link. No event phase, Holumn mechanism, identity for the platform woman, or account of Fionn's later reprimand is invented.
+
+The revision replaces the repeated one-line narration with connected recollection and varied paragraphs. It retains the phone and wall tests, duplicated meeting room, voices and warnings, static window, mother's voice, all of Lynleit's practical tests, wrong door, ammunition failure, covering and flame, refusal to choose, guarded call, handoff exchanges and seventeen-day aftermath. Both sleeves are rolled clear before flame use, applying an existing character rule. The coat remains unexplained to the witness. Other characters' intentions are no longer stated as facts he could know.
+
+### First person acceptance review
+
+All sixteen rules apply and pass editorial review. Evidence below identifies passages by distinctive wording rather than unstable paragraph numbers. This review does not claim that automated checks establish prose quality.
+
+| Rule | Judgment and passage evidence |
+| --- | --- |
+| FP01 | Pass. The six-year employee remembers the evacuation plan, workplace routes, bag and sister's message; he cannot distinguish ventilation sounds or explain the rescue. |
+| FP02 | Pass. The opening distinguishes later questions from the experience. He learns Lynleit's name only from the envoy; the monastery and platform are explicitly later. |
+| FP03 | Pass. Leaving work at 22:49, pressing 1 and replying to his sister establish the immediate purpose without an unrelated biography. |
+| FP04 | Pass. He first interprets the descent as a parking call, checks the buttons at minus two, and tests the window by changing his position. |
+| FP05 | Pass. He follows crying because another lost person would be company; he follows Lynleit because he has no better way to choose; he stays when neither ordinary exit feels usable. |
+| FP06 | Pass. Rail, paint, concrete, wall, jacket sleeve and covered position remain available before pursuit and flame. Backward steps locate the corridor door against his back. |
+| FP07 | Pass. The ceiling, repeated-room test, stall, mother's door, backward corridor, reload, coat, flame and waiting at the handle unfold through successive attempts and responses. |
+| FP08 | Pass. Ordinary contractions, direct admissions and practical verbs carry the account. Professional interpretation remains in Lynleit's speech rather than the witness's vocabulary. |
+| FP09 | Pass. Connected narrative paragraphs alternate with the preserved short exchanges; isolated emphasis is reserved for recognition and the final recalled number. |
+| FP10 | Pass. Repeated questions about walking, Church custody and memory change what the witness learns. The two elevators and repeated clock checks have different consequences. |
+| FP11 | Pass. Fear affects his jacket zip, grip, backward walking, refusal of the lift and need for answerable questions. Relief at possible disbelief remains his admission. |
+| FP12 | Pass. Door direction prevents an attempted exit; instructions determine covering; the call and handoff retain the meals, Mass and positives exchanges without explaining their jokes. |
+| FP13 | Pass. He cannot tell what Lynleit learned from the coin, why she does not stop him leaving, or what the envoys communicate through a glance. |
+| FP14 | Pass. Dents, a second phone, the voice at the latch, failed gunfire and moving handle earn escalation. The returned office permits exhaustion and humor. |
+| FP15 | Pass. The narrator returns to work using stairs, then fails to place the platform woman beyond the recalled number. The chapter does not identify her or certify memory alteration. |
+| FP16 | Pass. All encounters and dialogue derive from the existing chapter and approved character rules. No supplied transcript incident, technical claim or folklore is transferred. |
+
+The Nasu advisory check retains observed paint limits and the timing of escape without promoting either to a universal rule. No relationship or attraction changes require a tension-record revision. No behavior-note record targets this chapter; existing unrelated anchors remain untouched. Reader-knowledge classifications and preface events retain their prior factual scope.
+
 ## There Is No Eleventh Floor: 29 September 2026
 
 The author supplied the first-person office-worker account and specifically approved its narrative voice, rescue, gun use and aftermath. Intake preserves its recurring questions, numbered disorientation, practical tests, blunt exchanges and monastery coda. Added real-time passages follow the witness checking the wall, repeated offices, window, corridor and covering rather than replacing his experience with a list of terrors.

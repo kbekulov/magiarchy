@@ -43,14 +43,21 @@
     "continuityBefore": "Early Arc 1, while Fionn is alive and before Kyrien learns about magic at the river. Fionn has already substituted the coat, whose material and agency remain unknown to Lynleit. Natalia is her established adviser; Myka and Lester have not entered this part of the story.",
     "continuityAfter": "Natalia informs Fionn. He reprimands Lynleit in his office for the danger she undertook, not for saving the witness. The witness spends seventeen days in Church custody. Lynleit expects her superficial injury to heal in days; the pistol remains inside the manifestation.",
     "chapterSlug": "there-is-no-eleventh-floor",
-    "chapterVersion": "v1",
-    "updated": "2026-09-30",
-    "defaultVersion": "v1",
+    "chapterVersion": "v2",
+    "updated": "2026-10-01",
+    "defaultVersion": "v2",
     "versions": [
       {
         "id": "v1",
-        "label": "v1 · Current",
-        "updated": "2026-09-29"
+        "label": "v1 · Earlier account",
+        "updated": "2026-09-29",
+        "chapterVersion": "v1"
+      },
+      {
+        "id": "v2",
+        "label": "v2 · First-person revision",
+        "updated": "2026-10-01",
+        "chapterVersion": "v2"
       }
     ]
   },

@@ -13,11 +13,15 @@ export async function testEleventhFloor(page, origin, engine) {
   assert.equal(chapter.arcLabel, 'ARC 1');
   assert.equal(moment.arcLabel, 'ARC 1');
   assert.equal(moment.chapterVersion, chapter.defaultVersion);
+  assert.equal(chapter.defaultVersion, 'v2');
+  assert.equal(chapter.versions.find(entry => entry.id === 'v1').file, 'there-is-no-eleventh-floor.md');
+  assert.equal(moment.versions.find(entry => entry.id === 'v1').chapterVersion, 'v1');
   const prose = read(`story/${chapter.file}`);
   for (const detail of ['black leather gloves', 'a spare', 'She threw the pistol', 'Hands inside. Don\'t move.', 'Unbroken skin. No blister.', 'Mass is at eight', 'seventeen days', 'Forty-seven.', 'ordinary doctor']) assert.ok(prose.includes(detail), detail);
   assert.ok(prose.length > 28000, 'Keep the full account, not just a synopsis');
   for (const obsolete of ['Blue eyes.', 'Dark trousers.', 'burned hand', 'old burn scars', 'Special envoys. Ordinary cover.', 'Protective doctrinal containment']) assert.ok(!prose.includes(obsolete), obsolete);
   assert.ok(prose.indexOf('pulled one on') < prose.indexOf('blue point'), 'Gloves precede flame');
+  assert.ok(prose.indexOf('rolled up both sleeves') < prose.indexOf('blue point'), 'Sleeves clear the flame');
   assert.ok(prose.indexOf('“Lynleit,” the man') < prose.indexOf('“Lynleit.”'), 'Witness learns her name before using it');
   const incident = json('holumns/index.json').incidents.find(entry => entry.id === 'HI-010');
   assert.equal(incident.storyLink, `story.html?chapter=${slug}`);
@@ -27,12 +31,16 @@ export async function testEleventhFloor(page, origin, engine) {
   const rescueOwners = profiles.filter(profile => profile.tradecraft?.some(entry => entry.label === 'The office-building rescue')).map(profile => profile.slug);
   assert.equal(JSON.stringify(rescueOwners), JSON.stringify(['lynleit']), 'Rescue belongs only to Lynleit');
   assert.ok(read('AGENTS.md').includes('backlog/prose_transcripts/'));
-  assert.ok(read('docs/prose-style.md').includes('No samples were present'));
+  assert.ok(read('docs/prose-style.md').includes('FP01-FP16'));
   const visit = async route => { await page.goto(`${origin}/${route}`); await page.waitForLoadState('networkidle'); };
   for (const width of [1440, 390]) {
     await page.setViewportSize({ width, height: 900 });
     await visit(`story.html?chapter=${slug}`);
     assert.ok(await page.locator('#chapter-reader').innerText().then(text => text.includes('Mass is at eight')));
+    assert.ok(await page.locator('#chapter-reader').innerText().then(text => text.includes('rolled up both sleeves')));
+    await visit(`story.html?chapter=${slug}&version=v1`);
+    assert.ok(await page.locator('#chapter-reader').innerText().then(text => text.includes('That fact became important later.')));
+    await visit(`story.html?chapter=${slug}&version=v2`);
     assert.equal(await page.locator('.story-timeline .is-active').count(), 0, 'No invented active phase');
     assert.equal(await page.locator('#chapter-reader-view .content-notice').count(), 0, 'Horror testimony is not an H Scene');
     await page.locator('#chapter-reader h1').scrollIntoViewIfNeeded();

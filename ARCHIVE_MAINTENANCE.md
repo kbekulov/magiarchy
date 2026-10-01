@@ -12,6 +12,8 @@ This file is the concise operating map for future agents and maintainers. `AGENT
 
 ## Authority and record states
 
+There Is No Eleventh Floor uses Chapter and Moment v2 as its current first-person revision. Preserve v1 through explicit version links. The revision retains incident HI-010 and the existing knowledge boundaries; it adds the already-established rolled-sleeve preparation without changing the escape hypothesis or Church outcome. Its FP01-FP16 evidence review is recorded in Prose Style History.
+
 ### H Scene notices and intake
 
 `content-notices.js` owns URL-based H Scene classifications and shared warning/filter components. Depiction, relevance and canon status are separate axes; explicit language can coexist with off-page sexual acts. Story, Moments, Docs, Holumn incident cards, Panels and global search use the same registry. New classifications require a regression covering default exclusion, mutually exclusive Include/Only switches, direct-reader notices and narrow-screen layout. Mixed Holumn testimony books warn at classified sections without hiding unrelated incidents. Home's random Holumn and Moment snapshots exclude H records; counts still describe the full archive. Direct links remain accessible with a notice. This is content navigation, not access control.
