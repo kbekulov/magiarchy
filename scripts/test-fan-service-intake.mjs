@@ -7,11 +7,19 @@ export async function testFanServiceIntake(page, origin, engine) {
     await page.goto(origin + '/gallery.html?fan-service=1');
     await page.waitForLoadState('networkidle');
     const cards = page.locator('.gallery-card[data-fan-service="true"]');
-    assert.equal(await cards.count(), 11);
-    assert.equal(await page.locator('.gallery-card:not([hidden])').count(), 3);
-    assert.equal(await cards.locator('img').count(), 11);
+    assert.equal(await cards.count(), 19);
+    assert.equal(await page.locator('.gallery-card:not([hidden])').count(), 4);
+    assert.equal(await cards.locator('img').count(), 19);
     assert.ok(await cards.evaluateAll(items => items.every(item => item.dataset.profilePortrait === 'false')));
-    for (const [character, count] of [['lynleit', 3], ['sherie', 5], ['yulia', 3]]) {
+    const shared = cards.filter({ has: page.locator('img[src*="char-lynleit-sherie-"]') });
+    assert.equal(await shared.count(), 5);
+    assert.ok(await shared.evaluateAll(items => items.every(item => item.dataset.character === 'lynleit sherie')));
+    for (const character of ['lynleit', 'sherie']) {
+      await page.locator('#gallery-character-filter').selectOption(character);
+      assert.equal(await page.locator('[data-artwork-stack="lynleit-sherie-fan-service"]:not([hidden])').count(), 1);
+    }
+    await page.locator('#gallery-character-filter').selectOption('all');
+    for (const [character, count] of [['lynleit', 5], ['sherie', 6], ['yulia', 3], ['lynleit-sherie', 5]]) {
       const card = page.locator('[data-artwork-stack="' + character + '-fan-service"]:not([hidden])');
       await card.locator(':scope > a').click();
       await page.waitForLoadState('networkidle');
@@ -36,5 +44,5 @@ export async function testFanServiceIntake(page, origin, engine) {
     assert.match(await page.locator('#panel-medium').textContent(), /Non-canon/);
     assert.ok(await page.locator('img[src*="panel-10"]').count() > 0);
   }
-  console.log(engine + ': eleven Fan Service originals, three stacks and existing Anima panel verified.');
+  console.log(engine + ': nineteen Fan Service originals, four stacks and existing Anima panel verified.');
 }

@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "nextId": 203,
+  "nextId": 211,
   "images": [
     {
       "id": "IMG-000001",
@@ -2903,6 +2903,94 @@
       ],
       "previousPaths": [
         "media/gallery/resources/face-references/sherie/char-sherie-arc-1-normal-face-reference-01.png"
+      ],
+      "active": true
+    },
+    {
+      "id": "IMG-000203",
+      "source": "media/gallery/images/characters/FULL-char-lynleit-fan-service-black-lace-back-study-img-000203.png",
+      "derivatives": [
+        "media/gallery/previews/characters/PREV-char-lynleit-fan-service-black-lace-back-study-img-000203.webp"
+      ],
+      "previousPaths": [
+        "media/gallery/images/characters/FULL-char-lynleit-fan-service-black-lace-back-study.png"
+      ],
+      "active": true
+    },
+    {
+      "id": "IMG-000204",
+      "source": "media/gallery/images/characters/FULL-char-lynleit-fan-service-black-lace-pose-sheet-img-000204.png",
+      "derivatives": [
+        "media/gallery/previews/characters/PREV-char-lynleit-fan-service-black-lace-pose-sheet-img-000204.webp"
+      ],
+      "previousPaths": [
+        "media/gallery/images/characters/FULL-char-lynleit-fan-service-black-lace-pose-sheet.png"
+      ],
+      "active": true
+    },
+    {
+      "id": "IMG-000205",
+      "source": "media/gallery/images/characters/FULL-char-sherie-fan-service-tailored-black-outfit-study-img-000205.png",
+      "derivatives": [
+        "media/gallery/previews/characters/PREV-char-sherie-fan-service-tailored-black-outfit-study-img-000205.webp"
+      ],
+      "previousPaths": [
+        "media/gallery/images/characters/FULL-char-sherie-fan-service-tailored-black-outfit-study.png"
+      ],
+      "active": true
+    },
+    {
+      "id": "IMG-000206",
+      "source": "media/gallery/images/characters/FULL-char-lynleit-sherie-fan-service-cushion-lace-original-img-000206.png",
+      "derivatives": [
+        "media/gallery/previews/characters/PREV-char-lynleit-sherie-fan-service-cushion-lace-original-img-000206.webp"
+      ],
+      "previousPaths": [
+        "media/gallery/images/characters/char-lynleit-sherie-fan-service-cushion-lace-original.png"
+      ],
+      "active": true
+    },
+    {
+      "id": "IMG-000207",
+      "source": "media/gallery/images/characters/FULL-char-lynleit-sherie-fan-service-cushion-lace-revised-img-000207.png",
+      "derivatives": [
+        "media/gallery/previews/characters/PREV-char-lynleit-sherie-fan-service-cushion-lace-revised-img-000207.webp"
+      ],
+      "previousPaths": [
+        "media/gallery/images/characters/char-lynleit-sherie-fan-service-cushion-lace-revised.png"
+      ],
+      "active": true
+    },
+    {
+      "id": "IMG-000208",
+      "source": "media/gallery/images/characters/FULL-char-lynleit-sherie-fan-service-mirror-sleepwear-img-000208.png",
+      "derivatives": [
+        "media/gallery/previews/characters/PREV-char-lynleit-sherie-fan-service-mirror-sleepwear-img-000208.webp"
+      ],
+      "previousPaths": [
+        "media/gallery/images/characters/char-lynleit-sherie-fan-service-mirror-sleepwear.png"
+      ],
+      "active": true
+    },
+    {
+      "id": "IMG-000209",
+      "source": "media/gallery/images/characters/FULL-char-lynleit-sherie-fan-service-tea-table-lace-img-000209.png",
+      "derivatives": [
+        "media/gallery/previews/characters/PREV-char-lynleit-sherie-fan-service-tea-table-lace-img-000209.webp"
+      ],
+      "previousPaths": [
+        "media/gallery/images/characters/char-lynleit-sherie-fan-service-tea-table-lace.png"
+      ],
+      "active": true
+    },
+    {
+      "id": "IMG-000210",
+      "source": "media/gallery/images/characters/FULL-char-lynleit-sherie-fan-service-tea-table-sleepwear-img-000210.png",
+      "derivatives": [
+        "media/gallery/previews/characters/PREV-char-lynleit-sherie-fan-service-tea-table-sleepwear-img-000210.webp"
+      ],
+      "previousPaths": [
+        "media/gallery/images/characters/char-lynleit-sherie-fan-service-tea-table-sleepwear.png"
       ],
       "active": true
     }

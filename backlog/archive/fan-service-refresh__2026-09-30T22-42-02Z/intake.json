@@ -1,0 +1,41 @@
+{
+  "processedAt": "2026-09-30T22:43:52.847Z",
+  "artworkPurpose": "Non-story Fan Service illustrations",
+  "images": [
+    {
+      "id": "IMG-000185",
+      "originalInput": "backlog/IMG-000185.png",
+      "published": "media/gallery/images/characters/FULL-char-lynleit-fan-service-navy-one-shoulder-img-000185.png",
+      "archivedSource": "backlog/archive/fan-service-refresh__2026-09-30T22-42-02Z/sources/IMG-000185.png",
+      "sha256": "2dd89e6c31c27235b752f8bdc0b21beb070c4ffe2a1ef40537b050857725293b"
+    },
+    {
+      "id": "IMG-000186",
+      "originalInput": "backlog/IMG-000186.png",
+      "published": "media/gallery/images/characters/FULL-char-lynleit-fan-service-striped-tankini-img-000186.png",
+      "archivedSource": "backlog/archive/fan-service-refresh__2026-09-30T22-42-02Z/sources/IMG-000186.png",
+      "sha256": "3876539968411e7705de23f197c351e35fd97a809131a14c083c8601839c91ee"
+    },
+    {
+      "id": "IMG-000203",
+      "originalInput": "backlog/fan_service/lynleit_1.png",
+      "published": "media/gallery/images/characters/FULL-char-lynleit-fan-service-black-lace-back-study-img-000203.png",
+      "archivedSource": "backlog/archive/fan-service-refresh__2026-09-30T22-42-02Z/sources/lynleit_1.png",
+      "sha256": "7d3000ab476e0f426ea8ccc18b6f698a83b48fcd9aa76ad15f6b66abfdd7474d"
+    },
+    {
+      "id": "IMG-000204",
+      "originalInput": "backlog/fan_service/lynleit_2.png",
+      "published": "media/gallery/images/characters/FULL-char-lynleit-fan-service-black-lace-pose-sheet-img-000204.png",
+      "archivedSource": "backlog/archive/fan-service-refresh__2026-09-30T22-42-02Z/sources/lynleit_2.png",
+      "sha256": "c47a7460d86025678960d3c05d16bb2706625780d4e50a7b0d001d37e60cd059"
+    },
+    {
+      "id": "IMG-000205",
+      "originalInput": "backlog/fan_service/sherie_1.png",
+      "published": "media/gallery/images/characters/FULL-char-sherie-fan-service-tailored-black-outfit-study-img-000205.png",
+      "archivedSource": "backlog/archive/fan-service-refresh__2026-09-30T22-42-02Z/sources/sherie_1.png",
+      "sha256": "05b5366ef9c6a1ee47ff7d00425853f03457ded730ad89ea0ec26f7ddaa7bd78"
+    }
+  ]
+}

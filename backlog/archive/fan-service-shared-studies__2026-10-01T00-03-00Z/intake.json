@@ -1,0 +1,12 @@
+{
+  "purpose": "Author-supplied non-story Fan Service illustrations",
+  "galleryStack": "lynleit-sherie-fan-service",
+  "sourceBytes": "Verified identical to each published original before archiving",
+  "images": [
+    { "source": "sherie_lynleit_1.png", "id": "IMG-000210", "reader": "char-lynleit-sherie-fan-service-tea-table-sleepwear" },
+    { "source": "sherie_lynleit_2.png", "id": "IMG-000208", "reader": "char-lynleit-sherie-fan-service-mirror-sleepwear" },
+    { "source": "sherie_lynleit_3.png", "id": "IMG-000206", "reader": "char-lynleit-sherie-fan-service-cushion-lace-original" },
+    { "source": "sherie_lynleit_3_v2.png", "id": "IMG-000207", "reader": "char-lynleit-sherie-fan-service-cushion-lace-revised" },
+    { "source": "sherie_lynleit_4.png", "id": "IMG-000209", "reader": "char-lynleit-sherie-fan-service-tea-table-lace" }
+  ]
+}
