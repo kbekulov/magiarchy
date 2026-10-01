@@ -37,6 +37,9 @@ export async function testSeasonalDirection(page, origin, engine) {
     assert.match(arc.description, /several years/);
     assert.ok(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1));
     await visit('index.html');
+    if (await page.locator('[data-news-toggle]').first().getAttribute('aria-expanded') === 'false') {
+      await page.locator('[data-news-toggle]').first().click();
+    }
     const update = page.locator('#update-golden-autumn-direction');
     assert.ok(await update.isVisible());
     await update.getByRole('link', { name: 'Read the direction' }).click();

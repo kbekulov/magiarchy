@@ -1,8 +1,8 @@
 {
   "schema": 1,
   "counts": {
-    "chapters": 10,
-    "moments": 31,
+    "chapters": 12,
+    "moments": 33,
     "characters": 18,
     "questions": 150,
     "contradictions": 0
@@ -122,8 +122,8 @@
         }
       ],
       "href": "character.html?character=lynleit",
-      "total": 23,
-      "prose": 9,
+      "total": 25,
+      "prose": 11,
       "outline": 14,
       "scenes": [
         {
@@ -167,8 +167,18 @@
           "kind": "Outline / scene seed"
         },
         {
-          "title": "The Empty Boats Beneath the Bridge",
-          "href": "moments.html?moment=the-boat-beneath-the-bridge&version=v4",
+          "title": "The River Choir I: The Empty Boats Beneath the Bridge",
+          "href": "moments.html?moment=the-boat-beneath-the-bridge&version=v5",
+          "kind": "Scene prose"
+        },
+        {
+          "title": "The River Choir II: The Water Beneath Her Feet",
+          "href": "moments.html?moment=the-water-beneath-her-feet&version=v1",
+          "kind": "Scene prose"
+        },
+        {
+          "title": "The River Choir III: The Wrong Bank",
+          "href": "moments.html?moment=the-wrong-bank&version=v1",
           "kind": "Scene prose"
         },
         {
@@ -273,8 +283,8 @@
         }
       ],
       "href": "character.html?character=kyrien",
-      "total": 17,
-      "prose": 7,
+      "total": 19,
+      "prose": 9,
       "outline": 10,
       "scenes": [
         {
@@ -303,8 +313,18 @@
           "kind": "Outline / scene seed"
         },
         {
-          "title": "The Empty Boats Beneath the Bridge",
-          "href": "moments.html?moment=the-boat-beneath-the-bridge&version=v4",
+          "title": "The River Choir I: The Empty Boats Beneath the Bridge",
+          "href": "moments.html?moment=the-boat-beneath-the-bridge&version=v5",
+          "kind": "Scene prose"
+        },
+        {
+          "title": "The River Choir II: The Water Beneath Her Feet",
+          "href": "moments.html?moment=the-water-beneath-her-feet&version=v1",
+          "kind": "Scene prose"
+        },
+        {
+          "title": "The River Choir III: The Wrong Bank",
+          "href": "moments.html?moment=the-wrong-bank&version=v1",
           "kind": "Scene prose"
         },
         {
@@ -394,8 +414,8 @@
         }
       ],
       "href": "character.html?character=felix",
-      "total": 9,
-      "prose": 6,
+      "total": 11,
+      "prose": 8,
       "outline": 3,
       "scenes": [
         {
@@ -414,8 +434,18 @@
           "kind": "Outline / scene seed"
         },
         {
-          "title": "The Empty Boats Beneath the Bridge",
-          "href": "moments.html?moment=the-boat-beneath-the-bridge&version=v4",
+          "title": "The River Choir I: The Empty Boats Beneath the Bridge",
+          "href": "moments.html?moment=the-boat-beneath-the-bridge&version=v5",
+          "kind": "Scene prose"
+        },
+        {
+          "title": "The River Choir II: The Water Beneath Her Feet",
+          "href": "moments.html?moment=the-water-beneath-her-feet&version=v1",
+          "kind": "Scene prose"
+        },
+        {
+          "title": "The River Choir III: The Wrong Bank",
+          "href": "moments.html?moment=the-wrong-bank&version=v1",
           "kind": "Scene prose"
         },
         {
@@ -467,8 +497,8 @@
         }
       ],
       "href": "character.html?character=reiner",
-      "total": 7,
-      "prose": 4,
+      "total": 9,
+      "prose": 6,
       "outline": 3,
       "scenes": [
         {
@@ -487,8 +517,18 @@
           "kind": "Outline / scene seed"
         },
         {
-          "title": "The Empty Boats Beneath the Bridge",
-          "href": "moments.html?moment=the-boat-beneath-the-bridge&version=v4",
+          "title": "The River Choir I: The Empty Boats Beneath the Bridge",
+          "href": "moments.html?moment=the-boat-beneath-the-bridge&version=v5",
+          "kind": "Scene prose"
+        },
+        {
+          "title": "The River Choir II: The Water Beneath Her Feet",
+          "href": "moments.html?moment=the-water-beneath-her-feet&version=v1",
+          "kind": "Scene prose"
+        },
+        {
+          "title": "The River Choir III: The Wrong Bank",
+          "href": "moments.html?moment=the-wrong-bank&version=v1",
           "kind": "Scene prose"
         },
         {
@@ -606,8 +646,8 @@
           "kind": "Outline / scene seed"
         },
         {
-          "title": "The Empty Boats Beneath the Bridge",
-          "href": "moments.html?moment=the-boat-beneath-the-bridge&version=v4",
+          "title": "The River Choir I: The Empty Boats Beneath the Bridge",
+          "href": "moments.html?moment=the-boat-beneath-the-bridge&version=v5",
           "kind": "Scene prose"
         },
         {
@@ -660,8 +700,8 @@
           "kind": "Outline / scene seed"
         },
         {
-          "title": "The Empty Boats Beneath the Bridge",
-          "href": "moments.html?moment=the-boat-beneath-the-bridge&version=v4",
+          "title": "The River Choir I: The Empty Boats Beneath the Bridge",
+          "href": "moments.html?moment=the-boat-beneath-the-bridge&version=v5",
           "kind": "Scene prose"
         },
         {
@@ -1241,7 +1281,7 @@
     {
       "id": "question-what-is-the-moving-shape-above-the-path-in-after-the-river-gallery-html-panels-after-the-river-a",
       "title": "After the river",
-      "text": "What is the moving shape above the path in After the River, and does this illustrated continuation belong in a later revision of the river Chapter? The annotation wondering about the drowned girl does not establish a connection.",
+      "text": "What is the moving shape above the path in After the River, and is it connected to the drowned girl? The Wrong Bank now dramatizes the illustrated continuation and the pair's withdrawal without identifying the shape or explaining its limits.",
       "confidence": 0,
       "meta": "0% answered",
       "section": "Current questions",
@@ -1304,7 +1344,7 @@
     {
       "id": "question-what-permits-the-first-pull-from-the-boat-and-what-prevents-the-submerged-hands-from-reaching-ly",
       "title": "River boundary",
-      "text": "What permits the first pull from the boat, and what prevents the submerged hands from reaching Lynleit once the water supports her? The river Chapter records the actions but does not establish a universal surface rule.",
+      "text": "What permits the first pull from the boat, and what prevents the submerged hands from reaching Lynleit once the water supports her? The Water Beneath Her Feet records the actions but does not establish a universal surface rule.",
       "confidence": 0,
       "meta": "0% answered",
       "section": "Current questions",
@@ -2640,12 +2680,30 @@
     },
     {
       "id": "the-boat-beneath-the-bridge",
-      "title": "The Empty Boats Beneath the Bridge",
-      "text": "A covert MSF team descends from a bridge to inspect small night shipments requested by Drake and Sherie. The tarp-covered wooden boats arrive empty, the Drowned Choir attacks from below, and Kyrien secretly witnesses Lynleit stand on the river.",
-      "meta": "v4 · Key scene",
+      "title": "The River Choir I: The Empty Boats Beneath the Bridge",
+      "text": "The River Choir, Part I. Kyrien checks the exits, endures four failed watches and boards the empty boats on the fifth. When the river takes hold of the team, the forbidden bank is the only ground he can reach.",
+      "meta": "v5 · Key scene",
       "detail": "Unknowing Convergence",
       "detailLabel": "Placement",
-      "href": "moments.html?moment=the-boat-beneath-the-bridge&version=v4"
+      "href": "moments.html?moment=the-boat-beneath-the-bridge&version=v5"
+    },
+    {
+      "id": "the-water-beneath-her-feet",
+      "title": "The River Choir II: The Water Beneath Her Feet",
+      "text": "The River Choir, Part II. Lynleit recounts the failure from the empty hold, the hands beneath the river, and her escape using an ability she has kept hidden.",
+      "meta": "v1 · Key scene",
+      "detail": "Unknowing Convergence",
+      "detailLabel": "Placement",
+      "href": "moments.html?moment=the-water-beneath-her-feet&version=v1"
+    },
+    {
+      "id": "the-wrong-bank",
+      "title": "The River Choir III: The Wrong Bank",
+      "text": "The River Choir, Part III. Kyrien watches from the trees, withholds what he has seen and helps Lynleit find a way out of the quarantined park, where something moves above the path.",
+      "meta": "v1 · Key scene",
+      "detail": "Unknowing Convergence",
+      "detailLabel": "Placement",
+      "href": "moments.html?moment=the-wrong-bank&version=v1"
     },
     {
       "id": "the-park-unit-is-lost",
@@ -3518,7 +3576,7 @@
   "draftStatus": [
     {
       "label": "Scene drafts",
-      "count": 6,
+      "count": 8,
       "color": "#8992f9"
     },
     {

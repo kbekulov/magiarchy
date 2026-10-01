@@ -6,8 +6,6 @@ This writer-facing record tests whether a reaction feels specific to the charact
 
 ## How the audit works
 
-The River Choir now has three first-person parts. Current paragraph notes distinguish Kyrien's attention to exits and card tells, Lynleit's pressured decisions underwater, and their recovery on the wrong bank. Earlier whole-chapter notes are version-scoped and retain their original anchors. The [revision review](../docs.html?doc=prose-style-history) records viewpoint and panel checks. No new relationship milestone or general gender rule follows from the split.
-
 - Begin with what the character already wants, fears, notices, and knows how to do.
 - Use sex and social experience where the scene makes them materially relevant: physical leverage, clothing, public danger, expectations learned in childhood, or the way another person reads the character.
 - Use MBTI functions to shape attention and decision-making. They do not excuse an action or predetermine it.

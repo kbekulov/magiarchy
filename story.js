@@ -90,15 +90,33 @@ function initializeTimelineDrag() {
 }
 
 function appendChapterInline(text, parent) {
-  const tokenPattern = /(\*\*[^*]+\*\*|\*[^*]+\*|`[^`]+`)/g;
+  const tokenPattern = /(\*\*[^*]+\*\*|\*[^*]+\*|`[^`]+`|\[[^\]]+\]\([^)]+\))/g;
   let cursor = 0;
 
   for (const match of text.matchAll(tokenPattern)) {
     if (match.index > cursor) parent.append(document.createTextNode(text.slice(cursor, match.index)));
 
     const token = match[0];
-    const element = document.createElement(token.startsWith('**') ? 'strong' : token.startsWith('*') ? 'em' : 'code');
-    element.textContent = token.startsWith('**') ? token.slice(2, -2) : token.slice(1, -1);
+    const link = token.match(/^\[([^\]]+)\]\(([^)]+)\)$/);
+    const element = document.createElement(link ? 'a' : token.startsWith('**') ? 'strong' : token.startsWith('*') ? 'em' : 'code');
+    if (link) {
+      element.textContent = link[1];
+      // Chapter sources live in story/; the reader itself lives at the site root.
+      const href = link[2].trim().replace(/^\.\.\//, '');
+      try {
+        const url = new URL(href, location.href);
+        if (['http:', 'https:'].includes(url.protocol)) {
+          element.href = href;
+          element.className = 'archive-entity-link';
+          if (url.origin !== location.origin) {
+            element.target = '_blank';
+            element.rel = 'noopener noreferrer';
+          }
+        }
+      } catch { /* Invalid links remain readable text. */ }
+    } else {
+      element.textContent = token.startsWith('**') ? token.slice(2, -2) : token.slice(1, -1);
+    }
     parent.append(element);
     cursor = match.index + token.length;
   }

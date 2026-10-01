@@ -489,12 +489,12 @@
       "kyrien"
     ],
     "moment": {
-      "slug": "the-boat-beneath-the-bridge",
-      "version": "v4"
+      "slug": "the-wrong-bank",
+      "version": "v1"
     },
     "chapter": {
-      "slug": "the-empty-boats-beneath-the-bridge",
-      "version": "v3"
+      "slug": "the-wrong-bank",
+      "version": "v1"
     },
     "cover": "panel-2",
     "beats": [
@@ -571,7 +571,7 @@
     ],
     "sceneSummary": [
       "Lynleit and Kyrien have reached the quarantined park after the river attack. He has seen her stand on the water and keeps that knowledge to himself. She wants to discover how much he witnessed.",
-      "These panels continue along the wooded path: she questions him while his attention turns upward toward movement among the trees. The shape above them has not been identified. The linked Chapter provides the preceding escape and recovery."
+      "Along the wooded path, Lynleit questions him while his attention turns upward. A shape moves where the branches stay still. They do not identify it before finding their way back to the bridge."
     ]
   },
   {
@@ -584,12 +584,12 @@
       "lynleit"
     ],
     "moment": {
-      "slug": "the-boat-beneath-the-bridge",
-      "version": "v4"
+      "slug": "the-water-beneath-her-feet",
+      "version": "v1"
     },
     "chapter": {
-      "slug": "the-empty-boats-beneath-the-bridge",
-      "version": "v3"
+      "slug": "the-water-beneath-her-feet",
+      "version": "v1"
     },
     "cover": "panel-2",
     "beats": [

@@ -1475,7 +1475,7 @@
   {
     "slug": "the-boat-beneath-the-bridge",
     "code": "MOM-006",
-    "title": "The Empty Boats Beneath the Bridge",
+    "title": "The River Choir I: The Empty Boats Beneath the Bridge",
     "status": "Key scene",
     "placementStatus": "Core sequence confirmed",
     "timelinePhase": "unknowing-convergence",
@@ -1484,8 +1484,8 @@
     "sceneType": "Failed river surveillance",
     "thread": "The suspected coup and the Spill",
     "location": "A Vilen river bridge linking a city street to the quarantined park",
-    "summary": "A covert MSF team descends from a bridge to inspect small night shipments requested by Drake and Sherie. The tarp-covered wooden boats arrive empty, the Drowned Choir attacks from below, and Kyrien secretly witnesses Lynleit stand on the river.",
-    "purpose": "The river attack separates the team. Kyrien witnesses Lynleit's forbidden ability and keeps it secret.",
+    "summary": "The River Choir, Part I. Kyrien checks the exits, endures four failed watches and boards the empty boats on the fifth. When the river takes hold of the team, the forbidden bank is the only ground he can reach.",
+    "purpose": "The limited inspection separates the team and forces Kyrien into the quarantined park without an explanation for what attacked them.",
     "characters": [
       {
         "name": "Sherie",
@@ -1539,75 +1539,30 @@
       }
     ],
     "known": [
-      "Sherie and Drake ask Lynleit to assemble a loyal MSF team and investigate recurring night traffic on the Vilen river.",
-      "Drake's intelligence identifies small boats moving only on the darkest nights. No operator is visible, the pattern appears intricate, and contraband remains a plausible explanation.",
-      "The chosen bridge links a city street to the quarantined park.",
-      "The plan requires Felix to freeze the bridge's civil safety cameras, maintain communications, and remain on the city side as fallback while the river team descends by rope, inspects the boats, and leaves by rope at the next bridge.",
-      "Several nights produce no boats. Each unsuccessful watch consumes the limited camera window and exposes Lynleit or Kyrien to small oddities emerging from the quarantined park that the mission gives them no freedom to pursue.",
-      "After an unsuccessful watch is formally aborted, Lynleit and Kyrien play short card games while the camera feed and bridge equipment are restored.",
-      "Kyrien wins the first game, and Lynleit requests a rematch.",
-      "Across the failed watches, Lynleit learns that Kyrien briefly stops breathing before a risky play. Kyrien learns the small hand movement that precedes one of Lynleit's decisions.",
+      "Kyrien inspects the bridge, locked park barrier and city steps before the covert boat operation.",
+      "Four failed watches exhaust the camera windows; a breaking branch and a pale camera interruption remain unexplained.",
+      "Lynleit and Kyrien play repeated card games during operational downtime. He watches her hands; she watches his fingers and face.",
       {
-        "text": "Their repeated rematches and attention to hands and breathing suggest a growing attraction neither names.",
+        "text": "Their attention to each other begins to exceed what either needs to win a card game.",
         "status": "inferred"
       },
-      "The successful interception occurs on the fifth watch.",
-      "The unsuccessful watches reveal a branch breaking before the wind reaches the trees and a pale interruption in a frozen camera feed.",
-      "The boats are small wooden craft with dark tarps over shallow holds. Fixed rudders keep them aligned while the current provides most of their movement.",
-      "When the boats finally appear, Reiner, Lynleit, Kyrien, Maren, and Ivo descend and find them empty. Felix remains ashore.",
-      "Felix calls them to position before the fifth camera window opens, leaving their last card game unfinished.",
-      "When an empty boat shifts, Kyrien briefly steadies Lynleit at the waist near her concealed Sparrow holster. She catches the rail instead of reaching for the pistol, and he releases her as she regains her balance.",
-      {
-        "text": "The empty boats, drowned hands, and pale girl imply that the Drowned Choir took the contraband crews before the interception, although the surviving officers cannot prove that connection.",
-        "status": "inferred"
-      },
-      "The river attack begins while the officers search the empty boats for another explanation.",
-      "The officers are capable swimmers. Reaching shore becomes difficult because unseen hands seize their legs and pull downward.",
-      "After reaching land, Maren describes the sensation of hands gripping and pulling her legs.",
-      "Reiner, Maren, and Ivo reach the city bank with Felix’s fallback line without understanding what attacked them. Reiner looks back and finds Lynleit and Kyrien missing.",
-      {
-        "text": "The hands of different sizes and states of decay suggest many drowned victims, rather than one submerged attacker.",
-        "status": "inferred"
-      },
-      "Only Lynleit sees the hands clearly. They seize her most violently and drag her underwater.",
-      "Lynleit wears a fitted blue suede jacket for the operation because it interferes less with ropes and wet timber than her usual coat.",
-      "The hands tear the blue suede jacket away during the underwater struggle.",
-      "The attack activates her childhood fear of drowning. Fury releases her blue flame, and the fire catches and burns the drowned hands even beneath the water.",
-      "After breaking the surface, Lynleit's palm meets resistance. She brings a knee and then both boots onto the same yielding layer until she stands above the river.",
-      "The drowned hands reach upward from the darkness but cannot pass through the surface layer beneath Lynleit's feet.",
-      "A pale girl emerges wearing a dress made from dead fish. Fishing line sews her eyes shut.",
-      {
-        "text": "The girl's tilted head and failure to pursue suggest bewilderment at Lynleit standing on the water.",
-        "status": "inferred"
-      },
-      "Kyrien is present as Lynleit's concealed unofficial asset rather than an acknowledged MSF officer.",
-      "The force in the river separates Kyrien from the official team and drives him toward the quarantined park side of the river.",
-      "Kyrien reaches the park bank, enters the trees, and observes Lynleit's confrontation on the river from inside the quarantine.",
-      "Only Kyrien witnesses Lynleit walking on water.",
-      "Lynleit tests each step across the yielding surface and backs toward the park bank while the girl remains still.",
-      "Kyrien is too careful to acknowledge what he saw and feigns innocence convincingly.",
-      "Lynleit reaches the park side of the river without the jacket, where Kyrien is waiting among the trees.",
-      "They remain inside the night park, drenched and struggling to catch their breath.",
-      "They sit with their backs pressed together to share body heat while they recover.",
-      "Sitting back to back, Lynleit notices Kyrien hold his breath. She recognizes the tell from their card games.",
-      "Lynleit indirectly asks whether Kyrien saw anything strange during the escape.",
-      "Kyrien answers with the empty boats and the attack, without mentioning Lynleit standing on the water.",
-      {
-        "text": "Kyrien's evasive answer protects Lynleit's secret without an order from her.",
-        "status": "inferred"
-      },
-      "Unusually heavy mist interrupts visibility across the river. The near water remains visible from the park bank, allowing Kyrien to witness Lynleit; Felix can still distinguish swimmers at the city steps."
+      "On the fifth watch, heavy mist interrupts the view across the river. Three wooden boats arrive with fixed rudders and empty tarp-covered holds.",
+      "Felix stays ashore while Reiner, Maren, Ivo, Lynleit and Kyrien descend by rope.",
+      "Kyrien steadies Lynleit at the waist when the boat shifts and releases her as she catches the rail.",
+      "Maren is pulled over the side. Reiner tries to hold her, then enters the water; Ivo follows to help.",
+      "Lynleit puts on black gloves and rolls up her sleeves. Kyrien cuts a snagged line before their boat rolls.",
+      "Kyrien feels fingers holding his leg but cannot see their source. Reiner, Maren and Ivo move towards the city steps while he struggles towards the park roots.",
+      "Kyrien reaches the mud on the park bank without understanding the attack."
     ],
     "openQuestions": [
-      "What lasting evidence or change, if any, does the encounter leave in the river?",
-      "What intelligence survives the failed operation beyond the officers' separate accounts?",
-      "Does the submerged blue flame leave a lasting injury on the Drowned Choir or only force the hands to release Lynleit?"
+      "What evidence remains aboard the empty boats?",
+      "What causes the initial pull that takes Maren over the side?"
     ],
     "continuityBefore": "The hilltop agreement gives Drake and Sherie access to a small loyal MSF team without granting them control of the agency. Their first request is a limited investigation of apparently unmanned river shipments, with contraband still the leading material explanation.",
-    "continuityAfter": "Felix, Reiner, Maren, and Ivo carry an account of impossible resistance from the city bank but no shared sight of its cause. Kyrien observes the river from the quarantined trees, and Lynleit later joins him on the park bank without the blue suede jacket. Their back-to-back recovery combines the physical awareness established during the failed watches with a mutual silence around what he witnessed. Lynleit later complains about the lost jacket. Much later, after Fionn's murder, the hotel-room refuge deepens that physical trust into emotional reliance.",
+    "continuityAfter": "Reiner, Maren and Ivo move towards the city steps. Kyrien reaches the park bank while Lynleit is still in the river. The Water Beneath Her Feet returns to her perspective just before the operation fails.",
     "chapterSlug": "the-empty-boats-beneath-the-bridge",
-    "updated": "2026-09-23",
-    "defaultVersion": "v4",
+    "updated": "2026-10-01",
+    "defaultVersion": "v5",
     "versions": [
       {
         "title": "The Empty Boats Beneath the Bridge",
@@ -2156,14 +2111,418 @@
         "updated": "2026-09-23",
         "chapterVersion": "v3",
         "id": "v4",
-        "label": "v4 · Current",
+        "label": "v4 · Archived",
         "artwork": {
           "id": "char-lynleit-kyrien-arc-1-park-bank",
           "title": "Lynleit and Kyrien: the park bank"
         }
+      },
+      {
+        "slug": "the-boat-beneath-the-bridge",
+        "code": "MOM-006",
+        "title": "The River Choir I: The Empty Boats Beneath the Bridge",
+        "status": "Key scene",
+        "placementStatus": "Core sequence confirmed",
+        "timelinePhase": "unknowing-convergence",
+        "timelineLabel": "Unknowing Convergence",
+        "sequence": 4,
+        "sceneType": "Failed river surveillance",
+        "thread": "The suspected coup and the Spill",
+        "location": "A Vilen river bridge linking a city street to the quarantined park",
+        "summary": "The River Choir, Part I. Kyrien checks the exits, endures four failed watches and boards the empty boats on the fifth. When the river takes hold of the team, the forbidden bank is the only ground he can reach.",
+        "purpose": "The limited inspection separates the team and forces Kyrien into the quarantined park without an explanation for what attacked them.",
+        "characters": [
+          {
+            "name": "Sherie",
+            "slug": "sherie"
+          },
+          {
+            "name": "Drake",
+            "slug": "drake"
+          },
+          {
+            "name": "Lynleit",
+            "slug": "lynleit"
+          },
+          {
+            "name": "Felix",
+            "slug": "felix"
+          },
+          {
+            "name": "Reiner",
+            "slug": "reiner"
+          },
+          {
+            "name": "Kyrien",
+            "slug": "kyrien"
+          }
+        ],
+        "characterAnchors": [
+          {
+            "slug": "sherie",
+            "beat": "What the Boat Reveals"
+          },
+          {
+            "slug": "drake",
+            "beat": "The Boat below the Bridge"
+          },
+          {
+            "slug": "lynleit",
+            "beat": "The Heir Apparent"
+          },
+          {
+            "slug": "felix",
+            "beat": "No Trust for Kyrien"
+          },
+          {
+            "slug": "reiner",
+            "beat": "Trusting Lynleit"
+          },
+          {
+            "slug": "kyrien",
+            "beat": "Alliance under Pressure"
+          }
+        ],
+        "known": [
+          "Kyrien inspects the bridge, locked park barrier and city steps before the covert boat operation.",
+          "Four failed watches exhaust the camera windows; a breaking branch and a pale camera interruption remain unexplained.",
+          "Lynleit and Kyrien play repeated card games during operational downtime. He watches her hands; she watches his fingers and face.",
+          {
+            "text": "Their attention to each other begins to exceed what either needs to win a card game.",
+            "status": "inferred"
+          },
+          "On the fifth watch, heavy mist interrupts the view across the river. Three wooden boats arrive with fixed rudders and empty tarp-covered holds.",
+          "Felix stays ashore while Reiner, Maren, Ivo, Lynleit and Kyrien descend by rope.",
+          "Kyrien steadies Lynleit at the waist when the boat shifts and releases her as she catches the rail.",
+          "Maren is pulled over the side. Reiner tries to hold her, then enters the water; Ivo follows to help.",
+          "Lynleit puts on black gloves and rolls up her sleeves. Kyrien cuts a snagged line before their boat rolls.",
+          "Kyrien feels fingers holding his leg but cannot see their source. Reiner, Maren and Ivo move towards the city steps while he struggles towards the park roots.",
+          "Kyrien reaches the mud on the park bank without understanding the attack."
+        ],
+        "openQuestions": [
+          "What evidence remains aboard the empty boats?",
+          "What causes the initial pull that takes Maren over the side?"
+        ],
+        "continuityBefore": "The hilltop agreement gives Drake and Sherie access to a small loyal MSF team without granting them control of the agency. Their first request is a limited investigation of apparently unmanned river shipments, with contraband still the leading material explanation.",
+        "continuityAfter": "Reiner, Maren and Ivo move towards the city steps. Kyrien reaches the park bank while Lynleit is still in the river. The Water Beneath Her Feet returns to her perspective just before the operation fails.",
+        "chapterSlug": "the-empty-boats-beneath-the-bridge",
+        "updated": "2026-10-01",
+        "chapterVersion": "v4",
+        "id": "v5",
+        "label": "v5 · Current"
       }
     ],
-    "chapterVersion": "v3"
+    "chapterVersion": "v4"
+  },
+  {
+    "slug": "the-water-beneath-her-feet",
+    "code": "MOM-032",
+    "title": "The River Choir II: The Water Beneath Her Feet",
+    "status": "Key scene",
+    "placementStatus": "Core sequence confirmed",
+    "timelinePhase": "unknowing-convergence",
+    "timelineLabel": "Unknowing Convergence",
+    "sequence": 4.1,
+    "sceneType": "Underwater struggle and escape",
+    "thread": "The suspected coup and the Spill",
+    "location": "The Vilen river beside the quarantined park",
+    "summary": "The River Choir, Part II. Lynleit recounts the failure from the empty hold, the hands beneath the river, and her escape using an ability she has kept hidden.",
+    "purpose": "Lynleit survives the drowned hands and exposes a forbidden ability without knowing she has a witness.",
+    "characters": [
+      {
+        "name": "Lynleit",
+        "slug": "lynleit"
+      },
+      {
+        "name": "Felix",
+        "slug": "felix"
+      },
+      {
+        "name": "Reiner",
+        "slug": "reiner"
+      },
+      {
+        "name": "Kyrien",
+        "slug": "kyrien"
+      }
+    ],
+    "characterAnchors": [
+      {
+        "slug": "lynleit",
+        "beat": "The Heir Apparent"
+      },
+      {
+        "slug": "felix",
+        "beat": "No Trust for Kyrien"
+      },
+      {
+        "slug": "reiner",
+        "beat": "Trusting Lynleit"
+      },
+      {
+        "slug": "kyrien",
+        "beat": "Alliance under Pressure"
+      }
+    ],
+    "known": [
+      "Lynleit questions the empty holds and prepares to end the inspection when Maren is pulled overboard.",
+      "She puts on both protective gloves and rolls both sleeves, but holds her flame while rescuers are too close to Maren.",
+      "The overturned boat separates her from the team. She sees the city-bound swimmers and Kyrien struggling towards the park.",
+      "Hands seize her boots and jacket underwater. Her practiced swimming cannot free her, and her childhood fear of drowning returns.",
+      "Blue flame burns the submerged grips. The light exposes hands of different sizes and states of decay; her ordinary blue suede jacket tears away.",
+      "The river supports her palm, knee and boots. She recognizes an ability she has secretly practiced at night.",
+      "Lynleit fears the Church discovering an act that resembles a forbidden miracle, while still wanting to hear her team.",
+      "A silent girl emerges in a dress of dead fish, her eyelids sewn shut with fishing line. Her fingertips touch the water.",
+      {
+        "text": "The tilted head and stillness suggest that the girl cannot readily account for Lynleit standing above the hands.",
+        "status": "inferred"
+      },
+      "The submerged hands cannot reach through the surface beneath Lynleit. She tests her steps backwards towards the park without discovering why.",
+      "Lynleit reaches the mud, climbs by a branch and calls Kyrien. She does not know that he watched her crossing."
+    ],
+    "openQuestions": [
+      "Why can the drowned hands not cross the surface supporting Lynleit?",
+      "Does the submerged flame cause lasting injury to the Drowned Choir?",
+      "What does the girl’s contact with the water mean?"
+    ],
+    "continuityBefore": "The five-night inspection ends with empty holds and Maren pulled into the river. This account overlaps the failure narrated by Kyrien in Part I.",
+    "continuityAfter": "Kyrien watches from the trees without Lynleit knowing. The Wrong Bank resumes his account at the moment he reaches shore.",
+    "chapterSlug": "the-water-beneath-her-feet",
+    "updated": "2026-10-01",
+    "chapterVersion": "v1",
+    "defaultVersion": "v1",
+    "versions": [
+      {
+        "slug": "the-water-beneath-her-feet",
+        "code": "MOM-032",
+        "title": "The River Choir II: The Water Beneath Her Feet",
+        "status": "Key scene",
+        "placementStatus": "Core sequence confirmed",
+        "timelinePhase": "unknowing-convergence",
+        "timelineLabel": "Unknowing Convergence",
+        "sequence": 4.1,
+        "sceneType": "Underwater struggle and escape",
+        "thread": "The suspected coup and the Spill",
+        "location": "The Vilen river beside the quarantined park",
+        "summary": "The River Choir, Part II. Lynleit recounts the failure from the empty hold, the hands beneath the river, and her escape using an ability she has kept hidden.",
+        "purpose": "Lynleit survives the drowned hands and exposes a forbidden ability without knowing she has a witness.",
+        "characters": [
+          {
+            "name": "Lynleit",
+            "slug": "lynleit"
+          },
+          {
+            "name": "Felix",
+            "slug": "felix"
+          },
+          {
+            "name": "Reiner",
+            "slug": "reiner"
+          },
+          {
+            "name": "Kyrien",
+            "slug": "kyrien"
+          }
+        ],
+        "characterAnchors": [
+          {
+            "slug": "lynleit",
+            "beat": "The Heir Apparent"
+          },
+          {
+            "slug": "felix",
+            "beat": "No Trust for Kyrien"
+          },
+          {
+            "slug": "reiner",
+            "beat": "Trusting Lynleit"
+          },
+          {
+            "slug": "kyrien",
+            "beat": "Alliance under Pressure"
+          }
+        ],
+        "known": [
+          "Lynleit questions the empty holds and prepares to end the inspection when Maren is pulled overboard.",
+          "She puts on both protective gloves and rolls both sleeves, but holds her flame while rescuers are too close to Maren.",
+          "The overturned boat separates her from the team. She sees the city-bound swimmers and Kyrien struggling towards the park.",
+          "Hands seize her boots and jacket underwater. Her practiced swimming cannot free her, and her childhood fear of drowning returns.",
+          "Blue flame burns the submerged grips. The light exposes hands of different sizes and states of decay; her ordinary blue suede jacket tears away.",
+          "The river supports her palm, knee and boots. She recognizes an ability she has secretly practiced at night.",
+          "Lynleit fears the Church discovering an act that resembles a forbidden miracle, while still wanting to hear her team.",
+          "A silent girl emerges in a dress of dead fish, her eyelids sewn shut with fishing line. Her fingertips touch the water.",
+          {
+            "text": "The tilted head and stillness suggest that the girl cannot readily account for Lynleit standing above the hands.",
+            "status": "inferred"
+          },
+          "The submerged hands cannot reach through the surface beneath Lynleit. She tests her steps backwards towards the park without discovering why.",
+          "Lynleit reaches the mud, climbs by a branch and calls Kyrien. She does not know that he watched her crossing."
+        ],
+        "openQuestions": [
+          "Why can the drowned hands not cross the surface supporting Lynleit?",
+          "Does the submerged flame cause lasting injury to the Drowned Choir?",
+          "What does the girl’s contact with the water mean?"
+        ],
+        "continuityBefore": "The five-night inspection ends with empty holds and Maren pulled into the river. This account overlaps the failure narrated by Kyrien in Part I.",
+        "continuityAfter": "Kyrien watches from the trees without Lynleit knowing. The Wrong Bank resumes his account at the moment he reaches shore.",
+        "chapterSlug": "the-water-beneath-her-feet",
+        "updated": "2026-10-01",
+        "chapterVersion": "v1",
+        "id": "v1",
+        "label": "v1 · Current"
+      }
+    ]
+  },
+  {
+    "slug": "the-wrong-bank",
+    "code": "MOM-033",
+    "title": "The River Choir III: The Wrong Bank",
+    "status": "Key scene",
+    "placementStatus": "Core sequence confirmed",
+    "timelinePhase": "unknowing-convergence",
+    "timelineLabel": "Unknowing Convergence",
+    "sequence": 4.2,
+    "sceneType": "Witness and park withdrawal",
+    "thread": "The suspected coup and the Spill",
+    "location": "The quarantined riverbank, park path and city-side bridge",
+    "summary": "The River Choir, Part III. Kyrien watches from the trees, withholds what he has seen and helps Lynleit find a way out of the quarantined park, where something moves above the path.",
+    "purpose": "Kyrien keeps Lynleit’s secret while they find a route back to the team past an unidentified shape.",
+    "characters": [
+      {
+        "name": "Lynleit",
+        "slug": "lynleit"
+      },
+      {
+        "name": "Felix",
+        "slug": "felix"
+      },
+      {
+        "name": "Reiner",
+        "slug": "reiner"
+      },
+      {
+        "name": "Kyrien",
+        "slug": "kyrien"
+      }
+    ],
+    "characterAnchors": [
+      {
+        "slug": "lynleit",
+        "beat": "The Heir Apparent"
+      },
+      {
+        "slug": "felix",
+        "beat": "No Trust for Kyrien"
+      },
+      {
+        "slug": "reiner",
+        "beat": "Trusting Lynleit"
+      },
+      {
+        "slug": "kyrien",
+        "beat": "Alliance under Pressure"
+      }
+    ],
+    "known": [
+      "Kyrien reaches the park bank and hides behind a tree while searching the near water for Lynleit.",
+      "He watches her rise, stand and walk on the water. The distant pale figure is visible, but its stitched eyes are not.",
+      "Lynleit reaches the bank and takes his forearm to climb. They sit back to back while recovering from immersion.",
+      "Kyrien deliberately avoids admitting that he saw her standing on the river. He suspects her fear of being seen without knowing the Church reason.",
+      "A phone call confirms Reiner, Maren and Ivo reached the city side. Maren reports feeling hands, not seeing their source.",
+      "Reiner directs them to the path and warns that the riverbank drops away before the bridge.",
+      "On the wet park path Lynleit questions Kyrien again. Both admit fear; she describes the sewn eyelids and dead-fish dress to him.",
+      "An elongated shape moves above the path while the supporting branches remain still. Both see it without identifying it.",
+      "They keep it in sight while detouring around the bench, then reach the locked barrier and rejoin Felix and Reiner.",
+      "All six regroup on the city side. Lynleit reports movement in the park, Kyrien keeps the water walking secret, and their unfinished cards are still in the van."
+    ],
+    "openQuestions": [
+      "What is the moving shape above the path?",
+      "Is it connected to the drowned girl, or independent of the river attack?",
+      "What lasting evidence or institutional response follows the operation?"
+    ],
+    "continuityBefore": "Kyrien has escaped to the park while Lynleit survives underwater. His account begins at the shore and overlaps her emergence and crossing in Part II.",
+    "continuityAfter": "The six participants regroup without a shared account of the attack. Kyrien alone has seen Lynleit walking on water and tells nobody. The unidentified shape remains in the park; the later hotel refuge and intimate park encounter are separate events.",
+    "chapterSlug": "the-wrong-bank",
+    "updated": "2026-10-01",
+    "chapterVersion": "v1",
+    "defaultVersion": "v1",
+    "versions": [
+      {
+        "slug": "the-wrong-bank",
+        "code": "MOM-033",
+        "title": "The River Choir III: The Wrong Bank",
+        "status": "Key scene",
+        "placementStatus": "Core sequence confirmed",
+        "timelinePhase": "unknowing-convergence",
+        "timelineLabel": "Unknowing Convergence",
+        "sequence": 4.2,
+        "sceneType": "Witness and park withdrawal",
+        "thread": "The suspected coup and the Spill",
+        "location": "The quarantined riverbank, park path and city-side bridge",
+        "summary": "The River Choir, Part III. Kyrien watches from the trees, withholds what he has seen and helps Lynleit find a way out of the quarantined park, where something moves above the path.",
+        "purpose": "Kyrien keeps Lynleit’s secret while they find a route back to the team past an unidentified shape.",
+        "characters": [
+          {
+            "name": "Lynleit",
+            "slug": "lynleit"
+          },
+          {
+            "name": "Felix",
+            "slug": "felix"
+          },
+          {
+            "name": "Reiner",
+            "slug": "reiner"
+          },
+          {
+            "name": "Kyrien",
+            "slug": "kyrien"
+          }
+        ],
+        "characterAnchors": [
+          {
+            "slug": "lynleit",
+            "beat": "The Heir Apparent"
+          },
+          {
+            "slug": "felix",
+            "beat": "No Trust for Kyrien"
+          },
+          {
+            "slug": "reiner",
+            "beat": "Trusting Lynleit"
+          },
+          {
+            "slug": "kyrien",
+            "beat": "Alliance under Pressure"
+          }
+        ],
+        "known": [
+          "Kyrien reaches the park bank and hides behind a tree while searching the near water for Lynleit.",
+          "He watches her rise, stand and walk on the water. The distant pale figure is visible, but its stitched eyes are not.",
+          "Lynleit reaches the bank and takes his forearm to climb. They sit back to back while recovering from immersion.",
+          "Kyrien deliberately avoids admitting that he saw her standing on the river. He suspects her fear of being seen without knowing the Church reason.",
+          "A phone call confirms Reiner, Maren and Ivo reached the city side. Maren reports feeling hands, not seeing their source.",
+          "Reiner directs them to the path and warns that the riverbank drops away before the bridge.",
+          "On the wet park path Lynleit questions Kyrien again. Both admit fear; she describes the sewn eyelids and dead-fish dress to him.",
+          "An elongated shape moves above the path while the supporting branches remain still. Both see it without identifying it.",
+          "They keep it in sight while detouring around the bench, then reach the locked barrier and rejoin Felix and Reiner.",
+          "All six regroup on the city side. Lynleit reports movement in the park, Kyrien keeps the water walking secret, and their unfinished cards are still in the van."
+        ],
+        "openQuestions": [
+          "What is the moving shape above the path?",
+          "Is it connected to the drowned girl, or independent of the river attack?",
+          "What lasting evidence or institutional response follows the operation?"
+        ],
+        "continuityBefore": "Kyrien has escaped to the park while Lynleit survives underwater. His account begins at the shore and overlaps her emergence and crossing in Part II.",
+        "continuityAfter": "The six participants regroup without a shared account of the attack. Kyrien alone has seen Lynleit walking on water and tells nobody. The unidentified shape remains in the park; the later hotel refuge and intimate park encounter are separate events.",
+        "chapterSlug": "the-wrong-bank",
+        "updated": "2026-10-01",
+        "chapterVersion": "v1",
+        "id": "v1",
+        "label": "v1 · Current"
+      }
+    ]
   },
   {
     "slug": "the-park-unit-is-lost",

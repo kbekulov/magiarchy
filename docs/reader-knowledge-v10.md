@@ -28,13 +28,13 @@ This writer reference separates what happens from what a character knows and wha
 
 **Event:** The Drowned Choir takes the contraband crews before the boats reach the bridge. The officers inspect empty holds and are pulled into the water. Lynleit burns the submerged hands and stands on the surface.
 
-**Reader:** The three-part account separates two witnesses. In Part I, Kyrien inspects the empty boats and feels fingers on his leg without seeing their source. Part II shows Lynleit preparing both gloves and sleeves, burning the submerged hands, and recognizing the water-walking ability she has already practiced in secret. Part III returns to Kyrien as he reaches shore and witnesses that ability. His deliberate withholding is now stated in his own account, not merely inferred from his dialogue. The missing crews' fate remains suggested rather than witnessed. The girl's head tilt can suggest bewilderment; her fingertips touching the water do not establish how she senses people.
+**Reader:** The missing crews' fate is suggested by the empty boats and subsequent attack, not witnessed directly. Blue flame and water walking are shown. The girl's head tilt can suggest bewilderment; it does not deliver a full account of her rules.
 
-**Characters:** Maren reports hands on her legs; Kyrien hears this by phone after she is ashore. Lynleit alone sees the attacking hands beneath the water. Kyrien alone witnesses her standing above it, his first unmistakable exposure to magic after his origin, failed attempt, interview and initial service. He sees a pale figure but cannot distinguish its stitches from the trees. Lynleit later describes the sewn eyelids and dead-fish dress to him. She knows why the Church might punish her ability; he only suspects that being seen frightens her. Kyrien tells nobody, and Lynleit does not obtain an admission. Both witness the movement above the park path without identifying it.
+**Characters:** Maren reports hands on her legs. Lynleit sees them beneath the water; Kyrien alone witnesses her standing above it. This is his first unmistakable exposure to magic, following an origin, failed attempt, interview, and initial service in which he remains ignorant of it. Reiner notices that Lynleit and Kyrien have not reached the city bank. Kyrien tells nobody; Lynleit initially only suspects what he saw.
 
-**Limit:** The supporting surface holds the hands below Lynleit. Its mechanism, and the precise first grip that pulls Maren from the boat, remain open. The encounter does not establish a universal prohibition on hands crossing water. The park shape is not confirmed to be the drowned girl, another named Holumn or a new manifestation. Walking around it and reaching the barrier is a local escape, not proof of its limits or the park's safety. The phone, route around the bench and reunion at the barrier are connective staging in the current working draft. They do not fix later investigations or the identity of the shape. The ordinary suede jacket lost here is not the leviathan-hide coat.
+**Limit:** The supporting surface holds the hands below Lynleit. Its mechanism, and the precise first grip that pulls Maren from the boat, remain open. The encounter does not establish a universal prohibition on hands crossing water.
 
-**Sources:** [Part I: The Empty Boats Beneath the Bridge](../story.html?chapter=the-empty-boats-beneath-the-bridge&version=v4), [Part II: The Water Beneath Her Feet](../story.html?chapter=the-water-beneath-her-feet&version=v1), [Part III: The Wrong Bank](../story.html?chapter=the-wrong-bank&version=v1), [HI-003](../docs.html?doc=holumn-incidents-and-testimonies#the-drowned-choir). The earlier complete third-person Chapter remains available through v1-v3; its Moment history remains through v4.
+**Source:** [The Empty Boats Beneath the Bridge](../story.html?chapter=the-empty-boats-beneath-the-bridge), [HI-003](../docs.html?doc=holumn-incidents-and-testimonies#the-drowned-choir).
 
 ## The Nameless Street and Fionn's death
 
@@ -108,7 +108,7 @@ This writer reference separates what happens from what a character knows and wha
 
 **Characters:** Familiarity with ordinary fog does not give the officers knowledge of a supernatural mechanism. Kyrien still sees Lynleit standing on the water; Felix and the officers on the city bank do not acquire that knowledge. Mist neither proves a shared river intelligence nor explains the park massacre.
 
-**Source:** [Narvean fog](../duchy.html#fog), [river watch](../story.html?chapter=the-empty-boats-beneath-the-bridge&version=v4), [park-bank witness](../story.html?chapter=the-wrong-bank&version=v1), [park outline](../story.html?chapter=ash-under-glass&version=v2).
+**Source:** [Narvean fog](../duchy.html#fog), [river Chapter](../story.html?chapter=the-empty-boats-beneath-the-bridge&version=v3), [park outline](../story.html?chapter=ash-under-glass&version=v2).
 
 ## Sherie and Felix's private language
 

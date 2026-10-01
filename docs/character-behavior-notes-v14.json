@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-01",
+  "updated": "2026-09-26",
   "sections": [
     {
       "id": "river-operation",
@@ -63,12 +63,7 @@
       ],
       "momentFact": {
         "the-boat-beneath-the-bridge": 24
-      },
-      "versions": [
-        "v1",
-        "v2",
-        "v3"
-      ]
+      }
     },
     {
       "id": "river-kyrien",
@@ -86,12 +81,7 @@
       ],
       "momentFact": {
         "the-boat-beneath-the-bridge": 40
-      },
-      "versions": [
-        "v1",
-        "v2",
-        "v3"
-      ]
+      }
     },
     {
       "id": "river-maren",
@@ -109,12 +99,7 @@
       ],
       "momentFact": {
         "the-boat-beneath-the-bridge": 18
-      },
-      "versions": [
-        "v1",
-        "v2",
-        "v3"
-      ]
+      }
     },
     {
       "id": "river-reiner",
@@ -132,12 +117,7 @@
       ],
       "momentFact": {
         "the-boat-beneath-the-bridge": 19
-      },
-      "versions": [
-        "v1",
-        "v2",
-        "v3"
-      ]
+      }
     },
     {
       "id": "river-felix",
@@ -155,12 +135,7 @@
       ],
       "momentFact": {
         "the-boat-beneath-the-bridge": 19
-      },
-      "versions": [
-        "v1",
-        "v2",
-        "v3"
-      ]
+      }
     },
     {
       "id": "river-blue-flame",
@@ -178,12 +153,7 @@
       ],
       "momentFact": {
         "the-boat-beneath-the-bridge": 24
-      },
-      "versions": [
-        "v1",
-        "v2",
-        "v3"
-      ]
+      }
     },
     {
       "id": "pressure-lynleit-interrogation",
@@ -286,12 +256,7 @@
       ],
       "momentFact": {
         "the-boat-beneath-the-bridge": 8
-      },
-      "versions": [
-        "v1",
-        "v2",
-        "v3"
-      ]
+      }
     },
     {
       "id": "pressure-kyrien-voluntary-stay",
@@ -1736,316 +1701,6 @@
       },
       "momentProseMatch": {
         "unresolved-tension": "Felix opened his mouth, looked at her, and shut it again."
-      },
-      "versions": [
-        "v1"
-      ]
-    },
-    {
-      "id": "river-lynleit-moment-v4",
-      "section": "river-operation",
-      "kind": "female",
-      "title": "Lynleit",
-      "basis": "Suspected INFJ, Ni-led reading with strong Fe",
-      "text": "Once Lynleit is ashore, the feeling of hands holding her down may linger even while she tries to give orders. Her later complaint about the jacket can be petty and heartfelt: she liked it and could not save it.",
-      "chapterMatch": "She kicked again. The grip tightened.",
-      "chapters": [],
-      "moments": [
-        "the-boat-beneath-the-bridge"
-      ],
-      "momentFact": {
-        "the-boat-beneath-the-bridge": 24
-      },
-      "versions": [
-        "v4"
-      ]
-    },
-    {
-      "id": "river-kyrien-moment-v4",
-      "section": "river-operation",
-      "kind": "male",
-      "title": "Kyrien",
-      "basis": "ISTP lean",
-      "text": "Keep Kyrien's answer literal and brief. He knows what he saw and chooses not to say it. His officer upbringing and watchfulness can appear in his attention to the search on the other bank.",
-      "chapterMatch": "Nothing I can explain.",
-      "chapters": [],
-      "moments": [
-        "the-boat-beneath-the-bridge"
-      ],
-      "momentFact": {
-        "the-boat-beneath-the-bridge": 40
-      },
-      "versions": [
-        "v4"
-      ]
-    },
-    {
-      "id": "river-maren-moment-v4",
-      "section": "river-operation",
-      "kind": "female",
-      "title": "Maren",
-      "basis": "Type unknown",
-      "text": "Maren is a trained officer, not a weaker swimmer. The horror lies in losing ownership of her own movement when hands seize her legs. Once ashore, a short sensory statement is more credible than a theory: she knows what fingers felt like, but does not claim to know who they belonged to. Anger or embarrassment at having needed to be hauled over the wall may surface after the immediate shock.",
-      "chapterMatch": "It was hands",
-      "chapters": [],
-      "moments": [
-        "the-boat-beneath-the-bridge"
-      ],
-      "momentFact": {
-        "the-boat-beneath-the-bridge": 18
-      },
-      "versions": [
-        "v4"
-      ]
-    },
-    {
-      "id": "river-reiner-moment-v4",
-      "section": "river-operation",
-      "kind": "male",
-      "title": "Reiner",
-      "basis": "ISTJ with strong Si and Te",
-      "text": "Reiner's greater build makes him the practical anchor for Maren and Ivo, but the river prevents strength from solving the whole problem. He is likely to convert fear into tasks: secure the person, reach the wall, count the team, check the line. His later guilt would appear as stricter procedure and repeated equipment checks rather than a broad confession.",
-      "chapterMatch": "Reiner forced Maren toward it.",
-      "chapters": [],
-      "moments": [
-        "the-boat-beneath-the-bridge"
-      ],
-      "momentFact": {
-        "the-boat-beneath-the-bridge": 19
-      },
-      "versions": [
-        "v4"
-      ]
-    },
-    {
-      "id": "river-felix-moment-v4",
-      "section": "river-operation",
-      "kind": "male",
-      "title": "Felix",
-      "basis": "Suspected ENFP, habitual alternatives and personal loyalty",
-      "text": "Remaining ashore should frustrate Felix because his most valued people descend without him. His role is still decisive. He keeps the cameras frozen, hears the failure before he can see it, abandons the van at the correct moment, and turns a communications fallback into a physical rescue line. A joke after the extraction can be an attempt to restore ordinary human rhythm, not proof that he took the danger lightly.",
-      "chapterMatch": "Felix left the van only when the operation had already collapsed.",
-      "chapters": [],
-      "moments": [
-        "the-boat-beneath-the-bridge"
-      ],
-      "momentFact": {
-        "the-boat-beneath-the-bridge": 19
-      },
-      "versions": [
-        "v4"
-      ]
-    },
-    {
-      "id": "river-blue-flame-moment-v4",
-      "section": "river-operation",
-      "kind": "story",
-      "title": "Blue flame under the river",
-      "basis": "Story-pressure suggestion",
-      "text": "The blue flame can expose the scale of the horror without an explanation. Hands burning in blue beneath the surface would briefly illuminate different ages, sizes, and states of decay before the river closes over them again. The image would let the reader understand that Lynleit is fighting accumulated dead rather than a single submerged attacker.",
-      "chapterMatch": "Lynleit twisted downward instead of up.",
-      "chapters": [],
-      "moments": [
-        "the-boat-beneath-the-bridge"
-      ],
-      "momentFact": {
-        "the-boat-beneath-the-bridge": 24
-      },
-      "versions": [
-        "v4"
-      ]
-    },
-    {
-      "id": "pressure-card-tells-moment-v4",
-      "section": "relationships-under-pressure",
-      "kind": "story",
-      "title": "Cards and physical tells",
-      "basis": "Approved sexual-tension pattern",
-      "text": "Keep the games brief and embedded in operational downtime. Kyrien should win more often through technical play, while Lynleit gains ground by reading him. Their attention becomes sexual because hands, breathing, gaze, and proximity begin to distract them, not because either character starts performing romance. Lynleit notices the intrusion and returns to the mission.",
-      "chapterMatch": "The rematch continued on the third night.",
-      "chapters": [],
-      "moments": [
-        "the-boat-beneath-the-bridge"
-      ],
-      "momentFact": {
-        "the-boat-beneath-the-bridge": 8
-      },
-      "versions": [
-        "v4"
-      ]
-    },
-    {
-      "id": "river-reiner-river-choir-moment",
-      "section": "river-operation",
-      "kind": "male",
-      "title": "Reiner",
-      "basis": "ISTJ with strong Si and Te",
-      "text": "Reiner's greater build makes him the practical anchor for Maren and Ivo, but the river prevents strength from solving the whole problem. He is likely to convert fear into tasks: secure the person, reach the wall, count the team, check the line. His later guilt would appear as stricter procedure and repeated equipment checks rather than a broad confession.",
-      "chapterMatch": "I checked it. He watched until I had finished",
-      "chapters": [],
-      "moments": [
-        "the-boat-beneath-the-bridge"
-      ],
-      "momentFact": {
-        "the-boat-beneath-the-bridge": 7
-      },
-      "versions": [
-        "v5"
-      ]
-    },
-    {
-      "id": "river-reiner-river-choir",
-      "section": "river-operation",
-      "kind": "male",
-      "title": "Reiner",
-      "basis": "ISTJ with strong Si and Te",
-      "text": "Reiner's greater build makes him the practical anchor for Maren and Ivo, but the river prevents strength from solving the whole problem. He is likely to convert fear into tasks: secure the person, reach the wall, count the team, check the line. His later guilt would appear as stricter procedure and repeated equipment checks rather than a broad confession.",
-      "chapterMatch": "I checked it. He watched until I had finished",
-      "chapters": [
-        "the-empty-boats-beneath-the-bridge"
-      ],
-      "moments": [],
-      "momentFact": {},
-      "versions": [
-        "v4"
-      ]
-    },
-    {
-      "id": "pressure-card-tells-river-choir-moment",
-      "section": "relationships-under-pressure",
-      "kind": "story",
-      "title": "Cards and physical tells",
-      "basis": "Approved sexual-tension pattern",
-      "text": "Keep the games brief and embedded in operational downtime. Kyrien should win more often through technical play, while Lynleit gains ground by reading him. Their attention becomes sexual because hands, breathing, gaze, and proximity begin to distract them, not because either character starts performing romance. Lynleit notices the intrusion and returns to the mission.",
-      "chapterMatch": "I wanted to beat her rather more than the game deserved.",
-      "chapters": [],
-      "moments": [
-        "the-boat-beneath-the-bridge"
-      ],
-      "momentFact": {
-        "the-boat-beneath-the-bridge": 3
-      },
-      "versions": [
-        "v5"
-      ]
-    },
-    {
-      "id": "pressure-card-tells-river-choir",
-      "section": "relationships-under-pressure",
-      "kind": "story",
-      "title": "Cards and physical tells",
-      "basis": "Approved sexual-tension pattern",
-      "text": "Keep the games brief and embedded in operational downtime. Kyrien should win more often through technical play, while Lynleit gains ground by reading him. Their attention becomes sexual because hands, breathing, gaze, and proximity begin to distract them, not because either character starts performing romance. Lynleit notices the intrusion and returns to the mission.",
-      "chapterMatch": "I wanted to beat her rather more than the game deserved.",
-      "chapters": [
-        "the-empty-boats-beneath-the-bridge"
-      ],
-      "moments": [],
-      "momentFact": {},
-      "versions": [
-        "v4"
-      ]
-    },
-    {
-      "id": "river-lynleit-river-choir",
-      "section": "river-operation",
-      "kind": "female",
-      "title": "Lynleit",
-      "basis": "Suspected INFJ, Ni-led reading with strong Fe",
-      "text": "Once Lynleit is ashore, the feeling of hands holding her down may linger even while she tries to give orders. Her later complaint about the jacket can be petty and heartfelt: she liked it and could not save it.",
-      "chapterMatch": "I wanted somebody above me to notice that I hadn't come up.",
-      "chapters": [
-        "the-water-beneath-her-feet"
-      ],
-      "moments": [
-        "the-water-beneath-her-feet"
-      ],
-      "momentFact": {
-        "the-water-beneath-her-feet": 3
-      },
-      "versions": [
-        "v1"
-      ]
-    },
-    {
-      "id": "river-blue-flame-river-choir",
-      "section": "river-operation",
-      "kind": "story",
-      "title": "Blue flame under the river",
-      "basis": "Story-pressure suggestion",
-      "text": "The blue flame can expose the scale of the horror without an explanation. Hands burning in blue beneath the surface would briefly illuminate different ages, sizes, and states of decay before the river closes over them again. The image would let the reader understand that Lynleit is fighting accumulated dead rather than a single submerged attacker.",
-      "chapterMatch": "The light showed me more than I wanted to see.",
-      "chapters": [
-        "the-water-beneath-her-feet"
-      ],
-      "moments": [
-        "the-water-beneath-her-feet"
-      ],
-      "momentFact": {
-        "the-water-beneath-her-feet": 4
-      },
-      "versions": [
-        "v1"
-      ]
-    },
-    {
-      "id": "river-kyrien-river-choir",
-      "section": "river-operation",
-      "kind": "male",
-      "title": "Kyrien",
-      "basis": "ISTP lean",
-      "text": "Keep Kyrien's answer literal and brief. He knows what he saw and chooses not to say it. His officer upbringing and watchfulness can appear in his attention to the search on the other bank.",
-      "chapterMatch": "Nothing I can explain.",
-      "chapters": [
-        "the-wrong-bank"
-      ],
-      "moments": [
-        "the-wrong-bank"
-      ],
-      "momentFact": {
-        "the-wrong-bank": 3
-      },
-      "versions": [
-        "v1"
-      ]
-    },
-    {
-      "id": "river-maren-river-choir",
-      "section": "river-operation",
-      "kind": "female",
-      "title": "Maren",
-      "basis": "Type unknown",
-      "text": "Maren is a trained officer, not a weaker swimmer. The horror lies in losing ownership of her own movement when hands seize her legs. Once ashore, a short sensory statement is more credible than a theory: she knows what fingers felt like, but does not claim to know who they belonged to. Anger or embarrassment at having needed to be hauled over the wall may surface after the immediate shock.",
-      "chapterMatch": "It was hands",
-      "chapters": [
-        "the-wrong-bank"
-      ],
-      "moments": [
-        "the-wrong-bank"
-      ],
-      "momentFact": {
-        "the-wrong-bank": 4
-      },
-      "versions": [
-        "v1"
-      ]
-    },
-    {
-      "id": "river-felix-river-choir",
-      "section": "river-operation",
-      "kind": "male",
-      "title": "Felix",
-      "basis": "Suspected ENFP, habitual alternatives and personal loyalty",
-      "text": "Remaining ashore should frustrate Felix because his most valued people descend without him. His role is still decisive. He keeps the cameras frozen, hears the failure before he can see it, abandons the van at the correct moment, and turns a communications fallback into a physical rescue line. A joke after the extraction can be an attempt to restore ordinary human rhythm, not proof that he took the danger lightly.",
-      "chapterMatch": "He had to restore the cameras before leaving the van again.",
-      "chapters": [
-        "the-wrong-bank"
-      ],
-      "moments": [
-        "the-wrong-bank"
-      ],
-      "momentFact": {
-        "the-wrong-bank": 8
       },
       "versions": [
         "v1"

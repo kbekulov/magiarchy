@@ -26,6 +26,9 @@ export async function testFirstPersonProse(page, origin, engine) {
   assert.ok(!(await page.locator('#document-reader').innerText()).includes('Mandatory first person standard'));
   assert.ok((await page.locator('#document-reader').innerText()).includes('No samples were present'));
   await visit('index.html');
+  if (await page.locator('[data-news-toggle]').first().getAttribute('aria-expanded') === 'false') {
+    await page.locator('[data-news-toggle]').first().click();
+  }
   assert.ok(await page.locator('#update-first-person-prose-standard').isVisible());
   console.log(engine + ': first-person standard, 16 rules, house-style links, historical isolation and three reader widths passed.');
 }

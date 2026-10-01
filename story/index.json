@@ -266,12 +266,12 @@
   },
   {
     "slug": "the-empty-boats-beneath-the-bridge",
-    "number": "Chapter 05",
+    "number": "Chapter 05 · Part I",
     "title": "The Empty Boats Beneath the Bridge",
     "status": "Working draft",
-    "file": "the-empty-boats-beneath-the-bridge-v3.md",
-    "updated": "2026-09-23",
-    "description": "A covert MSF inspection of apparently unmanned river shipments collapses when the Drowned Choir attacks from below, leaving Kyrien to witness Lynleit's forbidden water walking from the quarantined bank.",
+    "file": "the-empty-boats-beneath-the-bridge-v4.md",
+    "updated": "2026-10-01",
+    "description": "The River Choir, Part I. Kyrien checks the exits, endures four failed watches and boards the empty boats on the fifth. When the river takes hold of the team, the forbidden bank is the only ground he can reach.",
     "characters": [
       "Lynleit",
       "Kyrien",
@@ -283,32 +283,20 @@
     "timelinePhase": "unknowing-convergence",
     "timelineLabel": "Unknowing Convergence",
     "events": [
-      "Sherie and Drake ask Lynleit to assemble a loyal team and inspect recurring night traffic on the Vilen river.",
-      "Several surveillance nights produce no boats while small oddities emerge from the quarantined park.",
-      "After the failed watches, Lynleit repeatedly challenges Kyrien to short card games and they learn each other's physical tells.",
+      "Kyrien inspects the bridge, locked park barrier and city steps before the covert boat operation.",
+      "Four failed watches exhaust the camera windows; a breaking branch and a pale camera interruption remain unexplained.",
+      "Lynleit and Kyrien play repeated card games during operational downtime. He watches her hands; she watches his fingers and face.",
       {
-        "text": "Their unfinished rematches and attention to breath, hands, and pauses imply an attraction neither character names or allows to displace the operation.",
+        "text": "Their attention to each other begins to exceed what either needs to win a card game.",
         "status": "inferred"
       },
-      "Felix freezes the bridge cameras and remains on the city bank as fallback while Reiner leads Lynleit, Kyrien, Maren, and Ivo down onto the boats.",
-      "When a boat shifts, Kyrien briefly steadies Lynleit near the concealed Sparrow holster and releases her before she asks.",
-      {
-        "text": "The empty boats, drowned hands, and pale girl imply that the contraband crews were taken before the interception.",
-        "status": "inferred"
-      },
-      "Reiner, Maren, and Ivo reach the city bank with Felix's fallback line while Kyrien is forced toward the quarantined park bank.",
-      "The drowned hands tear away Lynleit's blue suede jacket and drag her underwater until fury releases blue flame through the river.",
-      "The river surface holds beneath Lynleit's palm, knee, and boots, allowing her to stand above hands that cannot cross it.",
-      {
-        "text": "The pale girl's tilted head and failure to pursue suggest bewilderment at Lynleit standing on the water.",
-        "status": "inferred"
-      },
-      {
-        "text": "Kyrien's evasive answer and continued silence suggest a decision to protect Lynleit's forbidden ability without being asked.",
-        "status": "inferred"
-      },
-      "Lynleit crosses the held surface to the park bank and later sits back to back with Kyrien for warmth among the trees.",
-      "Heavy mist interrupts sight across the river while the near water remains visible from the park bank."
+      "On the fifth watch, heavy mist interrupts the view across the river. Three wooden boats arrive with fixed rudders and empty tarp-covered holds.",
+      "Felix stays ashore while Reiner, Maren, Ivo, Lynleit and Kyrien descend by rope.",
+      "Kyrien steadies Lynleit at the waist when the boat shifts and releases her as she catches the rail.",
+      "Maren is pulled over the side. Reiner tries to hold her, then enters the water; Ivo follows to help.",
+      "Lynleit puts on black gloves and rolls up her sleeves. Kyrien cuts a snagged line before their boat rolls.",
+      "Kyrien feels fingers holding his leg but cannot see their source. Reiner, Maren and Ivo move towards the city steps while he struggles towards the park roots.",
+      "Kyrien reaches the mud on the park bank without understanding the attack."
     ],
     "contentKind": "scene",
     "versions": [
@@ -458,10 +446,186 @@
         ],
         "contentKind": "scene",
         "id": "v3",
-        "label": "v3 · Current"
+        "label": "v3 · Archived"
+      },
+      {
+        "slug": "the-empty-boats-beneath-the-bridge",
+        "number": "Chapter 05 · Part I",
+        "title": "The Empty Boats Beneath the Bridge",
+        "status": "Working draft",
+        "file": "the-empty-boats-beneath-the-bridge-v4.md",
+        "updated": "2026-10-01",
+        "description": "The River Choir, Part I. Kyrien checks the exits, endures four failed watches and boards the empty boats on the fifth. When the river takes hold of the team, the forbidden bank is the only ground he can reach.",
+        "characters": [
+          "Lynleit",
+          "Kyrien",
+          "Felix",
+          "Reiner",
+          "Sherie",
+          "Drake"
+        ],
+        "timelinePhase": "unknowing-convergence",
+        "timelineLabel": "Unknowing Convergence",
+        "events": [
+          "Kyrien inspects the bridge, locked park barrier and city steps before the covert boat operation.",
+          "Four failed watches exhaust the camera windows; a breaking branch and a pale camera interruption remain unexplained.",
+          "Lynleit and Kyrien play repeated card games during operational downtime. He watches her hands; she watches his fingers and face.",
+          {
+            "text": "Their attention to each other begins to exceed what either needs to win a card game.",
+            "status": "inferred"
+          },
+          "On the fifth watch, heavy mist interrupts the view across the river. Three wooden boats arrive with fixed rudders and empty tarp-covered holds.",
+          "Felix stays ashore while Reiner, Maren, Ivo, Lynleit and Kyrien descend by rope.",
+          "Kyrien steadies Lynleit at the waist when the boat shifts and releases her as she catches the rail.",
+          "Maren is pulled over the side. Reiner tries to hold her, then enters the water; Ivo follows to help.",
+          "Lynleit puts on black gloves and rolls up her sleeves. Kyrien cuts a snagged line before their boat rolls.",
+          "Kyrien feels fingers holding his leg but cannot see their source. Reiner, Maren and Ivo move towards the city steps while he struggles towards the park roots.",
+          "Kyrien reaches the mud on the park bank without understanding the attack."
+        ],
+        "contentKind": "scene",
+        "id": "v4",
+        "label": "v4 · Current"
       }
     ],
-    "defaultVersion": "v3"
+    "defaultVersion": "v4"
+  },
+  {
+    "slug": "the-water-beneath-her-feet",
+    "number": "Chapter 05 · Part II",
+    "title": "The Water Beneath Her Feet",
+    "status": "Working draft",
+    "updated": "2026-10-01",
+    "timelinePhase": "unknowing-convergence",
+    "timelineLabel": "Unknowing Convergence",
+    "contentKind": "scene",
+    "file": "the-water-beneath-her-feet.md",
+    "description": "The River Choir, Part II. Lynleit recounts the failure from the empty hold, the hands beneath the river, and her escape using an ability she has kept hidden.",
+    "characters": [
+      "Lynleit",
+      "Kyrien",
+      "Felix",
+      "Reiner"
+    ],
+    "events": [
+      "Lynleit questions the empty holds and prepares to end the inspection when Maren is pulled overboard.",
+      "She puts on both protective gloves and rolls both sleeves, but holds her flame while rescuers are too close to Maren.",
+      "The overturned boat separates her from the team. She sees the city-bound swimmers and Kyrien struggling towards the park.",
+      "Hands seize her boots and jacket underwater. Her practiced swimming cannot free her, and her childhood fear of drowning returns.",
+      "Blue flame burns the submerged grips. The light exposes hands of different sizes and states of decay; her ordinary blue suede jacket tears away.",
+      "The river supports her palm, knee and boots. She recognizes an ability she has secretly practiced at night.",
+      "Lynleit fears the Church discovering an act that resembles a forbidden miracle, while still wanting to hear her team.",
+      "A silent girl emerges in a dress of dead fish, her eyelids sewn shut with fishing line. Her fingertips touch the water.",
+      {
+        "text": "The tilted head and stillness suggest that the girl cannot readily account for Lynleit standing above the hands.",
+        "status": "inferred"
+      },
+      "The submerged hands cannot reach through the surface beneath Lynleit. She tests her steps backwards towards the park without discovering why.",
+      "Lynleit reaches the mud, climbs by a branch and calls Kyrien. She does not know that he watched her crossing."
+    ],
+    "defaultVersion": "v1",
+    "versions": [
+      {
+        "slug": "the-water-beneath-her-feet",
+        "number": "Chapter 05 · Part II",
+        "title": "The Water Beneath Her Feet",
+        "status": "Working draft",
+        "updated": "2026-10-01",
+        "timelinePhase": "unknowing-convergence",
+        "timelineLabel": "Unknowing Convergence",
+        "contentKind": "scene",
+        "file": "the-water-beneath-her-feet.md",
+        "description": "The River Choir, Part II. Lynleit recounts the failure from the empty hold, the hands beneath the river, and her escape using an ability she has kept hidden.",
+        "characters": [
+          "Lynleit",
+          "Kyrien",
+          "Felix",
+          "Reiner"
+        ],
+        "events": [
+          "Lynleit questions the empty holds and prepares to end the inspection when Maren is pulled overboard.",
+          "She puts on both protective gloves and rolls both sleeves, but holds her flame while rescuers are too close to Maren.",
+          "The overturned boat separates her from the team. She sees the city-bound swimmers and Kyrien struggling towards the park.",
+          "Hands seize her boots and jacket underwater. Her practiced swimming cannot free her, and her childhood fear of drowning returns.",
+          "Blue flame burns the submerged grips. The light exposes hands of different sizes and states of decay; her ordinary blue suede jacket tears away.",
+          "The river supports her palm, knee and boots. She recognizes an ability she has secretly practiced at night.",
+          "Lynleit fears the Church discovering an act that resembles a forbidden miracle, while still wanting to hear her team.",
+          "A silent girl emerges in a dress of dead fish, her eyelids sewn shut with fishing line. Her fingertips touch the water.",
+          {
+            "text": "The tilted head and stillness suggest that the girl cannot readily account for Lynleit standing above the hands.",
+            "status": "inferred"
+          },
+          "The submerged hands cannot reach through the surface beneath Lynleit. She tests her steps backwards towards the park without discovering why.",
+          "Lynleit reaches the mud, climbs by a branch and calls Kyrien. She does not know that he watched her crossing."
+        ],
+        "id": "v1",
+        "label": "v1 · Current"
+      }
+    ]
+  },
+  {
+    "slug": "the-wrong-bank",
+    "number": "Chapter 05 · Part III",
+    "title": "The Wrong Bank",
+    "status": "Working draft",
+    "updated": "2026-10-01",
+    "timelinePhase": "unknowing-convergence",
+    "timelineLabel": "Unknowing Convergence",
+    "contentKind": "scene",
+    "file": "the-wrong-bank.md",
+    "description": "The River Choir, Part III. Kyrien watches from the trees, withholds what he has seen and helps Lynleit find a way out of the quarantined park, where something moves above the path.",
+    "characters": [
+      "Lynleit",
+      "Kyrien",
+      "Felix",
+      "Reiner"
+    ],
+    "events": [
+      "Kyrien reaches the park bank and hides behind a tree while searching the near water for Lynleit.",
+      "He watches her rise, stand and walk on the water. The distant pale figure is visible, but its stitched eyes are not.",
+      "Lynleit reaches the bank and takes his forearm to climb. They sit back to back while recovering from immersion.",
+      "Kyrien deliberately avoids admitting that he saw her standing on the river. He suspects her fear of being seen without knowing the Church reason.",
+      "A phone call confirms Reiner, Maren and Ivo reached the city side. Maren reports feeling hands, not seeing their source.",
+      "Reiner directs them to the path and warns that the riverbank drops away before the bridge.",
+      "On the wet park path Lynleit questions Kyrien again. Both admit fear; she describes the sewn eyelids and dead-fish dress to him.",
+      "An elongated shape moves above the path while the supporting branches remain still. Both see it without identifying it.",
+      "They keep it in sight while detouring around the bench, then reach the locked barrier and rejoin Felix and Reiner.",
+      "All six regroup on the city side. Lynleit reports movement in the park, Kyrien keeps the water walking secret, and their unfinished cards are still in the van."
+    ],
+    "defaultVersion": "v1",
+    "versions": [
+      {
+        "slug": "the-wrong-bank",
+        "number": "Chapter 05 · Part III",
+        "title": "The Wrong Bank",
+        "status": "Working draft",
+        "updated": "2026-10-01",
+        "timelinePhase": "unknowing-convergence",
+        "timelineLabel": "Unknowing Convergence",
+        "contentKind": "scene",
+        "file": "the-wrong-bank.md",
+        "description": "The River Choir, Part III. Kyrien watches from the trees, withholds what he has seen and helps Lynleit find a way out of the quarantined park, where something moves above the path.",
+        "characters": [
+          "Lynleit",
+          "Kyrien",
+          "Felix",
+          "Reiner"
+        ],
+        "events": [
+          "Kyrien reaches the park bank and hides behind a tree while searching the near water for Lynleit.",
+          "He watches her rise, stand and walk on the water. The distant pale figure is visible, but its stitched eyes are not.",
+          "Lynleit reaches the bank and takes his forearm to climb. They sit back to back while recovering from immersion.",
+          "Kyrien deliberately avoids admitting that he saw her standing on the river. He suspects her fear of being seen without knowing the Church reason.",
+          "A phone call confirms Reiner, Maren and Ivo reached the city side. Maren reports feeling hands, not seeing their source.",
+          "Reiner directs them to the path and warns that the riverbank drops away before the bridge.",
+          "On the wet park path Lynleit questions Kyrien again. Both admit fear; she describes the sewn eyelids and dead-fish dress to him.",
+          "An elongated shape moves above the path while the supporting branches remain still. Both see it without identifying it.",
+          "They keep it in sight while detouring around the bench, then reach the locked barrier and rejoin Felix and Reiner.",
+          "All six regroup on the city side. Lynleit reports movement in the park, Kyrien keeps the water walking secret, and their unfinished cards are still in the van."
+        ],
+        "id": "v1",
+        "label": "v1 · Current"
+      }
+    ]
   },
   {
     "slug": "the-nameless-street",

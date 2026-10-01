@@ -28,6 +28,7 @@ import { testEleventhFloor } from './test-eleventh-floor.mjs';
 import { testSeasonalDirection } from './test-seasonal-direction.mjs';
 import { testLeoMikhailArt } from './test-leo-mikhail-art.mjs';
 import { testFirstPersonProse } from './test-first-person-prose.mjs';
+import { testRiverChoir } from './test-river-choir.mjs';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const mime = { '.html': 'text/html', '.js': 'text/javascript', '.json': 'application/json', '.css': 'text/css', '.png': 'image/png', '.webp': 'image/webp', '.md': 'text/plain', '.mp3': 'audio/mpeg', '.wav': 'audio/wav' };
@@ -86,6 +87,13 @@ try {
       if (process.env.TEST_FIRST_PERSON_ONLY === '1') {
         await testFirstPersonProse(page, origin, engine);
         assert.deepEqual(errors, [], engine + ': first-person reader errors');
+        continue;
+      }
+      if (process.env.TEST_RIVER_CHOIR_ONLY === '1') {
+        await testRiverChoir(page, origin, engine);
+        await testNarveanFog(page, origin, engine);
+        await testSeptemberPanelIntake(page, origin, engine);
+        assert.deepEqual(errors, [], `${engine}: river chapter errors`);
         continue;
       }
       if (process.env.TEST_IMAGE_IDS_ONLY === '1') {
@@ -196,6 +204,7 @@ try {
       await testPageSpacing(page, origin, engine);
       await testEleventhFloor(page, origin, engine);
       await testHomeDashboard(page, origin, engine);
+      await testRiverChoir(page, origin, engine);
       if (process.env.TEST_HOME_ONLY === '1') {
         assert.deepEqual(errors, [], `${engine}: Home feed errors`);
         continue;

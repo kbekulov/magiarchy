@@ -51,7 +51,7 @@ export async function testSeptemberPanelIntake(page, origin, engine) {
   assert.equal(await page.locator('#phase-unknowing-convergence .timeline-panel-link[href="gallery.html?panels=after-the-river"]').count(), 1);
   await visit('moments.html?moment=the-boat-beneath-the-bridge&version=v1');
   assert.equal(await page.locator('a[href="gallery.html?panels=after-the-river"]').count(), 0);
-  await visit('story.html?chapter=the-empty-boats-beneath-the-bridge&version=v3');
+  await visit('story.html?chapter=the-wrong-bank&version=v1');
   assert.ok(await page.locator('#chapter-panel-links a[href="gallery.html?panels=after-the-river"]').isVisible());
   const resource = JSON.parse(fs.readFileSync('gallery/resources.json', 'utf8')).find(r => r.id === 'yulia-white-sweater');
   for (const width of [390, 1440]) {

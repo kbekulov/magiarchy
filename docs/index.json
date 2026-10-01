@@ -555,12 +555,12 @@
     "title": "Prose Style History",
     "topic": "Historical Writing Reference",
     "file": "prose-style-history.md",
-    "updated": "2026-09-30",
-    "description": "Shared Night v2 retains banter while correcting intimacy and dream scope; the office reprimand remains an outline.",
+    "updated": "2026-10-01",
+    "description": "The River Choir in three first-person chapters: voice, panel continuity and the FP01-FP16 evidence review.",
     "speakers": [
       "Author's Desk"
     ],
-    "defaultVersion": "v5",
+    "defaultVersion": "v6",
     "versions": [
       {
         "id": "v1",
@@ -592,10 +592,17 @@
       },
       {
         "id": "v5",
-        "label": "v5 · Current",
-        "file": "prose-style-history.md",
+        "label": "v5 · Archived",
+        "file": "prose-style-history-v5.md",
         "updated": "2026-09-30",
         "description": "Shared Night v2 retains banter while correcting intimacy and dream scope; the office reprimand remains an outline."
+      },
+      {
+        "id": "v6",
+        "label": "v6 · Current",
+        "file": "prose-style-history.md",
+        "updated": "2026-10-01",
+        "description": "The River Choir in three first-person chapters: voice, panel continuity and the FP01-FP16 evidence review."
       }
     ]
   },
@@ -643,12 +650,12 @@
     "title": "Events, Witnesses, and Reveals",
     "topic": "Reader Knowledge",
     "file": "reader-knowledge.md",
-    "updated": "2026-09-30",
-    "description": "Shared Night v2 and the early office rescue: current evidence, writer gaps and Fionn's private reprimand.",
+    "updated": "2026-10-01",
+    "description": "The river trilogy separates Kyrien’s testimony, Lynleit’s private knowledge and the unexplained movement above the park path.",
     "speakers": [
       "Author's Desk"
     ],
-    "defaultVersion": "v10",
+    "defaultVersion": "v11",
     "versions": [
       {
         "id": "v1",
@@ -715,10 +722,17 @@
       },
       {
         "id": "v10",
-        "label": "v10 · Current",
-        "file": "reader-knowledge.md",
+        "label": "v10 · Archived",
+        "file": "reader-knowledge-v10.md",
         "updated": "2026-09-30",
         "description": "Shared Night v2 and the early office rescue: current evidence, writer gaps and Fionn's private reprimand."
+      },
+      {
+        "id": "v11",
+        "label": "v11 · Current",
+        "file": "reader-knowledge.md",
+        "updated": "2026-10-01",
+        "description": "The river trilogy separates Kyrien’s testimony, Lynleit’s private knowledge and the unexplained movement above the park path."
       }
     ]
   },
@@ -839,12 +853,12 @@
     "title": "Character Behaviour Audit",
     "topic": "Writer's Character Reference",
     "file": "character-behavior-audit.md",
-    "updated": "2026-09-26",
-    "description": "Card-game paragraph guidance with the illustrations classified as Gallery Artwork.",
+    "updated": "2026-10-01",
+    "description": "Version-scoped advisory notes for the three first-person River Choir chapters and their earlier whole-chapter revisions.",
     "speakers": [
       "Character Archive"
     ],
-    "defaultVersion": "v14",
+    "defaultVersion": "v15",
     "versions": [
       {
         "id": "v1",
@@ -952,10 +966,18 @@
       },
       {
         "id": "v14",
-        "label": "v14 · Current",
-        "file": "character-behavior-audit.md",
+        "label": "v14 · Archived",
+        "file": "character-behavior-audit-v14.md",
         "updated": "2026-09-26",
         "description": "Card-game paragraph guidance with the illustrations classified as Gallery Artwork.",
+        "behaviorFile": "character-behavior-notes-v14.json"
+      },
+      {
+        "id": "v15",
+        "label": "v15 · Current",
+        "file": "character-behavior-audit.md",
+        "updated": "2026-10-01",
+        "description": "Version-scoped advisory notes for the three first-person River Choir chapters and their earlier whole-chapter revisions.",
         "behaviorFile": "character-behavior-notes.json"
       }
     ]
