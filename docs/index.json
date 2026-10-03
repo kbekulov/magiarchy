@@ -276,11 +276,11 @@
     "topic": "Visual Production Standard",
     "file": "character-image-production.md",
     "updated": "2026-10-03",
-    "description": "Comparative female builds, selected body references, situation-specific expressions, story-world weapons and preserved character identity.",
+    "description": "Male and female comparative builds, Kyrien's menswear-model shoulder line, selected body references and preserved character identity.",
     "speakers": [
       "Author's Desk"
     ],
-    "defaultVersion": "v20",
+    "defaultVersion": "v21",
     "versions": [
       {
         "id": "v1",
@@ -417,10 +417,17 @@
       },
       {
         "id": "v20",
-        "label": "v20 · Current",
-        "file": "character-image-production.md",
+        "label": "v20 · Archived",
+        "file": "character-image-production-v20.md",
         "updated": "2026-10-03",
         "description": "Lynleit and Helena share a height of 169 cm; relative body comparisons use approximate similarity rather than strict equality."
+      },
+      {
+        "id": "v21",
+        "label": "v21 · Current",
+        "file": "character-image-production.md",
+        "updated": "2026-10-03",
+        "description": "Male silhouettes and relative height groups, with Kyrien's lightly built poet-and-tactician appearance and attractive menswear-model shoulders."
       }
     ]
   },

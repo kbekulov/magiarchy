@@ -60,20 +60,54 @@ export async function testAppearanceComparisons(page, origin, engine) {
       if (slug === 'lynleit' || slug === 'helena') assert.match(await page.locator('#character-appearance').textContent(), /169 cm, the same height as/);
     }
   }
-  await visit('character.html?character=kyrien#appearance-title');
+  const men = ['reiner', 'fionn', 'heyk', 'drake', 'kyrien', 'felix', 'tien', 'hiyu'];
+  for (const width of [320, 390, 820, 1440]) {
+    await page.setViewportSize({ width, height: 950 });
+    for (const slug of width === 390 ? men : ['kyrien']) {
+      await visit(`character.html?character=${slug}#appearance-title`);
+      const disclosure = page.locator('.appearance-comparison-disclosure');
+      const table = page.getByRole('table', { name: 'Relative proportions', includeHidden: true });
+      assert.equal(await disclosure.getAttribute('open'), null);
+      assert.equal(await table.isVisible(), false);
+      await disclosure.locator('summary').click();
+      assert.ok(await table.isVisible());
+      assert.equal(await table.locator('tr').count(), 1);
+      assert.equal(await table.locator('mark').count(), 1);
+      assert.equal(await table.locator('mark').getAttribute('data-character'), slug);
+      const chain = await table.locator('.appearance-comparison-symbol, .appearance-comparison-name').evaluateAll(nodes => nodes.map(node => node.textContent).join(' '));
+      assert.equal(chain, 'Reiner ≈ Drake ≈ Hiyu > Fionn ≈ Heyk ≈ Kyrien ≈ Felix ≈ Tien');
+      assert.equal(await table.locator('[data-character]').count(), 8);
+      assert.ok(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1));
+      assert.ok(await table.evaluate(node => [...node.querySelectorAll('.appearance-comparison-step')].every(step => step.getBoundingClientRect().right <= node.getBoundingClientRect().right + 1)));
+      const description = await page.locator('#character-appearance').textContent();
+      if (slug === 'kyrien') assert.match(description, /180 cm.*modelling menswear.*poet.*tactician/s);
+      if (slug === 'fionn') assert.match(description, /average shoulder breadth/);
+      if (slug === 'heyk') assert.match(description, /stocky, muscular/);
+      if (slug === 'hiyu') assert.match(description, /natural skeletal proportions/);
+      if (slug === 'drake') assert.match(description, /appear underweight/);
+      await page.locator('.profile-appearance').screenshot({ path: `test-results/${engine}-appearance-${slug}-${width}.png` });
+      await disclosure.locator('summary').click();
+      assert.equal(await table.isVisible(), false);
+    }
+  }
+  await visit('character.html?character=lester#appearance-title');
   assert.equal(await page.locator('.appearance-comparison-table').count(), 0);
   await visit('docs.html?doc=character-image-production#comparative-female-builds');
   assert.equal(await page.getByRole('heading', { name: 'Comparative female builds', exact: true }).count(), 1);
-  assert.equal(await page.getByRole('combobox', { name: 'Choose version' }).inputValue(), 'v20');
+  assert.equal(await page.getByRole('combobox', { name: 'Choose version' }).inputValue(), 'v21');
+  assert.equal(await page.getByRole('heading', { name: 'Comparative male builds', exact: true }).count(), 1);
   await page.getByRole('combobox', { name: 'Choose version' }).selectOption('v18');
   await page.waitForURL(url => url.searchParams.get('version') === 'v18');
   await page.waitForLoadState('networkidle');
   assert.equal(await page.getByRole('heading', { name: 'Comparative female builds', exact: true }).count(), 0);
+  assert.equal(await page.getByRole('heading', { name: 'Comparative male builds', exact: true }).count(), 0);
   await visit('index.html');
+  const updatesToggle = page.locator('[data-news-toggle]').first();
+  if (await updatesToggle.getAttribute('aria-expanded') === 'false') await updatesToggle.click();
   await page.locator('#update-character-build-comparisons').getByRole('link', { name: 'Compare appearances' }).click();
   await page.waitForLoadState('networkidle');
   assert.ok(page.url().endsWith('character=lynleit#appearance-title'));
   assert.equal(await page.locator('.appearance-comparison-table mark[data-character="lynleit"]').count(), 3);
   assert.equal(await page.locator('.appearance-comparison-table').isVisible(), false);
-  console.log(`${engine}: six profile highlights, collapsed disclosures, mouse/keyboard toggles, comparison order, four viewport sizes, document history and Home link passed.`);
+  console.log(`${engine}: fourteen profile highlights, collapsed disclosures, mouse/keyboard toggles, male/female comparison order, four viewport sizes, document history and Home link passed.`);
 }

@@ -89,21 +89,6 @@ For Lynleit and Sherie, the author selected these existing illustrations as the 
 
 Inspect and supply applicable originals in future generation. Their seated poses, lean, camera and apparent relative height do not override the profile height ordering. These are Lynleit/Sherie body references, not substitutes for the other women's identities. The selected face-and-hair packages remain controlling for faces and hair. Existing pictures remain intact; apply the clarified comparison to new work.
 
-## Comparative male builds
-
-The male profiles' Height and build descriptions in `character.js` own the artist-facing silhouettes. The shared `maleAppearanceComparisons` row places Reiner, Drake and Hiyu at similar tall heights, above the group of Fionn, Heyk, Kyrien, Felix and Tien. Kyrien is 180 cm; the others in his group are approximately the same height, not independently assigned exact centimetres. Fionn and Heyk's placement beside Kyrien and Felix is author-confirmed. Similar height does not require identical shoulders, limb proportions or body mass.
-
-- **Reiner:** tall, broad and heavily muscled.
-- **Fionn:** shorter than Reiner, with average shoulder breadth and a relatively well-built frame.
-- **Heyk:** stocky and muscular at a more moderate height.
-- **Drake:** tall, lean and straight-backed; he may appear underweight for his height. This is a visual impression, not a medical diagnosis.
-- **Kyrien:** lightly built, with attractive shoulders suited to modelling menswear and lean limbs. His overall impression combines a poet and a tactician. Follow the fixed design requirements below for the middle part, tired eyes, active elegance and modest height difference beside Lynleit.
-- **Felix:** about Kyrien's height, lean, with a little more muscle from his MSF agent training.
-- **Tien:** lean and athletic, similar to Felix in height and build.
-- **Hiyu:** tall like Reiner and Drake, lean, with attractive natural skeletal proportions rather than a gym-built physique.
-
-Keep shoulder shape, muscular bulk, torso thickness, waist breadth and leg-to-torso proportions distinct. These descriptions do not establish a complete ranking for those features, body weights, numerical body measurements or strength scores. Do not infer a new athletic ability from an attractive frame or turn model-like shoulders into bodybuilding bulk. Lester, Inspector Leo and Father Mikhail remain outside this height comparison until their builds are established. Existing approved images remain intact.
-
 ## Reference selection and design continuity
 
 Start with the target character's established face, hair, clothing, physical features, and life period. Use a production template to guide pose and presentation while preserving that identity. For other character images, consult applicable templates and approved artwork without forcing an action scene or portrait into a T-pose.
@@ -148,11 +133,11 @@ Preserve taste, fit, restraint, and self-possession in clothing that settles and
 
 ### Build: lean and lightly built
 
-Give Kyrien attractively proportioned shoulders that could suit a menswear model, balanced with a lean torso and lean arms and legs. His shoulder line should carry clothing elegantly while his overall frame remains light, without conspicuous muscular bulk. Reject a broad action-hero chest, oversized shoulders, a thick neck, large biceps, bulky arms, heavy muscular thighs, an exaggerated V-shaped torso, or prominently sculpted muscles. Clothing must not suggest that hidden build by stretching across a broad chest or upper arms. He is neither gym-built nor frail. Convey capability through coordination, balance, endurance, precision, and economical movement. His established strength relative to body weight and obstacle-climbing ability remain unchanged; a light frame is not a loss of competence.
+Use restrained shoulder width, a relatively narrow torso, lean arms and legs, and natural male proportions without conspicuous muscular development. Reject a broad action-hero chest, oversized shoulders, a thick neck, large biceps, bulky arms, heavy muscular thighs, an exaggerated V-shaped torso, or prominently sculpted muscles. Clothing must not suggest that hidden build by stretching across a broad chest or upper arms. He is neither gym-built nor frail. Convey capability through coordination, balance, endurance, precision, and economical movement. His established strength relative to body weight and obstacle-climbing ability remain unchanged; a light frame is not a loss of competence.
 
 ### Acceptance check
 
-Kyrien must read as lightly built, with an attractive menswear-model shoulder line, center-parted hair, subtly tired eyes and elegance suited to an active life. His appearance combines a poet and a tactician. Beside Lynleit, check their shared ground plane and modest height difference. A towering, heavily muscular, oversized-shouldered, freshly rested, perfectly posed man with a side-swept fringe is an incorrect interpretation even if otherwise attractive or recognizable. Review these features at full resolution and at the intended display size. Chibi simplification must retain the part, restrained eyes, and relative size without importing heroic bulk.
+Kyrien must read as lean, center-parted, subtly tired-looking, and elegantly dressed for an active life. Beside Lynleit, check their shared ground plane and modest height difference. A towering, muscular, broad-shouldered, freshly rested, perfectly posed man with a side-swept fringe is an incorrect interpretation even if otherwise attractive or recognizable. Review these features at full resolution and at the intended display size. Chibi simplification must retain the part, restrained eyes, and relative size without importing heroic bulk.
 
 ## Generation brief
 

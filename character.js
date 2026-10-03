@@ -63,9 +63,9 @@ const profileSeeds = [
     physical: [
       ['Hair', 'Short, tousled dark brown hair with a clear middle part. The front sections fall to either side of his forehead.'],
       ['Eyes', 'Grey-blue, with slightly heavy upper lids and subtle shading beneath the eyes. He habitually looks a little tired; his gaze remains alert.'],
-      ['Height and build', '180 cm, slender and lightly built, with restrained shoulder width, a narrow torso, and lean limbs without pronounced muscle definition. He is modestly taller than Lynleit at 169 cm.'],
+      ['Height and build', '180 cm and lightly built, with attractively proportioned shoulders suited to modelling menswear, a lean torso, and lean limbs without pronounced muscular bulk. He is modestly taller than Lynleit at 169 cm.'],
       ['Distinguishing features', 'Fair complexion, refined angular features, deep-set expressive eyes, and a composed, slightly aloof gaze with a sharp, elegant edge.'],
-      ['Bearing', 'Balanced, relaxed posture and economical movement.']
+      ['Bearing', 'Balanced, relaxed posture and economical movement. His overall impression combines a poet\'s elegance with a tactician\'s composure.']
     ],
     equipment: [{ label: 'Personal field object', title: "Kyrien's whiskey flask", meta: ['Small personal flask', 'Whiskey', 'Consistent pocket'], detail: 'Kyrien reserves a small drink for exceptional danger, exhaustion, distress, or a difficult personal moment. He sometimes calls it medicine. Lynleit learns its usual pocket.', href: 'items.html?item=kyriens-whiskey-flask' }],
     personalitySummary: 'Kyrien speaks little, rarely smiles, and wants to win. Cards, chess, and a gunfight can all provoke the same stubbornness. Cheating can make him abandon the safer objective. He notices things others miss in his surroundings and in unfolding events, looking first for danger in unfamiliar behavior. An explanation that seems faulty bothers him even when the method works. He keeps thinking about it in the background, sometimes reaching an answer and acting before he can explain how he got there. If he is wrong, he wants to find the assumption that misled him and avoid repeating the mistake.',
@@ -126,7 +126,7 @@ const profileSeeds = [
     physical: [
       ['Hair', 'Short black hair with an uneven forward fringe.'],
       ['Eyes', 'Crimson red.'],
-      ['Height and build', 'Average height with a lean, athletic build.'],
+      ['Height and build', 'Lean and athletic, similar to Felix in height and build.'],
       ['Distinguishing features', 'A pale complexion, narrow eyes, and no conspicuous ornament or identifying feature.']
     ],
     personalitySummary: 'Tien works quietly, acts quickly, and adapts to immediate danger. As Helena\'s concealed bodyguard and assassin, he relies on surprise and precise execution.',
@@ -143,7 +143,7 @@ const profileSeeds = [
     physical: [
       ['Hair', 'Short dark-brown hair swept back from the face.'],
       ['Eyes', 'Clear blue.'],
-      ['Height and build', 'Tall, broad-shouldered, and solidly built.'],
+      ['Height and build', 'Shorter than Reiner and around the same height as Kyrien and Felix, with average shoulder breadth and a relatively well-built frame.'],
       ['Distinguishing features', 'Heavy brows, a trimmed moustache and goatee, and short stubble along the jaw.']
     ],
     personalitySummary: 'Fionn prepares for threats before other people can see their shape. He prefers hidden safeguards, indirect control, long-term containment, and institutions built to survive dangers that have not yet arrived.',
@@ -167,7 +167,7 @@ const profileSeeds = [
     physical: [
       ['Hair', 'Short white hair over darker clipped sides.'],
       ['Eyes', 'Steel grey.'],
-      ['Height and build', 'Average height with a stocky, muscular build.'],
+      ['Height and build', 'Around the same height as Kyrien and Felix, with a stocky, muscular build.'],
       ['Distinguishing features', 'Heavy brows, a weathered face, and short chin stubble.']
     ],
     personalitySummary: 'Heyk relies on training, professional standards, and procedures proven under pressure. When a system fails, he looks first for the discipline, preparation, or institutional correction that could prevent the same loss from happening again.',
@@ -205,7 +205,7 @@ const profileSeeds = [
     physical: [
       ['Hair', 'Medium-length silver-white hair swept back with loose strands falling over the forehead.'],
       ['Eyes', 'Red.'],
-      ['Height and build', 'Tall with a lean, straight-backed build.'],
+      ['Height and build', 'Tall, lean and straight-backed; his spare frame can appear underweight for his height.'],
       ['Distinguishing features', 'A very pale complexion, angular features, and narrow, severe eyes.']
     ],
     personalitySummary: 'Drake is strategic, introspective, patient, and attentive to patterns that others dismiss. His loyalty to duty, legitimacy, and the ducal system is deeply personal. Sherie can outperform him inside a room, but she does not replace the larger strategic judgment that makes him central to the conspiracy investigation.',
@@ -222,7 +222,7 @@ const profileSeeds = [
     physical: [
       ['Hair', 'Vivid orange hair swept back into sharp points and tied into a short tail.'],
       ['Eyes', 'Bright green.'],
-      ['Height and build', 'Average height with a lean, wiry build.'],
+      ['Height and build', 'About the same height as Kyrien, with a lean frame and a little more muscle from his MSF agent training.'],
       ['Distinguishing features', 'Expressive brows, quick facial movement, and a broad mischievous grin.']
     ],
     equipment: [
@@ -320,7 +320,7 @@ const profileSeeds = [
     physical: [
       ['Hair', 'Short, untidy charcoal hair with a loose forward fringe.'],
       ['Eyes', 'Blue-grey.'],
-      ['Height and build', 'Average height with a lean build.'],
+      ['Height and build', 'Tall, similar in height to Reiner and Drake, and lean. His natural skeletal proportions give him an attractive form despite little gym training.'],
       ['Distinguishing features', 'Light chin stubble and an animated, rapidly changing expression.']
     ],
     personalitySummary: 'Hiyu is driven by possibility, contradiction, and the pleasure of making an unlikely pattern click. He constantly experiences eureka moments, builds protocols while using them, and abandons a clean path as soon as a stranger one becomes interesting. He has a reputation for ignoring women because ideas consume his attention so completely. This also leaves him oblivious to the romantic tension slowly forming with Yulia.',
@@ -501,8 +501,13 @@ const appearanceComparisons = [
   { label: 'Chest fullness', chain: ['natalia', '>', 'helena', '≈', 'sherie', '≥', 'lynleit', '≈', 'yulia', '≈', 'myka'] }
 ];
 
+const maleAppearanceComparisons = [
+  { label: 'Height', chain: ['reiner', '≈', 'drake', '≈', 'hiyu', '>', 'fionn', '≈', 'heyk', '≈', 'kyrien', '≈', 'felix', '≈', 'tien'] }
+];
+
 function renderAppearanceComparison(profile) {
-  if (!appearanceComparisons[0].chain.includes(profile.slug)) return null;
+  const comparisons = [appearanceComparisons, maleAppearanceComparisons].find(rows => rows[0].chain.includes(profile.slug));
+  if (!comparisons) return null;
   const container = createElement('dd', 'appearance-comparison');
   container.dataset.noEntityLinks = '';
   const disclosure = createElement('details', 'appearance-comparison-disclosure');
@@ -511,7 +516,7 @@ function renderAppearanceComparison(profile) {
   table.setAttribute('aria-label', 'Relative proportions');
   const body = createElement('tbody');
   const meanings = { '>': 'greater than', '≥': 'comparable to or slightly greater than', '≈': 'broadly comparable to' };
-  appearanceComparisons.forEach(({ label, chain }) => {
+  comparisons.forEach(({ label, chain }) => {
     const row = createElement('tr');
     const heading = createElement('th', '', label);
     heading.scope = 'row';
@@ -537,7 +542,8 @@ function renderAppearanceComparison(profile) {
     body.append(row);
   });
   table.append(body);
-  const key = createElement('p', 'appearance-comparison-key', '> greater · ≈ comparable · ≥ comparable or slightly greater');
+  const keyText = comparisons === maleAppearanceComparisons ? '> taller · ≈ similar height' : '> greater · ≈ comparable · ≥ comparable or slightly greater';
+  const key = createElement('p', 'appearance-comparison-key', keyText);
   key.id = 'appearance-comparison-key';
   table.setAttribute('aria-describedby', key.id);
   disclosure.append(table, key);
