@@ -508,7 +508,7 @@ function renderAppearanceComparison(profile) {
   const disclosure = createElement('details', 'appearance-comparison-disclosure');
   disclosure.append(createElement('summary', '', 'Compare proportions'));
   const table = createElement('table', 'appearance-comparison-table');
-  table.append(createElement('caption', 'sr-only', 'Relative proportions'));
+  table.setAttribute('aria-label', 'Relative proportions');
   const body = createElement('tbody');
   const meanings = { '>': 'greater than', '≥': 'comparable to or slightly greater than', '≈': 'broadly comparable to' };
   appearanceComparisons.forEach(({ label, chain }) => {

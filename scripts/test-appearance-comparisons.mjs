@@ -18,6 +18,7 @@ export async function testAppearanceComparisons(page, origin, engine) {
       assert.ok((await toggle.boundingBox()).height >= 44);
       await toggle.click();
       assert.ok(await table.isVisible());
+      assert.ok((await table.locator('th').first().boundingBox()).width < (await table.boundingBox()).width * .35, `${engine}: comparison label column grew too wide`);
       if (slug === 'lynleit' && width === 390) {
         await toggle.focus();
         await page.keyboard.press('Enter');
