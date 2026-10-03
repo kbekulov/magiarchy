@@ -1,4 +1,4 @@
-import { publishedImagePath } from './test-image-paths.mjs';
+import { publishedImagePath, currentPublishedImagePath, currentArtworkId } from './test-image-paths.mjs';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
 
@@ -19,7 +19,7 @@ export async function testGalleryIntake(page, origin, engine) {
     await page.setViewportSize({ width, height: 900 });
     await visit('gallery.html');
     for (const [id] of images) {
-      const card = page.locator(`.gallery-card[data-image="${id}"]`);
+      const card = page.locator(`.gallery-card[data-image="${currentArtworkId(id)}"]`);
       const stack = await card.getAttribute('data-artwork-stack');
       if (stack) {
         assert.equal(await page.locator(`.gallery-card[data-artwork-stack="${stack}"]:not([hidden])`).count(), 1, `${id}: stack needs one catalog preview`);
@@ -38,8 +38,11 @@ export async function testGalleryIntake(page, origin, engine) {
         assert.equal(response.status(), 200);
         assert.deepEqual(await response.body(), fs.readFileSync(source));
       }
-      if (id === 'char-sherie-ivory-sofa-card-game') {
-        assert.equal(await page.locator('#gallery-image-versions a').count(), 15);
+      const originalCard = page.locator(`.gallery-card[data-image="${id}"]`);
+      const group = await originalCard.getAttribute('data-artwork-stack') || await originalCard.getAttribute('data-image-version-group');
+      if (group) {
+        const members = page.locator(`.gallery-card[data-artwork-stack="${group}"], .gallery-card[data-image-version-group="${group}"]`);
+        assert.equal(await page.locator('#gallery-image-versions a').count(), await members.count());
         assert.ok(await page.locator(`#gallery-image-versions a[href="gallery.html?image=${id}"][aria-current="page"]`).isVisible());
       } else {
         assert.equal(await page.locator('#gallery-image-versions a').count(), 0);
@@ -47,7 +50,7 @@ export async function testGalleryIntake(page, origin, engine) {
       }
       assert.ok(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1));
       await visit(`character.html?character=${character}`);
-      const preview = publishedImagePath(`media/gallery/previews/characters/${filename}.webp`);
+      const preview = currentPublishedImagePath(`media/gallery/previews/characters/${filename}.webp`);
       const button = page.locator('.profile-art-thumbnails button').filter({ has: page.locator(`img[src="${preview}"]`) });
       assert.equal(await button.count(), 1, `${id}: missing from profile viewer`);
       if (await page.locator('.profile-art-thumbnails button').count() > 1) {
@@ -56,7 +59,7 @@ export async function testGalleryIntake(page, origin, engine) {
         assert.ok(await button.isHidden(), 'A single portrait does not need navigation');
       }
       assert.equal(await button.getAttribute('aria-pressed'), 'true');
-      await page.locator(`.profile-portrait-strip img[src="${source}"]`).first().evaluate(image => image.decode());
+      await page.locator(`.profile-portrait-strip img[src="${currentPublishedImagePath(source)}"]`).first().evaluate(image => image.decode());
       assert.equal(await page.locator('.profile-art-thumbnails img[src$="-v1.webp"]').count(), 0, `${character}: retired portrait still in rotation`);
       if (id === 'char-lynleit-blue-gown-ballroom') assert.equal(await page.locator('.profile-art-era').textContent(), 'Arc 1');
       if (character === 'yulia') assert.equal(await page.locator('.profile-art-thumbnails img[src$="char-yulia-white-sweater.webp"]').count(), 0);

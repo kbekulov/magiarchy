@@ -18,7 +18,8 @@ export async function testSharedNight(page, origin, engine) {
   assert.ok(office.known.some(t=>t.includes('Natalia herself notified')));
   const anima = json('gallery/panels.json').find(r=>r.id==='anima-meets-female-cast');
   assert.equal(anima.nonCanon, true);
-  assert.equal(anima.panels.length, 13);
+  assert.equal(anima.panels.filter(panel => !panel.supersededBy).length, 13);
+  assert.equal(anima.panels.filter(panel => panel.supersededBy).length, anima.panels.filter(panel => panel.revisionOf).length);
   assert.equal(chapter.timelinePhase, null); assert.equal(moment.timelinePhase,null);
   assert.equal(moment.characters.length,6);
   assert.equal(chapter.defaultVersion, 'v2');

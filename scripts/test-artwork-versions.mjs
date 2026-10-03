@@ -1,4 +1,4 @@
-import { publishedImagePath } from './test-image-paths.mjs';
+import { publishedImagePath, currentPublishedImagePath, currentArtworkId } from './test-image-paths.mjs';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import { testGalleryFilters } from './test-gallery-filters.mjs';
@@ -82,7 +82,7 @@ export async function testArtworkVersions(page, origin, engine) {
       const chibi = card.locator('.character-chibi');
       // WebKit waits for lazy-loaded cards to enter the viewport before decoding.
       await card.evaluate(element => element.scrollIntoView({ block: 'center' }));
-      const preview = publishedImagePath(`media/gallery/previews/chibis/${filename}.webp`);
+      const preview = currentPublishedImagePath(`media/gallery/previews/chibis/${filename}.webp`);
       await page.waitForFunction(({ name, preview }) => {
         const img = document.querySelector(`[data-name="${name}"] .character-chibi`);
         return img?.complete && img.naturalWidth > 0 && new URL(img.currentSrc).pathname === `/${preview}`;
@@ -128,13 +128,13 @@ export async function testArtworkVersions(page, origin, engine) {
     await page.goto(`${origin}/gallery.html`);
     await page.waitForLoadState('networkidle');
     assert.ok(await page.locator('[data-image-version-group="sherie-study-01"][data-image-version="v1"]').isHidden());
-    assert.ok(await page.locator('[data-image-version-group="sherie-study-01"][data-image-version="v2"]').isVisible());
+    assert.ok(await page.locator('[data-image-version-group="sherie-study-01"][data-image-version-default="true"]').isVisible());
     await page.goto(`${origin}/gallery.html?image=char-sherie-1`);
     await page.waitForLoadState('networkidle');
     const nav = page.locator('#gallery-image-versions');
-    assert.equal(await nav.locator('a').count(), 2);
+    assert.equal(await nav.locator('a').count(), await page.locator('[data-image-version-group="sherie-study-01"]').count());
     assert.ok((await nav.locator('[aria-current]').innerText()).includes('v1'));
-    await nav.getByRole('link', { name: 'v2 · Ankle boots · Default', exact: true }).click();
+    await nav.locator('a[href="gallery.html?image=char-sherie-1-v2-ankle-boots"]').click();
     await page.waitForURL('**/gallery.html?image=char-sherie-1-v2-ankle-boots');
     await page.waitForLoadState('networkidle');
     assert.ok((await nav.locator('[aria-current]').innerText()).includes('v2'));
@@ -143,7 +143,7 @@ export async function testArtworkVersions(page, origin, engine) {
     await nav.scrollIntoViewIfNeeded();
     assert.ok(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1));
     await page.screenshot({ path: `test-results/${engine}-artwork-versions-${width}.png` });
-    await nav.getByRole('link', { name: 'v1 · Original heels', exact: true }).focus();
+    await nav.locator('a[href="gallery.html?image=char-sherie-1"]').focus();
     await page.keyboard.press('Enter');
     await page.waitForURL('**/gallery.html?image=char-sherie-1');
     assert.equal(await page.locator('#gallery-detail-source').getAttribute('href'), 'media/gallery/images/characters/FULL-char-sherie-1-img-000024.png');

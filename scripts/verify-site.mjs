@@ -15,6 +15,11 @@ const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const read = file => fs.readFileSync(path.join(root, file), 'utf8');
 const json = file => JSON.parse(read(file));
 const htmlFiles = fs.readdirSync(root).filter(file => file.endsWith('.html'));
+const pagesExclusions = [...read('_config.yml').matchAll(/^\s*-\s*([a-z_-]+)\s*$/gm)].map(match => match[1]);
+for (const folder of ['backlog', 'workshop', 'output', 'node_modules', 'test-results']) {
+  assert.ok(pagesExclusions.includes(folder), `Pages must exclude ${folder}/`);
+}
+assert.ok(!fs.existsSync(path.join(root, '.nojekyll')), 'Bypassing Jekyll would bypass the private-source publication exclusions');
 for (const card of read('gallery.html').matchAll(/<figure\b[^>]*\bclass="gallery-card[^>]*>/g)) {
   assert.ok(/data-art-finish="(?:pencil|colored)"/.test(card[0]), 'Gallery artwork needs explicit pencil or colored finish metadata');
 }
@@ -27,6 +32,7 @@ function checkUrl(href, source) {
   if (/^(https?:|mailto:|tel:|data:|javascript:)/.test(href)) return;
   const url = new URL(decode(href), `https://archive.local/${source}`);
   const file = decodeURIComponent(url.pathname).slice(1);
+  assert.ok(!pagesExclusions.includes(file.split('/')[0]), `${source}: links to unpublished source ${href}`);
   assert.ok(fs.existsSync(path.join(root, file)), `${source}: missing ${href}`);
   if (url.hash && file.endsWith('.html') && !dynamicAnchors.has(file)) {
     assert.ok(read(file).includes(`id="${decodeURIComponent(url.hash.slice(1))}"`), `${source}: missing anchor ${href}`);

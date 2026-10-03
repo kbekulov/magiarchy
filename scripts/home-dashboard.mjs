@@ -100,7 +100,7 @@ export function buildDashboard(root) {
     ['Identity & inheritance', ['Identity', 'Inheritance'], '#8e9cbb'],
     ['Humor & ordinary life', ['Humor', 'Ordinary life'], '#a4aa86']
   ].map(([name, members, color]) => ({ name, members, color, weight: themes.filter(t => members.includes(t.name)).reduce((sum, t) => sum + t.weight, 0), href: themes.find(t => t.name === members[0]).href }));
-  const panels = json('gallery/panels.json').filter(set => !set.hScene && !set.placeholder && !set.nonCanon).flatMap(set => set.panels.map(panel => ({
+  const panels = json('gallery/panels.json').filter(set => !set.hScene && !set.placeholder && !set.nonCanon).flatMap(set => set.panels.filter(panel => !panel.supersededBy).map(panel => ({
     id: `${set.id}-${panel.id}`, set: set.id, title: set.title, label: panel.label, caption: panel.title, alt: panel.alt,
     src: panel.display, width: panel.width, height: panel.height, href: `gallery.html?panels=${set.id}#${panel.id}`
   })));

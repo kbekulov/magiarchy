@@ -30,7 +30,7 @@ export async function testSeasonalWardrobe(page, origin, engine) {
     await visit('gallery.html?season=seasonal');
     const cards = await page.locator('.gallery-card[data-season]').evaluateAll(nodes => nodes.map(node => ({
       id: node.dataset.image, character: node.dataset.character, season: node.dataset.season,
-      stack: node.dataset.artworkStack, source: node.querySelector('img').getAttribute('src')
+      stack: node.dataset.artworkStack, source: node.querySelector('img').getAttribute('src'), superseded: node.dataset.imageRevisionSuperseded === 'true'
     })));
     assert.equal(cards.length, images.length);
     assert.equal(await visible().count(), new Set(cards.map(card => card.character)).size);
@@ -88,7 +88,7 @@ export async function testSeasonalWardrobe(page, origin, engine) {
         const identity = images.find(image => image.source === card.source);
         assert.ok(identity, `${card.id}: original registered`);
         assert.match(identity.source, /\/FULL-char-.+-seasonal-(spring|summer|autumn|winter)-.+-img-\d{6}\.png$/);
-        assert.ok(entries.some(entry => entry.url === `gallery.html?image=${card.id}` && entry.current !== false), `${card.id}: searchable as current artwork`);
+        assert.ok(entries.some(entry => entry.url === `gallery.html?image=${card.id}` && (entry.current !== false) === !card.superseded), `${card.id}: search respects current and retained artwork`);
         await visit(`gallery.html?image=${card.id}`);
         await page.locator('#gallery-detail-image').evaluate(image => image.decode());
         assert.equal(await page.locator('#gallery-detail-source').getAttribute('href'), identity.source);

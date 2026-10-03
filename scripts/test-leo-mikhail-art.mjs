@@ -12,7 +12,9 @@ export async function testLeoMikhailArt(page, origin, engine) {
       await page.goto(`${origin}/gallery.html`);
       await page.waitForLoadState('networkidle');
       await page.locator('#gallery-character-filter').selectOption(slug);
-      assert.equal(await page.locator('.gallery-card:not([hidden])').count(), 3);
+      // Portrait, sketch, chibi stack and seasonal wardrobe stack.
+      assert.equal(await page.locator('.gallery-card:not([hidden])').count(), 4);
+      assert.equal(await page.locator(`.gallery-card[data-artwork-stack="${slug}-seasonal-wardrobe"]:not([hidden])`).count(), 1);
       await page.goto(`${origin}/gallery.html?image=char-${slug}-${portrait}`);
       await page.waitForLoadState('networkidle');
       await page.locator('#gallery-detail-image').evaluate(image => image.decode());

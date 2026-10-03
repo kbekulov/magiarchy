@@ -6,7 +6,7 @@ export async function testFanServiceIntake(page, origin, engine) {
     await page.setViewportSize({ width, height: 900 });
     await page.goto(origin + '/gallery.html?fan-service=1');
     await page.waitForLoadState('networkidle');
-    const cards = page.locator('.gallery-card[data-fan-service="true"]');
+    const cards = page.locator('.gallery-card[data-fan-service="true"]:not([data-image-revision-superseded="true"])');
     assert.equal(await cards.count(), 32);
     assert.equal(await page.locator('.gallery-card:not([hidden])').count(), 6);
     assert.equal(await cards.locator('img').count(), 32);
@@ -23,7 +23,8 @@ export async function testFanServiceIntake(page, origin, engine) {
       const card = page.locator('[data-artwork-stack="' + character + '-fan-service"]:not([hidden])');
       await card.locator(':scope > a').click();
       await page.waitForLoadState('networkidle');
-      assert.equal(await page.locator('#gallery-image-versions a').count(), count);
+      assert.equal(await page.locator('.gallery-card[data-artwork-stack="' + character + '-fan-service"]:not([data-image-revision-superseded="true"])').count(), count);
+      assert.equal(await page.locator('#gallery-image-versions a').count(), await page.locator('.gallery-card[data-artwork-stack="' + character + '-fan-service"]').count());
       const links = await page.locator('#gallery-image-versions a').evaluateAll(items => items.map(item => item.getAttribute('href')));
       for (const link of links) {
         await page.goto(origin + '/' + link);
@@ -40,7 +41,7 @@ export async function testFanServiceIntake(page, origin, engine) {
     await page.screenshot({ path: 'test-results/' + engine + '-fan-service-intake-' + width + '.png' });
     await page.goto(origin + '/gallery.html?panels=anima-meets-female-cast#panel-10');
     await page.waitForLoadState('networkidle');
-    assert.equal(await page.locator('.scene-panel').count(), 13);
+    assert.equal(await page.locator('.panel-beat-artwork > .scene-panel').count(), 13);
     assert.match(await page.locator('#panel-medium').textContent(), /Non-canon/);
     assert.ok(await page.locator('img[src*="panel-10"]').count() > 0);
   }

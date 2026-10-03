@@ -1,0 +1,8 @@
+# Keep author intake and local development material out of the Pages artifact.
+# Source history stays in Git; public history lives in its registered site records.
+exclude:
+  - backlog
+  - workshop
+  - output
+  - node_modules
+  - test-results

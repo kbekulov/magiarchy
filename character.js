@@ -763,7 +763,7 @@ async function loadProfilePortrait(profile, portrait, note) {
     const galleryDocument = await loadGalleryCatalog();
     const filePattern = wildcardPattern(`char-*${profile.slug}*-*`);
     const artworks = Array.from(galleryDocument.querySelectorAll('.gallery-card'))
-      .filter((card) => (card.dataset.character ?? '').split(/\s+/).includes(profile.slug) && card.dataset.chibi === 'false' && card.dataset.profilePortrait !== 'false')
+      .filter((card) => (card.dataset.character ?? '').split(/\s+/).includes(profile.slug) && card.dataset.chibi === 'false' && card.dataset.profilePortrait !== 'false' && card.dataset.imageRevisionSuperseded !== 'true')
       .map((card) => card.querySelector('img'))
       .filter((image) => {
         const source = image?.getAttribute('src') ?? '';
@@ -1036,7 +1036,7 @@ function collectProfileRelationships(profile) {
 async function loadRelationshipChibis(nodes) {
   try {
     const galleryDocument = await loadGalleryCatalog();
-    const cards = Array.from(galleryDocument.querySelectorAll('.gallery-card[data-chibi="true"]'));
+    const cards = Array.from(galleryDocument.querySelectorAll('.gallery-card[data-chibi="true"]')).filter(card => card.dataset.imageRevisionSuperseded !== 'true');
     nodes.forEach(({ record, avatar }) => {
       const card = cards.find((candidate) => (candidate.dataset.character ?? '').split(/\s+/).includes(record.profile.slug));
       const artwork = card?.querySelector('img');

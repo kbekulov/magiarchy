@@ -49,6 +49,7 @@
     return img;
   }
   function slideshow(record) {
+    record = { ...record, panels: record.panels.filter(panel => !panel.supersededBy) };
     const root = $('#panel-slideshow'), stage = $('#panel-slideshow-stage');
     const caption = $('#panel-slide-caption'), toggle = $('#panel-slide-toggle');
     const motion = matchMedia('(prefers-reduced-motion: reduce)');
@@ -126,7 +127,8 @@
     $('#panel-title').textContent = $('#panel-crumb').textContent = record.title;
     $('#panel-summary').textContent = record.summary;
     $('#panel-medium').textContent = `${record.nonCanon ? 'Non-canon dream studies' : 'Scene panels'} / ${record.medium}`;
-    $('#panel-count').textContent = `${record.beats.length} ${record.nonCanon ? 'studies' : 'beats'} · ${record.panels.length} images`;
+    const originals = record.panels.filter(panel => panel.supersededBy).length;
+    $('#panel-count').textContent = `${record.beats.length} ${record.nonCanon ? 'studies' : 'beats'} · ${record.panels.length - originals} images${originals ? ` · ${originals} retained originals` : ''}`;
     const back = new URLSearchParams(params);
     back.delete('panels'); back.set('collection', 'panels');
     $('#panel-back').href = `gallery.html?${back}`;
@@ -159,7 +161,7 @@
       const title = node('h2', beat.title); title.id = `beat-${beat.id}`;
       section.setAttribute('aria-labelledby', title.id);
       const beatCopy = node('div');
-      beatCopy.append(node('span', beatPanels.length > 1 ? `${beatPanels.length} alternative compositions` : record.nonCanon ? 'Dream study' : 'Scene beat', 'eyebrow'), title);
+      beatCopy.append(node('span', beatPanels.some(p => p.revisionOf) ? 'Images and versions' : beatPanels.length > 1 ? `${beatPanels.length} alternative compositions` : record.nonCanon ? 'Dream study' : 'Scene beat', 'eyebrow'), title);
       heading.append(node('span', String(beatIndex + 1).padStart(2, '0'), 'panel-beat-number'), beatCopy);
       section.append(heading);
       const artwork = node('div', null, 'panel-beat-artwork');
@@ -191,12 +193,23 @@
         download.setAttribute('aria-label', `Download original ${panel.label.toLowerCase()}, ${format}`);
         caption.append(heading, download);
         figure.append(original, caption);
-        artwork.append(figure);
-        jump.addEventListener('click', () => { img.loading = 'eager'; figure.focus({ preventScroll: true }); });
+        if (panel.supersededBy) {
+          const history = node('details', null, 'panel-image-history');
+          history.append(node('summary', 'View retained original'), figure);
+          artwork.append(history);
+        } else artwork.append(figure);
+        jump.addEventListener('click', () => {
+          const history = figure.closest('details');
+          if (history) history.open = true;
+          img.loading = 'eager'; figure.focus({ preventScroll: true });
+        });
       }
     }
     function markSelected() {
       const selectedHash = record.panels.some(panel => `#${panel.id}` === location.hash) ? location.hash : `#${record.panels[0].id}`;
+      const selectedFigure = document.getElementById(selectedHash.slice(1));
+      const history = selectedFigure?.closest('details');
+      if (history) history.open = true;
       $('#panel-jump-links').querySelectorAll('a').forEach(anchor => {
         if (anchor.getAttribute('href') === selectedHash) anchor.setAttribute('aria-current', 'location');
         else anchor.removeAttribute('aria-current');

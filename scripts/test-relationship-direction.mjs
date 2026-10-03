@@ -1,4 +1,4 @@
-import { publishedImagePath } from './test-image-paths.mjs';
+import { publishedImagePath, currentArtworkId } from './test-image-paths.mjs';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
 
@@ -37,7 +37,7 @@ export async function testRelationshipDirection(page, origin, engine) {
   await visit('gallery.html');
   for (const slug of ['lynleit', 'kyrien']) {
     await page.locator('#gallery-character-filter').selectOption(slug);
-    assert.ok(await page.locator(`.gallery-card[data-image="${artwork}"]`).isVisible());
+    assert.ok(await page.locator(`.gallery-card[data-image="${currentArtworkId(artwork)}"]`).isVisible());
   }
   await visit('moments.html?moment=the-boat-beneath-the-bridge&version=v4');
   assert.ok(await page.locator(`#moment-connection-grid a[href="gallery.html?image=${artwork}"]`).isVisible());

@@ -14,7 +14,7 @@
     "mascots": [
       "anima"
     ],
-    "cover": "panel-10-magazine-v2",
+    "cover": "panel-10-magazine-v2-face-hair-v2",
     "beats": [
       {
         "id": "study-1",
@@ -59,9 +59,23 @@
     ],
     "panels": [
       {
+        "id": "panel-1-face-hair-v2",
+        "beat": "study-1",
+        "label": "Study 1 · v2",
+        "title": "Felix was looking",
+        "src": "media/gallery/panels/anima-meets-female-cast/FULL-anima-meets-female-cast-panel-1-felix-was-looking-face-hair-v2-img-000339.png",
+        "alt": "Sherie, Anima, Lynleit and Yulia share tea beneath puppet-like shadows. Sherie says, \"Felix was looking.\" Lynleit replies, \"He usually is.\" Yulia asks, \"Can we discuss something else?\"",
+        "width": 1536,
+        "height": 1024,
+        "bytes": 2487022,
+        "revisionOf": "panel-1",
+        "display": "media/gallery/previews/panels/PREV-anima-meets-female-cast-panel-1-face-hair-v2-display-img-000339.webp",
+        "thumbnail": "media/gallery/previews/panels/PREV-anima-meets-female-cast-panel-1-face-hair-v2-thumbnail-img-000339.webp"
+      },
+      {
         "id": "panel-1",
         "beat": "study-1",
-        "label": "Study 1",
+        "label": "Study 1 · Original",
         "title": "Felix was looking",
         "src": "media/gallery/panels/anima-meets-female-cast/FULL-anima-meets-female-cast-panel-1-felix-was-looking-img-000115.png",
         "alt": "Sherie, Anima, Lynleit and Yulia share tea beneath puppet-like shadows. Sherie says, \"Felix was looking.\" Lynleit replies, \"He usually is.\" Yulia asks, \"Can we discuss something else?\"",
@@ -69,12 +83,27 @@
         "height": 1024,
         "bytes": 2595471,
         "display": "media/gallery/previews/panels/PREV-anima-meets-female-cast-panel-1-display-img-000115.webp",
-        "thumbnail": "media/gallery/previews/panels/PREV-anima-meets-female-cast-panel-1-thumbnail-img-000115.webp"
+        "thumbnail": "media/gallery/previews/panels/PREV-anima-meets-female-cast-panel-1-thumbnail-img-000115.webp",
+        "supersededBy": "panel-1-face-hair-v2"
+      },
+      {
+        "id": "panel-2-face-hair-v2",
+        "beat": "study-2",
+        "label": "Study 2 · v2",
+        "title": "A whisper about Kyrien",
+        "src": "media/gallery/panels/anima-meets-female-cast/FULL-anima-meets-female-cast-panel-2-a-whisper-about-kyrien-face-hair-v2-img-000341.png",
+        "alt": "Anima whispers beside Sherie while Lynleit holds a letter and Yulia holds a notebook. Sherie asks, \"And what did Kyrien say?\" Lynleit answers, \"Very little.\" Yulia says, \"That sounds pleasant.\" Their shadows hang from Anima's strings.",
+        "width": 1536,
+        "height": 1024,
+        "bytes": 2482322,
+        "revisionOf": "panel-2",
+        "display": "media/gallery/previews/panels/PREV-anima-meets-female-cast-panel-2-face-hair-v2-display-img-000341.webp",
+        "thumbnail": "media/gallery/previews/panels/PREV-anima-meets-female-cast-panel-2-face-hair-v2-thumbnail-img-000341.webp"
       },
       {
         "id": "panel-2",
         "beat": "study-2",
-        "label": "Study 2",
+        "label": "Study 2 · Original",
         "title": "A whisper about Kyrien",
         "src": "media/gallery/panels/anima-meets-female-cast/FULL-anima-meets-female-cast-panel-2-a-whisper-about-kyrien-img-000117.png",
         "alt": "Anima whispers beside Sherie while Lynleit holds a letter and Yulia holds a notebook. Sherie asks, \"And what did Kyrien say?\" Lynleit answers, \"Very little.\" Yulia says, \"That sounds pleasant.\" Their shadows hang from Anima's strings.",
@@ -82,12 +111,27 @@
         "height": 1024,
         "bytes": 2713687,
         "display": "media/gallery/previews/panels/PREV-anima-meets-female-cast-panel-2-display-img-000117.webp",
-        "thumbnail": "media/gallery/previews/panels/PREV-anima-meets-female-cast-panel-2-thumbnail-img-000117.webp"
+        "thumbnail": "media/gallery/previews/panels/PREV-anima-meets-female-cast-panel-2-thumbnail-img-000117.webp",
+        "supersededBy": "panel-2-face-hair-v2"
+      },
+      {
+        "id": "panel-3-face-hair-v2",
+        "beat": "study-3",
+        "label": "Study 3 · v2",
+        "title": "Felix was looking: painted study",
+        "src": "media/gallery/panels/anima-meets-female-cast/FULL-anima-meets-female-cast-panel-3-felix-was-looking-painted-face-hair-v2-img-000342.png",
+        "alt": "A painted treatment of the tea-table composition: Sherie says, \"Felix was looking,\" Lynleit replies, \"He usually is,\" and Yulia asks to discuss something else. Anima sits between Sherie and Lynleit beneath a puppeteer's shadow.",
+        "width": 1536,
+        "height": 1024,
+        "bytes": 2593987,
+        "revisionOf": "panel-3",
+        "display": "media/gallery/previews/panels/PREV-anima-meets-female-cast-panel-3-face-hair-v2-display-img-000342.webp",
+        "thumbnail": "media/gallery/previews/panels/PREV-anima-meets-female-cast-panel-3-face-hair-v2-thumbnail-img-000342.webp"
       },
       {
         "id": "panel-3",
         "beat": "study-3",
-        "label": "Study 3",
+        "label": "Study 3 · Original",
         "title": "Felix was looking: painted study",
         "src": "media/gallery/panels/anima-meets-female-cast/FULL-anima-meets-female-cast-panel-3-felix-was-looking-painted-img-000118.png",
         "alt": "A painted treatment of the tea-table composition: Sherie says, \"Felix was looking,\" Lynleit replies, \"He usually is,\" and Yulia asks to discuss something else. Anima sits between Sherie and Lynleit beneath a puppeteer's shadow.",
@@ -95,12 +139,28 @@
         "height": 1024,
         "bytes": 2736237,
         "display": "media/gallery/previews/panels/PREV-anima-meets-female-cast-panel-3-display-img-000118.webp",
-        "thumbnail": "media/gallery/previews/panels/PREV-anima-meets-female-cast-panel-3-thumbnail-img-000118.webp"
+        "thumbnail": "media/gallery/previews/panels/PREV-anima-meets-female-cast-panel-3-thumbnail-img-000118.webp",
+        "supersededBy": "panel-3-face-hair-v2"
+      },
+      {
+        "id": "panel-4-face-hair-v2",
+        "beat": "study-4",
+        "label": "Study 4 · v2",
+        "title": "You noticed that too",
+        "src": "media/gallery/panels/anima-meets-female-cast/FULL-anima-meets-female-cast-panel-4-you-noticed-that-too-face-hair-v2-img-000343.png",
+        "alt": "By a moonlit window, Sherie holds cards beside Anima and asks, \"You noticed that too?\" Lynleit holds a teacup and replies, \"Unfortunately.\" Yulia watches with her notebook; puppet shadows cover the wall.",
+        "width": 1374,
+        "height": 1145,
+        "bytes": 2328607,
+        "composition": "v1",
+        "revisionOf": "panel-4",
+        "display": "media/gallery/previews/panels/PREV-anima-meets-female-cast-panel-4-face-hair-v2-display-img-000343.webp",
+        "thumbnail": "media/gallery/previews/panels/PREV-anima-meets-female-cast-panel-4-face-hair-v2-thumbnail-img-000343.webp"
       },
       {
         "id": "panel-4",
         "beat": "study-4",
-        "label": "Study 4",
+        "label": "Study 4 · Original",
         "title": "You noticed that too",
         "src": "media/gallery/panels/anima-meets-female-cast/FULL-anima-meets-female-cast-panel-4-you-noticed-that-too-img-000119.png",
         "alt": "By a moonlit window, Sherie holds cards beside Anima and asks, \"You noticed that too?\" Lynleit holds a teacup and replies, \"Unfortunately.\" Yulia watches with her notebook; puppet shadows cover the wall.",
@@ -109,12 +169,28 @@
         "bytes": 2497435,
         "display": "media/gallery/previews/panels/PREV-anima-meets-female-cast-panel-4-display-img-000119.webp",
         "thumbnail": "media/gallery/previews/panels/PREV-anima-meets-female-cast-panel-4-thumbnail-img-000119.webp",
-        "composition": "v1"
+        "composition": "v1",
+        "supersededBy": "panel-4-face-hair-v2"
+      },
+      {
+        "id": "panel-4-magazine-v2-face-hair-v2",
+        "beat": "study-4",
+        "label": "Magazine version · v2",
+        "composition": "v2",
+        "title": "You noticed that too",
+        "src": "media/gallery/panels/anima-meets-female-cast/FULL-anima-meets-female-cast-panel-4-you-noticed-that-too-magazine-v2-face-hair-v2-img-000350.png",
+        "alt": "Beside a blue moonlit window, Lynleit gestures with a teacup while Anima answers with open hands. Yulia raises a questioning hand beside her notebook, and Sherie smiles from a red chair with playing cards. Above them, Anima's shadow controls three smaller silhouettes with marionette strings.",
+        "width": 1024,
+        "height": 1536,
+        "bytes": 2030760,
+        "revisionOf": "panel-4-magazine-v2",
+        "display": "media/gallery/previews/panels/PREV-anima-meets-female-cast-panel-4-magazine-v2-face-hair-v2-display-img-000350.webp",
+        "thumbnail": "media/gallery/previews/panels/PREV-anima-meets-female-cast-panel-4-magazine-v2-face-hair-v2-thumbnail-img-000350.webp"
       },
       {
         "id": "panel-4-magazine-v2",
         "beat": "study-4",
-        "label": "Magazine version",
+        "label": "Magazine version · Original",
         "composition": "v2",
         "title": "You noticed that too",
         "src": "media/gallery/panels/anima-meets-female-cast/FULL-anima-meets-female-cast-panel-4-you-noticed-that-too-magazine-v2-img-000241.png",
@@ -123,12 +199,27 @@
         "height": 1536,
         "bytes": 2053263,
         "display": "media/gallery/previews/panels/PREV-anima-meets-female-cast-panel-4-magazine-v2-display-img-000241.webp",
-        "thumbnail": "media/gallery/previews/panels/PREV-anima-meets-female-cast-panel-4-magazine-v2-thumbnail-img-000241.webp"
+        "thumbnail": "media/gallery/previews/panels/PREV-anima-meets-female-cast-panel-4-magazine-v2-thumbnail-img-000241.webp",
+        "supersededBy": "panel-4-magazine-v2-face-hair-v2"
+      },
+      {
+        "id": "panel-5-face-hair-v2",
+        "beat": "study-5",
+        "label": "Study 5 · v2",
+        "title": "I meant to leave",
+        "src": "media/gallery/panels/anima-meets-female-cast/FULL-anima-meets-female-cast-panel-5-i-meant-to-leave-face-hair-v2-img-000344.png",
+        "alt": "Lynleit tells Anima, \"You are enjoying this.\" Anima answers, \"Very much.\" Sherie smiles behind a card while Yulia says, \"I meant to leave.\" Their shadows suggest strings held by Anima.",
+        "width": 1374,
+        "height": 1145,
+        "bytes": 2245428,
+        "revisionOf": "panel-5",
+        "display": "media/gallery/previews/panels/PREV-anima-meets-female-cast-panel-5-face-hair-v2-display-img-000344.webp",
+        "thumbnail": "media/gallery/previews/panels/PREV-anima-meets-female-cast-panel-5-face-hair-v2-thumbnail-img-000344.webp"
       },
       {
         "id": "panel-5",
         "beat": "study-5",
-        "label": "Study 5",
+        "label": "Study 5 · Original",
         "title": "I meant to leave",
         "src": "media/gallery/panels/anima-meets-female-cast/FULL-anima-meets-female-cast-panel-5-i-meant-to-leave-img-000120.png",
         "alt": "Lynleit tells Anima, \"You are enjoying this.\" Anima answers, \"Very much.\" Sherie smiles behind a card while Yulia says, \"I meant to leave.\" Their shadows suggest strings held by Anima.",
@@ -136,12 +227,28 @@
         "height": 1145,
         "bytes": 2469139,
         "display": "media/gallery/previews/panels/PREV-anima-meets-female-cast-panel-5-display-img-000120.webp",
-        "thumbnail": "media/gallery/previews/panels/PREV-anima-meets-female-cast-panel-5-thumbnail-img-000120.webp"
+        "thumbnail": "media/gallery/previews/panels/PREV-anima-meets-female-cast-panel-5-thumbnail-img-000120.webp",
+        "supersededBy": "panel-5-face-hair-v2"
+      },
+      {
+        "id": "panel-6-face-hair-v2",
+        "beat": "study-6",
+        "label": "Study 6 · v2",
+        "title": "Who poured mine?",
+        "src": "media/gallery/panels/anima-meets-female-cast/FULL-anima-meets-female-cast-panel-6-who-poured-mine-face-hair-v2-img-000345.png",
+        "alt": "Anima holds fine threads over the tea service. Sherie says, \"Felix does listen. Occasionally.\" Lynleit replies, \"To himself.\" Yulia studies her cup and asks, \"Who poured mine?\"",
+        "width": 1536,
+        "height": 1024,
+        "bytes": 2976843,
+        "composition": "v1",
+        "revisionOf": "panel-6",
+        "display": "media/gallery/previews/panels/PREV-anima-meets-female-cast-panel-6-face-hair-v2-display-img-000345.webp",
+        "thumbnail": "media/gallery/previews/panels/PREV-anima-meets-female-cast-panel-6-face-hair-v2-thumbnail-img-000345.webp"
       },
       {
         "id": "panel-6",
         "beat": "study-6",
-        "label": "Study 6",
+        "label": "Study 6 · Original",
         "title": "Who poured mine?",
         "src": "media/gallery/panels/anima-meets-female-cast/FULL-anima-meets-female-cast-panel-6-who-poured-mine-img-000121.png",
         "alt": "Anima holds fine threads over the tea service. Sherie says, \"Felix does listen. Occasionally.\" Lynleit replies, \"To himself.\" Yulia studies her cup and asks, \"Who poured mine?\"",
@@ -150,12 +257,28 @@
         "bytes": 3466791,
         "display": "media/gallery/previews/panels/PREV-anima-meets-female-cast-panel-6-display-img-000121.webp",
         "thumbnail": "media/gallery/previews/panels/PREV-anima-meets-female-cast-panel-6-thumbnail-img-000121.webp",
-        "composition": "v1"
+        "composition": "v1",
+        "supersededBy": "panel-6-face-hair-v2"
+      },
+      {
+        "id": "panel-6-magazine-v2-face-hair-v2",
+        "beat": "study-6",
+        "label": "Magazine version · v2",
+        "composition": "v2",
+        "title": "Who poured mine?",
+        "src": "media/gallery/panels/anima-meets-female-cast/FULL-anima-meets-female-cast-panel-6-who-poured-mine-magazine-v2-face-hair-v2-img-000351.png",
+        "alt": "In warm autumn window light, Sherie, Lynleit and Yulia talk around a tea table with the masked Anima. Sherie smiles with an open hand, Lynleit answers over her cup, and Yulia pauses above her notebook. On the wall, Anima's large shadow holds strings connected to the three women's shadows.",
+        "width": 1536,
+        "height": 1024,
+        "bytes": 2232832,
+        "revisionOf": "panel-6-magazine-v2",
+        "display": "media/gallery/previews/panels/PREV-anima-meets-female-cast-panel-6-magazine-v2-face-hair-v2-display-img-000351.webp",
+        "thumbnail": "media/gallery/previews/panels/PREV-anima-meets-female-cast-panel-6-magazine-v2-face-hair-v2-thumbnail-img-000351.webp"
       },
       {
         "id": "panel-6-magazine-v2",
         "beat": "study-6",
-        "label": "Magazine version",
+        "label": "Magazine version · Original",
         "composition": "v2",
         "title": "Who poured mine?",
         "src": "media/gallery/panels/anima-meets-female-cast/FULL-anima-meets-female-cast-panel-6-who-poured-mine-magazine-v2-img-000242.png",
@@ -164,12 +287,27 @@
         "height": 1024,
         "bytes": 2323096,
         "display": "media/gallery/previews/panels/PREV-anima-meets-female-cast-panel-6-magazine-v2-display-img-000242.webp",
-        "thumbnail": "media/gallery/previews/panels/PREV-anima-meets-female-cast-panel-6-magazine-v2-thumbnail-img-000242.webp"
+        "thumbnail": "media/gallery/previews/panels/PREV-anima-meets-female-cast-panel-6-magazine-v2-thumbnail-img-000242.webp",
+        "supersededBy": "panel-6-magazine-v2-face-hair-v2"
+      },
+      {
+        "id": "panel-7-face-hair-v2",
+        "beat": "study-7",
+        "label": "Study 7 · v2",
+        "title": "The reflection answers first",
+        "src": "media/gallery/panels/anima-meets-female-cast/FULL-anima-meets-female-cast-panel-7-the-reflection-answers-first-face-hair-v2-img-000346.png",
+        "alt": "The four women sit beside a mirror whose reflected expressions differ. Sherie says, \"You'd still go after him.\" Yulia says, \"Hiyu could try thinking before he goes.\" Her reflection replies, \"Someone has to.\" The sketch is labelled The Reflection Answers First.",
+        "width": 1536,
+        "height": 1024,
+        "bytes": 2992988,
+        "revisionOf": "panel-7",
+        "display": "media/gallery/previews/panels/PREV-anima-meets-female-cast-panel-7-face-hair-v2-display-img-000346.webp",
+        "thumbnail": "media/gallery/previews/panels/PREV-anima-meets-female-cast-panel-7-face-hair-v2-thumbnail-img-000346.webp"
       },
       {
         "id": "panel-7",
         "beat": "study-7",
-        "label": "Study 7",
+        "label": "Study 7 · Original",
         "title": "The reflection answers first",
         "src": "media/gallery/panels/anima-meets-female-cast/FULL-anima-meets-female-cast-panel-7-the-reflection-answers-first-img-000122.png",
         "alt": "The four women sit beside a mirror whose reflected expressions differ. Sherie says, \"You'd still go after him.\" Yulia says, \"Hiyu could try thinking before he goes.\" Her reflection replies, \"Someone has to.\" The sketch is labelled The Reflection Answers First.",
@@ -177,12 +315,27 @@
         "height": 1024,
         "bytes": 3340176,
         "display": "media/gallery/previews/panels/PREV-anima-meets-female-cast-panel-7-display-img-000122.webp",
-        "thumbnail": "media/gallery/previews/panels/PREV-anima-meets-female-cast-panel-7-thumbnail-img-000122.webp"
+        "thumbnail": "media/gallery/previews/panels/PREV-anima-meets-female-cast-panel-7-thumbnail-img-000122.webp",
+        "supersededBy": "panel-7-face-hair-v2"
+      },
+      {
+        "id": "panel-8-face-hair-v2",
+        "beat": "study-8",
+        "label": "Study 8 · v2",
+        "title": "A way out",
+        "src": "media/gallery/panels/anima-meets-female-cast/FULL-anima-meets-female-cast-panel-8-a-way-out-face-hair-v2-img-000347.png",
+        "alt": "Lynleit points to papers spread beneath tea and books, saying, \"He needs a way out.\" Sherie asks, \"Which one?\" Lynleit replies, \"That isn't funny.\" Anima touches a cup while Yulia watches.",
+        "width": 1536,
+        "height": 1024,
+        "bytes": 3019298,
+        "revisionOf": "panel-8",
+        "display": "media/gallery/previews/panels/PREV-anima-meets-female-cast-panel-8-face-hair-v2-display-img-000347.webp",
+        "thumbnail": "media/gallery/previews/panels/PREV-anima-meets-female-cast-panel-8-face-hair-v2-thumbnail-img-000347.webp"
       },
       {
         "id": "panel-8",
         "beat": "study-8",
-        "label": "Study 8",
+        "label": "Study 8 · Original",
         "title": "A way out",
         "src": "media/gallery/panels/anima-meets-female-cast/FULL-anima-meets-female-cast-panel-8-a-way-out-img-000123.png",
         "alt": "Lynleit points to papers spread beneath tea and books, saying, \"He needs a way out.\" Sherie asks, \"Which one?\" Lynleit replies, \"That isn't funny.\" Anima touches a cup while Yulia watches.",
@@ -190,12 +343,27 @@
         "height": 1024,
         "bytes": 3499032,
         "display": "media/gallery/previews/panels/PREV-anima-meets-female-cast-panel-8-display-img-000123.webp",
-        "thumbnail": "media/gallery/previews/panels/PREV-anima-meets-female-cast-panel-8-thumbnail-img-000123.webp"
+        "thumbnail": "media/gallery/previews/panels/PREV-anima-meets-female-cast-panel-8-thumbnail-img-000123.webp",
+        "supersededBy": "panel-8-face-hair-v2"
+      },
+      {
+        "id": "panel-9-face-hair-v2",
+        "beat": "study-9",
+        "label": "Study 9 · v2",
+        "title": "The reflection: painted study",
+        "src": "media/gallery/panels/anima-meets-female-cast/FULL-anima-meets-female-cast-panel-9-the-reflection-painted-face-hair-v2-img-000348.png",
+        "alt": "A painted treatment of the sofa and mirror scene. Sherie says, \"You'd still go after him.\" Yulia says, \"Hiyu could try thinking before he goes,\" while her smiling reflection answers, \"Someone has to.\" Anima sits beside Lynleit.",
+        "width": 1536,
+        "height": 1024,
+        "bytes": 2657009,
+        "revisionOf": "panel-9",
+        "display": "media/gallery/previews/panels/PREV-anima-meets-female-cast-panel-9-face-hair-v2-display-img-000348.webp",
+        "thumbnail": "media/gallery/previews/panels/PREV-anima-meets-female-cast-panel-9-face-hair-v2-thumbnail-img-000348.webp"
       },
       {
         "id": "panel-9",
         "beat": "study-9",
-        "label": "Study 9",
+        "label": "Study 9 · Original",
         "title": "The reflection: painted study",
         "src": "media/gallery/panels/anima-meets-female-cast/FULL-anima-meets-female-cast-panel-9-the-reflection-painted-img-000124.png",
         "alt": "A painted treatment of the sofa and mirror scene. Sherie says, \"You'd still go after him.\" Yulia says, \"Hiyu could try thinking before he goes,\" while her smiling reflection answers, \"Someone has to.\" Anima sits beside Lynleit.",
@@ -203,12 +371,28 @@
         "height": 1024,
         "bytes": 2981612,
         "display": "media/gallery/previews/panels/PREV-anima-meets-female-cast-panel-9-display-img-000124.webp",
-        "thumbnail": "media/gallery/previews/panels/PREV-anima-meets-female-cast-panel-9-thumbnail-img-000124.webp"
+        "thumbnail": "media/gallery/previews/panels/PREV-anima-meets-female-cast-panel-9-thumbnail-img-000124.webp",
+        "supersededBy": "panel-9-face-hair-v2"
+      },
+      {
+        "id": "panel-10-face-hair-v2",
+        "beat": "study-10",
+        "label": "Study 10 · v2",
+        "title": "Beneath the strings",
+        "src": "media/gallery/panels/anima-meets-female-cast/FULL-anima-meets-female-cast-panel-10-beneath-the-strings-face-hair-v2-img-000340.png",
+        "alt": "Anima reclines on a red sofa and gestures toward Lynleit holding a teacup, Sherie leaning on the sofa and Yulia clutching a notebook. Behind them, Anima's shadow holds strings attached to the three women's shadows.",
+        "width": 1536,
+        "height": 1024,
+        "bytes": 2112091,
+        "composition": "v1",
+        "revisionOf": "panel-10",
+        "display": "media/gallery/previews/panels/PREV-anima-meets-female-cast-panel-10-face-hair-v2-display-img-000340.webp",
+        "thumbnail": "media/gallery/previews/panels/PREV-anima-meets-female-cast-panel-10-face-hair-v2-thumbnail-img-000340.webp"
       },
       {
         "id": "panel-10",
         "beat": "study-10",
-        "label": "Study 10",
+        "label": "Study 10 · Original",
         "title": "Beneath the strings",
         "src": "media/gallery/panels/anima-meets-female-cast/FULL-anima-meets-female-cast-panel-10-beneath-the-strings-img-000116.png",
         "alt": "Anima reclines on a red sofa and gestures toward Lynleit holding a teacup, Sherie leaning on the sofa and Yulia clutching a notebook. Behind them, Anima's shadow holds strings attached to the three women's shadows.",
@@ -217,12 +401,28 @@
         "bytes": 2259705,
         "display": "media/gallery/previews/panels/PREV-anima-meets-female-cast-panel-10-display-img-000116.webp",
         "thumbnail": "media/gallery/previews/panels/PREV-anima-meets-female-cast-panel-10-thumbnail-img-000116.webp",
-        "composition": "v1"
+        "composition": "v1",
+        "supersededBy": "panel-10-face-hair-v2"
+      },
+      {
+        "id": "panel-10-magazine-v2-face-hair-v2",
+        "beat": "study-10",
+        "label": "Magazine version · v2",
+        "composition": "v2",
+        "title": "Beneath the strings",
+        "src": "media/gallery/panels/anima-meets-female-cast/FULL-anima-meets-female-cast-panel-10-beneath-the-strings-magazine-v2-face-hair-v2-img-000349.png",
+        "alt": "Anima gestures from a red sofa toward Lynleit, who holds a folded letter. Sherie perches on the armrest and joins the conversation while Yulia pauses with a pencil and notebook in a separate chair. Anima's enormous shadow stretches two hands across the wall, with strings leading to the three women's silhouettes.",
+        "width": 1536,
+        "height": 1024,
+        "bytes": 2064224,
+        "revisionOf": "panel-10-magazine-v2",
+        "display": "media/gallery/previews/panels/PREV-anima-meets-female-cast-panel-10-magazine-v2-face-hair-v2-display-img-000349.webp",
+        "thumbnail": "media/gallery/previews/panels/PREV-anima-meets-female-cast-panel-10-magazine-v2-face-hair-v2-thumbnail-img-000349.webp"
       },
       {
         "id": "panel-10-magazine-v2",
         "beat": "study-10",
-        "label": "Magazine version",
+        "label": "Magazine version · Original",
         "composition": "v2",
         "title": "Beneath the strings",
         "src": "media/gallery/panels/anima-meets-female-cast/FULL-anima-meets-female-cast-panel-10-beneath-the-strings-magazine-v2-img-000240.png",
@@ -231,7 +431,8 @@
         "height": 1024,
         "bytes": 2114958,
         "display": "media/gallery/previews/panels/PREV-anima-meets-female-cast-panel-10-magazine-v2-display-img-000240.webp",
-        "thumbnail": "media/gallery/previews/panels/PREV-anima-meets-female-cast-panel-10-magazine-v2-thumbnail-img-000240.webp"
+        "thumbnail": "media/gallery/previews/panels/PREV-anima-meets-female-cast-panel-10-magazine-v2-thumbnail-img-000240.webp",
+        "supersededBy": "panel-10-magazine-v2-face-hair-v2"
       }
     ],
     "sceneSummary": [
@@ -252,7 +453,7 @@
       "slug": "unresolved-tension",
       "version": "v1"
     },
-    "cover": "panel-5",
+    "cover": "panel-5-face-hair-v2",
     "beats": [
       {
         "id": "beat-1",
@@ -311,9 +512,23 @@
         "thumbnail": "media/gallery/previews/panels/PREV-sherie-felix-unresolved-tension-r2-panel-2-thumbnail-img-000148.webp"
       },
       {
+        "id": "panel-5-face-hair-v2",
+        "beat": "beat-5",
+        "label": "Panel 3 · v2",
+        "title": "Cards on the sofa",
+        "src": "media/gallery/panels/sherie-felix-unresolved-tension/FULL-sherie-felix-unresolved-tension-panel-3-r2-face-hair-v2-img-000317.png",
+        "alt": "Sherie reclines on a red and gold sofa with bent knees, holding red-backed playing cards in one hand and resting her cheek on the other.",
+        "width": 1536,
+        "height": 1024,
+        "bytes": 2725618,
+        "revisionOf": "panel-5",
+        "display": "media/gallery/previews/panels/PREV-sherie-felix-unresolved-tension-r2-panel-5-face-hair-v2-display-img-000317.webp",
+        "thumbnail": "media/gallery/previews/panels/PREV-sherie-felix-unresolved-tension-r2-panel-5-face-hair-v2-thumbnail-img-000317.webp"
+      },
+      {
         "id": "panel-5",
         "beat": "beat-5",
-        "label": "Panel 3",
+        "label": "Panel 3 · Original",
         "title": "Cards on the sofa",
         "src": "media/gallery/panels/sherie-felix-unresolved-tension/FULL-sherie-felix-unresolved-tension-panel-3-r2-img-000149.png",
         "alt": "Sherie reclines on a red and gold sofa with bent knees, holding red-backed playing cards in one hand and resting her cheek on the other.",
@@ -321,12 +536,27 @@
         "height": 1024,
         "bytes": 2639303,
         "display": "media/gallery/previews/panels/PREV-sherie-felix-unresolved-tension-r2-panel-5-display-img-000149.webp",
-        "thumbnail": "media/gallery/previews/panels/PREV-sherie-felix-unresolved-tension-r2-panel-5-thumbnail-img-000149.webp"
+        "thumbnail": "media/gallery/previews/panels/PREV-sherie-felix-unresolved-tension-r2-panel-5-thumbnail-img-000149.webp",
+        "supersededBy": "panel-5-face-hair-v2"
+      },
+      {
+        "id": "panel-3-face-hair-v2",
+        "beat": "beat-3",
+        "label": "Panel 4 · v2",
+        "title": "Mm.",
+        "src": "media/gallery/panels/sherie-felix-unresolved-tension/FULL-sherie-felix-unresolved-tension-panel-4-r2-face-hair-v2-img-000318.png",
+        "alt": "Sherie looks over the edge of her cards in a close-up sketch, with \"Mm.\" beside her face.",
+        "width": 1672,
+        "height": 941,
+        "bytes": 2413152,
+        "revisionOf": "panel-3",
+        "display": "media/gallery/previews/panels/PREV-sherie-felix-unresolved-tension-r2-panel-3-face-hair-v2-display-img-000318.webp",
+        "thumbnail": "media/gallery/previews/panels/PREV-sherie-felix-unresolved-tension-r2-panel-3-face-hair-v2-thumbnail-img-000318.webp"
       },
       {
         "id": "panel-3",
         "beat": "beat-3",
-        "label": "Panel 4",
+        "label": "Panel 4 · Original",
         "title": "Mm.",
         "src": "media/gallery/panels/sherie-felix-unresolved-tension/FULL-sherie-felix-unresolved-tension-panel-4-r2-img-000150.png",
         "alt": "Sherie looks over the edge of her cards in a close-up sketch, with \"Mm.\" beside her face.",
@@ -334,12 +564,27 @@
         "height": 941,
         "bytes": 2206497,
         "display": "media/gallery/previews/panels/PREV-sherie-felix-unresolved-tension-r2-panel-3-display-img-000150.webp",
-        "thumbnail": "media/gallery/previews/panels/PREV-sherie-felix-unresolved-tension-r2-panel-3-thumbnail-img-000150.webp"
+        "thumbnail": "media/gallery/previews/panels/PREV-sherie-felix-unresolved-tension-r2-panel-3-thumbnail-img-000150.webp",
+        "supersededBy": "panel-3-face-hair-v2"
+      },
+      {
+        "id": "panel-4-face-hair-v2",
+        "beat": "beat-4",
+        "label": "Panel 5 · v2",
+        "title": "An unanswered look",
+        "src": "media/gallery/panels/sherie-felix-unresolved-tension/FULL-sherie-felix-unresolved-tension-panel-5-r2-face-hair-v2-img-000319.png",
+        "alt": "Felix sits across the table from Sherie and asks, \"Why do you keep looking at me like that?\"",
+        "width": 1672,
+        "height": 941,
+        "bytes": 2314496,
+        "revisionOf": "panel-4",
+        "display": "media/gallery/previews/panels/PREV-sherie-felix-unresolved-tension-r2-panel-4-face-hair-v2-display-img-000319.webp",
+        "thumbnail": "media/gallery/previews/panels/PREV-sherie-felix-unresolved-tension-r2-panel-4-face-hair-v2-thumbnail-img-000319.webp"
       },
       {
         "id": "panel-4",
         "beat": "beat-4",
-        "label": "Panel 5",
+        "label": "Panel 5 · Original",
         "title": "An unanswered look",
         "src": "media/gallery/panels/sherie-felix-unresolved-tension/FULL-sherie-felix-unresolved-tension-panel-5-r2-img-000151.png",
         "alt": "Felix sits across the table from Sherie and asks, \"Why do you keep looking at me like that?\"",
@@ -347,7 +592,8 @@
         "height": 941,
         "bytes": 2320801,
         "display": "media/gallery/previews/panels/PREV-sherie-felix-unresolved-tension-r2-panel-4-display-img-000151.webp",
-        "thumbnail": "media/gallery/previews/panels/PREV-sherie-felix-unresolved-tension-r2-panel-4-thumbnail-img-000151.webp"
+        "thumbnail": "media/gallery/previews/panels/PREV-sherie-felix-unresolved-tension-r2-panel-4-thumbnail-img-000151.webp",
+        "supersededBy": "panel-4-face-hair-v2"
       },
       {
         "id": "panel-6",
@@ -363,9 +609,23 @@
         "thumbnail": "media/gallery/previews/panels/PREV-sherie-felix-unresolved-tension-r2-panel-6-thumbnail-img-000152.webp"
       },
       {
+        "id": "panel-7-face-hair-v2",
+        "beat": "beat-7",
+        "label": "Panel 7 · v2",
+        "title": "Settling back",
+        "src": "media/gallery/panels/sherie-felix-unresolved-tension/FULL-sherie-felix-unresolved-tension-panel-7-r2-face-hair-v2-img-000320.png",
+        "alt": "Sherie settles back along the sofa with her cards in one hand and her head resting against the other.",
+        "width": 1672,
+        "height": 941,
+        "bytes": 2117499,
+        "revisionOf": "panel-7",
+        "display": "media/gallery/previews/panels/PREV-sherie-felix-unresolved-tension-r2-panel-7-face-hair-v2-display-img-000320.webp",
+        "thumbnail": "media/gallery/previews/panels/PREV-sherie-felix-unresolved-tension-r2-panel-7-face-hair-v2-thumbnail-img-000320.webp"
+      },
+      {
         "id": "panel-7",
         "beat": "beat-7",
-        "label": "Panel 7",
+        "label": "Panel 7 · Original",
         "title": "Settling back",
         "src": "media/gallery/panels/sherie-felix-unresolved-tension/FULL-sherie-felix-unresolved-tension-panel-7-r2-img-000153.png",
         "alt": "Sherie settles back along the sofa with her cards in one hand and her head resting against the other.",
@@ -373,7 +633,8 @@
         "height": 941,
         "bytes": 1967111,
         "display": "media/gallery/previews/panels/PREV-sherie-felix-unresolved-tension-r2-panel-7-display-img-000153.webp",
-        "thumbnail": "media/gallery/previews/panels/PREV-sherie-felix-unresolved-tension-r2-panel-7-thumbnail-img-000153.webp"
+        "thumbnail": "media/gallery/previews/panels/PREV-sherie-felix-unresolved-tension-r2-panel-7-thumbnail-img-000153.webp",
+        "supersededBy": "panel-7-face-hair-v2"
       }
     ],
     "revision": "r2",
@@ -395,7 +656,7 @@
       "slug": "university-days-before-the-spill",
       "version": "v1"
     },
-    "cover": "panel-1",
+    "cover": "panel-1-face-hair-v2",
     "beats": [
       {
         "id": "beat-1",
@@ -428,9 +689,23 @@
     ],
     "panels": [
       {
+        "id": "panel-1-face-hair-v2",
+        "beat": "beat-1",
+        "label": "Panel 1 · v2",
+        "title": "A theory in the rain",
+        "src": "media/gallery/panels/hiyu-yulia-university-days/FULL-hiyu-yulia-university-days-panel-1-face-hair-v2-img-000271.png",
+        "alt": "On a wet university walkway, Hiyu gestures as he talks to Yulia, who holds a dark notebook against her white sweater.",
+        "width": 1672,
+        "height": 941,
+        "bytes": 3022171,
+        "revisionOf": "panel-1",
+        "display": "media/gallery/previews/panels/PREV-hiyu-yulia-university-days-panel-1-face-hair-v2-display-img-000271.webp",
+        "thumbnail": "media/gallery/previews/panels/PREV-hiyu-yulia-university-days-panel-1-face-hair-v2-thumbnail-img-000271.webp"
+      },
+      {
         "id": "panel-1",
         "beat": "beat-1",
-        "label": "Panel 1",
+        "label": "Panel 1 · Original",
         "title": "A theory in the rain",
         "src": "media/gallery/panels/hiyu-yulia-university-days/FULL-hiyu-yulia-university-days-panel-1-img-000133.png",
         "alt": "On a wet university walkway, Hiyu gestures as he talks to Yulia, who holds a dark notebook against her white sweater.",
@@ -438,12 +713,27 @@
         "height": 941,
         "bytes": 3348547,
         "display": "media/gallery/previews/panels/PREV-hiyu-yulia-university-days-panel-1-display-img-000133.webp",
-        "thumbnail": "media/gallery/previews/panels/PREV-hiyu-yulia-university-days-panel-1-thumbnail-img-000133.webp"
+        "thumbnail": "media/gallery/previews/panels/PREV-hiyu-yulia-university-days-panel-1-thumbnail-img-000133.webp",
+        "supersededBy": "panel-1-face-hair-v2"
+      },
+      {
+        "id": "panel-2-face-hair-v2",
+        "beat": "beat-2",
+        "label": "Panel 2 · v2",
+        "title": "Interrupted",
+        "src": "media/gallery/panels/hiyu-yulia-university-days/FULL-hiyu-yulia-university-days-panel-2-face-hair-v2-img-000272.png",
+        "alt": "Hiyu turns sharply toward something outside the picture while Yulia looks past him, with the illuminated campus behind them.",
+        "width": 1671,
+        "height": 941,
+        "bytes": 2949696,
+        "revisionOf": "panel-2",
+        "display": "media/gallery/previews/panels/PREV-hiyu-yulia-university-days-panel-2-face-hair-v2-display-img-000272.webp",
+        "thumbnail": "media/gallery/previews/panels/PREV-hiyu-yulia-university-days-panel-2-face-hair-v2-thumbnail-img-000272.webp"
       },
       {
         "id": "panel-2",
         "beat": "beat-2",
-        "label": "Panel 2",
+        "label": "Panel 2 · Original",
         "title": "Interrupted",
         "src": "media/gallery/panels/hiyu-yulia-university-days/FULL-hiyu-yulia-university-days-panel-2-img-000134.png",
         "alt": "Hiyu turns sharply toward something outside the picture while Yulia looks past him, with the illuminated campus behind them.",
@@ -451,12 +741,27 @@
         "height": 941,
         "bytes": 3300597,
         "display": "media/gallery/previews/panels/PREV-hiyu-yulia-university-days-panel-2-display-img-000134.webp",
-        "thumbnail": "media/gallery/previews/panels/PREV-hiyu-yulia-university-days-panel-2-thumbnail-img-000134.webp"
+        "thumbnail": "media/gallery/previews/panels/PREV-hiyu-yulia-university-days-panel-2-thumbnail-img-000134.webp",
+        "supersededBy": "panel-2-face-hair-v2"
+      },
+      {
+        "id": "panel-3-face-hair-v2",
+        "beat": "beat-3",
+        "label": "Panel 3 · v2",
+        "title": "Beside the steps",
+        "src": "media/gallery/panels/hiyu-yulia-university-days/FULL-hiyu-yulia-university-days-panel-3-face-hair-v2-img-000273.png",
+        "alt": "Hiyu sits on a stone ledge and looks up at Yulia as she stands beside him with a hand on his upper arm.",
+        "width": 1672,
+        "height": 941,
+        "bytes": 3054511,
+        "revisionOf": "panel-3",
+        "display": "media/gallery/previews/panels/PREV-hiyu-yulia-university-days-panel-3-face-hair-v2-display-img-000273.webp",
+        "thumbnail": "media/gallery/previews/panels/PREV-hiyu-yulia-university-days-panel-3-face-hair-v2-thumbnail-img-000273.webp"
       },
       {
         "id": "panel-3",
         "beat": "beat-3",
-        "label": "Panel 3",
+        "label": "Panel 3 · Original",
         "title": "Beside the steps",
         "src": "media/gallery/panels/hiyu-yulia-university-days/FULL-hiyu-yulia-university-days-panel-3-img-000135.png",
         "alt": "Hiyu sits on a stone ledge and looks up at Yulia as she stands beside him with a hand on his upper arm.",
@@ -464,12 +769,27 @@
         "height": 941,
         "bytes": 3357170,
         "display": "media/gallery/previews/panels/PREV-hiyu-yulia-university-days-panel-3-display-img-000135.webp",
-        "thumbnail": "media/gallery/previews/panels/PREV-hiyu-yulia-university-days-panel-3-thumbnail-img-000135.webp"
+        "thumbnail": "media/gallery/previews/panels/PREV-hiyu-yulia-university-days-panel-3-thumbnail-img-000135.webp",
+        "supersededBy": "panel-3-face-hair-v2"
+      },
+      {
+        "id": "panel-4-face-hair-v2",
+        "beat": "beat-4",
+        "label": "Panel 4 · v2",
+        "title": "An argument on the way",
+        "src": "media/gallery/panels/hiyu-yulia-university-days/FULL-hiyu-yulia-university-days-panel-4-face-hair-v2-img-000274.png",
+        "alt": "Hiyu speaks animatedly as they walk beside a campus fence. Yulia keeps her arms folded and looks toward him.",
+        "width": 1672,
+        "height": 941,
+        "bytes": 3154636,
+        "revisionOf": "panel-4",
+        "display": "media/gallery/previews/panels/PREV-hiyu-yulia-university-days-panel-4-face-hair-v2-display-img-000274.webp",
+        "thumbnail": "media/gallery/previews/panels/PREV-hiyu-yulia-university-days-panel-4-face-hair-v2-thumbnail-img-000274.webp"
       },
       {
         "id": "panel-4",
         "beat": "beat-4",
-        "label": "Panel 4",
+        "label": "Panel 4 · Original",
         "title": "An argument on the way",
         "src": "media/gallery/panels/hiyu-yulia-university-days/FULL-hiyu-yulia-university-days-panel-4-img-000136.png",
         "alt": "Hiyu speaks animatedly as they walk beside a campus fence. Yulia keeps her arms folded and looks toward him.",
@@ -477,12 +797,27 @@
         "height": 941,
         "bytes": 3472518,
         "display": "media/gallery/previews/panels/PREV-hiyu-yulia-university-days-panel-4-display-img-000136.webp",
-        "thumbnail": "media/gallery/previews/panels/PREV-hiyu-yulia-university-days-panel-4-thumbnail-img-000136.webp"
+        "thumbnail": "media/gallery/previews/panels/PREV-hiyu-yulia-university-days-panel-4-thumbnail-img-000136.webp",
+        "supersededBy": "panel-4-face-hair-v2"
+      },
+      {
+        "id": "panel-5-face-hair-v2",
+        "beat": "beat-5",
+        "label": "Panel 5 · v2",
+        "title": "Still discussing it",
+        "src": "media/gallery/panels/hiyu-yulia-university-days/FULL-hiyu-yulia-university-days-panel-5-face-hair-v2-img-000275.png",
+        "alt": "Yulia sits with an open book on her lap and a hand at her temple while Hiyu gestures from the opposite chair. Books, papers and a noticeboard fill the room.",
+        "width": 1672,
+        "height": 941,
+        "bytes": 3051567,
+        "revisionOf": "panel-5",
+        "display": "media/gallery/previews/panels/PREV-hiyu-yulia-university-days-panel-5-face-hair-v2-display-img-000275.webp",
+        "thumbnail": "media/gallery/previews/panels/PREV-hiyu-yulia-university-days-panel-5-face-hair-v2-thumbnail-img-000275.webp"
       },
       {
         "id": "panel-5",
         "beat": "beat-5",
-        "label": "Panel 5",
+        "label": "Panel 5 · Original",
         "title": "Still discussing it",
         "src": "media/gallery/panels/hiyu-yulia-university-days/FULL-hiyu-yulia-university-days-panel-5-img-000137.png",
         "alt": "Yulia sits with an open book on her lap and a hand at her temple while Hiyu gestures from the opposite chair. Books, papers and a noticeboard fill the room.",
@@ -490,12 +825,27 @@
         "height": 941,
         "bytes": 3260533,
         "display": "media/gallery/previews/panels/PREV-hiyu-yulia-university-days-panel-5-display-img-000137.webp",
-        "thumbnail": "media/gallery/previews/panels/PREV-hiyu-yulia-university-days-panel-5-thumbnail-img-000137.webp"
+        "thumbnail": "media/gallery/previews/panels/PREV-hiyu-yulia-university-days-panel-5-thumbnail-img-000137.webp",
+        "supersededBy": "panel-5-face-hair-v2"
+      },
+      {
+        "id": "panel-6-face-hair-v2",
+        "beat": "beat-6",
+        "label": "Panel 6 · v2",
+        "title": "At the scene",
+        "src": "media/gallery/panels/hiyu-yulia-university-days/FULL-hiyu-yulia-university-days-panel-6-face-hair-v2-img-000276.png",
+        "alt": "Yulia pulls on blue gloves beside an evidence marker. Behind her, a uniformed officer speaks to Hiyu near a police car on the university grounds.",
+        "width": 1672,
+        "height": 941,
+        "bytes": 2891437,
+        "revisionOf": "panel-6",
+        "display": "media/gallery/previews/panels/PREV-hiyu-yulia-university-days-panel-6-face-hair-v2-display-img-000276.webp",
+        "thumbnail": "media/gallery/previews/panels/PREV-hiyu-yulia-university-days-panel-6-face-hair-v2-thumbnail-img-000276.webp"
       },
       {
         "id": "panel-6",
         "beat": "beat-6",
-        "label": "Panel 6",
+        "label": "Panel 6 · Original",
         "title": "At the scene",
         "src": "media/gallery/panels/hiyu-yulia-university-days/FULL-hiyu-yulia-university-days-panel-6-img-000138.png",
         "alt": "Yulia pulls on blue gloves beside an evidence marker. Behind her, a uniformed officer speaks to Hiyu near a police car on the university grounds.",
@@ -503,12 +853,27 @@
         "height": 941,
         "bytes": 3370018,
         "display": "media/gallery/previews/panels/PREV-hiyu-yulia-university-days-panel-6-display-img-000138.webp",
-        "thumbnail": "media/gallery/previews/panels/PREV-hiyu-yulia-university-days-panel-6-thumbnail-img-000138.webp"
+        "thumbnail": "media/gallery/previews/panels/PREV-hiyu-yulia-university-days-panel-6-thumbnail-img-000138.webp",
+        "supersededBy": "panel-6-face-hair-v2"
+      },
+      {
+        "id": "panel-7-face-hair-v2",
+        "beat": "beat-7",
+        "label": "Panel 7 · v2",
+        "title": "Checking the evidence",
+        "src": "media/gallery/panels/hiyu-yulia-university-days/FULL-hiyu-yulia-university-days-panel-7-face-hair-v2-img-000277.png",
+        "alt": "Yulia points to a page among photographs and papers spread across a desk while Hiyu leans beside her, watching her work.",
+        "width": 1672,
+        "height": 941,
+        "bytes": 3317621,
+        "revisionOf": "panel-7",
+        "display": "media/gallery/previews/panels/PREV-hiyu-yulia-university-days-panel-7-face-hair-v2-display-img-000277.webp",
+        "thumbnail": "media/gallery/previews/panels/PREV-hiyu-yulia-university-days-panel-7-face-hair-v2-thumbnail-img-000277.webp"
       },
       {
         "id": "panel-7",
         "beat": "beat-7",
-        "label": "Panel 7",
+        "label": "Panel 7 · Original",
         "title": "Checking the evidence",
         "src": "media/gallery/panels/hiyu-yulia-university-days/FULL-hiyu-yulia-university-days-panel-7-img-000139.png",
         "alt": "Yulia points to a page among photographs and papers spread across a desk while Hiyu leans beside her, watching her work.",
@@ -516,7 +881,8 @@
         "height": 941,
         "bytes": 3460961,
         "display": "media/gallery/previews/panels/PREV-hiyu-yulia-university-days-panel-7-display-img-000139.webp",
-        "thumbnail": "media/gallery/previews/panels/PREV-hiyu-yulia-university-days-panel-7-thumbnail-img-000139.webp"
+        "thumbnail": "media/gallery/previews/panels/PREV-hiyu-yulia-university-days-panel-7-thumbnail-img-000139.webp",
+        "supersededBy": "panel-7-face-hair-v2"
       }
     ],
     "sceneSummary": [
@@ -541,7 +907,7 @@
       "slug": "the-wrong-bank",
       "version": "v1"
     },
-    "cover": "panel-2",
+    "cover": "panel-2-face-hair-v2",
     "beats": [
       {
         "id": "beat-1",
@@ -562,9 +928,23 @@
     ],
     "panels": [
       {
+        "id": "panel-1-face-hair-v2",
+        "beat": "beat-1",
+        "label": "Panel 1 · v2",
+        "title": "What he saw",
+        "src": "media/gallery/panels/after-the-river/FULL-after-the-river-panel-1-face-hair-v2-img-000268.png",
+        "alt": "Lynleit looks back along a wet, misty park path and says, \"I think you saw something, and don't want to tell me.\"",
+        "width": 1672,
+        "height": 941,
+        "bytes": 2836854,
+        "revisionOf": "panel-1",
+        "display": "media/gallery/previews/panels/PREV-after-the-river-panel-1-face-hair-v2-display-img-000268.webp",
+        "thumbnail": "media/gallery/previews/panels/PREV-after-the-river-panel-1-face-hair-v2-thumbnail-img-000268.webp"
+      },
+      {
         "id": "panel-1",
         "beat": "beat-1",
-        "label": "Panel 1",
+        "label": "Panel 1 · Original",
         "title": "What he saw",
         "src": "media/gallery/panels/after-the-river/FULL-after-the-river-panel-1-img-000111.png",
         "alt": "Lynleit looks back along a wet, misty park path and says, \"I think you saw something, and don't want to tell me.\"",
@@ -572,12 +952,27 @@
         "height": 941,
         "bytes": 3030832,
         "display": "media/gallery/previews/panels/PREV-after-the-river-panel-1-display-img-000111.webp",
-        "thumbnail": "media/gallery/previews/panels/PREV-after-the-river-panel-1-thumbnail-img-000111.webp"
+        "thumbnail": "media/gallery/previews/panels/PREV-after-the-river-panel-1-thumbnail-img-000111.webp",
+        "supersededBy": "panel-1-face-hair-v2"
+      },
+      {
+        "id": "panel-2-face-hair-v2",
+        "beat": "beat-2",
+        "label": "Panel 2 · v2",
+        "title": "A reason to leave",
+        "src": "media/gallery/panels/after-the-river/FULL-after-the-river-panel-2-face-hair-v2-img-000269.png",
+        "alt": "Kyrien gestures toward Lynleit and asks whether they should leave as soon as possible. She walks ahead, gathering her wet hair, and asks, \"Are you scared?\"",
+        "width": 1672,
+        "height": 941,
+        "bytes": 2652819,
+        "revisionOf": "panel-2",
+        "display": "media/gallery/previews/panels/PREV-after-the-river-panel-2-face-hair-v2-display-img-000269.webp",
+        "thumbnail": "media/gallery/previews/panels/PREV-after-the-river-panel-2-face-hair-v2-thumbnail-img-000269.webp"
       },
       {
         "id": "panel-2",
         "beat": "beat-2",
-        "label": "Panel 2",
+        "label": "Panel 2 · Original",
         "title": "A reason to leave",
         "src": "media/gallery/panels/after-the-river/FULL-after-the-river-panel-2-img-000112.png",
         "alt": "Kyrien gestures toward Lynleit and asks whether they should leave as soon as possible. She walks ahead, gathering her wet hair, and asks, \"Are you scared?\"",
@@ -585,12 +980,27 @@
         "height": 941,
         "bytes": 2848431,
         "display": "media/gallery/previews/panels/PREV-after-the-river-panel-2-display-img-000112.webp",
-        "thumbnail": "media/gallery/previews/panels/PREV-after-the-river-panel-2-thumbnail-img-000112.webp"
+        "thumbnail": "media/gallery/previews/panels/PREV-after-the-river-panel-2-thumbnail-img-000112.webp",
+        "supersededBy": "panel-2-face-hair-v2"
+      },
+      {
+        "id": "panel-3-face-hair-v2",
+        "beat": "beat-3",
+        "label": "Panel 3 · v2",
+        "title": "The drowned girl",
+        "src": "media/gallery/panels/after-the-river/FULL-after-the-river-panel-3-face-hair-v2-img-000270.png",
+        "alt": "Lynleit looks toward the trees while Kyrien follows. Handwritten notes ask whether there is a connection to the drowned girl and describe Lynleit as still shaken by the river.",
+        "width": 1672,
+        "height": 941,
+        "bytes": 2381559,
+        "revisionOf": "panel-3",
+        "display": "media/gallery/previews/panels/PREV-after-the-river-panel-3-face-hair-v2-display-img-000270.webp",
+        "thumbnail": "media/gallery/previews/panels/PREV-after-the-river-panel-3-face-hair-v2-thumbnail-img-000270.webp"
       },
       {
         "id": "panel-3",
         "beat": "beat-3",
-        "label": "Panel 3",
+        "label": "Panel 3 · Original",
         "title": "The drowned girl",
         "src": "media/gallery/panels/after-the-river/FULL-after-the-river-panel-3-img-000113.png",
         "alt": "Lynleit looks toward the trees while Kyrien follows. Handwritten notes ask whether there is a connection to the drowned girl and describe Lynleit as still shaken by the river.",
@@ -598,12 +1008,27 @@
         "height": 941,
         "bytes": 2583946,
         "display": "media/gallery/previews/panels/PREV-after-the-river-panel-3-display-img-000113.webp",
-        "thumbnail": "media/gallery/previews/panels/PREV-after-the-river-panel-3-thumbnail-img-000113.webp"
+        "thumbnail": "media/gallery/previews/panels/PREV-after-the-river-panel-3-thumbnail-img-000113.webp",
+        "supersededBy": "panel-3-face-hair-v2"
+      },
+      {
+        "id": "panel-4-face-hair-v2",
+        "beat": "beat-4",
+        "label": "Panel 4 · v2",
+        "title": "Above the path",
+        "src": "media/gallery/panels/after-the-river/FULL-after-the-river-panel-4-face-hair-v2-img-000309.png",
+        "alt": "Seen over Kyrien's shoulder, Lynleit continues along the path beneath a dark, elongated shape among the branches. A note reads, \"It moves... The branches do not.\"",
+        "width": 1672,
+        "height": 941,
+        "bytes": 2820183,
+        "revisionOf": "panel-4",
+        "display": "media/gallery/previews/panels/PREV-after-the-river-panel-4-face-hair-v2-display-img-000309.webp",
+        "thumbnail": "media/gallery/previews/panels/PREV-after-the-river-panel-4-face-hair-v2-thumbnail-img-000309.webp"
       },
       {
         "id": "panel-4",
         "beat": "beat-4",
-        "label": "Panel 4",
+        "label": "Panel 4 · Original",
         "title": "Above the path",
         "src": "media/gallery/panels/after-the-river/FULL-after-the-river-panel-4-img-000114.png",
         "alt": "Seen over Kyrien's shoulder, Lynleit continues along the path beneath a dark, elongated shape among the branches. A note reads, \"It moves... The branches do not.\"",
@@ -611,7 +1036,8 @@
         "height": 941,
         "bytes": 3067232,
         "display": "media/gallery/previews/panels/PREV-after-the-river-panel-4-display-img-000114.webp",
-        "thumbnail": "media/gallery/previews/panels/PREV-after-the-river-panel-4-thumbnail-img-000114.webp"
+        "thumbnail": "media/gallery/previews/panels/PREV-after-the-river-panel-4-thumbnail-img-000114.webp",
+        "supersededBy": "panel-4-face-hair-v2"
       }
     ],
     "sceneSummary": [
@@ -636,7 +1062,7 @@
       "slug": "the-water-beneath-her-feet",
       "version": "v1"
     },
-    "cover": "panel-2",
+    "cover": "panel-2-face-hair-v2",
     "beats": [
       {
         "id": "submerged",
@@ -669,9 +1095,23 @@
     ],
     "panels": [
       {
+        "id": "panel-0a-face-hair-v2",
+        "beat": "submerged",
+        "label": "Sketch 1 · v2",
+        "title": "Beneath the surface",
+        "src": "media/gallery/panels/river-incident/FULL-river-incident-panel-1-sketch-r6-face-hair-v2-img-000278.png",
+        "alt": "Lynleit reaches upward underwater while hands grip her thighs and tall laced boots. Her hair floats above her; insets show her eye and the hands gripping a boot.",
+        "width": 1672,
+        "height": 941,
+        "bytes": 2541098,
+        "revisionOf": "panel-0a",
+        "display": "media/gallery/previews/panels/PREV-river-incident-r6-panel-0a-face-hair-v2-display-img-000278.webp",
+        "thumbnail": "media/gallery/previews/panels/PREV-river-incident-r6-panel-0a-face-hair-v2-thumbnail-img-000278.webp"
+      },
+      {
         "id": "panel-0a",
         "beat": "submerged",
-        "label": "Sketch 1",
+        "label": "Sketch 1 · Original",
         "title": "Beneath the surface",
         "src": "media/gallery/panels/river-incident/FULL-river-incident-panel-1-sketch-r6-img-000140.png",
         "alt": "Lynleit reaches upward underwater while hands grip her thighs and tall laced boots. Her hair floats above her; insets show her eye and the hands gripping a boot.",
@@ -679,12 +1119,27 @@
         "height": 941,
         "bytes": 1761127,
         "display": "media/gallery/previews/panels/PREV-river-incident-r6-panel-0a-display-img-000140.webp",
-        "thumbnail": "media/gallery/previews/panels/PREV-river-incident-r6-panel-0a-thumbnail-img-000140.webp"
+        "thumbnail": "media/gallery/previews/panels/PREV-river-incident-r6-panel-0a-thumbnail-img-000140.webp",
+        "supersededBy": "panel-0a-face-hair-v2"
+      },
+      {
+        "id": "panel-0b-face-hair-v2",
+        "beat": "reaching",
+        "label": "Sketch 2 · v2",
+        "title": "Reaching through the water",
+        "src": "media/gallery/panels/river-incident/FULL-river-incident-panel-2-sketch-r6-face-hair-v2-img-000279.png",
+        "alt": "Lynleit reaches toward the viewer underwater as hands hold her legs. A boot close-up sits in the lower right.",
+        "width": 1672,
+        "height": 941,
+        "bytes": 2759286,
+        "revisionOf": "panel-0b",
+        "display": "media/gallery/previews/panels/PREV-river-incident-r6-panel-0b-face-hair-v2-display-img-000279.webp",
+        "thumbnail": "media/gallery/previews/panels/PREV-river-incident-r6-panel-0b-face-hair-v2-thumbnail-img-000279.webp"
       },
       {
         "id": "panel-0b",
         "beat": "reaching",
-        "label": "Sketch 2",
+        "label": "Sketch 2 · Original",
         "title": "Reaching through the water",
         "src": "media/gallery/panels/river-incident/FULL-river-incident-panel-2-sketch-r6-img-000141.png",
         "alt": "Lynleit reaches toward the viewer underwater as hands hold her legs. A boot close-up sits in the lower right.",
@@ -692,12 +1147,27 @@
         "height": 941,
         "bytes": 1924420,
         "display": "media/gallery/previews/panels/PREV-river-incident-r6-panel-0b-display-img-000141.webp",
-        "thumbnail": "media/gallery/previews/panels/PREV-river-incident-r6-panel-0b-thumbnail-img-000141.webp"
+        "thumbnail": "media/gallery/previews/panels/PREV-river-incident-r6-panel-0b-thumbnail-img-000141.webp",
+        "supersededBy": "panel-0b-face-hair-v2"
+      },
+      {
+        "id": "panel-1-face-hair-v2",
+        "beat": "flame",
+        "label": "Sketch 3 · v2",
+        "title": "Flame underwater",
+        "src": "media/gallery/panels/river-incident/FULL-river-incident-panel-3-sketch-r6-face-hair-v2-img-000280.png",
+        "alt": "Blue flame surrounds Lynleit's hand as she grips an attacking arm underwater. Other submerged hands still clutch her tall boots; bubbles rise toward the surface.",
+        "width": 1672,
+        "height": 941,
+        "bytes": 2636088,
+        "revisionOf": "panel-1",
+        "display": "media/gallery/previews/panels/PREV-river-incident-r6-panel-1-face-hair-v2-display-img-000280.webp",
+        "thumbnail": "media/gallery/previews/panels/PREV-river-incident-r6-panel-1-face-hair-v2-thumbnail-img-000280.webp"
       },
       {
         "id": "panel-1",
         "beat": "flame",
-        "label": "Sketch 3",
+        "label": "Sketch 3 · Original",
         "title": "Flame underwater",
         "src": "media/gallery/panels/river-incident/FULL-river-incident-panel-3-sketch-r6-img-000142.png",
         "alt": "Blue flame surrounds Lynleit's hand as she grips an attacking arm underwater. Other submerged hands still clutch her tall boots; bubbles rise toward the surface.",
@@ -705,12 +1175,27 @@
         "height": 941,
         "bytes": 1882545,
         "display": "media/gallery/previews/panels/PREV-river-incident-r6-panel-1-display-img-000142.webp",
-        "thumbnail": "media/gallery/previews/panels/PREV-river-incident-r6-panel-1-thumbnail-img-000142.webp"
+        "thumbnail": "media/gallery/previews/panels/PREV-river-incident-r6-panel-1-thumbnail-img-000142.webp",
+        "supersededBy": "panel-1-face-hair-v2"
+      },
+      {
+        "id": "panel-2-face-hair-v2",
+        "beat": "surface",
+        "label": "Sketch 4 · v2",
+        "title": "The surface holds",
+        "src": "media/gallery/panels/river-incident/FULL-river-incident-panel-4-sketch-r6-face-hair-v2-img-000281.png",
+        "alt": "Lynleit braces her palm and boots on the river surface. Her wet hair hangs forward and ripples spread beneath each point of contact.",
+        "width": 1489,
+        "height": 1056,
+        "bytes": 2638372,
+        "revisionOf": "panel-2",
+        "display": "media/gallery/previews/panels/PREV-river-incident-r6-panel-2-face-hair-v2-display-img-000281.webp",
+        "thumbnail": "media/gallery/previews/panels/PREV-river-incident-r6-panel-2-face-hair-v2-thumbnail-img-000281.webp"
       },
       {
         "id": "panel-2",
         "beat": "surface",
-        "label": "Sketch 4",
+        "label": "Sketch 4 · Original",
         "title": "The surface holds",
         "src": "media/gallery/panels/river-incident/FULL-river-incident-panel-4-sketch-r6-img-000143.png",
         "alt": "Lynleit braces her palm and boots on the river surface. Her wet hair hangs forward and ripples spread beneath each point of contact.",
@@ -718,7 +1203,8 @@
         "height": 1056,
         "bytes": 1878694,
         "display": "media/gallery/previews/panels/PREV-river-incident-r6-panel-2-display-img-000143.webp",
-        "thumbnail": "media/gallery/previews/panels/PREV-river-incident-r6-panel-2-thumbnail-img-000143.webp"
+        "thumbnail": "media/gallery/previews/panels/PREV-river-incident-r6-panel-2-thumbnail-img-000143.webp",
+        "supersededBy": "panel-2-face-hair-v2"
       },
       {
         "id": "panel-3a",
@@ -778,7 +1264,7 @@
       "slug": "the-cat-in-the-family-house",
       "version": "v2"
     },
-    "cover": "panel-5",
+    "cover": "panel-5-face-hair-v2",
     "beats": [
       {
         "id": "noticed",
@@ -815,9 +1301,23 @@
     ],
     "panels": [
       {
+        "id": "panel-1-face-hair-v2",
+        "beat": "noticed",
+        "label": "Sketch 1 · v2",
+        "title": "Movement in the corridor",
+        "src": "media/gallery/panels/cat-incident/FULL-cat-incident-panel-1-sketch-face-hair-v2-img-000310.png",
+        "alt": "Lynleit pauses with her hand on a door handle as Ash stands in the long corridor behind her.",
+        "width": 1536,
+        "height": 1024,
+        "bytes": 2492025,
+        "revisionOf": "panel-1",
+        "display": "media/gallery/previews/panels/PREV-cat-incident-panel-1-face-hair-v2-display-img-000310.webp",
+        "thumbnail": "media/gallery/previews/panels/PREV-cat-incident-panel-1-face-hair-v2-thumbnail-img-000310.webp"
+      },
+      {
         "id": "panel-1",
         "beat": "noticed",
-        "label": "Sketch 1",
+        "label": "Sketch 1 · Original",
         "title": "Movement in the corridor",
         "src": "media/gallery/panels/cat-incident/FULL-cat-incident-panel-1-sketch-img-000125.png",
         "alt": "Lynleit pauses with her hand on a door handle as Ash stands in the long corridor behind her.",
@@ -825,12 +1325,27 @@
         "height": 1024,
         "bytes": 1596796,
         "display": "media/gallery/previews/panels/PREV-cat-incident-panel-1-display-img-000125.webp",
-        "thumbnail": "media/gallery/previews/panels/PREV-cat-incident-panel-1-thumbnail-img-000125.webp"
+        "thumbnail": "media/gallery/previews/panels/PREV-cat-incident-panel-1-thumbnail-img-000125.webp",
+        "supersededBy": "panel-1-face-hair-v2"
+      },
+      {
+        "id": "panel-2-face-hair-v2",
+        "beat": "corner",
+        "label": "Sketch 2 · v2",
+        "title": "Around the corner",
+        "src": "media/gallery/panels/cat-incident/FULL-cat-incident-panel-2-sketch-face-hair-v2-img-000311.png",
+        "alt": "Lynleit peeks around a corner while Ash passes close to the viewer, his tail raised.",
+        "width": 1536,
+        "height": 1024,
+        "bytes": 2469227,
+        "revisionOf": "panel-2",
+        "display": "media/gallery/previews/panels/PREV-cat-incident-panel-2-face-hair-v2-display-img-000311.webp",
+        "thumbnail": "media/gallery/previews/panels/PREV-cat-incident-panel-2-face-hair-v2-thumbnail-img-000311.webp"
       },
       {
         "id": "panel-2",
         "beat": "corner",
-        "label": "Sketch 2",
+        "label": "Sketch 2 · Original",
         "title": "Around the corner",
         "src": "media/gallery/panels/cat-incident/FULL-cat-incident-panel-2-sketch-img-000126.png",
         "alt": "Lynleit peeks around a corner while Ash passes close to the viewer, his tail raised.",
@@ -838,12 +1353,27 @@
         "height": 1024,
         "bytes": 1509797,
         "display": "media/gallery/previews/panels/PREV-cat-incident-panel-2-display-img-000126.webp",
-        "thumbnail": "media/gallery/previews/panels/PREV-cat-incident-panel-2-thumbnail-img-000126.webp"
+        "thumbnail": "media/gallery/previews/panels/PREV-cat-incident-panel-2-thumbnail-img-000126.webp",
+        "supersededBy": "panel-2-face-hair-v2"
+      },
+      {
+        "id": "panel-3-face-hair-v2",
+        "beat": "look-back",
+        "label": "Sketch 3 · v2",
+        "title": "Ash looks back",
+        "src": "media/gallery/panels/cat-incident/FULL-cat-incident-panel-3-sketch-face-hair-v2-img-000312.png",
+        "alt": "Seen over Lynleit's shoulder, Ash looks back at her from farther along the corridor.",
+        "width": 1536,
+        "height": 1024,
+        "bytes": 2664092,
+        "revisionOf": "panel-3",
+        "display": "media/gallery/previews/panels/PREV-cat-incident-panel-3-face-hair-v2-display-img-000312.webp",
+        "thumbnail": "media/gallery/previews/panels/PREV-cat-incident-panel-3-face-hair-v2-thumbnail-img-000312.webp"
       },
       {
         "id": "panel-3",
         "beat": "look-back",
-        "label": "Sketch 3",
+        "label": "Sketch 3 · Original",
         "title": "Ash looks back",
         "src": "media/gallery/panels/cat-incident/FULL-cat-incident-panel-3-sketch-img-000127.png",
         "alt": "Seen over Lynleit's shoulder, Ash looks back at her from farther along the corridor.",
@@ -851,12 +1381,27 @@
         "height": 1024,
         "bytes": 1816924,
         "display": "media/gallery/previews/panels/PREV-cat-incident-panel-3-display-img-000127.webp",
-        "thumbnail": "media/gallery/previews/panels/PREV-cat-incident-panel-3-thumbnail-img-000127.webp"
+        "thumbnail": "media/gallery/previews/panels/PREV-cat-incident-panel-3-thumbnail-img-000127.webp",
+        "supersededBy": "panel-3-face-hair-v2"
+      },
+      {
+        "id": "panel-4-face-hair-v2",
+        "beat": "offended",
+        "label": "Sketch 4 · v2",
+        "title": "A slight offence",
+        "src": "media/gallery/panels/cat-incident/FULL-cat-incident-panel-4-sketch-face-hair-v2-img-000352.png",
+        "alt": "Close-up of Lynleit with lowered eyebrows and a tight, slightly offended expression.",
+        "width": 1672,
+        "height": 941,
+        "bytes": 2504739,
+        "revisionOf": "panel-4",
+        "display": "media/gallery/previews/panels/PREV-cat-incident-panel-4-face-hair-v2-display-img-000352.webp",
+        "thumbnail": "media/gallery/previews/panels/PREV-cat-incident-panel-4-face-hair-v2-thumbnail-img-000352.webp"
       },
       {
         "id": "panel-4",
         "beat": "offended",
-        "label": "Sketch 4",
+        "label": "Sketch 4 · Original",
         "title": "A slight offence",
         "src": "media/gallery/panels/cat-incident/FULL-cat-incident-panel-4-sketch-img-000128.png",
         "alt": "Close-up of Lynleit with lowered eyebrows and a tight, slightly offended expression.",
@@ -864,12 +1409,27 @@
         "height": 941,
         "bytes": 1877344,
         "display": "media/gallery/previews/panels/PREV-cat-incident-panel-4-display-img-000128.webp",
-        "thumbnail": "media/gallery/previews/panels/PREV-cat-incident-panel-4-thumbnail-img-000128.webp"
+        "thumbnail": "media/gallery/previews/panels/PREV-cat-incident-panel-4-thumbnail-img-000128.webp",
+        "supersededBy": "panel-4-face-hair-v2"
+      },
+      {
+        "id": "panel-5-face-hair-v2",
+        "beat": "roof",
+        "label": "Sketch 5 · v2",
+        "title": "Onto the roof",
+        "src": "media/gallery/panels/cat-incident/FULL-cat-incident-panel-5-sketch-face-hair-v2-img-000313.png",
+        "alt": "Without her coat, Lynleit crawls after Ash on a sloping roof. A maid gestures from the courtyard below, near a parked car.",
+        "width": 1536,
+        "height": 1024,
+        "bytes": 2890300,
+        "revisionOf": "panel-5",
+        "display": "media/gallery/previews/panels/PREV-cat-incident-panel-5-face-hair-v2-display-img-000313.webp",
+        "thumbnail": "media/gallery/previews/panels/PREV-cat-incident-panel-5-face-hair-v2-thumbnail-img-000313.webp"
       },
       {
         "id": "panel-5",
         "beat": "roof",
-        "label": "Sketch 5",
+        "label": "Sketch 5 · Original",
         "title": "Onto the roof",
         "src": "media/gallery/panels/cat-incident/FULL-cat-incident-panel-5-sketch-img-000129.png",
         "alt": "Without her coat, Lynleit crawls after Ash on a sloping roof. A maid gestures from the courtyard below, near a parked car.",
@@ -877,12 +1437,27 @@
         "height": 1024,
         "bytes": 1842751,
         "display": "media/gallery/previews/panels/PREV-cat-incident-panel-5-display-img-000129.webp",
-        "thumbnail": "media/gallery/previews/panels/PREV-cat-incident-panel-5-thumbnail-img-000129.webp"
+        "thumbnail": "media/gallery/previews/panels/PREV-cat-incident-panel-5-thumbnail-img-000129.webp",
+        "supersededBy": "panel-5-face-hair-v2"
+      },
+      {
+        "id": "panel-6-face-hair-v2",
+        "beat": "storm",
+        "label": "Sketch 6 · v2",
+        "title": "The approaching storm",
+        "src": "media/gallery/panels/cat-incident/FULL-cat-incident-panel-6-sketch-face-hair-v2-img-000314.png",
+        "alt": "Lynleit and Ash pause together on the roof, facing a distant flash of lightning over the trees.",
+        "width": 1536,
+        "height": 1024,
+        "bytes": 3213655,
+        "revisionOf": "panel-6",
+        "display": "media/gallery/previews/panels/PREV-cat-incident-panel-6-face-hair-v2-display-img-000314.webp",
+        "thumbnail": "media/gallery/previews/panels/PREV-cat-incident-panel-6-face-hair-v2-thumbnail-img-000314.webp"
       },
       {
         "id": "panel-6",
         "beat": "storm",
-        "label": "Sketch 6",
+        "label": "Sketch 6 · Original",
         "title": "The approaching storm",
         "src": "media/gallery/panels/cat-incident/FULL-cat-incident-panel-6-sketch-img-000130.png",
         "alt": "Lynleit and Ash pause together on the roof, facing a distant flash of lightning over the trees.",
@@ -890,12 +1465,27 @@
         "height": 1024,
         "bytes": 1991328,
         "display": "media/gallery/previews/panels/PREV-cat-incident-panel-6-display-img-000130.webp",
-        "thumbnail": "media/gallery/previews/panels/PREV-cat-incident-panel-6-thumbnail-img-000130.webp"
+        "thumbnail": "media/gallery/previews/panels/PREV-cat-incident-panel-6-thumbnail-img-000130.webp",
+        "supersededBy": "panel-6-face-hair-v2"
+      },
+      {
+        "id": "panel-7-face-hair-v2",
+        "beat": "challenge",
+        "label": "Sketch 7 · v2",
+        "title": "The standoff",
+        "src": "media/gallery/panels/cat-incident/FULL-cat-incident-panel-7-sketch-face-hair-v2-img-000315.png",
+        "alt": "Paired close-ups show Lynleit's uneasy expression and Ash's narrowed eyes, with a drawn glint over one eye.",
+        "width": 1448,
+        "height": 1086,
+        "bytes": 2650002,
+        "revisionOf": "panel-7",
+        "display": "media/gallery/previews/panels/PREV-cat-incident-panel-7-face-hair-v2-display-img-000315.webp",
+        "thumbnail": "media/gallery/previews/panels/PREV-cat-incident-panel-7-face-hair-v2-thumbnail-img-000315.webp"
       },
       {
         "id": "panel-7",
         "beat": "challenge",
-        "label": "Sketch 7",
+        "label": "Sketch 7 · Original",
         "title": "The standoff",
         "src": "media/gallery/panels/cat-incident/FULL-cat-incident-panel-7-sketch-img-000131.png",
         "alt": "Paired close-ups show Lynleit's uneasy expression and Ash's narrowed eyes, with a drawn glint over one eye.",
@@ -903,12 +1493,27 @@
         "height": 1086,
         "bytes": 2002760,
         "display": "media/gallery/previews/panels/PREV-cat-incident-panel-7-display-img-000131.webp",
-        "thumbnail": "media/gallery/previews/panels/PREV-cat-incident-panel-7-thumbnail-img-000131.webp"
+        "thumbnail": "media/gallery/previews/panels/PREV-cat-incident-panel-7-thumbnail-img-000131.webp",
+        "supersededBy": "panel-7-face-hair-v2"
+      },
+      {
+        "id": "panel-8-face-hair-v2",
+        "beat": "table",
+        "label": "Sketch 8 · v2",
+        "title": "Beneath the table",
+        "src": "media/gallery/panels/cat-incident/FULL-cat-incident-panel-8-sketch-face-hair-v2-img-000316.png",
+        "alt": "Soaked Lynleit lifts a tablecloth and peers underneath at equally wet Ash, crouched with flattened ears.",
+        "width": 1536,
+        "height": 1024,
+        "bytes": 2518618,
+        "revisionOf": "panel-8",
+        "display": "media/gallery/previews/panels/PREV-cat-incident-panel-8-face-hair-v2-display-img-000316.webp",
+        "thumbnail": "media/gallery/previews/panels/PREV-cat-incident-panel-8-face-hair-v2-thumbnail-img-000316.webp"
       },
       {
         "id": "panel-8",
         "beat": "table",
-        "label": "Sketch 8",
+        "label": "Sketch 8 · Original",
         "title": "Beneath the table",
         "src": "media/gallery/panels/cat-incident/FULL-cat-incident-panel-8-sketch-img-000132.png",
         "alt": "Soaked Lynleit lifts a tablecloth and peers underneath at equally wet Ash, crouched with flattened ears.",
@@ -916,7 +1521,8 @@
         "height": 1024,
         "bytes": 1556537,
         "display": "media/gallery/previews/panels/PREV-cat-incident-panel-8-display-img-000132.webp",
-        "thumbnail": "media/gallery/previews/panels/PREV-cat-incident-panel-8-thumbnail-img-000132.webp"
+        "thumbnail": "media/gallery/previews/panels/PREV-cat-incident-panel-8-thumbnail-img-000132.webp",
+        "supersededBy": "panel-8-face-hair-v2"
       }
     ],
     "sceneSummary": [
@@ -995,9 +1601,23 @@
         "thumbnail": "media/gallery/previews/panels/PREV-a-meeting-beyond-authority-r3-panel-1-thumbnail-img-000102.webp"
       },
       {
+        "id": "panel-2-face-hair-v2",
+        "beat": "beat-2",
+        "label": "Sketch 2 · v2",
+        "title": "Lynleit pushes back",
+        "src": "media/gallery/panels/a-meeting-beyond-authority/FULL-a-meeting-beyond-authority-panel-2-sketch-r3-face-hair-v2-img-000305.png",
+        "alt": "Across the table from a smiling Sherie, Lynleit points to the closed envelope with a cautious expression.",
+        "width": 1536,
+        "height": 1024,
+        "bytes": 3353725,
+        "revisionOf": "panel-2",
+        "display": "media/gallery/previews/panels/PREV-a-meeting-beyond-authority-r3-panel-2-face-hair-v2-display-img-000305.webp",
+        "thumbnail": "media/gallery/previews/panels/PREV-a-meeting-beyond-authority-r3-panel-2-face-hair-v2-thumbnail-img-000305.webp"
+      },
+      {
         "id": "panel-2",
         "beat": "beat-2",
-        "label": "Sketch 2",
+        "label": "Sketch 2 · Original",
         "title": "Lynleit pushes back",
         "src": "media/gallery/panels/a-meeting-beyond-authority/FULL-a-meeting-beyond-authority-panel-2-sketch-r3-img-000103.png",
         "alt": "Across the table from a smiling Sherie, Lynleit points to the closed envelope with a cautious expression.",
@@ -1005,7 +1625,8 @@
         "height": 1024,
         "bytes": 2905694,
         "display": "media/gallery/previews/panels/PREV-a-meeting-beyond-authority-r3-panel-2-display-img-000103.webp",
-        "thumbnail": "media/gallery/previews/panels/PREV-a-meeting-beyond-authority-r3-panel-2-thumbnail-img-000103.webp"
+        "thumbnail": "media/gallery/previews/panels/PREV-a-meeting-beyond-authority-r3-panel-2-thumbnail-img-000103.webp",
+        "supersededBy": "panel-2-face-hair-v2"
       },
       {
         "id": "panel-3",
@@ -1060,9 +1681,23 @@
         "thumbnail": "media/gallery/previews/panels/PREV-a-meeting-beyond-authority-r3-panel-6-thumbnail-img-000107.webp"
       },
       {
+        "id": "panel-7-face-hair-v2",
+        "beat": "beat-7",
+        "label": "Sketch 7 · v2",
+        "title": "Sherie enjoys the bargaining",
+        "src": "media/gallery/panels/a-meeting-beyond-authority/FULL-a-meeting-beyond-authority-panel-7-sketch-r3-face-hair-v2-img-000306.png",
+        "alt": "Sherie smiles with her chin on one hand and her other palm raised as she bargains with Lynleit. Drake looks away in the background.",
+        "width": 1536,
+        "height": 1024,
+        "bytes": 3094985,
+        "revisionOf": "panel-7",
+        "display": "media/gallery/previews/panels/PREV-a-meeting-beyond-authority-r3-panel-7-face-hair-v2-display-img-000306.webp",
+        "thumbnail": "media/gallery/previews/panels/PREV-a-meeting-beyond-authority-r3-panel-7-face-hair-v2-thumbnail-img-000306.webp"
+      },
+      {
         "id": "panel-7",
         "beat": "beat-7",
-        "label": "Sketch 7",
+        "label": "Sketch 7 · Original",
         "title": "Sherie enjoys the bargaining",
         "src": "media/gallery/panels/a-meeting-beyond-authority/FULL-a-meeting-beyond-authority-panel-7-sketch-r3-img-000108.png",
         "alt": "Sherie smiles with her chin on one hand and her other palm raised as she bargains with Lynleit. Drake looks away in the background.",
@@ -1070,12 +1705,27 @@
         "height": 1024,
         "bytes": 2370143,
         "display": "media/gallery/previews/panels/PREV-a-meeting-beyond-authority-r3-panel-7-display-img-000108.webp",
-        "thumbnail": "media/gallery/previews/panels/PREV-a-meeting-beyond-authority-r3-panel-7-thumbnail-img-000108.webp"
+        "thumbnail": "media/gallery/previews/panels/PREV-a-meeting-beyond-authority-r3-panel-7-thumbnail-img-000108.webp",
+        "supersededBy": "panel-7-face-hair-v2"
+      },
+      {
+        "id": "panel-8-face-hair-v2",
+        "beat": "beat-8",
+        "label": "Sketch 8 · v2",
+        "title": "A limited agreement",
+        "src": "media/gallery/panels/a-meeting-beyond-authority/FULL-a-meeting-beyond-authority-panel-8-sketch-r3-face-hair-v2-img-000307.png",
+        "alt": "Sherie passes an envelope across the table to Lynleit. Drake stands beside them, with Felix and Kyrien farther along the path.",
+        "width": 1536,
+        "height": 1024,
+        "bytes": 3123631,
+        "revisionOf": "panel-8",
+        "display": "media/gallery/previews/panels/PREV-a-meeting-beyond-authority-r3-panel-8-face-hair-v2-display-img-000307.webp",
+        "thumbnail": "media/gallery/previews/panels/PREV-a-meeting-beyond-authority-r3-panel-8-face-hair-v2-thumbnail-img-000307.webp"
       },
       {
         "id": "panel-8",
         "beat": "beat-8",
-        "label": "Sketch 8",
+        "label": "Sketch 8 · Original",
         "title": "A limited agreement",
         "src": "media/gallery/panels/a-meeting-beyond-authority/FULL-a-meeting-beyond-authority-panel-8-sketch-r3-img-000109.png",
         "alt": "Sherie passes an envelope across the table to Lynleit. Drake stands beside them, with Felix and Kyrien farther along the path.",
@@ -1083,12 +1733,27 @@
         "height": 1024,
         "bytes": 2837474,
         "display": "media/gallery/previews/panels/PREV-a-meeting-beyond-authority-r3-panel-8-display-img-000109.webp",
-        "thumbnail": "media/gallery/previews/panels/PREV-a-meeting-beyond-authority-r3-panel-8-thumbnail-img-000109.webp"
+        "thumbnail": "media/gallery/previews/panels/PREV-a-meeting-beyond-authority-r3-panel-8-thumbnail-img-000109.webp",
+        "supersededBy": "panel-8-face-hair-v2"
+      },
+      {
+        "id": "panel-9-face-hair-v2",
+        "beat": "beat-9",
+        "label": "Sketch 9 · v2",
+        "title": "Reading the terms",
+        "src": "media/gallery/panels/a-meeting-beyond-authority/FULL-a-meeting-beyond-authority-panel-9-sketch-r3-face-hair-v2-img-000308.png",
+        "alt": "Lynleit reads a sheet from the envelope after leaving the table. Felix walks nearby while Kyrien continues looking toward the trees.",
+        "width": 1536,
+        "height": 1024,
+        "bytes": 3110141,
+        "revisionOf": "panel-9",
+        "display": "media/gallery/previews/panels/PREV-a-meeting-beyond-authority-r3-panel-9-face-hair-v2-display-img-000308.webp",
+        "thumbnail": "media/gallery/previews/panels/PREV-a-meeting-beyond-authority-r3-panel-9-face-hair-v2-thumbnail-img-000308.webp"
       },
       {
         "id": "panel-9",
         "beat": "beat-9",
-        "label": "Sketch 9",
+        "label": "Sketch 9 · Original",
         "title": "Reading the terms",
         "src": "media/gallery/panels/a-meeting-beyond-authority/FULL-a-meeting-beyond-authority-panel-9-sketch-r3-img-000110.png",
         "alt": "Lynleit reads a sheet from the envelope after leaving the table. Felix walks nearby while Kyrien continues looking toward the trees.",
@@ -1096,7 +1761,8 @@
         "height": 1024,
         "bytes": 2518033,
         "display": "media/gallery/previews/panels/PREV-a-meeting-beyond-authority-r3-panel-9-display-img-000110.webp",
-        "thumbnail": "media/gallery/previews/panels/PREV-a-meeting-beyond-authority-r3-panel-9-thumbnail-img-000110.webp"
+        "thumbnail": "media/gallery/previews/panels/PREV-a-meeting-beyond-authority-r3-panel-9-thumbnail-img-000110.webp",
+        "supersededBy": "panel-9-face-hair-v2"
       }
     ],
     "revision": "r3",

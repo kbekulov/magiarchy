@@ -12,19 +12,37 @@
     ],
     "previews": [
       {
+        "id": "front-v2",
+        "src": "media/gallery/resources/yulia-white-sweater/FULL-char-yulia-white-sweater-t-pose-front-face-hair-v2-img-000283.png",
+        "alt": "Yulia in front T-pose, with long brown hair, a white sweater over a black high-neck top, dark fitted trousers and black heeled ankle boots, with her silver-colored pendant visible.",
+        "caption": "Front · Face and hair v2",
+        "width": 1060,
+        "height": 1484,
+        "thumbnail": "media/gallery/previews/resources/PREV-yulia-white-sweater-front-v2-img-000283.webp"
+      },
+      {
         "id": "front",
         "src": "media/gallery/resources/yulia-white-sweater/FULL-char-yulia-white-sweater-t-pose-front-img-000182.png",
         "alt": "Yulia in front T-pose, with long brown hair, a white sweater over a black high-neck top, dark fitted trousers and black heeled ankle boots, with her silver-colored pendant visible.",
-        "caption": "Front",
+        "caption": "Front · Original v1",
         "thumbnail": "media/gallery/previews/resources/PREV-yulia-white-sweater-1-img-000182.webp",
         "width": 1060,
         "height": 1484
       },
       {
+        "id": "back-v2",
+        "src": "media/gallery/resources/yulia-white-sweater/FULL-char-yulia-white-sweater-t-pose-back-face-hair-v2-img-000282.png",
+        "alt": "Yulia in back T-pose, with long brown hair, a white sweater over a black high-neck top, dark fitted trousers and black heeled ankle boots.",
+        "caption": "Back · Face and hair v2",
+        "width": 1060,
+        "height": 1484,
+        "thumbnail": "media/gallery/previews/resources/PREV-yulia-white-sweater-back-v2-img-000282.webp"
+      },
+      {
         "id": "back",
         "src": "media/gallery/resources/yulia-white-sweater/FULL-char-yulia-white-sweater-t-pose-back-img-000181.png",
         "alt": "Yulia in back T-pose, with long brown hair, a white sweater over a black high-neck top, dark fitted trousers and black heeled ankle boots.",
-        "caption": "Back",
+        "caption": "Back · Original v1",
         "thumbnail": "media/gallery/previews/resources/PREV-yulia-white-sweater-2-img-000181.webp",
         "width": 1060,
         "height": 1484
@@ -32,10 +50,24 @@
     ],
     "files": [
       {
+        "path": "media/gallery/resources/yulia-white-sweater/FULL-char-yulia-white-sweater-t-pose-front-face-hair-v2-img-000283.png",
+        "label": "Front reference · v2",
+        "notes": "Face and hair revision. Original proportions and composition retained.",
+        "bytes": 1368406,
+        "format": "PNG"
+      },
+      {
         "path": "media/gallery/resources/yulia-white-sweater/FULL-char-yulia-white-sweater-t-pose-front-img-000182.png",
         "label": "Front reference",
         "notes": "Original supplied PNG, 1060 × 1484 px.",
         "bytes": 1262649,
+        "format": "PNG"
+      },
+      {
+        "path": "media/gallery/resources/yulia-white-sweater/FULL-char-yulia-white-sweater-t-pose-back-face-hair-v2-img-000282.png",
+        "label": "Back reference · v2",
+        "notes": "Face and hair revision. Original proportions and composition retained.",
+        "bytes": 1334556,
         "format": "PNG"
       },
       {
@@ -266,20 +298,39 @@
     ],
     "previews": [
       {
+        "id": "front-v2",
+        "src": "media/gallery/resources/lynleit-t-pose-v1/FULL-char-lynleit-arc-1-t-pose-v1-arm-corrected-front-face-hair-v2-img-000321.png",
+        "alt": "Arc 1 front T-pose of Lynleit with long dark hair, blue eyes, a blue coat, ruffled white collar and cuffs, black bow, laced shorts, dark tights, and over-knee boots.",
+        "caption": "Young / teenager · Arc 1 · Front · Face and hair v2",
+        "width": 1122,
+        "height": 1402,
+        "thumbnail": "media/gallery/previews/resources/PREV-lynleit-t-pose-v1-front-v2-img-000321.webp"
+      },
+      {
         "id": "front",
         "src": "media/gallery/resources/lynleit-t-pose-v1/FULL-char-lynleit-arc-1-t-pose-v1-arm-corrected-front-img-000173.png",
         "alt": "Arc 1 front T-pose of Lynleit with long dark hair, blue eyes, a blue coat, ruffled white collar and cuffs, black bow, laced shorts, dark tights, and over-knee boots.",
-        "caption": "Young / teenager · Arc 1 · Front",
+        "caption": "Young / teenager · Arc 1 · Front · Original v1",
         "thumbnail": "media/gallery/previews/resources/PREV-lynleit-t-pose-v1-1-img-000173.webp",
         "width": 1122,
         "height": 1402
+      },
+      {
+        "id": "back-v2",
+        "src": "media/gallery/resources/lynleit-t-pose-v1/FULL-char-lynleit-arc-1-t-pose-v1-arm-hand-corrected-back-face-hair-v2-img-000322.png",
+        "revision": "r2",
+        "alt": "Arc 1 back T-pose of Lynleit with long dark hair falling over a blue coat, dark tights, and tall black boots.",
+        "caption": "Young / teenager · Arc 1 · Back · Face and hair v2",
+        "width": 1122,
+        "height": 1402,
+        "thumbnail": "media/gallery/previews/resources/PREV-lynleit-t-pose-v1-back-v2-r2-img-000322.webp"
       },
       {
         "id": "back",
         "src": "media/gallery/resources/lynleit-t-pose-v1/FULL-char-lynleit-arc-1-t-pose-v1-arm-hand-corrected-back-img-000174.png",
         "revision": "r2",
         "alt": "Arc 1 back T-pose of Lynleit with long dark hair falling over a blue coat, dark tights, and tall black boots.",
-        "caption": "Young / teenager · Arc 1 · Back",
+        "caption": "Young / teenager · Arc 1 · Back · Original v1",
         "thumbnail": "media/gallery/previews/resources/PREV-lynleit-t-pose-v1-2-r2-img-000174.webp",
         "width": 1122,
         "height": 1402
@@ -305,10 +356,24 @@
     ],
     "files": [
       {
+        "path": "media/gallery/resources/lynleit-t-pose-v1/FULL-char-lynleit-arc-1-t-pose-v1-arm-corrected-front-face-hair-v2-img-000321.png",
+        "label": "Front reference, arm-corrected · v2",
+        "notes": "Face and hair revision. Original proportions and composition retained.",
+        "bytes": 1388653,
+        "format": "PNG"
+      },
+      {
         "path": "media/gallery/resources/lynleit-t-pose-v1/FULL-char-lynleit-arc-1-t-pose-v1-arm-corrected-front-img-000173.png",
         "label": "Front reference, arm-corrected",
         "notes": "Arm lengths balanced across matching views, 1122 × 1402 PNG.",
         "bytes": 1462934,
+        "format": "PNG"
+      },
+      {
+        "path": "media/gallery/resources/lynleit-t-pose-v1/FULL-char-lynleit-arc-1-t-pose-v1-arm-hand-corrected-back-face-hair-v2-img-000322.png",
+        "label": "Back reference, arms and hands corrected · v2",
+        "notes": "Face and hair revision. Original proportions and composition retained.",
+        "bytes": 1261205,
         "format": "PNG"
       },
       {
@@ -352,20 +417,39 @@
     ],
     "previews": [
       {
+        "id": "front-v2",
+        "src": "media/gallery/resources/lynleit-t-pose-v2/FULL-char-lynleit-t-pose-v2-arm-corrected-front-face-hair-v2-img-000323.png",
+        "alt": "Front T-pose of Lynleit with long dark hair, blue eyes, a blue coat, a white collared shirt, black ribbon, belted shorts, dark tights, and tall folded-cuff boots.",
+        "caption": "v2 · Front · Face and hair v2",
+        "width": 1122,
+        "height": 1402,
+        "thumbnail": "media/gallery/previews/resources/PREV-lynleit-t-pose-v2-front-v2-img-000323.webp"
+      },
+      {
         "id": "front",
         "src": "media/gallery/resources/lynleit-t-pose-v2/FULL-char-lynleit-t-pose-v2-arm-corrected-front-img-000177.png",
         "alt": "Front T-pose of Lynleit with long dark hair, blue eyes, a blue coat, a white collared shirt, black ribbon, belted shorts, dark tights, and tall folded-cuff boots.",
-        "caption": "v2 · Front",
+        "caption": "v2 · Front · Original v1",
         "thumbnail": "media/gallery/previews/resources/PREV-lynleit-t-pose-v2-1-img-000177.webp",
         "width": 1122,
         "height": 1402
+      },
+      {
+        "id": "back-v2",
+        "src": "media/gallery/resources/lynleit-t-pose-v2/FULL-char-lynleit-t-pose-v2-arm-hand-corrected-back-face-hair-v2-img-000324.png",
+        "revision": "r2",
+        "alt": "Back T-pose of Lynleit with long dark hair, a blue coat, dark tights, and tall black boots with folded cuffs.",
+        "caption": "v2 · Back · Face and hair v2",
+        "width": 1122,
+        "height": 1402,
+        "thumbnail": "media/gallery/previews/resources/PREV-lynleit-t-pose-v2-back-v2-r2-img-000324.webp"
       },
       {
         "id": "back",
         "src": "media/gallery/resources/lynleit-t-pose-v2/FULL-char-lynleit-t-pose-v2-arm-hand-corrected-back-img-000178.png",
         "revision": "r2",
         "alt": "Back T-pose of Lynleit with long dark hair, a blue coat, dark tights, and tall black boots with folded cuffs.",
-        "caption": "v2 · Back",
+        "caption": "v2 · Back · Original v1",
         "thumbnail": "media/gallery/previews/resources/PREV-lynleit-t-pose-v2-2-r2-img-000178.webp",
         "width": 1122,
         "height": 1402
@@ -391,10 +475,24 @@
     ],
     "files": [
       {
+        "path": "media/gallery/resources/lynleit-t-pose-v2/FULL-char-lynleit-t-pose-v2-arm-corrected-front-face-hair-v2-img-000323.png",
+        "label": "Front reference, arm-corrected · v2",
+        "notes": "Face and hair revision. Original proportions and composition retained.",
+        "bytes": 1357408,
+        "format": "PNG"
+      },
+      {
         "path": "media/gallery/resources/lynleit-t-pose-v2/FULL-char-lynleit-t-pose-v2-arm-corrected-front-img-000177.png",
         "label": "Front reference, arm-corrected",
         "notes": "Arm lengths balanced across matching views, 1122 × 1402 PNG.",
         "bytes": 1362899,
+        "format": "PNG"
+      },
+      {
+        "path": "media/gallery/resources/lynleit-t-pose-v2/FULL-char-lynleit-t-pose-v2-arm-hand-corrected-back-face-hair-v2-img-000324.png",
+        "label": "Back reference, arms and hands corrected · v2",
+        "notes": "Face and hair revision. Original proportions and composition retained.",
+        "bytes": 1295139,
         "format": "PNG"
       },
       {

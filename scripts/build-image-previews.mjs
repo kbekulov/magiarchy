@@ -2,6 +2,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import sharp from 'sharp';
 import { fileURLToPath } from 'node:url';
+import { writeImagePreview } from './write-image-preview.mjs';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const galleryPath = path.join(root, 'gallery.html');
@@ -13,7 +14,7 @@ for (const source of sources) {
   const preview = source.replace('media/gallery/images/', 'media/gallery/previews/').replace(/\/FULL-/, '/PREV-').replace(/\.[^.]+$/, '.webp');
   const destination = path.join(root, preview);
   fs.mkdirSync(path.dirname(destination), { recursive: true });
-  await sharp(path.join(root, source)).resize({ width: 480, height: 480, fit: 'inside', withoutEnlargement: true }).webp({ quality: 82 }).toFile(destination);
+  await writeImagePreview(sharp(path.join(root, source)).resize({ width: 480, height: 480, fit: 'inside', withoutEnlargement: true }).webp({ quality: 82 }), destination);
   previews.set(source, preview);
   before += fs.statSync(path.join(root, source)).size;
   after += fs.statSync(destination).size;

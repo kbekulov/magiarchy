@@ -16,7 +16,7 @@ export async function testSherieFelixBanter(page, origin, engine) {
   assert.deepEqual(moment.characters.map(character => character.slug), ['sherie', 'felix']);
   assert.ok(!panels.some(record => record.id === 'sherie-felix-banter'));
   assert.equal(moment.artwork, undefined, 'The Moment should link to the panel set only');
-  assert.equal(sequence.panels.length, 7);
+  assert.equal(sequence.panels.filter(panel => !panel.supersededBy).length, 7);
 
   // A legacy redirect must not interrupt the site-wide player's module import.
   await page.route('**/persistent-music.js', async route => {
@@ -35,7 +35,7 @@ export async function testSherieFelixBanter(page, origin, engine) {
       await visit(route);
       await page.waitForURL(`**/${panelUrl}#${panelId}`);
       await page.locator(`#${panelId} img`).evaluate(image => image.decode());
-      assert.equal(await page.locator('.scene-panel').count(), 7);
+      assert.equal(await page.locator('.scene-panel').count(), sequence.panels.length);
       assert.ok(await page.locator('#panel-context a[href="moments.html?moment=unresolved-tension&version=v1"]').isVisible());
       assert.ok(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1));
     }

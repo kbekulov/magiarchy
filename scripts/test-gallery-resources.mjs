@@ -54,15 +54,16 @@ export async function testGalleryResources(page, origin, engine) {
     await assertChibiCard(page, 'Kyrien');
     assert.equal(await page.locator('[data-name="Kyrien"] .chibi-placeholder').count(), 0);
     await visit('character.html?character=kyrien');
+    await page.locator('.profile-art-thumbnails button').filter({ has: page.locator('img[src*="char-kyrien-red-sofa-pistol"]') }).click();
     assert.ok(await page.locator('#character-profile-portrait img[src$="FULL-char-kyrien-red-sofa-pistol-img-000011.png"]').count(), 'Selected Kyrien portrait missing');
     assert.equal(await page.locator('#character-profile-portrait .profile-portrait-placeholder').count(), 0);
     const profileText = await page.locator('main').innerText();
-    for (const detail of ['clear middle part', 'slightly heavy upper lids', 'restrained shoulder width', 'modestly taller than Lynleit', 'Balanced, relaxed posture']) {
+    for (const detail of ['clear middle part', 'slightly heavy upper lids', 'attractively proportioned shoulders', 'modestly taller than Lynleit', 'Balanced, relaxed posture']) {
       assert.ok(profileText.includes(detail), `Kyrien profile missing fixed design: ${detail}`);
     }
   }
   await visit('gallery.html');
-  assert.deepEqual(await page.locator('.gallery-card[data-character~="kyrien"]').evaluateAll(cards => cards.map(card => card.dataset.image).sort()), [
+  const baselineKyrienIds = [
     'char-drake-sherie-kyrien-lynleit-felix-lineup-sketch-01',
     'char-kyrien-arc-1-chibi-beige-jacket',
     'char-kyrien-arc-1-chibi-low-crouch',
@@ -72,8 +73,10 @@ export async function testGalleryResources(page, origin, engine) {
     'char-kyrien-concept-standing-three-variants',
     'char-kyrien-red-sofa-pistol',
     'char-lynleit-kyrien-arc-1-park-bank'
-  ]);
-  assert.equal(await page.locator('.gallery-card[data-character~="kyrien"][data-profile-portrait="false"]').count(), 4, 'Concept sheets, lineup sketches, and composite scene illustrations must stay outside the portrait pool');
+  ];
+  const registeredKyrienIds = await page.locator('.gallery-card[data-character~="kyrien"]').evaluateAll(cards => cards.map(card => card.dataset.image));
+  for (const id of baselineKyrienIds) assert.ok(registeredKyrienIds.includes(id), `Preserve existing Kyrien reader ${id}`);
+  for (const id of baselineKyrienIds.filter(id => /concept|lineup|park-bank/.test(id))) assert.equal(await page.locator(`.gallery-card[data-image="${id}"]`).getAttribute('data-profile-portrait'), 'false', 'Concept sheets, lineup sketches, and composite scenes stay outside the portrait pool');
   const lineupId = 'char-drake-sherie-kyrien-lynleit-felix-lineup-sketch-01';
   for (const slug of ['drake', 'sherie', 'kyrien', 'lynleit', 'felix']) {
     await page.locator('#gallery-character-filter').selectOption(slug);
@@ -163,7 +166,7 @@ export async function testGalleryResources(page, origin, engine) {
       assert.equal(record.era, record.id === 'lynleit-t-pose-v1' ? 'Arc 1' : undefined, 'Design revision must not imply an Arc');
       assert.equal(record.template, undefined, 'Character references must not replace the mascot template');
       assert.deepEqual(record.previews.filter(view => ['front', 'back'].includes(view.id)).map(view => [view.width, view.height]), [[1122, 1402], [1122, 1402]]);
-      assert.deepEqual(record.previews.slice(2).map(view => view.id), ['back-hand-left', 'back-hand-right']);
+      assert.deepEqual(record.previews.filter(view => view.id.startsWith('back-hand-')).map(view => view.id), ['back-hand-left', 'back-hand-right']);
       assert.ok(record.previews.find(view => view.id === 'front').src.replace(/-img-\d{6}(?=\.png$)/, '').endsWith('-arm-corrected-front.png'), 'Keep the approved front view');
       assert.ok(record.previews.find(view => view.id === 'back').src.replace(/-img-\d{6}(?=\.png$)/, '').endsWith('-arm-hand-corrected-back.png'), 'Back view must use the corrected hands');
       assert.ok(record.previews.find(view => view.id === 'back').thumbnail.replace(/-img-\d{6}(?=\.webp$)/, '').endsWith('-r2.webp'), 'Back thumbnail must not reuse the previous cached revision');
@@ -176,17 +179,18 @@ export async function testGalleryResources(page, origin, engine) {
       assert.deepEqual(await page.locator('#resource-downloads small, #resource-downloads .published-image-filename').allTextContents(), record.files.map(file => file.path.split('/').pop()));
       assert.ok(await page.locator(`#resource-characters a[href="character.html?character=${record.characters[0]}"]`).isVisible());
       assert.equal(await page.locator('.gallery-card:visible').count(), 0, 'Production references leaked into artwork');
-      await page.locator('#resource-thumbnails button').nth(1).click();
-      assert.equal(await page.locator('#resource-image').getAttribute('src'), record.previews[1].src);
+      const back = record.previews.find(view => view.id === 'back');
+      await page.locator('#resource-thumbnails button').nth(record.previews.indexOf(back)).click();
+      assert.equal(await page.locator('#resource-image').getAttribute('src'), back.src);
       assert.ok(page.url().includes('view=back'));
       await page.reload(); await page.waitForLoadState('networkidle');
-      assert.equal(await page.locator('#resource-image').getAttribute('src'), record.previews[1].src);
+      assert.equal(await page.locator('#resource-image').getAttribute('src'), back.src);
       assert.equal(await page.locator('#resource-image').evaluate(image => getComputedStyle(image).objectFit), 'contain');
       assert.ok(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1));
       await page.locator('#resource-image').scrollIntoViewIfNeeded();
       await page.screenshot({ path: `test-results/${engine}-${record.id}-${width}.png`, fullPage: width < 820 });
-      for (const [index, detail] of record.previews.slice(2).entries()) {
-        await page.locator('#resource-thumbnails button').nth(index + 2).click();
+      for (const detail of record.previews.filter(view => view.id.startsWith('back-hand-'))) {
+        await page.locator('#resource-thumbnails button').nth(record.previews.indexOf(detail)).click();
         assert.equal(await page.locator('#resource-image').getAttribute('src'), detail.src);
         assert.ok(page.url().includes(`view=${detail.id}`));
         await page.waitForFunction(width => document.querySelector('#resource-image').getBoundingClientRect().width <= width + 1, detail.width);
@@ -195,7 +199,7 @@ export async function testGalleryResources(page, origin, engine) {
       await page.screenshot({ path: `test-results/${engine}-${record.id}-hand-detail-${width}.png` });
       if (width === 1440) {
         for (const file of record.files) {
-          assert.match(file.path.split('/').pop(), /^FULL-char-(felix|lynleit)-(arc-1-)?t-pose-v[12]-(arm-corrected-front|arm-hand-corrected-back|back-hand-left|back-hand-right)-img-\d{6}\.png$/);
+          assert.match(file.path.split('/').pop(), /^FULL-char-(felix|lynleit)-(arc-1-)?t-pose-v[12]-(arm-corrected-front|arm-hand-corrected-back|back-hand-left|back-hand-right)(-face-hair-v2)?-img-\d{6}\.png$/);
           const [download] = await Promise.all([page.waitForEvent('download'), page.locator(`#resource-downloads a[href="${file.path}"]`).click()]);
           assert.equal(download.suggestedFilename(), file.path.split('/').pop());
           assert.deepEqual(fs.readFileSync(await download.path()), fs.readFileSync(file.path));

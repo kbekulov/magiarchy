@@ -6,14 +6,14 @@ export async function testSeptember28Backlog(page, origin, engine) {
   const records = JSON.parse(fs.readFileSync('gallery/panels.json'));
   const dream = records.find(r => r.id === 'anima-meets-female-cast');
   assert.ok(dream.nonCanon && !dream.moment && !dream.chapter);
-  assert.equal(dream.panels.length, 13);
+  assert.equal(dream.panels.filter(panel => !panel.supersededBy).length, 13);
   assert.equal(dream.beats.length, 10, 'New art versions do not add dream events');
   for (const originalId of ['panel-4', 'panel-6', 'panel-10']) {
     const original = dream.panels.find(panel => panel.id === originalId);
     const version = dream.panels.find(panel => panel.id === `${originalId}-magazine-v2`);
     assert.equal(version.beat, original.beat, 'Keep each magazine version beside its original study');
-    assert.equal(original.composition, 'v1');
-    assert.equal(version.composition, 'v2');
+    assert.match(original.composition, /^v1(?: · original)?$/);
+    assert.match(version.composition, /^v2(?: · original)?$/);
     assert.notEqual(version.src, original.src, 'Preserve distinct original downloads');
   }
   assert.deepEqual(dream.characters, ['lynleit', 'sherie', 'yulia']);
@@ -25,8 +25,8 @@ export async function testSeptember28Backlog(page, origin, engine) {
     await page.setViewportSize({width, height:900});
     await visit(`gallery.html?panels=${dream.id}`);
     assert.match(await page.locator('#panel-medium').textContent(), /Non-canon/);
-    assert.equal(await page.locator('.scene-panel').count(), 13);
-    assert.equal(await page.locator('#panel-count').textContent(), '10 studies · 13 images');
+    assert.equal(await page.locator('.scene-panel').count(), dream.panels.length);
+    assert.equal(await page.locator('#panel-count').textContent(), `10 studies · 13 images${dream.panels.length > 13 ? ` · ${dream.panels.length - 13} retained originals` : ''}`);
     assert.equal(await page.locator('#panel-context a[href^="story.html"], #panel-context a[href^="moments.html"]').count(), 0);
     assert.equal(await page.locator('#panel-characters a[href="character.html?character=anima"]').count(), 0);
     assert.equal(await page.locator('#panel-reader a[href*="cult-of-inanna"]').count(), 0);

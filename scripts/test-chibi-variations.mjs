@@ -1,4 +1,4 @@
-import { publishedImagePath } from './test-image-paths.mjs';
+import { publishedImagePath, currentPublishedImagePath, currentArtworkId } from './test-image-paths.mjs';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
 
@@ -29,8 +29,8 @@ export async function testChibiVariations(page, origin, engine) {
       await page.waitForFunction(({ name, preview }) => {
         const img = document.querySelector(`[data-name="${name}"] .character-chibi`);
         return img?.complete && img.naturalWidth > 0 && new URL(img.currentSrc).pathname === `/${preview}`;
-      }, { name, preview: publishedImagePath(`media/gallery/previews/chibis/char-${slug}-${suffix}.webp`) });
-      assert.equal(await image.getAttribute('src'), publishedImagePath(`media/gallery/previews/chibis/char-${slug}-${suffix}.webp`), `${name}: new pose must enter the random card pool`);
+      }, { name, preview: currentPublishedImagePath(`media/gallery/previews/chibis/char-${slug}-${suffix}.webp`) });
+      assert.equal(await image.getAttribute('src'), currentPublishedImagePath(`media/gallery/previews/chibis/char-${slug}-${suffix}.webp`), `${name}: new pose must enter the random card pool`);
       if (slug === 'kyrien') assert.equal(await card.locator('.art-note').textContent(), 'Arc 1 · Chibi');
     }
     await page.screenshot({ path: `test-results/${engine}-chibi-variations-characters-${width}.png` });
@@ -42,7 +42,7 @@ export async function testChibiVariations(page, origin, engine) {
       assert.ok(await stack.count() >= 2);
       const visible = page.locator(`.gallery-card[data-artwork-stack="${slug}-chibis"]:not([hidden])`);
       assert.equal(await visible.count(), 1);
-      assert.equal(await visible.getAttribute('data-image'), `char-${slug}-${suffix}`);
+      assert.equal(await visible.getAttribute('data-image'), currentArtworkId(`char-${slug}-${suffix}`));
     }
     assert.ok(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1));
     await page.screenshot({ path: `test-results/${engine}-chibi-variations-gallery-${width}.png`, fullPage: true });

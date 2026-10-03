@@ -4,20 +4,25 @@ import { fileURLToPath } from 'node:url';
 import sharp from 'sharp';
 import { validateResources } from './gallery-resources.mjs';
 import { fileImageId } from './image-identities.mjs';
+import { writeImagePreview } from './write-image-preview.mjs';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const index = path.join(root, 'gallery/resources.json');
 const records = JSON.parse(fs.readFileSync(index, 'utf8'));
+const identities = JSON.parse(fs.readFileSync(path.join(root, 'gallery/image-identities.json'), 'utf8'));
 validateResources(root, records, { built: false });
 for (const record of records) {
-  for (const [i, preview] of record.previews.entries()) {
-    preview.thumbnail = `media/gallery/previews/resources/PREV-${record.id}-${i + 1}${preview.revision ? `-${preview.revision}` : ''}-${fileImageId(preview.src).toLowerCase()}.webp`;
+  for (const preview of record.previews) {
+    // View order may change when a retained original gains a new revision.
+    // Keep registered preview URLs stable; new views use their stable view ID.
+    const known = identities.images.find(image => image.source === preview.src)?.derivatives.find(file => file.startsWith('media/gallery/previews/resources/'));
+    preview.thumbnail = known || `media/gallery/previews/resources/PREV-${record.id}-${preview.id}${preview.revision ? `-${preview.revision}` : ''}-${fileImageId(preview.src).toLowerCase()}.webp`;
     const output = path.join(root, preview.thumbnail);
     fs.mkdirSync(path.dirname(output), { recursive: true });
     const source = path.join(root, preview.src);
     const metadata = await sharp(source).metadata();
     preview.width = metadata.width; preview.height = metadata.height;
-    await sharp(source).resize({ width: 480, height: 480, fit: 'inside', withoutEnlargement: true }).webp({ quality: 85 }).toFile(output);
+    await writeImagePreview(sharp(source).resize({ width: 480, height: 480, fit: 'inside', withoutEnlargement: true }).webp({ quality: 85 }), output);
   }
   for (const file of record.files) {
     file.bytes = fs.statSync(path.join(root, file.path)).size;

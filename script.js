@@ -210,7 +210,7 @@ if (characterCards.length) {
     characterCards.forEach(card => {
       const slug = new URL(card.querySelector('.character-card-link').href).searchParams.get('character');
       const choices = [...gallery.querySelectorAll('.gallery-card[data-chibi="true"]')]
-        .filter(art => (art.dataset.character || '').split(/\s+/).includes(slug) && art.querySelector('img'));
+        .filter(art => art.dataset.imageRevisionSuperseded !== 'true' && (art.dataset.character || '').split(/\s+/).includes(slug) && art.querySelector('img'));
       if (!choices.length) return;
       const choice = choices[Math.floor(Math.random() * choices.length)];
       const image = card.querySelector('.character-chibi');
@@ -412,7 +412,8 @@ function initializeGalleryCards() {
   const studyGroups = new Set([...galleryItems].map(card => card.dataset.artworkStack).filter(Boolean));
   for (const group of studyGroups) {
     const variants = [...galleryItems].filter(card => card.dataset.artworkStack === group);
-    const chosen = variants[Math.floor(Math.random() * variants.length)];
+    const currentVariants = variants.filter(card => card.dataset.imageRevisionSuperseded !== 'true');
+    const chosen = currentVariants[Math.floor(Math.random() * currentVariants.length)];
     variants.forEach(card => { card.dataset.stackPreview = String(card === chosen); });
   }
   const requestedImage = new URLSearchParams(window.location.search).get('image');
@@ -534,6 +535,7 @@ function updateGalleryResults() {
   document.body.classList.toggle('gallery-fan-service-visible', includeFanService || fanServiceOnly);
   let visibleCount = 0;
   const matchesFilters = item => {
+    if (item.dataset.imageRevisionSuperseded === 'true') return false;
     const characters = (item.dataset.character ?? '').split(/\s+/).filter(Boolean);
     const isChibi = item.dataset.chibi === 'true';
     return (selectedCharacter === 'all' || characters.includes(selectedCharacter))

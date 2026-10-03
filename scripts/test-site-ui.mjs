@@ -32,6 +32,7 @@ import { testLeoMikhailArt } from './test-leo-mikhail-art.mjs';
 import { testFirstPersonProse } from './test-first-person-prose.mjs';
 import { testRiverChoir } from './test-river-choir.mjs';
 import { testAppearanceComparisons } from './test-appearance-comparisons.mjs';
+import { testArtworkAudit } from './test-artwork-audit.mjs';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const mime = { '.html': 'text/html', '.js': 'text/javascript', '.json': 'application/json', '.css': 'text/css', '.png': 'image/png', '.webp': 'image/webp', '.md': 'text/plain', '.mp3': 'audio/mpeg', '.wav': 'audio/wav' };
@@ -81,6 +82,12 @@ try {
         await page.goto(`${origin}/${route}`);
         await page.waitForLoadState('networkidle');
       };
+      if (process.env.TEST_ARTWORK_AUDIT_ONLY === '1') {
+        await testArtworkAudit(page, origin, engine);
+        await testImageIdentities(page, origin, engine);
+        assert.deepEqual(errors, [], `${engine}: artwork audit browser errors`);
+        continue;
+      }
       if (process.env.TEST_GALLERY_FILTERS_ONLY === '1') {
         await testGalleryControls(page, origin, engine);
         await testFanServiceIntake(page, origin, engine);
@@ -225,6 +232,7 @@ try {
         assert.deepEqual(errors, [], `${engine}: recruitment reader errors`);
         continue;
       }
+      if (process.env.TEST_READER_CONTROLS_ONLY !== '1') {
       await testHomeFeed(page, origin, engine);
       await testFirstPersonProse(page, origin, engine);
       await testPageSpacing(page, origin, engine);
@@ -244,6 +252,7 @@ try {
       await testSeptember28Backlog(page, origin, engine);
       await testMusicMovements(page, origin, engine);
       await testImageIdentities(page, origin, engine);
+      await testArtworkAudit(page, origin, engine);
       await testArtworkVersions(page, origin, engine);
       if (process.env.TEST_FOG_ONLY === '1') {
         assert.deepEqual(errors, [], `${engine}: fog reader errors`);
@@ -423,6 +432,7 @@ try {
         assert.ok(before && after && Math.abs(before.x - after.x) < 1 && Math.abs(before.y - after.y) < 1, `${route}: hovering a card displaced its neighbor`);
       }
       await testGalleryControls(page, origin, engine);
+      }
       // Intermediate panes, not only page-wide overflow.
       for (const width of [700, 820, 950, 1024, 1200, 1600]) {
         await page.setViewportSize({ width, height: 900 });
@@ -439,9 +449,15 @@ try {
         const options = await page.locator('#gallery-location-filter option').evaluateAll(nodes => nodes.map(node => node.value).sort());
         assert.deepEqual(options, available, 'Gallery offers an unpopulated location');
         const sharedArtwork = 'char-lynleit-felix-1';
+        const originalSource = await page.locator(`.gallery-card[data-image="${sharedArtwork}"] img`).getAttribute('src');
+        const revision = page.locator(`.gallery-card[data-revision-of="${sharedArtwork}"]`);
+        const currentSharedId = await revision.count() ? await revision.getAttribute('data-image') : sharedArtwork;
+        const currentImage = page.locator(`.gallery-card[data-image="${currentSharedId}"] img`);
+        const currentSource = await currentImage.getAttribute('src');
+        const currentPreview = await currentImage.getAttribute('data-preview');
         for (const slug of ['lynleit', 'felix']) {
           await page.locator('#gallery-character-filter').selectOption(slug);
-          const card = page.locator(`.gallery-card[data-image="${sharedArtwork}"]`);
+          const card = page.locator(`.gallery-card[data-image="${currentSharedId}"]`);
           assert.ok(await card.isVisible(), `${slug}: shared artwork missing from Gallery filter`);
           await page.locator('label').filter({ has: page.locator('#gallery-chibi-filter') }).click();
           assert.ok(await page.locator('#gallery-chibi-filter').isChecked());
@@ -451,7 +467,7 @@ try {
         }
         await visit(`gallery.html?image=${sharedArtwork}`);
         assert.ok(await page.locator('#gallery-reader-view').isVisible());
-        assert.ok((await page.locator('#gallery-detail-source').getAttribute('href')).endsWith(`${sharedArtwork}.png`));
+        assert.equal(await page.locator('#gallery-detail-source').getAttribute('href'), originalSource);
         assert.equal(await page.locator('#gallery-detail-moment').getAttribute('href'), 'moments.html?moment=only-eyes-for-you');
         assert.ok(await page.locator('#gallery-detail-moment').isVisible());
         assert.ok(await page.locator('#gallery-detail-music').isVisible());
@@ -460,12 +476,12 @@ try {
         for (const slug of ['lynleit', 'felix']) {
           await visit(`character.html?character=${slug}`);
           assert.ok(await page.locator('#character-moment-grid a[href="moments.html?moment=only-eyes-for-you"]').count(), `${slug}: church scene missing from related Moments`);
-          const thumb = page.locator(`.profile-art-thumbnails button:has(img[src$="${sharedArtwork}.webp"])`);
+          const thumb = page.locator(`.profile-art-thumbnails button:has(img[src="${currentPreview}"])`);
           assert.equal(await thumb.count(), 1, `${slug}: shared artwork missing from portraits`);
           await thumb.click();
           assert.equal(await thumb.getAttribute('aria-pressed'), 'true');
-          await page.waitForFunction(source => [...document.querySelectorAll('.profile-portrait-strip img')].some(image => image.src.endsWith(`${source}.png`) && image.alt && image.complete && image.naturalWidth === 1024), sharedArtwork);
-          assert.ok(await page.locator(`.profile-portrait-strip img[src$="${sharedArtwork}.png"]`).evaluateAll(images => images.some(image => image.alt && image.complete && image.naturalWidth === 1024)), `${slug}: selected shared portrait failed to load`);
+          await page.waitForFunction(source => [...document.querySelectorAll('.profile-portrait-strip img')].some(image => image.src.endsWith(source) && image.alt && image.complete && image.naturalWidth > 0), currentSource);
+          assert.ok(await page.locator(`.profile-portrait-strip img[src="${currentSource}"]`).evaluateAll(images => images.some(image => image.alt && image.complete && image.naturalWidth > 0)), `${slug}: selected shared portrait failed to load`);
           await page.locator('#character-profile-portrait').screenshot({ path: `test-results/${engine}-shared-art-${slug}-${width}.png` });
         }
         await visit('moments.html?moment=only-eyes-for-you');
@@ -519,7 +535,7 @@ try {
           assert.equal(await card.getAttribute('data-arc'), '', 'Do not invent an Arc for the soundtrack');
           assert.equal(await card.locator('.music-downloads a[download]').count(), 2);
           assert.ok(await card.locator('a[href="moments.html?moment=only-eyes-for-you"]').count());
-          assert.ok(await card.locator('a[href="gallery.html?image=char-lynleit-felix-1"]').count());
+          assert.ok(await card.locator(`a[href="gallery.html?image=${currentSharedId}"]`).count());
           assert.ok(await card.locator('audio').evaluate(audio => audio.paused && audio.preload === 'none' && !audio.autoplay), 'Audio must wait for visitor-controlled playback');
         }
         await page.locator('#passacaglia-movement-i').scrollIntoViewIfNeeded();
@@ -550,6 +566,10 @@ try {
         assert.equal(await page.locator('#moment-phase-track [data-phase="late-arc-one"]').count(), 0);
         await page.locator('.timeline-approximate [data-phase="late-arc-one"]').click();
         assert.equal(await page.locator('#moment-phase-filter').inputValue(), 'late-arc-one');
+        // The current late-Arc-1 entries are H Scenes, excluded on a fresh visit.
+        const sceneVisibility = page.getByRole('group', { name: 'H Scene visibility', exact: true });
+        assert.equal(await sceneVisibility.getByRole('switch', { name: 'Include H Scenes', exact: true }).isChecked(), false);
+        await sceneVisibility.getByRole('switch', { name: 'Include H Scenes', exact: true }).check();
         assert.ok(await page.locator('.moment-card:visible').count() > 0);
         await page.locator('.timeline-approximate').scrollIntoViewIfNeeded();
         await page.screenshot({ path: `test-results/${engine}-approximate-moments-${width}.png` });
@@ -641,7 +661,9 @@ try {
       await testSharedNight(page, origin, engine);
       await testAppearanceComparisons(page, origin, engine);
       assert.deepEqual(errors, [], `${engine}: browser script errors`);
-      console.log(`${engine}: ${pages.length} routes at 3 widths; intermediate panes at 6 widths; reader navigation, filtering, version search, note focus, map movement, entity styling, and portrait eras passed.`);
+      console.log(process.env.TEST_READER_CONTROLS_ONLY === '1'
+        ? `${engine}: reader controls, intermediate layouts and remaining gallery/story/profile regressions passed.`
+        : `${engine}: ${pages.length} routes at 3 widths; intermediate panes at 6 widths; reader navigation, filtering, version search, note focus, map movement, entity styling, and portrait eras passed.`);
     } finally { await browser.close(); }
   }
 } finally { await new Promise(resolve => server.close(resolve)); }

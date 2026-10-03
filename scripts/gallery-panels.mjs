@@ -57,7 +57,7 @@ export function validatePanels(root, records, { built = true } = {}) {
     for (const beat of record.beats) {
       assert.ok(typeof beat.id === 'string' && slug.test(beat.id) && !beats.has(beat.id) && typeof beat.title === 'string' && beat.title.trim(), `${record.id}: invalid beat`);
       beats.add(beat.id);
-      const images = record.panels.filter(panel => panel.beat === beat.id);
+      const images = record.panels.filter(panel => panel.beat === beat.id && !panel.supersededBy);
       assert.ok(images.length, `${record.id}: empty beat`);
       if (images.length > 1) {
         const compositions = images.map(panel => panel.composition);
@@ -71,6 +71,11 @@ export function validatePanels(root, records, { built = true } = {}) {
       assert.ok(beats.has(panel.beat), `${record.id}: panel has no valid beat`);
       for (const key of ['label', 'title', 'alt']) assert.ok(typeof panel[key] === 'string' && panel[key].trim(), `${record.id}: missing ${key}`);
       const file = localFile(panel.src, `media/gallery/panels/${record.id}/`);
+      if (panel.revisionOf) {
+        const original = record.panels.find(p => p.id === panel.revisionOf);
+        assert.ok(original && original.supersededBy === panel.id && original.beat === panel.beat && !panel.supersededBy, `${record.id}: invalid image revision chain`);
+      }
+      if (panel.supersededBy) assert.ok(record.panels.some(p => p.id === panel.supersededBy && p.revisionOf === panel.id), `${record.id}: missing replacement image`);
       assert.ok(!sources.has(panel.src), `${record.id}: repeated original`); sources.add(panel.src);
       if (built) {
         assert.equal(panel.bytes, fs.statSync(file).size, `${record.id}: stale original size`);
@@ -78,7 +83,7 @@ export function validatePanels(root, records, { built = true } = {}) {
         localFile(panel.display, 'media/gallery/previews/panels/');
         localFile(panel.thumbnail, 'media/gallery/previews/panels/');
         if (record.revision) {
-          assert.ok(path.basename(panel.src, path.extname(panel.src)).replace(/-img-\d{6}$/, '').endsWith(`-${record.revision}`), `${record.id}: original needs the artwork revision suffix`);
+          if (!panel.revisionOf) assert.ok(path.basename(panel.src, path.extname(panel.src)).replace(/-img-\d{6}$/, '').endsWith(`-${record.revision}`), `${record.id}: original needs the artwork revision suffix`);
           for (const key of ['display', 'thumbnail']) assert.equal(panel[key].replace(/-img-\d{6}(?=\.webp$)/, ''), `media/gallery/previews/panels/PREV-${record.id}-${record.revision}-${panel.id}-${key}.webp`, `${record.id}: stale ${key} revision`);
         }
       }

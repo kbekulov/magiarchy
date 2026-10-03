@@ -5,9 +5,11 @@ export async function testGalleryPanels(page, origin, engine) {
   const records = JSON.parse(fs.readFileSync('gallery/panels.json', 'utf8'));
   const record = records.find(record => record.id === 'river-incident');
   const panelIds = ['panel-0a', 'panel-0b', 'panel-1', 'panel-2', 'panel-3a', 'panel-3b', 'panel-7'];
-  assert.deepEqual(record.panels.map(panel => panel.id), panelIds, 'Preserve the seven-panel reading order and legacy fragments');
+  const current = record => record.panels.filter(panel => !panel.supersededBy);
+  const countText = record => `${new Set(record.panels.map(panel => panel.beat)).size} beats · ${current(record).length} images${record.panels.length > current(record).length ? ` · ${record.panels.length - current(record).length} retained originals` : ''}`;
+  assert.deepEqual(record.panels.filter(panel => !panel.revisionOf).map(panel => panel.id), panelIds, 'Preserve the seven-panel reading order and legacy fragments');
   assert.equal(new Set(record.panels.map(panel => panel.beat)).size, 7, 'Every river panel is a successive beat');
-  assert.ok(record.panels.every(panel => !panel.composition), 'River panels are not alternative compositions');
+  assert.equal(current(record).length, 7, 'The seven current river beats remain distinct from retained originals');
   const visit = async route => { await page.goto(`${origin}/${route}`); await page.waitForLoadState('networkidle'); };
   const sleepers = records.find(item => item.id === 'sleepers-above-the-river');
   assert.deepEqual(sleepers.panels.map(panel => panel.id), Array.from({ length: 7 }, (_, i) => `panel-${i + 1}`));
@@ -43,7 +45,7 @@ export async function testGalleryPanels(page, origin, engine) {
       await page.setViewportSize({ width, height: 900 });
       await visit(`gallery.html?panels=${meeting.id}#panel-8`);
       assert.deepEqual(await page.locator('.scene-panel').evaluateAll(nodes => nodes.map(node => node.id)), meeting.panels.map(panel => panel.id));
-      assert.equal(await page.locator('#panel-count').textContent(), '9 beats · 9 images');
+      assert.equal(await page.locator('#panel-count').textContent(), countText(meeting));
       assert.equal(await page.locator('#panel-context a').getAttribute('href'), 'moments.html?moment=a-meeting-beyond-authority&version=v1');
       assert.ok(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1));
       await page.screenshot({ path: `test-results/${engine}-${meetingId}-${width}.png` });
@@ -92,7 +94,8 @@ export async function testGalleryPanels(page, origin, engine) {
   for (const width of [390, 1440]) {
     await page.setViewportSize({width, height:900});
     await visit('gallery.html?panels=cat-incident');
-    assert.equal(await page.locator('.scene-panel').count(), 8);
+    assert.equal(await page.locator('.scene-panel').count(), cat.panels.length);
+    assert.equal(current(cat).length, 8);
     assert.ok(await page.locator('#panel-slideshow').isVisible());
     assert.equal(await page.locator('#panel-context a').getAttribute('href'), 'moments.html?moment=the-cat-in-the-family-house&version=v2');
     assert.ok(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1));
@@ -108,8 +111,8 @@ export async function testGalleryPanels(page, origin, engine) {
   assert.ok(await page.locator('#phase-vanishing-point a[href="gallery.html?panels=cat-incident"]').count());
   const historical = structuredClone(records);
   const historicalRiver = historical.find(item => item.id === record.id);
-  historicalRiver.chapter.version = 'v1';
-  historicalRiver.moment.version = 'v1';
+  historicalRiver.chapter = { slug: 'the-empty-boats-beneath-the-bridge', version: 'v1' };
+  historicalRiver.moment = { slug: 'the-boat-beneath-the-bridge', version: 'v1' };
   await page.route('**/gallery/panels.json', route => route.fulfill({ json: historical }));
   await visit('story.html');
   assert.equal(await page.locator(timelineLink).count(), 0, 'Historical-only panels must not attach to the current timeline');
@@ -140,7 +143,7 @@ export async function testGalleryPanels(page, origin, engine) {
     assert.equal(await page.locator('#panel-character').inputValue(), 'lynleit');
     await page.locator(`.panel-card > a[href="gallery.html?panels=${record.id}"]`).click();
     await page.waitForLoadState('networkidle');
-    assert.equal(await page.locator('.scene-panel').count(), 7);
+    assert.equal(await page.locator('.scene-panel').count(), record.panels.length);
     assert.ok(await page.locator('#panel-slideshow').isVisible());
     assert.equal(await page.locator('#panel-slide-toggle').textContent(), 'Play', 'Reduced motion starts paused');
     assert.equal(await page.locator('#panel-slideshow-stage img').count(), 2);
@@ -163,7 +166,7 @@ export async function testGalleryPanels(page, origin, engine) {
     await page.locator('#panel-slideshow').screenshot({ path: `test-results/${engine}-panel-summary-${width}.png` });
     await page.locator('#panel-slide-next').click();
     await page.waitForFunction(() => document.querySelector('#panel-slideshow').dataset.index === '1');
-    assert.equal(await page.locator('#panel-slide-caption').getAttribute('href'), `#${record.panels[1].id}`);
+    assert.equal(await page.locator('#panel-slide-caption').getAttribute('href'), `#${current(record)[1].id}`);
     await page.locator('#panel-slide-previous').click();
     await page.waitForFunction(() => document.querySelector('#panel-slideshow').dataset.index === '0');
     await page.locator('#panel-slide-previous').click();
@@ -173,15 +176,15 @@ export async function testGalleryPanels(page, origin, engine) {
     assert.ok(await page.evaluate(() => document.documentElement.scrollWidth <= document.documentElement.clientWidth + 1), 'Reader must also fit beside a native scrollbar');
     assert.equal(await page.locator('body').evaluate(el => getComputedStyle(el).minWidth), '0px');
     assert.equal(await page.locator('.panel-beat').count(), 7);
-    assert.deepEqual(await page.locator('.panel-beat').evaluateAll(beats => beats.map(beat => [...beat.querySelectorAll('.scene-panel')].map(panel => panel.id))), panelIds.map(id => [id]), 'Each panel must occupy its own beat in sequence');
-    assert.equal(await page.locator('#panel-count').textContent(), '7 beats · 7 images');
-    assert.ok(!/Composition|alternative/i.test(await page.locator('#panel-sequence').textContent()), 'Successive beats must not carry alternative-composition labels');
-    assert.equal(await page.locator('#panel-jump-links a').count(), 7);
+    assert.deepEqual(await page.locator('.panel-beat').evaluateAll(beats => beats.map(beat => [...beat.querySelectorAll('.panel-beat-artwork > .scene-panel')].map(panel => panel.id))), current(record).map(panel => [panel.id]), 'Each current panel must occupy its own beat in sequence');
+    assert.equal(await page.locator('#panel-count').textContent(), countText(record));
+    assert.ok(!/alternative/i.test(await page.locator('#panel-sequence').textContent()), 'Retained revisions must not be described as alternate story compositions');
+    assert.equal(await page.locator('#panel-jump-links a').count(), record.panels.length);
     assert.deepEqual(await page.locator('#panel-jump-links img').evaluateAll(images => images.map(img => img.getAttribute('src'))), record.panels.map(panel => panel.thumbnail), 'Thumbnail index must show the current artwork revision');
     assert.equal(await page.locator('.panel-jump-group').count(), 7);
     assert.ok(!await page.locator('#panel-index').evaluate(el => el.open), 'Sketch index is a secondary disclosure');
     assert.ok(await page.locator('.scene-panel').first().isVisible(), 'Reading art does not depend on opening the index');
-    assert.ok(await page.locator('.scene-panel').evaluateAll(panels => panels.every(panel => {
+    assert.ok(await page.locator('.panel-beat-artwork > .scene-panel').evaluateAll(panels => panels.every(panel => {
       const container = panel.parentElement;
       const style = getComputedStyle(container);
       const available = container.clientWidth - parseFloat(style.paddingLeft) - parseFloat(style.paddingRight);
@@ -192,7 +195,7 @@ export async function testGalleryPanels(page, origin, engine) {
     await page.locator('#panel-index summary').focus();
     await page.keyboard.press('Enter');
     assert.ok(await page.locator('#panel-index').evaluate(el => el.open), 'Keyboard opens the sketch index');
-    assert.deepEqual(await page.locator('.panel-jump-group').evaluateAll(groups => groups.map(group => group.querySelectorAll('a').length)), [1, 1, 1, 1, 1, 1, 1]);
+    assert.deepEqual(await page.locator('.panel-jump-group').evaluateAll(groups => groups.map(group => group.querySelectorAll('a').length)), record.beats.map(beat => record.panels.filter(panel => panel.beat === beat.id).length));
     assert.ok(await page.locator('#panel-jump-links').evaluate(el => el.scrollWidth <= el.clientWidth + 1), 'Panel navigator must wrap without horizontal scrolling');
     const thumbHeights = await page.locator('.panel-jump-preview').evaluateAll(nodes => nodes.map(el => el.getBoundingClientRect().height));
     assert.ok(thumbHeights.every(height => height === thumbHeights[0]), 'Thumbnail bays must align');
@@ -201,7 +204,7 @@ export async function testGalleryPanels(page, origin, engine) {
     assert.ok(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1));
     const panels = await page.locator('.scene-panel-art img').evaluateAll(images => images.map(img => ({ src: img.getAttribute('src'), width: img.width, height: img.height, ratio: Number(img.getAttribute('width')) / Number(img.getAttribute('height')) })));
     assert.deepEqual(panels.map(p => p.src), record.panels.map(p => p.display));
-    for (const panel of panels) assert.ok(Math.abs(panel.width / panel.height - panel.ratio) < .02, 'Scene art must not be cropped');
+    for (const panel of panels.filter(panel => panel.height > 0)) assert.ok(Math.abs(panel.width / panel.height - panel.ratio) < .02, 'Visible scene art must not be cropped');
     await page.screenshot({ path: `test-results/${engine}-panels-index-${width}.png` });
     await page.locator('#panel-jump-links a').last().focus();
     await page.keyboard.press('Enter');

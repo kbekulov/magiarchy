@@ -9,7 +9,7 @@ const data = buildDashboard(root);
 
 test('visual overview uses current public panels and traceable theme weights', () => {
   const sets = JSON.parse(fs.readFileSync(new URL('../gallery/panels.json', import.meta.url)));
-  assert.equal(data.panels.length, sets.filter(s => !s.hScene && !s.placeholder && !s.nonCanon).reduce((n, s) => n + s.panels.length, 0));
+  assert.equal(data.panels.length, sets.filter(s => !s.hScene && !s.placeholder && !s.nonCanon).reduce((n, s) => n + s.panels.filter(p => !p.supersededBy).length, 0));
   for (const panel of data.panels) {
     assert.ok(fs.existsSync(new URL(`../${panel.src}`, import.meta.url)));
     const set = sets.find(s => s.id === panel.set);

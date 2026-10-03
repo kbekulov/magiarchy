@@ -9,9 +9,11 @@ export async function testGalleryStacks(page, origin, engine) {
     await page.waitForLoadState('networkidle');
     const stack = page.locator('[data-artwork-stack="sherie-red-sofa"]:not([hidden])');
     assert.equal(await stack.count(), 1);
+    const versionCount = await page.locator('[data-artwork-stack="sherie-red-sofa"]').count();
+    assert.ok(versionCount >= 15, 'All original sofa variants remain registered');
     await stack.locator(':scope > a').click();
     await page.waitForLoadState('networkidle');
-    assert.equal(await page.locator('#gallery-image-versions a').count(), 15);
+    assert.equal(await page.locator('#gallery-image-versions a').count(), versionCount);
     assert.deepEqual(await page.locator('.gallery-variant-category').allTextContents(), ['Without cards', 'With cards']);
     await page.locator('#gallery-image-versions a').last().click();
     await page.waitForLoadState('networkidle');
@@ -21,7 +23,7 @@ export async function testGalleryStacks(page, origin, engine) {
       await page.locator(`#gallery-image-versions a[href="gallery.html?image=${id}"]`).click();
       await page.waitForLoadState('networkidle');
       await page.locator('#gallery-detail-image').evaluate(image => image.decode());
-      assert.equal(await page.locator('#gallery-image-versions a').count(), 15);
+      assert.equal(await page.locator('#gallery-image-versions a').count(), versionCount);
       const source = await page.locator('#gallery-detail-source').getAttribute('href');
       assert.equal(source, publishedImagePath(`media/gallery/images/characters/${id}.png`));
       const response = await page.request.get(`${origin}/${source}`);

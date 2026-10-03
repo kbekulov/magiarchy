@@ -1,5 +1,16 @@
 [
   {
+    "slug": "site-audit-2026-10-03",
+    "title": "Site and Artwork Audit: 3 October 2026",
+    "topic": "Archive Content Review",
+    "description": "A site-wide review of continuity, character knowledge, prose, metadata and artwork, with source-linked findings and an image-revision register.",
+    "file": "site-audit-2026-10-03.md",
+    "updated": "2026-10-03",
+    "speakers": ["Author's Desk"],
+    "defaultVersion": "v1",
+    "versions": [{"id":"v1","label":"v1 · Current","file":"site-audit-2026-10-03.md","updated":"2026-10-03"}]
+  },
+  {
     "slug": "content-audit-2026-09-30",
     "title": "Comprehensive Content Audit: 30 September 2026",
     "topic": "Archive Content Review",

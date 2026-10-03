@@ -174,5 +174,53 @@
     "sha256": "ca828980ebd546447da8059dc827e7a585e738818589aebfb580a2fbccf2ca44",
     "width": 112,
     "height": 57
+  },
+  {
+    "resource": "yulia-white-sweater",
+    "view": "back-v2",
+    "path": "media/gallery/resources/yulia-white-sweater/FULL-char-yulia-white-sweater-t-pose-back-face-hair-v2-img-000282.png",
+    "sha256": "19f3bb06eedfbbb9856948b415f7548b76cf0d2c313cb08e01ccd59d3a72defb",
+    "width": 1060,
+    "height": 1484
+  },
+  {
+    "resource": "yulia-white-sweater",
+    "view": "front-v2",
+    "path": "media/gallery/resources/yulia-white-sweater/FULL-char-yulia-white-sweater-t-pose-front-face-hair-v2-img-000283.png",
+    "sha256": "0b9e0e554d493d9b8717fab3f71a3229425a934b2ba6b4c0cd0654c35225aa7a",
+    "width": 1060,
+    "height": 1484
+  },
+  {
+    "resource": "lynleit-t-pose-v1",
+    "view": "front-v2",
+    "path": "media/gallery/resources/lynleit-t-pose-v1/FULL-char-lynleit-arc-1-t-pose-v1-arm-corrected-front-face-hair-v2-img-000321.png",
+    "sha256": "306d554489052ec4059df198eee18830553857c6fe67038e83a2c71b8722251f",
+    "width": 1122,
+    "height": 1402
+  },
+  {
+    "resource": "lynleit-t-pose-v1",
+    "view": "back-v2",
+    "path": "media/gallery/resources/lynleit-t-pose-v1/FULL-char-lynleit-arc-1-t-pose-v1-arm-hand-corrected-back-face-hair-v2-img-000322.png",
+    "sha256": "bd0e46810ce9d2e71d0f3716422e61b5ff9a708c9732a9fcfdf9696a16f71b87",
+    "width": 1122,
+    "height": 1402
+  },
+  {
+    "resource": "lynleit-t-pose-v2",
+    "view": "front-v2",
+    "path": "media/gallery/resources/lynleit-t-pose-v2/FULL-char-lynleit-t-pose-v2-arm-corrected-front-face-hair-v2-img-000323.png",
+    "sha256": "ed54b0922561b5277b7c3b1d24cdfaffdaeed34fcd88032af215a6bec2970893",
+    "width": 1122,
+    "height": 1402
+  },
+  {
+    "resource": "lynleit-t-pose-v2",
+    "view": "back-v2",
+    "path": "media/gallery/resources/lynleit-t-pose-v2/FULL-char-lynleit-t-pose-v2-arm-hand-corrected-back-face-hair-v2-img-000324.png",
+    "sha256": "14cd1e2650577db0e29d2bb2b7e090c2b9859b0517e2ab4461a0ca8eebf4b120",
+    "width": 1122,
+    "height": 1402
   }
 ]
