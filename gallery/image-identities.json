@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "nextId": 224,
+  "nextId": 226,
   "images": [
     {
       "id": "IMG-000001",
@@ -3134,6 +3134,28 @@
       ],
       "previousPaths": [
         "media/gallery/images/characters/char-sherie-felix-fan-service-moonlit-lounge.png"
+      ],
+      "active": true
+    },
+    {
+      "id": "IMG-000224",
+      "source": "media/gallery/images/characters/FULL-char-father-mikhail-autumn-night-img-000224.png",
+      "derivatives": [
+        "media/gallery/previews/characters/PREV-char-father-mikhail-autumn-night-img-000224.webp"
+      ],
+      "previousPaths": [
+        "media/gallery/images/characters/FULL-char-father-mikhail-autumn-night.png"
+      ],
+      "active": true
+    },
+    {
+      "id": "IMG-000225",
+      "source": "media/gallery/images/characters/FULL-char-inspector-leo-autumn-street-img-000225.png",
+      "derivatives": [
+        "media/gallery/previews/characters/PREV-char-inspector-leo-autumn-street-img-000225.webp"
+      ],
+      "previousPaths": [
+        "media/gallery/images/characters/FULL-char-inspector-leo-autumn-street.png"
       ],
       "active": true
     }

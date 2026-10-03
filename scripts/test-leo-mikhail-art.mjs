@@ -3,8 +3,8 @@ import assert from 'node:assert/strict';
 
 export async function testLeoMikhailArt(page, origin, engine) {
   const cast = [
-    ['father-mikhail', 'Father Mikhail', 'scarf-book-sketch', ['reading', 'dry-remark', 'folded-arms']],
-    ['inspector-leo', 'Inspector Leo', 'raincoat-sketch', ['taking-notes', 'skeptical', 'looking-back']]
+    ['father-mikhail', 'Father Mikhail', 'autumn-night', ['reading', 'dry-remark', 'folded-arms']],
+    ['inspector-leo', 'Inspector Leo', 'autumn-street', ['taking-notes', 'skeptical', 'looking-back']]
   ];
   for (const width of [390, 1440]) {
     await page.setViewportSize({ width, height: 900 });
@@ -12,7 +12,11 @@ export async function testLeoMikhailArt(page, origin, engine) {
       await page.goto(`${origin}/gallery.html`);
       await page.waitForLoadState('networkidle');
       await page.locator('#gallery-character-filter').selectOption(slug);
-      assert.equal(await page.locator('.gallery-card:not([hidden])').count(), 2);
+      assert.equal(await page.locator('.gallery-card:not([hidden])').count(), 3);
+      await page.goto(`${origin}/gallery.html?image=char-${slug}-${portrait}`);
+      await page.waitForLoadState('networkidle');
+      await page.locator('#gallery-detail-image').evaluate(image => image.decode());
+      assert.equal(await page.locator('#gallery-detail-source').getAttribute('href'), publishedImagePath(`media/gallery/images/characters/char-${slug}-${portrait}.png`));
       for (const pose of poses) {
         const id = `char-${slug}-chibi-${pose}`;
         await page.goto(`${origin}/gallery.html?image=${id}`);
@@ -24,6 +28,7 @@ export async function testLeoMikhailArt(page, origin, engine) {
       }
       await page.goto(`${origin}/character.html?character=${slug}`);
       await page.waitForLoadState('networkidle');
+      await page.locator(`.profile-art-thumbnails button:has(img[src*="char-${slug}-${portrait}"])`).click();
       const hero = page.locator('.profile-portrait-strip img').nth(1);
       await hero.evaluate(image => image.decode());
       assert.ok((await hero.getAttribute('src')).includes(`char-${slug}-${portrait}`));
