@@ -276,11 +276,11 @@
     "topic": "Visual Production Standard",
     "file": "character-image-production.md",
     "updated": "2026-10-03",
-    "description": "Hard elbow-length maximum for female long hair, with mandatory profile proportion comparisons and approved identity, anatomy and costume references.",
+    "description": "Canon hair lengths and hairstyles for Lynleit, Sherie and Yulia, with named allowances to the general elbow-length limit and mandatory proportion checks.",
     "speakers": [
       "Author's Desk"
     ],
-    "defaultVersion": "v24",
+    "defaultVersion": "v25",
     "versions": [
       {
         "id": "v1",
@@ -445,10 +445,17 @@
       },
       {
         "id": "v24",
-        "label": "v24 · Current",
-        "file": "character-image-production.md",
+        "label": "v24 · Archived",
+        "file": "character-image-production-v24.md",
         "updated": "2026-10-03",
         "description": "Female long hair ends at or above elbow level, never the waist; enforce the limit in briefs and visual review without changing identity or body proportions."
+      },
+      {
+        "id": "v25",
+        "label": "v25 · Current",
+        "file": "character-image-production.md",
+        "updated": "2026-10-03",
+        "description": "Lynleit's loose hair is waist-length; Sherie's mostly gathered bun leaves a smaller section to the elbow or slightly beyond; Yulia's hair is elbow-length."
       }
     ]
   },
@@ -1311,7 +1318,7 @@
     "title": "Questions to Be Answered",
     "topic": "Editorial Ledger",
     "file": "questions-to-be-answered.md",
-    "updated": "2026-09-27",
+    "updated": "2026-10-03",
     "description": "Unanswered questions about chronology, family reveals, Holumn effects, and the limits of established lore.",
     "speakers": [
       "Author's Desk"

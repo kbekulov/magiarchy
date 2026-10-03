@@ -5,7 +5,7 @@ const profileSeeds = [
     nameMeaning: 'Her name may mean "moonlight" or "illuminated by moonlight"; "moon lake" is another interpretation.',
     visual: 'A long tailored blue coat over a pale high-collared blouse with a narrow black ribbon, fitted high-waisted black shorts, dark tights, and black over-the-knee lace-up boots. Her wardrobe is formal and fashion-conscious.', palette: 'Midnight blue, black, white, cold cyan',
     physical: [
-      ['Hair', 'Very long, wavy ash-black hair with a side-parted fringe, most often worn loose.'],
+      ['Hair', 'Waist-length, wavy ash-black hair with a side-parted fringe, most often worn loose.'],
       ['Eyes', 'Bright cyan-blue.'],
       ['Height and build', '169 cm, the same height as Helena; only Natalia is taller among the women. A longer, leaner silhouette with very attractive legs, elegant shins and ankles, stronger, well-shaped thighs, and a firm, rounded bottom she takes pride in. Her slender build retains these curves.'],
       ['Distinguishing features', 'Pale complexion, refined angular features, expressive eyes, and a composed, quietly sensual gaze.']
@@ -183,7 +183,7 @@ const profileSeeds = [
     visual: 'Tailored fieldwear with compact support gear and visible communications equipment', palette: 'Navy, slate, white, emergency blue', traits: [
       { label: 'The Shared Night', note: "She discovers that Felix remembers the intimate dreams she thought private. When choice returns, she steps away and keeps their no-kissing agreement. They arrange coffee afterward. She enjoys his company while trying to keep their gradually sexual connection stable, professional and plausibly deniable; she fears dependency in either direction. By the briefing she knows about Holumns, though her first discovery is not recorded." },{ label: 'Social play', note: 'She enjoys teasing and provoking mischief even when nobody needs to be persuaded or impressed. Quietness usually means she feels unwell or uncomfortable.' }, { label: 'Emotional attention', note: 'An unexpected response draws her attention to what changed in the person and in the atmosphere of the whole exchange.' }, { label: 'Persuasive judgment', note: 'A useful agreement reached for the wrong reason feels like a success she cannot safely repeat. She may joke that she failed successfully while reconsidering her understanding of the other person.' }],
     physical: [
-      ['Hair', 'Long pale-blonde hair gathered into a high bun, with loose lengths sweeping over one shoulder.'],
+      ['Hair', 'Long pale-blonde hair, mostly gathered into a high bun, with a smaller loose section sweeping over one shoulder to her elbow or slightly beyond.'],
       ['Eyes', 'Pale grey-green.'],
       ['Height and build', 'Petite, with bottom fullness comparable to Lynleit\'s but softer, and slightly fuller breasts. Her curves appear more concentrated on her shorter frame.'],
       ['Distinguishing features', 'A fine oval face, long lashes, and ornate red-gold drop earrings.']
@@ -288,7 +288,7 @@ const profileSeeds = [
     summary: 'A top criminology student who checks Hiyu\'s theories against evidence and reluctantly accompanies him into Vilen\'s quarantined park.',
     visual: 'Neatly layered civilian clothing with orderly study materials', palette: 'Cream, charcoal, muted red, pale gold',
     physical: [
-      ['Hair', 'Very long dark chestnut-brown hair with a blunt fringe and softly flared ends.'],
+      ['Hair', 'Elbow-length dark chestnut-brown hair with a blunt fringe and softly flared ends.'],
       ['Eyes', 'Green.'],
       ['Height and build', 'Similarly petite to Sherie, with a somewhat straighter silhouette and subtler fullness through her thighs and bottom. Her chest is broadly comparable to Lynleit\'s.'],
       ['Distinguishing features', 'A fair complexion, wide observant eyes, and a habitually unsmiling expression.']

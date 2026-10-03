@@ -10,6 +10,13 @@ export async function testAppearanceComparisons(page, origin, engine) {
     await page.setViewportSize({ width, height: 950 });
     for (const slug of width === 390 ? names : ['lynleit']) {
       await visit(`character.html?character=${slug}#appearance-title`);
+      const hair = await page.locator('#character-appearance dt').filter({ hasText: /^Hair$/ }).evaluate(node => node.nextElementSibling.textContent);
+      if (slug === 'lynleit') {
+        assert.match(hair, /^Waist-length, wavy ash-black hair/);
+        assert.match(await page.locator('#character-appearance').textContent(), /In Arc 2, Lynleit wears her ash-black hair in a compact bun/);
+      }
+      if (slug === 'sherie') assert.match(hair, /mostly gathered into a high bun, with a smaller loose section.*to her elbow or slightly beyond/);
+      if (slug === 'yulia') assert.match(hair, /^Elbow-length dark chestnut-brown hair/);
       const disclosure = page.locator('.appearance-comparison-disclosure');
       const table = page.locator('.appearance-comparison-table');
       assert.equal(await disclosure.getAttribute('open'), null, `${slug}: must start collapsed`);
@@ -103,12 +110,19 @@ export async function testAppearanceComparisons(page, origin, engine) {
   assert.equal(await page.locator('.appearance-comparison-table').count(), 0);
   await visit('docs.html?doc=character-image-production#comparative-female-builds');
   assert.equal(await page.getByRole('heading', { name: 'Comparative female builds', exact: true }).count(), 1);
-  assert.equal(await page.getByRole('combobox', { name: 'Choose version' }).inputValue(), 'v24');
+  assert.equal(await page.getByRole('combobox', { name: 'Choose version' }).inputValue(), 'v25');
   assert.equal(await page.getByRole('heading', { name: 'Comparative male builds', exact: true }).count(), 1);
   assert.equal(await page.getByRole('heading', { name: 'Mandatory profile proportion comparisons', exact: true }).count(), 1);
   assert.equal(await page.getByRole('heading', { name: 'Mandatory female hair-length limit', exact: true }).count(), 1);
-  assert.match(await page.locator('main').textContent(), /Female long hair must end at or above elbow level/);
+  assert.equal(await page.getByRole('heading', { name: 'Canon hair designs: Lynleit, Sherie and Yulia', exact: true }).count(), 1);
+  assert.match(await page.locator('main').textContent(), /Lynleit has waist-length hair; Sherie's hanging section reaches the elbow or slightly beyond; Yulia's hair is elbow-length/);
+  assert.equal(await page.locator('a[href$="gallery.html?resource=sherie-arc-1-normal-face-reference"]').count(), 1);
   assert.equal(await page.locator('#document-source-link').getAttribute('href'), 'docs/character-image-production.md');
+  await visit('docs.html?doc=character-image-production&version=v24');
+  assert.equal(await page.getByRole('heading', { name: 'Mandatory female hair-length limit', exact: true }).count(), 1);
+  assert.equal(await page.getByRole('heading', { name: 'Canon hair designs: Lynleit, Sherie and Yulia', exact: true }).count(), 0);
+  assert.match(await page.locator('main').textContent(), /Female long hair must end at or above elbow level/);
+  assert.equal(await page.locator('#document-source-link').getAttribute('href'), 'docs/character-image-production-v24.md');
   await visit('docs.html?doc=character-image-production&version=v23');
   assert.equal(await page.getByRole('heading', { name: 'Mandatory profile proportion comparisons', exact: true }).count(), 1);
   assert.equal(await page.getByRole('heading', { name: 'Mandatory female hair-length limit', exact: true }).count(), 0);
@@ -126,6 +140,8 @@ export async function testAppearanceComparisons(page, origin, engine) {
   if (await updatesToggle.getAttribute('aria-expanded') === 'false') await updatesToggle.click();
   const hairRuleLink = page.locator('#update-female-hair-length').getByRole('link', { name: 'Read the design rule' });
   assert.equal(await hairRuleLink.getAttribute('href'), 'docs.html?doc=character-image-production#mandatory-female-hair-length-limit');
+  const canonHairLink = page.locator('#update-canon-hair-designs').getByRole('link', { name: 'Read the canon designs' });
+  assert.equal(await canonHairLink.getAttribute('href'), 'docs.html?doc=character-image-production#canon-hair-designs-lynleit-sherie-and-yulia');
   await page.locator('#update-character-build-comparisons').getByRole('link', { name: 'Compare appearances' }).click();
   await page.waitForLoadState('networkidle');
   assert.ok(page.url().endsWith('character=lynleit#appearance-title'));

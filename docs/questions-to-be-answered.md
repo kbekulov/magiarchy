@@ -162,6 +162,6 @@ These questions determine sequence, event placement, reveal timing, or elapsed t
 | Character typing | Does the author confirm Lynleit's INFJ and Felix's ENFP working readings, and what further behavior settles Felix's judging function and Kyrien's ISTP versus INTJ uncertainty? | 50% |
 | Relationship | At what point in the opening chapters does Lynleit reveal Kyrien's recruitment to Felix and Reiner, where does the disclosure occur, and how much time remains before Fionn's assassination? | 60% |
 | Boat operation | Does the submerged blue flame leave a lasting injury on the Drowned Choir, and what does the girl's refusal to pursue Lynleit reveal about its limits? | 65% |
-| Character appearance | What exact heights belong to the illustrated cast, and which artwork-derived hair, eye, build, or distinguishing details require correction? | 70% |
 | Covert alliance | Beyond the confirmed river-surveillance operation, what does Lynleit refuse to provide Drake and Sherie, and what concessions or favors do they offer in return? | 70% |
+| Character appearance | What exact heights remain to be established for the illustrated cast, and which other artwork-derived appearance details still require correction? | 75% |
 | Relationship | Which later encounter results in the conception of Lynleit and Kyrien's son, what evidence makes the pregnancy inferable at the opening of Arc 2, and how much time separates Doom Has an Address, their later encounters, pregnancy, and disappearance? | 75% |
