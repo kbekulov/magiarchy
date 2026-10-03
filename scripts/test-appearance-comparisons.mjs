@@ -71,12 +71,21 @@ export async function testAppearanceComparisons(page, origin, engine) {
       assert.equal(await table.isVisible(), false);
       await disclosure.locator('summary').click();
       assert.ok(await table.isVisible());
-      assert.equal(await table.locator('tr').count(), 1);
-      assert.equal(await table.locator('mark').count(), 1);
-      assert.equal(await table.locator('mark').getAttribute('data-character'), slug);
-      const chain = await table.locator('.appearance-comparison-symbol, .appearance-comparison-name').evaluateAll(nodes => nodes.map(node => node.textContent).join(' '));
-      assert.equal(chain, 'Reiner ≈ Drake ≈ Hiyu > Fionn ≈ Heyk ≈ Kyrien ≈ Felix ≈ Tien');
-      assert.equal(await table.locator('[data-character]').count(), 8);
+      assert.equal(await table.locator('tr').count(), 4);
+      assert.equal(await table.locator('mark').count(), 4);
+      assert.deepEqual(await table.locator('mark').evaluateAll(nodes => nodes.map(node => node.dataset.character)), [slug, slug, slug, slug]);
+      assert.deepEqual(await table.locator('th').allTextContents(), ['Height', 'Shoulder breadth', 'Body bulk', 'Muscle bulk']);
+      const chains = await table.locator('tr').evaluateAll(rows => rows.map(row => [...row.querySelectorAll('.appearance-comparison-symbol, .appearance-comparison-name')].map(node => node.textContent).join(' ')));
+      assert.deepEqual(chains, [
+        'Reiner ≈ Drake ≈ Hiyu > Fionn ≈ Heyk ≈ Kyrien ≈ Felix ≈ Tien',
+        'Reiner > Heyk ≥ Kyrien ≈ Hiyu ≈ Felix ≈ Tien ≥ Fionn > Drake',
+        'Reiner > Heyk ≥ Fionn > Felix ≈ Tien ≥ Kyrien ≈ Hiyu > Drake',
+        'Reiner > Heyk ≥ Fionn ≥ Felix ≈ Tien > Kyrien ≈ Hiyu ≈ Drake'
+      ]);
+      for (const row of await table.locator('tr').all()) {
+        assert.equal(await row.locator('[data-character]').count(), 8);
+        assert.deepEqual((await row.locator('[data-character]').evaluateAll(nodes => nodes.map(node => node.dataset.character))).sort(), [...men].sort());
+      }
       assert.ok(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1));
       assert.ok(await table.evaluate(node => [...node.querySelectorAll('.appearance-comparison-step')].every(step => step.getBoundingClientRect().right <= node.getBoundingClientRect().right + 1)));
       const description = await page.locator('#character-appearance').textContent();
@@ -94,7 +103,7 @@ export async function testAppearanceComparisons(page, origin, engine) {
   assert.equal(await page.locator('.appearance-comparison-table').count(), 0);
   await visit('docs.html?doc=character-image-production#comparative-female-builds');
   assert.equal(await page.getByRole('heading', { name: 'Comparative female builds', exact: true }).count(), 1);
-  assert.equal(await page.getByRole('combobox', { name: 'Choose version' }).inputValue(), 'v21');
+  assert.equal(await page.getByRole('combobox', { name: 'Choose version' }).inputValue(), 'v22');
   assert.equal(await page.getByRole('heading', { name: 'Comparative male builds', exact: true }).count(), 1);
   await page.getByRole('combobox', { name: 'Choose version' }).selectOption('v18');
   await page.waitForURL(url => url.searchParams.get('version') === 'v18');

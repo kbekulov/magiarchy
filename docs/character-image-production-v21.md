@@ -91,7 +91,7 @@ Inspect and supply applicable originals in future generation. Their seated poses
 
 ## Comparative male builds
 
-The male profiles' Height and build descriptions in `character.js` own the artist-facing silhouettes. The shared `maleAppearanceComparisons` height row places Reiner, Drake and Hiyu at similar tall heights, above the group of Fionn, Heyk, Kyrien, Felix and Tien. Kyrien is 180 cm; the others in his group are approximately the same height, not independently assigned exact centimetres. Fionn and Heyk's placement beside Kyrien and Felix is author-confirmed. Similar height does not require identical shoulders, limb proportions or body mass.
+The male profiles' Height and build descriptions in `character.js` own the artist-facing silhouettes. The shared `maleAppearanceComparisons` row places Reiner, Drake and Hiyu at similar tall heights, above the group of Fionn, Heyk, Kyrien, Felix and Tien. Kyrien is 180 cm; the others in his group are approximately the same height, not independently assigned exact centimetres. Fionn and Heyk's placement beside Kyrien and Felix is author-confirmed. Similar height does not require identical shoulders, limb proportions or body mass.
 
 - **Reiner:** tall, broad and heavily muscled.
 - **Fionn:** shorter than Reiner, with average shoulder breadth and a relatively well-built frame.
@@ -102,7 +102,7 @@ The male profiles' Height and build descriptions in `character.js` own the artis
 - **Tien:** lean and athletic, similar to Felix in height and build.
 - **Hiyu:** tall like Reiner and Drake, lean, with attractive natural skeletal proportions rather than a gym-built physique.
 
-Use the shared table to compare height, shoulder breadth, body bulk and muscle bulk across all eight men. The three build rows are approximate visual interpretations of the author's descriptions, intended to guide artists placing characters together. Body bulk describes overall silhouette fullness; muscle bulk describes visible muscular volume. Kyrien and Hiyu can have attractive shoulder lines while remaining lightly muscled. Drake's spare overall build does not establish lower physical strength. Keep numerical body weights, circumferences, exact shoulder widths and strength scores separate from these broad comparisons. Waist breadth and leg-to-torso proportions still follow the individual design rather than an invented numerical rule. Do not infer a new athletic ability from an attractive frame or turn model-like shoulders into bodybuilding bulk. Lester, Inspector Leo and Father Mikhail remain outside this height comparison until their builds are established. Existing approved images remain intact.
+Keep shoulder shape, muscular bulk, torso thickness, waist breadth and leg-to-torso proportions distinct. These descriptions do not establish a complete ranking for those features, body weights, numerical body measurements or strength scores. Do not infer a new athletic ability from an attractive frame or turn model-like shoulders into bodybuilding bulk. Lester, Inspector Leo and Father Mikhail remain outside this height comparison until their builds are established. Existing approved images remain intact.
 
 ## Reference selection and design continuity
 

@@ -502,7 +502,10 @@ const appearanceComparisons = [
 ];
 
 const maleAppearanceComparisons = [
-  { label: 'Height', chain: ['reiner', '≈', 'drake', '≈', 'hiyu', '>', 'fionn', '≈', 'heyk', '≈', 'kyrien', '≈', 'felix', '≈', 'tien'] }
+  { label: 'Height', chain: ['reiner', '≈', 'drake', '≈', 'hiyu', '>', 'fionn', '≈', 'heyk', '≈', 'kyrien', '≈', 'felix', '≈', 'tien'] },
+  { label: 'Shoulder breadth', chain: ['reiner', '>', 'heyk', '≥', 'kyrien', '≈', 'hiyu', '≈', 'felix', '≈', 'tien', '≥', 'fionn', '>', 'drake'] },
+  { label: 'Body bulk', chain: ['reiner', '>', 'heyk', '≥', 'fionn', '>', 'felix', '≈', 'tien', '≥', 'kyrien', '≈', 'hiyu', '>', 'drake'] },
+  { label: 'Muscle bulk', chain: ['reiner', '>', 'heyk', '≥', 'fionn', '≥', 'felix', '≈', 'tien', '>', 'kyrien', '≈', 'hiyu', '≈', 'drake'] }
 ];
 
 function renderAppearanceComparison(profile) {
@@ -542,11 +545,12 @@ function renderAppearanceComparison(profile) {
     body.append(row);
   });
   table.append(body);
-  const keyText = comparisons === maleAppearanceComparisons ? '> taller · ≈ similar height' : '> greater · ≈ comparable · ≥ comparable or slightly greater';
+  const keyText = '> greater · ≈ comparable · ≥ comparable or slightly greater';
   const key = createElement('p', 'appearance-comparison-key', keyText);
   key.id = 'appearance-comparison-key';
   table.setAttribute('aria-describedby', key.id);
   disclosure.append(table, key);
+  if (comparisons === maleAppearanceComparisons) disclosure.append(createElement('p', 'appearance-comparison-key', 'Broad visual comparisons. Body bulk describes overall fullness; muscle bulk describes visible muscular volume.'));
   container.append(disclosure);
   return container;
 }
