@@ -352,6 +352,8 @@ const galleryExcludeChibiFilter = document.querySelector('#gallery-exclude-chibi
 const galleryPencilFilter = document.querySelector('#gallery-pencil-filter');
 const galleryColoredFilter = document.querySelector('#gallery-colored-filter');
 const galleryFanServiceFilter = document.querySelector('#gallery-fan-service-filter');
+const galleryIncludeFanServiceFilter = document.querySelector('#gallery-include-fan-service-filter');
+if (galleryIncludeFanServiceFilter) galleryIncludeFanServiceFilter.checked = new URLSearchParams(window.location.search).get('fan-service') === 'include';
 if (galleryFanServiceFilter) galleryFanServiceFilter.checked = new URLSearchParams(window.location.search).get('fan-service') === '1';
 const galleryItems = document.querySelectorAll('.gallery-card');
 const galleryResultCount = document.querySelector('#gallery-result-count');
@@ -516,6 +518,8 @@ function updateGalleryResults() {
   const pencilOnly = galleryPencilFilter?.checked ?? false;
   const coloredOnly = galleryColoredFilter?.checked ?? false;
   const fanServiceOnly = galleryFanServiceFilter?.checked ?? false;
+  const includeFanService = galleryIncludeFanServiceFilter?.checked ?? false;
+  document.body.classList.toggle('gallery-fan-service-visible', includeFanService || fanServiceOnly);
   let visibleCount = 0;
   const matchesFilters = item => {
     const characters = (item.dataset.character ?? '').split(/\s+/).filter(Boolean);
@@ -525,23 +529,21 @@ function updateGalleryResults() {
       && (!chibiOnly || isChibi) && (!excludeChibis || !isChibi)
       && (!pencilOnly || item.dataset.artFinish === 'pencil')
       && (!coloredOnly || item.dataset.artFinish === 'colored')
-      && (!fanServiceOnly || item.dataset.fanService === 'true');
+      && (fanServiceOnly ? item.dataset.fanService === 'true' : includeFanService || item.dataset.fanService !== 'true');
   };
 
   // A mixed stack must show a matching variant, not disappear because its random preview differs.
-  const fanServiceStackPreviews = new Map();
-  if (fanServiceOnly) {
-    galleryItems.forEach(item => {
-      if (!item.dataset.artworkStack || !matchesFilters(item)) return;
-      if (!fanServiceStackPreviews.has(item.dataset.artworkStack) || item.dataset.stackPreview === 'true') {
-        fanServiceStackPreviews.set(item.dataset.artworkStack, item);
-      }
-    });
-  }
+  const matchingStackPreviews = new Map();
+  galleryItems.forEach(item => {
+    if (!item.dataset.artworkStack || !matchesFilters(item)) return;
+    if (!matchingStackPreviews.has(item.dataset.artworkStack) || item.dataset.stackPreview === 'true') {
+      matchingStackPreviews.set(item.dataset.artworkStack, item);
+    }
+  });
 
   galleryItems.forEach((item) => {
     const isPreview = item.dataset.artworkStack
-      ? (fanServiceOnly ? fanServiceStackPreviews.get(item.dataset.artworkStack) === item : item.dataset.stackPreview === 'true')
+      ? matchingStackPreviews.get(item.dataset.artworkStack) === item
       : !item.dataset.imageVersionGroup || item.dataset.imageVersionDefault === 'true';
     const isVisible = isPreview && matchesFilters(item);
 
@@ -560,9 +562,12 @@ function updateGalleryResults() {
 galleryCharacterFilter?.addEventListener('change', updateGalleryResults);
 updateGalleryResults();
 galleryLocationFilter?.addEventListener('change', updateGalleryResults);
-galleryFanServiceFilter?.addEventListener('change', () => {
+for (const toggle of [galleryFanServiceFilter, galleryIncludeFanServiceFilter]) toggle?.addEventListener('change', () => {
+  const other = toggle === galleryFanServiceFilter ? galleryIncludeFanServiceFilter : galleryFanServiceFilter;
+  if (toggle.checked && other) other.checked = false;
   const url = new URL(window.location.href);
   if (galleryFanServiceFilter.checked) url.searchParams.set('fan-service', '1');
+  else if (galleryIncludeFanServiceFilter?.checked) url.searchParams.set('fan-service', 'include');
   else url.searchParams.delete('fan-service');
   window.history.replaceState(window.history.state, '', url);
   updateGalleryResults();

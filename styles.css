@@ -4313,6 +4313,7 @@ a.status-member:hover {
   box-shadow: 0 8px 24px rgba(0, 0, 0, .24);
 }
 
+body:not(.gallery-fan-service-visible) .gallery-card[data-fan-service="true"],
 .gallery-card[hidden] {
   display: none;
 }

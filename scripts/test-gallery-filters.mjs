@@ -10,11 +10,17 @@ export async function testGalleryFilters(page, origin, engine) {
       exclude: page.locator('#gallery-exclude-chibi-filter'),
       pencil: page.locator('#gallery-pencil-filter'),
       colored: page.locator('#gallery-colored-filter'),
+      includeFan: page.locator('#gallery-include-fan-service-filter'),
       fan: page.locator('#gallery-fan-service-filter')
     };
-    const click = async name => controls[name].locator('..').click();
+    const click = async name => {
+      await controls[name].locator('..').scrollIntoViewIfNeeded();
+      await controls[name].locator('..').click();
+    };
     const cards = await page.locator('.gallery-card').evaluateAll(items => items.map(item => ({
       id: item.dataset.image,
+      fan: item.dataset.fanService === 'true',
+      stack: item.dataset.artworkStack,
       chibi: item.dataset.chibi === 'true',
       finish: item.dataset.artFinish,
       characters: item.dataset.character.split(/\s+/),
@@ -25,11 +31,14 @@ export async function testGalleryFilters(page, origin, engine) {
     assert.ok(cards.some(card => card.finish === 'pencil'));
     assert.ok(cards.some(card => card.finish === 'colored'));
     const checkResults = async (format, finish, character = 'all', location = 'all') => {
-      const expected = cards.filter(card => card.preview
+      const candidates = cards.filter(card => !card.fan
         && (format === 'all' || (format === 'chibi' ? card.chibi : !card.chibi))
         && (finish === 'all' || card.finish === finish)
         && (character === 'all' || card.characters.includes(character))
         && (location === 'all' || card.location === location));
+      const chosen = new Map();
+      for (const card of candidates) if (card.stack && (!chosen.has(card.stack) || card.preview)) chosen.set(card.stack, card);
+      const expected = candidates.filter(card => card.stack ? chosen.get(card.stack) === card : card.preview);
       assert.deepEqual(await page.locator('.gallery-card:not([hidden])').evaluateAll(items => items.map(item => item.dataset.image)), expected.map(card => card.id));
       assert.equal(await page.locator('#gallery-result-count').textContent(), String(expected.length));
       assert.equal(await page.locator('#gallery-empty-state').isVisible(), expected.length === 0);
@@ -61,6 +70,17 @@ export async function testGalleryFilters(page, origin, engine) {
     await click('exclude');
     await checkResults('all', 'all');
     assert.equal(await controls.fan.isChecked(), false);
+    assert.equal(await controls.includeFan.isChecked(), false);
+    assert.equal(await page.locator('.gallery-card[data-fan-service="true"]:not([hidden])').count(), 0);
+    await click('includeFan');
+    assert.ok(await page.locator('.gallery-card[data-fan-service="true"]:not([hidden])').count() > 0);
+    await click('fan');
+    assert.equal(await controls.includeFan.isChecked(), false);
+    await click('includeFan');
+    assert.equal(await controls.fan.isChecked(), false);
+    await page.reload();
+    assert.equal(await controls.includeFan.isChecked(), true);
+    await click('includeFan');
     // Classification fixtures live only in this browser, never in the published catalog.
     const fixture = await page.locator('.gallery-card').evaluateAll(items => {
       items.forEach(item => { delete item.dataset.fanService; });
@@ -94,7 +114,8 @@ export async function testGalleryFilters(page, origin, engine) {
     await page.locator('#gallery-character-filter').selectOption('all');
     await click(fixture.finish);
     await click('exclude');
-    await checkResults('all', 'all');
+    assert.equal(await page.locator('.gallery-card[data-fan-service="true"]:not([hidden])').count(), 0);
+    assert.ok(await page.locator('[data-artwork-stack="sherie-red-sofa"]:not([hidden])').count() === 1);
     assert.ok(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1));
     await page.locator('#gallery-toolbar').screenshot({ path: `test-results/${engine}-gallery-filters-${width}.png` });
     await page.goto(`${origin}/gallery.html?fan-service=1`);
