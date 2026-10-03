@@ -82,12 +82,13 @@ export async function testArtworkVersions(page, origin, engine) {
       const chibi = card.locator('.character-chibi');
       // WebKit waits for lazy-loaded cards to enter the viewport before decoding.
       await card.evaluate(element => element.scrollIntoView({ block: 'center' }));
-      await page.waitForFunction(({ name, filename }) => {
+      const preview = publishedImagePath(`media/gallery/previews/chibis/${filename}.webp`);
+      await page.waitForFunction(({ name, preview }) => {
         const img = document.querySelector(`[data-name="${name}"] .character-chibi`);
-        return img?.complete && img.naturalWidth > 0 && img.currentSrc.replace(/-img-\d{6}(?=\.webp$)/, '').endsWith(`${filename}.webp`);
-      }, { name, filename });
-      assert.equal(await chibi.getAttribute('src'), publishedImagePath(`media/gallery/previews/chibis/${filename}.webp`));
-      assert.ok((await chibi.evaluate(img => img.currentSrc.replace(/-img-\d{6}(?=\.webp$)/, ''))).includes(`${filename}.webp`));
+        return img?.complete && img.naturalWidth > 0 && new URL(img.currentSrc).pathname === `/${preview}`;
+      }, { name, preview });
+      assert.equal(await chibi.getAttribute('src'), preview);
+      assert.equal(await chibi.evaluate(img => new URL(img.currentSrc).pathname), `/${preview}`);
       await card.screenshot({ path: `test-results/${engine}-${slug}-updated-chibi-card-${width}.png` });
     }
     for (const [slug, name, filename] of updatedChibis) {

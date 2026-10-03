@@ -26,10 +26,10 @@ export async function testChibiVariations(page, origin, engine) {
       const card = page.locator(`[data-name="${name}"]`);
       await card.scrollIntoViewIfNeeded();
       const image = card.locator('.character-chibi');
-      await page.waitForFunction(({ name, filename }) => {
+      await page.waitForFunction(({ name, preview }) => {
         const img = document.querySelector(`[data-name="${name}"] .character-chibi`);
-        return img?.complete && img.naturalWidth > 0 && img.currentSrc.replace(/-img-\d{6}(?=\.webp$)/, '').endsWith(`${filename}.webp`);
-      }, { name, filename: `char-${slug}-${suffix}` });
+        return img?.complete && img.naturalWidth > 0 && new URL(img.currentSrc).pathname === `/${preview}`;
+      }, { name, preview: publishedImagePath(`media/gallery/previews/chibis/char-${slug}-${suffix}.webp`) });
       assert.equal(await image.getAttribute('src'), publishedImagePath(`media/gallery/previews/chibis/char-${slug}-${suffix}.webp`), `${name}: new pose must enter the random card pool`);
       if (slug === 'kyrien') assert.equal(await card.locator('.art-note').textContent(), 'Arc 1 · Chibi');
     }

@@ -1,0 +1,107 @@
+{
+  "processedAt": "2026-10-03T07:20:40Z",
+  "approval": "Author requested the refreshed chibis as official canon artwork and explicitly included all seven characters.",
+  "preservation": "Previous originals and previews retained byte-for-byte. Existing image identities and reader IDs are unchanged.",
+  "images": [
+    {
+      "id": "IMG-000062",
+      "slug": "kyrien-low-crouch",
+      "previousOriginal": "backlog/archive/chibi-style-refresh__2026-10-03T07-20-40Z/FULL-char-kyrien-arc-1-chibi-low-crouch-img-000062.png",
+      "previousPreview": "backlog/archive/chibi-style-refresh__2026-10-03T07-20-40Z/PREV-char-kyrien-arc-1-chibi-low-crouch-img-000062.webp",
+      "previousSha256": "0389c06f0ba02d99fe1cdd6e0da3630f19e317c6137bbea51b013ffb7155f704",
+      "currentOriginal": "media/gallery/images/chibis/FULL-char-kyrien-arc-1-chibi-low-crouch-r2-img-000062.png",
+      "currentPreview": "media/gallery/previews/chibis/PREV-char-kyrien-arc-1-chibi-low-crouch-r2-img-000062.webp",
+      "currentSha256": "f07af0336b606327b5eff7caac3e0761e40ff8dcc9234fc84815514245f13650"
+    },
+    {
+      "id": "IMG-000069",
+      "slug": "sherie-playful-curtsy",
+      "previousOriginal": "backlog/archive/chibi-style-refresh__2026-10-03T07-20-40Z/FULL-char-sherie-chibi-playful-curtsy-img-000069.png",
+      "previousPreview": "backlog/archive/chibi-style-refresh__2026-10-03T07-20-40Z/PREV-char-sherie-chibi-playful-curtsy-img-000069.webp",
+      "previousSha256": "7805343366adb45647f77bcc26ee6478809af7957502658212a40d0fabea05a0",
+      "currentOriginal": "media/gallery/images/chibis/FULL-char-sherie-chibi-playful-curtsy-r2-img-000069.png",
+      "currentPreview": "media/gallery/previews/chibis/PREV-char-sherie-chibi-playful-curtsy-r2-img-000069.webp",
+      "currentSha256": "abddeeef0cfa415e1128fb0a517b70874b2923e3e6d2baa2c1cc001e8ef9319f"
+    },
+    {
+      "id": "IMG-000050",
+      "slug": "felix-jacket-over-shoulder",
+      "previousOriginal": "backlog/archive/chibi-style-refresh__2026-10-03T07-20-40Z/FULL-char-felix-chibi-jacket-over-shoulder-img-000050.png",
+      "previousPreview": "backlog/archive/chibi-style-refresh__2026-10-03T07-20-40Z/PREV-char-felix-chibi-jacket-over-shoulder-img-000050.webp",
+      "previousSha256": "adbf4470d526d2469eb261ac3940b307ef8ce3c3367be990f483e238f6115b1f",
+      "currentOriginal": "media/gallery/images/chibis/FULL-char-felix-chibi-jacket-over-shoulder-r2-img-000050.png",
+      "currentPreview": "media/gallery/previews/chibis/PREV-char-felix-chibi-jacket-over-shoulder-r2-img-000050.webp",
+      "currentSha256": "0a6e3b16b053f7026ee8ec0e9c7b52bb996eac0d4418e10b6a52c61a3f881b70"
+    },
+    {
+      "id": "IMG-000046",
+      "slug": "father-mikhail-dry-remark",
+      "previousOriginal": "backlog/archive/chibi-style-refresh__2026-10-03T07-20-40Z/FULL-char-father-mikhail-chibi-dry-remark-img-000046.png",
+      "previousPreview": "backlog/archive/chibi-style-refresh__2026-10-03T07-20-40Z/PREV-char-father-mikhail-chibi-dry-remark-img-000046.webp",
+      "previousSha256": "8704ad81243adb6e093d51550062ea322c38ee3966fed3fd83a42a4837769b06",
+      "currentOriginal": "media/gallery/images/chibis/FULL-char-father-mikhail-chibi-dry-remark-r2-img-000046.png",
+      "currentPreview": "media/gallery/previews/chibis/PREV-char-father-mikhail-chibi-dry-remark-r2-img-000046.webp",
+      "currentSha256": "5ad33bbfbd0fd732165764b099ef28ff72e490dbf17849f54105afa3dfb0495b"
+    },
+    {
+      "id": "IMG-000060",
+      "slug": "leo-taking-notes",
+      "previousOriginal": "backlog/archive/chibi-style-refresh__2026-10-03T07-20-40Z/FULL-char-inspector-leo-chibi-taking-notes-img-000060.png",
+      "previousPreview": "backlog/archive/chibi-style-refresh__2026-10-03T07-20-40Z/PREV-char-inspector-leo-chibi-taking-notes-img-000060.webp",
+      "previousSha256": "8f6e63288899f28d10de4fa850a361de5d758818d396050df13dad185d943a7b",
+      "currentOriginal": "media/gallery/images/chibis/FULL-char-inspector-leo-chibi-taking-notes-r2-img-000060.png",
+      "currentPreview": "media/gallery/previews/chibis/PREV-char-inspector-leo-chibi-taking-notes-r2-img-000060.webp",
+      "currentSha256": "fb8e172753476a670338cf8a9d97b87f53248594e871bc4c10ae178bb555b6e3"
+    },
+    {
+      "id": "IMG-000059",
+      "slug": "leo-skeptical",
+      "previousOriginal": "backlog/archive/chibi-style-refresh__2026-10-03T07-20-40Z/FULL-char-inspector-leo-chibi-skeptical-img-000059.png",
+      "previousPreview": "backlog/archive/chibi-style-refresh__2026-10-03T07-20-40Z/PREV-char-inspector-leo-chibi-skeptical-img-000059.webp",
+      "previousSha256": "1c6cfe54fadcdb4e6d8f3b6622ee313b26fb36caac12935cacdf58fb4608d782",
+      "currentOriginal": "media/gallery/images/chibis/FULL-char-inspector-leo-chibi-skeptical-r2-img-000059.png",
+      "currentPreview": "media/gallery/previews/chibis/PREV-char-inspector-leo-chibi-skeptical-r2-img-000059.webp",
+      "currentSha256": "343d84e482840a43b1ee04f25fb698fd61c3ff17d7976b24b2e549e11fa53c83"
+    },
+    {
+      "id": "IMG-000058",
+      "slug": "leo-looking-back",
+      "previousOriginal": "backlog/archive/chibi-style-refresh__2026-10-03T07-20-40Z/FULL-char-inspector-leo-chibi-looking-back-img-000058.png",
+      "previousPreview": "backlog/archive/chibi-style-refresh__2026-10-03T07-20-40Z/PREV-char-inspector-leo-chibi-looking-back-img-000058.webp",
+      "previousSha256": "3af53dd4b989b51a3eb6733bb8220a08843f4244e44b609a2de6544ec6cbc6a5",
+      "currentOriginal": "media/gallery/images/chibis/FULL-char-inspector-leo-chibi-looking-back-r2-img-000058.png",
+      "currentPreview": "media/gallery/previews/chibis/PREV-char-inspector-leo-chibi-looking-back-r2-img-000058.webp",
+      "currentSha256": "640f5b40b3e95381c3179aa92240066e3c3ec39d016b3323abb6258d24ca4dfa"
+    },
+    {
+      "id": "IMG-000056",
+      "slug": "hiyu-explaining",
+      "previousOriginal": "backlog/archive/chibi-style-refresh__2026-10-03T07-20-40Z/FULL-char-hiyu-chibi-brown-coat-r2-img-000056.png",
+      "previousPreview": "backlog/archive/chibi-style-refresh__2026-10-03T07-20-40Z/PREV-char-hiyu-chibi-brown-coat-r2-img-000056.webp",
+      "previousSha256": "0a9e3bc61729639a350ac1447e934ce660d4709bfb0f2db4592f216f360fb64e",
+      "currentOriginal": "media/gallery/images/chibis/FULL-char-hiyu-chibi-brown-coat-r3-img-000056.png",
+      "currentPreview": "media/gallery/previews/chibis/PREV-char-hiyu-chibi-brown-coat-r3-img-000056.webp",
+      "currentSha256": "084dbff7044d7b4cc9419abd2a55ad929f40265111b09ac55e8a2dc64b5d97ba"
+    },
+    {
+      "id": "IMG-000057",
+      "slug": "hiyu-sudden-idea",
+      "previousOriginal": "backlog/archive/chibi-style-refresh__2026-10-03T07-20-40Z/FULL-char-hiyu-chibi-sudden-idea-img-000057.png",
+      "previousPreview": "backlog/archive/chibi-style-refresh__2026-10-03T07-20-40Z/PREV-char-hiyu-chibi-sudden-idea-img-000057.webp",
+      "previousSha256": "424297be95a6322129637e721fc86ec8138251e643381c769a5f14c85e92dfd6",
+      "currentOriginal": "media/gallery/images/chibis/FULL-char-hiyu-chibi-sudden-idea-r2-img-000057.png",
+      "currentPreview": "media/gallery/previews/chibis/PREV-char-hiyu-chibi-sudden-idea-r2-img-000057.webp",
+      "currentSha256": "f3d672a2579032a3ec7d16c243a2c737d13e00d5ec8b7517025e2e816be34cbb"
+    },
+    {
+      "id": "IMG-000044",
+      "slug": "ash-playful-stretch",
+      "previousOriginal": "backlog/archive/chibi-style-refresh__2026-10-03T07-20-40Z/FULL-char-ash-chibi-playful-stretch-img-000044.png",
+      "previousPreview": "backlog/archive/chibi-style-refresh__2026-10-03T07-20-40Z/PREV-char-ash-chibi-playful-stretch-img-000044.webp",
+      "previousSha256": "b392537694136c5f608ee91955b5cc42e4cd88d6b76a5f36d78d3775a96dec77",
+      "currentOriginal": "media/gallery/images/chibis/FULL-char-ash-chibi-playful-stretch-r2-img-000044.png",
+      "currentPreview": "media/gallery/previews/chibis/PREV-char-ash-chibi-playful-stretch-r2-img-000044.webp",
+      "currentSha256": "c052903676f90a8b5744cf04c0f9c6d132ad10d1735ab5f8125d2c4a2f65024b"
+    }
+  ]
+}

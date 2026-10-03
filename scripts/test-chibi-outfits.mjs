@@ -24,8 +24,8 @@ export async function assertChibiCard(page, name, expectedIndex) {
     const img = document.querySelector(`[data-name="${name}"] .character-chibi`);
     return img?.complete && img.naturalWidth > 0 && img.currentSrc.endsWith('.webp');
   }, name);
-  const filename = (await card.locator('.character-chibi').getAttribute('src')).split('/').pop().replace(/^PREV-/, '').replace(/-img-\d{6}\.webp$/, '');
-  const chosen = chibiOutfits[name].findIndex(outfit => outfit[1] === filename);
+  const source = await card.locator('.character-chibi').getAttribute('src');
+  const chosen = chibiOutfits[name].findIndex(outfit => publishedImagePath(`media/gallery/previews/chibis/${outfit[1]}.webp`) === source);
   assert.ok(chosen >= 0, `${name}: unregistered chibi selected`);
   if (expectedIndex !== undefined) assert.equal(chosen, expectedIndex, `${name}: randomization must reach every outfit`);
   assert.equal(await card.locator('.art-note').textContent(), chibiOutfits[name][chosen][2]);

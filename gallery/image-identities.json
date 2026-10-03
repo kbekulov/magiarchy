@@ -606,15 +606,17 @@
     },
     {
       "id": "IMG-000044",
-      "source": "media/gallery/images/chibis/FULL-char-ash-chibi-playful-stretch-img-000044.png",
+      "source": "media/gallery/images/chibis/FULL-char-ash-chibi-playful-stretch-r2-img-000044.png",
       "derivatives": [
-        "media/gallery/previews/chibis/PREV-char-ash-chibi-playful-stretch-img-000044.webp"
+        "media/gallery/previews/chibis/PREV-char-ash-chibi-playful-stretch-r2-img-000044.webp"
       ],
       "previousPaths": [
         "media/gallery/images/chibis/char-ash-chibi-playful-stretch.png",
         "media/gallery/previews/chibis/char-ash-chibi-playful-stretch.webp",
         "media/gallery/images/chibis/char-ash-chibi-playful-stretch-img-000044.png",
-        "media/gallery/previews/chibis/char-ash-chibi-playful-stretch-img-000044.webp"
+        "media/gallery/previews/chibis/char-ash-chibi-playful-stretch-img-000044.webp",
+        "media/gallery/images/chibis/FULL-char-ash-chibi-playful-stretch-img-000044.png",
+        "media/gallery/previews/chibis/PREV-char-ash-chibi-playful-stretch-img-000044.webp"
       ],
       "active": true
     },
@@ -634,15 +636,17 @@
     },
     {
       "id": "IMG-000046",
-      "source": "media/gallery/images/chibis/FULL-char-father-mikhail-chibi-dry-remark-img-000046.png",
+      "source": "media/gallery/images/chibis/FULL-char-father-mikhail-chibi-dry-remark-r2-img-000046.png",
       "derivatives": [
-        "media/gallery/previews/chibis/PREV-char-father-mikhail-chibi-dry-remark-img-000046.webp"
+        "media/gallery/previews/chibis/PREV-char-father-mikhail-chibi-dry-remark-r2-img-000046.webp"
       ],
       "previousPaths": [
         "media/gallery/images/chibis/char-father-mikhail-chibi-dry-remark.png",
         "media/gallery/previews/chibis/char-father-mikhail-chibi-dry-remark.webp",
         "media/gallery/images/chibis/char-father-mikhail-chibi-dry-remark-img-000046.png",
-        "media/gallery/previews/chibis/char-father-mikhail-chibi-dry-remark-img-000046.webp"
+        "media/gallery/previews/chibis/char-father-mikhail-chibi-dry-remark-img-000046.webp",
+        "media/gallery/images/chibis/FULL-char-father-mikhail-chibi-dry-remark-img-000046.png",
+        "media/gallery/previews/chibis/PREV-char-father-mikhail-chibi-dry-remark-img-000046.webp"
       ],
       "active": true
     },
@@ -690,15 +694,17 @@
     },
     {
       "id": "IMG-000050",
-      "source": "media/gallery/images/chibis/FULL-char-felix-chibi-jacket-over-shoulder-img-000050.png",
+      "source": "media/gallery/images/chibis/FULL-char-felix-chibi-jacket-over-shoulder-r2-img-000050.png",
       "derivatives": [
-        "media/gallery/previews/chibis/PREV-char-felix-chibi-jacket-over-shoulder-img-000050.webp"
+        "media/gallery/previews/chibis/PREV-char-felix-chibi-jacket-over-shoulder-r2-img-000050.webp"
       ],
       "previousPaths": [
         "media/gallery/images/chibis/char-felix-chibi-jacket-over-shoulder.png",
         "media/gallery/previews/chibis/char-felix-chibi-jacket-over-shoulder.webp",
         "media/gallery/images/chibis/char-felix-chibi-jacket-over-shoulder-img-000050.png",
-        "media/gallery/previews/chibis/char-felix-chibi-jacket-over-shoulder-img-000050.webp"
+        "media/gallery/previews/chibis/char-felix-chibi-jacket-over-shoulder-img-000050.webp",
+        "media/gallery/images/chibis/FULL-char-felix-chibi-jacket-over-shoulder-img-000050.png",
+        "media/gallery/previews/chibis/PREV-char-felix-chibi-jacket-over-shoulder-img-000050.webp"
       ],
       "active": true
     },
@@ -774,71 +780,81 @@
     },
     {
       "id": "IMG-000056",
-      "source": "media/gallery/images/chibis/FULL-char-hiyu-chibi-brown-coat-r2-img-000056.png",
+      "source": "media/gallery/images/chibis/FULL-char-hiyu-chibi-brown-coat-r3-img-000056.png",
       "derivatives": [
-        "media/gallery/previews/chibis/PREV-char-hiyu-chibi-brown-coat-r2-img-000056.webp"
+        "media/gallery/previews/chibis/PREV-char-hiyu-chibi-brown-coat-r3-img-000056.webp"
       ],
       "previousPaths": [
         "media/gallery/images/chibis/char-hiyu-chibi-brown-coat-r2.png",
         "media/gallery/previews/chibis/char-hiyu-chibi-brown-coat-r2.webp",
         "media/gallery/images/chibis/char-hiyu-chibi-brown-coat-r2-img-000056.png",
-        "media/gallery/previews/chibis/char-hiyu-chibi-brown-coat-r2-img-000056.webp"
+        "media/gallery/previews/chibis/char-hiyu-chibi-brown-coat-r2-img-000056.webp",
+        "media/gallery/images/chibis/FULL-char-hiyu-chibi-brown-coat-r2-img-000056.png",
+        "media/gallery/previews/chibis/PREV-char-hiyu-chibi-brown-coat-r2-img-000056.webp"
       ],
       "active": true
     },
     {
       "id": "IMG-000057",
-      "source": "media/gallery/images/chibis/FULL-char-hiyu-chibi-sudden-idea-img-000057.png",
+      "source": "media/gallery/images/chibis/FULL-char-hiyu-chibi-sudden-idea-r2-img-000057.png",
       "derivatives": [
-        "media/gallery/previews/chibis/PREV-char-hiyu-chibi-sudden-idea-img-000057.webp"
+        "media/gallery/previews/chibis/PREV-char-hiyu-chibi-sudden-idea-r2-img-000057.webp"
       ],
       "previousPaths": [
         "media/gallery/images/chibis/char-hiyu-chibi-sudden-idea.png",
         "media/gallery/previews/chibis/char-hiyu-chibi-sudden-idea.webp",
         "media/gallery/images/chibis/char-hiyu-chibi-sudden-idea-img-000057.png",
-        "media/gallery/previews/chibis/char-hiyu-chibi-sudden-idea-img-000057.webp"
+        "media/gallery/previews/chibis/char-hiyu-chibi-sudden-idea-img-000057.webp",
+        "media/gallery/images/chibis/FULL-char-hiyu-chibi-sudden-idea-img-000057.png",
+        "media/gallery/previews/chibis/PREV-char-hiyu-chibi-sudden-idea-img-000057.webp"
       ],
       "active": true
     },
     {
       "id": "IMG-000058",
-      "source": "media/gallery/images/chibis/FULL-char-inspector-leo-chibi-looking-back-img-000058.png",
+      "source": "media/gallery/images/chibis/FULL-char-inspector-leo-chibi-looking-back-r2-img-000058.png",
       "derivatives": [
-        "media/gallery/previews/chibis/PREV-char-inspector-leo-chibi-looking-back-img-000058.webp"
+        "media/gallery/previews/chibis/PREV-char-inspector-leo-chibi-looking-back-r2-img-000058.webp"
       ],
       "previousPaths": [
         "media/gallery/images/chibis/char-inspector-leo-chibi-looking-back.png",
         "media/gallery/previews/chibis/char-inspector-leo-chibi-looking-back.webp",
         "media/gallery/images/chibis/char-inspector-leo-chibi-looking-back-img-000058.png",
-        "media/gallery/previews/chibis/char-inspector-leo-chibi-looking-back-img-000058.webp"
+        "media/gallery/previews/chibis/char-inspector-leo-chibi-looking-back-img-000058.webp",
+        "media/gallery/images/chibis/FULL-char-inspector-leo-chibi-looking-back-img-000058.png",
+        "media/gallery/previews/chibis/PREV-char-inspector-leo-chibi-looking-back-img-000058.webp"
       ],
       "active": true
     },
     {
       "id": "IMG-000059",
-      "source": "media/gallery/images/chibis/FULL-char-inspector-leo-chibi-skeptical-img-000059.png",
+      "source": "media/gallery/images/chibis/FULL-char-inspector-leo-chibi-skeptical-r2-img-000059.png",
       "derivatives": [
-        "media/gallery/previews/chibis/PREV-char-inspector-leo-chibi-skeptical-img-000059.webp"
+        "media/gallery/previews/chibis/PREV-char-inspector-leo-chibi-skeptical-r2-img-000059.webp"
       ],
       "previousPaths": [
         "media/gallery/images/chibis/char-inspector-leo-chibi-skeptical.png",
         "media/gallery/previews/chibis/char-inspector-leo-chibi-skeptical.webp",
         "media/gallery/images/chibis/char-inspector-leo-chibi-skeptical-img-000059.png",
-        "media/gallery/previews/chibis/char-inspector-leo-chibi-skeptical-img-000059.webp"
+        "media/gallery/previews/chibis/char-inspector-leo-chibi-skeptical-img-000059.webp",
+        "media/gallery/images/chibis/FULL-char-inspector-leo-chibi-skeptical-img-000059.png",
+        "media/gallery/previews/chibis/PREV-char-inspector-leo-chibi-skeptical-img-000059.webp"
       ],
       "active": true
     },
     {
       "id": "IMG-000060",
-      "source": "media/gallery/images/chibis/FULL-char-inspector-leo-chibi-taking-notes-img-000060.png",
+      "source": "media/gallery/images/chibis/FULL-char-inspector-leo-chibi-taking-notes-r2-img-000060.png",
       "derivatives": [
-        "media/gallery/previews/chibis/PREV-char-inspector-leo-chibi-taking-notes-img-000060.webp"
+        "media/gallery/previews/chibis/PREV-char-inspector-leo-chibi-taking-notes-r2-img-000060.webp"
       ],
       "previousPaths": [
         "media/gallery/images/chibis/char-inspector-leo-chibi-taking-notes.png",
         "media/gallery/previews/chibis/char-inspector-leo-chibi-taking-notes.webp",
         "media/gallery/images/chibis/char-inspector-leo-chibi-taking-notes-img-000060.png",
-        "media/gallery/previews/chibis/char-inspector-leo-chibi-taking-notes-img-000060.webp"
+        "media/gallery/previews/chibis/char-inspector-leo-chibi-taking-notes-img-000060.webp",
+        "media/gallery/images/chibis/FULL-char-inspector-leo-chibi-taking-notes-img-000060.png",
+        "media/gallery/previews/chibis/PREV-char-inspector-leo-chibi-taking-notes-img-000060.webp"
       ],
       "active": true
     },
@@ -858,15 +874,17 @@
     },
     {
       "id": "IMG-000062",
-      "source": "media/gallery/images/chibis/FULL-char-kyrien-arc-1-chibi-low-crouch-img-000062.png",
+      "source": "media/gallery/images/chibis/FULL-char-kyrien-arc-1-chibi-low-crouch-r2-img-000062.png",
       "derivatives": [
-        "media/gallery/previews/chibis/PREV-char-kyrien-arc-1-chibi-low-crouch-img-000062.webp"
+        "media/gallery/previews/chibis/PREV-char-kyrien-arc-1-chibi-low-crouch-r2-img-000062.webp"
       ],
       "previousPaths": [
         "media/gallery/images/chibis/char-kyrien-arc-1-chibi-low-crouch.png",
         "media/gallery/previews/chibis/char-kyrien-arc-1-chibi-low-crouch.webp",
         "media/gallery/images/chibis/char-kyrien-arc-1-chibi-low-crouch-img-000062.png",
-        "media/gallery/previews/chibis/char-kyrien-arc-1-chibi-low-crouch-img-000062.webp"
+        "media/gallery/previews/chibis/char-kyrien-arc-1-chibi-low-crouch-img-000062.webp",
+        "media/gallery/images/chibis/FULL-char-kyrien-arc-1-chibi-low-crouch-img-000062.png",
+        "media/gallery/previews/chibis/PREV-char-kyrien-arc-1-chibi-low-crouch-img-000062.webp"
       ],
       "active": true
     },
@@ -956,15 +974,17 @@
     },
     {
       "id": "IMG-000069",
-      "source": "media/gallery/images/chibis/FULL-char-sherie-chibi-playful-curtsy-img-000069.png",
+      "source": "media/gallery/images/chibis/FULL-char-sherie-chibi-playful-curtsy-r2-img-000069.png",
       "derivatives": [
-        "media/gallery/previews/chibis/PREV-char-sherie-chibi-playful-curtsy-img-000069.webp"
+        "media/gallery/previews/chibis/PREV-char-sherie-chibi-playful-curtsy-r2-img-000069.webp"
       ],
       "previousPaths": [
         "media/gallery/images/chibis/char-sherie-chibi-playful-curtsy.png",
         "media/gallery/previews/chibis/char-sherie-chibi-playful-curtsy.webp",
         "media/gallery/images/chibis/char-sherie-chibi-playful-curtsy-img-000069.png",
-        "media/gallery/previews/chibis/char-sherie-chibi-playful-curtsy-img-000069.webp"
+        "media/gallery/previews/chibis/char-sherie-chibi-playful-curtsy-img-000069.webp",
+        "media/gallery/images/chibis/FULL-char-sherie-chibi-playful-curtsy-img-000069.png",
+        "media/gallery/previews/chibis/PREV-char-sherie-chibi-playful-curtsy-img-000069.webp"
       ],
       "active": true
     },
