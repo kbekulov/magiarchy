@@ -301,6 +301,8 @@ Original filenames start with `FULL-`; generated preview filenames start with `P
 
 ### Gallery production intake
 
+Character image briefs and visual acceptance must consult the applicable profile Compare proportions table together with Height and build and approved body references, as required by `docs/character-image-production.md`. `character.js` owns the comparison rows. Preserve their qualitative relationships and authority, individual silhouettes and group scale without invented measurements or rankings; account for pose, footwear and perspective. Characters outside a table keep their established references. This check does not authorize changes to existing artwork or override localized-edit proportion locks.
+
 All character image generation and edits follow the cohesive hair-shape rule in Character Image Production v16: a unified mass with a few broad connected sections, limited separations and restrained surface detail, never a spray of individual strands. Consult the private author examples in `workshop/_art_references/hair-shape/` together with the chosen character package. Preserve identity, hairstyle and proportion locks; review the construction even in wind, action and chibis. These examples stay private and do not authorize changes to existing public artwork.
 
 Reference-based edits also follow the mandatory proportion lock in Character Image Production v15: the existing target owns head size, head-to-body ratio, body proportions, pose and framing. Adapt the reference package to that scale rather than importing the reference crop's proportions. Review matching-scale originals and results before acceptance; private tests do not replace public originals without approval.

@@ -103,8 +103,12 @@ export async function testAppearanceComparisons(page, origin, engine) {
   assert.equal(await page.locator('.appearance-comparison-table').count(), 0);
   await visit('docs.html?doc=character-image-production#comparative-female-builds');
   assert.equal(await page.getByRole('heading', { name: 'Comparative female builds', exact: true }).count(), 1);
-  assert.equal(await page.getByRole('combobox', { name: 'Choose version' }).inputValue(), 'v22');
+  assert.equal(await page.getByRole('combobox', { name: 'Choose version' }).inputValue(), 'v23');
   assert.equal(await page.getByRole('heading', { name: 'Comparative male builds', exact: true }).count(), 1);
+  assert.equal(await page.getByRole('heading', { name: 'Mandatory profile proportion comparisons', exact: true }).count(), 1);
+  await visit('docs.html?doc=character-image-production&version=v22');
+  assert.equal(await page.getByRole('heading', { name: 'Mandatory profile proportion comparisons', exact: true }).count(), 0);
+  assert.equal(await page.locator('#document-source-link').getAttribute('href'), 'docs/character-image-production-v22.md');
   await page.getByRole('combobox', { name: 'Choose version' }).selectOption('v18');
   await page.waitForURL(url => url.searchParams.get('version') === 'v18');
   await page.waitForLoadState('networkidle');

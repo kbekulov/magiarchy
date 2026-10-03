@@ -73,16 +73,6 @@ Design individual bodies through deliberate differences from that baseline. Reco
 
 The template is a production tool, not in-world anatomy lore. Its costume, face, accessories, hair, color palette, sensual presentation, and cultural styling do not transfer automatically. Standardized T-pose presentation is useful for reference sheets; it does not impose the mascot's dancer-like gestures on ordinary character artwork.
 
-## Mandatory profile proportion comparisons
-
-Before preparing a character image brief, review the target profile's **Compare proportions** table alongside its **Height and build** description and approved body references. Consult the applicable female or male comparison rows in `character.js`. Carry the recorded relative height, fullness, shoulder breadth, muscularity and other listed differences into the brief wherever those features are covered. The accompanying descriptions preserve distinctions such as firmness, softness and leg shape that the table alone cannot express.
-
-Keep qualitative comparisons qualitative. Preserve the meaning of approximate relationships without converting them into invented centimetres, weights, circumferences or strength rankings. Respect whether a comparison is author-confirmed or an approximate visual interpretation; an artist aid does not establish new canon. If no table covers the character, use the established individual description and approved artwork without inventing a placement.
-
-For group images, check the relationships on a shared ground plane while accounting for pose, footwear, camera and perspective. For individual images, retain the character's established silhouette and proportions even without another character beside them. These checks complement Anima's anatomical starting point and the character's approved design; they do not authorize reshaping existing art or overriding the proportion lock for localized edits.
-
-During visual review, compare the finished image against the same table, descriptions and references. Confirm that the applicable similarities and differences are accurately reflected, without exaggerating them or making distinct characters share an identical body. Revise unexplained drift before acceptance; do not turn it into a new design fact.
-
 ## Comparative female builds
 
 The profiles' Height and build descriptions and the shared comparison rows in `character.js` own the relative body designs for Lynleit, Sherie, Yulia, Natalia, Helena and Myka. Use these together: fullness does not describe firmness, and comparable fullness does not require an identical silhouette. Preserve Lynleit's stronger thighs, elegant shins and ankles, and firm rounded bottom within her longer, leaner build. Sherie's comparable bottom is softer and her curves appear more concentrated on a shorter frame. Helena is the same height as Lynleit and carries Sherie's general body type across a taller frame; Yulia and Myka share a petite, relatively straight build. Natalia is slightly taller than Lynleit and fullest overall.
@@ -172,7 +162,6 @@ Use this compact brief when designing a new female character or revising an exis
 
 - **Identity and period:** character, approved incarnation, reference filenames, and matching-version views.
 - **Baseline:** the chosen Anima set and the anatomy or pose presentation it supplies.
-- **Cast proportions:** the applicable profile Compare proportions table, its accompanying Height and build description, and the relative differences the image must preserve. Note when the character has no registered comparison.
 - **Individual body:** established height, build, musculature, body composition, and proportions, with their source. Include age, lifestyle, training, or physical history only where these establish a visible design requirement; do not derive a measurement from a personality type or profession.
 - **Separate design:** face, hair, costume, accessories, palette, and pose language specific to the character. Keep the contemporary setting in view.
 - **Unspecified features:** identify genuine gaps instead of inventing weight, measurements, age, or medical history. Resolve consequential ambiguity with the author before generation.
@@ -219,7 +208,7 @@ For an explicitly requested hand correction, preserve approved arm lengths and u
 
 Compare the result with the references before registration or publication. Check identity, proportions, silhouette, costume details, pose, and front/back consistency. Inspect hands, feet, accessories, and occluded areas for discrepancies. Treat an unexplained generated difference as something to review, not as new canon.
 
-Recheck the applicable profile Compare proportions table and Height and build description against the result, including relative scale in group images and individual silhouette in solo images. Account for pose, footwear and perspective without exaggerating the recorded differences. Check the recorded individual differences as deliberately as the shared anatomy. Reject accidental bodily sameness, imported mascot styling, and ancient-fantasy drift in otherwise contemporary designs. Do not turn a model's invented difference into a new character fact.
+Check the recorded individual differences as deliberately as the shared anatomy. Reject accidental bodily sameness, imported mascot styling, and ancient-fantasy drift in otherwise contemporary designs. Do not turn a model's invented difference into a new character fact.
 
 Preserve approved source files. Register production views as matching-version siblings with original downloads and descriptive metadata. Keep unapproved outputs outside the published archive. Follow the production intake workflow in the archive maintenance charter.
 

@@ -276,11 +276,11 @@
     "topic": "Visual Production Standard",
     "file": "character-image-production.md",
     "updated": "2026-10-03",
-    "description": "Male and female comparative builds, Kyrien's menswear-model shoulder line, selected body references and preserved character identity.",
+    "description": "Mandatory profile proportion comparisons in character image briefs and visual review, alongside approved identity, anatomy and costume references.",
     "speakers": [
       "Author's Desk"
     ],
-    "defaultVersion": "v22",
+    "defaultVersion": "v23",
     "versions": [
       {
         "id": "v1",
@@ -431,10 +431,17 @@
       },
       {
         "id": "v22",
-        "label": "v22 · Current",
-        "file": "character-image-production.md",
+        "label": "v22 · Archived",
+        "file": "character-image-production-v22.md",
         "updated": "2026-10-03",
         "description": "Male comparison tables include shoulder breadth, overall body bulk and muscular bulk as approximate visual readings of the author's character descriptions."
+      },
+      {
+        "id": "v23",
+        "label": "v23 · Current",
+        "file": "character-image-production.md",
+        "updated": "2026-10-03",
+        "description": "Require the profile Compare proportions table and Height and build description before image briefs and again during visual review."
       }
     ]
   },
