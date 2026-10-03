@@ -85,6 +85,11 @@ try {
         assert.deepEqual(errors, [], `${engine}: gallery filter errors`);
         continue;
       }
+      if (process.env.TEST_ANIMA_ONLY === '1') {
+        await testSeptember28Backlog(page, origin, engine);
+        assert.deepEqual(errors, [], `${engine}: Anima panel reader errors`);
+        continue;
+      }
       if (process.env.TEST_APPEARANCE_ONLY === '1') {
         await testAppearanceComparisons(page, origin, engine);
         assert.deepEqual(errors, [], `${engine}: appearance comparison errors`);

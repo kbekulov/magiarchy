@@ -3,7 +3,7 @@
     "id": "anima-meets-female-cast",
     "title": "Anima Meets the Female Cast",
     "summary": "A non-canon dream collection with Anima, Lynleit, Sherie and Yulia: tea, gossip and the strings behind their shadows.",
-    "medium": "Colored sketches",
+    "medium": "Colored sketches and illustrations",
     "nonCanon": true,
     "contextDoc": "thematic-direction",
     "characters": [
@@ -14,7 +14,7 @@
     "mascots": [
       "anima"
     ],
-    "cover": "panel-1",
+    "cover": "panel-10-magazine-v2",
     "beats": [
       {
         "id": "study-1",
@@ -108,7 +108,22 @@
         "height": 1145,
         "bytes": 2497435,
         "display": "media/gallery/previews/panels/PREV-anima-meets-female-cast-panel-4-display-img-000119.webp",
-        "thumbnail": "media/gallery/previews/panels/PREV-anima-meets-female-cast-panel-4-thumbnail-img-000119.webp"
+        "thumbnail": "media/gallery/previews/panels/PREV-anima-meets-female-cast-panel-4-thumbnail-img-000119.webp",
+        "composition": "v1"
+      },
+      {
+        "id": "panel-4-magazine-v2",
+        "beat": "study-4",
+        "label": "Magazine version",
+        "composition": "v2",
+        "title": "You noticed that too",
+        "src": "media/gallery/panels/anima-meets-female-cast/FULL-anima-meets-female-cast-panel-4-you-noticed-that-too-magazine-v2-img-000241.png",
+        "alt": "Beside a blue moonlit window, Lynleit gestures with a teacup while Anima answers with open hands. Yulia raises a questioning hand beside her notebook, and Sherie smiles from a red chair with playing cards. Above them, Anima's shadow controls three smaller silhouettes with marionette strings.",
+        "width": 1024,
+        "height": 1536,
+        "bytes": 2053263,
+        "display": "media/gallery/previews/panels/PREV-anima-meets-female-cast-panel-4-magazine-v2-display-img-000241.webp",
+        "thumbnail": "media/gallery/previews/panels/PREV-anima-meets-female-cast-panel-4-magazine-v2-thumbnail-img-000241.webp"
       },
       {
         "id": "panel-5",
@@ -134,7 +149,22 @@
         "height": 1024,
         "bytes": 3466791,
         "display": "media/gallery/previews/panels/PREV-anima-meets-female-cast-panel-6-display-img-000121.webp",
-        "thumbnail": "media/gallery/previews/panels/PREV-anima-meets-female-cast-panel-6-thumbnail-img-000121.webp"
+        "thumbnail": "media/gallery/previews/panels/PREV-anima-meets-female-cast-panel-6-thumbnail-img-000121.webp",
+        "composition": "v1"
+      },
+      {
+        "id": "panel-6-magazine-v2",
+        "beat": "study-6",
+        "label": "Magazine version",
+        "composition": "v2",
+        "title": "Who poured mine?",
+        "src": "media/gallery/panels/anima-meets-female-cast/FULL-anima-meets-female-cast-panel-6-who-poured-mine-magazine-v2-img-000242.png",
+        "alt": "In warm autumn window light, Sherie, Lynleit and Yulia talk around a tea table with the masked Anima. Sherie smiles with an open hand, Lynleit answers over her cup, and Yulia pauses above her notebook. On the wall, Anima's large shadow holds strings connected to the three women's shadows.",
+        "width": 1536,
+        "height": 1024,
+        "bytes": 2323096,
+        "display": "media/gallery/previews/panels/PREV-anima-meets-female-cast-panel-6-magazine-v2-display-img-000242.webp",
+        "thumbnail": "media/gallery/previews/panels/PREV-anima-meets-female-cast-panel-6-magazine-v2-thumbnail-img-000242.webp"
       },
       {
         "id": "panel-7",
@@ -186,7 +216,22 @@
         "height": 1024,
         "bytes": 2259705,
         "display": "media/gallery/previews/panels/PREV-anima-meets-female-cast-panel-10-display-img-000116.webp",
-        "thumbnail": "media/gallery/previews/panels/PREV-anima-meets-female-cast-panel-10-thumbnail-img-000116.webp"
+        "thumbnail": "media/gallery/previews/panels/PREV-anima-meets-female-cast-panel-10-thumbnail-img-000116.webp",
+        "composition": "v1"
+      },
+      {
+        "id": "panel-10-magazine-v2",
+        "beat": "study-10",
+        "label": "Magazine version",
+        "composition": "v2",
+        "title": "Beneath the strings",
+        "src": "media/gallery/panels/anima-meets-female-cast/FULL-anima-meets-female-cast-panel-10-beneath-the-strings-magazine-v2-img-000240.png",
+        "alt": "Anima gestures from a red sofa toward Lynleit, who holds a folded letter. Sherie perches on the armrest and joins the conversation while Yulia pauses with a pencil and notebook in a separate chair. Anima's enormous shadow stretches two hands across the wall, with strings leading to the three women's silhouettes.",
+        "width": 1536,
+        "height": 1024,
+        "bytes": 2114958,
+        "display": "media/gallery/previews/panels/PREV-anima-meets-female-cast-panel-10-magazine-v2-display-img-000240.webp",
+        "thumbnail": "media/gallery/previews/panels/PREV-anima-meets-female-cast-panel-10-magazine-v2-thumbnail-img-000240.webp"
       }
     ],
     "sceneSummary": [

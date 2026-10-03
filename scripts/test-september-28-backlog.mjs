@@ -6,7 +6,16 @@ export async function testSeptember28Backlog(page, origin, engine) {
   const records = JSON.parse(fs.readFileSync('gallery/panels.json'));
   const dream = records.find(r => r.id === 'anima-meets-female-cast');
   assert.ok(dream.nonCanon && !dream.moment && !dream.chapter);
-  assert.equal(dream.panels.length, 10);
+  assert.equal(dream.panels.length, 13);
+  assert.equal(dream.beats.length, 10, 'New art versions do not add dream events');
+  for (const originalId of ['panel-4', 'panel-6', 'panel-10']) {
+    const original = dream.panels.find(panel => panel.id === originalId);
+    const version = dream.panels.find(panel => panel.id === `${originalId}-magazine-v2`);
+    assert.equal(version.beat, original.beat, 'Keep each magazine version beside its original study');
+    assert.equal(original.composition, 'v1');
+    assert.equal(version.composition, 'v2');
+    assert.notEqual(version.src, original.src, 'Preserve distinct original downloads');
+  }
   assert.deepEqual(dream.characters, ['lynleit', 'sherie', 'yulia']);
   const invalid = structuredClone(records);
   invalid.find(r => r.id === dream.id).moment = { slug: 'unresolved-tension', version: 'v1' };
@@ -16,13 +25,24 @@ export async function testSeptember28Backlog(page, origin, engine) {
     await page.setViewportSize({width, height:900});
     await visit(`gallery.html?panels=${dream.id}`);
     assert.match(await page.locator('#panel-medium').textContent(), /Non-canon/);
-    assert.equal(await page.locator('.scene-panel').count(), 10);
+    assert.equal(await page.locator('.scene-panel').count(), 13);
+    assert.equal(await page.locator('#panel-count').textContent(), '10 studies · 13 images');
     assert.equal(await page.locator('#panel-context a[href^="story.html"], #panel-context a[href^="moments.html"]').count(), 0);
     assert.equal(await page.locator('#panel-characters a[href="character.html?character=anima"]').count(), 0);
     assert.equal(await page.locator('#panel-reader a[href*="cult-of-inanna"]').count(), 0);
     assert.ok(await page.locator('#panel-characters a[href="gallery.html?character=anima"]').isVisible());
     assert.ok(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1));
     await page.screenshot({path:`test-results/${engine}-anima-dream-${width}.png`});
+    for (const id of ['panel-4-magazine-v2', 'panel-6-magazine-v2', 'panel-10-magazine-v2']) {
+      await visit(`gallery.html?panels=${dream.id}#${id}`);
+      const figure = page.locator(`#${id}`);
+      await figure.scrollIntoViewIfNeeded();
+      await figure.locator('img').evaluate(img => img.decode());
+      assert.ok(await figure.isVisible(), 'Direct version fragments show the requested art');
+      assert.ok(await figure.locator('.image-id-copy').count() || await figure.locator('[data-image-id]').count(), 'Each new original has its image ID');
+      assert.ok(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1));
+      await figure.screenshot({path:`test-results/${engine}-${id}-${width}.png`});
+    }
     await visit('music.html?category=character&tag=Sherie');
     assert.ok(await page.locator('#kyrie-eleison-movement-i').isVisible());
     assert.equal(await page.locator('#kyrie-eleison-movement-i').getAttribute('data-arc'), '');

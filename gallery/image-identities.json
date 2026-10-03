@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "nextId": 226,
+  "nextId": 243,
   "images": [
     {
       "id": "IMG-000001",
@@ -3214,6 +3214,42 @@
       ],
       "previousPaths": [
         "media/gallery/images/characters/FULL-char-inspector-leo-autumn-street.png"
+      ],
+      "active": true
+    },
+    {
+      "id": "IMG-000240",
+      "source": "media/gallery/panels/anima-meets-female-cast/FULL-anima-meets-female-cast-panel-10-beneath-the-strings-magazine-v2-img-000240.png",
+      "derivatives": [
+        "media/gallery/previews/panels/PREV-anima-meets-female-cast-panel-10-magazine-v2-display-img-000240.webp",
+        "media/gallery/previews/panels/PREV-anima-meets-female-cast-panel-10-magazine-v2-thumbnail-img-000240.webp"
+      ],
+      "previousPaths": [
+        "media/gallery/panels/anima-meets-female-cast/FULL-anima-meets-female-cast-panel-10-beneath-the-strings-magazine-v2.png"
+      ],
+      "active": true
+    },
+    {
+      "id": "IMG-000241",
+      "source": "media/gallery/panels/anima-meets-female-cast/FULL-anima-meets-female-cast-panel-4-you-noticed-that-too-magazine-v2-img-000241.png",
+      "derivatives": [
+        "media/gallery/previews/panels/PREV-anima-meets-female-cast-panel-4-magazine-v2-display-img-000241.webp",
+        "media/gallery/previews/panels/PREV-anima-meets-female-cast-panel-4-magazine-v2-thumbnail-img-000241.webp"
+      ],
+      "previousPaths": [
+        "media/gallery/panels/anima-meets-female-cast/FULL-anima-meets-female-cast-panel-4-you-noticed-that-too-magazine-v2.png"
+      ],
+      "active": true
+    },
+    {
+      "id": "IMG-000242",
+      "source": "media/gallery/panels/anima-meets-female-cast/FULL-anima-meets-female-cast-panel-6-who-poured-mine-magazine-v2-img-000242.png",
+      "derivatives": [
+        "media/gallery/previews/panels/PREV-anima-meets-female-cast-panel-6-magazine-v2-display-img-000242.webp",
+        "media/gallery/previews/panels/PREV-anima-meets-female-cast-panel-6-magazine-v2-thumbnail-img-000242.webp"
+      ],
+      "previousPaths": [
+        "media/gallery/panels/anima-meets-female-cast/FULL-anima-meets-female-cast-panel-6-who-poured-mine-magazine-v2.png"
       ],
       "active": true
     }
