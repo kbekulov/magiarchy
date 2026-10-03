@@ -164,6 +164,8 @@ Concurrent side stories share a Story phase and carry reciprocal Moment links un
 
 ## Character completion
 
+`character.js` owns the six women's qualitative height and build descriptions and the shared `appearanceComparisons` chains. Their Appearance ledgers show the same compact table immediately below Height and build, highlighting only the current profile's name in each row. Preserve the meaning of the symbols for screen readers and allow whole name/symbol groups to wrap on phones. Describe firmness, softness and leg shape in prose rather than inventing extra rankings or exact measurements. Character Image Production owns the reference policy: the author's selected Lynleit/Sherie studies guide body appearance, not relative height; rejected workshop measurement sheets are not baselines. Rebuild profile search, test all six highlights and an unrelated profile, and inspect phone, intermediate and desktop layouts after changes.
+
 Every character profile includes:
 
 - hero portrait or an honest unavailable-art placeholder;

@@ -29,6 +29,7 @@ import { testSeasonalDirection } from './test-seasonal-direction.mjs';
 import { testLeoMikhailArt } from './test-leo-mikhail-art.mjs';
 import { testFirstPersonProse } from './test-first-person-prose.mjs';
 import { testRiverChoir } from './test-river-choir.mjs';
+import { testAppearanceComparisons } from './test-appearance-comparisons.mjs';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const mime = { '.html': 'text/html', '.js': 'text/javascript', '.json': 'application/json', '.css': 'text/css', '.png': 'image/png', '.webp': 'image/webp', '.md': 'text/plain', '.mp3': 'audio/mpeg', '.wav': 'audio/wav' };
@@ -82,6 +83,11 @@ try {
         await testFanServiceIntake(page, origin, engine);
         await testGalleryFilters(page, origin, engine);
         assert.deepEqual(errors, [], `${engine}: gallery filter errors`);
+        continue;
+      }
+      if (process.env.TEST_APPEARANCE_ONLY === '1') {
+        await testAppearanceComparisons(page, origin, engine);
+        assert.deepEqual(errors, [], `${engine}: appearance comparison errors`);
         continue;
       }
       if (process.env.TEST_FIRST_PERSON_ONLY === '1') {
@@ -611,6 +617,7 @@ try {
       await testGalleryResources(page, origin, engine);
       await testGalleryPanels(page, origin, engine);
       await testSharedNight(page, origin, engine);
+      await testAppearanceComparisons(page, origin, engine);
       assert.deepEqual(errors, [], `${engine}: browser script errors`);
       console.log(`${engine}: ${pages.length} routes at 3 widths; intermediate panes at 6 widths; reader navigation, filtering, version search, note focus, map movement, entity styling, and portrait eras passed.`);
     } finally { await browser.close(); }

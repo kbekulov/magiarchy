@@ -73,22 +73,6 @@ Design individual bodies through deliberate differences from that baseline. Reco
 
 The template is a production tool, not in-world anatomy lore. Its costume, face, accessories, hair, color palette, sensual presentation, and cultural styling do not transfer automatically. Standardized T-pose presentation is useful for reference sheets; it does not impose the mascot's dancer-like gestures on ordinary character artwork.
 
-## Comparative female builds
-
-The profiles' Height and build descriptions and the shared comparison rows in `character.js` own the relative body designs for Lynleit, Sherie, Yulia, Natalia, Helena and Myka. Use these together: fullness does not describe firmness, and equal fullness does not require an identical silhouette. Preserve Lynleit's stronger thighs, elegant shins and ankles, and firm rounded bottom within her longer, leaner build. Sherie's comparable bottom is softer and her curves appear more concentrated on a shorter frame. Helena carries Sherie's general body type across a taller frame; Yulia and Myka share a petite, relatively straight build. Natalia is slightly taller than Lynleit and fullest overall.
-
-Lynleit's established height remains 169 cm. Other exact heights, weights, cup sizes and bust-waist-hip circumferences proposed during the comparison study were not adopted. Compare the characters by the shared qualitative ordering without converting symbols into numerical measurements. The rejected workshop lineups are not approved body references.
-
-For Lynleit and Sherie, the author selected these existing illustrations as the closer body-appearance references:
-
-- [IMG-000221 — poolside sofa](../media/gallery/images/characters/FULL-char-lynleit-sherie-fan-service-poolside-sofa-img-000221.png)
-- [IMG-000217 — poolside cushions](../media/gallery/images/characters/FULL-char-lynleit-sherie-fan-service-poolside-cushions-img-000217.png)
-- [IMG-000220 — poolside seated](../media/gallery/images/characters/FULL-char-lynleit-sherie-fan-service-poolside-seated-img-000220.png)
-- [IMG-000207 — cushion study](../media/gallery/images/characters/FULL-char-lynleit-sherie-fan-service-cushion-lace-revised-img-000207.png)
-- [IMG-000208 — mirror sleepwear](../media/gallery/images/characters/FULL-char-lynleit-sherie-fan-service-mirror-sleepwear-img-000208.png)
-
-Inspect and supply applicable originals in future generation. Their seated poses, lean, camera and apparent relative height do not override the profile height ordering. These are Lynleit/Sherie body references, not substitutes for the other women's identities. The selected face-and-hair packages remain controlling for faces and hair. Existing pictures remain intact; apply the clarified comparison to new work.
-
 ## Reference selection and design continuity
 
 Start with the target character's established face, hair, clothing, physical features, and life period. Use a production template to guide pose and presentation while preserving that identity. For other character images, consult applicable templates and approved artwork without forcing an action scene or portrait into a T-pose.

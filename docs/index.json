@@ -275,12 +275,12 @@
     "title": "Character Image Production",
     "topic": "Visual Production Standard",
     "file": "character-image-production.md",
-    "updated": "2026-10-01",
-    "description": "Situation-specific expressions, story-world weapon references, Lynleit's sleeve preparation, cohesive hair shapes and preserved proportions.",
+    "updated": "2026-10-03",
+    "description": "Comparative female builds, selected body references, situation-specific expressions, story-world weapons and preserved character identity.",
     "speakers": [
       "Author's Desk"
     ],
-    "defaultVersion": "v18",
+    "defaultVersion": "v19",
     "versions": [
       {
         "id": "v1",
@@ -403,10 +403,17 @@
       },
       {
         "id": "v18",
-        "label": "v18 · Current",
-        "file": "character-image-production.md",
+        "label": "v18 · Archived",
+        "file": "character-image-production-v18.md",
         "updated": "2026-10-01",
         "description": "Scene-specific expressions, mandatory available story-world weapon references and Lynleit's rolled sleeves for blue flame."
+      },
+      {
+        "id": "v19",
+        "label": "v19 · Current",
+        "file": "character-image-production.md",
+        "updated": "2026-10-03",
+        "description": "Qualitative female height and build comparisons, with selected Lynleit/Sherie body references instead of numerical measurement sheets."
       }
     ]
   },

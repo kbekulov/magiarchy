@@ -7,7 +7,7 @@ const profileSeeds = [
     physical: [
       ['Hair', 'Very long, wavy ash-black hair with a side-parted fringe, most often worn loose.'],
       ['Eyes', 'Bright cyan-blue.'],
-      ['Height and build', '169 cm with a slender build.'],
+      ['Height and build', '169 cm; only Natalia is taller among the women. A longer, leaner silhouette with very attractive legs, elegant shins and ankles, stronger, well-shaped thighs, and a firm, rounded bottom she takes pride in. Her slender build retains these curves.'],
       ['Distinguishing features', 'Pale complexion, refined angular features, expressive eyes, and a composed, quietly sensual gaze.']
     ],
     residenceNote: 'After her mother\'s death, Lynleit resisted the family\'s move from Turon to Vilen and accepted it only on the condition that her study-bedroom occupy the third floor. The hillside site places thick trees close to the house and overlooks a river flowing toward the city center. Rustling leaves inspire her. She regards flowing water as life energy and seeks its emotional grounding despite her childhood fear of drowning.',
@@ -109,7 +109,7 @@ const profileSeeds = [
     physical: [
       ['Hair', 'Glossy black hair cut into a sleek, side-parted bob.'],
       ['Eyes', 'Amber-brown.'],
-      ['Height and build', 'Average height with a slim, softly curved build.'],
+      ['Height and build', 'Taller than Sherie and shorter than Lynleit, with Sherie\'s softly full body type carried across a longer frame.'],
       ['Distinguishing features', 'A pale complexion, arched brows, and a controlled smile.']
     ],
     personalitySummary: 'Helena measures people and institutions by what they can be made to accomplish. She searches for weak points, tightens hierarchy, removes obstacles, and acts directly once she decides that a structure has failed.',
@@ -185,7 +185,7 @@ const profileSeeds = [
     physical: [
       ['Hair', 'Long pale-blonde hair gathered into a high bun, with loose lengths sweeping over one shoulder.'],
       ['Eyes', 'Pale grey-green.'],
-      ['Height and build', 'Above-average height, slender and long-legged.'],
+      ['Height and build', 'Petite, with bottom fullness comparable to Lynleit\'s but softer, and slightly fuller breasts. Her curves appear more concentrated on her shorter frame.'],
       ['Distinguishing features', 'A fine oval face, long lashes, and ornate red-gold drop earrings.']
     ],
     personalitySummary: 'Sherie teases and provokes mischief even off duty. She is quick to read someone\'s mood, relationships, and standing in a group; an unexpected reply makes her reconsider the exchange she thought she understood. She can draw out information without making a person feel interrogated and keep a difficult conversation going. She also enjoys using beauty, attraction and psychological pressure to influence people, sometimes trusting her ability to manage the consequences too far. With Felix she can be theatrical, petty, ridiculous, or openly delighted without losing his respect. As she gets to know him, she also learns when his jokes conceal something serious.',
@@ -290,7 +290,7 @@ const profileSeeds = [
     physical: [
       ['Hair', 'Very long dark chestnut-brown hair with a blunt fringe and softly flared ends.'],
       ['Eyes', 'Green.'],
-      ['Height and build', 'Average height with a slim, straight build.'],
+      ['Height and build', 'Similarly petite to Sherie, with a somewhat straighter silhouette and subtler fullness through her thighs and bottom. Her chest is broadly comparable to Lynleit\'s.'],
       ['Distinguishing features', 'A fair complexion, wide observant eyes, and a habitually unsmiling expression.']
     ],
     equipment: [
@@ -347,7 +347,7 @@ const profileSeeds = [
     physical: [
       ['Hair', 'Deep burgundy hair gathered into a high bun, with long side-parted strands framing the face.'],
       ['Eyes', 'Light hazel.'],
-      ['Height and build', 'Average height with a curving figure.'],
+      ['Height and build', 'The tallest and fullest of the women, slightly taller than Lynleit, with a softer waist and broader curves.'],
       ['Distinguishing features', 'Round gold-rimmed glasses and long gold drop earrings.']
     ],
     personalitySummary: 'Natalia investigates private cases to pay for the research she wants to do. She left the Academy rather than keep asking permission to pursue it. When explaining a difficult idea, she reaches for an example or something she tried herself, including the attempts that failed. She asks her listener to try the next step and enjoys a good objection. Lynleit gets the lesson and the teasing of a former student who is still her friend. Natalia admits where her evidence runs out.',
@@ -402,7 +402,7 @@ const profileSeeds = [
     physical: [
       ['Hair', 'Long straight black hair with a blunt fringe.'],
       ['Eyes', 'Vivid turquoise.'],
-      ['Height and build', 'Short and petite with a slim build.'],
+      ['Height and build', 'Similar to Yulia in stature and build: petite, relatively straight in silhouette, with understated curves.'],
       ['Distinguishing features', 'A youthful round face and unusually bright, expressive eyes.']
     ],
     origin: 'Myka studies at the Magi Academy and keeps in regular contact with her aunt Natalia, a former professor. She asks her for help with studies and personal problems; Natalia checks on her and sometimes treats her like a daughter.', rupture: 'Myka encounters terrors inside the Academy and must rely on Natalia for rescue and support. Natalia asks Lynleit for help, but Lynleit is being sent to Cardiff and dispatches Kyrien as her substitute. The threat turns formal study into a struggle for survival inside an institution meant to train and protect young Magi.', focus: 'Kyrien enters the Academy as a non-Magus undercover helper and keeps Myka safe through conventional field skills and communications with Felix and Reiner. The danger exceeds Lynleit\'s estimate and forces Natalia to intervene personally. This becomes Myka\'s first direct experience with Kyrien and MSF.', future: 'Myka survives the Academy crisis and graduates at the top of her class. Her experience with Kyrien contributes to her later decision to join MSF as a Magus.',
@@ -493,6 +493,54 @@ const profileSeeds = [
 ];
 
 const profilesBySlug = new Map(profileSeeds.map((profile) => [profile.slug, profile]));
+
+// Shared qualitative comparisons; numbers and body measurements are not inferred.
+const appearanceComparisons = [
+  { label: 'Height', chain: ['natalia', '>', 'lynleit', '>', 'helena', '>', 'yulia', '≈', 'sherie', '≈', 'myka'] },
+  { label: 'Bottom fullness', chain: ['natalia', '>', 'helena', '=', 'sherie', '=', 'lynleit', '≥', 'yulia', '=', 'myka'] },
+  { label: 'Chest fullness', chain: ['natalia', '>', 'helena', '=', 'sherie', '≥', 'lynleit', '=', 'yulia', '=', 'myka'] }
+];
+
+function renderAppearanceComparison(profile) {
+  if (!appearanceComparisons[0].chain.includes(profile.slug)) return null;
+  const container = createElement('dd', 'appearance-comparison');
+  container.dataset.noEntityLinks = '';
+  const table = createElement('table', 'appearance-comparison-table');
+  table.append(createElement('caption', '', 'Relative proportions'));
+  const body = createElement('tbody');
+  const meanings = { '>': 'greater than', '=': 'broadly comparable to', '≥': 'comparable to or slightly greater than', '≈': 'approximately equal to' };
+  appearanceComparisons.forEach(({ label, chain }) => {
+    const row = createElement('tr');
+    const heading = createElement('th', '', label);
+    heading.scope = 'row';
+    const cell = createElement('td');
+    const sequence = createElement('div', 'appearance-comparison-chain');
+    // Pair each symbol with the following name so wraps never strand a symbol.
+    for (let index = 0; index < chain.length; index += 2) {
+      const slug = chain[index];
+      const group = createElement('span', 'appearance-comparison-step');
+      if (index) {
+        const operator = createElement('span', 'appearance-comparison-symbol', chain[index - 1]);
+        operator.setAttribute('aria-hidden', 'true');
+        group.append(operator, createElement('span', 'sr-only', ` ${meanings[chain[index - 1]]} `));
+      }
+      const name = createElement(slug === profile.slug ? 'mark' : 'span', 'appearance-comparison-name', profilesBySlug.get(slug).name);
+      name.dataset.character = slug;
+      if (slug === profile.slug) name.setAttribute('aria-label', `${profile.name}, current profile`);
+      group.append(name);
+      sequence.append(group);
+    }
+    cell.append(sequence);
+    row.append(heading, cell);
+    body.append(row);
+  });
+  table.append(body);
+  const key = createElement('p', 'appearance-comparison-key', '> greater · = comparable · ≥ comparable or slightly greater · ≈ close');
+  key.id = 'appearance-comparison-key';
+  table.setAttribute('aria-describedby', key.id);
+  container.append(table, key);
+  return container;
+}
 
 const skillAxes = [
   { key: 'analysis', label: 'Analysis' },
@@ -1390,6 +1438,10 @@ function renderProfile(profile) {
   if (profile.appearanceDetails?.length) appearanceDetails.push(...profile.appearanceDetails);
   appearanceDetails.forEach(([term, detail]) => {
     appearance.append(createElement('dt', '', term), createElement('dd', '', detail));
+    if (term === 'Height and build') {
+      const comparison = renderAppearanceComparison(profile);
+      if (comparison) appearance.append(createElement('dt', 'sr-only', 'Build comparison'), comparison);
+    }
   });
 
   const equipmentSection = document.querySelector('#character-equipment-section');
