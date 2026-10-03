@@ -347,6 +347,11 @@ window.addTimelineToggle = (panel) => {
 
 const galleryCharacterFilter = document.querySelector('#gallery-character-filter');
 const galleryLocationFilter = document.querySelector('#gallery-location-filter');
+const gallerySeasonFilter = document.querySelector('#gallery-season-filter');
+if (gallerySeasonFilter) {
+  const season = new URLSearchParams(window.location.search).get('season');
+  if ([...gallerySeasonFilter.options].some(option => option.value === season)) gallerySeasonFilter.value = season;
+}
 const galleryChibiFilter = document.querySelector('#gallery-chibi-filter');
 const galleryExcludeChibiFilter = document.querySelector('#gallery-exclude-chibi-filter');
 const galleryPencilFilter = document.querySelector('#gallery-pencil-filter');
@@ -442,7 +447,7 @@ function initializeGalleryCards() {
       versionNav.hidden = false;
       const heading = document.createElement('span');
       heading.className = 'eyebrow';
-      heading.textContent = 'Versions';
+      heading.textContent = selectedCard.dataset.season ? 'Seasonal outfits' : 'Versions';
       versionNav.append(heading);
       let subgroup;
       versions.forEach(card => {
@@ -460,12 +465,12 @@ function initializeGalleryCards() {
         thumbnail.src = artwork.dataset.preview || artwork.getAttribute('src');
         thumbnail.alt = ''; thumbnail.width = 56; thumbnail.height = 56;
         const label = document.createElement('span');
-        label.textContent = `${card.dataset.imageVersion} · ${card.dataset.imageVersionLabel}${card.dataset.imageVersionDefault === 'true' ? ' · Default' : ''}`;
+        label.textContent = card.dataset.season ? card.dataset.imageVersionLabel : `${card.dataset.imageVersion} · ${card.dataset.imageVersionLabel}${card.dataset.imageVersionDefault === 'true' ? ' · Default' : ''}`;
         if (card === selectedCard) link.setAttribute('aria-current', 'page');
         link.append(thumbnail, label);
         versionNav.append(link);
       });
-      galleryDetailMeta.textContent += ` · ${selectedCard.dataset.imageVersion} · ${selectedCard.dataset.imageVersionLabel}`;
+      if (!selectedCard.dataset.season) galleryDetailMeta.textContent += ` · ${selectedCard.dataset.imageVersion} · ${selectedCard.dataset.imageVersionLabel}`;
     }
   }
   const siblings = document.querySelector('#gallery-siblings');
@@ -513,6 +518,7 @@ function updateGalleryResults() {
 
   const selectedCharacter = galleryCharacterFilter?.value ?? 'all';
   const selectedLocation = galleryLocationFilter?.value ?? 'all';
+  const selectedSeason = gallerySeasonFilter?.value ?? 'all';
   const chibiOnly = galleryChibiFilter?.checked ?? false;
   const excludeChibis = galleryExcludeChibiFilter?.checked ?? false;
   const pencilOnly = galleryPencilFilter?.checked ?? false;
@@ -526,6 +532,7 @@ function updateGalleryResults() {
     const isChibi = item.dataset.chibi === 'true';
     return (selectedCharacter === 'all' || characters.includes(selectedCharacter))
       && (selectedLocation === 'all' || item.dataset.location === selectedLocation)
+      && (selectedSeason === 'all' || (selectedSeason === 'seasonal' ? Boolean(item.dataset.season) : item.dataset.season === selectedSeason))
       && (!chibiOnly || isChibi) && (!excludeChibis || !isChibi)
       && (!pencilOnly || item.dataset.artFinish === 'pencil')
       && (!coloredOnly || item.dataset.artFinish === 'colored')
@@ -556,12 +563,19 @@ function updateGalleryResults() {
   const emptyDescription = galleryEmptyState?.querySelector('p');
   if (emptyDescription) emptyDescription.textContent = fanServiceOnly
     ? 'No Fan Service artwork matches these filters. Try another selection or turn off Fan Service.'
-    : 'Try another character or location, or turn off a filter.';
+    : 'Try another character, location or season, or turn off a filter.';
 }
 
 galleryCharacterFilter?.addEventListener('change', updateGalleryResults);
 updateGalleryResults();
 galleryLocationFilter?.addEventListener('change', updateGalleryResults);
+gallerySeasonFilter?.addEventListener('change', () => {
+  const url = new URL(window.location.href);
+  if (gallerySeasonFilter.value === 'all') url.searchParams.delete('season');
+  else url.searchParams.set('season', gallerySeasonFilter.value);
+  window.history.replaceState(window.history.state, '', url);
+  updateGalleryResults();
+});
 for (const toggle of [galleryFanServiceFilter, galleryIncludeFanServiceFilter]) toggle?.addEventListener('change', () => {
   const other = toggle === galleryFanServiceFilter ? galleryIncludeFanServiceFilter : galleryFanServiceFilter;
   if (toggle.checked && other) other.checked = false;

@@ -355,10 +355,10 @@ for (const match of readText('gallery.html').matchAll(/<figure\b([^>]*\bclass="g
     title: stripHtml(match[2].match(/<strong>([\s\S]*?)<\/strong>/)?.[1] || id),
     type: attr('data-historical') === 'true' ? 'Historical artwork' : 'Artwork',
     url: `gallery.html?image=${encodeURIComponent(id)}`,
-    subtitle: [attr('data-story-arc')?.replace('-', ' '), attr('data-image-version'), attr('data-image-version-label')].filter(Boolean).join(' · '),
+    subtitle: [attr('data-story-arc')?.replace('-', ' '), attr('data-season') ? attr('data-variant-category') : attr('data-image-version'), attr('data-image-version-label')].filter(Boolean).join(' · '),
     text: stripHtml(`${match[2]} ${attr('data-story-context') || ''}`),
     keywords: [attr('data-character'), match[2].match(/\balt="([^"]*)"/)?.[1]].filter(Boolean).join(' '),
-    current: !group || attr('data-image-version-default') === 'true'
+    current: Boolean(attr('data-season')) || !group || attr('data-image-version-default') === 'true'
   });
 }
 addEntry({ id: 'gallery-panels', title: 'Panels', type: 'Gallery collection', url: 'gallery.html?collection=panels', text: 'Illustrated scenes, sequential panels and sketches linked to their Moments and Chapters.' });

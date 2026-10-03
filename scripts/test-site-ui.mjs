@@ -7,6 +7,7 @@ import { fileURLToPath } from 'node:url';
 import { chromium, webkit, firefox } from 'playwright';
 import { testGalleryResources } from './test-gallery-resources.mjs';
 import { testGalleryStacks } from './test-gallery-stacks.mjs';
+import { testSeasonalWardrobe } from './test-seasonal-wardrobe.mjs';
 import { testGalleryFilters } from './test-gallery-filters.mjs';
 import { testFanServiceIntake } from './test-fan-service-intake.mjs';
 import { testImageIdentities } from './test-image-identities-ui.mjs';
@@ -88,6 +89,12 @@ try {
       if (process.env.TEST_ANIMA_ONLY === '1') {
         await testSeptember28Backlog(page, origin, engine);
         assert.deepEqual(errors, [], `${engine}: Anima panel reader errors`);
+        continue;
+      }
+      if (process.env.TEST_SEASONAL_WARDROBE_ONLY === '1') {
+        await testSeasonalWardrobe(page, origin, engine);
+        await testGalleryFilters(page, origin, engine);
+        assert.deepEqual(errors, [], `${engine}: seasonal wardrobe errors`);
         continue;
       }
       if (process.env.TEST_APPEARANCE_ONLY === '1') {
@@ -618,6 +625,7 @@ try {
       assert.equal(await proseLink.evaluate(el => getComputedStyle(el).color), color, 'Entity link changes prose color on focus');
       assert.notEqual(await proseLink.evaluate(el => getComputedStyle(el).outlineStyle), 'none', 'Entity keyboard focus is invisible');
       await testGalleryStacks(page, origin, engine);
+      await testSeasonalWardrobe(page, origin, engine);
       await testSeptemberPanelIntake(page, origin, engine);
       await testGalleryResources(page, origin, engine);
       await testGalleryPanels(page, origin, engine);
