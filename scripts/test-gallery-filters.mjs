@@ -1,12 +1,10 @@
 import assert from 'node:assert/strict';
-import { openGalleryFilters } from './test-gallery-controls.mjs';
 
 export async function testGalleryFilters(page, origin, engine) {
   for (const width of [360, 820, 1440, 1920]) {
     await page.setViewportSize({ width, height: 900 });
     await page.goto(`${origin}/gallery.html`);
     await page.waitForLoadState('networkidle');
-    await openGalleryFilters(page);
     const controls = {
       chibi: page.locator('#gallery-chibi-filter'),
       exclude: page.locator('#gallery-exclude-chibi-filter'),
@@ -81,7 +79,6 @@ export async function testGalleryFilters(page, origin, engine) {
     await click('includeFan');
     assert.equal(await controls.fan.isChecked(), false);
     await page.reload();
-    await openGalleryFilters(page);
     assert.equal(await controls.includeFan.isChecked(), true);
     await click('includeFan');
     // Classification fixtures live only in this browser, never in the published catalog.

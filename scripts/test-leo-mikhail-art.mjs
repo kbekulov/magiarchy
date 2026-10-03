@@ -1,6 +1,5 @@
 import { publishedImagePath } from './test-image-paths.mjs';
 import assert from 'node:assert/strict';
-import { openGalleryFilters } from './test-gallery-controls.mjs';
 
 export async function testLeoMikhailArt(page, origin, engine) {
   const cast = [
@@ -12,7 +11,6 @@ export async function testLeoMikhailArt(page, origin, engine) {
     for (const [slug, name, portrait, poses] of cast) {
       await page.goto(`${origin}/gallery.html`);
       await page.waitForLoadState('networkidle');
-      await openGalleryFilters(page);
       await page.locator('#gallery-character-filter').selectOption(slug);
       assert.equal(await page.locator('.gallery-card:not([hidden])').count(), 3);
       await page.goto(`${origin}/gallery.html?image=char-${slug}-${portrait}`);

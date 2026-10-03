@@ -4144,7 +4144,6 @@ a.status-member:hover {
 
 .gallery-toolbar {
   display: block;
-  scroll-margin-top: 70px;
   margin: 0 30px;
   padding: 0 14px;
   border: 1px solid rgba(0, 0, 0, .22);
@@ -4157,10 +4156,11 @@ a.status-member:hover {
   min-width: 0;
   align-items: center;
   gap: 12px;
-  min-height: 54px;
+  min-height: 44px;
 }
 
-.gallery-filter-toggle,
+.gallery-filter-label { flex-shrink: 0; font-size: .75rem; }
+
 .gallery-filter-reset {
   display: inline-flex;
   align-items: center;
@@ -4178,17 +4178,13 @@ a.status-member:hover {
   flex-shrink: 0;
 }
 
-.gallery-filter-chevron { font-size: 1rem; }
-.gallery-filter-toggle[aria-expanded="true"] .gallery-filter-chevron { transform: rotate(180deg); }
 #gallery-filter-count { padding: 1px 5px; border-radius: 4px; background: #404249; font-size: .65rem; }
 .gallery-filter-summary { min-width: 0; flex: 1; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; color: var(--subtle); font-size: .7rem; }
 .gallery-filter-reset { padding-inline: 8px; color: var(--accent-bright); }
 .gallery-filter-reset:disabled { color: var(--subtle); cursor: default; opacity: .55; }
-.gallery-filter-toggle:focus-visible,
 .gallery-filter-reset:focus-visible { outline: 2px solid var(--accent-bright); outline-offset: 2px; }
 
 @media (hover: hover) and (pointer: fine) {
-  .gallery-filter-toggle:hover,
   .gallery-filter-reset:enabled:hover { background: #35373c; }
 }
 
@@ -4198,7 +4194,6 @@ a.status-member:hover {
 .gallery-toggle-options { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px; }
 .gallery-select-options { align-items: end; }
 .gallery-toolbar .chibi-toggle { min-height: 44px; }
-.gallery-filter-done { display: none; }
 
 .gallery-select {
   display: flex;
@@ -10069,14 +10064,6 @@ a.moment-connection-card:hover {
   .gallery-select-options,
   .gallery-toggle-options {
     gap: 12px;
-  }
-
-  .gallery-filter-done {
-    display: flex;
-    width: 100%;
-    min-height: 44px;
-    margin-top: 14px;
-    justify-content: center;
   }
 
   .chibi-toggle {

@@ -2,7 +2,6 @@ import { publishedImagePath } from './test-image-paths.mjs';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import { testGalleryFilters } from './test-gallery-filters.mjs';
-import { openGalleryFilters } from './test-gallery-controls.mjs';
 import { testGalleryIntake } from './test-gallery-intake.mjs';
 import { assertChibiCard, testChibiOutfits } from './test-chibi-outfits.mjs';
 import { testChibiVariations } from './test-chibi-variations.mjs';
@@ -17,7 +16,6 @@ export async function testArtworkVersions(page, origin, engine) {
     await page.goto(`${origin}/gallery.html`);
     await page.waitForLoadState('networkidle');
     const only = page.locator('#gallery-chibi-filter');
-    await openGalleryFilters(page);
     const exclude = page.locator('#gallery-exclude-chibi-filter');
     if (width > 1000) {
       const first = await only.locator('..').boundingBox();

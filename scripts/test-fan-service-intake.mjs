@@ -1,6 +1,5 @@
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
-import { openGalleryFilters } from './test-gallery-controls.mjs';
 
 export async function testFanServiceIntake(page, origin, engine) {
   for (const width of [390, 1440]) {
@@ -16,7 +15,6 @@ export async function testFanServiceIntake(page, origin, engine) {
     assert.equal(await shared.count(), 10);
     assert.ok(await shared.evaluateAll(items => items.every(item => item.dataset.character === 'lynleit sherie')));
     for (const character of ['lynleit', 'sherie']) {
-      await openGalleryFilters(page);
       await page.locator('#gallery-character-filter').selectOption(character);
       assert.equal(await page.locator('[data-artwork-stack="lynleit-sherie-fan-service"]:not([hidden])').count(), 1);
     }

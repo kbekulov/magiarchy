@@ -1,6 +1,5 @@
 import { publishedImagePath } from './test-image-paths.mjs';
 import assert from 'node:assert/strict';
-import { openGalleryFilters } from './test-gallery-controls.mjs';
 import fs from 'node:fs';
 
 export async function testRelationshipDirection(page, origin, engine) {
@@ -37,7 +36,6 @@ export async function testRelationshipDirection(page, origin, engine) {
   assert.deepEqual(await (await page.request.get(`${origin}/${asset}`)).body(), fs.readFileSync(asset));
   await visit('gallery.html');
   for (const slug of ['lynleit', 'kyrien']) {
-    await openGalleryFilters(page);
     await page.locator('#gallery-character-filter').selectOption(slug);
     assert.ok(await page.locator(`.gallery-card[data-image="${artwork}"]`).isVisible());
   }

@@ -1,6 +1,5 @@
 import { publishedImagePath } from './test-image-paths.mjs';
 import assert from 'node:assert/strict';
-import { openGalleryFilters } from './test-gallery-controls.mjs';
 import fs from 'node:fs';
 
 export const chibiOutfits = {
@@ -55,7 +54,6 @@ export async function testChibiOutfits(page, origin, engine) {
       }
       await page.goto(`${origin}/gallery.html?chibi-test=${index}`);
       await page.waitForLoadState('networkidle');
-      await openGalleryFilters(page);
       await page.locator('#gallery-chibi-filter').check({ force: true });
       for (const [name, outfits] of Object.entries(chibiOutfits)) {
         const cards = page.locator(`.gallery-card[data-artwork-stack="${name.toLowerCase()}-chibis"]`);

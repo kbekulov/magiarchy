@@ -1,6 +1,5 @@
 import { publishedImagePath } from './test-image-paths.mjs';
 import assert from 'node:assert/strict';
-import { openGalleryFilters } from './test-gallery-controls.mjs';
 import fs from 'node:fs';
 
 const variants = [
@@ -37,7 +36,6 @@ export async function testChibiVariations(page, origin, engine) {
     await page.screenshot({ path: `test-results/${engine}-chibi-variations-characters-${width}.png` });
     await page.goto(`${origin}/gallery.html?chibi-variation-test=latest`);
     await page.waitForLoadState('networkidle');
-    await openGalleryFilters(page);
     await page.locator('#gallery-chibi-filter').check({ force: true });
     for (const [slug, suffix] of variants) {
       const stack = page.locator(`.gallery-card[data-artwork-stack="${slug}-chibis"]`);

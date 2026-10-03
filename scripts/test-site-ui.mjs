@@ -9,7 +9,7 @@ import { testGalleryResources } from './test-gallery-resources.mjs';
 import { testGalleryStacks } from './test-gallery-stacks.mjs';
 import { testSeasonalWardrobe } from './test-seasonal-wardrobe.mjs';
 import { testGalleryFilters } from './test-gallery-filters.mjs';
-import { openGalleryFilters, testGalleryControls } from './test-gallery-controls.mjs';
+import { testGalleryControls } from './test-gallery-controls.mjs';
 import { testFanServiceIntake } from './test-fan-service-intake.mjs';
 import { testImageIdentities } from './test-image-identities-ui.mjs';
 import { testGalleryPanels } from './test-gallery-panels.mjs';
@@ -439,7 +439,6 @@ try {
         const options = await page.locator('#gallery-location-filter option').evaluateAll(nodes => nodes.map(node => node.value).sort());
         assert.deepEqual(options, available, 'Gallery offers an unpopulated location');
         const sharedArtwork = 'char-lynleit-felix-1';
-        await openGalleryFilters(page);
         for (const slug of ['lynleit', 'felix']) {
           await page.locator('#gallery-character-filter').selectOption(slug);
           const card = page.locator(`.gallery-card[data-image="${sharedArtwork}"]`);
