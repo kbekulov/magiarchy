@@ -10,7 +10,21 @@ export async function testAppearanceComparisons(page, origin, engine) {
     await page.setViewportSize({ width, height: 950 });
     for (const slug of width === 390 ? names : ['lynleit']) {
       await visit(`character.html?character=${slug}#appearance-title`);
-      const table = page.getByRole('table', { name: 'Relative proportions' });
+      const disclosure = page.locator('.appearance-comparison-disclosure');
+      const table = page.locator('.appearance-comparison-table');
+      assert.equal(await disclosure.getAttribute('open'), null, `${slug}: must start collapsed`);
+      assert.equal(await table.isVisible(), false);
+      const toggle = disclosure.locator('summary');
+      assert.ok((await toggle.boundingBox()).height >= 44);
+      await toggle.click();
+      assert.ok(await table.isVisible());
+      if (slug === 'lynleit' && width === 390) {
+        await toggle.focus();
+        await page.keyboard.press('Enter');
+        assert.equal(await table.isVisible(), false);
+        await page.keyboard.press('Space');
+        assert.ok(await table.isVisible());
+      }
       assert.equal(await table.count(), 1);
       assert.equal(await table.locator('tbody tr').count(), 3);
       assert.equal(await table.locator('mark').count(), 3);
@@ -21,9 +35,9 @@ export async function testAppearanceComparisons(page, origin, engine) {
       }
       const rows = await table.locator('tr').evaluateAll(nodes => nodes.map(row => [...row.querySelectorAll('.appearance-comparison-symbol, .appearance-comparison-name')].map(node => node.textContent).join(' ')));
       assert.deepEqual(rows, [
-        'Natalia > Lynleit > Helena > Yulia ≈ Sherie ≈ Myka',
-        'Natalia > Helena = Sherie = Lynleit ≥ Yulia = Myka',
-        'Natalia > Helena = Sherie ≥ Lynleit = Yulia = Myka'
+        'Natalia > Lynleit ≈ Helena > Yulia ≈ Sherie ≈ Myka',
+        'Natalia > Helena ≈ Sherie ≈ Lynleit ≥ Yulia ≈ Myka',
+        'Natalia > Helena ≈ Sherie ≥ Lynleit ≈ Yulia ≈ Myka'
       ]);
       assert.ok(await table.evaluate(node => node.closest('dd').previousElementSibling.previousElementSibling.previousElementSibling.textContent === 'Height and build'));
       assert.ok(await table.locator('mark').first().evaluate(node => getComputedStyle(node).backgroundColor !== 'rgba(0, 0, 0, 0)'));
@@ -39,13 +53,17 @@ export async function testAppearanceComparisons(page, origin, engine) {
         });
       }), `${slug}: clipped comparison at ${width}`);
       await page.locator('.profile-appearance').screenshot({ path: `test-results/${engine}-appearance-${slug}-${width}.png` });
+      await toggle.click();
+      assert.equal(await table.isVisible(), false);
+      if (slug === 'lynleit') await page.locator('.profile-appearance').screenshot({ path: `test-results/${engine}-appearance-collapsed-${width}.png` });
+      if (slug === 'lynleit' || slug === 'helena') assert.match(await page.locator('#character-appearance').textContent(), /169 cm, the same height as/);
     }
   }
   await visit('character.html?character=kyrien#appearance-title');
   assert.equal(await page.locator('.appearance-comparison-table').count(), 0);
   await visit('docs.html?doc=character-image-production#comparative-female-builds');
   assert.equal(await page.getByRole('heading', { name: 'Comparative female builds', exact: true }).count(), 1);
-  assert.equal(await page.getByRole('combobox', { name: 'Choose version' }).inputValue(), 'v19');
+  assert.equal(await page.getByRole('combobox', { name: 'Choose version' }).inputValue(), 'v20');
   await page.getByRole('combobox', { name: 'Choose version' }).selectOption('v18');
   await page.waitForURL(url => url.searchParams.get('version') === 'v18');
   await page.waitForLoadState('networkidle');
@@ -55,5 +73,6 @@ export async function testAppearanceComparisons(page, origin, engine) {
   await page.waitForLoadState('networkidle');
   assert.ok(page.url().endsWith('character=lynleit#appearance-title'));
   assert.equal(await page.locator('.appearance-comparison-table mark[data-character="lynleit"]').count(), 3);
-  console.log(`${engine}: six profile highlights, comparison order, four viewport sizes, unrelated-profile isolation, document history and Home link passed.`);
+  assert.equal(await page.locator('.appearance-comparison-table').isVisible(), false);
+  console.log(`${engine}: six profile highlights, collapsed disclosures, mouse/keyboard toggles, comparison order, four viewport sizes, document history and Home link passed.`);
 }

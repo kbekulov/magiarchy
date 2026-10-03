@@ -7,7 +7,7 @@ const profileSeeds = [
     physical: [
       ['Hair', 'Very long, wavy ash-black hair with a side-parted fringe, most often worn loose.'],
       ['Eyes', 'Bright cyan-blue.'],
-      ['Height and build', '169 cm; only Natalia is taller among the women. A longer, leaner silhouette with very attractive legs, elegant shins and ankles, stronger, well-shaped thighs, and a firm, rounded bottom she takes pride in. Her slender build retains these curves.'],
+      ['Height and build', '169 cm, the same height as Helena; only Natalia is taller among the women. A longer, leaner silhouette with very attractive legs, elegant shins and ankles, stronger, well-shaped thighs, and a firm, rounded bottom she takes pride in. Her slender build retains these curves.'],
       ['Distinguishing features', 'Pale complexion, refined angular features, expressive eyes, and a composed, quietly sensual gaze.']
     ],
     residenceNote: 'After her mother\'s death, Lynleit resisted the family\'s move from Turon to Vilen and accepted it only on the condition that her study-bedroom occupy the third floor. The hillside site places thick trees close to the house and overlooks a river flowing toward the city center. Rustling leaves inspire her. She regards flowing water as life energy and seeks its emotional grounding despite her childhood fear of drowning.',
@@ -109,7 +109,7 @@ const profileSeeds = [
     physical: [
       ['Hair', 'Glossy black hair cut into a sleek, side-parted bob.'],
       ['Eyes', 'Amber-brown.'],
-      ['Height and build', 'Taller than Sherie and shorter than Lynleit, with Sherie\'s softly full body type carried across a longer frame.'],
+      ['Height and build', '169 cm, the same height as Lynleit, with Sherie\'s softly full body type carried across a taller frame.'],
       ['Distinguishing features', 'A pale complexion, arched brows, and a controlled smile.']
     ],
     personalitySummary: 'Helena measures people and institutions by what they can be made to accomplish. She searches for weak points, tightens hierarchy, removes obstacles, and acts directly once she decides that a structure has failed.',
@@ -496,19 +496,21 @@ const profilesBySlug = new Map(profileSeeds.map((profile) => [profile.slug, prof
 
 // Shared qualitative comparisons; numbers and body measurements are not inferred.
 const appearanceComparisons = [
-  { label: 'Height', chain: ['natalia', '>', 'lynleit', '>', 'helena', '>', 'yulia', '≈', 'sherie', '≈', 'myka'] },
-  { label: 'Bottom fullness', chain: ['natalia', '>', 'helena', '=', 'sherie', '=', 'lynleit', '≥', 'yulia', '=', 'myka'] },
-  { label: 'Chest fullness', chain: ['natalia', '>', 'helena', '=', 'sherie', '≥', 'lynleit', '=', 'yulia', '=', 'myka'] }
+  { label: 'Height', chain: ['natalia', '>', 'lynleit', '≈', 'helena', '>', 'yulia', '≈', 'sherie', '≈', 'myka'] },
+  { label: 'Bottom fullness', chain: ['natalia', '>', 'helena', '≈', 'sherie', '≈', 'lynleit', '≥', 'yulia', '≈', 'myka'] },
+  { label: 'Chest fullness', chain: ['natalia', '>', 'helena', '≈', 'sherie', '≥', 'lynleit', '≈', 'yulia', '≈', 'myka'] }
 ];
 
 function renderAppearanceComparison(profile) {
   if (!appearanceComparisons[0].chain.includes(profile.slug)) return null;
   const container = createElement('dd', 'appearance-comparison');
   container.dataset.noEntityLinks = '';
+  const disclosure = createElement('details', 'appearance-comparison-disclosure');
+  disclosure.append(createElement('summary', '', 'Compare proportions'));
   const table = createElement('table', 'appearance-comparison-table');
-  table.append(createElement('caption', '', 'Relative proportions'));
+  table.append(createElement('caption', 'sr-only', 'Relative proportions'));
   const body = createElement('tbody');
-  const meanings = { '>': 'greater than', '=': 'broadly comparable to', '≥': 'comparable to or slightly greater than', '≈': 'approximately equal to' };
+  const meanings = { '>': 'greater than', '≥': 'comparable to or slightly greater than', '≈': 'broadly comparable to' };
   appearanceComparisons.forEach(({ label, chain }) => {
     const row = createElement('tr');
     const heading = createElement('th', '', label);
@@ -535,10 +537,11 @@ function renderAppearanceComparison(profile) {
     body.append(row);
   });
   table.append(body);
-  const key = createElement('p', 'appearance-comparison-key', '> greater · = comparable · ≥ comparable or slightly greater · ≈ close');
+  const key = createElement('p', 'appearance-comparison-key', '> greater · ≈ comparable · ≥ comparable or slightly greater');
   key.id = 'appearance-comparison-key';
   table.setAttribute('aria-describedby', key.id);
-  container.append(table, key);
+  disclosure.append(table, key);
+  container.append(disclosure);
   return container;
 }
 

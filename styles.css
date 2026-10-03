@@ -11139,8 +11139,23 @@ a.equipment-card:focus-visible {
 .appearance-ledger .appearance-comparison {
   grid-column: 1 / -1;
   min-width: 0;
-  padding: 0 0 12px;
+  padding: 0;
 }
+
+.appearance-comparison-disclosure { margin: 0; }
+.appearance-comparison-disclosure > summary {
+  min-height: 44px;
+  padding: 12px 0;
+  box-sizing: border-box;
+  color: var(--muted);
+  font-size: .64rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+.appearance-comparison-disclosure > summary::marker { color: var(--accent-bright); }
+.appearance-comparison-disclosure > summary:hover { color: var(--text); }
+.appearance-comparison-disclosure > summary:focus-visible { outline: 2px solid var(--accent-bright); outline-offset: -2px; }
+.appearance-comparison-disclosure[open] { padding-bottom: 12px; }
 
 .appearance-comparison-table {
   width: 100%;
@@ -11148,14 +11163,6 @@ a.equipment-card:focus-visible {
   table-layout: fixed;
   font-size: .64rem;
   line-height: 1.65;
-}
-
-.appearance-comparison-table caption {
-  padding: 12px 0 7px;
-  text-align: left;
-  color: var(--muted);
-  font-size: .6rem;
-  font-weight: 700;
 }
 
 .appearance-comparison-table th,

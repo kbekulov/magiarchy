@@ -280,7 +280,7 @@
     "speakers": [
       "Author's Desk"
     ],
-    "defaultVersion": "v19",
+    "defaultVersion": "v20",
     "versions": [
       {
         "id": "v1",
@@ -410,10 +410,17 @@
       },
       {
         "id": "v19",
-        "label": "v19 · Current",
-        "file": "character-image-production.md",
+        "label": "v19 · Archived",
+        "file": "character-image-production-v19.md",
         "updated": "2026-10-03",
         "description": "Qualitative female height and build comparisons, with selected Lynleit/Sherie body references instead of numerical measurement sheets."
+      },
+      {
+        "id": "v20",
+        "label": "v20 · Current",
+        "file": "character-image-production.md",
+        "updated": "2026-10-03",
+        "description": "Lynleit and Helena share a height of 169 cm; relative body comparisons use approximate similarity rather than strict equality."
       }
     ]
   },
