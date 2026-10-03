@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "nextId": 243,
+  "nextId": 245,
   "images": [
     {
       "id": "IMG-000001",
@@ -3347,7 +3347,7 @@
       "previousPaths": [
         "media/gallery/images/characters/seasonal/lynleit/winter/char-lynleit-seasonal-winter-navy-coat.png"
       ],
-      "active": true
+      "active": false
     },
     {
       "id": "IMG-000238",
@@ -3404,6 +3404,28 @@
       ],
       "previousPaths": [
         "media/gallery/panels/anima-meets-female-cast/FULL-anima-meets-female-cast-panel-6-who-poured-mine-magazine-v2.png"
+      ],
+      "active": true
+    },
+    {
+      "id": "IMG-000243",
+      "source": "media/gallery/images/characters/seasonal/lynleit/winter/FULL-char-lynleit-seasonal-winter-blue-fur-trimmed-cape-front-img-000243.png",
+      "derivatives": [
+        "media/gallery/previews/characters/seasonal/lynleit/winter/PREV-char-lynleit-seasonal-winter-blue-fur-trimmed-cape-front-img-000243.webp"
+      ],
+      "previousPaths": [
+        "media/gallery/images/characters/seasonal/lynleit/winter/FULL-char-lynleit-seasonal-winter-blue-fur-trimmed-cape-front.png"
+      ],
+      "active": true
+    },
+    {
+      "id": "IMG-000244",
+      "source": "media/gallery/images/characters/seasonal/lynleit/winter/FULL-char-lynleit-seasonal-winter-blue-fur-trimmed-cape-rear-three-quarter-img-000244.png",
+      "derivatives": [
+        "media/gallery/previews/characters/seasonal/lynleit/winter/PREV-char-lynleit-seasonal-winter-blue-fur-trimmed-cape-rear-three-quarter-img-000244.webp"
+      ],
+      "previousPaths": [
+        "media/gallery/images/characters/seasonal/lynleit/winter/FULL-char-lynleit-seasonal-winter-blue-fur-trimmed-cape-rear-three-quarter.png"
       ],
       "active": true
     }

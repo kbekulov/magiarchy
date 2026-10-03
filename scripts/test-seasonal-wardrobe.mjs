@@ -7,6 +7,16 @@ export async function testSeasonalWardrobe(page, origin, engine) {
   assert.ok(images.length >= 14);
   const search = JSON.parse(fs.readFileSync('search-index.json', 'utf8'));
   const entries = Array.isArray(search) ? search : search.entries;
+  const lynleitWinter = images.filter(record => record.source.includes('/seasonal/lynleit/winter/'));
+  assert.deepEqual(lynleitWinter.map(record => record.id).sort(), ['IMG-000243', 'IMG-000244']);
+  const retiredWinter = ledger.images.find(record => record.id === 'IMG-000237');
+  assert.equal(retiredWinter.active, false, 'The withdrawn winter image keeps its reserved identity');
+  assert.ok([retiredWinter.source, ...retiredWinter.derivatives].every(file => !fs.existsSync(file)));
+  assert.ok(!entries.some(entry => entry.url === 'gallery.html?image=char-lynleit-seasonal-winter-navy-coat'));
+  const winterViews = [
+    'char-lynleit-seasonal-winter-blue-fur-trimmed-cape-front',
+    'char-lynleit-seasonal-winter-blue-fur-trimmed-cape-rear-three-quarter'
+  ];
   await page.addInitScript(() => Object.defineProperty(navigator, 'clipboard', {
     configurable: true, value: { writeText: async value => { window.seasonalCopiedId = value; } }
   }));
@@ -93,6 +103,30 @@ export async function testSeasonalWardrobe(page, origin, engine) {
     assert.ok(await page.locator('#gallery-season-filter').isHidden());
     await visit('gallery.html?collection=production&season=winter');
     assert.ok(await page.locator('#gallery-season-filter').isHidden());
+    await visit('gallery.html?season=winter');
+    await page.locator('#gallery-character-filter').selectOption('lynleit');
+    assert.equal(await visible().count(), 1, 'The two new views share one seasonal card');
+    assert.equal(await page.locator('.gallery-card[data-artwork-stack="lynleit-seasonal-wardrobe"]').count(), 2);
+    assert.equal(await page.locator('[data-image="char-lynleit-seasonal-winter-navy-coat"]').count(), 0);
+    await visible().locator(':scope > a').click();
+    await page.waitForLoadState('networkidle');
+    assert.deepEqual(await page.locator('.gallery-variant-category').allTextContents(), ['Winter']);
+    assert.equal(await page.locator('#gallery-image-versions a').count(), 2);
+    for (const id of winterViews) {
+      await page.locator(`#gallery-image-versions a[href="gallery.html?image=${id}"]`).click();
+      await page.waitForLoadState('networkidle');
+      assert.equal(new URL(page.url()).searchParams.get('image'), id);
+      assert.match(await page.locator('#gallery-detail-type').textContent(), /Blue fur-trimmed cape/);
+    }
+    await page.locator('#gallery-reader-view').screenshot({ path: `test-results/${engine}-lynleit-winter-cape-${width}.png` });
+    await visit('character.html?character=lynleit');
+    assert.equal(await page.locator('.profile-art-thumbnails img[src*="img-000237"]').count(), 0);
+    for (const identity of lynleitWinter) {
+      const thumb = page.locator(`.profile-art-thumbnails img[src="${identity.derivatives[0]}"]`);
+      assert.equal(await thumb.count(), 1);
+      await thumb.locator('..').click();
+      assert.equal(await page.locator('.profile-portrait-strip img:not([aria-hidden])').getAttribute('src'), identity.source);
+    }
   }
   const touch = await page.context().browser().newContext({ viewport: { width: 390, height: 844 }, isMobile: true, hasTouch: true });
   try {
