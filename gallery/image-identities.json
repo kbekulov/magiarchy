@@ -622,15 +622,17 @@
     },
     {
       "id": "IMG-000045",
-      "source": "media/gallery/images/chibis/FULL-char-drake-chibi-cane-disapproval-img-000045.png",
+      "source": "media/gallery/images/chibis/FULL-char-drake-chibi-cane-disapproval-r2-img-000045.png",
       "derivatives": [
-        "media/gallery/previews/chibis/PREV-char-drake-chibi-cane-disapproval-img-000045.webp"
+        "media/gallery/previews/chibis/PREV-char-drake-chibi-cane-disapproval-r2-img-000045.webp"
       ],
       "previousPaths": [
         "media/gallery/images/chibis/char-drake-chibi-cane-disapproval.png",
         "media/gallery/previews/chibis/char-drake-chibi-cane-disapproval.webp",
         "media/gallery/images/chibis/char-drake-chibi-cane-disapproval-img-000045.png",
-        "media/gallery/previews/chibis/char-drake-chibi-cane-disapproval-img-000045.webp"
+        "media/gallery/previews/chibis/char-drake-chibi-cane-disapproval-img-000045.webp",
+        "media/gallery/images/chibis/FULL-char-drake-chibi-cane-disapproval-img-000045.png",
+        "media/gallery/previews/chibis/PREV-char-drake-chibi-cane-disapproval-img-000045.webp"
       ],
       "active": true
     },
@@ -652,43 +654,49 @@
     },
     {
       "id": "IMG-000047",
-      "source": "media/gallery/images/chibis/FULL-char-father-mikhail-chibi-folded-arms-img-000047.png",
+      "source": "media/gallery/images/chibis/FULL-char-father-mikhail-chibi-folded-arms-r2-img-000047.png",
       "derivatives": [
-        "media/gallery/previews/chibis/PREV-char-father-mikhail-chibi-folded-arms-img-000047.webp"
+        "media/gallery/previews/chibis/PREV-char-father-mikhail-chibi-folded-arms-r2-img-000047.webp"
       ],
       "previousPaths": [
         "media/gallery/images/chibis/char-father-mikhail-chibi-folded-arms.png",
         "media/gallery/previews/chibis/char-father-mikhail-chibi-folded-arms.webp",
         "media/gallery/images/chibis/char-father-mikhail-chibi-folded-arms-img-000047.png",
-        "media/gallery/previews/chibis/char-father-mikhail-chibi-folded-arms-img-000047.webp"
+        "media/gallery/previews/chibis/char-father-mikhail-chibi-folded-arms-img-000047.webp",
+        "media/gallery/images/chibis/FULL-char-father-mikhail-chibi-folded-arms-img-000047.png",
+        "media/gallery/previews/chibis/PREV-char-father-mikhail-chibi-folded-arms-img-000047.webp"
       ],
       "active": true
     },
     {
       "id": "IMG-000048",
-      "source": "media/gallery/images/chibis/FULL-char-father-mikhail-chibi-reading-img-000048.png",
+      "source": "media/gallery/images/chibis/FULL-char-father-mikhail-chibi-reading-r2-img-000048.png",
       "derivatives": [
-        "media/gallery/previews/chibis/PREV-char-father-mikhail-chibi-reading-img-000048.webp"
+        "media/gallery/previews/chibis/PREV-char-father-mikhail-chibi-reading-r2-img-000048.webp"
       ],
       "previousPaths": [
         "media/gallery/images/chibis/char-father-mikhail-chibi-reading.png",
         "media/gallery/previews/chibis/char-father-mikhail-chibi-reading.webp",
         "media/gallery/images/chibis/char-father-mikhail-chibi-reading-img-000048.png",
-        "media/gallery/previews/chibis/char-father-mikhail-chibi-reading-img-000048.webp"
+        "media/gallery/previews/chibis/char-father-mikhail-chibi-reading-img-000048.webp",
+        "media/gallery/images/chibis/FULL-char-father-mikhail-chibi-reading-img-000048.png",
+        "media/gallery/previews/chibis/PREV-char-father-mikhail-chibi-reading-img-000048.webp"
       ],
       "active": true
     },
     {
       "id": "IMG-000049",
-      "source": "media/gallery/images/chibis/FULL-char-felix-chibi-grey-jacket-img-000049.png",
+      "source": "media/gallery/images/chibis/FULL-char-felix-chibi-grey-jacket-r2-img-000049.png",
       "derivatives": [
-        "media/gallery/previews/chibis/PREV-char-felix-chibi-grey-jacket-img-000049.webp"
+        "media/gallery/previews/chibis/PREV-char-felix-chibi-grey-jacket-r2-img-000049.webp"
       ],
       "previousPaths": [
         "media/gallery/images/chibis/char-felix-chibi-grey-jacket.png",
         "media/gallery/previews/chibis/char-felix-chibi-grey-jacket.webp",
         "media/gallery/images/chibis/char-felix-chibi-grey-jacket-img-000049.png",
-        "media/gallery/previews/chibis/char-felix-chibi-grey-jacket-img-000049.webp"
+        "media/gallery/previews/chibis/char-felix-chibi-grey-jacket-img-000049.webp",
+        "media/gallery/images/chibis/FULL-char-felix-chibi-grey-jacket-img-000049.png",
+        "media/gallery/previews/chibis/PREV-char-felix-chibi-grey-jacket-img-000049.webp"
       ],
       "active": true
     },
@@ -710,71 +718,81 @@
     },
     {
       "id": "IMG-000051",
-      "source": "media/gallery/images/chibis/FULL-char-felix-chibi-laughing-bow-img-000051.png",
+      "source": "media/gallery/images/chibis/FULL-char-felix-chibi-laughing-bow-r2-img-000051.png",
       "derivatives": [
-        "media/gallery/previews/chibis/PREV-char-felix-chibi-laughing-bow-img-000051.webp"
+        "media/gallery/previews/chibis/PREV-char-felix-chibi-laughing-bow-r2-img-000051.webp"
       ],
       "previousPaths": [
         "media/gallery/images/chibis/char-felix-chibi-laughing-bow.png",
         "media/gallery/previews/chibis/char-felix-chibi-laughing-bow.webp",
         "media/gallery/images/chibis/char-felix-chibi-laughing-bow-img-000051.png",
-        "media/gallery/previews/chibis/char-felix-chibi-laughing-bow-img-000051.webp"
+        "media/gallery/previews/chibis/char-felix-chibi-laughing-bow-img-000051.webp",
+        "media/gallery/images/chibis/FULL-char-felix-chibi-laughing-bow-img-000051.png",
+        "media/gallery/previews/chibis/PREV-char-felix-chibi-laughing-bow-img-000051.webp"
       ],
       "active": true
     },
     {
       "id": "IMG-000052",
-      "source": "media/gallery/images/chibis/FULL-char-felix-chibi-suspenders-r2-img-000052.png",
+      "source": "media/gallery/images/chibis/FULL-char-felix-chibi-suspenders-r3-img-000052.png",
       "derivatives": [
-        "media/gallery/previews/chibis/PREV-char-felix-chibi-suspenders-r2-img-000052.webp"
+        "media/gallery/previews/chibis/PREV-char-felix-chibi-suspenders-r3-img-000052.webp"
       ],
       "previousPaths": [
         "media/gallery/images/chibis/char-felix-chibi-suspenders-r2.png",
         "media/gallery/previews/chibis/char-felix-chibi-suspenders-r2.webp",
         "media/gallery/images/chibis/char-felix-chibi-suspenders-r2-img-000052.png",
-        "media/gallery/previews/chibis/char-felix-chibi-suspenders-r2-img-000052.webp"
+        "media/gallery/previews/chibis/char-felix-chibi-suspenders-r2-img-000052.webp",
+        "media/gallery/images/chibis/FULL-char-felix-chibi-suspenders-r2-img-000052.png",
+        "media/gallery/previews/chibis/PREV-char-felix-chibi-suspenders-r2-img-000052.webp"
       ],
       "active": true
     },
     {
       "id": "IMG-000053",
-      "source": "media/gallery/images/chibis/FULL-char-fionn-chibi-adjusting-glove-img-000053.png",
+      "source": "media/gallery/images/chibis/FULL-char-fionn-chibi-adjusting-glove-r2-img-000053.png",
       "derivatives": [
-        "media/gallery/previews/chibis/PREV-char-fionn-chibi-adjusting-glove-img-000053.webp"
+        "media/gallery/previews/chibis/PREV-char-fionn-chibi-adjusting-glove-r2-img-000053.webp"
       ],
       "previousPaths": [
         "media/gallery/images/chibis/char-fionn-chibi-adjusting-glove.png",
         "media/gallery/previews/chibis/char-fionn-chibi-adjusting-glove.webp",
         "media/gallery/images/chibis/char-fionn-chibi-adjusting-glove-img-000053.png",
-        "media/gallery/previews/chibis/char-fionn-chibi-adjusting-glove-img-000053.webp"
+        "media/gallery/previews/chibis/char-fionn-chibi-adjusting-glove-img-000053.webp",
+        "media/gallery/images/chibis/FULL-char-fionn-chibi-adjusting-glove-img-000053.png",
+        "media/gallery/previews/chibis/PREV-char-fionn-chibi-adjusting-glove-img-000053.webp"
       ],
       "active": true
     },
     {
       "id": "IMG-000054",
-      "source": "media/gallery/images/chibis/FULL-char-helena-chibi-over-shoulder-img-000054.png",
+      "source": "media/gallery/images/chibis/FULL-char-helena-chibi-over-shoulder-r2-img-000054.png",
       "derivatives": [
-        "media/gallery/previews/chibis/PREV-char-helena-chibi-over-shoulder-img-000054.webp"
+        "media/gallery/previews/chibis/PREV-char-helena-chibi-over-shoulder-r2-img-000054.webp"
       ],
       "previousPaths": [
         "media/gallery/images/chibis/char-helena-chibi-over-shoulder.png",
         "media/gallery/previews/chibis/char-helena-chibi-over-shoulder.webp",
         "media/gallery/images/chibis/char-helena-chibi-over-shoulder-img-000054.png",
-        "media/gallery/previews/chibis/char-helena-chibi-over-shoulder-img-000054.webp"
+        "media/gallery/previews/chibis/char-helena-chibi-over-shoulder-img-000054.webp",
+        "media/gallery/images/chibis/FULL-char-helena-chibi-over-shoulder-img-000054.png",
+        "media/gallery/previews/chibis/PREV-char-helena-chibi-over-shoulder-img-000054.webp"
       ],
       "active": true
     },
     {
       "id": "IMG-000055",
-      "source": "media/gallery/images/chibis/FULL-char-heyk-chibi-seated-watch-img-000055.png",
+      "source": "media/gallery/images/chibis/FULL-char-heyk-chibi-seated-watch-r2-img-000055.png",
       "derivatives": [
-        "media/gallery/previews/chibis/PREV-char-heyk-chibi-seated-watch-img-000055.webp"
+        "media/gallery/previews/chibis/PREV-char-heyk-chibi-seated-watch-r2-img-000055.webp"
       ],
       "previousPaths": [
         "media/gallery/images/chibis/char-heyk-chibi-seated-watch.png",
         "media/gallery/previews/chibis/char-heyk-chibi-seated-watch.webp",
         "media/gallery/images/chibis/char-heyk-chibi-seated-watch-img-000055.png",
-        "media/gallery/previews/chibis/char-heyk-chibi-seated-watch-img-000055.webp"
+        "media/gallery/previews/chibis/char-heyk-chibi-seated-watch-img-000055.webp",
+        "media/gallery/images/chibis/FULL-char-heyk-chibi-seated-watch-img-000055.png",
+        "media/gallery/previews/chibis/PREV-char-heyk-chibi-seated-watch-img-000055.webp"
       ],
       "active": true
     },
@@ -860,15 +878,17 @@
     },
     {
       "id": "IMG-000061",
-      "source": "media/gallery/images/chibis/FULL-char-kyrien-arc-1-chibi-beige-jacket-r2-img-000061.png",
+      "source": "media/gallery/images/chibis/FULL-char-kyrien-arc-1-chibi-beige-jacket-r3-img-000061.png",
       "derivatives": [
-        "media/gallery/previews/chibis/PREV-char-kyrien-arc-1-chibi-beige-jacket-r2-img-000061.webp"
+        "media/gallery/previews/chibis/PREV-char-kyrien-arc-1-chibi-beige-jacket-r3-img-000061.webp"
       ],
       "previousPaths": [
         "media/gallery/images/chibis/char-kyrien-arc-1-chibi-beige-jacket-r2.png",
         "media/gallery/previews/chibis/char-kyrien-arc-1-chibi-beige-jacket-r2.webp",
         "media/gallery/images/chibis/char-kyrien-arc-1-chibi-beige-jacket-r2-img-000061.png",
-        "media/gallery/previews/chibis/char-kyrien-arc-1-chibi-beige-jacket-r2-img-000061.webp"
+        "media/gallery/previews/chibis/char-kyrien-arc-1-chibi-beige-jacket-r2-img-000061.webp",
+        "media/gallery/images/chibis/FULL-char-kyrien-arc-1-chibi-beige-jacket-r2-img-000061.png",
+        "media/gallery/previews/chibis/PREV-char-kyrien-arc-1-chibi-beige-jacket-r2-img-000061.webp"
       ],
       "active": true
     },
@@ -890,85 +910,97 @@
     },
     {
       "id": "IMG-000063",
-      "source": "media/gallery/images/chibis/FULL-char-kyrien-chibi-black-coat-study-img-000063.png",
+      "source": "media/gallery/images/chibis/FULL-char-kyrien-chibi-black-coat-study-r2-img-000063.png",
       "derivatives": [
-        "media/gallery/previews/chibis/PREV-char-kyrien-chibi-black-coat-study-img-000063.webp"
+        "media/gallery/previews/chibis/PREV-char-kyrien-chibi-black-coat-study-r2-img-000063.webp"
       ],
       "previousPaths": [
         "media/gallery/images/chibis/char-kyrien-chibi-black-coat-study.png",
         "media/gallery/previews/chibis/char-kyrien-chibi-black-coat-study.webp",
         "media/gallery/images/chibis/char-kyrien-chibi-black-coat-study-img-000063.png",
-        "media/gallery/previews/chibis/char-kyrien-chibi-black-coat-study-img-000063.webp"
+        "media/gallery/previews/chibis/char-kyrien-chibi-black-coat-study-img-000063.webp",
+        "media/gallery/images/chibis/FULL-char-kyrien-chibi-black-coat-study-img-000063.png",
+        "media/gallery/previews/chibis/PREV-char-kyrien-chibi-black-coat-study-img-000063.webp"
       ],
       "active": true
     },
     {
       "id": "IMG-000064",
-      "source": "media/gallery/images/chibis/FULL-char-kyrien-chibi-blue-shirt-study-img-000064.png",
+      "source": "media/gallery/images/chibis/FULL-char-kyrien-chibi-blue-shirt-study-r2-img-000064.png",
       "derivatives": [
-        "media/gallery/previews/chibis/PREV-char-kyrien-chibi-blue-shirt-study-img-000064.webp"
+        "media/gallery/previews/chibis/PREV-char-kyrien-chibi-blue-shirt-study-r2-img-000064.webp"
       ],
       "previousPaths": [
         "media/gallery/images/chibis/char-kyrien-chibi-blue-shirt-study.png",
         "media/gallery/previews/chibis/char-kyrien-chibi-blue-shirt-study.webp",
         "media/gallery/images/chibis/char-kyrien-chibi-blue-shirt-study-img-000064.png",
-        "media/gallery/previews/chibis/char-kyrien-chibi-blue-shirt-study-img-000064.webp"
+        "media/gallery/previews/chibis/char-kyrien-chibi-blue-shirt-study-img-000064.webp",
+        "media/gallery/images/chibis/FULL-char-kyrien-chibi-blue-shirt-study-img-000064.png",
+        "media/gallery/previews/chibis/PREV-char-kyrien-chibi-blue-shirt-study-img-000064.webp"
       ],
       "active": true
     },
     {
       "id": "IMG-000065",
-      "source": "media/gallery/images/chibis/FULL-char-myka-chibi-off-balance-img-000065.png",
+      "source": "media/gallery/images/chibis/FULL-char-myka-chibi-off-balance-r2-img-000065.png",
       "derivatives": [
-        "media/gallery/previews/chibis/PREV-char-myka-chibi-off-balance-img-000065.webp"
+        "media/gallery/previews/chibis/PREV-char-myka-chibi-off-balance-r2-img-000065.webp"
       ],
       "previousPaths": [
         "media/gallery/images/chibis/char-myka-chibi-off-balance.png",
         "media/gallery/previews/chibis/char-myka-chibi-off-balance.webp",
         "media/gallery/images/chibis/char-myka-chibi-off-balance-img-000065.png",
-        "media/gallery/previews/chibis/char-myka-chibi-off-balance-img-000065.webp"
+        "media/gallery/previews/chibis/char-myka-chibi-off-balance-img-000065.webp",
+        "media/gallery/images/chibis/FULL-char-myka-chibi-off-balance-img-000065.png",
+        "media/gallery/previews/chibis/PREV-char-myka-chibi-off-balance-img-000065.webp"
       ],
       "active": true
     },
     {
       "id": "IMG-000066",
-      "source": "media/gallery/images/chibis/FULL-char-natalia-chibi-seated-reader-img-000066.png",
+      "source": "media/gallery/images/chibis/FULL-char-natalia-chibi-seated-reader-r2-img-000066.png",
       "derivatives": [
-        "media/gallery/previews/chibis/PREV-char-natalia-chibi-seated-reader-img-000066.webp"
+        "media/gallery/previews/chibis/PREV-char-natalia-chibi-seated-reader-r2-img-000066.webp"
       ],
       "previousPaths": [
         "media/gallery/images/chibis/char-natalia-chibi-seated-reader.png",
         "media/gallery/previews/chibis/char-natalia-chibi-seated-reader.webp",
         "media/gallery/images/chibis/char-natalia-chibi-seated-reader-img-000066.png",
-        "media/gallery/previews/chibis/char-natalia-chibi-seated-reader-img-000066.webp"
+        "media/gallery/previews/chibis/char-natalia-chibi-seated-reader-img-000066.webp",
+        "media/gallery/images/chibis/FULL-char-natalia-chibi-seated-reader-img-000066.png",
+        "media/gallery/previews/chibis/PREV-char-natalia-chibi-seated-reader-img-000066.webp"
       ],
       "active": true
     },
     {
       "id": "IMG-000067",
-      "source": "media/gallery/images/chibis/FULL-char-reiner-chibi-folded-arms-img-000067.png",
+      "source": "media/gallery/images/chibis/FULL-char-reiner-chibi-folded-arms-r2-img-000067.png",
       "derivatives": [
-        "media/gallery/previews/chibis/PREV-char-reiner-chibi-folded-arms-img-000067.webp"
+        "media/gallery/previews/chibis/PREV-char-reiner-chibi-folded-arms-r2-img-000067.webp"
       ],
       "previousPaths": [
         "media/gallery/images/chibis/char-reiner-chibi-folded-arms.png",
         "media/gallery/previews/chibis/char-reiner-chibi-folded-arms.webp",
         "media/gallery/images/chibis/char-reiner-chibi-folded-arms-img-000067.png",
-        "media/gallery/previews/chibis/char-reiner-chibi-folded-arms-img-000067.webp"
+        "media/gallery/previews/chibis/char-reiner-chibi-folded-arms-img-000067.webp",
+        "media/gallery/images/chibis/FULL-char-reiner-chibi-folded-arms-img-000067.png",
+        "media/gallery/previews/chibis/PREV-char-reiner-chibi-folded-arms-img-000067.webp"
       ],
       "active": true
     },
     {
       "id": "IMG-000068",
-      "source": "media/gallery/images/chibis/FULL-char-sherie-chibi-ankle-boots-r2-img-000068.png",
+      "source": "media/gallery/images/chibis/FULL-char-sherie-chibi-ankle-boots-r3-img-000068.png",
       "derivatives": [
-        "media/gallery/previews/chibis/PREV-char-sherie-chibi-ankle-boots-r2-img-000068.webp"
+        "media/gallery/previews/chibis/PREV-char-sherie-chibi-ankle-boots-r3-img-000068.webp"
       ],
       "previousPaths": [
         "media/gallery/images/chibis/char-sherie-chibi-ankle-boots-r2.png",
         "media/gallery/previews/chibis/char-sherie-chibi-ankle-boots-r2.webp",
         "media/gallery/images/chibis/char-sherie-chibi-ankle-boots-r2-img-000068.png",
-        "media/gallery/previews/chibis/char-sherie-chibi-ankle-boots-r2-img-000068.webp"
+        "media/gallery/previews/chibis/char-sherie-chibi-ankle-boots-r2-img-000068.webp",
+        "media/gallery/images/chibis/FULL-char-sherie-chibi-ankle-boots-r2-img-000068.png",
+        "media/gallery/previews/chibis/PREV-char-sherie-chibi-ankle-boots-r2-img-000068.webp"
       ],
       "active": true
     },
@@ -990,43 +1022,49 @@
     },
     {
       "id": "IMG-000070",
-      "source": "media/gallery/images/chibis/FULL-char-tien-chibi-quiet-perch-img-000070.png",
+      "source": "media/gallery/images/chibis/FULL-char-tien-chibi-quiet-perch-r2-img-000070.png",
       "derivatives": [
-        "media/gallery/previews/chibis/PREV-char-tien-chibi-quiet-perch-img-000070.webp"
+        "media/gallery/previews/chibis/PREV-char-tien-chibi-quiet-perch-r2-img-000070.webp"
       ],
       "previousPaths": [
         "media/gallery/images/chibis/char-tien-chibi-quiet-perch.png",
         "media/gallery/previews/chibis/char-tien-chibi-quiet-perch.webp",
         "media/gallery/images/chibis/char-tien-chibi-quiet-perch-img-000070.png",
-        "media/gallery/previews/chibis/char-tien-chibi-quiet-perch-img-000070.webp"
+        "media/gallery/previews/chibis/char-tien-chibi-quiet-perch-img-000070.webp",
+        "media/gallery/images/chibis/FULL-char-tien-chibi-quiet-perch-img-000070.png",
+        "media/gallery/previews/chibis/PREV-char-tien-chibi-quiet-perch-img-000070.webp"
       ],
       "active": true
     },
     {
       "id": "IMG-000071",
-      "source": "media/gallery/images/chibis/FULL-char-yulia-chibi-exasperated-sigh-img-000071.png",
+      "source": "media/gallery/images/chibis/FULL-char-yulia-chibi-exasperated-sigh-r2-img-000071.png",
       "derivatives": [
-        "media/gallery/previews/chibis/PREV-char-yulia-chibi-exasperated-sigh-img-000071.webp"
+        "media/gallery/previews/chibis/PREV-char-yulia-chibi-exasperated-sigh-r2-img-000071.webp"
       ],
       "previousPaths": [
         "media/gallery/images/chibis/char-yulia-chibi-exasperated-sigh.png",
         "media/gallery/previews/chibis/char-yulia-chibi-exasperated-sigh.webp",
         "media/gallery/images/chibis/char-yulia-chibi-exasperated-sigh-img-000071.png",
-        "media/gallery/previews/chibis/char-yulia-chibi-exasperated-sigh-img-000071.webp"
+        "media/gallery/previews/chibis/char-yulia-chibi-exasperated-sigh-img-000071.webp",
+        "media/gallery/images/chibis/FULL-char-yulia-chibi-exasperated-sigh-img-000071.png",
+        "media/gallery/previews/chibis/PREV-char-yulia-chibi-exasperated-sigh-img-000071.webp"
       ],
       "active": true
     },
     {
       "id": "IMG-000072",
-      "source": "media/gallery/images/chibis/FULL-char-yulia-chibi-white-sweater-r2-img-000072.png",
+      "source": "media/gallery/images/chibis/FULL-char-yulia-chibi-white-sweater-r3-img-000072.png",
       "derivatives": [
-        "media/gallery/previews/chibis/PREV-char-yulia-chibi-white-sweater-r2-img-000072.webp"
+        "media/gallery/previews/chibis/PREV-char-yulia-chibi-white-sweater-r3-img-000072.webp"
       ],
       "previousPaths": [
         "media/gallery/images/chibis/char-yulia-chibi-white-sweater-r2.png",
         "media/gallery/previews/chibis/char-yulia-chibi-white-sweater-r2.webp",
         "media/gallery/images/chibis/char-yulia-chibi-white-sweater-r2-img-000072.png",
-        "media/gallery/previews/chibis/char-yulia-chibi-white-sweater-r2-img-000072.webp"
+        "media/gallery/previews/chibis/char-yulia-chibi-white-sweater-r2-img-000072.webp",
+        "media/gallery/images/chibis/FULL-char-yulia-chibi-white-sweater-r2-img-000072.png",
+        "media/gallery/previews/chibis/PREV-char-yulia-chibi-white-sweater-r2-img-000072.webp"
       ],
       "active": true
     },

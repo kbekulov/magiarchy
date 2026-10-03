@@ -113,7 +113,7 @@ export async function testArtworkVersions(page, origin, engine) {
     }
     await page.goto(`${origin}/gallery.html?image=char-kyrien-arc-1-chibi-beige-jacket`);
     await page.locator('#gallery-detail-image').evaluate(img => img.decode());
-    assert.equal(await page.locator('#gallery-detail-source').getAttribute('href'), 'media/gallery/images/chibis/FULL-char-kyrien-arc-1-chibi-beige-jacket-r2-img-000061.png');
+    assert.equal(await page.locator('#gallery-detail-source').getAttribute('href'), publishedImagePath('media/gallery/images/chibis/char-kyrien-arc-1-chibi-beige-jacket-r2.png'));
     await page.goto(`${origin}/gallery.html?image=char-lynleit-2`);
     await page.waitForLoadState('networkidle');
     assert.ok((await page.locator('#gallery-detail-title').innerText()).includes('Arc 0'));

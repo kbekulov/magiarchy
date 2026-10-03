@@ -1,0 +1,216 @@
+{
+  "processedAt": "2026-10-03T08:01:41Z",
+  "approval": "Author requested the approved first-Gallery rendering for all remaining characters and publication by push.",
+  "preservation": "Previous originals and previews retained byte-for-byte; permanent IDs and reader URLs preserved. Costume-study status retained.",
+  "images": [
+    {
+      "id": "IMG-000045",
+      "slug": "drake-chibi-cane-disapproval",
+      "previousOriginal": "backlog/archive/chibi-rest-refresh__2026-10-03T08-01-41Z/FULL-char-drake-chibi-cane-disapproval-img-000045.png",
+      "previousPreview": "backlog/archive/chibi-rest-refresh__2026-10-03T08-01-41Z/PREV-char-drake-chibi-cane-disapproval-img-000045.webp",
+      "previousSha256": "cb5bed128efff96f678210a1f686fea9b9b074a80b8e7d0213867e667a0edd11",
+      "previousPreviewSha256": "1872adfca086a2a605a7db1a4111da4d4d0bff23b50169ec5d0560dd8bbb61b0",
+      "currentOriginal": "media/gallery/images/chibis/FULL-char-drake-chibi-cane-disapproval-r2-img-000045.png",
+      "currentPreview": "media/gallery/previews/chibis/PREV-char-drake-chibi-cane-disapproval-r2-img-000045.webp",
+      "currentSha256": "b6ee12551039c92e23d53792eb76ac93aed7e7ca2e3eadd43a298aa6303680dc"
+    },
+    {
+      "id": "IMG-000047",
+      "slug": "father-mikhail-chibi-folded-arms",
+      "previousOriginal": "backlog/archive/chibi-rest-refresh__2026-10-03T08-01-41Z/FULL-char-father-mikhail-chibi-folded-arms-img-000047.png",
+      "previousPreview": "backlog/archive/chibi-rest-refresh__2026-10-03T08-01-41Z/PREV-char-father-mikhail-chibi-folded-arms-img-000047.webp",
+      "previousSha256": "befdc1732f409ef851926aca35972c1b78adda2073be17b911e608d634d67513",
+      "previousPreviewSha256": "b572ef8d722d4a580ef8acfafd5af3fb093fdc4275eb91488e0435cdb3e48e09",
+      "currentOriginal": "media/gallery/images/chibis/FULL-char-father-mikhail-chibi-folded-arms-r2-img-000047.png",
+      "currentPreview": "media/gallery/previews/chibis/PREV-char-father-mikhail-chibi-folded-arms-r2-img-000047.webp",
+      "currentSha256": "2e40d0c92f6af886a7636df7a01099aaa877a493759aef65ed1c6f2a97e3b409"
+    },
+    {
+      "id": "IMG-000048",
+      "slug": "father-mikhail-chibi-reading",
+      "previousOriginal": "backlog/archive/chibi-rest-refresh__2026-10-03T08-01-41Z/FULL-char-father-mikhail-chibi-reading-img-000048.png",
+      "previousPreview": "backlog/archive/chibi-rest-refresh__2026-10-03T08-01-41Z/PREV-char-father-mikhail-chibi-reading-img-000048.webp",
+      "previousSha256": "26f30eb9aa757a83b6b27d2719d2259e254a08e3f2b185ab67e09bfcd3938b79",
+      "previousPreviewSha256": "330c463aee4e131497a8c513ca28ca03eb8c61bf78d252d1a6cfa1230c57eae7",
+      "currentOriginal": "media/gallery/images/chibis/FULL-char-father-mikhail-chibi-reading-r2-img-000048.png",
+      "currentPreview": "media/gallery/previews/chibis/PREV-char-father-mikhail-chibi-reading-r2-img-000048.webp",
+      "currentSha256": "8d497abad8ec061b0d14d3be3905e52d64aafe9c877bf891fa2545fc33d091b7"
+    },
+    {
+      "id": "IMG-000049",
+      "slug": "felix-chibi-grey-jacket",
+      "previousOriginal": "backlog/archive/chibi-rest-refresh__2026-10-03T08-01-41Z/FULL-char-felix-chibi-grey-jacket-img-000049.png",
+      "previousPreview": "backlog/archive/chibi-rest-refresh__2026-10-03T08-01-41Z/PREV-char-felix-chibi-grey-jacket-img-000049.webp",
+      "previousSha256": "639758329d60828845a01aa86287a41bb3957e019f4909075c482a153a57bc1b",
+      "previousPreviewSha256": "64c8f484d48dcf5dcd9993d06d5284448ea65e722f9950bb7f4f02334609eccd",
+      "currentOriginal": "media/gallery/images/chibis/FULL-char-felix-chibi-grey-jacket-r2-img-000049.png",
+      "currentPreview": "media/gallery/previews/chibis/PREV-char-felix-chibi-grey-jacket-r2-img-000049.webp",
+      "currentSha256": "176c6df9668708a4716955a069d2a8131c8dc0ad99d459ee7ae7908703eefc03"
+    },
+    {
+      "id": "IMG-000051",
+      "slug": "felix-chibi-laughing-bow",
+      "previousOriginal": "backlog/archive/chibi-rest-refresh__2026-10-03T08-01-41Z/FULL-char-felix-chibi-laughing-bow-img-000051.png",
+      "previousPreview": "backlog/archive/chibi-rest-refresh__2026-10-03T08-01-41Z/PREV-char-felix-chibi-laughing-bow-img-000051.webp",
+      "previousSha256": "f92b2bbf8a528e4c2998e4f4668c793071a22f2470f90daafe280441503bb923",
+      "previousPreviewSha256": "a258b1db2993387b27409dc4b3dc0e8c68986367e59310ba66359b96f214a7ce",
+      "currentOriginal": "media/gallery/images/chibis/FULL-char-felix-chibi-laughing-bow-r2-img-000051.png",
+      "currentPreview": "media/gallery/previews/chibis/PREV-char-felix-chibi-laughing-bow-r2-img-000051.webp",
+      "currentSha256": "5d28368280d695ffd0ae2709cb4f1deffea8108c5c2abadc034086917a560a17"
+    },
+    {
+      "id": "IMG-000052",
+      "slug": "felix-chibi-suspenders",
+      "previousOriginal": "backlog/archive/chibi-rest-refresh__2026-10-03T08-01-41Z/FULL-char-felix-chibi-suspenders-r2-img-000052.png",
+      "previousPreview": "backlog/archive/chibi-rest-refresh__2026-10-03T08-01-41Z/PREV-char-felix-chibi-suspenders-r2-img-000052.webp",
+      "previousSha256": "cc4981236117a439940a89947d6e561afc2a714f87dd9d177b0be46501fe5fa4",
+      "previousPreviewSha256": "a42a35c666623fc9d41f2dc8484d35e8750c95875dbf8b17caba59193e58e600",
+      "currentOriginal": "media/gallery/images/chibis/FULL-char-felix-chibi-suspenders-r3-img-000052.png",
+      "currentPreview": "media/gallery/previews/chibis/PREV-char-felix-chibi-suspenders-r3-img-000052.webp",
+      "currentSha256": "18b178ed9fe0e46ea76a9d1a6f615aff67794ff229702ee42919e62b42b4e77d"
+    },
+    {
+      "id": "IMG-000053",
+      "slug": "fionn-chibi-adjusting-glove",
+      "previousOriginal": "backlog/archive/chibi-rest-refresh__2026-10-03T08-01-41Z/FULL-char-fionn-chibi-adjusting-glove-img-000053.png",
+      "previousPreview": "backlog/archive/chibi-rest-refresh__2026-10-03T08-01-41Z/PREV-char-fionn-chibi-adjusting-glove-img-000053.webp",
+      "previousSha256": "e66e7847ee41d243a967a944039e711b00aa817b7ce2f97f480816892cdb8513",
+      "previousPreviewSha256": "e72033b0d65990f387295980e111ee4f0d57a41b73e9f4a71cbe4e8f1eaaf47e",
+      "currentOriginal": "media/gallery/images/chibis/FULL-char-fionn-chibi-adjusting-glove-r2-img-000053.png",
+      "currentPreview": "media/gallery/previews/chibis/PREV-char-fionn-chibi-adjusting-glove-r2-img-000053.webp",
+      "currentSha256": "eb57082a7f442dc1e3014da1eb29b49745edb37123fb96a22f6dca940ab92fa8"
+    },
+    {
+      "id": "IMG-000054",
+      "slug": "helena-chibi-over-shoulder",
+      "previousOriginal": "backlog/archive/chibi-rest-refresh__2026-10-03T08-01-41Z/FULL-char-helena-chibi-over-shoulder-img-000054.png",
+      "previousPreview": "backlog/archive/chibi-rest-refresh__2026-10-03T08-01-41Z/PREV-char-helena-chibi-over-shoulder-img-000054.webp",
+      "previousSha256": "93f2747b26d8561bd672b45445842bb8f039e87db0a29d5f449e74916cc0273e",
+      "previousPreviewSha256": "38ea05bc972f795bcab30d08bc857db2c877ea2a0d6a075564716c88314ed107",
+      "currentOriginal": "media/gallery/images/chibis/FULL-char-helena-chibi-over-shoulder-r2-img-000054.png",
+      "currentPreview": "media/gallery/previews/chibis/PREV-char-helena-chibi-over-shoulder-r2-img-000054.webp",
+      "currentSha256": "99dd9bfa6f08d71a45657ec9e2800f69fe02d28f1f26f9247110e44eec40c31c"
+    },
+    {
+      "id": "IMG-000055",
+      "slug": "heyk-chibi-seated-watch",
+      "previousOriginal": "backlog/archive/chibi-rest-refresh__2026-10-03T08-01-41Z/FULL-char-heyk-chibi-seated-watch-img-000055.png",
+      "previousPreview": "backlog/archive/chibi-rest-refresh__2026-10-03T08-01-41Z/PREV-char-heyk-chibi-seated-watch-img-000055.webp",
+      "previousSha256": "237ae3f6fcfb8bad9c17cf46de52c79bc8f12257d7ee1616668cb7100c492d95",
+      "previousPreviewSha256": "c9a1143d8980ea2cbece5a228a873888c8e140da6408160c63c6dc0eca888ba4",
+      "currentOriginal": "media/gallery/images/chibis/FULL-char-heyk-chibi-seated-watch-r2-img-000055.png",
+      "currentPreview": "media/gallery/previews/chibis/PREV-char-heyk-chibi-seated-watch-r2-img-000055.webp",
+      "currentSha256": "55f644299a75ad7d21ab0a2fe576786fe9340b496764e8ed432bc78afe800d13"
+    },
+    {
+      "id": "IMG-000061",
+      "slug": "kyrien-arc-1-chibi-beige-jacket",
+      "previousOriginal": "backlog/archive/chibi-rest-refresh__2026-10-03T08-01-41Z/FULL-char-kyrien-arc-1-chibi-beige-jacket-r2-img-000061.png",
+      "previousPreview": "backlog/archive/chibi-rest-refresh__2026-10-03T08-01-41Z/PREV-char-kyrien-arc-1-chibi-beige-jacket-r2-img-000061.webp",
+      "previousSha256": "ebef7c00ecb3045ba708b6002fec57ea38e15646729d978252b493a8b6490f29",
+      "previousPreviewSha256": "c3582edada6488fa232e01746e0c019fe7cb46010b666c5c86ebc271e29a0c1e",
+      "currentOriginal": "media/gallery/images/chibis/FULL-char-kyrien-arc-1-chibi-beige-jacket-r3-img-000061.png",
+      "currentPreview": "media/gallery/previews/chibis/PREV-char-kyrien-arc-1-chibi-beige-jacket-r3-img-000061.webp",
+      "currentSha256": "0bac6bc437bcc9b126d97add6c34b5aa3d36a4778b4c2a0bf6c507adc0ab4d19"
+    },
+    {
+      "id": "IMG-000063",
+      "slug": "kyrien-chibi-black-coat-study",
+      "previousOriginal": "backlog/archive/chibi-rest-refresh__2026-10-03T08-01-41Z/FULL-char-kyrien-chibi-black-coat-study-img-000063.png",
+      "previousPreview": "backlog/archive/chibi-rest-refresh__2026-10-03T08-01-41Z/PREV-char-kyrien-chibi-black-coat-study-img-000063.webp",
+      "previousSha256": "1c2aadc34f84ff75b38b23ed6a0037fcd2272c585bcf525da03371cbf124fbc6",
+      "previousPreviewSha256": "910e2e7bb89eb63a4a29998e9d9286c9de01d5f864bc513ef56e45436e363309",
+      "currentOriginal": "media/gallery/images/chibis/FULL-char-kyrien-chibi-black-coat-study-r2-img-000063.png",
+      "currentPreview": "media/gallery/previews/chibis/PREV-char-kyrien-chibi-black-coat-study-r2-img-000063.webp",
+      "currentSha256": "b8e859b87ce226a30bc1c1dc56e0c32c2ff2355fe32c2a845cf61cf824627a83"
+    },
+    {
+      "id": "IMG-000064",
+      "slug": "kyrien-chibi-blue-shirt-study",
+      "previousOriginal": "backlog/archive/chibi-rest-refresh__2026-10-03T08-01-41Z/FULL-char-kyrien-chibi-blue-shirt-study-img-000064.png",
+      "previousPreview": "backlog/archive/chibi-rest-refresh__2026-10-03T08-01-41Z/PREV-char-kyrien-chibi-blue-shirt-study-img-000064.webp",
+      "previousSha256": "34ff4778ff21b0b91c745f51380d6fb30e2809f1d5978bb94e5cda12be53f0a7",
+      "previousPreviewSha256": "993d0f6eef228ac1e53169fc0d00c01ff1dd892c64e8379166a643e04ed2b691",
+      "currentOriginal": "media/gallery/images/chibis/FULL-char-kyrien-chibi-blue-shirt-study-r2-img-000064.png",
+      "currentPreview": "media/gallery/previews/chibis/PREV-char-kyrien-chibi-blue-shirt-study-r2-img-000064.webp",
+      "currentSha256": "c205eb72b5363ad061630c0a0b97b355ca14dd3a670248de1d64739cb559d563"
+    },
+    {
+      "id": "IMG-000065",
+      "slug": "myka-chibi-off-balance",
+      "previousOriginal": "backlog/archive/chibi-rest-refresh__2026-10-03T08-01-41Z/FULL-char-myka-chibi-off-balance-img-000065.png",
+      "previousPreview": "backlog/archive/chibi-rest-refresh__2026-10-03T08-01-41Z/PREV-char-myka-chibi-off-balance-img-000065.webp",
+      "previousSha256": "e7918dd1cac8d2dc54f8aab91632d8c6a3aaead1414dc1b522bb15f7dc2f0af3",
+      "previousPreviewSha256": "70a799b2dc8c614bc12c48284e86be0100148c63fbaae2716c93c4fda940ba14",
+      "currentOriginal": "media/gallery/images/chibis/FULL-char-myka-chibi-off-balance-r2-img-000065.png",
+      "currentPreview": "media/gallery/previews/chibis/PREV-char-myka-chibi-off-balance-r2-img-000065.webp",
+      "currentSha256": "4d17afd3eaf58b7c503310d9b2b242efefe7c73223f391ba27ecc6c912a024f4"
+    },
+    {
+      "id": "IMG-000066",
+      "slug": "natalia-chibi-seated-reader",
+      "previousOriginal": "backlog/archive/chibi-rest-refresh__2026-10-03T08-01-41Z/FULL-char-natalia-chibi-seated-reader-img-000066.png",
+      "previousPreview": "backlog/archive/chibi-rest-refresh__2026-10-03T08-01-41Z/PREV-char-natalia-chibi-seated-reader-img-000066.webp",
+      "previousSha256": "b08da8525e1ed27b6fb053515da562608adeb363bdacfa2a9e4335f7503bac3e",
+      "previousPreviewSha256": "c56d2ff4e683172aed37b14fb00ec255e821da08ab25cb17b5714e85f1d7293f",
+      "currentOriginal": "media/gallery/images/chibis/FULL-char-natalia-chibi-seated-reader-r2-img-000066.png",
+      "currentPreview": "media/gallery/previews/chibis/PREV-char-natalia-chibi-seated-reader-r2-img-000066.webp",
+      "currentSha256": "b00192202d6e82aada1585aa5cb5ab0cf88a1b8e0c08818a87aa0bb483cb5965"
+    },
+    {
+      "id": "IMG-000067",
+      "slug": "reiner-chibi-folded-arms",
+      "previousOriginal": "backlog/archive/chibi-rest-refresh__2026-10-03T08-01-41Z/FULL-char-reiner-chibi-folded-arms-img-000067.png",
+      "previousPreview": "backlog/archive/chibi-rest-refresh__2026-10-03T08-01-41Z/PREV-char-reiner-chibi-folded-arms-img-000067.webp",
+      "previousSha256": "4cd1e4fc8f3ecc0c73e3cdb2789e4a84d7559fff1795e81942bd23f00a174a52",
+      "previousPreviewSha256": "5508156ec0661ee70c3cc2cea21c2b3a9e68f992430efd6ae93380f51dcdb6f6",
+      "currentOriginal": "media/gallery/images/chibis/FULL-char-reiner-chibi-folded-arms-r2-img-000067.png",
+      "currentPreview": "media/gallery/previews/chibis/PREV-char-reiner-chibi-folded-arms-r2-img-000067.webp",
+      "currentSha256": "321e44f4f9d704cbad0944c416952d524d0aefaf2d25fd888114f11d98f15c06"
+    },
+    {
+      "id": "IMG-000068",
+      "slug": "sherie-chibi-ankle-boots",
+      "previousOriginal": "backlog/archive/chibi-rest-refresh__2026-10-03T08-01-41Z/FULL-char-sherie-chibi-ankle-boots-r2-img-000068.png",
+      "previousPreview": "backlog/archive/chibi-rest-refresh__2026-10-03T08-01-41Z/PREV-char-sherie-chibi-ankle-boots-r2-img-000068.webp",
+      "previousSha256": "87ec6330764a9a52fd80579def505a6e1d6ff40aada11e86298dae3c11ddd3fa",
+      "previousPreviewSha256": "ba6b401191186886d233b3d703a38ba6912f5f4a3248464f20ad0cf98a7d6d4e",
+      "currentOriginal": "media/gallery/images/chibis/FULL-char-sherie-chibi-ankle-boots-r3-img-000068.png",
+      "currentPreview": "media/gallery/previews/chibis/PREV-char-sherie-chibi-ankle-boots-r3-img-000068.webp",
+      "currentSha256": "6df7775b8d296fc4346e2bbcb66c6eb72ea23e3b40dd451ad16f717ad0da23d9"
+    },
+    {
+      "id": "IMG-000070",
+      "slug": "tien-chibi-quiet-perch",
+      "previousOriginal": "backlog/archive/chibi-rest-refresh__2026-10-03T08-01-41Z/FULL-char-tien-chibi-quiet-perch-img-000070.png",
+      "previousPreview": "backlog/archive/chibi-rest-refresh__2026-10-03T08-01-41Z/PREV-char-tien-chibi-quiet-perch-img-000070.webp",
+      "previousSha256": "6b3307a5e7cd43aab7558aeaa96dee6df5f2171ccb1f9f09ced1205d9977afd2",
+      "previousPreviewSha256": "24cf0d940db2ede4b2bf00d4a5e2acf985ccc255c887649612fcea0afb5642c9",
+      "currentOriginal": "media/gallery/images/chibis/FULL-char-tien-chibi-quiet-perch-r2-img-000070.png",
+      "currentPreview": "media/gallery/previews/chibis/PREV-char-tien-chibi-quiet-perch-r2-img-000070.webp",
+      "currentSha256": "c2c3702e668fb3fe9fd5a8620b2f6d43cd7748dd8031432e61eed0f62d0379c3"
+    },
+    {
+      "id": "IMG-000071",
+      "slug": "yulia-chibi-exasperated-sigh",
+      "previousOriginal": "backlog/archive/chibi-rest-refresh__2026-10-03T08-01-41Z/FULL-char-yulia-chibi-exasperated-sigh-img-000071.png",
+      "previousPreview": "backlog/archive/chibi-rest-refresh__2026-10-03T08-01-41Z/PREV-char-yulia-chibi-exasperated-sigh-img-000071.webp",
+      "previousSha256": "befd6dfafbe397c41a76d7953bff24f35897f258b7f5074bdf74896e0de05be2",
+      "previousPreviewSha256": "060211fb27c0c167fcde49baafdc2b8882c44adb39d2f456e52246d7d9b2a87d",
+      "currentOriginal": "media/gallery/images/chibis/FULL-char-yulia-chibi-exasperated-sigh-r2-img-000071.png",
+      "currentPreview": "media/gallery/previews/chibis/PREV-char-yulia-chibi-exasperated-sigh-r2-img-000071.webp",
+      "currentSha256": "f99bbb72a204e71bd4d59760d16550336f21f38f72df65973464bb22e3d51de8"
+    },
+    {
+      "id": "IMG-000072",
+      "slug": "yulia-chibi-white-sweater",
+      "previousOriginal": "backlog/archive/chibi-rest-refresh__2026-10-03T08-01-41Z/FULL-char-yulia-chibi-white-sweater-r2-img-000072.png",
+      "previousPreview": "backlog/archive/chibi-rest-refresh__2026-10-03T08-01-41Z/PREV-char-yulia-chibi-white-sweater-r2-img-000072.webp",
+      "previousSha256": "78de96c57840657e7f37797b7971601e3abbddbfeaed265d6daca8482232d597",
+      "previousPreviewSha256": "7c1720b05d8caddcb3fedb6a671c928096d8ead884ad6ffdcf2239f3e5eebfd0",
+      "currentOriginal": "media/gallery/images/chibis/FULL-char-yulia-chibi-white-sweater-r3-img-000072.png",
+      "currentPreview": "media/gallery/previews/chibis/PREV-char-yulia-chibi-white-sweater-r3-img-000072.webp",
+      "currentSha256": "ec88760836a012fad293938569f2a8d260d63ace0c2195e4dd4d36a852b35519"
+    }
+  ]
+}
