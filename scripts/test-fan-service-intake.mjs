@@ -40,7 +40,7 @@ export async function testFanServiceIntake(page, origin, engine) {
     await page.screenshot({ path: 'test-results/' + engine + '-fan-service-intake-' + width + '.png' });
     await page.goto(origin + '/gallery.html?panels=anima-meets-female-cast#panel-10');
     await page.waitForLoadState('networkidle');
-    assert.equal(await page.locator('.scene-panel').count(), 10);
+    assert.equal(await page.locator('.scene-panel').count(), 13);
     assert.match(await page.locator('#panel-medium').textContent(), /Non-canon/);
     assert.ok(await page.locator('img[src*="panel-10"]').count() > 0);
   }
