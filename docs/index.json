@@ -276,11 +276,11 @@
     "topic": "Visual Production Standard",
     "file": "character-image-production.md",
     "updated": "2026-10-03",
-    "description": "Mandatory profile proportion comparisons in character image briefs and visual review, alongside approved identity, anatomy and costume references.",
+    "description": "Hard elbow-length maximum for female long hair, with mandatory profile proportion comparisons and approved identity, anatomy and costume references.",
     "speakers": [
       "Author's Desk"
     ],
-    "defaultVersion": "v23",
+    "defaultVersion": "v24",
     "versions": [
       {
         "id": "v1",
@@ -438,10 +438,17 @@
       },
       {
         "id": "v23",
-        "label": "v23 · Current",
-        "file": "character-image-production.md",
+        "label": "v23 · Archived",
+        "file": "character-image-production-v23.md",
         "updated": "2026-10-03",
         "description": "Require the profile Compare proportions table and Height and build description before image briefs and again during visual review."
+      },
+      {
+        "id": "v24",
+        "label": "v24 · Current",
+        "file": "character-image-production.md",
+        "updated": "2026-10-03",
+        "description": "Female long hair ends at or above elbow level, never the waist; enforce the limit in briefs and visual review without changing identity or body proportions."
       }
     ]
   },

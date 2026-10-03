@@ -103,9 +103,16 @@ export async function testAppearanceComparisons(page, origin, engine) {
   assert.equal(await page.locator('.appearance-comparison-table').count(), 0);
   await visit('docs.html?doc=character-image-production#comparative-female-builds');
   assert.equal(await page.getByRole('heading', { name: 'Comparative female builds', exact: true }).count(), 1);
-  assert.equal(await page.getByRole('combobox', { name: 'Choose version' }).inputValue(), 'v23');
+  assert.equal(await page.getByRole('combobox', { name: 'Choose version' }).inputValue(), 'v24');
   assert.equal(await page.getByRole('heading', { name: 'Comparative male builds', exact: true }).count(), 1);
   assert.equal(await page.getByRole('heading', { name: 'Mandatory profile proportion comparisons', exact: true }).count(), 1);
+  assert.equal(await page.getByRole('heading', { name: 'Mandatory female hair-length limit', exact: true }).count(), 1);
+  assert.match(await page.locator('main').textContent(), /Female long hair must end at or above elbow level/);
+  assert.equal(await page.locator('#document-source-link').getAttribute('href'), 'docs/character-image-production.md');
+  await visit('docs.html?doc=character-image-production&version=v23');
+  assert.equal(await page.getByRole('heading', { name: 'Mandatory profile proportion comparisons', exact: true }).count(), 1);
+  assert.equal(await page.getByRole('heading', { name: 'Mandatory female hair-length limit', exact: true }).count(), 0);
+  assert.equal(await page.locator('#document-source-link').getAttribute('href'), 'docs/character-image-production-v23.md');
   await visit('docs.html?doc=character-image-production&version=v22');
   assert.equal(await page.getByRole('heading', { name: 'Mandatory profile proportion comparisons', exact: true }).count(), 0);
   assert.equal(await page.locator('#document-source-link').getAttribute('href'), 'docs/character-image-production-v22.md');
@@ -117,6 +124,8 @@ export async function testAppearanceComparisons(page, origin, engine) {
   await visit('index.html');
   const updatesToggle = page.locator('[data-news-toggle]').first();
   if (await updatesToggle.getAttribute('aria-expanded') === 'false') await updatesToggle.click();
+  const hairRuleLink = page.locator('#update-female-hair-length').getByRole('link', { name: 'Read the design rule' });
+  assert.equal(await hairRuleLink.getAttribute('href'), 'docs.html?doc=character-image-production#mandatory-female-hair-length-limit');
   await page.locator('#update-character-build-comparisons').getByRole('link', { name: 'Compare appearances' }).click();
   await page.waitForLoadState('networkidle');
   assert.ok(page.url().endsWith('character=lynleit#appearance-title'));

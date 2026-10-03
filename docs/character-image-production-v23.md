@@ -10,7 +10,7 @@ Use the actual reference images as inputs wherever the generation tool supports 
 
 Before crafting any new image of a specific character, inspect the public `media/gallery/resources/face-references/` directory and the matching character subfolder. Despite the directory's name, each selected reference supplies the whole face-and-hair package. This is a high-priority requirement for portraits, full-body art, panels, sketches, chibis and costume studies, including group images. Recheck the directory for each request so newly supplied or renamed references are not missed.
 
-The author-selected references control both facial identity and hairstyle and take priority over conflicting incidental depictions in older artwork. Inspect all applicable views and give the generation tool the relevant actual images. Preserve the recognizable facial structure, eye shape and spacing, brows, nose, mouth and jaw together with the selected hair colour, part, fringe, gathering and silhouette. Preserve hair length within the mandatory female elbow-length limit below; that standing author direction overrides excessive length in older references. Adapt perspective, expression, light and natural movement without otherwise redesigning the package. Chibi simplification must retain identifying features rather than replace them with a generic face and hairstyle.
+The author-selected references control both facial identity and hairstyle and take priority over conflicting incidental depictions in older artwork. Inspect all applicable views and give the generation tool the relevant actual images. Preserve the recognizable facial structure, eye shape and spacing, brows, nose, mouth and jaw together with the selected hair colour, part, fringe, gathering, length and silhouette. Adapt perspective, expression, light and natural movement without redesigning the package. Chibi simplification must retain identifying features rather than replace them with a generic face and hairstyle.
 
 Select the reference treatment appropriate to the requested character, Arc and variant, such as normal or fancy. Apply its face and hair together by default. Do not separately choose a hairstyle, combine the face of one treatment with unrelated hair, or transfer an Arc 2 treatment into Arc 1 without the author's direction. If the requested treatment is unclear and materially changes the image, ask which reference package to use. An explicit request to change hair overrides the default only for that requested edit.
 
@@ -42,19 +42,9 @@ For every character, construct hair as a cohesive mass rather than many separate
 
 Do not generate a spray of fine strands, stringy ribbons, repeated wisps, dense flyaways or dozens of individually outlined curls. Wind and action can lift or divide a few substantial sections while the overall hair remains a unified shape. The supplied examples show long hair flowing in broad connected sections and chibi hair reduced to a clear silhouette with a small number of tapered ends. The rule does not require a featureless solid block.
 
-Preserve the selected character package's colour, part, fringe, gathering and recognizable silhouette, with length subject to the female elbow-length limit below. Simplify the construction without borrowing another character's hairstyle or changing the original head and body proportions. This rendering direction controls over incidental over-stranded detail in older art; it does not authorize replacing existing pictures without a request.
+Preserve the selected character package's colour, part, fringe, gathering, length and recognizable silhouette. Simplify the construction without borrowing another character's hairstyle or changing the original head and body proportions. This rendering direction controls over incidental over-stranded detail in older art; it does not authorize replacing existing pictures without a request.
 
 Inspect the author's private examples in `workshop/_art_references/hair-shape/` alongside the selected character package. They illustrate hair construction only, not a shared face, outfit or character identity. Keep them unpublished and outside public image IDs. Include cohesive hair shapes in generation briefs and reject fragmented, excessively strand-by-strand results during visual review.
-
-## Mandatory female hair-length limit
-
-Female long hair must end at or above elbow level. Never generate waist-length hair or hair extending farther down the body. This is a hard design requirement for future portraits, full artwork, panels, sketches, chibis, reference sheets and costume studies, including group images and requested hair edits. Keep shorter hairstyles short; elbow length is a maximum, not a target for every character.
-
-Judge length against the character's own proportions in a neutral upright stance with arms relaxed at the sides. Account for bending, raised arms, camera perspective, wind and movement without treating them as permission for extra length. Do not use a crop, a concealed tip or a raised elbow to disguise an overlong design. For portraits or occluded hair, specify the underlying compliant length in the brief without inventing visible evidence that the crop cannot supply. Tied hair and moving locks must belong to a hairstyle that meets the same length limit when hanging naturally.
-
-This standing author direction takes priority over excessive length in an older face-and-hair package. Retain its facial identity, colour, part, fringe and gathering, shortening only the overlong extent while keeping the characteristic broad hair shapes. Never lengthen arms, shift the elbows, resize the head or reshape the body to satisfy the rule. Existing published art and reference files are not automatically replaced; an unrelated localized edit still preserves unrequested hair details.
-
-State the maximum and intended endpoint in every applicable generation brief. During visual review, check the longest hair ends as well as the overall silhouette, including each female character in a group. Reject or revise below-elbow or waist-length hair before acceptance, even if it came from an older reference. Record when the crop or occlusion prevents direct endpoint verification rather than claiming a visual pass.
 
 ## Mandatory proportion lock for existing images
 
@@ -185,7 +175,6 @@ Use this compact brief when designing a new female character or revising an exis
 - **Cast proportions:** the applicable profile Compare proportions table, its accompanying Height and build description, and the relative differences the image must preserve. Note when the character has no registered comparison.
 - **Individual body:** established height, build, musculature, body composition, and proportions, with their source. Include age, lifestyle, training, or physical history only where these establish a visible design requirement; do not derive a measurement from a personality type or profession.
 - **Separate design:** face, hair, costume, accessories, palette, and pose language specific to the character. Keep the contemporary setting in view.
-- **Hair length:** preserve shorter styles; for long hair, specify an endpoint at or above elbow level, never the waist. Identify any older reference length that must be shortened, retaining identity and body proportions. Account for the pose and whether the ends will be visible.
 - **Unspecified features:** identify genuine gaps instead of inventing weight, measurements, age, or medical history. Resolve consequential ambiguity with the author before generation.
 
 For example, Lynleit's confirmed 169 cm slender build and tailored blue-and-black wardrobe remain hers. The reference does not replace them with Anima's proportions or red drapery. Consult [Hidden World Foundation](../docs.html?doc=world-foundation) when changing material or historical styling.
@@ -229,8 +218,6 @@ For an explicitly requested hand correction, preserve approved arm lengths and u
 ### Review checklist
 
 Compare the result with the references before registration or publication. Check identity, proportions, silhouette, costume details, pose, and front/back consistency. Inspect hands, feet, accessories, and occluded areas for discrepancies. Treat an unexplained generated difference as something to review, not as new canon.
-
-Check female hair length separately from cohesive hair construction. Long hair must stop at or above the character's neutral elbow level, never at the waist or below. Inspect the longest ends, account for pose and perspective, and reject excessive length without changing anatomy. Preserve shorter styles and record endpoint visibility limits honestly.
 
 Recheck the applicable profile Compare proportions table and Height and build description against the result, including relative scale in group images and individual silhouette in solo images. Account for pose, footwear and perspective without exaggerating the recorded differences. Check the recorded individual differences as deliberately as the shared anatomy. Reject accidental bodily sameness, imported mascot styling, and ancient-fantasy drift in otherwise contemporary designs. Do not turn a model's invented difference into a new character fact.
 
