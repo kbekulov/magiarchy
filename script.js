@@ -365,6 +365,41 @@ const galleryResultCount = document.querySelector('#gallery-result-count');
 const galleryEmptyState = document.querySelector('#gallery-empty-state');
 const galleryHeading = document.querySelector('#gallery-heading');
 const galleryToolbar = document.querySelector('#gallery-toolbar');
+const galleryFilterFields = document.querySelector('#gallery-filter-fields');
+const galleryFilterToggle = document.querySelector('#gallery-filter-toggle');
+const galleryFilterSummary = document.querySelector('#gallery-filter-summary');
+const galleryFilterCount = document.querySelector('#gallery-filter-count');
+const galleryFilterReset = document.querySelector('#gallery-filter-reset');
+const galleryFilterDone = document.querySelector('#gallery-filter-done');
+const gallerySelects = [galleryCharacterFilter, galleryLocationFilter, gallerySeasonFilter].filter(Boolean);
+const galleryToggles = [galleryChibiFilter, galleryExcludeChibiFilter, galleryPencilFilter, galleryColoredFilter, galleryIncludeFanServiceFilter, galleryFanServiceFilter].filter(Boolean);
+if (galleryFilterFields && galleryFilterToggle) {
+  const compact = window.matchMedia('(max-width: 820px)');
+  const expanded = { compact: false, wide: true };
+  const setExpanded = (open, recoverFocus = false) => {
+    if (!open && (recoverFocus || galleryFilterFields.contains(document.activeElement))) {
+      galleryFilterToggle.focus({ preventScroll: true });
+    }
+    expanded[compact.matches ? 'compact' : 'wide'] = open;
+    galleryFilterToggle.setAttribute('aria-expanded', String(open));
+    galleryFilterFields.hidden = !open;
+  };
+  document.querySelector('#gallery-filter-header').hidden = false;
+  galleryFilterDone.hidden = false;
+  setExpanded(expanded[compact.matches ? 'compact' : 'wide']);
+  galleryFilterToggle.addEventListener('click', () => setExpanded(galleryFilterFields.hidden));
+  galleryFilterDone.addEventListener('click', () => {
+    setExpanded(false, true);
+    galleryToolbar.scrollIntoView({ block: 'start', behavior: 'instant' });
+  });
+  galleryToolbar.addEventListener('keydown', event => {
+    if (event.key === 'Escape' && !galleryFilterFields.hidden) {
+      event.preventDefault();
+      setExpanded(false, true);
+    }
+  });
+  compact.addEventListener('change', () => setExpanded(expanded[compact.matches ? 'compact' : 'wide']));
+}
 const galleryContent = document.querySelector('#gallery-content');
 const galleryReaderView = document.querySelector('#gallery-reader-view');
 const galleryDetailCrumb = document.querySelector('#gallery-detail-crumb');
@@ -559,6 +594,21 @@ function updateGalleryResults() {
   });
 
   if (galleryResultCount) galleryResultCount.textContent = String(visibleCount);
+  const activeFilters = [
+    ...gallerySelects.filter(select => select.value !== 'all').map(select => select.selectedOptions[0].textContent),
+    ...galleryToggles.filter(toggle => toggle.checked).map(toggle => toggle.closest('label').querySelector('strong').textContent)
+  ];
+  if (galleryFilterSummary) {
+    galleryFilterSummary.textContent = activeFilters.join(' · ') || 'No filters selected';
+    galleryFilterSummary.title = galleryFilterSummary.textContent;
+  }
+  if (galleryFilterCount) {
+    galleryFilterCount.textContent = String(activeFilters.length);
+    galleryFilterCount.hidden = activeFilters.length === 0;
+    galleryFilterToggle?.setAttribute('aria-label', activeFilters.length ? `Filters, ${activeFilters.length} active` : 'Filters');
+  }
+  if (galleryFilterReset) galleryFilterReset.disabled = activeFilters.length === 0;
+  if (galleryFilterDone) galleryFilterDone.textContent = visibleCount === 0 ? 'Show results (0)' : `Show ${visibleCount} artwork${visibleCount === 1 ? '' : 's'}`;
   if (galleryEmptyState) galleryEmptyState.hidden = visibleCount !== 0;
   const emptyDescription = galleryEmptyState?.querySelector('p');
   if (emptyDescription) emptyDescription.textContent = fanServiceOnly
@@ -567,6 +617,16 @@ function updateGalleryResults() {
 }
 
 galleryCharacterFilter?.addEventListener('change', updateGalleryResults);
+galleryFilterReset?.addEventListener('click', () => {
+  gallerySelects.forEach(select => { select.value = 'all'; });
+  galleryToggles.forEach(toggle => { toggle.checked = false; });
+  const url = new URL(window.location.href);
+  url.searchParams.delete('season');
+  url.searchParams.delete('fan-service');
+  window.history.replaceState(window.history.state, '', url);
+  updateGalleryResults();
+  galleryFilterToggle?.focus({ preventScroll: true });
+});
 updateGalleryResults();
 galleryLocationFilter?.addEventListener('change', updateGalleryResults);
 gallerySeasonFilter?.addEventListener('change', () => {

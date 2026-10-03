@@ -1,5 +1,6 @@
 import { publishedImagePath } from './test-image-paths.mjs';
 import assert from 'node:assert/strict';
+import { openGalleryFilters } from './test-gallery-controls.mjs';
 import fs from 'node:fs';
 import { assertChibiCard } from './test-chibi-outfits.mjs';
 
@@ -76,6 +77,7 @@ export async function testGalleryResources(page, origin, engine) {
   assert.equal(await page.locator('.gallery-card[data-character~="kyrien"][data-profile-portrait="false"]').count(), 4, 'Concept sheets, lineup sketches, and composite scene illustrations must stay outside the portrait pool');
   const lineupId = 'char-drake-sherie-kyrien-lynleit-felix-lineup-sketch-01';
   for (const slug of ['drake', 'sherie', 'kyrien', 'lynleit', 'felix']) {
+    await openGalleryFilters(page);
     await page.locator('#gallery-character-filter').selectOption(slug);
     assert.ok(await page.locator(`.gallery-card[data-image="${lineupId}"]`).isVisible(), `${slug}: lineup missing from filter`);
   }
@@ -100,6 +102,7 @@ export async function testGalleryResources(page, origin, engine) {
     await page.screenshot({ path: `test-results/${engine}-kyrien-concept-${view}.png`, fullPage: true });
   }
   await visit('gallery.html');
+  await openGalleryFilters(page);
   await page.locator('#gallery-character-filter').selectOption('anima');
   assert.equal(await page.locator('.gallery-card:visible').count(), 1);
   assert.equal(await page.locator('.gallery-card:visible').getAttribute('data-chibi'), 'false');

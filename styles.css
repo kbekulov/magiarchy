@@ -4143,20 +4143,67 @@ a.status-member:hover {
 }
 
 .gallery-toolbar {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: flex-end;
-  gap: 10px;
+  display: block;
+  scroll-margin-top: 70px;
   margin: 0 30px;
-  padding: 14px;
+  padding: 0 14px;
   border: 1px solid rgba(0, 0, 0, .22);
   border-radius: 7px;
   background: #2b2d31;
 }
 
+.gallery-filter-header {
+  display: flex;
+  min-width: 0;
+  align-items: center;
+  gap: 12px;
+  min-height: 54px;
+}
+
+.gallery-filter-toggle,
+.gallery-filter-reset {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  min-height: 44px;
+  padding: 0 4px;
+  border: 0;
+  border-radius: 4px;
+  background: transparent;
+  color: var(--text);
+  font: inherit;
+  font-size: .75rem;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.gallery-filter-chevron { font-size: 1rem; }
+.gallery-filter-toggle[aria-expanded="true"] .gallery-filter-chevron { transform: rotate(180deg); }
+#gallery-filter-count { padding: 1px 5px; border-radius: 4px; background: #404249; font-size: .65rem; }
+.gallery-filter-summary { min-width: 0; flex: 1; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; color: var(--subtle); font-size: .7rem; }
+.gallery-filter-reset { padding-inline: 8px; color: var(--accent-bright); }
+.gallery-filter-reset:disabled { color: var(--subtle); cursor: default; opacity: .55; }
+.gallery-filter-toggle:focus-visible,
+.gallery-filter-reset:focus-visible { outline: 2px solid var(--accent-bright); outline-offset: 2px; }
+
+@media (hover: hover) and (pointer: fine) {
+  .gallery-filter-toggle:hover,
+  .gallery-filter-reset:enabled:hover { background: #35373c; }
+}
+
+.gallery-filter-fields { padding-block: 14px; }
+.gallery-filter-header:not([hidden]) + .gallery-filter-fields { border-top: 1px solid #3f4147; }
+.gallery-select-options,
+.gallery-toggle-options { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px; }
+.gallery-select-options { align-items: end; }
+.gallery-toolbar .chibi-toggle { min-height: 44px; }
+.gallery-filter-done { display: none; }
+
 .gallery-select {
   display: flex;
-  width: min(230px, 28%);
+  min-width: 0;
+  width: 100%;
   flex-direction: column;
   gap: 5px;
 }
@@ -4178,6 +4225,7 @@ a.status-member:hover {
   outline: 0;
   background: #1e1f22;
   color: var(--text);
+  font-family: inherit;
   font-size: .75rem;
   cursor: pointer;
 }
@@ -4187,11 +4235,9 @@ a.status-member:hover {
 }
 
 .gallery-toggle-options {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 24px;
-  margin-left: auto;
-  align-self: center;
+  margin-top: 12px;
+  padding-top: 12px;
+  border-top: 1px solid #3f4147;
 }
 
 .gallery-toggle-pair {
@@ -10011,34 +10057,26 @@ a.moment-connection-card:hover {
   }
 
   .gallery-toolbar {
-    position: sticky;
-    top: 52px;
-    z-index: 12;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    margin: 0;
-    padding: 10px 14px;
-    border-width: 1px 0;
-    border-radius: 0;
+    margin: 0 14px;
+    padding: 0 10px;
   }
 
-  .gallery-select {
-    width: 100%;
+  .gallery-select select {
+    height: 44px;
+    font-size: 16px;
   }
 
-  .gallery-season-select {
-    grid-column: 1 / -1;
-  }
-
+  .gallery-select-options,
   .gallery-toggle-options {
-    grid-column: 1 / -1;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 10px;
-    margin-left: 0;
+    gap: 12px;
   }
 
-  .gallery-purpose-filter {
-    grid-column: 1 / -1;
+  .gallery-filter-done {
+    display: flex;
+    width: 100%;
+    min-height: 44px;
+    margin-top: 14px;
+    justify-content: center;
   }
 
   .chibi-toggle {
@@ -10073,6 +10111,20 @@ a.moment-connection-card:hover {
   .media-code {
     display: none;
   }
+}
+
+@media (max-width: 560px) {
+  .gallery-select-options { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .gallery-season-select { grid-column: 1 / -1; }
+  .gallery-toggle-options { grid-template-columns: 1fr; gap: 4px; }
+  .gallery-toggle-pair { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
+  .gallery-toolbar .chibi-toggle small { display: none; }
+  .gallery-toolbar .chibi-toggle strong { font-size: .72rem; }
+  .gallery-filter-header { gap: 6px; }
+}
+
+@media (max-width: 380px) {
+  .gallery-select-options { grid-template-columns: 1fr; }
 }
 
 @media (max-width: 720px) {

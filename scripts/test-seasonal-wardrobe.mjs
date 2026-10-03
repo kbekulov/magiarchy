@@ -1,5 +1,6 @@
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
+import { openGalleryFilters } from './test-gallery-controls.mjs';
 
 export async function testSeasonalWardrobe(page, origin, engine) {
   const ledger = JSON.parse(fs.readFileSync('gallery/image-identities.json', 'utf8'));
@@ -18,6 +19,7 @@ export async function testSeasonalWardrobe(page, origin, engine) {
   for (const width of [390, 820, 1440]) {
     await page.setViewportSize({ width, height: 1000 });
     await visit('gallery.html?season=seasonal');
+    await openGalleryFilters(page);
     const cards = await page.locator('.gallery-card[data-season]').evaluateAll(nodes => nodes.map(node => ({
       id: node.dataset.image, character: node.dataset.character, season: node.dataset.season,
       stack: node.dataset.artworkStack, source: node.querySelector('img').getAttribute('src')
@@ -36,6 +38,7 @@ export async function testSeasonalWardrobe(page, origin, engine) {
       assert.ok((await visible().evaluateAll(nodes => nodes.map(node => node.dataset.season))).every(value => value === season));
     }
     await page.reload();
+    await openGalleryFilters(page);
     assert.equal(await page.locator('#gallery-season-filter').inputValue(), 'winter');
     await page.locator('#gallery-character-filter').selectOption('kyrien');
     assert.equal(await visible().count(), 1);

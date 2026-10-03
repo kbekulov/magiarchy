@@ -80,6 +80,16 @@
           </nav>
 
           <section class="gallery-toolbar reveal" id="gallery-toolbar" aria-label="Gallery filters">
+            <div class="gallery-filter-header" id="gallery-filter-header" hidden>
+              <button class="gallery-filter-toggle" id="gallery-filter-toggle" type="button" aria-expanded="true" aria-controls="gallery-filter-fields" aria-describedby="gallery-filter-summary">
+                <span class="gallery-filter-chevron" aria-hidden="true">⌄</span>
+                <strong>Filters</strong><span id="gallery-filter-count" aria-hidden="true" hidden>0</span>
+              </button>
+              <span class="gallery-filter-summary" id="gallery-filter-summary">No filters selected</span>
+              <button class="gallery-filter-reset" id="gallery-filter-reset" type="button" disabled>Reset</button>
+            </div>
+            <div class="gallery-filter-fields" id="gallery-filter-fields">
+            <div class="gallery-select-options">
             <label class="gallery-select">
               <span>Character</span>
               <select id="gallery-character-filter">
@@ -130,6 +140,7 @@
               </select>
             </label>
 
+            </div>
             <div class="gallery-toggle-options">
               <div class="gallery-toggle-pair" role="group" aria-label="Character format">
                 <label class="chibi-toggle">
@@ -167,6 +178,8 @@
                   <span><strong>Fan Service only</strong><small id="gallery-fan-service-description">Only posed, non-story art</small></span>
                 </label>
               </div>
+            </div>
+            <button class="button button-secondary gallery-filter-done" id="gallery-filter-done" type="button" hidden>Show artworks</button>
             </div>
           </section>
 

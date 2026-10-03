@@ -9,6 +9,7 @@ import { testGalleryResources } from './test-gallery-resources.mjs';
 import { testGalleryStacks } from './test-gallery-stacks.mjs';
 import { testSeasonalWardrobe } from './test-seasonal-wardrobe.mjs';
 import { testGalleryFilters } from './test-gallery-filters.mjs';
+import { openGalleryFilters, testGalleryControls } from './test-gallery-controls.mjs';
 import { testFanServiceIntake } from './test-fan-service-intake.mjs';
 import { testImageIdentities } from './test-image-identities-ui.mjs';
 import { testGalleryPanels } from './test-gallery-panels.mjs';
@@ -81,6 +82,7 @@ try {
         await page.waitForLoadState('networkidle');
       };
       if (process.env.TEST_GALLERY_FILTERS_ONLY === '1') {
+        await testGalleryControls(page, origin, engine);
         await testFanServiceIntake(page, origin, engine);
         await testGalleryFilters(page, origin, engine);
         assert.deepEqual(errors, [], `${engine}: gallery filter errors`);
@@ -95,6 +97,12 @@ try {
         await testSeasonalWardrobe(page, origin, engine);
         await testGalleryFilters(page, origin, engine);
         assert.deepEqual(errors, [], `${engine}: seasonal wardrobe errors`);
+        continue;
+      }
+      if (process.env.TEST_GALLERY_CONTROLS_ONLY === '1') {
+        await testGalleryControls(page, origin, engine);
+        await testGalleryFilters(page, origin, engine);
+        assert.deepEqual(errors, [], `${engine}: gallery controls errors`);
         continue;
       }
       if (process.env.TEST_APPEARANCE_ONLY === '1') {
@@ -414,6 +422,7 @@ try {
         const after = await neighbor.evaluate(relativePosition);
         assert.ok(before && after && Math.abs(before.x - after.x) < 1 && Math.abs(before.y - after.y) < 1, `${route}: hovering a card displaced its neighbor`);
       }
+      await testGalleryControls(page, origin, engine);
       // Intermediate panes, not only page-wide overflow.
       for (const width of [700, 820, 950, 1024, 1200, 1600]) {
         await page.setViewportSize({ width, height: 900 });
@@ -430,6 +439,7 @@ try {
         const options = await page.locator('#gallery-location-filter option').evaluateAll(nodes => nodes.map(node => node.value).sort());
         assert.deepEqual(options, available, 'Gallery offers an unpopulated location');
         const sharedArtwork = 'char-lynleit-felix-1';
+        await openGalleryFilters(page);
         for (const slug of ['lynleit', 'felix']) {
           await page.locator('#gallery-character-filter').selectOption(slug);
           const card = page.locator(`.gallery-card[data-image="${sharedArtwork}"]`);
